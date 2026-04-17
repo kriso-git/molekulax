@@ -14,10 +14,6 @@ const CATEGORIES = [
         a: 'Nem. Az oldalon megjelenő összes tartalom kizárólag oktatási és tájékoztatási célokat szolgál. Nem irányul betegség diagnosztizálására, kezelésére, gyógyítására vagy megelőzésére. Mielőtt bármilyen peptidet alkalmaznál, konzultálj képzett egészségügyi szakemberrel.',
       },
       {
-        q: 'Árulnak peptideket?',
-        a: 'Nem. A MolekulaX kizárólag információs platform — nem értékesítünk, nem forgalmazunk és nem szállítunk peptideket, vegyszereket vagy kutatási anyagokat.',
-      },
-      {
         q: 'Mi a különbség szimpla peptid, keverék (blend) és stack között?',
         a: 'Szimpla peptid: egyetlen hatóanyag önállóan alkalmazva. Keverék (blend): két vagy több peptid előre összekeverve egyetlen fiolában. Stack: több külön fiolában lévő peptid összehangolt, egyidejű adagolása. Mindhárom megközelítés más szintű tudást és előkészítést igényel.',
       },
@@ -85,20 +81,12 @@ const CATEGORIES = [
         a: 'A jogi státusz országonként és peptidtől függően változik. Az USA-ban sok peptid kutatási vegyszerként kapható, míg mások (pl. szemaglutid) FDA által jóváhagyott vényköteles gyógyszerek. Magyarországon és az EU-ban egyes peptidek orvosi rendelvényre kaphatók, mások kutatási célra beszerezhetők. Mindig tájékozódj az aktuális helyi jogszabályokról.',
       },
       {
-        q: 'A peptidek tiltottak a sportban?',
-        a: 'Igen, számos peptid szerepel a WADA (World Anti-Doping Agency) tiltólistáján — köztük a növekedési hormon, a GH-szekretórium peptidek (CJC-1295, ipamorelin, GHRP-2), a TB-500 és mások. Versenyző sportolóknak kizárólag a legfrissebb WADA-lista alapján szabad dönteni.',
-      },
-      {
         q: 'Milyen mellékhatások lehetnek?',
         a: 'Gyakori mellékhatások: injekció helyén bőrreakció (bőrpír, duzzanat), fejfájás, hányinger, fáradtság. GH-szekretórium peptidek esetén vízretenció és vércukorszint-változás is előfordulhat. Minden eset egyéni — konzultálj egészségügyi szakemberrel.',
       },
       {
         q: 'Kombinálhatok több peptidet?',
         a: 'Egyes kombinációknak van kutatási háttere (stack protokollok), azonban minden kombináció növeli a komplexitást és a potenciális interakciós kockázatot. A helytelen kombináció nemkívánt hatásokat válthat ki. Tanácsadónk segít eligazodni a biztonságos protokollokban.',
-      },
-      {
-        q: 'Hogyan ellenőrizhetem, hogy egy peptid WADA-tiltólistán van-e?',
-        a: 'A WADA évente frissíti tiltólistáját (wada-ama.org). A Global DRO (globaldro.com) adatbázisban is ellenőrizhetők egyes anyagok státusza. Kétség esetén fordulj a sportszövetségedhez vagy egy doppingkontroll-szakértőhöz.',
       },
     ],
   },

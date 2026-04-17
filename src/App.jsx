@@ -2,8 +2,6 @@ import Hero from './components/Hero'
 import Education from './components/Education'
 import Calculator from './components/Calculator'
 import PeptideGallery from './components/PeptideGallery'
-import Tanulmanyok from './components/Tanulmanyok'
-import WadaBox from './components/WadaBox'
 import TelegramSection from './components/TelegramSection'
 import Faq from './components/Faq'
 import Disclaimer from './components/Disclaimer'
@@ -21,8 +19,6 @@ export default function App() {
         <Education />
         <PeptideGallery />
         <Calculator />
-        <Tanulmanyok />
-        <WadaBox />
         <TelegramSection />
         <Faq />
         <Disclaimer />
