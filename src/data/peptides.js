@@ -1,0 +1,455 @@
+// ─── Peptide data ─────────────────────────────────────────────────────────────
+// GHK-Cu and Retatrutide are intentionally first (per product brief).
+// Each entry drives: Gallery card, Modal content, and embedded MiniCalc defaults.
+
+export const PEPTIDES = [
+  // ── 1. GHK-Cu ───────────────────────────────────────────────────────────────
+  {
+    id: 'ghk-cu',
+    name: 'GHK-Cu',
+    shortDesc: 'Rézpeptid — bőrregeneráció és epigenetikai moduláció',
+    accentColor: '#67e8f9',
+    tagColor: 'rgba(6,182,212,0.16)',
+    tagText: '#67e8f9',
+    defaultVialMg: 5,
+    defaultBacMl: 2,
+    defaultDoseMcg: 500,
+    description:
+      'A GHK-Cu (glicil-hisztidil-lizin-réz) egy természetesen előforduló rézkötő tripeptid, amelyet az emberi plazmában, vizeletben és nyálban azonosítottak. Fiatalkorban magas szinten (~200 ng/ml) van jelen, majd az életkorral fokozatosan csökken (~80 ng/ml 60 éves korra).\n\nA peptid réz(II)-ionhoz kötve aktiválja a kollagén- és elasztinszintézist, gyorsítja a sebgyógyulást, serkenti az angiogenezist, és epigenetikai mechanizmusokon keresztül több mint 32 gén expresszióját befolyásolja. Kutatások szerint anti-oxidáns, gyulladáscsökkentő és idegvédő hatásai is vannak.',
+    keyInfo: [
+      { label: 'Típus', value: 'Rézkötő tripeptid' },
+      { label: 'Szerkezet', value: 'Gly-His-Lys · Cu²⁺' },
+      { label: 'Molekulatömeg', value: '340 Da' },
+      { label: 'Célterület', value: 'Bőr, seb, hajszál, csont' },
+      { label: 'Tárolás', value: '2–8°C, fénytől védve' },
+      { label: 'Stabilitás', value: '25–30 nap (rekonstituálva)' },
+    ],
+    dosageInfo:
+      'Kutatási protokollokban szubkután alkalmazásban általában 0,5–2 mg/nap dózist vizsgálnak, 5 napig/hét, 4–8 héten keresztül. Bőrgyógyászati formulációkban 0,1–2%-os krémekben és szérumokban alkalmazzák. A pontos adagolás peptidenként és célterületenként eltérő — a kalkulátor segít a fecskendő-feltöltési értéket kiszámolni.',
+    studies: [
+      {
+        tag: 'Bőrgyógyászat',
+        tagColor: 'rgba(6,182,212,0.16)',
+        tagText: '#67e8f9',
+        title: 'GHK-Cu: sejtes útvonalak a bőrregenerációban',
+        authors: 'Pickart L, Vasquez-Soltero JM, Margolina A.',
+        journal: 'Biomed Research International',
+        year: '2015',
+        pmid: '26078961',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC4508379/',
+        finding: 'A GHK-Cu aktiválja a kollagén és GAG szintézist, csökkenti a gyulladásos citokineket, és epigenetikailag befolyásolja a génexpressziót.',
+      },
+      {
+        tag: 'Genomika',
+        tagColor: 'rgba(139,92,246,0.18)',
+        tagText: '#a78bfa',
+        title: 'GHK-Cu és a humán genom: 32 gén expressziójának módosítása',
+        authors: 'Pickart L, Margolina A.',
+        journal: 'Biomedicines',
+        year: '2018',
+        pmid: '29662016',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/29662016/',
+        finding: 'A peptid több mint 32 gén expresszióját befolyásolja, köztük kollagén-, antioxidáns- és szöveti javítási géneket.',
+      },
+    ],
+  },
+
+  // ── 2. Retatrutide ──────────────────────────────────────────────────────────
+  {
+    id: 'retatrutide',
+    name: 'Retatrutide',
+    shortDesc: 'Háromszoros inkretinagonista — metabolikus egészség és súlycsökkentés',
+    accentColor: '#6ee7b7',
+    tagColor: 'rgba(16,185,129,0.16)',
+    tagText: '#6ee7b7',
+    defaultVialMg: 2,
+    defaultBacMl: 1,
+    defaultDoseMcg: 120,
+    description:
+      'A retatrutide (LY3437943) az Eli Lilly által fejlesztett háromszoros inkretinreceptor-agonista, amely egyszerre hat a GIP (glükózdependens inzulinotropikus polipeptid), a GLP-1 (glükagonszerű peptid-1) és a glukagonreceptorokra.\n\nA Fázis 2 klinikai vizsgálatban 24 hét alatt átlagosan 17,5%-os testtömeg-csökkentést mutatott, ami kiemelkedő eredmény a jelenlegi fejlesztési mezőnyben. Mechanizmusa: étvágycsökkentés, kalóriafelhasználás fokozása és javított inzulinérzékenység.',
+    keyInfo: [
+      { label: 'Típus', value: 'Triagonista (GIP/GLP-1/Gcgr)' },
+      { label: 'Fejlesztő', value: 'Eli Lilly' },
+      { label: 'Klinikai fázis', value: 'Fázis 3 (folyamatban)' },
+      { label: 'Célterület', value: 'Testsúlycsökkentés, T2DM' },
+      { label: 'Jogi státusz', value: 'Kutatási fázis — nem engedélyezett' },
+      { label: 'Tárolás', value: '2–8°C' },
+    ],
+    dosageInfo:
+      'A Fázis 2 vizsgálatban heti 1×-es szubkután injekció, 0,5–12 mg dózistartományban, titrálással. Klinikai vizsgálaton kívül nem áll rendelkezésre standard protokoll. A kalkulátor referenciaként számol az ismert dózistartományokkal.',
+    studies: [
+      {
+        tag: 'Fázis 2 RCT',
+        tagColor: 'rgba(16,185,129,0.16)',
+        tagText: '#6ee7b7',
+        title: 'Retatrutide for obesity — a Phase 2 randomized trial',
+        authors: 'Jastreboff AM, Kaplan LM, Frias JP, et al.',
+        journal: 'New England Journal of Medicine',
+        year: '2023',
+        pmid: '37366315',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/37366315/',
+        finding: '24 hét alatt a legmagasabb dóziscsoportban átlagosan 17,5% testtömeg-csökkentés, kedvező kardiometabolikus hatásokkal.',
+      },
+      {
+        tag: 'Farmakológia',
+        tagColor: 'rgba(99,102,241,0.18)',
+        tagText: '#818cf8',
+        title: 'Triple hormone receptor agonism with retatrutide',
+        authors: 'Coskun T, Urva S, Roell WC, et al.',
+        journal: 'Molecular Metabolism',
+        year: '2022',
+        pmid: '35932989',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/35932989/',
+        finding: 'A GIP/GLP-1/glukagon háromszoros agonizmus szinergikus hatással csökkenti a testsúlyt és javítja a lipidprofilt.',
+      },
+    ],
+  },
+
+  // ── 3. BPC-157 ──────────────────────────────────────────────────────────────
+  {
+    id: 'bpc-157',
+    name: 'BPC-157',
+    shortDesc: 'Gyomor-pentadekapeptid — szöveti regeneráció és gyógyulás',
+    accentColor: '#818cf8',
+    tagColor: 'rgba(99,102,241,0.18)',
+    tagText: '#818cf8',
+    defaultVialMg: 5,
+    defaultBacMl: 2,
+    defaultDoseMcg: 250,
+    description:
+      'A BPC-157 (Body Protection Compound-157) egy szintetikus 15 aminosavból álló peptid, amelyet a humán gyomornedv fehérjéjéből (BPC) izoláltak. Kiemelkedő regeneratív hatásokat mutat inakban, izmokban, idegszövetben, a gyomor-bél traktusban és csontszövetben.\n\nMolekuláris szinten modulálja a VEGF-expressziót (angiogenezis), az NO-rendszert (érrendszeri tónus), és a FAK-paxillin jelátviteli útvonalat (sejtvándorlás). Több mint 30 éves kutatási múlttal rendelkezik — elsősorban állatkísérletes adatok alapján.',
+    keyInfo: [
+      { label: 'Típus', value: '15 aminosavas pentadekapeptid' },
+      { label: 'Forrás', value: 'Szintetikus (BPC alapján)' },
+      { label: 'Célterület', value: 'Ín, izom, GI traktus, ideg' },
+      { label: 'Adagolás', value: 'Szubkután vagy orális' },
+      { label: 'Tárolás', value: '2–8°C (rekonstituálva)' },
+      { label: 'Klinikai adat', value: 'Elsősorban preklinikai' },
+    ],
+    dosageInfo:
+      'Kutatási protokollokban leggyakoribb dózis: 200–400 mcg/nap szubkután, a sérüléstől lehetőség szerint közel. Orális alkalmazásnál 500–1000 mcg/nap. Ciklushossz: 4–12 hét. A kalkulátor segít az 5 mg-os fiola BAC-vízzel való hígításának kiszámolásában.',
+    studies: [
+      {
+        tag: 'Szisztematikus áttekintés',
+        tagColor: 'rgba(14,165,233,0.16)',
+        tagText: '#7dd3fc',
+        title: 'BPC-157 az ortopédiai sportmedicinában',
+        authors: 'Vasireddi N, Hahamyan H, Salata MJ, et al.',
+        journal: 'HSS Journal',
+        year: '2025',
+        pmid: null,
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/',
+        finding: '36 tanulmány: VEGF↑, IL-6↓, TNF-α↓ — inak, izmok, csontok gyógyulása gyorsult.',
+      },
+      {
+        tag: 'Narratív áttekintés',
+        tagColor: 'rgba(168,85,247,0.18)',
+        tagText: '#c084fc',
+        title: 'BPC-157: regeneráció vagy kockázat?',
+        authors: 'McGuire FP, Martinez R, Lenz A, et al.',
+        journal: 'Curr Rev Musculoskeletal Med',
+        year: '2025',
+        pmid: null,
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/',
+        finding: 'VEGFR2 és Akt-eNOS tengely aktiválása. Három humán pilottanulmányban nem jelentettek mellékhatást.',
+      },
+      {
+        tag: 'Neurológia',
+        tagColor: 'rgba(192,38,211,0.14)',
+        tagText: '#e879f9',
+        title: 'BPC-157: agy–bél tengely és neuroprotekció',
+        authors: 'Sikiric P, Hahm KB, Bhatt DL, et al.',
+        journal: 'Current Neuropharmacology',
+        year: '2022',
+        pmid: '33797367',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/33797367/',
+        finding: 'Dopaminerg és szerotonin rendszer modulálása, idegszöveti védelem iszkémia és trauma ellen.',
+      },
+    ],
+  },
+
+  // ── 4. TB-500 ───────────────────────────────────────────────────────────────
+  {
+    id: 'tb-500',
+    name: 'TB-500',
+    shortDesc: 'Thymosin β4 — aktin-kötés, sejtvándorlás és szövetjavítás',
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(139,92,246,0.18)',
+    tagText: '#a78bfa',
+    defaultVialMg: 5,
+    defaultBacMl: 2,
+    defaultDoseMcg: 2000,
+    description:
+      'A TB-500 a Thymosin Beta-4 (Tβ4) szintetikus fragmentje — az emberi testben természetesen megtalálható aktin-megkötő fehérje. Szinte minden emberi és állati sejtben jelen van, különösen magas koncentrációban vérlemezlékben és sebgyógyuló szövetekben.\n\nMolekuláris hatása: megakadályozza az aktin polimerizációját → fokozza a sejtvándorlást és a szöveti javítást. Emellett serkenti az angiogenezist (VEGF-útvonal) és csökkenti a gyulladásos citokineket.',
+    keyInfo: [
+      { label: 'Típus', value: 'Aktin-megkötő polipeptid' },
+      { label: 'Aminosavak', value: '43' },
+      { label: 'Molekulatömeg', value: '4963 Da' },
+      { label: 'Célterület', value: 'Izom, ín, szív, ideg' },
+      { label: 'Adagolás', value: 'Szubkután vagy intramuszkuláris' },
+      { label: 'Tárolás', value: '2–8°C (rekonstituálva)' },
+    ],
+    dosageInfo:
+      'Általános kutatási protokoll: 2–2,5 mg, heti 2×, 4–6 hétig (telítési fázis), majd 2–2,5 mg, heti 1×, fenntartó fázisban. Akut sérülésnél: 2 mg, napi 1×, 1–2 hétig. A kalkulátor az 5 mg-os fiolára számol.',
+    studies: [
+      {
+        tag: 'Molekuláris biológia',
+        tagColor: 'rgba(139,92,246,0.18)',
+        tagText: '#a78bfa',
+        title: 'Thymosin β4: aktin-megkötő fehérje szövetjavításban',
+        authors: 'Goldstein AL, Hannappel E, Kleinman HK.',
+        journal: 'Trends Mol Medicine',
+        year: '2005',
+        pmid: '16099736',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/16099736/',
+        finding: 'TB-500 sejtvándorlást, angiogenezist és szövetregenerációt indukál sérült területeken.',
+      },
+      {
+        tag: 'Kardiológia',
+        tagColor: 'rgba(244,63,94,0.14)',
+        tagText: '#fda4af',
+        title: 'Thymosin β4 cardioprotective effects after MI',
+        authors: 'Bock-Marquette I, Saxena A, White MD, et al.',
+        journal: 'Nature',
+        year: '2004',
+        pmid: '15215864',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/15215864/',
+        finding: 'Miokardiális infarktus után Tβ4 csökkentette a kardiomiocita apoptózist és javította a szívfunkciót egerekben.',
+      },
+    ],
+  },
+
+  // ── 5. CJC-1295 ─────────────────────────────────────────────────────────────
+  {
+    id: 'cjc-1295',
+    name: 'CJC-1295',
+    shortDesc: 'GHRH analóg — tartós növekedési hormon stimuláció',
+    accentColor: '#fcd34d',
+    tagColor: 'rgba(217,119,6,0.15)',
+    tagText: '#fcd34d',
+    defaultVialMg: 2,
+    defaultBacMl: 2,
+    defaultDoseMcg: 100,
+    description:
+      'A CJC-1295 egy módosított GHRH (növekedési hormon-releasing hormon) analóg, amelyhez Drug Affinity Complex (DAC) technológiával albuminkötő csoportot alakítottak ki. Ez a módosítás a féléletidőt az eredeti ~7 percről 6–8 napra növeli.\n\nEgyszeri injekció 2–10-szeres GH-emelkedést eredményez 6 napon át, az IGF-I szint 9–11 napig emelkedett marad. Ismételt adagolásnál az IGF-I akár 28 napig emelt szinten tartható.',
+    keyInfo: [
+      { label: 'Típus', value: 'GHRH analóg (DAC)' },
+      { label: 'Féléletidő', value: '6–8 nap' },
+      { label: 'Célterület', value: 'GH/IGF-1 tengely' },
+      { label: 'Adagolás', value: 'Szubkután, heti 1–2×' },
+      { label: 'Kombinálható', value: 'Ipamorelin, GHRP-2' },
+      { label: 'Tárolás', value: '2–8°C' },
+    ],
+    dosageInfo:
+      'Kutatási protokollban: 1–2 mg, heti 1–2×, szubkután. DAC nélküli változat (Mod GRF 1-29): 100 mcg, napi 1–3×. A kalkulátor mindkét fiolaamérethez számol. Éjszakai lefekvés előtti adagolás ajánlott a természetes GH-pulzussal való szinkronizálás céljából.',
+    studies: [
+      {
+        tag: 'Klinikai vizsgálat',
+        tagColor: 'rgba(16,185,129,0.16)',
+        tagText: '#6ee7b7',
+        title: 'Prolonged stimulation of GH and IGF-I by CJC-1295',
+        authors: 'Teichman SL, Neale A, Lawrence B, et al.',
+        journal: 'J Clin Endocrinol Metab',
+        year: '2006',
+        pmid: '16352683',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/16352683/',
+        finding: '2–10-szeres GH-emelkedés 6+ napon át; ismételt dózissal IGF-I 28 napig emelt szinten.',
+      },
+    ],
+  },
+
+  // ── 6. Ipamorelin ───────────────────────────────────────────────────────────
+  {
+    id: 'ipamorelin',
+    name: 'Ipamorelin',
+    shortDesc: 'Szelektív GH-szekretórium — kortizolemelkedés nélkül',
+    accentColor: '#5eead4',
+    tagColor: 'rgba(20,184,166,0.16)',
+    tagText: '#5eead4',
+    defaultVialMg: 2,
+    defaultBacMl: 2,
+    defaultDoseMcg: 100,
+    description:
+      'Az ipamorelin egy szintetikus pentapeptid GH-szekretórium (GHS), amely szelektíven köt a ghrelinreceptorhoz (GHSR-1a). Az első olyan GHS, amely GH-szekréciót indukál kortizol- és prolaktinemelkedés nélkül — ez különbözteti meg a korábbi GHRP-ektől (pl. GHRP-6).\n\nRendszerint CJC-1295-tel kombinálva alkalmazzák a szinergikus GH-szekréció érdekében: a GHRH analóg erősíti a GH-pulzust, az ipamorelin pedig fokozza a pulzus amplitúdóját.',
+    keyInfo: [
+      { label: 'Típus', value: 'Pentapeptid GHSR agonista' },
+      { label: 'Szelektivitás', value: 'GH ↑, kortizol ∅, prolaktin ∅' },
+      { label: 'Féléletidő', value: '~2 óra' },
+      { label: 'Adagolás', value: '100–300 mcg, napi 1–3×' },
+      { label: 'Kombináció', value: 'CJC-1295 (szinergikus)' },
+      { label: 'Tárolás', value: '2–8°C (rekonstituálva)' },
+    ],
+    dosageInfo:
+      'Tipikus kutatási protokoll: 100–300 mcg, szubkután, napi 1–3×. Legjobb hatás lefekvés előtt, éhgyomorra. Kombinálva CJC-1295-tel: egyidőben injektálhatók különböző helyekre. Ciklusok: 8–12 hét, majd 4–6 hét szünet.',
+    studies: [
+      {
+        tag: 'Farmakológia',
+        tagColor: 'rgba(20,184,166,0.16)',
+        tagText: '#5eead4',
+        title: 'Ipamorelin, the first selective GH secretagogue',
+        authors: 'Raun K, Hansen BS, Johansen NL, et al.',
+        journal: 'Eur J Endocrinology',
+        year: '1998',
+        pmid: '9849822',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/9849822/',
+        finding: 'Szelektív GH-szekréció kortizol- és prolaktinemelkedés nélkül — megkülönbözteti a korábbi GHS-ektől.',
+      },
+    ],
+  },
+
+  // ── 7. AOD-9604 ─────────────────────────────────────────────────────────────
+  {
+    id: 'aod-9604',
+    name: 'AOD-9604',
+    shortDesc: 'GH lipolytikus fragmentje — zsíranyagcsere célzottan',
+    accentColor: '#fdba74',
+    tagColor: 'rgba(194,65,12,0.15)',
+    tagText: '#fdba74',
+    defaultVialMg: 5,
+    defaultBacMl: 2,
+    defaultDoseMcg: 300,
+    description:
+      'Az AOD-9604 a humán növekedési hormon C-terminális fragmentje (hGH 177–191). Lipolytikus hatását megtartja, de nem rendelkezik a GH inzulinantagonista és mitogén tulajdonságaival.\n\nÁllatkísérletekben elhízott egerekben és GH-hiányos egerekben szignifikáns zsírcsökkentést mutatott, anélkül, hogy az izomtömeget csökkentette volna. Az ausztrál Metabolic Pharmaceuticals 2004-ben Fázis 2/3 vizsgálatot végzett — az elsődleges végpont (testsúlycsökkentés) nem teljesült szignifikánsan.',
+    keyInfo: [
+      { label: 'Típus', value: 'hGH C-terminális fragment (177–191)' },
+      { label: 'Hatás', value: 'Lipolízis (zsírégetés)' },
+      { label: 'Inzulinhatás', value: 'Nincs (biztonságos diabetikusoknál)' },
+      { label: 'Adagolás', value: '300–500 mcg/nap, szubkután' },
+      { label: 'Tárolás', value: '2–8°C' },
+      { label: 'Klinikai státusz', value: 'Fázis 3 nem teljesült' },
+    ],
+    dosageInfo:
+      'Kutatási protokoll: 300–500 mcg/nap, szubkután, éhgyomorra reggel vagy edzés előtt. Ciklus: 4–12 hét. A kalkulátor az 5 mg-os fiolára számol, standard 2 ml BAC vízzel.',
+    studies: [
+      {
+        tag: 'Anyagcsere',
+        tagColor: 'rgba(194,65,12,0.15)',
+        tagText: '#fdba74',
+        title: 'Effects of hGH and AOD9604 on lipid metabolism',
+        authors: 'Heffernan M, Thorburn AW, Fam B, et al.',
+        journal: 'Endocrinology',
+        year: '2001',
+        pmid: '11713212',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/11713212/',
+        finding: 'Lipolízis elhízott egerekben a GH inzulinantagonista mellékhatásai nélkül.',
+      },
+    ],
+  },
+
+  // ── 8. PT-141 ───────────────────────────────────────────────────────────────
+  {
+    id: 'pt-141',
+    name: 'PT-141',
+    shortDesc: 'Melanokortinreceptor-agonista — FDA engedélyezett (bremelanotid)',
+    accentColor: '#fda4af',
+    tagColor: 'rgba(244,63,94,0.14)',
+    tagText: '#fda4af',
+    defaultVialMg: 10,
+    defaultBacMl: 2,
+    defaultDoseMcg: 1750,
+    description:
+      'A PT-141 (bremelanotide) egy szintetikus melanokortinreceptor-agonista, amely az MC3R és MC4R receptorokon hat. Az FDA 2019-ben jóváhagyta a premenopauzás nők hypoaktív szexuális vágyavar-zavarának (HSDD) kezelésére Vyleesi márkanéven.\n\nKülönbözik a PDE5-gátlóktól (Viagra, Cialis): nem az érrendszerre, hanem közvetlen idegrendszeri úton hat, így érrendszeri ellenjavallatoknál is vizsgálják.',
+    keyInfo: [
+      { label: 'Típus', value: 'Melanokortinreceptor agonista (MC3R/MC4R)' },
+      { label: 'FDA státusz', value: 'Jóváhagyott (Vyleesi, HSDD)' },
+      { label: 'Adagolás', value: '1,75 mg szubkután, szükség szerint' },
+      { label: 'Hatás kezdete', value: '45–60 perc' },
+      { label: 'Mellékhatás', value: 'Hányinger, bőrpír (gyakori)' },
+      { label: 'Tárolás', value: '2–8°C' },
+    ],
+    dosageInfo:
+      'FDA-jóváhagyott dózis (HSDD): 1,75 mg szubkután, a szexuális aktivitás előtt 45 perccel. Maximum 1× / 24 óra, max 1× / 8 nap. A hányinger mellékhatás megelőzésére antiemetikus előkezelés javasolt.',
+    studies: [
+      {
+        tag: 'RCT – III. fázis',
+        tagColor: 'rgba(217,119,6,0.15)',
+        tagText: '#fcd34d',
+        title: 'Bremelanotide for Hypoactive Sexual Desire Disorder',
+        authors: 'Kingsberg SA, Clayton AH, Portman D, et al.',
+        journal: 'Obstetrics & Gynecology',
+        year: '2019',
+        pmid: '31599840',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/31599840/',
+        finding: 'Szignifikáns javulás HSDD tüneteiben két Fázis 3 RCT-ben, kedvező biztonsági profillal.',
+      },
+    ],
+  },
+
+  // ── 9. Sermorelin ───────────────────────────────────────────────────────────
+  {
+    id: 'sermorelin',
+    name: 'Sermorelin',
+    shortDesc: 'GHRH(1-29) analóg — fiziológiás GH-helyreállítás',
+    accentColor: '#c084fc',
+    tagColor: 'rgba(168,85,247,0.18)',
+    tagText: '#c084fc',
+    defaultVialMg: 3,
+    defaultBacMl: 3,
+    defaultDoseMcg: 300,
+    description:
+      'A szermórelin a humán GHRH első 29 aminosavát tartalmazza (GHRH 1-29) — ez az aktív fragmens, amely elegendő az agyalapi mirigy GH-szekréciójának stimulálásához. Az FDA korábban gyermekek GH-hiányának kezelésére engedélyezte.\n\nFő előnye: a fiziológiás GH-pulzalitást állítja helyre az agyalapi mirigyen keresztül, nem közvetlen GH-injekció. Ez azt jelenti, hogy a GH-szint nem lépi túl a természetes határt, ami kedvezőbb biztonsági profilt eredményez.',
+    keyInfo: [
+      { label: 'Típus', value: 'GHRH(1-29) analóg' },
+      { label: 'Aminosavak', value: '29' },
+      { label: 'Féléletidő', value: '10–20 perc' },
+      { label: 'Adagolás', value: '200–500 mcg/nap, szubkután' },
+      { label: 'Legjobb idő', value: 'Lefekvés előtt, éhgyomorra' },
+      { label: 'Tárolás', value: '2–8°C' },
+    ],
+    dosageInfo:
+      'Tipikus kutatási protokoll: 200–300 mcg, szubkután, lefekvés előtt, éhgyomorra. Napi adagolás, 3–6 hónapos ciklus. A 3 mg-os fiolát 3 ml BAC vízzel hígítva 1 mcg/µl koncentrációt eredményez.',
+    studies: [
+      {
+        tag: 'Klinikai összefoglaló',
+        tagColor: 'rgba(56,189,248,0.15)',
+        tagText: '#7dd3fc',
+        title: 'Sermorelin: adult-onset GH insufficiency management',
+        authors: 'Walker RF.',
+        journal: 'Clin Interventions in Aging',
+        year: '2006',
+        pmid: '18046908',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/18046908/',
+        finding: 'Fiziológiás GH-pulzalitás helyreállítása, IGF-I-hiányból eredő szöveti degeneráció csökkentése.',
+      },
+    ],
+  },
+
+  // ── 10. Epithalon ───────────────────────────────────────────────────────────
+  {
+    id: 'epithalon',
+    name: 'Epithalon',
+    shortDesc: 'Tobozmirigy-tetrapeptid — telomeráz aktiválás és öregedéskutatás',
+    accentColor: '#fde68a',
+    tagColor: 'rgba(161,98,7,0.15)',
+    tagText: '#fde68a',
+    defaultVialMg: 10,
+    defaultBacMl: 2,
+    defaultDoseMcg: 5000,
+    description:
+      'Az Epithalon (Ala-Glu-Asp-Gly) egy szintetikus tetrapeptid, amelyet Prof. Vladimir Khavinson fejlesztett ki a Szentpétervári Gerontológiai Intézetben a tobozmirigy (epiphysis) peptid kivonatából. Az epitalamin szintetikus változata.\n\nLegfontosabb vizsgált hatásai: melatonin-szekréció normalizálása, telomeráz enzim aktiválása (telomer-hosszabbítás sejtszinten), antioxidáns hatás, és állatkísérletekben élettartam-növelés. Fontos: a humán klinikai adatok korlátozottak.',
+    keyInfo: [
+      { label: 'Típus', value: 'Szintetikus tetrapeptid' },
+      { label: 'Szerkezet', value: 'Ala-Glu-Asp-Gly' },
+      { label: 'Fejlesztő', value: 'Prof. V. Khavinson (Szpb.)' },
+      { label: 'Célterület', value: 'Tobozmirigy, telomér, öregedés' },
+      { label: 'Klinikai adat', value: 'Korlátozott humán adat' },
+      { label: 'Tárolás', value: '2–8°C' },
+    ],
+    dosageInfo:
+      'Kutatási protokoll: 5–10 mg/nap szubkután vagy intranazálisan, 10 napos ciklus, évente 1–2×. Egyes protokollok 20 mg/nap dózist is vizsgálnak. A kalkulátor a 10 mg-os fiolára számol.',
+    studies: [
+      {
+        tag: 'Öregedéskutatás',
+        tagColor: 'rgba(161,98,7,0.15)',
+        tagText: '#fde68a',
+        title: 'Peptide bioregulation of aging: results and prospects',
+        authors: 'Anisimov VN, Khavinson VK.',
+        journal: 'Biogerontology',
+        year: '2010',
+        pmid: '19823771',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/19823771/',
+        finding: 'Melatonin normalizálás, daganatincidencia csökkentés és élettartam-növelés állatkísérletekben.',
+      },
+    ],
+  },
+]
