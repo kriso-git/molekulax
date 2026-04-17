@@ -1,5 +1,6 @@
 import Hero from './components/Hero'
 import Education from './components/Education'
+import PeptideEffects from './components/PeptideEffects'
 import Calculator from './components/Calculator'
 import PeptideGallery from './components/PeptideGallery'
 import TelegramSection from './components/TelegramSection'
@@ -17,6 +18,7 @@ export default function App() {
       <div className="relative z-10">
         <Hero />
         <Education />
+        <PeptideEffects />
         <PeptideGallery />
         <Calculator />
         <TelegramSection />

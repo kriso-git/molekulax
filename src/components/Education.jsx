@@ -20,7 +20,7 @@ const FEATURES = [
 
 export default function Education() {
   return (
-    <section className="py-28 px-4">
+    <section className="pt-0 pb-10 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-20">
           <p className="text-[#818cf8] text-xs tracking-[0.3em] uppercase mb-5">

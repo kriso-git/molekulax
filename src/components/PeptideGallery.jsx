@@ -1,14 +1,26 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { PEPTIDES } from '../data/peptides'
 import VialImage from './VialImage'
 import PeptideModal from './PeptideModal'
 
 export default function PeptideGallery() {
   const [selected, setSelected] = useState(null)
+  const sectionRef = useRef(null)
+
+  useEffect(() => {
+    const handler = (e) => {
+      const peptide = PEPTIDES.find(p => p.id === e.detail.id)
+      if (!peptide) return
+      sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      setTimeout(() => setSelected(peptide), 500)
+    }
+    window.addEventListener('open-peptide', handler)
+    return () => window.removeEventListener('open-peptide', handler)
+  }, [])
 
   return (
     <>
-      <section className="py-28 px-4">
+      <section ref={sectionRef} className="py-28 px-4">
         <div className="max-w-6xl mx-auto">
 
           <div className="text-center mb-16">
