@@ -1,8 +1,10 @@
 import { Send, ArrowRight, MessageCircle } from 'lucide-react'
+import { useLang } from '../i18n/LanguageContext'
 
 const TELEGRAM_URL = 'https://t.me/molekulaxtra'
 
 export default function TelegramSection() {
+  const { t } = useLang()
   return (
     <section className="py-20 px-4">
       <div className="max-w-3xl mx-auto">
@@ -22,19 +24,18 @@ export default function TelegramSection() {
 
           <div className="relative">
             <p className="text-[#818cf8] text-xs tracking-[0.3em] uppercase mb-8">
-              Kapcsolat
+              {t('tg.eyebrow')}
             </p>
 
             <div className="flex items-start gap-4 mb-4">
               <MessageCircle size={26} className="text-[#818cf8] mt-1 shrink-0" strokeWidth={1.5} />
               <h3 className="text-xl md:text-2xl text-white font-bold italic leading-snug">
-                Van kérdésed a peptidekkel kapcsolatban?
+                {t('tg.title')}
               </h3>
             </div>
 
             <p className="text-gray-400 leading-relaxed mb-10 ml-10 text-sm md:text-base">
-              Tanácsadónk elérhető Telegramon — egyszerűen írj,
-              és segítünk eligazodni a témában.
+              {t('tg.body')}
             </p>
 
             <a
@@ -45,7 +46,7 @@ export default function TelegramSection() {
               style={{ border: '1px solid rgba(129,140,248,0.4)', background: 'rgba(99,102,241,0.1)' }}
             >
               <Send size={14} strokeWidth={2} />
-              Írj a tanácsadónak
+              {t('tg.cta')}
               <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </div>

@@ -1,6 +1,8 @@
 import { Info } from 'lucide-react'
+import { useLang } from '../i18n/LanguageContext'
 
 export default function Disclaimer() {
+  const { t } = useLang()
   return (
     <section className="py-12 px-4">
       <div className="max-w-3xl mx-auto">
@@ -14,13 +16,10 @@ export default function Disclaimer() {
           <Info size={18} className="text-gray-600 shrink-0 mt-0.5" strokeWidth={1.5} />
           <div>
             <p className="text-xs text-gray-600 uppercase tracking-[0.2em] mb-2.5">
-              Fontos tájékoztatás
+              {t('dc.eyebrow')}
             </p>
             <p className="text-gray-500 text-sm leading-relaxed">
-              Ez a weboldal kizárólag edukatív és tájékoztatási céllal jött létre.
-              Nem értékesítünk termékeket, nem nyújtunk orvosi tanácsadást, és nem
-              üzemeltetünk csoportot. Az itt közölt tartalom tudományos forrásokra
-              épül, azonban nem helyettesíti az orvosi szakvéleményt.
+              {t('dc.body')}
             </p>
           </div>
         </div>

@@ -1,33 +1,55 @@
 import { useState, useMemo } from 'react'
 import { FlaskConical, CalendarDays, BookOpen, ChevronDown, Info } from 'lucide-react'
+import { useLang } from '../i18n/LanguageContext'
+
+// Localized half-life / route helpers
+const HL = {
+  '4h':   { hu: '~4 óra',     en: '~4 h',      pl: '~4 godz.' },
+  '3d':   { hu: '~3 nap',     en: '~3 days',   pl: '~3 dni' },
+  '5_8d': { hu: '~5–8 nap',   en: '~5–8 days', pl: '~5–8 dni' },
+  '2h':   { hu: '~2 óra',     en: '~2 h',      pl: '~2 godz.' },
+  '33h':  { hu: '~33 óra',    en: '~33 h',     pl: '~33 godz.' },
+  '11m':  { hu: '~11 perc',   en: '~11 min',   pl: '~11 min' },
+  '3h':   { hu: '~3 óra',     en: '~3 h',      pl: '~3 godz.' },
+  'na':   'N/A',
+  'dash': '—',
+}
+const FREQ = {
+  oncetwice:  { hu: '1-2x/nap',         en: '1-2× daily',     pl: '1-2× dziennie' },
+  twiceWeek:  { hu: '2x/hét',           en: '2× weekly',      pl: '2× w tyg.' },
+  twoThree:   { hu: '2-3x/nap',         en: '2-3× daily',     pl: '2-3× dziennie' },
+  onceDay:    { hu: '1x/nap',           en: '1× daily',       pl: '1× dziennie' },
+  weekly1_2:  { hu: 'heti 1–2×',        en: '1–2× weekly',    pl: '1–2× w tyg.' },
+  asNeeded:   { hu: 'szükség szerint',  en: 'as needed',      pl: 'wg potrzeb' },
+}
+const ROUTE = {
+  scim:    'SC / IM',
+  sc:      'SC',
+  scin:    'SC / IN',
+  sctop:   { hu: 'SC / topikális', en: 'SC / topical', pl: 'SC / miejscowo' },
+}
 
 const PEPTIDES = [
-  { name: 'BPC-157',     vial: 5,   typDose: 250,  unit: 'mcg', halfLife: '~4 óra' },
-  { name: 'TB-500',      vial: 5,   typDose: 2500, unit: 'mcg', halfLife: '~3 nap' },
-  { name: 'CJC-1295',    vial: 2,   typDose: 100,  unit: 'mcg', halfLife: '~5-8 nap' },
-  { name: 'Ipamorelin',  vial: 2,   typDose: 200,  unit: 'mcg', halfLife: '~2 óra' },
-  { name: 'AOD-9604',    vial: 5,   typDose: 300,  unit: 'mcg', halfLife: '~3 óra' },
-  { name: 'Sermorelin',  vial: 3,   typDose: 200,  unit: 'mcg', halfLife: '~11 perc' },
-  { name: 'GHK-Cu',      vial: 50,  typDose: 1000, unit: 'mcg', halfLife: 'N/A' },
-  { name: 'PT-141',      vial: 10,  typDose: 1000, unit: 'mcg', halfLife: '~3 óra' },
-  { name: 'Egyéni',      vial: null, typDose: null, unit: 'mcg', halfLife: '—' },
+  { name: 'BPC-157',     vial: 5,   typDose: 250,  unit: 'mcg', halfLife: HL['4h'] },
+  { name: 'TB-500',      vial: 5,   typDose: 2500, unit: 'mcg', halfLife: HL['3d'] },
+  { name: 'CJC-1295',    vial: 2,   typDose: 100,  unit: 'mcg', halfLife: HL['5_8d'] },
+  { name: 'Ipamorelin',  vial: 2,   typDose: 200,  unit: 'mcg', halfLife: HL['2h'] },
+  { name: 'Melanotan-2', vial: 10,  typDose: 500,  unit: 'mcg', halfLife: HL['33h'] },
+  { name: 'Sermorelin',  vial: 3,   typDose: 200,  unit: 'mcg', halfLife: HL['11m'] },
+  { name: 'GHK-Cu',      vial: 50,  typDose: 1000, unit: 'mcg', halfLife: HL.na },
+  { name: 'PT-141',      vial: 10,  typDose: 1000, unit: 'mcg', halfLife: HL['3h'] },
+  { name: '__custom',    vial: null, typDose: null, unit: 'mcg', halfLife: HL.dash },
 ]
 
 const REF_TABLE = [
-  { name: 'BPC-157',    halfLife: '~4 óra',     typDose: '200–500 mcg', freq: '1-2x/nap',   vial: '5 mg',   route: 'SC / IM' },
-  { name: 'TB-500',     halfLife: '~3 nap',     typDose: '2–5 mg',      freq: '2x/hét',     vial: '5 mg',   route: 'SC / IM' },
-  { name: 'CJC-1295',   halfLife: '5–8 nap',    typDose: '100–300 mcg', freq: '2x/hét',     vial: '2 mg',   route: 'SC' },
-  { name: 'Ipamorelin', halfLife: '~2 óra',     typDose: '100–300 mcg', freq: '2-3x/nap',   vial: '2 mg',   route: 'SC' },
-  { name: 'AOD-9604',   halfLife: '~3 óra',     typDose: '250–500 mcg', freq: '1x/nap',     vial: '5 mg',   route: 'SC' },
-  { name: 'Sermorelin', halfLife: '~11 perc',   typDose: '100–500 mcg', freq: '1x/nap',     vial: '3 mg',   route: 'SC' },
-  { name: 'GHK-Cu',     halfLife: 'N/A',        typDose: '0.5–2 mg',    freq: '1x/nap',     vial: '50 mg',  route: 'SC / topikális' },
-  { name: 'PT-141',     halfLife: '~3 óra',     typDose: '0.5–2 mg',    freq: 'szükség szerint', vial: '10 mg', route: 'SC / IN' },
-]
-
-const TABS = [
-  { id: 'recon',  label: 'Rekonstituálás',   Icon: FlaskConical },
-  { id: 'cycle',  label: 'Ciklustervező',    Icon: CalendarDays },
-  { id: 'ref',    label: 'Referencia',       Icon: BookOpen },
+  { name: 'BPC-157',    halfLife: HL['4h'],    typDose: '200–500 mcg', freq: FREQ.oncetwice, vial: '5 mg',   route: ROUTE.scim },
+  { name: 'TB-500',     halfLife: HL['3d'],    typDose: '2–5 mg',      freq: FREQ.twiceWeek, vial: '5 mg',   route: ROUTE.scim },
+  { name: 'CJC-1295',   halfLife: HL['5_8d'],  typDose: '100–300 mcg', freq: FREQ.twiceWeek, vial: '2 mg',   route: ROUTE.sc },
+  { name: 'Ipamorelin', halfLife: HL['2h'],    typDose: '100–300 mcg', freq: FREQ.twoThree,  vial: '2 mg',   route: ROUTE.sc },
+  { name: 'Melanotan-2',halfLife: HL['33h'],   typDose: '250–1000 mcg',freq: FREQ.weekly1_2, vial: '10 mg',  route: ROUTE.sc },
+  { name: 'Sermorelin', halfLife: HL['11m'],   typDose: '100–500 mcg', freq: FREQ.onceDay,   vial: '3 mg',   route: ROUTE.sc },
+  { name: 'GHK-Cu',     halfLife: HL.na,       typDose: '0.5–2 mg',    freq: FREQ.onceDay,   vial: '50 mg',  route: ROUTE.sctop },
+  { name: 'PT-141',     halfLife: HL['3h'],    typDose: '0.5–2 mg',    freq: FREQ.asNeeded,  vial: '10 mg',  route: ROUTE.scin },
 ]
 
 function InputField({ label, value, onChange, min, step, suffix, hint }) {
@@ -62,6 +84,7 @@ function ResultRow({ label, value, highlight }) {
 }
 
 function ReconTab() {
+  const { t } = useLang()
   const [peptideIdx, setPeptideIdx] = useState(0)
   const [vialMg, setVialMg] = useState(PEPTIDES[0].vial ?? 5)
   const [bacMl, setBacMl] = useState(2)
@@ -91,12 +114,14 @@ function ReconTab() {
     }
   }, [vialMg, bacMl, doseMcg])
 
+  const uNoteParts = t('calc.uNote').split('{U}')
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="flex flex-col gap-5">
         <div className="flex flex-col gap-1.5">
           <label className="text-xs text-gray-500 font-semibold uppercase tracking-widest">
-            Peptid
+            {t('calc.peptide')}
           </label>
           <div className="relative">
             <select
@@ -105,7 +130,9 @@ function ReconTab() {
               className="w-full appearance-none bg-white/[0.06] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm font-medium focus:outline-none focus:border-[rgba(129,140,248,0.5)] transition-colors duration-200 cursor-pointer"
             >
               {PEPTIDES.map((p, i) => (
-                <option key={i} value={i} className="bg-[#0f0f0f]">{p.name}</option>
+                <option key={i} value={i} className="bg-[#0f0f0f]">
+                  {p.name === '__custom' ? t('calc.custom') : p.name}
+                </option>
               ))}
             </select>
             <ChevronDown size={14} className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
@@ -113,31 +140,31 @@ function ReconTab() {
         </div>
 
         <InputField
-          label="Injekciós üveg mérete"
+          label={t('calc.vialSize')}
           value={vialMg}
           onChange={setVialMg}
           min={0.1}
           step={0.1}
           suffix="mg"
-          hint="Általában 2 mg, 5 mg vagy 10 mg"
+          hint={t('calc.vialHint')}
         />
         <InputField
-          label="Hozzáadott bakteriostatikus víz"
+          label={t('calc.bac')}
           value={bacMl}
           onChange={setBacMl}
           min={0.1}
           step={0.1}
           suffix="mL"
-          hint="Jellemzően 1–2 mL"
+          hint={t('calc.bacHint')}
         />
         <InputField
-          label="Kívánt dózis"
+          label={t('calc.dose')}
           value={doseMcg}
           onChange={setDoseMcg}
           min={1}
           step={1}
           suffix="mcg"
-          hint={peptide.typDose ? `Tipikus tartomány: ${peptide.typDose} mcg` : ''}
+          hint={peptide.typDose ? `${t('calc.doseHint')}: ${peptide.typDose} mcg` : ''}
         />
       </div>
 
@@ -147,16 +174,16 @@ function ReconTab() {
           style={{ background: 'rgba(99,102,241,0.06)', border: '1px solid rgba(129,140,248,0.14)' }}
         >
           <p className="text-[#818cf8] text-xs tracking-[0.25em] uppercase font-semibold mb-5">
-            Eredmény
+            {t('calc.result')}
           </p>
           {results ? (
             <>
-              <ResultRow label="Koncentráció" value={`${results.conc} mcg/mL`} />
-              <ResultRow label="Felszívandó mennyiség" value={`${results.volumeMl} mL`} />
-              <ResultRow label="Inzulinfecskendő egység" value={`${results.syringeIU} IU`} highlight />
+              <ResultRow label={t('calc.conc')} value={`${results.conc} mcg/mL`} />
+              <ResultRow label={t('calc.volume')} value={`${results.volumeMl} mL`} />
+              <ResultRow label={t('calc.iu')} value={`${results.syringeIU} IU`} highlight />
             </>
           ) : (
-            <p className="text-gray-600 text-sm">Add meg az adatokat az eredményhez.</p>
+            <p className="text-gray-600 text-sm">{t('calc.empty')}</p>
           )}
         </div>
 
@@ -166,8 +193,9 @@ function ReconTab() {
         >
           <Info size={14} className="text-gray-600 shrink-0 mt-0.5" />
           <p className="text-gray-600 text-xs leading-relaxed">
-            Az inzulinfecskendő <strong className="text-gray-500">U-100</strong> skálán értendő
-            (100 IU = 1 mL). Ha U-40 fecskendőt használsz, az eredményt osztd 2,5-tel.
+            {uNoteParts[0]}
+            <strong className="text-gray-500">{t('calc.uNote.bold')}</strong>
+            {uNoteParts[1]}
           </p>
         </div>
       </div>
@@ -176,6 +204,7 @@ function ReconTab() {
 }
 
 function CycleTab() {
+  const { t } = useLang()
   const [doseMcg, setDoseMcg] = useState(250)
   const [injectPerDay, setInjectPerDay] = useState(1)
   const [daysPerWeek, setDaysPerWeek] = useState(5)
@@ -199,11 +228,11 @@ function CycleTab() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="flex flex-col gap-5">
-        <InputField label="Dózis / injekció" value={doseMcg} onChange={setDoseMcg} min={1} step={1} suffix="mcg" />
-        <InputField label="Injekció / nap" value={injectPerDay} onChange={setInjectPerDay} min={1} step={1} />
-        <InputField label="Aktív nap / hét" value={daysPerWeek} onChange={setDaysPerWeek} min={1} step={1} hint="Max. 7" />
-        <InputField label="Ciklus hossza" value={weeks} onChange={setWeeks} min={1} step={1} suffix="hét" />
-        <InputField label="Üveg mérete" value={vialMg} onChange={setVialMg} min={0.1} step={0.1} suffix="mg" />
+        <InputField label={t('calc.cycleDose')} value={doseMcg} onChange={setDoseMcg} min={1} step={1} suffix="mcg" />
+        <InputField label={t('calc.cycleInjectsPerDay')} value={injectPerDay} onChange={setInjectPerDay} min={1} step={1} />
+        <InputField label={t('calc.cycleActiveDays')} value={daysPerWeek} onChange={setDaysPerWeek} min={1} step={1} hint={t('calc.cycleActiveHint')} />
+        <InputField label={t('calc.cycleLength')} value={weeks} onChange={setWeeks} min={1} step={1} suffix={t('calc.weeks')} />
+        <InputField label={t('calc.cycleVial')} value={vialMg} onChange={setVialMg} min={0.1} step={0.1} suffix="mg" />
       </div>
 
       <div>
@@ -212,17 +241,17 @@ function CycleTab() {
           style={{ background: 'rgba(99,102,241,0.06)', border: '1px solid rgba(129,140,248,0.14)' }}
         >
           <p className="text-[#818cf8] text-xs tracking-[0.25em] uppercase font-semibold mb-5">
-            Ciklus összesítő
+            {t('calc.cycleTitle')}
           </p>
           {results ? (
             <>
-              <ResultRow label="Összes injekció" value={`${results.injectTotal} db`} />
-              <ResultRow label="Összes dózis" value={`${results.totalMcg.toLocaleString('hu-HU')} mcg`} />
-              <ResultRow label="Összes mennyiség" value={`${results.totalMg} mg`} />
-              <ResultRow label="Szükséges injekciós üveg" value={`${results.vialsNeeded} db`} highlight />
+              <ResultRow label={t('calc.totalInj')} value={`${results.injectTotal} ${t('calc.pcs')}`} />
+              <ResultRow label={t('calc.totalDose')} value={`${results.totalMcg.toLocaleString()} mcg`} />
+              <ResultRow label={t('calc.totalAmount')} value={`${results.totalMg} mg`} />
+              <ResultRow label={t('calc.vialsNeeded')} value={`${results.vialsNeeded} ${t('calc.pcs')}`} highlight />
             </>
           ) : (
-            <p className="text-gray-600 text-sm">Add meg az adatokat az összesítőhöz.</p>
+            <p className="text-gray-600 text-sm">{t('calc.cycleEmpty')}</p>
           )}
         </div>
       </div>
@@ -231,12 +260,14 @@ function CycleTab() {
 }
 
 function RefTab() {
+  const { t, tr } = useLang()
+  const cols = t('calc.refCols').split('|')
   return (
     <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(255,255,255,0.06)' }}>
       <table className="w-full text-sm min-w-[600px]">
         <thead>
           <tr style={{ background: 'rgba(99,102,241,0.07)' }}>
-            {['Peptid', 'Félelevidő', 'Tipikus dózis', 'Frekvencia', 'Üveg', 'Beadás'].map(h => (
+            {cols.map(h => (
               <th key={h} className="text-left px-5 py-4 text-[#818cf8] text-xs tracking-widest uppercase font-semibold">
                 {h}
               </th>
@@ -250,37 +281,44 @@ function RefTab() {
               className="border-t border-white/[0.04] hover:bg-white/[0.02] transition-colors duration-150"
             >
               <td className="px-5 py-4 text-white font-bold">{r.name}</td>
-              <td className="px-5 py-4 text-gray-400">{r.halfLife}</td>
+              <td className="px-5 py-4 text-gray-400">{tr(r.halfLife)}</td>
               <td className="px-5 py-4 text-gray-400">{r.typDose}</td>
-              <td className="px-5 py-4 text-gray-400">{r.freq}</td>
+              <td className="px-5 py-4 text-gray-400">{tr(r.freq)}</td>
               <td className="px-5 py-4 text-gray-400">{r.vial}</td>
-              <td className="px-5 py-4 text-gray-500 italic text-xs">{r.route}</td>
+              <td className="px-5 py-4 text-gray-500 italic text-xs">{tr(r.route)}</td>
             </tr>
           ))}
         </tbody>
       </table>
       <p className="text-gray-700 text-xs px-5 py-4 border-t border-white/[0.04]">
-        SC = szubkután · IM = intramuszkuláris · IN = intranazális · A fenti értékek tájékoztató jellegűek.
+        {t('calc.refFootnote')}
       </p>
     </div>
   )
 }
 
 export default function Calculator() {
+  const { t } = useLang()
   const [activeTab, setActiveTab] = useState('recon')
+
+  const TABS = [
+    { id: 'recon',  label: t('calc.tab.recon'), Icon: FlaskConical },
+    { id: 'cycle',  label: t('calc.tab.cycle'), Icon: CalendarDays },
+    { id: 'ref',    label: t('calc.tab.ref'),   Icon: BookOpen },
+  ]
 
   return (
     <section className="py-28 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-[#818cf8] text-xs tracking-[0.3em] uppercase mb-5">
-            Eszközök
+            {t('calc.eyebrow')}
           </p>
           <h2 className="text-3xl md:text-5xl font-bold italic text-white mb-4">
-            Peptid Számológép
+            {t('calc.title')}
           </h2>
           <p className="text-gray-500 text-sm max-w-xl mx-auto leading-relaxed">
-            Rekonstituálási arányok, ciklustervezés és referencia adatok — egy helyen.
+            {t('calc.subtitle')}
           </p>
         </div>
 

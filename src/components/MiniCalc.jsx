@@ -1,10 +1,12 @@
 import { useState, useMemo } from 'react'
 import { Calculator } from 'lucide-react'
+import { useLang } from '../i18n/LanguageContext'
 
 export default function MiniCalc({ defaultVialMg = 5, defaultBacMl = 2, defaultDoseMcg = 250, accentColor = '#818cf8' }) {
   const [vialMg,   setVialMg]   = useState(String(defaultVialMg))
   const [bacMl,    setBacMl]    = useState(String(defaultBacMl))
   const [doseMcg,  setDoseMcg]  = useState(String(defaultDoseMcg))
+  const { t } = useLang()
 
   const result = useMemo(() => {
     const vial = parseFloat(vialMg)
@@ -12,8 +14,8 @@ export default function MiniCalc({ defaultVialMg = 5, defaultBacMl = 2, defaultD
     const dose = parseFloat(doseMcg)
     if (!vial || !bac || !dose || vial <= 0 || bac <= 0 || dose <= 0) return null
 
-    const concMcgPerMl = (vial * 1000) / bac      // mcg/ml
-    const syringeIU    = (dose / concMcgPerMl) * 100 // U-100
+    const concMcgPerMl = (vial * 1000) / bac
+    const syringeIU    = (dose / concMcgPerMl) * 100
     const syringeMl    = dose / concMcgPerMl
     const doses        = Math.floor((vial * 1000) / dose)
 
@@ -44,25 +46,23 @@ export default function MiniCalc({ defaultVialMg = 5, defaultBacMl = 2, defaultD
       <div className="flex items-center gap-2 mb-4">
         <Calculator size={14} style={{ color: accentColor }} />
         <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: accentColor }}>
-          Peptid Kalkulátor
+          {t('mc.title')}
         </span>
       </div>
 
-      {/* Inputs — 3 columns */}
       <div className="grid grid-cols-3 gap-3 mb-4">
-        {field('Fiola', vialMg,   setVialMg,  'mg')}
-        {field('BAC víz', bacMl,  setBacMl,   'ml')}
-        {field('Adag', doseMcg,   setDoseMcg, 'mcg')}
+        {field(t('mc.vial'), vialMg,   setVialMg,  'mg')}
+        {field(t('mc.bac'),  bacMl,    setBacMl,   'ml')}
+        {field(t('mc.dose'), doseMcg,  setDoseMcg, 'mcg')}
       </div>
 
-      {/* Result */}
       {result ? (
         <div className="grid grid-cols-2 gap-2">
           {[
-            { label: 'Koncentráció', value: `${result.concMcgPerMl.toFixed(1)} mcg/ml` },
-            { label: 'Fecskendő (IU)', value: `${result.syringeIU.toFixed(1)} IU` },
-            { label: 'Fecskendő (ml)', value: `${result.syringeMl.toFixed(3)} ml` },
-            { label: 'Adagok száma', value: `${result.doses} adag` },
+            { label: t('mc.conc'),  value: `${result.concMcgPerMl.toFixed(1)} mcg/ml` },
+            { label: t('mc.iu'),    value: `${result.syringeIU.toFixed(1)} IU` },
+            { label: t('mc.ml'),    value: `${result.syringeMl.toFixed(3)} ml` },
+            { label: t('mc.doses'), value: `${result.doses} ${t('mc.doseUnit')}` },
           ].map(({ label, value }) => (
             <div
               key={label}
@@ -76,12 +76,12 @@ export default function MiniCalc({ defaultVialMg = 5, defaultBacMl = 2, defaultD
         </div>
       ) : (
         <p className="text-center text-gray-600 text-xs py-3">
-          Add meg az adatokat a számításhoz.
+          {t('mc.empty')}
         </p>
       )}
 
       <p className="text-[10px] text-gray-700 mt-3 text-center">
-        Kizárólag tájékoztató — nem helyettesíti az orvosi tanácsadást.
+        {t('mc.note')}
       </p>
     </div>
   )

@@ -1,0 +1,190 @@
+// Peptide effect categories (Élettani hatások / Physiological effects).
+// Each category exposes localized text via { hu, en, pl } objects and shares colour, glow and SVG illustration.
+
+export const EFFECT_CATEGORIES = [
+  {
+    color: '#f43f5e',
+    glow: 'rgba(244,63,94,0.18)',
+    title: { hu: 'Gyógyulást segítő peptidek', en: 'Healing peptides', pl: 'Peptydy wspomagające gojenie' },
+    subtitle: { hu: 'Szöveti regeneráció & gyulladáscsökkentés', en: 'Tissue regeneration & anti-inflammation', pl: 'Regeneracja tkanek i działanie przeciwzapalne' },
+    description: {
+      hu: 'A gyógyulást segítő peptidek felgyorsítják az izmok, inak, szalagok és belső szervek regenerációját. Csökkentik a gyulladást sejtszinten, aktiválják a fibroblasztokat és elősegítik az angiogenezist — új érképződést. Ideálisak sérülés utáni rehabilitációhoz és krónikus gyulladásos állapotok kezeléséhez.',
+      en: 'Healing peptides accelerate the regeneration of muscles, tendons, ligaments and internal organs. They reduce inflammation at the cellular level, activate fibroblasts and promote angiogenesis — new vessel formation. Ideal for post-injury rehabilitation and chronic inflammation.',
+      pl: 'Peptydy wspomagające gojenie przyspieszają regenerację mięśni, ścięgien, więzadeł i narządów wewnętrznych. Zmniejszają stan zapalny na poziomie komórkowym, aktywują fibroblasty i promują angiogenezę. Idealne w rehabilitacji po urazach i przewlekłych stanach zapalnych.',
+    },
+    detail: {
+      hu: 'A BPC-157 (Body Protection Compound-157) egy 15 aminosavból álló, a gyomornedvből izolált stabil peptid, amely rendkívül széleskörű gyógyulást elősegítő hatásokkal rendelkezik. Aktiválja a növekedési faktor receptorokat (EGR1), elősegíti a kollagén szintézist, csökkenti az oxidatív stresszt és modulálja a nitrogén-oxid (NO) rendszert. A TB-500 a Thymosin Beta-4 aktív fragmense, amely az aktin-polimerizációt szabályozva mobilizálja az őssejteket és gyorsítja a szöveti javítást. Ezek a peptidek együttesen a leghatékonyabb kutatott regeneratív vegyületek közé tartoznak.',
+      en: 'BPC-157 (Body Protection Compound-157) is a stable 15-amino-acid peptide isolated from gastric juice with an extremely broad pro-healing profile. It activates growth factor receptors (EGR1), promotes collagen synthesis, reduces oxidative stress and modulates the nitric oxide (NO) system. TB-500 is the active fragment of Thymosin Beta-4 — by regulating actin polymerization it mobilizes stem cells and accelerates tissue repair. Together these are among the most effective regenerative compounds studied.',
+      pl: 'BPC-157 to stabilny 15-aminokwasowy peptyd wyizolowany z soku żołądkowego o bardzo szerokim profilu prozdrowotnym. Aktywuje receptory czynników wzrostu (EGR1), promuje syntezę kolagenu, zmniejsza stres oksydacyjny i moduluje układ tlenku azotu (NO). TB-500 to aktywny fragment tymozyny beta-4 — regulując polimeryzację aktyny mobilizuje komórki macierzyste i przyspiesza naprawę tkanek. Łącznie to jedne z najbardziej badanych związków regeneracyjnych.',
+    },
+    studies: [
+      { title: 'BPC 157 promotes tendon outgrowth and cell migration', authors: 'Chang CH et al.', journal: 'J Appl Physiol. 2011;110(3):774–780.', pmid: '21148343' },
+      { title: 'Brain-gut Axis and Pentadecapeptide BPC 157: Theoretical and Practical Implications', authors: 'Sikiric P et al.', journal: 'Curr Neuropharmacol. 2016;14(8):745–764.', pmid: '26740957' },
+      { title: 'Thymosin β4 accelerates wound healing via actin cytoskeletal reorganization', authors: 'Philp D et al.', journal: 'FASEB J. 2004;18(2):445–447.', pmid: '14715703' },
+    ],
+    peptides: ['BPC-157', 'TB-500', 'KPV', 'LL-37'],
+    peptideIds: ['bpc-157', 'tb-500', null, null],
+    image: '/peptides/Gyógyulástsegítőpeptidek.png',
+  },
+  {
+    color: '#10b981',
+    glow: 'rgba(16,185,129,0.18)',
+    title: { hu: 'Növekedési hormont serkentő peptidek', en: 'Growth-hormone-stimulating peptides', pl: 'Peptydy stymulujące hormon wzrostu' },
+    subtitle: { hu: 'GH-szekréció & anabolikus hatások', en: 'GH secretion & anabolic effects', pl: 'Wydzielanie GH i działanie anaboliczne' },
+    description: {
+      hu: 'Ezek a peptidek a hipofízisből stimulálják a növekedési hormon (GH) természetes felszabadulását, utánozva a szervezet saját pulzatív GH-szekrécióját. Fokozzák az IGF-1 termelést, javítják az alvásminőséget, csökkentik a zsírtömeget és elősegítik a sovány izomtömeg megtartását.',
+      en: 'These peptides stimulate the natural pituitary release of growth hormone (GH), mimicking the body’s pulsatile GH secretion. They boost IGF-1, improve sleep, reduce fat mass and help preserve lean muscle.',
+      pl: 'Te peptydy stymulują naturalne uwalnianie hormonu wzrostu (GH) z przysadki, naśladując pulsacyjne wydzielanie GH organizmu. Zwiększają IGF-1, poprawiają sen, redukują tkankę tłuszczową i pomagają zachować masę mięśniową.',
+    },
+    detail: {
+      hu: 'A CJC-1295 a GHRH (növekedési hormon-felszabadító hormon) szintetikus analógja, amely a DAC (Drug Affinity Complex) technológiával meghosszabbított felezési idővel rendelkezik — egyetlen injekció akár 1-2 hétig emeli a GH-szintet. Az Ipamorelin szelektív GHSR-agonista, amely kortizol- és prolaktinszint-emelkedés nélkül serkenti a GH-szekréciót. Kombinálva (CJC-1295 + Ipamorelin stack) szinergisztikus hatást fejtenek ki: a GHRH-analóg növeli az alap GH-szintet, míg a GHRP-típusú vegyület erősíti a pulzatív csúcsokat.',
+      en: 'CJC-1295 is a synthetic analog of GHRH with an extended half-life via DAC technology — a single injection can elevate GH for 1–2 weeks. Ipamorelin is a selective GHSR agonist that boosts GH secretion without raising cortisol or prolactin. The CJC-1295 + Ipamorelin stack works synergistically: the GHRH analog raises baseline GH while the GHRP amplifies pulsatile peaks.',
+      pl: 'CJC-1295 to syntetyczny analog GHRH z wydłużonym okresem półtrwania dzięki technologii DAC — pojedyncza iniekcja może podnieść GH na 1–2 tygodnie. Ipamorelin to selektywny agonista GHSR podnoszący wydzielanie GH bez wzrostu kortyzolu i prolaktyny. Stack CJC-1295 + Ipamorelin działa synergicznie: analog GHRH podnosi poziom bazowy, GHRP wzmacnia szczyty pulsacyjne.',
+    },
+    studies: [
+      { title: 'Prolonged stimulation of GH and IGF-I secretion by CJC-1295', authors: 'Teichman SL et al.', journal: 'J Clin Endocrinol Metab. 2006;91(3):799–805.', pmid: '16352683' },
+      { title: 'Ipamorelin, the first selective growth hormone secretagogue', authors: 'Raun K et al.', journal: 'Eur J Endocrinol. 1998;139(5):552–561.', pmid: '9849822' },
+      { title: 'GHRP-2 as a GH secretagogue: clinical evidence', authors: 'Bowers CY et al.', journal: 'J Clin Endocrinol Metab. 1990;70(4):975–982.', pmid: '2318950' },
+    ],
+    peptides: ['CJC-1295', 'Ipamorelin', 'GHRP-2', 'Sermorelin'],
+    peptideIds: ['cjc-1295', 'ipamorelin', null, 'sermorelin'],
+  },
+  {
+    color: '#f97316',
+    glow: 'rgba(249,115,22,0.18)',
+    title: { hu: 'Izomépítő peptidek', en: 'Muscle-building peptides', pl: 'Peptydy budujące mięśnie' },
+    subtitle: { hu: 'Fehérjeszintézis & hipertrófia', en: 'Protein synthesis & hypertrophy', pl: 'Synteza białek i hipertrofia' },
+    description: {
+      hu: 'Az izomépítő peptidek közvetlenül a vázizomzat növekedési útjaira hatnak — aktiválják az mTOR-t, fokozzák a szatellitsejtek proliferációját és csökkentik az izomlebontást. Segítenek fenntartani a sovány izomtömeget kalória-deficit mellett is.',
+      en: 'Muscle-building peptides act directly on skeletal-muscle growth pathways — activating mTOR, boosting satellite-cell proliferation and reducing muscle breakdown. They help preserve lean mass even in a caloric deficit.',
+      pl: 'Peptydy budujące mięśnie działają bezpośrednio na szlaki wzrostu mięśni szkieletowych — aktywują mTOR, zwiększają proliferację komórek satelitarnych i zmniejszają katabolizm. Pomagają utrzymać masę nawet przy deficycie kalorycznym.',
+    },
+    detail: {
+      hu: 'Az IGF-1 LR3 (Insulin-like Growth Factor-1 Long R3) az IGF-1 rekombináns analógja, amely 20-30-szor hosszabb felezési idővel rendelkezik, mint a natív IGF-1. Közvetlenül kötődik az IGF-1 receptorhoz (IGF-1R) az izomsejteken, aktiválva a PI3K/Akt/mTOR jelátviteli útvonalat — ez a fehérjeszintézis és a sejtosztódás fő vezérlő mechanizmusa. Az MGF (Mechano Growth Factor) a lokális szöveti sérülésre adott válaszként termelődő IGF-1 izoforma, amely a szatelit-sejtek aktiválásán keresztül az izomsejtek javítását és hipertrófiáját indítja el. A Follistatin-344 a myostatin természetes inhibitora — blokkolja ezt az izomtömeg-korlátozó fehérjét, lehetővé téve a fokozottabb izomfejlődést.',
+      en: 'IGF-1 LR3 is a recombinant IGF-1 analog with 20–30× the half-life of native IGF-1. It binds directly to IGF-1R on muscle cells, activating the PI3K/Akt/mTOR pathway — the master regulator of protein synthesis and cell division. MGF (Mechano Growth Factor) is an IGF-1 isoform produced in response to local tissue injury that activates satellite cells to drive repair and hypertrophy. Follistatin-344 is a natural myostatin inhibitor — blocking this muscle-limiting protein to allow more growth.',
+      pl: 'IGF-1 LR3 to rekombinowany analog IGF-1 z 20–30× dłuższym okresem półtrwania niż natywny IGF-1. Wiąże się bezpośrednio z IGF-1R na mięśniach, aktywując szlak PI3K/Akt/mTOR — główny regulator syntezy białek i podziałów komórkowych. MGF (Mechano Growth Factor) to izoforma IGF-1 produkowana w odpowiedzi na lokalny uraz, aktywująca komórki satelitarne i wywołująca naprawę oraz hipertrofię. Follistatin-344 to naturalny inhibitor miostatyny.',
+    },
+    studies: [
+      { title: 'IGF-1 and skeletal muscle: mechanisms of action and anabolic effects', authors: 'Philippou A et al.', journal: 'J Musculoskelet Neuronal Interact. 2007;7(3):208–218.', pmid: '17947811' },
+      { title: 'Mechano growth factor (MGF) and its role in muscle adaptation', authors: 'Goldspink G.', journal: 'J Anat. 2011;218(1):101–108.', pmid: '20579171' },
+      { title: 'Follistatin gene delivery enhances muscle growth and strength', authors: 'Haidet AM et al.', journal: 'Proc Natl Acad Sci USA. 2008;105(11):4318–4322.', pmid: '18326622' },
+    ],
+    peptides: ['IGF-1 LR3', 'MGF', 'Follistatin 344', 'PEG-MGF'],
+    peptideIds: [null, null, null, null],
+  },
+  {
+    color: '#eab308',
+    glow: 'rgba(234,179,8,0.18)',
+    title: { hu: 'Anyagcsere peptidek', en: 'Metabolic peptides', pl: 'Peptydy metaboliczne' },
+    subtitle: { hu: 'Zsírégetés & inzulinérzékenység', en: 'Fat loss & insulin sensitivity', pl: 'Spalanie tłuszczu i wrażliwość na insulinę' },
+    description: {
+      hu: 'Az anyagcsere peptidek befolyásolják a lipolízist, szabályozzák a vércukorszintet és javítják az inzulinérzékenységet. Egyes típusok a GLP-1 receptor útján csökkentik az étvágyat és lassítják a gyomorürülést.',
+      en: 'Metabolic peptides influence lipolysis, regulate blood glucose and improve insulin sensitivity. Some, via the GLP-1 receptor, reduce appetite and slow gastric emptying.',
+      pl: 'Peptydy metaboliczne wpływają na lipolizę, regulują glikemię i poprawiają wrażliwość na insulinę. Niektóre, przez receptor GLP-1, redukują apetyt i spowalniają opróżnianie żołądka.',
+    },
+    detail: {
+      hu: 'A retatrutide (Eli Lilly, LY3437943) háromszoros inkretinreceptor-agonista (GIP/GLP-1/glukagon), amely a Fázis 2 vizsgálatban 48 hét alatt 24%-os testtömeg-csökkentést eredményezett — a jelenlegi obesitás-terápia legerősebb eredménye. A semaglutide a GLP-1 receptor agonistája, amely az agyban lévő étvágyközpontra hatva csökkenti az éhségérzetet, lassítja a gyomorürülést és javítja a hasnyálmirigy inzulinszekrécióját. Az STEP klinikai programban 2.4 mg/hét dózisban átlagosan 14.9%-os testsúlycsökkenést eredményezett. A MOTS-c egy mitokondriális eredetű peptid, amely a teljes testszintű energia-anyagcserét modulálja.',
+      en: 'Retatrutide (Eli Lilly, LY3437943) is a triple incretin receptor agonist (GIP/GLP-1/glucagon) that produced 24% body weight reduction over 48 weeks in the Phase 2 trial — the strongest current obesity-therapy result. Semaglutide is a GLP-1 receptor agonist that reduces appetite via brain centres, slows gastric emptying and boosts pancreatic insulin secretion. The STEP program produced an average 14.9% weight loss at 2.4 mg/week. MOTS-c is a mitochondrially-derived peptide that modulates whole-body energy metabolism.',
+      pl: 'Retatrutyd (Eli Lilly, LY3437943) to potrójny agonista receptora inkretynowego (GIP/GLP-1/glukagon), który dał 24% redukcji masy w 48 tyg. w fazie 2 — najsilniejszy obecnie wynik w terapii otyłości. Semaglutyd to agonista receptora GLP-1, redukuje apetyt poprzez ośrodki mózgowe, spowalnia opróżnianie żołądka i zwiększa wydzielanie insuliny. Program STEP — średnio 14,9% utraty masy przy 2,4 mg/tydz. MOTS-c to peptyd pochodzenia mitochondrialnego modulujący metabolizm energetyczny.',
+    },
+    studies: [
+      { title: 'Triple–Hormone-Receptor Agonist Retatrutide for Obesity (Phase 2)', authors: 'Jastreboff AM et al.', journal: 'N Engl J Med. 2023;389(6):514–526.', pmid: '37366315' },
+      { title: 'Once-Weekly Semaglutide in Adults with Overweight or Obesity (STEP 1)', authors: 'Wilding JPH et al.', journal: 'N Engl J Med. 2021;384(11):989–1002.', pmid: '33567185' },
+      { title: 'MOTS-c: a mitochondrial-derived peptide regulating metabolism', authors: 'Lee C et al.', journal: 'Cell Metab. 2015;21(3):443–454.', pmid: '25738459' },
+    ],
+    peptides: ['Retatrutide', 'Semaglutide', 'Tirzepatide', 'MOTS-c'],
+    peptideIds: ['retatrutide', null, null, null],
+  },
+  {
+    color: '#14b8a6',
+    glow: 'rgba(20,184,166,0.18)',
+    title: { hu: 'Longevity peptidek', en: 'Longevity peptides', pl: 'Peptydy długowieczności' },
+    subtitle: { hu: 'Öregedésgátlás & celluláris megújulás', en: 'Anti-aging & cellular renewal', pl: 'Antystarzeniowe i odnowa komórkowa' },
+    description: {
+      hu: 'A longevity peptidek a sejtek öregedési folyamataira hatnak: telomerázaktivitást serkentik, csökkentik az oxidatív stresszt és szabályozzák az epigenetikai markereket. Az öregedéskutatás legígéretesebb területének számítanak.',
+      en: 'Longevity peptides act on cellular aging processes: stimulating telomerase, reducing oxidative stress and regulating epigenetic markers. They are one of the most promising areas of aging research.',
+      pl: 'Peptydy długowieczności działają na procesy starzenia komórkowego: stymulują telomerazę, redukują stres oksydacyjny i regulują markery epigenetyczne. Jeden z najbardziej obiecujących obszarów badań nad starzeniem.',
+    },
+    detail: {
+      hu: 'Az Epitalon (Ala-Glu-Asp-Gly) egy szintetikus tetrapeptid, a tealamin természetes analógja, amelyet a csecsemőmirigyből izoláltak. Aktiválja a telomerázt, az enzimét amely megvédi a telomereket a rövidüléstől — ez a sejtosztódás korlátozó tényezője. Emberi fibroblasztokon végzett vizsgálatokban az Epitalonnal kezelt sejtek 10 generációval tovább osztódtak a kontrollhoz képest. A GHK-Cu (glycyl-L-histidyl-L-lysine-Cu²⁺) egy endogén rézpeptid, amely fiatalabb korban magasabb koncentrációban van jelen. Aktiválja a szöveti regenerációt, az antioxidáns enzimeket (SOD, kataláz), csökkenti a gyulladásos citokineket és epigenetikusan módosítja az öregedéssel kapcsolatos génexpressziót. A Longevity Research Institute 2018-as összefoglalója szerint a GHK-Cu több mint 4000 humán gén expresszióját befolyásolja.',
+      en: 'Epithalon (Ala-Glu-Asp-Gly) is a synthetic tetrapeptide, a natural analog of epitalamin isolated from the pineal gland. It activates telomerase — the enzyme that protects telomeres from shortening — the limiting factor of cell division. In human fibroblasts, Epithalon-treated cells divided 10 generations longer than controls. GHK-Cu is an endogenous copper peptide present at higher concentrations in youth. It activates tissue regeneration, antioxidant enzymes (SOD, catalase), reduces inflammatory cytokines and epigenetically modifies aging-related gene expression. A 2018 Longevity Research Institute summary reports that GHK-Cu modulates more than 4000 human genes.',
+      pl: 'Epitalon (Ala-Glu-Asp-Gly) to syntetyczny tetrapeptyd, naturalny analog epitalaminy z szyszynki. Aktywuje telomerazę — enzym chroniący telomery przed skracaniem, czynnik limitujący podziały. W fibroblastach ludzkich komórki traktowane epitalonem dzieliły się o 10 generacji dłużej niż kontrole. GHK-Cu to endogenny peptyd miedziowy o wyższym stężeniu w młodości. Aktywuje regenerację, enzymy antyoksydacyjne (SOD, katalaza), zmniejsza cytokiny zapalne i moduluje epigenetycznie ekspresję genów związanych ze starzeniem. Według raportu Longevity Research Institute z 2018 r. GHK-Cu wpływa na ekspresję ponad 4000 genów.',
+    },
+    studies: [
+      { title: 'Epithalon peptide extends lifespan and suppresses tumors in rodents', authors: 'Khavinson VK et al.', journal: 'Neuro Endocrinol Lett. 2003;24(3–4):172–177.', pmid: '14523363' },
+      { title: 'GHK-Cu Peptide: Regenerative and Protective Actions', authors: 'Pickart L, Margolina A.', journal: 'Rejuvenation Res. 2018;21(4):339–349.', pmid: '29168693' },
+      { title: 'Epitalon activates telomerase and increases telomere length in human cells', authors: 'Khavinson VKh et al.', journal: 'Bull Exp Biol Med. 2003;135(6):590–592.', pmid: '12937682' },
+    ],
+    peptides: ['Epitalon', 'GHK-Cu', 'Thymalin', 'SS-31'],
+    peptideIds: ['epithalon', 'ghk-cu', null, null],
+  },
+  {
+    color: '#a855f7',
+    glow: 'rgba(168,85,247,0.18)',
+    title: { hu: 'Idegrendszert támogató peptidek', en: 'Nervous-system peptides', pl: 'Peptydy układu nerwowego' },
+    subtitle: { hu: 'Neuroprotekció & kognitív funkció', en: 'Neuroprotection & cognition', pl: 'Neuroprotekcja i funkcje poznawcze' },
+    description: {
+      hu: 'Az idegrendszeri peptidek keresztezik a vér-agy gátat és hatnak a neurotranszmitter-rendszerekre, BDNF-termelésre és neuroprotektív utakra. Javítják a koncentrációt, memóriát és védenek a neurodegeneratív folyamatokkal szemben.',
+      en: 'Nervous-system peptides cross the blood-brain barrier and act on neurotransmitter systems, BDNF production and neuroprotective pathways. They improve focus, memory and protect against neurodegenerative processes.',
+      pl: 'Peptydy układu nerwowego przekraczają barierę krew–mózg i działają na układy neuroprzekaźników, produkcję BDNF i szlaki neuroprotekcyjne. Poprawiają koncentrację, pamięć i chronią przed procesami neurodegeneracyjnymi.',
+    },
+    detail: {
+      hu: 'A Selank (Thr-Lys-Pro-Arg-Pro-Gly-Pro) az enkephalin analógja, amelyet az orosz Molekuláris Genetikai Intézetben fejlesztettek ki. Szorongásoldó hatását a GABA-A receptor modulálásán és a szerotonin visszavétel gátlásán keresztül fejti ki, miközben nem okoz szedációt vagy függőséget. A Semax (Met-Glu-His-Phe-Pro-Gly-Pro) az ACTH 4-7 fragmense, amely erőteljesen fokozza a BDNF (agyi neurotrofikus faktor) és NGF (idegnövekedési faktor) termelést — ezek az idegsejtek túlélésének és plaszticitásának kulcsmolekulái. A Dihexa (N-hexanoyl-Tyr-Ile-His-Pro) a Washingtonban fejlesztett, angiotensin IV analóg, amely klinikai vizsgálatokban 10 milliószor erősebbnek bizonyult a BDNF-nél a szinaptogenezis serkentésében.',
+      en: 'Selank is an analog of enkephalin developed at the Russian Institute of Molecular Genetics. Its anxiolytic action runs via GABA-A modulation and serotonin reuptake inhibition without causing sedation or dependence. Semax is an ACTH 4-7 fragment that strongly increases BDNF (brain-derived neurotrophic factor) and NGF (nerve growth factor) — key molecules for neuronal survival and plasticity. Dihexa, an angiotensin IV analog developed in Washington, has been shown to be 10 million times more potent than BDNF at stimulating synaptogenesis.',
+      pl: 'Selank to analog enkefaliny opracowany w Rosyjskim Instytucie Genetyki Molekularnej. Działa anksjolitycznie przez modulację GABA-A i hamowanie wychwytu zwrotnego serotoniny, bez sedacji i uzależnienia. Semax to fragment ACTH 4-7 silnie zwiększający BDNF (neurotrofowy czynnik mózgowy) i NGF — kluczowe dla przeżycia i plastyczności neuronów. Dihexa, analog angiotensyny IV, okazał się 10 milionów razy silniejszy od BDNF w stymulacji synaptogenezy.',
+    },
+    studies: [
+      { title: 'Selank: anxiolytic and nootropic properties via opioid-mediated mechanism', authors: 'Semenova TP et al.', journal: 'Bull Exp Biol Med. 2010;150(4):466–468.', pmid: '21268715' },
+      { title: 'Semax increases BDNF expression in rat hippocampus', authors: 'Dolotov OV et al.', journal: 'J Neurochem. 2006;97 Suppl 1:82–86.', pmid: '16635259' },
+      { title: 'Dihexa: a cognitive enhancer 10 million times more potent than BDNF', authors: 'McCoy AT et al.', journal: 'J Pharmacol Exp Ther. 2013;347(2):374–382.', pmid: '23999005' },
+    ],
+    peptides: ['Selank', 'Semax', 'Dihexa', 'NAP (AL-108)'],
+    peptideIds: [null, null, null, null],
+  },
+  {
+    color: '#ec4899',
+    glow: 'rgba(236,72,153,0.18)',
+    title: { hu: 'Kozmetikai peptidek', en: 'Cosmetic peptides', pl: 'Peptydy kosmetyczne' },
+    subtitle: { hu: 'Kollagénszintézis & bőrmegújulás', en: 'Collagen synthesis & skin renewal', pl: 'Synteza kolagenu i odnowa skóry' },
+    description: {
+      hu: 'A kozmetikai peptidek stimulálják a kollagén I, III és IV típusok termelését, csökkentik a mátrix-metalloproteinázokat és aktiválják a fibroblasztokat. Topikálisan és szisztémásan is hatásosak — javítják a bőrelaszticitást és csökkentik a finom vonalakat.',
+      en: 'Cosmetic peptides stimulate the production of collagen types I, III and IV, reduce matrix metalloproteinases and activate fibroblasts. Effective both topically and systemically — improving skin elasticity and reducing fine lines.',
+      pl: 'Peptydy kosmetyczne stymulują produkcję kolagenu I, III i IV, redukują metaloproteinazy macierzy i aktywują fibroblasty. Skuteczne zarówno miejscowo, jak i systemowo — poprawiają elastyczność skóry i redukują drobne zmarszczki.',
+    },
+    detail: {
+      hu: 'A GHK-Cu (réz-tripeptid-1) az emberi plazmában természetesen előforduló, de korral csökkenő koncentrációjú molekula. Topikális alkalmazásban penetrálja a bőr stratum corneumát és a dermiszben: fokozza a kollagén, elasztin és proteoglikán szintézist, aktiválja az MMP-inhibitorokat (TIMP-1, TIMP-2) a kollagén védelmére, és serkenti a bőr őssejtjeit (keratinocyták, fibroblasztok). Az Argireline (Acetyl Hexapeptide-3) a SNAP-25 fehérje N-terminális szekvenciájának analógja — a botox-hoz hasonló, de nem toxikus mechanizmussal csökkenti az arckifejezési ráncokat az izom összehúzódásának enyhítésével. A Matrixyl 3000 peer-reviewed klinikai vizsgálatokban 33%-os ráncmélység-csökkenést mutatott 2 hónap alatt.',
+      en: 'GHK-Cu (copper tripeptide-1) is a molecule naturally found in plasma at concentrations that decline with age. Applied topically it penetrates the stratum corneum and in the dermis: boosts collagen, elastin and proteoglycan synthesis, activates MMP inhibitors (TIMP-1/2) protecting collagen, and stimulates skin stem cells (keratinocytes, fibroblasts). Argireline (Acetyl Hexapeptide-3) is an analog of the SNAP-25 N-terminal sequence — a non-toxic, botox-like mechanism that softens expression lines by easing muscle contraction. Matrixyl 3000 has demonstrated 33% wrinkle-depth reduction in 2 months in peer-reviewed clinical studies.',
+      pl: 'GHK-Cu (tripeptyd miedziowy-1) to cząsteczka naturalnie obecna w osoczu, której stężenie maleje z wiekiem. Aplikowany miejscowo penetruje stratum corneum i w skórze właściwej: zwiększa syntezę kolagenu, elastyny i proteoglikanów, aktywuje inhibitory MMP (TIMP-1/2) chroniąc kolagen, stymuluje komórki macierzyste skóry. Argireline (Acetyl Hexapeptide-3) to analog N-końcowej sekwencji SNAP-25 — łagodzi zmarszczki mimiczne mechanizmem nietoksycznym, podobnym do botoksu. Matrixyl 3000 wykazał 33% redukcji głębokości zmarszczek w 2 miesiące w badaniach klinicznych.',
+    },
+    studies: [
+      { title: 'GHK-Cu and human skin remodeling: a comprehensive review', authors: 'Pickart L.', journal: 'J Biomater Sci Polym Ed. 2008;19(8):969–988.', pmid: '18644225' },
+      { title: 'Topical application of GHK-Cu reduces facial wrinkles', authors: 'Leyden JJ et al.', journal: 'Dermatol Surg. 2004;30(2):130–135.', pmid: '14756628' },
+      { title: 'Acetyl hexapeptide-3 in cosmetics: mechanism and clinical evidence', authors: 'Blanes-Mira C et al.', journal: 'Int J Cosmet Sci. 2002;24(5):303–310.', pmid: '18494913' },
+    ],
+    peptides: ['GHK-Cu', 'Argireline', 'Matrixyl 3000', 'Leuphasyl'],
+    peptideIds: ['ghk-cu', null, null, null],
+  },
+  {
+    color: '#3b82f6',
+    glow: 'rgba(59,130,246,0.18)',
+    title: { hu: 'Immunrendszert erősítő peptidek', en: 'Immune-system peptides', pl: 'Peptydy wzmacniające odporność' },
+    subtitle: { hu: 'Immunmoduláció & védekezőképesség', en: 'Immunomodulation & defence', pl: 'Immunomodulacja i obronność' },
+    description: {
+      hu: 'Az immunmoduláló peptidek a csecsemőmirigyből származó molekulák, amelyek T-sejtek érését, NK-sejtek aktivitását és a citokin-egyensúlyt befolyásolják. Gyulladáscsökkentő és immunstimuláló hatást egyszerre képesek kifejteni.',
+      en: 'Immunomodulatory peptides are thymus-derived molecules that influence T-cell maturation, NK-cell activity and cytokine balance. They can act both anti-inflammatory and immune-stimulating at the same time.',
+      pl: 'Peptydy immunomodulujące to cząsteczki pochodzenia grasiczego wpływające na dojrzewanie limfocytów T, aktywność komórek NK i równowagę cytokin. Łączą działanie przeciwzapalne i stymulujące odporność.',
+    },
+    detail: {
+      hu: 'A Thymosin Alpha-1 (Tα1) a csecsemőmirigy által termelt 28 aminosavas polipeptid, amelyet az FDA "Orphan Drug" státusszal jelölt meg. Aktiválja a dendritikus sejteket, fokozza a CD4+ és CD8+ T-limfociták érését, serkenti az NK-sejtek citotoxikus aktivitását és szabályozza az IL-2, IL-7, IL-10 és IFN-γ citokin termelést. Kínában és Olaszországban hepatitis B, hepatitis C és különböző immunhiányos állapotok kezelésére engedélyezett gyógyszer. A Thymosin Beta-4 (TB-4) az aktin-polimerációt szabályozó fehérje, amely emellett erős immunmoduláló és gyulladáscsökkentő hatásokkal rendelkezik. Az LL-37 humán katelicidin antimikrobiális peptid, amely a veleszületett immunrendszer első védelmi vonalaként működik.',
+      en: 'Thymosin Alpha-1 (Tα1) is a 28-amino-acid polypeptide produced by the thymus, designated "Orphan Drug" by the FDA. It activates dendritic cells, promotes CD4+/CD8+ T-cell maturation, enhances NK cytotoxic activity and regulates IL-2, IL-7, IL-10 and IFN-γ. Approved in China and Italy for hepatitis B, hepatitis C and various immunodeficiencies. Thymosin Beta-4 (TB-4) regulates actin polymerization with strong immunomodulatory and anti-inflammatory effects. LL-37 is a human cathelicidin antimicrobial peptide acting as a first defence line of the innate immune system.',
+      pl: 'Thymosin Alpha-1 (Tα1) to 28-aminokwasowy polipeptyd grasicy oznaczony przez FDA jako "Orphan Drug". Aktywuje komórki dendrytyczne, dojrzewanie limfocytów T CD4+/CD8+, aktywność cytotoksyczną NK i reguluje IL-2, IL-7, IL-10 oraz IFN-γ. Zatwierdzony w Chinach i Włoszech na HBV, HCV i niedobory odporności. Thymosin Beta-4 (TB-4) reguluje polimeryzację aktyny z silnym działaniem immunomodulującym i przeciwzapalnym. LL-37 to ludzki peptyd przeciwbakteryjny katelicydyny, pierwsza linia obrony wrodzonej.',
+    },
+    studies: [
+      { title: 'Thymosin alpha-1 as a therapeutic agent in infectious and malignant diseases', authors: 'Goldstein AL.', journal: 'Expert Opin Biol Ther. 2009;9(5):593–608.', pmid: '19371213' },
+      { title: 'Thymosin β4 promotes wound healing via macrophage activation', authors: 'Sosne G et al.', journal: 'FASEB J. 2002;16(11):1294–1296.', pmid: '12153992' },
+      { title: 'LL-37 modulates innate immunity and inflammatory responses', authors: 'Mookherjee N et al.', journal: 'Nat Rev Immunol. 2020;20(12):738–751.', pmid: '32728200' },
+    ],
+    peptides: ['Thymosin α-1', 'TB-4', 'LL-37', 'Thymalin'],
+    peptideIds: [null, 'tb-500', null, null],
+  },
+]

@@ -1,4 +1,5 @@
 import { Send } from 'lucide-react'
+import { useLang } from '../i18n/LanguageContext'
 
 const TELEGRAM_URL = 'https://t.me/molekulaxtra'
 const TIKTOK_URL   = 'https://www.tiktok.com/@moleculextra'
@@ -11,20 +12,19 @@ function TikTokIcon({ size = 16 }) {
   )
 }
 
-const TICKER_TEXT = 'MolekulaX: Tudatosság  •  Tudomány  •  Közösség  •  Peptid Edukáció  •  Tudományalapú Útmutatás  •  '
-
 export default function Hero() {
+  const { t } = useLang()
+  const tickerText = t('hero.ticker')
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-0 text-center relative">
 
-      {/* ── Ticker tape ──────────────────────────────────────────────── */}
       <div className="absolute top-0 left-0 right-0 overflow-hidden py-2.5 border-b border-[rgba(129,140,248,0.08)]"
            style={{ background: 'rgba(99,102,241,0.04)' }}>
         <div className="ticker-track whitespace-nowrap">
-          {/* Duplicate for seamless loop */}
           {[0, 1].map(n => (
             <span key={n} className="inline-block">
-              {TICKER_TEXT.repeat(3).split('•').map((seg, i) => (
+              {tickerText.repeat(3).split('•').map((seg, i) => (
                 <span key={i}>
                   <span className="text-[11px] text-gray-500 tracking-[0.2em] uppercase">{seg.trim()}</span>
                   <span className="text-[#818cf8] mx-4 opacity-50">•</span>
@@ -39,12 +39,12 @@ export default function Hero() {
         <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full glass mb-6">
           <span className="w-2 h-2 rounded-full bg-[#818cf8] animate-pulse" />
           <span className="text-xs text-gray-400 tracking-[0.25em] uppercase">
-            Peptid edukáció
+            {t('hero.badge')}
           </span>
         </div>
 
         <p className="text-[11px] text-gray-600 tracking-[0.18em] uppercase mb-10">
-          Your trusted source for peptide dosage protocols &amp; research information
+          {t('hero.tagline')}
         </p>
 
         <h1 className="mb-8">
@@ -52,18 +52,16 @@ export default function Hero() {
             MolekulaX
           </span>
           <span className="block font-sans font-semibold italic text-[#818cf8] accent-glow text-2xl md:text-4xl lg:text-5xl mt-3 leading-snug">
-            — Peptidtudás és Edukáció
+            {t('hero.subtitle')}
           </span>
         </h1>
 
         <p className="text-base md:text-xl text-gray-400 leading-relaxed mb-10 max-w-xl mx-auto">
-          A peptidek biológiai hatásait tudományos alapokon vizsgáljuk.
-          Kérdéseiddel fordulj{' '}
-          <span className="text-gray-200">tanácsadónkhoz</span> —
-          elérhető Telegramon.
+          {t('hero.body.start')}
+          <span className="text-gray-200">{t('hero.body.bold')}</span>
+          {t('hero.body.end')}
         </p>
 
-        {/* ── Primary CTA ────────────────────────────────────────────── */}
         <a
           href={TELEGRAM_URL}
           target="_blank"
@@ -74,10 +72,9 @@ export default function Hero() {
           style={{ background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)' }}
         >
           <Send size={18} strokeWidth={2.5} />
-          Kapcsolatfelvétel Telegramon
+          {t('hero.cta.telegram')}
         </a>
 
-        {/* ── TikTok button ──────────────────────────────────────────── */}
         <div className="mt-3">
           <a
             href={TIKTOK_URL}
@@ -101,7 +98,7 @@ export default function Hero() {
             }}
           >
             <TikTokIcon size={15} />
-            Kövess TikTokon
+            {t('hero.cta.tiktok')}
           </a>
         </div>
       </div>
