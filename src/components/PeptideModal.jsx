@@ -62,7 +62,7 @@ export default function PeptideModal({ peptide, onClose }) {
           className="flex flex-col sm:flex-row items-center sm:items-start gap-6 px-8 pt-8 pb-6 rounded-t-3xl"
           style={{ background: `linear-gradient(135deg, ${accentColor}0a 0%, transparent 60%)` }}
         >
-          <div className="w-24 h-36 shrink-0">
+          <div className="w-32 h-44 sm:w-36 sm:h-52 shrink-0">
             <VialImage accentColor={accentColor} name={name} uid={`modal-${peptide.id}`} image={image} />
           </div>
 

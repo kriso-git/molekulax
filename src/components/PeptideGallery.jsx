@@ -37,14 +37,14 @@ export default function PeptideGallery() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
             {PEPTIDES.map((peptide) => {
               const shortDesc = tr(peptide.shortDesc) || ''
               return (
                 <button
                   key={peptide.id}
                   onClick={() => setSelected(peptide)}
-                  className="group relative flex flex-col items-center gap-3 p-4 rounded-2xl glass
+                  className="group relative flex flex-col items-center gap-4 p-5 rounded-2xl glass
                              hover:border-[rgba(255,255,255,0.15)] hover:bg-[rgba(255,255,255,0.03)]
                              transition-all duration-300 cursor-pointer text-left"
                   aria-label={`${peptide.name}`}
@@ -56,7 +56,7 @@ export default function PeptideGallery() {
                     }}
                   />
 
-                  <div className="w-20 h-28 relative z-10 group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-32 h-44 sm:w-36 sm:h-52 relative z-10 group-hover:scale-105 transition-transform duration-300">
                     <VialImage
                       accentColor={peptide.accentColor}
                       name={peptide.name}

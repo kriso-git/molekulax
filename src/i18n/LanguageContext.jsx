@@ -11,11 +11,14 @@ const LanguageContext = createContext({
 const SUPPORTED = ['hu', 'en', 'pl']
 
 function detectInitial() {
+  // Hungarian is the default. We only honour an explicit user choice from a
+  // previous visit — the browser language is intentionally NOT used.
   if (typeof window === 'undefined') return 'hu'
-  const stored = localStorage.getItem('molekulax-lang')
-  if (stored && SUPPORTED.includes(stored)) return stored
-  const nav = (navigator.language || 'hu').slice(0, 2).toLowerCase()
-  return SUPPORTED.includes(nav) ? nav : 'hu'
+  try {
+    const stored = localStorage.getItem('molekulax-lang')
+    if (stored && SUPPORTED.includes(stored)) return stored
+  } catch {}
+  return 'hu'
 }
 
 export function LanguageProvider({ children }) {

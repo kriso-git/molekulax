@@ -102,21 +102,20 @@ const ILLUSTRATIONS = {
 const ILLUSTRATION_BY_INDEX = ['healing', 'growth', 'muscle', 'metabolic', 'longevity', 'nervous', 'cosmetic', 'immune']
 
 function CategoryVisual({ cat, idx }) {
-  // First category uses the photo of "Gyógyulást segítő peptidek".
+  // First category uses the photo of "Gyógyulást segítő peptidek" — full bleed.
   if (cat.image) {
     return (
-      <div className="relative w-full h-full">
-        <div className="absolute inset-0" style={{
-          background: `radial-gradient(ellipse at 50% 50%, ${cat.color}1f 0%, rgba(7,7,30,0) 70%)`,
-        }} />
+      <div className="relative w-full h-full overflow-hidden">
         <img
           src={cat.image}
           alt=""
-          className="absolute inset-0 w-full h-full object-contain p-4"
+          className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
           draggable="false"
-          style={{ filter: 'drop-shadow(0 12px 22px rgba(0,0,0,0.5))' }}
         />
+        <div className="absolute inset-0" style={{
+          background: `radial-gradient(ellipse at 50% 50%, ${cat.color}14 0%, rgba(7,7,30,0.25) 80%)`,
+        }} />
       </div>
     )
   }
