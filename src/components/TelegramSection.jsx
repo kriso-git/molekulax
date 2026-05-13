@@ -1,8 +1,6 @@
-import { Send, ArrowRight, MessageCircle } from 'lucide-react'
+import { MessageCircle } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
-
-const TELEGRAM_HU_URL = 'https://t.me/molekulaxtra'
-const TELEGRAM_PL_URL = 'https://t.me/naxxax'
+import TelegramButtons from './TelegramButtons'
 
 export default function TelegramSection() {
   const { t } = useLang()
@@ -39,37 +37,7 @@ export default function TelegramSection() {
               {t('tg.body')}
             </p>
 
-            <div className="flex flex-wrap items-center gap-3 ml-10">
-              <span className="text-gray-500 text-xs tracking-[0.25em] uppercase mr-1">
-                {t('tg.cta')}
-              </span>
-
-              <a
-                href={TELEGRAM_HU_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full transition-all duration-300 text-white text-sm group tracking-widest uppercase font-semibold hover:shadow-[0_0_25px_rgba(139,92,246,0.35)]"
-                style={{ border: '1px solid rgba(129,140,248,0.4)', background: 'rgba(99,102,241,0.1)' }}
-                aria-label="Telegram – Magyar tanácsadó"
-              >
-                <Send size={13} strokeWidth={2} />
-                HU
-                <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform duration-300" />
-              </a>
-
-              <a
-                href={TELEGRAM_PL_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full transition-all duration-300 text-white text-sm group tracking-widest uppercase font-semibold hover:shadow-[0_0_25px_rgba(236,72,153,0.3)]"
-                style={{ border: '1px solid rgba(236,72,153,0.35)', background: 'rgba(236,72,153,0.08)' }}
-                aria-label="Telegram – Polski doradca"
-              >
-                <Send size={13} strokeWidth={2} />
-                PL
-                <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform duration-300" />
-              </a>
-            </div>
+            <TelegramButtons label={t('tg.cta')} className="ml-10" />
           </div>
         </div>
       </div>

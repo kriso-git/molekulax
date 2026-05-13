@@ -10,27 +10,32 @@ import Footer from './components/Footer'
 import MoleculeBackground from './components/MoleculeBackground'
 import FloatingScientific from './components/FloatingScientific'
 import LanguageSwitcher from './components/LanguageSwitcher'
+import ThemeSwitcher from './components/ThemeSwitcher'
 import { LanguageProvider } from './i18n/LanguageContext'
+import { ThemeProvider } from './theme/ThemeContext'
 
 export default function App() {
   return (
-    <LanguageProvider>
-      <div className="relative min-h-screen bg-[#07071e] overflow-x-hidden">
-        <MoleculeBackground />
-        <FloatingScientific />
-        <LanguageSwitcher />
-        <div className="relative z-10">
-          <Hero />
-          <Education />
-          <PeptideEffects />
-          <PeptideGallery />
-          <Calculator />
-          <TelegramSection />
-          <Faq />
-          <Disclaimer />
-          <Footer />
+    <ThemeProvider>
+      <LanguageProvider>
+        <div className="relative min-h-screen page-root overflow-x-hidden">
+          <MoleculeBackground />
+          <FloatingScientific />
+          <ThemeSwitcher />
+          <LanguageSwitcher />
+          <div className="relative z-10">
+            <Hero />
+            <Education />
+            <PeptideEffects />
+            <PeptideGallery />
+            <Calculator />
+            <TelegramSection />
+            <Faq />
+            <Disclaimer />
+            <Footer />
+          </div>
         </div>
-      </div>
-    </LanguageProvider>
+      </LanguageProvider>
+    </ThemeProvider>
   )
 }

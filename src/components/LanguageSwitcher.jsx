@@ -34,13 +34,13 @@ export default function LanguageSwitcher() {
         onClick={() => setOpen(o => !o)}
         className="inline-flex items-center gap-1.5 pl-2.5 pr-2 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase transition-all duration-200"
         style={{
-          background: 'rgba(10,10,30,0.7)',
-          border: '1px solid rgba(129,140,248,0.25)',
+          background: 'var(--surface-bubble)',
+          border: '1px solid var(--border-accent)',
           backdropFilter: 'blur(10px)',
-          color: '#e5e7eb',
+          color: 'var(--text-primary)',
         }}
-        onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'rgba(129,140,248,0.55)'; e.currentTarget.style.boxShadow = '0 0 18px rgba(129,140,248,0.18)' }}
-        onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(129,140,248,0.25)'; e.currentTarget.style.boxShadow = 'none' }}
+        onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--border-accent-strong)'; e.currentTarget.style.boxShadow = '0 0 18px var(--shadow-accent)' }}
+        onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--border-accent)'; e.currentTarget.style.boxShadow = 'none' }}
         aria-label="Language"
       >
         <Globe size={12} className="text-[#818cf8]" />
@@ -52,10 +52,10 @@ export default function LanguageSwitcher() {
         <div
           className="absolute right-0 mt-2 min-w-[150px] rounded-xl overflow-hidden"
           style={{
-            background: 'rgba(8,8,24,0.95)',
-            border: '1px solid rgba(129,140,248,0.25)',
+            background: 'var(--bg-elevated)',
+            border: '1px solid var(--border-accent)',
             backdropFilter: 'blur(14px)',
-            boxShadow: '0 12px 32px rgba(0,0,0,0.6), 0 0 30px rgba(129,140,248,0.12)',
+            boxShadow: '0 12px 32px rgba(0,0,0,0.25), 0 0 30px var(--shadow-accent)',
           }}
         >
           {SUPPORTED_LANGS.map((code) => {
@@ -67,10 +67,10 @@ export default function LanguageSwitcher() {
                 onClick={() => { setLang(code); setOpen(false) }}
                 className="w-full flex items-center justify-between gap-3 px-3.5 py-2.5 text-left transition-colors duration-150"
                 style={{
-                  color: active ? '#818cf8' : '#d1d5db',
+                  color: active ? 'var(--accent)' : 'var(--text-secondary)',
                   background: active ? 'rgba(129,140,248,0.08)' : 'transparent',
                 }}
-                onMouseEnter={(e) => { if (!active) e.currentTarget.style.background = 'rgba(255,255,255,0.04)' }}
+                onMouseEnter={(e) => { if (!active) e.currentTarget.style.background = 'var(--border-softer)' }}
                 onMouseLeave={(e) => { if (!active) e.currentTarget.style.background = 'transparent' }}
               >
                 <span className="flex items-center gap-2.5">

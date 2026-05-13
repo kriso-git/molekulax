@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { PEPTIDES, TOP10_ORDER } from '../data/peptides'
+import { CATEGORIES, getPeptideCategories } from '../data/peptideCategories'
 import { useLang } from '../i18n/LanguageContext'
-import { ChevronDown, Search, Star } from 'lucide-react'
+import { ChevronDown, Search, Star, SlidersHorizontal, X } from 'lucide-react'
 import VialImage from './VialImage'
 import PeptideModal from './PeptideModal'
 
@@ -18,7 +19,6 @@ function PeptideTile({ peptide, featured, onSelect, t, tr }) {
                  transition-all duration-300 cursor-pointer text-left"
       aria-label={peptide.name}
     >
-      {/* Hover accent glow */}
       <div
         className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
         style={{
@@ -26,7 +26,6 @@ function PeptideTile({ peptide, featured, onSelect, t, tr }) {
         }}
       />
 
-      {/* TOP 10 badge — visible only for featured tiles */}
       {featured && (
         <div
           className="absolute top-3 left-3 z-20 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase"
@@ -42,7 +41,6 @@ function PeptideTile({ peptide, featured, onSelect, t, tr }) {
         </div>
       )}
 
-      {/* Placeholder badge — for entries without a real vial image */}
       {isPlaceholder && (
         <div
           className="absolute top-3 right-3 z-20 px-2 py-0.5 rounded-full text-[8px] tracking-[0.15em] uppercase text-gray-500"
@@ -55,7 +53,6 @@ function PeptideTile({ peptide, featured, onSelect, t, tr }) {
         </div>
       )}
 
-      {/* Vial visual — enlarged for the new bigger size */}
       <div className="w-40 h-56 sm:w-44 sm:h-64 relative z-10 group-hover:scale-105 transition-transform duration-300">
         <VialImage
           accentColor={peptide.accentColor}
@@ -77,7 +74,6 @@ function PeptideTile({ peptide, featured, onSelect, t, tr }) {
         </p>
       </div>
 
-      {/* Underline accent on hover */}
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] w-0 group-hover:w-2/3 rounded-full transition-all duration-300"
         style={{ background: peptide.accentColor, opacity: 0.5 }}
@@ -89,29 +85,36 @@ function PeptideTile({ peptide, featured, onSelect, t, tr }) {
 export default function PeptideGallery() {
   const [selected, setSelected] = useState(null)
   const [expanded, setExpanded] = useState(false)
+  const [showFilters, setShowFilters] = useState(false)
   const [query, setQuery] = useState('')
+  const [activeFilters, setActiveFilters] = useState([])      // category id list
   const sectionRef = useRef(null)
   const allSectionRef = useRef(null)
   const { t, tr, lang } = useLang()
 
-  // Top 10 — preserve the exact order given by the marketing brief.
   const top10 = useMemo(
     () => TOP10_ORDER.map(id => PEPTIDES.find(p => p.id === id)).filter(Boolean),
     []
   )
 
-  // All peptides — full library; filtered by name + short description (current language).
+  // Apply both name search + category filter.
   const filteredAll = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (!q) return PEPTIDES
     return PEPTIDES.filter(p => {
-      const name = p.name.toLowerCase()
-      const short = (tr(p.shortDesc) || '').toLowerCase()
-      return name.includes(q) || short.includes(q)
+      if (q) {
+        const name = p.name.toLowerCase()
+        const short = (tr(p.shortDesc) || '').toLowerCase()
+        if (!name.includes(q) && !short.includes(q)) return false
+      }
+      if (activeFilters.length > 0) {
+        const cats = getPeptideCategories(p.id)
+        const hasMatch = activeFilters.some(f => cats.includes(f))
+        if (!hasMatch) return false
+      }
+      return true
     })
-  }, [query, lang])
+  }, [query, lang, activeFilters])
 
-  // External "open-peptide" events still scroll + open as before.
   useEffect(() => {
     const handler = (e) => {
       const peptide = PEPTIDES.find(p => p.id === e.detail.id)
@@ -135,12 +138,19 @@ export default function PeptideGallery() {
     })
   }
 
+  const toggleFilter = (catId) => {
+    setActiveFilters(prev =>
+      prev.includes(catId) ? prev.filter(c => c !== catId) : [...prev, catId]
+    )
+  }
+
+  const clearFilters = () => setActiveFilters([])
+
   return (
     <>
       <section ref={sectionRef} className="py-28 px-4">
         <div className="max-w-6xl mx-auto">
 
-          {/* ── Section header ────────────────────────────────────────────── */}
           <div className="text-center mb-16">
             <p className="text-[#818cf8] text-xs tracking-[0.3em] uppercase mb-5">
               {t('gal.eyebrow')}
@@ -153,7 +163,7 @@ export default function PeptideGallery() {
             </p>
           </div>
 
-          {/* ── Block A: Top 10 — fixed 2×5 grid in marketing order ────────── */}
+          {/* ── Block A: Top 10 ─────────────────────────────────────────────── */}
           <div className="mb-6 flex items-center gap-3">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
             <h3 className="text-[#818cf8] text-[11px] font-semibold tracking-[0.3em] uppercase flex items-center gap-2">
@@ -210,7 +220,6 @@ export default function PeptideGallery() {
               </span>
             </button>
 
-            {/* Accordion panel — animated open */}
             <div
               id="all-peptides-panel"
               className={`grid transition-[grid-template-rows] duration-500 ease-out ${
@@ -218,24 +227,124 @@ export default function PeptideGallery() {
               }`}
             >
               <div className="overflow-hidden">
-                {/* Search input */}
-                <div className="relative mb-6">
-                  <Search
-                    size={15}
-                    className="absolute top-1/2 left-4 -translate-y-1/2 text-gray-500 pointer-events-none"
-                  />
-                  <input
-                    type="text"
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
-                    placeholder={t('gal.all.search')}
-                    className="w-full pl-11 pr-4 py-3 rounded-xl text-white text-sm placeholder:text-gray-600
-                               focus:outline-none focus:border-[#818cf8]/50 transition-colors"
+                {/* Search + Filter toggle row */}
+                <div className="mb-4 flex flex-col sm:flex-row gap-3">
+                  <div className="relative flex-1">
+                    <Search
+                      size={15}
+                      className="absolute top-1/2 left-4 -translate-y-1/2 text-gray-500 pointer-events-none"
+                    />
+                    <input
+                      type="text"
+                      value={query}
+                      onChange={(e) => setQuery(e.target.value)}
+                      placeholder={t('gal.all.search')}
+                      className="w-full pl-11 pr-4 py-3 rounded-xl text-white text-sm placeholder:text-gray-600
+                                 focus:outline-none focus:border-[#818cf8]/50 transition-colors"
+                      style={{
+                        background: 'rgba(255,255,255,0.03)',
+                        border: '1px solid rgba(255,255,255,0.08)',
+                      }}
+                    />
+                  </div>
+
+                  <button
+                    onClick={() => setShowFilters(v => !v)}
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-white text-sm font-semibold tracking-widest uppercase transition-all duration-300"
                     style={{
-                      background: 'rgba(255,255,255,0.03)',
-                      border: '1px solid rgba(255,255,255,0.08)',
+                      background: showFilters || activeFilters.length > 0
+                        ? 'rgba(129,140,248,0.12)'
+                        : 'rgba(255,255,255,0.03)',
+                      border: `1px solid ${
+                        showFilters || activeFilters.length > 0
+                          ? 'rgba(129,140,248,0.5)'
+                          : 'rgba(255,255,255,0.08)'
+                      }`,
                     }}
-                  />
+                    aria-expanded={showFilters}
+                  >
+                    <SlidersHorizontal size={14} />
+                    {t('gal.filter.toggle')}
+                    {activeFilters.length > 0 && (
+                      <span
+                        className="ml-1 px-1.5 py-0.5 rounded-full text-[10px] font-bold"
+                        style={{ background: '#818cf8', color: '#0a0a1c' }}
+                      >
+                        {activeFilters.length}
+                      </span>
+                    )}
+                  </button>
+                </div>
+
+                {/* Filter chips panel */}
+                <div
+                  className={`grid transition-[grid-template-rows] duration-300 ease-out ${
+                    showFilters ? 'grid-rows-[1fr] mb-6' : 'grid-rows-[0fr]'
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <div
+                      className="p-5 rounded-xl"
+                      style={{
+                        background: 'rgba(255,255,255,0.02)',
+                        border: '1px solid rgba(255,255,255,0.06)',
+                      }}
+                    >
+                      <div className="flex items-center justify-between mb-3">
+                        <p className="text-[#818cf8] text-[11px] font-semibold tracking-[0.25em] uppercase">
+                          {t('gal.filter.title')}
+                        </p>
+                        {activeFilters.length > 0 && (
+                          <button
+                            onClick={clearFilters}
+                            className="inline-flex items-center gap-1 text-gray-500 hover:text-white transition-colors text-[10px] tracking-widest uppercase"
+                          >
+                            <X size={11} />
+                            {t('gal.filter.clear')}
+                          </button>
+                        )}
+                      </div>
+
+                      <div className="flex flex-wrap gap-2">
+                        <button
+                          onClick={clearFilters}
+                          className="px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
+                          style={{
+                            background: activeFilters.length === 0 ? 'rgba(129,140,248,0.18)' : 'rgba(255,255,255,0.03)',
+                            border: `1px solid ${activeFilters.length === 0 ? '#818cf8' : 'rgba(255,255,255,0.08)'}`,
+                            color: activeFilters.length === 0 ? '#818cf8' : '#9ca3af',
+                          }}
+                        >
+                          {t('gal.filter.all')}
+                        </button>
+
+                        {CATEGORIES.map((cat) => {
+                          const active = activeFilters.includes(cat.id)
+                          return (
+                            <button
+                              key={cat.id}
+                              onClick={() => toggleFilter(cat.id)}
+                              className="px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
+                              style={{
+                                background: active ? `${cat.accent}22` : 'rgba(255,255,255,0.03)',
+                                border: `1px solid ${active ? cat.accent : 'rgba(255,255,255,0.08)'}`,
+                                color: active ? cat.accent : '#9ca3af',
+                                boxShadow: active ? `0 0 12px ${cat.accent}30` : 'none',
+                              }}
+                            >
+                              {tr(cat.label)}
+                            </button>
+                          )
+                        })}
+                      </div>
+
+                      {activeFilters.length > 0 && (
+                        <p className="text-gray-600 text-[10px] mt-3 tracking-wider">
+                          {activeFilters.length} {t('gal.filter.activeCount')} · {filteredAll.length} {t('gal.all.count')}
+                        </p>
+                      )}
+                    </div>
+                  </div>
                 </div>
 
                 {/* All peptides grid */}

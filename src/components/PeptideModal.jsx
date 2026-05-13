@@ -36,14 +36,14 @@ export default function PeptideModal({ peptide, onClose }) {
       ref={overlayRef}
       onClick={handleOverlay}
       className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto"
-      style={{ background: 'rgba(4,4,20,0.88)', backdropFilter: 'blur(8px)' }}
+      style={{ background: 'var(--bg-overlay)', backdropFilter: 'blur(8px)' }}
     >
       <div
         className="relative w-full max-w-2xl my-6 mx-4 rounded-3xl flex flex-col"
         style={{
-          background: 'rgba(10,10,28,0.97)',
+          background: 'var(--bg-elevated)',
           border: `1px solid ${accentColor}30`,
-          boxShadow: `0 0 60px ${accentColor}18, 0 32px 64px rgba(0,0,0,0.7)`,
+          boxShadow: `0 0 60px ${accentColor}18, 0 32px 64px rgba(0,0,0,0.35)`,
         }}
         role="dialog"
         aria-modal="true"

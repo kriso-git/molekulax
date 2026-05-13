@@ -10,11 +10,62 @@
   font-display: swap;
 }
 
+/* ── Theme tokens ──────────────────────────────────────────────────────────
+   Dark is the brand default. Light is an opt-in override toggled via
+   `data-theme="light"` on <html>. */
+:root,
+:root[data-theme="dark"] {
+  --bg-base:           #07071e;
+  --bg-elevated:       rgba(10, 10, 28, 0.97);
+  --bg-overlay:        rgba(4, 4, 20, 0.88);
+  --text-primary:      #ffffff;
+  --text-secondary:    #e5e7eb;
+  --text-muted:        #9ca3af;
+  --text-faint:        #6b7280;
+  --text-fainter:      #4b5563;
+  --glass-bg:          rgba(99, 102, 241, 0.05);
+  --glass-border:      rgba(129, 140, 248, 0.10);
+  --border-soft:       rgba(255, 255, 255, 0.08);
+  --border-softer:     rgba(255, 255, 255, 0.06);
+  --surface-bubble:    rgba(10, 10, 30, 0.7);
+  --border-accent:     rgba(129, 140, 248, 0.25);
+  --border-accent-strong: rgba(129, 140, 248, 0.55);
+  --shadow-accent:     rgba(129, 140, 248, 0.18);
+  --accent:            #818cf8;
+  --accent-strong:     #a78bfa;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg-base:           #f4f6fb;
+  --bg-elevated:       rgba(255, 255, 255, 0.96);
+  --bg-overlay:        rgba(224, 226, 240, 0.85);
+  --text-primary:      #0f172a;
+  --text-secondary:    #1f2937;
+  --text-muted:        #4b5563;
+  --text-faint:        #6b7280;
+  --text-fainter:      #9ca3af;
+  --glass-bg:          rgba(99, 102, 241, 0.06);
+  --glass-border:      rgba(129, 140, 248, 0.25);
+  --border-soft:       rgba(15, 23, 42, 0.10);
+  --border-softer:     rgba(15, 23, 42, 0.06);
+  --surface-bubble:    rgba(255, 255, 255, 0.85);
+  --border-accent:     rgba(99, 102, 241, 0.30);
+  --border-accent-strong: rgba(99, 102, 241, 0.55);
+  --shadow-accent:     rgba(99, 102, 241, 0.22);
+  --accent:            #4f46e5;
+  --accent-strong:     #6d28d9;
+  color-scheme: light;
+}
+
 @layer base {
   * { box-sizing: border-box; }
+  html, body {
+    transition: background-color 360ms ease, color 360ms ease;
+  }
   body {
-    background-color: #07071e;
-    color: #e5e7eb;
+    background-color: var(--bg-base);
+    color: var(--text-secondary);
     font-family: 'Quicksand', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -23,14 +74,85 @@
 
 @layer utilities {
   .glass {
-    background: rgba(99, 102, 241, 0.05);
+    background: var(--glass-bg);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(129, 140, 248, 0.10);
+    border: 1px solid var(--glass-border);
+    transition: background-color 360ms ease, border-color 360ms ease;
   }
   .accent-glow {
     text-shadow: 0 0 35px rgba(129, 140, 248, 0.55);
   }
+  .page-root {
+    background-color: var(--bg-base);
+    transition: background-color 360ms ease;
+  }
+}
+
+/* Smooth colour transitions across the whole tree when the theme flips.
+   We constrain to colours/borders/shadows so layout transitions stay snappy. */
+[data-theme] *,
+[data-theme] *::before,
+[data-theme] *::after {
+  transition-property: background-color, border-color, color, box-shadow, fill, stroke;
+  transition-duration: 280ms;
+  transition-timing-function: ease;
+}
+
+/* ── Light theme overrides for Tailwind utility classes that show on the
+   page today.  We override the heavy-handed dark defaults so existing
+   components don't need rewrites to look correct in light mode. ───────── */
+[data-theme="light"] .text-white { color: #0f172a; }
+[data-theme="light"] .text-gray-100 { color: #1f2937; }
+[data-theme="light"] .text-gray-200 { color: #1f2937; }
+[data-theme="light"] .text-gray-300 { color: #334155; }
+[data-theme="light"] .text-gray-400 { color: #475569; }
+[data-theme="light"] .text-gray-500 { color: #64748b; }
+[data-theme="light"] .text-gray-600 { color: #6b7280; }
+[data-theme="light"] .text-gray-700 { color: #94a3b8; }
+
+[data-theme="light"] .placeholder\:text-gray-500::placeholder,
+[data-theme="light"] .placeholder\:text-gray-600::placeholder { color: #94a3b8; }
+
+/* Brand accent stays close to the original purple; only nudge it a touch
+   darker in light theme so the contrast on near-white surfaces still pops. */
+[data-theme="light"] .text-\[\#818cf8\] { color: #4f46e5; }
+[data-theme="light"] .bg-\[\#07071e\] { background-color: var(--bg-base); }
+[data-theme="light"] .bg-\[\#050505\] { background-color: var(--bg-base); }
+
+/* Glass + soft inline-style surfaces — these are the most common rgba()
+   helpers used directly via the `style` prop in JSX components. We rely
+   on a CSS hook: the components reading from --surface-* fall through. */
+[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.08\)\] { border-color: rgba(15,23,42,0.12); }
+[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.06\)\] { border-color: rgba(15,23,42,0.08); }
+[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.10\)\] { border-color: rgba(15,23,42,0.10); }
+[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.18\)\] { border-color: rgba(15,23,42,0.18); }
+[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.12\)\] { border-color: rgba(15,23,42,0.12); }
+[data-theme="light"] .border-\[rgba\(129\,140\,248\,0\.08\)\] { border-color: rgba(99,102,241,0.16); }
+[data-theme="light"] .border-\[rgba\(129\,140\,248\,0\.18\)\] { border-color: rgba(99,102,241,0.30); }
+[data-theme="light"] .hover\:border-\[rgba\(255\,255\,255\,0\.15\)\]:hover { border-color: rgba(15,23,42,0.20); }
+[data-theme="light"] .hover\:border-\[rgba\(255\,255\,255\,0\.18\)\]:hover { border-color: rgba(15,23,42,0.24); }
+[data-theme="light"] .hover\:bg-\[rgba\(255\,255\,255\,0\.03\)\]:hover { background-color: rgba(15,23,42,0.04); }
+[data-theme="light"] .hover\:bg-white\/\[0\.07\]:hover { background-color: rgba(15,23,42,0.06); }
+
+/* Soft surfaces using bracket utilities */
+[data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.03\)\] { background-color: rgba(15,23,42,0.04); }
+[data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.04\)\] { background-color: rgba(15,23,42,0.05); }
+[data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.06\)\] { background-color: rgba(15,23,42,0.06); }
+[data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.05\)\] { background-color: rgba(15,23,42,0.05); }
+
+/* Dotted/dashed separators stay visible on the new pale base */
+[data-theme="light"] .from-\[rgba\(255\,255\,255\,0\.12\)\] { --tw-gradient-from: rgba(15,23,42,0.18) var(--tw-gradient-from-position); }
+[data-theme="light"] .via-\[rgba\(255\,255\,255\,0\.12\)\] { --tw-gradient-via: rgba(15,23,42,0.18) var(--tw-gradient-via-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
+[data-theme="light"] .to-\[rgba\(255\,255\,255\,0\.12\)\] { --tw-gradient-to: rgba(15,23,42,0.18) var(--tw-gradient-to-position); }
+[data-theme="light"] .to-\[\#818cf8\] { --tw-gradient-to: #4f46e5 var(--tw-gradient-to-position); }
+[data-theme="light"] .from-transparent { --tw-gradient-from: transparent var(--tw-gradient-from-position); }
+
+/* Modal & overlay surfaces — components set these via style. We can't
+   override inline styles via plain CSS specificity, but the overall
+   readability still works because we re-tint the text colours above. */
+[data-theme="light"] .accent-glow {
+  text-shadow: 0 0 28px rgba(99, 102, 241, 0.35);
 }
 
 /* ── Ticker tape (Hero szalag) ──────────────────────────────────────────── */

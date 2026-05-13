@@ -1,9 +1,9 @@
-import { Send, Mail } from 'lucide-react'
+import { Mail } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
+import TelegramButtons from './TelegramButtons'
 
-const TELEGRAM_URL = 'https://t.me/molekulaxtra'
-const TIKTOK_URL   = 'https://www.tiktok.com/@moleculextra'
-const EMAIL        = 'molekulaxtra@gmail.com'
+const TIKTOK_URL = 'https://www.tiktok.com/@moleculextra'
+const EMAIL      = 'molekulaxtra@gmail.com'
 
 function TikTokIcon({ size = 14 }) {
   return (
@@ -22,15 +22,10 @@ export default function Footer() {
           MolekulaX
         </span>
 
+        {/* Telegram HU/PL — same component as Hero / TelegramSection */}
+        <TelegramButtons variant="compact" label="Telegram" align="center" />
+
         <div className="flex flex-wrap items-center justify-center gap-6">
-          <a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center gap-2 text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-widest uppercase text-xs">
-            <Send size={13} strokeWidth={1.5} />
-            Telegram
-          </a>
-
-          <span className="w-1 h-1 rounded-full bg-[rgba(129,140,248,0.3)]" />
-
           <a href={TIKTOK_URL} target="_blank" rel="noopener noreferrer"
              className="inline-flex items-center gap-2 text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-widest uppercase text-xs">
             <TikTokIcon size={13} />

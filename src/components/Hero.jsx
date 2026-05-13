@@ -1,8 +1,7 @@
-import { Send } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
+import TelegramButtons from './TelegramButtons'
 
-const TELEGRAM_URL = 'https://t.me/molekulaxtra'
-const TIKTOK_URL   = 'https://www.tiktok.com/@moleculextra'
+const TIKTOK_URL = 'https://www.tiktok.com/@moleculextra'
 
 function TikTokIcon({ size = 16 }) {
   return (
@@ -62,20 +61,9 @@ export default function Hero() {
           {t('hero.body.end')}
         </p>
 
-        <a
-          href={TELEGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 px-8 py-4 text-white font-semibold rounded-full
-                     text-base md:text-lg transition-all duration-300 active:scale-95 tracking-widest
-                     uppercase hover:shadow-[0_0_40px_rgba(139,92,246,0.45)]"
-          style={{ background: 'linear-gradient(135deg, #6366f1 0%, #a855f7 100%)' }}
-        >
-          <Send size={18} strokeWidth={2.5} />
-          {t('hero.cta.telegram')}
-        </a>
+        <TelegramButtons label={t('hero.cta.telegram')} align="center" />
 
-        <div className="mt-3">
+        <div className="mt-5">
           <a
             href={TIKTOK_URL}
             target="_blank"
