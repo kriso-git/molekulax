@@ -1,8 +1,19 @@
 // Peptide data — multilingual (hu / en / pl).
 // Translatable text fields are objects: { hu, en, pl }. Use tr(field) from
 // useLang() to localize at render time.
+//
+// TOP10_ORDER — exact left-to-right, top-to-bottom display order for the
+// curated "10 Legnépszerűbb Peptid" grid (2 rows × 5 cols).
+import { EXTRA_PEPTIDES } from './peptidesExtra'
 
-export const PEPTIDES = [
+export const TOP10_ORDER = [
+  // Top row
+  'retatrutide', 'tirzepatide', 'ghk-cu', 'melanotan-2', 'bpc-157',
+  // Bottom row
+  'tb-500', 'hgh', 'cjc-1295-ipamorelin', 'tesamorelin', 'dihexa',
+]
+
+const CORE_PEPTIDES = [
   // ── 1. GHK-Cu ───────────────────────────────────────────────────────────────
   {
     id: 'ghk-cu',
@@ -43,6 +54,20 @@ export const PEPTIDES = [
       pl: 'Protokoły badawcze zwykle obejmują dawkowanie podskórne 0,5–2 mg/dobę, 5 dni w tygodniu przez 4–8 tygodni. W preparatach dermatologicznych stosuje się kremy i sera 0,1–2%. Dokładna dawka zależy od peptydu i celu — kalkulator pomaga obliczyć ilość do strzykawki.',
     },
     studies: [
+      {
+        tag: { hu: 'Ráncellenes (2025)', en: 'Anti-wrinkle (2025)', pl: 'Przeciwzmarszczkowy (2025)' },
+        tagColor: 'rgba(103,232,249,0.18)', tagText: '#67e8f9',
+        title: 'Topically applied GHK as an anti-wrinkle peptide',
+        authors: 'Pickart L, Margolina A.',
+        journal: 'International Journal of Cosmetic Science',
+        year: '2025', pmid: '39963574',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/39963574/',
+        finding: {
+          hu: 'Topikális GHK formulációk klinikailag csökkentik a ráncokat, fokozzák a bőr hidratáltságát és kollagéntartalmát.',
+          en: 'Topical GHK formulations clinically reduce wrinkles and increase skin hydration and collagen content.',
+          pl: 'Topiczne formulacje GHK klinicznie zmniejszają zmarszczki i zwiększają nawilżenie oraz zawartość kolagenu w skórze.',
+        },
+      },
       {
         tag: { hu: 'Bőrgyógyászat', en: 'Dermatology', pl: 'Dermatologia' },
         tagColor: 'rgba(6,182,212,0.16)',
@@ -150,6 +175,22 @@ export const PEPTIDES = [
     },
     studies: [
       {
+        tag: { hu: 'Fázis 3 (TRIUMPH-4)', en: 'Phase 3 (TRIUMPH-4)', pl: 'Faza 3 (TRIUMPH-4)' },
+        tagColor: 'rgba(110,231,183,0.18)',
+        tagText: '#6ee7b7',
+        title: 'Retatrutide for obesity and knee osteoarthritis — TRIUMPH-4 Phase 3',
+        authors: 'Eli Lilly TRIUMPH-4 Study Investigators',
+        journal: 'NEJM / Lilly Phase 3 topline',
+        year: '2025',
+        pmid: '41090431',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/41090431/',
+        finding: {
+          hu: 'A 12 mg-os dóziscsoportban átlagosan 28,7%-os testtömegcsökkenés (~71,2 font) és 75,8%-os WOMAC fájdalompontszám-csökkenés.',
+          en: 'The 12 mg group achieved an average 28.7% body-weight reduction (~71.2 lb) and a 75.8% reduction in WOMAC pain score.',
+          pl: 'Grupa 12 mg osiągnęła średnio 28,7% redukcji masy ciała (~71,2 funtów) i 75,8% redukcji bólu WOMAC.',
+        },
+      },
+      {
         tag: { hu: 'Fázis 2 RCT', en: 'Phase 2 RCT', pl: 'RCT fazy 2' },
         tagColor: 'rgba(16,185,129,0.16)',
         tagText: '#6ee7b7',
@@ -245,12 +286,12 @@ export const PEPTIDES = [
         tag: { hu: 'Szisztematikus áttekintés', en: 'Systematic review', pl: 'Przegląd systematyczny' },
         tagColor: 'rgba(14,165,233,0.16)',
         tagText: '#7dd3fc',
-        title: 'BPC-157 az ortopédiai sportmedicinában',
+        title: 'BPC-157 az ortopédiai sportmedicinában — szisztematikus áttekintés',
         authors: 'Vasireddi N, Hahamyan H, Salata MJ, et al.',
         journal: 'HSS Journal',
         year: '2025',
-        pmid: null,
-        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12313605/',
+        pmid: '40756949',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/40756949/',
         finding: {
           hu: '36 tanulmány: VEGF↑, IL-6↓, TNF-α↓ — inak, izmok, csontok gyógyulása gyorsult.',
           en: '36 studies: VEGF↑, IL-6↓, TNF-α↓ — accelerated tendon, muscle and bone healing.',
@@ -261,12 +302,12 @@ export const PEPTIDES = [
         tag: { hu: 'Narratív áttekintés', en: 'Narrative review', pl: 'Przegląd narracyjny' },
         tagColor: 'rgba(168,85,247,0.18)',
         tagText: '#c084fc',
-        title: 'BPC-157: regeneráció vagy kockázat?',
+        title: 'Regeneration or Risk? A narrative review of BPC-157',
         authors: 'McGuire FP, Martinez R, Lenz A, et al.',
         journal: 'Curr Rev Musculoskeletal Med',
         year: '2025',
-        pmid: null,
-        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC12446177/',
+        pmid: '40789979',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/40789979/',
         finding: {
           hu: 'VEGFR2 és Akt-eNOS tengely aktiválása. Három humán pilottanulmányban nem jelentettek mellékhatást.',
           en: 'Activation of the VEGFR2 and Akt-eNOS axis. No adverse effects reported in three human pilot studies.',
@@ -954,4 +995,419 @@ export const PEPTIDES = [
       },
     ],
   },
+
+  // ── 11. Tirzepatide ─────────────────────────────────────────────────────────
+  {
+    id: 'tirzepatide',
+    name: 'Tirzepatide',
+    image: null,
+    accentColor: '#fb923c',
+    tagColor: 'rgba(251,146,60,0.16)',
+    tagText: '#fb923c',
+    defaultVialMg: 5,
+    defaultBacMl: 2,
+    defaultDoseMcg: 2500,
+    shortDesc: {
+      hu: 'Kettős GIP/GLP-1 agonista — testsúly és vércukor kontroll',
+      en: 'Dual GIP/GLP-1 agonist — weight & glucose control',
+      pl: 'Podwójny agonista GIP/GLP-1 — kontrola masy i glukozy',
+    },
+    description: {
+      hu: 'A tirzepatide (Mounjaro / Zepbound, LY3298176) az Eli Lilly első kettős GIP- és GLP-1-receptor agonistája, amelyet a 2-es típusú cukorbetegség és obesitás kezelésére fejlesztettek ki és törzskönyveztek.\n\nA SURPASS és SURMOUNT vizsgálati programokban 26,6%-os átlagos testtömeg-csökkentést mutatott a legmagasabb dóziscsoportban 72 hét alatt. Az FDA 2022-ben (T2DM) és 2023-ban (obesitás) hagyta jóvá.',
+      en: 'Tirzepatide (Mounjaro / Zepbound, LY3298176) is Eli Lilly\'s first dual GIP/GLP-1 receptor agonist, developed and approved for type 2 diabetes and obesity.\n\nThe SURPASS and SURMOUNT trials reported an average 26.6% body weight reduction at the highest dose over 72 weeks. FDA-approved in 2022 (T2DM) and 2023 (obesity).',
+      pl: 'Tyrzepatyd (Mounjaro / Zepbound, LY3298176) to pierwszy podwójny agonista receptora GIP/GLP-1 Eli Lilly, opracowany i zatwierdzony do leczenia cukrzycy typu 2 i otyłości.\n\nProgramy SURPASS i SURMOUNT wykazały średnio 26,6% redukcji masy ciała w najwyższej dawce w 72 tygodnie. Zatwierdzony przez FDA w 2022 (T2DM) i 2023 (otyłość).',
+    },
+    keyInfo: [
+      { label: { hu: 'Típus', en: 'Type', pl: 'Typ' }, value: 'GIP/GLP-1 dual agonist' },
+      { label: { hu: 'Fejlesztő', en: 'Developer', pl: 'Producent' }, value: 'Eli Lilly' },
+      { label: { hu: 'Státusz', en: 'Status', pl: 'Status' },
+        value: { hu: 'FDA jóváhagyott (T2DM, obesitás)', en: 'FDA approved (T2DM, obesity)', pl: 'Zatwierdzony FDA (T2DM, otyłość)' } },
+      { label: { hu: 'Félelevidő', en: 'Half-life', pl: 'Okres półtrwania' }, value: '~5 nap / ~5 days' },
+      { label: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' }, value: '2–8°C' },
+      { label: { hu: 'Adagolás', en: 'Administration', pl: 'Podanie' }, value: 'SC, heti 1× / weekly' },
+    ],
+    dosageInfo: {
+      hu: 'Heti egyszeri szubkután injekció, fokozatos titrálással: 2,5 mg → 5 mg → 7,5 mg → 10 mg → 12,5 mg → 15 mg, általában 4 hetente növelve. Maximális fenntartó dózis 15 mg/hét. Kalkulátor segít a fecskendő-feltöltési érték kiszámolásában.',
+      en: 'Weekly subcutaneous injection with gradual titration: 2.5 mg → 5 mg → 7.5 mg → 10 mg → 12.5 mg → 15 mg, typically increased every 4 weeks. Maximum maintenance dose 15 mg/week. The calculator helps determine syringe fill volume.',
+      pl: 'Iniekcja podskórna raz w tygodniu z stopniową titracją: 2,5 mg → 5 mg → 7,5 mg → 10 mg → 12,5 mg → 15 mg, zwykle zwiększana co 4 tygodnie. Maksymalna dawka 15 mg/tydzień. Kalkulator pomaga obliczyć objętość do strzykawki.',
+    },
+    studies: [
+      {
+        tag: { hu: 'SURMOUNT-5 (head-to-head)', en: 'SURMOUNT-5 (head-to-head)', pl: 'SURMOUNT-5 (head-to-head)' },
+        tagColor: 'rgba(251,146,60,0.18)', tagText: '#fb923c',
+        title: 'Tirzepatide as compared with semaglutide for obesity (SURMOUNT-5)',
+        authors: 'Aronne LJ, Horn DB, le Roux CW, et al.',
+        journal: 'New England Journal of Medicine',
+        year: '2025', pmid: '40353578',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/40353578/',
+        finding: {
+          hu: '72 hét után tirzepatide −20,2% vs semaglutide −13,7% testtömegcsökkenés; a 25%-os fogyást a tirzepatide-csoport ~kétszer gyakrabban érte el.',
+          en: 'After 72 weeks, tirzepatide −20.2% vs semaglutide −13.7% body weight reduction; ≥25% loss was roughly twice as common with tirzepatide.',
+          pl: 'Po 72 tygodniach tyrzepatyd −20,2% vs semaglutyd −13,7%; redukcję ≥25% osiągano ~2× częściej w grupie tyrzepatydu.',
+        },
+      },
+      {
+        tag: { hu: 'Fázis 3 RCT', en: 'Phase 3 RCT', pl: 'RCT fazy 3' },
+        tagColor: 'rgba(251,146,60,0.16)', tagText: '#fb923c',
+        title: 'Tirzepatide once weekly for the treatment of obesity (SURMOUNT-1)',
+        authors: 'Jastreboff AM, Aronne LJ, Ahmad NN, et al.',
+        journal: 'New England Journal of Medicine',
+        year: '2022', pmid: '35658024',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/35658024/',
+        finding: {
+          hu: '72 hét alatt 15 mg dózissal átlagosan 22,5%-os testtömegcsökkentés, kedvező kardiometabolikus profillal.',
+          en: 'Over 72 weeks, the 15 mg dose achieved an average 22.5% body weight reduction with a favourable cardiometabolic profile.',
+          pl: 'W 72 tygodnie dawka 15 mg dała średnio 22,5% redukcji masy ciała z korzystnym profilem kardiometabolicznym.',
+        },
+      },
+      {
+        tag: { hu: 'SURMOUNT-3', en: 'SURMOUNT-3', pl: 'SURMOUNT-3' },
+        tagColor: 'rgba(99,102,241,0.18)', tagText: '#818cf8',
+        title: 'Tirzepatide after intensive lifestyle intervention in obesity',
+        authors: 'Wadden TA, Chao AM, Machineni S, et al.',
+        journal: 'Nature Medicine',
+        year: '2023', pmid: '37864208',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/37864208/',
+        finding: {
+          hu: 'Intenzív életmód-intervenció után a tirzepatide további 18,4%-os testtömegcsökkenést hozott 72 hét alatt.',
+          en: 'After intensive lifestyle intervention, tirzepatide produced an additional 18.4% body-weight reduction over 72 weeks.',
+          pl: 'Po intensywnej interwencji stylu życia tyrzepatyd przyniósł dodatkowe 18,4% redukcji masy w 72 tygodnie.',
+        },
+      },
+      {
+        tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
+        tagColor: 'rgba(251,146,60,0.18)', tagText: '#fb923c',
+        title: 'Tirzepatide — összefoglaló (Pep-Pedia)',
+        authors: 'Pep-Pedia szerkesztőség',
+        journal: 'pep-pedia.org', year: '2025', pmid: null,
+        url: 'https://pep-pedia.org/peptides/tirzepatide',
+        finding: {
+          hu: 'Naprakész szakirodalmi összefoglaló a tirzepatide klinikai eredményeiről, biztonsági profiljáról és titrálási sémáiról.',
+          en: 'Up-to-date literature summary of tirzepatide clinical outcomes, safety profile and titration schedules.',
+          pl: 'Aktualne podsumowanie literatury o wynikach klinicznych, profilu bezpieczeństwa i titracji tyrzepatydu.',
+        },
+      },
+    ],
+  },
+
+  // ── 12. HGH (Human Growth Hormone) ──────────────────────────────────────────
+  {
+    id: 'hgh',
+    name: 'HGH',
+    image: null,
+    accentColor: '#fcd34d',
+    tagColor: 'rgba(252,211,77,0.16)',
+    tagText: '#fcd34d',
+    defaultVialMg: 10,
+    defaultBacMl: 3,
+    defaultDoseMcg: 1000,
+    shortDesc: {
+      hu: 'Humán növekedési hormon (rhGH / Somatropin) — anyagcsere és regeneráció',
+      en: 'Human Growth Hormone (rhGH / Somatropin) — metabolism & regeneration',
+      pl: 'Hormon wzrostu (rhGH / Somatropina) — metabolizm i regeneracja',
+    },
+    description: {
+      hu: 'A humán növekedési hormon (HGH, somatropin) egy 191 aminosavból álló polipeptid, amelyet az agyalapi mirigy elülső lebenye termel. Hatása a növekedés serkentése, anyagcsere-szabályozás, fehérjeszintézis és lipolízis fokozása az IGF-1 közvetítésével.\n\nRekombináns formában (rhGH) GH-hiányos gyermekek és felnőttek kezelésére használják. Kutatási kontextusban az izomtömeg, regeneráció, alvás és testösszetétel javítása szempontjából vizsgálják.',
+      en: 'Human growth hormone (HGH, somatropin) is a 191-amino-acid polypeptide produced by the anterior pituitary. It stimulates growth, modulates metabolism, and drives protein synthesis and lipolysis primarily via IGF-1.\n\nThe recombinant form (rhGH) is used to treat GH-deficient children and adults. In research it is studied for effects on muscle mass, recovery, sleep and body composition.',
+      pl: 'Hormon wzrostu (HGH, somatropina) to polipeptyd 191 aminokwasów wytwarzany w przednim płacie przysadki. Stymuluje wzrost, reguluje metabolizm i wspiera syntezę białek oraz lipolizę głównie przez IGF-1.\n\nForma rekombinowana (rhGH) leczy niedobór GH u dzieci i dorosłych. W badaniach analizuje się wpływ na masę mięśniową, regenerację, sen i skład ciała.',
+    },
+    keyInfo: [
+      { label: { hu: 'Típus', en: 'Type', pl: 'Typ' },
+        value: { hu: 'Rekombináns peptidhormon', en: 'Recombinant peptide hormone', pl: 'Rekombinowany hormon peptydowy' } },
+      { label: { hu: 'Struktúra', en: 'Structure', pl: 'Struktura' }, value: '191 aa, ~22 kDa' },
+      { label: { hu: 'Félelevidő', en: 'Half-life', pl: 'Okres półtrwania' }, value: '~2–4 h' },
+      { label: { hu: 'Mediátor', en: 'Mediator', pl: 'Mediator' }, value: 'IGF-1' },
+      { label: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' }, value: '2–8°C' },
+      { label: { hu: 'Adagolás', en: 'Administration', pl: 'Podanie' }, value: 'SC, naponta / daily' },
+    ],
+    dosageInfo: {
+      hu: 'Kutatási kontextusban általában 1–4 NE/nap (kb. 0,33–1,3 mg/nap) szubkután. Klinikai indikációkban testsúlyra és életkorra szabva — gyermek GH-hiány: ~0,025–0,035 mg/kg/nap; felnőtt GH-hiány: 0,15–0,3 mg/nap kezdő, titrálással. Időzítés: lefekvés előtt vagy reggel éhgyomorra.',
+      en: 'Research contexts usually study 1–4 IU/day (~0.33–1.3 mg/day) subcutaneous. Clinical indications are titrated by weight/age — paediatric GH deficiency: ~0.025–0.035 mg/kg/day; adult GH deficiency: 0.15–0.3 mg/day starting, with titration. Timing: at bedtime or morning fasted.',
+      pl: 'W badaniach zwykle 1–4 IU/dobę (~0,33–1,3 mg/dobę) podskórnie. Wskazania kliniczne dawkuje się wg masy/wieku — niedobór GH u dzieci: ~0,025–0,035 mg/kg/dobę; u dorosłych: 0,15–0,3 mg/dobę startowo z titracją. Pora: wieczorem lub rano na czczo.',
+    },
+    studies: [
+      {
+        tag: { hu: 'Klinikai', en: 'Clinical', pl: 'Kliniczne' },
+        tagColor: 'rgba(252,211,77,0.16)', tagText: '#fcd34d',
+        title: 'Growth hormone therapy in adults and children: a review',
+        authors: 'Ranke MB, Wit JM.',
+        journal: 'Nature Reviews Endocrinology',
+        year: '2018', pmid: '29977075',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/29977075/',
+        finding: {
+          hu: 'Az rhGH terápia hosszú távú biztonsági és hatékonysági adatai gyermek- és felnőttkori GH-hiányban.',
+          en: 'Long-term safety and efficacy data of rhGH therapy in paediatric and adult GH deficiency.',
+          pl: 'Długoterminowe dane bezpieczeństwa i skuteczności terapii rhGH w niedoborze GH u dzieci i dorosłych.',
+        },
+      },
+      {
+        tag: { hu: 'IGF-1 / Anyagcsere', en: 'IGF-1 / Metabolism', pl: 'IGF-1 / Metabolizm' },
+        tagColor: 'rgba(99,102,241,0.18)', tagText: '#818cf8',
+        title: 'Effects of growth hormone on body composition and physical performance',
+        authors: 'Liu H, Bravata DM, Olkin I, et al.',
+        journal: 'Annals of Internal Medicine',
+        year: '2008', pmid: '18347346',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/18347346/',
+        finding: {
+          hu: 'GH adminisztráció növeli a zsírmentes testtömeget, de nem javítja igazoltan az atléta teljesítményt egészségeseknél.',
+          en: 'GH increases lean body mass but does not consistently improve athletic performance in healthy adults.',
+          pl: 'GH zwiększa beztłuszczową masę ciała, ale nie poprawia konsekwentnie wydolności u zdrowych dorosłych.',
+        },
+      },
+      {
+        tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
+        tagColor: 'rgba(252,211,77,0.18)', tagText: '#fcd34d',
+        title: 'HGH (Somatropin) — összefoglaló (Pep-Pedia)',
+        authors: 'Pep-Pedia szerkesztőség',
+        journal: 'pep-pedia.org', year: '2025', pmid: null,
+        url: 'https://pep-pedia.org/peptides/hgh',
+        finding: {
+          hu: 'Naprakész szakirodalmi összefoglaló a rekombináns HGH adagolásáról, mellékhatásairól és klinikai indikációiról.',
+          en: 'Up-to-date literature summary of recombinant HGH dosing, side effects and clinical indications.',
+          pl: 'Aktualne podsumowanie literatury o dawkowaniu, działaniach niepożądanych i wskazaniach rhGH.',
+        },
+      },
+    ],
+  },
+
+  // ── 13. CJC-1295 / Ipamorelin (combo) ───────────────────────────────────────
+  {
+    id: 'cjc-1295-ipamorelin',
+    name: 'CJC-1295 / Ipamorelin',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.16)',
+    tagText: '#a78bfa',
+    defaultVialMg: 5,
+    defaultBacMl: 2,
+    defaultDoseMcg: 200,
+    shortDesc: {
+      hu: 'Kombináció: GHRH-analóg + szelektív ghrelin-mimetikum — szinergikus GH-pulzus',
+      en: 'Combo: GHRH analog + selective ghrelin mimetic — synergistic GH pulse',
+      pl: 'Kombinacja: analog GHRH + selektywny mimetyk greliny — synergiczny puls GH',
+    },
+    description: {
+      hu: 'A CJC-1295 (módosított GHRH 1-29) és az Ipamorelin (szelektív GHRP / ghrelin receptor agonista) együttes alkalmazása a növekedési hormon (GH) pulzatilis kibocsátását fokozza két különböző receptoron keresztül — emiatt ez a klasszikus "GHRH + GHRP" kombináció.\n\nA CJC-1295 a hipofízis GHRH-receptorán hat, az Ipamorelin pedig a ghrelinreceptoron. A két szignál szinergiát produkál, miközben az Ipamorelin szelektivitása miatt minimális a kortizol- és prolaktin-emelkedés.',
+      en: 'CJC-1295 (a modified GHRH 1-29) combined with Ipamorelin (a selective GHRP / ghrelin-receptor agonist) amplifies pulsatile growth hormone (GH) release through two different receptors — the classic "GHRH + GHRP" stack.\n\nCJC-1295 acts on pituitary GHRH receptors; ipamorelin acts on the ghrelin receptor. Their signals synergise, and ipamorelin\'s selectivity keeps cortisol/prolactin rises minimal.',
+      pl: 'Połączenie CJC-1295 (modyfikowanego GHRH 1-29) z Ipamoreliną (selektywnym agonistą receptora greliny / GHRP) zwiększa pulsacyjne uwalnianie hormonu wzrostu (GH) przez dwa różne receptory — klasyczna kombinacja „GHRH + GHRP”.\n\nCJC-1295 działa na receptory GHRH przysadki, ipamorelina na receptor greliny. Sygnały synergizują, a selektywność ipamoreliny minimalizuje wzrost kortyzolu i prolaktyny.',
+    },
+    keyInfo: [
+      { label: { hu: 'Típus', en: 'Type', pl: 'Typ' }, value: { hu: 'GHRH + GHRP kombináció', en: 'GHRH + GHRP combo', pl: 'GHRH + GHRP kombinacja' } },
+      { label: { hu: 'Hatás', en: 'Effect', pl: 'Efekt' }, value: { hu: 'Pulzatilis GH-emelkedés', en: 'Pulsatile GH increase', pl: 'Pulsacyjny wzrost GH' } },
+      { label: { hu: 'CJC-1295 félelevidő', en: 'CJC-1295 half-life', pl: 'CJC-1295 t½' }, value: { hu: '~30 perc (no-DAC)', en: '~30 min (no-DAC)', pl: '~30 min (no-DAC)' } },
+      { label: { hu: 'Ipamorelin félelevidő', en: 'Ipamorelin half-life', pl: 'Ipamorelin t½' }, value: '~2 h' },
+      { label: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' }, value: '2–8°C' },
+      { label: { hu: 'Adagolás', en: 'Administration', pl: 'Podanie' }, value: 'SC, 1–3×/nap / day' },
+    ],
+    dosageInfo: {
+      hu: 'Tipikus kutatási protokoll: 100–300 µg CJC-1295 (no-DAC) + 100–300 µg Ipamorelin együtt, szubkután, naponta 1–3 alkalommal (általában lefekvés előtt és/vagy edzés után). Ciklus: 8–12 hét, majd szünet. Üres gyomorra hatékonyabb.',
+      en: 'Typical research protocol: 100–300 µg CJC-1295 (no-DAC) + 100–300 µg ipamorelin together, subcutaneous, 1–3× daily (commonly before bed and/or post-workout). Cycle: 8–12 weeks then break. More effective on an empty stomach.',
+      pl: 'Typowy protokół badawczy: 100–300 µg CJC-1295 (no-DAC) + 100–300 µg ipamoreliny razem, podskórnie, 1–3× dziennie (zwykle przed snem i/lub po treningu). Cykl: 8–12 tygodni, potem przerwa. Skuteczniejsze na czczo.',
+    },
+    studies: [
+      {
+        tag: { hu: 'Farmakológia', en: 'Pharmacology', pl: 'Farmakologia' },
+        tagColor: 'rgba(167,139,250,0.16)', tagText: '#a78bfa',
+        title: 'Sustained GH and IGF-I responses after CJC-1295 administration',
+        authors: 'Teichman SL, Neale A, Lawrence B, et al.',
+        journal: 'JCEM',
+        year: '2006', pmid: '16352683',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/16352683/',
+        finding: {
+          hu: 'A CJC-1295 dózisfüggően és tartósan emeli a GH és IGF-1 szinteket egészséges felnőttekben.',
+          en: 'CJC-1295 produces dose-dependent, sustained increases in GH and IGF-1 in healthy adults.',
+          pl: 'CJC-1295 wywołuje zależne od dawki, trwałe wzrosty GH i IGF-1 u zdrowych dorosłych.',
+        },
+      },
+      {
+        tag: { hu: 'GHRP szelektivitás', en: 'GHRP selectivity', pl: 'Selektywność GHRP' },
+        tagColor: 'rgba(99,102,241,0.18)', tagText: '#818cf8',
+        title: 'Ipamorelin, the first selective growth hormone secretagogue',
+        authors: 'Raun K, Hansen BS, Johansen NL, et al.',
+        journal: 'European Journal of Endocrinology',
+        year: '1998', pmid: '9849822',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/9849822/',
+        finding: {
+          hu: 'Az Ipamorelin a GH-szekréciót szelektíven serkenti, jelentős ACTH/kortizol-emelkedés nélkül.',
+          en: 'Ipamorelin selectively stimulates GH secretion without significant ACTH/cortisol elevation.',
+          pl: 'Ipamorelin selektywnie stymuluje wydzielanie GH bez istotnego wzrostu ACTH/kortyzolu.',
+        },
+      },
+      {
+        tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
+        tagColor: 'rgba(167,139,250,0.18)', tagText: '#a78bfa',
+        title: 'CJC-1295 / Ipamorelin stack — összefoglaló (Pep-Pedia)',
+        authors: 'Pep-Pedia szerkesztőség',
+        journal: 'pep-pedia.org', year: '2025', pmid: null,
+        url: 'https://pep-pedia.org/peptides/cjc-1295-ipamorelin',
+        finding: {
+          hu: 'Naprakész összefoglaló a GHRH + GHRP kombináció hatásmechanizmusáról és dózisstratégiáiról.',
+          en: 'Up-to-date summary of the GHRH + GHRP combination mechanism and dosing strategies.',
+          pl: 'Aktualne podsumowanie mechanizmu i strategii dawkowania kombinacji GHRH + GHRP.',
+        },
+      },
+    ],
+  },
+
+  // ── 14. Tesamorelin ─────────────────────────────────────────────────────────
+  {
+    id: 'tesamorelin',
+    name: 'Tesamorelin',
+    image: null,
+    accentColor: '#34d399',
+    tagColor: 'rgba(52,211,153,0.16)',
+    tagText: '#34d399',
+    defaultVialMg: 2,
+    defaultBacMl: 2,
+    defaultDoseMcg: 1400,
+    shortDesc: {
+      hu: 'GHRH-analóg — viscerális zsírcsökkentés (FDA-jóváhagyott)',
+      en: 'GHRH analog — visceral fat reduction (FDA-approved)',
+      pl: 'Analog GHRH — redukcja tłuszczu trzewnego (zatwierdzony FDA)',
+    },
+    description: {
+      hu: 'A tesamorelin (Egrifta) egy 44 aminosavas, stabilizált GHRH-analóg, amelyet az FDA 2010-ben hagyott jóvá HIV-asszociált lipodisztrófiában a viscerális adipóz szövet (VAT) csökkentésére. Stimulálja a hipofízis természetes GH-pulzusait, miközben az IGF-1 a fiziológiás tartományban marad.\n\nKlinikai vizsgálatokban szignifikáns viscerális zsírcsökkenést mutatott, miközben a szubkután zsírszövet és vázizomtömeg megmaradt vagy javult.',
+      en: 'Tesamorelin (Egrifta) is a 44-amino-acid stabilised GHRH analog, FDA-approved in 2010 for HIV-associated lipodystrophy to reduce visceral adipose tissue (VAT). It stimulates the pituitary\'s natural GH pulses while keeping IGF-1 in the physiological range.\n\nClinical trials showed significant visceral fat loss while subcutaneous fat and lean mass were preserved or improved.',
+      pl: 'Tesamorelin (Egrifta) to 44-aminokwasowy stabilizowany analog GHRH, zatwierdzony przez FDA w 2010 r. w lipodystrofii związanej z HIV w celu redukcji trzewnej tkanki tłuszczowej (VAT). Stymuluje naturalne pulsy GH przysadki, utrzymując IGF-1 w zakresie fizjologicznym.\n\nW badaniach klinicznych istotnie zmniejszał tłuszcz trzewny, zachowując lub poprawiając tłuszcz podskórny i beztłuszczową masę ciała.',
+    },
+    keyInfo: [
+      { label: { hu: 'Típus', en: 'Type', pl: 'Typ' }, value: 'GHRH analog' },
+      { label: { hu: 'Struktúra', en: 'Structure', pl: 'Struktura' }, value: '44 aa, hGRF(1-44)NH₂' },
+      { label: { hu: 'Státusz', en: 'Status', pl: 'Status' }, value: { hu: 'FDA jóváhagyott (HIV lipodystr.)', en: 'FDA approved (HIV lipodystr.)', pl: 'Zatwierdzony FDA (lipodystr. HIV)' } },
+      { label: { hu: 'Félelevidő', en: 'Half-life', pl: 'Okres półtrwania' }, value: '~26 min (SC)' },
+      { label: { hu: 'Cél', en: 'Target', pl: 'Cel' }, value: { hu: 'Viscerális zsír', en: 'Visceral fat', pl: 'Tłuszcz trzewny' } },
+      { label: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' }, value: '2–8°C' },
+    ],
+    dosageInfo: {
+      hu: 'Klinikai protokoll: 2 mg szubkután naponta egyszer (általában reggel vagy lefekvés előtt), 12–26 héten keresztül. Kalkulátor segítségével a 2 mg-os fiola és a felhasznált oldószer alapján számolható a fecskendőfeltöltés.',
+      en: 'Clinical protocol: 2 mg subcutaneous once daily (typically morning or bedtime) for 12–26 weeks. The calculator computes syringe fill volume from the 2 mg vial size and chosen diluent volume.',
+      pl: 'Protokół kliniczny: 2 mg podskórnie raz dziennie (zwykle rano lub przed snem) przez 12–26 tygodni. Kalkulator wylicza objętość strzykawki na podstawie 2 mg fiolki i wybranej ilości rozpuszczalnika.',
+    },
+    studies: [
+      {
+        tag: { hu: 'Fázis 3 RCT', en: 'Phase 3 RCT', pl: 'RCT fazy 3' },
+        tagColor: 'rgba(52,211,153,0.16)', tagText: '#34d399',
+        title: 'Effects of tesamorelin on visceral fat in HIV-associated lipodystrophy',
+        authors: 'Falutz J, Allas S, Blot K, et al.',
+        journal: 'New England Journal of Medicine',
+        year: '2007', pmid: '18046031',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/18046031/',
+        finding: {
+          hu: '26 hét tesamorelin szignifikánsan csökkentette a viscerális zsírszövetet, kedvező lipidprofil-változással.',
+          en: '26 weeks of tesamorelin significantly reduced visceral adipose tissue with a favourable lipid profile change.',
+          pl: '26 tygodni tesamoreliny istotnie zmniejszyło tłuszcz trzewny przy korzystnej zmianie profilu lipidowego.',
+        },
+      },
+      {
+        tag: { hu: 'Hosszú távú', en: 'Long-term', pl: 'Długoterminowe' },
+        tagColor: 'rgba(99,102,241,0.18)', tagText: '#818cf8',
+        title: 'Long-term safety and effects of tesamorelin in HIV-infected patients',
+        authors: 'Stanley TL, Falutz J, Marsolais C, et al.',
+        journal: 'AIDS',
+        year: '2013', pmid: '23842126',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/23842126/',
+        finding: {
+          hu: 'A tesamorelin tartós VAT-csökkenést és kedvező anyagcsere-hatást nyújt 52 héten át, jó tűrhetőséggel.',
+          en: 'Tesamorelin produces sustained VAT reduction and favourable metabolic effects over 52 weeks with good tolerability.',
+          pl: 'Tesamorelin daje trwałą redukcję VAT i korzystne efekty metaboliczne przez 52 tygodnie przy dobrej tolerancji.',
+        },
+      },
+      {
+        tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
+        tagColor: 'rgba(52,211,153,0.18)', tagText: '#34d399',
+        title: 'Tesamorelin — összefoglaló (Pep-Pedia)',
+        authors: 'Pep-Pedia szerkesztőség',
+        journal: 'pep-pedia.org', year: '2025', pmid: null,
+        url: 'https://pep-pedia.org/peptides/tesamorelin',
+        finding: {
+          hu: 'Naprakész szakirodalmi összefoglaló a tesamorelin hatásmechanizmusáról, klinikai eredményeiről és dózisstratégiáiról.',
+          en: 'Up-to-date literature summary of tesamorelin mechanism, clinical outcomes and dosing strategies.',
+          pl: 'Aktualne podsumowanie literatury o mechanizmie, wynikach klinicznych i strategiach dawkowania tesamoreliny.',
+        },
+      },
+    ],
+  },
+
+  // ── 15. Dihexa ──────────────────────────────────────────────────────────────
+  {
+    id: 'dihexa',
+    name: 'Dihexa',
+    image: null,
+    accentColor: '#f472b6',
+    tagColor: 'rgba(244,114,182,0.16)',
+    tagText: '#f472b6',
+    defaultVialMg: 10,
+    defaultBacMl: 2,
+    defaultDoseMcg: 8000,
+    shortDesc: {
+      hu: 'Nootróp hexapeptid-analóg — szinapszisképzés és kognitív funkció',
+      en: 'Nootropic hexapeptid analog — synaptogenesis & cognitive function',
+      pl: 'Nootropowy analog heksapeptydu — synaptogeneza i funkcja poznawcza',
+    },
+    description: {
+      hu: 'A Dihexa (N-hexanoyl-Tyr-Ile-(6) aminohexanoic amide) az angiotenzin IV egy módosított, lipofil analógja, amelyet a Washington State University fejlesztett ki Alzheimer-kór modellre. Állatkísérletekben a HGF/c-Met útvonalon keresztül erős, dózisfüggő szinaptogén hatást mutat — egyes közlemények szerint a BDNF-nél nagyságrendekkel hatékonyabb.\n\nKlinikai vizsgálatok jelenleg nincsenek; az emberi felhasználás kutatási kontextusban történik. Orálisan biológiailag elérhetőnek mérték rágcsálókban (vér-agy gát átjutás).',
+      en: 'Dihexa (N-hexanoyl-Tyr-Ile-(6) aminohexanoic amide) is a modified, lipophilic angiotensin IV analog developed at Washington State University for Alzheimer\'s models. In animal work it acts via the HGF/c-Met pathway with potent, dose-dependent synaptogenesis — some reports place it orders of magnitude more potent than BDNF.\n\nNo human clinical trials yet; human use is in a research context only. It was orally bioavailable in rodents (crosses the blood-brain barrier).',
+      pl: 'Dihexa (N-heksanoylo-Tyr-Ile-(6) amid kwasu aminoheksanowego) to lipofilowy analog angiotensyny IV opracowany na Washington State University do modeli choroby Alzheimera. W badaniach na zwierzętach działa szlakiem HGF/c-Met z silnym, zależnym od dawki działaniem synaptogenicznym — w niektórych pracach o rzędy wielkości silniejszym niż BDNF.\n\nBrak badań klinicznych u ludzi; użycie wyłącznie w kontekście badawczym. Wykazała biodostępność doustną u gryzoni i przechodzi BBB.',
+    },
+    keyInfo: [
+      { label: { hu: 'Típus', en: 'Type', pl: 'Typ' }, value: { hu: 'AngIV analóg, nootróp', en: 'AngIV analog, nootropic', pl: 'Analog AngIV, nootropowy' } },
+      { label: { hu: 'Mechanizmus', en: 'Mechanism', pl: 'Mechanizm' }, value: 'HGF / c-Met' },
+      { label: { hu: 'BBB', en: 'BBB', pl: 'BBB' }, value: { hu: 'Átjut (orálisan is)', en: 'Crosses (also oral)', pl: 'Przechodzi (też doustnie)' } },
+      { label: { hu: 'Státusz', en: 'Status', pl: 'Status' }, value: { hu: 'Kutatási — nincs klinikai', en: 'Research — no clinical', pl: 'Badawczy — brak klinicznych' } },
+      { label: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' }, value: '2–8°C' },
+      { label: { hu: 'Adagolás', en: 'Administration', pl: 'Podanie' }, value: { hu: 'Orális / szublingvális', en: 'Oral / sublingual', pl: 'Doustnie / podjęzykowo' } },
+    ],
+    dosageInfo: {
+      hu: 'Kutatási protokollokban a leírt humán adagok 8–45 mg/nap között mozognak (szublingvális vagy orális), bár állatadatok alapján sokkal alacsonyabb dózisok is bioaktívak lehetnek. Hosszú távú humán biztonsági adat nincs. Ciklus jellegű alkalmazás javasolt.',
+      en: 'Reported human research doses range 8–45 mg/day (sublingual or oral), although animal data suggest much lower doses may already be bioactive. No long-term human safety data exists. Cycled use is recommended.',
+      pl: 'Opisywane dawki badawcze u ludzi to 8–45 mg/dobę (podjęzykowo lub doustnie), choć dane zwierzęce sugerują, że niższe dawki też mogą być aktywne. Brak długoterminowych danych bezpieczeństwa u ludzi. Zalecane stosowanie cykliczne.',
+    },
+    studies: [
+      {
+        tag: { hu: 'Preklinikai', en: 'Preclinical', pl: 'Przedkliniczne' },
+        tagColor: 'rgba(244,114,182,0.16)', tagText: '#f472b6',
+        title: 'A small-molecule HGF/Met activator promotes synaptogenesis (Dihexa)',
+        authors: 'Benoist CC, Wright JW, Zhu M, et al.',
+        journal: 'Journal of Pharmacology and Experimental Therapeutics',
+        year: '2014', pmid: '24304940',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/24304940/',
+        finding: {
+          hu: 'A Dihexa orálisan biológiailag elérhető, javítja a tanulást és memóriát öregedő/Alzheimer-modell patkányokban a HGF/c-Met aktiváció révén.',
+          en: 'Dihexa is orally bioavailable and improves learning/memory in ageing and Alzheimer\'s model rats via HGF/c-Met activation.',
+          pl: 'Dihexa jest doustnie biodostępna i poprawia uczenie/pamięć u starzejących się szczurów oraz w modelach Alzheimera przez aktywację HGF/c-Met.',
+        },
+      },
+      {
+        tag: { hu: 'Mechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        tagColor: 'rgba(99,102,241,0.18)', tagText: '#818cf8',
+        title: 'Angiotensin IV analogs as procognitive agents',
+        authors: 'McCoy AT, Benoist CC, Wright JW, et al.',
+        journal: 'JPET',
+        year: '2013', pmid: '23197775',
+        url: 'https://pubmed.ncbi.nlm.nih.gov/23197775/',
+        finding: {
+          hu: 'AngIV-alapú analógok (köztük a Dihexa) szinaptogén hatása és kognitív teljesítményre gyakorolt hatása rágcsáló-modellekben.',
+          en: 'Synaptogenic activity and cognitive effects of AngIV-based analogs including dihexa in rodent models.',
+          pl: 'Aktywność synaptogeniczna i efekty poznawcze analogów AngIV, w tym dihexy, w modelach gryzoni.',
+        },
+      },
+      {
+        tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
+        tagColor: 'rgba(244,114,182,0.18)', tagText: '#f472b6',
+        title: 'Dihexa — összefoglaló (Pep-Pedia)',
+        authors: 'Pep-Pedia szerkesztőség',
+        journal: 'pep-pedia.org', year: '2025', pmid: null,
+        url: 'https://pep-pedia.org/peptides/dihexa',
+        finding: {
+          hu: 'Naprakész szakirodalmi összefoglaló a Dihexa mechanizmusairól, biztonsági profiljáról és kutatási adagolási tartományairól.',
+          en: 'Up-to-date literature summary of dihexa mechanisms, safety profile and research dose ranges.',
+          pl: 'Aktualne podsumowanie literatury o mechanizmach, bezpieczeństwie i zakresach dawkowania dihexy.',
+        },
+      },
+    ],
+  },
 ]
+
+// PEPTIDES — full library: core 10 (with real images) + new top-10 additions
+// (placeholder images) + EXTRA_PEPTIDES from pep-pedia (placeholder images).
+export const PEPTIDES = [...CORE_PEPTIDES, ...EXTRA_PEPTIDES]

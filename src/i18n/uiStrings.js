@@ -28,6 +28,15 @@ export const UI = {
     'gal.eyebrow': 'Peptid Könyvtár',
     'gal.title': 'Peptidek',
     'gal.subtitle': 'Kattints egy peptidre a részletes leírásért, releváns kutatásokért és a beépített kalkulátorért.',
+    'gal.top10.title': '10 Legnépszerűbb Peptid',
+    'gal.top10.badge': 'TOP 10',
+    'gal.all.title': 'Összes Peptid',
+    'gal.all.show': 'Mutasd az összes peptidet',
+    'gal.all.hide': 'Bezárás',
+    'gal.all.search': 'Keresés peptid neve alapján…',
+    'gal.all.count': 'peptid',
+    'gal.all.empty': 'Nincs találat — próbálj más keresőszót.',
+    'gal.all.placeholder': 'Placeholder',
 
     // Peptide Modal
     'modal.close': 'Bezár',
@@ -146,6 +155,15 @@ export const UI = {
     'gal.eyebrow': 'Peptide Library',
     'gal.title': 'Peptides',
     'gal.subtitle': 'Click on a peptide for the detailed description, relevant studies and built-in calculator.',
+    'gal.top10.title': 'Top 10 Most Popular Peptides',
+    'gal.top10.badge': 'TOP 10',
+    'gal.all.title': 'All Peptides',
+    'gal.all.show': 'Show all peptides',
+    'gal.all.hide': 'Hide',
+    'gal.all.search': 'Search by peptide name…',
+    'gal.all.count': 'peptides',
+    'gal.all.empty': 'No results — try a different search term.',
+    'gal.all.placeholder': 'Placeholder',
 
     // Peptide Modal
     'modal.close': 'Close',
@@ -264,6 +282,15 @@ export const UI = {
     'gal.eyebrow': 'Biblioteka peptydów',
     'gal.title': 'Peptydy',
     'gal.subtitle': 'Kliknij peptyd, aby zobaczyć szczegółowy opis, istotne badania i wbudowany kalkulator.',
+    'gal.top10.title': '10 najpopularniejszych peptydów',
+    'gal.top10.badge': 'TOP 10',
+    'gal.all.title': 'Wszystkie peptydy',
+    'gal.all.show': 'Pokaż wszystkie peptydy',
+    'gal.all.hide': 'Ukryj',
+    'gal.all.search': 'Szukaj po nazwie peptydu…',
+    'gal.all.count': 'peptydów',
+    'gal.all.empty': 'Brak wyników — spróbuj innego wyrażenia.',
+    'gal.all.placeholder': 'Placeholder',
 
     // Peptide Modal
     'modal.close': 'Zamknij',
