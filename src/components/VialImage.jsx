@@ -48,8 +48,10 @@ export default function VialImage({ accentColor = '#818cf8', name = '', uid = 'v
   return (
     <svg
       viewBox="0 0 110 200"
+      preserveAspectRatio="xMidYMid meet"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className="w-full h-full"
       aria-label={`${name} peptide vial`}
     >
       <defs>
