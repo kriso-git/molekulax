@@ -89,13 +89,8 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
 
       {/* Image — square frame, fills the tile width so every vial photo
           renders at the same visual size. No hover scale; only the parent
-          tile lifts. `overflow-hidden` + explicit aspectRatio bullet-proof
-          the SVG-fallback case (intrinsic viewBox 110×200 can't blow up
-          the box). */}
-      <div
-        className="w-full self-center relative z-10 overflow-hidden"
-        style={{ aspectRatio: '1 / 1' }}
-      >
+          tile lifts. */}
+      <div className="w-full aspect-square self-center relative z-10">
         <VialImage
           accentColor={accent}
           name={peptide.name}
@@ -128,9 +123,15 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
         {tr(levelMeta.label)}
       </p>
 
-      {/* Research Uses chips — max 2 visible, "+N" badge for overflow.
-          Keeps the tile from elongating when a peptide has 3+ categories;
-          the full list is always available in the modal. */}
+      {/* Subtle divider — visually separates the meta block from the
+          Research Uses block, matching the reference design. */}
+      <div
+        className="relative z-10 h-px -my-1"
+        style={{ background: 'var(--tint-soft-border)' }}
+      />
+
+      {/* Research Uses — single most-relevant category chip. The first
+          entry in peptideCategories.js is treated as the primary tag. */}
       <div className="relative z-10 flex flex-col gap-2">
         <p
           className="text-[9px] tracking-[0.25em] uppercase font-semibold"
@@ -141,7 +142,7 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
         <div className="flex flex-wrap gap-1.5">
           {catIds.length === 0 ? (
             <span
-              className="text-[10px] px-2 py-0.5 rounded-full font-mono tracking-wide"
+              className="text-[10px] px-2.5 py-1 rounded-full font-mono tracking-wide"
               style={{
                 background: 'var(--tint-row)',
                 border: '1px solid var(--border-soft)',
@@ -151,38 +152,24 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
               —
             </span>
           ) : (
-            <>
-              {catIds.slice(0, 2).map(catId => {
-                const cat = CATEGORIES.find(c => c.id === catId)
-                if (!cat) return null
-                return (
-                  <span
-                    key={catId}
-                    className="text-[10px] px-2 py-0.5 rounded-full font-medium tracking-wide whitespace-nowrap"
-                    style={{
-                      background: `${cat.accent}1a`,
-                      border: `1px solid ${cat.accent}55`,
-                      color: cat.accent,
-                    }}
-                  >
-                    {tr(cat.label)}
-                  </span>
-                )
-              })}
-              {catIds.length > 2 && (
+            (() => {
+              const primaryId = catIds[0]
+              const cat = CATEGORIES.find(c => c.id === primaryId)
+              if (!cat) return null
+              return (
                 <span
-                  className="text-[10px] px-2 py-0.5 rounded-full font-mono tracking-wide whitespace-nowrap"
+                  key={primaryId}
+                  className="text-[10px] px-2.5 py-1 rounded-full font-medium tracking-wide whitespace-nowrap"
                   style={{
-                    background: 'var(--tint-row)',
-                    border: '1px solid var(--border-soft)',
-                    color: 'var(--text-muted)',
+                    background: `${cat.accent}1a`,
+                    border: `1px solid ${cat.accent}55`,
+                    color: cat.accent,
                   }}
-                  aria-label={`+${catIds.length - 2} további kategória`}
                 >
-                  +{catIds.length - 2}
+                  {tr(cat.label)}
                 </span>
-              )}
-            </>
+              )
+            })()
           )}
         </div>
       </div>
@@ -336,7 +323,7 @@ export default function PeptideGallery() {
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5 items-start">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
             {top10.map(peptide => (
               <PeptideTile
                 key={peptide.id}
@@ -586,7 +573,7 @@ export default function PeptideGallery() {
                     {t('gal.all.empty')}
                   </div>
                 ) : (
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 items-start">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
                     {filteredAll.map(peptide => (
                       <PeptideTile
                         key={peptide.id}
