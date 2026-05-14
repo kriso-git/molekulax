@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import Hero from './components/Hero'
 import Education from './components/Education'
 import PeptideEffects from './components/PeptideEffects'
@@ -11,10 +12,28 @@ import MoleculeBackground from './components/MoleculeBackground'
 import FloatingScientific from './components/FloatingScientific'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
+import PepPediaMockup from './mockup/PepPediaMockup'
 import { LanguageProvider } from './i18n/LanguageContext'
 import { ThemeProvider } from './theme/ThemeContext'
 
+// Hash-based router for the design-preview mockup. Active when the URL
+// hash starts with `#mockup` (visit https://…/#mockup to view). Keeps
+// the production site untouched and zero-cost when not used.
+function useHashRoute() {
+  const read = () => (typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, ''))
+  const [hash, setHash] = useState(read)
+  useEffect(() => {
+    const onChange = () => setHash(read())
+    window.addEventListener('hashchange', onChange)
+    return () => window.removeEventListener('hashchange', onChange)
+  }, [])
+  return hash
+}
+
 export default function App() {
+  const hash = useHashRoute()
+  const isMockup = hash === 'mockup' || hash.startsWith('mockup/')
+
   return (
     <ThemeProvider>
       <LanguageProvider>
@@ -24,15 +43,21 @@ export default function App() {
           <ThemeSwitcher />
           <LanguageSwitcher />
           <div className="relative z-10">
-            <Hero />
-            <Education />
-            <PeptideEffects />
-            <PeptideGallery />
-            <Calculator />
-            <TelegramSection />
-            <Faq />
-            <Disclaimer />
-            <Footer />
+            {isMockup ? (
+              <PepPediaMockup />
+            ) : (
+              <>
+                <Hero />
+                <Education />
+                <PeptideEffects />
+                <PeptideGallery />
+                <Calculator />
+                <TelegramSection />
+                <Faq />
+                <Disclaimer />
+                <Footer />
+              </>
+            )}
           </div>
         </div>
       </LanguageProvider>
