@@ -1,39 +1,68 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
 import { PEPTIDES, TOP10_ORDER } from '../data/peptides'
 import { CATEGORIES, getPeptideCategories } from '../data/peptideCategories'
+import { getResearchLevel, getLevelMeta, LEVEL_META, makeSortComparator } from '../data/researchLevel'
 import { useLang } from '../i18n/LanguageContext'
-import { ChevronDown, Search, Star, SlidersHorizontal, X } from 'lucide-react'
+import {
+  ChevronDown, Search, Star, SlidersHorizontal, X,
+  ArrowDownAZ, ArrowUpAZ, BarChart3,
+} from 'lucide-react'
 import VialImage from './VialImage'
 import PeptideModal from './PeptideModal'
+import TelegramButtons from './TelegramButtons'
 
-// Single tile component — reused by both Top 10 and All Peptides sections.
-function PeptideTile({ peptide, featured, onSelect, t, tr }) {
-  const shortDesc = tr(peptide.shortDesc) || ''
+// ── Tile ─────────────────────────────────────────────────────────────────────
+// New layout (inspired by pep-pedia.org/browse):
+//   ▸ image (no hover scale)
+//   ▸ peptide name + research-level dot
+//   ▸ tier label
+//   ▸ "Research Uses" eyebrow
+//   ▸ category chips
+// Card lifts on hover via translateY; gradient lighting from accent colour
+// provides the soft 3D feel.
+
+function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
   const isPlaceholder = !peptide.image
+  const level = getResearchLevel(peptide)
+  const levelMeta = getLevelMeta(level)
+  const catIds = getPeptideCategories(peptide.id)
+  const accent = peptide.accentColor
 
   return (
     <button
       onClick={() => onSelect(peptide)}
-      className="group relative flex flex-col items-center gap-4 p-5 rounded-2xl glass
-                 hover:border-[rgba(255,255,255,0.15)] hover:bg-[rgba(255,255,255,0.03)]
-                 transition-all duration-300 cursor-pointer text-left"
+      className="group peptide-tile relative flex flex-col gap-4 p-5 rounded-2xl text-left cursor-pointer"
+      style={{
+        border: '1px solid var(--tint-soft-border)',
+        background: 'var(--tint-soft)',
+        // Gradient lighting + subtle 3D — the inset highlight gives a "lit
+        // edge" while the outer shadow grounds the card on the surface.
+        boxShadow:
+          `inset 0 1px 0 0 rgba(255,255,255,0.04),` +
+          ` 0 1px 2px rgba(0,0,0,0.10),` +
+          ` 0 8px 24px -16px ${accent}33`,
+      }}
       aria-label={peptide.name}
     >
+      {/* Accent gradient wash — always visible, intensifies on hover. */}
       <div
-        className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+        className="absolute inset-0 rounded-2xl pointer-events-none transition-opacity duration-500 opacity-50 group-hover:opacity-100"
         style={{
-          background: `radial-gradient(ellipse at 50% 40%, ${peptide.accentColor}18 0%, transparent 70%)`,
+          background:
+            `radial-gradient(140% 80% at 50% 0%, ${accent}1a 0%, transparent 55%),` +
+            ` linear-gradient(135deg, ${accent}10 0%, transparent 55%)`,
         }}
       />
 
+      {/* TOP 10 badge */}
       {featured && (
         <div
           className="absolute top-3 left-3 z-20 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-bold tracking-[0.15em] uppercase"
           style={{
-            background: `${peptide.accentColor}22`,
-            color: peptide.accentColor,
-            border: `1px solid ${peptide.accentColor}55`,
-            boxShadow: `0 0 10px ${peptide.accentColor}25`,
+            background: `${accent}22`,
+            color: accent,
+            border: `1px solid ${accent}55`,
+            boxShadow: `0 0 10px ${accent}25`,
           }}
         >
           <Star size={9} strokeWidth={2.5} fill="currentColor" />
@@ -41,53 +70,150 @@ function PeptideTile({ peptide, featured, onSelect, t, tr }) {
         </div>
       )}
 
+      {/* Placeholder badge for peptides without a real photo */}
       {isPlaceholder && (
         <div
-          className="absolute top-3 right-3 z-20 px-2 py-0.5 rounded-full text-[8px] tracking-[0.15em] uppercase text-gray-500"
+          className="absolute top-3 right-3 z-20 px-2 py-0.5 rounded-full text-[8px] tracking-[0.15em] uppercase"
           style={{
             background: 'var(--tint-soft)',
             border: '1px dashed var(--tint-medium-border)',
+            color: 'var(--text-muted)',
           }}
         >
           {t('gal.all.placeholder')}
         </div>
       )}
 
-      <div className="w-40 h-56 sm:w-44 sm:h-64 relative z-10 group-hover:scale-105 transition-transform duration-300">
+      {/* Image — no scale on hover; only the parent tile lifts. */}
+      <div className="w-40 h-56 sm:w-44 sm:h-64 self-center relative z-10">
         <VialImage
-          accentColor={peptide.accentColor}
+          accentColor={accent}
           name={peptide.name}
           uid={peptide.id}
           image={peptide.image}
         />
       </div>
 
-      <div className="relative z-10 text-center">
-        <p className="text-white font-bold text-sm leading-tight group-hover:text-white transition-colors">
+      {/* Name + research-level dot */}
+      <div className="relative z-10 flex items-start justify-between gap-3">
+        <p className="font-bold text-sm leading-tight" style={{ color: 'var(--text-primary)' }}>
           {peptide.name}
         </p>
-        <p
-          className="text-[10px] mt-1 leading-snug line-clamp-2"
-          style={{ color: peptide.accentColor, opacity: 0.8 }}
-        >
-          {shortDesc.split('—')[0].trim()}
-        </p>
+        <span
+          aria-label={tr(levelMeta.label)}
+          title={tr(levelMeta.label)}
+          className="shrink-0 mt-1 w-2.5 h-2.5 rounded-full"
+          style={{
+            background: levelMeta.color,
+            boxShadow: `0 0 8px ${levelMeta.color}88`,
+          }}
+        />
       </div>
 
-      <div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[2px] w-0 group-hover:w-2/3 rounded-full transition-all duration-300"
-        style={{ background: peptide.accentColor, opacity: 0.5 }}
-      />
+      {/* Tier label */}
+      <p
+        className="relative z-10 -mt-3 text-[10px] tracking-[0.18em] uppercase font-semibold"
+        style={{ color: levelMeta.color }}
+      >
+        {tr(levelMeta.label)}
+      </p>
+
+      {/* Research Uses chips */}
+      <div className="relative z-10 flex flex-col gap-2">
+        <p
+          className="text-[9px] tracking-[0.25em] uppercase font-semibold"
+          style={{ color: 'var(--text-fainter)' }}
+        >
+          {t('gal.uses')}
+        </p>
+        <div className="flex flex-wrap gap-1.5">
+          {catIds.length === 0 ? (
+            <span
+              className="text-[10px] px-2 py-0.5 rounded-full font-mono tracking-wide"
+              style={{
+                background: 'var(--tint-row)',
+                border: '1px solid var(--border-soft)',
+                color: 'var(--text-muted)',
+              }}
+            >
+              —
+            </span>
+          ) : (
+            catIds.map(catId => {
+              const cat = CATEGORIES.find(c => c.id === catId)
+              if (!cat) return null
+              return (
+                <span
+                  key={catId}
+                  className="text-[10px] px-2 py-0.5 rounded-full font-medium tracking-wide whitespace-nowrap"
+                  style={{
+                    background: `${cat.accent}1a`,
+                    border: `1px solid ${cat.accent}55`,
+                    color: cat.accent,
+                  }}
+                >
+                  {tr(cat.label)}
+                </span>
+              )
+            })
+          )}
+        </div>
+      </div>
     </button>
   )
 }
 
+// ── Sort segmented control ───────────────────────────────────────────────────
+function SortControl({ value, onChange, t }) {
+  const items = [
+    { id: 'az',    label: t('gal.sort.az'),    Icon: ArrowDownAZ },
+    { id: 'za',    label: t('gal.sort.za'),    Icon: ArrowUpAZ },
+    { id: 'level', label: t('gal.sort.level'), Icon: BarChart3 },
+  ]
+  return (
+    <div
+      className="inline-flex p-1 rounded-xl gap-1"
+      style={{
+        background: 'var(--tint-row)',
+        border: '1px solid var(--border-soft)',
+      }}
+      role="radiogroup"
+      aria-label={t('gal.sort.title')}
+    >
+      {items.map(({ id, label, Icon }) => {
+        const active = value === id
+        return (
+          <button
+            key={id}
+            type="button"
+            role="radio"
+            aria-checked={active}
+            onClick={() => onChange(id)}
+            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
+            style={{
+              background: active ? 'rgba(129,140,248,0.18)' : 'transparent',
+              border: `1px solid ${active ? 'rgba(129,140,248,0.45)' : 'transparent'}`,
+              color: active ? 'var(--accent)' : 'var(--text-muted)',
+            }}
+          >
+            <Icon size={13} strokeWidth={2.2} />
+            <span className="hidden sm:inline">{label}</span>
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
+// ── Main component ───────────────────────────────────────────────────────────
 export default function PeptideGallery() {
   const [selected, setSelected] = useState(null)
   const [expanded, setExpanded] = useState(false)
   const [showFilters, setShowFilters] = useState(false)
   const [query, setQuery] = useState('')
   const [activeFilters, setActiveFilters] = useState([])      // category id list
+  const [levelFilters, setLevelFilters] = useState([])        // research level numbers
+  const [sortMode, setSortMode] = useState('az')              // 'az' | 'za' | 'level'
   const sectionRef = useRef(null)
   const allSectionRef = useRef(null)
   const { t, tr, lang } = useLang()
@@ -97,10 +223,10 @@ export default function PeptideGallery() {
     []
   )
 
-  // Apply both name search + category filter.
+  // Apply search + category filter + research-level filter, then sort.
   const filteredAll = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return PEPTIDES.filter(p => {
+    const matched = PEPTIDES.filter(p => {
       if (q) {
         const name = p.name.toLowerCase()
         const short = (tr(p.shortDesc) || '').toLowerCase()
@@ -111,9 +237,14 @@ export default function PeptideGallery() {
         const hasMatch = activeFilters.some(f => cats.includes(f))
         if (!hasMatch) return false
       }
+      if (levelFilters.length > 0) {
+        const lvl = getResearchLevel(p)
+        if (!levelFilters.includes(lvl)) return false
+      }
       return true
     })
-  }, [query, lang, activeFilters])
+    return matched.sort(makeSortComparator(sortMode))
+  }, [query, lang, activeFilters, levelFilters, sortMode])
 
   useEffect(() => {
     const handler = (e) => {
@@ -143,8 +274,13 @@ export default function PeptideGallery() {
       prev.includes(catId) ? prev.filter(c => c !== catId) : [...prev, catId]
     )
   }
-
-  const clearFilters = () => setActiveFilters([])
+  const toggleLevel = (lvl) => {
+    setLevelFilters(prev =>
+      prev.includes(lvl) ? prev.filter(l => l !== lvl) : [...prev, lvl]
+    )
+  }
+  const clearFilters = () => { setActiveFilters([]); setLevelFilters([]) }
+  const totalActive = activeFilters.length + levelFilters.length
 
   return (
     <>
@@ -182,6 +318,7 @@ export default function PeptideGallery() {
                 onSelect={setSelected}
                 t={t}
                 tr={tr}
+                lang={lang}
               />
             ))}
           </div>
@@ -227,8 +364,38 @@ export default function PeptideGallery() {
               }`}
             >
               <div className="overflow-hidden">
-                {/* Search + Filter toggle row */}
-                <div className="mb-4 flex flex-col sm:flex-row gap-3">
+
+                {/* ── Help callout — Telegram CTA above the search ─────── */}
+                <div
+                  className="mb-5 p-5 sm:p-6 rounded-2xl flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5"
+                  style={{
+                    background:
+                      'linear-gradient(135deg, rgba(129,140,248,0.10) 0%, rgba(236,72,153,0.08) 100%)',
+                    border: '1px solid rgba(129,140,248,0.30)',
+                    boxShadow: '0 0 30px rgba(129,140,248,0.10)',
+                  }}
+                >
+                  <div className="flex-1 min-w-0">
+                    <p
+                      className="text-base md:text-lg font-semibold italic leading-snug"
+                      style={{ color: 'var(--text-primary)' }}
+                    >
+                      {t('gal.help.title')}
+                    </p>
+                    <p
+                      className="text-xs mt-1 leading-relaxed"
+                      style={{ color: 'var(--text-muted)' }}
+                    >
+                      {t('gal.help.body')}
+                    </p>
+                  </div>
+                  <div className="shrink-0">
+                    <TelegramButtons variant="pill" align="start" />
+                  </div>
+                </div>
+
+                {/* ── Search + Sort + Filter toggle row ────────────────── */}
+                <div className="mb-4 flex flex-col lg:flex-row gap-3">
                   <div className="relative flex-1">
                     <Search
                       size={15}
@@ -249,15 +416,17 @@ export default function PeptideGallery() {
                     />
                   </div>
 
+                  <SortControl value={sortMode} onChange={setSortMode} t={t} />
+
                   <button
                     onClick={() => setShowFilters(v => !v)}
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-white text-sm font-semibold tracking-widest uppercase transition-all duration-300"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold tracking-widest uppercase transition-all duration-300"
                     style={{
-                      background: showFilters || activeFilters.length > 0
+                      background: showFilters || totalActive > 0
                         ? 'rgba(129,140,248,0.12)'
                         : 'var(--tint-row)',
                       border: `1px solid ${
-                        showFilters || activeFilters.length > 0
+                        showFilters || totalActive > 0
                           ? 'rgba(129,140,248,0.5)'
                           : 'var(--border-soft)'
                       }`,
@@ -267,18 +436,18 @@ export default function PeptideGallery() {
                   >
                     <SlidersHorizontal size={14} />
                     {t('gal.filter.toggle')}
-                    {activeFilters.length > 0 && (
+                    {totalActive > 0 && (
                       <span
                         className="ml-1 px-1.5 py-0.5 rounded-full text-[10px] font-bold"
                         style={{ background: '#818cf8', color: '#0a0a1c' }}
                       >
-                        {activeFilters.length}
+                        {totalActive}
                       </span>
                     )}
                   </button>
                 </div>
 
-                {/* Filter chips panel */}
+                {/* Filter chips panel — categories + research level */}
                 <div
                   className={`grid transition-[grid-template-rows] duration-300 ease-out ${
                     showFilters ? 'grid-rows-[1fr] mb-6' : 'grid-rows-[0fr]'
@@ -286,63 +455,98 @@ export default function PeptideGallery() {
                 >
                   <div className="overflow-hidden">
                     <div
-                      className="p-5 rounded-xl"
+                      className="p-5 rounded-xl flex flex-col gap-5"
                       style={{
                         background: 'var(--tint-soft)',
                         border: '1px solid var(--tint-soft-border)',
                       }}
                     >
-                      <div className="flex items-center justify-between mb-3">
-                        <p className="text-[#818cf8] text-[11px] font-semibold tracking-[0.25em] uppercase">
-                          {t('gal.filter.title')}
-                        </p>
-                        {activeFilters.length > 0 && (
+                      {/* Category row */}
+                      <div>
+                        <div className="flex items-center justify-between mb-3">
+                          <p className="text-[#818cf8] text-[11px] font-semibold tracking-[0.25em] uppercase">
+                            {t('gal.filter.title')}
+                          </p>
+                          {totalActive > 0 && (
+                            <button
+                              onClick={clearFilters}
+                              className="inline-flex items-center gap-1 text-gray-500 hover:text-white transition-colors text-[10px] tracking-widest uppercase"
+                            >
+                              <X size={11} />
+                              {t('gal.filter.clear')}
+                            </button>
+                          )}
+                        </div>
+
+                        <div className="flex flex-wrap gap-2">
                           <button
                             onClick={clearFilters}
-                            className="inline-flex items-center gap-1 text-gray-500 hover:text-white transition-colors text-[10px] tracking-widest uppercase"
+                            className="px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
+                            style={{
+                              background: totalActive === 0 ? 'rgba(129,140,248,0.18)' : 'var(--tint-row)',
+                              border: `1px solid ${totalActive === 0 ? 'var(--accent)' : 'var(--border-soft)'}`,
+                              color: totalActive === 0 ? 'var(--accent)' : 'var(--text-muted)',
+                            }}
                           >
-                            <X size={11} />
-                            {t('gal.filter.clear')}
+                            {t('gal.filter.all')}
                           </button>
-                        )}
+
+                          {CATEGORIES.map((cat) => {
+                            const active = activeFilters.includes(cat.id)
+                            return (
+                              <button
+                                key={cat.id}
+                                onClick={() => toggleFilter(cat.id)}
+                                className="px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
+                                style={{
+                                  background: active ? `${cat.accent}22` : 'var(--tint-row)',
+                                  border: `1px solid ${active ? cat.accent : 'var(--border-soft)'}`,
+                                  color: active ? cat.accent : 'var(--text-muted)',
+                                  boxShadow: active ? `0 0 12px ${cat.accent}30` : 'none',
+                                }}
+                              >
+                                {tr(cat.label)}
+                              </button>
+                            )
+                          })}
+                        </div>
                       </div>
 
-                      <div className="flex flex-wrap gap-2">
-                        <button
-                          onClick={clearFilters}
-                          className="px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
-                          style={{
-                            background: activeFilters.length === 0 ? 'rgba(129,140,248,0.18)' : 'var(--tint-row)',
-                            border: `1px solid ${activeFilters.length === 0 ? 'var(--accent)' : 'var(--border-soft)'}`,
-                            color: activeFilters.length === 0 ? 'var(--accent)' : 'var(--text-muted)',
-                          }}
-                        >
-                          {t('gal.filter.all')}
-                        </button>
-
-                        {CATEGORIES.map((cat) => {
-                          const active = activeFilters.includes(cat.id)
-                          return (
-                            <button
-                              key={cat.id}
-                              onClick={() => toggleFilter(cat.id)}
-                              className="px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
-                              style={{
-                                background: active ? `${cat.accent}22` : 'var(--tint-row)',
-                                border: `1px solid ${active ? cat.accent : 'var(--border-soft)'}`,
-                                color: active ? cat.accent : 'var(--text-muted)',
-                                boxShadow: active ? `0 0 12px ${cat.accent}30` : 'none',
-                              }}
-                            >
-                              {tr(cat.label)}
-                            </button>
-                          )
-                        })}
+                      {/* Research level row */}
+                      <div>
+                        <p className="text-[#818cf8] text-[11px] font-semibold tracking-[0.25em] uppercase mb-3">
+                          {t('gal.filter.level')}
+                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          {[5, 4, 3, 2, 1].map(lvl => {
+                            const active = levelFilters.includes(lvl)
+                            const meta = LEVEL_META[lvl]
+                            return (
+                              <button
+                                key={lvl}
+                                onClick={() => toggleLevel(lvl)}
+                                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
+                                style={{
+                                  background: active ? meta.bg : 'var(--tint-row)',
+                                  border: `1px solid ${active ? meta.border : 'var(--border-soft)'}`,
+                                  color: active ? meta.color : 'var(--text-muted)',
+                                  boxShadow: active ? `0 0 12px ${meta.color}30` : 'none',
+                                }}
+                              >
+                                <span
+                                  className="w-1.5 h-1.5 rounded-full"
+                                  style={{ background: meta.color }}
+                                />
+                                L{lvl} · {tr(meta.label)}
+                              </button>
+                            )
+                          })}
+                        </div>
                       </div>
 
-                      {activeFilters.length > 0 && (
-                        <p className="text-gray-600 text-[10px] mt-3 tracking-wider">
-                          {activeFilters.length} {t('gal.filter.activeCount')} · {filteredAll.length} {t('gal.all.count')}
+                      {totalActive > 0 && (
+                        <p className="text-gray-600 text-[10px] tracking-wider">
+                          {totalActive} {t('gal.filter.activeCount')} · {filteredAll.length} {t('gal.all.count')}
                         </p>
                       )}
                     </div>
@@ -364,6 +568,7 @@ export default function PeptideGallery() {
                         onSelect={setSelected}
                         t={t}
                         tr={tr}
+                        lang={lang}
                       />
                     ))}
                   </div>
