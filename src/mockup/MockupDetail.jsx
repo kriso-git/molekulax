@@ -1,27 +1,39 @@
 // Rich detail view inspired by pep-pedia.org/peptides/<slug>.
 // Renders as a full-screen modal over the mockup gallery. Layout blocks:
-//   1. Hero strip (vial + name + tier + status badge)
-//   2. Key-facts grid (6 micro-cards: type, target, half-life, route, phase, storage)
-//   3. Mechanism summary + pathway flow
-//   4. Research uses chip wall
-//   5. Dosing protocol — typical, frequency, cycle, notes + a horizontal timeline
-//   6. Commonly stacked-with peptide chip row
-//   7. Side effects (severity-colored)
-//   8. Contraindications
-//   9. Studies list (existing-style cards)
-//  10. FAQ accordion
-//  11. Related peptides
-//  12. Disclaimer + Telegram CTA
+//   1.  Hero strip (vial + name + tier + status badge)
+//   2.  Key-facts grid (6 micro-cards)
+//   3.  Quick Start Guide — 4-step horizontal stepper
+//   4.  Key Benefits — icon-cards from category mapping
+//   5.  What is <peptide> — extended descriptive paragraphs
+//   6.  Mechanism summary + pathway flow
+//   7.  Research uses chip wall
+//   8.  Molecular Information — lab data sheet
+//   9.  Dosing protocol
+//   10. Side effects + contraindications
+//   11. Stacks
+//   12. Studies list
+//   13. FAQ accordion
+//   14. Mini calculator (always present)
+//   15. Telegram CTA
+//   16. Disclaimer
 
 import { useState, useEffect } from 'react'
 import {
   X, ShieldCheck, ShieldAlert, Clock, Syringe, FlaskConical,
   Activity, Pill, Zap, Layers, AlertTriangle, ExternalLink,
-  ChevronDown, ArrowRight,
+  ChevronDown, ArrowRight, BookOpen, Flame, Sprout, Brain,
+  Sparkles, Shield, Moon, Heart, Leaf, Atom, Calculator,
+  Rocket, Snowflake, Beaker,
 } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
 import TelegramButtons from '../components/TelegramButtons'
+import MiniCalc from '../components/MiniCalc'
 import { TIER_META } from './sampleData'
+
+const BENEFIT_ICONS = {
+  flame: Flame, sprout: Sprout, activity: Activity, brain: Brain,
+  sparkles: Sparkles, shield: Shield, moon: Moon, heart: Heart, leaf: Leaf,
+}
 
 function SectionHeader({ icon: Icon, eyebrow, title, accent }) {
   return (
@@ -387,7 +399,132 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
             </div>
           </section>
 
-          {/* 3. Mechanism */}
+          {/* 3. Quick Start Guide — 4-step horizontal stepper */}
+          {peptide.quickStart?.length > 0 && (
+            <section>
+              <SectionHeader icon={Rocket} eyebrow="Quick Start Guide" title="4 lépésben az indulásig" accent={accent} />
+              <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                {/* Connector rail behind the step circles (desktop only) */}
+                <div
+                  className="hidden lg:block absolute top-9 left-12 right-12 h-px pointer-events-none"
+                  style={{ background: `linear-gradient(90deg, ${accent}55 0%, ${accent}aa 50%, ${accent}55 100%)` }}
+                />
+                {peptide.quickStart.map((s) => (
+                  <div
+                    key={s.step}
+                    className="relative flex flex-col items-start gap-3 p-5 rounded-2xl"
+                    style={{
+                      background: 'var(--tint-soft)',
+                      border: '1px solid var(--tint-soft-border)',
+                      boxShadow: `0 12px 32px -22px ${accent}66`,
+                    }}
+                  >
+                    <span
+                      className="relative inline-flex items-center justify-center w-10 h-10 rounded-xl font-black text-base font-mono"
+                      style={{
+                        background: `linear-gradient(135deg, ${accent} 0%, ${accent}aa 100%)`,
+                        color: '#0a0a1c',
+                        boxShadow: `0 0 18px ${accent}66, inset 0 1px 0 rgba(255,255,255,0.25)`,
+                      }}
+                    >
+                      {s.step}
+                    </span>
+                    <p
+                      className="text-xs tracking-[0.18em] uppercase font-bold"
+                      style={{ color: accent }}
+                    >
+                      {tr(s.title)}
+                    </p>
+                    <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                      {tr(s.detail)}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* 4. Key Benefits — icon cards from category mapping */}
+          {peptide.keyBenefits?.length > 0 && (
+            <section>
+              <SectionHeader icon={Sparkles} eyebrow="Key Benefits" title="Kulcs előnyök" accent={accent} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                {peptide.keyBenefits.map((b, i) => {
+                  const Icon = BENEFIT_ICONS[b.icon] || Sparkles
+                  return (
+                    <div
+                      key={i}
+                      className="relative p-4 rounded-2xl overflow-hidden"
+                      style={{
+                        background: 'var(--tint-soft)',
+                        border: '1px solid var(--tint-soft-border)',
+                      }}
+                    >
+                      {/* Top accent bar */}
+                      <div
+                        className="absolute top-0 left-0 right-0 h-px"
+                        style={{ background: `linear-gradient(90deg, transparent, ${accent}cc, transparent)` }}
+                      />
+                      <span
+                        className="inline-flex items-center justify-center w-9 h-9 rounded-xl mb-3"
+                        style={{
+                          background: `${accent}1a`,
+                          border: `1px solid ${accent}40`,
+                          color: accent,
+                        }}
+                      >
+                        <Icon size={16} strokeWidth={2.2} />
+                      </span>
+                      <p className="text-sm font-bold mb-1.5" style={{ color: 'var(--text-primary)' }}>
+                        {tr(b.title)}
+                      </p>
+                      <p className="text-xs leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+                        {tr(b.desc)}
+                      </p>
+                    </div>
+                  )
+                })}
+              </div>
+            </section>
+          )}
+
+          {/* 5. What is <peptide> — extended descriptive paragraphs */}
+          {peptide.whatIs && (
+            <section>
+              <SectionHeader
+                icon={BookOpen}
+                eyebrow={`Mi az a ${peptide.name}?`}
+                title="Részletes áttekintés"
+                accent={accent}
+              />
+              <div
+                className="relative p-5 sm:p-6 rounded-2xl"
+                style={{
+                  background: 'var(--tint-soft)',
+                  border: '1px solid var(--tint-soft-border)',
+                }}
+              >
+                {/* Side rail */}
+                <div
+                  className="absolute top-4 bottom-4 left-0 w-0.5 rounded-r-full"
+                  style={{ background: `linear-gradient(180deg, ${accent}cc, ${accent}33)` }}
+                />
+                <div className="pl-3 flex flex-col gap-3">
+                  {tr(peptide.whatIs).split('\n\n').map((para, i) => (
+                    <p
+                      key={i}
+                      className="text-sm leading-relaxed"
+                      style={{ color: 'var(--text-secondary)' }}
+                    >
+                      {para}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </section>
+          )}
+
+          {/* 6. Mechanism */}
           {peptide.mechanism && (
             <section>
               <SectionHeader icon={Zap} eyebrow="Hatásmechanizmus" title="Hogyan működik" accent={accent} />
@@ -402,7 +539,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
             </section>
           )}
 
-          {/* 4. Research uses */}
+          {/* 4. Research uses — multi-tag wall (unlike outer card which caps at 1) */}
           {peptide.researchUses?.length > 0 && (
             <section>
               <SectionHeader icon={Layers} eyebrow="Kutatási irányok" title="Vizsgált alkalmazások" accent={accent} />
@@ -421,6 +558,64 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
                     {tr(use.label)}
                   </span>
                 ))}
+              </div>
+            </section>
+          )}
+
+          {/* 4b. Molecular Information — lab data sheet */}
+          {peptide.molecular?.length > 0 && (
+            <section>
+              <SectionHeader icon={Atom} eyebrow="Molekuláris információ" title="Adatlap" accent={accent} />
+              <div
+                className="relative rounded-2xl overflow-hidden font-mono"
+                style={{
+                  background:
+                    `linear-gradient(135deg, rgba(15,23,42,0.45) 0%, transparent 100%), var(--tint-soft)`,
+                  border: '1px solid var(--tint-soft-border)',
+                }}
+              >
+                {/* Header band */}
+                <div
+                  className="flex items-center gap-2 px-4 py-2 border-b"
+                  style={{ borderColor: 'var(--tint-soft-border)', background: 'rgba(0,0,0,0.18)' }}
+                >
+                  <Beaker size={11} strokeWidth={2.2} style={{ color: accent }} />
+                  <span className="text-[9px] tracking-[0.28em] uppercase font-bold" style={{ color: accent }}>
+                    /lab/molecular-data.json
+                  </span>
+                  <span className="ml-auto flex gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: '#ef4444aa' }} />
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: '#eab308aa' }} />
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: '#22c55eaa' }} />
+                  </span>
+                </div>
+                <dl className="divide-y" style={{ borderColor: 'var(--tint-soft-border)' }}>
+                  {peptide.molecular.map((row, i) => (
+                    <div
+                      key={i}
+                      className="grid grid-cols-3 sm:grid-cols-5 gap-2 px-4 py-3 text-xs"
+                      style={{ borderTop: i === 0 ? 'none' : '1px solid var(--tint-soft-border)' }}
+                    >
+                      <dt
+                        className="col-span-1 sm:col-span-2 text-[10px] tracking-[0.18em] uppercase"
+                        style={{ color: 'var(--text-fainter)' }}
+                      >
+                        {tr(row.key)}
+                      </dt>
+                      <dd
+                        className="col-span-2 sm:col-span-3 font-bold"
+                        style={{ color: 'var(--text-secondary)' }}
+                      >
+                        {tr(row.value)}
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
+                {/* Bottom accent line */}
+                <div
+                  className="h-0.5 w-full"
+                  style={{ background: `linear-gradient(90deg, transparent, ${accent}aa, transparent)` }}
+                />
               </div>
             </section>
           )}
@@ -469,9 +664,26 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
                   </div>
                 )}
                 {notes && (
-                  <p className="text-[11px] italic mb-5" style={{ color: 'var(--text-muted)' }}>
-                    💡 {notes}
-                  </p>
+                  <div
+                    className="relative p-4 mb-5 rounded-xl flex items-start gap-3"
+                    style={{
+                      background: `${accent}10`,
+                      border: `1px solid ${accent}40`,
+                    }}
+                  >
+                    <span
+                      className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-lg mt-0.5"
+                      style={{ background: accent, color: '#0a0a1c' }}
+                    >
+                      <Pill size={13} strokeWidth={2.5} />
+                    </span>
+                    <p
+                      className="text-sm leading-relaxed font-medium"
+                      style={{ color: 'var(--text-primary)' }}
+                    >
+                      {notes}
+                    </p>
+                  </div>
                 )}
                 {peptide.dosing.timeline?.length > 0 && (
                   <DosingTimeline timeline={peptide.dosing.timeline} accent={accent} tr={tr} />
@@ -617,7 +829,26 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
             </section>
           )}
 
-          {/* 11. Telegram CTA */}
+          {/* 11. Mini Calculator — always present, pre-filled with the
+              peptide's default vial / BAC / dose values. */}
+          {peptide.miniCalc && (
+            <section>
+              <SectionHeader
+                icon={Calculator}
+                eyebrow="Beépített kalkulátor"
+                title={`Adagolási segéd — ${peptide.name}`}
+                accent={accent}
+              />
+              <MiniCalc
+                defaultVialMg={peptide.miniCalc.vialMg ?? 5}
+                defaultBacMl={peptide.miniCalc.bacMl ?? 2}
+                defaultDoseMcg={peptide.miniCalc.doseMcg ?? 250}
+                accentColor={accent}
+              />
+            </section>
+          )}
+
+          {/* 12. Telegram CTA */}
           <section
             className="p-6 rounded-2xl flex flex-col sm:flex-row sm:items-center gap-5"
             style={{

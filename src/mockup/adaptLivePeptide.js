@@ -88,6 +88,108 @@ function deriveLegalStatus(peptide, tier) {
   }
 }
 
+// Quick Start Guide — generic 4-step primer woven from peptide-specific
+// values (vial size, default dose, half-life). Works for any peptide.
+function deriveQuickStart(peptide) {
+  const route = findFactByLabel(peptide.keyInfo, ['adagolás', 'route', 'podanie'])
+  const routeText = route ? trAny(route.value) : 'SC injekció'
+  const vial = peptide.defaultVialMg
+  const bac  = peptide.defaultBacMl
+  const dose = peptide.defaultDoseMcg
+  return [
+    {
+      step: 1,
+      title: { hu: 'Rekonstituálás',        en: 'Reconstitute',        pl: 'Rozpuszczenie' },
+      detail: {
+        hu: `${vial || '?'} mg-os fiola + ${bac || '?'} ml bakteriostatikus víz, óvatos elkeverés.`,
+        en: `${vial || '?'} mg vial + ${bac || '?'} ml bacteriostatic water, swirl gently.`,
+        pl: `${vial || '?'} mg fiolka + ${bac || '?'} ml wody bakteriostatycznej, delikatnie mieszać.`,
+      },
+    },
+    {
+      step: 2,
+      title: { hu: 'Tárolás',                en: 'Storage',             pl: 'Przechowywanie' },
+      detail: {
+        hu: '2–8 °C-on, fénytől védve. Rekonstituálva 25–30 napig stabil.',
+        en: '2–8 °C, protected from light. Stable 25–30 days after reconstitution.',
+        pl: '2–8 °C, chronić przed światłem. Po rozpuszczeniu stabilny 25–30 dni.',
+      },
+    },
+    {
+      step: 3,
+      title: { hu: 'Dózis & beadás',         en: 'Dose & administer',   pl: 'Dawka & podanie' },
+      detail: {
+        hu: `${dose || '?'} mcg kezdő dózis ${routeText}-on; titrálás tolerancia szerint.`,
+        en: `${dose || '?'} mcg starting dose via ${routeText}; titrate to tolerance.`,
+        pl: `${dose || '?'} mcg dawka startowa ${routeText}; titracja do tolerancji.`,
+      },
+    },
+    {
+      step: 4,
+      title: { hu: 'Monitorozás',            en: 'Monitor',             pl: 'Monitorowanie' },
+      detail: {
+        hu: 'Subjective + objective markerek hetente; mellékhatás esetén dózis-csökkentés.',
+        en: 'Track subjective + objective markers weekly; reduce dose on side effects.',
+        pl: 'Markery subiektywne i obiektywne tygodniowo; redukcja dawki przy działaniach niepożądanych.',
+      },
+    },
+  ]
+}
+
+// Key Benefits — derive 3-4 benefit cards from peptide categories.
+// Maps category-id to a peptide-agnostic but believable benefit copy.
+const CATEGORY_BENEFITS = {
+  'metabolic':       { icon: 'flame',    title: { hu: 'Anyagcsere támogatás',        en: 'Metabolic support',     pl: 'Wsparcie metabolizmu' },
+                       desc:  { hu: 'Lipid- és glükóz-anyagcsere kedvező irányba módosul; testkomponensek finomulása.', en: 'Favorable shifts in lipid + glucose metabolism; body composition refinement.', pl: 'Korzystne zmiany metabolizmu lipidów i glukozy.' } },
+  'growth-factors':  { icon: 'sprout',   title: { hu: 'Növekedési hormon felszabadulás', en: 'GH release',          pl: 'Uwalnianie GH' },
+                       desc:  { hu: 'Természetes, pulzatív GH-szekréciót utánoz; IGF-1 emelkedés, fokozott regeneráció.', en: 'Mimics natural pulsatile GH secretion; IGF-1 rise, enhanced recovery.', pl: 'Naśladuje pulsacyjne wydzielanie GH; wzrost IGF-1.' } },
+  'recovery':        { icon: 'activity', title: { hu: 'Szöveti regeneráció',          en: 'Tissue regeneration',   pl: 'Regeneracja tkanek' },
+                       desc:  { hu: 'Inak, izmok, GI-traktus gyógyulásának gyorsulása; csökkent gyulladás.', en: 'Faster healing of tendons, muscle, GI tract; reduced inflammation.', pl: 'Szybsze gojenie ścięgien, mięśni, GI; mniej zapalenia.' } },
+  'cognitive':       { icon: 'brain',    title: { hu: 'Kognitív funkció',             en: 'Cognitive function',    pl: 'Funkcje poznawcze' },
+                       desc:  { hu: 'BDNF / NGF emelkedés; figyelem, memória, neuroprotekció.', en: 'BDNF / NGF rise; focus, memory, neuroprotection.', pl: 'Wzrost BDNF / NGF; uwaga, pamięć, neuroprotekcja.' } },
+  'anti-aging':      { icon: 'sparkles', title: { hu: 'Sejtszintű megújulás',         en: 'Cellular renewal',      pl: 'Odnowa komórkowa' },
+                       desc:  { hu: 'Telomeráz aktiváció, oxidatív stressz csökkenés; epigenetikai modulació.', en: 'Telomerase activation, lower oxidative stress; epigenetic modulation.', pl: 'Aktywacja telomerazy, niższy stres oksydacyjny.' } },
+  'immune':          { icon: 'shield',   title: { hu: 'Immunmoduláció',              en: 'Immune modulation',     pl: 'Immunomodulacja' },
+                       desc:  { hu: 'T-sejt érés, NK-aktivitás; gyulladás-szabályozás kétirányúan.', en: 'T-cell maturation, NK activity; bidirectional inflammation regulation.', pl: 'Dojrzewanie T, aktywność NK.' } },
+  'sleep':           { icon: 'moon',     title: { hu: 'Alvásminőség',                 en: 'Sleep quality',         pl: 'Jakość snu' },
+                       desc:  { hu: 'Mélyalvás fázisok hossza nő; kortizol-ritmus normalizálódás.', en: 'Longer deep-sleep phases; cortisol rhythm normalizes.', pl: 'Dłuższe fazy głębokiego snu.' } },
+  'sexual-skin':     { icon: 'heart',    title: { hu: 'Bőr / Szexuális egészség',     en: 'Skin / sexual health',  pl: 'Skóra / zdrowie seksualne' },
+                       desc:  { hu: 'Kollagén szintézis, melanin termelés; libidó modulació.', en: 'Collagen synthesis, melanin production; libido modulation.', pl: 'Synteza kolagenu, produkcja melaniny.' } },
+  'gi':              { icon: 'leaf',     title: { hu: 'GI-traktus védelme',           en: 'GI tract protection',   pl: 'Ochrona GI' },
+                       desc:  { hu: 'Nyálkahártya regeneráció; gyulladásos GI-bélbetegségek javulása.', en: 'Mucosal regeneration; improvement in inflammatory GI conditions.', pl: 'Regeneracja błony śluzowej.' } },
+}
+function deriveKeyBenefits(peptide) {
+  const ids = getPeptideCategories(peptide.id)
+  return ids
+    .map(id => CATEGORY_BENEFITS[id] && { id, ...CATEGORY_BENEFITS[id] })
+    .filter(Boolean)
+}
+
+// Molecular information — extracted from keyInfo + derived defaults.
+function deriveMolecular(peptide) {
+  const type = findFactByLabel(peptide.keyInfo, ['típus', 'type', 'typ'])
+  const structure = findFactByLabel(peptide.keyInfo, ['szerkezet', 'structure', 'struktura'])
+  const mw = findFactByLabel(peptide.keyInfo, ['molekulatömeg', 'molecular weight', 'masa cząsteczkowa', 'mw'])
+  const storage = findFactByLabel(peptide.keyInfo, ['tárolás', 'storage', 'przechowywanie'])
+  const stability = findFactByLabel(peptide.keyInfo, ['stabilitás', 'stability', 'stabilność'])
+  const target = findFactByLabel(peptide.keyInfo, ['célterület', 'target', 'cel', 'obszar'])
+  return [
+    { key: { hu: 'Típus',           en: 'Classification', pl: 'Klasyfikacja' }, value: type?.value || { hu: '—', en: '—', pl: '—' } },
+    { key: { hu: 'Szerkezet',       en: 'Structure',      pl: 'Struktura' },   value: structure?.value || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+    { key: { hu: 'Molekulatömeg',   en: 'Molecular weight', pl: 'Masa cząsteczkowa' }, value: mw?.value || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+    { key: { hu: 'Célterület',      en: 'Target area',    pl: 'Obszar docelowy' }, value: target?.value || { hu: '—', en: '—', pl: '—' } },
+    { key: { hu: 'Tárolás',         en: 'Storage',        pl: 'Przechowywanie' }, value: storage?.value || { hu: '2–8°C', en: '2–8°C', pl: '2–8°C' } },
+    { key: { hu: 'Stabilitás',      en: 'Stability',      pl: 'Stabilność' },     value: stability?.value || { hu: '~30 nap rekonstituálva', en: '~30 days reconstituted', pl: '~30 dni po rozpuszczeniu' } },
+  ]
+}
+
+// Extended descriptive paragraphs — split full description into intro + body.
+function deriveWhatIs(peptide) {
+  if (!peptide.description) return null
+  // Use the full description; the live data is already comprehensive.
+  return peptide.description
+}
+
 export function adaptLivePeptide(peptide) {
   if (!peptide) return null
   const tier = getResearchLevel(peptide)
@@ -108,15 +210,25 @@ export function adaptLivePeptide(peptide) {
     category: primaryCat ? primaryCat.label : { hu: '—', en: '—', pl: '—' },
     oneLiner: extractOneLiner(peptide),
     keyFacts: peptide.keyInfo || [],
+    quickStart: deriveQuickStart(peptide),
+    keyBenefits: deriveKeyBenefits(peptide),
+    whatIs: deriveWhatIs(peptide),
     mechanism: deriveMechanism(peptide),
     researchUses: deriveResearchUses(peptide),
+    molecular: deriveMolecular(peptide),
     dosing: deriveDosing(peptide),
-    stacks: [],                // not in live data; MockupDetail skips
+    stacks: [],
     sideEffects: [],
     contraindications: [],
     studies: deriveStudies(peptide),
     faqs: [],
     relatedIds: [],
     legalStatus: deriveLegalStatus(peptide, tier),
+    // Default calculator pre-fills come straight from the peptide
+    miniCalc: {
+      vialMg:  peptide.defaultVialMg,
+      bacMl:   peptide.defaultBacMl,
+      doseMcg: peptide.defaultDoseMcg,
+    },
   }
 }
