@@ -8,8 +8,8 @@ export const UI = {
     'hero.tagline': 'Adagolási protokollok és kutatási források peptidekhez, tudományos alapon',
     'hero.subtitle': 'Tudományos alapokon',
     'hero.body.start': 'A peptidek biológiai hatásait tudományos alapokon vizsgáljuk. Kérdéseiddel fordulj ',
-    'hero.body.bold': 'tanácsadónkhoz',
-    'hero.body.end': ', aki Telegramon érhető el.',
+    'hero.body.bold': 'tanácsadóinkhoz',
+    'hero.body.end': ', akik Telegramon érhetők el.',
     'hero.cta.telegram': 'Kapcsolatfelvétel Telegramon',
     'hero.cta.tiktok': 'Kövess TikTokon',
     'hero.ticker': 'MolekulaX: Peptid edukáció  •  Klinikai források  •  Tudományalapú Útmutatás  •  Tanácsadás  •  ',
@@ -21,8 +21,8 @@ export const UI = {
     'edu.f1.desc': 'Az endogén és szintetikus peptidek hatásmechanizmusainak tudományos áttekintése a receptorkötéstől a sejtes jelzési utakig.',
     'edu.f2.title': 'Klinikai kutatások',
     'edu.f2.desc': 'Peer-reviewed tanulmányokra és PubMed hivatkozásokra építünk. Csak forrásolt adat.',
-    'edu.f3.title': 'Tanácsadó elérhetősége',
-    'edu.f3.desc': 'Ha kérdésed van a témával kapcsolatban, tedd fel tanácsadónknak Telegramon.',
+    'edu.f3.title': 'Tanácsadók elérhetősége',
+    'edu.f3.desc': 'Ha kérdésed van a témával kapcsolatban, tedd fel tanácsadóinknak Telegramon.',
 
     // Peptide Gallery
     'gal.eyebrow': 'Peptid Könyvtár',
@@ -209,8 +209,8 @@ export const UI = {
     // Telegram Section
     'tg.eyebrow': 'Kapcsolat',
     'tg.title': 'Van kérdésed a peptidekkel kapcsolatban?',
-    'tg.body': 'Tanácsadónk elérhető Telegramon. Írj nyugodtan, választ adunk a kérdéseidre.',
-    'tg.cta': 'Írj a tanácsadónak',
+    'tg.body': 'Tanácsadóink elérhetők Telegramon. Írj nyugodtan, választ adunk a kérdéseidre.',
+    'tg.cta': 'Írj a tanácsadóknak',
 
     // FAQ
     'faq.eyebrow': 'Gyakori kérdések',
@@ -244,8 +244,8 @@ export const UI = {
     'hero.tagline': 'Dosing protocols and research sources for peptides, grounded in science',
     'hero.subtitle': 'Grounded in science',
     'hero.body.start': 'We examine the biological effects of peptides on a scientific basis. Send your questions to ',
-    'hero.body.bold': 'our advisor',
-    'hero.body.end': ', who is available on Telegram.',
+    'hero.body.bold': 'our advisors',
+    'hero.body.end': ', who are available on Telegram.',
     'hero.cta.telegram': 'Contact us on Telegram',
     'hero.cta.tiktok': 'Follow on TikTok',
     'hero.ticker': 'MolekulaX: Peptide education  •  Clinical sources  •  Science-based guidance  •  Advisory  •  ',
@@ -257,8 +257,8 @@ export const UI = {
     'edu.f1.desc': 'A scientific overview of the mechanisms of action of endogenous and synthetic peptides, from receptor binding to cellular signalling pathways.',
     'edu.f2.title': 'Clinical research',
     'edu.f2.desc': 'We build on peer-reviewed studies and PubMed references. Sourced data only.',
-    'edu.f3.title': 'Advisor availability',
-    'edu.f3.desc': 'If you have a question on the topic, ask our advisor on Telegram.',
+    'edu.f3.title': 'Advisors available',
+    'edu.f3.desc': 'If you have a question on the topic, ask our advisors on Telegram.',
 
     // Peptide Gallery
     'gal.eyebrow': 'Peptide Library',
@@ -446,8 +446,8 @@ export const UI = {
     // Telegram Section
     'tg.eyebrow': 'Contact',
     'tg.title': 'Have a question about peptides?',
-    'tg.body': 'Our advisor is available on Telegram. Just write, and we’ll answer your questions.',
-    'tg.cta': 'Message the advisor',
+    'tg.body': 'Our advisors are available on Telegram. Just write, and we’ll answer your questions.',
+    'tg.cta': 'Message an advisor',
 
     // FAQ
     'faq.eyebrow': 'Frequently asked questions',
@@ -481,8 +481,8 @@ export const UI = {
     'hero.tagline': 'Protokoły dawkowania i źródła badawcze dotyczące peptydów, na podstawie naukowej',
     'hero.subtitle': 'Na podstawie naukowej',
     'hero.body.start': 'Badamy biologiczne działanie peptydów na podstawie naukowej. Z pytaniami zwróć się do ',
-    'hero.body.bold': 'naszego doradcy',
-    'hero.body.end': ', który jest dostępny na Telegramie.',
+    'hero.body.bold': 'naszych doradców',
+    'hero.body.end': ', którzy są dostępni na Telegramie.',
     'hero.cta.telegram': 'Kontakt przez Telegram',
     'hero.cta.tiktok': 'Obserwuj na TikToku',
     'hero.ticker': 'MolekulaX: Edukacja peptydowa  •  Źródła kliniczne  •  Wskazówki oparte na nauce  •  Doradztwo  •  ',
@@ -494,8 +494,8 @@ export const UI = {
     'edu.f1.desc': 'Naukowy przegląd mechanizmów działania peptydów endogennych i syntetycznych, od wiązania z receptorami po szlaki sygnałowe komórek.',
     'edu.f2.title': 'Badania kliniczne',
     'edu.f2.desc': 'Opieramy się na recenzowanych badaniach i odniesieniach PubMed. Wyłącznie dane ze źródeł.',
-    'edu.f3.title': 'Dostępność doradcy',
-    'edu.f3.desc': 'Jeśli masz pytanie, zadaj je naszemu doradcy na Telegramie.',
+    'edu.f3.title': 'Dostępność doradców',
+    'edu.f3.desc': 'Jeśli masz pytanie, zadaj je naszym doradcom na Telegramie.',
 
     // Peptide Gallery
     'gal.eyebrow': 'Biblioteka peptydów',
@@ -682,8 +682,8 @@ export const UI = {
     // Telegram Section
     'tg.eyebrow': 'Kontakt',
     'tg.title': 'Masz pytanie dotyczące peptydów?',
-    'tg.body': 'Nasz doradca jest dostępny na Telegramie. Po prostu napisz, a odpowiemy na pytania.',
-    'tg.cta': 'Napisz do doradcy',
+    'tg.body': 'Nasi doradcy są dostępni na Telegramie. Po prostu napisz, a odpowiemy na pytania.',
+    'tg.cta': 'Napisz do doradców',
 
     // FAQ
     'faq.eyebrow': 'Najczęstsze pytania',
