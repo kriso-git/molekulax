@@ -874,37 +874,83 @@ function GlassCard({ children, accent, className = '', style = {}, area, tilt = 
 // ─── Pathway constellation — quick-start as connected nodes ────────
 function Constellation({ steps, accent, tr }) {
   return (
-    <div className="relative pt-2">
-      {/* Connecting line */}
-      <div
-        className="absolute top-9 left-6 right-6 h-px"
-        style={{
-          background: `linear-gradient(90deg, ${accent}00, ${accent}66, ${accent}00)`,
-        }}
-      />
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div className="relative">
+      <style>{`
+        @keyframes mlxOrbPulse {
+          0%, 100% { transform: scale(1);   opacity: 0.55; }
+          50%      { transform: scale(1.6); opacity: 0; }
+        }
+        @keyframes mlxOrbHalo {
+          0%, 100% { transform: rotate(0deg); }
+          100%     { transform: rotate(360deg); }
+        }
+        @keyframes mlxOrbCore {
+          0%, 100% { transform: scale(1);   filter: brightness(1); }
+          50%      { transform: scale(1.08); filter: brightness(1.25); }
+        }
+        @keyframes mlxRailFlow {
+          0%   { background-position: 0% 0%; }
+          100% { background-position: 200% 0%; }
+        }
+      `}</style>
+      <div className="relative grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-0">
+        {/* Flowing connecting line */}
+        <div
+          className="hidden sm:block absolute top-7 left-8 right-8 h-[2px] rounded-full"
+          style={{
+            background: `linear-gradient(90deg, ${accent}00 0%, ${accent}aa 25%, ${accent}55 50%, ${accent}aa 75%, ${accent}00 100%)`,
+            backgroundSize: '200% 100%',
+            animation: 'mlxRailFlow 6s linear infinite',
+          }}
+        />
         {steps.map((s, i) => (
-          <div key={i} className="relative flex flex-col items-center text-center">
-            <div
-              className="relative w-12 h-12 rounded-full flex items-center justify-center mb-3 font-bold text-sm"
-              style={{
-                background: `radial-gradient(circle at 30% 30%, ${accent}aa, ${accent}33)`,
-                border: `1px solid ${accent}88`,
-                color: '#fff',
-                boxShadow: `0 0 24px -6px ${accent}aa, inset 0 1px 0 rgba(255,255,255,0.2)`,
-              }}
-            >
-              <span style={{ textShadow: '0 1px 4px rgba(0,0,0,0.6)' }}>{s.step}</span>
-              {/* Orbit dot */}
+          <div key={i} className="relative flex flex-col items-center text-center px-2">
+            {/* Orb container with rotating halo + pulse + core */}
+            <div className="relative w-14 h-14 mb-3 z-10 flex items-center justify-center">
+              {/* Rotating conic halo */}
               <span
-                className="absolute -top-1 -right-1 w-2 h-2 rounded-full animate-pulse"
-                style={{ background: accent, boxShadow: `0 0 10px ${accent}` }}
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: `conic-gradient(from 0deg, ${accent}00, ${accent}cc, ${accent}33 60%, ${accent}aa, ${accent}00)`,
+                  mask: 'radial-gradient(circle, transparent 56%, black 58%, black 96%, transparent 100%)',
+                  WebkitMask: 'radial-gradient(circle, transparent 56%, black 58%, black 96%, transparent 100%)',
+                  animation: `mlxOrbHalo ${8 + i}s linear infinite`,
+                  filter: 'blur(0.4px)',
+                }}
               />
+              {/* Outer pulse ring */}
+              <span
+                className="absolute inset-1.5 rounded-full pointer-events-none"
+                style={{
+                  border: `1px solid ${accent}88`,
+                  animation: `mlxOrbPulse 2.8s ease-out ${i * 0.35}s infinite`,
+                }}
+              />
+              {/* Core glass orb */}
+              <span
+                className="relative w-9 h-9 rounded-full flex items-center justify-center"
+                style={{
+                  background: `radial-gradient(circle at 30% 30%, #ffffffd0, ${accent} 55%, ${accent}66 100%)`,
+                  border: `1px solid ${accent}`,
+                  boxShadow: `0 0 22px -2px ${accent}cc, inset 0 1px 0 rgba(255,255,255,0.5)`,
+                  animation: `mlxOrbCore 3.6s ease-in-out ${i * 0.25}s infinite`,
+                }}
+              >
+                <span
+                  className="text-[10px] font-black"
+                  style={{
+                    color: '#0a0a1a',
+                    textShadow: '0 1px 2px rgba(255,255,255,0.5)',
+                  }}
+                >
+                  {String(s.step ?? i + 1).padStart(2, '0')}
+                </span>
+              </span>
             </div>
-            <p className="text-[11px] font-bold tracking-wide uppercase mb-1.5" style={{ color: accent }}>
+            <p className="text-[10px] tracking-[0.22em] uppercase font-bold mb-2" style={{ color: accent }}>
               {tr(s.title)}
             </p>
-            <p className="text-[12px] leading-snug" style={{ color: 'var(--text-muted)' }}>
+            <p className="text-[11.5px] leading-snug" style={{ color: 'var(--text-secondary)' }}>
               {tr(s.detail)}
             </p>
           </div>
