@@ -89,8 +89,13 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
 
       {/* Image — square frame, fills the tile width so every vial photo
           renders at the same visual size. No hover scale; only the parent
-          tile lifts. */}
-      <div className="w-full aspect-square self-center relative z-10">
+          tile lifts. `overflow-hidden` + explicit aspectRatio bullet-proof
+          the SVG-fallback case (intrinsic viewBox 110×200 can't blow up
+          the box). */}
+      <div
+        className="w-full self-center relative z-10 overflow-hidden"
+        style={{ aspectRatio: '1 / 1' }}
+      >
         <VialImage
           accentColor={accent}
           name={peptide.name}
@@ -314,7 +319,7 @@ export default function PeptideGallery() {
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5 items-start">
             {top10.map(peptide => (
               <PeptideTile
                 key={peptide.id}
@@ -564,7 +569,7 @@ export default function PeptideGallery() {
                     {t('gal.all.empty')}
                   </div>
                 ) : (
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 items-start">
                     {filteredAll.map(peptide => (
                       <PeptideTile
                         key={peptide.id}
