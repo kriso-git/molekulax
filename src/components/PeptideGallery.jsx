@@ -128,8 +128,9 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
         {tr(levelMeta.label)}
       </p>
 
-      {/* Research Uses chips — chip size shrinks when more than 2 categories
-          are present so the tile height stays close to the 1-2 chip baseline. */}
+      {/* Research Uses chips — max 2 visible, "+N" badge for overflow.
+          Keeps the tile from elongating when a peptide has 3+ categories;
+          the full list is always available in the modal. */}
       <div className="relative z-10 flex flex-col gap-2">
         <p
           className="text-[9px] tracking-[0.25em] uppercase font-semibold"
@@ -137,7 +138,7 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
         >
           {t('gal.uses')}
         </p>
-        <div className={`flex flex-wrap ${catIds.length > 2 ? 'gap-1' : 'gap-1.5'}`}>
+        <div className="flex flex-wrap gap-1.5">
           {catIds.length === 0 ? (
             <span
               className="text-[10px] px-2 py-0.5 rounded-full font-mono tracking-wide"
@@ -150,29 +151,38 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
               —
             </span>
           ) : (
-            catIds.map(catId => {
-              const cat = CATEGORIES.find(c => c.id === catId)
-              if (!cat) return null
-              const dense = catIds.length > 2
-              return (
+            <>
+              {catIds.slice(0, 2).map(catId => {
+                const cat = CATEGORIES.find(c => c.id === catId)
+                if (!cat) return null
+                return (
+                  <span
+                    key={catId}
+                    className="text-[10px] px-2 py-0.5 rounded-full font-medium tracking-wide whitespace-nowrap"
+                    style={{
+                      background: `${cat.accent}1a`,
+                      border: `1px solid ${cat.accent}55`,
+                      color: cat.accent,
+                    }}
+                  >
+                    {tr(cat.label)}
+                  </span>
+                )
+              })}
+              {catIds.length > 2 && (
                 <span
-                  key={catId}
-                  className={
-                    'rounded-full font-medium whitespace-nowrap ' +
-                    (dense
-                      ? 'text-[8.5px] px-1.5 py-[1px] tracking-tight leading-snug'
-                      : 'text-[10px] px-2 py-0.5 tracking-wide')
-                  }
+                  className="text-[10px] px-2 py-0.5 rounded-full font-mono tracking-wide whitespace-nowrap"
                   style={{
-                    background: `${cat.accent}1a`,
-                    border: `1px solid ${cat.accent}55`,
-                    color: cat.accent,
+                    background: 'var(--tint-row)',
+                    border: '1px solid var(--border-soft)',
+                    color: 'var(--text-muted)',
                   }}
+                  aria-label={`+${catIds.length - 2} további kategória`}
                 >
-                  {tr(cat.label)}
+                  +{catIds.length - 2}
                 </span>
-              )
-            })
+              )}
+            </>
           )}
         </div>
       </div>
