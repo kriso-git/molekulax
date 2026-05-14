@@ -72,17 +72,17 @@ export default function Hero() {
                        tracking-widest uppercase transition-all duration-300 active:scale-95
                        hover:shadow-[0_0_28px_rgba(255,255,255,0.08)]"
             style={{
-              background: 'rgba(255,255,255,0.06)',
-              border: '1px solid rgba(255,255,255,0.14)',
-              color: '#e5e7eb',
+              background: 'var(--tint-medium)',
+              border: '1px solid var(--tint-medium-border)',
+              color: 'var(--text-secondary)',
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.background = 'rgba(255,255,255,0.10)'
-              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.25)'
+              e.currentTarget.style.background = 'var(--tint-strong)'
+              e.currentTarget.style.borderColor = 'var(--border-accent)'
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.background = 'rgba(255,255,255,0.06)'
-              e.currentTarget.style.borderColor = 'rgba(255,255,255,0.14)'
+              e.currentTarget.style.background = 'var(--tint-medium)'
+              e.currentTarget.style.borderColor = 'var(--tint-medium-border)'
             }}
           >
             <TikTokIcon size={15} />

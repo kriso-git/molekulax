@@ -102,19 +102,20 @@ const ILLUSTRATIONS = {
 const ILLUSTRATION_BY_INDEX = ['healing', 'growth', 'muscle', 'metabolic', 'longevity', 'nervous', 'cosmetic', 'immune']
 
 function CategoryVisual({ cat, idx }) {
-  // First category uses the photo of "Gyógyulást segítő peptidek" — full bleed.
+  const { tr } = useLang()
   if (cat.image) {
+    const altText = tr(cat.title)
     return (
       <div className="relative w-full h-full overflow-hidden">
         <img
           src={cat.image}
-          alt=""
+          alt={altText}
           className="absolute inset-0 w-full h-full object-cover"
           loading="lazy"
           draggable="false"
         />
         <div className="absolute inset-0" style={{
-          background: `radial-gradient(ellipse at 50% 50%, ${cat.color}14 0%, rgba(7,7,30,0.25) 80%)`,
+          background: `radial-gradient(ellipse at 50% 50%, ${cat.color}14 0%, var(--effect-visual-vignette) 80%)`,
         }} />
       </div>
     )
@@ -147,15 +148,15 @@ function Modal({ cat, idx, onClose }) {
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
-      style={{ background: 'rgba(3,3,18,0.85)', backdropFilter: 'blur(12px)' }}
+      style={{ background: 'var(--bg-modal-backdrop)', backdropFilter: 'blur(12px)' }}
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
       <div
         className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl"
         style={{
-          background: 'rgba(10,10,30,0.97)',
+          background: 'var(--bg-elevated)',
           border: `1px solid ${color}35`,
-          boxShadow: `0 0 80px ${glow}, 0 0 0 1px rgba(255,255,255,0.04) inset`,
+          boxShadow: `0 0 80px ${glow}, 0 0 0 1px var(--tint-soft) inset`,
         }}
       >
         <div className="relative h-56 overflow-hidden rounded-t-3xl">
@@ -169,13 +170,13 @@ function Modal({ cat, idx, onClose }) {
           <div className="absolute bottom-4 right-4 w-1.5 h-1.5 rounded-full" style={{ background: color, opacity: 0.4 }} />
           <div className="absolute top-0 left-0 right-0 h-px" style={{ background: `linear-gradient(90deg, transparent, ${color}60, transparent)` }} />
           <div className="absolute bottom-0 left-0 right-0 h-16"
-            style={{ background: 'linear-gradient(to bottom, transparent, rgba(10,10,30,0.97))' }} />
+            style={{ background: 'linear-gradient(to bottom, transparent, var(--bg-modal-fade))' }} />
           <button
             onClick={onClose}
             className="absolute top-4 right-4 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200"
-            style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.12)' }}
-            onMouseEnter={e => e.currentTarget.style.background='rgba(255,255,255,0.15)'}
-            onMouseLeave={e => e.currentTarget.style.background='rgba(255,255,255,0.08)'}
+            style={{ background: 'var(--tint-strong)', border: '1px solid var(--tint-strong-border)' }}
+            onMouseEnter={e => e.currentTarget.style.background='var(--tint-medium-border)'}
+            onMouseLeave={e => e.currentTarget.style.background='var(--tint-strong)'}
             aria-label={t('modal.close')}
           >
             <X size={15} className="text-gray-400" />
@@ -285,9 +286,9 @@ function Modal({ cat, idx, onClose }) {
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 inline-flex items-center justify-center gap-2.5 py-3 rounded-full text-sm font-semibold tracking-widest uppercase transition-all duration-300"
-              style={{ background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.14)', color: '#e5e7eb' }}
-              onMouseEnter={e => { e.currentTarget.style.background='rgba(255,255,255,0.10)'; e.currentTarget.style.borderColor='rgba(255,255,255,0.25)' }}
-              onMouseLeave={e => { e.currentTarget.style.background='rgba(255,255,255,0.06)'; e.currentTarget.style.borderColor='rgba(255,255,255,0.14)' }}
+              style={{ background: 'var(--tint-medium)', border: '1px solid var(--tint-medium-border)', color: 'var(--text-secondary)' }}
+              onMouseEnter={e => { e.currentTarget.style.background='var(--tint-strong)'; e.currentTarget.style.borderColor='var(--border-accent)' }}
+              onMouseLeave={e => { e.currentTarget.style.background='var(--tint-medium)'; e.currentTarget.style.borderColor='var(--tint-medium-border)' }}
             >
               <TikTokIcon size={14} />
               TikTok
@@ -328,7 +329,7 @@ export default function PeptideEffects() {
               <div
                 key={i}
                 className="group rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 select-none"
-                style={{ border: '1px solid rgba(255,255,255,0.06)', background: 'rgba(255,255,255,0.02)' }}
+                style={{ border: '1px solid var(--tint-soft-border)', background: 'var(--tint-soft)' }}
                 onClick={() => setActive({ cat, idx: i })}
                 onMouseEnter={e => {
                   e.currentTarget.style.border = `1px solid ${cat.color}40`
@@ -336,15 +337,15 @@ export default function PeptideEffects() {
                   e.currentTarget.style.transform = 'translateY(-2px)'
                 }}
                 onMouseLeave={e => {
-                  e.currentTarget.style.border = '1px solid rgba(255,255,255,0.06)'
+                  e.currentTarget.style.border = '1px solid var(--tint-soft-border)'
                   e.currentTarget.style.boxShadow = 'none'
                   e.currentTarget.style.transform = 'translateY(0)'
                 }}
               >
-                <div className="relative h-52 overflow-hidden" style={{ background: 'rgba(7,7,30,0.6)' }}>
+                <div className="relative h-52 overflow-hidden" style={{ background: 'var(--bg-tile)' }}>
                   <CategoryVisual cat={cat} idx={i} />
                   <div className="absolute bottom-0 left-0 right-0 h-10"
-                    style={{ background: 'linear-gradient(to bottom, transparent, rgba(7,7,30,0.95))' }} />
+                    style={{ background: 'linear-gradient(to bottom, transparent, var(--bg-tile-fade))' }} />
                   <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] tracking-widest uppercase font-semibold"
                       style={{ background: `${cat.color}22`, border: `1px solid ${cat.color}40`, color: cat.color }}>

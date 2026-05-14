@@ -24,7 +24,7 @@ export const EFFECT_CATEGORIES = [
     ],
     peptides: ['BPC-157', 'TB-500', 'KPV', 'LL-37'],
     peptideIds: ['bpc-157', 'tb-500', null, null],
-    image: '/peptides/Gyógyulástsegítőpeptidek.png',
+    image: '/peptides/gyogyulastsegitopeptidek.png',
   },
   {
     color: '#10b981',
@@ -48,6 +48,7 @@ export const EFFECT_CATEGORIES = [
     ],
     peptides: ['CJC-1295', 'Ipamorelin', 'GHRP-2', 'Sermorelin'],
     peptideIds: ['cjc-1295', 'ipamorelin', null, 'sermorelin'],
+    image: '/peptides/novekedesihormonserkentopeptidek.png',
   },
   {
     color: '#f97316',
@@ -71,6 +72,7 @@ export const EFFECT_CATEGORIES = [
     ],
     peptides: ['IGF-1 LR3', 'MGF', 'Follistatin 344', 'PEG-MGF'],
     peptideIds: [null, null, null, null],
+    image: '/peptides/izomepitopeptidek.png',
   },
   {
     color: '#eab308',
@@ -94,6 +96,7 @@ export const EFFECT_CATEGORIES = [
     ],
     peptides: ['Retatrutide', 'Semaglutide', 'Tirzepatide', 'MOTS-c'],
     peptideIds: ['retatrutide', null, null, null],
+    image: '/peptides/anyagcserepeptidek.png',
   },
   {
     color: '#14b8a6',
@@ -117,6 +120,7 @@ export const EFFECT_CATEGORIES = [
     ],
     peptides: ['Epitalon', 'GHK-Cu', 'Thymalin', 'SS-31'],
     peptideIds: ['epithalon', 'ghk-cu', null, null],
+    image: '/peptides/longevitypeptidek.png',
   },
   {
     color: '#a855f7',
@@ -140,6 +144,7 @@ export const EFFECT_CATEGORIES = [
     ],
     peptides: ['Selank', 'Semax', 'Dihexa', 'NAP (AL-108)'],
     peptideIds: [null, null, null, null],
+    image: '/peptides/idegrendszerttamogatopeptidek.png',
   },
   {
     color: '#ec4899',
@@ -163,6 +168,7 @@ export const EFFECT_CATEGORIES = [
     ],
     peptides: ['GHK-Cu', 'Argireline', 'Matrixyl 3000', 'Leuphasyl'],
     peptideIds: ['ghk-cu', null, null, null],
+    image: '/peptides/kozmetikaipeptidek.png',
   },
   {
     color: '#3b82f6',
@@ -186,5 +192,6 @@ export const EFFECT_CATEGORIES = [
     ],
     peptides: ['Thymosin α-1', 'TB-4', 'LL-37', 'Thymalin'],
     peptideIds: [null, 'tb-500', null, null],
+    image: '/peptides/immunrendszerterositopeptidek.png',
   },
 ]

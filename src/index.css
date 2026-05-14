@@ -18,6 +18,10 @@
   --bg-base:           #07071e;
   --bg-elevated:       rgba(10, 10, 28, 0.97);
   --bg-overlay:        rgba(4, 4, 20, 0.88);
+  --bg-tile:           rgba(7, 7, 30, 0.6);
+  --bg-tile-fade:      rgba(7, 7, 30, 0.95);
+  --bg-modal-fade:     rgba(10, 10, 30, 0.97);
+  --bg-modal-backdrop: rgba(3, 3, 18, 0.85);
   --text-primary:      #ffffff;
   --text-secondary:    #e5e7eb;
   --text-muted:        #9ca3af;
@@ -33,6 +37,18 @@
   --shadow-accent:     rgba(129, 140, 248, 0.18);
   --accent:            #818cf8;
   --accent-strong:     #a78bfa;
+  /* Inline-style tinted surfaces. In dark theme: white-tinted overlays.
+     In light theme: dark-tinted overlays. Used in JSX `style` props. */
+  --tint-soft:         rgba(255, 255, 255, 0.02);
+  --tint-soft-border:  rgba(255, 255, 255, 0.06);
+  --tint-medium:       rgba(255, 255, 255, 0.06);
+  --tint-medium-border:rgba(255, 255, 255, 0.14);
+  --tint-strong:       rgba(255, 255, 255, 0.08);
+  --tint-strong-border:rgba(255, 255, 255, 0.12);
+  --tint-row:          rgba(255, 255, 255, 0.03);
+  /* Image vignette used inside CategoryVisual. Strong dark fade in dark
+     theme; nearly transparent in light theme so the photo stays bright. */
+  --effect-visual-vignette: rgba(7, 7, 30, 0.25);
   color-scheme: dark;
 }
 
@@ -40,6 +56,10 @@
   --bg-base:           #f4f6fb;
   --bg-elevated:       rgba(255, 255, 255, 0.96);
   --bg-overlay:        rgba(224, 226, 240, 0.85);
+  --bg-tile:           rgba(244, 246, 251, 0.6);
+  --bg-tile-fade:      rgba(244, 246, 251, 0.95);
+  --bg-modal-fade:     rgba(255, 255, 255, 0.97);
+  --bg-modal-backdrop: rgba(8, 14, 36, 0.55);
   --text-primary:      #0f172a;
   --text-secondary:    #1f2937;
   --text-muted:        #4b5563;
@@ -55,6 +75,14 @@
   --shadow-accent:     rgba(99, 102, 241, 0.22);
   --accent:            #4f46e5;
   --accent-strong:     #6d28d9;
+  --tint-soft:         rgba(15, 23, 42, 0.04);
+  --tint-soft-border:  rgba(15, 23, 42, 0.08);
+  --tint-medium:       rgba(15, 23, 42, 0.05);
+  --tint-medium-border:rgba(15, 23, 42, 0.18);
+  --tint-strong:       rgba(15, 23, 42, 0.08);
+  --tint-strong-border:rgba(15, 23, 42, 0.22);
+  --tint-row:          rgba(15, 23, 42, 0.04);
+  --effect-visual-vignette: rgba(244, 246, 251, 0.05);
   color-scheme: light;
 }
 
@@ -130,10 +158,13 @@
 [data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.12\)\] { border-color: rgba(15,23,42,0.12); }
 [data-theme="light"] .border-\[rgba\(129\,140\,248\,0\.08\)\] { border-color: rgba(99,102,241,0.16); }
 [data-theme="light"] .border-\[rgba\(129\,140\,248\,0\.18\)\] { border-color: rgba(99,102,241,0.30); }
+[data-theme="light"] .hover\:border-\[rgba\(255\,255\,255\,0\.09\)\]:hover { border-color: rgba(15,23,42,0.14); }
 [data-theme="light"] .hover\:border-\[rgba\(255\,255\,255\,0\.15\)\]:hover { border-color: rgba(15,23,42,0.20); }
 [data-theme="light"] .hover\:border-\[rgba\(255\,255\,255\,0\.18\)\]:hover { border-color: rgba(15,23,42,0.24); }
 [data-theme="light"] .hover\:bg-\[rgba\(255\,255\,255\,0\.03\)\]:hover { background-color: rgba(15,23,42,0.04); }
 [data-theme="light"] .hover\:bg-white\/\[0\.07\]:hover { background-color: rgba(15,23,42,0.06); }
+[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.08\)\] { border-color: rgba(15,23,42,0.12); }
+[data-theme="light"] .via-\[rgba\(255\,255\,255\,0\.12\)\] { --tw-gradient-via: rgba(15,23,42,0.18) var(--tw-gradient-via-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
 
 /* Soft surfaces using bracket utilities */
 [data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.03\)\] { background-color: rgba(15,23,42,0.04); }
@@ -154,6 +185,52 @@
 [data-theme="light"] .accent-glow {
   text-shadow: 0 0 28px rgba(99, 102, 241, 0.35);
 }
+
+/* ── Tailwind `bg-white/[α]` and `border-white/[α]` (and hover variants)
+   compile to background-color: rgb(255 255 255 / α). In light mode those
+   white overlays disappear; flip them to dark overlays. ────────────── */
+[data-theme="light"] .bg-white\/\[0\.02\] { background-color: rgba(15,23,42,0.04); }
+[data-theme="light"] .bg-white\/\[0\.03\] { background-color: rgba(15,23,42,0.05); }
+[data-theme="light"] .bg-white\/\[0\.04\] { background-color: rgba(15,23,42,0.06); }
+[data-theme="light"] .bg-white\/\[0\.05\] { background-color: rgba(15,23,42,0.06); }
+[data-theme="light"] .bg-white\/\[0\.06\] { background-color: rgba(15,23,42,0.06); }
+[data-theme="light"] .bg-white\/\[0\.07\] { background-color: rgba(15,23,42,0.07); }
+[data-theme="light"] .bg-white\/\[0\.08\] { background-color: rgba(15,23,42,0.08); }
+[data-theme="light"] .bg-white\/\[0\.10\] { background-color: rgba(15,23,42,0.10); }
+
+[data-theme="light"] .hover\:bg-white\/\[0\.02\]:hover { background-color: rgba(15,23,42,0.04); }
+[data-theme="light"] .hover\:bg-white\/\[0\.07\]:hover { background-color: rgba(15,23,42,0.08); }
+
+[data-theme="light"] .border-white\/\[0\.04\] { border-color: rgba(15,23,42,0.08); }
+[data-theme="light"] .border-white\/\[0\.05\] { border-color: rgba(15,23,42,0.10); }
+[data-theme="light"] .border-white\/\[0\.06\] { border-color: rgba(15,23,42,0.10); }
+[data-theme="light"] .border-white\/\[0\.07\] { border-color: rgba(15,23,42,0.10); }
+[data-theme="light"] .border-white\/\[0\.08\] { border-color: rgba(15,23,42,0.12); }
+
+[data-theme="light"] .hover\:border-white\/\[0\.10\]:hover { border-color: rgba(15,23,42,0.14); }
+
+/* Inputs styled with Tailwind utilities — keep text dark on light bg. */
+[data-theme="light"] input.text-white,
+[data-theme="light"] select.text-white,
+[data-theme="light"] textarea.text-white { color: #0f172a; }
+[data-theme="light"] input.text-white::placeholder,
+[data-theme="light"] textarea.text-white::placeholder { color: #94a3b8; }
+
+/* Bare `bg-[rgba(0,0,0,…)]` darks used inside MiniCalc — flip to light. */
+[data-theme="light"] .bg-\[rgba\(0\,0\,0\,0\.35\)\] { background-color: rgba(15,23,42,0.06); }
+[data-theme="light"] .bg-\[rgba\(0\,0\,0\,0\.25\)\] { background-color: rgba(15,23,42,0.04); }
+
+/* `bg-[#0f0f0f]` (Calculator <option>) — best we can do for native dropdowns. */
+[data-theme="light"] .bg-\[\#0f0f0f\] { background-color: #f4f6fb; color: #0f172a; }
+
+/* Gradient text used on Hero (white-to-something) — ensure the white
+   stop becomes dark in light mode so the title is readable. */
+[data-theme="light"] .from-white { --tw-gradient-from: #0f172a var(--tw-gradient-from-position); }
+[data-theme="light"] .to-white   { --tw-gradient-to:   #0f172a var(--tw-gradient-to-position); }
+
+/* FloatingScientific decorative SVGs use stroke/fill="white". Invert in
+   light mode so the white linework becomes dark and stays visible. */
+[data-theme="light"] .floating-deco { filter: invert(1) hue-rotate(180deg); }
 
 /* ── Ticker tape (Hero szalag) ──────────────────────────────────────────── */
 @keyframes ticker {

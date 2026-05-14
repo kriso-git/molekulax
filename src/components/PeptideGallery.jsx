@@ -45,8 +45,8 @@ function PeptideTile({ peptide, featured, onSelect, t, tr }) {
         <div
           className="absolute top-3 right-3 z-20 px-2 py-0.5 rounded-full text-[8px] tracking-[0.15em] uppercase text-gray-500"
           style={{
-            background: 'rgba(255,255,255,0.04)',
-            border: '1px dashed rgba(255,255,255,0.12)',
+            background: 'var(--tint-soft)',
+            border: '1px dashed var(--tint-medium-border)',
           }}
         >
           {t('gal.all.placeholder')}
@@ -242,8 +242,9 @@ export default function PeptideGallery() {
                       className="w-full pl-11 pr-4 py-3 rounded-xl text-white text-sm placeholder:text-gray-600
                                  focus:outline-none focus:border-[#818cf8]/50 transition-colors"
                       style={{
-                        background: 'rgba(255,255,255,0.03)',
-                        border: '1px solid rgba(255,255,255,0.08)',
+                        background: 'var(--tint-row)',
+                        border: '1px solid var(--border-soft)',
+                        color: 'var(--text-primary)',
                       }}
                     />
                   </div>
@@ -254,12 +255,13 @@ export default function PeptideGallery() {
                     style={{
                       background: showFilters || activeFilters.length > 0
                         ? 'rgba(129,140,248,0.12)'
-                        : 'rgba(255,255,255,0.03)',
+                        : 'var(--tint-row)',
                       border: `1px solid ${
                         showFilters || activeFilters.length > 0
                           ? 'rgba(129,140,248,0.5)'
-                          : 'rgba(255,255,255,0.08)'
+                          : 'var(--border-soft)'
                       }`,
+                      color: 'var(--text-primary)',
                     }}
                     aria-expanded={showFilters}
                   >
@@ -286,8 +288,8 @@ export default function PeptideGallery() {
                     <div
                       className="p-5 rounded-xl"
                       style={{
-                        background: 'rgba(255,255,255,0.02)',
-                        border: '1px solid rgba(255,255,255,0.06)',
+                        background: 'var(--tint-soft)',
+                        border: '1px solid var(--tint-soft-border)',
                       }}
                     >
                       <div className="flex items-center justify-between mb-3">
@@ -310,9 +312,9 @@ export default function PeptideGallery() {
                           onClick={clearFilters}
                           className="px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
                           style={{
-                            background: activeFilters.length === 0 ? 'rgba(129,140,248,0.18)' : 'rgba(255,255,255,0.03)',
-                            border: `1px solid ${activeFilters.length === 0 ? '#818cf8' : 'rgba(255,255,255,0.08)'}`,
-                            color: activeFilters.length === 0 ? '#818cf8' : '#9ca3af',
+                            background: activeFilters.length === 0 ? 'rgba(129,140,248,0.18)' : 'var(--tint-row)',
+                            border: `1px solid ${activeFilters.length === 0 ? 'var(--accent)' : 'var(--border-soft)'}`,
+                            color: activeFilters.length === 0 ? 'var(--accent)' : 'var(--text-muted)',
                           }}
                         >
                           {t('gal.filter.all')}
@@ -326,9 +328,9 @@ export default function PeptideGallery() {
                               onClick={() => toggleFilter(cat.id)}
                               className="px-3 py-1.5 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
                               style={{
-                                background: active ? `${cat.accent}22` : 'rgba(255,255,255,0.03)',
-                                border: `1px solid ${active ? cat.accent : 'rgba(255,255,255,0.08)'}`,
-                                color: active ? cat.accent : '#9ca3af',
+                                background: active ? `${cat.accent}22` : 'var(--tint-row)',
+                                border: `1px solid ${active ? cat.accent : 'var(--border-soft)'}`,
+                                color: active ? cat.accent : 'var(--text-muted)',
                                 boxShadow: active ? `0 0 12px ${cat.accent}30` : 'none',
                               }}
                             >

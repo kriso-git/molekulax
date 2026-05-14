@@ -137,7 +137,7 @@ const DECORATIONS = [
 export default function FloatingScientific() {
   return (
     <div
-      className="fixed inset-0 pointer-events-none overflow-hidden select-none"
+      className="floating-deco fixed inset-0 pointer-events-none overflow-hidden select-none"
       style={{ zIndex: 1 }}
       aria-hidden="true"
     >

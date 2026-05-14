@@ -189,7 +189,7 @@ function ReconTab() {
 
         <div
           className="mt-4 rounded-xl p-4 flex items-start gap-3"
-          style={{ background: 'rgba(255,255,255,0.02)', border: '1px solid rgba(255,255,255,0.05)' }}
+          style={{ background: 'var(--tint-soft)', border: '1px solid var(--tint-soft-border)' }}
         >
           <Info size={14} className="text-gray-600 shrink-0 mt-0.5" />
           <p className="text-gray-600 text-xs leading-relaxed">
@@ -263,7 +263,7 @@ function RefTab() {
   const { t, tr } = useLang()
   const cols = t('calc.refCols').split('|')
   return (
-    <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid rgba(255,255,255,0.06)' }}>
+    <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid var(--tint-soft-border)' }}>
       <table className="w-full text-sm min-w-[600px]">
         <thead>
           <tr style={{ background: 'rgba(99,102,241,0.07)' }}>

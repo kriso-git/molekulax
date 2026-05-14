@@ -123,8 +123,8 @@ export default function PeptideModal({ peptide, onClose }) {
                     className="group flex flex-col gap-2 p-4 rounded-xl transition-all duration-300
                                hover:scale-[1.02]"
                     style={{
-                      background: 'rgba(255,255,255,0.03)',
-                      border: '1px solid rgba(255,255,255,0.06)',
+                      background: 'var(--tint-row)',
+                      border: '1px solid var(--tint-soft-border)',
                     }}
                     onMouseEnter={e => {
                       e.currentTarget.style.borderColor = `${accentColor}40`
@@ -132,8 +132,8 @@ export default function PeptideModal({ peptide, onClose }) {
                       e.currentTarget.style.boxShadow   = `0 0 20px ${accentColor}12`
                     }}
                     onMouseLeave={e => {
-                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'
-                      e.currentTarget.style.background  = 'rgba(255,255,255,0.03)'
+                      e.currentTarget.style.borderColor = 'var(--tint-soft-border)'
+                      e.currentTarget.style.background  = 'var(--tint-row)'
                       e.currentTarget.style.boxShadow   = 'none'
                     }}
                   >

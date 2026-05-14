@@ -130,7 +130,11 @@ export default function MoleculeBackground() {
 
       ctx.clearRect(0, 0, W, H)
 
-      ctx.fillStyle = '#07071e'
+      const themeBg = (
+        getComputedStyle(document.documentElement)
+          .getPropertyValue('--bg-base').trim() || '#07071e'
+      )
+      ctx.fillStyle = themeBg
       ctx.fillRect(0, 0, W, H)
 
       const g1 = ctx.createRadialGradient(W * 0.02, H * 0.02, 0, W * 0.02, H * 0.02, W * 0.55)
