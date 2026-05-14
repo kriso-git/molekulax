@@ -10,7 +10,7 @@ import { TIER_META } from './sampleData'
 import { ShieldCheck, Clock, Syringe, FlaskConical, ArrowUpRight } from 'lucide-react'
 
 export default function MockupCard({ peptide, onOpen }) {
-  const { tr } = useLang()
+  const { t, tr } = useLang()
   const meta = TIER_META[peptide.tier]
   const accent = peptide.accentColor
 
@@ -164,7 +164,7 @@ export default function MockupCard({ peptide, onOpen }) {
         style={{ color: 'var(--accent)' }}
       >
         <FlaskConical size={10} strokeWidth={2.5} />
-        <span>Adatlap</span>
+        <span>{t('mockup.card.cta')}</span>
         <ArrowUpRight
           size={11}
           strokeWidth={2.5}

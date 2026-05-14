@@ -9,6 +9,7 @@ import { ArrowLeft, Sparkles } from 'lucide-react'
 import PeptideGallery from '../components/PeptideGallery'
 import MockupDetail from './MockupDetail'
 import { adaptLivePeptide } from './adaptLivePeptide'
+import { useLang } from '../i18n/LanguageContext'
 
 // Bridge: receives live peptide from PeptideGallery, adapts it, renders
 // the mockup detail.
@@ -19,6 +20,7 @@ function MockupDetailBridge({ peptide, onClose }) {
 }
 
 export default function PepPediaMockup() {
+  const { t } = useLang()
   return (
     <div className="relative min-h-screen page-root">
       {/* Preview-mode banner */}
@@ -32,7 +34,7 @@ export default function PepPediaMockup() {
           onMouseLeave={e => (e.currentTarget.style.color = 'var(--text-muted)')}
         >
           <ArrowLeft size={12} strokeWidth={2.5} />
-          Vissza a fő oldalra
+          {t('mockup.back')}
         </a>
 
         <div
@@ -51,10 +53,10 @@ export default function PepPediaMockup() {
             </span>
             <div>
               <p className="text-xs font-bold tracking-wide" style={{ color: 'var(--text-primary)' }}>
-                Design preview — pep-pedia inspirált adatlap
+                {t('mockup.preview.title')}
               </p>
               <p className="text-[11px] leading-snug mt-0.5" style={{ color: 'var(--text-muted)' }}>
-                A peptid könyvtár éles UI-ja, de a kártyára kattintva az új gazdag MockupDetail nyílik meg.
+                {t('mockup.preview.body')}
               </p>
             </div>
           </div>

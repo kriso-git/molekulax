@@ -115,7 +115,7 @@ function PathwayFlow({ steps, accent }) {
   )
 }
 
-function DosingTimeline({ timeline, accent, tr }) {
+function DosingTimeline({ timeline, accent, tr, t }) {
   return (
     <div className="relative pt-3 pb-2">
       <div
@@ -137,7 +137,7 @@ function DosingTimeline({ timeline, accent, tr }) {
               <span className="w-1.5 h-1.5 rounded-full bg-white" />
             </div>
             <p className="text-[10px] tracking-[0.18em] uppercase font-bold" style={{ color: accent }}>
-              {step.week === '0' ? 'Hét 0' : `Hét ${step.week}`}
+              {`${t('mockup.dosing.week')} ${step.week}`}
             </p>
             <p className="text-[11px] leading-snug mt-0.5" style={{ color: 'var(--text-secondary)' }}>
               {tr(step.label)}
@@ -391,7 +391,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
 
           {/* 2. Key facts grid */}
           <section>
-            <SectionHeader icon={FlaskConical} eyebrow="Adatlap" title="Kulcs jellemzők" accent={accent} />
+            <SectionHeader icon={FlaskConical} eyebrow={t('mockup.sec.keyfacts.eyebrow')} title={t('mockup.sec.keyfacts.title')} accent={accent} />
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {peptide.keyFacts.map((fact, i) => (
                 <KeyFactCard key={i} fact={fact} accent={accent} tr={tr} />
@@ -402,7 +402,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 3. Quick Start Guide — 4-step horizontal stepper */}
           {peptide.quickStart?.length > 0 && (
             <section>
-              <SectionHeader icon={Rocket} eyebrow="Quick Start Guide" title="4 lépésben az indulásig" accent={accent} />
+              <SectionHeader icon={Rocket} eyebrow={t('mockup.sec.quickstart.eyebrow')} title={t('mockup.sec.quickstart.title')} accent={accent} />
               <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                 {/* Connector rail behind the step circles (desktop only) */}
                 <div
@@ -447,7 +447,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 4. Key Benefits — icon cards from category mapping */}
           {peptide.keyBenefits?.length > 0 && (
             <section>
-              <SectionHeader icon={Sparkles} eyebrow="Key Benefits" title="Kulcs előnyök" accent={accent} />
+              <SectionHeader icon={Sparkles} eyebrow={t('mockup.sec.benefits.eyebrow')} title={t('mockup.sec.benefits.title')} accent={accent} />
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                 {peptide.keyBenefits.map((b, i) => {
                   const Icon = BENEFIT_ICONS[b.icon] || Sparkles
@@ -493,8 +493,8 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
             <section>
               <SectionHeader
                 icon={BookOpen}
-                eyebrow={`Mi az a ${peptide.name}?`}
-                title="Részletes áttekintés"
+                eyebrow={t('mockup.sec.whatis.eyebrow').replace('{name}', peptide.name)}
+                title={t('mockup.sec.whatis.title')}
                 accent={accent}
               />
               <div
@@ -527,7 +527,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 6. Mechanism */}
           {peptide.mechanism && (
             <section>
-              <SectionHeader icon={Zap} eyebrow="Hatásmechanizmus" title="Hogyan működik" accent={accent} />
+              <SectionHeader icon={Zap} eyebrow={t('mockup.sec.mechanism.eyebrow')} title={t('mockup.sec.mechanism.title')} accent={accent} />
               {peptide.mechanism.summary && (
                 <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--text-secondary)' }}>
                   {tr(peptide.mechanism.summary)}
@@ -542,7 +542,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 4. Research uses — multi-tag wall (unlike outer card which caps at 1) */}
           {peptide.researchUses?.length > 0 && (
             <section>
-              <SectionHeader icon={Layers} eyebrow="Kutatási irányok" title="Vizsgált alkalmazások" accent={accent} />
+              <SectionHeader icon={Layers} eyebrow={t('mockup.sec.uses.eyebrow')} title={t('mockup.sec.uses.title')} accent={accent} />
               <div className="flex flex-wrap gap-2">
                 {peptide.researchUses.map(use => (
                   <span
@@ -565,7 +565,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 4b. Molecular Information — lab data sheet */}
           {peptide.molecular?.length > 0 && (
             <section>
-              <SectionHeader icon={Atom} eyebrow="Molekuláris információ" title="Adatlap" accent={accent} />
+              <SectionHeader icon={Atom} eyebrow={t('mockup.sec.molecular.eyebrow')} title={t('mockup.sec.molecular.title')} accent={accent} />
               <div
                 className="relative rounded-2xl overflow-hidden font-mono"
                 style={{
@@ -623,16 +623,16 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 5. Dosing */}
           {peptide.dosing && (() => {
             const cells = [
-              { label: 'Tipikus',    value: peptide.dosing.typical,         icon: Pill },
-              { label: 'Tartomány',  value: peptide.dosing.range,           icon: Activity },
-              { label: 'Gyakoriság', value: tr(peptide.dosing.frequency),   icon: Clock },
-              { label: 'Ciklus',     value: tr(peptide.dosing.cycle),       icon: Layers },
+              { label: t('mockup.dosing.typical'), value: peptide.dosing.typical,       icon: Pill },
+              { label: t('mockup.dosing.range'),   value: peptide.dosing.range,         icon: Activity },
+              { label: t('mockup.dosing.freq'),    value: tr(peptide.dosing.frequency), icon: Clock },
+              { label: t('mockup.dosing.cycle'),   value: tr(peptide.dosing.cycle),     icon: Layers },
             ].filter(c => c.value && String(c.value).trim().length > 0)
             const notes = tr(peptide.dosing.notes)
             if (cells.length === 0 && !notes && !peptide.dosing.timeline?.length) return null
             return (
               <section>
-                <SectionHeader icon={Pill} eyebrow="Dózis protokoll" title="Adagolási irányelvek" accent={accent} />
+                <SectionHeader icon={Pill} eyebrow={t('mockup.sec.dosing.eyebrow')} title={t('mockup.sec.dosing.title')} accent={accent} />
                 {cells.length > 0 && (
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
                     {cells.map((item, i) => (
@@ -686,7 +686,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
                   </div>
                 )}
                 {peptide.dosing.timeline?.length > 0 && (
-                  <DosingTimeline timeline={peptide.dosing.timeline} accent={accent} tr={tr} />
+                  <DosingTimeline timeline={peptide.dosing.timeline} accent={accent} tr={tr} t={t} />
                 )}
               </section>
             )
@@ -695,7 +695,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 6. Stacks */}
           {peptide.stacks?.length > 0 && (
             <section>
-              <SectionHeader icon={Layers} eyebrow="Stack ajánlások" title="Gyakran használt kombinációk" accent={accent} />
+              <SectionHeader icon={Layers} eyebrow={t('mockup.sec.stacks.eyebrow')} title={t('mockup.sec.stacks.title')} accent={accent} />
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                 {peptide.stacks.map(stack => (
                   <div
@@ -726,8 +726,8 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
             <section>
               <SectionHeader
                 icon={AlertTriangle}
-                eyebrow="Biztonsági profil"
-                title="Mellékhatások és kontraindikációk"
+                eyebrow={t('mockup.sec.safety.eyebrow')}
+                title={t('mockup.sec.safety.title')}
                 accent="#f97316"
               />
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -737,7 +737,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
                       className="text-[10px] tracking-[0.22em] uppercase font-semibold mb-3"
                       style={{ color: 'var(--text-fainter)' }}
                     >
-                      Mellékhatások
+                      {t('mockup.safety.side')}
                     </p>
                     <SideEffectsList effects={peptide.sideEffects} tr={tr} />
                   </div>
@@ -748,7 +748,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
                       className="text-[10px] tracking-[0.22em] uppercase font-semibold mb-3"
                       style={{ color: 'var(--text-fainter)' }}
                     >
-                      Kontraindikációk
+                      {t('mockup.safety.contra')}
                     </p>
                     <ul className="flex flex-col gap-2">
                       {peptide.contraindications.map((c, i) => (
@@ -775,7 +775,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 9. Studies */}
           {peptide.studies?.length > 0 && (
           <section>
-            <SectionHeader icon={FlaskConical} eyebrow="Tudományos hivatkozások" title="Klinikai és preklinikai bizonyítékok" accent={accent} />
+            <SectionHeader icon={FlaskConical} eyebrow={t('mockup.sec.studies.eyebrow')} title={t('mockup.sec.studies.title')} accent={accent} />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
               {peptide.studies.map((s, i) => (
                 <a
@@ -824,7 +824,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           {/* 10. FAQ */}
           {peptide.faqs?.length > 0 && (
             <section>
-              <SectionHeader icon={Pill} eyebrow="Gyakori kérdések" title="FAQ" accent={accent} />
+              <SectionHeader icon={Pill} eyebrow={t('mockup.sec.faq.eyebrow')} title={t('mockup.sec.faq.title')} accent={accent} />
               <FaqAccordion faqs={peptide.faqs} accent={accent} tr={tr} />
             </section>
           )}
@@ -835,8 +835,8 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
             <section>
               <SectionHeader
                 icon={Calculator}
-                eyebrow="Beépített kalkulátor"
-                title={`Adagolási segéd — ${peptide.name}`}
+                eyebrow={t('mockup.sec.calc.eyebrow')}
+                title={t('mockup.sec.calc.title').replace('{name}', peptide.name)}
                 accent={accent}
               />
               <MiniCalc
@@ -859,10 +859,10 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           >
             <div className="flex-1">
               <p className="text-base font-semibold italic mb-1" style={{ color: 'var(--text-primary)' }}>
-                Kérdésed van a {peptide.name}-ről?
+                {t('mockup.cta.title').replace('{name}', peptide.name)}
               </p>
               <p className="text-xs leading-relaxed" style={{ color: 'var(--text-muted)' }}>
-                Lépj kapcsolatba egy tanácsadóval Telegramon — szívesen segítünk.
+                {t('mockup.cta.body')}
               </p>
             </div>
             <TelegramButtons variant="pill" align="start" />
@@ -873,8 +873,7 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
             className="text-[10px] italic text-center leading-relaxed"
             style={{ color: 'var(--text-fainter)' }}
           >
-            ⚠ Az itt található információ kizárólag edukatív és tudományos célt szolgál.
-            Nem helyettesíti az orvosi szakvéleményt vagy a klinikai tanácsadást.
+            ⚠ {t('mockup.disclaimer')}
           </p>
         </div>
       </div>
