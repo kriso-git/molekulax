@@ -13,6 +13,7 @@ import FloatingScientific from './components/FloatingScientific'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
 import PepPediaMockup from './mockup/PepPediaMockup'
+import PepPediaMockupV2 from './mockup/v2/PepPediaMockupV2'
 import { LanguageProvider } from './i18n/LanguageContext'
 import { ThemeProvider } from './theme/ThemeContext'
 
@@ -32,7 +33,8 @@ function useHashRoute() {
 
 export default function App() {
   const hash = useHashRoute()
-  const isMockup = hash === 'mockup' || hash.startsWith('mockup/')
+  const isMockupV2 = hash === 'mockup2' || hash.startsWith('mockup2/')
+  const isMockup = !isMockupV2 && (hash === 'mockup' || hash.startsWith('mockup/'))
 
   return (
     <ThemeProvider>
@@ -43,7 +45,9 @@ export default function App() {
           <ThemeSwitcher />
           <LanguageSwitcher />
           <div className="relative z-10">
-            {isMockup ? (
+            {isMockupV2 ? (
+              <PepPediaMockupV2 />
+            ) : isMockup ? (
               <PepPediaMockup />
             ) : (
               <>
