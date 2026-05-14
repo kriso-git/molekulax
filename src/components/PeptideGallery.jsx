@@ -219,7 +219,9 @@ function SortControl({ value, onChange, t }) {
 }
 
 // ── Main component ───────────────────────────────────────────────────────────
-export default function PeptideGallery() {
+// Accepts an optional `DetailComponent` prop so the design-preview mockup
+// route can swap the detail view (MockupDetail) without forking the gallery.
+export default function PeptideGallery({ DetailComponent = PeptideModal }) {
   const [selected, setSelected] = useState(null)
   const [expanded, setExpanded] = useState(false)
   const [showFilters, setShowFilters] = useState(false)
@@ -594,7 +596,7 @@ export default function PeptideGallery() {
       </section>
 
       {selected && (
-        <PeptideModal peptide={selected} onClose={() => setSelected(null)} />
+        <DetailComponent peptide={selected} onClose={() => setSelected(null)} />
       )}
     </>
   )

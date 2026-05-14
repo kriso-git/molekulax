@@ -388,78 +388,97 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           </section>
 
           {/* 3. Mechanism */}
-          <section>
-            <SectionHeader icon={Zap} eyebrow="Hatásmechanizmus" title="Hogyan működik" accent={accent} />
-            <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--text-secondary)' }}>
-              {tr(peptide.mechanism.summary)}
-            </p>
-            <PathwayFlow steps={peptide.mechanism.pathway} accent={accent} />
-          </section>
+          {peptide.mechanism && (
+            <section>
+              <SectionHeader icon={Zap} eyebrow="Hatásmechanizmus" title="Hogyan működik" accent={accent} />
+              {peptide.mechanism.summary && (
+                <p className="text-sm leading-relaxed mb-5" style={{ color: 'var(--text-secondary)' }}>
+                  {tr(peptide.mechanism.summary)}
+                </p>
+              )}
+              {peptide.mechanism.pathway?.length > 0 && (
+                <PathwayFlow steps={peptide.mechanism.pathway} accent={accent} />
+              )}
+            </section>
+          )}
 
           {/* 4. Research uses */}
-          <section>
-            <SectionHeader icon={Layers} eyebrow="Kutatási irányok" title="Vizsgált alkalmazások" accent={accent} />
-            <div className="flex flex-wrap gap-2">
-              {peptide.researchUses.map(use => (
-                <span
-                  key={use.id}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium tracking-wide"
-                  style={{
-                    background: `${accent}10`,
-                    border: `1px solid ${accent}40`,
-                    color: 'var(--text-secondary)',
-                  }}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full" style={{ background: accent }} />
-                  {tr(use.label)}
-                </span>
-              ))}
-            </div>
-          </section>
+          {peptide.researchUses?.length > 0 && (
+            <section>
+              <SectionHeader icon={Layers} eyebrow="Kutatási irányok" title="Vizsgált alkalmazások" accent={accent} />
+              <div className="flex flex-wrap gap-2">
+                {peptide.researchUses.map(use => (
+                  <span
+                    key={use.id}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium tracking-wide"
+                    style={{
+                      background: `${accent}10`,
+                      border: `1px solid ${accent}40`,
+                      color: 'var(--text-secondary)',
+                    }}
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full" style={{ background: accent }} />
+                    {tr(use.label)}
+                  </span>
+                ))}
+              </div>
+            </section>
+          )}
 
           {/* 5. Dosing */}
-          <section>
-            <SectionHeader icon={Pill} eyebrow="Dózis protokoll" title="Adagolási irányelvek" accent={accent} />
-            <div
-              className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6"
-            >
-              {[
-                { label: 'Tipikus', value: peptide.dosing.typical, icon: Pill },
-                { label: 'Tartomány', value: peptide.dosing.range, icon: Activity },
-                { label: 'Gyakoriság', value: tr(peptide.dosing.frequency), icon: Clock },
-                { label: 'Ciklus', value: tr(peptide.dosing.cycle), icon: Layers },
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="p-3 rounded-xl flex items-start gap-2.5"
-                  style={{
-                    background: 'var(--tint-row)',
-                    border: '1px solid var(--border-soft)',
-                  }}
-                >
-                  <span
-                    className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-lg mt-0.5"
-                    style={{ background: `${accent}1a`, color: accent }}
-                  >
-                    <item.icon size={13} strokeWidth={2.2} />
-                  </span>
-                  <div>
-                    <p className="text-[9px] tracking-[0.22em] uppercase font-semibold mb-0.5"
-                       style={{ color: 'var(--text-fainter)' }}>
-                      {item.label}
-                    </p>
-                    <p className="text-xs font-semibold" style={{ color: 'var(--text-secondary)' }}>
-                      {item.value}
-                    </p>
+          {peptide.dosing && (() => {
+            const cells = [
+              { label: 'Tipikus',    value: peptide.dosing.typical,         icon: Pill },
+              { label: 'Tartomány',  value: peptide.dosing.range,           icon: Activity },
+              { label: 'Gyakoriság', value: tr(peptide.dosing.frequency),   icon: Clock },
+              { label: 'Ciklus',     value: tr(peptide.dosing.cycle),       icon: Layers },
+            ].filter(c => c.value && String(c.value).trim().length > 0)
+            const notes = tr(peptide.dosing.notes)
+            if (cells.length === 0 && !notes && !peptide.dosing.timeline?.length) return null
+            return (
+              <section>
+                <SectionHeader icon={Pill} eyebrow="Dózis protokoll" title="Adagolási irányelvek" accent={accent} />
+                {cells.length > 0 && (
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                    {cells.map((item, i) => (
+                      <div
+                        key={i}
+                        className="p-3 rounded-xl flex items-start gap-2.5"
+                        style={{
+                          background: 'var(--tint-row)',
+                          border: '1px solid var(--border-soft)',
+                        }}
+                      >
+                        <span
+                          className="shrink-0 inline-flex items-center justify-center w-7 h-7 rounded-lg mt-0.5"
+                          style={{ background: `${accent}1a`, color: accent }}
+                        >
+                          <item.icon size={13} strokeWidth={2.2} />
+                        </span>
+                        <div>
+                          <p className="text-[9px] tracking-[0.22em] uppercase font-semibold mb-0.5"
+                             style={{ color: 'var(--text-fainter)' }}>
+                            {item.label}
+                          </p>
+                          <p className="text-xs font-semibold" style={{ color: 'var(--text-secondary)' }}>
+                            {item.value}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                </div>
-              ))}
-            </div>
-            <p className="text-[11px] italic mb-5" style={{ color: 'var(--text-muted)' }}>
-              💡 {tr(peptide.dosing.notes)}
-            </p>
-            <DosingTimeline timeline={peptide.dosing.timeline} accent={accent} tr={tr} />
-          </section>
+                )}
+                {notes && (
+                  <p className="text-[11px] italic mb-5" style={{ color: 'var(--text-muted)' }}>
+                    💡 {notes}
+                  </p>
+                )}
+                {peptide.dosing.timeline?.length > 0 && (
+                  <DosingTimeline timeline={peptide.dosing.timeline} accent={accent} tr={tr} />
+                )}
+              </section>
+            )
+          })()}
 
           {/* 6. Stacks */}
           {peptide.stacks?.length > 0 && (
@@ -491,51 +510,58 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
           )}
 
           {/* 7-8. Side effects + Contraindications */}
-          <section>
-            <SectionHeader
-              icon={AlertTriangle}
-              eyebrow="Biztonsági profil"
-              title="Mellékhatások és kontraindikációk"
-              accent="#f97316"
-            />
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div>
-                <p
-                  className="text-[10px] tracking-[0.22em] uppercase font-semibold mb-3"
-                  style={{ color: 'var(--text-fainter)' }}
-                >
-                  Mellékhatások
-                </p>
-                <SideEffectsList effects={peptide.sideEffects} tr={tr} />
-              </div>
-              <div>
-                <p
-                  className="text-[10px] tracking-[0.22em] uppercase font-semibold mb-3"
-                  style={{ color: 'var(--text-fainter)' }}
-                >
-                  Kontraindikációk
-                </p>
-                <ul className="flex flex-col gap-2">
-                  {peptide.contraindications.map((c, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-2 p-3 rounded-lg text-xs"
-                      style={{
-                        background: 'rgba(249,115,22,0.06)',
-                        border: '1px solid rgba(249,115,22,0.25)',
-                        color: 'var(--text-secondary)',
-                      }}
+          {(peptide.sideEffects?.length > 0 || peptide.contraindications?.length > 0) && (
+            <section>
+              <SectionHeader
+                icon={AlertTriangle}
+                eyebrow="Biztonsági profil"
+                title="Mellékhatások és kontraindikációk"
+                accent="#f97316"
+              />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {peptide.sideEffects?.length > 0 && (
+                  <div>
+                    <p
+                      className="text-[10px] tracking-[0.22em] uppercase font-semibold mb-3"
+                      style={{ color: 'var(--text-fainter)' }}
                     >
-                      <AlertTriangle size={12} strokeWidth={2.2} className="shrink-0 mt-0.5" style={{ color: '#fb923c' }} />
-                      <span>{tr(c)}</span>
-                    </li>
-                  ))}
-                </ul>
+                      Mellékhatások
+                    </p>
+                    <SideEffectsList effects={peptide.sideEffects} tr={tr} />
+                  </div>
+                )}
+                {peptide.contraindications?.length > 0 && (
+                  <div>
+                    <p
+                      className="text-[10px] tracking-[0.22em] uppercase font-semibold mb-3"
+                      style={{ color: 'var(--text-fainter)' }}
+                    >
+                      Kontraindikációk
+                    </p>
+                    <ul className="flex flex-col gap-2">
+                      {peptide.contraindications.map((c, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-2 p-3 rounded-lg text-xs"
+                          style={{
+                            background: 'rgba(249,115,22,0.06)',
+                            border: '1px solid rgba(249,115,22,0.25)',
+                            color: 'var(--text-secondary)',
+                          }}
+                        >
+                          <AlertTriangle size={12} strokeWidth={2.2} className="shrink-0 mt-0.5" style={{ color: '#fb923c' }} />
+                          <span>{tr(c)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
-            </div>
-          </section>
+            </section>
+          )}
 
           {/* 9. Studies */}
+          {peptide.studies?.length > 0 && (
           <section>
             <SectionHeader icon={FlaskConical} eyebrow="Tudományos hivatkozások" title="Klinikai és preklinikai bizonyítékok" accent={accent} />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
@@ -581,12 +607,15 @@ export default function MockupDetail({ peptide, onClose, onSelectRelated }) {
               ))}
             </div>
           </section>
+          )}
 
           {/* 10. FAQ */}
-          <section>
-            <SectionHeader icon={Pill} eyebrow="Gyakori kérdések" title="FAQ" accent={accent} />
-            <FaqAccordion faqs={peptide.faqs} accent={accent} tr={tr} />
-          </section>
+          {peptide.faqs?.length > 0 && (
+            <section>
+              <SectionHeader icon={Pill} eyebrow="Gyakori kérdések" title="FAQ" accent={accent} />
+              <FaqAccordion faqs={peptide.faqs} accent={accent} tr={tr} />
+            </section>
+          )}
 
           {/* 11. Telegram CTA */}
           <section
