@@ -21,7 +21,8 @@ export default function VialImage({ accentColor = '#818cf8', name = '', uid = 'v
         <img
           src={image}
           alt={`${name} vial`}
-          className="relative z-10 max-h-full max-w-full object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,0.6)]"
+          className="relative z-10 w-full h-full object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,0.6)]"
+          style={{ transform: 'scale(1.08)' }}
           loading="lazy"
           draggable="false"
         />

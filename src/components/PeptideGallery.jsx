@@ -84,8 +84,10 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
         </div>
       )}
 
-      {/* Image — no scale on hover; only the parent tile lifts. */}
-      <div className="w-40 h-56 sm:w-44 sm:h-64 self-center relative z-10">
+      {/* Image — square frame, fills the tile width so every vial photo
+          renders at the same visual size. No hover scale; only the parent
+          tile lifts. */}
+      <div className="w-full aspect-square self-center relative z-10">
         <VialImage
           accentColor={accent}
           name={peptide.name}
