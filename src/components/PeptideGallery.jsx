@@ -89,8 +89,13 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
 
       {/* Image — square frame, fills the tile width so every vial photo
           renders at the same visual size. No hover scale; only the parent
-          tile lifts. */}
-      <div className="w-full aspect-square self-center relative z-10">
+          tile lifts. `overflow-hidden` + explicit aspectRatio bullet-proof
+          the SVG-fallback case so its intrinsic 110×200 viewBox can never
+          push the box taller than a real-photo tile. */}
+      <div
+        className="w-full self-center relative z-10 overflow-hidden"
+        style={{ aspectRatio: '1 / 1' }}
+      >
         <VialImage
           accentColor={accent}
           name={peptide.name}
@@ -123,15 +128,9 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
         {tr(levelMeta.label)}
       </p>
 
-      {/* Subtle divider — visually separates the meta block from the
-          Research Uses block, matching the reference design. */}
-      <div
-        className="relative z-10 h-px -my-1"
-        style={{ background: 'var(--tint-soft-border)' }}
-      />
-
       {/* Research Uses — single most-relevant category chip. The first
-          entry in peptideCategories.js is treated as the primary tag. */}
+          entry in peptideCategories.js is treated as the primary tag,
+          so every tile has exactly one chip (= uniform tile height). */}
       <div className="relative z-10 flex flex-col gap-2">
         <p
           className="text-[9px] tracking-[0.25em] uppercase font-semibold"
@@ -142,7 +141,7 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
         <div className="flex flex-wrap gap-1.5">
           {catIds.length === 0 ? (
             <span
-              className="text-[10px] px-2.5 py-1 rounded-full font-mono tracking-wide"
+              className="text-[10px] px-2 py-0.5 rounded-full font-mono tracking-wide"
               style={{
                 background: 'var(--tint-row)',
                 border: '1px solid var(--border-soft)',
@@ -159,7 +158,7 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
               return (
                 <span
                   key={primaryId}
-                  className="text-[10px] px-2.5 py-1 rounded-full font-medium tracking-wide whitespace-nowrap"
+                  className="text-[10px] px-2 py-0.5 rounded-full font-medium tracking-wide whitespace-nowrap"
                   style={{
                     background: `${cat.accent}1a`,
                     border: `1px solid ${cat.accent}55`,
