@@ -26,9 +26,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 500,
     shortDesc: {
-      hu: 'Rézpeptid — bőrregeneráció és epigenetikai moduláció',
-      en: 'Copper peptide — skin regeneration and epigenetic modulation',
-      pl: 'Peptyd miedziowy — regeneracja skóry i modulacja epigenetyczna',
+      hu: 'Rézpeptid: bőrregeneráció és epigenetikai moduláció',
+      en: 'Copper peptide: skin regeneration and epigenetic modulation',
+      pl: 'Peptyd miedziowy: regeneracja skóry i modulacja epigenetyczna',
     },
     description: {
       hu: 'A GHK-Cu (glicil-hisztidil-lizin-réz) egy természetesen előforduló rézkötő tripeptid, amelyet az emberi plazmában, vizeletben és nyálban azonosítottak. Fiatalkorban magas szinten (~200 ng/ml) van jelen, majd az életkorral fokozatosan csökken (~80 ng/ml 60 éves korra).\n\nA peptid réz(II)-ionhoz kötve aktiválja a kollagén- és elasztinszintézist, gyorsítja a sebgyógyulást, serkenti az angiogenezist, és epigenetikai mechanizmusokon keresztül több mint 32 gén expresszióját befolyásolja. Kutatások szerint anti-oxidáns, gyulladáscsökkentő és idegvédő hatásai is vannak.',
@@ -147,9 +147,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 1,
     defaultDoseMcg: 120,
     shortDesc: {
-      hu: 'Háromszoros inkretinagonista — metabolikus egészség és súlycsökkentés',
-      en: 'Triple incretin agonist — metabolic health and weight loss',
-      pl: 'Potrójny agonista inkretyn — zdrowie metaboliczne i utrata masy',
+      hu: 'Háromszoros inkretinagonista: metabolikus egészség és súlycsökkentés',
+      en: 'Triple incretin agonist: metabolic health and weight loss',
+      pl: 'Potrójny agonista inkretyn: zdrowie metaboliczne i utrata masy',
     },
     description: {
       hu: 'A retatrutide (LY3437943) az Eli Lilly által fejlesztett háromszoros inkretinreceptor-agonista, amely egyszerre hat a GIP (glükózdependens inzulinotropikus polipeptid), a GLP-1 (glükagonszerű peptid-1) és a glukagonreceptorokra.\n\nA Fázis 2 klinikai vizsgálatban 48 hét alatt átlagosan 24%-os testtömeg-csökkentést mutatott a legmagasabb dóziscsoportban — ez a jelenleg ismert legerősebb eredmény az obesitás-terápia területén. Mechanizmusa: étvágycsökkentés, kalóriafelhasználás fokozása és javított inzulinérzékenység.',
@@ -254,9 +254,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 250,
     shortDesc: {
-      hu: 'Gyomor-pentadekapeptid — szöveti regeneráció és gyógyulás',
-      en: 'Gastric pentadecapeptide — tissue regeneration and healing',
-      pl: 'Pentadekapeptyd żołądkowy — regeneracja tkanek i gojenie',
+      hu: 'Gyomor-pentadekapeptid: szöveti regeneráció és gyógyulás',
+      en: 'Gastric pentadecapeptide: tissue regeneration and healing',
+      pl: 'Pentadekapeptyd żołądkowy: regeneracja tkanek i gojenie',
     },
     description: {
       hu: 'A BPC-157 (Body Protection Compound-157) egy szintetikus 15 aminosavból álló peptid, amelyet a humán gyomornedv fehérjéjéből (BPC) izoláltak. Kiemelkedő regeneratív hatásokat mutat inakban, izmokban, idegszövetben, a gyomor-bél traktusban és csontszövetben.\n\nMolekuláris szinten modulálja a VEGF-expressziót (angiogenezis), az NO-rendszert (érrendszeri tónus), és a FAK-paxillin jelátviteli útvonalat (sejtvándorlás). Több mint 30 éves kutatási múlttal rendelkezik — elsősorban állatkísérletes adatok alapján.',
@@ -361,9 +361,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 2000,
     shortDesc: {
-      hu: 'Thymosin β4 — aktin-kötés, sejtvándorlás és szövetjavítás',
-      en: 'Thymosin β4 — actin binding, cell migration and tissue repair',
-      pl: 'Tymozyna β4 — wiązanie aktyny, migracja komórek i naprawa tkanek',
+      hu: 'Thymosin β4: aktin-kötés, sejtvándorlás és szövetjavítás',
+      en: 'Thymosin β4: actin binding, cell migration and tissue repair',
+      pl: 'Tymozyna β4: wiązanie aktyny, migracja komórek i naprawa tkanek',
     },
     description: {
       hu: 'A TB-500 a Thymosin Beta-4 (Tβ4) szintetikus fragmentje — az emberi testben természetesen megtalálható aktin-megkötő fehérje. Szinte minden emberi és állati sejtben jelen van, különösen magas koncentrációban vérlemezlékben és sebgyógyuló szövetekben.\n\nMolekuláris hatása: megakadályozza az aktin polimerizációját → fokozza a sejtvándorlást és a szöveti javítást. Emellett serkenti az angiogenezist (VEGF-útvonal) és csökkenti a gyulladásos citokineket.',
@@ -468,9 +468,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 100,
     shortDesc: {
-      hu: 'GHRH analóg — tartós növekedési hormon stimuláció',
-      en: 'GHRH analog — sustained growth hormone stimulation',
-      pl: 'Analog GHRH — przedłużona stymulacja hormonu wzrostu',
+      hu: 'GHRH analóg: tartós növekedési hormon stimuláció',
+      en: 'GHRH analog: sustained growth hormone stimulation',
+      pl: 'Analog GHRH: przedłużona stymulacja hormonu wzrostu',
     },
     description: {
       hu: 'A CJC-1295 egy módosított GHRH (növekedési hormon-releasing hormon) analóg, amelyhez Drug Affinity Complex (DAC) technológiával albuminkötő csoportot alakítottak ki. Ez a módosítás a féléletidőt az eredeti ~7 percről 6–8 napra növeli.\n\nEgyszeri injekció 2–10-szeres GH-emelkedést eredményez 6 napon át, az IGF-I szint 9–11 napig emelkedett marad. Ismételt adagolásnál az IGF-I akár 28 napig emelt szinten tartható.',
@@ -558,9 +558,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 100,
     shortDesc: {
-      hu: 'Szelektív GH-szekretórium — kortizolemelkedés nélkül',
-      en: 'Selective GH secretagogue — without cortisol elevation',
-      pl: 'Selektywny sekretagog GH — bez wzrostu kortyzolu',
+      hu: 'Szelektív GH-szekretórium: kortizolemelkedés nélkül',
+      en: 'Selective GH secretagogue: without cortisol elevation',
+      pl: 'Selektywny sekretagog GH: bez wzrostu kortyzolu',
     },
     description: {
       hu: 'Az ipamorelin egy szintetikus pentapeptid GH-szekretórium (GHS), amely szelektíven köt a ghrelinreceptorhoz (GHSR-1a). Az első olyan GHS, amely GH-szekréciót indukál kortizol- és prolaktinemelkedés nélkül — ez különbözteti meg a korábbi GHRP-ektől (pl. GHRP-6).\n\nRendszerint CJC-1295-tel kombinálva alkalmazzák a szinergikus GH-szekréció érdekében: a GHRH analóg erősíti a GH-pulzust, az ipamorelin pedig fokozza a pulzus amplitúdóját.',
@@ -649,9 +649,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 500,
     shortDesc: {
-      hu: 'Szintetikus α-MSH analóg — pigmentáció és libidó moduláció',
-      en: 'Synthetic α-MSH analog — pigmentation and libido modulation',
-      pl: 'Syntetyczny analog α-MSH — modulacja pigmentacji i libido',
+      hu: 'Szintetikus α-MSH analóg: pigmentáció és libidó moduláció',
+      en: 'Synthetic α-MSH analog: pigmentation and libido modulation',
+      pl: 'Syntetyczny analog α-MSH: modulacja pigmentacji i libido',
     },
     description: {
       hu: 'A Melanotan-2 (MT-II) egy szintetikus, ciklikus heptapeptid α-melanocita-stimuláló hormon (α-MSH) analóg, amelyet eredetileg az Arizonai Egyetemen fejlesztettek ki bőrrákmegelőzési kutatás céljából. Nem-szelektív agonistája az MC1R, MC3R, MC4R és MC5R melanokortinreceptoroknak.\n\nFő hatása az MC1R aktiválásán keresztül a melanin szintézis fokozása (melanogenezis), ami sötétebb, „belülről jövő" barnulást eredményez minimális UV-expozíció mellett. Az MC4R aktiválása libidóra ható mellékhatást is kivált — ez vezetett a PT-141 (bremelanotid) kifejlesztéséhez. Étvágycsökkentő hatása is dokumentált.',
@@ -740,9 +740,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 1750,
     shortDesc: {
-      hu: 'Melanokortinreceptor-agonista — FDA engedélyezett (bremelanotid)',
-      en: 'Melanocortin receptor agonist — FDA approved (bremelanotide)',
-      pl: 'Agonista receptora melanokortyny — zatwierdzony przez FDA (bremelanotyd)',
+      hu: 'Melanokortinreceptor-agonista: FDA engedélyezett (bremelanotid)',
+      en: 'Melanocortin receptor agonist: FDA approved (bremelanotide)',
+      pl: 'Agonista receptora melanokortyny: zatwierdzony przez FDA (bremelanotyd)',
     },
     description: {
       hu: 'A PT-141 (bremelanotide) egy szintetikus melanokortinreceptor-agonista, amely az MC3R és MC4R receptorokon hat. Az FDA 2019-ben jóváhagyta a premenopauzás nők hypoaktív szexuális vágyavar-zavarának (HSDD) kezelésére Vyleesi márkanéven.\n\nKülönbözik a PDE5-gátlóktól (Viagra, Cialis): nem az érrendszerre, hanem közvetlen idegrendszeri úton hat, így érrendszeri ellenjavallatoknál is vizsgálják.',
@@ -831,9 +831,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 3,
     defaultDoseMcg: 300,
     shortDesc: {
-      hu: 'GHRH(1-29) analóg — fiziológiás GH-helyreállítás',
-      en: 'GHRH(1-29) analog — physiological GH restoration',
-      pl: 'Analog GHRH(1-29) — fizjologiczne przywrócenie GH',
+      hu: 'GHRH(1-29) analóg: fiziológiás GH-helyreállítás',
+      en: 'GHRH(1-29) analog: physiological GH restoration',
+      pl: 'Analog GHRH(1-29): fizjologiczne przywrócenie GH',
     },
     description: {
       hu: 'A szermórelin a humán GHRH első 29 aminosavát tartalmazza (GHRH 1-29) — ez az aktív fragmens, amely elegendő az agyalapi mirigy GH-szekréciójának stimulálásához. Az FDA korábban gyermekek GH-hiányának kezelésére engedélyezte.\n\nFő előnye: a fiziológiás GH-pulzalitást állítja helyre az agyalapi mirigyen keresztül, nem közvetlen GH-injekció. Ez azt jelenti, hogy a GH-szint nem lépi túl a természetes határt, ami kedvezőbb biztonsági profilt eredményez.',
@@ -921,9 +921,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 5000,
     shortDesc: {
-      hu: 'Tobozmirigy-tetrapeptid — telomeráz aktiválás és öregedéskutatás',
-      en: 'Pineal tetrapeptide — telomerase activation and longevity research',
-      pl: 'Tetrapeptyd szyszynki — aktywacja telomerazy i badania długowieczności',
+      hu: 'Tobozmirigy-tetrapeptid: telomeráz aktiválás és öregedéskutatás',
+      en: 'Pineal tetrapeptide: telomerase activation and longevity research',
+      pl: 'Tetrapeptyd szyszynki: aktywacja telomerazy i badania długowieczności',
     },
     description: {
       hu: 'Az Epithalon (Ala-Glu-Asp-Gly) egy szintetikus tetrapeptid, amelyet Prof. Vladimir Khavinson fejlesztett ki a Szentpétervári Gerontológiai Intézetben a tobozmirigy (epiphysis) peptid kivonatából. Az epitalamin szintetikus változata.\n\nLegfontosabb vizsgált hatásai: melatonin-szekréció normalizálása, telomeráz enzim aktiválása (telomer-hosszabbítás sejtszinten), antioxidáns hatás, és állatkísérletekben élettartam-növelés. Fontos: a humán klinikai adatok korlátozottak.',
@@ -1011,9 +1011,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 2500,
     shortDesc: {
-      hu: 'Kettős GIP/GLP-1 agonista — testsúly és vércukor kontroll',
-      en: 'Dual GIP/GLP-1 agonist — weight & glucose control',
-      pl: 'Podwójny agonista GIP/GLP-1 — kontrola masy i glukozy',
+      hu: 'Kettős GIP/GLP-1 agonista: testsúly és vércukor kontroll',
+      en: 'Dual GIP/GLP-1 agonist: weight & glucose control',
+      pl: 'Podwójny agonista GIP/GLP-1: kontrola masy i glukozy',
     },
     description: {
       hu: 'A tirzepatide (Mounjaro / Zepbound, LY3298176) az Eli Lilly első kettős GIP- és GLP-1-receptor agonistája, amelyet a 2-es típusú cukorbetegség és obesitás kezelésére fejlesztettek ki és törzskönyveztek.\n\nA SURPASS és SURMOUNT vizsgálati programokban 26,6%-os átlagos testtömeg-csökkentést mutatott a legmagasabb dóziscsoportban 72 hét alatt. Az FDA 2022-ben (T2DM) és 2023-ban (obesitás) hagyta jóvá.',
@@ -1108,9 +1108,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 3,
     defaultDoseMcg: 1000,
     shortDesc: {
-      hu: 'Humán növekedési hormon (rhGH / Somatropin) — anyagcsere és regeneráció',
-      en: 'Human Growth Hormone (rhGH / Somatropin) — metabolism & regeneration',
-      pl: 'Hormon wzrostu (rhGH / Somatropina) — metabolizm i regeneracja',
+      hu: 'Humán növekedési hormon (rhGH / Somatropin): anyagcsere és regeneráció',
+      en: 'Human Growth Hormone (rhGH / Somatropin): metabolism & regeneration',
+      pl: 'Hormon wzrostu (rhGH / Somatropina): metabolizm i regeneracja',
     },
     description: {
       hu: 'A humán növekedési hormon (HGH, somatropin) egy 191 aminosavból álló polipeptid, amelyet az agyalapi mirigy elülső lebenye termel. Hatása a növekedés serkentése, anyagcsere-szabályozás, fehérjeszintézis és lipolízis fokozása az IGF-1 közvetítésével.\n\nRekombináns formában (rhGH) GH-hiányos gyermekek és felnőttek kezelésére használják. Kutatási kontextusban az izomtömeg, regeneráció, alvás és testösszetétel javítása szempontjából vizsgálják.',
@@ -1192,9 +1192,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 200,
     shortDesc: {
-      hu: 'Kombináció: GHRH-analóg + szelektív ghrelin-mimetikum — szinergikus GH-pulzus',
-      en: 'Combo: GHRH analog + selective ghrelin mimetic — synergistic GH pulse',
-      pl: 'Kombinacja: analog GHRH + selektywny mimetyk greliny — synergiczny puls GH',
+      hu: 'GHRH-analóg + szelektív ghrelin-mimetikum kombináció a szinergikus GH-pulzusért',
+      en: 'GHRH analog + selective ghrelin mimetic combo for synergistic GH pulse',
+      pl: 'Kombinacja analogu GHRH + selektywnego mimetyku greliny dla synergicznego pulsu GH',
     },
     description: {
       hu: 'A CJC-1295 (módosított GHRH 1-29) és az Ipamorelin (szelektív GHRP / ghrelin receptor agonista) együttes alkalmazása a növekedési hormon (GH) pulzatilis kibocsátását fokozza két különböző receptoron keresztül — emiatt ez a klasszikus "GHRH + GHRP" kombináció.\n\nA CJC-1295 a hipofízis GHRH-receptorán hat, az Ipamorelin pedig a ghrelinreceptoron. A két szignál szinergiát produkál, miközben az Ipamorelin szelektivitása miatt minimális a kortizol- és prolaktin-emelkedés.',
@@ -1276,9 +1276,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 1400,
     shortDesc: {
-      hu: 'GHRH-analóg — viscerális zsírcsökkentés (FDA-jóváhagyott)',
-      en: 'GHRH analog — visceral fat reduction (FDA-approved)',
-      pl: 'Analog GHRH — redukcja tłuszczu trzewnego (zatwierdzony FDA)',
+      hu: 'GHRH-analóg: viscerális zsírcsökkentés (FDA-jóváhagyott)',
+      en: 'GHRH analog: visceral fat reduction (FDA-approved)',
+      pl: 'Analog GHRH: redukcja tłuszczu trzewnego (zatwierdzony FDA)',
     },
     description: {
       hu: 'A tesamorelin (Egrifta) egy 44 aminosavas, stabilizált GHRH-analóg, amelyet az FDA 2010-ben hagyott jóvá HIV-asszociált lipodisztrófiában a viscerális adipóz szövet (VAT) csökkentésére. Stimulálja a hipofízis természetes GH-pulzusait, miközben az IGF-1 a fiziológiás tartományban marad.\n\nKlinikai vizsgálatokban szignifikáns viscerális zsírcsökkenést mutatott, miközben a szubkután zsírszövet és vázizomtömeg megmaradt vagy javult.',
@@ -1359,9 +1359,9 @@ const CORE_PEPTIDES = [
     defaultBacMl: 2,
     defaultDoseMcg: 8000,
     shortDesc: {
-      hu: 'Nootróp hexapeptid-analóg — szinapszisképzés és kognitív funkció',
-      en: 'Nootropic hexapeptid analog — synaptogenesis & cognitive function',
-      pl: 'Nootropowy analog heksapeptydu — synaptogeneza i funkcja poznawcza',
+      hu: 'Nootróp hexapeptid-analóg: szinapszisképzés és kognitív funkció',
+      en: 'Nootropic hexapeptid analog: synaptogenesis & cognitive function',
+      pl: 'Nootropowy analog heksapeptydu: synaptogeneza i funkcja poznawcza',
     },
     description: {
       hu: 'A Dihexa (N-hexanoyl-Tyr-Ile-(6) aminohexanoic amide) az angiotenzin IV egy módosított, lipofil analógja, amelyet a Washington State University fejlesztett ki Alzheimer-kór modellre. Állatkísérletekben a HGF/c-Met útvonalon keresztül erős, dózisfüggő szinaptogén hatást mutat — egyes közlemények szerint a BDNF-nél nagyságrendekkel hatékonyabb.\n\nKlinikai vizsgálatok jelenleg nincsenek; az emberi felhasználás kutatási kontextusban történik. Orálisan biológiailag elérhetőnek mérték rágcsálókban (vér-agy gát átjutás).',

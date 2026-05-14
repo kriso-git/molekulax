@@ -730,52 +730,46 @@ function SafetyTriptych({ profile, accent, tr, t }) {
   )
 }
 
-// ─── Related Peptides — 3D tilt mini cards row ─────────────────────
+// ─── Related Peptides — fixed-corner layout, click jumps to peptide ─
 function RelatedCard({ peptide, onJump, tr, t }) {
-  const tiltRef = useTilt(7)
   if (!peptide) return null
   return (
     <button
-      ref={tiltRef}
       onClick={() => onJump(peptide.id)}
-      className="group relative p-4 rounded-2xl text-left transition-transform duration-300 will-change-transform"
+      className="group relative pt-10 pb-10 px-4 rounded-2xl text-left transition-transform duration-300 hover:-translate-y-0.5 min-h-[180px] flex flex-col"
       style={{
         background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01))',
         border: '1px solid var(--tint-soft-border)',
         boxShadow: `0 24px 60px -28px ${peptide.accentColor}66`,
-        transformStyle: 'preserve-3d',
       }}
     >
       <div
         className="absolute -inset-px rounded-2xl pointer-events-none opacity-60"
         style={{ background: `radial-gradient(120% 80% at 100% 0%, ${peptide.accentColor}26, transparent 50%)` }}
       />
-      <div className="relative" style={{ transform: 'translateZ(20px)' }}>
-        <div className="flex items-center gap-2 mb-3">
-          <span
-            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] tracking-[0.22em] uppercase font-bold"
-            style={{
-              background: `${peptide.tierColor}1a`,
-              border: `1px solid ${peptide.tierColor}55`,
-              color: peptide.tierColor,
-            }}
-          >
-            {peptide.tier >= 5 && <ShieldCheck size={9} />}
-            {tr(peptide.tierLabel)}
-          </span>
-        </div>
+
+      {/* Top-left: tier tag */}
+      <span
+        className="absolute top-3 left-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] tracking-[0.22em] uppercase font-bold"
+        style={{
+          background: `${peptide.tierColor}1a`,
+          border: `1px solid ${peptide.tierColor}55`,
+          color: peptide.tierColor,
+        }}
+      >
+        {peptide.tier >= 5 && <ShieldCheck size={9} />}
+        {tr(peptide.tierLabel)}
+      </span>
+
+      {/* Middle: name + chips */}
+      <div className="relative flex-1 flex flex-col justify-center">
         <p
           className="font-black text-lg tracking-tight leading-tight mb-3"
-          style={{
-            background: `linear-gradient(135deg, #fff, ${peptide.accentColor})`,
-            WebkitBackgroundClip: 'text',
-            backgroundClip: 'text',
-            color: 'transparent',
-          }}
+          style={{ color: peptide.accentColor }}
         >
           {peptide.name}
         </p>
-        <div className="flex flex-wrap gap-1.5 mb-3">
+        <div className="flex flex-wrap gap-1.5">
           {peptide.chips.map((c, i) => (
             <span
               key={i}
@@ -790,10 +784,15 @@ function RelatedCard({ peptide, onJump, tr, t }) {
             </span>
           ))}
         </div>
-        <div className="inline-flex items-center gap-1.5 text-[10px] tracking-[0.22em] uppercase font-bold opacity-70 group-hover:opacity-100 transition-opacity" style={{ color: peptide.accentColor }}>
-          {t('mockup.v2.related.cta') || 'Részletek'}
-          <ArrowUpRight size={11} strokeWidth={2.5} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-        </div>
+      </div>
+
+      {/* Bottom-left: "Részletek" link */}
+      <div
+        className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 text-[10px] tracking-[0.22em] uppercase font-bold opacity-70 group-hover:opacity-100 transition-opacity"
+        style={{ color: peptide.accentColor }}
+      >
+        {t('mockup.v2.related.cta') || 'Részletek'}
+        <ArrowUpRight size={11} strokeWidth={2.5} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
       </div>
     </button>
   )
@@ -1098,13 +1097,7 @@ function DosingPanel({ dosing, accent, tr, t }) {
       )}
 
       {dosing.notes && (
-        <div
-          className="relative p-3.5 rounded-xl flex items-start gap-3 mb-4"
-          style={{
-            background: `${accent}0d`,
-            border: `1px solid ${accent}33`,
-          }}
-        >
+        <div className="flex items-start gap-3 mb-4">
           <AlertTriangle size={15} color={accent} className="shrink-0 mt-0.5" />
           <p className="text-[12px] leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
             {tr(dosing.notes)}
@@ -1800,7 +1793,18 @@ export default function MockupDetailV2({ peptide, onClose }) {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               {peptide.related.map(r => (
-                <RelatedCard key={r.id} peptide={r} tr={tr} t={t} onJump={() => onClose()} />
+                <RelatedCard
+                  key={r.id}
+                  peptide={r}
+                  tr={tr}
+                  t={t}
+                  onJump={(id) => {
+                    onClose()
+                    setTimeout(() => {
+                      window.dispatchEvent(new CustomEvent('open-peptide', { detail: { id } }))
+                    }, 50)
+                  }}
+                />
               ))}
             </div>
           </section>
@@ -1864,11 +1868,14 @@ export default function MockupDetailV2({ peptide, onClose }) {
             <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
               <div className="max-w-md">
                 <p className="text-[10px] tracking-[0.3em] uppercase font-bold mb-2" style={{ color: accent }}>
-                  {t('mockup.cta.title') || 'Csatlakozz'}
+                  Telegram
                 </p>
-                <h3 className="text-2xl font-bold tracking-tight" style={{ color: 'var(--text-primary)' }}>
-                  {t('mockup.cta.body') || 'Lépj kapcsolatba velünk Telegramon.'}
+                <h3 className="text-2xl font-bold tracking-tight mb-1.5" style={{ color: 'var(--text-primary)' }}>
+                  {(t('mockup.cta.title') || 'Kérdésed van a {name}-ről?').replace('{name}', peptide.name)}
                 </h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                  {t('mockup.cta.body') || 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk.'}
+                </p>
               </div>
               <TelegramButtons />
             </div>

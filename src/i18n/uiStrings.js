@@ -89,7 +89,7 @@ export const UI = {
     'mockup.sec.calc.eyebrow': 'Beépített kalkulátor',
     'mockup.sec.calc.title': 'Adagolási segéd — {name}',
     'mockup.cta.title': 'Kérdésed van a {name}-ről?',
-    'mockup.cta.body': 'Lépj kapcsolatba egy tanácsadóval Telegramon — szívesen segítünk.',
+    'mockup.cta.body': 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk.',
     'mockup.disclaimer': 'Az itt található információ kizárólag edukatív és tudományos célt szolgál. Nem helyettesíti az orvosi szakvéleményt vagy a klinikai tanácsadást.',
     'mockup.v2.preview.title': 'Spatial Bento Lab — Kísérleti előnézet',
     'mockup.v2.preview.body': 'Új modal layout: kísérleti bento-rács, lab-konzol és részletes adatlap. Kattints egy peptidre.',
