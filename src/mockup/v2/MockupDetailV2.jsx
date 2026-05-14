@@ -510,8 +510,8 @@ function ExpectationsTimeline({ items, accent, tr }) {
           50%      { transform: scale(1.08); filter: brightness(1.25); }
         }
         @keyframes mlxRailFlow {
-          0%   { background-position: 0% 0%; }
-          100% { background-position: 200% 0%; }
+          0%   { background-position: 200% 0%; }
+          100% { background-position: 0% 0%; }
         }
       `}</style>
       <div
@@ -889,8 +889,8 @@ function Constellation({ steps, accent, tr }) {
           50%      { transform: scale(1.08); filter: brightness(1.25); }
         }
         @keyframes mlxRailFlow {
-          0%   { background-position: 0% 0%; }
-          100% { background-position: 200% 0%; }
+          0%   { background-position: 200% 0%; }
+          100% { background-position: 0% 0%; }
         }
       `}</style>
       <div className="relative grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-0">
@@ -1442,7 +1442,11 @@ export default function MockupDetailV2({ peptide, onClose }) {
             {/* What is */}
             {peptide.whatIs && (
               <GlassCard accent={accent} className="h-full">
-                <Eyebrow icon={Beaker} label={(t('mockup.sec.whatis.eyebrow') || 'Tudományos áttekintés').toUpperCase()} accent={accent} />
+                <Eyebrow
+                  icon={Beaker}
+                  label={(t('mockup.sec.whatis.eyebrow') || 'Mi az a {name}?').replace('{name}', peptide.name).toUpperCase()}
+                  accent={accent}
+                />
                 <h3 className="text-lg font-bold mb-3" style={{ color: 'var(--text-primary)' }}>
                   {(t('mockup.sec.whatis.title') || 'Mi az a {name}?').replace('{name}', peptide.name)}
                 </h3>
