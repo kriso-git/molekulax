@@ -65,7 +65,7 @@ export const UI = {
     'entry.sec.calc.eyebrow': 'Beépített kalkulátor',
     'entry.cta.title': 'Kérdésed van a {name}-ről?',
     'entry.cta.body': 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk.',
-    'entry.disclaimer': 'Az itt található információ kizárólag edukatív és tudományos célt szolgál. Nem helyettesíti az orvosi szakvéleményt vagy a klinikai tanácsadást.',
+    'entry.disclaimer': 'Az itt található információ kizárólag edukatív és tudományos célt szolgál. Nem helyettesíti az orvosi szakvéleményt vagy a klinikai tanácsadást, és nem ösztönöz illegális szer- vagy gyógyszerhasználatra. A felhasznált adatok forrásolva vannak — kétség esetén kérdezd meg orvosodat.',
     'entry.preview.title': 'Spatial Bento Lab — Kísérleti előnézet',
     'entry.preview.body': 'Új modal layout: kísérleti bento-rács, lab-konzol és részletes adatlap. Kattints egy peptidre.',
     'entry.bento.label': 'Spatial profil',
@@ -187,7 +187,7 @@ export const UI = {
 
     // Disclaimer
     'dc.eyebrow': 'Fontos tájékoztatás',
-    'dc.body': 'Ez a weboldal kizárólag edukatív és tájékoztatási céllal jött létre. Nem értékesítünk termékeket, nem nyújtunk orvosi tanácsadást, és nem üzemeltetünk csoportot. Az itt közölt tartalom tudományos forrásokra épül, azonban nem helyettesíti az orvosi szakvéleményt.',
+    'dc.body': 'Ez a weboldal kizárólag edukatív és tájékoztatási céllal jött létre. Nem értékesítünk termékeket, nem nyújtunk orvosi tanácsadást, nem üzemeltetünk csoportot, és nem ösztönzünk illegális szer- vagy gyógyszerhasználatra. Az itt közölt tartalom peer-reviewed tudományos forrásokra épül, azonban nem helyettesíti az orvosi szakvéleményt — kétség esetén fordulj orvosodhoz.',
 
     // Footer
     'footer.rights': '© 2026 MolekulaX. Minden jog fenntartva.',
@@ -265,7 +265,7 @@ export const UI = {
     'entry.sec.calc.eyebrow': 'Built-in calculator',
     'entry.cta.title': 'Have a question about {name}?',
     'entry.cta.body': 'Reach out to an advisor on Telegram. We’ll get back to you.',
-    'entry.disclaimer': 'The information here is strictly for educational and scientific purposes. It does not replace medical advice or clinical consultation.',
+    'entry.disclaimer': 'The information here is strictly for educational and scientific purposes. It does not replace medical advice or clinical consultation, and it does not encourage illegal substance or pharmaceutical use. Data is sourced — when in doubt, consult your doctor.',
     'entry.preview.title': 'Spatial Bento Lab — Experimental Preview',
     'entry.preview.body': 'New modal layout: experimental bento grid, lab console and detailed data sheet. Click a peptide.',
     'entry.bento.label': 'Spatial profile',
@@ -391,7 +391,7 @@ export const UI = {
 
     // Disclaimer
     'dc.eyebrow': 'Important notice',
-    'dc.body': 'This website was created strictly for educational and informational purposes. We do not sell products, do not provide medical advice, and do not run a group. The content is based on scientific sources but does not replace medical advice.',
+    'dc.body': 'This website was created strictly for educational and informational purposes. We do not sell products, do not provide medical advice, do not run a group, and do not encourage illegal substance or pharmaceutical use. The content is based on peer-reviewed scientific sources but does not replace medical advice — when in doubt, consult your doctor.',
 
     // Footer
     'footer.rights': '© 2026 MolekulaX. All rights reserved.',
@@ -472,7 +472,7 @@ export const UI = {
     'entry.sec.calc.eyebrow': 'Wbudowany kalkulator',
     'entry.cta.title': 'Masz pytanie o {name}?',
     'entry.cta.body': 'Skontaktuj się z doradcą na Telegramie. Odpowiemy.',
-    'entry.disclaimer': 'Informacje tutaj są wyłącznie do celów edukacyjnych i naukowych. Nie zastępują porady medycznej ani konsultacji klinicznej.',
+    'entry.disclaimer': 'Informacje tutaj są wyłącznie do celów edukacyjnych i naukowych. Nie zastępują porady medycznej ani konsultacji klinicznej i nie zachęcają do nielegalnego używania substancji ani leków. Dane są źródłowane — w razie wątpliwości skonsultuj się z lekarzem.',
     'entry.preview.title': 'Spatial Bento Lab — Podgląd eksperymentalny',
     'entry.preview.body': 'Nowy layout modalu: eksperymentalna siatka bento, konsola laboratoryjna i szczegółowa karta. Kliknij peptyd.',
     'entry.bento.label': 'Profil przestrzenny',
@@ -594,7 +594,7 @@ export const UI = {
 
     // Disclaimer
     'dc.eyebrow': 'Ważna informacja',
-    'dc.body': 'Ta strona powstała wyłącznie w celach edukacyjnych i informacyjnych. Nie sprzedajemy produktów, nie świadczymy porad medycznych ani nie prowadzimy grupy. Treści opierają się na źródłach naukowych, ale nie zastępują opinii lekarskiej.',
+    'dc.body': 'Ta strona powstała wyłącznie w celach edukacyjnych i informacyjnych. Nie sprzedajemy produktów, nie świadczymy porad medycznych, nie prowadzimy grupy ani nie zachęcamy do nielegalnego używania substancji ani leków. Treści opierają się na recenzowanych naukowo źródłach, ale nie zastępują opinii lekarskiej — w razie wątpliwości skonsultuj się z lekarzem.',
 
     // Footer
     'footer.rights': '© 2026 MolekulaX. Wszelkie prawa zastrzeżone.',
