@@ -12,8 +12,6 @@ import MoleculeBackground from './components/MoleculeBackground'
 import FloatingScientific from './components/FloatingScientific'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
-import PepPediaMockup from './mockup/PepPediaMockup'
-import PepPediaMockupV2 from './mockup/v2/PepPediaMockupV2'
 import EntryDetailRoute, { isEntryDetailHash } from './components/library/EntryDetailRoute'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
@@ -32,8 +30,6 @@ function useHashRoute() {
 
 export default function App() {
   const hash = useHashRoute()
-  const isMockupV2 = hash === 'mockup2' || hash.startsWith('mockup2/')
-  const isMockup = !isMockupV2 && (hash === 'mockup' || hash.startsWith('mockup/'))
   const isEntryDetail = isEntryDetailHash(hash)
   const isDesktop = useMediaQuery('(min-width: 1024px)')
   const hideLanding = isEntryDetail && isDesktop
@@ -47,28 +43,20 @@ export default function App() {
           <ThemeSwitcher />
           <LanguageSwitcher />
           <div className="relative z-10">
-            {isMockupV2 ? (
-              <PepPediaMockupV2 />
-            ) : isMockup ? (
-              <PepPediaMockup />
-            ) : (
+            {!hideLanding && (
               <>
-                {!hideLanding && (
-                  <>
-                    <Hero />
-                    <Education />
-                    <PeptideEffects />
-                    <PeptideGallery />
-                    <Calculator />
-                    <TelegramSection />
-                    <Faq />
-                    <Disclaimer />
-                    <Footer />
-                  </>
-                )}
-                {isEntryDetail && <EntryDetailRoute hash={hash} />}
+                <Hero />
+                <Education />
+                <PeptideEffects />
+                <PeptideGallery />
+                <Calculator />
+                <TelegramSection />
+                <Faq />
+                <Disclaimer />
+                <Footer />
               </>
             )}
+            {isEntryDetail && <EntryDetailRoute hash={hash} />}
           </div>
         </div>
       </LanguageProvider>
