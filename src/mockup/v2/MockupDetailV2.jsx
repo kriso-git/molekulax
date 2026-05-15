@@ -737,8 +737,8 @@ function RelatedCard({ peptide, onJump, tr, t }) {
     const r = e.currentTarget.getBoundingClientRect()
     const x = (e.clientX - r.left) / r.width - 0.5
     const y = (e.clientY - r.top) / r.height - 0.5
-    e.currentTarget.style.setProperty('--mlx-rx', `${-y * 8}deg`)
-    e.currentTarget.style.setProperty('--mlx-ry', `${x * 10}deg`)
+    e.currentTarget.style.setProperty('--mlx-rx', `${-y * 22}deg`)
+    e.currentTarget.style.setProperty('--mlx-ry', `${x * 26}deg`)
   }
   const handleLeave = (e) => {
     e.currentTarget.style.setProperty('--mlx-rx', '0deg')
@@ -1239,8 +1239,8 @@ function StudiesPanel({ studies, accent, tr, t }) {
               const r = e.currentTarget.getBoundingClientRect()
               const x = (e.clientX - r.left) / r.width - 0.5
               const y = (e.clientY - r.top) / r.height - 0.5
-              e.currentTarget.style.setProperty('--mlx-rx', `${-y * 6}deg`)
-              e.currentTarget.style.setProperty('--mlx-ry', `${x * 8}deg`)
+              e.currentTarget.style.setProperty('--mlx-rx', `${-y * 18}deg`)
+              e.currentTarget.style.setProperty('--mlx-ry', `${x * 22}deg`)
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.setProperty('--mlx-rx', '0deg')
@@ -1930,18 +1930,21 @@ export default function MockupDetailV2({ peptide, onClose }) {
                 transform: translateX(25%);
               }
               .mlx-related-name {
+                display: inline-block;
                 transform-origin: left center;
                 transform: scale(1);
                 backface-visibility: hidden;
-                will-change: transform;
-                transition: letter-spacing 380ms ease,
-                            text-shadow 380ms ease,
-                            transform 520ms cubic-bezier(.22,1,.36,1);
+                will-change: transform, filter;
+                transition: letter-spacing 480ms cubic-bezier(.4,0,.2,1),
+                            text-shadow 480ms cubic-bezier(.4,0,.2,1),
+                            filter 520ms cubic-bezier(.4,0,.2,1),
+                            transform 600ms cubic-bezier(.4,0,.2,1);
               }
               .mlx-related-card:hover .mlx-related-name {
-                letter-spacing: 0.005em;
-                text-shadow: 0 0 18px color-mix(in srgb, var(--mlx-accent) 55%, transparent);
-                transform: scale(1.05);
+                letter-spacing: 0.012em;
+                text-shadow: 0 0 22px color-mix(in srgb, var(--mlx-accent) 65%, transparent);
+                filter: brightness(1.15);
+                transform: scale(1.08);
               }
               @media (prefers-reduced-motion: reduce) {
                 .mlx-related-card,
