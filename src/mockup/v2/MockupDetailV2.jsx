@@ -733,27 +733,17 @@ function SafetyTriptych({ profile, accent, tr, t }) {
 // ─── Related Peptides — fixed-corner layout, click jumps to peptide ─
 function RelatedCard({ peptide, onJump, tr, t }) {
   if (!peptide) return null
-  const handleMove = (e) => {
-    const r = e.currentTarget.getBoundingClientRect()
-    const x = (e.clientX - r.left) / r.width - 0.5
-    const y = (e.clientY - r.top) / r.height - 0.5
-    e.currentTarget.style.setProperty('--mlx-rx', `${-y * 22}deg`)
-    e.currentTarget.style.setProperty('--mlx-ry', `${x * 26}deg`)
-  }
-  const handleLeave = (e) => {
-    e.currentTarget.style.setProperty('--mlx-rx', '0deg')
-    e.currentTarget.style.setProperty('--mlx-ry', '0deg')
-  }
+  const tiltRef = useTilt(10)
   return (
     <button
+      ref={tiltRef}
       onClick={() => onJump(peptide.id)}
-      onMouseMove={handleMove}
-      onMouseLeave={handleLeave}
-      className="mlx-related-card group relative rounded-2xl text-left min-h-[180px] overflow-hidden"
+      className="mlx-related-card group relative rounded-2xl text-left min-h-[180px] overflow-hidden transition-transform duration-300 will-change-transform"
       style={{
         background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01))',
         border: '1px solid var(--tint-soft-border)',
         boxShadow: `0 24px 60px -28px ${peptide.accentColor}66`,
+        transformStyle: 'preserve-3d',
         '--mlx-accent': peptide.accentColor,
       }}
     >
@@ -775,54 +765,57 @@ function RelatedCard({ peptide, onJump, tr, t }) {
         style={{ boxShadow: `inset 0 0 0 1px ${peptide.accentColor}66` }}
       />
 
-      {/* Top-left: tier tag */}
-      <span
-        className="absolute top-3 left-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] tracking-[0.22em] uppercase font-bold z-10"
-        style={{
-          background: `${peptide.tierColor}1a`,
-          border: `1px solid ${peptide.tierColor}55`,
-          color: peptide.tierColor,
-        }}
-      >
-        {peptide.tier >= 5 && <ShieldCheck size={9} />}
-        {tr(peptide.tierLabel)}
-      </span>
+      {/* Floating 3D content layer — lifts above card plane */}
+      <div className="absolute inset-0" style={{ transform: 'translateZ(28px)', transformStyle: 'preserve-3d' }}>
+        {/* Top-left: tier tag */}
+        <span
+          className="absolute top-3 left-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] tracking-[0.22em] uppercase font-bold z-10"
+          style={{
+            background: `${peptide.tierColor}1a`,
+            border: `1px solid ${peptide.tierColor}55`,
+            color: peptide.tierColor,
+          }}
+        >
+          {peptide.tier >= 5 && <ShieldCheck size={9} />}
+          {tr(peptide.tierLabel)}
+        </span>
 
-      {/* Universal middle band — name (single line, slightly above center) + chips below */}
-      <div
-        className="absolute left-4 right-4 z-10"
-        style={{ top: '44%', transform: 'translateY(-50%)' }}
-      >
-        <p
-          className="mlx-related-name font-black text-lg tracking-tight leading-tight mb-2.5 whitespace-nowrap overflow-hidden text-ellipsis"
+        {/* Universal middle band — name (single line, slightly above center) + chips below */}
+        <div
+          className="absolute left-4 right-4 z-10"
+          style={{ top: '44%', transform: 'translateY(-50%)' }}
+        >
+          <p
+            className="mlx-related-name font-black text-lg tracking-tight leading-tight mb-2.5 whitespace-nowrap overflow-hidden text-ellipsis"
+            style={{ color: peptide.accentColor }}
+          >
+            {peptide.name}
+          </p>
+          <div className="flex flex-wrap gap-1.5">
+            {peptide.chips.map((c, i) => (
+              <span
+                key={i}
+                className="text-[9px] px-2 py-0.5 rounded-full font-semibold tracking-wide"
+                style={{
+                  background: `${peptide.accentColor}14`,
+                  border: `1px solid ${peptide.accentColor}44`,
+                  color: peptide.accentColor,
+                }}
+              >
+                {tr(c)}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom-left: "Részletek" link */}
+        <div
+          className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 text-[10px] tracking-[0.22em] uppercase font-bold opacity-70 group-hover:opacity-100 transition-opacity z-10"
           style={{ color: peptide.accentColor }}
         >
-          {peptide.name}
-        </p>
-        <div className="flex flex-wrap gap-1.5">
-          {peptide.chips.map((c, i) => (
-            <span
-              key={i}
-              className="text-[9px] px-2 py-0.5 rounded-full font-semibold tracking-wide"
-              style={{
-                background: `${peptide.accentColor}14`,
-                border: `1px solid ${peptide.accentColor}44`,
-                color: peptide.accentColor,
-              }}
-            >
-              {tr(c)}
-            </span>
-          ))}
+          {t('mockup.v2.related.cta') || 'Részletek'}
+          <ArrowUpRight size={11} strokeWidth={2.5} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </div>
-      </div>
-
-      {/* Bottom-left: "Részletek" link */}
-      <div
-        className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 text-[10px] tracking-[0.22em] uppercase font-bold opacity-70 group-hover:opacity-100 transition-opacity z-10"
-        style={{ color: peptide.accentColor }}
-      >
-        {t('mockup.v2.related.cta') || 'Részletek'}
-        <ArrowUpRight size={11} strokeWidth={2.5} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
       </div>
     </button>
   )
@@ -1179,28 +1172,14 @@ function StudiesPanel({ studies, accent, tr, t }) {
     <>
     <style>{`
       .mlx-study-card {
-        --mlx-rx: 0deg;
-        --mlx-ry: 0deg;
-        --mlx-ty: 0px;
-        --mlx-sc: 1;
-        transform: perspective(1000px)
-                   rotateX(var(--mlx-rx))
-                   rotateY(var(--mlx-ry))
-                   translateY(var(--mlx-ty))
-                   scale(var(--mlx-sc));
-        transform-style: preserve-3d;
-        transition: transform 240ms cubic-bezier(.22,1,.36,1),
-                    box-shadow 480ms cubic-bezier(.22,1,.36,1),
+        transition: box-shadow 480ms cubic-bezier(.22,1,.36,1),
                     border-color 360ms ease;
-        will-change: transform;
       }
       .mlx-study-card:hover {
-        --mlx-ty: -5px;
-        --mlx-sc: 1.012;
         border-color: color-mix(in srgb, var(--mlx-accent) 55%, transparent);
         box-shadow:
-          0 32px 56px -22px color-mix(in srgb, var(--mlx-accent) 78%, transparent),
-          0 0 0 1px color-mix(in srgb, var(--mlx-accent) 20%, transparent);
+          0 40px 70px -22px color-mix(in srgb, var(--mlx-accent) 80%, transparent),
+          0 0 0 1px color-mix(in srgb, var(--mlx-accent) 22%, transparent);
       }
       .mlx-study-rail {
         opacity: .85;
@@ -1223,47 +1202,46 @@ function StudiesPanel({ studies, accent, tr, t }) {
         .mlx-study-card:hover,
         .mlx-study-rail,
         .mlx-study-glow { transition: none; transform: none; }
-        .mlx-study-card { --mlx-rx: 0deg; --mlx-ry: 0deg; --mlx-ty: 0px; --mlx-sc: 1; }
       }
     `}</style>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-      {studies.map((s, i) => {
-        const title = typeof s.title === 'string' ? s.title : tr(s.title)
-        const finding = s.finding ? (typeof s.finding === 'string' ? s.finding : tr(s.finding)) : null
-        const tagText = s.tag ? (typeof s.tag === 'string' ? s.tag : tr(s.tag)) : null
-        const tagColor = s.tagText || accent
-        return (
-          <article
-            key={i}
-            onMouseMove={(e) => {
-              const r = e.currentTarget.getBoundingClientRect()
-              const x = (e.clientX - r.left) / r.width - 0.5
-              const y = (e.clientY - r.top) / r.height - 0.5
-              e.currentTarget.style.setProperty('--mlx-rx', `${-y * 18}deg`)
-              e.currentTarget.style.setProperty('--mlx-ry', `${x * 22}deg`)
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.setProperty('--mlx-rx', '0deg')
-              e.currentTarget.style.setProperty('--mlx-ry', '0deg')
-            }}
-            className="mlx-study-card group relative p-4 rounded-2xl overflow-hidden"
-            style={{
-              background: `linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01))`,
-              border: `1px solid ${accent}33`,
-              boxShadow: `0 12px 32px -20px ${accent}55`,
-              '--mlx-accent': accent,
-              '--mlx-tag': tagColor,
-            }}
-          >
-            <div
-              className="mlx-study-rail absolute top-0 left-0 right-0 h-[2px]"
-              style={{ background: `linear-gradient(90deg, transparent, ${tagColor}aa, transparent)` }}
-            />
-            <div
-              className="mlx-study-glow absolute inset-0 pointer-events-none rounded-2xl"
-              style={{ background: `radial-gradient(80% 60% at 50% 0%, ${accent}22, transparent 70%)` }}
-            />
-            <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
+      {studies.map((s, i) => (
+        <StudyCard key={i} s={s} accent={accent} tr={tr} t={t} />
+      ))}
+    </div>
+    </>
+  )
+}
+
+function StudyCard({ s, accent, tr, t }) {
+  const tiltRef = useTilt(8)
+  const title = typeof s.title === 'string' ? s.title : tr(s.title)
+  const finding = s.finding ? (typeof s.finding === 'string' ? s.finding : tr(s.finding)) : null
+  const tagText = s.tag ? (typeof s.tag === 'string' ? s.tag : tr(s.tag)) : null
+  const tagColor = s.tagText || accent
+  return (
+    <article
+      ref={tiltRef}
+      className="mlx-study-card group relative p-4 rounded-2xl overflow-hidden transition-transform duration-300 will-change-transform"
+      style={{
+        background: `linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01))`,
+        border: `1px solid ${accent}33`,
+        boxShadow: `0 12px 32px -20px ${accent}55`,
+        transformStyle: 'preserve-3d',
+        '--mlx-accent': accent,
+        '--mlx-tag': tagColor,
+      }}
+    >
+      <div
+        className="mlx-study-rail absolute top-0 left-0 right-0 h-[2px]"
+        style={{ background: `linear-gradient(90deg, transparent, ${tagColor}aa, transparent)` }}
+      />
+      <div
+        className="mlx-study-glow absolute inset-0 pointer-events-none rounded-2xl"
+        style={{ background: `radial-gradient(80% 60% at 50% 0%, ${accent}22, transparent 70%)` }}
+      />
+      <div className="relative" style={{ transform: 'translateZ(24px)', transformStyle: 'preserve-3d' }}>
+        <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
               <div className="flex items-center gap-2">
                 <span
                   className="w-7 h-7 rounded-lg flex items-center justify-center"
@@ -1327,11 +1305,8 @@ function StudiesPanel({ studies, accent, tr, t }) {
                 </a>
               )}
             </div>
-          </article>
-        )
-      })}
-    </div>
-    </>
+      </div>
+    </article>
   )
 }
 
@@ -1526,8 +1501,6 @@ export default function MockupDetailV2({ peptide, onClose }) {
 
         {/* ─── BENTO GRID: key facts + benefits + mechanism ─── */}
         <section className="relative px-6 sm:px-10 pb-10">
-          <Eyebrow icon={Sparkles} label={t('mockup.v2.bento.label') || 'Spatial Profile'} accent={accent} />
-
           {/* Top row: whatIs (left) + keyFacts (right, fills column height) */}
           <div className="grid gap-4 lg:grid-cols-[7fr_5fr] items-stretch">
             {/* What is */}
@@ -1887,28 +1860,14 @@ export default function MockupDetailV2({ peptide, onClose }) {
           <section className="relative px-6 sm:px-10 pb-10">
             <style>{`
               .mlx-related-card {
-                --mlx-rx: 0deg;
-                --mlx-ry: 0deg;
-                --mlx-ty: 0px;
-                --mlx-sc: 1;
-                transform: perspective(900px)
-                           rotateX(var(--mlx-rx))
-                           rotateY(var(--mlx-ry))
-                           translateY(var(--mlx-ty))
-                           scale(var(--mlx-sc));
-                transform-style: preserve-3d;
-                transition: transform 260ms cubic-bezier(.22,1,.36,1),
-                            box-shadow 420ms cubic-bezier(.22,1,.36,1),
+                transition: box-shadow 420ms cubic-bezier(.22,1,.36,1),
                             border-color 320ms ease;
-                will-change: transform;
               }
               .mlx-related-card:hover {
-                --mlx-ty: -6px;
-                --mlx-sc: 1.015;
-                border-color: color-mix(in srgb, var(--mlx-accent) 38%, transparent);
+                border-color: color-mix(in srgb, var(--mlx-accent) 42%, transparent);
                 box-shadow:
-                  0 42px 80px -26px color-mix(in srgb, var(--mlx-accent) 78%, transparent),
-                  0 0 0 1px color-mix(in srgb, var(--mlx-accent) 22%, transparent);
+                  0 48px 90px -22px color-mix(in srgb, var(--mlx-accent) 85%, transparent),
+                  0 0 0 1px color-mix(in srgb, var(--mlx-accent) 25%, transparent);
               }
               .mlx-related-glow {
                 opacity: .55;
@@ -1956,7 +1915,6 @@ export default function MockupDetailV2({ peptide, onClose }) {
                   transition: none;
                   transform: none;
                 }
-                .mlx-related-card { --mlx-rx: 0deg; --mlx-ry: 0deg; --mlx-ty: 0px; --mlx-sc: 1; }
               }
             `}</style>
             <Eyebrow icon={Layers} label={t('mockup.v2.rel.label') || 'Kapcsolódó peptidek'} accent={accent} />
