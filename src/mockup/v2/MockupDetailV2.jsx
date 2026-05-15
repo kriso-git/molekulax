@@ -736,21 +736,35 @@ function RelatedCard({ peptide, onJump, tr, t }) {
   return (
     <button
       onClick={() => onJump(peptide.id)}
-      className="group relative pt-10 pb-10 px-4 rounded-2xl text-left transition-transform duration-300 hover:-translate-y-0.5 min-h-[180px] flex flex-col"
+      className="mlx-related-card group relative rounded-2xl text-left min-h-[180px] overflow-hidden"
       style={{
         background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01))',
         border: '1px solid var(--tint-soft-border)',
         boxShadow: `0 24px 60px -28px ${peptide.accentColor}66`,
+        '--mlx-accent': peptide.accentColor,
       }}
     >
+      {/* Ambient accent glow — bottom-right, brightens on hover */}
       <div
-        className="absolute -inset-px rounded-2xl pointer-events-none opacity-60"
+        className="mlx-related-glow absolute -inset-px rounded-2xl pointer-events-none"
         style={{ background: `radial-gradient(120% 80% at 100% 0%, ${peptide.accentColor}26, transparent 50%)` }}
+      />
+      {/* Diagonal sheen — sweeps across on hover */}
+      <div
+        className="mlx-related-sheen absolute inset-0 pointer-events-none rounded-2xl"
+        style={{
+          background: `linear-gradient(115deg, transparent 30%, ${peptide.accentColor}1f 50%, transparent 70%)`,
+        }}
+      />
+      {/* Accent ring — fades in on hover */}
+      <div
+        className="mlx-related-ring absolute inset-0 rounded-2xl pointer-events-none"
+        style={{ boxShadow: `inset 0 0 0 1px ${peptide.accentColor}66` }}
       />
 
       {/* Top-left: tier tag */}
       <span
-        className="absolute top-3 left-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] tracking-[0.22em] uppercase font-bold"
+        className="absolute top-3 left-3 inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] tracking-[0.22em] uppercase font-bold z-10"
         style={{
           background: `${peptide.tierColor}1a`,
           border: `1px solid ${peptide.tierColor}55`,
@@ -761,10 +775,13 @@ function RelatedCard({ peptide, onJump, tr, t }) {
         {tr(peptide.tierLabel)}
       </span>
 
-      {/* Middle: name + chips */}
-      <div className="relative flex-1 flex flex-col justify-center">
+      {/* Universal middle band — name (single line, slightly above center) + chips below */}
+      <div
+        className="absolute left-4 right-4 z-10"
+        style={{ top: '44%', transform: 'translateY(-50%)' }}
+      >
         <p
-          className="font-black text-lg tracking-tight leading-tight mb-3"
+          className="mlx-related-name font-black text-lg tracking-tight leading-tight mb-2.5 whitespace-nowrap overflow-hidden text-ellipsis"
           style={{ color: peptide.accentColor }}
         >
           {peptide.name}
@@ -788,7 +805,7 @@ function RelatedCard({ peptide, onJump, tr, t }) {
 
       {/* Bottom-left: "Részletek" link */}
       <div
-        className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 text-[10px] tracking-[0.22em] uppercase font-bold opacity-70 group-hover:opacity-100 transition-opacity"
+        className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 text-[10px] tracking-[0.22em] uppercase font-bold opacity-70 group-hover:opacity-100 transition-opacity z-10"
         style={{ color: peptide.accentColor }}
       >
         {t('mockup.v2.related.cta') || 'Részletek'}
@@ -1146,6 +1163,48 @@ function DosingPanel({ dosing, accent, tr, t }) {
 function StudiesPanel({ studies, accent, tr, t }) {
   if (!studies?.length) return null
   return (
+    <>
+    <style>{`
+      @keyframes mlxStudyFloat {
+        0%, 100% { transform: translateY(-6px); }
+        50%      { transform: translateY(-9px); }
+      }
+      .mlx-study-card {
+        transition: transform 480ms cubic-bezier(.22,1,.36,1),
+                    box-shadow 480ms cubic-bezier(.22,1,.36,1),
+                    border-color 360ms ease;
+        will-change: transform;
+      }
+      .mlx-study-card:hover {
+        animation: mlxStudyFloat 3.4s ease-in-out infinite;
+        border-color: color-mix(in srgb, var(--mlx-accent) 55%, transparent);
+        box-shadow:
+          0 28px 48px -22px color-mix(in srgb, var(--mlx-accent) 75%, transparent),
+          0 0 0 1px color-mix(in srgb, var(--mlx-accent) 18%, transparent);
+      }
+      .mlx-study-rail {
+        opacity: .85;
+        transform: scaleX(.72);
+        transform-origin: center;
+        transition: transform 520ms cubic-bezier(.22,1,.36,1), opacity 380ms ease, filter 380ms ease;
+      }
+      .mlx-study-card:hover .mlx-study-rail {
+        opacity: 1;
+        transform: scaleX(1);
+        filter: drop-shadow(0 0 6px color-mix(in srgb, var(--mlx-tag) 80%, transparent));
+      }
+      .mlx-study-glow {
+        opacity: 0;
+        transition: opacity 480ms ease;
+      }
+      .mlx-study-card:hover .mlx-study-glow { opacity: 1; }
+      @media (prefers-reduced-motion: reduce) {
+        .mlx-study-card,
+        .mlx-study-card:hover,
+        .mlx-study-rail,
+        .mlx-study-glow { animation: none; transition: none; transform: none; }
+      }
+    `}</style>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
       {studies.map((s, i) => {
         const title = typeof s.title === 'string' ? s.title : tr(s.title)
@@ -1155,16 +1214,22 @@ function StudiesPanel({ studies, accent, tr, t }) {
         return (
           <article
             key={i}
-            className="relative p-4 rounded-2xl overflow-hidden transition-all hover:translate-y-[-2px]"
+            className="mlx-study-card group relative p-4 rounded-2xl overflow-hidden"
             style={{
               background: `linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01))`,
               border: `1px solid ${accent}33`,
               boxShadow: `0 12px 32px -20px ${accent}55`,
+              '--mlx-accent': accent,
+              '--mlx-tag': tagColor,
             }}
           >
             <div
-              className="absolute top-0 left-0 right-0 h-[2px]"
+              className="mlx-study-rail absolute top-0 left-0 right-0 h-[2px]"
               style={{ background: `linear-gradient(90deg, transparent, ${tagColor}aa, transparent)` }}
+            />
+            <div
+              className="mlx-study-glow absolute inset-0 pointer-events-none rounded-2xl"
+              style={{ background: `radial-gradient(80% 60% at 50% 0%, ${accent}22, transparent 70%)` }}
             />
             <div className="flex items-center justify-between gap-2 mb-2 flex-wrap">
               <div className="flex items-center gap-2">
@@ -1234,6 +1299,7 @@ function StudiesPanel({ studies, accent, tr, t }) {
         )
       })}
     </div>
+    </>
   )
 }
 
@@ -1787,6 +1853,55 @@ export default function MockupDetailV2({ peptide, onClose }) {
         {/* ─── RELATED PEPTIDES (3D tilt cards) ─── */}
         {peptide.related?.length > 0 && (
           <section className="relative px-6 sm:px-10 pb-10">
+            <style>{`
+              .mlx-related-card {
+                transition: transform 420ms cubic-bezier(.22,1,.36,1),
+                            box-shadow 420ms cubic-bezier(.22,1,.36,1),
+                            border-color 320ms ease;
+                will-change: transform;
+              }
+              .mlx-related-card:hover {
+                transform: translateY(-6px) scale(1.015);
+                border-color: color-mix(in srgb, var(--mlx-accent) 38%, transparent);
+                box-shadow:
+                  0 38px 70px -28px color-mix(in srgb, var(--mlx-accent) 70%, transparent),
+                  0 0 0 1px color-mix(in srgb, var(--mlx-accent) 22%, transparent);
+              }
+              .mlx-related-glow {
+                opacity: .55;
+                transition: opacity 380ms ease;
+              }
+              .mlx-related-card:hover .mlx-related-glow { opacity: 1; }
+              .mlx-related-ring {
+                opacity: 0;
+                transition: opacity 360ms ease;
+              }
+              .mlx-related-card:hover .mlx-related-ring { opacity: 1; }
+              .mlx-related-sheen {
+                opacity: 0;
+                transform: translateX(-25%);
+                transition: opacity 520ms ease, transform 720ms cubic-bezier(.22,1,.36,1);
+              }
+              .mlx-related-card:hover .mlx-related-sheen {
+                opacity: 1;
+                transform: translateX(25%);
+              }
+              .mlx-related-name {
+                transition: letter-spacing 380ms ease, text-shadow 380ms ease, transform 420ms cubic-bezier(.22,1,.36,1);
+              }
+              .mlx-related-card:hover .mlx-related-name {
+                letter-spacing: 0.005em;
+                text-shadow: 0 0 18px color-mix(in srgb, var(--mlx-accent) 55%, transparent);
+              }
+              @media (prefers-reduced-motion: reduce) {
+                .mlx-related-card,
+                .mlx-related-card:hover,
+                .mlx-related-glow,
+                .mlx-related-ring,
+                .mlx-related-sheen,
+                .mlx-related-name { transition: none; transform: none; }
+              }
+            `}</style>
             <Eyebrow icon={Layers} label={t('mockup.v2.rel.label') || 'Kapcsolódó peptidek'} accent={accent} />
             <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
               {t('mockup.v2.rel.title') || 'Hasonló terápiás kategóriában'}
