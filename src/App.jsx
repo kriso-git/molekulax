@@ -14,12 +14,11 @@ import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
 import PepPediaMockup from './mockup/PepPediaMockup'
 import PepPediaMockupV2 from './mockup/v2/PepPediaMockupV2'
+import EntryDetailRoute, { isEntryDetailHash } from './components/library/EntryDetailRoute'
+import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
 import { ThemeProvider } from './theme/ThemeContext'
 
-// Hash-based router for the design-preview mockup. Active when the URL
-// hash starts with `#mockup` (visit https://…/#mockup to view). Keeps
-// the production site untouched and zero-cost when not used.
 function useHashRoute() {
   const read = () => (typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, ''))
   const [hash, setHash] = useState(read)
@@ -35,6 +34,9 @@ export default function App() {
   const hash = useHashRoute()
   const isMockupV2 = hash === 'mockup2' || hash.startsWith('mockup2/')
   const isMockup = !isMockupV2 && (hash === 'mockup' || hash.startsWith('mockup/'))
+  const isEntryDetail = isEntryDetailHash(hash)
+  const isDesktop = useMediaQuery('(min-width: 1024px)')
+  const hideLanding = isEntryDetail && isDesktop
 
   return (
     <ThemeProvider>
@@ -51,15 +53,20 @@ export default function App() {
               <PepPediaMockup />
             ) : (
               <>
-                <Hero />
-                <Education />
-                <PeptideEffects />
-                <PeptideGallery />
-                <Calculator />
-                <TelegramSection />
-                <Faq />
-                <Disclaimer />
-                <Footer />
+                {!hideLanding && (
+                  <>
+                    <Hero />
+                    <Education />
+                    <PeptideEffects />
+                    <PeptideGallery />
+                    <Calculator />
+                    <TelegramSection />
+                    <Faq />
+                    <Disclaimer />
+                    <Footer />
+                  </>
+                )}
+                {isEntryDetail && <EntryDetailRoute hash={hash} />}
               </>
             )}
           </div>

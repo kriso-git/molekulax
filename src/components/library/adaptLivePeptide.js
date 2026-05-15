@@ -2,9 +2,9 @@
 // MockupDetail-expected shape. Missing fields fall back to null/empty so
 // MockupDetail can skip those sections gracefully.
 
-import { CATEGORIES, getPeptideCategories } from '../data/peptideCategories'
-import { getResearchLevel, getLevelMeta } from '../data/researchLevel'
-import { PEPTIDES } from '../data/peptides'
+import { CATEGORIES, getPeptideCategories } from '../../data/peptideCategories'
+import { getResearchLevel, getLevelMeta } from '../../data/researchLevel'
+import { PEPTIDES } from '../../data/peptides'
 
 // Match keyInfo entries by translated label fragment (HU/EN/PL).
 function findFactByLabel(keyInfo, fragments) {
