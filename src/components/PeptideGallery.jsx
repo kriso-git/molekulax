@@ -8,7 +8,6 @@ import {
   ArrowDownAZ, ArrowUpAZ, BarChart3,
 } from 'lucide-react'
 import VialImage from './VialImage'
-import PeptideModal from './PeptideModal'
 import TelegramButtons from './TelegramButtons'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
@@ -219,10 +218,16 @@ function SortControl({ value, onChange, t }) {
 }
 
 // ── Main component ───────────────────────────────────────────────────────────
-// Accepts an optional `DetailComponent` prop so the design-preview mockup
-// route can swap the detail view (MockupDetail) without forking the gallery.
-export default function PeptideGallery({ DetailComponent = PeptideModal }) {
-  const [selected, setSelected] = useState(null)
+// Tile clicks update the URL hash to #entry/peptides/<id>; the App-level
+// EntryDetailRoute observes the hash and renders the detail view (modal on
+// mobile, full page on desktop).
+function openPeptide(peptide) {
+  if (typeof window !== 'undefined') {
+    window.location.hash = `entry/peptides/${peptide.id}`
+  }
+}
+
+export default function PeptideGallery() {
   const [expanded, setExpanded] = useState(false)
   const [showFilters, setShowFilters] = useState(false)
   const [query, setQuery] = useState('')
@@ -261,18 +266,7 @@ export default function PeptideGallery({ DetailComponent = PeptideModal }) {
     return matched.sort(makeSortComparator(sortMode))
   }, [query, lang, activeFilters, levelFilters, sortMode])
 
-  useEffect(() => {
-    const handler = (e) => {
-      const peptide = PEPTIDES.find(p => p.id === e.detail.id)
-      if (!peptide) return
-      sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-      setTimeout(() => setSelected(peptide), 500)
-    }
-    window.addEventListener('open-peptide', handler)
-    return () => window.removeEventListener('open-peptide', handler)
-  }, [])
-
-  const toggleExpanded = () => {
+const toggleExpanded = () => {
     setExpanded(prev => {
       const next = !prev
       if (next) {
@@ -330,7 +324,7 @@ export default function PeptideGallery({ DetailComponent = PeptideModal }) {
                 key={peptide.id}
                 peptide={peptide}
                 featured
-                onSelect={setSelected}
+                onSelect={openPeptide}
                 t={t}
                 tr={tr}
                 lang={lang}
@@ -580,7 +574,7 @@ export default function PeptideGallery({ DetailComponent = PeptideModal }) {
                         key={peptide.id}
                         peptide={peptide}
                         featured={false}
-                        onSelect={setSelected}
+                        onSelect={openPeptide}
                         t={t}
                         tr={tr}
                         lang={lang}
@@ -595,9 +589,6 @@ export default function PeptideGallery({ DetailComponent = PeptideModal }) {
         </div>
       </section>
 
-      {selected && (
-        <DetailComponent peptide={selected} onClose={() => setSelected(null)} />
-      )}
     </>
   )
 }
