@@ -1322,7 +1322,7 @@ function StudyCard({ s, accent, tr, t }) {
   )
 }
 
-export default function MockupDetailV2({ peptide, onClose }) {
+export default function EntryDetail({ peptide, onClose, onJump }) {
   const { t, tr } = useLang()
   const [tab, setTab] = useState('molecular')
   const [entered, setEntered] = useState(false)
@@ -1940,12 +1940,7 @@ export default function MockupDetailV2({ peptide, onClose }) {
                   peptide={r}
                   tr={tr}
                   t={t}
-                  onJump={(id) => {
-                    onClose()
-                    setTimeout(() => {
-                      window.dispatchEvent(new CustomEvent('open-peptide', { detail: { id } }))
-                    }, 50)
-                  }}
+                  onJump={onJump}
                 />
               ))}
             </div>
