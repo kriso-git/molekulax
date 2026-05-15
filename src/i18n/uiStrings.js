@@ -57,6 +57,7 @@ export const UI = {
 
     // Mockup view (#mockup route)
     'mockup.back': 'Vissza a fő oldalra',
+    'entry.back': 'Vissza a könyvtárba',
     'mockup.preview.title': 'Design preview: pep-pedia-stílusú adatlap',
     'mockup.preview.body': 'A peptid könyvtár éles UI-ja; a kártyára kattintva a teljes adatlap nyílik meg.',
     'mockup.card.cta': 'Adatlap',
@@ -290,6 +291,7 @@ export const UI = {
 
     // Mockup view (#mockup route)
     'mockup.back': 'Back to main site',
+    'entry.back': 'Back to library',
     'mockup.preview.title': 'Design preview: pep-pedia-style data sheet',
     'mockup.preview.body': 'The peptide library uses the live UI; clicking a card opens the new full detail page.',
     'mockup.card.cta': 'Data sheet',
@@ -530,6 +532,7 @@ export const UI = {
 
     // Mockup view (#mockup route)
     'mockup.back': 'Powrót do strony głównej',
+    'entry.back': 'Powrót do biblioteki',
     'mockup.preview.title': 'Podgląd designu: karta w stylu pep-pedia',
     'mockup.preview.body': 'Biblioteka peptydów korzysta z UI produkcyjnego; kliknięcie karty otwiera pełną kartę danych.',
     'mockup.card.cta': 'Karta danych',
