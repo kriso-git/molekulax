@@ -4,21 +4,21 @@
 export const UI = {
   hu: {
     // Hero
-    'hero.badge': 'Peptid edukáció',
-    'hero.tagline': 'Adagolási protokollok és kutatási források peptidekhez, tudományos alapon',
+    'hero.badge': 'Farmakológiai edukáció',
+    'hero.tagline': 'Peptidek, nootropikumok, teljesítményfokozók és gyógyszerek tudományos alapon',
     'hero.subtitle': 'Tudományos alapokon',
-    'hero.body.start': 'A peptidek biológiai hatásait tudományos alapokon vizsgáljuk. Kérdéseiddel fordulj ',
+    'hero.body.start': '4 önálló terület — peptidek, nootropikumok, teljesítményfokozók és gyógyszerek — biológiai hatásait tudományos alapokon vizsgáljuk. Kérdéseiddel fordulj ',
     'hero.body.bold': 'tanácsadóinkhoz',
     'hero.body.end': ', akik Telegramon érhetők el.',
     'hero.cta.telegram': 'Kapcsolatfelvétel Telegramon',
     'hero.cta.tiktok': 'Kövess TikTokon',
-    'hero.ticker': 'MolekulaX: Peptid edukáció  •  Klinikai források  •  Tudományalapú Útmutatás  •  Tanácsadás  •  ',
+    'hero.ticker': 'MolekulaX: Farmakológiai edukáció  •  Klinikai források  •  Peptidek · Nootropikumok · Teljesítményfokozók · Gyógyszerek  •  Tanácsadás  •  ',
 
     // Education
     'edu.eyebrow': 'Tudásbázis',
     'edu.title': 'Miért a MolekulaX?',
-    'edu.f1.title': 'Peptid farmakológia',
-    'edu.f1.desc': 'Az endogén és szintetikus peptidek hatásmechanizmusainak tudományos áttekintése a receptorkötéstől a sejtes jelzési utakig.',
+    'edu.f1.title': 'Tudományos farmakológia',
+    'edu.f1.desc': 'Hatóanyagok mechanizmusainak tudományos áttekintése a receptorkötéstől a sejtes jelzési utakig — peptidekre, nootropikumokra, teljesítményfokozókra és gyógyszerekre egyaránt.',
     'edu.f2.title': 'Klinikai kutatások',
     'edu.f2.desc': 'Peer-reviewed tanulmányokra és PubMed hivatkozásokra építünk. Csak forrásolt adat.',
     'edu.f3.title': 'Tanácsadók elérhetősége',
@@ -207,21 +207,21 @@ export const UI = {
 
   en: {
     // Hero
-    'hero.badge': 'Peptide education',
-    'hero.tagline': 'Dosing protocols and research sources for peptides, grounded in science',
+    'hero.badge': 'Pharmacology education',
+    'hero.tagline': 'Peptides, nootropics, performance enhancers and pharmaceuticals — grounded in science',
     'hero.subtitle': 'Grounded in science',
-    'hero.body.start': 'We examine the biological effects of peptides on a scientific basis. Send your questions to ',
+    'hero.body.start': 'Four independent fields — peptides, nootropics, performance enhancers and pharmaceuticals — explored on a scientific basis. Send your questions to ',
     'hero.body.bold': 'our advisors',
     'hero.body.end': ', who are available on Telegram.',
     'hero.cta.telegram': 'Contact us on Telegram',
     'hero.cta.tiktok': 'Follow on TikTok',
-    'hero.ticker': 'MolekulaX: Peptide education  •  Clinical sources  •  Science-based guidance  •  Advisory  •  ',
+    'hero.ticker': 'MolekulaX: Pharmacology education  •  Clinical sources  •  Peptides · Nootropics · Performance enhancers · Pharmaceuticals  •  Advisory  •  ',
 
     // Education
     'edu.eyebrow': 'Knowledge base',
     'edu.title': 'Why MolekulaX?',
-    'edu.f1.title': 'Peptide pharmacology',
-    'edu.f1.desc': 'A scientific overview of the mechanisms of action of endogenous and synthetic peptides, from receptor binding to cellular signalling pathways.',
+    'edu.f1.title': 'Scientific pharmacology',
+    'edu.f1.desc': 'A scientific overview of compound mechanisms of action — from receptor binding to cellular signalling pathways — across peptides, nootropics, performance enhancers and pharmaceuticals.',
     'edu.f2.title': 'Clinical research',
     'edu.f2.desc': 'We build on peer-reviewed studies and PubMed references. Sourced data only.',
     'edu.f3.title': 'Advisors available',
@@ -411,21 +411,21 @@ export const UI = {
 
   pl: {
     // Hero
-    'hero.badge': 'Edukacja peptydowa',
-    'hero.tagline': 'Protokoły dawkowania i źródła badawcze dotyczące peptydów, na podstawie naukowej',
+    'hero.badge': 'Edukacja farmakologiczna',
+    'hero.tagline': 'Peptydy, nootropiki, środki wspomagające i farmaceutyki — na podstawie naukowej',
     'hero.subtitle': 'Na podstawie naukowej',
-    'hero.body.start': 'Badamy biologiczne działanie peptydów na podstawie naukowej. Z pytaniami zwróć się do ',
+    'hero.body.start': 'Cztery niezależne obszary — peptydy, nootropiki, środki wspomagające i farmaceutyki — badane na podstawie naukowej. Z pytaniami zwróć się do ',
     'hero.body.bold': 'naszych doradców',
     'hero.body.end': ', którzy są dostępni na Telegramie.',
     'hero.cta.telegram': 'Kontakt przez Telegram',
     'hero.cta.tiktok': 'Obserwuj na TikToku',
-    'hero.ticker': 'MolekulaX: Edukacja peptydowa  •  Źródła kliniczne  •  Wskazówki oparte na nauce  •  Doradztwo  •  ',
+    'hero.ticker': 'MolekulaX: Edukacja farmakologiczna  •  Źródła kliniczne  •  Peptydy · Nootropiki · Środki wspomagające · Farmaceutyki  •  Doradztwo  •  ',
 
     // Education
     'edu.eyebrow': 'Baza wiedzy',
     'edu.title': 'Dlaczego MolekulaX?',
-    'edu.f1.title': 'Farmakologia peptydów',
-    'edu.f1.desc': 'Naukowy przegląd mechanizmów działania peptydów endogennych i syntetycznych, od wiązania z receptorami po szlaki sygnałowe komórek.',
+    'edu.f1.title': 'Farmakologia naukowa',
+    'edu.f1.desc': 'Naukowy przegląd mechanizmów działania substancji czynnych — od wiązania z receptorami po szlaki sygnałowe komórek — peptydy, nootropiki, środki wspomagające i farmaceutyki.',
     'edu.f2.title': 'Badania kliniczne',
     'edu.f2.desc': 'Opieramy się na recenzowanych badaniach i odniesieniach PubMed. Wyłącznie dane ze źródeł.',
     'edu.f3.title': 'Dostępność doradców',
