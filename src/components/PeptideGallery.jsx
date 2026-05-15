@@ -266,7 +266,23 @@ export default function PeptideGallery() {
     return matched.sort(makeSortComparator(sortMode))
   }, [query, lang, activeFilters, levelFilters, sortMode])
 
-const toggleExpanded = () => {
+  // Scroll the gallery into view when the URL hash becomes #library (e.g. the
+  // user closes an entry-detail view). The browser's native anchor-scroll only
+  // fires on initial load, so we handle it here for in-app navigation too.
+  useEffect(() => {
+    const scrollIfLibrary = () => {
+      if (window.location.hash === '#library' && sectionRef.current) {
+        requestAnimationFrame(() => {
+          sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        })
+      }
+    }
+    scrollIfLibrary()
+    window.addEventListener('hashchange', scrollIfLibrary)
+    return () => window.removeEventListener('hashchange', scrollIfLibrary)
+  }, [])
+
+  const toggleExpanded = () => {
     setExpanded(prev => {
       const next = !prev
       if (next) {
@@ -293,7 +309,7 @@ const toggleExpanded = () => {
 
   return (
     <>
-      <section ref={sectionRef} className="py-28 px-4">
+      <section id="library" ref={sectionRef} className="py-28 px-4 scroll-mt-24">
         <div className="max-w-6xl mx-auto">
 
           <div className="text-center mb-16">

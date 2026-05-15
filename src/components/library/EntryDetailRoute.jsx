@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { ArrowLeft, X } from 'lucide-react'
+import { X } from 'lucide-react'
 import { PEPTIDES } from '../../data/peptides'
 import { adaptLivePeptide } from './adaptLivePeptide'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
@@ -20,7 +20,10 @@ export function isEntryDetailHash(hash) {
 
 function closeDetail() {
   if (typeof window === 'undefined') return
-  window.location.hash = ''
+  // Land back on the library section instead of jumping to the top of the
+  // page. The hashchange triggers App.jsx to render the landing, and the
+  // browser auto-scrolls to the #library anchor on PeptideGallery.
+  window.location.hash = 'library'
 }
 
 export default function EntryDetailRoute({ hash }) {
@@ -56,24 +59,7 @@ export default function EntryDetailRoute({ hash }) {
   }
 
   if (isDesktop) {
-    return (
-      <div className="relative">
-        <button
-          onClick={(e) => { e.preventDefault(); closeDetail() }}
-          className="fixed top-6 left-6 z-50 inline-flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-semibold tracking-wide transition-colors"
-          style={{
-            background: 'var(--tint-soft)',
-            border: '1px solid var(--tint-soft-border)',
-            color: 'var(--text-primary)',
-          }}
-          aria-label={t('entry.back') || 'Vissza a könyvtárba'}
-        >
-          <ArrowLeft size={14} strokeWidth={2.5} />
-          {t('entry.back') || 'Vissza a könyvtárba'}
-        </button>
-        <EntryDetail peptide={peptide} onClose={closeDetail} onJump={handleJump} />
-      </div>
-    )
+    return <EntryDetail peptide={peptide} onClose={closeDetail} onJump={handleJump} />
   }
 
   return (

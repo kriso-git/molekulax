@@ -10,12 +10,13 @@ import { useState, useEffect, useRef, useMemo } from 'react'
 import {
   X, ShieldCheck, ShieldAlert, Atom, Sparkles, Flame, Sprout, Brain,
   Shield, Moon, Heart, Leaf, Activity, Beaker, Rocket, FlaskConical,
-  ArrowUpRight, ChevronRight, Calculator, ExternalLink, Zap, Plus, Minus,
+  ArrowLeft, ArrowUpRight, ChevronRight, Calculator, ExternalLink, Zap, Plus, Minus,
   Check, AlertTriangle, XCircle, ChevronDown, Layers, Link as LinkIcon,
   CircleDot, Droplets, ClipboardList, TimerReset, Network, HelpCircle,
   Clock, BookOpen, Syringe, Pill, CalendarClock, CheckCircle2, Ban,
 } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
+import { useTheme } from '../../theme/ThemeContext'
 import TelegramButtons from '../TelegramButtons'
 import MiniCalc from '../MiniCalc'
 
@@ -141,13 +142,17 @@ function ParticleField({ color = '#a78bfa', count = 32 }) {
 }
 
 // ─── Conic-gradient halo ring around the vial ────────────────────────
-function HoloRing({ color, tierColor }) {
+function HoloRing({ color, tierColor, isLight }) {
+  // In light mode, dial down ring alpha so it complements the cream backdrop
+  // instead of fighting it.
+  const o = isLight ? { strong: '99', medium: '66', light: '44', faint: '33' }
+                    : { strong: 'cc', medium: 'aa', light: '66', faint: '55' }
   return (
     <>
       <div
         className="absolute inset-0 rounded-full animate-[spin_18s_linear_infinite] pointer-events-none"
         style={{
-          background: `conic-gradient(from 0deg, ${color}00, ${color}cc, ${tierColor}cc, ${color}00 60%, ${color}aa, ${color}00)`,
+          background: `conic-gradient(from 0deg, ${color}00, ${color}${o.strong}, ${tierColor}${o.strong}, ${color}00 60%, ${color}${o.medium}, ${color}00)`,
           mask: 'radial-gradient(circle, transparent 58%, black 60%, black 80%, transparent 82%)',
           WebkitMask: 'radial-gradient(circle, transparent 58%, black 60%, black 80%, transparent 82%)',
           filter: 'blur(0.5px)',
@@ -156,7 +161,7 @@ function HoloRing({ color, tierColor }) {
       <div
         className="absolute inset-4 rounded-full animate-[spin_30s_linear_infinite_reverse] pointer-events-none"
         style={{
-          background: `conic-gradient(from 90deg, ${tierColor}00, ${tierColor}55 25%, ${tierColor}00 50%, ${color}66 75%, ${tierColor}00)`,
+          background: `conic-gradient(from 90deg, ${tierColor}00, ${tierColor}${o.faint} 25%, ${tierColor}00 50%, ${color}${o.light} 75%, ${tierColor}00)`,
           mask: 'radial-gradient(circle, transparent 70%, black 72%, black 88%, transparent 90%)',
           WebkitMask: 'radial-gradient(circle, transparent 70%, black 72%, black 88%, transparent 90%)',
         }}
@@ -182,7 +187,7 @@ function LabTerminal({ rows, accent, tr }) {
     <div
       className="relative p-5 rounded-2xl overflow-hidden"
       style={{
-        background: 'rgba(2,6,23,0.72)',
+        background: 'var(--bg-tile)',
         border: `1px solid ${accent}44`,
         boxShadow: `0 0 32px -10px ${accent}55, inset 0 0 60px rgba(0,0,0,0.4)`,
         fontFamily: 'ui-monospace, "SF Mono", "Cascadia Mono", Consolas, monospace',
@@ -259,7 +264,7 @@ function IndicationsAccordion({ items, tr, t }) {
             style={{
               background: isOpen
                 ? `linear-gradient(135deg, ${it.accent}14, ${it.accent}04 60%, transparent)`
-                : 'rgba(255,255,255,0.025)',
+                : 'var(--tint-soft)',
               border: `1px solid ${isOpen ? it.accent + '55' : 'var(--tint-soft-border)'}`,
               boxShadow: isOpen ? `0 24px 60px -28px ${it.accent}66` : 'none',
             }}
@@ -368,8 +373,8 @@ function ReconstitutePath({ steps, accent, tr }) {
           100% { top: calc(100% - 16px); opacity: 0; transform: scale(0.6); }
         }
         @keyframes mlxChipBreath {
-          0%, 100% { box-shadow: 0 6px 18px -8px var(--mlx-chip-glow), inset 0 1px 0 rgba(255,255,255,0.18); }
-          50%      { box-shadow: 0 6px 26px -6px var(--mlx-chip-glow), inset 0 1px 0 rgba(255,255,255,0.28); }
+          0%, 100% { box-shadow: 0 6px 18px -8px var(--mlx-chip-glow), inset 0 1px 0 var(--tint-medium-border); }
+          50%      { box-shadow: 0 6px 26px -6px var(--mlx-chip-glow), inset 0 1px 0 var(--tint-strong-border); }
         }
       `}</style>
       <ol className="space-y-3">
@@ -384,7 +389,7 @@ function ReconstitutePath({ steps, accent, tr }) {
                 background: `radial-gradient(circle at 30% 30%, ${accent}3a, ${accent}10)`,
                 border: `1px solid ${accent}66`,
                 color: accent,
-                boxShadow: `0 6px 18px -8px ${accent}cc, inset 0 1px 0 rgba(255,255,255,0.18)`,
+                boxShadow: `0 6px 18px -8px ${accent}cc, inset 0 1px 0 var(--tint-medium-border)`,
                 animation: `mlxChipBreath 4.5s ease-in-out ${i * 0.35}s infinite`,
                 '--mlx-chip-glow': `${accent}cc`,
                 backdropFilter: 'blur(6px)',
@@ -473,7 +478,7 @@ function QualityGrid({ items, tr, t }) {
                   key={i}
                   className="relative flex items-start gap-2.5 p-2.5 rounded-lg"
                   style={{
-                    background: 'rgba(255,255,255,0.025)',
+                    background: 'var(--tint-soft)',
                     border: `1px solid ${group.color}1f`,
                   }}
                 >
@@ -627,7 +632,7 @@ function InteractionsOrbit({ items, tr }) {
             key={i}
             className="relative p-3.5 rounded-xl overflow-hidden group transition-all hover:translate-y-[-1px]"
             style={{
-              background: `linear-gradient(135deg, ${color}0a, rgba(255,255,255,0.02))`,
+              background: `linear-gradient(135deg, ${color}0a, var(--tint-soft))`,
               border: `1px solid ${color}33`,
             }}
           >
@@ -646,7 +651,7 @@ function InteractionsOrbit({ items, tr }) {
                   background: `linear-gradient(135deg, ${color}26, ${color}0d)`,
                   border: `1px solid ${color}55`,
                   color,
-                  boxShadow: `0 0 18px -6px ${color}aa, inset 0 1px 0 rgba(255,255,255,0.1)`,
+                  boxShadow: `0 0 18px -6px ${color}aa, inset 0 1px 0 var(--tint-strong)`,
                 }}
               >
                 <StatusIcon size={16} strokeWidth={2.4} />
@@ -752,7 +757,7 @@ function RelatedCard({ peptide, onJump, tr, t }) {
       onClick={() => onJump(peptide.id)}
       className="mlx-related-card group relative rounded-2xl text-left min-h-[180px] overflow-hidden transition-transform duration-300 will-change-transform"
       style={{
-        background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01))',
+        background: 'linear-gradient(135deg, var(--tint-soft), var(--tint-soft))',
         border: '1px solid var(--tint-soft-border)',
         boxShadow: `0 24px 60px -28px ${peptide.accentColor}66`,
         transformStyle: 'preserve-3d',
@@ -884,11 +889,11 @@ function GlassCard({ children, accent, className = '', style = {}, area, tilt = 
       className={`relative p-5 rounded-2xl transition-transform duration-300 will-change-transform ${className}`}
       style={{
         gridArea: area,
-        background: 'linear-gradient(135deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01))',
+        background: 'linear-gradient(135deg, var(--tint-soft), var(--tint-soft))',
         border: '1px solid var(--tint-soft-border)',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
-        boxShadow: `0 24px 60px -28px ${accent}55, inset 0 1px 0 rgba(255,255,255,0.06)`,
+        boxShadow: `0 24px 60px -28px ${accent}55, inset 0 1px 0 var(--tint-medium)`,
         transformStyle: 'preserve-3d',
         ...style,
       }}
@@ -995,27 +1000,31 @@ function Constellation({ steps, accent, tr }) {
 }
 
 // ─── Vial Holosphere — center hero element ─────────────────────────
-function Holosphere({ image, name, accent, tierColor }) {
+function Holosphere({ image, name, accent, tierColor, isLight }) {
   return (
     <div className="relative w-full aspect-square max-w-[420px] mx-auto">
       {/* Outer glow */}
       <div
         className="absolute inset-0 rounded-full pointer-events-none"
         style={{
-          background: `radial-gradient(circle at 50% 50%, ${accent}30 0%, transparent 60%)`,
+          background: isLight
+            ? `radial-gradient(circle at 50% 50%, ${accent}1a 0%, transparent 60%)`
+            : `radial-gradient(circle at 50% 50%, ${accent}30 0%, transparent 60%)`,
           filter: 'blur(20px)',
         }}
       />
       <ParticleField color={accent} count={42} />
-      <HoloRing color={accent} tierColor={tierColor} />
+      <HoloRing color={accent} tierColor={tierColor} isLight={isLight} />
       {/* Vial */}
       <div className="absolute inset-[18%] flex items-center justify-center">
         {image ? (
           <img
             src={image}
             alt={`${name} vial`}
-            className="w-full h-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)]"
-            style={{ filter: `drop-shadow(0 0 30px ${accent}66)` }}
+            className={isLight
+              ? "w-full h-full object-contain drop-shadow-[0_10px_24px_rgba(15,23,42,0.25)]"
+              : "w-full h-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)]"}
+            style={{ filter: `drop-shadow(0 0 ${isLight ? '18px' : '30px'} ${accent}${isLight ? '33' : '66'})` }}
             draggable="false"
           />
         ) : (
@@ -1026,7 +1035,9 @@ function Holosphere({ image, name, accent, tierColor }) {
       <div
         className="absolute bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-4 rounded-full"
         style={{
-          background: `radial-gradient(ellipse at center, ${accent}66 0%, transparent 70%)`,
+          background: isLight
+            ? `radial-gradient(ellipse at center, ${accent}33 0%, transparent 70%)`
+            : `radial-gradient(ellipse at center, ${accent}66 0%, transparent 70%)`,
           filter: 'blur(8px)',
         }}
       />
@@ -1040,7 +1051,7 @@ function TabPills({ tabs, active, onChange, accent }) {
     <div
       className="inline-flex p-1 rounded-full"
       style={{
-        background: 'rgba(255,255,255,0.04)',
+        background: 'var(--tint-soft)',
         border: '1px solid var(--tint-soft-border)',
       }}
     >
@@ -1084,7 +1095,7 @@ function DosingPanel({ dosing, accent, tr, t }) {
     <div
       className="relative p-5 rounded-2xl overflow-hidden"
       style={{
-        background: 'rgba(255,255,255,0.02)',
+        background: 'var(--tint-soft)',
         border: '1px solid var(--tint-soft-border)',
       }}
     >
@@ -1103,7 +1114,7 @@ function DosingPanel({ dosing, accent, tr, t }) {
                 key={s.id}
                 className="relative p-3 rounded-xl overflow-hidden"
                 style={{
-                  background: `linear-gradient(135deg, ${accent}10, rgba(255,255,255,0.02))`,
+                  background: `linear-gradient(135deg, ${accent}10, var(--tint-soft))`,
                   border: `1px solid ${accent}33`,
                 }}
               >
@@ -1151,7 +1162,7 @@ function DosingPanel({ dosing, accent, tr, t }) {
                 key={i}
                 className="relative p-3 rounded-xl"
                 style={{
-                  background: 'rgba(255,255,255,0.03)',
+                  background: 'var(--tint-row)',
                   border: `1px solid ${accent}26`,
                 }}
               >
@@ -1236,7 +1247,7 @@ function StudyCard({ s, accent, tr, t }) {
       ref={tiltRef}
       className="mlx-study-card group relative p-4 rounded-2xl overflow-hidden transition-transform duration-300 will-change-transform"
       style={{
-        background: `linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01))`,
+        background: `linear-gradient(180deg, var(--tint-row), var(--tint-soft))`,
         border: `1px solid ${accent}33`,
         boxShadow: `0 12px 32px -20px ${accent}55`,
         transformStyle: 'preserve-3d',
@@ -1324,6 +1335,8 @@ function StudyCard({ s, accent, tr, t }) {
 
 export default function EntryDetail({ peptide, onClose, onJump }) {
   const { t, tr } = useLang()
+  const { theme } = useTheme()
+  const isLight = theme === 'light'
   const [tab, setTab] = useState('molecular')
   const [entered, setEntered] = useState(false)
   const magnetRef = useMagnet(0.25)
@@ -1356,7 +1369,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
     <div
       className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto"
       style={{
-        background: 'rgba(2,6,23,0.86)',
+        background: 'var(--bg-modal-fade)',
         backdropFilter: 'blur(20px)',
         WebkitBackdropFilter: 'blur(20px)',
       }}
@@ -1379,28 +1392,33 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
               radial-gradient(110% 60% at 0% 0%, ${accent}26, transparent 50%),
               radial-gradient(80% 50% at 100% 0%, ${tierColor}22, transparent 60%),
               radial-gradient(120% 80% at 50% 100%, ${accent}18, transparent 60%),
-              linear-gradient(180deg, rgba(11,11,30,0.92), rgba(7,7,22,0.96))
+              linear-gradient(180deg, var(--bg-modal-fade), var(--bg-tile-fade))
             `,
-            border: '1px solid rgba(255,255,255,0.08)',
+            border: '1px solid var(--tint-strong)',
             boxShadow: `0 80px 200px -40px ${accent}33, 0 30px 80px -30px rgba(0,0,0,0.7)`,
           }}
         />
 
         {/* ─── Top chrome bar ─── */}
         <div className="relative flex items-center justify-between gap-4 px-6 sm:px-10 pt-6 pb-3">
-          <div className="flex items-center gap-2">
-            <span className="text-[10px] tracking-[0.3em] uppercase font-bold" style={{ color: accent }}>
-              MolekulaX · Spatial
-            </span>
-            <span className="text-[10px] tracking-[0.3em] uppercase opacity-50" style={{ color: 'var(--text-muted)' }}>
-              · v2
-            </span>
-          </div>
+          <button
+            onClick={onClose}
+            className="inline-flex items-center gap-2 px-3 py-2 rounded-lg text-[10px] tracking-[0.22em] uppercase font-bold transition-all hover:gap-3"
+            style={{
+              background: 'var(--tint-medium)',
+              border: '1px solid var(--tint-soft-border)',
+              color: 'var(--text-primary)',
+            }}
+            aria-label={t('entry.back') || 'Vissza a könyvtárba'}
+          >
+            <ArrowLeft size={12} strokeWidth={2.5} />
+            {t('entry.back') || 'Vissza a könyvtárba'}
+          </button>
           <button
             onClick={onClose}
             className="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110"
             style={{
-              background: 'rgba(255,255,255,0.06)',
+              background: 'var(--tint-medium)',
               border: '1px solid var(--tint-soft-border)',
               color: 'var(--text-primary)',
             }}
@@ -1430,7 +1448,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
                 <span
                   className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] tracking-[0.22em] uppercase font-semibold"
                   style={{
-                    background: 'rgba(255,255,255,0.04)',
+                    background: 'var(--tint-soft)',
                     border: '1px solid var(--tint-soft-border)',
                     color: 'var(--text-muted)',
                   }}
@@ -1444,11 +1462,15 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
             <h1
               className="font-black tracking-tight leading-none text-5xl sm:text-6xl lg:text-7xl mb-3"
               style={{
-                background: `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
+                background: isLight
+                  ? `linear-gradient(135deg, #0f172a 0%, ${accent} 55%, ${tierColor} 100%)`
+                  : `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
                 WebkitBackgroundClip: 'text',
                 backgroundClip: 'text',
                 color: 'transparent',
-                filter: `drop-shadow(0 4px 24px ${accent}55)`,
+                filter: isLight
+                  ? `drop-shadow(0 2px 8px ${accent}33)`
+                  : `drop-shadow(0 4px 24px ${accent}55)`,
               }}
             >
               {peptide.name}
@@ -1471,7 +1493,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
                     key={i}
                     className="text-[10px] px-2 py-0.5 rounded-full tracking-wide"
                     style={{
-                      background: 'rgba(255,255,255,0.04)',
+                      background: 'var(--tint-soft)',
                       border: '1px solid var(--tint-soft-border)',
                       color: 'var(--text-muted)',
                     }}
@@ -1492,9 +1514,14 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
                 }}
                 className="group relative inline-flex items-center gap-2 px-5 py-3 rounded-full font-bold text-sm tracking-wide transition-transform"
                 style={{
-                  background: `linear-gradient(135deg, ${accent}, ${tierColor})`,
-                  color: '#0a0a1a',
-                  boxShadow: `0 12px 40px -10px ${accent}cc, inset 0 1px 0 rgba(255,255,255,0.4)`,
+                  background: isLight
+                    ? `linear-gradient(135deg, ${accent}ee, ${tierColor}ee)`
+                    : `linear-gradient(135deg, ${accent}, ${tierColor})`,
+                  color: '#ffffff',
+                  textShadow: '0 1px 2px rgba(0,0,0,0.25)',
+                  boxShadow: isLight
+                    ? `0 8px 24px -8px ${accent}88, inset 0 1px 0 rgba(255,255,255,0.4)`
+                    : `0 12px 40px -10px ${accent}cc, inset 0 1px 0 rgba(255,255,255,0.4)`,
                 }}
               >
                 <Calculator size={15} strokeWidth={2.5} />
@@ -1507,7 +1534,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
           {/* Holosphere */}
           <div className="order-1 lg:order-2 flex items-center justify-center">
-            <Holosphere image={peptide.image} name={peptide.name} accent={accent} tierColor={tierColor} />
+            <Holosphere image={peptide.image} name={peptide.name} accent={accent} tierColor={tierColor} isLight={isLight} />
           </div>
         </section>
 
@@ -1540,7 +1567,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
                     key={i}
                     className="relative p-3 rounded-xl overflow-hidden"
                     style={{
-                      background: 'rgba(255,255,255,0.03)',
+                      background: 'var(--tint-row)',
                       border: '1px solid var(--tint-soft-border)',
                     }}
                   >
@@ -1607,7 +1634,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
             <div
               className="relative p-6 rounded-2xl"
               style={{
-                background: 'linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01))',
+                background: 'linear-gradient(135deg, var(--tint-row), var(--tint-soft))',
                 border: '1px solid var(--tint-soft-border)',
               }}
             >
@@ -1623,7 +1650,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
             <div
               className="relative p-6 rounded-2xl overflow-hidden"
               style={{
-                background: 'rgba(255,255,255,0.02)',
+                background: 'var(--tint-soft)',
                 border: '1px solid var(--tint-soft-border)',
               }}
             >
@@ -1665,7 +1692,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
             <div
               className="relative p-5 rounded-2xl overflow-hidden"
               style={{
-                background: 'rgba(2,6,23,0.72)',
+                background: 'var(--bg-tile)',
                 border: `1px solid ${accent}44`,
                 fontFamily: 'ui-monospace, "SF Mono", Consolas, monospace',
               }}
@@ -1795,7 +1822,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
             <div
               className="relative p-5 rounded-2xl"
               style={{
-                background: 'rgba(255,255,255,0.02)',
+                background: 'var(--tint-soft)',
                 border: '1px solid var(--tint-soft-border)',
               }}
             >
@@ -1814,7 +1841,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
             <div
               className="relative p-6 rounded-2xl overflow-x-auto"
               style={{
-                background: 'rgba(255,255,255,0.02)',
+                background: 'var(--tint-soft)',
                 border: '1px solid var(--tint-soft-border)',
               }}
             >
