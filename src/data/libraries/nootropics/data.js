@@ -279,4 +279,263 @@ export const NOOTROPICS = [
     ],
     related: ['piracetam', 'aniracetam', 'coluracetam', 'semax'],
   },
+
+  // ===== 4. PHENYLPIRACETAM =====
+  {
+    id: 'phenylpiracetam',
+    name: 'Phenylpiracetam',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Phenyl-csoport piracetam-vázon. Stimuláns racetam + dopaminerg modulátor, WADA tiltott versenysportban.',
+      en: 'Phenyl group on the piracetam scaffold. Stimulant racetam + dopaminergic modulator, WADA-banned in competition.',
+      pl: 'Grupa fenylowa na szkielecie piracetamu. Stymulujący racetam + modulator dopaminergiczny, zakazany przez WADA w zawodach.',
+    },
+    description: {
+      hu: 'A Phenylpiracetam (Phenotropil, Carphedon) egy fenil-csoporttal módosított piracetam-analóg, amelyet Oroszországban fejlesztettek ki eredetileg űrhajósok kognitív és fizikai teljesítmény-támogatására stress-körülmények között. Stimuláns hatású nootropikum, dopaminerg + noradrenerg modulátor + AMPA-receptor pozitív moduláció. WADA-tiltott (S6 stimulánsok kategória) versenysportban. Oroszországban Rx; EU/USA-ban kutatási vegyület.',
+      en: 'Phenylpiracetam (Phenotropil, Carphedon) is a phenyl-modified piracetam analogue, developed in Russia originally to support cognitive and physical performance under stress (cosmonaut program). A stimulant-class nootropic with dopaminergic + noradrenergic modulation and AMPA positive allosteric modulation. WADA-banned (S6 stimulants) in competition. Rx in Russia; research chemical in EU/USA.',
+      pl: 'Fenylopiracetam (Phenotropil, Carphedon) to analog piracetamu z grupą fenylową, opracowany w Rosji pierwotnie dla wspierania wydajności poznawczej i fizycznej w warunkach stresu (program kosmiczny). Nootropik o działaniu stymulującym, modulator dopaminergiczny + noradrenergiczny + pozytywna allosteryczna modulacja AMPA. Zakazany przez WADA (S6 stymulanty) w zawodach. Rx w Rosji; substancja badawcza w UE/USA.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' }, value: { hu: 'Stimuláns racetam + DAT-modulátor', en: 'Stimulant racetam + DAT modulator', pl: 'Stymulujący racetam + modulator DAT' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, value: { hu: '3-5 óra', en: '3-5 hours', pl: '3-5 godzin' } },
+      { label: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Czas wystąpienia' }, value: { hu: '30-60 perc', en: '30-60 min', pl: '30-60 min' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'Russia Rx, WADA banned', en: 'Russia Rx, WADA banned', pl: 'Rosja Rx, WADA zabroniony' } },
+    ],
+    mechanism: {
+      hu: 'Piracetam-váz + para-fenil-csoport. AMPA-receptor pozitív moduláció + dopaminerg/noradrenerg reuptake-gátlás.',
+      en: 'Piracetam scaffold + para-phenyl group. AMPA receptor positive modulation + dopaminergic/noradrenergic reuptake inhibition.',
+      pl: 'Szkielet piracetamu + grupa para-fenylowa. Pozytywna modulacja receptora AMPA + hamowanie wychwytu zwrotnego dopaminy/noradrenaliny.',
+    },
+    legalStatus: {
+      hu: 'Russia: Rx (Phenotropil, Carphedon). EU/USA: kutatási vegyület, nem FDA-jóváhagyott. WADA: S6 tiltott versenysportban.',
+      en: 'Russia: Rx (Phenotropil, Carphedon). EU/USA: research chemical, not FDA-approved. WADA: S6 banned in competition.',
+      pl: 'Rosja: Rx (Phenotropil, Carphedon). UE/USA: substancja badawcza, niezatwierdzona przez FDA. WADA: S6 zabroniony w zawodach.',
+    },
+    onsetTime: '30-60 min',
+    halfLife: '3-5 h',
+    interactionsWith: ['caffeine', 'stimulants', 'MAOI'],
+    wadaStatus: 'banned',
+    benefits: [
+      { hu: 'Akut kognitív és figyelem-emelkedés (stim-jellegű)', en: 'Acute cognitive and attention boost (stim-like)', pl: 'Ostry wzrost poznawczy i uwagi (jak stymulant)' },
+      { hu: 'Fizikai teljesítmény és állóképesség javítása (orosz katonai/űrkutatási adatok)', en: 'Physical performance and stamina enhancement (Russian military/space data)', pl: 'Poprawa wydolności fizycznej i wytrzymałości (rosyjskie dane wojskowe/kosmiczne)' },
+      { hu: 'Hidegtűrés és stress-resilience javítása', en: 'Cold tolerance and stress resilience', pl: 'Tolerancja zimna i odporność na stres' },
+      { hu: 'Cerebrovascular kognitív zavarok (orosz klinikai adatok)', en: 'Cerebrovascular cognitive disorders (Russian clinical data)', pl: 'Naczyniowo-mózgowe zaburzenia poznawcze (rosyjskie dane kliniczne)' },
+    ],
+    quickStart: [
+      { hu: '100-200 mg reggel, üres gyomorra vagy könnyű étkezéssel', en: '100-200 mg morning, empty stomach or light meal', pl: '100-200 mg rano, na pusty żołądek lub z lekkim posiłkiem' },
+      { hu: 'Cholinforrást egyidejűleg (racetam-jelleg miatt)', en: 'Co-administer choline source (racetam character)', pl: 'Współpodawać źródło choliny (charakter racetamowy)' },
+      { hu: 'Csak alkalmankénti használat (max 2-3× hét) — gyors tolerancia-fejlődés', en: 'Occasional use only (max 2-3× per week) — rapid tolerance development', pl: 'Tylko sporadyczne stosowanie (maks. 2-3× tygodniowo) — szybkie tolerowanie' },
+      { hu: 'NE szedd 14:00 után, alvászavar-kockázat', en: 'Do NOT take after 2 pm, sleep disruption risk', pl: 'NIE przyjmować po 14:00, ryzyko zaburzeń snu' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: '30-60 perc múlva tiszta éberség, akut stimuláció (Modafinilhez közelebbi, mint Piracetamhoz). Enyhe szapora szívverés lehetséges.', en: 'Clean wakefulness and acute stimulation after 30-60 min (closer to Modafinil than Piracetam). Mild tachycardia possible.', pl: 'Czysta czujność i ostra stymulacja po 30-60 min (bliżej do Modafinilu niż Piracetamu). Możliwa łagodna tachykardia.' } },
+      { label: { hu: '3-5 óra', en: '3-5 hours', pl: '3-5 godzin' }, body: { hu: 'Plateau, tartós fókusz; rövidebb hatástartam mint Modafinilnél.', en: 'Plateau, sustained focus; shorter duration than Modafinil.', pl: 'Plateau, trwały fokus; krótszy czas działania niż Modafinil.' } },
+      { label: { hu: '5-7 nap', en: '5-7 days', pl: '5-7 dni' }, body: { hu: 'Tolerancia gyorsan kialakul napi szedés esetén — alkalmankénti használat ajánlott.', en: 'Tolerance develops rapidly with daily use — occasional use recommended.', pl: 'Tolerancja rozwija się szybko przy codziennym stosowaniu — zalecane sporadyczne użycie.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Fehér kristályos por vagy tabletta (Phenotropil 100 mg)', en: 'White crystalline powder or tablet (Phenotropil 100 mg)', pl: 'Biały krystaliczny proszek lub tabletka (Phenotropil 100 mg)' },
+        { hu: 'Vízben mérsékelten oldódó', en: 'Moderately water-soluble', pl: 'Umiarkowanie rozpuszczalny w wodzie' },
+      ],
+      caution: [
+        { hu: 'Álmatlanság, irritáció, tachycardia', en: 'Insomnia, irritability, tachycardia', pl: 'Bezsenność, drażliwość, tachykardia' },
+        { hu: 'Tolerancia gyors fejlődés napi szedéssel', en: 'Rapid tolerance development with daily use', pl: 'Szybkie tolerowanie przy codziennym stosowaniu' },
+      ],
+      avoid: [
+        { hu: 'Versenysportolóknak (WADA S6 tiltott)', en: 'Competitive athletes (WADA S6 banned)', pl: 'Sportowcy zawodowi (WADA S6 zakaz)' },
+        { hu: 'Súlyos hipertónia, instabil szívbetegség', en: 'Severe hypertension, unstable heart disease', pl: 'Ciężkie nadciśnienie, niestabilna choroba serca' },
+        { hu: 'Terhesség, szoptatás', en: 'Pregnancy, breastfeeding', pl: 'Ciąża, karmienie piersią' },
+      ],
+    },
+    interactions: [
+      { hu: 'Más stimulánsokkal (koffein, amfetaminok) additív tachycardia-kockázat', en: 'Additive tachycardia risk with other stimulants (caffeine, amphetamines)', pl: 'Addytywne ryzyko tachykardii z innymi stymulantami (kofeina, amfetaminy)' },
+      { hu: 'MAOI együttszedés szigorúan kerülendő (hipertenzív krízis)', en: 'MAOI co-administration strictly contraindicated (hypertensive crisis)', pl: 'Współpodawanie MAOI ściśle przeciwwskazane (kryzys nadciśnieniowy)' },
+      { hu: 'Cholin-forrással szinergisztikus (racetam-rész miatt)', en: 'Synergistic with choline source (due to racetam moiety)', pl: 'Synergiczny ze źródłem choliny (ze względu na ugrupowanie racetamowe)' },
+    ],
+    studies: [
+      { title: 'Piracetam and piracetam-like drugs: pharmacology and clinical use', authors: 'Malykh AG, Sadaie MR.', journal: 'Drugs. 2010;70(3):287-312.', pmid: '20166767' },
+      { title: 'Phenotropil in cerebrovascular insufficiency', authors: 'Savchenko AI et al.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2005;105(12):22-26.', pmid: '16447598' },
+      { title: 'Phenotropil in the treatment of chronic ischemic brain disease', authors: 'Kalinskii PP, Nazarov VV.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2007;107(2):61-63.', pmid: '17593821' },
+    ],
+    faq: [
+      { q: { hu: 'Miért gyors a tolerancia?', en: 'Why does tolerance develop so fast?', pl: 'Dlaczego tolerancja rozwija się tak szybko?' }, a: { hu: 'A dopaminerg + noradrenerg reuptake-gátlás miatt — hasonló mechanizmus mint klasszikus stimulánsoknál. Receptor-downregulation 5-7 napon belül napi szedéssel.', en: 'Due to dopaminergic + noradrenergic reuptake inhibition — similar mechanism to classic stimulants. Receptor downregulation within 5-7 days of daily use.', pl: 'Ze względu na hamowanie wychwytu zwrotnego dopaminy + noradrenaliny — mechanizm podobny do klasycznych stymulantów. Obniżenie regulacji receptorów w ciągu 5-7 dni codziennego stosowania.' } },
+      { q: { hu: 'WADA-tiltás teljes vagy csak in-competition?', en: 'Is the WADA ban full or in-competition only?', pl: 'Czy zakaz WADA jest pełny czy tylko w zawodach?' }, a: { hu: 'In-competition tiltott (S6 stimulánsok). Out-of-competition használat sportszövetségenként eltérő — versenyző sportolóknak biztonságosabb teljesen kerülni.', en: 'Banned in-competition (S6 stimulants). Out-of-competition status varies by federation — safer for athletes to avoid entirely.', pl: 'Zabroniony w zawodach (S6 stymulanty). Status poza zawodami zależy od federacji — bezpieczniej dla sportowców unikać całkowicie.' } },
+      { q: { hu: 'Kombinálható Modafinillel?', en: 'Can it be combined with Modafinil?', pl: 'Czy można łączyć z Modafinilem?' }, a: { hu: 'Klinikailag nem szokványos és nem ajánlott — átfedő stimuláns mechanizmus, tachycardia + álmatlanság kockázat. Egyik vagy másik.', en: 'Clinically uncommon and not recommended — overlapping stimulant mechanisms, tachycardia + insomnia risk. Use one or the other.', pl: 'Klinicznie rzadkie i niezalecane — nakładające się mechanizmy stymulujące, ryzyko tachykardii + bezsenności. Stosować jeden lub drugi.' } },
+    ],
+    related: ['piracetam', 'modafinil', 'bromantane', 'aniracetam'],
+  },
+
+  // ===== 5. ADRAFINIL =====
+  {
+    id: 'adrafinil',
+    name: 'Adrafinil',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: 'Modafinil prekurzor (hepatikus konverzió). EU-régiókban OTC, lassabb hatáskezdettel.',
+      en: 'Modafinil prodrug (hepatic conversion). OTC in some EU regions, with slower onset.',
+      pl: 'Prolek Modafinilu (konwersja wątrobowa). OTC w niektórych regionach UE, z wolniejszym wystąpieniem.',
+    },
+    description: {
+      hu: 'Az Adrafinil egy difenil-metil-szulfinil-acetamid származék, a Modafinil hepatikus prekurzora — a májban metabolizálódik Modafinillé (CYP1A2 + CYP3A4 enzimek). Eugeroikum (alfa-1 adrenerg agonista hatású), wakefulness-promoting. Eredetileg Franciaországban hagyták jóvá narkolepszia-kezelésre (Olmifon), később 2011-ben kivonták a piacról kereskedelmi okokból. Jelenleg EU-régiókban kutatási vegyület / OTC státuszban, USA-ban kiegészítőként hozzáférhető.',
+      en: 'Adrafinil is a diphenylmethylsulfinylacetamide derivative and the hepatic prodrug of Modafinil — metabolized in the liver to Modafinil (CYP1A2 + CYP3A4 enzymes). A eugeroic (alpha-1 adrenergic agonist), wakefulness-promoting. Originally approved in France for narcolepsy (Olmifon), then withdrawn in 2011 for commercial reasons. Currently a research chemical / OTC in EU regions, available as a supplement in the USA.',
+      pl: 'Adrafinil to pochodna difenylometylosulfinyloacetamidu i prolek wątrobowy Modafinilu — metabolizowany w wątrobie do Modafinilu (enzymy CYP1A2 + CYP3A4). Eugeroik (agonista alfa-1 adrenergiczny), wzmacniający czuwanie. Pierwotnie zatwierdzony we Francji dla narkolepsji (Olmifon), wycofany w 2011 r. z przyczyn komercyjnych. Obecnie substancja badawcza / OTC w UE, dostępny jako suplement w USA.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' }, value: { hu: 'Modafinil prodrug, alfa-1 adrenerg', en: 'Modafinil prodrug, alpha-1 adrenergic', pl: 'Prolek Modafinilu, alfa-1 adrenergiczny' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, value: { hu: '1 óra (Adrafinil) / 12-15 óra (Modafinil)', en: '1 h (Adrafinil) / 12-15 h (Modafinil)', pl: '1 h (Adrafinil) / 12-15 h (Modafinil)' } },
+      { label: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Czas wystąpienia' }, value: { hu: '60-90 perc', en: '60-90 min', pl: '60-90 min' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'EU OTC research, USA OTC', en: 'EU OTC research, USA OTC', pl: 'UE OTC badania, USA OTC' } },
+    ],
+    mechanism: {
+      hu: 'Adrafinil = Modafinil prekurzor. Hepatikus CYP1A2/CYP3A4 konverzió után aktív Modafinil-szerű hatás (lásd Modafinil entry).',
+      en: 'Adrafinil = Modafinil prodrug. After hepatic CYP1A2/CYP3A4 conversion, exerts Modafinil-like action (see Modafinil entry).',
+      pl: 'Adrafinil = prolek Modafinilu. Po wątrobowej konwersji CYP1A2/CYP3A4 wykazuje działanie podobne do Modafinilu (patrz wpis Modafinilu).',
+    },
+    legalStatus: {
+      hu: 'EU: OTC kutatási vegyület, korábban Olmifon Rx Franciaországban. USA: OTC supplement. WADA: tiltott (Modafinil-metabolit miatt).',
+      en: 'EU: OTC research chemical, formerly Olmifon Rx in France. USA: OTC supplement. WADA: banned (due to Modafinil metabolite).',
+      pl: 'UE: OTC substancja badawcza, dawniej Olmifon Rx we Francji. USA: OTC suplement. WADA: zabroniony (ze względu na metabolit Modafinilu).',
+    },
+    onsetTime: '60-90 min',
+    halfLife: '1 h (Adrafinil) → 12-15 h (Modafinil)',
+    interactionsWith: ['caffeine', 'alcohol', 'hormonal contraceptives'],
+    wadaStatus: 'banned',
+    benefits: [
+      { hu: 'Wakefulness-promoting, hasonló profil mint Modafinil', en: 'Wakefulness-promoting, similar profile to Modafinil', pl: 'Wzmacniający czuwanie, podobny profil jak Modafinil' },
+      { hu: 'Narkolepszia-szerű fáradtság-szindrómák kezelése (történelmi Olmifon)', en: 'Narcolepsy-like fatigue syndromes (historical Olmifon)', pl: 'Zespoły zmęczenia podobne do narkolepsji (historycznie Olmifon)' },
+      { hu: 'EU-régiókban Modafinil-alternatíva ahol Rx nem elérhető', en: 'EU regions: Modafinil alternative where Rx unavailable', pl: 'W UE: alternatywa dla Modafinilu, gdzie Rx niedostępny' },
+    ],
+    quickStart: [
+      { hu: '300-600 mg reggel, üres gyomorra; lassabb hatáskezdet (60-90 perc)', en: '300-600 mg morning, empty stomach; slower onset (60-90 min)', pl: '300-600 mg rano, na pusty żołądek; wolniejsze wystąpienie (60-90 min)' },
+      { hu: 'Máj-konverzió miatt MAGASABB dózis szükséges mint Modafinilnél (~3-4×)', en: 'Higher dose needed than Modafinil (~3-4×) due to hepatic conversion', pl: 'Wymagana wyższa dawka niż Modafinilu (~3-4×) ze względu na konwersję wątrobową' },
+      { hu: 'Krónikus használat ELLEN — máj-enzim emelkedés (ALT/AST monitorozás)', en: 'AGAINST chronic use — hepatic enzyme elevation (monitor ALT/AST)', pl: 'PRZECIW przewlekłemu stosowaniu — podwyższenie enzymów wątrobowych (monitorować ALT/AST)' },
+      { hu: '14:00 után NE — Modafinil felezési idő miatt alvászavar', en: 'Do NOT take after 2 pm — Modafinil half-life disrupts sleep', pl: 'NIE po 14:00 — okres półtrwania Modafinilu zaburza sen' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: '60-90 perc múlva éberség (lassabb mint Modafinil). Plateau 4-8 órán át. Fejfájás, szájszárazság előfordulhat.', en: 'Wakefulness after 60-90 min (slower than Modafinil). Plateau 4-8 hours. Headache, dry mouth possible.', pl: 'Czujność po 60-90 min (wolniejsza niż Modafinil). Plateau 4-8 godzin. Możliwy ból głowy, sucha jama ustna.' } },
+      { label: { hu: '4-8 óra', en: '4-8 hours', pl: '4-8 godzin' }, body: { hu: 'Plateau-éberség, tartós koncentráció — funkcionálisan ekvivalens Modafinillel.', en: 'Plateau wakefulness, sustained focus — functionally equivalent to Modafinil.', pl: 'Plateau czujności, trwała koncentracja — funkcjonalnie równoważne Modafinilowi.' } },
+      { label: { hu: 'Hetente', en: 'Weekly', pl: 'Tygodniowo' }, body: { hu: 'Krónikus szedéssel ALT/AST emelkedés-kockázat — max 2-3× hét, nem napi.', en: 'Chronic dosing carries ALT/AST elevation risk — max 2-3× per week, not daily.', pl: 'Przewlekłe dawkowanie niesie ryzyko podwyższenia ALT/AST — maks. 2-3× tygodniowo, nie codziennie.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Fehér por vagy kapszula (300 mg standard)', en: 'White powder or capsule (300 mg standard)', pl: 'Biały proszek lub kapsułka (300 mg standardowo)' },
+        { hu: 'Rosszul vízben oldódó, jól lipid-oldódó', en: 'Poorly water-soluble, lipid-soluble', pl: 'Słabo rozpuszczalny w wodzie, dobrze w lipidach' },
+      ],
+      caution: [
+        { hu: 'Máj-enzim emelkedés (ALT/AST) — rendszeres ellenőrzés', en: 'Hepatic enzyme elevation (ALT/AST) — periodic monitoring', pl: 'Podwyższenie enzymów wątrobowych (ALT/AST) — okresowe monitorowanie' },
+        { hu: 'Fejfájás, szájszárazság, mérsékelt vérnyomás-emelkedés', en: 'Headache, dry mouth, mild blood pressure elevation', pl: 'Ból głowy, sucha jama ustna, łagodne podwyższenie ciśnienia' },
+      ],
+      avoid: [
+        { hu: 'Súlyos májbetegség (hepatikus konverzió-függő)', en: 'Severe liver disease (hepatic conversion-dependent)', pl: 'Ciężka choroba wątroby (zależna od konwersji wątrobowej)' },
+        { hu: 'Terhesség, szoptatás', en: 'Pregnancy, breastfeeding', pl: 'Ciąża, karmienie piersią' },
+        { hu: 'Versenysportolóknak (WADA tiltott)', en: 'Competitive athletes (WADA banned)', pl: 'Sportowcy zawodowi (WADA zakaz)' },
+      ],
+    },
+    interactions: [
+      { hu: 'Hormonális fogamzásgátló hatékonyság-csökkenés (Modafinil-metabolit CYP3A4-indukció)', en: 'Hormonal contraceptive efficacy reduction (Modafinil metabolite CYP3A4 induction)', pl: 'Zmniejszenie skuteczności antykoncepcji hormonalnej (indukcja CYP3A4 metabolitem Modafinilu)' },
+      { hu: 'Alkohol kerülendő (máj-terhelés + Modafinil-szerű hatás)', en: 'Avoid alcohol (liver burden + Modafinil-like effect)', pl: 'Unikać alkoholu (obciążenie wątroby + działanie podobne do Modafinilu)' },
+      { hu: 'Koffeinnel additív stimuláció', en: 'Additive stimulation with caffeine', pl: 'Stymulacja addytywna z kofeiną' },
+    ],
+    studies: [
+      { title: 'Adrafinil and modafinil — pharmacokinetic comparison', authors: 'Robertson P Jr, Hellriegel ET.', journal: 'Clin Pharmacokinet. 2003;42(2):123-137.', pmid: '12537513' },
+      { title: 'Adrafinil: a novel vigilance promoting agent', authors: 'Milgram NW et al.', journal: 'CNS Drug Rev. 2000;6(2):136-153.', pmid: '11079215' },
+    ],
+    faq: [
+      { q: { hu: 'Miért Adrafinilt válasszak Modafinil helyett?', en: 'Why pick Adrafinil over Modafinil?', pl: 'Dlaczego wybrać Adrafinil zamiast Modafinilu?' }, a: { hu: 'EU/USA-régiókban Adrafinil OTC státusza miatt hozzáférhetőbb mint a Rx Modafinil. Funkcionálisan közel azonos, de hepatikus máj-terhelés és lassabb hatáskezdet hátrányok.', en: "Adrafinil's OTC status in EU/USA makes it more accessible than Rx Modafinil. Functionally near-identical, but hepatic liver burden and slower onset are drawbacks.", pl: 'Status OTC Adrafinilu w UE/USA czyni go bardziej dostępnym niż Rx Modafinil. Funkcjonalnie niemal identyczny, ale obciążenie wątroby i wolniejsze wystąpienie to wady.' } },
+      { q: { hu: 'Mennyi a Modafinil-ekvivalens dózis?', en: 'What is the Modafinil-equivalent dose?', pl: 'Jaka jest dawka równoważna Modafinilu?' }, a: { hu: 'Hozzávetőleg 300 mg Adrafinil ≈ 100 mg Modafinil (konverziós hatékonyság 30-40%). 600 mg Adrafinil ≈ 200 mg Modafinil.', en: 'Roughly 300 mg Adrafinil ≈ 100 mg Modafinil (conversion efficiency 30-40%). 600 mg Adrafinil ≈ 200 mg Modafinil.', pl: 'Około 300 mg Adrafinilu ≈ 100 mg Modafinilu (skuteczność konwersji 30-40%). 600 mg Adrafinilu ≈ 200 mg Modafinilu.' } },
+      { q: { hu: 'Máj-károsodás kockázata?', en: 'Risk of liver damage?', pl: 'Ryzyko uszkodzenia wątroby?' }, a: { hu: 'Krónikus napi szedés ALT/AST emelkedést okozhat. Alkalmankénti használat (2-3× hét) + periódusos vérvizsgálat ajánlott a krónikus máj-terhelés elkerülésére.', en: 'Chronic daily use can elevate ALT/AST. Occasional use (2-3× per week) + periodic blood tests recommended to avoid chronic hepatic burden.', pl: 'Przewlekłe codzienne stosowanie może podwyższać ALT/AST. Sporadyczne użycie (2-3× tygodniowo) + okresowe badania krwi zalecane.' } },
+    ],
+    related: ['modafinil', 'armodafinil', 'flmodafinil'],
+  },
+
+  // ===== 6. BROMANTANE =====
+  {
+    id: 'bromantane',
+    name: 'Bromantane',
+    image: null,
+    accentColor: '#f43f5e',
+    tagColor: 'rgba(244,63,94,0.18)',
+    shortDesc: {
+      hu: 'Orosz actoprotector — dopaminerg + szerotonerg modulátor + immunmodulátor. Anti-fatigue, anxiolítikus.',
+      en: 'Russian actoprotector — dopaminergic + serotonergic modulator + immunomodulator. Anti-fatigue, anxiolytic.',
+      pl: 'Rosyjski aktoprotektor — modulator dopaminergiczny + serotonergiczny + immunomodulator. Przeciw-zmęczeniowy, przeciwlękowy.',
+    },
+    description: {
+      hu: 'A Bromantane (Ladasten, ADK-709) egy adamantán-aminobenzol származék, amelyet Oroszországban fejlesztettek ki eredetileg katonai actoprotector-ként (fizikai + mentális teljesítmény stress-körülmények között, hőtűrés). Hatásmechanizmusa szokatlan: tirozin-hidroxiláz + DOPA-dekarboxiláz expression-növelés (dopamin-szintézis), szerotonin- és GABA-moduláció, mérsékelt immunmodulátor (cytokin-szintézis-szabályozás). Oroszországban Rx krónikus fáradtság-szindrómára, neuraszténiára, asztheniás zavarokra. WADA-listán (S0 nem-jóváhagyott szerek).',
+      en: 'Bromantane (Ladasten, ADK-709) is an adamantane-aminobenzol derivative developed in Russia originally as a military actoprotector (physical + mental performance under stress, heat tolerance). Unusual mechanism: upregulates tyrosine hydroxylase + DOPA decarboxylase expression (dopamine synthesis), modulates serotonin and GABA, and acts as a mild immunomodulator (cytokine synthesis regulation). Rx in Russia for chronic fatigue, neurasthenia, asthenic disorders. WADA-listed (S0 non-approved substances).',
+      pl: 'Bromantan (Ladasten, ADK-709) to pochodna adamantano-aminobenzolu opracowana w Rosji pierwotnie jako wojskowy aktoprotektor (wydolność fizyczna i psychiczna pod stresem, tolerancja ciepła). Nietypowy mechanizm: zwiększa ekspresję hydroksylazy tyrozynowej + dekarboksylazy DOPA (synteza dopaminy), moduluje serotoninę i GABA, działa jako łagodny immunomodulator (regulacja syntezy cytokin). Rx w Rosji dla przewlekłego zmęczenia, neurastenii, zaburzeń astenicznych. Na liście WADA (S0 substancje niezatwierdzone).',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' }, value: { hu: 'Dopaminerg + szerotonerg actoprotector', en: 'Dopaminergic + serotonergic actoprotector', pl: 'Aktoprotektor dopaminergiczny + serotonergiczny' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, value: { hu: '10-14 óra', en: '10-14 hours', pl: '10-14 godzin' } },
+      { label: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Czas wystąpienia' }, value: { hu: '60-90 perc', en: '60-90 min', pl: '60-90 min' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'Russia Rx, EU/USA research', en: 'Russia Rx, EU/USA research', pl: 'Rosja Rx, UE/USA badania' } },
+    ],
+    mechanism: {
+      hu: 'Adamantán-aminobenzol származék. Dopamin- és tirozin-hidroxiláz expression-növelő; szerotonin- és GABA-modulátor; mérsékelt immunmodulátor.',
+      en: 'Adamantane-aminobenzol derivative. Upregulates tyrosine hydroxylase and dopamine synthesis; modulates serotonin and GABA; mild immunomodulator.',
+      pl: 'Pochodna adamantano-aminobenzolu. Zwiększa ekspresję hydroksylazy tyrozynowej i syntezę dopaminy; moduluje serotoninę i GABA; łagodny immunomodulator.',
+    },
+    legalStatus: {
+      hu: 'Russia: Rx (Ladasten) krónikus fáradtság, neuraszténia, asztheniás zavarok. EU/USA: kutatási vegyület. WADA: S0 nem-jóváhagyott szerek.',
+      en: 'Russia: Rx (Ladasten) chronic fatigue, neurasthenia, asthenic disorders. EU/USA: research chemical. WADA: S0 non-approved substances.',
+      pl: 'Rosja: Rx (Ladasten) przewlekłe zmęczenie, neurastenia, zaburzenia asteniczne. UE/USA: substancja badawcza. WADA: S0 substancje niezatwierdzone.',
+    },
+    onsetTime: '60-90 min',
+    halfLife: '10-14 h',
+    interactionsWith: ['stimulants', 'MAOI', 'alcohol'],
+    wadaStatus: 'banned',
+    benefits: [
+      { hu: 'Anti-fatigue — krónikus fáradtság-szindróma kezelésére orosz klinikai adatok', en: 'Anti-fatigue — Russian clinical data on chronic fatigue syndrome', pl: 'Przeciw-zmęczeniowe — rosyjskie dane kliniczne dla zespołu przewlekłego zmęczenia' },
+      { hu: 'Anxiolítikus hatás szedáció nélkül (GABA + szerotonerg moduláció)', en: 'Anxiolytic without sedation (GABA + serotonergic modulation)', pl: 'Przeciwlękowe bez sedacji (modulacja GABA + serotonergiczna)' },
+      { hu: 'Fizikai stress-resilience és hidegtűrés', en: 'Physical stress resilience and cold tolerance', pl: 'Odporność na stres fizyczny i tolerancja zimna' },
+      { hu: 'Mérsékelt immunmodulátor hatás (orosz vizsgálatokban dokumentált)', en: 'Mild immunomodulatory effect (documented in Russian trials)', pl: 'Łagodne działanie immunomodulujące (udokumentowane w rosyjskich badaniach)' },
+    ],
+    quickStart: [
+      { hu: '50-100 mg reggel, étkezéssel együtt', en: '50-100 mg morning, with food', pl: '50-100 mg rano, z posiłkiem' },
+      { hu: '14-28 napos kúra-szerű használat ajánlott (orosz Rx protokoll)', en: '14-28 day cycle recommended (Russian Rx protocol)', pl: 'Zalecany cykl 14-28 dni (rosyjski protokół Rx)' },
+      { hu: 'Akut stim-jellegű hatás minimális — kumulatív hatás 7-14 nap múlva', en: 'Acute stim-like effect minimal — cumulative benefit after 7-14 days', pl: 'Ostry efekt stymulujący minimalny — kumulacyjna korzyść po 7-14 dniach' },
+      { hu: 'Cycle-off 2 hét két kúra között', en: '2-week cycle-off between courses', pl: '2-tygodniowa przerwa między cyklami' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: 'Akut hatás enyhe; szubjektíven nyugodtabb energia, enyhe motiváció-emelkedés. Klasszikus stim-jelleg hiányzik.', en: 'Acute effect mild; subjectively calmer energy, slight motivation lift. Classic stim-character absent.', pl: 'Efekt ostry łagodny; subiektywnie spokojniejsza energia, lekki wzrost motywacji. Brak klasycznego charakteru stymulanta.' } },
+      { label: { hu: '7-14 nap', en: '7-14 days', pl: '7-14 dni' }, body: { hu: 'Kumulatív hatás: csökkent fáradtság, jobb stress-tolerancia, anxiolítikus profil érzékelhető.', en: 'Cumulative effect: reduced fatigue, better stress tolerance, anxiolytic profile noticeable.', pl: 'Efekt kumulacyjny: zmniejszone zmęczenie, lepsza tolerancja stresu, zauważalny profil przeciwlękowy.' } },
+      { label: { hu: '28 nap (kúra vége)', en: '28 days (end of course)', pl: '28 dni (koniec cyklu)' }, body: { hu: 'Plateau; orosz klinikai adatok szerint anti-fatigue effekt 1-2 hónapig fennmaradhat cycle-off után.', en: 'Plateau; Russian clinical data: anti-fatigue effect can persist 1-2 months after cycle-off.', pl: 'Plateau; rosyjskie dane kliniczne: efekt przeciw-zmęczeniowy może utrzymywać się 1-2 miesiące po zakończeniu cyklu.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Fehér por vagy kapszula (50 mg standard, Ladasten brand)', en: 'White powder or capsule (50 mg standard, Ladasten brand)', pl: 'Biały proszek lub kapsułka (50 mg standardowo, marka Ladasten)' },
+        { hu: 'Lipofil, lipid-oldódó', en: 'Lipophilic, lipid-soluble', pl: 'Lipofilny, rozpuszczalny w lipidach' },
+      ],
+      caution: [
+        { hu: 'Mérsékelt szájszárazság, alvászavar este szedéssel', en: 'Mild dry mouth, sleep disruption with evening dosing', pl: 'Łagodna sucha jama ustna, zaburzenia snu przy wieczornym dawkowaniu' },
+        { hu: 'Tolerancia hosszú kúrával fejlődhet — cycle-off szükséges', en: 'Tolerance with long courses — cycle-off needed', pl: 'Tolerancja przy długich cyklach — wymagana przerwa' },
+      ],
+      avoid: [
+        { hu: 'Versenysportolóknak (WADA S0)', en: 'Competitive athletes (WADA S0)', pl: 'Sportowcy zawodowi (WADA S0)' },
+        { hu: 'Terhesség, szoptatás (kutatás hiányzik)', en: 'Pregnancy, breastfeeding (research lacking)', pl: 'Ciąża, karmienie piersią (brak badań)' },
+        { hu: 'Súlyos szív- vagy májbetegség', en: 'Severe heart or liver disease', pl: 'Ciężka choroba serca lub wątroby' },
+      ],
+    },
+    interactions: [
+      { hu: 'MAOI együttszedés kerülendő (szerotonin-szindróma kockázat)', en: 'Avoid MAOI co-administration (serotonin syndrome risk)', pl: 'Unikać współpodawania MAOI (ryzyko zespołu serotoninowego)' },
+      { hu: 'Más stimulánsokkal (Modafinil, amfetaminok) additív hatás', en: 'Additive effect with other stimulants (Modafinil, amphetamines)', pl: 'Efekt addytywny z innymi stymulantami (Modafinil, amfetaminy)' },
+      { hu: 'Alkohollal együttszedés kerülendő (immunmodulátor + máj-terhelés)', en: 'Avoid alcohol co-administration (immunomodulator + liver burden)', pl: 'Unikać współpodawania alkoholu (immunomodulator + obciążenie wątroby)' },
+    ],
+    studies: [
+      { title: 'Bromantane in asthenic disorders: clinical trial', authors: 'Voznesenskaia TG et al.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2007;107(4):27-32.', pmid: '17539276' },
+      { title: 'Ladasten (Bromantane): pharmacological profile review', authors: 'Mirzoian RS et al.', journal: 'Eksp Klin Farmakol. 2009;72(1):3-7.', pmid: '19374118' },
+      { title: 'Bromantane: novel actoprotector with neuroprotective profile', authors: 'Morozov IS et al.', journal: 'Eksp Klin Farmakol. 2001;64(2):3-9.', pmid: '11548438' },
+    ],
+    faq: [
+      { q: { hu: 'Mit jelent az "actoprotector"?', en: 'What does "actoprotector" mean?', pl: 'Co oznacza "aktoprotektor"?' }, a: { hu: 'Orosz farmakológiai kategória: olyan szer, amely fizikai és mentális teljesítményt fenntart vagy javít stress-körülmények között (hideg, hőség, hypoxia, kimerültség) — anélkül, hogy klasszikus stimuláns lenne.', en: 'Russian pharmacological category: an agent that maintains or improves physical and mental performance under stress conditions (cold, heat, hypoxia, fatigue) — without being a classic stimulant.', pl: 'Rosyjska kategoria farmakologiczna: środek utrzymujący lub poprawiający wydolność fizyczną i psychiczną w warunkach stresu (zimno, gorąco, hipoksja, zmęczenie) — bez bycia klasycznym stymulantem.' } },
+      { q: { hu: 'Anxiolítikus szedáció nélkül — hogyan lehetséges?', en: 'Anxiolytic without sedation — how is that possible?', pl: 'Przeciwlękowe bez sedacji — jak to możliwe?' }, a: { hu: 'A GABA-erg moduláció szubunit-szelektív (alpha-2/3, NEM alpha-1 — utóbbi okozza a szedációt), kombinálva szerotonerg balanszírozással. Klinikailag jellemző: anxiolítikus + enyhe stim-jelleg.', en: 'GABAergic modulation is subunit-selective (alpha-2/3, NOT alpha-1 — the latter causes sedation), combined with serotonergic balancing. Clinically: anxiolytic + mild stim-character.', pl: 'Modulacja GABAergiczna jest selektywna podjednostkowo (alfa-2/3, NIE alfa-1 — ten ostatni powoduje sedację), w połączeniu z równoważeniem serotonergicznym. Klinicznie: przeciwlękowe + łagodny charakter stymulujący.' } },
+      { q: { hu: 'Mikor érződik a hatás?', en: 'When are effects felt?', pl: 'Kiedy odczuwa się efekty?' }, a: { hu: 'Akut hatás minimális. Kumulatív hatás 7-14 napos napi szedés után érzékelhető. Teljes profil 28 napos kúra végén.', en: 'Acute effect minimal. Cumulative benefit noticeable after 7-14 days of daily dosing. Full profile by the end of a 28-day course.', pl: 'Efekt ostry minimalny. Korzyść kumulacyjna zauważalna po 7-14 dniach codziennego dawkowania. Pełny profil pod koniec 28-dniowego cyklu.' } },
+    ],
+    related: ['9-me-bc', 'selank', 'semax', 'noopept'],
+  },
 ]
