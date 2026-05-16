@@ -21,6 +21,7 @@ import { useLibrary } from '../../context/LibraryContext'
 import TelegramButtons from '../TelegramButtons'
 import MiniCalc from '../MiniCalc'
 import BloodworkProtocol from './BloodworkProtocol'
+import WadaBadge from './WadaBadge'
 
 const TIER_META = {
  5: { label: { hu: 'Engedélyezett', en: 'Approved', pl: 'Zatwierdzony' },
@@ -1454,6 +1455,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {isApproved && <ShieldCheck size={11} strokeWidth={2.5} />}
  {tr(tierMeta.label)}
  </span>
+ {peptide.wadaStatus && <WadaBadge status={peptide.wadaStatus} size="md" />}
  {peptide.legalStatus && (
  <span
  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] tracking-[0.22em] uppercase font-semibold"

@@ -9,6 +9,7 @@ import {
 import EntryImage from './EntryImage'
 import LibrarySwitcher from './LibrarySwitcher'
 import TelegramButtons from './TelegramButtons'
+import WadaBadge from './library/WadaBadge'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
 // New layout (inspired by pep-pedia.org/browse):
@@ -72,10 +73,12 @@ function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  </div>
  )}
 
- {/* Placeholder badge for peptides without a real photo */}
+ {/* Top-right chip stack: Placeholder badge + WadaBadge (Phase 5 performance entries) */}
+ {(isPlaceholder || peptide.wadaStatus) && (
+ <div className="absolute top-3 right-3 z-20 flex flex-col items-end gap-1">
  {isPlaceholder && (
  <div
- className="absolute top-3 right-3 z-20 px-2 py-0.5 rounded-full text-[8px] tracking-[0.15em] uppercase"
+ className="px-2 py-0.5 rounded-full text-[8px] tracking-[0.15em] uppercase"
  style={{
  background: 'var(--tint-soft)',
  border: '1px dashed var(--tint-medium-border)',
@@ -83,6 +86,9 @@ function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  }}
  >
  {t('gal.all.placeholder')}
+ </div>
+ )}
+ {peptide.wadaStatus && <WadaBadge status={peptide.wadaStatus} size="sm" />}
  </div>
  )}
 
