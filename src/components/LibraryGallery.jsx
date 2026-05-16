@@ -6,7 +6,8 @@ import {
   ChevronDown, Search, Star, SlidersHorizontal, X,
   ArrowDownAZ, ArrowUpAZ, BarChart3,
 } from 'lucide-react'
-import VialImage from './VialImage'
+import EntryImage from './EntryImage'
+import LibrarySwitcher from './LibrarySwitcher'
 import TelegramButtons from './TelegramButtons'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
@@ -94,11 +95,12 @@ function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
         className="w-full self-center relative z-10 overflow-hidden"
         style={{ aspectRatio: '1 / 1' }}
       >
-        <VialImage
+        <EntryImage
           accentColor={accent}
           name={peptide.name}
           uid={peptide.id}
           image={peptide.image}
+          library={library}
         />
       </div>
 
@@ -283,6 +285,28 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
     return () => window.removeEventListener('hashchange', scrollIfLibrary)
   }, [])
 
+  // Reset search/filter/sort state and scroll back to the section when the
+  // active library changes (e.g. user toggles the LibrarySwitcher).
+  // useRef guard avoids running on the initial mount.
+  const isFirstLibraryEffect = useRef(true)
+  useEffect(() => {
+    if (isFirstLibraryEffect.current) {
+      isFirstLibraryEffect.current = false
+      return
+    }
+    setQuery('')
+    setActiveFilters([])
+    setLevelFilters([])
+    setSortMode('az')
+    setExpanded(false)
+    setShowFilters(false)
+    if (sectionRef.current) {
+      requestAnimationFrame(() => {
+        sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      })
+    }
+  }, [library.id])
+
   const toggleExpanded = () => {
     setExpanded(prev => {
       const next = !prev
@@ -313,15 +337,17 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
       <section id="library" ref={sectionRef} className="py-28 px-4 scroll-mt-24">
         <div className="max-w-6xl mx-auto">
 
+          <LibrarySwitcher />
+
           <div className="text-center mb-16">
             <p className="text-[#818cf8] text-xs tracking-[0.3em] uppercase mb-5">
               {t('gal.eyebrow')}
             </p>
             <h2 className="text-3xl md:text-5xl font-bold italic text-white mb-4">
-              {t('gal.title')}
+              {library.name ? tr(library.name) : t('gal.title')}
             </h2>
             <p className="text-gray-500 text-sm max-w-xl mx-auto leading-relaxed">
-              {t('gal.subtitle')}
+              {library.description ? tr(library.description) : t('gal.subtitle')}
             </p>
           </div>
 
