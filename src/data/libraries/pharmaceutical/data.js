@@ -3158,6 +3158,340 @@ export const EXTRA_PHARMACEUTICAL = [
     },
   },
 
+  // ===== EXTRA. METHOTREXATE (Onko + Autoimmun, dihidrofolát-reduktáz gátló, warning) =====
+  {
+    id: 'methotrexate',
+    name: 'Methotrexate',
+    image: null,
+    accentColor: '#ec4899',
+    tagColor: 'rgba(236,72,153,0.18)',
+    shortDesc: {
+      hu: 'Dihidrofolát-reduktáz (DHFR) gátló antimetabolit. Alacsony-dózisú heti adagolás: rheumatoid arthritis, pszoriázis. Magas-dózisú: onko-kemoterápia.',
+      en: 'Dihydrofolate reductase (DHFR) inhibitor antimetabolite. Low-dose weekly: rheumatoid arthritis, psoriasis. High-dose: onco-chemotherapy.',
+      pl: 'Antymetabolit, inhibitor reduktazy dihydrofolianowej (DHFR). Niska dawka tygodniowo: reumatoidalne zapalenie stawów, łuszczyca. Wysoka: chemioterapia.',
+    },
+    description: {
+      hu: 'A Methotrexate (MTX) folát-antagonista antimetabolit (FDA 1953). A dihidrofolát-reduktáz (DHFR) gátlása révén blokkolja a tetrahidrofolát képződését, ami a DNS-szintézist és sejt-proliferációt gátolja. Két nagyon különböző indikációs területe van: (1) ALACSONY-DÓZISÚ heti orális/SC 7,5-25 mg — rheumatoid arthritis (gold-standard DMARD), pszoriázis, IBD, ANCA-vasculitis; (2) MAGAS-DÓZISÚ IV/intratekális — leukémia, lymphoma, osteosarcoma, choriocarcinoma. A két kontextus farmakológiailag radikálisan különböző: az alacsony-dózisú heti MTX folát-folsavpótlással (1-5 mg/nap) jól tolerálható, míg a magas-dózisú onko-MTX KÖTELEZŐ Leucovorin-rescue-val, szintű-monitorozással és sürgősségi készenléttel jár. A WHO Essential Medicines listán mindkét kontextus szerepel.',
+      en: 'Methotrexate (MTX) is an antifolate antimetabolite (FDA 1953). Inhibits dihydrofolate reductase (DHFR), blocking tetrahydrofolate formation and thus DNA synthesis and cell proliferation. Two very different indication realms: (1) LOW-DOSE weekly oral/SC 7.5-25 mg — rheumatoid arthritis (gold-standard DMARD), psoriasis, IBD, ANCA vasculitis; (2) HIGH-DOSE IV/intrathecal — leukemia, lymphoma, osteosarcoma, choriocarcinoma. The two contexts are pharmacologically very different: low-dose weekly MTX with folate supplementation (1-5 mg/day) is well tolerated, while high-dose onco-MTX requires MANDATORY Leucovorin rescue, level monitoring, and emergency standby. WHO Essential Medicines covers both.',
+      pl: 'Metotreksat (MTX) to antymetabolit antyfolianowy (FDA 1953). Hamuje reduktazę dihydrofolianową (DHFR), blokując tworzenie tetrahydrofolianu, a tym samym syntezę DNA i proliferację komórek. Dwa bardzo różne obszary: (1) NISKA dawka tygodniowo doustnie/SC 7,5-25 mg — RA (złoty standard DMARD), łuszczyca, IBD, zapalenie naczyń ANCA; (2) WYSOKA dawka IV/dooponowo — białaczka, chłoniak, osteosarkoma, kosmówczak. Niskodawkowa MTX z suplementacją folianów (1-5 mg/dzień) dobrze tolerowana; wysokodawkowa onko-MTX wymaga OBOWIĄZKOWO rescue Leukoworyną, monitorowania poziomu i pogotowia nagłego.',
+    },
+    mechanism: { hu: 'DHFR-gátlás → tetrahidrofolát-deficit → thymidylat-szintézis blokk → DNS-szintézis gátlás. Másodlagos: AICAR-szintézis-gátlás (adenosine-akkumuláció, anti-gyulladásos hatás MTX-alacsony dózison).', en: 'DHFR inhibition → tetrahydrofolate deficit → thymidylate synthesis block → DNA synthesis inhibition. Secondary: AICAR synthesis inhibition (adenosine accumulation, anti-inflammatory at low-dose MTX).', pl: 'Hamowanie DHFR → niedobór tetrahydrofolianu → blok syntezy tymidylanu → hamowanie syntezy DNA. Wtórnie: hamowanie syntezy AICAR (akumulacja adenozyny, działanie przeciwzapalne przy niskiej dawce).' },
+    legalStatus: { hu: 'EU/HU: vényköteles (Trexan, Metoject SC, Methotrexat Lederle, generikus). USA: FDA Rx. Onkológiai magas-dózis kórházi adagolás.', en: 'EU/HU: prescription only (Trexan, Metoject SC, Methotrexate Lederle, generics). USA: FDA Rx. Oncology high-dose hospital-administered.', pl: 'UE/PL: na receptę (Trexan, Metoject SC, Methotrexat Lederle, generyki). USA: FDA Rx. Wysokodawkowa onko-MTX podawana w szpitalu.' },
+    onsetTime: '6-12 weeks (RA clinical response)',
+    halfLife: '~3-10 h (highly variable)',
+    atcCode: 'L01BA01 / L04AX03',
+    prescriptionStatus: { hu: 'Vényköteles (Rx), szakorvosi felügyelet (reumatológus / onkológus)', en: 'Prescription only (Rx), specialist-supervised (rheumatologist / oncologist)', pl: 'Na receptę (Rx), nadzór specjalisty (reumatolog / onkolog)' },
+    indications: [
+      { hu: 'Rheumatoid arthritis (RA, gold-standard DMARD)', en: 'Rheumatoid arthritis (RA, gold-standard DMARD)', pl: 'Reumatoidalne zapalenie stawów (RA, złoty standard DMARD)' },
+      { hu: 'Pikkelysömör (pszoriázis), pszoriázis-arthritis', en: 'Psoriasis, psoriatic arthritis', pl: 'Łuszczyca, łuszczycowe zapalenie stawów' },
+      { hu: 'IBD (Crohn), ANCA-vasculitis (alacsony dózis)', en: 'IBD (Crohn), ANCA vasculitis (low-dose)', pl: 'IBD (Crohn), zapalenie naczyń ANCA (niska dawka)' },
+      { hu: 'Akut limfoblasztos leukémia (ALL), lymphoma, osteosarcoma, choriocarcinoma (magas-dózis kemoterápia)', en: 'Acute lymphoblastic leukemia (ALL), lymphoma, osteosarcoma, choriocarcinoma (high-dose chemo)', pl: 'Ostra białaczka limfoblastyczna (ALL), chłoniak, osteosarkoma, kosmówczak (wysoka dawka)' },
+      { hu: 'Méhen kívüli terhesség konzervatív kezelése', en: 'Ectopic pregnancy conservative treatment', pl: 'Konserwatywne leczenie ciąży pozamacicznej' },
+    ],
+    contraindications: [
+      { hu: 'Terhesség és szoptatás (FDA X kategória, ABORTÁLÓ — abortifaciens-hatás)', en: 'Pregnancy and lactation (FDA category X, ABORTIFACIENT)', pl: 'Ciąża i karmienie piersią (kategoria X FDA, abortifaciens)' },
+      { hu: 'Súlyos máj- vagy vesefunkció-zavar', en: 'Severe hepatic or renal impairment', pl: 'Ciężka niewydolność wątroby lub nerek' },
+      { hu: 'Aktív hematológiai zavar (leukopenia, anémia, thrombocitopenia)', en: 'Active hematologic disorder (leukopenia, anemia, thrombocytopenia)', pl: 'Aktywne zaburzenie hematologiczne' },
+      { hu: 'Aktív szisztémás infekció', en: 'Active systemic infection', pl: 'Aktywna infekcja układowa' },
+      { hu: 'Alkohol-abúzus (hepatotoxicitás-additivitás)', en: 'Alcohol abuse (additive hepatotoxicity)', pl: 'Nadużywanie alkoholu (addytywna hepatotoksyczność)' },
+    ],
+    commonSideEffects: [
+      { hu: 'GI: hányinger, sztomatitisz, hasmenés (gyakori; folát-pótlással mitigálható)', en: 'GI: nausea, stomatitis, diarrhea (common; folate supplementation mitigates)', pl: 'GI: nudności, zapalenie jamy ustnej, biegunka (suplementacja folianami łagodzi)' },
+      { hu: 'Hepatotoxicitás (krónikus, alkohol-additív)', en: 'Hepatotoxicity (chronic, alcohol-additive)', pl: 'Hepatotoksyczność (przewlekła, addytywna z alkoholem)' },
+      { hu: 'Myelosuppresszió (csontvelő-szuppresszió: leukopenia, thrombocitopenia, anémia)', en: 'Myelosuppression (bone marrow: leukopenia, thrombocytopenia, anemia)', pl: 'Mielosupresja (szpik: leukopenia, trombocytopenia, anemia)' },
+      { hu: 'Súlyos: pulmonális toxicitás (pneumonitis), infekció-suscibilitás, hepatikus fibrózis krónikus, akut vesekárosodás magas-dózison', en: 'Severe: pulmonary toxicity (pneumonitis), infection susceptibility, chronic hepatic fibrosis, acute kidney injury at high dose', pl: 'Ciężkie: toksyczność płucna (zapalenie płuc), podatność na infekcje, włóknienie wątroby, ostre uszkodzenie nerek przy wysokiej dawce' },
+    ],
+    cyp450: ['Not CYP-metabolized (folate pathway antagonism)', 'Renal excretion (90% unchanged)'],
+    crossMolInteractions: [
+      { hu: 'NSAID (aspirin, ibuprofen): vese-clearance csökken, MTX-toxicitás fokozódik', en: 'NSAID (aspirin, ibuprofen): reduced renal clearance, MTX toxicity rises', pl: 'NSAID (aspiryna, ibuprofen): zmniejszony klirens nerkowy, wzrost toksyczności MTX' },
+      { hu: 'Trimethoprim/Sulfamethoxazole (Bactrim): pancytopenia kockázat (folát-blokk additivitás)', en: 'Trimethoprim/sulfamethoxazole (Bactrim): pancytopenia risk (folate-block additivity)', pl: 'Trymetoprym/sulfametoksazol (Bactrim): ryzyko pancytopenii (addytywność folianów)' },
+      { hu: 'Proton-pumpa inhibitor (PPI): MTX vese-clearance csökkenése, magas-dózisú onko-MTX-en TILOS', en: 'Proton-pump inhibitor (PPI): reduced MTX renal clearance, FORBIDDEN with high-dose MTX', pl: 'Inhibitor pompy protonowej (PPI): zmniejszony klirens MTX, ZAKAZANY przy wysokodawkowej' },
+      { hu: 'Élő-vírusos vakcina: immunoszuppresszió alatt kontraindikált', en: 'Live virus vaccine: contraindicated during immunosuppression', pl: 'Szczepionka żywa: przeciwwskazana podczas immunosupresji' },
+      { hu: 'FOLÁT (folsav 5-10 mg/hét vagy folinic acid): KÖTELEZŐ az alacsony-dózisú MTX-toxicitás mitigálására', en: 'FOLATE (folic acid 5-10 mg/wk or folinic acid): MANDATORY for low-dose MTX toxicity mitigation', pl: 'FOLIANY (kwas foliowy 5-10 mg/tydz lub folinowy): OBOWIĄZKOWE dla łagodzenia toksyczności niskodawkowej' },
+    ],
+    benefits: [
+      { hu: 'RA gold-standard DMARD, hatékony és olcsó', en: 'RA gold-standard DMARD, effective and cheap', pl: 'Złoty standard DMARD w RA, skuteczny i tani' },
+      { hu: 'Onkológiai indikációkban élet-mentő (ALL gyermek, choriocarcinoma)', en: 'Life-saving in oncology indications (childhood ALL, choriocarcinoma)', pl: 'Ratuje życie w onkologii (ALL dziecięce, kosmówczak)' },
+      { hu: 'Hosszú-távú adatok (70+ év)', en: 'Long-term data (70+ years)', pl: 'Długoterminowe dane (70+ lat)' },
+    ],
+    studies: [
+      { title: 'EULAR recommendations for the management of rheumatoid arthritis', authors: 'Smolen JS, Landewé RBM, Bergstra SA et al.', journal: 'Ann Rheum Dis. 2023;82(1):3-18.', pmid: '36357155' },
+      { title: 'Methotrexate in cancer chemotherapy: clinical use and mechanism', authors: 'Tian H, Cronstein BN.', journal: 'Bull NYU Hosp Jt Dis. 2007;65(3):168-73.', pmid: '17922666' },
+      { title: 'Folate supplementation reduces methotrexate adverse effects', authors: 'Shea B, Swinden MV, Tanjong Ghogomu E et al.', journal: 'Cochrane Database Syst Rev. 2013;(5):CD000951.', pmid: '23728635' },
+    ],
+    related: ['tamoxifen', 'hydrocortisone'],
+    doseCalc: {
+      type: 'warning',
+      warning: {
+        hu: 'A Methotrexate egy ONKO- ÉS AUTOIMMUN-GRÁDU gyógyszer, amely SZAKORVOSI (reumatológus vagy onkológus) FELÜGYELET nélkül NEM HASZNÁLHATÓ. NEM ÖNÁLLÓ DÓZIS-KALKULÁTOR ezen az oldalon, mert: (1) az alacsony-dózisú (heti 7,5-25 mg) és a magas-dózisú (onko-szintű 100-12000 mg/m²) tartomány közötti különbség 100-1000x — összekeverése HALÁLOS lehet; (2) FOLSAV (5-10 mg/hét) ELLENPÓTLÁS KÖTELEZŐ a heti MTX-en; (3) FDA X kategória (abortifaciens) — terhességben ABSZOLÚT tilos; (4) NSAID, Bactrim, PPI interakciók szignifikánsak. Beszélj a reumatológusoddal vagy az onkológusoddal. Sürgősségi tünet (láz, sztomatitisz, légszomj, vér a vizeletben, fekete-széklet): AZONNALI ellátás.',
+        en: 'Methotrexate is an ONCO- AND AUTOIMMUNE-GRADE drug that CANNOT BE USED without SPECIALIST (rheumatologist or oncologist) SUPERVISION. NO STANDALONE DOSE CALCULATOR on this page because: (1) low-dose (weekly 7.5-25 mg) and high-dose (onco 100-12000 mg/m²) ranges differ 100-1000x — mixing them can be FATAL; (2) FOLIC ACID (5-10 mg/week) SUPPLEMENTATION MANDATORY on weekly MTX; (3) FDA category X (abortifacient) — ABSOLUTELY forbidden in pregnancy; (4) NSAID, Bactrim, PPI interactions significant. Talk to your rheumatologist or oncologist. Emergency symptoms (fever, stomatitis, dyspnea, hematuria, melena): IMMEDIATE care.',
+        pl: 'Metotreksat to lek poziomu ONKO- I AUTOIMMUNOLOGICZNEGO, którego NIE WOLNO STOSOWAĆ bez NADZORU specjalisty (reumatologa lub onkologa). BRAK KALKULATORA DAWEK na tej stronie, ponieważ: (1) niska dawka (tygodniowo 7,5-25 mg) i wysoka (onko 100-12000 mg/m²) różnią się 100-1000x — pomylenie może być ŚMIERTELNE; (2) SUPLEMENTACJA KWASEM FOLIOWYM (5-10 mg/tydz.) OBOWIĄZKOWA przy tygodniowej MTX; (3) kategoria X FDA (abortifaciens) — BEZWZGLĘDNIE zakazany w ciąży; (4) interakcje NSAID, Bactrim, PPI znaczące. Porozmawiaj z reumatologiem lub onkologiem. Objawy nagłe (gorączka, zapalenie jamy ustnej, duszność, krwiomocz, smolisty stolec): NATYCHMIASTOWA opieka.',
+      },
+    },
+  },
+
+  // ===== EXTRA. TAMOXIFEN (Onko, SERM, emlőkarcinóma, warning) =====
+  {
+    id: 'tamoxifen',
+    name: 'Tamoxifen',
+    image: null,
+    accentColor: '#ec4899',
+    tagColor: 'rgba(236,72,153,0.18)',
+    shortDesc: {
+      hu: 'Szelektív ösztrogén receptor modulátor (SERM). Hormonreceptor-pozitív emlőkarcinóma adjuváns és metastatikus kezelése (Nolvadex).',
+      en: 'Selective estrogen receptor modulator (SERM). Adjuvant and metastatic treatment of hormone receptor-positive breast cancer (Nolvadex).',
+      pl: 'Selektywny modulator receptora estrogenowego (SERM). Leczenie uzupełniające i przerzutowe HR-dodatniego raka piersi (Nolvadex).',
+    },
+    description: {
+      hu: 'A Tamoxifen az első klinikailag jelentős SERM, amelyet az AstraZeneca fejlesztett ki (Nolvadex, FDA 1977). Az ER+ emlőkarcinóma adjuváns kezelésében 5-10 éves protokollal a relapszus-kockázatot 50%-kal csökkenti (EBCTCG 2011 Lancet PMID 21684593). Premenopausal nőknél az aromatáz-inhibítor (Anastrozole, Letrozole) nem hatékony, ezért a Tamoxifen az első-vonal SERM. Mellékhatás-profil: thromboembólia (DVT, PE 2-3x emelkedés), endometrium-karcinóma kockázat (~2x), menopausal-szerű tünetek (hőhullám). Az ER+ DCIS prevenció és magas-rizikójú primer prevenció FDA-jóváhagyott (NSABP-P1 trial).',
+      en: 'Tamoxifen is the first clinically major SERM, developed by AstraZeneca (Nolvadex, FDA 1977). In ER+ breast cancer adjuvant treatment with 5-10 year protocol, reduces relapse risk by 50% (EBCTCG 2011 Lancet PMID 21684593). In premenopausal women, aromatase inhibitors (anastrozole, letrozole) ineffective, so tamoxifen is first-line SERM. Side effect profile: thromboembolism (DVT, PE 2-3x rise), endometrial cancer risk (~2x), menopausal-like symptoms (hot flashes). ER+ DCIS prevention and high-risk primary prevention FDA-approved (NSABP-P1 trial).',
+      pl: 'Tamoksyfen to pierwszy klinicznie znaczący SERM, opracowany przez AstraZeneca (Nolvadex, FDA 1977). W leczeniu uzupełniającym ER+ raka piersi z protokołem 5-10-letnim zmniejsza ryzyko nawrotu o 50% (EBCTCG 2011 Lancet PMID 21684593). U kobiet przedmenopauzalnych inhibitory aromatazy (anastrozol, letrozol) nieskuteczne, więc tamoksyfen jest pierwszą linią SERM. Profil działań: zakrzepica (DVT, PE 2-3x wzrost), ryzyko raka endometrium (~2x), objawy menopauzopodobne. Prewencja DCIS i pierwotna wysokiego ryzyka zatwierdzona FDA (NSABP-P1).',
+    },
+    mechanism: { hu: 'Tkivat-specifikus ösztrogén receptor moduláció: emlőszövetben ANTAGONISTA, csontban + endometriumban + májban PARCIÁLIS AGONISTA. Aktív metabolitok (4-hidroxitamoxifen, endoxifen) CYP2D6-tól függenek — gyenge metabolizálóknál csökkent hatékonyság.', en: 'Tissue-specific estrogen receptor modulation: ANTAGONIST in breast tissue, PARTIAL AGONIST in bone + endometrium + liver. Active metabolites (4-hydroxytamoxifen, endoxifen) CYP2D6-dependent — poor metabolizers have reduced efficacy.', pl: 'Tkanowo-specyficzna modulacja: ANTAGONISTA w piersi, CZĘŚCIOWY AGONISTA w kościach + endometrium + wątrobie. Aktywne metabolity (4-hydroksytamoksyfen, endoksyfen) zależne od CYP2D6 — słabi metabolizatorzy mają zmniejszoną skuteczność.' },
+    legalStatus: { hu: 'EU/HU: vényköteles (Nolvadex, Tamoxen, generikus). USA: FDA Rx.', en: 'EU/HU: prescription only (Nolvadex, Tamoxen, generics). USA: FDA Rx.', pl: 'UE/PL: na receptę (Nolvadex, Tamoxen, generyki). USA: FDA Rx.' },
+    onsetTime: 'Klinikai válasz hónapok-évek (adjuváns)',
+    halfLife: '~7 days (parent); 14 days (4-hydroxytamoxifen)',
+    atcCode: 'L02BA01',
+    prescriptionStatus: { hu: 'Vényköteles (Rx), onkológus felügyelet', en: 'Prescription only (Rx), oncologist-supervised', pl: 'Na receptę (Rx), nadzór onkologa' },
+    indications: [
+      { hu: 'ER+ emlőkarcinóma adjuváns kezelés (premenopausal: 5-10 év)', en: 'ER+ breast cancer adjuvant treatment (premenopausal: 5-10 years)', pl: 'ER+ rak piersi leczenie uzupełniające (przedmenopauzalne: 5-10 lat)' },
+      { hu: 'Metastatikus ER+ emlőkarcinóma', en: 'Metastatic ER+ breast cancer', pl: 'Przerzutowy ER+ rak piersi' },
+      { hu: 'DCIS post-műtéti prevenció', en: 'DCIS post-surgical prevention', pl: 'Profilaktyka po-operacyjna DCIS' },
+      { hu: 'Magas-rizikójú nők primer prevenció (NSABP-P1)', en: 'High-risk women primary prevention (NSABP-P1)', pl: 'Pierwotna prewencja u wysokiego ryzyka (NSABP-P1)' },
+    ],
+    contraindications: [
+      { hu: 'Terhesség (kategória D, fetális károsodás)', en: 'Pregnancy (category D, fetal damage)', pl: 'Ciąża (kategoria D, uszkodzenie płodu)' },
+      { hu: 'Aktív thromboembólia (DVT, PE) vagy 1 éven belüli anamnézis', en: 'Active thromboembolism (DVT, PE) or within-1-year history', pl: 'Aktywna zakrzepica (DVT, PE) lub wywiad < 1 rok' },
+      { hu: 'Kezeletlen endometrium-hiperplázia', en: 'Untreated endometrial hyperplasia', pl: 'Nieleczona przerost endometrium' },
+    ],
+    commonSideEffects: [
+      { hu: 'Hőhullám, izzadás, hangulati labilis (menopausal-szerű tünetek 40-60%)', en: 'Hot flashes, sweating, mood lability (menopausal-like symptoms 40-60%)', pl: 'Uderzenia gorąca, pocenie, chwiejność nastroju (40-60%)' },
+      { hu: 'Vaginalis kifolyás, irritáció', en: 'Vaginal discharge, irritation', pl: 'Wydzielina pochwowa, podrażnienie' },
+      { hu: 'GI: hányinger, hasi diszkomfort', en: 'GI: nausea, abdominal discomfort', pl: 'GI: nudności, dyskomfort' },
+      { hu: 'Súlyos: VENOSUS THROMBOEMBOLIZMUS (DVT/PE 2-3x), ENDOMETRIUM-KARCINÓMA (~2x), katarakta, hepatikus szteatózis, stroke', en: 'Severe: VENOUS THROMBOEMBOLISM (DVT/PE 2-3x), ENDOMETRIAL CANCER (~2x), cataract, hepatic steatosis, stroke', pl: 'Ciężkie: ZAKRZEPICA ŻYLNA (DVT/PE 2-3x), RAK ENDOMETRIUM (~2x), zaćma, stłuszczenie wątroby, udar' },
+    ],
+    cyp450: ['CYP2D6 substrate (CRITICAL for endoxifen formation)', 'CYP3A4 substrate', 'Poor CYP2D6 metabolizers have reduced efficacy'],
+    crossMolInteractions: [
+      { hu: 'ERŐS CYP2D6-inhibitor (Fluoxetine, Paroxetine, Bupropion): endoxifen-képződés csökken, Tamoxifen-hatékonyság ROMLIK — kerülendő, alternatív AD (Venlafaxine, Citalopram)', en: 'STRONG CYP2D6 inhibitors (fluoxetine, paroxetine, bupropion): reduced endoxifen formation, Tamoxifen efficacy WORSENS — avoid, alternative AD (venlafaxine, citalopram)', pl: 'SILNE inhibitory CYP2D6 (fluoksetyna, paroksetyna, bupropion): zmniejszone tworzenie endoksyfenu, POGORSZA skuteczność — unikać, alternatywy (wenlafaksyna, citalopram)' },
+      { hu: 'Warfarin: INR-emelkedés (interakció), monitor', en: 'Warfarin: INR rise (interaction), monitor', pl: 'Warfaryna: wzrost INR, monitor' },
+      { hu: 'Hormon-pótlás (HRT) ösztrogén: kerülendő (mechanikai konfliktus)', en: 'Hormone replacement (HRT) estrogen: avoid (mechanistic conflict)', pl: 'Substytucja hormonalna (HRT) estrogen: unikać (konflikt mechanistyczny)' },
+    ],
+    benefits: [
+      { hu: 'ER+ emlőkarcinóma relapszus-csökkentés 50%', en: 'ER+ breast cancer relapse reduction 50%', pl: 'Redukcja nawrotu ER+ raka piersi o 50%' },
+      { hu: 'Csont-protektív (premenopausal nőkben)', en: 'Bone-protective (in premenopausal women)', pl: 'Ochrona kości (u kobiet przedmenopauzalnych)' },
+      { hu: 'Primer prevenció magas-rizikójú nőkben (NSABP-P1)', en: 'Primary prevention in high-risk women (NSABP-P1)', pl: 'Pierwotna prewencja u wysokiego ryzyka (NSABP-P1)' },
+    ],
+    studies: [
+      { title: 'Relevance of breast cancer hormone receptors and outcomes of 5 years of tamoxifen (EBCTCG)', authors: 'Early Breast Cancer Trialists\' Collaborative Group.', journal: 'Lancet. 2011;378(9793):771-84.', pmid: '21802721' },
+      { title: 'Tamoxifen for prevention of breast cancer (NSABP-P1)', authors: 'Fisher B, Costantino JP, Wickerham DL et al.', journal: 'J Natl Cancer Inst. 1998;90(18):1371-88.', pmid: '9747868' },
+      { title: 'CYP2D6 genotype and tamoxifen efficacy', authors: 'Goetz MP, Sangkuhl K, Guchelaar HJ et al.', journal: 'Clin Pharmacol Ther. 2018;103(5):770-777.', pmid: '29385237' },
+    ],
+    related: ['methotrexate'],
+    doseCalc: {
+      type: 'warning',
+      warning: {
+        hu: 'A Tamoxifen az ONKOLÓGIAI HORMONÁLIS TERÁPIA pillére ER+ emlőkarcinómában. SZAKORVOSI (ONKOLÓGUS) FELÜGYELET KÖTELEZŐ. NEM ÖNÁLLÓ DÓZIS-KALKULÁTOR ezen az oldalon, mert: (1) a dózis (20 mg/nap) és a kúra-időtartam (5-10 év) onkológiai protokoll-döntés, beteg-specifikus; (2) VTE (DVT/PE) és ENDOMETRIUM-KARCINÓMA kockázat fokozása érdemi monitorozást igényel; (3) CYP2D6-genetikai státusz a hatékonyságot szignifikánsan befolyásolja — egyes betegnél genotípus-tesztelés indokolt; (4) ERŐS CYP2D6-inhibitor (Fluoxetine, Paroxetine, Bupropion) ELLENJAVASOLT — Tamoxifen-hatékonyság veszélyeztetése. Beszélj az onkológusoddal. Sürgősségi tünet (egyoldalú láb-duzzanat, légszomj-mellkasi fájdalom, vaginalis vérzés): AZONNALI ellátás.',
+        en: 'Tamoxifen is the pillar of HORMONAL ONCO-THERAPY in ER+ breast cancer. SPECIALIST (ONCOLOGIST) SUPERVISION MANDATORY. NO STANDALONE DOSE CALCULATOR on this page because: (1) dose (20 mg/day) and duration (5-10 years) are oncology protocol decisions, patient-specific; (2) VTE (DVT/PE) and ENDOMETRIAL CANCER risk requires real monitoring; (3) CYP2D6 genetic status significantly affects efficacy — in some patients genotype testing indicated; (4) STRONG CYP2D6 inhibitors (fluoxetine, paroxetine, bupropion) CONTRAINDICATED — compromises tamoxifen efficacy. Talk to your oncologist. Emergency symptoms (unilateral leg swelling, dyspnea-chest pain, vaginal bleeding): IMMEDIATE care.',
+        pl: 'Tamoksyfen to filar HORMONALNEJ TERAPII ONKOLOGICZNEJ w ER+ raku piersi. NADZÓR SPECJALISTY (ONKOLOGA) OBOWIĄZKOWY. BRAK KALKULATORA DAWEK na tej stronie, ponieważ: (1) dawka (20 mg/dzień) i czas trwania (5-10 lat) to decyzje protokołu onkologicznego, specyficzne dla pacjenta; (2) ryzyko VTE (DVT/PE) i RAKA ENDOMETRIUM wymaga rzeczywistego monitorowania; (3) status genetyczny CYP2D6 znacząco wpływa na skuteczność; (4) SILNE inhibitory CYP2D6 (fluoksetyna, paroksetyna, bupropion) PRZECIWWSKAZANE. Porozmawiaj z onkologiem. Objawy nagłe (jednostronny obrzęk nogi, duszność-ból klatki, krwawienie pochwowe): NATYCHMIASTOWA opieka.',
+      },
+    },
+  },
+
+  // ===== EXTRA. MINOXIDIL (Bőr, vasodilator topical, alopecia) =====
+  {
+    id: 'minoxidil',
+    name: 'Minoxidil',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: 'K-csatorna-aktivátor topikális/orális szer (Rogaine, Loniten). Androgenetikus alopecia kezelés 1988 óta. 2-5% topikális standard.',
+      en: 'K-channel activator topical/oral drug (Rogaine, Loniten). Androgenetic alopecia treatment since 1988. 2-5% topical standard.',
+      pl: 'Aktywator kanałów K, środek miejscowy/doustny (Rogaine, Loniten). Leczenie łysienia androgenowego od 1988. Standard 2-5% miejscowy.',
+    },
+    description: {
+      hu: 'A Minoxidil eredetileg orális antihipertenzív szerként (Loniten 1979) lett kifejlesztve, de a "mellékhatásként" megjelenő hipertrichózis miatt topikális formulációt fejlesztettek alopecia kezelésére (Upjohn Rogaine 2% 1988, 5% 1996). A pontos mechanizmus nem teljesen tisztázott — ATP-érzékeny K-csatorna nyitása vazodilatációt és vélhetően hajhagyma-perfúzió-fokozást okoz, de a hajnövekedés stimulációjának molekuláris útja vitatott. Az "oral low-dose minoxidil" (LDOM, 0,25-5 mg/nap) elmúlt 5 évben népszerűvé vált alopecia-kezelésre off-label, hatékonyabb mint a topikális (Sinclair 2017 PMID 28349541). A Big-3 alopecia-protokoll (Minoxidil + Finasteride + Ketoconazole) gold-standard.',
+      en: 'Minoxidil was originally developed as oral antihypertensive (Loniten 1979), but the hypertrichosis "side effect" led to topical formulation for alopecia (Upjohn Rogaine 2% 1988, 5% 1996). Exact mechanism not fully clarified — ATP-sensitive K channel opening produces vasodilation and presumably hair follicle perfusion enhancement, but the molecular hair-growth-stimulation pathway is debated. "Oral low-dose minoxidil" (LDOM, 0.25-5 mg/day) became popular over the past 5 years for off-label alopecia, more effective than topical (Sinclair 2017 PMID 28349541). Big-3 alopecia protocol (minoxidil + finasteride + ketoconazole) is gold standard.',
+      pl: 'Minoksydyl pierwotnie opracowany jako doustny lek przeciwnadciśnieniowy (Loniten 1979), ale "działanie niepożądane" hipertrychoza doprowadziła do formy miejscowej dla łysienia (Upjohn Rogaine 2% 1988, 5% 1996). Mechanizm nie do końca wyjaśniony — otwieranie kanałów K wrażliwych na ATP daje rozszerzenie naczyń i prawdopodobnie wzmocnienie perfuzji mieszków, ale molekularny szlak stymulacji wzrostu włosów jest dyskutowany. "Doustny minoksydyl w niskiej dawce" (LDOM, 0,25-5 mg/dzień) stał się popularny w ostatnich 5 latach off-label dla łysienia, skuteczniejszy niż miejscowy (Sinclair 2017 PMID 28349541).',
+    },
+    mechanism: { hu: 'ATP-érzékeny K-csatorna nyitása → vazodilatáció + hajhagyma-perfúzió. Másodlagos: szulfo-transzferáz-aktivált aktív metabolit (Minoxidil-szulfát), prosztaglandin-E2 emelkedés.', en: 'ATP-sensitive K channel opening → vasodilation + hair follicle perfusion. Secondary: sulfotransferase-activated active metabolite (minoxidil sulfate), prostaglandin E2 elevation.', pl: 'Otwieranie kanałów K wrażliwych na ATP → rozszerzenie naczyń + perfuzja mieszków. Wtórnie: aktywny metabolit aktywowany sulfotransferazą.' },
+    legalStatus: { hu: 'Topikális (2-5%): OTC EU/USA/HU. Orális (Loniten): vényköteles. Off-label LDOM: vényköteles (alacsony orális dózis, alopecia-cél).', en: 'Topical (2-5%): OTC EU/USA/HU. Oral (Loniten): prescription. Off-label LDOM: prescription (low oral dose, alopecia target).', pl: 'Miejscowy (2-5%): OTC UE/USA/PL. Doustny (Loniten): na receptę. Off-label LDOM: na receptę.' },
+    onsetTime: '3-6 months (visible hair regrowth)',
+    halfLife: '~4 h (oral), topical absorption minimal',
+    atcCode: 'D11AX01 (topical) / C02DC01 (oral)',
+    prescriptionStatus: { hu: 'OTC topikális, vényköteles orális (Loniten + LDOM)', en: 'OTC topical, prescription oral (Loniten + LDOM)', pl: 'OTC miejscowy, na receptę doustny (Loniten + LDOM)' },
+    indications: [
+      { hu: 'Androgenetikus alopecia (férfi + női mintázat, topikális)', en: 'Androgenetic alopecia (male + female pattern, topical)', pl: 'Łysienie androgenowe (typ męski + żeński, miejscowo)' },
+      { hu: 'Off-label LDOM: súlyos alopecia (Sinclair 2017 evidencia)', en: 'Off-label LDOM: severe alopecia (Sinclair 2017 evidence)', pl: 'Off-label LDOM: ciężkie łysienie (dowody Sinclair 2017)' },
+      { hu: 'Rezisztens hipertenzió (Loniten oral, ritka)', en: 'Resistant hypertension (Loniten oral, rare)', pl: 'Oporne nadciśnienie (Loniten doustny, rzadkie)' },
+    ],
+    contraindications: [
+      { hu: 'Akut MI vagy aktív iszkémia (orális)', en: 'Acute MI or active ischemia (oral)', pl: 'Ostre MI lub aktywne niedokrwienie (doustnie)' },
+      { hu: 'Pheochromocytoma', en: 'Pheochromocytoma', pl: 'Guz chromochłonny' },
+    ],
+    commonSideEffects: [
+      { hu: 'Topikális: skalp-irritáció, viszketés, hipertrichózis (arc, váll, contam-zone)', en: 'Topical: scalp irritation, itching, hypertrichosis (face, shoulder, contam-zone)', pl: 'Miejscowo: podrażnienie skóry głowy, świąd, hipertrychoza (twarz, ramię)' },
+      { hu: 'Orális: edéma (boka, lokális), reflex-tachycardia, perikardiális effúzió (ritka)', en: 'Oral: edema (ankle, local), reflex tachycardia, pericardial effusion (rare)', pl: 'Doustnie: obrzęk (kostki, lokalny), tachykardia odruchowa, wysięk osierdziowy (rzadki)' },
+      { hu: 'Kezdeti shedding (telogén-effluvium) 1-2 hónap körül, mint Finasteride-en', en: 'Initial shedding (telogen effluvium) around 1-2 months, like on finasteride', pl: 'Początkowy shedding (telogen effluvium) około 1-2 miesiąca' },
+    ],
+    cyp450: ['Sulfotransferase activation (SULT1A1)', 'Minimal CYP metabolism'],
+    crossMolInteractions: [
+      { hu: 'Finasteride: KOMPLEMENTER mechanizmus, gold-standard kombináció', en: 'Finasteride: COMPLEMENTARY mechanism, gold-standard combination', pl: 'Finasteryd: UZUPEŁNIAJĄCY mechanizm, złoty standard' },
+      { hu: 'Antihipertenzív szerek: orális esetén additív hipotenzió', en: 'Antihypertensives: oral additive hypotension', pl: 'Leki przeciwnadciśnieniowe: doustnie addytywna hipotensja' },
+    ],
+    benefits: [
+      { hu: 'OTC elérhető topikális forma — alacsony belépési küszöb', en: 'OTC topical form — low entry barrier', pl: 'Forma miejscowa OTC — niski próg wejścia' },
+      { hu: 'LDOM hatékonyabb mint topikális (Sinclair 2017)', en: 'LDOM more effective than topical (Sinclair 2017)', pl: 'LDOM skuteczniejszy niż miejscowy (Sinclair 2017)' },
+      { hu: 'Komplementer Finasteride-hez (Big-3 protokoll)', en: 'Complementary to finasteride (Big-3 protocol)', pl: 'Uzupełnia finasteryd (protokół Big-3)' },
+    ],
+    studies: [
+      { title: 'Low-dose oral minoxidil for hair loss', authors: 'Sinclair R.', journal: 'J Am Acad Dermatol. 2018;79(1):104-105.', pmid: '28349541' },
+      { title: 'Topical minoxidil for androgenetic alopecia: meta-analysis', authors: 'Suchonwanit P, Thammarucha S, Leerunyakul K.', journal: 'Drug Des Devel Ther. 2019;13:2777-2786.', pmid: '31496654' },
+    ],
+    related: ['finasteride'],
+    doseCalc: {
+      type: 'fixedDose',
+      fixedDose: { low: 2, medium: 5, high: 5 },
+      unit: '% topikális 2x/nap',
+      note: { hu: 'Standard: 5% topikális oldat vagy hab 1 ml 2x/nap (reggel + este) száraz skalpra. Nőknél a 2% kevésbé irritáló alternatíva. Off-label oral LDOM: 0,25-5 mg/nap egy dózisban. Hatás 3-6 hónap. Elhagyásnál 6-12 hónap alatt visszahúzódik a növekedés.', en: 'Standard: 5% topical solution or foam 1 ml BID (morning + evening) on dry scalp. In women, 2% is less irritating alternative. Off-label oral LDOM: 0.25-5 mg/day single dose. Effect 3-6 months. On discontinuation, growth recedes over 6-12 months.', pl: 'Standard: 5% roztwór lub pianka miejscowo 1 ml 2x/dzień (rano + wieczorem) na suchą skórę. U kobiet 2% mniej drażniący. Off-label LDOM doustny: 0,25-5 mg/dzień jedna dawka. Efekt 3-6 miesięcy. Po odstawieniu wzrost cofa się w 6-12 miesięcy.' },
+    },
+  },
+
+  // ===== EXTRA. ISOTRETINOIN (Bőr, retinoid, súlyos acne, warning) =====
+  {
+    id: 'isotretinoin',
+    name: 'Isotretinoin',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: '13-cisz-retinoinsav (Roche Roaccutane). Súlyos acne nodulocystica gold-standard. FDA X kategória súlyos teratogenitás miatt — iPLEDGE program kötelező.',
+      en: '13-cis-retinoic acid (Roche Roaccutane). Gold standard for severe nodulocystic acne. FDA category X due to severe teratogenicity — iPLEDGE program mandatory.',
+      pl: 'Kwas 13-cis-retinowy (Roche Roaccutane). Złoty standard dla ciężkiego trądziku guzkowo-torbielowatego. Kategoria X FDA z powodu teratogenności — program iPLEDGE obowiązkowy.',
+    },
+    description: {
+      hu: 'Az Isotretinoin (Roche Roaccutane / Accutane, FDA 1982) a súlyos acne nodulocystica gold-standard kezelése. A 13-cisz-retinoinsav (a vitamin A metabolitja) a sebáceus-mirigy atrofizálását, talgproducció-csökkenést és Propionibacterium acnes-növekedés gátlását okozza. EXTRÉM TERATOGENITÁS (FDA X kategória) — minden női páciensnek a TERHESSÉG-MEGELŐZŐ programmba kell részt vennie (USA: iPLEDGE, EU: hasonló nemzeti programok). 2 negatív terhességi teszt indítás előtt, 2 forma fogamzásgátlás kötelező, havi teszt. Layton 2009 (PMID 20436884) 6 hónapos kúrája az esetek ~80%-ában tartós remissziót okoz. Mellékhatás-profil JELENTŐS: szárazság (száj, szem, bőr, ajak), izomfájdalom, májfunkció-zavar, depresszió-rizikó.',
+      en: 'Isotretinoin (Roche Roaccutane / Accutane, FDA 1982) is the gold-standard treatment for severe nodulocystic acne. 13-cis-retinoic acid (vitamin A metabolite) causes sebaceous gland atrophy, sebum production reduction, and P. acnes growth inhibition. EXTREME TERATOGENICITY (FDA category X) — every female patient must enroll in pregnancy prevention program (USA: iPLEDGE, EU: similar national programs). 2 negative pregnancy tests before start, 2 forms contraception mandatory, monthly testing. Layton 2009 (PMID 20436884) 6-month course produces sustained remission in ~80% of cases. Side effect profile SIGNIFICANT: dryness (mouth, eye, skin, lip), muscle pain, liver function disturbance, depression risk.',
+      pl: 'Izotretynoina (Roche Roaccutane / Accutane, FDA 1982) to złoty standard leczenia ciężkiego trądziku guzkowo-torbielowatego. Kwas 13-cis-retinowy (metabolit witaminy A) powoduje atrofię gruczołów łojowych, redukcję produkcji łoju i hamowanie wzrostu P. acnes. EKSTREMALNA TERATOGENNOŚĆ (kategoria X FDA) — każda pacjentka musi uczestniczyć w programie zapobiegania ciąży (USA: iPLEDGE, UE: podobne krajowe programy). 2 negatywne testy ciążowe przed startem, 2 formy antykoncepcji obowiązkowe, comiesięczne testy. Layton 2009 (PMID 20436884) 6-miesięczny kurs daje trwałą remisję w ~80% przypadków.',
+    },
+    mechanism: { hu: 'Retinoid receptor (RAR) parciális agonista. Sebaceus-mirigy atrofizálása, talgproducció ~80%-os csökkentése, Propionibacterium acnes-populáció csökkentés, follikuláris hiperkeratinizáció normalizálása. Multimodális anti-acne hatás.', en: 'Retinoid receptor (RAR) partial agonist. Sebaceous gland atrophy, ~80% sebum production reduction, P. acnes population decrease, normalization of follicular hyperkeratinization. Multimodal anti-acne effect.', pl: 'Częściowy agonista receptora retinoidowego (RAR). Atrofia gruczołów łojowych, redukcja produkcji łoju o ~80%, redukcja populacji P. acnes, normalizacja hiperkeratynizacji mieszkowej.' },
+    legalStatus: { hu: 'EU/HU: vényköteles, bőrgyógyász szigorúan ellenőrzött protokoll (Roaccutane). USA: FDA Rx iPLEDGE-program.', en: 'EU/HU: prescription only, dermatologist-strictly-supervised protocol (Roaccutane). USA: FDA Rx iPLEDGE program.', pl: 'UE/PL: na receptę, ściśle nadzorowane przez dermatologa (Roaccutane). USA: FDA Rx program iPLEDGE.' },
+    onsetTime: '4-8 weeks (initial improvement), 4-6 months (full course)',
+    halfLife: '~21 h (parent), 24 h (active 4-oxo-isotretinoin)',
+    atcCode: 'D10BA01',
+    prescriptionStatus: { hu: 'Vényköteles (Rx), bőrgyógyász protokoll + terhességi prevenció', en: 'Prescription only (Rx), dermatologist protocol + pregnancy prevention', pl: 'Na receptę (Rx), protokół dermatologa + prewencja ciąży' },
+    indications: [
+      { hu: 'Súlyos acne nodulocystica, hagyományos kezelésre rezisztens', en: 'Severe nodulocystic acne, resistant to conventional treatment', pl: 'Ciężki trądzik guzkowo-torbielowaty, oporny na konwencjonalne leczenie' },
+      { hu: 'Hegesedő acne (cicatricial)', en: 'Scarring acne (cicatricial)', pl: 'Trądzik bliznowaty' },
+      { hu: 'Off-label: súlyos rosacea, hidradenitis suppurativa', en: 'Off-label: severe rosacea, hidradenitis suppurativa', pl: 'Off-label: ciężki trądzik różowaty, hidradenitis suppurativa' },
+    ],
+    contraindications: [
+      { hu: 'TERHESSÉG (FDA X kategória — súlyos kraniofaciális, kardiovaszkuláris, CNS-malformáció)', en: 'PREGNANCY (FDA category X — severe craniofacial, CV, CNS malformations)', pl: 'CIĄŻA (kategoria X FDA — ciężkie wady twarzoczaszki, CV, CNS)' },
+      { hu: 'Gyermekvállalási korban fogamzásgátlás nélkül', en: 'Childbearing age without contraception', pl: 'Wiek rozrodczy bez antykoncepcji' },
+      { hu: 'Hipervitaminozis A, súlyos hepatikus betegség', en: 'Hypervitaminosis A, severe hepatic disease', pl: 'Hiperwitaminoza A, ciężka choroba wątroby' },
+    ],
+    commonSideEffects: [
+      { hu: 'Cheilitisz (ajak-szárazság, 90%), bőr-szárazság, xeroftalmia (szem), epistaxis (orrvérzés)', en: 'Cheilitis (lip dryness, 90%), skin dryness, xerophthalmia (eye), epistaxis (nosebleed)', pl: 'Zapalenie warg (suchość warg, 90%), suchość skóry, xerophthalmia, krwawienia z nosa' },
+      { hu: 'Triglycerid- és koleszterin-emelkedés', en: 'Triglyceride and cholesterol elevation', pl: 'Wzrost triglicerydów i cholesterolu' },
+      { hu: 'Izomfájdalom, hátfájás, ALT/AST emelkedés', en: 'Muscle pain, back pain, ALT/AST elevation', pl: 'Ból mięśni, pleców, wzrost ALT/AST' },
+      { hu: 'Súlyos: SÚLYOS TERATOGENITÁS (X kategória), pszichiátriai tünet (depresszió, suicidalitás — FDA warning), pszeudotumor cerebri, IBD (vita), retinoidácitás', en: 'Severe: SEVERE TERATOGENICITY (X), psychiatric symptoms (depression, suicidality — FDA warning), pseudotumor cerebri, IBD (debate), retinoid acid syndrome', pl: 'Ciężkie: CIĘŻKA TERATOGENNOŚĆ (X), objawy psychiatryczne (depresja, samobójstwo — ostrzeżenie FDA), pseudotumor cerebri, IBD (dyskusja)' },
+    ],
+    cyp450: ['CYP2C9, CYP2C8, CYP3A4 (multiple)', 'Photo-degradation'],
+    crossMolInteractions: [
+      { hu: 'Tetraciklin (Doxycycline, Tetracycline): SÚLYOS pszeudotumor cerebri kockázat — TILOS', en: 'Tetracycline (doxycycline, tetracycline): SEVERE pseudotumor cerebri risk — FORBIDDEN', pl: 'Tetracyklina (doksycyklina, tetracyklina): CIĘŻKIE ryzyko pseudotumor cerebri — ZAKAZANE' },
+      { hu: 'Vitamin A (multivitamin): hipervitaminozis-additivitás, kerülendő', en: 'Vitamin A (multivitamin): hypervitaminosis additivity, avoid', pl: 'Witamina A (multiwitamina): addytywność hiperwitaminozy, unikać' },
+      { hu: 'Alkohol: hepatotoxicitás + triglycerid-additivitás, mértékletesség', en: 'Alcohol: hepatotoxicity + triglyceride additivity, moderation', pl: 'Alkohol: hepatotoksyczność + addytywność triglicerydów, umiar' },
+      { hu: 'Korstikoszteroid magas-dózison: csont-mineralizáció zavara', en: 'High-dose corticosteroids: bone mineralization disturbance', pl: 'Wysokie dawki kortykosteroidów: zaburzenie mineralizacji kości' },
+    ],
+    benefits: [
+      { hu: '~80% tartós remisszió 6 hónapos kúra után', en: '~80% sustained remission after 6-month course', pl: '~80% trwała remisja po 6-miesięcznym kursie' },
+      { hu: 'EGYETLEN gyógyszer, ami a súlyos acne minden négy patomechanizmusát célozza', en: 'ONLY drug targeting all four pathomechanisms of severe acne', pl: 'JEDYNY lek celujący wszystkie cztery patomechanizmy ciężkiego trądziku' },
+      { hu: 'Hegesedés-megelőzés (vs ciklikus antibiotikus-kezelés)', en: 'Scarring prevention (vs cyclical antibiotic treatment)', pl: 'Profilaktyka blizn (vs cykliczne antybiotyki)' },
+    ],
+    studies: [
+      { title: 'Isotretinoin: state of the art treatment for acne vulgaris', authors: 'Layton AM.', journal: 'JEADV. 2009;23(7):768-71.', pmid: '20436884' },
+      { title: 'Isotretinoin and risk for inflammatory bowel disease: systematic review', authors: 'Lee SY, Jamal MM, Nguyen ET et al.', journal: 'J Crohns Colitis. 2016;10(10):1217-1226.', pmid: '27068147' },
+      { title: 'Psychiatric adverse effects of isotretinoin', authors: 'Bremner JD, Shearer KD, McCaffery PJ.', journal: 'J Clin Psychiatry. 2012;73(1):37-50.', pmid: '21939615' },
+    ],
+    related: ['tretinoin', 'minoxidil', 'finasteride'],
+    doseCalc: {
+      type: 'warning',
+      warning: {
+        hu: 'Az Isotretinoin a SÚLYOS ACNE GOLD-STANDARD szere, de SZIGORÚAN BŐRGYÓGYÁSZ-FELÜGYELET ALATT, terhesség-megelőzési protokollal (USA: iPLEDGE, EU: nemzeti programok). NEM ÖNÁLLÓ DÓZIS-KALKULÁTOR ezen az oldalon, mert: (1) FDA X kategória TERATOGENITÁS — egyetlen kihagyott fogamzásgátlás vagy laborkontroll súlyos magzati malformációhoz vezethet; (2) a kumulatív dózis (120-150 mg/kg testtömeg/kúra) testtömeg-egyéni, bőrgyógyász-számolja; (3) HAVI VÉRKÉP, májfunkció + LIPID-monitor KÖTELEZŐ; (4) Tetraciklinnel KOMBINÁCIÓ TILOS (pszeudotumor cerebri); (5) Pszichiátriai tünet (depresszió-suicidalitás) FDA-figyelmeztetés. Beszélj a bőrgyógyászoddal. Sürgősségi tünet (látászavar, fejfájás-tartós, hangulati lehangoltság, vér a székletben, terhesség gyanú): AZONNALI ellátás.',
+        en: 'Isotretinoin is the GOLD STANDARD for SEVERE ACNE, but STRICTLY UNDER DERMATOLOGIST SUPERVISION with pregnancy-prevention protocol (USA: iPLEDGE, EU: national programs). NO STANDALONE DOSE CALCULATOR on this page because: (1) FDA X TERATOGENICITY — a single missed contraception or lab check can lead to severe fetal malformation; (2) cumulative dose (120-150 mg/kg body weight/course) is body-weight-individual, dermatologist-calculated; (3) MONTHLY CBC, liver function + LIPID monitor MANDATORY; (4) Tetracycline COMBINATION FORBIDDEN (pseudotumor cerebri); (5) Psychiatric symptoms (depression-suicidality) FDA warning. Talk to your dermatologist. Emergency symptoms (vision change, persistent headache, mood depression, blood in stool, pregnancy suspicion): IMMEDIATE care.',
+        pl: 'Izotretynoina to ZŁOTY STANDARD dla CIĘŻKIEGO TRĄDZIKU, ale ŚCIŚLE POD NADZOREM DERMATOLOGA z protokołem prewencji ciąży (USA: iPLEDGE, UE: programy krajowe). BRAK KALKULATORA DAWEK na tej stronie, ponieważ: (1) kategoria X FDA TERATOGENNOŚĆ — pojedyncze pominięcie antykoncepcji lub kontroli laboratoryjnej może prowadzić do ciężkiej wady płodu; (2) kumulatywna dawka (120-150 mg/kg masy ciała/kurs) jest indywidualna, kalkulowana przez dermatologa; (3) COMIESIĘCZNA CBC, próby wątrobowe + LIPIDY OBOWIĄZKOWE; (4) Kombinacja z tetracykliną ZAKAZANA (pseudotumor cerebri); (5) Objawy psychiatryczne (depresja-samobójstwo) ostrzeżenie FDA. Porozmawiaj z dermatologiem. Objawy nagłe (zaburzenia wzroku, uporczywy ból głowy, depresja, krew w stolcu, podejrzenie ciąży): NATYCHMIASTOWA opieka.',
+      },
+    },
+  },
+
+  // ===== EXTRA. TRETINOIN (Bőr, topikális retinoid, acne + anti-aging) =====
+  {
+    id: 'tretinoin',
+    name: 'Tretinoin',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: 'Topikális retinoid all-transz-retinoinsav. Acne, fotoöregedés, hiperpigmentáció kezelés. Bőrgyógyászati gold-standard.',
+      en: 'Topical retinoid all-trans-retinoic acid. Acne, photoaging, hyperpigmentation treatment. Dermatological gold standard.',
+      pl: 'Miejscowy retinoid kwas all-trans-retinowy. Trądzik, fotostarzenie, leczenie hiperpigmentacji. Dermatologiczny złoty standard.',
+    },
+    description: {
+      hu: 'A Tretinoin (all-transz-retinoinsav) az első topikális retinoid (Ortho Retin-A, FDA 1971), bőrgyógyászati standard akneológus + anti-aging-területen. A retinoid receptor (RAR) aktiválása révén normalizálja a follikuláris keratinizációt (acne-mechanizmus), gyorsítja a kollagén-szintézist (anti-aging), és csökkenti a melanin-pigmentációt (hiperpigmentáció). A leggyakoribb erősségek: 0,025%, 0,05%, 0,1% krém vagy gél. Az Isotretinoinhoz képest topikális — nem szisztémás, terhesség-rizikó SZIGNIFIKÁNSAN ALACSONYABB, de szülő-kort viselő nőknek kerülendő. Hosszú-távú anti-aging-evidencia: Kligman 1986 PMID 3548421 a fotoöregedés legjobban dokumentált topikális kezelése.',
+      en: 'Tretinoin (all-trans-retinoic acid) is the first topical retinoid (Ortho Retin-A, FDA 1971), dermatological standard in acneology + anti-aging. Retinoid receptor (RAR) activation normalizes follicular keratinization (acne mechanism), accelerates collagen synthesis (anti-aging), and reduces melanin pigmentation (hyperpigmentation). Common strengths: 0.025%, 0.05%, 0.1% cream or gel. Vs Isotretinoin it is topical — non-systemic, pregnancy risk SIGNIFICANTLY LOWER but avoid in childbearing-age women. Long-term anti-aging evidence: Kligman 1986 PMID 3548421 the best-documented topical treatment for photoaging.',
+      pl: 'Tretynoina (kwas all-trans-retinowy) to pierwszy miejscowy retinoid (Ortho Retin-A, FDA 1971), dermatologiczny standard w trądziku + anti-aging. Aktywacja receptora retinoidowego (RAR) normalizuje keratynizację mieszkową (mechanizm trądziku), przyspiesza syntezę kolagenu (anti-aging) i zmniejsza pigmentację melaniny (hiperpigmentacja). Powszechne stężenia: 0,025%, 0,05%, 0,1% krem lub żel. Vs izotretynoina jest miejscowa — nieukładowa, ryzyko ciążowe ZNACZNIE NIŻSZE, ale unikać u kobiet w wieku rozrodczym.',
+    },
+    mechanism: { hu: 'RAR-α/β/γ receptor aktiváció → géntranszkripció moduláció → follikuláris keratinizáció normalizálása + kollagén-szintézis fokozás + melanin-csökkentés.', en: 'RAR-α/β/γ receptor activation → gene transcription modulation → follicular keratinization normalization + collagen synthesis enhancement + melanin reduction.', pl: 'Aktywacja receptorów RAR-α/β/γ → modulacja transkrypcji genów → normalizacja keratynizacji + wzmocnienie kolagenu + redukcja melaniny.' },
+    legalStatus: { hu: 'EU/HU: vényköteles (Atrederm, Locacid, Retin-A). USA: FDA Rx (Retin-A, Renova, Tretin-X).', en: 'EU/HU: prescription only (Atrederm, Locacid, Retin-A). USA: FDA Rx (Retin-A, Renova, Tretin-X).', pl: 'UE/PL: na receptę (Atrederm, Locacid, Retin-A). USA: FDA Rx.' },
+    onsetTime: '8-12 weeks (acne improvement), 4-6 months (anti-aging visible)',
+    halfLife: 'Topical, minimal systemic absorption',
+    atcCode: 'D10AD01',
+    prescriptionStatus: { hu: 'Vényköteles (Rx), bőrgyógyász felügyelet', en: 'Prescription only (Rx), dermatologist-supervised', pl: 'Na receptę (Rx), nadzór dermatologa' },
+    indications: [
+      { hu: 'Acne vulgaris (enyhe-mérsékelt)', en: 'Acne vulgaris (mild-moderate)', pl: 'Trądzik (łagodny-średni)' },
+      { hu: 'Fotoöregedés (finom ráncok, bőrtextúra, pigmentáció)', en: 'Photoaging (fine wrinkles, skin texture, pigmentation)', pl: 'Fotostarzenie (delikatne zmarszczki, tekstura, pigmentacja)' },
+      { hu: 'Hiperpigmentáció (melasma, post-inflammatorius)', en: 'Hyperpigmentation (melasma, post-inflammatory)', pl: 'Hiperpigmentacja (melasma, pozapalna)' },
+      { hu: 'Off-label: keratosis pilaris, stretch-marks', en: 'Off-label: keratosis pilaris, stretch marks', pl: 'Off-label: keratoza mieszkowa, rozstępy' },
+    ],
+    contraindications: [
+      { hu: 'Terhesség (relatív, alacsony szisztémás abszorpció, de kerülendő — Vitamin A-szerű embriopátia kockázata)', en: 'Pregnancy (relative, low systemic absorption but avoid — vitamin A-like embryopathy risk)', pl: 'Ciąża (względne, niskie wchłanianie ogólnoustrojowe, ale unikać)' },
+      { hu: 'Aktív ekcéma, súlyos pikkelysömör az alkalmazási területen', en: 'Active eczema, severe psoriasis on application area', pl: 'Aktywne wyprysk, ciężka łuszczyca w obszarze' },
+    ],
+    commonSideEffects: [
+      { hu: 'Bőr-szárazság, pikkelyesedés, irritáció (kezdetben gyakori — "retinoid uncertainty")', en: 'Skin dryness, peeling, irritation (common initially — "retinization")', pl: 'Suchość skóry, łuszczenie, podrażnienie (początkowo częste — "retinization")' },
+      { hu: 'Fototoxikus reakció (NAPVÉDELEM KÖTELEZŐ SPF 30+)', en: 'Photosensitivity (SUNSCREEN MANDATORY SPF 30+)', pl: 'Fotouczulenie (KREM PRZECIWSŁONECZNY OBOWIĄZKOWY SPF 30+)' },
+      { hu: 'Kezdeti acne-fellobbanás (purging, 2-4 hét)', en: 'Initial acne flare (purging, 2-4 weeks)', pl: 'Początkowy wybuch trądziku (purging, 2-4 tygodnie)' },
+      { hu: 'Súlyos, ritka: erős irritáció (kontakt-dermatitisz), retinoid-fotodermatitisz', en: 'Severe, rare: severe irritation (contact dermatitis), retinoid photodermatitis', pl: 'Ciężkie, rzadkie: ciężkie podrażnienie (kontaktowe), fotodermatozy retinoidowe' },
+    ],
+    cyp450: ['Minimal systemic absorption (topical)', 'No major systemic interactions'],
+    crossMolInteractions: [
+      { hu: 'Benzoyl peroxide: külön időpontban alkalmazva (BPO oxidálja a Tretinoint)', en: 'Benzoyl peroxide: apply at separate times (BPO oxidizes tretinoin)', pl: 'Nadtlenek benzoilu: stosuj o różnych porach (BPO utlenia tretynoinę)' },
+      { hu: 'AHA/BHA savak (glikol, szalicilsav): irritáció-additivitás, óvatosan kombinálni', en: 'AHA/BHA acids (glycolic, salicylic): irritation additivity, combine cautiously', pl: 'Kwasy AHA/BHA (glikolowy, salicylowy): addytywność podrażnienia, ostrożnie' },
+      { hu: 'Egyéb retinoidok (Adapalene): kerülendő egyidejűleg', en: 'Other retinoids (adapalene): avoid concurrent', pl: 'Inne retinoidy (adapalen): unikać jednocześnie' },
+    ],
+    benefits: [
+      { hu: 'Acne és anti-aging bizonyított hatás (Kligman 1986)', en: 'Proven acne and anti-aging effect (Kligman 1986)', pl: 'Udowodniony efekt na trądzik i anti-aging (Kligman 1986)' },
+      { hu: 'Hiperpigmentáció (melasma, PIH) csökkentés', en: 'Hyperpigmentation (melasma, PIH) reduction', pl: 'Redukcja hiperpigmentacji (melasma, PIH)' },
+      { hu: 'Bőrgyógyászati gold-standard 50+ év óta', en: 'Dermatological gold standard for 50+ years', pl: 'Dermatologiczny złoty standard od 50+ lat' },
+    ],
+    studies: [
+      { title: 'Topical tretinoin improves photodamaged facial skin', authors: 'Kligman AM, Grove GL, Hirose R et al.', journal: 'J Am Acad Dermatol. 1986;15(4 Pt 2):836-59.', pmid: '3548421' },
+      { title: 'Topical retinoid for acne: meta-analysis', authors: 'Yentzer BA, Hick J, Reese EL et al.', journal: 'Cutis. 2010;86(2):94-9.', pmid: '20919605' },
+      { title: 'Tretinoin for hyperpigmentation (melasma): randomized trial', authors: 'Griffiths CE, Goldfarb MT, Finkel LJ et al.', journal: 'Br J Dermatol. 1994;131(1):106-13.', pmid: '8043420' },
+    ],
+    related: ['isotretinoin', 'minoxidil'],
+    doseCalc: {
+      type: 'fixedDose',
+      fixedDose: { low: 0.025, medium: 0.05, high: 0.1 },
+      unit: '% topikális',
+      note: {
+        hu: 'Alacsony (0,025%): érzékeny bőr, anti-aging kezdés, szárazságra hajlamos. Mérsékelt (0,05%): standard akne és anti-aging. Magas (0,1%): rezisztens akne, vastagabb bőr. ESTÉRE alkalmazni borsónyi-mennyiségben tiszta, száraz bőrre. NAPVÉDELEM SPF 30+ KÖTELEZŐ. Lassú bevezetés (heti 2x → 4x → napi) az irritáció mitigálására. Hatás 8-12 hét.',
+        en: 'Low (0.025%): sensitive skin, anti-aging start, dryness-prone. Moderate (0.05%): standard acne and anti-aging. High (0.1%): resistant acne, thicker skin. Apply at EVENING in pea-sized amount on clean, dry skin. SUNSCREEN SPF 30+ MANDATORY. Slow introduction (2x/wk → 4x/wk → daily) to mitigate irritation. Effect 8-12 weeks.',
+        pl: 'Niska (0,025%): wrażliwa skóra, start anti-aging, podatna na suchość. Średnia (0,05%): standard trądzik i anti-aging. Wysoka (0,1%): oporny trądzik, grubsza skóra. Stosuj WIECZOREM w ilości groszku na czystą, suchą skórę. KREM SPF 30+ OBOWIĄZKOWY. Powolne wprowadzenie (2x/tydz → 4x/tydz → codziennie) by złagodzić podrażnienie.',
+      },
+    },
+  },
+
   // ===== EXTRA 6. GLIMEPIRID (Anyagcsere, 2nd gen sulfonylurea) =====
   {
     id: 'glimepirid',

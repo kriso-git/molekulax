@@ -50,6 +50,13 @@ export const EXPLICIT_LEVEL = {
   ciprofloxacin:   5,
   doxycycline:     5,
   metronidazole:   5,
+  // EXTRA Onko
+  methotrexate:    3,
+  tamoxifen:       3,
+  // EXTRA Bőr
+  minoxidil:       5,
+  isotretinoin:    3,
+  tretinoin:       4,
 }
 
 /**

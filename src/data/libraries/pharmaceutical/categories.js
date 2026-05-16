@@ -55,6 +55,13 @@ export const PHARMACEUTICAL_CATEGORIES = {
   ciprofloxacin:   ['antiinfective'],
   doxycycline:     ['antiinfective'],
   metronidazole:   ['antiinfective'],
+  // EXTRA Onko
+  methotrexate:    ['oncology'],
+  tamoxifen:       ['oncology'],
+  // EXTRA Bőr
+  minoxidil:       ['dermatology'],
+  isotretinoin:    ['dermatology'],
+  tretinoin:       ['dermatology'],
 }
 
 export function getPharmaceuticalCategories(entryId) {
