@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef, useMemo } from 'react'
-import { PEPTIDES, TOP10_ORDER } from '../data/peptides'
-import { CATEGORIES, getPeptideCategories } from '../data/peptideCategories'
-import { getResearchLevel, getLevelMeta, LEVEL_META, makeSortComparator } from '../data/researchLevel'
+import { useLibrary } from '../context/LibraryContext'
+import { getLevelMeta, LEVEL_META, makeSortComparator } from '../data/libraries/shared/researchLevel'
 import { useLang } from '../i18n/LanguageContext'
 import {
   ChevronDown, Search, Star, SlidersHorizontal, X,
@@ -20,11 +19,11 @@ import TelegramButtons from './TelegramButtons'
 // Card lifts on hover via translateY; gradient lighting from accent colour
 // provides the soft 3D feel.
 
-function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
+function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
   const isPlaceholder = !peptide.image
-  const level = getResearchLevel(peptide)
+  const level = library.getResearchLevel(peptide)
   const levelMeta = getLevelMeta(level)
-  const catIds = getPeptideCategories(peptide.id)
+  const catIds = (library.entryCategoryMap[peptide.id] || [])
   const accent = peptide.accentColor
 
   return (
@@ -152,7 +151,7 @@ function PeptideTile({ peptide, featured, onSelect, t, tr, lang }) {
           ) : (
             (() => {
               const primaryId = catIds[0]
-              const cat = CATEGORIES.find(c => c.id === primaryId)
+              const cat = library.categories.find(c => c.id === primaryId)
               if (!cat) return null
               return (
                 <span
@@ -218,16 +217,16 @@ function SortControl({ value, onChange, t }) {
 }
 
 // ── Main component ───────────────────────────────────────────────────────────
-// Tile clicks update the URL hash to #entry/peptides/<id>; the App-level
+// Tile clicks update the URL hash to #entry/<library>/<id>; the App-level
 // EntryDetailRoute observes the hash and renders the detail view (modal on
 // mobile, full page on desktop).
-function openPeptide(peptide) {
+function openEntry(library, entry) {
   if (typeof window !== 'undefined') {
-    window.location.hash = `entry/peptides/${peptide.id}`
+    window.location.hash = `entry/${library.id}/${entry.id}`
   }
 }
 
-export default function PeptideGallery() {
+export default function LibraryGallery({ library: libraryProp } = {}) {
   const [expanded, setExpanded] = useState(false)
   const [showFilters, setShowFilters] = useState(false)
   const [query, setQuery] = useState('')
@@ -237,34 +236,36 @@ export default function PeptideGallery() {
   const sectionRef = useRef(null)
   const allSectionRef = useRef(null)
   const { t, tr, lang } = useLang()
+  const { library: ctxLibrary } = useLibrary()
+  const library = libraryProp || ctxLibrary
 
   const top10 = useMemo(
-    () => TOP10_ORDER.map(id => PEPTIDES.find(p => p.id === id)).filter(Boolean),
-    []
+    () => library.topEntries.map(id => library.entries.find(p => p.id === id)).filter(Boolean),
+    [library]
   )
 
   // Apply search + category filter + research-level filter, then sort.
   const filteredAll = useMemo(() => {
     const q = query.trim().toLowerCase()
-    const matched = PEPTIDES.filter(p => {
+    const matched = library.entries.filter(p => {
       if (q) {
         const name = p.name.toLowerCase()
         const short = (tr(p.shortDesc) || '').toLowerCase()
         if (!name.includes(q) && !short.includes(q)) return false
       }
       if (activeFilters.length > 0) {
-        const cats = getPeptideCategories(p.id)
+        const cats = (library.entryCategoryMap[p.id] || [])
         const hasMatch = activeFilters.some(f => cats.includes(f))
         if (!hasMatch) return false
       }
       if (levelFilters.length > 0) {
-        const lvl = getResearchLevel(p)
+        const lvl = library.getResearchLevel(p)
         if (!levelFilters.includes(lvl)) return false
       }
       return true
     })
-    return matched.sort(makeSortComparator(sortMode))
-  }, [query, lang, activeFilters, levelFilters, sortMode])
+    return matched.sort(makeSortComparator(library.getResearchLevel, sortMode))
+  }, [library, query, lang, activeFilters, levelFilters, sortMode])
 
   // Scroll the gallery into view when the URL hash becomes #library (e.g. the
   // user closes an entry-detail view). The browser's native anchor-scroll only
@@ -338,9 +339,10 @@ export default function PeptideGallery() {
             {top10.map(peptide => (
               <PeptideTile
                 key={peptide.id}
+                library={library}
                 peptide={peptide}
                 featured
-                onSelect={openPeptide}
+                onSelect={(entry) => openEntry(library, entry)}
                 t={t}
                 tr={tr}
                 lang={lang}
@@ -372,7 +374,7 @@ export default function PeptideGallery() {
                     {t('gal.all.title')}
                   </h3>
                   <p className="text-gray-500 text-xs mt-0.5">
-                    {PEPTIDES.length} {t('gal.all.count')}
+                    {library.entries.length} {t('gal.all.count')}
                   </p>
                 </div>
               </div>
@@ -516,7 +518,7 @@ export default function PeptideGallery() {
                             {t('gal.filter.all')}
                           </button>
 
-                          {CATEGORIES.map((cat) => {
+                          {library.categories.map((cat) => {
                             const active = activeFilters.includes(cat.id)
                             return (
                               <button
@@ -588,9 +590,10 @@ export default function PeptideGallery() {
                     {filteredAll.map(peptide => (
                       <PeptideTile
                         key={peptide.id}
+                        library={library}
                         peptide={peptide}
                         featured={false}
-                        onSelect={openPeptide}
+                        onSelect={(entry) => openEntry(library, entry)}
                         t={t}
                         tr={tr}
                         lang={lang}

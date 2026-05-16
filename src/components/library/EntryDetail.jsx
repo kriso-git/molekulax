@@ -3,7 +3,7 @@
 // spatial UI, holographic conic rings, glassmorphism bento grids, lab-
 // terminal CRT typewriters, magnetic CTAs, 3D mouse-tilt cards.
 //
-// Same data contract as V1 (consumes adaptLivePeptide output), but the
+// Same data contract as V1 (consumes adaptLibraryEntry output), but the
 // layout, motion, and visualizations are intentionally radical.
 
 import { useState, useEffect, useRef, useMemo } from 'react'

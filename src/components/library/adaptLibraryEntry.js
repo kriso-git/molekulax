@@ -1,10 +1,8 @@
-// Adapts a live peptide (src/data/peptides.js shape) to the rich
-// MockupDetail-expected shape. Missing fields fall back to null/empty so
-// MockupDetail can skip those sections gracefully.
+// Adapts a live Library Entry (any libraries/<id>/data.js shape) to the rich
+// EntryDetail-expected shape. Missing fields fall back to null/empty so
+// EntryDetail can skip those sections gracefully.
 
-import { CATEGORIES, getPeptideCategories } from '../../data/peptideCategories'
-import { getResearchLevel, getLevelMeta } from '../../data/researchLevel'
-import { PEPTIDES } from '../../data/peptides'
+import { getLevelMeta } from '../../data/libraries/shared/researchLevel'
 
 // Match keyInfo entries by translated label fragment (HU/EN/PL).
 function findFactByLabel(keyInfo, fragments) {
@@ -43,10 +41,10 @@ function deriveMechanism(peptide) {
 }
 
 // Build a category chip list from the peptide's mapped categories.
-function deriveResearchUses(peptide) {
-  const ids = getPeptideCategories(peptide.id)
+function deriveResearchUses(peptide, library) {
+  const ids = (library.entryCategoryMap[peptide.id] || [])
   return ids
-    .map(id => CATEGORIES.find(c => c.id === id))
+    .map(id => library.categories.find(c => c.id === id))
     .filter(Boolean)
     .map(cat => ({ id: cat.id, label: cat.label }))
 }
@@ -186,8 +184,8 @@ const CATEGORY_BENEFITS = {
       en: 'Directly stimulates gut-mucosal regeneration: epithelial renewal, tight-junction restoration, mucosal thickness normalization. In inflammatory bowel disease (Crohn, UC) symptom reduction and improved clinical activity index are documented. In functional GI disorders (IBS, FD) bloating, pain and discomfort drop. Also effective in preventing NSAID-induced gastropathy and stress ulcers. Microbiome-friendly anti-inflammatory profile.',
       pl: 'Stymuluje regenerację błony śluzowej jelit: odnowa nabłonka, odbudowa tight-junctions. W IBD i IBS objawy się zmniejszają. Profil przeciwzapalny przyjazny mikrobiomowi.' } },
 }
-function deriveKeyBenefits(peptide) {
-  const ids = getPeptideCategories(peptide.id)
+function deriveKeyBenefits(peptide, library) {
+  const ids = (library.entryCategoryMap[peptide.id] || [])
   return ids
     .map(id => CATEGORY_BENEFITS[id] && { id, ...CATEGORY_BENEFITS[id] })
     .filter(Boolean)
@@ -351,12 +349,12 @@ function deriveSafetyProfile(peptide, categoryIds) {
 }
 
 // Related peptides — share at least one category, sorted by overlap count.
-function deriveRelated(peptide, categoryIds) {
+function deriveRelated(peptide, categoryIds, library) {
   if (!categoryIds.length) return []
-  return PEPTIDES
+  return library.entries
     .filter(p => p.id !== peptide.id)
     .map(p => {
-      const theirIds = getPeptideCategories(p.id)
+      const theirIds = (library.entryCategoryMap[p.id] || [])
       const overlap = theirIds.filter(id => categoryIds.includes(id)).length
       return { peptide: p, overlap }
     })
@@ -364,11 +362,11 @@ function deriveRelated(peptide, categoryIds) {
     .sort((a, b) => b.overlap - a.overlap)
     .slice(0, 4)
     .map(x => {
-      const tier = getResearchLevel(x.peptide)
+      const tier = library.getResearchLevel(x.peptide)
       const meta = getLevelMeta(tier)
-      const ids = getPeptideCategories(x.peptide.id)
+      const ids = (library.entryCategoryMap[x.peptide.id] || [])
       const chips = ids
-        .map(id => CATEGORIES.find(c => c.id === id))
+        .map(id => library.categories.find(c => c.id === id))
         .filter(Boolean)
         .slice(0, 3)
         .map(c => c.label)
@@ -819,10 +817,10 @@ function deriveIndicationGroupsFromStudies(peptide, excludeLabels) {
   return out
 }
 
-function deriveIndications(peptide, categoryIds) {
+function deriveIndications(peptide, categoryIds, library) {
   const fromCategories = categoryIds
     .map(id => {
-      const cat = CATEGORIES.find(c => c.id === id)
+      const cat = library.categories.find(c => c.id === id)
       const items = CATEGORY_INDICATIONS[id] || []
       if (!cat || !items.length) return null
       return {
@@ -849,15 +847,16 @@ function deriveWhatIs(peptide) {
   return peptide.description
 }
 
-export function adaptLivePeptide(peptide) {
+export function adaptLibraryEntry(entry, library) {
+  const peptide = entry
   if (!peptide) return null
-  const tier = getResearchLevel(peptide)
+  const tier = library.getResearchLevel(peptide)
   const meta = getLevelMeta(tier)
-  const categoryIds = getPeptideCategories(peptide.id)
+  const categoryIds = (library.entryCategoryMap[peptide.id] || [])
   const primary = categoryIds[0]
-  const primaryCat = primary ? CATEGORIES.find(c => c.id === primary) : null
+  const primaryCat = primary ? library.categories.find(c => c.id === primary) : null
 
-  const related = deriveRelated(peptide, categoryIds)
+  const related = deriveRelated(peptide, categoryIds, library)
 
   return {
     id: peptide.id,
@@ -872,10 +871,10 @@ export function adaptLivePeptide(peptide) {
     oneLiner: extractOneLiner(peptide),
     keyFacts: peptide.keyInfo || [],
     quickStart: deriveQuickStart(peptide),
-    keyBenefits: deriveKeyBenefits(peptide),
+    keyBenefits: deriveKeyBenefits(peptide, library),
     whatIs: deriveWhatIs(peptide),
     mechanism: deriveMechanism(peptide),
-    researchUses: deriveResearchUses(peptide),
+    researchUses: deriveResearchUses(peptide, library),
     molecular: deriveMolecular(peptide),
     dosing: deriveDosing(peptide),
     stacks: [],
@@ -892,7 +891,7 @@ export function adaptLivePeptide(peptide) {
       doseMcg: peptide.defaultDoseMcg,
     },
     // ─── v2-only enriched fields (v1 ignores these) ──────────────────
-    indications:       deriveIndications(peptide, categoryIds),
+    indications:       deriveIndications(peptide, categoryIds, library),
     safetyProfile:     deriveSafetyProfile(peptide, categoryIds),
     interactions:      deriveInteractions(peptide, categoryIds, related),
     reconstitute:      deriveReconstitute(peptide),

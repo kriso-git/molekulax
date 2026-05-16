@@ -1,11 +1,11 @@
-// Research Level — derives a 1-to-5 maturity tier for each peptide.
-// Inspired by pep-pedia.org/browse's regulatory-status indicator.
+// Peptide-specific research-level inferrer.
 //
 // Inputs we read:
-//   - peptide.keyInfo[*].value  (status / legal-status / clinical-phase strings)
-//   - peptide.studies[]          (number of distinct peer-reviewed entries)
+//   - entry.keyInfo[*].value  (status / legal-status / clinical-phase strings)
+//   - entry.studies[]          (number of distinct peer-reviewed entries)
 //
-// Tier semantics:
+// Tier semantics (shared with all libraries — visual scale lives in
+// libraries/shared/researchLevel.js, only the *inference* differs per library):
 //   5  approved        FDA / EMA / major-regulator approved for any indication
 //   4  late-stage      Phase 3 ongoing or regulator approval in a non-US market
 //   3  clinical        Phase 1/2 RCT data in humans
@@ -94,9 +94,9 @@ const RX = {
   emerging: /\b(research compound|kutatási vegyület|związek badawczy|emerging|early)\b/i,
 }
 
-function collectStatusText(peptide) {
+function collectStatusText(entry) {
   const parts = []
-  for (const info of peptide.keyInfo || []) {
+  for (const info of entry.keyInfo || []) {
     const v = info.value
     if (!v) continue
     if (typeof v === 'string') parts.push(v)
@@ -105,11 +105,11 @@ function collectStatusText(peptide) {
   return parts.join(' · ')
 }
 
-export function getResearchLevel(peptide) {
-  if (!peptide) return 1
-  if (EXPLICIT_LEVEL[peptide.id]) return EXPLICIT_LEVEL[peptide.id]
+export function getResearchLevel(entry) {
+  if (!entry) return 1
+  if (EXPLICIT_LEVEL[entry.id]) return EXPLICIT_LEVEL[entry.id]
 
-  const text = collectStatusText(peptide)
+  const text = collectStatusText(entry)
   if (RX.approved.test(text))       return 5
   if (RX.phase3.test(text))         return 4
   if (RX.phase2.test(text))         return 3
@@ -117,45 +117,8 @@ export function getResearchLevel(peptide) {
   if (RX.preclin.test(text))        return 2
 
   // Fall back to study count.
-  const n = (peptide.studies || []).filter(s => s.pmid).length
+  const n = (entry.studies || []).filter(s => s.pmid).length
   if (n >= 4) return 3
   if (n >= 2) return 2
   return 1
-}
-
-// Color + i18n label per level. The dot uses `color`; the soft chip bg
-// uses `bg`. Both work on dark and light theme without modification.
-export const LEVEL_META = {
-  5: { color: '#10b981', bg: 'rgba(16,185,129,0.16)',  border: 'rgba(16,185,129,0.45)',
-       label: { hu: 'Engedélyezett',       en: 'Approved',          pl: 'Zatwierdzony' } },
-  4: { color: '#84cc16', bg: 'rgba(132,204,22,0.16)',  border: 'rgba(132,204,22,0.45)',
-       label: { hu: 'Késői fázisú',        en: 'Late-Stage',        pl: 'Faza późna' } },
-  3: { color: '#eab308', bg: 'rgba(234,179,8,0.16)',   border: 'rgba(234,179,8,0.45)',
-       label: { hu: 'Klinikai kutatás',    en: 'Clinical Research', pl: 'Badania kliniczne' } },
-  2: { color: '#f97316', bg: 'rgba(249,115,22,0.16)',  border: 'rgba(249,115,22,0.45)',
-       label: { hu: 'Preklinikai',         en: 'Preclinical',       pl: 'Przedkliniczne' } },
-  1: { color: '#94a3b8', bg: 'rgba(148,163,184,0.16)', border: 'rgba(148,163,184,0.45)',
-       label: { hu: 'Korai kutatás',       en: 'Emerging',          pl: 'Wczesna faza' } },
-}
-
-export function getLevelMeta(level) {
-  return LEVEL_META[level] || LEVEL_META[1]
-}
-
-// Sort comparator factory — pluggable into Array.prototype.sort.
-export function makeSortComparator(mode) {
-  switch (mode) {
-    case 'za':
-      return (a, b) => b.name.localeCompare(a.name, undefined, { sensitivity: 'base' })
-    case 'level':
-      return (a, b) => {
-        const la = getResearchLevel(a)
-        const lb = getResearchLevel(b)
-        if (lb !== la) return lb - la
-        return a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
-      }
-    case 'az':
-    default:
-      return (a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' })
-  }
 }

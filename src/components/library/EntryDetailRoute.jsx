@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { X } from 'lucide-react'
-import { PEPTIDES } from '../../data/peptides'
-import { adaptLivePeptide } from './adaptLivePeptide'
+import { getLibrary } from '../../data/libraries'
+import { adaptLibraryEntry } from './adaptLibraryEntry'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
 import { useLang } from '../../i18n/LanguageContext'
 import EntryDetail from './EntryDetail'
@@ -10,7 +10,8 @@ export function parseEntryHash(hash) {
   if (!hash) return null
   const clean = hash.replace(/^#/, '')
   const parts = clean.split('/')
-  if (parts[0] !== 'entry' || parts[1] !== 'peptides' || !parts[2]) return null
+  if (parts[0] !== 'entry' || !parts[1] || !parts[2]) return null
+  if (!getLibrary(parts[1])) return null
   return { library: parts[1], id: parts[2] }
 }
 
@@ -22,7 +23,7 @@ function closeDetail() {
   if (typeof window === 'undefined') return
   // Land back on the library section instead of jumping to the top of the
   // page. The hashchange triggers App.jsx to render the landing, and the
-  // browser auto-scrolls to the #library anchor on PeptideGallery.
+  // browser auto-scrolls to the #library anchor on LibraryGallery.
   window.location.hash = 'library'
 }
 
@@ -31,8 +32,9 @@ export default function EntryDetailRoute({ hash }) {
   const isDesktop = useMediaQuery('(min-width: 1024px)')
   const { t } = useLang()
 
-  const livePeptide = parsed ? PEPTIDES.find(p => p.id === parsed.id) : null
-  const peptide = livePeptide ? adaptLivePeptide(livePeptide) : null
+  const library = parsed ? getLibrary(parsed.library) : null
+  const liveEntry = parsed && library ? library.entries.find(e => e.id === parsed.id) : null
+  const peptide = liveEntry ? adaptLibraryEntry(liveEntry, library) : null
 
   useEffect(() => {
     if (isDesktop) return
@@ -49,13 +51,13 @@ export default function EntryDetailRoute({ hash }) {
   }, [isDesktop])
 
   useEffect(() => {
-    if (parsed && !livePeptide) closeDetail()
-  }, [parsed, livePeptide])
+    if (parsed && !liveEntry) closeDetail()
+  }, [parsed, liveEntry])
 
   if (!peptide) return null
 
   const handleJump = (id) => {
-    window.location.hash = `entry/peptides/${id}`
+    window.location.hash = `entry/${library.id}/${id}`
   }
 
   if (isDesktop) {

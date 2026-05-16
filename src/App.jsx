@@ -3,7 +3,7 @@ import Hero from './components/Hero'
 import Education from './components/Education'
 import PeptideEffects from './components/PeptideEffects'
 import Calculator from './components/Calculator'
-import PeptideGallery from './components/PeptideGallery'
+import LibraryGallery from './components/LibraryGallery'
 import TelegramSection from './components/TelegramSection'
 import Faq from './components/Faq'
 import Disclaimer from './components/Disclaimer'
@@ -16,6 +16,7 @@ import EntryDetailRoute, { isEntryDetailHash } from './components/library/EntryD
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
 import { ThemeProvider } from './theme/ThemeContext'
+import { LibraryProvider } from './context/LibraryContext'
 
 function useHashRoute() {
   const read = () => (typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, ''))
@@ -37,6 +38,7 @@ export default function App() {
   return (
     <ThemeProvider>
       <LanguageProvider>
+        <LibraryProvider>
         <div className="relative min-h-screen page-root overflow-x-hidden">
           <MoleculeBackground />
           <FloatingScientific />
@@ -48,7 +50,7 @@ export default function App() {
                 <Hero />
                 <Education />
                 <PeptideEffects />
-                <PeptideGallery />
+                <LibraryGallery />
                 <Calculator />
                 <TelegramSection />
                 <Faq />
@@ -59,6 +61,7 @@ export default function App() {
             {isEntryDetail && <EntryDetailRoute hash={hash} />}
           </div>
         </div>
+        </LibraryProvider>
       </LanguageProvider>
     </ThemeProvider>
   )
