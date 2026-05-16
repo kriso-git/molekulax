@@ -1217,4 +1217,264 @@ export const NOOTROPICS = [
       pl: 'Nigdzie nie zatwierdzony jako lek. Rosyjski akademicki związek badawczy, rzadko spotykany na zachodnich rynkach OTC jako „chemikalium badawcze”.',
     },
   },
+
+  // ============================================================
+  // EXTRA — Eugeroics (Task 7, Batch 2)
+  // ============================================================
+
+  {
+    id: 'armodafinil',
+    name: 'Armodafinil',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: 'A Modafinil R-enantiomerje — hosszabb felezési idő, simább koncentráció.',
+      en: 'R-enantiomer of Modafinil — longer half-life, smoother focus.',
+      pl: 'R-enancjomer modafinilu — dłuższy okres półtrwania, łagodniejsza koncentracja.',
+    },
+    description: {
+      hu: 'Az Armodafinil a Modafinil tisztított R-(−)-enantiomerje, Cephalon (most Teva) fejlesztés, FDA-jóváhagyott narcolepsia, OSA és műszak-munka alvászavar (SWSD) indikációkban Nuvigil márkanéven. Felezési ideje ~15 óra (vs Modafinil racém ~12-15 óra), és vér-plazma görbéje laposabb — ezért egy adag tipikusan 12-14 órás eugeroikus hatást ad.',
+      en: 'Armodafinil is the purified R-(−)-enantiomer of Modafinil, developed by Cephalon (now Teva) and FDA-approved for narcolepsy, OSA and shift-work sleep disorder (SWSD) under the brand name Nuvigil. Its half-life is ~15 h (vs racemic Modafinil ~12-15 h) with a flatter plasma curve — a single dose typically gives 12-14 h of eugeroic action.',
+      pl: 'Armodafinil to oczyszczony R-(−)-enancjomer modafinilu, opracowany przez Cephalon (obecnie Teva) i zatwierdzony przez FDA w narkolepsji, OBS i zaburzeniach snu związanych z pracą zmianową (SWSD) pod nazwą Nuvigil. Okres półtrwania wynosi ~15 h (vs racemiczny modafinil ~12-15 h) z bardziej płaską krzywą osoczową — pojedyncza dawka zazwyczaj daje 12-14 h działania eugerokicznego.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'DAT-gátlás + orexin/hisztamin', en: 'DAT inhibition + orexin/histamine', pl: 'Hamowanie DAT + oreksyna/histamina' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~15 óra', en: '~15 h', pl: '~15 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'FDA Schedule IV (Nuvigil)', en: 'FDA Schedule IV (Nuvigil)', pl: 'FDA Schedule IV (Nuvigil)' } },
+    ],
+    mechanism: {
+      hu: 'A Modafinilhez azonos profilú: gyenge dopamin-transzporter (DAT) gátlás, orexin/hisztamin út indirekt aktiválása, hipotalamusz-mediálta éberség-emelés — de R-enantiomer-szelektivitás miatt simább farmakokinetika.',
+      en: 'Identical profile to Modafinil: weak dopamine transporter (DAT) inhibition, indirect activation of the orexin/histamine pathway, hypothalamic-mediated wakefulness — but smoother PK due to R-enantiomer selectivity.',
+      pl: 'Identyczny profil z modafinilem: słabe hamowanie transportera dopaminy (DAT), pośrednia aktywacja szlaku oreksyny/histaminy, czuwanie pośredniczone przez podwzgórze — ale łagodniejsza PK dzięki selektywności R-enancjomeru.',
+    },
+    legalStatus: {
+      hu: 'USA-ban FDA-jóváhagyott (Nuvigil), DEA Schedule IV. EU-ban legtöbb tagállamban vényköteles. Magyarországon szakorvosi vény szükséges.',
+      en: 'FDA-approved in the USA (Nuvigil), DEA Schedule IV. Prescription-only in most EU member states. Hungary requires specialist prescription.',
+      pl: 'Zatwierdzony przez FDA w USA (Nuvigil), DEA Schedule IV. Na receptę w większości państw UE. Węgry wymagają recepty specjalistycznej.',
+    },
+  },
+
+  {
+    id: 'fladrafinil',
+    name: 'Fladrafinil',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: 'Bisz-fluor-adrafinil analóg — agresszió-csökkentő profil, kísérleti.',
+      en: 'Bis-fluorinated Adrafinil analog — aggression-reducing profile, investigational.',
+      pl: 'Bis-fluorowany analog adrafinilu — profil obniżający agresję, badawczy.',
+    },
+    description: {
+      hu: 'A Fladrafinil (CRL-40,941) az Adrafinil bisz-fluor-helyettesített származéka, eredeti francia Lafon-fejlesztés. Eugeroikus aktivitása az Adrafinilhez hasonló, de állat-modellekben kifejezett agresszió-csökkentést is leírtak. Humán klinikai vizsgálat nincs, gyógyszerként sehol nem jóváhagyott.',
+      en: 'Fladrafinil (CRL-40,941) is a bis-fluorinated derivative of Adrafinil, originally developed by Lafon (France). Its eugeroic activity is similar to Adrafinil`s, but animal models also describe a pronounced reduction in aggression. No human clinical trials; not approved as a medicine anywhere.',
+      pl: 'Fladrafinil (CRL-40,941) to bis-fluorowana pochodna adrafinilu, pierwotnie opracowana przez Lafon (Francja). Jego aktywność eugerokichna jest podobna do adrafinilu, ale modele zwierzęce opisują także wyraźne zmniejszenie agresji. Brak badań klinicznych u ludzi; nigdzie nie zatwierdzony jako lek.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Modafinil-prodrug profil', en: 'Modafinil-prodrug profile', pl: 'Profil prodrug modafinilu' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Nincs validált humán adat', en: 'No validated human data', pl: 'Brak zwalidowanych danych u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Sehol nem jóváhagyva', en: 'Not approved anywhere', pl: 'Nigdzie nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'Az Adrafinilhez hasonló profil — májban Modafinil-szerű metabolittá konvertálódik, amely DAT-gátlás és orexin/hisztamin moduláció révén éberség-emelő. A fluor-szubsztitúció a metabolizmust lassítja.',
+      en: 'Profile similar to Adrafinil — converted in the liver into a Modafinil-like metabolite that promotes wakefulness via DAT inhibition and orexin/histamine modulation. The fluorine substitution slows metabolism.',
+      pl: 'Profil podobny do adrafinilu — przekształcany w wątrobie w metabolit podobny do modafinilu, który promuje czuwanie poprzez hamowanie DAT i modulację oreksyny/histaminy. Podstawienie fluoru spowalnia metabolizm.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja; máshol „research chemical" minősítéssel árusított.',
+      en: 'Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; sold elsewhere as a “research chemical”.',
+      pl: 'Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; gdzie indziej sprzedawany jako „chemikalium badawcze”.',
+    },
+  },
+
+  {
+    id: 'flmodafinil',
+    name: 'Flmodafinil',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: 'Biszfluor-modafinil (CRL-40,940) — kb. 3× potensebb in vivo.',
+      en: 'Bisfluoromodafinil (CRL-40,940) — roughly 3× more potent in vivo.',
+      pl: 'Bisfluoromodafinil (CRL-40,940) — około 3× silniejszy in vivo.',
+    },
+    description: {
+      hu: 'A Flmodafinil (CRL-40,940, lauflumide) a Modafinil bisz-(p-fluor) fenil-szubsztitúciós származéka. Állat-modellekben kb. 3-szor nagyobb in vivo potencitást írtak le; vízoldékonysága és biológiai hasznosulása jobb, mint a Modafiniltíl. Humán Phase 1 vizsgálatok zajlottak, de gyógyszerként nem jóváhagyott.',
+      en: 'Flmodafinil (CRL-40,940, lauflumide) is a bis-(p-fluoro) phenyl substituted derivative of Modafinil. Animal models describe ~3× higher in vivo potency; its aqueous solubility and bioavailability are better than Modafinil`s. Human Phase 1 studies have been conducted but it is not approved as a medicine.',
+      pl: 'Flmodafinil (CRL-40,940, lauflumid) to bis-(p-fluoro) fenylowa pochodna modafinilu. Modele zwierzęce opisują ~3× wyższą potencję in vivo; jego rozpuszczalność w wodzie i biodostępność są lepsze niż modafinilu. Przeprowadzono badania fazy 1 u ludzi, ale nie jest zatwierdzony jako lek.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Modafinil-szerű, DAT-gátlás', en: 'Modafinil-like, DAT inhibition', pl: 'Podobny do modafinilu, hamowanie DAT' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Korlátozott humán adat', en: 'Limited human data', pl: 'Ograniczone dane u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Kísérleti, sehol jóváhagyva', en: 'Investigational, not approved', pl: 'Badawczy, nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'A Modafinilhez hasonló mechanizmus: gyenge DAT-gátlás, orexin/hisztamin út indirekt aktiválás. A két para-fluor szubsztitúció növeli a biológiai hasznosulást és lassítja a metabolizmust.',
+      en: 'Mechanism similar to Modafinil: weak DAT inhibition, indirect activation of the orexin/histamine pathway. The two para-fluoro substitutions increase bioavailability and slow metabolism.',
+      pl: 'Mechanizm podobny do modafinilu: słabe hamowanie DAT, pośrednia aktywacja szlaku oreksyny/histaminy. Dwa podstawienia para-fluoro zwiększają biodostępność i spowalniają metabolizm.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. „Research chemical" minősítéssel árusított; UK-ban a Psychoactive Substances Act tiltja.',
+      en: 'Not approved as a medicine anywhere. Sold as a “research chemical”; banned in the UK under the Psychoactive Substances Act.',
+      pl: 'Nigdzie nie zatwierdzony jako lek. Sprzedawany jako „chemikalium badawcze”; zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act.',
+    },
+  },
+
+  // ============================================================
+  // EXTRA — Cholinergics (Task 7, Batch 2)
+  // ============================================================
+
+  {
+    id: 'alpha-gpc',
+    name: 'Alpha-GPC',
+    image: null,
+    accentColor: '#06b6d4',
+    tagColor: 'rgba(6,182,212,0.18)',
+    shortDesc: {
+      hu: 'Glicerofoszfokolin — biológiailag hasznosuló kolin-prekurzor.',
+      en: 'Glycerophosphocholine — a bioavailable choline precursor.',
+      pl: 'Glicerofosfocholina — biodostępny prekursor choliny.',
+    },
+    description: {
+      hu: 'Az Alpha-GPC (L-α-glicerilfoszforilkolin) természetes foszfolipid-metabolit, amelyet a szervezet acetilkolinná és foszfatidilkolinná épít be. Vér-agy gáton áthatol, biológiailag hasznosulása ~95%. Olaszországban Delecit néven vényköteles gyógyszer (vaszkuláris demencia), másutt étrend-kiegészítő.',
+      en: 'Alpha-GPC (L-α-glycerylphosphorylcholine) is a natural phospholipid metabolite that the body incorporates into acetylcholine and phosphatidylcholine. It crosses the blood-brain barrier with ~95% bioavailability. It is a prescription medicine in Italy (Delecit, for vascular dementia) and a supplement elsewhere.',
+      pl: 'Alfa-GPC (L-α-glicerylofosforylocholina) to naturalny metabolit fosfolipidowy, który organizm wbudowuje w acetylocholinę i fosfatydylocholinę. Przenika barierę krew-mózg z biodostępnością ~95%. Jest lekiem na receptę we Włoszech (Delecit, w otępieniu naczyniowym) i suplementem gdzie indziej.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Kolin-prekurzor (ACh-szintézis)', en: 'Choline precursor (ACh synthesis)', pl: 'Prekursor choliny (synteza ACh)' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~4-6 óra', en: '~4-6 h', pl: '~4-6 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'EU vényköteles (IT) / OTC másutt', en: 'EU Rx (IT) / OTC elsewhere', pl: 'UE na receptę (IT) / OTC gdzie indziej' } },
+    ],
+    mechanism: {
+      hu: 'Hidrolízis után kolin + glicerofoszfátot szabadít fel; a kolin acetilkolin-szintézis szubsztrátja, a glicerofoszfát foszfatidilkolin-építőkő — együtt cholinerg tónus és membrán-foszfolipid-szintézis fokozására.',
+      en: 'After hydrolysis it releases choline + glycerophosphate; the choline serves as substrate for acetylcholine synthesis, the glycerophosphate as a phosphatidylcholine building block — together they support cholinergic tone and membrane phospholipid synthesis.',
+      pl: 'Po hydrolizie uwalnia cholinę + glicerofosforan; cholina służy jako substrat do syntezy acetylocholiny, glicerofosforan jako budulec fosfatydylocholiny — razem wspierają napięcie cholinergiczne i syntezę fosfolipidów błonowych.',
+    },
+    legalStatus: {
+      hu: 'Olaszországban vényköteles (Delecit). EU egyéb tagállamokban és USA-ban étrend-kiegészítő. Magyarországon szabadon kapható.',
+      en: 'Prescription-only in Italy (Delecit). Sold as a dietary supplement in other EU member states and the USA. Freely available in Hungary.',
+      pl: 'Na receptę we Włoszech (Delecit). Sprzedawany jako suplement diety w innych państwach UE i USA. Wolno dostępny na Węgrzech.',
+    },
+  },
+
+  {
+    id: 'cdp-choline',
+    name: 'CDP-Choline / Citicoline',
+    image: null,
+    accentColor: '#06b6d4',
+    tagColor: 'rgba(6,182,212,0.18)',
+    shortDesc: {
+      hu: 'Citidin-difoszfát-kolin — kolin + uridin kettős prekurzor.',
+      en: 'Cytidine diphosphate-choline — dual choline + uridine precursor.',
+      pl: 'Cytydyno-difosfo-cholina — podwójny prekursor choliny i urydyny.',
+    },
+    description: {
+      hu: 'A CDP-Cholin (Citicolin, INN) természetes nukleotid-foszfolipid intermedier, amely a Kennedy-úton vesz részt a foszfatidilkolin-szintézisben. Belekben citidinre + kolinra hidrolizál; a citidin uridinné alakul, így az agyban két nootropikusan releváns molekulát is biztosít. Olaszországban Somazina, EU-szerte vényköteles agyi ischaemia indikációkban; USA-ban OTC.',
+      en: 'CDP-Choline (Citicoline, INN) is a natural nucleotide-phospholipid intermediate that participates in phosphatidylcholine synthesis via the Kennedy pathway. In the gut it hydrolyzes to cytidine + choline; the cytidine is converted to uridine, supplying two nootropically relevant molecules in the brain. Prescription-only in Italy (Somazina) and elsewhere in the EU for cerebral ischemia; OTC in the USA.',
+      pl: 'CDP-Cholina (Cytykolina, INN) to naturalny pośrednik nukleotydowo-fosfolipidowy uczestniczący w syntezie fosfatydylocholiny szlakiem Kennedy`ego. W jelitach hydrolizuje do cytydyny + choliny; cytydyna jest przekształcana w urydynę, dostarczając do mózgu dwóch nootropowo istotnych cząsteczek. Na receptę we Włoszech (Somazina) i w innych krajach UE w niedokrwieniu mózgowym; OTC w USA.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Kolin + uridin prekurzor', en: 'Choline + uridine precursor', pl: 'Prekursor choliny + urydyny' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~56 óra (két fázis)', en: '~56 h (two phases)', pl: '~56 h (dwie fazy)' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'EU vényköteles / USA OTC', en: 'EU Rx / USA OTC', pl: 'UE na receptę / USA OTC' } },
+    ],
+    mechanism: {
+      hu: 'A Kennedy-út kulcsintermediere — exogén bevitelével a foszfatidilkolin-szintézis (sejtmembrán-építés) és az acetilkolin-szintézis is fokozható; az uridin-komponens emellett UTP-szintézist és szinaptikus növekedést támogat.',
+      en: 'A key intermediate of the Kennedy pathway — exogenous intake supports both phosphatidylcholine synthesis (membrane building) and acetylcholine synthesis; the uridine component additionally supports UTP synthesis and synaptic growth.',
+      pl: 'Kluczowy pośrednik szlaku Kennedy`ego — egzogenne przyjmowanie wspiera zarówno syntezę fosfatydylocholiny (budowa błony), jak i syntezę acetylocholiny; składnik urydynowy dodatkowo wspiera syntezę UTP i wzrost synaptyczny.',
+    },
+    legalStatus: {
+      hu: 'Olaszországban, Spanyolországban, Japánban vényköteles (Somazina, Ceraxon). USA-ban OTC étrend-kiegészítő. Magyarországon kiegészítőként szabadon kapható.',
+      en: 'Prescription-only in Italy, Spain, Japan (Somazina, Ceraxon). OTC dietary supplement in the USA. Freely available as a supplement in Hungary.',
+      pl: 'Na receptę we Włoszech, Hiszpanii, Japonii (Somazina, Ceraxon). OTC suplement diety w USA. Wolno dostępny jako suplement na Węgrzech.',
+    },
+  },
+
+  {
+    id: 'centrophenoxine',
+    name: 'Centrophenoxine',
+    image: null,
+    accentColor: '#06b6d4',
+    tagColor: 'rgba(6,182,212,0.18)',
+    shortDesc: {
+      hu: 'Meclofenoxate — DMAE + p-klórfenoxiecetsav konjugátum, lipofuszcin-eltávolítás.',
+      en: 'Meclofenoxate — DMAE + p-chlorophenoxyacetic acid conjugate, lipofuscin removal.',
+      pl: 'Meklofenoksat — koniugat DMAE + kwasu p-chlorofenoksyoctowego, usuwanie lipofuscyny.',
+    },
+    description: {
+      hu: 'A Centrophenoxin (meclofenoxát, Lucidril) francia eredetű gyógyszer (Anjou), amely DMAE-t (dimetilaminoetanol) p-klór-fenoxi-ecetsavhoz észterezve juttat a központi idegrendszerbe. Klasszikus „anti-aging" nootropikum, amely a neuronok lipofuszcin- (öregkori pigment) felhalmozódását csökkenti állat-modellekben. EU egyes országaiban vényköteles.',
+      en: 'Centrophenoxine (meclofenoxate, Lucidril) is a French-origin drug (Anjou) that delivers DMAE (dimethylaminoethanol) to the CNS as a p-chlorophenoxyacetic acid ester. A classical “anti-aging” nootropic that reduces lipofuscin (aging pigment) accumulation in neurons in animal models. Prescription-only in some EU countries.',
+      pl: 'Centrofenoksyna (meklofenoksat, Lucidril) to lek pochodzenia francuskiego (Anjou), dostarczający DMAE (dimetyloaminoetanol) do OUN jako ester kwasu p-chlorofenoksyoctowego. Klasyczny nootropik „anti-aging”, który zmniejsza akumulację lipofuscyny (pigmentu starzenia) w neuronach w modelach zwierzęcych. Na receptę w niektórych krajach UE.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'DMAE-prodrug + antioxidáns', en: 'DMAE-prodrug + antioxidant', pl: 'Prodrug DMAE + przeciwutleniacz' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~2-4 óra', en: '~2-4 h', pl: '~2-4 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'EU vényköteles (egyes országok)', en: 'EU Rx (some countries)', pl: 'UE na receptę (niektóre kraje)' } },
+    ],
+    mechanism: {
+      hu: 'Hidrolízis után DMAE-t szabadít fel, amely részben kolinerg prekurzorként viselkedik, és lipid-peroxidáció-csökkentés révén csökkenti a sejten belüli lipofuszcin-felhalmozódást — neuronális membrán-„housekeeping" hatás.',
+      en: 'After hydrolysis it releases DMAE, which partially acts as a cholinergic precursor and reduces intracellular lipofuscin accumulation by limiting lipid peroxidation — a neuronal membrane “housekeeping” effect.',
+      pl: 'Po hydrolizie uwalnia DMAE, który częściowo działa jako prekursor cholinergiczny i zmniejsza wewnątrzkomórkową akumulację lipofuscyny poprzez ograniczenie peroksydacji lipidów — efekt neuronalnego membranowego „housekeeping”.',
+    },
+    legalStatus: {
+      hu: 'Magyarországon, Lengyelországban, Csehországban vényköteles (Lucidril). USA-ban nem FDA-jóváhagyott; OTC kiegészítőként árusított.',
+      en: 'Prescription-only in Hungary, Poland, Czechia (Lucidril). Not FDA-approved in the USA; sold as a supplement OTC.',
+      pl: 'Na receptę na Węgrzech, w Polsce, Czechach (Lucidril). Niezatwierdzony przez FDA w USA; sprzedawany jako suplement OTC.',
+    },
+  },
+
+  {
+    id: 'huperzine-a',
+    name: 'Huperzine-A',
+    image: null,
+    accentColor: '#06b6d4',
+    tagColor: 'rgba(6,182,212,0.18)',
+    shortDesc: {
+      hu: 'Reverzibilis AChE-inhibitor — kínai mohából (Huperzia serrata) izolálva.',
+      en: 'Reversible AChE inhibitor — isolated from the Chinese moss Huperzia serrata.',
+      pl: 'Odwracalny inhibitor AChE — wyizolowany z chińskiego mchu Huperzia serrata.',
+    },
+    description: {
+      hu: 'A Huperzin-A egy alkaloid, amelyet a Huperzia serrata mohából izoláltak. Erős, reverzibilis és szelektív acetilkolinészteráz (AChE) inhibitor — az enzim gátlásával prolongálja az acetilkolin-jelet a szinaptikus résben. Kínában gyógyszerként Alzheimer-kórban használják; Nyugaton étrend-kiegészítőként árusítják.',
+      en: 'Huperzine-A is an alkaloid isolated from the moss Huperzia serrata. It is a potent, reversible and selective acetylcholinesterase (AChE) inhibitor — gating prolongs acetylcholine signaling in the synaptic cleft. Used as a drug in China for Alzheimer`s disease; sold as a dietary supplement in the West.',
+      pl: 'Huperzyna-A to alkaloid wyizolowany z mchu Huperzia serrata. Jest silnym, odwracalnym i selektywnym inhibitorem acetylocholinesterazy (AChE) — przedłuża sygnał acetylocholiny w szczelinie synaptycznej. Stosowana jako lek w Chinach w chorobie Alzheimera; sprzedawana jako suplement diety na Zachodzie.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Reverzibilis AChE-inhibitor', en: 'Reversible AChE inhibitor', pl: 'Odwracalny inhibitor AChE' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~10-14 óra', en: '~10-14 h', pl: '~10-14 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Kína Rx / Nyugat OTC kiegészítő', en: 'China Rx / Western OTC supplement', pl: 'Chiny Rx / suplement OTC na Zachodzie' } },
+    ],
+    mechanism: {
+      hu: 'Reverzibilisen kötődik az AChE aktív centrumához → az acetilkolin lassabban bomlik a szinaptikus résben → fokozott cholinerg tónus. Mellékhatásként NMDA-receptor pozitív moduláció és antioxidáns aktivitás is leírt.',
+      en: 'Reversibly binds the AChE active site → acetylcholine breaks down more slowly in the synaptic cleft → enhanced cholinergic tone. Secondary NMDA receptor positive modulation and antioxidant activity are also described.',
+      pl: 'Odwracalnie wiąże miejsce aktywne AChE → acetylocholina rozkłada się wolniej w szczelinie synaptycznej → wzmocnione napięcie cholinergiczne. Opisano także wtórną pozytywną modulację receptora NMDA i aktywność przeciwutleniającą.',
+    },
+    legalStatus: {
+      hu: 'Kínában gyógyszerként jóváhagyott (Alzheimer-kór). USA-ban OTC étrend-kiegészítő, EU-ban az adott tagállam besorolása szerint változó. Magyarországon kiegészítőként elérhető.',
+      en: 'Approved as a medicine in China (Alzheimer`s). OTC dietary supplement in the USA; classification varies by EU member state. Available as a supplement in Hungary.',
+      pl: 'Zatwierdzona jako lek w Chinach (Alzheimer). OTC suplement diety w USA; klasyfikacja różni się między państwami UE. Dostępna jako suplement na Węgrzech.',
+    },
+  },
 ]
