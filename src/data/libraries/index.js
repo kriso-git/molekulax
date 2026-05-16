@@ -6,8 +6,9 @@
 // in Phase 6) register themselves here.
 
 import { peptidesLibrary } from './peptides'
+import { nootropicsLibrary } from './nootropics'
 
-export const LIBRARIES = [peptidesLibrary]
+export const LIBRARIES = [peptidesLibrary, nootropicsLibrary]
 
 export function getLibrary(id) {
   return LIBRARIES.find(lib => lib.id === id) || null
