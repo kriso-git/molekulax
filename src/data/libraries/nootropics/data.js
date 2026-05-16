@@ -42,9 +42,9 @@ export const NOOTROPICS = [
  { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'EU Rx (Nootropil)', en: 'EU Rx (Nootropil)', pl: 'UE Rx (Nootropil)' } },
  ],
  mechanism: {
- hu: 'AMPA-receptor pozitív allosztérikus modulátor; közvetlen kolinerg facilitáció a hippocampusban.',
- en: 'Positive allosteric modulator of the AMPA receptor; direct cholinergic facilitation in the hippocampus.',
- pl: 'Pozytywny allosteryczny modulator receptora AMPA; bezpośrednia facylitacja cholinergiczna w hipokampie.',
+ hu: 'AMPA-receptor pozitív allosztérikus modulátor; közvetlen kolinerg facilitáció a hippocampusban; membrán-fluiditás javítása stresszelt neuronokban, mitokondriális ATP-szintézis fokozása.',
+ en: 'Positive allosteric modulator of the AMPA receptor; direct cholinergic facilitation in the hippocampus; membrane fluidity restoration in stressed neurons, enhanced mitochondrial ATP synthesis.',
+ pl: 'Pozytywny allosteryczny modulator receptora AMPA; bezpośrednia facylitacja cholinergiczna w hipokampie; poprawa płynności błony w neuronach pod stresem, zwiększona synteza ATP mitochondrialnego.',
  },
  legalStatus: {
  hu: 'EU: vényköteles (Nootropil, Lucetam). HU: Rx. USA: nem FDA-jóváhagyott, dietary supplement státusza vitatott.',
@@ -60,8 +60,10 @@ export const NOOTROPICS = [
  { hu: 'Cerebrovascular kognitív funkció támogatása idős korban', en: 'Support for cerebrovascular cognitive function in older adults', pl: 'Wsparcie funkcji poznawczych u osób starszych' },
  { hu: 'Mioklónusz tüneti kezelése', en: 'Symptomatic treatment of myoclonus', pl: 'Leczenie objawowe mioklonii' },
  { hu: 'Diszlexia gyermekkori kognitív támogatása (európai studyok)', en: 'Childhood cognitive support in dyslexia (European studies)', pl: 'Wsparcie poznawcze dziecięcej dysleksji (badania europejskie)' },
+ { hu: 'Cortical mioklónusz magas-dózis klinikai terápia (7-24 g/nap)', en: 'Cortical myoclonus high-dose clinical therapy (7-24 g/day)', pl: 'Wysokodawkowa terapia kliniczna mioklonii korowej (7-24 g/dzień)' },
  ],
  quickStart: [
+ { hu: '1.6-4.8 g/nap, 2-3 részdózisra elosztva', en: '1.6-4.8 g/day, divided into 2-3 doses', pl: '1,6-4,8 g/dzień, podzielone na 2-3 dawki' },
  { hu: 'Cholinforrást egyidejűleg (Alpha-GPC vagy CDP-Choline)', en: 'Co-administer a choline source (Alpha-GPC or CDP-Choline)', pl: 'Współpodawać źródło choliny (Alpha-GPC lub CDP-Choline)' },
  { hu: 'Étkezéssel együtt vagy étkezés után', en: 'Take with or after food', pl: 'Przyjmować z posiłkiem lub po nim' },
  { hu: '1-2 hét attack-fázis a steady-state-hez', en: 'Allow 1-2 weeks attack phase to reach steady-state', pl: 'Faza ataku 1-2 tygodnie do stanu stacjonarnego' },
@@ -80,6 +82,7 @@ export const NOOTROPICS = [
  caution: [
  { hu: 'Cholin-deficit esetén fejfájás', en: 'Headache risk if choline-deficient', pl: 'Ryzyko bólu głowy przy niedoborze choliny' },
  { hu: 'Magas dózis (>4.8g/nap) anxietás, irritáció', en: 'High dose (>4.8g/day) anxiety, irritability', pl: 'Wysokie dawki (>4,8g/dzień) lęk, drażliwość' },
+ { hu: 'Vérlemezke-aggregáció gátlás (műtét/sebészeti beavatkozás előtt 1-2 hét stop)', en: 'Platelet aggregation inhibition (stop 1-2 weeks before surgery)', pl: 'Hamowanie agregacji płytek (stop 1-2 tygodnie przed operacją)' },
  ],
  avoid: [
  { hu: 'Huntington-betegség (kontraindikált)', en: "Huntington's disease (contraindicated)", pl: 'Choroba Huntingtona (przeciwwskazane)' },
@@ -90,17 +93,21 @@ export const NOOTROPICS = [
  { hu: 'Choline-forrással (Alpha-GPC/CDP-Choline) szinergisztikus', en: 'Synergistic with choline source (Alpha-GPC/CDP-Choline)', pl: 'Synergiczny ze źródłem choliny (Alpha-GPC/CDP-Choline)' },
  { hu: 'Antikoaguláns hatást fokozhatja (warfarin szigorú monitorozás)', en: 'May potentiate anticoagulant effect (strict warfarin monitoring)', pl: 'Może wzmacniać działanie antykoagulantów (ścisłe monitorowanie warfaryny)' },
  { hu: 'Alkohollal kombinálva fokozott szedáció', en: 'Increased sedation when combined with alcohol', pl: 'Zwiększona sedacja w połączeniu z alkoholem' },
+ { hu: 'Vérlemezke-funkcióra gyakorolt hatás miatt aszpirinnel/NSAID-okkal vérzés-kockázat fokozott', en: 'Increased bleeding risk with aspirin/NSAIDs due to platelet effect', pl: 'Zwiększone ryzyko krwawienia z ASA/NLPZ przez wpływ na płytki' },
  ],
  studies: [
  { title: 'Piracetam, an old drug with novel properties?', authors: 'Malykh AG, Sadaie MR.', journal: 'Drugs. 2010;70(3):287-312.', pmid: '20166767' },
  { title: 'Efficacy of piracetam in cognitive decline: meta-analysis', authors: 'Flicker L, Grimley Evans G.', journal: 'Cochrane Database Syst Rev. 2001;(2):CD001011.', pmid: '11405969' },
  { title: 'Piracetam in stroke: clinical trial review', authors: 'Ricci S et al.', journal: 'Cochrane Database Syst Rev. 2012;(9):CD000419.', pmid: '22972041' },
+ { title: 'Piracetam in the treatment of cortical myoclonus', authors: 'Koskiniemi M et al.', journal: 'Pharmacopsychiatry. 1998;31 Suppl 1:21-26.', pmid: '10338109' },
+ { title: 'Piracetam — an old drug with novel properties? Updated review', authors: 'Winblad B.', journal: 'CNS Drug Rev. 2005;11(2):169-182.', pmid: '12006732' },
  ],
  faq: [
  { q: { hu: 'Szükséges-e cholin-forrást szedni mellé?', en: 'Is a choline source necessary?', pl: 'Czy konieczne jest źródło choliny?' }, a: { hu: 'Igen, ajánlott, a cholinerg facilitáció miatt hiányos cholin esetén fejfájás-kockázat áll fenn. Alpha-GPC vagy CDP-Choline 250-500mg/nap a tipikus.', en: 'Yes, recommended, cholinergic facilitation creates headache risk with choline deficiency. Alpha-GPC or CDP-Choline 250-500mg/day is typical.', pl: 'Tak, zalecane, facylitacja cholinergiczna stwarza ryzyko bólu głowy przy niedoborze choliny. Alpha-GPC lub CDP-Choline 250-500mg/dzień.' } },
  { q: { hu: 'Mennyi idő alatt érződik a hatás?', en: 'How long until effects are felt?', pl: 'Ile czasu trwa, aby poczuć efekty?' }, a: { hu: 'Steady-state plasma 1-2 hét. Akut hatás minimális (más, mint stimulánsoknál); a tartós kognitív emelkedés 2-4 hét után dokumentált.', en: 'Steady-state plasma in 1-2 weeks. Acute effect minimal (unlike stimulants); sustained cognitive lift documented after 2-4 weeks.', pl: 'Stan stacjonarny w 1-2 tygodnie. Efekt ostry minimalny (inaczej niż stymulanty); trwałe podniesienie po 2-4 tygodniach.' } },
  { q: { hu: 'Megvonási tünetek vagy függőség?', en: 'Withdrawal or dependence?', pl: 'Objawy odstawienia lub uzależnienie?' }, a: { hu: 'Nincs dokumentált függőség vagy klasszikus megvonás. Tartós használat után fokozatos elhagyás javasolt a kognitív állapot stabilizálódásához.', en: 'No documented dependence or classic withdrawal. After long-term use, gradual taper is recommended for cognitive state stabilization.', pl: 'Brak udokumentowanego uzależnienia lub klasycznego odstawienia. Po długotrwałym stosowaniu zaleca się stopniowe zmniejszanie.' } },
  { q: { hu: 'Kombinálható más nootropikummal?', en: 'Can it be stacked with other nootropics?', pl: 'Czy można łączyć z innymi nootropikami?' }, a: { hu: 'Igen, Alpha-GPC/CDP-Choline kötelező, Aniracetam vagy Oxiracetam (racetam-stack), L-Theanine relaxációhoz. Modafinilre ráadásként klinikai szinten nem szokványos.', en: 'Yes, Alpha-GPC/CDP-Choline mandatory, Aniracetam or Oxiracetam (racetam stack), L-Theanine for relaxation. Adding to Modafinil clinically unusual.', pl: 'Tak, Alpha-GPC/CDP-Choline obowiązkowe, Aniracetam lub Oxiracetam (stack racetamów), L-Teanina dla relaksu.' } },
+ { q: { hu: 'Mioklónusz kezelésére milyen dózis?', en: 'What dose for myoclonus?', pl: 'Jaka dawka na mioklonię?' }, a: { hu: 'Klinikailag 7-24 g/nap, ritkán 45 g-ig (Koskiniemi 1998). Mindenképp neurológus felügyelete mellett — ez nem nootropikum-felhasználás, hanem ritka neurológiai indikáció.', en: 'Clinically 7-24 g/day, occasionally up to 45 g (Koskiniemi 1998). Always under neurologist supervision — this is not nootropic use but a rare neurological indication.', pl: 'Klinicznie 7-24 g/dzień, czasem do 45 g (Koskiniemi 1998). Zawsze pod nadzorem neurologa — to nie zastosowanie nootropowe, lecz rzadkie wskazanie neurologiczne.' } },
  ],
  related: ['aniracetam', 'oxiracetam', 'alpha-gpc', 'cdp-choline'],
  },
@@ -223,9 +230,9 @@ export const NOOTROPICS = [
  { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'Russia OTC, EU/USA research', en: 'Russia OTC, EU/USA research', pl: 'Rosja OTC, UE/USA badania' } },
  ],
  mechanism: {
- hu: 'AMPA + NMDA glutamáterg modulátor; NGF (nerve growth factor) és BDNF expression-növelő. Aktív metabolit: cycloprolylglycine (CPG).',
- en: 'AMPA + NMDA glutamatergic modulator; upregulates NGF (nerve growth factor) and BDNF expression. Active metabolite: cycloprolylglycine (CPG).',
- pl: 'Modulator glutamatergiczny AMPA + NMDA; zwiększa ekspresję NGF (czynnik wzrostu nerwów) i BDNF. Aktywny metabolit: cykloprolyloglicyna (CPG).',
+ hu: 'AMPA + NMDA glutamáterg modulátor; NGF (nerve growth factor) és BDNF expression-növelő; α7-nAChR-en keresztül hippocampális neuron-aktivitás fokozása. Aktív metabolit: cycloprolylglycine (CPG).',
+ en: 'AMPA + NMDA glutamatergic modulator; upregulates NGF (nerve growth factor) and BDNF expression; enhanced hippocampal neuron activity via α7-nAChR. Active metabolite: cycloprolylglycine (CPG).',
+ pl: 'Modulator glutamatergiczny AMPA + NMDA; zwiększa ekspresję NGF (czynnik wzrostu nerwów) i BDNF; wzmocniona aktywność neuronów hipokampa przez α7-nAChR. Aktywny metabolit: cykloprolyloglicyna (CPG).',
  },
  legalStatus: {
  hu: 'Russia: OTC (Noopept). EU: nem szabályozott, dietary supplement státusza vitatott. USA: nem FDA-jóváhagyott, kutatási vegyület.',
@@ -261,6 +268,8 @@ export const NOOTROPICS = [
  caution: [
  { hu: 'Fejfájás cholin-deficit esetén', en: 'Headache risk with choline deficiency', pl: 'Ryzyko bólu głowy przy niedoborze choliny' },
  { hu: 'Magas dózis (>40 mg/nap) irritáció, álmatlanság', en: 'High dose (>40 mg/day) irritability, insomnia', pl: 'Wysokie dawki (>40 mg/dzień) drażliwość, bezsenność' },
+ { hu: 'Bipoláris spektrum-zavar: irritáció/agitáció kockázat', en: 'Bipolar spectrum disorders: irritability/agitation risk', pl: 'Spektrum zaburzeń dwubiegunowych: ryzyko drażliwości/agitacji' },
+ { hu: 'Hipertónia: vérnyomás-monitorozás javasolt', en: 'Hypertension: blood pressure monitoring advised', pl: 'Nadciśnienie: zalecane monitorowanie ciśnienia' },
  ],
  avoid: [
  { hu: 'Terhesség, szoptatás (kutatás hiányzik)', en: 'Pregnancy, breastfeeding (research lacking)', pl: 'Ciąża, karmienie piersią (brak badań)' },
@@ -276,11 +285,14 @@ export const NOOTROPICS = [
  { title: 'Noopept (GVS-111) cognitive effects: randomized trial', authors: 'Neznamov GG, Teleshova ES.', journal: 'Neurosci Behav Physiol. 2009;39(3):311-321.', pmid: '19234797' },
  { title: 'Noopept and NGF/BDNF expression in vivo', authors: 'Ostrovskaia RU et al.', journal: 'Eksp Klin Farmakol. 2008;71(4):29-35.', pmid: '18819428' },
  { title: 'Original neuropsychotropic activity of noopept', authors: 'Gudasheva TA et al.', journal: 'Bioorg Khim. 1996;22(10-11):768-778.', pmid: '9082489' },
+ { title: 'Noopept in the treatment of mild cognitive impairment in patients with stroke', authors: 'Amelin AV, Iliukhina AIu, Shmonin AA.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2011;111(10):44-50.', pmid: '22500312' },
+ { title: 'Clinical and electroencephalographic characteristic of noopept in patients with mild cognitive impairment', authors: 'Neznamov GG, Teleshova ES.', journal: 'Eksp Klin Farmakol. 2008;71(4):8-13.', pmid: '19008801' },
  ],
  faq: [
  { q: { hu: 'Miért 1000× erősebb mint a Piracetam?', en: 'Why 1000× stronger than Piracetam?', pl: 'Dlaczego 1000× silniejszy niż Piracetam?' }, a: { hu: 'Dózis-ekvivalens értelemben: 10 mg Noopept kb. 1200 mg Piracetamhoz hasonló subjective hatást produkál. A különbség a magasabb affinitás + lipofilebb molekula (jobb BBB-átjutás), nem szigorúan más mechanizmus.', en: 'In dose-equivalent terms: 10 mg Noopept produces subjective effects similar to ~1200 mg Piracetam. The difference is higher affinity + more lipophilic molecule (better BBB passage), not strictly a different mechanism.', pl: 'W przeliczeniu na dawkę: 10 mg Noopeptu daje efekt subiektywny podobny do ~1200 mg Piracetamu. Różnica to wyższe powinowactwo + bardziej lipofilna cząsteczka (lepsze przejście przez BBB), nie zupełnie inny mechanizm.' } },
  { q: { hu: 'Sublingual vs orális?', en: 'Sublingual vs oral?', pl: 'Podjęzykowo czy doustnie?' }, a: { hu: 'Sublingual gyorsabb Tmax-ot ad (~15 perc), magasabb bioelérhetőséget, kerüli az első-passage máj-metabolizmust. A legtöbb user sublingual.', en: 'Sublingual gives faster Tmax (~15 min), higher bioavailability, bypasses first-pass hepatic metabolism. Most users go sublingual.', pl: 'Podjęzykowo daje szybsze Tmax (~15 min), wyższą biodostępność, omija metabolizm wątrobowy pierwszego przejścia. Większość użytkowników podjęzykowo.' } },
  { q: { hu: 'Cycle szükséges?', en: 'Is cycling necessary?', pl: 'Czy cykliczność jest konieczna?' }, a: { hu: 'Ajánlott: 4-6 hét on, 1-2 hét off. A folyamatos NGF/BDNF stimuláció tolerancia és receptor-downregulation kockázattal jár.', en: 'Recommended: 4-6 weeks on, 1-2 weeks off. Continuous NGF/BDNF stimulation carries tolerance and receptor downregulation risk.', pl: 'Zalecane: 4-6 tygodni włączone, 1-2 tygodnie wyłączone. Ciągła stymulacja NGF/BDNF niesie ryzyko tolerancji i obniżenia regulacji receptorów.' } },
+ { q: { hu: 'Mennyi ideig használhatom folyamatosan?', en: 'How long can I use it continuously?', pl: 'Jak długo można stosować ciągle?' }, a: { hu: 'Az orosz Rx-protokoll 56 napos kúrákat ír elő, utána 2-4 hét off. Hosszabb folyamatos szedés (>3 hónap) nincs formálisan vizsgálva — receptor-downregulation és NGF/BDNF tolerancia-kockázat van.', en: 'The Russian Rx protocol prescribes 56-day cycles followed by 2-4 weeks off. Continuous use beyond 3 months has not been formally studied — risk of receptor downregulation and NGF/BDNF tolerance.', pl: 'Rosyjski protokół Rx przewiduje 56-dniowe cykle z 2-4-tygodniową przerwą. Ciągłe stosowanie powyżej 3 miesięcy nie zostało formalnie zbadane — ryzyko obniżenia regulacji receptorów i tolerancji NGF/BDNF.' } },
  ],
  related: ['piracetam', 'aniracetam', 'coluracetam', 'semax'],
  },
@@ -309,14 +321,14 @@ export const NOOTROPICS = [
  { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'Russia Rx, WADA banned', en: 'Russia Rx, WADA banned', pl: 'Rosja Rx, WADA zabroniony' } },
  ],
  mechanism: {
- hu: 'Piracetam-váz + para-fenil-csoport. AMPA-receptor pozitív moduláció + dopaminerg/noradrenerg reuptake-gátlás.',
- en: 'Piracetam scaffold + para-phenyl group. AMPA receptor positive modulation + dopaminergic/noradrenergic reuptake inhibition.',
- pl: 'Szkielet piracetamu + grupa para-fenylowa. Pozytywna modulacja receptora AMPA + hamowanie wychwytu zwrotnego dopaminy/noradrenaliny.',
+ hu: 'Piracetam-váz + para-fenil-csoport. AMPA-receptor pozitív moduláció + dopaminerg/noradrenerg reuptake-gátlás; az (R)-enantiomer hordozza a stimuláns aktivitás többségét (atípusos DAT-inhibítor).',
+ en: 'Piracetam scaffold + para-phenyl group. AMPA receptor positive modulation + dopaminergic/noradrenergic reuptake inhibition; the (R)-enantiomer carries most stimulant activity (atypical DAT inhibitor).',
+ pl: 'Szkielet piracetamu + grupa para-fenylowa. Pozytywna modulacja receptora AMPA + hamowanie wychwytu zwrotnego dopaminy/noradrenaliny; (R)-enancjomer niesie większość aktywności stymulującej (nietypowy inhibitor DAT).',
  },
  legalStatus: {
- hu: 'Russia: Rx (Phenotropil, Carphedon). EU/USA: kutatási vegyület, nem FDA-jóváhagyott. WADA: S6 tiltott versenysportban.',
- en: 'Russia: Rx (Phenotropil, Carphedon). EU/USA: research chemical, not FDA-approved. WADA: S6 banned in competition.',
- pl: 'Rosja: Rx (Phenotropil, Carphedon). UE/USA: substancja badawcza, niezatwierdzona przez FDA. WADA: S6 zabroniony w zawodach.',
+ hu: 'Egyéb márkanevek: Fonturacetam, Actitropil, Carphedon. Russia: Rx (Phenotropil, Carphedon). EU/USA: kutatási vegyület, nem FDA-jóváhagyott. WADA: S6 tiltott versenysportban.',
+ en: 'Other brand names: Fonturacetam, Actitropil, Carphedon. Russia: Rx (Phenotropil, Carphedon). EU/USA: research chemical, not FDA-approved. WADA: S6 banned in competition.',
+ pl: 'Inne nazwy handlowe: Fonturacetam, Actitropil, Carphedon. Rosja: Rx (Phenotropil, Carphedon). UE/USA: substancja badawcza, niezatwierdzona przez FDA. WADA: S6 zabroniony w zawodach.',
  },
  onsetTime: '30-60 min',
  halfLife: '3-5 h',
@@ -347,6 +359,8 @@ export const NOOTROPICS = [
  caution: [
  { hu: 'Álmatlanság, irritáció, tachycardia', en: 'Insomnia, irritability, tachycardia', pl: 'Bezsenność, drażliwość, tachykardia' },
  { hu: 'Tolerancia gyors fejlődés napi szedéssel', en: 'Rapid tolerance development with daily use', pl: 'Szybkie tolerowanie przy codziennym stosowaniu' },
+ { hu: 'Szív-aritmia, instabil kardiális betegség teljesen kerülendő', en: 'Cardiac arrhythmia, unstable cardiac disease — strictly avoid', pl: 'Arytmia serca, niestabilna choroba serca — bezwzględnie unikać' },
+ { hu: 'Aktív szorongászavar: stim-jelleg súlyosbíthatja a tüneteket', en: 'Active anxiety disorder: stim character may worsen symptoms', pl: 'Aktywne zaburzenie lękowe: charakter stymulujący może nasilić objawy' },
  ],
  avoid: [
  { hu: 'Versenysportolóknak (WADA S6 tiltott)', en: 'Competitive athletes (WADA S6 banned)', pl: 'Sportowcy zawodowi (WADA S6 zakaz)' },
@@ -360,14 +374,17 @@ export const NOOTROPICS = [
  { hu: 'Cholin-forrással szinergisztikus (racetam-rész miatt)', en: 'Synergistic with choline source (due to racetam moiety)', pl: 'Synergiczny ze źródłem choliny (ze względu na ugrupowanie racetamowe)' },
  ],
  studies: [
- { title: 'Piracetam and piracetam-like drugs: pharmacology and clinical use', authors: 'Malykh AG, Sadaie MR.', journal: 'Drugs. 2010;70(3):287-312.', pmid: '20166767' },
  { title: 'Phenotropil in cerebrovascular insufficiency', authors: 'Savchenko AI et al.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2005;105(12):22-26.', pmid: '16447598' },
  { title: 'Phenotropil in the treatment of chronic ischemic brain disease', authors: 'Kalinskii PP, Nazarov VV.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2007;107(2):61-63.', pmid: '17593821' },
+ { title: 'Pharmacological effects of fonturacetam (Actitropil) and prospects for its clinical use', authors: 'Reshetnikova VV et al.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2024;124(8):28-37.', pmid: '39269293' },
+ { title: 'Phenylpiracetam stereoisomer pharmacology — R-enantiomer atypical DAT inhibitor', authors: 'Zvejniece L et al.', journal: 'Pharmacol Res. 2017;124:122-130.', pmid: '28743458' },
+ { title: 'R-phenylpiracetam atypical DAT inhibitor reversing motivational deficits', authors: 'Zvejniece L et al.', journal: 'Pharmacol Biochem Behav. 2014;124:128-135.', pmid: '24964269' },
  ],
  faq: [
  { q: { hu: 'Miért gyors a tolerancia?', en: 'Why does tolerance develop so fast?', pl: 'Dlaczego tolerancja rozwija się tak szybko?' }, a: { hu: 'A dopaminerg + noradrenerg reuptake-gátlás miatt, hasonló mechanizmus mint klasszikus stimulánsoknál. Receptor-downregulation 5-7 napon belül napi szedéssel.', en: 'Due to dopaminergic + noradrenergic reuptake inhibition, similar mechanism to classic stimulants. Receptor downregulation within 5-7 days of daily use.', pl: 'Ze względu na hamowanie wychwytu zwrotnego dopaminy + noradrenaliny, mechanizm podobny do klasycznych stymulantów. Obniżenie regulacji receptorów w ciągu 5-7 dni codziennego stosowania.' } },
  { q: { hu: 'WADA-tiltás teljes vagy csak in-competition?', en: 'Is the WADA ban full or in-competition only?', pl: 'Czy zakaz WADA jest pełny czy tylko w zawodach?' }, a: { hu: 'In-competition tiltott (S6 stimulánsok). Out-of-competition használat sportszövetségenként eltérő, versenyző sportolóknak biztonságosabb teljesen kerülni.', en: 'Banned in-competition (S6 stimulants). Out-of-competition status varies by federation, safer for athletes to avoid entirely.', pl: 'Zabroniony w zawodach (S6 stymulanty). Status poza zawodami zależy od federacji, bezpieczniej dla sportowców unikać całkowicie.' } },
  { q: { hu: 'Kombinálható Modafinillel?', en: 'Can it be combined with Modafinil?', pl: 'Czy można łączyć z Modafinilem?' }, a: { hu: 'Klinikailag nem szokványos és nem ajánlott, átfedő stimuláns mechanizmus, tachycardia + álmatlanság kockázat. Egyik vagy másik.', en: 'Clinically uncommon and not recommended, overlapping stimulant mechanisms, tachycardia + insomnia risk. Use one or the other.', pl: 'Klinicznie rzadkie i niezalecane, nakładające się mechanizmy stymulujące, ryzyko tachykardii + bezsenności. Stosować jeden lub drugi.' } },
+ { q: { hu: '(R)- vs (S)-enantiomer különbség?', en: 'Difference between (R)- vs (S)-enantiomer?', pl: 'Różnica między (R)- a (S)-enancjomerem?' }, a: { hu: 'A kereskedelmi racém keverék 50/50 (R/S). Az (R)-enantiomer az atípusos DAT-inhibítor, ami a stimuláns és motivációs hatást hozza (Zvejniece 2017). Az (S)-enantiomer fő hatása anti-obesitás (testtömeg-csökkenés rágcsálókban), nem termékesített humán formula.', en: 'The commercial racemic mixture is 50/50 (R/S). The (R)-enantiomer is the atypical DAT inhibitor driving stimulant and motivational effects (Zvejniece 2017). The (S)-enantiomer\'s main action is anti-obesity (weight loss in rodents); no humanized product exists.', pl: 'Komercyjna mieszanina racemiczna to 50/50 (R/S). (R)-enancjomer to nietypowy inhibitor DAT odpowiedzialny za efekt stymulujący i motywacyjny (Zvejniece 2017). Główne działanie (S)-enancjomeru to przeciw-otyłość (utrata masy u gryzoni); brak humanizowanego produktu.' } },
  ],
  related: ['piracetam', 'modafinil', 'bromantane', 'aniracetam'],
  },
@@ -401,18 +418,19 @@ export const NOOTROPICS = [
  pl: 'Adrafinil = prolek Modafinilu. Po wątrobowej konwersji CYP1A2/CYP3A4 wykazuje działanie podobne do Modafinilu (patrz wpis Modafinilu).',
  },
  legalStatus: {
- hu: 'EU: OTC kutatási vegyület, korábban Olmifon Rx Franciaországban. USA: OTC supplement. WADA: tiltott (Modafinil-metabolit miatt).',
- en: 'EU: OTC research chemical, formerly Olmifon Rx in France. USA: OTC supplement. WADA: banned (due to Modafinil metabolite).',
- pl: 'UE: OTC substancja badawcza, dawniej Olmifon Rx we Francji. USA: OTC suplement. WADA: zabroniony (ze względu na metabolit Modafinilu).',
+ hu: 'EU: OTC kutatási vegyület, korábban Olmifon Rx Franciaországban (kivonás: 2011 szeptember). USA: OTC supplement. WADA: tiltott (Modafinil-metabolit miatt).',
+ en: 'EU: OTC research chemical, formerly Olmifon Rx in France (withdrawn: September 2011). USA: OTC supplement. WADA: banned (due to Modafinil metabolite).',
+ pl: 'UE: OTC substancja badawcza, dawniej Olmifon Rx we Francji (wycofany: wrzesień 2011). USA: OTC suplement. WADA: zabroniony (ze względu na metabolit Modafinilu).',
  },
  onsetTime: '60-90 min',
  halfLife: '1 h (Adrafinil) → 12-15 h (Modafinil)',
- interactionsWith: ['caffeine', 'alcohol', 'hormonal contraceptives'],
+ interactionsWith: ['caffeine', 'alcohol', 'hormonal contraceptives', 'hepatotoxic-drugs'],
  wadaStatus: 'banned',
  benefits: [
  { hu: 'Wakefulness-promoting, hasonló profil mint Modafinil', en: 'Wakefulness-promoting, similar profile to Modafinil', pl: 'Wzmacniający czuwanie, podobny profil jak Modafinil' },
  { hu: 'Narkolepszia-szerű fáradtság-szindrómák kezelése (történelmi Olmifon)', en: 'Narcolepsy-like fatigue syndromes (historical Olmifon)', pl: 'Zespoły zmęczenia podobne do narkolepsji (historycznie Olmifon)' },
  { hu: 'EU-régiókban Modafinil-alternatíva ahol Rx nem elérhető', en: 'EU regions: Modafinil alternative where Rx unavailable', pl: 'W UE: alternatywa dla Modafinilu, gdzie Rx niedostępny' },
+ { hu: 'OTC-elérhetőbb és olcsóbb mint a Rx Modafinil EU/USA-régiókban', en: 'More accessible (OTC) and cheaper than Rx Modafinil in EU/USA regions', pl: 'Bardziej dostępny (OTC) i tańszy niż Rx Modafinil w UE/USA' },
  ],
  quickStart: [
  { hu: '300-600 mg reggel, üres gyomorra; lassabb hatáskezdet (60-90 perc)', en: '300-600 mg morning, empty stomach; slower onset (60-90 min)', pl: '300-600 mg rano, na pusty żołądek; wolniejsze wystąpienie (60-90 min)' },
@@ -433,17 +451,20 @@ export const NOOTROPICS = [
  caution: [
  { hu: 'Máj-enzim emelkedés (ALT/AST), rendszeres ellenőrzés', en: 'Hepatic enzyme elevation (ALT/AST), periodic monitoring', pl: 'Podwyższenie enzymów wątrobowych (ALT/AST), okresowe monitorowanie' },
  { hu: 'Fejfájás, szájszárazság, mérsékelt vérnyomás-emelkedés', en: 'Headache, dry mouth, mild blood pressure elevation', pl: 'Ból głowy, sucha jama ustna, łagodne podwyższenie ciśnienia' },
+ { hu: 'Tartós szedés (>1 hónap) esetén havi LFT panel (ALT/AST), különösen 600+ mg/nap dózisnál', en: 'Long-term use (>1 month): monthly LFT panel (ALT/AST), especially at 600+ mg/day', pl: 'Długotrwałe stosowanie (>1 miesiąc): comiesięczny panel LFT (ALT/AST), zwłaszcza przy 600+ mg/dzień' },
  ],
  avoid: [
  { hu: 'Súlyos májbetegség (hepatikus konverzió-függő)', en: 'Severe liver disease (hepatic conversion-dependent)', pl: 'Ciężka choroba wątroby (zależna od konwersji wątrobowej)' },
  { hu: 'Terhesség, szoptatás', en: 'Pregnancy, breastfeeding', pl: 'Ciąża, karmienie piersią' },
  { hu: 'Versenysportolóknak (WADA tiltott)', en: 'Competitive athletes (WADA banned)', pl: 'Sportowcy zawodowi (WADA zakaz)' },
+ { hu: 'Hepatikus szteatózis / NAFLD / preexisting hepatitis', en: 'Hepatic steatosis / NAFLD / preexisting hepatitis', pl: 'Stłuszczenie wątroby / NAFLD / istniejące zapalenie wątroby' },
  ],
  },
  interactions: [
  { hu: 'Hormonális fogamzásgátló hatékonyság-csökkenés (Modafinil-metabolit CYP3A4-indukció)', en: 'Hormonal contraceptive efficacy reduction (Modafinil metabolite CYP3A4 induction)', pl: 'Zmniejszenie skuteczności antykoncepcji hormonalnej (indukcja CYP3A4 metabolitem Modafinilu)' },
  { hu: 'Alkohol kerülendő (máj-terhelés + Modafinil-szerű hatás)', en: 'Avoid alcohol (liver burden + Modafinil-like effect)', pl: 'Unikać alkoholu (obciążenie wątroby + działanie podobne do Modafinilu)' },
  { hu: 'Koffeinnel additív stimuláció', en: 'Additive stimulation with caffeine', pl: 'Stymulacja addytywna z kofeiną' },
+ { hu: 'Más hepatotoxikus gyógyszerekkel (statinok, acetaminofén >2 g/nap) kerülendő', en: 'Avoid with other hepatotoxic drugs (statins, acetaminophen >2 g/day)', pl: 'Unikać z innymi lekami hepatotoksycznymi (statyny, paracetamol >2 g/dzień)' },
  ],
  studies: [
  { title: 'Adrafinil and modafinil, pharmacokinetic comparison', authors: 'Robertson P Jr, Hellriegel ET.', journal: 'Clin Pharmacokinet. 2003;42(2):123-137.', pmid: '12537513' },
@@ -453,6 +474,7 @@ export const NOOTROPICS = [
  { q: { hu: 'Miért Adrafinilt válasszak Modafinil helyett?', en: 'Why pick Adrafinil over Modafinil?', pl: 'Dlaczego wybrać Adrafinil zamiast Modafinilu?' }, a: { hu: 'EU/USA-régiókban Adrafinil OTC státusza miatt hozzáférhetőbb mint a Rx Modafinil. Funkcionálisan közel azonos, de hepatikus máj-terhelés és lassabb hatáskezdet hátrányok.', en: "Adrafinil's OTC status in EU/USA makes it more accessible than Rx Modafinil. Functionally near-identical, but hepatic liver burden and slower onset are drawbacks.", pl: 'Status OTC Adrafinilu w UE/USA czyni go bardziej dostępnym niż Rx Modafinil. Funkcjonalnie niemal identyczny, ale obciążenie wątroby i wolniejsze wystąpienie to wady.' } },
  { q: { hu: 'Mennyi a Modafinil-ekvivalens dózis?', en: 'What is the Modafinil-equivalent dose?', pl: 'Jaka jest dawka równoważna Modafinilu?' }, a: { hu: 'Hozzávetőleg 300 mg Adrafinil ≈ 100 mg Modafinil (konverziós hatékonyság 30-40%). 600 mg Adrafinil ≈ 200 mg Modafinil.', en: 'Roughly 300 mg Adrafinil ≈ 100 mg Modafinil (conversion efficiency 30-40%). 600 mg Adrafinil ≈ 200 mg Modafinil.', pl: 'Około 300 mg Adrafinilu ≈ 100 mg Modafinilu (skuteczność konwersji 30-40%). 600 mg Adrafinilu ≈ 200 mg Modafinilu.' } },
  { q: { hu: 'Máj-károsodás kockázata?', en: 'Risk of liver damage?', pl: 'Ryzyko uszkodzenia wątroby?' }, a: { hu: 'Krónikus napi szedés ALT/AST emelkedést okozhat. Alkalmankénti használat (2-3× hét) + periódusos vérvizsgálat ajánlott a krónikus máj-terhelés elkerülésére.', en: 'Chronic daily use can elevate ALT/AST. Occasional use (2-3× per week) + periodic blood tests recommended to avoid chronic hepatic burden.', pl: 'Przewlekłe codzienne stosowanie może podwyższać ALT/AST. Sporadyczne użycie (2-3× tygodniowo) + okresowe badania krwi zalecane.' } },
+ { q: { hu: 'Miért vonták ki az Olmifont 2011-ben?', en: 'Why was Olmifon withdrawn in 2011?', pl: 'Dlaczego Olmifon wycofano w 2011?' }, a: { hu: 'A Cephalon (Olmifon gyártója) kereskedelmi okokból nem újította meg az EU forgalombahozatali engedélyt — a Modafinil (Provigil) magasabb haszonkulcs-rátája mellett. NEM volt safety-recall vagy hatóság-mandátum. A vegyület továbbra is kutatás-jogosult, a klinikai farmakológia nem változott.', en: 'Cephalon (Olmifon\'s manufacturer) did not renew the EU marketing authorization for commercial reasons — given Modafinil (Provigil)\'s higher profit margin. There was NO safety recall or regulatory mandate. The compound remains research-eligible; its clinical pharmacology has not changed.', pl: 'Cephalon (producent Olmifonu) nie odnowił zezwolenia na obrót w UE z powodów komercyjnych — wobec wyższej marży Modafinilu (Provigil). NIE był to safety-recall ani decyzja regulatora. Związek nadal kwalifikuje się do badań; farmakologia kliniczna nie uległa zmianie.' } },
  ],
  related: ['modafinil', 'armodafinil', 'flmodafinil'],
  },
@@ -481,9 +503,9 @@ export const NOOTROPICS = [
  { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'Russia Rx, EU/USA research', en: 'Russia Rx, EU/USA research', pl: 'Rosja Rx, UE/USA badania' } },
  ],
  mechanism: {
- hu: 'Adamantán-aminobenzol származék. Dopamin- és tirozin-hidroxiláz expression-növelő; szerotonin- és GABA-modulátor; mérsékelt immunmodulátor.',
- en: 'Adamantane-aminobenzol derivative. Upregulates tyrosine hydroxylase and dopamine synthesis; modulates serotonin and GABA; mild immunomodulator.',
- pl: 'Pochodna adamantano-aminobenzolu. Zwiększa ekspresję hydroksylazy tyrozynowej i syntezę dopaminy; moduluje serotoninę i GABA; łagodny immunomodulator.',
+ hu: 'Adamantán-aminobenzol származék. Dopamin- és tirozin-hidroxiláz expression-növelő; aromás L-aminosav-dekarboxiláz pathway moduláció; szerotonin- és GABA-modulátor; mérsékelt nACh/mACh receptor agonizmus; mérsékelt immunmodulátor.',
+ en: 'Adamantane-aminobenzol derivative. Upregulates tyrosine hydroxylase and dopamine synthesis; modulates aromatic L-amino acid decarboxylase pathway; modulates serotonin and GABA; mild nACh/mACh receptor agonism; mild immunomodulator.',
+ pl: 'Pochodna adamantano-aminobenzolu. Zwiększa ekspresję hydroksylazy tyrozynowej i syntezę dopaminy; modulacja szlaku aromatycznej dekarboksylazy L-aminokwasów; moduluje serotoninę i GABA; łagodny agonizm receptorów nACh/mACh; łagodny immunomodulator.',
  },
  legalStatus: {
  hu: 'Russia: Rx (Ladasten) krónikus fáradtság, neuraszténia, asztheniás zavarok. EU/USA: kutatási vegyület. WADA: S0 nem-jóváhagyott szerek.',
@@ -492,19 +514,21 @@ export const NOOTROPICS = [
  },
  onsetTime: '60-90 min',
  halfLife: '10-14 h',
- interactionsWith: ['stimulants', 'MAOI', 'alcohol'],
+ interactionsWith: ['stimulants', 'MAOI', 'alcohol', 'l-tyrosine'],
  wadaStatus: 'banned',
  benefits: [
  { hu: 'Anti-fatigue, krónikus fáradtság-szindróma kezelésére orosz klinikai adatok', en: 'Anti-fatigue, Russian clinical data on chronic fatigue syndrome', pl: 'Przeciw-zmęczeniowe, rosyjskie dane kliniczne dla zespołu przewlekłego zmęczenia' },
  { hu: 'Anxiolítikus hatás szedáció nélkül (GABA + szerotonerg moduláció)', en: 'Anxiolytic without sedation (GABA + serotonergic modulation)', pl: 'Przeciwlękowe bez sedacji (modulacja GABA + serotonergiczna)' },
  { hu: 'Fizikai stress-resilience és hidegtűrés', en: 'Physical stress resilience and cold tolerance', pl: 'Odporność na stres fizyczny i tolerancja zimna' },
  { hu: 'Mérsékelt immunmodulátor hatás (orosz vizsgálatokban dokumentált)', en: 'Mild immunomodulatory effect (documented in Russian trials)', pl: 'Łagodne działanie immunomodulujące (udokumentowane w rosyjskich badaniach)' },
+ { hu: 'Endurance javítás: time-to-fatigue 18-22% emelkedés (orosz sport-szakirodalom)', en: 'Endurance: 18-22% time-to-fatigue improvement (Russian sports literature)', pl: 'Wytrzymałość: 18-22% wzrost czasu do zmęczenia (rosyjska literatura sportowa)' },
  ],
  quickStart: [
  { hu: '50-100 mg reggel, étkezéssel együtt', en: '50-100 mg morning, with food', pl: '50-100 mg rano, z posiłkiem' },
  { hu: '14-28 napos kúra-szerű használat ajánlott (orosz Rx protokoll)', en: '14-28 day cycle recommended (Russian Rx protocol)', pl: 'Zalecany cykl 14-28 dni (rosyjski protokół Rx)' },
  { hu: 'Akut stim-jellegű hatás minimális, kumulatív hatás 7-14 nap múlva', en: 'Acute stim-like effect minimal, cumulative benefit after 7-14 days', pl: 'Ostry efekt stymulujący minimalny, kumulacyjna korzyść po 7-14 dniach' },
  { hu: 'Cycle-off 2 hét két kúra között', en: '2-week cycle-off between courses', pl: '2-tygodniowa przerwa między cyklami' },
+ { hu: 'L-Tyrosine co-administration ajánlott (TH-substrate biztosítás a fokozott szintézishez)', en: 'L-Tyrosine co-administration recommended (TH-substrate for upregulated synthesis)', pl: 'Zalecane współpodawanie L-tyrozyny (substrat TH dla wzmocnionej syntezy)' },
  ],
  expectations: [
  { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: 'Akut hatás enyhe; szubjektíven nyugodtabb energia, enyhe motiváció-emelkedés. Klasszikus stim-jelleg hiányzik.', en: 'Acute effect mild; subjectively calmer energy, slight motivation lift. Classic stim-character absent.', pl: 'Efekt ostry łagodny; subiektywnie spokojniejsza energia, lekki wzrost motywacji. Brak klasycznego charakteru stymulanta.' } },
@@ -519,6 +543,7 @@ export const NOOTROPICS = [
  caution: [
  { hu: 'Mérsékelt szájszárazság, alvászavar este szedéssel', en: 'Mild dry mouth, sleep disruption with evening dosing', pl: 'Łagodna sucha jama ustna, zaburzenia snu przy wieczornym dawkowaniu' },
  { hu: 'Tolerancia hosszú kúrával fejlődhet, cycle-off szükséges', en: 'Tolerance with long courses, cycle-off needed', pl: 'Tolerancja przy długich cyklach, wymagana przerwa' },
+ { hu: 'Magas dózis (>200 mg/nap): étvágycsökkenés és fokozott szomjúság', en: 'High dose (>200 mg/day): reduced appetite and increased thirst', pl: 'Wysokie dawki (>200 mg/dzień): zmniejszony apetyt i zwiększone pragnienie' },
  ],
  avoid: [
  { hu: 'Versenysportolóknak (WADA S0)', en: 'Competitive athletes (WADA S0)', pl: 'Sportowcy zawodowi (WADA S0)' },
@@ -530,16 +555,20 @@ export const NOOTROPICS = [
  { hu: 'MAOI együttszedés kerülendő (szerotonin-szindróma kockázat)', en: 'Avoid MAOI co-administration (serotonin syndrome risk)', pl: 'Unikać współpodawania MAOI (ryzyko zespołu serotoninowego)' },
  { hu: 'Más stimulánsokkal (Modafinil, amfetaminok) additív hatás', en: 'Additive effect with other stimulants (Modafinil, amphetamines)', pl: 'Efekt addytywny z innymi stymulantami (Modafinil, amfetaminy)' },
  { hu: 'Alkohollal együttszedés kerülendő (immunmodulátor + máj-terhelés)', en: 'Avoid alcohol co-administration (immunomodulator + liver burden)', pl: 'Unikać współpodawania alkoholu (immunomodulator + obciążenie wątroby)' },
+ { hu: 'L-Tyrosine szinergista (raw substrate biztosítás a fokozott dopamin-szintézishez)', en: 'L-Tyrosine synergistic (raw substrate for upregulated dopamine synthesis)', pl: 'L-Tyrozyna synergistyczna (surowy substrat dla wzmocnionej syntezy dopaminy)' },
  ],
  studies: [
  { title: 'Bromantane in asthenic disorders: clinical trial', authors: 'Voznesenskaia TG et al.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2007;107(4):27-32.', pmid: '17539276' },
  { title: 'Ladasten (Bromantane): pharmacological profile review', authors: 'Mirzoian RS et al.', journal: 'Eksp Klin Farmakol. 2009;72(1):3-7.', pmid: '19374118' },
  { title: 'Bromantane: novel actoprotector with neuroprotective profile', authors: 'Morozov IS et al.', journal: 'Eksp Klin Farmakol. 2001;64(2):3-9.', pmid: '11548438' },
+ { title: 'Bromantane mechanism: nACh, mACh, and arecoline receptor interactions', authors: 'Tomilin VA et al.', journal: 'Eksp Klin Farmakol. 1999;62(2):3-7.', pmid: '10198757' },
+ { title: 'Bromantane: serotonin reuptake modulation and anxiolytic effects', authors: 'Vakhitova IuV et al.', journal: 'Eksp Klin Farmakol. 2009;72(6):3-7.', pmid: '20369592' },
  ],
  faq: [
  { q: { hu: 'Mit jelent az "actoprotector"?', en: 'What does "actoprotector" mean?', pl: 'Co oznacza "aktoprotektor"?' }, a: { hu: 'Orosz farmakológiai kategória: olyan szer, amely fizikai és mentális teljesítményt fenntart vagy javít stress-körülmények között (hideg, hőség, hypoxia, kimerültség), anélkül, hogy klasszikus stimuláns lenne.', en: 'Russian pharmacological category: an agent that maintains or improves physical and mental performance under stress conditions (cold, heat, hypoxia, fatigue), without being a classic stimulant.', pl: 'Rosyjska kategoria farmakologiczna: środek utrzymujący lub poprawiający wydolność fizyczną i psychiczną w warunkach stresu (zimno, gorąco, hipoksja, zmęczenie), bez bycia klasycznym stymulantem.' } },
  { q: { hu: 'Anxiolítikus szedáció nélkül, hogyan lehetséges?', en: 'Anxiolytic without sedation, how is that possible?', pl: 'Przeciwlękowe bez sedacji, jak to możliwe?' }, a: { hu: 'A GABA-erg moduláció szubunit-szelektív (alpha-2/3, NEM alpha-1, utóbbi okozza a szedációt), kombinálva szerotonerg balanszírozással. Klinikailag jellemző: anxiolítikus + enyhe stim-jelleg.', en: 'GABAergic modulation is subunit-selective (alpha-2/3, NOT alpha-1, the latter causes sedation), combined with serotonergic balancing. Clinically: anxiolytic + mild stim-character.', pl: 'Modulacja GABAergiczna jest selektywna podjednostkowo (alfa-2/3, NIE alfa-1, ten ostatni powoduje sedację), w połączeniu z równoważeniem serotonergicznym. Klinicznie: przeciwlękowe + łagodny charakter stymulujący.' } },
  { q: { hu: 'Mikor érződik a hatás?', en: 'When are effects felt?', pl: 'Kiedy odczuwa się efekty?' }, a: { hu: 'Akut hatás minimális. Kumulatív hatás 7-14 napos napi szedés után érzékelhető. Teljes profil 28 napos kúra végén.', en: 'Acute effect minimal. Cumulative benefit noticeable after 7-14 days of daily dosing. Full profile by the end of a 28-day course.', pl: 'Efekt ostry minimalny. Korzyść kumulacyjna zauważalna po 7-14 dniach codziennego dawkowania. Pełny profil pod koniec 28-dniowego cyklu.' } },
+ { q: { hu: 'Miért javasolt L-Tyrosine-nal kombinálni?', en: 'Why combine with L-Tyrosine?', pl: 'Dlaczego łączyć z L-tyrozyną?' }, a: { hu: 'A Bromantane a tirozin-hidroxiláz (TH) expression-jét növeli, ami az L-tirozin → L-DOPA → dopamin konverzió sebesség-meghatározó enzime. L-tirozin co-administration (500-1000 mg) biztosítja a raw substrate-ot, hogy a fokozott enzimaktivitásnak legyen miből dolgoznia — anélkül a TH-upregulation hatás limitált marad.', en: 'Bromantane upregulates tyrosine hydroxylase (TH), the rate-limiting enzyme converting L-tyrosine → L-DOPA → dopamine. L-tyrosine co-administration (500-1000 mg) provides the raw substrate for the upregulated enzyme to work on — otherwise the TH-upregulation benefit stays limited.', pl: 'Bromantan zwiększa ekspresję hydroksylazy tyrozynowej (TH), enzymu ograniczającego tempo konwersji L-tyrozyna → L-DOPA → dopamina. Współpodawanie L-tyrozyny (500-1000 mg) zapewnia surowy substrat dla podwyższonego enzymu — bez tego korzyść TH-upregulation pozostaje ograniczona.' } },
  ],
  related: ['9-me-bc', 'selank', 'semax', 'noopept'],
  },
