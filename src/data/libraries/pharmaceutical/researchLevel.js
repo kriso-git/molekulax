@@ -10,13 +10,16 @@
 // Populated in Task 16-23 (Session 5-6) as entries land.
 
 export const EXPLICIT_LEVEL = {
-  metformin:    5,
-  semaglutide:  4,
-  atorvastatin: 5,
-  tadalafil:    4,
-  sertralin:    5,
-  bupropion:    4,
-  modafinil:    4,
+  metformin:     5,
+  semaglutide:   4,
+  atorvastatin:  5,
+  tadalafil:     4,
+  sertralin:     5,
+  bupropion:     4,
+  modafinil:     4,
+  levothyroxin:  5,
+  finasteride:   5,
+  amoxicillin:   5,
 }
 
 /**
