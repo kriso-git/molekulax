@@ -10,8 +10,8 @@
 // Populated in Task 16-23 (Session 5-6) as entries land.
 
 export const EXPLICIT_LEVEL = {
-  // e.g. 'metformin': 5,
-  // e.g. 'semaglutide': 4,
+  metformin:   5,
+  semaglutide: 4,
 }
 
 /**
