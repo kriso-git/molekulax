@@ -887,4 +887,334 @@ export const NOOTROPICS = [
     ],
     related: ['bromantane', 'selegiline', 'bpap', 'modafinil'],
   },
+
+  // ============================================================
+  // EXTRA — Racetams (Task 7, Batch 1)
+  // Slim shape: id, name, image, accentColor, tagColor, shortDesc,
+  // description, keyInfo (3 chips), mechanism, legalStatus — HU/EN/PL.
+  // ============================================================
+
+  {
+    id: 'aniracetam',
+    name: 'Aniracetam',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Zsírban oldódó racetam, AMPA-pozitív moduláció + anxiolitikus profil.',
+      en: 'Fat-soluble racetam with AMPA-PAM action and an anxiolytic profile.',
+      pl: 'Rozpuszczalny w tłuszczach racetam z aktywnością AMPA-PAM i profilem anksjolitycznym.',
+    },
+    description: {
+      hu: 'Az Aniracetam a Piracetam zsíroldható pirrolidon-származéka, amely AMPA-receptor pozitív allosztérikus modulátorként (PAM) lassítja a deszenzitizációt és anxiolitikus mellékprofilt mutat. Olaszországban Ampamet és Memodrin néven vényköteles. Plazma felezési ideje rövid (~1-2.5 óra), de fő metabolitja (2-pirrolidinon-acetamid) tovább hat.',
+      en: 'Aniracetam is a fat-soluble pyrrolidinone derivative of Piracetam that acts as an AMPA receptor positive allosteric modulator (PAM), slowing desensitization with an anxiolytic side-profile. In Italy it is prescription-only as Ampamet and Memodrin. Plasma half-life is short (~1-2.5 h), but its main metabolite (2-pyrrolidinone-acetamide) continues to act.',
+      pl: 'Aniracetam to rozpuszczalna w tłuszczach pochodna pirolidonowa piracetamu, działająca jako pozytywny modulator allosteryczny (PAM) receptora AMPA, spowalniając desensytyzację z dodatkowym profilem anksjolitycznym. We Włoszech jest na receptę jako Ampamet i Memodrin. Okres półtrwania w osoczu jest krótki (~1-2,5 h), ale jego główny metabolit (2-pirolidynon-acetamid) działa dalej.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'AMPA-PAM + cholinerg', en: 'AMPA-PAM + cholinergic', pl: 'AMPA-PAM + cholinergiczny' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '1-2.5 óra (metabolit hosszabb)', en: '1-2.5 h (metabolite longer)', pl: '1-2,5 h (metabolit dłuższy)' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'EU vényköteles (IT: Ampamet)', en: 'EU Rx (IT: Ampamet)', pl: 'UE na receptę (IT: Ampamet)' } },
+    ],
+    mechanism: {
+      hu: 'AMPA-receptor pozitív allosztérikus moduláció — lassítja a glutamát-kötés utáni deszenzitizációt és növeli a szinaptikus áramot; mellék-cholinerg és D2/D3 modulációval is leírták.',
+      en: 'Positive allosteric modulation of AMPA receptors — slows desensitization after glutamate binding and increases synaptic current; secondary cholinergic and D2/D3 modulation are also described.',
+      pl: 'Pozytywna modulacja allosteryczna receptorów AMPA — spowalnia desensytyzację po związaniu glutaminianu i zwiększa prąd synaptyczny; opisano również wtórną modulację cholinergiczną i D2/D3.',
+    },
+    legalStatus: {
+      hu: 'Olaszországban vényköteles gyógyszer (Ampamet, Memodrin). EU-n kívül és USA-ban nem FDA-jóváhagyott; OTC kiegészítőként árusítása jogilag szürke zóna.',
+      en: 'Prescription drug in Italy (Ampamet, Memodrin). Not FDA-approved outside EU/USA; OTC supplement sales remain a legal grey zone.',
+      pl: 'Lek na receptę we Włoszech (Ampamet, Memodrin). Niezatwierdzony przez FDA poza UE/USA; sprzedaż OTC pozostaje w prawnej szarej strefie.',
+    },
+  },
+
+  {
+    id: 'oxiracetam',
+    name: 'Oxiracetam',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Stimuláns hangulatú racetam — AMPA + cholinerg aktivitás, fókusz-orientált.',
+      en: 'Stimulant-leaning racetam — AMPA + cholinergic activity, focus-oriented.',
+      pl: 'Racetam o profilu stymulującym — aktywność AMPA + cholinergiczna, ukierunkowany na koncentrację.',
+    },
+    description: {
+      hu: 'Az Oxiracetam egy 4-hidroxi-piracetam származék, amelyet az Aniracetam relaxáló profiljával szemben általában stimuláns jellegűnek írnak le. Hatása AMPA-PAM és HACU (magas-affinitású kolin-felvétel) facilitáció kombinációja. Olaszországban Neuractiv és Neuromet néven volt forgalomban.',
+      en: 'Oxiracetam is a 4-hydroxy derivative of Piracetam that is generally described as stimulant-like, in contrast to Aniracetam`s relaxing profile. Its action combines AMPA-PAM with HACU (high-affinity choline uptake) facilitation. It was marketed in Italy as Neuractiv and Neuromet.',
+      pl: 'Oksyracetam to 4-hydroksy-pochodna piracetamu, ogólnie opisywana jako stymulująca, w przeciwieństwie do relaksującego profilu aniracetamu. Jego działanie łączy AMPA-PAM z ułatwianiem HACU (wysokopowinowactwego wychwytu choliny). Był sprzedawany we Włoszech jako Neuractiv i Neuromet.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'AMPA-PAM + HACU', en: 'AMPA-PAM + HACU', pl: 'AMPA-PAM + HACU' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~8 óra', en: '~8 h', pl: '~8 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'EU vényköteles (IT)', en: 'EU Rx (IT)', pl: 'UE na receptę (IT)' } },
+    ],
+    mechanism: {
+      hu: 'AMPA-receptor pozitív moduláció + cholinerg HACU-fokozás → glutamáterg LTP és acetilkolin-szintézis együttes facilitációja.',
+      en: 'AMPA positive modulation + cholinergic HACU enhancement → combined facilitation of glutamatergic LTP and acetylcholine synthesis.',
+      pl: 'Pozytywna modulacja AMPA + zwiększenie cholinergicznego HACU → łączne ułatwienie glutaminergicznego LTP i syntezy acetylocholiny.',
+    },
+    legalStatus: {
+      hu: 'Olaszországban vényköteles. USA-ban nem FDA-jóváhagyott; OTC nootropikum-piacon „research chemical" minősítéssel árusítják.',
+      en: 'Prescription-only in Italy. Not FDA-approved in the USA; sold as a “research chemical” on the OTC nootropic market.',
+      pl: 'Na receptę we Włoszech. Niezatwierdzony przez FDA w USA; sprzedawany jako „chemikalium badawcze” na rynku nootropików OTC.',
+    },
+  },
+
+  {
+    id: 'pramiracetam',
+    name: 'Pramiracetam',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Erős cholinerg racetam — HACU-fokozás + AMPA-modulácó.',
+      en: 'Potent cholinergic racetam — HACU enhancement + AMPA modulation.',
+      pl: 'Silny cholinergiczny racetam — wzmocnienie HACU + modulacja AMPA.',
+    },
+    description: {
+      hu: 'A Pramiracetam egy nagy potencitású Piracetam-analóg, amely elsősorban a hippokampális magas-affinitású kolin-felvétel (HACU) facilitációján keresztül hat. A tipikus dózis (300-600 mg) jelentősen alacsonyabb, mint a Piracetamé. Olaszországban Pramistar néven vényköteles volt; jelenleg több piacon visszavonva.',
+      en: 'Pramiracetam is a high-potency Piracetam analog whose primary action is facilitation of hippocampal high-affinity choline uptake (HACU). The typical dose (300-600 mg) is far lower than Piracetam`s. It was prescription-only in Italy as Pramistar; currently withdrawn in several markets.',
+      pl: 'Pramiracetam to wysokopotencyjny analog piracetamu, którego głównym działaniem jest ułatwianie hipokampalnego wysokopowinowactwego wychwytu choliny (HACU). Typowa dawka (300-600 mg) jest znacznie niższa niż piracetamu. We Włoszech był na receptę jako Pramistar; obecnie wycofany na kilku rynkach.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'HACU + AMPA', en: 'HACU + AMPA', pl: 'HACU + AMPA' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '4-6 óra', en: '4-6 h', pl: '4-6 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'EU vényköteles (IT, visszavonva)', en: 'EU Rx (IT, withdrawn)', pl: 'UE na receptę (IT, wycofany)' } },
+    ],
+    mechanism: {
+      hu: 'Hippokampális HACU-fokozás → emelt acetilkolin-szintézis; mellékhatásként AMPA-receptor pozitív moduláció. Nem köt direkt receptorhoz.',
+      en: 'Hippocampal HACU enhancement → elevated acetylcholine synthesis; secondary AMPA receptor positive modulation. Does not bind any receptor directly.',
+      pl: 'Wzmocnienie HACU w hipokampie → zwiększona synteza acetylocholiny; wtórnie pozytywna modulacja receptora AMPA. Nie wiąże się bezpośrednio z żadnym receptorem.',
+    },
+    legalStatus: {
+      hu: 'Olaszországban (Pramistar) vényköteles volt, több piacon visszavonva. USA-ban nem FDA-jóváhagyott; OTC nootropikum-piacon elérhető.',
+      en: 'Prescription-only in Italy (Pramistar), withdrawn in several markets. Not FDA-approved in the USA; available on the OTC nootropic market.',
+      pl: 'Na receptę we Włoszech (Pramistar), wycofany na kilku rynkach. Niezatwierdzony przez FDA w USA; dostępny na rynku nootropików OTC.',
+    },
+  },
+
+  {
+    id: 'coluracetam',
+    name: 'Coluracetam',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Szelektív HACU-fokozó (BCI-540) — vizuális élmény és antidepresszív profil.',
+      en: 'Selective HACU enhancer (BCI-540) — visual experience and antidepressant profile.',
+      pl: 'Selektywny wzmacniacz HACU (BCI-540) — wrażenia wzrokowe i profil antydepresyjny.',
+    },
+    description: {
+      hu: 'A Coluracetam (BCI-540) a BrainCells Inc. fejlesztése volt, amely szelektíven aktiválja a magas-affinitású kolin-felvevő rendszert (HACU). Phase 2 vizsgálatban (major depresszió) statisztikai szignifikancia nélkül zárult, de a fejlesztés MDD + GAD irányba folytatódott. Anekdotikus felhasználói leírások színérzékelés- és kontrasztfokozást emlegetnek.',
+      en: 'Coluracetam (BCI-540) was developed by BrainCells Inc. to selectively activate the high-affinity choline uptake (HACU) system. A Phase 2 trial in major depression ended without statistical significance, but development continued toward MDD + GAD. Anecdotal user reports describe enhanced color perception and contrast.',
+      pl: 'Koluracetam (BCI-540) został opracowany przez BrainCells Inc. w celu selektywnej aktywacji wysokopowinowactwego systemu wychwytu choliny (HACU). Badanie fazy 2 w dużej depresji zakończyło się bez istotności statystycznej, ale rozwój kontynuowano w kierunku MDD + GAD. Anegdotyczne raporty użytkowników opisują wzmożone postrzeganie kolorów i kontrastu.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Szelektív HACU-aktivátor', en: 'Selective HACU activator', pl: 'Selektywny aktywator HACU' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~3 óra', en: '~3 h', pl: '~3 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Kísérleti, nincs jóváhagyás', en: 'Investigational, no approval', pl: 'Badawczy, bez zatwierdzenia' } },
+    ],
+    mechanism: {
+      hu: 'Szelektíven aktiválja a sérült kolinerg neuronok HACU-rendszerét — ezzel acetilkolin-szintézist és -felszabadulást fokoz olyan régiókban is, ahol más cholinerg ágensek nem hatnak.',
+      en: 'Selectively activates HACU in damaged cholinergic neurons — increasing acetylcholine synthesis and release even in regions where other cholinergic agents do not act.',
+      pl: 'Selektywnie aktywuje HACU w uszkodzonych neuronach cholinergicznych — zwiększając syntezę i uwalnianie acetylocholiny nawet w regionach, gdzie inne środki cholinergiczne nie działają.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. „Research chemical" minősítéssel árusított, OTC nootropikum-piacon elérhető.',
+      en: 'Not approved as a medicine anywhere. Sold as a “research chemical” on the OTC nootropic market.',
+      pl: 'Nie zatwierdzony jako lek nigdzie. Sprzedawany jako „chemikalium badawcze” na rynku nootropików OTC.',
+    },
+  },
+
+  {
+    id: 'fasoracetam',
+    name: 'Fasoracetam',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'mGluR I/II/III modulátor racetam — ADHD klinikai kutatás.',
+      en: 'mGluR I/II/III modulator racetam — ADHD clinical research.',
+      pl: 'Racetam modulujący mGluR I/II/III — badania kliniczne ADHD.',
+    },
+    description: {
+      hu: 'A Fasoracetam (NS-105) eredeti japán Nippon Shinyaku fejlesztés, amely a metabotrop glutamát-receptorok (mGluR I/II/III) up-regulációján keresztül hat. Aevi Medical (volt Medgenics) Phase 2/3 vizsgálatba vitte ADHD-ban (mGluR-mutáció-pozitív adolescensek), 2019-ben sikertelen elsődleges végpont után a fejlesztés lelassult.',
+      en: 'Fasoracetam (NS-105) is originally a Nippon Shinyaku (Japan) development that acts via up-regulation of metabotropic glutamate receptors (mGluR I/II/III). Aevi Medical (formerly Medgenics) advanced it to Phase 2/3 in ADHD (mGluR-mutation-positive adolescents); development slowed after a failed primary endpoint in 2019.',
+      pl: 'Fasoracetam (NS-105) to pierwotnie japoński (Nippon Shinyaku) lek działający poprzez regulację w górę metabotropowych receptorów glutaminianu (mGluR I/II/III). Aevi Medical (dawniej Medgenics) doprowadził go do fazy 2/3 w ADHD (nastolatkowie z mutacją mGluR); rozwój zwolnił po nieudanym pierwszorzędowym punkcie końcowym w 2019.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'mGluR I/II/III up-reguláció', en: 'mGluR I/II/III up-regulation', pl: 'Regulacja w górę mGluR I/II/III' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~5-8 óra', en: '~5-8 h', pl: '~5-8 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Klinikai vizsgálati fázis', en: 'Investigational, clinical trials', pl: 'Faza badań klinicznych' } },
+    ],
+    mechanism: {
+      hu: 'mGluR II és III csoport agonista profil + cAMP- és cGMP-szintek emelése; krónikus szedés esetén mGluR-receptor up-regulációt vált ki.',
+      en: 'mGluR group II/III agonist profile + elevation of cAMP and cGMP; chronic dosing produces mGluR receptor up-regulation.',
+      pl: 'Profil agonistyczny mGluR grupy II/III + wzrost cAMP i cGMP; przewlekłe dawkowanie powoduje regulację w górę receptora mGluR.',
+    },
+    legalStatus: {
+      hu: 'Klinikai vizsgálati státusz, sehol nem jóváhagyott gyógyszer. OTC kiegészítőként árusítása jogilag szürke zóna; UK-ban a Psychoactive Substances Act tiltja.',
+      en: 'Investigational status, not an approved drug anywhere. OTC supplement sales are a legal grey zone; banned in the UK under the Psychoactive Substances Act.',
+      pl: 'Status badawczy, nigdzie nie zatwierdzony jako lek. Sprzedaż OTC w prawnej szarej strefie; zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act.',
+    },
+  },
+
+  {
+    id: 'nefiracetam',
+    name: 'Nefiracetam',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'GABA + AMPA + Ca-csatorna-modulátor racetam — anti-amnesztikus.',
+      en: 'GABA + AMPA + Ca-channel modulator racetam — anti-amnestic.',
+      pl: 'Racetam modulujący GABA + AMPA + kanały Ca — przeciwamnezyjny.',
+    },
+    description: {
+      hu: 'A Nefiracetam (DM-9384) Daiichi Pharmaceutical-fejlesztés, amely a Piracetam-vázra épülő dimetil-fenil-acetil származék. Több ponton hat: GABA-A facilitáció, AMPA-PAM aktivitás, és L-típusú feszültség-függő Ca²⁺-csatornák tartós nyitása. Japánban Phase 3 vizsgálatok (post-stroke apátia, Alzheimer) zajlottak; egy USA Phase 2 vizsgálat hímnemű hepatotoxicitás miatt megszakadt.',
+      en: 'Nefiracetam (DM-9384) is a Daiichi Pharmaceutical development built on the Piracetam scaffold with a dimethyl-phenyl-acetyl substituent. It acts at several sites: GABA-A facilitation, AMPA-PAM activity, and sustained opening of L-type voltage-gated Ca²⁺ channels. Phase 3 trials (post-stroke apathy, Alzheimer`s) ran in Japan; a USA Phase 2 was halted over male hepatotoxicity signals.',
+      pl: 'Nefiracetam (DM-9384) to lek firmy Daiichi Pharmaceutical, oparty na szkielecie piracetamu z podstawnikiem dimetylo-fenylo-acetylowym. Działa w kilku miejscach: ułatwianie GABA-A, aktywność AMPA-PAM i przedłużone otwieranie kanałów Ca²⁺ typu L. Badania fazy 3 (apatia po udarze, Alzheimer) prowadzono w Japonii; faza 2 w USA została wstrzymana z powodu sygnałów hepatotoksyczności u mężczyzn.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'GABA-A + AMPA + L-Ca²⁺', en: 'GABA-A + AMPA + L-Ca²⁺', pl: 'GABA-A + AMPA + L-Ca²⁺' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~3-5 óra', en: '~3-5 h', pl: '~3-5 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Klinikai kutatás, sehol jóváhagyva', en: 'Investigational, not approved', pl: 'Badawczy, nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'Triple-target: GABA-A facilitáció (anxiolitikus szál), AMPA-receptor pozitív moduláció (LTP), és L-típusú Ca²⁺-csatornák tartós aktiválása — utóbbi a fő anti-amnesztikus mechanizmus.',
+      en: 'Triple-target: GABA-A facilitation (anxiolytic arm), AMPA receptor positive modulation (LTP), and sustained activation of L-type Ca²⁺ channels — the latter is the primary anti-amnestic mechanism.',
+      pl: 'Potrójny cel: ułatwianie GABA-A (ramię anksjolityczne), pozytywna modulacja receptora AMPA (LTP) i przedłużona aktywacja kanałów Ca²⁺ typu L — to ostatnie jest głównym mechanizmem przeciwamnezyjnym.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer; klinikai vizsgálatok lezárva. OTC „research chemical" piacon árusított.',
+      en: 'Not approved as a medicine anywhere; clinical trials closed. Sold on the OTC “research chemical” market.',
+      pl: 'Nigdzie nie zatwierdzony jako lek; badania kliniczne zamknięte. Sprzedawany na rynku „chemikaliów badawczych” OTC.',
+    },
+  },
+
+  {
+    id: 'sunifiram',
+    name: 'Sunifiram',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Ampakine — AMPA-PAM, sub-mg aktív dózis.',
+      en: 'Ampakine — AMPA-PAM, sub-mg active dose.',
+      pl: 'Ampakina — AMPA-PAM, aktywna dawka poniżej miligrama.',
+    },
+    description: {
+      hu: 'A Sunifiram (DM-235) piperazin-vázú ampakine, amely a klasszikus pirrolidon-racetamoknál ~1000-szer nagyobb in vivo potencitást mutat — aktív dózisa szub-milligrammos tartományban van. AMPA-receptor pozitív allosztérikus modulátorként és NMDA glicin-helyén indirekt aktiváló hatású. Csak preklinikai adatok, humán Phase nincs.',
+      en: 'Sunifiram (DM-235) is a piperazine-scaffold ampakine showing ~1000× higher in vivo potency than classical pyrrolidone racetams — active dose is in the sub-milligram range. It acts as an AMPA receptor positive allosteric modulator and as an indirect activator at the NMDA glycine site. Only preclinical data; no human Phase trials.',
+      pl: 'Sunifiram (DM-235) to ampakina o szkielecie piperazynowym wykazująca ~1000× wyższą potencję in vivo niż klasyczne pirolidonowe racetamy — dawka aktywna jest w zakresie poniżej miligrama. Działa jako pozytywny modulator allosteryczny receptora AMPA i pośredni aktywator w miejscu glicyny NMDA. Tylko dane przedkliniczne; brak ludzkich badań fazy.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'AMPA-PAM + NMDA-glycin', en: 'AMPA-PAM + NMDA-glycine', pl: 'AMPA-PAM + glicyna NMDA' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Nincs humán adat', en: 'No human data', pl: 'Brak danych u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Kísérleti, sehol jóváhagyva', en: 'Investigational, not approved', pl: 'Badawczy, nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'AMPA-receptor pozitív allosztérikus moduláció + indirekt NMDA glicin-hely aktivitás → erős LTP-fokozás állat-modellekben már 0.01-0.1 mg/kg dózisban.',
+      en: 'AMPA receptor positive allosteric modulation + indirect NMDA glycine-site activity → strong LTP enhancement in animal models at 0.01-0.1 mg/kg.',
+      pl: 'Pozytywna modulacja allosteryczna receptora AMPA + pośrednia aktywność w miejscu glicyny NMDA → silne wzmocnienie LTP w modelach zwierzęcych przy 0,01-0,1 mg/kg.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja; egyéb piacokon „research chemical" minősítésű.',
+      en: 'Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; classified as a “research chemical” elsewhere.',
+      pl: 'Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; sklasyfikowany jako „chemikalium badawcze” gdzie indziej.',
+    },
+  },
+
+  {
+    id: 'unifiram',
+    name: 'Unifiram',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Ampakine (DM-232) — Sunifiram alkinil-variánsa, AMPA-PAM.',
+      en: 'Ampakine (DM-232) — alkynyl variant of Sunifiram, AMPA-PAM.',
+      pl: 'Ampakina (DM-232) — alkinyl-pochodna sunifiramu, AMPA-PAM.',
+    },
+    description: {
+      hu: 'Az Unifiram (DM-232) a Sunifiram (DM-235) tervezett alkinil-származéka, hasonló sub-mg in vivo aktivitással patkány anti-amnesztikus modellekben. Preklinikai jellemzése piracetam-szerű mechanizmust, de >1000× potencitást ír le. Humán adat egyáltalán nincs.',
+      en: 'Unifiram (DM-232) is a designed alkynyl analog of Sunifiram (DM-235), with similar sub-mg in vivo activity in rat anti-amnestic models. Preclinical characterization describes a Piracetam-like mechanism but >1000× potency. No human data exist.',
+      pl: 'Unifiram (DM-232) to zaprojektowany alkinyl-analog sunifiramu (DM-235), o podobnej aktywności in vivo poniżej miligrama w szczurzych modelach przeciwamnezyjnych. Charakterystyka przedkliniczna opisuje mechanizm piracetam-podobny, ale >1000× potencję. Brak danych u ludzi.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'AMPA-PAM (Sunifiram-szerű)', en: 'AMPA-PAM (Sunifiram-like)', pl: 'AMPA-PAM (podobnie do Sunifiramu)' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Nincs humán adat', en: 'No human data', pl: 'Brak danych u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Kísérleti, sehol jóváhagyva', en: 'Investigational, not approved', pl: 'Badawczy, nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'AMPA-receptor pozitív allosztérikus moduláció és valószínűleg NMDA glicin-hely indirekt aktiválás — a Sunifiramhoz hasonló profil, hasonló potencitással.',
+      en: 'AMPA receptor positive allosteric modulation and probable indirect NMDA glycine-site activation — a Sunifiram-like profile with similar potency.',
+      pl: 'Pozytywna modulacja allosteryczna receptora AMPA i prawdopodobna pośrednia aktywacja miejsca glicyny NMDA — profil podobny do sunifiramu z podobną potencją.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja; egyéb piacokon „research chemical".',
+      en: 'Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; “research chemical” elsewhere.',
+      pl: 'Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; „chemikalium badawcze” gdzie indziej.',
+    },
+  },
+
+  {
+    id: 'nooglutyl',
+    name: 'Nooglutyl',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Orosz AMPA-PAM kutatási vegyület — plaszticitás-fokozó.',
+      en: 'Russian AMPA-PAM research compound — plasticity enhancer.',
+      pl: 'Rosyjski związek badawczy AMPA-PAM — wzmacniacz plastyczności.',
+    },
+    description: {
+      hu: 'A Nooglutyl (NSG, 1-(N-glutamil)-piperidin) az Orosz Tudományos Akadémia Farmakológiai Intézetében (Moszkva) fejlesztett kísérleti vegyület. Anti-amnesztikus és AMPA-PAM aktivitást írtak le állat-modellekben; az „endogén glutamát-rendszer" pozitív modulátorának nevezik a kutatók. Humán Phase nincs, nyugati piacon nem létezik.',
+      en: 'Nooglutyl (NSG, 1-(N-glutamyl)-piperidine) is an experimental compound developed at the Pharmacology Institute of the Russian Academy of Sciences (Moscow). Anti-amnestic and AMPA-PAM activity have been described in animal models; researchers describe it as a positive modulator of the “endogenous glutamate system”. No human Phase data; absent from Western markets.',
+      pl: 'Nooglutyl (NSG, 1-(N-glutamylo)-piperydyna) to eksperymentalny związek opracowany w Instytucie Farmakologii Rosyjskiej Akademii Nauk (Moskwa). W modelach zwierzęcych opisano aktywność przeciwamnezyjną i AMPA-PAM; badacze opisują go jako pozytywny modulator „endogennego systemu glutaminergicznego”. Brak danych z fazy u ludzi; nieobecny na rynkach zachodnich.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'AMPA-PAM (glutamáterg)', en: 'AMPA-PAM (glutamatergic)', pl: 'AMPA-PAM (glutaminergiczny)' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Nincs publikált humán adat', en: 'No published human data', pl: 'Brak opublikowanych danych u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Csak orosz preklinikai kutatás', en: 'Russian preclinical only', pl: 'Tylko rosyjskie badania przedkliniczne' } },
+    ],
+    mechanism: {
+      hu: 'AMPA-receptor pozitív moduláció és glutamáterg LTP-fokozás állat-modellekben; pontos kötőhely nem teljes mértékben jellemzett a nyugati irodalomban.',
+      en: 'AMPA receptor positive modulation and glutamatergic LTP enhancement in animal models; the precise binding site is not fully characterized in Western literature.',
+      pl: 'Pozytywna modulacja receptora AMPA i wzmocnienie glutaminergicznego LTP w modelach zwierzęcych; dokładne miejsce wiązania nie jest w pełni scharakteryzowane w literaturze zachodniej.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. Orosz akadémiai kutatási vegyület, nyugati OTC piacon ritkán „research chemical" minősítéssel.',
+      en: 'Not approved as a medicine anywhere. Russian academic research compound, rarely seen on Western OTC markets as a “research chemical”.',
+      pl: 'Nigdzie nie zatwierdzony jako lek. Rosyjski akademicki związek badawczy, rzadko spotykany na zachodnich rynkach OTC jako „chemikalium badawcze”.',
+    },
+  },
 ]
