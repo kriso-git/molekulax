@@ -95,6 +95,18 @@
  * @property {I18nString}         [detectionWindow]  Sport-doping detection window (urine/blood).
  * @property {string}             [halfLifeActive]   Active metabolite half-life when parent vs metabolite differ.
  * @property {BloodworkProtocol}  [bloodwork]        Structured bloodwork protocol; renders BloodworkProtocol component.
+ * @property {DoseCalc}           [doseCalc]         Per-entry dose helper; renders PerformanceCalculator component.
+ */
+
+/**
+ * @typedef {Object} DoseCalc
+ * @property {'bodyweight'|'fixed'|'titration'|'warning'} type
+ * @property {{low: number, medium: number, high: number}} [perKg]   Bodyweight type, per-kg dose values.
+ * @property {{low: number, medium: number, high: number}} [fixed]   Fixed type, absolute dose values.
+ * @property {Array<{phase: I18nString, dose: number}>} [titration]  Titration type, phase-based ramp table.
+ * @property {string} [unit]                                          Dose unit, e.g. "mg/hét", "mcg/nap", "IU/hét".
+ * @property {I18nString} [warning]                                   Warning type, no-dose message.
+ * @property {I18nString} [note]                                      Optional per-entry context note shown below the result.
  */
 
 /**

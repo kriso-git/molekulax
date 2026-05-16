@@ -121,6 +121,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Veszélyes-e a TRT hosszú távon?', en: 'Is TRT dangerous long-term?', pl: 'Czy TRT jest niebezpieczne długoterminowo?' }, a: { hu: 'Megfelelő monitoringgal (lipid, hematokrit, PSA, E2) hipogonád férfiaknál a kockázat-haszon kedvező. Hosszú távú TRT-cohortokban a kardiovaszkuláris kockázat nem haladta meg a kontrollokét (Bhasin 2018 guideline).', en: 'With proper monitoring (lipid, hematocrit, PSA, E2) the risk-benefit is favorable in hypogonadal men. In long-term TRT cohorts cardiovascular risk did not exceed controls (Bhasin 2018 guideline).', pl: 'Przy odpowiednim monitorowaniu (lipidy, hematokryt, PSA, E2) bilans korzyść-ryzyko jest korzystny u mężczyzn z hipogonadyzmem. W długoterminowych kohortach TRT ryzyko sercowo-naczyniowe nie przekraczało kontroli (Bhasin 2018).' } },
     ],
     related: ['trenbolone-info', 'anavar-info', 'winstrol-info', 'nandrolone-info', 'dianabol-info'],
+    doseCalc: {
+      type: 'bodyweight',
+      perKg: { low: 1.5, medium: 3.0, high: 5.0 },
+      unit: 'mg/hét',
+      note: {
+        hu: 'TRT (orvos által felírva) jellemzően 100-200 mg/hét, az Alacsony tartomány közelében. Sport-AAS-ciklus 300-500+ mg/hét, csak orvosi felügyelet és bloodwork mellett. Heti dózist tipikusan 2x EOD vagy 1x heti injekcióra osztják.',
+        en: 'TRT (physician-prescribed) is typically 100-200 mg/week, near the Low range. Sport AAS cycles 300-500+ mg/week, only with medical supervision and bloodwork. The weekly dose is typically split into 2x EOD or 1x weekly injection.',
+        pl: 'TRT (przepisana przez lekarza) zwykle 100-200 mg/tydzień, blisko zakresu Niska. Cykle AAS w sporcie 300-500+ mg/tydzień, wyłącznie pod nadzorem lekarza. Dawkę tygodniową dzieli się zwykle na 2x EOD lub 1x tygodniowo.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label:   { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -254,6 +264,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Lehet-e első ciklusként Tren?', en: 'Can Tren be a first cycle?', pl: 'Czy Tren może być pierwszym cyklem?' }, a: { hu: 'Soha. A Tren önállóan szexuális diszfunkciót, súlyos vérnyomás-emelkedést, vesekárosodást és pszichés instabilitást okozhat. Minden komoly forrás (Bhasin, Pope, Kanayama review) ellenjavalja első ciklusként; TRT-alap és bizonyított testosterone-tolerancia szükséges.', en: 'Never. Tren alone can cause sexual dysfunction, severe BP rise, renal damage, and psychiatric instability. All serious sources (Bhasin, Pope, Kanayama reviews) contraindicate it as a first cycle; TRT base and proven testosterone tolerance are required.', pl: 'Nigdy. Sam Tren może powodować dysfunkcje seksualne, poważny wzrost ciśnienia, uszkodzenie nerek i niestabilność psychiczną. Wszystkie poważne źródła (Bhasin, Pope, Kanayama) przeciwwskazują jako pierwszy cykl; wymagana baza TRT i udowodniona tolerancja testosteronu.' } },
     ],
     related: ['testosterone-info', 'anavar-info', 'winstrol-info', 'nandrolone-info', 'dianabol-info'],
+    doseCalc: {
+      type: 'bodyweight',
+      perKg: { low: 0.6, medium: 1.5, high: 2.5 },
+      unit: 'mg/hét',
+      note: {
+        hu: 'Tren Acetát (rövidebb-hatású észter) jellemzően 50 mg EOD = 175 mg/hét. Tren Enantát hosszabb-hatású, heti 1-2 injekció. A Tren erősebben anabolikus mint a Testosterone, de kardiovaszkuláris + renal-kockázata is jelentősen magasabb. Soha NE használj egyszerre Trent + Dianabol-t (extrém kardio-stressz).',
+        en: 'Tren Acetate (shorter ester) typically 50 mg EOD = 175 mg/week. Tren Enanthate is longer-acting, 1-2 injections/week. Tren is more anabolic than Testosterone but cardiovascular + renal risk is significantly higher. Never combine Tren with Dianabol (extreme cardio stress).',
+        pl: 'Tren Acetate (krótszy ester) zwykle 50 mg EOD = 175 mg/tydzień. Tren Enanthate dłużej działający, 1-2 iniekcje/tydzień. Tren jest bardziej anaboliczny niż testosteron, ale ryzyko sercowe + nerkowe znacznie wyższe. Nigdy nie łącz Trenu z Dianabolem.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label:   { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -387,6 +407,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Szuppresszálja-e a természetes T-termelést?', en: 'Does it suppress natural T production?', pl: 'Czy hamuje naturalną produkcję T?' }, a: { hu: 'Igen, dózis-függően. 20-50 mg/nap mellett 6 hét után 40-60% HPTA-szuppresszió dokumentált. Férfiaknál PCT (Clomid/Nolvadex) szükséges; női használatnál nem releváns.', en: 'Yes, dose-dependently. At 20-50 mg/day after 6 weeks, 40-60% HPTA suppression is documented. PCT (Clomid/Nolvadex) is required for men; not relevant for female use.', pl: 'Tak, zależnie od dawki. Przy 20-50 mg/dzień po 6 tygodniach udokumentowana supresja HPTA 40-60%. PCT (Clomid/Nolvadex) wymagane u mężczyzn; nie dotyczy kobiet.' } },
     ],
     related: ['testosterone-info', 'trenbolone-info', 'winstrol-info', 'nandrolone-info', 'dianabol-info'],
+    doseCalc: {
+      type: 'bodyweight',
+      perKg: { low: 0.3, medium: 0.7, high: 1.2 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Női 5-10 mg/nap (Alacsony tartomány), férfi 30-80 mg/nap. Max 8 hét ciklus a hepatotoxicitás miatt. Naponta 2-3x felosztott dózis a rövid felezési idő (9 óra) miatt. Az enyhébb 17α-alkilált AAS, de máj-monitoring akkor is kötelező.',
+        en: 'Female 5-10 mg/day (Low range), male 30-80 mg/day. Max 8 week cycle due to hepatotoxicity. Split into 2-3 daily doses given the 9 h half-life. Among the milder 17α-alkylated AAS, but liver monitoring is still mandatory.',
+        pl: 'Kobiety 5-10 mg/dzień (Niska), mężczyźni 30-80 mg/dzień. Maks. 8 tygodni z powodu hepatotoksyczności. 2-3 dawki dziennie z powodu okresu półtrwania 9 h.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label:   { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -518,6 +548,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Mit jelez, ha az ALT/AST 3x felső normál?', en: 'What does ALT/AST 3x upper normal indicate?', pl: 'Co oznacza ALT/AST 3x górnej normy?' }, a: { hu: 'Jelentős hepatocelluláris károsodás. Ciklus AZONNALI megszakítása, TUDCA dózisemelés 1000 mg/nap, NAC 1800 mg/nap, hidratáció, és 2 héttel későbbi újratesztelés. Ha nem normalizálódik vagy bilirubin emelkedik, hepatológus konzultáció.', en: 'Significant hepatocellular damage. IMMEDIATE cycle interruption, TUDCA dose increase to 1000 mg/day, NAC 1800 mg/day, hydration, retest in 2 weeks. If not normalized or bilirubin rises, consult hepatologist.', pl: 'Znaczące uszkodzenie hepatocelularne. NATYCHMIASTOWE przerwanie cyklu, zwiększenie TUDCA do 1000 mg/dzień, NAC 1800 mg/dzień, nawodnienie, ponowny test za 2 tygodnie. Jeśli nie normalizuje się lub bilirubina rośnie, konsultacja hepatologiczna.' } },
     ],
     related: ['1-andro', 'methylstenbolone', 'anavar-info', 'dianabol-info', 'testosterone-info'],
+    doseCalc: {
+      type: 'fixed',
+      fixed: { low: 10, medium: 20, high: 30 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Maximum 4 hét ciklus, NIKADA tovább. TUDCA 500-750 mg/nap + NAC 1200 mg/nap a teljes ciklus alatt. ALT/AST 3x felső normál esetén AZONNAL leállítás. PCT (Clomid + Nolvadex 4 hét) kötelező.',
+        en: 'Maximum 4 week cycle, never longer. TUDCA 500-750 mg/day + NAC 1200 mg/day throughout. ALT/AST 3x upper normal = IMMEDIATE stop. PCT (Clomid + Nolvadex 4 weeks) mandatory.',
+        pl: 'Maks. 4-tygodniowy cykl, nigdy dłużej. TUDCA 500-750 mg/dzień + NAC 1200 mg/dzień. ALT/AST 3x normy = natychmiastowe zatrzymanie. PCT obowiązkowe.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label:   { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -644,6 +684,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Megéri-e a Testosterone-injekciók helyett?', en: 'Is it worth choosing over injectable Testosterone?', pl: 'Czy warto zamiast iniekcyjnego testosteronu?' }, a: { hu: 'Nem. Az 1-Andro orális (hepatikus terhelés), HPTA-szuppresszáló, és csak ~50%-os bioavailability-vel rendelkezik. A Testosterone-injekciók kontrollált TRT-keretben (orvosi felügyelet alatt) biztonságosabbak, de Magyarországon csak hipogonadizmus dokumentált diagnózisával írható fel.', en: 'No. 1-Andro is oral (hepatic load), HPTA-suppressive, with only ~50% bioavailability. Injectable Testosterone in controlled TRT context (medical supervision) is safer, but in Hungary only prescribed with documented hypogonadism diagnosis.', pl: 'Nie. 1-Andro jest doustny (obciążenie wątroby), tłumi HPTA, z biodostępnością ~50%. Iniekcyjny testosteron w ramach TRT (nadzór medyczny) jest bezpieczniejszy, ale w HU/PL przepisywany tylko przy udokumentowanej hipogonadyzmie.' } },
     ],
     related: ['superdrol', 'methylstenbolone', 'anavar-info', 'testosterone-info'],
+    doseCalc: {
+      type: 'fixed',
+      fixed: { low: 100, medium: 200, high: 330 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Hi-Tech Pharmaceuticals 1-Andro kapszula formátumban (50-100 mg) tipikus. Maximum 8 hét ciklus, utána minimum 8 hét OFF. TUDCA 500 mg/nap májvédő. PCT (Clomid + Nolvadex 4 hét) szükséges.',
+        en: 'Hi-Tech Pharmaceuticals 1-Andro is typically in capsule format (50-100 mg). Max 8 week cycle, then min 8 weeks OFF. TUDCA 500 mg/day liver support. PCT (Clomid + Nolvadex 4 weeks) needed.',
+        pl: 'Hi-Tech Pharmaceuticals 1-Andro w kapsułkach (50-100 mg). Maks. 8 tygodni, potem min. 8 tygodni OFF. TUDCA 500 mg/dzień. PCT wymagane.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label:   { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -762,6 +812,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Szükséges-e bloodwork ehhez?', en: 'Is bloodwork needed for this?', pl: 'Czy potrzebne badania krwi?' }, a: { hu: 'Strukturált bloodwork-protokoll nem szükséges, mint AAS-eknél. De vérnyomás napló otthon (cél: <140/90), nyugalmi pulzus <100, és 6 hetes ciklus után 1 EKG ajánlott. Pajzsmirigy-funkció (TSH, fT3, fT4) ellenőrzés ECA-stack előtt.', en: 'Structured bloodwork protocol not needed like for AAS. But home blood pressure log (target <140/90), resting heart rate <100, and 1 EKG after 6 weeks recommended. Thyroid function (TSH, fT3, fT4) check before ECA stack.', pl: 'Strukturyzowany protokół badań krwi niepotrzebny jak przy AAS. Ale dziennik ciśnienia w domu (cel <140/90), tętno spoczynkowe <100, i 1 EKG po 6 tygodniach zalecane. Funkcja tarczycy (TSH, fT3, fT4) przed ECA.' } },
     ],
     related: ['yohimbine', 'clenbuterol', 'albuterol'],
+    doseCalc: {
+      type: 'fixed',
+      fixed: { low: 25, medium: 50, high: 75 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'ECA-stack klasszikus: 25 mg ephedrine + 200 mg caffeine + 81-325 mg aspirin, napi 2-3x. Délután 4 óra után NE szedd (insomnia). Maximum 6-8 hét folyamatos használat. Vérnyomás napló otthon kötelező.',
+        en: 'Classic ECA stack: 25 mg ephedrine + 200 mg caffeine + 81-325 mg aspirin, 2-3x/day. Do not take after 4 PM (insomnia). Max 6-8 weeks continuous use. Home blood pressure log mandatory.',
+        pl: 'Klasyczny stos ECA: 25 mg efedryny + 200 mg kofeiny + 81-325 mg aspiryny, 2-3x/dziennie. Nie po 16:00. Maks. 6-8 tygodni. Dziennik ciśnienia obowiązkowy.',
+      },
+    },
   },
 
   // ===== 7. YOHIMBINE =====
@@ -852,6 +912,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Miért NE szedjem étkezés után?', en: 'Why not take it after eating?', pl: 'Dlaczego nie po jedzeniu?' }, a: { hu: 'A postprandiális inzulin az α2-receptor anti-lipolítikus jelet erősíti, ami a yohimbine α2-antagonista hatását kioltja. Éhgyomorra (vagy reggel ébredés után) a hatás akár 2-3x erősebb lehet.', en: 'Postprandial insulin amplifies the α2-receptor anti-lipolytic signal, neutralizing Yohimbine α2-antagonist effect. Fasted (or morning after waking) the effect can be 2-3x stronger.', pl: 'Insulina poposiłkowa wzmacnia anty-lipolityczny sygnał α2, neutralizując efekt yohimbiny. Na czczo (lub rano po wstaniu) efekt może być 2-3x silniejszy.' } },
     ],
     related: ['ephedrine', 'clenbuterol'],
+    doseCalc: {
+      type: 'bodyweight',
+      perKg: { low: 0.1, medium: 0.2, high: 0.4 },
+      unit: 'mg/nap',
+      note: {
+        hu: '0.2 mg/kg testtömeg tipikus dózis: 60 kg-nak 12 mg, 80 kg-nak 16 mg. Éhgyomorra, edzés előtt 30-45 perccel (inzulin gátolja a hatást). Maximum 3-4 hét folyamatos használat. Magas dózison (>0.4 mg/kg) hányinger gyakori.',
+        en: '0.2 mg/kg body weight typical: 12 mg for 60 kg person, 16 mg for 80 kg. On empty stomach, 30-45 min pre-workout (insulin blocks effect). Max 3-4 weeks continuous use. Nausea common at high dose (>0.4 mg/kg).',
+        pl: '0.2 mg/kg masy ciała typowo: 12 mg dla 60 kg, 16 mg dla 80 kg. Na czczo, 30-45 min przed treningiem. Maks. 3-4 tygodnie. Mdłości przy wysokiej dawce.',
+      },
+    },
   },
 
   // ===== 8. CLENBUTEROL =====
@@ -949,6 +1019,23 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Miért NE pulzál a saját pulzusod >100?', en: 'Why should resting pulse not exceed 100?', pl: 'Dlaczego puls spoczynkowy nie powinien przekraczać 100?' }, a: { hu: 'A tartós nyugalmi tachykardia (>100 bpm) krónikus β1-stimuláció jele, ami szívizom-stresszt okoz. >100 bpm fennállása esetén dóziscsökkentés vagy ciklus-megszakítás indikálva.', en: 'Persistent resting tachycardia (>100 bpm) signals chronic β1 stimulation causing cardiac muscle stress. If >100 bpm persists, dose reduction or cycle interruption is indicated.', pl: 'Stała tachykardia spoczynkowa (>100 bpm) sygnalizuje przewlekłą stymulację β1 wywołującą stres mięśnia sercowego. Przy utrzymującym się >100 bpm wskazane zmniejszenie dawki lub przerwa.' } },
     ],
     related: ['albuterol', 'ephedrine', 'yohimbine'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1, 1. nap', en: 'Week 1, day 1', pl: 'Tydzień 1, dzień 1' }, dose: 20 },
+        { phase: { hu: 'Hét 1, 3. nap', en: 'Week 1, day 3', pl: 'Tydzień 1, dzień 3' }, dose: 40 },
+        { phase: { hu: 'Hét 1, 5-7. nap', en: 'Week 1, day 5-7', pl: 'Tydzień 1, dzień 5-7' }, dose: 60 },
+        { phase: { hu: 'Hét 2', en: 'Week 2', pl: 'Tydzień 2' }, dose: 80 },
+        { phase: { hu: 'Hét 3-4', en: 'Week 3-4', pl: 'Tydzień 3-4' }, dose: 100 },
+        { phase: { hu: 'Hét 5-6 (csúcs)', en: 'Week 5-6 (peak)', pl: 'Tydzień 5-6 (szczyt)' }, dose: 120 },
+      ],
+      unit: 'mcg/nap',
+      note: {
+        hu: 'Dose-titrating a 35-40 órás felezési idő miatt: +20 mcg/nap minden 2-3 napban. Maximum 120-140 mcg/nap, 6-8 hét OFF + ketotifen 1-2 mg lefekvés előtt receptor down-regulation gátlására. Taurin 3 g + magnézium 2 g/nap az izomgörcsökre. Vérnyomás napló otthon, EKG 6 hét után.',
+        en: 'Dose-titrating due to 35-40 h half-life: +20 mcg/day every 2-3 days. Max 120-140 mcg/day, 6-8 weeks then OFF + ketotifen 1-2 mg at bedtime to block receptor down-regulation. Taurine 3 g + magnesium 2 g/day for muscle cramps. Home BP log, EKG after 6 weeks.',
+        pl: 'Tytracja dawki: +20 mcg/dzień co 2-3 dni. Maks. 120-140 mcg/dzień. Tauryna 3 g + magnez 2 g/dzień. Dziennik ciśnienia, EKG po 6 tygodniach.',
+      },
+    },
   },
 
   // ===== 9. ALBUTEROL (Salbutamol) =====
@@ -1045,6 +1132,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Tényleg biztonságosabb mint Clen?', en: 'Is it really safer than Clen?', pl: 'Czy jest naprawdę bezpieczniejszy niż Clen?' }, a: { hu: 'Igen, dokumentáltan. A rövidebb felezési idő miatt nem akkumulálódik, így a kardiotoxikus hosszú-távú hatások jelentősen csökkennek. Klinikai esetszinten az Albuterol intoxikáció rendkívül ritka még magas dózison is, míg Clenbuterol-mérgezés és kardiomiopátia esetek dokumentáltak (Hoffman 2008).', en: 'Yes, documented. Shorter half-life prevents accumulation, significantly reducing cardiotoxic long-term effects. Albuterol intoxication is extremely rare clinically even at high doses, while Clenbuterol toxicity and cardiomyopathy cases are documented (Hoffman 2008).', pl: 'Tak, udokumentowane. Krótszy okres półtrwania zapobiega kumulacji. Intoksykacja Albuterolem jest klinicznie bardzo rzadka nawet przy wysokich dawkach, podczas gdy toksyczność i kardiomiopatia od Clenbuterolu są udokumentowane.' } },
     ],
     related: ['clenbuterol', 'ephedrine'],
+    doseCalc: {
+      type: 'fixed',
+      fixed: { low: 4, medium: 8, high: 16 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Oral 4-8 mg 3x/nap (Clen-szerű ciklus), max 24 mg/nap. Inhaler 90-200 mcg/szippantás, WADA-szintnél max 1600 mcg/24 óra megengedett. Albuterol biztonságosabb mint a Clenbuterol a rövidebb felezési idő miatt (~5-6 óra), így nem akkumulálódik.',
+        en: 'Oral 4-8 mg 3x/day (Clen-like cycle), max 24 mg/day. Inhaler 90-200 mcg/puff; at WADA level max 1600 mcg/24 h permitted. Albuterol is safer than Clenbuterol due to shorter half-life (~5-6 h), no accumulation.',
+        pl: 'Doustnie 4-8 mg 3x/dziennie, maks. 24 mg/dzień. Inhalator 90-200 mcg/dawka. Bezpieczniejszy niż Clenbuterol z powodu krótszego okresu półtrwania.',
+      },
+    },
   },
 
   // ===== 10. MK-677 (Ibutamoren) =====
@@ -1138,6 +1235,16 @@ export const CORE_PERFORMANCE = [
       { q: { hu: 'Tényleg javítja a mély alvást?', en: 'Does it really improve deep sleep?', pl: 'Czy naprawdę poprawia głęboki sen?' }, a: { hu: 'Igen. A Copinschi 1997 (Sleep) vizsgálat polysomnographiával dokumentálta a slow-wave alvás 50%-os emelését és REM-fázis 20%-os emelését MK-677-en. Ez a ghrelin-szerű GHRP-hatás direkt következménye, és gyakran az első észlelhető szubjektív hatás (1-2 hét után).', en: 'Yes. Copinschi 1997 (Sleep) polysomnography study documented a 50% slow-wave sleep elevation and 20% REM phase elevation on MK-677. This is a direct consequence of the ghrelin-like GHRP effect, and often the first noticeable subjective effect (after 1-2 weeks).', pl: 'Tak. Badanie Copinschi 1997 polisomnografią udokumentowało 50% wzrost snu wolnofalowego i 20% wzrost fazy REM. To bezpośredni efekt grelino-podobny GHRP, często pierwszy zauważalny subiektywny efekt.' } },
     ],
     related: ['testosterone-info', 'anavar-info', 'hgh-info'],
+    doseCalc: {
+      type: 'fixed',
+      fixed: { low: 10, medium: 17.5, high: 25 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Lefekvés előtt 30-60 perccel a természetes GH-csúcs szinergiájához. Ciklus 8-16 hét, utána 4-8 hét OFF az IGF-1 baseline-ra visszatéréshez. Vízretenció enyhe (+1-2 kg), HbA1c emelkedés várható (0.2-0.5%). Prediabetes vagy inzulin-rezisztencia kontraindikáció.',
+        en: '30-60 min before bedtime to synergize with natural GH peak. Cycle 8-16 weeks, then 4-8 weeks OFF for IGF-1 baseline return. Mild water retention (+1-2 kg), HbA1c rise expected (0.2-0.5%). Prediabetes or insulin resistance is a contraindication.',
+        pl: '30-60 min przed snem. Cykl 8-16 tygodni, potem 4-8 tygodni OFF. Lekka retencja wody, wzrost HbA1c. Stan przedcukrzycowy = przeciwwskazanie.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label:   { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -1207,6 +1314,16 @@ export const EXTRA_PERFORMANCE = [
       { title: 'Adverse health consequences of performance-enhancing drugs', authors: 'Pope HG Jr, Wood RI, Rogol A et al.', journal: 'Endocr Rev. 2014;35(3):341-375.', pmid: '24423981' },
     ],
     related: ['testosterone-info', 'trenbolone-info', 'anavar-info'],
+    doseCalc: {
+      type: 'bodyweight',
+      perKg: { low: 0.4, medium: 0.7, high: 1.0 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Oral 30-80 mg/nap (Alacsony-Magas tartomány), injekciós Winstrol Depot 50 mg EOD. SHBG-szuppressziós hatása miatt szabad T-frakció emelkedik. Hepatotoxicitás magas (17α-alkilált). Maximum 6-8 hét ciklus. PCT szükséges.',
+        en: 'Oral 30-80 mg/day (Low-High range), injectable Winstrol Depot 50 mg EOD. SHBG suppression raises free T fraction. High hepatotoxicity (17α-alkylated). Max 6-8 week cycle. PCT needed.',
+        pl: 'Doustnie 30-80 mg/dzień, iniekcyjnie 50 mg EOD. Wysoka hepatotoksyczność. Maks. 6-8 tygodni. PCT wymagane.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label: { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -1284,6 +1401,16 @@ export const EXTRA_PERFORMANCE = [
       { title: 'Anabolic steroid use and erectile dysfunction', authors: 'Coward RM, Rajanahally S, Kovac JR et al.', journal: 'J Urol. 2013;190(6):2200-2205.', pmid: '23764081' },
     ],
     related: ['testosterone-info', 'trenbolone-info'],
+    doseCalc: {
+      type: 'bodyweight',
+      perKg: { low: 2, medium: 4, high: 6 },
+      unit: 'mg/hét',
+      note: {
+        hu: 'Deca-bridge 100-150 mg/hét (Alacsony tartomány alatti), bulking 300-600 mg/hét. Decanoate-észter 15 napos felezési idejű, heti 1x injekció elegendő. "Deca-dick" libidó-csökkenés prevenció: cabergoline 0.25 mg 2x/hét + Testosterone-bázis együtt. Prolactin-monitoring kötelező.',
+        en: 'Deca-bridge 100-150 mg/week (below Low range), bulking 300-600 mg/week. Decanoate ester has 15-day half-life, 1x weekly injection sufficient. "Deca-dick" libido drop prevention: cabergoline 0.25 mg 2x/week + Testosterone base. Prolactin monitoring mandatory.',
+        pl: 'Deca-bridge 100-150 mg/tydzień, bulking 300-600 mg/tydzień. Ester dekanowy 15-dniowy. Prolaktyna obowiązkowo monitorowana.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label: { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -1361,6 +1488,16 @@ export const EXTRA_PERFORMANCE = [
       { title: 'Anabolic steroid cardiovascular toxicity', authors: 'Baggish AL, Weiner RB, Kanayama G et al.', journal: 'Circulation. 2017;135(21):1991-2002.', pmid: '28533317' },
     ],
     related: ['testosterone-info', 'anavar-info', 'trenbolone-info'],
+    doseCalc: {
+      type: 'fixed',
+      fixed: { low: 20, medium: 30, high: 50 },
+      unit: 'mg/nap',
+      note: {
+        hu: '"Kickstart" 4-6 hét, hosszabb-hatású injekciós AAS-ek mellé. Naponta 2-3x felosztott dózis a rövid felezési idő (3-6 óra) miatt. Aromatáz-inhibitor (anastrozol 0.5 mg EOD) gyakran szükséges az E2-emelkedés miatt. TUDCA 500-750 mg/nap májvédő.',
+        en: '"Kickstart" 4-6 weeks alongside longer-acting injectable AAS. 2-3 daily doses given the 3-6 h half-life. Aromatase inhibitor (anastrozole 0.5 mg EOD) often needed for E2 rise. TUDCA 500-750 mg/day liver support.',
+        pl: '"Kickstart" 4-6 tygodni. 2-3 dawki dziennie. Inhibitor aromatazy często wymagany. TUDCA 500-750 mg/dzień.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label: { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -1431,6 +1568,16 @@ export const EXTRA_PERFORMANCE = [
       { title: 'Designer steroids in dietary supplements', authors: 'Geyer H, Schänzer W, Thevis M.', journal: 'Mol Cell Endocrinol. 2014;464:99-108.', pmid: '24882754' },
     ],
     related: ['superdrol', '1-andro'],
+    doseCalc: {
+      type: 'fixed',
+      fixed: { low: 4, medium: 8, high: 16 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Maximum 4 hét ciklus, nem hosszabb. Két napra felosztott dózis a 8-12 órás felezési idő miatt. 17α-metilezett orális, ALT/AST >2x emelkedés esetén AZONNAL leállítás. TUDCA 750 mg/nap kötelező. PCT (Clomid + Nolvadex) szükséges.',
+        en: 'Max 4 week cycle, no longer. Split into 2 daily doses given 8-12 h half-life. 17α-methylated oral; ALT/AST >2x rise = IMMEDIATE stop. TUDCA 750 mg/day mandatory. PCT (Clomid + Nolvadex) needed.',
+        pl: 'Maks. 4 tygodnie. 2 dawki dziennie. ALT/AST >2x = natychmiast stop. TUDCA 750 mg/dzień.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label: { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -1508,6 +1655,16 @@ export const EXTRA_PERFORMANCE = [
       { title: 'Acromegaly: clinical features and management', authors: 'Melmed S.', journal: 'N Engl J Med. 2006;355(24):2558-2573.', pmid: '17167139' },
     ],
     related: ['mk-677', 'testosterone-info'],
+    doseCalc: {
+      type: 'bodyweight',
+      perKg: { low: 0.025, medium: 0.05, high: 0.075 },
+      unit: 'IU/nap',
+      note: {
+        hu: 'Anti-aging 2 IU/nap (Alacsony tartomány körül), sport 4-6 IU/nap (Közepes). Hosszú-távú használat akromegáliához + szívizom-hipertrófiához vezet. Reggel ébredés után vagy edzés előtt 30 perccel SC injekció. IGF-1 célérték <800 ng/mL. HbA1c monitoring kötelező.',
+        en: 'Anti-aging 2 IU/day (around Low), sport 4-6 IU/day (Medium). Long-term use leads to acromegaly + cardiac hypertrophy. SC injection in the morning or 30 min pre-workout. IGF-1 target <800 ng/mL. HbA1c monitoring mandatory.',
+        pl: 'Anti-aging 2 IU/dzień, sport 4-6 IU/dzień. Długoterminowo akromegalia. IGF-1 cel <800 ng/mL. HbA1c monitoring.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label: { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -1579,6 +1736,16 @@ export const EXTRA_PERFORMANCE = [
       { title: 'Blood doping at the Olympics', authors: 'Eichner ER.', journal: 'Curr Sports Med Rep. 2007;6(4):237-238.', pmid: '17617999' },
     ],
     related: ['testosterone-info'],
+    doseCalc: {
+      type: 'bodyweight',
+      perKg: { low: 20, medium: 50, high: 100 },
+      unit: 'IU/hét',
+      note: {
+        hu: 'Klinikai vesebetegség-dózis: 50-100 IU/kg/hét, 2-3x felosztott SC injekciókban. Sport-doppingként alacsonyabb (mikrodose 20-30 IU/kg) is használt a detekciós ablak kerülésére. Hematokrit >55% = thromboticus krízis-kockázat, AZONNAL leállítás. Vas-pótlás kötelező.',
+        en: 'Clinical renal disease dose: 50-100 IU/kg/week, 2-3 split SC injections. Sport doping micro-dose 20-30 IU/kg also used to evade detection. Hematocrit >55% = thrombotic crisis risk, STOP immediately. Iron supplementation mandatory.',
+        pl: 'Klinicznie 50-100 IU/kg/tydzień. Hematokryt >55% = ryzyko zakrzepowe. Suplementacja żelaza obowiązkowa.',
+      },
+    },
     bloodwork: {
       preCycle: {
         label: { hu: 'Ciklus előtt', en: 'Pre-cycle', pl: 'Przed cyklem' },
@@ -1643,6 +1810,14 @@ export const EXTRA_PERFORMANCE = [
       { title: 'Death from accidental 2,4-dinitrophenol poisoning', authors: 'Pyle SA, Cooke G.', journal: 'JAMA. 1934;103(20):1571.', pmid: null },
     ],
     related: [],
+    doseCalc: {
+      type: 'warning',
+      warning: {
+        hu: 'NE HASZNÁLD. A DNP használata dokumentáltan halálos kimenetelű hipertermia-eseteket okoz (Grundlingh 2011). NINCS biztonságos dózis. Ha valaki ismerősöd használja, azonnal figyelmeztesd és kérje sürgős orvosi segítséget. Hipertermia (>40°C) tünetei: izzadás, tachykardia, tachypnoe, zavartság. 4.3 mg/kg akut letális dózis felnőttben.',
+        en: 'DO NOT USE. DNP use causes documented fatal hyperthermia cases (Grundlingh 2011). There is NO safe dose. If you know someone using it, warn them immediately and seek urgent medical attention. Hyperthermia (>40°C) symptoms: sweating, tachycardia, tachypnea, confusion. 4.3 mg/kg acute lethal dose in adult.',
+        pl: 'NIE STOSUJ. DNP powoduje udokumentowane przypadki śmiertelnej hipertermii (Grundlingh 2011). NIE MA bezpiecznej dawki. Jeśli ktoś znajomy stosuje, ostrzeż go natychmiast i wezwij pomoc medyczną. Hipertermia (>40°C). Dawka śmiertelna 4.3 mg/kg.',
+      },
+    },
   },
 ]
 

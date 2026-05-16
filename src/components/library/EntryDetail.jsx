@@ -21,6 +21,7 @@ import { useLibrary } from '../../context/LibraryContext'
 import TelegramButtons from '../TelegramButtons'
 import MiniCalc from '../MiniCalc'
 import BloodworkProtocol from './BloodworkProtocol'
+import PerformanceCalculator from './PerformanceCalculator'
 
 const TIER_META = {
  5: { label: { hu: 'Engedélyezett', en: 'Approved', pl: 'Zatwierdzony' },
@@ -1346,6 +1347,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  const { theme } = useTheme()
  const { library } = useLibrary()
  const isLight = theme === 'light'
+ const hasCalc = (library?.id === 'peptides' && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg)
+ || (library?.id === 'performance' && peptide.doseCalc)
  const relatedLabel = library?.labels?.relatedLabel ? tr(library.labels.relatedLabel) : (t('entry.rel.label') || 'Kapcsolódó peptidek')
  const [tab, setTab] = useState('molecular')
  const [entered, setEntered] = useState(false)
@@ -1516,6 +1519,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
  {/* Primary CTA + Telegram HU/PL pair */}
  <div className="flex flex-wrap items-center gap-3">
+ {hasCalc && (
  <button
  ref={magnetRef}
  onClick={() => {
@@ -1538,6 +1542,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {t('entry.cta.calc') || 'Dózis kalkulátor'}
  <ChevronRight size={15} strokeWidth={2.5} className="group-hover:translate-x-1 transition-transform" />
  </button>
+ )}
  <TelegramButtons />
  </div>
  </div>
@@ -1796,6 +1801,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {t('entry.rec.title') || 'Hogyan készítsd elő, lépésről lépésre'}
  </h3>
  </div>
+ {hasCalc && (
  <button
  onClick={() => {
  const calc = document.getElementById('v2-calc')
@@ -1811,6 +1817,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  <Calculator size={11} strokeWidth={2.5} />
  {t('entry.cta.calc') || 'Kalkulátor'}
  </button>
+ )}
  </div>
  <div
  className="relative p-5 rounded-2xl mb-3 flex items-start gap-3"
@@ -2013,8 +2020,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </section>
  )}
 
- {/* ─── MINI CALC ─── (peptide-only: hidden if no reconstitution defaults) */}
- {peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg && (
+ {/* ─── CALCULATOR ─── library-aware: peptide=MiniCalc, performance=PerformanceCalculator, nootropic=none */}
+ {library?.id === 'peptides' && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg && (
  <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
  <div
@@ -2031,6 +2038,12 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  />
  </div>
  </section>
+ )}
+
+ {library?.id === 'performance' && peptide.doseCalc && (
+ <div id="v2-calc">
+ <PerformanceCalculator doseCalc={peptide.doseCalc} accent={accent} />
+ </div>
  )}
 
  {/* ─── Telegram CTA ─── */}
