@@ -15,8 +15,10 @@ export const CATEGORIES = [
 // Map: entry-id → array of category-ids it belongs to.
 // Populated incrementally in Task 16-23 (Session 5-6) as entries land.
 export const PHARMACEUTICAL_CATEGORIES = {
-  metformin:   ['metabolic'],
-  semaglutide: ['metabolic'],
+  metformin:    ['metabolic'],
+  semaglutide:  ['metabolic'],
+  atorvastatin: ['cardio'],
+  tadalafil:    ['cardio'],
 }
 
 export function getPharmaceuticalCategories(entryId) {
