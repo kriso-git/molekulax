@@ -4,6 +4,7 @@ import { getLibrary } from '../../data/libraries'
 import { adaptLibraryEntry } from './adaptLibraryEntry'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
 import { useLang } from '../../i18n/LanguageContext'
+import { useLibrary } from '../../context/LibraryContext'
 import EntryDetail from './EntryDetail'
 
 export function parseEntryHash(hash) {
@@ -31,10 +32,20 @@ export default function EntryDetailRoute({ hash }) {
   const parsed = parseEntryHash(hash)
   const isDesktop = useMediaQuery('(min-width: 1024px)')
   const { t } = useLang()
+  const { libraryId, setLibraryId } = useLibrary()
 
   const library = parsed ? getLibrary(parsed.library) : null
   const liveEntry = parsed && library ? library.entries.find(e => e.id === parsed.id) : null
   const peptide = liveEntry ? adaptLibraryEntry(liveEntry, library) : null
+
+  // Sync the active library context with the hash. If a visitor deep-links
+  // to #entry/nootropics/<id> while the in-memory library is still the
+  // default 'peptides', closeDetail() would land on the wrong gallery.
+  useEffect(() => {
+    if (parsed?.library && parsed.library !== libraryId) {
+      setLibraryId(parsed.library)
+    }
+  }, [parsed?.library, libraryId, setLibraryId])
 
   useEffect(() => {
     if (isDesktop) return
