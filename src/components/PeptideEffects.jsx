@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { X, Send, ExternalLink } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
-import { EFFECT_CATEGORIES } from '../data/peptideEffects'
+import { EFFECT_CATEGORIES } from '../data/libraries/peptides/effects'
 
 const TELEGRAM_URL = 'https://t.me/molekulaxtra'
 const TIKTOK_URL   = 'https://www.tiktok.com/@moleculextra'
