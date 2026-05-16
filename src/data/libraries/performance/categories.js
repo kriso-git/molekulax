@@ -15,6 +15,9 @@ export const CATEGORIES = [
 // Populated incrementally in Task 6-9 as entries land.
 export const PERFORMANCE_CATEGORIES = {
   // Task 6 (AAS-info CORE)
+  'testosterone-info': ['aas-info'],
+  'trenbolone-info':   ['aas-info'],
+  'anavar-info':       ['aas-info'],
   // Task 7 (Prohormon CORE)
   // Task 8 (Stim + Bronch CORE)
   // Task 9 (Növekedés CORE + EXTRA)
