@@ -95,15 +95,26 @@
  * @property {I18nString}         [detectionWindow]  Sport-doping detection window (urine/blood).
  * @property {string}             [halfLifeActive]   Active metabolite half-life when parent vs metabolite differ.
  * @property {BloodworkProtocol}  [bloodwork]        Structured bloodwork protocol; renders BloodworkProtocol component.
- * @property {DoseCalc}           [doseCalc]         Per-entry dose helper; renders PerformanceCalculator component.
+ * @property {DoseCalc}           [doseCalc]         Per-entry dose helper; renders PerformanceCalculator / PharmaceuticalCalculator component.
+ *
+ * Phase 6 pharmaceutical fields (all optional):
+ * @property {string}        [atcCode]              WHO ATC code, e.g. "A10BA02" (Metformin).
+ * @property {I18nString}    [prescriptionStatus]   "Vényköteles" / "OTC" / "Pp+" / "kontrollált".
+ * @property {I18nString[]}  [indications]          Főbb indikációk listája.
+ * @property {I18nString[]}  [contraindications]    Kontraindikációk listája.
+ * @property {I18nString[]}  [commonSideEffects]    Gyakori mellékhatások listája.
+ * @property {string[]}      [cyp450]               ['CYP3A4 substrate', 'CYP2D6 inhibitor'].
+ * @property {I18nString[]}  [crossMolInteractions] Gyógyszer-interakciók i18n szövegei.
  */
 
 /**
  * @typedef {Object} DoseCalc
- * @property {'bodyweight'|'fixed'|'titration'|'warning'} type
+ * @property {'bodyweight'|'fixed'|'titration'|'warning'|'tshWeight'} type
  * @property {{low: number, medium: number, high: number}} [perKg]   Bodyweight type, per-kg dose values.
  * @property {{low: number, medium: number, high: number}} [fixed]   Fixed type, absolute dose values.
  * @property {Array<{phase: I18nString, dose: number}>} [titration]  Titration type, phase-based ramp table.
+ * @property {{kgFactor: number, unitsPerKg: string, defaultWeight?: number, adjustForAgeOver65?: number}} [tshWeight]
+ *   Weight-based starting dose (Levothyroxin-style): dose = weight × kgFactor in unitsPerKg.
  * @property {string} [unit]                                          Dose unit, e.g. "mg/hét", "mcg/nap", "IU/hét".
  * @property {I18nString} [warning]                                   Warning type, no-dose message.
  * @property {I18nString} [note]                                      Optional per-entry context note shown below the result.
