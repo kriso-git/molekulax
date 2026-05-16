@@ -25,6 +25,13 @@ export const PHARMACEUTICAL_CATEGORIES = {
   levothyroxin:  ['endocrine'],
   finasteride:   ['dermatology'],
   amoxicillin:   ['antiinfective'],
+  // EXTRA Anyagcsere
+  tirzepatide:   ['metabolic'],
+  empagliflozin: ['metabolic'],
+  liraglutide:   ['metabolic'],
+  berberin:      ['metabolic'],
+  acarbose:      ['metabolic'],
+  glimepirid:    ['metabolic'],
 }
 
 export function getPharmaceuticalCategories(entryId) {

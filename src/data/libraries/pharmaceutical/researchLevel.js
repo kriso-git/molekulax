@@ -20,6 +20,13 @@ export const EXPLICIT_LEVEL = {
   levothyroxin:  5,
   finasteride:   5,
   amoxicillin:   5,
+  // EXTRA Anyagcsere
+  tirzepatide:   4,
+  empagliflozin: 4,
+  liraglutide:   5,
+  berberin:      2,
+  acarbose:      5,
+  glimepirid:    5,
 }
 
 /**

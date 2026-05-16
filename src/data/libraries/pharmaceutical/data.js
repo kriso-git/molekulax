@@ -1475,7 +1475,470 @@ export const CORE_PHARMACEUTICAL = [
   },
 ]
 
-export const EXTRA_PHARMACEUTICAL = []
+export const EXTRA_PHARMACEUTICAL = [
+  // ===== EXTRA 1. TIRZEPATIDE (Anyagcsere, dual GIP/GLP-1 RA) =====
+  {
+    id: 'tirzepatide',
+    name: 'Tirzepatide',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'Dual GIP + GLP-1 receptor agonista, Eli Lilly Mounjaro (T2DM) és Zepbound (obesity). SURMOUNT-5 trial szerint head-to-head felülmúlja a Semaglutide-ot.',
+      en: 'Dual GIP + GLP-1 receptor agonist, Eli Lilly Mounjaro (T2DM) and Zepbound (obesity). SURMOUNT-5 trial showed head-to-head superiority over semaglutide.',
+      pl: 'Podwójny agonista receptora GIP + GLP-1, Eli Lilly Mounjaro (T2DM) i Zepbound (otyłość). SURMOUNT-5 wykazało wyższość head-to-head nad semaglutydem.',
+    },
+    description: {
+      hu: 'A Tirzepatide az első kettős inkretin-agonista, ami egyidejűleg aktiválja a GIP (glükóz-függő insulinotropikus polypeptid) és a GLP-1 receptort. A Eli Lilly fejlesztette ki (Mounjaro T2DM FDA 2022, Zepbound obesity FDA 2023, ~7 napos felezési idő, heti SC injekció). A SURPASS-2 (Frías 2021 NEJM PMID 34170647) szerint a Tirzepatide a Semaglutide-ot szignifikánsan felülmúlja HbA1c-csökkentésben. A SURMOUNT-5 (Aronne 2025 NEJM PMID 40353578) head-to-head obesity-trial szerint 72 hét alatt 20,2% testsúlyvesztés (vs Semaglutide 13,7%, p<0,001). Mellékhatás-profil hasonló, talán mérsékelten kedvezőbb GI-toleranciával.',
+      en: 'Tirzepatide is the first dual incretin agonist, simultaneously activating GIP (glucose-dependent insulinotropic polypeptide) and GLP-1 receptors. Developed by Eli Lilly (Mounjaro T2DM FDA 2022, Zepbound obesity FDA 2023, ~7-day half-life, weekly SC injection). SURPASS-2 (Frías 2021 NEJM PMID 34170647) showed tirzepatide significantly outperforms semaglutide in HbA1c reduction. SURMOUNT-5 (Aronne 2025 NEJM PMID 40353578) head-to-head obesity trial showed 20.2% body weight loss at 72 weeks (vs semaglutide 13.7%, p<0.001). Side effect profile similar, possibly with modestly better GI tolerance.',
+      pl: 'Tirzepatyd to pierwszy podwójny agonista inkretynowy, jednocześnie aktywujący receptory GIP (glukozozależny polipeptyd insulinotropowy) i GLP-1. Opracowany przez Eli Lilly (Mounjaro T2DM FDA 2022, Zepbound otyłość FDA 2023, ~7-dniowy okres półtrwania, cotygodniowa iniekcja SC). SURPASS-2 (Frías 2021 NEJM PMID 34170647) wykazało, że tirzepatyd znacznie przewyższa semaglutyd w redukcji HbA1c. SURMOUNT-5 (Aronne 2025 NEJM PMID 40353578) head-to-head w otyłości wykazało 20,2% utratę masy w 72 tygodnie (vs semaglutyd 13,7%, p<0,001). Profil działań niepożądanych podobny, możliwie z umiarkowanie lepszą tolerancją GI.',
+    },
+    mechanism: {
+      hu: 'Dual GIP + GLP-1 receptor agonista. A GIP-aktiváció glükóz-függő inzulin-szekréciót, glükagon-szuppressziót, és valószínűleg adipocyta-lipid-redisztribúciót okoz. A GLP-1-aktiváció (mint Semaglutide-nál) lassítja a gyomorürülést és centrálisan csökkenti az étvágyat.',
+      en: 'Dual GIP + GLP-1 receptor agonist. GIP activation causes glucose-dependent insulin secretion, glucagon suppression, and likely adipocyte lipid redistribution. GLP-1 activation (as in semaglutide) slows gastric emptying and centrally reduces appetite.',
+      pl: 'Podwójny agonista GIP + GLP-1. Aktywacja GIP powoduje wydzielanie insuliny zależne od glukozy, supresję glukagonu i prawdopodobnie redystrybucję lipidów w adipocytach. Aktywacja GLP-1 (jak w semaglutydzie) spowalnia opróżnianie żołądka i centralnie zmniejsza apetyt.',
+    },
+    legalStatus: {
+      hu: 'EU/HU: vényköteles (Mounjaro T2DM, Zepbound obesity). USA: FDA Rx. Globális ellátási hiány 2023-2024.',
+      en: 'EU/HU: prescription only (Mounjaro T2DM, Zepbound obesity). USA: FDA Rx. Global supply shortage 2023-2024.',
+      pl: 'UE/PL: na receptę (Mounjaro T2DM, Zepbound otyłość). USA: FDA Rx. Globalny niedobór 2023-2024.',
+    },
+    onsetTime: '1-2 weeks (appetite), 12-16 weeks (HbA1c steady-state)',
+    halfLife: '~5 days (weekly SC dosing)',
+    atcCode: 'A10BX16',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: '2-es típusú cukorbetegség (Mounjaro 2,5-15 mg heti)', en: 'Type 2 diabetes (Mounjaro 2.5-15 mg weekly)', pl: 'Cukrzyca typu 2 (Mounjaro 2,5-15 mg tygodniowo)' },
+      { hu: 'Krónikus súlykezelés obesitásban (Zepbound 2,5-15 mg heti, BMI ≥ 30 vagy BMI ≥ 27 + komorbiditás)', en: 'Chronic weight management in obesity (Zepbound 2.5-15 mg weekly)', pl: 'Przewlekłe leczenie masy w otyłości (Zepbound 2,5-15 mg tygodniowo)' },
+      { hu: 'OSA + obesity (Zepbound 2024 FDA-kibővítés, SURMOUNT-OSA)', en: 'OSA + obesity (Zepbound 2024 FDA expansion, SURMOUNT-OSA)', pl: 'OSA + otyłość (rozszerzenie FDA 2024 Zepbound, SURMOUNT-OSA)' },
+    ],
+    contraindications: [
+      { hu: 'MTC vagy MEN-2 anamnézis (mint Semaglutide-nál, FDA boxed warning)', en: 'MTC or MEN-2 history (as with semaglutide, FDA boxed warning)', pl: 'Wywiad MTC lub MEN-2 (jak przy semaglutydzie, FDA boxed)' },
+      { hu: 'Aktív pankreatitis vagy ismétlődő pankreatitisz', en: 'Active or recurrent pancreatitis', pl: 'Aktywne lub nawracające zapalenie trzustki' },
+      { hu: 'Terhesség, szoptatás', en: 'Pregnancy, lactation', pl: 'Ciąża, karmienie piersią' },
+    ],
+    commonSideEffects: [
+      { hu: 'GI: hányinger, hányás, hasmenés (>20% dóziseszkaláció alatt)', en: 'GI: nausea, vomiting, diarrhea (>20% during titration)', pl: 'GI: nudności, wymioty, biegunka (>20% podczas titracji)' },
+      { hu: 'Étvágycsökkenés, dyspepsia, eructatio', en: 'Decreased appetite, dyspepsia, eructation', pl: 'Zmniejszony apetyt, dyspepsja, eruktacja' },
+      { hu: 'Súlyos, ritka: akut pankreatitisz, epekő, hipoglikémia (insulinnal/SU-val)', en: 'Severe, rare: acute pancreatitis, gallstones, hypoglycemia (with insulin/SU)', pl: 'Ciężkie, rzadkie: ostre zapalenie trzustki, kamica żółciowa, hipoglikemia (z insuliną/SU)' },
+    ],
+    cyp450: ['Not CYP-metabolized (proteolytic degradation)', 'No major drug interactions'],
+    crossMolInteractions: [
+      { hu: 'Insulin, sulfonylureák: hipoglikémia-kockázat, dóziscsökkentés', en: 'Insulin, sulfonylureas: hypoglycemia risk, dose reduction', pl: 'Insulina, sulfonylomoczniki: ryzyko hipoglikemii, redukcja dawki' },
+      { hu: 'Orális gyógyszerek (Levothyroxin, warfarin): gyomorürülés-lassítás abszorpció-eltolódás', en: 'Oral drugs (levothyroxine, warfarin): slowed gastric emptying shifts absorption', pl: 'Leki doustne (lewotyroksyna, warfaryna): spowolnione opróżnianie żołądka' },
+    ],
+    benefits: [
+      { hu: 'HbA1c csökkenés akár 2,0-2,5% (SURPASS-2 vs Semaglutide szuperior)', en: 'HbA1c reduction up to 2.0-2.5% (SURPASS-2 superior to semaglutide)', pl: 'Redukcja HbA1c do 2,0-2,5% (SURPASS-2 lepiej niż semaglutyd)' },
+      { hu: 'Testsúlyvesztés átlag 20,2% 72 hét alatt (SURMOUNT-5)', en: 'Body weight loss averaging 20.2% over 72 weeks (SURMOUNT-5)', pl: 'Utrata masy średnio 20,2% w 72 tygodnie (SURMOUNT-5)' },
+      { hu: 'Heti egyszeri SC adagolás, kényelmes compliance', en: 'Once-weekly SC dosing, convenient compliance', pl: 'Cotygodniowe dawkowanie SC, wygodny compliance' },
+    ],
+    studies: [
+      { title: 'Tirzepatide vs semaglutide once weekly in type 2 diabetes (SURPASS-2)', authors: 'Frías JP, Davies MJ, Rosenstock J et al.', journal: 'N Engl J Med. 2021;385(6):503-515.', pmid: '34170647' },
+      { title: 'Tirzepatide once weekly for the treatment of obesity (SURMOUNT-1)', authors: 'Jastreboff AM, Aronne LJ, Ahmad NN et al.', journal: 'N Engl J Med. 2022;387(3):205-216.', pmid: '35658024' },
+      { title: 'Tirzepatide once weekly for the treatment of obesity (SURMOUNT-5 head-to-head vs semaglutide)', authors: 'Aronne LJ, Horn DB, le Roux CW et al.', journal: 'N Engl J Med. 2025.', pmid: '40353578' },
+      { title: 'Tirzepatide for obstructive sleep apnea and obesity (SURMOUNT-OSA)', authors: 'Malhotra A, Grunstein RR, Fietze I et al.', journal: 'N Engl J Med. 2024;391(13):1193-1205.', pmid: '38912654' },
+    ],
+    related: ['semaglutide', 'liraglutide', 'metformin'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1-4 (start)', en: 'Weeks 1-4 (start)', pl: 'Tygodnie 1-4 (start)' }, dose: '2.5' },
+        { phase: { hu: 'Hét 5-8', en: 'Weeks 5-8', pl: 'Tygodnie 5-8' }, dose: '5' },
+        { phase: { hu: 'Hét 9-12', en: 'Weeks 9-12', pl: 'Tygodnie 9-12' }, dose: '7.5' },
+        { phase: { hu: 'Hét 13+', en: 'Weeks 13+', pl: 'Tygodnie 13+' }, dose: '10' },
+        { phase: { hu: 'Max-dózis', en: 'Max dose', pl: 'Maks. dawka' }, dose: '15' },
+      ],
+      unit: 'mg/hét SC',
+      note: {
+        hu: 'Heti SC injekció. Lassú titráció 4 hét/dózisszint a GI-tolerancia érdekében. T2DM cél-dózis 5-15 mg/hét, obesity cél-dózis 5-15 mg/hét. GI-tüneteknél maradni a dózison.',
+        en: 'Weekly SC injection. Slow titration 4 wks per dose for GI tolerance. T2DM target 5-15 mg/wk, obesity target 5-15 mg/wk. On GI symptoms hold dose.',
+        pl: 'Cotygodniowa iniekcja SC. Powolna titracja 4 tyg./poziom dawki. Cel T2DM 5-15 mg/tyg., cel otyłość 5-15 mg/tyg. Przy objawach GI pozostań na dawce.',
+      },
+    },
+  },
+
+  // ===== EXTRA 2. EMPAGLIFLOZIN (Anyagcsere, SGLT2 inhibitor) =====
+  {
+    id: 'empagliflozin',
+    name: 'Empagliflozin',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'SGLT2-inhibitor (Jardiance), Boehringer Ingelheim/Eli Lilly. T2DM + HFrEF/HFpEF + CKD kardio-reno-protektív gyógyszer.',
+      en: 'SGLT2 inhibitor (Jardiance), Boehringer Ingelheim/Eli Lilly. Cardio-reno-protective drug for T2DM + HFrEF/HFpEF + CKD.',
+      pl: 'Inhibitor SGLT2 (Jardiance), Boehringer Ingelheim/Eli Lilly. Lek kardio-renoprotekcyjny dla T2DM + HFrEF/HFpEF + CKD.',
+    },
+    description: {
+      hu: 'Az Empagliflozin egy szelektív SGLT2-inhibitor (sodium-glucose cotransporter 2), amely a vesetubulus proximális szakaszában gátolja a glükóz-reabszorpciót, ezzel napi 60-90 g glükóz-vesztést okoz vizelettel (glikozúria). FDA-jóváhagyott T2DM-re (2014), HFrEF-re (EMPEROR-Reduced 2020 PMID 32865377), HFpEF-re (EMPEROR-Preserved 2021 PMID 34449189), és CKD-re (EMPA-KIDNEY 2023 PMID 36331190). Az EMPA-REG OUTCOME trial (Zinman 2015 NEJM PMID 26378978) volt az első MACE-pozitív SGLT2-i trial — 38% relatív kardiovaszkuláris halálozás-csökkenést mutatott T2DM + ASCVD-betegen.',
+      en: 'Empagliflozin is a selective SGLT2 inhibitor (sodium-glucose cotransporter 2) that blocks glucose reabsorption in proximal renal tubule, causing 60-90 g/day urinary glucose loss (glycosuria). FDA-approved for T2DM (2014), HFrEF (EMPEROR-Reduced 2020 PMID 32865377), HFpEF (EMPEROR-Preserved 2021 PMID 34449189), and CKD (EMPA-KIDNEY 2023 PMID 36331190). The EMPA-REG OUTCOME trial (Zinman 2015 NEJM PMID 26378978) was the first MACE-positive SGLT2i trial — showed 38% relative cardiovascular mortality reduction in T2DM + ASCVD.',
+      pl: 'Empagliflozyna to selektywny inhibitor SGLT2 (kotransporter sodowo-glukozowy 2), blokujący reabsorpcję glukozy w proksymalnym kanaliku nerkowym, powodując utratę 60-90 g glukozy dziennie z moczem (glikozuria). Zatwierdzony przez FDA dla T2DM (2014), HFrEF (EMPEROR-Reduced 2020 PMID 32865377), HFpEF (EMPEROR-Preserved 2021 PMID 34449189) i CKD (EMPA-KIDNEY 2023 PMID 36331190). Badanie EMPA-REG OUTCOME (Zinman 2015 NEJM PMID 26378978) to pierwsze badanie SGLT2i z dodatnim MACE — wykazało 38% redukcję względnej śmiertelności CV w T2DM + ASCVD.',
+    },
+    mechanism: {
+      hu: 'SGLT2 (sodium-glucose cotransporter 2) szelektív gátlása a proximális vesetubulusban. Eredmény: 60-90 g/nap glükóz-vesztés vizelettel, ami a HbA1c-t csökkenti és insulin-független mechanizmussal. Másodlagos hatások: ozmotikus diurézis (vérnyomás-csökkentés), nephron-szintű hatás (intraglomeruláris nyomás csökkentés, CKD-protektív), ketonszint enyhe emelése (kardio-protektív).',
+      en: 'Selective SGLT2 (sodium-glucose cotransporter 2) inhibition in proximal renal tubule. Result: 60-90 g/day glucose loss in urine, lowering HbA1c by insulin-independent mechanism. Secondary effects: osmotic diuresis (BP reduction), nephron-level effect (intraglomerular pressure drop, CKD-protective), mild ketone elevation (cardio-protective).',
+      pl: 'Selektywne hamowanie SGLT2 (kotransporter sodowo-glukozowy 2) w proksymalnym kanaliku nerkowym. Rezultat: utrata 60-90 g glukozy/dzień z moczem, obniżając HbA1c mechanizmem niezależnym od insuliny. Efekty wtórne: diureza osmotyczna (redukcja BP), efekt na poziomie nefronu (spadek ciśnienia wewnątrzkłębuszkowego, ochrona CKD), łagodne podniesienie ketonów (kardioprotekcja).',
+    },
+    legalStatus: {
+      hu: 'EU/HU: vényköteles (Jardiance, Synjardy = Empagliflozin + Metformin). USA: FDA Rx.',
+      en: 'EU/HU: prescription only (Jardiance, Synjardy = Empagliflozin + Metformin). USA: FDA Rx.',
+      pl: 'UE/PL: na receptę (Jardiance, Synjardy = empagliflozyna + metformina). USA: FDA Rx.',
+    },
+    onsetTime: '1-2 weeks (BP, HbA1c)',
+    halfLife: '~12.4 h (once-daily dosing)',
+    atcCode: 'A10BK03',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: '2-es típusú cukorbetegség, Metformin-kiegészítés vagy önállóan', en: 'Type 2 diabetes, adjunct to metformin or alone', pl: 'Cukrzyca typu 2, uzupełnienie metforminy lub samodzielnie' },
+      { hu: 'Szívelégtelenség (HFrEF + HFpEF, függetlenül T2DM-től)', en: 'Heart failure (HFrEF + HFpEF, regardless of T2DM)', pl: 'Niewydolność serca (HFrEF + HFpEF, niezależnie od T2DM)' },
+      { hu: 'Krónikus vesebetegség (CKD, eGFR ≥ 20)', en: 'Chronic kidney disease (CKD, eGFR ≥ 20)', pl: 'Przewlekła choroba nerek (CKD, eGFR ≥ 20)' },
+    ],
+    contraindications: [
+      { hu: 'Súlyos vesefunkció-zavar (eGFR < 20 ml/min/1,73 m²)', en: 'Severe renal impairment (eGFR < 20 ml/min/1.73 m²)', pl: 'Ciężka niewydolność nerek (eGFR < 20 ml/min/1,73 m²)' },
+      { hu: 'Diabéteszes ketoacidózis anamnézis (eu-DKA-kockázat)', en: 'Diabetic ketoacidosis history (eu-DKA risk)', pl: 'Wywiad cukrzycowej kwasicy ketonowej (ryzyko eu-DKA)' },
+      { hu: 'Volémiás dehidráció, szepszis', en: 'Volume depletion, sepsis', pl: 'Hipowolemia, sepsa' },
+    ],
+    commonSideEffects: [
+      { hu: 'Genitális mycotikus infekciók (vulvovaginitis, balanitis, ~5-10%)', en: 'Genital mycotic infections (vulvovaginitis, balanitis, ~5-10%)', pl: 'Mikotyczne infekcje narządów płciowych (vulvovaginitis, balanitis, ~5-10%)' },
+      { hu: 'Húgyúti infekciók (UTI, 2-3% feletti incidencia)', en: 'Urinary tract infections (UTI, > 2-3% incidence)', pl: 'Infekcje dróg moczowych (UTI, > 2-3% częstość)' },
+      { hu: 'Volumen-depléció, hipotenzió (idős, diuretikum-szedő)', en: 'Volume depletion, hypotension (elderly, on diuretics)', pl: 'Hipowolemia, hipotensja (starsi, na diuretykach)' },
+      { hu: 'Súlyos, ritka: eu-DKA (vércukor < 250 mg/dl is lehet), Fournier-gangréna (perineális nekrotizáló fasciitis, FDA warning)', en: 'Severe, rare: eu-DKA (glucose can be < 250 mg/dl), Fournier gangrene (perineal necrotizing fasciitis, FDA warning)', pl: 'Ciężkie, rzadkie: eu-DKA (glukoza może być < 250 mg/dl), zgorzel Fourniera (krocze, ostrzeżenie FDA)' },
+    ],
+    cyp450: ['Glucuronidation primary metabolism (UGT2B7, UGT1A3, UGT1A8, UGT1A9)', 'No significant CYP interaction'],
+    crossMolInteractions: [
+      { hu: 'Diuretikum (loop, thiazide): additív volumen-depléció', en: 'Diuretics (loop, thiazide): additive volume depletion', pl: 'Diuretyki (pętlowe, tiazydy): addytywna hipowolemia' },
+      { hu: 'Insulin, sulfonylureák: hipoglikémia-kockázat, dóziscsökkentés', en: 'Insulin, sulfonylureas: hypoglycemia risk, dose reduction', pl: 'Insulina, sulfonylomoczniki: ryzyko hipoglikemii, redukcja dawki' },
+      { hu: 'Metformin: szinergisztikus (Synjardy fix kombináció)', en: 'Metformin: synergistic (Synjardy fixed combo)', pl: 'Metformina: synergistyczna (Synjardy stała kombinacja)' },
+    ],
+    benefits: [
+      { hu: 'MACE-redukció 38% (EMPA-REG OUTCOME)', en: 'MACE reduction 38% (EMPA-REG OUTCOME)', pl: 'Redukcja MACE 38% (EMPA-REG OUTCOME)' },
+      { hu: 'HFrEF/HFpEF hospitalizáció és kardiovaszkuláris halálozás csökkentése', en: 'HFrEF/HFpEF hospitalization and CV mortality reduction', pl: 'Redukcja hospitalizacji i śmiertelności CV w HFrEF/HFpEF' },
+      { hu: 'CKD progresszió-csökkentés (EMPA-KIDNEY)', en: 'CKD progression reduction (EMPA-KIDNEY)', pl: 'Redukcja progresji CKD (EMPA-KIDNEY)' },
+      { hu: 'Testsúlyvesztés (~2-3 kg), vérnyomás-csökkentés (~3-5 mmHg)', en: 'Weight loss (~2-3 kg), BP reduction (~3-5 mmHg)', pl: 'Utrata masy (~2-3 kg), redukcja BP (~3-5 mmHg)' },
+    ],
+    studies: [
+      { title: 'Empagliflozin, cardiovascular outcomes, and mortality in T2DM (EMPA-REG OUTCOME)', authors: 'Zinman B, Wanner C, Lachin JM et al.', journal: 'N Engl J Med. 2015;373(22):2117-28.', pmid: '26378978' },
+      { title: 'Cardiovascular and renal outcomes with empagliflozin in heart failure (EMPEROR-Reduced)', authors: 'Packer M, Anker SD, Butler J et al.', journal: 'N Engl J Med. 2020;383(15):1413-1424.', pmid: '32865377' },
+      { title: 'Empagliflozin in heart failure with a preserved ejection fraction (EMPEROR-Preserved)', authors: 'Anker SD, Butler J, Filippatos G et al.', journal: 'N Engl J Med. 2021;385(16):1451-1461.', pmid: '34449189' },
+      { title: 'Empagliflozin in patients with chronic kidney disease (EMPA-KIDNEY)', authors: 'EMPA-KIDNEY Collaborative Group.', journal: 'N Engl J Med. 2023;388(2):117-127.', pmid: '36331190' },
+    ],
+    related: ['metformin', 'semaglutide'],
+    doseCalc: {
+      type: 'fixedDose',
+      fixedDose: { low: 10, medium: 10, high: 25 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Standard dózis 10 mg/nap reggel, 25 mg/nap-ig emelhető HbA1c-cél elérésére. HFrEF/HFpEF indikációban 10 mg/nap fix, dóziseszkaláció nem indokolt. eGFR < 30: dóziscsökkentés vagy elhagyás. Étkezéstől függetlenül.',
+        en: 'Standard 10 mg/day morning, up to 25 mg/day for HbA1c target. HFrEF/HFpEF indication fixed at 10 mg/day, no escalation. eGFR < 30: dose reduction or discontinuation. Food-independent.',
+        pl: 'Standard 10 mg/dzień rano, do 25 mg/dzień dla celu HbA1c. Wskazanie HFrEF/HFpEF stała 10 mg/dzień, brak eskalacji. eGFR < 30: redukcja dawki lub odstawienie. Niezależne od jedzenia.',
+      },
+    },
+  },
+
+  // ===== EXTRA 3. LIRAGLUTIDE (Anyagcsere, napi GLP-1 RA) =====
+  {
+    id: 'liraglutide',
+    name: 'Liraglutide',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'Napi GLP-1 receptor agonista, Novo Nordisk Victoza (T2DM) és Saxenda (obesity). A Semaglutide elődje, ~13 órás felezési idő.',
+      en: 'Daily GLP-1 receptor agonist, Novo Nordisk Victoza (T2DM) and Saxenda (obesity). Semaglutide predecessor, ~13 h half-life.',
+      pl: 'Codzienny agonista receptora GLP-1, Novo Nordisk Victoza (T2DM) i Saxenda (otyłość). Poprzednik semaglutydu, ~13 h okres półtrwania.',
+    },
+    description: {
+      hu: 'A Liraglutide a Novo Nordisk első hosszú-hatású GLP-1 RA terápiája (Victoza T2DM FDA 2010, Saxenda obesity FDA 2014). Napi egyszeri SC adagolás (~13 h felezési idő, vs Semaglutide ~7 nap). Az LEADER trial (Marso 2016 NEJM PMID 27295427) MACE-csökkenést igazolt T2DM-ben. A SCALE-trial (Pi-Sunyer 2015 NEJM PMID 26132939) szerint 56 hét alatt 8% testsúlyvesztés non-diabetic obesitásban. A modern Semaglutide/Tirzepatide a klinikai gyakorlatban Liraglutide-ot többnyire kiváltotta hatékonyság-szempontból (heti vs napi adagolás, jobb fogyás), de pediátriai indikáció (Saxenda 12+ év FDA 2020) és csak napi adagolásra-igénylő speciális esetekben még releváns.',
+      en: 'Liraglutide is Novo Nordisk\'s first long-acting GLP-1 RA (Victoza T2DM FDA 2010, Saxenda obesity FDA 2014). Once-daily SC dosing (~13 h half-life, vs semaglutide ~7 days). LEADER trial (Marso 2016 NEJM PMID 27295427) confirmed MACE reduction in T2DM. SCALE trial (Pi-Sunyer 2015 NEJM PMID 26132939) showed 8% body weight loss over 56 weeks in non-diabetic obesity. Modern semaglutide/tirzepatide have largely replaced liraglutide in clinical practice by efficacy (weekly vs daily, better weight loss), but pediatric indication (Saxenda 12+ yr FDA 2020) and specific cases needing daily dosing keep it relevant.',
+      pl: 'Liraglutyd to pierwszy długodziałający GLP-1 RA Novo Nordisk (Victoza T2DM FDA 2010, Saxenda otyłość FDA 2014). Dawkowanie raz dziennie SC (~13 h okres półtrwania vs semaglutyd ~7 dni). Badanie LEADER (Marso 2016 NEJM PMID 27295427) potwierdziło redukcję MACE w T2DM. Badanie SCALE (Pi-Sunyer 2015 NEJM PMID 26132939) wykazało 8% utratę masy w 56 tygodni w otyłości bez cukrzycy. Nowoczesny semaglutyd/tirzepatyd w dużej mierze zastąpiły liraglutyd w praktyce klinicznej (cotygodniowe vs codzienne, lepsza utrata masy), ale wskazanie pediatryczne (Saxenda 12+ lat FDA 2020) i specyficzne przypadki wymagające dawkowania dziennego zachowują znaczenie.',
+    },
+    mechanism: {
+      hu: 'GLP-1 receptor agonista (mint Semaglutide), 97%-os szekvencia-homológia native GLP-1-gyel. Fatty-acid-konjugáció albumin-kötést és lassú elimináció eredményez (~13 h vs native 1-2 perc).',
+      en: 'GLP-1 receptor agonist (like semaglutide), 97% sequence homology with native GLP-1. Fatty acid conjugation provides albumin binding and slow elimination (~13 h vs native 1-2 min).',
+      pl: 'Agonista receptora GLP-1 (jak semaglutyd), 97% homologia sekwencji z natywnym GLP-1. Sprzężenie kwasu tłuszczowego zapewnia wiązanie z albuminami i powolną eliminację (~13 h vs natywne 1-2 min).',
+    },
+    legalStatus: {
+      hu: 'EU/HU: vényköteles (Victoza T2DM, Saxenda obesity). USA: FDA Rx.',
+      en: 'EU/HU: prescription only (Victoza T2DM, Saxenda obesity). USA: FDA Rx.',
+      pl: 'UE/PL: na receptę (Victoza T2DM, Saxenda otyłość). USA: FDA Rx.',
+    },
+    onsetTime: '1-2 weeks (appetite), 8-12 weeks (HbA1c steady-state)',
+    halfLife: '~13 h (once-daily SC dosing)',
+    atcCode: 'A10BJ02',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: '2-es típusú cukorbetegség (Victoza 0,6-1,8 mg napi)', en: 'Type 2 diabetes (Victoza 0.6-1.8 mg daily)', pl: 'Cukrzyca typu 2 (Victoza 0,6-1,8 mg dziennie)' },
+      { hu: 'Krónikus súlykezelés obesitásban (Saxenda 0,6-3,0 mg napi)', en: 'Chronic weight management in obesity (Saxenda 0.6-3.0 mg daily)', pl: 'Przewlekłe leczenie masy w otyłości (Saxenda 0,6-3,0 mg dziennie)' },
+      { hu: 'Pediátriai obesitás 12-17 év (Saxenda, FDA 2020)', en: 'Pediatric obesity ages 12-17 (Saxenda, FDA 2020)', pl: 'Otyłość pediatryczna 12-17 lat (Saxenda, FDA 2020)' },
+    ],
+    contraindications: [
+      { hu: 'MTC/MEN-2 anamnézis (FDA boxed warning)', en: 'MTC/MEN-2 history (FDA boxed warning)', pl: 'Wywiad MTC/MEN-2 (ostrzeżenie FDA boxed)' },
+      { hu: 'Aktív pankreatitis', en: 'Active pancreatitis', pl: 'Aktywne zapalenie trzustki' },
+      { hu: 'Terhesség, szoptatás', en: 'Pregnancy, lactation', pl: 'Ciąża, karmienie piersią' },
+    ],
+    commonSideEffects: [
+      { hu: 'GI: hányinger, hányás, hasmenés (dóziseszkaláció alatt 20-30%)', en: 'GI: nausea, vomiting, diarrhea (20-30% during titration)', pl: 'GI: nudności, wymioty, biegunka (20-30% podczas titracji)' },
+      { hu: 'Súlyos, ritka: pankreatitisz, epekő, retinopátia-progresszió', en: 'Severe, rare: pancreatitis, gallstones, retinopathy progression', pl: 'Ciężkie, rzadkie: zapalenie trzustki, kamica żółciowa, progresja retinopatii' },
+    ],
+    cyp450: ['Not CYP-metabolized', 'No major drug interactions'],
+    crossMolInteractions: [
+      { hu: 'Insulin, sulfonylureák: hipoglikémia-kockázat, dóziscsökkentés', en: 'Insulin, sulfonylureas: hypoglycemia risk, dose reduction', pl: 'Insulina, sulfonylomoczniki: ryzyko hipoglikemii, redukcja dawki' },
+    ],
+    benefits: [
+      { hu: 'HbA1c csökkenés 1,0-1,5%, testsúlyvesztés átlag 8% (SCALE)', en: 'HbA1c reduction 1.0-1.5%, weight loss averaging 8% (SCALE)', pl: 'Redukcja HbA1c 1,0-1,5%, utrata masy średnio 8% (SCALE)' },
+      { hu: 'MACE-redukció T2DM-ben (LEADER, HR 0,87)', en: 'MACE reduction in T2DM (LEADER, HR 0.87)', pl: 'Redukcja MACE w T2DM (LEADER, HR 0,87)' },
+      { hu: 'Pediátriai obesity FDA-jóváhagyott (12+ év)', en: 'Pediatric obesity FDA-approved (12+ yr)', pl: 'Otyłość pediatryczna zatwierdzona FDA (12+ lat)' },
+    ],
+    studies: [
+      { title: 'Liraglutide and cardiovascular outcomes in T2DM (LEADER)', authors: 'Marso SP, Daniels GH, Brown-Frandsen K et al.', journal: 'N Engl J Med. 2016;375(4):311-22.', pmid: '27295427' },
+      { title: 'A randomized, controlled trial of 3.0 mg of liraglutide in weight management (SCALE)', authors: 'Pi-Sunyer X, Astrup A, Fujioka K et al.', journal: 'N Engl J Med. 2015;373(1):11-22.', pmid: '26132939' },
+      { title: 'Liraglutide for children 12 to less than 18 years of age with obesity (FDA approval, Kelly 2020)', authors: 'Kelly AS, Auerbach P, Barrientos-Perez M et al.', journal: 'N Engl J Med. 2020;382(22):2117-2128.', pmid: '32233338' },
+    ],
+    related: ['semaglutide', 'tirzepatide', 'metformin'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1 (start)', en: 'Week 1 (start)', pl: 'Tydzień 1 (start)' }, dose: '0.6' },
+        { phase: { hu: 'Hét 2 (T2DM)', en: 'Week 2 (T2DM)', pl: 'Tydzień 2 (T2DM)' }, dose: '1.2' },
+        { phase: { hu: 'Hét 3+ (T2DM)', en: 'Week 3+ (T2DM)', pl: 'Tydzień 3+ (T2DM)' }, dose: '1.8' },
+        { phase: { hu: 'Obesity cél (Saxenda)', en: 'Obesity target (Saxenda)', pl: 'Cel otyłość (Saxenda)' }, dose: '3' },
+      ],
+      unit: 'mg/nap SC',
+      note: {
+        hu: 'Napi SC injekció (has, comb, felkar). Lassú titráció 1 hét/dózisszint, GI-tolerancia érdekében. T2DM cél 1,2-1,8 mg/nap, obesity cél 3,0 mg/nap.',
+        en: 'Daily SC injection. Slow titration 1 wk per dose for GI tolerance. T2DM target 1.2-1.8 mg/day, obesity target 3.0 mg/day.',
+        pl: 'Codzienna iniekcja SC. Powolna titracja 1 tydzień/poziom dla tolerancji GI. Cel T2DM 1,2-1,8 mg/dzień, cel otyłość 3,0 mg/dzień.',
+      },
+    },
+  },
+
+  // ===== EXTRA 4. BERBERIN (Anyagcsere, plant alkaloid, "natural Metformin") =====
+  {
+    id: 'berberin',
+    name: 'Berberin',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'Növényi alkaloid (Berberis aristata, Coptis chinensis), AMPK-aktivátor. "Természetes Metformin"-ként promotált, de farmakológiai pozícionálása korlátozott. NEM Rx, OTC supplement.',
+      en: 'Plant alkaloid (Berberis aristata, Coptis chinensis), AMPK activator. Marketed as "natural metformin" but pharmacological positioning limited. NOT Rx, OTC supplement.',
+      pl: 'Alkaloid roślinny (Berberis aristata, Coptis chinensis), aktywator AMPK. Promowany jako "naturalna metformina", ale pozycjonowanie farmakologiczne ograniczone. NIE Rx, suplement OTC.',
+    },
+    description: {
+      hu: 'A Berberin egy izokinolin-alkaloid, amelyet a hagyományos kínai (Huang Lian) és ayurvedikus (Daruharidra) gyógynövény-terápiákban használtak évszázadokon át. Az AMPK-aktiváció mechanizmusa miatt "természetes Metformin"-ként marketingelik, de a klinikai evidencia szerényebb és változatos minőségű. Egy 2008 RCT (Yin J 2008 PMID 18397984) szerint 500 mg 3x/nap 3 hónapig HbA1c -1,0% csökkenést mutatott T2DM-ben (hasonló Metformin-szintű hatás). Egy 2012 meta-analízis (Lan 2012 PMID 22377268) szignifikáns dyslipidémia + hipoglikémiás hatást igazolt, de a trial-minőség többségében alacsony. Biodostępność rossz (~5%), nagy dózis szükséges. NEM FDA-jóváhagyott gyógyszer, hanem étrendkiegészítő — minőség- és dózispontosság-bizonytalanság jelentős.',
+      en: 'Berberine is an isoquinoline alkaloid used for centuries in traditional Chinese (Huang Lian) and Ayurvedic (Daruharidra) herbal therapies. Marketed as "natural metformin" due to AMPK activation, but clinical evidence is modest and variable in quality. A 2008 RCT (Yin J 2008 PMID 18397984) showed 500 mg 3x/day for 3 months produced -1.0% HbA1c reduction in T2DM (Metformin-comparable). A 2012 meta-analysis (Lan 2012 PMID 22377268) confirmed significant dyslipidemia + hypoglycemic effects, but most trial quality was low. Bioavailability poor (~5%), large doses needed. NOT FDA-approved drug but dietary supplement — significant quality and dose-precision uncertainty.',
+      pl: 'Berberyna to alkaloid izochinolinowy stosowany przez wieki w tradycyjnej chińskiej (Huang Lian) i ajurwedyjskiej (Daruharidra) terapii ziołowej. Marketingowany jako "naturalna metformina" z powodu aktywacji AMPK, ale dowody kliniczne są skromne i o zmiennej jakości. RCT 2008 (Yin J 2008 PMID 18397984) wykazało 500 mg 3x/dzień przez 3 miesiące redukcję HbA1c -1,0% w T2DM (porównywalnie z metforminą). Metaanaliza 2012 (Lan 2012 PMID 22377268) potwierdziła istotne efekty dyslipidemii + hipoglikemiczne, ale jakość badań przeważnie niska. Biodostępność słaba (~5%), wymagane duże dawki. NIE jest zatwierdzonym lekiem FDA, lecz suplementem dietetycznym — znacząca niepewność jakości i precyzji dawki.',
+    },
+    mechanism: {
+      hu: 'AMPK-aktivátor (mint Metformin), hepatikus glükoneogenezis-gátlás. Másodlagos hatások: bél-flóra-moduláció (Lactobacillus, Bifidobacterium-növelés), LDL-csökkenés PCSK9-szuppresszióval, gyulladás-csökkentés.',
+      en: 'AMPK activator (like metformin), inhibiting hepatic gluconeogenesis. Secondary effects: gut flora modulation (Lactobacillus, Bifidobacterium increase), LDL reduction via PCSK9 suppression, anti-inflammatory.',
+      pl: 'Aktywator AMPK (jak metformina), hamujący glukoneogenezę wątrobową. Efekty wtórne: modulacja flory jelitowej (wzrost Lactobacillus, Bifidobacterium), redukcja LDL przez supresję PCSK9, działanie przeciwzapalne.',
+    },
+    legalStatus: {
+      hu: 'EU/HU/USA: étrendkiegészítő (NEM gyógyszer). OTC elérhető. Kína-ban Rx-szerként is forgalmazott bakteriális hasmenésre.',
+      en: 'EU/HU/USA: dietary supplement (NOT a drug). OTC available. In China also marketed as Rx for bacterial diarrhea.',
+      pl: 'UE/PL/USA: suplement diety (NIE lek). Dostępna OTC. W Chinach również jako Rx na biegunkę bakteryjną.',
+    },
+    onsetTime: '2-4 weeks (HbA1c effect)',
+    halfLife: '~5 h (poor oral bioavailability ~5%)',
+    atcCode: 'No ATC assigned (not a registered drug)',
+    prescriptionStatus: { hu: 'NEM vényköteles (étrendkiegészítő)', en: 'NOT prescription (dietary supplement)', pl: 'NIE na receptę (suplement diety)' },
+    indications: [
+      { hu: 'T2DM kiegészítő terápiája (off-label evidencia, NEM FDA-indikáció)', en: 'T2DM adjunct therapy (off-label evidence, NOT FDA indication)', pl: 'Terapia uzupełniająca T2DM (dowody off-label, NIE wskazanie FDA)' },
+      { hu: 'Dyslipidémia (LDL-csökkentés)', en: 'Dyslipidemia (LDL reduction)', pl: 'Dyslipidemia (redukcja LDL)' },
+      { hu: 'Metabolikus szindróma, prediabétesz', en: 'Metabolic syndrome, prediabetes', pl: 'Zespół metaboliczny, stan przedcukrzycowy' },
+    ],
+    contraindications: [
+      { hu: 'Terhesség, szoptatás (uterotonikus + bilirubin-displacement újszülöttben, kernicterus-kockázat)', en: 'Pregnancy, lactation (uterotonic + bilirubin displacement in newborn, kernicterus risk)', pl: 'Ciąża, karmienie piersią (uterotonika + przemieszczenie bilirubiny u noworodka, ryzyko kernicterus)' },
+      { hu: 'Súlyos máj- vagy vesefunkció-zavar', en: 'Severe hepatic or renal impairment', pl: 'Ciężka niewydolność wątroby lub nerek' },
+    ],
+    commonSideEffects: [
+      { hu: 'GI: hasi diszkomfort, hasmenés, székrekedés (~30%)', en: 'GI: abdominal discomfort, diarrhea, constipation (~30%)', pl: 'GI: dyskomfort brzucha, biegunka, zaparcia (~30%)' },
+      { hu: 'Fejfájás, szédülés (ritka)', en: 'Headache, dizziness (rare)', pl: 'Ból głowy, zawroty głowy (rzadkie)' },
+    ],
+    cyp450: ['CYP3A4 substrate + INHIBITOR (moderate)', 'CYP2D6 inhibitor', 'P-gp inhibitor'],
+    crossMolInteractions: [
+      { hu: 'Cyclosporine, Tacrolimus (CYP3A4): plazma-szint emelkedhet, monitor', en: 'Cyclosporine, tacrolimus (CYP3A4): plasma levels may rise, monitor', pl: 'Cyklosporyna, takrolimus (CYP3A4): poziomy w osoczu mogą wzrosnąć, monitor' },
+      { hu: 'Metformin: szinergisztikus, de redundáns mechanizmus', en: 'Metformin: synergistic but redundant mechanism', pl: 'Metformina: synergistyczna ale redundantny mechanizm' },
+    ],
+    benefits: [
+      { hu: 'HbA1c-csökkenés ~1,0% (Yin 2008 RCT, Metformin-szintű)', en: 'HbA1c reduction ~1.0% (Yin 2008 RCT, metformin-comparable)', pl: 'Redukcja HbA1c ~1,0% (RCT Yin 2008, porównywalne z metforminą)' },
+      { hu: 'LDL-csökkentés 12-25% (PCSK9-szuppresszióval)', en: 'LDL reduction 12-25% (via PCSK9 suppression)', pl: 'Redukcja LDL 12-25% (przez supresję PCSK9)' },
+      { hu: 'OTC, megfizethető', en: 'OTC, affordable', pl: 'OTC, przystępna cenowo' },
+    ],
+    studies: [
+      { title: 'Efficacy of berberine in patients with type 2 diabetes mellitus', authors: 'Yin J, Xing H, Ye J.', journal: 'Metabolism. 2008;57(5):712-7.', pmid: '18397984' },
+      { title: 'Meta-analysis of the effect and safety of berberine in the treatment of T2DM, hypertension, and hyperlipidemia', authors: 'Lan J, Zhao Y, Dong F et al.', journal: 'J Ethnopharmacol. 2015;161:69-81.', pmid: '25498346' },
+      { title: 'Berberine and the gut microbiota: implications for diabetes and obesity', authors: 'Zhang X, Zhao Y, Zhang M et al.', journal: 'Front Pharmacol. 2020;11:588884.', pmid: '33240094' },
+    ],
+    related: ['metformin'],
+    doseCalc: {
+      type: 'fixedDose',
+      fixedDose: { low: 500, medium: 1000, high: 1500 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Standard 500 mg 2-3x/nap étkezéssel (alacsony bioavailabilitás miatt nagy dózis). Étrendkiegészítő, minőség-bizonytalanság jelentős — érdemes harmadik-fél laboratórium által tesztelt brand-eket választani (USP, NSF certifikáció). NEM helyettesíti a Metformint orvosi indikációban.',
+        en: 'Standard 500 mg 2-3x/day with meals (high dose due to low bioavailability). Dietary supplement, significant quality uncertainty — choose third-party-lab-tested brands (USP, NSF certification). Does NOT replace metformin under medical indication.',
+        pl: 'Standard 500 mg 2-3x/dzień z posiłkami (duża dawka z powodu niskiej biodostępności). Suplement diety, znacząca niepewność jakości — wybierz marki testowane przez laboratoria zewnętrzne (USP, NSF). NIE zastępuje metforminy pod wskazaniem medycznym.',
+      },
+    },
+  },
+
+  // ===== EXTRA 5. ACARBOSE (Anyagcsere, alpha-glucosidase inhibitor) =====
+  {
+    id: 'acarbose',
+    name: 'Acarbose',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'Alpha-glükozidáz inhibitor, Bayer Glucobay. Postprandiális glükóz-csökkentő, főleg ázsiai T2DM-populációkban népszerű.',
+      en: 'Alpha-glucosidase inhibitor, Bayer Glucobay. Postprandial glucose reducer, popular mainly in Asian T2DM populations.',
+      pl: 'Inhibitor alfa-glukozydazy, Bayer Glucobay. Redukcja glukozy poposiłkowej, popularna głównie w populacjach azjatyckich T2DM.',
+    },
+    description: {
+      hu: 'Az Acarbose egy pszeudotetrasacchaaridot, amely a vékonybél kefeszegélyén az alpha-glükozidáz enzimet kompetitíven gátolja, lassítva a szénhidrát-hidrolízist és a glükóz-felszívódást. Ennek eredménye a postprandiális glükóz-csúcsok csökkentése. Az UKPDS-en kívüli legjelentősebb evidencia a STOP-NIDDM trial (Chiasson 2002 Lancet PMID 12086760), ami a prediabétesz T2DM-progressziójának 25%-os csökkentését mutatta. Az Acarbose nem szisztémás (csak bélben aktív), ezért hipoglikémia-kockázat monoterápiában gyakorlatilag nulla. Jelenleg főleg Ázsiában (Kína, Japán) népszerű, ahol a magas-CHO étrend miatt a postprandiális glükóz-management klinikailag releváns.',
+      en: 'Acarbose is a pseudotetrasaccharide that competitively inhibits alpha-glucosidase enzyme on small intestinal brush border, slowing carbohydrate hydrolysis and glucose absorption. This reduces postprandial glucose peaks. Beyond UKPDS, key evidence is STOP-NIDDM trial (Chiasson 2002 Lancet PMID 12086760) showing 25% reduction in prediabetes-to-T2DM progression. Acarbose is non-systemic (gut-active only), so monotherapy hypoglycemia risk is essentially zero. Currently popular mainly in Asia (China, Japan) where high-CHO diet makes postprandial glucose management clinically relevant.',
+      pl: 'Akarboza to pseudotetrasacharyd, który konkurencyjnie hamuje enzym alfa-glukozydazy na rąbku szczoteczkowym jelita cienkiego, spowalniając hydrolizę węglowodanów i wchłanianie glukozy. To zmniejsza piki glukozy poposiłkowej. Poza UKPDS kluczowe dowody to badanie STOP-NIDDM (Chiasson 2002 Lancet PMID 12086760) wykazujące 25% redukcję progresji prediabetes do T2DM. Akarboza nie jest ogólnoustrojowa (aktywna tylko jelitowo), więc ryzyko hipoglikemii w monoterapii jest praktycznie zerowe. Obecnie popularna głównie w Azji (Chiny, Japonia), gdzie dieta wysokowęglowodanowa czyni zarządzanie glukozą poposiłkową istotne klinicznie.',
+    },
+    mechanism: {
+      hu: 'Alpha-glükozidáz enzim (szacharáz, maltáz, glukoamiláz) kompetitív gátlása a bél kefeszegélyén. Eredmény: a komplex szénhidrátok lassabban bomlanak glükózra, a postprandiális glükóz-csúcs lecsökken és kitolódik.',
+      en: 'Competitive inhibition of alpha-glucosidase enzyme (sucrase, maltase, glucoamylase) on intestinal brush border. Result: complex carbs break down to glucose more slowly, lowering and delaying postprandial glucose peak.',
+      pl: 'Konkurencyjne hamowanie enzymu alfa-glukozydazy (sukraza, maltaza, glukoamylaza) na rąbku szczoteczkowym jelita. Rezultat: złożone węglowodany rozkładają się do glukozy wolniej, obniżając i opóźniając pik glukozy poposiłkowej.',
+    },
+    legalStatus: {
+      hu: 'EU/HU: vényköteles (Glucobay). USA: FDA Rx (Precose).',
+      en: 'EU/HU: prescription only (Glucobay). USA: FDA Rx (Precose).',
+      pl: 'UE/PL: na receptę (Glucobay). USA: FDA Rx (Precose).',
+    },
+    onsetTime: 'Acute (per-meal effect), 4-8 weeks (HbA1c)',
+    halfLife: '~2 h (minimally absorbed, mostly bowel-active)',
+    atcCode: 'A10BF01',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: '2-es típusú cukorbetegség, postprandiális glükóz-management', en: 'Type 2 diabetes, postprandial glucose management', pl: 'Cukrzyca typu 2, zarządzanie glukozą poposiłkową' },
+      { hu: 'Prediabétesz (T2DM-progresszió csökkentése, STOP-NIDDM evidencia)', en: 'Prediabetes (T2DM progression reduction, STOP-NIDDM evidence)', pl: 'Stan przedcukrzycowy (redukcja progresji T2DM, dowody STOP-NIDDM)' },
+    ],
+    contraindications: [
+      { hu: 'Krónikus bélgyulladás (IBD, colitis ulcerosa)', en: 'Chronic bowel disease (IBD, ulcerative colitis)', pl: 'Przewlekła choroba jelit (IBD, wrzodziejące zapalenie jelita)' },
+      { hu: 'Hasi diszfunkció, bélelzáródás-hajlam', en: 'Abdominal dysfunction, bowel obstruction predisposition', pl: 'Dysfunkcja brzucha, predyspozycja do niedrożności jelit' },
+      { hu: 'Súlyos vesefunkció-zavar (eGFR < 25)', en: 'Severe renal impairment (eGFR < 25)', pl: 'Ciężka niewydolność nerek (eGFR < 25)' },
+    ],
+    commonSideEffects: [
+      { hu: 'GI: flatulencia (30-60%), hasi puffadás, hasmenés (érdemes lassan emelni a dózist)', en: 'GI: flatulence (30-60%), abdominal bloating, diarrhea (slow dose escalation advised)', pl: 'GI: wzdęcia (30-60%), uczucie pełności, biegunka (zalecana powolna eskalacja)' },
+      { hu: 'Súlyos, ritka: emelkedett májfunkciós értékek (ALT > 3x ULN), pneumatosis intestinalis', en: 'Severe, rare: elevated liver enzymes (ALT > 3x ULN), pneumatosis intestinalis', pl: 'Ciężkie, rzadkie: podwyższone enzymy wątrobowe (ALT > 3x ULN), pneumatosis intestinalis' },
+    ],
+    cyp450: ['Minimally absorbed (<2%)', 'No CYP metabolism'],
+    crossMolInteractions: [
+      { hu: 'Insulin, sulfonylureák: hipoglikémia esetén CSAK glükóz (NEM szacharóz/maltóz) gyors emelkedéshez vezet', en: 'Insulin, sulfonylureas: in hypoglycemia ONLY glucose (NOT sucrose/maltose) provides rapid rise', pl: 'Insulina, sulfonylomoczniki: w hipoglikemii TYLKO glukoza (NIE sacharoza/maltoza) daje szybki wzrost' },
+      { hu: 'Digoxin: plazma-szint csökkenhet, monitor', en: 'Digoxin: plasma level may decrease, monitor', pl: 'Digoksyna: poziom w osoczu może spaść, monitor' },
+    ],
+    benefits: [
+      { hu: 'HbA1c-csökkenés 0,5-1,0% (mérsékelt, postprandiális fókuszú)', en: 'HbA1c reduction 0.5-1.0% (modest, postprandial-focused)', pl: 'Redukcja HbA1c 0,5-1,0% (umiarkowana, skoncentrowana na poposiłkowej)' },
+      { hu: 'Súlyneutrális (vs sulfonylureák súlygyarapodás)', en: 'Weight neutral (vs sulfonylurea weight gain)', pl: 'Neutralna dla wagi (vs przyrost masy przy sulfonylomocznikach)' },
+      { hu: 'Hipoglikémia-rizikó nulla monoterápiában', en: 'Zero hypoglycemia risk in monotherapy', pl: 'Zerowe ryzyko hipoglikemii w monoterapii' },
+      { hu: 'STOP-NIDDM: T2DM-prevenció prediabétesznél', en: 'STOP-NIDDM: T2DM prevention in prediabetes', pl: 'STOP-NIDDM: prewencja T2DM w stanie przedcukrzycowym' },
+    ],
+    studies: [
+      { title: 'Acarbose for prevention of type 2 diabetes mellitus (STOP-NIDDM)', authors: 'Chiasson JL, Josse RG, Gomis R et al.', journal: 'Lancet. 2002;359(9323):2072-7.', pmid: '12086760' },
+      { title: 'Acarbose vs metformin in newly-diagnosed T2DM Chinese patients (MARCH)', authors: 'Yang W, Liu J, Shan Z et al.', journal: 'Lancet Diabetes Endocrinol. 2014;2(1):46-55.', pmid: '24622668' },
+      { title: 'Acarbose cardiovascular evaluation (ACE) in patients with coronary heart disease', authors: 'Holman RR, Coleman RL, Chan JCN et al.', journal: 'Lancet Diabetes Endocrinol. 2017;5(11):877-886.', pmid: '28917545' },
+    ],
+    related: ['metformin'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1-2 (start)', en: 'Weeks 1-2 (start)', pl: 'Tygodnie 1-2 (start)' }, dose: '25' },
+        { phase: { hu: 'Hét 3-4', en: 'Weeks 3-4', pl: 'Tygodnie 3-4' }, dose: '50' },
+        { phase: { hu: 'Cél (3x/nap)', en: 'Target (3x/day)', pl: 'Cel (3x/dzień)' }, dose: '100' },
+      ],
+      unit: 'mg étkezésenként',
+      note: {
+        hu: 'Étkezés ELEJÉN bevenni (az első falattal). Lassú titráció a GI-tolerancia érdekében. Hipoglikémia kezelése: CSAK tiszta glükóz (NEM szacharóz/maltóz) emeli a vércukrot Acarbose alatt.',
+        en: 'Take at MEAL START (with first bite). Slow titration for GI tolerance. Hypoglycemia treatment: ONLY pure glucose (NOT sucrose/maltose) raises blood sugar under acarbose.',
+        pl: 'Przyjmuj na POCZĄTKU posiłku (z pierwszym kęsem). Powolna titracja dla tolerancji GI. Leczenie hipoglikemii: TYLKO czysta glukoza (NIE sacharoza/maltoza) podnosi cukier pod akarbozą.',
+      },
+    },
+  },
+
+  // ===== EXTRA 6. GLIMEPIRID (Anyagcsere, 2nd gen sulfonylurea) =====
+  {
+    id: 'glimepirid',
+    name: 'Glimepirid',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: '2. generációs sulfonylurea, Sanofi Amaryl. Klasszikus T2DM-szer, de a ADA/EASD 2022 alapján modern alternatívák (GLP-1 RA, SGLT2i) priorizálandók.',
+      en: '2nd-generation sulfonylurea, Sanofi Amaryl. Classic T2DM drug, but ADA/EASD 2022 prioritizes modern alternatives (GLP-1 RA, SGLT2i).',
+      pl: 'Sulfonylomocznik 2. generacji, Sanofi Amaryl. Klasyczny lek T2DM, ale ADA/EASD 2022 priorytetyzuje nowoczesne alternatywy (GLP-1 RA, SGLT2i).',
+    },
+    description: {
+      hu: 'A Glimepirid egy 2. generációs sulfonylurea, amelyet a Sanofi-Aventis fejlesztett ki (Amaryl, FDA 1995). A β-sejtek ATP-érzékeny K-csatorna-zárásával insulin-szekréciót stimulál, NEM glükóz-függő módon — ezért hipoglikémia-rizikója szignifikáns. A klasszikus T2DM-portfólióban "olcsó és hatékony" elem, de a kardiovaszkuláris végpont-evidencia hiánya és a hipoglikémia-rizikó miatt az ADA/EASD 2022 konszenzus a GLP-1 RA, SGLT2i és DPP-4i mögé pozícionálja. Még mindig használt költségérzékeny vagy compliance-szempontból egyszerűbb regimre szoruló betegeknél.',
+      en: 'Glimepiride is a 2nd-generation sulfonylurea developed by Sanofi-Aventis (Amaryl, FDA 1995). It stimulates β-cell insulin secretion by closing ATP-sensitive K channels, NOT glucose-dependently — so hypoglycemia risk is significant. In the classic T2DM portfolio it is a "cheap and effective" element, but lacking CV outcome evidence and with hypoglycemia risk, the ADA/EASD 2022 consensus places it behind GLP-1 RA, SGLT2i, and DPP-4i. Still used in cost-sensitive or compliance-simple regimen patients.',
+      pl: 'Glimepiryd to sulfonylomocznik 2. generacji opracowany przez Sanofi-Aventis (Amaryl, FDA 1995). Stymuluje wydzielanie insuliny komórek β przez zamykanie kanałów K zależnych od ATP, NIE w sposób zależny od glukozy — więc ryzyko hipoglikemii jest znaczące. W klasycznym portfolio T2DM jest elementem "tanim i skutecznym", ale z braku dowodów CV i z ryzykiem hipoglikemii, konsensus ADA/EASD 2022 umieszcza go za GLP-1 RA, SGLT2i i DPP-4i. Wciąż stosowany u pacjentów wrażliwych kosztowo lub wymagających prostego compliance.',
+    },
+    mechanism: {
+      hu: 'Az ATP-érzékeny K-csatornák (KATP, SUR1/Kir6.2) zárása a pankreász β-sejtekben → depolarizáció → Ca²⁺-beáramlás → inzulin-szekréció. NEM glükóz-függő, ezért hipoglikémiát okozhat alacsony vércukor mellett is.',
+      en: 'Closes ATP-sensitive K channels (KATP, SUR1/Kir6.2) in pancreatic β-cells → depolarization → Ca²⁺ influx → insulin secretion. NOT glucose-dependent, so hypoglycemia possible even at low glucose.',
+      pl: 'Zamyka kanały K zależne od ATP (KATP, SUR1/Kir6.2) w komórkach β trzustki → depolaryzacja → napływ Ca²⁺ → wydzielanie insuliny. NIE zależne od glukozy, więc hipoglikemia możliwa nawet przy niskiej glukozie.',
+    },
+    legalStatus: {
+      hu: 'EU/HU: vényköteles (Amaryl, generikus). USA: FDA Rx.',
+      en: 'EU/HU: prescription only (Amaryl, generics). USA: FDA Rx.',
+      pl: 'UE/PL: na receptę (Amaryl, generyki). USA: FDA Rx.',
+    },
+    onsetTime: '1-3 h (acute), 1-2 weeks (steady-state HbA1c)',
+    halfLife: '~5-8 h (once-daily morning dosing)',
+    atcCode: 'A10BB12',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: '2-es típusú cukorbetegség, Metformin-kiegészítés vagy alternatíva', en: 'Type 2 diabetes, adjunct to or alternative to metformin', pl: 'Cukrzyca typu 2, uzupełnienie lub alternatywa metforminy' },
+    ],
+    contraindications: [
+      { hu: '1-es típusú cukorbetegség, diabéteszes ketoacidózis', en: 'Type 1 diabetes, diabetic ketoacidosis', pl: 'Cukrzyca typu 1, kwasica ketonowa cukrzycowa' },
+      { hu: 'Súlyos máj- vagy vesefunkció-zavar', en: 'Severe hepatic or renal impairment', pl: 'Ciężka niewydolność wątroby lub nerek' },
+      { hu: 'Szulfonamid-allergia', en: 'Sulfonamide allergy', pl: 'Alergia na sulfonamidy' },
+    ],
+    commonSideEffects: [
+      { hu: 'Hipoglikémia (szignifikáns, főleg idős, étkezést kihagyó, vesefunkció-zavarú betegeknél)', en: 'Hypoglycemia (significant, especially elderly, meal-skipping, renal-impaired)', pl: 'Hipoglikemia (znacząca, zwłaszcza u starszych, pomijających posiłki, z niewydolnością nerek)' },
+      { hu: 'Súlygyarapodás (átlag 2-3 kg)', en: 'Weight gain (averaging 2-3 kg)', pl: 'Przyrost masy (średnio 2-3 kg)' },
+      { hu: 'GI: hányinger, hasmenés (5%), allergiás bőrkiütés', en: 'GI: nausea, diarrhea (5%), allergic skin rash', pl: 'GI: nudności, biegunka (5%), alergiczna wysypka' },
+    ],
+    cyp450: ['CYP2C9 substrate (primary)', 'CYP2C9 polymorphism affects dose response'],
+    crossMolInteractions: [
+      { hu: 'CYP2C9-inhibitor (Fluconazole, Amiodarone): plazma-Glimepirid emelkedhet, hipoglikémia-rizikó', en: 'CYP2C9 inhibitors (fluconazole, amiodarone): plasma glimepiride may rise, hypoglycemia risk', pl: 'Inhibitory CYP2C9 (flukonazol, amiodaron): poziom glimepirydu może wzrosnąć, ryzyko hipoglikemii' },
+      { hu: 'Béta-blokkoló (Metoprolol, Bisoprolol): hipoglikémia-tüneteket maszkolja', en: 'Beta-blocker (metoprolol, bisoprolol): masks hypoglycemia symptoms', pl: 'Beta-bloker (metoprolol, bisoprolol): maskuje objawy hipoglikemii' },
+      { hu: 'Alkohol: disulfiram-szerű reakció + hipoglikémia-fokozás', en: 'Alcohol: disulfiram-like reaction + hypoglycemia enhancement', pl: 'Alkohol: reakcja podobna do disulfiramu + nasilenie hipoglikemii' },
+    ],
+    benefits: [
+      { hu: 'HbA1c-csökkenés 1,0-1,5%, gyors hatáskezdet', en: 'HbA1c reduction 1.0-1.5%, fast onset', pl: 'Redukcja HbA1c 1,0-1,5%, szybki początek' },
+      { hu: 'Olcsó, generikus, hosszú-távú elérhetőség', en: 'Cheap, generic, long-term availability', pl: 'Tani, generyczny, długoterminowa dostępność' },
+      { hu: 'Napi egyszeri adagolás (jó compliance)', en: 'Once-daily dosing (good compliance)', pl: 'Dawkowanie raz dziennie (dobry compliance)' },
+    ],
+    studies: [
+      { title: 'Pharmacokinetics and pharmacodynamics of glimepiride', authors: 'Massi-Benedetti M.', journal: 'Clin Ther. 2003;25(3):799-816.', pmid: '12852704' },
+      { title: 'Effect of intensive blood-glucose control with sulphonylureas or insulin (UKPDS 33)', authors: 'UK Prospective Diabetes Study (UKPDS) Group.', journal: 'Lancet. 1998;352(9131):837-53.', pmid: '9742976' },
+      { title: 'Cardiovascular outcomes with glimepiride vs linagliptin in T2DM (CAROLINA)', authors: 'Rosenstock J, Kahn SE, Johansen OE et al.', journal: 'JAMA. 2019;322(12):1155-1166.', pmid: '31536101' },
+    ],
+    related: ['metformin'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1-2 (start)', en: 'Weeks 1-2 (start)', pl: 'Tygodnie 1-2 (start)' }, dose: '1' },
+        { phase: { hu: 'Hét 3+', en: 'Week 3+', pl: 'Tydzień 3+' }, dose: '2' },
+        { phase: { hu: 'Cél', en: 'Target', pl: 'Cel' }, dose: '4' },
+        { phase: { hu: 'Max-dózis', en: 'Max dose', pl: 'Maks. dawka' }, dose: '8' },
+      ],
+      unit: 'mg/nap (reggel)',
+      note: {
+        hu: 'Reggeli ELŐTT vagy KÖZBEN bevenni. Hipoglikémia-rizikó miatt étkezést NE HAGYJON KI. Idős vagy vesefunkció-zavar esetén alacsonyabb induló dózis (0,5-1 mg/nap). Alkohol kerülendő.',
+        en: 'Take BEFORE or WITH breakfast. Due to hypoglycemia risk DO NOT SKIP MEALS. Lower start dose in elderly or renal impairment (0.5-1 mg/day). Avoid alcohol.',
+        pl: 'Przyjmuj PRZED lub Z śniadaniem. Z powodu ryzyka hipoglikemii NIE POMIJAJ POSIŁKÓW. Niższa dawka początkowa u starszych lub niewydolnych nerek (0,5-1 mg/dzień). Unikaj alkoholu.',
+      },
+    },
+  },
+]
 
 export const PHARMACEUTICAL = [...CORE_PHARMACEUTICAL, ...EXTRA_PHARMACEUTICAL]
 
