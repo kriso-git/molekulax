@@ -43,6 +43,22 @@
  */
 
 /**
+ * @typedef {Object} BloodworkPhase
+ * @property {I18nString} label   Phase label (e.g. "Ciklus előtt").
+ * @property {I18nString} timing  When to draw labs (e.g. "2-4 héttel ciklus indítás előtt").
+ * @property {I18nString} markers Comma-separated bloodwork markers.
+ * @property {I18nString} purpose Why this phase matters.
+ */
+
+/**
+ * @typedef {Object} BloodworkProtocol
+ * @property {BloodworkPhase} preCycle
+ * @property {BloodworkPhase} midCycle
+ * @property {BloodworkPhase} postCycle
+ * @property {BloodworkPhase|null} [cruise] Optional, set null for prohormones / growth-only entries.
+ */
+
+/**
  * @typedef {Object} Entry
  * @property {string} id Unique slug within the library.
  * @property {string} name Display name (not localized).
@@ -72,6 +88,13 @@
  * @property {string} [halfLife] Render-only string, e.g. "12-15 h".
  * @property {string[]} [interactionsWith] Chip-list (e.g. ['caffeine','alcohol','SSRI']).
  * @property {'banned'|'monitored'|null} [wadaStatus]
+ *
+ * Phase 5 performance fields (all optional):
+ * @property {string}             [androgenicRatio]  AAS anabolic:androgenic ratio, e.g. "100:100", "320:24".
+ * @property {I18nString}         [bindingAffinity]  Receptor affinity short description (mainly AAS context).
+ * @property {I18nString}         [detectionWindow]  Sport-doping detection window (urine/blood).
+ * @property {string}             [halfLifeActive]   Active metabolite half-life when parent vs metabolite differ.
+ * @property {BloodworkProtocol}  [bloodwork]        Structured bloodwork protocol; renders BloodworkProtocol component.
  */
 
 /**
