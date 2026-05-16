@@ -928,5 +928,8 @@ export function adaptLibraryEntry(entry, library) {
  related,
  faqList: deriveFaqs(peptide, tier),
  citations: deriveCitations(peptide),
+ // ─── Phase 5 passthrough: structured bloodwork + per-entry dose helper ───
+ bloodwork: peptide.bloodwork || null,
+ doseCalc: peptide.doseCalc || null,
  }
 }
