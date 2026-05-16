@@ -35,6 +35,21 @@ export const EXPLICIT_LEVEL = {
   aripiprazole:    3,
   lamotrigine:     3,
   methylphenidate: 4,
+  // EXTRA Kardio
+  rosuvastatin:    4,
+  ramipril:        5,
+  bisoprolol:      5,
+  amlodipine:      5,
+  apixaban:        4,
+  // EXTRA Endokrin
+  methimazole:     5,
+  hydrocortisone:  5,
+  liothyronine:    5,
+  // EXTRA Antiinfekt
+  azithromycin:    5,
+  ciprofloxacin:   5,
+  doxycycline:     5,
+  metronidazole:   5,
 }
 
 /**

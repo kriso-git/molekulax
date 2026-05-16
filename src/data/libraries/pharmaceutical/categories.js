@@ -40,6 +40,21 @@ export const PHARMACEUTICAL_CATEGORIES = {
   aripiprazole:    ['psychiatry'],
   lamotrigine:     ['psychiatry'],
   methylphenidate: ['psychiatry'],
+  // EXTRA Kardio
+  rosuvastatin:    ['cardio'],
+  ramipril:        ['cardio'],
+  bisoprolol:      ['cardio'],
+  amlodipine:      ['cardio'],
+  apixaban:        ['cardio'],
+  // EXTRA Endokrin
+  methimazole:     ['endocrine'],
+  hydrocortisone:  ['endocrine'],
+  liothyronine:    ['endocrine'],
+  // EXTRA Antiinfekt
+  azithromycin:    ['antiinfective'],
+  ciprofloxacin:   ['antiinfective'],
+  doxycycline:     ['antiinfective'],
+  metronidazole:   ['antiinfective'],
 }
 
 export function getPharmaceuticalCategories(entryId) {
