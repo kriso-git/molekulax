@@ -340,9 +340,6 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
           <LibrarySwitcher />
 
           <div className="text-center mb-16">
-            <p className="text-[#818cf8] text-xs tracking-[0.3em] uppercase mb-5">
-              {t('gal.eyebrow')}
-            </p>
             <h2 className="text-3xl md:text-5xl font-bold italic text-white mb-4">
               {library.name ? tr(library.name) : t('gal.title')}
             </h2>
@@ -356,7 +353,7 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
             <h3 className="text-[#818cf8] text-[11px] font-semibold tracking-[0.3em] uppercase flex items-center gap-2">
               <Star size={11} strokeWidth={2.5} className="text-[#818cf8]" fill="currentColor" />
-              {t('gal.top10.title')}
+              {library.labels?.topTitle ? tr(library.labels.topTitle) : t('gal.top10.title')}
             </h3>
             <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
           </div>
@@ -397,10 +394,10 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
                 </div>
                 <div className="text-left">
                   <h3 className="text-white text-base md:text-lg font-bold italic">
-                    {t('gal.all.title')}
+                    {library.labels?.allTitle ? tr(library.labels.allTitle) : t('gal.all.title')}
                   </h3>
                   <p className="text-gray-500 text-xs mt-0.5">
-                    {library.entries.length} {t('gal.all.count')}
+                    {library.entries.length} {library.labels?.allCount ? tr(library.labels.allCount) : t('gal.all.count')}
                   </p>
                 </div>
               </div>
@@ -439,7 +436,7 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
                       className="text-xs mt-1 leading-relaxed"
                       style={{ color: 'var(--text-muted)' }}
                     >
-                      {t('gal.help.body')}
+                      {library.labels?.helpBody ? tr(library.labels.helpBody) : t('gal.help.body')}
                     </p>
                   </div>
                   <div className="shrink-0">

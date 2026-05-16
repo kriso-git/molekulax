@@ -37,6 +37,22 @@ export const nootropicsLibrary = {
     en: 'Nootropic effect profiles and scientific background',
     pl: 'Profile efektów nootropików i podstawy naukowe',
   },
+  labels: {
+    topTitle:   { hu: '10 Legnépszerűbb Nootropikum', en: 'Top 10 Most Popular Nootropics', pl: '10 najpopularniejszych nootropików' },
+    allTitle:   { hu: 'Összes Nootropikum',           en: 'All Nootropics',                 pl: 'Wszystkie nootropiki' },
+    allCount:   { hu: 'nootropikum',                  en: 'nootropics',                     pl: 'nootropików' },
+    helpBody:   {
+      hu: 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk a megfelelő nootropikum kiválasztásában.',
+      en: 'Reach out to an advisor on Telegram. We can help you find the right nootropic.',
+      pl: 'Skontaktuj się z doradcą na Telegramie. Chętnie pomożemy znaleźć właściwy nootropik.',
+    },
+    relatedLabel: { hu: 'Kapcsolódó nootropikumok',   en: 'Related nootropics',             pl: 'Powiązane nootropiki' },
+    contactTitle: {
+      hu: 'Van kérdésed a nootropikumokkal kapcsolatban?',
+      en: 'Have a question about nootropics?',
+      pl: 'Masz pytanie dotyczące nootropików?',
+    },
+  },
 }
 
 // Convenience re-exports — direct consumers can still pull these.

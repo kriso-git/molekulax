@@ -17,6 +17,7 @@ import {
 } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
 import { useTheme } from '../../theme/ThemeContext'
+import { useLibrary } from '../../context/LibraryContext'
 import TelegramButtons from '../TelegramButtons'
 import MiniCalc from '../MiniCalc'
 
@@ -1242,15 +1243,24 @@ function StudyCard({ s, accent, tr, t }) {
   const finding = s.finding ? (typeof s.finding === 'string' ? s.finding : tr(s.finding)) : null
   const tagText = s.tag ? (typeof s.tag === 'string' ? s.tag : tr(s.tag)) : null
   const tagColor = s.tagText || accent
+  // Auto-derive PubMed URL from PMID if no explicit URL provided.
+  const studyUrl = s.url || (s.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/` : null)
+  // The card itself is a link when we have a URL — keep the inner layout untouched.
+  const CardTag = studyUrl ? 'a' : 'article'
+  const cardLinkProps = studyUrl
+    ? { href: studyUrl, target: '_blank', rel: 'noopener noreferrer', 'aria-label': `${title} — PubMed` }
+    : {}
   return (
-    <article
+    <CardTag
       ref={tiltRef}
-      className="mlx-study-card group relative p-4 rounded-2xl overflow-hidden transition-transform duration-300 will-change-transform"
+      {...cardLinkProps}
+      className="mlx-study-card group relative p-4 rounded-2xl overflow-hidden transition-transform duration-300 will-change-transform block no-underline"
       style={{
         background: `linear-gradient(180deg, var(--tint-row), var(--tint-soft))`,
         border: `1px solid ${accent}33`,
         boxShadow: `0 12px 32px -20px ${accent}55`,
         transformStyle: 'preserve-3d',
+        cursor: studyUrl ? 'pointer' : 'default',
         '--mlx-accent': accent,
         '--mlx-tag': tagColor,
       }}
@@ -1315,28 +1325,27 @@ function StudyCard({ s, accent, tr, t }) {
                   PMID: {s.pmid}
                 </span>
               )}
-              {s.url && (
-                <a
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-[10px] tracking-[0.22em] uppercase font-bold hover:underline ml-auto"
+              {studyUrl && (
+                <span
+                  className="inline-flex items-center gap-1 text-[10px] tracking-[0.22em] uppercase font-bold ml-auto"
                   style={{ color: accent }}
                 >
                   {t('entry.studies.view') || 'Megnyitás'}
                   <ExternalLink size={11} />
-                </a>
+                </span>
               )}
             </div>
       </div>
-    </article>
+    </CardTag>
   )
 }
 
 export default function EntryDetail({ peptide, onClose, onJump }) {
   const { t, tr } = useLang()
   const { theme } = useTheme()
+  const { library } = useLibrary()
   const isLight = theme === 'light'
+  const relatedLabel = library?.labels?.relatedLabel ? tr(library.labels.relatedLabel) : (t('entry.rel.label') || 'Kapcsolódó peptidek')
   const [tab, setTab] = useState('molecular')
   const [entered, setEntered] = useState(false)
   const magnetRef = useMagnet(0.25)
@@ -1956,7 +1965,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
                 }
               }
             `}</style>
-            <Eyebrow icon={Layers} label={t('entry.rel.label') || 'Kapcsolódó peptidek'} accent={accent} />
+            <Eyebrow icon={Layers} label={relatedLabel} accent={accent} />
             <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
               {t('entry.rel.title') || 'Hasonló terápiás kategóriában'}
             </h3>
@@ -1996,23 +2005,25 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
           </section>
         )}
 
-        {/* ─── MINI CALC ─── */}
-        <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
-          <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
-          <div
-            className="relative p-2 rounded-2xl"
-            style={{
-              background: `linear-gradient(135deg, ${accent}22, transparent 70%)`,
-              border: `1px solid ${accent}44`,
-            }}
-          >
-            <MiniCalc
-              defaultVialMg={peptide.miniCalc?.vialMg}
-              defaultBacMl={peptide.miniCalc?.bacMl}
-              defaultDoseMcg={peptide.miniCalc?.doseMcg}
-            />
-          </div>
-        </section>
+        {/* ─── MINI CALC ─── (peptide-only: hidden if no reconstitution defaults) */}
+        {peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg && (
+          <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
+            <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
+            <div
+              className="relative p-2 rounded-2xl"
+              style={{
+                background: `linear-gradient(135deg, ${accent}22, transparent 70%)`,
+                border: `1px solid ${accent}44`,
+              }}
+            >
+              <MiniCalc
+                defaultVialMg={peptide.miniCalc.vialMg}
+                defaultBacMl={peptide.miniCalc.bacMl}
+                defaultDoseMcg={peptide.miniCalc.doseMcg}
+              />
+            </div>
+          </section>
+        )}
 
         {/* ─── Telegram CTA ─── */}
         <section id="v2-tg" className="relative px-6 sm:px-10 pb-10">

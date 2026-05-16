@@ -65,14 +65,30 @@ export default function EntryDetailRoute({ hash }) {
     if (parsed && !liveEntry) closeDetail()
   }, [parsed, liveEntry])
 
+  // Smooth-scroll to top whenever the active entry changes (e.g. clicking a
+  // RelatedCard navigates from #entry/.../A to #entry/.../B). Without this,
+  // the user lands mid-page on the new entry.
+  useEffect(() => {
+    if (!parsed?.id) return
+    if (typeof window === 'undefined') return
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    })
+  }, [parsed?.library, parsed?.id])
+
   if (!peptide) return null
 
   const handleJump = (id) => {
     window.location.hash = `entry/${library.id}/${id}`
   }
 
+  // Keying on library:id forces React to fully remount EntryDetail when the
+  // user navigates to a different entry. This prevents the stale name/title
+  // flash that occurred when only props changed in-place during hashchange.
+  const entryKey = `${library.id}:${peptide.id}`
+
   if (isDesktop) {
-    return <EntryDetail peptide={peptide} onClose={closeDetail} onJump={handleJump} />
+    return <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
   }
 
   return (
@@ -100,7 +116,7 @@ export default function EntryDetailRoute({ hash }) {
         >
           <X size={18} strokeWidth={2.5} />
         </button>
-        <EntryDetail peptide={peptide} onClose={closeDetail} onJump={handleJump} />
+        <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
       </div>
     </div>
   )

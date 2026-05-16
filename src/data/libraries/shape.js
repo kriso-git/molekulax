@@ -99,6 +99,17 @@
  * @property {EffectCategory[]} effects             NEW Phase 4 — Hatásterületek tiles.
  * @property {I18nString} effectsTitle              NEW Phase 4 — section header.
  * @property {I18nString} effectsSubtitle           NEW Phase 4 — section subtitle.
+ * @property {LibraryLabels} [labels]               NEW Phase 4 — per-library UI string overrides; falls back to i18n.
+ */
+
+/**
+ * @typedef {Object} LibraryLabels
+ * @property {I18nString} topTitle        "10 Legnépszerűbb {noun}"
+ * @property {I18nString} allTitle        "Összes {noun}"
+ * @property {I18nString} allCount        Singular noun for entry counter ("peptid" / "nootropikum").
+ * @property {I18nString} helpBody        Library-specific help-callout body inside accordion.
+ * @property {I18nString} relatedLabel    EntryDetail "Related" section label.
+ * @property {I18nString} contactTitle    Homepage Telegram CTA section title.
  */
 
 // This module exports nothing at runtime — types only.

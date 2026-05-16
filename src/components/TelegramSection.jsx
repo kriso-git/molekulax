@@ -1,9 +1,14 @@
 import { MessageCircle } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
+import { useLibrary } from '../context/LibraryContext'
 import TelegramButtons from './TelegramButtons'
 
 export default function TelegramSection() {
-  const { t } = useLang()
+  const { t, tr } = useLang()
+  const { library } = useLibrary()
+  const title = library?.labels?.contactTitle
+    ? tr(library.labels.contactTitle)
+    : t('tg.title')
   return (
     <section className="py-20 px-4">
       <div className="max-w-3xl mx-auto">
@@ -29,7 +34,7 @@ export default function TelegramSection() {
             <div className="flex items-start gap-4 mb-4">
               <MessageCircle size={26} className="text-[#818cf8] mt-1 shrink-0" strokeWidth={1.5} />
               <h3 className="text-xl md:text-2xl text-white font-bold italic leading-snug">
-                {t('tg.title')}
+                {title}
               </h3>
             </div>
 

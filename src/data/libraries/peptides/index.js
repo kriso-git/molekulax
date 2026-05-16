@@ -38,6 +38,22 @@ export const peptidesLibrary = {
     en: 'Peptide effect groups and scientific background',
     pl: 'Grupy efektów peptydów i podstawy naukowe',
   },
+  labels: {
+    topTitle:   { hu: '10 Legnépszerűbb Peptid', en: 'Top 10 Most Popular Peptides', pl: '10 najpopularniejszych peptydów' },
+    allTitle:   { hu: 'Összes Peptid',           en: 'All Peptides',                 pl: 'Wszystkie peptydy' },
+    allCount:   { hu: 'peptid',                  en: 'peptides',                     pl: 'peptydów' },
+    helpBody:   {
+      hu: 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk a megfelelő peptid kiválasztásában.',
+      en: 'Reach out to an advisor on Telegram. We can help you find the right peptide.',
+      pl: 'Skontaktuj się z doradcą na Telegramie. Chętnie pomożemy znaleźć właściwy peptyd.',
+    },
+    relatedLabel: { hu: 'Kapcsolódó peptidek',   en: 'Related peptides',             pl: 'Powiązane peptydy' },
+    contactTitle: {
+      hu: 'Van kérdésed a peptidekkel kapcsolatban?',
+      en: 'Have a question about peptides?',
+      pl: 'Masz pytanie dotyczące peptydów?',
+    },
+  },
 }
 
 // Convenience re-exports — peptide-specific consumers (Calculator, etc.) that
