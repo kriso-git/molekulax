@@ -1372,7 +1372,7 @@ export const NOOTROPICS = [
 
   {
     id: 'cdp-choline',
-    name: 'CDP-Choline / Citicoline',
+    name: 'CDP-Choline',
     image: null,
     accentColor: '#06b6d4',
     tagColor: 'rgba(6,182,212,0.18)',
@@ -1484,7 +1484,7 @@ export const NOOTROPICS = [
 
   {
     id: 'selegiline',
-    name: 'Selegiline (L-Deprenyl)',
+    name: 'Selegiline',
     image: null,
     accentColor: '#f43f5e',
     tagColor: 'rgba(244,63,94,0.18)',
@@ -1668,7 +1668,7 @@ export const NOOTROPICS = [
 
   {
     id: 'f-phenibut',
-    name: 'F-Phenibut (Fluorophenibut)',
+    name: 'F-Phenibut',
     image: null,
     accentColor: '#10b981',
     tagColor: 'rgba(16,185,129,0.18)',
@@ -1780,7 +1780,7 @@ export const NOOTROPICS = [
 
   {
     id: 'ashwagandha',
-    name: 'Ashwagandha (Withania somnifera)',
+    name: 'Ashwagandha',
     image: null,
     accentColor: '#84cc16',
     tagColor: 'rgba(132,204,22,0.18)',
@@ -1852,7 +1852,7 @@ export const NOOTROPICS = [
 
   {
     id: 'lions-mane',
-    name: 'Lion`s Mane (Hericium erinaceus)',
+    name: 'Lion`s Mane',
     image: null,
     accentColor: '#84cc16',
     tagColor: 'rgba(132,204,22,0.18)',
@@ -1924,7 +1924,7 @@ export const NOOTROPICS = [
 
   {
     id: 'tongkat-ali',
-    name: 'Tongkat Ali (Eurycoma longifolia)',
+    name: 'Tongkat Ali',
     image: null,
     accentColor: '#84cc16',
     tagColor: 'rgba(132,204,22,0.18)',
@@ -2036,7 +2036,7 @@ export const NOOTROPICS = [
 
   {
     id: 'dihexa',
-    name: 'Dihexa (PNB-0408)',
+    name: 'Dihexa',
     image: null,
     accentColor: '#00ff99',
     tagColor: 'rgba(0,255,153,0.18)',
@@ -2108,7 +2108,7 @@ export const NOOTROPICS = [
 
   {
     id: 'magnesium-l-threonate',
-    name: 'Magnesium L-Threonate (Magtein)',
+    name: 'Magnesium L-Threonate',
     image: null,
     accentColor: '#00ff99',
     tagColor: 'rgba(0,255,153,0.18)',
