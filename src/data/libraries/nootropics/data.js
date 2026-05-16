@@ -1737,4 +1737,224 @@ export const NOOTROPICS = [
       pl: 'Lek na receptę w Rosji. W 2015 r. FDA orzekła, że nie spełnia definicji suplementu diety i usunęła go z rynku amerykańskiego. Niezregulowany w innych państwach UE.',
     },
   },
+
+  // ============================================================
+  // EXTRA — Adaptogens + Natural (Task 7, Batch 4)
+  // ============================================================
+
+  {
+    id: 'bacopa',
+    name: 'Bacopa monnieri',
+    image: null,
+    accentColor: '#84cc16',
+    tagColor: 'rgba(132,204,22,0.18)',
+    shortDesc: {
+      hu: 'Ayurvédikus gyógynövény — bakozid-glikozidok, memória + anxiolítikum.',
+      en: 'Ayurvedic herb — bacoside glycosides, memory + anxiolytic.',
+      pl: 'Zioło ajurwedyjskie — glikozydy bakozydowe, pamięć + anksjolityk.',
+    },
+    description: {
+      hu: 'A Bacopa monnieri (Brahmi) az ayurvédikus gyógyászat klasszikus „medhya rasayana" (intellektus-tonizáló) gyógynövénye. Hatóanyagai a bakozid A és B (és származékai) triterpén-szaponinok. Több kettősvak placebókontrollált humán vizsgálatban (RCT, 12 hét, 300-600 mg standardizált kivonat) memória- és reakcióidő-javulást írtak le, de az effektusméret szerény.',
+      en: 'Bacopa monnieri (Brahmi) is the classical “medhya rasayana” (intellect-tonifying) herb of Ayurvedic medicine. Its actives are bacoside A and B (and derivatives), triterpene saponins. Multiple double-blind placebo-controlled human trials (RCT, 12 weeks, 300-600 mg standardized extract) describe memory and reaction-time improvement, though the effect size is modest.',
+      pl: 'Bacopa monnieri (Brahmi) to klasyczne zioło „medhya rasayana” (tonizujące intelekt) medycyny ajurwedyjskiej. Substancjami czynnymi są bakozyd A i B (oraz pochodne), saponiny triterpenowe. Wiele badań klinicznych z podwójnie ślepą próbą i placebo (RCT, 12 tygodni, 300-600 mg standaryzowanego ekstraktu) opisuje poprawę pamięci i czasu reakcji, choć rozmiar efektu jest umiarkowany.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Antioxidáns + cholinerg + BDNF', en: 'Antioxidant + cholinergic + BDNF', pl: 'Antyoksydacyjny + cholinergiczny + BDNF' } },
+      { label: { hu: 'Hatásbeállás', en: 'Onset', pl: 'Początek działania' },
+        value: { hu: '4-12 hét krónikus szedés', en: '4-12 weeks chronic use', pl: '4-12 tygodni przewlekłego stosowania' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'OTC étrend-kiegészítő', en: 'OTC dietary supplement', pl: 'Suplement diety OTC' } },
+    ],
+    mechanism: {
+      hu: 'A bakozidok antioxidáns aktivitást (lipid-peroxidáció gátlás a hippokampuszban), cholinerg facilitációt (AChE-gátlás), és krónikus szedés esetén BDNF-up-regulációt mutatnak — innen ered a memória-javulás 8-12 hetes plató-hatása.',
+      en: 'Bacosides exert antioxidant activity (lipid peroxidation inhibition in the hippocampus), cholinergic facilitation (AChE inhibition), and with chronic use BDNF up-regulation — hence the 8-12-week plateau in memory improvement.',
+      pl: 'Bakozydy wykazują aktywność antyoksydacyjną (hamowanie peroksydacji lipidów w hipokampie), ułatwianie cholinergiczne (hamowanie AChE) i przy przewlekłym stosowaniu regulację w górę BDNF — stąd plateau 8-12 tygodni w poprawie pamięci.',
+    },
+    legalStatus: {
+      hu: 'Étrend-kiegészítőként szabadon kapható EU-szerte és USA-ban. Indiában gyógynövényként minden boltban elérhető. Magyarországon kiegészítőként szabadon hozzáférhető.',
+      en: 'Freely available as a dietary supplement throughout the EU and the USA. Available as a herb in every shop in India. Freely available as a supplement in Hungary.',
+      pl: 'Wolno dostępna jako suplement diety w całej UE i USA. Dostępna jako zioło w każdym sklepie w Indiach. Wolno dostępna jako suplement na Węgrzech.',
+    },
+  },
+
+  {
+    id: 'ashwagandha',
+    name: 'Ashwagandha (Withania somnifera)',
+    image: null,
+    accentColor: '#84cc16',
+    tagColor: 'rgba(132,204,22,0.18)',
+    shortDesc: {
+      hu: 'Indiai ginszeng — withanolid-glikozidok, kortizol-csökkentő adaptogén.',
+      en: 'Indian ginseng — withanolide glycosides, cortisol-reducing adaptogen.',
+      pl: 'Indyjski żeń-szeń — glikozydy witanolidowe, adaptogen obniżający kortyzol.',
+    },
+    description: {
+      hu: 'Az Ashwagandha (Withania somnifera) az ayurvédikus rasayana-medicina egyik leg-szélesebb körben kutatott adaptogénje. Hatóanyagai a withanolid-glikozidok (különösen a withaferin-A és a withanolid-A). Több RCT-ben (KSM-66 és Sensoril standardizált kivonatokkal) statisztikailag szignifikáns kortizol-csökkenést és stressz-tünetek mérséklődését írtak le 60 nap alatt.',
+      en: 'Ashwagandha (Withania somnifera) is one of the most extensively researched adaptogens of Ayurvedic rasayana medicine. Its actives are withanolide glycosides (notably withaferin-A and withanolide-A). Several RCTs (using KSM-66 and Sensoril standardized extracts) describe a statistically significant cortisol reduction and easing of stress symptoms over 60 days.',
+      pl: 'Ashwagandha (Withania somnifera) to jeden z najszerzej zbadanych adaptogenów ajurwedyjskiej medycyny rasayana. Substancjami czynnymi są glikozydy witanolidowe (szczególnie witaferyna-A i witanolid-A). Kilka RCT (z użyciem standaryzowanych ekstraktów KSM-66 i Sensoril) opisuje statystycznie istotną redukcję kortyzolu i złagodzenie objawów stresu w ciągu 60 dni.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'HPA-tengely moduláció + GABAerg', en: 'HPA-axis modulation + GABAergic', pl: 'Modulacja osi HPA + GABA-ergiczny' } },
+      { label: { hu: 'Hatásbeállás', en: 'Onset', pl: 'Początek działania' },
+        value: { hu: '2-8 hét krónikus szedés', en: '2-8 weeks chronic use', pl: '2-8 tygodni przewlekłego stosowania' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'OTC étrend-kiegészítő', en: 'OTC dietary supplement', pl: 'Suplement diety OTC' } },
+    ],
+    mechanism: {
+      hu: 'A withanolidok modulálják a hipotalamusz-hipofízis-mellékvese (HPA) tengelyt, csökkentik a krónikus stresszre adott kortizol-választ, és GABA-A receptorokra is hatnak (anxiolitikus szál). Mellékhatásként TSH/T4-emelés és immunomoduláció.',
+      en: 'Withanolides modulate the hypothalamic-pituitary-adrenal (HPA) axis, lowering the cortisol response to chronic stress, and also act at GABA-A receptors (anxiolytic arm). Secondary effects include TSH/T4 elevation and immunomodulation.',
+      pl: 'Witanolidy modulują oś podwzgórze-przysadka-nadnercza (HPA), obniżając reakcję kortyzolową na przewlekły stres, a także działają na receptory GABA-A (ramię anksjolityczne). Efekty wtórne obejmują podniesienie TSH/T4 i immunomodulację.',
+    },
+    legalStatus: {
+      hu: 'OTC étrend-kiegészítő EU-szerte és USA-ban. Dánia 2020 óta tiltja az ashwagandha-tartalmú étrend-kiegészítőket. Magyarországon kiegészítőként szabadon kapható.',
+      en: 'OTC dietary supplement throughout the EU and the USA. Denmark has banned ashwagandha-containing dietary supplements since 2020. Freely available as a supplement in Hungary.',
+      pl: 'Suplement diety OTC w całej UE i USA. Dania zakazała suplementów diety zawierających ashwagandhę od 2020 r. Wolno dostępna jako suplement na Węgrzech.',
+    },
+  },
+
+  {
+    id: 'rhodiola',
+    name: 'Rhodiola rosea',
+    image: null,
+    accentColor: '#84cc16',
+    tagColor: 'rgba(132,204,22,0.18)',
+    shortDesc: {
+      hu: 'Sarki gyökér — salidrozid + rozavin, fáradtság-ellenes adaptogén.',
+      en: 'Arctic root — salidroside + rosavin, anti-fatigue adaptogen.',
+      pl: 'Arktyczny korzeń — salidrozyd + rozawina, adaptogen przeciwzmęczeniowy.',
+    },
+    description: {
+      hu: 'A Rhodiola rosea (sarki gyökér, „arany gyökér") arktikus magasföldek lakossága körében évszázadok óta használt fáradtság-ellenes gyógynövény. Aktív komponensei a salidrozid (tirozol-glikozid) és a rozavin-csoport. RCT-k mentális fáradtság, kiégés és enyhe depresszió indikációkban statisztikailag szignifikáns javulást találtak — különösen rövid távú (4-12 hét) szedésnél.',
+      en: 'Rhodiola rosea (arctic root, “golden root”) is an anti-fatigue herb used for centuries by populations of arctic uplands. Its active components are salidroside (a tyrosol glycoside) and the rosavin group. RCTs in mental fatigue, burnout and mild depression have found statistically significant improvement — particularly with short-term (4-12 weeks) use.',
+      pl: 'Rhodiola rosea (arktyczny korzeń, „złoty korzeń”) to zioło przeciwzmęczeniowe stosowane od stuleci przez ludność arktycznych wyżyn. Jej aktywnymi składnikami są salidrozyd (glikozyd tyrozolowy) i grupa rozawinowa. RCT w zmęczeniu psychicznym, wypaleniu zawodowym i łagodnej depresji wykazały statystycznie istotną poprawę — szczególnie przy krótkoterminowym (4-12 tygodni) stosowaniu.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Monoaminerg + HPA-moduláció', en: 'Monoaminergic + HPA modulation', pl: 'Monoaminergiczna + modulacja HPA' } },
+      { label: { hu: 'Hatásbeállás', en: 'Onset', pl: 'Początek działania' },
+        value: { hu: '1-4 hét', en: '1-4 weeks', pl: '1-4 tygodni' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'OTC + EU hagyományos gyógynövény', en: 'OTC + EU traditional herbal medicine', pl: 'OTC + UE tradycyjny lek ziołowy' } },
+    ],
+    mechanism: {
+      hu: 'A salidrozid és rozavin mérsékli a monoamin-oxidáz (MAO-A és MAO-B) aktivitását → emelt szerotonin, dopamin és noradrenalin szintek; emellett HPA-tengely-stabilizáló és COMT-modulátor hatások.',
+      en: 'Salidroside and rosavin mildly inhibit monoamine oxidase (MAO-A and MAO-B) → elevated serotonin, dopamine and noradrenaline levels; additional HPA axis-stabilizing and COMT-modulator effects.',
+      pl: 'Salidrozyd i rozawina łagodnie hamują monoaminooksydazę (MAO-A i MAO-B) → podwyższone poziomy serotoniny, dopaminy i noradrenaliny; dodatkowe efekty stabilizujące oś HPA i modulujące COMT.',
+    },
+    legalStatus: {
+      hu: 'EU-ban az EMA HMPC „Traditional Herbal Medicinal Product" minősítést adta (Rhodiolae rhizoma et radix). USA-ban OTC étrend-kiegészítő. Magyarországon kiegészítőként szabadon kapható.',
+      en: 'In the EU, the EMA HMPC granted “Traditional Herbal Medicinal Product” status (Rhodiolae rhizoma et radix). OTC dietary supplement in the USA. Freely available as a supplement in Hungary.',
+      pl: 'W UE EMA HMPC nadała status „Tradycyjnego Ziołowego Produktu Leczniczego” (Rhodiolae rhizoma et radix). OTC suplement diety w USA. Wolno dostępna jako suplement na Węgrzech.',
+    },
+  },
+
+  {
+    id: 'lions-mane',
+    name: 'Lion`s Mane (Hericium erinaceus)',
+    image: null,
+    accentColor: '#84cc16',
+    tagColor: 'rgba(132,204,22,0.18)',
+    shortDesc: {
+      hu: 'Süngomba — hericenonok + erinacinok, NGF-szintézis indukció.',
+      en: 'Hedgehog mushroom — hericenones + erinacines, NGF synthesis induction.',
+      pl: 'Soplówka jeżowata — herycenony + erynacyny, indukcja syntezy NGF.',
+    },
+    description: {
+      hu: 'A Lion`s Mane (Hericium erinaceus, magyarul süngomba) ehető gyógygomba, amelynek termőtest-kivonata hericenonokat (H1-H10), micélium-kivonata pedig erinacinokat (A-I) tartalmaz. Mindkét vegyületcsoport in vitro és in vivo nerve growth factor (NGF) szintézis-induktor. Egy 2009-es japán kettősvak placebókontrollált humán vizsgálat enyhe kognitív károsodásban szignifikáns javulást írt le.',
+      en: 'Lion`s Mane (Hericium erinaceus) is an edible medicinal mushroom whose fruiting body extract contains hericenones (H1-H10) and whose mycelium extract contains erinacines (A-I). Both compound classes are nerve growth factor (NGF) synthesis inducers in vitro and in vivo. A 2009 Japanese double-blind placebo-controlled human trial described significant improvement in mild cognitive impairment.',
+      pl: 'Soplówka jeżowata (Hericium erinaceus) to jadalny grzyb leczniczy, którego ekstrakt z owocnika zawiera herycenony (H1-H10), a ekstrakt z grzybni — erynacyny (A-I). Obie klasy związków są induktorami syntezy nerve growth factor (NGF) in vitro i in vivo. Japońskie badanie kliniczne z podwójnie ślepą próbą i placebo z 2009 r. opisało istotną poprawę w łagodnym zaburzeniu poznawczym.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'NGF + BDNF szintézis-induktor', en: 'NGF + BDNF synthesis inducer', pl: 'Induktor syntezy NGF + BDNF' } },
+      { label: { hu: 'Hatásbeállás', en: 'Onset', pl: 'Początek działania' },
+        value: { hu: '4-16 hét krónikus szedés', en: '4-16 weeks chronic use', pl: '4-16 tygodni przewlekłego stosowania' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'OTC élelmiszer + étrend-kiegészítő', en: 'OTC food + dietary supplement', pl: 'OTC żywność + suplement diety' } },
+    ],
+    mechanism: {
+      hu: 'A hericenonok (vér-agy gáton ÁTHATOLÓ kis molekulák) és erinacinok közvetlenül indukálják a NGF mRNS-transzkripcióját asztrocitákban → emelt NGF és BDNF szintézis, perifériás és centrális neuronok mielinizációja.',
+      en: 'Hericenones (blood-brain-barrier crossing small molecules) and erinacines directly induce NGF mRNA transcription in astrocytes → elevated NGF and BDNF synthesis, myelination of peripheral and central neurons.',
+      pl: 'Herycenony (małe cząsteczki przenikające barierę krew-mózg) i erynacyny bezpośrednio indukują transkrypcję mRNA NGF w astrocytach → podwyższoną syntezę NGF i BDNF, mielinizację neuronów obwodowych i ośrodkowych.',
+    },
+    legalStatus: {
+      hu: 'Ehető élelmiszer-gomba és OTC étrend-kiegészítő EU-szerte és USA-ban. EU-ban a kivonatok „Novel Food" engedélyezést igényelhetnek. Magyarországon szabadon kapható.',
+      en: 'Edible food mushroom and OTC dietary supplement throughout the EU and the USA. In the EU, extracts may require “Novel Food” authorization. Freely available in Hungary.',
+      pl: 'Jadalny grzyb spożywczy i OTC suplement diety w całej UE i USA. W UE ekstrakty mogą wymagać autoryzacji „Nowa Żywność”. Wolno dostępny na Węgrzech.',
+    },
+  },
+
+  {
+    id: 'l-theanine',
+    name: 'L-Theanine',
+    image: null,
+    accentColor: '#84cc16',
+    tagColor: 'rgba(132,204,22,0.18)',
+    shortDesc: {
+      hu: 'Zöld tea aminosav — γ-glutamil-etilamid, α-hullám fokozó.',
+      en: 'Green tea amino acid — γ-glutamyl-ethylamide, α-wave enhancer.',
+      pl: 'Aminokwas zielonej herbaty — γ-glutamylo-etyloamid, wzmacniacz fal α.',
+    },
+    description: {
+      hu: 'Az L-Theanin (N-etil-L-glutamin) szabad aminosav, amely a Camellia sinensis (zöld tea) levelek fő nem-fehérje-aminosav komponense. Vér-agy gáton áthatol, és EEG α-hullám-aktivitást fokoz nyugodt-ébrenléti állapotban. Koffeinnel kombinálva (klasszikus L-theanin:koffein 2:1 protokoll) szinergisztikusan javítja a fókuszt és csökkenti a koffein-szorongást.',
+      en: 'L-Theanine (N-ethyl-L-glutamine) is a free amino acid, the main non-protein amino acid component of Camellia sinensis (green tea) leaves. It crosses the blood-brain barrier and enhances EEG α-wave activity in the relaxed-awake state. Combined with caffeine (the classical L-theanine:caffeine 2:1 protocol) it synergistically improves focus and reduces caffeine-induced anxiety.',
+      pl: 'L-Teanina (N-etylo-L-glutamina) to wolny aminokwas, główny niebiałkowy aminokwas liści Camellia sinensis (zielonej herbaty). Przenika barierę krew-mózg i zwiększa aktywność fal α w EEG w stanie zrelaksowanej czuwania. Połączona z kofeiną (klasyczny protokół L-teanina:kofeina 2:1) synergistycznie poprawia koncentrację i zmniejsza lęk wywołany kofeiną.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'GABA + α-hullám + glutamát-moduláció', en: 'GABA + α-wave + glutamate modulation', pl: 'GABA + fale α + modulacja glutaminianu' } },
+      { label: { hu: 'Hatásbeállás', en: 'Onset', pl: 'Początek działania' },
+        value: { hu: '30-45 perc orálisan', en: '30-45 min oral', pl: '30-45 min doustnie' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'OTC élelmiszer + étrend-kiegészítő', en: 'OTC food + dietary supplement', pl: 'OTC żywność + suplement diety' } },
+    ],
+    mechanism: {
+      hu: 'GABA, glicin és dopamin szintézis-fokozó; NMDA-receptor parciális antagonista; emeli az α-hullám tartalmat az EEG-n → „nyugodt fókusz" állapot. Koffeinnel ellensúlyozza a vazokonstrikciót és a szorongást.',
+      en: 'Increases GABA, glycine and dopamine synthesis; partial NMDA-receptor antagonist; raises α-wave content on EEG → “calm focus” state. With caffeine it offsets vasoconstriction and anxiety.',
+      pl: 'Zwiększa syntezę GABA, glicyny i dopaminy; częściowy antagonista receptora NMDA; podnosi zawartość fal α w EEG → stan „spokojnej koncentracji”. Z kofeiną kompensuje zwężenie naczyń i lęk.',
+    },
+    legalStatus: {
+      hu: 'Élelmiszer-aminosav, OTC étrend-kiegészítő EU-szerte és USA-ban. FDA GRAS minősítés. Magyarországon szabadon kapható.',
+      en: 'Food amino acid, OTC dietary supplement throughout the EU and the USA. FDA GRAS status. Freely available in Hungary.',
+      pl: 'Aminokwas spożywczy, OTC suplement diety w całej UE i USA. Status FDA GRAS. Wolno dostępna na Węgrzech.',
+    },
+  },
+
+  {
+    id: 'tongkat-ali',
+    name: 'Tongkat Ali (Eurycoma longifolia)',
+    image: null,
+    accentColor: '#84cc16',
+    tagColor: 'rgba(132,204,22,0.18)',
+    shortDesc: {
+      hu: 'Maláj „longjack" — quassinoidok + eurycomanon, tesztoszteron-támogatás.',
+      en: 'Malaysian “longjack” — quassinoids + eurycomanone, testosterone support.',
+      pl: 'Malezyjski „longjack” — kwasynoidy + eurykomanon, wsparcie testosteronu.',
+    },
+    description: {
+      hu: 'A Tongkat Ali (Eurycoma longifolia, „longjack") délkelet-ázsiai gyökér-gyógynövény. Hatóanyagai a quassinoidok (különösen az eurycomanon) és a glikoprotein-frakció (Physta® extrakt). Több RCT-ben (200-400 mg/nap, 4-12 hét) szignifikáns SHBG-csökkenést és szérum-tesztoszteron-emelést írtak le hipogonadális vagy stresszelt férfiaknál — eu-androgén férfiaknál a hatás kisebb.',
+      en: 'Tongkat Ali (Eurycoma longifolia, “longjack”) is a Southeast Asian root herb. Its actives are quassinoids (notably eurycomanone) and a glycoprotein fraction (Physta® extract). Multiple RCTs (200-400 mg/day, 4-12 weeks) describe significant SHBG reduction and serum testosterone elevation in hypogonadal or stressed men — the effect is smaller in eugonadal men.',
+      pl: 'Tongkat Ali (Eurycoma longifolia, „longjack”) to południowoazjatyckie korzeniowe zioło. Jego substancje czynne to kwasynoidy (zwłaszcza eurykomanon) i frakcja glikoproteinowa (ekstrakt Physta®). Wiele RCT (200-400 mg/dobę, 4-12 tygodni) opisuje istotne obniżenie SHBG i podniesienie testosteronu w surowicy u mężczyzn hipogonadalnych lub zestresowanych — efekt jest mniejszy u mężczyzn eugonadalnych.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'SHBG-csökkentés + kortizol-moduláció', en: 'SHBG reduction + cortisol modulation', pl: 'Obniżenie SHBG + modulacja kortyzolu' } },
+      { label: { hu: 'Hatásbeállás', en: 'Onset', pl: 'Początek działania' },
+        value: { hu: '2-12 hét krónikus szedés', en: '2-12 weeks chronic use', pl: '2-12 tygodni przewlekłego stosowania' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'OTC étrend-kiegészítő', en: 'OTC dietary supplement', pl: 'Suplement diety OTC' } },
+    ],
+    mechanism: {
+      hu: 'Az eurycomanon csökkenti az SHBG-t (szex-hormon-kötő globulin) → emelt szabad tesztoszteron-frakció; emellett kortizol/tesztoszteron arány-csökkentés stressz-állapotban. Mellék-aromatáz-gátlás (csökkent T→E2 konverzió) is leírt.',
+      en: 'Eurycomanone lowers SHBG (sex hormone-binding globulin) → elevated free testosterone fraction; additionally lowers the cortisol/testosterone ratio under stress. Secondary aromatase inhibition (reduced T→E2 conversion) is also described.',
+      pl: 'Eurykomanon obniża SHBG (globulinę wiążącą hormony płciowe) → podwyższoną frakcję wolnego testosteronu; dodatkowo obniża stosunek kortyzol/testosteron w stresie. Opisano także wtórne hamowanie aromatazy (zmniejszona konwersja T→E2).',
+    },
+    legalStatus: {
+      hu: 'OTC étrend-kiegészítő EU-szerte és USA-ban. Malajziában „Novel Health Supplement" minősítés. Sportolóknál WADA-listán NEM tiltott. Magyarországon szabadon kapható.',
+      en: 'OTC dietary supplement throughout the EU and the USA. Holds “Novel Health Supplement” status in Malaysia. NOT on the WADA prohibited list for athletes. Freely available in Hungary.',
+      pl: 'Suplement diety OTC w całej UE i USA. Posiada status „Nowy Suplement Zdrowotny” w Malezji. NIE jest na liście zakazanej WADA dla sportowców. Wolno dostępny na Węgrzech.',
+    },
+  },
 ]
