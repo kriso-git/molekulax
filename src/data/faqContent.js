@@ -1,8 +1,9 @@
-// FAQ content per language. 4 tabs:
-//   1. Általános / General         - platform-level, library-agnostic
-//   2. Peptidek / Peptides         - reconstitution, BAC, syringes, storage
-//   3. Nootropikumok / Nootropics  - racetams, eugeroics, cycle, choline, WADA
-//   4. Biztonság & Jogi / Safety   - legality, side effects, interactions
+// FAQ content per language. 5 tabs:
+//   1. Általános / General                       - platform-level, library-agnostic
+//   2. Peptidek / Peptides                       - reconstitution, BAC, syringes, storage
+//   3. Nootropikumok / Nootropics                - racetams, eugeroics, cycle, choline, WADA
+//   4. Teljesítményfokozók / Performance         - AAS, prohormones, bloodwork, PCT, β2-agonists
+//   5. Biztonság & Jogi / Safety                 - legality, side effects, interactions
 //
 // Style notes: no em-dash anywhere; no Sean/dopamine.club references;
 // peer-reviewed pharmacology only.
@@ -66,6 +67,27 @@ export const FAQ_CONTENT = {
           a: 'Az ún. cycle-protokoll a receptor-szenzitizáció megőrzését célozza. Tipikus minta: 5 nap on / 2 nap off (heti pause), vagy 4 hét on / 1-2 hét off (havi pause). Cycle nélkül egyes nootropikumoknál (Phenibut, Phenylpiracetam, Modafinil) tolerancia és függőség fejlődhet. Adaptogének (Bacopa, Rhodiola, Ashwagandha) általában cycle nélkül is biztonságosak, mert nem hatnak közvetlenül a dopamin/GABA receptorokon.' },
         { q: 'Kombinálható egyszerre több nootropikum (stack)?',
           a: 'Igen, sok klasszikus stack létezik: racetam + cholinforrás (kötelező), L-Theanine + koffein (anti-anxious focus), Modafinil + Alpha-GPC (fókusz + memória), CDP-Choline + Aniracetam (memória + verbális fluencia). KERÜLENDŐ kombinációk: MAOI-tartalmú szerek (9-Me-BC, Selegiline) + SSRI/SNRI (szerotonin-szindróma kockázat), Phenibut + alkohol vagy benzodiazepines (légzésdepresszió). Stack előtt mindig ellenőrizd az interakciós listát.' },
+      ],
+    },
+    {
+      label: 'Teljesítményfokozók',
+      items: [
+        { q: 'Mi a különbség egy peptid/nootropikum és egy teljesítményfokozó között?',
+          a: 'A peptidek és nootropikumok jellemzően egyetlen specifikus mechanizmust céloznak (pl. GH-szekretagóg, AMPA-modulátor, dopamin-reuptake-gátló) és terápiás/edukatív kontextusban használtak. A teljesítményfokozók (AAS, prohormonok, sympathomimetic stimulánsok, β2-agonist bronchodilatátorok, GH/EPO doping) sport- vagy testépítő-kontextusban használatosak izomtömeg, erő, zsírvesztés vagy endurance célból. Jogi státuszuk sokkal szigorúbb (vény nélkül illegális), WADA-listán szerepelnek versenysportban, és átlagosan magasabb egészségügyi kockázattal járnak.' },
+        { q: 'Mit jelent az "anabolikus-androgén szteroid" (AAS)?',
+          a: 'Az AAS-ek olyan szintetikus vegyületek, amelyek a tesztoszteron-molekulából származnak és az androgén-receptoron (AR) keresztül hatnak. Az "anabolikus" hatás az izomszöveti fehérje-szintézis emelése, az "androgén" pedig a másodlagos férfi nemi jellegek (szőrnövekedés, hangmélyülés, prosztata-hatás) fokozása. A 17α-alkilezett AAS-ek (Dianabol, Anavar, Winstrol, Superdrol) orálisan biodostupanyak, de magas hepatotoxicitással. A 19-nor-AAS-ek (Trenbolone, Nandrolone) szelektívebb anabolikus profilt mutatnak.' },
+        { q: 'Mit jelent a "bloodwork" és miért fontos AAS-cikluson?',
+          a: 'A bloodwork rendszeres laborvizsgálat, amely az AAS-használat alatt és után monitorozza a kritikus egészségi mutatókat: lipid panel (HDL/LDL/TG, kardio-kockázat), májfunkció (ALT/AST/GGT, hepatotoxicitás), hormon-panel (Total T, Free T, E2, LH, FSH, SHBG, Prolactin, HPTA-állapot), HbA1c (inzulin-rezisztencia), vesefunkció. A MolekulaX kártyákon strukturált Pre/Mid/Post-cycle/Cruise bloodwork-protokoll szerepel minden releváns AAS-entry-n. Bloodwork nélküli AAS-használat orvosi szempontból elfogadhatatlan kockázat.' },
+        { q: 'Mit jelent a PCT (Post-Cycle Therapy) és miért szükséges?',
+          a: 'A PCT a ciklus utáni helyreállító protokoll a HPTA-tengely (hypothalamus-hipofízis-here) újraindításához. Exogén AAS-használat negatív visszacsatolással szuppresszálja az LH/FSH-t, ami endogén tesztoszteron-termelés-csökkenést okoz. PCT során szelektív ösztrogén-receptor modulátorok (SERM) használatosak: Clomid (Clomiphene) 50 mg/nap, Nolvadex (Tamoxifen) 20 mg/nap, jellemzően 4 hét. Coward 2013 vizsgálatban átlagosan 4 hónap kellett a teljes HPTA-helyreállásig, és 25% esetében >12 hónapig elhúzódott. PCT nélküli AAS-ciklus súlyos hosszú-távú hipogonadizmushoz vezethet.' },
+        { q: 'Mi a különbség Clenbuterol és Albuterol között?',
+          a: 'Mindkettő szelektív β2-adrenoceptor agonist bronchodilator, hasonló thermogenikus + izom-megtartó hatással. A KÜLÖNBSÉG a felezési időben rejlik: Clenbuterol 35-40 óra (akkumulálódik, kardiotoxikus szívizom-hipertrófia kockázat), Albuterol 5-6 óra (nem akkumulálódik, biztonságosabb). Az Albuterol FDA-engedélyezett emberi asztma-Rx (Ventolin/ProAir), a Clenbuterol EU-ban veterinär-Rx (lóasztmára). Bodybuilding off-label fat-loss kontextusban az Albuterol biztonságosabb választás, bár szerényebb anabolikus hatású.' },
+        { q: 'Tényleg legális az Ephedrine és Yohimbine Magyarországon?',
+          a: 'Részben. Az Ephedrine vény nélkül kapható OTC készítményekben (allergia/nátha-gyógyszerek, pl. Solutan, korábbi pseudoephedrine-tartalmú szerek), de a tiszta Ephedrine HCl-tabletta nem szabadon hozzáférhető. Yohimbine: HU-ban Rx (Yocon), míg az USA-ban OTC dietary supplement. Mindkettő WADA-tiltott versenysportban (Ephedrine in-competition >10 μg/mL urin felett; Yohimbine nem listázott). Magas vérnyomás, MAOI-terápia vagy SSRI-vel kontraindikáció (szerotonin-szindróma kockázat).' },
+        { q: 'Mi az MK-677 és miért nem SARM?',
+          a: 'Az MK-677 (Ibutamoren) egy orálisan biodostupanyú ghrelin-receptor agonista (GHSR-1a), amely a hipotalamuszban és a hipofízisben fokozza a GH-pulzusok amplitúdóját és emeli az IGF-1 plazma-szintet. NEM SARM (szelektív androgén-receptor modulátor) — az MK-677 NEM hat az androgén-receptoron, NEM szuppresszálja a HPTA-tengelyt, és NEM igényel PCT-t. A SARM-ek (Ostarine, LGD-4033, RAD-140 stb.) AR-modulátorok, és ezek user-döntésből nem szerepelnek a MolekulaX könyvtárban.' },
+        { q: 'Miért van a DNP-nél "NE HASZNÁLD" figyelmeztetés?',
+          a: 'A 2,4-dinitrofenol (DNP) egy ipari vegyület, amely mitokondriális oxidatív foszforilezést szétkapcsol: az elektron-transzport-lánc protonjai bypass-elik az ATP-szintetázt, és a felszabaduló energia szabályozhatatlan hő formájában disszipálódik. Eredmény: extrém BMR-emelés (+50%), de halálos hipertermia kockázat (testhőmérséklet >41°C). Grundlingh 2011 PubMed systematic review (PMID 21739343) dokumentált halálos eseteket egészséges fiatal felnőtteknél. A FDA 1938-ban kivonta forgalomból. NINCS biztonságos dózis. A MolekulaX edukatív kontextusban szerepelteti, hogy a felhasználók ismerjék a veszélyt és felismerjék a tüneteket (izzadás, tachykardia, zavartság), ha valaki ismerősük használja.' },
       ],
     },
     {
@@ -146,6 +168,27 @@ export const FAQ_CONTENT = {
       ],
     },
     {
+      label: 'Performance compounds',
+      items: [
+        { q: 'What is the difference between a peptide/nootropic and a performance compound?',
+          a: 'Peptides and nootropics typically target a single specific mechanism (e.g. GH secretagogue, AMPA modulator, dopamine reuptake inhibitor) and are used in therapeutic or educational contexts. Performance compounds (AAS, prohormones, sympathomimetic stimulants, β2-agonist bronchodilators, GH/EPO doping) are used in sport or bodybuilding contexts for muscle mass, strength, fat loss, or endurance. Their legal status is far stricter (illegal without prescription), they are on the WADA banned list in competitive sport, and on average they carry higher health risks.' },
+        { q: 'What does "anabolic-androgenic steroid" (AAS) mean?',
+          a: 'AAS are synthetic compounds derived from the testosterone molecule that act via the androgen receptor (AR). The "anabolic" effect raises muscle tissue protein synthesis; the "androgenic" effect promotes secondary male sex characteristics (hair growth, voice deepening, prostate effects). 17α-alkylated AAS (Dianabol, Anavar, Winstrol, Superdrol) are orally bioavailable but with high hepatotoxicity. 19-nor AAS (Trenbolone, Nandrolone) show a more selective anabolic profile.' },
+        { q: 'What is "bloodwork" and why is it important on an AAS cycle?',
+          a: 'Bloodwork is regular lab testing that monitors critical health markers during and after AAS use: lipid panel (HDL/LDL/TG, cardiovascular risk), liver function (ALT/AST/GGT, hepatotoxicity), hormone panel (Total T, Free T, E2, LH, FSH, SHBG, Prolactin, HPTA status), HbA1c (insulin resistance), renal function. MolekulaX entries show a structured Pre/Mid/Post-cycle/Cruise bloodwork protocol on every relevant AAS entry. AAS use without bloodwork is medically unacceptable risk.' },
+        { q: 'What is PCT (Post-Cycle Therapy) and why is it needed?',
+          a: 'PCT is the post-cycle recovery protocol restarting the HPTA axis (hypothalamus-pituitary-testes). Exogenous AAS use suppresses LH/FSH via negative feedback, lowering endogenous testosterone production. PCT uses selective estrogen receptor modulators (SERMs): Clomid (Clomiphene) 50 mg/day, Nolvadex (Tamoxifen) 20 mg/day, typically 4 weeks. The Coward 2013 study found average HPTA recovery in AAS users took 4 months, with 25% extending past 12 months. An AAS cycle without PCT can lead to severe long-term hypogonadism.' },
+        { q: 'What is the difference between Clenbuterol and Albuterol?',
+          a: 'Both are selective β2-adrenoceptor agonist bronchodilators with similar thermogenic + muscle-sparing effects. The DIFFERENCE is the half-life: Clenbuterol 35-40 h (accumulates, cardiotoxic cardiac hypertrophy risk), Albuterol 5-6 h (no accumulation, safer). Albuterol is FDA-approved human asthma Rx (Ventolin/ProAir), Clenbuterol is veterinary Rx in the EU (equine asthma). In off-label fat-loss bodybuilding contexts, Albuterol is the safer choice, though with more modest anabolic effect.' },
+        { q: 'Are Ephedrine and Yohimbine really legal in Hungary?',
+          a: 'Partially. Ephedrine is available over-the-counter in OTC preparations (allergy/cold medications, e.g. Solutan and former pseudoephedrine products), but pure ephedrine HCl tablets are not freely accessible. Yohimbine: in HU it is Rx (Yocon), while in the US it is an OTC dietary supplement. Both are WADA-banned in competitive sport (Ephedrine in-competition above 10 μg/mL urine; Yohimbine not listed). Contraindicated in hypertension, MAOI therapy, or with SSRIs (serotonin syndrome risk).' },
+        { q: 'What is MK-677 and why is it not a SARM?',
+          a: 'MK-677 (Ibutamoren) is an orally bioavailable ghrelin receptor (GHSR-1a) agonist that raises GH pulse amplitude in the hypothalamus and pituitary and elevates plasma IGF-1. It is NOT a SARM (selective androgen receptor modulator), it does NOT act on the androgen receptor, does NOT suppress the HPTA axis, and does NOT require PCT. SARMs (Ostarine, LGD-4033, RAD-140 etc.) are AR modulators, and by user decision they are not part of the MolekulaX library.' },
+        { q: 'Why is there a "DO NOT USE" warning on DNP?',
+          a: '2,4-dinitrophenol (DNP) is an industrial chemical that uncouples mitochondrial oxidative phosphorylation: protons from the electron transport chain bypass ATP synthase, and the released energy dissipates as uncontrollable heat. Result: extreme BMR rise (+50%) but fatal hyperthermia risk (body temperature >41°C). The Grundlingh 2011 PubMed systematic review (PMID 21739343) documented fatal cases in healthy young adults. The FDA withdrew it in 1938. There is NO safe dose. MolekulaX lists it in an educational context so users recognize the danger and the symptoms (sweating, tachycardia, confusion) if someone they know is using it.' },
+      ],
+    },
+    {
       label: 'Safety & Legal',
       items: [
         { q: 'Are peptides and nootropics legal in Hungary / EU?',
@@ -220,6 +263,27 @@ export const FAQ_CONTENT = {
           a: 'Protokół cyklu ma na celu zachowanie wrażliwości receptorów. Typowe wzorce: 5 dni on / 2 dni off (przerwa tygodniowa) lub 4 tygodnie on / 1-2 tygodnie off (przerwa miesięczna). Bez cyklowania niektóre nootropiki (Phenibut, Phenylpiracetam, Modafinil) mogą wywoływać tolerancję i uzależnienie. Adaptogeny (Bacopa, Rhodiola, Ashwagandha) zwykle bezpieczne bez cyklowania.' },
         { q: 'Czy można łączyć kilka nootropików (stack)?',
           a: 'Tak, istnieje wiele klasycznych stacków: racetam + cholina (obowiązkowe), L-Teanina + kofeina (skupienie bez lęku), Modafinil + Alpha-GPC (skupienie + pamięć), CDP-Choline + Aniracetam (pamięć + płynność werbalna). UNIKAĆ: substancje z MAOI (9-Me-BC, Selegiline) + SSRI/SNRI (ryzyko zespołu serotoninowego), Phenibut + alkohol lub benzodiazepiny (depresja oddechowa). Zawsze sprawdź listę interakcji.' },
+      ],
+    },
+    {
+      label: 'Środki wydajnościowe',
+      items: [
+        { q: 'Jaka jest różnica między peptydem/nootropikiem a środkiem wydajnościowym?',
+          a: 'Peptydy i nootropiki zwykle celują w pojedynczy specyficzny mechanizm (np. agonista GHS, modulator AMPA, inhibitor wychwytu dopaminy) i są stosowane w kontekstach terapeutycznych lub edukacyjnych. Środki wydajnościowe (AAS, prohormony, sympatomimetyczne stymulanty, β2-agoniści bronchodilacyjni, doping GH/EPO) używane są w sporcie lub kulturystyce dla masy mięśniowej, siły, redukcji tłuszczu lub wytrzymałości. Ich status prawny jest znacznie surowszy (nielegalne bez recepty), są na liście WADA, średnio niosą wyższe ryzyko zdrowotne.' },
+        { q: 'Co oznacza "steryd anaboliczno-androgenny" (AAS)?',
+          a: 'AAS to syntetyczne związki pochodne testosteronu, działające przez receptor androgenowy (AR). Efekt "anaboliczny" zwiększa syntezę białek tkanki mięśniowej; efekt "androgenny" promuje drugorzędne męskie cechy płciowe (zarost, obniżenie głosu, działanie na prostatę). 17α-alkilowane AAS (Dianabol, Anavar, Winstrol, Superdrol) są biodostępne doustnie, ale z wysoką hepatotoksycznością. 19-nor AAS (Trenbolone, Nandrolone) mają bardziej selektywny profil anaboliczny.' },
+        { q: 'Czym jest "bloodwork" i dlaczego jest ważny podczas cyklu AAS?',
+          a: 'Bloodwork to regularne badania laboratoryjne monitorujące krytyczne markery zdrowotne podczas i po stosowaniu AAS: lipidogram (HDL/LDL/TG, ryzyko sercowo-naczyniowe), czynność wątroby (ALT/AST/GGT, hepatotoksyczność), panel hormonalny (Total T, Free T, E2, LH, FSH, SHBG, Prolactin, status HPTA), HbA1c (insulinooporność), czynność nerek. Wpisy MolekulaX pokazują ustrukturyzowany protokół Pre/Mid/Post-cycle/Cruise dla każdego istotnego wpisu AAS. Stosowanie AAS bez bloodwork jest medycznie nieakceptowalnym ryzykiem.' },
+        { q: 'Co to jest PCT (Post-Cycle Therapy) i dlaczego jest potrzebne?',
+          a: 'PCT to protokół regeneracji po cyklu restartujący oś HPTA (podwzgórze-przysadka-jądra). Egzogenne AAS tłumią LH/FSH przez ujemne sprzężenie zwrotne, obniżając endogenną produkcję testosteronu. PCT używa selektywnych modulatorów receptora estrogenowego (SERM): Clomid (Clomiphene) 50 mg/dzień, Nolvadex (Tamoxifen) 20 mg/dzień, zwykle 4 tygodnie. Badanie Coward 2013 wykazało średni powrót HPTA w 4 miesiące, a 25% trwał ponad 12 miesięcy. Cykl AAS bez PCT może prowadzić do długoterminowej hipogonadyzmu.' },
+        { q: 'Jaka jest różnica między Clenbuterolem a Albuterolem?',
+          a: 'Oba to selektywni agoniści β2-adrenergiczni z podobnym efektem termogenicznym + ochrony mięśni. RÓŻNICA to okres półtrwania: Clenbuterol 35-40 h (kumuluje się, ryzyko hipertrofii serca), Albuterol 5-6 h (brak kumulacji, bezpieczniejszy). Albuterol jest zatwierdzony przez FDA dla astmy ludzkiej (Ventolin/ProAir), Clenbuterol w UE weterynaryjnie. Off-label dla redukcji tłuszczu Albuterol to bezpieczniejszy wybór, choć ze skromniejszym efektem anabolicznym.' },
+        { q: 'Czy efedryna i yohimbina są naprawdę legalne w Polsce?',
+          a: 'Częściowo. Efedryna jest dostępna w preparatach OTC (na alergię/przeziębienie), ale czyste tabletki HCl nie są łatwo dostępne. Yohimbina: w PL jest na receptę (Yocon), w USA dostępna OTC. Obie zakazane przez WADA w sporcie wyczynowym (efedryna w zawodach >10 μg/mL moczu; yohimbina nielistowana). Przeciwwskazane przy nadciśnieniu, terapii MAOI lub SSRI (ryzyko zespołu serotoninowego).' },
+        { q: 'Czym jest MK-677 i dlaczego nie jest SARM?',
+          a: 'MK-677 (Ibutamoren) to doustnie biodostępny agonista receptora greliny (GHSR-1a), podnoszący amplitudę pulsów GH w podwzgórzu i przysadce i wzrost IGF-1 w osoczu. NIE jest SARM (selektywnym modulatorem receptora androgenowego), NIE działa na AR, NIE tłumi osi HPTA i NIE wymaga PCT. SARM (Ostarine, LGD-4033, RAD-140 itp.) to modulatory AR i z decyzji użytkownika nie są częścią biblioteki MolekulaX.' },
+        { q: 'Dlaczego przy DNP jest ostrzeżenie "NIE STOSUJ"?',
+          a: '2,4-dinitrofenol (DNP) to chemikalia przemysłowa rozprzęgająca mitochondrialną fosforylację oksydacyjną: protony z łańcucha transportu elektronów omijają syntazę ATP, a uwolniona energia rozprasza się jako niekontrolowane ciepło. Wynik: skrajny wzrost BMR (+50%), ale ryzyko śmiertelnej hipertermii (temperatura ciała >41°C). Przegląd systematyczny Grundlingh 2011 PubMed (PMID 21739343) udokumentował przypadki śmiertelne u zdrowych młodych dorosłych. FDA wycofała w 1938 r. NIE MA bezpiecznej dawki. MolekulaX wymienia go w kontekście edukacyjnym, aby użytkownicy rozpoznali niebezpieczeństwo i objawy (pocenie, tachykardia, splątanie), jeśli ktoś znajomy go używa.' },
       ],
     },
     {
