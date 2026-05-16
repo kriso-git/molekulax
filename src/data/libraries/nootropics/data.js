@@ -1477,4 +1477,264 @@ export const NOOTROPICS = [
       pl: 'Zatwierdzona jako lek w Chinach (Alzheimer). OTC suplement diety w USA; klasyfikacja różni się między państwami UE. Dostępna jako suplement na Węgrzech.',
     },
   },
+
+  // ============================================================
+  // EXTRA — Dopaminergic / Motivation (Task 7, Batch 3)
+  // ============================================================
+
+  {
+    id: 'selegiline',
+    name: 'Selegiline (L-Deprenyl)',
+    image: null,
+    accentColor: '#f43f5e',
+    tagColor: 'rgba(244,63,94,0.18)',
+    shortDesc: {
+      hu: 'Szelektív MAO-B inhibitor — Parkinson + depresszió, FDA-jóváhagyott.',
+      en: 'Selective MAO-B inhibitor — Parkinson`s + depression, FDA-approved.',
+      pl: 'Selektywny inhibitor MAO-B — Parkinson + depresja, zatwierdzony przez FDA.',
+    },
+    description: {
+      hu: 'A Selegilin (L-deprenil) magyar Jozsef Knoll professzor fejlesztése (1960-as évek), szelektív és irreverzibilis MAO-B inhibitor. FDA-jóváhagyott Parkinson-kórban (orális, Eldepryl/Zelapar) és major depresszióban (transzdermális Emsam tapasz). Alacsony dózisban (<10 mg/nap) a szelektivitás megmarad, magasabb dózisokon MAO-A-t is gátol → tiraminreakció kockázata nő.',
+      en: 'Selegiline (L-deprenyl) is a development of Hungarian Prof. József Knoll (1960s), a selective and irreversible MAO-B inhibitor. FDA-approved for Parkinson`s disease (oral, Eldepryl/Zelapar) and major depression (transdermal Emsam patch). At low doses (<10 mg/day) the selectivity is preserved; higher doses also inhibit MAO-A → tyramine-reaction risk rises.',
+      pl: 'Selegilina (L-deprenyl) to opracowanie węgierskiego prof. Józsefa Knolla (lata 60.), selektywny i nieodwracalny inhibitor MAO-B. Zatwierdzony przez FDA w chorobie Parkinsona (doustnie, Eldepryl/Zelapar) i dużej depresji (plaster transdermalny Emsam). Przy niskich dawkach (<10 mg/dobę) selektywność jest zachowana; wyższe dawki hamują również MAO-A → wzrasta ryzyko reakcji tyraminowej.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Szelektív, irreverzibilis MAO-B', en: 'Selective, irreversible MAO-B', pl: 'Selektywne, nieodwracalne MAO-B' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~10 óra (aktív metabolitok hosszabbak)', en: '~10 h (active metabolites longer)', pl: '~10 h (aktywne metabolity dłużej)' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'FDA + EU vényköteles', en: 'FDA + EU Rx', pl: 'FDA + UE na receptę' } },
+    ],
+    mechanism: {
+      hu: 'Irreverzibilis MAO-B inhibíció → emelt nigro-striatális dopamin- és PEA-szintek; ezenfelül leírtak antiapoptotikus és NGF-szerű neuroprotektív hatást a dopaminerg neuronokon.',
+      en: 'Irreversible MAO-B inhibition → elevated nigrostriatal dopamine and PEA levels; additionally, antiapoptotic and NGF-like neuroprotective effects on dopaminergic neurons are described.',
+      pl: 'Nieodwracalne hamowanie MAO-B → podwyższone poziomy dopaminy i PEA w układzie nigrostriatalnym; opisano także efekty antyapoptotyczne i neuroprotekcyjne podobne do NGF na neuronach dopaminergicznych.',
+    },
+    legalStatus: {
+      hu: 'FDA-jóváhagyott Parkinson + depresszió. EU-szerte vényköteles. Magyarországon szakorvosi vény szükséges; OTC nem.',
+      en: 'FDA-approved for Parkinson`s + depression. Prescription-only across the EU. Hungary requires specialist prescription; not OTC.',
+      pl: 'Zatwierdzony przez FDA w Parkinsonie + depresji. Na receptę w całej UE. Węgry wymagają recepty specjalistycznej; nie OTC.',
+    },
+  },
+
+  {
+    id: 'bpap',
+    name: 'BPAP',
+    image: null,
+    accentColor: '#f43f5e',
+    tagColor: 'rgba(244,63,94,0.18)',
+    shortDesc: {
+      hu: 'Szelektív PEA-aktivitás-fokozó (CAE) — Selegiline-utód, kísérleti.',
+      en: 'Selective PEA-activity enhancer (CAE) — Selegiline successor, investigational.',
+      pl: 'Selektywny wzmacniacz aktywności PEA (CAE) — następca selegiliny, badawczy.',
+    },
+    description: {
+      hu: 'A BPAP ((R)-1-(benzofurán-2-il)-2-propilaminopentán) Knoll József második generációs „katekolamin-aktivitás-fokozó" (CAE) vegyülete, amelyet a Selegilin neuroprotektív profiljának továbbfejlesztésére terveztek. Nem MAO-B inhibitor — közvetlenül emeli a PEA, dopamin és noradrenalin felszabadulását preszinaptikus szinten, alacsony nanomoláris koncentrációban. Csak preklinikai adatok.',
+      en: 'BPAP ((R)-1-(benzofuran-2-yl)-2-propylaminopentane) is a second-generation “catecholaminergic activity enhancer” (CAE) compound by József Knoll, designed to extend Selegiline`s neuroprotective profile. It is not a MAO-B inhibitor — it directly increases presynaptic release of PEA, dopamine and noradrenaline at low nanomolar concentrations. Only preclinical data exist.',
+      pl: 'BPAP ((R)-1-(benzofuran-2-yl)-2-propyloaminopentan) to drugiej generacji związek „katecholaminergiczny wzmacniacz aktywności” (CAE) prof. Knolla, zaprojektowany do rozszerzenia profilu neuroprotekcyjnego selegiliny. Nie jest inhibitorem MAO-B — bezpośrednio zwiększa presynaptyczne uwalnianie PEA, dopaminy i noradrenaliny w niskich nanomolarnych stężeniach. Istnieją tylko dane przedkliniczne.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'CAE — preszinaptikus monoaminerg', en: 'CAE — presynaptic monoaminergic', pl: 'CAE — presynaptyczny monoaminergiczny' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Nincs humán adat', en: 'No human data', pl: 'Brak danych u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Kísérleti, sehol jóváhagyva', en: 'Investigational, not approved', pl: 'Badawczy, nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'Knoll-féle „CAE-mechanizmus" — preszinaptikus katekolaminerg és phenethylamin-erg neuronok elektromos akciópotenciálra adott válaszának fokozása, így minden idegimpulzus több neurotranszmittert szabadít fel. Nem indít alap-felszabadulást, tehát „aktivitás-függő" hatás.',
+      en: 'Knoll`s “CAE mechanism” — enhancement of the response of presynaptic catecholaminergic and phenethylamine-ergic neurons to electrical action potentials, so each impulse releases more neurotransmitter. It does not trigger baseline release — the effect is activity-dependent.',
+      pl: '„Mechanizm CAE” Knolla — wzmocnienie reakcji presynaptycznych neuronów katecholaminergicznych i feniloetyloaminowych na elektryczne potencjały czynnościowe, tak by każdy impuls uwalniał więcej neuroprzekaźnika. Nie wyzwala uwalniania podstawowego — efekt zależny od aktywności.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. Akadémiai kutatási vegyület; nem szerepel a klasszikus „research chemical" piacon sem szélesen.',
+      en: 'Not approved as a medicine anywhere. Academic research compound; not widely available even on the “research chemical” market.',
+      pl: 'Nigdzie nie zatwierdzony jako lek. Akademicki związek badawczy; nawet na rynku „chemikaliów badawczych” niezbyt dostępny.',
+    },
+  },
+
+  {
+    id: 'prl-8-53',
+    name: 'PRL-8-53',
+    image: null,
+    accentColor: '#f43f5e',
+    tagColor: 'rgba(244,63,94,0.18)',
+    shortDesc: {
+      hu: 'Fenil-metil-piperidinil-benzoát — 1970-es évek, egyetlen humán memóriavizsgálat.',
+      en: 'Phenyl-methyl-piperidinyl benzoate — 1970s, one published human memory trial.',
+      pl: 'Fenylo-metylo-piperydynylo-benzoesan — lata 70., jedno opublikowane badanie pamięci u ludzi.',
+    },
+    description: {
+      hu: 'A PRL-8-53 (methyl-3-(2-(benzyl(methyl)amino)ethyl)benzoate) 1972-es szabadalom (Dr. Nikolaus Hansl, Creighton University). Egyetlen 1978-as kettősvak placebóval kontrollált humán vizsgálatban (n=47) statisztikailag szignifikáns verbális memóriajavulást írtak le — különösen idősebb és kezdetben gyengén teljesítő alanyoknál. Azóta nincs követő vizsgálat.',
+      en: 'PRL-8-53 (methyl-3-(2-(benzyl(methyl)amino)ethyl)benzoate) was patented in 1972 (Dr. Nikolaus Hansl, Creighton University). A single 1978 double-blind placebo-controlled human trial (n=47) described statistically significant verbal-memory improvement — particularly in older and initially low-performing subjects. There have been no follow-up trials since.',
+      pl: 'PRL-8-53 (metylo-3-(2-(benzylo(metylo)amino)etylo)benzoesan) opatentowano w 1972 r. (dr Nikolaus Hansl, Creighton University). Pojedyncze badanie z 1978 r. z podwójnie ślepą próbą i placebo (n=47) opisało statystycznie istotną poprawę pamięci werbalnej — szczególnie u starszych i początkowo słabo wypadających osób. Od tego czasu nie ma badań kontynuacyjnych.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Cholinerg + dopaminerg moduláció', en: 'Cholinergic + dopaminergic modulation', pl: 'Modulacja cholinergiczna + dopaminergiczna' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Nincs publikált humán adat', en: 'No published human data', pl: 'Brak opublikowanych danych u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Kísérleti, sehol jóváhagyva', en: 'Investigational, not approved', pl: 'Badawczy, nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'Kombinált cholinerg potencírozás és dopaminerg moduláció — az eredeti szabadalom „acetilkolin- és serotonin-felszabadulás-fokozó" mechanizmust ír le; pontos receptorszintű profil máig nem ismert.',
+      en: 'Combined cholinergic potentiation and dopaminergic modulation — the original patent describes an “acetylcholine and serotonin release-enhancing” mechanism; the precise receptor-level profile remains unknown.',
+      pl: 'Połączona potencjalizacja cholinergiczna i modulacja dopaminergiczna — oryginalny patent opisuje mechanizm „wzmacniający uwalnianie acetylocholiny i serotoniny”; dokładny profil na poziomie receptora pozostaje nieznany.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. „Research chemical" minősítéssel árusított, kontroll nélküli alapanyag; UK-ban a Psychoactive Substances Act tiltja.',
+      en: 'Not approved as a medicine anywhere. Sold as a “research chemical” with no regulated source control; banned in the UK under the Psychoactive Substances Act.',
+      pl: 'Nigdzie nie zatwierdzony jako lek. Sprzedawany jako „chemikalium badawcze” bez kontrolowanego źródła; zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act.',
+    },
+  },
+
+  // ============================================================
+  // EXTRA — Anxiolytics + Stim-Recovery (Task 7, Batch 3)
+  // ============================================================
+
+  {
+    id: 'phenibut',
+    name: 'Phenibut',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'β-fenil-GABA — GABA-B agonista, orosz Rx anxiolitikum.',
+      en: 'β-phenyl-GABA — GABA-B agonist, Russian prescription anxiolytic.',
+      pl: 'β-fenylo-GABA — agonista GABA-B, rosyjski lek anksjolityczny na receptę.',
+    },
+    description: {
+      hu: 'A Phenibut (β-fenil-γ-amino-vajsav) szovjet űrkutatási fejlesztés (1960-as évek), olyan anxiolitikum, amely a GABA-tól eltérően áthatol a vér-agy gáton. Oroszországban gyógyszerként (Anvifen, Noofen) használt; Európában és USA-ban nem jóváhagyott. Erős tolerancia és fizikai függőség alakulhat ki rendszeres napi szedésnél — megvonási tünetei a benzodiazepin-megvonásra emlékeztetnek.',
+      en: 'Phenibut (β-phenyl-γ-aminobutyric acid) is a Soviet space-program development (1960s), an anxiolytic that, unlike GABA itself, crosses the blood-brain barrier. Used as a medicine in Russia (Anvifen, Noofen); not approved in Europe or the USA. Strong tolerance and physical dependence can develop with regular daily use — withdrawal resembles benzodiazepine withdrawal.',
+      pl: 'Fenibut (β-fenylo-kwas γ-aminomasłowy) to opracowanie radzieckiego programu kosmicznego (lata 60.), lek anksjolityczny, który w przeciwieństwie do samego GABA przenika barierę krew-mózg. Stosowany jako lek w Rosji (Anvifen, Noofen); niezatwierdzony w Europie ani USA. Przy regularnym codziennym stosowaniu może rozwinąć się silna tolerancja i fizyczne uzależnienie — odstawienie przypomina odstawienie benzodiazepin.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'GABA-B agonista + Ca²⁺-α2δ', en: 'GABA-B agonist + Ca²⁺-α2δ', pl: 'Agonista GABA-B + Ca²⁺-α2δ' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~5 óra', en: '~5 h', pl: '~5 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Oroszország Rx / UK Class C (2024)', en: 'Russia Rx / UK Class C (2024)', pl: 'Rosja Rx / UK Class C (2024)' } },
+    ],
+    mechanism: {
+      hu: 'GABA-B receptor agonista (Baclofenhez hasonlóan) + α2δ-1 feszültség-függő Ca²⁺-csatorna alegység-moduláció (Gabapentinhez hasonlóan) → preszinaptikus glutamát-felszabadulás csökkentés és anxiolitikus hatás.',
+      en: 'GABA-B receptor agonist (similar to Baclofen) + modulation of the α2δ-1 voltage-gated Ca²⁺ channel subunit (similar to Gabapentin) → presynaptic glutamate release reduction and anxiolytic effect.',
+      pl: 'Agonista receptora GABA-B (podobnie do baklofenu) + modulacja podjednostki α2δ-1 kanałów Ca²⁺ zależnych od napięcia (podobnie do gabapentyny) → redukcja presynaptycznego uwalniania glutaminianu i efekt anksjolityczny.',
+    },
+    legalStatus: {
+      hu: 'Oroszországban, Ukrajnában, Lettországban vényköteles gyógyszer. UK-ban 2024 óta Class C kontrollált anyag. EU egyéb tagállamokban szabályozatlan. Magyarországon vény nélkül nem hozható forgalomba gyógyszerként.',
+      en: 'Prescription medicine in Russia, Ukraine, Latvia. UK Class C controlled substance since 2024. Unregulated in other EU member states. Cannot be marketed as a medicine in Hungary without prescription.',
+      pl: 'Lek na receptę w Rosji, Ukrainie, Łotwie. W Wielkiej Brytanii substancja kontrolowana klasy C od 2024. Niezregulowany w innych państwach UE. Nie może być wprowadzany do obrotu jako lek na Węgrzech bez recepty.',
+    },
+  },
+
+  {
+    id: 'tianeptine',
+    name: 'Tianeptine',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'Atípusos antidepresszáns — μ-opioid moduláció, EU/orosz vényköteles.',
+      en: 'Atypical antidepressant — μ-opioid modulator, EU/Russian prescription.',
+      pl: 'Nietypowy lek przeciwdepresyjny — modulator μ-opioidowy, recepta UE/Rosja.',
+    },
+    description: {
+      hu: 'A Tianeptin (Coaxil, Stablon) francia eredetű (Servier, 1989) atípusos antidepresszáns. Eredeti SSRE-elméletét (szerotonin-felvétel-fokozó) felülvizsgálta a 2014-es Gassaway et al. munka, amely μ-opioid receptor (MOR) parciális agonista profilt írt le terápiás dózisokon. Magas dózisok visszaélést és függőséget okozhatnak — USA-ban tilos, EU-ban szigorúan vényköteles.',
+      en: 'Tianeptine (Coaxil, Stablon) is a French (Servier, 1989) atypical antidepressant. Its original SSRE (serotonin reuptake enhancer) theory was revised by the 2014 Gassaway et al. work, which described a μ-opioid receptor (MOR) partial agonist profile at therapeutic doses. High doses can cause abuse and dependence — banned in the USA, strictly prescription-only in the EU.',
+      pl: 'Tianeptyna (Coaxil, Stablon) to francuski (Servier, 1989) nietypowy lek przeciwdepresyjny. Pierwotna teoria SSRE (wzmacniacz wychwytu serotoniny) została zrewidowana w pracy Gassaway et al. z 2014, która opisała profil częściowego agonisty receptora μ-opioidowego (MOR) przy dawkach terapeutycznych. Wysokie dawki mogą powodować nadużywanie i uzależnienie — zakazana w USA, ściśle na receptę w UE.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'μ-opioid parciális agonista', en: 'μ-opioid partial agonist', pl: 'Częściowy agonista μ-opioidowy' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~2.5 óra', en: '~2.5 h', pl: '~2,5 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'EU vényköteles / USA tiltva', en: 'EU Rx / USA banned', pl: 'UE na receptę / USA zakazana' } },
+    ],
+    mechanism: {
+      hu: 'μ-opioid receptor parciális agonista terápiás dózison; emellett glutamáterg moduláció (stressz-indukált glutamát-túltermelés csökkentése) és BDNF-up-reguláció a hippokampuszban.',
+      en: 'μ-opioid receptor partial agonist at therapeutic dose; additionally, glutamatergic modulation (reducing stress-induced glutamate overproduction) and BDNF up-regulation in the hippocampus.',
+      pl: 'Częściowy agonista receptora μ-opioidowego w dawce terapeutycznej; dodatkowo modulacja glutaminergiczna (redukcja indukowanej stresem nadprodukcji glutaminianu) i regulacja w górę BDNF w hipokampie.',
+    },
+    legalStatus: {
+      hu: 'Vényköteles antidepresszáns Franciaországban, Oroszországban, Magyarországon és számos EU-tagállamban (Coaxil/Stablon). USA-ban FDA nem jóváhagyott; több államban kontrollált anyagként tiltott.',
+      en: 'Prescription antidepressant in France, Russia, Hungary and many EU member states (Coaxil/Stablon). Not FDA-approved in the USA; banned as a controlled substance in several states.',
+      pl: 'Lek przeciwdepresyjny na receptę we Francji, Rosji, na Węgrzech i w wielu państwach UE (Coaxil/Stablon). Niezatwierdzona przez FDA w USA; zakazana jako substancja kontrolowana w kilku stanach.',
+    },
+  },
+
+  {
+    id: 'f-phenibut',
+    name: 'F-Phenibut (Fluorophenibut)',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'Fluorozott Phenibut — potensebb, lipofilebb GABA-B agonista variáns.',
+      en: 'Fluorinated Phenibut — more potent, more lipophilic GABA-B agonist variant.',
+      pl: 'Fluorowany fenibut — silniejszy, bardziej lipofilny wariant agonisty GABA-B.',
+    },
+    description: {
+      hu: 'A Fluorofenibut a Phenibut fenil-gyűrűjének para-fluoro szubsztitúciójával előállított nem-hivatalos analóg. A megnövelt lipofilitás miatt gyorsabban hatol a vér-agy gáton és nagyobb in vivo potencitást mutat — viszont ezzel arányosan magasabb tolerancia- és függőség-kockázat. Klinikai vizsgálat egyáltalán nincs.',
+      en: 'Fluorophenibut is an unofficial analog produced by para-fluoro substitution on the phenyl ring of Phenibut. Increased lipophilicity yields faster blood-brain-barrier penetration and higher in vivo potency — but proportionally higher tolerance and dependence risk. No clinical trials exist.',
+      pl: 'Fluorofenibut to nieoficjalny analog uzyskany przez podstawienie para-fluoro w pierścieniu fenylowym fenibutu. Zwiększona lipofilność daje szybsze przenikanie bariery krew-mózg i wyższą potencję in vivo — ale proporcjonalnie wyższe ryzyko tolerancji i uzależnienia. Brak badań klinicznych.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'GABA-B agonista (Phenibut-szerű)', en: 'GABA-B agonist (Phenibut-like)', pl: 'Agonista GABA-B (podobny do fenibutu)' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Nincs validált humán adat', en: 'No validated human data', pl: 'Brak zwalidowanych danych u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Sehol nem jóváhagyva', en: 'Not approved anywhere', pl: 'Nigdzie nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'Phenibut-analóg GABA-B receptor agonizmus + α2δ Ca²⁺-csatorna moduláció — a fluor-szubsztitúció gyorsítja a CNS-penetrációt és növeli a kötési affinitást.',
+      en: 'Phenibut-analog GABA-B receptor agonism + α2δ Ca²⁺ channel modulation — the fluorine substitution accelerates CNS penetration and increases binding affinity.',
+      pl: 'Agonizm receptora GABA-B analogiczny do fenibutu + modulacja kanałów Ca²⁺ α2δ — podstawienie fluoru przyspiesza penetrację OUN i zwiększa powinowactwo wiązania.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja, USA-ban néhány állam (Alabama, Michigan) Schedule II-be sorolja.',
+      en: 'Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; classified as Schedule II in several US states (Alabama, Michigan).',
+      pl: 'Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; sklasyfikowany jako Schedule II w kilku stanach USA (Alabama, Michigan).',
+    },
+  },
+
+  {
+    id: 'picamilon',
+    name: 'Picamilon',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'Nikotinsav + GABA konjugátum — orosz vényköteles anxiolitikum.',
+      en: 'Nicotinic acid + GABA conjugate — Russian prescription anxiolytic.',
+      pl: 'Koniugat kwasu nikotynowego + GABA — rosyjski lek anksjolityczny na receptę.',
+    },
+    description: {
+      hu: 'A Picamilon (Pikatropin) szovjet fejlesztés (1969, All-Union Vitamin Research Institute), amelyben a nikotinsav (B3-vitamin) GABA-val van amid-kötéssel összekapcsolva. A nikotinsav-rész értágítóként segíti az agyi vérátáramlást, miközben a vér-agy gát átlépése után a konjugátum hidrolizál → GABA szabadul fel. Oroszországban vényköteles, USA-ban az FDA 2015-ben kivonta a kiegészítő-piacról.',
+      en: 'Picamilon (Pikatropin) is a Soviet development (1969, All-Union Vitamin Research Institute) in which nicotinic acid (vitamin B3) is linked to GABA by an amide bond. The nicotinic acid moiety vasodilates and supports cerebral blood flow; after crossing the blood-brain barrier the conjugate hydrolyzes → GABA is released. Prescription-only in Russia; the FDA removed it from the US supplement market in 2015.',
+      pl: 'Pikamilon (Pikatropin) to opracowanie radzieckie (1969, All-Union Vitamin Research Institute), w którym kwas nikotynowy (witamina B3) jest połączony z GABA wiązaniem amidowym. Reszta kwasu nikotynowego rozszerza naczynia i wspiera mózgowy przepływ krwi; po przekroczeniu bariery krew-mózg koniugat hydrolizuje → uwalniany jest GABA. Na receptę w Rosji; FDA usunęła go z amerykańskiego rynku suplementów w 2015.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'GABA-prodrug + vazodilatáció', en: 'GABA prodrug + vasodilation', pl: 'Prodrug GABA + rozszerzenie naczyń' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~0.5 óra (gyors hidrolízis)', en: '~0.5 h (rapid hydrolysis)', pl: '~0,5 h (szybka hydroliza)' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Oroszország Rx / USA: tiltva (2015)', en: 'Russia Rx / USA: removed (2015)', pl: 'Rosja Rx / USA: wycofany (2015)' } },
+    ],
+    mechanism: {
+      hu: 'GABA-prodrug: a nikotinsav-konjugáció segíti az átjutást a vér-agy gáton, ahol amidáz-hidrolízissel GABA szabadul fel. A nikotinsav-frakció önmagában cerebrális vazodilatációt is okoz.',
+      en: 'GABA prodrug: the nicotinic acid conjugation aids passage through the blood-brain barrier, where amidase hydrolysis releases GABA. The nicotinic acid fraction itself also produces cerebral vasodilation.',
+      pl: 'Prodrug GABA: koniugacja z kwasem nikotynowym ułatwia przejście przez barierę krew-mózg, gdzie hydroliza amidazowa uwalnia GABA. Sama frakcja kwasu nikotynowego również powoduje rozszerzenie naczyń mózgowych.',
+    },
+    legalStatus: {
+      hu: 'Oroszországban vényköteles gyógyszer. USA-ban az FDA 2015-ben kimondta, hogy nem felel meg az étrend-kiegészítő definíciónak, és kivonatta a piacról. EU egyéb tagállamokban szabályozatlan.',
+      en: 'Prescription medicine in Russia. In 2015 the FDA ruled it does not meet the dietary supplement definition and removed it from the US market. Unregulated in other EU member states.',
+      pl: 'Lek na receptę w Rosji. W 2015 r. FDA orzekła, że nie spełnia definicji suplementu diety i usunęła go z rynku amerykańskiego. Niezregulowany w innych państwach UE.',
+    },
+  },
 ]
