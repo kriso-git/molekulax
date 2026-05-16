@@ -12,7 +12,7 @@ export const CATEGORIES = [
 ]
 
 // Map: entry-id → array of category-ids it belongs to.
-// Task 6 added the 10 CORE entries; Task 7 will extend this map for ~35 EXTRA.
+// Task 6 added the 10 CORE entries; Task 7 extended this map with 34 EXTRA entries.
 export const NOOTROPIC_CATEGORIES = {
   // CORE (Task 6)
   'piracetam':       ['racetams'],
@@ -25,6 +25,54 @@ export const NOOTROPIC_CATEGORIES = {
   'semax':           ['neuroprotective'],
   'selank':          ['anxiolytics', 'neuroprotective'],
   '9-me-bc':         ['dopaminergic'],
+
+  // EXTRA — Racetams (Task 7)
+  'aniracetam':      ['racetams', 'anxiolytics'],
+  'oxiracetam':      ['racetams'],
+  'pramiracetam':    ['racetams', 'cholinergics'],
+  'coluracetam':     ['racetams', 'cholinergics'],
+  'fasoracetam':     ['racetams'],
+  'nefiracetam':     ['racetams'],
+  'sunifiram':       ['racetams'],
+  'unifiram':        ['racetams'],
+  'nooglutyl':       ['racetams'],
+
+  // EXTRA — Eugeroics (Task 7)
+  'armodafinil':     ['eugeroics'],
+  'fladrafinil':     ['eugeroics'],
+  'flmodafinil':     ['eugeroics'],
+
+  // EXTRA — Cholinergics (Task 7)
+  'alpha-gpc':       ['cholinergics'],
+  'cdp-choline':     ['cholinergics'],
+  'centrophenoxine': ['cholinergics'],
+  'huperzine-a':     ['cholinergics'],
+
+  // EXTRA — Dopaminergic (Task 7)
+  'selegiline':      ['dopaminergic'],
+  'bpap':            ['dopaminergic'],
+  'prl-8-53':        ['dopaminergic', 'racetams'],
+
+  // EXTRA — Anxiolytics (Task 7)
+  'phenibut':        ['anxiolytics'],
+  'tianeptine':      ['anxiolytics'],
+  'f-phenibut':      ['anxiolytics'],
+  'picamilon':       ['anxiolytics'],
+
+  // EXTRA — Adaptogens (Task 7)
+  'bacopa':              ['adaptogens'],
+  'ashwagandha':         ['adaptogens'],
+  'rhodiola':            ['adaptogens'],
+  'lions-mane':          ['adaptogens', 'neuroprotective'],
+  'l-theanine':          ['adaptogens', 'anxiolytics'],
+  'tongkat-ali':         ['adaptogens'],
+
+  // EXTRA — Neuroprotective (Task 7)
+  'cerebrolysin':            ['neuroprotective'],
+  'cortexin':                ['neuroprotective'],
+  'dihexa':                  ['neuroprotective'],
+  'methylene-blue':          ['neuroprotective'],
+  'magnesium-l-threonate':   ['neuroprotective'],
 }
 
 export function getNootropicCategories(entryId) {

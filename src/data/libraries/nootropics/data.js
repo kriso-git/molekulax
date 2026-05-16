@@ -1957,4 +1957,188 @@ export const NOOTROPICS = [
       pl: 'Suplement diety OTC w całej UE i USA. Posiada status „Nowy Suplement Zdrowotny” w Malezji. NIE jest na liście zakazanej WADA dla sportowców. Wolno dostępny na Węgrzech.',
     },
   },
+
+  // ============================================================
+  // EXTRA — Neuroprotective (Task 7, Batch 5)
+  // ============================================================
+
+  {
+    id: 'cerebrolysin',
+    name: 'Cerebrolysin',
+    image: null,
+    accentColor: '#00ff99',
+    tagColor: 'rgba(0,255,153,0.18)',
+    shortDesc: {
+      hu: 'Sertés-agy peptid-hidrolizátum — EU Rx, stroke + demencia.',
+      en: 'Porcine brain peptide hydrolysate — EU Rx, stroke + dementia.',
+      pl: 'Hydrolizat peptydowy z mózgu świni — UE Rx, udar + otępienie.',
+    },
+    description: {
+      hu: 'A Cerebrolysin (EVER Pharma, Ausztria) sertés-agykéregből kivont, peptid- és szabad aminosav-frakciókra hidrolizált biológiai gyógyszer. Több randomizált klinikai vizsgálatban (akut ischaemiás stroke, vaszkuláris demencia, traumás agysérülés) szignifikáns funkcionális regenerációs javulást írtak le. Magyarországon és számos EU-tagállamban i.v./i.m. injekcióként vényköteles.',
+      en: 'Cerebrolysin (EVER Pharma, Austria) is a biological medicine hydrolyzed from porcine brain cortex into peptide and free amino acid fractions. Multiple randomized clinical trials (acute ischemic stroke, vascular dementia, traumatic brain injury) describe significant functional-recovery improvement. It is prescription-only as an i.v./i.m. injection in Hungary and several EU member states.',
+      pl: 'Cerebrolysin (EVER Pharma, Austria) to biologiczny lek hydrolizowany z kory mózgu świni do frakcji peptydowych i wolnych aminokwasów. Wiele randomizowanych badań klinicznych (ostry udar niedokrwienny, otępienie naczyniowe, urazowe uszkodzenie mózgu) opisuje istotną poprawę funkcjonalnej regeneracji. Jest na receptę w postaci wstrzyknięć i.v./i.m. na Węgrzech i w kilku państwach UE.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Neurotrofikus + neuroprotektív peptidek', en: 'Neurotrophic + neuroprotective peptides', pl: 'Peptydy neurotroficzne + neuroprotekcyjne' } },
+      { label: { hu: 'Beadás', en: 'Route', pl: 'Droga podania' },
+        value: { hu: 'i.v. / i.m. injekció', en: 'i.v. / i.m. injection', pl: 'wstrzyknięcie i.v. / i.m.' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'EU vényköteles (HU, AT)', en: 'EU Rx (HU, AT)', pl: 'UE na receptę (HU, AT)' } },
+    ],
+    mechanism: {
+      hu: 'A peptid-frakciók NGF-, BDNF- és GDNF-szerű neurotrofikus aktivitást mutatnak, csökkentik az ischaemia-indukált excitotoxicitást és apoptózist, és serkentik a neurogenezist a szubventrikuláris zónában.',
+      en: 'The peptide fractions exhibit NGF-, BDNF- and GDNF-like neurotrophic activity, reduce ischemia-induced excitotoxicity and apoptosis, and stimulate neurogenesis in the subventricular zone.',
+      pl: 'Frakcje peptydowe wykazują aktywność neurotroficzną podobną do NGF, BDNF i GDNF, zmniejszają ekscytotoksyczność i apoptozę indukowaną niedokrwieniem oraz stymulują neurogenezę w strefie podkomorowej.',
+    },
+    legalStatus: {
+      hu: 'Vényköteles gyógyszer Magyarországon, Ausztriában, Lengyelországban és számos EU/orosz államban. USA-ban nem FDA-jóváhagyott.',
+      en: 'Prescription medicine in Hungary, Austria, Poland and many EU/Russian states. Not FDA-approved in the USA.',
+      pl: 'Lek na receptę na Węgrzech, w Austrii, Polsce i wielu państwach UE/rosyjskich. Niezatwierdzony przez FDA w USA.',
+    },
+  },
+
+  {
+    id: 'cortexin',
+    name: 'Cortexin',
+    image: null,
+    accentColor: '#00ff99',
+    tagColor: 'rgba(0,255,153,0.18)',
+    shortDesc: {
+      hu: 'Marha-agykéreg polipeptid kivonat — orosz Rx, neurológiai indikációk.',
+      en: 'Bovine cortex polypeptide extract — Russian Rx, neurological indications.',
+      pl: 'Ekstrakt polipeptydowy z kory wołowej — rosyjski Rx, wskazania neurologiczne.',
+    },
+    description: {
+      hu: 'A Cortexin (Geropharm, Oroszország) szarvasmarha- és sertés-agykéregből izolált, alacsony molekulatömegű (<10 kDa) polipeptid-frakció. Oroszországban vényköteles i.m. injekció, indikációi: enkefalopátiák, gyermekgyógyászati fejlődési zavarok, stroke utáni állapotok. Klinikai bizonyítékai főleg orosz nyelvű publikációkból származnak; nyugati irodalomban korlátozottan elérhető.',
+      en: 'Cortexin (Geropharm, Russia) is a low-molecular-weight (<10 kDa) polypeptide fraction isolated from bovine and porcine brain cortex. It is a prescription i.m. injection in Russia, indicated for encephalopathy, paediatric developmental disorders, post-stroke states. Clinical evidence is mainly from Russian-language publications; coverage in Western literature is limited.',
+      pl: 'Korteksyna (Geropharm, Rosja) to niskocząsteczkowa (<10 kDa) frakcja polipeptydowa wyizolowana z kory mózgu wołowej i świńskiej. W Rosji jest na receptę w postaci wstrzyknięcia i.m., wskazania: encefalopatie, pediatryczne zaburzenia rozwojowe, stany po udarze. Dowody kliniczne pochodzą głównie z publikacji w języku rosyjskim; pokrycie w literaturze zachodniej jest ograniczone.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Neurotrofikus polipeptid-kivonat', en: 'Neurotrophic polypeptide extract', pl: 'Ekstrakt polipeptydowy neurotroficzny' } },
+      { label: { hu: 'Beadás', en: 'Route', pl: 'Droga podania' },
+        value: { hu: 'i.m. injekció', en: 'i.m. injection', pl: 'wstrzyknięcie i.m.' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Oroszország + FÁK Rx', en: 'Russia + CIS Rx', pl: 'Rosja + WNP Rx' } },
+    ],
+    mechanism: {
+      hu: 'A kis molekulatömegű polipeptidek neurotrofikus (BDNF-szerű) aktivitást, antioxidáns és anti-excitotoxikus hatást mutatnak. A nyugati farmakológiai irodalomban a pontos hatóanyag-azonosítás hiányos.',
+      en: 'The low-molecular-weight polypeptides show neurotrophic (BDNF-like) activity and antioxidant and anti-excitotoxic effects. Precise active ingredient identification is incomplete in Western pharmacology literature.',
+      pl: 'Niskocząsteczkowe polipeptydy wykazują aktywność neurotroficzną (podobną do BDNF) oraz działanie antyoksydacyjne i przeciw ekscytotoksyczne. Dokładna identyfikacja substancji czynnych jest niekompletna w zachodniej literaturze farmakologicznej.',
+    },
+    legalStatus: {
+      hu: 'Oroszországban, Belaruszban, Ukrajnában és néhány FÁK-államban vényköteles. EU és USA nem jóváhagyott.',
+      en: 'Prescription-only in Russia, Belarus, Ukraine and several CIS states. Not approved in the EU or USA.',
+      pl: 'Na receptę w Rosji, Białorusi, Ukrainie i kilku państwach WNP. Niezatwierdzona w UE ani USA.',
+    },
+  },
+
+  {
+    id: 'dihexa',
+    name: 'Dihexa (PNB-0408)',
+    image: null,
+    accentColor: '#00ff99',
+    tagColor: 'rgba(0,255,153,0.18)',
+    shortDesc: {
+      hu: 'Angiotensin IV analóg — HGF/c-Met agonista, hippokampális szinapszis-építő.',
+      en: 'Angiotensin IV analog — HGF/c-Met agonist, hippocampal synapse builder.',
+      pl: 'Analog angiotensyny IV — agonista HGF/c-Met, budowniczy synaps w hipokampie.',
+    },
+    description: {
+      hu: 'A Dihexa (N-hexanoyl-Tyr-Ile-(6) aminohexanoic amide, PNB-0408) az Angiotensin IV peptid kis-molekulájú származéka, amelyet a Washington State University-n Joseph Harding csoportja fejlesztett ki Alzheimer-kór és más kognitív zavarok modelljére. Preklinikai vizsgálatokban erős hippokampális szinaptogén aktivitást mutat. Humán klinikai vizsgálat egyáltalán nincs.',
+      en: 'Dihexa (N-hexanoyl-Tyr-Ile-(6) aminohexanoic amide, PNB-0408) is a small-molecule derivative of the Angiotensin IV peptide developed at Washington State University by Joseph Harding`s group for Alzheimer`s and other cognitive-impairment models. Preclinical studies show strong hippocampal synaptogenic activity. No human clinical trials exist.',
+      pl: 'Diheksa (N-heksanoyl-Tyr-Ile-(6) amid aminoheksanowy, PNB-0408) to małocząsteczkowa pochodna peptydu Angiotensyny IV, opracowana na Washington State University przez grupę Josepha Hardinga dla modeli choroby Alzheimera i innych zaburzeń poznawczych. Badania przedkliniczne wykazują silną aktywność synaptogenną w hipokampie. Brak badań klinicznych u ludzi.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'HGF/c-Met receptor agonista', en: 'HGF/c-Met receptor agonist', pl: 'Agonista receptora HGF/c-Met' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: 'Nincs humán adat', en: 'No human data', pl: 'Brak danych u ludzi' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'Kísérleti, sehol jóváhagyva', en: 'Investigational, not approved', pl: 'Badawczy, nie zatwierdzony' } },
+    ],
+    mechanism: {
+      hu: 'Hepatocyte Growth Factor (HGF) / c-Met receptor agonista — a c-Met aktivációja a hippokampuszban erős szinaptogén kaszkádot indít el, az állat-modellekben becsült potencitás ~10⁷× nagyobb a BDNF-énél bizonyos végpontokon.',
+      en: 'Hepatocyte Growth Factor (HGF) / c-Met receptor agonist — c-Met activation in the hippocampus triggers a strong synaptogenic cascade; in animal models estimated potency is ~10⁷× higher than BDNF on certain endpoints.',
+      pl: 'Agonista receptora Hepatocyte Growth Factor (HGF) / c-Met — aktywacja c-Met w hipokampie wyzwala silną kaskadę synaptogenną; w modelach zwierzęcych szacowana potencja jest ~10⁷× wyższa niż BDNF na pewnych punktach końcowych.',
+    },
+    legalStatus: {
+      hu: 'Sehol nem jóváhagyott gyógyszer; csak akadémiai és „research chemical" kategóriában forgalmazott — humán biztonsági adat nincs.',
+      en: 'Not approved as a medicine anywhere; sold only in academic and “research chemical” categories — no human safety data exists.',
+      pl: 'Nigdzie nie zatwierdzona jako lek; sprzedawana tylko w kategoriach akademickich i „chemikaliów badawczych” — brak danych o bezpieczeństwie u ludzi.',
+    },
+  },
+
+  {
+    id: 'methylene-blue',
+    name: 'Methylene Blue',
+    image: null,
+    accentColor: '#00ff99',
+    tagColor: 'rgba(0,255,153,0.18)',
+    shortDesc: {
+      hu: 'Mitokondriális elektronhordozó — FDA Rx methemoglobinémiára, alacsony dózisú nootropikum.',
+      en: 'Mitochondrial electron carrier — FDA Rx for methemoglobinemia, low-dose nootropic.',
+      pl: 'Mitochondrialny nośnik elektronów — FDA Rx na methemoglobinemię, nootropik w niskiej dawce.',
+    },
+    description: {
+      hu: 'A Metilénkék (methylthioninium chloride) klasszikus fenotiazin-festék, amely FDA-jóváhagyott gyógyszer methemoglobinémia kezelésére (Provayblue®). Alacsony dózisban (0.5-4 mg/kg, USP-gyógyszerkönyvi tisztaságú) nootropikus hatást írtak le: mitokondriális elektronhordozóként az aerob anyagcserét és az ATP-szintézist segíti — preklinikai modellekben memóriajavulást és neuroprotekciót okoz.',
+      en: 'Methylene Blue (methylthioninium chloride) is a classical phenothiazine dye and an FDA-approved drug for methemoglobinemia (Provayblue®). At low doses (0.5-4 mg/kg, USP-grade purity) a nootropic effect has been described: as a mitochondrial electron carrier it supports aerobic metabolism and ATP synthesis — preclinical models show memory improvement and neuroprotection.',
+      pl: 'Błękit metylenowy (chlorek metylotioniny) to klasyczny barwnik fenotiazynowy i lek zatwierdzony przez FDA na methemoglobinemię (Provayblue®). W niskich dawkach (0,5-4 mg/kg, czystość farmakopealna USP) opisano efekt nootropowy: jako mitochondrialny nośnik elektronów wspiera metabolizm tlenowy i syntezę ATP — modele przedkliniczne wykazują poprawę pamięci i neuroprotekcję.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'Mitokondriális elektronhordozó + MAO-A', en: 'Mitochondrial electron carrier + MAO-A', pl: 'Mitochondrialny nośnik elektronów + MAO-A' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+        value: { hu: '~5-6.5 óra', en: '~5-6.5 h', pl: '~5-6,5 h' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'FDA Rx (methemoglobinémia)', en: 'FDA Rx (methemoglobinemia)', pl: 'FDA Rx (methemoglobinemia)' } },
+    ],
+    mechanism: {
+      hu: 'A mitokondriális elektrontranszportláncban alternatív elektron-shuttle-ként szerepel a komplex I/III diszfunkciójánál, fokozza a citokróm-c-oxidáz aktivitást, és magas dózisban szelektív MAO-A inhibitor (szerotonin szindróma kockázat SSRI-vel).',
+      en: 'In the mitochondrial electron transport chain it acts as an alternative electron shuttle under complex I/III dysfunction, increasing cytochrome-c oxidase activity; at higher doses it is a selective MAO-A inhibitor (serotonin syndrome risk with SSRIs).',
+      pl: 'W mitochondrialnym łańcuchu transportu elektronów działa jako alternatywny wahadłowiec elektronowy przy dysfunkcji kompleksu I/III, zwiększając aktywność oksydazy cytochromu-c; w wyższych dawkach jest selektywnym inhibitorem MAO-A (ryzyko zespołu serotoninowego z SSRI).',
+    },
+    legalStatus: {
+      hu: 'FDA-jóváhagyott gyógyszer methemoglobinémiára (Provayblue®). Az USA-ban és EU-ban USP-tisztaságú formája csak vényre, „nootropikum-célú" off-label használata szürke zóna. Ipari festékként árusított minőség NEM gyógyszerészeti.',
+      en: 'FDA-approved drug for methemoglobinemia (Provayblue®). USP-grade is prescription-only in the USA and EU; “nootropic-purpose” off-label use is a grey zone. Industrial-dye-grade is NOT pharmaceutical.',
+      pl: 'Lek zatwierdzony przez FDA na methemoglobinemię (Provayblue®). Czystość USP jest na receptę w USA i UE; off-label „nootropowe” zastosowanie jest szarą strefą. Jakość barwnika przemysłowego NIE jest farmaceutyczna.',
+    },
+  },
+
+  {
+    id: 'magnesium-l-threonate',
+    name: 'Magnesium L-Threonate (Magtein)',
+    image: null,
+    accentColor: '#00ff99',
+    tagColor: 'rgba(0,255,153,0.18)',
+    shortDesc: {
+      hu: 'MIT-fejlesztésű Mg-kelát (Magtein®) — szinaptikus Mg²⁺-emelő.',
+      en: 'MIT-developed Mg chelate (Magtein®) — synaptic Mg²⁺ booster.',
+      pl: 'Chelat Mg opracowany na MIT (Magtein®) — wzmacniacz synaptycznego Mg²⁺.',
+    },
+    description: {
+      hu: 'A Magnézium-L-treonát (Magtein®) az MIT-en Liu Guosong és Susumu Tonegawa csoportja által fejlesztett szabadalmaztatott magnézium-kelát, amelyben a treonsav-konjugáció miatt a magnézium-ion a többi formánál hatékonyabban hatol be a központi idegrendszerbe. Patkány-vizsgálatok szinaptikus sűrűség- és LTP-növekedést mutattak, két kis humán RCT pedig kognitív funkció-javulást írt le idősebb felnőtteknél.',
+      en: 'Magnesium L-Threonate (Magtein®) is a proprietary magnesium chelate developed at MIT by Liu Guosong and Susumu Tonegawa, in which the threonic-acid conjugation lets magnesium ions penetrate the CNS more efficiently than other forms. Rat studies show synaptic density and LTP increases; two small human RCTs describe cognitive function improvement in older adults.',
+      pl: 'L-Treonian magnezu (Magtein®) to opatentowany chelat magnezu opracowany na MIT przez Liu Guosonga i Susumu Tonegawę, w którym koniugacja z kwasem treonowym pozwala jonom magnezu skuteczniej przenikać do OUN niż innym formom. Badania na szczurach wykazują wzrost gęstości synaptycznej i LTP; dwa małe RCT u ludzi opisują poprawę funkcji poznawczych u starszych dorosłych.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+        value: { hu: 'CNS-emelt Mg²⁺ + NMDA-moduláció', en: 'CNS-elevated Mg²⁺ + NMDA modulation', pl: 'Podwyższony Mg²⁺ w OUN + modulacja NMDA' } },
+      { label: { hu: 'Hatásbeállás', en: 'Onset', pl: 'Początek działania' },
+        value: { hu: '4-12 hét krónikus szedés', en: '4-12 weeks chronic use', pl: '4-12 tygodni przewlekłego stosowania' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' },
+        value: { hu: 'OTC étrend-kiegészítő', en: 'OTC dietary supplement', pl: 'Suplement diety OTC' } },
+    ],
+    mechanism: {
+      hu: 'Emelt agyi Mg²⁺-szintek modulálják az NMDA-receptort (a fiziológiás Mg²⁺-blokk visszaállítása), erősítik az LTD/LTP egyensúlyt, és növelik a dendritikus tüske-sűrűséget a prefrontális kéregben és a hippokampuszban.',
+      en: 'Elevated brain Mg²⁺ levels modulate the NMDA receptor (restoring the physiological Mg²⁺ block), strengthen the LTD/LTP balance, and increase dendritic spine density in the prefrontal cortex and hippocampus.',
+      pl: 'Podwyższone poziomy Mg²⁺ w mózgu modulują receptor NMDA (przywracając fizjologiczny blok Mg²⁺), wzmacniają równowagę LTD/LTP i zwiększają gęstość kolców dendrytycznych w korze przedczołowej i hipokampie.',
+    },
+    legalStatus: {
+      hu: 'OTC étrend-kiegészítő EU-szerte és USA-ban. FDA GRAS minősítés a Magtein® márkára. Magyarországon szabadon kapható.',
+      en: 'OTC dietary supplement throughout the EU and the USA. FDA GRAS status for the Magtein® brand. Freely available in Hungary.',
+      pl: 'Suplement diety OTC w całej UE i USA. Status FDA GRAS dla marki Magtein®. Wolno dostępny na Węgrzech.',
+    },
+  },
 ]
