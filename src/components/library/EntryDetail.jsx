@@ -2070,7 +2070,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {/* ─── Disclaimer ─── */}
  <section className="relative px-6 sm:px-10 pb-10">
  <p className="text-[11px] leading-relaxed text-center" style={{ color: 'var(--text-fainter)' }}>
- {t('entry.disclaimer') || 'A weboldal kizárólag oktatási és tájékoztatási célokat szolgál.'}
+ {(library.id === 'performance' ? t('entry.disclaimer.performance') : t('entry.disclaimer')) || 'A weboldal kizárólag oktatási és tájékoztatási célokat szolgál.'}
  </p>
  </section>
  </div>
