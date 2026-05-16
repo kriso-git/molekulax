@@ -22,6 +22,7 @@ import TelegramButtons from '../TelegramButtons'
 import MiniCalc from '../MiniCalc'
 import BloodworkProtocol from './BloodworkProtocol'
 import PerformanceCalculator from './PerformanceCalculator'
+import PharmaceuticalCalculator from './PharmaceuticalCalculator'
 
 const TIER_META = {
  5: { label: { hu: 'Engedélyezett', en: 'Approved', pl: 'Zatwierdzony' },
@@ -1358,6 +1359,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  const isLight = theme === 'light'
  const hasCalc = (library?.id === 'peptides' && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg)
  || (library?.id === 'performance' && peptide.doseCalc)
+ || (library?.id === 'pharmaceutical' && peptide.doseCalc)
  const relatedLabel = library?.labels?.relatedLabel ? tr(library.labels.relatedLabel) : (t('entry.rel.label') || 'Kapcsolódó peptidek')
  const [tab, setTab] = useState('molecular')
  const [entered, setEntered] = useState(false)
@@ -1477,6 +1479,30 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  >
  {peptide.legalStatus.fda ? <ShieldCheck size={10} /> : <ShieldAlert size={10} />}
  {tr(peptide.legalStatus.tag)}
+ </span>
+ )}
+ {library?.id === 'pharmaceutical' && peptide.pharma?.atcCode && (
+ <span
+ className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] tracking-[0.22em] uppercase font-mono font-semibold"
+ style={{
+ background: 'var(--tint-soft)',
+ border: '1px solid var(--tint-soft-border)',
+ color: 'var(--text-muted)',
+ }}
+ >
+ ATC · {peptide.pharma.atcCode}
+ </span>
+ )}
+ {library?.id === 'pharmaceutical' && peptide.pharma?.prescriptionStatus && (
+ <span
+ className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] tracking-[0.22em] uppercase font-semibold"
+ style={{
+ background: `${accent}1a`,
+ border: `1px solid ${accent}55`,
+ color: accent,
+ }}
+ >
+ Rx · {tr(peptide.pharma.prescriptionStatus)}
  </span>
  )}
  </div>
@@ -2055,6 +2081,12 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
  )}
 
+ {library?.id === 'pharmaceutical' && peptide.doseCalc && (
+ <div id="v2-calc">
+ <PharmaceuticalCalculator doseCalc={peptide.doseCalc} accent={accent} />
+ </div>
+ )}
+
  {/* ─── Telegram CTA ─── */}
  <section id="v2-tg" className="relative px-6 sm:px-10 pb-10">
  <div
@@ -2090,7 +2122,11 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {/* ─── Disclaimer ─── */}
  <section className="relative px-6 sm:px-10 pb-10">
  <p className="text-[11px] leading-relaxed text-center" style={{ color: 'var(--text-fainter)' }}>
- {(library.id === 'performance' ? t('entry.disclaimer.performance') : t('entry.disclaimer')) || 'A weboldal kizárólag oktatási és tájékoztatási célokat szolgál.'}
+ {(library.id === 'pharmaceutical'
+ ? t('entry.disclaimer.pharmaceutical')
+ : library.id === 'performance'
+ ? t('entry.disclaimer.performance')
+ : t('entry.disclaimer')) || 'A weboldal kizárólag oktatási és tájékoztatási célokat szolgál.'}
  </p>
  </section>
  </div>

@@ -931,5 +931,18 @@ export function adaptLibraryEntry(entry, library) {
  // ─── Phase 5 passthrough: structured bloodwork + per-entry dose helper ───
  bloodwork: peptide.bloodwork || null,
  doseCalc: peptide.doseCalc || null,
+ // ─── Phase 6 passthrough: pharmaceutical raw fields, nested under `pharma` to
+ //     avoid clashing with the adapter-derived peptide `indications` rich shape.
+ //     EntryDetail reads via `peptide.pharma?.atcCode` etc. when library.id === 'pharmaceutical'.
+ //     See [[feedback_adapter_passthrough]].
+ pharma: library.id === 'pharmaceutical' ? {
+ atcCode: peptide.atcCode || null,
+ prescriptionStatus: peptide.prescriptionStatus || null,
+ indications: peptide.indications || null,
+ contraindications: peptide.contraindications || null,
+ commonSideEffects: peptide.commonSideEffects || null,
+ cyp450: peptide.cyp450 || null,
+ crossMolInteractions: peptide.crossMolInteractions || null,
+ } : null,
  }
 }
