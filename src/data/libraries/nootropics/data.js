@@ -127,6 +127,7 @@ export const NOOTROPICS = [
  { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, value: { hu: '12-15 óra', en: '12-15 hours', pl: '12-15 godzin' } },
  { label: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Czas wystąpienia' }, value: { hu: '30-60 perc', en: '30-60 min', pl: '30-60 min' } },
  { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'FDA Rx (Provigil)', en: 'FDA Rx (Provigil)', pl: 'FDA Rx (Provigil)' } },
+ { label: { hu: 'FDA figyelmeztetés', en: 'FDA boxed warning', pl: 'Ostrzeżenie FDA' }, value: { hu: 'Súlyos bőrreakciók (SJS/TEN/DRESS)', en: 'Severe skin reactions (SJS/TEN/DRESS)', pl: 'Ciężkie reakcje skórne (SJS/TEN/DRESS)' } },
  ],
  mechanism: {
  hu: 'Szelektív DAT (dopamin-transzporter) gátló; hisztaminerg TMN-aktiválás; orexin-rendszer emelés.',
@@ -179,11 +180,15 @@ export const NOOTROPICS = [
  { hu: 'Warfarin szérumszintet módosíthat, INR-monitorozás', en: 'May alter warfarin serum levels, INR monitoring required', pl: 'Może zmieniać poziomy warfaryny, wymagane monitorowanie INR' },
  { hu: 'Koffeinnel additív stimuláció, álmatlanság-kockázat', en: 'Additive stimulation with caffeine, insomnia risk', pl: 'Stymulacja addytywna z kofeiną, ryzyko bezsenności' },
  { hu: 'Alkohol kombinációja kerülendő (megítélés-zavar)', en: 'Avoid alcohol combination (judgment impairment)', pl: 'Unikać kombinacji z alkoholem (upośledzenie osądu)' },
+ { hu: 'CYP3A4-indukció: cyclosporine, midazolam és néhány antiretroviralis szer szérum-szintje csökken (FDA SmPC)', en: 'CYP3A4 induction: lowers serum levels of cyclosporine, midazolam, and some antiretrovirals (FDA SmPC)', pl: 'Indukcja CYP3A4: obniża poziomy cyklosporyny, midazolamu i niektórych leków antyretrowirusowych (FDA SmPC)' },
+ { hu: 'CYP2C19-gátlás: phenytoin és néhány proton-pumpa-gátló szérum-szintje emelkedhet', en: 'CYP2C19 inhibition: may raise serum levels of phenytoin and some proton-pump inhibitors', pl: 'Hamowanie CYP2C19: może podnosić poziomy fenytoiny i niektórych inhibitorów pompy protonowej' },
  ],
  studies: [
  { title: 'Modafinil: a review of neurochemical actions and effects on cognition', authors: 'Minzenberg MJ, Carter CS.', journal: 'Neuropsychopharmacology. 2008;33(7):1477-1502.', pmid: '17712350' },
  { title: 'Modafinil for cognitive enhancement in healthy non-sleep-deprived', authors: 'Battleday RM, Brem AK.', journal: 'Eur Neuropsychopharmacol. 2015;25(11):1865-1881.', pmid: '26381811' },
  { title: 'Modafinil, long-term safety in narcolepsy', authors: 'Mitler MM et al.', journal: 'Neurology. 2000;54(5):1166-1175.', pmid: '10720292' },
+ { title: 'Modafinil increases extracellular dopamine in human brain via DAT inhibition', authors: 'Volkow ND et al.', journal: 'JAMA. 2009;301(11):1148-1154.', pmid: '19300566' },
+ { title: 'Treatment of narcolepsy: pharmacological strategies', authors: 'Pizza F et al.', journal: 'Curr Treat Options Neurol. 2023;25:1-15.', pmid: '36921459' },
  ],
  faq: [
  { q: { hu: 'Tényleg nem stimuláns?', en: 'Is it really not a stimulant?', pl: 'Czy naprawdę nie jest stymulantem?' }, a: { hu: 'Schedule IV szabályozott szerként alacsonyabb függőségi potenciálú, mint klasszikus stimulánsok (Adderall, Ritalin). DAT-affinitása ugyanakkor van, szubjektíven kevésbé "stim-like", de tolerancia és pszichológiai függőség lehetséges.', en: 'Schedule IV with lower dependence potential than classic stimulants (Adderall, Ritalin). Has DAT affinity nonetheless, subjectively less "stim-like," but tolerance and psychological dependence are possible.', pl: 'Schedule IV z niższym potencjałem uzależnienia niż klasyczne stymulanty (Adderall, Ritalin). Ma jednak powinowactwo do DAT, subiektywnie mniej "stymulujący," lecz możliwa jest tolerancja i uzależnienie psychiczne.' } },
