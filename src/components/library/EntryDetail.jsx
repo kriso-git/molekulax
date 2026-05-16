@@ -935,7 +935,16 @@ function Constellation({ steps, accent, tr }) {
  100% { background-position: 0% 0%; }
  }
  `}</style>
- <div className="relative grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-0">
+ <style>{`
+ .mlx-step-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; position: relative; }
+ @media (min-width: 640px) {
+ .mlx-step-grid { grid-template-columns: repeat(var(--mlx-step-cols, 4), minmax(0, 1fr)); gap: 0; }
+ }
+ `}</style>
+ <div
+ className="mlx-step-grid"
+ style={{ '--mlx-step-cols': steps.length }}
+ >
  {/* Flowing connecting line */}
  <div
  className="hidden sm:block absolute top-7 left-8 right-8 h-[2px] rounded-full"
@@ -1644,7 +1653,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  <section className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Rocket} label={t('entry.sec.quickstart.eyebrow') || 'Quick Start'} accent={accent} />
  <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
- {t('entry.sec.quickstart.title') || 'Indulj el 4 lépésben'}
+ {(t('entry.sec.quickstart.title.template') || '{n} lépésben az indulásig').replace('{n}', peptide.quickStart.length)}
  </h3>
  <div
  className="relative p-6 rounded-2xl"

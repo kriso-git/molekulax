@@ -20,14 +20,6 @@ export function isEntryDetailHash(hash) {
   return parseEntryHash(hash) !== null
 }
 
-function closeDetail() {
-  if (typeof window === 'undefined') return
-  // Land back on the library section instead of jumping to the top of the
-  // page. The hashchange triggers App.jsx to render the landing, and the
-  // browser auto-scrolls to the #library anchor on LibraryGallery.
-  window.location.hash = 'library'
-}
-
 export default function EntryDetailRoute({ hash }) {
   const parsed = parseEntryHash(hash)
   const isDesktop = useMediaQuery('(min-width: 1024px)')
@@ -46,6 +38,22 @@ export default function EntryDetailRoute({ hash }) {
       setLibraryId(parsed.library)
     }
   }, [parsed?.library, libraryId, setLibraryId])
+
+  // Library-aware close: snap the LibraryContext to the current library
+  // BEFORE the hash change re-renders the landing, then nav to #library.
+  // If the hash already equals '#library' (e.g. user pressed Back twice),
+  // fall back to a manual scrollIntoView so the user still moves.
+  const closeDetail = () => {
+    if (typeof window === 'undefined') return
+    if (parsed?.library) setLibraryId(parsed.library)
+    if (window.location.hash === '#library') {
+      requestAnimationFrame(() => {
+        document.getElementById('library')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      })
+    } else {
+      window.location.hash = 'library'
+    }
+  }
 
   useEffect(() => {
     if (isDesktop) return
