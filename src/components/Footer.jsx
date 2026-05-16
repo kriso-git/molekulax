@@ -3,48 +3,48 @@ import { useLang } from '../i18n/LanguageContext'
 import TelegramButtons from './TelegramButtons'
 
 const TIKTOK_URL = 'https://www.tiktok.com/@moleculextra'
-const EMAIL      = 'molekulaxtra@gmail.com'
+const EMAIL = 'molekulaxtra@gmail.com'
 
 function TikTokIcon({ size = 14 }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
-    </svg>
-  )
+ return (
+ <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+ <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z" />
+ </svg>
+ )
 }
 
 export default function Footer() {
-  const { t } = useLang()
-  return (
-    <footer className="py-12 px-4 mt-8 border-t border-[rgba(129,140,248,0.08)]">
-      <div className="max-w-5xl mx-auto flex flex-col items-center gap-6 text-sm">
-        <span className="font-corporea text-white text-base tracking-[0.2em] uppercase">
-          MolekulaX
-        </span>
+ const { t } = useLang()
+ return (
+ <footer className="py-12 px-4 mt-8 border-t border-[rgba(129,140,248,0.08)]">
+ <div className="max-w-5xl mx-auto flex flex-col items-center gap-6 text-sm">
+ <span className="font-corporea text-white text-base tracking-[0.2em] uppercase">
+ MolekulaX
+ </span>
 
-        {/* Telegram HU/PL — same component as Hero / TelegramSection */}
-        <TelegramButtons variant="compact" label="Telegram" align="center" />
+ {/* Telegram HU/PL, same component as Hero / TelegramSection */}
+ <TelegramButtons variant="compact" label="Telegram" align="center" />
 
-        <div className="flex flex-wrap items-center justify-center gap-6">
-          <a href={TIKTOK_URL} target="_blank" rel="noopener noreferrer"
-             className="inline-flex items-center gap-2 text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-widest uppercase text-xs">
-            <TikTokIcon size={13} />
-            TikTok
-          </a>
+ <div className="flex flex-wrap items-center justify-center gap-6">
+ <a href={TIKTOK_URL} target="_blank" rel="noopener noreferrer"
+ className="inline-flex items-center gap-2 text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-widest uppercase text-xs">
+ <TikTokIcon size={13} />
+ TikTok
+ </a>
 
-          <span className="w-1 h-1 rounded-full bg-[rgba(129,140,248,0.3)]" />
+ <span className="w-1 h-1 rounded-full bg-[rgba(129,140,248,0.3)]" />
 
-          <a href={`mailto:${EMAIL}`}
-             className="inline-flex items-center gap-2 text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-wide text-xs lowercase">
-            <Mail size={13} strokeWidth={1.5} />
-            {EMAIL}
-          </a>
-        </div>
+ <a href={`mailto:${EMAIL}`}
+ className="inline-flex items-center gap-2 text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-wide text-xs lowercase">
+ <Mail size={13} strokeWidth={1.5} />
+ {EMAIL}
+ </a>
+ </div>
 
-        <p className="text-gray-700 tracking-wide text-xs">
-          {t('footer.rights')}
-        </p>
-      </div>
-    </footer>
-  )
+ <p className="text-gray-700 tracking-wide text-xs">
+ {t('footer.rights')}
+ </p>
+ </div>
+ </footer>
+ )
 }

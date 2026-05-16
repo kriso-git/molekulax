@@ -1,4 +1,4 @@
-// Nootropic Library — the second concrete Library plugged into the Phase 3
+// Nootropic Library, the second concrete Library plugged into the Phase 3
 // abstraction. Shape matches the Library typedef in ../shape.js.
 
 import { NOOTROPICS, TOP10_ORDER } from './data'
@@ -8,52 +8,52 @@ import { EFFECT_CATEGORIES } from './effects'
 import { RESEARCH_LEVELS } from '../shared/researchLevel'
 
 export const nootropicsLibrary = {
-  id: 'nootropics',
-  name: {
-    hu: 'Nootropikum Könyvtár',
-    en: 'Nootropic Library',
-    pl: 'Biblioteka Nootropików',
-  },
-  description: {
-    hu: 'Kognitív teljesítményt és mentális egészséget támogató vegyületek · kutatási szint, kategória, hatásmechanizmus szerint',
-    en: 'Compounds supporting cognitive performance and mental health · search by research tier, category, mechanism',
-    pl: 'Związki wspierające wydajność poznawczą i zdrowie psychiczne · wyszukiwanie wg poziomu badań, kategorii, mechanizmu',
-  },
-  accent: '#00ff99',
-  entries: NOOTROPICS,
-  topEntries: TOP10_ORDER,
-  categories: CATEGORIES,
-  entryCategoryMap: NOOTROPIC_CATEGORIES,
-  getResearchLevel,
-  researchLevels: RESEARCH_LEVELS,
-  effects: EFFECT_CATEGORIES,
-  effectsTitle: {
-    hu: 'Kognitív Hatásterületek',
-    en: 'Cognitive Domains',
-    pl: 'Domeny Poznawcze',
-  },
-  effectsSubtitle: {
-    hu: 'Nootropikum hatásprofilok és tudományos háttér',
-    en: 'Nootropic effect profiles and scientific background',
-    pl: 'Profile efektów nootropików i podstawy naukowe',
-  },
-  labels: {
-    topTitle:   { hu: '10 Legnépszerűbb Nootropikum', en: 'Top 10 Most Popular Nootropics', pl: '10 najpopularniejszych nootropików' },
-    allTitle:   { hu: 'Összes Nootropikum',           en: 'All Nootropics',                 pl: 'Wszystkie nootropiki' },
-    allCount:   { hu: 'nootropikum',                  en: 'nootropics',                     pl: 'nootropików' },
-    helpBody:   {
-      hu: 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk a megfelelő nootropikum kiválasztásában.',
-      en: 'Reach out to an advisor on Telegram. We can help you find the right nootropic.',
-      pl: 'Skontaktuj się z doradcą na Telegramie. Chętnie pomożemy znaleźć właściwy nootropik.',
-    },
-    relatedLabel: { hu: 'Kapcsolódó nootropikumok',   en: 'Related nootropics',             pl: 'Powiązane nootropiki' },
-    contactTitle: {
-      hu: 'Van kérdésed a nootropikumokkal kapcsolatban?',
-      en: 'Have a question about nootropics?',
-      pl: 'Masz pytanie dotyczące nootropików?',
-    },
-  },
+ id: 'nootropics',
+ name: {
+ hu: 'Nootropikum Könyvtár',
+ en: 'Nootropic Library',
+ pl: 'Biblioteka Nootropików',
+ },
+ description: {
+ hu: 'Kognitív teljesítményt és mentális egészséget támogató vegyületek · kutatási szint, kategória, hatásmechanizmus szerint',
+ en: 'Compounds supporting cognitive performance and mental health · search by research tier, category, mechanism',
+ pl: 'Związki wspierające wydajność poznawczą i zdrowie psychiczne · wyszukiwanie wg poziomu badań, kategorii, mechanizmu',
+ },
+ accent: '#00ff99',
+ entries: NOOTROPICS,
+ topEntries: TOP10_ORDER,
+ categories: CATEGORIES,
+ entryCategoryMap: NOOTROPIC_CATEGORIES,
+ getResearchLevel,
+ researchLevels: RESEARCH_LEVELS,
+ effects: EFFECT_CATEGORIES,
+ effectsTitle: {
+ hu: 'Kognitív Hatásterületek',
+ en: 'Cognitive Domains',
+ pl: 'Domeny Poznawcze',
+ },
+ effectsSubtitle: {
+ hu: 'Nootropikum hatásprofilok és tudományos háttér',
+ en: 'Nootropic effect profiles and scientific background',
+ pl: 'Profile efektów nootropików i podstawy naukowe',
+ },
+ labels: {
+ topTitle: { hu: '10 Legnépszerűbb Nootropikum', en: 'Top 10 Most Popular Nootropics', pl: '10 najpopularniejszych nootropików' },
+ allTitle: { hu: 'Összes Nootropikum', en: 'All Nootropics', pl: 'Wszystkie nootropiki' },
+ allCount: { hu: 'nootropikum', en: 'nootropics', pl: 'nootropików' },
+ helpBody: {
+ hu: 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk a megfelelő nootropikum kiválasztásában.',
+ en: 'Reach out to an advisor on Telegram. We can help you find the right nootropic.',
+ pl: 'Skontaktuj się z doradcą na Telegramie. Chętnie pomożemy znaleźć właściwy nootropik.',
+ },
+ relatedLabel: { hu: 'Kapcsolódó nootropikumok', en: 'Related nootropics', pl: 'Powiązane nootropiki' },
+ contactTitle: {
+ hu: 'Van kérdésed a nootropikumokkal kapcsolatban?',
+ en: 'Have a question about nootropics?',
+ pl: 'Masz pytanie dotyczące nootropików?',
+ },
+ },
 }
 
-// Convenience re-exports — direct consumers can still pull these.
+// Convenience re-exports, direct consumers can still pull these.
 export { NOOTROPICS, TOP10_ORDER, CATEGORIES, NOOTROPIC_CATEGORIES, getNootropicCategories, getResearchLevel, EFFECT_CATEGORIES }
