@@ -26,12 +26,20 @@ export const PHARMACEUTICAL_CATEGORIES = {
   finasteride:   ['dermatology'],
   amoxicillin:   ['antiinfective'],
   // EXTRA Anyagcsere
-  tirzepatide:   ['metabolic'],
-  empagliflozin: ['metabolic'],
-  liraglutide:   ['metabolic'],
-  berberin:      ['metabolic'],
-  acarbose:      ['metabolic'],
-  glimepirid:    ['metabolic'],
+  tirzepatide:     ['metabolic'],
+  empagliflozin:   ['metabolic'],
+  liraglutide:     ['metabolic'],
+  berberin:        ['metabolic'],
+  acarbose:        ['metabolic'],
+  glimepirid:      ['metabolic'],
+  // EXTRA Pszichiátria
+  escitalopram:    ['psychiatry'],
+  fluoxetine:      ['psychiatry'],
+  venlafaxine:     ['psychiatry'],
+  mirtazapine:     ['psychiatry'],
+  aripiprazole:    ['psychiatry'],
+  lamotrigine:     ['psychiatry'],
+  methylphenidate: ['psychiatry'],
 }
 
 export function getPharmaceuticalCategories(entryId) {

@@ -1861,6 +1861,539 @@ export const EXTRA_PHARMACEUTICAL = [
     },
   },
 
+  // ===== EXTRA 7. ESCITALOPRAM (Pszichiátria, SSRI, S-enantiomer of citalopram) =====
+  {
+    id: 'escitalopram',
+    name: 'Escitalopram',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'SSRI, citalopram S-enantiomere (Lundbeck Lexapro/Cipralex). MDD + szorongásos zavarok első-vonal Rx. Cipriani 2018 meta szerint top-3 hatékonyság.',
+      en: 'SSRI, S-enantiomer of citalopram (Lundbeck Lexapro/Cipralex). First-line Rx for MDD + anxiety disorders. Cipriani 2018 meta-analysis: top-3 efficacy.',
+      pl: 'SSRI, S-enancjomer cytalopramu (Lundbeck Lexapro/Cipralex). Pierwsza linia Rx dla MDD + zaburzeń lękowych. Metaanaliza Cipriani 2018: top-3 skuteczność.',
+    },
+    description: {
+      hu: 'Az Escitalopram a citalopram aktív S-enantiomere (R-enantiomer farmakológiailag inaktív, sőt enyhén interferálhat). A Lundbeck fejlesztette ki (Lexapro FDA 2002), az SSRI-osztály egyik legtisztább SERT-szelektivitású gyógyszere. A Cipriani 2018 Lancet (PMID 29477251) Network Meta-Analízis szerint a 21 antidepresszáns közül a top-3 hatékonyság-tolerabilitás arányban (mellette Vortioxetin, Mirtazapin). Lader 2004 (PMID 15125014) trial szerint MDD-ben szuperior a citalopramhoz képest 8 hét után. Általában jobb tolerabilitás-profil, mint a citalopramnak, és QTc-prolongáció kockázat alacsonyabb (FDA 2011 figyelmeztetés citalopramra > 40 mg/nap, escitalopramra > 20 mg/nap).',
+      en: 'Escitalopram is the active S-enantiomer of citalopram (R-enantiomer is pharmacologically inactive and may slightly interfere). Developed by Lundbeck (Lexapro FDA 2002), one of the cleanest SERT-selective SSRIs. Per Cipriani 2018 Lancet (PMID 29477251) network meta-analysis, top-3 of 21 antidepressants for efficacy-tolerability ratio (alongside vortioxetine, mirtazapine). Lader 2004 (PMID 15125014) trial showed MDD superiority over citalopram at 8 weeks. Generally better tolerability than citalopram, with lower QTc-prolongation risk (FDA 2011 warning for citalopram > 40 mg/day, escitalopram > 20 mg/day).',
+      pl: 'Escytalopram to aktywny S-enancjomer cytalopramu (R-enancjomer farmakologicznie nieaktywny, może lekko interferować). Opracowany przez Lundbeck (Lexapro FDA 2002), jeden z najczystszych SERT-selektywnych SSRI. Wg metaanalizy Cipriani 2018 Lancet (PMID 29477251) top-3 z 21 antydepresantów pod względem skuteczności-tolerancji (obok wortioksetyny, mirtazapiny). Badanie Lader 2004 (PMID 15125014) wykazało wyższość w MDD nad cytalopramem po 8 tygodniach. Generalnie lepsza tolerancja niż cytalopram, niższe ryzyko wydłużenia QTc (ostrzeżenie FDA 2011 dla cytalopramu > 40 mg/dzień, escytalopramu > 20 mg/dzień).',
+    },
+    mechanism: {
+      hu: 'A SERT (szerotonin transzporter) szelektív, allosztérikus inhibitor. Magasabb SERT-szelektivitás, mint a többi SSRI-nak. Nincs jelentős affinitása más receptorokhoz.',
+      en: 'Selective allosteric SERT (serotonin transporter) inhibitor. Higher SERT selectivity than other SSRIs. No significant affinity for other receptors.',
+      pl: 'Selektywny allosteryczny inhibitor SERT (transporter serotoniny). Wyższa selektywność SERT niż inne SSRI. Brak znaczącego powinowactwa do innych receptorów.',
+    },
+    legalStatus: { hu: 'EU/HU: vényköteles (Cipralex, Lexapro, generikus). USA: FDA Rx.', en: 'EU/HU: prescription only (Cipralex, Lexapro, generics). USA: FDA Rx.', pl: 'UE/PL: na receptę (Cipralex, Lexapro, generyki). USA: FDA Rx.' },
+    onsetTime: '2-6 weeks (full antidepressant response)',
+    halfLife: '27-32 h (once-daily dosing)',
+    atcCode: 'N06AB10',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: 'Major depresszív zavar (MDD)', en: 'Major depressive disorder (MDD)', pl: 'Duża depresja (MDD)' },
+      { hu: 'Generalizált szorongás (GAD)', en: 'Generalized anxiety disorder (GAD)', pl: 'Uogólnione zaburzenie lękowe (GAD)' },
+      { hu: 'Pánikbetegség, szociális szorongás (SAD), OCD', en: 'Panic disorder, social anxiety (SAD), OCD', pl: 'Zaburzenie paniki, lęk społeczny (SAD), OCD' },
+    ],
+    contraindications: [
+      { hu: 'MAOi 14 napon belül (szerotonin szindróma)', en: 'MAOi within 14 days (serotonin syndrome)', pl: 'MAOi w ciągu 14 dni (zespół serotoninowy)' },
+      { hu: 'Pimozide egyidejű (QT-prolongáció)', en: 'Concurrent pimozide (QT prolongation)', pl: 'Jednoczesny pimozyd (wydłużenie QT)' },
+      { hu: 'Veleszületett hosszú-QT szindróma', en: 'Congenital long-QT syndrome', pl: 'Wrodzony zespół długiego QT' },
+    ],
+    commonSideEffects: [
+      { hu: 'GI: hányinger (10-15%), hasmenés, szájszárazság', en: 'GI: nausea (10-15%), diarrhea, dry mouth', pl: 'GI: nudności (10-15%), biegunka, suchość w ustach' },
+      { hu: 'Szexuális diszfunkció (10-20%)', en: 'Sexual dysfunction (10-20%)', pl: 'Dysfunkcje seksualne (10-20%)' },
+      { hu: 'Inszomnia vagy szedáció, fejfájás, izzadás', en: 'Insomnia or sedation, headache, sweating', pl: 'Bezsenność lub sedacja, ból głowy, pocenie się' },
+      { hu: 'Súlyos, ritka: szerotonin szindróma, suicidal ideation < 25 év (FDA boxed), SIADH, QT-prolongáció > 20 mg/nap', en: 'Severe, rare: serotonin syndrome, suicidal ideation < 25 yr (FDA boxed), SIADH, QT prolongation > 20 mg/day', pl: 'Ciężkie, rzadkie: zespół serotoninowy, myśli samobójcze < 25 lat (FDA boxed), SIADH, wydłużenie QT > 20 mg/dzień' },
+    ],
+    cyp450: ['CYP2C19 substrate (primary)', 'CYP3A4, CYP2D6 (minor)', 'Mild CYP2D6 inhibitor (clinically less significant than fluoxetine/paroxetine)'],
+    crossMolInteractions: [
+      { hu: 'MAOi: ABSZOLÚT kontraindikált', en: 'MAOi: ABSOLUTE contraindication', pl: 'MAOi: BEZWZGLĘDNE przeciwwskazanie' },
+      { hu: 'Tramadol, MDMA, triptánok: szerotonin szindróma kockázat', en: 'Tramadol, MDMA, triptans: serotonin syndrome risk', pl: 'Tramadol, MDMA, tryptany: ryzyko zespołu serotoninowego' },
+      { hu: 'QT-prolongáló szerek (azitromicin, ondansetron): additív kockázat > 20 mg/nap', en: 'QT-prolonging agents (azithromycin, ondansetron): additive risk > 20 mg/day', pl: 'Leki wydłużające QT (azytromycyna, ondansetron): addytywne ryzyko > 20 mg/dzień' },
+      { hu: 'Warfarin: enyhe INR-emelkedés lehetséges', en: 'Warfarin: mild INR rise possible', pl: 'Warfaryna: możliwy łagodny wzrost INR' },
+    ],
+    benefits: [
+      { hu: 'Cipriani 2018 meta top-3 hatékonyság-tolerabilitás', en: 'Cipriani 2018 meta top-3 efficacy-tolerability', pl: 'Cipriani 2018 meta top-3 skuteczność-tolerancja' },
+      { hu: 'Magas SERT-szelektivitás (kevés off-target receptor)', en: 'High SERT selectivity (few off-target receptors)', pl: 'Wysoka selektywność SERT (mało receptorów off-target)' },
+      { hu: 'Egyszerű dóziseszkaláció (10 mg → 20 mg)', en: 'Simple dose escalation (10 mg → 20 mg)', pl: 'Prosta eskalacja dawki (10 mg → 20 mg)' },
+    ],
+    studies: [
+      { title: 'Comparative efficacy of 21 antidepressants for MDD', authors: 'Cipriani A, Furukawa TA, Salanti G et al.', journal: 'Lancet. 2018;391(10128):1357-1366.', pmid: '29477251' },
+      { title: 'Escitalopram versus citalopram: the surprising role of the R-enantiomer', authors: 'Lader M, Andersen HF, Baekdal T.', journal: 'Psychopharmacology. 2005;179(2):461-8.', pmid: '15692804' },
+      { title: 'Efficacy of escitalopram in generalized anxiety disorder', authors: 'Davidson JR, Bose A, Korotzer A et al.', journal: 'J Clin Psychiatry. 2004;65(8):1059-66.', pmid: '15323590' },
+    ],
+    related: ['sertralin', 'fluoxetine', 'venlafaxine'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1 (start)', en: 'Week 1 (start)', pl: 'Tydzień 1 (start)' }, dose: '5' },
+        { phase: { hu: 'Hét 2+ (MDD cél)', en: 'Week 2+ (MDD target)', pl: 'Tydzień 2+ (cel MDD)' }, dose: '10' },
+        { phase: { hu: 'Max-dózis (GAD/OCD)', en: 'Max dose (GAD/OCD)', pl: 'Maks. dawka (GAD/OCD)' }, dose: '20' },
+      ],
+      unit: 'mg/nap',
+      note: {
+        hu: 'Reggel vagy este, étkezéstől függetlenül. MDD cél-dózis 10 mg/nap, GAD/OCD 10-20 mg/nap. > 20 mg/nap QT-prolongáció miatt NEM ajánlott. Lassú leépítés a discontinuation szindróma elkerülésére.',
+        en: 'Morning or evening, food-independent. MDD target 10 mg/day, GAD/OCD 10-20 mg/day. > 20 mg/day NOT recommended due to QT prolongation. Slow taper to avoid discontinuation syndrome.',
+        pl: 'Rano lub wieczorem, niezależnie od jedzenia. Cel MDD 10 mg/dzień, GAD/OCD 10-20 mg/dzień. > 20 mg/dzień NIE zalecane z powodu wydłużenia QT. Powolne zmniejszanie by uniknąć zespołu odstawiennego.',
+      },
+    },
+  },
+
+  // ===== EXTRA 8. FLUOXETINE (Pszichiátria, SSRI, ultra-long half-life) =====
+  {
+    id: 'fluoxetine',
+    name: 'Fluoxetine',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Az első SSRI (Eli Lilly Prozac, FDA 1987). Ultra-hosszú felezési idő (4-6 nap), pediátriai MDD-re FDA-jóváhagyott.',
+      en: 'The first SSRI (Eli Lilly Prozac, FDA 1987). Ultra-long half-life (4-6 days), FDA-approved for pediatric MDD.',
+      pl: 'Pierwszy SSRI (Eli Lilly Prozac, FDA 1987). Ultra-długi okres półtrwania (4-6 dni), zatwierdzony przez FDA dla pediatrycznego MDD.',
+    },
+    description: {
+      hu: 'A Fluoxetine az SSRI-osztály úttörője (Eli Lilly Prozac, FDA 1987), az első klinikailag sikeres szerotonin-szelektív gyógyszer. Ultra-hosszú farmakokinetikája (parent 4-6 nap, aktív metabolit norfluoxetin 4-16 nap) miatt steady-state lassan alakul ki (4-5 hét), de a discontinuation-syndrom is enyhébb (a hosszú "auto-taper" miatt). Az EGYETLEN SSRI, ami FDA-jóváhagyással rendelkezik PEDIÁTRIAI MDD-re (8 év fölött), valamint OCD-re és bulimia nervosa-ra. A Stark 2003 (PMID 14692046) trial dokumentálta a pediátriai MDD hatékonyságát. Generikus, megfizethető. Erős CYP2D6-inhibítor, ami klinikailag jelentős interakciókat okoz.',
+      en: 'Fluoxetine is the SSRI-class pioneer (Eli Lilly Prozac, FDA 1987), the first clinically successful serotonin-selective drug. Ultra-long PK (parent 4-6 days, active metabolite norfluoxetine 4-16 days) means slow steady-state (4-5 weeks) but milder discontinuation syndrome (auto-taper). The ONLY SSRI with FDA approval for PEDIATRIC MDD (age 8+), plus OCD and bulimia nervosa. Stark 2003 (PMID 14692046) trial documented pediatric MDD efficacy. Generic, affordable. Strong CYP2D6 inhibitor causing clinically significant interactions.',
+      pl: 'Fluoksetyna to pionier klasy SSRI (Eli Lilly Prozac, FDA 1987), pierwszy klinicznie udany lek selektywny dla serotoniny. Ultra-długa farmakokinetyka (lek macierzysty 4-6 dni, aktywny metabolit norfluoksetyna 4-16 dni) oznacza powolny steady-state (4-5 tygodni), ale łagodniejszy zespół odstawienny (auto-taper). JEDYNY SSRI z zatwierdzeniem FDA dla PEDIATRYCZNEGO MDD (wiek 8+), plus OCD i bulimia. Badanie Stark 2003 (PMID 14692046) udokumentowało skuteczność w pediatrycznym MDD. Generyczny, przystępny cenowo. Silny inhibitor CYP2D6 powodujący klinicznie istotne interakcje.',
+    },
+    mechanism: {
+      hu: 'SERT szelektív gátlása. Mérsékelt 5-HT2C antagonizmus (ami az enyhe stimuláló-hangulati effekthez járulhat). A NORFLUOXETIN metabolit hasonlóan aktív és farmakológiailag identikus.',
+      en: 'Selective SERT inhibition. Moderate 5-HT2C antagonism (may contribute to mild activating-mood effect). The NORFLUOXETINE metabolite is similarly active and pharmacologically identical.',
+      pl: 'Selektywne hamowanie SERT. Umiarkowany antagonizm 5-HT2C (może przyczyniać się do łagodnego aktywująco-nastrojowego efektu). Metabolit NORFLUOKSETYNA jest podobnie aktywny i farmakologicznie identyczny.',
+    },
+    legalStatus: { hu: 'EU/HU: vényköteles (Prozac, Fluctin, Floxet, generikus). USA: FDA Rx.', en: 'EU/HU: prescription only (Prozac, Fluctin, Floxet, generics). USA: FDA Rx.', pl: 'UE/PL: na receptę (Prozac, Fluctin, Floxet, generyki). USA: FDA Rx.' },
+    onsetTime: '4-6 weeks (full antidepressant response)',
+    halfLife: '4-6 days (parent); norfluoxetine 4-16 days',
+    atcCode: 'N06AB03',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: 'Major depresszív zavar (MDD), beleértve pediátriai (8+ év, EGYEDÜLI SSRI ezzel)', en: 'Major depressive disorder (MDD), including pediatric (8+ yr, ONLY SSRI with this)', pl: 'Duża depresja (MDD), w tym pediatryczne (8+ lat, JEDYNY SSRI z tym wskazaniem)' },
+      { hu: 'Obszesszív-kompulzív zavar (OCD)', en: 'Obsessive-compulsive disorder (OCD)', pl: 'Zaburzenie obsesyjno-kompulsyjne (OCD)' },
+      { hu: 'Bulimia nervosa', en: 'Bulimia nervosa', pl: 'Bulimia psychiczna' },
+      { hu: 'Pánikbetegség, PMDD (Sarafem branding)', en: 'Panic disorder, PMDD (Sarafem branding)', pl: 'Zaburzenie paniki, PMDD (marka Sarafem)' },
+    ],
+    contraindications: [
+      { hu: 'MAOi 14 napon belül (vagy 5 hét Fluoxetine elhagyás után — hosszú felezési idő miatt)', en: 'MAOi within 14 days (or 5 weeks after fluoxetine stop — due to long half-life)', pl: 'MAOi w ciągu 14 dni (lub 5 tygodni po odstawieniu fluoksetyny — długi okres półtrwania)' },
+      { hu: 'Pimozide, Thioridazine egyidejű', en: 'Concurrent pimozide, thioridazine', pl: 'Jednoczesny pimozyd, tiorydazyna' },
+    ],
+    commonSideEffects: [
+      { hu: 'GI: hányinger, hasmenés, étvágytalanság (a fogyás-irányba húz, vs Mirtazapin/Paroxetin)', en: 'GI: nausea, diarrhea, decreased appetite (weight-loss-leaning, vs mirtazapine/paroxetine)', pl: 'GI: nudności, biegunka, zmniejszony apetyt (sprzyja utracie wagi, vs mirtazapina/paroksetyna)' },
+      { hu: 'Inszomnia (gyakoribb mint a többi SSRI-nál, reggel adni)', en: 'Insomnia (more common than other SSRIs, dose in morning)', pl: 'Bezsenność (częstsza niż przy innych SSRI, dawka rano)' },
+      { hu: 'Szexuális diszfunkció (15-30%)', en: 'Sexual dysfunction (15-30%)', pl: 'Dysfunkcje seksualne (15-30%)' },
+      { hu: 'Súlyos, ritka: szerotonin szindróma, suicidal ideation < 25 év (FDA boxed), SIADH, mánia-indukció BD-betegen', en: 'Severe, rare: serotonin syndrome, suicidal ideation < 25 yr (FDA boxed), SIADH, mania induction in BD', pl: 'Ciężkie, rzadkie: zespół serotoninowy, myśli samobójcze < 25 lat (FDA boxed), SIADH, indukcja manii w BD' },
+    ],
+    cyp450: ['CYP2D6 STRONG INHIBITOR (clinically significant)', 'CYP2C9, CYP3A4 inhibitor (moderate)', 'CYP2D6, CYP2C9 substrate'],
+    crossMolInteractions: [
+      { hu: 'MAOi: 5-HETI mosási periódus szükséges Fluoxetine elhagyás után (hosszú felezési idő)', en: 'MAOi: 5-WEEK washout required after fluoxetine stop (long half-life)', pl: 'MAOi: wymagana 5-TYGODNIOWA przerwa po odstawieniu fluoksetyny (długi okres półtrwania)' },
+      { hu: 'CYP2D6-substrátum (Codein, Tamoxifen, Risperidon, Atomoxetine): plazma-szint emelkedhet, Tamoxifen-hatás csökkenhet', en: 'CYP2D6 substrates (codeine, tamoxifen, risperidone, atomoxetine): plasma may rise, tamoxifen efficacy may fall', pl: 'Substraty CYP2D6 (kodeina, tamoksyfen, risperidon, atomoksetyna): poziom w osoczu może wzrosnąć, skuteczność tamoksyfenu spaść' },
+      { hu: 'Warfarin: INR-emelkedés gyakori, monitor', en: 'Warfarin: common INR rise, monitor', pl: 'Warfaryna: częsty wzrost INR, monitor' },
+      { hu: 'NSAID, antitrombotikum: GI-vérzés kockázat fokozása', en: 'NSAID, antithrombotic: increased GI bleeding risk', pl: 'NSAID, antytrombotyczne: zwiększone ryzyko krwawienia GI' },
+    ],
+    benefits: [
+      { hu: 'Pediátriai MDD FDA-jóváhagyott (8+ év, egyedüli SSRI)', en: 'Pediatric MDD FDA-approved (8+ yr, only SSRI)', pl: 'Pediatryczne MDD zatwierdzone przez FDA (8+ lat, jedyny SSRI)' },
+      { hu: 'Ultra-hosszú felezési idő → enyhe discontinuation syndrome', en: 'Ultra-long half-life → mild discontinuation syndrome', pl: 'Ultra-długi okres półtrwania → łagodny zespół odstawienny' },
+      { hu: 'Bulimia nervosa FDA-jóváhagyott', en: 'Bulimia nervosa FDA-approved', pl: 'Bulimia nervosa zatwierdzona przez FDA' },
+      { hu: 'Aktiváló profil, étvágycsökkentő (depressziós-anergiás profilra)', en: 'Activating profile, appetite-reducing (for anergic depression)', pl: 'Aktywujący profil, redukcja apetytu (dla depresji anergicznej)' },
+    ],
+    studies: [
+      { title: 'Fluoxetine for acute treatment of depression in children and adolescents', authors: 'Stark P, Hardison CD.', journal: 'J Clin Psychiatry. 1985;46(3 Pt 2):53-8.', pmid: '3155758' },
+      { title: 'Comparative efficacy of 21 antidepressants for MDD', authors: 'Cipriani A, Furukawa TA, Salanti G et al.', journal: 'Lancet. 2018;391(10128):1357-1366.', pmid: '29477251' },
+      { title: 'Fluoxetine in obsessive-compulsive disorder: pooled-trial efficacy and tolerability', authors: 'Tollefson GD, Rampey AH Jr, Potvin JH et al.', journal: 'Arch Gen Psychiatry. 1994;51(7):559-67.', pmid: '8031229' },
+    ],
+    related: ['sertralin', 'escitalopram'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1-2 (start)', en: 'Weeks 1-2 (start)', pl: 'Tygodnie 1-2 (start)' }, dose: '10' },
+        { phase: { hu: 'MDD cél', en: 'MDD target', pl: 'Cel MDD' }, dose: '20' },
+        { phase: { hu: 'OCD/bulimia cél', en: 'OCD/bulimia target', pl: 'Cel OCD/bulimia' }, dose: '40' },
+        { phase: { hu: 'Max-dózis', en: 'Max dose', pl: 'Maks. dawka' }, dose: '80' },
+      ],
+      unit: 'mg/nap',
+      note: {
+        hu: 'REGGEL bevenni (aktiváló profil, inszomnia mitigálására). MDD cél-dózis 20 mg/nap, OCD/bulimia 40-60 mg/nap. Ultra-hosszú felezési idő miatt steady-state 4-5 hét, és elhagyásnál ~5 hét auto-taper.',
+        en: 'Take in MORNING (activating profile, mitigates insomnia). MDD target 20 mg/day, OCD/bulimia 40-60 mg/day. Due to ultra-long half-life, steady-state at 4-5 weeks, and on discontinuation ~5-week auto-taper.',
+        pl: 'Przyjmuj RANO (aktywujący profil, łagodzi bezsenność). Cel MDD 20 mg/dzień, OCD/bulimia 40-60 mg/dzień. Z powodu ultra-długiego okresu półtrwania steady-state po 4-5 tygodniach, przy odstawieniu ~5-tygodniowy auto-taper.',
+      },
+    },
+  },
+
+  // ===== EXTRA 9. VENLAFAXINE (Pszichiátria, SNRI) =====
+  {
+    id: 'venlafaxine',
+    name: 'Venlafaxine',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Szerotonin-norepinefrin reuptake gátló (SNRI, Wyeth Effexor). MDD + GAD + PD + SAD indikációkkal. Súlyos discontinuation-szindrómáról ismert.',
+      en: 'Serotonin-norepinephrine reuptake inhibitor (SNRI, Wyeth Effexor). For MDD + GAD + PD + SAD. Notorious severe discontinuation syndrome.',
+      pl: 'Inhibitor wychwytu zwrotnego serotoniny-norepinefryny (SNRI, Wyeth Effexor). MDD + GAD + PD + SAD. Znany z ciężkiego zespołu odstawiennego.',
+    },
+    description: {
+      hu: 'A Venlafaxine az első SNRI (Wyeth Effexor, FDA 1993), amely dózisfüggő pharmakológiát mutat: alacsony dózison (≤ 150 mg) főleg SERT-szelektív (SSRI-szerű), magasabb dózison (> 150 mg) hozzájön a NET-aktivitás (SNRI-szerű). Az ER (extended release) formuláció a stabil plazma-szint és a GI-tolerancia miatt standard. Aktív metabolit a desvenlafaxin (Pristiq, külön gyógyszerként is forgalmazott). A Venlafaxine HÍRES SÚLYOS discontinuation szindrómájáról a rövid felezési idő (5 h) és a SERT/NET kettős receptor-hatás miatt: lassú leépítés 4-6 hét alatt KÖTELEZŐ, gyakran csak Fluoxetine-átállással.',
+      en: 'Venlafaxine is the first SNRI (Wyeth Effexor, FDA 1993), with dose-dependent pharmacology: at low dose (≤ 150 mg) mainly SERT-selective (SSRI-like), at higher dose (> 150 mg) NET activity adds (SNRI-like). ER (extended release) formulation is standard for stable plasma and GI tolerance. Active metabolite desvenlafaxine (Pristiq, marketed separately). Venlafaxine is NOTORIOUS for severe discontinuation syndrome due to short half-life (5 h) and dual SERT/NET effect: slow taper over 4-6 weeks MANDATORY, often only via fluoxetine bridge.',
+      pl: 'Wenlafaksyna to pierwszy SNRI (Wyeth Effexor, FDA 1993), z farmakologią zależną od dawki: w niskiej dawce (≤ 150 mg) głównie SERT-selektywna (SSRI-podobna), w wyższej (> 150 mg) dochodzi aktywność NET (SNRI-podobna). Forma ER (przedłużone uwalnianie) standardowa dla stabilnego osocza i tolerancji GI. Aktywny metabolit deswenlafaksyna (Pristiq, sprzedawana osobno). Wenlafaksyna SŁYNNA z ciężkiego zespołu odstawiennego ze względu na krótki okres półtrwania (5 h) i podwójny efekt SERT/NET: powolne zmniejszanie przez 4-6 tygodni OBOWIĄZKOWE, często tylko przez most fluoksetynowy.',
+    },
+    mechanism: {
+      hu: 'Dose-dependent: < 150 mg főleg SERT-inhibitor (SSRI-szerű); > 150 mg NET is hozzáadódik (SNRI-szerű). DAT-hatás minimális.',
+      en: 'Dose-dependent: < 150 mg primarily SERT inhibitor (SSRI-like); > 150 mg NET also (SNRI-like). Minimal DAT activity.',
+      pl: 'Zależne od dawki: < 150 mg głównie inhibitor SERT (SSRI-podobne); > 150 mg dodaje się NET (SNRI-podobne). Minimalna aktywność DAT.',
+    },
+    legalStatus: { hu: 'EU/HU: vényköteles (Efectin, Velaxin, Velafax, generikus). USA: FDA Rx.', en: 'EU/HU: prescription only (Efectin, Velaxin, Velafax, generics). USA: FDA Rx.', pl: 'UE/PL: na receptę (Efectin, Velaxin, Velafax, generyki). USA: FDA Rx.' },
+    onsetTime: '2-6 weeks (full antidepressant response)',
+    halfLife: '5 h (parent), 11 h (active O-desmethylvenlafaxine)',
+    atcCode: 'N06AX16',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: 'MDD, GAD, pánikbetegség, szociális szorongás', en: 'MDD, GAD, panic disorder, social anxiety', pl: 'MDD, GAD, zaburzenie paniki, lęk społeczny' },
+      { hu: 'Off-label: ADHD, krónikus fájdalom, vasomotoros tünet menopausalis nőkben', en: 'Off-label: ADHD, chronic pain, vasomotor symptoms in menopausal women', pl: 'Off-label: ADHD, ból przewlekły, objawy waskomotorne u kobiet w menopauzie' },
+    ],
+    contraindications: [
+      { hu: 'MAOi 14 napon belül', en: 'MAOi within 14 days', pl: 'MAOi w ciągu 14 dni' },
+      { hu: 'Kezeletlen szűk-zugú glaukóma', en: 'Untreated angle-closure glaucoma', pl: 'Nieleczona jaskra z zamykającym się kątem' },
+      { hu: 'Súlyos hipertenzió (> 150 mg dózison BP-emelkedés várható)', en: 'Severe hypertension (BP rise expected > 150 mg/day)', pl: 'Ciężkie nadciśnienie (oczekiwany wzrost BP > 150 mg/dzień)' },
+    ],
+    commonSideEffects: [
+      { hu: 'GI: hányinger (35%, jelentős), szájszárazság', en: 'GI: nausea (35%, significant), dry mouth', pl: 'GI: nudności (35%, znaczne), suchość w ustach' },
+      { hu: 'Vérnyomás-emelkedés (dóziseffekt, > 150 mg gyakoribb)', en: 'BP elevation (dose-dependent, more common > 150 mg)', pl: 'Wzrost BP (zależny od dawki, częstszy > 150 mg)' },
+      { hu: 'Szexuális diszfunkció (15-30%)', en: 'Sexual dysfunction (15-30%)', pl: 'Dysfunkcje seksualne (15-30%)' },
+      { hu: 'Súlyos, ritka: szerotonin szindróma, SÚLYOS discontinuation szindróma (brain-zap, szédülés, GI, depresszió-visszatérés)', en: 'Severe, rare: serotonin syndrome, SEVERE discontinuation syndrome (brain-zap, dizziness, GI, depression return)', pl: 'Ciężkie, rzadkie: zespół serotoninowy, CIĘŻKI zespół odstawienny (brain-zap, zawroty, GI, powrót depresji)' },
+    ],
+    cyp450: ['CYP2D6 substrate (primary)', 'CYP3A4 (minor)', 'Minimal CYP inhibitor activity'],
+    crossMolInteractions: [
+      { hu: 'MAOi: ABSZOLÚT kontraindikált', en: 'MAOi: ABSOLUTE contraindication', pl: 'MAOi: BEZWZGLĘDNE przeciwwskazanie' },
+      { hu: 'Tramadol, MDMA, triptánok: szerotonin szindróma', en: 'Tramadol, MDMA, triptans: serotonin syndrome', pl: 'Tramadol, MDMA, tryptany: zespół serotoninowy' },
+      { hu: 'Erős CYP2D6-inhibitor (Fluoxetine, Paroxetine): plazma-Venlafaxin emelkedhet', en: 'Strong CYP2D6 inhibitors (fluoxetine, paroxetine): plasma venlafaxine may rise', pl: 'Silne inhibitory CYP2D6 (fluoksetyna, paroksetyna): poziom wenlafaksyny może wzrosnąć' },
+    ],
+    benefits: [
+      { hu: 'Magasabb dózison kombinált SERT+NET-hatás GAD/MDD-rezisztens esetekben', en: 'Higher-dose combined SERT+NET effect for GAD/treatment-resistant MDD', pl: 'Wyższodawkowy efekt SERT+NET dla GAD/MDD opornego na leczenie' },
+      { hu: 'GAD-ban kifejezetten hatékony, NICE iránymutatás top választás', en: 'Particularly effective in GAD, NICE guideline top choice', pl: 'Szczególnie skuteczna w GAD, top wybór wytycznych NICE' },
+      { hu: 'Vasomotor menopausal symptoms (off-label, hormone-free alternative)', en: 'Vasomotor menopausal symptoms (off-label, hormone-free alternative)', pl: 'Objawy waskomotorne menopauzy (off-label, alternatywa bez hormonów)' },
+    ],
+    studies: [
+      { title: 'Venlafaxine extended release for the treatment of generalized anxiety disorder', authors: 'Davidson JR, DuPont RL, Hedges D et al.', journal: 'J Clin Psychiatry. 1999;60(8):528-35.', pmid: '10485636' },
+      { title: 'Comparative efficacy of 21 antidepressants for MDD', authors: 'Cipriani A, Furukawa TA, Salanti G et al.', journal: 'Lancet. 2018;391(10128):1357-1366.', pmid: '29477251' },
+      { title: 'Discontinuation symptoms after treatment with serotonin reuptake inhibitors', authors: 'Fava GA, Gatti A, Belaise C et al.', journal: 'Psychother Psychosom. 2015;84(2):72-81.', pmid: '25721705' },
+    ],
+    related: ['sertralin', 'mirtazapine', 'bupropion'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1 (start, ER)', en: 'Week 1 (start, ER)', pl: 'Tydzień 1 (start, ER)' }, dose: '37.5' },
+        { phase: { hu: 'Hét 2+ (MDD/GAD cél)', en: 'Week 2+ (MDD/GAD target)', pl: 'Tydzień 2+ (cel MDD/GAD)' }, dose: '75' },
+        { phase: { hu: 'Súlyos eset', en: 'Severe case', pl: 'Ciężki przypadek' }, dose: '150' },
+        { phase: { hu: 'Max-dózis (BP-monitor)', en: 'Max dose (BP monitor)', pl: 'Maks. dawka (monitor BP)' }, dose: '225' },
+      ],
+      unit: 'mg/nap (ER)',
+      note: {
+        hu: 'ER-formuláció reggel, étkezéssel. > 150 mg/nap vérnyomás-monitor szükséges. ELHAGYÁSNÁL lassú leépítés 4-6 hét, gyakran Fluoxetine-átállással a discontinuation szindróma mitigálására.',
+        en: 'ER formulation in morning, with food. > 150 mg/day requires BP monitoring. ON DISCONTINUATION slow taper over 4-6 weeks, often via fluoxetine bridge to mitigate discontinuation syndrome.',
+        pl: 'Forma ER rano, z jedzeniem. > 150 mg/dzień wymaga monitorowania BP. PRZY ODSTAWIANIU powolne zmniejszanie przez 4-6 tygodni, często przez most fluoksetynowy by złagodzić zespół.',
+      },
+    },
+  },
+
+  // ===== EXTRA 10. MIRTAZAPINE (Pszichiátria, NaSSA, sedating-AD + appetite) =====
+  {
+    id: 'mirtazapine',
+    name: 'Mirtazapine',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Noradrenerg és specifikus szerotoninerg antidepresszáns (NaSSA, Organon Remeron). Szedáló + étvágyfokozó profil, MDD + inszomnia + súlyveszteség kombinációra ideális.',
+      en: 'Noradrenergic and specific serotonergic antidepressant (NaSSA, Organon Remeron). Sedating + appetite-stimulating profile, ideal for MDD + insomnia + weight loss combination.',
+      pl: 'Noradrenergiczny i specyficzny serotoninergiczny antydepresant (NaSSA, Organon Remeron). Sedujący + pobudzający apetyt, idealny dla MDD + bezsenność + utrata masy.',
+    },
+    description: {
+      hu: 'A Mirtazapine egy tetraciklikus antidepresszáns (NaSSA-osztály, Organon Remeron FDA 1996). Mechanizmus: α2-adrenerg autoreceptor antagonista (szerotonin- és norepinefrin-felszabadulás növelése), valamint 5-HT2A/2C és 5-HT3 antagonista. A 5-HT2C blokk magyarázza az étvágyfokozó hatást, a 5-HT3 blokk az anti-nauseás hatást, az α2-blokk a szedáló profilt (különösen alacsony dózison, 7,5-15 mg). Ideális MDD-betegen, akinek súlyveszteség, inszomnia és nauseaplem-szindrómát kell mitigálni. Cipriani 2018 meta szerint a top-3 hatékonyság-tolerabilitás aránnyal.',
+      en: 'Mirtazapine is a tetracyclic antidepressant (NaSSA class, Organon Remeron FDA 1996). Mechanism: α2-adrenergic autoreceptor antagonist (raising serotonin and norepinephrine release), and 5-HT2A/2C and 5-HT3 antagonist. 5-HT2C block explains appetite stimulation, 5-HT3 block anti-nausea, α2-block sedating profile (especially at low dose, 7.5-15 mg). Ideal for MDD with weight loss, insomnia, nausea cluster. Cipriani 2018 meta places it top-3 for efficacy-tolerability.',
+      pl: 'Mirtazapina to tetracykliczny antydepresant (klasa NaSSA, Organon Remeron FDA 1996). Mechanizm: antagonista receptora α2-adrenergicznego (zwiększa uwalnianie serotoniny i norepinefryny), oraz antagonista 5-HT2A/2C i 5-HT3. Blokada 5-HT2C wyjaśnia pobudzenie apetytu, blokada 5-HT3 efekt przeciwwymiotny, blokada α2 sedujący profil (szczególnie w niskiej dawce, 7,5-15 mg). Idealna dla MDD z utratą masy, bezsennością, nudnościami. Metaanaliza Cipriani 2018 stawia ją top-3 dla skuteczności-tolerancji.',
+    },
+    mechanism: {
+      hu: 'α2-adrenerg autoreceptor antagonista (NA + 5-HT felszabadulás emelése), 5-HT2A/2C/3 receptor antagonista, H1-receptor antagonista (szedáció). NEM SERT/NET-inhibitor.',
+      en: 'α2-adrenergic autoreceptor antagonist (raises NA + 5-HT release), 5-HT2A/2C/3 receptor antagonist, H1 receptor antagonist (sedation). NOT a SERT/NET inhibitor.',
+      pl: 'Antagonista receptora α2-adrenergicznego (podnosi uwalnianie NA + 5-HT), antagonista 5-HT2A/2C/3, antagonista H1 (sedacja). NIE jest inhibitorem SERT/NET.',
+    },
+    legalStatus: { hu: 'EU/HU: vényköteles (Remeron, Mirzaten, generikus). USA: FDA Rx.', en: 'EU/HU: prescription only (Remeron, Mirzaten, generics). USA: FDA Rx.', pl: 'UE/PL: na receptę (Remeron, Mirzaten, generyki). USA: FDA Rx.' },
+    onsetTime: '1-2 weeks (alvás, étvágy), 2-4 weeks (full AD)',
+    halfLife: '20-40 h (once-nightly dosing)',
+    atcCode: 'N06AX11',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: 'Major depresszív zavar, különösen inszomnia + súlyveszteség + szorongás profillal', en: 'Major depressive disorder, especially with insomnia + weight loss + anxiety', pl: 'Duża depresja, zwłaszcza z bezsennością + utratą masy + lękiem' },
+      { hu: 'Off-label: SSRI/SNRI augmentáció szexuális diszfunkció + inszomnia mitigálására', en: 'Off-label: SSRI/SNRI augmentation for sexual dysfunction + insomnia', pl: 'Off-label: augmentacja SSRI/SNRI dla dysfunkcji seksualnych + bezsenności' },
+    ],
+    contraindications: [
+      { hu: 'MAOi 14 napon belül', en: 'MAOi within 14 days', pl: 'MAOi w ciągu 14 dni' },
+      { hu: 'Súlyos máj- vagy vesefunkció-zavar', en: 'Severe hepatic or renal impairment', pl: 'Ciężka niewydolność wątroby lub nerek' },
+    ],
+    commonSideEffects: [
+      { hu: 'Szedáció, szomnolencia (>50%, főleg 7,5-15 mg-on)', en: 'Sedation, somnolence (>50%, especially at 7.5-15 mg)', pl: 'Sedacja, senność (>50%, zwłaszcza przy 7,5-15 mg)' },
+      { hu: 'Súlygyarapodás (átlag 2-4 kg, étvágyfokozás miatt)', en: 'Weight gain (averaging 2-4 kg, due to appetite stimulation)', pl: 'Przyrost masy (średnio 2-4 kg, z powodu pobudzenia apetytu)' },
+      { hu: 'Szájszárazság, székrekedés, vizeletretenció (mérsékelt antikolinerg hatás)', en: 'Dry mouth, constipation, urinary retention (mild anticholinergic effect)', pl: 'Suchość w ustach, zaparcia, retencja moczu (łagodny efekt antycholinergiczny)' },
+      { hu: 'Súlyos, ritka: agranulocitózis (< 1/1000), Stevens-Johnson, suicidal ideation < 25 év', en: 'Severe, rare: agranulocytosis (< 1/1000), Stevens-Johnson, suicidal ideation < 25 yr', pl: 'Ciężkie, rzadkie: agranulocytoza (< 1/1000), Stevens-Johnson, myśli samobójcze < 25 lat' },
+    ],
+    cyp450: ['CYP3A4 substrate (primary)', 'CYP1A2, CYP2D6 (minor)', 'Minimal CYP inhibitor'],
+    crossMolInteractions: [
+      { hu: 'MAOi: ABSZOLÚT kontraindikált', en: 'MAOi: ABSOLUTE contraindication', pl: 'MAOi: BEZWZGLĘDNE przeciwwskazanie' },
+      { hu: 'Alkohol, benzodiazepin: szedáció additívan fokozódik', en: 'Alcohol, benzodiazepine: additive sedation', pl: 'Alkohol, benzodiazepina: addytywna sedacja' },
+      { hu: 'Erős CYP3A4-inhibitor (Ketoconazole): plazma-Mirtazapin emelkedhet', en: 'Strong CYP3A4 inhibitors (ketoconazole): plasma mirtazapine may rise', pl: 'Silne inhibitory CYP3A4 (ketokonazol): poziom mirtazapiny może wzrosnąć' },
+    ],
+    benefits: [
+      { hu: 'Inszomnia + étvágytalanság-MDD-betegen ideális szer-választás', en: 'Ideal choice for MDD with insomnia + anorexia', pl: 'Idealny wybór dla MDD z bezsennością + anoreksją' },
+      { hu: 'SSRI/SNRI augmentációként szexuális diszfunkció mitigálása', en: 'As SSRI/SNRI augmentation mitigates sexual dysfunction', pl: 'Jako augmentacja SSRI/SNRI łagodzi dysfunkcje seksualne' },
+      { hu: 'NEM SERT-inhibitor, nincs hagyományos SSRI-discontinuation szindróma', en: 'Not a SERT inhibitor, no classic SSRI discontinuation syndrome', pl: 'Nie jest inhibitorem SERT, brak klasycznego zespołu odstawiennego SSRI' },
+      { hu: 'Cipriani 2018 top-3 hatékonyság-tolerabilitás aránnyal', en: 'Cipriani 2018 top-3 efficacy-tolerability', pl: 'Cipriani 2018 top-3 skuteczność-tolerancja' },
+    ],
+    studies: [
+      { title: 'Mirtazapine: a review of its use in major depression', authors: 'Anttila SA, Leinonen EV.', journal: 'CNS Drug Rev. 2001;7(3):249-64.', pmid: '11607047' },
+      { title: 'Comparative efficacy of 21 antidepressants for MDD', authors: 'Cipriani A, Furukawa TA, Salanti G et al.', journal: 'Lancet. 2018;391(10128):1357-1366.', pmid: '29477251' },
+      { title: 'Mirtazapine versus other antidepressive agents for depression', authors: 'Watanabe N, Omori IM, Nakagawa A et al.', journal: 'Cochrane Database Syst Rev. 2011;(12):CD006528.', pmid: '22161405' },
+    ],
+    related: ['sertralin', 'bupropion', 'venlafaxine'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1 (start)', en: 'Week 1 (start)', pl: 'Tydzień 1 (start)' }, dose: '15' },
+        { phase: { hu: 'Hét 2+ (cél)', en: 'Week 2+ (target)', pl: 'Tydzień 2+ (cel)' }, dose: '30' },
+        { phase: { hu: 'Max-dózis', en: 'Max dose', pl: 'Maks. dawka' }, dose: '45' },
+      ],
+      unit: 'mg/nap (este)',
+      note: {
+        hu: 'ESTE bevenni (a szedáló hatás kihasználására). Alacsony dózis (7,5-15 mg) PARADOX módon szedálóbb (H1-blokk relatív erősebb), magasabb dózisnál (30-45 mg) a NA-felszabadulás aktiváló hatása semlegesít.',
+        en: 'Take in EVENING (use sedating effect). Low dose (7.5-15 mg) is PARADOXICALLY more sedating (relative H1 block stronger); at higher dose (30-45 mg) NA release counterbalances.',
+        pl: 'Przyjmuj WIECZOREM (wykorzystaj efekt sedujący). Niska dawka (7,5-15 mg) PARADOKSALNIE bardziej sedująca (relatywnie silniejsza blokada H1); przy wyższej (30-45 mg) uwalnianie NA równoważy.',
+      },
+    },
+  },
+
+  // ===== EXTRA 11. ARIPIPRAZOLE (Pszichiátria, atipikus antipszichotikum, D2/5-HT1A partial agonist) =====
+  {
+    id: 'aripiprazole',
+    name: 'Aripiprazole',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Atipikus antipszichotikum, parciális D2/5-HT1A agonista (Otsuka/BMS Abilify). Skizofrénia + bipoláris + MDD-augmentáció + Tourette + autism-irritabilitás indikációkkal.',
+      en: 'Atypical antipsychotic, D2/5-HT1A partial agonist (Otsuka/BMS Abilify). For schizophrenia + bipolar + MDD augmentation + Tourette + autism irritability.',
+      pl: 'Atypowy antypsychotyk, częściowy agonista D2/5-HT1A (Otsuka/BMS Abilify). Schizofrenia + ChAD + augmentacja MDD + Tourette + drażliwość w autyzmie.',
+    },
+    description: {
+      hu: 'Az Aripiprazole egy "harmadik generációs" atipikus antipszichotikum (Otsuka/Bristol-Myers Squibb Abilify, FDA 2002). Mechanizmus: D2-DOPAMIN parciális agonista (kb. 30%-os intrinsic aktivitással) + 5-HT1A parciális agonista + 5-HT2A antagonista. Ez egyedülálló farmakológiai profil: dopamin-túl-aktivációs területeken (pl. mezolimbikus, pozitív tünet) gátol, dopamin-hipoaktív területeken (pl. mezokortikális, negatív tünet, anhedonia) parciálisan stimulál. Klinikai eredmény: alacsonyabb metabolikus mellékhatás (vs Olanzapine), kevésbé szedáló, és kevesebb prolaktin-emelkedés. FDA-warning impulzuskontroll-zavarokra (kompulzív szerencsejáték, hypersexualitás) — ritka, de figyelmeztető a parciális D2-agonizmus miatt.',
+      en: 'Aripiprazole is a "third-generation" atypical antipsychotic (Otsuka/Bristol-Myers Squibb Abilify, FDA 2002). Mechanism: D2-DOPAMINE partial agonist (~30% intrinsic activity) + 5-HT1A partial agonist + 5-HT2A antagonist. Unique pharmacology: in dopamine-overactive areas (mesolimbic, positive symptoms) it inhibits, in dopamine-underactive areas (mesocortical, negative symptoms, anhedonia) it partially stimulates. Clinical result: lower metabolic side effects (vs olanzapine), less sedating, less prolactin elevation. FDA warning for impulse-control disorders (compulsive gambling, hypersexuality) — rare but notable due to partial D2 agonism.',
+      pl: 'Aripiprazol to "trzecia generacja" atypowego antypsychotyku (Otsuka/BMS Abilify, FDA 2002). Mechanizm: częściowy agonista D2-DOPAMINY (~30% aktywności intrinsic) + częściowy agonista 5-HT1A + antagonista 5-HT2A. Unikalna farmakologia: w obszarach nadaktywnej dopaminy (mezolimbiczne, objawy pozytywne) hamuje, w obszarach niedoczynnej dopaminy (mezokortykalne, objawy negatywne, anhedonia) częściowo stymuluje. Wynik kliniczny: niższe działania metaboliczne (vs olanzapina), mniej sedujący, mniej podwyższania prolaktyny. Ostrzeżenie FDA dla zaburzeń kontroli impulsów (kompulsywny hazard, hyperseksualność) — rzadkie ale znaczące z powodu częściowego agonizmu D2.',
+    },
+    mechanism: {
+      hu: 'D2-DA parciális agonista (~30% intrinsic) + 5-HT1A parciális agonista + 5-HT2A antagonista. Funkcionális dopamin-stabilizátor: hiperaktív területen gátol, hipoaktív területen stimulál.',
+      en: 'D2-DA partial agonist (~30% intrinsic) + 5-HT1A partial agonist + 5-HT2A antagonist. Functional dopamine stabilizer: inhibits hyperactive areas, stimulates hypoactive ones.',
+      pl: 'Częściowy agonista D2-DA (~30% intrinsic) + częściowy agonista 5-HT1A + antagonista 5-HT2A. Funkcjonalny stabilizator dopaminy.',
+    },
+    legalStatus: { hu: 'EU/HU: vényköteles (Abilify, generikus). USA: FDA Rx.', en: 'EU/HU: prescription only (Abilify, generics). USA: FDA Rx.', pl: 'UE/PL: na receptę (Abilify, generyki). USA: FDA Rx.' },
+    onsetTime: '1-2 weeks (acute), 4-6 weeks (full response)',
+    halfLife: '~75 h (active metabolite dehydroaripiprazole 94 h)',
+    atcCode: 'N05AX12',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: 'Skizofrénia (felnőtt + 13+ év serdülő)', en: 'Schizophrenia (adult + 13+ yr adolescent)', pl: 'Schizofrenia (dorośli + 13+ lat młodzież)' },
+      { hu: 'Bipoláris I zavar, akut mánia + fenntartás (felnőtt + 10+ év)', en: 'Bipolar I disorder, acute mania + maintenance (adult + 10+ yr)', pl: 'ChAD I, ostra mania + podtrzymanie (dorośli + 10+ lat)' },
+      { hu: 'MDD-augmentáció (off-label gyakori, FDA-ra Abilify-ként)', en: 'MDD augmentation (common off-label, FDA-approved as Abilify)', pl: 'Augmentacja MDD (częste off-label, zatwierdzone FDA jako Abilify)' },
+      { hu: 'Tourette-szindróma, autizmus-asszociált irritabilitás (6+ év)', en: 'Tourette syndrome, autism-associated irritability (6+ yr)', pl: 'Zespół Tourette\'a, drażliwość w autyzmie (6+ lat)' },
+    ],
+    contraindications: [
+      { hu: 'Ismert Aripiprazole-túlérzékenység, súlyos kardiovaszkuláris betegség', en: 'Known aripiprazole hypersensitivity, severe CV disease', pl: 'Znana nadwrażliwość na aripiprazol, ciężka choroba CV' },
+      { hu: 'Idős demens betegekben pszichózis-kezelésre (mortalitás-emelkedés, FDA boxed warning)', en: 'In elderly with dementia psychosis (mortality elevation, FDA boxed warning)', pl: 'U starszych z psychozą demencyjną (wzrost śmiertelności, FDA boxed)' },
+    ],
+    commonSideEffects: [
+      { hu: 'Akathisia (motoros nyughatatlanság, 25%, gyakran dóziseffekt)', en: 'Akathisia (motor restlessness, 25%, often dose-effect)', pl: 'Akatyzja (niepokój ruchowy, 25%, często zależne od dawki)' },
+      { hu: 'Hányinger, fejfájás, álmatlanság vagy szedáció', en: 'Nausea, headache, insomnia or sedation', pl: 'Nudności, ból głowy, bezsenność lub sedacja' },
+      { hu: 'Súlyos, ritka: impulzuskontroll-zavar (szerencsejáték, hypersexualitás — FDA warning 2016), neuroleptikus malignus szindróma, tardív diszkinézis (krónikus)', en: 'Severe, rare: impulse-control disorder (gambling, hypersexuality — FDA warning 2016), neuroleptic malignant syndrome, tardive dyskinesia (chronic)', pl: 'Ciężkie, rzadkie: zaburzenie kontroli impulsów (hazard, hyperseksualność — ostrzeżenie FDA 2016), złośliwy zespół neuroleptyczny, dyskinezy późne (przewlekłe)' },
+      { hu: 'Metabolikus profil JOBB mint az Olanzapine/Quetiapine-é, de NEM teljesen neutrális (modeszt súlygyarapodás, glükóz-toleráns)', en: 'Metabolic profile BETTER than olanzapine/quetiapine but NOT entirely neutral (modest weight gain, glucose tolerance)', pl: 'Profil metaboliczny LEPSZY niż olanzapina/kwetiapina, ale NIE całkowicie neutralny (umiarkowany przyrost masy, tolerancja glukozy)' },
+    ],
+    cyp450: ['CYP3A4 substrate (primary)', 'CYP2D6 substrate (significant in poor metabolizers)', 'Mild CYP inhibitor'],
+    crossMolInteractions: [
+      { hu: 'Erős CYP3A4-inhibitor (Ketoconazole, Clarithromycin): dóziscsökkentés 50%-kal', en: 'Strong CYP3A4 inhibitors (ketoconazole, clarithromycin): dose reduction by 50%', pl: 'Silne inhibitory CYP3A4 (ketokonazol, klarytromycyna): redukcja dawki o 50%' },
+      { hu: 'CYP3A4 induktor (Carbamazepine, Rifampicin): dóziseszkaláció szükséges', en: 'CYP3A4 inducer (carbamazepine, rifampin): dose escalation needed', pl: 'Induktor CYP3A4 (karbamazepina, ryfampicyna): potrzeba eskalacji dawki' },
+      { hu: 'Erős CYP2D6-inhibitor (Fluoxetine, Paroxetine): dóziscsökkentés', en: 'Strong CYP2D6 inhibitors (fluoxetine, paroxetine): dose reduction', pl: 'Silne inhibitory CYP2D6 (fluoksetyna, paroksetyna): redukcja dawki' },
+    ],
+    benefits: [
+      { hu: 'Alacsonyabb metabolikus mellékhatás (vs Olanzapine, Quetiapine)', en: 'Lower metabolic side effects (vs olanzapine, quetiapine)', pl: 'Niższe działania metaboliczne (vs olanzapina, kwetiapina)' },
+      { hu: 'Kevesebb szedáció (megengedi nappali aktivitást)', en: 'Less sedation (allows daytime activity)', pl: 'Mniej sedacji (pozwala na aktywność dzienną)' },
+      { hu: 'Kevés prolaktin-emelkedés (vs Risperidon)', en: 'Little prolactin elevation (vs risperidone)', pl: 'Mało podwyższenia prolaktyny (vs risperydon)' },
+      { hu: 'MDD-augmentációban FDA-jóváhagyott (treatment-resistant MDD)', en: 'FDA-approved for MDD augmentation (treatment-resistant MDD)', pl: 'Zatwierdzony FDA dla augmentacji MDD (MDD oporne na leczenie)' },
+    ],
+    studies: [
+      { title: 'Aripiprazole in patients with schizophrenia: a multicenter, randomized trial', authors: 'Kane JM, Carson WH, Saha AR et al.', journal: 'J Clin Psychiatry. 2002;63(9):763-71.', pmid: '12363115' },
+      { title: 'Aripiprazole augmentation for treatment-resistant depression', authors: 'Berman RM, Marcus RN, Swanink R et al.', journal: 'J Clin Psychiatry. 2007;68(6):843-53.', pmid: '17592907' },
+      { title: 'Impulse-control disorders associated with dopamine partial agonists', authors: 'Moore TJ, Glenmullen J, Mattison DR.', journal: 'JAMA Intern Med. 2014;174(12):1930-3.', pmid: '25347404' },
+    ],
+    related: ['lamotrigine', 'sertralin'],
+    doseCalc: {
+      type: 'fixedDose',
+      fixedDose: { low: 5, medium: 15, high: 30 },
+      unit: 'mg/nap',
+      note: {
+        hu: 'Alacsony (5 mg): MDD-augmentáció kezdés, idős vagy szenzitív páciens. Mérsékelt (10-15 mg): skizofrénia/bipoláris-mánia standard. Magas (20-30 mg): rezisztens akut mánia, max-dózis 30 mg/nap. Étkezéstől függetlenül.',
+        en: 'Low (5 mg): MDD augmentation start, elderly or sensitive patient. Moderate (10-15 mg): schizophrenia/bipolar mania standard. High (20-30 mg): resistant acute mania, max 30 mg/day. Food-independent.',
+        pl: 'Niska (5 mg): start augmentacji MDD, starsi lub wrażliwi. Średnia (10-15 mg): standard schizofrenii/manii ChAD. Wysoka (20-30 mg): oporna ostra mania, maks. 30 mg/dzień. Niezależnie od jedzenia.',
+      },
+    },
+  },
+
+  // ===== EXTRA 12. LAMOTRIGINE (Pszichiátria, voltage-gated Na blocker, bipolar maintenance) =====
+  {
+    id: 'lamotrigine',
+    name: 'Lamotrigine',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'Antikonvulzív + bipoláris fenntartó (GSK Lamictal). Feszültség-függő Na-csatorna blokkoló. SJS/TEN kockázat miatt KÖTELEZŐ lassú titráció.',
+      en: 'Anticonvulsant + bipolar maintenance (GSK Lamictal). Voltage-gated Na channel blocker. MANDATORY slow titration due to SJS/TEN risk.',
+      pl: 'Lek przeciwdrgawkowy + podtrzymanie ChAD (GSK Lamictal). Bloker bramkowanych napięciem kanałów Na. OBOWIĄZKOWA powolna titracja z powodu ryzyka SJS/TEN.',
+    },
+    description: {
+      hu: 'A Lamotrigine egy feszültség-függő Na-csatorna blokkoló antiepilepszikum (GSK Lamictal, FDA 1994 epilepsy, FDA 2003 bipoláris fenntartás). Bipoláris zavarban a depressziós fázis-prevenciója a fő erőssége (kevésbé hatékony akut mánián). A SÚLYOS bőr-reakció (Stevens-Johnson szindróma, toxikus epidermális nekrolízis) kockázata 0,3% pediátriában és 0,1% felnőtt populációban — DE szignifikánsan emelkedik gyors dóziseszkalációnál vagy Valproat-kombinációnál. Ezért az 5-hetes lassú titráció (25 → 50 → 100 → 200 mg) KÖTELEZŐ, és minden bőrkiütésnél AZONNALI STOP.',
+      en: 'Lamotrigine is a voltage-gated Na channel blocker antiepileptic (GSK Lamictal, FDA 1994 epilepsy, FDA 2003 bipolar maintenance). Main strength in bipolar disorder is depressive-phase prevention (less effective in acute mania). SEVERE skin reaction risk (Stevens-Johnson syndrome, toxic epidermal necrolysis) is 0.3% in pediatrics and 0.1% adult — but significantly rises with rapid escalation or valproate combination. The 5-week slow titration (25 → 50 → 100 → 200 mg) is MANDATORY, and ANY rash = IMMEDIATE STOP.',
+      pl: 'Lamotrygina to bloker bramkowanych napięciem kanałów Na (GSK Lamictal, FDA 1994 padaczka, FDA 2003 podtrzymanie ChAD). Główna siła w ChAD to prewencja fazy depresyjnej (mniej skuteczna w ostrej manii). Ryzyko CIĘŻKIEJ reakcji skórnej (SJS, TEN) wynosi 0,3% u dzieci i 0,1% u dorosłych — ale znacznie rośnie przy szybkiej eskalacji lub kombinacji z walproinianem. 5-tygodniowa powolna titracja (25 → 50 → 100 → 200 mg) jest OBOWIĄZKOWA, a KAŻDA wysypka = NATYCHMIASTOWY STOP.',
+    },
+    mechanism: {
+      hu: 'Feszültség-függő Na-csatorna használat-függő blokádja (membrán-stabilizáció), glutamát-felszabadulás csökkentése. Másodlagos hatás: szelektív presynaptikus szerotonin-felszabadulás emelése (hangulat-stabilizáló hatás magyarázata).',
+      en: 'Use-dependent voltage-gated Na channel block (membrane stabilization), glutamate release reduction. Secondary: selective presynaptic serotonin release elevation (mood-stabilizing rationale).',
+      pl: 'Zależna od użycia blokada bramkowanych napięciem kanałów Na (stabilizacja błony), redukcja uwalniania glutaminianu. Wtórnie: selektywne podwyższenie presynaptycznego uwalniania serotoniny.',
+    },
+    legalStatus: { hu: 'EU/HU: vényköteles (Lamictal, Lamitrin, Epitrigine, generikus). USA: FDA Rx.', en: 'EU/HU: prescription only (Lamictal, Lamitrin, Epitrigine, generics). USA: FDA Rx.', pl: 'UE/PL: na receptę (Lamictal, Lamitrin, Epitrigine, generyki). USA: FDA Rx.' },
+    onsetTime: '5+ weeks (slow titration required)',
+    halfLife: '25-33 h (alone), 70 h (with valproate), 13 h (with enzyme inducers)',
+    atcCode: 'N03AX09',
+    prescriptionStatus: { hu: 'Vényköteles (Rx)', en: 'Prescription only (Rx)', pl: 'Na receptę (Rx)' },
+    indications: [
+      { hu: 'Epilepszia (fokális és generalizált, monoterápia vagy adjuváns)', en: 'Epilepsy (focal and generalized, monotherapy or adjunctive)', pl: 'Padaczka (ogniskowa i uogólniona, monoterapia lub uzupełniająca)' },
+      { hu: 'Bipoláris I zavar, hangulat-epizód PREVENCIÓJA (FDA 2003)', en: 'Bipolar I disorder, mood-episode PREVENTION (FDA 2003)', pl: 'ChAD I, PREWENCJA epizodów nastroju (FDA 2003)' },
+    ],
+    contraindications: [
+      { hu: 'Korábbi SJS/TEN/DRESS bőr-reakció anamnézis', en: 'Prior SJS/TEN/DRESS skin reaction history', pl: 'Wywiad reakcji skórnej SJS/TEN/DRESS' },
+      { hu: 'Súlyos máj-funkció-zavar', en: 'Severe hepatic impairment', pl: 'Ciężka niewydolność wątroby' },
+    ],
+    commonSideEffects: [
+      { hu: 'Bőrkiütés (10% benign rash, 0,1-0,3% SJS/TEN, főleg titráció során)', en: 'Skin rash (10% benign rash, 0.1-0.3% SJS/TEN, mainly during titration)', pl: 'Wysypka skórna (10% łagodna, 0,1-0,3% SJS/TEN, głównie podczas titracji)' },
+      { hu: 'Fejfájás, szédülés, ataxia, diplopia', en: 'Headache, dizziness, ataxia, diplopia', pl: 'Ból głowy, zawroty głowy, ataksja, diplopia' },
+      { hu: 'Súlyos, ritka: SJS/TEN (SÜRGŐSSÉGI), DRESS, aszeptikus meningitisz, hemophagocytotikus limfohisztiocitózis', en: 'Severe, rare: SJS/TEN (EMERGENCY), DRESS, aseptic meningitis, hemophagocytic lymphohistiocytosis', pl: 'Ciężkie, rzadkie: SJS/TEN (NAGŁE), DRESS, aseptyczne zapalenie opon, limfohistiocytoza hemofagocytarna' },
+    ],
+    cyp450: ['Glucuronidation primary (UGT1A4)', 'Strongly affected by inducers (carbamazepine, phenytoin) and inhibitors (valproate)'],
+    crossMolInteractions: [
+      { hu: 'Valproat: GLUCURONIDÁCIÓT GÁTOL, Lamotrigine felezési idő DUPLÁZÓDIK, SJS/TEN-kockázat fokozódik — KÖTELEZŐ a Lamotrigine-dózis 50%-os csökkentése Valproat-kombinációban', en: 'Valproate: INHIBITS glucuronidation, lamotrigine half-life DOUBLES, SJS/TEN risk rises — MANDATORY 50% dose reduction of lamotrigine with valproate', pl: 'Walproinian: HAMUJE glukuronidację, okres półtrwania lamotryginy PODWAJA, ryzyko SJS/TEN rośnie — OBOWIĄZKOWA redukcja dawki lamotryginy o 50% z walproinianem' },
+      { hu: 'Carbamazepine, Phenytoin, Phenobarbital: indukció, Lamotrigine plazma-szint csökkenhet, dóziseszkaláció szükséges', en: 'Carbamazepine, phenytoin, phenobarbital: induction, lamotrigine plasma may drop, dose escalation needed', pl: 'Karbamazepina, fenytoina, fenobarbital: indukcja, poziom lamotryginy w osoczu może spaść, potrzeba eskalacji' },
+      { hu: 'Orális fogamzásgátló: Lamotrigine plazma-szint csökkenhet, fogamzásgátló-cikluson belül változás', en: 'Oral contraceptive: lamotrigine plasma may decrease, variation within contraceptive cycle', pl: 'Doustna antykoncepcja: poziom lamotryginy może spaść, zmienność w cyklu' },
+    ],
+    benefits: [
+      { hu: 'Bipoláris depresszió-fázis PREVENCIÓJÁRA leghatékonyabb hangulat-stabilizáló', en: 'Most effective mood stabilizer for bipolar DEPRESSION-PHASE PREVENTION', pl: 'Najskuteczniejszy stabilizator nastroju dla PREWENCJI fazy depresyjnej ChAD' },
+      { hu: 'NEM okoz súlygyarapodást vagy szedációt (vs Olanzapine, Quetiapine)', en: 'No weight gain or sedation (vs olanzapine, quetiapine)', pl: 'Bez przyrostu masy ani sedacji (vs olanzapina, kwetiapina)' },
+      { hu: 'Nem teratogén szignifikánsan (vs Valproat erős teratogenitás)', en: 'Not significantly teratogenic (vs valproate strong teratogenicity)', pl: 'Nieistotnie teratogenny (vs walproinian silnie teratogenny)' },
+      { hu: 'Hosszú felezési idő → napi egyszeri/kétszeri adagolás (jó compliance)', en: 'Long half-life → once or twice daily (good compliance)', pl: 'Długi okres półtrwania → raz/dwa razy dziennie (dobry compliance)' },
+    ],
+    studies: [
+      { title: 'Lamotrigine for prevention of new manic and depressive episodes in BD (Calabrese 2003)', authors: 'Calabrese JR, Bowden CL, Sachs G et al.', journal: 'J Clin Psychiatry. 2003;64(9):1013-24.', pmid: '14628976' },
+      { title: 'Lamotrigine in the treatment of bipolar depression', authors: 'Geddes JR, Calabrese JR, Goodwin GM.', journal: 'Br J Psychiatry. 2009;194(1):4-9.', pmid: '19118318' },
+      { title: 'Stevens-Johnson syndrome and toxic epidermal necrolysis with lamotrigine', authors: 'Mockenhaupt M, Messenheimer J, Tennis P, Schlingmann J.', journal: 'Neurology. 2005;64(7):1134-8.', pmid: '15824334' },
+    ],
+    related: ['aripiprazole', 'sertralin'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1-2 (start)', en: 'Weeks 1-2 (start)', pl: 'Tygodnie 1-2 (start)' }, dose: '25' },
+        { phase: { hu: 'Hét 3-4', en: 'Weeks 3-4', pl: 'Tygodnie 3-4' }, dose: '50' },
+        { phase: { hu: 'Hét 5', en: 'Week 5', pl: 'Tydzień 5' }, dose: '100' },
+        { phase: { hu: 'Hét 6+ (cél)', en: 'Week 6+ (target)', pl: 'Tydzień 6+ (cel)' }, dose: '200' },
+      ],
+      unit: 'mg/nap',
+      note: {
+        hu: 'OBLIGATÓRIKUS lassú titráció a SJS/TEN-kockázat mitigálására. Valproat-kombinációban a fenti dózisok 50%-osra csökkentendők. Bármilyen bőrkiütésnél AZONNALI STOP és bőrgyógyász/sürgősségi konzultáció. NE folytassa korábbi dózisszintről, ha > 5 nap szünet volt — újraindítás 25 mg-ról.',
+        en: 'MANDATORY slow titration to mitigate SJS/TEN risk. With valproate, halve the above doses. ANY rash = IMMEDIATE STOP and dermatologist/emergency consultation. DO NOT resume at previous dose if > 5 days off — restart from 25 mg.',
+        pl: 'OBOWIĄZKOWA powolna titracja by złagodzić ryzyko SJS/TEN. Z walproinianem powyższe dawki redukować o połowę. KAŻDA wysypka = NATYCHMIASTOWY STOP i konsultacja dermatologa/nagła. NIE wznawiaj na poprzedniej dawce po > 5 dniach przerwy — start od 25 mg.',
+      },
+    },
+  },
+
+  // ===== EXTRA 13. METHYLPHENIDATE (Pszichiátria, DAT/NET inhibitor, ADHD primary) =====
+  {
+    id: 'methylphenidate',
+    name: 'Methylphenidate',
+    image: null,
+    accentColor: '#a78bfa',
+    tagColor: 'rgba(167,139,250,0.18)',
+    shortDesc: {
+      hu: 'DAT/NET-inhibitor stimuláns, ADHD első-vonal Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, visszaélés-potenciál szignifikáns.',
+      en: 'DAT/NET inhibitor stimulant, ADHD first-line Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, significant abuse potential.',
+      pl: 'Inhibitor DAT/NET stymulant, lek pierwszej linii ADHD Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, znaczący potencjał nadużywania.',
+    },
+    description: {
+      hu: 'A Methylphenidate egy pszichostimuláns, amelyet 1944-ben szintetizáltak, 1954 óta engedélyezett gyermek-hyperaktivitásra, 1990-es évek óta az ADHD első-vonal kezelése. A DAT és NET reuptake gátlásával növeli a synaptikus dopamint és norepinefrint a prefrontalis kortexben, ami az exekutív funkció (figyelem, impulzus-kontroll, munkamemória) javulásához vezet ADHD-betegen. DEA Schedule II (USA), aminek megfelelően Rx-szigorítás. IR (Ritalin, 3-5 h) és ER/OROS (Concerta 10-12 h) formák. Az MTA-trial (1999 JAMA, 14 hónapos follow-up) szerint a stimuláns-terápia + viselkedés-terápia kombináció szuperior. Visszaélés-potenciál: szétmorzsolt-belélegezve vagy IV-be adva amfetamin-szerű euforikus hatás, ezért XR-formák preferáltak.',
+      en: 'Methylphenidate is a psychostimulant synthesized in 1944, approved in 1954 for child hyperactivity, since 1990s the first-line ADHD treatment. DAT and NET reuptake inhibition raises synaptic dopamine and norepinephrine in prefrontal cortex, improving executive function (attention, impulse control, working memory) in ADHD. DEA Schedule II (USA), with corresponding Rx tightening. IR (Ritalin, 3-5 h) and ER/OROS (Concerta 10-12 h) forms. MTA trial (1999 JAMA, 14-month follow-up) showed stimulant + behavioral therapy combination superior. Abuse potential: crushed-inhaled or IV-injected produces amphetamine-like euphoria, hence XR forms preferred.',
+      pl: 'Metylofenidat to psychostymulant zsyntetyzowany w 1944, zatwierdzony w 1954 dla nadaktywności dziecięcej, od lat 90. lek pierwszej linii ADHD. Hamowanie wychwytu DAT i NET podnosi synaptyczną dopaminę i norepinefrynę w korze przedczołowej, poprawiając funkcję wykonawczą (uwaga, kontrola impulsów, pamięć robocza) w ADHD. DEA Schedule II (USA), odpowiednie zaostrzenie Rx. Formy IR (Ritalin, 3-5 h) i ER/OROS (Concerta 10-12 h). Badanie MTA (1999 JAMA, 14-miesięczna obserwacja) wykazało wyższość kombinacji stymulant + terapia behawioralna. Potencjał nadużywania: pokruszony-wdychany lub iv. daje euforię typu amfetaminowego, stąd preferowane formy XR.',
+    },
+    mechanism: {
+      hu: 'DAT (dopamine transzporter) és NET (norepinefrin transzporter) reuptake gátlása. Eltér az amfetamintól: a Methylphenidate "csak" gátol, nem fordítja meg a transzportert (amfetamin VMAT2-szintű DA-felszabadulást is okoz, ami az erősebb euforikus hatás).',
+      en: 'DAT (dopamine transporter) and NET (norepinephrine transporter) reuptake inhibition. Differs from amphetamine: methylphenidate "only" inhibits and does not reverse the transporter (amphetamine causes VMAT2-level DA release, hence stronger euphoria).',
+      pl: 'Hamowanie wychwytu DAT (transporter dopaminy) i NET (transporter norepinefryny). Różni się od amfetaminy: metylofenidat "tylko" hamuje, nie odwraca transportera (amfetamina powoduje uwolnienie DA na poziomie VMAT2, stąd silniejsza euforia).',
+    },
+    legalStatus: { hu: 'EU/HU: vényköteles, kábítószer-rendelet alá tartozó (Ritalin, Concerta, Medikinet). USA: DEA Schedule II.', en: 'EU/HU: prescription, controlled drug regulation (Ritalin, Concerta, Medikinet). USA: DEA Schedule II.', pl: 'UE/PL: na receptę, regulacja jako lek kontrolowany (Ritalin, Concerta, Medikinet). USA: DEA Schedule II.' },
+    onsetTime: 'IR: 30-45 min; ER/OROS: 1-2 h; effect lasts 3-5 h (IR), 10-12 h (Concerta OROS)',
+    halfLife: 'IR: 3-5 h; ER/OROS: 6-8 h (effective duration 10-12 h via osmotic delivery)',
+    atcCode: 'N06BA04',
+    prescriptionStatus: { hu: 'Vényköteles (Rx), DEA Schedule II (USA), HU-ban kábítószer-receptre', en: 'Prescription only (Rx), DEA Schedule II (USA), HU narcotic Rx', pl: 'Na receptę (Rx), DEA Schedule II (USA), PL recepta narkotyczna' },
+    indications: [
+      { hu: 'ADHD (gyermek 6+ év, serdülő, felnőtt)', en: 'ADHD (child 6+ yr, adolescent, adult)', pl: 'ADHD (dziecko 6+ lat, młodzież, dorośli)' },
+      { hu: 'Narkolepszia (második vonal a Modafinil mögött)', en: 'Narcolepsy (second-line after modafinil)', pl: 'Narkolepsja (druga linia po modafinilu)' },
+    ],
+    contraindications: [
+      { hu: 'MAOi 14 napon belül (hipertenzív krízis)', en: 'MAOi within 14 days (hypertensive crisis)', pl: 'MAOi w ciągu 14 dni (przełom nadciśnieniowy)' },
+      { hu: 'Súlyos kardiovaszkuláris betegség (LV-hipertrófia, súlyos hipertenzió, koszorúér-elégtelenség)', en: 'Severe CV disease (LV hypertrophy, severe hypertension, coronary insufficiency)', pl: 'Ciężka choroba CV (przerost LV, ciężkie nadciśnienie, niewydolność wieńcowa)' },
+      { hu: 'Hyperthyreosis, glaukóma (szűk zugú)', en: 'Hyperthyroidism, angle-closure glaucoma', pl: 'Nadczynność tarczycy, jaskra z zamykającym się kątem' },
+      { hu: 'Aktív szubsztanciafüggőség, pszichotikus tünet anamnézis (relatív)', en: 'Active substance dependence, psychotic symptom history (relative)', pl: 'Aktywne uzależnienie, wywiad objawów psychotycznych (względne)' },
+    ],
+    commonSideEffects: [
+      { hu: 'Étvágycsökkenés (~30%), súlyveszteség, gyermek-növekedés enyhe lassulása', en: 'Decreased appetite (~30%), weight loss, mild growth slowing in children', pl: 'Zmniejszony apetyt (~30%), utrata wagi, łagodne spowolnienie wzrostu u dzieci' },
+      { hu: 'Inszomnia (késő-napi adagolás kerülendő), szorongás-fokozódás, ingerlékenység', en: 'Insomnia (avoid late-day dosing), anxiety increase, irritability', pl: 'Bezsenność (unikaj późnego dawkowania), wzrost lęku, drażliwość' },
+      { hu: 'Tachycardia, vérnyomás-emelkedés (mérsékelt)', en: 'Tachycardia, BP elevation (moderate)', pl: 'Tachykardia, wzrost BP (umiarkowane)' },
+      { hu: 'Súlyos, ritka: pszichotikus reakció (új-tünet), kardiális esemény (preexisztens szívbetegségben), Raynaud-szindróma (krónikus), priapizmus', en: 'Severe, rare: psychotic reaction (new-onset), cardiac event (in preexisting disease), Raynaud syndrome (chronic), priapism', pl: 'Ciężkie, rzadkie: reakcja psychotyczna (nowa), zdarzenie kardiologiczne, zespół Raynauda (przewlekły), priapizm' },
+    ],
+    cyp450: ['Minimal CYP metabolism (de-esterification by CES1A1)', 'No major CYP interactions'],
+    crossMolInteractions: [
+      { hu: 'MAOi: ABSZOLÚT kontraindikált', en: 'MAOi: ABSOLUTE contraindication', pl: 'MAOi: BEZWZGLĘDNE przeciwwskazanie' },
+      { hu: 'Béta-blokkoló: extrém hipertenzív reakció, kombináció kerülendő', en: 'Beta-blocker: extreme hypertensive reaction, avoid combination', pl: 'Beta-bloker: ekstremalna reakcja hipertenzyjna, unikać kombinacji' },
+      { hu: 'Antihipertenzív szerek hatása csökkenhet', en: 'Antihypertensives effect may decrease', pl: 'Efekt leków przeciwnadciśnieniowych może spaść' },
+      { hu: 'Alkohol: kardiovaszkuláris kockázat fokozása, kerülendő', en: 'Alcohol: increased CV risk, avoid', pl: 'Alkohol: zwiększone ryzyko CV, unikać' },
+    ],
+    benefits: [
+      { hu: 'ADHD-tünetek (figyelem, impulzus-kontroll, munkamemória) szignifikáns javulása', en: 'ADHD symptoms (attention, impulse control, working memory) significantly improve', pl: 'Objawy ADHD (uwaga, kontrola impulsów, pamięć robocza) znacznie się poprawiają' },
+      { hu: 'OROS-formuláció (Concerta) 12 órás hatás, gyermek-iskolanapra ideális', en: 'OROS formulation (Concerta) 12-hour effect, ideal for child school day', pl: 'Formuła OROS (Concerta) 12-godzinny efekt, idealna dla dnia szkolnego' },
+      { hu: 'MTA-trial: viselkedés-terápiával kombinálva szuperior', en: 'MTA trial: superior with behavioral therapy combination', pl: 'Badanie MTA: lepsza z kombinacją terapii behawioralnej' },
+    ],
+    studies: [
+      { title: 'A 14-month randomized clinical trial of treatment strategies for ADHD (MTA Cooperative Group)', authors: 'MTA Cooperative Group.', journal: 'Arch Gen Psychiatry. 1999;56(12):1073-86.', pmid: '10591283' },
+      { title: 'Methylphenidate for attention deficit hyperactivity disorder (ADHD) in children and adolescents', authors: 'Storebø OJ, Pedersen N, Ramstad E et al.', journal: 'Cochrane Database Syst Rev. 2018;5:CD012069.', pmid: '29744873' },
+      { title: 'Long-term safety of methylphenidate in children with ADHD', authors: 'Vitiello B, Severe JB, Greenhill LL et al.', journal: 'J Am Acad Child Adolesc Psychiatry. 2008;47(8):860-9.', pmid: '18596553' },
+    ],
+    related: ['modafinil', 'bupropion'],
+    doseCalc: {
+      type: 'titration',
+      titration: [
+        { phase: { hu: 'Hét 1 (start, IR)', en: 'Week 1 (start, IR)', pl: 'Tydzień 1 (start, IR)' }, dose: '5' },
+        { phase: { hu: 'Hét 2 (IR 2-3x/nap)', en: 'Week 2 (IR 2-3x/day)', pl: 'Tydzień 2 (IR 2-3x/dzień)' }, dose: '10' },
+        { phase: { hu: 'Concerta XR (felnőtt cél)', en: 'Concerta XR (adult target)', pl: 'Concerta XR (cel dorosły)' }, dose: '36' },
+        { phase: { hu: 'Max-dózis (felnőtt)', en: 'Max dose (adult)', pl: 'Maks. dawka (dorosły)' }, dose: '72' },
+      ],
+      unit: 'mg/nap',
+      note: {
+        hu: 'IR: 5-10 mg 2-3x/nap reggel-délben (NE adja 16 óra után, inszomnia-kockázat). Concerta OROS: napi egyszer reggel, 18-72 mg, max 72 mg/nap felnőttnél. Visszaélés-potenciál miatt szigorú Rx-monitoring. Gyermek-növekedés és vérnyomás évente.',
+        en: 'IR: 5-10 mg 2-3x/day morning-noon (DO NOT take after 4 PM, insomnia risk). Concerta OROS: once-daily morning, 18-72 mg, max 72 mg/day adult. Strict Rx monitoring due to abuse potential. Annual child growth and BP check.',
+        pl: 'IR: 5-10 mg 2-3x/dzień rano-południe (NIE po 16:00, ryzyko bezsenności). Concerta OROS: raz dziennie rano, 18-72 mg, maks. 72 mg/dzień dorosły. Ścisły monitoring Rx z powodu potencjału nadużywania. Roczna kontrola wzrostu i BP.',
+      },
+    },
+  },
+
   // ===== EXTRA 6. GLIMEPIRID (Anyagcsere, 2nd gen sulfonylurea) =====
   {
     id: 'glimepirid',
