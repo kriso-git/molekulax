@@ -19,6 +19,8 @@ export const PERFORMANCE_CATEGORIES = {
   'trenbolone-info':   ['aas-info'],
   'anavar-info':       ['aas-info'],
   // Task 7 (Prohormon CORE)
+  'superdrol':         ['prohormones'],
+  '1-andro':           ['prohormones'],
   // Task 8 (Stim + Bronch CORE)
   // Task 9 (Növekedés CORE + EXTRA)
 }
