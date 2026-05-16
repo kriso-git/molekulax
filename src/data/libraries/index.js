@@ -8,8 +8,9 @@
 import { peptidesLibrary } from './peptides'
 import { nootropicsLibrary } from './nootropics'
 import { performanceLibrary } from './performance'
+import { pharmaceuticalLibrary } from './pharmaceutical'
 
-export const LIBRARIES = [peptidesLibrary, nootropicsLibrary, performanceLibrary]
+export const LIBRARIES = [peptidesLibrary, nootropicsLibrary, performanceLibrary, pharmaceuticalLibrary]
 
 export function getLibrary(id) {
   return LIBRARIES.find(lib => lib.id === id) || null
