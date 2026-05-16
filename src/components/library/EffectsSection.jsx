@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { X, Send, ExternalLink } from 'lucide-react'
-import { useLang } from '../i18n/LanguageContext'
-import { EFFECT_CATEGORIES } from '../data/libraries/peptides/effects'
+import { useLang } from '../../i18n/LanguageContext'
+import { useLibrary } from '../../context/LibraryContext'
 
 const TELEGRAM_URL = 'https://t.me/molekulaxtra'
 const TIKTOK_URL   = 'https://www.tiktok.com/@moleculextra'
@@ -124,14 +124,14 @@ function CategoryVisual({ cat, idx }) {
   return <Illu />
 }
 
-function openPeptideInGallery(peptideId, onClose) {
+function openEntryInGallery(libraryId, entryId, onClose) {
   onClose()
   setTimeout(() => {
-    window.dispatchEvent(new CustomEvent('open-peptide', { detail: { id: peptideId } }))
+    window.location.hash = `entry/${libraryId}/${entryId}`
   }, 300)
 }
 
-function Modal({ cat, idx, onClose }) {
+function Modal({ cat, idx, libraryId, onClose }) {
   const { t, tr } = useLang()
   useEffect(() => {
     const handleKey = e => { if (e.key === 'Escape') onClose() }
@@ -143,7 +143,9 @@ function Modal({ cat, idx, onClose }) {
     }
   }, [onClose])
 
-  const { color, glow, studies, peptides, peptideIds } = cat
+  const { color, glow, studies } = cat
+  const entryNames = cat.entryNames || cat.peptides || []
+  const entryIds = cat.entryIds || cat.peptideIds || []
 
   return (
     <div
@@ -237,12 +239,12 @@ function Modal({ cat, idx, onClose }) {
               {t('pe.relevant')}
             </p>
             <div className="flex flex-wrap gap-2">
-              {peptides.map((p, i) => {
-                const pid = peptideIds?.[i]
+              {entryNames.map((p, i) => {
+                const pid = entryIds[i]
                 return pid ? (
                   <button
                     key={i}
-                    onClick={() => openPeptideInGallery(pid, onClose)}
+                    onClick={() => openEntryInGallery(libraryId, pid, onClose)}
                     className="group text-[11px] px-3 py-1.5 rounded-full font-mono tracking-wide font-semibold flex items-center gap-1.5 transition-all duration-200"
                     style={{ background: `${color}16`, border: `1px solid ${color}40`, color }}
                     onMouseEnter={e => { e.currentTarget.style.background=`${color}30`; e.currentTarget.style.borderColor=`${color}70` }}
@@ -300,9 +302,16 @@ function Modal({ cat, idx, onClose }) {
   )
 }
 
-export default function PeptideEffects() {
+export default function EffectsSection() {
   const { t, tr } = useLang()
+  const { library } = useLibrary()
   const [active, setActive] = useState(null)
+
+  if (!library?.effects?.length) return null
+
+  const categories = library.effects
+  const sectionTitle = library.effectsTitle ? tr(library.effectsTitle) : t('pe.title')
+  const sectionSubtitle = library.effectsSubtitle ? tr(library.effectsSubtitle) : t('pe.subtitle')
 
   return (
     <>
@@ -310,10 +319,10 @@ export default function PeptideEffects() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold italic text-white mb-5">
-              {t('pe.title')}
+              {sectionTitle}
             </h2>
             <p className="text-gray-500 text-sm max-w-xl mx-auto leading-relaxed mb-5">
-              {t('pe.subtitle')}
+              {sectionSubtitle}
             </p>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full"
               style={{ background: 'rgba(129,140,248,0.1)', border: '1px solid rgba(129,140,248,0.3)' }}>
@@ -325,57 +334,60 @@ export default function PeptideEffects() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {EFFECT_CATEGORIES.map((cat, i) => (
-              <div
-                key={i}
-                className="group rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 select-none"
-                style={{ border: '1px solid var(--tint-soft-border)', background: 'var(--tint-soft)' }}
-                onClick={() => setActive({ cat, idx: i })}
-                onMouseEnter={e => {
-                  e.currentTarget.style.border = `1px solid ${cat.color}40`
-                  e.currentTarget.style.boxShadow = `0 0 40px ${cat.glow}`
-                  e.currentTarget.style.transform = 'translateY(-2px)'
-                }}
-                onMouseLeave={e => {
-                  e.currentTarget.style.border = '1px solid var(--tint-soft-border)'
-                  e.currentTarget.style.boxShadow = 'none'
-                  e.currentTarget.style.transform = 'translateY(0)'
-                }}
-              >
-                <div className="relative h-52 overflow-hidden" style={{ background: 'var(--bg-tile)' }}>
-                  <CategoryVisual cat={cat} idx={i} />
-                  <div className="absolute bottom-0 left-0 right-0 h-10"
-                    style={{ background: 'linear-gradient(to bottom, transparent, var(--bg-tile-fade))' }} />
-                  <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] tracking-widest uppercase font-semibold"
-                      style={{ background: `${cat.color}22`, border: `1px solid ${cat.color}40`, color: cat.color }}>
-                      {t('pe.details')}
+            {categories.map((cat, i) => {
+              const entryNames = cat.entryNames || cat.peptides || []
+              return (
+                <div
+                  key={i}
+                  className="group rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 select-none"
+                  style={{ border: '1px solid var(--tint-soft-border)', background: 'var(--tint-soft)' }}
+                  onClick={() => setActive({ cat, idx: i })}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.border = `1px solid ${cat.color}40`
+                    e.currentTarget.style.boxShadow = `0 0 40px ${cat.glow}`
+                    e.currentTarget.style.transform = 'translateY(-2px)'
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.border = '1px solid var(--tint-soft-border)'
+                    e.currentTarget.style.boxShadow = 'none'
+                    e.currentTarget.style.transform = 'translateY(0)'
+                  }}
+                >
+                  <div className="relative h-52 overflow-hidden" style={{ background: 'var(--bg-tile)' }}>
+                    <CategoryVisual cat={cat} idx={i} />
+                    <div className="absolute bottom-0 left-0 right-0 h-10"
+                      style={{ background: 'linear-gradient(to bottom, transparent, var(--bg-tile-fade))' }} />
+                    <div className="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[10px] tracking-widest uppercase font-semibold"
+                        style={{ background: `${cat.color}22`, border: `1px solid ${cat.color}40`, color: cat.color }}>
+                        {t('pe.details')}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-7">
+                    <p className="text-[10px] tracking-[0.25em] uppercase mb-2 font-semibold" style={{ color: cat.color }}>
+                      {tr(cat.subtitle)}
+                    </p>
+                    <h3 className="text-xl font-bold text-white mb-4 leading-snug">{tr(cat.title)}</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed mb-5">{tr(cat.description)}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {entryNames.map((p, j) => (
+                        <span key={j} className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide"
+                          style={{ background: `${cat.color}14`, border: `1px solid ${cat.color}35`, color: cat.color }}>
+                          {p}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 </div>
-
-                <div className="p-7">
-                  <p className="text-[10px] tracking-[0.25em] uppercase mb-2 font-semibold" style={{ color: cat.color }}>
-                    {tr(cat.subtitle)}
-                  </p>
-                  <h3 className="text-xl font-bold text-white mb-4 leading-snug">{tr(cat.title)}</h3>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-5">{tr(cat.description)}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {cat.peptides.map((p, j) => (
-                      <span key={j} className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide"
-                        style={{ background: `${cat.color}14`, border: `1px solid ${cat.color}35`, color: cat.color }}>
-                        {p}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
 
-      {active && <Modal cat={active.cat} idx={active.idx} onClose={() => setActive(null)} />}
+      {active && <Modal cat={active.cat} idx={active.idx} libraryId={library.id} onClose={() => setActive(null)} />}
     </>
   )
 }
