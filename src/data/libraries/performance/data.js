@@ -666,6 +666,386 @@ export const CORE_PERFORMANCE = [
       cruise: null,
     },
   },
+
+  // ===== 6. EPHEDRINE =====
+  {
+    id: 'ephedrine',
+    name: 'Ephedrine',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: 'Sympathomimetic alkaloid (Ephedra sinica), klasszikus thermogenic és bronchodilator. WADA-tiltott versenysportban.',
+      en: 'Sympathomimetic alkaloid (Ephedra sinica), the classic thermogenic and bronchodilator. WADA-banned in competitive sport.',
+      pl: 'Sympatomimetyczny alkaloid (Ephedra sinica), klasyczny termogenik i bronchodilator. Zakazany przez WADA w sporcie wyczynowym.',
+    },
+    description: {
+      hu: 'Az Ephedrine egy fenetilamin-alkaloid, amelyet eredetileg az Ephedra sinica (Ma Huang) növényből izoláltak. Mind az α-, mind a β-adrenoceptorokra hat, valamint elősegíti a noradrenalin felszabadulását a preszinaptikus terminálokból. Az USA-ban OTC bronchodilator (asztma) és nasal decongestant (Sudafed-előd), Magyarországon vény nélkül kapható készítményekben (allergia / nátha). Az Astrup-csoport 1991-92-es vizsgálatai dokumentálták, hogy az ephedrine + caffeine kombináció akut ~10% és krónikus ~5% bazális metabolizmus-emelést okoz, és placebo-kontrollált vizsgálatokban ~3-5 kg extra zsírvesztést támogat 12-24 hét alatt obéz nőknél.',
+      en: 'Ephedrine is a phenethylamine alkaloid originally isolated from Ephedra sinica (Ma Huang). It acts on both α- and β-adrenoceptors and promotes noradrenaline release from presynaptic terminals. In the US it is an OTC bronchodilator (asthma) and nasal decongestant (Sudafed predecessor); in Hungary it is available without prescription in allergy/cold preparations. The Astrup group 1991-92 studies documented an acute ~10% and chronic ~5% basal metabolism elevation, and placebo-controlled trials show ~3-5 kg extra fat loss over 12-24 weeks in obese women on the ephedrine + caffeine stack.',
+      pl: 'Efedryna to fenetyloaminowy alkaloid izolowany z Ephedra sinica (Ma Huang). Działa na receptory α- i β-adrenergiczne oraz wzmaga uwalnianie noradrenaliny z zakończeń presynaptycznych. W USA to OTC bronchodilator (astma) i lek udrażniający (poprzednik Sudafedu); w UE dostępny bez recepty w preparatach na alergię/przeziębienie. Badania Astrupa 1991-92 udokumentowały ostry ~10% i przewlekły ~5% wzrost podstawowej przemiany materii, a próby z placebo wykazały ~3-5 kg dodatkowej utraty tłuszczu w 12-24 tygodni u otyłych kobiet w stosie efedryna + kofeina.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' }, value: { hu: 'α/β-adrenoceptor agonista + NE-felszabadulás', en: 'α/β-adrenoceptor agonist + NE release', pl: 'Agonista α/β-adrenergiczny + uwalnianie NE' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, value: { hu: '3-6 óra', en: '3-6 hours', pl: '3-6 godzin' } },
+      { label: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Czas wystąpienia' }, value: { hu: '15-30 perc', en: '15-30 min', pl: '15-30 min' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'USA: OTC korlátozott. HU/EU: vény nélkül OTC készítményekben.', en: 'USA: OTC restricted. HU/EU: OTC in preparations.', pl: 'USA: OTC ograniczony. UE: OTC w preparatach.' } },
+    ],
+    mechanism: {
+      hu: 'Közvetlen α1- és β1/β2-adrenoceptor agonista (kevésbé szelektív, mint Clenbuterol), valamint NE-felszabadulást indukál preszinaptikus terminálokról. β2-aktiválás bronchodilatáció, β3-aktiválás barna zsír thermogenezis, α1 vazokonstrikció és vérnyomás-emelés.',
+      en: 'Direct α1- and β1/β2-adrenoceptor agonist (less selective than Clenbuterol), plus presynaptic NE release. β2 activation gives bronchodilation, β3 brown fat thermogenesis, α1 vasoconstriction and blood pressure elevation.',
+      pl: 'Bezpośredni agonista receptorów α1 i β1/β2 (mniej selektywny niż Clenbuterol), plus uwalnianie NE z zakończeń presynaptycznych. β2 daje rozszerzenie oskrzeli, β3 termogenezę brunatnej tkanki, α1 wazokonstrykcję i wzrost ciśnienia.',
+    },
+    legalStatus: {
+      hu: 'USA: OTC korlátozással (Combat Methamphetamine Epidemic Act, 2005), online vásárlás regisztráció-köteles. HU: OTC allergia/nátha készítményekben (Solutan, Coldrex Junior). EU: OTC vagy receptre, országonként eltérő. WADA: tiltott versenyen >10 μg/mL vizelet.',
+      en: 'USA: OTC with restrictions (Combat Methamphetamine Epidemic Act, 2005), online purchases require registration. HU: OTC in allergy/cold preparations. EU: OTC or prescription depending on country. WADA: banned in competition above 10 μg/mL urine.',
+      pl: 'USA: OTC z ograniczeniami (Combat Methamphetamine Epidemic Act, 2005), zakupy online wymagają rejestracji. UE: OTC lub na receptę zależnie od kraju. WADA: zakazany w zawodach powyżej 10 μg/mL moczu.',
+    },
+    onsetTime: '15-30 min',
+    halfLife: '3-6 h',
+    interactionsWith: ['caffeine', 'aspirin', 'MAOI', 'SSRI', 'TCA', 'alcohol'],
+    wadaStatus: 'banned',
+    detectionWindow: {
+      hu: '24-48 óra vizelet (WADA in-competition threshold: 10 μg/mL).',
+      en: '24-48 hours urine (WADA in-competition threshold: 10 μg/mL).',
+      pl: '24-48 godzin mocz (próg WADA w zawodach: 10 μg/mL).',
+    },
+    benefits: [
+      { hu: 'Akut bazális metabolikus ráta emelés (~10% Astrup 1986)', en: 'Acute basal metabolic rate elevation (~10% Astrup 1986)', pl: 'Ostry wzrost podstawowej przemiany materii (~10% Astrup 1986)' },
+      { hu: 'Krónikus zsírvesztés-emelés ephedrine + caffeine stack-en (3-5 kg / 12-24 hét)', en: 'Chronic fat loss elevation on ephedrine + caffeine stack (3-5 kg / 12-24 weeks)', pl: 'Przewlekła redukcja tkanki tłuszczowej w stosie EC (3-5 kg / 12-24 tyg)' },
+      { hu: 'Bronchodilatáció (asztmás hozzáférés OTC készítményekben)', en: 'Bronchodilation (asthma access via OTC preparations)', pl: 'Rozszerzenie oskrzeli (dostęp astmatyczny w preparatach OTC)' },
+      { hu: 'Étvágy-csökkentő hatás (CNS-stimuláns mellékhatás)', en: 'Appetite-suppressant effect (CNS stimulant side effect)', pl: 'Działanie zmniejszające apetyt (efekt uboczny stymulanta CNS)' },
+    ],
+    quickStart: [
+      { hu: 'Edukatív kontextus: WADA versenysportban tiltott', en: 'Educational context: WADA-banned in competitive sport', pl: 'Kontekst edukacyjny: zakazany przez WADA w sporcie wyczynowym' },
+      { hu: 'ECA-stack klasszikus: 20-25 mg ephedrine + 200 mg caffeine + 81-325 mg aspirin, 3x/nap', en: 'Classic ECA stack: 20-25 mg ephedrine + 200 mg caffeine + 81-325 mg aspirin, 3x/day', pl: 'Klasyczny stos ECA: 20-25 mg efedryny + 200 mg kofeiny + 81-325 mg aspiryny, 3x/dziennie' },
+      { hu: 'Maximum 6-8 hét folyamatos használat tachyphylaxis (toleráncia) miatt', en: 'Maximum 6-8 weeks continuous use due to tachyphylaxis (tolerance)', pl: 'Maks. 6-8 tygodni ciągłego użycia z powodu tachyfilaksji' },
+      { hu: 'Délután 4 óra után NE szedd (insomniát okoz)', en: 'Do not take after 4 PM (causes insomnia)', pl: 'Nie przyjmuj po 16:00 (powoduje bezsenność)' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: 'Akut hatás 30-60 perc múlva: szívverés-emelés (+10-20 bpm), enyhe remegés, mentális stimuláció, étvágy-csökkenés.', en: 'Acute effect in 30-60 min: heart rate increase (+10-20 bpm), mild tremor, mental stimulation, appetite reduction.', pl: 'Efekt ostry po 30-60 min: wzrost tętna (+10-20 bpm), lekkie drżenie, stymulacja, redukcja apetytu.' } },
+      { label: { hu: '1-2. hét', en: 'Week 1-2', pl: 'Tydzień 1-2' }, body: { hu: 'Toleráncia kialakulása (akut hatás csökken), de a krónikus thermogenikus hatás megmarad. Zsírvesztés tempó +0.2-0.4 kg/hét placebo felett.', en: 'Tolerance develops (acute effect diminishes) but chronic thermogenic effect persists. Fat loss pace +0.2-0.4 kg/week above placebo.', pl: 'Tolerancja rozwija się (efekt ostry maleje), ale przewlekły efekt termogeniczny utrzymuje się. Tempo redukcji +0.2-0.4 kg/tydzień powyżej placebo.' } },
+      { label: { hu: '6. hét vége', en: 'End of week 6', pl: 'Koniec tygodnia 6' }, body: { hu: 'Ciklus-megszakítás javasolt 2 hét OFF a receptor-resensitizációhoz. Vérnyomás napló kötelező, ha 140/90 felett tartós: leállítás.', en: 'Cycle break recommended, 2 weeks OFF for receptor resensitization. Blood pressure log mandatory; if sustained over 140/90 stop.', pl: 'Zalecana przerwa cyklu, 2 tygodnie OFF dla resensytyzacji receptorów. Obowiązkowy dziennik ciśnienia; przy utrzymującym się >140/90 zakończ.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Tiszta tabletta vagy oldat OTC készítményből (Bronkaid, Primatene Tablets US-ben; HU-ban Solutan vagy ephedrine HCl-tabletta)', en: 'Pure tablet or solution from OTC preparation (Bronkaid, Primatene Tablets in US; ephedrine HCl tablet)', pl: 'Czysta tabletka lub roztwór z preparatu OTC (Bronkaid, Primatene Tablets w USA)' },
+        { hu: 'Független HPLC-tesztelt forrás Ma Huang kivonatból (változó hatóanyagtartalom)', en: 'Independent HPLC-tested source from Ma Huang extract (variable content)', pl: 'Niezależnie testowane źródło z ekstraktu Ma Huang (zmienna zawartość)' },
+      ],
+      caution: [
+        { hu: 'Kardio-monitoring szükséges: vérnyomás napló otthon (cél: <140/90), nyugalmi pulzus <100', en: 'Cardio monitoring required: blood pressure log at home (target: <140/90), resting heart rate <100', pl: 'Monitoring sercowo-naczyniowy: dziennik ciśnienia w domu (cel: <140/90), tętno spoczynkowe <100' },
+        { hu: 'EKG referencia 6 hetes ciklus után ajánlott (különösen ECA-stack-en)', en: 'EKG reference after a 6-week cycle is recommended (especially on ECA stack)', pl: 'EKG po 6-tygodniowym cyklu zalecane (szczególnie przy ECA)' },
+        { hu: 'Insomnia, anxietás, irritáció, tachykardia', en: 'Insomnia, anxiety, irritability, tachycardia', pl: 'Bezsenność, lęk, drażliwość, tachykardia' },
+        { hu: 'Toleráncia gyorsan kialakul (1-2 hét), pause ciklusok kötelezőek', en: 'Tolerance develops fast (1-2 weeks), pause cycles mandatory', pl: 'Tolerancja rozwija się szybko (1-2 tygodnie), przerwy obowiązkowe' },
+      ],
+      avoid: [
+        { hu: 'Magas vérnyomás (>140/90 baseline) abszolút kontraindikáció', en: 'Hypertension (>140/90 baseline) is an absolute contraindication', pl: 'Nadciśnienie (>140/90 baseline) to bezwzględne przeciwwskazanie' },
+        { hu: 'MAOI, SSRI, TCA antidepresszánssal kontraindikált (szerotonin-szindróma kockázat)', en: 'Contraindicated with MAOI, SSRI, TCA antidepressants (serotonin syndrome risk)', pl: 'Przeciwwskazany z MAOI, SSRI, TCA (ryzyko zespołu serotoninowego)' },
+        { hu: 'Hyperthyreosis, glaukóma, prostata-megnagyobbodás kontraindikáció', en: 'Hyperthyroidism, glaucoma, prostate enlargement are contraindications', pl: 'Nadczynność tarczycy, jaskra, przerost prostaty to przeciwwskazania' },
+      ],
+    },
+    interactions: [
+      { hu: 'Caffeine: szinergisztikus thermogenezis (ECA-stack alapja), de kardio-stressz fokozódik', en: 'Caffeine: synergistic thermogenesis (ECA stack basis), but cardiovascular stress amplifies', pl: 'Kofeina: synergiczna termogeneza (baza ECA), ale stres sercowo-naczyniowy wzrasta' },
+      { hu: 'Aspirin (81-325 mg): csökkenti a thromboticus kockázatot az ECA-stack-en', en: 'Aspirin (81-325 mg): reduces thrombotic risk on ECA stack', pl: 'Aspiryna (81-325 mg): zmniejsza ryzyko zakrzepowe w stosie ECA' },
+      { hu: 'MAO-gátló: szerotonin-szindróma (kontraindikált)', en: 'MAO inhibitor: serotonin syndrome (contraindicated)', pl: 'Inhibitor MAO: zespół serotoninowy (przeciwwskazane)' },
+      { hu: 'Yohimbine: kombinált sympathomimetic stressz, ritkán súlyos hypertenzió', en: 'Yohimbine: combined sympathomimetic stress, rarely severe hypertension', pl: 'Yohimbine: skumulowany stres sympatomimetyczny, rzadko ciężkie nadciśnienie' },
+    ],
+    studies: [
+      { title: 'Thermogenic synergism between ephedrine and caffeine in healthy volunteers', authors: 'Astrup A, Toubro S, Cannon S et al.', journal: 'Metabolism. 1991;40(3):323-329.', pmid: '2000046' },
+      { title: 'The effect of ephedrine/caffeine mixture on energy expenditure and body composition in obese women', authors: 'Astrup A, Buemann B, Christensen NJ et al.', journal: 'Metabolism. 1992;41(7):686-688.', pmid: '1619987' },
+      { title: 'Efficacy and safety of ephedra and ephedrine for weight loss and athletic performance: meta-analysis', authors: 'Shekelle PG, Hardy ML, Morton SC et al.', journal: 'JAMA. 2003;289(12):1537-1545.', pmid: '12672771' },
+      { title: 'Ephedrine, pseudoephedrine, and norpseudoephedrine: stimulant and weight loss effects', authors: 'Greenway FL.', journal: 'Obes Rev. 2001;2(3):199-211.', pmid: '12120105' },
+    ],
+    faq: [
+      { q: { hu: 'Miért tiltja a WADA?', en: 'Why is it WADA-banned?', pl: 'Dlaczego WADA tego zakazuje?' }, a: { hu: 'A WADA versenyen-belül tiltja, ha a vizelet-koncentráció >10 μg/mL (CNS-stimuláns kategória). Versenyen kívül edzésben nem tiltott, de a versenyhetén az alkalmazás kockázatos a hosszú detekciós ablak miatt.', en: 'WADA bans in-competition if urine concentration is >10 μg/mL (CNS stimulant category). Out-of-competition training use is not banned, but use in the competition week is risky due to the long detection window.', pl: 'WADA zakazuje w zawodach, jeśli stężenie w moczu >10 μg/mL (kategoria stymulantów CNS). Poza zawodami trening nie jest zakazany, ale stosowanie w tygodniu zawodów jest ryzykowne z powodu długiego okna wykrywalności.' } },
+      { q: { hu: 'Lehet-e GHB-vel kombinálni?', en: 'Can it be combined with GHB?', pl: 'Czy można łączyć z GHB?' }, a: { hu: 'NEM. Ephedrine + bármilyen szedatív szer (GHB, benzodiazepin, alkohol nagy mennyiségben) ellentmondásos: a sympathomimetic + szedatív kombináció kardiotoxikus. Plusz a GHB illegális.', en: 'NO. Ephedrine + any sedative (GHB, benzodiazepine, large alcohol) is contraindicated: sympathomimetic + sedative combination is cardiotoxic. Plus GHB is illegal.', pl: 'NIE. Efedryna + sedatywne (GHB, benzodiazepiny, alkohol w dużych ilościach) są przeciwwskazane: kombinacja sympatomimetyczna + sedatywna jest kardiotoksyczna. Plus GHB jest nielegalne.' } },
+      { q: { hu: 'Mennyi idő alatt alakul ki tolerancia?', en: 'How fast does tolerance develop?', pl: 'Jak szybko rozwija się tolerancja?' }, a: { hu: 'Az akut stimuláns hatás 1-2 hét alatt csökken (receptor down-regulation). A thermogenikus hatás tovább megmarad (~5% BMR krónikusan), de ciklus-pauseolás 2-4 hetente ajánlott.', en: 'Acute stimulant effect declines in 1-2 weeks (receptor down-regulation). Thermogenic effect persists (~5% BMR chronically), but cycle pauses every 2-4 weeks are recommended.', pl: 'Ostry efekt stymulanta maleje w 1-2 tygodnie (down-regulacja receptorów). Termogenny efekt utrzymuje się (~5% BMR), ale pauzy co 2-4 tygodnie zalecane.' } },
+      { q: { hu: 'Szükséges-e bloodwork ehhez?', en: 'Is bloodwork needed for this?', pl: 'Czy potrzebne badania krwi?' }, a: { hu: 'Strukturált bloodwork-protokoll nem szükséges, mint AAS-eknél. De vérnyomás napló otthon (cél: <140/90), nyugalmi pulzus <100, és 6 hetes ciklus után 1 EKG ajánlott. Pajzsmirigy-funkció (TSH, fT3, fT4) ellenőrzés ECA-stack előtt.', en: 'Structured bloodwork protocol not needed like for AAS. But home blood pressure log (target <140/90), resting heart rate <100, and 1 EKG after 6 weeks recommended. Thyroid function (TSH, fT3, fT4) check before ECA stack.', pl: 'Strukturyzowany protokół badań krwi niepotrzebny jak przy AAS. Ale dziennik ciśnienia w domu (cel <140/90), tętno spoczynkowe <100, i 1 EKG po 6 tygodniach zalecane. Funkcja tarczycy (TSH, fT3, fT4) przed ECA.' } },
+    ],
+    related: ['yohimbine', 'clenbuterol', 'albuterol'],
+  },
+
+  // ===== 7. YOHIMBINE =====
+  {
+    id: 'yohimbine',
+    name: 'Yohimbine',
+    image: null,
+    accentColor: '#fbbf24',
+    tagColor: 'rgba(251,191,36,0.18)',
+    shortDesc: {
+      hu: 'α2-adrenoceptor antagonist (Pausinystalia yohimbe), "stubborn fat" zsírdepók mobilizálására használt sport-supplement.',
+      en: 'α2-adrenoceptor antagonist (Pausinystalia yohimbe), used as a supplement to mobilize "stubborn fat" depots.',
+      pl: 'Antagonista receptora α2-adrenergicznego (Pausinystalia yohimbe), używany jako suplement do mobilizacji "stubborn fat".',
+    },
+    description: {
+      hu: 'A Yohimbine egy indol-alkaloid, amelyet a nyugat-afrikai Yohimbe fa (Pausinystalia yohimbe) kérgéből izolálnak. Mechanizmusa szelektív α2-adrenoceptor antagonizmus: az α2-blokád gátolja az anti-lipolítikus visszacsatolást és emeli a noradrenalin-felszabadulást zsírszövetben. Az α2-receptor sűrűsége magas a hasi és combi "stubborn fat" depókban, ezért a Yohimbine elméletileg szelektíven hatékony ezeken a területeken. Az USA-ban OTC dietary supplement, az EU-ban gyógyszer-státusza országonként eltérő. Klinikailag erekciós diszfunkció kezelésére is használták (Yocon), de a hatékonyság vitatott a 2010-es PDE5-inhibitor-érában.',
+      en: 'Yohimbine is an indole alkaloid isolated from the bark of the West African Yohimbe tree (Pausinystalia yohimbe). Its mechanism is selective α2-adrenoceptor antagonism: α2 blockade inhibits the anti-lipolytic feedback loop and raises noradrenaline release in adipose tissue. α2 receptor density is high in abdominal and femoral "stubborn fat" depots, so Yohimbine is theoretically selectively effective in these areas. In the US it is an OTC dietary supplement; in the EU regulatory status varies by country. It was clinically used for erectile dysfunction (Yocon), but efficacy is debated in the post-2010 PDE5-inhibitor era.',
+      pl: 'Yohimbina to alkaloid indolowy izolowany z kory zachodnioafrykańskiego drzewa Yohimbe (Pausinystalia yohimbe). Mechanizm to selektywny antagonizm receptora α2-adrenergicznego: blokada α2 hamuje anty-lipolityczne sprzężenie zwrotne i podnosi uwalnianie noradrenaliny w tkance tłuszczowej. Gęstość receptorów α2 jest wysoka w brzusznych i udowych depozytach "stubborn fat", więc yohimbina jest teoretycznie selektywnie skuteczna w tych obszarach.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' }, value: { hu: 'α2-adrenoceptor antagonist', en: 'α2-adrenoceptor antagonist', pl: 'Antagonista α2' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, value: { hu: '0.6-2 óra (rövid)', en: '0.6-2 hours (short)', pl: '0.6-2 godzin (krótki)' } },
+      { label: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Czas wystąpienia' }, value: { hu: '30-45 perc', en: '30-45 min', pl: '30-45 min' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'USA: OTC supplement. EU: vegyes (HU: receptre). WADA: nem listázott.', en: 'USA: OTC supplement. EU: mixed (HU: prescription). WADA: not listed.', pl: 'USA: OTC. UE: zmienne (PL: na receptę). WADA: nielistowana.' } },
+    ],
+    mechanism: {
+      hu: 'Szelektív α2-adrenoceptor antagonista, blokkolja a noradrenalin-felszabadulás negatív visszacsatolását. Eredmény: helyileg fokozott lipolízis α2-rich zsírdepókban (has, comb, csípő).',
+      en: 'Selective α2-adrenoceptor antagonist, blocks the negative feedback loop on noradrenaline release. Result: locally enhanced lipolysis in α2-rich fat depots (abdomen, thigh, hip).',
+      pl: 'Selektywny antagonista α2-adrenergiczny, blokuje ujemne sprzężenie zwrotne uwalniania noradrenaliny. Wynik: lokalnie wzmożona lipoliza w depozytach α2 (brzuch, udo, biodro).',
+    },
+    legalStatus: {
+      hu: 'USA: OTC dietary supplement (FDA-megfigyelt mellékhatás-jelentésekkel). HU: Rx (Yocon). PL: Rx. WADA: nem listázott.',
+      en: 'USA: OTC dietary supplement (FDA-monitored with adverse event reports). HU/PL: Rx (Yocon). WADA: not listed.',
+      pl: 'USA: OTC suplement diety. UE: na receptę (Yocon w HU/PL). WADA: nielistowana.',
+    },
+    onsetTime: '30-45 min',
+    halfLife: '0.6-2 h',
+    interactionsWith: ['caffeine', 'ephedrine', 'MAOI', 'SSRI', 'TCA', 'tyramine-rich foods'],
+    wadaStatus: null,
+    benefits: [
+      { hu: '"Stubborn fat" mobilizálás α2-rich depókból (Ostojic 2006 sportoló-vizsgálat: 2.2% zsírvesztés 3 hét alatt)', en: 'Mobilization of "stubborn fat" from α2-rich depots (Ostojic 2006 athlete study: 2.2% fat loss in 3 weeks)', pl: 'Mobilizacja "stubborn fat" z depozytów α2 (Ostojic 2006: 2.2% redukcji w 3 tyg)' },
+      { hu: 'Étvágy-csökkentő hatás (CNS sympathomimetic)', en: 'Appetite-suppressant effect (CNS sympathomimetic)', pl: 'Działanie zmniejszające apetyt' },
+      { hu: 'Edzés-előtti stimuláns (fókusz + mentális élesedés)', en: 'Pre-workout stimulant (focus + mental sharpness)', pl: 'Stymulant przed treningiem (fokus + ostrość umysłowa)' },
+      { hu: 'Cardio-edzés alatti zsírmobilizáció éhgyomri állapotban hatékonyabb', en: 'Fat mobilization during cardio more effective in fasted state', pl: 'Mobilizacja tłuszczu podczas cardio skuteczniejsza na czczo' },
+    ],
+    quickStart: [
+      { hu: 'Dózis: 0.2 mg/kg testtömeg (60 kg személynek 12 mg, 80 kg-osnak 16 mg)', en: 'Dose: 0.2 mg/kg body weight (12 mg for 60 kg person, 16 mg for 80 kg)', pl: 'Dawka: 0.2 mg/kg masy ciała (12 mg dla 60 kg, 16 mg dla 80 kg)' },
+      { hu: 'Éhgyomorra, edzés előtt 30-45 perccel (inzulin gátolja a yohimbine hatását)', en: 'On empty stomach, 30-45 min before training (insulin blocks Yohimbine effect)', pl: 'Na czczo, 30-45 min przed treningiem (insulina blokuje efekt)' },
+      { hu: 'Maximum 3-4 hét folyamatos használat (anxietás-akkumuláció)', en: 'Maximum 3-4 weeks continuous use (anxiety accumulation)', pl: 'Maks. 3-4 tygodnie ciągłego użycia (kumulacja lęku)' },
+      { hu: 'Délután 4 óra után NE szedd (insomniát okoz)', en: 'Do not take after 4 PM (causes insomnia)', pl: 'Nie przyjmuj po 16:00 (powoduje bezsenność)' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: '30-45 perc múlva: enyhe szívverés-emelés, enyhe anxietás, fokozott éberség. Cardio alatt látható zsírmobilizáció.', en: 'In 30-45 min: mild heart rate rise, mild anxiety, enhanced alertness. Visible fat mobilization during cardio.', pl: 'W 30-45 min: lekki wzrost tętna, lekki lęk, zwiększona czujność. Widoczna mobilizacja tłuszczu podczas cardio.' } },
+      { label: { hu: '1-2. hét', en: 'Week 1-2', pl: 'Tydzień 1-2' }, body: { hu: 'Toleráncia kialakulása részleges, stubborn-fat zsírdepók látható csökkenése 2-3 hét után.', en: 'Partial tolerance develops; visible reduction of stubborn-fat depots after 2-3 weeks.', pl: 'Częściowa tolerancja rozwija się; widoczna redukcja depozytów "stubborn fat" po 2-3 tygodniach.' } },
+      { label: { hu: '3-4. hét vége', en: 'End of week 3-4', pl: 'Koniec tygodnia 3-4' }, body: { hu: 'Ciklus-megszakítás javasolt 2 hét OFF a CNS-recovery-hez. Az anxietás kumulálódhat hosszabb használat esetén.', en: 'Cycle break recommended, 2 weeks OFF for CNS recovery. Anxiety can accumulate with longer use.', pl: 'Zalecana przerwa cyklu, 2 tygodnie OFF dla regeneracji CNS. Lęk może się kumulować przy dłuższym używaniu.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Tiszta yohimbine HCl tabletta vagy kapszula (NEM yohimbe kéreg extract, ami változó tartalmú)', en: 'Pure Yohimbine HCl tablet or capsule (NOT yohimbe bark extract, which has variable content)', pl: 'Czysta tabletka lub kapsułka yohimbiny HCl (NIE ekstrakt z kory, który ma zmienną zawartość)' },
+        { hu: 'Független HPLC-tesztelt forrás', en: 'Independent HPLC-tested source', pl: 'Niezależnie testowane HPLC' },
+      ],
+      caution: [
+        { hu: 'Anxietás, irritáció, insomnia tipikus mellékhatás', en: 'Anxiety, irritability, insomnia are typical side effects', pl: 'Lęk, drażliwość, bezsenność to typowe efekty uboczne' },
+        { hu: 'Vérnyomás-emelkedés, tachykardia (kardio monitoring otthon ajánlott)', en: 'Blood pressure rise, tachycardia (home cardio monitoring recommended)', pl: 'Wzrost ciśnienia, tachykardia (monitoring w domu zalecany)' },
+        { hu: 'Hányinger gyakori magas dózison (>0.4 mg/kg)', en: 'Nausea common at high dose (>0.4 mg/kg)', pl: 'Mdłości częste przy wysokiej dawce (>0.4 mg/kg)' },
+        { hu: 'Pánikroham-prediszpozíció esetén kontraindikált', en: 'Contraindicated in panic disorder predisposition', pl: 'Przeciwwskazany przy predyspozycji do napadów lęku' },
+      ],
+      avoid: [
+        { hu: 'MAOI, SSRI, TCA antidepresszánssal kontraindikált', en: 'Contraindicated with MAOI, SSRI, TCA antidepressants', pl: 'Przeciwwskazany z MAOI, SSRI, TCA' },
+        { hu: 'Tyramin-gazdag ételek (érlelt sajt, vörösbor) hipertenzív krízis kockázat', en: 'Tyramine-rich foods (aged cheese, red wine) carry hypertensive crisis risk', pl: 'Pokarmy bogate w tyraminę (sery, czerwone wino) ryzyko kryzysu nadciśnieniowego' },
+        { hu: 'Vese- vagy májzavar esetén dózis-csökkentés (CYP2D6 metabolizmus)', en: 'Reduce dose with renal or hepatic impairment (CYP2D6 metabolism)', pl: 'Zmniejsz dawkę przy zaburzeniach nerek lub wątroby (metabolizm CYP2D6)' },
+      ],
+    },
+    interactions: [
+      { hu: 'Caffeine: szinergisztikus stimuláns hatás, de anxietás-fokozó', en: 'Caffeine: synergistic stimulant effect, but increases anxiety', pl: 'Kofeina: synergiczny efekt, ale zwiększa lęk' },
+      { hu: 'Ephedrine: kombinált sympathomimetic stressz, kardio-monitoring kötelező', en: 'Ephedrine: combined sympathomimetic stress, cardio monitoring mandatory', pl: 'Efedryna: skumulowany stres sympatomimetyczny, monitoring obowiązkowy' },
+      { hu: 'Inzulin (étkezés utáni hatás): blokkolja a yohimbine zsírmobilizációs hatását', en: 'Insulin (postprandial): blocks Yohimbine fat mobilization effect', pl: 'Insulina (poposiłkowa): blokuje efekt mobilizacji tłuszczu' },
+      { hu: 'PDE5-inhibitor (Viagra/Cialis): kardio-stressz fokozódik', en: 'PDE5 inhibitor (Viagra/Cialis): cardio stress amplifies', pl: 'Inhibitor PDE5 (Viagra/Cialis): stres sercowo-naczyniowy wzrasta' },
+    ],
+    studies: [
+      { title: 'Effect of yohimbine on body composition and exercise performance in soccer players', authors: 'Ostojic SM.', journal: 'Res Sports Med. 2006;14(4):289-299.', pmid: '17214405' },
+      { title: 'Yohimbine: a pharmacological probe for study of alpha 2-adrenoreceptor', authors: 'Tam SW, Worcel M, Wyllie M.', journal: 'Pharmacol Ther. 2001;91(3):215-243.', pmid: '11744068' },
+      { title: 'The effects of yohimbine on regional adipose tissue lipolysis in obese subjects', authors: 'Galitzky J, Taouis M, Berlan M et al.', journal: 'Eur J Clin Invest. 1988;18(6):587-594.', pmid: '3147912' },
+    ],
+    faq: [
+      { q: { hu: 'Hatékony-e zsírvesztésre tényleg?', en: 'Is it really effective for fat loss?', pl: 'Czy naprawdę skuteczna w redukcji?' }, a: { hu: 'Az evidencia szegényes és inkonzisztens. Ostojic 2006 (atléta-vizsgálat) 2.2% zsírvesztést mutat 3 hét alatt edzéssel kombinálva. Más vizsgálatok (Galitzky 1988) lokális lipolízis-emelést igazolnak, de teljes-test fogyás nem konzisztens. A "stubborn fat"-hipotézis biológiailag plauzibilis (α2-rich depók), de klinikai validáció hiányos.', en: 'Evidence is sparse and inconsistent. Ostojic 2006 (athlete study) shows 2.2% fat loss over 3 weeks combined with training. Other studies (Galitzky 1988) confirm local lipolysis elevation, but consistent whole-body weight loss is not established. The "stubborn fat" hypothesis is biologically plausible (α2-rich depots) but clinical validation is incomplete.', pl: 'Dowody są skąpe i niespójne. Ostojic 2006 (sportowcy) pokazuje 2.2% redukcji w 3 tygodnie z treningiem. Inne badania potwierdzają lokalną lipolizę, ale spójna utrata masy całego ciała nie jest ustalona. Hipoteza "stubborn fat" jest biologicznie wiarygodna, ale walidacja kliniczna niepełna.' } },
+      { q: { hu: 'Kombinálható-e ephedrine-nel?', en: 'Can it be combined with ephedrine?', pl: 'Czy można łączyć z efedryną?' }, a: { hu: 'Igen, "EC + Y stack" létezik, de a kardio-stressz jelentősen fokozódik. Vérnyomás napló otthon kötelező, és csak experienced felhasználóknak ajánlott egészséges baseline-on.', en: 'Yes, "EC + Y stack" exists, but cardiovascular stress is significantly amplified. Home blood pressure log mandatory, and only recommended for experienced users with healthy baseline.', pl: 'Tak, "stos EC + Y" istnieje, ale stres sercowo-naczyniowy znacznie się wzmaga. Dziennik ciśnienia w domu obowiązkowy, tylko dla doświadczonych użytkowników.' } },
+      { q: { hu: 'Miért NE szedjem étkezés után?', en: 'Why not take it after eating?', pl: 'Dlaczego nie po jedzeniu?' }, a: { hu: 'A postprandiális inzulin az α2-receptor anti-lipolítikus jelet erősíti, ami a yohimbine α2-antagonista hatását kioltja. Éhgyomorra (vagy reggel ébredés után) a hatás akár 2-3x erősebb lehet.', en: 'Postprandial insulin amplifies the α2-receptor anti-lipolytic signal, neutralizing Yohimbine α2-antagonist effect. Fasted (or morning after waking) the effect can be 2-3x stronger.', pl: 'Insulina poposiłkowa wzmacnia anty-lipolityczny sygnał α2, neutralizując efekt yohimbiny. Na czczo (lub rano po wstaniu) efekt może być 2-3x silniejszy.' } },
+    ],
+    related: ['ephedrine', 'clenbuterol'],
+  },
+
+  // ===== 8. CLENBUTEROL =====
+  {
+    id: 'clenbuterol',
+    name: 'Clenbuterol',
+    image: null,
+    accentColor: '#06b6d4',
+    tagColor: 'rgba(6,182,212,0.18)',
+    shortDesc: {
+      hu: 'Szelektív β2-adrenoceptor agonista, EU veterinär-Rx asztmás lovaknak. Bodybuilding off-label fat-loss + izom-megtartás.',
+      en: 'Selective β2-adrenoceptor agonist, EU veterinary Rx for equine asthma. Off-label bodybuilding use for fat loss + muscle sparing.',
+      pl: 'Selektywny agonista β2, weterynaryjny w UE dla astmy końskiej. Off-label kulturystyka dla redukcji + ochrony mięśni.',
+    },
+    description: {
+      hu: 'A Clenbuterol egy hosszú-hatású szelektív β2-adrenoceptor agonista, amelyet eredetileg az 1970-es években bronchodilator-ként szintetizáltak. EU-ban (Magyarországon is) veterinär-Rx asztmás lovak kezelésére (Ventipulmin) és néhány országban (Bulgária, Kína) emberi asztma-Rx; az USA-ban EMBERI orvosi használatra NEM engedélyezett. Bodybuilding off-label használata szelektíven a 2-es típusú izomrostokat (gyors-glikolitikus) hipertrofizálja és thermogenezist okoz β2-mediált UCP1 aktiválással barna zsírban. A felezési ideje extrémen hosszú (~35-40 óra), ami dosing-ot bonyolulttá teszi és kardiotoxikus akkumuláció kockázatát növeli.',
+      en: 'Clenbuterol is a long-acting selective β2-adrenoceptor agonist originally synthesized in the 1970s as a bronchodilator. In the EU (including Hungary) it is veterinary Rx for equine asthma (Ventipulmin), and in a few countries (Bulgaria, China) human asthma Rx; in the US it is NOT approved for human medical use. Off-label bodybuilding use selectively hypertrophies type 2 (fast-glycolytic) muscle fibers and drives thermogenesis via β2-mediated UCP1 activation in brown fat. Its half-life is extremely long (~35-40 h), complicating dosing and increasing cardiotoxic accumulation risk.',
+      pl: 'Clenbuterol to długo działający selektywny agonista β2 zsyntetyzowany w latach 1970. w UE (w tym HU) jest na receptę weterynaryjną dla astmy końskiej (Ventipulmin), w kilku krajach (Bułgaria, Chiny) na receptę dla ludzi; w USA NIE jest zatwierdzony dla ludzi. Off-label w kulturystyce selektywnie hipertrofizuje włókna typu 2 (szybkie glikolityczne) i napędza termogenezę przez β2-aktywację UCP1 w brunatnej tkance tłuszczowej. Czas półtrwania ~35-40 godzin.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' }, value: { hu: 'Szelektív β2-adrenoceptor agonista', en: 'Selective β2-adrenoceptor agonist', pl: 'Selektywny agonista β2' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, value: { hu: '35-40 óra', en: '35-40 hours', pl: '35-40 godzin' } },
+      { label: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Czas wystąpienia' }, value: { hu: '15-30 perc', en: '15-30 min', pl: '15-30 min' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'EU: vet-Rx (lóasztmára). HU: vet-Rx. USA: nem engedélyezett emberre.', en: 'EU: vet-Rx (equine asthma). HU: vet-Rx. USA: not approved for humans.', pl: 'UE: weterynaryjnie. USA: niezatwierdzony dla ludzi.' } },
+    ],
+    mechanism: {
+      hu: 'Szelektív β2-adrenoceptor agonista, ami a légúti simaizmot ellazítja (bronchodilatáció), és a zsírszöveti lipolízist + thermogenezist β2-UCP1 mechanizmuson keresztül emeli. Anabolikus hatás vázizomban főleg gyors-glikolitikus rostokon (type 2).',
+      en: 'Selective β2-adrenoceptor agonist relaxing airway smooth muscle (bronchodilation), and raising adipose lipolysis + thermogenesis via the β2-UCP1 pathway. Anabolic effect in skeletal muscle is largely on fast-glycolytic fibers (type 2).',
+      pl: 'Selektywny agonista β2, rozluźnia mięśnie gładkie dróg oddechowych (rozszerzenie oskrzeli) i podnosi lipolizę + termogenezę przez szlak β2-UCP1. Efekt anaboliczny głównie na włóknach typu 2.',
+    },
+    legalStatus: {
+      hu: 'EU: veterinär-Rx (Magyarországon Ventipulmin lovaknak). Néhány országban (Bulgária, Kína, Mexikó) humán asztma-Rx. USA: NEM engedélyezett emberi használatra (Schedule III-szerű). WADA: tiltott versenyen + edzésen.',
+      en: 'EU: veterinary Rx (Hungary: Ventipulmin for horses). Human asthma Rx in a few countries (Bulgaria, China, Mexico). USA: NOT approved for human use. WADA: banned in and out of competition.',
+      pl: 'UE: weterynaryjnie (HU: Ventipulmin dla koni). W kilku krajach (Bułgaria, Chiny, Meksyk) na receptę dla ludzi. USA: NIE zatwierdzony dla ludzi. WADA: zakazany w i poza zawodami.',
+    },
+    onsetTime: '15-30 min',
+    halfLife: '35-40 h',
+    interactionsWith: ['caffeine', 'ephedrine', 'beta-blockers', 'thyroid hormones', 'insulin'],
+    wadaStatus: 'banned',
+    detectionWindow: {
+      hu: '7-14 nap vizelet (WADA-akkreditált laborban érzékeny LC-MS-tesztek).',
+      en: '7-14 days urine (sensitive LC-MS testing in WADA-accredited labs).',
+      pl: '7-14 dni mocz (czułe testy LC-MS w laboratoriach akredytowanych WADA).',
+    },
+    benefits: [
+      { hu: 'β2-mediált thermogenezis és lipolízis (zsírvesztés 0.3-0.5 kg/hét placebo felett)', en: 'β2-mediated thermogenesis and lipolysis (fat loss 0.3-0.5 kg/week above placebo)', pl: 'Termogeneza i lipoliza β2 (redukcja 0.3-0.5 kg/tydz powyżej placebo)' },
+      { hu: 'Izomtömeg megtartás kalória-deficitben (anti-katabolikus)', en: 'Muscle mass sparing during caloric deficit (anti-catabolic)', pl: 'Ochrona masy mięśniowej w deficycie (antykataboliczne)' },
+      { hu: 'Bronchodilatáció (asztma-tüneti enyhülés)', en: 'Bronchodilation (asthma symptom relief)', pl: 'Rozszerzenie oskrzeli (ulga w astmie)' },
+      { hu: 'Edzés-előtti energia + aerob teljesítmény-emelés (3-5%)', en: 'Pre-workout energy + aerobic performance boost (3-5%)', pl: 'Energia przed treningiem + wydajność aerobowa (3-5%)' },
+    ],
+    quickStart: [
+      { hu: 'Edukatív kontextus: WADA-tiltott + EU-ban humán használatra nem engedélyezett', en: 'Educational context: WADA-banned + not approved for human use in EU', pl: 'Kontekst edukacyjny: WADA-zakazany + niezatwierdzony dla ludzi w UE' },
+      { hu: 'Dose-titrating: 20 μg/nap kezdő, +20 μg/nap minden 2-3 napban (felezési idő hosszú!)', en: 'Dose-titrating: 20 μg/day start, +20 μg/day every 2-3 days (long half-life!)', pl: 'Tytracja dawki: start 20 μg/dzień, +20 μg/dzień co 2-3 dni (długi okres półtrwania!)' },
+      { hu: 'Maximum 6-8 hét folyamatos használat (kardiotoxikus akkumuláció)', en: 'Maximum 6-8 weeks continuous use (cardiotoxic accumulation)', pl: 'Maks. 6-8 tygodni ciągłego użycia (kumulacja kardiotoksyczna)' },
+      { hu: '2 hét OFF receptor-resensitizációhoz, vagy ketotifen kombinációval pszeudo-fix dózis', en: '2 weeks OFF for receptor resensitization, or ketotifen combo for pseudo-fixed dosing', pl: '2 tygodnie OFF dla resensytyzacji lub kombinacja z ketotifenem' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: '20 μg-tól szignifikáns remegés (tremor), izomgörcs, szívverés-emelés (+20-30 bpm). Insomnia, anxietás, izzadás.', en: 'From 20 μg significant tremor, muscle cramps, heart rate rise (+20-30 bpm). Insomnia, anxiety, sweating.', pl: 'Od 20 μg znaczne drżenie, skurcze mięśni, wzrost tętna (+20-30 bpm). Bezsenność, lęk, pocenie.' } },
+      { label: { hu: '1-2. hét', en: 'Week 1-2', pl: 'Tydzień 1-2' }, body: { hu: 'Toleráncia kialakulása (akut hatás csökken), zsírvesztés tempó +0.3-0.5 kg/hét. Vérnyomás napló kötelező.', en: 'Tolerance develops (acute effect diminishes), fat loss pace +0.3-0.5 kg/week. Blood pressure log mandatory.', pl: 'Tolerancja rozwija się, redukcja +0.3-0.5 kg/tydz. Dziennik ciśnienia obowiązkowy.' } },
+      { label: { hu: '6-8. hét', en: 'Week 6-8', pl: 'Tydzień 6-8' }, body: { hu: 'Ciklus-megszakítás kötelező. Kardio-fáradtság, palpitációk halmozódnak. EKG ellenőrzés ajánlott.', en: 'Cycle break mandatory. Cardio fatigue, palpitations accumulate. EKG check recommended.', pl: 'Przerwa cyklu obowiązkowa. Zmęczenie sercowe, kołatania kumulują się. EKG zalecane.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Clenbuterol HCl 20 μg/tabletta veterinär forrásból (Sopharma, Bulgária)', en: 'Clenbuterol HCl 20 μg/tablet from veterinary source (Sopharma, Bulgaria)', pl: 'Clenbuterol HCl 20 μg/tabletka ze źródła weterynaryjnego (Sopharma, Bułgaria)' },
+        { hu: 'Független HPLC-tesztelt forrás (UGL piacon gyakori a hígítás)', en: 'Independent HPLC-tested source (dilution common on UGL market)', pl: 'Niezależnie testowane HPLC' },
+      ],
+      caution: [
+        { hu: 'Kardio-monitoring KRITIKUS: vérnyomás napló otthon (cél: <140/90), nyugalmi pulzus <100', en: 'CRITICAL cardio monitoring: blood pressure log (target: <140/90), resting heart rate <100', pl: 'KRYTYCZNE monitorowanie: ciśnienie (cel: <140/90), tętno spoczynkowe <100' },
+        { hu: 'EKG ciklus előtt + 6 hét múlva: szívizom-hipertrófia és aritmia kockázata dokumentált', en: 'EKG pre-cycle + after 6 weeks: cardiac hypertrophy and arrhythmia risk documented', pl: 'EKG przed cyklem + po 6 tygodniach: hipertrofia serca i arytmia udokumentowane' },
+        { hu: 'Remegés (tremor), izomgörcs (taurin + magnézium szuplementálás 3g/2g enyhíti)', en: 'Tremor, muscle cramps (taurine + magnesium supplementation 3g/2g eases)', pl: 'Drżenie, skurcze (suplementacja tauryny + magnezu 3g/2g łagodzi)' },
+        { hu: 'Insomnia, anxietás, izzadás, szívdobogás', en: 'Insomnia, anxiety, sweating, palpitations', pl: 'Bezsenność, lęk, pocenie, kołatania' },
+      ],
+      avoid: [
+        { hu: 'Bármilyen kardiovaszkuláris zavar (hipertónia, aritmia, családi anamnézis) abszolút kontraindikáció', en: 'Any cardiovascular disorder (hypertension, arrhythmia, family history) is an absolute contraindication', pl: 'Każde zaburzenie sercowo-naczyniowe (nadciśnienie, arytmia, wywiad rodzinny) to bezwzględne przeciwwskazanie' },
+        { hu: 'Hyperthyreosis kontraindikáció (β2 + pajzsmirigy túl-stimuláció)', en: 'Hyperthyroidism is a contraindication (β2 + thyroid over-stimulation)', pl: 'Nadczynność tarczycy to przeciwwskazanie' },
+        { hu: 'β-blokkoló-terápia kontraindikálja a Clenbuterol-t', en: 'β-blocker therapy contraindicates Clenbuterol', pl: 'Terapia β-blokerami przeciwwskazuje Clenbuterol' },
+      ],
+    },
+    interactions: [
+      { hu: 'Caffeine, Ephedrine: kombinált sympathomimetic stressz, kardio-monitoring kritikus', en: 'Caffeine, Ephedrine: combined sympathomimetic stress, cardio monitoring critical', pl: 'Kofeina, Efedryna: skumulowany stres, monitoring krytyczny' },
+      { hu: 'Pajzsmirigy-hormon (T3 Cytomel) stack: extrém kombinált stressz, csak experienced felhasználóknak', en: 'Thyroid hormone (T3 Cytomel) stack: extreme combined stress, only for experienced users', pl: 'Hormon tarczycy (T3 Cytomel) stos: skrajny skumulowany stres' },
+      { hu: 'Ketotifen (1-2 mg lefekvés előtt): receptor down-regulation gátlása, pszeudo-fix dózis lehetséges', en: 'Ketotifen (1-2 mg at bedtime): blocks receptor down-regulation, pseudo-fixed dosing possible', pl: 'Ketotyfen (1-2 mg przed snem): blokuje down-regulację receptorów' },
+      { hu: 'Taurin (3g/nap) + magnézium (2g/nap): izomgörcsöket enyhíti', en: 'Taurine (3g/day) + magnesium (2g/day): eases muscle cramps', pl: 'Tauryna + magnez: łagodzi skurcze' },
+    ],
+    studies: [
+      { title: 'Clenbuterol effects in skeletal muscle: animal and human evidence', authors: 'Spann C, Winter ME.', journal: 'Ann Pharmacother. 1995;29(1):75-77.', pmid: '7741001' },
+      { title: 'Effects of clenbuterol on cardiac and skeletal muscle', authors: 'Burniston JG, Tan LB, Goldspink DF.', journal: 'Med Sci Sports Exerc. 2006;38(3):425-433.', pmid: '16540829' },
+      { title: 'Clenbuterol toxicity: an emerging epidemic', authors: 'Daubert GP, Mabasa VH, Leung VW, Aaron C.', journal: 'J Med Toxicol. 2007;3(2):56-60.', pmid: '18072144' },
+      { title: 'Cardiotoxicity of clenbuterol: case series and review', authors: 'Hoffman RJ, Hoffman RS, Freyberg CL et al.', journal: 'Clin Toxicol (Phila). 2008;46(2):160-164.', pmid: '17597361' },
+    ],
+    faq: [
+      { q: { hu: 'Tényleg izomtömeg-növelő?', en: 'Does it really build muscle?', pl: 'Czy naprawdę buduje masę?' }, a: { hu: 'Részben. Az állatkísérletekben (Spann 1995, Burniston 2006) Clenbuterol szignifikáns 2-es típusú izomrost hipertrófiát okoz. Emberi vizsgálatok hiányosak. Bodybuilding-tapasztalat szerint az izom-megtartás kalória-deficitben markánsabb mint az izomtömeg-növelés.', en: 'Partially. Animal studies (Spann 1995, Burniston 2006) show Clenbuterol significantly hypertrophies type 2 fibers. Human studies are sparse. Bodybuilding experience suggests muscle sparing in caloric deficit is more pronounced than mass gain.', pl: 'Częściowo. Badania na zwierzętach pokazują znaczną hipertrofię włókien typu 2. Badania ludzkie są skąpe. W kulturystyce ochrona masy w deficycie jest bardziej wyraźna niż przyrost.' } },
+      { q: { hu: 'Miért hosszú a felezési ideje?', en: 'Why is the half-life so long?', pl: 'Dlaczego okres półtrwania jest długi?' }, a: { hu: 'A Clenbuterol lipofil (zsíroldékony) és β2-receptor-affinitása erős, így a szervezetben akkumulálódik. 35-40 órás felezési idő miatt akár egyszer napi dosing is működik, de a tachyphylaxis 1-2 hét alatt kialakul, és a kardiotoxikus akkumuláció kockázata komoly.', en: 'Clenbuterol is lipophilic (fat-soluble) with strong β2-receptor affinity, accumulating in the body. The 35-40 h half-life makes once-daily dosing possible, but tachyphylaxis develops in 1-2 weeks and cardiotoxic accumulation risk is serious.', pl: 'Clenbuterol jest lipofilny i ma silne powinowactwo do receptora β2, kumulując się. Okres półtrwania 35-40 godzin umożliwia dawkowanie raz dziennie, ale tachyfilaksja rozwija się w 1-2 tygodnie, a ryzyko kumulacji jest poważne.' } },
+      { q: { hu: 'Mi a "Clen szívizom-hipertrófia"?', en: 'What is "Clen cardiac hypertrophy"?', pl: 'Czym jest "przerost serca od Clena"?' }, a: { hu: 'Krónikus Clenbuterol-használat (>8 hét) bal kamrai szívizom-hipertrófiát (LVH) okoz állatkísérletekben (Burniston 2006), és klinikai esetszinten emberi kardiomiopátia esetek dokumentáltak (Hoffman 2008). Az 6-8 hetes ciklus + 2 hetes OFF protokoll célja ezt megelőzni.', en: 'Chronic Clenbuterol use (>8 weeks) causes left ventricular cardiac hypertrophy (LVH) in animal studies (Burniston 2006), with human cardiomyopathy case reports (Hoffman 2008). The 6-8 week cycle + 2 week OFF protocol aims to prevent this.', pl: 'Przewlekłe stosowanie Clenbuterolu (>8 tygodni) powoduje hipertrofię lewej komory w badaniach na zwierzętach (Burniston 2006), z doniesieniami klinicznymi o kardiomiopatii u ludzi. Protokół 6-8 tygodni + 2 tygodnie OFF ma temu zapobiec.' } },
+      { q: { hu: 'Miért NE pulzál a saját pulzusod >100?', en: 'Why should resting pulse not exceed 100?', pl: 'Dlaczego puls spoczynkowy nie powinien przekraczać 100?' }, a: { hu: 'A tartós nyugalmi tachykardia (>100 bpm) krónikus β1-stimuláció jele, ami szívizom-stresszt okoz. >100 bpm fennállása esetén dóziscsökkentés vagy ciklus-megszakítás indikálva.', en: 'Persistent resting tachycardia (>100 bpm) signals chronic β1 stimulation causing cardiac muscle stress. If >100 bpm persists, dose reduction or cycle interruption is indicated.', pl: 'Stała tachykardia spoczynkowa (>100 bpm) sygnalizuje przewlekłą stymulację β1 wywołującą stres mięśnia sercowego. Przy utrzymującym się >100 bpm wskazane zmniejszenie dawki lub przerwa.' } },
+    ],
+    related: ['albuterol', 'ephedrine', 'yohimbine'],
+  },
+
+  // ===== 9. ALBUTEROL (Salbutamol) =====
+  {
+    id: 'albuterol',
+    name: 'Albuterol',
+    image: null,
+    accentColor: '#06b6d4',
+    tagColor: 'rgba(6,182,212,0.18)',
+    shortDesc: {
+      hu: 'FDA-approved szelektív β2-agonist asztma-Rx (Ventolin). Rövidebb felezésű, biztonságosabb Clenbuterol-alternatíva.',
+      en: 'FDA-approved selective β2-agonist asthma Rx (Ventolin). Shorter half-life, safer Clenbuterol alternative.',
+      pl: 'Selektywny agonista β2 dla astmy zatwierdzony przez FDA (Ventolin). Krótszy okres półtrwania, bezpieczniejsza alternatywa.',
+    },
+    description: {
+      hu: 'Az Albuterol (nemzetközi nevén Salbutamol) egy rövid-hatású szelektív β2-adrenoceptor agonista, az 1980-as évek óta az asztma elsővonalas akut-kezelési szere (FDA-engedélyezett Ventolin/ProAir inhaláló). Globálisan az egyik leggyakrabban felírt gyógyszer. A bodybuilding off-label használatában a Clenbuterol-hoz hasonló thermogenikus + izom-megtartó hatást fejt ki, de jelentősen rövidebb felezési idővel (~5-6 óra vs Clen 35-40 óra), ami biztonságosabb akkumuláció-profilt eredményez. WADA inhaláló-használata <1600 μg/24 óra megengedett, oral/injekciós használat tiltott.',
+      en: 'Albuterol (international name Salbutamol) is a short-acting selective β2-adrenoceptor agonist, the first-line acute asthma treatment since the 1980s (FDA-approved Ventolin/ProAir inhaler). Globally one of the most-prescribed drugs. In off-label bodybuilding use it has similar thermogenic + muscle-sparing effects to Clenbuterol but with significantly shorter half-life (~5-6 h vs Clen 35-40 h), giving a safer accumulation profile. WADA permits inhaled use up to 1600 μg/24 h; oral/injectable use is banned.',
+      pl: 'Albuterol (międzynarodowo Salbutamol) to krótko działający selektywny agonista β2, pierwszorzędne leczenie ostrej astmy od lat 1980. (zatwierdzony FDA inhalator Ventolin/ProAir). Globalnie jeden z najczęściej przepisywanych leków. W off-label kulturystyce ma podobne efekty termogeniczne + ochrony mięśni jak Clenbuterol, ale ze znacznie krótszym okresem półtrwania (~5-6 h vs Clen 35-40 h). WADA dopuszcza inhalację do 1600 μg/24h.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' }, value: { hu: 'Szelektív β2-adrenoceptor agonista', en: 'Selective β2-adrenoceptor agonist', pl: 'Selektywny agonista β2' } },
+      { label: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, value: { hu: '5-6 óra (oral), 1.5-3 óra (inhaláló)', en: '5-6 h (oral), 1.5-3 h (inhaled)', pl: '5-6 godz (doustnie), 1.5-3 godz (inhalacja)' } },
+      { label: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Czas wystąpienia' }, value: { hu: '5-15 perc (inhaláló), 15-30 perc (oral)', en: '5-15 min (inhaled), 15-30 min (oral)', pl: '5-15 min (inhalacja), 15-30 min (doustnie)' } },
+      { label: { hu: 'Jogi státusz', en: 'Legal status', pl: 'Status prawny' }, value: { hu: 'USA: FDA Rx (Ventolin/ProAir). HU/EU: Rx (Ventolin). WADA: inhaláló <1600 μg engedett.', en: 'USA: FDA Rx (Ventolin/ProAir). HU/EU: Rx (Ventolin). WADA: inhaled <1600 μg permitted.', pl: 'USA: FDA Rx. UE: na receptę (Ventolin). WADA: inhalacja <1600 μg dozwolone.' } },
+    ],
+    mechanism: {
+      hu: 'Szelektív β2-adrenoceptor agonista, légúti simaizmot ellazítja (bronchodilatáció). Mellékhatásként a zsírszöveti lipolízist és thermogenezist β2-UCP1 mechanizmuson keresztül emeli. Anabolikus hatás vázizomban szerényebb mint a Clenbuterol-nál, mert a rövidebb felezési idő miatt nem akkumulálódik.',
+      en: 'Selective β2-adrenoceptor agonist that relaxes airway smooth muscle (bronchodilation). As a side effect, it raises adipose lipolysis and thermogenesis via the β2-UCP1 pathway. Anabolic effect in skeletal muscle is more modest than Clenbuterol because the shorter half-life prevents accumulation.',
+      pl: 'Selektywny agonista β2 rozluźniający mięśnie gładkie dróg oddechowych. Jako efekt uboczny podnosi lipolizę i termogenezę przez szlak β2-UCP1. Efekt anaboliczny skromniejszy niż Clenbuterol z powodu braku kumulacji.',
+    },
+    legalStatus: {
+      hu: 'USA: FDA Rx (Ventolin, ProAir, Proventil). EU: Rx, Magyarországon gyógyszertári forgalom. WADA: inhalációs használat <1600 μg/24 óra megengedett, oral/intravénás tiltott.',
+      en: 'USA: FDA Rx (Ventolin, ProAir, Proventil). EU: Rx, available in pharmacies. WADA: inhaled use up to 1600 μg/24 h permitted, oral/IV banned.',
+      pl: 'USA: FDA Rx. UE: na receptę, dostępny w aptekach. WADA: inhalacja do 1600 μg/24h dozwolona, doustnie/dożylnie zakazane.',
+    },
+    onsetTime: '5-15 min (inhaled), 15-30 min (oral)',
+    halfLife: '5-6 h (oral)',
+    interactionsWith: ['caffeine', 'beta-blockers', 'MAOI', 'tricyclic antidepressants'],
+    wadaStatus: 'monitored',
+    detectionWindow: {
+      hu: '24-72 óra vizelet (WADA threshold: 1000 ng/mL).',
+      en: '24-72 hours urine (WADA threshold: 1000 ng/mL).',
+      pl: '24-72 godziny mocz (próg WADA: 1000 ng/mL).',
+    },
+    benefits: [
+      { hu: 'Bronchodilatáció (asztma akut-tüneti kezelés)', en: 'Bronchodilation (asthma acute symptom treatment)', pl: 'Rozszerzenie oskrzeli (leczenie objawowe astmy)' },
+      { hu: 'Mérsékelt thermogenikus hatás (BMR +3-5%)', en: 'Moderate thermogenic effect (BMR +3-5%)', pl: 'Umiarkowany efekt termogeniczny (BMR +3-5%)' },
+      { hu: 'Izom-megtartás kalória-deficitben (anti-katabolikus, kevésbé markáns mint Clen)', en: 'Muscle sparing in caloric deficit (anti-catabolic, less pronounced than Clen)', pl: 'Ochrona masy w deficycie (mniej wyraźna niż Clen)' },
+      { hu: 'Biztonságosabb akkumuláció-profil mint Clenbuterol (rövidebb felezési idő)', en: 'Safer accumulation profile than Clenbuterol (shorter half-life)', pl: 'Bezpieczniejszy profil kumulacji niż Clenbuterol' },
+    ],
+    quickStart: [
+      { hu: 'Edukatív kontextus: Albuterol FDA-engedélyezett asztma-Rx, oral/fat-loss használat off-label', en: 'Educational context: Albuterol is FDA-approved asthma Rx; oral/fat-loss use is off-label', pl: 'Kontekst edukacyjny: Albuterol to Rx dla astmy (FDA); doustne off-label' },
+      { hu: 'Oral dosing: 4-8 mg/3x napi (Clen-szerű ciklus), max 24 mg/nap', en: 'Oral dosing: 4-8 mg 3x daily (Clen-like cycle), max 24 mg/day', pl: 'Doustnie: 4-8 mg 3x dziennie (cykl Clen-podobny), maks. 24 mg/dzień' },
+      { hu: 'Inhaláló: 90-200 μg/szippantás, maximum 1600 μg/24 óra WADA-szintnél', en: 'Inhaler: 90-200 μg/puff, max 1600 μg/24 h at WADA level', pl: 'Inhalator: 90-200 μg/dawka, maks. 1600 μg/24h przy WADA' },
+      { hu: 'Maximum 4-6 hét folyamatos használat (toleráncia)', en: 'Maximum 4-6 weeks continuous use (tolerance)', pl: 'Maks. 4-6 tygodni ciągłego użycia (tolerancja)' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: 'Enyhébb hatás mint Clenbuterol-nál: remegés van, de kisebb intenzitású; szívverés-emelés +10-15 bpm.', en: 'Milder effect than Clenbuterol: tremor present but lower intensity; heart rate rise +10-15 bpm.', pl: 'Łagodniejszy niż Clenbuterol: drżenie obecne ale słabsze; wzrost tętna +10-15 bpm.' } },
+      { label: { hu: '1-2. hét', en: 'Week 1-2', pl: 'Tydzień 1-2' }, body: { hu: 'Toleráncia gyors (akut hatás csökken). Zsírvesztés tempó +0.2-0.3 kg/hét placebo felett.', en: 'Tolerance develops fast. Fat loss pace +0.2-0.3 kg/week above placebo.', pl: 'Tolerancja rozwija się szybko. Redukcja +0.2-0.3 kg/tydz powyżej placebo.' } },
+      { label: { hu: '4-6. hét', en: 'Week 4-6', pl: 'Tydzień 4-6' }, body: { hu: 'Ciklus-megszakítás javasolt 1-2 hét OFF. Albuterol biztonságosabb mint Clen tartós használatra, de kardio-monitoring így is ajánlott.', en: 'Cycle break recommended, 1-2 weeks OFF. Albuterol is safer than Clen for sustained use, but cardio monitoring still recommended.', pl: 'Przerwa cyklu 1-2 tygodnie OFF. Albuterol bezpieczniejszy niż Clen, ale monitoring zalecany.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Tiszta Ventolin/ProAir inhaláló vagy Salbutamol HCl tabletta gyógyszertárból', en: 'Pure Ventolin/ProAir inhaler or Salbutamol HCl tablet from pharmacy', pl: 'Czysty inhalator Ventolin/ProAir lub tabletka z apteki' },
+        { hu: 'A hivatalos pharmacy forrás biztosítja a hatóanyagtartalmat (eltérően az UGL clenbuteroltól)', en: 'Official pharmacy source guarantees content (unlike UGL clenbuterol)', pl: 'Oficjalne źródło apteczne gwarantuje zawartość' },
+      ],
+      caution: [
+        { hu: 'Kardio-monitoring ajánlott: vérnyomás napló, nyugalmi pulzus <100', en: 'Cardio monitoring recommended: BP log, resting HR <100', pl: 'Monitoring sercowy: dziennik ciśnienia, tętno spoczynkowe <100' },
+        { hu: 'Remegés (tremor), izomgörcs (taurin + magnézium szuplementálás enyhíti)', en: 'Tremor, muscle cramps (taurine + magnesium eases)', pl: 'Drżenie, skurcze (tauryna + magnez łagodzi)' },
+        { hu: 'Hypokalaemia: szérum kálium-csökkenés, főleg magas dózison', en: 'Hypokalaemia: serum potassium drop, especially at high dose', pl: 'Hipokaliemia: spadek potasu, szczególnie przy wysokich dawkach' },
+        { hu: 'Insomnia, anxietás (de enyhébb mint Clen)', en: 'Insomnia, anxiety (milder than Clen)', pl: 'Bezsenność, lęk (łagodniejsze niż Clen)' },
+      ],
+      avoid: [
+        { hu: 'Kardio-zavar (aritmia, súlyos hipertónia) kontraindikáció', en: 'Cardiac disorder (arrhythmia, severe hypertension) is a contraindication', pl: 'Zaburzenia sercowe (arytmia, ciężkie nadciśnienie) to przeciwwskazania' },
+        { hu: 'β-blokkoló-terápiával kontraindikált', en: 'Contraindicated with β-blocker therapy', pl: 'Przeciwwskazany z terapią β-blokerami' },
+        { hu: 'Hyperthyreosis, glaukóma kontraindikáció', en: 'Hyperthyroidism, glaucoma are contraindications', pl: 'Nadczynność tarczycy, jaskra to przeciwwskazania' },
+      ],
+    },
+    interactions: [
+      { hu: 'Caffeine: szinergisztikus stimuláns hatás, kardio-stressz fokozódik', en: 'Caffeine: synergistic stimulant effect, cardio stress amplifies', pl: 'Kofeina: synergiczny efekt, stres rośnie' },
+      { hu: 'β-blokkoló: blokkolja az Albuterol bronchodilatáló hatását (kontraindikált asztmás betegnél)', en: 'β-blocker: blocks Albuterol bronchodilator effect (contraindicated in asthma patient)', pl: 'β-bloker: blokuje efekt (przeciwwskazany u astmatyka)' },
+      { hu: 'MAOI: tachykardia + hipertenzív krízis kockázat', en: 'MAOI: tachycardia + hypertensive crisis risk', pl: 'MAOI: ryzyko tachykardii i kryzysu nadciśnieniowego' },
+      { hu: 'Diuretikum (thiazid, furosemid): hypokalaemia kombinált kockázat', en: 'Diuretic (thiazide, furosemide): combined hypokalaemia risk', pl: 'Diuretyk: skumulowane ryzyko hipokaliemii' },
+    ],
+    studies: [
+      { title: 'Selective beta-2-adrenoceptor agonists for asthma: a review', authors: 'Cazzola M, Page CP, Calzetta L, Matera MG.', journal: 'Pharmacol Rev. 2012;64(3):450-504.', pmid: '22611179' },
+      { title: 'Salbutamol and human performance: pharmacology and effects', authors: 'Pluim BM, de Hon O, Staal JB et al.', journal: 'Sports Med. 2011;41(1):39-57.', pmid: '21142283' },
+      { title: 'Oral salbutamol and skeletal muscle: a meta-analysis', authors: 'Le Panse B, Collomp K, Portier H et al.', journal: 'Int J Sports Med. 2005;26(7):514-520.', pmid: '16195983' },
+      { title: 'Asthma medications and athletic performance', authors: 'Kindermann W.', journal: 'Sports Med. 2007;37(2):95-102.', pmid: '17241101' },
+    ],
+    faq: [
+      { q: { hu: 'Mi a különbség Clenbuterollal szemben?', en: 'How does it differ from Clenbuterol?', pl: 'Czym różni się od Clenbuterolu?' }, a: { hu: 'Mindkettő szelektív β2-agonist, de az Albuterol felezési ideje 5-6 óra, a Clenbuterolé 35-40 óra. Az Albuterol biztonságosabb akkumuláció-profillal, és nincs dokumentált klinikai szívizom-hipertrófia kockázat normál dózison. Anabolikus hatása szerényebb (rövidebb hatástartam miatt).', en: 'Both are selective β2 agonists, but Albuterol half-life is 5-6 h vs Clenbuterol 35-40 h. Albuterol has a safer accumulation profile with no documented clinical cardiac hypertrophy at normal doses. Anabolic effect is more modest.', pl: 'Oba są selektywnymi agonistami β2, ale Albuterol ma okres półtrwania 5-6 h vs Clenbuterol 35-40 h. Albuterol ma bezpieczniejszy profil i brak udokumentowanej hipertrofii serca przy normalnych dawkach. Efekt anaboliczny skromniejszy.' } },
+      { q: { hu: 'Mit jelent a WADA "monitored" státusz?', en: 'What does WADA "monitored" status mean?', pl: 'Co oznacza status "monitorowany" WADA?' }, a: { hu: 'Az Albuterol inhalációs használata 1600 μg/24 óráig megengedett anti-asztma kontextusban, FEL ALATT a vizelet-koncentráció <1000 ng/mL. Oral vagy intravénás használat tiltott. A "monitored" jelzi, hogy a WADA figyeli a használati mintázatokat és határértékeket frissítheti.', en: 'Inhaled Albuterol up to 1600 μg/24 h is permitted in anti-asthma context, provided urine concentration is <1000 ng/mL. Oral or IV use is banned. "Monitored" indicates WADA tracks use patterns and may update thresholds.', pl: 'Inhalacyjny Albuterol do 1600 μg/24h dozwolony w kontekście astmy, pod warunkiem stężenia w moczu <1000 ng/mL. Doustnie/dożylnie zakazany. "Monitorowany" oznacza, że WADA śledzi wzorce.' } },
+      { q: { hu: 'Tényleg biztonságosabb mint Clen?', en: 'Is it really safer than Clen?', pl: 'Czy jest naprawdę bezpieczniejszy niż Clen?' }, a: { hu: 'Igen, dokumentáltan. A rövidebb felezési idő miatt nem akkumulálódik, így a kardiotoxikus hosszú-távú hatások jelentősen csökkennek. Klinikai esetszinten az Albuterol intoxikáció rendkívül ritka még magas dózison is, míg Clenbuterol-mérgezés és kardiomiopátia esetek dokumentáltak (Hoffman 2008).', en: 'Yes, documented. Shorter half-life prevents accumulation, significantly reducing cardiotoxic long-term effects. Albuterol intoxication is extremely rare clinically even at high doses, while Clenbuterol toxicity and cardiomyopathy cases are documented (Hoffman 2008).', pl: 'Tak, udokumentowane. Krótszy okres półtrwania zapobiega kumulacji. Intoksykacja Albuterolem jest klinicznie bardzo rzadka nawet przy wysokich dawkach, podczas gdy toksyczność i kardiomiopatia od Clenbuterolu są udokumentowane.' } },
+    ],
+    related: ['clenbuterol', 'ephedrine'],
+  },
 ]
 
 export const EXTRA_PERFORMANCE = [

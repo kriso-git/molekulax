@@ -22,6 +22,10 @@ export const PERFORMANCE_CATEGORIES = {
   'superdrol':         ['prohormones'],
   '1-andro':           ['prohormones'],
   // Task 8 (Stim + Bronch CORE)
+  'ephedrine':         ['stimulants'],
+  'yohimbine':         ['stimulants'],
+  'clenbuterol':       ['bronchodilators', 'stimulants'],
+  'albuterol':         ['bronchodilators'],
   // Task 9 (Növekedés CORE + EXTRA)
 }
 
