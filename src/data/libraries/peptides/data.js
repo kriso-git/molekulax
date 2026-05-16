@@ -53,19 +53,7 @@ const ppEntry = ({
  year: studyYear, pmid: studyPmid || null, url: studyUrl,
  finding: { hu: findingHu, en: findingEn, pl: findingPl },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: tagBg, tagText: accent,
- title: `${name}, összefoglaló (Pep-Pedia)`,
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org', year: '2025', pmid: null,
- url: `https://pep-pedia.org/peptides/${slug}`,
- finding: {
- hu: `Naprakész szakirodalmi összefoglaló a ${name} hatásmechanizmusairól, dózistartományairól és klinikai/kutatási kontextusáról.`,
- en: `Up-to-date literature summary of ${name} mechanisms, dose ranges and clinical/research context.`,
- pl: `Aktualne podsumowanie literatury o mechanizmach, zakresach dawkowania i kontekście klinicznym/badawczym ${name}.`,
- },
- },
+
  ].filter(Boolean),
 })
 
@@ -1324,22 +1312,7 @@ const CORE_PEPTIDES = [
  pl: 'Miejscowy GHK-Cu znacząco zmniejszył wypadanie włosów i zwiększył gęstość włosów względem placebo.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(6,182,212,0.18)',
- tagText: '#67e8f9',
- title: 'GHK-Cu, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/ghk-cu',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a GHK-Cu mechanizmusairól, dózistartományairól és klinikai eredményeiről.',
- en: 'Up-to-date literature summary of GHK-Cu mechanisms, dose ranges and clinical outcomes.',
- pl: 'Aktualne podsumowanie literatury dotyczące mechanizmów GHK-Cu, zakresów dawkowania i wyników klinicznych.',
- },
- },
+
  ],
  },
 
@@ -1431,22 +1404,7 @@ const CORE_PEPTIDES = [
  pl: 'Potrójna agonia GIP/GLP-1/glukagonu synergicznie zmniejsza masę ciała i poprawia profil lipidowy.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(110,231,183,0.18)',
- tagText: '#6ee7b7',
- title: 'Retatrutide, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/retatrutide',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a retatrutide klinikai eredményeiről, biztonsági profiljáról és dózis-titrálási sémáiról.',
- en: 'Up-to-date literature summary of retatrutide clinical outcomes, safety profile and dose-titration schemes.',
- pl: 'Aktualne podsumowanie literatury dotyczące wyników klinicznych retatrutydu, profilu bezpieczeństwa i schematów titracji.',
- },
- },
+
  ],
  },
 
@@ -1538,22 +1496,7 @@ const CORE_PEPTIDES = [
  pl: 'Modulacja układu dopaminergicznego i serotoninergicznego; ochrona tkanki nerwowej przed niedokrwieniem i urazem.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(99,102,241,0.18)',
- tagText: '#818cf8',
- title: 'BPC-157, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/bpc-157',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a BPC-157 hatásmechanizmusairól, biztonsági profiljáról és protokoll-mintáiról.',
- en: 'Up-to-date literature summary of BPC-157 mechanisms of action, safety profile and dosing patterns.',
- pl: 'Aktualne podsumowanie literatury o mechanizmach BPC-157, profilu bezpieczeństwa i schematach dawkowania.',
- },
- },
+
  ],
  },
 
@@ -1645,22 +1588,7 @@ const CORE_PEPTIDES = [
  pl: 'Kompleksowy przegląd struktury Tβ4 oraz zastosowań w gojeniu ran i kardiologii.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(139,92,246,0.18)',
- tagText: '#a78bfa',
- title: 'TB-500, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/tb-500',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a TB-500 / Tβ4 protokollmintáiról és kockázatprofiljáról.',
- en: 'Up-to-date literature summary of TB-500 / Tβ4 dosing patterns and risk profile.',
- pl: 'Aktualne podsumowanie literatury o schematach dawkowania TB-500 / Tβ4 i profilu ryzyka.',
- },
- },
+
  ],
  },
 
@@ -1735,22 +1663,7 @@ const CORE_PEPTIDES = [
  pl: 'Kompleksowy przegląd skuteczności i bezpieczeństwa CJC-1295, ipamoreliny i innych GHS, działania niepożądane i zakresy dawkowania.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(217,119,6,0.18)',
- tagText: '#fcd34d',
- title: 'CJC-1295, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/cjc-1295',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló CJC-1295-DAC vs. Mod GRF 1-29 protokollokról és farmakokinetikájáról.',
- en: 'Up-to-date literature summary of CJC-1295-DAC vs. Mod GRF 1-29 protocols and pharmacokinetics.',
- pl: 'Aktualne podsumowanie literatury o protokołach CJC-1295-DAC vs. Mod GRF 1-29 i farmakokinetyce.',
- },
- },
+
  ],
  },
 
@@ -1826,22 +1739,7 @@ const CORE_PEPTIDES = [
  pl: 'Przegląd skuteczności i bezpieczeństwa ipamoreliny oraz pokrewnych GHS na podstawie danych klinicznych.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(20,184,166,0.18)',
- tagText: '#5eead4',
- title: 'Ipamorelin, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/ipamorelin',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló az ipamorelin szelektivitásáról, dózisaitól és kombinációs (CJC-1295) protokolljairól.',
- en: 'Up-to-date literature summary of ipamorelin selectivity, doses and combination (CJC-1295) protocols.',
- pl: 'Aktualne podsumowanie literatury o selektywności ipamoreliny, dawkach i protokołach łączonych (CJC-1295).',
- },
- },
+
  ],
  },
 
@@ -1917,22 +1815,7 @@ const CORE_PEPTIDES = [
  pl: 'Znaczący wzrost pigmentacji skóry analogiem α-MSH u zdrowych ochotników, z minimalnymi działaniami niepożądanymi.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(245,158,11,0.18)',
- tagText: '#fbbf24',
- title: 'Melanotan-2, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/melanotan-2',
- finding: {
- hu: 'Adagolási sémák, mellékhatás-profil és farmakokinetikai paraméterek strukturált összefoglalója.',
- en: 'Structured summary of dosing schemes, side-effect profile and pharmacokinetic parameters.',
- pl: 'Uporządkowane podsumowanie schematów dawkowania, profilu działań niepożądanych i parametrów farmakokinetycznych.',
- },
- },
+
  ],
  },
 
@@ -2008,22 +1891,7 @@ const CORE_PEPTIDES = [
  pl: '52-tygodniowe rozszerzenie open-label: utrzymana poprawa objawów HSDD, działania niepożądane słabnące w czasie.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(244,63,94,0.18)',
- tagText: '#fda4af',
- title: 'PT-141 (bremelanotide), összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/pt-141',
- finding: {
- hu: 'Naprakész összefoglaló a bremelanotid mechanizmusáról, FDA dóziséről és antiemetikus előkezelési ajánlásokról.',
- en: 'Up-to-date summary of bremelanotide mechanism, FDA dose and antiemetic pretreatment recommendations.',
- pl: 'Aktualne podsumowanie mechanizmu bremelanotydu, dawki FDA i zaleceń wstępnego leczenia przeciwwymiotnego.',
- },
- },
+
  ],
  },
 
@@ -2098,22 +1966,7 @@ const CORE_PEPTIDES = [
  pl: 'Przegląd bezpieczeństwa i skuteczności sermoreliny oraz innych analogów GHRH na podstawie dowodów klinicznych.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(168,85,247,0.18)',
- tagText: '#c084fc',
- title: 'Sermorelin, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/sermorelin',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a szermórelin GHRH(1-29) hatásmechanizmusáról és terápiás dózissávjairól.',
- en: 'Up-to-date literature summary of sermorelin GHRH(1-29) mechanism of action and therapeutic dose ranges.',
- pl: 'Aktualne podsumowanie literatury o mechanizmie GHRH(1-29) sermoreliny i terapeutycznych zakresach dawkowania.',
- },
- },
+
  ],
  },
 
@@ -2188,22 +2041,7 @@ const CORE_PEPTIDES = [
  pl: 'W ludzkich fibroblastach leczenie Epitalonem wydłużyło telomery o 33% i komórki dzieliły się o 10 generacji dłużej niż kontrole.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(161,98,7,0.18)',
- tagText: '#fde68a',
- title: 'Epithalon, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org',
- year: '2025',
- pmid: null,
- url: 'https://pep-pedia.org/peptides/epithalon',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló az Epithalon dózisciklusairól, telomeráz-aktivációs mechanizmusáról és klinikai vitáiról.',
- en: 'Up-to-date literature summary of Epithalon dose cycles, telomerase activation mechanism and clinical controversies.',
- pl: 'Aktualne podsumowanie literatury o cyklach dawkowania Epitalonu, mechanizmie aktywacji telomerazy i kontrowersjach klinicznych.',
- },
- },
+
  ],
  },
 
@@ -2288,19 +2126,7 @@ const CORE_PEPTIDES = [
  pl: 'Po intensywnej interwencji stylu życia tyrzepatyd przyniósł dodatkowe 18,4% redukcji masy w 72 tygodnie.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(251,146,60,0.18)', tagText: '#fb923c',
- title: 'Tirzepatide, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org', year: '2025', pmid: null,
- url: 'https://pep-pedia.org/peptides/tirzepatide',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a tirzepatide klinikai eredményeiről, biztonsági profiljáról és titrálási sémáiról.',
- en: 'Up-to-date literature summary of tirzepatide clinical outcomes, safety profile and titration schedules.',
- pl: 'Aktualne podsumowanie literatury o wynikach klinicznych, profilu bezpieczeństwa i titracji tyrzepatydu.',
- },
- },
+
  ],
  },
 
@@ -2372,19 +2198,7 @@ const CORE_PEPTIDES = [
  pl: 'GH zwiększa beztłuszczową masę ciała, ale nie poprawia konsekwentnie wydolności u zdrowych dorosłych.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(252,211,77,0.18)', tagText: '#fcd34d',
- title: 'HGH (Somatropin), összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org', year: '2025', pmid: null,
- url: 'https://pep-pedia.org/peptides/hgh',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a rekombináns HGH adagolásáról, mellékhatásairól és klinikai indikációiról.',
- en: 'Up-to-date literature summary of recombinant HGH dosing, side effects and clinical indications.',
- pl: 'Aktualne podsumowanie literatury o dawkowaniu, działaniach niepożądanych i wskazaniach rhGH.',
- },
- },
+
  ],
  },
 
@@ -2456,19 +2270,7 @@ const CORE_PEPTIDES = [
  pl: 'Ipamorelin selektywnie stymuluje wydzielanie GH bez istotnego wzrostu ACTH/kortyzolu.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(167,139,250,0.18)', tagText: '#a78bfa',
- title: 'CJC-1295 / Ipamorelin stack, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org', year: '2025', pmid: null,
- url: 'https://pep-pedia.org/peptides/cjc-1295-ipamorelin',
- finding: {
- hu: 'Naprakész összefoglaló a GHRH + GHRP kombináció hatásmechanizmusáról és dózisstratégiáiról.',
- en: 'Up-to-date summary of the GHRH + GHRP combination mechanism and dosing strategies.',
- pl: 'Aktualne podsumowanie mechanizmu i strategii dawkowania kombinacji GHRH + GHRP.',
- },
- },
+
  ],
  },
 
@@ -2539,19 +2341,7 @@ const CORE_PEPTIDES = [
  pl: 'Tesamorelin daje trwałą redukcję VAT i korzystne efekty metaboliczne przez 52 tygodnie przy dobrej tolerancji.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(52,211,153,0.18)', tagText: '#34d399',
- title: 'Tesamorelin, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org', year: '2025', pmid: null,
- url: 'https://pep-pedia.org/peptides/tesamorelin',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a tesamorelin hatásmechanizmusáról, klinikai eredményeiről és dózisstratégiáiról.',
- en: 'Up-to-date literature summary of tesamorelin mechanism, clinical outcomes and dosing strategies.',
- pl: 'Aktualne podsumowanie literatury o mechanizmie, wynikach klinicznych i strategiach dawkowania tesamoreliny.',
- },
- },
+
  ],
  },
 
@@ -2623,19 +2413,7 @@ const CORE_PEPTIDES = [
  pl: 'Aktywność synaptogeniczna i efekty poznawcze analogów AngIV, w tym dihexy, w modelach gryzoni.',
  },
  },
- {
- tag: { hu: 'Pep-Pedia', en: 'Pep-Pedia', pl: 'Pep-Pedia' },
- tagColor: 'rgba(244,114,182,0.18)', tagText: '#f472b6',
- title: 'Dihexa, összefoglaló (Pep-Pedia)',
- authors: 'Pep-Pedia szerkesztőség',
- journal: 'pep-pedia.org', year: '2025', pmid: null,
- url: 'https://pep-pedia.org/peptides/dihexa',
- finding: {
- hu: 'Naprakész szakirodalmi összefoglaló a Dihexa mechanizmusairól, biztonsági profiljáról és kutatási adagolási tartományairól.',
- en: 'Up-to-date literature summary of dihexa mechanisms, safety profile and research dose ranges.',
- pl: 'Aktualne podsumowanie literatury o mechanizmach, bezpieczeństwie i zakresach dawkowania dihexy.',
- },
- },
+
  ],
  },
 ]
