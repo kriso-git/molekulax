@@ -14,6 +14,9 @@ export const EXPLICIT_LEVEL = {
   semaglutide:  4,
   atorvastatin: 5,
   tadalafil:    4,
+  sertralin:    5,
+  bupropion:    4,
+  modafinil:    4,
 }
 
 /**

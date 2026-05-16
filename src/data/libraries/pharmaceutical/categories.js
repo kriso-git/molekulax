@@ -19,6 +19,9 @@ export const PHARMACEUTICAL_CATEGORIES = {
   semaglutide:  ['metabolic'],
   atorvastatin: ['cardio'],
   tadalafil:    ['cardio'],
+  sertralin:    ['psychiatry'],
+  bupropion:    ['psychiatry'],
+  modafinil:    ['psychiatry'],
 }
 
 export function getPharmaceuticalCategories(entryId) {
