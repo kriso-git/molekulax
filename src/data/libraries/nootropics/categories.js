@@ -12,8 +12,20 @@ export const CATEGORIES = [
 ]
 
 // Map: entry-id → array of category-ids it belongs to.
-// Populated in Task 6-7 as entries are added. Phase 5 skeleton: empty.
-export const NOOTROPIC_CATEGORIES = {}
+// Task 6 added the 10 CORE entries; Task 7 will extend this map for ~35 EXTRA.
+export const NOOTROPIC_CATEGORIES = {
+  // CORE (Task 6)
+  'piracetam':       ['racetams'],
+  'modafinil':       ['eugeroics'],
+  'noopept':         ['racetams'],
+  'phenylpiracetam': ['racetams', 'dopaminergic'],
+  'adrafinil':       ['eugeroics'],
+  'bromantane':      ['dopaminergic', 'adaptogens'],
+  'nsi-189':         ['neuroprotective'],
+  'semax':           ['neuroprotective'],
+  'selank':          ['anxiolytics', 'neuroprotective'],
+  '9-me-bc':         ['dopaminergic'],
+}
 
 export function getNootropicCategories(entryId) {
   return NOOTROPIC_CATEGORIES[entryId] || []

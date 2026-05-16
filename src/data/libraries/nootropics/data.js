@@ -538,4 +538,353 @@ export const NOOTROPICS = [
     ],
     related: ['9-me-bc', 'selank', 'semax', 'noopept'],
   },
+
+  // ── CORE #7: NSI-189 ───────────────────────────────────────────────────────
+  {
+    id: 'nsi-189',
+    name: 'NSI-189',
+    image: null,
+    accentColor: '#00ff99',
+    tagColor: 'rgba(0,255,153,0.18)',
+    shortDesc: {
+      hu: 'Hippocampus-szelektív neurogenezis-induktor. Neuralstem Phase 1b/2 klinikai vizsgálatok depresszióra.',
+      en: 'Hippocampus-selective neurogenesis inducer. Neuralstem Phase 1b/2 clinical trials for depression.',
+      pl: 'Selektywny induktor neurogenezy hipokampu. Neuralstem Phase 1b/2 — badania nad depresją.',
+    },
+    description: {
+      hu: 'Az NSI-189 egy benzilpiperazin-aminopiridin származék, amelyet a Neuralstem Inc. fejlesztett ki hippocampus-szelektív neurogenezis-induktorként. Phase 1b/2 klinikai vizsgálatok major depressziós zavarra (MDD) és poszttraumás stressz-zavarra (PTSD) zajlottak. Hatásmechanizmusa nem teljesen ismert, de a hippocampus szubgranuláris zónájában a neuronális progenitor sejtek proliferációját és differenciációját indukálja. Nem növeli az ismert monoamine-receptorok aktivitását — független az SSRI/SNRI mechanizmustól.',
+      en: 'NSI-189 is a benzylpiperazine-aminopyridine derivative developed by Neuralstem Inc. as a hippocampus-selective neurogenesis inducer. Phase 1b/2 clinical trials have been conducted in major depressive disorder (MDD) and post-traumatic stress disorder (PTSD). The mechanism is incompletely understood, but it induces proliferation and differentiation of neuronal progenitor cells in the subgranular zone of the hippocampus. It does not act on known monoamine receptors — independent of the SSRI/SNRI mechanism.',
+      pl: 'NSI-189 to pochodna benzylopiperazyno-aminopirydynowa opracowana przez Neuralstem Inc. jako selektywny induktor neurogenezy hipokampu. Przeprowadzono badania kliniczne fazy 1b/2 w dużym zaburzeniu depresyjnym (MDD) i zespole stresu pourazowego (PTSD). Mechanizm nie jest w pełni poznany, ale indukuje proliferację i różnicowanie komórek progenitorowych w strefie subgranularnej hipokampu. Nie działa na znane receptory monoaminowe — niezależnie od mechanizmu SSRI/SNRI.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism',   pl: 'Mechanizm' },         value: { hu: 'Hippocampus-neurogenezis', en: 'Hippocampal neurogenesis', pl: 'Neurogeneza hipokampu' } },
+      { label: { hu: 'Felezési idő',     en: 'Half-life',   pl: 'Okres półtrwania' }, value: { hu: '17-20 óra',                en: '17-20 hours',             pl: '17-20 godzin' } },
+      { label: { hu: 'Hatáskezdet',      en: 'Onset',       pl: 'Czas wystąpienia' }, value: { hu: '1-2 hét (szubjektív), 4-6 hét (plató)', en: '1-2 weeks (subjective), 4-6 weeks (plateau)', pl: '1-2 tygodnie (subiektywne), 4-6 tygodni (plato)' } },
+      { label: { hu: 'Jogi státusz',     en: 'Legal status', pl: 'Status prawny' },    value: { hu: 'USA research, FDA Phase 2', en: 'USA research, FDA Phase 2', pl: 'USA research, FDA Phase 2' } },
+    ],
+    mechanism: {
+      hu: 'Hippocampus szubgranuláris zónájában neuronális progenitor sejt proliferáció + differenciáció. Monoamine-receptoroktól független mechanizmus.',
+      en: 'Proliferation and differentiation of neuronal progenitor cells in the hippocampal subgranular zone. Independent of monoamine receptor mechanisms.',
+      pl: 'Proliferacja i różnicowanie komórek progenitorowych neuronów w strefie subgranularnej hipokampu. Niezależnie od mechanizmów receptorów monoaminowych.',
+    },
+    legalStatus: {
+      hu: 'USA: nem FDA-jóváhagyott, klinikai vizsgálati fázisban. EU: research chemical. WADA: nem listán.',
+      en: 'USA: not FDA-approved, in clinical trial phase. EU: research chemical. WADA: not listed.',
+      pl: 'USA: niezatwierdzony przez FDA, w fazie badań klinicznych. UE: research chemical. WADA: nie na liście.',
+    },
+    onsetTime: '1-2 weeks (subjective), 4-6 weeks (plateau)',
+    halfLife: '17-20 h',
+    interactionsWith: ['SSRI', 'SNRI', 'MAOI'],
+    wadaStatus: null,
+    benefits: [
+      { hu: 'Hippocampus-neurogenezis indukciója (egyedi mechanizmus)', en: 'Induction of hippocampal neurogenesis (unique mechanism)', pl: 'Indukcja neurogenezy hipokampu (unikalny mechanizm)' },
+      { hu: 'Major depressziós zavar (MDD) tüneti enyhítése klinikai vizsgálatokban', en: 'Symptomatic relief of major depressive disorder (MDD) in clinical trials', pl: 'Łagodzenie objawów dużego zaburzenia depresyjnego (MDD) w badaniach klinicznych' },
+      { hu: 'Kognitív funkció támogatása (memória, tanulás)', en: 'Cognitive function support (memory, learning)', pl: 'Wsparcie funkcji poznawczych (pamięć, nauka)' },
+      { hu: 'PTSD-kutatás: trauma utáni hippocampus-térfogat helyreállítás', en: 'PTSD research: post-trauma hippocampal volume restoration', pl: 'Badania PTSD: przywracanie objętości hipokampu po traumie' },
+    ],
+    quickStart: [
+      { hu: 'Reggel étkezéssel együtt (hosszú felezési idő miatt napi 1×)', en: 'Morning with food (single daily dose due to long half-life)', pl: 'Rano z posiłkiem (jedna dawka dziennie z powodu długiego okresu półtrwania)' },
+      { hu: 'Tipikus klinikai dózis 40 mg/nap, indítás alacsonyabbról', en: 'Typical clinical dose 40 mg/day, start lower', pl: 'Typowa dawka kliniczna 40 mg/dzień, zacząć od niższej' },
+      { hu: 'Kúraidő minimum 28-42 nap a teljes hatáshoz', en: 'Minimum 28-42 day course for full effect', pl: 'Minimalny kurs 28-42 dni dla pełnego efektu' },
+      { hu: 'SSRI/SNRI kombinációkat klinikai monitorozás mellett', en: 'SSRI/SNRI combinations only under clinical monitoring', pl: 'Kombinacje SSRI/SNRI tylko pod nadzorem klinicznym' },
+    ],
+    expectations: [
+      { label: { hu: 'Első hét',  en: 'First week',  pl: 'Pierwszy tydzień' },  body: { hu: 'Akut hatás minimális. Esetenként enyhe szubjektív tisztaság vagy mild irritáció kezdetén.', en: 'Acute effect minimal. Occasional subtle subjective clarity or mild early irritability.', pl: 'Efekt ostry minimalny. Sporadyczna subiektywna jasność lub łagodna drażliwość początkowa.' } },
+      { label: { hu: '2-4 hét',   en: '2-4 weeks',   pl: '2-4 tygodnie' },       body: { hu: 'Hangulati emelkedés, energia-szint javulás (klinikai vizsgálatokban dokumentált).', en: 'Mood elevation, energy improvement (documented in clinical trials).', pl: 'Wzrost nastroju, poprawa energii (udokumentowane w badaniach klinicznych).' } },
+      { label: { hu: '4-6 hét',   en: '4-6 weeks',   pl: '4-6 tygodni' },        body: { hu: 'Plató: kognitív funkció + memória javul. PTSD esetén hippocampus-térfogat MRI-vel mérhető növekedése.', en: 'Plateau: cognitive function + memory improve. In PTSD, MRI-measurable hippocampal volume increase.', pl: 'Plato: poprawa funkcji poznawczych + pamięci. W PTSD wzrost objętości hipokampu mierzalny w MRI.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Fehér vagy törtfehér por, FT-IR + HPLC tisztaság igazolható', en: 'White or off-white powder, FT-IR + HPLC purity verifiable', pl: 'Biały lub złamany biały proszek, czystość weryfikowalna FT-IR + HPLC' },
+        { hu: 'Vízoldhatóság alacsony, alkoholban oldódik', en: 'Low water solubility, soluble in alcohol', pl: 'Niska rozpuszczalność w wodzie, rozpuszczalny w alkoholu' },
+      ],
+      caution: [
+        { hu: 'Korai irritáció, álmatlanság előfordulhat (kúra első hetében)', en: 'Early irritability, insomnia possible (first week of course)', pl: 'Wczesna drażliwość, bezsenność możliwe (pierwszy tydzień kursu)' },
+        { hu: 'Hosszú felezési idő → kumulatív hatás várható', en: 'Long half-life → cumulative effect expected', pl: 'Długi okres półtrwania → oczekiwany efekt kumulacyjny' },
+      ],
+      avoid: [
+        { hu: 'Aktív psychiátriai monoterápia helyett kombinációként csak orvosi felügyelet alatt', en: 'Use only adjunctively, not as monotherapy replacement, under medical supervision', pl: 'Stosować wyłącznie jako uzupełnienie, nie zamiast monoterapii, pod nadzorem medycznym' },
+        { hu: 'Bipolar I/II spektrum mánia-kockázat — orvosi monitorozás kötelező', en: 'Bipolar I/II spectrum mania risk — medical monitoring required', pl: 'Spektrum dwubiegunowości I/II — ryzyko manii, monitoring medyczny wymagany' },
+      ],
+    },
+    interactions: [
+      { hu: 'SSRI/SNRI kombinációval szinergisztikus, de szerotonin-szindróma kockázat',  en: 'Synergistic with SSRI/SNRI but serotonin syndrome risk',         pl: 'Synergiczny z SSRI/SNRI, ale ryzyko zespołu serotoninowego' },
+      { hu: 'MAOI kombináció kerülendő',                                                  en: 'MAOI combination should be avoided',                            pl: 'Kombinacja z MAOI powinna być unikana' },
+      { hu: 'CNS depresszánsokkal (alkohol, benzodiazepines) óvatosság',                  en: 'Caution with CNS depressants (alcohol, benzodiazepines)',       pl: 'Ostrożność z depresantami OUN (alkohol, benzodiazepiny)' },
+    ],
+    studies: [
+      { title: 'NSI-189: a small molecule with hippocampal neurogenesis-stimulating activity', authors: 'Liu Y et al.', journal: 'CNS Neurol Disord Drug Targets. 2014;13(2):319-326.', pmid: '24059323' },
+      { title: 'NSI-189 Phase 1B trial in major depressive disorder',                          authors: 'Fava M et al.', journal: 'Mol Psychiatry. 2016;21(10):1372-1380.',                pmid: '26821984' },
+      { title: 'NSI-189 in cognition and PTSD: preclinical neuroprotection',                   authors: 'McIntyre RS et al.', journal: 'Expert Opin Investig Drugs. 2017;26(2):191-198.',  pmid: '28006971' },
+    ],
+    faq: [
+      { q: { hu: 'Mi a különbség SSRI-vel szemben?',                          en: 'How does it differ from SSRIs?',                            pl: 'Czym różni się od SSRI?' },               a: { hu: 'A SSRI-k a szerotonin-újrafelvételt gátolják (gyors monoamine-szintű hatás). Az NSI-189 közvetlenül a hippocampus-progenitor sejtek osztódását indukálja (lassú, strukturális hatás). Mechanism teljesen független.',     en: 'SSRIs inhibit serotonin reuptake (rapid monoamine-level effect). NSI-189 directly induces proliferation of hippocampal progenitor cells (slow, structural effect). Mechanisms are entirely independent.',     pl: 'SSRI hamują wychwyt zwrotny serotoniny (szybki efekt monoaminowy). NSI-189 bezpośrednio indukuje proliferację komórek progenitorowych hipokampu (powolny, strukturalny efekt). Mechanizmy są całkowicie niezależne.' } },
+      { q: { hu: 'Klinikailag jóváhagyott valahol?',                          en: 'Clinically approved anywhere?',                              pl: 'Zatwierdzony klinicznie gdzieś?' },          a: { hu: 'Nem. Phase 2 vizsgálatokban van; Neuralstem Inc. a fejlesztője. Még nem FDA-approved.',                                                                                                                          en: 'No. In Phase 2 trials; Neuralstem Inc. is the developer. Not yet FDA-approved.',                                                                                                                                pl: 'Nie. W badaniach fazy 2; deweloperem jest Neuralstem Inc. Jeszcze nie zatwierdzony przez FDA.' } },
+      { q: { hu: 'Mennyi idő alatt érződik?',                                  en: 'How quickly are effects felt?',                              pl: 'Jak szybko odczuwa się efekty?' },           a: { hu: 'Akut hatás minimális. Szubjektív "tisztaság" 1-2 hét után. Klinikai antidepresszáns hatás 4-6 hét után plató.',                                                                                                en: 'Acute effect minimal. Subjective "clarity" after 1-2 weeks. Clinical antidepressant effect plateaus after 4-6 weeks.',                                                                                          pl: 'Efekt ostry minimalny. Subiektywna "jasność" po 1-2 tygodniach. Plato kliniczne antydepresyjne po 4-6 tygodniach.' } },
+      { q: { hu: 'Megvonási tünet?',                                          en: 'Withdrawal symptoms?',                                       pl: 'Objawy odstawienia?' },                       a: { hu: 'Nem dokumentált klasszikus megvonás. A neurogenezis-stimuláció abbahagyásakor a hatás fokozatosan halványul, nem visszaüt-jelleggel.',                                                                          en: 'No documented classic withdrawal. Effects gradually fade after stopping, without rebound character.',                                                                                                           pl: 'Brak udokumentowanego klasycznego odstawienia. Efekty stopniowo zanikają po zaprzestaniu, bez efektu odbicia.' } },
+    ],
+    related: ['cerebrolysin', 'semax', 'tianeptine', 'methylene-blue'],
+  },
+
+  // ── CORE #8: Semax ─────────────────────────────────────────────────────────
+  {
+    id: 'semax',
+    name: 'Semax',
+    image: null,
+    accentColor: '#00ff99',
+    tagColor: 'rgba(0,255,153,0.18)',
+    shortDesc: {
+      hu: 'Orosz Rx heptapeptid (ACTH 4-10 analóg). Stroke-rehabilitáció + kognitív enhancement, intranazális spray.',
+      en: 'Russian Rx heptapeptide (ACTH 4-10 analog). Stroke rehab + cognitive enhancement, intranasal spray.',
+      pl: 'Rosyjski Rx heptapeptyd (analog ACTH 4-10). Rehabilitacja udarowa + wzmocnienie poznawcze, spray donosowy.',
+    },
+    description: {
+      hu: 'A Semax egy Met-Glu-His-Phe-Pro-Gly-Pro heptapeptid, az adrenokortikotrop hormon (ACTH) 4-10 fragmensének szintetikus analógja, BDNF-mimicking hatású. Oroszországban Rx intranazális spray-ként ischémiás stroke akut és rehabilitációs fázisára, és transient ischemic attack-re (TIA). Dopaminerg + szerotonerg + neurotrofikus + nootropic profillal rendelkezik. Az intranazális adagolás révén a vér-agy gáton átjut és a központi idegrendszerben fejti ki hatását. Megjegyzés: ez az entry a peptid-libraryben is szerepel, eltérő framinggel (peptid-fókusz vs nootropic-fókusz).',
+      en: 'Semax is a Met-Glu-His-Phe-Pro-Gly-Pro heptapeptide, a synthetic analog of the 4-10 fragment of adrenocorticotropic hormone (ACTH), with BDNF-mimicking action. It is Rx in Russia as an intranasal spray for acute ischemic stroke, post-stroke rehabilitation, and transient ischemic attack (TIA). It exhibits a dopaminergic + serotonergic + neurotrophic + nootropic profile. Intranasal administration allows it to cross the blood-brain barrier and act centrally. Note: this entry also appears in the peptide library with different framing (peptide-focus vs nootropic-focus).',
+      pl: 'Semax to heptapeptyd Met-Glu-His-Phe-Pro-Gly-Pro, syntetyczny analog fragmentu 4-10 hormonu adrenokortykotropowego (ACTH), o działaniu naśladującym BDNF. W Rosji Rx jako spray donosowy w ostrym udarze niedokrwiennym, rehabilitacji poudarowej i przejściowych atakach niedokrwiennych (TIA). Profil: dopaminergiczny + serotonergiczny + neurotroficzny + nootropowy. Podawanie donosowe pozwala mu przekraczać barierę krew-mózg. Uwaga: ta pozycja występuje również w bibliotece peptydów z innym kontekstem.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism',   pl: 'Mechanizm' },         value: { hu: 'ACTH(4-10) heptapeptid, BDNF-mimicking', en: 'ACTH(4-10) heptapeptide, BDNF-mimicking', pl: 'Heptapeptyd ACTH(4-10), naśladujący BDNF' } },
+      { label: { hu: 'Felezési idő',     en: 'Half-life',   pl: 'Okres półtrwania' }, value: { hu: '20-30 perc (intranazális)',            en: '20-30 min (intranasal)',                 pl: '20-30 min (donosowo)' } },
+      { label: { hu: 'Hatáskezdet',      en: 'Onset',       pl: 'Czas wystąpienia' }, value: { hu: '10-15 perc',                            en: '10-15 min',                              pl: '10-15 min' } },
+      { label: { hu: 'Jogi státusz',     en: 'Legal status', pl: 'Status prawny' },    value: { hu: 'Russia Rx, EU/USA research',           en: 'Russia Rx, EU/USA research',             pl: 'Rosja Rx, UE/USA research' } },
+    ],
+    mechanism: {
+      hu: 'Met-Glu-His-Phe-Pro-Gly-Pro szintetikus heptapeptid, ACTH(4-10) analóg. Dopaminerg + szerotonerg + BDNF-mimicking. Intranazálisan adva vér-agy-gáton átjut.',
+      en: 'Met-Glu-His-Phe-Pro-Gly-Pro synthetic heptapeptide, ACTH(4-10) analog. Dopaminergic + serotonergic + BDNF-mimicking. Crosses blood-brain barrier when given intranasally.',
+      pl: 'Syntetyczny heptapeptyd Met-Glu-His-Phe-Pro-Gly-Pro, analog ACTH(4-10). Dopaminergiczny + serotonergiczny + naśladujący BDNF. Przekracza barierę krew-mózg po podaniu donosowym.',
+    },
+    legalStatus: {
+      hu: 'Russia: Rx (intranazális spray) stroke + TIA + kognitív zavarok. EU/USA: research peptide. WADA: nem listán.',
+      en: 'Russia: Rx (intranasal spray) for stroke + TIA + cognitive disorders. EU/USA: research peptide. WADA: not listed.',
+      pl: 'Rosja: Rx (spray donosowy) na udar + TIA + zaburzenia poznawcze. UE/USA: peptyd badawczy. WADA: nie na liście.',
+    },
+    onsetTime: '10-15 min',
+    halfLife: '20-30 min',
+    interactionsWith: ['MAOI', 'SSRI', 'stimulants'],
+    wadaStatus: null,
+    benefits: [
+      { hu: 'Akut ischémiás stroke neuroprotekciója (Russian clinical standard)', en: 'Neuroprotection in acute ischemic stroke (Russian clinical standard)', pl: 'Neuroprotekcja w ostrym udarze niedokrwiennym (rosyjski standard kliniczny)' },
+      { hu: 'Post-stroke kognitív rehabilitáció',                                  en: 'Post-stroke cognitive rehabilitation',                                pl: 'Rehabilitacja poznawcza po udarze' },
+      { hu: 'Akut kognitív teljesítmény-emelés (figyelem, memória)',                en: 'Acute cognitive performance boost (attention, memory)',                pl: 'Ostry wzrost wydajności poznawczej (uwaga, pamięć)' },
+      { hu: 'Anti-stressz + szorongáscsökkentés (mild)',                            en: 'Anti-stress + mild anxiolysis',                                       pl: 'Anty-stresowe + łagodne działanie przeciwlękowe' },
+    ],
+    quickStart: [
+      { hu: 'Intranazális 0.1%-os spray, 2-3 csepp nostrilonként',                 en: 'Intranasal 0.1% spray, 2-3 drops per nostril',                       pl: 'Spray donosowy 0,1%, 2-3 krople na nozdrze' },
+      { hu: 'Hatás 10-15 perc alatt érzékelhető',                                   en: 'Effect felt within 10-15 minutes',                                   pl: 'Efekt odczuwalny w ciągu 10-15 minut' },
+      { hu: 'Kúra-jellegű használat: 5-14 nap, követéssel pause',                  en: 'Course-based use: 5-14 days, then pause',                            pl: 'Stosowanie kursowe: 5-14 dni, potem przerwa' },
+      { hu: 'Reggel és kora délután, esti dózis kerülendő (alvás)',                en: 'Morning and early afternoon, avoid evening dose (sleep)',            pl: 'Rano i wczesnym popołudniem, unikać dawki wieczornej (sen)' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose',  pl: 'Pierwsza dawka' },   body: { hu: 'Akut tisztaság, fókusz-emelés 10-15 perc alatt. Mild mood-emelés.',                en: 'Acute clarity, focus elevation within 10-15 min. Mild mood lift.',                pl: 'Ostra jasność, podniesienie skupienia w 10-15 min. Łagodny wzrost nastroju.' } },
+      { label: { hu: '3-7 nap',      en: '3-7 days',    pl: '3-7 dni' },          body: { hu: 'Kumulatív kognitív emelkedés. Stress-toleranciá és érzelmi stabilitás javulása.',  en: 'Cumulative cognitive lift. Stress tolerance and emotional stability improve.',   pl: 'Kumulacyjne podniesienie poznawcze. Tolerancja stresu i stabilność emocjonalna się poprawiają.' } },
+      { label: { hu: '14 nap +',     en: '14 days +',   pl: '14 dni +' },          body: { hu: 'Klinikai stroke-rehabilitációs studyokban: motoros + kognitív funkció javul.',     en: 'In clinical stroke-rehab studies: motor + cognitive function improve.',          pl: 'W klinicznych badaniach rehabilitacji udarowej: poprawa funkcji motorycznych i poznawczych.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Tiszta fehér liofilizált por, vízben azonnal oldódik', en: 'Pure white lyophilized powder, dissolves instantly in water', pl: 'Czysty biały liofilizowany proszek, rozpuszcza się natychmiast w wodzie' },
+        { hu: 'Üveg vagy steril műanyag flakon, hűtve 2-8°C',         en: 'Glass or sterile plastic vial, refrigerated 2-8°C',             pl: 'Szklana lub sterylna plastikowa fiolka, w lodówce 2-8°C' },
+      ],
+      caution: [
+        { hu: 'Akut spike vérnyomásra érzékenyeknél (ACTH-analóg)',  en: 'Acute spike in BP-sensitive individuals (ACTH analog)',        pl: 'Ostry skok u osób wrażliwych na BP (analog ACTH)' },
+        { hu: 'Esti dózis kerülendő — alvászavart okozhat',          en: 'Avoid evening dose — may cause sleep disturbance',             pl: 'Unikać dawki wieczornej — może powodować zaburzenia snu' },
+      ],
+      avoid: [
+        { hu: 'Aktív skizofrénia / mánia (dopaminerg túlserkentés)', en: 'Active schizophrenia / mania (dopaminergic over-stimulation)', pl: 'Aktywna schizofrenia / mania (nadmierna stymulacja dopaminergiczna)' },
+        { hu: 'Krónikus MAOI használat',                              en: 'Chronic MAOI use',                                             pl: 'Przewlekłe stosowanie MAOI' },
+      ],
+    },
+    interactions: [
+      { hu: 'MAOI együttszedés kerülendő (szerotonerg potencírozás)',     en: 'Avoid MAOI co-administration (serotonergic potentiation)', pl: 'Unikać współpodawania MAOI (potencjacja serotonergiczna)' },
+      { hu: 'SSRI/SNRI esetén klinikai monitorozás javasolt',               en: 'SSRI/SNRI: clinical monitoring recommended',              pl: 'SSRI/SNRI: zalecany monitoring kliniczny' },
+      { hu: 'Stimulánsokkal additív, dózis-csökkentés szükséges lehet',     en: 'Additive with stimulants, dose reduction may be needed',  pl: 'Addytywny ze stymulantami, może być potrzebne zmniejszenie dawki' },
+    ],
+    studies: [
+      { title: 'Semax in cognitive impairment after ischemic stroke',  authors: 'Gusev EI et al.',     journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2018;118(3):61-68.', pmid: '29722760' },
+      { title: 'Semax effect on BDNF expression in rat hippocampus',   authors: 'Dolotov OV et al.',   journal: 'J Neurochem. 2006;97(1):82-86.',                            pmid: '16515548' },
+      { title: 'Semax in cerebrovascular disease: clinical review',    authors: 'Shchepankin AI et al.', journal: 'Eksp Klin Farmakol. 2004;67(3):69-75.',                  pmid: '15293774' },
+    ],
+    faq: [
+      { q: { hu: 'Mi az ACTH(4-10) analóg jelentése?',          en: 'What does "ACTH(4-10) analog" mean?',                pl: 'Co oznacza "analog ACTH(4-10)"?' },           a: { hu: 'Az ACTH hormon 39 aminosavból áll, a 4-10 pozíciók (Met-Glu-His-Phe-Pro-Gly-Pro) szakaszát izolálták és prolinokkal stabilizálták. Ez a szakasz NEM tartalmazza az endokrin hatást (kortizol-emelés), csak a központi idegrendszeri hatást. Eredmény: a kognitív/dopaminerg hatás megmarad, kortizol-emelés nélkül.', en: 'ACTH is a 39-amino-acid hormone; positions 4-10 (Met-Glu-His-Phe-Pro-Gly-Pro) were isolated and stabilized with prolines. This region does NOT contain endocrine activity (no cortisol elevation), only the central nervous system effects. Result: cognitive/dopaminergic action preserved, no cortisol rise.', pl: 'ACTH to hormon o 39 aminokwasach; pozycje 4-10 (Met-Glu-His-Phe-Pro-Gly-Pro) zostały wyizolowane i ustabilizowane prolinami. Ten region NIE zawiera aktywności hormonalnej, tylko efekty na OUN. Wynik: zachowane działanie poznawcze, bez wzrostu kortyzolu.' } },
+      { q: { hu: 'Hogyan adagolható?',                          en: 'How is it administered?',                            pl: 'Jak się podaje?' },                            a: { hu: 'Intranazálisan, 0.1%-os spray-ként (2-3 csepp/nostril). Az orrnyálkahártya gazdagon erezett, és az obfaktoros pálya közvetlen vér-agy-gát-megkerülő utat ad a peptidnek a CNS-be.', en: 'Intranasally, as a 0.1% spray (2-3 drops per nostril). The nasal mucosa is richly vascularized, and the olfactory pathway provides a direct BBB-bypass route to the CNS.', pl: 'Donosowo, jako spray 0,1% (2-3 krople na nozdrze). Błona śluzowa nosa jest bogato unaczyniona, a szlak węchowy zapewnia bezpośrednią drogę omijającą BBB do OUN.' } },
+      { q: { hu: 'Megvonás vagy függőség?',                      en: 'Withdrawal or dependence?',                          pl: 'Odstawienie lub uzależnienie?' },              a: { hu: 'Nem dokumentált. A klinikai szerepkör akut intervenciós (stroke, kognitív krízis) — krónikus napi szedésre nincs ajánlás vagy data.',  en: 'Not documented. The clinical role is acute intervention (stroke, cognitive crisis) — no recommendation or data for chronic daily use.',  pl: 'Nieudokumentowane. Rola kliniczna to ostra interwencja (udar, kryzys poznawczy) — brak zaleceń lub danych dla przewlekłego codziennego stosowania.' } },
+      { q: { hu: 'Miért szerepel a peptid könyvtárban IS?',     en: 'Why does it also appear in the peptide library?',     pl: 'Dlaczego pojawia się również w bibliotece peptydów?' }, a: { hu: 'A Semax kettős természetű: szerkezetileg peptid (heptapeptid), funkcionálisan nootropikum (BDNF + dopaminerg). A peptid library a szerkezetét emeli ki (aminosav-szekvencia, intranazális farmakokinetika); a nootropic library a kognitív funkcióját (memória, fókusz, stroke-recovery).', en: 'Semax is dual-natured: structurally a peptide (heptapeptide), functionally a nootropic (BDNF + dopaminergic). The peptide library highlights its structure (amino acid sequence, intranasal pharmacokinetics); the nootropic library highlights its cognitive function (memory, focus, stroke recovery).', pl: 'Semax ma dwoistą naturę: strukturalnie to peptyd (heptapeptyd), funkcjonalnie nootropik (BDNF + dopaminergiczny). Biblioteka peptydów podkreśla jego strukturę; biblioteka nootropików podkreśla jego funkcję poznawczą.' } },
+    ],
+    related: ['selank', 'cerebrolysin', 'noopept', 'nsi-189'],
+  },
+
+  // ── CORE #9: Selank ────────────────────────────────────────────────────────
+  {
+    id: 'selank',
+    name: 'Selank',
+    image: null,
+    accentColor: '#10b981',
+    tagColor: 'rgba(16,185,129,0.18)',
+    shortDesc: {
+      hu: 'Tuftsin-analóg heptapeptid (TKPRPGP). Anxiolítikus + cognition szedáció nélkül, intranazális.',
+      en: 'Tuftsin-analog heptapeptide (TKPRPGP). Anxiolytic + cognition without sedation, intranasal.',
+      pl: 'Heptapeptyd analog Tuftsiny (TKPRPGP). Przeciwlękowy + poznawczy bez sedacji, donosowy.',
+    },
+    description: {
+      hu: 'A Selank egy Thr-Lys-Pro-Arg-Pro-Gly-Pro heptapeptid, a Tuftsin (TKPR) természetes immunmodulátor peptid prolinokkal stabilizált analógja. Oroszországban fejlesztették ki anxiolítikus indikációra; intranazális spray. Hatásmechanizmusa: GABA-erg tónus emelés (alegység-szelektív, nem szedáló) + BDNF expression + szerotonerg + enkefalinerg moduláció. Benzodiazepinekkel ellentétben NEM okoz szedációt vagy függőséget. Cognition-paritás vagy enyhe enhancement is dokumentált. Megjegyzés: peptid-library duplikátum, eltérő framinggel.',
+      en: 'Selank is a Thr-Lys-Pro-Arg-Pro-Gly-Pro heptapeptide, a proline-stabilized analog of the natural immunomodulator Tuftsin (TKPR). Developed in Russia for anxiolytic use; intranasal spray. Mechanism: GABAergic tone elevation (subunit-selective, non-sedating) + BDNF expression + serotonergic + enkephalinergic modulation. Unlike benzodiazepines, does NOT cause sedation or dependence. Cognition parity or mild enhancement also documented. Note: peptide-library duplicate, with different framing.',
+      pl: 'Selank to heptapeptyd Thr-Lys-Pro-Arg-Pro-Gly-Pro, analog naturalnego immunomodulatora Tuftsiny (TKPR) stabilizowany prolinami. Opracowany w Rosji do zastosowań przeciwlękowych; spray donosowy. Mechanizm: podniesienie napięcia GABA-ergicznego (selektywne podjednostkowo, bez sedacji) + ekspresja BDNF + serotonergiczne + enkefalinergiczne. Inaczej niż benzodiazepiny, NIE powoduje sedacji ani uzależnienia. Uwaga: duplikat z biblioteki peptydów.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism',   pl: 'Mechanizm' },         value: { hu: 'Tuftsin-analóg, GABA + BDNF',   en: 'Tuftsin analog, GABA + BDNF',     pl: 'Analog Tuftsiny, GABA + BDNF' } },
+      { label: { hu: 'Felezési idő',     en: 'Half-life',   pl: 'Okres półtrwania' }, value: { hu: '20-30 perc (intranazális)',     en: '20-30 min (intranasal)',          pl: '20-30 min (donosowo)' } },
+      { label: { hu: 'Hatáskezdet',      en: 'Onset',       pl: 'Czas wystąpienia' }, value: { hu: '5-15 perc',                      en: '5-15 min',                        pl: '5-15 min' } },
+      { label: { hu: 'Jogi státusz',     en: 'Legal status', pl: 'Status prawny' },    value: { hu: 'Russia Rx, EU/USA research',    en: 'Russia Rx, EU/USA research',      pl: 'Rosja Rx, UE/USA research' } },
+    ],
+    mechanism: {
+      hu: 'Thr-Lys-Pro-Arg-Pro-Gly-Pro heptapeptid, Tuftsin TKPR analóg prolin-stabilizálással. GABA-erg tónus + BDNF + szerotonerg + enkefalinerg moduláció. Szubunit-szelektív GABA-hatás (alpha-2/3, NEM alpha-1) → szedáció nélkül.',
+      en: 'Thr-Lys-Pro-Arg-Pro-Gly-Pro heptapeptide, Tuftsin TKPR analog with proline stabilization. GABAergic tone + BDNF + serotonergic + enkephalinergic modulation. Subunit-selective GABA action (alpha-2/3, NOT alpha-1) → non-sedating.',
+      pl: 'Heptapeptyd Thr-Lys-Pro-Arg-Pro-Gly-Pro, analog Tuftsiny TKPR z prolinową stabilizacją. Napięcie GABA-ergiczne + BDNF + serotonergiczne + enkefalinergiczne. Selektywne podjednostkowo GABA (alfa-2/3, NIE alfa-1) → bez sedacji.',
+    },
+    legalStatus: {
+      hu: 'Russia: Rx (intranazális spray) generalized anxiety disorder, asztenikus zavarok. EU/USA: research peptide. WADA: nem listán.',
+      en: 'Russia: Rx (intranasal spray) for generalized anxiety disorder, asthenic disorders. EU/USA: research peptide. WADA: not listed.',
+      pl: 'Rosja: Rx (spray donosowy) na zaburzenia lękowe uogólnione, zaburzenia asteniczne. UE/USA: peptyd badawczy. WADA: nie na liście.',
+    },
+    onsetTime: '5-15 min',
+    halfLife: '20-30 min',
+    interactionsWith: ['benzodiazepines', 'alcohol', 'SSRI'],
+    wadaStatus: null,
+    benefits: [
+      { hu: 'Anxiolítikus hatás szedáció és függőség nélkül',                       en: 'Anxiolytic without sedation or dependence',                            pl: 'Działanie przeciwlękowe bez sedacji i uzależnienia' },
+      { hu: 'GAD (generalized anxiety disorder) klinikai vizsgálatok pozitív',     en: 'Positive clinical trials in GAD (generalized anxiety disorder)',     pl: 'Pozytywne badania kliniczne w GAD (zaburzenie lękowe uogólnione)' },
+      { hu: 'Cognition védelem stress alatt (cortisol-buffering)',                  en: 'Cognition protection under stress (cortisol-buffering)',              pl: 'Ochrona funkcji poznawczych podczas stresu (buforowanie kortyzolu)' },
+      { hu: 'Mild mood-emelés, immune-modulátor',                                   en: 'Mild mood lift, immune modulator',                                    pl: 'Łagodne podniesienie nastroju, modulator immunologiczny' },
+    ],
+    quickStart: [
+      { hu: 'Intranazális 0.15%-os spray, 2-3 csepp nostrilonként',                en: 'Intranasal 0.15% spray, 2-3 drops per nostril',                       pl: 'Spray donosowy 0,15%, 2-3 krople na nozdrze' },
+      { hu: 'Hatás 5-15 perc alatt érzékelhető',                                   en: 'Effect felt within 5-15 minutes',                                    pl: 'Efekt odczuwalny w ciągu 5-15 minut' },
+      { hu: 'Akut helyzetre (előadás, repülés) vagy napi 2-3× kúraként',           en: 'Acute use (presentations, flights) or 2-3× daily as a course',       pl: 'Stosowanie ostre (prezentacje, loty) lub 2-3× dziennie jako kurs' },
+      { hu: 'Kúraidő tipikusan 7-14 nap, ezután pause',                            en: 'Course duration typically 7-14 days, then pause',                    pl: 'Czas kursu typowo 7-14 dni, potem przerwa' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose', pl: 'Pierwsza dawka' }, body: { hu: 'Akut szorongáscsökkentés 5-15 perc alatt, szubjektíven "kalmer és tisztább". Nincs szedáció vagy "kábaság".',       en: 'Acute anxiety reduction in 5-15 min, subjectively "calmer and clearer". No sedation or "fogginess".',         pl: 'Ostra redukcja lęku w 5-15 min, subiektywnie "spokojniej i jaśniej". Bez sedacji ani "zamglenia".' } },
+      { label: { hu: '3-7 nap',      en: '3-7 days',    pl: '3-7 dni' },        body: { hu: 'Kumulatív anxiolítikus hatás, stress-toleranciá emelése. Reaktivitás csökken negatív stimulusokra.',                en: 'Cumulative anxiolytic effect, stress tolerance rises. Reactivity to negative stimuli decreases.',                pl: 'Kumulacyjny efekt przeciwlękowy, wzrost tolerancji stresu. Reaktywność na bodźce negatywne maleje.' } },
+      { label: { hu: '14 nap +',     en: '14 days +',   pl: '14 dni +' },        body: { hu: 'Klinikai vizsgálatokban: GAD tüneti enyhítés a Diazepam-szintű hatékonysággal, de szedáció + függőség nélkül.',  en: 'In clinical trials: GAD symptom reduction comparable to Diazepam efficacy, but without sedation + dependence.', pl: 'W badaniach klinicznych: redukcja objawów GAD porównywalna z Diazepamem, ale bez sedacji + uzależnienia.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Liofilizált fehér por, vízben azonnal oldódik', en: 'Lyophilized white powder, dissolves instantly in water', pl: 'Liofilizowany biały proszek, rozpuszcza się natychmiast w wodzie' },
+        { hu: 'Üveg flakon, hűtve 2-8°C',                       en: 'Glass vial, refrigerated 2-8°C',                          pl: 'Szklana fiolka, w lodówce 2-8°C' },
+      ],
+      caution: [
+        { hu: 'Súlyos depresszióban monoterápiaként NEM ajánlott',  en: 'Not recommended as monotherapy in severe depression', pl: 'Niezalecany jako monoterapia w ciężkiej depresji' },
+        { hu: 'Akut allergiás reakció ritka, de lehetséges',          en: 'Acute allergic reaction rare but possible',          pl: 'Ostra reakcja alergiczna rzadka, ale możliwa' },
+      ],
+      avoid: [
+        { hu: 'Terhesség + szoptatás (peptid-specifikus humán adat nincs)', en: 'Pregnancy + breastfeeding (no peptide-specific human data)', pl: 'Ciąża + karmienie (brak danych dla ludzi)' },
+        { hu: 'Aktív autoimmun zavar (immunmoduláció miatt)',                en: 'Active autoimmune disorder (immunomodulation)',              pl: 'Aktywne zaburzenia autoimmunologiczne (immunomodulacja)' },
+      ],
+    },
+    interactions: [
+      { hu: 'Benzodiazepine-okkal addicionális szedáció kerülendő',  en: 'Additive sedation with benzodiazepines should be avoided', pl: 'Sumacja sedacji z benzodiazepinami powinna być unikana' },
+      { hu: 'Alkohollal együttszedés enyhén szinergisztikus',         en: 'Mildly synergistic with alcohol',                          pl: 'Łagodnie synergiczny z alkoholem' },
+      { hu: 'SSRI-vel kombinálható klinikai monitorozás mellett',     en: 'Combinable with SSRI under clinical monitoring',           pl: 'Możliwe do łączenia z SSRI pod nadzorem klinicznym' },
+    ],
+    studies: [
+      { title: 'Selank: anxiolytic and antidepressant peptide',                              authors: 'Kost NV et al.',  journal: 'Bull Exp Biol Med. 2007;143(6):683-687.',                  pmid: '18239810' },
+      { title: 'Selank effect on cognitive function in generalized anxiety disorder',        authors: 'Zozulia AA et al.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2008;108(4):38-48.', pmid: '18454141' },
+      { title: 'Selank vs Diazepam in GAD: randomized comparison',                            authors: 'Medvedev VE et al.', journal: 'Zh Nevrol Psikhiatr Im S S Korsakova. 2007;107(6):11-16.', pmid: '17703839' },
+    ],
+    faq: [
+      { q: { hu: 'Hogyan lehet anxiolítikus szedáció nélkül?',                 en: 'How can it be anxiolytic without sedation?',                pl: 'Jak może być przeciwlękowe bez sedacji?' }, a: { hu: 'A GABA-erg moduláció szubunit-szelektív: az alpha-2 és alpha-3 alegységek (anxiolítikus + izom-relaxáns) modulálódnak, az alpha-1 (szedáló) érintetlen. Plusz BDNF + szerotonerg balansz a kognitív klaritást fenntartja.', en: 'GABAergic modulation is subunit-selective: alpha-2 and alpha-3 subunits (anxiolytic + muscle-relaxant) modulated, alpha-1 (sedating) untouched. Plus BDNF + serotonergic balance preserves cognitive clarity.', pl: 'Modulacja GABA-ergiczna jest selektywna podjednostkowo: podjednostki alfa-2 i alfa-3 (przeciwlękowe + zwiotczające mięśnie) są modulowane, alfa-1 (sedująca) pozostaje nienaruszona. Plus BDNF + równowaga serotonergiczna zachowuje jasność poznawczą.' } },
+      { q: { hu: 'Lehet függőséget okozni?',                                    en: 'Can it cause dependence?',                                   pl: 'Czy może powodować uzależnienie?' },        a: { hu: 'Nem dokumentált. A klinikai vizsgálatokban 14 napos napi szedés után sem alakult ki függőség vagy megvonás — szemben a benzodiazepinekkel, ahol már 2-3 hét után rebound-anxiousness van.',                                                                                                       en: 'Not documented. In clinical trials, no dependence or withdrawal developed after 14 days of daily use — unlike benzodiazepines, where rebound anxiety can occur after 2-3 weeks.',                                                                                                                  pl: 'Nieudokumentowane. W badaniach klinicznych, brak uzależnienia ani odstawienia po 14 dniach codziennego stosowania — w przeciwieństwie do benzodiazepin, gdzie odbicie lęku może wystąpić po 2-3 tygodniach.' } },
+      { q: { hu: 'Mire elsősorban használják?',                                  en: 'What is it primarily used for?',                              pl: 'Do czego głównie się stosuje?' },            a: { hu: 'Generalized anxiety disorder (GAD), neuraszténia, krónikus stress-szindrómák — szedáció és függőség nélkül. Másodlagosan: cognition védelem stress alatt, mild mood-emelés.',                                                                                                                  en: 'Generalized anxiety disorder (GAD), neurasthenia, chronic stress syndromes — without sedation or dependence. Secondarily: cognition protection under stress, mild mood lift.',                                                                                                                       pl: 'Zaburzenia lękowe uogólnione (GAD), neurastenia, przewlekłe zespoły stresowe — bez sedacji i uzależnienia. Wtórnie: ochrona poznawcza podczas stresu, łagodne podniesienie nastroju.' } },
+      { q: { hu: 'Miért szerepel a peptid könyvtárban IS?',                     en: 'Why does it also appear in the peptide library?',             pl: 'Dlaczego pojawia się również w bibliotece peptydów?' }, a: { hu: 'A Selank kettős: szerkezetileg peptid (heptapeptid), funkcionálisan anxiolítikus nootropikum. A peptid library a Tuftsin-eredetet és farmakokinetikát emeli ki; a nootropic library a GABA-erg + cognition-funkciót.',                                                          en: 'Selank is dual: structurally a peptide (heptapeptide), functionally an anxiolytic nootropic. The peptide library highlights its Tuftsin origin and pharmacokinetics; the nootropic library highlights its GABAergic + cognition function.',                                                pl: 'Selank ma dwoistą naturę: strukturalnie peptyd (heptapeptyd), funkcjonalnie nootropik przeciwlękowy. Biblioteka peptydów podkreśla pochodzenie z Tuftsiny; biblioteka nootropików podkreśla funkcję GABA + poznawczą.' } },
+    ],
+    related: ['semax', 'phenibut', 'l-theanine', 'tianeptine'],
+  },
+
+  // ── CORE #10: 9-Me-BC ──────────────────────────────────────────────────────
+  {
+    id: '9-me-bc',
+    name: '9-Me-BC',
+    image: null,
+    accentColor: '#f43f5e',
+    tagColor: 'rgba(244,63,94,0.18)',
+    shortDesc: {
+      hu: 'Béta-karbolin alkaloid. MAO-B gátló + neurotrofikus, dopaminerg motivációs nootropikum (in vitro adat).',
+      en: 'Beta-carboline alkaloid. MAO-B inhibitor + neurotrophic, dopaminergic motivation nootropic (in vitro data).',
+      pl: 'Alkaloid beta-karbolinowy. Inhibitor MAO-B + neurotroficzny, dopaminergiczny nootropik motywacyjny (dane in vitro).',
+    },
+    description: {
+      hu: 'A 9-Methyl-β-carboline (9-Me-BC) egy béta-karbolin alkaloid származék, kis molekulájú MAO-B (monoamin-oxidáz B) gátló + neurotrofikus faktor (BDNF, GDNF) expression-emelő. In vitro és állat-modellekben dopaminerg neuron-protektivitás dokumentált; humán adat sparse. Research-only minden régióban, klinikai vizsgálati státuszban nincs. A β-karbolin-váz természetesen előfordul a növényvilágban (Banisteriopsis caapi, Peganum harmala), ahol MAO-A gátló hatású — a 9-metilezés a B-szelektivitást és a vér-agy-gát átjárhatóságot növeli.',
+      en: '9-Methyl-β-carboline (9-Me-BC) is a beta-carboline alkaloid derivative, a small-molecule MAO-B (monoamine oxidase B) inhibitor + neurotrophic factor (BDNF, GDNF) expression-elevator. Dopaminergic neuron protection is documented in vitro and animal models; human data is sparse. Research-only in all regions, no clinical trial status. The β-carboline backbone occurs naturally in plants (Banisteriopsis caapi, Peganum harmala) as a MAO-A inhibitor — 9-methylation increases B-selectivity and blood-brain-barrier permeability.',
+      pl: '9-Metylo-β-karbolina (9-Me-BC) to pochodna alkaloidu beta-karbolinowego, mała cząsteczka — inhibitor MAO-B (monoaminooksydazy B) + induktor ekspresji czynników neurotroficznych (BDNF, GDNF). Ochrona neuronów dopaminergicznych udokumentowana in vitro i w modelach zwierzęcych; dane u ludzi są skąpe. Tylko badania we wszystkich regionach. Szkielet β-karbolinowy występuje naturalnie w roślinach (Banisteriopsis caapi, Peganum harmala) jako inhibitor MAO-A — metylacja w pozycji 9 zwiększa selektywność B i przepuszczalność przez BBB.',
+    },
+    keyInfo: [
+      { label: { hu: 'Hatásmechanizmus', en: 'Mechanism',   pl: 'Mechanizm' },         value: { hu: 'MAO-B gátló + neurotrofikus',         en: 'MAO-B inhibitor + neurotrophic',         pl: 'Inhibitor MAO-B + neurotroficzny' } },
+      { label: { hu: 'Felezési idő',     en: 'Half-life',   pl: 'Okres półtrwania' }, value: { hu: '12-24 óra (becsült, humán adat hiányos)', en: '12-24 h (estimated, human data sparse)', pl: '12-24 h (szacowane, dane ludzkie skąpe)' } },
+      { label: { hu: 'Hatáskezdet',      en: 'Onset',       pl: 'Czas wystąpienia' }, value: { hu: '60-120 perc',                          en: '60-120 min',                              pl: '60-120 min' } },
+      { label: { hu: 'Jogi státusz',     en: 'Legal status', pl: 'Status prawny' },    value: { hu: 'Globális research only',                en: 'Global research only',                    pl: 'Globalnie tylko badawczy' } },
+    ],
+    mechanism: {
+      hu: 'Béta-karbolin alkaloid származék, 9-pozícióban metilezve. Reverzibilis szelektív MAO-B gátlás + BDNF/GDNF expression-növelés (in vitro). Dopaminerg neuron-protekció állat-modellekben (Parkinson-kutatás).',
+      en: 'Beta-carboline alkaloid derivative, methylated at position 9. Reversible selective MAO-B inhibition + BDNF/GDNF expression elevation (in vitro). Dopaminergic neuron protection in animal models (Parkinson research).',
+      pl: 'Pochodna alkaloidu beta-karbolinowego, metylowana w pozycji 9. Odwracalne selektywne hamowanie MAO-B + podniesienie ekspresji BDNF/GDNF (in vitro). Ochrona neuronów dopaminergicznych w modelach zwierzęcych (badania Parkinsona).',
+    },
+    legalStatus: {
+      hu: 'Globális: research chemical, nem szabályozott a legtöbb régióban (de import-kockázat). USA: research only. EU: research only. WADA: nem listán.',
+      en: 'Global: research chemical, unscheduled in most regions (but import risk). USA: research only. EU: research only. WADA: not listed.',
+      pl: 'Globalnie: research chemical, niesklasyfikowany w większości regionów (ale ryzyko importu). USA: tylko badawczy. UE: tylko badawczy. WADA: nie na liście.',
+    },
+    onsetTime: '60-120 min',
+    halfLife: '12-24 h (estimated)',
+    interactionsWith: ['MAOI', 'SSRI', 'tyramine-rich foods', 'stimulants'],
+    wadaStatus: null,
+    benefits: [
+      { hu: 'Dopaminerg tónus emelés MAO-B reverzibilis gátlással',             en: 'Dopaminergic tone elevation via reversible MAO-B inhibition',         pl: 'Podniesienie napięcia dopaminergicznego przez odwracalne hamowanie MAO-B' },
+      { hu: 'Neurotrofikus faktor (BDNF, GDNF) expression in vitro',             en: 'Neurotrophic factor (BDNF, GDNF) expression in vitro',                pl: 'Ekspresja czynników neurotroficznych (BDNF, GDNF) in vitro' },
+      { hu: 'Dopaminerg neuron-protekció állat-modellekben (Parkinson)',         en: 'Dopaminergic neuron protection in animal models (Parkinson)',          pl: 'Ochrona neuronów dopaminergicznych w modelach zwierzęcych (Parkinson)' },
+      { hu: 'Szubjektíven: motiváció, fókusz, mild mood-emelés (humán anecdotal)', en: 'Subjectively: motivation, focus, mild mood lift (human anecdotal)', pl: 'Subiektywnie: motywacja, skupienie, łagodne podniesienie nastroju (ludzkie anegdotyczne)' },
+    ],
+    quickStart: [
+      { hu: 'Alacsony dózisból induljon (≤1-2 mg), titrálás óvatosan',           en: 'Start low (≤1-2 mg), titrate carefully',                              pl: 'Zaczynaj nisko (≤1-2 mg), titruj ostrożnie' },
+      { hu: 'NEM kombinálandó MAOI, SSRI, SNRI gyógyszerekkel',                    en: 'Do NOT combine with MAOI, SSRI, SNRI medications',                    pl: 'NIE łączyć z MAOI, SSRI, SNRI' },
+      { hu: 'Tyramin-gazdag ételek (érlelt sajt, vörösbor) kerülendők',             en: 'Avoid tyramine-rich foods (aged cheese, red wine)',                   pl: 'Unikać pokarmów bogatych w tyraminę (sery dojrzewające, czerwone wino)' },
+      { hu: 'Kúraidő rövid (3-5 nap), pause kötelező a sensitization elkerülésére', en: 'Short course (3-5 days), pause required to avoid sensitization',     pl: 'Krótki kurs (3-5 dni), przerwa wymagana, by uniknąć sensytyzacji' },
+    ],
+    expectations: [
+      { label: { hu: 'Első bevétel', en: 'First dose',  pl: 'Pierwsza dawka' },  body: { hu: 'Hatás 60-120 perc múlva. Szubjektíven: tisztább fej, mild dopaminerg "motiváció", enyhe stim-jelleg.',                  en: 'Effect 60-120 min after dose. Subjectively: clearer head, mild dopaminergic "motivation", subtle stim-character.',         pl: 'Efekt 60-120 min po dawce. Subiektywnie: jaśniejsza głowa, łagodna dopaminergiczna "motywacja", delikatny charakter stymulujący.' } },
+      { label: { hu: 'Kúra 3-5 nap', en: 'Course 3-5 days', pl: 'Kurs 3-5 dni' }, body: { hu: 'Kumulatív neurotrofikus hatás (in vitro adat alapján). Humán hosszú távú adat hiányos — óvatos protokoll.',          en: 'Cumulative neurotrophic effect (based on in vitro data). Long-term human data sparse — cautious protocol.',                 pl: 'Kumulacyjny efekt neurotroficzny (na podstawie danych in vitro). Długoterminowe dane ludzkie skąpe — protokół ostrożny.' } },
+      { label: { hu: 'Pause + visszatérés', en: 'Pause + return', pl: 'Przerwa + powrót' }, body: { hu: 'Pause 7-14 nap után visszatérve a hatás megmarad. Krónikus napi szedés nem javasolt — neurotrofikus rendszer-szintű hatás.', en: 'After 7-14 day pause, effect persists on return. Chronic daily use not advised — system-level neurotrophic action.',     pl: 'Po przerwie 7-14 dni efekt utrzymuje się przy powrocie. Przewlekłe codzienne stosowanie niezalecane.' } },
+    ],
+    quality: {
+      pure: [
+        { hu: 'Sárgás-barna kristályos por, alkoholban oldódik',  en: 'Yellowish-brown crystalline powder, soluble in alcohol', pl: 'Żółto-brązowy krystaliczny proszek, rozpuszczalny w alkoholu' },
+        { hu: 'HPLC/MS tisztaság-igazolás ajánlott',               en: 'HPLC/MS purity certification recommended',               pl: 'Zalecane certyfikaty czystości HPLC/MS' },
+      ],
+      caution: [
+        { hu: 'Tyramin-reakció kockázata (MAO-B reverzibilis, de mégis monoaminerg)', en: 'Tyramine reaction risk (MAO-B reversible, but still monoaminergic)', pl: 'Ryzyko reakcji tyraminowej (MAO-B odwracalne, ale monoaminergiczne)' },
+        { hu: 'Humán farmakokinetika nem teljesen jellemzett',                          en: 'Human pharmacokinetics not fully characterized',                     pl: 'Farmakokinetyka u ludzi niepełna' },
+      ],
+      avoid: [
+        { hu: 'Aktív SSRI/SNRI/MAOI gyógyszer-terápia (szerotonin-szindróma)',           en: 'Active SSRI/SNRI/MAOI medication (serotonin syndrome)',              pl: 'Aktywne leczenie SSRI/SNRI/MAOI (zespół serotoninowy)' },
+        { hu: 'Akut psychiátriai krízis, mánia spektrum',                                en: 'Acute psychiatric crisis, mania spectrum',                           pl: 'Ostry kryzys psychiatryczny, spektrum manii' },
+      ],
+    },
+    interactions: [
+      { hu: 'MAOI együttszedés tilos (szerotonin-szindróma + hypertenzív krízis)',    en: 'MAOI co-administration forbidden (serotonin syndrome + hypertensive crisis)', pl: 'Współpodawanie MAOI zabronione (zespół serotoninowy + przełom nadciśnieniowy)' },
+      { hu: 'SSRI/SNRI együttszedés kerülendő',                                        en: 'Avoid SSRI/SNRI co-administration',                                          pl: 'Unikać współpodawania SSRI/SNRI' },
+      { hu: 'Tyramin-gazdag ételek + ital (érlelt sajt, vörösbor, pácolt hús)',         en: 'Tyramine-rich foods + drinks (aged cheese, red wine, cured meat)',         pl: 'Pokarmy + napoje bogate w tyraminę (sery dojrzewające, wino, peklowane mięso)' },
+      { hu: 'Stimulánsokkal additív (dopaminerg túlserkentés)',                         en: 'Additive with stimulants (dopaminergic over-stimulation)',                   pl: 'Addytywny ze stymulantami (nadmierna stymulacja dopaminergiczna)' },
+    ],
+    studies: [
+      { title: '9-Me-BC: neurotrophic and antiapoptotic effects on dopaminergic neurons', authors: 'Polanski W et al.',  journal: 'J Neural Transm. 2010;117(7):835-846.',  pmid: '20517703' },
+      { title: 'Beta-carbolines as MAO inhibitors: comprehensive review',                  authors: 'Herraiz T, Chaparro C.', journal: 'Life Sci. 2005;78(8):795-802.',      pmid: '16111712' },
+      { title: '9-Me-BC induces BDNF and GDNF expression in cultured neurons',             authors: 'Hamann J et al.',    journal: 'Neurosci Lett. 2008;437(2):151-155.',    pmid: '18434025' },
+    ],
+    faq: [
+      { q: { hu: 'Miért MAO-B és nem MAO-A?',                                en: 'Why MAO-B and not MAO-A?',                                 pl: 'Dlaczego MAO-B a nie MAO-A?' },                  a: { hu: 'A 9-metilezés szelektivitást ad a MAO-B izoenzimre. A MAO-B főleg dopamint és phenethylamint bont — gátlása dopaminerg + PEA-tónus emelést okoz. A MAO-A (szerotonin, noradrenalin, tyramin) érintetlen marad → kisebb tyramin-reakció kockázat, mint nem-szelektív MAOI-knál (de NEM nulla).',  en: '9-methylation provides selectivity for the MAO-B isoenzyme. MAO-B primarily metabolizes dopamine and phenethylamine — its inhibition raises dopaminergic + PEA tone. MAO-A (serotonin, noradrenaline, tyramine) is left untouched → lower tyramine reaction risk than non-selective MAOIs (but NOT zero).',  pl: 'Metylacja w pozycji 9 daje selektywność dla izoenzymu MAO-B. MAO-B metabolizuje głównie dopaminę i feniloetyloaminę — jego hamowanie podnosi napięcie dopaminergiczne + PEA. MAO-A (serotonina, noradrenalina, tyramina) pozostaje nienaruszony → mniejsze ryzyko reakcji tyraminowej, ale NIE zerowe.' } },
+      { q: { hu: 'Mennyi a tipikus dózis?',                                 en: 'Typical dose?',                                            pl: 'Typowa dawka?' },                                a: { hu: 'Humán protokoll nincs validálva. Anekdotikus tartomány 1-5 mg, indítás 1 mg-mal. Higher doses (>10 mg) NEM ajánlottak — sensitization + monoaminerg overload kockázat.',                                                                                                                  en: 'No validated human protocol. Anecdotal range 1-5 mg, start with 1 mg. Higher doses (>10 mg) NOT recommended — sensitization + monoaminergic overload risk.',                                                                                                                                pl: 'Brak zatwierdzonego protokołu ludzkiego. Anegdotyczny zakres 1-5 mg, zacząć od 1 mg. Wyższe dawki (>10 mg) NIEZALECANE — ryzyko sensytyzacji + przeciążenia monoaminergicznego.' } },
+      { q: { hu: 'Klinikai vizsgálati státusz?',                            en: 'Clinical trial status?',                                    pl: 'Status badań klinicznych?' },                    a: { hu: 'Nincs. Preklinikai dopaminerg neuron-protekciós kutatás (Parkinson-modellek) zajlott, de humán Phase 1 még nem indult. Az adatok nagyrésze in vitro és állat-modellekből származik.',                                                                                                  en: 'None. Preclinical dopaminergic neuron-protection research (Parkinson models) has been conducted, but human Phase 1 has not started. Most data is from in vitro and animal models.',                                                                                                            pl: 'Brak. Przedkliniczne badania ochrony neuronów dopaminergicznych (modele Parkinsona) zostały przeprowadzone, ale ludzkie badania Phase 1 jeszcze się nie rozpoczęły. Większość danych pochodzi z in vitro i modeli zwierzęcych.' } },
+      { q: { hu: 'Megvonási tünet?',                                        en: 'Withdrawal?',                                              pl: 'Odstawienie?' },                                  a: { hu: 'Nem dokumentált. A neurotrofikus hatás strukturális (nem receptor-szintű), így a leállítás után rebound vagy klasszikus megvonás nincs. De a hosszú-távú szedés sensitization-t okozhat — pause-protokoll javasolt.',                                                                  en: 'Not documented. The neurotrophic effect is structural (not receptor-level), so no rebound or classic withdrawal after stopping. But long-term use may cause sensitization — pause protocol recommended.',                                                                                       pl: 'Nieudokumentowane. Efekt neurotroficzny jest strukturalny (nie na poziomie receptora), więc brak odbicia lub klasycznego odstawienia. Ale długotrwałe stosowanie może powodować sensytyzację — zalecany protokół przerw.' } },
+    ],
+    related: ['bromantane', 'selegiline', 'bpap', 'modafinil'],
+  },
 ]
