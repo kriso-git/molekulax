@@ -27,6 +27,14 @@ export const PERFORMANCE_CATEGORIES = {
   'clenbuterol':       ['bronchodilators', 'stimulants'],
   'albuterol':         ['bronchodilators'],
   // Task 9 (Növekedés CORE + EXTRA)
+  'mk-677':            ['growth-recovery'],
+  'winstrol-info':     ['aas-info'],
+  'nandrolone-info':   ['aas-info'],
+  'dianabol-info':     ['aas-info'],
+  'methylstenbolone':  ['prohormones'],
+  'hgh-info':          ['growth-recovery', 'doping'],
+  'epo-info':          ['doping'],
+  'dnp-info':          ['stimulants', 'doping'],
 }
 
 export function getPerformanceCategories(entryId) {
