@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react'
+import { useState, useRef, useMemo } from 'react'
 import { useLibrary } from '../context/LibraryContext'
 import { getLevelMeta, LEVEL_META, makeSortComparator } from '../data/libraries/shared/researchLevel'
 import { useLang } from '../i18n/LanguageContext'
@@ -7,7 +7,6 @@ import {
  ArrowDownAZ, ArrowUpAZ, BarChart3,
 } from 'lucide-react'
 import EntryImage from './EntryImage'
-import LibrarySwitcher from './LibrarySwitcher'
 import TelegramButtons from './TelegramButtons'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
@@ -243,7 +242,6 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
  const [activeFilters, setActiveFilters] = useState([]) // category id list
  const [levelFilters, setLevelFilters] = useState([]) // research level numbers
  const [sortMode, setSortMode] = useState('az') // 'az' | 'za' | 'level'
- const sectionRef = useRef(null)
  const allSectionRef = useRef(null)
  const { t, tr, lang } = useLang()
  const { library: ctxLibrary } = useLibrary()
@@ -277,43 +275,6 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
  return matched.sort(makeSortComparator(library.getResearchLevel, sortMode))
  }, [library, query, lang, activeFilters, levelFilters, sortMode])
 
- // Scroll the gallery into view when the URL hash becomes #library (e.g. the
- // user closes an entry-detail view). The browser's native anchor-scroll only
- // fires on initial load, so we handle it here for in-app navigation too.
- useEffect(() => {
- const scrollIfLibrary = () => {
- if (window.location.hash === '#library' && sectionRef.current) {
- requestAnimationFrame(() => {
- sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
- })
- }
- }
- scrollIfLibrary()
- window.addEventListener('hashchange', scrollIfLibrary)
- return () => window.removeEventListener('hashchange', scrollIfLibrary)
- }, [])
-
- // Reset search/filter/sort state and scroll back to the section when the
- // active library changes (e.g. user toggles the LibrarySwitcher).
- // useRef guard avoids running on the initial mount.
- const isFirstLibraryEffect = useRef(true)
- useEffect(() => {
- if (isFirstLibraryEffect.current) {
- isFirstLibraryEffect.current = false
- return
- }
- setQuery('')
- setActiveFilters([])
- setLevelFilters([])
- setSortMode('az')
- setExpanded(false)
- setShowFilters(false)
- if (sectionRef.current) {
- requestAnimationFrame(() => {
- sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
- })
- }
- }, [library.id])
 
  const toggleExpanded = () => {
  setExpanded(prev => {
@@ -342,10 +303,7 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
 
  return (
  <>
- <section id="library" ref={sectionRef} className="py-28 px-4 scroll-mt-24">
  <div className="max-w-6xl mx-auto">
-
- <LibrarySwitcher />
 
  <div className="text-center mb-16">
  <h2 className="text-3xl md:text-5xl font-bold italic text-white mb-4">
@@ -637,7 +595,6 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
  </div>
 
  </div>
- </section>
 
  </>
  )

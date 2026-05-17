@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react'
 import Hero from './components/Hero'
 import Education from './components/Education'
-import EffectsSection from './components/library/EffectsSection'
-import Calculator from './components/Calculator'
-import LibraryGallery from './components/LibraryGallery'
+import LibraryCube from './components/library/cube-nav/LibraryCube'
 import TelegramSection from './components/TelegramSection'
 import Faq from './components/Faq'
 import Disclaimer from './components/Disclaimer'
@@ -16,7 +14,7 @@ import EntryDetailRoute, { isEntryDetailHash } from './components/library/EntryD
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
 import { ThemeProvider } from './theme/ThemeContext'
-import { LibraryProvider, useLibrary } from './context/LibraryContext'
+import { LibraryProvider } from './context/LibraryContext'
 
 function useHashRoute() {
   const read = () => (typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, ''))
@@ -27,12 +25,6 @@ function useHashRoute() {
     return () => window.removeEventListener('hashchange', onChange)
   }, [])
   return hash
-}
-
-function CalculatorGate() {
-  const { library } = useLibrary()
-  if (library?.id !== 'peptides') return null
-  return <Calculator />
 }
 
 export default function App() {
@@ -55,9 +47,7 @@ export default function App() {
               <>
                 <Hero />
                 <Education />
-                <LibraryGallery />
-                <EffectsSection />
-                <CalculatorGate />
+                <LibraryCube />
                 <TelegramSection />
                 <Faq />
                 <Disclaimer />
