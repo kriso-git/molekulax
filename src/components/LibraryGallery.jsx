@@ -102,6 +102,7 @@ function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  uid={peptide.id}
  image={peptide.image}
  library={library}
+ chemicalFormula={peptide.chemicalFormula}
  />
  </div>
 
