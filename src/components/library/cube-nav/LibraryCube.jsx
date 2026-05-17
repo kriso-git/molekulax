@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { useLibrary } from '../../../context/LibraryContext'
 import { useLang } from '../../../i18n/LanguageContext'
 import { useMediaQuery } from '../../../hooks/useMediaQuery'
@@ -36,12 +36,11 @@ export default function LibraryCube() {
   const { currentIndex, rotationDeg, isFirstRender, libraries, next, prev, jumpTo } =
     useCubeIndex(libraryId, setLibraryId)
 
-  // NOTE: useReducedMotion override — Phase 7 smoke showed the cube was
-  // entering the reduced-motion branch (cross-fade only, no 3D) even with
-  // OS reduce-motion disabled. Forcing the 3D branch to always run until
-  // we can verify the framer-motion v11 hook reliably.
-  const _reduceMotionRaw = useReducedMotion()
-  const reduceMotion = false  // was: _reduceMotionRaw
+  // Phase 7 smoke iter: framer-motion v11 `useReducedMotion` reported `true`
+  // even when the OS preference was "no preference" (false positive), so the
+  // cube always entered the cross-fade fallback. Replaced with native
+  // matchMedia via `useMediaQuery` — SSR-safe, reactive, no false positives.
+  const reduceMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
   const isTouch = useMediaQuery('(pointer: coarse)')
   const wrapperRef = useRef(null)
   const sectionRef = useRef(null)
