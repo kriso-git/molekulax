@@ -334,6 +334,8 @@ export default function Calculator() {
  <button
  key={id}
  onClick={() => setActiveTab(id)}
+ aria-label={label}
+ aria-pressed={activeTab === id}
  className={`flex-1 flex items-center justify-center gap-2 px-4 py-3 rounded-2xl text-sm font-semibold transition-all duration-200 ${
  activeTab === id
  ? 'bg-gradient-to-r from-[#6366f1] to-[#a855f7] text-white'

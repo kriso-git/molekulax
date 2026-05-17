@@ -208,6 +208,7 @@ function SortControl({ value, onChange, t }) {
  type="button"
  role="radio"
  aria-checked={active}
+ aria-label={label}
  onClick={() => onChange(id)}
  className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg text-[11px] font-semibold tracking-wider uppercase transition-all duration-200"
  style={{

@@ -144,6 +144,7 @@
    copy + secondary labels stay above 4.5:1 without component rewrites. */
 [data-theme="dark"] .text-gray-500 { color: #9ca3af; }
 [data-theme="dark"] .text-gray-600 { color: #94a3b8; }
+[data-theme="dark"] .text-gray-700 { color: #94a3b8; }
 
 [data-theme="light"] .placeholder\:text-gray-500::placeholder,
 [data-theme="light"] .placeholder\:text-gray-600::placeholder { color: #94a3b8; }
