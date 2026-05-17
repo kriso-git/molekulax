@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer; klinikai vizsgálatok lezárva. OTC „research chemical\" piacon árusított.",
     "en": "Not approved as a medicine anywhere; clinical trials closed. Sold on the OTC “research chemical” market.",
     "pl": "Nigdzie nie zatwierdzony jako lek; badania kliniczne zamknięte. Sprzedawany na rynku „chemikaliów badawczych” OTC."
-  }
+  },
+  "chemicalFormula": "C14H18N2O2"
 }

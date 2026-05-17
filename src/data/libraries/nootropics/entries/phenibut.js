@@ -64,5 +64,6 @@ export default {
     "hu": "Oroszországban, Ukrajnában, Lettországban vényköteles gyógyszer. UK-ban 2024 óta Class C kontrollált anyag. EU egyéb tagállamokban szabályozatlan. Magyarországon vény nélkül nem hozható forgalomba gyógyszerként.",
     "en": "Prescription medicine in Russia, Ukraine, Latvia. UK Class C controlled substance since 2024. Unregulated in other EU member states. Cannot be marketed as a medicine in Hungary without prescription.",
     "pl": "Lek na receptę w Rosji, Ukrainie, Łotwie. W Wielkiej Brytanii substancja kontrolowana klasy C od 2024. Niezregulowany w innych państwach UE. Nie może być wprowadzany do obrotu jako lek na Węgrzech bez recepty."
-  }
+  },
+  "chemicalFormula": "C10H13NO2"
 }

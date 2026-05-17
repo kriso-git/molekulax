@@ -79,6 +79,7 @@ export default {
   },
   "onsetTime": "15-30 min",
   "halfLife": "30-40 min (active metabolite)",
+  "chemicalFormula": "C17H22N2O4",
   "interactionsWith": [
     "choline",
     "caffeine",

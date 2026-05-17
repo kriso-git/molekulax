@@ -91,6 +91,7 @@ export default {
   },
   "onsetTime": "30-60 min",
   "halfLife": "12-15 h",
+  "chemicalFormula": "C15H15NO2S",
   "interactionsWith": [
     "caffeine",
     "alcohol",

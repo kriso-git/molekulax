@@ -64,5 +64,6 @@ export default {
     "hu": "FDA-jóváhagyott gyógyszer methemoglobinémiára (Provayblue®). Az USA-ban és EU-ban USP-tisztaságú formája csak vényre, „nootropikum-célú\" off-label használata szürke zóna. Ipari festékként árusított minőség NEM gyógyszerészeti.",
     "en": "FDA-approved drug for methemoglobinemia (Provayblue®). USP-grade is prescription-only in the USA and EU; “nootropic-purpose” off-label use is a grey zone. Industrial-dye-grade is NOT pharmaceutical.",
     "pl": "Lek zatwierdzony przez FDA na methemoglobinemię (Provayblue®). Czystość USP jest na receptę w USA i UE; off-label „nootropowe” zastosowanie jest szarą strefą. Jakość barwnika przemysłowego NIE jest farmaceutyczna."
-  }
+  },
+  "chemicalFormula": "C16H18ClN3S"
 }

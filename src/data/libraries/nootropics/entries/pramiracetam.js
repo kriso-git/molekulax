@@ -64,5 +64,6 @@ export default {
     "hu": "Olaszországban (Pramistar) vényköteles volt, több piacon visszavonva. USA-ban nem FDA-jóváhagyott; OTC nootropikum-piacon elérhető.",
     "en": "Prescription-only in Italy (Pramistar), withdrawn in several markets. Not FDA-approved in the USA; available on the OTC nootropic market.",
     "pl": "Na receptę we Włoszech (Pramistar), wycofany na kilku rynkach. Niezatwierdzony przez FDA w USA; dostępny na rynku nootropików OTC."
-  }
+  },
+  "chemicalFormula": "C14H27N3O2"
 }

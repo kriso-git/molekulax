@@ -79,6 +79,7 @@ export default {
   },
   "onsetTime": "30-60 min",
   "halfLife": "3-5 h",
+  "chemicalFormula": "C12H14N2O2",
   "interactionsWith": [
     "caffeine",
     "stimulants",

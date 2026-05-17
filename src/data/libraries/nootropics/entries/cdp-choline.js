@@ -64,5 +64,6 @@ export default {
     "hu": "Olaszországban, Spanyolországban, Japánban vényköteles (Somazina, Ceraxon). USA-ban OTC étrend-kiegészítő. Magyarországon kiegészítőként szabadon kapható.",
     "en": "Prescription-only in Italy, Spain, Japan (Somazina, Ceraxon). OTC dietary supplement in the USA. Freely available as a supplement in Hungary.",
     "pl": "Na receptę we Włoszech, Hiszpanii, Japonii (Somazina, Ceraxon). OTC suplement diety w USA. Wolno dostępny jako suplement na Węgrzech."
-  }
+  },
+  "chemicalFormula": "C14H26N4O11P2"
 }

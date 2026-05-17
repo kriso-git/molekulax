@@ -64,5 +64,7 @@ export default {
     "hu": "Étrend-kiegészítőként szabadon kapható EU-szerte és USA-ban. Indiában gyógynövényként minden boltban elérhető. Magyarországon kiegészítőként szabadon hozzáférhető.",
     "en": "Freely available as a dietary supplement throughout the EU and the USA. Available as a herb in every shop in India. Freely available as a supplement in Hungary.",
     "pl": "Wolno dostępna jako suplement diety w całej UE i USA. Dostępna jako zioło w każdym sklepie w Indiach. Wolno dostępna jako suplement na Węgrzech."
-  }
+  },
+  // Primary active constituent: Bacoside A
+  "chemicalFormula": "C46H74O17"
 }

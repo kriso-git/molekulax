@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer. „Research chemical\" minősítéssel árusított, kontroll nélküli alapanyag; UK-ban a Psychoactive Substances Act tiltja.",
     "en": "Not approved as a medicine anywhere. Sold as a “research chemical” with no regulated source control; banned in the UK under the Psychoactive Substances Act.",
     "pl": "Nigdzie nie zatwierdzony jako lek. Sprzedawany jako „chemikalium badawcze” bez kontrolowanego źródła; zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act."
-  }
+  },
+  "chemicalFormula": "C16H21N1O2"
 }

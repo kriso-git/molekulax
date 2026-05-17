@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer; csak akadémiai és „research chemical\" kategóriában forgalmazott, humán biztonsági adat nincs.",
     "en": "Not approved as a medicine anywhere; sold only in academic and “research chemical” categories, no human safety data exists.",
     "pl": "Nigdzie nie zatwierdzona jako lek; sprzedawana tylko w kategoriach akademickich i „chemikaliów badawczych”, brak danych o bezpieczeństwie u ludzi."
-  }
+  },
+  "chemicalFormula": "C26H41N5O5"
 }

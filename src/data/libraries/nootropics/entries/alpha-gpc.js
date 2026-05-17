@@ -64,5 +64,6 @@ export default {
     "hu": "Olaszországban vényköteles (Delecit). EU egyéb tagállamokban és USA-ban étrend-kiegészítő. Magyarországon szabadon kapható.",
     "en": "Prescription-only in Italy (Delecit). Sold as a dietary supplement in other EU member states and the USA. Freely available in Hungary.",
     "pl": "Na receptę we Włoszech (Delecit). Sprzedawany jako suplement diety w innych państwach UE i USA. Wolno dostępny na Węgrzech."
-  }
+  },
+  "chemicalFormula": "C8H20NO6P"
 }

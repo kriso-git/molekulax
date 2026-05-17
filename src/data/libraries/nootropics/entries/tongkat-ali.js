@@ -64,5 +64,7 @@ export default {
     "hu": "OTC étrend-kiegészítő EU-szerte és USA-ban. Malajziában „Novel Health Supplement\" minősítés. Sportolóknál WADA-listán NEM tiltott. Magyarországon szabadon kapható.",
     "en": "OTC dietary supplement throughout the EU and the USA. Holds “Novel Health Supplement” status in Malaysia. NOT on the WADA prohibited list for athletes. Freely available in Hungary.",
     "pl": "Suplement diety OTC w całej UE i USA. Posiada status „Nowy Suplement Zdrowotny” w Malezji. NIE jest na liście zakazanej WADA dla sportowców. Wolno dostępny na Węgrzech."
-  }
+  },
+  // Primary active constituent: Eurycomanone
+  "chemicalFormula": "C19H24O6"
 }

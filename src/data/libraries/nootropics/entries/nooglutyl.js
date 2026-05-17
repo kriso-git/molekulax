@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer. Orosz akadémiai kutatási vegyület, nyugati OTC piacon ritkán „research chemical\" minősítéssel.",
     "en": "Not approved as a medicine anywhere. Russian academic research compound, rarely seen on Western OTC markets as a “research chemical”.",
     "pl": "Nigdzie nie zatwierdzony jako lek. Rosyjski akademicki związek badawczy, rzadko spotykany na zachodnich rynkach OTC jako „chemikalium badawcze”."
-  }
+  },
+  "chemicalFormula": "C12H13N3O5"
 }

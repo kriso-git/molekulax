@@ -79,6 +79,7 @@ export default {
   },
   "onsetTime": "60-90 min",
   "halfLife": "1 h (Adrafinil) → 12-15 h (Modafinil)",
+  "chemicalFormula": "C15H15NO3S",
   "interactionsWith": [
     "caffeine",
     "alcohol",

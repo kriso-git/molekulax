@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja; máshol „research chemical\" minősítéssel árusított.",
     "en": "Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; sold elsewhere as a “research chemical”.",
     "pl": "Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; gdzie indziej sprzedawany jako „chemikalium badawcze”."
-  }
+  },
+  "chemicalFormula": "C15H13F2NO3S"
 }

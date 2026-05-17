@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja; egyéb piacokon „research chemical\" minősítésű.",
     "en": "Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; classified as a “research chemical” elsewhere.",
     "pl": "Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; sklasyfikowany jako „chemikalium badawcze” gdzie indziej."
-  }
+  },
+  "chemicalFormula": "C14H18N2O2"
 }

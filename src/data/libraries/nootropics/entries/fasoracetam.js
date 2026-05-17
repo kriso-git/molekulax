@@ -64,5 +64,6 @@ export default {
     "hu": "Klinikai vizsgálati státusz, sehol nem jóváhagyott gyógyszer. OTC kiegészítőként árusítása jogilag szürke zóna; UK-ban a Psychoactive Substances Act tiltja.",
     "en": "Investigational status, not an approved drug anywhere. OTC supplement sales are a legal grey zone; banned in the UK under the Psychoactive Substances Act.",
     "pl": "Status badawczy, nigdzie nie zatwierdzony jako lek. Sprzedaż OTC w prawnej szarej strefie; zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act."
-  }
+  },
+  "chemicalFormula": "C10H16N2O2"
 }

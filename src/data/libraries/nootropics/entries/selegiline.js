@@ -64,5 +64,6 @@ export default {
     "hu": "FDA-jóváhagyott Parkinson + depresszió. EU-szerte vényköteles. Magyarországon szakorvosi vény szükséges; OTC nem.",
     "en": "FDA-approved for Parkinson`s + depression. Prescription-only across the EU. Hungary requires specialist prescription; not OTC.",
     "pl": "Zatwierdzony przez FDA w Parkinsonie + depresji. Na receptę w całej UE. Węgry wymagają recepty specjalistycznej; nie OTC."
-  }
+  },
+  "chemicalFormula": "C13H17N"
 }

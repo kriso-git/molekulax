@@ -64,5 +64,6 @@ export default {
     "hu": "Élelmiszer-aminosav, OTC étrend-kiegészítő EU-szerte és USA-ban. FDA GRAS minősítés. Magyarországon szabadon kapható.",
     "en": "Food amino acid, OTC dietary supplement throughout the EU and the USA. FDA GRAS status. Freely available in Hungary.",
     "pl": "Aminokwas spożywczy, OTC suplement diety w całej UE i USA. Status FDA GRAS. Wolno dostępna na Węgrzech."
-  }
+  },
+  "chemicalFormula": "C7H14N2O3"
 }

@@ -64,5 +64,6 @@ export default {
     "hu": "USA-ban FDA-jóváhagyott (Nuvigil), DEA Schedule IV. EU-ban legtöbb tagállamban vényköteles. Magyarországon szakorvosi vény szükséges.",
     "en": "FDA-approved in the USA (Nuvigil), DEA Schedule IV. Prescription-only in most EU member states. Hungary requires specialist prescription.",
     "pl": "Zatwierdzony przez FDA w USA (Nuvigil), DEA Schedule IV. Na receptę w większości państw UE. Węgry wymagają recepty specjalistycznej."
-  }
+  },
+  "chemicalFormula": "C15H15NO2S"
 }

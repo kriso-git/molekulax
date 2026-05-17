@@ -64,5 +64,6 @@ export default {
     "hu": "Oroszországban vényköteles gyógyszer. USA-ban az FDA 2015-ben kimondta, hogy nem felel meg az étrend-kiegészítő definíciónak, és kivonatta a piacról. EU egyéb tagállamokban szabályozatlan.",
     "en": "Prescription medicine in Russia. In 2015 the FDA ruled it does not meet the dietary supplement definition and removed it from the US market. Unregulated in other EU member states.",
     "pl": "Lek na receptę w Rosji. W 2015 r. FDA orzekła, że nie spełnia definicji suplementu diety i usunęła go z rynku amerykańskiego. Niezregulowany w innych państwach UE."
-  }
+  },
+  "chemicalFormula": "C10H12N2O3"
 }

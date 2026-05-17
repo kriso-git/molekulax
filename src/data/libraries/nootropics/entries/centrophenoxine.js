@@ -64,5 +64,6 @@ export default {
     "hu": "Magyarországon, Lengyelországban, Csehországban vényköteles (Lucidril). USA-ban nem FDA-jóváhagyott; OTC kiegészítőként árusított.",
     "en": "Prescription-only in Hungary, Poland, Czechia (Lucidril). Not FDA-approved in the USA; sold as a supplement OTC.",
     "pl": "Na receptę na Węgrzech, w Polsce, Czechach (Lucidril). Niezatwierdzony przez FDA w USA; sprzedawany jako suplement OTC."
-  }
+  },
+  "chemicalFormula": "C12H16ClNO3"
 }

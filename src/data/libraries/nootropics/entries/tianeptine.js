@@ -64,5 +64,6 @@ export default {
     "hu": "Vényköteles antidepresszáns Franciaországban, Oroszországban, Magyarországon és számos EU-tagállamban (Coaxil/Stablon). USA-ban FDA nem jóváhagyott; több államban kontrollált anyagként tiltott.",
     "en": "Prescription antidepressant in France, Russia, Hungary and many EU member states (Coaxil/Stablon). Not FDA-approved in the USA; banned as a controlled substance in several states.",
     "pl": "Lek przeciwdepresyjny na receptę we Francji, Rosji, na Węgrzech i w wielu państwach UE (Coaxil/Stablon). Niezatwierdzona przez FDA w USA; zakazana jako substancja kontrolowana w kilku stanach."
-  }
+  },
+  "chemicalFormula": "C21H25ClN2O4S"
 }

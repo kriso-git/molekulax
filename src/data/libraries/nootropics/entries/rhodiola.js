@@ -64,5 +64,7 @@ export default {
     "hu": "EU-ban az EMA HMPC „Traditional Herbal Medicinal Product\" minősítést adta (Rhodiolae rhizoma et radix). USA-ban OTC étrend-kiegészítő. Magyarországon kiegészítőként szabadon kapható.",
     "en": "In the EU, the EMA HMPC granted “Traditional Herbal Medicinal Product” status (Rhodiolae rhizoma et radix). OTC dietary supplement in the USA. Freely available as a supplement in Hungary.",
     "pl": "W UE EMA HMPC nadała status „Tradycyjnego Ziołowego Produktu Leczniczego” (Rhodiolae rhizoma et radix). OTC suplement diety w USA. Wolno dostępna jako suplement na Węgrzech."
-  }
+  },
+  // Primary active constituent: Salidroside
+  "chemicalFormula": "C14H20O7"
 }

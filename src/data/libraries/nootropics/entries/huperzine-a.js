@@ -64,5 +64,6 @@ export default {
     "hu": "Kínában gyógyszerként jóváhagyott (Alzheimer-kór). USA-ban OTC étrend-kiegészítő, EU-ban az adott tagállam besorolása szerint változó. Magyarországon kiegészítőként elérhető.",
     "en": "Approved as a medicine in China (Alzheimer`s). OTC dietary supplement in the USA; classification varies by EU member state. Available as a supplement in Hungary.",
     "pl": "Zatwierdzona jako lek w Chinach (Alzheimer). OTC suplement diety w USA; klasyfikacja różni się między państwami UE. Dostępna jako suplement na Węgrzech."
-  }
+  },
+  "chemicalFormula": "C15H18N2O"
 }

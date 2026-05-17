@@ -64,5 +64,7 @@ export default {
     "hu": "OTC étrend-kiegészítő EU-szerte és USA-ban. Dánia 2020 óta tiltja az ashwagandha-tartalmú étrend-kiegészítőket. Magyarországon kiegészítőként szabadon kapható.",
     "en": "OTC dietary supplement throughout the EU and the USA. Denmark has banned ashwagandha-containing dietary supplements since 2020. Freely available as a supplement in Hungary.",
     "pl": "Suplement diety OTC w całej UE i USA. Dania zakazała suplementów diety zawierających ashwagandhę od 2020 r. Wolno dostępna jako suplement na Węgrzech."
-  }
+  },
+  // Primary active constituent: Withanolide A
+  "chemicalFormula": "C28H38O6"
 }

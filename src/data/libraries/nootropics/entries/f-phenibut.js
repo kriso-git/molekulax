@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja, USA-ban néhány állam (Alabama, Michigan) Schedule II-be sorolja.",
     "en": "Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; classified as Schedule II in several US states (Alabama, Michigan).",
     "pl": "Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; sklasyfikowany jako Schedule II w kilku stanach USA (Alabama, Michigan)."
-  }
+  },
+  "chemicalFormula": "C10H12FNO2"
 }

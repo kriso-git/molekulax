@@ -79,6 +79,7 @@ export default {
   },
   "onsetTime": "5-15 min",
   "halfLife": "20-30 min",
+  "chemicalFormula": "C33H57N11O9",
   "interactionsWith": [
     "benzodiazepines",
     "alcohol",

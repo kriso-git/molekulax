@@ -64,5 +64,6 @@ export default {
     "hu": "Olaszországban vényköteles gyógyszer (Ampamet, Memodrin). EU-n kívül és USA-ban nem FDA-jóváhagyott; OTC kiegészítőként árusítása jogilag szürke zóna.",
     "en": "Prescription drug in Italy (Ampamet, Memodrin). Not FDA-approved outside EU/USA; OTC supplement sales remain a legal grey zone.",
     "pl": "Lek na receptę we Włoszech (Ampamet, Memodrin). Niezatwierdzony przez FDA poza UE/USA; sprzedaż OTC pozostaje w prawnej szarej strefie."
-  }
+  },
+  "chemicalFormula": "C12H13NO3"
 }

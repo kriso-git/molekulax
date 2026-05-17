@@ -79,6 +79,7 @@ export default {
   },
   "onsetTime": "10-15 min",
   "halfLife": "20-30 min",
+  "chemicalFormula": "C37H51N9O10S",
   "interactionsWith": [
     "MAOI",
     "SSRI",

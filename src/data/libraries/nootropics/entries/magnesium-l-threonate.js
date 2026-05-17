@@ -64,5 +64,6 @@ export default {
     "hu": "OTC étrend-kiegészítő EU-szerte és USA-ban. FDA GRAS minősítés a Magtein® márkára. Magyarországon szabadon kapható.",
     "en": "OTC dietary supplement throughout the EU and the USA. FDA GRAS status for the Magtein® brand. Freely available in Hungary.",
     "pl": "Suplement diety OTC w całej UE i USA. Status FDA GRAS dla marki Magtein®. Wolno dostępny na Węgrzech."
-  }
+  },
+  "chemicalFormula": "C8H14MgO10"
 }

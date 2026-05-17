@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer. „Research chemical\" minősítéssel árusított, OTC nootropikum-piacon elérhető.",
     "en": "Not approved as a medicine anywhere. Sold as a “research chemical” on the OTC nootropic market.",
     "pl": "Nie zatwierdzony jako lek nigdzie. Sprzedawany jako „chemikalium badawcze” na rynku nootropików OTC."
-  }
+  },
+  "chemicalFormula": "C19H23N3O3"
 }

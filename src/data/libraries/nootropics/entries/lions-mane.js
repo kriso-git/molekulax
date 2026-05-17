@@ -64,5 +64,6 @@ export default {
     "hu": "Ehető élelmiszer-gomba és OTC étrend-kiegészítő EU-szerte és USA-ban. EU-ban a kivonatok „Novel Food\" engedélyezést igényelhetnek. Magyarországon szabadon kapható.",
     "en": "Edible food mushroom and OTC dietary supplement throughout the EU and the USA. In the EU, extracts may require “Novel Food” authorization. Freely available in Hungary.",
     "pl": "Jadalny grzyb spożywczy i OTC suplement diety w całej UE i USA. W UE ekstrakty mogą wymagać autoryzacji „Nowa Żywność”. Wolno dostępny na Węgrzech."
-  }
+  },
+  "chemicalFormula": "mixture"
 }

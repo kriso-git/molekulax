@@ -64,5 +64,6 @@ export default {
     "hu": "Olaszországban vényköteles. USA-ban nem FDA-jóváhagyott; OTC nootropikum-piacon „research chemical\" minősítéssel árusítják.",
     "en": "Prescription-only in Italy. Not FDA-approved in the USA; sold as a “research chemical” on the OTC nootropic market.",
     "pl": "Na receptę we Włoszech. Niezatwierdzony przez FDA w USA; sprzedawany jako „chemikalium badawcze” na rynku nootropików OTC."
-  }
+  },
+  "chemicalFormula": "C6H10N2O3"
 }

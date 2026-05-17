@@ -64,5 +64,6 @@ export default {
     "hu": "Vényköteles gyógyszer Magyarországon, Ausztriában, Lengyelországban és számos EU/orosz államban. USA-ban nem FDA-jóváhagyott.",
     "en": "Prescription medicine in Hungary, Austria, Poland and many EU/Russian states. Not FDA-approved in the USA.",
     "pl": "Lek na receptę na Węgrzech, w Austrii, Polsce i wielu państwach UE/rosyjskich. Niezatwierdzony przez FDA w USA."
-  }
+  },
+  "chemicalFormula": "mixture"
 }

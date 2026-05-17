@@ -64,5 +64,6 @@ export default {
     "hu": "Sehol nem jóváhagyott gyógyszer. Akadémiai kutatási vegyület; nem szerepel a klasszikus „research chemical\" piacon sem szélesen.",
     "en": "Not approved as a medicine anywhere. Academic research compound; not widely available even on the “research chemical” market.",
     "pl": "Nigdzie nie zatwierdzony jako lek. Akademicki związek badawczy; nawet na rynku „chemikaliów badawczych” niezbyt dostępny."
-  }
+  },
+  "chemicalFormula": "C14H17NO"
 }

@@ -64,5 +64,6 @@ export default {
     "hu": "Oroszországban, Belaruszban, Ukrajnában és néhány FÁK-államban vényköteles. EU és USA nem jóváhagyott.",
     "en": "Prescription-only in Russia, Belarus, Ukraine and several CIS states. Not approved in the EU or USA.",
     "pl": "Na receptę w Rosji, Białorusi, Ukrainie i kilku państwach WNP. Niezatwierdzona w UE ani USA."
-  }
+  },
+  "chemicalFormula": "mixture"
 }
