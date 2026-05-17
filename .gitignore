@@ -10,3 +10,6 @@ scripts/data-pipeline/diff-report/
 
 # Local Lighthouse runs
 lh-*.json
+
+# Brainstorming visual companion artifacts
+.superpowers/
