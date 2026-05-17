@@ -866,6 +866,16 @@ export const peptidesLibrary = {
     "pl": "Masz pytanie dotyczące peptydów?"
   }
 },
+  features: {
+    faq: false,
+    doseRecommendations: false,
+    calculator: true,
+    qualityGrid: true,
+    interactions: true,
+    quickStart: true,
+    labTerminal: true,
+    chemicalFormulaPlaceholder: false,
+  },
 }
 
 // Vite/Rollup template-literal dynamic-import code-splitting: when the

@@ -668,6 +668,16 @@ export const nootropicsLibrary = {
     "pl": "Masz pytanie dotyczące nootropików?"
   }
 },
+  features: {
+    faq: false,
+    doseRecommendations: false,
+    calculator: false,
+    qualityGrid: false,
+    interactions: false,
+    quickStart: false,
+    labTerminal: false,
+    chemicalFormulaPlaceholder: true,
+  },
 }
 
 // Vite/Rollup template-literal dynamic-import code-splitting: when the

@@ -58,6 +58,23 @@ for (const libId of LIBRARIES) {
     }
   }
 
+  // Phase 10 — validate features flag object
+  const exportName = `${libId}Library`
+  const libExport = mod[exportName]
+  const features = libExport?.features
+  const REQUIRED_FLAGS = ['faq', 'doseRecommendations', 'calculator', 'qualityGrid', 'interactions', 'quickStart', 'labTerminal', 'chemicalFormulaPlaceholder']
+  if (!features) {
+    console.error(`❌ ${libId}: library export "${exportName}" is missing 'features' object`)
+    errors++
+  } else {
+    for (const flag of REQUIRED_FLAGS) {
+      if (typeof features[flag] !== 'boolean') {
+        console.error(`❌ ${libId}: features.${flag} must be boolean (got ${typeof features[flag]})`)
+        errors++
+      }
+    }
+  }
+
   console.log(`✅ ${libId}: ${meta.length} entries validated`)
 }
 

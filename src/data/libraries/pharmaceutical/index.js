@@ -846,6 +846,16 @@ export const pharmaceuticalLibrary = {
     "pl": "Masz pytanie o lek?"
   }
 },
+  features: {
+    faq: false,
+    doseRecommendations: false,
+    calculator: false,
+    qualityGrid: false,
+    interactions: false,
+    quickStart: false,
+    labTerminal: true,
+    chemicalFormulaPlaceholder: false,
+  },
 }
 
 // Vite/Rollup template-literal dynamic-import code-splitting: when the
