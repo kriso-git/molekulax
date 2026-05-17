@@ -6,7 +6,7 @@
 // Same data contract as V1 (consumes adaptLibraryEntry output), but the
 // layout, motion, and visualizations are intentionally radical.
 
-import { useState, useEffect, useRef, useMemo } from 'react'
+import { useState, useEffect, useLayoutEffect, useRef, useMemo } from 'react'
 import {
  X, ShieldCheck, ShieldAlert, Atom, Sparkles, Flame, Sprout, Brain,
  Shield, Moon, Heart, Leaf, Activity, Beaker, Rocket, FlaskConical,
@@ -1377,6 +1377,28 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  }
  }, [onClose])
 
+ // Auto-fit H1 name to one line: measure overflow against parent and shrink font-size proportionally.
+ const nameRef = useRef(null)
+ useLayoutEffect(() => {
+ const el = nameRef.current
+ if (!el) return
+ const parent = el.parentElement
+ if (!parent) return
+ const fit = () => {
+ el.style.fontSize = ''
+ const measured = el.scrollWidth
+ const available = parent.clientWidth
+ if (measured > available && available > 0) {
+ const baseSize = parseFloat(getComputedStyle(el).fontSize)
+ el.style.fontSize = `${Math.max(baseSize * (available / measured) * 0.97, 16)}px`
+ }
+ }
+ fit()
+ const ro = new ResizeObserver(fit)
+ ro.observe(parent)
+ return () => ro.disconnect()
+ }, [peptide.name])
+
  if (!peptide) return null
 
  const accent = peptide.accentColor || '#a78bfa'
@@ -1508,9 +1530,11 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
 
  <h1
- className="font-black tracking-tight leading-[1.1] pb-2 mb-3 text-balance"
+ ref={nameRef}
+ className="font-black tracking-tight leading-[1.1] pb-2 mb-3"
  style={{
  fontSize: 'clamp(1.875rem, 5.2vw, 4.5rem)',
+ whiteSpace: 'nowrap',
  background: isLight
  ? `linear-gradient(135deg, #0f172a 0%, ${accent} 55%, ${tierColor} 100%)`
  : `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
