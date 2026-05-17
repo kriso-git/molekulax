@@ -1456,7 +1456,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  <section className="relative grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-8 lg:gap-10 px-6 sm:px-10 pb-10">
  {/* Headline */}
  <div className="relative flex flex-col justify-center order-2 lg:order-1">
- <div className="flex items-center gap-2 mb-4">
+ <div className="flex flex-wrap items-center gap-2 mb-4">
  <span
  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] tracking-[0.22em] uppercase font-bold"
  style={{

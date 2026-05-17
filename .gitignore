@@ -7,3 +7,6 @@ dist/
 # Phase 6: sub-agent data pipeline
 scripts/data-pipeline/cache/
 scripts/data-pipeline/diff-report/
+
+# Local Lighthouse runs
+lh-*.json
