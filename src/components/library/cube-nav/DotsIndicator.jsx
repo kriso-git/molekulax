@@ -3,13 +3,13 @@ import { useLang } from '../../../i18n/LanguageContext'
 // 4 dot, role="tablist" semantikával. Aktív dot hosszúkás pirula Chemical
 // Green-nel; inaktív kis kör. Kattintásra direct-jump az adott library-re
 // (a useCubeIndex.jumpTo a rövidebb irányba fogja forgatni a kockát).
-export default function DotsIndicator({ libraries, currentIndex, onJumpTo }) {
+export default function DotsIndicator({ libraries, currentIndex, onJumpTo, className = '' }) {
   const { lang } = useLang()
   return (
     <div
       role="tablist"
       aria-label="Library selector"
-      className="flex justify-center gap-2 mt-6"
+      className={`flex justify-center gap-2 ${className}`}
     >
       {libraries.map((lib, idx) => {
         const isActive = idx === currentIndex

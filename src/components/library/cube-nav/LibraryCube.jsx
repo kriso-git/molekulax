@@ -9,6 +9,7 @@ import EffectsSection from '../EffectsSection'
 import { useCubeIndex } from './useCubeIndex'
 import CubeFace from './CubeFace'
 import CubeNavControls from './CubeNavControls'
+import DotsIndicator from './DotsIndicator'
 
 const LIBRARY_WORD = { hu: 'könyvtár', en: 'library', pl: 'biblioteka' }
 
@@ -17,7 +18,7 @@ const LIBRARY_WORD = { hu: 'könyvtár', en: 'library', pl: 'biblioteka' }
 // 850ms power3-ease-out feels deliberate without dragging.
 const ROTATION_TRANSITION = {
   type: 'tween',
-  duration: 0.85,
+  duration: 0.7,
   ease: [0.22, 1, 0.36, 1],
 }
 
@@ -48,18 +49,18 @@ export default function LibraryCube() {
   const [halfWidth, setHalfWidth] = useState(0)
   const [faceHeights, setFaceHeights] = useState({ 0: 0, 1: 0, 2: 0, 3: 0 })
 
-  // Cube depth: ultra-shallow (30px). A perspective scaling közvetlen
-  // okozója volt a (1) face bleed-nek a Top10 expanded esetén és (2) blurry
-  // text renderelésnek (non-1.0 scale → sub-pixel rasterization).
-  // halfWidth=30 + perspective=1500 → scale 1.02× = 2%-os bleed, alig
-  // észrevehetően, de a 3D rotation még mindig látszik (face-ek tilt-elnek
-  // foreshortening-gel ahogy fordulnak).
+  // Cube depth: halfWidth=150 + perspective=5000 = scale 1.031.
+  // A 150px térbeli szeparáció a face-ek között megoldja az "intersection"
+  // problémát (két face nem összeakad rotáció közben — face 1 a jobb oldalról
+  // forog be, face 0 a balra hajlik ki). A nagy perspective (5000) miatt a
+  // scaling minimális (1.031 = 3.1% bleed), ami ELegánsan elfér a py-48
+  // padding-ben (192px) még 6000px expanded peptide-content-tel is (180px bleed).
   useEffect(() => {
     if (!wrapperRef.current) return
     const el = wrapperRef.current
     const ro = new ResizeObserver((entries) => {
       const w = entries[0]?.contentRect?.width
-      if (w) setHalfWidth(30)
+      if (w) setHalfWidth(150)
     })
     ro.observe(el)
     return () => ro.disconnect()
@@ -170,7 +171,16 @@ export default function LibraryCube() {
         currentIndex={currentIndex}
         onPrev={prev}
         onNext={next}
+      />
+      {/* DotsIndicator a title-subtitle blokk ÉS a Top10 fejléc KÖZÉ pozicionálva */}
+      {/* (a face content cube-wrapper kezdetétől számolva: title-blokk ~150-170px, */}
+      {/* utána a "10 Legnépszerűbb" h3-fejléc. A dots a kettő közti mb-16 (64px) */}
+      {/* gap-be esik.) Section pad pt-48 = 192. */}
+      <DotsIndicator
+        libraries={libraries}
+        currentIndex={currentIndex}
         onJumpTo={jumpTo}
+        className="absolute left-1/2 -translate-x-1/2 top-[300px] md:top-[340px] z-20"
       />
       {/* Nincs overflow:hidden — a perspective scaling (~1.136x) miatt a face */}
       {/* vizuálisan 100-150px-szel kilóg a wrapper bounds-án, ezt a section */}
@@ -179,7 +189,7 @@ export default function LibraryCube() {
       <div
         ref={wrapperRef}
         className="max-w-6xl mx-auto"
-        style={{ perspective: '1500px' }}
+        style={{ perspective: '5000px' }}
       >
         <motion.div
           id="library-cube-panel"

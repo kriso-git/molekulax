@@ -1,6 +1,5 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLang } from '../../../i18n/LanguageContext'
-import DotsIndicator from './DotsIndicator'
 
 // Kontroll-réteg: bal/jobb nyíl + szomszéd library NÉV-LABEL alá-stack-elve
 // (text-xs uppercase). Desktop/tablet: 50px arrow + label. Mobile: 40px arrow,
@@ -12,7 +11,6 @@ export default function CubeNavControls({
   currentIndex,
   onPrev,
   onNext,
-  onJumpTo,
 }) {
   const { lang } = useLang()
   const count = libraries.length
@@ -26,7 +24,7 @@ export default function CubeNavControls({
   }
 
   const labelClass =
-    'text-xs uppercase tracking-[0.15em] text-[var(--text-tertiary,#94a3b8)] text-center leading-tight max-w-[100px]'
+    'text-xs uppercase tracking-[0.1em] text-[var(--text-tertiary,#94a3b8)] text-center leading-tight max-w-[140px] break-words line-clamp-2'
 
   return (
     <>
@@ -83,12 +81,6 @@ export default function CubeNavControls({
       >
         <ChevronRight size={18} strokeWidth={2.5} />
       </button>
-
-      <DotsIndicator
-        libraries={libraries}
-        currentIndex={currentIndex}
-        onJumpTo={onJumpTo}
-      />
     </>
   )
 }
