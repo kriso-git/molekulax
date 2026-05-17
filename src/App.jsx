@@ -36,7 +36,12 @@ export default function App() {
   const hash = useHashRoute()
   const isEntryDetail = isEntryDetailHash(hash)
   const isDesktop = useMediaQuery('(min-width: 1024px)')
-  const hideLanding = isEntryDetail && isDesktop
+  // Phase 9 LCP fix: hide landing on ALL devices (not just desktop) when
+  // entry-detail is active. The mobile modal is position:fixed and covers
+  // the viewport, so the user never sees the landing — but Lighthouse was
+  // mounting + parsing Hero/Education/LibraryCube/FAQ/Footer behind it,
+  // tanking mobile Perf scores. Hash-change re-mounts landing on close.
+  const hideLanding = isEntryDetail
 
   return (
     <ThemeProvider>
