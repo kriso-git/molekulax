@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/validate-library-meta.mjs && vite build",
     "preview": "vite preview",
+    "validate:meta": "node scripts/validate-library-meta.mjs",
     "normalize-vials": "node scripts/normalize-vials.mjs",
     "pipeline:extract": "node scripts/data-pipeline/extract-sean-notes.mjs",
     "pipeline:scrape": "node scripts/data-pipeline/scrape-dopamine-club.mjs",
