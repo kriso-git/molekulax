@@ -371,9 +371,12 @@ function deriveSafetyProfile(peptide, categoryIds) {
 }
 
 // Related peptides, share at least one category, sorted by overlap count.
+// Phase 9: iterates library.meta (tile-shape records) instead of library.entries
+// (full entry objects no longer exist in-memory eagerly — see loadEntry).
 function deriveRelated(peptide, categoryIds, library) {
  if (!categoryIds.length) return []
- return library.entries
+ const metaList = library?.meta || library?.entries || []
+ return metaList
  .filter(p => p.id !== peptide.id)
  .map(p => {
  const theirIds = (library.entryCategoryMap[p.id] || [])
@@ -384,7 +387,7 @@ function deriveRelated(peptide, categoryIds, library) {
  .sort((a, b) => b.overlap - a.overlap)
  .slice(0, 4)
  .map(x => {
- const tier = library.getResearchLevel(x.peptide)
+ const tier = x.peptide.tier ?? library.getResearchLevel?.(x.peptide) ?? 1
  const meta = getLevelMeta(tier)
  const ids = (library.entryCategoryMap[x.peptide.id] || [])
  const chips = ids

@@ -121,10 +121,15 @@ export default function EntryDetailRoute({ hash }) {
   if (!parsed) return null
 
   // Loading / error states render BEFORE the heavy EntryDetail chunk loads.
+  // Wait for BOTH the entry AND the library (so adaptLibraryEntry can read
+  // library.meta + library.entryCategoryMap + library.categories) before
+  // rendering the detail. Skeleton covers the race window between the two
+  // async loads.
+  const libraryReady = library && library.id === parsed.library
   let body
   if (error) {
     body = <EntryDetailError error={error} onRetry={fetchEntry} onBack={closeDetail} />
-  } else if (loading || !entry) {
+  } else if (loading || !entry || !libraryReady) {
     body = <EntryDetailSkeleton />
   } else {
     const peptide = adaptLibraryEntry(entry, library)
