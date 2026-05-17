@@ -18,13 +18,19 @@ function PhotoFrame({ accentColor, image, name }) {
           filter: 'blur(4px)',
         }}
       />
-      <img
-        src={image}
-        alt={`${name}`}
-        className="relative z-10 w-full h-full object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,0.6)]"
-        loading="lazy"
-        draggable="false"
-      />
+      <picture>
+        <source
+          srcSet={image.replace(/\.png$/i, '.webp')}
+          type="image/webp"
+        />
+        <img
+          src={image}
+          alt={`${name}`}
+          className="relative z-10 w-full h-full object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,0.6)]"
+          loading="lazy"
+          draggable="false"
+        />
+      </picture>
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1.5 w-2/3 rounded-full pointer-events-none"
         style={{

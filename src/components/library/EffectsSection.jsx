@@ -107,13 +107,19 @@ function CategoryVisual({ cat, idx }) {
  const altText = tr(cat.title)
  return (
  <div className="relative w-full h-full overflow-hidden">
- <img
- src={cat.image}
- alt={altText}
- className="absolute inset-0 w-full h-full object-cover"
- loading="lazy"
- draggable="false"
- />
+ <picture>
+   <source
+     srcSet={cat.image.replace(/\.png$/i, '.webp')}
+     type="image/webp"
+   />
+   <img
+     src={cat.image}
+     alt={altText}
+     className="absolute inset-0 w-full h-full object-cover"
+     loading="lazy"
+     draggable="false"
+   />
+ </picture>
  <div className="absolute inset-0" style={{
  background: `radial-gradient(ellipse at 50% 50%, ${cat.color}14 0%, var(--effect-visual-vignette) 80%)`,
  }} />
