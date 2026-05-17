@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import { useLibrary } from '../../../context/LibraryContext'
+import { useLang } from '../../../i18n/LanguageContext'
 import { useMediaQuery } from '../../../hooks/useMediaQuery'
 import LibraryGallery from '../../LibraryGallery'
 import Calculator from '../../Calculator'
@@ -8,6 +9,8 @@ import EffectsSection from '../EffectsSection'
 import { useCubeIndex } from './useCubeIndex'
 import CubeFace from './CubeFace'
 import CubeNavControls from './CubeNavControls'
+
+const LIBRARY_WORD = { hu: 'könyvtár', en: 'library', pl: 'biblioteka' }
 
 const ROTATION_SPRING = {
   type: 'spring',
@@ -28,6 +31,7 @@ const SWIPE_VELOCITY = 300
 
 export default function LibraryCube() {
   const { library, libraryId, setLibraryId } = useLibrary()
+  const { lang } = useLang()
   const { currentIndex, rotationDeg, isFirstRender, libraries, next, prev, jumpTo } =
     useCubeIndex(libraryId, setLibraryId)
 
@@ -95,12 +99,12 @@ export default function LibraryCube() {
         tabIndex={0}
         role="region"
         aria-roledescription="Library selector"
-        aria-label={library.name.hu}
+        aria-label={library.name[lang]}
         onKeyDown={handleKeyDown}
         className="relative outline-none py-28 px-4 scroll-mt-24"
       >
         <span className="sr-only" aria-live="polite" aria-atomic="true">
-          {`${library.name.hu} könyvtár`}
+          {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
         </span>
         <div
           id="library-cube-panel"
@@ -141,12 +145,12 @@ export default function LibraryCube() {
       tabIndex={0}
       role="region"
       aria-roledescription="Library selector"
-      aria-label={library.name.hu}
+      aria-label={library.name[lang]}
       onKeyDown={handleKeyDown}
       className="relative outline-none py-28 px-4 scroll-mt-24"
     >
       <span className="sr-only" aria-live="polite" aria-atomic="true">
-        {`${library.name.hu} könyvtár`}
+        {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
       </span>
       <div
         ref={wrapperRef}
