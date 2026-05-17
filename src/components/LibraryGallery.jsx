@@ -11,7 +11,7 @@ import TelegramButtons from './TelegramButtons'
 import DotsIndicator from './library/cube-nav/DotsIndicator'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
-// New layout (inspired by pep-pedia.org/browse):
+// Tile layout:
 // ▸ image (no hover scale)
 // ▸ peptide name + research-level dot
 // ▸ tier label

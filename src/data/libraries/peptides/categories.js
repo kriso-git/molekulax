@@ -1,4 +1,4 @@
-// Peptide categories — mirroring pep-pedia.org/browse therapeutic groupings.
+// Peptide categories — therapeutic groupings.
 // Each peptide can belong to multiple categories. The filter UI lets users
 // narrow the "Összes Peptid" list by any combination of these tags.
 
@@ -69,7 +69,7 @@ export const PEPTIDE_CATEGORIES = {
   'tesamorelin':         ['growth-factors', 'metabolic'],
   'dihexa':              ['cognitive'],
 
-  // ── Extra (pep-pedia placeholders) ────────────────────────────────────
+  // ── Extra (placeholder entries) ───────────────────────────────────────
   'semaglutide':         ['metabolic'],
   'liraglutide':         ['metabolic'],
   'orforglipron':        ['metabolic'],

@@ -612,8 +612,8 @@ function deriveExpectations(peptide, categoryIds) {
  return CATEGORY_TIMELINE[primary] || CATEGORY_TIMELINE.recovery
 }
 
-// Research indications, pep-pedia style. For each top category, surface
-// 2-4 sub-mechanism bullets. Builds on category + studies' findings.
+// Research indications. For each top category, surface 2-4 sub-mechanism
+// bullets. Builds on category + studies' findings.
 const CATEGORY_INDICATIONS = {
  metabolic: [
  { hu: 'Súlyszabályozás', en: 'Weight regulation', pl: 'Regulacja masy ciała', d: { hu: 'GLP-1 / GIP / glukagon agonizmus által csökkent étvágy és emelt energiafelhasználás.', en: 'Reduced appetite and increased energy expenditure via GLP-1 / GIP / glucagon agonism.', pl: 'Zmniejszony apetyt przez agonizm GLP-1 / GIP.' } },
@@ -790,7 +790,7 @@ function tagToTopic(tagText) {
  if (/immun|t-sejt|t cell|nk|inflamm/.test(t)) return 'immune'
  if (/gi|bél|gut|mucos|nyálk|jelit|stomach/.test(t)) return 'gi'
  if (/gh|growth|hormon|igf/.test(t)) return 'hormone'
- if (/pep-pedia|literatúra|literature|review/.test(t)) return 'pep'
+ if (/literatúra|literature|review/.test(t)) return 'review'
  return null
 }
 

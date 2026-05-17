@@ -10,7 +10,7 @@
 //   4  late-stage      Phase 3 ongoing or regulator approval in a non-US market
 //   3  clinical        Phase 1/2 RCT data in humans
 //   2  preclinical     Animal / in-vitro evidence dominant, no human RCT yet
-//   1  emerging        Limited data, single source or pep-pedia summary only
+//   1  emerging        Limited data, single source only
 
 // Explicit overrides — peptides where the regulatory status is unambiguous
 // and the heuristic alone might miss it.
