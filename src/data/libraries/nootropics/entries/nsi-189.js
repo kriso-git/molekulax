@@ -79,7 +79,7 @@ export default {
   },
   "onsetTime": "1-2 weeks (subjective), 4-6 weeks (plateau)",
   "halfLife": "17-20 h",
-  "chemicalFormula": "C20H26N4O",
+  "chemicalFormula": "C22H30N4O",
   "interactionsWith": [
     "SSRI",
     "SNRI",

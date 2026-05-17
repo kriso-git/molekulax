@@ -79,7 +79,7 @@ export default {
   },
   "onsetTime": "60-90 min",
   "halfLife": "10-14 h",
-  "chemicalFormula": "C17H22N2",
+  "chemicalFormula": "C16H20BrN",
   "interactionsWith": [
     "stimulants",
     "MAOI",
