@@ -1,11 +1,11 @@
-import { useEffect } from 'react'
+import { useEffect, lazy, Suspense } from 'react'
 import { X } from 'lucide-react'
 import { getLibrary } from '../../data/libraries'
 import { adaptLibraryEntry } from './adaptLibraryEntry'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
-import EntryDetail from './EntryDetail'
+const EntryDetail = lazy(() => import('./EntryDetail'))
 
 export function parseEntryHash(hash) {
   if (!hash) return null
@@ -96,7 +96,11 @@ export default function EntryDetailRoute({ hash }) {
   const entryKey = `${library.id}:${peptide.id}`
 
   if (isDesktop) {
-    return <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
+    return (
+      <Suspense fallback={<div style={{ minHeight: 600 }} aria-hidden="true" />}>
+        <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
+      </Suspense>
+    )
   }
 
   return (
@@ -124,7 +128,9 @@ export default function EntryDetailRoute({ hash }) {
         >
           <X size={18} strokeWidth={2.5} />
         </button>
-        <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
+        <Suspense fallback={<div style={{ minHeight: 600 }} aria-hidden="true" />}>
+          <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
+        </Suspense>
       </div>
     </div>
   )
