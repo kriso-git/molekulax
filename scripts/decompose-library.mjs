@@ -73,6 +73,22 @@ function stringifyEntry(entry) {
   return JSON.stringify(entry, (k, v) => (typeof v === 'function' ? undefined : v), 2)
 }
 
+// Maps library id → singular form used inside categories.js exports
+// (e.g. "peptides" → "PEPTIDE" because the file exports PEPTIDE_CATEGORIES,
+// getPeptideCategories — not PEPTIDES_CATEGORIES).
+const SINGULAR = {
+  peptides: 'PEPTIDE',
+  nootropics: 'NOOTROPIC',
+  performance: 'PERFORMANCE',
+  pharmaceutical: 'PHARMACEUTICAL',
+}
+const SINGULAR_CAMEL = {
+  peptides: 'Peptide',
+  nootropics: 'Nootropic',
+  performance: 'Performance',
+  pharmaceutical: 'Pharmaceutical',
+}
+
 function renderLibraryIndex(libId, lib, meta) {
   // Determine which non-entries imports the library still needs. We preserve
   // the original import lines verbatim from a hand-maintained whitelist:
@@ -82,14 +98,15 @@ function renderLibraryIndex(libId, lib, meta) {
   //  - LIBRARY_ENTRY_META (array of meta records)
   //  - <libId>Library object — same shape as before, but entries is REPLACED by a placeholder that just returns meta
   //  - loadEntry(id) async — dynamic-imports entries/<id>.js
-  const className = libId.charAt(0).toUpperCase() + libId.slice(1)
+  const SING = SINGULAR[libId]
+  const SingCamel = SINGULAR_CAMEL[libId]
   const libKey = `${libId}Library`
   return `// Auto-decomposed by scripts/decompose-library.mjs at ${new Date().toISOString()}
 // LIBRARY_ENTRY_META[] is the synchronous metadata array used by tiles + switcher.
 // Full Entry objects live in entries/<id>.js and are loaded via loadEntry(id).
 // All non-entries library-level fields (categories, effects, etc.) are imported as before.
 
-import { CATEGORIES, ${libId.toUpperCase()}_CATEGORIES, get${className}Categories } from './categories.js'
+import { CATEGORIES, ${SING}_CATEGORIES, get${SingCamel}Categories } from './categories.js'
 import { getResearchLevel } from './researchLevel.js'
 import { RESEARCH_LEVELS } from '../shared/researchLevel.js'
 import { EFFECT_CATEGORIES } from './effects.js'
@@ -106,7 +123,7 @@ export const ${libKey} = {
   meta: LIBRARY_ENTRY_META,           // Phase 9: meta-only entries-replacement
   topEntries: TOP_ENTRY_IDS,
   categories: CATEGORIES,
-  entryCategoryMap: ${libId.toUpperCase()}_CATEGORIES,
+  entryCategoryMap: ${SING}_CATEGORIES,
   getResearchLevel,
   researchLevels: RESEARCH_LEVELS,
   effects: EFFECT_CATEGORIES,
@@ -121,7 +138,7 @@ export async function loadEntry(id) {
 }
 
 // Convenience re-exports preserved for legacy consumers.
-export { CATEGORIES, ${libId.toUpperCase()}_CATEGORIES, get${className}Categories, getResearchLevel, EFFECT_CATEGORIES }
+export { CATEGORIES, ${SING}_CATEGORIES, get${SingCamel}Categories, getResearchLevel, EFFECT_CATEGORIES }
 `
 }
 
