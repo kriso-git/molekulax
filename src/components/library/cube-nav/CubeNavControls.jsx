@@ -4,7 +4,7 @@ import DotsIndicator from './DotsIndicator'
 
 // Kontroll-réteg: bal/jobb nyíl + szomszéd library NÉV-LABEL alá-stack-elve
 // (text-xs uppercase). Desktop/tablet: 50px arrow + label. Mobile: 40px arrow,
-// label rejtett. A pozíció `top-[440px] md:top-[640px]` aligned a Top10 grid
+// label rejtett. A pozíció `top-[480px] md:top-[680px]` aligned a Top10 grid
 // függőleges közepével (section py-40 + face title block + Top10 fejlec +
 // fél grid magasság).
 export default function CubeNavControls({
@@ -31,7 +31,7 @@ export default function CubeNavControls({
   return (
     <>
       {/* Desktop/tablet (md+): left arrow + label stack */}
-      <div className="hidden md:flex flex-col items-center gap-2 absolute top-[440px] md:top-[640px] left-2 lg:left-6 z-20">
+      <div className="hidden md:flex flex-col items-center gap-2 absolute top-[480px] md:top-[680px] left-2 lg:left-6 z-20">
         <button
           type="button"
           onClick={onPrev}
@@ -47,7 +47,7 @@ export default function CubeNavControls({
       </div>
 
       {/* Desktop/tablet (md+): right arrow + label stack */}
-      <div className="hidden md:flex flex-col items-center gap-2 absolute top-[440px] md:top-[640px] right-2 lg:right-6 z-20">
+      <div className="hidden md:flex flex-col items-center gap-2 absolute top-[480px] md:top-[680px] right-2 lg:right-6 z-20">
         <button
           type="button"
           onClick={onNext}
@@ -67,7 +67,7 @@ export default function CubeNavControls({
         type="button"
         onClick={onPrev}
         aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
-        className="md:hidden absolute top-[440px] left-2 z-20 flex items-center justify-center rounded-full"
+        className="md:hidden absolute top-[480px] left-2 z-20 flex items-center justify-center rounded-full"
         style={{ width: 40, height: 40, ...arrowBase }}
       >
         <ChevronLeft size={18} strokeWidth={2.5} />
@@ -78,7 +78,7 @@ export default function CubeNavControls({
         type="button"
         onClick={onNext}
         aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
-        className="md:hidden absolute top-[440px] right-2 z-20 flex items-center justify-center rounded-full"
+        className="md:hidden absolute top-[480px] right-2 z-20 flex items-center justify-center rounded-full"
         style={{ width: 40, height: 40, ...arrowBase }}
       >
         <ChevronRight size={18} strokeWidth={2.5} />

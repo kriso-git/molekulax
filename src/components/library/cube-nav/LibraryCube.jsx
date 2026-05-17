@@ -48,17 +48,18 @@ export default function LibraryCube() {
   const [halfWidth, setHalfWidth] = useState(0)
   const [faceHeights, setFaceHeights] = useState({ 0: 0, 1: 0, 2: 0, 3: 0 })
 
-  // Cube depth: a "shallow box" approach. translateZ(halfWidth/2) jó lenne
-  // egy igazi kockához, de a face-content magas (gallery+effects+calc, 1500-
-  // 2500px), így minden depth perspective-scaling-gel csordultivá teszi a
-  // face-t. Fix shallow depth (180px) + perspective 1500px → scale ~1.14×,
-  // 3D-rotation látható de a face vizuálisan a wrapper bounds-on belül marad.
+  // Cube depth: ultra-shallow (30px). A perspective scaling közvetlen
+  // okozója volt a (1) face bleed-nek a Top10 expanded esetén és (2) blurry
+  // text renderelésnek (non-1.0 scale → sub-pixel rasterization).
+  // halfWidth=30 + perspective=1500 → scale 1.02× = 2%-os bleed, alig
+  // észrevehetően, de a 3D rotation még mindig látszik (face-ek tilt-elnek
+  // foreshortening-gel ahogy fordulnak).
   useEffect(() => {
     if (!wrapperRef.current) return
     const el = wrapperRef.current
     const ro = new ResizeObserver((entries) => {
       const w = entries[0]?.contentRect?.width
-      if (w) setHalfWidth(180)
+      if (w) setHalfWidth(30)
     })
     ro.observe(el)
     return () => ro.disconnect()
@@ -157,7 +158,7 @@ export default function LibraryCube() {
       aria-roledescription="Library selector"
       aria-label={library.name[lang]}
       onKeyDown={handleKeyDown}
-      className="relative outline-none py-40 px-4 scroll-mt-24"
+      className="relative outline-none py-48 px-4 scroll-mt-24"
     >
       <span className="sr-only" aria-live="polite" aria-atomic="true">
         {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
@@ -205,7 +206,6 @@ export default function LibraryCube() {
               width: '100%',
               height: '100%',
               transformStyle: 'preserve-3d',
-              willChange: 'transform',
             }}
           >
             {libraries.map((lib, idx) => (
