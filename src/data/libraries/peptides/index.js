@@ -2,11 +2,11 @@
 // abstraction. Shape matches the Library typedef in ../shape.js.
 // Phase 4: effects, effectsTitle, effectsSubtitle, description added.
 
-import { PEPTIDES, TOP10_ORDER } from './data'
-import { CATEGORIES, PEPTIDE_CATEGORIES, getPeptideCategories } from './categories'
-import { getResearchLevel } from './researchLevel'
-import { RESEARCH_LEVELS } from '../shared/researchLevel'
-import { EFFECT_CATEGORIES } from './effects'
+import { PEPTIDES, TOP10_ORDER } from './data.js'
+import { CATEGORIES, PEPTIDE_CATEGORIES, getPeptideCategories } from './categories.js'
+import { getResearchLevel } from './researchLevel.js'
+import { RESEARCH_LEVELS } from '../shared/researchLevel.js'
+import { EFFECT_CATEGORIES } from './effects.js'
 
 export const peptidesLibrary = {
  id: 'peptides',

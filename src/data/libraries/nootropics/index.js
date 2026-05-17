@@ -1,11 +1,11 @@
 // Nootropic Library, the second concrete Library plugged into the Phase 3
 // abstraction. Shape matches the Library typedef in ../shape.js.
 
-import { NOOTROPICS, TOP10_ORDER } from './data'
-import { CATEGORIES, NOOTROPIC_CATEGORIES, getNootropicCategories } from './categories'
-import { getResearchLevel } from './researchLevel'
-import { EFFECT_CATEGORIES } from './effects'
-import { RESEARCH_LEVELS } from '../shared/researchLevel'
+import { NOOTROPICS, TOP10_ORDER } from './data.js'
+import { CATEGORIES, NOOTROPIC_CATEGORIES, getNootropicCategories } from './categories.js'
+import { getResearchLevel } from './researchLevel.js'
+import { EFFECT_CATEGORIES } from './effects.js'
+import { RESEARCH_LEVELS } from '../shared/researchLevel.js'
 
 export const nootropicsLibrary = {
  id: 'nootropics',

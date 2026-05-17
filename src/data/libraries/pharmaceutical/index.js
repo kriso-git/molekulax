@@ -6,11 +6,11 @@
 // Phase 6 / Session 4 MVP release-point: skeleton with 7 categories + 8 effect tiles,
 // empty entries array (entries land in Session 5-6, Task 16-23).
 
-import { PHARMACEUTICAL, TOP10_ORDER } from './data'
-import { CATEGORIES, PHARMACEUTICAL_CATEGORIES, getPharmaceuticalCategories } from './categories'
-import { getResearchLevel } from './researchLevel'
-import { EFFECT_CATEGORIES } from './effects'
-import { RESEARCH_LEVELS } from '../shared/researchLevel'
+import { PHARMACEUTICAL, TOP10_ORDER } from './data.js'
+import { CATEGORIES, PHARMACEUTICAL_CATEGORIES, getPharmaceuticalCategories } from './categories.js'
+import { getResearchLevel } from './researchLevel.js'
+import { EFFECT_CATEGORIES } from './effects.js'
+import { RESEARCH_LEVELS } from '../shared/researchLevel.js'
 
 export const pharmaceuticalLibrary = {
   id: 'pharmaceutical',

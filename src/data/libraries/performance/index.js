@@ -2,11 +2,11 @@
 // abstraction. Shape matches the Library typedef in ../shape.js.
 // User-decision: SARMs are excluded from this library entirely.
 
-import { PERFORMANCE, TOP10_ORDER } from './data'
-import { CATEGORIES, PERFORMANCE_CATEGORIES, getPerformanceCategories } from './categories'
-import { getResearchLevel } from './researchLevel'
-import { EFFECT_CATEGORIES } from './effects'
-import { RESEARCH_LEVELS } from '../shared/researchLevel'
+import { PERFORMANCE, TOP10_ORDER } from './data.js'
+import { CATEGORIES, PERFORMANCE_CATEGORIES, getPerformanceCategories } from './categories.js'
+import { getResearchLevel } from './researchLevel.js'
+import { EFFECT_CATEGORIES } from './effects.js'
+import { RESEARCH_LEVELS } from '../shared/researchLevel.js'
 
 export const performanceLibrary = {
   id: 'performance',
