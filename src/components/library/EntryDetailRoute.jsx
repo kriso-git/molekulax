@@ -1,10 +1,18 @@
-import { useEffect, useState, lazy, Suspense } from 'react'
+// Hash-driven route that mounts EntryDetail in the right form factor
+// (desktop full-page, mobile modal). Phase 9: fetches the entry data via
+// loadEntry() so deep-link landings download only the requested entry,
+// not the full library. Reacts to loading/error states with skeleton +
+// retry CTA.
+
+import { useCallback, useEffect, useState, lazy, Suspense } from 'react'
 import { X } from 'lucide-react'
-import { getLibrary, loadLibrary } from '../../data/libraries'
+import { getLibrary } from '../../data/libraries'
 import { adaptLibraryEntry } from './adaptLibraryEntry'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
+import { EntryDetailSkeleton, EntryDetailError } from './entry-detail/skeleton'
+
 const EntryDetail = lazy(() => import('./EntryDetail'))
 
 export function parseEntryHash(hash) {
@@ -24,26 +32,11 @@ export default function EntryDetailRoute({ hash }) {
   const parsed = parseEntryHash(hash)
   const isDesktop = useMediaQuery('(min-width: 1024px)')
   const { t } = useLang()
-  const { libraryId, setLibraryId } = useLibrary()
+  const { library, libraryId, setLibraryId, loadEntry, getCachedEntry } = useLibrary()
 
-  const [library, setLibrary] = useState(() => {
-    if (!parsed) return null
-    const cached = getLibrary(parsed.library)
-    // Return only if it has entries (i.e., it's the full library, not just META)
-    return cached && Array.isArray(cached.entries) ? cached : null
-  })
-
-  useEffect(() => {
-    if (!parsed) { setLibrary(null); return }
-    let cancelled = false
-    loadLibrary(parsed.library).then((lib) => {
-      if (!cancelled) setLibrary(lib)
-    })
-    return () => { cancelled = true }
-  }, [parsed?.library])
-
-  const liveEntry = parsed && library ? library.entries.find(e => e.id === parsed.id) : null
-  const peptide = liveEntry ? adaptLibraryEntry(liveEntry, library) : null
+  const [entry, setEntry] = useState(null)
+  const [error, setError] = useState(null)
+  const [loading, setLoading] = useState(false)
 
   // Sync the active library context with the hash. If a visitor deep-links
   // to #entry/nootropics/<id> while the in-memory library is still the
@@ -53,6 +46,36 @@ export default function EntryDetailRoute({ hash }) {
       setLibraryId(parsed.library)
     }
   }, [parsed?.library, libraryId, setLibraryId])
+
+  // Phase 9: async per-entry loader. Each deep-link only pulls one entry's
+  // chunk, not the whole library.
+  const fetchEntry = useCallback(async () => {
+    if (!parsed) {
+      setEntry(null)
+      setError(null)
+      return
+    }
+    const cached = getCachedEntry(parsed.library, parsed.id)
+    if (cached) {
+      setEntry(cached)
+      setError(null)
+      setLoading(false)
+      return
+    }
+    setLoading(true)
+    setError(null)
+    try {
+      const e = await loadEntry(parsed.library, parsed.id)
+      setEntry(e)
+    } catch (err) {
+      setError(err)
+      setEntry(null)
+    } finally {
+      setLoading(false)
+    }
+  }, [parsed?.library, parsed?.id, loadEntry, getCachedEntry])
+
+  useEffect(() => { fetchEntry() }, [fetchEntry])
 
   // Library-aware close: snap the LibraryContext to the current library
   // BEFORE the hash change re-renders the landing, then nav to #library.
@@ -78,15 +101,11 @@ export default function EntryDetailRoute({ hash }) {
   }, [isDesktop])
 
   useEffect(() => {
-    if (isDesktop) return
+    if (isDesktop || !parsed) return
     const prev = document.body.style.overflow
     document.body.style.overflow = 'hidden'
     return () => { document.body.style.overflow = prev }
-  }, [isDesktop])
-
-  useEffect(() => {
-    if (parsed && library && !liveEntry) closeDetail()
-  }, [parsed, library, liveEntry])
+  }, [isDesktop, parsed])
 
   // Smooth-scroll to top whenever the active entry changes (e.g. clicking a
   // RelatedCard navigates from #entry/.../A to #entry/.../B). Without this,
@@ -99,33 +118,40 @@ export default function EntryDetailRoute({ hash }) {
     })
   }, [parsed?.library, parsed?.id])
 
-  // While the library data is still loading, render nothing (the modal/page
-  // is invisible until the entry is resolved).
-  if (!peptide) return null
+  if (!parsed) return null
 
-  const handleJump = (id) => {
-    window.location.hash = `entry/${library.id}/${id}`
-  }
-
-  // Keying on library:id forces React to fully remount EntryDetail when the
-  // user navigates to a different entry. This prevents the stale name/title
-  // flash that occurred when only props changed in-place during hashchange.
-  const entryKey = `${library.id}:${peptide.id}`
-
-  if (isDesktop) {
-    return (
-      <Suspense fallback={<div style={{ minHeight: 600 }} aria-hidden="true" />}>
+  // Loading / error states render BEFORE the heavy EntryDetail chunk loads.
+  let body
+  if (error) {
+    body = <EntryDetailError error={error} onRetry={fetchEntry} onBack={closeDetail} />
+  } else if (loading || !entry) {
+    body = <EntryDetailSkeleton />
+  } else {
+    const peptide = adaptLibraryEntry(entry, library)
+    const handleJump = (id) => {
+      if (parsed?.library) {
+        window.location.hash = `entry/${parsed.library}/${id}`
+      }
+    }
+    // Keying on library:id forces React to fully remount EntryDetail when the
+    // user navigates to a different entry. This prevents the stale name/title
+    // flash that occurred when only props changed in-place during hashchange.
+    const entryKey = `${parsed.library}:${peptide.id}`
+    body = (
+      <Suspense fallback={<EntryDetailSkeleton />}>
         <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
       </Suspense>
     )
   }
+
+  if (isDesktop) return body
 
   return (
     <div
       className="fixed inset-0 z-40 overflow-y-auto"
       role="dialog"
       aria-modal="true"
-      aria-label={peptide.name}
+      aria-label={entry?.name || 'Entry'}
     >
       <div
         onClick={closeDetail}
@@ -145,9 +171,7 @@ export default function EntryDetailRoute({ hash }) {
         >
           <X size={18} strokeWidth={2.5} />
         </button>
-        <Suspense fallback={<div style={{ minHeight: 600 }} aria-hidden="true" />}>
-          <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
-        </Suspense>
+        {body}
       </div>
     </div>
   )

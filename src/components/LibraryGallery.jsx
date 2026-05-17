@@ -22,7 +22,9 @@ import DotsIndicator from './library/cube-nav/DotsIndicator'
 
 function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  const isPlaceholder = !peptide.image
- const level = library.getResearchLevel(peptide)
+ // Phase 9: tier is precomputed in LIBRARY_ENTRY_META so tiles don't need
+ // the full entry to render the research-level dot.
+ const level = peptide.tier ?? library.getResearchLevel?.(peptide) ?? 1
  const levelMeta = getLevelMeta(level)
  const catIds = (library.entryCategoryMap[peptide.id] || [])
  const accent = peptide.accentColor
@@ -254,15 +256,20 @@ export default function LibraryGallery({
  const { library: ctxLibrary } = useLibrary()
  const library = libraryProp || ctxLibrary
 
+ // Phase 9: meta-only iteration. library.meta is the synchronous
+ // LIBRARY_ENTRY_META array — full entries are loaded on demand via
+ // useLibrary().loadEntry(libraryId, entryId) when a tile is clicked.
+ const metaList = library.meta || library.entries || []
+
  const top10 = useMemo(
- () => library.topEntries.map(id => library.entries.find(p => p.id === id)).filter(Boolean),
- [library]
+ () => library.topEntries.map(id => metaList.find(p => p.id === id)).filter(Boolean),
+ [library, metaList]
  )
 
  // Apply search + category filter + research-level filter, then sort.
  const filteredAll = useMemo(() => {
  const q = query.trim().toLowerCase()
- const matched = library.entries.filter(p => {
+ const matched = metaList.filter(p => {
  if (q) {
  const name = p.name.toLowerCase()
  const short = (tr(p.shortDesc) || '').toLowerCase()
@@ -274,13 +281,13 @@ export default function LibraryGallery({
  if (!hasMatch) return false
  }
  if (levelFilters.length > 0) {
- const lvl = library.getResearchLevel(p)
+ const lvl = p.tier ?? library.getResearchLevel?.(p) ?? 1
  if (!levelFilters.includes(lvl)) return false
  }
  return true
  })
- return matched.sort(makeSortComparator(library.getResearchLevel, sortMode))
- }, [library, query, lang, activeFilters, levelFilters, sortMode])
+ return matched.sort(makeSortComparator(m => m.tier ?? library.getResearchLevel?.(m) ?? 1, sortMode))
+ }, [library, metaList, query, lang, activeFilters, levelFilters, sortMode])
 
 
  const toggleExpanded = () => {
@@ -383,7 +390,7 @@ export default function LibraryGallery({
  {library.labels?.allTitle ? tr(library.labels.allTitle) : t('gal.all.title')}
  </h3>
  <p className="text-gray-500 text-xs mt-0.5">
- {library.entries.length} {library.labels?.allCount ? tr(library.labels.allCount) : t('gal.all.count')}
+ {metaList.length} {library.labels?.allCount ? tr(library.labels.allCount) : t('gal.all.count')}
  </p>
  </div>
  </div>

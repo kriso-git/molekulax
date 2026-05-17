@@ -1,11 +1,19 @@
 // LibraryContext — Phase 3 abstraction that exposes the active library to
 // gallery + detail components. Phase 7 added sessionStorage persistence
 // (F5 keeps you on the same library) and hash-deep-link priority. Phase 8
-// makes the library full-data load lazy: each library's content arrives
-// asynchronously on first navigation, keeping the main bundle small.
+// makes library data lazy. Phase 9 adds per-entry caching and a loadEntry
+// helper so EntryDetail deep-links can fetch one entry without pulling the
+// entire library bundle.
 
-import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import { getLibrary, listLibraries, loadLibrary, DEFAULT_LIBRARY_ID } from '../data/libraries'
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
+import {
+  getLibrary,
+  listLibraries,
+  loadLibrary,
+  loadEntry as loadEntryFromRegistry,
+  getCachedEntry,
+  DEFAULT_LIBRARY_ID,
+} from '../data/libraries'
 
 const STORAGE_KEY = 'molekulax:libraryId'
 
@@ -15,6 +23,8 @@ export const LibraryContext = createContext({
   setLibraryId: () => {},
   availableLibraries: [],
   isLoading: false,
+  loadEntry: async () => null,
+  getCachedEntry: () => null,
 })
 
 function readInitialLibraryId(defaultId) {
@@ -50,13 +60,19 @@ export function LibraryProvider({ children, defaultId = DEFAULT_LIBRARY_ID }) {
     return () => { cancelled = true }
   }, [libraryId])
 
+  const loadEntry = useCallback(async (lib, id) => {
+    return loadEntryFromRegistry(lib, id)
+  }, [])
+
   const value = useMemo(() => ({
     library,
     libraryId,
     setLibraryId,
     availableLibraries: listLibraries(),
     isLoading,
-  }), [library, libraryId, isLoading])
+    loadEntry,
+    getCachedEntry,
+  }), [library, libraryId, isLoading, loadEntry])
 
   return (
     <LibraryContext.Provider value={value}>
