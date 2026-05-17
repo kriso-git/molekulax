@@ -86,3 +86,39 @@ export async function loadLibrary(id) {
 }
 
 export const DEFAULT_LIBRARY_ID = 'peptides'
+
+// Phase 9 — Entry-level cache and loader. Keyed by `<libraryId>:<entryId>`.
+// The entry-file lives in libraries/<lib>/entries/<id>.js and default-exports
+// the full Entry object. Each library's index.js also exports its own
+// loadEntry(id) helper; this top-level loadEntry(lib, id) routes to the
+// right module without forcing the consumer to know about the per-library
+// helpers.
+const entryCache = new Map()
+
+export async function loadEntry(libraryId, entryId) {
+  const key = `${libraryId}:${entryId}`
+  if (entryCache.has(key)) return entryCache.get(key)
+  let mod = null
+  switch (libraryId) {
+    case 'peptides':       mod = await import('./peptides');       break
+    case 'nootropics':     mod = await import('./nootropics');     break
+    case 'performance':    mod = await import('./performance');    break
+    case 'pharmaceutical': mod = await import('./pharmaceutical'); break
+    default: throw new Error(`Unknown library: ${libraryId}`)
+  }
+  if (typeof mod.loadEntry !== 'function') {
+    throw new Error(`Library ${libraryId} does not expose loadEntry`)
+  }
+  const entry = await mod.loadEntry(entryId)
+  if (!entry) {
+    const err = new Error(`Entry not found: ${libraryId}/${entryId}`)
+    err.code = 'ENTRY_NOT_FOUND'
+    throw err
+  }
+  entryCache.set(key, entry)
+  return entry
+}
+
+export function getCachedEntry(libraryId, entryId) {
+  return entryCache.get(`${libraryId}:${entryId}`) || null
+}
