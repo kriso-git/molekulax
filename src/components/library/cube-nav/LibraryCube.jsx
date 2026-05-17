@@ -35,7 +35,12 @@ export default function LibraryCube() {
   const { currentIndex, rotationDeg, isFirstRender, libraries, next, prev, jumpTo } =
     useCubeIndex(libraryId, setLibraryId)
 
-  const reduceMotion = useReducedMotion()
+  // NOTE: useReducedMotion override — Phase 7 smoke showed the cube was
+  // entering the reduced-motion branch (cross-fade only, no 3D) even with
+  // OS reduce-motion disabled. Forcing the 3D branch to always run until
+  // we can verify the framer-motion v11 hook reliably.
+  const _reduceMotionRaw = useReducedMotion()
+  const reduceMotion = false  // was: _reduceMotionRaw
   const isTouch = useMediaQuery('(pointer: coarse)')
   const wrapperRef = useRef(null)
   const sectionRef = useRef(null)
@@ -155,7 +160,7 @@ export default function LibraryCube() {
       <div
         ref={wrapperRef}
         className="max-w-6xl mx-auto relative"
-        style={{ perspective: '1800px' }}
+        style={{ perspective: '1000px' }}
       >
         <motion.div
           id="library-cube-panel"
