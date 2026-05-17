@@ -243,6 +243,7 @@ export default function LibraryGallery({
   onDotsJumpTo,
 } = {}) {
  const [expanded, setExpanded] = useState(false)
+ const [hasOpened, setHasOpened] = useState(false)
  const [showFilters, setShowFilters] = useState(false)
  const [query, setQuery] = useState('')
  const [activeFilters, setActiveFilters] = useState([]) // category id list
@@ -286,6 +287,7 @@ export default function LibraryGallery({
  setExpanded(prev => {
  const next = !prev
  if (next) {
+ setHasOpened(true)
  setTimeout(() => {
  allSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
  }, 200)
@@ -398,6 +400,8 @@ export default function LibraryGallery({
  }`}
  >
  <div className="overflow-hidden">
+ {hasOpened && (
+ <>
 
  {/* ── Help callout, Telegram CTA above the search ─────── */}
  <div
@@ -607,6 +611,8 @@ export default function LibraryGallery({
  />
  ))}
  </div>
+ )}
+ </>
  )}
  </div>
  </div>

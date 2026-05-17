@@ -7,7 +7,10 @@ import { readdir, stat } from 'node:fs/promises'
 import { join } from 'node:path'
 
 const ROOT = 'public/peptides'
-const RESIZE_THRESHOLD = 1024
+// Phase 8 perf-pass (Task 7d): reduced from 1024 → 768. Tile display
+// sizes are 150-500px depending on viewport; 768w covers 2× DPI mobile
+// and desktop without serving oversized images.
+const RESIZE_THRESHOLD = 768
 const WEBP_QUALITY = 80
 const WEBP_EFFORT = 6
 
