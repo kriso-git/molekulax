@@ -1508,7 +1508,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
 
  <h1
- className="font-black tracking-tight leading-[1.1] pb-2 text-5xl sm:text-6xl lg:text-7xl mb-3"
+ className="font-black tracking-tight leading-[1.1] pb-2 text-5xl sm:text-6xl lg:text-7xl mb-3 text-balance"
  style={{
  background: isLight
  ? `linear-gradient(135deg, #0f172a 0%, ${accent} 55%, ${tierColor} 100%)`
@@ -1521,7 +1521,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  : `drop-shadow(0 4px 24px ${accent}55)`,
  }}
  >
- {peptide.name}
+ {peptide.name?.replace(/-/g, '‑')}
  </h1>
 
  {peptide.fullName && peptide.fullName !== peptide.name && (
@@ -2107,8 +2107,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  <p className="text-[10px] tracking-[0.3em] uppercase font-bold mb-2" style={{ color: accent }}>
  Telegram
  </p>
- <h3 className="text-2xl font-bold tracking-tight mb-1.5" style={{ color: 'var(--text-primary)' }}>
- {(t('entry.cta.title') || 'Kérdésed van a {name}-ről?').replace('{name}', peptide.name)}
+ <h3 className="text-2xl font-bold tracking-tight mb-1.5 text-balance" style={{ color: 'var(--text-primary)' }}>
+ {(t('entry.cta.title') || 'Kérdésed van a {name}-ről?').replace('{name}', peptide.name).replace(/-/g, '‑')}
  </h3>
  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
  {t('entry.cta.body') || 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk.'}
