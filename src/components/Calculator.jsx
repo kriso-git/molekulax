@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useId } from 'react'
 import { FlaskConical, CalendarDays, BookOpen, ChevronDown, Info } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
 
@@ -53,23 +53,27 @@ const REF_TABLE = [
 ]
 
 function InputField({ label, value, onChange, min, step, suffix, hint }) {
+ const id = useId()
+ const hintId = hint ? `${id}-hint` : undefined
  return (
  <div className="flex flex-col gap-1.5">
- <label className="text-xs text-gray-500 font-semibold uppercase tracking-widest">
+ <label htmlFor={id} className="text-xs text-gray-500 font-semibold uppercase tracking-widest">
  {label}
  </label>
  <div className="flex items-center gap-2">
  <input
+ id={id}
  type="number"
  min={min ?? 0}
  step={step ?? 'any'}
  value={value}
  onChange={e => onChange(e.target.value)}
+ aria-describedby={hintId}
  className="w-full bg-white/[0.06] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm font-medium focus:outline-none focus:border-[rgba(129,140,248,0.5)] transition-colors duration-200"
  />
  {suffix && <span className="text-gray-500 text-xs shrink-0 font-semibold">{suffix}</span>}
  </div>
- {hint && <p className="text-gray-600 text-xs">{hint}</p>}
+ {hint && <p id={hintId} className="text-gray-600 text-xs">{hint}</p>}
  </div>
  )
 }
@@ -85,6 +89,7 @@ function ResultRow({ label, value, highlight }) {
 
 function ReconTab() {
  const { t } = useLang()
+ const peptideSelectId = useId()
  const [peptideIdx, setPeptideIdx] = useState(0)
  const [vialMg, setVialMg] = useState(PEPTIDES[0].vial ?? 5)
  const [bacMl, setBacMl] = useState(2)
@@ -120,11 +125,12 @@ function ReconTab() {
  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
  <div className="flex flex-col gap-5">
  <div className="flex flex-col gap-1.5">
- <label className="text-xs text-gray-500 font-semibold uppercase tracking-widest">
+ <label htmlFor={peptideSelectId} className="text-xs text-gray-500 font-semibold uppercase tracking-widest">
  {t('calc.peptide')}
  </label>
  <div className="relative">
  <select
+ id={peptideSelectId}
  value={peptideIdx}
  onChange={e => handlePeptideChange(Number(e.target.value))}
  className="w-full appearance-none bg-white/[0.06] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm font-medium focus:outline-none focus:border-[rgba(129,140,248,0.5)] transition-colors duration-200 cursor-pointer"

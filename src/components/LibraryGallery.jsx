@@ -41,7 +41,6 @@ function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  ` 0 1px 2px rgba(0,0,0,0.10),` +
  ` 0 8px 24px -16px ${accent}33`,
  }}
- aria-label={peptide.name}
  >
  {/* Accent gradient wash, always visible, intensifies on hover.
  Top wash + diagonal + a softer bottom-up halo so the card looks

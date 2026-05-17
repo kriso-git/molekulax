@@ -41,7 +41,9 @@ export default function LanguageSwitcher() {
         }}
         onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--border-accent-strong)'; e.currentTarget.style.boxShadow = '0 0 18px var(--shadow-accent)' }}
         onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--border-accent)'; e.currentTarget.style.boxShadow = 'none' }}
-        aria-label="Language"
+        aria-label={`Language: ${meta.short}`}
+        aria-haspopup="listbox"
+        aria-expanded={open}
       >
         <Globe size={12} className="text-[#818cf8]" />
         <span className="leading-none">{meta.short}</span>
