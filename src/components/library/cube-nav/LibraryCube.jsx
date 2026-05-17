@@ -36,11 +36,15 @@ export default function LibraryCube() {
   const { currentIndex, rotationDeg, isFirstRender, libraries, next, prev, jumpTo } =
     useCubeIndex(libraryId, setLibraryId)
 
-  // Phase 7 smoke iter: framer-motion v11 `useReducedMotion` reported `true`
-  // even when the OS preference was "no preference" (false positive), so the
-  // cube always entered the cross-fade fallback. Replaced with native
-  // matchMedia via `useMediaQuery` — SSR-safe, reactive, no false positives.
-  const reduceMotion = useMediaQuery('(prefers-reduced-motion: reduce)')
+  // Design decision (Phase 7, 2026-05-17): the 3D cube is the primary
+  // library navigation paradigm, NOT decorative animation — disabling it
+  // under `prefers-reduced-motion` would hide the entire navigation
+  // affordance. Smoke iter confirmed users with OS reduce-motion ON still
+  // expect the cube to rotate. The cross-fade branch below is kept as
+  // dead-code in case we later add an explicit in-app "Reduce motion"
+  // toggle that opts into it. WCAG 2.3.3 exemption: every cube rotation
+  // is user-input-triggered (swipe/click/keyboard), never autoplay.
+  const reduceMotion = false
   const isTouch = useMediaQuery('(pointer: coarse)')
   const wrapperRef = useRef(null)
   const sectionRef = useRef(null)
