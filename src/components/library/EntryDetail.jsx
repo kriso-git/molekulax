@@ -1096,9 +1096,11 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  const { theme } = useTheme()
  const { library } = useLibrary()
  const isLight = theme === 'light'
- const hasCalc = (library?.id === 'peptides' && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg)
- || (library?.id === 'performance' && peptide.doseCalc)
- || (library?.id === 'pharmaceutical' && peptide.doseCalc)
+ // Phase 10: calculator only on libraries with features.calculator (peptides).
+ const hasCalc = !!(library?.features?.calculator
+ && peptide.miniCalc?.vialMg
+ && peptide.miniCalc?.bacMl
+ && peptide.miniCalc?.doseMcg)
  const relatedLabel = library?.labels?.relatedLabel ? tr(library.labels.relatedLabel) : (t('entry.rel.label') || 'Kapcsolódó peptidek')
  const [tab, setTab] = useState('molecular')
  const [entered, setEntered] = useState(false)
@@ -1485,7 +1487,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </section>
  )}
 
- {/* ─── TABBED RAIL: molecular / dosing / studies ─── */}
+ {/* ─── TABBED RAIL: molecular / dosing / studies ─── Phase 10 flag-gated ─── */}
+ {library?.features?.labTerminal && (
  <section className="relative px-6 sm:px-10 pb-10">
  <div className="flex flex-wrap items-end justify-between gap-4 mb-5">
  <div>
@@ -1556,6 +1559,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
  )}
  </section>
+ )}
 
  {/* ─── RESEARCH INDICATIONS (deep accordion with sub-mechanisms) ─── */}
  {peptide.indications?.length > 0 && (
@@ -1589,8 +1593,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </section>
  )}
 
- {/* ─── RECONSTITUTE PROTOCOL (DNA-strand numbered list) ─── */}
- {peptide.reconstitute?.length > 0 && (
+ {/* ─── RECONSTITUTE PROTOCOL (DNA-strand numbered list) ─── Phase 10 flag-gated ─── */}
+ {library?.features?.quickStart && peptide.reconstitute?.length > 0 && (
  <section className="relative px-6 sm:px-10 pb-10">
  <div className="flex flex-wrap items-end justify-between gap-3 mb-4">
  <div>
@@ -1665,8 +1669,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </section>
  )}
 
- {/* ─── DOSING (separate section) ─── */}
- {peptide.dosing && (peptide.dosing.notes || peptide.dosing.typical || peptide.dosing.range || peptide.dosing.timeline?.length > 0) && (
+ {/* ─── DOSING (separate section) ─── Phase 10 flag-gated ─── */}
+ {library?.features?.doseRecommendations && peptide.dosing && (peptide.dosing.notes || peptide.dosing.typical || peptide.dosing.range || peptide.dosing.timeline?.length > 0) && (
  <section className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Syringe} label={t('entry.dose.label') || 'Adagolás'} accent={accent} />
  <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
@@ -1676,8 +1680,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </section>
  )}
 
- {/* ─── QUALITY INDICATORS ─── */}
- {peptide.qualityIndicators?.length > 0 && (
+ {/* ─── QUALITY INDICATORS ─── Phase 10 flag-gated ─── */}
+ {library?.features?.qualityGrid && peptide.qualityIndicators?.length > 0 && (
  <section className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={ClipboardList} label={t('entry.qua.label') || 'Minőségi jelzők'} accent={accent} />
  <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
@@ -1694,8 +1698,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </section>
  )}
 
- {/* ─── INTERACTIONS / STACKS ─── */}
- {peptide.interactions?.length > 0 && (
+ {/* ─── INTERACTIONS / STACKS ─── Phase 10 flag-gated ─── */}
+ {library?.features?.interactions && peptide.interactions?.length > 0 && (
  <section className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Network} label={t('entry.int.label') || 'Interakciók és stack-ek'} accent={accent} />
  <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
@@ -1807,19 +1811,10 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </section>
  )}
 
- {/* ─── FAQ CONSOLE ─── */}
- {peptide.faqList?.length > 0 && (
- <section className="relative px-6 sm:px-10 pb-10">
- <Eyebrow icon={HelpCircle} label={t('entry.faq.label') || 'Gyakori kérdések'} accent={accent} />
- <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
- {t('entry.faq.title') || 'FAQ'}
- </h3>
- <FaqConsole items={peptide.faqList} accent={accent} tr={tr} />
- </section>
- )}
+ {/* ─── FAQ CONSOLE ─── Phase 10: removed entirely (features.faq is false across all libraries) ─── */}
 
- {/* ─── CALCULATOR ─── library-aware: peptide=MiniCalc, performance=PerformanceCalculator, nootropic=none */}
- {library?.id === 'peptides' && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg && (
+ {/* ─── CALCULATOR ─── Phase 10 flag-gated, peptide MiniCalc only ─── */}
+ {library?.features?.calculator && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg && (
  <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
  <div
@@ -1836,18 +1831,6 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  />
  </div>
  </section>
- )}
-
- {library?.id === 'performance' && peptide.doseCalc && (
- <div id="v2-calc">
- <PerformanceCalculator doseCalc={peptide.doseCalc} accent={accent} />
- </div>
- )}
-
- {library?.id === 'pharmaceutical' && peptide.doseCalc && (
- <div id="v2-calc">
- <PharmaceuticalCalculator doseCalc={peptide.doseCalc} accent={accent} />
- </div>
  )}
 
  {/* ─── Telegram CTA ─── */}
