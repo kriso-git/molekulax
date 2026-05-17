@@ -377,14 +377,45 @@ export default function EffectsSection() {
  </p>
  <h3 className="text-xl font-bold text-white mb-4 leading-snug">{tr(cat.title)}</h3>
  <p className="text-gray-400 text-sm leading-relaxed mb-5">{tr(cat.description)}</p>
+ {(cat.entryIds?.length || cat.peptideIds?.length) > 0 ? (
  <div className="flex flex-wrap gap-2">
- {entryNames.map((p, j) => (
- <span key={j} className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide"
+ {entryNames.map((p, j) => {
+ const pid = (cat.entryIds || cat.peptideIds || [])[j]
+ if (!pid) {
+ return (
+ <span key={j} className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide opacity-70"
  style={{ background: `${cat.color}14`, border: `1px solid ${cat.color}35`, color: cat.color }}>
  {p}
  </span>
- ))}
+ )
+ }
+ return (
+ <button
+ key={j}
+ type="button"
+ onClick={e => {
+ e.stopPropagation()
+ window.location.hash = `entry/${library.id}/${pid}`
+ }}
+ className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide font-semibold transition-all duration-200 hover:scale-105"
+ style={{ background: `${cat.color}14`, border: `1px solid ${cat.color}35`, color: cat.color }}
+ onMouseEnter={e => {
+ e.currentTarget.style.background = `${cat.color}28`
+ e.currentTarget.style.borderColor = `${cat.color}70`
+ e.currentTarget.style.boxShadow = `0 0 12px ${cat.glow}`
+ }}
+ onMouseLeave={e => {
+ e.currentTarget.style.background = `${cat.color}14`
+ e.currentTarget.style.borderColor = `${cat.color}35`
+ e.currentTarget.style.boxShadow = 'none'
+ }}
+ >
+ {p}
+ </button>
+ )
+ })}
  </div>
+ ) : null}
  </div>
  </div>
  )
