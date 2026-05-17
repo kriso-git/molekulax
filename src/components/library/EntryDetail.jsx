@@ -25,6 +25,26 @@ import PerformanceCalculator from './PerformanceCalculator'
 import PharmaceuticalCalculator from './PharmaceuticalCalculator'
 import { useTilt, useMagnet, ParticleField, HoloRing, LabTerminal, Eyebrow, GlassCard, TabPills } from './entry-detail/shared'
 
+// Phase 10 — dynamic "Releváns X" / "Related X" / "Powiązane X" label per library.
+// Plural noun map per language; fallback strips "Könyvtár"/"Library"/"Biblioteka" from library.name.
+const RELATED_PLURAL = {
+  peptides:       { hu: 'Peptidek',          en: 'Peptides',              pl: 'Peptydy' },
+  nootropics:     { hu: 'Nootropikumok',     en: 'Nootropics',            pl: 'Nootropiki' },
+  performance:    { hu: 'Teljesítményfokozók', en: 'Performance Compounds', pl: 'Środki wydajnościowe' },
+  pharmaceutical: { hu: 'Gyógyszerek',       en: 'Pharmaceuticals',       pl: 'Środki farmaceutyczne' },
+}
+function getRelatedLabel(library, lang) {
+  const word = { hu: 'Releváns', en: 'Related', pl: 'Powiązane' }
+  const mapped = RELATED_PLURAL[library?.id]?.[lang]
+  if (mapped) return `${word[lang] || word.hu} ${mapped}`
+  const libName = library?.name?.[lang] || library?.name?.hu || ''
+  const stripped = libName
+    .replace(/\s*(Könyvtár|Library)\s*$/i, '')
+    .replace(/^Biblioteka\s+/i, '')
+    .trim()
+  return `${word[lang] || word.hu} ${stripped || 'elemek'}`
+}
+
 const TIER_META = {
  5: { label: { hu: 'Engedélyezett', en: 'Approved', pl: 'Zatwierdzony' },
  color: '#10b981', bg: 'rgba(16,185,129,0.12)', border: 'rgba(16,185,129,0.5)' },
@@ -1092,7 +1112,7 @@ function StudyCard({ s, accent, tr, t }) {
 }
 
 export default function EntryDetail({ peptide, onClose, onJump }) {
- const { t, tr } = useLang()
+ const { t, tr, lang } = useLang()
  const { theme } = useTheme()
  const { library } = useLibrary()
  const isLight = theme === 'light'
@@ -1101,7 +1121,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  && peptide.miniCalc?.vialMg
  && peptide.miniCalc?.bacMl
  && peptide.miniCalc?.doseMcg)
- const relatedLabel = library?.labels?.relatedLabel ? tr(library.labels.relatedLabel) : (t('entry.rel.label') || 'Kapcsolódó peptidek')
+ // Phase 10: dynamic library-name-driven label takes precedence over labels.relatedLabel.
+ const relatedLabel = getRelatedLabel(library, lang)
  const [tab, setTab] = useState('molecular')
  const [entered, setEntered] = useState(false)
  const magnetRef = useMagnet(0.25)
