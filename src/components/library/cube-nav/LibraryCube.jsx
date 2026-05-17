@@ -47,13 +47,17 @@ export default function LibraryCube() {
   const [halfWidth, setHalfWidth] = useState(0)
   const [faceHeights, setFaceHeights] = useState({ 0: 0, 1: 0, 2: 0, 3: 0 })
 
-  // Méri a wrapper szélességét a translateZ-hez (cube depth = width/2).
+  // Cube depth: a "shallow box" approach. translateZ(halfWidth/2) jó lenne
+  // egy igazi kockához, de a face-content magas (gallery+effects+calc, 1500-
+  // 2500px), így minden depth perspective-scaling-gel csordultivá teszi a
+  // face-t. Fix shallow depth (180px) + perspective 1500px → scale ~1.14×,
+  // 3D-rotation látható de a face vizuálisan a wrapper bounds-on belül marad.
   useEffect(() => {
     if (!wrapperRef.current) return
     const el = wrapperRef.current
     const ro = new ResizeObserver((entries) => {
       const w = entries[0]?.contentRect?.width
-      if (w) setHalfWidth(w / 2)
+      if (w) setHalfWidth(180)
     })
     ro.observe(el)
     return () => ro.disconnect()
@@ -160,7 +164,7 @@ export default function LibraryCube() {
       <div
         ref={wrapperRef}
         className="max-w-6xl mx-auto relative"
-        style={{ perspective: '1000px' }}
+        style={{ perspective: '1500px' }}
       >
         <motion.div
           id="library-cube-panel"
