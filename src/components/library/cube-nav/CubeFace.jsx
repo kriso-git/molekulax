@@ -41,6 +41,9 @@ export default function CubeFace({
   faceIndex,
   halfWidth,
   onHeightChange,
+  libraries,
+  currentIndex,
+  onJumpTo,
 }) {
   const hasBeenActiveRef = useRef(false)
   const elRef = useRef(null)
@@ -77,7 +80,11 @@ export default function CubeFace({
     >
       {renderFull ? (
         <FaceLibraryProvider library={library}>
-          <LibraryGallery />
+          <LibraryGallery
+            dotsLibraries={libraries}
+            dotsCurrentIndex={currentIndex}
+            onDotsJumpTo={onJumpTo}
+          />
           <EffectsSection />
           {library.id === 'peptides' && <Calculator />}
         </FaceLibraryProvider>

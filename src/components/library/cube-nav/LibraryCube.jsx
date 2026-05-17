@@ -9,7 +9,6 @@ import EffectsSection from '../EffectsSection'
 import { useCubeIndex } from './useCubeIndex'
 import CubeFace from './CubeFace'
 import CubeNavControls from './CubeNavControls'
-import DotsIndicator from './DotsIndicator'
 
 const LIBRARY_WORD = { hu: 'könyvtár', en: 'library', pl: 'biblioteka' }
 
@@ -49,18 +48,18 @@ export default function LibraryCube() {
   const [halfWidth, setHalfWidth] = useState(0)
   const [faceHeights, setFaceHeights] = useState({ 0: 0, 1: 0, 2: 0, 3: 0 })
 
-  // Cube depth: halfWidth=150 + perspective=5000 = scale 1.031.
-  // A 150px térbeli szeparáció a face-ek között megoldja az "intersection"
-  // problémát (két face nem összeakad rotáció közben — face 1 a jobb oldalról
-  // forog be, face 0 a balra hajlik ki). A nagy perspective (5000) miatt a
-  // scaling minimális (1.031 = 3.1% bleed), ami ELegánsan elfér a py-48
-  // padding-ben (192px) még 6000px expanded peptide-content-tel is (180px bleed).
+  // True-cube geometry: halfWidth = wrapper_width / 2. Így a face-ek
+  // valódi kockaként hinge-elnek a megosztott élnél, NEM keresztezik
+  // egymást rotáció közben (face 1 a jobb oldali élről swing-el be).
+  // Perspective=8000-rel a max scale ~1.07× (=7% bleed), amit a py-48
+  // padding (192px) elnyel desktop-on; mobile-on a wrapper kisebb,
+  // így a scale és bleed is arányosan kisebb.
   useEffect(() => {
     if (!wrapperRef.current) return
     const el = wrapperRef.current
     const ro = new ResizeObserver((entries) => {
       const w = entries[0]?.contentRect?.width
-      if (w) setHalfWidth(150)
+      if (w) setHalfWidth(Math.round(w / 2))
     })
     ro.observe(el)
     return () => ro.disconnect()
@@ -172,24 +171,14 @@ export default function LibraryCube() {
         onPrev={prev}
         onNext={next}
       />
-      {/* DotsIndicator a title-subtitle blokk ÉS a Top10 fejléc KÖZÉ pozicionálva */}
-      {/* (a face content cube-wrapper kezdetétől számolva: title-blokk ~150-170px, */}
-      {/* utána a "10 Legnépszerűbb" h3-fejléc. A dots a kettő közti mb-16 (64px) */}
-      {/* gap-be esik.) Section pad pt-48 = 192. */}
-      <DotsIndicator
-        libraries={libraries}
-        currentIndex={currentIndex}
-        onJumpTo={jumpTo}
-        className="absolute left-1/2 -translate-x-1/2 top-[300px] md:top-[340px] z-20"
-      />
-      {/* Nincs overflow:hidden — a perspective scaling (~1.136x) miatt a face */}
-      {/* vizuálisan 100-150px-szel kilóg a wrapper bounds-án, ezt a section */}
-      {/* py-40 padding-je (160px) elnyeli, így nem folyik át sem az Education */}
+      {/* Nincs overflow:hidden — a perspective scaling (~1.07x) miatt a face */}
+      {/* vizuálisan ~70-80px-szel kilóg a wrapper bounds-án, ezt a section */}
+      {/* py-48 padding-je (192px) elnyeli, így nem folyik át sem az Education */}
       {/* fenti szekcióra, sem a Telegram alsóra. */}
       <div
         ref={wrapperRef}
         className="max-w-6xl mx-auto"
-        style={{ perspective: '5000px' }}
+        style={{ perspective: '8000px' }}
       >
         <motion.div
           id="library-cube-panel"
@@ -226,6 +215,9 @@ export default function LibraryCube() {
                 faceIndex={idx}
                 halfWidth={halfWidth}
                 onHeightChange={handleFaceHeight}
+                libraries={libraries}
+                currentIndex={currentIndex}
+                onJumpTo={jumpTo}
               />
             ))}
           </motion.div>

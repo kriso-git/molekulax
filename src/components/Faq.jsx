@@ -65,12 +65,12 @@ export default function Faq() {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
+        <div className="flex flex-nowrap justify-center gap-2 mb-10 overflow-x-auto -mx-4 px-4 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
           {categories.map((cat, i) => (
             <button
               key={i}
               onClick={() => handleTab(i)}
-              className={`px-5 py-2 rounded-full text-xs tracking-widest uppercase font-semibold transition-all duration-200 ${
+              className={`shrink-0 whitespace-nowrap px-4 py-2 rounded-full text-[11px] tracking-[0.18em] uppercase font-semibold transition-all duration-200 ${
                 safeTab === i
                   ? 'bg-[rgba(129,140,248,0.18)] text-[#818cf8] border border-[rgba(129,140,248,0.30)]'
                   : 'text-gray-600 hover:text-gray-300 border border-white/[0.06]'

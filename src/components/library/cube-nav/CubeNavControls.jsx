@@ -24,7 +24,7 @@ export default function CubeNavControls({
   }
 
   const labelClass =
-    'text-xs uppercase tracking-[0.1em] text-[var(--text-tertiary,#94a3b8)] text-center leading-tight max-w-[140px] break-words line-clamp-2'
+    'text-xs uppercase tracking-[0.1em] text-[var(--text-tertiary,#94a3b8)] text-center leading-tight max-w-[180px] line-clamp-2'
 
   return (
     <>

@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 import EntryImage from './EntryImage'
 import TelegramButtons from './TelegramButtons'
+import DotsIndicator from './library/cube-nav/DotsIndicator'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
 // New layout (inspired by pep-pedia.org/browse):
@@ -235,7 +236,12 @@ function openEntry(library, entry) {
  }
 }
 
-export default function LibraryGallery({ library: libraryProp } = {}) {
+export default function LibraryGallery({
+  library: libraryProp,
+  dotsLibraries,
+  dotsCurrentIndex,
+  onDotsJumpTo,
+} = {}) {
  const [expanded, setExpanded] = useState(false)
  const [showFilters, setShowFilters] = useState(false)
  const [query, setQuery] = useState('')
@@ -313,6 +319,18 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
  {library.description ? tr(library.description) : t('gal.subtitle')}
  </p>
  </div>
+
+ {/* Library-selector dots — a könyvtár cím/leírás ÉS a Top10 fejléc közé,
+ így minden face-en stabilan ugyanazon a vizuális helyen van. */}
+ {dotsLibraries && onDotsJumpTo && (
+ <div className="flex justify-center mb-10">
+ <DotsIndicator
+ libraries={dotsLibraries}
+ currentIndex={dotsCurrentIndex}
+ onJumpTo={onDotsJumpTo}
+ />
+ </div>
+ )}
 
  {/* ── Block A: Top 10 ─────────────────────────────────────────────── */}
  <div className="mb-6 flex items-center gap-3">
