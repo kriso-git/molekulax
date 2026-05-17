@@ -12,6 +12,7 @@ import { useMediaQuery } from '../../hooks/useMediaQuery'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
 import { EntryDetailSkeleton, EntryDetailError } from './entry-detail/skeleton'
+import HeroPreview from './HeroPreview'
 
 const EntryDetail = lazy(() => import('./EntryDetail'))
 
@@ -123,14 +124,22 @@ export default function EntryDetailRoute({ hash }) {
   // Loading / error states render BEFORE the heavy EntryDetail chunk loads.
   // Wait for BOTH the entry AND the library (so adaptLibraryEntry can read
   // library.meta + library.entryCategoryMap + library.categories) before
-  // rendering the detail. Skeleton covers the race window between the two
-  // async loads.
+  // rendering the detail.
+  //
+  // Phase 9 LCP optimization: if the library meta is loaded but the full
+  // entry chunk hasn't arrived yet, render <HeroPreview /> from the meta
+  // record. The Hero h1 (entry name) becomes the LCP element and fires as
+  // soon as the small meta chunk loads (~1.9s on Slow 4G), instead of
+  // waiting for the EntryDetail chunk + per-entry chunk (~3.1s).
   const libraryReady = library && library.id === parsed.library
+  const metaEntry = libraryReady ? (library.meta || []).find(m => m.id === parsed.id) : null
   let body
   if (error) {
     body = <EntryDetailError error={error} onRetry={fetchEntry} onBack={closeDetail} />
   } else if (loading || !entry || !libraryReady) {
-    body = <EntryDetailSkeleton />
+    body = metaEntry
+      ? <HeroPreview meta={metaEntry} onClose={closeDetail} />
+      : <EntryDetailSkeleton />
   } else {
     const peptide = adaptLibraryEntry(entry, library)
     const handleJump = (id) => {
