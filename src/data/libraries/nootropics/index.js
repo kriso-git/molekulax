@@ -753,9 +753,9 @@ export const nootropicsLibrary = {
     "pl": "nootropików"
   },
   "helpBody": {
-    "hu": "Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk a megfelelő nootropikum kiválasztásában.",
-    "en": "Reach out to an advisor on Telegram. We can help you find the right nootropic.",
-    "pl": "Skontaktuj się z doradcą na Telegramie. Chętnie pomożemy znaleźć właściwy nootropik."
+    "hu": "Személyre szabott stackért vedd fel velünk a kapcsolatot Telegramon. Szívesen segítünk.",
+    "en": "Reach out to us on Telegram for a personalized stack. We'll be happy to help.",
+    "pl": "Skontaktuj się z nami na Telegramie po spersonalizowany stos. Chętnie pomożemy."
   },
   "relatedLabel": {
     "hu": "Kapcsolódó nootropikumok",

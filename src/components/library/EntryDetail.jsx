@@ -1878,7 +1878,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {(t('entry.cta.title') || 'Kérdésed van a {name}-ről?').replace('{name}', peptide.name).replace(/-/g, '‑')}
  </h3>
  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
- {t('entry.cta.body') || 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk.'}
+ {/* Phase 10: prefer library-specific helpBody when present, fall back to global i18n. */}
+ {library?.labels?.helpBody ? tr(library.labels.helpBody) : (t('entry.cta.body') || 'Lépj kapcsolatba egy tanácsadóval Telegramon. Szívesen segítünk.')}
  </p>
  </div>
  <TelegramButtons />
