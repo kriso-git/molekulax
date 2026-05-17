@@ -306,7 +306,7 @@ export default function LibraryGallery({ library: libraryProp } = {}) {
  <div className="max-w-6xl mx-auto">
 
  <div className="text-center mb-16">
- <h2 className="text-3xl md:text-5xl font-bold italic text-white mb-4">
+ <h2 className="text-4xl md:text-6xl font-bold italic text-white mb-4 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
  {library.name ? tr(library.name) : t('gal.title')}
  </h2>
  <p className="text-gray-500 text-sm max-w-xl mx-auto leading-relaxed">

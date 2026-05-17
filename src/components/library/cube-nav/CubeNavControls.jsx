@@ -31,13 +31,13 @@ export default function CubeNavControls({
         type="button"
         onClick={onPrev}
         aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
-        className="hidden md:flex absolute top-32 left-2 lg:left-4 z-20 items-center justify-center rounded-full"
+        className="hidden md:flex absolute top-28 left-2 lg:left-4 z-20 items-center justify-center rounded-full"
         style={{ width: 44, height: 44, ...arrowBase }}
       >
         <ChevronLeft size={20} strokeWidth={2.5} />
       </button>
       <span
-        className="hidden lg:block absolute top-32 left-16 z-20 text-[10px] uppercase tracking-[0.15em] text-[var(--text-tertiary,#94a3b8)]"
+        className="hidden lg:block absolute top-28 left-16 z-20 text-[10px] uppercase tracking-[0.15em] text-[var(--text-tertiary,#94a3b8)]"
         style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
         aria-hidden="true"
       >
@@ -49,13 +49,13 @@ export default function CubeNavControls({
         type="button"
         onClick={onNext}
         aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
-        className="hidden md:flex absolute top-32 right-2 lg:right-4 z-20 items-center justify-center rounded-full"
+        className="hidden md:flex absolute top-28 right-2 lg:right-4 z-20 items-center justify-center rounded-full"
         style={{ width: 44, height: 44, ...arrowBase }}
       >
         <ChevronRight size={20} strokeWidth={2.5} />
       </button>
       <span
-        className="hidden lg:block absolute top-32 right-16 z-20 text-[10px] uppercase tracking-[0.15em] text-[var(--text-tertiary,#94a3b8)]"
+        className="hidden lg:block absolute top-28 right-16 z-20 text-[10px] uppercase tracking-[0.15em] text-[var(--text-tertiary,#94a3b8)]"
         style={{ writingMode: 'vertical-rl' }}
         aria-hidden="true"
       >
@@ -67,7 +67,7 @@ export default function CubeNavControls({
         type="button"
         onClick={onPrev}
         aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
-        className="md:hidden absolute top-32 left-2 z-20 flex items-center justify-center rounded-full"
+        className="md:hidden absolute top-28 left-2 z-20 flex items-center justify-center rounded-full"
         style={{ width: 36, height: 36, ...arrowBase }}
       >
         <ChevronLeft size={16} strokeWidth={2.5} />
@@ -78,7 +78,7 @@ export default function CubeNavControls({
         type="button"
         onClick={onNext}
         aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
-        className="md:hidden absolute top-32 right-2 z-20 flex items-center justify-center rounded-full"
+        className="md:hidden absolute top-28 right-2 z-20 flex items-center justify-center rounded-full"
         style={{ width: 36, height: 36, ...arrowBase }}
       >
         <ChevronRight size={16} strokeWidth={2.5} />

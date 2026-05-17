@@ -12,12 +12,13 @@ import CubeNavControls from './CubeNavControls'
 
 const LIBRARY_WORD = { hu: 'könyvtár', en: 'library', pl: 'biblioteka' }
 
-const ROTATION_SPRING = {
-  type: 'spring',
-  stiffness: 180,
-  damping: 22,
-  mass: 1.1,
-  restDelta: 0.001,
+// Tween instead of spring for smoothness — spring physics can produce
+// micro-jitter from oscillation, tween gives a clean monotonic curve.
+// 850ms power3-ease-out feels deliberate without dragging.
+const ROTATION_TRANSITION = {
+  type: 'tween',
+  duration: 0.85,
+  ease: [0.22, 1, 0.36, 1],
 }
 
 const HEIGHT_TWEEN = {
@@ -161,57 +162,65 @@ export default function LibraryCube() {
       <span className="sr-only" aria-live="polite" aria-atomic="true">
         {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
       </span>
-      <div
-        ref={wrapperRef}
-        className="max-w-6xl mx-auto relative"
-        style={{ perspective: '1500px' }}
-      >
-        <motion.div
-          id="library-cube-panel"
-          role="tabpanel"
-          aria-labelledby={`lib-tab-${library.id}`}
-          animate={{ height: activeHeight }}
-          transition={isFirstRender ? { duration: 0 } : { height: HEIGHT_TWEEN }}
-          style={{
-            position: 'relative',
-            transformStyle: 'preserve-3d',
-            width: '100%',
-            overflow: 'visible',
-          }}
+      {/* CubeNavControls SECTION-szintűen — széles a viewport-on, arrows */}
+      {/* a viewport széléhez igazodva, NEM a max-w-6xl wrapperhez */}
+      <CubeNavControls
+        libraries={libraries}
+        currentIndex={currentIndex}
+        onPrev={prev}
+        onNext={next}
+        onJumpTo={jumpTo}
+      />
+      {/* overflow-hidden wrapper: a 3D-skalázódás miatt a face vizuálisan kilóg */}
+      {/* a wrapper bounds-án; itt clip-peljük. Nincs preserve-3d ezen, a perspective */}
+      {/* belsejében a 3D kontextus sértetlenül marad. */}
+      <div className="relative overflow-hidden">
+        <div
+          ref={wrapperRef}
+          className="max-w-6xl mx-auto"
+          style={{ perspective: '1500px' }}
         >
           <motion.div
-            animate={{ rotateY: rotationDeg }}
-            transition={isFirstRender ? { duration: 0 } : ROTATION_SPRING}
-            drag={isTouch ? 'x' : false}
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={0.15}
-            onDragEnd={handleDragEnd}
+            id="library-cube-panel"
+            role="tabpanel"
+            aria-labelledby={`lib-tab-${library.id}`}
+            animate={{ height: activeHeight }}
+            transition={isFirstRender ? { duration: 0 } : { height: HEIGHT_TWEEN }}
             style={{
               position: 'relative',
-              width: '100%',
-              height: '100%',
               transformStyle: 'preserve-3d',
+              width: '100%',
+              overflow: 'visible',
             }}
           >
-            {libraries.map((lib, idx) => (
-              <CubeFace
-                key={lib.id}
-                library={lib}
-                isActive={idx === currentIndex}
-                faceIndex={idx}
-                halfWidth={halfWidth}
-                onHeightChange={handleFaceHeight}
-              />
-            ))}
+            <motion.div
+              animate={{ rotateY: rotationDeg }}
+              transition={isFirstRender ? { duration: 0 } : ROTATION_TRANSITION}
+              drag={isTouch ? 'x' : false}
+              dragConstraints={{ left: 0, right: 0 }}
+              dragElastic={0.15}
+              onDragEnd={handleDragEnd}
+              style={{
+                position: 'relative',
+                width: '100%',
+                height: '100%',
+                transformStyle: 'preserve-3d',
+                willChange: 'transform',
+              }}
+            >
+              {libraries.map((lib, idx) => (
+                <CubeFace
+                  key={lib.id}
+                  library={lib}
+                  isActive={idx === currentIndex}
+                  faceIndex={idx}
+                  halfWidth={halfWidth}
+                  onHeightChange={handleFaceHeight}
+                />
+              ))}
+            </motion.div>
           </motion.div>
-        </motion.div>
-        <CubeNavControls
-          libraries={libraries}
-          currentIndex={currentIndex}
-          onPrev={prev}
-          onNext={next}
-          onJumpTo={jumpTo}
-        />
+        </div>
       </div>
     </section>
   )
