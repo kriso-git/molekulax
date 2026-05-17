@@ -157,7 +157,7 @@ export default function LibraryCube() {
       aria-roledescription="Library selector"
       aria-label={library.name[lang]}
       onKeyDown={handleKeyDown}
-      className="relative outline-none py-28 px-4 scroll-mt-24"
+      className="relative outline-none py-40 px-4 scroll-mt-24"
     >
       <span className="sr-only" aria-live="polite" aria-atomic="true">
         {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
@@ -171,56 +171,55 @@ export default function LibraryCube() {
         onNext={next}
         onJumpTo={jumpTo}
       />
-      {/* overflow-hidden wrapper: a 3D-skalázódás miatt a face vizuálisan kilóg */}
-      {/* a wrapper bounds-án; itt clip-peljük. Nincs preserve-3d ezen, a perspective */}
-      {/* belsejében a 3D kontextus sértetlenül marad. */}
-      <div className="relative overflow-hidden">
-        <div
-          ref={wrapperRef}
-          className="max-w-6xl mx-auto"
-          style={{ perspective: '1500px' }}
+      {/* Nincs overflow:hidden — a perspective scaling (~1.136x) miatt a face */}
+      {/* vizuálisan 100-150px-szel kilóg a wrapper bounds-án, ezt a section */}
+      {/* py-40 padding-je (160px) elnyeli, így nem folyik át sem az Education */}
+      {/* fenti szekcióra, sem a Telegram alsóra. */}
+      <div
+        ref={wrapperRef}
+        className="max-w-6xl mx-auto"
+        style={{ perspective: '1500px' }}
+      >
+        <motion.div
+          id="library-cube-panel"
+          role="tabpanel"
+          aria-labelledby={`lib-tab-${library.id}`}
+          animate={{ height: activeHeight }}
+          transition={isFirstRender ? { duration: 0 } : { height: HEIGHT_TWEEN }}
+          style={{
+            position: 'relative',
+            transformStyle: 'preserve-3d',
+            width: '100%',
+            overflow: 'visible',
+          }}
         >
           <motion.div
-            id="library-cube-panel"
-            role="tabpanel"
-            aria-labelledby={`lib-tab-${library.id}`}
-            animate={{ height: activeHeight }}
-            transition={isFirstRender ? { duration: 0 } : { height: HEIGHT_TWEEN }}
+            animate={{ rotateY: rotationDeg }}
+            transition={isFirstRender ? { duration: 0 } : ROTATION_TRANSITION}
+            drag={isTouch ? 'x' : false}
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.15}
+            onDragEnd={handleDragEnd}
             style={{
               position: 'relative',
-              transformStyle: 'preserve-3d',
               width: '100%',
-              overflow: 'visible',
+              height: '100%',
+              transformStyle: 'preserve-3d',
+              willChange: 'transform',
             }}
           >
-            <motion.div
-              animate={{ rotateY: rotationDeg }}
-              transition={isFirstRender ? { duration: 0 } : ROTATION_TRANSITION}
-              drag={isTouch ? 'x' : false}
-              dragConstraints={{ left: 0, right: 0 }}
-              dragElastic={0.15}
-              onDragEnd={handleDragEnd}
-              style={{
-                position: 'relative',
-                width: '100%',
-                height: '100%',
-                transformStyle: 'preserve-3d',
-                willChange: 'transform',
-              }}
-            >
-              {libraries.map((lib, idx) => (
-                <CubeFace
-                  key={lib.id}
-                  library={lib}
-                  isActive={idx === currentIndex}
-                  faceIndex={idx}
-                  halfWidth={halfWidth}
-                  onHeightChange={handleFaceHeight}
-                />
-              ))}
-            </motion.div>
+            {libraries.map((lib, idx) => (
+              <CubeFace
+                key={lib.id}
+                library={lib}
+                isActive={idx === currentIndex}
+                faceIndex={idx}
+                halfWidth={halfWidth}
+                onHeightChange={handleFaceHeight}
+              />
+            ))}
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

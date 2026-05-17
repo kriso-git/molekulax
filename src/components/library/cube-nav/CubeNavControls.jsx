@@ -2,10 +2,11 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLang } from '../../../i18n/LanguageContext'
 import DotsIndicator from './DotsIndicator'
 
-// Kontroll-réteg: bal/jobb nyíl + szomszéd-name peek (csak ≥1024px) +
-// alul DotsIndicator. Desktop/tablet (md+) nyilak az oldalsávon (44/40px),
-// mobile (<md) nyilak rácsúsztatva a kockalap szélére (36px). A peek-szöveg
-// csak lg+ jelenik meg (vertikálisan írva, [writing-mode]).
+// Kontroll-réteg: bal/jobb nyíl + szomszéd library NÉV-LABEL alá-stack-elve
+// (text-xs uppercase). Desktop/tablet: 50px arrow + label. Mobile: 40px arrow,
+// label rejtett. A pozíció `top-[440px] md:top-[640px]` aligned a Top10 grid
+// függőleges közepével (section py-40 + face title block + Top10 fejlec +
+// fél grid magasság).
 export default function CubeNavControls({
   libraries,
   currentIndex,
@@ -24,64 +25,63 @@ export default function CubeNavControls({
     color: '#00ff99',
   }
 
+  const labelClass =
+    'text-xs uppercase tracking-[0.15em] text-[var(--text-tertiary,#94a3b8)] text-center leading-tight max-w-[100px]'
+
   return (
     <>
-      {/* Desktop/tablet left arrow + peek */}
+      {/* Desktop/tablet (md+): left arrow + label stack */}
+      <div className="hidden md:flex flex-col items-center gap-2 absolute top-[440px] md:top-[640px] left-2 lg:left-6 z-20">
+        <button
+          type="button"
+          onClick={onPrev}
+          aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
+          className="flex items-center justify-center rounded-full"
+          style={{ width: 50, height: 50, ...arrowBase }}
+        >
+          <ChevronLeft size={22} strokeWidth={2.5} />
+        </button>
+        <span className={`hidden lg:block ${labelClass}`} aria-hidden="true">
+          {prevLib.name[lang]}
+        </span>
+      </div>
+
+      {/* Desktop/tablet (md+): right arrow + label stack */}
+      <div className="hidden md:flex flex-col items-center gap-2 absolute top-[440px] md:top-[640px] right-2 lg:right-6 z-20">
+        <button
+          type="button"
+          onClick={onNext}
+          aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
+          className="flex items-center justify-center rounded-full"
+          style={{ width: 50, height: 50, ...arrowBase }}
+        >
+          <ChevronRight size={22} strokeWidth={2.5} />
+        </button>
+        <span className={`hidden lg:block ${labelClass}`} aria-hidden="true">
+          {nextLib.name[lang]}
+        </span>
+      </div>
+
+      {/* Mobile (<md): left arrow only, no label */}
       <button
         type="button"
         onClick={onPrev}
         aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
-        className="hidden md:flex absolute top-28 left-2 lg:left-4 z-20 items-center justify-center rounded-full"
-        style={{ width: 44, height: 44, ...arrowBase }}
+        className="md:hidden absolute top-[440px] left-2 z-20 flex items-center justify-center rounded-full"
+        style={{ width: 40, height: 40, ...arrowBase }}
       >
-        <ChevronLeft size={20} strokeWidth={2.5} />
+        <ChevronLeft size={18} strokeWidth={2.5} />
       </button>
-      <span
-        className="hidden lg:block absolute top-28 left-16 z-20 text-[10px] uppercase tracking-[0.15em] text-[var(--text-tertiary,#94a3b8)]"
-        style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
-        aria-hidden="true"
-      >
-        ‹ {prevLib.name[lang]}
-      </span>
 
-      {/* Desktop/tablet right arrow + peek */}
+      {/* Mobile (<md): right arrow */}
       <button
         type="button"
         onClick={onNext}
         aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
-        className="hidden md:flex absolute top-28 right-2 lg:right-4 z-20 items-center justify-center rounded-full"
-        style={{ width: 44, height: 44, ...arrowBase }}
+        className="md:hidden absolute top-[440px] right-2 z-20 flex items-center justify-center rounded-full"
+        style={{ width: 40, height: 40, ...arrowBase }}
       >
-        <ChevronRight size={20} strokeWidth={2.5} />
-      </button>
-      <span
-        className="hidden lg:block absolute top-28 right-16 z-20 text-[10px] uppercase tracking-[0.15em] text-[var(--text-tertiary,#94a3b8)]"
-        style={{ writingMode: 'vertical-rl' }}
-        aria-hidden="true"
-      >
-        {nextLib.name[lang]} ›
-      </span>
-
-      {/* Mobile (<md) left arrow — rácsúszva a face szélére */}
-      <button
-        type="button"
-        onClick={onPrev}
-        aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
-        className="md:hidden absolute top-28 left-2 z-20 flex items-center justify-center rounded-full"
-        style={{ width: 36, height: 36, ...arrowBase }}
-      >
-        <ChevronLeft size={16} strokeWidth={2.5} />
-      </button>
-
-      {/* Mobile (<md) right arrow */}
-      <button
-        type="button"
-        onClick={onNext}
-        aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
-        className="md:hidden absolute top-28 right-2 z-20 flex items-center justify-center rounded-full"
-        style={{ width: 36, height: 36, ...arrowBase }}
-      >
-        <ChevronRight size={16} strokeWidth={2.5} />
+        <ChevronRight size={18} strokeWidth={2.5} />
       </button>
 
       <DotsIndicator
