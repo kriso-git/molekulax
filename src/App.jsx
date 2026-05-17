@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import Hero from './components/Hero'
 import Education from './components/Education'
-import LibraryCube from './components/library/cube-nav/LibraryCube'
 import TelegramSection from './components/TelegramSection'
 import Faq from './components/Faq'
 import Disclaimer from './components/Disclaimer'
@@ -15,6 +14,12 @@ import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
 import { ThemeProvider } from './theme/ThemeContext'
 import { LibraryProvider } from './context/LibraryContext'
+
+// LibraryCube + framer-motion are split into a separate chunk via React.lazy
+// so the initial bundle doesn't carry ~80 KiB of animation runtime that
+// isn't needed until the user scrolls past Hero + Education. Phase 7 perf
+// audit (Home mobile Perf 65) tied directly to eager framer-motion load.
+const LibraryCube = lazy(() => import('./components/library/cube-nav/LibraryCube'))
 
 function useHashRoute() {
   const read = () => (typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, ''))
@@ -47,7 +52,9 @@ export default function App() {
               <>
                 <Hero />
                 <Education />
-                <LibraryCube />
+                <Suspense fallback={<div style={{ minHeight: 600 }} />}>
+                  <LibraryCube />
+                </Suspense>
                 <TelegramSection />
                 <Faq />
                 <Disclaimer />
