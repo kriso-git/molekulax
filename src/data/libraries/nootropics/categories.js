@@ -73,6 +73,12 @@ export const NOOTROPIC_CATEGORIES = {
   'dihexa':                  ['neuroprotective'],
   'methylene-blue':          ['neuroprotective'],
   'magnesium-l-threonate':   ['neuroprotective'],
+
+  // Phase 10 — 4 new entries (Task 7)
+  'paraxanthine':            ['dopaminergic'],
+  'j-147':                   ['neuroprotective'],
+  'af710b':                  ['cholinergics', 'neuroprotective'],
+  'adamax':                  ['neuroprotective'],
 }
 
 export function getNootropicCategories(entryId) {

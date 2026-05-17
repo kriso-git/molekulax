@@ -634,6 +634,62 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 3,
     "chemicalFormula": "C8H14MgO10",
+  },
+  {
+    "id": "paraxanthine",
+    "name": "Paraxanthine",
+    "image": null,
+    "accentColor": "#fbbf24",
+    "tagColor": "rgba(251,191,36,0.18)",
+    "shortDesc": {
+      "hu": "Koffein-metabolit nootropikum, alacsonyabb szorongáskeltő profillal mint a koffein.",
+      "en": "Caffeine metabolite nootropic with a lower anxiogenic profile than caffeine.",
+      "pl": "Metabolit kofeiny o niższym profilu lękotwórczym niż kofeina."
+    },
+    "tier": 4,
+    "chemicalFormula": "C7H8N4O2",
+  },
+  {
+    "id": "j-147",
+    "name": "J-147",
+    "image": null,
+    "accentColor": "#a78bfa",
+    "tagColor": "rgba(167,139,250,0.18)",
+    "shortDesc": {
+      "hu": "Salk Institute curcumin-származék, mitokondriális ATP5A modulátor, BDNF-induktor.",
+      "en": "Salk Institute curcumin derivative, mitochondrial ATP5A modulator, BDNF inducer.",
+      "pl": "Pochodna kurkuminy z Salk Institute, modulator mitochondrialnego ATP5A, induktor BDNF."
+    },
+    "tier": 3,
+    "chemicalFormula": "C18H17F3N4O",
+  },
+  {
+    "id": "af710b",
+    "name": "AF710B (Trapaxin)",
+    "image": null,
+    "accentColor": "#5eead4",
+    "tagColor": "rgba(94,234,212,0.18)",
+    "shortDesc": {
+      "hu": "Dual M1 muszkarin / σ1 agonista, Alzheimer-jelölt kismolekula.",
+      "en": "Dual M1 muscarinic / σ1 agonist, Alzheimer`s candidate small molecule.",
+      "pl": "Podwójny agonista M1 muskarynowy / σ1, kandydat na lek Alzheimera."
+    },
+    "tier": 3,
+    "chemicalFormula": "C21H29N3OS",
+  },
+  {
+    "id": "adamax",
+    "name": "Adamax",
+    "image": null,
+    "accentColor": "#a5b4fc",
+    "tagColor": "rgba(165,180,252,0.18)",
+    "shortDesc": {
+      "hu": "Adamantán-konjugált Semax peptid, fokozott BBB-penetráció és tartós neurotrofikus hatás.",
+      "en": "Adamantane-conjugated Semax peptide with enhanced BBB penetration and prolonged neurotrophic action.",
+      "pl": "Semax z adamantanem, wzmocniona przenikalność BBB i przedłużone działanie neurotroficzne."
+    },
+    "tier": 2,
+    "chemicalFormula": "C47H67N11O10",
   }
 ]
 
