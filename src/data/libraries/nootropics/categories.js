@@ -3,10 +3,10 @@
 
 export const CATEGORIES = [
   { id: 'racetams',         accent: '#a78bfa', label: { hu: 'Racetamok',                                en: 'Racetams',                              pl: 'Racetamy' } },
-  { id: 'eugeroics',        accent: '#fbbf24', label: { hu: 'Eugeroikumok',                            en: 'Eugeroics',                             pl: 'Eugeroiki' } },
-  { id: 'cholinergics',     accent: '#06b6d4', label: { hu: 'Cholinergikus',                           en: 'Cholinergics',                          pl: 'Cholinergiczne' } },
-  { id: 'dopaminergic',     accent: '#f43f5e', label: { hu: 'Dopaminerg',     en: 'Dopaminergic',     pl: 'Dopaminergiczne' } },
-  { id: 'anxiolytics',      accent: '#10b981', label: { hu: 'Anxiolítikus',   en: 'Anxiolytic',       pl: 'Anksjolityczne' } },
+  { id: 'eugeroics',        accent: '#fbbf24', label: { hu: 'Modafinil típusok',                       en: 'Modafinil-types',                       pl: 'Typy modafinilu' } },
+  { id: 'cholinergics',     accent: '#06b6d4', label: { hu: 'Kolinergiumok',                           en: 'Cholinergic agents',                    pl: 'Środki cholinergiczne' } },
+  { id: 'dopaminergic',     accent: '#f43f5e', label: { hu: 'Dopaminok',      en: 'Dopaminergics',    pl: 'Dopaminergiki' } },
+  { id: 'anxiolytics',      accent: '#10b981', label: { hu: 'Szorongás csökkentők', en: 'Anxiolytics', pl: 'Anksjolityki' } },
   { id: 'adaptogens',       accent: '#84cc16', label: { hu: 'Adaptogének',    en: 'Adaptogens',       pl: 'Adaptogeny' } },
   { id: 'neuroprotective',  accent: '#00ff99', label: { hu: 'Neuroprotektív', en: 'Neuroprotective',  pl: 'Neuroprotekcyjne' } },
 ]

@@ -7,7 +7,7 @@ export const CATEGORIES = [
   { id: 'cardio',        accent: '#dc2626', label: { hu: 'Kardiovaszkuláris',   en: 'Cardiovascular',      pl: 'Sercowo-naczyniowe' } },
   { id: 'psychiatry',    accent: '#a78bfa', label: { hu: 'Pszichiátria',        en: 'Psychiatry',          pl: 'Psychiatria' } },
   { id: 'endocrine',     accent: '#f59e0b', label: { hu: 'Endokrinológia',      en: 'Endocrinology',       pl: 'Endokrynologia' } },
-  { id: 'antiinfective', accent: '#06b6d4', label: { hu: 'Antiinfektívumok',    en: 'Anti-infectives',     pl: 'Przeciwinfekcyjne' } },
+  { id: 'antiinfective', accent: '#06b6d4', label: { hu: 'Fertőzésellenes szerek', en: 'Anti-infectives',  pl: 'Środki przeciwzakaźne' } },
   { id: 'oncology',      accent: '#ec4899', label: { hu: 'Onkológia',           en: 'Oncology',            pl: 'Onkologia' } },
   { id: 'dermatology',   accent: '#fbbf24', label: { hu: 'Bőr és szépség',      en: 'Dermatology',         pl: 'Dermatologia' } },
 ]

@@ -21,12 +21,12 @@ export const CATEGORIES = [
   {
     id: 'cognitive',
     accent: '#22d3ee',
-    label: { hu: 'Kognitív / Nootróp', en: 'Cognitive Enhancement', pl: 'Wzmocnienie poznawcze' },
+    label: { hu: 'Kognitív', en: 'Cognitive', pl: 'Kognitywne' },
   },
   {
     id: 'anti-aging',
     accent: '#fde047',
-    label: { hu: 'Anti-aging / Hosszú élet', en: 'Anti-Aging / Longevity', pl: 'Anti-aging' },
+    label: { hu: 'Anti-aging', en: 'Anti-aging', pl: 'Anti-aging' },
   },
   {
     id: 'immune',
