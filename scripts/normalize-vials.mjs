@@ -39,8 +39,6 @@ const EFFECT_TILE_NAMES = new Set([
   'kozmetikaipeptidek.png',
   'longevitypeptidek.png',
   'novekedesihormonserkentopeptidek.png',
-  // legacy accented name
-  'Gyógyulástsegítőpeptidek.png',
 ])
 
 function findBoundingBox(png) {
