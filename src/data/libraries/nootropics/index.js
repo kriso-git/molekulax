@@ -732,9 +732,9 @@ export const nootropicsLibrary = {
   "pl": "Domeny Poznawcze"
 },
   effectsSubtitle: {
-  "hu": "Nootropikum hatásprofilok és tudományos háttér",
-  "en": "Nootropic effect profiles and scientific background",
-  "pl": "Profile efektów nootropików i podstawy naukowe"
+  "hu": "5 funkcionális klaszter, közvetlen entry-elérhetőséggel",
+  "en": "5 functional clusters with direct entry access",
+  "pl": "5 klastrów funkcjonalnych z bezpośrednim dostępem"
 },
   labels: {
   "topTitle": {
