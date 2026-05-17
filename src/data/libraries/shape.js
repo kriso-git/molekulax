@@ -158,5 +158,25 @@
  * @property {I18nString} contactTitle Homepage Telegram CTA section title.
  */
 
+/**
+ * Phase 9 — meta-only shape returned by LIBRARY_ENTRY_META. Carries
+ * exactly the fields needed to render the gallery tile, the LibraryCube
+ * face, the LibrarySwitcher, and category-grouping. Full entry detail
+ * (description, keyInfo, dosing, studies, faq, bloodwork, indications,
+ * etc.) is loaded on-demand via loadEntry().
+ *
+ * @typedef {Object} LibraryEntryMeta
+ * @property {string} id Unique slug within the library.
+ * @property {string} name Display name (not localized).
+ * @property {string|null} image Tile image path; null → fallback art.
+ * @property {string} accentColor Hex color for tile accent.
+ * @property {string} tagColor rgba string for chip background.
+ * @property {I18nString} shortDesc Tile body text.
+ * @property {number} tier Precomputed research level (1..5).
+ * @property {'banned'|'monitored'|null} [wadaStatus] Performance library.
+ * @property {I18nString} [prescriptionStatus] Pharmaceutical library.
+ * @property {string} [atcCode] Pharmaceutical library.
+ */
+
 // This module exports nothing at runtime, types only.
 export {}
