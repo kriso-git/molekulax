@@ -224,6 +224,21 @@ export default {
         "hu": "Súlyos szív- vagy májbetegség",
         "en": "Severe heart or liver disease",
         "pl": "Ciężka choroba serca lub wątroby"
+      },
+      {
+        "hu": "Bipoláris zavar (a dopaminerg aktiváció mánia-rohamot indukálhat)",
+        "en": "Bipolar disorder (dopaminergic activation may trigger mania)",
+        "pl": "Choroba dwubiegunowa (aktywacja dopaminergiczna może wywołać manię)"
+      },
+      {
+        "hu": "Aktív pszichotikus zavar (dopaminerg túlserkentés tüneteket súlyosbíthat)",
+        "en": "Active psychotic disorder (dopaminergic over-stimulation may worsen symptoms)",
+        "pl": "Aktywne zaburzenie psychotyczne (nadmierna stymulacja dopaminergiczna może nasilić objawy)"
+      },
+      {
+        "hu": "MAOI együttszedés (szerotonin-szindróma + hipertenzív krízis kockázat)",
+        "en": "MAOI co-administration (serotonin syndrome + hypertensive crisis risk)",
+        "pl": "Współpodawanie MAOI (ryzyko zespołu serotoninowego + przełomu nadciśnieniowego)"
       }
     ]
   },

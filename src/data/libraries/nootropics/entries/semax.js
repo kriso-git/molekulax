@@ -218,6 +218,21 @@ export default {
         "hu": "Krónikus MAOI használat",
         "en": "Chronic MAOI use",
         "pl": "Przewlekłe stosowanie MAOI"
+      },
+      {
+        "hu": "Terhesség, szoptatás (peptid-specifikus humán biztonsági adat hiányzik)",
+        "en": "Pregnancy, breastfeeding (peptide-specific human safety data lacking)",
+        "pl": "Ciąża, karmienie piersią (brak swoistych dla peptydu danych bezpieczeństwa u ludzi)"
+      },
+      {
+        "hu": "Ismert túlérzékenység a Semax-ra vagy ACTH-fragmens analógokra",
+        "en": "Known hypersensitivity to Semax or ACTH-fragment analogs",
+        "pl": "Znana nadwrażliwość na Semax lub analogi fragmentu ACTH"
+      },
+      {
+        "hu": "Melanokortin-receptor-érzékeny tumorok (elméleti, ACTH-analóg jellegből; aktív melanóma vagy MC-receptor pozitív neoplazma)",
+        "en": "Melanocortin-receptor-sensitive tumors (theoretical, due to ACTH-analog nature; active melanoma or MC-receptor positive neoplasm)",
+        "pl": "Nowotwory wrażliwe na receptory melanokortynowe (teoretycznie, ze względu na charakter analogu ACTH; aktywny czerniak lub MC-pozytywna nowotwór)"
       }
     ]
   },

@@ -213,6 +213,11 @@ export default {
         "hu": "Súlyos veseelégtelenség",
         "en": "Severe renal impairment",
         "pl": "Ciężka niewydolność nerek"
+      },
+      {
+        "hu": "Huntington-betegség (racetam-származékos osztály-kontraindikáció)",
+        "en": "Huntington's disease (racetam-derived class contraindication)",
+        "pl": "Choroba Huntingtona (przeciwwskazanie klasy pochodnych racetamów)"
       }
     ]
   },

@@ -218,6 +218,16 @@ export default {
         "hu": "Terhesség, szoptatás",
         "en": "Pregnancy, breastfeeding",
         "pl": "Ciąża, karmienie piersią"
+      },
+      {
+        "hu": "Huntington-betegség (racetam-osztály kontraindikációja, choreatikus mozgások súlyosbítása)",
+        "en": "Huntington's disease (racetam class contraindication, exacerbation of choreatic movements)",
+        "pl": "Choroba Huntingtona (przeciwwskazanie klasy racetamów, nasilenie ruchów pląsawiczych)"
+      },
+      {
+        "hu": "Súlyos veseelégtelenség (renális kiválasztás, EU SmPC racetam-szigorítás)",
+        "en": "Severe renal impairment (renal excretion, EU SmPC racetam restriction)",
+        "pl": "Ciężka niewydolność nerek (wydalanie nerkowe, ograniczenie racetamowe EU SmPC)"
       }
     ]
   },

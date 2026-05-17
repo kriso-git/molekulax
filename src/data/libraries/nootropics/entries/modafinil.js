@@ -208,14 +208,19 @@ export default {
     ],
     "avoid": [
       {
-        "hu": "Súlyos szívbillentyű-betegség, instabil angina",
-        "en": "Severe valvular heart disease, unstable angina",
-        "pl": "Ciężka choroba zastawek serca, niestabilna dusznica"
+        "hu": "Súlyos szívbillentyű-betegség, instabil angina, mitralis prolapsus stimulánsra reagáló kórtörténet, súlyos aritmia (FDA Provigil címke)",
+        "en": "Severe valvular heart disease, unstable angina, history of mitral valve prolapse on stimulants, severe arrhythmia (FDA Provigil label)",
+        "pl": "Ciężka choroba zastawek serca, niestabilna dusznica, wypadanie zastawki mitralnej reagujące na stymulanty, ciężka arytmia (etykieta FDA Provigil)"
       },
       {
-        "hu": "Stevens-Johnson szindróma anamnézis",
-        "en": "History of Stevens-Johnson syndrome",
-        "pl": "Historia zespołu Stevensa-Johnsona"
+        "hu": "Stevens-Johnson szindróma anamnézis vagy modafinil-túlérzékenység (FDA boxed warning: SJS/TEN/DRESS)",
+        "en": "History of Stevens-Johnson syndrome or modafinil hypersensitivity (FDA boxed warning: SJS/TEN/DRESS)",
+        "pl": "Historia zespołu Stevensa-Johnsona lub nadwrażliwość na modafinil (ostrzeżenie FDA: SJS/TEN/DRESS)"
+      },
+      {
+        "hu": "Kontrollálatlan hipertónia",
+        "en": "Uncontrolled hypertension",
+        "pl": "Niekontrolowane nadciśnienie"
       },
       {
         "hu": "Terhesség (kategória C), szoptatás",

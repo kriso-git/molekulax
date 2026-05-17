@@ -218,6 +218,21 @@ export default {
         "hu": "Bipolar I/II spektrum mánia-kockázat, orvosi monitorozás kötelező",
         "en": "Bipolar I/II spectrum mania risk, medical monitoring required",
         "pl": "Spektrum dwubiegunowości I/II, ryzyko manii, monitoring medyczny wymagany"
+      },
+      {
+        "hu": "Aktív pszichotikus zavar (BDNF/neurogenezis-induktor mechanizmus tüneteket súlyosbíthat)",
+        "en": "Active psychotic disorder (BDNF/neurogenesis inducer mechanism may worsen symptoms)",
+        "pl": "Aktywne zaburzenie psychotyczne (mechanizm induktora BDNF/neurogenezy może nasilić objawy)"
+      },
+      {
+        "hu": "MAOI együttszedés (preklinikailag nem vizsgált, monoaminerg interakció kockázat)",
+        "en": "MAOI co-administration (preclinically untested, monoaminergic interaction risk)",
+        "pl": "Współpodawanie MAOI (nieprzebadane przedklinicznie, ryzyko interakcji monoaminergicznej)"
+      },
+      {
+        "hu": "Terhesség, szoptatás (klinikai biztonsági adat hiányzik)",
+        "en": "Pregnancy, breastfeeding (clinical safety data lacking)",
+        "pl": "Ciąża, karmienie piersią (brak klinicznych danych bezpieczeństwa)"
       }
     ]
   },

@@ -208,6 +208,16 @@ export default {
         "hu": "Aktív autoimmun zavar (immunmoduláció miatt)",
         "en": "Active autoimmune disorder (immunomodulation)",
         "pl": "Aktywne zaburzenia autoimmunologiczne (immunomodulacja)"
+      },
+      {
+        "hu": "Ismert túlérzékenység a Selank-ra vagy Tuftsin-analógokra",
+        "en": "Known hypersensitivity to Selank or Tuftsin analogs",
+        "pl": "Znana nadwrażliwość na Selank lub analogi Tuftsiny"
+      },
+      {
+        "hu": "Benzodiazepinekkel egyidejű krónikus szedés (elméleti additív szedáció + alegység-átfedés)",
+        "en": "Concurrent chronic benzodiazepine use (theoretical additive sedation + subunit overlap)",
+        "pl": "Jednoczesne przewlekłe stosowanie benzodiazepin (teoretyczna addytywna sedacja + nakładanie się podjednostek)"
       }
     ]
   },

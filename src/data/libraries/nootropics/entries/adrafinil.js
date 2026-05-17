@@ -201,9 +201,9 @@ export default {
     ],
     "avoid": [
       {
-        "hu": "Súlyos májbetegség (hepatikus konverzió-függő)",
-        "en": "Severe liver disease (hepatic conversion-dependent)",
-        "pl": "Ciężka choroba wątroby (zależna od konwersji wątrobowej)"
+        "hu": "Súlyos májbetegség (hepatikus konverzió-függő; Milgram 2000 hepatotoxicitás-jelentések)",
+        "en": "Severe liver disease (hepatic conversion-dependent; Milgram 2000 hepatotoxicity reports)",
+        "pl": "Ciężka choroba wątroby (zależna od konwersji wątrobowej; doniesienia o hepatotoksyczności Milgram 2000)"
       },
       {
         "hu": "Terhesség, szoptatás",
@@ -219,6 +219,16 @@ export default {
         "hu": "Hepatikus szteatózis / NAFLD / preexisting hepatitis",
         "en": "Hepatic steatosis / NAFLD / preexisting hepatitis",
         "pl": "Stłuszczenie wątroby / NAFLD / istniejące zapalenie wątroby"
+      },
+      {
+        "hu": "Stevens-Johnson szindróma anamnézis vagy Modafinil-túlérzékenység (a Modafinil-metabolit miatt örökli az FDA SJS/TEN/DRESS figyelmeztetést)",
+        "en": "History of Stevens-Johnson syndrome or Modafinil hypersensitivity (inherits FDA SJS/TEN/DRESS warning via Modafinil metabolite)",
+        "pl": "Historia zespołu Stevensa-Johnsona lub nadwrażliwość na Modafinil (dziedziczy ostrzeżenie FDA SJS/TEN/DRESS przez metabolit Modafinilu)"
+      },
+      {
+        "hu": "Súlyos szív-aritmia, instabil angina, kontrollálatlan hipertónia (eugeroikum osztály-kontraindikáció)",
+        "en": "Severe cardiac arrhythmia, unstable angina, uncontrolled hypertension (eugeroic class contraindication)",
+        "pl": "Ciężka arytmia serca, niestabilna dusznica, niekontrolowane nadciśnienie (przeciwwskazanie klasy eugeroików)"
       }
     ]
   },
