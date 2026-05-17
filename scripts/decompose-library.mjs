@@ -132,17 +132,11 @@ export const ${libKey} = {
   labels: ${JSON.stringify(lib.labels, null, 2)},
 }
 
-// Vite-friendly per-file dynamic import: import.meta.glob('./entries/*.js')
-// generates a static map that Vite can analyze and code-split into one chunk
-// per entry file. Avoid template-literal import() with @vite-ignore — that
-// disables Vite's split analysis and the entries get bundled into the
-// library's main chunk, defeating the purpose of decomposition.
-const entryModules = import.meta.glob('./entries/*.js')
-
+// Vite/Rollup template-literal dynamic-import code-splitting: when the
+// path has a static prefix + an interpolated leaf, Vite emits one chunk
+// per file matching the pattern at build time.
 export async function loadEntry(id) {
-  const importer = entryModules[\`./entries/\${id}.js\`]
-  if (!importer) return null
-  const mod = await importer()
+  const mod = await import(\`./entries/\${id}.js\`)
   return mod.default
 }
 
