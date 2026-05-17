@@ -1,23 +1,20 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { LibraryContext } from '../../../context/LibraryContext'
-import { listLibraries } from '../../../data/libraries'
+import { listLibraries, loadLibrary } from '../../../data/libraries'
 import LibraryGallery from '../../LibraryGallery'
 import Calculator from '../../Calculator'
 import EffectsSection from '../EffectsSection'
 
 // Per-face context override: each face renders its OWN library content
-// (a teljes LibraryGallery + EffectsSection + Calculator tree), nem a
-// globális aktív library-t. setLibraryId no-op a face-en belül (a face
-// nem önmagát váltja); a deep-link / dots-jump a külső kockán keresztül
-// megy. availableLibraries listLibraries() — fontos hogy nem üres tömb,
-// különben downstream komponensek (pl. EntryDetail Related-link) hibára
-// futna.
+// with its own loaded full-data. The setLibraryId no-op on this provider
+// (face does not re-route itself; the outer cube handles deep-linking).
 function FaceLibraryProvider({ library, children }) {
   const value = {
     library,
     libraryId: library.id,
     setLibraryId: () => {},
     availableLibraries: listLibraries(),
+    isLoading: false,
   }
   return (
     <LibraryContext.Provider value={value}>
@@ -26,30 +23,41 @@ function FaceLibraryProvider({ library, children }) {
   )
 }
 
-// Egy kockalap. Lazy-mount cache: amint isActive először true lesz,
-// hasBeenActiveRef bekapcsol és onnantól FOLYAMATOSAN renderel teljes
-// tartalmat (akkor is ha isActive később false). Ez biztosítja hogy
-// forgás közben a régi face MARAD renderelve, különben üres oldalt
-// látna pörögni a user a state-frissítés pillanatától.
-//
-// 3D transform: faceIndex * 90° Y-rotation + translateZ(halfWidth).
-// backfaceVisibility: hidden — csak az előre néző face látszik a
-// kocka belső struktúrája miatt.
+// Phase 8: each face lazy-loads its own full library data the first time
+// it becomes active. hasBeenActive cache combined with the full-data
+// load means the face renders the skeleton until BOTH conditions hold:
+// (1) the face has been activated at least once, AND (2) the library
+// data fetch has resolved. Subsequent face transitions keep the cached
+// data via the singleton fullLibraryCache in src/data/libraries/index.js.
 export default function CubeFace({
-  library,
+  library,         // META (id + name + accent + description)
   isActive,
   faceIndex,
   halfWidth,
   onHeightChange,
-  libraries,
+  libraries,       // META[]
   currentIndex,
   onJumpTo,
 }) {
   const hasBeenActiveRef = useRef(false)
   const elRef = useRef(null)
+  const [fullData, setFullData] = useState(null)
+  const [loadStarted, setLoadStarted] = useState(false)
 
   if (isActive) hasBeenActiveRef.current = true
-  const renderFull = hasBeenActiveRef.current
+  const hasBeenActive = hasBeenActiveRef.current
+
+  // Trigger the full-data load the first time the face becomes active.
+  useEffect(() => {
+    if (hasBeenActive && !loadStarted) {
+      setLoadStarted(true)
+      loadLibrary(library.id).then((data) => {
+        if (data) setFullData(data)
+      })
+    }
+  }, [hasBeenActive, loadStarted, library.id])
+
+  const renderFull = hasBeenActive && fullData !== null
 
   useEffect(() => {
     if (!renderFull || !elRef.current) return
@@ -79,7 +87,7 @@ export default function CubeFace({
       aria-hidden={!isActive}
     >
       {renderFull ? (
-        <FaceLibraryProvider library={library}>
+        <FaceLibraryProvider library={fullData}>
           <LibraryGallery
             dotsLibraries={libraries}
             dotsCurrentIndex={currentIndex}

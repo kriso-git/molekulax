@@ -1,23 +1,88 @@
-// Library registry — Phase 3 entry point for the multi-library system.
-//
-// Each library is a self-contained module under libraries/<id>/ that
-// exports a Library object matching the typedef in ./shape.js. New
-// libraries (Nootropics in Phase 4, Performance in Phase 5, Pharmaceuticals
-// in Phase 6) register themselves here.
+// Library registry — Phase 8 perf-pass: lazy-load library data so each
+// library's ~500-900kB raw entry array is fetched only when the user
+// navigates to that face of the 3D cube. The synchronous LIBRARY_META
+// constant carries the minimal info needed for cube navigation (name,
+// accent, description). The full Library object is loaded via the
+// `loadLibrary(id)` async function which dynamic-imports the matching
+// libraries/<id>/ module.
 
-import { peptidesLibrary } from './peptides'
-import { nootropicsLibrary } from './nootropics'
-import { performanceLibrary } from './performance'
-import { pharmaceuticalLibrary } from './pharmaceutical'
+const LIBRARY_META = [
+  {
+    id: 'peptides',
+    name: { hu: 'Peptid Könyvtár', en: 'Peptide Library', pl: 'Biblioteka Peptydów' },
+    accent: '#00ff99',
+    description: {
+      hu: '50+ tudományosan dokumentált peptid · keresés, kategória, kutatási szint szerint',
+      en: '50+ scientifically documented peptides · search by category and research tier',
+      pl: '50+ peptydów udokumentowanych naukowo · wyszukiwanie wg kategorii i poziomu badań',
+    },
+  },
+  {
+    id: 'nootropics',
+    name: { hu: 'Nootropikum Könyvtár', en: 'Nootropic Library', pl: 'Biblioteka Nootropików' },
+    accent: '#00ff99',
+    description: {
+      hu: 'Kognitív teljesítményt és mentális egészséget támogató vegyületek · kutatási szint, kategória, hatásmechanizmus szerint',
+      en: 'Compounds supporting cognitive performance and mental health · search by research tier, category, mechanism',
+      pl: 'Związki wspierające wydajność poznawczą i zdrowie psychiczne · wyszukiwanie wg poziomu badań, kategorii, mechanizmu',
+    },
+  },
+  {
+    id: 'performance',
+    name: { hu: 'Teljesítményfokozók Könyvtár', en: 'Performance Compounds Library', pl: 'Biblioteka środków wydajnościowych' },
+    accent: '#00ff99',
+    description: {
+      hu: 'Sport- és testépítési teljesítményfokozók edukatív áttekintése · harm-reduction megközelítés, peer-reviewed forrásokkal',
+      en: 'Educational overview of sport and bodybuilding performance compounds · harm-reduction framing, peer-reviewed sources',
+      pl: 'Edukacyjny przegląd środków wydajnościowych dla sportu i kulturystyki · podejście redukcji szkód, źródła recenzowane',
+    },
+  },
+  {
+    id: 'pharmaceutical',
+    name: { hu: 'Gyógyszerek Könyvtár', en: 'Pharmaceuticals Library', pl: 'Biblioteka środków farmaceutycznych' },
+    accent: '#00ff99',
+    description: {
+      hu: 'Hatóanyag-szintű gyógyszer-edukáció hivatalos forrásokból · PubMed, FDA, EMA, SmPC · NEM helyettesíti az orvosi konzultációt',
+      en: 'Active-ingredient-level drug education from official sources · PubMed, FDA, EMA, SmPC · NOT a substitute for medical consultation',
+      pl: 'Edukacja farmaceutyczna na poziomie substancji czynnej z oficjalnych źródeł · PubMed, FDA, EMA, ChPL · NIE zastępuje konsultacji lekarskiej',
+    },
+  },
+]
 
-export const LIBRARIES = [peptidesLibrary, nootropicsLibrary, performanceLibrary, pharmaceuticalLibrary]
-
-export function getLibrary(id) {
-  return LIBRARIES.find(lib => lib.id === id) || null
-}
+// Cache of fully-loaded library objects, populated by loadLibrary()
+const fullLibraryCache = {}
 
 export function listLibraries() {
-  return LIBRARIES
+  return LIBRARY_META
+}
+
+// Returns the meta (or full if loaded). Synchronous. Returns null if id unknown.
+export function getLibrary(id) {
+  return fullLibraryCache[id] || LIBRARY_META.find(l => l.id === id) || null
+}
+
+// Async load the full library data. Caches the result.
+export async function loadLibrary(id) {
+  if (fullLibraryCache[id]) return fullLibraryCache[id]
+  let lib = null
+  switch (id) {
+    case 'peptides':
+      lib = (await import('./peptides')).peptidesLibrary
+      break
+    case 'nootropics':
+      lib = (await import('./nootropics')).nootropicsLibrary
+      break
+    case 'performance':
+      lib = (await import('./performance')).performanceLibrary
+      break
+    case 'pharmaceutical':
+      lib = (await import('./pharmaceutical')).pharmaceuticalLibrary
+      break
+    default:
+      return null
+  }
+  fullLibraryCache[id] = lib
+  return lib
 }
 
 export const DEFAULT_LIBRARY_ID = 'peptides'

@@ -1,11 +1,11 @@
 // LibraryContext — Phase 3 abstraction that exposes the active library to
 // gallery + detail components. Phase 7 added sessionStorage persistence
-// (F5 keeps you on the same library) and hash-deep-link priority. The
-// LibraryContext itself is also exported so CubeFace can render per-face
-// nested providers.
+// (F5 keeps you on the same library) and hash-deep-link priority. Phase 8
+// makes the library full-data load lazy: each library's content arrives
+// asynchronously on first navigation, keeping the main bundle small.
 
 import { createContext, useContext, useEffect, useMemo, useState } from 'react'
-import { getLibrary, listLibraries, DEFAULT_LIBRARY_ID } from '../data/libraries'
+import { getLibrary, listLibraries, loadLibrary, DEFAULT_LIBRARY_ID } from '../data/libraries'
 
 const STORAGE_KEY = 'molekulax:libraryId'
 
@@ -14,9 +14,9 @@ export const LibraryContext = createContext({
   libraryId: DEFAULT_LIBRARY_ID,
   setLibraryId: () => {},
   availableLibraries: [],
+  isLoading: false,
 })
 
-// Priority on mount: hash deep-link > sessionStorage > defaultId.
 function readInitialLibraryId(defaultId) {
   if (typeof window === 'undefined') return defaultId
   const hash = window.location.hash.replace(/^#/, '')
@@ -29,6 +29,8 @@ function readInitialLibraryId(defaultId) {
 
 export function LibraryProvider({ children, defaultId = DEFAULT_LIBRARY_ID }) {
   const [libraryId, setLibraryId] = useState(() => readInitialLibraryId(defaultId))
+  const [library, setLibrary] = useState(() => getLibrary(libraryId))
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -36,12 +38,25 @@ export function LibraryProvider({ children, defaultId = DEFAULT_LIBRARY_ID }) {
     }
   }, [libraryId])
 
+  useEffect(() => {
+    let cancelled = false
+    setIsLoading(true)
+    loadLibrary(libraryId).then((lib) => {
+      if (!cancelled) {
+        setLibrary(lib)
+        setIsLoading(false)
+      }
+    })
+    return () => { cancelled = true }
+  }, [libraryId])
+
   const value = useMemo(() => ({
-    library: getLibrary(libraryId),
+    library,
     libraryId,
     setLibraryId,
     availableLibraries: listLibraries(),
-  }), [libraryId])
+    isLoading,
+  }), [library, libraryId, isLoading])
 
   return (
     <LibraryContext.Provider value={value}>

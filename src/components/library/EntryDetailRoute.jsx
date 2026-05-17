@@ -1,6 +1,6 @@
-import { useEffect, lazy, Suspense } from 'react'
+import { useEffect, useState, lazy, Suspense } from 'react'
 import { X } from 'lucide-react'
-import { getLibrary } from '../../data/libraries'
+import { getLibrary, loadLibrary } from '../../data/libraries'
 import { adaptLibraryEntry } from './adaptLibraryEntry'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
 import { useLang } from '../../i18n/LanguageContext'
@@ -26,7 +26,22 @@ export default function EntryDetailRoute({ hash }) {
   const { t } = useLang()
   const { libraryId, setLibraryId } = useLibrary()
 
-  const library = parsed ? getLibrary(parsed.library) : null
+  const [library, setLibrary] = useState(() => {
+    if (!parsed) return null
+    const cached = getLibrary(parsed.library)
+    // Return only if it has entries (i.e., it's the full library, not just META)
+    return cached && Array.isArray(cached.entries) ? cached : null
+  })
+
+  useEffect(() => {
+    if (!parsed) { setLibrary(null); return }
+    let cancelled = false
+    loadLibrary(parsed.library).then((lib) => {
+      if (!cancelled) setLibrary(lib)
+    })
+    return () => { cancelled = true }
+  }, [parsed?.library])
+
   const liveEntry = parsed && library ? library.entries.find(e => e.id === parsed.id) : null
   const peptide = liveEntry ? adaptLibraryEntry(liveEntry, library) : null
 
@@ -70,8 +85,8 @@ export default function EntryDetailRoute({ hash }) {
   }, [isDesktop])
 
   useEffect(() => {
-    if (parsed && !liveEntry) closeDetail()
-  }, [parsed, liveEntry])
+    if (parsed && library && !liveEntry) closeDetail()
+  }, [parsed, library, liveEntry])
 
   // Smooth-scroll to top whenever the active entry changes (e.g. clicking a
   // RelatedCard navigates from #entry/.../A to #entry/.../B). Without this,
@@ -84,6 +99,8 @@ export default function EntryDetailRoute({ hash }) {
     })
   }, [parsed?.library, parsed?.id])
 
+  // While the library data is still loading, render nothing (the modal/page
+  // is invisible until the entry is resolved).
   if (!peptide) return null
 
   const handleJump = (id) => {
