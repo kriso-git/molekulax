@@ -112,19 +112,14 @@ function deriveQuickStart(peptide, library) {
  if (library?.id !== 'peptides') {
  return null
  }
- const route = findFactByLabel(peptide.keyInfo, ['adagolás', 'route', 'podanie'])
- const routeText = route ? trAny(route.value) : 'SC injekció'
- const vial = peptide.defaultVialMg
- const bac = peptide.defaultBacMl
- const dose = peptide.defaultDoseMcg
  return [
  {
  step: 1,
- title: { hu: 'Rekonstituálás', en: 'Reconstitute', pl: 'Rozpuszczenie' },
+ title: { hu: 'Rekonstituálás', en: 'Reconstitution', pl: 'Rekonstytucja' },
  detail: {
- hu: `${vial || '?'} mg-os fiola + ${bac || '?'} ml bakteriostatikus víz, óvatos elkeverés.`,
- en: `${vial || '?'} mg vial + ${bac || '?'} ml bacteriostatic water, swirl gently.`,
- pl: `${vial || '?'} mg fiolka + ${bac || '?'} ml wody bakteriostatycznej, delikatnie mieszać.`,
+ hu: 'Hideg szárított por hígítása bakteriostatikus vízzel.',
+ en: 'Dilute the lyophilized powder with bacteriostatic water.',
+ pl: 'Rozcieńcz liofilizowany proszek wodą bakteriostatyczną.',
  },
  },
  {
@@ -138,20 +133,20 @@ function deriveQuickStart(peptide, library) {
  },
  {
  step: 3,
- title: { hu: 'Dózis & beadás', en: 'Dose & administer', pl: 'Dawka & podanie' },
+ title: { hu: 'Beadás', en: 'Administration', pl: 'Podanie' },
  detail: {
- hu: `${dose || '?'} mcg kezdő dózis ${routeText}-on; titrálás tolerancia szerint.`,
- en: `${dose || '?'} mcg starting dose via ${routeText}; titrate to tolerance.`,
- pl: `${dose || '?'} mcg dawka startowa ${routeText}; titracja do tolerancji.`,
+ hu: 'Szubkután injekció majd titrálás tolerancia szerint.',
+ en: 'Subcutaneous injection, titrate to tolerance.',
+ pl: 'Iniekcja podskórna, dawkowanie do tolerancji.',
  },
  },
  {
  step: 4,
- title: { hu: 'Monitorozás', en: 'Monitor', pl: 'Monitorowanie' },
+ title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
  detail: {
- hu: 'Subjective + objective markerek hetente; mellékhatás esetén dózis-csökkentés.',
- en: 'Track subjective + objective markers weekly; reduce dose on side effects.',
- pl: 'Markery subiektywne i obiektywne tygodniowo; redukcja dawki przy działaniach niepożądanych.',
+ hu: 'Mellékhatás esetén dózis-csökkentés.',
+ en: 'Dose reduction if side effects occur.',
+ pl: 'Redukcja dawki w razie działań niepożądanych.',
  },
  },
  ]
