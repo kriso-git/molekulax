@@ -1,0 +1,14 @@
+# Binary assets — Git must not normalize line endings on Windows or
+# attempt to diff. Code-reviewer flagged this in Phase 8 (Task 4 review)
+# after every WOFF2/WebP/PNG commit triggered the "LF will be replaced
+# by CRLF the next time Git touches it" warning on Windows.
+*.woff2 binary
+*.woff  binary
+*.ttf   binary
+*.otf   binary
+*.webp  binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.avif  binary
+*.ico   binary
