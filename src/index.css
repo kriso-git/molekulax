@@ -109,6 +109,24 @@
   unicode-range: U+0020-007E, U+2080-2089;
 }
 
+/* ── ChemicalFormulaPlaceholder — Doto neon HUD (Phase 10) ─────────────── */
+.font-doto { font-family: 'Doto', 'Courier New', monospace; }
+
+@keyframes cfp-pulse-glow {
+  0%, 100% { opacity: 0.4; transform: scale(0.88); }
+  50%      { opacity: 1;   transform: scale(1.08); }
+}
+@keyframes cfp-pulse-text {
+  0%, 100% { filter: brightness(0.9); }
+  50%      { filter: brightness(1.15); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
 /* ── Theme tokens ──────────────────────────────────────────────────────────
    Dark is the brand default. Light is an opt-in override toggled via
    `data-theme="light"` on <html>. */
