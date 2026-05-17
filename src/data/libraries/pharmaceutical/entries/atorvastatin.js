@@ -347,6 +347,21 @@ export default {
         "hu": "Grapefruit-lé rendszeres fogyasztása",
         "en": "Regular grapefruit juice consumption",
         "pl": "Regularne spożywanie soku grejpfrutowego"
+      },
+      {
+        "hu": "Korábbi statin-indukált rhabdomyolysis vagy súlyos myopathia anamnézis",
+        "en": "Prior statin-induced rhabdomyolysis or severe myopathy history",
+        "pl": "Wywiad rabdomiolizy lub ciężkiej miopatii indukowanej statyną"
+      },
+      {
+        "hu": "Megmagyarázhatatlan, tartós szérum-transzamináz-emelkedés (>3x ULN)",
+        "en": "Unexplained, persistent serum transaminase elevation (>3x ULN)",
+        "pl": "Niewyjaśnione, utrzymujące się podwyższenie aminotransferaz w surowicy (>3x ULN)"
+      },
+      {
+        "hu": "Egyidejű ciklosporin (megnövekedett rhabdomyolysis-kockázat)",
+        "en": "Concurrent cyclosporine (increased rhabdomyolysis risk)",
+        "pl": "Jednoczesne stosowanie cyklosporyny (zwiększone ryzyko rabdomiolizy)"
       }
     ]
   },

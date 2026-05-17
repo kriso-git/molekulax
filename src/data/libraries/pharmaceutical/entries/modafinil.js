@@ -357,6 +357,21 @@ export default {
         "hu": "Off-label kognitív fokozás MÁS jogi keretben (Nootropikum-könyvtár külön framing)",
         "en": "Off-label cognitive enhancement IN A DIFFERENT legal frame (Nootropic library separate framing)",
         "pl": "Off-label wzmocnienie poznawcze w INNYM ramie prawnym (osobne framing biblioteki Nootropik)"
+      },
+      {
+        "hu": "Terhesség és szoptatás (állatkísérletes embriotoxicitás, nincs humán biztonsági adat)",
+        "en": "Pregnancy and breastfeeding (animal embryotoxicity, no human safety data)",
+        "pl": "Ciąża i karmienie piersią (embriotoksyczność u zwierząt, brak danych dotyczących bezpieczeństwa u ludzi)"
+      },
+      {
+        "hu": "Csak orális hormonális fogamzásgátlóra hagyatkozás a kezelés alatt és 1 hónappal utána (CYP3A4-indukció — csökkent hatékonyság, kiegészítő barrier-módszer kell)",
+        "en": "Sole reliance on oral hormonal contraception during treatment and 1 month after (CYP3A4 induction — reduced efficacy, supplementary barrier method required)",
+        "pl": "Wyłączne poleganie na doustnej antykoncepcji hormonalnej w trakcie leczenia i 1 miesiąc po (indukcja CYP3A4 — zmniejszona skuteczność, wymagana dodatkowa metoda barierowa)"
+      },
+      {
+        "hu": "Iszkémiás EKG-eltérések, mellkasi fájdalom vagy korábbi arrhythmia anamnézis stimuláns-kezelés alatt",
+        "en": "Ischemic ECG changes, chest pain, or prior arrhythmia history under stimulant therapy",
+        "pl": "Niedokrwienne zmiany w EKG, ból w klatce piersiowej lub wcześniejsze arytmie podczas terapii stymulującej"
       }
     ]
   },

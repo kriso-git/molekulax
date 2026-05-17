@@ -347,6 +347,21 @@ export default {
         "hu": "MAOi (egyidejű vagy 14 napon belüli)",
         "en": "MAOi (concurrent or within 14 days)",
         "pl": "MAOi (jednocześnie lub w ciągu 14 dni)"
+      },
+      {
+        "hu": "Linezolid vagy IV metilénkék (MAO-gátló hatás, szerotonin-szindróma kockázat)",
+        "en": "Linezolid or IV methylene blue (MAOI activity, serotonin syndrome risk)",
+        "pl": "Linezolid lub dożylny błękit metylenowy (działanie MAOI, ryzyko zespołu serotoninowego)"
+      },
+      {
+        "hu": "Hirtelen antiepileptikum- vagy szedatohipnotikum-elvonás (görcsroham-küszöb csökkenés)",
+        "en": "Abrupt antiepileptic or sedative-hypnotic withdrawal (lowered seizure threshold)",
+        "pl": "Nagłe odstawienie leków przeciwpadaczkowych lub uspokajająco-nasennych (obniżony próg drgawkowy)"
+      },
+      {
+        "hu": "Súlyos májkárosodás (Child-Pugh ≥10) — kontraindikált az FDA-címke szerint",
+        "en": "Severe hepatic impairment (Child-Pugh ≥10) — contraindicated per FDA label",
+        "pl": "Ciężka niewydolność wątroby (Child-Pugh ≥10) — przeciwwskazane wg etykiety FDA"
       }
     ]
   },

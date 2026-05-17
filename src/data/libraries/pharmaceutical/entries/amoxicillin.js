@@ -361,6 +361,21 @@ export default {
         "hu": "Önkezelés sub-terápiás dózisokkal (rezisztencia-fejlődés)",
         "en": "Self-treatment with sub-therapeutic doses (resistance development)",
         "pl": "Samoleczenie dawkami subterapeutycznymi (rozwój oporności)"
+      },
+      {
+        "hu": "Korábbi amoxicillin/clavulansav-indukált kolestatikus sárgaság vagy májfunkció-zavar anamnézis",
+        "en": "Prior amoxicillin/clavulanate-induced cholestatic jaundice or hepatic dysfunction history",
+        "pl": "Wcześniejsza cholestatyczna żółtaczka lub zaburzenia czynności wątroby indukowane amoksycyliną/klawulanianem"
+      },
+      {
+        "hu": "Súlyos vesekárosodás (CrCl <30 ml/min) dóziskorrekció nélkül — akkumuláció és toxicitás-kockázat",
+        "en": "Severe renal impairment (CrCl <30 ml/min) without dose adjustment — accumulation and toxicity risk",
+        "pl": "Ciężka niewydolność nerek (CrCl <30 ml/min) bez korekty dawki — ryzyko kumulacji i toksyczności"
+      },
+      {
+        "hu": "Korábbi C. difficile-asszociált pszeudomembranózus colitis béta-laktám antibiotikum után",
+        "en": "Prior C. difficile-associated pseudomembranous colitis following beta-lactam antibiotic",
+        "pl": "Wcześniejsze rzekomobłoniaste zapalenie jelita grubego związane z C. difficile po antybiotyku beta-laktamowym"
       }
     ]
   },

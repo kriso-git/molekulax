@@ -356,6 +356,21 @@ export default {
         "hu": "Levothyroxin használata súlyveszteségre normofunkciós pajzsmirigynél (visszaélés)",
         "en": "Levothyroxine for weight loss in euthyroid patients (abuse)",
         "pl": "Lewotyroksyna do utraty wagi u pacjentów eutyreotycznych (nadużycie)"
+      },
+      {
+        "hu": "Kezeletlen hypophysis-elégtelenség (előbb glukokortikoid-pótlás, addiszoni krízis-megelőzés)",
+        "en": "Untreated pituitary insufficiency (replace glucocorticoid first to prevent addisonian crisis)",
+        "pl": "Nieleczona niewydolność przysadki (najpierw uzupełnić glukokortykoid, aby zapobiec przełomowi addisonowskiemu)"
+      },
+      {
+        "hu": "Ismert hipersenzitivitás a hatóanyagra vagy bármely segédanyagra",
+        "en": "Known hypersensitivity to the active substance or any excipient",
+        "pl": "Znana nadwrażliwość na substancję czynną lub jakąkolwiek substancję pomocniczą"
+      },
+      {
+        "hu": "Túlfeszített szuppresszív dózis (TSH <0,1) szubklinikus betegségben, posztmenopauzális csontritkulással vagy pitvarfibrillációval",
+        "en": "Aggressive suppressive dose (TSH <0.1) in subclinical disease with postmenopausal osteoporosis or atrial fibrillation",
+        "pl": "Agresywna dawka supresyjna (TSH <0,1) w chorobie subklinicznej z osteoporozą pomenopauzalną lub migotaniem przedsionków"
       }
     ]
   },

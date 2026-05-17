@@ -356,6 +356,26 @@ export default {
         "hu": "Súlyos hipotenzió, súlyos máj- vagy vesefunkció-zavar",
         "en": "Severe hypotension, severe hepatic or renal impairment",
         "pl": "Ciężka hipotensja, ciężka niewydolność wątroby lub nerek"
+      },
+      {
+        "hu": "Korábbi nem-arteritises iszkémiás opticus neuropathia (NAION) bármelyik szemen — PDE5-i indukált látásvesztés-kockázat",
+        "en": "Prior non-arteritic ischemic optic neuropathy (NAION) in either eye — PDE5i-induced vision loss risk",
+        "pl": "Wcześniejsza nietętnicza niedokrwienna neuropatia nerwu wzrokowego (NAION) w jakimkolwiek oku — ryzyko utraty wzroku indukowanej PDE5i"
+      },
+      {
+        "hu": "Kontrollálatlan hipertónia (>170/100 Hgmm) vagy szimptomatikus hipotenzió (<90/50 Hgmm)",
+        "en": "Uncontrolled hypertension (>170/100 mmHg) or symptomatic hypotension (<90/50 mmHg)",
+        "pl": "Niekontrolowane nadciśnienie (>170/100 mmHg) lub objawowa hipotensja (<90/50 mmHg)"
+      },
+      {
+        "hu": "Több mint egy stroke vagy életveszélyes arrhythmia anamnézis az elmúlt 6 hónapban",
+        "en": "Stroke or life-threatening arrhythmia within the last 6 months",
+        "pl": "Udar lub zagrażająca życiu arytmia w ciągu ostatnich 6 miesięcy"
+      },
+      {
+        "hu": "Hirtelen hallásvesztés anamnézis PDE5-i alatt",
+        "en": "Sudden hearing loss history under PDE5i",
+        "pl": "Wywiad nagłej utraty słuchu w trakcie stosowania PDE5i"
       }
     ]
   },

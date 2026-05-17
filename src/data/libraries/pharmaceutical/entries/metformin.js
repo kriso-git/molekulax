@@ -342,6 +342,21 @@ export default {
         "hu": "Súlyos szívelégtelenség (NYHA III-IV), hipoxia, sokk",
         "en": "Severe heart failure (NYHA III-IV), hypoxia, shock",
         "pl": "Ciężka niewydolność serca (NYHA III-IV), hipoksja, wstrząs"
+      },
+      {
+        "hu": "Jód-kontrasztos képalkotás napján és 48 órán át utána (laktoacidózis-kockázat, vesefunkció ellenőrzéséig)",
+        "en": "Day of iodinated contrast imaging and 48 h after (lactic acidosis risk, until renal function reassessed)",
+        "pl": "Dzień badania z kontrastem jodowym i 48 h po nim (ryzyko kwasicy mleczanowej, do ponownej oceny czynności nerek)"
+      },
+      {
+        "hu": "Akut súlyos infekció, szepszis, dehidráció (átmeneti felfüggesztés a laktoacidózis-kockázat miatt)",
+        "en": "Acute severe infection, sepsis, dehydration (temporary suspension due to lactic acidosis risk)",
+        "pl": "Ostra ciężka infekcja, sepsa, odwodnienie (tymczasowe wstrzymanie z powodu ryzyka kwasicy mleczanowej)"
+      },
+      {
+        "hu": "Súlyos májkárosodás (csökkent laktát-clearance, kontraindikált az FDA-címke szerint)",
+        "en": "Severe hepatic impairment (reduced lactate clearance, contraindicated per FDA label)",
+        "pl": "Ciężka niewydolność wątroby (zmniejszony klirens mleczanu, przeciwwskazane zgodnie z etykietą FDA)"
       }
     ]
   },

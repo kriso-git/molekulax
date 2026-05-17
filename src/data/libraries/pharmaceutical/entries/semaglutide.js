@@ -361,6 +361,21 @@ export default {
         "hu": "Súlyos gasztroparezis (a hatás kontraproduktív lehet)",
         "en": "Severe gastroparesis (effect may be counterproductive)",
         "pl": "Ciężka gastropareza (efekt może być przeciwskuteczny)"
+      },
+      {
+        "hu": "Korábbi súlyos hipersenzitivitás (anafilaxia, angioödéma) semaglutidra vagy bármely segédanyagra",
+        "en": "Prior severe hypersensitivity (anaphylaxis, angioedema) to semaglutide or any excipient",
+        "pl": "Wcześniejsza ciężka nadwrażliwość (anafilaksja, obrzęk naczynioruchowy) na semaglutyd lub którąkolwiek substancję pomocniczą"
+      },
+      {
+        "hu": "Egyidejű másik GLP-1 receptor agonista (Liraglutide, Dulaglutide, Tirzepatide) — redundáns kockázat",
+        "en": "Concurrent another GLP-1 receptor agonist (liraglutide, dulaglutide, tirzepatide) — redundant risk",
+        "pl": "Jednoczesny inny agonista receptora GLP-1 (liraglutyd, dulaglutyd, tyrzepatyd) — nadmiarowe ryzyko"
+      },
+      {
+        "hu": "Diabéteszes retinopátia gyors HbA1c-javulás mellett (progresszió-kockázat, oftalmológiai monitoring)",
+        "en": "Diabetic retinopathy under rapid HbA1c improvement (progression risk, ophthalmologic monitoring required)",
+        "pl": "Retinopatia cukrzycowa przy szybkiej poprawie HbA1c (ryzyko progresji, wymagany nadzór okulistyczny)"
       }
     ]
   },

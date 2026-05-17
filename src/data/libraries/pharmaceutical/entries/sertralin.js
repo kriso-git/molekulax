@@ -347,6 +347,21 @@ export default {
         "hu": "Egyéb erős serotoninerg szer (Tramadol, MDMA) hosszú távú kombinálása",
         "en": "Long-term combination with other strong serotonergics (tramadol, MDMA)",
         "pl": "Długoterminowa kombinacja z innymi silnymi serotoninergicznymi (tramadol, MDMA)"
+      },
+      {
+        "hu": "Linezolid vagy IV metilénkék (MAO-gátló hatás, szerotonin-szindróma kockázata)",
+        "en": "Linezolid or IV methylene blue (MAOI activity, serotonin syndrome risk)",
+        "pl": "Linezolid lub dożylny błękit metylenowy (działanie MAOI, ryzyko zespołu serotoninowego)"
+      },
+      {
+        "hu": "Súlyos májkárosodás (Child-Pugh C) — clearance jelentősen csökkent",
+        "en": "Severe hepatic impairment (Child-Pugh C) — clearance significantly reduced",
+        "pl": "Ciężka niewydolność wątroby (Child-Pugh C) — znacząco zmniejszony klirens"
+      },
+      {
+        "hu": "Egyidejű disulfiram orális koncentrátum-formula (etanol-tartalom) esetén",
+        "en": "Concurrent disulfiram with the oral concentrate formulation (ethanol content)",
+        "pl": "Jednoczesne stosowanie disulfiramu z postacią doustnego koncentratu (zawartość etanolu)"
       }
     ]
   },

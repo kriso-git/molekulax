@@ -351,6 +351,21 @@ export default {
         "hu": "Gyermekek és serdülők (< 18 év)",
         "en": "Children and adolescents (< 18 yr)",
         "pl": "Dzieci i nastolatkowie (< 18 lat)"
+      },
+      {
+        "hu": "Tört vagy porított tabletta terhes (vagy potenciálisan terhes) nő általi megérintése — transzdermális felszívódás magzati hímivarszerv-fejlődési zavart okozhat",
+        "en": "Handling of broken/crushed tablets by pregnant (or potentially pregnant) women — transdermal absorption can disrupt male fetal genital development",
+        "pl": "Dotykanie złamanych/skruszonych tabletek przez kobiety w ciąży (lub potencjalnie ciężarne) — wchłanianie przezskórne może zaburzyć rozwój genitaliów płodu męskiego"
+      },
+      {
+        "hu": "Vér- vagy spermadonáció a kezelés alatt és 1 hónapig utána (másodlagos magzati expozíció megelőzése)",
+        "en": "Blood or semen donation during treatment and 1 month after (prevent secondary fetal exposure)",
+        "pl": "Oddawanie krwi lub nasienia w trakcie leczenia i 1 miesiąc po (zapobieganie wtórnej ekspozycji płodu)"
+      },
+      {
+        "hu": "Egyidejű dutasterid (másik 5α-reduktáz inhibitor) — redundáns kockázat, nem racionális",
+        "en": "Concurrent dutasteride (another 5α-reductase inhibitor) — redundant risk, not rational",
+        "pl": "Jednoczesne stosowanie dutasterydu (innego inhibitora 5α-reduktazy) — nadmiarowe ryzyko, nieracjonalne"
       }
     ]
   },
