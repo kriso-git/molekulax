@@ -146,6 +146,7 @@
  * @property {I18nString} effectsTitle NEW Phase 4, section header.
  * @property {I18nString} effectsSubtitle NEW Phase 4, section subtitle.
  * @property {LibraryLabels} [labels] NEW Phase 4, per-library UI string overrides; falls back to i18n.
+ * @property {LibraryFeatureFlags} features Phase 10 — conditional render flags per library.
  */
 
 /**
@@ -176,6 +177,19 @@
  * @property {'banned'|'monitored'|null} [wadaStatus] Performance library.
  * @property {I18nString} [prescriptionStatus] Pharmaceutical library.
  * @property {string} [atcCode] Pharmaceutical library.
+ */
+
+/**
+ * Phase 10 — per-library feature flags driving conditional render in EntryDetail.
+ * @typedef {Object} LibraryFeatureFlags
+ * @property {boolean} faq                          Show per-entry FAQ block. Currently always false (removed JSX).
+ * @property {boolean} doseRecommendations          Show per-entry dose recommendation list. Currently always false (removed JSX).
+ * @property {boolean} calculator                   Peptide reconstitution calculator. peptides=true, others=false.
+ * @property {boolean} qualityGrid                  QualityGrid section. peptides=true, others=false.
+ * @property {boolean} interactions                 InteractionsOrbit section. peptides=true, others=false.
+ * @property {boolean} quickStart                   Quick Start Constellation + ReconstitutePath. peptides=true, others=false.
+ * @property {boolean} labTerminal                  LabTerminal "Adat-konzol" section. peptides+performance+pharmaceutical=true, nootropics=false.
+ * @property {boolean} chemicalFormulaPlaceholder   Use Doto neon formula tile instead of MoleculeFallback. nootropics=true, others=false.
  */
 
 // This module exports nothing at runtime, types only.
