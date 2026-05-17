@@ -286,7 +286,7 @@ export default function PharmaceuticalCalculator({ doseCalc, accent = '#10b981' 
               <p className="text-[10px] uppercase tracking-[0.22em] font-bold mb-2 opacity-70">
                 {t('entry.calc.result')}
               </p>
-              <p className="font-mono font-bold tabular-nums leading-none"
+              <p className="font-mono font-bold tabular-nums leading-[1.1] pb-1"
                  style={{ color: accent, fontSize: 'clamp(2.5rem, 6vw, 4rem)', textShadow: `0 0 30px ${accent}55` }}>
                 {dose}
                 <span className="text-base ml-2 opacity-80">{cfg.unitsPerKg}/nap</span>
@@ -373,7 +373,7 @@ export default function PharmaceuticalCalculator({ doseCalc, accent = '#10b981' 
             <p className="text-[10px] uppercase tracking-[0.22em] font-bold mb-2 opacity-70">
               {t('entry.calc.result')}
             </p>
-            <p className="font-mono font-bold tabular-nums leading-none"
+            <p className="font-mono font-bold tabular-nums leading-[1.1] pb-1"
                style={{ color: accent, fontSize: 'clamp(2.5rem, 6vw, 4rem)', textShadow: `0 0 30px ${accent}55` }}>
               {selectedDose}
               <span className="text-base ml-2 opacity-80">{doseCalc.unit}</span>

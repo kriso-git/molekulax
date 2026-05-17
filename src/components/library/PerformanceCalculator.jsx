@@ -318,7 +318,7 @@ export default function PerformanceCalculator({ doseCalc, accent = '#10b981' }) 
               {t('entry.calc.result')}
             </p>
             <p
-              className="relative font-mono font-black tabular-nums leading-none"
+              className="relative font-mono font-black tabular-nums leading-[1.1] pb-1"
               style={{
                 fontSize: 'clamp(2.5rem, 7vw, 4rem)',
                 color: accent,

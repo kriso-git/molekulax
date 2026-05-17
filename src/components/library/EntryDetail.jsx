@@ -1508,7 +1508,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
 
  <h1
- className="font-black tracking-tight leading-none text-5xl sm:text-6xl lg:text-7xl mb-3"
+ className="font-black tracking-tight leading-[1.1] pb-2 text-5xl sm:text-6xl lg:text-7xl mb-3"
  style={{
  background: isLight
  ? `linear-gradient(135deg, #0f172a 0%, ${accent} 55%, ${tierColor} 100%)`
