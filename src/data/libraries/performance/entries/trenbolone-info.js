@@ -247,6 +247,26 @@ export default {
         "hu": "Első ciklus, TRT-alap nélküli használat, kardiovaszkuláris betegség",
         "en": "First cycle, use without TRT base, cardiovascular disease",
         "pl": "Pierwszy cykl, użycie bez bazy TRT, choroba sercowo-naczyniowa"
+      },
+      {
+        "hu": "Prosztata- vagy emlőkarcinóma (androgén-érzékeny tumor kontraindikálja)",
+        "en": "Prostate or breast carcinoma (androgen-sensitive tumor contraindicates)",
+        "pl": "Rak prostaty lub piersi (androgenowrażliwy nowotwór przeciwwskazuje)"
+      },
+      {
+        "hu": "Polycythaemia (hematokrit >54%) — thrombosis-kockázat",
+        "en": "Polycythemia (hematocrit >54%) — thrombosis risk",
+        "pl": "Czerwienica (hematokryt >54%) — ryzyko zakrzepicy"
+      },
+      {
+        "hu": "Tervezett apaság (akár 12+ hónap spermatogenezis-recovery 19-nor metabolitok miatt)",
+        "en": "Planned fatherhood (12+ months spermatogenesis recovery possible due to 19-nor metabolites)",
+        "pl": "Planowane ojcostwo (możliwe 12+ miesięcy odbudowy spermatogenezy z powodu metabolitów 19-nor)"
+      },
+      {
+        "hu": "Terhesség és szoptatás",
+        "en": "Pregnancy and breastfeeding",
+        "pl": "Ciąża i karmienie piersią"
       }
     ]
   },

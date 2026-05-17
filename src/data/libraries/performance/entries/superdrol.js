@@ -247,6 +247,21 @@ export default {
         "hu": "Kardiovaszkuláris kockázat (családi anamnézis, magas LDL) abszolút kontraindikáció",
         "en": "Cardiovascular risk (family history, high LDL) is an absolute contraindication",
         "pl": "Ryzyko sercowo-naczyniowe (wywiad rodzinny, wysokie LDL) to bezwzględne przeciwwskazanie"
+      },
+      {
+        "hu": "Prosztata- vagy emlőkarcinóma (androgén-érzékeny tumor) abszolút kontraindikáció",
+        "en": "Prostate or breast carcinoma (androgen-sensitive tumor) is an absolute contraindication",
+        "pl": "Rak prostaty lub piersi (androgenowrażliwy nowotwór) to bezwzględne przeciwwskazanie"
+      },
+      {
+        "hu": "Tervezett apaság (súlyos HPTA-szuppresszió, hosszú recovery)",
+        "en": "Planned fatherhood (severe HPTA suppression, long recovery)",
+        "pl": "Planowane ojcostwo (ciężka supresja HPTA, długa odbudowa)"
+      },
+      {
+        "hu": "Terhesség és szoptatás (virilizáció és teratogén kockázat)",
+        "en": "Pregnancy and breastfeeding (virilization and teratogenic risk)",
+        "pl": "Ciąża i karmienie piersią (wirylizacja i ryzyko teratogenne)"
       }
     ]
   },

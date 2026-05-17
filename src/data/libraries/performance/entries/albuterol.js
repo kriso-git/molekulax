@@ -223,6 +223,26 @@ export default {
         "hu": "Hyperthyreosis, glaukóma kontraindikáció",
         "en": "Hyperthyroidism, glaucoma are contraindications",
         "pl": "Nadczynność tarczycy, jaskra to przeciwwskazania"
+      },
+      {
+        "hu": "Off-label fogyásra használat kontraindikált súlyos kardiovaszkuláris betegség mellett — medical inhaler-indikáció ettől eltér",
+        "en": "Off-label fat-loss use is contraindicated with severe cardiovascular disease — medical inhaler indication differs",
+        "pl": "Stosowanie off-label do redukcji tkanki tłuszczowej jest przeciwwskazane przy ciężkiej chorobie sercowo-naczyniowej — wskazanie medyczne (inhalator) jest inne"
+      },
+      {
+        "hu": "Súlyos szorongás, pánikbetegség, epilepszia",
+        "en": "Severe anxiety, panic disorder, seizure disorder",
+        "pl": "Ciężki lęk, zaburzenia paniczne, padaczka"
+      },
+      {
+        "hu": "MAO-gátló egyidejű használata — hypertensive krízis-kockázat",
+        "en": "Concurrent MAOI use — hypertensive crisis risk",
+        "pl": "Jednoczesne stosowanie MAOI — ryzyko przełomu nadciśnieniowego"
+      },
+      {
+        "hu": "Terhesség és szoptatás (kategória C, csak indokolt esetben)",
+        "en": "Pregnancy and breastfeeding (category C, only if clearly indicated)",
+        "pl": "Ciąża i karmienie piersią (kategoria C, tylko gdy wyraźnie wskazane)"
       }
     ]
   },

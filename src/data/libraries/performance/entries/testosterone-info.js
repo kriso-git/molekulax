@@ -247,6 +247,21 @@ export default {
         "hu": "Tervezett apaság alatt (spermatogenezis-szuppresszió)",
         "en": "During planned fatherhood (spermatogenesis suppression)",
         "pl": "W okresie planowanego ojcostwa (supresja spermatogenezy)"
+      },
+      {
+        "hu": "Polycythaemia (hematokrit >54%) — thrombosis, stroke, MI kockázat",
+        "en": "Polycythemia (hematocrit >54%) — thrombosis, stroke, MI risk",
+        "pl": "Czerwienica (hematokryt >54%) — ryzyko zakrzepicy, udaru, MI"
+      },
+      {
+        "hu": "Kezeletlen hypertonia, koszorúér-betegség, súlyos szívelégtelenség (NYHA III-IV)",
+        "en": "Untreated hypertension, coronary artery disease, severe heart failure (NYHA III-IV)",
+        "pl": "Nieleczone nadciśnienie, choroba wieńcowa, ciężka niewydolność serca (NYHA III-IV)"
+      },
+      {
+        "hu": "Terhesség és szoptatás (virilizáció és teratogén kockázat magzati nőnemű fejlődésnél)",
+        "en": "Pregnancy and breastfeeding (virilization and teratogenic risk to female fetal development)",
+        "pl": "Ciąża i karmienie piersią (wirylizacja i ryzyko teratogenne dla rozwoju płodu żeńskiego)"
       }
     ]
   },

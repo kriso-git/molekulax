@@ -224,6 +224,21 @@ export default {
         "hu": "Krónikus szívelégtelenség kontraindikáció (vízretenció súlyosbít)",
         "en": "Chronic heart failure is a contraindication (water retention worsens it)",
         "pl": "Przewlekła niewydolność serca to przeciwwskazanie"
+      },
+      {
+        "hu": "Diabéteszes retinopátia (IGF-1 emelés proliferatív retinopátiát gyorsíthat)",
+        "en": "Diabetic retinopathy (IGF-1 elevation may accelerate proliferative retinopathy)",
+        "pl": "Retinopatia cukrzycowa (wzrost IGF-1 może przyspieszyć retinopatię proliferacyjną)"
+      },
+      {
+        "hu": "Súlyos ödéma vagy nefrotikus szindróma (vízretenció súlyosbítja)",
+        "en": "Severe edema or nephrotic syndrome (water retention worsens it)",
+        "pl": "Ciężki obrzęk lub zespół nerczycowy (retencja wody pogarsza)"
+      },
+      {
+        "hu": "Terhesség és szoptatás",
+        "en": "Pregnancy and breastfeeding",
+        "pl": "Ciąża i karmienie piersią"
       }
     ]
   },

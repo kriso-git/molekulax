@@ -226,6 +226,26 @@ export default {
         "hu": "Vese- vagy májzavar esetén dózis-csökkentés (CYP2D6 metabolizmus)",
         "en": "Reduce dose with renal or hepatic impairment (CYP2D6 metabolism)",
         "pl": "Zmniejsz dawkę przy zaburzeniach nerek lub wątroby (metabolizm CYP2D6)"
+      },
+      {
+        "hu": "Súlyos kardiovaszkuláris betegség, koszorúér-betegség, aritmia kontraindikáció",
+        "en": "Severe cardiovascular disease, coronary artery disease, arrhythmia is a contraindication",
+        "pl": "Ciężka choroba sercowo-naczyniowa, choroba wieńcowa, arytmia to przeciwwskazanie"
+      },
+      {
+        "hu": "Súlyos szorongás, pánikbetegség (α2-antagonizmus pánikrohamokat provokál)",
+        "en": "Severe anxiety or panic disorder (α2-antagonism provokes panic attacks)",
+        "pl": "Ciężki lęk lub zaburzenia paniczne (antagonizm α2 wywołuje napady paniki)"
+      },
+      {
+        "hu": "Jóindulatú prosztata-hyperplasia (BPH), súlyos vesebetegség",
+        "en": "Benign prostatic hyperplasia (BPH), severe renal disease",
+        "pl": "Łagodny przerost prostaty (BPH), ciężka choroba nerek"
+      },
+      {
+        "hu": "Terhesség és szoptatás",
+        "en": "Pregnancy and breastfeeding",
+        "pl": "Ciąża i karmienie piersią"
       }
     ]
   },

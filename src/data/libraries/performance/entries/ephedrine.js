@@ -230,6 +230,26 @@ export default {
         "hu": "Hyperthyreosis, glaukóma, prostata-megnagyobbodás kontraindikáció",
         "en": "Hyperthyroidism, glaucoma, prostate enlargement are contraindications",
         "pl": "Nadczynność tarczycy, jaskra, przerost prostaty to przeciwwskazania"
+      },
+      {
+        "hu": "Koszorúér-betegség, korábbi MI, súlyos aritmia abszolút kontraindikáció",
+        "en": "Coronary artery disease, prior MI, severe arrhythmia is an absolute contraindication",
+        "pl": "Choroba wieńcowa, przebyty MI, ciężka arytmia to bezwzględne przeciwwskazanie"
+      },
+      {
+        "hu": "Epilepszia, görcsroham-anamnézis (CNS-stimuláció görcsküszöböt csökkenti)",
+        "en": "Seizure disorder, history of seizures (CNS stimulation lowers seizure threshold)",
+        "pl": "Padaczka, drgawki w wywiadzie (stymulacja CNS obniża próg drgawkowy)"
+      },
+      {
+        "hu": "Súlyos szorongás, pánikbetegség (sympathomimetic mellékhatások súlyosbodnak)",
+        "en": "Severe anxiety or panic disorder (sympathomimetic side effects worsen)",
+        "pl": "Ciężki lęk lub zaburzenia paniczne (objawy sympatykomimetyczne się nasilają)"
+      },
+      {
+        "hu": "Terhesség és szoptatás",
+        "en": "Pregnancy and breastfeeding",
+        "pl": "Ciąża i karmienie piersią"
       }
     ]
   },

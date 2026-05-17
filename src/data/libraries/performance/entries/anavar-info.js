@@ -246,6 +246,21 @@ export default {
         "hu": "Alkoholfogyasztás a ciklus alatt (additív hepatotoxicitás)",
         "en": "Alcohol consumption during cycle (additive hepatotoxicity)",
         "pl": "Spożywanie alkoholu podczas cyklu (addytywna hepatotoksyczność)"
+      },
+      {
+        "hu": "Súlyos szívelégtelenség, koszorúér-betegség, kezeletlen hypertonia",
+        "en": "Severe heart failure, coronary artery disease, untreated hypertension",
+        "pl": "Ciężka niewydolność serca, choroba wieńcowa, nieleczone nadciśnienie"
+      },
+      {
+        "hu": "Tervezett apaság (HPTA-szuppresszió, spermatogenezis-recovery hónapok)",
+        "en": "Planned fatherhood (HPTA suppression, spermatogenesis recovery takes months)",
+        "pl": "Planowane ojcostwo (supresja HPTA, odbudowa spermatogenezy zajmuje miesiące)"
+      },
+      {
+        "hu": "Terhesség és szoptatás (virilizáció és teratogén kockázat)",
+        "en": "Pregnancy and breastfeeding (virilization and teratogenic risk)",
+        "pl": "Ciąża i karmienie piersią (wirylizacja i ryzyko teratogenne)"
       }
     ]
   },

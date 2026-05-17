@@ -229,6 +229,26 @@ export default {
         "hu": "β-blokkoló-terápia kontraindikálja a Clenbuterol-t",
         "en": "β-blocker therapy contraindicates Clenbuterol",
         "pl": "Terapia β-blokerami przeciwwskazuje Clenbuterol"
+      },
+      {
+        "hu": "Kardiomiopátia, korábbi MI — hosszú tachikardia szívizom-fibrózist és bal kamrai hipertrófiát okoz",
+        "en": "Cardiomyopathy, prior MI — prolonged tachycardia causes myocardial fibrosis and left ventricular hypertrophy",
+        "pl": "Kardiomiopatia, przebyty MI — przedłużona tachykardia powoduje włóknienie mięśnia sercowego i przerost lewej komory"
+      },
+      {
+        "hu": "Epilepszia, görcsroham-anamnézis (β2 + hypokalemia görcsküszöböt csökkenti)",
+        "en": "Seizure disorder, history of seizures (β2 + hypokalemia lowers seizure threshold)",
+        "pl": "Padaczka, drgawki w wywiadzie (β2 + hipokaliemia obniża próg drgawkowy)"
+      },
+      {
+        "hu": "Súlyos szorongás, pánikbetegség",
+        "en": "Severe anxiety or panic disorder",
+        "pl": "Ciężki lęk lub zaburzenia paniczne"
+      },
+      {
+        "hu": "Terhesség és szoptatás (teratogén állatkísérletekben, kardio-fejlődési hatások)",
+        "en": "Pregnancy and breastfeeding (teratogenic in animal studies, cardiac developmental effects)",
+        "pl": "Ciąża i karmienie piersią (teratogenny w badaniach na zwierzętach, efekty rozwojowe serca)"
       }
     ]
   },

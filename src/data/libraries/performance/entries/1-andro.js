@@ -247,6 +247,21 @@ export default {
         "hu": "Kardiovaszkuláris kockázat (családi anamnézis) kontraindikáció",
         "en": "Cardiovascular risk (family history) is a contraindication",
         "pl": "Ryzyko sercowo-naczyniowe (wywiad rodzinny) to przeciwwskazanie"
+      },
+      {
+        "hu": "Prosztata- vagy emlőkarcinóma (androgén-érzékeny tumor) kontraindikáció",
+        "en": "Prostate or breast carcinoma (androgen-sensitive tumor) is a contraindication",
+        "pl": "Rak prostaty lub piersi (androgenowrażliwy nowotwór) to przeciwwskazanie"
+      },
+      {
+        "hu": "Hosszú ciklusok (>6 hét) — cholestasis és emelt ALT/AST kockázat",
+        "en": "Long cycles (>6 weeks) — cholestasis and elevated ALT/AST risk",
+        "pl": "Długie cykle (>6 tygodni) — ryzyko cholestazy i podwyższonych ALT/AST"
+      },
+      {
+        "hu": "Tervezett apaság, terhesség, szoptatás (HPTA-szuppresszió, teratogén kockázat)",
+        "en": "Planned fatherhood, pregnancy, breastfeeding (HPTA suppression, teratogenic risk)",
+        "pl": "Planowane ojcostwo, ciąża, karmienie piersią (supresja HPTA, ryzyko teratogenne)"
       }
     ]
   },
