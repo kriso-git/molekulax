@@ -121,9 +121,9 @@
   50%      { filter: brightness(1.15); }
 }
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+  .cfp-root .cfp-pulse-glow-el,
+  .cfp-root .cfp-pulse-text-el {
+    animation: none !important;
   }
 }
 

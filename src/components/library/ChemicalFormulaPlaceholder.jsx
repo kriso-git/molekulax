@@ -4,6 +4,8 @@
 
 import { useMemo } from 'react'
 
+const CHEMICAL_GREEN = '#00ff99'
+
 const SIZE_LARGE  = 'text-[2.3rem]'   // ≤4 blocks single row
 const SIZE_MEDIUM = 'text-[1.9rem]'   // 5-6 blocks 2 rows
 const SIZE_SMALL  = 'text-[1.55rem]'  // 7+ blocks 2 rows
@@ -35,7 +37,33 @@ function splitToTwoRows(blocks) {
   return [blocks.slice(0, mid), blocks.slice(mid)]
 }
 
+function Corner({ pos }) {
+  const map = {
+    tl: { top: 14, left: 14, borderRight: 'none', borderBottom: 'none' },
+    tr: { top: 14, right: 14, borderLeft: 'none', borderBottom: 'none' },
+    bl: { bottom: 14, left: 14, borderRight: 'none', borderTop: 'none' },
+    br: { bottom: 14, right: 14, borderLeft: 'none', borderTop: 'none' },
+  }
+  return (
+    <span
+      aria-hidden="true"
+      className="absolute pointer-events-none"
+      style={{
+        width: 22,
+        height: 22,
+        border: `1.5px solid ${CHEMICAL_GREEN}`,
+        opacity: 0.6,
+        ...map[pos],
+      }}
+    />
+  )
+}
+
 export default function ChemicalFormulaPlaceholder({ formula, className = '' }) {
+  if (!formula || formula === 'mixture') {
+    return null
+  }
+
   const { rows, sizeClass } = useMemo(() => {
     const parsed = parseFormula(formula)
     const allBlocks = parsed.flat()
@@ -46,7 +74,7 @@ export default function ChemicalFormulaPlaceholder({ formula, className = '' }) 
 
   return (
     <div
-      className={`relative w-full h-full overflow-hidden rounded-2xl flex items-center justify-center ${className}`}
+      className={`cfp-root relative w-full h-full overflow-hidden rounded-2xl flex items-center justify-center ${className}`}
       style={{
         background:
           'linear-gradient(90deg, rgba(0,255,153,0.025) 50%, transparent 50%) 0 0 / 4px 100%, ' +
@@ -60,7 +88,7 @@ export default function ChemicalFormulaPlaceholder({ formula, className = '' }) 
       {/* Pulsing radial glow */}
       <span
         aria-hidden="true"
-        className="absolute pointer-events-none"
+        className="cfp-pulse-glow-el absolute pointer-events-none"
         style={{
           inset: '18%',
           borderRadius: '50%',
@@ -75,8 +103,9 @@ export default function ChemicalFormulaPlaceholder({ formula, className = '' }) 
       <Corner pos="br" />
       {/* Formula */}
       <div
-        className={`relative z-10 font-doto font-black text-[#00ff99] text-center leading-tight flex flex-col gap-[0.05em] px-4 ${sizeClass}`}
+        className={`cfp-pulse-text-el relative z-10 font-doto font-black text-center leading-tight flex flex-col gap-[0.05em] px-4 ${sizeClass}`}
         style={{
+          color: CHEMICAL_GREEN,
           textShadow:
             '0 0 4px rgba(0,255,153,0.9), 0 0 12px rgba(0,255,153,0.7), 0 0 28px rgba(0,255,153,0.45), 0 0 56px rgba(0,255,153,0.25)',
           animation: 'cfp-pulse-text 3.5s ease-in-out infinite',
@@ -95,27 +124,5 @@ export default function ChemicalFormulaPlaceholder({ formula, className = '' }) 
         ))}
       </div>
     </div>
-  )
-}
-
-function Corner({ pos }) {
-  const map = {
-    tl: { top: 14, left: 14, borderRight: 'none', borderBottom: 'none' },
-    tr: { top: 14, right: 14, borderLeft: 'none', borderBottom: 'none' },
-    bl: { bottom: 14, left: 14, borderRight: 'none', borderTop: 'none' },
-    br: { bottom: 14, right: 14, borderLeft: 'none', borderTop: 'none' },
-  }
-  return (
-    <span
-      aria-hidden="true"
-      className="absolute pointer-events-none"
-      style={{
-        width: 22,
-        height: 22,
-        border: '1.5px solid #00ff99',
-        opacity: 0.6,
-        ...map[pos],
-      }}
-    />
   )
 }
