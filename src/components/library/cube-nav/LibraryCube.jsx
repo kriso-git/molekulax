@@ -54,9 +54,12 @@ export default function LibraryCube() {
   // True-cube geometry: halfWidth = wrapper_width / 2. Így a face-ek
   // valódi kockaként hinge-elnek a megosztott élnél, NEM keresztezik
   // egymást rotáció közben (face 1 a jobb oldali élről swing-el be).
-  // Perspective=8000-rel a max scale ~1.07× (=7% bleed), amit a py-48
-  // padding (192px) elnyel desktop-on; mobile-on a wrapper kisebb,
-  // így a scale és bleed is arányosan kisebb.
+  // Perspective=16000-rel a max scale ~1.04× (=4% bleed). Eredetileg 8000
+  // volt (Phase 7), de az `expanded` accordion-state-en (Top10 + Összes XYZ
+  // ki van nyitva) a face content akár 5000px+ magas → 8000 perspective
+  // mellett a bleed ~200px lett, ami túlcsúszott a py-48 padding-en és
+  // beleharapott a felső "Miért a molekulax?" szekcióba. 16000-rel az
+  // expanded bleed ~95-100px → biztosan a padding-en belül marad.
   useEffect(() => {
     if (!wrapperRef.current) return
     const el = wrapperRef.current
@@ -174,14 +177,15 @@ export default function LibraryCube() {
         onPrev={prev}
         onNext={next}
       />
-      {/* Nincs overflow:hidden — a perspective scaling (~1.07x) miatt a face */}
-      {/* vizuálisan ~70-80px-szel kilóg a wrapper bounds-án, ezt a section */}
-      {/* py-48 padding-je (192px) elnyeli, így nem folyik át sem az Education */}
-      {/* fenti szekcióra, sem a Telegram alsóra. */}
+      {/* Nincs overflow:hidden — a perspective scaling (~1.04x @ perspective */}
+      {/* 16000px) miatt a face vizuálisan ~40-100px-szel kilóg a wrapper */}
+      {/* bounds-án (expanded-en a 100 felé), ezt a section py-48 padding-je */}
+      {/* (192px) bőven elnyeli, így nem folyik át sem az Education fenti */}
+      {/* szekcióra, sem a Telegram alsóra. */}
       <div
         ref={wrapperRef}
         className="max-w-6xl mx-auto"
-        style={{ perspective: '8000px' }}
+        style={{ perspective: '16000px' }}
       >
         <motion.div
           id="library-cube-panel"
