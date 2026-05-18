@@ -1,46 +1,87 @@
 // SideLibrarySwitcher — desktop-only sticky library cycler on BOTH viewport
-// edges. Replaces the cube's built-in arrow controls on lg+ screens (those
-// are hidden via lg:hidden in CubeNavControls). Mobile keeps swipe + cube
-// arrows; tablet (md..lg) keeps the cube's own arrows; lg+ gets these pills.
+// edges. Slides in from off-screen as the user scrolls past the library
+// section. Click cycles to prev/next library with a cooldown that matches
+// the cube's rotation animation so the user can't out-spam the 3D motion.
 //
-// The pills are sized to read the longest Hungarian library label
-// ("TELJESÍTMÉNYFOKOZÓK") cleanly without overflow, with a large readable
-// chevron and a 4-dot library indicator at the far end.
+// Visual details:
+//   • Smaller pill (60→68px wide), 340px tall — fits comfortably on shorter laptop screens
+//   • Two-column vertical label when the library name is longer than ~12
+//     chars (Teljesítményfokozók → 'Teljesítmény' + 'fokozók' side-by-side)
+//   • Current-library readout (small horizontal text + 4-dot indicator)
+//     so the user always knows which library they're on, even when scrolled
+//     past the cube
+//   • Hidden on mobile; tablet (md..lg) keeps the cube's built-in arrows
 
 import { useEffect, useRef, useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLibrary } from '../context/LibraryContext'
 import { useLang } from '../i18n/LanguageContext'
 
-function shortenName(fullName) {
-  let s = (fullName || '')
+const CHEMICAL_GREEN = '#00ff99'
+const SWITCH_COOLDOWN_MS = 750 // matches LibraryCube rotation spring duration
+
+// Strip the trailing "Könyvtár" / "Library" / leading "Biblioteka …" so the
+// label tracks the substance kind, not the word "library".
+function trimLabel(fullName) {
+  return (fullName || '')
     .replace(/\s*Könyvtár\s*$/i, '')
     .replace(/\s*Library\s*$/i, '')
     .replace(/^Biblioteka\s+środków\s+/i, '')
     .replace(/^Biblioteka\s+/i, '')
     .trim()
-  // Side pill is sized for ~12 vertical chars. Cap longer locale variants
-  // (Teljesítményfokozók, Performance Compounds, …) with an ellipsis so
-  // the text never overflows the pill height.
-  if (s.length > 12) return s.slice(0, 11) + '…'
-  return s
 }
 
-function SidePill({ direction, lib, libraries, currentIdx, onClick }) {
+// Split labels longer than 12 chars into two visual columns. We keep a small
+// lookup of preferred natural breaks per locale to avoid splitting mid-syllable
+// (Teljesít|mény + fokozók is much nicer than Teljesít|ményfokozók).
+const SPLIT_OVERRIDES = {
+  // HU
+  'Teljesítményfokozók': ['Teljesítmény', 'fokozók'],
+  // EN
+  'Performance Compounds': ['Performance', 'Compounds'],
+  // PL
+  'środków wydajnościowych': ['Środków', 'wydajn.'],
+}
+
+function splitColumns(label) {
+  if (label.length <= 12) return [label]
+  if (SPLIT_OVERRIDES[label]) return SPLIT_OVERRIDES[label]
+  // Generic fallback: split at midpoint, biased toward consonant boundaries.
+  const mid = Math.floor(label.length / 2)
+  const vowels = /[aeiouáéíóöőúüű]/i
+  for (let offset = 0; offset <= 3; offset++) {
+    for (const i of [mid + offset, mid - offset]) {
+      if (i >= 4 && i <= label.length - 3 && vowels.test(label[i - 1]) && !vowels.test(label[i])) {
+        return [label.slice(0, i), label.slice(i)]
+      }
+    }
+  }
+  return [label.slice(0, mid), label.slice(mid)]
+}
+
+function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, onClick, disabled, slideIn }) {
   const [hovered, setHovered] = useState(false)
   const [flashing, setFlashing] = useState(false)
   const flashRef = useRef(null)
-  const accent = '#00ff99'
   const isLeft = direction === 'prev'
   const Chevron = isLeft ? ChevronLeft : ChevronRight
-  const shortName = shortenName(lib.label)
+  const columns = splitColumns(trimLabel(libLabel))
+  const accent = CHEMICAL_GREEN
 
   const handleClick = () => {
+    if (disabled) return
     onClick()
     setFlashing(true)
     if (flashRef.current) clearTimeout(flashRef.current)
     flashRef.current = setTimeout(() => setFlashing(false), 800)
   }
+
+  // Slide-in transform: pill starts fully off-screen and translates in.
+  // When disabled (cooldown), we don't change position, just dim slightly.
+  let translateX
+  if (!slideIn) translateX = isLeft ? '-100%' : '100%'
+  else if (hovered && !disabled) translateX = isLeft ? '4px' : '-4px'
+  else translateX = '0%'
 
   return (
     <button
@@ -48,86 +89,122 @@ function SidePill({ direction, lib, libraries, currentIdx, onClick }) {
       onClick={handleClick}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      aria-label={`${isLeft ? 'Previous' : 'Next'} library: ${lib.label}`}
-      title={lib.label}
+      aria-label={`${isLeft ? 'Previous' : 'Next'} library: ${libLabel}`}
+      title={libLabel}
+      disabled={disabled}
       className={`
-        fixed top-1/2 -translate-y-1/2 z-40
+        fixed top-1/2 z-40
         flex flex-col items-center
-        py-7 cursor-pointer select-none
+        pt-4 pb-3 select-none
         backdrop-blur-md
-        transition-all duration-300 ease-out will-change-transform
+        transition-all duration-500 ease-out will-change-transform
         ${isLeft ? 'left-0 rounded-r-2xl border-l-0' : 'right-0 rounded-l-2xl border-r-0'}
-        ${hovered ? (isLeft ? 'translate-x-1' : '-translate-x-1') : ''}
+        ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}
       `}
       style={{
-        border: `1px solid ${hovered ? accent + 'cc' : accent + '55'}`,
-        height: 360,
-        width: hovered ? 84 : 76,
-        background: `linear-gradient(180deg, ${accent}1f 0%, rgba(5,5,5,0.88) 50%, ${accent}1f 100%)`,
-        boxShadow: hovered
-          ? `0 0 36px ${accent}55, inset 0 0 28px ${accent}22, ${isLeft ? '' : '-'}10px 0 28px -10px ${accent}88`
-          : `0 0 18px ${accent}22, inset 0 0 14px ${accent}11, ${isLeft ? '' : '-'}4px 0 18px -10px ${accent}33`,
+        border: `1px solid ${hovered && !disabled ? accent + 'cc' : accent + '55'}`,
+        height: 340,
+        width: hovered && !disabled ? 76 : 68,
+        background: `linear-gradient(180deg, ${accent}1c 0%, rgba(5,5,5,0.88) 50%, ${accent}1c 100%)`,
+        boxShadow: hovered && !disabled
+          ? `0 0 32px ${accent}55, inset 0 0 24px ${accent}22, ${isLeft ? '' : '-'}10px 0 24px -10px ${accent}88`
+          : `0 0 16px ${accent}22, inset 0 0 12px ${accent}11, ${isLeft ? '' : '-'}4px 0 16px -10px ${accent}33`,
         color: accent,
+        // Compose two transforms: vertical-center + horizontal slide-in.
+        transform: `translateY(-50%) translateX(${translateX})`,
+        opacity: disabled ? 0.55 : 1,
       }}
     >
       {/* Chevron HUD */}
       <span
         aria-hidden="true"
-        className="flex items-center justify-center rounded-full mb-5"
+        className="flex items-center justify-center rounded-full"
         style={{
-          width: 40,
-          height: 40,
+          width: 36,
+          height: 36,
           background: `${accent}22`,
           border: `1.5px solid ${accent}88`,
-          boxShadow: hovered ? `0 0 16px ${accent}cc, inset 0 0 8px ${accent}66` : `0 0 8px ${accent}55, inset 0 0 4px ${accent}33`,
+          boxShadow: hovered && !disabled
+            ? `0 0 14px ${accent}cc, inset 0 0 6px ${accent}66`
+            : `0 0 6px ${accent}55, inset 0 0 3px ${accent}33`,
           transition: 'all 220ms ease-out',
           flexShrink: 0,
         }}
       >
         <Chevron
-          size={24}
+          size={20}
           strokeWidth={2.75}
           style={{
-            transform: hovered ? (isLeft ? 'translateX(-2px)' : 'translateX(2px)') : 'translateX(0)',
+            transform: hovered && !disabled ? (isLeft ? 'translateX(-2px)' : 'translateX(2px)') : 'translateX(0)',
             transition: 'transform 220ms ease-out',
-            filter: `drop-shadow(0 0 6px ${accent})`,
+            filter: `drop-shadow(0 0 4px ${accent})`,
           }}
         />
       </span>
 
-      {/* Vertical label — flex-1 fills the remaining height between chevron
-          and dots, overflow-hidden as a safety net for unusually long
-          locale labels (those also go through shortenName + ellipsis). */}
+      {/* Vertical label — 1 or 2 columns depending on length */}
       <span
-        className="flex-1 flex items-center justify-center font-bold uppercase whitespace-nowrap overflow-hidden"
-        style={{
-          writingMode: 'vertical-rl',
-          transform: 'rotate(180deg)',
-          fontSize: '13px',
-          letterSpacing: '0.18em',
-          textShadow: `0 0 8px ${accent}cc, 0 0 16px ${accent}77, 0 0 28px ${accent}44`,
-          color: accent,
-          lineHeight: 1,
-        }}
+        className="flex-1 flex items-center justify-center gap-0.5 py-2 overflow-hidden w-full"
       >
-        {shortName}
+        {columns.map((col, idx) => (
+          <span
+            key={idx}
+            className="font-bold uppercase whitespace-nowrap"
+            style={{
+              writingMode: 'vertical-rl',
+              transform: 'rotate(180deg)',
+              fontSize: columns.length > 1 ? '11px' : '13px',
+              letterSpacing: '0.16em',
+              textShadow: `0 0 8px ${accent}cc, 0 0 16px ${accent}77, 0 0 28px ${accent}44`,
+              color: idx === 0 ? accent : `${accent}cc`,
+              lineHeight: 1,
+            }}
+          >
+            {col}
+          </span>
+        ))}
       </span>
 
-      {/* Dots indicator — current vs total libraries */}
-      <span aria-hidden="true" className="flex flex-col gap-2 mt-5">
-        {libraries.map((_, i) => (
-          <span
-            key={i}
-            className="rounded-full"
-            style={{
-              width: 7,
-              height: 7,
-              background: i === currentIdx ? accent : `${accent}33`,
-              boxShadow: i === currentIdx ? `0 0 10px ${accent}cc` : 'none',
-              transition: 'all 220ms ease-out',
-            }}
-          />
-        ))}
+      {/* Active-library readout. Horizontal small text + dots so the user
+          always knows which library they're currently on, even far below
+          the cube. */}
+      <span
+        className="flex flex-col items-center gap-1 pt-1 w-full px-1"
+        aria-hidden="true"
+      >
+        <span
+          className="text-[7px] font-bold tracking-[0.32em] uppercase opacity-60 whitespace-nowrap"
+          style={{ color: accent }}
+        >
+          Most
+        </span>
+        <span
+          className="text-[9px] font-bold tracking-[0.10em] uppercase whitespace-nowrap"
+          style={{
+            color: accent,
+            textShadow: `0 0 6px ${accent}99`,
+            maxWidth: '100%',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+          }}
+        >
+          {trimLabel(currentLabel)}
+        </span>
+        <span className="flex gap-1.5 mt-1">
+          {libraries.map((_, i) => (
+            <span
+              key={i}
+              className="rounded-full"
+              style={{
+                width: 6,
+                height: 6,
+                background: i === currentIdx ? accent : `${accent}33`,
+                boxShadow: i === currentIdx ? `0 0 8px ${accent}cc` : 'none',
+                transition: 'all 220ms ease-out',
+              }}
+            />
+          ))}
+        </span>
       </span>
 
       {/* Click-flash accent */}
@@ -149,13 +226,14 @@ export default function SideLibrarySwitcher() {
   const { libraryId, setLibraryId, availableLibraries } = useLibrary()
   const { lang } = useLang()
   const [visible, setVisible] = useState(false)
+  const [cooldown, setCooldown] = useState(false)
+  const cooldownRef = useRef(null)
 
   useEffect(() => {
     const update = () => {
       const target = document.getElementById('library')
       if (!target) { setVisible(false); return }
       const rect = target.getBoundingClientRect()
-      // Show once the library top has scrolled past ~30% of viewport height.
       setVisible(rect.top < window.innerHeight * 0.3)
     }
     update()
@@ -167,35 +245,46 @@ export default function SideLibrarySwitcher() {
     }
   }, [])
 
+  // Reset cooldown whenever the library actually changes (it could be
+  // triggered from the cube itself, swipe, or the side pill).
+  useEffect(() => {
+    setCooldown(true)
+    if (cooldownRef.current) clearTimeout(cooldownRef.current)
+    cooldownRef.current = setTimeout(() => setCooldown(false), SWITCH_COOLDOWN_MS)
+    return () => { if (cooldownRef.current) clearTimeout(cooldownRef.current) }
+  }, [libraryId])
+
   const currentIdx = availableLibraries.findIndex(l => l.id === libraryId)
   if (currentIdx < 0 || availableLibraries.length < 2) return null
   const count = availableLibraries.length
   const prevLib = availableLibraries[(currentIdx + count - 1) % count]
   const nextLib = availableLibraries[(currentIdx + 1) % count]
+  const currentLib = availableLibraries[currentIdx]
 
-  const libs = availableLibraries.map(l => ({ id: l.id, label: l.name?.[lang] || l.name?.hu || l.id }))
+  const localised = (lib) => lib.name?.[lang] || lib.name?.hu || lib.id
 
   return (
-    <div
-      className={`hidden lg:block pointer-events-none transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}
-      aria-hidden={!visible}
-    >
-      <div className={visible ? 'pointer-events-auto' : 'pointer-events-none'}>
-        <SidePill
-          direction="prev"
-          lib={{ id: prevLib.id, label: prevLib.name?.[lang] || prevLib.name?.hu || prevLib.id }}
-          libraries={libs}
-          currentIdx={currentIdx}
-          onClick={() => setLibraryId(prevLib.id)}
-        />
-        <SidePill
-          direction="next"
-          lib={{ id: nextLib.id, label: nextLib.name?.[lang] || nextLib.name?.hu || nextLib.id }}
-          libraries={libs}
-          currentIdx={currentIdx}
-          onClick={() => setLibraryId(nextLib.id)}
-        />
-      </div>
+    <div className="hidden lg:block" aria-hidden={!visible}>
+      <SidePill
+        direction="prev"
+        libLabel={localised(prevLib)}
+        currentLabel={localised(currentLib)}
+        libraries={availableLibraries}
+        currentIdx={currentIdx}
+        onClick={() => setLibraryId(prevLib.id)}
+        disabled={cooldown}
+        slideIn={visible}
+      />
+      <SidePill
+        direction="next"
+        libLabel={localised(nextLib)}
+        currentLabel={localised(currentLib)}
+        libraries={availableLibraries}
+        currentIdx={currentIdx}
+        onClick={() => setLibraryId(nextLib.id)}
+        disabled={cooldown}
+        slideIn={visible}
+      />
       <style>{`
         @keyframes slsFlash {
           0%   { opacity: 0; transform: scale(0.85); }

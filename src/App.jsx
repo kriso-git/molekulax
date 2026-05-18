@@ -10,6 +10,7 @@ import FloatingScientific from './components/FloatingScientific'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
 import SideLibrarySwitcher from './components/SideLibrarySwitcher'
+import AffiliateButton from './components/AffiliateButton'
 import EntryDetailRoute, { isEntryDetailHash } from './components/library/EntryDetailRoute'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
@@ -53,6 +54,7 @@ export default function App() {
           <FloatingScientific />
           <ThemeSwitcher />
           <LanguageSwitcher />
+          <AffiliateButton />
           <div className="relative z-10">
             {!hideLanding && (
               <>
