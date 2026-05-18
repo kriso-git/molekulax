@@ -11,6 +11,7 @@ export default {
   "description": "Metimazol (Tapazole USA, tiamazol UE) to pierwsza linia w nadczynności tarczycy. Selektywnie hamuje peroksydazę tarczycową (TPO) zmniejszając syntezę T3/T4. Cooper 2005 (NEJM PMID 15703424) wykazał, że 18-24-miesięczne leczenie w chorobie Gravesa daje ~50% wskaźnik remisji. Profil działań: łagodne częste (wysypka, nudności), ciężkie rzadkie (agranulocytoza 0,2-0,5%, hepatotoksyczność). Propylotiouracyl (PTU) to starsza alternatywa, ale z powodu hepatotoksyczności pierwsza linia tylko w 1. trymestrze ciąży.",
   "mechanism": "Selektywne hamowanie peroksydazy tarczycowej (TPO) → blokada jodowania tyrozyny → redukcja syntezy T3/T4. NIE hamuje uwalniania prefabrykowanego hormonu (opóźniony efekt 2-4 tygodnie).",
   "legalStatus": "UE/PL: na receptę (Thyrozol, Metizol). USA: FDA Rx (Tapazole).",
+  "bioavailability": "~93% (doustnie, \"łatwo wchłaniana\" — etykieta FDA Tapazole)",
   "onsetTime": "2-4 weeks (T3/T4 reduction, since preformed stores deplete)",
   "halfLife": "4-6 h (but pharmacodynamic effect longer due to thyroid concentration)",
   "atcCode": "H03BB02",

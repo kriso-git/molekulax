@@ -11,6 +11,7 @@ export default {
   "description": "Metronidazol to antybiotyk nitroimidazolowy (Sanofi Flagyl, FDA 1963). Selektywnie aktywny przeciw bakteriom beztlenowym i pierwotniakom: bakteryjne/pierwotniakowe enzymy redukujące (pirogronian-ferredoksyna oksydoreduktaza) przekształcają go w reaktywne rodniki uszkadzające DNA. Nieaktywny przeciw tlenowcom. Standardowe wskazania: zapalenie jelita C. difficile (alternatywa wankomycyny dla łagodnych-średnich), vaginitis bakteryjny, trichomonoza, giardioza, amebioza, eradykacja H. pylori w terapii potrójnej. Generalnie dobrze tolerowany, ale reakcja PODOBNA DO DISULFIRAMU z alkoholem — bezwzględny zakaz alkoholu podczas leczenia i 48 h po.",
   "mechanism": "Wchłanianie + redukcja w bakterii/pierwotniaku do reaktywnych rodników → uszkodzenie DNA → śmierć komórki. Nieaktywny przeciw tlenowcom.",
   "legalStatus": "UE/PL: na receptę (Klion, Flagyl, generyki). USA: FDA Rx.",
+  "bioavailability": "~100% (doustnie, \"dobrze wchłaniany\", dyspozycja równoważna IV — etykieta FDA Flagyl)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "~8 h (twice or thrice daily)",
   "atcCode": "J01XD01",

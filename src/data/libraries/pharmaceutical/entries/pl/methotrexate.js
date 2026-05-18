@@ -11,6 +11,7 @@ export default {
   "description": "Metotreksat (MTX) to antymetabolit antyfolianowy (FDA 1953). Hamuje reduktazę dihydrofolianową (DHFR), blokując tworzenie tetrahydrofolianu, a tym samym syntezę DNA i proliferację komórek. Dwa bardzo różne obszary: (1) NISKA dawka tygodniowo doustnie/SC 7,5-25 mg — RA (złoty standard DMARD), łuszczyca, IBD, zapalenie naczyń ANCA; (2) WYSOKA dawka IV/dooponowo — białaczka, chłoniak, osteosarkoma, kosmówczak. Niskodawkowa MTX z suplementacją folianów (1-5 mg/dzień) dobrze tolerowana; wysokodawkowa onko-MTX wymaga OBOWIĄZKOWO rescue Leukoworyną, monitorowania poziomu i pogotowia nagłego.",
   "mechanism": "Hamowanie DHFR → niedobór tetrahydrofolianu → blok syntezy tymidylanu → hamowanie syntezy DNA. Wtórnie: hamowanie syntezy AICAR (akumulacja adenozyny, działanie przeciwzapalne przy niskiej dawce).",
   "legalStatus": "UE/PL: na receptę (Trexan, Metoject SC, Methotrexat Lederle, generyki). USA: FDA Rx. Wysokodawkowa onko-MTX podawana w szpitalu.",
+  "bioavailability": "~60% (doustnie, dawki ≤30 mg/m² — etykieta FDA Trexall; spada przy wyższych dawkach)",
   "onsetTime": "6-12 weeks (RA clinical response)",
   "halfLife": "~3-10 h (highly variable)",
   "atcCode": "L01BA01 / L04AX03",

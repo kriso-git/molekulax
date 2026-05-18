@@ -11,6 +11,7 @@ export default {
   "description": "Liraglutyd to pierwszy długodziałający GLP-1 RA Novo Nordisk (Victoza T2DM FDA 2010, Saxenda otyłość FDA 2014). Dawkowanie raz dziennie SC (~13 h okres półtrwania vs semaglutyd ~7 dni). Badanie LEADER (Marso 2016 NEJM PMID 27295427) potwierdziło redukcję MACE w T2DM. Badanie SCALE (Pi-Sunyer 2015 NEJM PMID 26132939) wykazało 8% utratę masy w 56 tygodni w otyłości bez cukrzycy. Nowoczesny semaglutyd/tirzepatyd w dużej mierze zastąpiły liraglutyd w praktyce klinicznej (cotygodniowe vs codzienne, lepsza utrata masy), ale wskazanie pediatryczne (Saxenda 12+ lat FDA 2020) i specyficzne przypadki wymagające dawkowania dziennego zachowują znaczenie.",
   "mechanism": "Agonista receptora GLP-1 (jak semaglutyd), 97% homologia sekwencji z natywnym GLP-1. Sprzężenie kwasu tłuszczowego zapewnia wiązanie z albuminami i powolną eliminację (~13 h vs natywne 1-2 min).",
   "legalStatus": "UE/PL: na receptę (Victoza T2DM, Saxenda otyłość). USA: FDA Rx.",
+  "bioavailability": "~55% (wstrzyknięcie podskórne — etykieta FDA Victoza/Saxenda, sekcja 12.3)",
   "onsetTime": "1-2 weeks (appetite), 8-12 weeks (HbA1c steady-state)",
   "halfLife": "~13 h (once-daily SC dosing)",
   "atcCode": "A10BJ02",

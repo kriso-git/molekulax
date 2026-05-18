@@ -11,6 +11,7 @@ export default {
   "description": "A Liraglutide a Novo Nordisk első hosszú-hatású GLP-1 RA terápiája (Victoza T2DM FDA 2010, Saxenda obesity FDA 2014). Napi egyszeri SC adagolás (~13 h felezési idő, vs Semaglutide ~7 nap). Az LEADER trial (Marso 2016 NEJM PMID 27295427) MACE-csökkenést igazolt T2DM-ben. A SCALE-trial (Pi-Sunyer 2015 NEJM PMID 26132939) szerint 56 hét alatt 8% testsúlyvesztés non-diabetic obesitásban. A modern Semaglutide/Tirzepatide a klinikai gyakorlatban Liraglutide-ot többnyire kiváltotta hatékonyság-szempontból (heti vs napi adagolás, jobb fogyás), de pediátriai indikáció (Saxenda 12+ év FDA 2020) és csak napi adagolásra-igénylő speciális esetekben még releváns.",
   "mechanism": "GLP-1 receptor agonista (mint Semaglutide), 97%-os szekvencia-homológia native GLP-1-gyel. Fatty-acid-konjugáció albumin-kötést és lassú elimináció eredményez (~13 h vs native 1-2 perc).",
   "legalStatus": "EU/HU: vényköteles (Victoza T2DM, Saxenda obesity). USA: FDA Rx.",
+  "bioavailability": "~55% (szubkután injekció — FDA Victoza/Saxenda label, Section 12.3)",
   "onsetTime": "1-2 weeks (appetite), 8-12 weeks (HbA1c steady-state)",
   "halfLife": "~13 h (once-daily SC dosing)",
   "atcCode": "A10BJ02",

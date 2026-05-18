@@ -11,6 +11,7 @@ export default {
   "description": "A Liothyronine az aktív T3-hormon szintetikus formája (Cytomel, FDA 1956). NEM rutin-választás a hipotireózis kezelésében — Levothyroxin (T4) az endogén deiodaze-konverzió révén ad fiziológiás T3-szintet. Specifikus indikációk: (1) MIXEDÉMA-KÓMA sürgősségi kezelése (gyors hatású T3 IV), (2) szubjektív tüneti hipotireózis Levothyroxin-en normál TSH-val (T4-T3 konverzió-zavar gyanúja, ETA 2012 PMID 24782999 vita), (3) MDD-augmentáció (Cooper-Kazaz 2007 PMID 17888912 MDD-rezisztens), (4) DTC-szuppresszió post-thyroidectomia gyors hatás-kezdettel. A felezési ideje rövid (1 nap vs T4 7 nap), ezért 2-3x/nap adagolás szükséges, és nehezebb stabil-szintet elérni.",
   "mechanism": "Direkt T3-pótlás, NEM igényli a T4 → T3 perifériás deiodáz-konverziót. Azonnal aktiválja a tiroid receptor.",
   "legalStatus": "EU/HU: vényköteles (Cytomel, Thybon). USA: FDA Rx (Cytomel).",
+  "bioavailability": "95% (orális, 4 óra alatt — FDA Cytomel label)",
   "onsetTime": "2-4 h (oral), minutes (IV)",
   "halfLife": "~1 day (much shorter than T4)",
   "atcCode": "H03AA02",

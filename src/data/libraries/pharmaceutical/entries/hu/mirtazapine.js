@@ -11,6 +11,7 @@ export default {
   "description": "A Mirtazapine egy tetraciklikus antidepresszáns (NaSSA-osztály, Organon Remeron FDA 1996). Mechanizmus: α2-adrenerg autoreceptor antagonista (szerotonin- és norepinefrin-felszabadulás növelése), valamint 5-HT2A/2C és 5-HT3 antagonista. A 5-HT2C blokk magyarázza az étvágyfokozó hatást, a 5-HT3 blokk az anti-nauseás hatást, az α2-blokk a szedáló profilt (különösen alacsony dózison, 7,5-15 mg). Ideális MDD-betegen, akinek súlyveszteség, inszomnia és nauseaplem-szindrómát kell mitigálni. Cipriani 2018 meta szerint a top-3 hatékonyság-tolerabilitás aránnyal.",
   "mechanism": "α2-adrenerg autoreceptor antagonista (NA + 5-HT felszabadulás emelése), 5-HT2A/2C/3 receptor antagonista, H1-receptor antagonista (szedáció). NEM SERT/NET-inhibitor.",
   "legalStatus": "EU/HU: vényköteles (Remeron, Mirzaten, generikus). USA: FDA Rx.",
+  "bioavailability": "~50% (orális — FDA Remeron label)",
   "onsetTime": "1-2 weeks (alvás, étvágy), 2-4 weeks (full AD)",
   "halfLife": "20-40 h (once-nightly dosing)",
   "atcCode": "N06AX11",

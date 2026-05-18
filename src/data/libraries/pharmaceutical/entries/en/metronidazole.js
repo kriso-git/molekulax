@@ -11,6 +11,7 @@ export default {
   "description": "Metronidazole is a nitroimidazole antibiotic (Sanofi Flagyl, FDA 1963). Selectively active against anaerobic bacteria and protozoa: bacterial/protozoan reducing enzymes (pyruvate-ferredoxin oxidoreductase) convert it to reactive nitro radicals damaging DNA. Inactive against aerobics. Standard indications: C. difficile colitis (vancomycin alternative for mild-moderate), bacterial vaginitis, trichomoniasis, giardiasis, amoebiasis, H. pylori eradication triple therapy. Generally well tolerated, but DISULFIRAM-like reaction with alcohol — absolute alcohol prohibition during treatment and 48 h after.",
   "mechanism": "Anaerobic bacterial/protozoan uptake + reduction to reactive nitro radicals → DNA damage → cell death. Inactive vs aerobics (no reducing enzyme).",
   "legalStatus": "EU/HU: prescription only (Klion, Flagyl, generics). USA: FDA Rx.",
+  "bioavailability": "~100% (oral, \"well absorbed\", disposition equivalent to IV — FDA Flagyl label)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "~8 h (twice or thrice daily)",
   "atcCode": "J01XD01",

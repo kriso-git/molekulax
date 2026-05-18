@@ -11,6 +11,7 @@ export default {
   "description": "Minoksydyl pierwotnie opracowany jako doustny lek przeciwnadciśnieniowy (Loniten 1979), ale \"działanie niepożądane\" hipertrychoza doprowadziła do formy miejscowej dla łysienia (Upjohn Rogaine 2% 1988, 5% 1996). Mechanizm nie do końca wyjaśniony — otwieranie kanałów K wrażliwych na ATP daje rozszerzenie naczyń i prawdopodobnie wzmocnienie perfuzji mieszków, ale molekularny szlak stymulacji wzrostu włosów jest dyskutowany. \"Doustny minoksydyl w niskiej dawce\" (LDOM, 0,25-5 mg/dzień) stał się popularny w ostatnich 5 latach off-label dla łysienia, skuteczniejszy niż miejscowy (Sinclair 2017 PMID 28349541).",
   "mechanism": "Otwieranie kanałów K wrażliwych na ATP → rozszerzenie naczyń + perfuzja mieszków. Wtórnie: aktywny metabolit aktywowany sulfotransferazą.",
   "legalStatus": "Miejscowy (2-5%): OTC UE/USA/PL. Doustny (Loniten): na receptę. Off-label LDOM: na receptę.",
+  "bioavailability": "≥90% (doustnie, \"co najmniej 90% wchłaniany\" z przewodu pokarmowego — etykieta FDA Loniten; forma doustna antyhipertensyjna)",
   "onsetTime": "3-6 months (visible hair regrowth)",
   "halfLife": "~4 h (oral), topical absorption minimal",
   "atcCode": "D11AX01 (topical) / C02DC01 (oral)",

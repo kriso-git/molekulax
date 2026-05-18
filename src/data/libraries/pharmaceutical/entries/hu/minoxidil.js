@@ -11,6 +11,7 @@ export default {
   "description": "A Minoxidil eredetileg orális antihipertenzív szerként (Loniten 1979) lett kifejlesztve, de a \"mellékhatásként\" megjelenő hipertrichózis miatt topikális formulációt fejlesztettek alopecia kezelésére (Upjohn Rogaine 2% 1988, 5% 1996). A pontos mechanizmus nem teljesen tisztázott — ATP-érzékeny K-csatorna nyitása vazodilatációt és vélhetően hajhagyma-perfúzió-fokozást okoz, de a hajnövekedés stimulációjának molekuláris útja vitatott. Az \"oral low-dose minoxidil\" (LDOM, 0,25-5 mg/nap) elmúlt 5 évben népszerűvé vált alopecia-kezelésre off-label, hatékonyabb mint a topikális (Sinclair 2017 PMID 28349541). A Big-3 alopecia-protokoll (Minoxidil + Finasteride + Ketoconazole) gold-standard.",
   "mechanism": "ATP-érzékeny K-csatorna nyitása → vazodilatáció + hajhagyma-perfúzió. Másodlagos: szulfo-transzferáz-aktivált aktív metabolit (Minoxidil-szulfát), prosztaglandin-E2 emelkedés.",
   "legalStatus": "Topikális (2-5%): OTC EU/USA/HU. Orális (Loniten): vényköteles. Off-label LDOM: vényköteles (alacsony orális dózis, alopecia-cél).",
+  "bioavailability": "≥90% (orális, GI traktusból \"at least 90% absorbed\" — FDA Loniten label; antihypertenzív oral forma)",
   "onsetTime": "3-6 months (visible hair regrowth)",
   "halfLife": "~4 h (oral), topical absorption minimal",
   "atcCode": "D11AX01 (topical) / C02DC01 (oral)",

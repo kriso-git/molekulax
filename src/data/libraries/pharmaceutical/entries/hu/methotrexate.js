@@ -11,6 +11,7 @@ export default {
   "description": "A Methotrexate (MTX) folát-antagonista antimetabolit (FDA 1953). A dihidrofolát-reduktáz (DHFR) gátlása révén blokkolja a tetrahidrofolát képződését, ami a DNS-szintézist és sejt-proliferációt gátolja. Két nagyon különböző indikációs területe van: (1) ALACSONY-DÓZISÚ heti orális/SC 7,5-25 mg — rheumatoid arthritis (gold-standard DMARD), pszoriázis, IBD, ANCA-vasculitis; (2) MAGAS-DÓZISÚ IV/intratekális — leukémia, lymphoma, osteosarcoma, choriocarcinoma. A két kontextus farmakológiailag radikálisan különböző: az alacsony-dózisú heti MTX folát-folsavpótlással (1-5 mg/nap) jól tolerálható, míg a magas-dózisú onko-MTX KÖTELEZŐ Leucovorin-rescue-val, szintű-monitorozással és sürgősségi készenléttel jár. A WHO Essential Medicines listán mindkét kontextus szerepel.",
   "mechanism": "DHFR-gátlás → tetrahidrofolát-deficit → thymidylat-szintézis blokk → DNS-szintézis gátlás. Másodlagos: AICAR-szintézis-gátlás (adenosine-akkumuláció, anti-gyulladásos hatás MTX-alacsony dózison).",
   "legalStatus": "EU/HU: vényköteles (Trexan, Metoject SC, Methotrexat Lederle, generikus). USA: FDA Rx. Onkológiai magas-dózis kórházi adagolás.",
+  "bioavailability": "~60% (orális, ≤30 mg/m² dózis — FDA Trexall label; magasabb dózisnál csökken)",
   "onsetTime": "6-12 weeks (RA clinical response)",
   "halfLife": "~3-10 h (highly variable)",
   "atcCode": "L01BA01 / L04AX03",

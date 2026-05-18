@@ -150,6 +150,61 @@ const PAYLOADS = [
     en: '40-80% (oral, fasted; food and calcium/iron reduce — FDA Synthroid label)',
     pl: '40-80% (doustnie, na czczo; pokarm i wapń/żelazo zmniejszają — etykieta FDA Synthroid)',
   },
+  // ── Batch 3 (liothyronine..modafinil) ────────────────────────────────────
+  {
+    id: 'liothyronine',
+    hu: '95% (orális, 4 óra alatt — FDA Cytomel label)',
+    en: '95% (oral, within 4 hours — FDA Cytomel label)',
+    pl: '95% (doustnie, w ciągu 4 godzin — etykieta FDA Cytomel)',
+  },
+  {
+    id: 'liraglutide',
+    hu: '~55% (szubkután injekció — FDA Victoza/Saxenda label, Section 12.3)',
+    en: '~55% (subcutaneous injection — FDA Victoza/Saxenda label, Section 12.3)',
+    pl: '~55% (wstrzyknięcie podskórne — etykieta FDA Victoza/Saxenda, sekcja 12.3)',
+  },
+  {
+    id: 'methimazole',
+    hu: '~93% (orális, "readily absorbed" — FDA Tapazole label)',
+    en: '~93% (oral, "readily absorbed" — FDA Tapazole label)',
+    pl: '~93% (doustnie, "łatwo wchłaniana" — etykieta FDA Tapazole)',
+  },
+  {
+    id: 'methotrexate',
+    hu: '~60% (orális, ≤30 mg/m² dózis — FDA Trexall label; magasabb dózisnál csökken)',
+    en: '~60% (oral, ≤30 mg/m² doses — FDA Trexall label; decreases at higher doses)',
+    pl: '~60% (doustnie, dawki ≤30 mg/m² — etykieta FDA Trexall; spada przy wyższych dawkach)',
+  },
+  {
+    id: 'methylphenidate',
+    hu: '22 ± 8% (d-methylphenidate), 5 ± 3% (l-methylphenidate) — orális, gyerekek; magas first-pass — FDA Ritalin label',
+    en: '22 ± 8% (d-methylphenidate), 5 ± 3% (l-methylphenidate) — oral, children; high first-pass — FDA Ritalin label',
+    pl: '22 ± 8% (d-metylofenidat), 5 ± 3% (l-metylofenidat) — doustnie, dzieci; intensywny first-pass — etykieta FDA Ritalin',
+  },
+  {
+    id: 'metronidazole',
+    hu: '~100% (orális, "well absorbed", IV-vel ekvivalens diszpozíció — FDA Flagyl label)',
+    en: '~100% (oral, "well absorbed", disposition equivalent to IV — FDA Flagyl label)',
+    pl: '~100% (doustnie, "dobrze wchłaniany", dyspozycja równoważna IV — etykieta FDA Flagyl)',
+  },
+  {
+    id: 'minoxidil',
+    hu: '≥90% (orális, GI traktusból "at least 90% absorbed" — FDA Loniten label; antihypertenzív oral forma)',
+    en: '≥90% (oral, "at least 90% absorbed" from GI tract — FDA Loniten label; antihypertensive oral form)',
+    pl: '≥90% (doustnie, "co najmniej 90% wchłaniany" z przewodu pokarmowego — etykieta FDA Loniten; forma doustna antyhipertensyjna)',
+  },
+  {
+    id: 'mirtazapine',
+    hu: '~50% (orális — FDA Remeron label)',
+    en: '~50% (oral — FDA Remeron label)',
+    pl: '~50% (doustnie — etykieta FDA Remeron)',
+  },
+  {
+    id: 'modafinil',
+    hu: 'Nem meghatározott (vízoldhatatlanság miatt IV nem alkalmazható); orális tabletta ≈ aqueous szuszpenzió — FDA Provigil label',
+    en: 'Not determined (aqueous insolubility precludes IV); oral tablet ≈ aqueous suspension — FDA Provigil label',
+    pl: 'Nieokreślona (nierozpuszczalność w wodzie uniemożliwia IV); tabletka doustna ≈ zawiesina wodna — etykieta FDA Provigil',
+  },
 ]
 
 const LANGS = ['hu', 'en', 'pl']

@@ -11,6 +11,7 @@ export default {
   "description": "Mirtazapina to tetracykliczny antydepresant (klasa NaSSA, Organon Remeron FDA 1996). Mechanizm: antagonista receptora α2-adrenergicznego (zwiększa uwalnianie serotoniny i norepinefryny), oraz antagonista 5-HT2A/2C i 5-HT3. Blokada 5-HT2C wyjaśnia pobudzenie apetytu, blokada 5-HT3 efekt przeciwwymiotny, blokada α2 sedujący profil (szczególnie w niskiej dawce, 7,5-15 mg). Idealna dla MDD z utratą masy, bezsennością, nudnościami. Metaanaliza Cipriani 2018 stawia ją top-3 dla skuteczności-tolerancji.",
   "mechanism": "Antagonista receptora α2-adrenergicznego (podnosi uwalnianie NA + 5-HT), antagonista 5-HT2A/2C/3, antagonista H1 (sedacja). NIE jest inhibitorem SERT/NET.",
   "legalStatus": "UE/PL: na receptę (Remeron, Mirzaten, generyki). USA: FDA Rx.",
+  "bioavailability": "~50% (doustnie — etykieta FDA Remeron)",
   "onsetTime": "1-2 weeks (alvás, étvágy), 2-4 weeks (full AD)",
   "halfLife": "20-40 h (once-nightly dosing)",
   "atcCode": "N06AX11",

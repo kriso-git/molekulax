@@ -11,6 +11,7 @@ export default {
   "description": "Methimazole (Tapazole USA, thiamazole EU) is first-line for hyperthyroidism. Selectively inhibits thyroid peroxidase (TPO) reducing T3/T4 synthesis. Cooper 2005 (NEJM review PMID 15703424) showed 18-24 month treatment in Graves disease produces ~50% remission rate. Side effect profile: mild common (rash, nausea), severe rare (agranulocytosis 0.2-0.5%, hepatotoxicity). Propylthiouracil (PTU) is older alternative but due to hepatotoxicity only first-line in 1st trimester pregnancy (methimazole aplasia small but exists).",
   "mechanism": "Selective thyroid peroxidase (TPO) inhibition → tyrosine iodination block → T3/T4 synthesis reduction. Does NOT inhibit preformed hormone release (delayed effect 2-4 weeks).",
   "legalStatus": "EU/HU: prescription only (Thyrozol, Metizol). USA: FDA Rx (Tapazole).",
+  "bioavailability": "~93% (oral, \"readily absorbed\" — FDA Tapazole label)",
   "onsetTime": "2-4 weeks (T3/T4 reduction, since preformed stores deplete)",
   "halfLife": "4-6 h (but pharmacodynamic effect longer due to thyroid concentration)",
   "atcCode": "H03BB02",

@@ -11,6 +11,7 @@ export default {
   "description": "Metylofenidat to psychostymulant zsyntetyzowany w 1944, zatwierdzony w 1954 dla nadaktywności dziecięcej, od lat 90. lek pierwszej linii ADHD. Hamowanie wychwytu DAT i NET podnosi synaptyczną dopaminę i norepinefrynę w korze przedczołowej, poprawiając funkcję wykonawczą (uwaga, kontrola impulsów, pamięć robocza) w ADHD. DEA Schedule II (USA), odpowiednie zaostrzenie Rx. Formy IR (Ritalin, 3-5 h) i ER/OROS (Concerta 10-12 h). Badanie MTA (1999 JAMA, 14-miesięczna obserwacja) wykazało wyższość kombinacji stymulant + terapia behawioralna. Potencjał nadużywania: pokruszony-wdychany lub iv. daje euforię typu amfetaminowego, stąd preferowane formy XR.",
   "mechanism": "Hamowanie wychwytu DAT (transporter dopaminy) i NET (transporter norepinefryny). Różni się od amfetaminy: metylofenidat \"tylko\" hamuje, nie odwraca transportera (amfetamina powoduje uwolnienie DA na poziomie VMAT2, stąd silniejsza euforia).",
   "legalStatus": "UE/PL: na receptę, regulacja jako lek kontrolowany (Ritalin, Concerta, Medikinet). USA: DEA Schedule II.",
+  "bioavailability": "22 ± 8% (d-metylofenidat), 5 ± 3% (l-metylofenidat) — doustnie, dzieci; intensywny first-pass — etykieta FDA Ritalin",
   "onsetTime": "IR: 30-45 min; ER/OROS: 1-2 h; effect lasts 3-5 h (IR), 10-12 h (Concerta OROS)",
   "halfLife": "IR: 3-5 h; ER/OROS: 6-8 h (effective duration 10-12 h via osmotic delivery)",
   "atcCode": "N06BA04",

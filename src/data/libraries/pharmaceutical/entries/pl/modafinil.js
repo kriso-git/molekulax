@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Selektywne, niskopowinowackowe hamowanie transportera dopaminy (DAT) podnosi synaptyczną dopaminę w podwzgórzu i określonych obszarach przedczołowych oraz aktywuje neurony histaminergiczne tuberomammillarne i system oreksynowy bocznego podwzgórza. Te szlaki selektywnie promują czuwanie, w przeciwieństwie do szerokiej stymulacji OUN amfetamin. Brak znaczącego efektu noradrenergicznego lub serotoninergicznego przy standardowej dawce.",
   "legalStatus": "UE/PL: na receptę (Provigil, Modiodal, generyki). USA: DEA Schedule IV (kontrolowany, niski potencjał nadużywania, ale NIE niekontrolowany). W PL zalecana recepta specjalisty (neurolog, lekarz snu). Formy generyczne szeroko dostępne (patent oryginatora wygasł 2012).",
+  "bioavailability": "Nieokreślona (nierozpuszczalność w wodzie uniemożliwia IV); tabletka doustna ≈ zawiesina wodna — etykieta FDA Provigil",
   "onsetTime": "30-60 min, peak plasma 2-4 h",
   "halfLife": "12-15 h (parent); R-modafinil 14-16 h, S-modafinil 4-5 h (armodafinil = R-enantiomer)",
   "atcCode": "N06BA07",

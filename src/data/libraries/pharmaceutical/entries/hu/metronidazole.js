@@ -11,6 +11,7 @@ export default {
   "description": "A Metronidazole egy nitroimidazol antibiotikum (Sanofi Flagyl, FDA 1963). Az anaerob baktériumokra és protozoa-organizmusokra szelektíven hat: a bakteriális/protozoa redukáló enzimek (pyruvat-ferredoxin oxidoreductase) reaktív nitro-radikálokká alakítják, ami a DNS-t károsítja. Az aerob organizmusokra hatástalan. Standard indikációk: C. difficile colitis (vancomycin-alternatíva enyhe-mérsékelt esetben), bakteriális vaginitisz, trichomoniasis, giardiasis, amoebiasis, H. pylori eradikáció triple-terápiában. Mellékhatás-profil általában jól tolerált, de DISULFIRAM-szerű reakció alkohollal — abszolút alkohol-tilalom a kúra alatt és 48 óráig utána.",
   "mechanism": "Anaerob baktérium/protozoa felszív + redukció reaktív nitro-radikálokká → DNS-károsodás → sejthalál. Aerob organizmusokra inaktív (nincs redukáló enzim).",
   "legalStatus": "EU/HU: vényköteles (Klion, Flagyl, generikus). USA: FDA Rx.",
+  "bioavailability": "~100% (orális, \"well absorbed\", IV-vel ekvivalens diszpozíció — FDA Flagyl label)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "~8 h (twice or thrice daily)",
   "atcCode": "J01XD01",

@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Selective low-affinity dopamine transporter (DAT) inhibition raises synaptic dopamine in hypothalamus and specific prefrontal areas, and activates histaminergic tuberomammillary neurons and orexin-containing lateral hypothalamic system. These pathways selectively promote wakefulness, unlike amphetamines' broad CNS stimulation. No significant noradrenergic or serotonergic effect at standard dose.",
   "legalStatus": "EU/HU: prescription only (Provigil, Modiodal, generics). USA: DEA Schedule IV (scheduled, low abuse potential, but NOT non-scheduled). In HU specialist prescription (neurologist, sleep physician) recommended. Generic forms widely available (originator patent expired 2012).",
+  "bioavailability": "Not determined (aqueous insolubility precludes IV); oral tablet ≈ aqueous suspension — FDA Provigil label",
   "onsetTime": "30-60 min, peak plasma 2-4 h",
   "halfLife": "12-15 h (parent); R-modafinil 14-16 h, S-modafinil 4-5 h (armodafinil = R-enantiomer)",
   "atcCode": "N06BA07",

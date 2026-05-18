@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "A dopamin transzporter (DAT) szelektív, alacsony-affinitású gátlása növeli a szinaptikus dopamint a hipotalamuszban, az adott prefrontalis területeken, valamint aktiválja a hisztaminerg tuberomammilláris neuronokat és az orexin-tartalmú laterális hipotalamikus rendszert. Ezek a pathway-k szelektíven promotálják az ébrenléti állapotot, ellentétben az amfetaminok széles CNS-stimulációjával. Nincs jelentős noradrenerg vagy szerotoninerg hatás standard dózisnál.",
   "legalStatus": "EU/HU: vényköteles (Provigil, Modiodal, generikus). USA: DEA Schedule IV (ütemezett, alacsony visszaélési potenciál, de NEM ütemezet-nélküli). HU-ban szakorvosi (neurológus, alvásmedikuus) javasolt felírás. Generikus formák széles körben elérhetőek (originator patent 2012-ben lejárt).",
+  "bioavailability": "Nem meghatározott (vízoldhatatlanság miatt IV nem alkalmazható); orális tabletta ≈ aqueous szuszpenzió — FDA Provigil label",
   "onsetTime": "30-60 min, peak plasma 2-4 h",
   "halfLife": "12-15 h (parent); R-modafinil 14-16 h, S-modafinil 4-5 h (armodafinil = R-enantiomer)",
   "atcCode": "N06BA07",

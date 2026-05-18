@@ -11,6 +11,7 @@ export default {
   "description": "Methylphenidate is a psychostimulant synthesized in 1944, approved in 1954 for child hyperactivity, since 1990s the first-line ADHD treatment. DAT and NET reuptake inhibition raises synaptic dopamine and norepinephrine in prefrontal cortex, improving executive function (attention, impulse control, working memory) in ADHD. DEA Schedule II (USA), with corresponding Rx tightening. IR (Ritalin, 3-5 h) and ER/OROS (Concerta 10-12 h) forms. MTA trial (1999 JAMA, 14-month follow-up) showed stimulant + behavioral therapy combination superior. Abuse potential: crushed-inhaled or IV-injected produces amphetamine-like euphoria, hence XR forms preferred.",
   "mechanism": "DAT (dopamine transporter) and NET (norepinephrine transporter) reuptake inhibition. Differs from amphetamine: methylphenidate \"only\" inhibits and does not reverse the transporter (amphetamine causes VMAT2-level DA release, hence stronger euphoria).",
   "legalStatus": "EU/HU: prescription, controlled drug regulation (Ritalin, Concerta, Medikinet). USA: DEA Schedule II.",
+  "bioavailability": "22 ± 8% (d-methylphenidate), 5 ± 3% (l-methylphenidate) — oral, children; high first-pass — FDA Ritalin label",
   "onsetTime": "IR: 30-45 min; ER/OROS: 1-2 h; effect lasts 3-5 h (IR), 10-12 h (Concerta OROS)",
   "halfLife": "IR: 3-5 h; ER/OROS: 6-8 h (effective duration 10-12 h via osmotic delivery)",
   "atcCode": "N06BA04",

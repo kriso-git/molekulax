@@ -11,6 +11,7 @@ export default {
   "description": "Methotrexate (MTX) is an antifolate antimetabolite (FDA 1953). Inhibits dihydrofolate reductase (DHFR), blocking tetrahydrofolate formation and thus DNA synthesis and cell proliferation. Two very different indication realms: (1) LOW-DOSE weekly oral/SC 7.5-25 mg — rheumatoid arthritis (gold-standard DMARD), psoriasis, IBD, ANCA vasculitis; (2) HIGH-DOSE IV/intrathecal — leukemia, lymphoma, osteosarcoma, choriocarcinoma. The two contexts are pharmacologically very different: low-dose weekly MTX with folate supplementation (1-5 mg/day) is well tolerated, while high-dose onco-MTX requires MANDATORY Leucovorin rescue, level monitoring, and emergency standby. WHO Essential Medicines covers both.",
   "mechanism": "DHFR inhibition → tetrahydrofolate deficit → thymidylate synthesis block → DNA synthesis inhibition. Secondary: AICAR synthesis inhibition (adenosine accumulation, anti-inflammatory at low-dose MTX).",
   "legalStatus": "EU/HU: prescription only (Trexan, Metoject SC, Methotrexate Lederle, generics). USA: FDA Rx. Oncology high-dose hospital-administered.",
+  "bioavailability": "~60% (oral, ≤30 mg/m² doses — FDA Trexall label; decreases at higher doses)",
   "onsetTime": "6-12 weeks (RA clinical response)",
   "halfLife": "~3-10 h (highly variable)",
   "atcCode": "L01BA01 / L04AX03",

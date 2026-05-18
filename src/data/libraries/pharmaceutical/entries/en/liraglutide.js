@@ -11,6 +11,7 @@ export default {
   "description": "Liraglutide is Novo Nordisk's first long-acting GLP-1 RA (Victoza T2DM FDA 2010, Saxenda obesity FDA 2014). Once-daily SC dosing (~13 h half-life, vs semaglutide ~7 days). LEADER trial (Marso 2016 NEJM PMID 27295427) confirmed MACE reduction in T2DM. SCALE trial (Pi-Sunyer 2015 NEJM PMID 26132939) showed 8% body weight loss over 56 weeks in non-diabetic obesity. Modern semaglutide/tirzepatide have largely replaced liraglutide in clinical practice by efficacy (weekly vs daily, better weight loss), but pediatric indication (Saxenda 12+ yr FDA 2020) and specific cases needing daily dosing keep it relevant.",
   "mechanism": "GLP-1 receptor agonist (like semaglutide), 97% sequence homology with native GLP-1. Fatty acid conjugation provides albumin binding and slow elimination (~13 h vs native 1-2 min).",
   "legalStatus": "EU/HU: prescription only (Victoza T2DM, Saxenda obesity). USA: FDA Rx.",
+  "bioavailability": "~55% (subcutaneous injection — FDA Victoza/Saxenda label, Section 12.3)",
   "onsetTime": "1-2 weeks (appetite), 8-12 weeks (HbA1c steady-state)",
   "halfLife": "~13 h (once-daily SC dosing)",
   "atcCode": "A10BJ02",

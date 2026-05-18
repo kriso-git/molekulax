@@ -11,6 +11,7 @@ export default {
   "description": "Minoxidil was originally developed as oral antihypertensive (Loniten 1979), but the hypertrichosis \"side effect\" led to topical formulation for alopecia (Upjohn Rogaine 2% 1988, 5% 1996). Exact mechanism not fully clarified — ATP-sensitive K channel opening produces vasodilation and presumably hair follicle perfusion enhancement, but the molecular hair-growth-stimulation pathway is debated. \"Oral low-dose minoxidil\" (LDOM, 0.25-5 mg/day) became popular over the past 5 years for off-label alopecia, more effective than topical (Sinclair 2017 PMID 28349541). Big-3 alopecia protocol (minoxidil + finasteride + ketoconazole) is gold standard.",
   "mechanism": "ATP-sensitive K channel opening → vasodilation + hair follicle perfusion. Secondary: sulfotransferase-activated active metabolite (minoxidil sulfate), prostaglandin E2 elevation.",
   "legalStatus": "Topical (2-5%): OTC EU/USA/HU. Oral (Loniten): prescription. Off-label LDOM: prescription (low oral dose, alopecia target).",
+  "bioavailability": "≥90% (oral, \"at least 90% absorbed\" from GI tract — FDA Loniten label; antihypertensive oral form)",
   "onsetTime": "3-6 months (visible hair regrowth)",
   "halfLife": "~4 h (oral), topical absorption minimal",
   "atcCode": "D11AX01 (topical) / C02DC01 (oral)",

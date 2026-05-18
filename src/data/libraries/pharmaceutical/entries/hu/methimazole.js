@@ -11,6 +11,7 @@ export default {
   "description": "A Methimazole (USA-ban Tapazole, EU-ban Thiamazol) a hipertireózis első-vonal gyógyszere. A pajzsmirigy peroxidáz-enzim (TPO) szelektív gátlása révén csökkenti a T3/T4-szintézist. Cooper 2005 (NEJM review PMID 15703424) szerint Graves-betegségben a 18-24 hónapos kezelés ~50%-os remisszió-rátát ad. Mellékhatás-profil: enyhe gyakran (bőrkiütés, hányinger), súlyos ritka (agranulocitózis 0,2-0,5%, hepatotoxicitás). A Propylthiouracil (PTU) régebbi alternatíva, de hepatotoxicitás miatt csak terhesség első trimeszterében első választás (a Methimazole-aplázia kicsi, de létezik).",
   "mechanism": "Pajzsmirigy peroxidáz (TPO) szelektív gátlása → tirozin-jodinálás blokk → T3/T4-szintézis csökkenés. NEM gátolja a preformált hormon felszabadulását (késleltetett hatás 2-4 hét).",
   "legalStatus": "EU/HU: vényköteles (Thyrozol, Metizol). USA: FDA Rx (Tapazole).",
+  "bioavailability": "~93% (orális, \"readily absorbed\" — FDA Tapazole label)",
   "onsetTime": "2-4 weeks (T3/T4 reduction, since preformed stores deplete)",
   "halfLife": "4-6 h (but pharmacodynamic effect longer due to thyroid concentration)",
   "atcCode": "H03BB02",

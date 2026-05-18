@@ -11,6 +11,7 @@ export default {
   "description": "Liotyronina to syntetyczna forma aktywnego hormonu T3 (Cytomel, FDA 1956). NIE rutynowo w niedoczynności — lewotyroksyna (T4) zapewnia fizjologiczną T3 przez endogenne dejodynazy. Specyficzne wskazania: (1) ŚPIĄCZKA MIKSOWOBRZĘKOWA leczenie nagłe (szybko działająca T3 IV), (2) subiektywna objawowa niedoczynność na lewotyroksynie z normalnym TSH (podejrzenie zaburzenia konwersji T4-T3, ETA 2012 PMID 24782999), (3) augmentacja MDD (Cooper-Kazaz 2007 PMID 17888912 oporne MDD), (4) supresja DTC po tyreoidektomii z szybkim startem. Krótki okres półtrwania (1 dzień vs T4 7 dni), wymaga 2-3x/dzień, trudniej osiągnąć stabilne poziomy.",
   "mechanism": "Bezpośrednie uzupełnienie T3, NIE wymaga obwodowej konwersji T4 → T3. Natychmiast aktywuje receptor tarczycy.",
   "legalStatus": "UE/PL: na receptę (Cytomel, Thybon). USA: FDA Rx (Cytomel).",
+  "bioavailability": "95% (doustnie, w ciągu 4 godzin — etykieta FDA Cytomel)",
   "onsetTime": "2-4 h (oral), minutes (IV)",
   "halfLife": "~1 day (much shorter than T4)",
   "atcCode": "H03AA02",
