@@ -313,13 +313,17 @@ export default function LibraryGallery({
   // bármit fest. useLayoutEffect commit után-paint előtt fut → ha itt scrollTo,
   // a következő paint már a library start-ról rajzol, NEM látszik 1-2 frame
   // Hero/Education flicker top:0-n. (rAF-en belül a pre-snap legalább 1 paint-et
-  // csúszik → flicker visszajön.) targetY-csak-alatt-snap branch megtartva
-  // hogy felfelé-scroll esetén ne ugorjunk át a természetes irányon.
+  // csúszik → flicker visszajön.)
+  // Pre-snap MINDIG fusson: minden tile (TOP 10 + accordion egyaránt) a library
+  // section-ön belül van, így biztonságos. Korábban targetY > libraryTopY + 4
+  // conditional volt — ez kihagyta a TOP 10 close-back path-t (ahol
+  // targetY ≈ libraryTopY, mert a TOP 10 a library tetején van), ami azt
+  // eredményezte hogy a smooth-scroll a Hero tetejéről húzta végig.
   const targetY = pending.scrollY || 0
   const librarySection = document.getElementById('library')
   if (librarySection) {
    const libraryTopY = librarySection.getBoundingClientRect().top + window.scrollY
-   if (targetY > libraryTopY + 4) window.scrollTo(0, libraryTopY)
+   window.scrollTo(0, libraryTopY)
   }
 
   setQuery(pending.query || '')
