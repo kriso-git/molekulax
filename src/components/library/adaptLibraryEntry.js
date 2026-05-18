@@ -17,10 +17,19 @@ function findFactByLabel(keyInfo, fragments) {
  })
 }
 
-function trAny(value) {
- if (!value) return ''
+// Phase 12: handles BOTH flat-shape entry fields (post-per-lang-split) AND
+// triplet-shape (legacy / library-level fields like library.labels.X).
+// - flat string → return as-is.
+// - {hu, en, pl} triplet → return value[lang] (or first non-empty fallback).
+// - null/undefined → return ''.
+function flat(value, lang) {
+ if (value === null || value === undefined) return ''
  if (typeof value === 'string') return value
+ if (typeof value === 'object' && !Array.isArray(value)) {
+ if (lang && value[lang] !== undefined) return value[lang]
  return value.hu || value.en || value.pl || ''
+ }
+ return ''
 }
 
 // Strip a short, plain one-liner from peptide.shortDesc / description.
@@ -796,11 +805,11 @@ function tagToTopic(tagText) {
 
 // Build indication groups from study tags, one accordion entry per
 // unique topic (collapsed across studies that match the same topic).
-function deriveIndicationGroupsFromStudies(peptide, excludeLabels) {
+function deriveIndicationGroupsFromStudies(peptide, excludeLabels, lang) {
  if (!Array.isArray(peptide.studies)) return []
  const buckets = new Map()
  peptide.studies.forEach(s => {
- const tagText = (typeof s.tag === 'string' ? s.tag : trAny(s.tag)) || ''
+ const tagText = (typeof s.tag === 'string' ? s.tag : flat(s.tag, lang)) || ''
  if (!tagText) return
  const topic = tagToTopic(tagText)
  if (!topic) return
@@ -818,16 +827,16 @@ function deriveIndicationGroupsFromStudies(peptide, excludeLabels) {
  const studyItems = b.studies.slice(0, 2).map(s => ({
  title: s.tag || { hu: '-', en: '-', pl: '-' },
  desc: s.finding || (typeof s.title === 'string' ? { hu: s.title, en: s.title, pl: s.title } : (s.title || { hu: '', en: '', pl: '' })),
- })).filter(it => trAny(it.desc))
+ })).filter(it => flat(it.desc, lang))
  const mechs = TOPIC_MECHANISMS[topic] || []
  const mechItems = mechs.slice(0, Math.max(0, 3 - studyItems.length)).map(m => ({
  title: m.t, desc: m.d,
  }))
  const items = [...studyItems, ...mechItems]
  if (items.length === 0) continue
- const label = b.tag && typeof b.tag === 'object' ? b.tag : { hu: trAny(b.tag) || topic, en: trAny(b.tag) || topic, pl: trAny(b.tag) || topic }
+ const label = b.tag && typeof b.tag === 'object' ? b.tag : { hu: flat(b.tag, lang) || topic, en: flat(b.tag, lang) || topic, pl: flat(b.tag, lang) || topic }
  // Skip if this label is already represented by a category-based group
- const labelLower = trAny(label).toLowerCase()
+ const labelLower = flat(label, lang).toLowerCase()
  const isDup = excludeLabels.some(lbl => {
  const llow = lbl.toLowerCase()
  return llow.includes(labelLower) || labelLower.includes(llow)
@@ -843,7 +852,7 @@ function deriveIndicationGroupsFromStudies(peptide, excludeLabels) {
  return out
 }
 
-function deriveIndications(peptide, categoryIds, library) {
+function deriveIndications(peptide, categoryIds, library, lang) {
  const fromCategories = categoryIds
  .map(id => {
  const cat = library.categories.find(c => c.id === id)
@@ -861,7 +870,7 @@ function deriveIndications(peptide, categoryIds, library) {
  })
  .filter(Boolean)
  const excludeLabels = fromCategories.flatMap(g => [g.label?.hu, g.label?.en, g.label?.pl].filter(Boolean))
- const fromStudies = deriveIndicationGroupsFromStudies(peptide, excludeLabels)
+ const fromStudies = deriveIndicationGroupsFromStudies(peptide, excludeLabels, lang)
  // Cap at 6 groups total
  return [...fromCategories, ...fromStudies].slice(0, 6)
 }
@@ -873,7 +882,7 @@ function deriveWhatIs(peptide) {
  return peptide.description
 }
 
-export function adaptLibraryEntry(entry, library) {
+export function adaptLibraryEntry(entry, library, lang) {
  const peptide = entry
  if (!peptide) return null
  const tier = library.getResearchLevel(peptide)
@@ -917,7 +926,7 @@ export function adaptLibraryEntry(entry, library) {
  doseMcg: peptide.defaultDoseMcg,
  },
  // ─── v2-only enriched fields (v1 ignores these) ──────────────────
- indications: deriveIndications(peptide, categoryIds, library),
+ indications: deriveIndications(peptide, categoryIds, library, lang),
  safetyProfile: deriveSafetyProfile(peptide, categoryIds),
  interactions: deriveInteractions(peptide, categoryIds, related),
  reconstitute: deriveReconstitute(peptide, library),
