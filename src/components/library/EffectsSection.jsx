@@ -160,7 +160,7 @@ function Modal({ cat, idx, libraryId, onClose }) {
  return (
  <div
  className="fixed inset-0 z-50 flex items-center justify-center p-4"
- style={{ background: 'var(--bg-modal-backdrop)', backdropFilter: 'blur(12px)' }}
+ style={{ background: 'var(--bg-modal-backdrop)', backdropFilter: 'blur(6px)' }}
  onClick={e => { if (e.target === e.currentTarget) onClose() }}
  >
  <div
@@ -168,7 +168,7 @@ function Modal({ cat, idx, libraryId, onClose }) {
  style={{
  background: 'var(--bg-elevated)',
  border: `1px solid ${color}35`,
- boxShadow: `0 0 80px ${glow}, 0 0 0 1px var(--tint-soft) inset`,
+ boxShadow: `0 0 40px ${glow}, 0 0 0 1px var(--tint-soft) inset`,
  }}
  >
  <div className="relative h-56 overflow-hidden rounded-t-3xl">
