@@ -121,8 +121,8 @@ function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, on
         // snappy for hover. Mixing them under Tailwind's transition-all
         // collapsed everything to 500ms linear-like motion previously.
         transition:
-          'transform 700ms cubic-bezier(0.22, 1, 0.36, 1), ' +
-          'opacity 400ms ease-out, ' +
+          'transform 1100ms cubic-bezier(0.22, 1, 0.36, 1), ' +
+          'opacity 500ms ease-out, ' +
           'width 220ms ease-out, ' +
           'border-color 220ms ease-out, ' +
           'box-shadow 220ms ease-out',
@@ -255,13 +255,15 @@ export default function SideLibrarySwitcher() {
       const target = document.getElementById('library')
       if (target) {
         const rect = target.getBoundingClientRect()
-        // Show pills as soon as the library section's top has scrolled into
-        // the lower 70% of the viewport (library is "approaching" the user).
-        setVisible(rect.top < window.innerHeight * 0.7)
+        // Show pills only once the user has actually arrived at the library —
+        // i.e. the library section's top is at/above the viewport's upper
+        // third. This pushes the slide-in lower than before (when threshold
+        // was 0.7×vh and pills appeared on Hero/Education).
+        setVisible(rect.top < window.innerHeight * 0.35)
       } else {
         // Fallback while cube chunk is still loading.
         const scrollY = window.scrollY || window.pageYOffset || 0
-        setVisible(scrollY > window.innerHeight)
+        setVisible(scrollY > window.innerHeight * 1.4)
       }
     }
 
