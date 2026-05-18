@@ -20,6 +20,10 @@ import { useLang } from '../i18n/LanguageContext'
 const CHEMICAL_GREEN = '#00ff99'
 const SWITCH_COOLDOWN_MS = 750 // matches LibraryCube rotation spring duration
 
+// "Currently active library" caption — localised so the pill follows the
+// global language switcher.
+const NOW_LABEL = { hu: 'MOST', en: 'NOW', pl: 'TERAZ' }
+
 // Strip the trailing "Könyvtár" / "Library" / leading "Biblioteka …" so the
 // label tracks the substance kind, not the word "library".
 function trimLabel(fullName) {
@@ -59,7 +63,7 @@ function splitColumns(label) {
   return [label.slice(0, mid), label.slice(mid)]
 }
 
-function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, onClick, disabled, slideIn }) {
+function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, onClick, disabled, slideIn, nowLabel }) {
   const [hovered, setHovered] = useState(false)
   const [flashing, setFlashing] = useState(false)
   const flashRef = useRef(null)
@@ -176,7 +180,7 @@ function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, on
           className="text-[7px] font-bold tracking-[0.32em] uppercase opacity-60 whitespace-nowrap"
           style={{ color: accent }}
         >
-          Most
+          {nowLabel}
         </span>
         <span
           className="text-[9px] font-bold tracking-[0.10em] uppercase whitespace-nowrap"
@@ -230,11 +234,14 @@ export default function SideLibrarySwitcher() {
   const cooldownRef = useRef(null)
 
   useEffect(() => {
+    // Use a plain scroll-Y threshold instead of probing #library — the cube
+    // is lazy-loaded so the element doesn't exist during the first render
+    // pass, and that previously left visible=false even when the user was
+    // well past Hero. ~40% of the viewport height roughly places the trigger
+    // somewhere in the Education section, just before the library.
     const update = () => {
-      const target = document.getElementById('library')
-      if (!target) { setVisible(false); return }
-      const rect = target.getBoundingClientRect()
-      setVisible(rect.top < window.innerHeight * 0.3)
+      const scrollY = window.scrollY || window.pageYOffset || 0
+      setVisible(scrollY > window.innerHeight * 0.4)
     }
     update()
     window.addEventListener('scroll', update, { passive: true })
@@ -245,9 +252,14 @@ export default function SideLibrarySwitcher() {
     }
   }, [])
 
-  // Reset cooldown whenever the library actually changes (it could be
-  // triggered from the cube itself, swipe, or the side pill).
+  // Reset cooldown whenever the library actually changes (cube, swipe, pill).
+  // Skip the initial mount so pills aren't dimmed on first paint.
+  const firstMount = useRef(true)
   useEffect(() => {
+    if (firstMount.current) {
+      firstMount.current = false
+      return
+    }
     setCooldown(true)
     if (cooldownRef.current) clearTimeout(cooldownRef.current)
     cooldownRef.current = setTimeout(() => setCooldown(false), SWITCH_COOLDOWN_MS)
@@ -274,6 +286,7 @@ export default function SideLibrarySwitcher() {
         onClick={() => setLibraryId(prevLib.id)}
         disabled={cooldown}
         slideIn={visible}
+        nowLabel={NOW_LABEL[lang] || NOW_LABEL.hu}
       />
       <SidePill
         direction="next"
@@ -284,6 +297,7 @@ export default function SideLibrarySwitcher() {
         onClick={() => setLibraryId(nextLib.id)}
         disabled={cooldown}
         slideIn={visible}
+        nowLabel={NOW_LABEL[lang] || NOW_LABEL.hu}
       />
       <style>{`
         @keyframes slsFlash {
