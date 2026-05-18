@@ -101,7 +101,7 @@ function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, on
         flex flex-col items-center
         pt-4 pb-3 select-none
         backdrop-blur-md
-        transition-all duration-500 ease-out will-change-transform
+        will-change-transform
         ${isLeft ? 'left-0 rounded-r-2xl border-l-0' : 'right-0 rounded-l-2xl border-r-0'}
         ${disabled ? 'cursor-not-allowed' : 'cursor-pointer'}
       `}
@@ -114,9 +114,18 @@ function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, on
           ? `0 0 32px ${accent}55, inset 0 0 24px ${accent}22, ${isLeft ? '' : '-'}10px 0 24px -10px ${accent}88`
           : `0 0 16px ${accent}22, inset 0 0 12px ${accent}11, ${isLeft ? '' : '-'}4px 0 16px -10px ${accent}33`,
         color: accent,
-        // Compose two transforms: vertical-center + horizontal slide-in.
         transform: `translateY(-50%) translateX(${translateX})`,
         opacity: disabled ? 0.55 : 1,
+        // Explicit per-property transitions: slide-in gets a long, smooth
+        // cubic-bezier ease so the pill "drifts in"; width/border/shadow stay
+        // snappy for hover. Mixing them under Tailwind's transition-all
+        // collapsed everything to 500ms linear-like motion previously.
+        transition:
+          'transform 700ms cubic-bezier(0.22, 1, 0.36, 1), ' +
+          'opacity 400ms ease-out, ' +
+          'width 220ms ease-out, ' +
+          'border-color 220ms ease-out, ' +
+          'box-shadow 220ms ease-out',
       }}
     >
       {/* Chevron HUD */}
@@ -234,19 +243,38 @@ export default function SideLibrarySwitcher() {
   const cooldownRef = useRef(null)
 
   useEffect(() => {
-    // Use a plain scroll-Y threshold instead of probing #library — the cube
-    // is lazy-loaded so the element doesn't exist during the first render
-    // pass, and that previously left visible=false even when the user was
-    // well past Hero. ~40% of the viewport height roughly places the trigger
-    // somewhere in the Education section, just before the library.
+    let cancelled = false
+
+    // Trigger: pills slide in when the user reaches the library section.
+    // The cube is lazy-loaded, so #library may not exist immediately — we
+    // poll for it for up to 6s, then fall back to a generic scroll-Y check
+    // (past one viewport height) so the pills appear even if the cube
+    // chunk never finishes loading.
     const update = () => {
-      const scrollY = window.scrollY || window.pageYOffset || 0
-      setVisible(scrollY > window.innerHeight * 0.4)
+      if (cancelled) return
+      const target = document.getElementById('library')
+      if (target) {
+        const rect = target.getBoundingClientRect()
+        // Show pills as soon as the library section's top has scrolled into
+        // the lower 70% of the viewport (library is "approaching" the user).
+        setVisible(rect.top < window.innerHeight * 0.7)
+      } else {
+        // Fallback while cube chunk is still loading.
+        const scrollY = window.scrollY || window.pageYOffset || 0
+        setVisible(scrollY > window.innerHeight)
+      }
     }
+
+    // Initial poll loop — catches lazy-mounted #library.
+    const polls = setInterval(update, 200)
+    setTimeout(() => clearInterval(polls), 6000)
+
     update()
     window.addEventListener('scroll', update, { passive: true })
     window.addEventListener('resize', update)
     return () => {
+      cancelled = true
+      clearInterval(polls)
       window.removeEventListener('scroll', update)
       window.removeEventListener('resize', update)
     }
