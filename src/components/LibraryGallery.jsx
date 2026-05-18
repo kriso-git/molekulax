@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo, useEffect } from 'react'
+import { useState, useRef, useMemo, useEffect, useLayoutEffect } from 'react'
 import { useLibrary } from '../context/LibraryContext'
 import { getLevelMeta, LEVEL_META, makeSortComparator } from '../data/libraries/shared/researchLevel'
 import { useLang } from '../i18n/LanguageContext'
@@ -297,7 +297,12 @@ export default function LibraryGallery({
  // (set by EntryDetailRoute closeDetail or hashchange listener) and restores
  // state when the library.id matches the snapshot. Idempotent — clears the
  // pending object after consumption.
- useEffect(() => {
+ //
+ // useLayoutEffect (NOT useEffect) so setState fires BEFORE the browser paint —
+ // otherwise the user sees one flickered frame of default state before the
+ // restored state shows up. The rAF chain below is still needed for scrollTo,
+ // since the CSS grid-template-rows accordion transition needs a layout pass.
+ useLayoutEffect(() => {
   if (typeof window === 'undefined') return
   const pending = window.__libraryGalleryPendingRestore__
   if (!pending || pending.libraryId !== library.id) return
