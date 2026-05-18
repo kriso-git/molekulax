@@ -10,7 +10,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'icon-192.png', 'icon-512.png', 'icon-maskable.png'],
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,webp,avif,woff2,ico}'],
+        // PNG fallbacks (5-7MB per effects-tile) are intentionally excluded
+        // from precache — they're only fetched by browsers without AVIF/WebP
+        // support, which the runtime CacheFirst strategy handles fine.
+        globPatterns: ['**/*.{js,css,html,svg,webp,avif,woff2,ico}'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
           {

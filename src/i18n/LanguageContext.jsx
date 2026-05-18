@@ -1,11 +1,12 @@
 import { createContext, useContext, useEffect, useState } from 'react'
-import { UI } from './uiStrings'
+import { UI_HU } from './uiStrings-hu'
 
 const LanguageContext = createContext({
   lang: 'hu',
   setLang: () => {},
   t: (k) => k,
   tr: (v) => v,
+  loadingLang: false,
 })
 
 const SUPPORTED = ['hu', 'en', 'pl']
@@ -21,20 +22,63 @@ function detectInitial() {
   return 'hu'
 }
 
+// Phase 11: per-locale dynamic-import. HU is sync-bundled as the default;
+// EN/PL fetch on first switch and stay cached in-memory + sessionStorage.
+const localeCache = new Map([['hu', UI_HU]])
+
+async function loadLocale(lang) {
+  if (localeCache.has(lang)) return localeCache.get(lang)
+  try {
+    const sessionKey = `molekulax:ui:${lang}`
+    const cached = typeof sessionStorage !== 'undefined' ? sessionStorage.getItem(sessionKey) : null
+    if (cached) {
+      const parsed = JSON.parse(cached)
+      localeCache.set(lang, parsed)
+      return parsed
+    }
+  } catch {}
+  const mod = await import(`./uiStrings-${lang}.js`)
+  const obj = mod[`UI_${lang.toUpperCase()}`]
+  localeCache.set(lang, obj)
+  try {
+    sessionStorage.setItem(`molekulax:ui:${lang}`, JSON.stringify(obj))
+  } catch {}
+  return obj
+}
+
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(detectInitial)
+  const [uiMap, setUiMap] = useState(UI_HU)
+  const [loadingLang, setLoadingLang] = useState(false)
 
   useEffect(() => {
     try { localStorage.setItem('molekulax-lang', lang) } catch {}
     document.documentElement.lang = lang
+    if (localeCache.has(lang)) {
+      setUiMap(localeCache.get(lang))
+      return
+    }
+    let cancelled = false
+    setLoadingLang(true)
+    loadLocale(lang)
+      .then(obj => {
+        if (cancelled) return
+        setUiMap(obj)
+        setLoadingLang(false)
+      })
+      .catch(err => {
+        if (cancelled) return
+        console.error('Failed to load locale', lang, err)
+        setLoadingLang(false)
+      })
+    return () => { cancelled = true }
   }, [lang])
 
-  const t = (key) => {
-    const dict = UI[lang] || UI.hu
-    return dict[key] ?? UI.hu[key] ?? key
-  }
+  const t = (key) => uiMap[key] ?? UI_HU[key] ?? key
 
-  // tr: localizes a value that may be a plain string OR an object {hu, en, pl}
+  // tr: localizes a value that may be a plain string OR an object {hu, en, pl}.
+  // Entry data still ships full triplets (entries-data locale-split deferred
+  // to a later Phase per spec §11 backlog) — tr handles both shapes.
   const tr = (value) => {
     if (value == null) return value
     if (typeof value === 'string') return value
@@ -45,7 +89,7 @@ export function LanguageProvider({ children }) {
   }
 
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t, tr }}>
+    <LanguageContext.Provider value={{ lang, setLang, t, tr, loadingLang }}>
       {children}
     </LanguageContext.Provider>
   )
