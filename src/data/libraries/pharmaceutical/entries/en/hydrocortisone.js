@@ -11,6 +11,7 @@ export default {
   "description": "Hydrocortisone is the synthetic equivalent of endogenous cortisol, developed by Pfizer (Cortef, FDA 1955). In Addison disease and secondary adrenal insufficiency it is lifelong hormone replacement. Mimic physiological circadian pattern (morning peak, evening low) via split-dosing (10 mg morning + 5 mg afternoon). STRESS DOSE: illness, surgery, physical trauma require 2-3x increase MANDATORY because Addison patients lack endogenous cortisol surge (acute adrenal crisis can be fatal). ATA 2016 (Bornstein 2016 JCEM PMID 26760044) guideline gives standardized stress-dose recommendations.",
   "mechanism": "Glucocorticoid receptor (GR) agonist. Anti-inflammation, immunomodulation, gluconeogenesis stimulation, protein catabolism, osmotic balance (mild mineralocorticoid too).",
   "legalStatus": "EU/HU: prescription only (hydrocortisone, Cortef, Plenadren — modified-release brand). USA: FDA Rx.",
+  "bioavailability": "~96% (oral tablet — FDA Cortef label; topical vs oral form differs)",
   "onsetTime": "30-60 min (oral), seconds-minutes (IV in adrenal crisis)",
   "halfLife": "~1.5 h (plasma), biological 8-12 h",
   "atcCode": "H02AB09",

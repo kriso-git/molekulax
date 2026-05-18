@@ -11,6 +11,7 @@ export default {
   "description": "A Glimepirid egy 2. generációs sulfonylurea, amelyet a Sanofi-Aventis fejlesztett ki (Amaryl, FDA 1995). A β-sejtek ATP-érzékeny K-csatorna-zárásával insulin-szekréciót stimulál, NEM glükóz-függő módon — ezért hipoglikémia-rizikója szignifikáns. A klasszikus T2DM-portfólióban \"olcsó és hatékony\" elem, de a kardiovaszkuláris végpont-evidencia hiánya és a hipoglikémia-rizikó miatt az ADA/EASD 2022 konszenzus a GLP-1 RA, SGLT2i és DPP-4i mögé pozícionálja. Még mindig használt költségérzékeny vagy compliance-szempontból egyszerűbb regimre szoruló betegeknél.",
   "mechanism": "Az ATP-érzékeny K-csatornák (KATP, SUR1/Kir6.2) zárása a pankreász β-sejtekben → depolarizáció → Ca²⁺-beáramlás → inzulin-szekréció. NEM glükóz-függő, ezért hipoglikémiát okozhat alacsony vércukor mellett is.",
   "legalStatus": "EU/HU: vényköteles (Amaryl, generikus). USA: FDA Rx.",
+  "bioavailability": "~100% (orális, complete absorption — FDA Amaryl label)",
   "onsetTime": "1-3 h (acute), 1-2 weeks (steady-state HbA1c)",
   "halfLife": "~5-8 h (once-daily morning dosing)",
   "atcCode": "A10BB12",

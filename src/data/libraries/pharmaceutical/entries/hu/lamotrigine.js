@@ -11,6 +11,7 @@ export default {
   "description": "A Lamotrigine egy feszültség-függő Na-csatorna blokkoló antiepilepszikum (GSK Lamictal, FDA 1994 epilepsy, FDA 2003 bipoláris fenntartás). Bipoláris zavarban a depressziós fázis-prevenciója a fő erőssége (kevésbé hatékony akut mánián). A SÚLYOS bőr-reakció (Stevens-Johnson szindróma, toxikus epidermális nekrolízis) kockázata 0,3% pediátriában és 0,1% felnőtt populációban — DE szignifikánsan emelkedik gyors dóziseszkalációnál vagy Valproat-kombinációnál. Ezért az 5-hetes lassú titráció (25 → 50 → 100 → 200 mg) KÖTELEZŐ, és minden bőrkiütésnél AZONNALI STOP.",
   "mechanism": "Feszültség-függő Na-csatorna használat-függő blokádja (membrán-stabilizáció), glutamát-felszabadulás csökkentése. Másodlagos hatás: szelektív presynaptikus szerotonin-felszabadulás emelése (hangulat-stabilizáló hatás magyarázata).",
   "legalStatus": "EU/HU: vényköteles (Lamictal, Lamitrin, Epitrigine, generikus). USA: FDA Rx.",
+  "bioavailability": "~98% (orális, \"completely absorbed\" — FDA Lamictal label)",
   "onsetTime": "5+ weeks (slow titration required)",
   "halfLife": "25-33 h (alone), 70 h (with valproate), 13 h (with enzyme inducers)",
   "atcCode": "N03AX09",

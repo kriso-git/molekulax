@@ -11,6 +11,7 @@ export default {
   "description": "Escitalopram is the active S-enantiomer of citalopram (R-enantiomer is pharmacologically inactive and may slightly interfere). Developed by Lundbeck (Lexapro FDA 2002), one of the cleanest SERT-selective SSRIs. Per Cipriani 2018 Lancet (PMID 29477251) network meta-analysis, top-3 of 21 antidepressants for efficacy-tolerability ratio (alongside vortioxetine, mirtazapine). Lader 2004 (PMID 15125014) trial showed MDD superiority over citalopram at 8 weeks. Generally better tolerability than citalopram, with lower QTc-prolongation risk (FDA 2011 warning for citalopram > 40 mg/day, escitalopram > 20 mg/day).",
   "mechanism": "Selective allosteric SERT (serotonin transporter) inhibitor. Higher SERT selectivity than other SSRIs. No significant affinity for other receptors.",
   "legalStatus": "EU/HU: prescription only (Cipralex, Lexapro, generics). USA: FDA Rx.",
+  "bioavailability": "~80% (oral, food-independent — FDA Lexapro label)",
   "onsetTime": "2-6 weeks (full antidepressant response)",
   "halfLife": "27-32 h (once-daily dosing)",
   "atcCode": "N06AB10",

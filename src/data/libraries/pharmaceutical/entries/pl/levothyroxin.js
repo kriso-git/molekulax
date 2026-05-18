@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Syntetyczna L-T4 jest identyczna z naturalną endogenną T4. W tkankach obwodowych (wątroba, nerki, mięśnie) dejodynazy D1 i D2 konwertują T4 do aktywnej T3 przez 5'-dejodynację. T3 wiąże jądrowe receptory hormonów tarczycy (TR-α, TR-β), gdzie wiąże się z elementami odpowiedzi tarczycy (TRE) i modyfikuje transkrypcję, regulując metabolizm podstawowy, termogenezę, syntezę białek i wiele szlaków metabolicznych.",
   "legalStatus": "UE/PL: na receptę (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generyki). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generyki). Brak potencjału nadużywania. Ze względu na wąski indeks terapeutyczny (NTI) zmiana marki w obrębie tej samej Rx jest unikana — wymagana wyższa precyzja dawkowania.",
+  "bioavailability": "40-80% (doustnie, na czczo; pokarm i wapń/żelazo zmniejszają — etykieta FDA Synthroid)",
   "onsetTime": "4-6 weeks (steady-state TSH reduction), 7-10 days (initial symptomatic effect)",
   "halfLife": "6-7 days (allowing once-daily dosing; steady-state in 4-6 weeks)",
   "atcCode": "H03AA01",

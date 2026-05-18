@@ -11,6 +11,7 @@ export default {
   "description": "Glimepiryd to sulfonylomocznik 2. generacji opracowany przez Sanofi-Aventis (Amaryl, FDA 1995). Stymuluje wydzielanie insuliny komórek β przez zamykanie kanałów K zależnych od ATP, NIE w sposób zależny od glukozy — więc ryzyko hipoglikemii jest znaczące. W klasycznym portfolio T2DM jest elementem \"tanim i skutecznym\", ale z braku dowodów CV i z ryzykiem hipoglikemii, konsensus ADA/EASD 2022 umieszcza go za GLP-1 RA, SGLT2i i DPP-4i. Wciąż stosowany u pacjentów wrażliwych kosztowo lub wymagających prostego compliance.",
   "mechanism": "Zamyka kanały K zależne od ATP (KATP, SUR1/Kir6.2) w komórkach β trzustki → depolaryzacja → napływ Ca²⁺ → wydzielanie insuliny. NIE zależne od glukozy, więc hipoglikemia możliwa nawet przy niskiej glukozie.",
   "legalStatus": "UE/PL: na receptę (Amaryl, generyki). USA: FDA Rx.",
+  "bioavailability": "~100% (doustnie, całkowite wchłanianie — etykieta FDA Amaryl)",
   "onsetTime": "1-3 h (acute), 1-2 weeks (steady-state HbA1c)",
   "halfLife": "~5-8 h (once-daily morning dosing)",
   "atcCode": "A10BB12",

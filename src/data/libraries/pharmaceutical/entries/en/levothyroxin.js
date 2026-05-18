@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Synthetic L-T4 is identical to natural endogenous T4. In peripheral tissues (liver, kidney, muscle), D1 and D2 deiodinases convert T4 to active T3 by 5'-deiodination. T3 binds the nuclear thyroid hormone receptors (TR-α, TR-β), where it binds thyroid response elements (TRE) and modifies transcription, regulating basal metabolism, thermogenesis, protein synthesis, and many metabolic pathways.",
   "legalStatus": "EU/HU: prescription only (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generics). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generics). No abuse potential. Due to narrow therapeutic index (NTI), brand-switching within same Rx avoided — higher dose precision required.",
+  "bioavailability": "40-80% (oral, fasted; food and calcium/iron reduce — FDA Synthroid label)",
   "onsetTime": "4-6 weeks (steady-state TSH reduction), 7-10 days (initial symptomatic effect)",
   "halfLife": "6-7 days (allowing once-daily dosing; steady-state in 4-6 weeks)",
   "atcCode": "H03AA01",

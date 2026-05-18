@@ -11,6 +11,7 @@ export default {
   "description": "Lamotrigine is a voltage-gated Na channel blocker antiepileptic (GSK Lamictal, FDA 1994 epilepsy, FDA 2003 bipolar maintenance). Main strength in bipolar disorder is depressive-phase prevention (less effective in acute mania). SEVERE skin reaction risk (Stevens-Johnson syndrome, toxic epidermal necrolysis) is 0.3% in pediatrics and 0.1% adult — but significantly rises with rapid escalation or valproate combination. The 5-week slow titration (25 → 50 → 100 → 200 mg) is MANDATORY, and ANY rash = IMMEDIATE STOP.",
   "mechanism": "Use-dependent voltage-gated Na channel block (membrane stabilization), glutamate release reduction. Secondary: selective presynaptic serotonin release elevation (mood-stabilizing rationale).",
   "legalStatus": "EU/HU: prescription only (Lamictal, Lamitrin, Epitrigine, generics). USA: FDA Rx.",
+  "bioavailability": "~98% (oral, \"completely absorbed\" — FDA Lamictal label)",
   "onsetTime": "5+ weeks (slow titration required)",
   "halfLife": "25-33 h (alone), 70 h (with valproate), 13 h (with enzyme inducers)",
   "atcCode": "N03AX09",

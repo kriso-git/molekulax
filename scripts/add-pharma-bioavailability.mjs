@@ -95,14 +95,72 @@ const PAYLOADS = [
     en: '~95-100% (oral, "virtually completely absorbed" — FDA Vibramycin label)',
     pl: '~95-100% (doustnie, "praktycznie całkowicie wchłaniana" — etykieta FDA Vibramycin)',
   },
+  // ── Batch 2 (empagliflozin..levothyroxin) ────────────────────────────────
+  {
+    id: 'empagliflozin',
+    hu: '~78% (orális — FDA Jardiance label, Section 12.3)',
+    en: '~78% (oral — FDA Jardiance label, Section 12.3)',
+    pl: '~78% (doustnie — etykieta FDA Jardiance, sekcja 12.3)',
+  },
+  {
+    id: 'escitalopram',
+    hu: '~80% (orális, étkezéstől független — FDA Lexapro label)',
+    en: '~80% (oral, food-independent — FDA Lexapro label)',
+    pl: '~80% (doustnie, niezależnie od pokarmu — etykieta FDA Lexapro)',
+  },
+  {
+    id: 'finasteride',
+    hu: '65% (orális, 1 mg tabletta, IV-referenciához viszonyított AUC; tartomány 26-170% — FDA Propecia label)',
+    en: '65% (oral, 1-mg tablet, AUC vs IV reference; range 26-170% — FDA Propecia label)',
+    pl: '65% (doustnie, tabletka 1 mg, AUC vs IV; zakres 26-170% — etykieta FDA Propecia)',
+  },
+  {
+    id: 'fluoxetine',
+    hu: 'Abszolút értékben nem karakterizált (IV formula nincs); 60-80% relatív orális szuszpenzióhoz — FDA Prozac label',
+    en: 'Not characterized as absolute (no IV formulation); 60-80% relative to oral solution — FDA Prozac label',
+    pl: 'Nieokreślone bezwzględnie (brak postaci IV); 60-80% względem roztworu doustnego — etykieta FDA Prozac',
+  },
+  {
+    id: 'glimepirid',
+    hu: '~100% (orális, complete absorption — FDA Amaryl label)',
+    en: '~100% (oral, complete absorption — FDA Amaryl label)',
+    pl: '~100% (doustnie, całkowite wchłanianie — etykieta FDA Amaryl)',
+  },
+  {
+    id: 'hydrocortisone',
+    hu: '~96% (orális tabletta — FDA Cortef label; topikális vs orális forma eltérő)',
+    en: '~96% (oral tablet — FDA Cortef label; topical vs oral form differs)',
+    pl: '~96% (doustnie tabletka — etykieta FDA Cortef; forma miejscowa vs doustna różna)',
+  },
+  {
+    id: 'isotretinoin',
+    hu: '~25% (orális, éhgyomri; magas-zsírtartalmú étkezéssel >2× emelkedik — FDA Accutane label)',
+    en: '~25% (oral, fasted; >2× higher with high-fat meal — FDA Accutane label)',
+    pl: '~25% (doustnie, na czczo; >2× wyższa z posiłkiem wysokotłuszczowym — etykieta FDA Accutane)',
+  },
+  {
+    id: 'lamotrigine',
+    hu: '~98% (orális, "completely absorbed" — FDA Lamictal label)',
+    en: '~98% (oral, "completely absorbed" — FDA Lamictal label)',
+    pl: '~98% (doustnie, "całkowicie wchłaniana" — etykieta FDA Lamictal)',
+  },
+  {
+    id: 'levothyroxin',
+    hu: '40-80% (orális, éhgyomri; étkezés és kalcium/vas csökkenti — FDA Synthroid label)',
+    en: '40-80% (oral, fasted; food and calcium/iron reduce — FDA Synthroid label)',
+    pl: '40-80% (doustnie, na czczo; pokarm i wapń/żelazo zmniejszają — etykieta FDA Synthroid)',
+  },
 ]
 
 const LANGS = ['hu', 'en', 'pl']
 
 function injectField(content, value) {
   if (content.includes('"bioavailability"')) {
+    // Match value with escaped-quote awareness: (?:[^"\\]|\\.)* handles \" inside.
+    // Plain [^"]* would stop at the first \" and corrupt values that contain
+    // escaped quotes (e.g. doxycycline's "virtually completely absorbed").
     return content.replace(
-      /"bioavailability":\s*"[^"]*"/,
+      /"bioavailability":\s*"(?:[^"\\]|\\.)*"/,
       `"bioavailability": ${JSON.stringify(value)}`
     )
   }

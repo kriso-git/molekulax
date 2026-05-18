@@ -11,6 +11,7 @@ export default {
   "description": "Isotretinoin (Roche Roaccutane / Accutane, FDA 1982) is the gold-standard treatment for severe nodulocystic acne. 13-cis-retinoic acid (vitamin A metabolite) causes sebaceous gland atrophy, sebum production reduction, and P. acnes growth inhibition. EXTREME TERATOGENICITY (FDA category X) — every female patient must enroll in pregnancy prevention program (USA: iPLEDGE, EU: similar national programs). 2 negative pregnancy tests before start, 2 forms contraception mandatory, monthly testing. Layton 2009 (PMID 20436884) 6-month course produces sustained remission in ~80% of cases. Side effect profile SIGNIFICANT: dryness (mouth, eye, skin, lip), muscle pain, liver function disturbance, depression risk.",
   "mechanism": "Retinoid receptor (RAR) partial agonist. Sebaceous gland atrophy, ~80% sebum production reduction, P. acnes population decrease, normalization of follicular hyperkeratinization. Multimodal anti-acne effect.",
   "legalStatus": "EU/HU: prescription only, dermatologist-strictly-supervised protocol (Roaccutane). USA: FDA Rx iPLEDGE program.",
+  "bioavailability": "~25% (oral, fasted; >2× higher with high-fat meal — FDA Accutane label)",
   "onsetTime": "4-8 weeks (initial improvement), 4-6 months (full course)",
   "halfLife": "~21 h (parent), 24 h (active 4-oxo-isotretinoin)",
   "atcCode": "D10BA01",

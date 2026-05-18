@@ -11,6 +11,7 @@ export default {
   "description": "Hydrokortyzon to syntetyczny odpowiednik endogennego kortyzolu, opracowany przez Pfizer (Cortef, FDA 1955). W chorobie Addisona i wtórnej niewydolności nadnerczy stosowany dożywotnio. Naśladuje fizjologiczny rytm dobowy (poranny szczyt, wieczorny niski) przez split-dosing (10 mg rano + 5 mg po południu). DAWKA STRESOWA: choroba, operacja, uraz wymagają wzrostu 2-3x OBOWIĄZKOWO, ponieważ pacjenci Addisona nie mają endogennego wzrostu kortyzolu (ostry kryzys nadnerczowy może być śmiertelny). Wytyczne ATA 2016 (Bornstein 2016 JCEM PMID 26760044) dają standardyzowane zalecenia.",
   "mechanism": "Agonista receptora glukokortykoidowego (GR). Przeciwzapalny, immunomodulujący, stymulujący glukoneogenezę, katabolizm białek, równowaga osmotyczna.",
   "legalStatus": "UE/PL: na receptę (hydrokortyzon, Cortef, Plenadren — marka modified-release). USA: FDA Rx.",
+  "bioavailability": "~96% (doustnie tabletka — etykieta FDA Cortef; forma miejscowa vs doustna różna)",
   "onsetTime": "30-60 min (oral), seconds-minutes (IV in adrenal crisis)",
   "halfLife": "~1.5 h (plasma), biological 8-12 h",
   "atcCode": "H02AB09",

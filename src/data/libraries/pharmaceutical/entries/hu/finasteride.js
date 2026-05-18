@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "A típus II 5α-reduktáz (5AR2) szelektív, kompetitív gátlása ~70-90%-kal csökkenti a szérum DHT-szintet (Roberts 1999). A típus I 5AR (faggyúmirigy, bőr) viszonylag érintetlen, ezért a Finasteride enyhébb periphériás antiandrogén-hatása. A hajhagyma-szintű DHT csökkenése megfordítja a miniaturizációt: az anagén fázis meghosszabbodik, a hajszálak vastagsága visszatér. A prosztatában a DHT-csökkenés a hiperplázia progresszióját lassítja.",
   "legalStatus": "EU/HU: vényköteles (Propecia 1 mg, Proscar 5 mg, generikus). USA: FDA Rx, nem ütemezett. Generikus formák széles körben (originator patent 2013-ban lejárt). Telemedicine-szolgáltatások (Roman, Hims) USA-ban online Rx-szel hozzáférhető.",
+  "bioavailability": "65% (orális, 1 mg tabletta, IV-referenciához viszonyított AUC; tartomány 26-170% — FDA Propecia label)",
   "onsetTime": "3-6 months (hair stabilization), 6-12 months (visible regrowth)",
   "halfLife": "5-6 h (plasma); 96+ h enzyme affinity (sustained DHT suppression with daily dosing)",
   "atcCode": "D11AX10 (1 mg alopecia) / G04CB01 (5 mg BPH)",

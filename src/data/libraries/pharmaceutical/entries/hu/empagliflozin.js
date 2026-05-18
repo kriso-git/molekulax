@@ -11,6 +11,7 @@ export default {
   "description": "Az Empagliflozin egy szelektív SGLT2-inhibitor (sodium-glucose cotransporter 2), amely a vesetubulus proximális szakaszában gátolja a glükóz-reabszorpciót, ezzel napi 60-90 g glükóz-vesztést okoz vizelettel (glikozúria). FDA-jóváhagyott T2DM-re (2014), HFrEF-re (EMPEROR-Reduced 2020 PMID 32865377), HFpEF-re (EMPEROR-Preserved 2021 PMID 34449189), és CKD-re (EMPA-KIDNEY 2023 PMID 36331190). Az EMPA-REG OUTCOME trial (Zinman 2015 NEJM PMID 26378978) volt az első MACE-pozitív SGLT2-i trial — 38% relatív kardiovaszkuláris halálozás-csökkenést mutatott T2DM + ASCVD-betegen.",
   "mechanism": "SGLT2 (sodium-glucose cotransporter 2) szelektív gátlása a proximális vesetubulusban. Eredmény: 60-90 g/nap glükóz-vesztés vizelettel, ami a HbA1c-t csökkenti és insulin-független mechanizmussal. Másodlagos hatások: ozmotikus diurézis (vérnyomás-csökkentés), nephron-szintű hatás (intraglomeruláris nyomás csökkentés, CKD-protektív), ketonszint enyhe emelése (kardio-protektív).",
   "legalStatus": "EU/HU: vényköteles (Jardiance, Synjardy = Empagliflozin + Metformin). USA: FDA Rx.",
+  "bioavailability": "~78% (orális — FDA Jardiance label, Section 12.3)",
   "onsetTime": "1-2 weeks (BP, HbA1c)",
   "halfLife": "~12.4 h (once-daily dosing)",
   "atcCode": "A10BK03",

@@ -11,6 +11,7 @@ export default {
   "description": "Escytalopram to aktywny S-enancjomer cytalopramu (R-enancjomer farmakologicznie nieaktywny, może lekko interferować). Opracowany przez Lundbeck (Lexapro FDA 2002), jeden z najczystszych SERT-selektywnych SSRI. Wg metaanalizy Cipriani 2018 Lancet (PMID 29477251) top-3 z 21 antydepresantów pod względem skuteczności-tolerancji (obok wortioksetyny, mirtazapiny). Badanie Lader 2004 (PMID 15125014) wykazało wyższość w MDD nad cytalopramem po 8 tygodniach. Generalnie lepsza tolerancja niż cytalopram, niższe ryzyko wydłużenia QTc (ostrzeżenie FDA 2011 dla cytalopramu > 40 mg/dzień, escytalopramu > 20 mg/dzień).",
   "mechanism": "Selektywny allosteryczny inhibitor SERT (transporter serotoniny). Wyższa selektywność SERT niż inne SSRI. Brak znaczącego powinowactwa do innych receptorów.",
   "legalStatus": "UE/PL: na receptę (Cipralex, Lexapro, generyki). USA: FDA Rx.",
+  "bioavailability": "~80% (doustnie, niezależnie od pokarmu — etykieta FDA Lexapro)",
   "onsetTime": "2-6 weeks (full antidepressant response)",
   "halfLife": "27-32 h (once-daily dosing)",
   "atcCode": "N06AB10",

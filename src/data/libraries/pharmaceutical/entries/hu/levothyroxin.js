@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "A szintetikus L-T4 azonos a természetes endogén T4-gyel. A perifériás szövetekben (máj, vese, izom) a D1 és D2 deiodinaze-enzimek 5'-deiodálással aktív T3-má alakítják. A T3 a sejtmagi tiroid hormon-receptorra (TR-α, TR-β) kötődik, ahol a tiroid-választható elem-szekvenciákhoz (TRE) kötve transzkripciós módosítást végez, ami az alapanyagcserét, hőtermelést, fehérje-szintézist és számos egyéb metabolikus pathway-t szabályoz.",
   "legalStatus": "EU/HU: vényköteles (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generikus). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generikus). Nincs visszaélési potenciálja. EU narrow therapeutic index (NTI) miatt brand-csere kerülendő ugyanazon recepten — magasabb dózis-pontosság szükséges.",
+  "bioavailability": "40-80% (orális, éhgyomri; étkezés és kalcium/vas csökkenti — FDA Synthroid label)",
   "onsetTime": "4-6 weeks (steady-state TSH reduction), 7-10 days (initial symptomatic effect)",
   "halfLife": "6-7 days (allowing once-daily dosing; steady-state in 4-6 weeks)",
   "atcCode": "H03AA01",

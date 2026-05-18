@@ -11,6 +11,7 @@ export default {
   "description": "Lamotrygina to bloker bramkowanych napięciem kanałów Na (GSK Lamictal, FDA 1994 padaczka, FDA 2003 podtrzymanie ChAD). Główna siła w ChAD to prewencja fazy depresyjnej (mniej skuteczna w ostrej manii). Ryzyko CIĘŻKIEJ reakcji skórnej (SJS, TEN) wynosi 0,3% u dzieci i 0,1% u dorosłych — ale znacznie rośnie przy szybkiej eskalacji lub kombinacji z walproinianem. 5-tygodniowa powolna titracja (25 → 50 → 100 → 200 mg) jest OBOWIĄZKOWA, a KAŻDA wysypka = NATYCHMIASTOWY STOP.",
   "mechanism": "Zależna od użycia blokada bramkowanych napięciem kanałów Na (stabilizacja błony), redukcja uwalniania glutaminianu. Wtórnie: selektywne podwyższenie presynaptycznego uwalniania serotoniny.",
   "legalStatus": "UE/PL: na receptę (Lamictal, Lamitrin, Epitrigine, generyki). USA: FDA Rx.",
+  "bioavailability": "~98% (doustnie, \"całkowicie wchłaniana\" — etykieta FDA Lamictal)",
   "onsetTime": "5+ weeks (slow titration required)",
   "halfLife": "25-33 h (alone), 70 h (with valproate), 13 h (with enzyme inducers)",
   "atcCode": "N03AX09",

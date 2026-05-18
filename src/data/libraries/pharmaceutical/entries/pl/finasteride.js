@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Selektywne konkurencyjne hamowanie 5α-reduktazy typu II (5AR2) zmniejsza DHT w surowicy o ~70-90% (Roberts 1999). 5AR typu I (gruczoły łojowe, skóra) jest względnie oszczędzony, więc finasteryd ma łagodniejszy obwodowy efekt antyandrogenowy. Redukcja DHT w mieszku włosowym odwraca miniaturyzację: faza anagenowa się wydłuża, grubość włosa wraca. W prostacie redukcja DHT spowalnia progresję hiperplazji.",
   "legalStatus": "UE/PL: na receptę (Propecia 1 mg, Proscar 5 mg, generyki). USA: FDA Rx, niekontrolowany. Formy generyczne szeroko dostępne (patent oryginatora wygasł 2013). Usługi telemedyczne (Roman, Hims) w USA oferują dostęp online Rx.",
+  "bioavailability": "65% (doustnie, tabletka 1 mg, AUC vs IV; zakres 26-170% — etykieta FDA Propecia)",
   "onsetTime": "3-6 months (hair stabilization), 6-12 months (visible regrowth)",
   "halfLife": "5-6 h (plasma); 96+ h enzyme affinity (sustained DHT suppression with daily dosing)",
   "atcCode": "D11AX10 (1 mg alopecia) / G04CB01 (5 mg BPH)",

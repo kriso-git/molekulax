@@ -11,6 +11,7 @@ export default {
   "description": "Glimepiride is a 2nd-generation sulfonylurea developed by Sanofi-Aventis (Amaryl, FDA 1995). It stimulates β-cell insulin secretion by closing ATP-sensitive K channels, NOT glucose-dependently — so hypoglycemia risk is significant. In the classic T2DM portfolio it is a \"cheap and effective\" element, but lacking CV outcome evidence and with hypoglycemia risk, the ADA/EASD 2022 consensus places it behind GLP-1 RA, SGLT2i, and DPP-4i. Still used in cost-sensitive or compliance-simple regimen patients.",
   "mechanism": "Closes ATP-sensitive K channels (KATP, SUR1/Kir6.2) in pancreatic β-cells → depolarization → Ca²⁺ influx → insulin secretion. NOT glucose-dependent, so hypoglycemia possible even at low glucose.",
   "legalStatus": "EU/HU: prescription only (Amaryl, generics). USA: FDA Rx.",
+  "bioavailability": "~100% (oral, complete absorption — FDA Amaryl label)",
   "onsetTime": "1-3 h (acute), 1-2 weeks (steady-state HbA1c)",
   "halfLife": "~5-8 h (once-daily morning dosing)",
   "atcCode": "A10BB12",

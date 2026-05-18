@@ -11,6 +11,7 @@ export default {
   "description": "Izotretynoina (Roche Roaccutane / Accutane, FDA 1982) to złoty standard leczenia ciężkiego trądziku guzkowo-torbielowatego. Kwas 13-cis-retinowy (metabolit witaminy A) powoduje atrofię gruczołów łojowych, redukcję produkcji łoju i hamowanie wzrostu P. acnes. EKSTREMALNA TERATOGENNOŚĆ (kategoria X FDA) — każda pacjentka musi uczestniczyć w programie zapobiegania ciąży (USA: iPLEDGE, UE: podobne krajowe programy). 2 negatywne testy ciążowe przed startem, 2 formy antykoncepcji obowiązkowe, comiesięczne testy. Layton 2009 (PMID 20436884) 6-miesięczny kurs daje trwałą remisję w ~80% przypadków.",
   "mechanism": "Częściowy agonista receptora retinoidowego (RAR). Atrofia gruczołów łojowych, redukcja produkcji łoju o ~80%, redukcja populacji P. acnes, normalizacja hiperkeratynizacji mieszkowej.",
   "legalStatus": "UE/PL: na receptę, ściśle nadzorowane przez dermatologa (Roaccutane). USA: FDA Rx program iPLEDGE.",
+  "bioavailability": "~25% (doustnie, na czczo; >2× wyższa z posiłkiem wysokotłuszczowym — etykieta FDA Accutane)",
   "onsetTime": "4-8 weeks (initial improvement), 4-6 months (full course)",
   "halfLife": "~21 h (parent), 24 h (active 4-oxo-isotretinoin)",
   "atcCode": "D10BA01",

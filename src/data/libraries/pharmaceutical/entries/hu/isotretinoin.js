@@ -11,6 +11,7 @@ export default {
   "description": "Az Isotretinoin (Roche Roaccutane / Accutane, FDA 1982) a súlyos acne nodulocystica gold-standard kezelése. A 13-cisz-retinoinsav (a vitamin A metabolitja) a sebáceus-mirigy atrofizálását, talgproducció-csökkenést és Propionibacterium acnes-növekedés gátlását okozza. EXTRÉM TERATOGENITÁS (FDA X kategória) — minden női páciensnek a TERHESSÉG-MEGELŐZŐ programmba kell részt vennie (USA: iPLEDGE, EU: hasonló nemzeti programok). 2 negatív terhességi teszt indítás előtt, 2 forma fogamzásgátlás kötelező, havi teszt. Layton 2009 (PMID 20436884) 6 hónapos kúrája az esetek ~80%-ában tartós remissziót okoz. Mellékhatás-profil JELENTŐS: szárazság (száj, szem, bőr, ajak), izomfájdalom, májfunkció-zavar, depresszió-rizikó.",
   "mechanism": "Retinoid receptor (RAR) parciális agonista. Sebaceus-mirigy atrofizálása, talgproducció ~80%-os csökkentése, Propionibacterium acnes-populáció csökkentés, follikuláris hiperkeratinizáció normalizálása. Multimodális anti-acne hatás.",
   "legalStatus": "EU/HU: vényköteles, bőrgyógyász szigorúan ellenőrzött protokoll (Roaccutane). USA: FDA Rx iPLEDGE-program.",
+  "bioavailability": "~25% (orális, éhgyomri; magas-zsírtartalmú étkezéssel >2× emelkedik — FDA Accutane label)",
   "onsetTime": "4-8 weeks (initial improvement), 4-6 months (full course)",
   "halfLife": "~21 h (parent), 24 h (active 4-oxo-isotretinoin)",
   "atcCode": "D10BA01",

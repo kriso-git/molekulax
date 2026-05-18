@@ -11,6 +11,7 @@ export default {
   "description": "A Fluoxetine az SSRI-osztály úttörője (Eli Lilly Prozac, FDA 1987), az első klinikailag sikeres szerotonin-szelektív gyógyszer. Ultra-hosszú farmakokinetikája (parent 4-6 nap, aktív metabolit norfluoxetin 4-16 nap) miatt steady-state lassan alakul ki (4-5 hét), de a discontinuation-syndrom is enyhébb (a hosszú \"auto-taper\" miatt). Az EGYETLEN SSRI, ami FDA-jóváhagyással rendelkezik PEDIÁTRIAI MDD-re (8 év fölött), valamint OCD-re és bulimia nervosa-ra. A Stark 2003 (PMID 14692046) trial dokumentálta a pediátriai MDD hatékonyságát. Generikus, megfizethető. Erős CYP2D6-inhibítor, ami klinikailag jelentős interakciókat okoz.",
   "mechanism": "SERT szelektív gátlása. Mérsékelt 5-HT2C antagonizmus (ami az enyhe stimuláló-hangulati effekthez járulhat). A NORFLUOXETIN metabolit hasonlóan aktív és farmakológiailag identikus.",
   "legalStatus": "EU/HU: vényköteles (Prozac, Fluctin, Floxet, generikus). USA: FDA Rx.",
+  "bioavailability": "Abszolút értékben nem karakterizált (IV formula nincs); 60-80% relatív orális szuszpenzióhoz — FDA Prozac label",
   "onsetTime": "4-6 weeks (full antidepressant response)",
   "halfLife": "4-6 days (parent); norfluoxetine 4-16 days",
   "atcCode": "N06AB03",

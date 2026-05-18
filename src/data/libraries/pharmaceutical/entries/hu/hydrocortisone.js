@@ -11,6 +11,7 @@ export default {
   "description": "A Hydrocortisone az endogén kortizol szintetikus változata, amelyet a Pfizer (Cortef, FDA 1955) fejlesztett ki. Az Addison-betegségben és szekunder mellékvese-elégtelenségben élethosszig tartó hormon-pótlás. A fiziológiás cirkadián minta (reggeli csúcs, este alacsony) lehetőleg utánzása (split-dosing 10 mg reggel + 5 mg délután). STRESSZ-DÓZIS: betegség, műtét, fizikai trauma esetén 2-3x emelni KÖTELEZŐ, mert Addison-betegen az endogén kortizol-fokozás-képesség hiányzik (acut adrenalis krízis halálos lehet). Az ATA 2016 (Bornstein 2016 JCEM PMID 26760044) guideline ad standardizált stressz-dózis ajánlásokat.",
   "mechanism": "Glükokortikoid receptor (GR) agonista. Anti-gyulladás, immunmoduláció, glükoneogenezis-stimuláció, fehérje-katabolizmus, ozmotikus-egyensúly fenntartása (mineralokortikoid is enyhe).",
   "legalStatus": "EU/HU: vényköteles (Hydrocortison, Cortef, Plenadren — modified-release brand). USA: FDA Rx.",
+  "bioavailability": "~96% (orális tabletta — FDA Cortef label; topikális vs orális forma eltérő)",
   "onsetTime": "30-60 min (oral), seconds-minutes (IV in adrenal crisis)",
   "halfLife": "~1.5 h (plasma), biological 8-12 h",
   "atcCode": "H02AB09",
