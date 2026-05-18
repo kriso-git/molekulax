@@ -335,6 +335,19 @@ export default function LibraryGallery({
   }
   requestAnimationFrame(() => {
    requestAnimationFrame(() => {
+    // Pre-snap: instant scroll a library section tetejére, hogy a smooth-scroll
+    // NE a teljes oldal-tetejéről (Hero/Education-en át) menjen le, hanem a
+    // library section start-jától. Fresh mount post-closeDetail-en a böngésző
+    // top:0-ra rakja a scroll-t → 900ms-ig aggressive full-page scroll volna.
+    // A library section start point a #library-id-jű elem getBoundingClientRect-je.
+    const librarySection = document.getElementById('library')
+    if (librarySection) {
+     const libraryTopY = librarySection.getBoundingClientRect().top + window.scrollY
+     // Csak akkor pre-snap-elj, ha a saved scrollY a library section ALATT van
+     // (normál eset: a user lefelé scroll-ozott a tile-okig). Egyébként a smooth
+     // scroll-let a természetes irányba menjen.
+     if (targetY > libraryTopY + 4) window.scrollTo(0, libraryTopY)
+    }
     const startY = window.scrollY
     const distance = targetY - startY
     if (Math.abs(distance) < 2) {

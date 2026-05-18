@@ -95,15 +95,17 @@ export default function LibraryCube() {
   }, [])
 
   // Hash-scroll-restore: ha a hash #library-re vált (pl. EntryDetail bezárás),
-  // ide scrollolunk. (Korábban a LibraryGallery-ben volt — átkerült ide a
-  // section refactor miatt.)
+  // ide scrollolunk. SKIP ha pending restore van — a LibraryGallery restore
+  // consumer kezeli a teljes scroll-átmenetet (instant jump library top + smooth
+  // scroll a saved scrollY-ig). Dupla smooth-scroll race-elne és "aggressive
+  // home jump"-szerű érzést okozna.
   useEffect(() => {
     const scrollIfLibrary = () => {
-      if (window.location.hash === '#library' && sectionRef.current) {
-        requestAnimationFrame(() => {
-          sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        })
-      }
+      if (window.location.hash !== '#library' || !sectionRef.current) return
+      if (window.__libraryGalleryPendingRestore__) return
+      requestAnimationFrame(() => {
+        sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      })
     }
     scrollIfLibrary()
     window.addEventListener('hashchange', scrollIfLibrary)
