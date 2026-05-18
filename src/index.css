@@ -406,3 +406,25 @@
   50%       { transform: translateY(-10px) translateX(-14px); opacity: 0.35; }
   75%       { transform: translateY(-28px) translateX(5px);  opacity: 0.45; }
 }
+
+/* Task C state-restore: brief ring highlight on the tile the user came from.
+   Applied programmatically (LibraryGallery restore consumer) for 1.8s after
+   the smooth-scroll completes. The --tile-accent CSS var is set inline per
+   tile from peptide.accentColor, so each entry highlights in its own accent. */
+.peptide-tile--restored {
+  position: relative;
+}
+.peptide-tile--restored::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 1rem;
+  border: 1px solid var(--tile-accent, #818cf8);
+  pointer-events: none;
+  animation: tile-restored-ring 1.8s ease-out forwards;
+}
+@keyframes tile-restored-ring {
+  0%   { opacity: 0; box-shadow: 0 0 0 0 var(--tile-accent, #818cf8); }
+  20%  { opacity: 1; box-shadow: 0 0 18px -4px var(--tile-accent, #818cf8); }
+  100% { opacity: 0; box-shadow: 0 0 0 0 var(--tile-accent, #818cf8); }
+}

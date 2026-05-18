@@ -33,8 +33,10 @@ function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  return (
  <button
  onClick={() => onSelect(peptide)}
+ data-entry-id={peptide.id}
  className="group peptide-tile relative flex flex-col gap-4 p-5 rounded-2xl text-left cursor-pointer"
  style={{
+ '--tile-accent': accent,
  border: '1px solid var(--tint-soft-border)',
  background: 'var(--tint-soft)',
  // Gradient lighting + subtle 3D, the inset highlight gives a "lit
@@ -318,13 +320,26 @@ export default function LibraryGallery({
   // scroll with explicit duration. Native `behavior: 'smooth'` is ~300-500ms
   // depending on browser; this 900ms easeInOutCubic feels deliberate rather
   // than abrupt when restoring a deep mid-list position.
+  //
+  // After the scroll completes, briefly highlight the tile that was clicked
+  // so the user sees exactly where they came from (data-entry-id selector +
+  // .peptide-tile--restored CSS class triggers a 1.8s accent-color ring fade).
   const targetY = pending.scrollY || 0
+  const highlightTile = () => {
+   if (!pending.entryId) return
+   const tiles = document.querySelectorAll(`[data-entry-id="${pending.entryId}"]`)
+   tiles.forEach((t) => {
+    t.classList.add('peptide-tile--restored')
+    setTimeout(() => t.classList.remove('peptide-tile--restored'), 1800)
+   })
+  }
   requestAnimationFrame(() => {
    requestAnimationFrame(() => {
     const startY = window.scrollY
     const distance = targetY - startY
     if (Math.abs(distance) < 2) {
      window.scrollTo(0, targetY)
+     highlightTile()
      return
     }
     const duration = 900
@@ -335,6 +350,7 @@ export default function LibraryGallery({
      const progress = Math.min(elapsed / duration, 1)
      window.scrollTo(0, startY + distance * easeInOutCubic(progress))
      if (progress < 1) requestAnimationFrame(step)
+     else highlightTile()
     }
     requestAnimationFrame(step)
    })
@@ -375,6 +391,7 @@ export default function LibraryGallery({
     token: Date.now(),
     scrollY: window.scrollY,
     libraryId: library.id,
+    entryId: entry.id,
     query: stateRef.current.query || '',
     activeFilters: stateRef.current.activeFilters || [],
     levelFilters: stateRef.current.levelFilters || [],
