@@ -2,7 +2,9 @@
 // the page (NOT pinned to the viewport). Sits inside .page-root via
 // position:absolute so it scrolls away with the Hero — the user wanted it
 // "just placed nicely at the top under the moving label", not following the
-// scroll. Localised label via useLang().
+// scroll. Uses the site's indigo/purple UI palette (#818cf8 / #6366f1),
+// matching ThemeSwitcher + LanguageSwitcher + Hero's pulsing dot. Chemical
+// green is reserved for actual chemistry content (molecule placeholders).
 
 import { Tag } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
@@ -14,6 +16,7 @@ const COPY = {
 }
 
 const HREF = 'https://pctzone.su/?coupon=molekulax'
+const INDIGO = '#818cf8'
 
 export default function AffiliateButton() {
   const { lang } = useLang()
@@ -25,17 +28,15 @@ export default function AffiliateButton() {
       target="_blank"
       rel="noopener noreferrer sponsored"
       aria-label={`${copy.title} — ${copy.sub}`}
-      className="hidden md:inline-flex group items-center gap-2.5 pl-2.5 pr-3.5 py-2 rounded-full backdrop-blur-md transition-all duration-200 hover:-translate-y-px hover:shadow-[0_8px_24px_-8px_rgba(0,255,153,0.45)]"
+      className="hidden md:inline-flex group items-center gap-2.5 pl-2.5 pr-3.5 py-2 rounded-full backdrop-blur-md transition-all duration-200 hover:-translate-y-px hover:shadow-[0_8px_24px_-8px_rgba(129,140,248,0.45)]"
       style={{
-        // top:60 clears the Hero's horizontal ticker bar (top-0 + py-2.5 + ~14px text)
-        // so the pill sits cleanly UNDER it on the page, not overlapping.
         position: 'absolute',
         top: 60,
         left: 12,
         zIndex: 30,
-        background: 'linear-gradient(135deg, rgba(0,255,153,0.10), rgba(99,102,241,0.06))',
-        border: '1px solid rgba(0,255,153,0.35)',
-        boxShadow: '0 0 12px rgba(0,255,153,0.18), inset 0 0 8px rgba(0,255,153,0.06)',
+        background: 'linear-gradient(135deg, rgba(129,140,248,0.10), rgba(99,102,241,0.06))',
+        border: '1px solid rgba(129,140,248,0.35)',
+        boxShadow: '0 0 12px rgba(129,140,248,0.18), inset 0 0 8px rgba(129,140,248,0.06)',
       }}
     >
       <span
@@ -44,10 +45,10 @@ export default function AffiliateButton() {
         style={{
           width: 26,
           height: 26,
-          background: 'rgba(0,255,153,0.18)',
-          border: '1px solid rgba(0,255,153,0.55)',
-          color: '#00ff99',
-          boxShadow: '0 0 8px rgba(0,255,153,0.5)',
+          background: 'rgba(129,140,248,0.18)',
+          border: '1px solid rgba(129,140,248,0.55)',
+          color: INDIGO,
+          boxShadow: '0 0 8px rgba(129,140,248,0.5)',
         }}
       >
         <Tag size={13} strokeWidth={2.5} />
@@ -55,7 +56,7 @@ export default function AffiliateButton() {
       <span className="flex flex-col leading-tight text-left">
         <span
           className="text-[11px] font-bold tracking-[0.18em] uppercase"
-          style={{ color: '#00ff99', textShadow: '0 0 6px rgba(0,255,153,0.5)' }}
+          style={{ color: INDIGO, textShadow: '0 0 6px rgba(129,140,248,0.5)' }}
         >
           {copy.title}
         </span>

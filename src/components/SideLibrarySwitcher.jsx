@@ -17,7 +17,11 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLibrary } from '../context/LibraryContext'
 import { useLang } from '../i18n/LanguageContext'
 
-const CHEMICAL_GREEN = '#00ff99'
+// The pills are part of the site's UI chrome (nav), so they follow the
+// indigo/purple palette used by ThemeSwitcher, LanguageSwitcher, Hero
+// pulsing dot, etc. Chemical green stays reserved for actual chemistry
+// content (molecule placeholders).
+const INDIGO = '#818cf8'
 const SWITCH_COOLDOWN_MS = 750 // matches LibraryCube rotation spring duration
 
 // "Currently active library" caption — localised so the pill follows the
@@ -70,7 +74,7 @@ function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, on
   const isLeft = direction === 'prev'
   const Chevron = isLeft ? ChevronLeft : ChevronRight
   const columns = splitColumns(trimLabel(libLabel))
-  const accent = CHEMICAL_GREEN
+  const accent = INDIGO
 
   const handleClick = () => {
     if (disabled) return
