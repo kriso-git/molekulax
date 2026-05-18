@@ -1,0 +1,57 @@
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:10:34.093Z
+// Edit this file directly to update the PL body; do not re-run the script.
+
+export default {
+  "id": "kpv",
+  "name": "KPV",
+  "image": null,
+  "accentColor": "#86efac",
+  "tagColor": "rgba(134,239,172,0.16)",
+  "tagText": "#86efac",
+  "defaultVialMg": 5,
+  "defaultBacMl": 2,
+  "defaultDoseMcg": 500,
+  "shortDesc": "Tripeptyd końca α-MSH, działanie przeciwzapalne",
+  "description": "KPV (Lys-Pro-Val) to C-końcowy tripeptyd α-MSH; działa przeciwzapalnie w modelach IBD i skóry przez hamowanie NF-κB.",
+  "keyInfo": [
+    {
+      "label": "Typ",
+      "value": "Fragment α-MSH"
+    },
+    {
+      "label": "Struktura",
+      "value": "Lys-Pro-Val"
+    },
+    {
+      "label": "Status",
+      "value": "Badawczy"
+    },
+    {
+      "label": "Podanie",
+      "value": "SC lub doustnie"
+    },
+    {
+      "label": "Przechowywanie",
+      "value": "2–8°C"
+    },
+    {
+      "label": "Źródło",
+      "value": "Placeholder, obraz później"
+    }
+  ],
+  "dosageInfo": "Badania: 200–500 µg SC lub doustnie dziennie, 4–8 tygodni.",
+  "studies": [
+    {
+      "tag": "Badania",
+      "tagColor": "rgba(134,239,172,0.16)",
+      "tagText": "#86efac",
+      "title": "KPV reduces inflammation in models of colitis and skin disease",
+      "authors": "Brzoska T, Luger TA, Maaser C, et al.",
+      "journal": "Endocr Rev",
+      "year": "2008",
+      "pmid": "18483147",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18483147/",
+      "finding": "KPV obniża cytokiny zapalne i nasilenie objawów w modelach IBD i chorób skóry."
+    }
+  ]
+}

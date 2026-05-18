@@ -1,0 +1,57 @@
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:10:34.078Z
+// Edit this file directly to update the EN body; do not re-run the script.
+
+export default {
+  "id": "oxytocin",
+  "name": "Oxytocin",
+  "image": null,
+  "accentColor": "#fda4af",
+  "tagColor": "rgba(253,164,175,0.16)",
+  "tagText": "#fda4af",
+  "defaultVialMg": 0.01,
+  "defaultBacMl": 1,
+  "defaultDoseMcg": 10,
+  "shortDesc": "9-aa neuropeptide, social bonding and labour",
+  "description": "Oxytocin (Pitocin) is a 9-aa neuropeptide clinically used for uterine stimulation and lactation support; intranasal use is studied for social behaviour and psychiatric indications.",
+  "keyInfo": [
+    {
+      "label": "Type",
+      "value": "Nonapeptide"
+    },
+    {
+      "label": "Structure",
+      "value": "CYIQNCPLG-NH₂ (S-S)"
+    },
+    {
+      "label": "Status",
+      "value": "FDA approved (IV)"
+    },
+    {
+      "label": "Route",
+      "value": "IV, IN"
+    },
+    {
+      "label": "Storage",
+      "value": "2–8°C"
+    },
+    {
+      "label": "Source",
+      "value": "Placeholder, image later"
+    }
+  ],
+  "dosageInfo": "Research IN: 24–40 IU for social/psychiatric indications.",
+  "studies": [
+    {
+      "tag": "Research",
+      "tagColor": "rgba(253,164,175,0.16)",
+      "tagText": "#fda4af",
+      "title": "Intranasal oxytocin: neural and behavioural effects",
+      "authors": "Quintana DS, Smerud KT, Andreassen OA, et al.",
+      "journal": "Mol Psychiatry",
+      "year": "2018",
+      "pmid": "28925369",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28925369/",
+      "finding": "Intranasal oxytocin modulates social cognition and emotional processing."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:10:34.063Z
+// Edit this file directly to update the HU body; do not re-run the script.
+
+export default {
+  "id": "5-amino-1mq",
+  "name": "5-Amino-1MQ",
+  "image": null,
+  "accentColor": "#fef08a",
+  "tagColor": "rgba(254,240,138,0.16)",
+  "tagText": "#fef08a",
+  "defaultVialMg": 0,
+  "defaultBacMl": 0,
+  "defaultDoseMcg": 150000,
+  "shortDesc": "NNMT inhibitor, anyagcsere-fokozó kismolekula",
+  "description": "Az 5-Amino-1MQ kis molekulasúlyú nicotinamide-N-methyltransferase (NNMT) inhibitor; preklinikai obesitás-modellben csökkenti a zsírszövetet és javítja az inzulinérzékenységet.",
+  "keyInfo": [
+    {
+      "label": "Típus",
+      "value": "NNMT inhibitor (non-peptid)"
+    },
+    {
+      "label": "Státusz",
+      "value": "Preklinikai"
+    },
+    {
+      "label": "Beadás",
+      "value": "Orális"
+    },
+    {
+      "label": "Tárolás",
+      "value": "2–8°C"
+    },
+    {
+      "label": "Forrás",
+      "value": "Placeholder, kép később"
+    }
+  ],
+  "dosageInfo": "Kutatási (humán): 50–150 mg orálisan naponta. Hosszú távú humán biztonság nincs.",
+  "studies": [
+    {
+      "tag": "Kutatás",
+      "tagColor": "rgba(254,240,138,0.16)",
+      "tagText": "#fef08a",
+      "title": "5-Amino-1MQ inhibits NNMT and reduces obesity in mice",
+      "authors": "Neelakantan H, Vance V, Wetzel MD, et al.",
+      "journal": "Biochem Pharmacol",
+      "year": "2018",
+      "pmid": "29355504",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29355504/",
+      "finding": "A 5-Amino-1MQ NNMT-gátlás révén csökkenti a fehér zsírszövetet és javítja az anyagcserét egerekben."
+    }
+  ]
+}

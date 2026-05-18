@@ -1,0 +1,57 @@
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:10:34.074Z
+// Edit this file directly to update the EN body; do not re-run the script.
+
+export default {
+  "id": "hexarelin",
+  "name": "Hexarelin",
+  "image": null,
+  "accentColor": "#ddd6fe",
+  "tagColor": "rgba(221,214,254,0.16)",
+  "tagText": "#ddd6fe",
+  "defaultVialMg": 2,
+  "defaultBacMl": 1,
+  "defaultDoseMcg": 100,
+  "shortDesc": "Potent GHRP, cardioprotection investigated",
+  "description": "Hexarelin is a 6-aa GHRP that, besides GHSR, may exert CD36-mediated cardioprotection in preclinical models.",
+  "keyInfo": [
+    {
+      "label": "Type",
+      "value": "GHRP"
+    },
+    {
+      "label": "Structure",
+      "value": "His-D-MeTrp-Ala-Trp-D-Phe-Lys-NH₂"
+    },
+    {
+      "label": "Status",
+      "value": "Research"
+    },
+    {
+      "label": "Route",
+      "value": "SC"
+    },
+    {
+      "label": "Storage",
+      "value": "2–8°C"
+    },
+    {
+      "label": "Source",
+      "value": "Placeholder, image later"
+    }
+  ],
+  "dosageInfo": "Research: 100 µg SC, 1–2× daily.",
+  "studies": [
+    {
+      "tag": "Research",
+      "tagColor": "rgba(221,214,254,0.16)",
+      "tagText": "#ddd6fe",
+      "title": "Hexarelin cardioprotective effects via CD36",
+      "authors": "Bisi G, Podio V, Valetto MR, et al.",
+      "journal": "Cardiovasc Drugs Ther",
+      "year": "1999",
+      "pmid": "10516862",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10516862/",
+      "finding": "Hexarelin shows cardioprotective effects in ischaemia models, partially GH-independent."
+    }
+  ]
+}
