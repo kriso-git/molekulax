@@ -797,16 +797,16 @@ function Constellation({ steps, accent, tr }) {
 }
 
 // ─── Vial Holosphere, center hero element ─────────────────────────
-function Holosphere({ image, name, accent, tierColor, isLight, library, chemicalFormula }) {
+function Holosphere({ image, name, accent, tierColor, isLight, library, chemicalFormula, entryId }) {
  const useFormula =
  !image &&
  library?.features?.chemicalFormulaPlaceholder &&
- (chemicalFormula || name)
+ (entryId || chemicalFormula || name)
 
  if (useFormula) {
  return (
  <div className="relative w-full aspect-square max-w-[420px] mx-auto">
- <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} className="w-full h-full" />
+ <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} entryId={entryId} className="w-full h-full" />
  </div>
  )
  }
@@ -1388,7 +1388,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
  {/* Holosphere */}
  <div className="order-1 lg:order-2 flex items-center justify-center">
- <Holosphere image={peptide.image} name={peptide.name} accent={accent} tierColor={tierColor} isLight={isLight} library={library} chemicalFormula={peptide.chemicalFormula} />
+ <Holosphere image={peptide.image} name={peptide.name} accent={accent} tierColor={tierColor} isLight={isLight} library={library} chemicalFormula={peptide.chemicalFormula} entryId={peptide.id} />
  </div>
  </section>
 

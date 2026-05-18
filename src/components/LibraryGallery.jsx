@@ -109,6 +109,7 @@ function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  accentColor={accent}
  name={peptide.name}
  uid={peptide.id}
+ entryId={peptide.id}
  image={peptide.image}
  library={library}
  chemicalFormula={peptide.chemicalFormula}

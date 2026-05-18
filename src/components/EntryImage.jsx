@@ -110,15 +110,15 @@ function VialFallback({ accentColor, name, uid }) {
   )
 }
 
-export default function EntryImage({ accentColor = '#818cf8', name = '', uid = 'v', image, library, chemicalFormula }) {
+export default function EntryImage({ accentColor = '#818cf8', name = '', uid = 'v', image, library, chemicalFormula, entryId }) {
   if (image) {
     return <PhotoFrame accentColor={accentColor} image={image} name={name} />
   }
-  // ChemicalFormulaPlaceholder handles both real formulas AND 'mixture' entries —
-  // for mixtures it falls back to a neon name display so the whole gallery has
-  // a single visual language (no leftover vial-SVG fallback for nootropics).
-  if (library?.features?.chemicalFormulaPlaceholder && (chemicalFormula || name)) {
-    return <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} />
+  // ChemicalFormulaPlaceholder handles structural images (PubChem-derived neon
+  // PNGs under /molecules/<entryId>.png) with a text-formula fallback, and a
+  // name display for mixtures — single visual language across the gallery.
+  if (library?.features?.chemicalFormulaPlaceholder && (entryId || chemicalFormula || name)) {
+    return <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} entryId={entryId} />
   }
   // Peptide vial is the remaining fallback. Performance + pharmaceutical
   // entries always have an image; if any slip through without one, fall through here.

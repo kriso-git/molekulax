@@ -1,11 +1,17 @@
-// Phase 10 — Doto neon chemical-formula placeholder.
+// Phase 10 — Doto neon chemical-structure placeholder.
 // Renders when nootropic library is active and entry has no image.
-// Parses ASCII formula (e.g. "C15H15NO2S") into atom-blocks with HTML <sub>.
-// For 'mixture' entries (peptide cocktails, plant extracts: Cerebrolysin,
-// Cortexin, Lion's Mane) it falls back to a neon name display with the same
-// HUD framing — so the gallery has a single consistent visual language.
+//
+// Render priority:
+//   1. If /molecules/<entryId>.png exists → visualised 2D structure (PubChem,
+//      post-processed to neon green on transparent). Highest fidelity.
+//   2. Else if `formula` is a parseable ASCII formula → Doto text formula
+//      with HTML subscripts (legacy fallback for entries without an image).
+//   3. Else if `name` is provided → neon name display (mixtures, plant
+//      extracts: Cerebrolysin, Cortexin, Lion's Mane, peptide cocktails).
+//
+// All three modes share the same HUD shell so the gallery reads consistently.
 
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 
 const CHEMICAL_GREEN = '#00ff99'
 
@@ -39,13 +45,8 @@ function pickSize(charCount) {
 }
 
 function splitToTwoRows(blocks) {
-  // Split into 2 rows when the formula renders wider than fits a tile cleanly.
-  // We split by char-count (not block-count) so 4-block formulas with multi-digit
-  // subscripts like C17H22N2O4 (10 chars) also break — otherwise they overflow
-  // the corner-bracket frame at narrow tile widths.
   const totalChars = blocks.reduce((sum, b) => sum + b.symbol.length + b.count.length, 0)
   if (blocks.length <= 2 || totalChars <= 8) return [blocks]
-  // Find a split point that balances char-counts between the two rows.
   let bestIdx = Math.ceil(blocks.length / 2)
   let bestDiff = Infinity
   for (let i = 1; i < blocks.length; i++) {
@@ -60,14 +61,11 @@ function splitToTwoRows(blocks) {
   return [blocks.slice(0, bestIdx), blocks.slice(bestIdx)]
 }
 
-// Break a substance name into 1-2 lines for the name-fallback layout.
-// Prefer a hyphen/space split near the middle; otherwise stay on one line.
 function splitName(name) {
   const trimmed = (name || '').trim()
   if (!trimmed) return ['', '']
   if (trimmed.length <= 8) return [trimmed]
   const breakChars = [' ', '-', '–', "'", '`']
-  // Find a break point closest to the middle.
   const mid = Math.floor(trimmed.length / 2)
   let bestIdx = -1
   let bestDist = Infinity
@@ -108,17 +106,12 @@ function Corner({ pos }) {
   )
 }
 
-// Shared shell — corner brackets, scanlines, radial glow, dotted-grid that
-// echoes MoleculeBackground so the placeholder reads as "part of the page".
 function PlaceholderShell({ children, ariaLabel, className }) {
   return (
     <div
       className={`cfp-root relative w-full h-full overflow-hidden rounded-2xl flex items-center justify-center ${className}`}
       style={{
         containerType: 'inline-size',
-        // Site-vibe background: theme-aware base + dotted molecular grid +
-        // soft chemical-green radial vignette. Reads as the page's own
-        // canvas rather than a separate black box.
         background:
           'radial-gradient(rgba(0,255,153,0.08) 1px, transparent 1.4px) 0 0 / 14px 14px, ' +
           'radial-gradient(circle at 50% 50%, rgba(0,255,153,0.10) 0%, transparent 65%), ' +
@@ -130,7 +123,6 @@ function PlaceholderShell({ children, ariaLabel, className }) {
       role="img"
       aria-label={ariaLabel}
     >
-      {/* Pulsing radial glow */}
       <span
         aria-hidden="true"
         className="cfp-pulse-glow-el absolute pointer-events-none"
@@ -141,7 +133,6 @@ function PlaceholderShell({ children, ariaLabel, className }) {
           animation: 'cfp-pulse-glow 3.5s ease-in-out infinite',
         }}
       />
-      {/* HUD corners */}
       <Corner pos="tl" />
       <Corner pos="tr" />
       <Corner pos="bl" />
@@ -168,18 +159,97 @@ function NeonText({ children, sizeClass, letterSpacing = '0.03em' }) {
   )
 }
 
-export default function ChemicalFormulaPlaceholder({ formula, name, className = '' }) {
-  const isMixture = !formula || formula === 'mixture'
+function MoleculeImage({ entryId, name }) {
+  // The image is already neon-green-on-transparent (preprocessed in
+  // scripts/download-molecule-images.mjs). We add a multi-layer drop-shadow
+  // glow + subtle pulse so it reads as a HUD readout rather than a flat icon.
+  return (
+    <img
+      src={`/molecules/${entryId}.png`}
+      alt={`${name} 2D structure`}
+      className="cfp-pulse-text-el relative z-10 w-[78%] h-[78%] object-contain pointer-events-none select-none"
+      style={{
+        filter:
+          'drop-shadow(0 0 6px rgba(0,255,153,0.85)) ' +
+          'drop-shadow(0 0 14px rgba(0,255,153,0.55)) ' +
+          'drop-shadow(0 0 28px rgba(0,255,153,0.30))',
+        animation: 'cfp-pulse-text 3.5s ease-in-out infinite',
+      }}
+      draggable="false"
+      loading="lazy"
+    />
+  )
+}
 
-  // ── Mixture fallback: show the substance name in the same neon HUD ──
-  if (isMixture) {
-    if (!name) return null
+export default function ChemicalFormulaPlaceholder({ formula, name, entryId, className = '' }) {
+  const [imgFailed, setImgFailed] = useState(false)
+  const hasImage = !!entryId && !imgFailed
+
+  // Always compute parsed-formula data for the text fallback (cheap, memo'd).
+  const { rows, sizeClass } = useMemo(() => {
+    if (!formula || formula === 'mixture') return { rows: [], sizeClass: SIZE_LARGE }
+    const parsed = parseFormula(formula)
+    const allBlocks = parsed.flat()
+    const charCount = allBlocks.reduce((sum, b) => sum + b.symbol.length + b.count.length, 0)
+    const sc = pickSize(charCount)
+    const rs = parsed.length > 1 ? parsed : splitToTwoRows(parsed[0] || [])
+    return { rows: rs, sizeClass: sc }
+  }, [formula])
+
+  // ── 1. Structural image (preferred) ──────────────────────────────
+  if (hasImage) {
+    return (
+      <PlaceholderShell ariaLabel={`${name || entryId} 2D structure`} className={className}>
+        <img
+          src={`/molecules/${entryId}.png`}
+          alt={`${name || entryId} 2D structure`}
+          className="cfp-pulse-text-el relative z-10 w-[78%] h-[78%] object-contain pointer-events-none select-none"
+          style={{
+            filter:
+              'drop-shadow(0 0 6px rgba(0,255,153,0.85)) ' +
+              'drop-shadow(0 0 14px rgba(0,255,153,0.55)) ' +
+              'drop-shadow(0 0 28px rgba(0,255,153,0.30))',
+            animation: 'cfp-pulse-text 3.5s ease-in-out infinite',
+          }}
+          draggable="false"
+          loading="lazy"
+          onError={() => setImgFailed(true)}
+        />
+      </PlaceholderShell>
+    )
+  }
+
+  // ── 2. Text formula fallback ─────────────────────────────────────
+  if (formula && formula !== 'mixture') {
+    return (
+      <PlaceholderShell
+        ariaLabel={`Chemical formula ${Array.isArray(formula) ? formula.join(' ') : formula}`}
+        className={className}
+      >
+        <NeonText sizeClass={sizeClass}>
+          {rows.map((row, i) => (
+            <span key={i} className="whitespace-nowrap">
+              {row.map((block, j) => (
+                <span key={j}>
+                  {block.symbol}
+                  {block.count && <sub className="text-[0.7em] align-[-0.15em]">{block.count}</sub>}
+                </span>
+              ))}
+            </span>
+          ))}
+        </NeonText>
+      </PlaceholderShell>
+    )
+  }
+
+  // ── 3. Name fallback (mixtures, plant extracts, peptide cocktails) ──
+  if (name) {
     const nameLines = splitName(name)
     const longest = nameLines.reduce((m, l) => Math.max(m, l.length), 0)
-    const sizeClass = longest <= 9 ? NAME_SIZE_LARGE : NAME_SIZE_MEDIUM
+    const nameSize = longest <= 9 ? NAME_SIZE_LARGE : NAME_SIZE_MEDIUM
     return (
-      <PlaceholderShell ariaLabel={`${name} (mixture)`} className={className}>
-        <NeonText sizeClass={sizeClass} letterSpacing="0.05em">
+      <PlaceholderShell ariaLabel={`${name}`} className={className}>
+        <NeonText sizeClass={nameSize} letterSpacing="0.05em">
           {nameLines.map((line, i) => (
             <span key={i} className="whitespace-nowrap uppercase">{line}</span>
           ))}
@@ -188,34 +258,5 @@ export default function ChemicalFormulaPlaceholder({ formula, name, className = 
     )
   }
 
-  const { rows, sizeClass } = useMemo(() => {
-    const parsed = parseFormula(formula)
-    const allBlocks = parsed.flat()
-    // Count actual visible chars (symbol + subscript-digits) so that long
-    // 4-block formulas like C17H22N2O4 (10 chars) shrink instead of overflowing.
-    const charCount = allBlocks.reduce((sum, b) => sum + b.symbol.length + b.count.length, 0)
-    const sizeClass = pickSize(charCount)
-    const rows = parsed.length > 1 ? parsed : splitToTwoRows(parsed[0] || [])
-    return { rows, sizeClass }
-  }, [formula])
-
-  return (
-    <PlaceholderShell
-      ariaLabel={`Chemical formula ${Array.isArray(formula) ? formula.join(' ') : formula}`}
-      className={className}
-    >
-      <NeonText sizeClass={sizeClass}>
-        {rows.map((row, i) => (
-          <span key={i} className="whitespace-nowrap">
-            {row.map((block, j) => (
-              <span key={j}>
-                {block.symbol}
-                {block.count && <sub className="text-[0.7em] align-[-0.15em]">{block.count}</sub>}
-              </span>
-            ))}
-          </span>
-        ))}
-      </NeonText>
-    </PlaceholderShell>
-  )
+  return null
 }
