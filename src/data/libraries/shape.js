@@ -105,6 +105,11 @@
  * @property {I18nString[]}  [commonSideEffects]    Gyakori mellékhatások listája.
  * @property {string[]}      [cyp450]               ['CYP3A4 substrate', 'CYP2D6 inhibitor'].
  * @property {I18nString[]}  [crossMolInteractions] Gyógyszer-interakciók i18n szövegei.
+ *
+ * Task A (post-roadmap 2026-05-18) — Lab Terminal data refresh fields (optional):
+ * @property {I18nString}    [bioavailability]   Pharma-only — oralis/sc/im biológiai hasznosulás % vagy F-érték rövid leírással.
+ * @property {I18nString}    [aromatization]    Performance-only — aromatázon át ösztrogénné konverzió szintje vagy útja.
+ * @property {I18nString}    [hepatotoxicity]   Performance-only — DILI/hepatotoxikus profil rövid leírás. Tier-szerű kategorizálás opcionális.
  */
 
 /**

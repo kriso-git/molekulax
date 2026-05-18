@@ -217,8 +217,8 @@ function deriveKeyBenefits(peptide, library) {
  .filter(Boolean)
 }
 
-// Molecular information, extracted from keyInfo + derived defaults.
-function deriveMolecular(peptide) {
+// Peptide library molecular row-set — keyInfo label-based extraction.
+function derivePeptideMolecular(peptide) {
  const type = findFactByLabel(peptide.keyInfo, ['típus', 'type', 'typ'])
  const structure = findFactByLabel(peptide.keyInfo, ['szerkezet', 'structure', 'struktura'])
  const mw = findFactByLabel(peptide.keyInfo, ['molekulatömeg', 'molecular weight', 'masa cząsteczkowa', 'mw'])
@@ -233,6 +233,83 @@ function deriveMolecular(peptide) {
  { key: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' }, value: storage?.value || { hu: '2–8°C', en: '2–8°C', pl: '2–8°C' } },
  { key: { hu: 'Stabilitás', en: 'Stability', pl: 'Stabilność' }, value: stability?.value || { hu: '~30 nap rekonstituálva', en: '~30 days reconstituted', pl: '~30 dni po rozpuszczeniu' } },
  ]
+}
+
+// Pharmaceutical library molecular row-set. Reads top-level fields populated
+// by per-entry data files. Missing fields render as '-' / 'N/A' until A.2 fills
+// the bioavailability column for all 40 pharma entries × 3 lang.
+function derivePharmaMolecular(peptide) {
+ const truncate = (s, n = 60) => {
+ if (!s) return null
+ if (typeof s === 'string') return s.length > n ? s.slice(0, n - 1) + '…' : s
+ // I18n object: truncate each language independently
+ if (typeof s === 'object') {
+ const out = {}
+ for (const k of ['hu', 'en', 'pl']) {
+ const v = s[k]
+ if (typeof v === 'string') out[k] = v.length > n ? v.slice(0, n - 1) + '…' : v
+ else out[k] = '-'
+ }
+ return out
+ }
+ return null
+ }
+ return [
+ { key: { hu: 'ATC kód', en: 'ATC code', pl: 'Kod ATC' },
+ value: peptide.atcCode || { hu: '-', en: '-', pl: '-' } },
+ { key: { hu: 'Vény-státusz', en: 'Prescription', pl: 'Recepta' },
+ value: peptide.prescriptionStatus || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+ { key: { hu: 'Hatásmechanizmus', en: 'Mechanism', pl: 'Mechanizm' },
+ value: truncate(peptide.mechanism) || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+ { key: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' },
+ value: peptide.halfLife || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+ { key: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Początek działania' },
+ value: peptide.onsetTime || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+ { key: { hu: 'Biológiai hasznosulás', en: 'Bioavailability', pl: 'Biodostępność' },
+ value: peptide.bioavailability || { hu: '-', en: '-', pl: '-' } },
+ ]
+}
+
+// Performance library molecular row-set. Reads top-level fields. aromatization +
+// hepatotoxicity will be filled in A.3 for all 17 perf entries × 3 lang.
+function derivePerfMolecular(peptide) {
+ const truncate = (s, n = 60) => {
+ if (!s) return null
+ if (typeof s === 'string') return s.length > n ? s.slice(0, n - 1) + '…' : s
+ if (typeof s === 'object') {
+ const out = {}
+ for (const k of ['hu', 'en', 'pl']) {
+ const v = s[k]
+ if (typeof v === 'string') out[k] = v.length > n ? v.slice(0, n - 1) + '…' : v
+ else out[k] = '-'
+ }
+ return out
+ }
+ return null
+ }
+ return [
+ { key: { hu: 'Androgenic:Anabolic', en: 'Androgenic:Anabolic', pl: 'Androgenny:Anaboliczny' },
+ value: peptide.androgenicRatio || { hu: '-', en: '-', pl: '-' } },
+ { key: { hu: 'AR-affinitás', en: 'AR binding', pl: 'Powinowactwo AR' },
+ value: truncate(peptide.bindingAffinity) || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+ { key: { hu: 'Aktív felezési idő', en: 'Active half-life', pl: 'Aktywny okres półtrwania' },
+ value: peptide.halfLifeActive || peptide.halfLife || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+ { key: { hu: 'Detection window', en: 'Detection window', pl: 'Okno wykrywania' },
+ value: peptide.detectionWindow || { hu: 'N/A', en: 'N/A', pl: 'N/A' } },
+ { key: { hu: 'Aromatizáció', en: 'Aromatization', pl: 'Aromatyzacja' },
+ value: peptide.aromatization || { hu: '-', en: '-', pl: '-' } },
+ { key: { hu: 'Hepatotoxicitás', en: 'Hepatotoxicity', pl: 'Hepatotoksyczność' },
+ value: peptide.hepatotoxicity || { hu: '-', en: '-', pl: '-' } },
+ ]
+}
+
+// Library-aware dispatcher. Branches on library.id to return the correct
+// row-set. Falls back to peptide row-set for unknown libraries (peptides +
+// nootropics both keep the legacy keyInfo-based shape).
+function deriveMolecular(peptide, library) {
+ if (library?.id === 'pharmaceutical') return derivePharmaMolecular(peptide)
+ if (library?.id === 'performance') return derivePerfMolecular(peptide)
+ return derivePeptideMolecular(peptide)
 }
 
 // ─── v2-only derivations (won't affect v1) ────────────────────────────
@@ -910,7 +987,7 @@ export function adaptLibraryEntry(entry, library, lang) {
  whatIs: deriveWhatIs(peptide),
  mechanism: deriveMechanism(peptide),
  researchUses: deriveResearchUses(peptide, library),
- molecular: deriveMolecular(peptide),
+ molecular: deriveMolecular(peptide, library),
  dosing: deriveDosing(peptide),
  stacks: [],
  sideEffects: [],
@@ -938,6 +1015,13 @@ export function adaptLibraryEntry(entry, library, lang) {
  // ─── Phase 5 passthrough: structured bloodwork + per-entry dose helper ───
  bloodwork: peptide.bloodwork || null,
  doseCalc: peptide.doseCalc || null,
+ // ─── Task A.1 (post-roadmap) passthrough: lab data fields. derive*Molecular
+ //     reads from raw peptide, but UI sites (tooltips, comparisons) may want
+ //     direct access. See [[feedback_adapter_passthrough]]: every Entry field
+ //     consumed at the EntryDetail level must appear in this allowlist.
+ bioavailability: peptide.bioavailability || null,
+ aromatization: peptide.aromatization || null,
+ hepatotoxicity: peptide.hepatotoxicity || null,
  // ─── Phase 6 passthrough: pharmaceutical raw fields, nested under `pharma` to
  //     avoid clashing with the adapter-derived peptide `indications` rich shape.
  //     EntryDetail reads via `peptide.pharma?.atcCode` etc. when library.id === 'pharmaceutical'.
@@ -945,6 +1029,7 @@ export function adaptLibraryEntry(entry, library, lang) {
  pharma: library.id === 'pharmaceutical' ? {
  atcCode: peptide.atcCode || null,
  prescriptionStatus: peptide.prescriptionStatus || null,
+ bioavailability: peptide.bioavailability || null,
  indications: peptide.indications || null,
  contraindications: peptide.contraindications || null,
  commonSideEffects: peptide.commonSideEffects || null,

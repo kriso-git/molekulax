@@ -116,6 +116,40 @@ for (const libId of LIBRARIES) {
     }
   }
 
+  // Task A (post-roadmap 2026-05-18) — Lab Terminal data field presence check.
+  // Pharma needs bioavailability; perf needs aromatization + hepatotoxicity.
+  // SOFT_FAIL=true while A.2/A.3 rollout in progress (multi-batch fill).
+  // Flip to false at end of Task 14 (A.3 batched done) → hard-fail on missing.
+  const LAB_FIELD_SOFT_FAIL = true
+  const LAB_FIELD_CHECKS = {
+    pharmaceutical: ['bioavailability'],
+    performance: ['aromatization', 'hepatotoxicity'],
+  }
+  const labFields = LAB_FIELD_CHECKS[libId]
+  if (labFields && perLang) {
+    let softMissing = 0
+    for (const lang of ['hu', 'en', 'pl']) {
+      for (const id of metaIds) {
+        const entryPath = resolve(entriesDir, lang, `${id}.js`)
+        if (!existsSync(entryPath)) continue
+        const entryMod = await import(`file://${entryPath.replace(/\\/g, '/')}`)
+        const entry = entryMod.default
+        for (const field of labFields) {
+          const v = entry?.[field]
+          const present = typeof v === 'string' ? v.trim().length > 0 : !!v
+          if (!present) {
+            const msg = `[${libId}/${lang}] ${id} missing ${field}`
+            if (LAB_FIELD_SOFT_FAIL) { console.warn(`⚠️  WARN: ${msg}`); softMissing++ }
+            else { console.error(`❌ ERR: ${msg}`); errors++ }
+          }
+        }
+      }
+    }
+    if (LAB_FIELD_SOFT_FAIL && softMissing > 0) {
+      console.log(`  ↳ ${libId}: ${softMissing} lab-field warning(s) (soft-fail; A.2/A.3 in progress)`)
+    }
+  }
+
   console.log(`✅ ${libId}: ${meta.length} entries validated`)
 }
 
