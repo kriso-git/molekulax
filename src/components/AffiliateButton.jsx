@@ -27,8 +27,10 @@ export default function AffiliateButton() {
       aria-label={`${copy.title} — ${copy.sub}`}
       className="hidden md:inline-flex group items-center gap-2.5 pl-2.5 pr-3.5 py-2 rounded-full backdrop-blur-md transition-all duration-200 hover:-translate-y-px hover:shadow-[0_8px_24px_-8px_rgba(0,255,153,0.45)]"
       style={{
+        // top:60 clears the Hero's horizontal ticker bar (top-0 + py-2.5 + ~14px text)
+        // so the pill sits cleanly UNDER it on the page, not overlapping.
         position: 'absolute',
-        top: 12,
+        top: 60,
         left: 12,
         zIndex: 30,
         background: 'linear-gradient(135deg, rgba(0,255,153,0.10), rgba(99,102,241,0.06))',
