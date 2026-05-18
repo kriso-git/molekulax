@@ -31,30 +31,71 @@ for (const libId of LIBRARIES) {
     continue
   }
 
-  const fileIds = new Set(readdirSync(entriesDir).filter(f => f.endsWith('.js')).map(f => f.replace(/\.js$/, '')))
+  // Phase 12: per-lang layout — entries/{hu,en,pl}/<id>.js. We detect this
+  // by the presence of an entries/hu/ subdirectory. Older Phase 9 libraries
+  // keep the flat entries/<id>.js shape.
+  const perLang = existsSync(resolve(entriesDir, 'hu'))
   const metaIds = new Set(meta.map(m => m.id))
 
-  for (const id of metaIds) {
-    if (!fileIds.has(id)) {
-      console.error(`❌ ${libId}: meta references id "${id}" but entries/${id}.js does not exist`)
-      errors++
+  if (perLang) {
+    const langs = ['hu', 'en', 'pl']
+    for (const lang of langs) {
+      const langDir = resolve(entriesDir, lang)
+      if (!existsSync(langDir)) {
+        console.error(`❌ ${libId}: per-lang layout but ${lang}/ directory missing`)
+        errors++
+        continue
+      }
+      const fileIds = new Set(readdirSync(langDir).filter(f => f.endsWith('.js')).map(f => f.replace(/\.js$/, '')))
+      for (const id of metaIds) {
+        if (!fileIds.has(id)) {
+          console.error(`❌ ${libId}: meta references "${id}" but entries/${lang}/${id}.js missing`)
+          errors++
+        }
+      }
+      for (const id of fileIds) {
+        if (!metaIds.has(id)) {
+          console.error(`❌ ${libId}: entries/${lang}/${id}.js orphan (no meta record)`)
+          errors++
+        }
+      }
     }
-  }
-  for (const id of fileIds) {
-    if (!metaIds.has(id)) {
-      console.error(`❌ ${libId}: entries/${id}.js exists but no LIBRARY_ENTRY_META record`)
-      errors++
+    // Spot-check: load one entry per lang to ensure default exports work.
+    for (const lang of langs) {
+      const sampleId = meta[0]?.id
+      if (!sampleId) continue
+      const entryPath = resolve(entriesDir, lang, `${sampleId}.js`)
+      if (!existsSync(entryPath)) continue
+      const entryMod = await import(`file://${entryPath.replace(/\\/g, '/')}`)
+      const entry = entryMod.default
+      if (!entry || entry.id !== sampleId) {
+        console.error(`❌ ${libId}/entries/${lang}/${sampleId}.js: default export id "${entry?.id}" mismatch`)
+        errors++
+      }
     }
-  }
-
-  for (const id of metaIds) {
-    if (!fileIds.has(id)) continue
-    const entryPath = resolve(entriesDir, `${id}.js`)
-    const entryMod = await import(`file://${entryPath.replace(/\\/g, '/')}`)
-    const entry = entryMod.default
-    if (!entry || entry.id !== id) {
-      console.error(`❌ ${libId}/entries/${id}.js: default export id "${entry?.id}" does not match filename`)
-      errors++
+  } else {
+    const fileIds = new Set(readdirSync(entriesDir).filter(f => f.endsWith('.js')).map(f => f.replace(/\.js$/, '')))
+    for (const id of metaIds) {
+      if (!fileIds.has(id)) {
+        console.error(`❌ ${libId}: meta references id "${id}" but entries/${id}.js does not exist`)
+        errors++
+      }
+    }
+    for (const id of fileIds) {
+      if (!metaIds.has(id)) {
+        console.error(`❌ ${libId}: entries/${id}.js exists but no LIBRARY_ENTRY_META record`)
+        errors++
+      }
+    }
+    for (const id of metaIds) {
+      if (!fileIds.has(id)) continue
+      const entryPath = resolve(entriesDir, `${id}.js`)
+      const entryMod = await import(`file://${entryPath.replace(/\\/g, '/')}`)
+      const entry = entryMod.default
+      if (!entry || entry.id !== id) {
+        console.error(`❌ ${libId}/entries/${id}.js: default export id "${entry?.id}" does not match filename`)
+        errors++
+      }
     }
   }
 

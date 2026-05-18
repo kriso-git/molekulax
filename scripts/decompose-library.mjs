@@ -55,10 +55,42 @@ async function main() {
     process.exit(1)
   }
 
-  const entries = lib.entries
+  // Resolve entries — two shapes supported:
+  //   1. Pre-Phase 9: lib.entries is a populated array (monolithic data.js).
+  //   2. Phase 9+: lib.meta + per-entry files in entries/<id>.js. We load each
+  //      file via dynamic import and reconstruct the array.
+  let entries = lib.entries
   if (!Array.isArray(entries) || entries.length === 0) {
-    console.error(`No entries found on ${libKey}`)
-    process.exit(1)
+    if (Array.isArray(lib.meta) && lib.meta.length > 0) {
+      console.log(`ℹ️  Library ${libId} is Phase 9-decomposed (${lib.meta.length} entries). Loading from entries/<id>.js…`)
+      entries = []
+      for (const m of lib.meta) {
+        // Look in flat entries/<id>.js (Phase 9) first; fall back to
+        // entries/.bak/<id>.js so this script is idempotent when re-run on a
+        // library that was already migrated to per-lang.
+        let entryPath = resolve(libDir, 'entries', `${m.id}.js`)
+        if (!existsSync(entryPath)) {
+          const bakPath = resolve(libDir, 'entries', '.bak', `${m.id}.js`)
+          if (existsSync(bakPath)) {
+            entryPath = bakPath
+          } else {
+            console.error(`❌ Meta references ${m.id} but neither entries/${m.id}.js nor entries/.bak/${m.id}.js exists`)
+            process.exit(1)
+          }
+        }
+        const mod = await import(`file://${entryPath.replace(/\\/g, '/')}`)
+        const entry = mod.default
+        if (!entry || entry.id !== m.id) {
+          console.error(`❌ ${entryPath} default export does not match meta id`)
+          process.exit(1)
+        }
+        entries.push(entry)
+      }
+      console.log(`✅ Loaded ${entries.length} entries from disk`)
+    } else {
+      console.error(`No entries found on ${libKey} (no lib.entries and no lib.meta)`)
+      process.exit(1)
+    }
   }
 
   if (perLang) {
@@ -247,6 +279,7 @@ export const ${libKey} = {
   effectsTitle: ${JSON.stringify(lib.effectsTitle, null, 2)},
   effectsSubtitle: ${JSON.stringify(lib.effectsSubtitle, null, 2)},
   labels: ${JSON.stringify(lib.labels, null, 2)},
+  features: ${JSON.stringify(lib.features, null, 2)},
 }
 
 // Phase 12 per-lang: Vite template-literal-import emits one chunk per
