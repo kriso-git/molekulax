@@ -314,10 +314,29 @@ export default function LibraryGallery({
    setExpanded(true)
    setHasOpened(true)
   }
-  // Wait two paints for accordion expansion + filter render, then scroll.
+  // Wait two paints for accordion expansion + filter render, then animate
+  // scroll with explicit duration. Native `behavior: 'smooth'` is ~300-500ms
+  // depending on browser; this 900ms easeInOutCubic feels deliberate rather
+  // than abrupt when restoring a deep mid-list position.
+  const targetY = pending.scrollY || 0
   requestAnimationFrame(() => {
    requestAnimationFrame(() => {
-    window.scrollTo({ top: pending.scrollY || 0, behavior: 'smooth' })
+    const startY = window.scrollY
+    const distance = targetY - startY
+    if (Math.abs(distance) < 2) {
+     window.scrollTo(0, targetY)
+     return
+    }
+    const duration = 900
+    const startTime = performance.now()
+    const easeInOutCubic = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2)
+    const step = (now) => {
+     const elapsed = now - startTime
+     const progress = Math.min(elapsed / duration, 1)
+     window.scrollTo(0, startY + distance * easeInOutCubic(progress))
+     if (progress < 1) requestAnimationFrame(step)
+    }
+    requestAnimationFrame(step)
    })
   })
   delete window.__libraryGalleryPendingRestore__
