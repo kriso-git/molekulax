@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo, useEffect, useLayoutEffect } from 'react'
+import { memo, useState, useRef, useMemo, useEffect, useLayoutEffect, useCallback } from 'react'
 import { useLibrary } from '../context/LibraryContext'
 import { getLevelMeta, LEVEL_META, makeSortComparator } from '../data/libraries/shared/researchLevel'
 import { useLang } from '../i18n/LanguageContext'
@@ -21,7 +21,11 @@ import { RETURN_STATE_KEY } from './library/returnState'
 // Card lifts on hover via translateY; gradient lighting from accent colour
 // provides the soft 3D feel.
 
-function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
+// Memoized so a state change in the gallery (filter typing, sort flip,
+// accordion expand) doesn't re-render 60-70 tiles per face. The `lang` and
+// `library` props change rarely enough that the memo wins decisively during
+// search-input typing (was 60 re-renders per keystroke before).
+const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  // Nootropic entries render the neon ChemicalFormulaPlaceholder as their
  // intentional visual — either a real formula or a name fallback for mixtures.
  // Those aren't "placeholders" in the UX sense, so suppress the PLACEHOLDER chip.
@@ -194,7 +198,7 @@ function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  </div>
  </button>
  )
-}
+})
 
 // ── Sort segmented control ───────────────────────────────────────────────────
 function SortControl({ value, onChange, t }) {
@@ -408,7 +412,10 @@ export default function LibraryGallery({
  const clearFilters = () => { setActiveFilters([]); setLevelFilters([]) }
  const totalActive = activeFilters.length + levelFilters.length
 
- const openEntry = (entry) => {
+ // useCallback so PeptideTile (memoized) doesn't lose its memoization on
+ // every parent re-render (filter typing, sort flip). stateRef is mutable
+ // so the callback reads fresh state without changing identity.
+ const openEntry = useCallback((entry) => {
   if (typeof window === 'undefined') return
   try {
    const snapshot = {
@@ -427,7 +434,7 @@ export default function LibraryGallery({
    // sessionStorage full / disabled — silently skip, falls back to fresh landing
   }
   window.location.hash = `entry/${library.id}/${entry.id}`
- }
+ }, [library.id])
 
  return (
  <>

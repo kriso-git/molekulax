@@ -248,14 +248,21 @@ export default function SideLibrarySwitcher() {
 
   useEffect(() => {
     let cancelled = false
+    let observer = null
+    let mutationObserver = null
+    // rAF coalescing: scroll events fire every frame on fast wheels; without
+    // this guard, setVisible would re-run getBoundingClientRect 100+ times/sec
+    // during cube rotation, blocking the main thread.
+    let rafPending = false
+    let lastVisible = false
 
-    // Trigger: pills slide in when the user reaches the library section.
-    // The cube is lazy-loaded, so #library may not exist immediately — we
-    // poll for it for up to 6s, then fall back to a generic scroll-Y check
-    // (past one viewport height) so the pills appear even if the cube
-    // chunk never finishes loading.
-    const update = () => {
-      if (cancelled) return
+    const applyVisible = (next) => {
+      if (cancelled || next === lastVisible) return
+      lastVisible = next
+      setVisible(next)
+    }
+
+    const computeFromRect = () => {
       const target = document.getElementById('library')
       if (target) {
         const rect = target.getBoundingClientRect()
@@ -263,26 +270,74 @@ export default function SideLibrarySwitcher() {
         // i.e. the library section's top is at/above the viewport's upper
         // third. This pushes the slide-in lower than before (when threshold
         // was 0.7×vh and pills appeared on Hero/Education).
-        setVisible(rect.top < window.innerHeight * 0.35)
+        applyVisible(rect.top < window.innerHeight * 0.35)
       } else {
         // Fallback while cube chunk is still loading.
         const scrollY = window.scrollY || window.pageYOffset || 0
-        setVisible(scrollY > window.innerHeight * 1.4)
+        applyVisible(scrollY > window.innerHeight * 1.4)
       }
     }
 
-    // Initial poll loop — catches lazy-mounted #library.
-    const polls = setInterval(update, 200)
-    setTimeout(() => clearInterval(polls), 6000)
+    const scheduleUpdate = () => {
+      if (rafPending) return
+      rafPending = true
+      requestAnimationFrame(() => {
+        rafPending = false
+        computeFromRect()
+      })
+    }
 
-    update()
-    window.addEventListener('scroll', update, { passive: true })
-    window.addEventListener('resize', update)
+    // Prefer IntersectionObserver over polling+scroll-listener: it fires
+    // off the main thread and only when the threshold flips. We register
+    // either immediately (if #library is already in the DOM) or via a
+    // MutationObserver that watches for the lazy-mounted cube. The scroll
+    // listener stays as a safety net for the no-library-yet fallback path.
+    const attachIO = () => {
+      if (cancelled || observer) return false
+      const target = document.getElementById('library')
+      if (!target) return false
+      observer = new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0]
+          if (!entry) return
+          // "Visible" = the library section's top has crossed into the upper
+          // 65% of the viewport (matches the previous 0.35*vh threshold).
+          applyVisible(entry.boundingClientRect.top < window.innerHeight * 0.35)
+        },
+        { rootMargin: `-${Math.round(window.innerHeight * 0.35)}px 0px 0px 0px`, threshold: 0 }
+      )
+      observer.observe(target)
+      // Sync once on attach so the pills resolve their state without
+      // waiting for the first scroll event.
+      computeFromRect()
+      return true
+    }
+
+    if (!attachIO()) {
+      // Cube not mounted yet (React.lazy). Watch the page-root subtree for
+      // the #library section to appear, then swap in the IntersectionObserver.
+      mutationObserver = new MutationObserver(() => {
+        if (attachIO() && mutationObserver) {
+          mutationObserver.disconnect()
+          mutationObserver = null
+        }
+      })
+      mutationObserver.observe(document.body, { childList: true, subtree: true })
+    }
+
+    // Scroll handler — only the no-library-yet branch needs it (IO covers the
+    // active case). Cheap because applyVisible diff-guards setState, and we
+    // coalesce via rAF.
+    window.addEventListener('scroll', scheduleUpdate, { passive: true })
+    window.addEventListener('resize', scheduleUpdate)
+    computeFromRect()
+
     return () => {
       cancelled = true
-      clearInterval(polls)
-      window.removeEventListener('scroll', update)
-      window.removeEventListener('resize', update)
+      if (observer) observer.disconnect()
+      if (mutationObserver) mutationObserver.disconnect()
+      window.removeEventListener('scroll', scheduleUpdate)
+      window.removeEventListener('resize', scheduleUpdate)
     }
   }, [])
 

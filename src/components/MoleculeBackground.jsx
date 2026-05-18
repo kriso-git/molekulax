@@ -103,13 +103,20 @@ const FRAGS = [
 
 const PHASE_OFFSETS = FRAGS.map((_, i) => (i * Math.PI * 2) / FRAGS.length)
 
+// Target ~30fps for the background canvas. The animation is decorative
+// (idle DNA strands), 30fps is visually indistinguishable from 60fps for
+// such slow motion, and halves CPU/main-thread cost — critical headroom
+// for the 3D cube rotation and Framer Motion springs running concurrently.
+const TARGET_FPS = 30
+const FRAME_INTERVAL_MS = 1000 / TARGET_FPS
+
 export default function MoleculeBackground() {
   const canvasRef = useRef(null)
 
   useEffect(() => {
     const canvas = canvasRef.current
     if (!canvas) return
-    const ctx = canvas.getContext('2d')
+    const ctx = canvas.getContext('2d', { alpha: false })
 
     let W = 0, H = 0
     const setSize = () => {
@@ -119,7 +126,26 @@ export default function MoleculeBackground() {
     setSize()
     window.addEventListener('resize', setSize)
 
+    // Read the theme background once and refresh only on theme change instead
+    // of getComputedStyle() every frame (forces layout/style flush). The
+    // MutationObserver picks up the data-theme attribute flip on <html>.
+    let themeBg = (
+      getComputedStyle(document.documentElement)
+        .getPropertyValue('--bg-base').trim() || '#07071e'
+    )
+    const themeObserver = new MutationObserver(() => {
+      themeBg = (
+        getComputedStyle(document.documentElement)
+          .getPropertyValue('--bg-base').trim() || '#07071e'
+      )
+    })
+    themeObserver.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-theme'],
+    })
+
     let lastTs = null
+    let lastDrawTs = 0
     let rafId
 
     const draw = (ts) => {
@@ -128,12 +154,15 @@ export default function MoleculeBackground() {
       lastTs = ts
       _t += dt                         // advance the shared clock
 
-      ctx.clearRect(0, 0, W, H)
+      // Frame-skip: aim for ~30fps. We always advance `_t` so motion stays
+      // wall-clock consistent, we just don't repaint every rAF tick.
+      if (ts - lastDrawTs < FRAME_INTERVAL_MS) {
+        rafId = requestAnimationFrame(draw)
+        return
+      }
+      lastDrawTs = ts
 
-      const themeBg = (
-        getComputedStyle(document.documentElement)
-          .getPropertyValue('--bg-base').trim() || '#07071e'
-      )
+      ctx.clearRect(0, 0, W, H)
       ctx.fillStyle = themeBg
       ctx.fillRect(0, 0, W, H)
 
@@ -177,6 +206,7 @@ export default function MoleculeBackground() {
       cancelAnimationFrame(rafId)
       window.removeEventListener('resize', setSize)
       document.removeEventListener('visibilitychange', onVisibility)
+      themeObserver.disconnect()
     }
   }, [])
 

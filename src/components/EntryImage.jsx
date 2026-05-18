@@ -5,6 +5,7 @@
 //   - all others (including mixture entries that return null from CFP) → VialFallback
 // MoleculeFallback removed Phase 10.
 
+import { memo } from 'react'
 import ChemicalFormulaPlaceholder from './library/ChemicalFormulaPlaceholder'
 
 function PhotoFrame({ accentColor, image, name }) {
@@ -34,6 +35,7 @@ function PhotoFrame({ accentColor, image, name }) {
           alt={`${name}`}
           className="relative z-10 w-full h-full object-contain drop-shadow-[0_8px_18px_rgba(0,0,0,0.6)]"
           loading="lazy"
+          decoding="async"
           draggable="false"
         />
       </picture>
@@ -110,7 +112,7 @@ function VialFallback({ accentColor, name, uid }) {
   )
 }
 
-export default function EntryImage({ accentColor = '#818cf8', name = '', uid = 'v', image, library, chemicalFormula, entryId }) {
+function EntryImageInner({ accentColor = '#818cf8', name = '', uid = 'v', image, library, chemicalFormula, entryId }) {
   if (image) {
     return <PhotoFrame accentColor={accentColor} image={image} name={name} />
   }
@@ -124,3 +126,17 @@ export default function EntryImage({ accentColor = '#818cf8', name = '', uid = '
   // entries always have an image; if any slip through without one, fall through here.
   return <VialFallback accentColor={accentColor} name={name} uid={uid} />
 }
+
+// Custom compare: most props are primitives; `library` is a stable reference
+// per-face (FaceLibraryProvider holds it across rotations). Cheap shallow
+// check skips re-render when only ancestor state changes.
+const propsAreEqual = (a, b) =>
+  a.accentColor === b.accentColor &&
+  a.name === b.name &&
+  a.uid === b.uid &&
+  a.image === b.image &&
+  a.library === b.library &&
+  a.chemicalFormula === b.chemicalFormula &&
+  a.entryId === b.entryId
+
+export default memo(EntryImageInner, propsAreEqual)

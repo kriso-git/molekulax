@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { memo, useEffect, useMemo, useRef, useState } from 'react'
 import { LibraryContext } from '../../../context/LibraryContext'
 import { listLibraries, loadLibrary } from '../../../data/libraries'
 import LibraryGallery from '../../LibraryGallery'
@@ -8,14 +8,17 @@ import EffectsSection from '../EffectsSection'
 // Per-face context override: each face renders its OWN library content
 // with its own loaded full-data. The setLibraryId no-op on this provider
 // (face does not re-route itself; the outer cube handles deep-linking).
+// Memoize the value so children (LibraryGallery / EffectsSection) don't
+// re-read context on every CubeFace re-render — the provider's `value`
+// identity drives context-consumer re-renders.
 function FaceLibraryProvider({ library, children }) {
-  const value = {
+  const value = useMemo(() => ({
     library,
     libraryId: library.id,
     setLibraryId: () => {},
     availableLibraries: listLibraries(),
     isLoading: false,
-  }
+  }), [library])
   return (
     <LibraryContext.Provider value={value}>
       {children}
@@ -29,7 +32,7 @@ function FaceLibraryProvider({ library, children }) {
 // (1) the face has been activated at least once, AND (2) the library
 // data fetch has resolved. Subsequent face transitions keep the cached
 // data via the singleton fullLibraryCache in src/data/libraries/index.js.
-export default function CubeFace({
+function CubeFaceInner({
   library,         // META (id + name + accent + description)
   isActive,
   faceIndex,
@@ -76,6 +79,12 @@ export default function CubeFace({
   // on top of each other in flat mode. During rotation: classic 3D-cube transform.
   const transform3D = `rotateY(${faceIndex * 90}deg) translateZ(${halfWidth}px)`
 
+  // content-visibility lets the browser skip layout/paint for non-active faces
+  // when they're hidden. `auto` would still render off-screen; `hidden` is
+  // explicit and combined with display:none gives the strongest skip. We only
+  // apply it during 2D (post-settle) — during rotation the faces need to paint.
+  const isHidden = !is3DActive && !isActive
+
   return (
     <div
       ref={elRef}
@@ -85,7 +94,8 @@ export default function CubeFace({
         left: 0,
         right: 0,
         transform: is3DActive ? transform3D : 'none',
-        display: !is3DActive && !isActive ? 'none' : undefined,
+        display: isHidden ? 'none' : undefined,
+        contentVisibility: isHidden ? 'hidden' : 'visible',
         backfaceVisibility: is3DActive ? 'hidden' : 'visible',
         pointerEvents: isActive ? 'auto' : 'none',
       }}
@@ -124,3 +134,11 @@ export default function CubeFace({
     </div>
   )
 }
+
+// React.memo: when the cube rotates only `isActive` / `currentIndex` /
+// `is3DActive` flip on the inactive faces — props like `library` (meta) and
+// `libraries` (listLibraries result) are stable across renders. Without memo,
+// every parent-state change re-rendered all 4 faces (each face is a big
+// subtree: full LibraryGallery + EffectsSection + maybe Calculator).
+const CubeFace = memo(CubeFaceInner)
+export default CubeFace

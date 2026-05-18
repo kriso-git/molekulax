@@ -167,7 +167,10 @@ function NeonText({ children, sizeClass, letterSpacing = '0.03em' }) {
         color: CHEMICAL_GREEN,
         textShadow:
           '0 0 4px rgba(0,255,153,0.9), 0 0 12px rgba(0,255,153,0.7), 0 0 28px rgba(0,255,153,0.45), 0 0 56px rgba(0,255,153,0.25)',
-        animation: 'cfp-pulse-text 3.5s ease-in-out infinite',
+        /* Static — pulse intentionally removed: animating filter brightness
+           on an element with 3 stacked drop-shadow filters forced a paint
+           every frame across 44 gallery tiles, blocking 60fps during cube
+           rotation. The shell still pulses (opacity/transform, GPU-only). */
         letterSpacing,
       }}
     >
@@ -190,10 +193,14 @@ function MoleculeImage({ entryId, name }) {
           'drop-shadow(0 0 6px rgba(0,255,153,0.85)) ' +
           'drop-shadow(0 0 14px rgba(0,255,153,0.55)) ' +
           'drop-shadow(0 0 28px rgba(0,255,153,0.30))',
-        animation: 'cfp-pulse-text 3.5s ease-in-out infinite',
+        /* Static — pulse intentionally removed: animating filter brightness
+           on an element with 3 stacked drop-shadow filters forced a paint
+           every frame across 44 gallery tiles, blocking 60fps during cube
+           rotation. The shell still pulses (opacity/transform, GPU-only). */
       }}
       draggable="false"
       loading="lazy"
+      decoding="async"
     />
   )
 }
@@ -226,7 +233,10 @@ export default function ChemicalFormulaPlaceholder({ formula, name, entryId, acc
               'drop-shadow(0 0 6px rgba(0,255,153,0.85)) ' +
               'drop-shadow(0 0 14px rgba(0,255,153,0.55)) ' +
               'drop-shadow(0 0 28px rgba(0,255,153,0.30))',
-            animation: 'cfp-pulse-text 3.5s ease-in-out infinite',
+            /* Static — pulse intentionally removed: animating filter brightness
+           on an element with 3 stacked drop-shadow filters forced a paint
+           every frame across 44 gallery tiles, blocking 60fps during cube
+           rotation. The shell still pulses (opacity/transform, GPU-only). */
           }}
           draggable="false"
           loading="lazy"
