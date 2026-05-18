@@ -317,7 +317,7 @@ export default function LibraryGallery({
   // Wait two paints for accordion expansion + filter render, then scroll.
   requestAnimationFrame(() => {
    requestAnimationFrame(() => {
-    window.scrollTo({ top: pending.scrollY || 0, behavior: 'instant' })
+    window.scrollTo({ top: pending.scrollY || 0, behavior: 'smooth' })
    })
   })
   delete window.__libraryGalleryPendingRestore__
