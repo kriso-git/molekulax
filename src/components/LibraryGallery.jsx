@@ -308,6 +308,20 @@ export default function LibraryGallery({
   if (typeof window === 'undefined') return
   const pending = window.__libraryGalleryPendingRestore__
   if (!pending || pending.libraryId !== library.id) return
+
+  // Pre-snap SYNCHRONOUSLY a library section tetejére, MIELŐTT a böngésző
+  // bármit fest. useLayoutEffect commit után-paint előtt fut → ha itt scrollTo,
+  // a következő paint már a library start-ról rajzol, NEM látszik 1-2 frame
+  // Hero/Education flicker top:0-n. (rAF-en belül a pre-snap legalább 1 paint-et
+  // csúszik → flicker visszajön.) targetY-csak-alatt-snap branch megtartva
+  // hogy felfelé-scroll esetén ne ugorjunk át a természetes irányon.
+  const targetY = pending.scrollY || 0
+  const librarySection = document.getElementById('library')
+  if (librarySection) {
+   const libraryTopY = librarySection.getBoundingClientRect().top + window.scrollY
+   if (targetY > libraryTopY + 4) window.scrollTo(0, libraryTopY)
+  }
+
   setQuery(pending.query || '')
   setActiveFilters(Array.isArray(pending.activeFilters) ? pending.activeFilters : [])
   setLevelFilters(Array.isArray(pending.levelFilters) ? pending.levelFilters : [])
@@ -324,7 +338,6 @@ export default function LibraryGallery({
   // After the scroll completes, briefly highlight the tile that was clicked
   // so the user sees exactly where they came from (data-entry-id selector +
   // .peptide-tile--restored CSS class triggers a 1.8s accent-color ring fade).
-  const targetY = pending.scrollY || 0
   const highlightTile = () => {
    if (!pending.entryId) return
    const tiles = document.querySelectorAll(`[data-entry-id="${pending.entryId}"]`)
@@ -335,19 +348,6 @@ export default function LibraryGallery({
   }
   requestAnimationFrame(() => {
    requestAnimationFrame(() => {
-    // Pre-snap: instant scroll a library section tetejére, hogy a smooth-scroll
-    // NE a teljes oldal-tetejéről (Hero/Education-en át) menjen le, hanem a
-    // library section start-jától. Fresh mount post-closeDetail-en a böngésző
-    // top:0-ra rakja a scroll-t → 900ms-ig aggressive full-page scroll volna.
-    // A library section start point a #library-id-jű elem getBoundingClientRect-je.
-    const librarySection = document.getElementById('library')
-    if (librarySection) {
-     const libraryTopY = librarySection.getBoundingClientRect().top + window.scrollY
-     // Csak akkor pre-snap-elj, ha a saved scrollY a library section ALATT van
-     // (normál eset: a user lefelé scroll-ozott a tile-okig). Egyébként a smooth
-     // scroll-let a természetes irányba menjen.
-     if (targetY > libraryTopY + 4) window.scrollTo(0, libraryTopY)
-    }
     const startY = window.scrollY
     const distance = targetY - startY
     if (Math.abs(distance) < 2) {
