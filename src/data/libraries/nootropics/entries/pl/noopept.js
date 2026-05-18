@@ -1,0 +1,145 @@
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:11:53.224Z
+// Edit this file directly to update the PL body; do not re-run the script.
+
+export default {
+  "id": "noopept",
+  "name": "Noopept",
+  "image": null,
+  "accentColor": "#a78bfa",
+  "tagColor": "rgba(167,139,250,0.18)",
+  "shortDesc": "Rosyjski Rx nootropik podobny do racetamów; mała dawka (10-30 mg), zwiększa ekspresję NGF/BDNF.",
+  "description": "Noopept (ester etylowy N-fenyloacetylo-L-prolyloglicyny) to cykliczny dipeptyd pochodzący od Piracetamu, opracowany w Rosji w latach 90. Z dawki na dawkę około 1000× silniejszy niż Piracetam (10-30 mg/dzień vs. 4800 mg/dzień). Mechanizm: modulacja glutamatergiczna AMPA + NMDA oraz wzmocnienie ekspresji NGF (czynnik wzrostu nerwów) i BDNF. OTC w Rosji pod nazwą Noopept; substancja badawcza w UE/USA.",
+  "keyInfo": [
+    {
+      "label": "Mechanizm",
+      "value": "AMPA + NMDA + NGF/BDNF"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "30-40 min (aktywny metabolit)"
+    },
+    {
+      "label": "Czas wystąpienia",
+      "value": "15-30 min"
+    },
+    {
+      "label": "Status prawny",
+      "value": "Rosja OTC, UE/USA badania"
+    }
+  ],
+  "mechanism": "Modulator glutamatergiczny AMPA + NMDA; zwiększa ekspresję NGF (czynnik wzrostu nerwów) i BDNF; wzmocniona aktywność neuronów hipokampa przez α7-nAChR. Aktywny metabolit: cykloprolyloglicyna (CPG).",
+  "legalStatus": "Rosja: OTC (Noopept). UE: nieuregulowany, status suplementu sporny. USA: niezatwierdzony przez FDA, substancja badawcza.",
+  "onsetTime": "15-30 min",
+  "halfLife": "30-40 min (active metabolite)",
+  "chemicalFormula": "C17H22N2O4",
+  "interactionsWith": [
+    "choline",
+    "caffeine",
+    "alcohol"
+  ],
+  "wadaStatus": null,
+  "benefits": [
+    "Efekty pamięci i nauki z szybszym wystąpieniem niż Piracetam",
+    "Wzmocnienie NGF/BDNF (neuroprotekcyjne w modelach zwierzęcych)",
+    "Łagodne działanie przeciwlękowe wraz z modulacją glutamatergiczną",
+    "Naczyniowo-mózgowe zaburzenia poznawcze (rosyjskie dane kliniczne)"
+  ],
+  "quickStart": [
+    "10 mg rano i wczesnym popołudniem, podjęzykowo lub doustnie",
+    "Współpodawać źródło choliny (Alpha-GPC/CDP-Choline), efekt podobny do racetamów",
+    "Stosowanie cykliczne: 4-6 tygodni włączone, 1-2 tygodnie wyłączone",
+    "Subiektywny efekt często odczuwalny po pierwszej dawce"
+  ],
+  "expectations": [
+    {
+      "label": "Pierwsza dawka",
+      "body": "Łagodna jasność umysłu i płynność werbalna po 15-30 min. Efekt ostry wyraźniejszy niż przy Piracetamie."
+    },
+    {
+      "label": "1-2 tygodnie",
+      "body": "Trwała facylitacja poznawcza, lepszy fokus; aktywny metabolit cykloprolyloglicyna może się kumulować."
+    },
+    {
+      "label": "4-6 tygodni",
+      "body": "Plateau; zaleca się cykl-off aby uniknąć tolerancji i obniżenia regulacji NGF/BDNF."
+    }
+  ],
+  "quality": {
+    "pure": [
+      "Drobny biały proszek, lub forma mikrotabletek",
+      "Podjęzykowo dobrze się wchłania (Tmax ~15 min)"
+    ],
+    "caution": [
+      "Ryzyko bólu głowy przy niedoborze choliny",
+      "Wysokie dawki (>40 mg/dzień) drażliwość, bezsenność",
+      "Spektrum zaburzeń dwubiegunowych: ryzyko drażliwości/agitacji",
+      "Nadciśnienie: zalecane monitorowanie ciśnienia"
+    ],
+    "avoid": [
+      "Ciąża, karmienie piersią (brak badań)",
+      "Ciężka niewydolność nerek",
+      "Choroba Huntingtona (przeciwwskazanie klasy pochodnych racetamów)"
+    ]
+  },
+  "interactions": [
+    "Synergiczny ze źródłem choliny (Alpha-GPC/CDP-Choline)",
+    "Można łączyć z innymi racetamami (Piracetam, Aniracetam) w stacku",
+    "Zwiększona sedacja w połączeniu z alkoholem"
+  ],
+  "studies": [
+    {
+      "title": "Noopept (GVS-111) cognitive effects: randomized trial",
+      "authors": "Neznamov GG, Teleshova ES.",
+      "journal": "Neurosci Behav Physiol. 2009;39(3):311-321.",
+      "pmid": "19234797"
+    },
+    {
+      "title": "Noopept and NGF/BDNF expression in vivo",
+      "authors": "Ostrovskaia RU et al.",
+      "journal": "Eksp Klin Farmakol. 2008;71(4):29-35.",
+      "pmid": "18819428"
+    },
+    {
+      "title": "Original neuropsychotropic activity of noopept",
+      "authors": "Gudasheva TA et al.",
+      "journal": "Bioorg Khim. 1996;22(10-11):768-778.",
+      "pmid": "9082489"
+    },
+    {
+      "title": "Noopept in the treatment of mild cognitive impairment in patients with stroke",
+      "authors": "Amelin AV, Iliukhina AIu, Shmonin AA.",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2011;111(10):44-50.",
+      "pmid": "22500312"
+    },
+    {
+      "title": "Clinical and electroencephalographic characteristic of noopept in patients with mild cognitive impairment",
+      "authors": "Neznamov GG, Teleshova ES.",
+      "journal": "Eksp Klin Farmakol. 2008;71(4):8-13.",
+      "pmid": "19008801"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Dlaczego 1000× silniejszy niż Piracetam?",
+      "a": "W przeliczeniu na dawkę: 10 mg Noopeptu daje efekt subiektywny podobny do ~1200 mg Piracetamu. Różnica to wyższe powinowactwo + bardziej lipofilna cząsteczka (lepsze przejście przez BBB), nie zupełnie inny mechanizm."
+    },
+    {
+      "q": "Podjęzykowo czy doustnie?",
+      "a": "Podjęzykowo daje szybsze Tmax (~15 min), wyższą biodostępność, omija metabolizm wątrobowy pierwszego przejścia. Większość użytkowników podjęzykowo."
+    },
+    {
+      "q": "Czy cykliczność jest konieczna?",
+      "a": "Zalecane: 4-6 tygodni włączone, 1-2 tygodnie wyłączone. Ciągła stymulacja NGF/BDNF niesie ryzyko tolerancji i obniżenia regulacji receptorów."
+    },
+    {
+      "q": "Jak długo można stosować ciągle?",
+      "a": "Rosyjski protokół Rx przewiduje 56-dniowe cykle z 2-4-tygodniową przerwą. Ciągłe stosowanie powyżej 3 miesięcy nie zostało formalnie zbadane — ryzyko obniżenia regulacji receptorów i tolerancji NGF/BDNF."
+    }
+  ],
+  "related": [
+    "piracetam",
+    "aniracetam",
+    "coluracetam",
+    "semax"
+  ]
+}

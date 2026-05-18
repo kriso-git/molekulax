@@ -1,0 +1,130 @@
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:11:53.225Z
+// Edit this file directly to update the PL body; do not re-run the script.
+
+export default {
+  "id": "adrafinil",
+  "name": "Adrafinil",
+  "image": null,
+  "accentColor": "#fbbf24",
+  "tagColor": "rgba(251,191,36,0.18)",
+  "shortDesc": "Prolek Modafinilu (konwersja wątrobowa). OTC w niektórych regionach UE, z wolniejszym wystąpieniem.",
+  "description": "Adrafinil to pochodna difenylometylosulfinyloacetamidu i prolek wątrobowy Modafinilu, metabolizowany w wątrobie do Modafinilu (enzymy CYP1A2 + CYP3A4). Eugeroik (agonista alfa-1 adrenergiczny), wzmacniający czuwanie. Pierwotnie zatwierdzony we Francji dla narkolepsji (Olmifon), wycofany w 2011 r. z przyczyn komercyjnych. Obecnie substancja badawcza / OTC w UE, dostępny jako suplement w USA.",
+  "keyInfo": [
+    {
+      "label": "Mechanizm",
+      "value": "Prolek Modafinilu, alfa-1 adrenergiczny"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "1 h (Adrafinil) / 12-15 h (Modafinil)"
+    },
+    {
+      "label": "Czas wystąpienia",
+      "value": "60-90 min"
+    },
+    {
+      "label": "Status prawny",
+      "value": "UE OTC badania, USA OTC"
+    }
+  ],
+  "mechanism": "Adrafinil = prolek Modafinilu. Po wątrobowej konwersji CYP1A2/CYP3A4 wykazuje działanie podobne do Modafinilu (patrz wpis Modafinilu).",
+  "legalStatus": "UE: OTC substancja badawcza, dawniej Olmifon Rx we Francji (wycofany: wrzesień 2011). USA: OTC suplement. WADA: zabroniony (ze względu na metabolit Modafinilu).",
+  "onsetTime": "60-90 min",
+  "halfLife": "1 h (Adrafinil) → 12-15 h (Modafinil)",
+  "chemicalFormula": "C15H15NO3S",
+  "interactionsWith": [
+    "caffeine",
+    "alcohol",
+    "hormonal contraceptives",
+    "hepatotoxic-drugs"
+  ],
+  "wadaStatus": "banned",
+  "benefits": [
+    "Wzmacniający czuwanie, podobny profil jak Modafinil",
+    "Zespoły zmęczenia podobne do narkolepsji (historycznie Olmifon)",
+    "W UE: alternatywa dla Modafinilu, gdzie Rx niedostępny",
+    "Bardziej dostępny (OTC) i tańszy niż Rx Modafinil w UE/USA"
+  ],
+  "quickStart": [
+    "300-600 mg rano, na pusty żołądek; wolniejsze wystąpienie (60-90 min)",
+    "Wymagana wyższa dawka niż Modafinilu (~3-4×) ze względu na konwersję wątrobową",
+    "PRZECIW przewlekłemu stosowaniu, podwyższenie enzymów wątrobowych (monitorować ALT/AST)",
+    "NIE po 14:00, okres półtrwania Modafinilu zaburza sen"
+  ],
+  "expectations": [
+    {
+      "label": "Pierwsza dawka",
+      "body": "Czujność po 60-90 min (wolniejsza niż Modafinil). Plateau 4-8 godzin. Możliwy ból głowy, sucha jama ustna."
+    },
+    {
+      "label": "4-8 godzin",
+      "body": "Plateau czujności, trwała koncentracja, funkcjonalnie równoważne Modafinilowi."
+    },
+    {
+      "label": "Tygodniowo",
+      "body": "Przewlekłe dawkowanie niesie ryzyko podwyższenia ALT/AST, maks. 2-3× tygodniowo, nie codziennie."
+    }
+  ],
+  "quality": {
+    "pure": [
+      "Biały proszek lub kapsułka (300 mg standardowo)",
+      "Słabo rozpuszczalny w wodzie, dobrze w lipidach"
+    ],
+    "caution": [
+      "Podwyższenie enzymów wątrobowych (ALT/AST), okresowe monitorowanie",
+      "Ból głowy, sucha jama ustna, łagodne podwyższenie ciśnienia",
+      "Długotrwałe stosowanie (>1 miesiąc): comiesięczny panel LFT (ALT/AST), zwłaszcza przy 600+ mg/dzień"
+    ],
+    "avoid": [
+      "Ciężka choroba wątroby (zależna od konwersji wątrobowej; doniesienia o hepatotoksyczności Milgram 2000)",
+      "Ciąża, karmienie piersią",
+      "Sportowcy zawodowi (WADA zakaz)",
+      "Stłuszczenie wątroby / NAFLD / istniejące zapalenie wątroby",
+      "Historia zespołu Stevensa-Johnsona lub nadwrażliwość na Modafinil (dziedziczy ostrzeżenie FDA SJS/TEN/DRESS przez metabolit Modafinilu)",
+      "Ciężka arytmia serca, niestabilna dusznica, niekontrolowane nadciśnienie (przeciwwskazanie klasy eugeroików)"
+    ]
+  },
+  "interactions": [
+    "Zmniejszenie skuteczności antykoncepcji hormonalnej (indukcja CYP3A4 metabolitem Modafinilu)",
+    "Unikać alkoholu (obciążenie wątroby + działanie podobne do Modafinilu)",
+    "Stymulacja addytywna z kofeiną",
+    "Unikać z innymi lekami hepatotoksycznymi (statyny, paracetamol >2 g/dzień)"
+  ],
+  "studies": [
+    {
+      "title": "Adrafinil and modafinil, pharmacokinetic comparison",
+      "authors": "Robertson P Jr, Hellriegel ET.",
+      "journal": "Clin Pharmacokinet. 2003;42(2):123-137.",
+      "pmid": "12537513"
+    },
+    {
+      "title": "Adrafinil: a novel vigilance promoting agent",
+      "authors": "Milgram NW et al.",
+      "journal": "CNS Drug Rev. 2000;6(2):136-153.",
+      "pmid": "11079215"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Dlaczego wybrać Adrafinil zamiast Modafinilu?",
+      "a": "Status OTC Adrafinilu w UE/USA czyni go bardziej dostępnym niż Rx Modafinil. Funkcjonalnie niemal identyczny, ale obciążenie wątroby i wolniejsze wystąpienie to wady."
+    },
+    {
+      "q": "Jaka jest dawka równoważna Modafinilu?",
+      "a": "Około 300 mg Adrafinilu ≈ 100 mg Modafinilu (skuteczność konwersji 30-40%). 600 mg Adrafinilu ≈ 200 mg Modafinilu."
+    },
+    {
+      "q": "Ryzyko uszkodzenia wątroby?",
+      "a": "Przewlekłe codzienne stosowanie może podwyższać ALT/AST. Sporadyczne użycie (2-3× tygodniowo) + okresowe badania krwi zalecane."
+    },
+    {
+      "q": "Dlaczego Olmifon wycofano w 2011?",
+      "a": "Cephalon (producent Olmifonu) nie odnowił zezwolenia na obrót w UE z powodów komercyjnych — wobec wyższej marży Modafinilu (Provigil). NIE był to safety-recall ani decyzja regulatora. Związek nadal kwalifikuje się do badań; farmakologia kliniczna nie uległa zmianie."
+    }
+  ],
+  "related": [
+    "modafinil",
+    "armodafinil",
+    "flmodafinil"
+  ]
+}

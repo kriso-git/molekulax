@@ -1,7 +1,7 @@
-// Auto-decomposed by scripts/decompose-library.mjs at 2026-05-17T15:42:14.626Z
-// LIBRARY_ENTRY_META[] is the synchronous metadata array used by tiles + switcher.
-// Full Entry objects live in entries/<id>.js and are loaded via loadEntry(id).
-// All non-entries library-level fields (categories, effects, etc.) are imported as before.
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:11:53.272Z
+// Phase 12: per-lang entry chunks. loadEntry(id, lang) dynamic-imports
+// entries/<lang>/<id>.js. Library-level fields (categories, effects, faq,
+// labels) still triplet — only entry bodies are lang-split.
 
 import { CATEGORIES, NOOTROPIC_CATEGORIES, getNootropicCategories } from './categories.js'
 import { getResearchLevel } from './researchLevel.js'
@@ -21,7 +21,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Oryginalny racetam (Giurgea, 1972). Modulator glutamatergiczny AMPA, klasyczny nootropik dla pamięci i poznania."
     },
     "tier": 3,
-    "chemicalFormula": "C6H10N2O2",
     "wadaStatus": null
   },
   {
@@ -36,7 +35,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Zatwierdzony przez FDA środek wzmacniający czuwanie (Provigil). Selektywny inhibitor DAT, Rx dla narkolepsji, bezdechu sennego i zaburzeń zmianowych."
     },
     "tier": 5,
-    "chemicalFormula": "C15H15NO2S",
     "wadaStatus": "banned"
   },
   {
@@ -51,7 +49,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Rosyjski Rx nootropik podobny do racetamów; mała dawka (10-30 mg), zwiększa ekspresję NGF/BDNF."
     },
     "tier": 2,
-    "chemicalFormula": "C17H22N2O4",
     "wadaStatus": null
   },
   {
@@ -66,7 +63,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Grupa fenylowa na szkielecie piracetamu. Stymulujący racetam + modulator dopaminergiczny, zakazany przez WADA w zawodach."
     },
     "tier": 2,
-    "chemicalFormula": "C12H14N2O2",
     "wadaStatus": "banned"
   },
   {
@@ -81,7 +77,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Prolek Modafinilu (konwersja wątrobowa). OTC w niektórych regionach UE, z wolniejszym wystąpieniem."
     },
     "tier": 3,
-    "chemicalFormula": "C15H15NO3S",
     "wadaStatus": "banned"
   },
   {
@@ -96,7 +91,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Rosyjski aktoprotektor, modulator dopaminergiczny + serotonergiczny + immunomodulator. Przeciw-zmęczeniowy, przeciwlękowy."
     },
     "tier": 2,
-    "chemicalFormula": "C16H20BrN",
     "wadaStatus": "banned"
   },
   {
@@ -111,7 +105,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Selektywny induktor neurogenezy hipokampu. Neuralstem Phase 1b/2, badania nad depresją."
     },
     "tier": 2,
-    "chemicalFormula": "C22H30N4O",
     "wadaStatus": null
   },
   {
@@ -126,7 +119,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Rosyjski Rx heptapeptyd (analog ACTH 4-10). Rehabilitacja udarowa + wzmocnienie poznawcze, spray donosowy."
     },
     "tier": 2,
-    "chemicalFormula": "C37H51N9O10S",
     "wadaStatus": null
   },
   {
@@ -141,7 +133,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Heptapeptyd analog Tuftsiny (TKPRPGP). Przeciwlękowy + poznawczy bez sedacji, donosowy."
     },
     "tier": 2,
-    "chemicalFormula": "C33H57N11O9",
     "wadaStatus": null
   },
   {
@@ -156,7 +147,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Alkaloid beta-karbolinowy. Inhibitor MAO-B + neurotroficzny, dopaminergiczny nootropik motywacyjny (dane in vitro)."
     },
     "tier": 1,
-    "chemicalFormula": "C13H12N2",
     "wadaStatus": null
   },
   {
@@ -170,8 +160,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Fat-soluble racetam with AMPA-PAM action and an anxiolytic profile.",
       "pl": "Rozpuszczalny w tłuszczach racetam z aktywnością AMPA-PAM i profilem anksjolitycznym."
     },
-    "tier": 3,
-    "chemicalFormula": "C12H13NO3",
+    "tier": 3
   },
   {
     "id": "oxiracetam",
@@ -184,8 +173,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Stimulant-leaning racetam, AMPA + cholinergic activity, focus-oriented.",
       "pl": "Racetam o profilu stymulującym, aktywność AMPA + cholinergiczna, ukierunkowany na koncentrację."
     },
-    "tier": 3,
-    "chemicalFormula": "C6H10N2O3",
+    "tier": 3
   },
   {
     "id": "pramiracetam",
@@ -198,8 +186,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Potent cholinergic racetam, HACU enhancement + AMPA modulation.",
       "pl": "Silny cholinergiczny racetam, wzmocnienie HACU + modulacja AMPA."
     },
-    "tier": 2,
-    "chemicalFormula": "C14H27N3O2",
+    "tier": 2
   },
   {
     "id": "coluracetam",
@@ -212,8 +199,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Selective HACU enhancer (BCI-540), visual experience and antidepressant profile.",
       "pl": "Selektywny wzmacniacz HACU (BCI-540), wrażenia wzrokowe i profil antydepresyjny."
     },
-    "tier": 2,
-    "chemicalFormula": "C19H23N3O3",
+    "tier": 2
   },
   {
     "id": "fasoracetam",
@@ -226,8 +212,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "mGluR I/II/III modulator racetam, ADHD clinical research.",
       "pl": "Racetam modulujący mGluR I/II/III, badania kliniczne ADHD."
     },
-    "tier": 2,
-    "chemicalFormula": "C10H16N2O2",
+    "tier": 2
   },
   {
     "id": "nefiracetam",
@@ -240,8 +225,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "GABA + AMPA + Ca-channel modulator racetam, anti-amnestic.",
       "pl": "Racetam modulujący GABA + AMPA + kanały Ca, przeciwamnezyjny."
     },
-    "tier": 2,
-    "chemicalFormula": "C14H18N2O2",
+    "tier": 2
   },
   {
     "id": "sunifiram",
@@ -254,8 +238,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Ampakine, AMPA-PAM, sub-mg active dose.",
       "pl": "Ampakina, AMPA-PAM, aktywna dawka poniżej miligrama."
     },
-    "tier": 1,
-    "chemicalFormula": "C14H18N2O2",
+    "tier": 1
   },
   {
     "id": "unifiram",
@@ -268,8 +251,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Ampakine (DM-232), alkynyl variant of Sunifiram, AMPA-PAM.",
       "pl": "Ampakina (DM-232), alkinyl-pochodna sunifiramu, AMPA-PAM."
     },
-    "tier": 1,
-    "chemicalFormula": "C13H15FN2O3S",
+    "tier": 1
   },
   {
     "id": "nooglutyl",
@@ -282,8 +264,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Russian AMPA-PAM research compound, plasticity enhancer.",
       "pl": "Rosyjski związek badawczy AMPA-PAM, wzmacniacz plastyczności."
     },
-    "tier": 1,
-    "chemicalFormula": "C11H12N2O6",
+    "tier": 1
   },
   {
     "id": "armodafinil",
@@ -296,8 +277,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "R-enantiomer of Modafinil, longer half-life, smoother focus.",
       "pl": "R-enancjomer modafinilu, dłuższy okres półtrwania, łagodniejsza koncentracja."
     },
-    "tier": 5,
-    "chemicalFormula": "C15H15NO2S",
+    "tier": 5
   },
   {
     "id": "fladrafinil",
@@ -310,8 +290,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Bis-fluorinated Adrafinil analog, aggression-reducing profile, investigational.",
       "pl": "Bis-fluorowany analog adrafinilu, profil obniżający agresję, badawczy."
     },
-    "tier": 1,
-    "chemicalFormula": "C15H13F2NO3S",
+    "tier": 1
   },
   {
     "id": "flmodafinil",
@@ -324,8 +303,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Bisfluoromodafinil (CRL-40,940), roughly 3× more potent in vivo.",
       "pl": "Bisfluoromodafinil (CRL-40,940), około 3× silniejszy in vivo."
     },
-    "tier": 1,
-    "chemicalFormula": "C15H13F2NO2S",
+    "tier": 1
   },
   {
     "id": "alpha-gpc",
@@ -338,8 +316,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Glycerophosphocholine, a bioavailable choline precursor.",
       "pl": "Glicerofosfocholina, biodostępny prekursor choliny."
     },
-    "tier": 3,
-    "chemicalFormula": "C8H20NO6P",
+    "tier": 3
   },
   {
     "id": "cdp-choline",
@@ -352,8 +329,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Cytidine diphosphate-choline, dual choline + uridine precursor.",
       "pl": "Cytydyno-difosfo-cholina, podwójny prekursor choliny i urydyny."
     },
-    "tier": 3,
-    "chemicalFormula": "C14H26N4O11P2",
+    "tier": 3
   },
   {
     "id": "centrophenoxine",
@@ -366,8 +342,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Meclofenoxate, DMAE + p-chlorophenoxyacetic acid conjugate, lipofuscin removal.",
       "pl": "Meklofenoksat, koniugat DMAE + kwasu p-chlorofenoksyoctowego, usuwanie lipofuscyny."
     },
-    "tier": 2,
-    "chemicalFormula": "C12H16ClNO3",
+    "tier": 2
   },
   {
     "id": "huperzine-a",
@@ -380,8 +355,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Reversible AChE inhibitor, isolated from the Chinese moss Huperzia serrata.",
       "pl": "Odwracalny inhibitor AChE, wyizolowany z chińskiego mchu Huperzia serrata."
     },
-    "tier": 3,
-    "chemicalFormula": "C15H18N2O",
+    "tier": 3
   },
   {
     "id": "selegiline",
@@ -394,8 +368,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Selective MAO-B inhibitor, Parkinson`s + depression, FDA-approved.",
       "pl": "Selektywny inhibitor MAO-B, Parkinson + depresja, zatwierdzony przez FDA."
     },
-    "tier": 5,
-    "chemicalFormula": "C13H17N",
+    "tier": 5
   },
   {
     "id": "bpap",
@@ -408,8 +381,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Selective PEA-activity enhancer (CAE), Selegiline successor, investigational.",
       "pl": "Selektywny wzmacniacz aktywności PEA (CAE), następca selegiliny, badawczy."
     },
-    "tier": 1,
-    "chemicalFormula": "C16H23NO",
+    "tier": 1
   },
   {
     "id": "prl-8-53",
@@ -422,8 +394,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Phenyl-methyl-piperidinyl benzoate, 1970s, one published human memory trial.",
       "pl": "Fenylo-metylo-piperydynylo-benzoesan, lata 70., jedno opublikowane badanie pamięci u ludzi."
     },
-    "tier": 1,
-    "chemicalFormula": "C18H21NO2",
+    "tier": 1
   },
   {
     "id": "phenibut",
@@ -436,8 +407,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "β-phenyl-GABA, GABA-B agonist, Russian prescription anxiolytic.",
       "pl": "β-fenylo-GABA, agonista GABA-B, rosyjski lek anksjolityczny na receptę."
     },
-    "tier": 4,
-    "chemicalFormula": "C10H13NO2",
+    "tier": 4
   },
   {
     "id": "tianeptine",
@@ -450,8 +420,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Atypical antidepressant, μ-opioid modulator, EU/Russian prescription.",
       "pl": "Nietypowy lek przeciwdepresyjny, modulator μ-opioidowy, recepta UE/Rosja."
     },
-    "tier": 4,
-    "chemicalFormula": "C21H25ClN2O4S",
+    "tier": 4
   },
   {
     "id": "f-phenibut",
@@ -464,8 +433,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Fluorinated Phenibut, more potent, more lipophilic GABA-B agonist variant.",
       "pl": "Fluorowany fenibut, silniejszy, bardziej lipofilny wariant agonisty GABA-B."
     },
-    "tier": 1,
-    "chemicalFormula": "C10H12FNO2",
+    "tier": 1
   },
   {
     "id": "picamilon",
@@ -478,8 +446,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Nicotinic acid + GABA conjugate, Russian prescription anxiolytic.",
       "pl": "Koniugat kwasu nikotynowego + GABA, rosyjski lek anksjolityczny na receptę."
     },
-    "tier": 2,
-    "chemicalFormula": "C10H12N2O3",
+    "tier": 2
   },
   {
     "id": "bacopa",
@@ -492,8 +459,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Ayurvedic herb, bacoside glycosides, memory + anxiolytic.",
       "pl": "Zioło ajurwedyjskie, glikozydy bakozydowe, pamięć + anksjolityk."
     },
-    "tier": 3,
-    "chemicalFormula": "C46H74O17",
+    "tier": 3
   },
   {
     "id": "ashwagandha",
@@ -506,8 +472,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Indian ginseng, withanolide glycosides, cortisol-reducing adaptogen.",
       "pl": "Indyjski żeń-szeń, glikozydy witanolidowe, adaptogen obniżający kortyzol."
     },
-    "tier": 3,
-    "chemicalFormula": "C28H38O6",
+    "tier": 3
   },
   {
     "id": "rhodiola",
@@ -520,8 +485,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Arctic root, salidroside + rosavin, anti-fatigue adaptogen.",
       "pl": "Arktyczny korzeń, salidrozyd + rozawina, adaptogen przeciwzmęczeniowy."
     },
-    "tier": 3,
-    "chemicalFormula": "C14H20O7",
+    "tier": 3
   },
   {
     "id": "lions-mane",
@@ -534,8 +498,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Hedgehog mushroom, hericenones + erinacines, NGF synthesis induction.",
       "pl": "Soplówka jeżowata, herycenony + erynacyny, indukcja syntezy NGF."
     },
-    "tier": 3,
-    "chemicalFormula": "mixture",
+    "tier": 3
   },
   {
     "id": "l-theanine",
@@ -548,8 +511,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Green tea amino acid, γ-glutamyl-ethylamide, α-wave enhancer.",
       "pl": "Aminokwas zielonej herbaty, γ-glutamylo-etyloamid, wzmacniacz fal α."
     },
-    "tier": 3,
-    "chemicalFormula": "C7H14N2O3",
+    "tier": 3
   },
   {
     "id": "tongkat-ali",
@@ -562,8 +524,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Malaysian “longjack”, quassinoids + eurycomanone, testosterone support.",
       "pl": "Malezyjski „longjack”, kwasynoidy + eurykomanon, wsparcie testosteronu."
     },
-    "tier": 2,
-    "chemicalFormula": "C19H24O6",
+    "tier": 2
   },
   {
     "id": "cerebrolysin",
@@ -576,8 +537,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Porcine brain peptide hydrolysate, EU Rx, stroke + dementia.",
       "pl": "Hydrolizat peptydowy z mózgu świni, UE Rx, udar + otępienie."
     },
-    "tier": 4,
-    "chemicalFormula": "mixture",
+    "tier": 4
   },
   {
     "id": "cortexin",
@@ -590,8 +550,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Bovine cortex polypeptide extract, Russian Rx, neurological indications.",
       "pl": "Ekstrakt polipeptydowy z kory wołowej, rosyjski Rx, wskazania neurologiczne."
     },
-    "tier": 4,
-    "chemicalFormula": "mixture",
+    "tier": 4
   },
   {
     "id": "dihexa",
@@ -604,8 +563,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Angiotensin IV analog, HGF/c-Met agonist, hippocampal synapse builder.",
       "pl": "Analog angiotensyny IV, agonista HGF/c-Met, budowniczy synaps w hipokampie."
     },
-    "tier": 1,
-    "chemicalFormula": "C26H41N5O5",
+    "tier": 1
   },
   {
     "id": "methylene-blue",
@@ -618,8 +576,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Mitochondrial electron carrier, FDA Rx for methemoglobinemia, low-dose nootropic.",
       "pl": "Mitochondrialny nośnik elektronów, FDA Rx na methemoglobinemię, nootropik w niskiej dawce."
     },
-    "tier": 5,
-    "chemicalFormula": "C16H18ClN3S",
+    "tier": 5
   },
   {
     "id": "magnesium-l-threonate",
@@ -632,8 +589,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "MIT-developed Mg chelate (Magtein®), synaptic Mg²⁺ booster.",
       "pl": "Chelat Mg opracowany na MIT (Magtein®), wzmacniacz synaptycznego Mg²⁺."
     },
-    "tier": 3,
-    "chemicalFormula": "C8H14MgO10",
+    "tier": 3
   },
   {
     "id": "paraxanthine",
@@ -646,8 +602,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Caffeine metabolite nootropic with a lower anxiogenic profile than caffeine.",
       "pl": "Metabolit kofeiny o niższym profilu lękotwórczym niż kofeina."
     },
-    "tier": 4,
-    "chemicalFormula": "C7H8N4O2",
+    "tier": 1
   },
   {
     "id": "j-147",
@@ -660,8 +615,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Salk Institute curcumin derivative, mitochondrial ATP5A modulator, BDNF inducer.",
       "pl": "Pochodna kurkuminy z Salk Institute, modulator mitochondrialnego ATP5A, induktor BDNF."
     },
-    "tier": 3,
-    "chemicalFormula": "C18H17F3N4O",
+    "tier": 1
   },
   {
     "id": "af710b",
@@ -674,8 +628,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Dual M1 muscarinic / σ1 agonist, Alzheimer`s candidate small molecule.",
       "pl": "Podwójny agonista M1 muskarynowy / σ1, kandydat na lek Alzheimera."
     },
-    "tier": 3,
-    "chemicalFormula": "C21H29N3OS",
+    "tier": 1
   },
   {
     "id": "adamax",
@@ -688,8 +641,7 @@ export const LIBRARY_ENTRY_META = [
       "en": "Adamantane-conjugated Semax peptide with enhanced BBB penetration and prolonged neurotrophic action.",
       "pl": "Semax z adamantanem, wzmocniona przenikalność BBB i przedłużone działanie neurotroficzne."
     },
-    "tier": 2,
-    "chemicalFormula": "C47H67N11O10",
+    "tier": 1
   }
 ]
 
@@ -719,7 +671,7 @@ export const nootropicsLibrary = {
   "pl": "Związki wspierające wydajność poznawczą i zdrowie psychiczne · wyszukiwanie wg poziomu badań, kategorii, mechanizmu"
 },
   accent: "#00ff99",
-  meta: LIBRARY_ENTRY_META,           // Phase 9: meta-only entries-replacement
+  meta: LIBRARY_ENTRY_META,
   topEntries: TOP_ENTRY_IDS,
   categories: CATEGORIES,
   entryCategoryMap: NOOTROPIC_CATEGORIES,
@@ -769,24 +721,23 @@ export const nootropicsLibrary = {
   }
 },
   features: {
-    faq: false,
-    doseRecommendations: false,
-    calculator: false,
-    qualityGrid: false,
-    interactions: false,
-    quickStart: false,
-    labTerminal: false,
-    chemicalFormulaPlaceholder: true,
-  },
+  "faq": false,
+  "doseRecommendations": false,
+  "calculator": false,
+  "qualityGrid": false,
+  "interactions": false,
+  "quickStart": false,
+  "labTerminal": false,
+  "chemicalFormulaPlaceholder": true
+},
 }
 
-// Vite/Rollup template-literal dynamic-import code-splitting: when the
-// path has a static prefix + an interpolated leaf, Vite emits one chunk
-// per file matching the pattern at build time.
-export async function loadEntry(id) {
-  const mod = await import(`./entries/${id}.js`)
+// Phase 12 per-lang: Vite template-literal-import emits one chunk per
+// (lang, id) combo because the static prefix ./entries/ lets Vite glob
+// every matching file at build time.
+export async function loadEntry(id, lang) {
+  const mod = await import(`./entries/${lang}/${id}.js`)
   return mod.default
 }
 
-// Convenience re-exports preserved for legacy consumers.
 export { CATEGORIES, NOOTROPIC_CATEGORIES, getNootropicCategories, getResearchLevel, EFFECT_CATEGORIES }

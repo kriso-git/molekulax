@@ -1,0 +1,29 @@
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:11:53.199Z
+// Edit this file directly to update the HU body; do not re-run the script.
+
+export default {
+  "id": "methylene-blue",
+  "name": "Methylene Blue",
+  "image": null,
+  "accentColor": "#00ff99",
+  "tagColor": "rgba(0,255,153,0.18)",
+  "shortDesc": "Mitokondriális elektronhordozó, FDA Rx methemoglobinémiára, alacsony dózisú nootropikum.",
+  "description": "A Metilénkék (methylthioninium chloride) klasszikus fenotiazin-festék (1876 óta ismert), amely FDA-jóváhagyott gyógyszer methemoglobinémia kezelésére (Provayblue®) és WHO Essential Medicines listán szerepel. **Alacsony dózisban (10-50 mg orális, USP-gyógyszerkönyvi tisztaságú)** nootropikus hatást írtak le: mitokondriális elektronhordozóként (mesterséges shuttle) megkerüli a sérült komplex I/III egységeket, fenntartja az ATP-szintézist és csökkenti az oxidatív stresszt (PMID 17928358). Cerebrális vérátáramlás-javítás (PMC10638993), és **enyhe MAO-A inhibíció** (PMID 31144270) → szerotonin/dopamin/noradrenalin emelés → hangulat-javítás. **⚠️ Magas dózisban (>4 mg/kg) pro-oxidánssá fordul** és mitokondriális egyensúlyt zavarja. **⚠️ Szerotonin-szindróma kockázat SSRI/SNRI-vel** (Lexapro, Zoloft stb.) az MAO-A gátlás miatt — KOMBINÁCIÓT KERÜLNI. Ipari festék-tisztaság (textil-/laborfesték) NEM gyógyszerészeti minőség → NE szedd be.",
+  "keyInfo": [
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Mitokondriális elektronhordozó + MAO-A"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "~5-6.5 óra"
+    },
+    {
+      "label": "Jogi státusz",
+      "value": "FDA Rx (methemoglobinémia)"
+    }
+  ],
+  "mechanism": "A mitokondriális elektrontranszportláncban alternatív elektron-shuttle-ként szerepel a komplex I/III diszfunkciójánál, fokozza a citokróm-c-oxidáz aktivitást, és magas dózisban szelektív MAO-A inhibitor (szerotonin szindróma kockázat SSRI-vel).",
+  "legalStatus": "FDA-jóváhagyott gyógyszer methemoglobinémiára (Provayblue®). Az USA-ban és EU-ban USP-tisztaságú formája csak vényre, „nootropikum-célú\" off-label használata szürke zóna. Ipari festékként árusított minőség NEM gyógyszerészeti.",
+  "chemicalFormula": "C16H18ClN3S"
+}
