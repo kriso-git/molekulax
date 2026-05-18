@@ -29,7 +29,7 @@ export default function CubeNavControls({
   return (
     <>
       {/* Desktop/tablet (md+): left arrow + label stack */}
-      <div className="hidden md:flex flex-col items-center gap-2 absolute top-[480px] md:top-[680px] left-2 lg:left-6 z-20">
+      <div className="hidden md:flex lg:hidden flex-col items-center gap-2 absolute top-[480px] md:top-[680px] left-2 lg:left-6 z-20">
         <button
           type="button"
           onClick={onPrev}
@@ -45,7 +45,7 @@ export default function CubeNavControls({
       </div>
 
       {/* Desktop/tablet (md+): right arrow + label stack */}
-      <div className="hidden md:flex flex-col items-center gap-2 absolute top-[480px] md:top-[680px] right-2 lg:right-6 z-20">
+      <div className="hidden md:flex lg:hidden flex-col items-center gap-2 absolute top-[480px] md:top-[680px] right-2 lg:right-6 z-20">
         <button
           type="button"
           onClick={onNext}
