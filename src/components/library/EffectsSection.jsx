@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { X, Send, ExternalLink } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
@@ -157,7 +158,12 @@ function Modal({ cat, idx, libraryId, onClose }) {
  const entryNames = cat.entryNames || cat.peptides || []
  const entryIds = cat.entryIds || cat.peptideIds || []
 
- return (
+ // Portal to document.body — a Modal a LibraryCube `transformStyle: preserve-3d`
+ // és face `transform: rotateY()` ancestor-aiban ülne ha inline render-elnénk,
+ // és a CSS spec szerint a `position: fixed` egy transformed ancestor-ban a
+ // transformed-parent containing block-jára pin-elődik, nem a viewport-ra.
+ // Portal kiteszi a body-ra → fixed inset-0 valódi viewport-coverage.
+ return createPortal(
  <div
  className="fixed inset-0 z-50 flex items-center justify-center p-4"
  style={{ background: 'var(--bg-modal-backdrop)', backdropFilter: 'blur(6px)' }}
@@ -308,7 +314,8 @@ function Modal({ cat, idx, libraryId, onClose }) {
  </div>
  </div>
  </div>
- </div>
+ </div>,
+ document.body
  )
 }
 

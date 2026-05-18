@@ -38,6 +38,7 @@ export default function CubeFace({
   libraries,       // META[]
   currentIndex,
   onJumpTo,
+  is3DActive,      // false post-settle: active face transform:none, inactive faces display:none
 }) {
   const hasBeenActiveRef = useRef(false)
   const elRef = useRef(null)
@@ -70,7 +71,10 @@ export default function CubeFace({
     return () => ro.disconnect()
   }, [renderFull, faceIndex, onHeightChange])
 
-  const transform = `rotateY(${faceIndex * 90}deg) translateZ(${halfWidth}px)`
+  // Post-settle (is3DActive=false): active face renders 2D (transform:none) for
+  // crisp text/imagery; inactive faces are display:none so they don't ghost-layer
+  // on top of each other in flat mode. During rotation: classic 3D-cube transform.
+  const transform3D = `rotateY(${faceIndex * 90}deg) translateZ(${halfWidth}px)`
 
   return (
     <div
@@ -80,7 +84,8 @@ export default function CubeFace({
         top: 0,
         left: 0,
         right: 0,
-        transform,
+        transform: is3DActive ? transform3D : 'none',
+        display: !is3DActive && !isActive ? 'none' : undefined,
         backfaceVisibility: 'hidden',
         pointerEvents: isActive ? 'auto' : 'none',
       }}

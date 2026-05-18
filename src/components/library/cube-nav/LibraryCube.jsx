@@ -51,6 +51,18 @@ export default function LibraryCube() {
   const [halfWidth, setHalfWidth] = useState(0)
   const [faceHeights, setFaceHeights] = useState({ 0: 0, 1: 0, 2: 0, 3: 0 })
 
+  // 3D vs 2D rendering mode. During rotation: preserve-3d + faces 3D-transformed
+  // (cube paradigm). After settle: flat + active-face transform:none + inactive
+  // faces display:none. Reason — `transform-style: preserve-3d` + a `transform:
+  // rotateY(...)` ancestor keeps the active face on a GPU compositing layer that
+  // produces sub-pixel-blurry text/imagery in steady state. Switching to "flat"
+  // post-settle releases the GPU layer → crisp 2D rendering. Re-enabled on next
+  // rotation trigger so the cube animation still plays.
+  const [is3DActive, setIs3DActive] = useState(false)
+  useEffect(() => {
+    if (!isFirstRender) setIs3DActive(true)
+  }, [rotationDeg, isFirstRender])
+
   // True-cube geometry: halfWidth = wrapper_width / 2. Így a face-ek
   // valódi kockaként hinge-elnek a megosztott élnél, NEM keresztezik
   // egymást rotáció közben (face 1 a jobb oldali élről swing-el be).
@@ -203,6 +215,8 @@ export default function LibraryCube() {
           <motion.div
             animate={{ rotateY: rotationDeg }}
             transition={isFirstRender ? { duration: 0 } : ROTATION_TRANSITION}
+            transformTemplate={(_, generated) => (is3DActive ? generated : 'none')}
+            onAnimationComplete={() => setIs3DActive(false)}
             drag={isTouch ? 'x' : false}
             dragConstraints={{ left: 0, right: 0 }}
             dragElastic={0.15}
@@ -211,7 +225,7 @@ export default function LibraryCube() {
               position: 'relative',
               width: '100%',
               height: '100%',
-              transformStyle: 'preserve-3d',
+              transformStyle: is3DActive ? 'preserve-3d' : 'flat',
             }}
           >
             {libraries.map((lib, idx) => (
@@ -225,6 +239,7 @@ export default function LibraryCube() {
                 libraries={libraries}
                 currentIndex={currentIndex}
                 onJumpTo={jumpTo}
+                is3DActive={is3DActive}
               />
             ))}
           </motion.div>
