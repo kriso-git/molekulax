@@ -525,7 +525,7 @@ export const LIBRARY_ENTRY_META = [
   },
   {
     "id": "lions-mane",
-    "name": "Lion`s Mane",
+    "name": "Lion's Mane",
     "image": null,
     "accentColor": "#84cc16",
     "tagColor": "rgba(132,204,22,0.18)",
@@ -689,7 +689,7 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Semax z adamantanem, wzmocniona przenikalność BBB i przedłużone działanie neurotroficzne."
     },
     "tier": 1,
-    "chemicalFormula": "C47H67N11O10",
+    "chemicalFormula": "mixture",
   }
 ]
 

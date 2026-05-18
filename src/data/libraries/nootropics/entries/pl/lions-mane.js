@@ -3,7 +3,7 @@
 
 export default {
   "id": "lions-mane",
-  "name": "Lion`s Mane",
+  "name": "Lion's Mane",
   "image": null,
   "accentColor": "#84cc16",
   "tagColor": "rgba(132,204,22,0.18)",

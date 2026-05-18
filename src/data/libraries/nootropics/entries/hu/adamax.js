@@ -25,5 +25,5 @@ export default {
   ],
   "mechanism": "A peptid-mag (Semax) melanokortin receptor MCR3/MCR4 modulátor, BDNF + NGF gén-expressziót emel, neurotrofikus kaszkádot indít a hippocampusban és a striatumban. Az adamantyl-csoport CYP3A4-stabilitást ad és blokkolja az N-terminális peptidázok hozzáférését, ami a hatástartamot többszörösére növeli. Intranasalis adagolásnál a peptid közvetlenül a CNS-be jut az olfactory route-on (NEM kell BBB-átjutás).",
   "legalStatus": "EU/HU/USA: nem orvosi engedéllyel forgalomban, kutatási/szürke piaci szer. Oroszországban a Semax (anyavegyület) Rx-engedélyes (Nemzeti Egészségügyi Minisztérium 1996), de az Adamax-modifikáció kizárólag akadémiai kutatási státuszú.",
-  "chemicalFormula": "C47H67N11O10"
+  "chemicalFormula": "mixture"
 }

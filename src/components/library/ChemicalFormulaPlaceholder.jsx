@@ -64,8 +64,10 @@ function splitToTwoRows(blocks) {
 function splitName(name) {
   const trimmed = (name || '').trim()
   if (!trimmed) return ['', '']
-  if (trimmed.length <= 8) return [trimmed]
-  const breakChars = [' ', '-', '–', "'", '`']
+  if (trimmed.length <= 10) return [trimmed]
+  // Only split at word boundaries — never inside a word. Apostrophes and
+  // backticks are intra-word punctuation (Lion's) so we must NOT split there.
+  const breakChars = [' ', '-', '–']
   const mid = Math.floor(trimmed.length / 2)
   let bestIdx = -1
   let bestDist = Infinity
@@ -79,12 +81,12 @@ function splitName(name) {
     }
   }
   if (bestIdx > 0) {
-    return [trimmed.slice(0, bestIdx), trimmed.slice(bestIdx).replace(/^[-–'` ]/, '')]
+    return [trimmed.slice(0, bestIdx), trimmed.slice(bestIdx).replace(/^[-– ]/, '')]
   }
   return [trimmed]
 }
 
-function Corner({ pos }) {
+function Corner({ pos, color }) {
   const map = {
     tl: { top: 14, left: 14, borderRight: 'none', borderBottom: 'none' },
     tr: { top: 14, right: 14, borderLeft: 'none', borderBottom: 'none' },
@@ -98,15 +100,30 @@ function Corner({ pos }) {
       style={{
         width: 22,
         height: 22,
-        border: `1.5px solid ${CHEMICAL_GREEN}`,
-        opacity: 0.6,
+        border: `1.5px solid ${color}`,
+        opacity: 0.55,
+        boxShadow: `0 0 6px ${color}33`,
         ...map[pos],
       }}
     />
   )
 }
 
-function PlaceholderShell({ children, ariaLabel, className }) {
+// Convert "#rrggbb" to "rgba(r,g,b,a)" for runtime tinting of the shell.
+function tint(hex, alpha) {
+  const h = (hex || '').replace('#', '')
+  if (h.length !== 6) return `rgba(255,255,255,${alpha})`
+  const r = parseInt(h.slice(0, 2), 16)
+  const g = parseInt(h.slice(2, 4), 16)
+  const b = parseInt(h.slice(4, 6), 16)
+  return `rgba(${r},${g},${b},${alpha})`
+}
+
+function PlaceholderShell({ children, ariaLabel, className, cornerColor }) {
+  // Corner brackets follow the entry's own accent (matches the tile vibe);
+  // the radial glow + dotted grid stay chemical-green so the molecule reads
+  // as "the lit element" against a colour-tinted frame.
+  const cc = cornerColor || CHEMICAL_GREEN
   return (
     <div
       className={`cfp-root relative w-full h-full overflow-hidden rounded-2xl flex items-center justify-center ${className}`}
@@ -115,10 +132,10 @@ function PlaceholderShell({ children, ariaLabel, className }) {
         background:
           'radial-gradient(rgba(0,255,153,0.08) 1px, transparent 1.4px) 0 0 / 14px 14px, ' +
           'radial-gradient(circle at 50% 50%, rgba(0,255,153,0.10) 0%, transparent 65%), ' +
-          'linear-gradient(135deg, rgba(0,255,153,0.04) 0%, transparent 50%, rgba(99,102,241,0.05) 100%), ' +
+          `linear-gradient(135deg, ${tint(cc, 0.05)} 0%, transparent 50%, rgba(99,102,241,0.05) 100%), ` +
           'var(--bg-base, #050505)',
-        border: '1px solid rgba(0,255,153,0.18)',
-        boxShadow: 'inset 0 0 40px rgba(0,255,153,0.06), inset 0 1px 0 rgba(255,255,255,0.04)',
+        border: `1px solid ${tint(cc, 0.22)}`,
+        boxShadow: `inset 0 0 40px ${tint(cc, 0.05)}, inset 0 1px 0 rgba(255,255,255,0.04)`,
       }}
       role="img"
       aria-label={ariaLabel}
@@ -133,10 +150,10 @@ function PlaceholderShell({ children, ariaLabel, className }) {
           animation: 'cfp-pulse-glow 3.5s ease-in-out infinite',
         }}
       />
-      <Corner pos="tl" />
-      <Corner pos="tr" />
-      <Corner pos="bl" />
-      <Corner pos="br" />
+      <Corner pos="tl" color={cc} />
+      <Corner pos="tr" color={cc} />
+      <Corner pos="bl" color={cc} />
+      <Corner pos="br" color={cc} />
       {children}
     </div>
   )
@@ -181,7 +198,7 @@ function MoleculeImage({ entryId, name }) {
   )
 }
 
-export default function ChemicalFormulaPlaceholder({ formula, name, entryId, className = '' }) {
+export default function ChemicalFormulaPlaceholder({ formula, name, entryId, accent, className = '' }) {
   const [imgFailed, setImgFailed] = useState(false)
   const hasImage = !!entryId && !imgFailed
 
@@ -199,7 +216,7 @@ export default function ChemicalFormulaPlaceholder({ formula, name, entryId, cla
   // ── 1. Structural image (preferred) ──────────────────────────────
   if (hasImage) {
     return (
-      <PlaceholderShell ariaLabel={`${name || entryId} 2D structure`} className={className}>
+      <PlaceholderShell ariaLabel={`${name || entryId} 2D structure`} className={className} cornerColor={accent}>
         <img
           src={`/molecules/${entryId}.png`}
           alt={`${name || entryId} 2D structure`}
@@ -225,6 +242,7 @@ export default function ChemicalFormulaPlaceholder({ formula, name, entryId, cla
       <PlaceholderShell
         ariaLabel={`Chemical formula ${Array.isArray(formula) ? formula.join(' ') : formula}`}
         className={className}
+        cornerColor={accent}
       >
         <NeonText sizeClass={sizeClass}>
           {rows.map((row, i) => (
@@ -248,7 +266,7 @@ export default function ChemicalFormulaPlaceholder({ formula, name, entryId, cla
     const longest = nameLines.reduce((m, l) => Math.max(m, l.length), 0)
     const nameSize = longest <= 9 ? NAME_SIZE_LARGE : NAME_SIZE_MEDIUM
     return (
-      <PlaceholderShell ariaLabel={`${name}`} className={className}>
+      <PlaceholderShell ariaLabel={`${name}`} className={className} cornerColor={accent}>
         <NeonText sizeClass={nameSize} letterSpacing="0.05em">
           {nameLines.map((line, i) => (
             <span key={i} className="whitespace-nowrap uppercase">{line}</span>

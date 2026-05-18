@@ -806,7 +806,7 @@ function Holosphere({ image, name, accent, tierColor, isLight, library, chemical
  if (useFormula) {
  return (
  <div className="relative w-full aspect-square max-w-[420px] mx-auto">
- <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} entryId={entryId} className="w-full h-full" />
+ <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} entryId={entryId} accent={accent} className="w-full h-full" />
  </div>
  )
  }

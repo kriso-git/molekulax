@@ -25,5 +25,5 @@ export default {
   ],
   "mechanism": "The peptide core (Semax) modulates melanocortin receptors MCR3/MCR4, upregulates BDNF + NGF gene expression, and initiates a neurotrophic cascade in the hippocampus and striatum. The adamantyl group confers CYP3A4 stability and blocks N-terminal peptidase access, multiplying the duration of action. Intranasal dosing routes the peptide directly to the CNS via the olfactory pathway (BBB transit not required).",
   "legalStatus": "EU/HU/USA: not medically approved, research/grey-market compound. In Russia the parent compound Semax is prescription-approved (Ministry of Health 1996), but the Adamax modification has only academic research status.",
-  "chemicalFormula": "C47H67N11O10"
+  "chemicalFormula": "mixture"
 }

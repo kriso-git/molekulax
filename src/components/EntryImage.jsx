@@ -118,7 +118,7 @@ export default function EntryImage({ accentColor = '#818cf8', name = '', uid = '
   // PNGs under /molecules/<entryId>.png) with a text-formula fallback, and a
   // name display for mixtures — single visual language across the gallery.
   if (library?.features?.chemicalFormulaPlaceholder && (entryId || chemicalFormula || name)) {
-    return <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} entryId={entryId} />
+    return <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} entryId={entryId} accent={accentColor} />
   }
   // Peptide vial is the remaining fallback. Performance + pharmaceutical
   // entries always have an image; if any slip through without one, fall through here.

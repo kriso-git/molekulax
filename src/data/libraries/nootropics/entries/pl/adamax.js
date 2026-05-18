@@ -25,5 +25,5 @@ export default {
   ],
   "mechanism": "Rdzeń peptydowy (Semax) moduluje receptory melanokortynowe MCR3/MCR4, zwiększa ekspresję genów BDNF + NGF i wyzwala kaskadę neurotroficzną w hipokampie i prążkowiu. Grupa adamantylowa zapewnia stabilność CYP3A4 i blokuje dostęp N-terminalnych peptydaz, wielokrotnie wydłużając czas działania. Dawkowanie donosowe kieruje peptyd bezpośrednio do CNS przez drogę węchową (przejście BBB nie jest wymagane).",
   "legalStatus": "UE/HU/USA: brak rejestracji medycznej, związek badawczy/szarej strefy. W Rosji macierzysty Semax jest zarejestrowany na receptę (Ministerstwo Zdrowia 1996), ale modyfikacja Adamax ma wyłącznie status badań akademickich.",
-  "chemicalFormula": "C47H67N11O10"
+  "chemicalFormula": "mixture"
 }
