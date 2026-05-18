@@ -95,8 +95,8 @@ export const DEFAULT_LIBRARY_ID = 'peptides'
 // helpers.
 const entryCache = new Map()
 
-export async function loadEntry(libraryId, entryId) {
-  const key = `${libraryId}:${entryId}`
+export async function loadEntry(libraryId, entryId, lang) {
+  const key = `${libraryId}:${entryId}:${lang || 'default'}`
   if (entryCache.has(key)) return entryCache.get(key)
   let mod = null
   switch (libraryId) {
@@ -109,7 +109,9 @@ export async function loadEntry(libraryId, entryId) {
   if (typeof mod.loadEntry !== 'function') {
     throw new Error(`Library ${libraryId} does not expose loadEntry`)
   }
-  const entry = await mod.loadEntry(entryId)
+  // Pass lang to the per-library loader. Pre-Phase 12 libraries ignore it
+  // (1-arg signature); post-Phase 12 libraries use it for the dynamic-import path.
+  const entry = await mod.loadEntry(entryId, lang)
   if (!entry) {
     const err = new Error(`Entry not found: ${libraryId}/${entryId}`)
     err.code = 'ENTRY_NOT_FOUND'
@@ -119,6 +121,6 @@ export async function loadEntry(libraryId, entryId) {
   return entry
 }
 
-export function getCachedEntry(libraryId, entryId) {
-  return entryCache.get(`${libraryId}:${entryId}`) || null
+export function getCachedEntry(libraryId, entryId, lang) {
+  return entryCache.get(`${libraryId}:${entryId}:${lang || 'default'}`) || null
 }

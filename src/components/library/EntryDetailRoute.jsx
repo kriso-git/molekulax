@@ -4,7 +4,7 @@
 // not the full library. Reacts to loading/error states with skeleton +
 // retry CTA.
 
-import { useCallback, useEffect, useState, lazy, Suspense } from 'react'
+import { useEffect, useState, lazy, Suspense } from 'react'
 import { X } from 'lucide-react'
 import { getLibrary } from '../../data/libraries'
 import { adaptLibraryEntry } from './adaptLibraryEntry'
@@ -32,12 +32,13 @@ export function isEntryDetailHash(hash) {
 export default function EntryDetailRoute({ hash }) {
   const parsed = parseEntryHash(hash)
   const isDesktop = useMediaQuery('(min-width: 1024px)')
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const { library, libraryId, setLibraryId, loadEntry, getCachedEntry } = useLibrary()
 
   const [entry, setEntry] = useState(null)
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
+  const [retryCounter, setRetryCounter] = useState(0)
 
   // Sync the active library context with the hash. If a visitor deep-links
   // to #entry/nootropics/<id> while the in-memory library is still the
@@ -50,13 +51,18 @@ export default function EntryDetailRoute({ hash }) {
 
   // Phase 9: async per-entry loader. Each deep-link only pulls one entry's
   // chunk, not the whole library.
-  const fetchEntry = useCallback(async () => {
+  // Phase 12: lang in dep-array — language switch re-fires the load with the
+  // fresh-lang chunk. Inline cancel-flag prevents stale state on rapid switches
+  // (HU→EN→PL→HU before the EN chunk resolves).
+  useEffect(() => {
+    let cancelled = false
     if (!parsed) {
       setEntry(null)
       setError(null)
+      setLoading(false)
       return
     }
-    const cached = getCachedEntry(parsed.library, parsed.id)
+    const cached = getCachedEntry(parsed.library, parsed.id, lang)
     if (cached) {
       setEntry(cached)
       setError(null)
@@ -65,18 +71,23 @@ export default function EntryDetailRoute({ hash }) {
     }
     setLoading(true)
     setError(null)
-    try {
-      const e = await loadEntry(parsed.library, parsed.id)
-      setEntry(e)
-    } catch (err) {
-      setError(err)
-      setEntry(null)
-    } finally {
-      setLoading(false)
-    }
-  }, [parsed?.library, parsed?.id, loadEntry, getCachedEntry])
-
-  useEffect(() => { fetchEntry() }, [fetchEntry])
+    ;(async () => {
+      try {
+        const e = await loadEntry(parsed.library, parsed.id, lang)
+        if (!cancelled) {
+          setEntry(e)
+          setLoading(false)
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setError(err)
+          setEntry(null)
+          setLoading(false)
+        }
+      }
+    })()
+    return () => { cancelled = true }
+  }, [parsed?.library, parsed?.id, lang, loadEntry, getCachedEntry, retryCounter])
 
   // Library-aware close: snap the LibraryContext to the current library
   // BEFORE the hash change re-renders the landing, then nav to #library.
@@ -135,26 +146,41 @@ export default function EntryDetailRoute({ hash }) {
   const metaEntry = libraryReady ? (library.meta || []).find(m => m.id === parsed.id) : null
   let body
   if (error) {
-    body = <EntryDetailError error={error} onRetry={fetchEntry} onBack={closeDetail} />
-  } else if (loading || !entry || !libraryReady) {
+    body = <EntryDetailError error={error} onRetry={() => setRetryCounter(c => c + 1)} onBack={closeDetail} />
+  } else if (!entry || !libraryReady) {
+    // Cold load: no entry mounted yet, show HeroPreview from meta if possible.
     body = metaEntry
       ? <HeroPreview meta={metaEntry} onClose={closeDetail} />
       : <EntryDetailSkeleton />
   } else {
-    const peptide = adaptLibraryEntry(entry, library)
+    // Entry mounted (possibly stale during a warm lang-switch). loading=true
+    // here means a re-fetch is in flight (e.g. lang switch); old entry stays
+    // visible with an opacity-50 + spinner overlay instead of a full skeleton.
+    const peptide = adaptLibraryEntry(entry, library, lang)
     const handleJump = (id) => {
       if (parsed?.library) {
         window.location.hash = `entry/${parsed.library}/${id}`
       }
     }
-    // Keying on library:id forces React to fully remount EntryDetail when the
-    // user navigates to a different entry. This prevents the stale name/title
-    // flash that occurred when only props changed in-place during hashchange.
     const entryKey = `${parsed.library}:${peptide.id}`
     body = (
-      <Suspense fallback={<EntryDetailSkeleton />}>
-        <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
-      </Suspense>
+      <div className="relative">
+        <div className={loading ? 'opacity-50 pointer-events-none transition-opacity' : 'transition-opacity'}>
+          <Suspense fallback={<EntryDetailSkeleton />}>
+            <EntryDetail key={entryKey} peptide={peptide} onClose={closeDetail} onJump={handleJump} />
+          </Suspense>
+        </div>
+        {loading && (
+          <div className="fixed inset-0 z-30 flex items-center justify-center pointer-events-none">
+            <div
+              className="w-10 h-10 rounded-full border-2 animate-spin"
+              style={{ borderColor: 'var(--accent-primary)', borderTopColor: 'transparent' }}
+              role="status"
+              aria-label={t('common.loading') || 'Loading'}
+            />
+          </div>
+        )}
+      </div>
     )
   }
 

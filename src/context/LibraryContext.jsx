@@ -60,8 +60,8 @@ export function LibraryProvider({ children, defaultId = DEFAULT_LIBRARY_ID }) {
     return () => { cancelled = true }
   }, [libraryId])
 
-  const loadEntry = useCallback(async (lib, id) => {
-    return loadEntryFromRegistry(lib, id)
+  const loadEntry = useCallback(async (lib, id, lang) => {
+    return loadEntryFromRegistry(lib, id, lang)
   }, [])
 
   const value = useMemo(() => ({
@@ -71,7 +71,7 @@ export function LibraryProvider({ children, defaultId = DEFAULT_LIBRARY_ID }) {
     availableLibraries: listLibraries(),
     isLoading,
     loadEntry,
-    getCachedEntry,
+    getCachedEntry: (lib, id, lang) => getCachedEntry(lib, id, lang),
   }), [library, libraryId, isLoading, loadEntry])
 
   return (
