@@ -39,6 +39,8 @@ export default {
     "TCA",
     "alcohol"
   ],
+  "aromatization": "Not applicable — sympathomimetic, NOT a steroid; no aromatase substrate activity",
+  "hepatotoxicity": "Low — cardiovascular risk dominates (hypertensive crisis, MI, stroke); minimal hepatic load (FDA 2004 ephedra ban)",
   "wadaStatus": "banned",
   "detectionWindow": "24-48 hours urine (WADA in-competition threshold: 10 μg/mL).",
   "benefits": [

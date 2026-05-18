@@ -38,6 +38,8 @@ export default {
     "thyroid hormones",
     "insulin"
   ],
+  "aromatization": "Not applicable — β2-agonist bronchodilator, NOT a steroid; no aromatase substrate",
+  "hepatotoxicity": "Low — cardiotoxicity dominates (cardiomyocyte damage, hypertrophy, arrhythmia); negligible hepatic load (Beermann 2009)",
   "wadaStatus": "banned",
   "detectionWindow": "7-14 days urine (sensitive LC-MS testing in WADA-accredited labs).",
   "benefits": [

@@ -36,6 +36,8 @@ export default {
     "NSAIDs",
     "warfarin"
   ],
+  "aromatization": "Nem — heterociklusos pirazol A-gyűrű, NEM CYP19 szubsztrát; SHBG-csökkentés a fő ösztrogén-független hatás (Schänzer 1996)",
+  "hepatotoxicity": "Magas — 17α-alkilált; oral és injektálható forma is hepatotoxikus, transzamináz-elevation gyakori 6+ hetes ciklusban (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:30",
   "benefits": [

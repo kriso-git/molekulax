@@ -42,6 +42,8 @@ export default {
     "finasteride",
     "warfarin"
   ],
+  "aromatization": "Igen — CYP19 (aromatáz) → ösztradiol; dózisfüggő, anti-aromatázzal (anastrozole) gátolható (Bhasin 1996 NEJM)",
+  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált észter forma hepatikus first-pass-t kerüli (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "100:100",
   "bindingAffinity": "AR-affinitás referencia 100% (minden más AAS ehhez viszonyítva).",

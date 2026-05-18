@@ -35,6 +35,8 @@ export default {
     "cabergoline (prolactin)",
     "aromatase inhibitors"
   ],
+  "aromatization": "Minimalna — steroid 19-nor, 5-10% konwersja CYP19 do E2 (vs testosteron); dominuje aktywność progestogenowa (Bhasin-Kanayama 2003)",
+  "hepatotoxicity": "Niska — sterydy macierzysty, NIE 17α-alkilowany; postać iniekcyjna omija first-pass wątrobowy (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "125:37",
   "benefits": [

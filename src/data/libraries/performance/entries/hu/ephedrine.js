@@ -39,6 +39,8 @@ export default {
     "TCA",
     "alcohol"
   ],
+  "aromatization": "Nem releváns — szimpatomimetikum, NEM szteroid; nincs aromatáz-szubsztrát aktivitás",
+  "hepatotoxicity": "Alacsony — kardiovaszkuláris rizikó dominál (hypertensív krízis, MI, stroke); hepatikus terhelés minimális (FDA 2004 ephedra-tilalom)",
   "wadaStatus": "banned",
   "detectionWindow": "24-48 óra vizelet (WADA in-competition threshold: 10 μg/mL).",
   "benefits": [

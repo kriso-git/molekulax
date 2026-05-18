@@ -40,6 +40,8 @@ export default {
     "tyramine-rich foods",
     "clonidine"
   ],
+  "aromatization": "Not applicable — indole alkaloid α2-antagonist, NOT a steroid; no CYP19 interaction",
+  "hepatotoxicity": "Low — anxiogenic and cardiovascular risk dominates (tachycardia, hypertension); rare hepatotoxicity only at overdose (NIH LiverTox 2024)",
   "wadaStatus": null,
   "benefits": [
     "Mobilization of \"stubborn fat\" from α2-rich depots (Ostojic 2006 athlete study: 2.2% fat loss in 3 weeks)",

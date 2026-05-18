@@ -38,6 +38,8 @@ export default {
     "oral hypoglycemics",
     "sarms"
   ],
+  "aromatization": "Nie dotyczy — niepeptydowy agonista receptora greliny (GHSR1a), NIE steroid; brak aktywności substratu aromatazy",
+  "hepatotoxicity": "Niska — wzrost IGF-1 i oporność insulinowa są głównymi zagrożeniami (wzrost HbA1c); brak doniesień o bezpośredniej hepatotoksyczności (Nass 2008 Ann Intern Med)",
   "wadaStatus": "banned",
   "benefits": [
     "Wzrost IGF-1 o 50-100% w 8 tygodni",

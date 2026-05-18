@@ -42,6 +42,8 @@ export default {
     "paracetamol",
     "statins"
   ],
+  "aromatization": "Minimalna — struktura 1-androstenowa, słaby substrat CYP19; konwersja do 1-testosteronu po aktywacji, minimalny E2 (Pope-Kanayama 2014)",
+  "hepatotoxicity": "Wysoka — prohormon aktywowany doustnie przez metylowany pośrednik, obciążenie hepatocytów podobne do 17α first-pass (PubMed Cohen 2014 NEJM list)",
   "wadaStatus": "banned",
   "androgenicRatio": "200:200",
   "bindingAffinity": "1-Testosteron wiąże AR z podobnym powinowactwem jak testosteron, ale z charakterem podobnym do DHT (brak aromatyzacji). Ki ~3-5 nM (Friedel 2006 in vitro).",

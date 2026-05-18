@@ -36,6 +36,8 @@ export default {
     "thyroid hormones",
     "stimulants"
   ],
+  "aromatization": "Nie dotyczy — przemysłowy związek nitroaromatyczny (2,4-dinitrofenol — odsprzęgacz mitochondrialny), NIE steroid",
+  "hepatotoxicity": "Ciężka — toksyczność wielonarządowa; hipertermia (>42°C), rabdomioliza, ostra niewydolność wątroby, MOF; zgony niezależnie od dawki powyżej 600 mg (Grundlingh 2011 PMID 21739343)",
   "wadaStatus": "banned",
   "benefits": [
     "BRAK bezpiecznych korzyści."

@@ -41,6 +41,8 @@ export default {
     "testosterone",
     "tudca"
   ],
+  "aromatization": "Nie — steroid 17α-alkilowany, NIE substrat CYP19; minimalna konwersja estrogenowa (Schänzer 1996 Clin Chem)",
+  "hepatotoxicity": "Wysoka — struktura 17α-alkilowana metabolizowana przez first-pass wątrobowy; zależny od dawki wzrost transaminaz, ryzyko cholestazy (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:24",
   "bindingAffinity": "Powinowactwo do AR umiarkowane; niski potencjał androgenny (24% vs testosteron), wysoka aktywność anaboliczna.",

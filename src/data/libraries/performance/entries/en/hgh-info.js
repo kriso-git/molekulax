@@ -36,6 +36,8 @@ export default {
     "thyroid hormones",
     "glucocorticoids"
   ],
+  "aromatization": "Not applicable — 191-amino-acid peptide hormone (somatotropin), NOT a steroid; no CYP19 interaction",
+  "hepatotoxicity": "Low — no direct hepatotoxicity; IGF-1 elevation indirectly drives T2DM/insulin resistance risk (Mauras 2005)",
   "wadaStatus": "banned",
   "detectionWindow": "~24 h direct rhGH test; biomarker test (IGF-1 + P-III-NP) more sensitive with 7-14 day window.",
   "benefits": [

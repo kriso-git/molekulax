@@ -36,6 +36,8 @@ export default {
     "alcohol",
     "NSAIDs"
   ],
+  "aromatization": "Tak — umiarkowane-wysokie powinowactwo do CYP19; \"wet gains\" (retencja wody, ginekomastia) częste, inhibitor aromatazy konieczny w długich cyklach (Schänzer 1996)",
+  "hepatotoxicity": "Wysoka — 17α-alkilowany, zależny od dawki wzrost ALT/AST; cholestatyczne zapalenie wątroby i peliosis hepatis rzadkie ciężkie przypadki (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "210:60",
   "benefits": [

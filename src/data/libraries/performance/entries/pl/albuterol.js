@@ -37,6 +37,8 @@ export default {
     "MAOI",
     "tricyclic antidepressants"
   ],
+  "aromatization": "Nie dotyczy — agonista β2, NIE steroid; brak interakcji z CYP19",
+  "hepatotoxicity": "Niska — praktycznie brak hepatotoksyczności w dawce terapeutycznej; główne działania niepożądane to drżenie i tachykardia (etykieta FDA Proventil)",
   "wadaStatus": "monitored",
   "detectionWindow": "24-72 godziny mocz (próg WADA: 1000 ng/mL).",
   "benefits": [

@@ -42,6 +42,8 @@ export default {
     "finasteride",
     "warfarin"
   ],
+  "aromatization": "Yes — CYP19 (aromatase) → estradiol; dose-dependent, suppressible with anti-aromatase (anastrozole) (Bhasin 1996 NEJM)",
+  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injected ester bypasses hepatic first-pass (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "100:100",
   "bindingAffinity": "AR-affinity reference 100% (all other AAS measured relative to this).",

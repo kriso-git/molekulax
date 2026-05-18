@@ -42,6 +42,8 @@ export default {
     "paracetamol",
     "statins"
   ],
+  "aromatization": "Minimális — 1-androstene szerkezet, gyenge CYP19 szubsztrát; konverzió 1-testosterone-ná aktiváció után minimális E2 (Pope-Kanayama 2014)",
+  "hepatotoxicity": "Magas — prohormon orálisan aktiválódik metilált intermedieren, 17α-szerű first-pass hepatikus terhelés (PubMed Cohen 2014 N Engl J Med levél)",
   "wadaStatus": "banned",
   "androgenicRatio": "200:200",
   "bindingAffinity": "1-Testosterone az AR-on a tesztoszteronnal hasonló kötésű, de DHT-szerű karakter miatt nem aromatizál. Ki ~3-5 nM tartomány (Friedel 2006 in vitro).",

@@ -38,6 +38,8 @@ export default {
     "oral hypoglycemics",
     "sarms"
   ],
+  "aromatization": "Not applicable — non-peptide ghrelin receptor (GHSR1a) agonist, NOT a steroid; no aromatase substrate activity",
+  "hepatotoxicity": "Low — IGF-1 elevation and insulin resistance are primary risks (HbA1c rise); no direct hepatotoxicity reported (Nass 2008 Ann Intern Med)",
   "wadaStatus": "banned",
   "benefits": [
     "IGF-1 plasma elevation 50-100% in 8 weeks (Murray 1999, Garcia 2017)",

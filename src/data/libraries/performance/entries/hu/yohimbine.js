@@ -40,6 +40,8 @@ export default {
     "tyramine-rich foods",
     "clonidine"
   ],
+  "aromatization": "Nem releváns — indol-alkaloid α2-antagonista, NEM szteroid; nincs CYP19 interakció",
+  "hepatotoxicity": "Alacsony — anxiogén és kardiovaszkuláris rizikó dominál (tachycardia, hypertonia); ritka hepatotoxicitás csak túladagolásban (NIH LiverTox 2024)",
   "wadaStatus": null,
   "benefits": [
     "\"Stubborn fat\" mobilizálás α2-rich depókból (Ostojic 2006 sportoló-vizsgálat: 2.2% zsírvesztés 3 hét alatt)",

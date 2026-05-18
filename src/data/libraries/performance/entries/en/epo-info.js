@@ -35,6 +35,8 @@ export default {
     "iron supplements",
     "ACE inhibitors"
   ],
+  "aromatization": "Not applicable — 165-amino-acid glycoprotein (erythropoietin), NOT a steroid; no aromatase substrate",
+  "hepatotoxicity": "Low — no direct hepatotoxicity; hematocrit elevation with thrombosis risk (CV events, stroke) dominates (FDA Epogen black-box warning)",
   "wadaStatus": "banned",
   "detectionWindow": "Direct rhEPO test: 3-4 days (IEF testing in WADA-accredited labs). Biomarker (ABP, Athlete Biological Passport) sensitive over 4-6 week window.",
   "benefits": [

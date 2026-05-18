@@ -32,6 +32,8 @@ export default {
     "NSAIDs",
     "liver hepatotoxins"
   ],
+  "aromatization": "No — 2α,17α-dimethyl designer steroid, NOT a CYP19 substrate; \"dry gains\" typical (Cohen 2014 NEJM letter designer AAS)",
+  "hepatotoxicity": "Very high — designer 17α-alkylated, severe DILI cases documented (acute hepatitis within 4-6 weeks) (PubMed Robles-Diaz 2015)",
   "wadaStatus": "banned",
   "androgenicRatio": "660:660",
   "benefits": [

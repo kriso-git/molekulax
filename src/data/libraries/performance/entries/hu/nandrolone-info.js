@@ -35,6 +35,8 @@ export default {
     "cabergoline (prolactin)",
     "aromatase inhibitors"
   ],
+  "aromatization": "Minimális — 19-nor szteroid, 5-10% CYP19 konverzió E2-vé (testosterone-hez képest); progesztogén-aktivitás dominál (Bhasin-Kanayama 2003)",
+  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált észter forma hepatikus first-pass-t kerüli (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "125:37",
   "benefits": [

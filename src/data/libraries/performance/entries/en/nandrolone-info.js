@@ -35,6 +35,8 @@ export default {
     "cabergoline (prolactin)",
     "aromatase inhibitors"
   ],
+  "aromatization": "Minimal — 19-nor steroid, 5-10% CYP19 conversion to E2 (vs testosterone); progestogenic activity dominates (Bhasin-Kanayama 2003)",
+  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injected ester bypasses hepatic first-pass (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "125:37",
   "benefits": [

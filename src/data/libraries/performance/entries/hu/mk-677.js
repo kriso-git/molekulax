@@ -38,6 +38,8 @@ export default {
     "oral hypoglycemics",
     "sarms"
   ],
+  "aromatization": "Nem releváns — non-peptid ghrelin-receptor (GHSR1a) agonista, NEM szteroid; nincs aromatáz-szubsztrát aktivitás",
+  "hepatotoxicity": "Alacsony — IGF-1 emelkedés és inzulinrezisztencia a fő kockázat (HbA1c emelkedés); közvetlen hepatotoxicitás nincs leírva (Nass 2008 Ann Intern Med)",
   "wadaStatus": "banned",
   "benefits": [
     "IGF-1 plazma-szint 50-100% emelés 8 hét alatt (Murray 1999, Garcia 2017)",

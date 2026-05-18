@@ -32,6 +32,8 @@ export default {
     "NSAIDs",
     "liver hepatotoxins"
   ],
+  "aromatization": "Nem — 2α,17α-dimetil designer szteroid, NEM CYP19 szubsztrát; \"dry gains\" jellemzők (Cohen 2014 NEJM levél designer AAS)",
+  "hepatotoxicity": "Nagyon magas — designer 17α-alkilált, súlyos DILI esetek dokumentálva (akut hepatitis 4-6 héten belül) (PubMed Robles-Diaz 2015)",
   "wadaStatus": "banned",
   "androgenicRatio": "660:660",
   "benefits": [

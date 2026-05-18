@@ -42,6 +42,8 @@ export default {
     "paracetamol",
     "liver-stress hepatotoxins"
   ],
+  "aromatization": "Nem — 2α,17α-dimetil szerkezet, NEM CYP19 szubsztrát; \"wet gains\" gyakorlatilag nincs (Pope-Kanayama 2014 designer AAS review)",
+  "hepatotoxicity": "Nagyon magas — designer 17α-alkilált, súlyos DILI esetek (akut hepatitis, hepatocelluláris károsodás <30 nap alatt) (PubMed Singh 2009)",
   "wadaStatus": "banned",
   "androgenicRatio": "400:20",
   "bindingAffinity": "Erős androgén-receptor agonista, ~5x erősebb kötés mint a tesztoszteron in vitro (Stilger 2009 in vitro adat).",

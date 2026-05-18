@@ -36,6 +36,8 @@ export default {
     "thyroid hormones",
     "glucocorticoids"
   ],
+  "aromatization": "Nem releváns — 191-aminosav peptidhormon (somatotropin), NEM szteroid; nincs CYP19 interakció",
+  "hepatotoxicity": "Alacsony — közvetlen hepatotoxicitás nincs; IGF-1 elevation indirekt T2DM/inzulinrezisztencia rizikó dominál (Mauras 2005)",
   "wadaStatus": "banned",
   "detectionWindow": "~24 óra direkt rhGH-teszt; biomarker teszt (IGF-1 + P-III-NP) érzékenyebb, 7-14 napos ablak.",
   "benefits": [

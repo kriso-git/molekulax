@@ -41,6 +41,8 @@ export default {
     "testosterone",
     "tudca"
   ],
+  "aromatization": "Nem — 17α-alkilált szteroid, NEM CYP19 szubsztrát; minimális ösztrogén-konverzió (Schänzer 1996 Clin Chem)",
+  "hepatotoxicity": "Magas — 17α-alkilált szerkezet hepatikus first-pass-en metabolizál, dózisfüggő transzaminázemelkedés, kolesztázis-rizikó (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:24",
   "bindingAffinity": "AR-affinitás közepes; alacsony androgén potenciál (24% testosterone-hoz képest), magas anabolikus aktivitás.",

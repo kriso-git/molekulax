@@ -37,6 +37,8 @@ export default {
     "MAOI",
     "tricyclic antidepressants"
   ],
+  "aromatization": "Not applicable — β2-agonist, NOT a steroid; no CYP19 interaction",
+  "hepatotoxicity": "Low — virtually no hepatotoxicity at therapeutic dose; tremor and tachycardia are main side effects (FDA Proventil label)",
   "wadaStatus": "monitored",
   "detectionWindow": "24-72 hours urine (WADA threshold: 1000 ng/mL).",
   "benefits": [

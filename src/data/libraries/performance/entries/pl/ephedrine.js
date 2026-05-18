@@ -39,6 +39,8 @@ export default {
     "TCA",
     "alcohol"
   ],
+  "aromatization": "Nie dotyczy — sympatykomimetyk, NIE steroid; brak aktywności substratu aromatazy",
+  "hepatotoxicity": "Niska — dominuje ryzyko sercowo-naczyniowe (przełom nadciśnieniowy, MI, udar); minimalne obciążenie wątroby (zakaz FDA ephedra 2004)",
   "wadaStatus": "banned",
   "detectionWindow": "24-48 godzin mocz (próg WADA w zawodach: 10 μg/mL).",
   "benefits": [

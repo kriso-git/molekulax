@@ -36,6 +36,8 @@ export default {
     "alcohol",
     "NSAIDs"
   ],
+  "aromatization": "Igen — közepes-magas CYP19 affinitás; \"wet gains\" (víz-retenció, gynecomastia) gyakori, anti-aromatáz kötelező hosszú ciklusban (Schänzer 1996)",
+  "hepatotoxicity": "Magas — 17α-alkilált, dózisfüggő ALT/AST emelkedés; kolesztátikus hepatitis és peliosis hepatis ritka súlyos esetek (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "210:60",
   "benefits": [

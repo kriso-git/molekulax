@@ -35,6 +35,8 @@ export default {
     "iron supplements",
     "ACE inhibitors"
   ],
+  "aromatization": "Nie dotyczy — 165-aminokwasowa glikoproteina (erytropoetyna), NIE steroid; brak substratu aromatazy",
+  "hepatotoxicity": "Niska — brak bezpośredniej hepatotoksyczności; dominuje wzrost hematokrytu z ryzykiem zakrzepicy (zdarzenia CV, udar) (ostrzeżenie black-box FDA Epogen)",
   "wadaStatus": "banned",
   "detectionWindow": "Test bezpośredni: 3-4 dni. Biomarker (ABP) 4-6 tygodni.",
   "benefits": [

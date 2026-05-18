@@ -36,6 +36,8 @@ export default {
     "thyroid hormones",
     "glucocorticoids"
   ],
+  "aromatization": "Nie dotyczy — 191-aminokwasowy hormon peptydowy (somatotropina), NIE steroid; brak interakcji z CYP19",
+  "hepatotoxicity": "Niska — brak bezpośredniej hepatotoksyczności; wzrost IGF-1 pośrednio zwiększa ryzyko T2DM/oporności insulinowej (Mauras 2005)",
   "wadaStatus": "banned",
   "detectionWindow": "~24 h test bezpośredni; biomarker 7-14 dni.",
   "benefits": [

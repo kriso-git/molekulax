@@ -38,6 +38,8 @@ export default {
     "thyroid hormones",
     "insulin"
   ],
+  "aromatization": "Nem releváns — β2-agonista bronchodilatátor, NEM szteroid; nincs aromatáz-szubsztrát",
+  "hepatotoxicity": "Alacsony — kardiotoxicitás dominál (kardiomiocita-károsodás, hypertrophia, arrhythmia); hepatikus terhelés elhanyagolható (Beermann 2009)",
   "wadaStatus": "banned",
   "detectionWindow": "7-14 nap vizelet (WADA-akkreditált laborban érzékeny LC-MS-tesztek).",
   "benefits": [

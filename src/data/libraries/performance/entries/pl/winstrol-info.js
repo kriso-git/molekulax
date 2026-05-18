@@ -36,6 +36,8 @@ export default {
     "NSAIDs",
     "warfarin"
   ],
+  "aromatization": "Nie — heterocykliczny pierścień pirazolowy A, NIE substrat CYP19; obniżenie SHBG to główny efekt niezależny od estrogenów (Schänzer 1996)",
+  "hepatotoxicity": "Wysoka — 17α-alkilowany; obie postacie (doustna i iniekcyjna) hepatotoksyczne, wzrost transaminaz częsty przy cyklach >6 tygodni (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:30",
   "benefits": [

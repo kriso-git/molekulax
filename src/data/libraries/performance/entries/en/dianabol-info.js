@@ -36,6 +36,8 @@ export default {
     "alcohol",
     "NSAIDs"
   ],
+  "aromatization": "Yes — moderate-high CYP19 affinity; \"wet gains\" (water retention, gynecomastia) common, anti-aromatase mandatory in long cycles (Schänzer 1996)",
+  "hepatotoxicity": "High — 17α-alkylated, dose-dependent ALT/AST elevation; cholestatic hepatitis and peliosis hepatis rare severe cases (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "210:60",
   "benefits": [

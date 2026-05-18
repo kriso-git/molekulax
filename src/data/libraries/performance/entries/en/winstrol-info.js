@@ -36,6 +36,8 @@ export default {
     "NSAIDs",
     "warfarin"
   ],
+  "aromatization": "No — heterocyclic pyrazole A-ring, NOT a CYP19 substrate; SHBG reduction is the main estrogen-independent effect (Schänzer 1996)",
+  "hepatotoxicity": "High — 17α-alkylated; both oral and injectable forms hepatotoxic, transaminase elevation common in cycles >6 weeks (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:30",
   "benefits": [

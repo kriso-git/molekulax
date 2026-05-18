@@ -42,6 +42,8 @@ export default {
     "paracetamol",
     "statins"
   ],
+  "aromatization": "Minimal — 1-androstene structure, weak CYP19 substrate; conversion to 1-testosterone after activation, minimal E2 (Pope-Kanayama 2014)",
+  "hepatotoxicity": "High — prohormone activated orally via methylated intermediate, 17α-like first-pass hepatic load (PubMed Cohen 2014 NEJM letter)",
   "wadaStatus": "banned",
   "androgenicRatio": "200:200",
   "bindingAffinity": "1-Testosterone binds the AR with similar affinity to testosterone, but with DHT-like character (no aromatization). Ki ~3-5 nM range (Friedel 2006 in vitro).",

@@ -42,6 +42,8 @@ export default {
     "hcg",
     "pramipexole"
   ],
+  "aromatization": "No — 19-nor steroid, NOT a CYP19 substrate; progesterone receptor activity dominates instead of E2 (Hartgens-Kuipers 2004)",
+  "hepatotoxicity": "Low-moderate — NOT 17α-alkylated, but renal stress (nephrotoxic metabolites) and cardiovascular load dominate (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "500:500",
   "bindingAffinity": "AR affinity ~5x testosterone; partial progesterone-receptor agonist, hence prolactin elevation.",

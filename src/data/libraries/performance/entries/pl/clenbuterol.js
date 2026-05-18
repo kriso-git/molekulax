@@ -38,6 +38,8 @@ export default {
     "thyroid hormones",
     "insulin"
   ],
+  "aromatization": "Nie dotyczy — bronchodilatator agonista β2, NIE steroid; brak substratu aromatazy",
+  "hepatotoxicity": "Niska — dominuje kardiotoksyczność (uszkodzenie kardiomiocytów, przerost, arytmia); znikome obciążenie wątroby (Beermann 2009)",
   "wadaStatus": "banned",
   "detectionWindow": "7-14 dni mocz (czułe testy LC-MS w laboratoriach akredytowanych WADA).",
   "benefits": [

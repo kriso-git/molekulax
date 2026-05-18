@@ -118,9 +118,10 @@ for (const libId of LIBRARIES) {
 
   // Task A (post-roadmap 2026-05-18) — Lab Terminal data field presence check.
   // Pharma needs bioavailability; perf needs aromatization + hepatotoxicity.
-  // SOFT_FAIL=true while A.2/A.3 rollout in progress (multi-batch fill).
-  // Flip to false at end of Task 14 (A.3 batched done) → hard-fail on missing.
-  const LAB_FIELD_SOFT_FAIL = true
+  // SOFT_FAIL flipped to false 2026-05-18 (A.3 batched complete; 40 pharma ×
+  // bioavailability + 17 perf × {aromatization, hepatotoxicity} all filled).
+  // Any future missing lab-field hard-fails the build.
+  const LAB_FIELD_SOFT_FAIL = false
   const LAB_FIELD_CHECKS = {
     pharmaceutical: ['bioavailability'],
     performance: ['aromatization', 'hepatotoxicity'],

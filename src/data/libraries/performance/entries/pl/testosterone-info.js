@@ -42,6 +42,8 @@ export default {
     "finasteride",
     "warfarin"
   ],
+  "aromatization": "Tak — CYP19 (aromataza) → estradiol; zależnie od dawki, hamowane inhibitorem aromatazy (anastrozol) (Bhasin 1996 NEJM)",
+  "hepatotoxicity": "Niska — sterydy macierzysty, NIE 17α-alkilowany; postać iniekcyjna omija first-pass wątrobowy (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "100:100",
   "bindingAffinity": "Powinowactwo do AR referencyjne 100% (wszystkie inne AAS mierzone względem tego).",

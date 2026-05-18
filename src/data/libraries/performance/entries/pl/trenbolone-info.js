@@ -42,6 +42,8 @@ export default {
     "hcg",
     "pramipexole"
   ],
+  "aromatization": "Nie — steroid 19-nor, NIE substrat CYP19; aktywność receptora progesteronu dominuje zamiast E2 (Hartgens-Kuipers 2004)",
+  "hepatotoxicity": "Niska-umiarkowana — NIE 17α-alkilowany, ale dominuje stres nerkowy (nefrotoksyczne metabolity) i obciążenie sercowo-naczyniowe (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "500:500",
   "bindingAffinity": "Powinowactwo do AR ~5x testosteronu; częściowy agonista receptora progesteronowego, stąd wzrost prolaktyny.",

@@ -36,6 +36,8 @@ export default {
     "thyroid hormones",
     "stimulants"
   ],
+  "aromatization": "Not applicable — industrial nitroaromatic compound (2,4-dinitrophenol mitochondrial uncoupler), NOT a steroid",
+  "hepatotoxicity": "Severe — multi-organ toxic; hyperthermia (>42°C), rhabdomyolysis, acute liver failure, MOF; fatalities reported independent of dose above 600 mg (Grundlingh 2011 PMID 21739343)",
   "wadaStatus": "banned",
   "benefits": [
     "NO safe benefits. DNP use poses CRITICAL danger regardless of context."

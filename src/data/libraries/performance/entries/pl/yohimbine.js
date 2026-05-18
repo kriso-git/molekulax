@@ -40,6 +40,8 @@ export default {
     "tyramine-rich foods",
     "clonidine"
   ],
+  "aromatization": "Nie dotyczy — alkaloid indolowy, antagonista α2, NIE steroid; brak interakcji z CYP19",
+  "hepatotoxicity": "Niska — dominuje ryzyko anksjogenne i sercowo-naczyniowe (tachykardia, nadciśnienie); rzadka hepatotoksyczność tylko przy przedawkowaniu (NIH LiverTox 2024)",
   "wadaStatus": null,
   "benefits": [
     "Mobilizacja \"stubborn fat\" z depozytów α2 (Ostojic 2006: 2.2% redukcji w 3 tyg)",

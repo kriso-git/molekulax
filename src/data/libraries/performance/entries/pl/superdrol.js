@@ -42,6 +42,8 @@ export default {
     "paracetamol",
     "liver-stress hepatotoxins"
   ],
+  "aromatization": "Nie — struktura 2α,17α-dimetylowa, NIE substrat CYP19; praktycznie brak \"wet gains\" (Pope-Kanayama 2014 designer AAS review)",
+  "hepatotoxicity": "Bardzo wysoka — designerski 17α-alkilowany, poważne przypadki DILI (ostre zapalenie wątroby, uszkodzenie hepatocytów <30 dni) (PubMed Singh 2009)",
   "wadaStatus": "banned",
   "androgenicRatio": "400:20",
   "bindingAffinity": "Silny agonista receptora androgenowego, ~5x silniejsze wiązanie niż testosteron in vitro (dane Stilger 2009).",

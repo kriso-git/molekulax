@@ -35,6 +35,8 @@ export default {
     "iron supplements",
     "ACE inhibitors"
   ],
+  "aromatization": "Nem releváns — 165-aminosav glikoprotein (erythropoietin), NEM szteroid; nincs aromatáz-szubsztrát",
+  "hepatotoxicity": "Alacsony — közvetlen hepatotoxicitás nincs; hematocrit-emelkedés trombosis-rizikóval (CV-events, stroke) dominál (FDA Epogen black-box warning)",
   "wadaStatus": "banned",
   "detectionWindow": "rhEPO direkt teszt: 3-4 nap (IEF-tesztelés WADA-akkreditált laborban). Biomarker (ABP, Athlete Biological Passport) 4-6 hetes ablakkal érzékeny.",
   "benefits": [

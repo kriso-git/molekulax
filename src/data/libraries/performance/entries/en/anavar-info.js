@@ -41,6 +41,8 @@ export default {
     "testosterone",
     "tudca"
   ],
+  "aromatization": "No — 17α-alkylated steroid, NOT a CYP19 substrate; minimal estrogen conversion (Schänzer 1996 Clin Chem)",
+  "hepatotoxicity": "High — 17α-alkylated structure metabolized via hepatic first-pass; dose-dependent transaminase elevation, cholestasis risk (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:24",
   "bindingAffinity": "AR affinity moderate; low androgenic potential (24% vs testosterone), high anabolic activity.",

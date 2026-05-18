@@ -37,6 +37,8 @@ export default {
     "MAOI",
     "tricyclic antidepressants"
   ],
+  "aromatization": "Nem releváns — β2-agonista, NEM szteroid; nincs CYP19 interakció",
+  "hepatotoxicity": "Alacsony — gyakorlatilag nincs hepatotoxicitás therapeutic dózisban; tremor és tachycardia a fő mellékhatás (FDA Proventil label)",
   "wadaStatus": "monitored",
   "detectionWindow": "24-72 óra vizelet (WADA threshold: 1000 ng/mL).",
   "benefits": [

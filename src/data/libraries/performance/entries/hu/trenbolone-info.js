@@ -42,6 +42,8 @@ export default {
     "hcg",
     "pramipexole"
   ],
+  "aromatization": "Nem — 19-nor szteroid, NEM CYP19 szubsztrát; progeszteron-receptor aktivitás dominál E2 helyett (Hartgens-Kuipers 2004)",
+  "hepatotoxicity": "Alacsony-közepes — NEM 17α-alkilált, de renális stressz (vesetoxikus metabolitok) és kardiovaszkuláris terhelés dominál (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "500:500",
   "bindingAffinity": "AR-affinitás ~5x testosterone; progeszteron-receptor parciális agonista, ezért prolaktin-emelkedés.",
