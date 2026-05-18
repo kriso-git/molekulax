@@ -375,6 +375,13 @@
     0 4px 8px rgba(0,0,0,0.18),
     0 22px 44px -18px rgba(99,102,241,0.30);
 }
+/* Crisp tile imagery — bypass UA bilinear downscale on WebP/AVIF vial photos.
+   Scoped to library tiles only so Hero / Effects / EntryDetail images keep their
+   default smoothing. Added 2026-05-18 (B.2). */
+.peptide-tile img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
 
 /* ── Ticker tape (Hero szalag) ──────────────────────────────────────────── */
 @keyframes ticker {
