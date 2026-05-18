@@ -11,6 +11,7 @@ export default {
   "description": "Amlodypina to długodziałający CCB dihydropirydyny (Pfizer Norvasc, FDA 1987). Selektywnie hamuje kanały Ca typu L w mięśniach gładkich naczyń, powodując rozszerzenie tętnic. Badanie ASCOT-BPLA (Dahlöf 2005 Lancet PMID 16154016) wykazało wyższość kombinacji amlodypina + peryndopryl nad atenolol + bendroflumetiazyd dla redukcji MACE.",
   "mechanism": "Selektywne hamowanie kanałów Ca typu L w mięśniach gładkich naczyń → rozszerzenie. Minimalny efekt mięśnia sercowego.",
   "legalStatus": "UE/PL: na receptę (Norvasc, Amlodypina, generyki). USA: FDA Rx.",
+  "bioavailability": "64-90% (doustnie, dawka terapeutyczna — etykieta FDA Norvasc)",
   "onsetTime": "1-2 weeks (steady BP)",
   "halfLife": "30-50 h (once-daily, very long)",
   "atcCode": "C08CA01",

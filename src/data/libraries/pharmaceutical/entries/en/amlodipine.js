@@ -11,6 +11,7 @@ export default {
   "description": "Amlodipine is a long-acting dihydropyridine CCB (Pfizer Norvasc, FDA 1987). Selectively inhibits vascular smooth muscle L-type Ca channels, producing arterial vasodilation (minimal myocardial effect vs verapamil). ASCOT-BPLA trial (Dahlöf 2005 Lancet PMID 16154016) showed amlodipine + perindopril combination superior to atenolol + bendroflumethiazide for MACE reduction.",
   "mechanism": "Selective L-type Ca channel inhibition in vascular smooth muscle → vasodilation. Minimal myocardial effect.",
   "legalStatus": "EU/HU: prescription only (Norvasc, Amlodipine, generics). USA: FDA Rx.",
+  "bioavailability": "64-90% (oral, therapeutic dose — FDA Norvasc label)",
   "onsetTime": "1-2 weeks (steady BP)",
   "halfLife": "30-50 h (once-daily, very long)",
   "atcCode": "C08CA01",

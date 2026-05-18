@@ -11,6 +11,7 @@ export default {
   "description": "Az Apixaban egy szelektív, reverzibilis Faktor Xa-inhibitor (BMS/Pfizer Eliquis, FDA 2012). A koagulációs kaszkád protrombin-aktiválás-szintjén beavatkozik, ami trombin-képződést csökkenti. Az ARISTOTLE-trial (Granger 2011 NEJM PMID 21870978) szerint pitvarfibrillációban Apixaban szuperior a Warfarinhoz: 21% stroke + szisztémás embólia, 31% major vérzés, és 11% all-cause mortality csökkenés. Más DOAC-kal (Rivaroxaban, Dabigatran, Edoxaban) szemben az Apixabannak van a legalacsonyabb GI-vérzés-kockázata.",
   "mechanism": "Reverzibilis Faktor Xa kompetitív inhibitor. Nem igényel antitrombin-III-at kofaktorként (vs LMWH).",
   "legalStatus": "EU/HU: vényköteles (Eliquis). USA: FDA Rx.",
+  "bioavailability": "~50% (orális, ≤10 mg dózis — FDA Eliquis label)",
   "onsetTime": "3-4 h (peak), 2-4 days (steady-state)",
   "halfLife": "~12 h (twice-daily dosing)",
   "atcCode": "B01AF02",

@@ -11,6 +11,7 @@ export default {
   "description": "Az Amlodipine egy hosszú-hatású dihidropiridin CCB (Pfizer Norvasc, FDA 1987). A vaszkuláris simaizomzat L-típusú Ca-csatornáját szelektíven gátolja, ami artériás vazodilatációhoz vezet (csekély szívizom-érintettség, vs Verapamil). Az ASCOT-BPLA trial (Dahlöf 2005 Lancet PMID 16154016) szerint az Amlodipine + Perindopril kombináció szuperior az Atenolol + Bendroflumethiazide-hoz képest MACE-csökkentés-szempontból. Standard a hipertenzió- és stabil-angina-portfólió.",
   "mechanism": "L-típusú Ca-csatorna szelektív gátlása érfali simaizomban → értágulat. Minimális szívizom-érintettség.",
   "legalStatus": "EU/HU: vényköteles (Norvasc, Amlodipin, generikus). USA: FDA Rx.",
+  "bioavailability": "64-90% (orális, terápiás dózis — FDA Norvasc label)",
   "onsetTime": "1-2 weeks (steady BP)",
   "halfLife": "30-50 h (once-daily, very long)",
   "atcCode": "C08CA01",

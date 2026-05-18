@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Via AMPK activation it inhibits hepatic gluconeogenesis (PEPCK and G6Pase repression), decreases mitochondrial complex I activity (Owen 2000 Biochem J), increases peripheral insulin sensitivity and skeletal muscle glucose uptake. It does not stimulate insulin secretion, therefore monotherapy hypoglycemia risk is minimal.",
   "legalStatus": "EU/HU: prescription only (Glucophage, Siofor, Metfogamma, Adimet). USA: FDA Rx (Glucophage, Fortamet, Glumetza). No abuse potential, not a scheduled substance. PCOS and prediabetes indications are off-label but widespread in clinical practice.",
+  "bioavailability": "~50-60% (oral, fasted, 500 mg tablet — FDA Glucophage label)",
   "onsetTime": "1-3 h (single dose), 4-7 days (steady-state HbA1c lowering)",
   "halfLife": "4-9 h (plasma), ~17 h (erythrocyte compartment)",
   "atcCode": "A10BA02",

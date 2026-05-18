@@ -11,6 +11,7 @@ export default {
   "description": "Apiksaban to selektywny, odwracalny inhibitor czynnika Xa (BMS/Pfizer Eliquis, FDA 2012). Interweniuje na poziomie aktywacji protrombiny w kaskadzie krzepnięcia, redukując generację trombiny. Badanie ARISTOTLE (Granger 2011 NEJM PMID 21870978) wykazało wyższość apiksabanu nad warfaryną w AF: 21% redukcja udaru + embolii, 31% poważnych krwawień, 11% śmiertelności ogólnej. Wśród DOAC apiksaban ma najniższe ryzyko krwawienia GI.",
   "mechanism": "Odwracalny konkurencyjny inhibitor czynnika Xa. Nie wymaga antytrombiny III jako kofaktora (vs LMWH).",
   "legalStatus": "UE/PL: na receptę (Eliquis). USA: FDA Rx.",
+  "bioavailability": "~50% (doustnie, dawki do 10 mg — etykieta FDA Eliquis)",
   "onsetTime": "3-4 h (peak), 2-4 days (steady-state)",
   "halfLife": "~12 h (twice-daily dosing)",
   "atcCode": "B01AF02",

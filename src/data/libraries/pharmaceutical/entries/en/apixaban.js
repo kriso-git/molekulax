@@ -11,6 +11,7 @@ export default {
   "description": "Apixaban is a selective, reversible Factor Xa inhibitor (BMS/Pfizer Eliquis, FDA 2012). Intervenes at coagulation cascade prothrombin activation level, reducing thrombin generation. ARISTOTLE trial (Granger 2011 NEJM PMID 21870978) showed apixaban superior to warfarin in AF: 21% stroke + systemic embolism, 31% major bleeding, and 11% all-cause mortality reduction. Among DOACs (rivaroxaban, dabigatran, edoxaban), apixaban has lowest GI bleeding risk.",
   "mechanism": "Reversible competitive Factor Xa inhibitor. Does not require antithrombin III as cofactor (vs LMWH).",
   "legalStatus": "EU/HU: prescription only (Eliquis). USA: FDA Rx.",
+  "bioavailability": "~50% (oral, doses up to 10 mg — FDA Eliquis label)",
   "onsetTime": "3-4 h (peak), 2-4 days (steady-state)",
   "halfLife": "~12 h (twice-daily dosing)",
   "atcCode": "B01AF02",
