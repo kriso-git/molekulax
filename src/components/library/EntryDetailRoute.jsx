@@ -8,6 +8,7 @@ import { useEffect, useState, lazy, Suspense } from 'react'
 import { X } from 'lucide-react'
 import { getLibrary } from '../../data/libraries'
 import { adaptLibraryEntry } from './adaptLibraryEntry'
+import { consumeReturnState } from './returnState'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
@@ -95,31 +96,18 @@ export default function EntryDetailRoute({ hash }) {
   // fall back to a manual scrollIntoView so the user still moves.
   const closeDetail = () => {
     if (typeof window === 'undefined') return
-    // Restore-aware close: if a returnState snapshot exists from a fresh
-    // tile-click in this session, restore the LibraryGallery state on
-    // the way back to #library. Otherwise current behavior (scroll to
-    // library or hash set to library).
-    let restoreData = null
-    try {
-      const raw = sessionStorage.getItem('molekulax:returnState')
-      if (raw) {
-        const snapshot = JSON.parse(raw)
-        const ageMs = Date.now() - (snapshot.token || 0)
-        if (ageMs >= 0 && ageMs < 30 * 60 * 1000) {
-          restoreData = snapshot
-        }
-        sessionStorage.removeItem('molekulax:returnState')
-      }
-    } catch (e) { /* corrupted JSON → fresh landing */ }
+    const restoreData = consumeReturnState()
 
     if (restoreData) {
+      // Pipeline handoff: LibraryGallery's library.id useEffect (Task C.3) reads
+      // and deletes this on next mount. Ephemeral, single-consumer, single-shot.
       window.__libraryGalleryPendingRestore__ = restoreData
       if (restoreData.libraryId) setLibraryId(restoreData.libraryId)
       window.location.hash = 'library'
       return
     }
 
-    // Original fallback behavior
+    // Original fallback behavior (no snapshot or stale/corrupted)
     if (parsed?.library) setLibraryId(parsed.library)
     if (window.location.hash === '#library') {
       requestAnimationFrame(() => {
@@ -156,29 +144,20 @@ export default function EntryDetailRoute({ hash }) {
   }, [parsed?.library, parsed?.id])
 
   // Browser-back path: if hash transitions from #entry/... to #library or
-  // empty (popstate), closeDetail() is NOT called automatically. We need
-  // to consume sessionStorage on the same transition to ensure browser-back
-  // also restores library state.
+  // empty (popstate), closeDetail() is NOT called automatically. We consume
+  // the snapshot here too so browser-back also restores. Double-consume across
+  // closeDetail → hashchange is safe — consumeReturnState removes-and-returns
+  // atomically per sessionStorage call.
   useEffect(() => {
     if (typeof window === 'undefined') return
     const onHashChange = () => {
       const newHash = window.location.hash
       if (newHash === '#library' || newHash === '' || newHash === '#') {
-        // Same restore-consume logic as closeDetail, but only PUBLISHES
-        // the pending-restore — does NOT re-set the hash (already on the
-        // target).
-        try {
-          const raw = sessionStorage.getItem('molekulax:returnState')
-          if (raw) {
-            const snapshot = JSON.parse(raw)
-            const ageMs = Date.now() - (snapshot.token || 0)
-            if (ageMs >= 0 && ageMs < 30 * 60 * 1000) {
-              window.__libraryGalleryPendingRestore__ = snapshot
-              if (snapshot.libraryId) setLibraryId(snapshot.libraryId)
-            }
-            sessionStorage.removeItem('molekulax:returnState')
-          }
-        } catch (e) { /* ignore */ }
+        const snapshot = consumeReturnState()
+        if (snapshot) {
+          window.__libraryGalleryPendingRestore__ = snapshot
+          if (snapshot.libraryId) setLibraryId(snapshot.libraryId)
+        }
       }
     }
     window.addEventListener('hashchange', onHashChange)
