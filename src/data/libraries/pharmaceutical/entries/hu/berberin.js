@@ -11,6 +11,7 @@ export default {
   "description": "A Berberin egy izokinolin-alkaloid, amelyet a hagyományos kínai (Huang Lian) és ayurvedikus (Daruharidra) gyógynövény-terápiákban használtak évszázadokon át. Az AMPK-aktiváció mechanizmusa miatt \"természetes Metformin\"-ként marketingelik, de a klinikai evidencia szerényebb és változatos minőségű. Egy 2008 RCT (Yin J 2008 PMID 18397984) szerint 500 mg 3x/nap 3 hónapig HbA1c -1,0% csökkenést mutatott T2DM-ben (hasonló Metformin-szintű hatás). Egy 2012 meta-analízis (Lan 2012 PMID 22377268) szignifikáns dyslipidémia + hipoglikémiás hatást igazolt, de a trial-minőség többségében alacsony. Biodostępność rossz (~5%), nagy dózis szükséges. NEM FDA-jóváhagyott gyógyszer, hanem étrendkiegészítő — minőség- és dózispontosság-bizonytalanság jelentős.",
   "mechanism": "AMPK-aktivátor (mint Metformin), hepatikus glükoneogenezis-gátlás. Másodlagos hatások: bél-flóra-moduláció (Lactobacillus, Bifidobacterium-növelés), LDL-csökkenés PCSK9-szuppresszióval, gyulladás-csökkentés.",
   "legalStatus": "EU/HU/USA: étrendkiegészítő (NEM gyógyszer). OTC elérhető. Kína-ban Rx-szerként is forgalmazott bakteriális hasmenésre.",
+  "bioavailability": "<1% (orális, P-gp efflux + extenzív first-pass — PubMed Liu 2010 Front Pharmacol)",
   "onsetTime": "2-4 weeks (HbA1c effect)",
   "halfLife": "~5 h (poor oral bioavailability ~5%)",
   "atcCode": "No ATC assigned (not a registered drug)",

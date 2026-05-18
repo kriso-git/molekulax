@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Pierścień β-laktamowy wiąże aktywne miejsca kluczowych enzymów syntezy ściany komórkowej bakterii (PBP, białka wiążące penicylinę, transpeptydazy), hamując sieciowanie peptydoglikanu. Ściana komórkowa słabnie, prowadząc do lizy z powodu stresu osmotycznego. Działa bakteriobójczo na podatne organizmy. Ze względu na pseudoodwracalne wiązanie efekt jest zależny od dawki i czasu (T > MIC jest ważniejszym predyktorem AUC odpowiedzi klinicznej).",
   "legalStatus": "UE/PL: na receptę (Amoxil, Ospamox, Hiconcil, Duomox, generyki). USA: FDA Rx. Program stewardship antybiotykowy nakłada ścisłe kryteria przepisywania — empiryczne przepisywanie tylko dla potwierdzonej infekcji bakteryjnej. Kategoria WHO AWaRe: ACCESS (szeroko stosowany, niskie ryzyko oporności).",
+  "bioavailability": "~74-92% (doustnie, niewielki wpływ pokarmu — etykieta FDA Amoxil)",
   "onsetTime": "1-2 h (plasma peak), 24-72 h (clinical symptom response)",
   "halfLife": "1-1.5 h (normal renal function); extends to 7-21 h in renal failure",
   "atcCode": "J01CA04",

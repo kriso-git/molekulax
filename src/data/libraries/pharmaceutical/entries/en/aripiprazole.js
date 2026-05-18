@@ -11,6 +11,7 @@ export default {
   "description": "Aripiprazole is a \"third-generation\" atypical antipsychotic (Otsuka/Bristol-Myers Squibb Abilify, FDA 2002). Mechanism: D2-DOPAMINE partial agonist (~30% intrinsic activity) + 5-HT1A partial agonist + 5-HT2A antagonist. Unique pharmacology: in dopamine-overactive areas (mesolimbic, positive symptoms) it inhibits, in dopamine-underactive areas (mesocortical, negative symptoms, anhedonia) it partially stimulates. Clinical result: lower metabolic side effects (vs olanzapine), less sedating, less prolactin elevation. FDA warning for impulse-control disorders (compulsive gambling, hypersexuality) — rare but notable due to partial D2 agonism.",
   "mechanism": "D2-DA partial agonist (~30% intrinsic) + 5-HT1A partial agonist + 5-HT2A antagonist. Functional dopamine stabilizer: inhibits hyperactive areas, stimulates hypoactive ones.",
   "legalStatus": "EU/HU: prescription only (Abilify, generics). USA: FDA Rx.",
+  "bioavailability": "87% (oral tablet — FDA Abilify label, Section 12.3)",
   "onsetTime": "1-2 weeks (acute), 4-6 weeks (full response)",
   "halfLife": "~75 h (active metabolite dehydroaripiprazole 94 h)",
   "atcCode": "N05AX12",

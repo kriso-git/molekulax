@@ -11,6 +11,7 @@ export default {
   "description": "A Bisoprolol egy magas-szelektivitású β1-adrenerg receptor antagonista (Merck Concor, FDA 1992). A β1/β2 szelektivitás ~75:1, ami a légúti és perifériás β2-mediált mellékhatásokat (bronchospasmus, vazokonstrikció) jelentősen csökkenti vs nem-szelektív β-blokkolók (Propranolol). A CIBIS-II trial (CIBIS-II 1999 Lancet PMID 9988345) szerint HFrEF-betegen 34%-os relatív mortalitás-csökkenést okoz. Standard a hipertenzió-, HFrEF- és post-MI-portfolió.",
   "mechanism": "β1-szelektív kompetitív antagonista. Negatív chronotrop (HR-csökkenés), negatív inotrop, negatív dromotop (AV-konduktancia-lassítás). Renin-csökkentés (juxtaglomeruláris β1-blokk).",
   "legalStatus": "EU/HU: vényköteles (Concor, Bisocard, generikus). USA: FDA Rx (Zebeta).",
+  "bioavailability": "~80% (orális, 10 mg dózis — FDA Zebeta label)",
   "onsetTime": "1-2 h (acute HR), 1-2 weeks (steady BP)",
   "halfLife": "10-12 h (once-daily)",
   "atcCode": "C07AB07",

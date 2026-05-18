@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "A norepinefrin és dopamin reuptake gátlása mérsékelt mértékben (NDRI, ~3x DAT/NET szelektivitás SERT-tel szemben), valamint a neurális nikotin-receptor (α3β2, α4β2) antagonista hatása. A nikotin-receptor blokk magyarázza a dohányzás-leszokást támogató hatást: csökkenti a nikotin-elvonás dysphoriás komponensét. Aktív metabolit (hidroxibupropion) hasonlóan aktív, és a CYP2B6-katalizált képződése jelentős inter-individuális variabilitást mutat.",
   "legalStatus": "EU/HU: vényköteles (Wellbutrin, Zyban smoking-cessation, generikus). USA: FDA Rx, nem ütemezett. SR (sustained release) és XL (extended release) formulációk standardak. Generikus formák széles körben hozzáférhetőek.",
+  "bioavailability": "Abszolút értékben nem karakterizált (IV formula nincs); gyors orális felszívódás, Tmax ~3 h — FDA Wellbutrin label",
   "onsetTime": "1-2 weeks (motivation, focus, energy), 4-6 weeks (full antidepressant response)",
   "halfLife": "~21 h (parent); hydroxybupropion metabolite 20-37 h, similar activity",
   "atcCode": "N06AX12",

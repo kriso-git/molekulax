@@ -11,6 +11,7 @@ export default {
   "description": "Berberyna to alkaloid izochinolinowy stosowany przez wieki w tradycyjnej chińskiej (Huang Lian) i ajurwedyjskiej (Daruharidra) terapii ziołowej. Marketingowany jako \"naturalna metformina\" z powodu aktywacji AMPK, ale dowody kliniczne są skromne i o zmiennej jakości. RCT 2008 (Yin J 2008 PMID 18397984) wykazało 500 mg 3x/dzień przez 3 miesiące redukcję HbA1c -1,0% w T2DM (porównywalnie z metforminą). Metaanaliza 2012 (Lan 2012 PMID 22377268) potwierdziła istotne efekty dyslipidemii + hipoglikemiczne, ale jakość badań przeważnie niska. Biodostępność słaba (~5%), wymagane duże dawki. NIE jest zatwierdzonym lekiem FDA, lecz suplementem dietetycznym — znacząca niepewność jakości i precyzji dawki.",
   "mechanism": "Aktywator AMPK (jak metformina), hamujący glukoneogenezę wątrobową. Efekty wtórne: modulacja flory jelitowej (wzrost Lactobacillus, Bifidobacterium), redukcja LDL przez supresję PCSK9, działanie przeciwzapalne.",
   "legalStatus": "UE/PL/USA: suplement diety (NIE lek). Dostępna OTC. W Chinach również jako Rx na biegunkę bakteryjną.",
+  "bioavailability": "<1% (doustnie, efflux P-gp + intensywny first-pass — PubMed Liu 2010 Front Pharmacol)",
   "onsetTime": "2-4 weeks (HbA1c effect)",
   "halfLife": "~5 h (poor oral bioavailability ~5%)",
   "atcCode": "No ATC assigned (not a registered drug)",

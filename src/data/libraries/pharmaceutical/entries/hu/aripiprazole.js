@@ -11,6 +11,7 @@ export default {
   "description": "Az Aripiprazole egy \"harmadik generációs\" atipikus antipszichotikum (Otsuka/Bristol-Myers Squibb Abilify, FDA 2002). Mechanizmus: D2-DOPAMIN parciális agonista (kb. 30%-os intrinsic aktivitással) + 5-HT1A parciális agonista + 5-HT2A antagonista. Ez egyedülálló farmakológiai profil: dopamin-túl-aktivációs területeken (pl. mezolimbikus, pozitív tünet) gátol, dopamin-hipoaktív területeken (pl. mezokortikális, negatív tünet, anhedonia) parciálisan stimulál. Klinikai eredmény: alacsonyabb metabolikus mellékhatás (vs Olanzapine), kevésbé szedáló, és kevesebb prolaktin-emelkedés. FDA-warning impulzuskontroll-zavarokra (kompulzív szerencsejáték, hypersexualitás) — ritka, de figyelmeztető a parciális D2-agonizmus miatt.",
   "mechanism": "D2-DA parciális agonista (~30% intrinsic) + 5-HT1A parciális agonista + 5-HT2A antagonista. Funkcionális dopamin-stabilizátor: hiperaktív területen gátol, hipoaktív területen stimulál.",
   "legalStatus": "EU/HU: vényköteles (Abilify, generikus). USA: FDA Rx.",
+  "bioavailability": "87% (orális tabletta — FDA Abilify label, Section 12.3)",
   "onsetTime": "1-2 weeks (acute), 4-6 weeks (full response)",
   "halfLife": "~75 h (active metabolite dehydroaripiprazole 94 h)",
   "atcCode": "N05AX12",

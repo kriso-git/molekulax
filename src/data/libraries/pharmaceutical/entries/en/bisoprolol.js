@@ -11,6 +11,7 @@ export default {
   "description": "Bisoprolol is a highly selective β1-adrenergic receptor antagonist (Merck Concor, FDA 1992). β1/β2 selectivity ~75:1 significantly reduces airway and peripheral β2-mediated side effects (bronchospasm, vasoconstriction) vs non-selective β-blockers (propranolol). CIBIS-II trial (CIBIS-II 1999 Lancet PMID 9988345) showed 34% relative mortality reduction in HFrEF. Standard in hypertension, HFrEF, and post-MI portfolio.",
   "mechanism": "β1-selective competitive antagonist. Negative chronotropic (HR drop), negative inotropic, negative dromotropic (AV conduction slowing). Renin reduction (juxtaglomerular β1 block).",
   "legalStatus": "EU/HU: prescription only (Concor, Bisocard, generics). USA: FDA Rx (Zebeta).",
+  "bioavailability": "~80% (oral, 10 mg dose — FDA Zebeta label)",
   "onsetTime": "1-2 h (acute HR), 1-2 weeks (steady BP)",
   "halfLife": "10-12 h (once-daily)",
   "atcCode": "C07AB07",

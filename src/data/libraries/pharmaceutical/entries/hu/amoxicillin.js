@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "A β-laktám-gyűrű kötődik a baktérium sejtfal-szintézis kulcsenzimeinek aktív centrumába (PBP, penicillin-binding protein, transzpeptidázok), gátolva a peptidoglikán-keresztkötést. A baktérium-sejtfal gyengül, az ozmotikus stressz okozta lízishez vezet. Baktericid hatású szuszceptibilis organizmusokon. Az osztott pszeudo-irreverzibilis kötés miatt a hatás dózis-függő és idő-függő (T > MIC az AUC fontosabb prediktora a klinikai válasznak).",
   "legalStatus": "EU/HU: vényköteles (Amoxil, Ospamox, Hiconcil, Duomox, generikus). USA: FDA Rx. Antibiotikum-stewardship-program szigorú felírási feltételekkel — empirikus felírás csak megerősített bakteriális infekcióra. WHO AWaRe kategória: ACCESS (széles körű, alacsony rezisztencia-kockázattal).",
+  "bioavailability": "~74-92% (orális, étkezéstől kis mértékben függő — FDA Amoxil label)",
   "onsetTime": "1-2 h (plasma peak), 24-72 h (clinical symptom response)",
   "halfLife": "1-1.5 h (normal renal function); extends to 7-21 h in renal failure",
   "atcCode": "J01CA04",

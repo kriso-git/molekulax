@@ -11,6 +11,7 @@ export default {
   "description": "Doxycycline is a long-acting tetracycline (Pfizer Vibramycin, FDA 1967). Inhibits bacterial 30S ribosomal subunit (aminoacyl-tRNA binding block). Spectrum: atypicals (Mycoplasma, Chlamydia, Rickettsia, Borrelia, Treponema), some Gram-positive (susceptible Staphylococcus), H. pylori (second-line). Key indications: early-stage Lyme disease, atypical pneumonia, chlamydia STD, malaria prevention (travel), severe acne (low-dose chronic). Side effect profile generally well-tolerated, photosensitivity and GI most common.",
   "mechanism": "30S ribosomal subunit block → aminoacyl-tRNA cannot bind → protein synthesis block. Bacteriostatic.",
   "legalStatus": "EU/HU: prescription only (Vibramycin, Doxakne, generics). USA: FDA Rx.",
+  "bioavailability": "~95-100% (oral, \"virtually completely absorbed\" — FDA Vibramycin label)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "18-22 h (once or twice daily)",
   "atcCode": "J01AA02",

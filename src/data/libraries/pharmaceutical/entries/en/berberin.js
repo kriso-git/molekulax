@@ -11,6 +11,7 @@ export default {
   "description": "Berberine is an isoquinoline alkaloid used for centuries in traditional Chinese (Huang Lian) and Ayurvedic (Daruharidra) herbal therapies. Marketed as \"natural metformin\" due to AMPK activation, but clinical evidence is modest and variable in quality. A 2008 RCT (Yin J 2008 PMID 18397984) showed 500 mg 3x/day for 3 months produced -1.0% HbA1c reduction in T2DM (Metformin-comparable). A 2012 meta-analysis (Lan 2012 PMID 22377268) confirmed significant dyslipidemia + hypoglycemic effects, but most trial quality was low. Bioavailability poor (~5%), large doses needed. NOT FDA-approved drug but dietary supplement — significant quality and dose-precision uncertainty.",
   "mechanism": "AMPK activator (like metformin), inhibiting hepatic gluconeogenesis. Secondary effects: gut flora modulation (Lactobacillus, Bifidobacterium increase), LDL reduction via PCSK9 suppression, anti-inflammatory.",
   "legalStatus": "EU/HU/USA: dietary supplement (NOT a drug). OTC available. In China also marketed as Rx for bacterial diarrhea.",
+  "bioavailability": "<1% (oral, P-gp efflux + extensive first-pass — PubMed Liu 2010 Front Pharmacol)",
   "onsetTime": "2-4 weeks (HbA1c effect)",
   "halfLife": "~5 h (poor oral bioavailability ~5%)",
   "atcCode": "No ATC assigned (not a registered drug)",

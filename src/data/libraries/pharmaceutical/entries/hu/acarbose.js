@@ -11,6 +11,7 @@ export default {
   "description": "Az Acarbose egy pszeudotetrasacchaaridot, amely a vékonybél kefeszegélyén az alpha-glükozidáz enzimet kompetitíven gátolja, lassítva a szénhidrát-hidrolízist és a glükóz-felszívódást. Ennek eredménye a postprandiális glükóz-csúcsok csökkentése. Az UKPDS-en kívüli legjelentősebb evidencia a STOP-NIDDM trial (Chiasson 2002 Lancet PMID 12086760), ami a prediabétesz T2DM-progressziójának 25%-os csökkentését mutatta. Az Acarbose nem szisztémás (csak bélben aktív), ezért hipoglikémia-kockázat monoterápiában gyakorlatilag nulla. Jelenleg főleg Ázsiában (Kína, Japán) népszerű, ahol a magas-CHO étrend miatt a postprandiális glükóz-management klinikailag releváns.",
   "mechanism": "Alpha-glükozidáz enzim (szacharáz, maltáz, glukoamiláz) kompetitív gátlása a bél kefeszegélyén. Eredmény: a komplex szénhidrátok lassabban bomlanak glükózra, a postprandiális glükóz-csúcs lecsökken és kitolódik.",
   "legalStatus": "EU/HU: vényköteles (Glucobay). USA: FDA Rx (Precose).",
+  "bioavailability": "<2% (orális, aktív hatóanyag — FDA Precose label; ~35% összes radioaktivitás)",
   "onsetTime": "Acute (per-meal effect), 4-8 weeks (HbA1c)",
   "halfLife": "~2 h (minimally absorbed, mostly bowel-active)",
   "atcCode": "A10BF01",

@@ -11,6 +11,7 @@ export default {
   "description": "Azytromycyna to półsyntetyczny antybiotyk makrolidowy (Pfizer Zithromax, FDA 1991). Hamuje bakteryjną podjednostkę rybosomalną 50S (translokacja RNA), generalnie bakteriostatyczna, bakteriobójcza dla wysoko podatnych Gram-dodatnich (S. pneumoniae). Spektrum: typowe oddechowe (S. pneumoniae, H. influenzae) + atypowe (Mycoplasma, Chlamydia, Legionella) + STD (Chlamydia trachomatis, Neisseria gonorrhoeae). Unikalna PK: stężenie tkankowe 100x osocza, umożliwiając \"Z-pack\" 5-dniowy protokół. Ostrzeżenie FDA o wydłużeniu QT (Ray 2012 NEJM PMID 22591294 — podwyższona śmiertelność CV).",
   "mechanism": "Wiązanie z 50S rybosomem bakteryjnym → hamowanie translokacji mRNA → blok syntezy białek. Bakteriostatyczna. Wysoka penetracja tkankowa + powolne uwalnianie.",
   "legalStatus": "UE/PL: na receptę (Sumamed, Azitrolid, Zithromax, generyki). USA: FDA Rx.",
+  "bioavailability": "38% (doustnie, kapsułka 250 mg — etykieta FDA Zithromax)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "~68 h (very long, allows Z-pack format)",
   "atcCode": "J01FA10",

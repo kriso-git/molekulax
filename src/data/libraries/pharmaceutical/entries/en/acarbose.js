@@ -11,6 +11,7 @@ export default {
   "description": "Acarbose is a pseudotetrasaccharide that competitively inhibits alpha-glucosidase enzyme on small intestinal brush border, slowing carbohydrate hydrolysis and glucose absorption. This reduces postprandial glucose peaks. Beyond UKPDS, key evidence is STOP-NIDDM trial (Chiasson 2002 Lancet PMID 12086760) showing 25% reduction in prediabetes-to-T2DM progression. Acarbose is non-systemic (gut-active only), so monotherapy hypoglycemia risk is essentially zero. Currently popular mainly in Asia (China, Japan) where high-CHO diet makes postprandial glucose management clinically relevant.",
   "mechanism": "Competitive inhibition of alpha-glucosidase enzyme (sucrase, maltase, glucoamylase) on intestinal brush border. Result: complex carbs break down to glucose more slowly, lowering and delaying postprandial glucose peak.",
   "legalStatus": "EU/HU: prescription only (Glucobay). USA: FDA Rx (Precose).",
+  "bioavailability": "<2% (oral, active drug — FDA Precose label; ~35% total radioactivity)",
   "onsetTime": "Acute (per-meal effect), 4-8 weeks (HbA1c)",
   "halfLife": "~2 h (minimally absorbed, mostly bowel-active)",
   "atcCode": "A10BF01",

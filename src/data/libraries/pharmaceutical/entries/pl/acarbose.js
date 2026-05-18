@@ -11,6 +11,7 @@ export default {
   "description": "Akarboza to pseudotetrasacharyd, który konkurencyjnie hamuje enzym alfa-glukozydazy na rąbku szczoteczkowym jelita cienkiego, spowalniając hydrolizę węglowodanów i wchłanianie glukozy. To zmniejsza piki glukozy poposiłkowej. Poza UKPDS kluczowe dowody to badanie STOP-NIDDM (Chiasson 2002 Lancet PMID 12086760) wykazujące 25% redukcję progresji prediabetes do T2DM. Akarboza nie jest ogólnoustrojowa (aktywna tylko jelitowo), więc ryzyko hipoglikemii w monoterapii jest praktycznie zerowe. Obecnie popularna głównie w Azji (Chiny, Japonia), gdzie dieta wysokowęglowodanowa czyni zarządzanie glukozą poposiłkową istotne klinicznie.",
   "mechanism": "Konkurencyjne hamowanie enzymu alfa-glukozydazy (sukraza, maltaza, glukoamylaza) na rąbku szczoteczkowym jelita. Rezultat: złożone węglowodany rozkładają się do glukozy wolniej, obniżając i opóźniając pik glukozy poposiłkowej.",
   "legalStatus": "UE/PL: na receptę (Glucobay). USA: FDA Rx (Precose).",
+  "bioavailability": "<2% (doustnie, substancja czynna — etykieta FDA Precose; ~35% całkowitej radioaktywności)",
   "onsetTime": "Acute (per-meal effect), 4-8 weeks (HbA1c)",
   "halfLife": "~2 h (minimally absorbed, mostly bowel-active)",
   "atcCode": "A10BF01",

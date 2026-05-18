@@ -11,6 +11,7 @@ export default {
   "description": "A Ciprofloxacin a fluorokinolon-osztály prototípusa (Bayer Cipro, FDA 1987). DNS-giráz és topoizomeráz-IV gátlása révén baktericid. Erős Gram-negatív (E. coli, Pseudomonas, Klebsiella), mérsékelt Gram-pozitív aktivitás. Az FDA 2016/2018 BOXED WARNING jelentős: ínszakadás, perifériás neuropátia, mentális mellékhatás (zavartság, delirium), aorta-aneurizma. Az \"antibiotic stewardship\" miatt enyhe UTI-re NEM ajánlott első-vonalként — komplikációs UTI, prosztatitisz, akut sinusitis (nem-súlyos), GI-infekciók (Salmonella, Shigella) tipikus indikációk. A FDA + EMA 2019-es újraértékelés a fluorokinolonok használatát szigorúan limitálja.",
   "mechanism": "DNS-giráz (topoizomeráz-II) és topoizomeráz-IV szelektív gátlás → DNS-replikáció és transzkripció blokk → baktericid.",
   "legalStatus": "EU/HU: vényköteles (Ciprobay, Ciprinol, generikus). USA: FDA Rx (Cipro).",
+  "bioavailability": "~70% (orális tabletta, étkezéstől független — FDA Cipro label)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "~4 h (twice-daily dosing)",
   "atcCode": "J01MA02",

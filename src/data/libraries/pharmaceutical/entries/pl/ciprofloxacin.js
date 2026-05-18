@@ -11,6 +11,7 @@ export default {
   "description": "Cyprofloksacyna to prototyp klasy fluorochinolonów (Bayer Cipro, FDA 1987). Bakteriobójcza przez hamowanie gyrazy DNA i topoizomerazy IV. Silna aktywność Gram-ujemna (E. coli, Pseudomonas, Klebsiella), umiarkowana Gram-dodatnia. OSTRZEŻENIE FDA 2016/2018 BOXED: zerwania ścięgien, neuropatia obwodowa, działania mentalne (dezorientacja, delirium), tętniak aorty. Ze względu na stewardship antybiotykowy NIE pierwsza linia dla łagodnego UTI — typowe wskazania: powikłany UTI, zapalenie prostaty, niesilne ostre zapalenie zatok, infekcje GI (Salmonella, Shigella). Ponowna ocena FDA + EMA 2019 ściśle ogranicza stosowanie fluorochinolonów.",
   "mechanism": "Selektywne hamowanie gyrazy DNA (topoizomeraza II) i topoizomerazy IV → blok replikacji i transkrypcji DNA → bakteriobójcze.",
   "legalStatus": "UE/PL: na receptę (Ciprobay, Ciprinol, generyki). USA: FDA Rx (Cipro).",
+  "bioavailability": "~70% (doustnie tabletka, niezależnie od pokarmu — etykieta FDA Cipro)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "~4 h (twice-daily dosing)",
   "atcCode": "J01MA02",

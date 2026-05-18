@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Moderate norepinephrine and dopamine reuptake inhibition (NDRI, ~3x DAT/NET selectivity vs SERT), plus neuronal nicotinic receptor (α3β2, α4β2) antagonism. The nicotinic block explains smoking-cessation effect: reduces the dysphoric component of nicotine withdrawal. Active metabolite (hydroxybupropion) similarly active, with CYP2B6-catalyzed formation showing major interindividual variability.",
   "legalStatus": "EU/HU: prescription only (Wellbutrin, Zyban smoking-cessation, generics). USA: FDA Rx, not scheduled. SR (sustained release) and XL (extended release) formulations standard. Generic forms widely available.",
+  "bioavailability": "Not characterized as absolute (no IV formulation exists); rapid oral absorption, Tmax ~3 h — FDA Wellbutrin label",
   "onsetTime": "1-2 weeks (motivation, focus, energy), 4-6 weeks (full antidepressant response)",
   "halfLife": "~21 h (parent); hydroxybupropion metabolite 20-37 h, similar activity",
   "atcCode": "N06AX12",

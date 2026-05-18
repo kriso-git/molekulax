@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Umiarkowane hamowanie wychwytu zwrotnego norepinefryny i dopaminy (NDRI, ~3x selektywność DAT/NET vs SERT), plus antagonizm receptorów nikotynowych neuronalnych (α3β2, α4β2). Blokada nikotynowa wyjaśnia efekt rzucania palenia: zmniejsza dysforyczny komponent abstynencji nikotynowej. Aktywny metabolit (hydroksybupropion) podobnie aktywny, z formacją katalizowaną przez CYP2B6 wykazującą dużą zmienność międzyosobniczą.",
   "legalStatus": "UE/PL: na receptę (Wellbutrin, Zyban rzucanie palenia, generyki). USA: FDA Rx, niekontrolowany. Standardowe formy SR (przedłużone uwalnianie) i XL (rozszerzone uwalnianie). Formy generyczne szeroko dostępne.",
+  "bioavailability": "Nieokreślone bezwzględnie (brak postaci IV); szybkie wchłanianie doustne, Tmax ~3 h — etykieta FDA Wellbutrin",
   "onsetTime": "1-2 weeks (motivation, focus, energy), 4-6 weeks (full antidepressant response)",
   "halfLife": "~21 h (parent); hydroxybupropion metabolite 20-37 h, similar activity",
   "atcCode": "N06AX12",

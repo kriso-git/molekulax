@@ -11,6 +11,7 @@ export default {
   "description": "Azithromycin is a semi-synthetic macrolide antibiotic (Pfizer Zithromax, FDA 1991). Inhibits bacterial 50S ribosomal subunit (RNA translocation), generally bacteriostatic, bactericidal against highly susceptible Gram-positive (S. pneumoniae). Spectrum: typical respiratory (S. pneumoniae, H. influenzae) + atypical (Mycoplasma, Chlamydia, Legionella) + STDs (Chlamydia trachomatis, Neisseria gonorrhoeae). Unique PK: tissue concentration 100x plasma, allowing the \"Z-pack\" 5-day protocol (drug remains in tissues 5-7 more days). FDA warning on QT prolongation (Ray 2012 NEJM PMID 22591294 — elevated CV mortality).",
   "mechanism": "Bacterial 50S ribosome binding → mRNA translocation inhibition → protein synthesis block. Bacteriostatic. High tissue penetration + slow release.",
   "legalStatus": "EU/HU: prescription only (Sumamed, Azitrolid, Zithromax, generics). USA: FDA Rx.",
+  "bioavailability": "38% (oral, 250 mg capsule — FDA Zithromax label)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "~68 h (very long, allows Z-pack format)",
   "atcCode": "J01FA10",

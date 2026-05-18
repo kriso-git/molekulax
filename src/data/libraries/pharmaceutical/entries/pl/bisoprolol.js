@@ -11,6 +11,7 @@ export default {
   "description": "Bisoprolol to wysoce selektywny antagonista β1-adrenergiczny (Merck Concor, FDA 1992). Selektywność β1/β2 ~75:1 znacznie zmniejsza działania pośredniczone przez β2 (skurcz oskrzeli, skurcz obwodowy) vs nieselektywne β-blokery (propranolol). Badanie CIBIS-II (CIBIS-II 1999 Lancet PMID 9988345) wykazało 34% redukcję względnej śmiertelności w HFrEF.",
   "mechanism": "Selektywny konkurencyjny antagonista β1. Ujemnie chronotropowy (spadek HR), inotropowy, dromotropowy. Redukcja reniny.",
   "legalStatus": "UE/PL: na receptę (Concor, Bisocard, generyki). USA: FDA Rx (Zebeta).",
+  "bioavailability": "~80% (doustnie, dawka 10 mg — etykieta FDA Zebeta)",
   "onsetTime": "1-2 h (acute HR), 1-2 weeks (steady BP)",
   "halfLife": "10-12 h (once-daily)",
   "atcCode": "C07AB07",

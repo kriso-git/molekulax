@@ -11,6 +11,7 @@ export default {
   "description": "Az Azithromycin egy szemiszintetikus makrolid antibiotikum (Pfizer Zithromax, FDA 1991). A bakteriális 50S riboszomális alegységét gátolja (RNA-transzlokáció), bakteriostatikus általában, baktericid magas-szuszceptibilitású Gram-pozitív kórokozóra (S. pneumoniae). Spektrum: tipikus respiratoros (S. pneumoniae, H. influenzae) + atipikus (Mycoplasma, Chlamydia, Legionella) + STD (Chlamydia trachomatis, Neisseria gonorrhoeae). Egyedülálló farmakokinetika: szöveti koncentráció 100x plazma-felett, ami a \"Z-pack\" 5-napos protokollt teszi lehetővé (a szövetekben még 5-7 napon át jelen van). FDA-warning QT-prolongációra (Ray 2012 NEJM PMID 22591294 — emelt CV-halálozás).",
   "mechanism": "Bakteriális 50S riboszóma kötés → mRNA-transzlokáció gátlás → fehérje-szintézis blokk. Bakteriostatikus. Magas szöveti penetráció + lassú felszabadulás.",
   "legalStatus": "EU/HU: vényköteles (Sumamed, Azitrolid, Zithromax, generikus). USA: FDA Rx.",
+  "bioavailability": "38% (orális, 250 mg kapszula — FDA Zithromax label)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "~68 h (very long, allows Z-pack format)",
   "atcCode": "J01FA10",

@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "A máj-sejtek HMG-CoA reduktáz-enzimét kompetitíven gátolja, ami a mevalonát-pathway csökkentését eredményezi (de novo koleszterin-szintézis lassítása). A csökkent intracelluláris koleszterin az LDL-receptorok up-regulációjához vezet, ami a keringő LDL-t a májba clear-eli. Pleiotróp hatások: gyulladás-csökkentés (CRP-csökkenés a JUPITER trial-ben), endotel-funkció javítása, plakk-stabilizáció.",
   "legalStatus": "EU/HU: vényköteles (Sortis, Atoris, Tulip, Atorvox, generikus). USA: FDA Rx (Lipitor, generikus). Nincs visszaélési potenciálja, nem ütemezett. Generikus formák bioekvivalensek (FDA Orange Book AB).",
+  "bioavailability": "~14% (orális, presystemic clearance + first-pass metabolizmus — FDA Lipitor label)",
   "onsetTime": "1-2 weeks (lipid lowering), 4-6 weeks (steady-state LDL effect)",
   "halfLife": "14 h (parent), 20-30 h (active ortho- and para-hydroxylated metabolites)",
   "atcCode": "C10AA05",

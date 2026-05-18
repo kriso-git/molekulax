@@ -11,6 +11,7 @@ export default {
   "description": "Aripiprazol to \"trzecia generacja\" atypowego antypsychotyku (Otsuka/BMS Abilify, FDA 2002). Mechanizm: częściowy agonista D2-DOPAMINY (~30% aktywności intrinsic) + częściowy agonista 5-HT1A + antagonista 5-HT2A. Unikalna farmakologia: w obszarach nadaktywnej dopaminy (mezolimbiczne, objawy pozytywne) hamuje, w obszarach niedoczynnej dopaminy (mezokortykalne, objawy negatywne, anhedonia) częściowo stymuluje. Wynik kliniczny: niższe działania metaboliczne (vs olanzapina), mniej sedujący, mniej podwyższania prolaktyny. Ostrzeżenie FDA dla zaburzeń kontroli impulsów (kompulsywny hazard, hyperseksualność) — rzadkie ale znaczące z powodu częściowego agonizmu D2.",
   "mechanism": "Częściowy agonista D2-DA (~30% intrinsic) + częściowy agonista 5-HT1A + antagonista 5-HT2A. Funkcjonalny stabilizator dopaminy.",
   "legalStatus": "UE/PL: na receptę (Abilify, generyki). USA: FDA Rx.",
+  "bioavailability": "87% (doustnie tabletka — etykieta FDA Abilify, sekcja 12.3)",
   "onsetTime": "1-2 weeks (acute), 4-6 weeks (full response)",
   "halfLife": "~75 h (active metabolite dehydroaripiprazole 94 h)",
   "atcCode": "N05AX12",

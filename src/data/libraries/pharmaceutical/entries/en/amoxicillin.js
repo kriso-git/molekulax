@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "The β-lactam ring binds to active sites of bacterial cell wall synthesis key enzymes (PBP, penicillin-binding proteins, transpeptidases), inhibiting peptidoglycan cross-linking. Bacterial cell wall weakens, leading to osmotic-stress lysis. Bactericidal against susceptible organisms. Due to pseudo-irreversible binding, effect is dose- and time-dependent (T > MIC is more important AUC predictor of clinical response).",
   "legalStatus": "EU/HU: prescription only (Amoxil, Ospamox, Hiconcil, Duomox, generics). USA: FDA Rx. Antibiotic stewardship program imposes strict prescribing criteria — empirical prescribing only for confirmed bacterial infection. WHO AWaRe category: ACCESS (widespread, low resistance risk).",
+  "bioavailability": "~74-92% (oral, mildly food-affected — FDA Amoxil label)",
   "onsetTime": "1-2 h (plasma peak), 24-72 h (clinical symptom response)",
   "halfLife": "1-1.5 h (normal renal function); extends to 7-21 h in renal failure",
   "atcCode": "J01CA04",

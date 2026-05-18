@@ -11,6 +11,7 @@ export default {
   "description": "A Doxycycline egy hosszú-hatású tetraciklin (Pfizer Vibramycin, FDA 1967). A bakteriális 30S riboszomális alegységet gátolja (aminoacyl-tRNS-kötés blokk). Spektrum: atipikus organizmusok (Mycoplasma, Chlamydia, Rickettsia, Borrelia, Treponema), néhány Gram-pozitív (Staphylococcus érzékeny törzsek), Helicobacter pylori (másodlagos vonal). Klinikailag legjelentősebb indikációi: Lyme-betegség korai stádium, atipikus pneumónia, klamidia STD, malária-prevenció (utazás), súlyos acne (alacsony dózis krónikusan). Mellékhatás-profil általában jól tolerált, fototoxicitás és GI-mellékhatás a leggyakoribb.",
   "mechanism": "30S riboszomális alegység-blokk → aminoacyl-tRNS nem tud kötődni → fehérje-szintézis blokk. Bakteriosztatikus.",
   "legalStatus": "EU/HU: vényköteles (Vibramycin, Doxakne, generikus). USA: FDA Rx.",
+  "bioavailability": "~95-100% (orális, \"virtually completely absorbed\" — FDA Vibramycin label)",
   "onsetTime": "24-48 h (clinical response)",
   "halfLife": "18-22 h (once or twice daily)",
   "atcCode": "J01AA02",
