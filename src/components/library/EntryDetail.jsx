@@ -801,13 +801,12 @@ function Holosphere({ image, name, accent, tierColor, isLight, library, chemical
  const useFormula =
  !image &&
  library?.features?.chemicalFormulaPlaceholder &&
- chemicalFormula &&
- chemicalFormula !== 'mixture'
+ (chemicalFormula || name)
 
  if (useFormula) {
  return (
  <div className="relative w-full aspect-square max-w-[420px] mx-auto">
- <ChemicalFormulaPlaceholder formula={chemicalFormula} className="w-full h-full" />
+ <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} className="w-full h-full" />
  </div>
  )
  }

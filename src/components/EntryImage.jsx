@@ -114,10 +114,11 @@ export default function EntryImage({ accentColor = '#818cf8', name = '', uid = '
   if (image) {
     return <PhotoFrame accentColor={accentColor} image={image} name={name} />
   }
-  // ChemicalFormulaPlaceholder returns null when formula === 'mixture' — we mirror that guard here
-  // so EntryImage falls through to VialFallback for mixture entries cleanly.
-  if (library?.features?.chemicalFormulaPlaceholder && chemicalFormula && chemicalFormula !== 'mixture') {
-    return <ChemicalFormulaPlaceholder formula={chemicalFormula} />
+  // ChemicalFormulaPlaceholder handles both real formulas AND 'mixture' entries —
+  // for mixtures it falls back to a neon name display so the whole gallery has
+  // a single visual language (no leftover vial-SVG fallback for nootropics).
+  if (library?.features?.chemicalFormulaPlaceholder && (chemicalFormula || name)) {
+    return <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} />
   }
   // Peptide vial is the remaining fallback. Performance + pharmaceutical
   // entries always have an image; if any slip through without one, fall through here.
