@@ -1,7 +1,7 @@
-// Auto-decomposed by scripts/decompose-library.mjs at 2026-05-17T15:42:14.893Z
-// LIBRARY_ENTRY_META[] is the synchronous metadata array used by tiles + switcher.
-// Full Entry objects live in entries/<id>.js and are loaded via loadEntry(id).
-// All non-entries library-level fields (categories, effects, etc.) are imported as before.
+// Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:12:46.653Z
+// Phase 12: per-lang entry chunks. loadEntry(id, lang) dynamic-imports
+// entries/<lang>/<id>.js. Library-level fields (categories, effects, faq,
+// labels) still triplet — only entry bodies are lang-split.
 
 import { CATEGORIES, PHARMACEUTICAL_CATEGORIES, getPharmaceuticalCategories } from './categories.js'
 import { getResearchLevel } from './researchLevel.js'
@@ -797,7 +797,7 @@ export const pharmaceuticalLibrary = {
   "pl": "Edukacja farmaceutyczna na poziomie substancji czynnej z oficjalnych źródeł · PubMed, FDA, EMA, ChPL · NIE zastępuje konsultacji lekarskiej"
 },
   accent: "#00ff99",
-  meta: LIBRARY_ENTRY_META,           // Phase 9: meta-only entries-replacement
+  meta: LIBRARY_ENTRY_META,
   topEntries: TOP_ENTRY_IDS,
   categories: CATEGORIES,
   entryCategoryMap: PHARMACEUTICAL_CATEGORIES,
@@ -847,24 +847,23 @@ export const pharmaceuticalLibrary = {
   }
 },
   features: {
-    faq: false,
-    doseRecommendations: false,
-    calculator: false,
-    qualityGrid: false,
-    interactions: false,
-    quickStart: false,
-    labTerminal: true,
-    chemicalFormulaPlaceholder: false,
-  },
+  "faq": false,
+  "doseRecommendations": false,
+  "calculator": false,
+  "qualityGrid": false,
+  "interactions": false,
+  "quickStart": false,
+  "labTerminal": true,
+  "chemicalFormulaPlaceholder": false
+},
 }
 
-// Vite/Rollup template-literal dynamic-import code-splitting: when the
-// path has a static prefix + an interpolated leaf, Vite emits one chunk
-// per file matching the pattern at build time.
-export async function loadEntry(id) {
-  const mod = await import(`./entries/${id}.js`)
+// Phase 12 per-lang: Vite template-literal-import emits one chunk per
+// (lang, id) combo because the static prefix ./entries/ lets Vite glob
+// every matching file at build time.
+export async function loadEntry(id, lang) {
+  const mod = await import(`./entries/${lang}/${id}.js`)
   return mod.default
 }
 
-// Convenience re-exports preserved for legacy consumers.
 export { CATEGORIES, PHARMACEUTICAL_CATEGORIES, getPharmaceuticalCategories, getResearchLevel, EFFECT_CATEGORIES }
