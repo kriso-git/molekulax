@@ -24,6 +24,7 @@ import BloodworkProtocol from './BloodworkProtocol'
 import PerformanceCalculator from './PerformanceCalculator'
 import PharmaceuticalCalculator from './PharmaceuticalCalculator'
 import { useTilt, useMagnet, ParticleField, HoloRing, LabTerminal, Eyebrow, GlassCard, TabPills } from './entry-detail/shared'
+import ChemicalFormulaPlaceholder from './ChemicalFormulaPlaceholder'
 
 // Phase 10 — dynamic "Releváns X" / "Related X" / "Powiązane X" label per library.
 // Plural noun map per language; fallback strips "Könyvtár"/"Library"/"Biblioteka" from library.name.
@@ -796,7 +797,21 @@ function Constellation({ steps, accent, tr }) {
 }
 
 // ─── Vial Holosphere, center hero element ─────────────────────────
-function Holosphere({ image, name, accent, tierColor, isLight }) {
+function Holosphere({ image, name, accent, tierColor, isLight, library, chemicalFormula }) {
+ const useFormula =
+ !image &&
+ library?.features?.chemicalFormulaPlaceholder &&
+ chemicalFormula &&
+ chemicalFormula !== 'mixture'
+
+ if (useFormula) {
+ return (
+ <div className="relative w-full aspect-square max-w-[420px] mx-auto">
+ <ChemicalFormulaPlaceholder formula={chemicalFormula} className="w-full h-full" />
+ </div>
+ )
+ }
+
  return (
  <div className="relative w-full aspect-square max-w-[420px] mx-auto">
  {/* Outer glow */}
@@ -1374,7 +1389,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
  {/* Holosphere */}
  <div className="order-1 lg:order-2 flex items-center justify-center">
- <Holosphere image={peptide.image} name={peptide.name} accent={accent} tierColor={tierColor} isLight={isLight} />
+ <Holosphere image={peptide.image} name={peptide.name} accent={accent} tierColor={tierColor} isLight={isLight} library={library} chemicalFormula={peptide.chemicalFormula} />
  </div>
  </section>
 
@@ -1874,12 +1889,16 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  }}
  />
  <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
- <div className="max-w-md">
+ <div className="max-w-xl">
  <p className="text-[10px] tracking-[0.3em] uppercase font-bold mb-2" style={{ color: accent }}>
  Telegram
  </p>
- <h3 className="text-2xl font-bold tracking-tight mb-1.5 text-balance" style={{ color: 'var(--text-primary)' }}>
- {(t('entry.cta.title') || 'Kérdésed van a {name}-ről?').replace('{name}', peptide.name).replace(/-/g, '‑')}
+ <h3 className="text-2xl font-bold tracking-tight mb-1.5 text-pretty" style={{ color: 'var(--text-primary)' }}>
+ {(() => {
+ const tpl = t('entry.cta.title') || 'Kérdésed van a {name}-ről?'
+ const bound = tpl.replace(/ ([aeiouáéíóöőúüű]) \{name\}/gi, ' $1 {name}')
+ return bound.replace('{name}', peptide.name).replace(/-/g, '‑')
+ })()}
  </h3>
  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
  {/* Phase 10: prefer library-specific helpBody when present, fall back to global i18n. */}

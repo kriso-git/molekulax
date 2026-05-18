@@ -180,11 +180,15 @@ export function LabTerminal({ rows, accent, tr }) {
  LIVE
  </span>
  </div>
- <div className="space-y-1.5 relative">
+ <div className="space-y-2 relative">
  {rows.slice(0, shown).map((r, i) => (
- <div key={i} className="grid grid-cols-[110px_1fr] gap-3 text-[12px]" style={{ color: '#cbd5e1' }}>
- <span style={{ color: accent }}>{'>'} {tr(r.key)}</span>
- <span className="opacity-90 break-words">{tr(r.value)}</span>
+ <div
+ key={i}
+ className="flex flex-col sm:grid sm:grid-cols-[max-content_1fr] sm:gap-x-4 gap-y-0.5 text-[12px]"
+ style={{ color: '#cbd5e1' }}
+ >
+ <span className="whitespace-nowrap" style={{ color: accent }}>{'>'} {tr(r.key)}</span>
+ <span className="opacity-90 break-words sm:pl-0 pl-3">{tr(r.value)}</span>
  </div>
  ))}
  {shown < rows.length && (
