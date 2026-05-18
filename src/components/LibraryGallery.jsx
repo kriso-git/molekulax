@@ -22,7 +22,15 @@ import { RETURN_STATE_KEY } from './library/returnState'
 // provides the soft 3D feel.
 
 function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
- const isPlaceholder = !peptide.image
+ // Nootropic entries with a chemical formula render the neon ChemicalFormulaPlaceholder
+ // as their intentional visual — those aren't "placeholders" in the UX sense, so suppress
+ // the dashed PLACEHOLDER badge for them.
+ const hasFormulaArt =
+ !peptide.image &&
+ library?.features?.chemicalFormulaPlaceholder &&
+ peptide.chemicalFormula &&
+ peptide.chemicalFormula !== 'mixture'
+ const isPlaceholder = !peptide.image && !hasFormulaArt
  // Phase 9: tier is precomputed in LIBRARY_ENTRY_META so tiles don't need
  // the full entry to render the research-level dot.
  const level = peptide.tier ?? library.getResearchLevel?.(peptide) ?? 1

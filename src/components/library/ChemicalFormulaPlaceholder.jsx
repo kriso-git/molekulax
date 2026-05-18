@@ -6,9 +6,11 @@ import { useMemo } from 'react'
 
 const CHEMICAL_GREEN = '#00ff99'
 
-const SIZE_LARGE  = 'text-[2.3rem]'   // ≤4 blocks single row
-const SIZE_MEDIUM = 'text-[1.9rem]'   // 5-6 blocks 2 rows
-const SIZE_SMALL  = 'text-[1.55rem]'  // 7+ blocks 2 rows
+// Container-relative sizing keeps the formula readable inside any tile width
+// (gallery tile ~180px, hero ~420px). cqi = 1% of the container inline size.
+const SIZE_LARGE  = 'text-[clamp(1.4rem,16cqi,2.6rem)]'  // short formulas, ≤8 visible chars
+const SIZE_MEDIUM = 'text-[clamp(1.15rem,13cqi,2.1rem)]' // 9-11 chars
+const SIZE_SMALL  = 'text-[clamp(0.95rem,10.5cqi,1.7rem)]' // 12+ chars
 
 function parseFormula(input) {
   // Accept either a single string ('C15H15NO2S') or an explicit row array (['C14H26N4','O11P2']).
@@ -24,17 +26,32 @@ function parseFormula(input) {
   })
 }
 
-function pickSize(blockCount) {
-  if (blockCount <= 4) return SIZE_LARGE
-  if (blockCount <= 6) return SIZE_MEDIUM
+function pickSize(charCount) {
+  if (charCount <= 8) return SIZE_LARGE
+  if (charCount <= 11) return SIZE_MEDIUM
   return SIZE_SMALL
 }
 
 function splitToTwoRows(blocks) {
-  // Default auto-split: ≤4 = 1 row, 5+ = 2 rows breaking at midpoint.
-  if (blocks.length <= 4) return [blocks]
-  const mid = Math.ceil(blocks.length / 2)
-  return [blocks.slice(0, mid), blocks.slice(mid)]
+  // Split into 2 rows when the formula renders wider than fits a tile cleanly.
+  // We split by char-count (not block-count) so 4-block formulas with multi-digit
+  // subscripts like C17H22N2O4 (10 chars) also break — otherwise they overflow
+  // the corner-bracket frame at narrow tile widths.
+  const totalChars = blocks.reduce((sum, b) => sum + b.symbol.length + b.count.length, 0)
+  if (blocks.length <= 2 || totalChars <= 8) return [blocks]
+  // Find a split point that balances char-counts between the two rows.
+  let bestIdx = Math.ceil(blocks.length / 2)
+  let bestDiff = Infinity
+  for (let i = 1; i < blocks.length; i++) {
+    const left = blocks.slice(0, i).reduce((s, b) => s + b.symbol.length + b.count.length, 0)
+    const right = totalChars - left
+    const diff = Math.abs(left - right)
+    if (diff < bestDiff) {
+      bestDiff = diff
+      bestIdx = i
+    }
+  }
+  return [blocks.slice(0, bestIdx), blocks.slice(bestIdx)]
 }
 
 function Corner({ pos }) {
@@ -67,7 +84,10 @@ export default function ChemicalFormulaPlaceholder({ formula, className = '' }) 
   const { rows, sizeClass } = useMemo(() => {
     const parsed = parseFormula(formula)
     const allBlocks = parsed.flat()
-    const sizeClass = pickSize(allBlocks.length)
+    // Count actual visible chars (symbol + subscript-digits) so that long
+    // 4-block formulas like C17H22N2O4 (10 chars) shrink instead of overflowing.
+    const charCount = allBlocks.reduce((sum, b) => sum + b.symbol.length + b.count.length, 0)
+    const sizeClass = pickSize(charCount)
     const rows = parsed.length > 1 ? parsed : splitToTwoRows(parsed[0] || [])
     return { rows, sizeClass }
   }, [formula])
@@ -76,6 +96,7 @@ export default function ChemicalFormulaPlaceholder({ formula, className = '' }) 
     <div
       className={`cfp-root relative w-full h-full overflow-hidden rounded-2xl flex items-center justify-center ${className}`}
       style={{
+        containerType: 'inline-size',
         background:
           'linear-gradient(90deg, rgba(0,255,153,0.025) 50%, transparent 50%) 0 0 / 4px 100%, ' +
           'radial-gradient(circle at 50% 50%, rgba(0,255,153,0.08) 0%, transparent 65%), ' +
