@@ -816,6 +816,10 @@ function Holosphere({ image, name, accent, tierColor, isLight }) {
  {image ? (
  <picture>
    <source
+     srcSet={image.replace(/\.png$/i, '.avif')}
+     type="image/avif"
+   />
+   <source
      srcSet={image.replace(/\.png$/i, '.webp')}
      type="image/webp"
    />

@@ -22,6 +22,10 @@ function PhotoFrame({ accentColor, image, name }) {
       />
       <picture>
         <source
+          srcSet={image.replace(/\.png$/i, '.avif')}
+          type="image/avif"
+        />
+        <source
           srcSet={image.replace(/\.png$/i, '.webp')}
           type="image/webp"
         />

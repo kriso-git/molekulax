@@ -109,6 +109,10 @@ function CategoryVisual({ cat, idx }) {
  <div className="relative w-full h-full overflow-hidden">
  <picture>
    <source
+     srcSet={cat.image.replace(/\.png$/i, '.avif')}
+     type="image/avif"
+   />
+   <source
      srcSet={cat.image.replace(/\.png$/i, '.webp')}
      type="image/webp"
    />
