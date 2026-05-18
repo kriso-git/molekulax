@@ -1,4 +1,4 @@
-import { useState, useRef, useMemo } from 'react'
+import { useState, useRef, useMemo, useEffect } from 'react'
 import { useLibrary } from '../context/LibraryContext'
 import { getLevelMeta, LEVEL_META, makeSortComparator } from '../data/libraries/shared/researchLevel'
 import { useLang } from '../i18n/LanguageContext'
@@ -233,12 +233,6 @@ function SortControl({ value, onChange, t }) {
 // Tile clicks update the URL hash to #entry/<library>/<id>; the App-level
 // EntryDetailRoute observes the hash and renders the detail view (modal on
 // mobile, full page on desktop).
-function openEntry(library, entry) {
- if (typeof window !== 'undefined') {
- window.location.hash = `entry/${library.id}/${entry.id}`
- }
-}
-
 export default function LibraryGallery({
   library: libraryProp,
   dotsLibraries,
@@ -252,6 +246,14 @@ export default function LibraryGallery({
  const [activeFilters, setActiveFilters] = useState([]) // category id list
  const [levelFilters, setLevelFilters] = useState([]) // research level numbers
  const [sortMode, setSortMode] = useState('az') // 'az' | 'za' | 'level'
+
+ // Snapshot publisher for Task C state-restoration. Publishes current state
+ // into a ref (no re-render) so openEntry() can read it synchronously.
+ const stateRef = useRef({})
+ stateRef.current = {
+  query, activeFilters, levelFilters, sortMode, expanded,
+ }
+
  const allSectionRef = useRef(null)
  const { t, tr, lang } = useLang()
  const { library: ctxLibrary } = useLibrary()
@@ -317,6 +319,26 @@ export default function LibraryGallery({
  const clearFilters = () => { setActiveFilters([]); setLevelFilters([]) }
  const totalActive = activeFilters.length + levelFilters.length
 
+ const openEntry = (entry) => {
+  if (typeof window === 'undefined') return
+  try {
+   const snapshot = {
+    token: Date.now(),
+    scrollY: window.scrollY,
+    libraryId: library.id,
+    query: stateRef.current.query || '',
+    activeFilters: stateRef.current.activeFilters || [],
+    levelFilters: stateRef.current.levelFilters || [],
+    sortMode: stateRef.current.sortMode || 'az',
+    expanded: stateRef.current.expanded || false,
+   }
+   sessionStorage.setItem('molekulax:returnState', JSON.stringify(snapshot))
+  } catch (e) {
+   // sessionStorage full / disabled — silently skip, falls back to fresh landing
+  }
+  window.location.hash = `entry/${library.id}/${entry.id}`
+ }
+
  return (
  <>
  <div className="max-w-6xl mx-auto">
@@ -359,7 +381,7 @@ export default function LibraryGallery({
  library={library}
  peptide={peptide}
  featured
- onSelect={(entry) => openEntry(library, entry)}
+ onSelect={openEntry}
  t={t}
  tr={tr}
  lang={lang}
@@ -612,7 +634,7 @@ export default function LibraryGallery({
  library={library}
  peptide={peptide}
  featured={false}
- onSelect={(entry) => openEntry(library, entry)}
+ onSelect={openEntry}
  t={t}
  tr={tr}
  lang={lang}
