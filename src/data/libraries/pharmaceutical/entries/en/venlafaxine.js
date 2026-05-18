@@ -11,6 +11,7 @@ export default {
   "description": "Venlafaxine is the first SNRI (Wyeth Effexor, FDA 1993), with dose-dependent pharmacology: at low dose (≤ 150 mg) mainly SERT-selective (SSRI-like), at higher dose (> 150 mg) NET activity adds (SNRI-like). ER (extended release) formulation is standard for stable plasma and GI tolerance. Active metabolite desvenlafaxine (Pristiq, marketed separately). Venlafaxine is NOTORIOUS for severe discontinuation syndrome due to short half-life (5 h) and dual SERT/NET effect: slow taper over 4-6 weeks MANDATORY, often only via fluoxetine bridge.",
   "mechanism": "Dose-dependent: < 150 mg primarily SERT inhibitor (SSRI-like); > 150 mg NET also (SNRI-like). Minimal DAT activity.",
   "legalStatus": "EU/HU: prescription only (Efectin, Velaxin, Velafax, generics). USA: FDA Rx.",
+  "bioavailability": "~45% (oral, extensive first-pass; tablet ≈ solution — FDA Effexor label)",
   "onsetTime": "2-6 weeks (full antidepressant response)",
   "halfLife": "5 h (parent), 11 h (active O-desmethylvenlafaxine)",
   "atcCode": "N06AX16",

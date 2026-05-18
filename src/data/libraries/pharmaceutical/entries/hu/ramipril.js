@@ -11,6 +11,7 @@ export default {
   "description": "A Ramipril egy pro-drug ACE-inhibitor (aktív metabolit Ramiprilat), amelyet a Sanofi-Aventis fejlesztett ki (Tritace EU, Altace USA, FDA 1991). Az angiotenzin-konvertáló enzim szelektív gátlása csökkenti az angiotenzin-II képződését, ami vazodilatációhoz és aldoszteron-szuppresszióhoz vezet. A HOPE-trial (Yusuf 2000 NEJM PMID 10639539) szerint a Ramipril szignifikáns MACE-csökkenést okoz magas-rizikó kardiovaszkuláris betegekben, függetlenül a vérnyomás-csökkentő hatástól (pleiotróp endotel-funkció-javítás).",
   "mechanism": "ACE-enzim szelektív gátlása → angiotenzin-II csökkenés → vazodilatáció + aldoszteron-szuppresszió + bradykinin-akkumuláció (köhögés-mechanizmus).",
   "legalStatus": "EU/HU: vényköteles (Tritace, Amprilan, Piramil, generikus). USA: FDA Rx (Altace).",
+  "bioavailability": "28% (orális, ramipril prodrug; 44% ramiprilat aktív metabolitra — FDA Altace label, 5 mg dózis)",
   "onsetTime": "1-2 h (acute BP), 3-4 weeks (steady-state)",
   "halfLife": "13-17 h (active ramiprilat, once-daily)",
   "atcCode": "C09AA05",

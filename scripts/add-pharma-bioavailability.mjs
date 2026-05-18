@@ -205,6 +205,61 @@ const PAYLOADS = [
     en: 'Not determined (aqueous insolubility precludes IV); oral tablet ≈ aqueous suspension — FDA Provigil label',
     pl: 'Nieokreślona (nierozpuszczalność w wodzie uniemożliwia IV); tabletka doustna ≈ zawiesina wodna — etykieta FDA Provigil',
   },
+  // ── Batch 4 (ramipril..venlafaxine) ──────────────────────────────────────
+  {
+    id: 'ramipril',
+    hu: '28% (orális, ramipril prodrug; 44% ramiprilat aktív metabolitra — FDA Altace label, 5 mg dózis)',
+    en: '28% (oral, ramipril prodrug; 44% for ramiprilat active metabolite — FDA Altace label, 5 mg dose)',
+    pl: '28% (doustnie, ramipril prolek; 44% dla ramiprilatu, metabolitu aktywnego — etykieta FDA Altace, dawka 5 mg)',
+  },
+  {
+    id: 'rosuvastatin',
+    hu: '~20% (orális — FDA Crestor label)',
+    en: '~20% (oral — FDA Crestor label)',
+    pl: '~20% (doustnie — etykieta FDA Crestor)',
+  },
+  {
+    id: 'semaglutide',
+    hu: 'Orális (Rybelsus): ~1% (SNAC permeation enhancer, éhgyomri); szubkután (Ozempic/Wegovy): ~89% — FDA labelek',
+    en: 'Oral (Rybelsus): ~1% (SNAC permeation enhancer, fasted); subcutaneous (Ozempic/Wegovy): ~89% — FDA labels',
+    pl: 'Doustnie (Rybelsus): ~1% (enhancer permeacji SNAC, na czczo); podskórnie (Ozempic/Wegovy): ~89% — etykiety FDA',
+  },
+  {
+    id: 'sertralin',
+    hu: '~44% (orális, étkezéssel csökken; tabletta ≈ oldat bioekvivalens — FDA Zoloft label)',
+    en: '~44% (oral, reduced by food; tablet ≈ solution bioequivalent — FDA Zoloft label)',
+    pl: '~44% (doustnie, zmniejszone przez pokarm; tabletka ≈ biorównoważna z roztworem — etykieta FDA Zoloft)',
+  },
+  {
+    id: 'tadalafil',
+    hu: 'Nem meghatározott (FDA Cialis label, Section 12.3)',
+    en: 'Not determined (FDA Cialis label, Section 12.3)',
+    pl: 'Nieokreślona (etykieta FDA Cialis, sekcja 12.3)',
+  },
+  {
+    id: 'tamoxifen',
+    hu: '~100% (orális, "well-absorbed", Tmax ~5 óra — FDA Soltamox/Nolvadex label)',
+    en: '~100% (oral, "well-absorbed", Tmax ~5 h — FDA Soltamox/Nolvadex label)',
+    pl: '~100% (doustnie, "dobrze wchłaniany", Tmax ~5 h — etykieta FDA Soltamox/Nolvadex)',
+  },
+  {
+    id: 'tirzepatide',
+    hu: '~80% (szubkután injekció — FDA Mounjaro label, Section 12.3)',
+    en: '~80% (subcutaneous injection — FDA Mounjaro label, Section 12.3)',
+    pl: '~80% (wstrzyknięcie podskórne — etykieta FDA Mounjaro, sekcja 12.3)',
+  },
+  {
+    id: 'tretinoin',
+    hu: '~20% (orális kapszula, variábilis — FDA Vesanoid label; APL-kezelésre, NEM topikális forma)',
+    en: '~20% (oral capsule, variable — FDA Vesanoid label; for APL treatment, NOT topical form)',
+    pl: '~20% (kapsułka doustna, zmienna — etykieta FDA Vesanoid; w leczeniu APL, NIE forma miejscowa)',
+  },
+  {
+    id: 'venlafaxine',
+    hu: '~45% (orális, extenzív first-pass; tabletta ≈ oldat — FDA Effexor label)',
+    en: '~45% (oral, extensive first-pass; tablet ≈ solution — FDA Effexor label)',
+    pl: '~45% (doustnie, intensywny first-pass; tabletka ≈ roztwór — etykieta FDA Effexor)',
+  },
 ]
 
 const LANGS = ['hu', 'en', 'pl']

@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "A SERT (5-HT transporter) szelektív gátlása növeli a synaptikus szerotonin-koncentrációt. Az akut SERT-blokk azonnali, de a klinikai antidepresszáns hatás 2-6 hét után jelenik meg a poszt-szinaptikus 5-HT1A autoreceptor de-szenzitizálódásának köszönhetően. Mérsékelt DAT (dopamin transporter) aktivitása megkülönbözteti a többi SSRI-tól, hozzájárulhat a kevésbé szedáló profilhoz.",
   "legalStatus": "EU/HU: vényköteles (Zoloft, Stimuloton, Asentra, Serlift, generikus). USA: FDA Rx, nem ütemezett. Generikus formák széles körben hozzáférhetőek (originator patent 2006-ban lejárt). Nincs visszaélési potenciálja.",
+  "bioavailability": "~44% (orális, étkezéssel csökken; tabletta ≈ oldat bioekvivalens — FDA Zoloft label)",
   "onsetTime": "2-6 weeks (full antidepressant response), 1-2 weeks (early efficacy signal)",
   "halfLife": "~26 h (parent), N-desmethylsertraline metabolite 62-104 h",
   "atcCode": "N06AB06",

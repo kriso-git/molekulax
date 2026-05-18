@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "GLP-1 receptor agonist that glucose-dependently (only at hyperglycemia) stimulates β-cell insulin secretion, suppresses α-cell glucagon secretion, slows gastric emptying, and in the hypothalamus (POMC/CART neurons) decreases appetite and increases satiety. C18 fatty acid conjugation provides albumin binding and slow elimination, enabling weekly dosing.",
   "legalStatus": "EU/HU: prescription only (Ozempic for T2DM, Wegovy for obesity, Rybelsus oral T2DM). USA: FDA Rx, not scheduled. 2022-2024 global supply shortage, off-label black-market use without medical supervision documented (FDA warning on compounded versions).",
+  "bioavailability": "Oral (Rybelsus): ~1% (SNAC permeation enhancer, fasted); subcutaneous (Ozempic/Wegovy): ~89% — FDA labels",
   "onsetTime": "1-2 weeks (appetite suppression), 12-16 weeks (HbA1c steady-state)",
   "halfLife": "~7 days (enables once-weekly subcutaneous dosing)",
   "atcCode": "A10BJ06",

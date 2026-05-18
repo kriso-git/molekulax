@@ -11,6 +11,7 @@ export default {
   "description": "Ramipril is a prodrug ACE inhibitor (active metabolite ramiprilat) developed by Sanofi-Aventis (Tritace EU, Altace USA, FDA 1991). Selective inhibition of angiotensin-converting enzyme reduces angiotensin II formation, causing vasodilation and aldosterone suppression. HOPE trial (Yusuf 2000 NEJM PMID 10639539) showed ramipril significantly reduces MACE in high-CV-risk patients independent of BP lowering (pleiotropic endothelial function improvement).",
   "mechanism": "Selective ACE enzyme inhibition → angiotensin II reduction → vasodilation + aldosterone suppression + bradykinin accumulation (cough mechanism).",
   "legalStatus": "EU/HU: prescription only (Tritace, Amprilan, Piramil, generics). USA: FDA Rx (Altace).",
+  "bioavailability": "28% (oral, ramipril prodrug; 44% for ramiprilat active metabolite — FDA Altace label, 5 mg dose)",
   "onsetTime": "1-2 h (acute BP), 3-4 weeks (steady-state)",
   "halfLife": "13-17 h (active ramiprilat, once-daily)",
   "atcCode": "C09AA05",

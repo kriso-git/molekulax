@@ -11,6 +11,7 @@ export default {
   "description": "Tamoxifen is the first clinically major SERM, developed by AstraZeneca (Nolvadex, FDA 1977). In ER+ breast cancer adjuvant treatment with 5-10 year protocol, reduces relapse risk by 50% (EBCTCG 2011 Lancet PMID 21684593). In premenopausal women, aromatase inhibitors (anastrozole, letrozole) ineffective, so tamoxifen is first-line SERM. Side effect profile: thromboembolism (DVT, PE 2-3x rise), endometrial cancer risk (~2x), menopausal-like symptoms (hot flashes). ER+ DCIS prevention and high-risk primary prevention FDA-approved (NSABP-P1 trial).",
   "mechanism": "Tissue-specific estrogen receptor modulation: ANTAGONIST in breast tissue, PARTIAL AGONIST in bone + endometrium + liver. Active metabolites (4-hydroxytamoxifen, endoxifen) CYP2D6-dependent — poor metabolizers have reduced efficacy.",
   "legalStatus": "EU/HU: prescription only (Nolvadex, Tamoxen, generics). USA: FDA Rx.",
+  "bioavailability": "~100% (oral, \"well-absorbed\", Tmax ~5 h — FDA Soltamox/Nolvadex label)",
   "onsetTime": "Klinikai válasz hónapok-évek (adjuváns)",
   "halfLife": "~7 days (parent); 14 days (4-hydroxytamoxifen)",
   "atcCode": "L02BA01",

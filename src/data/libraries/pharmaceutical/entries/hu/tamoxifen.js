@@ -11,6 +11,7 @@ export default {
   "description": "A Tamoxifen az első klinikailag jelentős SERM, amelyet az AstraZeneca fejlesztett ki (Nolvadex, FDA 1977). Az ER+ emlőkarcinóma adjuváns kezelésében 5-10 éves protokollal a relapszus-kockázatot 50%-kal csökkenti (EBCTCG 2011 Lancet PMID 21684593). Premenopausal nőknél az aromatáz-inhibítor (Anastrozole, Letrozole) nem hatékony, ezért a Tamoxifen az első-vonal SERM. Mellékhatás-profil: thromboembólia (DVT, PE 2-3x emelkedés), endometrium-karcinóma kockázat (~2x), menopausal-szerű tünetek (hőhullám). Az ER+ DCIS prevenció és magas-rizikójú primer prevenció FDA-jóváhagyott (NSABP-P1 trial).",
   "mechanism": "Tkivat-specifikus ösztrogén receptor moduláció: emlőszövetben ANTAGONISTA, csontban + endometriumban + májban PARCIÁLIS AGONISTA. Aktív metabolitok (4-hidroxitamoxifen, endoxifen) CYP2D6-tól függenek — gyenge metabolizálóknál csökkent hatékonyság.",
   "legalStatus": "EU/HU: vényköteles (Nolvadex, Tamoxen, generikus). USA: FDA Rx.",
+  "bioavailability": "~100% (orális, \"well-absorbed\", Tmax ~5 óra — FDA Soltamox/Nolvadex label)",
   "onsetTime": "Klinikai válasz hónapok-évek (adjuváns)",
   "halfLife": "~7 days (parent); 14 days (4-hydroxytamoxifen)",
   "atcCode": "L02BA01",

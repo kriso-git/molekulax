@@ -11,6 +11,7 @@ export default {
   "description": "A Tretinoin (all-transz-retinoinsav) az első topikális retinoid (Ortho Retin-A, FDA 1971), bőrgyógyászati standard akneológus + anti-aging-területen. A retinoid receptor (RAR) aktiválása révén normalizálja a follikuláris keratinizációt (acne-mechanizmus), gyorsítja a kollagén-szintézist (anti-aging), és csökkenti a melanin-pigmentációt (hiperpigmentáció). A leggyakoribb erősségek: 0,025%, 0,05%, 0,1% krém vagy gél. Az Isotretinoinhoz képest topikális — nem szisztémás, terhesség-rizikó SZIGNIFIKÁNSAN ALACSONYABB, de szülő-kort viselő nőknek kerülendő. Hosszú-távú anti-aging-evidencia: Kligman 1986 PMID 3548421 a fotoöregedés legjobban dokumentált topikális kezelése.",
   "mechanism": "RAR-α/β/γ receptor aktiváció → géntranszkripció moduláció → follikuláris keratinizáció normalizálása + kollagén-szintézis fokozás + melanin-csökkentés.",
   "legalStatus": "EU/HU: vényköteles (Atrederm, Locacid, Retin-A). USA: FDA Rx (Retin-A, Renova, Tretin-X).",
+  "bioavailability": "~20% (orális kapszula, variábilis — FDA Vesanoid label; APL-kezelésre, NEM topikális forma)",
   "onsetTime": "8-12 weeks (acne improvement), 4-6 months (anti-aging visible)",
   "halfLife": "Topical, minimal systemic absorption",
   "atcCode": "D10AD01",

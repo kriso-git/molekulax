@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Selective inhibition of phosphodiesterase-5 (PDE5), raising intracellular cGMP in smooth muscle of corpus cavernosum (penis), prostate, and pulmonary arteries. Higher cGMP activates protein kinase G, leading to Ca²⁺ sequestration and smooth muscle relaxation, producing vasodilation. NO (nitric oxide) release during sexual stimulation is required for erection: PDE5i effect appears only on sexual stimulation, not initiating erection alone.",
   "legalStatus": "EU/HU: prescription only (Cialis, Adcirca, generics). USA: FDA Rx, not scheduled. Generic forms since 2018 (originator patent expiry). NOT OTC (vs UK: Viagra Connect OTC 2018, but Cialis still Rx).",
+  "bioavailability": "Not determined (FDA Cialis label, Section 12.3)",
   "onsetTime": "30-45 min (PRN dosing), 5-7 days (daily 2.5/5 mg steady-state)",
   "halfLife": "17.5 h (parent compound, longest among PDE5 inhibitors)",
   "atcCode": "G04BE08",

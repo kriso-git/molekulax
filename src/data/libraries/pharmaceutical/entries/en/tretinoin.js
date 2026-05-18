@@ -11,6 +11,7 @@ export default {
   "description": "Tretinoin (all-trans-retinoic acid) is the first topical retinoid (Ortho Retin-A, FDA 1971), dermatological standard in acneology + anti-aging. Retinoid receptor (RAR) activation normalizes follicular keratinization (acne mechanism), accelerates collagen synthesis (anti-aging), and reduces melanin pigmentation (hyperpigmentation). Common strengths: 0.025%, 0.05%, 0.1% cream or gel. Vs Isotretinoin it is topical — non-systemic, pregnancy risk SIGNIFICANTLY LOWER but avoid in childbearing-age women. Long-term anti-aging evidence: Kligman 1986 PMID 3548421 the best-documented topical treatment for photoaging.",
   "mechanism": "RAR-α/β/γ receptor activation → gene transcription modulation → follicular keratinization normalization + collagen synthesis enhancement + melanin reduction.",
   "legalStatus": "EU/HU: prescription only (Atrederm, Locacid, Retin-A). USA: FDA Rx (Retin-A, Renova, Tretin-X).",
+  "bioavailability": "~20% (oral capsule, variable — FDA Vesanoid label; for APL treatment, NOT topical form)",
   "onsetTime": "8-12 weeks (acne improvement), 4-6 months (anti-aging visible)",
   "halfLife": "Topical, minimal systemic absorption",
   "atcCode": "D10AD01",

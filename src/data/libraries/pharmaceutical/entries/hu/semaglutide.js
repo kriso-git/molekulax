@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "GLP-1 receptor agonista, amely glükózfüggő módon (csak hyperglykaemia-nál) stimulálja a β-sejtek inzulin-szekrécióját, gátolja az α-sejtek glükagon-szekrécióját, lassítja a gyomorürülést, és a hipotalamuszban (POMC/CART neuronok) csökkenti az étvágyat és növeli a teltségérzetet. A C18 zsírsav-konjugáció albumin-kötést és lassú elimináció eredményez, ami a heti adagolást lehetővé teszi.",
   "legalStatus": "EU/HU: vényköteles (Ozempic T2DM-re, Wegovy obesitásra, Rybelsus orális T2DM). USA: FDA Rx Schedule None (nem ütemezett). 2022-2024 globális ellátási hiány, fekete piacon orvosi felügyelet nélküli használat dokumentálva (FDA warning compounded versions).",
+  "bioavailability": "Orális (Rybelsus): ~1% (SNAC permeation enhancer, éhgyomri); szubkután (Ozempic/Wegovy): ~89% — FDA labelek",
   "onsetTime": "1-2 weeks (appetite suppression), 12-16 weeks (HbA1c steady-state)",
   "halfLife": "~7 days (enables once-weekly subcutaneous dosing)",
   "atcCode": "A10BJ06",

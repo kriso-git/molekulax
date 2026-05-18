@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Agonista receptora GLP-1, który w sposób zależny od glukozy (tylko w hiperglikemii) stymuluje wydzielanie insuliny przez komórki β, hamuje wydzielanie glukagonu przez komórki α, spowalnia opróżnianie żołądka i w podwzgórzu (neurony POMC/CART) zmniejsza apetyt i zwiększa sytość. Sprzężenie z kwasem tłuszczowym C18 zapewnia wiązanie z albuminami i powolną eliminację, umożliwiając dawkowanie tygodniowe.",
   "legalStatus": "UE/PL: na receptę (Ozempic dla T2DM, Wegovy dla otyłości, Rybelsus doustny T2DM). USA: FDA Rx, niekontrolowany. Globalny niedobór 2022-2024, czarnorynkowe użycie off-label bez nadzoru medycznego udokumentowane (ostrzeżenie FDA dotyczące wersji compounded).",
+  "bioavailability": "Doustnie (Rybelsus): ~1% (enhancer permeacji SNAC, na czczo); podskórnie (Ozempic/Wegovy): ~89% — etykiety FDA",
   "onsetTime": "1-2 weeks (appetite suppression), 12-16 weeks (HbA1c steady-state)",
   "halfLife": "~7 days (enables once-weekly subcutaneous dosing)",
   "atcCode": "A10BJ06",

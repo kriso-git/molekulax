@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Selektywne hamowanie SERT (transporter 5-HT) podnosi synaptyczną serotoninę. Ostra blokada SERT jest natychmiastowa, ale efekt kliniczny pojawia się w 2-6 tygodniu przez desensytyzację postsynaptycznych autoreceptorów 5-HT1A. Umiarkowana aktywność DAT (transporter dopaminy) odróżnia ją od innych SSRI i może przyczyniać się do mniej sedującego profilu.",
   "legalStatus": "UE/PL: na receptę (Zoloft, Stimuloton, Asentra, Serlift, generyki). USA: FDA Rx, niekontrolowany. Formy generyczne szeroko dostępne (patent oryginatora wygasł 2006). Brak potencjału nadużywania.",
+  "bioavailability": "~44% (doustnie, zmniejszone przez pokarm; tabletka ≈ biorównoważna z roztworem — etykieta FDA Zoloft)",
   "onsetTime": "2-6 weeks (full antidepressant response), 1-2 weeks (early efficacy signal)",
   "halfLife": "~26 h (parent), N-desmethylsertraline metabolite 62-104 h",
   "atcCode": "N06AB06",

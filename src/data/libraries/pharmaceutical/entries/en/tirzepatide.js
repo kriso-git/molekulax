@@ -11,6 +11,7 @@ export default {
   "description": "Tirzepatide is the first dual incretin agonist, simultaneously activating GIP (glucose-dependent insulinotropic polypeptide) and GLP-1 receptors. Developed by Eli Lilly (Mounjaro T2DM FDA 2022, Zepbound obesity FDA 2023, ~7-day half-life, weekly SC injection). SURPASS-2 (Frías 2021 NEJM PMID 34170647) showed tirzepatide significantly outperforms semaglutide in HbA1c reduction. SURMOUNT-5 (Aronne 2025 NEJM PMID 40353578) head-to-head obesity trial showed 20.2% body weight loss at 72 weeks (vs semaglutide 13.7%, p<0.001). Side effect profile similar, possibly with modestly better GI tolerance.",
   "mechanism": "Dual GIP + GLP-1 receptor agonist. GIP activation causes glucose-dependent insulin secretion, glucagon suppression, and likely adipocyte lipid redistribution. GLP-1 activation (as in semaglutide) slows gastric emptying and centrally reduces appetite.",
   "legalStatus": "EU/HU: prescription only (Mounjaro T2DM, Zepbound obesity). USA: FDA Rx. Global supply shortage 2023-2024.",
+  "bioavailability": "~80% (subcutaneous injection — FDA Mounjaro label, Section 12.3)",
   "onsetTime": "1-2 weeks (appetite), 12-16 weeks (HbA1c steady-state)",
   "halfLife": "~5 days (weekly SC dosing)",
   "atcCode": "A10BX16",

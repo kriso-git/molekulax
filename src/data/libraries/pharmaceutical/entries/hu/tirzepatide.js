@@ -11,6 +11,7 @@ export default {
   "description": "A Tirzepatide az első kettős inkretin-agonista, ami egyidejűleg aktiválja a GIP (glükóz-függő insulinotropikus polypeptid) és a GLP-1 receptort. A Eli Lilly fejlesztette ki (Mounjaro T2DM FDA 2022, Zepbound obesity FDA 2023, ~7 napos felezési idő, heti SC injekció). A SURPASS-2 (Frías 2021 NEJM PMID 34170647) szerint a Tirzepatide a Semaglutide-ot szignifikánsan felülmúlja HbA1c-csökkentésben. A SURMOUNT-5 (Aronne 2025 NEJM PMID 40353578) head-to-head obesity-trial szerint 72 hét alatt 20,2% testsúlyvesztés (vs Semaglutide 13,7%, p<0,001). Mellékhatás-profil hasonló, talán mérsékelten kedvezőbb GI-toleranciával.",
   "mechanism": "Dual GIP + GLP-1 receptor agonista. A GIP-aktiváció glükóz-függő inzulin-szekréciót, glükagon-szuppressziót, és valószínűleg adipocyta-lipid-redisztribúciót okoz. A GLP-1-aktiváció (mint Semaglutide-nál) lassítja a gyomorürülést és centrálisan csökkenti az étvágyat.",
   "legalStatus": "EU/HU: vényköteles (Mounjaro T2DM, Zepbound obesity). USA: FDA Rx. Globális ellátási hiány 2023-2024.",
+  "bioavailability": "~80% (szubkután injekció — FDA Mounjaro label, Section 12.3)",
   "onsetTime": "1-2 weeks (appetite), 12-16 weeks (HbA1c steady-state)",
   "halfLife": "~5 days (weekly SC dosing)",
   "atcCode": "A10BX16",

@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Selektywne hamowanie fosfodiesterazy-5 (PDE5), podnosząc wewnątrzkomórkowe cGMP w mięśniach gładkich ciała jamistego (prącie), prostaty i tętnic płucnych. Wyższe cGMP aktywuje kinazę białkową G, prowadząc do sekwestracji Ca²⁺ i relaksacji mięśni gładkich, wywołując rozszerzenie naczyń. Uwolnienie NO (tlenku azotu) podczas stymulacji seksualnej jest wymagane dla erekcji: efekt PDE5i pojawia się tylko przy stymulacji seksualnej, nie inicjując erekcji samodzielnie.",
   "legalStatus": "UE/PL: na receptę (Cialis, Adcirca, generyki). USA: FDA Rx, niekontrolowany. Formy generyczne od 2018 r. (wygaśnięcie patentu oryginatora). NIE bez recepty (vs UK: Viagra Connect OTC 2018, ale Cialis wciąż Rx).",
+  "bioavailability": "Nieokreślona (etykieta FDA Cialis, sekcja 12.3)",
   "onsetTime": "30-45 min (PRN dosing), 5-7 days (daily 2.5/5 mg steady-state)",
   "halfLife": "17.5 h (parent compound, longest among PDE5 inhibitors)",
   "atcCode": "G04BE08",

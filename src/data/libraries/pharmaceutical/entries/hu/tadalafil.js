@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "A foszfodiészteráz-5 (PDE5) enzim szelektív gátlása, ami a cGMP intracelluláris koncentrációját emeli a corpus cavernosum (penis), prosztata és pulmonális artériák simaizmaiban. A magasabb cGMP a protein-kináz G aktivációja útján Ca²⁺-szekvesztrációt és simaizom-relaxációt eredményez, ami vazodilatációhoz vezet. A NO (nitrogén-monoxid) felszabadulása szexuális stimuláció során elengedhetetlen az erekcióhoz: PDE5-i hatása csak szexuális stimuláció esetén jelenik meg, nem önmagában indít erekciót.",
   "legalStatus": "EU/HU: vényköteles (Cialis, Adcirca, generikus). USA: FDA Rx, nem ütemezett. Generikus formák 2018 óta (originator patent lejárta). OTC NEM elérhető (vs Egyesült Királyság: Viagra Connect OTC 2018, de Cialis változatlanul Rx).",
+  "bioavailability": "Nem meghatározott (FDA Cialis label, Section 12.3)",
   "onsetTime": "30-45 min (PRN dosing), 5-7 days (daily 2.5/5 mg steady-state)",
   "halfLife": "17.5 h (parent compound, longest among PDE5 inhibitors)",
   "atcCode": "G04BE08",

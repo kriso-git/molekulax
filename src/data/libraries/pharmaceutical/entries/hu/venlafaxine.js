@@ -11,6 +11,7 @@ export default {
   "description": "A Venlafaxine az első SNRI (Wyeth Effexor, FDA 1993), amely dózisfüggő pharmakológiát mutat: alacsony dózison (≤ 150 mg) főleg SERT-szelektív (SSRI-szerű), magasabb dózison (> 150 mg) hozzájön a NET-aktivitás (SNRI-szerű). Az ER (extended release) formuláció a stabil plazma-szint és a GI-tolerancia miatt standard. Aktív metabolit a desvenlafaxin (Pristiq, külön gyógyszerként is forgalmazott). A Venlafaxine HÍRES SÚLYOS discontinuation szindrómájáról a rövid felezési idő (5 h) és a SERT/NET kettős receptor-hatás miatt: lassú leépítés 4-6 hét alatt KÖTELEZŐ, gyakran csak Fluoxetine-átállással.",
   "mechanism": "Dose-dependent: < 150 mg főleg SERT-inhibitor (SSRI-szerű); > 150 mg NET is hozzáadódik (SNRI-szerű). DAT-hatás minimális.",
   "legalStatus": "EU/HU: vényköteles (Efectin, Velaxin, Velafax, generikus). USA: FDA Rx.",
+  "bioavailability": "~45% (orális, extenzív first-pass; tabletta ≈ oldat — FDA Effexor label)",
   "onsetTime": "2-6 weeks (full antidepressant response)",
   "halfLife": "5 h (parent), 11 h (active O-desmethylvenlafaxine)",
   "atcCode": "N06AX16",

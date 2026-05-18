@@ -33,6 +33,7 @@ export default {
   ],
   "mechanism": "Selective SERT (5-HT transporter) inhibition raises synaptic serotonin. Acute SERT block is immediate, but clinical antidepressant effect appears at 2-6 weeks via desensitization of postsynaptic 5-HT1A autoreceptors. Moderate DAT (dopamine transporter) activity distinguishes from other SSRIs and may contribute to less sedating profile.",
   "legalStatus": "EU/HU: prescription only (Zoloft, Stimuloton, Asentra, Serlift, generics). USA: FDA Rx, not scheduled. Generic forms widely available (originator patent expired 2006). No abuse potential.",
+  "bioavailability": "~44% (oral, reduced by food; tablet ≈ solution bioequivalent — FDA Zoloft label)",
   "onsetTime": "2-6 weeks (full antidepressant response), 1-2 weeks (early efficacy signal)",
   "halfLife": "~26 h (parent), N-desmethylsertraline metabolite 62-104 h",
   "atcCode": "N06AB06",

@@ -11,6 +11,7 @@ export default {
   "description": "A Rosuvastatin egy hidrofil HMG-CoA reduktáz-inhibitor (AstraZeneca Crestor, FDA 2003). Hatás-intenzitásban a legpotensebb statin — 40 mg/nap ~60-63%-os LDL-csökkenést okoz (vs Atorvastatin 80 mg ~55%). A JUPITER-trial (Ridker 2008 NEJM PMID 18997196) primer ASCVD-prevenciót igazolt emelt CRP-szintű, normo-LDL betegeknél. Kevésbé CYP-érintett mint Atorvastatin (főleg CYP2C9, kis CYP3A4), tehát kevesebb gyógyszer-interakció. Mellékhatás-profil hasonló a többi statinhoz.",
   "mechanism": "HMG-CoA reduktáz hidrofil kompetitív gátlása. Magasabb potencia, kevesebb pleiotróp lipofil-szerű hatás. CRP-csökkentés még normo-LDL-en is.",
   "legalStatus": "EU/HU: vényköteles (Crestor, Roswera, generikus). USA: FDA Rx.",
+  "bioavailability": "~20% (orális — FDA Crestor label)",
   "onsetTime": "1-2 weeks (lipid), 4 weeks (steady-state LDL)",
   "halfLife": "19 h (once-daily, any time)",
   "atcCode": "C10AA07",

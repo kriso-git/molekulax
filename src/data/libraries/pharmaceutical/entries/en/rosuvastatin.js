@@ -11,6 +11,7 @@ export default {
   "description": "Rosuvastatin is a hydrophilic HMG-CoA reductase inhibitor (AstraZeneca Crestor, FDA 2003). Most potent statin by intensity — 40 mg/day yields ~60-63% LDL reduction (vs atorvastatin 80 mg ~55%). JUPITER trial (Ridker 2008 NEJM PMID 18997196) established primary ASCVD prevention in elevated-CRP, normo-LDL patients. Less CYP-involved than atorvastatin (mainly CYP2C9, minor CYP3A4), so fewer drug interactions. Side effect profile similar to other statins.",
   "mechanism": "Hydrophilic competitive HMG-CoA reductase inhibition. Higher potency, fewer lipophilic-like pleiotropic effects. CRP reduction even at normo-LDL.",
   "legalStatus": "EU/HU: prescription only (Crestor, Roswera, generics). USA: FDA Rx.",
+  "bioavailability": "~20% (oral — FDA Crestor label)",
   "onsetTime": "1-2 weeks (lipid), 4 weeks (steady-state LDL)",
   "halfLife": "19 h (once-daily, any time)",
   "atcCode": "C10AA07",

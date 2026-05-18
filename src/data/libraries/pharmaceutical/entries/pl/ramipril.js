@@ -11,6 +11,7 @@ export default {
   "description": "Ramipril to prolek inhibitora ACE (aktywny metabolit ramiprilat) opracowany przez Sanofi-Aventis (Tritace UE, Altace USA, FDA 1991). Selektywne hamowanie enzymu konwertującego angiotensynę zmniejsza tworzenie angiotensyny II, powodując rozszerzenie naczyń i supresję aldosteronu. Badanie HOPE (Yusuf 2000 NEJM PMID 10639539) wykazało, że ramipril znacznie redukuje MACE u pacjentów wysokiego ryzyka CV niezależnie od obniżenia BP.",
   "mechanism": "Selektywne hamowanie ACE → redukcja angiotensyny II → rozszerzenie naczyń + supresja aldosteronu + akumulacja bradykininy (mechanizm kaszlu).",
   "legalStatus": "UE/PL: na receptę (Tritace, Amprilan, Piramil, generyki). USA: FDA Rx (Altace).",
+  "bioavailability": "28% (doustnie, ramipril prolek; 44% dla ramiprilatu, metabolitu aktywnego — etykieta FDA Altace, dawka 5 mg)",
   "onsetTime": "1-2 h (acute BP), 3-4 weeks (steady-state)",
   "halfLife": "13-17 h (active ramiprilat, once-daily)",
   "atcCode": "C09AA05",

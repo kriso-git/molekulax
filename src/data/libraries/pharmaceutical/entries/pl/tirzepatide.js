@@ -11,6 +11,7 @@ export default {
   "description": "Tirzepatyd to pierwszy podwójny agonista inkretynowy, jednocześnie aktywujący receptory GIP (glukozozależny polipeptyd insulinotropowy) i GLP-1. Opracowany przez Eli Lilly (Mounjaro T2DM FDA 2022, Zepbound otyłość FDA 2023, ~7-dniowy okres półtrwania, cotygodniowa iniekcja SC). SURPASS-2 (Frías 2021 NEJM PMID 34170647) wykazało, że tirzepatyd znacznie przewyższa semaglutyd w redukcji HbA1c. SURMOUNT-5 (Aronne 2025 NEJM PMID 40353578) head-to-head w otyłości wykazało 20,2% utratę masy w 72 tygodnie (vs semaglutyd 13,7%, p<0,001). Profil działań niepożądanych podobny, możliwie z umiarkowanie lepszą tolerancją GI.",
   "mechanism": "Podwójny agonista GIP + GLP-1. Aktywacja GIP powoduje wydzielanie insuliny zależne od glukozy, supresję glukagonu i prawdopodobnie redystrybucję lipidów w adipocytach. Aktywacja GLP-1 (jak w semaglutydzie) spowalnia opróżnianie żołądka i centralnie zmniejsza apetyt.",
   "legalStatus": "UE/PL: na receptę (Mounjaro T2DM, Zepbound otyłość). USA: FDA Rx. Globalny niedobór 2023-2024.",
+  "bioavailability": "~80% (wstrzyknięcie podskórne — etykieta FDA Mounjaro, sekcja 12.3)",
   "onsetTime": "1-2 weeks (appetite), 12-16 weeks (HbA1c steady-state)",
   "halfLife": "~5 days (weekly SC dosing)",
   "atcCode": "A10BX16",

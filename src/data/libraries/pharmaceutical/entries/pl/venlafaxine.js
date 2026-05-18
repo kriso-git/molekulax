@@ -11,6 +11,7 @@ export default {
   "description": "Wenlafaksyna to pierwszy SNRI (Wyeth Effexor, FDA 1993), z farmakologią zależną od dawki: w niskiej dawce (≤ 150 mg) głównie SERT-selektywna (SSRI-podobna), w wyższej (> 150 mg) dochodzi aktywność NET (SNRI-podobna). Forma ER (przedłużone uwalnianie) standardowa dla stabilnego osocza i tolerancji GI. Aktywny metabolit deswenlafaksyna (Pristiq, sprzedawana osobno). Wenlafaksyna SŁYNNA z ciężkiego zespołu odstawiennego ze względu na krótki okres półtrwania (5 h) i podwójny efekt SERT/NET: powolne zmniejszanie przez 4-6 tygodni OBOWIĄZKOWE, często tylko przez most fluoksetynowy.",
   "mechanism": "Zależne od dawki: < 150 mg głównie inhibitor SERT (SSRI-podobne); > 150 mg dodaje się NET (SNRI-podobne). Minimalna aktywność DAT.",
   "legalStatus": "UE/PL: na receptę (Efectin, Velaxin, Velafax, generyki). USA: FDA Rx.",
+  "bioavailability": "~45% (doustnie, intensywny first-pass; tabletka ≈ roztwór — etykieta FDA Effexor)",
   "onsetTime": "2-6 weeks (full antidepressant response)",
   "halfLife": "5 h (parent), 11 h (active O-desmethylvenlafaxine)",
   "atcCode": "N06AX16",
