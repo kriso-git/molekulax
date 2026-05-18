@@ -9,6 +9,7 @@ import MoleculeBackground from './components/MoleculeBackground'
 import FloatingScientific from './components/FloatingScientific'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
+import SideLibrarySwitcher from './components/SideLibrarySwitcher'
 import EntryDetailRoute, { isEntryDetailHash } from './components/library/EntryDetailRoute'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
@@ -64,6 +65,7 @@ export default function App() {
                 <Faq />
                 <Disclaimer />
                 <Footer />
+                <SideLibrarySwitcher />
               </>
             )}
             {isEntryDetail && <EntryDetailRoute hash={hash} />}
