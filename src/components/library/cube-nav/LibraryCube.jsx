@@ -27,6 +27,8 @@ const HEIGHT_TWEEN = {
   ease: [0.16, 1, 0.3, 1],
 }
 
+const PERSPECTIVE_PX = 16000
+
 const SWIPE_DIST = 60
 const SWIPE_VELOCITY = 300
 
@@ -57,11 +59,20 @@ export default function LibraryCube() {
   // rotateY(...)` ancestor keeps the active face on a GPU compositing layer that
   // produces sub-pixel-blurry text/imagery in steady state. Switching to "flat"
   // post-settle releases the GPU layer → crisp 2D rendering. Re-enabled on next
-  // rotation trigger so the cube animation still plays.
+  // rotation trigger so the cube animation still plays. Driven by Framer Motion
+  // onAnimationStart/Complete (NOT useEffect[rotationDeg] — that would also fire
+  // on ResizeObserver-triggered re-renders where rotation didn't actually run).
   const [is3DActive, setIs3DActive] = useState(false)
-  useEffect(() => {
-    if (!isFirstRender) setIs3DActive(true)
-  }, [rotationDeg, isFirstRender])
+
+  // Compensation scale: a 3D-mode-ban az aktív face translateZ(halfWidth)-en
+  // ül, amit a perspective scale-up-ol P/(P-halfWidth) ≈ 1.04-re. A 2D-mode
+  // mode-switch transform:none → 1.0 scale → user "shrink" flicker-t lát. Pre-
+  // shrinking the cube by (P-halfWidth)/P inverse-eli ezt: perspective vissza-
+  // scale-eli pontosan 1.0 visible size-ra. 2D-mode-ban scale 1.0 → ugyanaz a
+  // visible size → snap nélkül átmegy.
+  const compensationScale = halfWidth > 0
+    ? (PERSPECTIVE_PX - halfWidth) / PERSPECTIVE_PX
+    : 1
 
   // True-cube geometry: halfWidth = wrapper_width / 2. Így a face-ek
   // valódi kockaként hinge-elnek a megosztott élnél, NEM keresztezik
@@ -197,7 +208,7 @@ export default function LibraryCube() {
       <div
         ref={wrapperRef}
         className="max-w-6xl mx-auto"
-        style={{ perspective: '16000px' }}
+        style={{ perspective: `${PERSPECTIVE_PX}px` }}
       >
         <motion.div
           id="library-cube-panel"
@@ -207,7 +218,7 @@ export default function LibraryCube() {
           transition={isFirstRender ? { duration: 0 } : { height: HEIGHT_TWEEN }}
           style={{
             position: 'relative',
-            transformStyle: 'preserve-3d',
+            transformStyle: is3DActive ? 'preserve-3d' : 'flat',
             width: '100%',
             overflow: 'visible',
           }}
@@ -215,7 +226,10 @@ export default function LibraryCube() {
           <motion.div
             animate={{ rotateY: rotationDeg }}
             transition={isFirstRender ? { duration: 0 } : ROTATION_TRANSITION}
-            transformTemplate={(_, generated) => (is3DActive ? generated : 'none')}
+            transformTemplate={(_, generated) =>
+              is3DActive ? `scale(${compensationScale}) ${generated}` : 'none'
+            }
+            onAnimationStart={() => setIs3DActive(true)}
             onAnimationComplete={() => setIs3DActive(false)}
             drag={isTouch ? 'x' : false}
             dragConstraints={{ left: 0, right: 0 }}

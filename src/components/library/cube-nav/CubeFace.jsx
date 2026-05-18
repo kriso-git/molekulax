@@ -86,7 +86,7 @@ export default function CubeFace({
         right: 0,
         transform: is3DActive ? transform3D : 'none',
         display: !is3DActive && !isActive ? 'none' : undefined,
-        backfaceVisibility: 'hidden',
+        backfaceVisibility: is3DActive ? 'hidden' : 'visible',
         pointerEvents: isActive ? 'auto' : 'none',
       }}
       aria-hidden={!isActive}
