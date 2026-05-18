@@ -10,7 +10,9 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const repoRoot = resolve(__dirname, '..')
-const entriesDir = resolve(repoRoot, 'src/data/libraries/nootropics/entries')
+// Phase 12 per-lang split: entries live in entries/hu/, entries/en/, entries/pl/.
+// chemicalFormula is identical across langs (pure ASCII), so read from /hu/ only.
+const entriesDir = resolve(repoRoot, 'src/data/libraries/nootropics/entries/hu')
 const indexPath = resolve(repoRoot, 'src/data/libraries/nootropics/index.js')
 
 // Build id → formula map from per-entry files.
@@ -46,8 +48,9 @@ for (const [id, formula] of formulaMap.entries()) {
   // We insert `"chemicalFormula": "..."` right after the "tier" line within
   // the record. Use a regex anchored to the specific id to avoid mismatch.
 
+  // Capture optional trailing comma separately so we can normalise it in the replacement.
   const recordRe = new RegExp(
-    '("id":\\s*"' + id.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&') + '"[\\s\\S]*?)(\\n    "tier":\\s*\\d+,?)',
+    '("id":\\s*"' + id.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&') + '"[\\s\\S]*?)(\\n    "tier":\\s*\\d+)(,?)',
     'm'
   )
 
@@ -68,9 +71,11 @@ for (const [id, formula] of formulaMap.entries()) {
     continue
   }
 
+  // Always emit a comma after "tier": N so the new chemicalFormula line is valid JSON
+  // even when the original record had no trailing comma after tier.
   indexContent = indexContent.replace(
     recordRe,
-    `$1$2\n    "chemicalFormula": "${formula}",`
+    `$1$2,\n    "chemicalFormula": "${formula}",`
   )
   added++
 }
