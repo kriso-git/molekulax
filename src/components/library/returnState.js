@@ -10,7 +10,7 @@
 // removeItem runs unconditionally after a successful getItem, so corrupted JSON
 // or stale tokens never leave debris in sessionStorage.
 
-const RETURN_STATE_KEY = 'molekulax:returnState'
+export const RETURN_STATE_KEY = 'molekulax:returnState'
 const RETURN_STATE_TTL_MS = 30 * 60 * 1000   // 30 minutes
 
 export function consumeReturnState() {

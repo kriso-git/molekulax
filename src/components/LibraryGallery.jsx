@@ -9,6 +9,7 @@ import {
 import EntryImage from './EntryImage'
 import TelegramButtons from './TelegramButtons'
 import DotsIndicator from './library/cube-nav/DotsIndicator'
+import { RETURN_STATE_KEY } from './library/returnState'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
 // Tile layout:
@@ -292,6 +293,30 @@ export default function LibraryGallery({
  return matched.sort(makeSortComparator(m => m.tier ?? library.getResearchLevel?.(m) ?? 1, sortMode))
  }, [library, metaList, query, lang, activeFilters, levelFilters, sortMode])
 
+ // Restore consumer for Task C. Reads window.__libraryGalleryPendingRestore__
+ // (set by EntryDetailRoute closeDetail or hashchange listener) and restores
+ // state when the library.id matches the snapshot. Idempotent — clears the
+ // pending object after consumption.
+ useEffect(() => {
+  if (typeof window === 'undefined') return
+  const pending = window.__libraryGalleryPendingRestore__
+  if (!pending || pending.libraryId !== library.id) return
+  setQuery(pending.query || '')
+  setActiveFilters(Array.isArray(pending.activeFilters) ? pending.activeFilters : [])
+  setLevelFilters(Array.isArray(pending.levelFilters) ? pending.levelFilters : [])
+  setSortMode(pending.sortMode || 'az')
+  if (pending.expanded) {
+   setExpanded(true)
+   setHasOpened(true)
+  }
+  // Wait two paints for accordion expansion + filter render, then scroll.
+  requestAnimationFrame(() => {
+   requestAnimationFrame(() => {
+    window.scrollTo({ top: pending.scrollY || 0, behavior: 'instant' })
+   })
+  })
+  delete window.__libraryGalleryPendingRestore__
+ }, [library.id])
 
  const toggleExpanded = () => {
  setExpanded(prev => {
@@ -332,7 +357,7 @@ export default function LibraryGallery({
     sortMode: stateRef.current.sortMode || 'az',
     expanded: stateRef.current.expanded || false,
    }
-   sessionStorage.setItem('molekulax:returnState', JSON.stringify(snapshot))
+   sessionStorage.setItem(RETURN_STATE_KEY, JSON.stringify(snapshot))
   } catch (e) {
    // sessionStorage full / disabled — silently skip, falls back to fresh landing
   }
