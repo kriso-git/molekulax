@@ -201,5 +201,83 @@ export default {
       "markers": "Kreatinin, eGFR, cystatin-C, vérnyomás-Holter, prolaktin, lipid panel, májfunkció, HbA1c, EKG félévente.",
       "purpose": "A Trenbolone-t cruise-fázisban tartani extrém kardiovaszkuláris és renális kockázattal jár; ezt a protokollt csak harm-reduction célból dokumentáljuk, nem ajánljuk."
     }
-  }
+  },
+  "variants": [
+    {
+      "routeId": "ace",
+      "routeLabel": "Trenbolone Acetate (Tren-Ace, gyors)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Sosem volt Rx emberben (Finaplix-H veterinary pellet implantátum). USA: Schedule III analog. WADA tiltott.",
+      "bioavailability": "~95% (IM, gyors acetate-ester hidrolízis)",
+      "onsetTime": "2-3 nap (rapid onset)",
+      "halfLife": "~2-3 nap (Acetate-ester, RÖVID)",
+      "halfLifeActive": "~24 h szabad Trenbolone (gyors-clearance Ace után)",
+      "detectionWindow": "Vizelet: 4-5 hónap (trenbolone-glükuronid metabolit, WADA-akkreditált)",
+      "aromatization": "NEM — Trenbolone NEM CYP19-szubsztrát (19-nor + Δ9,11-konfiguráció blokk)",
+      "hepatotoxicity": "Mérsékelt — NEM 17α-alkilált, de oxidatív renális-stressz mellékhatás magas",
+      "quality": {
+        "pure": ["UGL Trenbolone Acetate 100 mg/ml olajos fiola (HPLC-tesztelt)", "Veterinary Finaplix-H pellet konverzió (történelmi UGL gyakorlat)"],
+        "caution": ["EOD vagy napi IM-injekció szükséges", "PIP gyakori (oranzsás-vörös olaj-formula)", "Tren-cough rapid-onset 30-60 mp posztiv injekció után"],
+        "avoid": ["Erős renális prediszpozíció", "Apaság-tervezés", "Első-AAS-ciklus (NEM kezdő-compound)"]
+      },
+      "interactions": ["Cabergoline 0,25-0,5 mg E3D prolaktin-monitor KÖTELEZŐ", "Testosterone-base stack KÖTELEZŐ (Tren standalone ED-rizikó)", "PCT utolsó Ace-injekció +2-3 nap"],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "unit": "mg/EOD (IM, EOD vagy napi 1x)",
+        "note": "50-100 mg EOD (heti 175-350 mg), max 8 hét. PCT utolsó injekció +2-3 nap. Tren-Ace 'klasszikus' bodybuilding-választás gyors on/off miatt."
+      }
+    },
+    {
+      "routeId": "enan",
+      "routeLabel": "Trenbolone Enanthate (Tren-E, lassú)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Sosem volt Rx, kizárólag UGL. WADA tiltott.",
+      "bioavailability": "~95% (IM, lassú Enanthate-ester hidrolízis)",
+      "onsetTime": "1-2 hét (steady-state 3-4 hét)",
+      "halfLife": "5-7 nap (Enanthate-ester)",
+      "halfLifeActive": "~24 h szabad Trenbolone (Enan-depo lassú release)",
+      "detectionWindow": "Vizelet: 5-6 hónap (hosszabb mint Ace-én)",
+      "aromatization": "NEM — Trenbolone struktúra blokk",
+      "hepatotoxicity": "Mérsékelt — azonos parent Trenbolone, NEM 17α-alkilált",
+      "quality": {
+        "pure": ["UGL Trenbolone Enanthate 100-200 mg/ml olajos fiola (HPLC-tesztelt)"],
+        "caution": ["Heti 1-2x IM-injekció elegendő (steady-state 3-4 hét)", "PIP enyhébb mint Ace-n", "Tren-mellékhatások (kreatinin, prolaktin) ugyanazok mint Ace-n, csak lassabban kumulálódnak"],
+        "avoid": ["Rövid (4-6 hét) ciklus nem hatékony", "Egyéb Tren-kontraindikációk azonosak"]
+      },
+      "interactions": ["Cabergoline E3D", "Testosterone-base KÖTELEZŐ", "PCT utolsó Enan-injekció +14-21 nap"],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 200, "medium": 300, "high": 400},
+        "unit": "mg/hét (IM, heti 1-2x osztva)",
+        "note": "200-400 mg/hét, heti 1-2x. Minimum 8-10 hét ciklus. PCT utolsó injekció +14-21 nap. Lassabb on/off mint Ace, kevesebb injekció."
+      }
+    },
+    {
+      "routeId": "hex",
+      "routeLabel": "Trenbolone Hexahydrobenzylcarbonate (Parabolan, közepes)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Negma Laboratories Parabolan 1980-2000 EU Rx (cachexia-Rx), 1997-óta wycofany. Modern UGL only. WADA tiltott.",
+      "bioavailability": "~95% (IM, közepes Hexahydro-ester hidrolízis)",
+      "onsetTime": "1 hét (steady-state 2-3 hét)",
+      "halfLife": "~14 nap (Hexahydrobenzylcarbonate-ester)",
+      "halfLifeActive": "~24 h szabad Trenbolone (közepes-release Parabolan-depo)",
+      "detectionWindow": "Vizelet: 5-6 hónap (Trenbolone-metabolit, hasonló mint Enan)",
+      "aromatization": "NEM — Trenbolone struktúra blokk",
+      "hepatotoxicity": "Mérsékelt — azonos parent Trenbolone",
+      "quality": {
+        "pure": ["Negma Parabolan 76 mg/ml ampulla (HISTORIKUS Rx 1980-1997, ma rare-collectible)", "UGL Tren-Hex 100 mg/ml olajos fiola (HPLC-tesztelt)"],
+        "caution": ["Heti 1-2x IM-injekció (közepes felezés)", "PIP közepes-enyhe", "Klasszikus 'Parabolan' historikus-presztízs UGL-piacon"],
+        "avoid": ["Standard Tren-kontraindikációk azonosak (renális, kardiovaszkuláris, apaság)"]
+      },
+      "interactions": ["Cabergoline E3D", "Testosterone-base KÖTELEZŐ", "PCT utolsó Hex-injekció +21 nap"],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 150, "medium": 225, "high": 300},
+        "unit": "mg/hét (IM, heti 1-2x)",
+        "note": "150-300 mg/hét, heti 1-2x. 8-10 hét ciklus. PCT utolsó injekció +21 nap. 'Parabolan' historikus presztízzsel — Negma Rx kvalitás-illúzió, modern UGL azonos kategoria mint Tren-Ace/Enan."
+      }
+    }
+  ],
+  "defaultVariant": "ace"
 }

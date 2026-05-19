@@ -41,6 +41,7 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 4,
     "wadaStatus": "banned",
+    "variantCount": 3,
     "subCategory": "19nor",
     "subSection": "tren",
     "formFactors": ["oil"]
@@ -179,6 +180,7 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 4,
     "wadaStatus": "banned",
+    "variantCount": 2,
     "subCategory": "19nor",
     "subSection": "nandro",
     "formFactors": ["oil"]
@@ -489,6 +491,57 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Niesterydowy SARM (Enobosarm), GTx 2007. SARM z największą ilością danych klinicznych: Faza II cachexia (Dalton 2011, 159 pacjentów) + Faza III POWER. Najpopularniejszy SARM, 'łagodny pierwszy SARM' marketing UGL. Zakazany WADA."
     },
     "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "sarms",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "yk-11",
+    "name": "YK-11 (Myostatin Inhibitor SARM)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#9333ea",
+    "tagColor": "rgba(147,51,234,0.18)",
+    "shortDesc": {
+      "hu": "Szteroid-szerű SARM EGYEDÜLI dual-mechanizmussal: AR-agonista + myostatin-pathway inhibitor (follistatin-felregulálás, Kanno 2013). 17α-szteroid-szerű hepatotoxicitás-profil. Klinikai precedens NINCS emberben. WADA tiltott.",
+      "en": "Steroid-like SARM with UNIQUE dual mechanism: AR agonist + myostatin pathway inhibitor (follistatin upregulation, Kanno 2013). 17α-steroid-like hepatotoxicity profile. No clinical precedent in humans. WADA-banned.",
+      "pl": "Sterydopodobny SARM z UNIKALNYM podwójnym mechanizmem: agonista AR + inhibitor szlaku miostatyny (upregulation follistatyny, Kanno 2013). Profil hepatotoksyczności 17α-sterydopodobny. Brak precedensu klinicznego u ludzi. Zakazany WADA."
+    },
+    "tier": 2,
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "sarms",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "s4",
+    "name": "S4 (Andarine, GTx-007)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#9333ea",
+    "tagColor": "rgba(147,51,234,0.18)",
+    "shortDesc": {
+      "hu": "Non-szteroidal SARM, GTx Inc 2005. EGYEDI mellékhatás: dose-dependent sárga látás + éjszakai vakság (Marhefka 2004 — retinal opszin-binding). 'Cutting SARM' hírnévvel. WADA tiltott.",
+      "en": "Non-steroidal SARM, GTx Inc 2005. UNIQUE side effect: dose-dependent yellow vision + night blindness (Marhefka 2004 — retinal opsin binding). 'Cutting SARM' reputation. WADA-banned.",
+      "pl": "Niesterydowy SARM, GTx Inc 2005. UNIKALNY skutek uboczny: zależne od dawki żółte widzenie + nocna ślepota (Marhefka 2004 — wiązanie opsynu siatkówki). Reputacja 'cutting SARM'. Zakazany WADA."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "sarms",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "s23",
+    "name": "S23 (Most Potent SARM)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#9333ea",
+    "tagColor": "rgba(147,51,234,0.18)",
+    "shortDesc": {
+      "hu": "Non-szteroidal SARM, az SARM-osztály legpotensebb compoundja (~95% Test AR-binding, Jones 2009). Férfi-fogamzásgátló-jelölt (Jones 2010 rat-trial). Teljes HPTA-szuppresszió + intenzív mellékhatás. WADA tiltott.",
+      "en": "Non-steroidal SARM, most potent compound of the SARM class (~95% Test AR-binding, Jones 2009). Male contraceptive candidate (Jones 2010 rat trial). Full HPTA suppression + intense side effects. WADA-banned.",
+      "pl": "Niesterydowy SARM, najbardziej silny compound klasy SARM (~95% Test AR-binding, Jones 2009). Kandydat antykoncepcji męskiej (Jones 2010 rat trial). Pełna supresja HPTA + intensywne skutki uboczne. Zakazany WADA."
+    },
+    "tier": 2,
     "wadaStatus": "banned",
     "subCategory": "19nor",
     "subSection": "sarms",

@@ -201,5 +201,83 @@ export default {
       "markers": "Creatinine, eGFR, cystatin-C, BP Holter, prolactin, lipid panel, liver function, HbA1c, ECG every 6 months.",
       "purpose": "Keeping Trenbolone in cruise carries extreme cardiovascular and renal risk; this protocol is documented for harm-reduction only, not recommended."
     }
-  }
+  },
+  "variants": [
+    {
+      "routeId": "ace",
+      "routeLabel": "Trenbolone Acetate (Tren-Ace, fast)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Never an Rx in humans (Finaplix-H veterinary pellet implant). USA: Schedule III analog. WADA-banned.",
+      "bioavailability": "~95% (IM, fast acetate-ester hydrolysis)",
+      "onsetTime": "2-3 days (rapid onset)",
+      "halfLife": "~2-3 days (Acetate ester, SHORT)",
+      "halfLifeActive": "~24 h free Trenbolone (fast clearance after Ace)",
+      "detectionWindow": "Urinary: 4-5 months (trenbolone-glucuronide metabolite, WADA-accredited)",
+      "aromatization": "NO — Trenbolone is NOT a CYP19 substrate (19-nor + Δ9,11 configuration block)",
+      "hepatotoxicity": "Moderate — NOT 17α-alkylated, but high oxidative renal stress side effect",
+      "quality": {
+        "pure": ["UGL Trenbolone Acetate 100 mg/ml oil vial (HPLC-tested)", "Veterinary Finaplix-H pellet conversion (historical UGL practice)"],
+        "caution": ["EOD or daily IM injection required", "PIP common (orange-red oil formula)", "Tren-cough rapid onset 30-60 s after injection"],
+        "avoid": ["Strong renal predisposition", "Planned fatherhood", "First AAS cycle (NOT a beginner compound)"]
+      },
+      "interactions": ["Cabergoline 0.25-0.5 mg E3D prolactin monitor MANDATORY", "Testosterone base stack MANDATORY (Tren standalone ED risk)", "PCT last Ace injection +2-3 days"],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "unit": "mg/EOD (IM, EOD or once daily)",
+        "note": "50-100 mg EOD (weekly 175-350 mg), max 8 weeks. PCT last injection +2-3 days. Tren-Ace classic bodybuilding choice due to fast on/off."
+      }
+    },
+    {
+      "routeId": "enan",
+      "routeLabel": "Trenbolone Enanthate (Tren-E, slow)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Never an Rx, UGL only. WADA-banned.",
+      "bioavailability": "~95% (IM, slow Enanthate ester hydrolysis)",
+      "onsetTime": "1-2 weeks (steady-state 3-4 weeks)",
+      "halfLife": "5-7 days (Enanthate ester)",
+      "halfLifeActive": "~24 h free Trenbolone (Enan depot slow release)",
+      "detectionWindow": "Urinary: 5-6 months (longer than on Ace)",
+      "aromatization": "NO — Trenbolone structure block",
+      "hepatotoxicity": "Moderate — same parent Trenbolone, NOT 17α-alkylated",
+      "quality": {
+        "pure": ["UGL Trenbolone Enanthate 100-200 mg/ml oil vial (HPLC-tested)"],
+        "caution": ["Weekly 1-2x IM injection sufficient (steady-state 3-4 weeks)", "PIP milder than on Ace", "Tren side effects (creatinine, prolactin) same as on Ace, just accumulate more slowly"],
+        "avoid": ["Short (4-6 week) cycle ineffective", "Other Tren contraindications same"]
+      },
+      "interactions": ["Cabergoline E3D", "Testosterone base MANDATORY", "PCT last Enan injection +14-21 days"],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 200, "medium": 300, "high": 400},
+        "unit": "mg/week (IM, weekly 1-2x split)",
+        "note": "200-400 mg/week, weekly 1-2x. Minimum 8-10 week cycle. PCT last injection +14-21 days. Slower on/off than Ace, fewer injections."
+      }
+    },
+    {
+      "routeId": "hex",
+      "routeLabel": "Trenbolone Hexahydrobenzylcarbonate (Parabolan, medium)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Negma Laboratories Parabolan 1980-2000 EU Rx (cachexia Rx), withdrawn since 1997. Modern UGL only. WADA-banned.",
+      "bioavailability": "~95% (IM, medium Hexahydro ester hydrolysis)",
+      "onsetTime": "1 week (steady-state 2-3 weeks)",
+      "halfLife": "~14 days (Hexahydrobenzylcarbonate ester)",
+      "halfLifeActive": "~24 h free Trenbolone (medium-release Parabolan depot)",
+      "detectionWindow": "Urinary: 5-6 months (Trenbolone metabolite, similar to Enan)",
+      "aromatization": "NO — Trenbolone structure block",
+      "hepatotoxicity": "Moderate — same parent Trenbolone",
+      "quality": {
+        "pure": ["Negma Parabolan 76 mg/ml ampoule (HISTORICAL Rx 1980-1997, today rare-collectible)", "UGL Tren-Hex 100 mg/ml oil vial (HPLC-tested)"],
+        "caution": ["Weekly 1-2x IM injection (medium half-life)", "PIP medium-mild", "Classic 'Parabolan' historical prestige on UGL market"],
+        "avoid": ["Standard Tren contraindications same (renal, cardiovascular, fatherhood)"]
+      },
+      "interactions": ["Cabergoline E3D", "Testosterone base MANDATORY", "PCT last Hex injection +21 days"],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 150, "medium": 225, "high": 300},
+        "unit": "mg/week (IM, weekly 1-2x)",
+        "note": "150-300 mg/week, weekly 1-2x. 8-10 week cycle. PCT last injection +21 days. 'Parabolan' has historical prestige — Negma Rx quality illusion, modern UGL same category as Tren-Ace/Enan."
+      }
+    }
+  ],
+  "defaultVariant": "ace"
 }

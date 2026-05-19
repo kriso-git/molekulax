@@ -104,5 +104,58 @@ export default {
       "markers": "Total T, E2, Prolactin, lipid panel, HbA1c, PSA.",
       "purpose": "Hosszú-távú Deca-cruise lehetséges alacsony dózison (100-150mg/hét), de prolactin-monitoring kötelező."
     }
-  }
+  },
+  "variants": [
+    {
+      "routeId": "deca",
+      "routeLabel": "Nandrolone Decanoate (Deca-Durabolin, lassú)",
+      "image": "/performance/oil-vial-yellow.png",
+      "legalStatus": "HU/PL/EU: Rx (Deca-Durabolin Organon SmPC). USA: Schedule III. WADA tiltott.",
+      "bioavailability": "~95% (IM, lassú decanoate-ester hidrolízis)",
+      "onsetTime": "2-3 hét (steady-state 4-6 hét)",
+      "halfLife": "15 nap (Decanoate-ester)",
+      "halfLifeActive": "~24 h szabad Nandrolone (hidrolízis után, depo-jellegű lassú release)",
+      "detectionWindow": "Vizelet: 12-18 hónap (Deca hosszú-távú metabolit 19-norandrosterone, WADA-akkreditált LC-MS/MS — leghosszabb detection-ablak AAS-ek közül)",
+      "aromatization": "Minimális — ~10% Testosterone-aromatizációhoz képest",
+      "hepatotoxicity": "Alacsony — NEM 17α-alkilált, IM bypass-olja first-pass-t",
+      "quality": {
+        "pure": ["Organon Deca-Durabolin 50 mg/ml ampulla (EU Rx)", "UGL Nandrolone Decanoate 200-300 mg/ml olajos fiola, HPLC-tesztelt"],
+        "caution": ["Hosszú-távú HPTA-szuppresszió 12-16 hét", "Prolaktin-emelkedés (cabergoline készenlét)", "Deca-dick libidó-csökkenés gyakori"],
+        "avoid": ["Apaság-tervezés közeli időhorizonton (HPTA-recovery 6-12 hónap Deca után)", "Versenysport-tesztelés 12-18 hónap előtt"]
+      },
+      "interactions": ["Cabergoline 0,25 mg 2x/hét prolaktin-monitor", "Testosterone-base stack standard (Deca standalone ED-rizikó miatt)", "PCT utolsó Deca-injekció +3 hét"],
+      "doseCalc": {
+        "type": "bodyweight",
+        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "unit": "mg/hét (IM, heti 1x)",
+        "note": "100-150 mg/hét (Deca-bridge), 300-600 mg/hét (bulking). Heti 1x IM injekció a 15 napos felezés miatt."
+      }
+    },
+    {
+      "routeId": "npp",
+      "routeLabel": "Nandrolone Phenylpropionate (NPP, gyors)",
+      "image": "/performance/oil-vial-yellow.png",
+      "legalStatus": "EU: Rx (Durabolin, Phenylprop) regional. USA: Schedule III. WADA tiltott.",
+      "bioavailability": "~95% (IM, gyorsabb Phenylpropionate-ester hidrolízis)",
+      "onsetTime": "1-2 hét (steady-state 2-3 hét)",
+      "halfLife": "~5 nap (Phenylpropionate-ester)",
+      "halfLifeActive": "~24 h szabad Nandrolone (gyorsabb release mint Deca)",
+      "detectionWindow": "Vizelet: 10-14 hónap (19-norandrosterone-metabolit, hasonló mint Deca-é, hosszú-távú)",
+      "aromatization": "Minimális — ~10% Testosterone-aromatizációhoz képest (azonos parent Nandrolone)",
+      "hepatotoxicity": "Alacsony — NEM 17α-alkilált",
+      "quality": {
+        "pure": ["UGL NPP 100 mg/ml olajos fiola (HPLC-tesztelt)", "Némely EU-pharmacy Durabolin (regional Rx) 25-50 mg/ml"],
+        "caution": ["EOD vagy 2x heti IM-injekció szükséges (rövid felezés)", "Prolaktin-emelkedés Deca-szintű", "PIP NPP-n erősebb mint Deca-n"],
+        "avoid": ["Apaság-tervezés közeli időhorizonton", "Erős injection-fárasztás esetén Deca preferált (heti 1x)"]
+      },
+      "interactions": ["Cabergoline 0,25 mg 2x/hét", "Testosterone-base stack standard", "PCT utolsó NPP-injekció +5-7 nap (gyorsabb clearance mint Deca-n)"],
+      "doseCalc": {
+        "type": "bodyweight",
+        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "unit": "mg/hét (IM, EOD vagy 2x heti)",
+        "note": "100-150 mg/hét (bridge), 300-600 mg/hét (bulking). EOD vagy 2x heti IM injekció. Gyorsabb on/off mint Deca → 'rövidebb' ciklusra alkalmasabb."
+      }
+    }
+  ],
+  "defaultVariant": "deca"
 }

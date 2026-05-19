@@ -104,5 +104,58 @@ export default {
       "markers": "Total T, E2, prolaktyna, lipidogram, HbA1c, PSA.",
       "purpose": "Długoterminowy cruise możliwy przy niskiej dawce."
     }
-  }
+  },
+  "variants": [
+    {
+      "routeId": "deca",
+      "routeLabel": "Nandrolon Dekanonat (Deca-Durabolin, wolny)",
+      "image": "/performance/oil-vial-yellow.png",
+      "legalStatus": "HU/PL/UE: Rx (Deca-Durabolin Organon SmPC). USA: Schedule III. Zakazany WADA.",
+      "bioavailability": "~95% (IM, wolna hydroliza estru dekanonowego)",
+      "onsetTime": "2-3 tygodnie (steady-state 4-6 tygodni)",
+      "halfLife": "15 dni (ester dekanonowy)",
+      "halfLifeActive": "~24 h wolny Nandrolon (po hydrolizie, wolne uwalnianie typu depot)",
+      "detectionWindow": "W moczu: 12-18 miesięcy (długoterminowy metabolit Deca 19-norandrosteron, LC-MS/MS akredytowane WADA — najdłuższe okno detekcji wśród AAS)",
+      "aromatization": "Minimalna — ~10% w porównaniu do aromatyzacji testosteronu",
+      "hepatotoxicity": "Niska — NIE 17α-alkilowany, IM omija first-pass",
+      "quality": {
+        "pure": ["Organon Deca-Durabolin 50 mg/ml ampułka (UE Rx)", "UGL Nandrolon Dekanonat 200-300 mg/ml fiolka olejowa, HPLC-testowane"],
+        "caution": ["Długoterminowa supresja HPTA 12-16 tygodni", "Wzrost prolaktyny (gotowość kabergoliny)", "Deca-dick utrata libido powszechna"],
+        "avoid": ["Planowane ojcostwo w bliskim horyzoncie czasowym (odzyskanie HPTA 6-12 miesięcy po Deca)", "Testowanie sportu wyczynowego w ciągu 12-18 miesięcy"]
+      },
+      "interactions": ["Kabergolina 0,25 mg 2x/tydzień monitor prolaktyny", "Stack z bazą testosteronu standardowy (Deca samodzielnie ryzyko ED)", "PCT ostatnia iniekcja Deca +3 tygodnie"],
+      "doseCalc": {
+        "type": "bodyweight",
+        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "unit": "mg/tydzień (IM, tygodniowo 1x)",
+        "note": "100-150 mg/tydzień (Deca-bridge), 300-600 mg/tydzień (bulking). Tygodniowo 1x iniekcja IM z powodu 15-dniowego okresu półtrwania."
+      }
+    },
+    {
+      "routeId": "npp",
+      "routeLabel": "Nandrolon Fenylopropionian (NPP, szybki)",
+      "image": "/performance/oil-vial-yellow.png",
+      "legalStatus": "UE: Rx (Durabolin, Phenylprop) regionalne. USA: Schedule III. Zakazany WADA.",
+      "bioavailability": "~95% (IM, szybsza hydroliza estru fenylopropionianowego)",
+      "onsetTime": "1-2 tygodnie (steady-state 2-3 tygodnie)",
+      "halfLife": "~5 dni (ester fenylopropionianowy)",
+      "halfLifeActive": "~24 h wolny Nandrolon (szybsze uwalnianie niż Deca)",
+      "detectionWindow": "W moczu: 10-14 miesięcy (metabolit 19-norandrosteronu, podobny do Deca, długoterminowy)",
+      "aromatization": "Minimalna — ~10% w porównaniu do aromatyzacji testosteronu (ten sam macierzysty Nandrolon)",
+      "hepatotoxicity": "Niska — NIE 17α-alkilowany",
+      "quality": {
+        "pure": ["UGL NPP 100 mg/ml fiolka olejowa (HPLC-testowane)", "Niektóre apteki UE Durabolin (regionalne Rx) 25-50 mg/ml"],
+        "caution": ["EOD lub 2x tygodniowo iniekcja IM wymagana (krótki okres półtrwania)", "Wzrost prolaktyny na poziomie Deca", "PIP silniejszy na NPP niż Deca"],
+        "avoid": ["Planowane ojcostwo w bliskim horyzoncie czasowym", "Jeśli zmęczenie iniekcyjne wysokie, preferowany Deca (tygodniowo 1x)"]
+      },
+      "interactions": ["Kabergolina 0,25 mg 2x/tydzień", "Stack z bazą testosteronu standardowy", "PCT ostatnia iniekcja NPP +5-7 dni (szybszy klirens niż Deca)"],
+      "doseCalc": {
+        "type": "bodyweight",
+        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "unit": "mg/tydzień (IM, EOD lub 2x tygodniowo)",
+        "note": "100-150 mg/tydzień (bridge), 300-600 mg/tydzień (bulking). EOD lub 2x tygodniowo iniekcja IM. Szybsze on/off niż Deca → bardziej odpowiednie dla 'krótszych' cykli."
+      }
+    }
+  ],
+  "defaultVariant": "deca"
 }
