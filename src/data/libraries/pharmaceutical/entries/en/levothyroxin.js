@@ -193,8 +193,7 @@ export default {
     }
   ],
   "related": [
-    "metformin",
-    "semaglutide"
+    "metformin"
   ],
   "doseCalc": {
     "type": "tshWeight",

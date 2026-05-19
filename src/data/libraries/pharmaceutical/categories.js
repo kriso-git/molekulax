@@ -16,47 +16,28 @@ export const CATEGORIES = [
 // Populated incrementally in Task 16-23 (Session 5-6) as entries land.
 export const PHARMACEUTICAL_CATEGORIES = {
   metformin:     ['metabolic'],
-  semaglutide:   ['metabolic'],
   atorvastatin:  ['cardio'],
   tadalafil:     ['cardio'],
-  sertralin:     ['psychiatry'],
   bupropion:     ['psychiatry'],
   modafinil:     ['psychiatry'],
   levothyroxin:  ['endocrine'],
   finasteride:   ['dermatology'],
   amoxicillin:   ['antiinfective'],
   // EXTRA Anyagcsere
-  tirzepatide:     ['metabolic'],
   empagliflozin:   ['metabolic'],
-  liraglutide:     ['metabolic'],
-  berberin:        ['metabolic'],
-  acarbose:        ['metabolic'],
-  glimepirid:      ['metabolic'],
   // EXTRA Pszichiátria
   escitalopram:    ['psychiatry'],
   fluoxetine:      ['psychiatry'],
-  venlafaxine:     ['psychiatry'],
-  mirtazapine:     ['psychiatry'],
-  aripiprazole:    ['psychiatry'],
-  lamotrigine:     ['psychiatry'],
   methylphenidate: ['psychiatry'],
   // EXTRA Kardio
   rosuvastatin:    ['cardio'],
-  ramipril:        ['cardio'],
-  bisoprolol:      ['cardio'],
-  amlodipine:      ['cardio'],
-  apixaban:        ['cardio'],
   // EXTRA Endokrin
-  methimazole:     ['endocrine'],
   hydrocortisone:  ['endocrine'],
   liothyronine:    ['endocrine'],
   // EXTRA Antiinfekt
-  azithromycin:    ['antiinfective'],
   ciprofloxacin:   ['antiinfective'],
   doxycycline:     ['antiinfective'],
-  metronidazole:   ['antiinfective'],
   // EXTRA Onko
-  methotrexate:    ['oncology'],
   tamoxifen:       ['oncology'],
   // EXTRA Bőr
   minoxidil:       ['dermatology'],

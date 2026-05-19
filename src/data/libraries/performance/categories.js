@@ -20,14 +20,12 @@ export const PERFORMANCE_CATEGORIES = {
   'anavar-info':       ['aas-info'],
   // Task 7 (Prohormon CORE)
   'superdrol':         ['prohormones'],
-  '1-andro':           ['prohormones'],
   // Task 8 (Stim + Bronch CORE)
   'ephedrine':         ['stimulants'],
   'yohimbine':         ['stimulants'],
   'clenbuterol':       ['bronchodilators', 'stimulants'],
   'albuterol':         ['bronchodilators'],
   // Task 9 (Növekedés CORE + EXTRA)
-  'mk-677':            ['growth-recovery'],
   'winstrol-info':     ['aas-info'],
   'nandrolone-info':   ['aas-info'],
   'dianabol-info':     ['aas-info'],

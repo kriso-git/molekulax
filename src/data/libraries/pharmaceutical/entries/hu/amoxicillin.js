@@ -194,8 +194,7 @@ export default {
     }
   ],
   "related": [
-    "metformin",
-    "sertralin"
+    "metformin"
   ],
   "doseCalc": {
     "type": "fixedDose",

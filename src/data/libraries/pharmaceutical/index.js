@@ -29,25 +29,6 @@ export const LIBRARY_ENTRY_META = [
     "atcCode": "A10BA02"
   },
   {
-    "id": "semaglutide",
-    "name": "Semaglutide",
-    "image": null,
-    "accentColor": "#10b981",
-    "tagColor": "rgba(16,185,129,0.18)",
-    "shortDesc": {
-      "hu": "GLP-1 receptor agonista, T2DM és obesity FDA-jóváhagyott Rx (Ozempic, Wegovy, Rybelsus). Az elmúlt évtized blockbuster anyagcsere-szere.",
-      "en": "GLP-1 receptor agonist, FDA-approved Rx for T2DM and obesity (Ozempic, Wegovy, Rybelsus). The blockbuster metabolic agent of the past decade.",
-      "pl": "Agonista receptora GLP-1, lek Rx zatwierdzony przez FDA dla T2DM i otyłości (Ozempic, Wegovy, Rybelsus). Blockbusterowy lek metaboliczny minionej dekady."
-    },
-    "tier": 4,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx), egyes EU-országokban GLP-1 RA-szakorvosi szűkítés",
-      "en": "Prescription only (Rx), GLP-1 RA specialist gating in some EU countries",
-      "pl": "Na receptę (Rx), w niektórych krajach UE ograniczenie do specjalistów GLP-1 RA"
-    },
-    "atcCode": "A10BJ06"
-  },
-  {
     "id": "atorvastatin",
     "name": "Atorvastatin",
     "image": null,
@@ -84,25 +65,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Na receptę (Rx), urolog lub lekarz rodzinny może przepisać"
     },
     "atcCode": "G04BE08"
-  },
-  {
-    "id": "sertralin",
-    "name": "Sertralin",
-    "image": null,
-    "accentColor": "#a78bfa",
-    "tagColor": "rgba(167,139,250,0.18)",
-    "shortDesc": {
-      "hu": "Szelektív szerotonin reuptake-gátló (SSRI), az MDD és szorongásos zavarok első-vonal Rx kezelése. Cipriani 2018 antidepresszáns-meta szerint a legkedvezőbb hatékonyság-tolerabilitás arány.",
-      "en": "Selective serotonin reuptake inhibitor (SSRI), first-line Rx for MDD and anxiety disorders. Cipriani 2018 antidepressant meta showed best efficacy-tolerability ratio.",
-      "pl": "Selektywny inhibitor wychwytu zwrotnego serotoniny (SSRI), lek pierwszego rzutu Rx dla MDD i zaburzeń lękowych. Metaanaliza Cipriani 2018 wykazała najkorzystniejszy stosunek skuteczności do tolerancji."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx), pszichiáter vagy háziorvos felírható",
-      "en": "Prescription only (Rx), psychiatrist or GP can prescribe",
-      "pl": "Na receptę (Rx), psychiatra lub lekarz rodzinny może przepisać"
-    },
-    "atcCode": "N06AB06"
   },
   {
     "id": "bupropion",
@@ -200,25 +162,6 @@ export const LIBRARY_ENTRY_META = [
     "atcCode": "J01CA04"
   },
   {
-    "id": "tirzepatide",
-    "name": "Tirzepatide",
-    "image": null,
-    "accentColor": "#10b981",
-    "tagColor": "rgba(16,185,129,0.18)",
-    "shortDesc": {
-      "hu": "Dual GIP + GLP-1 receptor agonista, Eli Lilly Mounjaro (T2DM) és Zepbound (obesity). SURMOUNT-5 trial szerint head-to-head felülmúlja a Semaglutide-ot.",
-      "en": "Dual GIP + GLP-1 receptor agonist, Eli Lilly Mounjaro (T2DM) and Zepbound (obesity). SURMOUNT-5 trial showed head-to-head superiority over semaglutide.",
-      "pl": "Podwójny agonista receptora GIP + GLP-1, Eli Lilly Mounjaro (T2DM) i Zepbound (otyłość). SURMOUNT-5 wykazało wyższość head-to-head nad semaglutydem."
-    },
-    "tier": 4,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "A10BX16"
-  },
-  {
     "id": "empagliflozin",
     "name": "Empagliflozin",
     "image": null,
@@ -236,63 +179,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Na receptę (Rx)"
     },
     "atcCode": "A10BK03"
-  },
-  {
-    "id": "liraglutide",
-    "name": "Liraglutide",
-    "image": null,
-    "accentColor": "#10b981",
-    "tagColor": "rgba(16,185,129,0.18)",
-    "shortDesc": {
-      "hu": "Napi GLP-1 receptor agonista, Novo Nordisk Victoza (T2DM) és Saxenda (obesity). A Semaglutide elődje, ~13 órás felezési idő.",
-      "en": "Daily GLP-1 receptor agonist, Novo Nordisk Victoza (T2DM) and Saxenda (obesity). Semaglutide predecessor, ~13 h half-life.",
-      "pl": "Codzienny agonista receptora GLP-1, Novo Nordisk Victoza (T2DM) i Saxenda (otyłość). Poprzednik semaglutydu, ~13 h okres półtrwania."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "A10BJ02"
-  },
-  {
-    "id": "berberin",
-    "name": "Berberin",
-    "image": null,
-    "accentColor": "#10b981",
-    "tagColor": "rgba(16,185,129,0.18)",
-    "shortDesc": {
-      "hu": "Növényi alkaloid (Berberis aristata, Coptis chinensis), AMPK-aktivátor. \"Természetes Metformin\"-ként promotált, de farmakológiai pozícionálása korlátozott. NEM Rx, OTC supplement.",
-      "en": "Plant alkaloid (Berberis aristata, Coptis chinensis), AMPK activator. Marketed as \"natural metformin\" but pharmacological positioning limited. NOT Rx, OTC supplement.",
-      "pl": "Alkaloid roślinny (Berberis aristata, Coptis chinensis), aktywator AMPK. Promowany jako \"naturalna metformina\", ale pozycjonowanie farmakologiczne ograniczone. NIE Rx, suplement OTC."
-    },
-    "tier": 2,
-    "prescriptionStatus": {
-      "hu": "NEM vényköteles (étrendkiegészítő)",
-      "en": "NOT prescription (dietary supplement)",
-      "pl": "NIE na receptę (suplement diety)"
-    },
-    "atcCode": "No ATC assigned (not a registered drug)"
-  },
-  {
-    "id": "acarbose",
-    "name": "Acarbose",
-    "image": null,
-    "accentColor": "#10b981",
-    "tagColor": "rgba(16,185,129,0.18)",
-    "shortDesc": {
-      "hu": "Alpha-glükozidáz inhibitor, Bayer Glucobay. Postprandiális glükóz-csökkentő, főleg ázsiai T2DM-populációkban népszerű.",
-      "en": "Alpha-glucosidase inhibitor, Bayer Glucobay. Postprandial glucose reducer, popular mainly in Asian T2DM populations.",
-      "pl": "Inhibitor alfa-glukozydazy, Bayer Glucobay. Redukcja glukozy poposiłkowej, popularna głównie w populacjach azjatyckich T2DM."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "A10BF01"
   },
   {
     "id": "escitalopram",
@@ -333,82 +219,6 @@ export const LIBRARY_ENTRY_META = [
     "atcCode": "N06AB03"
   },
   {
-    "id": "venlafaxine",
-    "name": "Venlafaxine",
-    "image": null,
-    "accentColor": "#a78bfa",
-    "tagColor": "rgba(167,139,250,0.18)",
-    "shortDesc": {
-      "hu": "Szerotonin-norepinefrin reuptake gátló (SNRI, Wyeth Effexor). MDD + GAD + PD + SAD indikációkkal. Súlyos discontinuation-szindrómáról ismert.",
-      "en": "Serotonin-norepinephrine reuptake inhibitor (SNRI, Wyeth Effexor). For MDD + GAD + PD + SAD. Notorious severe discontinuation syndrome.",
-      "pl": "Inhibitor wychwytu zwrotnego serotoniny-norepinefryny (SNRI, Wyeth Effexor). MDD + GAD + PD + SAD. Znany z ciężkiego zespołu odstawiennego."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "N06AX16"
-  },
-  {
-    "id": "mirtazapine",
-    "name": "Mirtazapine",
-    "image": null,
-    "accentColor": "#a78bfa",
-    "tagColor": "rgba(167,139,250,0.18)",
-    "shortDesc": {
-      "hu": "Noradrenerg és specifikus szerotoninerg antidepresszáns (NaSSA, Organon Remeron). Szedáló + étvágyfokozó profil, MDD + inszomnia + súlyveszteség kombinációra ideális.",
-      "en": "Noradrenergic and specific serotonergic antidepressant (NaSSA, Organon Remeron). Sedating + appetite-stimulating profile, ideal for MDD + insomnia + weight loss combination.",
-      "pl": "Noradrenergiczny i specyficzny serotoninergiczny antydepresant (NaSSA, Organon Remeron). Sedujący + pobudzający apetyt, idealny dla MDD + bezsenność + utrata masy."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "N06AX11"
-  },
-  {
-    "id": "aripiprazole",
-    "name": "Aripiprazole",
-    "image": null,
-    "accentColor": "#a78bfa",
-    "tagColor": "rgba(167,139,250,0.18)",
-    "shortDesc": {
-      "hu": "Atipikus antipszichotikum, parciális D2/5-HT1A agonista (Otsuka/BMS Abilify). Skizofrénia + bipoláris + MDD-augmentáció + Tourette + autism-irritabilitás indikációkkal.",
-      "en": "Atypical antipsychotic, D2/5-HT1A partial agonist (Otsuka/BMS Abilify). For schizophrenia + bipolar + MDD augmentation + Tourette + autism irritability.",
-      "pl": "Atypowy antypsychotyk, częściowy agonista D2/5-HT1A (Otsuka/BMS Abilify). Schizofrenia + ChAD + augmentacja MDD + Tourette + drażliwość w autyzmie."
-    },
-    "tier": 3,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "N05AX12"
-  },
-  {
-    "id": "lamotrigine",
-    "name": "Lamotrigine",
-    "image": null,
-    "accentColor": "#a78bfa",
-    "tagColor": "rgba(167,139,250,0.18)",
-    "shortDesc": {
-      "hu": "Antikonvulzív + bipoláris fenntartó (GSK Lamictal). Feszültség-függő Na-csatorna blokkoló. SJS/TEN kockázat miatt KÖTELEZŐ lassú titráció.",
-      "en": "Anticonvulsant + bipolar maintenance (GSK Lamictal). Voltage-gated Na channel blocker. MANDATORY slow titration due to SJS/TEN risk.",
-      "pl": "Lek przeciwdrgawkowy + podtrzymanie ChAD (GSK Lamictal). Bloker bramkowanych napięciem kanałów Na. OBOWIĄZKOWA powolna titracja z powodu ryzyka SJS/TEN."
-    },
-    "tier": 3,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "N03AX09"
-  },
-  {
     "id": "methylphenidate",
     "name": "Methylphenidate",
     "image": null,
@@ -445,101 +255,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Na receptę (Rx)"
     },
     "atcCode": "C10AA07"
-  },
-  {
-    "id": "ramipril",
-    "name": "Ramipril",
-    "image": null,
-    "accentColor": "#dc2626",
-    "tagColor": "rgba(220,38,38,0.18)",
-    "shortDesc": {
-      "hu": "ACE-inhibitor (Sanofi Tritace/Altace). Hipertenzió + HFrEF + szekunder MI-prevenció. HOPE-trial-evidencia 1999 óta.",
-      "en": "ACE inhibitor (Sanofi Tritace/Altace). Hypertension + HFrEF + secondary MI prevention. HOPE trial evidence since 1999.",
-      "pl": "Inhibitor ACE (Sanofi Tritace/Altace). Nadciśnienie + HFrEF + wtórna prewencja MI. Dowody HOPE od 1999."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "C09AA05"
-  },
-  {
-    "id": "bisoprolol",
-    "name": "Bisoprolol",
-    "image": null,
-    "accentColor": "#dc2626",
-    "tagColor": "rgba(220,38,38,0.18)",
-    "shortDesc": {
-      "hu": "Kardio-szelektív β1 blokkoló (Merck Concor). Hipertenzió + HFrEF + post-MI standard. CIBIS-II trial mortalitás-csökkentés.",
-      "en": "Cardio-selective β1 blocker (Merck Concor). Standard for hypertension + HFrEF + post-MI. CIBIS-II mortality reduction.",
-      "pl": "Kardioselektywny bloker β1 (Merck Concor). Standard dla nadciśnienia + HFrEF + po MI. CIBIS-II redukcja śmiertelności."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "C07AB07"
-  },
-  {
-    "id": "amlodipine",
-    "name": "Amlodipine",
-    "image": null,
-    "accentColor": "#dc2626",
-    "tagColor": "rgba(220,38,38,0.18)",
-    "shortDesc": {
-      "hu": "Dihidropiridin-típusú kalciumcsatorna-blokkoló (Pfizer Norvasc). Hipertenzió + stabil angina. ASCOT-BPLA: superior outcome ACE-i kombinációval.",
-      "en": "Dihydropyridine calcium channel blocker (Pfizer Norvasc). Hypertension + stable angina. ASCOT-BPLA: superior outcome with ACEi combination.",
-      "pl": "Bloker kanałów wapniowych dihydropirydyny (Pfizer Norvasc). Nadciśnienie + stabilna dławica. ASCOT-BPLA: lepsze wyniki z kombinacją ACEi."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "C08CA01"
-  },
-  {
-    "id": "apixaban",
-    "name": "Apixaban",
-    "image": null,
-    "accentColor": "#dc2626",
-    "tagColor": "rgba(220,38,38,0.18)",
-    "shortDesc": {
-      "hu": "Direkt orális antikoaguláns (DOAC, BMS/Pfizer Eliquis). Faktor Xa-inhibitor. ARISTOTLE-trial szerint pitvarfibrillációban warfarin-szuperior.",
-      "en": "Direct oral anticoagulant (DOAC, BMS/Pfizer Eliquis). Factor Xa inhibitor. ARISTOTLE trial showed superiority over warfarin in atrial fibrillation.",
-      "pl": "Doustny antykoagulant bezpośredni (DOAC, BMS/Pfizer Eliquis). Inhibitor czynnika Xa. ARISTOTLE wykazało wyższość nad warfaryną w migotaniu przedsionków."
-    },
-    "tier": 4,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "B01AF02"
-  },
-  {
-    "id": "methimazole",
-    "name": "Methimazole",
-    "image": null,
-    "accentColor": "#f59e0b",
-    "tagColor": "rgba(245,158,11,0.18)",
-    "shortDesc": {
-      "hu": "Antithyroid szer (Thiamazol, Merck), Graves-betegség és hipertireózis első-vonal kezelése. A pajzsmirigy peroxidáz-enzimet gátolja.",
-      "en": "Antithyroid drug (thiamazole, Merck), first-line for Graves disease and hyperthyroidism. Inhibits thyroid peroxidase enzyme.",
-      "pl": "Lek przeciwtarczycowy (tiamazol, Merck), pierwsza linia w chorobie Gravesa i nadczynności. Hamuje peroksydazę tarczycową."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "H03BB02"
   },
   {
     "id": "hydrocortisone",
@@ -580,25 +295,6 @@ export const LIBRARY_ENTRY_META = [
     "atcCode": "H03AA02"
   },
   {
-    "id": "azithromycin",
-    "name": "Azithromycin",
-    "image": null,
-    "accentColor": "#06b6d4",
-    "tagColor": "rgba(6,182,212,0.18)",
-    "shortDesc": {
-      "hu": "Makrolid antibiotikum (Pfizer Zithromax \"Z-pack\"). 5-napos rövid kúra-szer. CAP, atipikus pneumónia, STD. QT-prolongáció kockázat.",
-      "en": "Macrolide antibiotic (Pfizer Zithromax \"Z-pack\"). 5-day short course. CAP, atypical pneumonia, STDs. QT prolongation risk.",
-      "pl": "Antybiotyk makrolidowy (Pfizer Zithromax \"Z-pack\"). 5-dniowy krótki kurs. CAP, atypowe zapalenie płuc, STD. Ryzyko wydłużenia QT."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "J01FA10"
-  },
-  {
     "id": "ciprofloxacin",
     "name": "Ciprofloxacin",
     "image": null,
@@ -635,44 +331,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Na receptę (Rx)"
     },
     "atcCode": "J01AA02"
-  },
-  {
-    "id": "metronidazole",
-    "name": "Metronidazole",
-    "image": null,
-    "accentColor": "#06b6d4",
-    "tagColor": "rgba(6,182,212,0.18)",
-    "shortDesc": {
-      "hu": "Nitroimidazol antibiotikum (Flagyl). Anaerob baktérium + protozoa-infekciók (C. difficile, Trichomonas, Giardia, bakteriális vaginitisz).",
-      "en": "Nitroimidazole antibiotic (Flagyl). Anaerobic + protozoa infections (C. difficile, Trichomonas, Giardia, bacterial vaginitis).",
-      "pl": "Antybiotyk nitroimidazolowy (Flagyl). Infekcje beztlenowcami + pierwotniakami (C. difficile, Trichomonas, Giardia, vaginitis bakteryjny)."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "J01XD01"
-  },
-  {
-    "id": "methotrexate",
-    "name": "Methotrexate",
-    "image": null,
-    "accentColor": "#ec4899",
-    "tagColor": "rgba(236,72,153,0.18)",
-    "shortDesc": {
-      "hu": "Dihidrofolát-reduktáz (DHFR) gátló antimetabolit. Alacsony-dózisú heti adagolás: rheumatoid arthritis, pszoriázis. Magas-dózisú: onko-kemoterápia.",
-      "en": "Dihydrofolate reductase (DHFR) inhibitor antimetabolite. Low-dose weekly: rheumatoid arthritis, psoriasis. High-dose: onco-chemotherapy.",
-      "pl": "Antymetabolit, inhibitor reduktazy dihydrofolianowej (DHFR). Niska dawka tygodniowo: reumatoidalne zapalenie stawów, łuszczyca. Wysoka: chemioterapia."
-    },
-    "tier": 3,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx), szakorvosi felügyelet (reumatológus / onkológus)",
-      "en": "Prescription only (Rx), specialist-supervised (rheumatologist / oncologist)",
-      "pl": "Na receptę (Rx), nadzór specjalisty (reumatolog / onkolog)"
-    },
-    "atcCode": "L01BA01 / L04AX03"
   },
   {
     "id": "tamoxifen",
@@ -749,34 +407,15 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Na receptę (Rx), nadzór dermatologa"
     },
     "atcCode": "D10AD01"
-  },
-  {
-    "id": "glimepirid",
-    "name": "Glimepirid",
-    "image": null,
-    "accentColor": "#10b981",
-    "tagColor": "rgba(16,185,129,0.18)",
-    "shortDesc": {
-      "hu": "2. generációs sulfonylurea, Sanofi Amaryl. Klasszikus T2DM-szer, de a ADA/EASD 2022 alapján modern alternatívák (GLP-1 RA, SGLT2i) priorizálandók.",
-      "en": "2nd-generation sulfonylurea, Sanofi Amaryl. Classic T2DM drug, but ADA/EASD 2022 prioritizes modern alternatives (GLP-1 RA, SGLT2i).",
-      "pl": "Sulfonylomocznik 2. generacji, Sanofi Amaryl. Klasyczny lek T2DM, ale ADA/EASD 2022 priorytetyzuje nowoczesne alternatywy (GLP-1 RA, SGLT2i)."
-    },
-    "tier": 5,
-    "prescriptionStatus": {
-      "hu": "Vényköteles (Rx)",
-      "en": "Prescription only (Rx)",
-      "pl": "Na receptę (Rx)"
-    },
-    "atcCode": "A10BB12"
   }
 ]
 
 export const TOP_ENTRY_IDS = [
   "metformin",
-  "semaglutide",
+  "escitalopram",
   "atorvastatin",
   "tadalafil",
-  "sertralin",
+  "rosuvastatin",
   "bupropion",
   "modafinil",
   "levothyroxin",

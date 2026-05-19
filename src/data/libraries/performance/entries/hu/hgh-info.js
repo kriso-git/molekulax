@@ -74,7 +74,6 @@ export default {
     }
   ],
   "related": [
-    "mk-677",
     "testosterone-info"
   ],
   "doseCalc": {

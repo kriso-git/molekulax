@@ -152,7 +152,6 @@ export default {
     }
   ],
   "related": [
-    "1-andro",
     "methylstenbolone",
     "anavar-info",
     "dianabol-info",

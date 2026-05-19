@@ -71,7 +71,6 @@ export default {
   ],
   "related": [
     "amoxicillin",
-    "azithromycin",
     "ciprofloxacin"
   ],
   "doseCalc": {

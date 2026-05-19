@@ -56,8 +56,7 @@ export default {
     }
   ],
   "related": [
-    "superdrol",
-    "1-andro"
+    "superdrol"
   ],
   "doseCalc": {
     "type": "fixed",

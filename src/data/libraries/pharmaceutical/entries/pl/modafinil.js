@@ -194,7 +194,6 @@ export default {
     }
   ],
   "related": [
-    "sertralin",
     "bupropion"
   ],
   "doseCalc": {

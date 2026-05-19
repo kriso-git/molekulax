@@ -17,7 +17,6 @@ const EXPLICIT_LEVEL = {
   'trenbolone-info': 4,
   'anavar-info': 4,
   'clenbuterol': 4,
-  'mk-677': 4,
   'winstrol-info': 4,
   'nandrolone-info': 4,
   'dianabol-info': 4,
@@ -27,7 +26,6 @@ const EXPLICIT_LEVEL = {
   'yohimbine': 3,
   'superdrol': 3,
   // L2 — early human + strong animal
-  '1-andro': 2,
   'methylstenbolone': 2,
   // L1 — preclinical / dangerous (default for unlisted entries)
   'dnp-info': 1,

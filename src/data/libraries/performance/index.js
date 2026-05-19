@@ -66,20 +66,6 @@ export const LIBRARY_ENTRY_META = [
     "wadaStatus": "banned"
   },
   {
-    "id": "1-andro",
-    "name": "1-Andro",
-    "image": null,
-    "accentColor": "#a78bfa",
-    "tagColor": "rgba(167,139,250,0.18)",
-    "shortDesc": {
-      "hu": "1-DHEA-prohormon, ami 1-Testosterone-é (DHT-származékká) konvertálódik. Enyhébb hepatikus terhelés mint a Superdrol, de szignifikáns lipid-zavar.",
-      "en": "1-DHEA prohormone that converts to 1-Testosterone (DHT-derivative). Milder hepatic load than Superdrol, but significant lipid disturbance.",
-      "pl": "Prohormon 1-DHEA konwertujący do 1-Testosteronu (pochodna DHT). Łagodniejsze obciążenie wątroby niż Superdrol, ale istotne zaburzenia lipidów."
-    },
-    "tier": 2,
-    "wadaStatus": "banned"
-  },
-  {
     "id": "ephedrine",
     "name": "Ephedrine",
     "image": null,
@@ -134,20 +120,6 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 5,
     "wadaStatus": "monitored"
-  },
-  {
-    "id": "mk-677",
-    "name": "MK-677",
-    "image": null,
-    "accentColor": "#10b981",
-    "tagColor": "rgba(16,185,129,0.18)",
-    "shortDesc": {
-      "hu": "Orális ghrelin-receptor agonista (NEM SARM). Növekedési hormon és IGF-1 emelő, hosszú-távú felezési idővel.",
-      "en": "Oral ghrelin receptor agonist (NOT a SARM). Growth hormone and IGF-1 elevator with long half-life.",
-      "pl": "Doustny agonista receptora greliny (NIE SARM). Podnosi hormon wzrostu i IGF-1, długi okres półtrwania."
-    },
-    "tier": 4,
-    "wadaStatus": "banned"
   },
   {
     "id": "winstrol-info",
@@ -254,12 +226,12 @@ export const TOP_ENTRY_IDS = [
   "trenbolone-info",
   "anavar-info",
   "superdrol",
-  "1-andro",
   "ephedrine",
   "yohimbine",
   "clenbuterol",
   "albuterol",
-  "mk-677"
+  "dianabol-info",
+  "hgh-info"
 ]
 
 export const performanceLibrary = {

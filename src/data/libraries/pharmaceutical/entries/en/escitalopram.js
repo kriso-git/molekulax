@@ -69,9 +69,7 @@ export default {
     }
   ],
   "related": [
-    "sertralin",
-    "fluoxetine",
-    "venlafaxine"
+    "fluoxetine"
   ],
   "doseCalc": {
     "type": "titration",

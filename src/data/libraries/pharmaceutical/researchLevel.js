@@ -11,47 +11,28 @@
 
 export const EXPLICIT_LEVEL = {
   metformin:     5,
-  semaglutide:   4,
   atorvastatin:  5,
   tadalafil:     4,
-  sertralin:     5,
   bupropion:     4,
   modafinil:     4,
   levothyroxin:  5,
   finasteride:   5,
   amoxicillin:   5,
   // EXTRA Anyagcsere
-  tirzepatide:     4,
   empagliflozin:   4,
-  liraglutide:     5,
-  berberin:        2,
-  acarbose:        5,
-  glimepirid:      5,
   // EXTRA Pszichiátria
   escitalopram:    5,
   fluoxetine:      5,
-  venlafaxine:     5,
-  mirtazapine:     5,
-  aripiprazole:    3,
-  lamotrigine:     3,
   methylphenidate: 4,
   // EXTRA Kardio
   rosuvastatin:    4,
-  ramipril:        5,
-  bisoprolol:      5,
-  amlodipine:      5,
-  apixaban:        4,
   // EXTRA Endokrin
-  methimazole:     5,
   hydrocortisone:  5,
   liothyronine:    5,
   // EXTRA Antiinfekt
-  azithromycin:    5,
   ciprofloxacin:   5,
   doxycycline:     5,
-  metronidazole:   5,
   // EXTRA Onko
-  methotrexate:    3,
   tamoxifen:       3,
   // EXTRA Bőr
   minoxidil:       5,

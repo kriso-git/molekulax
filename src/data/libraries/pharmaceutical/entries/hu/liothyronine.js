@@ -55,8 +55,7 @@ export default {
     }
   ],
   "related": [
-    "levothyroxin",
-    "methimazole"
+    "levothyroxin"
   ],
   "doseCalc": {
     "type": "fixedDose",

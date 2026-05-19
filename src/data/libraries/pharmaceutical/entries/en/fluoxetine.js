@@ -70,7 +70,6 @@ export default {
     }
   ],
   "related": [
-    "sertralin",
     "escitalopram"
   ],
   "doseCalc": {
