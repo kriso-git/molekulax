@@ -9,6 +9,8 @@ import {
 import EntryImage from './EntryImage'
 import TelegramButtons from './TelegramButtons'
 import DotsIndicator from './library/cube-nav/DotsIndicator'
+import PerformanceCategoryCards from './library/PerformanceCategoryCards'
+import FormFactorChipRow from './library/FormFactorChipRow'
 import { RETURN_STATE_KEY } from './library/returnState'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
@@ -276,6 +278,14 @@ export default function LibraryGallery({
  const [levelFilters, setLevelFilters] = useState([]) // research level numbers
  const [sortMode, setSortMode] = useState('az') // 'az' | 'za' | 'level'
 
+ // Sub-Task 1 (perf-restructure) — perf-only filter state.
+ // subCategory is single-select (one chip active at a time); formFactors is
+ // multi-select (AND-combined). Both apply only when library.id === 'performance'.
+ const [selectedSubCategory, setSelectedSubCategory] = useState(null)
+ const [selectedFormFactors, setSelectedFormFactors] = useState([])
+
+ const searchInputRef = useRef(null)
+
  // Snapshot publisher for Task C state-restoration. Publishes current state
  // into a ref (no re-render) so openEntry() can read it synchronously.
  const stateRef = useRef({})
@@ -294,7 +304,7 @@ export default function LibraryGallery({
  const metaList = library.meta || library.entries || []
 
  const top10 = useMemo(
- () => library.topEntries.map(id => metaList.find(p => p.id === id)).filter(Boolean),
+ () => (library.topEntries || []).map(id => metaList.find(p => p.id === id)).filter(Boolean),
  [library, metaList]
  )
 
@@ -316,10 +326,19 @@ export default function LibraryGallery({
  const lvl = p.tier ?? library.getResearchLevel?.(p) ?? 1
  if (!levelFilters.includes(lvl)) return false
  }
+ // Sub-Task 1 — perf-only chemistry-class subCategory + form-factor filters.
+ if (library.id === 'performance') {
+  if (selectedSubCategory && p.subCategory !== selectedSubCategory) return false
+  if (selectedFormFactors.length > 0) {
+   const factors = p.formFactors || []
+   const allMatch = selectedFormFactors.every(f => factors.includes(f))
+   if (!allMatch) return false
+  }
+ }
  return true
  })
  return matched.sort(makeSortComparator(m => m.tier ?? library.getResearchLevel?.(m) ?? 1, sortMode))
- }, [library, metaList, query, lang, activeFilters, levelFilters, sortMode])
+ }, [library, metaList, query, lang, activeFilters, levelFilters, sortMode, selectedSubCategory, selectedFormFactors])
 
  // Restore consumer for Task C. Reads window.__libraryGalleryPendingRestore__
  // (set by EntryDetailRoute closeDetail or hashchange listener) and restores
@@ -427,6 +446,27 @@ export default function LibraryGallery({
  const clearFilters = () => { setActiveFilters([]); setLevelFilters([]) }
  const totalActive = activeFilters.length + levelFilters.length
 
+ // Sub-Task 1 (perf-restructure) — handlers for CategoryCards + FormFactorChipRow.
+ const handleSubCategoryClick = useCallback((id) => {
+  setSelectedSubCategory(prev => (prev === id ? null : id))
+  setExpanded(true)
+  setHasOpened(true)
+  setTimeout(() => {
+   searchInputRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, 50)
+ }, [])
+
+ const toggleFormFactor = useCallback((id) => {
+  setSelectedFormFactors(prev =>
+   prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id]
+  )
+ }, [])
+
+ const clearPerfFilters = useCallback(() => {
+  setSelectedSubCategory(null)
+  setSelectedFormFactors([])
+ }, [])
+
  // useCallback so PeptideTile (memoized) doesn't lose its memoization on
  // every parent re-render (filter typing, sort flip). stateRef is mutable
  // so the callback reads fresh state without changing identity.
@@ -476,30 +516,39 @@ export default function LibraryGallery({
  </div>
  )}
 
- {/* ── Block A: Top 10 ─────────────────────────────────────────────── */}
- <div className="mb-6 flex items-center gap-3">
- <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
- <h3 className="text-[#818cf8] text-[11px] font-semibold tracking-[0.3em] uppercase flex items-center gap-2">
- <Star size={11} strokeWidth={2.5} className="text-[#818cf8]" fill="currentColor" />
- {library.labels?.topTitle ? tr(library.labels.topTitle) : t('gal.top10.title')}
- </h3>
- <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
- </div>
+ {library.id === 'performance' ? (
+  <PerformanceCategoryCards
+   onCategorySelect={handleSubCategoryClick}
+   activeCategoryId={selectedSubCategory}
+  />
+ ) : (
+  <>
+   {/* ── Block A: Top 10 ─────────────────────────────────────────────── */}
+   <div className="mb-6 flex items-center gap-3">
+    <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
+    <h3 className="text-[#818cf8] text-[11px] font-semibold tracking-[0.3em] uppercase flex items-center gap-2">
+     <Star size={11} strokeWidth={2.5} className="text-[#818cf8]" fill="currentColor" />
+     {library.labels?.topTitle ? tr(library.labels.topTitle) : t('gal.top10.title')}
+    </h3>
+    <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[rgba(255,255,255,0.12)] to-transparent" />
+   </div>
 
- <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
- {top10.map(peptide => (
- <PeptideTile
- key={peptide.id}
- library={library}
- peptide={peptide}
- featured
- onSelect={openEntry}
- t={t}
- tr={tr}
- lang={lang}
- />
- ))}
- </div>
+   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
+    {top10.map(peptide => (
+     <PeptideTile
+      key={peptide.id}
+      library={library}
+      peptide={peptide}
+      featured
+      onSelect={openEntry}
+      t={t}
+      tr={tr}
+      lang={lang}
+     />
+    ))}
+   </div>
+  </>
+ )}
 
  {/* ── Block B: All peptides accordion ────────────────────────────── */}
  <div ref={allSectionRef} className="mt-20">
@@ -574,6 +623,72 @@ export default function LibraryGallery({
  </div>
  </div>
 
+ {/* Sub-Task 1 (perf-restructure) — active filter chips for subCategory + form-factors */}
+ {library.id === 'performance' && (selectedSubCategory || selectedFormFactors.length > 0) && (
+  <div className="mb-3 flex flex-wrap items-center gap-2">
+   <span
+    className="text-[10px] tracking-[0.2em] uppercase font-semibold"
+    style={{ color: 'var(--text-fainter)' }}
+   >
+    {t('perf.filter.subCategory.active')}
+   </span>
+   {selectedSubCategory && (() => {
+    const cat = library.subCategories?.find(c => c.id === selectedSubCategory)
+    if (!cat) return null
+    return (
+     <button
+      type="button"
+      onClick={() => setSelectedSubCategory(null)}
+      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all"
+      style={{
+       background: `${cat.accent}26`,
+       border: `1px solid ${cat.accent}`,
+       color: '#fff',
+      }}
+     >
+      {tr(cat.label)}
+      <X size={11} />
+     </button>
+    )
+   })()}
+   {selectedFormFactors.map(ffId => {
+    const ff = library.formFactors?.find(f => f.id === ffId)
+    if (!ff) return null
+    return (
+     <button
+      key={ffId}
+      type="button"
+      onClick={() => toggleFormFactor(ffId)}
+      className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-semibold tracking-wider uppercase transition-all"
+      style={{
+       background: `${ff.color}26`,
+       border: `1px solid ${ff.color}`,
+       color: '#fff',
+      }}
+     >
+      {tr(ff.label)}
+      <X size={11} />
+     </button>
+    )
+   })}
+   <button
+    type="button"
+    onClick={clearPerfFilters}
+    className="text-[10px] tracking-wider uppercase"
+    style={{ color: 'var(--text-muted)' }}
+   >
+    {t('gal.filter.clear')}
+   </button>
+  </div>
+ )}
+
+ {library.id === 'performance' && (
+  <FormFactorChipRow
+   selectedFormFactors={selectedFormFactors}
+   onToggle={toggleFormFactor}
+  />
+ )}
+
  {/* ── Search + Sort + Filter toggle row ────────────────── */}
  <div className="mb-4 flex flex-col lg:flex-row gap-3">
  <div className="relative flex-1">
@@ -582,6 +697,7 @@ export default function LibraryGallery({
  className="absolute top-1/2 left-4 -translate-y-1/2 text-gray-500 pointer-events-none"
  />
  <input
+ ref={searchInputRef}
  type="text"
  value={query}
  onChange={(e) => setQuery(e.target.value)}
