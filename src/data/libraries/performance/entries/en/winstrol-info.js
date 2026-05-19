@@ -106,5 +106,90 @@ export default {
       "markers": "Hepatic + lipid + hormone panel + EKG reference.",
       "purpose": "Long-term Winstrol cruising NOT recommended due to hepatotoxicity."
     }
-  }
+  },
+  "variants": [
+    {
+      "routeId": "oral",
+      "routeLabel": "Stanozolol oral (tablet)",
+      "image": "/performance/tablet-pile-white.png",
+      "legalStatus": "USA: FDA-approved Rx Winstrol tablet (Pfizer Pharmacia/Sanofi-Aventis discontinued 2010); today UGL market dominant. HU/EU: Rx limited. WADA-banned.",
+      "bioavailability": "~85-95% (oral, 17α-alkylated first-pass-resistant)",
+      "onsetTime": "1-2 h (oral, fast absorption)",
+      "halfLife": "9 hours (oral)",
+      "halfLifeActive": "9 h",
+      "detectionWindow": "3-4 weeks urinary (parent + 3'-OH-stanozolol metabolite, WADA-accredited).",
+      "aromatization": "No — heterocyclic pyrazole A-ring, NOT a CYP19 substrate.",
+      "hepatotoxicity": "High — 17α-alkylated, hepatic first-pass stress; ALT/AST 2-4x rise common at 6+ week cycle (Hartgens-Kuipers 2004).",
+      "quality": {
+        "pure": [
+          "Clear white, scored tablet (5 mg or 10 mg classic UGL dosing)",
+          "HPLC-tested source mandatory — Winstrol tablet often counterfeited"
+        ],
+        "caution": [
+          "Hepatotoxicity (ALT/AST 2-4x rise after 6+ weeks common)",
+          "Lipid disturbance: HDL drastic drop (>30% vs baseline)",
+          "Joint dryness (\"Winstrol joint pain\") — subjectively excruciating",
+          "Tendon rupture risk (Liow 1995 PMID 7551762 case reports in sprinter/explosive sports)"
+        ],
+        "avoid": [
+          "Any existing liver disorder (fatty liver, hepatitis)",
+          "Concurrent alcohol or paracetamol use",
+          "Sprinter/explosive sport athletes during training cycle (tendon rupture risk)"
+        ]
+      },
+      "interactions": [
+        "Other 17α-alkylated AAS (Anadrol, Dianabol, Superdrol) together extremely hepatotoxic",
+        "TUDCA 500 mg/day + NAC 1200 mg/day mandatory",
+        "PCT starts last tablet +1-2 days"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 30, "medium": 50, "high": 80},
+        "unit": "mg/day (oral, 1-2x split)",
+        "note": "30-80 mg/day, max 8 weeks cycle. TUDCA + NAC mandatory. Female dose max 5-10 mg/day. PCT last tablet +1-2 days."
+      }
+    },
+    {
+      "routeId": "aq",
+      "routeLabel": "Stanozolol aqueous suspension (IM, Winstrol Depot)",
+      "image": "/performance/water-vial.png",
+      "legalStatus": "Sanofi Winstrol Depot (Stanozolol Aqueous Suspension 50 mg/ml, EU Rx limited). USA: today UGL. WADA-banned.",
+      "bioavailability": "~95-100% (IM, NO depot, direct absorption from microcrystals)",
+      "onsetTime": "12-24 h (IM, slow microcrystalline depot release)",
+      "halfLife": "~24 h (parent Stanozolol)",
+      "halfLifeActive": "24 h",
+      "detectionWindow": "4-6 weeks urinary (longer than oral due to depot absorption).",
+      "aromatization": "No — heterocyclic pyrazole A-ring, NOT a CYP19 substrate for either form.",
+      "hepatotoxicity": "Moderate-high — surprisingly injectable Winstrol is also hepatotoxic due to 17α-alkyl group (NOT caused by first-pass, but by the molecule's systemic effect). Clinically milder than oral, BUT NOT zero.",
+      "quality": {
+        "pure": [
+          "Clear water-suspended white microcrystals, 1ml ampule, opalescent before shaking",
+          "Rx-grade: Sanofi Winstrol Depot 50mg/ml (EU, rare)"
+        ],
+        "caution": [
+          "EXTRA painful injection — crystals physically irritate (PIP, common abscess risk)",
+          "EOD injection needed (~24 h half-life)",
+          "Hepatotoxicity moderate (17α-alkyl effect present systemically too)",
+          "Joint dryness same as oral"
+        ],
+        "avoid": [
+          "Pain sensitivity (crystals cause significant PIP + abscess risk)",
+          "Aseptic injection technique lacking",
+          "Any liver disorder (moderate hepatotoxicity)"
+        ]
+      },
+      "interactions": [
+        "Combination with other AAS potentiates HPTA suppression",
+        "TUDCA 500 mg/day recommended (due to moderate hepatotoxicity)",
+        "PCT starts last injection +5-7 days"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "unit": "mg/EOD (IM)",
+        "note": "50-100 mg EOD, max 8 weeks. TUDCA recommended. Aseptic technique critical (abscess risk). PCT last injection +5-7 days."
+      }
+    }
+  ],
+  "defaultVariant": "oral"
 }

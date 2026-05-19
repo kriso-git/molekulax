@@ -106,5 +106,90 @@ export default {
       "markers": "Wątroba + lipidy + hormony + EKG.",
       "purpose": "Długoterminowy cruise z Winstrolem NIE zalecany z powodu hepatotoksyczności."
     }
-  }
+  },
+  "variants": [
+    {
+      "routeId": "oral",
+      "routeLabel": "Stanozolol doustny (tabletka)",
+      "image": "/performance/tablet-pile-white.png",
+      "legalStatus": "USA: zatwierdzony przez FDA Rx tabletka Winstrol (Pfizer Pharmacia/Sanofi-Aventis wycofany 2010); dziś dominacja rynku UGL. HU/EU: Rx ograniczony. Zakaz WADA.",
+      "bioavailability": "~85-95% (doustnie, 17α-alkilowany oporny na first-pass)",
+      "onsetTime": "1-2 h (doustnie, szybkie wchłanianie)",
+      "halfLife": "9 godzin (doustnie)",
+      "halfLifeActive": "9 h",
+      "detectionWindow": "3-4 tygodnie w moczu (macierzysty + metabolit 3'-OH-stanozolol, akredytowane WADA).",
+      "aromatization": "Nie — heterocykliczny pierścień A pirazolowy, NIE substrat CYP19.",
+      "hepatotoxicity": "Wysoka — 17α-alkilowany, stres first-pass wątrobowy; wzrost ALT/AST 2-4x częsty przy cyklu 6+ tygodni (Hartgens-Kuipers 2004).",
+      "quality": {
+        "pure": [
+          "Klarowna biała, oznaczona tabletka (5 mg lub 10 mg klasyczny dosing UGL)",
+          "Źródło testowane HPLC obowiązkowe — tabletka Winstrol często fałszowana"
+        ],
+        "caution": [
+          "Hepatotoksyczność (wzrost ALT/AST 2-4x po 6+ tygodniach częsty)",
+          "Zaburzenia lipidowe: drastyczny spadek HDL (>30% vs baseline)",
+          "Suchość stawów (\"Winstrol joint pain\") — subiektywnie męcząca",
+          "Ryzyko zerwania ścięgna (Liow 1995 PMID 7551762 raporty w sprinter/explosive sportach)"
+        ],
+        "avoid": [
+          "Jakiekolwiek istniejące zaburzenia wątroby (stłuszczenie wątroby, zapalenie)",
+          "Jednoczesne stosowanie alkoholu lub paracetamolu",
+          "Sprinter/explosive sportowiec podczas cyklu treningowego (ryzyko zerwania ścięgna)"
+        ]
+      },
+      "interactions": [
+        "Inne AAS 17α-alkilowane (Anadrol, Dianabol, Superdrol) razem skrajnie hepatotoksyczne",
+        "TUDCA 500 mg/dzień + NAC 1200 mg/dzień obowiązkowe",
+        "PCT start ostatnia tabletka +1-2 dni"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 30, "medium": 50, "high": 80},
+        "unit": "mg/dzień (doustnie, 1-2x podzielone)",
+        "note": "30-80 mg/dzień, maks 8 tygodni cyklu. TUDCA + NAC obowiązkowe. Dawka dla kobiet maks 5-10 mg/dzień. PCT ostatnia tabletka +1-2 dni."
+      }
+    },
+    {
+      "routeId": "aq",
+      "routeLabel": "Stanozolol zawiesina wodna (IM, Winstrol Depot)",
+      "image": "/performance/water-vial.png",
+      "legalStatus": "Sanofi Winstrol Depot (zawiesina wodna Stanozolol 50 mg/ml, UE Rx ograniczony). USA: dziś UGL. Zakaz WADA.",
+      "bioavailability": "~95-100% (IM, BEZ depot, bezpośrednia absorpcja z mikrokryształów)",
+      "onsetTime": "12-24 h (IM, powolne uwalnianie z depot mikrokrystalicznego)",
+      "halfLife": "~24 h (macierzysty Stanozolol)",
+      "halfLifeActive": "24 h",
+      "detectionWindow": "4-6 tygodni w moczu (dłuższe niż doustnie ze względu na absorpcję depot).",
+      "aromatization": "Nie — heterocykliczny pierścień A pirazolowy, NIE substrat CYP19 dla żadnej z form.",
+      "hepatotoxicity": "Umiarkowana-wysoka — zaskakująco iniekcyjny Winstrol jest również hepatotoksyczny ze względu na grupę 17α-alkilową (NIE spowodowane first-pass, ale systemowym efektem cząsteczki). Klinicznie łagodniejszy niż doustny, ALE NIE zero.",
+      "quality": {
+        "pure": [
+          "Klarowne białe mikrokryształy zawieszone w wodzie, ampułka 1 ml, opalescentny przed wstrząśnięciem",
+          "Rx-grade: Sanofi Winstrol Depot 50mg/ml (UE, rzadki)"
+        ],
+        "caution": [
+          "EKSTRA bolesna iniekcja — kryształy fizycznie podrażniają (PIP, częste ryzyko ropnia)",
+          "Iniekcja EOD potrzebna (~24 h okres półtrwania)",
+          "Hepatotoksyczność umiarkowana (efekt 17α-alkilu obecny systemowo również)",
+          "Suchość stawów taka sama jak doustnie"
+        ],
+        "avoid": [
+          "Wrażliwość na ból (kryształy powodują znaczny PIP + ryzyko ropnia)",
+          "Brak aseptycznej techniki iniekcji",
+          "Jakiekolwiek zaburzenia wątroby (umiarkowana hepatotoksyczność)"
+        ]
+      },
+      "interactions": [
+        "Kombinacja z innymi AAS wzmacnia supresję HPTA",
+        "TUDCA 500 mg/dzień zalecany (ze względu na umiarkowaną hepatotoksyczność)",
+        "PCT start ostatnia iniekcja +5-7 dni"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "unit": "mg/EOD (IM)",
+        "note": "50-100 mg EOD, maks 8 tygodni. TUDCA zalecany. Aseptyczna technika kluczowa (ryzyko ropnia). PCT ostatnia iniekcja +5-7 dni."
+      }
+    }
+  ],
+  "defaultVariant": "oral"
 }

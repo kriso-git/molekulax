@@ -106,5 +106,90 @@ export default {
       "markers": "Hepatikus + lipid + hormon-panel + EKG referencia.",
       "purpose": "Hosszú-távú Winstrol-cruise NEM ajánlott a hepatotoxicitás miatt."
     }
-  }
+  },
+  "variants": [
+    {
+      "routeId": "oral",
+      "routeLabel": "Stanozolol orális (tabletta)",
+      "image": "/performance/tablet-pile-white.png",
+      "legalStatus": "USA: FDA-jóváhagyott Rx Winstrol tabletta (Pfizer Pharmacia/Sanofi-Aventis discontinued 2010); ma UGL piacon dominans. HU/EU: Rx korlátozott. WADA tiltott.",
+      "bioavailability": "~85-95% (orális, 17α-alkilált first-pass-rezisztens)",
+      "onsetTime": "1-2 óra (orális, fast-absorption)",
+      "halfLife": "9 óra (orális)",
+      "halfLifeActive": "9 óra",
+      "detectionWindow": "3-4 hét vizelet (parent + 3'-OH-stanozolol metabolit, WADA-akkreditált).",
+      "aromatization": "Nem — heterociklusos pirazol A-gyűrű, NEM CYP19 szubsztrát.",
+      "hepatotoxicity": "Magas — 17α-alkilált, hepatikus first-pass-stressz; ALT/AST 2-4x emelkedés 6+ hetes ciklusban gyakori (Hartgens-Kuipers 2004).",
+      "quality": {
+        "pure": [
+          "Tiszta fehér, jelölt tabletta (5 mg vagy 10 mg klasszikus UGL dosing)",
+          "HPLC-tesztelt forrás kötelező — Winstrol-tabletta gyakran hamisított"
+        ],
+        "caution": [
+          "Hepatotoxicitás (ALT/AST 2-4x emelkedés 6+ hét után gyakori)",
+          "Lipid-zavar: HDL drasztikus csökkenés (>30% baseline-hez képest)",
+          "Ízületi szárazság (\"Winstrol joint pain\") — szubjektíven kínzó",
+          "Ínszakadás-veszély (Liow 1995 PMID 7551762 esetjelentések sprinter/explosive sportokban)"
+        ],
+        "avoid": [
+          "Bármilyen meglévő máj-zavar (zsírmáj, hepatitis)",
+          "Alkohol, paracetamol egyidejű használata",
+          "Sprinter/explosive sportoló edzésciklus alatt (ínszakadás-veszély)"
+        ]
+      },
+      "interactions": [
+        "Más 17α-alkilált AAS (Anadrol, Dianabol, Superdrol) együtt extrém hepatotoxikus",
+        "TUDCA 500 mg/nap + NAC 1200 mg/nap kötelező",
+        "PCT utolsó tabletta +1-2 nap után indul"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 30, "medium": 50, "high": 80},
+        "unit": "mg/nap (orális, 1-2x osztva)",
+        "note": "30-80 mg/nap, max 8 hét ciklus. TUDCA + NAC kötelező. Női dózis 5-10 mg/nap maximum. PCT utolsó tabletta +1-2 nap."
+      }
+    },
+    {
+      "routeId": "aq",
+      "routeLabel": "Stanozolol vizes szuszpenzió (IM, Winstrol Depot)",
+      "image": "/performance/water-vial.png",
+      "legalStatus": "Sanofi Winstrol Depot (Stanozolol Aqueous Suspension 50 mg/ml, EU Rx korlátozott). USA: ma UGL. WADA tiltott.",
+      "bioavailability": "~95-100% (IM, depot NÉLKÜLI direct absorption mikrokristályokból)",
+      "onsetTime": "12-24 óra (IM, slow microcristalline depot release)",
+      "halfLife": "~24 óra (parent Stanozolol)",
+      "halfLifeActive": "24 óra",
+      "detectionWindow": "4-6 hét vizelet (hosszabb mint orálnál, depot-felszívódás).",
+      "aromatization": "Nem — heterociklusos pirazol A-gyűrű, NEM CYP19 szubsztrát egyik formánál sem.",
+      "hepatotoxicity": "Mérsékelt-magas — meglepő módon az injektábilis Winstrol is hepatotoxikus a 17α-alkil-csoport miatt (NEM a first-pass okozza, hanem maga a molekula szisztémás hatása). Klinikailag enyhébb mint az orál, DE NEM nulla.",
+      "quality": {
+        "pure": [
+          "Tiszta vízben suspendált fehér mikrokristályok, 1ml ampulla, rázás előtt opálos",
+          "Rx-grade: Sanofi Winstrol Depot 50mg/ml (EU, ritka)"
+        ],
+        "caution": [
+          "EXTRA fájdalmas injekció — kristályok fizikailag irritálják (PIP, gyakori abszcessz-rizikó)",
+          "EOD injekció szükséges (~24 óra felezés)",
+          "Hepatotoxicitás mérsékelt (a 17α-alkil hatása szisztémásan is jelen)",
+          "Ízületi szárazság ugyanaz mint orálnál"
+        ],
+        "avoid": [
+          "Fájdalom-érzékenység (a kristályok jelentős PIP-et + abszcessz-rizikót okoznak)",
+          "Aszeptikus injekciós technika hiánya",
+          "Bármilyen máj-zavar (mérsékelt hepatotoxicitás)"
+        ]
+      },
+      "interactions": [
+        "Más AAS-szal kombinálva fokozza HPTA-szuppressziót",
+        "TUDCA 500 mg/nap ajánlott (mérsékelt hepatotoxicitás miatt)",
+        "PCT utolsó injekció +5-7 nap után indul"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "unit": "mg/EOD (IM)",
+        "note": "50-100 mg EOD, max 8 hét. TUDCA ajánlott. Aszeptikus technika kritikus (abszcessz-rizikó). PCT utolsó injekció +5-7 nap."
+      }
+    }
+  ],
+  "defaultVariant": "oral"
 }

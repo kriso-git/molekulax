@@ -210,5 +210,193 @@ export default {
       "markers": "Total T, E2, lipidogram, hematokryt (>54% flebotomia), HbA1c, PSA (powyżej 30 lat), dziennik ciśnienia.",
       "purpose": "Podczas długotrwałej stabilnej supresji markery sercowo-naczyniowe i hormonalne muszą być stale monitorowane, ze szczególną uwagą na hematokryt i PSA."
     }
-  }
+  },
+  "variants": [
+    {
+      "routeId": "prop",
+      "routeLabel": "Testosteron Propionat (IM, szybki)",
+      "image": "/performance/oil-vial-yellow.png",
+      "legalStatus": "Rx (Testosteron Propionat, rzadziej produkowany niż Cyp/Enan, Rx w niektórych krajach UE). Zakaz WADA.",
+      "bioavailability": "~95-100% (IM)",
+      "onsetTime": "24-48 h (IM, fast-acting propionat)",
+      "halfLife": "~19 h (ester propionat; krótszy niż Enan/Cyp)",
+      "halfLifeActive": "~19 h",
+      "detectionWindow": "2-3 tygodnie w moczu (krótsze niż Enan/Cyp).",
+      "aromatization": "Tak — macierzysty steroid Test, substrat CYP19; wszystkie estry Test mają ten sam wskaźnik aromatyzacji.",
+      "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; IM pomija first-pass.",
+      "quality": {
+        "pure": [
+          "Klarowny jasnożółty lub wodno-klarowny olej, fiolka 10 ml, sterylnie filtrowana",
+          "Rx-grade: Bayer Testoviron-Depot Prop (DE), Schering Testovis (IT)"
+        ],
+        "caution": [
+          "Ból w miejscu wstrzyknięcia (PIP): propionat w pojeździe alkoholowym często bolesny",
+          "Wymaga 3x tygodniowo EOD iniekcji ze względu na krótki okres półtrwania"
+        ],
+        "avoid": [
+          "Silna wrażliwość w miejscu wstrzyknięcia (alternatywa: Enan/Cyp tygodniowo 1-2x)",
+          "Nieregularny harmonogram (iniekcja EOD jest wrażliwa na harmonogram)"
+        ]
+      },
+      "interactions": [
+        "Anastrozol: tylko jeśli laboratoryjnie potwierdzone wysokie E2",
+        "PCT (Clomid + Nolvadex 4 tygodnie) start ostatnia iniekcja +3-5 dni"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 300, "medium": 500, "high": 700},
+        "unit": "mg/tydzień (IM, podzielone 3x EOD)",
+        "note": "300-700 mg/tydzień, 3x EOD podzielone (pon/śr/pt). PCT ostatnia iniekcja +3-5 dni."
+      }
+    },
+    {
+      "routeId": "enan",
+      "routeLabel": "Testosteron Enantat (IM, wolny)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Bayer Testoviron-Depot 250 mg/ml Enan (DE/UE szeroko Rx). Zakaz WADA.",
+      "bioavailability": "~95-100% (IM)",
+      "onsetTime": "48-72 h (IM, steady-state 4-5 tygodni)",
+      "halfLife": "10,5 dnia (ester enantatowy)",
+      "halfLifeActive": "~24 h wolny T (po hydrolizie estru)",
+      "detectionWindow": "3-4 miesiące w moczu (długi ester).",
+      "aromatization": "Tak — ten sam wskaźnik dla wszystkich estrów Test.",
+      "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany.",
+      "quality": {
+        "pure": [
+          "Klarowny żółtawo-brązowy olej (~#f59e0b ton), fiolka 10 ml",
+          "Rx-grade: Bayer Testoviron-Depot (DE), Aspen Sustanon alternatywa"
+        ],
+        "caution": [
+          "Powolny początek: efekt wyczuwalny po 2-4 tygodniach",
+          "Tygodniowa 1-2x iniekcja (pon lub pon+czw)"
+        ],
+        "avoid": [
+          "Krótki cykl (4-6 tygodni) NIE skuteczny — steady-state dopiero po 4-5 tygodniach",
+          "Zawody testowane WADA <4 miesiące po planowanym końcu"
+        ]
+      },
+      "interactions": [
+        "Anastrozol 0,5 mg E3D dose titration dla wysokiego E2",
+        "PCT start ostatnia iniekcja Enan +14-21 dni"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "unit": "mg/tydzień (IM, podzielone 1-2x)",
+        "note": "250-750 mg/tydzień, tygodniowo 1-2x. PCT ostatnia iniekcja +14-21 dni."
+      }
+    },
+    {
+      "routeId": "cyp",
+      "routeLabel": "Testosteron Cypionat (IM, wolny, USA-preferowany)",
+      "image": "/performance/oil-vial-yellow.png",
+      "legalStatus": "Pfizer Depo-Testosterone Cyp 200 mg/ml (dominacja rynku USA). HU/EU: rzadszy, Enan preferowany. Zakaz WADA.",
+      "bioavailability": "~95-100% (IM)",
+      "onsetTime": "48-72 h (IM, steady-state 4-5 tygodni)",
+      "halfLife": "8 dni (ester cypionatowy, ~2 dni krótszy niż Enan)",
+      "halfLifeActive": "~24 h wolny T",
+      "detectionWindow": "3-4 miesiące w moczu.",
+      "aromatization": "Tak — ten sam wskaźnik dla wszystkich estrów Test.",
+      "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany.",
+      "quality": {
+        "pure": [
+          "Klarowny jasnożółty olej, fiolka 10 ml, pojazd olejowy z nasion bawełny częsty",
+          "Rx-grade: Pfizer Depo-Testosterone (USA), Watson Cyp (USA)"
+        ],
+        "caution": [
+          "Klinicznie NIE różni się znacząco od Enantatu (8 vs 10,5 dnia minimalna praktyczna różnica)",
+          "USA-preferowany, rzadki w UE — na rynku UGL często wymienny z Enantatem"
+        ],
+        "avoid": [
+          "Tak samo jak Enantat (krótki cykl nieskuteczny, detekcja WADA 4 miesiące)"
+        ]
+      },
+      "interactions": [
+        "Anastrozol 0,5 mg E3D dla wysokiego E2",
+        "PCT start ostatnia iniekcja Cyp +14-21 dni"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "unit": "mg/tydzień (IM, podzielone 1-2x)",
+        "note": "250-750 mg/tydzień, tygodniowo 1-2x. PCT ostatnia iniekcja +14-21 dni."
+      }
+    },
+    {
+      "routeId": "sus",
+      "routeLabel": "Sustanon-250 (mieszanka 4-estrowa Organon)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Aspen/Organon Sustanon-250 (ampułka 1 ml, 30mg Prop + 60mg PhenylProp + 60mg Isocaproate + 100mg Decanoate). UE Rx (HU/PL dostępny na polskiej/czeskiej recepcie). Zakaz WADA.",
+      "bioavailability": "~95-100% (IM)",
+      "onsetTime": "24-48 h (komponent propionatowy fast-acting, Decanoate slow-acting)",
+      "halfLife": "Mieszany: 19h (Prop) - 15 dni (Decanoate); średni efektywny t½ ~7-8 dni",
+      "halfLifeActive": "~24 h wolny T (depot-driven)",
+      "detectionWindow": "3-4 miesiące w moczu (ze względu na komponent Decanoate).",
+      "aromatization": "Tak — wszystkie komponenty aromatyzują (baza Test).",
+      "hepatotoxicity": "Niska — mieszanka sterydów macierzystych, NIE 17α-alkilowana.",
+      "quality": {
+        "pure": [
+          "Aspen Sustanon-250 ampułka 1 ml (zakład Bilbao, etykieta holograficzna)",
+          "Pakistański Karachi-Sustanon (Organon-licencjonowany, ~6 EUR/ampułka, autentyczny)"
+        ],
+        "caution": [
+          "4-komponentowy peak-shifting: niestabilny poziom plasma single-dose (kombinacja peak-trough)",
+          "Pierwotnie opracowany dla TRT miesięcznej 1x iniekcji; tygodniowy dosing kulturystyczny osiągalny ALE peak-management bardziej złożony niż single-ester"
+        ],
+        "avoid": [
+          "Reakcja alergiczna na olej kokosowy lub jeden z estrów",
+          "Preferencja single-ester (Enan/Cyp prostszy peak-management)"
+        ]
+      },
+      "interactions": [
+        "Monitor E2 Anastrozol — Sustanon ma większe fluktuacje E2",
+        "PCT start ostatnia iniekcja Sustanon +18-21 dni (komponent Decanoate slow clearance)"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "unit": "mg/tydzień (IM, podzielone 1-2x)",
+        "note": "250-750 mg/tydzień, tygodniowo 1-2x zalecane (NIE miesięcznie 1x jak TRT). PCT ostatnia iniekcja +18-21 dni."
+      }
+    },
+    {
+      "routeId": "aq",
+      "routeLabel": "Zawiesina Testosteronu (wodna, ultra-szybka)",
+      "image": "/performance/water-vial.png",
+      "legalStatus": "Rx rzadko (USA: Aquaviron), głównie UGL underground. UE: nie zarejestrowany. Zakaz WADA.",
+      "bioavailability": "~95-100% (IM, BEZ depot, bezpośrednia absorpcja)",
+      "onsetTime": "1-3 h (IM, ultra-szybki, NIE estryfikowany)",
+      "halfLife": "~24 h (macierzysty T, NIE ester)",
+      "halfLifeActive": "~24 h",
+      "detectionWindow": "1-2 tygodnie w moczu (krótsze niż formy estryfikowane).",
+      "aromatization": "Tak — macierzysty T, substrat CYP19.",
+      "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany.",
+      "quality": {
+        "pure": [
+          "Klarowne białe mikrokryształy zawieszone w wodzie, fiolka 10 ml, opalescentny przed wstrząśnięciem",
+          "Rx-grade: Aquaviron 25mg/ml (USA, rzadki)"
+        ],
+        "caution": [
+          "EKSTRA bolesna iniekcja — kryształy fizycznie podrażniają tkankę mięśniową (PIP)",
+          "EOD lub codzienna iniekcja potrzebna ze względu na krótki okres półtrwania",
+          "Używana jako pre-workout boost (początek 1-3 h bezpośrednio zwiększa wydajność)"
+        ],
+        "avoid": [
+          "Jeśli nie chcesz wstrzykiwać codziennie (alternatywa: Prop EOD lub Enan tygodniowo 1x)",
+          "Wrażliwy na ból (kryształy powodują znaczny PIP)"
+        ]
+      },
+      "interactions": [
+        "Anastrozol — monitor ze względu na szybki wzrost E2",
+        "PCT start ostatnia iniekcja zawiesiny +24-48 godzin (szybki klirens)"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 50, "medium": 100, "high": 200},
+        "unit": "mg/iniekcja (IM, codziennie lub EOD)",
+        "note": "50-200 mg/iniekcja codziennie lub EOD. Pre-workout boost 50-100 mg 1-2 godziny przed treningiem. PCT ostatnia iniekcja +24-48 godzin."
+      }
+    }
+  ],
+  "defaultVariant": "enan"
 }

@@ -23,6 +23,7 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 5,
     "wadaStatus": "banned",
+    "variantCount": 5,
     "subCategory": "dht",
     "subSection": "alap-test",
     "formFactors": ["oil", "aq"]
@@ -160,6 +161,7 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 4,
     "wadaStatus": "banned",
+    "variantCount": 2,
     "subCategory": "dht",
     "subSection": "klasszikus",
     "formFactors": ["oral", "aq"]
@@ -214,6 +216,93 @@ export const LIBRARY_ENTRY_META = [
     "subCategory": "dht",
     "subSection": "klasszikus",
     "formFactors": ["oral"]
+  },
+  {
+    "id": "masteron",
+    "name": "Masteron (Drostanolone)",
+    "image": "/performance/oil-vial-yellow.png",
+    "accentColor": "#dc2626",
+    "tagColor": "rgba(220,38,38,0.18)",
+    "shortDesc": {
+      "hu": "Drostanolone, 2α-metil-DHT injektábilis AAS. Eredetileg FDA-jóváhagyott (Drolban) inoperábilis emlőkarcinómára; ma kizárólag UGL. Klasszikus \"hardening\" cutting-szteroid.",
+      "en": "Drostanolone, 2α-methyl-DHT injectable AAS. Originally FDA-approved (Drolban) for inoperable breast cancer; today UGL only. Classic \"hardening\" cutting steroid.",
+      "pl": "Drostanolon, iniekcyjny AAS 2α-metylo-DHT. Pierwotnie zatwierdzony przez FDA (Drolban) na nieoperacyjnego raka piersi; dziś tylko UGL. Klasyczny \"hardening\" steryd na cięcie."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "variantCount": 2,
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oil"]
+  },
+  {
+    "id": "primobolan",
+    "name": "Primobolan (Methenolone)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#dc2626",
+    "tagColor": "rgba(220,38,38,0.18)",
+    "shortDesc": {
+      "hu": "Methenolone, 1-metil-DHT \"enyhe\" AAS két ester-formátumban: orális acetate (alacsony bio) és Bayer Primobolan Depot enantate (DE/ES Rx). Klasszikus cutting-szteroid.",
+      "en": "Methenolone, 1-methyl-DHT \"mild\" AAS in two ester formats: oral acetate (low bio) and Bayer Primobolan Depot enanthate (DE/ES Rx). Classic cutting steroid.",
+      "pl": "Methenolone, \"łagodny\" AAS 1-metylo-DHT w dwóch formach: doustny octan (niska bio) i Bayer Primobolan Depot enantat (DE/ES Rx). Klasyczny steryd na cięcie."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "variantCount": 2,
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oral", "oil"]
+  },
+  {
+    "id": "anadrol",
+    "name": "Anadrol (Oxymetholone)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#dc2626",
+    "tagColor": "rgba(220,38,38,0.18)",
+    "shortDesc": {
+      "hu": "Oxymetholone, 17α-metil-DHT orális AAS. FDA-jóváhagyott (Anadrol-50) aplasztikus anémiára. Klasszikus \"wet\" bulking-szteroid, magas hepatotoxicitás + paradox estrogén-szerű mellékhatások.",
+      "en": "Oxymetholone, 17α-methyl-DHT oral AAS. FDA-approved (Anadrol-50) for aplastic anemia. Classic \"wet\" bulking steroid with high hepatotoxicity + paradoxical estrogen-like side effects.",
+      "pl": "Oksymetholon, doustny AAS 17α-metylo-DHT. Zatwierdzony przez FDA (Anadrol-50) na niedokrwistość aplastyczną. Klasyczny \"mokry\" steryd bulkingowy z wysoką hepatotoksycznością + paradoksalne estrogenopodobne efekty uboczne."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "proviron",
+    "name": "Proviron (Mesterolone)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#dc2626",
+    "tagColor": "rgba(220,38,38,0.18)",
+    "shortDesc": {
+      "hu": "Mesterolone, 1α-metil-DHT orális androgén Bayer Rx (Proviron-25, DE/AT/PL). Adjunkt-szerep AAS-ciklus alatt — SHBG-szuppresszor + enyhe AI, NEM standalone bulker.",
+      "en": "Mesterolone, 1α-methyl-DHT oral androgen Bayer Rx (Proviron-25, DE/AT/PL). Adjunct role during AAS cycle — SHBG suppressor + mild AI, NOT a standalone bulker.",
+      "pl": "Mesterolon, doustny androgen 1α-metylo-DHT Bayer Rx (Proviron-25, DE/AT/PL). Rola adiunkt podczas cyklu AAS — supresor SHBG + łagodny AI, NIE samodzielny bulker."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "dhb",
+    "name": "DHB (Dihydroboldenone)",
+    "image": "/performance/oil-vial-orange.png",
+    "accentColor": "#a78bfa",
+    "tagColor": "rgba(167,139,250,0.18)",
+    "shortDesc": {
+      "hu": "1-Testosterone Cypionát, designer-AAS injektábilis. Boldenone 5α-redukált analógja. Csak UGL, NEM aromatizál, alacsony hepatotoxicitás — DE notórius PIP miatt.",
+      "en": "1-Testosterone Cypionate, injectable designer AAS. 5α-reduced analog of Boldenone. UGL only, does NOT aromatize, low hepatotoxicity — but notorious for severe PIP.",
+      "pl": "1-Testosteron Cypionat, iniekcyjny designer AAS. Analog Boldenonu 5α-zredukowany. Tylko UGL, NIE aromatyzuje, niska hepatotoksyczność — ALE notoryczny ze względu na silny PIP."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oil"]
   },
   {
     "id": "hgh-info",
