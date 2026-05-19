@@ -135,19 +135,98 @@ for (const libId of LIBRARIES) {
         if (!existsSync(entryPath)) continue
         const entryMod = await import(`file://${entryPath.replace(/\\/g, '/')}`)
         const entry = entryMod.default
+        // Phase C: multi-variant entries declare lab fields inside each variant.
+        // Validate variant-by-variant; top-level lookup is the fallback for
+        // single-variant entries.
+        const isMulti = Array.isArray(entry?.variants) && entry.variants.length > 0
         for (const field of labFields) {
-          const v = entry?.[field]
-          const present = typeof v === 'string' ? v.trim().length > 0 : !!v
-          if (!present) {
-            const msg = `[${libId}/${lang}] ${id} missing ${field}`
-            if (LAB_FIELD_SOFT_FAIL) { console.warn(`⚠️  WARN: ${msg}`); softMissing++ }
-            else { console.error(`❌ ERR: ${msg}`); errors++ }
+          if (isMulti) {
+            for (let i = 0; i < entry.variants.length; i++) {
+              const variant = entry.variants[i]
+              const v = variant?.[field]
+              const present = typeof v === 'string' ? v.trim().length > 0 : !!v
+              if (!present) {
+                const msg = `[${libId}/${lang}] ${id} variants[${i}] (${variant.routeId}) missing ${field}`
+                if (LAB_FIELD_SOFT_FAIL) { console.warn(`⚠️  WARN: ${msg}`); softMissing++ }
+                else { console.error(`❌ ERR: ${msg}`); errors++ }
+              }
+            }
+          } else {
+            const v = entry?.[field]
+            const present = typeof v === 'string' ? v.trim().length > 0 : !!v
+            if (!present) {
+              const msg = `[${libId}/${lang}] ${id} missing ${field}`
+              if (LAB_FIELD_SOFT_FAIL) { console.warn(`⚠️  WARN: ${msg}`); softMissing++ }
+              else { console.error(`❌ ERR: ${msg}`); errors++ }
+            }
           }
         }
       }
     }
     if (LAB_FIELD_SOFT_FAIL && softMissing > 0) {
       console.log(`  ↳ ${libId}: ${softMissing} lab-field warning(s) (soft-fail; A.2/A.3 in progress)`)
+    }
+  }
+
+  // Phase C — variant shape validation (multi-route entries).
+  // Rules:
+  //   1. If meta has variantCount >= 2, the entry-file's `variants` array length must match.
+  //   2. Variants parity across HU/EN/PL: same routeId set, same order.
+  //   3. Each variant needs: routeId, routeLabel, image, bioavailability, halfLife, dosing.
+  //   4. Performance library variants also need: aromatization, hepatotoxicity.
+  //   5. defaultVariant must match one of the variants[*].routeId.
+  if (perLang) {
+    for (const metaRec of meta) {
+      const variantCount = metaRec.variantCount
+      if (!variantCount || variantCount < 2) continue
+      const id = metaRec.id
+      const variantsByLang = {}
+      let allLoadable = true
+      for (const lang of ['hu', 'en', 'pl']) {
+        const entryPath = resolve(entriesDir, lang, `${id}.js`)
+        if (!existsSync(entryPath)) { allLoadable = false; continue }
+        const entryMod = await import(`file://${entryPath.replace(/\\/g, '/')}`)
+        const entry = entryMod.default
+        if (!Array.isArray(entry?.variants) || entry.variants.length !== variantCount) {
+          console.error(`❌ ${libId}/${lang}/${id}: meta.variantCount=${variantCount} but entry.variants.length=${entry?.variants?.length ?? 'absent'}`)
+          errors++
+          allLoadable = false
+          continue
+        }
+        if (!entry.defaultVariant || !entry.variants.some(v => v.routeId === entry.defaultVariant)) {
+          console.error(`❌ ${libId}/${lang}/${id}: defaultVariant "${entry.defaultVariant}" not in variants[*].routeId`)
+          errors++
+        }
+        for (let i = 0; i < entry.variants.length; i++) {
+          const v = entry.variants[i]
+          const REQ = ['routeId', 'routeLabel', 'image', 'bioavailability', 'halfLife', 'doseCalc']
+          for (const f of REQ) {
+            if (v[f] === undefined || v[f] === null || (typeof v[f] === 'string' && v[f].trim() === '')) {
+              console.error(`❌ ${libId}/${lang}/${id}: variants[${i}] missing required field "${f}"`)
+              errors++
+            }
+          }
+          if (libId === 'performance') {
+            for (const f of ['aromatization', 'hepatotoxicity']) {
+              if (v[f] === undefined || v[f] === null || (typeof v[f] === 'string' && v[f].trim() === '')) {
+                console.error(`❌ ${libId}/${lang}/${id}: variants[${i}] performance-required "${f}" missing`)
+                errors++
+              }
+            }
+          }
+        }
+        variantsByLang[lang] = entry.variants.map(v => v.routeId)
+      }
+      if (allLoadable) {
+        const huIds = variantsByLang.hu || []
+        for (const lang of ['en', 'pl']) {
+          const otherIds = variantsByLang[lang] || []
+          if (huIds.length !== otherIds.length || huIds.some((id, i) => id !== otherIds[i])) {
+            console.error(`❌ ${libId}/${id}: variants routeId parity mismatch HU=[${huIds.join(',')}] vs ${lang.toUpperCase()}=[${otherIds.join(',')}]`)
+            errors++
+          }
+        }
+      }
     }
   }
 

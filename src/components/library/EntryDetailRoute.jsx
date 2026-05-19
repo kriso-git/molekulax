@@ -17,13 +17,17 @@ import HeroPreview from './HeroPreview'
 
 const EntryDetail = lazy(() => import('./EntryDetail'))
 
+// Phase C: 3-segment hash `#entry/<library>/<id>/<variantId?>` for multi-variant
+// entries. `variantId` is optional in the parser — the EntryDetailRoute applies
+// auto-redirect rules below (single-variant → ignore segment; multi-variant
+// missing/bad segment → replaceState to defaultVariant).
 export function parseEntryHash(hash) {
   if (!hash) return null
   const clean = hash.replace(/^#/, '')
   const parts = clean.split('/')
   if (parts[0] !== 'entry' || !parts[1] || !parts[2]) return null
   if (!getLibrary(parts[1])) return null
-  return { library: parts[1], id: parts[2] }
+  return { library: parts[1], id: parts[2], variantId: parts[3] || null }
 }
 
 export function isEntryDetailHash(hash) {
@@ -135,6 +139,8 @@ export default function EntryDetailRoute({ hash }) {
   // Smooth-scroll to top whenever the active entry changes (e.g. clicking a
   // RelatedCard navigates from #entry/.../A to #entry/.../B). Without this,
   // the user lands mid-page on the new entry.
+  // NOTE: variantId change does NOT scroll — staying in place is the desired
+  // UX when toggling between oral/topical on the same compound.
   useEffect(() => {
     if (!parsed?.id) return
     if (typeof window === 'undefined') return
@@ -142,6 +148,32 @@ export default function EntryDetailRoute({ hash }) {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     })
   }, [parsed?.library, parsed?.id])
+
+  // Phase C — Variant auto-redirect. Once the entry has loaded, check whether
+  // the hash carries a valid variantId. Rules:
+  //   - Entry has `variants` array AND parsed.variantId is missing → redirect to defaultVariant.
+  //   - Entry has `variants` array AND parsed.variantId is unknown → redirect to defaultVariant.
+  //   - Entry has no `variants` AND parsed.variantId is set → console.warn, leave hash alone.
+  // Uses replaceState so the redirect doesn't pollute browser history.
+  useEffect(() => {
+    if (!parsed || !entry || typeof window === 'undefined') return
+    const variants = Array.isArray(entry.variants) ? entry.variants : null
+    if (!variants || variants.length === 0) {
+      if (parsed.variantId) {
+        console.warn(`[EntryDetailRoute] Entry ${parsed.library}/${parsed.id} has no variants but hash carries '/${parsed.variantId}'. Ignoring segment.`)
+      }
+      return
+    }
+    const validId = (id) => variants.some(v => v.routeId === id)
+    if (!parsed.variantId || !validId(parsed.variantId)) {
+      const fallback = validId(entry.defaultVariant) ? entry.defaultVariant : variants[0].routeId
+      window.history.replaceState(null, '', `#entry/${parsed.library}/${parsed.id}/${fallback}`)
+      // replaceState alone doesn't reliably fire `hashchange` across browsers
+      // (Chrome+Firefox do, but the contract is fuzzy). Dispatch manually so
+      // the App-level hash listener re-parses immediately.
+      window.dispatchEvent(new Event('hashchange'))
+    }
+  }, [parsed?.library, parsed?.id, parsed?.variantId, entry])
 
   // Browser-back path: if hash transitions from #entry/... to #library or
   // empty (popstate), closeDetail() is NOT called automatically. We consume
@@ -190,12 +222,15 @@ export default function EntryDetailRoute({ hash }) {
     // Entry mounted (possibly stale during a warm lang-switch). loading=true
     // here means a re-fetch is in flight (e.g. lang switch); old entry stays
     // visible with an opacity-50 + spinner overlay instead of a full skeleton.
-    const peptide = adaptLibraryEntry(entry, library, lang)
+    const peptide = adaptLibraryEntry(entry, library, lang, parsed.variantId)
     const handleJump = (id) => {
       if (parsed?.library) {
         window.location.hash = `entry/${parsed.library}/${id}`
       }
     }
+    // entryKey excludes variantId on purpose — EntryDetail stays mounted across
+    // variant toggles; internal state (scroll, magnet, nameRef) survives the
+    // swap, only the prop-driven body re-renders.
     const entryKey = `${parsed.library}:${peptide.id}`
     body = (
       <div className="relative">

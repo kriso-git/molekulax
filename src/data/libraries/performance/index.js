@@ -58,12 +58,13 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
-      "hu": "Methasterone (2α,17α-dimetil-DHT-származék). Erős orális prohormon, rapid izomtömeg-növelés magas hepatotoxicitási kockázattal.",
-      "en": "Methasterone (2α,17α-dimethyl DHT derivative). Potent oral prohormone delivering rapid muscle gains with high hepatotoxicity risk.",
-      "pl": "Methasterone (pochodna 2α,17α-dimetylo-DHT). Silny doustny prohormon, szybkie przyrosty masy z wysokim ryzykiem hepatotoksyczności."
+      "hu": "Methasterone (2α,17α-dimetil-DHT-származék). Két adagolási mód: orális tabletta vs. underground injektábilis olaj — eltérő hepatikus profillal.",
+      "en": "Methasterone (2α,17α-dimethyl DHT derivative). Two administration routes: oral tablet vs. underground injectable oil — different hepatic profiles.",
+      "pl": "Methasterone (pochodna 2α,17α-dimetylo-DHT). Dwie drogi podania: doustna tabletka vs. iniekcyjny olej UGL — różne profile hepatyczne."
     },
     "tier": 3,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "variantCount": 2
   },
   {
     "id": "ephedrine",

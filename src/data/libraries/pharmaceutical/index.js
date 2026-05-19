@@ -358,9 +358,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.18)",
     "shortDesc": {
-      "hu": "K-csatorna-aktivátor topikális/orális szer (Rogaine, Loniten). Androgenetikus alopecia kezelés 1988 óta. 2-5% topikális standard.",
-      "en": "K-channel activator topical/oral drug (Rogaine, Loniten). Androgenetic alopecia treatment since 1988. 2-5% topical standard.",
-      "pl": "Aktywator kanałów K, środek miejscowy/doustny (Rogaine, Loniten). Leczenie łysienia androgenowego od 1988. Standard 2-5% miejscowy."
+      "hu": "K-csatorna-aktivátor topikális vagy orális szer (Rogaine, Loniten + LDOM). Két adagolási mód, eltérő szisztémás expozícióval.",
+      "en": "K-channel activator, topical or oral (Rogaine, Loniten + LDOM). Two administration routes with very different systemic exposure profiles.",
+      "pl": "Aktywator kanałów K, miejscowy lub doustny (Rogaine, Loniten + LDOM). Dwie drogi podania z różną ekspozycją systemową."
     },
     "tier": 5,
     "prescriptionStatus": {
@@ -368,7 +368,8 @@ export const LIBRARY_ENTRY_META = [
       "en": "OTC topical, prescription oral (Loniten + LDOM)",
       "pl": "OTC miejscowy, na receptę doustny (Loniten + LDOM)"
     },
-    "atcCode": "D11AX01 (topical) / C02DC01 (oral)"
+    "atcCode": "D11AX01 (topical) / C02DC01 (oral)",
+    "variantCount": 2
   },
   {
     "id": "isotretinoin",

@@ -959,9 +959,40 @@ function deriveWhatIs(peptide) {
  return peptide.description
 }
 
-export function adaptLibraryEntry(entry, library, lang) {
- const peptide = entry
- if (!peptide) return null
+// Phase C: variant deep-merge. If the entry declares a `variants[]` array,
+// resolve the requested variant (fallback to defaultVariant, then first), and
+// merge variant fields on top of the base entry before running derivations.
+// Output gets `_activeVariantId` + `_availableVariants` for the UI toggle.
+// Backward-compat: entries without `variants` flow through unchanged.
+function resolveVariant(entry, variantId) {
+ if (!Array.isArray(entry.variants) || entry.variants.length === 0) {
+ return { peptide: entry, activeVariantId: null, availableVariants: null }
+ }
+ const variants = entry.variants
+ const requested = variantId ?? entry.defaultVariant
+ const variant =
+ variants.find(v => v.routeId === requested) ||
+ variants.find(v => v.routeId === entry.defaultVariant) ||
+ variants[0]
+ const peptide = {
+ ...entry,
+ ...variant,
+ body: { ...(entry.body || {}), ...(variant.body || {}) },
+ quality: { ...(entry.quality || {}), ...(variant.quality || {}) },
+ labTerminal: { ...(entry.labTerminal || {}), ...(variant.labTerminal || {}) },
+ }
+ delete peptide.variants
+ delete peptide.defaultVariant
+ return {
+ peptide,
+ activeVariantId: variant.routeId,
+ availableVariants: variants.map(v => ({ routeId: v.routeId, routeLabel: v.routeLabel })),
+ }
+}
+
+export function adaptLibraryEntry(entry, library, lang, variantId) {
+ if (!entry) return null
+ const { peptide, activeVariantId, availableVariants } = resolveVariant(entry, variantId)
  const tier = library.getResearchLevel(peptide)
  const meta = getLevelMeta(tier)
  const categoryIds = (library.entryCategoryMap[peptide.id] || [])
@@ -1036,5 +1067,9 @@ export function adaptLibraryEntry(entry, library, lang) {
  cyp450: peptide.cyp450 || null,
  crossMolInteractions: peptide.crossMolInteractions || null,
  } : null,
+ // Phase C — route-toggle metadata for the EntryDetail UI. Null when the
+ // entry has no `variants[]` (=> VariantToggle hidden, no chip).
+ _activeVariantId: activeVariantId,
+ _availableVariants: availableVariants,
  }
 }

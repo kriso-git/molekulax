@@ -25,6 +25,7 @@ import PerformanceCalculator from './PerformanceCalculator'
 import PharmaceuticalCalculator from './PharmaceuticalCalculator'
 import { useTilt, useMagnet, ParticleField, HoloRing, LabTerminal, Eyebrow, GlassCard, TabPills } from './entry-detail/shared'
 import ChemicalFormulaPlaceholder from './ChemicalFormulaPlaceholder'
+import VariantToggle from './VariantToggle'
 
 // Phase 10 — dynamic "Releváns X" / "Related X" / "Powiązane X" label per library.
 // Plural noun map per language; fallback strips "Könyvtár"/"Library"/"Biblioteka" from library.name.
@@ -1328,6 +1329,14 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {peptide.name?.replace(/-/g, '‑')}
  </h1>
 
+ {/* Phase C — Variant route toggle (only renders when entry has 2+ variants) */}
+ <VariantToggle
+ libraryId={library?.id}
+ entryId={peptide.id}
+ availableVariants={peptide._availableVariants}
+ activeVariantId={peptide._activeVariantId}
+ />
+
  {peptide.fullName && peptide.fullName !== peptide.name && (
  <p className="text-sm tracking-wide mb-4" style={{ color: 'var(--text-muted)' }}>
  {peptide.fullName}
@@ -1388,7 +1397,17 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
  {/* Holosphere */}
  <div className="order-1 lg:order-2 flex items-center justify-center">
- <Holosphere image={peptide.image} name={peptide.name} accent={accent} tierColor={tierColor} isLight={isLight} library={library} chemicalFormula={peptide.chemicalFormula} entryId={peptide.id} />
+ <Holosphere
+ key={peptide._activeVariantId || peptide.id}
+ image={peptide.image}
+ name={peptide.name}
+ accent={accent}
+ tierColor={tierColor}
+ isLight={isLight}
+ library={library}
+ chemicalFormula={peptide.chemicalFormula}
+ entryId={peptide.id}
+ />
  </div>
  </section>
 

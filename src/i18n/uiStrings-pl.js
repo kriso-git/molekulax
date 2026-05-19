@@ -212,5 +212,9 @@ export const UI_PL = {
   "pe.refs": "Odniesienia naukowe",
   "pe.relevant": "Istotne peptydy",
   "pe.contactPrompt": "Masz pytanie? Skontaktuj się z nami",
-  "lang.label": "Język"
+  "lang.label": "Język",
+  "variant.tile.badge": "{n} formy",
+  "variant.toggle.aria": "Zmień drogę podania",
+  "variant.toggle.current": "Aktywne: {label}",
+  "variant.sr.changed": "Zmieniono drogę podania: {label}"
 };

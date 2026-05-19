@@ -212,5 +212,9 @@ export const UI_HU = {
   "pe.refs": "Tudományos hivatkozások",
   "pe.relevant": "Releváns peptidek",
   "pe.contactPrompt": "Kérdésed van? Lépj kapcsolatba velünk",
-  "lang.label": "Nyelv"
+  "lang.label": "Nyelv",
+  "variant.tile.badge": "{n} forma",
+  "variant.toggle.aria": "Adagolási mód váltása",
+  "variant.toggle.current": "Aktív: {label}",
+  "variant.sr.changed": "Adagolási mód váltva: {label}"
 };

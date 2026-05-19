@@ -212,5 +212,9 @@ export const UI_EN = {
   "pe.refs": "Scientific references",
   "pe.relevant": "Relevant peptides",
   "pe.contactPrompt": "Have a question? Get in touch",
-  "lang.label": "Language"
+  "lang.label": "Language",
+  "variant.tile.badge": "{n} forms",
+  "variant.toggle.aria": "Switch administration route",
+  "variant.toggle.current": "Active: {label}",
+  "variant.sr.changed": "Administration route changed: {label}"
 };

@@ -100,6 +100,21 @@ const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSe
  </div>
  )}
 
+ {/* Phase C — multi-variant chip (Indigo). Stacks below Placeholder if both present. */}
+ {peptide.variantCount >= 2 && (
+ <div
+ className={`absolute right-3 z-20 inline-flex items-center px-2 py-0.5 rounded-full text-[9px] tracking-[0.15em] uppercase font-semibold ${isPlaceholder ? 'top-9' : 'top-3'}`}
+ style={{
+ background: 'rgba(129,140,248,0.18)',
+ border: '1px solid rgba(129,140,248,0.40)',
+ color: '#a5b4fc',
+ boxShadow: '0 0 8px rgba(129,140,248,0.25)',
+ }}
+ >
+ {(t('variant.tile.badge') || '{n} forms').replace('{n}', peptide.variantCount)}
+ </div>
+ )}
+
  {/* Image, square frame, fills the tile width so every vial photo
  renders at the same visual size. No hover scale; only the parent
  tile lifts. `overflow-hidden` + explicit aspectRatio bullet-proof
