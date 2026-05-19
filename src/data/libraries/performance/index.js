@@ -3,7 +3,8 @@
 // entries/<lang>/<id>.js. Library-level fields (categories, effects, faq,
 // labels) still triplet — only entry bodies are lang-split.
 
-import { CATEGORIES, PERFORMANCE_CATEGORIES, getPerformanceCategories } from './categories.js'
+import { CATEGORIES, PERFORMANCE_CATEGORIES, PERFORMANCE_SUB_CATEGORIES, SUB_SECTIONS, getPerformanceCategories, getPerformanceSubCategory } from './categories.js'
+import { FORM_FACTORS } from './formFactors.js'
 import { getResearchLevel } from './researchLevel.js'
 import { RESEARCH_LEVELS } from '../shared/researchLevel.js'
 import { EFFECT_CATEGORIES } from './effects.js'
@@ -21,7 +22,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Endogenny męski hormon płciowy i molekuła referencyjna wszystkich AAS. Zatwierdzony przez FDA TRT (terapia zastępcza testosteronem) dla hipogonadyzmu."
     },
     "tier": 5,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "dht",
+    "subSection": "alap-test",
+    "formFactors": ["oil", "aq"]
   },
   {
     "id": "trenbolone-info",
@@ -35,7 +39,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Silny derywat 19-nortestosteronu, 5x aktywność androgenna vs. testosteron. Agresywny dla nerek, ciśnienia i prolaktyny; nigdy nie zatwierdzony przez FDA do użytku ludzkiego."
     },
     "tier": 4,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "tren",
+    "formFactors": ["oil"]
   },
   {
     "id": "anavar-info",
@@ -49,7 +56,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Oksandrolon, zatwierdzony przez FDA doustny AAS dla ofiar oparzeń i kacheksji HIV. Lekko hepatotoksyczny 17α-alkilowany, często nazywany sterydem przyjaznym kobietom."
     },
     "tier": 4,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oral"]
   },
   {
     "id": "superdrol",
@@ -64,7 +74,10 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 3,
     "wadaStatus": "banned",
-    "variantCount": 2
+    "variantCount": 2,
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oral", "oil"]
   },
   {
     "id": "ephedrine",
@@ -78,7 +91,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Sympatomimetyczny alkaloid (Ephedra sinica), klasyczny termogenik i bronchodilator. Zakazany przez WADA w sporcie wyczynowym."
     },
     "tier": 5,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "stim",
+    "formFactors": ["oral"]
   },
   {
     "id": "yohimbine",
@@ -92,7 +108,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Antagonista receptora α2-adrenergicznego (Pausinystalia yohimbe), używany jako suplement do mobilizacji \"stubborn fat\"."
     },
     "tier": 3,
-    "wadaStatus": null
+    "wadaStatus": null,
+    "subCategory": "fat",
+    "subSection": "stim",
+    "formFactors": ["oral"]
   },
   {
     "id": "clenbuterol",
@@ -106,7 +125,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Selektywny agonista β2, weterynaryjny w UE dla astmy końskiej. Off-label kulturystyka dla redukcji + ochrony mięśni."
     },
     "tier": 4,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "beta",
+    "formFactors": ["oral"]
   },
   {
     "id": "albuterol",
@@ -120,7 +142,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Selektywny agonista β2 dla astmy zatwierdzony przez FDA (Ventolin). Krótszy okres półtrwania, bezpieczniejsza alternatywa."
     },
     "tier": 5,
-    "wadaStatus": "monitored"
+    "wadaStatus": "monitored",
+    "subCategory": "fat",
+    "subSection": "beta",
+    "formFactors": ["oral", "aq"]
   },
   {
     "id": "winstrol-info",
@@ -134,7 +159,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Stanozolol, 17α-alkilowana pochodna DHT. Klasyczny \"cutting\" AAS, supresor SHBG."
     },
     "tier": 4,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oral", "aq"]
   },
   {
     "id": "nandrolone-info",
@@ -148,7 +176,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Nandrolone Decanoate (Deca-Durabolin), 19-nor AAS. Klasyczny \"bulking\" AAS z efektem regeneracji stawów."
     },
     "tier": 4,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "nandro",
+    "formFactors": ["oil"]
   },
   {
     "id": "dianabol-info",
@@ -162,7 +193,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Methandrostenolone, 17α-alkilowany doustny AAS. Klasyczny \"kickstart\" bulking z wysoką hepatotoksycznością."
     },
     "tier": 4,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "test",
+    "subSection": "17a-alkyl",
+    "formFactors": ["oral", "oil"]
   },
   {
     "id": "methylstenbolone",
@@ -176,7 +210,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Designer prohormon. Silny agonista AR z wysoką hepatotoksycznością."
     },
     "tier": 2,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "dht",
+    "subSection": "klasszikus",
+    "formFactors": ["oral"]
   },
   {
     "id": "hgh-info",
@@ -190,7 +227,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Rekombinowany ludzki hormon wzrostu (rhGH, Somatropin). Egzogenne wsparcie GH, zakazany przez WADA."
     },
     "tier": 4,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "gh-axis",
+    "formFactors": ["aq"]
   },
   {
     "id": "epo-info",
@@ -204,7 +244,10 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Rekombinowana ludzka erytropoetyna (rhEPO). Stymuluje produkcję erytrocytów, zakazana przez WADA."
     },
     "tier": 4,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "gh-axis",
+    "formFactors": ["aq"]
   },
   {
     "id": "dnp-info",
@@ -218,21 +261,11 @@ export const LIBRARY_ENTRY_META = [
       "pl": "NIE STOSUJ. 2,4-dinitrofenol, ryzyko śmiertelnej hipertermii. Kontekst edukacyjny."
     },
     "tier": 1,
-    "wadaStatus": "banned"
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "mito",
+    "formFactors": ["oral"]
   }
-]
-
-export const TOP_ENTRY_IDS = [
-  "testosterone-info",
-  "trenbolone-info",
-  "anavar-info",
-  "superdrol",
-  "ephedrine",
-  "yohimbine",
-  "clenbuterol",
-  "albuterol",
-  "dianabol-info",
-  "hgh-info"
 ]
 
 export const performanceLibrary = {
@@ -249,8 +282,10 @@ export const performanceLibrary = {
 },
   accent: "#00ff99",
   meta: LIBRARY_ENTRY_META,
-  topEntries: TOP_ENTRY_IDS,
   categories: CATEGORIES,
+  subCategories: CATEGORIES,
+  subSections: SUB_SECTIONS,
+  formFactors: FORM_FACTORS,
   entryCategoryMap: PERFORMANCE_CATEGORIES,
   getResearchLevel,
   researchLevels: RESEARCH_LEVELS,
@@ -317,4 +352,4 @@ export async function loadEntry(id, lang) {
   return mod.default
 }
 
-export { CATEGORIES, PERFORMANCE_CATEGORIES, getPerformanceCategories, getResearchLevel, EFFECT_CATEGORIES }
+export { CATEGORIES, PERFORMANCE_CATEGORIES, PERFORMANCE_SUB_CATEGORIES, SUB_SECTIONS, getPerformanceCategories, getPerformanceSubCategory, getResearchLevel, EFFECT_CATEGORIES, FORM_FACTORS }
