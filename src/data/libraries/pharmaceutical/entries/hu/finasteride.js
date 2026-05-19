@@ -4,7 +4,7 @@
 export default {
   "id": "finasteride",
   "name": "Finasteride",
-  "image": null,
+  "image": "/pharmaceutical/blister-blue-small.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "5α-reduktáz II-es típusú szelektív gátló. FDA-jóváhagyott androgenetikus alopeciára (Propecia 1 mg) és BPH-ra (Proscar 5 mg). A DHT képződés ~70%-kal csökkenti.",

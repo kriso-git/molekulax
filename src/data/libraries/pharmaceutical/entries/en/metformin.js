@@ -4,7 +4,7 @@
 export default {
   "id": "metformin",
   "name": "Metformin",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "First-line oral therapy for type 2 diabetes worldwide. WHO Essential Medicines, ADA and EASD guideline anchor since 1957.",

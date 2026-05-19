@@ -4,7 +4,7 @@
 export default {
   "id": "modafinil",
   "name": "Modafinil",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Ébrenléti-promotáló szer, FDA-jóváhagyott narkolepszia, műszak-munka alvászavar, OSA-adjunkt indikációkkal. DEA Schedule IV. Off-label kognitív-fokozás MolekulaX Nootropikum-könyvtárában külön framing.",

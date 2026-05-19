@@ -4,7 +4,7 @@
 export default {
   "id": "atorvastatin",
   "name": "Atorvastatin",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "A leginkább felírt nagy-intenzitású statin, HMG-CoA reduktáz-gátló. AHA/ACC és ESC lipid-guideline-anchor 1996 óta. Primer és szekunder ASCVD-prevenció gold standard.",

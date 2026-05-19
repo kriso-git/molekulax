@@ -4,7 +4,7 @@
 export default {
   "id": "isotretinoin",
   "name": "Isotretinoin",
-  "image": null,
+  "image": "/pharmaceutical/softgel-orange.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "13-cisz-retinoinsav (Roche Roaccutane). Súlyos acne nodulocystica gold-standard. FDA X kategória súlyos teratogenitás miatt — iPLEDGE program kötelező.",

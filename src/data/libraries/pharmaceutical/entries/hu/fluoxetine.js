@@ -4,7 +4,7 @@
 export default {
   "id": "fluoxetine",
   "name": "Fluoxetine",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Az első SSRI (Eli Lilly Prozac, FDA 1987). Ultra-hosszú felezési idő (4-6 nap), pediátriai MDD-re FDA-jóváhagyott.",

@@ -4,7 +4,7 @@
 export default {
   "id": "hgh-info",
   "name": "HGH",
-  "image": null,
+  "image": "/performance/water-vial.png",
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "Rekombinowany ludzki hormon wzrostu (rhGH, Somatropin). Egzogenne wsparcie GH, zakazany przez WADA.",

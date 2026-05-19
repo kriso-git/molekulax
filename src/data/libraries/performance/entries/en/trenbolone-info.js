@@ -4,7 +4,7 @@
 export default {
   "id": "trenbolone-info",
   "name": "Trenbolone",
-  "image": null,
+  "image": "/performance/oil-vial-orange.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Potent 19-nortestosterone derivative, 5x androgenic activity vs. testosterone. Aggressive on kidneys, blood pressure and prolactin; never FDA-approved for human use.",

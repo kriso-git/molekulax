@@ -58,7 +58,7 @@ export default {
     {
       "routeId": "oral",
       "routeLabel": "Doustny",
-      "image": "/pharmaceutical/minoxidil-oral.png",
+      "image": "/pharmaceutical/blister-white-round.png",
       "legalStatus": "Na receptę (Loniten przeciwnadciśnieniowy + off-label LDOM na łysienie).",
       "bioavailability": "~95% (szybka absorpcja z GI; Cmax 1 godzina). Farmakokinetyka dobrze udokumentowana w ChPL Loniten.",
       "onsetTime": "3–6 miesięcy (widoczny odrost włosów przy LDOM)",

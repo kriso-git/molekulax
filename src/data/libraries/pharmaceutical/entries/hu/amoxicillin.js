@@ -4,7 +4,7 @@
 export default {
   "id": "amoxicillin",
   "name": "Amoxicillin",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Széles spektrumú β-laktám penicillin-osztálybeli antibiotikum. WHO Essential Medicines, az egyik legtöbbet felírt antibiotikum a világon. Standard első-vonal otitisz, sinusitis, pneumonia, UTI, dentális prophylaxis és H. pylori eradikáció.",

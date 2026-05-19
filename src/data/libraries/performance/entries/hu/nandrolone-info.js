@@ -4,7 +4,7 @@
 export default {
   "id": "nandrolone-info",
   "name": "Nandrolone",
-  "image": null,
+  "image": "/performance/oil-vial-yellow.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Nandrolone Decanoate (Deca-Durabolin), 19-nor-AAS. Klasszikus \"bulking\" AAS, ízületi recovery hatással.",

@@ -4,7 +4,7 @@
 export default {
   "id": "modafinil",
   "name": "Modafinil",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Środek promujący czuwanie, zatwierdzony przez FDA dla narkolepsji, zaburzeń snu zmianowego, OSA jako uzupełnienie. DEA Schedule IV. Off-label wzmocnienie poznawcze osobno w bibliotece Nootropik MolekulaX.",

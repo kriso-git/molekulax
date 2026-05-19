@@ -4,7 +4,7 @@
 export default {
   "id": "tadalafil",
   "name": "Tadalafil",
-  "image": null,
+  "image": "/pharmaceutical/blister-yellow-almond.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Hosszú felezési idejű (17,5 óra) PDE5-inhibitor. FDA-jóváhagyott erektilis diszfunkcióra (Cialis), benignus prostata-hiperpláziára (BPH) és pulmonális artériás hipertóniára (Adcirca).",

@@ -4,7 +4,7 @@
 export default {
   "id": "fluoxetine",
   "name": "Fluoxetine",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "The first SSRI (Eli Lilly Prozac, FDA 1987). Ultra-long half-life (4-6 days), FDA-approved for pediatric MDD.",

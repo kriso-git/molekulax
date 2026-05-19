@@ -4,7 +4,7 @@
 export default {
   "id": "liothyronine",
   "name": "Liothyronine (T3)",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#f59e0b",
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Szintetikus T3 trijodotironin (Cytomel). Specifikus indikációkban (mixedéma-kóma, T4-konverzió-zavar, MDD-augmentáció). NEM rutin-választás.",

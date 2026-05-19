@@ -4,7 +4,7 @@
 export default {
   "id": "tadalafil",
   "name": "Tadalafil",
-  "image": null,
+  "image": "/pharmaceutical/blister-yellow-almond.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Long half-life (17.5 h) PDE5 inhibitor. FDA-approved for erectile dysfunction (Cialis), benign prostatic hyperplasia (BPH), and pulmonary arterial hypertension (Adcirca).",

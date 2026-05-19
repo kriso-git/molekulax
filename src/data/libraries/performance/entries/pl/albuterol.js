@@ -4,7 +4,7 @@
 export default {
   "id": "albuterol",
   "name": "Albuterol",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Selektywny agonista β2 dla astmy zatwierdzony przez FDA (Ventolin). Krótszy okres półtrwania, bezpieczniejsza alternatywa.",

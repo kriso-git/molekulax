@@ -4,7 +4,7 @@
 export default {
   "id": "dnp-info",
   "name": "DNP",
-  "image": null,
+  "image": "/performance/tablet-pile-yellow.png",
   "accentColor": "#ef4444",
   "tagColor": "rgba(239,68,68,0.18)",
   "shortDesc": "NE HASZNÁLD. 2,4-dinitrofenol, halálos kimenetelű hipertermia kockázattal. Edukatív kontextus a veszélyek megismertetésére.",

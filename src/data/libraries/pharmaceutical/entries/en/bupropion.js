@@ -4,7 +4,7 @@
 export default {
   "id": "bupropion",
   "name": "Bupropion",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Norepinephrine-dopamine reuptake inhibitor (NDRI) atypical antidepressant. Indications: MDD, seasonal affective disorder, smoking cessation (Zyban). No sexual dysfunction, minimally sedating.",

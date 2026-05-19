@@ -4,7 +4,7 @@
 export default {
   "id": "clenbuterol",
   "name": "Clenbuterol",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Szelektív β2-adrenoceptor agonista, EU veterinär-Rx asztmás lovaknak. Bodybuilding off-label fat-loss + izom-megtartás.",

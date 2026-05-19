@@ -7,7 +7,7 @@ import sharp from 'sharp'
 import { readdir, stat } from 'node:fs/promises'
 import { join } from 'node:path'
 
-const ROOT = 'public/peptides'
+const ROOTS = ['public/peptides', 'public/performance', 'public/pharmaceutical']
 const RESIZE_THRESHOLD = 768
 const WEBP_QUALITY = 80
 const WEBP_EFFORT = 6
@@ -17,16 +17,23 @@ const WEBP_EFFORT = 6
 const AVIF_QUALITY = 60
 const AVIF_EFFORT = 4
 
-const files = await readdir(ROOT)
-const pngs = files.filter((f) => f.toLowerCase().endsWith('.png'))
-
 let totalInBytes = 0
 let totalOutBytes = 0
 let processed = 0
 let skipped = 0
 
-for (const file of pngs) {
-  const inPath = join(ROOT, file)
+for (const ROOT of ROOTS) {
+  let files
+  try {
+    files = await readdir(ROOT)
+  } catch {
+    console.log(`  (skip: ${ROOT} does not exist)`)
+    continue
+  }
+  const pngs = files.filter((f) => f.toLowerCase().endsWith('.png'))
+  console.log(`\n→ ${ROOT}: ${pngs.length} PNG`)
+  for (const file of pngs) {
+    const inPath = join(ROOT, file)
   const outPath = inPath.replace(/\.png$/i, '.webp')
 
   const inStat = await stat(inPath)
@@ -94,6 +101,7 @@ for (const file of pngs) {
     console.log(
       `  ${file}: ${(newAvifStat.size / 1024).toFixed(0)}kB AVIF (-${avifPct}% vs PNG)`
     )
+  }
   }
 }
 

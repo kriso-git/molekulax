@@ -4,7 +4,7 @@
 export default {
   "id": "amoxicillin",
   "name": "Amoxicillin",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Antybiotyk β-laktamowy o szerokim spektrum z grupy penicylin. Lek podstawowy WHO, jeden z najczęściej przepisywanych antybiotyków na świecie. Standard pierwszej linii dla zapalenia ucha środkowego, zatok, zapalenia płuc, UTI, profilaktyki stomatologicznej i eradykacji H. pylori.",

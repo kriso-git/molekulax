@@ -12,7 +12,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "metformin",
     "name": "Metformin",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-oval.png",
     "accentColor": "#10b981",
     "tagColor": "rgba(16,185,129,0.18)",
     "shortDesc": {
@@ -31,7 +31,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "atorvastatin",
     "name": "Atorvastatin",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-oval.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -50,7 +50,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "tadalafil",
     "name": "Tadalafil",
-    "image": null,
+    "image": "/pharmaceutical/blister-yellow-almond.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -69,7 +69,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "bupropion",
     "name": "Bupropion",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-round.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -88,7 +88,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "modafinil",
     "name": "Modafinil",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-oval.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -107,7 +107,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "levothyroxin",
     "name": "Levothyroxin (L-T4)",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-round.png",
     "accentColor": "#f59e0b",
     "tagColor": "rgba(245,158,11,0.18)",
     "shortDesc": {
@@ -126,7 +126,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "finasteride",
     "name": "Finasteride",
-    "image": null,
+    "image": "/pharmaceutical/blister-blue-small.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.18)",
     "shortDesc": {
@@ -145,7 +145,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "amoxicillin",
     "name": "Amoxicillin",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-oval.png",
     "accentColor": "#06b6d4",
     "tagColor": "rgba(6,182,212,0.18)",
     "shortDesc": {
@@ -164,7 +164,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "empagliflozin",
     "name": "Empagliflozin",
-    "image": null,
+    "image": "/pharmaceutical/blister-yellow-round.png",
     "accentColor": "#10b981",
     "tagColor": "rgba(16,185,129,0.18)",
     "shortDesc": {
@@ -183,7 +183,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "escitalopram",
     "name": "Escitalopram",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-oval.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -202,7 +202,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "fluoxetine",
     "name": "Fluoxetine",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-round.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -221,7 +221,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "methylphenidate",
     "name": "Methylphenidate",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-round.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -240,7 +240,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "rosuvastatin",
     "name": "Rosuvastatin",
-    "image": null,
+    "image": "/pharmaceutical/blister-pink-small.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -259,7 +259,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "hydrocortisone",
     "name": "Hydrocortisone",
-    "image": null,
+    "image": "/pharmaceutical/cream-tube-white.png",
     "accentColor": "#f59e0b",
     "tagColor": "rgba(245,158,11,0.18)",
     "shortDesc": {
@@ -278,7 +278,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "liothyronine",
     "name": "Liothyronine (T3)",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-round.png",
     "accentColor": "#f59e0b",
     "tagColor": "rgba(245,158,11,0.18)",
     "shortDesc": {
@@ -297,7 +297,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "ciprofloxacin",
     "name": "Ciprofloxacin",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-oval.png",
     "accentColor": "#06b6d4",
     "tagColor": "rgba(6,182,212,0.18)",
     "shortDesc": {
@@ -316,7 +316,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "doxycycline",
     "name": "Doxycycline",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-oval.png",
     "accentColor": "#06b6d4",
     "tagColor": "rgba(6,182,212,0.18)",
     "shortDesc": {
@@ -335,7 +335,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "tamoxifen",
     "name": "Tamoxifen",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-round.png",
     "accentColor": "#ec4899",
     "tagColor": "rgba(236,72,153,0.18)",
     "shortDesc": {
@@ -354,7 +354,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "minoxidil",
     "name": "Minoxidil",
-    "image": null,
+    "image": "/pharmaceutical/blister-white-round.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.18)",
     "shortDesc": {
@@ -374,7 +374,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "isotretinoin",
     "name": "Isotretinoin",
-    "image": null,
+    "image": "/pharmaceutical/softgel-orange.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.18)",
     "shortDesc": {
@@ -393,7 +393,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "tretinoin",
     "name": "Tretinoin",
-    "image": null,
+    "image": "/pharmaceutical/cream-tube-white.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.18)",
     "shortDesc": {

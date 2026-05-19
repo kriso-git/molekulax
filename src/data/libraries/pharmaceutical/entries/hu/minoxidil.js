@@ -58,7 +58,7 @@ export default {
     {
       "routeId": "oral",
       "routeLabel": "Orális",
-      "image": "/pharmaceutical/minoxidil-oral.png",
+      "image": "/pharmaceutical/blister-white-round.png",
       "legalStatus": "Vényköteles (Loniten antihipertenzív + off-label LDOM alopeciára).",
       "bioavailability": "~95% (gyors GI abszorpció; Cmax 1 óra). Pharmakokinetikája jól dokumentált a Loniten SmPC-ben.",
       "onsetTime": "3–6 hónap (látható hajnövekedés LDOM-mal)",

@@ -4,7 +4,7 @@
 export default {
   "id": "yohimbine",
   "name": "Yohimbine",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "α2-adrenoceptor antagonist (Pausinystalia yohimbe), \"stubborn fat\" zsírdepók mobilizálására használt sport-supplement.",

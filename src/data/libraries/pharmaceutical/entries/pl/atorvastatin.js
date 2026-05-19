@@ -4,7 +4,7 @@
 export default {
   "id": "atorvastatin",
   "name": "Atorvastatin",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Najczęściej przepisywana statyna o wysokiej intensywności, inhibitor reduktazy HMG-CoA. Kotwica wytycznych lipidowych AHA/ACC i ESC od 1996 r. Złoty standard pierwotnej i wtórnej prewencji ASCVD.",

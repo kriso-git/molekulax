@@ -4,7 +4,7 @@
 export default {
   "id": "empagliflozin",
   "name": "Empagliflozin",
-  "image": null,
+  "image": "/pharmaceutical/blister-yellow-round.png",
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "Inhibitor SGLT2 (Jardiance), Boehringer Ingelheim/Eli Lilly. Lek kardio-renoprotekcyjny dla T2DM + HFrEF/HFpEF + CKD.",

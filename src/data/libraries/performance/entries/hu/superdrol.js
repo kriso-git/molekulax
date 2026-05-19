@@ -143,7 +143,7 @@ export default {
     {
       "routeId": "oral",
       "routeLabel": "Orális (tabletta)",
-      "image": "/performance/superdrol-oral.png",
+      "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: Schedule III kontrollált szer (DASCA 2012). EU: kontrollált anabolikus szteroid, vény nélkül illegális, HU/PL piacon nem értékesíthető. WADA: tiltott versenysportban.",
       "bioavailability": "~50% (orális, 17α-metil-csoport first-pass-resistant; FDA 2010 DESI review extrapolált a c17-AA osztály referencia-adataiból)",
       "onsetTime": "7-14 nap (izomtömeg)",
@@ -190,7 +190,7 @@ export default {
     {
       "routeId": "injectable",
       "routeLabel": "Intramuszkuláris (injekció)",
-      "image": "/performance/superdrol-injectable.png",
+      "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Nem licencelt formátum — kizárólag UGL (underground lab) underground market. Mindenhol illegális gyártás + birtoklás + felhasználás. WADA: tiltott.",
       "bioavailability": "~95-100% (IM injekció bypass-olja a first-pass-t; methyldrostanolone olajban oldva slow depot-felszívódással)",
       "onsetTime": "10-21 nap (lassabb felfutás mint orálnál, depot-kinetika miatt)",

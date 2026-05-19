@@ -4,7 +4,7 @@
 export default {
   "id": "levothyroxin",
   "name": "Levothyroxin (L-T4)",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#f59e0b",
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Syntetyczne hormonalne uzupełnienie tyroksyną (T4) na niedoczynność tarczycy. Lek podstawowy WHO, jeden z najczęściej przepisywanych leków globalnie. Kotwica wytycznych endokrynologicznych ATA i ETA.",

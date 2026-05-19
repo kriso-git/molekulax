@@ -4,7 +4,7 @@
 export default {
   "id": "rosuvastatin",
   "name": "Rosuvastatin",
-  "image": null,
+  "image": "/pharmaceutical/blister-pink-small.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Hydrofilna statyna o wysokiej intensywności (AstraZeneca Crestor). JUPITER ustanowił prewencję pierwotną ASCVD nawet przy podwyższonym CRP. Mało interakcji CYP.",

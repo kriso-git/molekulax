@@ -4,7 +4,7 @@
 export default {
   "id": "tadalafil",
   "name": "Tadalafil",
-  "image": null,
+  "image": "/pharmaceutical/blister-yellow-almond.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Inhibitor PDE5 o długim okresie półtrwania (17,5 h). Zatwierdzony przez FDA dla zaburzeń erekcji (Cialis), łagodnego rozrostu prostaty (BPH) i tętniczego nadciśnienia płucnego (Adcirca).",

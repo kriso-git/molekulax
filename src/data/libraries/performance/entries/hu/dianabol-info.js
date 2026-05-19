@@ -4,7 +4,7 @@
 export default {
   "id": "dianabol-info",
   "name": "Dianabol",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Methandrostenolone, 17α-alkilált orális AAS. Klasszikus \"kickstart\" bulking szteroid, magas hepatotoxicitással.",

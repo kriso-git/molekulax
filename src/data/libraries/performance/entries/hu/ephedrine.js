@@ -4,7 +4,7 @@
 export default {
   "id": "ephedrine",
   "name": "Ephedrine",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Sympathomimetic alkaloid (Ephedra sinica), klasszikus thermogenic és bronchodilator. WADA-tiltott versenysportban.",

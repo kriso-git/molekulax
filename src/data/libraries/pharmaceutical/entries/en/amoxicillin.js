@@ -4,7 +4,7 @@
 export default {
   "id": "amoxicillin",
   "name": "Amoxicillin",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Broad-spectrum β-lactam penicillin-class antibiotic. WHO Essential Medicines, one of the most prescribed antibiotics worldwide. Standard first-line for otitis media, sinusitis, pneumonia, UTI, dental prophylaxis, and H. pylori eradication.",

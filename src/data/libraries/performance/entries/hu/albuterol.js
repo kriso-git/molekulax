@@ -4,7 +4,7 @@
 export default {
   "id": "albuterol",
   "name": "Albuterol",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "FDA-approved szelektív β2-agonist asztma-Rx (Ventolin). Rövidebb felezésű, biztonságosabb Clenbuterol-alternatíva.",

@@ -4,7 +4,7 @@
 export default {
   "id": "testosterone-info",
   "name": "Testosterone",
-  "image": null,
+  "image": "/performance/oil-vial-yellow.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Endogenny męski hormon płciowy i molekuła referencyjna wszystkich AAS. Zatwierdzony przez FDA TRT (terapia zastępcza testosteronem) dla hipogonadyzmu.",

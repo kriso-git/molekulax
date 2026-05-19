@@ -4,7 +4,7 @@
 export default {
   "id": "tamoxifen",
   "name": "Tamoxifen",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#ec4899",
   "tagColor": "rgba(236,72,153,0.18)",
   "shortDesc": "Szelektív ösztrogén receptor modulátor (SERM). Hormonreceptor-pozitív emlőkarcinóma adjuváns és metastatikus kezelése (Nolvadex).",

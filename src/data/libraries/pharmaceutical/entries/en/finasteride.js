@@ -4,7 +4,7 @@
 export default {
   "id": "finasteride",
   "name": "Finasteride",
-  "image": null,
+  "image": "/pharmaceutical/blister-blue-small.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "5α-reductase type II selective inhibitor. FDA-approved for androgenetic alopecia (Propecia 1 mg) and BPH (Proscar 5 mg). Reduces DHT formation by ~70%.",

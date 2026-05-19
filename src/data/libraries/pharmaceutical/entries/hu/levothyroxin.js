@@ -4,7 +4,7 @@
 export default {
   "id": "levothyroxin",
   "name": "Levothyroxin (L-T4)",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#f59e0b",
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Szintetikus tiroxin (T4) hormon-pótlás hipotireózisra. WHO Essential Medicines, az egyik legtöbbet felírt gyógyszer globálisan. ATA és ETA endokrin-guideline-anchor.",

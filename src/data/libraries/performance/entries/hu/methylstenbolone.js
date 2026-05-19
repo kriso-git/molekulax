@@ -4,7 +4,7 @@
 export default {
   "id": "methylstenbolone",
   "name": "Methylstenbolone",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Designer prohormon (2,3α-epitio-17α-methylstenbolone). Erős AR-agonista, magas hepatotoxicitással.",

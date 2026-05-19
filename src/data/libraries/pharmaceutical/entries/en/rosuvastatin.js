@@ -4,7 +4,7 @@
 export default {
   "id": "rosuvastatin",
   "name": "Rosuvastatin",
-  "image": null,
+  "image": "/pharmaceutical/blister-pink-small.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Hydrophilic high-intensity statin (AstraZeneca Crestor). JUPITER trial established primary ASCVD prevention even at elevated CRP. Few CYP interactions.",

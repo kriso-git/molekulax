@@ -4,7 +4,7 @@
 export default {
   "id": "clenbuterol",
   "name": "Clenbuterol",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Selektywny agonista β2, weterynaryjny w UE dla astmy końskiej. Off-label kulturystyka dla redukcji + ochrony mięśni.",

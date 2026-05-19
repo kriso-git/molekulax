@@ -4,7 +4,7 @@
 export default {
   "id": "hydrocortisone",
   "name": "Hydrocortisone",
-  "image": null,
+  "image": "/pharmaceutical/cream-tube-white.png",
   "accentColor": "#f59e0b",
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Természetes glükokortikoid (Cortef), Addison-betegség és mellékvese-elégtelenség élethosszig tartó hormon-pótlása. Standard 15-25 mg/nap.",

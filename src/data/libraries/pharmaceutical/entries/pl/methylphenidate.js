@@ -4,7 +4,7 @@
 export default {
   "id": "methylphenidate",
   "name": "Methylphenidate",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Inhibitor DAT/NET stymulant, lek pierwszej linii ADHD Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, znaczący potencjał nadużywania.",

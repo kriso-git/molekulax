@@ -58,7 +58,7 @@ export default {
     {
       "routeId": "oral",
       "routeLabel": "Oral",
-      "image": "/pharmaceutical/minoxidil-oral.png",
+      "image": "/pharmaceutical/blister-white-round.png",
       "legalStatus": "Prescription only (Loniten antihypertensive + off-label LDOM for alopecia).",
       "bioavailability": "~95% (rapid GI absorption; Cmax 1 hour). Pharmacokinetics well-documented in the Loniten SmPC.",
       "onsetTime": "3–6 months (visible hair regrowth on LDOM)",

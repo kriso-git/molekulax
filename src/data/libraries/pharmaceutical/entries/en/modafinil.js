@@ -4,7 +4,7 @@
 export default {
   "id": "modafinil",
   "name": "Modafinil",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Wakefulness-promoting agent, FDA-approved for narcolepsy, shift work sleep disorder, OSA adjunct. DEA Schedule IV. Off-label cognitive enhancement framing separate in MolekulaX Nootropic library.",

@@ -4,7 +4,7 @@
 export default {
   "id": "atorvastatin",
   "name": "Atorvastatin",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "The most prescribed high-intensity statin, HMG-CoA reductase inhibitor. AHA/ACC and ESC lipid guideline anchor since 1996. Gold standard for primary and secondary ASCVD prevention.",

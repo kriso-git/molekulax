@@ -77,7 +77,7 @@ export default {
     {
       "routeId": "oral",
       "routeLabel": "Doustny (tabletka)",
-      "image": "/performance/superdrol-oral.png",
+      "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: substancja kontrolowana Schedule III (DASCA 2012). UE: kontrolowany steryd anaboliczny, nielegalny bez recepty, niesprzedawany w HU/PL. WADA: zakazany w sporcie wyczynowym.",
       "bioavailability": "~50% (doustna, grupa 17α-metylowa odporna na first-pass; FDA 2010 DESI review ekstrapolowane z danych referencyjnych klasy c17-AA)",
       "onsetTime": "7–14 dni (masa mięśniowa)",
@@ -102,7 +102,7 @@ export default {
     {
       "routeId": "injectable",
       "routeLabel": "Domięśniowy (zastrzyk)",
-      "image": "/performance/superdrol-injectable.png",
+      "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Nie jest licencjonowanym formatem — wyłącznie UGL (underground lab) rynek podziemny. Wytwarzanie, posiadanie, stosowanie nielegalne wszędzie. WADA: zakazany.",
       "bioavailability": "~95–100% (iniekcja IM omija first-pass; methyldrostanolone rozpuszczony w oleju z powolnym uwalnianiem depo)",
       "onsetTime": "10–21 dni (wolniejsza rampa niż doustna, kinetyka depo)",

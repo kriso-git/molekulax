@@ -4,7 +4,7 @@
 export default {
   "id": "tretinoin",
   "name": "Tretinoin",
-  "image": null,
+  "image": "/pharmaceutical/cream-tube-white.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Miejscowy retinoid kwas all-trans-retinowy. Trądzik, fotostarzenie, leczenie hiperpigmentacji. Dermatologiczny złoty standard.",

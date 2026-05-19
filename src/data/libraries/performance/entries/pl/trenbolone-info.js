@@ -4,7 +4,7 @@
 export default {
   "id": "trenbolone-info",
   "name": "Trenbolone",
-  "image": null,
+  "image": "/performance/oil-vial-orange.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Silny derywat 19-nortestosteronu, 5x aktywność androgenna vs. testosteron. Agresywny dla nerek, ciśnienia i prolaktyny; nigdy nie zatwierdzony przez FDA do użytku ludzkiego.",

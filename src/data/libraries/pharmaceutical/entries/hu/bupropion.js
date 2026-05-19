@@ -4,7 +4,7 @@
 export default {
   "id": "bupropion",
   "name": "Bupropion",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Norepinefrin-dopamin reuptake gátló (NDRI) atipikus antidepresszáns. MDD + szezonális affektív zavar + dohányzás-leszokás (Zyban) indikációkkal. Nem szexuális diszfunkciót okoz, kevéssé szedáló.",

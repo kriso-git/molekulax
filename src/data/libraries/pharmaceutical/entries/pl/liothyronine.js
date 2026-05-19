@@ -4,7 +4,7 @@
 export default {
   "id": "liothyronine",
   "name": "Liothyronine (T3)",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#f59e0b",
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Syntetyczna T3 trójjodotyronina (Cytomel). Specyficzne wskazania (śpiączka miksowobrzękowa, zaburzenie konwersji T4, augmentacja MDD). NIE rutynowy wybór.",

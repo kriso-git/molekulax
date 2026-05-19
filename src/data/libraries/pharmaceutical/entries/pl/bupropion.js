@@ -4,7 +4,7 @@
 export default {
   "id": "bupropion",
   "name": "Bupropion",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Inhibitor wychwytu zwrotnego norepinefryny-dopaminy (NDRI), atypowy antydepresant. Wskazania: MDD, sezonowe zaburzenia afektywne, rzucenie palenia (Zyban). Bez dysfunkcji seksualnych, minimalnie sedujący.",

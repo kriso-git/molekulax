@@ -12,7 +12,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "testosterone-info",
     "name": "Testosterone",
-    "image": null,
+    "image": "/performance/oil-vial-yellow.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -26,7 +26,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "trenbolone-info",
     "name": "Trenbolone",
-    "image": null,
+    "image": "/performance/oil-vial-orange.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -40,7 +40,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "anavar-info",
     "name": "Anavar (Oxandrolone)",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -54,7 +54,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "superdrol",
     "name": "Superdrol",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -69,7 +69,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "ephedrine",
     "name": "Ephedrine",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.18)",
     "shortDesc": {
@@ -83,7 +83,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "yohimbine",
     "name": "Yohimbine",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.18)",
     "shortDesc": {
@@ -97,7 +97,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "clenbuterol",
     "name": "Clenbuterol",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#06b6d4",
     "tagColor": "rgba(6,182,212,0.18)",
     "shortDesc": {
@@ -111,7 +111,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "albuterol",
     "name": "Albuterol",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#06b6d4",
     "tagColor": "rgba(6,182,212,0.18)",
     "shortDesc": {
@@ -125,7 +125,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "winstrol-info",
     "name": "Winstrol",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -139,7 +139,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "nandrolone-info",
     "name": "Nandrolone",
-    "image": null,
+    "image": "/performance/oil-vial-yellow.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -153,7 +153,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "dianabol-info",
     "name": "Dianabol",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -167,7 +167,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "methylstenbolone",
     "name": "Methylstenbolone",
-    "image": null,
+    "image": "/performance/tablet-pile-white.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -181,7 +181,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "hgh-info",
     "name": "HGH",
-    "image": null,
+    "image": "/performance/water-vial.png",
     "accentColor": "#10b981",
     "tagColor": "rgba(16,185,129,0.18)",
     "shortDesc": {
@@ -195,7 +195,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "epo-info",
     "name": "EPO",
-    "image": null,
+    "image": "/performance/water-vial.png",
     "accentColor": "#ef4444",
     "tagColor": "rgba(239,68,68,0.18)",
     "shortDesc": {
@@ -209,7 +209,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "dnp-info",
     "name": "DNP",
-    "image": null,
+    "image": "/performance/tablet-pile-yellow.png",
     "accentColor": "#ef4444",
     "tagColor": "rgba(239,68,68,0.18)",
     "shortDesc": {

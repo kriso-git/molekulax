@@ -4,7 +4,7 @@
 export default {
   "id": "trenbolone-info",
   "name": "Trenbolone",
-  "image": null,
+  "image": "/performance/oil-vial-orange.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Erős 19-nortestosterone-származék, 5x androgén aktivitás vs. testosterone. Vesére, vérnyomásra és prolaktinra agresszív, soha nem volt FDA-jóváhagyott emberi gyógyszer.",

@@ -4,7 +4,7 @@
 export default {
   "id": "levothyroxin",
   "name": "Levothyroxin (L-T4)",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#f59e0b",
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Synthetic thyroxine (T4) hormone replacement for hypothyroidism. WHO Essential Medicines, one of the most prescribed drugs globally. ATA and ETA endocrine guideline anchor.",

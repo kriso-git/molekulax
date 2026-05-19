@@ -4,7 +4,7 @@
 export default {
   "id": "anavar-info",
   "name": "Anavar (Oxandrolone)",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Oxandrolone, FDA-jóváhagyott orális AAS égési sérülésekre és HIV-cachexia kezelésére. Enyhén hepatotoxikus 17α-alkilált, gyakran \"női-barát\" szteroidnak nevezik.",

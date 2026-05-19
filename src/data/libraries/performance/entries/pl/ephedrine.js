@@ -4,7 +4,7 @@
 export default {
   "id": "ephedrine",
   "name": "Ephedrine",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Sympatomimetyczny alkaloid (Ephedra sinica), klasyczny termogenik i bronchodilator. Zakazany przez WADA w sporcie wyczynowym.",

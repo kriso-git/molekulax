@@ -4,7 +4,7 @@
 export default {
   "id": "isotretinoin",
   "name": "Isotretinoin",
-  "image": null,
+  "image": "/pharmaceutical/softgel-orange.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Kwas 13-cis-retinowy (Roche Roaccutane). Złoty standard dla ciężkiego trądziku guzkowo-torbielowatego. Kategoria X FDA z powodu teratogenności — program iPLEDGE obowiązkowy.",

@@ -4,7 +4,7 @@
 export default {
   "id": "tretinoin",
   "name": "Tretinoin",
-  "image": null,
+  "image": "/pharmaceutical/cream-tube-white.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Topikális retinoid all-transz-retinoinsav. Acne, fotoöregedés, hiperpigmentáció kezelés. Bőrgyógyászati gold-standard.",

@@ -4,7 +4,7 @@
 export default {
   "id": "tamoxifen",
   "name": "Tamoxifen",
-  "image": null,
+  "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#ec4899",
   "tagColor": "rgba(236,72,153,0.18)",
   "shortDesc": "Selektywny modulator receptora estrogenowego (SERM). Leczenie uzupełniające i przerzutowe HR-dodatniego raka piersi (Nolvadex).",

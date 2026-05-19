@@ -4,7 +4,7 @@
 export default {
   "id": "anavar-info",
   "name": "Anavar (Oxandrolone)",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Oxandrolone, FDA-approved oral AAS for burn injury and HIV cachexia. Mildly hepatotoxic 17α-alkylated, often called a female-friendly steroid.",

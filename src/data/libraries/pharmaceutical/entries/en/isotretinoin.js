@@ -4,7 +4,7 @@
 export default {
   "id": "isotretinoin",
   "name": "Isotretinoin",
-  "image": null,
+  "image": "/pharmaceutical/softgel-orange.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "13-cis-retinoic acid (Roche Roaccutane). Gold standard for severe nodulocystic acne. FDA category X due to severe teratogenicity — iPLEDGE program mandatory.",

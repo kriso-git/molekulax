@@ -4,7 +4,7 @@
 export default {
   "id": "hgh-info",
   "name": "HGH",
-  "image": null,
+  "image": "/performance/water-vial.png",
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "Rekombináns humán növekedési hormon (rhGH, Somatropin). Exogén GH-pótlás, sport-doppingként WADA-tiltott.",

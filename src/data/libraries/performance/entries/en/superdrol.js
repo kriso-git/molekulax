@@ -77,7 +77,7 @@ export default {
     {
       "routeId": "oral",
       "routeLabel": "Oral (tablet)",
-      "image": "/performance/superdrol-oral.png",
+      "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: Schedule III controlled substance (DASCA 2012). EU: controlled anabolic steroid, illegal without prescription, not marketable in HU/PL. WADA: banned in competitive sport.",
       "bioavailability": "~50% (oral, 17α-methyl group is first-pass resistant; FDA 2010 DESI review extrapolated from the c17-AA class reference data)",
       "onsetTime": "7–14 days (muscle mass)",
@@ -102,7 +102,7 @@ export default {
     {
       "routeId": "injectable",
       "routeLabel": "Intramuscular (injection)",
-      "image": "/performance/superdrol-injectable.png",
+      "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Not a licensed format — exclusively UGL (underground lab) underground market. Illegal everywhere to manufacture, possess, or use. WADA: banned.",
       "bioavailability": "~95–100% (IM injection bypasses first-pass; methyldrostanolone dissolved in oil with slow depot release)",
       "onsetTime": "10–21 days (slower ramp than oral, depot kinetics)",

@@ -4,7 +4,7 @@
 export default {
   "id": "epo-info",
   "name": "EPO",
-  "image": null,
+  "image": "/performance/water-vial.png",
   "accentColor": "#ef4444",
   "tagColor": "rgba(239,68,68,0.18)",
   "shortDesc": "Rekombinowana ludzka erytropoetyna (rhEPO). Stymuluje produkcję erytrocytów, zakazana przez WADA.",

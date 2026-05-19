@@ -4,7 +4,7 @@
 export default {
   "id": "winstrol-info",
   "name": "Winstrol",
-  "image": null,
+  "image": "/performance/tablet-pile-white.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Stanozolol, 17α-alkylated DHT derivative. Classic \"cutting\" AAS, SHBG suppressor.",
