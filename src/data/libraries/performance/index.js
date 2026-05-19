@@ -196,6 +196,7 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 4,
     "wadaStatus": "banned",
+    "variantCount": 2,
     "subCategory": "test",
     "subSection": "17a-alkyl",
     "formFactors": ["oral", "oil"]
@@ -302,6 +303,109 @@ export const LIBRARY_ENTRY_META = [
     "wadaStatus": "banned",
     "subCategory": "dht",
     "subSection": "klasszikus",
+    "formFactors": ["oil"]
+  },
+  {
+    "id": "halotestin",
+    "name": "Halotestin (Fluoxymesterone)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#dc2626",
+    "tagColor": "rgba(220,38,38,0.18)",
+    "shortDesc": {
+      "hu": "Fluoxymesterone, 9α-fluoro-17α-metil-T orális AAS. AAS-ek közül a legmagasabb androgén-aktivitás. Boksz/powerlifting pre-competition strength-amplifier MINIMÁLIS izomtömeg-építéssel.",
+      "en": "Fluoxymesterone, 9α-fluoro-17α-methyl-T oral AAS. Highest androgenic activity among AAS. Boxing/powerlifting pre-competition strength-amplifier with MINIMAL muscle building.",
+      "pl": "Fluoxymesterone, doustny AAS 9α-fluoro-17α-metylo-T. Najwyższa aktywność androgenna wśród AAS. Boks/powerlifting pre-competition strength-amplifier z MINIMALNYM budowaniem masy."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "test",
+    "subSection": "17a-alkyl",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "turinabol",
+    "name": "Turinabol (4-Chlorodehydromethyltestosterone)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#dc2626",
+    "tagColor": "rgba(220,38,38,0.18)",
+    "shortDesc": {
+      "hu": "Oral-Turinabol (CDMT), Jenapharm 1962. Hírhedten az NDK állami dopping-program (\"Komplex 08\", 1968-1989) fő szere. Hosszú-távú detection-metabolitok 12-18 hónap.",
+      "en": "Oral-Turinabol (CDMT), Jenapharm 1962. Infamous main agent of the GDR state doping program (\"Komplex 08\", 1968-1989). Long-term detection metabolites 12-18 months.",
+      "pl": "Oral-Turinabol (CDMT), Jenapharm 1962. Niesławny główny środek programu dopingowego NRD (\"Komplex 08\", 1968-1989). Długoterminowe metabolity detekcyjne 12-18 miesięcy."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "test",
+    "subSection": "17a-alkyl",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "methyltestosterone",
+    "name": "Methyltestosterone",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#dc2626",
+    "tagColor": "rgba(220,38,38,0.18)",
+    "shortDesc": {
+      "hu": "17α-metil-testosterone, az ELSŐ szintetizált orális AAS (Ruzicka 1935). FDA Rx (Android, Methitest). Bodybuilding-ben elavult, modern alternatívák (Anavar/Dianabol) preferáltak.",
+      "en": "17α-methyl-testosterone, the FIRST synthesized oral AAS (Ruzicka 1935). FDA Rx (Android, Methitest). Obsolete in bodybuilding, modern alternatives (Anavar/Dianabol) preferred.",
+      "pl": "17α-metylo-testosteron, PIERWSZY zsyntetyzowany doustny AAS (Ruzicka 1935). FDA Rx (Android, Methitest). Przestarzały w kulturystyce, nowoczesne alternatywy (Anavar/Dianabol) preferowane."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "test",
+    "subSection": "17a-alkyl",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "equipoise",
+    "name": "Equipoise (Boldenone Undecylenate)",
+    "image": "/performance/oil-vial-orange.png",
+    "accentColor": "#dc2626",
+    "tagColor": "rgba(220,38,38,0.18)",
+    "shortDesc": {
+      "hu": "Boldenone Undecylenate, veterinary-only injektábilis AAS (Fort Dodge 1972-2008). Lassú, stabil lean gains; aromatizál fél-Test arányban. \"Étvágy-stimuláns\" reputation.",
+      "en": "Boldenone Undecylenate, veterinary-only injectable AAS (Fort Dodge 1972-2008). Slow, stable lean gains; aromatizes at half-Test rate. \"Appetite-stimulant\" reputation.",
+      "pl": "Boldenone Undecylenat, iniekcyjny AAS tylko-weterynaryjny (Fort Dodge 1972-2008). Wolne, stabilne lean gains; aromatyzuje we wskaźniku połowy Test. Reputacja \"stymulanta apetytu\"."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "test",
+    "subSection": "inj",
+    "formFactors": ["oil"]
+  },
+  {
+    "id": "thg",
+    "name": "THG (Tetrahydrogestrinone)",
+    "image": "/performance/oil-vial-orange.png",
+    "accentColor": "#a78bfa",
+    "tagColor": "rgba(167,139,250,0.18)",
+    "shortDesc": {
+      "hu": "BALCO designer-AAS (\"The Clear\"), 2003-ban Catlin felfedezte. Marion Jones, Tim Montgomery, Barry Bonds szkandallum. Ma USA Schedule III, sosem volt Rx.",
+      "en": "BALCO designer AAS (\"The Clear\"), discovered by Catlin in 2003. Marion Jones, Tim Montgomery, Barry Bonds scandal. Today USA Schedule III, never an Rx.",
+      "pl": "BALCO designer AAS (\"The Clear\"), odkryty przez Catlina w 2003. Skandal Marion Jones, Tim Montgomery, Barry Bonds. Dziś USA Schedule III, nigdy nie był Rx."
+    },
+    "tier": 2,
+    "wadaStatus": "banned",
+    "subCategory": "test",
+    "subSection": "inj",
+    "formFactors": ["oil"]
+  },
+  {
+    "id": "ment-test",
+    "name": "MENT (Trestolone) — szintetikus androgén frame",
+    "image": "/performance/oil-vial-yellow.png",
+    "accentColor": "#1D9E75",
+    "tagColor": "rgba(29,158,117,0.18)",
+    "shortDesc": {
+      "hu": "Trestolone (7α-metil-19-nortestosterone), Population Council férfi-fogamzásgátló-jelölt. ~8-10x AR-affinitás vs T. Cross-framed: szintetikus androgén frame (Test-oszlop).",
+      "en": "Trestolone (7α-methyl-19-nortestosterone), Population Council male contraceptive candidate. ~8-10x AR affinity vs T. Cross-framed: synthetic androgen frame (Test column).",
+      "pl": "Trestolon (7α-metylo-19-nortestosteron), kandydat antykoncepcji męskiej Population Council. ~8-10x powinowactwo AR vs T. Cross-framed: frame syntetycznego androgenu (kolumna Test)."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "variantCount": 2,
+    "subCategory": "test",
+    "subSection": "synth",
     "formFactors": ["oil"]
   },
   {

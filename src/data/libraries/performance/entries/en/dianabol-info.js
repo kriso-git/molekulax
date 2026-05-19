@@ -100,5 +100,93 @@ export default {
       "purpose": "Verify HPTA + hepatic recovery."
     },
     "cruise": null
-  }
+  },
+  "variants": [
+    {
+      "routeId": "oral",
+      "routeLabel": "Methandrostenolone oral (tablet)",
+      "image": "/performance/tablet-pile-white.png",
+      "legalStatus": "USA: FDA Rx (Ciba 1958, discontinued 1983); Schedule III. EU: UGL market dominant, illegal without prescription. WADA-banned.",
+      "bioavailability": "~80% (oral, 17α-methyl first-pass-resistant)",
+      "onsetTime": "1-2 h (oral, fast absorption)",
+      "halfLife": "5 hours (oral, parent compound)",
+      "halfLifeActive": "5 h",
+      "detectionWindow": "3-6 weeks urinary (parent + Schänzer 2006 6β-OH-methandienone long-term metabolites).",
+      "aromatization": "Yes — CYP19 substrate, clinically strong E2 conversion (Pope-Kanayama 2014).",
+      "hepatotoxicity": "High — 17α-methyl hepatic first-pass stress, ALT/AST 3-5x rise common at 4+ week cycle.",
+      "quality": {
+        "pure": [
+          "Clear white scored tablet (5 mg or 10 mg classic UGL dosing)",
+          "Original Ciba Dianabol tablet (1958-1983, today collectible)"
+        ],
+        "caution": [
+          "Hepatotoxicity (ALT/AST 3-5x rise)",
+          "Water retention + gynecomastia risk (strong aromatization)",
+          "Blood pressure elevation (water retention + renal AKI)",
+          "Lipid disturbance dramatic: HDL up to 50% drop"
+        ],
+        "avoid": [
+          "Any existing liver disorder absolute contraindication",
+          "Concurrent alcohol, NSAID, paracetamol strictly prohibited",
+          "More than 6 weeks continuous cycle",
+          "Female use (virilization)"
+        ]
+      },
+      "interactions": [
+        "Anastrozole 0.5 mg EOD or E3D: E2 control mandatory",
+        "Nolvadex (SERM) 20 mg/day on standby for gyno prevention",
+        "TUDCA 1000 mg/day + NAC 1800 mg/day mandatory",
+        "PCT (Clomid + Nolvadex 4 weeks) last tablet +1-2 days"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 20, "medium": 30, "high": 50},
+        "unit": "mg/day (oral, 2-3x split)",
+        "note": "Max 6 weeks cycle. 20-50 mg/day, 2-3x split (5h half-life). TUDCA + NAC mandatory. PCT 4 weeks."
+      }
+    },
+    {
+      "routeId": "oil",
+      "routeLabel": "Methandrostenolone in-oil (IM, UGL)",
+      "image": "/performance/oil-vial-yellow.png",
+      "legalStatus": "Not a licensed format — exclusively UGL underground market. Illegal everywhere. WADA-banned.",
+      "bioavailability": "~95-100% (IM bypasses first-pass; methandrostenolone suspended in oil with slow depot absorption)",
+      "onsetTime": "12-24 h (IM, depot kinetics)",
+      "halfLife": "1-2 days (in-oil suspension; non-esterified methandrostenolone)",
+      "halfLifeActive": "1-2 days",
+      "detectionWindow": "4-6 weeks urinary (longer than oral due to depot absorption).",
+      "aromatization": "Yes — structurally same as oral; aromatization level identical.",
+      "hepatotoxicity": "Moderate — not zero due to 17α-methyl group, but avoiding first-pass reduces peak hepatic concentration. Profile similar to Superdrol injectable (Pope-Kanayama 2014 c17-AA injectable class extrapolated data).",
+      "quality": {
+        "pure": [
+          "Clear yellowish oil, 10ml vial, sterile filtered, 50-75 mg/ml UGL concentration",
+          "UGL HPLC-tested source MANDATORY"
+        ],
+        "caution": [
+          "PIP (injection site pain) common, methandrostenolone-in-oil notoriously painful",
+          "Lipid disturbance dramatic: HDL drop same as oral",
+          "Water retention + gynecomastia risk (aromatization unchanged)",
+          "Hepatotoxicity reduced BUT not zero"
+        ],
+        "avoid": [
+          "Strong injection-site sensitivity",
+          "Any liver disorder (moderate hepatotoxicity)",
+          "Aseptic injection technique lacking (abscess risk)",
+          "More than 8 weeks cycle"
+        ]
+      },
+      "interactions": [
+        "Anastrozole 0.5 mg E3D: E2 control",
+        "TUDCA 500 mg/day recommended (due to moderate hepatotoxicity)",
+        "PCT starts last injection +5-7 days"
+      ],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 50, "medium": 100, "high": 150},
+        "unit": "mg/week (IM, split 2-3x)",
+        "note": "Max 8 weeks cycle. 50-150 mg/week, 2-3x split (short half-life despite depot). TUDCA recommended. PCT 4 weeks last injection +5-7 days."
+      }
+    }
+  ],
+  "defaultVariant": "oral"
 }
