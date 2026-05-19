@@ -409,6 +409,92 @@ export const LIBRARY_ENTRY_META = [
     "formFactors": ["oil"]
   },
   {
+    "id": "ment-19nor",
+    "name": "MENT (Trestolone) — 19-Nor progestin frame",
+    "image": "/performance/oil-vial-yellow.png",
+    "accentColor": "#D85A30",
+    "tagColor": "rgba(216,90,48,0.18)",
+    "shortDesc": {
+      "hu": "Trestolone 19-Nor framework progesztogén-emphasis: közepes PR-affinitás → spermatogenezis-szuppresszió + bodybuilding prolaktin-monitor. Cross-framed: ment-test szintetikus androgén külön entry.",
+      "en": "Trestolone 19-Nor framework progestogen emphasis: moderate PR affinity → spermatogenesis suppression + bodybuilding prolactin monitoring. Cross-framed: ment-test synthetic androgen separate entry.",
+      "pl": "Trestolon w ramie 19-Nor progestagen: umiarkowane powinowactwo PR → supresja spermatogenezy + monitor prolaktyny w kulturystyce. Cross-framed: ment-test syntetyczny androgen osobny wpis."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "variantCount": 2,
+    "subCategory": "19nor",
+    "subSection": "progestin",
+    "formFactors": ["oil"]
+  },
+  {
+    "id": "gestrinone",
+    "name": "Gestrinone (Dimetrose, Nemestran)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#D85A30",
+    "tagColor": "rgba(216,90,48,0.18)",
+    "shortDesc": {
+      "hu": "13β-etil-17α-etinil-19-nor-trien származék. Roussel-Uclaf 1986 endometriózis-Rx (Dimetrose/Nemestran). Anti-progesztin/progesztin mixed + gyenge androgén. Bodybuilding-kontextusban ritka, UGL néha SARM-szerűként marketingelt.",
+      "en": "13β-ethyl-17α-ethynyl-19-nor-triene derivative. Roussel-Uclaf 1986 endometriosis Rx (Dimetrose/Nemestran). Anti-progestin/progestin mixed + weak androgen. Rare in bodybuilding context, UGL sometimes markets as SARM-like.",
+      "pl": "Pochodna 13β-etylo-17α-etynylo-19-nor-trienu. Roussel-Uclaf 1986 Rx endometriozy (Dimetrose/Nemestran). Anti-progestin/progestin mixed + słaby androgen. Rzadki w kulturystyce, UGL czasem marketinguje jako SARM-podobny."
+    },
+    "tier": 2,
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "progestin",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "rad-140",
+    "name": "RAD-140 (Testolone)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#9333ea",
+    "tagColor": "rgba(147,51,234,0.18)",
+    "shortDesc": {
+      "hu": "Non-szteroidal SARM, Radius Health 2010. Phase II breast cancer + cachexia trial. Erős izomtömeg-építő AR-szelektivitással, DE 2017-2020 6+ hepatotoxicitás-esetjelentés (Hilal 2020). WADA tiltott.",
+      "en": "Non-steroidal SARM, Radius Health 2010. Phase II breast cancer + cachexia trial. Strong muscle-builder with AR selectivity, BUT 2017-2020 6+ hepatotoxicity case reports (Hilal 2020). WADA-banned.",
+      "pl": "Niesterydowy SARM, Radius Health 2010. Faza II badanie raka piersi + kacheksji. Silny budowniczy mięśni z selektywnością AR, ALE 2017-2020 6+ raportów hepatotoksyczności (Hilal 2020). Zakazany WADA."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "sarms",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "lgd-4033",
+    "name": "LGD-4033 (Ligandrol)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#9333ea",
+    "tagColor": "rgba(147,51,234,0.18)",
+    "shortDesc": {
+      "hu": "Non-szteroidal SARM, Ligand Pharma 2007. Phase I egészséges férfi-alanyokban (Basaria 2013) — 1,21 kg lean mass @ 1 mg/nap. Második leghíresebb SARM. 12+ DILI esetjelentés (Vilaca 2018). WADA tiltott.",
+      "en": "Non-steroidal SARM, Ligand Pharma 2007. Phase I in healthy male subjects (Basaria 2013) — 1.21 kg lean mass @ 1 mg/day. Second most famous SARM. 12+ DILI case reports (Vilaca 2018). WADA-banned.",
+      "pl": "Niesterydowy SARM, Ligand Pharma 2007. Faza I u zdrowych męskich badanych (Basaria 2013) — 1,21 kg lean mass @ 1 mg/dzień. Drugi najsłynniejszy SARM. 12+ raportów DILI (Vilaca 2018). Zakazany WADA."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "sarms",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "ostarine",
+    "name": "MK-2866 (Ostarine, Enobosarm)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#9333ea",
+    "tagColor": "rgba(147,51,234,0.18)",
+    "shortDesc": {
+      "hu": "Non-szteroidal SARM (Enobosarm), GTx 2007. Legtöbb klinikai trial-adatú SARM: Phase II cachexia (Dalton 2011, 159 páciens) + Phase III POWER. Legnépszerűbb SARM, 'lágy első-SARM' UGL-marketing. WADA tiltott.",
+      "en": "Non-steroidal SARM (Enobosarm), GTx 2007. Most clinical trial data SARM: Phase II cachexia (Dalton 2011, 159 patients) + Phase III POWER. Most popular SARM, 'soft first-SARM' UGL marketing. WADA-banned.",
+      "pl": "Niesterydowy SARM (Enobosarm), GTx 2007. SARM z największą ilością danych klinicznych: Faza II cachexia (Dalton 2011, 159 pacjentów) + Faza III POWER. Najpopularniejszy SARM, 'łagodny pierwszy SARM' marketing UGL. Zakazany WADA."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "19nor",
+    "subSection": "sarms",
+    "formFactors": ["oral"]
+  },
+  {
     "id": "hgh-info",
     "name": "HGH",
     "image": "/performance/water-vial.png",

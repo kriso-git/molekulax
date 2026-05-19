@@ -1,0 +1,180 @@
+// MENT (Trestolone) — 19-Nor progestin frame, cross-framed entry of ment-test.
+// Same chemistry (7α-methyl-19-nortestosterone), framing shifts to progestogenic
+// activity, PR-affinity, contraceptive history. Sources: Sundaram 1995
+// PMID 7657009, Anderson 1999 PMID 10024455, Kumar 1995 PMID 7779238,
+// Cook 1996 PMID 8839946 (PR-binding), Pope-Kanayama 2014 PMID 24423981.
+
+export default {
+  "id": "ment-19nor",
+  "name": "MENT (Trestolone) — 19-Nor progestin frame",
+  "image": "/performance/oil-vial-yellow.png",
+  "accentColor": "#D85A30",
+  "tagColor": "rgba(216,90,48,0.18)",
+  "shortDesc": "Trestolone (7α-metil-19-nortestosterone, MENT) Population Council férfi-fogamzásgátló-jelölt. 19-Nor framework progesztogén-emphasis: közepes PR-affinitás → spermatogenezis-szuppresszió + bodybuilding-kontextusban prolaktin-monitor-igény. Cross-framed: szintetikus androgén frame [[ment-test]] külön entry-vel.",
+  "description": "A MENT (Trestolone, 7α-metil-19-nortestosterone) klasszifikálható szintetikus androgénként ÉS 19-nortestosterone-származékként is — ez a entry a 19-Nor (Nandrolone-család) framework-kel keretezi: a 19-szénatomi metilcsoport eltávolítása nem-trivális PROGESZTOGÉN AKTIVITÁS-T ad a molekulához (közepes PR-binding-affinitás, Cook 1996 PMID 8839946), ami a Population Council-i férfi-fogamzásgátló-fejlesztés (1999-2005, Anderson 1999 PMID 10024455) elsődleges hatásmechanizmusa volt: a HPG-tengely progeszteron-mediated negative-feedback szuppressziója → tartós azoospermia/oligospermia 90%+ klinikai trial-résztvevőben. A 7α-metil-szubsztitúció gátolja az 5α-reduktáz-substrate-binding-et (NEM DHT-konvertál) ÉS növeli az AR-affinitást (~8-10x Test, Sundaram 1995 PMID 7657009), de a 19-Nor framework perspektívájában a PR-aktivitás a releváns markant — ez magyarázza a klinikai trial-okban dokumentált emelkedett prolaktin-szinteket és a contraceptive-effekt magas hatékonyságát. Bodybuilding-kontextusban a PR-aktivitás központi szerepet játszik a mellékhatás-profilban: prolaktin-monitor kötelező, cabergoline-készenlét standard. Aromatizáció gyengébb mint Test-en (7α-metilestradiol alacsonyabb ER-affinitású). NEM 17α-alkilált → alacsony hepatotoxicitás. Két variant: Acetát (rövid, ~8h) és Enantát (lassú, ~5-7 nap). WADA tiltott egész évben. Cross-framed entry: szintetikus androgén perspektíva [[ment-test]] külön entry-vel (Test-oszlop), ugyanaz a molekula eltérő emphasis-szel.",
+  "keyInfo": [
+    {"label": "Hatásmechanizmus", "value": "19-nor-T származék közepes PR-affinitással + AR-agonista (8-10x T); progesztogén-mediated HPG-szuppresszió"},
+    {"label": "PR-affinitás (Cook 1996)", "value": "Közepes — kvázi-progeszteron-receptor-agonista, contraceptive-jelentőség"},
+    {"label": "Anabolikus:Androgén", "value": "~2300:650 (extrapolált in vitro AR-binding)"},
+    {"label": "Felezési idő", "value": "~8 h (Ac), 5-7 d (Enan)"},
+    {"label": "Jogi státusz", "value": "Soha nem volt Rx (Population Council Phase III leállt). UGL only. WADA tiltott."}
+  ],
+  "mechanism": "A 19-Nor framework-perspektíva: a 19-szénatomi metilcsoport eltávolítása (vs Test) PROGESZTOGÉN AKTIVITÁS-T eredményez (közepes PR-binding-affinitás, Cook 1996 PMID 8839946 in vitro), ami a Nandrolone-családra (Deca, NPP, Trenbolone, Gestrinone) szintén jellemző. MENT esetén ez a PR-aktivitás a Population Council férfi-fogamzásgátló-fejlesztés központi hatásmechanizmusa: PR-mediated negative-feedback a HPG-tengelyen → LH/FSH-szuppresszió → tartós azoospermia. Klinikai trial-okban (Anderson 1999 PMID 10024455) 4-hetes szublinguális implantátum 8 mg/nap-pal 90%+ spermatogenezis-szuppressziót okozott férfi alanyokban. A 7α-metilcsoport KÉT további struktúrális hozadékot ad: (1) gátolja az 5α-reduktáz-substrate-binding-et (NEM DHT-konvertál → alacsonyabb scalp-DHT/prosztata-AR-aktivitás); (2) stabilizálja a molekulát a 17β-HSD-mediated oxidatív lebontás ellen. Aromatizál CYP19-en át 7α-metilestradiollá (kb. 50%-ra a Test-szintű E2-konverziónál, alacsonyabb ER-affinitású metabolit). Bodybuilding-kontextusban a PR-aktivitás a domináns klinikai mellékhatás-driver: prolaktin-emelkedés gyakori → gynecomastia-rizikó (paradox, mert aromatizáció enyhe).",
+  "legalStatus": "Soha nem volt Rx (Population Council férfi-fogamzásgátló-fejlesztés financial-leállás miatt megrekedt 2005-ben). USA: Schedule III analógia (DEA, designer-AAS classification). EU/HU/PL: kontrollált AAS analóg, vény nélkül illegális. WADA tiltott egész évben (S1.1.a).",
+  "onsetTime": "12-24 h (Ac IM), 48-72 h (Enan IM)",
+  "halfLife": "~8 h (Ac), 5-7 d (Enan)",
+  "halfLifeActive": "~8 h szabad Trestolone (Ac után), depot ~24 h (Enan után)",
+  "interactionsWith": ["cabergoline", "nandrolone-info", "trenbolone-info", "ment-test"],
+  "aromatization": "Igen — CYP19 szubsztrát, metabolit 7α-metilestradiol (alacsonyabb ER-affinitás mint sima E2); klinikailag E2-emelkedés mérsékelt-alacsony (Sundaram 1995 PMID 7657009)",
+  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; IM bypass-olja a first-pass-t. ALT/AST <2x normál MENT-only ciklusnál (Hartgens-Kuipers 2004 PMID 15233599)",
+  "wadaStatus": "banned",
+  "androgenicRatio": "~2300:650 (extrapolált in vitro AR-binding-affinity szerint, NEM klasszikus rat-ventral-prostate assay)",
+  "bindingAffinity": "Extrém magas AR-affinitás (~8-10x testosterone in vitro, Sundaram 1995 PMID 7657009) + közepes PR-aktivitás (Cook 1996 PMID 8839946 — releváns 19-Nor framework-emphasis).",
+  "detectionWindow": "Trestolone-metabolitok (7α-metil-19-nor-androsztén metabolitcsalád) vizeletből: Ac 2-3 hét, Enan 6-8 hét. WADA-akkreditált LC-MS/MS.",
+  "benefits": [
+    "Erős progesztogén-mediated HPG-szuppresszió (klinikai trial-okban 90%+ azoospermia 4 hét alatt)",
+    "Extrém magas AR-affinitás → drasztikus izomtömeg- és erő-gyarapodás kis dózisnál (50-100 mg/hét ekvivalens 500+ mg Test-tel)",
+    "NEM 5α-reduktáz substrate → alacsonyabb scalp-DHT és prosztata-androgén-aktivitás mint Test-en",
+    "Aromatizáció enyhébb mint Test-en (7α-metilestradiol alacsonyabb ER-affinitású)",
+    "Alacsony hepatotoxicitás (NEM 17α-alkilált)"
+  ],
+  "quickStart": [
+    "PR-aktivitás (19-Nor framework jellemzője) → prolaktin-monitor + cabergoline-készenlét KÖTELEZŐ az első laborig",
+    "EXTRÉM POTENS — dózisok jelentősen alacsonyabbak mint Test-en (50-100 mg/hét MENT ekvivalens 500-1000 mg Test-tel)",
+    "Aromatizáció gyengébb mint Test-en, DE NEM nulla → AI E2-igényesetén",
+    "PCT (Clomid + Nolvadex 4-6 hét) kötelező",
+    "Cross-framed entry: ez a 19-Nor progestin frame; a szintetikus androgén frame [[ment-test]] külön entry"
+  ],
+  "expectations": [
+    {"label": "Első hét", "body": "Ac IM-injekció után 12-24 h onset, akut erő-növekedés 5-7 nap után. Enan IM 48-72 h onset, steady-state 3-4 hét."},
+    {"label": "3-4. hét", "body": "Drasztikus izomtömeg-gyarapodás + erős HPG-szuppresszió (LH/FSH csaknem nulla — PR-mediated). Prolaktin-emelkedés várható (PR-aktivitás), cabergoline-igény gyakori. Spermatogenezis 90%+ szuppresszió 4 hét alatt (Population Council-trial precedens)."},
+    {"label": "8-10. hét vége", "body": "Maximum effekt, lipid panel HDL csökkenés mérsékelt-magas, prolaktin-monitor kritikus, PCT-tervezés."}
+  ],
+  "quality": {
+    "pure": [
+      "UGL Trestolone Acetate 50-100 mg/ml olajos fiola, sterilen szűrt (a leggyakoribb UGL formátum)",
+      "UGL Trestolone Enanthate 100-200 mg/ml olajos fiola (kevésbé elérhető mint Ac)",
+      "HPLC-tesztelt forrás KÖTELEZŐ — MENT gyakran hamisított vagy alulkoncentrált (high-cost raw material)"
+    ],
+    "caution": [
+      "Prolaktin-emelkedés gyakori (PR-aktivitás — 19-Nor framework key feature) → gynecomastia-rizikó paradox, mert aromatizáció enyhe",
+      "Spermatogenezis-szuppresszió gyors és mély (4 hét alatt 90%+, Anderson 1999 PMID 10024455) — fertility recovery 6-12 hónap PCT után",
+      "Lipid-zavar: HDL csökkenés mérsékelt-magas",
+      "PIP (injection site pain) Ac variantnál erősebb mint Enan-nál",
+      "Hangulat-változás (PR-aktivitás-driven depresszív epizódok ritka esetjelentések)"
+    ],
+    "avoid": [
+      "Bármilyen meglévő prolaktinóma vagy hyperprolaktinaemia ABSZOLÚT kontraindikáció",
+      "Pszichiátriai prediszpozíció (depresszió, anxiety)",
+      "Tervezett apaság közeli időhorizonton (HPTA + spermatogenezis recovery 6-12 hónap)",
+      "Női felhasználás (extrém androgén-aktivitás → gyors irreverzibilis virilizáció)",
+      "Kardiovaszkuláris kockázat"
+    ]
+  },
+  "interactions": [
+    "Cabergoline 0,25-0,5 mg E3D: prolaktin-monitor + szükség esetén kezelés (PR-aktivitás miatt KÖTELEZŐ készenlét)",
+    "Más 19-Nor stack (Nandrolone, Trenbolone): NEM ajánlott — kumulatív PR-aktivitás, prolaktin-extrém-rizikó",
+    "Anastrozole 0,25 mg E3D: csak labor-igazolt magas E2 esetén",
+    "Warfarin: antikoaguláns hatás fokozódhat"
+  ],
+  "studies": [
+    {"title": "7 alpha-methyl-19-nortestosterone (MENT): the optimal androgen for male contraception", "authors": "Sundaram K, Kumar N, Bardin CW.", "journal": "Ann Med. 1993;25(2):199-205. (and 1995 follow-up PMID 7657009)", "pmid": "7657009"},
+    {"title": "7α-methyl-19-nortestosterone maintains sexual behavior and mood in hypogonadal men", "authors": "Anderson RA, Wallace AM, Sattar N, Kumar N, Sundaram K.", "journal": "J Clin Endocrinol Metab. 1999;84(10):3556-62.", "pmid": "10024455"},
+    {"title": "Antifertility activity and pharmacokinetics of MENT acetate", "authors": "Kumar N, Suvisaari J, Tsong YY, Lähteenmäki P, Bardin CW, Sundaram K.", "journal": "Steroids. 1995;60(4):305-9.", "pmid": "7779238"},
+    {"title": "7α-methyl-19-nortestosterone binding to androgen and progesterone receptors", "authors": "Cook CE, Kepler JA, Lee DY, Reel JR.", "journal": "Steroids. 1996;61(11):667-71.", "pmid": "8839946"},
+    {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"}
+  ],
+  "faq": [
+    {"q": "Miért 19-Nor framework-ban szerepel ha 7α-metil-szubsztitúció van rajta?", "a": "A MENT (7α-metil-19-nortestosterone) STRUKTURÁLISAN tartalmazza a 19-Nor-karakter (19-szénatomi metil eltávolítása vs Test) ÉS a 7α-metil-szubsztitúciót. Kémiai-osztály-besorolásban a 19-Nor a meghatározó keret-elem — ez adja a progesztogén-aktivitást, ami a Population Council férfi-fogamzásgátló-fejlesztés központi hatásmechanizmusa volt (Anderson 1999 PMID 10024455). A 7α-metil-szubsztitúció \"plus-feature\" a 19-Nor alaphoz: gátolja az 5α-reduktázt + növeli az AR-affinitást. Ezért a library kétféle keretezéssel mutatja be: itt 19-Nor progesztin frame (Cook 1996 PMID 8839946 PR-binding), a szintetikus androgén frame [[ment-test]] külön entry-vel (Test-oszlop) az AR-binding emphasis-szel."},
+    {"q": "Mennyire mély a HPG-szuppresszió MENT-ciklusban?", "a": "Anderson 1999 PMID 10024455 klinikai trial-jában (4-hetes szublinguális 8 mg/nap implantátum) 90%+ alanyban tartós azoospermia/oligospermia jelent meg 4 hét alatt — ez jelentősen mélyebb, mint amit Test-cikluson látnánk hasonló dózis-ekvivalensnél. Ennek oka a PR-aktivitás: a progesztogén-receptor-mediated negative-feedback HPG-tengelyre RÁADÁS-szerű mechanizmus az AR-mediated feedback-hez. Bodybuilding-kontextusban ez azt jelenti, hogy a PCT (Clomid + Nolvadex 4-6 hét) NEM elegendő gyors fertility-recovery-hez — 6-12 hónap várható spermatogenezis-helyreállás MENT-ciklus után. Apaság-tervezőknek MENT abszolút NEM ajánlott."},
+    {"q": "Prolaktin-monitor protokoll MENT-ciklusban?", "a": "Pre-ciklus: prolaktin-baseline + makro-prolaktin-szűrés. 2. héttől: bi-weekly prolaktin-mérés. Cabergoline (Dostinex) 0,25 mg hétfő/csütörtök készenlétben — ha prolaktin >25 ng/mL emelkedik, vagy ha klinikai tünetek (libido-csökkenés, ED, gynecomastia-érzékenység) megjelennek, indítani. MK-2866/Nolvadex NEM helyettesíti a cabergoline-t prolaktin-ellen. Mid-cycle: prolaktin újra. Post-cycle: prolaktin-recovery monitor 8-12 hét."},
+    {"q": "MENT vs Nandrolone (Deca) — melyiket válassz 19-Nor stack-ben?", "a": "Mindkettő 19-Nor framework, de eltérő jelleg: Nandrolone (Deca/NPP) klasszikus bulking-szteroid, anabolikus:androgén ~125:37, alacsony AR-affinitás, magas progesztogén-aktivitás → vízvisszatartás + ízületi-kenés. MENT extrém magas AR-affinitás (~8-10x Test), ALACSONYABB dózis ekvivalens DRASZTIKUSABB hatás, de PR-aktivitás kombinálva potens androgén-effekt MIATT mélyebb HPG-szuppresszió + drogtolerábilitás kérdéses. Új AAS-felhasználónak Nandrolone biztonságosabb belépő (ismert klinikai profil, FDA-jóváhagyott Rx historicalan). MENT csak tapasztaltnak, és kizárólag prolaktin-monitor mellett."},
+    {"q": "Acetát vs Enantát variant — különbség a 19-Nor-context-ben?", "a": "Az ester-választás független a chemistry-class-tól: Ac (Acetát) rövid (~8h), EOD/napi IM, gyors onset, PIP gyakori; Enan (Enantát) hosszú (~5-7 nap), heti 1-2x IM, lassabb onset (steady-state 3-4 hét), kevesebb PIP. PR-aktivitás mindkettőn megegyezik. Új MENT-felhasználónak Ac ajánlott jobb dose-control + gyors leállíthatóság miatt; tapasztaltnak Enan kényelmesebb."}
+  ],
+  "related": ["ment-test", "nandrolone-info", "trenbolone-info", "testosterone-info"],
+  "doseCalc": {
+    "type": "fixed",
+    "fixed": {"low": 50, "medium": 100, "high": 150},
+    "unit": "mg/hét MENT (IM, Ac EOD vagy Enan heti 1-2x)",
+    "note": "Ekvivalens 500-1500 mg/hét Test-tel az AR-binding-affinitás alapján. Maximum 8-10 hét ciklus. Cabergoline KÖTELEZŐ készenlét (PR-aktivitás 19-Nor framework-jellemző). PCT 4-6 hét. Fertility-recovery 6-12 hónap."
+  },
+  "bloodwork": {
+    "preCycle": {
+      "label": "Ciklus előtt",
+      "timing": "2-4 héttel ciklus indítás előtt",
+      "markers": "Hormon-panel: Total T, Free T, E2, LH, FSH, SHBG, **Prolaktin (PR-aktivitás miatt kritikus 19-Nor framework-ben)**, makro-prolaktin-szűrés. Lipid panel. Hepatikus. PSA. Spermiogram (apaság-tervezőknek).",
+      "purpose": "Prolaktin-baseline + makro-prolaktin kritikus a PR-aktivitás miatt. Spermiogram baseline ha apaság-relevant."
+    },
+    "midCycle": {
+      "label": "Ciklus közben",
+      "timing": "3-4. hét",
+      "markers": "**Prolaktin (cabergoline-igény elsődleges trigger)**, E2, Total T, lipid panel, hepatikus.",
+      "purpose": "Prolaktin >25 ng/mL → cabergoline-dózisemelés. PR-aktivitás-monitor 19-Nor framework-ben kritikus."
+    },
+    "postCycle": {
+      "label": "PCT (Post-Cycle Therapy)",
+      "timing": "Utolsó dózis: Ac +2-3 nap, Enan +14-21 nap PCT-indítás",
+      "markers": "Total T, Free T, LH, FSH, E2, SHBG, **Prolaktin (recovery, 6-12 hónap)**, lipid recovery, spermiogram fertility-relevant esetben.",
+      "purpose": "HPTA + PR-axis recovery verifikálás. Spermatogenezis-helyreállás 6-12 hónap PR-aktivitás miatt."
+    },
+    "cruise": {
+      "label": "Cruise alatt (MENT-cruise NEM standard)",
+      "timing": "MENT-cruise atipikus a PR-aktivitás + magas potency miatt",
+      "markers": "N/A",
+      "purpose": "MENT kizárólag ciklikus használatra. TRT-Test cruise preferált helyette."
+    }
+  },
+  "variants": [
+    {
+      "routeId": "ac",
+      "routeLabel": "Trestolone Acetát (IM, rövid)",
+      "image": "/performance/oil-vial-yellow.png",
+      "legalStatus": "Sosem volt Rx (Population Council-trial leállt). UGL only. WADA tiltott.",
+      "bioavailability": "~95-100% (IM, gyors Ac-ester hidrolízis)",
+      "onsetTime": "12-24 h (IM, fast-acting Ac)",
+      "halfLife": "~8 h (parent Trestolone Ac után)",
+      "halfLifeActive": "~8 h",
+      "detectionWindow": "2-3 hét vizelet (rövid ester).",
+      "aromatization": "Igen — CYP19 → 7α-metilestradiol, alacsonyabb ER-affinitás mint E2.",
+      "hepatotoxicity": "Alacsony — NEM 17α-alkilált.",
+      "quality": {
+        "pure": ["Tiszta halványsárga olaj, 10ml fiola, 50-100 mg/ml UGL koncentráció", "HPLC-tesztelt forrás kötelező"],
+        "caution": ["EOD/napi IM-injekció szükséges", "PIP gyakori", "Prolaktin-monitor 19-Nor framework miatt KÖTELEZŐ"],
+        "avoid": ["Erős injection-fárasztás esetén Enan preferált", "Prolaktinóma"]
+      },
+      "interactions": ["Cabergoline E3D PR-monitor (19-Nor framework KÖTELEZŐ)", "PCT utolsó Ac-injekció +2-3 nap után"],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "unit": "mg/hét (IM, EOD vagy 3x/hét)",
+        "note": "50-100 mg/hét, EOD vagy E3D. PCT utolsó injekció +2-3 nap."
+      }
+    },
+    {
+      "routeId": "en",
+      "routeLabel": "Trestolone Enantát (IM, lassú)",
+      "image": "/performance/oil-vial-orange.png",
+      "legalStatus": "Sosem volt Rx. UGL only. WADA tiltott.",
+      "bioavailability": "~95-100% (IM, slow Enan-ester hidrolízis)",
+      "onsetTime": "48-72 h (IM, slow-acting; steady-state 3-4 hét)",
+      "halfLife": "5-7 d (Enantát ester)",
+      "halfLifeActive": "~24 h szabad Trestolone (hidrolízis után)",
+      "detectionWindow": "6-8 hét vizelet.",
+      "aromatization": "Igen — CYP19 → 7α-metilestradiol.",
+      "hepatotoxicity": "Alacsony — NEM 17α-alkilált.",
+      "quality": {
+        "pure": ["Tiszta sárgás-arany olaj, 10ml fiola, 100-200 mg/ml UGL", "HPLC-tesztelt"],
+        "caution": ["Heti 1-2x IM-injekció", "PIP kevesebb mint Ac-on", "Steady-state 3-4 hét", "Prolaktin-monitor KÖTELEZŐ"],
+        "avoid": ["Rövid (4-6 hét) ciklus nem hatékony", "Prolaktinóma"]
+      },
+      "interactions": ["Cabergoline E3D (19-Nor framework)", "PCT utolsó Enan-injekció +14-21 nap"],
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {"low": 100, "medium": 150, "high": 200},
+        "unit": "mg/hét (IM, 1-2x osztva)",
+        "note": "100-200 mg/hét, heti 1-2x. Minimum 8-10 hét ciklus. PCT utolsó injekció +14-21 nap."
+      }
+    }
+  ],
+  "defaultVariant": "ac"
+}
