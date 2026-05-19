@@ -13,9 +13,22 @@ export default defineConfig({
         // PNG fallbacks (5-7MB per effects-tile) are intentionally excluded
         // from precache — they're only fetched by browsers without AVIF/WebP
         // support, which the runtime CacheFirst strategy handles fine.
+        // Entry body JS chunks live in assets/entry-data/ and are excluded
+        // from precache — the user only loads one language at a time, so
+        // precaching all 3 lang × 163 entries (~3 MB) is wasteful. They're
+        // served via runtime CacheFirst (immutable hash-versioned URLs).
         globPatterns: ['**/*.{js,css,html,svg,webp,avif,woff2,ico}'],
+        globIgnores: ['**/assets/entry-data/**'],
         maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
         runtimeCaching: [
+          {
+            urlPattern: /\/assets\/entry-data\/.*\.js$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'entry-data',
+              expiration: { maxEntries: 600, maxAgeSeconds: 365 * 24 * 60 * 60 },
+            },
+          },
           {
             urlPattern: /\.(?:png|webp|avif|svg)$/,
             handler: 'CacheFirst',
@@ -57,6 +70,14 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom', 'lucide-react'],
+        },
+        chunkFileNames: (chunkInfo) => {
+          const facadeModuleId = chunkInfo.facadeModuleId || ''
+          const normalised = facadeModuleId.replace(/\\/g, '/')
+          if (/\/src\/data\/libraries\/[^/]+\/entries\/(hu|en|pl)\//.test(normalised)) {
+            return 'assets/entry-data/[name]-[hash].js'
+          }
+          return 'assets/[name]-[hash].js'
         },
       },
     },
