@@ -451,9 +451,13 @@ export default function LibraryGallery({
   setSelectedSubCategory(prev => (prev === id ? null : id))
   setExpanded(true)
   setHasOpened(true)
+  // Scroll to the "Összes Teljesítményfokozó" accordion header — gives the
+  // user visual context (library title visible) before the filtered tiles.
+  // Wait a frame for the accordion-expand transition to start so the target
+  // position is correct relative to the post-expand layout.
   setTimeout(() => {
-   searchInputRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }, 50)
+   allSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }, 80)
  }, [])
 
  const toggleFormFactor = useCallback((id) => {
