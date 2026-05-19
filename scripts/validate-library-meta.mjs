@@ -230,6 +230,77 @@ for (const libId of LIBRARIES) {
     }
   }
 
+  // Sub-Task 1 (2026-05-19 perf-restructure) — performance library only:
+  // subCategory required + valid (must match one of library.subCategories[].id),
+  // subSection optional + valid (must match library.subSections[subCategory][].id),
+  // formFactors required (array of valid IDs, min 1, no duplicates), and
+  // FORM_FACTORS allow-list comes from the library's own formFactors export.
+  if (libId === 'performance') {
+    const libCats = (libExport?.subCategories || []).map(c => c.id)
+    const subSectionMap = libExport?.subSections || {}
+    const allowedFormFactors = new Set((libExport?.formFactors || []).map(f => f.id))
+
+    if (libCats.length !== 5) {
+      console.error(`❌ ${libId}: expected 5 subCategories, got ${libCats.length}`)
+      errors++
+    } else {
+      const expected = ['dht', 'test', '19nor', 'pct', 'fat']
+      for (const exp of expected) {
+        if (!libCats.includes(exp)) {
+          console.error(`❌ ${libId}: missing required subCategory "${exp}"`)
+          errors++
+        }
+      }
+    }
+
+    if (allowedFormFactors.size === 0) {
+      console.error(`❌ ${libId}: library.formFactors export is empty or missing`)
+      errors++
+    }
+
+    for (const m of meta) {
+      // subCategory required
+      if (!m.subCategory) {
+        console.error(`❌ ${libId}/${m.id}: missing required field "subCategory"`)
+        errors++
+      } else if (!libCats.includes(m.subCategory)) {
+        console.error(`❌ ${libId}/${m.id}: subCategory "${m.subCategory}" not in library.subCategories`)
+        errors++
+      }
+
+      // subSection optional but must be valid if present
+      if (m.subSection !== undefined) {
+        const validSections = (subSectionMap[m.subCategory] || []).map(s => s.id)
+        if (!validSections.includes(m.subSection)) {
+          console.error(`❌ ${libId}/${m.id}: subSection "${m.subSection}" not valid for subCategory "${m.subCategory}" (allowed: ${validSections.join(',')})`)
+          errors++
+        }
+      }
+
+      // formFactors required, array of valid IDs, min 1, no duplicates
+      if (!Array.isArray(m.formFactors)) {
+        console.error(`❌ ${libId}/${m.id}: missing required field "formFactors" (must be array)`)
+        errors++
+      } else if (m.formFactors.length === 0) {
+        console.error(`❌ ${libId}/${m.id}: formFactors array is empty (need ≥1)`)
+        errors++
+      } else {
+        const seen = new Set()
+        for (const ff of m.formFactors) {
+          if (!allowedFormFactors.has(ff)) {
+            console.error(`❌ ${libId}/${m.id}: formFactor "${ff}" not in library.formFactors`)
+            errors++
+          }
+          if (seen.has(ff)) {
+            console.error(`❌ ${libId}/${m.id}: duplicate formFactor "${ff}"`)
+            errors++
+          }
+          seen.add(ff)
+        }
+      }
+    }
+  }
+
   console.log(`✅ ${libId}: ${meta.length} entries validated`)
 }
 
