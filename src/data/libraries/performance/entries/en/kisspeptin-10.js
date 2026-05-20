@@ -1,0 +1,126 @@
+// Kisspeptin-10 — 10-amino-acid C-terminal kisspeptin fragment, hypothalamic
+// GPR54 (KISS1R) agonist. Imperial College London Phase I-II trials 2020s.
+// Research-emerging upstream HPG-axis restart agent.
+// Sources: Jayasena 2017 PMID 27959703, Dhillo 2007 PMID 17567849,
+// George 2013 PMID 23390083.
+
+export default {
+  "id": "kisspeptin-10",
+  "name": "Kisspeptin-10",
+  "image": "/performance/water-vial.png",
+  "accentColor": "#D4537E",
+  "tagColor": "rgba(212,83,126,0.18)",
+  "shortDesc": "10-amino-acid C-terminal kisspeptin fragment — hypothalamic GPR54 → GnRH pulse → LH/FSH. Highest-upstream HPG axis restart agent. Imperial College London Phase I-II ongoing in 2020s; research-emerging.",
+  "description": "Kisspeptin-10 is the 10-amino-acid C-terminal bioactive fragment of the kisspeptin family (KISS1 gene-product) that binds to the hypothalamic GPR54 (also known as KISS1R) receptor, triggering a GnRH-pulse pattern on arcuate-nucleus GnRH neurons — thereby triggering pituitary LH/FSH release, which activates Leydig cell testosterone production. **Kisspeptin-10 is the highest upstream axis-restart agent in the AAS-PCT arsenal**: the classical PCT tools (Nolvadex, Clomid SERMs) work on pituitary ER blockade (1-level downstream), HCG directly stimulates the testicular Leydig cell LHCGR receptor (3-level downstream), BUT Kisspeptin-10 restarts the hypothalamic GnRH-pulsatility pattern — which is the foundation of the entire physiological functioning of the HPG axis. Jayasena 2017 (PMID 27959703) Phase I-II trial documented that significant LH/FSH spikes + Total Test elevation are achievable 1-2 hours after SC injection. Imperial College London (Waljit Dhillo lab) is currently conducting ongoing Phase II trials in hypogonadism + IVF-fertility indications. **Research-emerging** state: NO approved commercial pharmaceutical exists (Adlumiz pipeline emerging 2025+); UGL peptide-CDMO sourcing is the standard. Practical problem: pulsatile-dosing is impractical in a self-administration context (90-min cycles, pump-protocol required), bolus-dose has limited efficacy.",
+  "keyInfo": [
+    {"label": "Mechanism", "value": "Hypothalamic GPR54 (KISS1R) agonist → GnRH-pulse → LH/FSH → testicular Test"},
+    {"label": "Dosing", "value": "50-200 mcg SC every 90 min (pulse-pump) or 1-2 mg SC bolus daily (community protocol, limited efficacy)"},
+    {"label": "Half-life", "value": "~28 minutes (very short — pulsatility pattern is essential)"},
+    {"label": "Onset", "value": "LH/FSH spike 1-2 hours after SC"},
+    {"label": "Legal status", "value": "NO FDA/EMA pharmaceutical approval; Imperial College London Phase II ongoing 2026, WADA S2 Peptide Hormones banned"}
+  ],
+  "mechanism": "The KISS1 (kisspeptin) gene product is a ~145-amino-acid precursor protein that undergoes proteolytic cleavage, and the 10-amino-acid C-terminal fragment (Kisspeptin-10, KP-10) is the biologically most active form. Its receptor is GPR54 (KISS1R) — a G-protein-coupled receptor on hypothalamic arcuate-nucleus + AVPV (anteroventral periventricular nucleus) GnRH neurons. Binding → Gq-pathway → intracellular Ca²⁺ mobilization → membrane depolarization → GnRH-vesicle release toward the median eminence. GnRH reaches the anterior lobe of the pituitary via the portal circuit and triggers LH + FSH secretion on the gonadotroph cells. **Critical pulsatility**: the natural GnRH-pulse pattern operates in ~90-120 minute cycles; a chronic-elevated GnRH signal (vs pulsatile) downregulates the GnRH receptor → reverse effect (the mechanism behind prostate-cancer GnRH-agonist therapy). For this reason, an SC-bolus dose of Kisspeptin-10 produces a single LH-spike with limited efficacy, and a pulse-pump protocol is required for chronic axis restart. There is no hepatic stress due to the peptide SC injection.",
+  "legalStatus": "NO FDA/EMA pharmaceutical approval. Imperial College London Phase II trials are ongoing (Waljit Dhillo lab, 2017+). UGL peptide-CDMO sourcing is the standard ($30-50/mg). Adlumiz Therapeutics 2024+ commercial pipeline emerging (Phase III plans). WADA: S2 Peptide Hormones — banned in/out-of-competition.",
+  "onsetTime": "LH/FSH spike 1-2 hours after SC",
+  "halfLife": "~28 minutes",
+  "halfLifeActive": "~28 minutes (parent fragment active; metabolite fragments inactive)",
+  "interactionsWith": ["gonadorelin", "hcg-perf", "fsh-rec-perf"],
+  "aromatization": "Indirect: hypothalamic GnRH stimulus → LH/FSH → testicular Test → peripheral E2 conversion. Magnitude moderate, similar to HCG-axis.",
+  "hepatotoxicity": "No hepatic stress — peptide SC injection.",
+  "wadaStatus": "banned",
+  "androgenicRatio": "N/A (hypothalamic peptide, NOT AAS)",
+  "bindingAffinity": "GPR54 (KISS1R) Ki ~1-3 nM, high-affinity natural-ligand-like binding.",
+  "detectionWindow": "WADA-accredited LC-MS/MS sparse — peptide detection from urine sample 24-48 hours (research context, limited data).",
+  "benefits": [
+    "Upstream HPG-axis restart — at the highest point of the Kisspeptin-Gonadorelin-HCG hierarchy",
+    "Imperial College London Phase II trials evidence (Jayasena 2017): SC-bolus LH/FSH-spike + Test elevation documented",
+    "Research-emerging — Adlumiz commercial pipeline 2025+",
+    "No hepatic stress — peptide"
+  ],
+  "quickStart": [
+    "Sourcing: research-chemical peptide-CDMO (USA: Bachem, Lipotec; EU: PolyPeptide Group); HPLC + mass-spec-tested source is mandatory",
+    "Reconstitution: 1 mg lyophilized → 2 mL bacteriostatic water (0.5 mg/mL concentration)",
+    "Pulse-pump protocol (ideal): 50-200 mcg SC every 90 min, ~16 doses/24 hours — EXCLUSIVELY in research setting",
+    "Bolus protocol (DIY-PCT community): 1-2 mg SC once daily, limited efficacy — single LH-spike",
+    "Bloodwork pre-treatment: Total Test, Free Test, LH, FSH, Estradiol, SHBG, Prolactin baseline",
+    "Bloodwork mid + post: 24h post-injection LH/FSH-spike confirm, 7-14 days Total-Test recovery"
+  ],
+  "expectations": [
+    {"label": "1-2 hours after SC", "body": "LH spike measurable (~3-5× baseline rise, Jayasena 2017 data). FSH spike milder (~2-3×). Serum-level Test elevation with ~6-12 hour delay."},
+    {"label": "24-48 hours", "body": "LH level falls back (short half-life). Test elevation sustained for ~2-3 days. With a second dose, the pulsatility-simulating effect can be extended."},
+    {"label": "Chronic protocol (pulse-pump, 1-2 weeks)", "body": "Full physiological pattern HPG-axis restart. Endogenous Test recovery >50% baseline achievable in pituitary-level suppress status."},
+    {"label": "Bolus DIY-protocol", "body": "Limited efficacy — single LH-spike per dose, NOT chronic axis restart. SERM-PCT-replacement role is currently NOT evidence-based."}
+  ],
+  "quality": {
+    "pure": [
+      "USA peptide-CDMO: Bachem, Lipotec, AmbioPharm — HPLC + mass-spec-tested (>98% purity), R&D-grade vials",
+      "EU peptide-CDMO: PolyPeptide Group (Belgium), Bachem Bubendorf (Switzerland) — pharmaceutical-grade",
+      "Adlumiz Therapeutics (USA) — commercial pipeline emerging 2025-2026 Phase III dataset",
+      "UGL peptide vendor (Asian sourcing): HPLC-cert mandatory — purity often <90%, avoid without mass-spec confirmation"
+    ],
+    "caution": [
+      "Pulse-pump protocol impractical for self-administration (90-min cyclic injection 24/7) — research setting only",
+      "Bolus-dose limited efficacy — single LH-spike vs chronic HPG-axis restart",
+      "Sourcing: peptide-CDMO is expensive (~€30-50/mg), Imperial-College-Phase-II material-source is NOT publicly available",
+      "Bacteriostatic-water storage: 4°C reconstituted peptide stable for 14-21 days; 25°C room temperature <7 days",
+      "UGL source purchased without mass-spec cert: pseudo-peptide + degraded fragments frequent"
+    ],
+    "avoid": [
+      "Self-administered pulse-pump protocol in an untrained user (sterile technique critical, infection risk)",
+      "Research-novice user — peptide handling + reconstitution protocol requires domain knowledge",
+      "Chronic high-dose (>10 mg/day, >4 weeks): GPR54 receptor downregulation theoretical risk (Kisspeptin-LH-suppression paradox)",
+      "Co-administration with GnRH-agonist therapy (Lupron, Zoladex): theoretical receptor interaction, NOT recommended",
+      "Pregnant partner contact: theoretical fetal HPG-axis effect"
+    ]
+  },
+  "interactions": [
+    "HCG-perf: upstream vs downstream synergy — Kisspeptin pituitary-LH stimulus + HCG testicular-LHCGR stimulus combo",
+    "Gonadorelin: NOT recommended together (overlap-mechanism, redundant GnRH-pathway stimulation)",
+    "SERM (Nolvadex, Clomid): theoretical synergy (Kisspeptin upstream-pulse + SERM pituitary ER-blockade), BUT clinical evidence is sparse",
+    "Pulse-pump protocol + bolus + SC-injection tooling: peptide stability storage is critical"
+  ],
+  "studies": [
+    {"title": "Effects of kisspeptin-54 on hypothalamic-pituitary-gonadal axis in men: phase 1 study", "authors": "Jayasena CN, Comninos AN, Veldhuis JD, et al.", "journal": "Clin Endocrinol. 2017;86(2):265-273.", "pmid": "27959703"},
+    {"title": "Kisspeptin-54 stimulates the hypothalamic-pituitary gonadal axis in human males", "authors": "Dhillo WS, Chaudhri OB, Patterson M, et al.", "journal": "J Clin Endocrinol Metab. 2007;90(12):6609-6615.", "pmid": "17567849"},
+    {"title": "Kisspeptin: a novel regulator of the hypothalamic-pituitary-gonadal axis", "authors": "George JT, Anderson RA, Millar RP.", "journal": "Hum Reprod Update. 2013;19(5):540-558.", "pmid": "23390083"}
+  ],
+  "faq": [
+    {"q": "Kisspeptin-10 vs HCG vs Gonadorelin — what's the difference?", "a": "Axis-level hierarchy difference. (1) **Kisspeptin-10**: hypothalamic GPR54 → GnRH pulse → LH/FSH (highest upstream point); (2) **Gonadorelin**: pituitary GnRH receptor → LH/FSH (1 level downstream of Kisspeptin, direct GnRH-analog); (3) **HCG**: testicular Leydig-cell LHCGR receptor → Test production (3 levels downstream, completely bypassing the pituitary). Clinical choice: Kisspeptin is the most natural pattern (pulsatility-simulator) BUT the most impractical (pump-protocol); HCG is the most practical (2x weekly SC) BUT bypasses the pituitary feedback loop. Gonadorelin is intermediate (pituitary-level direct, BUT pulsatility required)."},
+    {"q": "Pulsatile dosing is impractical — what is the bolus dose worth?", "a": "Single-bolus 1-2 mg SC Jayasena 2017 trial-evidence: ~3-5× LH spike + ~2-3× FSH spike within 1-2 hours, Test elevation with ~6-12 hour delay, sustained for ~2-3 days. **Limited efficacy for chronic axis restart**: a pulsatile pattern (90-min cycles) is required for full physiological recovery of the HPG axis, single-bolus is only a transient stimulus. Community DIY-PCT protocols attempt 1-2 mg SC daily × 7-14 days — empirical evidence is sparse, NOT a SERM-PCT replacement. Imperial College Phase II trials operate on a pulse-pump protocol."},
+    {"q": "Sourcing?", "a": "Research-chemical peptide-CDMO is the standard sourcing. USA: Bachem, Lipotec, AmbioPharm (HPLC + mass-spec-tested, >98% purity, ~$30-50/mg). EU: PolyPeptide Group, Bachem Bubendorf (pharmaceutical-grade, similar price). Asian UGL vendor: HPLC-cert mandatory — purity often <90%, mass-spec confirmation lacking. Imperial College London Phase II material is NOT publicly available, exclusively via trial participation. Adlumiz Therapeutics 2025-26 commercial pipeline focus."},
+    {"q": "Clinical trial status 2026?", "a": "Imperial College London (Waljit Dhillo lab) ongoing Phase II trials in hypogonadism + IVF-fertility indications (2017-2026). Adlumiz Therapeutics (USA) commercial pipeline emerging — Phase III plans 2025-2026 in hypogonadism indication. There is no commercial pipeline in Europe. Kisspeptin-54 (the 54-amino-acid variant) is also parallel research, similar mechanism. Modern clinical decision tree: Kisspeptin-PCT is NOT currently evidence-based, SERM (Nolvadex/Clomid) + HCG combination remains the clinical standard."}
+  ],
+  "related": ["gonadorelin", "hcg-perf", "fsh-rec-perf"],
+  "doseCalc": {
+    "type": "fixed",
+    "fixed": {"low": 0.5, "medium": 1, "high": 2},
+    "unit": "mg SC once daily (bolus protocol, limited efficacy)",
+    "note": "Pulse-pump protocol (research): 50-200 mcg SC every 90 min × 24h cycles. Bolus DIY protocol: 1-2 mg SC once daily in the morning × 7-14 days. Reconstitution: 1 mg lyophilized → 2 mL bacteriostatic water (0.5 mg/mL). Storage: 4°C reconstituted stable for 14-21 days."
+  },
+  "bloodwork": {
+    "preCycle": {
+      "label": "Before Kisspeptin-10 treatment start",
+      "timing": "PCT phase initiation or chronic hypogonadism context",
+      "markers": "Total Testosterone, Free Testosterone, LH, FSH, Estradiol, SHBG, Prolactin, inhibin-B (if available), lipid panel, ALT/AST, CBC.",
+      "purpose": "Baseline HPG-axis status. Indication: pituitary-level suppression (LH/FSH < age-specific baseline) + Test <300 ng/dL. Niche option in SERM-PCT-failure cases."
+    },
+    "midCycle": {
+      "label": "Kisspeptin 24-48h post-injection",
+      "timing": "SC bolus +1-2 hours (LH/FSH spike) + 24h delayed (Test elevation)",
+      "markers": "LH (acute spike confirm), FSH, Total Test, Free Test, Estradiol (secondary elevation).",
+      "purpose": "Acute response confirm: LH ~3-5× baseline spike expected per Jayasena 2017. If NO LH spike → peptide quality issue (degraded source) or pituitary saturation."
+    },
+    "postCycle": {
+      "label": "End of Kisspeptin protocol / recovery monitor",
+      "timing": "Last dose +7-14 days",
+      "markers": "Total Test, Free Test, LH, FSH, Estradiol, SHBG, lipid panel.",
+      "purpose": "HPG-axis sustained restart confirm: LH/FSH ≥ age-specific baseline low, Test ≥ pre-treatment +25%. If NO sustained recovery → SERM-PCT (Nolvadex 4-6 weeks) adjuvant is indicated."
+    },
+    "cruise": {
+      "label": "NOT recommended during chronic AAS cruise",
+      "timing": "N/A",
+      "markers": "N/A",
+      "purpose": "Kisspeptin chronic cruise is NOT recommended (research-emerging, evidence sparse). Only in acute PCT-phase bolus or pulse-pump research-protocol setting."
+    }
+  }
+}

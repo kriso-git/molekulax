@@ -869,6 +869,74 @@ export const LIBRARY_ENTRY_META = [
     "subCategory": "pct",
     "subSection": "5ar",
     "formFactors": ["topical"]
+  },
+  {
+    "id": "kisspeptin-10",
+    "name": "Kisspeptin-10",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "10 aminosav C-terminál kisspeptin-fragmens — hypothalamic GPR54 → GnRH-pulse → LH/FSH. Legfelsőbb axis-restart pont a HPG-tengelyben. Imperial College London Phase I-II 2020-as években; research-emerging.",
+      "en": "10-amino-acid C-terminal kisspeptin fragment — hypothalamic GPR54 → GnRH pulse → LH/FSH. Highest-upstream HPG axis restart agent. Imperial College London Phase I-II ongoing in 2020s; research-emerging.",
+      "pl": "10-aminokwasowy fragment C-końcowy kisspeptyny — podwzgórzowe GPR54 → impuls GnRH → LH/FSH. Najwyższy punkt restartu osi HPG. Imperial College London Phase I-II trwa w 2020s; emerging-research."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "axis",
+    "formFactors": ["aq"]
+  },
+  {
+    "id": "gonadorelin",
+    "name": "Gonadorelin (Factrel / Lutrelef)",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Szintetikus 10 aminosav GnRH — direkt pituiter GnRH-R stimulus, LH/FSH-release. FDA Factrel 1982 (kivonva US 2008); EMA Lutrelef pulsatile-pump hypothalamic-hipogonadism Rx. Continuous dose paradox-downregulation prostate-cancer kezelésben.",
+      "en": "Synthetic 10-aa GnRH — direct pituitary GnRH-R stimulus, LH/FSH release. FDA Factrel 1982 (US-discontinued 2008); EMA Lutrelef pulsatile-pump Rx for hypothalamic hypogonadism. Continuous dose paradox-downregulation in prostate cancer therapy.",
+      "pl": "Syntetyczna 10-aa GnRH — bezpośrednia stymulacja przysadkowych receptorów GnRH-R, uwolnienie LH/FSH. FDA Factrel 1982 (wycofany USA 2008); EMA Lutrelef pulsatile-pompa Rx dla podwzgórzowej hipogonadyzmu. Dawka ciągła paradoks-downregulacja w terapii raka prostaty."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "axis",
+    "formFactors": ["aq"]
+  },
+  {
+    "id": "pregnenolone",
+    "name": "Pregnenolone",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "\"Master steroid\" — endogén szteroid-precursor (cholesterol → pregnenolone → összes szteroid-hormon). OTC supplement. Evidence quality LOW: orális biodostupnošć gyenge (~5-10%), neurosztiered NMDA/GABA hatás kis kognitív-előny. AAS-PCT niche.",
+      "en": "\"Master steroid\" — endogenous steroid precursor (cholesterol → pregnenolone → all steroid hormones). OTC supplement. Evidence quality LOW: oral bioavailability poor (~5-10%), neurosteroid NMDA/GABA action drives small cognitive benefit. AAS-PCT niche use.",
+      "pl": "\"Steroid macierzysty\" — endogenny prekursor steroidowy (cholesterol → pregnenolon → wszystkie hormony steroidowe). Suplement OTC. Jakość dowodów NISKA: biodostępność doustna słaba (~5-10%), działanie neurosterodowe NMDA/GABA daje małą korzyść poznawczą. Nisza w PCT po AAS."
+    },
+    "tier": 3,
+    "wadaStatus": "allowed",
+    "subCategory": "pct",
+    "subSection": "axis",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "dhea",
+    "name": "DHEA (Dehydroepiandrosterone)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Endogén adrenális androgén-precursor (cholesterol → DHEA → androstenedione → Test). US-OTC, EU-Rx. Jobb evidence mint a Pregnenolone, de a fiatal egészséges férfin minimális Test-emelkedés + ~15-20% E2-rise. WADA S1.1.b listára vett (banned).",
+      "en": "Endogenous adrenal androgen precursor (cholesterol → DHEA → androstenedione → Test). US-OTC, EU-Rx. Better evidence than Pregnenolone, but in young healthy men minimal Test elevation + ~15-20% E2 rise. WADA S1.1.b listed (banned).",
+      "pl": "Endogenny prekursor androgenu nadnerczowego (cholesterol → DHEA → androstendion → testosteron). USA-OTC, UE-Rx. Lepsze dowody niż Pregnenolon, ale u młodych zdrowych mężczyzn minimalny wzrost Test + ~15-20% wzrost E2. WADA S1.1.b wymieniony (zakazany)."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "axis",
+    "formFactors": ["oral"]
   }
 ]
 
