@@ -14,6 +14,7 @@ import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
 import { EntryDetailSkeleton, EntryDetailError } from './entry-detail/skeleton'
 import HeroPreview from './HeroPreview'
+import RedirectFlash from './RedirectFlash'
 
 const EntryDetail = lazy(() => import('./EntryDetail'))
 
@@ -44,6 +45,7 @@ export default function EntryDetailRoute({ hash }) {
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
   const [retryCounter, setRetryCounter] = useState(0)
+  const [redirectId, setRedirectId] = useState(null)
 
   // Sync the active library context with the hash. If a visitor deep-links
   // to #entry/nootropics/<id> while the in-memory library is still the
@@ -65,8 +67,32 @@ export default function EntryDetailRoute({ hash }) {
       setEntry(null)
       setError(null)
       setLoading(false)
+      setRedirectId(null)
       return
     }
+
+    // Deprecated entry redirect-flash (post-roadmap 2026-05-20).
+    // Library.deprecatedIds is set in LIBRARY_META (sync, deep-link-ready)
+    // and on the full peptidesLibrary object. EntryDetailRoute shows
+    // RedirectFlash for 1.8s, then hash-navs to library top.
+    const lib = getLibrary(parsed.library)
+    if (lib?.deprecatedIds?.includes(parsed.id)) {
+      setRedirectId(parsed.id)
+      setEntry(null)
+      setError(null)
+      setLoading(false)
+      const timer = setTimeout(() => {
+        if (!cancelled) {
+          window.location.hash = 'library'
+        }
+      }, 1800)
+      return () => {
+        cancelled = true
+        clearTimeout(timer)
+      }
+    }
+    setRedirectId(null)
+
     const cached = getCachedEntry(parsed.library, parsed.id, lang)
     if (cached) {
       setEntry(cached)
@@ -197,6 +223,12 @@ export default function EntryDetailRoute({ hash }) {
   }, [setLibraryId])
 
   if (!parsed) return null
+
+  // Deprecated entry deep-link: render RedirectFlash for 1.8s (timer set in
+  // the useEffect above). Return-early BEFORE any entry/library state work.
+  if (redirectId) {
+    return <RedirectFlash deprecatedId={redirectId} />
+  }
 
   // Loading / error states render BEFORE the heavy EntryDetail chunk loads.
   // Wait for BOTH the entry AND the library (so adaptLibraryEntry can read

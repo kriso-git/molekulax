@@ -6,6 +6,8 @@
 // `loadLibrary(id)` async function which dynamic-imports the matching
 // libraries/<id>/ module.
 
+import { DEPRECATED_PEPTIDE_IDS } from './peptides/deprecated.js'
+
 const LIBRARY_META = [
   {
     id: 'peptides',
@@ -16,6 +18,7 @@ const LIBRARY_META = [
       en: '50+ scientifically documented peptides · search by category and research tier',
       pl: '50+ peptydów udokumentowanych naukowo · wyszukiwanie wg kategorii i poziomu badań',
     },
+    deprecatedIds: DEPRECATED_PEPTIDE_IDS,
   },
   {
     id: 'nootropics',

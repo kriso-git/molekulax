@@ -27,6 +27,7 @@ import { useTilt, useMagnet, ParticleField, HoloRing, LabTerminal, Eyebrow, Glas
 import ChemicalFormulaPlaceholder from './ChemicalFormulaPlaceholder'
 import VariantToggle from './VariantToggle'
 import AnecdoteSection from './AnecdoteSection'
+import CompositionSection from './CompositionSection'
 
 // Phase 10 — dynamic "Releváns X" / "Related X" / "Powiązane X" label per library.
 // Plural noun map per language; fallback strips "Könyvtár"/"Library"/"Biblioteka" from library.name.
@@ -1499,6 +1500,9 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  )
  })()}
  </section>
+
+ {/* ─── COMPOSITION: multi-peptide stack render (only when entry has composition[]) ─── */}
+ <CompositionSection composition={peptide.composition} accent={accent} />
 
  {/* ─── ANEKDOTA: collapsible community-experience narrative, under "What is X?" ─── */}
  <AnecdoteSection peptide={peptide} accent={accent} />
