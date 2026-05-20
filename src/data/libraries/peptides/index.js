@@ -7,6 +7,7 @@ import { CATEGORIES, PEPTIDE_CATEGORIES, getPeptideCategories } from './categori
 import { getResearchLevel } from './researchLevel.js'
 import { RESEARCH_LEVELS } from '../shared/researchLevel.js'
 import { EFFECT_CATEGORIES } from './effects.js'
+import { DEPRECATED_PEPTIDE_IDS } from './deprecated.js'
 
 export const LIBRARY_ENTRY_META = [
   {
@@ -849,6 +850,7 @@ export const peptidesLibrary = {
   "labTerminal": true,
   "chemicalFormulaPlaceholder": false
 },
+  deprecatedIds: DEPRECATED_PEPTIDE_IDS,
 }
 
 // Phase 12 per-lang: Vite template-literal-import emits one chunk per
