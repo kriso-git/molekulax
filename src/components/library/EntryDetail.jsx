@@ -1313,11 +1313,11 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
  <h1
  ref={nameRef}
- className="font-black tracking-tight leading-[1.05] pb-2 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl mb-3 break-words"
+ className="font-black tracking-tight leading-[1.05] pb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-3"
  style={{
- wordBreak: 'break-word',
- overflowWrap: 'anywhere',
- hyphens: 'auto',
+ wordBreak: 'normal',
+ overflowWrap: 'break-word',
+ hyphens: 'manual',
  background: isLight
  ? `linear-gradient(135deg, #0f172a 0%, ${accent} 55%, ${tierColor} 100%)`
  : `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
