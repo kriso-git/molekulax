@@ -212,5 +212,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "SR 150 mg/day morning for 4 days, then 150 mg 2x/day (8+ h apart). XL 150 mg/day morning for 7 days, then 300 mg/day. Max SR 400 / XL 450 mg/day — above seizure risk grows EXPONENTIALLY. DO NOT take in evening. DO NOT crush tablet."
-  }
+  },
+  "anecdote": "Anecdotal reports describe Bupropion as a versatile NDRI antidepressant with notable motivation- and drive-boosting effects via dopamine and norepinephrine enhancement. Community accounts note strong efficacy for low-motivation depression presentations, including ADHD-overlap cases. Its low DAT affinity suggests it acts more as a dopaminergic modulator via VMAT-2 than a direct reuptake blocker. Nicotinic receptor antagonism underlies its FDA-approved smoking-cessation indication (Zyban); ongoing research examines utility in cocaine, methamphetamine, and impulsive-behavior disorders. Bupropion can be paradoxically activating or overstimulating, with a narrow therapeutic window. Mechanistic notes: nitric oxide donors and PDE-5 inhibitors (Sildenafil, Tadalafil) may blunt antidepressant efficacy; methylene blue appears to potentiate it. Caution: seizure threshold lowering — contraindicated in eating disorders and seizure history."
 }

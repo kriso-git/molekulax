@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Agonista receptora GABA-B (podobnie do baklofenu) + modulacja podjednostki α2δ-1 kanałów Ca²⁺ zależnych od napięcia (podobnie do gabapentyny) → redukcja presynaptycznego uwalniania glutaminianu i efekt anksjolityczny.",
   "legalStatus": "Lek na receptę w Rosji, Ukrainie, Łotwie. W Wielkiej Brytanii substancja kontrolowana klasy C od 2024. Niezregulowany w innych państwach UE. Nie może być wprowadzany do obrotu jako lek na Węgrzech bez recepty.",
-  "chemicalFormula": "C10H13NO2"
+  "chemicalFormula": "C10H13NO2",
+  "anecdote": "Raporty anegdotyczne opisują, że Phenibut wywołuje uspokajające uczucie społecznego rozluźnienia z dezinhibicją i działaniem przeciwlękowym, często stosowany przez osoby z GAD lub PTSD do odprężenia. Początek działania jest powolny, zwykle szczyt osiągany jest około 2 godziny po dawce, a użytkownicy ograniczają podawanie do maksymalnie dwóch razy w tygodniu. Doniesienia społeczności porównują doświadczenie do alkoholu lub benzodiazepin pod względem redukcji lęku, choć bez typowego efektu odurzenia. Phenibut i Pregabalina są często wymieniane jako podstawowe środki niskiej inhibicji, przy czym Pregabalina opisywana jako silniejsza alternatywa, a Phenibut bardziej anksjolityczny. Zespół odstawienia jest udokumentowanym ryzykiem i może być niebezpieczny, dlatego ścisłe umiarkowanie w schemacie dawkowania jest niezbędne przed użyciem."
 }

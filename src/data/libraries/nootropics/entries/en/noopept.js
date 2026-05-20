@@ -141,5 +141,6 @@ export default {
     "aniracetam",
     "coluracetam",
     "semax"
-  ]
+  ],
+  "anecdote": "Anecdotal reports describe Noopept as one of the more feelable nootropics, particularly in terms of clarity and verbal flow, with effects subtle at first but building over time as BDNF and NGF expression appear to increase. Community accounts note improved memory recall and smoother thinking, while others describe mild stimulation or irritability at higher doses, making the response highly individual. Mild sensory perception enhancement (colors, sound clarity) is a niche but recurring observation. Compared to racetams, Noopept is more compact and potent, with both acute and long-term benefits. It is typically administered orally or sublingually, often cycled rather than used continuously. A documented downside is that it may amplify the noise component of the signal-to-noise ratio, causing some users to feel over-aroused or unfocused, with that noise being encoded along with useful information."
 }

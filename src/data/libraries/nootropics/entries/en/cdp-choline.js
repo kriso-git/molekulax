@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "A key intermediate of the Kennedy pathway, exogenous intake supports both phosphatidylcholine synthesis (membrane building) and acetylcholine synthesis; the uridine component additionally supports UTP synthesis and synaptic growth.",
   "legalStatus": "Prescription-only in Italy, Spain, Japan (Somazina, Ceraxon). OTC dietary supplement in the USA. Freely available as a supplement in Hungary.",
-  "chemicalFormula": "C14H26N4O11P2"
+  "chemicalFormula": "C14H26N4O11P2",
+  "anecdote": "Community accounts strongly recommend CDP-Choline for individuals looking to enhance cognitive function, with many preferring it over Alpha-GPC due to its smoother, more stable profile suited for long-term choline supplementation rather than acute effects. The uridine component supports synaptogenesis, meaning repeated use can improve the brain's ability to form and maintain connections over time. CDP-Choline pairs particularly well with stimulants or racetams, which tend to deplete choline levels, preventing the burnout feeling that can follow consistent nootropic use. Evidence suggests it may increase dopamine receptor density, potentially improving long-term motivation. Users commonly report better verbal fluency, improved memory retention, and clearer thinking. It is widely positioned as a foundational baseline for most cognitive-enhancing stacks."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "AMPA receptor positive allosteric modulation + indirect NMDA glycine-site activity → strong LTP enhancement in animal models at 0.01-0.1 mg/kg.",
   "legalStatus": "Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; classified as a “research chemical” elsewhere.",
-  "chemicalFormula": "C14H18N2O2"
+  "chemicalFormula": "C14H18N2O2",
+  "anecdote": "Anecdotal reports describe Sunifiram as a fairly potent nootropic with cognitive enhancement and documented excitotoxicity concerns, leading some users to pair it with an NMDA antagonist such as Memantine. Community accounts report mood enhancement and a slight stimulant-like cognitive boost, with one user reporting effective 5 mg occasional dosing. Another user noted tolerance development after 3 days of continued administration, suggesting cycling is beneficial. Excitotoxic brain injury risk has been reported, so starting at low doses is strongly advised. Some users compare the experience to a megadose of Noopept, producing intense, laser-like focus. Others describe heavily enhanced mood, visual clarity, and cognitive flexibility. The toxicity profile is not fully understood, so caution is essential."
 }

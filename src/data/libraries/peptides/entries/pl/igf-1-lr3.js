@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/1747094/",
       "finding": "IGF-1 LR3 jest bardziej anaboliczny niż natywny IGF-1 dzięki słabszemu wiązaniu IGFBP."
     }
-  ]
+  ],
+  "anecdote": "IGF-1 LR3 jest szeroko omawiany, ale uważany za stosunkowo słaby w porównaniu do Tesamoreliny lub HGH w wielu raportach użytkowników, choć ma określone zastosowania. LR3 mniej wiąże się z białkami wiążącymi IGF i wykazuje zmniejszoną sekwestrację wątrobową w porównaniu do natywnego IGF-1, co umożliwia większą aktywność ogólnoustrojową. Metabolicznie nakłada się na sygnalizację insuliny, więc poziomy glukozy mogą spadać — wytwarzając u niektórych użytkowników pełnię mięśni, ale również potencjalne objawy hipoglikemii. Aktywowane przez niego szlaki wzrostu (Akt/mTOR, Erk) są fundamentalnymi sygnałami wzrostu komórkowego.\n\nDawkowanie różni się i jest zwykle niewielkie."
 }

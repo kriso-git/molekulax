@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/34953703/",
       "finding": "52-week open-label extension: sustained symptom improvement in HSDD with side effects declining over time."
     }
-  ]
+  ],
+  "anecdote": "PT-141 is a widely used and notably perceptible libido compound. Users frequently report a strong, somewhat spontaneous increase in desire — not just a mild improvement — without dependence on other factors, since it acts directly via melanocortin receptors. Nausea is a very common side effect, particularly at higher doses or early in use, and flushing or transient blood-pressure increases are also reported. Combined with a PDE5 inhibitor such as Tadalafil or Sildenafil, users describe enhanced desire and performance, with potential synergy from the blood-pressure interaction. Effects can be unpredictable and are heavily context-, mood-, and timing-dependent.\n\nPT-141 is typically administered subcutaneously, like most peptides. Dosing varies and is highly individual, so starting low and titrating based on response is recommended."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Hidrolízis után kolin + glicerofoszfátot szabadít fel; a kolin acetilkolin-szintézis szubsztrátja, a glicerofoszfát foszfatidilkolin-építőkő, együtt cholinerg tónus és membrán-foszfolipid-szintézis fokozására.",
   "legalStatus": "Olaszországban vényköteles (Delecit). EU egyéb tagállamokban és USA-ban étrend-kiegészítő. Magyarországon szabadon kapható.",
-  "chemicalFormula": "C8H20NO6P"
+  "chemicalFormula": "C8H20NO6P",
+  "anecdote": "Közösségi beszámolók szerint az Alpha-GPC jól illeszkedik rövid távú teljesítményfokozáshoz, a felhasználók általában 1 g-ot vesznek be edzés előtt. Akut kolinformaként pozicionálódik a rövid hatástartama miatt, erősebb fizikai teljesítménybeli előnyökkel, mint hosszú távú kognitív előnyökkel. A CDP-kolint vagy más formákat jellemzően krónikus acetilkolin-támogatásra használják. Edzéskörnyezetben a felhasználók javult tudat-izom kapcsolatot jegyeznek meg, ami egyik oka annak, hogy sok edzés előtti formulában megjelenik. Túlzott adagolás túlzott kolinerg tüneteket, például fejfájást, agyködöt és hányingert okozhat, ezért fontos a dóziskalibráció. Néhány felhasználó szorongást tapasztal, ilyen esetben gyakran ajánlott a magnézium L-treonáttal való párosítás. Jól értékelt szilárd kolinformaként rövid kognitív lökésekhez és fizikai teljesítményhez."
 }

@@ -143,5 +143,6 @@ export default {
     "modafinil",
     "bromantane",
     "aniracetam"
-  ]
+  ],
+  "anecdote": "Anecdotal reports describe Phenylpiracetam around 200 mg dosing as a stimulant-like nootropic used for focused study tasks, often substituted for prescription stimulants on off-days. Users note clearer thinking and improved verbal flow lasting roughly 7 hours post-dose, with twice-weekly cycling commonly recommended to avoid tolerance. Some accounts describe a mild euphoric component estimated at roughly one-tenth of amphetamine intensity. Community members report a notable mood lift, with cognitively challenging tasks reportedly becoming something to look forward to during the active window. CDP-Choline supplementation is commonly paired with any racetam to prevent choline depletion from increased cholinergic signaling and activity."
 }

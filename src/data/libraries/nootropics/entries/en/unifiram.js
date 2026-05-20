@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "AMPA receptor positive allosteric modulation and probable indirect NMDA glycine-site activation, a Sunifiram-like profile with similar potency.",
   "legalStatus": "Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; “research chemical” elsewhere.",
-  "chemicalFormula": "C13H15FN2O3S"
+  "chemicalFormula": "C13H15FN2O3S",
+  "anecdote": "Anecdotal reports describe Unifiram as a promising but still experimental nootropic with a notably varied effect profile. Community accounts report stimulating qualities, with potential to induce anxiety in some users, while others note synergy with caffeine and occasional mild euphoria. A confidence boost and mentally-online energizing effect are commonly mentioned. Mental clarity is reportedly enhanced through AMPA-like modulation, improving verbal fluidity, cognition, and acetylcholine release. Compared to Sunifiram, Unifiram is characterized as less activating and more pro-cognitive. Overall positioned as a solid but experimental ampakine option that produces confidence and mental enhancement in some users while inducing anxiousness or tension in others, with response highly individual."
 }

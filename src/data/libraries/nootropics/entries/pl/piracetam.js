@@ -146,5 +146,6 @@ export default {
     "oxiracetam",
     "alpha-gpc",
     "cdp-choline"
-  ]
+  ],
+  "anecdote": "Piracetam jest szeroko opisywany jako fundamentalny racetam. Doniesienia społeczności opisują go jako sprawiającego, że myślenie, kodowanie pamięci i płynność werbalna stają się gładsze, czystsze i bardziej wydajne, zasadniczo poprawiając medium, przez które zachodzi poznanie. Jest słabo związany z AMPA, ale nie jest znaczącym ampakinem w klasycznym sensie. Dowody sugerują, że korzyści są silniejsze pod wpływem stresu, starzenia się, niedotlenienia lub upośledzonej funkcji poznawczej, co wyjaśnia, dlaczego zdrowi użytkownicy mogą nie zauważać wiele. Jako przodek rodziny racetamów, wiele późniejszych związków można postrzegać jako próby intensyfikacji tego, do czego pierwotnie zaprojektowano Piracetam. Oczekiwane efekty obejmują poprawioną plastyczność, sprawność cholinergiczną, odporność metaboliczną i modulację sygnalizacji pobudzającej. Jego reputacja opiera się mniej na byciu inteligentnym lekiem, a bardziej na fundamentalnej optymalizacji neuronalnej."
 }

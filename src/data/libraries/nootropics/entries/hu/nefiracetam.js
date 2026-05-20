@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Triple-target: GABA-A facilitáció (anxiolitikus szál), AMPA-receptor pozitív moduláció (LTP), és L-típusú Ca²⁺-csatornák tartós aktiválása, utóbbi a fő anti-amnesztikus mechanizmus.",
   "legalStatus": "Sehol nem jóváhagyott gyógyszer; klinikai vizsgálatok lezárva. OTC „research chemical\" piacon árusított.",
-  "chemicalFormula": "C14H18N2O2"
+  "chemicalFormula": "C14H18N2O2",
+  "anecdote": "Anekdotikus beszámolók szerint a Nefiracetam tisztább és funkcionálisabb gondolkodást eredményez, nem gyorsabb kogníciót, illeszkedve a plaszticitás-fokozó profiljához. A felhasználók gyakran motivált-nyugodt állapotot írnak le, ahol a kogníció simának, hatékonynak és nem kierőszakoltnak érződik. Mechanisztikusan érinti az acetilkolint, NMDA-hoz kapcsolódó plaszticitást, kalciumjelzést és kináz utakat, szélesebb hatást adva, mint a tisztán kolinerg racetamok. Vizsgálták epilepsziás roham, kognitív károsodás és neuroprotekció kontextusban, dokumentált aktivitással a glutamát-indukált károsodás ellen. Közösségi beszámolók szerint könnyebb az adott pillanatbeli memóriaelőhívás, enyhe hangulat- és kíváncsiság-emelkedés, jobb verbális felidézés és folyamatosság, és finoman élénkebb szenzoros érzet. Összességében inkább mechanisztikus, szélesen hangolt racetamként pozicionálódik, amely a teljes agyi működést támogatja."
 }

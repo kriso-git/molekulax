@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/28925369/",
       "finding": "Intranasal oxytocin modulates social cognition and emotional processing."
     }
-  ]
+  ],
+  "anecdote": "Many users describe Oxytocin as making social interactions feel more natural and less forced — almost like being more in sync with others — though effect intensity varies considerably between individuals. Anecdotal reports describe reduced \"social friction\" and improved bonding capacity. The compound seems to amplify the current emotional context, so positive environments can feel even better while negative environments can feel worse. Tolerance can build with frequent use, and secondary effects such as mild vasodilation and modest resting-heart-rate increases are sometimes reported. Some users also report a calming focus effect when used as a nootropic or alongside one.\n\nOxytocin can be administered subcutaneously, but intra-nasal administration is generally preferred because research suggests better blood-brain-barrier penetration via the nasal route. Effects are relatively short-lasting, so situational \"as-needed\" dosing is most common rather than daily use."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Selectively activates HACU in damaged cholinergic neurons, increasing acetylcholine synthesis and release even in regions where other cholinergic agents do not act.",
   "legalStatus": "Not approved as a medicine anywhere. Sold as a “research chemical” on the OTC nootropic market.",
-  "chemicalFormula": "C19H23N3O3"
+  "chemicalFormula": "C19H23N3O3",
+  "anecdote": "Anecdotal reports describe Coluracetam as having a short onset and duration, typically lasting 1-3 hours, with multiple daily administrations common. The most consistent community observation is sensory enhancement, with users describing brighter colors, sharper contrast, or HD vision effects. The mechanism aligns with acetylcholine's role in attention, sensory gating, and visual perception, though the color-enhancement claims remain anecdotal. Phase 2A trials under the former name BCI-540 examined mood and anxiety effects with daily and three-times-daily dosing versus placebo. Coluracetam is engineered to enhance high-affinity choline uptake transporter efficiency, leaning sensory and cholinergic. Users with lower acetylcholine levels may benefit most. Some experience anxiety, over-cholinergic side effects, or a crash. It is commonly stacked as an adjunct for cholinergic uptake support at low doses."
 }

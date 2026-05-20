@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Profil agonistyczny mGluR grupy II/III + wzrost cAMP i cGMP; przewlekłe dawkowanie powoduje regulację w górę receptora mGluR.",
   "legalStatus": "Status badawczy, nigdzie nie zatwierdzony jako lek. Sprzedaż OTC w prawnej szarej strefie; zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act.",
-  "chemicalFormula": "C10H16N2O2"
+  "chemicalFormula": "C10H16N2O2",
+  "anecdote": "Doniesienia społeczności opisują Fasoracetam jako mający doskonały profil i tolerancję, użytkownicy często zgłaszają znaczne zmniejszenie lęku, poprawione skupienie i koncentrację, lepszą jakość snu i złagodzenie objawów przypominających ADHD. Efekt netto wydaje się zależeć od stopnia dysfunkcji glutaminergicznej, co oznacza, że działa najlepiej u osób z zaburzeniami sygnalizacji, najczęściej obserwowanymi w ADHD lub stanach neurodegeneracyjnych. Fasoracetam normalizuje sygnalizację GABA-B i może pomóc w odstawieniu benzodiazepin, a niektórzy członkowie społeczności łączą okazjonalny Phenibut z konsekwentnym stosowaniem Fasoracetamu, aby ograniczyć obniżenie regulacji GABA-B. Źródło choliny, takie jak CDP-Cholina, jest powszechnie zalecane. Efekty narastają w ciągu 1-2 tygodni przy chronicznym stosowaniu, ponieważ aktywność cAMP działa raczej jak powolny neuromodulator, niż wywołuje efekty doraźne. Wysoce indywidualny, ale ceniony za czyste skupienie bez stymulującej aktywacji."
 }

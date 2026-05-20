@@ -94,5 +94,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "Take in MORNING (activating profile, mitigates insomnia). MDD target 20 mg/day, OCD/bulimia 40-60 mg/day. Due to ultra-long half-life, steady-state at 4-5 weeks, and on discontinuation ~5-week auto-taper."
-  }
+  },
+  "anecdote": "Anecdotal reports describe Fluoxetine (Prozac) as one of the more well-tolerated, long-lasting SSRIs, with a lighter, more energizing subjective profile compared to sedating alternatives. Its ultra-long half-life (4-6 days for active metabolites) is forgiving for missed doses, making it a frequent Rx choice for elderly patients prone to skipping medications. Common early-treatment tradeoffs include activation, insomnia, emotional blunting, and SSRI-class sexual side effects. Community accounts note pro-cognitive properties — preclinical and clinical reports suggest improvements in long-term memory, executive function, attention, and impulsivity, with stronger effects in neurodegenerative contexts. Caution: discontinuation syndrome is milder than shorter-acting SSRIs due to self-tapering, but MAOi combinations are strictly contraindicated (serotonin syndrome risk)."
 }

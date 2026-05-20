@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/16584110/",
       "finding": "Az adamantán-konjugálás javítja a kis peptidek CNS-penetrációját és tartós hatását."
     }
-  ]
+  ],
+  "anecdote": "Az Adamax a Semax elméleti továbbfejlesztéseként van pozicionálva, papíron jobb BBB-áthatolással, hosszabb hatástartammal és erősebb neurotrofikus hatásokkal. Bár több végleges adatra van szükség, anekdotikus beszámolók szerint tisztább gondolkodás, jobb gondolatmenet és simább kogníció jellemzi. Számos közösségi vita dokumentálja a felhasználói tapasztalatokat az Adamax-szal, bár minden beszámoló anekdotikus.\n\nAz Adamax a Semaxhoz hasonló neurotrofikus és nootropikus előnyökre törekszik, de nagyobb hangsúlyt fektet a tartós aktivitásra a jobb BBB-permeabilitás és a hosszabb hatástartam révén."
 }

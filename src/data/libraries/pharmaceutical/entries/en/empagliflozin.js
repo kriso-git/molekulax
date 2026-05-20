@@ -85,5 +85,6 @@ export default {
     },
     "unit": "mg/nap",
     "note": "Standard 10 mg/day morning, up to 25 mg/day for HbA1c target. HFrEF/HFpEF indication fixed at 10 mg/day, no escalation. eGFR < 30: dose reduction or discontinuation. Food-independent."
-  }
+  },
+  "anecdote": "Community accounts note that Empagliflozin (Jardiance) feels mechanistically distinct from GLP-1 agonists for body composition support — users report reduced water retention with a mild diuretic-like quality. Beyond glycemic control, the drug has FDA-approved cardio-reno-protective indications for HFrEF, HFpEF, and CKD, with evidence suggesting attenuation of structural cardiac remodeling. Anecdotal reports describe off-label use for caloric loss via urinary glucose excretion (roughly 200-300 kcal/day), though in non-diabetic users this can cause low energy and reduced gym performance. Caution: euglycemic DKA risk, increased UTI/genital mycotic infection rates, and volume depletion warrant clinician monitoring."
 }

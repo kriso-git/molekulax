@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Selektywnie aktywuje HACU w uszkodzonych neuronach cholinergicznych, zwiększając syntezę i uwalnianie acetylocholiny nawet w regionach, gdzie inne środki cholinergiczne nie działają.",
   "legalStatus": "Nie zatwierdzony jako lek nigdzie. Sprzedawany jako „chemikalium badawcze” na rynku nootropików OTC.",
-  "chemicalFormula": "C19H23N3O3"
+  "chemicalFormula": "C19H23N3O3",
+  "anecdote": "Raporty anegdotyczne opisują Koluracetam jako mający krótki początek i czas trwania działania, zwykle trwający 1-3 godziny, z częstym wielokrotnym dziennym podawaniem. Najbardziej spójną obserwacją społeczności jest wzmocnienie sensoryczne, użytkownicy opisują jaśniejsze kolory, ostrzejszy kontrast lub efekty widzenia HD. Mechanizm pasuje do roli acetylocholiny w uwadze, bramkowaniu sensorycznym i percepcji wzrokowej, choć twierdzenia o wzmocnieniu kolorów pozostają anegdotyczne. Badania fazy 2A pod dawną nazwą BCI-540 badały efekty nastroju i lęku przy dawkowaniu raz dziennie i trzy razy dziennie w porównaniu z placebo. Koluracetam jest zaprojektowany do zwiększenia wydajności transportera wychwytu choliny o wysokim powinowactwie, skłaniając się ku sensoryczności i cholinergii. Użytkownicy z niższymi poziomami acetylocholiny mogą skorzystać najbardziej. Niektórzy doświadczają lęku, nadcholinergicznych skutków ubocznych lub spadku. Często łączony jako uzupełnienie dla wsparcia wychwytu cholinergicznego w niskich dawkach."
 }

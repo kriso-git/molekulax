@@ -216,14 +216,33 @@ export default {
       "aromatization": "NO — Trenbolone is NOT a CYP19 substrate (19-nor + Δ9,11 configuration block)",
       "hepatotoxicity": "Moderate — NOT 17α-alkylated, but high oxidative renal stress side effect",
       "quality": {
-        "pure": ["UGL Trenbolone Acetate 100 mg/ml oil vial (HPLC-tested)", "Veterinary Finaplix-H pellet conversion (historical UGL practice)"],
-        "caution": ["EOD or daily IM injection required", "PIP common (orange-red oil formula)", "Tren-cough rapid onset 30-60 s after injection"],
-        "avoid": ["Strong renal predisposition", "Planned fatherhood", "First AAS cycle (NOT a beginner compound)"]
+        "pure": [
+          "UGL Trenbolone Acetate 100 mg/ml oil vial (HPLC-tested)",
+          "Veterinary Finaplix-H pellet conversion (historical UGL practice)"
+        ],
+        "caution": [
+          "EOD or daily IM injection required",
+          "PIP common (orange-red oil formula)",
+          "Tren-cough rapid onset 30-60 s after injection"
+        ],
+        "avoid": [
+          "Strong renal predisposition",
+          "Planned fatherhood",
+          "First AAS cycle (NOT a beginner compound)"
+        ]
       },
-      "interactions": ["Cabergoline 0.25-0.5 mg E3D prolactin monitor MANDATORY", "Testosterone base stack MANDATORY (Tren standalone ED risk)", "PCT last Ace injection +2-3 days"],
+      "interactions": [
+        "Cabergoline 0.25-0.5 mg E3D prolactin monitor MANDATORY",
+        "Testosterone base stack MANDATORY (Tren standalone ED risk)",
+        "PCT last Ace injection +2-3 days"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
         "unit": "mg/EOD (IM, EOD or once daily)",
         "note": "50-100 mg EOD (weekly 175-350 mg), max 8 weeks. PCT last injection +2-3 days. Tren-Ace classic bodybuilding choice due to fast on/off."
       }
@@ -241,14 +260,31 @@ export default {
       "aromatization": "NO — Trenbolone structure block",
       "hepatotoxicity": "Moderate — same parent Trenbolone, NOT 17α-alkylated",
       "quality": {
-        "pure": ["UGL Trenbolone Enanthate 100-200 mg/ml oil vial (HPLC-tested)"],
-        "caution": ["Weekly 1-2x IM injection sufficient (steady-state 3-4 weeks)", "PIP milder than on Ace", "Tren side effects (creatinine, prolactin) same as on Ace, just accumulate more slowly"],
-        "avoid": ["Short (4-6 week) cycle ineffective", "Other Tren contraindications same"]
+        "pure": [
+          "UGL Trenbolone Enanthate 100-200 mg/ml oil vial (HPLC-tested)"
+        ],
+        "caution": [
+          "Weekly 1-2x IM injection sufficient (steady-state 3-4 weeks)",
+          "PIP milder than on Ace",
+          "Tren side effects (creatinine, prolactin) same as on Ace, just accumulate more slowly"
+        ],
+        "avoid": [
+          "Short (4-6 week) cycle ineffective",
+          "Other Tren contraindications same"
+        ]
       },
-      "interactions": ["Cabergoline E3D", "Testosterone base MANDATORY", "PCT last Enan injection +14-21 days"],
+      "interactions": [
+        "Cabergoline E3D",
+        "Testosterone base MANDATORY",
+        "PCT last Enan injection +14-21 days"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 200, "medium": 300, "high": 400},
+        "fixed": {
+          "low": 200,
+          "medium": 300,
+          "high": 400
+        },
         "unit": "mg/week (IM, weekly 1-2x split)",
         "note": "200-400 mg/week, weekly 1-2x. Minimum 8-10 week cycle. PCT last injection +14-21 days. Slower on/off than Ace, fewer injections."
       }
@@ -266,18 +302,36 @@ export default {
       "aromatization": "NO — Trenbolone structure block",
       "hepatotoxicity": "Moderate — same parent Trenbolone",
       "quality": {
-        "pure": ["Negma Parabolan 76 mg/ml ampoule (HISTORICAL Rx 1980-1997, today rare-collectible)", "UGL Tren-Hex 100 mg/ml oil vial (HPLC-tested)"],
-        "caution": ["Weekly 1-2x IM injection (medium half-life)", "PIP medium-mild", "Classic 'Parabolan' historical prestige on UGL market"],
-        "avoid": ["Standard Tren contraindications same (renal, cardiovascular, fatherhood)"]
+        "pure": [
+          "Negma Parabolan 76 mg/ml ampoule (HISTORICAL Rx 1980-1997, today rare-collectible)",
+          "UGL Tren-Hex 100 mg/ml oil vial (HPLC-tested)"
+        ],
+        "caution": [
+          "Weekly 1-2x IM injection (medium half-life)",
+          "PIP medium-mild",
+          "Classic 'Parabolan' historical prestige on UGL market"
+        ],
+        "avoid": [
+          "Standard Tren contraindications same (renal, cardiovascular, fatherhood)"
+        ]
       },
-      "interactions": ["Cabergoline E3D", "Testosterone base MANDATORY", "PCT last Hex injection +21 days"],
+      "interactions": [
+        "Cabergoline E3D",
+        "Testosterone base MANDATORY",
+        "PCT last Hex injection +21 days"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 150, "medium": 225, "high": 300},
+        "fixed": {
+          "low": 150,
+          "medium": 225,
+          "high": 300
+        },
         "unit": "mg/week (IM, weekly 1-2x)",
         "note": "150-300 mg/week, weekly 1-2x. 8-10 week cycle. PCT last injection +21 days. 'Parabolan' has historical prestige — Negma Rx quality illusion, modern UGL same category as Tren-Ace/Enan."
       }
     }
   ],
-  "defaultVariant": "ace"
+  "defaultVariant": "ace",
+  "anecdote": "Trenbolone is a very potent and complex steroid not recommended for beginners, even in microdosed form. Two main esters circulate: Acetate (half-life ~2-4 days) and Enanthate (half-life ~7-9 days). Users report this compound as more 'feelable' than most AAS, both physically and mentally — insane strength gains, rapid recomposition (simultaneous fat loss and muscle gain), and a hard, dry visual signature. Nutrient partitioning is dramatically increased. The tradeoffs are heavy: Tren significantly elevates blood pressure, crushes HDL while spiking LDL, and raises hematocrit. Sleep disruption (night sweats, severe insomnia) is extremely common, driven by CNS-stimulating effects and elevated sympathetic tone. Prolactin elevation from progestogenic activity can produce libido fluctuations, ED, gyno, and even lactation. Thyroid impact (lower T3, altered conversion) and cardiovascular strain via oxidative stress are also documented. Mentally, users describe increased aggression, anxiety, and irritability. Extremely effective but very risky — do your own research."
 }

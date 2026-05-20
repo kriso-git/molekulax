@@ -244,7 +244,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 300, "medium": 500, "high": 700},
+        "fixed": {
+          "low": 300,
+          "medium": 500,
+          "high": 700
+        },
         "unit": "mg/week (IM, split 3x EOD)",
         "note": "300-700 mg/week, 3x EOD split (Mon/Wed/Fri). PCT last injection +3-5 days."
       }
@@ -281,7 +285,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "fixed": {
+          "low": 250,
+          "medium": 500,
+          "high": 750
+        },
         "unit": "mg/week (IM, split 1-2x)",
         "note": "250-750 mg/week, weekly 1-2x. PCT last injection +14-21 days."
       }
@@ -317,7 +325,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "fixed": {
+          "low": 250,
+          "medium": 500,
+          "high": 750
+        },
         "unit": "mg/week (IM, split 1-2x)",
         "note": "250-750 mg/week, weekly 1-2x. PCT last injection +14-21 days."
       }
@@ -354,7 +366,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "fixed": {
+          "low": 250,
+          "medium": 500,
+          "high": 750
+        },
         "unit": "mg/week (IM, split 1-2x)",
         "note": "250-750 mg/week, weekly 1-2x recommended (NOT monthly 1x like TRT). PCT last injection +18-21 days."
       }
@@ -392,11 +408,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 100, "high": 200},
+        "fixed": {
+          "low": 50,
+          "medium": 100,
+          "high": 200
+        },
         "unit": "mg/injection (IM, daily or EOD)",
         "note": "50-200 mg/injection daily or EOD. Pre-workout boost 50-100 mg 1-2 hours before training. PCT last injection +24-48 hours."
       }
     }
   ],
-  "defaultVariant": "enan"
+  "defaultVariant": "enan",
+  "anecdote": "Testosterone is the reference molecule of all AAS and the foundation of TRT protocols. Anecdotal reports describe users running testosterone as a lifelong protocol, typically through medically supervised TRT. Both Testosterone Propionate and Cypionate are commonly used. Community accounts note that Propionate is quicker-acting and produces a more 'on-demand' drive feel with less water retention or hormone fluctuation, while Cypionate is favored for year-round stable use with consistent serum levels. Many users report that testosterone-only cycles tend to produce the best long-term results in community experience, with fewer stacking variables to manage. Overall, testosterone remains the cornerstone of AAS and TRT practice and the benchmark against which other compounds are compared."
 }

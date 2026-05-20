@@ -89,5 +89,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "Reggel vagy este, étkezéstől függetlenül. MDD cél-dózis 10 mg/nap, GAD/OCD 10-20 mg/nap. > 20 mg/nap QT-prolongáció miatt NEM ajánlott. Lassú leépítés a discontinuation szindróma elkerülésére."
-  }
+  },
+  "anecdote": "Közösségi beszámolók szerint az Escitalopram az egyik legtisztább tolerálhatósági és mellékhatás-profilú SSRI, amit a Cipriani 2018-as meta-analízis is alátámaszt, a hatékonyság szempontjából a legmagasabb kategóriába sorolva. A felhasználók csendes szubjektív profilként írják le — szorongáscsökkentő és hangulatjavító hatású, erős stimuláns vagy szedatív karakter nélkül. A teljes terápiás haszon jellemzően 4-8 hét alatt alakul ki, így türelem szükséges az indítás során. Szexuális diszfunkció (késleltetett orgazmus, csökkent libidó) gyakran jelentett, az SSRI-osztálynak megfelelően. A 27-32 órás felezési idő stabil plazmaszintet biztosít napi egyszeri adagolással. Figyelem: hirtelen abbahagyás esetén megvonási szindróma — klinikai felügyelet alatt csökkentsd. Magasabb dózisoknál QT-megnyúlás kockázata, ami EKG-monitorozást igényel."
 }

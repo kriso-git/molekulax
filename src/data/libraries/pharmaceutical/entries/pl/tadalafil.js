@@ -206,5 +206,6 @@ export default {
     },
     "unit": "mg",
     "note": "Niska (2,5 mg dziennie): początek trybu daily ED lub redukcja u starszych/z niewydolnością nerek. Średnia (5 mg dziennie): standard daily ED lub BPH (wskazanie FDA 2011) lub ED+BPH podwójnie. Wysoka (20 mg PRN): ED na żądanie, maks. raz dziennie, 30-45 min przed aktywnością. Nigdy nie łączyć z azotanem."
-  }
+  },
+  "anecdote": "Raporty anegdotyczne opisują codzienny niskodawkowy Tadalafil (zazwyczaj 5 mg, czasem 10-20 mg) jako wywołujący trwałe rozszerzenie naczyń, z zauważalną poprawą jakości pompy podczas treningu oporowego, łagodnym obniżeniem ciśnienia krwi (około 5 mmHg skurczowego/rozkurczowego) i stałymi korzyściami dla przepływu krwi przez cały dzień. Ze względu na okres półtrwania 17,5 godziny, czas podania jest elastyczny — efekty zwykle odczuwa się 30-60 minut po przyjęciu, ale codzienne dawkowanie zapewnia stabilne stężenie w osoczu. Kontekst Rx obejmuje zaburzenia erekcji, BPH i tętnicze nadciśnienie płucne. Uwaga: jednoczesne stosowanie azotanów jest przeciwwskazane; interakcje z alfa-blokerami wymagają nadzoru klinicysty."
 }

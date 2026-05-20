@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Po hydrolizie uwalnia cholinę + glicerofosforan; cholina służy jako substrat do syntezy acetylocholiny, glicerofosforan jako budulec fosfatydylocholiny, razem wspierają napięcie cholinergiczne i syntezę fosfolipidów błonowych.",
   "legalStatus": "Na receptę we Włoszech (Delecit). Sprzedawany jako suplement diety w innych państwach UE i USA. Wolno dostępny na Węgrzech.",
-  "chemicalFormula": "C8H20NO6P"
+  "chemicalFormula": "C8H20NO6P",
+  "anecdote": "Doniesienia społeczności opisują Alpha-GPC jako dobrze dopasowany do krótkoterminowych wzmocnień wydajności, użytkownicy zwykle przyjmują 1 g przed treningiem. Pozycjonowany jako doraźna forma choliny, ze względu na krótki czas działania, z silniejszymi korzyściami w zakresie wydajności fizycznej niż długoterminowymi korzyściami poznawczymi. CDP-Cholina lub inne formy są zazwyczaj używane do chronicznego wsparcia acetylocholiny. W kontekstach treningowych użytkownicy zauważają poprawione połączenie umysł-mięsień, co jest jednym z powodów, dla których pojawia się w wielu formułach przedtreningowych. Nadmierne dawkowanie może wywoływać objawy nadcholinergiczne, takie jak bóle głowy, mgła mózgowa i nudności, więc kalibracja dawki jest ważna. Niektórzy użytkownicy doświadczają lęku, w którym to przypadku często sugeruje się łączenie z L-Treonianem Magnezu. Ceniony jako solidna forma choliny dla krótkich wzmocnień poznawczych i wydajności fizycznej."
 }

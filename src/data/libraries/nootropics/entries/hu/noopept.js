@@ -141,5 +141,6 @@ export default {
     "aniracetam",
     "coluracetam",
     "semax"
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a Noopept az egyik leginkább érzékelhető nootropikum, különösen tisztaság és verbális folyamatosság tekintetében, a hatás kezdetben finom, de idővel erősödik, ahogy a BDNF és NGF expresszió növekedni látszik. Közösségi beszámolók szerint javul a memóriaelőhívás és a gondolkodás simasága, mások enyhe stimulációt vagy ingerlékenységet írnak le magasabb dózisoknál, így a válasz nagyon egyéni. Az enyhe szenzoros észlelésnövekedés (színek, hangtisztaság) niche, de visszatérő megfigyelés. A racetamokhoz képest a Noopept kompaktabb és potensebb, akut és hosszú távú előnyökkel. Jellemzően szájon át vagy szublingválisan adagolják, gyakran ciklikusan, nem folyamatosan. Dokumentált hátrány, hogy felerősítheti a jel-zaj arány zajkomponensét, néhány felhasználó túlingerültnek vagy fókuszálatlannak érzi magát, és ez a zaj kódolódik a hasznos információval együtt."
 }

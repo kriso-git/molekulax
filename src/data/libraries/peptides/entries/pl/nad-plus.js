@@ -49,5 +49,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/26785480/",
       "finding": "Odbudowa NAD+ poprawia funkcję mitochondrialną i spowalnia degenerację związaną z wiekiem."
     }
-  ]
+  ],
+  "anecdote": "Użytkownicy podający NAD+ często zgłaszają przesunięcie energii bazowej bez znaczącej stymulacji — poczucie mniejszego wyczerpania przez cały dzień. Stosowanie dożylne może być intensywne, jeśli jest podawane zbyt szybko, więc zaleca się profesjonalne podawanie. NAD+ działa najlepiej przy konsekwentnym dawkowaniu, ponieważ działa jako stały związek tła, a nie coś odczuwanego ostro. Wspiera funkcje komórkowe, szczególnie u starszych użytkowników, ponieważ poziomy NAD+ podobno spadają z wiekiem. Niektórzy użytkownicy zauważają również lepszą jasność umysłu i kognicję.\n\nNAD+ można podawać dożylnie lub podskórnie. Formy doustne są słabo biodostępne."
 }

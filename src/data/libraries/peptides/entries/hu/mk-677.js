@@ -49,5 +49,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/19018024/",
       "finding": "2 év MK-677 fokozta a GH/IGF-1 szintet és a zsírmentes testtömeget idős felnőttekben."
     }
-  ]
+  ],
+  "anecdote": "Közösségi beszámolók szerint az MK-677 hatékony, de jelentős éhségérzettel, vízvisszatartással és puffadással jár a megnövekedett GH-kibocsátás miatt. A felhasználók jellemzően jobb alvásról, teltebb izmokról, javuló bőr- és hajminőségről, valamint észrevehető edzéstermi előrehaladásról számolnak be, miközben az éhségérzet tartósan fennáll. A vegyület kapszula vagy folyékony formában érhető el, és általában napi egyszer adagolják a hosszú, kb. 24 órás felezési idő miatt. Egyes felhasználók esti adagolást részesítik előnyben az alvásra gyakorolt hatás miatt, mások korábbi időpontot választanak az étvágy szabályozására."
 }

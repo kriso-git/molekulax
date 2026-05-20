@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "AMPA positive modulation + cholinergic HACU enhancement → combined facilitation of glutamatergic LTP and acetylcholine synthesis.",
   "legalStatus": "Prescription-only in Italy. Not FDA-approved in the USA; sold as a “research chemical” on the OTC nootropic market.",
-  "chemicalFormula": "C6H10N2O3"
+  "chemicalFormula": "C6H10N2O3",
+  "anecdote": "Anecdotal reports describe Oxiracetam at around 1000 mg as a solid cognitive enhancer, with users noting dialed-in focus when supplementing 1 g Alpha-GPC alongside it to maintain choline levels. Community accounts describe Oxiracetam as one of the more structured members of the racetam family, improving focus, verbal fluidity, and mental organization. Users commonly employ it for study sessions and memorization-heavy tasks as a daily driver. Evidence suggests it functions effectively as a memory enhancer when taken consistently, making it a viable choice for long-term nootropic protocols. Compared to other racetams, it leans cognitive and focus-oriented rather than mood-modulating, with AMPA and cholinergic activity underlying the profile."
 }

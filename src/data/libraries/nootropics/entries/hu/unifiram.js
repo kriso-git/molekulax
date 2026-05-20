@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "AMPA-receptor pozitív allosztérikus moduláció és valószínűleg NMDA glicin-hely indirekt aktiválás, a Sunifiramhoz hasonló profil, hasonló potencitással.",
   "legalStatus": "Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja; egyéb piacokon „research chemical\".",
-  "chemicalFormula": "C13H15FN2O3S"
+  "chemicalFormula": "C13H15FN2O3S",
+  "anecdote": "Anekdotikus beszámolók szerint az Unifiram ígéretes, de még kísérleti nootropikum, jelentősen változó hatásprofillal. Közösségi beszámolók stimuláló tulajdonságokat jelentenek, néhány felhasználónál szorongást válthat ki, míg mások koffeinnel való szinergiát és alkalmi enyhe eufóriát említenek. Önbizalom-növekedést és mentálisan online energetizáló hatást gyakran említenek. A mentális tisztaság beszámolók szerint AMPA-szerű moduláción keresztül fokozódik, javítva a verbális folyamatosságot, kogníciót és acetilkolin felszabadulást. A Sunifiramhoz képest az Unifiramot kevésbé aktiválónak és inkább prokognitívnak jellemzik. Összességében szilárd, de kísérleti ampakin opcióként pozicionálódik, amely néhány felhasználónál önbizalmat és mentális fokozást, míg másoknál szorongást vagy feszültséget vált ki, a válasz erősen egyéni."
 }

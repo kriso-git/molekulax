@@ -291,5 +291,6 @@ export default {
       }
     }
   ],
-  "defaultVariant": "prop"
+  "defaultVariant": "prop",
+  "anecdote": "Az anekdotikus beszámolók szerint a Masteron kifejezett diuretikus hatást vált ki, a felhasználók gyakran jelentősen megnövekedett vizeletürítésről számolnak be. Közösségi beszámolók szerint a magas E2 tünetei is csökkennek, még jelentős tesztoszteron-dózisok mellett is, ami összhangban van a receptorszintű anti-ösztrogén aktivitásával. A Masteron azonban hírhedten gyorsítja az androgén hajhullást; a férfias kopaszodásra hajlamos felhasználók gyakran azonnali hajszélvékonyodást tapasztalnak a kezdés után. Általában 'kozmetikai anabolikumnak' tekintik — keménység, szárazság és fizikai finomítás céljából hasznos, nem pedig érdemi izomgyarapodásra. Összességében szilárd DHT-származékos anabolikumnak tartják, megfelelő használat esetén egyértelmű réssel, de az androgén kompromisszumok (különösen a hajhullás) komoly megfontolandóak a genetikailag hajlamos felhasználók számára."
 }

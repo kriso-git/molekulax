@@ -75,5 +75,6 @@ export default {
   "doseCalc": {
     "type": "warning",
     "warning": "Az Isotretinoin a SÚLYOS ACNE GOLD-STANDARD szere, de SZIGORÚAN BŐRGYÓGYÁSZ-FELÜGYELET ALATT, terhesség-megelőzési protokollal (USA: iPLEDGE, EU: nemzeti programok). NEM ÖNÁLLÓ DÓZIS-KALKULÁTOR ezen az oldalon, mert: (1) FDA X kategória TERATOGENITÁS — egyetlen kihagyott fogamzásgátlás vagy laborkontroll súlyos magzati malformációhoz vezethet; (2) a kumulatív dózis (120-150 mg/kg testtömeg/kúra) testtömeg-egyéni, bőrgyógyász-számolja; (3) HAVI VÉRKÉP, májfunkció + LIPID-monitor KÖTELEZŐ; (4) Tetraciklinnel KOMBINÁCIÓ TILOS (pszeudotumor cerebri); (5) Pszichiátriai tünet (depresszió-suicidalitás) FDA-figyelmeztetés. Beszélj a bőrgyógyászoddal. Sürgősségi tünet (látászavar, fejfájás-tartós, hangulati lehangoltság, vér a székletben, terhesség gyanú): AZONNALI ellátás."
-  }
+  },
+  "anecdote": "Anekdotikus beszámolók szerint az Izotretinoin (Accutane) inkább szisztémás kezelés, mint helyi bőrgyógyszer, hatásai túlmutatnak az akne eltüntetésén. A felhasználók gyakran jeleznek megnövekedett bőrrugalmasságot, néhányan teltebbnek tűnő arcvonásokat (orr, ajak) figyelnek meg a kúra alatt és után — erősen szubjektumfüggő. A hosszú távú akne-remisszió sok beszámoló szerint figyelemre méltó eredmény. A hangulati mellékhatások továbbra is vitatottak; a bizonyítékok vegyesek, de szűrést indokolnak. Klinikai kontextus: a lipidpanel és LFT-monitorozás kötelező, az FDA X kategóriás teratogenitás iPLEDGE-regisztrációt igényel női pácienseknél, szigorú terhességmegelőzési protokollokkal."
 }

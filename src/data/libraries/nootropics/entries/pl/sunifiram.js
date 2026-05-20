@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Pozytywna modulacja allosteryczna receptora AMPA + pośrednia aktywność w miejscu glicyny NMDA → silne wzmocnienie LTP w modelach zwierzęcych przy 0,01-0,1 mg/kg.",
   "legalStatus": "Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; sklasyfikowany jako „chemikalium badawcze” gdzie indziej.",
-  "chemicalFormula": "C14H18N2O2"
+  "chemicalFormula": "C14H18N2O2",
+  "anecdote": "Raporty anegdotyczne opisują Sunifiram jako dość silny nootropik z poprawą funkcji poznawczych i udokumentowanymi obawami dotyczącymi ekscytotoksyczności, co prowadzi niektórych użytkowników do łączenia go z antagonistą NMDA, takim jak Memantyna. Doniesienia społeczności zgłaszają wzmocnienie nastroju i niewielki, podobny do stymulanta efekt poznawczy, jeden użytkownik zgłasza skuteczne okazjonalne dawkowanie 5 mg. Inny użytkownik zauważył rozwój tolerancji po 3 dniach ciągłego podawania, co sugeruje, że cykliczność jest korzystna. Zgłoszono ryzyko ekscytotoksycznego uszkodzenia mózgu, więc zdecydowanie zaleca się rozpoczynanie od niskich dawek. Niektórzy użytkownicy porównują doświadczenie do megadawki Noopeptu, wywołującej intensywne, laserowe skupienie. Inni opisują znacznie wzmocniony nastrój, klarowność wzroku i elastyczność poznawczą. Profil toksyczności nie jest w pełni zrozumiały, więc ostrożność jest niezbędna."
 }

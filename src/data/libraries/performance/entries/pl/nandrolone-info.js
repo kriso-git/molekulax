@@ -119,14 +119,32 @@ export default {
       "aromatization": "Minimalna — ~10% w porównaniu do aromatyzacji testosteronu",
       "hepatotoxicity": "Niska — NIE 17α-alkilowany, IM omija first-pass",
       "quality": {
-        "pure": ["Organon Deca-Durabolin 50 mg/ml ampułka (UE Rx)", "UGL Nandrolon Dekanonat 200-300 mg/ml fiolka olejowa, HPLC-testowane"],
-        "caution": ["Długoterminowa supresja HPTA 12-16 tygodni", "Wzrost prolaktyny (gotowość kabergoliny)", "Deca-dick utrata libido powszechna"],
-        "avoid": ["Planowane ojcostwo w bliskim horyzoncie czasowym (odzyskanie HPTA 6-12 miesięcy po Deca)", "Testowanie sportu wyczynowego w ciągu 12-18 miesięcy"]
+        "pure": [
+          "Organon Deca-Durabolin 50 mg/ml ampułka (UE Rx)",
+          "UGL Nandrolon Dekanonat 200-300 mg/ml fiolka olejowa, HPLC-testowane"
+        ],
+        "caution": [
+          "Długoterminowa supresja HPTA 12-16 tygodni",
+          "Wzrost prolaktyny (gotowość kabergoliny)",
+          "Deca-dick utrata libido powszechna"
+        ],
+        "avoid": [
+          "Planowane ojcostwo w bliskim horyzoncie czasowym (odzyskanie HPTA 6-12 miesięcy po Deca)",
+          "Testowanie sportu wyczynowego w ciągu 12-18 miesięcy"
+        ]
       },
-      "interactions": ["Kabergolina 0,25 mg 2x/tydzień monitor prolaktyny", "Stack z bazą testosteronu standardowy (Deca samodzielnie ryzyko ED)", "PCT ostatnia iniekcja Deca +3 tygodnie"],
+      "interactions": [
+        "Kabergolina 0,25 mg 2x/tydzień monitor prolaktyny",
+        "Stack z bazą testosteronu standardowy (Deca samodzielnie ryzyko ED)",
+        "PCT ostatnia iniekcja Deca +3 tygodnie"
+      ],
       "doseCalc": {
         "type": "bodyweight",
-        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "perKg": {
+          "low": 2,
+          "medium": 4,
+          "high": 6
+        },
         "unit": "mg/tydzień (IM, tygodniowo 1x)",
         "note": "100-150 mg/tydzień (Deca-bridge), 300-600 mg/tydzień (bulking). Tygodniowo 1x iniekcja IM z powodu 15-dniowego okresu półtrwania."
       }
@@ -144,18 +162,37 @@ export default {
       "aromatization": "Minimalna — ~10% w porównaniu do aromatyzacji testosteronu (ten sam macierzysty Nandrolon)",
       "hepatotoxicity": "Niska — NIE 17α-alkilowany",
       "quality": {
-        "pure": ["UGL NPP 100 mg/ml fiolka olejowa (HPLC-testowane)", "Niektóre apteki UE Durabolin (regionalne Rx) 25-50 mg/ml"],
-        "caution": ["EOD lub 2x tygodniowo iniekcja IM wymagana (krótki okres półtrwania)", "Wzrost prolaktyny na poziomie Deca", "PIP silniejszy na NPP niż Deca"],
-        "avoid": ["Planowane ojcostwo w bliskim horyzoncie czasowym", "Jeśli zmęczenie iniekcyjne wysokie, preferowany Deca (tygodniowo 1x)"]
+        "pure": [
+          "UGL NPP 100 mg/ml fiolka olejowa (HPLC-testowane)",
+          "Niektóre apteki UE Durabolin (regionalne Rx) 25-50 mg/ml"
+        ],
+        "caution": [
+          "EOD lub 2x tygodniowo iniekcja IM wymagana (krótki okres półtrwania)",
+          "Wzrost prolaktyny na poziomie Deca",
+          "PIP silniejszy na NPP niż Deca"
+        ],
+        "avoid": [
+          "Planowane ojcostwo w bliskim horyzoncie czasowym",
+          "Jeśli zmęczenie iniekcyjne wysokie, preferowany Deca (tygodniowo 1x)"
+        ]
       },
-      "interactions": ["Kabergolina 0,25 mg 2x/tydzień", "Stack z bazą testosteronu standardowy", "PCT ostatnia iniekcja NPP +5-7 dni (szybszy klirens niż Deca)"],
+      "interactions": [
+        "Kabergolina 0,25 mg 2x/tydzień",
+        "Stack z bazą testosteronu standardowy",
+        "PCT ostatnia iniekcja NPP +5-7 dni (szybszy klirens niż Deca)"
+      ],
       "doseCalc": {
         "type": "bodyweight",
-        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "perKg": {
+          "low": 2,
+          "medium": 4,
+          "high": 6
+        },
         "unit": "mg/tydzień (IM, EOD lub 2x tygodniowo)",
         "note": "100-150 mg/tydzień (bridge), 300-600 mg/tydzień (bulking). EOD lub 2x tygodniowo iniekcja IM. Szybsze on/off niż Deca → bardziej odpowiednie dla 'krótszych' cykli."
       }
     }
   ],
-  "defaultVariant": "deca"
+  "defaultVariant": "deca",
+  "anecdote": "Raporty anegdotyczne opisują użytkowników prowadzących cykle Nandrolonu (estry NPP lub Deca) przez 3-5 miesięcznych faz masowych z istotnymi przyrostami. Doniesienia społeczności wskazują, że podwyższona prolaktyna jest częsta, czasem dodawany jest P5P lub kabergolina jako środek zaradczy. Deca to dłużej działający ester i jest bardziej kojarzony z retencją wody, podczas gdy NPP działa krócej i anegdotycznie wywołuje mniejszą retencję wody, choć indywidualna zmienność jest duża. Niektórzy użytkownicy zgłaszają łagodne objawy depresyjne około 3 miesiąca stosowania NPP, co w literaturze powiązano z aktywnością neurosteroidową i progestagenną. Niskodawkowy NPP (około 140 mg/tydzień) jest czasami stosowany cały rok jako wsparcie stawów u użytkowników z przewlekłymi problemami stawowymi. Ogólnie estry Nandrolonu pozostają fundamentalnym związkiem w cyklach masowych, a działania niepożądane związane z prolaktyną i zdrowiem psychicznym są najczęściej wymienianymi kompromisami."
 }

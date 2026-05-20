@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Pozytywna modulacja allosteryczna receptorów AMPA, spowalnia desensytyzację po związaniu glutaminianu i zwiększa prąd synaptyczny; opisano również wtórną modulację cholinergiczną i D2/D3.",
   "legalStatus": "Lek na receptę we Włoszech (Ampamet, Memodrin). Niezatwierdzony przez FDA poza UE/USA; sprzedaż OTC pozostaje w prawnej szarej strefie.",
-  "chemicalFormula": "C12H13NO3"
+  "chemicalFormula": "C12H13NO3",
+  "anecdote": "Raporty anegdotyczne opisują Aniracetam jako jeden z bardziej odczuwalnych racetamów, szczególnie pod kątem nastroju i lęku, często wywołujący subtelne wzmocnienie pewności siebie bez efektów ubocznych typowych dla stymulantów. Początek działania jest szybki, a czas trwania krótki, zwykle około 1-2 godzin, użytkownicy często dzielą podawanie na dwie dzienne dawki. Doniesienia społeczności opisują go jako dobrze dopasowany do sytuacji wymagających ostrości umysłowej połączonej z relaksem. W porównaniu z Nefiracetamem, Aniracetam skłania się bardziej ku nastrojowi i społecznej swobodzie niż efektom pamięciowym, z silniejszą aktywnością AMPA-PAM leżącą u podstaw profilu przeciwlękowego. Źródło choliny, takie jak CDP-Cholina lub Cytykolina, jest powszechnie łączone, aby wspierać ton cholinergiczny. Jego rozpuszczalność w tłuszczach oznacza, że najlepiej wchłania się z posiłkiem zawierającym tłuszcze."
 }

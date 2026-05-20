@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/7791904/",
       "finding": "A DSIP csökkenti a stresszreakciókat és javítja a kognitív teljesítményt szorongásos modellekben."
     }
-  ]
+  ],
+  "anecdote": "A DSIP egy találó vagy nem-találó peptid. Sok felhasználó számára működik, de nem mindenkinek, és hatásai finomak. Ahelyett, hogy \"kiütné\" a felhasználókat, inkább gyengéden javítja az alvás mélységét és csökkenti az éjszakai felébredéseket. Egyes felhasználók a CBN-t hatékonyabbnak találják a DSIP-nél. A DSIP segíthet az éjszakai kortizol-csúcsok tompításában is, bár ez változó. Inkább szabályozó, mint szedatív, potenciálisan az alvás-architektúrát támogatja, nem csak alvást indukál. Korlátozott bizonyítékok arra utalnak, hogy segíthet az éjszakai növekedési hormon termelés növelésében.\n\nA DSIP szubkután vagy intranazálisan adható. Erősen egyén-függő, és az eredmények jelentősen változnak."
 }

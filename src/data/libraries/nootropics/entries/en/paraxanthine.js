@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Competitive antagonism at adenosine A1 + A2A receptors → increased vigilance and prefrontal dopaminergic signaling. Phosphodiesterase inhibition → elevated cAMP in smooth muscle and adipose tissue (lipolysis stimulation). Lower A2B affinity than caffeine, so the anxiogenic side-effect is attenuated.",
   "legalStatus": "EU/HU/USA: legal as a dietary supplement. The US FDA recognized New Dietary Ingredient (NDI) status for ENFINITY-brand paraxanthine in 2022. Sport doping: not on the 2026 WADA Prohibited List, but verify against the current edition before competition.",
-  "chemicalFormula": "C7H8N4O2"
+  "chemicalFormula": "C7H8N4O2",
+  "anecdote": "Community accounts describe Paraxanthine as a clean caffeine, providing solid focus without much anxiety or other side effects typical of caffeine. Users report it feels smoother on the cardiovascular and nervous systems, particularly for individuals who tolerate caffeine poorly. As the main active metabolite of caffeine, its effects are typically more predictable. Paraxanthine is administered orally and has a shorter, smoother duration than caffeine, so timing pre-event or earlier in the day is commonly suggested. Dosing is flexible and depends on individual sensitivity, particularly if there is an existing caffeine tolerance. It is gaining popularity as a next-generation stimulant or productivity-oriented nootropic."
 }

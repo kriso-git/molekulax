@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Irreversible MAO-B inhibition → elevated nigrostriatal dopamine and PEA levels; additionally, antiapoptotic and NGF-like neuroprotective effects on dopaminergic neurons are described.",
   "legalStatus": "FDA-approved for Parkinson`s + depression. Prescription-only across the EU. Hungary requires specialist prescription; not OTC.",
-  "chemicalFormula": "C13H17N"
+  "chemicalFormula": "C13H17N",
+  "anecdote": "Selegiline is primarily characterized as a selective MAO-B inhibitor and partial dopamine preserver, though its profile is more nuanced. It tends to elevate phenethylamine, a trace amine associated with improved alertness, mental energy, and novelty salience, which likely accounts for the nootropic-like benefits some users describe. Neuroprotective effects are notable, partly through increased antioxidant enzyme expression and mitochondrial resilience, leading some researchers to frame it as well-suited for aging and cognitive decline rather than acute enhancement. Mechanistically, community accounts describe Selegiline as appearing to clean up and amplify natural dopamine tone simultaneously, producing a uniquely structured profile. Stacking with dopamine-raising stimulants is discouraged due to MAO-B inhibition, which can cause extended periods of excitation."
 }

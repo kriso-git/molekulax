@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Hippokampális HACU-fokozás → emelt acetilkolin-szintézis; mellékhatásként AMPA-receptor pozitív moduláció. Nem köt direkt receptorhoz.",
   "legalStatus": "Olaszországban (Pramistar) vényköteles volt, több piacon visszavonva. USA-ban nem FDA-jóváhagyott; OTC nootropikum-piacon elérhető.",
-  "chemicalFormula": "C14H27N3O2"
+  "chemicalFormula": "C14H27N3O2",
+  "anecdote": "Anekdotikus beszámolók szerint a Pramiracetam egyszerű, de még mindig hatékony racetam, a felhasználók jellemzően lezárt, fókuszált érzést tapasztalnak, nem erős neurotranszmitter-rendszer hatásokat. Közösségi beszámolók a memória felvételének, kódolásának és előhívásának erős fokozását hangsúlyozzák, a bizonyítékok felgyorsult kolinerg impulzusáramlást sugallnak a hippokampusz áramkörökben, ami a memóriaprofil mögött áll. A vegyület beszámolók szerint kevésbé hatékonyan működik, amikor az agy stressz alatt áll, az emelkedett kortikoszteroidok blokkolják az összes racetam memóriafokozó hatását, nem csak a Pramiracetamét. Ez gyengébb választássá teszi nagy nyomású időszakok alatt. Összességében szilárd racetamként pozicionálódik potens HACU fokozással és AMPA modulációval, bár sok közösségi tag inkább a Coluracetamot választja hasonló mechanizmusok esetén."
 }

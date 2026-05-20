@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "„Mechanizm CAE” Knolla, wzmocnienie reakcji presynaptycznych neuronów katecholaminergicznych i feniloetyloaminowych na elektryczne potencjały czynnościowe, tak by każdy impuls uwalniał więcej neuroprzekaźnika. Nie wyzwala uwalniania podstawowego, efekt zależny od aktywności.",
   "legalStatus": "Nigdzie nie zatwierdzony jako lek. Akademicki związek badawczy; nawet na rynku „chemikaliów badawczych” niezbyt dostępny.",
-  "chemicalFormula": "C16H23NO"
+  "chemicalFormula": "C16H23NO",
+  "anecdote": "Doniesienia społeczności często preferują BPAP nad PPAP HCl, opisując doświadczenie jako czystsze, a nie agresywne. Dowody sugerują potencjalne obciążenie wątroby nawet przy niskich dawkach, co należy rozważyć przed dłuższym stosowaniem. Przy wyższych stężeniach BPAP działa jako inhibitor wychwytu zwrotnego monoamin, ale nie uwalnia monoamin tak, jak robią to amfetaminy; działa silniej jako DRI i NRI niż jako SRI. Udokumentowano efekty neuroprotekcyjne i skuteczność w dużej depresji. Aktywny w niskich dawkach, BPAP funkcjonuje bardziej jako naturalny wzmacniacz motywacji niż stymulant. Indywidualna reakcja jest bardzo zmienna, ale doniesienia społeczności pozycjonują go jako solidny wybór dla poprawy napędu w odpowiednich okolicznościach."
 }

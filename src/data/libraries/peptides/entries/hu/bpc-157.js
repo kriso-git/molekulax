@@ -77,5 +77,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/33797367/",
       "finding": "Dopaminerg és szerotonin rendszer modulálása, idegszöveti védelem iszkémia és trauma ellen."
     }
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a felhasználók szubkután adták be a BPC-157-et egy sérült boka közelébe, és a járás közbeni fájdalom 2-3 napon belül csökkent 500 mcg reggeli, sérülés-közeli adagolás mellett. Egy 4 hetes ciklus alatt a közösségi beszámolók javuló edzéstermi regenerációt és csökkent izomláz-érzetet említenek — a placebo nem zárható ki, de az időzítés összhangban van a BPC-157 feltételezett szövet-helyreállító mechanizmusával.\n\nA peptidet jellemzően naponta adják be, vagy szubkután injekció, vagy szájon át szedhető kapszula formájában. Addig adagolható, amíg az előnyök szükségesek vagy indokoltak."
 }

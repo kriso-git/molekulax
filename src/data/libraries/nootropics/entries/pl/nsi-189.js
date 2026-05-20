@@ -148,5 +148,6 @@ export default {
     "semax",
     "tianeptine",
     "methylene-blue"
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują NSI-189 jako wykazujący profil skoncentrowany na hipokampie, który jest niezwykle obiecujący w porównaniu z innymi środkami nootropowymi, z dzwonową krzywą dawka-odpowiedź, co oznacza, że wyższe dawki niekoniecznie oznaczają silniejsze efekty. Prace na gryzoniach łączą związek z poprawą oddychania mitochondrialnego i zapasową pojemnością oddechową. Badania fazy 1B wykazały okres półtrwania 17,4-20,5 godziny ze stanem stacjonarnym w około 4-5 dni, wraz z korzyściami dla funkcji wykonawczych, dokładności uczenia się i wydajności związanej z pamięcią. Doniesienia społeczności opisują przywrócenie emocjonalne, a nie sztuczne podniesienie, z żywym wynurzaniem się wspomnień jako powtarzającym się raportem. Niektórzy użytkownicy opisują wzmożoną teksturę zmysłową i zmniejszone tarcie społeczne, w tym poprawę objawów depresji opornej na leczenie. Korzyści utrzymują się po zaprzestaniu stosowania, zgodnie ze zmianami strukturalnymi napędzanymi przez plastyczność, a nie efektami doraźnymi."
 }

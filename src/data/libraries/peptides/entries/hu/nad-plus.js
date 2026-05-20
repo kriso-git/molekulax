@@ -49,5 +49,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/26785480/",
       "finding": "A NAD+ szintjének helyreállítása javítja a mitokondriális funkciót és csökkenti az életkorfüggő romlást."
     }
-  ]
+  ],
+  "anecdote": "A NAD+-t alkalmazó felhasználók gyakran számolnak be alap-energia-eltolódásról jelentős stimuláció nélkül — kevésbé érzik magukat lemerültnek a nap folyamán. Az intravénás használat intenzív érzést kelthet, ha túl gyorsan adják, ezért a professzionális adagolás ajánlott. A NAD+ konzisztens adagolás mellett működik a legjobban, mivel inkább stabil háttér-vegyületként hat, nem pedig akutan érzékelhető hatóanyagként. Támogatja a sejtfunkciót, különösen idősebb felhasználóknál, mivel a NAD+ szintek a kor előrehaladtával csökkennek. Egyes felhasználók javuló mentális tisztaságról, kognícióról és csökkent agyköd-érzetről is beszámolnak.\n\nA NAD+ infúzióval (ha az erőforrások engedik) vagy szubkután adható. Az orális formák gyengén biohasznosulnak."
 }

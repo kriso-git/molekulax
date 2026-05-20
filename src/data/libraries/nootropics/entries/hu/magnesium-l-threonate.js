@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Emelt agyi Mg²⁺-szintek modulálják az NMDA-receptort (a fiziológiás Mg²⁺-blokk visszaállítása), erősítik az LTD/LTP egyensúlyt, és növelik a dendritikus tüske-sűrűséget a prefrontális kéregben és a hippokampuszban.",
   "legalStatus": "OTC étrend-kiegészítő EU-szerte és USA-ban. FDA GRAS minősítés a Magtein® márkára. Magyarországon szabadon kapható.",
-  "chemicalFormula": "C8H14MgO10"
+  "chemicalFormula": "C8H14MgO10",
+  "anecdote": "Közösségi beszámolók szerint a magnézium L-treonát a magnézium napi használatra való formája, amelyet anekdotikusan stresszcsökkentésre, tisztább gondolkodás támogatására és nyugodtabb mentális állapot produkálására jelentenek. A kognícióhoz használt jéghegy-csúcs kiegészítőként pozicionálódik, az L-treonát formát az MIT fejlesztette ki, és Magtein néven vizsgálták a szinaptikus Mg²⁺ szállításra. A felhasználók különösen hasznosnak találják olyan egyéneknek, akik túlpörgnek stimulánsokon, nootropikumokon vagy más neuroaktív vegyületeken. A glutamát tónus stabilizálása éjszaka, lefekvés előtt használható. A hatások akutan nem érződnek intenzívnek, de a felhasználók általánosan javult működést, hatékonyságot és simaságot írnak le. Jól tolerált és széles körben szilárd alapszintű kiegészítőként emlegetik."
 }

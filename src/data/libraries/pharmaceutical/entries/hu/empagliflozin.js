@@ -85,5 +85,6 @@ export default {
     },
     "unit": "mg/nap",
     "note": "Standard dózis 10 mg/nap reggel, 25 mg/nap-ig emelhető HbA1c-cél elérésére. HFrEF/HFpEF indikációban 10 mg/nap fix, dóziseszkaláció nem indokolt. eGFR < 30: dóziscsökkentés vagy elhagyás. Étkezéstől függetlenül."
-  }
+  },
+  "anecdote": "Közösségi beszámolók szerint az Empagliflozin (Jardiance) mechanikailag más érzetet kelt, mint a GLP-1 agonisták a testösszetétel támogatásában — a felhasználók csökkent vízvisszatartást és enyhe diuretikum-szerű minőséget jeleznek. A glikémiás kontrollon túl FDA által jóváhagyott kardio-reno-protektív indikációi vannak HFrEF, HFpEF és CKD esetén, és bizonyítékok utalnak a kardiális strukturális remodelling csillapítására. Anekdotikus beszámolók szerint off-label kalóriavesztésre is használják a vizelettel történő glükózürítés révén (kb. 200-300 kcal/nap), bár nem-diabéteszes felhasználóknál ez alacsony energiaszintet és csökkent edzésteljesítményt okozhat. Figyelem: euglikémiás DKA-kockázat, megnövekedett UTI-/genitális mikotikus fertőzések aránya és volumendepléció klinikusi felügyeletet igényel."
 }

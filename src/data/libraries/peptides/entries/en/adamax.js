@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/16584110/",
       "finding": "Adamantane conjugation improves CNS penetration and prolongs the action of small peptides."
     }
-  ]
+  ],
+  "anecdote": "Adamax is positioned as a theoretical upgrade to Semax, with improved BBB penetration, longer duration, and more potent neurotrophic effects on paper. While more definitive data is still needed, anecdotal accounts describe clearer thinking, better train of thought, and smoother cognition. Numerous community discussions document user experiences with Adamax, though all reports remain anecdotal.\n\nAdamax aims for similar neurotrophic and nootropic benefits to Semax, but with greater emphasis on sustained activity due to improved BBB permeability and a longer duration. Semax can be conceptualized as a shorter-acting neuroplasticity and neuroinflammation tool, while Adamax represents a theoretical evolution toward longer duration and stronger potency."
 }

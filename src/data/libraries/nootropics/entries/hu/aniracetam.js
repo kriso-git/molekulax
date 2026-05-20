@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "AMPA-receptor pozitív allosztérikus moduláció, lassítja a glutamát-kötés utáni deszenzitizációt és növeli a szinaptikus áramot; mellék-cholinerg és D2/D3 modulációval is leírták.",
   "legalStatus": "Olaszországban vényköteles gyógyszer (Ampamet, Memodrin). EU-n kívül és USA-ban nem FDA-jóváhagyott; OTC kiegészítőként árusítása jogilag szürke zóna.",
-  "chemicalFormula": "C12H13NO3"
+  "chemicalFormula": "C12H13NO3",
+  "anecdote": "Anekdotikus beszámolók szerint az Aniracetam az egyik leginkább érzékelhető racetam, különösen hangulatra és szorongásra, gyakran finom önbizalom-növekedést produkál stimuláns-szerű mellékhatások nélkül. A hatás gyorsan kezdődik, és rövid, jellemzően 1-2 órás időtartamú, a felhasználók gyakran két napi adagra osztják a beadást. Közösségi beszámolók szerint jól illeszkedik olyan helyzetekhez, amelyek mentális élességet és egyúttal nyugodtságot igényelnek. A Nefiracetamhoz képest az Aniracetam inkább a hangulat és társas könnyedség felé húz, mintsem memóriahatásokhoz, az anxiolitikus profil mögött erősebb AMPA-PAM aktivitás áll. Egy kolinforrást, például CDP-kolint vagy citikolint gyakran adnak mellé a kolinerg tónus támogatására. Zsíroldékony természete miatt zsírokat tartalmazó étkezéssel együtt szívódik fel a legjobban."
 }

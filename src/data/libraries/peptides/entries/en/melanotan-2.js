@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/8632702/",
       "finding": "Significant skin pigmentation increase with α-MSH analog in healthy volunteers, with minimal side effects."
     }
-  ]
+  ],
+  "anecdote": "Users commonly notice effects from Melanotan-2 within the first few doses, especially tanning and libido changes. Nausea and flushing are frequent side effects but tan development is markedly faster than with Melanotan-1. The compound is more aggressive overall but considerably more potent for pigmentation, and is typically used in short cycles.\n\nMelanotan-2 is administered either intra-nasally or via subcutaneous injection, with dosing similar to Melanotan-1. UV exposure is required for it to work, so it is best administered pre-tan. Protocols sometimes use loading phases followed by 1-2x weekly maintenance dosing."
 }

@@ -77,5 +77,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/35932989/",
       "finding": "Triple GIP/GLP-1/glucagon agonism synergistically reduces body weight and improves the lipid profile."
     }
-  ]
+  ],
+  "anecdote": "Anecdotal accounts describe rapid, substantial weight loss within the first three months of Retatrutide use, but the initial appetite suppression is often reported as overly strong, making protein-intake targets difficult to reach and potentially contributing to muscle loss. Several users switch from Retatrutide to Tirzepatide and report a smoother experience regarding sleep and resting heart rate.\n\nRetatrutide is highly effective for aggressive fat loss but is generally regarded as more intense than Tirzepatide, which many community members consider equally suitable for most goals. In trials, the dose was typically increased by 2 mg every 4-6 weeks, with most user protocols following a similar titration schedule."
 }

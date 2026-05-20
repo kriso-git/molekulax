@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/25738459/",
       "finding": "A MOTS-c javítja az inzulinérzékenységet és csökkenti az obesitást egér modellekben."
     }
-  ]
+  ],
+  "anecdote": "Közösségi beszámolók gyakran kedvelik vagy a MOTS-c-t, vagy az 5-Amino-1MQ-t zsírvesztés-fokozásra. Egyes felhasználók a MOTS-c-t \"Cardarine-light\"-ként írják le, bár ezt általában túlzásnak tartják. Más zsírvesztő szerekkel kombinálva a MOTS-c erős stacket alkothat. Aktív felhasználóknál működik a legjobban, mivel inkább az üzemanyag-felhasználást fokozza, mintsem zsírégetést kényszerít ki. A javuló inzulinérzékenység AMPK-aktiváción keresztül figyelemre méltó előny, párhuzamosan a Metformin mechanizmusával. Anekdotikus beszámolók szerint jobb napi energia, különösen meredek kalóriadeficitek alatt.\n\nA MOTS-c-t jellemzően szubkután adják be. Mivel a MOTS-c természetesen termelődik, és szintjei a kor előrehaladtával csökkennek, az idősebbeknél történő pótlás kifejezettebb előnyöket eredményezhet."
 }

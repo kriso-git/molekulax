@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Selective M1 muscarinic acetylcholine receptor positive allosteric modulation (NOT orthosteric agonism, hence a more favorable side-effect profile) + sigma-1 chaperone receptor agonism. M1 stimulation → α-secretase activation → non-amyloidogenic APP processing. Sigma-1 → mitigation of the ER stress response and upregulation of BDNF transcription.",
   "legalStatus": "EU/HU/USA: investigational compound (Anavex pipeline), NOT commercially available. Human use only within an IRB/EMA/FDA-approved clinical trial.",
-  "chemicalFormula": "C21H29N3OS"
+  "chemicalFormula": "C21H29N3OS",
+  "anecdote": "Anecdotal reports describe AF710B at 50 mg administered nasally as one of the more potent nootropic experiences, with concentration, memory recall, and other purported benefits manifesting around day 3. Mechanistically, it appears to change how efficiently the brain encodes memory as a whole. In animal models, it not only restored impaired memory but pushed performance above normal levels, suggesting a superphysiological effect. Sigma-1 activation is required for the full effect, and the M1/Sigma-1 synergy underlies its profile. Sustained benefits weeks after discontinuation suggest possible long-term structural synaptic changes. At low doses M1 PAM actions dominate, while higher doses allosterically agonize M1 mAChR. It has also been shown to reduce amyloid plaque buildup in the hippocampus and cerebral cortex, with a favorable side-effect profile in trials and no serious adverse events reported."
 }

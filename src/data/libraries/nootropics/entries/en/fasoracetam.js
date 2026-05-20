@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "mGluR group II/III agonist profile + elevation of cAMP and cGMP; chronic dosing produces mGluR receptor up-regulation.",
   "legalStatus": "Investigational status, not an approved drug anywhere. OTC supplement sales are a legal grey zone; banned in the UK under the Psychoactive Substances Act.",
-  "chemicalFormula": "C10H16N2O2"
+  "chemicalFormula": "C10H16N2O2",
+  "anecdote": "Community accounts describe Fasoracetam as having an excellent profile and tolerability, with users commonly reporting significant anxiety reduction, improved focus and concentration, better sleep quality, and alleviation of ADHD-like symptoms. The net effect appears to depend on the degree of glutamatergic dysfunction, meaning it works best in individuals with signaling imbalances, most commonly seen in ADHD or neurodegenerative conditions. Fasoracetam normalizes GABA-B signaling and may aid in benzodiazepine withdrawal, with some community members combining occasional Phenibut alongside consistent Fasoracetam use to curb GABA-B downregulation. A choline source such as CDP-Choline is commonly recommended. Effects build over 1-2 weeks with chronic use as cAMP activity acts like a slow neuromodulator rather than producing acute effects. Highly individual but well-regarded for clean focus without stimulant-like activation."
 }

@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/23842126/",
       "finding": "Tesamorelin produces sustained VAT reduction and favourable metabolic effects over 52 weeks with good tolerability."
     }
-  ]
+  ],
+  "anecdote": "Among GH-increasing agents, Tesamorelin is widely considered a favorite. Anecdotal reports describe a 50-day run at 2 mg daily during a cut producing a noticeable decrease in belly size around three weeks in (attributed to visceral fat reduction) and improved sleep from week two onward. Because it acts through GHRH, natural GH pulsatility is preserved. It is weaker than direct HGH but produces fewer side effects, though fasting blood glucose should still be monitored. It typically does not skyrocket IGF-1 — it enhances natural pulses. It is FDA-approved for HIV-induced lipodystrophy, making it a clinically recognized agent, and is more metabolic/health-focused than muscle-building-focused.\n\nTesamorelin is administered subcutaneously, ideally once daily before bed in a fasted state (2-4 hours after the last meal). 2 mg daily before bed is common in clinical settings, with consistent use producing fuller effects."
 }

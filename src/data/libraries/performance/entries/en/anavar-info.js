@@ -209,5 +209,6 @@ export default {
       "markers": "Hepatic priority: ALT/AST/GGT/bilirubin, lipid panel, Total T, E2, HbA1c, BP log.",
       "purpose": "Anavar cruising is not standard (most protocols use it in 6-8 week cycles). If long-term use does occur, continuous hepatic marker monitoring is unavoidable."
     }
-  }
+  },
+  "anecdote": "Anavar has a reputation as 'mild,' but anecdotal reports caution that mild does not mean weak — pound for pound it can be surprisingly potent for physique changes, especially hardness, fullness, and strength. Users describe a clean performance-enhancement feel rather than a dramatic hormonal effect. Pumps can become intense, sometimes nearly debilitating during training, due to intracellular volumization. A recurring observation is that strength gains often exceed bodyweight gains, which is part of why athletes historically favored it. Major tradeoff: despite the mild reputation, Anavar is known to crush HDL and worsen LDL significantly. As a 17α-alkylated oral it carries hepatic strain and contributes to HPTA suppression even when it doesn't 'feel' suppressive. Being DHT-derived, accelerated hair loss is possible in genetically prone users. Mechanistically Anavar functions more as a nutrient-partitioning and tissue-preservation drug than a classic mass-builder, performing well in cuts but also during lean-bulk phases."
 }

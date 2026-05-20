@@ -162,5 +162,6 @@ export default {
     "selegiline",
     "bpap",
     "modafinil"
-  ]
+  ],
+  "anecdote": "Anecdotal accounts describe 9-Me-BC at around 20 mg daily for 4-week cycles as a dopamine resensitizer that restores motivation and agency, with prescription stimulants reportedly feeling cleaner after a cycle. Users note that pairing with classical stimulants is discouraged; softer agents such as Bromantane are commonly substituted during the protocol. Community accounts describe a clean focus profile rather than jittery overstimulation, with some reporting emotional flattening or blunting attributed to dopaminergic tone shifts: lower highs but steadier, elevated baseline. Mild photosensitivity has been reported due to the beta-carboline structure, so sun exposure should be limited. Benefits are reported to persist after discontinuation, consistent with its proposed dopaminergic neuron growth and neuroprotection. L-Tyrosine is commonly paired to support dopamine synthesis."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Konkurencyjny antagonizm receptorów adenozynowych A1 + A2A → wzrost czujności i sygnalizacji dopaminergicznej w korze przedczołowej. Inhibicja fosfodiesterazy → podwyższone cAMP w mięśniach gładkich i tkance tłuszczowej (stymulacja lipolizy). Niższe powinowactwo do A2B niż u kofeiny, więc efekt lękotwórczy jest osłabiony.",
   "legalStatus": "UE/HU/USA: legalna jako suplement diety. FDA USA uznała status New Dietary Ingredient (NDI) dla paraksantyny marki ENFINITY w 2022 roku. Doping sportowy: brak na liście WADA 2026, ale przed zawodami sprawdź aktualną wersję.",
-  "chemicalFormula": "C7H8N4O2"
+  "chemicalFormula": "C7H8N4O2",
+  "anecdote": "Doniesienia społeczności opisują Paraksantynę jako czystą kofeinę, zapewniającą solidne skupienie bez nadmiernego lęku lub innych skutków ubocznych typowych dla kofeiny. Użytkownicy zgłaszają, że odczuwa się ją łagodniej dla układu sercowo-naczyniowego i nerwowego, szczególnie u osób słabo tolerujących kofeinę. Jako główny aktywny metabolit kofeiny, jej efekty są zazwyczaj bardziej przewidywalne. Paraksantynę podaje się doustnie i ma krótszy, łagodniejszy czas działania niż kofeina, więc często sugeruje się dawkowanie przed wydarzeniem lub wcześniej w ciągu dnia. Dawkowanie jest elastyczne i zależy od indywidualnej wrażliwości, szczególnie jeśli istnieje już tolerancja na kofeinę. Zyskuje popularność jako stymulant nowej generacji lub nootropik zorientowany na produktywność."
 }

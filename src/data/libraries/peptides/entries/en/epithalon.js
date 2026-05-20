@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/12937682/",
       "finding": "In human fibroblasts Epithalon treatment increased telomere length by 33% and cells divided 10 generations longer than controls."
     }
-  ]
+  ],
+  "anecdote": "Epithalon is not acutely felt — its effects are subtle and gradual. Anecdotal accounts from multiple users describe slightly improved sleep onset (time to fall asleep) and deeper rest, both consistently noted as positive. Over time, recovery feels improved (placebo cannot be ruled out), and sleep becomes more consistent day-to-day after roughly four weeks of pre-bed dosing. DSIP is often considered a more reliable first-line sleep peptide, with Epithalon serving as a secondary option. It is well-suited for users needing background circadian-rhythm support.\n\nEpithalon is typically administered in short cycles (several days to weeks) via subcutaneous injection. It is most often dosed before bed, as users tend to feel sleepy following administration."
 }

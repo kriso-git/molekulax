@@ -49,5 +49,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/29355504/",
       "finding": "5-Amino-1MQ zmniejsza białą tkankę tłuszczową i poprawia metabolizm u myszy przez hamowanie NNMT."
     }
-  ]
+  ],
+  "anecdote": "Doniesienia społeczności opisują 5-Amino-1MQ jako wysoko ceniony za utratę tłuszczu, a użytkownicy opisują subtelny, podstawowy efekt utraty tłuszczu, który buduje się z czasem. Raporty często obejmują lepszą całodzienną energię. Poprzez hamowanie NNMT, związek obniża krążące poziomy NAD+, zachowując więcej NAD+ wewnątrz komórek, gdzie jest metabolicznie aktywny. Dobrze łączy się ze związkami, które aktywnie zwiększają metabolizm — Cardarine, iniekcyjną L-karnityną lub Retatrutydem. Najlepiej traktować jako codzienny optymalizator utraty tłuszczu tła, a nie główny czynnik napędzający.\n\n5-Amino-1MQ można podawać doustnie (dostępne są formy kapsułkowane) lub podskórnie."
 }

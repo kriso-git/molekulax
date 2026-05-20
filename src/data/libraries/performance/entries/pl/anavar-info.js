@@ -209,5 +209,6 @@ export default {
       "markers": "Priorytet wątrobowy: ALT/AST/GGT/bilirubina, lipidogram, Total T, E2, HbA1c, dziennik ciśnienia.",
       "purpose": "Cruise z Anavarem nie jest standardem (większość protokołów używa w cyklach 6-8 tygodni). Jeśli jednak długotrwałe użycie, ciągły monitoring markerów wątrobowych jest nieunikniony."
     }
-  }
+  },
+  "anecdote": "Anavar ma reputację 'łagodnego', ale raporty anegdotyczne ostrzegają, że łagodny nie znaczy słaby — funt za funt może być zaskakująco silny w zmianach sylwetki, zwłaszcza w twardości, pełności i sile. Użytkownicy opisują czyste uczucie wzmocnienia wydajności zamiast dramatycznego efektu hormonalnego. Pompy mogą stać się intensywne, czasem niemal obezwładniające podczas treningu, z powodu wewnątrzkomórkowej wolumizacji. Powracającą obserwacją jest, że przyrosty siły często przekraczają przyrosty masy ciała, co częściowo wyjaśnia, dlaczego sportowcy historycznie go preferowali. Główny kompromis: pomimo łagodnej reputacji Anavar jest znany z miażdżenia HDL i znacznego pogarszania LDL. Jako 17α-alkilowany doustny niesie obciążenie wątroby i przyczynia się do supresji HPTA, nawet gdy 'nie odczuwa się' jako supresyjny. Będąc pochodną DHT, możliwe jest przyspieszone wypadanie włosów u genetycznie predysponowanych użytkowników. Mechanistycznie Anavar funkcjonuje bardziej jako lek partycjonujący składniki odżywcze i zachowujący tkankę niż klasyczny budulec masy, sprawdzając się w redukcji, ale także w fazach suchego budowania."
 }

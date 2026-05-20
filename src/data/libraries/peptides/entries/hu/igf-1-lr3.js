@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/1747094/",
       "finding": "Az IGF-1 LR3 nagyobb anabolikus hatékonyságú, mint a natív IGF-1 a csökkent IGFBP-kötés miatt."
     }
-  ]
+  ],
+  "anecdote": "Az IGF-1 LR3 széles körben tárgyalt, de a Tesamorelinhez vagy a HGH-hoz képest sok felhasználói beszámoló szerint viszonylag gyenge, bár vannak specifikus felhasználási esetei. Az LR3 kevésbé kötődik az IGF-kötő fehérjékhez, és csökkent májszekvesztrációt mutat a natív IGF-1-hez képest, lehetővé téve a nagyobb szisztémás aktivitást. Metabolikusan átfedi az inzulin-jelátvitelt, ezért a glükózszint csökkenhet — egyes felhasználóknál izmok teltségét, másoknál pedig hipoglikémiás tüneteket okozva. Az általa aktivált növekedési útvonalak (Akt/mTOR, Erk) alapvető sejtnövekedési jelek, nem izom-szelektívek, így a hosszú távú használat óvatosságot igényel.\n\nAz adagolás változó, általában kicsi. Az LR3 lényegesen hosszabb hatástartamú, mint a natív IGF-1."
 }

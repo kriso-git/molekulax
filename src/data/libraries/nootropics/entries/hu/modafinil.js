@@ -148,5 +148,6 @@ export default {
     "armodafinil",
     "flmodafinil",
     "phenylpiracetam"
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a Modafinil az egyik legfunkcionálisabb kognitív fokozó, a felhasználók megjegyzik, hogy az alapszintű energia órákig kitartottnak érződik, kifejezett csúcs vagy lezuhanás nélkül. Mivel modulálja az orexint és hisztamint, gyakori az étvágycsökkenés és a jelentősen mérsékelt alvásigény, ezért a 12-15 órás felezési idő miatt következetesen reggeli, ébredés utáni adagolást javasolnak. A mérsékelt kortizolszint-emelkedés hozzájárul a feladatfókuszált, jelenben létező állapothoz. Közösségi beszámolók szerint a tolerancia lassabban épül, mint a hagyományos stimulánsoknál, bár pszichológiai függés a produktivitás-növekedéstől kialakulhat. A CYP-közvetített májmetabolizmus potenciális gyógyszerinterakciós megfontolásokat hoz. A Fladrafinilhez képest a Modafinil simábbnak, rövidebb hatásúnak és kevésbé feldobottnak érződik. Alacsonyabb adagok hatékonyak lehetnek érzékenyebb egyéneknél."
 }

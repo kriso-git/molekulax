@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Podwyższone poziomy Mg²⁺ w mózgu modulują receptor NMDA (przywracając fizjologiczny blok Mg²⁺), wzmacniają równowagę LTD/LTP i zwiększają gęstość kolców dendrytycznych w korze przedczołowej i hipokampie.",
   "legalStatus": "Suplement diety OTC w całej UE i USA. Status FDA GRAS dla marki Magtein®. Wolno dostępny na Węgrzech.",
-  "chemicalFormula": "C8H14MgO10"
+  "chemicalFormula": "C8H14MgO10",
+  "anecdote": "Doniesienia społeczności opisują L-Treonian Magnezu jako formę magnezu do codziennego stosowania anegdotycznie zgłaszaną jako redukującą stres, wspierającą jaśniejsze myślenie i wywołującą spokojniejszy stan umysłu. Pozycjonowany jako podstawowy suplement dla poznania, formę L-Treonianową opracowało MIT i badano pod nazwą Magtein dla synaptycznego dostarczania Mg²⁺. Użytkownicy uważają go za szczególnie przydatny dla osób, które stają się nadmiernie pobudzone przez stymulanty, nootropiki lub inne związki neuroaktywne. Stabilizacja tonu glutaminianowego jest według doniesień przydatna w nocy przed snem. Efekty nie są ostro odczuwalne jako coś intensywnego, ale użytkownicy opisują ogólnie poprawione funkcjonowanie, wydajność i płynność. Dobrze tolerowany i szeroko cytowany jako solidny suplement bazowy."
 }

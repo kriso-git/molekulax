@@ -13,18 +13,38 @@ export default {
   "shortDesc": "Methenolone, 1-methyl-DHT-derivative \"mild\" AAS in two ester formats: oral acetate (short, low bioavailability) and injectable enanthate (Bayer Primobolan Depot, prescription in Germany + Spain). Classic cutting steroid.",
   "description": "Primobolan (Methenolone) is a 1-methyl-dihydrotestosterone derivative synthesized by Schering AG in 1962. Two marketed forms: the acetate ester (Primobolan, oral tablet, originally 5 mg) and the enanthate ester (Primobolan Depot, IM oil 100 mg/ml). Original FDA approval (1962) was for anemia, osteoporosis and severe debilitating illness recovery; withdrawn from the US market by 1965, but Bayer still manufactures Primobolan Depot as a prescription in Germany and Spain (anemia, premature infant catabolic states). Anabolic:androgenic ratio 88:44, indicating moderate anabolic and low androgenic profile. NOT 17α-alkylated, so hepatotoxicity is minimal. Does NOT aromatize. AR affinity is low (~28% vs testosterone in vitro), BUT in muscle tissue indirectly raises free-T levels via SHBG suppression. Oral acetate bioavailability is only ~6% (rapid hepatic metabolism of the 17β-OH-acetate ester), so extremely high doses (50-100 mg/day) are needed to match injectable 100 mg/week enanthate effect. WADA-banned year-round.",
   "keyInfo": [
-    {"label": "Mechanism", "value": "AR agonist, 1-methyl-DHT, NOT aromatized"},
-    {"label": "Anabolic:Androgenic", "value": "88:44"},
-    {"label": "Half-life", "value": "4-6 h (Ac oral), 5-7 d (Enan IM)"},
-    {"label": "Onset", "value": "1-2 h (Ac oral), 48-72 h (Enan IM)"},
-    {"label": "Legal status", "value": "Bayer Primobolan Depot DE/ES Rx, USA: discontinued"}
+    {
+      "label": "Mechanism",
+      "value": "AR agonist, 1-methyl-DHT, NOT aromatized"
+    },
+    {
+      "label": "Anabolic:Androgenic",
+      "value": "88:44"
+    },
+    {
+      "label": "Half-life",
+      "value": "4-6 h (Ac oral), 5-7 d (Enan IM)"
+    },
+    {
+      "label": "Onset",
+      "value": "1-2 h (Ac oral), 48-72 h (Enan IM)"
+    },
+    {
+      "label": "Legal status",
+      "value": "Bayer Primobolan Depot DE/ES Rx, USA: discontinued"
+    }
   ],
   "mechanism": "1-methyl-dihydrotestosterone AR agonist. The 1-methyl group — specifically at Δ1 position — blocks 17β-HSD oxidative breakdown and is notably resistant to hepatic metabolism. The 17β-OH-acetate ester (oral form) rapidly hydrolyzes in the portal vein to free methenolone, which is then rapidly metabolized by the liver (low ~6% bioavailability). The enanthate ester (Depot form) is depot-stored via IM injection, slow hydrolysis gives stable plasma levels. NOT 17α-alkylated → minimal hepatic stress. NOT a CYP19 substrate → does NOT aromatize to estrogen.",
   "legalStatus": "USA: discontinued after 1965 (FDA), Schedule III controlled. DE/ES: Bayer Primobolan Depot Rx (anemia, premature infant catabolic states). HU/PL: illegal without prescription, controlled AAS. WADA-banned year-round (S1.1.a).",
   "onsetTime": "1-2 h (Ac oral), 48-72 h (Enan IM)",
   "halfLife": "4-6 h (Ac oral), 5-7 d (Enan IM)",
   "halfLifeActive": "~4-6 h free methenolone (after Ac), depot-driven ~24 h (after Enan)",
-  "interactionsWith": ["testosterone", "anastrozole", "finasteride", "warfarin"],
+  "interactionsWith": [
+    "testosterone",
+    "anastrozole",
+    "finasteride",
+    "warfarin"
+  ],
   "aromatization": "No — 1-methyl-DHT structure, NOT a CYP19 substrate for either ester; clinically no E2 rise expected (Pope-Kanayama 2014 PMID 24423981)",
   "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injected enanthate form has minimal hepatic stress. Oral acetate also only mild because the 1-methyl group is NOT 17α (only the 1-methyl provides oral stability), BUT high dose (50-100 mg/day) still requires monitoring (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
@@ -46,9 +66,18 @@ export default {
     "PCT (Clomid + Nolvadex 4 weeks) needed in men due to HPTA suppression"
   ],
   "expectations": [
-    {"label": "First week", "body": "Oral Ac onset 1-2 h, injectable Enan 48-72 h. Acute esthetic change not expected, plasma steady-state Ac 2-3 days, Enan 3-4 weeks."},
-    {"label": "Week 4-6", "body": "Subjectively \"harder\" muscle tone, vascular venosity. SHBG drops, lean mass gain 1-2 kg (NOT extreme — Primobolan is a mild AAS)."},
-    {"label": "End of week 10-12", "body": "Maximum esthetic \"hardening\" effect. HDL ~15-25% drop expected. Lean mass preservation during cutting (minimal muscle loss despite caloric deficit)."}
+    {
+      "label": "First week",
+      "body": "Oral Ac onset 1-2 h, injectable Enan 48-72 h. Acute esthetic change not expected, plasma steady-state Ac 2-3 days, Enan 3-4 weeks."
+    },
+    {
+      "label": "Week 4-6",
+      "body": "Subjectively \"harder\" muscle tone, vascular venosity. SHBG drops, lean mass gain 1-2 kg (NOT extreme — Primobolan is a mild AAS)."
+    },
+    {
+      "label": "End of week 10-12",
+      "body": "Maximum esthetic \"hardening\" effect. HDL ~15-25% drop expected. Lean mass preservation during cutting (minimal muscle loss despite caloric deficit)."
+    }
   ],
   "quality": {
     "pure": [
@@ -76,20 +105,66 @@ export default {
     "Warfarin: anticoagulant effect may be potentiated, INR monitor"
   ],
   "studies": [
-    {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"},
-    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15233599"},
-    {"title": "Metabolism of anabolic androgenic steroids", "authors": "Schänzer W.", "journal": "Clin Chem. 1996;42(7):1001-20.", "pmid": "8616181"},
-    {"title": "Anabolic-androgenic steroid dependence: an emerging disorder", "authors": "Kanayama G, Brower KJ, Wood RI, Hudson JI, Pope HG Jr.", "journal": "Addiction. 2009;104(12):1966-78.", "pmid": "19922565"},
-    {"title": "Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline", "authors": "Bhasin S, Brito JP, Cunningham GR et al.", "journal": "J Clin Endocrinol Metab. 2018;103(5):1715-1744.", "pmid": "29562364"}
+    {
+      "title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement",
+      "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.",
+      "journal": "Endocr Rev. 2014;35(3):341-75.",
+      "pmid": "24423981"
+    },
+    {
+      "title": "Effects of androgenic-anabolic steroids in athletes",
+      "authors": "Hartgens F, Kuipers H.",
+      "journal": "Sports Med. 2004;34(8):513-554.",
+      "pmid": "15233599"
+    },
+    {
+      "title": "Metabolism of anabolic androgenic steroids",
+      "authors": "Schänzer W.",
+      "journal": "Clin Chem. 1996;42(7):1001-20.",
+      "pmid": "8616181"
+    },
+    {
+      "title": "Anabolic-androgenic steroid dependence: an emerging disorder",
+      "authors": "Kanayama G, Brower KJ, Wood RI, Hudson JI, Pope HG Jr.",
+      "journal": "Addiction. 2009;104(12):1966-78.",
+      "pmid": "19922565"
+    },
+    {
+      "title": "Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline",
+      "authors": "Bhasin S, Brito JP, Cunningham GR et al.",
+      "journal": "J Clin Endocrinol Metab. 2018;103(5):1715-1744.",
+      "pmid": "29562364"
+    }
   ],
   "faq": [
-    {"q": "Why is Primobolan so expensive?", "a": "Two reasons: (1) the raw material (methenolone) is expensive to synthesize, few UGL labs can produce it cleanly; (2) counterfeiting is extremely common — many UGL Primos are actually Anavar or Winstrol. Bayer Primobolan Depot original DE/ES Rx black-market price ~€150-250/ml. Oral Ac is even pricier because daily cost is high due to the 50-100 mg/day requirement."},
-    {"q": "Is it really a \"mild\" AAS as they say?", "a": "Yes, among classical AAS one of the gentlest in terms of hepatotoxicity and cardiovascular profile. BUT due to its mildness do NOT expect spectacular muscle mass gains — Primobolan is a cutting and conditioning agent, NOT a bulker. Pope-Kanayama 2014 highlights: the user expectation-reality gap is a major frustration source."},
-    {"q": "Why is oral acetate bioavailability so low?", "a": "The acetate ester (17β-OH-acetate) RAPIDLY hydrolyzes in the portal vein to free methenolone, which is then rapidly metabolized by the liver (NOT 17α-alkylated, so no first-pass protection). Hence oral Primobolan bioavailability is only ~6% — compared to e.g. Anavar's 30-40% due to 17α-alkylated first-pass protection."},
-    {"q": "Why do women also use Primobolan?", "a": "Low androgenic potential (44% vs testosterone) means virilization risk is among the lowest of AAS (Anavar and Primobolan are the classical \"female-friendly\" AAS pair). BUT virilization is NOT zero — at higher doses (>10 mg/day oral or >50 mg/week Enan) voice deepening and hirsutism are documented. Any virilization symptom = immediate cycle discontinuation."},
-    {"q": "Is it true Arnold Schwarzenegger used it?", "a": "Yes, Arnold Schwarzenegger admitted in several interviews that during 1970-80s bodybuilding competitions (Mr. Olympia) he used Primobolan and Dianabol, then still legally available as prescription drugs. This tradition made Primobolan a \"classic pro-bodybuilder steroid\" in the culture."}
+    {
+      "q": "Why is Primobolan so expensive?",
+      "a": "Two reasons: (1) the raw material (methenolone) is expensive to synthesize, few UGL labs can produce it cleanly; (2) counterfeiting is extremely common — many UGL Primos are actually Anavar or Winstrol. Bayer Primobolan Depot original DE/ES Rx black-market price ~€150-250/ml. Oral Ac is even pricier because daily cost is high due to the 50-100 mg/day requirement."
+    },
+    {
+      "q": "Is it really a \"mild\" AAS as they say?",
+      "a": "Yes, among classical AAS one of the gentlest in terms of hepatotoxicity and cardiovascular profile. BUT due to its mildness do NOT expect spectacular muscle mass gains — Primobolan is a cutting and conditioning agent, NOT a bulker. Pope-Kanayama 2014 highlights: the user expectation-reality gap is a major frustration source."
+    },
+    {
+      "q": "Why is oral acetate bioavailability so low?",
+      "a": "The acetate ester (17β-OH-acetate) RAPIDLY hydrolyzes in the portal vein to free methenolone, which is then rapidly metabolized by the liver (NOT 17α-alkylated, so no first-pass protection). Hence oral Primobolan bioavailability is only ~6% — compared to e.g. Anavar's 30-40% due to 17α-alkylated first-pass protection."
+    },
+    {
+      "q": "Why do women also use Primobolan?",
+      "a": "Low androgenic potential (44% vs testosterone) means virilization risk is among the lowest of AAS (Anavar and Primobolan are the classical \"female-friendly\" AAS pair). BUT virilization is NOT zero — at higher doses (>10 mg/day oral or >50 mg/week Enan) voice deepening and hirsutism are documented. Any virilization symptom = immediate cycle discontinuation."
+    },
+    {
+      "q": "Is it true Arnold Schwarzenegger used it?",
+      "a": "Yes, Arnold Schwarzenegger admitted in several interviews that during 1970-80s bodybuilding competitions (Mr. Olympia) he used Primobolan and Dianabol, then still legally available as prescription drugs. This tradition made Primobolan a \"classic pro-bodybuilder steroid\" in the culture."
+    }
   ],
-  "related": ["masteron", "anavar-info", "testosterone-info", "winstrol-info", "trenbolone-info"],
+  "related": [
+    "masteron",
+    "anavar-info",
+    "testosterone-info",
+    "winstrol-info",
+    "trenbolone-info"
+  ],
   "bloodwork": {
     "preCycle": {
       "label": "Pre-cycle",
@@ -154,7 +229,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
         "unit": "mg/day (oral, 2-3x split)",
         "note": "Maximum 8 weeks cycle. 50-100 mg/day, 2-3x split dosing (short half-life). TUDCA 500 mg/day optional (low hepatotoxicity, but safe due to high dose). Female dose max 5-10 mg/day. PCT 4 weeks last tablet +1-2 days."
       }
@@ -196,11 +275,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 300, "medium": 500, "high": 700},
+        "fixed": {
+          "low": 300,
+          "medium": 500,
+          "high": 700
+        },
         "unit": "mg/week (IM, split 1-2x)",
         "note": "Minimum 10 weeks cycle due to steady-state. 300-700 mg/week, weekly 1-2x injection. TUDCA / NAC NOT needed (lowest hepatotoxicity AAS). Female dose max 50-100 mg/week. PCT 4-6 weeks from last injection +14-21 days."
       }
     }
   ],
-  "defaultVariant": "enan-oil"
+  "defaultVariant": "enan-oil",
+  "anecdote": "Primobolan is anecdotally described as an excellent secondary anabolic for most cycles, often paired with high-dose testosterone for synergy, since Primobolan itself does not aromatize meaningfully and can help moderate estrogenic load. It is more widely known as a 'cosmetic' steroid, with users describing a dry, hard, aesthetic look rather than dramatic mass gains. Community accounts note that it is very well tolerated, has a relatively mild side-effect profile, and works in both bulking and cutting phases. The main downsides are its high cost and slow onset, typically appearing as the Enanthate ester. Overall, Primobolan is regarded as solid when used as part of a well-designed cycle, but it is generally not chosen as a standalone mass-builder."
 }

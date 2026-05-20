@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Potrójny cel: ułatwianie GABA-A (ramię anksjolityczne), pozytywna modulacja receptora AMPA (LTP) i przedłużona aktywacja kanałów Ca²⁺ typu L, to ostatnie jest głównym mechanizmem przeciwamnezyjnym.",
   "legalStatus": "Nigdzie nie zatwierdzony jako lek; badania kliniczne zamknięte. Sprzedawany na rynku „chemikaliów badawczych” OTC.",
-  "chemicalFormula": "C14H18N2O2"
+  "chemicalFormula": "C14H18N2O2",
+  "anecdote": "Raporty anegdotyczne opisują Nefiracetam jako wywołujący jaśniejsze i bardziej funkcjonalne myślenie, a nie szybsze poznanie, pasujące do jego profilu wzmacniającego plastyczność. Użytkownicy często opisują stan zmotywowanego spokoju, w którym poznanie odczuwane jest jako gładkie, efektywne i niewymuszone. Mechanicznie dotyka acetylocholiny, plastyczności związanej z NMDA, sygnalizacji wapniowej i szlaków kinazowych, dając szerszy efekt niż czysto cholinergiczne racetamy. Był badany w kontekstach napadów, upośledzenia funkcji poznawczych i neuroprotekcji, z udokumentowaną aktywnością przeciwko uszkodzeniom wywołanym glutaminianem. Doniesienia społeczności zauważają łatwiejsze przypominanie pamięci w danej chwili, łagodne podniesienie nastroju i ciekawości, lepsze przypominanie werbalne i płynność oraz subtelnie jaśniejsze odczucie zmysłowe. Ogólnie pozycjonowany jest jako bardziej mechanistyczny, szeroko strojony racetam wspierający funkcjonowanie całego mózgu."
 }

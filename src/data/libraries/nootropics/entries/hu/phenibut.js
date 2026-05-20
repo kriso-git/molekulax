@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "GABA-B receptor agonista (Baclofenhez hasonlóan) + α2δ-1 feszültség-függő Ca²⁺-csatorna alegység-moduláció (Gabapentinhez hasonlóan) → preszinaptikus glutamát-felszabadulás csökkentés és anxiolitikus hatás.",
   "legalStatus": "Oroszországban, Ukrajnában, Lettországban vényköteles gyógyszer. UK-ban 2024 óta Class C kontrollált anyag. EU egyéb tagállamokban szabályozatlan. Magyarországon vény nélkül nem hozható forgalomba gyógyszerként.",
-  "chemicalFormula": "C10H13NO2"
+  "chemicalFormula": "C10H13NO2",
+  "anecdote": "Anekdotikus beszámolók szerint a Phenibut nyugtató, társas gátlásoldó hatást vált ki, gátlásmentességgel és szorongáscsökkentéssel jár, gyakran használják GAD-ban vagy PTSD-ben szenvedők a feszültség oldására. A hatás lassan jelentkezik, jellemzően 2 óra körül éri el a csúcsát, és a felhasználók általában heti két alkalomra korlátozzák a beadást. Közösségi beszámolók szerint az élmény szorongáscsökkentésben az alkoholhoz vagy benzodiazepinekhez hasonlítható, tipikus mámorérzet nélkül. A Phenibut és a Pregabalin gyakran emlegetett alacsony-gátlású alapszerek, a Pregabalin az erősebb alternatíva, míg a Phenibut inkább anxiolitikus. Az elvonási tünetek dokumentált kockázatot jelentenek, és veszélyesek lehetnek, ezért a szigorú adagolási mértékletesség elengedhetetlen használat előtt."
 }

@@ -143,5 +143,6 @@ export default {
     "modafinil",
     "bromantane",
     "aniracetam"
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują Fenylopiracetam w dawce około 200 mg jako nootropik o działaniu stymulującym używany do skoncentrowanych zadań związanych z nauką, często zastępujący stymulanty na receptę w dni wolne. Użytkownicy zauważają jaśniejsze myślenie i poprawioną płynność werbalną trwającą około 7 godzin po dawce, przy czym powszechnie zaleca się cykliczne stosowanie dwa razy w tygodniu, aby uniknąć tolerancji. Niektóre relacje opisują łagodny składnik euforyczny szacowany na około jedną dziesiątą intensywności amfetaminy. Członkowie społeczności zgłaszają znaczne podniesienie nastroju, a poznawczo wymagające zadania według doniesień stają się czymś, na co warto czekać podczas aktywnego okna działania. Suplementacja CDP-Choliną jest powszechnie łączona z każdym racetamem, aby zapobiec wyczerpywaniu choliny przez wzmożoną sygnalizację i aktywność cholinergiczną."
 }

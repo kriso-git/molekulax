@@ -206,5 +206,6 @@ export default {
     },
     "unit": "mg",
     "note": "Alacsony (2,5 mg napi): ED daily-mód indítás vagy idős/vesefunkció-zavar dóziscsökkentés. Mérsékelt (5 mg napi): ED daily standard vagy BPH (FDA 2011 indikáció) vagy ED+BPH dual. Magas (20 mg PRN): ED on-demand, max napi egyszer, 30-45 perccel az aktivitás előtt. Sosem kombinálni nitráttal."
-  }
+  },
+  "anecdote": "Anekdotikus beszámolók szerint a napi alacsony dózisú Tadalafil (jellemzően 5 mg, néha 10-20 mg) tartós értágulatot eredményez, érzékelhetően javítja a pumpa-érzést ellenállásos edzés közben, enyhén csökkenti a vérnyomást (kb. 5 Hgmm szisztolés/diasztolés), és egész nap stabil vérátáramlási előnyt biztosít. 17,5 órás felezési ideje miatt az időzítés rugalmas — a hatás általában 30-60 perccel a beadás után jelentkezik, de napi adagolás stabil plazmaszintet eredményez. Az Rx-kontextus magában foglalja az erekciós zavart, a BPH-t és a pulmonális artériás hipertóniát. Figyelem: nitrátokkal egyidejű alkalmazása ellenjavallt; az alfa-blokkolókkal való interakció klinikusi felügyeletet igényel."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "AMPA receptor positive modulation and glutamatergic LTP enhancement in animal models; the precise binding site is not fully characterized in Western literature.",
   "legalStatus": "Not approved as a medicine anywhere. Russian academic research compound, rarely seen on Western OTC markets as a “research chemical”.",
-  "chemicalFormula": "C11H12N2O6"
+  "chemicalFormula": "C11H12N2O6",
+  "anecdote": "Community accounts describe Nooglutyl as a nootropic with more promising anecdotal evidence than mechanistic human data. Users report a fairly quick onset within 30 minutes, producing physical stimulation, sustained mental clarity, and a functional energy feel, with duration around 3-5 hours. One user reported heavily enhanced mental clarity, focus, mild long-term memory enhancement, and mild anxiety alongside it, noting that stimulatory effects emerged at doses of 20 mg and above. Another forum user reported low toxicity, enhanced memory capacity, improved cognitive processes, and no rebound or withdrawal effects. Overall Nooglutyl is positioned as a plasticity-oriented nootropic that enhances AMPA and possibly NMDA-linked glutamatergic signaling and may indirectly tune dopamine receptor dynamics."
 }

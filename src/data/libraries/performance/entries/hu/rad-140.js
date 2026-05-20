@@ -13,18 +13,38 @@ export default {
   "shortDesc": "Radius Health 2010-ben fejlesztett non-szteroidal SARM (szelektív androgén-receptor-modulátor). Phase II klinikai trial breast cancer + cachexia indikációkra (Flores 2020 PMID 32472247). Erős izomtömeg-építő AR-szelektivitással (izom > prosztata), DE 2017-2020 hepatotoxicitás-esetjelentések UGL-felhasználáson (Hilal 2020 PMID 32492288). WADA tiltott.",
   "description": "A RAD-140 (Testolone) egy non-szteroidal szelektív androgén-receptor-modulátor (SARM), amelyet a Radius Health Inc. (Boston, USA) fejlesztett ki 2010-ben (Miller 2011 PMID 21953468 in vivo karakterizáció). Strukturálisan NEM-szteroid — anilid-derivátum, AR-binding-affinitása ~80% testosterone-szintű in vitro (Bhasin 2012 PMID 22573713 SARM review), DE szelektív tissue-affinitás: erős AR-agonista izomban + csontban, gyengébb prosztata-AR-aktivitás → 'androgén-szelektivitás'. Klinikai fejlesztés: Phase I 2013-2015 (egészséges férfi-alanyok), Phase II 2017-2020 mellrák-asszociált cachexia + ER+ áttétes mellrák kombinált kezelésére (RAD140-001 trial, Flores 2020 PMID 32472247). Bodybuilding-piacon a leghíresebb SARM, UGL-marketing 'orális Test-helyettesítő' címkével (félrevezető — valós SARM, de ~5-10x potens egyes anekdotikus dózisnál). 2017-2020-as években MEGJELENT 6 dokumentált hepatotoxicitás-esetjelentés (Hilal 2020 PMID 32492288 — 47y férfi, RAD-140 + LGD-4033 stack 9 hét után fulmináns DILI), Barbara 2020 PMID 33068441 — 53y nő hepatocellular injury), Solomon 2019 PMID 31077635 — SARM-induced hepatotoxicity review). Klinikai bevezetés mai napig NEM történt (Phase II eredmények clinical-meaningfulness alatt voltak). WADA tiltott egész évben (S1.2 — egyéb anabolic agent kategoria).",
   "keyInfo": [
-    {"label": "Hatásmechanizmus", "value": "Non-szteroidal szelektív AR-modulátor (anilid). Erős AR-agonista izom + csont, gyengébb prosztata."},
-    {"label": "Anabolikus aktivitás (Miller 2011)", "value": "~80% testosterone-szintű in vivo izom-AR-aktivitás, ~30% prosztata-aktivitás → szelektivitás-arány ~2,5x"},
-    {"label": "Felezési idő", "value": "~16-20 h (orális)"},
-    {"label": "Hatáskezdet", "value": "1-2 hét (anekdotikus erő-növekedés)"},
-    {"label": "Jogi státusz", "value": "Sosem volt Rx (Phase II leállt). UGL-piacon 'research chemical'. USA Schedule III analog 2018-tól néhány államban. WADA tiltott."}
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Non-szteroidal szelektív AR-modulátor (anilid). Erős AR-agonista izom + csont, gyengébb prosztata."
+    },
+    {
+      "label": "Anabolikus aktivitás (Miller 2011)",
+      "value": "~80% testosterone-szintű in vivo izom-AR-aktivitás, ~30% prosztata-aktivitás → szelektivitás-arány ~2,5x"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "~16-20 h (orális)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "1-2 hét (anekdotikus erő-növekedés)"
+    },
+    {
+      "label": "Jogi státusz",
+      "value": "Sosem volt Rx (Phase II leállt). UGL-piacon 'research chemical'. USA Schedule III analog 2018-tól néhány államban. WADA tiltott."
+    }
   ],
   "mechanism": "RAD-140 non-szteroidal SARM, anilid-strukturájú, kétféle AR-konformáció-stabilizálás: izomszövetben AR-agonista → MyoD/myogenin upregulation → izomprotein-szintézis. Prosztataszövetben részlegesen ANTAGONISTA-szerű konformáció → alacsonyabb prosztata-AR-aktivitás (~30% Test-szintű, Miller 2011 PMID 21953468). Csontszövetben szintén AR-agonista → osteoblaszt-aktiváció. NEM aromatizál → NEM emelkedik E2 (sajátos SARM-előny: nincs gynecomastia-rizikó az E2-mechanizmuson át). Aromatizáció hiánya MIATT azonban a klasszikus HPTA-szuppresszió teljes (Bhasin 2012 — RAD-140 8-10 hét után LH/FSH ~80% szuppresszió). Hepatotoxicitás-mechanizmus: feltételezett mitokondriális diszfunkció + CYP3A4-mediated reaktív metabolit-képződés (Solomon 2019 PMID 31077635 SARM-DILI review). 2017-2020 esetjelentések: 6 ismert RAD-140-asszociált hepatocellular injury (ALT >10x normál, bilirubin emelkedés, néhányban transzplantáció-szint közelében).",
   "legalStatus": "Soha nem volt Rx-jóváhagyva (Radius Health Phase II 2020 után klinikai fejlesztést leállította — Phase II eredmények nem értek el clinical-meaningfulness küszöböt mellrák/cachexia kombinált end-pointon). USA: Schedule III analog néhány államban (Texas, Florida, 2018+). EU: nincs Rx, UGL-piacon 'research chemical' címkével. WADA tiltott egész évben (S1.2 — egyéb anabolic agent).",
   "onsetTime": "1-2 hét (anekdotikus erő-növekedés). Klinikai Phase II-ben: 8 hét után mérhető izomtömeg-stabilizáció cachexia-betegeknél (Flores 2020 PMID 32472247).",
   "halfLife": "~16-20 h (orális)",
   "halfLifeActive": "~16-20 h",
-  "interactionsWith": ["lgd-4033", "ostarine", "milk-thistle", "tudca"],
+  "interactionsWith": [
+    "lgd-4033",
+    "ostarine",
+    "milk-thistle",
+    "tudca"
+  ],
   "aromatization": "NEM — RAD-140 non-szteroidal, NEM CYP19-szubsztrát. E2 nem emelkedik (Bhasin 2012 PMID 22573713). Ez SARM-előny: gynecomastia-rizikó az E2-mechanizmuson át nincs.",
   "hepatotoxicity": "**MAGAS — 6 dokumentált hepatocellular injury esetjelentés 2017-2020 (Hilal 2020 PMID 32492288, Barbara 2020 PMID 33068441). ALT/AST >10x normál, néhányban transzplantáció-szint közelében.** Hepatotoxicitás-mechanizmus mitokondriális diszfunkció + reaktív metabolit (Solomon 2019 PMID 31077635 review). TUDCA + milk-thistle + monthly ALT/AST mérés ABSZOLÚT kötelező.",
   "wadaStatus": "banned",
@@ -46,9 +66,18 @@ export default {
     "Stack SARM-okkal (LGD-4033, S23) NEM ajánlott a kumulatív hepatotoxicitás miatt"
   ],
   "expectations": [
-    {"label": "Első 1-2 hét", "body": "Anekdotikus akut erő-növekedés (UGL-források alapján), klinikai precedens hiányzik egészséges férfi-alanyokra."},
-    {"label": "4-6. hét", "body": "Lean mass növekedés 2-4 kg (UGL-anekdoták), HPTA-szuppresszió kezdődik (LH/FSH ~50%-szuppresszió). Hepatikus markerek emelkedése lehetséges (ALT 1,5-3x)."},
-    {"label": "8 hét vége", "body": "Maximum effekt UGL-context-ben (3-5 kg lean mass), HPTA-szuppresszió teljes, PCT-tervezés. Hepatikus monitor kritikus (>3x ALT → leállítás)."}
+    {
+      "label": "Első 1-2 hét",
+      "body": "Anekdotikus akut erő-növekedés (UGL-források alapján), klinikai precedens hiányzik egészséges férfi-alanyokra."
+    },
+    {
+      "label": "4-6. hét",
+      "body": "Lean mass növekedés 2-4 kg (UGL-anekdoták), HPTA-szuppresszió kezdődik (LH/FSH ~50%-szuppresszió). Hepatikus markerek emelkedése lehetséges (ALT 1,5-3x)."
+    },
+    {
+      "label": "8 hét vége",
+      "body": "Maximum effekt UGL-context-ben (3-5 kg lean mass), HPTA-szuppresszió teljes, PCT-tervezés. Hepatikus monitor kritikus (>3x ALT → leállítás)."
+    }
   ],
   "quality": {
     "pure": [
@@ -78,22 +107,68 @@ export default {
     "PCT: Clomid 25 mg/nap + Nolvadex 20 mg/nap 4-6 hét (kötelező teljes HPTA-szuppresszió miatt)"
   ],
   "studies": [
-    {"title": "An orally active selective androgen receptor modulator is efficacious on bone, muscle, and sex function with reduced impact on prostate", "authors": "Miller CP, Shomali M, Lyttle CR, et al.", "journal": "ACS Med Chem Lett. 2011;2(2):124-9.", "pmid": "21953468"},
-    {"title": "First-in-human use of selective androgen receptor modulator RAD140 in metastatic ER+ breast cancer: dose-escalation phase I trial", "authors": "Flores R, Aggarwal R, et al.", "journal": "J Clin Oncol. 2020;38(15_suppl):1063.", "pmid": "32472247"},
-    {"title": "Severe hepatotoxicity from SARMs RAD-140 and LGD-4033: a case report", "authors": "Hilal T, Gonzalez-Velez M.", "journal": "BMJ Case Rep. 2020;13(7):e236269.", "pmid": "32492288"},
-    {"title": "Selective androgen receptor modulator-induced hepatotoxicity", "authors": "Solomon ZJ, Mirabal JR, Mazur DJ, et al.", "journal": "Sex Med Rev. 2019;7(1):84-94.", "pmid": "31077635"},
-    {"title": "Selective androgen receptor modulators in preclinical and clinical development", "authors": "Bhasin S, Jasuja R.", "journal": "Curr Opin Endocrinol Diabetes Obes. 2009;16(3):232-40. (and 2012 follow-up PMID 22573713)", "pmid": "22573713"}
+    {
+      "title": "An orally active selective androgen receptor modulator is efficacious on bone, muscle, and sex function with reduced impact on prostate",
+      "authors": "Miller CP, Shomali M, Lyttle CR, et al.",
+      "journal": "ACS Med Chem Lett. 2011;2(2):124-9.",
+      "pmid": "21953468"
+    },
+    {
+      "title": "First-in-human use of selective androgen receptor modulator RAD140 in metastatic ER+ breast cancer: dose-escalation phase I trial",
+      "authors": "Flores R, Aggarwal R, et al.",
+      "journal": "J Clin Oncol. 2020;38(15_suppl):1063.",
+      "pmid": "32472247"
+    },
+    {
+      "title": "Severe hepatotoxicity from SARMs RAD-140 and LGD-4033: a case report",
+      "authors": "Hilal T, Gonzalez-Velez M.",
+      "journal": "BMJ Case Rep. 2020;13(7):e236269.",
+      "pmid": "32492288"
+    },
+    {
+      "title": "Selective androgen receptor modulator-induced hepatotoxicity",
+      "authors": "Solomon ZJ, Mirabal JR, Mazur DJ, et al.",
+      "journal": "Sex Med Rev. 2019;7(1):84-94.",
+      "pmid": "31077635"
+    },
+    {
+      "title": "Selective androgen receptor modulators in preclinical and clinical development",
+      "authors": "Bhasin S, Jasuja R.",
+      "journal": "Curr Opin Endocrinol Diabetes Obes. 2009;16(3):232-40. (and 2012 follow-up PMID 22573713)",
+      "pmid": "22573713"
+    }
   ],
   "faq": [
-    {"q": "RAD-140 'orális Test-helyettesítő'-ként marketingelt UGL-piacon — igaz?", "a": "RÉSZBEN FÉLREVEZETŐ. RAD-140 valós szelektív AR-modulátor, AR-affinitása ~80% testosterone-szintű in vitro (Miller 2011 PMID 21953468). Izomtömeg-építő hatás dokumentált klinikai trial-ban (Flores 2020 cachexia Phase II). DE: (1) hepatotoxicitás dokumentált 6 esetjelentésben (Hilal 2020 PMID 32492288 fulmináns DILI 9 hét után), Test-en ilyen rizikó nincs; (2) szelektivitás 'izom > prosztata' valós, de NEM 'Test mellékhatás-nélküli' — HPTA-szuppresszió teljes, lipid-zavar, hangulat-változás; (3) WADA tiltott (versenysport-rizikó). Tehát 'orális Test-helyettesítő' marketing leegyszerűsítés — RAD-140 saját rizikó-profilú research-level compound, NEM safer Test."},
-    {"q": "Mi a Phase II klinikai trial-eredmény?", "a": "RAD140-001 trial (NCT03088527, 2017-2020): ER+ áttétes mellrák + cachexia kombinált kezelésére, Phase II dose-escalation. Flores 2020 PMID 32472247 dose-escalation rész: 50/100/150 mg/nap orális, 4 hét kezelés. Eredmények: izomtömeg-stabilizáció néhány páciensnél, DE clinical-meaningful tumor-response NEM elérhető (mellrák önálló kezelése sikertelen). Hepatotoxicitás Grade 2-3 ALT/AST emelkedés ~25% pácienseknél. Radius Health 2020 után klinikai fejlesztést LEÁLLÍTOTTA (financial + clinical-meaningfulness okok). Phase III soha nem indult."},
-    {"q": "RAD-140 vs LGD-4033 — melyik 'biztonságosabb'?", "a": "MINDKETTŐ hepatotoxicitás-rizikós SARM. Hilal 2020 PMID 32492288 esetjelentésben 47y férfi RAD-140 + LGD-4033 STACK-en fejlesztett ki fulmináns DILI-t — kumulatív hepatotoxicitás. Izolált esetjelentések léteznek mindkettőre: RAD-140 6 ismert eset, LGD-4033 12 ismert eset (Vilaca 2018 PMID 30171122 review). 'Biztonságosabb' jelző NEM korrekt egyikre sem — mindkettő research-level compound dokumentált DILI-rizikóval. Ha a választás MUST kettő között: LGD-4033 marginálisan jobb hepatikus profilú (Basaria 2013 PMID 23413266 Phase I trial-jában ALT emelkedés mérsékelt), de a klinikai különbség kicsi."},
-    {"q": "Hepatikus monitor protokoll RAD-140-ciklusban?", "a": "Pre-ciklus: teljes hepatikus panel (ALT, AST, GGT, ALP, total bilirubin, direct bilirubin, albumin). ALT/AST eleve emelt → KONTRAINDIKÁCIÓ. Mid-cycle: 2. és 4. és 6. héten ALT/AST/GGT-mérés. >3x normál ALT → AZONNALI leállítás. Post-cycle: 4-6 hét után hepatikus panel újra normalizálódás-ellenőrzésre. TUDCA 500 mg/nap (urzodeoxikolsav-prekurzor, hepatoprotektív) + milk-thistle (silymarin) 300 mg/nap egész ciklus + 4 hét post-cycle. Alkohol-tilalmat KÖTELEZŐ betartani."}
+    {
+      "q": "RAD-140 'orális Test-helyettesítő'-ként marketingelt UGL-piacon — igaz?",
+      "a": "RÉSZBEN FÉLREVEZETŐ. RAD-140 valós szelektív AR-modulátor, AR-affinitása ~80% testosterone-szintű in vitro (Miller 2011 PMID 21953468). Izomtömeg-építő hatás dokumentált klinikai trial-ban (Flores 2020 cachexia Phase II). DE: (1) hepatotoxicitás dokumentált 6 esetjelentésben (Hilal 2020 PMID 32492288 fulmináns DILI 9 hét után), Test-en ilyen rizikó nincs; (2) szelektivitás 'izom > prosztata' valós, de NEM 'Test mellékhatás-nélküli' — HPTA-szuppresszió teljes, lipid-zavar, hangulat-változás; (3) WADA tiltott (versenysport-rizikó). Tehát 'orális Test-helyettesítő' marketing leegyszerűsítés — RAD-140 saját rizikó-profilú research-level compound, NEM safer Test."
+    },
+    {
+      "q": "Mi a Phase II klinikai trial-eredmény?",
+      "a": "RAD140-001 trial (NCT03088527, 2017-2020): ER+ áttétes mellrák + cachexia kombinált kezelésére, Phase II dose-escalation. Flores 2020 PMID 32472247 dose-escalation rész: 50/100/150 mg/nap orális, 4 hét kezelés. Eredmények: izomtömeg-stabilizáció néhány páciensnél, DE clinical-meaningful tumor-response NEM elérhető (mellrák önálló kezelése sikertelen). Hepatotoxicitás Grade 2-3 ALT/AST emelkedés ~25% pácienseknél. Radius Health 2020 után klinikai fejlesztést LEÁLLÍTOTTA (financial + clinical-meaningfulness okok). Phase III soha nem indult."
+    },
+    {
+      "q": "RAD-140 vs LGD-4033 — melyik 'biztonságosabb'?",
+      "a": "MINDKETTŐ hepatotoxicitás-rizikós SARM. Hilal 2020 PMID 32492288 esetjelentésben 47y férfi RAD-140 + LGD-4033 STACK-en fejlesztett ki fulmináns DILI-t — kumulatív hepatotoxicitás. Izolált esetjelentések léteznek mindkettőre: RAD-140 6 ismert eset, LGD-4033 12 ismert eset (Vilaca 2018 PMID 30171122 review). 'Biztonságosabb' jelző NEM korrekt egyikre sem — mindkettő research-level compound dokumentált DILI-rizikóval. Ha a választás MUST kettő között: LGD-4033 marginálisan jobb hepatikus profilú (Basaria 2013 PMID 23413266 Phase I trial-jában ALT emelkedés mérsékelt), de a klinikai különbség kicsi."
+    },
+    {
+      "q": "Hepatikus monitor protokoll RAD-140-ciklusban?",
+      "a": "Pre-ciklus: teljes hepatikus panel (ALT, AST, GGT, ALP, total bilirubin, direct bilirubin, albumin). ALT/AST eleve emelt → KONTRAINDIKÁCIÓ. Mid-cycle: 2. és 4. és 6. héten ALT/AST/GGT-mérés. >3x normál ALT → AZONNALI leállítás. Post-cycle: 4-6 hét után hepatikus panel újra normalizálódás-ellenőrzésre. TUDCA 500 mg/nap (urzodeoxikolsav-prekurzor, hepatoprotektív) + milk-thistle (silymarin) 300 mg/nap egész ciklus + 4 hét post-cycle. Alkohol-tilalmat KÖTELEZŐ betartani."
+    }
   ],
-  "related": ["lgd-4033", "ostarine", "yk-11", "testosterone-info"],
+  "related": [
+    "lgd-4033",
+    "ostarine",
+    "yk-11",
+    "testosterone-info"
+  ],
   "doseCalc": {
     "type": "fixed",
-    "fixed": {"low": 10, "medium": 15, "high": 20},
+    "fixed": {
+      "low": 10,
+      "medium": 15,
+      "high": 20
+    },
     "unit": "mg/nap (orális, napi 1x)",
     "note": "10-20 mg/nap, max 8 hét ciklus. NE haladja meg 20 mg-ot/nap (Hilal 2020 esetjelentés 30 mg/nap-on). TUDCA + milk-thistle KÖTELEZŐ. PCT 4-6 hét. Stack más SARM-okkal NEM ajánlott."
   },
@@ -122,5 +197,6 @@ export default {
       "markers": "N/A",
       "purpose": "RAD-140 maximum 8 hét ciklus; cruise NEM ajánlott a kumulatív hepatotoxicitás miatt."
     }
-  }
+  },
+  "anecdote": "Az anekdotikus beszámolók szerint a RAD-140 az egyik erősebb SARM, a felhasználók szerint inkább 'enyhe szteroidnak' érződik, mint tipikus SARM-nak. Közösségi beszámolók szerint olyan protokollokból, mint a 20 mg RAD-140 6 héten át, alacsony dózisú tesztoszteron-alappal (kb. 350 mg/hét) együtt, jó eredmények származnak. A legtöbb tapasztalt felhasználó nem ajánlja a SARM-ok futtatását tesztoszteron-alap nélkül, bár technikailag lehetséges. Annak ellenére, hogy 'szelektívként' forgalmazzák, a RAD-140 elnyomja a természetes tesztoszteront. Szilárd izomépítő mg-per-mg alapon, néha az Anavarnál is erősebbként jelentik. Mivel orálisan szedik és májmetabolizmuson megy keresztül, negatívan befolyásolja a lipideket és máj-terhelést ad hozzá, hasonlóan más orális vegyületekhez. Néhány felhasználó agressziót és álmatlanságot jelent, bár ez erősen egyéni. Hajhullást is jelentettek. Az alacsonyabb dózisok nagyon hatékonyak lehetnek a magas androgén-receptor affinitás miatt."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Combined cholinergic potentiation and dopaminergic modulation, the original patent describes an “acetylcholine and serotonin release-enhancing” mechanism; the precise receptor-level profile remains unknown.",
   "legalStatus": "Not approved as a medicine anywhere. Sold as a “research chemical” with no regulated source control; banned in the UK under the Psychoactive Substances Act.",
-  "chemicalFormula": "C18H21NO2"
+  "chemicalFormula": "C18H21NO2",
+  "anecdote": "Community accounts hold PRL-8-53 in high regard for enhancing learning and memory, with reports of successful use in language-learning protocols. Users describe it as performing best on vocabulary review and pattern recognition tasks. Higher doses may cause mild sweating in some individuals, with response highly variable. Community members commonly report improvements in verbal fluency and information retention, especially under cognitively demanding contexts. Some users have reported unwanted effects at higher doses including anxiety, shakiness, and insomnia. Overall consensus is that PRL-8-53 enhances both short- and long-term memory, verbal fluency, and memory retrieval. The compound is supported by one published human memory trial from the 1970s and remains a notable research nootropic for memory-focused applications."
 }

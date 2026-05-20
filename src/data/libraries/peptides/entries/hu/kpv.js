@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/18483147/",
       "finding": "A KPV csökkenti a gyulladásos citokineket és klinikai súlyosságot IBD és bőrgyógyászati modellekben."
     }
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a szubkután beadott KPV enyhítette a súlyos artritisz tüneteit a használat időtartama alatt, a közösségi beszámolók pedig néhány napon belüli tüneti csökkenést említenek. Egy felhasználó arról számolt be, hogy bőrirritációja egy hét használat után részben megszűnt. A KPV inkább tisztán gyulladáscsökkentő, mintsem regeneratív, ezért gyakran BPC-157-tel vagy TB-500-zal kombinálják a gyógyító tényezők spektrumának kibővítésére.\n\nAz adagolás céloktól függ. A KPV szájon át vagy szubkután injekció formájában adható; szájon át szedhető kapszula formulációk elérhetők. A helyi alkalmazás a készítménytől függ. Jellemzően néhány hetes ciklusokban adagolják."
 }

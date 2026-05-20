@@ -191,5 +191,6 @@ export default {
     ],
     "unit": "mcg/nap",
     "note": "Dose-titrating a 35-40 órás felezési idő miatt: +20 mcg/nap minden 2-3 napban. Maximum 120-140 mcg/nap, 6-8 hét OFF + ketotifen 1-2 mg lefekvés előtt receptor down-regulation gátlására. Taurin 3 g + magnézium 2 g/nap az izomgörcsökre. Vérnyomás napló otthon, EKG 6 hét után."
-  }
+  },
+  "anecdote": "A Clenbuterolnak megalapozott a hírhedt reputációja — anekdotikus beszámolók szerint nagyon hatékony a zsírvesztésre, de jelentős mellékhatás-terheléssel jár. A felhasználók jellemzően megnövekedett energiát, erős stimulációt, emelkedett pulzusszámot és hőtermelést tapasztalnak meglehetősen gyorsan a beadás után. A tolerancia gyorsan kiépül a béta-receptor downregulációja miatt, így sok felhasználó néhány hetente felfelé titrálja az adagot, bár ez kontextusfüggő. Az elektrolit-egyensúlyzavarok gyakori aggály, kiszáradást is gyakran jelentenek. Alvászavar is előfordulhat a szokatlanul hosszú felezési idő miatt, ezért egyes felhasználók az Albuterol rövidebb felezési idejét részesítik előnyben kontraszt-opcióként. Összességében a közösségi beszámolók szerint a Clenbuterol a hirdetett módon működik a zsírvesztésre és egyértelmű helye van óvatos adagolás mellett, de gondos kardiovaszkuláris, elektrolit- és alvásparaméter-kezelést igényel."
 }

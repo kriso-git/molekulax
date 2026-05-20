@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "After hydrolysis it releases choline + glycerophosphate; the choline serves as substrate for acetylcholine synthesis, the glycerophosphate as a phosphatidylcholine building block, together they support cholinergic tone and membrane phospholipid synthesis.",
   "legalStatus": "Prescription-only in Italy (Delecit). Sold as a dietary supplement in other EU member states and the USA. Freely available in Hungary.",
-  "chemicalFormula": "C8H20NO6P"
+  "chemicalFormula": "C8H20NO6P",
+  "anecdote": "Community accounts describe Alpha-GPC as well-suited to short-term performance boosts, with users commonly taking 1 g pre-workout. It is positioned as an acute form of choline given its short duration, with stronger physical performance benefits than long-term cognitive ones. CDP-Choline or other forms are typically used for chronic acetylcholine support. In training contexts, users note improved mind-muscle connection, which is one reason it appears in many pre-workout formulations. Excessive dosing can produce over-cholinergic symptoms such as headaches, brain fog, and nausea, so dose calibration is important. Some users experience anxiety, in which case pairing with Magnesium L-Threonate is commonly suggested. Well-regarded as a solid choline form for short cognitive lifts and physical performance."
 }

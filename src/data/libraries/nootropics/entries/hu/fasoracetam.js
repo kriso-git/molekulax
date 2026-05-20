@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "mGluR II és III csoport agonista profil + cAMP- és cGMP-szintek emelése; krónikus szedés esetén mGluR-receptor up-regulációt vált ki.",
   "legalStatus": "Klinikai vizsgálati státusz, sehol nem jóváhagyott gyógyszer. OTC kiegészítőként árusítása jogilag szürke zóna; UK-ban a Psychoactive Substances Act tiltja.",
-  "chemicalFormula": "C10H16N2O2"
+  "chemicalFormula": "C10H16N2O2",
+  "anecdote": "Közösségi beszámolók szerint a Fasoracetam kiváló profillal és tolerálhatósággal rendelkezik, a felhasználók általában jelentős szorongáscsökkenést, javult fókuszt és koncentrációt, jobb alvásminőséget és ADHD-szerű tünetek enyhülését jelentik. A nettó hatás úgy tűnik, a glutamatergiás diszfunkció mértékétől függ, ami azt jelenti, hogy a legjobban olyan egyéneknél működik, akiknek jelzési egyensúlytalanságuk van, legjellemzőbben ADHD vagy neurodegeneratív állapotok esetén. A Fasoracetam normalizálja a GABA-B jelzést, és segítheti a benzodiazepin elvonást, néhány közösségi tag alkalmankénti Phenibutot kombinál konzisztens Fasoracetam használat mellett, hogy fékezze a GABA-B downregulációt. Egy kolinforrás, például a CDP-kolin, gyakran ajánlott. A hatások 1-2 hét alatt épülnek krónikus használattal, mivel a cAMP aktivitás inkább lassú neuromodulátorként hat, mintsem akut hatást produkálna. Erősen egyéni, de jól értékelt a tiszta fókuszért stimuláns-szerű aktiváció nélkül."
 }

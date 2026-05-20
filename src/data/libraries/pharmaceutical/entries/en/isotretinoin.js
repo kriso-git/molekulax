@@ -75,5 +75,6 @@ export default {
   "doseCalc": {
     "type": "warning",
     "warning": "Isotretinoin is the GOLD STANDARD for SEVERE ACNE, but STRICTLY UNDER DERMATOLOGIST SUPERVISION with pregnancy-prevention protocol (USA: iPLEDGE, EU: national programs). NO STANDALONE DOSE CALCULATOR on this page because: (1) FDA X TERATOGENICITY — a single missed contraception or lab check can lead to severe fetal malformation; (2) cumulative dose (120-150 mg/kg body weight/course) is body-weight-individual, dermatologist-calculated; (3) MONTHLY CBC, liver function + LIPID monitor MANDATORY; (4) Tetracycline COMBINATION FORBIDDEN (pseudotumor cerebri); (5) Psychiatric symptoms (depression-suicidality) FDA warning. Talk to your dermatologist. Emergency symptoms (vision change, persistent headache, mood depression, blood in stool, pregnancy suspicion): IMMEDIATE care."
-  }
+  },
+  "anecdote": "Anecdotal reports describe Isotretinoin (Accutane) as a systemic treatment rather than a topical skin drug, with effects that extend beyond acne clearance. Users frequently note increased skin elasticity, with some reporting fuller-appearing facial features (nose, lips) during and after a course — highly subject-dependent. Long-term acne remission is a notable outcome reported by many. Mood-related side effects remain debated; evidence is mixed but warrants screening. Clinical context: lipid panel and LFT monitoring are mandatory, and FDA category X teratogenicity requires iPLEDGE enrollment for female patients with strict pregnancy-prevention protocols."
 }

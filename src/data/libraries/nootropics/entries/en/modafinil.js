@@ -148,5 +148,6 @@ export default {
     "armodafinil",
     "flmodafinil",
     "phenylpiracetam"
-  ]
+  ],
+  "anecdote": "Anecdotal reports describe Modafinil as one of the most functional cognitive enhancers, with users noting baseline energy that feels extended for hours without a pronounced peak or crash. Because it modulates orexin and histamine, appetite suppression and significant reductions in sleep drive are common, which is why early-morning dosing upon waking is consistently recommended given the 12-15 hour half-life. Modest cortisol elevations contribute to a task-focused, in-the-moment state. Community accounts note tolerance builds slower than with traditional stimulants, though psychological reliance on the productivity boost can develop. CYP-mediated hepatic metabolism creates potential drug-interaction considerations. Compared to Fladrafinil, Modafinil feels smoother, shorter-lasting, and less wired. Lower doses can be effective in sensitive individuals."
 }

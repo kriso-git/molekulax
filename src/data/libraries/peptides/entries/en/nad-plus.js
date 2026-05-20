@@ -49,5 +49,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/26785480/",
       "finding": "Restoring NAD+ improves mitochondrial function and reduces age-related decline."
     }
-  ]
+  ],
+  "anecdote": "Users administering NAD+ commonly report a baseline-energy shift without significant stimulation — a sense of feeling less drained throughout the day. IV use can feel intense if pushed too quickly, so professional administration is recommended. NAD+ works best with consistent dosing because it acts as a steady background compound rather than something acutely felt. It supports cellular function, especially in older users, since NAD+ levels reportedly decline with age. Some users also note improved mental clarity, cognition, and reduced brain fog, likely tied to improved mitochondrial energy production in the brain.\n\nNAD+ can be administered via IV (if resources allow) or subcutaneously. Oral forms are poorly bioavailable. When stacked with other mitochondrial peptides, lower NAD+ dosing is often sufficient. Administration ranges from once per week to several times per week, depending on user preference."
 }

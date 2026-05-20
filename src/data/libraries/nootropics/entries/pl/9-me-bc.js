@@ -162,5 +162,6 @@ export default {
     "selegiline",
     "bpap",
     "modafinil"
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują 9-Me-BC w dawce około 20 mg dziennie w 4-tygodniowych cyklach jako resensytyzator dopaminy, który przywraca motywację i sprawczość, a stymulanty na receptę po cyklu wydają się czystsze. Użytkownicy zauważają, że łączenie z klasycznymi stymulantami jest odradzane; łagodniejsze środki, takie jak Bromantan, są często stosowane w zastępstwie podczas protokołu. Doniesienia społeczności opisują profil czystego skupienia, a nie nerwowego przestymulowania, niektórzy zgłaszają emocjonalne spłaszczenie lub stępienie przypisywane przesunięciom tonu dopaminergicznego: niższe szczyty, ale stabilniejsza, podwyższona linia bazowa. Zgłaszano łagodną fotouczulającą wrażliwość ze względu na strukturę beta-karbolinową, dlatego ekspozycja na słońce powinna być ograniczona. Korzyści utrzymują się po zaprzestaniu, zgodnie z proponowanym wzrostem neuronów dopaminergicznych i neuroprotekcją. L-Tyrozyna jest często stosowana w celu wsparcia syntezy dopaminy."
 }

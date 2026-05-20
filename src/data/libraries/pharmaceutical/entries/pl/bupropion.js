@@ -212,5 +212,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "SR 150 mg/dzień rano przez 4 dni, potem 150 mg 2x/dzień (8+ h odstępu). XL 150 mg/dzień rano przez 7 dni, potem 300 mg/dzień. Maks. SR 400 / XL 450 mg/dzień — powyżej ryzyko drgawek rośnie WYKŁADNICZO. NIE przyjmuj wieczorem. NIE kruszyć tabletki."
-  }
+  },
+  "anecdote": "Raporty anegdotyczne opisują Bupropion jako wszechstronny antydepresant NDRI o zauważalnym działaniu zwiększającym motywację i napęd poprzez wzmocnienie dopaminy i noradrenaliny. Doniesienia społeczności wskazują na silną skuteczność w prezentacjach depresji z niską motywacją, w tym w przypadkach z nakładającym się ADHD. Jego niskie powinowactwo do DAT sugeruje, że działa bardziej jako modulator dopaminergiczny przez VMAT-2 niż bezpośredni bloker wychwytu zwrotnego. Antagonizm receptora nikotynowego leży u podstaw zatwierdzonego przez FDA wskazania do rzucania palenia (Zyban); trwające badania analizują jego użyteczność w zaburzeniach związanych z kokainą, metamfetaminą i zachowaniami impulsywnymi. Bupropion może być paradoksalnie aktywizujący lub nadmiernie stymulujący, z wąskim oknem terapeutycznym. Notatki mechanistyczne: donory tlenku azotu i inhibitory PDE-5 (Sildenafil, Tadalafil) mogą osłabiać skuteczność antydepresyjną; błękit metylenowy wydaje się ją wzmacniać. Uwaga: obniżenie progu drgawkowego — przeciwwskazane w zaburzeniach odżywiania i historii drgawek."
 }

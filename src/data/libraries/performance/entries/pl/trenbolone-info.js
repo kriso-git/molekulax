@@ -216,14 +216,33 @@ export default {
       "aromatization": "NIE — Trenbolon NIE jest substratem CYP19 (19-nor + konfiguracja Δ9,11 blok)",
       "hepatotoxicity": "Umiarkowana — NIE 17α-alkilowany, ale wysoki skutek uboczny oksydatywnego stresu nerkowego",
       "quality": {
-        "pure": ["UGL Trenbolon Octan 100 mg/ml fiolka olejowa (HPLC-testowane)", "Konwersja pelletu weterynaryjnego Finaplix-H (historyczna praktyka UGL)"],
-        "caution": ["EOD lub codzienna iniekcja IM wymagana", "PIP powszechny (formula oleju pomarańczowo-czerwona)", "Tren-cough szybki onset 30-60 s po iniekcji"],
-        "avoid": ["Silna predyspozycja nerkowa", "Planowane ojcostwo", "Pierwszy cykl AAS (NIE compound dla początkujących)"]
+        "pure": [
+          "UGL Trenbolon Octan 100 mg/ml fiolka olejowa (HPLC-testowane)",
+          "Konwersja pelletu weterynaryjnego Finaplix-H (historyczna praktyka UGL)"
+        ],
+        "caution": [
+          "EOD lub codzienna iniekcja IM wymagana",
+          "PIP powszechny (formula oleju pomarańczowo-czerwona)",
+          "Tren-cough szybki onset 30-60 s po iniekcji"
+        ],
+        "avoid": [
+          "Silna predyspozycja nerkowa",
+          "Planowane ojcostwo",
+          "Pierwszy cykl AAS (NIE compound dla początkujących)"
+        ]
       },
-      "interactions": ["Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY", "Stack z bazą testosteronu OBOWIĄZKOWY (Tren samodzielnie ryzyko ED)", "PCT ostatnia iniekcja Ace +2-3 dni"],
+      "interactions": [
+        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY",
+        "Stack z bazą testosteronu OBOWIĄZKOWY (Tren samodzielnie ryzyko ED)",
+        "PCT ostatnia iniekcja Ace +2-3 dni"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
         "unit": "mg/EOD (IM, EOD lub raz dziennie)",
         "note": "50-100 mg EOD (tygodniowo 175-350 mg), max 8 tygodni. PCT ostatnia iniekcja +2-3 dni. Tren-Ace klasyczny wybór kulturystyczny z powodu szybkiego on/off."
       }
@@ -241,14 +260,31 @@ export default {
       "aromatization": "NIE — strukturalny blok Trenbolonu",
       "hepatotoxicity": "Umiarkowana — ten sam macierzysty Trenbolon, NIE 17α-alkilowany",
       "quality": {
-        "pure": ["UGL Trenbolon Enantat 100-200 mg/ml fiolka olejowa (HPLC-testowane)"],
-        "caution": ["Tygodniowo 1-2x iniekcja IM wystarcza (steady-state 3-4 tygodnie)", "PIP łagodniejszy niż na Ace", "Skutki uboczne Tren (kreatynina, prolaktyna) te same co na Ace, tylko wolniej się kumulują"],
-        "avoid": ["Krótki (4-6 tygodni) cykl nieefektywny", "Inne przeciwwskazania Tren te same"]
+        "pure": [
+          "UGL Trenbolon Enantat 100-200 mg/ml fiolka olejowa (HPLC-testowane)"
+        ],
+        "caution": [
+          "Tygodniowo 1-2x iniekcja IM wystarcza (steady-state 3-4 tygodnie)",
+          "PIP łagodniejszy niż na Ace",
+          "Skutki uboczne Tren (kreatynina, prolaktyna) te same co na Ace, tylko wolniej się kumulują"
+        ],
+        "avoid": [
+          "Krótki (4-6 tygodni) cykl nieefektywny",
+          "Inne przeciwwskazania Tren te same"
+        ]
       },
-      "interactions": ["Kabergolina E3D", "Baza testosteronu OBOWIĄZKOWA", "PCT ostatnia iniekcja Enan +14-21 dni"],
+      "interactions": [
+        "Kabergolina E3D",
+        "Baza testosteronu OBOWIĄZKOWA",
+        "PCT ostatnia iniekcja Enan +14-21 dni"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 200, "medium": 300, "high": 400},
+        "fixed": {
+          "low": 200,
+          "medium": 300,
+          "high": 400
+        },
         "unit": "mg/tydzień (IM, tygodniowo 1-2x podzielone)",
         "note": "200-400 mg/tydzień, tygodniowo 1-2x. Minimum 8-10 tygodni cyklu. PCT ostatnia iniekcja +14-21 dni. Wolniejsze on/off niż Ace, mniej iniekcji."
       }
@@ -266,18 +302,36 @@ export default {
       "aromatization": "NIE — strukturalny blok Trenbolonu",
       "hepatotoxicity": "Umiarkowana — ten sam macierzysty Trenbolon",
       "quality": {
-        "pure": ["Negma Parabolan 76 mg/ml ampułka (HISTORYCZNY Rx 1980-1997, dziś rzadkie-kolekcjonerskie)", "UGL Tren-Hex 100 mg/ml fiolka olejowa (HPLC-testowane)"],
-        "caution": ["Tygodniowo 1-2x iniekcja IM (średni okres półtrwania)", "PIP średni-łagodny", "Klasyczny 'Parabolan' historyczny prestiż na rynku UGL"],
-        "avoid": ["Standardowe przeciwwskazania Tren te same (nerkowe, sercowo-naczyniowe, ojcostwo)"]
+        "pure": [
+          "Negma Parabolan 76 mg/ml ampułka (HISTORYCZNY Rx 1980-1997, dziś rzadkie-kolekcjonerskie)",
+          "UGL Tren-Hex 100 mg/ml fiolka olejowa (HPLC-testowane)"
+        ],
+        "caution": [
+          "Tygodniowo 1-2x iniekcja IM (średni okres półtrwania)",
+          "PIP średni-łagodny",
+          "Klasyczny 'Parabolan' historyczny prestiż na rynku UGL"
+        ],
+        "avoid": [
+          "Standardowe przeciwwskazania Tren te same (nerkowe, sercowo-naczyniowe, ojcostwo)"
+        ]
       },
-      "interactions": ["Kabergolina E3D", "Baza testosteronu OBOWIĄZKOWA", "PCT ostatnia iniekcja Hex +21 dni"],
+      "interactions": [
+        "Kabergolina E3D",
+        "Baza testosteronu OBOWIĄZKOWA",
+        "PCT ostatnia iniekcja Hex +21 dni"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 150, "medium": 225, "high": 300},
+        "fixed": {
+          "low": 150,
+          "medium": 225,
+          "high": 300
+        },
         "unit": "mg/tydzień (IM, tygodniowo 1-2x)",
         "note": "150-300 mg/tydzień, tygodniowo 1-2x. 8-10 tygodni cyklu. PCT ostatnia iniekcja +21 dni. 'Parabolan' ma historyczny prestiż — iluzja jakości Rx Negma, nowoczesny UGL ta sama kategoria co Tren-Ace/Enan."
       }
     }
   ],
-  "defaultVariant": "ace"
+  "defaultVariant": "ace",
+  "anecdote": "Trenbolon to bardzo silny i złożony steryd, niezalecany dla początkujących, nawet w mikrodawkach. W obiegu są dwa główne estry: Acetate (okres półtrwania ~2-4 dni) i Enanthate (okres półtrwania ~7-9 dni). Użytkownicy opisują ten związek jako bardziej 'wyczuwalny' niż większość AAS, zarówno fizycznie, jak i mentalnie — szalone przyrosty siły, szybka rekompozycja (jednoczesna utrata tłuszczu i przyrost mięśni) oraz twardy, suchy wygląd. Partycjonowanie składników odżywczych jest dramatycznie zwiększone. Kompromisy są poważne: Tren znacząco podnosi ciśnienie krwi, niszczy HDL, podnosząc LDL, i podwyższa hematokryt. Zaburzenia snu (nocne poty, ciężka bezsenność) są bardzo częste, wywołane efektami stymulującymi OUN i podwyższonym napięciem współczulnym. Wzrost prolaktyny z aktywności progestagennej może powodować wahania libido, ED, ginekomastię, a nawet laktację. Wpływ na tarczycę (obniżone T3, zmieniona konwersja) i obciążenie sercowo-naczyniowe poprzez stres oksydacyjny są również udokumentowane. Mentalnie użytkownicy opisują zwiększoną agresję, lęk i drażliwość. Niezwykle skuteczny, ale bardzo ryzykowny — przeprowadź własne badania."
 }

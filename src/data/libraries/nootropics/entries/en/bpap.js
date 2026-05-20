@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Knoll`s “CAE mechanism”, enhancement of the response of presynaptic catecholaminergic and phenethylamine-ergic neurons to electrical action potentials, so each impulse releases more neurotransmitter. It does not trigger baseline release, the effect is activity-dependent.",
   "legalStatus": "Not approved as a medicine anywhere. Academic research compound; not widely available even on the “research chemical” market.",
-  "chemicalFormula": "C16H23NO"
+  "chemicalFormula": "C16H23NO",
+  "anecdote": "Community accounts often prefer BPAP over PPAP HCl, describing the experience as cleaner rather than aggressive. Evidence suggests potential liver strain even at low doses, which should be considered before extended use. At higher concentrations BPAP acts as a monoamine reuptake inhibitor but does not release monoamines the way amphetamines do; it functions more potently as a DRI and NRI than as an SRI. Neuroprotective effects and efficacy for major depressive disorder have been documented. Active at low doses, BPAP functions more as a natural motivation enhancer than a stimulant. Subject response is highly variable, but community accounts position it as a solid choice for improving drive when appropriate."
 }

@@ -89,5 +89,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/34334873/",
       "finding": "Topical GHK-Cu significantly reduced hair loss and increased hair density vs placebo."
     }
-  ]
+  ],
+  "anecdote": "Anecdotal reports describe long-term GHK-Cu administration at 2.5 mg daily producing noticeable skin and hair quality benefits within roughly two weeks, with improvements persisting over a year of use. Users commonly note sustained skin quality, though definitive healing claims remain difficult to verify outside controlled settings.\n\nGHK-Cu is one of the more affordable peptides. It can be administered topically or via subcutaneous injection, with most users preferring injection for systemic benefits. For topical applications, GHK-Cu powder is typically mixed into a moisturizer and applied; dosing varies with the quantity and quality of the powder used."
 }

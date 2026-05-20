@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/14735834/",
       "finding": "Selank wykazuje działanie anksjolityczne i poprawia funkcje poznawcze w badaniach u ludzi."
     }
-  ]
+  ],
+  "anecdote": "Doniesienia anegdotyczne na temat Selanku odzwierciedlają te o Semaxie: niektórzy użytkownicy zauważają wyraźne efekty, inni nie. Jedna powszechna relacja opisuje 500 mcg donosowo łagodzące lęk w dni dawkowania w porównaniu do dni bez dawki. Nie jest ciężki ani sedatywny jak konwencjonalne anksjolityki, ale jest niezawodnie skuteczny dla wielu osób. Selank jest powszechnie łączony z Semaxem dla spokojnego, nootropowego profilu.\n\nSelank jest najczęściej podawany donosowo, choć iniekcja podskórna również działa. Zazwyczaj podawany codziennie lub sytuacyjnie \"na żądanie\"."
 }

@@ -77,5 +77,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/37864208/",
       "finding": "Po intensywnej interwencji stylu życia tyrzepatyd przyniósł dodatkowe 18,4% redukcji masy w 72 tygodnie."
     }
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne często opisują Tyrzepatyd jako najbardziej preferowany spośród trzech głównych GLP-1 — gładkie, czyste tłumienie apetytu bez zmęczenia czy nadmiernej supresji Semaglutydu i bez wzrostu spoczynkowego tętna związanego z Retatrutydem. Użytkownicy często ustalają dawkę podtrzymującą około 5 mg raz w tygodniu, ze zgłoszeniami dobrej wrażliwości na insulinę i niezakłóconego snu.\n\nPodobnie jak inne GLP-1, Tyrzepatyd jest podawany raz w tygodniu. Jego okres półtrwania wynosi około 5 dni (nieco krócej niż 7 dni Semaglutydu). Dawkowanie kliniczne waha się od 2,5 mg do 15 mg, miareczkowane w przyrostach 2,5 mg."
 }

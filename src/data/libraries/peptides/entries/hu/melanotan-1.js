@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/26132941/",
       "finding": "Az afamelanotide szignifikánsan megnyújtja a tüneti tűrőképességet napfénynek kitett EPP betegekben."
     }
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a Melanotan-1 egyenletes, fokozatos barnulást eredményez napi 500 mcg adag és 30 perc napi napozás mellett, körülbelül egy héten belül észrevehető narancsos árnyalattal. A mellékhatások ebben a beszámolóban minimálisak voltak, bár a két vegyületet összehasonlító felhasználók gyakran a Melanotan-2-t részesítik előnyben a gyorsabb pigmentáció miatt.\n\nA Melanotan-1-et jellemzően orrspray-ként vagy szubkután injekcióként adják be a gyenge orális biohasznosulás miatt. A felhasználók fokozatosan titrálnak felfelé, mivel hányinger gyakori tünet, ha a kezdő dózis túl magas. Egyes felhasználók akár 1 mg-os adagot is tolerálnak. A beadás 30-60 perccel a napozás előtt ideális."
 }

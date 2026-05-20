@@ -79,5 +79,6 @@ export default {
     },
     "unit": "% topikális",
     "note": "Alacsony (0,025%): érzékeny bőr, anti-aging kezdés, szárazságra hajlamos. Mérsékelt (0,05%): standard akne és anti-aging. Magas (0,1%): rezisztens akne, vastagabb bőr. ESTÉRE alkalmazni borsónyi-mennyiségben tiszta, száraz bőrre. NAPVÉDELEM SPF 30+ KÖTELEZŐ. Lassú bevezetés (heti 2x → 4x → napi) az irritáció mitigálására. Hatás 8-12 hét."
-  }
+  },
+  "anecdote": "Anekdotikus beszámolók szerint a Tretinoin az egyik legerősebb helyi kezelés az arcaknéra és az általános bőrminőségre. A kezdeti irritáció — bőrpír, kiütések, hámlás — jellemzően az első hónapban jelentkezik, és folyamatos használat mellett megszűnik. A legjobb hatások késleltetettek: a kollagénnel kapcsolatos javulások és textúraváltozások több hónap következetes alkalmazás után jelennek meg. Közösségi beszámolók szerint a Tretinoin fokozhatja a kiegészítő bőrápolási topikus készítmények penetrációját, bár ez nagyrészt anekdotikus. Szűkebb terápiás ablakkal rendelkezik, mint a kozmetikai retinoidok — a legtöbb felhasználó stabil koncentrációt talál anélkül, hogy emelnie kellene. Figyelem: a fényérzékenység jelentős; napi SPF kötelező. Terhességi ellenjavallat érvényes."
 }

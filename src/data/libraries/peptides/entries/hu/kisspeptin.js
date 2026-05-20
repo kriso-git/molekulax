@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/24450286/",
       "finding": "A kisspeptin biztonságosan indukálja az LH-pulzusokat hipotalamikus amenorrhoeában."
     }
-  ]
+  ],
+  "anecdote": "A Kisspeptin az egyik érdekesebb opció a poszt-ciklus terápia / természetes tesztoszteron-emelő területen. A legtöbb felhasználó viszonylag gyorsan észleli a libidó- és hangulatjavulást, ha a HPG-tengelye jól reagál. Azonban AAS által szuppresszált felhasználóknál a válasz anekdotikusan gyengébb az erősebb alternatívákhoz, például a HCG-hez képest. A Kisspeptin termékenységi szempontból intenzíven kutatott, mivel képes az LH/FSH-t a szintetikus alternatíváknál fiziológiásabb módon stimulálni. A hatások finomak, de hasznosak, amikor a használati eset megfelelő.\n\nA Kisspeptint legjobb szubkután injekcióval adagolni a peptid jellege miatt. Az adagolás analógonként változik (pl. Kisspeptin-10), de általában naponta vagy hetente néhány alkalommal adagolják."
 }

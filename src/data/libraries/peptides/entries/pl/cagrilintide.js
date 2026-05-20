@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/40009844/",
       "finding": "CagriSema dała 22,7% redukcji masy ciała w 68 tygodni u dorosłych z otyłością."
     }
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują Kagrylintyd jako jeden z najsilniejszych supresorów apetytu, jakie próbowali członkowie społeczności. Stosowany wraz z Tyrzepatydem, głód podobno znika całkowicie na 2-3 dni po dawce, choć w tym czasie często zgłaszane są skrajne zmęczenie i senność. U niektórych użytkowników występują również nudności i wzdęcia. Wczesne wyniki badań wykazały znaczący potencjał utraty wagi. Dawki początkowe są zwykle bardzo niskie (około 0,25 mg) i utrzymywane przez około miesiąc.\n\nKagrylintyd jest najlepiej podawany podskórnie, zwykle raz lub dwa razy w tygodniu ze względu na jego długotrwałe działanie. Często stosowany jako leczenie drugiego rzutu wraz z GLP-1."
 }

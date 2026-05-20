@@ -79,5 +79,6 @@ export default {
     },
     "unit": "% topikális",
     "note": "Low (0.025%): sensitive skin, anti-aging start, dryness-prone. Moderate (0.05%): standard acne and anti-aging. High (0.1%): resistant acne, thicker skin. Apply at EVENING in pea-sized amount on clean, dry skin. SUNSCREEN SPF 30+ MANDATORY. Slow introduction (2x/wk → 4x/wk → daily) to mitigate irritation. Effect 8-12 weeks."
-  }
+  },
+  "anecdote": "Anecdotal reports describe Tretinoin as one of the most potent topical treatments for facial acne and overall skin quality. Initial irritation — redness, breakouts, peeling — typically occurs in the first month and resolves with continued use. Best effects are delayed: collagen-related improvements and texture changes appear after several months of consistent application. Community accounts note that Tretinoin may enhance penetration of adjunct skincare topicals, though this is largely anecdotal. It has a narrower therapeutic window than cosmetic retinoids — most users find a stable concentration without needing escalation. Caution: photosensitivity is significant; daily SPF is mandatory. Pregnancy contraindication applies."
 }

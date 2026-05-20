@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/34953703/",
       "finding": "52-tygodniowe rozszerzenie open-label: utrzymana poprawa objawów HSDD, działania niepożądane słabnące w czasie."
     }
-  ]
+  ],
+  "anecdote": "PT-141 jest szeroko stosowanym i wyraźnie odczuwalnym związkiem libido. Użytkownicy często zgłaszają silny, nieco spontaniczny wzrost pożądania — nie tylko łagodną poprawę — bez zależności od innych czynników, ponieważ działa bezpośrednio poprzez receptory melanokortyny. Nudności są bardzo częstym skutkiem ubocznym, szczególnie przy wyższych dawkach lub na początku stosowania. Zaczerwienienie lub przejściowy wzrost ciśnienia krwi są również zgłaszane. W połączeniu z inhibitorem PDE5, takim jak Tadalafil lub Sildenafil, użytkownicy opisują wzmożone pożądanie i wydajność.\n\nPT-141 jest zwykle podawany podskórnie, jak większość peptydów. Dawkowanie jest wysoce indywidualne."
 }

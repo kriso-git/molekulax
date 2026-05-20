@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Adenozin A1 + A2A receptor kompetitív antagonizmus → vigilancia-emelés, prefrontális dopamin-jelátvitel facilitálása. Foszfodiészteráz inhibíció → cAMP-emelés simaizomban és zsírszövetben (lipolysis-stimuláció). Az A2B-affinitása alacsonyabb mint a koffeiné, így a szorongáskeltő hatás mérsékeltebb.",
   "legalStatus": "EU/HU/USA: szabadon kapható étrend-kiegészítőként. Az USA FDA 2022-ben elismerte az ENFINITY márkás paraxanthin New Dietary Ingredient (NDI) státuszát. Sport-dopping: a WADA tiltólistáján 2026-ban nem szerepel, ellenőrizendő mindenkori verziónál.",
-  "chemicalFormula": "C7H8N4O2"
+  "chemicalFormula": "C7H8N4O2",
+  "anecdote": "Közösségi beszámolók szerint a Paraxantin tiszta koffeinként hat, szilárd fókuszt biztosít sok szorongás vagy egyéb, a koffeinre jellemző mellékhatások nélkül. A felhasználók szerint a szív- és érrendszer, valamint az idegrendszer számára simábbnak érződik, különösen azoknál, akik rosszul tolerálják a koffeint. Mivel a koffein fő aktív metabolitja, hatásai jellemzően kiszámíthatóbbak. A paraxantint szájon át adagolják, és rövidebb, simább hatástartamú, mint a koffein, ezért gyakran javasolják az esemény előtti vagy korai napi időzítést. Az adagolás rugalmas, és egyéni érzékenységtől függ, különösen, ha már fennáll koffein-tolerancia. Növekszik népszerűsége mint új generációs stimuláns vagy produktivitás-orientált nootropikum."
 }

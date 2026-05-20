@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Hippocampal HACU enhancement → elevated acetylcholine synthesis; secondary AMPA receptor positive modulation. Does not bind any receptor directly.",
   "legalStatus": "Prescription-only in Italy (Pramistar), withdrawn in several markets. Not FDA-approved in the USA; available on the OTC nootropic market.",
-  "chemicalFormula": "C14H27N3O2"
+  "chemicalFormula": "C14H27N3O2",
+  "anecdote": "Anecdotal reports describe Pramiracetam as a plain but still effective racetam, with users typically experiencing a locked-in feel rather than strong neurotransmitter-system effects. Community accounts emphasize heavy enhancement of memory acquisition, encoding, and recall, with evidence suggesting accelerated cholinergic impulse flow in hippocampal circuitry underlying the memory profile. The compound is reported to work less efficiently when the brain is under stress, with elevated corticosteroids blocking the memory-enhancing effects of all racetams, not just Pramiracetam. This makes it a poorer choice during high-pressure periods. Overall it is positioned as a solid racetam with potent HACU enhancement and AMPA modulation, though many community members prefer Coluracetam for similar mechanisms."
 }

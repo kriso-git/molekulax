@@ -79,5 +79,6 @@ export default {
     },
     "unit": "% topikális",
     "note": "Niska (0,025%): wrażliwa skóra, start anti-aging, podatna na suchość. Średnia (0,05%): standard trądzik i anti-aging. Wysoka (0,1%): oporny trądzik, grubsza skóra. Stosuj WIECZOREM w ilości groszku na czystą, suchą skórę. KREM SPF 30+ OBOWIĄZKOWY. Powolne wprowadzenie (2x/tydz → 4x/tydz → codziennie) by złagodzić podrażnienie."
-  }
+  },
+  "anecdote": "Raporty anegdotyczne opisują Tretynoinę jako jedno z najsilniejszych miejscowych leków na trądzik twarzy i ogólną jakość skóry. Początkowe podrażnienie — zaczerwienienie, wypryski, łuszczenie — zwykle pojawia się w pierwszym miesiącu i ustępuje przy dalszym stosowaniu. Najlepsze efekty są opóźnione: poprawa związana z kolagenem i zmiany tekstury pojawiają się po kilku miesiącach konsekwentnego stosowania. Doniesienia społeczności wskazują, że Tretynoina może zwiększać penetrację dodatkowych produktów pielęgnacyjnych, choć jest to głównie anegdotyczne. Ma węższe okno terapeutyczne niż kosmetyczne retinoidy — większość użytkowników znajduje stabilne stężenie bez potrzeby eskalacji. Uwaga: fotowrażliwość jest znacząca; codzienny SPF jest obowiązkowy. Obowiązuje przeciwwskazanie w ciąży."
 }

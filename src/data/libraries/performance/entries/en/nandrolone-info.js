@@ -119,14 +119,32 @@ export default {
       "aromatization": "Minimal — ~10% compared to Testosterone aromatization",
       "hepatotoxicity": "Low — NOT 17α-alkylated, IM bypasses first-pass",
       "quality": {
-        "pure": ["Organon Deca-Durabolin 50 mg/ml ampoule (EU Rx)", "UGL Nandrolone Decanoate 200-300 mg/ml oil vial, HPLC-tested"],
-        "caution": ["Long-term HPTA suppression 12-16 weeks", "Prolactin elevation (cabergoline standby)", "Deca-dick libido loss common"],
-        "avoid": ["Planned fatherhood on near time horizon (HPTA recovery 6-12 months after Deca)", "Competitive sport testing within 12-18 months"]
+        "pure": [
+          "Organon Deca-Durabolin 50 mg/ml ampoule (EU Rx)",
+          "UGL Nandrolone Decanoate 200-300 mg/ml oil vial, HPLC-tested"
+        ],
+        "caution": [
+          "Long-term HPTA suppression 12-16 weeks",
+          "Prolactin elevation (cabergoline standby)",
+          "Deca-dick libido loss common"
+        ],
+        "avoid": [
+          "Planned fatherhood on near time horizon (HPTA recovery 6-12 months after Deca)",
+          "Competitive sport testing within 12-18 months"
+        ]
       },
-      "interactions": ["Cabergoline 0.25 mg 2x/week prolactin monitor", "Testosterone base stack standard (Deca standalone ED risk)", "PCT last Deca injection +3 weeks"],
+      "interactions": [
+        "Cabergoline 0.25 mg 2x/week prolactin monitor",
+        "Testosterone base stack standard (Deca standalone ED risk)",
+        "PCT last Deca injection +3 weeks"
+      ],
       "doseCalc": {
         "type": "bodyweight",
-        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "perKg": {
+          "low": 2,
+          "medium": 4,
+          "high": 6
+        },
         "unit": "mg/week (IM, weekly 1x)",
         "note": "100-150 mg/week (Deca-bridge), 300-600 mg/week (bulking). Weekly 1x IM injection due to 15-day half-life."
       }
@@ -144,18 +162,37 @@ export default {
       "aromatization": "Minimal — ~10% compared to Testosterone aromatization (same parent Nandrolone)",
       "hepatotoxicity": "Low — NOT 17α-alkylated",
       "quality": {
-        "pure": ["UGL NPP 100 mg/ml oil vial (HPLC-tested)", "Some EU pharmacy Durabolin (regional Rx) 25-50 mg/ml"],
-        "caution": ["EOD or 2x weekly IM injection required (short half-life)", "Prolactin elevation Deca-level", "PIP stronger on NPP than Deca"],
-        "avoid": ["Planned fatherhood on near time horizon", "If injection fatigue is high, Deca preferred (weekly 1x)"]
+        "pure": [
+          "UGL NPP 100 mg/ml oil vial (HPLC-tested)",
+          "Some EU pharmacy Durabolin (regional Rx) 25-50 mg/ml"
+        ],
+        "caution": [
+          "EOD or 2x weekly IM injection required (short half-life)",
+          "Prolactin elevation Deca-level",
+          "PIP stronger on NPP than Deca"
+        ],
+        "avoid": [
+          "Planned fatherhood on near time horizon",
+          "If injection fatigue is high, Deca preferred (weekly 1x)"
+        ]
       },
-      "interactions": ["Cabergoline 0.25 mg 2x/week", "Testosterone base stack standard", "PCT last NPP injection +5-7 days (faster clearance than Deca)"],
+      "interactions": [
+        "Cabergoline 0.25 mg 2x/week",
+        "Testosterone base stack standard",
+        "PCT last NPP injection +5-7 days (faster clearance than Deca)"
+      ],
       "doseCalc": {
         "type": "bodyweight",
-        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "perKg": {
+          "low": 2,
+          "medium": 4,
+          "high": 6
+        },
         "unit": "mg/week (IM, EOD or 2x weekly)",
         "note": "100-150 mg/week (bridge), 300-600 mg/week (bulking). EOD or 2x weekly IM injection. Faster on/off than Deca → more suitable for 'shorter' cycles."
       }
     }
   ],
-  "defaultVariant": "deca"
+  "defaultVariant": "deca",
+  "anecdote": "Anecdotal reports describe users running Nandrolone (NPP or Deca esters) for 3-5 month mass-gaining phases with substantial size gains. Community accounts note that prolactin elevation is common, with P5P or cabergoline sometimes added as mitigation. Deca is the longer-acting ester and is more associated with water retention, while NPP is shorter-acting and anecdotally produces less water retention, though individual variability is high. Some users report mild depressive symptoms around month 3 of NPP, which has been linked to neurosteroid and progestogenic activity in the literature. Low-dose NPP (around 140 mg/week) is occasionally run year-round for joint support in users with chronic joint issues. Overall, Nandrolone esters remain a foundational mass-cycle compound, with prolactin and mental-health side effects being the most commonly cited tradeoffs."
 }

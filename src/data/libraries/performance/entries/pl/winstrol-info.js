@@ -144,7 +144,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 30, "medium": 50, "high": 80},
+        "fixed": {
+          "low": 30,
+          "medium": 50,
+          "high": 80
+        },
         "unit": "mg/dzień (doustnie, 1-2x podzielone)",
         "note": "30-80 mg/dzień, maks 8 tygodni cyklu. TUDCA + NAC obowiązkowe. Dawka dla kobiet maks 5-10 mg/dzień. PCT ostatnia tabletka +1-2 dni."
       }
@@ -185,11 +189,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
         "unit": "mg/EOD (IM)",
         "note": "50-100 mg EOD, maks 8 tygodni. TUDCA zalecany. Aseptyczna technika kluczowa (ryzyko ropnia). PCT ostatnia iniekcja +5-7 dni."
       }
     }
   ],
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "Raporty anegdotyczne opisują Winstrol mniej w kategoriach dramatycznego wzrostu, a bardziej jako wytwarzający wyraźny gęsty, napięty, wzmacniający wydajność charakter — ze wzrostami siły, które czasem wydają się nieproporcjonalne do widocznego przyrostu mięśni. Powracającym motywem w doniesieniach społeczności jest to, że Winstrol wywołuje zauważalne zmiany w twardości mięśni, separacji i rekompozycji, co pomogło ugruntować jego długotrwałą reputację w zastosowaniach sylwetkowych. Często opisywany jest jako zachowujący się bardziej jak modulator wydajności siłowej i jakości tkanki niż klasyczny anabolik hipertroficzny, co daje mu odrębną niszę farmakologiczną. Jednocześnie użytkownicy podkreślają, że 'suchy, wyrafinowany' wizerunek może zasłaniać ważne kompromisy — szczególnie surowe efekty lipidowe, stres wątrobowy w formie doustnej, supresję HPTA, problemy z ciśnieniem krwi i częste raporty dolegliwości związanych z tkanką łączną lub stawami. Winstrol jest czasem niedoceniany, ponieważ nie prezentuje się jako dramatyczny lek na masę, podczas gdy w praktyce wywiera silne efekty na wydajność i prezentację tkanek — co w dużej mierze tłumaczy, dlaczego pozostaje jednym z bardziej wyspecjalizowanych i szanowanych związków klasycznych."
 }

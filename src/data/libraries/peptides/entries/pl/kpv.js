@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/18483147/",
       "finding": "KPV obniża cytokiny zapalne i nasilenie objawów w modelach IBD i chorób skóry."
     }
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują KPV podawany podskórnie łagodzący objawy ciężkiego zapalenia stawów przez czas trwania kuracji, a doniesienia społeczności wskazują na redukcję objawów w ciągu kilku dni. Jeden użytkownik zgłosił częściowe ustąpienie podrażnienia skóry po tygodniu stosowania. KPV jest bardziej czysto przeciwzapalny niż regeneracyjny, dlatego często łączy się go z BPC-157 lub TB-500.\n\nDawkowanie zależy od celów. KPV można podawać doustnie lub poprzez iniekcję podskórną; dostępne są doustne kapsułki. Stosowanie miejscowe zależy od preparatu."
 }

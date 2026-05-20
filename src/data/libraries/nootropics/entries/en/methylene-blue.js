@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "In the mitochondrial electron transport chain it acts as an alternative electron shuttle under complex I/III dysfunction, increasing cytochrome-c oxidase activity; at higher doses it is a selective MAO-A inhibitor (serotonin syndrome risk with SSRIs).",
   "legalStatus": "FDA-approved drug for methemoglobinemia (Provayblue®). USP-grade is prescription-only in the USA and EU; “nootropic-purpose” off-label use is a grey zone. Industrial-dye-grade is NOT pharmaceutical.",
-  "chemicalFormula": "C16H18ClN3S"
+  "chemicalFormula": "C16H18ClN3S",
+  "anecdote": "Anecdotal reports describe Methylene Blue, even at low doses around 10 mg daily, as producing notable mood elevation and cognitive lift, consistent with studies showing efficacy in depressive and anxiety conditions. Users have reported energy substantially above baseline even during sleep deficits, with clearer thinking and overall functional improvement. Concerns about reduced blood flow and ED have been raised, though community accounts describe these as minor at low doses. Methylene Blue has mild MAO-i properties, so combining with stimulants or serotonergic medications requires caution. The compound has a strong, unpleasant taste, and mixing with water or using capsule formulations is commonly recommended. It is widely cited as a go-to option for alleviating brain fog and low energy."
 }

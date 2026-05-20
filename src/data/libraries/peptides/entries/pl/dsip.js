@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/7791904/",
       "finding": "DSIP zmniejsza odpowiedzi stresowe i poprawia funkcje poznawcze w modelach lękowych."
     }
-  ]
+  ],
+  "anecdote": "DSIP to peptyd \"trafiony lub chybiony\". Działa u wielu użytkowników, ale nie u wszystkich, a jego efekty są subtelne. Zamiast \"powalać\" użytkowników, łagodnie poprawia głębokość snu i zmniejsza nocne wybudzenia. Niektórzy użytkownicy uważają CBN za bardziej skuteczny niż DSIP. DSIP może również pomagać w łagodzeniu nocnych skoków kortyzolu, choć jest to zmienne. Jest bardziej regulujący niż sedatywny, potencjalnie wspierający architekturę snu. Ograniczone dowody sugerują, że może pomóc zwiększyć nocną produkcję hormonu wzrostu.\n\nDSIP można podawać podskórnie lub donosowo. Jest wysoce zależny od jednostki."
 }

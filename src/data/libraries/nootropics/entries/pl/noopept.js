@@ -141,5 +141,6 @@ export default {
     "aniracetam",
     "coluracetam",
     "semax"
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują Noopept jako jeden z bardziej odczuwalnych nootropików, szczególnie pod kątem klarowności i płynności werbalnej, efekty są początkowo subtelne, ale narastają z czasem, gdy ekspresja BDNF i NGF wydaje się wzrastać. Doniesienia społeczności zauważają poprawione przypominanie pamięci i łagodniejsze myślenie, podczas gdy inni opisują łagodną stymulację lub drażliwość przy wyższych dawkach, czyniąc odpowiedź wysoce indywidualną. Łagodne wzmocnienie percepcji zmysłowej (kolory, jasność dźwięku) jest niszową, ale powtarzającą się obserwacją. W porównaniu z racetamami, Noopept jest bardziej kompaktowy i silny, z korzyściami zarówno doraźnymi, jak i długoterminowymi. Zazwyczaj podaje się go doustnie lub podjęzykowo, częściej cyklicznie niż ciągle. Udokumentowaną wadą jest to, że może wzmacniać szumową składową stosunku sygnału do szumu, powodując u niektórych użytkowników uczucie nadmiernego pobudzenia lub rozproszenia, a ten szum jest kodowany wraz z użytecznymi informacjami."
 }

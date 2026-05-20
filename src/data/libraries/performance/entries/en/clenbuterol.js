@@ -191,5 +191,6 @@ export default {
     ],
     "unit": "mcg/nap",
     "note": "Dose-titrating due to 35-40 h half-life: +20 mcg/day every 2-3 days. Max 120-140 mcg/day, 6-8 weeks then OFF + ketotifen 1-2 mg at bedtime to block receptor down-regulation. Taurine 3 g + magnesium 2 g/day for muscle cramps. Home BP log, EKG after 6 weeks."
-  }
+  },
+  "anecdote": "Clenbuterol has a notorious reputation for good reason — anecdotal reports describe it as highly effective for fat loss but with a meaningful side-effect burden. Users typically report increased energy, strong stimulation, elevated heart rate, and heat production fairly quickly after dosing. Tolerance tends to build rapidly due to beta-receptor downregulation, so many users titrate the dose upward every few weeks, though this is context-dependent. Electrolyte imbalances are a frequent concern, with dehydration commonly reported. Sleep disruption may also occur because of the unusually long half-life, which is why some users prefer Albuterol's shorter half-life as a contrast option. Overall, community accounts note that Clenbuterol works as advertised for fat loss and has a clear place when administered cautiously, but it requires careful management of cardiovascular, electrolyte, and sleep parameters."
 }

@@ -206,5 +206,6 @@ export default {
     },
     "unit": "mg",
     "note": "Low (2.5 mg daily): ED daily-mode start or elderly/renal-impaired dose reduction. Moderate (5 mg daily): ED daily standard or BPH (FDA 2011 indication) or ED+BPH dual. High (20 mg PRN): ED on-demand, max once daily, 30-45 min before activity. Never combine with nitrate."
-  }
+  },
+  "anecdote": "Anecdotal reports describe daily low-dose Tadalafil (typically 5 mg, sometimes 10-20 mg) as producing sustained vasodilation with notable improvements in pump quality during resistance training, mild blood pressure reduction (around 5 mmHg systolic/diastolic), and consistent all-day blood flow benefits. Due to its 17.5-hour half-life, timing is forgiving — effects are usually felt 30-60 minutes after administration, but daily dosing produces stable plasma levels. Rx context covers erectile dysfunction, BPH, and pulmonary arterial hypertension. Caution: concurrent nitrate use is contraindicated; alpha-blocker interactions warrant clinician oversight."
 }

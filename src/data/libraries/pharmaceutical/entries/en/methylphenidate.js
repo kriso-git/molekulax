@@ -93,5 +93,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "IR: 5-10 mg 2-3x/day morning-noon (DO NOT take after 4 PM, insomnia risk). Concerta OROS: once-daily morning, 18-72 mg, max 72 mg/day adult. Strict Rx monitoring due to abuse potential. Annual child growth and BP check."
-  }
+  },
+  "anecdote": "Anecdotal reports describe Methylphenidate as a clean, well-titrated DAT/NET inhibitor for ADHD, with strong dopaminergic wakefulness comparable to first-line stimulants. Community accounts note a smoother, more focused subjective profile than many off-label alternatives, without aggressive mental pressure. Users with poor tolerance to peripheral stimulant effects often report better day-long stability on extended-release formulations (Concerta, Ritalin LA). Rx context emphasizes Schedule II status, abuse potential, and the need for clinician-monitored titration. Sleep architecture impact appears milder than amphetamine-class stimulants, though late-day dosing can still disrupt sleep onset."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Szelektíven aktiválja a sérült kolinerg neuronok HACU-rendszerét, ezzel acetilkolin-szintézist és -felszabadulást fokoz olyan régiókban is, ahol más cholinerg ágensek nem hatnak.",
   "legalStatus": "Sehol nem jóváhagyott gyógyszer. „Research chemical\" minősítéssel árusított, OTC nootropikum-piacon elérhető.",
-  "chemicalFormula": "C19H23N3O3"
+  "chemicalFormula": "C19H23N3O3",
+  "anecdote": "Anekdotikus beszámolók szerint a Coluracetam rövid hatáskezdetű és időtartamú, jellemzően 1-3 órát tart, napi többszöri adagolás gyakori. A legkövetkezetesebb közösségi megfigyelés a szenzoros fokozás, a felhasználók élénkebb színekről, élesebb kontrasztról vagy HD-látás hatásokról számolnak be. A mechanizmus illeszkedik az acetilkolin figyelemben, szenzoros kapuzásban és vizuális percepcióban betöltött szerepéhez, bár a színfokozási állítások anekdotikusak maradnak. A korábbi BCI-540 név alatt végzett 2A fázisú vizsgálatok hangulati és szorongási hatásokat vizsgáltak napi és napi háromszori adagolással placebóhoz képest. A Coluracetam úgy van tervezve, hogy fokozza a magas affinitású kolin felvételi transzporter hatékonyságát, szenzoros és kolinerg irányba húz. Alacsonyabb acetilkolin-szintű felhasználók profitálhatnak a legtöbbet. Egyesek szorongást, túlzott kolinerg mellékhatásokat vagy lezuhanást tapasztalnak. Gyakran adjuvánsként stack-elik kolinerg felvétel támogatására alacsony dózisokban."
 }

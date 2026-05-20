@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Hepatocyte Growth Factor (HGF) / c-Met receptor agonista, a c-Met aktivációja a hippokampuszban erős szinaptogén kaszkádot indít el, az állat-modellekben becsült potencitás ~10⁷× nagyobb a BDNF-énél bizonyos végpontokon.",
   "legalStatus": "Sehol nem jóváhagyott gyógyszer; csak akadémiai és „research chemical\" kategóriában forgalmazott, humán biztonsági adat nincs.",
-  "chemicalFormula": "C26H41N5O5"
+  "chemicalFormula": "C26H41N5O5",
+  "anecdote": "Anekdotikus beszámolók szerint a Dihexa az egyik legpotensebb kognitív fokozó a nootropikum-térben, a felhasználók intenzív tanulási vagy vizsgaidőszakokban körülbelül 5-10 mg-os adagokat alkalmaznak. A vegyület DMSO-ban oldható, szájon át vagy szublingválisan is beadható; az orális felszívódást zsírokkal, például olíva- vagy MCT-olajjal együtt szedve javítja. A felhasználók úgy írják le az élményt, hogy az információ könnyebben rögzül, a használat alatt tanult anyag retenciós előnyei pedig hosszú távon is fennmaradnak. A hatékony gyakorlás és aktív tanulás alapvető a kódolási előnyök kiaknázásához. A neuroprotektív hatás kognitív deficittel küzdő egyéneknél lehet releváns. A Dihexa kis adagokban is nagyon aktív, mert növekedési jelzés-mimetikumként hat, nem közvetlenül jelez, elsősorban a HGF/c-Met útvonal aktiválásán keresztül."
 }

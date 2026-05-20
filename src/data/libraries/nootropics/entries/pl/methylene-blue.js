@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "W mitochondrialnym łańcuchu transportu elektronów działa jako alternatywny wahadłowiec elektronowy przy dysfunkcji kompleksu I/III, zwiększając aktywność oksydazy cytochromu-c; w wyższych dawkach jest selektywnym inhibitorem MAO-A (ryzyko zespołu serotoninowego z SSRI).",
   "legalStatus": "Lek zatwierdzony przez FDA na methemoglobinemię (Provayblue®). Czystość USP jest na receptę w USA i UE; off-label „nootropowe” zastosowanie jest szarą strefą. Jakość barwnika przemysłowego NIE jest farmaceutyczna.",
-  "chemicalFormula": "C16H18ClN3S"
+  "chemicalFormula": "C16H18ClN3S",
+  "anecdote": "Raporty anegdotyczne opisują, że Błękit Metylenowy, nawet w niskich dawkach około 10 mg dziennie, wywołuje wyraźne podniesienie nastroju i poprawę funkcji poznawczych, zgodnie z badaniami wykazującymi skuteczność w stanach depresyjnych i lękowych. Użytkownicy zgłaszali energię znacznie powyżej linii bazowej nawet podczas deficytu snu, z jaśniejszym myśleniem i ogólną poprawą funkcjonalną. Pojawiły się obawy dotyczące zmniejszonego przepływu krwi i zaburzeń erekcji, choć doniesienia społeczności opisują je jako niewielkie przy niskich dawkach. Błękit Metylenowy ma łagodne właściwości MAO-i, więc łączenie ze stymulantami lub lekami serotoninergicznymi wymaga ostrożności. Związek ma silny, nieprzyjemny smak, a mieszanie z wodą lub stosowanie formy kapsułkowej jest często zalecane. Jest szeroko cytowany jako pierwsza opcja w łagodzeniu mgły mózgowej i niskiej energii."
 }

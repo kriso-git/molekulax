@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Pozytywna modulacja AMPA + zwiększenie cholinergicznego HACU → łączne ułatwienie glutaminergicznego LTP i syntezy acetylocholiny.",
   "legalStatus": "Na receptę we Włoszech. Niezatwierdzony przez FDA w USA; sprzedawany jako „chemikalium badawcze” na rynku nootropików OTC.",
-  "chemicalFormula": "C6H10N2O3"
+  "chemicalFormula": "C6H10N2O3",
+  "anecdote": "Raporty anegdotyczne opisują Oksyracetam w dawce około 1000 mg jako solidny wzmacniacz poznawczy, użytkownicy zauważają skoncentrowane skupienie przy jednoczesnym podawaniu 1 g Alpha-GPC w celu utrzymania poziomu choliny. Doniesienia społeczności opisują Oksyracetam jako jednego z bardziej ustrukturyzowanych członków rodziny racetamów, poprawiającego skupienie, płynność werbalną i organizację umysłową. Użytkownicy często stosują go do sesji naukowych i zadań intensywnie wymagających zapamiętywania jako codzienny środek. Dowody sugerują, że skutecznie funkcjonuje jako wzmacniacz pamięci przy konsekwentnym przyjmowaniu, co czyni go realną opcją dla długoterminowych protokołów nootropowych. W porównaniu z innymi racetamami, skłania się ku poznawczemu i ukierunkowanemu na skupienie, a nie modulującemu nastrój, z aktywnością AMPA i cholinergiczną leżącą u podstaw profilu."
 }

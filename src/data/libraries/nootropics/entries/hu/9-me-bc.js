@@ -162,5 +162,6 @@ export default {
     "selegiline",
     "bpap",
     "modafinil"
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a 9-Me-BC körülbelül 20 mg napi adagban, 4 hetes ciklusokban dopamin-reszenzitizálóként hat, amely helyreállítja a motivációt és cselekvőképességet, a vényköteles stimulánsok pedig tisztábbnak érződnek egy ciklus után. A felhasználók megjegyzik, hogy a klasszikus stimulánsokkal való párosítás nem ajánlott; lágyabb szerek, például a Bromantane gyakran helyettesítik a protokoll alatt. Közösségi beszámolók szerint a fókusz tiszta, nem jellemzi remegő túlstimuláció, néhányan érzelmi ellaposodást vagy tompulást írnak le, amelyet a dopaminerg tónusváltozásnak tulajdonítanak: alacsonyabb csúcsok, de stabilabb, emelt alapszint. Enyhe fényérzékenységet jelentettek a béta-karbolin szerkezet miatt, ezért a napozást korlátozni kell. A jótékony hatások a leállás után is fennmaradnak, összhangban a feltételezett dopaminerg neuronnövekedéssel és neuroprotekcióval. L-Tirozint gyakran adagolnak mellé a dopaminszintézis támogatására."
 }

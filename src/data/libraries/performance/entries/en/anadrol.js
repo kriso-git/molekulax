@@ -12,18 +12,38 @@ export default {
   "shortDesc": "Oxymetholone, 2-hydroxymethylene-17α-methyl-DHT derivative oral AAS. FDA-approved (Anadrol-50) for aplastic and hypoplastic anemia. Classic \"wet\" bulking steroid; high hepatotoxicity and paradoxical estrogen-like side effects.",
   "description": "Anadrol (Oxymetholone) is a 2-hydroxymethylene-17α-methyl-DHT derivative oral AAS originally synthesized by Syntex in 1960. FDA-approved clinical indications: aplastic anemia, congenital and acquired red cell deficiency anemias (Anadrol-50, now Alaven/Meda Pharmaceuticals). Anabolic:androgenic ratio 320:45 (high anabolic, moderate androgenic). High hepatotoxicity due to 17α-methyl group (one of the highest among AAS). The 2-hydroxymethylene group is NOT a CYP19 substrate (does not aromatize), BUT shows direct ER agonist activity — paradoxical \"estrogen-like\" side effects (water retention, gynecomastia risk) appear even without aromatization. In bodybuilding context, a \"wet\" bulking steroid: 10-15 kg weight gain in 4-6 weeks (substantially water + glycogen) documented. WADA-banned year-round.",
   "keyInfo": [
-    {"label": "Mechanism", "value": "AR agonist + direct ER agonist (paradoxical)"},
-    {"label": "Anabolic:Androgenic", "value": "320:45"},
-    {"label": "Half-life", "value": "8-9 hours (oral)"},
-    {"label": "Onset", "value": "1-2 h (oral)"},
-    {"label": "Legal status", "value": "FDA Rx (Anadrol-50), Schedule III, WADA-banned"}
+    {
+      "label": "Mechanism",
+      "value": "AR agonist + direct ER agonist (paradoxical)"
+    },
+    {
+      "label": "Anabolic:Androgenic",
+      "value": "320:45"
+    },
+    {
+      "label": "Half-life",
+      "value": "8-9 hours (oral)"
+    },
+    {
+      "label": "Onset",
+      "value": "1-2 h (oral)"
+    },
+    {
+      "label": "Legal status",
+      "value": "FDA Rx (Anadrol-50), Schedule III, WADA-banned"
+    }
   ],
   "mechanism": "AR agonist 2-hydroxymethylene-17α-methyl-DHT derivative. The 17α-methyl group provides oral bioavailability (hepatic first-pass resistant, ~80% bioavailability). The 2-hydroxymethylene group provides SEVERAL unusual effects: (1) NOT a CYP19 substrate → does NOT aromatize; (2) BUT direct ER agonist activity → paradoxical estrogen-like side effects (water retention, gyno risk) appear despite anti-aromatase treatment; (3) high erythropoietin-like effect (hence the anemia indication) — red blood cell count and hemoglobin rise rapidly. Due to ER activity, SERM (Nolvadex/Raloxifene) is effective for gyno prevention, AI (Anastrozole) is NOT effective.",
   "legalStatus": "USA: FDA-approved Rx Anadrol-50 (Alaven/Meda), Schedule III controlled substance (DEA). EU: prescription rare import, not registered in HU/PL markets. HU/PL: illegal without prescription. WADA-banned year-round (S1.1.a).",
   "onsetTime": "1-2 h (oral)",
   "halfLife": "8-9 h (oral, parent compound)",
   "halfLifeActive": "~16 h (with active metabolites)",
-  "interactionsWith": ["tamoxifen", "raloxifene", "tudca", "warfarin"],
+  "interactionsWith": [
+    "tamoxifen",
+    "raloxifene",
+    "tudca",
+    "warfarin"
+  ],
   "aromatization": "Not a CYP19 substrate — BUT due to direct ER agonist activity, estrogen-like side effects (water retention, gynecomastia) appear despite anti-aromatase treatment. Only protection: SERM (Nolvadex 20 mg/day or Raloxifene 60 mg/day) (Pope-Kanayama 2014 PMID 24423981)",
   "hepatotoxicity": "Very high — 17α-methyl group extreme hepatic first-pass stress, ALT/AST 5-10x rise common, cholestatic jaundice case-reported. Among the highest hepatotoxicity AAS together with Dianabol and Superdrol (Hartgens-Kuipers 2004 PMID 15233599, Pavlatos 2001 PMID 11329221)",
   "wadaStatus": "banned",
@@ -44,9 +64,18 @@ export default {
     "PCT (Clomid + Nolvadex 4-6 weeks) mandatory for HPTA recovery"
   ],
   "expectations": [
-    {"label": "First week", "body": "Acute weight gain 2-4 kg (water + glycogen). Strength gain marked, training pump dramatic."},
-    {"label": "Week 3-4", "body": "Maximum bulking effect. 8-12 kg total weight gain. ALT/AST 3-5x upper normal often manifests here — MANDATORY cycle discontinuation at end of week 4."},
-    {"label": "Post-cycle", "body": "Weight loss 30-50% (water loss within 2-3 weeks after stopping). Pure lean mass preservation ~4-6 kg documented. Hepatic recovery 4-8 weeks."}
+    {
+      "label": "First week",
+      "body": "Acute weight gain 2-4 kg (water + glycogen). Strength gain marked, training pump dramatic."
+    },
+    {
+      "label": "Week 3-4",
+      "body": "Maximum bulking effect. 8-12 kg total weight gain. ALT/AST 3-5x upper normal often manifests here — MANDATORY cycle discontinuation at end of week 4."
+    },
+    {
+      "label": "Post-cycle",
+      "body": "Weight loss 30-50% (water loss within 2-3 weeks after stopping). Pure lean mass preservation ~4-6 kg documented. Hepatic recovery 4-8 weeks."
+    }
   ],
   "quality": {
     "pure": [
@@ -77,24 +106,79 @@ export default {
     "Other 17α-alkylated AAS (Dianabol, Superdrol, Winstrol) concurrent use is a deadly combination"
   ],
   "studies": [
-    {"title": "FDA Anadrol-50 prescribing information", "authors": "FDA / Alaven-Meda Pharmaceuticals", "journal": "DailyMed NDA 12-535 (oxymetholone label)", "pmid": null},
-    {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"},
-    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15233599"},
-    {"title": "Drug-induced hepatotoxicity", "authors": "Pavlatos AM, Fultz O, Monberg MJ, Vootkur A.", "journal": "Am J Health Syst Pharm. 2001;58(20):1929-37.", "pmid": "11329221"},
-    {"title": "Metabolism of anabolic androgenic steroids", "authors": "Schänzer W.", "journal": "Clin Chem. 1996;42(7):1001-20.", "pmid": "8616181"},
-    {"title": "Effects of oxymetholone therapy in HIV-infected men", "authors": "Hengge UR, Stocks K, Faulkner S et al.", "journal": "J Infect Dis. 2003;188(11):1628-34.", "pmid": "14639533"}
+    {
+      "title": "FDA Anadrol-50 prescribing information",
+      "authors": "FDA / Alaven-Meda Pharmaceuticals",
+      "journal": "DailyMed NDA 12-535 (oxymetholone label)",
+      "pmid": null
+    },
+    {
+      "title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement",
+      "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.",
+      "journal": "Endocr Rev. 2014;35(3):341-75.",
+      "pmid": "24423981"
+    },
+    {
+      "title": "Effects of androgenic-anabolic steroids in athletes",
+      "authors": "Hartgens F, Kuipers H.",
+      "journal": "Sports Med. 2004;34(8):513-554.",
+      "pmid": "15233599"
+    },
+    {
+      "title": "Drug-induced hepatotoxicity",
+      "authors": "Pavlatos AM, Fultz O, Monberg MJ, Vootkur A.",
+      "journal": "Am J Health Syst Pharm. 2001;58(20):1929-37.",
+      "pmid": "11329221"
+    },
+    {
+      "title": "Metabolism of anabolic androgenic steroids",
+      "authors": "Schänzer W.",
+      "journal": "Clin Chem. 1996;42(7):1001-20.",
+      "pmid": "8616181"
+    },
+    {
+      "title": "Effects of oxymetholone therapy in HIV-infected men",
+      "authors": "Hengge UR, Stocks K, Faulkner S et al.",
+      "journal": "J Infect Dis. 2003;188(11):1628-34.",
+      "pmid": "14639533"
+    }
   ],
   "faq": [
-    {"q": "Why does it cause water retention if it doesn't aromatize?", "a": "Oxymetholone's 2-hydroxymethylene group provides direct ER agonist activity — it completely bypasses the CYP19 enzymes and activates estrogen receptors directly. So anti-aromatase (Anastrozole, Letrozole) is USELESS here; only SERM (Nolvadex, Raloxifene) blocks the ER receptors directly. This is the Anadrol-specific paradoxical effect."},
-    {"q": "Can you really gain 10-15 kg in 4 weeks?", "a": "Yes, BUT the vast majority (60-70%) is water and glycogen, NOT pure muscle. After cycle end, expect 30-50% weight loss within 2-3 weeks (water shedding). Pure lean mass preservation 4-6 kg documented with proper training and PCT. The \"10-15 kg\" number is realistic, but the final result is NOT that much."},
-    {"q": "Why FDA-approved if so toxic?", "a": "FDA-approved indication (aplastic anemia) is life-saving — risk-benefit ratio is favorable in those patients. Bodybuilding off-label use is NOT part of FDA approval; in healthy young people, 50-100 mg/day for 4 weeks can cause life-threatening hepatotoxicity (Pavlatos 2001 PMID 11329221 DILI case reports)."},
-    {"q": "Anadrol vs Dianabol — which is worse?", "a": "Hepatotoxicity roughly equal (both top-2 among 17α-alkylated AAS). Aromatization profile: Dianabol classical CYP19-aromatizing (AI effective), Anadrol direct ER agonist (only SERM works). In bulking effect Anadrol is faster and more dramatic, but Dianabol preserves more muscle after the cycle ends. Neither is recommended."},
-    {"q": "Should I avoid Anadrol due to the \"rage\"?", "a": "Yes, the psychological side effects (aggression, irritation, fits of rage) are the most intense with Anadrol among AAS. Kanayama 2009 PMID 19922565 cohort: 70% of Anadrol users report marked mood disturbance. If psychiatric predisposition (depression, bipolar, anxiety disorder) is present, absolutely contraindicated."}
+    {
+      "q": "Why does it cause water retention if it doesn't aromatize?",
+      "a": "Oxymetholone's 2-hydroxymethylene group provides direct ER agonist activity — it completely bypasses the CYP19 enzymes and activates estrogen receptors directly. So anti-aromatase (Anastrozole, Letrozole) is USELESS here; only SERM (Nolvadex, Raloxifene) blocks the ER receptors directly. This is the Anadrol-specific paradoxical effect."
+    },
+    {
+      "q": "Can you really gain 10-15 kg in 4 weeks?",
+      "a": "Yes, BUT the vast majority (60-70%) is water and glycogen, NOT pure muscle. After cycle end, expect 30-50% weight loss within 2-3 weeks (water shedding). Pure lean mass preservation 4-6 kg documented with proper training and PCT. The \"10-15 kg\" number is realistic, but the final result is NOT that much."
+    },
+    {
+      "q": "Why FDA-approved if so toxic?",
+      "a": "FDA-approved indication (aplastic anemia) is life-saving — risk-benefit ratio is favorable in those patients. Bodybuilding off-label use is NOT part of FDA approval; in healthy young people, 50-100 mg/day for 4 weeks can cause life-threatening hepatotoxicity (Pavlatos 2001 PMID 11329221 DILI case reports)."
+    },
+    {
+      "q": "Anadrol vs Dianabol — which is worse?",
+      "a": "Hepatotoxicity roughly equal (both top-2 among 17α-alkylated AAS). Aromatization profile: Dianabol classical CYP19-aromatizing (AI effective), Anadrol direct ER agonist (only SERM works). In bulking effect Anadrol is faster and more dramatic, but Dianabol preserves more muscle after the cycle ends. Neither is recommended."
+    },
+    {
+      "q": "Should I avoid Anadrol due to the \"rage\"?",
+      "a": "Yes, the psychological side effects (aggression, irritation, fits of rage) are the most intense with Anadrol among AAS. Kanayama 2009 PMID 19922565 cohort: 70% of Anadrol users report marked mood disturbance. If psychiatric predisposition (depression, bipolar, anxiety disorder) is present, absolutely contraindicated."
+    }
   ],
-  "related": ["dianabol-info", "superdrol", "testosterone-info", "trenbolone-info", "nandrolone-info"],
+  "related": [
+    "dianabol-info",
+    "superdrol",
+    "testosterone-info",
+    "trenbolone-info",
+    "nandrolone-info"
+  ],
   "doseCalc": {
     "type": "fixed",
-    "fixed": {"low": 50, "medium": 75, "high": 100},
+    "fixed": {
+      "low": 50,
+      "medium": 75,
+      "high": 100
+    },
     "unit": "mg/day (oral, 1-2x split)",
     "note": "Maximum 4 weeks cycle, NEVER longer. 50-100 mg/day, 1-2x split (short half-life). TUDCA 1000-1500 mg/day + NAC 1800 mg/day throughout the cycle. ALT/AST every 2-3 weeks. SERM (Nolvadex 20 mg/day) for gyno prevention. PCT 4-6 weeks (Clomid + Nolvadex)."
   },
@@ -123,5 +207,6 @@ export default {
       "markers": "N/A — Anadrol cruise is not standard, not recommended in any protocol.",
       "purpose": "Anadrol is used exclusively in short (max 4 weeks) bulking cycle. Continuous use causes fatal hepatic consequences."
     }
-  }
+  },
+  "anecdote": "Anadrol has a reputation for being 'wet,' but anecdotal reports describe more than just water gain — users often note a distinctly dense, hyper-full muscular look, almost as if muscles are overfilled. Strength increases tend to be abrupt and disproportionate, often arriving faster than expected, with extreme pumps. Some users also experience appetite increases that amplify growth phases. Tradeoffs are serious: Anadrol is notorious for blood pressure elevation, hematocrit thickening, edema, and lipid disruption. Fluid shifts can produce back pumps, headaches, and pressure-type sensations. Some of the rapid weight gain is transient water, but a portion represents genuine anabolic acceleration. As a 17α-alkylated oral, hepatic stress is non-trivial and should not be dismissed. Despite its old-school reputation, Anadrol is mechanistically complex due to its unusual estrogen-like behavior and atypical signaling profile."
 }

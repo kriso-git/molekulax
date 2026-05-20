@@ -89,5 +89,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "Morning or evening, food-independent. MDD target 10 mg/day, GAD/OCD 10-20 mg/day. > 20 mg/day NOT recommended due to QT prolongation. Slow taper to avoid discontinuation syndrome."
-  }
+  },
+  "anecdote": "Community accounts note Escitalopram as having one of the cleanest tolerability and side-effect profiles among SSRIs, supported by the Cipriani 2018 meta-analysis ranking it in the top tier for efficacy. Users describe a quiet subjective profile — lowering anxiety and supporting mood without strong stimulant or sedating character. Full therapeutic benefit typically emerges over 4-8 weeks, so patience is essential during initiation. Sexual dysfunction (delayed orgasm, reduced libido) is commonly reported, consistent with the SSRI class. The 27-32-hour half-life provides stable plasma levels with once-daily dosing. Caution: discontinuation syndrome on abrupt cessation — taper under clinical guidance. QT-prolongation risk at higher doses warrants ECG monitoring."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Positive allosteric modulation of AMPA receptors, slows desensitization after glutamate binding and increases synaptic current; secondary cholinergic and D2/D3 modulation are also described.",
   "legalStatus": "Prescription drug in Italy (Ampamet, Memodrin). Not FDA-approved outside EU/USA; OTC supplement sales remain a legal grey zone.",
-  "chemicalFormula": "C12H13NO3"
+  "chemicalFormula": "C12H13NO3",
+  "anecdote": "Anecdotal reports describe Aniracetam as one of the more feelable racetams, particularly for mood and anxiety, often producing a subtle confidence boost without stimulant-like side effects. Onset is fast and the duration is short, typically around 1-2 hours, with users often splitting administration into two daily doses. Community accounts describe it as well-suited to situations requiring mental sharpness combined with relaxation. Compared to Nefiracetam, Aniracetam leans more toward mood and social ease rather than memory effects, with stronger AMPA-PAM activity underlying its anxiolytic profile. A choline source such as CDP-Choline or Citicoline is commonly paired to support cholinergic tone. Its fat-soluble nature means it is best absorbed with a meal containing fats."
 }

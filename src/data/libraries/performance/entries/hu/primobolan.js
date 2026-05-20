@@ -285,5 +285,6 @@ export default {
       }
     }
   ],
-  "defaultVariant": "enan-oil"
+  "defaultVariant": "enan-oil",
+  "anecdote": "A Primobolan-t az anekdotikus leírások szerint kiváló másodlagos anabolikumnak tartják a legtöbb ciklushoz, gyakran magas dózisú tesztoszteronnal párosítva a szinergia érdekében, mivel maga a Primobolan érdemben nem aromatizálódik és segíthet mérsékelni az ösztrogén-terhelést. Inkább 'kozmetikai' szteroidként ismert, a felhasználók száraz, kemény, esztétikus megjelenésről számolnak be, nem pedig drámai tömegnövekedésről. Közösségi beszámolók szerint nagyon jól tolerálható, viszonylag enyhe mellékhatás-profillal rendelkezik, és mind tömegnövelő, mind szárító fázisokban működik. A fő hátrányai a magas ára és a lassú felfutás, jellemzően Enanthate észter formájában jelenik meg. Összességében a Primobolan-t megalapozottnak tartják egy jól megtervezett ciklus részeként, de általában nem önálló tömegnövelőként választják."
 }

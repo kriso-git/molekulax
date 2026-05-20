@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Pozytywna modulacja allosteryczna receptora AMPA i prawdopodobna pośrednia aktywacja miejsca glicyny NMDA, profil podobny do sunifiramu z podobną potencją.",
   "legalStatus": "Nigdzie nie zatwierdzony jako lek. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act; „chemikalium badawcze” gdzie indziej.",
-  "chemicalFormula": "C13H15FN2O3S"
+  "chemicalFormula": "C13H15FN2O3S",
+  "anecdote": "Raporty anegdotyczne opisują Unifiram jako obiecujący, ale wciąż eksperymentalny nootropik z wyraźnie zróżnicowanym profilem efektów. Doniesienia społeczności zgłaszają właściwości stymulujące, z potencjałem wywoływania lęku u niektórych użytkowników, podczas gdy inni zauważają synergię z kofeiną i okazjonalną łagodną euforię. Powszechnie wspomina się o wzmocnieniu pewności siebie i mentalnie aktywnym efekcie energetyzującym. Klarowność umysłowa jest według doniesień wzmocniona przez modulację typu AMPA, poprawiając płynność werbalną, poznanie i uwalnianie acetylocholiny. W porównaniu z Sunifiramem, Unifiram jest charakteryzowany jako mniej aktywujący i bardziej prokognitywny. Ogólnie pozycjonowany jest jako solidna, ale eksperymentalna opcja ampakinowa, która wywołuje pewność siebie i wzmocnienie umysłowe u niektórych użytkowników, jednocześnie indukując niepokój lub napięcie u innych, z reakcją bardzo indywidualną."
 }

@@ -13,18 +13,40 @@ export default {
   "shortDesc": "Tamoxifen citrate, 1962 ICI Pharmaceuticals synthesis, FDA-approved (1977) for ER+ breast cancer. The AAS-PCT golden-standard SERM: pituitary ER-α blockade → LH/FSH disinhibition → endogenous testosterone recovery. 60+ years of clinical literature.",
   "description": "Nolvadex (tamoxifen citrate) is a non-steroidal triphenylethylene-class selective estrogen receptor modulator (SERM), synthesized in 1962 by Arthur Walpole and Dora Richardson at the ICI Pharmaceuticals (now AstraZeneca) Macclesfield laboratory. Original target: post-coital contraceptive — paradoxically turned out to be an ovulation inducer, and gained FDA approval in 1977 for estrogen-receptor-positive (ER+) breast cancer. To date 30+ million female and male patients have been treated with it, the longest-running SERM in clinical literature. In the AAS-PCT (post-cycle therapy) context, Nolvadex is the classic first-line choice: due to competitive antagonism of ER-α at the pituitary level, the hypothalamic-pituitary (HP) axis is released from negative feedback, LH and FSH secretion is restored, and Leydig cells restart endogenous testosterone production. Nolvadex's selectivity is tissue-specific: antagonist in breast tissue, agonist in bone, liver, and endometrium (hence the endometrial cancer risk during long-term female use). Listed on the WADA list (S4 hormone modulator) — banned in competitive sport.",
   "keyInfo": [
-    {"label": "Mechanism", "value": "Non-steroidal SERM, ER-α competitive antagonist at pituitary + breast"},
-    {"label": "Dosing (PCT)", "value": "20-40 mg/day, 4-6 weeks"},
-    {"label": "Half-life", "value": "~5-7 days (parent) / ~14 days (4-OH-tamoxifen active metabolite)"},
-    {"label": "Onset", "value": "LH rise within 24-72 h, Test recovery 2-3 weeks"},
-    {"label": "Legal status", "value": "FDA + EMA Rx, registered in HU + PL, WADA S4 (banned in-competition)"}
+    {
+      "label": "Mechanism",
+      "value": "Non-steroidal SERM, ER-α competitive antagonist at pituitary + breast"
+    },
+    {
+      "label": "Dosing (PCT)",
+      "value": "20-40 mg/day, 4-6 weeks"
+    },
+    {
+      "label": "Half-life",
+      "value": "~5-7 days (parent) / ~14 days (4-OH-tamoxifen active metabolite)"
+    },
+    {
+      "label": "Onset",
+      "value": "LH rise within 24-72 h, Test recovery 2-3 weeks"
+    },
+    {
+      "label": "Legal status",
+      "value": "FDA + EMA Rx, registered in HU + PL, WADA S4 (banned in-competition)"
+    }
   ],
   "mechanism": "Tamoxifen is a prodrug — hepatic CYP2D6 + CYP3A4 enzymes convert it to 4-hydroxy-tamoxifen (4-OH-tam) and endoxifen (N-desmethyl-4-OH-tam). The active metabolites have 30-100x stronger ER-α affinity than the parent compound. 4-OH-tam competitively binds the estrogen receptor, blocking its agonist conformational change — depending on tissue, it acts as antagonist (breast, pituitary) or partial agonist (bone, liver, endometrium). Pituitary ER-α blockade lifts the estrogen-mediated negative feedback on GnRH secretion, so LH and FSH secrete freely again. Elevated LH stimulates Leydig-cell LHCGR receptors → endogenous testosterone production restores. In CYP2D6 poor-metabolizer patients (~7-10% of Caucasian population) endoxifen levels are low and Nolvadex efficacy reduced — genetic testing is indicated if therapeutic response is absent.",
   "legalStatus": "USA: FDA-approved 1977 (ER+ breast cancer, ductal carcinoma in situ, prevention in high-risk women), Schedule N/A (not a controlled substance). EU: EMA-approved. HU: registered (Nolvadex, Tamoxifen-ratiopharm, Tamoxifen Sandoz Rx). PL: registered (Nolvadex Rx). WADA: S4.3 estrogen receptor modulator (banned in-competition + out-of-competition — prohibited for all male WADA competitors).",
   "onsetTime": "LH rise within 24-72 h, Test recovery 2-3 weeks",
   "halfLife": "~5-7 days (parent tamoxifen)",
   "halfLifeActive": "~14 days (4-OH-tamoxifen + endoxifen active metabolites)",
-  "interactionsWith": ["clomid", "enclomiphene", "raloxifene", "hcg-perf", "anastrozol", "warfarin"],
+  "interactionsWith": [
+    "clomid",
+    "enclomiphene",
+    "raloxifene",
+    "hcg-perf",
+    "anastrozol",
+    "warfarin"
+  ],
   "aromatization": "Does not aromatize — competitive estrogen receptor (ER-α) blockade, NOT CYP19 aromatase inhibition. E2 levels on Nolvadex often slightly RISE (due to pituitary LH-disinhibition → secondary testicular E2 synthesis). Nolvadex does NOT substitute for an aromatase inhibitor during cycle — distinct mechanism.",
   "hepatotoxicity": "Low — non-steroidal, NOT 17α-alkylated. Rare mild ALT/AST elevation <2% incidence at PCT-dose. Chronic high-dose (>40 mg/day, 6+ months) cirrhosis risk documented in FDA Nolvadex SmPC adverse-event list (female long-term prevention/breast-cancer adjuvant use); clinically not reported at AAS-PCT 4-6 week dosing.",
   "wadaStatus": "banned",
@@ -48,10 +70,22 @@ export default {
     "Visual disturbances (rare): scintillating scotoma >40 mg/day chronic, reversible on cessation"
   ],
   "expectations": [
-    {"label": "Week 1", "body": "LH/FSH rise measurable (blood draw at +5 days), symptomatic change minimal. Some users feel mild flu-like sensation or headache due to E2 fluctuation."},
-    {"label": "Weeks 2-3", "body": "Endogenous testosterone production begins returning — libido recovery, energy elevation noticeable. Mirror test: if gyno symptoms appeared at cycle end, they ease now."},
-    {"label": "Weeks 4-6", "body": "Test recovery complete (baseline ±10%), HPTA axis functional. Lipid panel improves (HDL rise). PCT end: last dose, +2 weeks conservative rest before new cycle planning."},
-    {"label": "Post-PCT", "body": "Confirmation bloodwork +6 weeks: Total/Free Test, LH, FSH, E2, SHBG. If LH/FSH < 50% of age-specific baseline → consult specialist (endocrinologist)."}
+    {
+      "label": "Week 1",
+      "body": "LH/FSH rise measurable (blood draw at +5 days), symptomatic change minimal. Some users feel mild flu-like sensation or headache due to E2 fluctuation."
+    },
+    {
+      "label": "Weeks 2-3",
+      "body": "Endogenous testosterone production begins returning — libido recovery, energy elevation noticeable. Mirror test: if gyno symptoms appeared at cycle end, they ease now."
+    },
+    {
+      "label": "Weeks 4-6",
+      "body": "Test recovery complete (baseline ±10%), HPTA axis functional. Lipid panel improves (HDL rise). PCT end: last dose, +2 weeks conservative rest before new cycle planning."
+    },
+    {
+      "label": "Post-PCT",
+      "body": "Confirmation bloodwork +6 weeks: Total/Free Test, LH, FSH, E2, SHBG. If LH/FSH < 50% of age-specific baseline → consult specialist (endocrinologist)."
+    }
   ],
   "quality": {
     "pure": [
@@ -83,23 +117,73 @@ export default {
     "Alcohol: hepatic stress increases, moderate consumption recommended"
   ],
   "studies": [
-    {"title": "Tamoxifen for prevention of breast cancer: report of the National Surgical Adjuvant Breast and Bowel Project P-1 Study", "authors": "Fisher B, Costantino JP, Wickerham DL, et al.", "journal": "J Natl Cancer Inst. 1998;90(18):1371-88.", "pmid": "9747868"},
-    {"title": "Mechanisms of action of selective estrogen receptor modulators", "authors": "Schäcke H, Döcke WD, Asadullah K.", "journal": "Pharmacol Ther. 2002;96(1):23-43.", "pmid": "12433722"},
-    {"title": "Tamoxifen treatment in the postcycle recovery of hypogonadism after anabolic steroid abuse", "authors": "Tan RS, Vasudevan SG.", "journal": "Andrologia. 2014;46(5):542-548.", "pmid": "24716172"},
-    {"title": "Male SERM PCT: clinical decisions", "authors": "Karavolos S, Reynolds M, Panagiotopoulou N, et al.", "journal": "Clin Endocrinol. 2015;82(5):624-635.", "pmid": "25778469"},
-    {"title": "Active tamoxifen metabolite plasma concentrations after CYP2D6 inhibition", "authors": "Stearns V, Johnson MD, Rae JM, et al.", "journal": "J Natl Cancer Inst. 2003;95(23):1758-1764.", "pmid": "12832537"}
+    {
+      "title": "Tamoxifen for prevention of breast cancer: report of the National Surgical Adjuvant Breast and Bowel Project P-1 Study",
+      "authors": "Fisher B, Costantino JP, Wickerham DL, et al.",
+      "journal": "J Natl Cancer Inst. 1998;90(18):1371-88.",
+      "pmid": "9747868"
+    },
+    {
+      "title": "Mechanisms of action of selective estrogen receptor modulators",
+      "authors": "Schäcke H, Döcke WD, Asadullah K.",
+      "journal": "Pharmacol Ther. 2002;96(1):23-43.",
+      "pmid": "12433722"
+    },
+    {
+      "title": "Tamoxifen treatment in the postcycle recovery of hypogonadism after anabolic steroid abuse",
+      "authors": "Tan RS, Vasudevan SG.",
+      "journal": "Andrologia. 2014;46(5):542-548.",
+      "pmid": "24716172"
+    },
+    {
+      "title": "Male SERM PCT: clinical decisions",
+      "authors": "Karavolos S, Reynolds M, Panagiotopoulou N, et al.",
+      "journal": "Clin Endocrinol. 2015;82(5):624-635.",
+      "pmid": "25778469"
+    },
+    {
+      "title": "Active tamoxifen metabolite plasma concentrations after CYP2D6 inhibition",
+      "authors": "Stearns V, Johnson MD, Rae JM, et al.",
+      "journal": "J Natl Cancer Inst. 2003;95(23):1758-1764.",
+      "pmid": "12832537"
+    }
   ],
   "faq": [
-    {"q": "How long after cycle should Nolvadex-PCT be started?", "a": "Ester-based timing: short-ester cycles (Test-Prop, Tren-Ace, Mast-Prop) last pin + 3-5 days; medium-ester (Test-Enan, Tren-Enan) + 7-10 days; long-ester (Test-Cyp, Deca, Eq) + 14-21 days. The goal: by PCT start, the exogenous androgen from ester-decay should fall below baseline, leaving HPTA feedback free. Too-early start → SERM effect lost; too-late start → unnecessary HPTA restart delay."},
-    {"q": "Nolvadex vs Clomid — which is better for PCT?", "a": "Both are SERMs with similar mechanism (pituitary ER blockade), but different profiles. Nolvadex: cleaner mood profile, ER-selective, weaker fertility stimulus, bone-protective. Clomid: stronger LH stimulus, better fertility-emphasis (greater FSH effect), but zuclomiphene accumulation makes mood disturbance more common (emotional, depressive). Modern AAS-PCT golden-standard: Nolvadex first, Clomid as backup or stack (Karavolos 2015). Fertility restoration goal: Clomid preferable; clean HPTA restart goal: Nolvadex."},
-    {"q": "Does it affect IGF-1?", "a": "Yes — moderate IGF-1 decrease documented (~10-15% from baseline). Mechanism: ER-α is a partial agonist on hepatocytes, but tamoxifen blocks the full IGF-1-stimulating pathway. Clinically transient — returns to baseline within 4-6 weeks after PCT end. If post-PCT IGF-1 deficit symptoms appear (fatigue, slower recovery), HGH bridge can be considered (off-label, expensive)."},
-    {"q": "Are visual disturbances (scintillating scotoma) serious?", "a": "Rare side effect, dose-dependent. Chronic Nolvadex use >40 mg/day (6+ months) shows 1-3% incidence (FDA Nolvadex SmPC). At PCT dose (20-40 mg × 4-6 weeks) clinically negligible. Symptoms: scintillating scotoma (flickering zigzag pattern in visual field), retinal crystal deposit in chronic cases. Reversible after cessation. On symptoms — ophthalmologist consult, fundus exam indicated."},
-    {"q": "Acne flare or mood swings during PCT — what to do?", "a": "Both are common transitions — NOT a direct Nolvadex side effect, but a natural consequence of HPTA restart. E2 rebound (testicular E2 synthesis suddenly resumes after LH disinhibition) → acne flare in weeks 2-4. Mood instability: psychological fluctuation during testosterone-restart is normal. Mitigations: omega-3 + zinc + low-E2-rebound diet; if severe, taper protocol (40 mg → 30 mg → 20 mg → 10 mg, 1 week per dose) can dampen fluctuations."}
+    {
+      "q": "How long after cycle should Nolvadex-PCT be started?",
+      "a": "Ester-based timing: short-ester cycles (Test-Prop, Tren-Ace, Mast-Prop) last pin + 3-5 days; medium-ester (Test-Enan, Tren-Enan) + 7-10 days; long-ester (Test-Cyp, Deca, Eq) + 14-21 days. The goal: by PCT start, the exogenous androgen from ester-decay should fall below baseline, leaving HPTA feedback free. Too-early start → SERM effect lost; too-late start → unnecessary HPTA restart delay."
+    },
+    {
+      "q": "Nolvadex vs Clomid — which is better for PCT?",
+      "a": "Both are SERMs with similar mechanism (pituitary ER blockade), but different profiles. Nolvadex: cleaner mood profile, ER-selective, weaker fertility stimulus, bone-protective. Clomid: stronger LH stimulus, better fertility-emphasis (greater FSH effect), but zuclomiphene accumulation makes mood disturbance more common (emotional, depressive). Modern AAS-PCT golden-standard: Nolvadex first, Clomid as backup or stack (Karavolos 2015). Fertility restoration goal: Clomid preferable; clean HPTA restart goal: Nolvadex."
+    },
+    {
+      "q": "Does it affect IGF-1?",
+      "a": "Yes — moderate IGF-1 decrease documented (~10-15% from baseline). Mechanism: ER-α is a partial agonist on hepatocytes, but tamoxifen blocks the full IGF-1-stimulating pathway. Clinically transient — returns to baseline within 4-6 weeks after PCT end. If post-PCT IGF-1 deficit symptoms appear (fatigue, slower recovery), HGH bridge can be considered (off-label, expensive)."
+    },
+    {
+      "q": "Are visual disturbances (scintillating scotoma) serious?",
+      "a": "Rare side effect, dose-dependent. Chronic Nolvadex use >40 mg/day (6+ months) shows 1-3% incidence (FDA Nolvadex SmPC). At PCT dose (20-40 mg × 4-6 weeks) clinically negligible. Symptoms: scintillating scotoma (flickering zigzag pattern in visual field), retinal crystal deposit in chronic cases. Reversible after cessation. On symptoms — ophthalmologist consult, fundus exam indicated."
+    },
+    {
+      "q": "Acne flare or mood swings during PCT — what to do?",
+      "a": "Both are common transitions — NOT a direct Nolvadex side effect, but a natural consequence of HPTA restart. E2 rebound (testicular E2 synthesis suddenly resumes after LH disinhibition) → acne flare in weeks 2-4. Mood instability: psychological fluctuation during testosterone-restart is normal. Mitigations: omega-3 + zinc + low-E2-rebound diet; if severe, taper protocol (40 mg → 30 mg → 20 mg → 10 mg, 1 week per dose) can dampen fluctuations."
+    }
   ],
-  "related": ["clomid", "enclomiphene", "raloxifene", "hcg-perf", "anastrozol"],
+  "related": [
+    "clomid",
+    "enclomiphene",
+    "raloxifene",
+    "hcg-perf",
+    "anastrozol"
+  ],
   "doseCalc": {
     "type": "fixed",
-    "fixed": {"low": 20, "medium": 30, "high": 40},
+    "fixed": {
+      "low": 20,
+      "medium": 30,
+      "high": 40
+    },
     "unit": "mg/day (oral, split 1-2x)",
     "note": "Standard AAS-PCT: 40 mg/day × 1-2 weeks, then 20 mg/day × 2-4 weeks (total 4-6 weeks). High-tier cycle (Test+Tren+Anadrol stack) after taper protocol: 40/30/20/10 mg, 1 week per dose. Bloodwork pre-PCT, PCT-end +2 weeks, +6 weeks confirm-recovery."
   },
@@ -128,5 +212,6 @@ export default {
       "markers": "Cruise N/A in AAS-PCT — Nolvadex is used only in PCT, not during cruise.",
       "purpose": "Chronic SERM-use risks (endometrial cancer, VTE, vision) negligible within the AAS-PCT 4-6 week time frame."
     }
-  }
+  },
+  "anecdote": "Nolvadex (Tamoxifen) and Raloxifene are anecdotally the two most reliable compounds for gyno prevention, because tamoxifen directly blocks estrogen at the receptor level selectively in breast tissue — a highly targeted mechanism. Unlike Arimidex, it is not an aromatase inhibitor, so the benefits are receptor-targeted rather than system-wide. It is commonly used in PCT protocols because it stimulates LH/FSH more directly, which can be useful for HPTA recovery. Reported side effects include mild mood swings, rare vision disturbances, and long-term blood-clot risk — though most clotting case reports come from postmenopausal women using it for breast cancer prevention, so applicability to AAS users is less clear. Overall, community accounts regard Nolvadex as a solid tool for blocking estrogen in breast tissue and a strong gyno-prevention option. Administered orally, with dosing typically structured in multi-week cycles, especially during PCT."
 }

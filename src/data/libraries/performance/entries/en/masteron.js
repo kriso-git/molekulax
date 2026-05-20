@@ -291,5 +291,6 @@ export default {
       }
     }
   ],
-  "defaultVariant": "prop"
+  "defaultVariant": "prop",
+  "anecdote": "Anecdotal reports describe Masteron producing pronounced diuretic effects, with users frequently noting greatly increased urination. Community accounts also note reduced high-E2 symptoms even when running substantial testosterone doses, consistent with its known anti-estrogenic activity at the receptor level. However, Masteron is notorious for accelerating androgenic hair loss; users prone to male-pattern baldness commonly report immediate hairline thinning after starting it. It is generally viewed as a 'cosmetic anabolic' — useful for hardness, dryness, and physique refinement rather than meaningful muscle accretion. Overall, it is regarded as a solid DHT-derived anabolic with a clear niche when used appropriately, but the androgenic tradeoffs (particularly hair loss) are a serious consideration for genetically predisposed users."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "A Kennedy-út kulcsintermediere, exogén bevitelével a foszfatidilkolin-szintézis (sejtmembrán-építés) és az acetilkolin-szintézis is fokozható; az uridin-komponens emellett UTP-szintézist és szinaptikus növekedést támogat.",
   "legalStatus": "Olaszországban, Spanyolországban, Japánban vényköteles (Somazina, Ceraxon). USA-ban OTC étrend-kiegészítő. Magyarországon kiegészítőként szabadon kapható.",
-  "chemicalFormula": "C14H26N4O11P2"
+  "chemicalFormula": "C14H26N4O11P2",
+  "anecdote": "Közösségi beszámolók erősen ajánlják a CDP-kolint a kognitív funkció fokozására törekvő egyéneknek, sokan az Alpha-GPC-nél jobban kedvelik simább, stabilabb profilja miatt, amely inkább hosszú távú kolinpótlásra alkalmas, mintsem akut hatásokra. Az uridin-komponens támogatja a szinaptogenezist, ami azt jelenti, hogy az ismételt használat idővel javíthatja az agy kapcsolatkialakítási és -fenntartási képességét. A CDP-kolin különösen jól párosul stimulánsokkal vagy racetamokkal, amelyek hajlamosak csökkenteni a kolinszintet, megelőzve a kiégettség érzetet, amely a konzisztens nootropikum-használatot követheti. A bizonyítékok arra utalnak, hogy növelheti a dopaminreceptor-sűrűséget, potenciálisan javítva a hosszú távú motivációt. A felhasználók gyakran számolnak be jobb verbális folyamatosságról, javult memóriaretencióról és tisztább gondolkodásról. Széles körben a legtöbb kognitívfokozó stack alapvető bázisaként pozicionálják."
 }

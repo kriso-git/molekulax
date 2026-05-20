@@ -148,5 +148,6 @@ export default {
     "semax",
     "tianeptine",
     "methylene-blue"
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint az NSI-189 hippokampusz-központú profilt mutat, amely szokatlanul ígéretes más nootropikum-szerekhez képest, harang alakú dózis-válasz görbével, ami azt jelenti, hogy magasabb adag nem feltétlenül erősebb hatást jelent. Rágcsálókísérletek a vegyületet mitokondriális légzési javulással és tartalék légzési kapacitással kötik össze. Az 1B fázisú vizsgálatok 17,4-20,5 órás felezési időt mutattak, körülbelül 4-5 nap alatti steady state-tel, valamint előnyöket a végrehajtó funkció, tanulási pontosság és memóriához kapcsolódó teljesítmény terén. Közösségi beszámolók érzelmi helyreállásról számolnak be, nem mesterséges emelésről, élénk memóriafelszínre kerülés visszatérő jelentés. Néhány felhasználó fokozott szenzoros textúrát és csökkent társas súrlódást ír le, beleértve a kezelésrezisztens depresszió tüneteinek javulását. Az előnyök a használat abbahagyása után is fennmaradnak, összhangban a plaszticitás-vezérelt strukturális változásokkal, nem akut hatásokkal."
 }

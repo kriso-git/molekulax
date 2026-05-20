@@ -77,5 +77,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/20955431/",
       "finding": "Comprehensive review of Tβ4 structure, wound-healing and cardiovascular clinical applications."
     }
-  ]
+  ],
+  "anecdote": "Community accounts describe TB-500 used alone in self-experimentation contexts, with one older user reporting greater flexibility during typical gym stretching routines — a benefit they attributed to the peptide rather than to confounding training factors. Reports remain preliminary, but the signal is consistent enough across community members to be noted.\n\nDosing depends on goals. TB-500 is typically administered subcutaneously, often during a loading phase followed by maintenance, though loading is not strictly required. Because it acts systemically, the local \"site-of-injury\" injection advantage often discussed with BPC-157 does not apply here."
 }

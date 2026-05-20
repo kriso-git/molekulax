@@ -148,5 +148,6 @@ export default {
     "semax",
     "tianeptine",
     "methylene-blue"
-  ]
+  ],
+  "anecdote": "Anecdotal reports describe NSI-189 as exhibiting a hippocampus-centered profile that is unusually promising compared to other nootropic agents, with a bell-shaped dose-response curve meaning higher doses do not necessarily mean stronger effects. Rodent work links the compound to mitochondrial respiratory improvements and spare respiratory capacity. Phase 1B trials showed a 17.4-20.5 hour half-life with steady state in about 4-5 days, alongside benefits to executive function, learning accuracy, and memory-related performance. Community accounts describe emotional restoration rather than artificial elevation, with vivid memory resurfacing being a recurring report. Some users describe heightened sensory texture and reduced social friction, including improvements in treatment-resistant depression symptoms. Benefits are reported to linger after stopping use, consistent with plasticity-driven structural changes rather than acute effects."
 }

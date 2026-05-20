@@ -140,7 +140,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 20, "medium": 30, "high": 50},
+        "fixed": {
+          "low": 20,
+          "medium": 30,
+          "high": 50
+        },
         "unit": "mg/dzień (doustnie, 2-3x podzielone)",
         "note": "Maks 6 tygodni cyklu. 20-50 mg/dzień, 2-3x podzielone (5h okres półtrwania). TUDCA + NAC obowiązkowe. PCT 4 tygodnie."
       }
@@ -182,11 +186,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 100, "high": 150},
+        "fixed": {
+          "low": 50,
+          "medium": 100,
+          "high": 150
+        },
         "unit": "mg/tydzień (IM, podzielone 2-3x)",
         "note": "Maks 8 tygodni cyklu. 50-150 mg/tydzień, 2-3x podzielone (krótki okres półtrwania mimo depot). TUDCA zalecany. PCT 4 tygodnie ostatnia iniekcja +5-7 dni."
       }
     }
   ],
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "Dianabol ma niemal legendarny status w tradycji AAS. Użytkownicy często zgłaszają bardzo szybką zmianę w pełności, dźwigni, regeneracji i wynikach na siłowni w zaskakująco krótkich ramach czasowych. Cechą charakterystyczną jest to, jak 'anabolicznie' się go odczuwa — dość oczywiście, nie subtelnie. Siła zazwyczaj szybko rośnie wraz z dramatycznymi efektami pompy i wolumizacji. Wiele z tego, co potocznie nazywa się 'wodą', to faktycznie wewnątrzmięśniowy glikogen i nawodnienie komórek, co nie jest równoważne bezsensownemu wzdęciu i samo może przyczyniać się do sygnalizacji anabolicznej. Doniesienia społeczności wskazują na nieproporcjonalny wpływ Dianabolu na rozpęd treningowy — bardziej produktywne sesje, szybsza regeneracja i wynikający z tego skumulowany wzrost. Apetyt również często rośnie. Kompromisy są znaczące: zauważalne efekty estrogenowe (ginekomastia, retencja wody), podwyższone ciśnienie krwi, zaburzenia lipidowe i obciążenie wątroby 17α-alkilowane. Niektóre relacje i pojawiające się dowody sugerują, że Dianabol metabolizuje się do niezwykle silnego metabolitu estrogenowego, co warto mieć na uwadze przy planowaniu wsparcia AI/SERM."
 }

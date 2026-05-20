@@ -146,5 +146,6 @@ export default {
     "oxiracetam",
     "alpha-gpc",
     "cdp-choline"
-  ]
+  ],
+  "anecdote": "A Piracetamot széles körben az alapvető racetamnak tekintik. Közösségi beszámolók szerint a gondolkodást, memóriakódolást és verbális folyamatosságot simábbá, tisztábbá és hatékonyabbá teszi, lényegében magát a közeget javítja, amelyben a kogníció zajlik. Gyengén AMPA-vonatkozású, de nem jelentős ampakin a klasszikus értelemben. A bizonyítékok arra utalnak, hogy az előnyök erősebbek stressz, öregedés, hipoxia vagy károsodott kognitív funkció esetén, ami magyarázza, miért nem érzékelnek sokat belőle egészséges felhasználók. A racetam család őseként sok későbbi vegyület úgy tekinthető, mint kísérlet a Piracetam eredeti céljának fokozására. A várt eredmények közé tartozik a javult plaszticitás, kolinerg hatékonyság, metabolikus rezilencia és gerjesztő jelzés modulációja. Hírneve nem annyira okos drog mivoltán, hanem az alapvető idegi optimalizáción nyugszik."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Wzmocnienie HACU w hipokampie → zwiększona synteza acetylocholiny; wtórnie pozytywna modulacja receptora AMPA. Nie wiąże się bezpośrednio z żadnym receptorem.",
   "legalStatus": "Na receptę we Włoszech (Pramistar), wycofany na kilku rynkach. Niezatwierdzony przez FDA w USA; dostępny na rynku nootropików OTC.",
-  "chemicalFormula": "C14H27N3O2"
+  "chemicalFormula": "C14H27N3O2",
+  "anecdote": "Raporty anegdotyczne opisują Pramiracetam jako prosty, ale wciąż skuteczny racetam, użytkownicy zazwyczaj doświadczają uczucia skupienia, a nie silnych efektów neuroprzekaźnikowych. Doniesienia społeczności podkreślają silne wzmocnienie nabywania, kodowania i przypominania pamięci, a dowody sugerują przyspieszony przepływ impulsów cholinergicznych w obwodach hipokampa leżący u podstaw profilu pamięciowego. Związek według doniesień działa mniej efektywnie, gdy mózg jest pod wpływem stresu, ponieważ podwyższone kortykosteroidy blokują wzmacniające pamięć efekty wszystkich racetamów, nie tylko Pramiracetamu. Czyni to gorszym wyborem podczas okresów wysokiego ciśnienia. Ogólnie pozycjonowany jest jako solidny racetam z silnym wzmocnieniem HACU i modulacją AMPA, choć wielu członków społeczności preferuje Koluracetam dla podobnych mechanizmów."
 }

@@ -140,7 +140,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 20, "medium": 30, "high": 50},
+        "fixed": {
+          "low": 20,
+          "medium": 30,
+          "high": 50
+        },
         "unit": "mg/nap (orális, 2-3x osztva)",
         "note": "Max 6 hét ciklus. 20-50 mg/nap, 2-3x osztva (5h felezés). TUDCA + NAC kötelező. PCT 4 hét."
       }
@@ -182,11 +186,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 100, "high": 150},
+        "fixed": {
+          "low": 50,
+          "medium": 100,
+          "high": 150
+        },
         "unit": "mg/hét (IM, 2-3x osztva)",
         "note": "Max 8 hét ciklus. 50-150 mg/hét, 2-3x osztva (rövid felezés depot ellenére). TUDCA ajánlott. PCT 4 hét utolsó injekció +5-7 nap."
       }
     }
   ],
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "A Dianabol szinte legendás státusszal bír az AAS hagyományban. A felhasználók gyakran nagyon gyors változást jelentenek a teltségben, az erőkar-helyzetben, a regenerációban és az edzőtermi teljesítményben meglepően rövid időn belül. Jellegzetes vonás, hogy mennyire 'anabolikusnak' érződik — meglehetősen nyilvánvalóan, nem finoman. Az erő jellemzően gyorsan emelkedik drámai pumpa- és volumizációs hatásokkal együtt. Az, amit köznyelven 'vízsúlynak' neveznek, valójában intramuszkuláris glikogén és sejt-hidratáció, ami nem egyenértékű az értelmetlen puffadással és maga is hozzájárulhat az anabolikus jelzéshez. Közösségi beszámolók szerint a Dianabol aránytalan hatást gyakorol az edzési lendületre — produktívabb edzések, gyorsabb regeneráció és ebből adódó halmozódó növekedés. Az étvágy is gyakran nő. A kompromisszumok jelentősek: figyelemre méltó ösztrogén-kapcsolatos hatások (gyno, vízvisszatartás), vérnyomás-emelkedés, lipid-zavar és 17α-alkilált máj-terhelés. Néhány beszámoló és felmerülő bizonyíték arra utal, hogy a Dianabol egy szokatlanul erős ösztrogén-metabolittá alakul, amit érdemes szem előtt tartani AI/SERM támogatás tervezésekor."
 }

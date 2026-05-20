@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Kluczowy pośrednik szlaku Kennedy`ego, egzogenne przyjmowanie wspiera zarówno syntezę fosfatydylocholiny (budowa błony), jak i syntezę acetylocholiny; składnik urydynowy dodatkowo wspiera syntezę UTP i wzrost synaptyczny.",
   "legalStatus": "Na receptę we Włoszech, Hiszpanii, Japonii (Somazina, Ceraxon). OTC suplement diety w USA. Wolno dostępny jako suplement na Węgrzech.",
-  "chemicalFormula": "C14H26N4O11P2"
+  "chemicalFormula": "C14H26N4O11P2",
+  "anecdote": "Doniesienia społeczności silnie zalecają CDP-Cholinę dla osób pragnących poprawić funkcje poznawcze, wielu preferuje ją nad Alpha-GPC ze względu na jej łagodniejszy, bardziej stabilny profil dostosowany do długoterminowej suplementacji choliny, a nie efektów doraźnych. Składnik urydynowy wspiera synaptogenezę, co oznacza, że powtarzane stosowanie może z czasem poprawić zdolność mózgu do tworzenia i utrzymywania połączeń. CDP-Cholina szczególnie dobrze łączy się ze stymulantami lub racetamami, które mają tendencję do wyczerpywania poziomów choliny, zapobiegając uczuciu wypalenia, które może następować po konsekwentnym stosowaniu nootropików. Dowody sugerują, że może zwiększać gęstość receptorów dopaminowych, potencjalnie poprawiając długoterminową motywację. Użytkownicy często zgłaszają lepszą płynność werbalną, poprawioną retencję pamięci i jaśniejsze myślenie. Szeroko pozycjonowany jako fundamentalna podstawa dla większości stacków wzmacniających funkcje poznawcze."
 }

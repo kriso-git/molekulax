@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Hepatocyte Growth Factor (HGF) / c-Met receptor agonist, c-Met activation in the hippocampus triggers a strong synaptogenic cascade; in animal models estimated potency is ~10⁷× higher than BDNF on certain endpoints.",
   "legalStatus": "Not approved as a medicine anywhere; sold only in academic and “research chemical” categories, no human safety data exists.",
-  "chemicalFormula": "C26H41N5O5"
+  "chemicalFormula": "C26H41N5O5",
+  "anecdote": "Anecdotal reports describe Dihexa as one of the most potent cognitive enhancers in the nootropic space, with users dosing around 5-10 mg during intensive study or exam periods. The compound is dissolvable in DMSO and can be administered orally or sublingually; oral absorption is enhanced when taken with fats such as olive or MCT oil. Users describe the experience as making information stick more easily, with retention benefits persisting long-term for material studied during use. Effective practice and active learning are noted as essential to realize the encoding benefits. Added neuroprotective effects may be relevant for individuals dealing with cognitive deficits. Dihexa is very active at small doses because it acts as a mimetic of growth signaling rather than directly signaling itself, primarily via HGF/c-Met pathway activation."
 }

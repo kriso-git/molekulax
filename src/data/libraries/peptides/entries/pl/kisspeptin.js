@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/24450286/",
       "finding": "Kisspeptyna bezpiecznie wyzwala pulsy LH w amenorrhei podwzgórzowej."
     }
-  ]
+  ],
+  "anecdote": "Kispeptyna jest jedną z bardziej interesujących opcji w przestrzeni terapii po cyklu / naturalnego zwiększania testosteronu. Większość użytkowników stosunkowo szybko zauważa wzrost libido i poprawę nastroju, jeśli ich oś HPG dobrze reaguje. Jednak u użytkowników stłumionych przez AAS odpowiedź jest anegdotycznie słabsza w porównaniu do silniejszych alternatyw, takich jak HCG. Kispeptyna jest intensywnie badana pod kątem płodności ze względu na jej zdolność do stymulowania LH/FSH w bardziej fizjologiczny sposób.\n\nKispeptyna jest najlepiej podawana poprzez iniekcję podskórną ze względu na jej peptydową naturę. Dawkowanie różni się w zależności od analogu (np. Kispeptyna-10)."
 }

@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/26132941/",
       "finding": "Afamelanotide significantly extends pain-free sun exposure in EPP patients."
     }
-  ]
+  ],
+  "anecdote": "Anecdotal reports describe Melanotan-1 producing an even, gradual tan when paired with 30 minutes of daily sun exposure at 500 mcg per day, with a noticeable orange glow appearing within roughly one week. Side effects in this account were minimal, though users who have compared both compounds often prefer Melanotan-2 for more rapid pigmentation.\n\nMelanotan-1 is typically administered via nasal spray or subcutaneous injection due to poor oral bioavailability. Users typically titrate up gradually, as nausea is a common symptom when the initial dose is too high. Some users tolerate up to 1 mg per dose. Administration is best timed 30-60 minutes before a tanning session."
 }

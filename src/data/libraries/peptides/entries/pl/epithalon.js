@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/12937682/",
       "finding": "W ludzkich fibroblastach leczenie Epitalonem wydłużyło telomery o 33% i komórki dzieliły się o 10 generacji dłużej niż kontrole."
     }
-  ]
+  ],
+  "anecdote": "Epitalon nie jest odczuwany ostro — jego efekty są subtelne i stopniowe. Doniesienia anegdotyczne wielu użytkowników opisują nieco lepsze rozpoczęcie snu (czas zasypiania) i głębszy odpoczynek, oba konsekwentnie odnotowywane jako pozytywne. Z czasem regeneracja wydaje się poprawiona (placebo nie można wykluczyć), a sen staje się bardziej spójny dzień po dniu po około czterech tygodniach dawkowania przed snem. DSIP jest często uważany za bardziej niezawodny peptyd snu pierwszej linii, a Epitalon służy jako opcja drugorzędna.\n\nEpitalon jest zwykle podawany w krótkich cyklach (kilka dni do tygodni) poprzez iniekcję podskórną. Najczęściej dawkowany przed snem."
 }

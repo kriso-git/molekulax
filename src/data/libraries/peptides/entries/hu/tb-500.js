@@ -77,5 +77,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/20955431/",
       "finding": "Friss áttekintés a Tβ4 szerkezetéről, sebgyógyulási és szív-érrendszeri klinikai alkalmazásairól."
     }
-  ]
+  ],
+  "anecdote": "Közösségi beszámolók szerint a TB-500-at önkísérletezési kontextusokban önállóan használják, és egy idősebb felhasználó nagyobb rugalmasságról számolt be a szokásos edzéstermi nyújtás során — ezt a hatást inkább a peptidnek, mintsem a zavaró edzéstényezőknek tulajdonította. A beszámolók előzetesek maradnak, de a jel elég következetes a közösségi tagok között ahhoz, hogy figyelemre méltó legyen.\n\nAz adagolás a céloktól függ. A TB-500-at jellemzően szubkután adják be, gyakran egy telítési fázis során, amelyet fenntartó adagolás követ, bár a telítés nem feltétlenül szükséges. Mivel szisztémásan hat, a BPC-157-nél gyakran tárgyalt helyi \"sérülés-közeli\" injekciós előny itt nem érvényes."
 }

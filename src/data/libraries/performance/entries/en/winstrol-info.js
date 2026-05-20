@@ -144,7 +144,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 30, "medium": 50, "high": 80},
+        "fixed": {
+          "low": 30,
+          "medium": 50,
+          "high": 80
+        },
         "unit": "mg/day (oral, 1-2x split)",
         "note": "30-80 mg/day, max 8 weeks cycle. TUDCA + NAC mandatory. Female dose max 5-10 mg/day. PCT last tablet +1-2 days."
       }
@@ -185,11 +189,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
         "unit": "mg/EOD (IM)",
         "note": "50-100 mg EOD, max 8 weeks. TUDCA recommended. Aseptic technique critical (abscess risk). PCT last injection +5-7 days."
       }
     }
   ],
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "Anecdotal reports describe Winstrol less in terms of dramatic growth and more as producing a distinct dense, tight, performance-enhancing character — with strength increases sometimes seeming disproportionate to visible muscle gain. A recurring theme in community accounts is that Winstrol produces noticeable shifts in muscular hardness, separation, and recomposition, which helped establish its long-standing reputation in physique-focused use. It is frequently described as behaving more like a force-output and tissue-quality modulator than a classic hypertrophy anabolic, giving it a distinct pharmacological niche. At the same time, users emphasize that the 'dry, refined' image can obscure important tradeoffs — particularly harsh lipid effects, hepatic stress in oral form, HPTA suppression, blood pressure concerns, and frequent reports of connective-tissue or joint-related complaints. Winstrol is sometimes underestimated because it does not present as a dramatic mass drug, when in practice it exerts potent effects on tissue performance and presentation — which is largely why it remains one of the more specialized and respected legacy compounds."
 }

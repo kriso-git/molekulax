@@ -291,5 +291,6 @@ export default {
       }
     }
   ],
-  "defaultVariant": "prop"
+  "defaultVariant": "prop",
+  "anecdote": "Raporty anegdotyczne opisują Masteron jako wywołujący wyraźne efekty diuretyczne, użytkownicy często zauważają znacznie zwiększone oddawanie moczu. Doniesienia społeczności wskazują również na zmniejszone objawy wysokiego E2 nawet przy znacznych dawkach testosteronu, co jest zgodne z jego znaną aktywnością anty-estrogenową na poziomie receptora. Jednak Masteron jest notorycznie znany z przyspieszania androgenowego wypadania włosów; użytkownicy podatni na łysienie typu męskiego często zgłaszają natychmiastowe przerzedzenie linii włosów po rozpoczęciu stosowania. Jest ogólnie postrzegany jako 'kosmetyczny anabolik' — przydatny do twardości, suchości i poprawy sylwetki, a nie do znaczącego przyrostu mięśni. Ogólnie uznawany za solidny anabolik pochodny DHT z wyraźną niszą przy odpowiednim stosowaniu, ale androgenowe kompromisy (zwłaszcza wypadanie włosów) są poważnym rozważaniem dla genetycznie predysponowanych użytkowników."
 }

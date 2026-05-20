@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/25738459/",
       "finding": "MOTS-c poprawia wrażliwość na insulinę i redukuje otyłość u myszy."
     }
-  ]
+  ],
+  "anecdote": "Doniesienia społeczności często faworyzują MOTS-c lub 5-Amino-1MQ do wzmacniania utraty tłuszczu. Niektórzy użytkownicy opisują MOTS-c jako \"lekką Cardarinę\", choć jest to ogólnie uważane za przesadę. W połączeniu z innymi środkami spalającymi tłuszcz, MOTS-c może tworzyć silny stack. Działa najlepiej u już aktywnych użytkowników, ponieważ wzmacnia wykorzystanie paliwa, a nie wymusza spalanie tłuszczu. Poprawiona wrażliwość na insulinę poprzez aktywację AMPK jest istotną korzyścią. Raporty anegdotyczne opisują lepszą codzienną energię.\n\nMOTS-c jest zwykle podawany podskórnie. Ponieważ MOTS-c jest naturalnie produkowany, a poziomy spadają z wiekiem, suplementacja u starszych użytkowników może przynosić wyraźniejsze korzyści."
 }

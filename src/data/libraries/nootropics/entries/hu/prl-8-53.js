@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Kombinált cholinerg potencírozás és dopaminerg moduláció, az eredeti szabadalom „acetilkolin- és serotonin-felszabadulás-fokozó\" mechanizmust ír le; pontos receptorszintű profil máig nem ismert.",
   "legalStatus": "Sehol nem jóváhagyott gyógyszer. „Research chemical\" minősítéssel árusított, kontroll nélküli alapanyag; UK-ban a Psychoactive Substances Act tiltja.",
-  "chemicalFormula": "C18H21NO2"
+  "chemicalFormula": "C18H21NO2",
+  "anecdote": "Közösségi beszámolók a PRL-8-53-at nagyra értékelik a tanulás és memória fokozására, sikeres használatról számolnak be nyelvtanulási protokollokban. A felhasználók szerint legjobban szókincs-átismétlés és mintázatfelismerés feladatoknál teljesít. Magasabb dózisok enyhe izzadást okozhatnak egyeseknél, a válasz erősen változó. Közösségi tagok gyakran számolnak be verbális folyamatosság és információ-megőrzés javulásáról, különösen kognitívan igényes körülmények között. Néhány felhasználó nemkívánatos hatásokat jelentett magasabb dózisoknál, beleértve szorongást, remegést és álmatlanságot. Az általános konszenzus az, hogy a PRL-8-53 fokozza mind a rövid-, mind a hosszú távú memóriát, verbális folyamatosságot és memóriaelőhívást. A vegyületet egy 1970-es évekbeli publikált emberi memóriavizsgálat támasztja alá, és figyelemre méltó kutatási nootropikum marad memóriafókuszú alkalmazásokra."
 }

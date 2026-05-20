@@ -244,7 +244,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 300, "medium": 500, "high": 700},
+        "fixed": {
+          "low": 300,
+          "medium": 500,
+          "high": 700
+        },
         "unit": "mg/hét (IM, 3x EOD osztva)",
         "note": "300-700 mg/hét, 3x EOD osztott (Mon/Wed/Fri). PCT utolsó injekció +3-5 nap."
       }
@@ -281,7 +285,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "fixed": {
+          "low": 250,
+          "medium": 500,
+          "high": 750
+        },
         "unit": "mg/hét (IM, 1-2x osztva)",
         "note": "250-750 mg/hét, heti 1-2x. PCT utolsó injekció +14-21 nap."
       }
@@ -317,7 +325,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "fixed": {
+          "low": 250,
+          "medium": 500,
+          "high": 750
+        },
         "unit": "mg/hét (IM, 1-2x osztva)",
         "note": "250-750 mg/hét, heti 1-2x. PCT utolsó injekció +14-21 nap."
       }
@@ -354,7 +366,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 250, "medium": 500, "high": 750},
+        "fixed": {
+          "low": 250,
+          "medium": 500,
+          "high": 750
+        },
         "unit": "mg/hét (IM, 1-2x osztva)",
         "note": "250-750 mg/hét, heti 1-2x ajánlott (NEM havi 1x mint TRT). PCT utolsó injekció +18-21 nap."
       }
@@ -392,11 +408,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 100, "high": 200},
+        "fixed": {
+          "low": 50,
+          "medium": 100,
+          "high": 200
+        },
         "unit": "mg/injekció (IM, napi vagy EOD)",
         "note": "50-200 mg/injekció napi vagy EOD. Pre-workout boost-ra 50-100 mg 1-2 órával edzés előtt. PCT utolsó injekció +24-48 óra."
       }
     }
   ],
-  "defaultVariant": "enan"
+  "defaultVariant": "enan",
+  "anecdote": "A tesztoszteron minden AAS referencia-molekulája és a TRT-protokollok alapja. Az anekdotikus beszámolók szerint a felhasználók a tesztoszteront élethosszig tartó protokollként futtatják, jellemzően orvosi felügyelet melletti TRT formájában. Mind a Testosterone Propionate, mind a Cypionate gyakori használatban van. Közösségi beszámolók szerint a Propionate gyorsabban ható és inkább 'igény szerinti' hajtóerő-érzést ad kevesebb vízvisszatartással vagy hormoningadozással, míg a Cypionate-ot egész évre szóló stabil használatra részesítik előnyben konzisztens szérumszintekkel. Sok felhasználó arról számol be, hogy a csak tesztoszteron-ciklusok hosszú távon a legjobb eredményeket produkálják közösségi tapasztalat szerint, kevesebb kezelendő stack-változóval. Összességében a tesztoszteron továbbra is az AAS és TRT gyakorlat alapköve és a viszonyítási alap, amelyhez más vegyületeket hasonlítanak."
 }

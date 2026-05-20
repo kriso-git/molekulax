@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Elevated brain Mg²⁺ levels modulate the NMDA receptor (restoring the physiological Mg²⁺ block), strengthen the LTD/LTP balance, and increase dendritic spine density in the prefrontal cortex and hippocampus.",
   "legalStatus": "OTC dietary supplement throughout the EU and the USA. FDA GRAS status for the Magtein® brand. Freely available in Hungary.",
-  "chemicalFormula": "C8H14MgO10"
+  "chemicalFormula": "C8H14MgO10",
+  "anecdote": "Community accounts describe Magnesium L-Threonate as a daily-use form of magnesium reported anecdotally to reduce stress, support clearer thinking, and produce a calmer headspace. It is positioned as a tip-of-the-iceberg supplement for cognition, with the L-Threonate form developed by MIT and studied as Magtein for synaptic Mg²⁺ delivery. Users find it particularly useful for individuals who become over-excited on stimulants, nootropics, or other neuroactive compounds. The stabilization in glutamate tone is reportedly useful at night before bed. Effects are not acutely felt as anything intense, but users describe overall improved function, efficiency, and smoothness. Well-tolerated and broadly cited as a solid baseline supplement."
 }

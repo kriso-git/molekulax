@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/40009844/",
       "finding": "68 hét CagriSema 22,7%-os testsúlycsökkenést hozott obesitásban szenvedő felnőtteknél."
     }
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a Cagrilintid az egyik legerősebb étvágycsökkentő, amit közösségi tagok kipróbáltak. Tirzepatid mellett használva az éhségérzet a beadás után 2-3 napra teljesen eltűnik, bár ezen időszak alatt gyakran szélsőséges fáradtságról és kimerültségről számolnak be. Hányinger és puffadás is előfordul egyes felhasználóknál. A fejlesztés korai eredményei jelentős fogyási potenciált mutattak. A kezdő dózisok jellemzően nagyon alacsonyak (kb. 0,25 mg), és körülbelül egy hónapig tartják; a tolerancia lassan, de épül. Gyakran \"szükség szerint\" használják, nem pedig elsődleges fogyási eszközként.\n\nA Cagrilintidet szubkután adják be, jellemzően heti egyszer vagy kétszer a hosszú hatástartam miatt. Gyakran másodvonalas kezelésként használják a GLP-1-ek mellett."
 }

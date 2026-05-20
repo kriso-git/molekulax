@@ -13,18 +13,40 @@ export default {
   "shortDesc": "Tamoxifen-citrát, 1962 ICI Pharmaceuticals szintézis, FDA-jóváhagyott (1977) ER+ emlőkarcinómára. Az AAS-PCT golden-standard SERM: pituiter ER-α-blokád → LH/FSH-disinhibíció → endogén testosterone-recovery. 60+ év klinikai irodalom.",
   "description": "A Nolvadex (Tamoxifen-citrát) egy non-szteroidal trifeniletilén-szerkezetű szelektív ösztrogén-receptor-modulátor (SERM), amelyet 1962-ben Arthur Walpole és Dora Richardson szintetizált az ICI Pharmaceuticals (ma AstraZeneca) Macclesfield-i laboratóriumában. Eredeti cél: posztkoitális fogamzásgátló — paradox módon ovuláció-induktor lett, és 1977-ben FDA-jóváhagyást kapott ösztrogén-receptor-pozitív (ER+) emlőkarcinómára. Mára 30+ millió női és férfi beteg kezelte vele, a leghosszabb klinikai irodalmú SERM. Az AAS-PCT (post-cycle therapy) kontextusban a Nolvadex a klasszikus első-vonalbeli választás: a pituiter szintű ER-α kompetitív antagonizmusa miatt a hypothalamus-pituiter (HP) tengely felszabadul a negatív feedback alól, az LH és FSH szekréció helyreáll, és a Leydig-sejtek visszaindulnak az endogén testosterone-produkcióhoz. A Nolvadex szelektivitása szövetspecifikus: emlőszövetben antagonist, csontban + májban + endometriumban agonist (innen ered az endometrium-rákrizikó női, hosszú távú használat esetén). WADA-listán szerepel (S4 hormonmodulátor) — versenysport-tilos.",
   "keyInfo": [
-    {"label": "Hatásmechanizmus", "value": "Non-szteroidal SERM, ER-α kompetitív antagonist a pituiterben + mellben"},
-    {"label": "Adagolás (PCT)", "value": "20-40 mg/nap, 4-6 hét"},
-    {"label": "Felezési idő", "value": "~5-7 nap (parent) / ~14 nap (4-OH-tamoxifen aktív metabolit)"},
-    {"label": "Hatáskezdet", "value": "LH-emelkedés 24-72 óra, Test-recovery 2-3 hét"},
-    {"label": "Jogi státusz", "value": "FDA + EMA Rx, HU + PL törzskönyvezett, WADA S4 (banned in-competition)"}
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Non-szteroidal SERM, ER-α kompetitív antagonist a pituiterben + mellben"
+    },
+    {
+      "label": "Adagolás (PCT)",
+      "value": "20-40 mg/nap, 4-6 hét"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "~5-7 nap (parent) / ~14 nap (4-OH-tamoxifen aktív metabolit)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "LH-emelkedés 24-72 óra, Test-recovery 2-3 hét"
+    },
+    {
+      "label": "Jogi státusz",
+      "value": "FDA + EMA Rx, HU + PL törzskönyvezett, WADA S4 (banned in-competition)"
+    }
   ],
   "mechanism": "A tamoxifen pro-drug — májban CYP2D6 + CYP3A4 enzimek 4-hidroxi-tamoxifenné (4-OH-tam) és endoxifenné (N-dezmetil-4-OH-tam) konvertálják. Az aktív metabolitok 30-100x erősebb ER-α-affinitással rendelkeznek mint a parent compound. A 4-OH-tam kompetitíven kötődik az ösztrogén-receptorhoz, blokkolva annak agonista konformáció-változását — szövettől függően antagonist (mell, pituiter) vagy parciális agonist (csont, máj, endometrium) hatást fejt ki. A pituiter ER-α-blokád megszünteti az ösztrogén-mediated negatív feedbacket a GnRH-szekrécióra, így az LH és FSH újra szabadon szekretálódik. Az emelkedett LH a Leydig-sejtek LHCGR-receptorát stimulálja → endogén testosterone-produkció helyreáll. CYP2D6 poor-metabolizer betegekben (kb. 7-10% kaukázusi populáció) az endoxifen-szint alacsony, a Nolvadex-hatás csökkentett — genetikus tesztelés indokolt, ha terápiás válasz hiányzik.",
   "legalStatus": "USA: FDA-jóváhagyott 1977 (ER+ emlőkarcinóma, ductal carcinoma in situ, magas-rizikójú nőknél prevenció), Schedule N/A (nem kontrollált szer). EU: EMA-jóváhagyott. HU: törzskönyvezett (Nolvadex, Tamoxifen-ratiopharm, Tamoxifen Sandoz Rx). PL: törzskönyvezett (Nolvadex Rx). WADA: S4.3 ösztrogén-receptor-modulátor (banned in-competition + out-of-competition — minden férfi WADA-versenyző számára tilos).",
   "onsetTime": "LH-emelkedés 24-72 óra, Test-recovery 2-3 hét",
   "halfLife": "~5-7 nap (parent tamoxifen)",
   "halfLifeActive": "~14 nap (4-OH-tamoxifen + endoxifen aktív metabolit)",
-  "interactionsWith": ["clomid", "enclomiphene", "raloxifene", "hcg-perf", "anastrozol", "warfarin"],
+  "interactionsWith": [
+    "clomid",
+    "enclomiphene",
+    "raloxifene",
+    "hcg-perf",
+    "anastrozol",
+    "warfarin"
+  ],
   "aromatization": "Nem aromatizál — kompetitív ösztrogén-receptor (ER-α) blokkolás, NEM CYP19-aromatáz gátlás. Az E2-szint Nolvadex-en gyakran enyhén EMELKEDIK (a pituiter LH-disinhibíció miatt másodlagos testicular E2-szintézis). Nolvadex NEM helyettesíti az aromatáz-gátlót ciklus alatt — különálló mechanizmus.",
   "hepatotoxicity": "Alacsony — non-steroidal, NEM 17α-alkilált. Ritka mild ALT/AST emelkedés <2% incidenciával PCT-dose-on. Chronic high-dose (>40 mg/nap, 6+ hónap) cirrhosis-kockázat dokumentált FDA Nolvadex SmPC adverse-event-listában (női hosszú távú prevenciós/breast-cancer-adjuváns használat); AAS-PCT 4-6 hetes dose-on klinikailag nem jelent.",
   "wadaStatus": "banned",
@@ -48,10 +70,22 @@ export default {
     "Vizuális zavarok (rare): scintillating scotoma >40 mg/nap chronic, leállítás reverzibilis"
   ],
   "expectations": [
-    {"label": "1. hét", "body": "LH/FSH emelkedés mérhető (vérvétel +5 nap után), tüneti változás minimális. Néhány felhasználón mild flu-szerű érzés vagy fejfájás az E2-fluktuáció miatt."},
-    {"label": "2-3. hét", "body": "Endogén testosterone-produkció kezd visszatérni — libidó-recovery, energia-szint emelkedés érezhető. Tükör-teszt: ha gyno-symptómák a ciklus végén voltak, most enyhülnek."},
-    {"label": "4-6. hét", "body": "Test-recovery teljes (baseline ±10%), HPTA-axis működik. Lipid-panel javul (HDL-emelkedés). PCT vége: utolsó dose, +2 hét konzervatív rest mielőtt új ciklus tervezhető."},
-    {"label": "Post-PCT", "body": "Confirm bloodwork +6 hét után: Total/Free Test, LH, FSH, E2, SHBG. Ha LH/FSH < kor-specifikus baseline 50%-a → szakorvos (endokrinológus) konzultáció."}
+    {
+      "label": "1. hét",
+      "body": "LH/FSH emelkedés mérhető (vérvétel +5 nap után), tüneti változás minimális. Néhány felhasználón mild flu-szerű érzés vagy fejfájás az E2-fluktuáció miatt."
+    },
+    {
+      "label": "2-3. hét",
+      "body": "Endogén testosterone-produkció kezd visszatérni — libidó-recovery, energia-szint emelkedés érezhető. Tükör-teszt: ha gyno-symptómák a ciklus végén voltak, most enyhülnek."
+    },
+    {
+      "label": "4-6. hét",
+      "body": "Test-recovery teljes (baseline ±10%), HPTA-axis működik. Lipid-panel javul (HDL-emelkedés). PCT vége: utolsó dose, +2 hét konzervatív rest mielőtt új ciklus tervezhető."
+    },
+    {
+      "label": "Post-PCT",
+      "body": "Confirm bloodwork +6 hét után: Total/Free Test, LH, FSH, E2, SHBG. Ha LH/FSH < kor-specifikus baseline 50%-a → szakorvos (endokrinológus) konzultáció."
+    }
   ],
   "quality": {
     "pure": [
@@ -83,23 +117,73 @@ export default {
     "Alkohol: hepatikus stressz fokozódik, mértékletes fogyasztás javasolt"
   ],
   "studies": [
-    {"title": "Tamoxifen for prevention of breast cancer: report of the National Surgical Adjuvant Breast and Bowel Project P-1 Study", "authors": "Fisher B, Costantino JP, Wickerham DL, et al.", "journal": "J Natl Cancer Inst. 1998;90(18):1371-88.", "pmid": "9747868"},
-    {"title": "Mechanisms of action of selective estrogen receptor modulators", "authors": "Schäcke H, Döcke WD, Asadullah K.", "journal": "Pharmacol Ther. 2002;96(1):23-43.", "pmid": "12433722"},
-    {"title": "Tamoxifen treatment in the postcycle recovery of hypogonadism after anabolic steroid abuse", "authors": "Tan RS, Vasudevan SG.", "journal": "Andrologia. 2014;46(5):542-548.", "pmid": "24716172"},
-    {"title": "Male SERM PCT: clinical decisions", "authors": "Karavolos S, Reynolds M, Panagiotopoulou N, et al.", "journal": "Clin Endocrinol. 2015;82(5):624-635.", "pmid": "25778469"},
-    {"title": "Active tamoxifen metabolite plasma concentrations after CYP2D6 inhibition", "authors": "Stearns V, Johnson MD, Rae JM, et al.", "journal": "J Natl Cancer Inst. 2003;95(23):1758-1764.", "pmid": "12832537"}
+    {
+      "title": "Tamoxifen for prevention of breast cancer: report of the National Surgical Adjuvant Breast and Bowel Project P-1 Study",
+      "authors": "Fisher B, Costantino JP, Wickerham DL, et al.",
+      "journal": "J Natl Cancer Inst. 1998;90(18):1371-88.",
+      "pmid": "9747868"
+    },
+    {
+      "title": "Mechanisms of action of selective estrogen receptor modulators",
+      "authors": "Schäcke H, Döcke WD, Asadullah K.",
+      "journal": "Pharmacol Ther. 2002;96(1):23-43.",
+      "pmid": "12433722"
+    },
+    {
+      "title": "Tamoxifen treatment in the postcycle recovery of hypogonadism after anabolic steroid abuse",
+      "authors": "Tan RS, Vasudevan SG.",
+      "journal": "Andrologia. 2014;46(5):542-548.",
+      "pmid": "24716172"
+    },
+    {
+      "title": "Male SERM PCT: clinical decisions",
+      "authors": "Karavolos S, Reynolds M, Panagiotopoulou N, et al.",
+      "journal": "Clin Endocrinol. 2015;82(5):624-635.",
+      "pmid": "25778469"
+    },
+    {
+      "title": "Active tamoxifen metabolite plasma concentrations after CYP2D6 inhibition",
+      "authors": "Stearns V, Johnson MD, Rae JM, et al.",
+      "journal": "J Natl Cancer Inst. 2003;95(23):1758-1764.",
+      "pmid": "12832537"
+    }
   ],
   "faq": [
-    {"q": "Mennyi idővel a ciklus után kell indítani a Nolvadex-PCT-t?", "a": "Ester-szerinti timing: rövid-ester ciklusok (Test-Prop, Tren-Ace, Mast-Prop) utolsó pin után 3-5 nap; közepes-ester (Test-Enan, Tren-Enan) után 7-10 nap; hosszú-ester (Test-Cyp, Deca, Eq) után 14-21 nap. A cél: PCT-indításkor az ester-felezésből származó exogén androgén-szint a baseline alá süllyedjen, így a HPTA-feedback szabad. Túl korai indítás → SERM-hatás elveszik; túl késő indítás → fölösleges HPTA-restart-késés."},
-    {"q": "Nolvadex vs Clomid — melyik jobb PCT-re?", "a": "Mindkettő SERM, hasonló mechanizmus (pituiter ER-blokád), de eltérő profil. Nolvadex: tisztább hangulati profil, ER-szelektív, gyengébb fertilitás-stimulus, csont-protektív. Clomid: erősebb LH-stimulus, jobb fertility-emphasis (FSH-hatás nagyobb), de zuclomiphene-akkumuláció miatt hangulatzavar gyakoribb (érzelmes, depresszió). Modern AAS-PCT golden-standard: Nolvadex elsőként, Clomid backup vagy stack (Karavolos 2015). Fertilitás-restoration cél: Clomid előnyösebb; tiszta HPTA-restart cél: Nolvadex."},
-    {"q": "Visszahat-e az IGF-1-re?", "a": "Igen — moderate IGF-1-csökkenés dokumentált (~10-15% baseline-on). Mechanizmus: ER-α a hepatocitákon agonist parciálisan, de tamoxifen blokkolja a teljes IGF-1-stimuláló jelpályát. Klinikailag tranziens — PCT vége után 4-6 hét alatt visszatér baseline-re. Ha bulking-folytatás után IGF-1-deficit-symptom (fáradtság, lassabb regeneráció), HGH-bridge mérlegelhető (de off-label, drágítja a PCT-t)."},
-    {"q": "Vizuális zavarok (scintillating scotoma) komolyak?", "a": "Ritka mellékhatás, dose-dependent. Tartós Nolvadex >40 mg/nap chronic (6+ hónap) használatban 1-3% incidenciával jelentkezik (FDA Nolvadex SmPC). PCT-dose-on (20-40 mg × 4-6 hét) klinikailag elhanyagolható. Tünetek: scintillating scotoma (villogó zigzag-mintázat látómezőben), retinal kristályos lerakódás chronicus-eseten. Reverzibilis a leállítás után. Tünetekre ophthalmológus konzultáció — fundus-vizsgálat indokolt."},
-    {"q": "Akne-push vagy hangulati zavarok PCT alatt — mit tegyek?", "a": "Mindkettő gyakori átmenet — NEM Nolvadex-mellékhatás közvetlenül, hanem a HPTA-restart természetes velejárója. E2-rebound (a testicular E2-szintézis hirtelen újraindul az LH-disinhibíció után) → akne-flare 2-4. héten. Hangulati zavar: testosterone-újraindulás közben pszicho-fluktuáció normális. Mitigációk: omega-3 + cink + alacsony-E2-rebound diéta; ha súlyos, taper-protokoll (40 mg → 30 mg → 20 mg → 10 mg, 1-1 hét per dose) gyengítheti a fluktuációt."}
+    {
+      "q": "Mennyi idővel a ciklus után kell indítani a Nolvadex-PCT-t?",
+      "a": "Ester-szerinti timing: rövid-ester ciklusok (Test-Prop, Tren-Ace, Mast-Prop) utolsó pin után 3-5 nap; közepes-ester (Test-Enan, Tren-Enan) után 7-10 nap; hosszú-ester (Test-Cyp, Deca, Eq) után 14-21 nap. A cél: PCT-indításkor az ester-felezésből származó exogén androgén-szint a baseline alá süllyedjen, így a HPTA-feedback szabad. Túl korai indítás → SERM-hatás elveszik; túl késő indítás → fölösleges HPTA-restart-késés."
+    },
+    {
+      "q": "Nolvadex vs Clomid — melyik jobb PCT-re?",
+      "a": "Mindkettő SERM, hasonló mechanizmus (pituiter ER-blokád), de eltérő profil. Nolvadex: tisztább hangulati profil, ER-szelektív, gyengébb fertilitás-stimulus, csont-protektív. Clomid: erősebb LH-stimulus, jobb fertility-emphasis (FSH-hatás nagyobb), de zuclomiphene-akkumuláció miatt hangulatzavar gyakoribb (érzelmes, depresszió). Modern AAS-PCT golden-standard: Nolvadex elsőként, Clomid backup vagy stack (Karavolos 2015). Fertilitás-restoration cél: Clomid előnyösebb; tiszta HPTA-restart cél: Nolvadex."
+    },
+    {
+      "q": "Visszahat-e az IGF-1-re?",
+      "a": "Igen — moderate IGF-1-csökkenés dokumentált (~10-15% baseline-on). Mechanizmus: ER-α a hepatocitákon agonist parciálisan, de tamoxifen blokkolja a teljes IGF-1-stimuláló jelpályát. Klinikailag tranziens — PCT vége után 4-6 hét alatt visszatér baseline-re. Ha bulking-folytatás után IGF-1-deficit-symptom (fáradtság, lassabb regeneráció), HGH-bridge mérlegelhető (de off-label, drágítja a PCT-t)."
+    },
+    {
+      "q": "Vizuális zavarok (scintillating scotoma) komolyak?",
+      "a": "Ritka mellékhatás, dose-dependent. Tartós Nolvadex >40 mg/nap chronic (6+ hónap) használatban 1-3% incidenciával jelentkezik (FDA Nolvadex SmPC). PCT-dose-on (20-40 mg × 4-6 hét) klinikailag elhanyagolható. Tünetek: scintillating scotoma (villogó zigzag-mintázat látómezőben), retinal kristályos lerakódás chronicus-eseten. Reverzibilis a leállítás után. Tünetekre ophthalmológus konzultáció — fundus-vizsgálat indokolt."
+    },
+    {
+      "q": "Akne-push vagy hangulati zavarok PCT alatt — mit tegyek?",
+      "a": "Mindkettő gyakori átmenet — NEM Nolvadex-mellékhatás közvetlenül, hanem a HPTA-restart természetes velejárója. E2-rebound (a testicular E2-szintézis hirtelen újraindul az LH-disinhibíció után) → akne-flare 2-4. héten. Hangulati zavar: testosterone-újraindulás közben pszicho-fluktuáció normális. Mitigációk: omega-3 + cink + alacsony-E2-rebound diéta; ha súlyos, taper-protokoll (40 mg → 30 mg → 20 mg → 10 mg, 1-1 hét per dose) gyengítheti a fluktuációt."
+    }
   ],
-  "related": ["clomid", "enclomiphene", "raloxifene", "hcg-perf", "anastrozol"],
+  "related": [
+    "clomid",
+    "enclomiphene",
+    "raloxifene",
+    "hcg-perf",
+    "anastrozol"
+  ],
   "doseCalc": {
     "type": "fixed",
-    "fixed": {"low": 20, "medium": 30, "high": 40},
+    "fixed": {
+      "low": 20,
+      "medium": 30,
+      "high": 40
+    },
     "unit": "mg/nap (orális, 1-2x osztva)",
     "note": "Standard AAS-PCT: 40 mg/nap × 1-2 hét, majd 20 mg/nap × 2-4 hét (összesen 4-6 hét). Magas-szintű ciklus (Test+Tren+Anadrol stack) után taper-protokoll: 40/30/20/10 mg, 1-1 hét per dose. Bloodwork pre-PCT, PCT-end +2 hét, +6 hét confirm-recovery."
   },
@@ -128,5 +212,6 @@ export default {
       "markers": "AAS-PCT-ben cruise N/A — Nolvadex csak PCT-ben használt, nem cruise-on.",
       "purpose": "Chronic SERM-use rizikók (endometrium-rák, VTE, vision) AAS-PCT 4-6 hét time-frame-en belül elhanyagolhatók."
     }
-  }
+  },
+  "anecdote": "A Nolvadex (Tamoxifen) és a Raloxifen anekdotikusan a két legmegbízhatóbb vegyület a gyno megelőzésére, mert a tamoxifen közvetlenül blokkolja az ösztrogént a receptor szintjén, szelektíven az emlőszövetben — egy nagyon célzott mechanizmus. Az Arimidexszel ellentétben nem aromatáz-inhibitor, így az előnyök receptor-célzottak, nem rendszer-szintűek. Gyakran használják PCT-protokollokban, mert közvetlenebbül stimulálja az LH/FSH-t, ami hasznos lehet a HPTA helyreállításához. A jelentett mellékhatások közé tartozik az enyhe hangulati ingadozás, ritka látászavarok és hosszú távú vérrögképződési kockázat — bár a legtöbb alvadási esetjelentés posztmenopauzális nőktől származik, akik mellrák megelőzésére használták, így az AAS-felhasználókra való alkalmazhatóság kevésbé egyértelmű. Összességében a közösségi beszámolók szerint a Nolvadex szilárd eszköz az ösztrogén blokkolására az emlőszövetben és erős gyno-megelőzési opció. Orálisan adják be, az adagolást jellemzően több hetes ciklusokban strukturálják, különösen PCT alatt."
 }

@@ -49,5 +49,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/19018024/",
       "finding": "2 years of MK-677 increased GH/IGF-1 and lean body mass in older adults."
     }
-  ]
+  ],
+  "anecdote": "Community accounts describe MK-677 as effective but accompanied by significant hunger, water retention, and bloating from increased GH output. Users typically report improved sleep, fuller muscles, better skin and hair quality, and noticeable gym progress, alongside persistent ravenous hunger. The compound is available as capsules or liquids and is typically administered once daily due to its long half-life of around 24 hours. Some users prefer nighttime dosing for sleep benefits, while others take it earlier in the day to better manage appetite throughout waking hours."
 }

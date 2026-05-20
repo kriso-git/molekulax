@@ -94,5 +94,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "Przyjmuj RANO (aktywujący profil, łagodzi bezsenność). Cel MDD 20 mg/dzień, OCD/bulimia 40-60 mg/dzień. Z powodu ultra-długiego okresu półtrwania steady-state po 4-5 tygodniach, przy odstawieniu ~5-tygodniowy auto-taper."
-  }
+  },
+  "anecdote": "Raporty anegdotyczne opisują Fluoksetynę (Prozac) jako jeden z lepiej tolerowanych, długo działających SSRI, z lżejszym, bardziej energetyzującym profilem subiektywnym w porównaniu do alternatyw uspokajających. Jej bardzo długi okres półtrwania (4-6 dni dla aktywnych metabolitów) jest wybaczający dla pominiętych dawek, co czyni ją częstym wyborem Rx dla starszych pacjentów skłonnych do pomijania leków. Częste wczesne kompromisy leczenia obejmują aktywację, bezsenność, otępienie emocjonalne i seksualne skutki uboczne klasy SSRI. Doniesienia społeczności wskazują na właściwości prokognitywne — raporty przedkliniczne i kliniczne sugerują poprawę pamięci długotrwałej, funkcji wykonawczych, uwagi i impulsywności, z silniejszymi efektami w kontekstach neurodegeneracyjnych. Uwaga: zespół odstawienny jest łagodniejszy niż w przypadku krótko działających SSRI ze względu na samoredukcję, ale kombinacje z MAOi są ściśle przeciwwskazane (ryzyko zespołu serotoninowego)."
 }

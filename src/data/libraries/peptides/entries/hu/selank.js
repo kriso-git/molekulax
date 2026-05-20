@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/14735834/",
       "finding": "A Selank szorongásgátló és kognitív teljesítményt javító hatást mutat humán vizsgálatokban."
     }
-  ]
+  ],
+  "anecdote": "A Selankra vonatkozó anekdotikus beszámolók tükrözik a Semaxét: egyes felhasználók egyértelmű hatásokat észlelnek, mások nem. Egy gyakori beszámoló szerint 500 mcg intranazális adagolás csökkentette a szorongást az adagolási napokon a nem adagolási napokhoz képest. Nem nehézkes vagy szedatív, mint a hagyományos anxiolitikumok, de sokak számára megbízhatóan hatékony. A Selankot gyakran kombinálják a Semaxszal egy nyugodt, nootropikum-szerű profilért, a hatások gyakran rövid idővel az adagolás után észlelhetők.\n\nA Selankot leggyakrabban intranazálisan adják be, de a szubkután injekció is működik. Általában naponta vagy szituációhoz kötötten, \"szükség szerint\" adagolják."
 }

@@ -144,7 +144,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 30, "medium": 50, "high": 80},
+        "fixed": {
+          "low": 30,
+          "medium": 50,
+          "high": 80
+        },
         "unit": "mg/nap (orális, 1-2x osztva)",
         "note": "30-80 mg/nap, max 8 hét ciklus. TUDCA + NAC kötelező. Női dózis 5-10 mg/nap maximum. PCT utolsó tabletta +1-2 nap."
       }
@@ -185,11 +189,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
         "unit": "mg/EOD (IM)",
         "note": "50-100 mg EOD, max 8 hét. TUDCA ajánlott. Aszeptikus technika kritikus (abszcessz-rizikó). PCT utolsó injekció +5-7 nap."
       }
     }
   ],
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "Az anekdotikus beszámolók a Winstrolt kevésbé drámai növekedéssel és inkább jellegzetes sűrű, feszes, teljesítményfokozó karakterrel írják le — az erőnövekedés néha aránytalannak tűnik a látható izomgyarapodáshoz képest. Visszatérő téma a közösségi beszámolókban, hogy a Winstrol észrevehető eltolódásokat okoz az izomkeménységben, a szeparációban és a rekompozícióban, ami megalapozta hosszú távú hírnevét a fizikai megjelenésre összpontosító használatban. Gyakran úgy írják le, hogy inkább erőkifejtés- és szövetminőség-modulátorként viselkedik, semmint klasszikus hipertrófia-anabolikumként, ami megkülönböztetett farmakológiai rést ad neki. Ugyanakkor a felhasználók hangsúlyozzák, hogy a 'száraz, finomított' kép elfedheti a fontos kompromisszumokat — különösen a kemény lipid-hatásokat, az orális forma máj-stresszét, a HPTA-szuppressziót, a vérnyomás-aggályokat és a gyakori kötőszövet- vagy ízületi panaszokat. A Winstrolt néha alábecsülik, mert nem drámai tömegnövelő szerként mutatkozik be, miközben a gyakorlatban erőteljes hatást gyakorol a szövet teljesítményére és megjelenésére — ez nagyrészt az ok, amiért az egyik legspecializáltabb és legtekintélyesebb hagyományos vegyület maradt."
 }

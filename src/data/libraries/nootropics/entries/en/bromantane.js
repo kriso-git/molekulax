@@ -147,5 +147,6 @@ export default {
     "selank",
     "semax",
     "noopept"
-  ]
+  ],
+  "anecdote": "Anecdotal reports describe Bromantane onset as smoother and less euphoric than a typical stimulant, with a more background-level effect profile that makes overstimulation harder but not impossible. A key feature is improved performance under stressful or exhausting conditions, without the borrowed-energy crash of stimulants. The actoprotector classification distinguishes it from standard stimulants and aligns more with a nootropic role. Community accounts vary on the anxiolytic effect, with some users reporting substantial anxiety reduction while others find it minimal. Bromantane is commonly recommended as a non-stimulant alternative during 9-Me-BC protocols. It is often available as a nasal spray; users are advised to start at low doses and approach nasal formulations cautiously to control dosing precision."
 }

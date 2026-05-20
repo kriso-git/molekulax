@@ -89,5 +89,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "Rano lub wieczorem, niezależnie od jedzenia. Cel MDD 10 mg/dzień, GAD/OCD 10-20 mg/dzień. > 20 mg/dzień NIE zalecane z powodu wydłużenia QT. Powolne zmniejszanie by uniknąć zespołu odstawiennego."
-  }
+  },
+  "anecdote": "Doniesienia społeczności wskazują, że Escitalopram ma jeden z najczystszych profili tolerancji i działań niepożądanych wśród SSRI, co potwierdza meta-analiza Cipriani z 2018 roku plasująca go w najwyższej kategorii skuteczności. Użytkownicy opisują cichy profil subiektywny — obniżający lęk i wspierający nastrój bez silnego charakteru stymulującego lub uspokajającego. Pełna korzyść terapeutyczna zwykle pojawia się w ciągu 4-8 tygodni, więc cierpliwość jest kluczowa na początku. Dysfunkcje seksualne (opóźniony orgazm, zmniejszone libido) są często zgłaszane, zgodnie z klasą SSRI. Okres półtrwania 27-32 godziny zapewnia stabilne stężenia w osoczu przy dawkowaniu raz dziennie. Uwaga: zespół odstawienny przy nagłym przerwaniu — zmniejszaj dawkę pod nadzorem klinicznym. Ryzyko wydłużenia QT przy wyższych dawkach wymaga monitorowania EKG."
 }

@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/16584110/",
       "finding": "Koniugacja z adamantanem poprawia penetrację CNS i przedłuża działanie małych peptydów."
     }
-  ]
+  ],
+  "anecdote": "Adamax jest pozycjonowany jako teoretyczne ulepszenie Semaxu, z poprawioną penetracją BBB, dłuższym czasem działania i silniejszymi efektami neurotroficznymi na papierze. Choć wciąż potrzebne są bardziej definitywne dane, raporty anegdotyczne opisują jaśniejsze myślenie, lepszy tok myślenia i płynniejszą kognicję. Liczne dyskusje społecznościowe dokumentują doświadczenia użytkowników z Adamaxem, choć wszystkie raporty pozostają anegdotyczne.\n\nAdamax dąży do podobnych korzyści neurotroficznych i nootropowych jak Semax, ale z większym naciskiem na utrzymaną aktywność dzięki poprawionej przepuszczalności BBB i dłuższemu czasowi działania."
 }

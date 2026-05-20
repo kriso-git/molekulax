@@ -143,5 +143,6 @@ export default {
     "modafinil",
     "bromantane",
     "aniracetam"
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a Phenylpiracetam körülbelül 200 mg-os adagolásban stimuláns-szerű nootropikumként hat, fókuszált tanulási feladatokra használják, gyakran helyettesítve a vényköteles stimulánsokat pihenőnapokon. A felhasználók tisztább gondolkodást és javult verbális folyamatosságot jelentenek körülbelül 7 órán át a dózis után, a heti kétszeri ciklusozást javasolják a tolerancia elkerülésére. Néhány beszámoló enyhe eufórikus komponenst is leír, amelyet az amfetamin intenzitásának körülbelül egytizedére becsülnek. Közösségi tagok jelentős hangulatemelkedést jelentenek, a kognitívan kihívó feladatok beszámolóik szerint várva várt tevékenységgé válnak a hatóanyag aktív időszakában. A CDP-kolin pótlás gyakran társul bármely racetamhoz, hogy megakadályozza a megnövekedett kolinerg jelzésből és aktivitásból eredő kolinhiányt."
 }

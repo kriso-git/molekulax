@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Nieodwracalne hamowanie MAO-B → podwyższone poziomy dopaminy i PEA w układzie nigrostriatalnym; opisano także efekty antyapoptotyczne i neuroprotekcyjne podobne do NGF na neuronach dopaminergicznych.",
   "legalStatus": "Zatwierdzony przez FDA w Parkinsonie + depresji. Na receptę w całej UE. Węgry wymagają recepty specjalistycznej; nie OTC.",
-  "chemicalFormula": "C13H17N"
+  "chemicalFormula": "C13H17N",
+  "anecdote": "Selegilina jest głównie charakteryzowana jako selektywny inhibitor MAO-B i częściowy konserwator dopaminy, choć jej profil jest bardziej zniuansowany. Ma tendencję do podnoszenia poziomu fenyloetyloaminy, śladowej aminy związanej z poprawioną czujnością, energią umysłową i wyrazistością nowości, co prawdopodobnie tłumaczy korzyści przypominające nootropowe opisywane przez niektórych użytkowników. Efekty neuroprotekcyjne są znaczące, częściowo dzięki zwiększonej ekspresji enzymów antyoksydacyjnych i odporności mitochondrialnej, co skłania niektórych badaczy do uznania jej za dobrze dopasowaną do starzenia się i pogorszenia funkcji poznawczych, a nie do doraźnego wzmocnienia. Mechanicznie, doniesienia społeczności opisują Selegilinę jako pozornie jednocześnie oczyszczającą i wzmacniającą naturalny ton dopaminowy, wytwarzającą unikalnie ustrukturyzowany profil. Łączenie ze stymulantami podnoszącymi dopaminę jest odradzane ze względu na inhibicję MAO-B, która może powodować przedłużone okresy pobudzenia."
 }

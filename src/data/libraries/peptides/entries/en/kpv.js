@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/18483147/",
       "finding": "KPV reduces inflammatory cytokines and clinical severity in IBD and skin models."
     }
-  ]
+  ],
+  "anecdote": "Anecdotal reports describe KPV administered subcutaneously easing severe arthritis symptoms for the duration of use, with community accounts noting symptom reductions within a few days. One user reported skin irritation clearing partially after one week of use. KPV is more purely anti-inflammatory than regenerative, so it is commonly stacked with BPC-157 or TB-500 to broaden the spectrum of healing factors.\n\nDosing depends on goals. KPV can be administered orally or via subcutaneous injection; oral capsule formulations are available. Topical use varies depending on the formulation. It is typically administered for a few weeks at a time, based on the user's symptom course."
 }

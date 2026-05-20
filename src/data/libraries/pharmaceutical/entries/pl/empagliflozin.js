@@ -85,5 +85,6 @@ export default {
     },
     "unit": "mg/nap",
     "note": "Standard 10 mg/dzień rano, do 25 mg/dzień dla celu HbA1c. Wskazanie HFrEF/HFpEF stała 10 mg/dzień, brak eskalacji. eGFR < 30: redukcja dawki lub odstawienie. Niezależne od jedzenia."
-  }
+  },
+  "anecdote": "Doniesienia społeczności wskazują, że Empagliflozyna (Jardiance) odczuwana jest mechanistycznie inaczej niż agonisty GLP-1 we wspomaganiu kompozycji ciała — użytkownicy zgłaszają zmniejszone zatrzymywanie wody z łagodnym efektem diuretycznym. Poza kontrolą glikemii, lek ma zatwierdzone przez FDA wskazania kardio-reno-protekcyjne dla HFrEF, HFpEF i CKD, z dowodami sugerującymi osłabienie strukturalnego remodelingu serca. Raporty anegdotyczne opisują stosowanie off-label do utraty kalorii poprzez wydalanie glukozy z moczem (około 200-300 kcal/dzień), choć u użytkowników bez cukrzycy może to powodować niski poziom energii i zmniejszoną wydajność na siłowni. Uwaga: ryzyko euglikemicznej DKA, zwiększone wskaźniki UTI/zakażeń grzybiczych narządów płciowych i odwodnienie wymagają monitorowania klinicznego."
 }

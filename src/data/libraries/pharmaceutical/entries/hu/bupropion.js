@@ -212,5 +212,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "SR 150 mg/nap reggel 4 nap, majd 150 mg 2x/nap (8+ órás távolság). XL 150 mg/nap reggel 7 nap, majd 300 mg/nap. Max-dózis SR 400 / XL 450 mg/nap — felette EXPONENCIÁLISAN nő a görcs-kockázat. NE adja este. Tablettát NE törje meg."
-  }
+  },
+  "anecdote": "Anekdotikus beszámolók szerint a Bupropion sokoldalú NDRI antidepresszáns, érzékelhető motiváció- és hajtóerő-fokozó hatással a dopamin és noradrenalin emelésén keresztül. Közösségi beszámolók szerint erős hatékonyságot mutat alacsony motivációjú depresszióban, beleértve az ADHD-átfedéses eseteket is. Alacsony DAT-affinitása arra utal, hogy inkább VMAT-2-n keresztüli dopaminerg modulátorként hat, mint közvetlen visszavétel-blokkolóként. A nikotinos receptor antagonizmus áll az FDA által jóváhagyott dohányzásleszoktatási indikáció (Zyban) hátterében; folyamatban lévő kutatások vizsgálják kokain-, metamfetamin- és impulzív-viselkedési zavarokban való hasznosságát. A Bupropion paradox módon aktiváló vagy túlstimuláló is lehet, szűk terápiás ablakkal. Mechanikai megjegyzések: a nitrogén-monoxid-donorok és PDE-5-gátlók (Sildenafil, Tadalafil) tompíthatják az antidepresszáns hatékonyságát; a metilénkék fokozhatja azt. Figyelem: rohamküszöb-csökkentés — étkezési zavarokban és rohamtörténet esetén ellenjavallt."
 }

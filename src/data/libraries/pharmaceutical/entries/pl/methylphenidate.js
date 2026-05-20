@@ -93,5 +93,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "IR: 5-10 mg 2-3x/dzień rano-południe (NIE po 16:00, ryzyko bezsenności). Concerta OROS: raz dziennie rano, 18-72 mg, maks. 72 mg/dzień dorosły. Ścisły monitoring Rx z powodu potencjału nadużywania. Roczna kontrola wzrostu i BP."
-  }
+  },
+  "anecdote": "Raporty anegdotyczne opisują Metylofenidat jako czysty, dobrze tytrowany inhibitor DAT/NET dla ADHD, z silnym dopaminergicznym efektem czuwania porównywalnym do stymulantów pierwszego rzutu. Doniesienia społeczności wskazują na łagodniejszy, bardziej skupiony profil subiektywny niż wiele alternatyw off-label, bez agresywnej presji mentalnej. Użytkownicy słabo tolerujący efekty obwodowe stymulantów często zgłaszają lepszą stabilność całodzienną na formach o przedłużonym uwalnianiu (Concerta, Ritalin LA). Kontekst Rx podkreśla status Schedule II, potencjał nadużywania i konieczność tytracji nadzorowanej przez klinicystę. Wpływ na architekturę snu wydaje się łagodniejszy niż w przypadku stymulantów amfetaminowych, choć dawkowanie późnym popołudniem nadal może zaburzać zasypianie."
 }

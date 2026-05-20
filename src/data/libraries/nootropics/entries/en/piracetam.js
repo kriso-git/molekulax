@@ -146,5 +146,6 @@ export default {
     "oxiracetam",
     "alpha-gpc",
     "cdp-choline"
-  ]
+  ],
+  "anecdote": "Piracetam is widely described as the foundational racetam. Community accounts describe it as making thinking, memory encoding, and verbal fluidity smoother, cleaner, and more efficient, essentially improving the medium through which cognition takes place. It is weakly AMPA-related but not a notable ampakine in the classical sense. Evidence suggests benefits are stronger under stress, aging, hypoxia, or impaired cognitive function, which explains why healthy users may not notice much from it. As the ancestor of the racetam family, many later compounds can be viewed as attempts to intensify what Piracetam was originally designed to do. Expected outcomes include improved plasticity, cholinergic efficiency, metabolic resilience, and modulation of excitatory signaling. Its reputation rests less on being a smart drug and more on foundational neural optimization."
 }

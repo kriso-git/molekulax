@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/26132941/",
       "finding": "Afamelanotyd istotnie wydłuża bezbólową ekspozycję na słońce u pacjentów z EPP."
     }
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują Melanotan-1 wytwarzający równomierną, stopniową opaleniznę w połączeniu z 30 minutami dziennej ekspozycji na słońce przy dawce 500 mcg dziennie, z zauważalnym pomarańczowym odcieniem pojawiającym się w ciągu około tygodnia. Skutki uboczne w tym przypadku były minimalne, choć użytkownicy, którzy porównywali oba związki, często preferują Melanotan-2 ze względu na szybszą pigmentację.\n\nMelanotan-1 jest zwykle podawany w postaci sprayu do nosa lub iniekcji podskórnej ze względu na słabą biodostępność doustną. Najlepiej podawać 30-60 minut przed sesją opalania."
 }

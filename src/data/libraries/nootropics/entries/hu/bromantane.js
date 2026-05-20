@@ -147,5 +147,6 @@ export default {
     "selank",
     "semax",
     "noopept"
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a Bromantane hatásának kezdete simább és kevésbé eufórikus, mint egy tipikus stimuláns, inkább háttér-szintű hatásprofillal, ami megnehezíti a túlstimulációt, de nem teszi lehetetlenné. Kulcsfontosságú jellemző a stresszes vagy kimerítő körülmények közötti javuló teljesítmény, a stimulánsok kölcsönvett-energia lezuhanása nélkül. Az aktoprotektor besorolás megkülönbözteti a standard stimulánsoktól, és inkább nootropikus szereppel áll összhangban. A közösségi beszámolók eltérőek az anxiolitikus hatás tekintetében, néhány felhasználó jelentős szorongáscsökkenést jelent, míg mások minimálisat. A Bromantane-t gyakran nem-stimuláns alternatívaként ajánlják 9-Me-BC protokollok alatt. Gyakran nazális spray formájában érhető el; a felhasználóknak ajánlott alacsony dózissal kezdeni, és óvatosan közelíteni a nazális formákhoz az adagolás precíz kontrollja érdekében."
 }

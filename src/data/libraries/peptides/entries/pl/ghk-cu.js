@@ -89,5 +89,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/34334873/",
       "finding": "Miejscowy GHK-Cu znacząco zmniejszył wypadanie włosów i zwiększył gęstość włosów względem placebo."
     }
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują, że długoterminowe podawanie GHK-Cu w dawce 2,5 mg dziennie powoduje zauważalne korzyści dla jakości skóry i włosów w ciągu około dwóch tygodni, a poprawa utrzymuje się przez ponad rok stosowania. Użytkownicy często odnotowują trwałą jakość skóry, choć definitywne twierdzenia o gojeniu pozostają trudne do weryfikacji poza kontrolowanymi warunkami.\n\nGHK-Cu jest jednym z bardziej przystępnych cenowo peptydów. Można go podawać miejscowo lub w postaci iniekcji podskórnej, przy czym większość użytkowników preferuje iniekcję ze względu na korzyści systemowe. Do zastosowań miejscowych proszek GHK-Cu zazwyczaj miesza się z nawilżaczem."
 }

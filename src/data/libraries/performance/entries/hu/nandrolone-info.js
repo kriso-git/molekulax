@@ -119,14 +119,32 @@ export default {
       "aromatization": "Minimális — ~10% Testosterone-aromatizációhoz képest",
       "hepatotoxicity": "Alacsony — NEM 17α-alkilált, IM bypass-olja first-pass-t",
       "quality": {
-        "pure": ["Organon Deca-Durabolin 50 mg/ml ampulla (EU Rx)", "UGL Nandrolone Decanoate 200-300 mg/ml olajos fiola, HPLC-tesztelt"],
-        "caution": ["Hosszú-távú HPTA-szuppresszió 12-16 hét", "Prolaktin-emelkedés (cabergoline készenlét)", "Deca-dick libidó-csökkenés gyakori"],
-        "avoid": ["Apaság-tervezés közeli időhorizonton (HPTA-recovery 6-12 hónap Deca után)", "Versenysport-tesztelés 12-18 hónap előtt"]
+        "pure": [
+          "Organon Deca-Durabolin 50 mg/ml ampulla (EU Rx)",
+          "UGL Nandrolone Decanoate 200-300 mg/ml olajos fiola, HPLC-tesztelt"
+        ],
+        "caution": [
+          "Hosszú-távú HPTA-szuppresszió 12-16 hét",
+          "Prolaktin-emelkedés (cabergoline készenlét)",
+          "Deca-dick libidó-csökkenés gyakori"
+        ],
+        "avoid": [
+          "Apaság-tervezés közeli időhorizonton (HPTA-recovery 6-12 hónap Deca után)",
+          "Versenysport-tesztelés 12-18 hónap előtt"
+        ]
       },
-      "interactions": ["Cabergoline 0,25 mg 2x/hét prolaktin-monitor", "Testosterone-base stack standard (Deca standalone ED-rizikó miatt)", "PCT utolsó Deca-injekció +3 hét"],
+      "interactions": [
+        "Cabergoline 0,25 mg 2x/hét prolaktin-monitor",
+        "Testosterone-base stack standard (Deca standalone ED-rizikó miatt)",
+        "PCT utolsó Deca-injekció +3 hét"
+      ],
       "doseCalc": {
         "type": "bodyweight",
-        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "perKg": {
+          "low": 2,
+          "medium": 4,
+          "high": 6
+        },
         "unit": "mg/hét (IM, heti 1x)",
         "note": "100-150 mg/hét (Deca-bridge), 300-600 mg/hét (bulking). Heti 1x IM injekció a 15 napos felezés miatt."
       }
@@ -144,18 +162,37 @@ export default {
       "aromatization": "Minimális — ~10% Testosterone-aromatizációhoz képest (azonos parent Nandrolone)",
       "hepatotoxicity": "Alacsony — NEM 17α-alkilált",
       "quality": {
-        "pure": ["UGL NPP 100 mg/ml olajos fiola (HPLC-tesztelt)", "Némely EU-pharmacy Durabolin (regional Rx) 25-50 mg/ml"],
-        "caution": ["EOD vagy 2x heti IM-injekció szükséges (rövid felezés)", "Prolaktin-emelkedés Deca-szintű", "PIP NPP-n erősebb mint Deca-n"],
-        "avoid": ["Apaság-tervezés közeli időhorizonton", "Erős injection-fárasztás esetén Deca preferált (heti 1x)"]
+        "pure": [
+          "UGL NPP 100 mg/ml olajos fiola (HPLC-tesztelt)",
+          "Némely EU-pharmacy Durabolin (regional Rx) 25-50 mg/ml"
+        ],
+        "caution": [
+          "EOD vagy 2x heti IM-injekció szükséges (rövid felezés)",
+          "Prolaktin-emelkedés Deca-szintű",
+          "PIP NPP-n erősebb mint Deca-n"
+        ],
+        "avoid": [
+          "Apaság-tervezés közeli időhorizonton",
+          "Erős injection-fárasztás esetén Deca preferált (heti 1x)"
+        ]
       },
-      "interactions": ["Cabergoline 0,25 mg 2x/hét", "Testosterone-base stack standard", "PCT utolsó NPP-injekció +5-7 nap (gyorsabb clearance mint Deca-n)"],
+      "interactions": [
+        "Cabergoline 0,25 mg 2x/hét",
+        "Testosterone-base stack standard",
+        "PCT utolsó NPP-injekció +5-7 nap (gyorsabb clearance mint Deca-n)"
+      ],
       "doseCalc": {
         "type": "bodyweight",
-        "perKg": {"low": 2, "medium": 4, "high": 6},
+        "perKg": {
+          "low": 2,
+          "medium": 4,
+          "high": 6
+        },
         "unit": "mg/hét (IM, EOD vagy 2x heti)",
         "note": "100-150 mg/hét (bridge), 300-600 mg/hét (bulking). EOD vagy 2x heti IM injekció. Gyorsabb on/off mint Deca → 'rövidebb' ciklusra alkalmasabb."
       }
     }
   ],
-  "defaultVariant": "deca"
+  "defaultVariant": "deca",
+  "anecdote": "Az anekdotikus beszámolók szerint a felhasználók 3-5 hónapos tömegnövelő fázisokban futtatják a Nandrolone-t (NPP vagy Deca észterek) jelentős méretnövekedéssel. Közösségi beszámolók szerint a prolaktin-emelkedés gyakori, néha P5P vagy cabergolin hozzáadásával mérséklik. A Deca a hosszabban ható észter és inkább a vízvisszatartással hozható összefüggésbe, míg az NPP rövidebben hat és anekdotikusan kevesebb vízvisszatartást okoz, bár az egyéni változékonyság nagy. Néhány felhasználó enyhe depressziós tünetekről számol be az NPP 3. hónapjának környékén, amit a szakirodalom a neuroszteroid és progesztogén aktivitással hoz összefüggésbe. Alacsony dózisú NPP-t (körülbelül 140 mg/hét) időnként egész évben futtatnak ízületi támogatásra a krónikus ízületi problémákkal küzdő felhasználók. Összességében a Nandrolone-észterek továbbra is alapvető tömegciklus-vegyületek, a prolaktin és mentális egészségi mellékhatások a leggyakrabban emlegetett kompromisszumok."
 }

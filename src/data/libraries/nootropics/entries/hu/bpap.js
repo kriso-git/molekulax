@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Knoll-féle „CAE-mechanizmus\", preszinaptikus katekolaminerg és phenethylamin-erg neuronok elektromos akciópotenciálra adott válaszának fokozása, így minden idegimpulzus több neurotranszmittert szabadít fel. Nem indít alap-felszabadulást, tehát „aktivitás-függő\" hatás.",
   "legalStatus": "Sehol nem jóváhagyott gyógyszer. Akadémiai kutatási vegyület; nem szerepel a klasszikus „research chemical\" piacon sem szélesen.",
-  "chemicalFormula": "C16H23NO"
+  "chemicalFormula": "C16H23NO",
+  "anecdote": "Közösségi beszámolók gyakran a BPAP-ot részesítik előnyben a PPAP HCl-lel szemben, az élményt tisztábbnak írják le, mint agresszívnak. A bizonyítékok potenciális májterhelést jeleznek akár alacsony dózisoknál is, amit figyelembe kell venni hosszabb használat előtt. Magasabb koncentrációknál a BPAP monoamin újrafelvétel-gátlóként hat, de nem szabadít fel monoaminokat, mint az amfetaminok; potensebben működik DRI-ként és NRI-ként, mint SRI-ként. Neuroprotektív hatásokat és súlyos depressziós zavarra való hatékonyságot dokumentáltak. Alacsony dózisoknál aktív, a BPAP inkább természetes motiváció-fokozóként működik, nem stimulánsként. Az egyéni válasz nagyon változó, de közösségi beszámolók szilárd választásként pozicionálják az ösztönzés javítására megfelelő körülmények között."
 }

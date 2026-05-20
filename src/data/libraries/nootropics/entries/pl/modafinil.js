@@ -148,5 +148,6 @@ export default {
     "armodafinil",
     "flmodafinil",
     "phenylpiracetam"
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują Modafinil jako jeden z najbardziej funkcjonalnych wzmacniaczy poznawczych, użytkownicy zauważają, że energia bazowa wydaje się przedłużona na godziny bez wyraźnego szczytu lub spadku. Ponieważ moduluje oreksynę i histaminę, powszechne jest tłumienie apetytu i znaczne zmniejszenie potrzeby snu, dlatego zalecane jest dawkowanie wczesnoporanne tuż po przebudzeniu, biorąc pod uwagę okres półtrwania 12-15 godzin. Umiarkowane podwyższenia kortyzolu przyczyniają się do skupionego na zadaniu, obecnego stanu. Doniesienia społeczności zauważają, że tolerancja narasta wolniej niż przy tradycyjnych stymulantach, choć psychologiczne uzależnienie od wzmocnienia produktywności może się rozwinąć. Metabolizm wątrobowy zależny od CYP stwarza potencjalne interakcje lekowe. W porównaniu z Fladrafinilem, Modafinil wydaje się gładszy, krócej działający i mniej napięty. Niższe dawki mogą być skuteczne u osób wrażliwych."
 }

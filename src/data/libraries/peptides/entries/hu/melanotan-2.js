@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/8632702/",
       "finding": "Szignifikáns bőrpigmentáció-növekedés α-MSH analóggal egészséges önkénteseknél, minimális mellékhatások mellett."
     }
-  ]
+  ],
+  "anecdote": "A felhasználók jellemzően az első néhány adag során észreveszik a Melanotan-2 hatásait, különösen a barnulást és a libidóváltozásokat. A hányinger és a kipirulás gyakori mellékhatások, de a barnulás kialakulása lényegesen gyorsabb, mint a Melanotan-1 esetén. A vegyület összességében agresszívabb, de pigmentáció szempontjából lényegesen erősebb, és általában rövid ciklusokban használják.\n\nA Melanotan-2-t intranazálisan vagy szubkután injekcióval adják be, a Melanotan-1-hez hasonló adagolással. UV-expozícióra van szükség a működéséhez, ezért legjobb a barnulás előtt beadni. A protokollok néha telítési fázisokat alkalmaznak, amelyeket heti 1-2 alkalommal történő fenntartó adagolás követ."
 }

@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Irreverzibilis MAO-B inhibíció → emelt nigro-striatális dopamin- és PEA-szintek; ezenfelül leírtak antiapoptotikus és NGF-szerű neuroprotektív hatást a dopaminerg neuronokon.",
   "legalStatus": "FDA-jóváhagyott Parkinson + depresszió. EU-szerte vényköteles. Magyarországon szakorvosi vény szükséges; OTC nem.",
-  "chemicalFormula": "C13H17N"
+  "chemicalFormula": "C13H17N",
+  "anecdote": "A Selegiline elsősorban szelektív MAO-B gátlóként és részleges dopamin-megőrzőként jellemezhető, bár profilja árnyaltabb. Hajlamos emelni a feniletilamin szintjét, egy nyom-amin szintet, amely fokozott éberséggel, mentális energiával és újdonság-szembetűnőséggel társul, ami valószínűleg magyarázza a felhasználók által leírt nootropikum-szerű előnyöket. Neuroprotektív hatások jelentősek, részben fokozott antioxidáns enzim expresszión és mitokondriális rezilencián keresztül, ami egyes kutatókat arra késztet, hogy inkább az öregedéshez és kognitív hanyatláshoz illőnek tartsák, mintsem akut fokozáshoz. Mechanisztikusan a közösségi beszámolók szerint a Selegiline egyszerre tisztítja és erősíti a természetes dopamin tónust, egyedi profilt produkálva. Dopaminemelő stimulánsokkal való stack-elés nem ajánlott a MAO-B gátlás miatt, ami hosszú izgalmi időszakokat okozhat."
 }

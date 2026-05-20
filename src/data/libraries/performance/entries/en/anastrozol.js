@@ -13,18 +13,39 @@ export default {
   "shortDesc": "Triazole-class non-steroidal aromatase inhibitor (AI). FDA-approved (1995 AstraZeneca) for postmenopausal ER+ breast cancer. AAS-cycle E2-control golden-standard, 0.25-1 mg EOD-2x/week titrated by bloodwork.",
   "description": "Anastrozole (Arimidex) is a third-generation non-steroidal aromatase inhibitor (AI) of the triazole class developed by AstraZeneca (then Zeneca) and approved by the FDA in 1995 for adjuvant treatment of postmenopausal ER+ breast cancer. The ATAC trial (Buzdar 2002, PMID 12081816) demonstrated approximately 97% serum estradiol suppression at 1 mg/day through reversible competitive inhibition of the enzyme — anastrozole binds the heme group of CYP19 aromatase, blocking conversion of androgens to estrogens. In AAS context, it is the standard E2-control agent during testosterone-base cycles (Test/Tren/Mast/Dianabol): weekly dosing is bloodwork-titrated, with E2 trough target 20-30 pg/mL measured by LC-MS/MS sensitive assay (NOT ECL — ECL overestimates E2 at low levels, leading to falsely elevated readings, unnecessary anastrozole dosing, and crashed E2). Anastrozole is the AAS-PCT golden-standard among aromatase inhibitors: well documented, relatively easy to titrate, moderate lipid impact.",
   "keyInfo": [
-    {"label": "Mechanism", "value": "Reversible non-steroidal CYP19 aromatase inhibitor, ~97% serum E2 suppression at 1 mg/day"},
-    {"label": "Dosing (AAS)", "value": "0.25-1 mg EOD-2x/week titrated by bloodwork (E2 trough 20-30 pg/mL LC-MS/MS)"},
-    {"label": "Half-life", "value": "~50 hours (single daily dose, steady-state day 7)"},
-    {"label": "Onset", "value": "E2 reduction measurable 24-48 h, full effect 5-7 days"},
-    {"label": "Legal status", "value": "FDA + EMA Rx, HU + PL approved, WADA S4.1 banned"}
+    {
+      "label": "Mechanism",
+      "value": "Reversible non-steroidal CYP19 aromatase inhibitor, ~97% serum E2 suppression at 1 mg/day"
+    },
+    {
+      "label": "Dosing (AAS)",
+      "value": "0.25-1 mg EOD-2x/week titrated by bloodwork (E2 trough 20-30 pg/mL LC-MS/MS)"
+    },
+    {
+      "label": "Half-life",
+      "value": "~50 hours (single daily dose, steady-state day 7)"
+    },
+    {
+      "label": "Onset",
+      "value": "E2 reduction measurable 24-48 h, full effect 5-7 days"
+    },
+    {
+      "label": "Legal status",
+      "value": "FDA + EMA Rx, HU + PL approved, WADA S4.1 banned"
+    }
   ],
   "mechanism": "Anastrozole reversibly binds the heme iron in the active site of CYP19 aromatase, competitively blocking access of the natural substrates (androstenedione, testosterone). The strong iron-binding affinity of the non-steroidal triazole ring gives the compound an in vitro IC50 of ~15 nM (human placental aromatase submicrosomal preparation). Whole-body aromatization suppression is dose-dependent: 0.5 mg/day yields ~90% E2 suppression, 1 mg/day ~97%, higher doses (10 mg/day) provide no significant additional effect — plateau. Because binding is reversible, a missed dose allows serum E2 to return within 24-48 hours without rebound. Hepatic CYP3A4 + CYP1A2 oxidize the compound; major metabolites are inactive, ~85% renal excretion as glucuronide. NOT an AR agonist, NOT an ER agonist — a clean CYP19 inhibitor.",
   "legalStatus": "USA: FDA-approved 1995 (Arimidex 1 mg, AstraZeneca; generic anastrozole 1 mg 2010). Indication: postmenopausal ER+ breast cancer adjuvant and metastatic treatment. EU: EMA-approved. HU: registered (Arimidex, Anastrozol-ratiopharm, Anastrozol Sandoz Rx). PL: registered (Arimidex Rx). WADA: S4.1 aromatase inhibitor — banned in- and out-of-competition (forbidden for all male WADA athletes).",
   "onsetTime": "E2 reduction 24-48 h, full effect 5-7 days",
   "halfLife": "~50 hours",
   "halfLifeActive": "N/A (parent compound active, metabolites inactive)",
-  "interactionsWith": ["letrozol", "exemestane", "nolvadex", "testosterone-info", "trenbolone-info"],
+  "interactionsWith": [
+    "letrozol",
+    "exemestane",
+    "nolvadex",
+    "testosterone-info",
+    "trenbolone-info"
+  ],
   "aromatization": "Does not aromatize — competitive CYP19 aromatase inhibitor (IC50 ~15 nM in vitro, ~97% serum E2 suppression at 1 mg/day). Anastrozole itself is NOT a substrate of aromatase; it binds directly to the substrate-binding site.",
   "hepatotoxicity": "Low — non-steroidal, NOT 17α-alkylated. FDA Arimidex label: rare ALT/AST elevations (<2% incidence), clinically significant hepatotoxicity extremely rare. Long-term female adjuvant use (5+ years) shows no significant liver injury pattern (ATAC 10-year follow-up).",
   "wadaStatus": "banned",
@@ -49,10 +70,22 @@ export default {
     "Take with water, morning or evening, food indifferent (oral bioavailability ~85%)"
   ],
   "expectations": [
-    {"label": "Day 1-3", "body": "E2 reduction measurable on bloodwork (~30-50% reduction from baseline). Water retention relief noticeable, gyno-symptom tension eases."},
-    {"label": "Week 1-2", "body": "Steady-state plasma level, full E2 suppression (~97% target). Water retention minimized, definition improves. Lipid panel monitorable (mild HDL drop expected)."},
-    {"label": "Long-term use (3+ months)", "body": "Monitor BMD (bone mineral density) — chronic E2 deficit carries osteopenia risk. Lipid panel monitor, omega-3 + krill oil cardio-protection."},
-    {"label": "After cessation", "body": "E2 returns to baseline within 24-48 h (reversible binding). NO rebound expected. PCT phase may start after ester clearance."}
+    {
+      "label": "Day 1-3",
+      "body": "E2 reduction measurable on bloodwork (~30-50% reduction from baseline). Water retention relief noticeable, gyno-symptom tension eases."
+    },
+    {
+      "label": "Week 1-2",
+      "body": "Steady-state plasma level, full E2 suppression (~97% target). Water retention minimized, definition improves. Lipid panel monitorable (mild HDL drop expected)."
+    },
+    {
+      "label": "Long-term use (3+ months)",
+      "body": "Monitor BMD (bone mineral density) — chronic E2 deficit carries osteopenia risk. Lipid panel monitor, omega-3 + krill oil cardio-protection."
+    },
+    {
+      "label": "After cessation",
+      "body": "E2 returns to baseline within 24-48 h (reversible binding). NO rebound expected. PCT phase may start after ester clearance."
+    }
   ],
   "quality": {
     "pure": [
@@ -84,22 +117,67 @@ export default {
     "Alcohol: mild hepatic stress, moderate consumption OK"
   ],
   "studies": [
-    {"title": "Anastrozole alone or in combination with tamoxifen versus tamoxifen alone for adjuvant treatment of postmenopausal women with early breast cancer: first results of the ATAC randomised trial", "authors": "Buzdar A, Howell A, ATAC Trialists' Group.", "journal": "Lancet. 2002;359(9324):2131-2139.", "pmid": "12081816"},
-    {"title": "Influence of letrozole and anastrozole on total body aromatization and plasma estrogen levels in postmenopausal breast cancer patients evaluated in a randomized, cross-over study", "authors": "Geisler J, Haynes B, Anker G, et al.", "journal": "J Clin Oncol. 2002;20(3):751-757.", "pmid": "12351538"},
-    {"title": "Pharmacokinetics and dose finding of a potent aromatase inhibitor, aromasin (exemestane), in young males", "authors": "Mauras N, Lima J, Patel D, et al.", "journal": "J Clin Endocrinol Metab. 2003;88(12):5951-5956.", "pmid": "12759427"},
-    {"title": "Aromatase inhibitor mechanism: review", "authors": "Brueggemeier RW, Hackett JC, Diaz-Cruz ES.", "journal": "Endocr Rev. 2005;26(3):331-345.", "pmid": "15814851"}
+    {
+      "title": "Anastrozole alone or in combination with tamoxifen versus tamoxifen alone for adjuvant treatment of postmenopausal women with early breast cancer: first results of the ATAC randomised trial",
+      "authors": "Buzdar A, Howell A, ATAC Trialists' Group.",
+      "journal": "Lancet. 2002;359(9324):2131-2139.",
+      "pmid": "12081816"
+    },
+    {
+      "title": "Influence of letrozole and anastrozole on total body aromatization and plasma estrogen levels in postmenopausal breast cancer patients evaluated in a randomized, cross-over study",
+      "authors": "Geisler J, Haynes B, Anker G, et al.",
+      "journal": "J Clin Oncol. 2002;20(3):751-757.",
+      "pmid": "12351538"
+    },
+    {
+      "title": "Pharmacokinetics and dose finding of a potent aromatase inhibitor, aromasin (exemestane), in young males",
+      "authors": "Mauras N, Lima J, Patel D, et al.",
+      "journal": "J Clin Endocrinol Metab. 2003;88(12):5951-5956.",
+      "pmid": "12759427"
+    },
+    {
+      "title": "Aromatase inhibitor mechanism: review",
+      "authors": "Brueggemeier RW, Hackett JC, Diaz-Cruz ES.",
+      "journal": "Endocr Rev. 2005;26(3):331-345.",
+      "pmid": "15814851"
+    }
   ],
   "faq": [
-    {"q": "When should I start anastrozole in a cycle?", "a": "Never prophylactically at cycle start without baseline bloodwork and gyno symptoms. Correct protocol: test E2 at cycle week 3-4 by LC-MS/MS sensitive assay (NOT ECL — overestimate at low levels). If E2 >40 pg/mL AND gyno symptoms (tender nipples, lipid fluctuation, water retention) → start 0.25-0.5 mg E3D. If E2 <40 pg/mL and NO symptoms → don't start. The 'every Test cycle needs anastrozole' folk belief is realistic only on heavily aromatizing stacks (Dianabol+Test+Anadrol) — a clean TRT-dose Test-Enan 200 mg/week typically doesn't need AI."},
-    {"q": "Anastrozole vs. Aromasin (Exemestane) — when to choose which?", "a": "Anastrozole has REVERSIBLE binding, easy titration, E2 returns to baseline 24-48 h after stopping without rebound. Aromasin is a SUICIDE INHIBITOR (irreversible covalent binding), recovery requires de novo aromatase synthesis (5-7 days), but its 17-hydro-exemestane metabolite is MILDLY androgenic — SHBG drop and free-Test rise are bonuses. Default choice: anastrozole (titrability), Aromasin when SHBG emphasis matters or cycle-end taper stability is wanted (no rebound E2 spike on Aromasin)."},
-    {"q": "Crashed E2 signs and management?", "a": "Symptoms: joint pain (especially wrists + knees), libido crash, lethargy, sleep disturbance, lipid panel collapse (HDL drop), depressive mood. Measurement: serum E2 LC-MS/MS <15 pg/mL → crashed. Management: IMMEDIATELY pause anastrozole for 7-10 days, re-test E2; if back in 20-30 pg/mL range, restart at half dose (e.g., 0.125 mg instead of 0.25 mg = quartered tablet). Prevention: NEVER prophylactic-dose without baseline; always bloodwork-titrate."},
-    {"q": "Lipid panel deteriorates — what do I do?", "a": "HDL drop is expected on anastrozole (~10-20%), mild LDL rise. Cardio monitor: lipid panel pre-cycle + week 6 + post-cycle. Mitigations: omega-3 (EPA 2-3 g/day), krill oil (astaxanthin extra), CoQ10 (200 mg), berberine (LDL reducer), niacin (HDL raiser, niacinic acid). If LDL >190 mg/dL or HDL <30 mg/dL → statin (atorvastatin 20 mg) under specialist consultation. A longer taper protocol (1 mg → 0.5 mg → 0.25 mg) can soften the effect."},
-    {"q": "Tier 4 vs. tier 5? Why not tier 5 like Nolvadex?", "a": "Nolvadex (1977 FDA, ~50 years clinical history) and anastrozole (1995 FDA, ~30 years) sit at different maturity levels — Nolvadex has roughly double the clinical literature base. Anastrozole is the AAS-AI golden-standard (foundation of tier 4) but doesn't meet the stricter tier-5 criteria (5+ decades clinical history + zero-debate safety profile). Both compounds are first-line picks in their own category (SERM vs. AI), only the clinical-timeline distance assigns different tier."}
+    {
+      "q": "When should I start anastrozole in a cycle?",
+      "a": "Never prophylactically at cycle start without baseline bloodwork and gyno symptoms. Correct protocol: test E2 at cycle week 3-4 by LC-MS/MS sensitive assay (NOT ECL — overestimate at low levels). If E2 >40 pg/mL AND gyno symptoms (tender nipples, lipid fluctuation, water retention) → start 0.25-0.5 mg E3D. If E2 <40 pg/mL and NO symptoms → don't start. The 'every Test cycle needs anastrozole' folk belief is realistic only on heavily aromatizing stacks (Dianabol+Test+Anadrol) — a clean TRT-dose Test-Enan 200 mg/week typically doesn't need AI."
+    },
+    {
+      "q": "Anastrozole vs. Aromasin (Exemestane) — when to choose which?",
+      "a": "Anastrozole has REVERSIBLE binding, easy titration, E2 returns to baseline 24-48 h after stopping without rebound. Aromasin is a SUICIDE INHIBITOR (irreversible covalent binding), recovery requires de novo aromatase synthesis (5-7 days), but its 17-hydro-exemestane metabolite is MILDLY androgenic — SHBG drop and free-Test rise are bonuses. Default choice: anastrozole (titrability), Aromasin when SHBG emphasis matters or cycle-end taper stability is wanted (no rebound E2 spike on Aromasin)."
+    },
+    {
+      "q": "Crashed E2 signs and management?",
+      "a": "Symptoms: joint pain (especially wrists + knees), libido crash, lethargy, sleep disturbance, lipid panel collapse (HDL drop), depressive mood. Measurement: serum E2 LC-MS/MS <15 pg/mL → crashed. Management: IMMEDIATELY pause anastrozole for 7-10 days, re-test E2; if back in 20-30 pg/mL range, restart at half dose (e.g., 0.125 mg instead of 0.25 mg = quartered tablet). Prevention: NEVER prophylactic-dose without baseline; always bloodwork-titrate."
+    },
+    {
+      "q": "Lipid panel deteriorates — what do I do?",
+      "a": "HDL drop is expected on anastrozole (~10-20%), mild LDL rise. Cardio monitor: lipid panel pre-cycle + week 6 + post-cycle. Mitigations: omega-3 (EPA 2-3 g/day), krill oil (astaxanthin extra), CoQ10 (200 mg), berberine (LDL reducer), niacin (HDL raiser, niacinic acid). If LDL >190 mg/dL or HDL <30 mg/dL → statin (atorvastatin 20 mg) under specialist consultation. A longer taper protocol (1 mg → 0.5 mg → 0.25 mg) can soften the effect."
+    },
+    {
+      "q": "Tier 4 vs. tier 5? Why not tier 5 like Nolvadex?",
+      "a": "Nolvadex (1977 FDA, ~50 years clinical history) and anastrozole (1995 FDA, ~30 years) sit at different maturity levels — Nolvadex has roughly double the clinical literature base. Anastrozole is the AAS-AI golden-standard (foundation of tier 4) but doesn't meet the stricter tier-5 criteria (5+ decades clinical history + zero-debate safety profile). Both compounds are first-line picks in their own category (SERM vs. AI), only the clinical-timeline distance assigns different tier."
+    }
   ],
-  "related": ["letrozol", "exemestane", "nolvadex", "testosterone-info", "trenbolone-info"],
+  "related": [
+    "letrozol",
+    "exemestane",
+    "nolvadex",
+    "testosterone-info",
+    "trenbolone-info"
+  ],
   "doseCalc": {
     "type": "fixed",
-    "fixed": {"low": 0.25, "medium": 0.5, "high": 1},
+    "fixed": {
+      "low": 0.25,
+      "medium": 0.5,
+      "high": 1
+    },
     "unit": "mg / EOD-2x week (oral, bloodwork-titrated)",
     "note": "Standard AAS E2-control: 0.25-1 mg EOD-2x/week, E2 trough target 20-30 pg/mL by LC-MS/MS. Heavily aromatizing stack (Dianabol+Test+Anadrol): 1 mg EOD; moderate (Test-only): 0.25-0.5 mg E3D; low-aromatization (Tren-dominant, Var, Mast): often no AI needed. Never prophylactic without baseline bloodwork and gyno symptom."
   },
@@ -128,5 +206,6 @@ export default {
       "markers": "E2 LC-MS/MS monthly, lipid panel + DEXA scan annually (BMD monitor).",
       "purpose": "On TRT-cruise (Test 100-200 mg/week) low-dose anastrozole (0.125-0.25 mg/week) may be indicated for some users, but many TRT clinics avoid it — low-dose Test rarely needs AI. Long-term E2 suppression raises osteopenia risk, DEXA scan annually."
     }
-  }
+  },
+  "anecdote": "Anastrozol (Arimidex) does its intended job well as an aromatase inhibitor, but anecdotal reports consistently warn that it is easy to overdo and regret. Excess dosing can crash estrogen, leaving the user with low-E2 side effects (joint pain, mood collapse, libido loss, lipid issues) — outcomes that are decidedly worse than mildly elevated E2. It is not a compound to take blindly; dosing is guided by symptoms and ideally by bloodwork. Community accounts describe Arimidex as an excellent tool when E2 needs to be reliably and quickly lowered — used as-needed when high-E2 symptoms emerge and confirmed via labs. Arimidex is administered orally in small, controlled doses because of its high potency. Dosing is highly individual; too much can crash estrogen quickly. With a half-life around 2-3 days, twice-weekly administration is fairly common in community protocols."
 }

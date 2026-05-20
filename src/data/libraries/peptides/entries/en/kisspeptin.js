@@ -53,5 +53,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/24450286/",
       "finding": "Kisspeptin safely induces LH pulses in hypothalamic amenorrhoea."
     }
-  ]
+  ],
+  "anecdote": "Kisspeptin is one of the more interesting options in the post-cycle-therapy / natural-testosterone-boosting space. Most users notice increased libido and improved mood relatively quickly if their HPG axis responds well. However, in users suppressed by AAS, the response is often anecdotally weaker compared to stronger alternatives like HCG. Kisspeptin is being studied extensively for fertility because of its capacity to stimulate LH/FSH in a more physiological way than synthetic alternatives. Effects are subtle but useful when the use case is right.\n\nKisspeptin is best administered via subcutaneous injection due to its peptide nature. Dosing varies by analog (e.g. Kisspeptin-10) but is typically administered daily or a few times per week per protocol. Protocols remain evolving and often come down to user preference."
 }

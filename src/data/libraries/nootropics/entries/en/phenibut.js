@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "GABA-B receptor agonist (similar to Baclofen) + modulation of the α2δ-1 voltage-gated Ca²⁺ channel subunit (similar to Gabapentin) → presynaptic glutamate release reduction and anxiolytic effect.",
   "legalStatus": "Prescription medicine in Russia, Ukraine, Latvia. UK Class C controlled substance since 2024. Unregulated in other EU member states. Cannot be marketed as a medicine in Hungary without prescription.",
-  "chemicalFormula": "C10H13NO2"
+  "chemicalFormula": "C10H13NO2",
+  "anecdote": "Anecdotal reports describe Phenibut as producing a calming, social-loosening feeling with disinhibition and anxiolysis, often used by individuals dealing with GAD or PTSD to unwind. Onset is slow, typically reaching peak effect around 2 hours post-dose, and users commonly limit administration to no more than twice weekly. Community accounts compare the experience to alcohol or benzodiazepines in terms of anxiety reduction, though without a typical intoxication feel. Phenibut and Pregabalin are commonly cited as low-inhibition staples, with Pregabalin reported as the stronger alternative and Phenibut leaning more anxiolytic. Withdrawal is a documented risk and can be dangerous, so strict moderation in dosing schedule is essential before use."
 }

@@ -216,14 +216,33 @@ export default {
       "aromatization": "NEM — Trenbolone NEM CYP19-szubsztrát (19-nor + Δ9,11-konfiguráció blokk)",
       "hepatotoxicity": "Mérsékelt — NEM 17α-alkilált, de oxidatív renális-stressz mellékhatás magas",
       "quality": {
-        "pure": ["UGL Trenbolone Acetate 100 mg/ml olajos fiola (HPLC-tesztelt)", "Veterinary Finaplix-H pellet konverzió (történelmi UGL gyakorlat)"],
-        "caution": ["EOD vagy napi IM-injekció szükséges", "PIP gyakori (oranzsás-vörös olaj-formula)", "Tren-cough rapid-onset 30-60 mp posztiv injekció után"],
-        "avoid": ["Erős renális prediszpozíció", "Apaság-tervezés", "Első-AAS-ciklus (NEM kezdő-compound)"]
+        "pure": [
+          "UGL Trenbolone Acetate 100 mg/ml olajos fiola (HPLC-tesztelt)",
+          "Veterinary Finaplix-H pellet konverzió (történelmi UGL gyakorlat)"
+        ],
+        "caution": [
+          "EOD vagy napi IM-injekció szükséges",
+          "PIP gyakori (oranzsás-vörös olaj-formula)",
+          "Tren-cough rapid-onset 30-60 mp posztiv injekció után"
+        ],
+        "avoid": [
+          "Erős renális prediszpozíció",
+          "Apaság-tervezés",
+          "Első-AAS-ciklus (NEM kezdő-compound)"
+        ]
       },
-      "interactions": ["Cabergoline 0,25-0,5 mg E3D prolaktin-monitor KÖTELEZŐ", "Testosterone-base stack KÖTELEZŐ (Tren standalone ED-rizikó)", "PCT utolsó Ace-injekció +2-3 nap"],
+      "interactions": [
+        "Cabergoline 0,25-0,5 mg E3D prolaktin-monitor KÖTELEZŐ",
+        "Testosterone-base stack KÖTELEZŐ (Tren standalone ED-rizikó)",
+        "PCT utolsó Ace-injekció +2-3 nap"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
         "unit": "mg/EOD (IM, EOD vagy napi 1x)",
         "note": "50-100 mg EOD (heti 175-350 mg), max 8 hét. PCT utolsó injekció +2-3 nap. Tren-Ace 'klasszikus' bodybuilding-választás gyors on/off miatt."
       }
@@ -241,14 +260,31 @@ export default {
       "aromatization": "NEM — Trenbolone struktúra blokk",
       "hepatotoxicity": "Mérsékelt — azonos parent Trenbolone, NEM 17α-alkilált",
       "quality": {
-        "pure": ["UGL Trenbolone Enanthate 100-200 mg/ml olajos fiola (HPLC-tesztelt)"],
-        "caution": ["Heti 1-2x IM-injekció elegendő (steady-state 3-4 hét)", "PIP enyhébb mint Ace-n", "Tren-mellékhatások (kreatinin, prolaktin) ugyanazok mint Ace-n, csak lassabban kumulálódnak"],
-        "avoid": ["Rövid (4-6 hét) ciklus nem hatékony", "Egyéb Tren-kontraindikációk azonosak"]
+        "pure": [
+          "UGL Trenbolone Enanthate 100-200 mg/ml olajos fiola (HPLC-tesztelt)"
+        ],
+        "caution": [
+          "Heti 1-2x IM-injekció elegendő (steady-state 3-4 hét)",
+          "PIP enyhébb mint Ace-n",
+          "Tren-mellékhatások (kreatinin, prolaktin) ugyanazok mint Ace-n, csak lassabban kumulálódnak"
+        ],
+        "avoid": [
+          "Rövid (4-6 hét) ciklus nem hatékony",
+          "Egyéb Tren-kontraindikációk azonosak"
+        ]
       },
-      "interactions": ["Cabergoline E3D", "Testosterone-base KÖTELEZŐ", "PCT utolsó Enan-injekció +14-21 nap"],
+      "interactions": [
+        "Cabergoline E3D",
+        "Testosterone-base KÖTELEZŐ",
+        "PCT utolsó Enan-injekció +14-21 nap"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 200, "medium": 300, "high": 400},
+        "fixed": {
+          "low": 200,
+          "medium": 300,
+          "high": 400
+        },
         "unit": "mg/hét (IM, heti 1-2x osztva)",
         "note": "200-400 mg/hét, heti 1-2x. Minimum 8-10 hét ciklus. PCT utolsó injekció +14-21 nap. Lassabb on/off mint Ace, kevesebb injekció."
       }
@@ -266,18 +302,36 @@ export default {
       "aromatization": "NEM — Trenbolone struktúra blokk",
       "hepatotoxicity": "Mérsékelt — azonos parent Trenbolone",
       "quality": {
-        "pure": ["Negma Parabolan 76 mg/ml ampulla (HISTORIKUS Rx 1980-1997, ma rare-collectible)", "UGL Tren-Hex 100 mg/ml olajos fiola (HPLC-tesztelt)"],
-        "caution": ["Heti 1-2x IM-injekció (közepes felezés)", "PIP közepes-enyhe", "Klasszikus 'Parabolan' historikus-presztízs UGL-piacon"],
-        "avoid": ["Standard Tren-kontraindikációk azonosak (renális, kardiovaszkuláris, apaság)"]
+        "pure": [
+          "Negma Parabolan 76 mg/ml ampulla (HISTORIKUS Rx 1980-1997, ma rare-collectible)",
+          "UGL Tren-Hex 100 mg/ml olajos fiola (HPLC-tesztelt)"
+        ],
+        "caution": [
+          "Heti 1-2x IM-injekció (közepes felezés)",
+          "PIP közepes-enyhe",
+          "Klasszikus 'Parabolan' historikus-presztízs UGL-piacon"
+        ],
+        "avoid": [
+          "Standard Tren-kontraindikációk azonosak (renális, kardiovaszkuláris, apaság)"
+        ]
       },
-      "interactions": ["Cabergoline E3D", "Testosterone-base KÖTELEZŐ", "PCT utolsó Hex-injekció +21 nap"],
+      "interactions": [
+        "Cabergoline E3D",
+        "Testosterone-base KÖTELEZŐ",
+        "PCT utolsó Hex-injekció +21 nap"
+      ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 150, "medium": 225, "high": 300},
+        "fixed": {
+          "low": 150,
+          "medium": 225,
+          "high": 300
+        },
         "unit": "mg/hét (IM, heti 1-2x)",
         "note": "150-300 mg/hét, heti 1-2x. 8-10 hét ciklus. PCT utolsó injekció +21 nap. 'Parabolan' historikus presztízzsel — Negma Rx kvalitás-illúzió, modern UGL azonos kategoria mint Tren-Ace/Enan."
       }
     }
   ],
-  "defaultVariant": "ace"
+  "defaultVariant": "ace",
+  "anecdote": "A Trenbolone egy nagyon erős és összetett szteroid, nem ajánlott kezdőknek, még mikrodózisban sem. Két fő észter forog közkézen: Acetate (felezési idő ~2-4 nap) és Enanthate (felezési idő ~7-9 nap). A felhasználók a legtöbb AAS-nál 'érezhetőbb' vegyületnek írják le, mind fizikailag, mind mentálisan — őrült erőnövekedés, gyors rekompozíció (egyidejű zsírvesztés és izomgyarapodás) és kemény, száraz vizuális megjelenés. A tápanyag-partícionálás drámaian növekszik. A kompromisszumok súlyosak: a Tren jelentősen emeli a vérnyomást, lerombolja a HDL-t, miközben felpattintja az LDL-t, és emeli a hematokritot. Az alvászavar (éjszakai izzadás, súlyos álmatlanság) rendkívül gyakori, a CNS-stimuláló hatás és az emelkedett szimpatikus tónus okozza. A progesztogén aktivitásból eredő prolaktin-emelkedés libidó-ingadozást, ED-t, gyno-t, sőt laktációt is okozhat. A pajzsmirigy-érintettség (csökkent T3, megváltozott konverzió) és a kardiovaszkuláris terhelés oxidatív stresszen keresztül szintén dokumentált. Mentálisan a felhasználók fokozott agressziót, szorongást és ingerlékenységet írnak le. Rendkívül hatékony, de nagyon kockázatos — végezz saját kutatást."
 }

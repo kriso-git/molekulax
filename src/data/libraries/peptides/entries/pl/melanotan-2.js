@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/8632702/",
       "finding": "Znaczący wzrost pigmentacji skóry analogiem α-MSH u zdrowych ochotników, z minimalnymi działaniami niepożądanymi."
     }
-  ]
+  ],
+  "anecdote": "Użytkownicy zwykle zauważają efekty Melanotan-2 w ciągu pierwszych kilku dawek, zwłaszcza zmiany opalenizny i libido. Nudności i zaczerwienienie są częstymi skutkami ubocznymi, ale rozwój opalenizny jest znacznie szybszy niż w przypadku Melanotan-1. Związek jest ogólnie bardziej agresywny, ale znacznie silniejszy w zakresie pigmentacji i jest zwykle stosowany w krótkich cyklach.\n\nMelanotan-2 podaje się donosowo lub poprzez iniekcję podskórną, z dawkowaniem podobnym do Melanotan-1. Wymagana jest ekspozycja na promieniowanie UV, więc najlepiej podawać go przed opalaniem."
 }

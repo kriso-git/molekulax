@@ -65,5 +65,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/18347346/",
       "finding": "GH zwiększa beztłuszczową masę ciała, ale nie poprawia konsekwentnie wydolności u zdrowych dorosłych."
     }
-  ]
+  ],
+  "anecdote": "HGH to złożony peptyd o efektach bardziej skomplikowanych niż się powszechnie zakłada. Może zwiększać konwersję T4 do odwrotnego T3, obniżając aktywną produkcję tarczycy z czasem. Ma tendencję do podnoszenia glukozy na czczo i ostrego zmniejszania wrażliwości na insulinę przy wyższych dawkach. Zatrzymanie wody jest na początku bardzo powszechne. Drętwienie, mrowienie lub objawy zespołu cieśni nadgarstka wynikające z ucisku nerwów przez płyny są również zgłaszane. HGH znacznie podnosi IGF-1, który odpowiada za większość efektów anabolicznych. Stosowanie egzogenne tłumi produkcję endogennego GH.\n\nHGH jest prawie zawsze podawany podskórnie, zwykle codziennie ze względu na krótki okres półtrwania. Zalecane jest dawkowanie przed snem w stanie na czczo (2-4 godziny po ostatnim posiłku)."
 }

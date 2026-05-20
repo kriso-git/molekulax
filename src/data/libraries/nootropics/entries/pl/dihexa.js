@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Agonista receptora Hepatocyte Growth Factor (HGF) / c-Met, aktywacja c-Met w hipokampie wyzwala silną kaskadę synaptogenną; w modelach zwierzęcych szacowana potencja jest ~10⁷× wyższa niż BDNF na pewnych punktach końcowych.",
   "legalStatus": "Nigdzie nie zatwierdzona jako lek; sprzedawana tylko w kategoriach akademickich i „chemikaliów badawczych”, brak danych o bezpieczeństwie u ludzi.",
-  "chemicalFormula": "C26H41N5O5"
+  "chemicalFormula": "C26H41N5O5",
+  "anecdote": "Raporty anegdotyczne opisują Dihexę jako jeden z najpotężniejszych wzmacniaczy poznawczych w przestrzeni nootropowej, użytkownicy stosują dawki około 5-10 mg podczas intensywnej nauki lub okresów egzaminacyjnych. Związek rozpuszcza się w DMSO i może być podawany doustnie lub podjęzykowo; wchłanianie doustne jest wzmocnione przy przyjmowaniu z tłuszczami, takimi jak oliwa z oliwek lub olej MCT. Użytkownicy opisują doświadczenie jako sprawiające, że informacje łatwiej się utrwalają, a korzyści z retencji utrzymują się długoterminowo dla materiału studiowanego podczas użytkowania. Skuteczna praktyka i aktywne uczenie się są niezbędne do realizacji korzyści kodowania. Dodatkowe efekty neuroprotekcyjne mogą być istotne dla osób z deficytami poznawczymi. Dihexa jest bardzo aktywna w małych dawkach, ponieważ działa jako mimetyk sygnalizacji wzrostu, a nie bezpośrednio sygnalizuje, głównie poprzez aktywację szlaku HGF/c-Met."
 }

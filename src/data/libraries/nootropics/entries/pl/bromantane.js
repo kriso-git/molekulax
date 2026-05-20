@@ -147,5 +147,6 @@ export default {
     "selank",
     "semax",
     "noopept"
-  ]
+  ],
+  "anecdote": "Raporty anegdotyczne opisują, że początek działania Bromantanu jest łagodniejszy i mniej euforyczny niż typowego stymulanta, z bardziej tłowym profilem efektu, który utrudnia, ale nie wyklucza, przestymulowanie. Kluczową cechą jest poprawiona wydajność w warunkach stresu lub wyczerpania, bez efektu spadku z pożyczonej energii typowego dla stymulantów. Klasyfikacja aktoprotektora odróżnia go od standardowych stymulantów i bardziej odpowiada roli nootropowej. Doniesienia społeczności różnią się w kwestii efektu przeciwlękowego, niektórzy użytkownicy zgłaszają znaczne zmniejszenie lęku, podczas gdy inni uważają je za minimalne. Bromantan jest powszechnie zalecany jako niestymulująca alternatywa podczas protokołów 9-Me-BC. Często dostępny w postaci aerozolu donosowego; użytkownikom zaleca się rozpoczynanie od niskich dawek i ostrożne podejście do form donosowych w celu precyzyjnej kontroli dawkowania."
 }

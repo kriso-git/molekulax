@@ -93,5 +93,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "IR: 5-10 mg 2-3x/nap reggel-délben (NE adja 16 óra után, inszomnia-kockázat). Concerta OROS: napi egyszer reggel, 18-72 mg, max 72 mg/nap felnőttnél. Visszaélés-potenciál miatt szigorú Rx-monitoring. Gyermek-növekedés és vérnyomás évente."
-  }
+  },
+  "anecdote": "Anekdotikus beszámolók szerint a Metilfenidát egy tiszta, jól titrálható DAT/NET-gátló ADHD-ra, erős dopaminerg ébrenléti hatással, amely az elsővonalbeli stimulánsokhoz hasonlítható. Közösségi beszámolók szerint szubjektíven simább, fókuszáltabb profilú, mint sok off-label alternatíva, agresszív mentális nyomás nélkül. A perifériás stimuláns hatásokra érzékeny felhasználók gyakran jobb napközbeni stabilitást tapasztalnak nyújtott hatóanyag-leadású formulákon (Concerta, Ritalin LA). Az Rx-kontextus hangsúlyozza a Schedule II besorolást, a visszaélési potenciált, és a klinikus által felügyelt titrálás szükségességét. Az alvásarchitektúrára gyakorolt hatás enyhébbnek tűnik az amfetamin-osztályú stimulánsokénál, de a késő délutáni adagolás még mindig zavarhatja az elalvást."
 }

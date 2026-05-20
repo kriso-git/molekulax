@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "AMPA-receptor pozitív moduláció + cholinerg HACU-fokozás → glutamáterg LTP és acetilkolin-szintézis együttes facilitációja.",
   "legalStatus": "Olaszországban vényköteles. USA-ban nem FDA-jóváhagyott; OTC nootropikum-piacon „research chemical\" minősítéssel árusítják.",
-  "chemicalFormula": "C6H10N2O3"
+  "chemicalFormula": "C6H10N2O3",
+  "anecdote": "Anekdotikus beszámolók szerint az Oxiracetam körülbelül 1000 mg-os adagban szilárd kognitív fokozó, a felhasználók fókuszált koncentrációt jelentenek 1 g Alpha-GPC mellé adagolással a kolinszint fenntartására. Közösségi beszámolók szerint az Oxiracetam a racetam család egyik strukturáltabb tagja, javítja a fókuszt, verbális folyamatosságot és mentális szervezettséget. A felhasználók gyakran használják tanulási ülésekhez és memorizálás-igényes feladatokhoz mindennapi nootropikumként. A bizonyítékok arra utalnak, hogy konzisztens szedés mellett hatékonyan működik memóriafokozóként, így életképes választás hosszú távú nootropikum protokollokhoz. Más racetamokhoz képest inkább kognitív és fókusz-orientált, mintsem hangulatmoduláló, a profilt AMPA és kolinerg aktivitás támasztja alá."
 }

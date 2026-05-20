@@ -94,5 +94,6 @@ export default {
     ],
     "unit": "mg/nap",
     "note": "REGGEL bevenni (aktiváló profil, inszomnia mitigálására). MDD cél-dózis 20 mg/nap, OCD/bulimia 40-60 mg/nap. Ultra-hosszú felezési idő miatt steady-state 4-5 hét, és elhagyásnál ~5 hét auto-taper."
-  }
+  },
+  "anecdote": "Anekdotikus beszámolók szerint a Fluoxetin (Prozac) az egyik legjobban tolerálható, hosszan ható SSRI, könnyebb, energizálóbb szubjektív profillal a szedatív alternatívákhoz képest. Ultra-hosszú felezési ideje (4-6 nap az aktív metabolitokra) megbocsátó a kihagyott adagokkal szemben, ezért gyakori Rx-választás az idős, gyógyszerkihagyásra hajlamos pácienseknél. Gyakori korai kezelési kompromisszumok közé tartozik az aktiváció, álmatlanság, érzelmi tompultság és az SSRI-osztály szexuális mellékhatásai. Közösségi beszámolók szerint prokognitív tulajdonságokkal rendelkezik — preklinikai és klinikai jelentések hosszú távú memória, végrehajtó funkció, figyelem és impulzivitás javulását mutatják, erősebb hatással neurodegeneratív kontextusokban. Figyelem: a megvonási szindróma enyhébb, mint a rövidebb hatású SSRI-knél az önelvonó hatás miatt, de MAOi-val való kombináció szigorúan ellenjavallt (szerotoninszindróma kockázata)."
 }

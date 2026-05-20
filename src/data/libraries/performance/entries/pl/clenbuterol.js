@@ -191,5 +191,6 @@ export default {
     ],
     "unit": "mcg/nap",
     "note": "Tytracja dawki: +20 mcg/dzień co 2-3 dni. Maks. 120-140 mcg/dzień. Tauryna 3 g + magnez 2 g/dzień. Dziennik ciśnienia, EKG po 6 tygodniach."
-  }
+  },
+  "anecdote": "Klenbuterol ma notoryczną reputację z dobrego powodu — raporty anegdotyczne opisują go jako wysoce skuteczny w redukcji tkanki tłuszczowej, ale z istotnym obciążeniem działaniami niepożądanymi. Użytkownicy zazwyczaj zgłaszają wzrost energii, silną stymulację, podwyższoną częstość akcji serca i produkcję ciepła dość szybko po dawkowaniu. Tolerancja narasta szybko z powodu downregulacji receptorów beta, więc wielu użytkowników stopniowo zwiększa dawkę co kilka tygodni, choć zależy to od kontekstu. Zaburzenia elektrolitowe są częstym problemem, a odwodnienie jest powszechnie zgłaszane. Zaburzenia snu mogą również wystąpić z powodu nietypowo długiego okresu półtrwania, dlatego niektórzy użytkownicy preferują krótszy okres półtrwania Albuterolu jako alternatywę. Ogólnie doniesienia społeczności wskazują, że klenbuterol działa zgodnie z reklamą w redukcji tkanki tłuszczowej i ma swoje miejsce przy ostrożnym podawaniu, ale wymaga starannego zarządzania parametrami sercowo-naczyniowymi, elektrolitowymi i snu."
 }

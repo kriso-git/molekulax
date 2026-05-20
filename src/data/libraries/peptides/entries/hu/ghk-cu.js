@@ -89,5 +89,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/34334873/",
       "finding": "GHK-Cu topikálisan szignifikánsan csökkentette a hajhullást és növelte a hajsűrűséget a placebóhoz képest."
     }
-  ]
+  ],
+  "anecdote": "Anekdotikus beszámolók szerint a hosszú távú, napi 2,5 mg-os GHK-Cu adagolás körülbelül két héten belül észrevehető bőr- és hajminőség-javulást eredményez, a javulás pedig több mint egy éves használat alatt is fennmarad. A felhasználók gyakran számolnak be tartósan jobb bőrminőségről, bár a végleges gyógyító hatásokra vonatkozó állítások kontrollált környezeten kívül nehezen igazolhatók.\n\nA GHK-Cu az egyik megfizethetőbb peptid. Helyileg vagy szubkután injekció formájában adható be, a legtöbb felhasználó az injekciót részesíti előnyben a szisztémás előnyök miatt. Helyi alkalmazásnál a GHK-Cu port jellemzően hidratáló krémbe keverik; az adagolás a por mennyiségétől és minőségétől függ."
 }

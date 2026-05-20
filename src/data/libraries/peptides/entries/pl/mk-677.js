@@ -49,5 +49,6 @@ export default {
       "url": "https://pubmed.ncbi.nlm.nih.gov/19018024/",
       "finding": "2 lata MK-677 zwiększyły GH/IGF-1 i beztłuszczową masę ciała u starszych dorosłych."
     }
-  ]
+  ],
+  "anecdote": "Doniesienia społeczności wskazują, że MK-677 jest skuteczny, ale wiąże się ze znacznym głodem, zatrzymaniem wody i wzdęciami wynikającymi ze zwiększonej produkcji GH. Użytkownicy zazwyczaj zgłaszają lepszy sen, pełniejsze mięśnie, lepszą jakość skóry i włosów oraz zauważalne postępy na siłowni, wraz z utrzymującym się silnym głodem. Związek dostępny jest w postaci kapsułek lub płynów i podawany jest zwykle raz dziennie ze względu na długi okres półtrwania wynoszący około 24 godziny. Niektórzy użytkownicy wolą dawkowanie wieczorne ze względu na korzyści dla snu, podczas gdy inni przyjmują go wcześniej w ciągu dnia."
 }

@@ -140,7 +140,11 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 20, "medium": 30, "high": 50},
+        "fixed": {
+          "low": 20,
+          "medium": 30,
+          "high": 50
+        },
         "unit": "mg/day (oral, 2-3x split)",
         "note": "Max 6 weeks cycle. 20-50 mg/day, 2-3x split (5h half-life). TUDCA + NAC mandatory. PCT 4 weeks."
       }
@@ -182,11 +186,16 @@ export default {
       ],
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 100, "high": 150},
+        "fixed": {
+          "low": 50,
+          "medium": 100,
+          "high": 150
+        },
         "unit": "mg/week (IM, split 2-3x)",
         "note": "Max 8 weeks cycle. 50-150 mg/week, 2-3x split (short half-life despite depot). TUDCA recommended. PCT 4 weeks last injection +5-7 days."
       }
     }
   ],
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "Dianabol holds an almost legendary status in AAS lore. Users often report a very fast shift in fullness, leverage, recovery, and gym performance within surprisingly short timeframes. A hallmark feature is how 'anabolic' it feels — fairly obvious rather than subtle. Strength typically climbs rapidly alongside dramatic pump and volumization effects. Much of what is colloquially called 'water weight' is actually intramuscular glycogen and cell hydration, which is not equivalent to meaningless bloat and may itself contribute to anabolic signaling. Community accounts note Dianabol's disproportionate effect on training momentum — more productive sessions, faster recovery, and compounding growth from that alone. Appetite often increases too. Tradeoffs are significant: notable estrogen-related effects (gyno, water retention), blood pressure elevation, lipid disruption, and 17α-alkylated hepatic strain. Some accounts and emerging evidence suggest Dianabol metabolizes into an unusually potent estrogenic metabolite, which is worth keeping in mind when planning AI/SERM support."
 }
