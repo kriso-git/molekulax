@@ -115,6 +115,14 @@
  * @property {I18nString}    [anecdote]   Sean's curated notes-ból kihúzott tapasztalat-narratíva, átfogalmazva semleges
  *                                        "users report" tónusra. Null/missing → AnecdoteSection placeholder render.
  *                                        Per-lang body files post-Phase-12 flat-string-ként tárolják lang szerint.
+ *
+ * Post-roadmap 2026-05-20 — Peptide curation (optional):
+ * @property {Array<{id: string, role: string, typicalDose: string}>} [composition]
+ *   Multi-peptide stack composition. Each entry MUST reference another entry
+ *   in the same library (validator enforces). `role` and `typicalDose` are
+ *   post-Phase-12 flat-strings per lang. CompositionSection.jsx renders the
+ *   array as clickable component-cards. Null/missing → section not rendered.
+ *   See [[Composition_Field_New_Schema]].
  */
 
 /**
@@ -157,6 +165,9 @@
  * @property {I18nString} effectsSubtitle NEW Phase 4, section subtitle.
  * @property {LibraryLabels} [labels] NEW Phase 4, per-library UI string overrides; falls back to i18n.
  * @property {LibraryFeatureFlags} features Phase 10 — conditional render flags per library.
+ * @property {string[]} [deprecatedIds] Post-roadmap 2026-05-20 — Hard-removed entry
+ *   IDs. EntryDetailRoute renders RedirectFlash for deep-links to these IDs and
+ *   redirects to library top after 1.8s. See [[Deprecation_Redirect_Flash_Pattern]].
  */
 
 /**
