@@ -977,6 +977,10 @@ function resolveVariant(entry, variantId) {
  const peptide = {
  ...entry,
  ...variant,
+ // Variant `id` is the routeId-style segment (e.g. "oral", "inhaled"); it
+ // must NOT clobber the base entry id, otherwise VariantToggle builds a
+ // broken hash `#entry/<lib>/<routeId>/<routeId>` on route switch.
+ id: entry.id,
  body: { ...(entry.body || {}), ...(variant.body || {}) },
  quality: { ...(entry.quality || {}), ...(variant.quality || {}) },
  labTerminal: { ...(entry.labTerminal || {}), ...(variant.labTerminal || {}) },

@@ -27,11 +27,39 @@ export function EntryDetailSkeleton() {
   )
 }
 
+const ERROR_COPY = {
+  hu: {
+    notFoundTitle: 'Nincs ilyen entry',
+    connectionTitle: 'Kapcsolódási hiba',
+    notFoundBody: 'Ez az URL nem mutat létező adatra.',
+    connectionBody: 'Nem sikerült letölteni az adatot. Próbáld újra.',
+    retry: 'Újra',
+    back: 'Vissza a könyvtárhoz',
+  },
+  en: {
+    notFoundTitle: 'Entry not found',
+    connectionTitle: 'Connection error',
+    notFoundBody: 'This URL does not point to existing data.',
+    connectionBody: 'Could not load the data. Please try again.',
+    retry: 'Retry',
+    back: 'Back to library',
+  },
+  pl: {
+    notFoundTitle: 'Nie znaleziono wpisu',
+    connectionTitle: 'Błąd połączenia',
+    notFoundBody: 'Ten URL nie wskazuje istniejących danych.',
+    connectionBody: 'Nie udało się pobrać danych. Spróbuj ponownie.',
+    retry: 'Ponów',
+    back: 'Powrót do biblioteki',
+  },
+}
+
 export function EntryDetailError({ error, onRetry, onBack }) {
   const { library } = useLibrary()
-  const { t } = useLang()
+  const { lang } = useLang()
   const accent = library?.accent || '#00ff99'
   const isNotFound = error?.code === 'ENTRY_NOT_FOUND'
+  const copy = ERROR_COPY[lang] || ERROR_COPY.hu
   return (
     <div
       className="min-h-screen flex items-center justify-center"
@@ -40,14 +68,10 @@ export function EntryDetailError({ error, onRetry, onBack }) {
     >
       <div className="max-w-md text-center px-6">
         <h2 className="text-2xl font-bold mb-3">
-          {isNotFound
-            ? 'Nincs ilyen entry / Entry not found / Nie znaleziono'
-            : 'Kapcsolódási hiba / Connection error / Błąd połączenia'}
+          {isNotFound ? copy.notFoundTitle : copy.connectionTitle}
         </h2>
         <p className="opacity-70 mb-6 text-sm">
-          {isNotFound
-            ? 'Ez az URL nem mutat létező adatra.'
-            : 'Nem sikerült letölteni az adatot. Próbáld újra.'}
+          {isNotFound ? copy.notFoundBody : copy.connectionBody}
         </p>
         <div className="flex gap-3 justify-center">
           {!isNotFound && (
@@ -56,7 +80,7 @@ export function EntryDetailError({ error, onRetry, onBack }) {
               className="px-5 py-2 rounded-full border-2 font-semibold"
               style={{ borderColor: accent, color: accent }}
             >
-              {t('error.retry') || 'Újra / Retry'}
+              {copy.retry}
             </button>
           )}
           <button
@@ -64,7 +88,7 @@ export function EntryDetailError({ error, onRetry, onBack }) {
             className="px-5 py-2 rounded-full"
             style={{ background: 'var(--tint-medium)', color: 'var(--text-primary)' }}
           >
-            Vissza a könyvtárhoz
+            {copy.back}
           </button>
         </div>
       </div>
