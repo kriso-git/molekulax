@@ -192,19 +192,6 @@ export const LIBRARY_ENTRY_META = [
     "tier": 5
   },
   {
-    "id": "dihexa",
-    "name": "Dihexa",
-    "image": null,
-    "accentColor": "#f472b6",
-    "tagColor": "rgba(244,114,182,0.16)",
-    "shortDesc": {
-      "hu": "Nootróp hexapeptid-analóg: szinapszisképzés és kognitív funkció",
-      "en": "Nootropic hexapeptid analog: synaptogenesis & cognitive function",
-      "pl": "Nootropowy analog heksapeptydu: synaptogeneza i funkcja poznawcza"
-    },
-    "tier": 3
-  },
-  {
     "id": "semaglutide",
     "name": "Semaglutide",
     "image": null,
@@ -229,19 +216,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Agonista GLP-1, codzienna dawka"
     },
     "tier": 5
-  },
-  {
-    "id": "orforglipron",
-    "name": "Orforglipron",
-    "image": null,
-    "accentColor": "#7dd3fc",
-    "tagColor": "rgba(125,211,252,0.16)",
-    "shortDesc": {
-      "hu": "Orálisan ható non-peptid GLP-1 agonista (Eli Lilly)",
-      "en": "Orally active non-peptide GLP-1 agonist (Eli Lilly)",
-      "pl": "Doustny niepeptydowy agonista GLP-1 (Eli Lilly)"
-    },
-    "tier": 4
   },
   {
     "id": "ghrp-2",
@@ -800,8 +774,7 @@ export const TOP_ENTRY_IDS = [
   "tb-500",
   "hgh",
   "cjc-1295-ipamorelin",
-  "tesamorelin",
-  "dihexa"
+  "tesamorelin"
 ]
 
 export const peptidesLibrary = {

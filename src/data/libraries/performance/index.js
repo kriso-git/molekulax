@@ -597,6 +597,125 @@ export const LIBRARY_ENTRY_META = [
     "subCategory": "fat",
     "subSection": "mito",
     "formFactors": ["oral"]
+  },
+  {
+    "id": "nolvadex",
+    "name": "Nolvadex (Tamoxifen)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Tamoxifen-citrát, 1962 ICI szintézis, FDA-jóváhagyott (1977) ER+ emlőkarcinómára. Az AAS-PCT golden-standard SERM — pituiter ER-blokád → LH/FSH-disinhibíció → endogén testosterone-recovery.",
+      "en": "Tamoxifen citrate, ICI 1962 synthesis, FDA-approved (1977) for ER+ breast cancer. The AAS-PCT golden-standard SERM — pituitary ER blockade → LH/FSH disinhibition → endogenous testosterone recovery.",
+      "pl": "Cytrynian tamoksyfenu, synteza ICI 1962, zatwierdzony przez FDA (1977) dla ER+ raka piersi. Złoty standard PCT po AAS — blokada ER w przysadce → disinhibicja LH/FSH → odbudowa endogennego testosteronu."
+    },
+    "tier": 5,
+    "wadaStatus": "restricted",
+    "subCategory": "pct",
+    "subSection": "serm",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "clomid",
+    "name": "Clomid (Clomiphene Citrate)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Clomiphene-citrát, Merrell 1956 szintézis, FDA-jóváhagyott (1967) női infertilitásra (ovulációs disfunkció). Racém keverék (zuclo + enclomiphene) — utóbbi a PCT-aktív fél.",
+      "en": "Clomiphene citrate, Merrell 1956 synthesis, FDA-approved (1967) for female infertility (ovulatory dysfunction). Racemic mixture (zuclo + enclomiphene) — the latter is the PCT-active half.",
+      "pl": "Cytrynian klomifenu, synteza Merrell 1956, zatwierdzony przez FDA (1967) dla niepłodności kobiet (dysfunkcja owulacji). Mieszanina racemiczna (zuklo + enklomifen) — ten ostatni jest aktywną częścią PCT."
+    },
+    "tier": 5,
+    "wadaStatus": "restricted",
+    "subCategory": "pct",
+    "subSection": "serm",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "enclomiphene",
+    "name": "Enclomiphene (Androxal)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "A clomiphene tiszta trans-izomerje — Repros Therapeutics 2014-2016 Phase III hypogonadism trial-jelölt. Tisztább SERM-profil mint a Clomid (zuclomiphene-mentes), DE FDA-CRL 2016 → nem törzskönyvezett.",
+      "en": "Pure trans-isomer of clomiphene — Repros Therapeutics 2014-2016 Phase III hypogonadism candidate. Cleaner SERM profile than Clomid (zuclomiphene-free), BUT FDA CRL 2016 → not approved.",
+      "pl": "Czysty trans-izomer klomifenu — kandydat Repros Therapeutics z badania Phase III hipogonadyzmu 2014-2016. Czystszy profil SERM niż Clomid (bez zuklomifenu), ALE FDA CRL 2016 → nie zatwierdzony."
+    },
+    "tier": 3,
+    "wadaStatus": "restricted",
+    "subCategory": "pct",
+    "subSection": "serm",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "raloxifene",
+    "name": "Raloxifene (Evista)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Benzothiophene-SERM, FDA-jóváhagyott (1997 Lilly) postmenopauzális osteoporózisra + ER+ emlőkarcinóma chemoprevencióra. AAS-kontextusban niche használat: létező gynecomastia reverzálása erősebb mell-szelektivitással mint a Nolvadex.",
+      "en": "Benzothiophene SERM, FDA-approved (1997 Lilly) for postmenopausal osteoporosis + ER+ breast cancer chemoprevention. AAS-context niche use: existing gynecomastia reversal with stronger breast-selectivity vs Nolvadex.",
+      "pl": "SERM benzotiofenowy, zatwierdzony przez FDA (1997 Lilly) dla osteoporozy pomenopauzalnej + chemoprewencji ER+ raka piersi. Niszowe użycie w kontekście AAS: cofanie istniejącej ginekomastii z silniejszą selektywnością piersi vs Nolvadex."
+    },
+    "tier": 3,
+    "wadaStatus": "restricted",
+    "subCategory": "pct",
+    "subSection": "serm",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "hcg-perf",
+    "name": "HCG (Pregnyl / Novarel / Choragon)",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Humán Chorionic Gonadotropin — LH-strukturális analóg, Leydig-sejt LHCGR-receptor stimulus. AAS-PCT bridge a testikulár-atrófia ellen és HPTA-restart-hoz. (Cross-frame: a future peptid-libben `hcg-peptid` fertility-clinic-framing-gel jön.)",
+      "en": "Human Chorionic Gonadotropin — LH structural analog, Leydig-cell LHCGR receptor stimulus. AAS-PCT bridge against testicular atrophy and for HPTA restart. (Cross-frame: future peptid library will add `hcg-peptid` with fertility-clinic framing.)",
+      "pl": "Ludzka Gonadotropina Kosmówkowa — analog strukturalny LH, stymulator receptora LHCGR komórek Leydiga. Pomost PCT po AAS przeciwko atrofii jąder i restartowi HPTA. (Cross-frame: w przyszłej bibliotece peptydów dojdzie `hcg-peptid` z framingiem fertility-clinic.)"
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "gonad",
+    "formFactors": ["aq"]
+  },
+  {
+    "id": "hmg-perf",
+    "name": "HMG (Menopur / Pergonal)",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Humán Menopauzális Gonadotropin — vizeletből kinyert FSH + LH 75/75 IU keverék. AAS-PCT-ben: teljes HPG-tengely restart (Sertoli-FSH-támogatás is, NEM csak Leydig-LH mint a HCG). Pergonal kivonva 2005-ben, Menopur modern alternatíva.",
+      "en": "Human Menopausal Gonadotropin — urinary-extracted FSH + LH 75/75 IU mixture. In AAS-PCT: full HPG axis restart (Sertoli FSH support too, not just Leydig LH like HCG). Pergonal withdrawn 2005, Menopur modern alternative.",
+      "pl": "Ludzka Gonadotropina Menopauzalna — mieszanina FSH + LH 75/75 IU ekstrahowana z moczu. W PCT po AAS: pełny restart osi HPG (wsparcie FSH dla Sertoli, nie tylko LH dla Leydiga jak w HCG). Pergonal wycofany 2005, Menopur nowoczesna alternatywa."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "gonad",
+    "formFactors": ["aq"]
+  },
+  {
+    "id": "fsh-rec-perf",
+    "name": "FSH-rec (Gonal-F / Puregon)",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Rekombináns FSH (CHO-expresszált) — szelektív Sertoli-FSHR stimulus, NINCS LH-aktivitás. AAS-PCT niche: azoospermia-recovery + Sertoli-támogatás HCG-LH mellett. Drága (€300+/75 IU vial EU).",
+      "en": "Recombinant FSH (CHO-expressed) — selective Sertoli FSHR stimulus, NO LH activity. AAS-PCT niche: azoospermia recovery + Sertoli support alongside HCG LH. Expensive (€300+/75 IU vial EU).",
+      "pl": "Rekombinowany FSH (ekspresja CHO) — selektywna stymulacja Sertoli-FSHR, BRAK aktywności LH. Niszowe użycie w PCT po AAS: cofanie azoospermii + wsparcie Sertoli obok HCG-LH. Drogie (€300+/fiolka 75 IU UE)."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "gonad",
+    "formFactors": ["aq"]
   }
 ]
 

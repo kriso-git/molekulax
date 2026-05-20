@@ -408,6 +408,25 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Na receptę (Rx), nadzór dermatologa"
     },
     "atcCode": "D10AD01"
+  },
+  {
+    "id": "orforglipron",
+    "name": "Orforglipron (LY3502970)",
+    "image": "/pharmaceutical/blister-white-oval.png",
+    "accentColor": "#10b981",
+    "tagColor": "rgba(16,185,129,0.18)",
+    "shortDesc": {
+      "hu": "Eli Lilly napi egyszer szedhető, KIS MOLEKULÁJÚ ORÁLIS GLP-1 receptor agonista (LY3502970). Phase 3 obesity + T2DM trial-ok 2026-ban folyamatban, FDA-jóváhagyás várt 2026-2027.",
+      "en": "Eli Lilly once-daily, SMALL-MOLECULE ORAL GLP-1 receptor agonist (LY3502970). Phase 3 obesity + T2DM trials ongoing in 2026, FDA approval expected 2026-2027.",
+      "pl": "Doustny mało-cząsteczkowy agonista receptora GLP-1 Eli Lilly (LY3502970), raz dziennie. Fazy 3 obesity + T2DM w toku 2026, zatwierdzenie FDA spodziewane 2026-2027."
+    },
+    "tier": 4,
+    "prescriptionStatus": {
+      "hu": "Klinikai vizsgálati fázis (még NEM Rx)",
+      "en": "Clinical-trial phase (not yet Rx)",
+      "pl": "Faza badań klinicznych (jeszcze NIE Rx)"
+    },
+    "atcCode": "TBA"
   }
 ]
 
