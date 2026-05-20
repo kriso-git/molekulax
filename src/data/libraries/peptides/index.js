@@ -271,19 +271,6 @@ export const LIBRARY_ENTRY_META = [
     "tier": 3
   },
   {
-    "id": "mod-grf-1-29",
-    "name": "Mod GRF 1-29",
-    "image": null,
-    "accentColor": "#fb7185",
-    "tagColor": "rgba(251,113,133,0.16)",
-    "shortDesc": {
-      "hu": "Módosított GHRH(1-29), stabilabb, hosszabb hatás",
-      "en": "Modified GHRH(1-29), more stable, longer-acting",
-      "pl": "Modyfikowany GHRH(1-29), bardziej stabilny, dłuższe działanie"
-    },
-    "tier": 2
-  },
-  {
     "id": "igf-1-lr3",
     "name": "IGF-1 LR3",
     "image": null,
@@ -293,19 +280,6 @@ export const LIBRARY_ENTRY_META = [
       "hu": "Hosszú féléletidejű IGF-1 analóg, anabolikus jelzés",
       "en": "Long-half-life IGF-1 analog, anabolic signalling",
       "pl": "Analog IGF-1 o długim t½, sygnalizacja anaboliczna"
-    },
-    "tier": 2
-  },
-  {
-    "id": "mgf",
-    "name": "MGF (IGF-1 Ec)",
-    "image": null,
-    "accentColor": "#fcd34d",
-    "tagColor": "rgba(252,211,77,0.16)",
-    "shortDesc": {
-      "hu": "Mechanic Growth Factor, vázizom-regeneráció",
-      "en": "Mechano Growth Factor, skeletal muscle repair",
-      "pl": "Mechano-Growth Factor, regeneracja mięśni"
     },
     "tier": 2
   },
@@ -347,32 +321,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Mieszanka neuropeptydów, neuroprotekcja / regeneracja"
     },
     "tier": 4
-  },
-  {
-    "id": "p21",
-    "name": "P21",
-    "image": null,
-    "accentColor": "#a5b4fc",
-    "tagColor": "rgba(165,180,252,0.16)",
-    "shortDesc": {
-      "hu": "CNTF-mimetikum, neurogenezis serkentés",
-      "en": "CNTF mimetic, neurogenesis stimulator",
-      "pl": "Mimetyk CNTF, stymulator neurogenezy"
-    },
-    "tier": 2
-  },
-  {
-    "id": "fgl",
-    "name": "FGL (FG-Loop)",
-    "image": null,
-    "accentColor": "#818cf8",
-    "tagColor": "rgba(129,140,248,0.16)",
-    "shortDesc": {
-      "hu": "NCAM-derivált peptid, szinapszis plaszticitás",
-      "en": "NCAM-derived peptide, synaptic plasticity",
-      "pl": "Peptyd z NCAM, plastyczność synaptyczna"
-    },
-    "tier": 2
   },
   {
     "id": "melanotan-1",
@@ -423,32 +371,6 @@ export const LIBRARY_ENTRY_META = [
       "hu": "Antimikrobiális peptid, sebgyógyulás és immunitás",
       "en": "Antimicrobial peptide, wound healing & immunity",
       "pl": "Peptyd antymikrobowy, gojenie ran i odporność"
-    },
-    "tier": 2
-  },
-  {
-    "id": "larazotide",
-    "name": "Larazotide",
-    "image": null,
-    "accentColor": "#fde68a",
-    "tagColor": "rgba(253,230,138,0.16)",
-    "shortDesc": {
-      "hu": "Tight-junction szabályozó, coeliákia és bélpermeabilitás",
-      "en": "Tight-junction regulator, coeliac & gut permeability",
-      "pl": "Regulator połączeń ścisłych, celiakia i przepuszczalność jelit"
-    },
-    "tier": 3
-  },
-  {
-    "id": "pentadeca-arginate",
-    "name": "Pentadeca Arginate (PDA)",
-    "image": null,
-    "accentColor": "#fb923c",
-    "tagColor": "rgba(251,146,60,0.16)",
-    "shortDesc": {
-      "hu": "BPC-157 arginát-só származék, stabilabb regeneráció",
-      "en": "BPC-157 arginate salt derivative, more stable healing",
-      "pl": "Pochodna BPC-157 z argininą, bardziej stabilna regeneracja"
     },
     "tier": 2
   },
@@ -672,32 +594,6 @@ export const LIBRARY_ENTRY_META = [
       "pl": "Dwuagonista glukagonu/GLP-1, Boehringer/Zealand"
     },
     "tier": 4
-  },
-  {
-    "id": "pemvidutide",
-    "name": "Pemvidutide",
-    "image": null,
-    "accentColor": "#fde047",
-    "tagColor": "rgba(253,224,71,0.16)",
-    "shortDesc": {
-      "hu": "GLP-1/glukagon dual agonista, MASH és obesitás",
-      "en": "GLP-1/glucagon dual agonist, MASH and obesity",
-      "pl": "Dwuagonista GLP-1/glukagonu, MASH i otyłość"
-    },
-    "tier": 4
-  },
-  {
-    "id": "thymulin",
-    "name": "Thymulin",
-    "image": null,
-    "accentColor": "#86efac",
-    "tagColor": "rgba(134,239,172,0.16)",
-    "shortDesc": {
-      "hu": "Cink-függő thymus nonapeptid, T-sejt érés és immunhomeosztázis",
-      "en": "Zinc-dependent thymic nonapeptide, T-cell maturation & immune homeostasis",
-      "pl": "Cynko-zależny nonapeptyd grasiczy, dojrzewanie limfocytów T i homeostaza"
-    },
-    "tier": 2
   },
   {
     "id": "na-semax-amidate",
