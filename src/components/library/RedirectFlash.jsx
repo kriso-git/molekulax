@@ -21,7 +21,9 @@ export default function RedirectFlash({ deprecatedId }) {
         <p className="text-sm opacity-80 mb-4">
           {t('entry.deprecated.body')}
         </p>
-        <code className="text-xs opacity-50 block mb-6">{deprecatedId}</code>
+        <div className="text-xs opacity-50 mb-6">
+          {(t('entry.deprecated.idLabel') || 'Original ID: {id}').replace('{id}', deprecatedId)}
+        </div>
         <div className="flex justify-center">
           <div className="w-8 h-8 border-2 border-current border-t-transparent rounded-full animate-spin opacity-60" />
         </div>

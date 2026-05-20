@@ -244,6 +244,7 @@ export const UI_HU = {
   "entry.deprecated.eyebrow": "Elavult entry",
   "entry.deprecated.title": "Ez az entry már nem elérhető",
   "entry.deprecated.body": "Ezt a peptidet eltávolítottuk a könyvtárból. Visszairányítunk a peptid könyvtár tetejére…",
+  "entry.deprecated.idLabel": "Eredeti azonosító: {id}",
   "entry.composition.eyebrow": "Összetétel",
   "entry.composition.title": "Ez a stack az alábbi peptideket tartalmazza",
   "entry.composition.role": "Szerep"

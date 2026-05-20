@@ -244,6 +244,7 @@ export const UI_EN = {
   "entry.deprecated.eyebrow": "Deprecated entry",
   "entry.deprecated.title": "This entry is no longer available",
   "entry.deprecated.body": "We've removed this peptide from the library. Redirecting you to the peptide library top…",
+  "entry.deprecated.idLabel": "Original ID: {id}",
   "entry.composition.eyebrow": "Composition",
   "entry.composition.title": "This stack contains the following peptides",
   "entry.composition.role": "Role"

@@ -7,14 +7,12 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
+import { DEPRECATED_PEPTIDE_IDS } from '../src/data/libraries/peptides/deprecated.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const ROOT = join(__dirname, '..', 'src', 'data', 'libraries', 'peptides', 'entries')
 
-const DEPRECATED = [
-  'fgl', 'larazotide', 'mgf', 'mod-grf-1-29',
-  'p21', 'pemvidutide', 'pentadeca-arginate', 'thymulin',
-]
+const DEPRECATED = DEPRECATED_PEPTIDE_IDS
 
 const langs = ['hu', 'en', 'pl']
 let totalModified = 0

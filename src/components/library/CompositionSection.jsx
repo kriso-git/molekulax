@@ -43,6 +43,7 @@ export default function CompositionSection({ composition, accent }) {
               <button
                 key={item.id}
                 onClick={() => handleClick(item.id)}
+                aria-label={`${displayName} — ${item.role} (${item.typicalDose})`}
                 className="text-left p-4 rounded-xl transition-all hover:scale-[1.02]"
                 style={{
                   background: 'var(--tint-medium)',

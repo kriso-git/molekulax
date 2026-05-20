@@ -244,6 +244,7 @@ export const UI_PL = {
   "entry.deprecated.eyebrow": "Wpis nieaktualny",
   "entry.deprecated.title": "Ten wpis nie jest już dostępny",
   "entry.deprecated.body": "Usunęliśmy ten peptyd z biblioteki. Przekierowujemy do góry biblioteki peptydów…",
+  "entry.deprecated.idLabel": "Pierwotny identyfikator: {id}",
   "entry.composition.eyebrow": "Skład",
   "entry.composition.title": "Ten stack zawiera następujące peptydy",
   "entry.composition.role": "Rola"
