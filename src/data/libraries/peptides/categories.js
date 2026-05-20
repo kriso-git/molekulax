@@ -117,6 +117,13 @@ export const PEPTIDE_CATEGORIES = {
   'adamax':              ['cognitive'],
   'klow-protocol':       ['recovery', 'gi'],
   'lipo-c':              ['metabolic'],
+
+  // ── Post-roadmap 2026-05-20 — Peptide curation v0.23 ──────────────────
+  'hcg-peptid':          ['growth-factors', 'recovery', 'hpta-fertility'],
+  'hmg-peptid':          ['growth-factors', 'hpta-fertility'],
+  'fsh-rec-peptid':      ['growth-factors', 'hpta-fertility'],
+  'epo':                 ['metabolic', 'recovery', 'endurance'],
+  'glow':                ['anti-aging', 'recovery', 'immune'],
 }
 
 // Lookup helper — returns array of category IDs for a peptide.

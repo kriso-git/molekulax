@@ -596,6 +596,71 @@ export const LIBRARY_ENTRY_META = [
     "tier": 4
   },
   {
+    "id": "hcg-peptid",
+    "name": "HCG (fertilitás)",
+    "image": "/peptides/HCG.png",
+    "accentColor": "#fbbf24",
+    "tagColor": "rgba(251,191,36,0.16)",
+    "shortDesc": {
+      "hu": "LH-receptor agonist glycoprotein: fertilitás-induction és HPTA-recovery",
+      "en": "LH-receptor agonist glycoprotein: fertility induction and HPTA recovery",
+      "pl": "Agonista receptora LH glikoproteinowy: indukcja płodności i regeneracja HPTA"
+    },
+    "tier": 4
+  },
+  {
+    "id": "hmg-peptid",
+    "name": "HMG (fertilitás)",
+    "image": "/peptides/HMG.png",
+    "accentColor": "#fbbf24",
+    "tagColor": "rgba(251,191,36,0.16)",
+    "shortDesc": {
+      "hu": "Humán Menopauzális Gonadotropin: FSH+LH 1:1 spermatogenezis-induction",
+      "en": "Human Menopausal Gonadotropin: FSH+LH 1:1 spermatogenesis induction",
+      "pl": "Ludzka Gonadotropina Menopauzalna: indukcja spermatogenezy FSH+LH 1:1"
+    },
+    "tier": 4
+  },
+  {
+    "id": "fsh-rec-peptid",
+    "name": "rFSH (fertilitás)",
+    "image": "/peptides/rFSH.png",
+    "accentColor": "#fbbf24",
+    "tagColor": "rgba(251,191,36,0.16)",
+    "shortDesc": {
+      "hu": "Rekombináns FSH: szelektív Sertoli-sejt stimulus, spermatogenezis",
+      "en": "Recombinant FSH: selective Sertoli cell stimulation, spermatogenesis",
+      "pl": "Rekombinowany FSH: selektywna stymulacja komórek Sertolego, spermatogeneza"
+    },
+    "tier": 4
+  },
+  {
+    "id": "epo",
+    "name": "EPO",
+    "image": "/peptides/EPO.png",
+    "accentColor": "#f87171",
+    "tagColor": "rgba(248,113,113,0.16)",
+    "shortDesc": {
+      "hu": "Eritropoietin: EPO-receptor agonist, RBC-tömeg + oxigénszállítás",
+      "en": "Erythropoietin: EPO-receptor agonist, RBC mass + oxygen transport",
+      "pl": "Erytropoetyna: agonista receptora EPO, masa RBC + transport tlenu"
+    },
+    "tier": 4
+  },
+  {
+    "id": "glow",
+    "name": "GLOW",
+    "image": "/peptides/GLOW.png",
+    "accentColor": "#a78bfa",
+    "tagColor": "rgba(167,139,250,0.18)",
+    "shortDesc": {
+      "hu": "Multi-peptid stack: GHK-Cu + BPC-157 + TB-500 bőr- és szövetregenerációra",
+      "en": "Multi-peptide stack: GHK-Cu + BPC-157 + TB-500 for skin and tissue regeneration",
+      "pl": "Stack wielopeptydowy: GHK-Cu + BPC-157 + TB-500 dla regeneracji skóry i tkanek"
+    },
+    "tier": 3
+  },
+  {
     "id": "na-semax-amidate",
     "name": "NA Semax Amidate",
     "image": null,
