@@ -10,7 +10,7 @@ import { useState, useEffect, useLayoutEffect, useRef, useMemo } from 'react'
 import {
  X, ShieldCheck, ShieldAlert, Atom, Sparkles, Flame, Sprout, Brain,
  Shield, Moon, Heart, Leaf, Activity, Beaker, Rocket, FlaskConical,
- ArrowLeft, ArrowUpRight, ChevronRight, Calculator, ExternalLink, Zap, Plus, Minus,
+ ArrowLeft, ArrowUpRight, ChevronRight, Calculator, ExternalLink, Plus, Minus,
  Check, AlertTriangle, XCircle, ChevronDown, Layers, Link as LinkIcon,
  CircleDot, Droplets, ClipboardList, TimerReset, Network, HelpCircle,
  Clock, BookOpen, Syringe, Pill, CalendarClock, CheckCircle2, Ban,
@@ -1313,9 +1313,11 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
  <h1
  ref={nameRef}
- className="font-black tracking-tight leading-[1.1] pb-2 text-5xl sm:text-6xl lg:text-7xl mb-3"
+ className="font-black tracking-tight leading-[1.05] pb-2 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl mb-3 break-words"
  style={{
- whiteSpace: 'nowrap',
+ wordBreak: 'break-word',
+ overflowWrap: 'anywhere',
+ hyphens: 'auto',
  background: isLight
  ? `linear-gradient(135deg, #0f172a 0%, ${accent} 55%, ${tierColor} 100%)`
  : `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
@@ -1412,9 +1414,6 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
  </section>
 
- {/* ─── ANEKDOTA: collapsible community-experience narrative, early position ─── */}
- <AnecdoteSection peptide={peptide} accent={accent} />
-
  {/* ─── BENTO GRID: key facts + benefits + mechanism ─── */}
  <section className="relative px-6 sm:px-10 pb-10">
  {/* Top row: whatIs (left) + keyFacts (right, fills column height) */}
@@ -1501,6 +1500,9 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  })()}
  </section>
 
+ {/* ─── ANEKDOTA: collapsible community-experience narrative, under "What is X?" ─── */}
+ <AnecdoteSection peptide={peptide} accent={accent} />
+
  {/* ─── QUICK START: constellation ─── */}
  {peptide.quickStart?.length > 0 && (
  <section className="relative px-6 sm:px-10 pb-10">
@@ -1516,35 +1518,6 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  }}
  >
  <Constellation steps={peptide.quickStart} accent={accent} tr={tr} />
- </div>
- </section>
- )}
-
- {/* ─── MECHANISM ─── */}
- {peptide.mechanism?.summary && (
- <section className="relative px-6 sm:px-10 pb-10">
- <Eyebrow icon={Zap} label={t('entry.sec.mechanism.eyebrow') || 'Hatásmechanizmus'} accent={accent} />
- <div
- className="relative p-6 rounded-2xl overflow-hidden"
- style={{
- background: 'var(--tint-soft)',
- border: '1px solid var(--tint-soft-border)',
- }}
- >
- {/* Decorative animated grid */}
- <div
- className="absolute inset-0 opacity-30 pointer-events-none"
- style={{
- backgroundImage:
- `linear-gradient(${accent}11 1px, transparent 1px), linear-gradient(90deg, ${accent}11 1px, transparent 1px)`,
- backgroundSize: '24px 24px',
- maskImage: 'radial-gradient(ellipse at center, black, transparent 70%)',
- WebkitMaskImage: 'radial-gradient(ellipse at center, black, transparent 70%)',
- }}
- />
- <p className="relative text-[14px] leading-relaxed max-w-3xl" style={{ color: 'var(--text-secondary)' }}>
- {tr(peptide.mechanism.summary)}
- </p>
  </div>
  </section>
  )}
