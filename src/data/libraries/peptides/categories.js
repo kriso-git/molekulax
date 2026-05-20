@@ -48,6 +48,16 @@ export const CATEGORIES = [
     accent: '#fdba74',
     label: { hu: 'Emésztés / GI', en: 'Gut / GI', pl: 'Trawienie / GI' },
   },
+  {
+    id: 'hpta-fertility',
+    accent: '#fbbf24',
+    label: { hu: 'Termékenység / HPTA-támogatás', en: 'Fertility / HPTA Support', pl: 'Płodność / wsparcie HPTA' },
+  },
+  {
+    id: 'endurance',
+    accent: '#f87171',
+    label: { hu: 'Állóképesség / Oxigéntranszport', en: 'Endurance / Oxygen Transport', pl: 'Wytrzymałość / transport tlenu' },
+  },
 ]
 
 // Map peptide ID → list of category IDs (multi-tag).
