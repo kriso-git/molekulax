@@ -1,10 +1,8 @@
-// AffiliateButton — PCTZONE affiliate coupon pill placed at the top-left of
-// the page (NOT pinned to the viewport). Sits inside .page-root via
-// position:absolute so it scrolls away with the Hero — the user wanted it
-// "just placed nicely at the top under the moving label", not following the
-// scroll. Uses the site's indigo/purple UI palette (#818cf8 / #6366f1),
-// matching ThemeSwitcher + LanguageSwitcher + Hero's pulsing dot. Chemical
-// green is reserved for actual chemistry content (molecule placeholders).
+// AffiliateButton — PCTZONE affiliate coupon pill pinned to the top-left of
+// the viewport. Stays visible while the user scrolls (position:fixed). Uses
+// the site's indigo/purple UI palette (#818cf8 / #6366f1), matching
+// ThemeSwitcher + LanguageSwitcher + Hero's pulsing dot. Chemical green is
+// reserved for actual chemistry content (molecule placeholders).
 
 import { Tag } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
@@ -30,7 +28,7 @@ export default function AffiliateButton() {
       aria-label={`${copy.title} — ${copy.sub}`}
       className="hidden md:inline-flex group items-center gap-2.5 pl-2.5 pr-3.5 py-2 rounded-full backdrop-blur-md transition-all duration-200 hover:-translate-y-px hover:shadow-[0_8px_24px_-8px_rgba(129,140,248,0.45)]"
       style={{
-        position: 'absolute',
+        position: 'fixed',
         top: 60,
         left: 12,
         zIndex: 30,
