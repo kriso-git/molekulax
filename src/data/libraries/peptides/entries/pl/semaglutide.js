@@ -54,6 +54,6 @@ export default {
       "finding": "Semaglutyd 2,4 mg/tydz. przez 68 tygodni dał średnio 14,9% redukcji masy względem placebo."
     }
   ],
-  "related": ["semaglutide-perf"],
+  "related": ["semaglutide-perf", "tirzepatide", "liraglutide", "retatrutide"],
   "anecdote": "Wśród trzech głównych agonistów GLP-1, Semaglutyd jest anegdotycznie najsilniejszy w czystym tłumieniu apetytu, a użytkownicy zgłaszają szczytową supresję 2-3 dni po dawce. Powszechnie odnotowuje się zmniejszony głód i zwiększoną sytość nawet od wody. Niektórzy użytkownicy preferują Tyrzepatyd ze względu na redukcję głodu mediowaną przez GIP, ale Semaglutyd pozostaje solidnym podstawowym GLP-1.\n\nGLP-1 są zwykle podawane raz w tygodniu ze względu na okres półtrwania około 7 dni. Dawkowanie kliniczne sięga do 2,4 mg, a większość użytkowników osiada na dawce podtrzymującej po osiągnięciu wagi docelowej. Niższe dawki wystarczają do kontroli apetytu, wyższe celują w agresywniejszą utratę masy ciała."
 }

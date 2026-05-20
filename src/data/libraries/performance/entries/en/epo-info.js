@@ -71,6 +71,8 @@ export default {
     }
   ],
   "related": [
+    "epo",
+    "hgh-info",
     "testosterone-info"
   ],
   "doseCalc": {

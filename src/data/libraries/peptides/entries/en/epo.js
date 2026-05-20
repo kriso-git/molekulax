@@ -171,6 +171,7 @@ export default {
     }
   ],
   "related": [
+    "epo-info",
     "hgh",
     "igf-1-lr3",
     "tesamorelin",
