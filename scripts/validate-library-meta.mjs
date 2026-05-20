@@ -12,6 +12,11 @@ const repoRoot = resolve(__dirname, '..')
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 
 let errors = 0
+// Post-roadmap 2026-05-20 — accumulate per-lib meta to enable cross-lib
+// related[] dangling-id warnings + composition[] same-lib id checks
+// after the main per-lib loop completes.
+const allLibraryMeta = {}
+const allLibraryExport = {}
 
 for (const libId of LIBRARIES) {
   const libDir = resolve(repoRoot, 'src/data/libraries', libId)
@@ -301,7 +306,66 @@ for (const libId of LIBRARIES) {
     }
   }
 
+  allLibraryMeta[libId] = meta
+  allLibraryExport[libId] = libExport
+
   console.log(`✅ ${libId}: ${meta.length} entries validated`)
+}
+
+// Post-roadmap 2026-05-20 — Cross-library related[] dangling warning +
+// composition[] same-library id existence check (hard-fail).
+let warnings = 0
+const allKnownIds = new Set()
+for (const [libId, meta] of Object.entries(allLibraryMeta)) {
+  for (const m of meta) allKnownIds.add(`${libId}:${m.id}`)
+}
+// Build cross-lib lookup: any-lib id → true
+const anyLibIds = new Set()
+for (const [libId, meta] of Object.entries(allLibraryMeta)) {
+  for (const m of meta) anyLibIds.add(m.id)
+}
+
+for (const libId of LIBRARIES) {
+  const entriesDir = resolve(repoRoot, 'src/data/libraries', libId, 'entries')
+  const perLang = existsSync(resolve(entriesDir, 'hu'))
+  if (!perLang) continue
+  const sameLibIds = new Set(allLibraryMeta[libId].map(m => m.id))
+
+  for (const m of allLibraryMeta[libId]) {
+    // Load HU body (representative — related[] + composition[] are entry-level fields)
+    const entryPath = resolve(entriesDir, 'hu', `${m.id}.js`)
+    if (!existsSync(entryPath)) continue
+    const entryMod = await import(`file://${entryPath.replace(/\\/g, '/')}`)
+    const entry = entryMod.default
+
+    // Rule 1: dangling related-id warning (cross-library lookups allowed)
+    if (Array.isArray(entry?.related)) {
+      for (const refId of entry.related) {
+        if (!anyLibIds.has(refId)) {
+          console.warn(`⚠️  ${libId}/${m.id} related[] references missing ID: ${refId}`)
+          warnings++
+        }
+      }
+    }
+
+    // Rule 2: composition[] same-library existence check (hard-fail)
+    if (Array.isArray(entry?.composition)) {
+      for (const item of entry.composition) {
+        if (!item?.id) {
+          console.error(`❌ ${libId}/${m.id} composition[] item missing 'id' field`)
+          errors++
+          continue
+        }
+        if (!sameLibIds.has(item.id)) {
+          console.error(`❌ ${libId}/${m.id} composition[] references missing same-library ID: ${item.id}`)
+          errors++
+        }
+      }
+    }
+  }
+}
+if (warnings > 0) {
+  console.log(`\n⚠️  ${warnings} cross-library related[] warning(s) (non-fatal).`)
 }
 
 if (errors > 0) {
