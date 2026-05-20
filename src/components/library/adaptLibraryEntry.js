@@ -1058,6 +1058,11 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  //     also supported via the `flat()` helper at render time in AnecdoteSection.
  //     Null/missing → placeholder render. See [[feedback_adapter_passthrough]].
  anecdote: peptide.anecdote || null,
+ // ─── Post-roadmap 2026-05-20 passthrough: Composition[] multi-peptide stack.
+ //     Array of {id, role, typicalDose}; null when entry is not a stack.
+ //     CompositionSection.jsx renders component-cards with deep-link clicks.
+ //     See [[feedback_adapter_passthrough]].
+ composition: peptide.composition || null,
  // ─── Phase 6 passthrough: pharmaceutical raw fields, nested under `pharma` to
  //     avoid clashing with the adapter-derived peptide `indications` rich shape.
  //     EntryDetail reads via `peptide.pharma?.atcCode` etc. when library.id === 'pharmaceutical'.
