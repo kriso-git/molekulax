@@ -136,18 +136,19 @@ export const LIBRARY_ENTRY_META = [
     "id": "albuterol",
     "name": "Albuterol",
     "image": "/performance/tablet-pile-white.png",
-    "accentColor": "#06b6d4",
-    "tagColor": "rgba(6,182,212,0.18)",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
     "shortDesc": {
-      "hu": "FDA-approved szelektív β2-agonist asztma-Rx (Ventolin). Rövidebb felezésű, biztonságosabb Clenbuterol-alternatíva.",
-      "en": "FDA-approved selective β2-agonist asthma Rx (Ventolin). Shorter half-life, safer Clenbuterol alternative.",
-      "pl": "Selektywny agonista β2 dla astmy zatwierdzony przez FDA (Ventolin). Krótszy okres półtrwania, bezpieczniejsza alternatywa."
+      "hu": "FDA-approved szelektív β2-agonist asztma-Rx (Ventolin). Rövidebb felezésű, biztonságosabb Clenbuterol-alternatíva. Multi-variant: oral tabletta + MDI inhaláló (Sub-Task 6 retrofit).",
+      "en": "FDA-approved selective β2-agonist asthma Rx (Ventolin). Shorter half-life, safer Clenbuterol alternative. Multi-variant: oral tablet + MDI inhaler (Sub-Task 6 retrofit).",
+      "pl": "Selektywny agonista β2 dla astmy zatwierdzony przez FDA (Ventolin). Krótszy okres półtrwania, bezpieczniejsza alternatywa. Multi-variant: tabletka doustna + inhalator MDI (Sub-Task 6 retrofit)."
     },
     "tier": 5,
     "wadaStatus": "monitored",
+    "variantCount": 2,
     "subCategory": "fat",
     "subSection": "beta",
-    "formFactors": ["oral", "aq"]
+    "formFactors": ["oral", "inhaled"]
   },
   {
     "id": "winstrol-info",
@@ -937,6 +938,245 @@ export const LIBRARY_ENTRY_META = [
     "subCategory": "pct",
     "subSection": "axis",
     "formFactors": ["oral"]
+  },
+  {
+    "id": "mirabegron",
+    "name": "Mirabegron (Myrbetriq)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Mirabegron-citrát, Astellas 2012 FDA-jóváhagyott szelektív β3-agonist OAB-Rx. BAT-szövet aktivációval thermogenic off-label fat-loss use (Cypess 2015 PMID 25437872).",
+      "en": "Mirabegron citrate, Astellas 2012 FDA-approved selective β3-agonist for OAB. BAT-tissue activation enables thermogenic off-label fat-loss use (Cypess 2015 PMID 25437872).",
+      "pl": "Cytrynian mirabegronu, zatwierdzony przez FDA 2012 selektywny agonista β3 firmy Astellas dla OAB. Aktywacja BAT umożliwia termogeniczne off-label użycie do utraty tłuszczu (Cypess 2015 PMID 25437872)."
+    },
+    "tier": 4,
+    "wadaStatus": "restricted",
+    "subCategory": "fat",
+    "subSection": "beta",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "liothyronine",
+    "name": "Liothyronine (T3, Cytomel)",
+    "image": "/pharmaceutical/blister-white-round.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Szintetikus T3 (3,5,3'-triiodothyronine), Pfizer 1956 FDA-jóváhagyott hypothyroidism Rx (Cytomel). Cutting-cycle off-label thermogenic +10-30% REE; WADA in-competition banned non-Rx athletán.",
+      "en": "Synthetic T3 (3,5,3'-triiodothyronine), Pfizer 1956 FDA-approved hypothyroidism Rx (Cytomel). Cutting-cycle off-label thermogenic +10-30% REE; WADA in-competition banned for non-Rx athletes.",
+      "pl": "Syntetyczny T3 (3,5,3'-trijodotyronina), Pfizer 1956 zatwierdzony przez FDA Rx hipotyreozy (Cytomel). Off-label użycie cutting-cycle termogeniczne +10-30% REE; zakaz WADA w trakcie zawodów dla sportowców bez Rx."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "thyroid",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "levothyroxine",
+    "name": "Levothyroxine (T4, Synthroid)",
+    "image": "/pharmaceutical/blister-white-round.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Szintetikus T4 (3,5,3',5'-tetraiodothyronine), Knoll/AbbVie 1955 FDA-jóváhagyott hypothyroidism Rx gold-standard (Synthroid). Prohormon — hepatikus + renalis 5'-deiodinase (D1/D2) konvertálja aktív T3-má. Cutting-cycle off-label use kevésbé jellemző mint T3.",
+      "en": "Synthetic T4 (3,5,3',5'-tetraiodothyronine), Knoll/AbbVie 1955 FDA-approved hypothyroidism Rx gold standard (Synthroid). A prohormone — hepatic and renal 5'-deiodinase (D1/D2) convert it to active T3. Off-label cutting-cycle use is less common than T3.",
+      "pl": "Syntetyczna T4 (3,5,3',5'-tetrajodotyronina), Knoll/AbbVie 1955, zatwierdzona przez FDA gold-standard Rx na niedoczynność tarczycy (Synthroid). Prohormon — wątrobowa i nerkowa 5'-dejodynaza (D1/D2) konwertuje ją do aktywnej T3. Off-label w cyklach cutting używana rzadziej niż T3."
+    },
+    "tier": 4,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "thyroid",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "eca-stack",
+    "name": "ECA-stack (Ephedrine + Caffeine + Aspirin)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Ephedrine 25 mg + Caffeine 200 mg + Aspirin 81 mg klasszikus 1990-es évek thermogenic-stack. Astrup 1992 Lancet (PMID 1346830) ~3x potensebb mint ephedrine önállóan; FDA 2004 ephedra-ban óta EU Rx-only.",
+      "en": "Ephedrine 25 mg + Caffeine 200 mg + Aspirin 81 mg classic 1990s thermogenic-stack. Astrup 1992 Lancet (PMID 1346830) reports ~3x more potent than ephedrine alone; since the FDA 2004 ephedra ban, ephedrine is Rx-only in the EU.",
+      "pl": "Ephedryna 25 mg + Kofeina 200 mg + Aspiryna 81 mg — klasyczny stack termogeniczny lat 90. Według Astrup 1992 Lancet (PMID 1346830) ~3x bardziej potencjalny niż sama ephedryna; od bana FDA 2004 ephedrine jest w UE na Rx."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "stim",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "super-shred",
+    "name": "Super-Shred (multi-stim blend)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Generic proprietary multi-stim blend archetípus: ECA-rokon + yohimbine HCl + synephrine + 1,3-DMAA-tipikus. Cohen 2014 JAMA (PMID 25406303) label-claim discrepancy warning; FDA 2013 1,3-DMAA ban; Karnatovskaia 2015 (PMID 25525083) DMAA-acute-hepatitis case-cluster.",
+      "en": "Generic proprietary multi-stim blend archetype: ECA-related + yohimbine HCl + synephrine + 1,3-DMAA-typical. Cohen 2014 JAMA (PMID 25406303) label-claim vs. actual-content discrepancy warning; FDA 2013 1,3-DMAA ban; Karnatovskaia 2015 (PMID 25525083) documented DMAA acute-hepatitis case cluster.",
+      "pl": "Generyczny archetyp multi-stim blend: ECA-pokrewny + yohimbina HCl + synephryna + 1,3-DMAA-typowa. Cohen 2014 JAMA (PMID 25406303) ostrzeżenie o label-claim discrepancy; FDA 2013 1,3-DMAA ban; Karnatovskaia 2015 (PMID 25525083) udokumentowany klaster acute hepatitis DMAA."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "stim",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "l-carnitine",
+    "name": "L-Carnitine",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Kvaterner ammónium-vegyület, endogén lizin+metionin-precursorból szintetizálódó mitokondriális long-chain fatty acid shuttle (carnitine palmitoyltransferase I/II). Sigma-Tau 1985 FDA primary carnitine deficiency Rx; bodybuilding off-label 1990s. WADA: allowed, NADA Germany 2018 monitored >50 mg/kg IV.",
+      "en": "Quaternary ammonium compound, endogenously synthesized from lysine + methionine precursors, mitochondrial long-chain fatty acid shuttle (carnitine palmitoyltransferase I/II). Sigma-Tau 1985 FDA primary carnitine deficiency Rx; bodybuilding off-label since 1990s. WADA: allowed, NADA Germany 2018 monitored above 50 mg/kg IV.",
+      "pl": "Czwartorzędowy związek amoniowy, syntetyzowany endogennie z lizyny + metioniny, mitochondrialny shuttle dla długołańcuchowych kwasów tłuszczowych (carnitine palmitoyltransferase I/II). Sigma-Tau 1985 FDA Rx pierwotnego niedoboru karnityny; bodybuilding off-label od lat 90. WADA: dozwolona, NADA Niemcy 2018 monitored powyżej 50 mg/kg IV."
+    },
+    "tier": 4,
+    "wadaStatus": "allowed",
+    "variantCount": 2,
+    "subCategory": "fat",
+    "subSection": "metabolic",
+    "formFactors": ["oral", "aq"]
+  },
+  {
+    "id": "gw-501516",
+    "name": "GW-501516 (Cardarine)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "PPARδ-agonista GlaxoSmithKline-fejlesztés (NEM AR-binding). GSK 2007 belső Sprague-Dawley rat 2-éves karcinogenicitás (intestinal + hepatocellular tumors) → Phase II terminated (Sprenger 2010 PMID 20189836). RESEARCH-ONLY chemical, ne használd; WADA S4.5 banned 2009 óta.",
+      "en": "PPARδ-agonist GlaxoSmithKline candidate (NOT AR-binding). GSK 2007 internal Sprague-Dawley rat 2-year carcinogenicity (intestinal + hepatocellular tumors) → Phase II terminated (Sprenger 2010 PMID 20189836). RESEARCH-ONLY chemical, do not use; WADA S4.5 banned since 2009.",
+      "pl": "Agonista PPARδ kandydat GlaxoSmithKline (NIE wiązanie AR). GSK 2007 2-letnie badanie kancerogenności Sprague-Dawley rat (tumory jelit + hepatocelularne) → Faza II zakończona (Sprenger 2010 PMID 20189836). RESEARCH-ONLY chemical, nie używaj; WADA S4.5 zakazany od 2009."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "metabolic",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "5-amino-1mq",
+    "name": "5-Amino-1MQ",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#a78bfa",
+    "tagColor": "rgba(167,139,250,0.18)",
+    "shortDesc": {
+      "hu": "Designer methylquinoline NNMT-inhibitor (nicotinamide N-methyltransferase). PRECLINICAL-ONLY — Kraus 2014 Nature (PMID 24622204) NNMT-knockdown obese-mouse-evidence; Neelakantan 2018 (PMID 28425865) 5-amino-1MQ molecule-design. Humán-trial NEM létezik.",
+      "en": "Designer methylquinoline NNMT-inhibitor (nicotinamide N-methyltransferase). PRECLINICAL-ONLY — Kraus 2014 Nature (PMID 24622204) NNMT-knockdown obese mouse-model evidence; Neelakantan 2018 (PMID 28425865) first 5-amino-1MQ molecule-design publication. Human trials do NOT exist.",
+      "pl": "Designer methylquinoline inhibitor NNMT (nicotinamide N-methyltransferase). PRECLINICAL-ONLY — Kraus 2014 Nature (PMID 24622204) evidence z myszy NNMT-knockdown w otyłości; Neelakantan 2018 (PMID 28425865) pierwsza publikacja design molekuły 5-amino-1MQ. Human trials NIE istnieją."
+    },
+    "tier": 2,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "metabolic",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "mots-c",
+    "name": "MOTS-c",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Mitochondrial-derived peptide (16 aminosav, 12S rRNA mtDNA-encoded), Lee 2015 Cell Metab PMID 25738457 felfedezés. AMPK-aktivátor, glükóz-homeostázis + insulin-sensitization preclinical-evidence; humán Phase 1/2 trial preliminary, fat-loss-effect szubtilis.",
+      "en": "Mitochondrial-derived peptide (16 amino acids, 12S rRNA mtDNA-encoded), discovered by Lee 2015 Cell Metab PMID 25738457. AMPK activator with preclinical evidence for glucose homeostasis + insulin sensitization; human Phase 1/2 trials preliminary, fat-loss effect subtle.",
+      "pl": "Peptyd pochodzenia mitochondrialnego (16 aminokwasów, kodowany w 12S rRNA mtDNA), odkryty przez Lee 2015 Cell Metab PMID 25738457. Aktywator AMPK z preklinicznymi dowodami na homeostazę glukozy + uwrażliwianie na insulinę; ludzkie badania fazy 1/2 wstępne, efekt utraty tłuszczu subtelny."
+    },
+    "tier": 3,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "mito",
+    "formFactors": ["aq"]
+  },
+  {
+    "id": "slu-pp-332",
+    "name": "SLU-PP-332",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#a78bfa",
+    "tagColor": "rgba(167,139,250,0.18)",
+    "shortDesc": {
+      "hu": "ERRα (Estrogen-related receptor alpha) synthetic-agonist, Salk 2024 preprint (Billon et al. bioRxiv) — preclinical-only, egér-trial exercise-mimetic evidence. NINCS humán PK / safety data; \"exercise-mimetic\" myth-marketing 2024 óta.",
+      "en": "ERRα (Estrogen-related receptor alpha) synthetic agonist, Salk 2024 preprint (Billon et al. bioRxiv) — preclinical-only, mouse-trial exercise-mimetic evidence. NO human PK / safety data; \"exercise-mimetic\" myth-marketing since 2024.",
+      "pl": "Syntetyczny agonista ERRα (Estrogen-related receptor alpha), preprint Salk 2024 (Billon et al. bioRxiv) — tylko preklinicznie, dowody exercise-mimetic z badań na myszach. BRAK danych PK / bezpieczeństwa u ludzi; marketing-myth \"exercise-mimetic\" od 2024 r."
+    },
+    "tier": 2,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "mito",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "bam15",
+    "name": "BAM15",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Mitokondriális protonophore uncoupler, DNP-rokon mechanism (Alexopoulos 2020 Nat Comms PMID 32848134), DE safer therapeutic window preclinical-evidence. BAT-thermogenic-aktivátor + insulin-sensitization obese-mice; humán-trial NEM aktív 2026 januárig.",
+      "en": "Mitochondrial protonophore uncoupler, DNP-adjacent mechanism (Alexopoulos 2020 Nat Comms PMID 32848134) BUT preclinical evidence for a safer therapeutic window. BAT-thermogenic activator + insulin sensitization in obese mice; no active human trial as of January 2026.",
+      "pl": "Mitochondrialny rozprzęgacz protonofor, mechanizm spokrewniony z DNP (Alexopoulos 2020 Nat Comms PMID 32848134), ALE prekliniczne dowody na bezpieczniejsze okno terapeutyczne. Aktywator termogenezy BAT + uwrażliwianie na insulinę u otyłych myszy; brak aktywnego badania u ludzi na styczeń 2026 r."
+    },
+    "tier": 3,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "mito",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "tesamorelin-perf",
+    "name": "Tesamorelin (perf-doping)",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Hosszú-hatású GHRH-analog (Egrifta, Theratechnologies 2010 FDA HIV-lipodystrophy), off-label cutting-cycle abdominal visceralis fat-loss 1-2 mg/nap SC 12-24 hét bro-protocol. WADA S2.1 peptide hormone in-competition + out-of-competition banned.",
+      "en": "Long-acting GHRH analog (Egrifta, Theratechnologies 2010 FDA HIV lipodystrophy), used off-label as a cutting-cycle abdominal visceral fat-loss bro protocol at 1-2 mg/day SC over 12-24 weeks. WADA S2.1 peptide hormone, in-competition + out-of-competition banned.",
+      "pl": "Długo działający analog GHRH (Egrifta, Theratechnologies 2010 FDA lipodystrofia HIV), używany off-label jako protokół bro cutting-cycle utraty trzewnego tłuszczu brzusznego 1-2 mg/dzień SC przez 12-24 tygodnie. WADA S2.1 hormon peptydowy, zakaz w trakcie zawodów + poza zawodami."
+    },
+    "tier": 3,
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "gh-axis",
+    "formFactors": ["aq"]
+  },
+  {
+    "id": "semaglutide-perf",
+    "name": "Semaglutide (perf-doping)",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Novo Nordisk hosszú-hatású GLP-1-receptor-agonista (Wegovy 2021 obesity-Rx). Cutting-cycle off-label doping 0.25-2.4 mg/hét SC, +15-20% súlyveszteség 68 hét. EMA 2024 Q3 PRAC alert off-label aesthetic use.",
+      "en": "Novo Nordisk long-acting GLP-1 receptor agonist (Wegovy 2021 obesity-Rx). Cutting-cycle off-label doping 0.25-2.4 mg/week SC, +15-20% weight loss in 68 weeks. EMA 2024 Q3 PRAC alert against off-label aesthetic use.",
+      "pl": "Novo Nordisk długo działający agonista receptora GLP-1 (Wegovy 2021 Rx otyłości). Off-label cutting-cycle doping 0,25-2,4 mg/tydzień SC, +15-20% utraty wagi w 68 tygodni. Alert EMA 2024 Q3 PRAC przeciw off-label użyciu estetycznemu."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "gh-axis",
+    "formFactors": ["aq"]
+  },
+  {
+    "id": "retatrutide-perf",
+    "name": "Retatrutide (perf-doping)",
+    "image": "/performance/water-vial.png",
+    "accentColor": "#f97316",
+    "tagColor": "rgba(249,115,22,0.18)",
+    "shortDesc": {
+      "hu": "Eli Lilly LY3437943 triple-agonist (GLP-1 + GIP + glükagon) Phase 3 TRIUMPH-4 2025-2026. 24.2% súlyveszteség 12 mg/hét 48 hét (Jastreboff 2023 PMID 37356866). Cardiovascular HR-elevation; MRI baseline kötelező.",
+      "en": "Eli Lilly LY3437943 triple-agonist (GLP-1 + GIP + glucagon) Phase 3 TRIUMPH-4 2025-2026. 24.2% weight loss in 48 weeks at 12 mg/week (Jastreboff 2023 PMID 37356866). Cardiovascular HR elevation; MRI baseline mandatory.",
+      "pl": "Eli Lilly LY3437943 potrójny agonista (GLP-1 + GIP + glukagon) Faza 3 TRIUMPH-4 2025-2026. 24,2% utraty wagi w 48 tygodni przy 12 mg/tydzień (Jastreboff 2023 PMID 37356866). Wzrost HR sercowo-naczyniowy; MRI baseline obowiązkowe."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "fat",
+    "subSection": "gh-axis",
+    "formFactors": ["aq"]
   }
 ]
 

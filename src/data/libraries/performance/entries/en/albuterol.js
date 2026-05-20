@@ -5,8 +5,8 @@ export default {
   "id": "albuterol",
   "name": "Albuterol",
   "image": "/performance/tablet-pile-white.png",
-  "accentColor": "#06b6d4",
-  "tagColor": "rgba(6,182,212,0.18)",
+  "accentColor": "#f97316",
+  "tagColor": "rgba(249,115,22,0.18)",
   "shortDesc": "FDA-approved selective β2-agonist asthma Rx (Ventolin). Shorter half-life, safer Clenbuterol alternative.",
   "description": "Albuterol (international name Salbutamol) is a short-acting selective β2-adrenoceptor agonist, the first-line acute asthma treatment since the 1980s (FDA-approved Ventolin/ProAir inhaler). Globally one of the most-prescribed drugs. In off-label bodybuilding use it has similar thermogenic + muscle-sparing effects to Clenbuterol but with significantly shorter half-life (~5-6 h vs Clen 35-40 h), giving a safer accumulation profile. WADA permits inhaled use up to 1600 μg/24 h; oral/injectable use is banned.",
   "keyInfo": [
@@ -163,5 +163,48 @@ export default {
     },
     "unit": "mg/nap",
     "note": "Oral 4-8 mg 3x/day (Clen-like cycle), max 24 mg/day. Inhaler 90-200 mcg/puff; at WADA level max 1600 mcg/24 h permitted. Albuterol is safer than Clenbuterol due to shorter half-life (~5-6 h), no accumulation."
-  }
+  },
+  "variants": [
+    {
+      "id": "oral",
+      "routeId": "oral",
+      "routeLabel": "Oral tablet",
+      "image": "/performance/tablet-pile-white.png",
+      "dosing": "4-8 mg PO TID, max 24 mg/day",
+      "halfLife": "5-6 h",
+      "halfLifeActive": "5-6 h",
+      "bioavailability": "~30-40% (oral, gastric first-pass)",
+      "onsetTime": "15-30 min",
+      "aromatization": "Not applicable — β2-agonist, NOT a steroid; no CYP19 interaction",
+      "hepatotoxicity": "Low — virtually no hepatotoxicity at therapeutic doses; tremor and tachycardia are the main side effects (FDA Proventil label)",
+      "indications": "Off-label fat-loss + muscle preservation in caloric deficit (Clen-style cycle)",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 4, "medium": 8, "high": 16 },
+        "unit": "mg/day",
+        "note": "Oral 4-8 mg 3x/day (Clen-style cycle), max 24 mg/day. Cardio monitoring + EKG baseline + 4-week check mandatory."
+      }
+    },
+    {
+      "id": "inhaled",
+      "routeId": "inhaled",
+      "routeLabel": "MDI inhaler",
+      "image": "/performance/tablet-pile-white.png",
+      "dosing": "90-200 μg/puff PRN, max 1600 μg/24h WADA threshold",
+      "halfLife": "1.5-3 h (local)",
+      "halfLifeActive": "1.5-3 h",
+      "bioavailability": "~10-20% (systemic, high local tissue)",
+      "onsetTime": "5-15 min",
+      "aromatization": "Not applicable — β2-agonist, NOT a steroid; no CYP19 interaction",
+      "hepatotoxicity": "Low — local-tissue dominated effect, systemic levels minimal, hepatic stress negligible",
+      "indications": "FDA-Rx asthma + bronchodilation; athletic legitimate TUE protocol WADA-monitored",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 90, "medium": 200, "high": 1600 },
+        "unit": "μg/puff (max 1600 μg/24h WADA threshold)",
+        "note": "MDI inhaler 90-200 μg/puff PRN. WADA-accredited competitive sport 1600 μg/24h maximum legitimate TUE allowance."
+      }
+    }
+  ],
+  "defaultVariant": "oral"
 }

@@ -5,8 +5,8 @@ export default {
   "id": "albuterol",
   "name": "Albuterol",
   "image": "/performance/tablet-pile-white.png",
-  "accentColor": "#06b6d4",
-  "tagColor": "rgba(6,182,212,0.18)",
+  "accentColor": "#f97316",
+  "tagColor": "rgba(249,115,22,0.18)",
   "shortDesc": "FDA-approved szelektív β2-agonist asztma-Rx (Ventolin). Rövidebb felezésű, biztonságosabb Clenbuterol-alternatíva.",
   "description": "Az Albuterol (nemzetközi nevén Salbutamol) egy rövid-hatású szelektív β2-adrenoceptor agonista, az 1980-as évek óta az asztma elsővonalas akut-kezelési szere (FDA-engedélyezett Ventolin/ProAir inhaláló). Globálisan az egyik leggyakrabban felírt gyógyszer. A bodybuilding off-label használatában a Clenbuterol-hoz hasonló thermogenikus + izom-megtartó hatást fejt ki, de jelentősen rövidebb felezési idővel (~5-6 óra vs Clen 35-40 óra), ami biztonságosabb akkumuláció-profilt eredményez. WADA inhaláló-használata <1600 μg/24 óra megengedett, oral/injekciós használat tiltott.",
   "keyInfo": [
@@ -163,5 +163,48 @@ export default {
     },
     "unit": "mg/nap",
     "note": "Oral 4-8 mg 3x/nap (Clen-szerű ciklus), max 24 mg/nap. Inhaler 90-200 mcg/szippantás, WADA-szintnél max 1600 mcg/24 óra megengedett. Albuterol biztonságosabb mint a Clenbuterol a rövidebb felezési idő miatt (~5-6 óra), így nem akkumulálódik."
-  }
+  },
+  "variants": [
+    {
+      "id": "oral",
+      "routeId": "oral",
+      "routeLabel": "Oral tabletta",
+      "image": "/performance/tablet-pile-white.png",
+      "dosing": "4-8 mg PO TID, max 24 mg/nap",
+      "halfLife": "5-6 óra",
+      "halfLifeActive": "5-6 óra",
+      "bioavailability": "~30-40% (oral, gastric first-pass)",
+      "onsetTime": "15-30 perc",
+      "aromatization": "Nem releváns — β2-agonista, NEM szteroid; nincs CYP19 interakció",
+      "hepatotoxicity": "Alacsony — gyakorlatilag nincs hepatotoxicitás therapeutic dózisban; tremor és tachycardia a fő mellékhatás (FDA Proventil label)",
+      "indications": "Off-label fat-loss + izom-megtartás kalória-deficitben (Clen-szerű ciklus)",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 4, "medium": 8, "high": 16 },
+        "unit": "mg/nap",
+        "note": "Oral 4-8 mg 3x/nap (Clen-szerű ciklus), max 24 mg/nap. Kardio-monitoring + EKG-baseline + 4-week-check kötelező."
+      }
+    },
+    {
+      "id": "inhaled",
+      "routeId": "inhaled",
+      "routeLabel": "MDI inhaláló",
+      "image": "/performance/tablet-pile-white.png",
+      "dosing": "90-200 μg/szippantás PRN, max 1600 μg/24h WADA-szint",
+      "halfLife": "1.5-3 óra (local)",
+      "halfLifeActive": "1.5-3 óra",
+      "bioavailability": "~10-20% (systemic, local-szöveti magas)",
+      "onsetTime": "5-15 perc",
+      "aromatization": "Nem releváns — β2-agonista, NEM szteroid; nincs CYP19 interakció",
+      "hepatotoxicity": "Alacsony — local-szöveti dominált hatás, systemic-szint minimális, hepatikus stressz elhanyagolható",
+      "indications": "FDA-Rx asztma + bronchodilatáció; athletic legitim TUE-protokoll WADA-monitored",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 90, "medium": 200, "high": 1600 },
+        "unit": "μg/szippantás (max 1600 μg/24h WADA-szint)",
+        "note": "MDI inhaláló 90-200 μg/szippantás PRN. WADA-akkreditált versenysportban 1600 μg/24h maximum legitim TUE-keret."
+      }
+    }
+  ],
+  "defaultVariant": "oral"
 }

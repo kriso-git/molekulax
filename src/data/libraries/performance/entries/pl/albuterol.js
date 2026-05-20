@@ -5,8 +5,8 @@ export default {
   "id": "albuterol",
   "name": "Albuterol",
   "image": "/performance/tablet-pile-white.png",
-  "accentColor": "#06b6d4",
-  "tagColor": "rgba(6,182,212,0.18)",
+  "accentColor": "#f97316",
+  "tagColor": "rgba(249,115,22,0.18)",
   "shortDesc": "Selektywny agonista β2 dla astmy zatwierdzony przez FDA (Ventolin). Krótszy okres półtrwania, bezpieczniejsza alternatywa.",
   "description": "Albuterol (międzynarodowo Salbutamol) to krótko działający selektywny agonista β2, pierwszorzędne leczenie ostrej astmy od lat 1980. (zatwierdzony FDA inhalator Ventolin/ProAir). Globalnie jeden z najczęściej przepisywanych leków. W off-label kulturystyce ma podobne efekty termogeniczne + ochrony mięśni jak Clenbuterol, ale ze znacznie krótszym okresem półtrwania (~5-6 h vs Clen 35-40 h). WADA dopuszcza inhalację do 1600 μg/24h.",
   "keyInfo": [
@@ -163,5 +163,48 @@ export default {
     },
     "unit": "mg/nap",
     "note": "Doustnie 4-8 mg 3x/dziennie, maks. 24 mg/dzień. Inhalator 90-200 mcg/dawka. Bezpieczniejszy niż Clenbuterol z powodu krótszego okresu półtrwania."
-  }
+  },
+  "variants": [
+    {
+      "id": "oral",
+      "routeId": "oral",
+      "routeLabel": "Tabletka doustna",
+      "image": "/performance/tablet-pile-white.png",
+      "dosing": "4-8 mg PO TID, max 24 mg/dzień",
+      "halfLife": "5-6 godz",
+      "halfLifeActive": "5-6 godz",
+      "bioavailability": "~30-40% (oral, gastric first-pass)",
+      "onsetTime": "15-30 min",
+      "aromatization": "Nie dotyczy — agonista β2, NIE steroid; brak interakcji z CYP19",
+      "hepatotoxicity": "Niska — praktycznie brak hepatotoksyczności w dawkach terapeutycznych; drżenie i tachykardia to główne skutki uboczne (etykieta FDA Proventil)",
+      "indications": "Off-label utrata tłuszczu + zachowanie mięśni w deficycie kalorycznym (cykl typu Clen)",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 4, "medium": 8, "high": 16 },
+        "unit": "mg/dzień",
+        "note": "Doustnie 4-8 mg 3x/dzień (cykl typu Clen), max 24 mg/dzień. Monitoring kardio + EKG baseline + kontrola 4-tygodniowa obowiązkowa."
+      }
+    },
+    {
+      "id": "inhaled",
+      "routeId": "inhaled",
+      "routeLabel": "Inhalator MDI",
+      "image": "/performance/tablet-pile-white.png",
+      "dosing": "90-200 μg/wdech PRN, max 1600 μg/24h próg WADA",
+      "halfLife": "1.5-3 godz (lokalnie)",
+      "halfLifeActive": "1.5-3 godz",
+      "bioavailability": "~10-20% (systemowo, wysoka lokalna tkankowo)",
+      "onsetTime": "5-15 min",
+      "aromatization": "Nie dotyczy — agonista β2, NIE steroid; brak interakcji z CYP19",
+      "hepatotoxicity": "Niska — efekt dominowany lokalnie w tkankach, poziom ogólnoustrojowy minimalny, stres wątrobowy pomijalny",
+      "indications": "FDA-Rx astma + bronchodylatacja; sportowy legalny protokół TUE WADA-monitored",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 90, "medium": 200, "high": 1600 },
+        "unit": "μg/wdech (max 1600 μg/24h próg WADA)",
+        "note": "Inhalator MDI 90-200 μg/wdech PRN. WADA-akredytowany sport wyczynowy 1600 μg/24h maksymalne legalne odstępstwo TUE."
+      }
+    }
+  ],
+  "defaultVariant": "oral"
 }
