@@ -13,6 +13,18 @@ export default {
   "defaultDoseMcg": 200,
   "shortDesc": "Kombinacja analogu GHRH + selektywnego mimetyku greliny dla synergicznego pulsu GH",
   "description": "Połączenie CJC-1295 (modyfikowanego GHRH 1-29) z Ipamoreliną (selektywnym agonistą receptora greliny / GHRP) zwiększa pulsacyjne uwalnianie hormonu wzrostu (GH) przez dwa różne receptory, klasyczna kombinacja „GHRH + GHRP”.\n\nCJC-1295 działa na receptory GHRH przysadki, ipamorelina na receptor greliny. Sygnały synergizują, a selektywność ipamoreliny minimalizuje wzrost kortyzolu i prolaktyny.",
+  "composition": [
+    {
+      "id": "cjc-1295",
+      "role": "Analog GHRH — podstawa przedłużonego pulsu GH",
+      "typicalDose": "100-200 µg subQ codziennie"
+    },
+    {
+      "id": "ipamorelin",
+      "role": "Selektywny sekretagog GH — wzmacniacz pulsu",
+      "typicalDose": "100-200 µg subQ codziennie"
+    }
+  ],
   "keyInfo": [
     {
       "label": "Typ",

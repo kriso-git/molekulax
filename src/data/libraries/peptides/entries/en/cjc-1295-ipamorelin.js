@@ -13,6 +13,18 @@ export default {
   "defaultDoseMcg": 200,
   "shortDesc": "GHRH analog + selective ghrelin mimetic combo for synergistic GH pulse",
   "description": "CJC-1295 (a modified GHRH 1-29) combined with Ipamorelin (a selective GHRP / ghrelin-receptor agonist) amplifies pulsatile growth hormone (GH) release through two different receptors, the classic \"GHRH + GHRP\" stack.\n\nCJC-1295 acts on pituitary GHRH receptors; ipamorelin acts on the ghrelin receptor. Their signals synergise, and ipamorelin's selectivity keeps cortisol/prolactin rises minimal.",
+  "composition": [
+    {
+      "id": "cjc-1295",
+      "role": "GHRH analog — sustained GH pulse base",
+      "typicalDose": "100-200 µg subQ daily"
+    },
+    {
+      "id": "ipamorelin",
+      "role": "Selective GH secretagogue — pulse amplifier",
+      "typicalDose": "100-200 µg subQ daily"
+    }
+  ],
   "keyInfo": [
     {
       "label": "Type",

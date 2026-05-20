@@ -13,6 +13,18 @@ export default {
   "defaultDoseMcg": 200,
   "shortDesc": "GHRH-analóg + szelektív ghrelin-mimetikum kombináció a szinergikus GH-pulzusért",
   "description": "A CJC-1295 (módosított GHRH 1-29) és az Ipamorelin (szelektív GHRP / ghrelin receptor agonista) együttes alkalmazása a növekedési hormon (GH) pulzatilis kibocsátását fokozza két különböző receptoron keresztül, emiatt ez a klasszikus \"GHRH + GHRP\" kombináció.\n\nA CJC-1295 a hipofízis GHRH-receptorán hat, az Ipamorelin pedig a ghrelinreceptoron. A két szignál szinergiát produkál, miközben az Ipamorelin szelektivitása miatt minimális a kortizol- és prolaktin-emelkedés.",
+  "composition": [
+    {
+      "id": "cjc-1295",
+      "role": "GHRH analóg — tartós GH-pulzus alap",
+      "typicalDose": "100-200 µg subQ naponta"
+    },
+    {
+      "id": "ipamorelin",
+      "role": "Szelektív GH-szekretagóg — pulzus-amplifikátor",
+      "typicalDose": "100-200 µg subQ naponta"
+    }
+  ],
   "keyInfo": [
     {
       "label": "Típus",
