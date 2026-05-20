@@ -66,5 +66,6 @@ export default {
       "finding": "A tesamorelin tartós VAT-csökkenést és kedvező anyagcsere-hatást nyújt 52 héten át, jó tűrhetőséggel."
     }
   ],
+  "related": ["tesamorelin-perf"],
   "anecdote": "A GH-emelő szerek közül a Tesamorelin széles körben kedvelt. Anekdotikus beszámolók szerint egy 50 napos, napi 2 mg-os adagolás egy fogyókúra alatt körülbelül három héten belül észrevehető haskörfogat-csökkenést eredményezett (a viscerális zsír csökkenésének tulajdonítva), és a második héttől javuló alvást. Mivel GHRH-n keresztül hat, a természetes GH-pulzativitás megmarad. Gyengébb, mint a közvetlen HGH, de kevesebb mellékhatást okoz, bár az éhomi vércukrot továbbra is monitorozni kell. Általában nem emeli az eget az IGF-1-be — a természetes pulzusokat fokozza. FDA által jóváhagyott HIV-indukált lipodisztrófiára.\n\nA Tesamorelint szubkután adják, ideálisan napi egyszer lefekvés előtt, böjtölt állapotban (utolsó étkezés után 2-4 órával). Napi 2 mg lefekvés előtt a szokásos klinikai környezetben."
 }

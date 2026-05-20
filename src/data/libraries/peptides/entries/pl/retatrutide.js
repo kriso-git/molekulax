@@ -78,5 +78,6 @@ export default {
       "finding": "Potrójna agonia GIP/GLP-1/glukagonu synergicznie zmniejsza masę ciała i poprawia profil lipidowy."
     }
   ],
+  "related": ["retatrutide-perf"],
   "anecdote": "Doniesienia anegdotyczne opisują szybką, znaczną utratę masy ciała w ciągu pierwszych trzech miesięcy stosowania Retatrutydu, ale początkowe tłumienie apetytu jest często zgłaszane jako nadmiernie silne, utrudniając osiągnięcie celów spożycia białka i potencjalnie przyczyniając się do utraty mięśni. Kilku użytkowników przechodzi z Retatrutydu na Tyrzepatyd i zgłasza gładsze doświadczenie pod względem snu i tętna spoczynkowego.\n\nRetatrutyd jest wysoce skuteczny w agresywnej utracie tłuszczu, ale ogólnie uważa się go za bardziej intensywny niż Tyrzepatyd. W badaniach dawkę zazwyczaj zwiększano o 2 mg co 4-6 tygodni."
 }
