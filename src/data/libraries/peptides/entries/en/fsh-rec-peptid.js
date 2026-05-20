@@ -1,8 +1,8 @@
 // rFSH (Gonal-F / Puregon / Follistim / Bemfola) — Recombinant FSH, fertility-
 // clinic Rx framing. Cross-frame counterpart: `fsh-rec-perf` (AAS-PCT FSH-axis
 // recovery). Sources: EMA Gonal-F SPC (Merck Serono 1995), EMA Puregon SPC
-// (Organon 1996), FDA Follistim label (MSD), Bouloux 2003 PMID 11744708,
-// Liu 2009 PMID 19389810, Matorras 2009 PMID 16735417.
+// (Organon 1996), FDA Follistim label (MSD), Bouloux 2003 PMID 12826700,
+// Liu 2009 PMID 19066302, Matorras 2009 (Reprod Biomed Online — no PMID).
 
 export default {
   "id": "fsh-rec-peptid",
@@ -41,19 +41,18 @@ export default {
       "title": "Induction of spermatogenesis by recombinant follicle-stimulating hormone (puregon) in hypogonadotropic azoospermic men who failed to respond to human chorionic gonadotropin alone",
       "authors": "Bouloux PM, Nieschlag E, Burger HG, Skakkebaek NE, Wu FC, Handelsman DJ, et al.",
       "journal": "J Androl. 2003;24(4):604-11.",
-      "pmid": "11744708"
+      "pmid": "12826700"
     },
     {
-      "title": "Predictors of fertility outcome in gonadotropin-deficient men: a clinical perspective",
+      "title": "Induction of spermatogenesis and fertility during gonadotropin treatment of gonadotropin-deficient infertile men: predictors of fertility outcome",
       "authors": "Liu PY, Baker HW, Jayadev V, Zacharin M, Conway AJ, Handelsman DJ.",
       "journal": "J Clin Endocrinol Metab. 2009;94(3):801-8.",
-      "pmid": "19389810"
+      "pmid": "19066302"
     },
     {
       "title": "Recombinant FSH versus highly purified urinary FSH: a randomized clinical trial in intrauterine insemination with husbands' sperm",
       "authors": "Matorras R, et al.",
-      "journal": "Reprod Biomed Online. 2009;19(2):216-22.",
-      "pmid": "16735417"
+      "journal": "Reprod Biomed Online. 2009;19(2):216-22."
     }
   ],
   "legalStatus": "USA: FDA Rx Gonal-F (Merck-Serono, 1997 approval), Follistim (MSD, 1997). EU: EMA Rx Gonal-F (1995), Puregon (Organon → MSD, 1996), Bemfola (Gedeon Richter, 2014 — biosimilar with Gonal-F as reference). HU: registered (Gonal-F, Puregon, Bemfola — Hungarian manufacturer GR advantage). PL: registered (Gonal-F, Puregon, Bemfola). Indications: male hypogonadotropic hypogonadism (spermatogenesis induction), female IVF ovarian stimulus, anovulation. Mandatory Rx + specialist (endocrinologist, reproductive medicine, urology). WADA: S2.1 Peptide Hormones (banned in-competition + out-of-competition year-round for all male athletes; no exception).",
@@ -76,11 +75,11 @@ export default {
   "faq": [
     {
       "q": "Why isn't HCG alone enough for male fertility restoration?",
-      "a": "HCG only activates the Leydig cell LHCGR receptor → testicular testosterone production is restored, libido + erection + Test-driven tissues return. BUT spermatogenesis happens in Sertoli cells, which require FSH stimulus. On HCG monotherapy, the 'Test level restored, but azoospermia persists' scenario is common — particularly after hard-suppression long cycles or multi-year AAS, or in congenital HypoH. Bouloux 2003 (PMID 11744708) documents exactly this: in HCG-non-responder azoospermic men, Puregon addition produces spermatogenesis recovery in 60-80%. Classic protocol: HCG for 3-6 months (Leydig priming), then HCG+rFSH dual for 6-24 months (full HPG axis stimulus)."
+      "a": "HCG only activates the Leydig cell LHCGR receptor → testicular testosterone production is restored, libido + erection + Test-driven tissues return. BUT spermatogenesis happens in Sertoli cells, which require FSH stimulus. On HCG monotherapy, the 'Test level restored, but azoospermia persists' scenario is common — particularly after hard-suppression long cycles or multi-year AAS, or in congenital HypoH. Bouloux 2003 (PMID 12826700) documents exactly this: in HCG-non-responder azoospermic men, Puregon addition produces spermatogenesis recovery in 60-80%. Classic protocol: HCG for 3-6 months (Leydig priming), then HCG+rFSH dual for 6-24 months (full HPG axis stimulus)."
     },
     {
       "q": "rFSH vs HMG (Menopur) — when to choose which?",
-      "a": "Two factors decide. (1) **Purity need**: rFSH is 100% FSH (NO LH contamination), HMG is mixed FSH+LH ~1:1 (urinary-extracted). If the patient is already on HCG (Leydig stimulus covered), rFSH selectivity is more logical — the LH overlap (HMG) is redundant. (2) **Cost**: rFSH (Gonal-F) ~€300-400/75 IU in the EU, HMG (Menopur) ~€20-25/75 IU — over a 12-24 month protocol the difference is €5000-15000. Clinical outcome (Matorras 2009 PMID 16735417, in intrauterine insemination context) is similar; rFSH only wins on purity + dose-precision reproducibility. On the Hungarian market, Bemfola (Gedeon Richter biosimilar) sits at intermediate pricing, the compromise choice."
+      "a": "Two factors decide. (1) **Purity need**: rFSH is 100% FSH (NO LH contamination), HMG is mixed FSH+LH ~1:1 (urinary-extracted). If the patient is already on HCG (Leydig stimulus covered), rFSH selectivity is more logical — the LH overlap (HMG) is redundant. (2) **Cost**: rFSH (Gonal-F) ~€300-400/75 IU in the EU, HMG (Menopur) ~€20-25/75 IU — over a 12-24 month protocol the difference is €5000-15000. Clinical outcome (Matorras 2009, Reprod Biomed Online, in intrauterine insemination context) is similar; rFSH only wins on purity + dose-precision reproducibility. On the Hungarian market, Bemfola (Gedeon Richter biosimilar) sits at intermediate pricing, the compromise choice."
     },
     {
       "q": "Why is ovarian response monitoring required in female IVF?",
@@ -88,7 +87,7 @@ export default {
     },
     {
       "q": "What can I expect from an rFSH+HCG protocol in Kallmann syndrome?",
-      "a": "Kallmann syndrome (congenital GnRH deficiency + anosmia) is a classic indication. Liu 2009 (PMID 19389810) protocol: HCG 1500-3000 IU 2-3x/week × 3-6 months (Leydig priming → endogenous Test target 12-20 nmol/L), then rFSH 75-150 IU 3x/week added. Spermatogenesis restoration outcome: 60-80% across patients, expected timeframe 12-24 months. Sperm count typically stabilizes around the lower end of the normal range (5-20 million/mL), sufficient for IUI or IVF-ICSI fertility goals. Cryopreservation recommended after a successful protocol (multi-cycle repetition does NOT guarantee recovery stability)."
+      "a": "Kallmann syndrome (congenital GnRH deficiency + anosmia) is a classic indication. Liu 2009 (PMID 19066302) protocol: HCG 1500-3000 IU 2-3x/week × 3-6 months (Leydig priming → endogenous Test target 12-20 nmol/L), then rFSH 75-150 IU 3x/week added. Spermatogenesis restoration outcome: 60-80% across patients, expected timeframe 12-24 months. Sperm count typically stabilizes around the lower end of the normal range (5-20 million/mL), sufficient for IUI or IVF-ICSI fertility goals. Cryopreservation recommended after a successful protocol (multi-cycle repetition does NOT guarantee recovery stability)."
     },
     {
       "q": "Cross-frame: is this the same molecule as `fsh-rec-perf`?",

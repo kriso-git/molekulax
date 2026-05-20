@@ -53,26 +53,26 @@ export default {
       "value": "Subcutaneous (SC), rotated injection sites"
     }
   ],
-  "mechanism": "GLOW's stack synergy is built on three different molecular mechanisms that converge on two regeneration axes.\n\n**1) GHK-Cu (surface / cosmetic axis)**: the Gly-His-Lys tripeptide with copper ion epigenetically modulates ~4,000+ gene expressions (Pickart 2018, PMID 29371390), activates fibroblast collagen III synthesis, modulates melanin distribution and upregulates antioxidant SOD / catalase enzymes. Acts both locally and systemically on skin, hair and connective tissue.\n\n**2) BPC-157 (systemic healing)**: the 15-amino-acid pentadecapeptide is a pleiotropic angiogenesis inducer through the VEGF-VEGFR2 + Akt-eNOS axis (Sikiric review series), as well as an NO-signalling modulator. Its GI, tendon, muscle and neural regeneration effects are well documented in animal models.\n\n**3) TB-500 (systemic actin mobilisation)**: the N-terminal fragment of thymosin β4 sequesters the globular G-actin pool, facilitates cell migration (myoblasts, endothelial cells) and supports tissue repair through actin-cytoskeleton remodelling. Functional t½ ~2-3 days (actual receptor binding is much shorter).\n\n**Synergy logic**: GHK-Cu delivers fast, visible (2-4 weeks) improvement on the skin / collagen axis; the BPC-157 + TB-500 pair targets deep-tissue / systemic regeneration (4-6 weeks). Together: two axes = a more complete regenerative profile than any single component alone.",
+  "mechanism": "GLOW's stack synergy is built on three different molecular mechanisms that converge on two regeneration axes.\n\n**1) GHK-Cu (surface / cosmetic axis)**: the Gly-His-Lys tripeptide with copper ion epigenetically modulates ~4,000+ gene expressions (Pickart 2018, PMID 29986520), activates fibroblast collagen III synthesis, modulates melanin distribution and upregulates antioxidant SOD / catalase enzymes. Acts both locally and systemically on skin, hair and connective tissue.\n\n**2) BPC-157 (systemic healing)**: the 15-amino-acid pentadecapeptide is a pleiotropic angiogenesis inducer through the VEGF-VEGFR2 + Akt-eNOS axis (Sikiric review series), as well as an NO-signalling modulator. Its GI, tendon, muscle and neural regeneration effects are well documented in animal models.\n\n**3) TB-500 (systemic actin mobilisation)**: the N-terminal fragment of thymosin β4 sequesters the globular G-actin pool, facilitates cell migration (myoblasts, endothelial cells) and supports tissue repair through actin-cytoskeleton remodelling. Functional t½ ~2-3 days (actual receptor binding is much shorter).\n\n**Synergy logic**: GHK-Cu delivers fast, visible (2-4 weeks) improvement on the skin / collagen axis; the BPC-157 + TB-500 pair targets deep-tissue / systemic regeneration (4-6 weeks). Together: two axes = a more complete regenerative profile than any single component alone.",
   "dosingInfo": "**Standard GLOW protocol** (community-tier, NOT clinical Rx):\n\n- **GHK-Cu**: 1-3 mg SC daily, same time-of-day window (e.g. morning)\n- **BPC-157**: 250-500 µg SC daily, ideally at a different injection site from the other components\n- **TB-500**: 2-2.5 mg SC 2× weekly (e.g. Monday + Thursday)\n\n**Cycle**: 4-6 weeks continuous on, then 2-4 weeks off before restart. Components are reconstituted (bacteriostatic water) in **separate vials** — NOT mixed in a single syringe (different stability, pH sensitivity). Rotate injection sites (abdomen, thigh, upper arm) to minimise SC tissue irritation.",
   "studies": [
     {
       "tag": "GHK-Cu epigenetics",
       "tagColor": "rgba(167,139,250,0.16)",
       "tagText": "#a78bfa",
-      "title": "GHK Peptide as a Natural Modulator of Multiple Cellular Pathways",
+      "title": "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data",
       "authors": "Pickart L, Margolina A.",
       "journal": "Int J Mol Sci",
       "year": "2018",
-      "pmid": "29371390",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29371390/",
+      "pmid": "29986520",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29986520/",
       "finding": "GHK-Cu modulates ~4,000+ gene expressions, with collagen synthesis + antioxidant enzyme activation. Single-component study, NOT stack-level."
     },
     {
       "tag": "BPC-157 review",
       "tagColor": "rgba(14,165,233,0.16)",
       "tagText": "#7dd3fc",
-      "title": "BPC-157 in orthopaedic sports medicine — systematic review",
+      "title": "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
       "authors": "Vasireddi N, Hahamyan H, Salata MJ, et al.",
       "journal": "HSS Journal",
       "year": "2025",
@@ -84,13 +84,13 @@ export default {
       "tag": "TB-500 angiogenesis",
       "tagColor": "rgba(99,102,241,0.18)",
       "tagText": "#818cf8",
-      "title": "Thymosin beta4 induces angiogenesis through Notch signaling",
-      "authors": "Goldstein AL, Hannappel E, Kleinman HK.",
-      "journal": "Ann N Y Acad Sci",
-      "year": "2010",
-      "pmid": "20536942",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20536942/",
-      "finding": "Thymosin β4 (the source molecule for TB-500) induces vessel formation via Notch signalling. Stack-level GLOW evidence is absent."
+      "title": "Thymosin beta4 induces angiogenesis through Notch signaling in endothelial cells",
+      "authors": "Lv S, Cheng G, Zhou Y, Xu G.",
+      "journal": "Mol Cell Biochem",
+      "year": "2013",
+      "pmid": "23749167",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23749167/",
+      "finding": "Thymosin β4 (the source molecule for TB-500) induces vessel formation via Notch signalling in endothelial cells. Stack-level GLOW evidence is absent."
     }
   ],
   "legalStatus": "**Sourcing context**: none of the three components are HU or EU GMP-Rx registered for human indications (with the exception of thymosin α1 in some countries — which is NOT the β4 fragment). Users typically source the peptides via RUO (Research Use Only) vendor channels, which is a **grey legal zone** that varies by country (HU/EU: small personal-import quantities typically tolerated; vendor side is stricter).\n\n**WADA status (mandatory warning)**:\n- **BPC-157**: on the WADA prohibited list since 2022 in class S0 (Non-approved substances) — banned year-round (in + out-of-competition)\n- **TB-500 / Thymosin β4**: previously banned (class S2)\n- **GHK-Cu**: NOT separately listed on the WADA prohibited list\n\nConclusion: **competing athletes MUST NOT use the GLOW stack** — the presence of BPC-157 + TB-500 makes the stack as a whole competition-prohibited. Doping-control immunoassay or LC-MS/MS will detect peptide presence.",

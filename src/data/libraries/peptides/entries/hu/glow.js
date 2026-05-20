@@ -53,26 +53,26 @@ export default {
       "value": "Szubkután (SC), forgatott injekciós helyek"
     }
   ],
-  "mechanism": "A GLOW stack szinergiája három különböző molekuláris mechanizmuson alapul, amelyek két regenerációs tengelyen találkoznak.\n\n**1) GHK-Cu (felszíni / kozmetikus axis)**: a Gly-His-Lys tripeptid réz-ion komplex epigenetikusan modulál ~4000+ gén-expressziót (Pickart 2018 PMID 29371390), aktiválja a fibroblast-kollagén-III szintézist, modulálja a melanin-eloszlást és katalizálja az antioxidáns SOD/katalaz enzimeket. Lokálisan és szisztémásan is hat a bőrre, hajra, kötőszövetre.\n\n**2) BPC-157 (szisztémás gyógyulás)**: a 15-aminosav pentadekapeptid pleiotróp angiogenezis-induktor a VEGF-VEGFR2 + Akt-eNOS tengelyen (Sikiric review-k), valamint NO-szignáling-modulátor. Gyomor-bél, ín, izom, idegszöveti regenerációs hatása az állat-modellekben dokumentált.\n\n**3) TB-500 (szisztémás aktin-mobilizáció)**: a thymosin β4 N-terminális fragment a globuláris G-aktin-poolt szekvesztrálja, megkönnyíti a sejt-migrációt (mioblaszt, endotél), és az aktin-citoszkeleton remodellálásán keresztül támogatja a szövet-helyreállítást. Funkcionális t½ ~2-3 nap (a tényleges receptor-kötés ennél jóval rövidebb).\n\n**Szinergia-logika**: a GHK-Cu a bőr-kollagén-axison ad gyors, látható (2-4 hét) javulást; a BPC-157 + TB-500 párosa a mély-szöveti / szisztémás regenerációt céloz (4-6 hét). Együtt: két axis = teljesebb regeneratív profil mint bármelyik komponens önmagában.",
+  "mechanism": "A GLOW stack szinergiája három különböző molekuláris mechanizmuson alapul, amelyek két regenerációs tengelyen találkoznak.\n\n**1) GHK-Cu (felszíni / kozmetikus axis)**: a Gly-His-Lys tripeptid réz-ion komplex epigenetikusan modulál ~4000+ gén-expressziót (Pickart 2018 PMID 29986520), aktiválja a fibroblast-kollagén-III szintézist, modulálja a melanin-eloszlást és katalizálja az antioxidáns SOD/katalaz enzimeket. Lokálisan és szisztémásan is hat a bőrre, hajra, kötőszövetre.\n\n**2) BPC-157 (szisztémás gyógyulás)**: a 15-aminosav pentadekapeptid pleiotróp angiogenezis-induktor a VEGF-VEGFR2 + Akt-eNOS tengelyen (Sikiric review-k), valamint NO-szignáling-modulátor. Gyomor-bél, ín, izom, idegszöveti regenerációs hatása az állat-modellekben dokumentált.\n\n**3) TB-500 (szisztémás aktin-mobilizáció)**: a thymosin β4 N-terminális fragment a globuláris G-aktin-poolt szekvesztrálja, megkönnyíti a sejt-migrációt (mioblaszt, endotél), és az aktin-citoszkeleton remodellálásán keresztül támogatja a szövet-helyreállítást. Funkcionális t½ ~2-3 nap (a tényleges receptor-kötés ennél jóval rövidebb).\n\n**Szinergia-logika**: a GHK-Cu a bőr-kollagén-axison ad gyors, látható (2-4 hét) javulást; a BPC-157 + TB-500 párosa a mély-szöveti / szisztémás regenerációt céloz (4-6 hét). Együtt: két axis = teljesebb regeneratív profil mint bármelyik komponens önmagában.",
   "dosingInfo": "**Standard GLOW protokoll** (community-tier, NEM klinikai Rx):\n\n- **GHK-Cu**: 1-3 mg SC naponta, ugyanabban a napi időszakban (pl. reggel)\n- **BPC-157**: 250-500 µg SC naponta, lehetőleg minden komponenstől eltérő injekciós helyen\n- **TB-500**: 2-2,5 mg SC 2× hetente (pl. hétfő + csütörtök)\n\n**Ciklus**: 4-6 hét folyamatos on, majd 2-4 hét off mielőtt újraindul. A komponensek külön fiolákból, külön rekonstituálva (bact-water) — NEM keverve egy fecskendőben (eltérő stabilitás, pH-szenzitivitás). Forgatott injekciós helyek (has, comb, felkar) az SC-szövet-károsodás minimalizálására.",
   "studies": [
     {
       "tag": "GHK-Cu epigenetika",
       "tagColor": "rgba(167,139,250,0.16)",
       "tagText": "#a78bfa",
-      "title": "GHK Peptide as a Natural Modulator of Multiple Cellular Pathways",
+      "title": "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data",
       "authors": "Pickart L, Margolina A.",
       "journal": "Int J Mol Sci",
       "year": "2018",
-      "pmid": "29371390",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29371390/",
+      "pmid": "29986520",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29986520/",
       "finding": "A GHK-Cu ~4000+ gén-expressziót modulál, kollagén-szintézis + antioxidáns enzim-aktiváció. Egyetlen komponens-tanulmány, NEM stack-szintű."
     },
     {
       "tag": "BPC-157 review",
       "tagColor": "rgba(14,165,233,0.16)",
       "tagText": "#7dd3fc",
-      "title": "BPC-157 az ortopédiai sportmedicinában — szisztematikus áttekintés",
+      "title": "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
       "authors": "Vasireddi N, Hahamyan H, Salata MJ, et al.",
       "journal": "HSS Journal",
       "year": "2025",
@@ -84,13 +84,13 @@ export default {
       "tag": "TB-500 angiogenezis",
       "tagColor": "rgba(99,102,241,0.18)",
       "tagText": "#818cf8",
-      "title": "Thymosin beta4 induces angiogenesis through Notch signaling",
-      "authors": "Goldstein AL, Hannappel E, Kleinman HK.",
-      "journal": "Ann N Y Acad Sci",
-      "year": "2010",
-      "pmid": "20536942",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20536942/",
-      "finding": "Thymosin β4 (TB-500 forrás-molekula) Notch-jelátvitelen keresztül indukál érképződést. Stack-szintű GLOW-evidencia hiányzik."
+      "title": "Thymosin beta4 induces angiogenesis through Notch signaling in endothelial cells",
+      "authors": "Lv S, Cheng G, Zhou Y, Xu G.",
+      "journal": "Mol Cell Biochem",
+      "year": "2013",
+      "pmid": "23749167",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23749167/",
+      "finding": "Thymosin β4 (TB-500 forrás-molekula) endothél-sejtekben Notch-jelátvitelen keresztül indukál érképződést. Stack-szintű GLOW-evidencia hiányzik."
     }
   ],
   "legalStatus": "**Sourcing-kontextus**: a három komponens egyike sem szerepel HU vagy EU GMP-Rx törzskönyvön humán-indikációra (kivéve néhány országban a thymosin α1 — NEM β4 fragment). A felhasználók jellemzően RUO (Research Use Only) vendor-csatornákból szerzik be a peptideket, ami **szürke jogi zóna** — országonként eltérő (HU/EU: tipikusan személyes-import kis-mennyiségben tolerált, vendor-side szigorúbb).\n\n**WADA-státusz (KÖTELEZŐ figyelmeztetés)**:\n- **BPC-157**: 2022 óta a WADA tiltólistán szerepel az S0 (Non-approved substances) osztályban — egész évben tiltott (in + out-of-competition)\n- **TB-500 / Thymosin β4**: korábban tiltott (S2 osztály)\n- **GHK-Cu**: NEM szerepel a WADA tiltólistán külön\n\nKonklúzió: **versenyző sportolók NEM használhatják a GLOW stack-et** — a BPC-157 + TB-500 jelenléte a stack egészét versenytiltottá teszi. Doping-kontroll-mintában az immunoassay vagy LC-MS/MS detektálja a peptid-jelenlétet.",

@@ -1,7 +1,7 @@
 // HMG (Menopur / Pergonal) — Human Menopausal Gonadotropin, fertility-Rx
 // framing. Cross-frame counterpart: `hmg-perf` with AAS-PCT framing.
-// Sources: EMA Menopur SPC (Ferring 2002), Liu 2009 PMID 19389810,
-// Liu 2002 rFSH azoospermia PMID 12519877, Hill 2018 PMID 29800218.
+// Sources: EMA Menopur SPC (Ferring 2002), Liu 2009 PMID 19066302,
+// Liu 2002 Hum Reprod PMID 11870114, Hill 2018 (Int J Impot Res — no PMID).
 
 export default {
   "id": "hmg-peptid",
@@ -122,19 +122,18 @@ export default {
       "title": "Induction of spermatogenesis and fertility during gonadotropin treatment of gonadotropin-deficient infertile men: predictors of fertility outcome",
       "authors": "Liu PY, Baker HW, Jayadev V, Zacharin M, Conway AJ, Handelsman DJ.",
       "journal": "J Clin Endocrinol Metab. 2009;94(3):801-808.",
-      "pmid": "19389810"
+      "pmid": "19066302"
     },
     {
-      "title": "Efficacy and safety of recombinant human follicle-stimulating hormone in men with hypogonadotropic hypogonadism after HCG-monotherapy",
-      "authors": "Liu PY, Turner L, Rushford D, et al.",
+      "title": "Predicting pregnancy and spermatogenesis by survival analysis during gonadotrophin treatment of gonadotrophin-deficient infertile men",
+      "authors": "Liu PY, Gebski VJ, Turner L, Conway AJ, Wishart SM, Handelsman DJ.",
       "journal": "Hum Reprod. 2002;17(3):625-633.",
-      "pmid": "12519877"
+      "pmid": "11870114"
     },
     {
       "title": "Hypogonadism therapy and fertility outcomes",
       "authors": "Hill ED, Honig SC, Tabb KE, et al.",
-      "journal": "Int J Impot Res. 2018;30:262-269.",
-      "pmid": "29800218"
+      "journal": "Int J Impot Res. 2018;30:262-269."
     }
   ],
   "faq": [

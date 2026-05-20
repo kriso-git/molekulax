@@ -1,8 +1,8 @@
 // HCG (Pregnyl / Ovidrel / Choragon) — Ludzka Gonadotropina Kosmówkowa,
 // framing fertility-clinic (Rx). Wpis cross-frame: counterpart `hcg-perf`
 // obejmuje tę samą cząsteczkę w framingu PCT po AAS. Źródła: FDA Pregnyl
-// SmPC (Organon 1973), EMA Ovitrelle SPC, Crosnoe 2013 PMID 24327215,
-// Hill 2018 PMID 29800218, Coviello 2005 PMID 15713725.
+// SmPC (Organon 1973), EMA Ovitrelle SPC, Crosnoe 2013 (Transl Androl Urol —
+// no PMID), Hill 2018 (Int J Impot Res — no PMID), Coviello 2005 PMID 15713727.
 
 export default {
   "id": "hcg-peptid",
@@ -44,20 +44,18 @@ export default {
     {
       "title": "Use of human chorionic gonadotropin in men",
       "authors": "Crosnoe LE, Grober E, Ohl D, Kim ED.",
-      "journal": "Transl Androl Urol. 2013;2(3):195-202.",
-      "pmid": "24327215"
+      "journal": "Transl Androl Urol. 2013;2(3):195-202."
     },
     {
       "title": "Hypogonadism therapy and fertility outcomes",
       "authors": "Hill ED, Honig SC, Tabb KE, et al.",
-      "journal": "Int J Impot Res. 2018;30(6):262-269.",
-      "pmid": "29800218"
+      "journal": "Int J Impot Res. 2018;30(6):262-269."
     },
     {
-      "title": "Intratesticular testosterone concentration in normospermic and infertile men",
+      "title": "Low-dose human chorionic gonadotropin maintains intratesticular testosterone in normal men with testosterone-induced gonadotropin suppression",
       "authors": "Coviello AD, Matsumoto AM, Bremner WJ, et al.",
       "journal": "J Clin Endocrinol Metab. 2005;90(5):2595-2602.",
-      "pmid": "15713725"
+      "pmid": "15713727"
     },
     {
       "title": "Maintenance of spermatogenesis in hypogonadotropic hypogonadal men with human chorionic gonadotropin alone",

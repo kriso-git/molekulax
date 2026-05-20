@@ -1,8 +1,8 @@
 // EPO (Epogen / Procrit / Aranesp / Mircera) — Eritropoietin, klinikai-CKD-anémia
 // framing primary, WADA-tiltott endurance-doping kontextus secondary. Források:
 // FDA Epogen SmPC (Amgen 1989), EMA EPREX SPC, KDIGO 2024 Anemia Guidelines,
-// Lundby 2008/2011 EPO-doping kontextus PMID 18555820, Lippi 2006 blood-doping
-// review PMID 16572116, Locatelli 2012 ESAM trial PMID 22954890.
+// Lundby 2011 EPO normal humans PMID 20807784, Lippi 2006 blood-doping
+// review PMID 16769597, Jacobs 2005 ESAM 2003 survey PMID 15824128.
 
 export default {
   "id": "epo",
@@ -127,19 +127,19 @@ export default {
       "title": "Effects of recombinant human erythropoietin in normal humans",
       "authors": "Lundby C, Olsen NV.",
       "journal": "J Physiol. 2011;589(Pt 6):1265-71.",
-      "pmid": "21486810"
+      "pmid": "20807784"
     },
     {
       "title": "Biochemistry, physiology, and complications of blood doping: facts and speculation",
       "authors": "Lippi G, Franchini M, Salvagno GL, Guidi GC.",
       "journal": "Crit Rev Clin Lab Sci. 2006;43(4):349-91.",
-      "pmid": "16572116"
+      "pmid": "16769597"
     },
     {
-      "title": "Targeting a higher hemoglobin level with epoetin in dialysis patients: results of the European Survey on Anaemia Management (ESAM)",
-      "authors": "Locatelli F, Pisoni RL, Combe C, et al.",
-      "journal": "Nephrol Dial Transplant. 2012;27(4):1571-9.",
-      "pmid": "22954890"
+      "title": "Results of the European Survey on Anaemia Management 2003 (ESAM 2003): current status of anaemia management in dialysis patients, factors affecting epoetin dosage and changes in anaemia management over the last 5 years",
+      "authors": "Jacobs C, Frei D, Perkins AC.",
+      "journal": "Nephrol Dial Transplant. 2005;20 Suppl 3:iii3-24.",
+      "pmid": "15824128"
     },
     {
       "title": "Correction of anemia with epoetin alfa in chronic kidney disease (CHOIR trial)",

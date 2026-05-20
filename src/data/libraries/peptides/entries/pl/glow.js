@@ -53,26 +53,26 @@ export default {
       "value": "Podskórnie (SC), rotacja miejsc iniekcji"
     }
   ],
-  "mechanism": "Synergia stack-u GLOW opiera się na trzech różnych mechanizmach molekularnych, które zbiegają się na dwóch osiach regeneracji.\n\n**1) GHK-Cu (oś powierzchniowa / kosmetyczna)**: tripeptyd Gly-His-Lys z jonem miedzi epigenetycznie moduluje ekspresję ~4000+ genów (Pickart 2018, PMID 29371390), aktywuje syntezę kolagenu III w fibroblastach, moduluje dystrybucję melaniny i upreguluje antyoksydacyjne enzymy SOD / katalazę. Działa zarówno miejscowo, jak i ogólnoustrojowo na skórę, włosy i tkankę łączną.\n\n**2) BPC-157 (gojenie ogólnoustrojowe)**: pentadekapeptyd o 15 aminokwasach jest plejotropowym induktorem angiogenezy przez oś VEGF-VEGFR2 + Akt-eNOS (przeglądy Sikirica) oraz modulatorem sygnalizacji NO. Jego efekty regeneracji GI, ścięgien, mięśni i tkanki nerwowej są dobrze udokumentowane w modelach zwierzęcych.\n\n**3) TB-500 (ogólnoustrojowa mobilizacja aktyny)**: N-końcowy fragment tymozyny β4 sekwestruje pulę globularnej G-aktyny, ułatwia migrację komórek (mioblasty, komórki śródbłonka) i wspiera naprawę tkanek poprzez remodeling cytoszkieletu aktynowego. Funkcjonalny t½ ~2-3 dni (rzeczywiste wiązanie z receptorem jest znacznie krótsze).\n\n**Logika synergii**: GHK-Cu zapewnia szybkie, widoczne (2-4 tygodnie) ulepszenie na osi skórno-kolagenowej; para BPC-157 + TB-500 celuje w regenerację głębokotkankową / ogólnoustrojową (4-6 tygodni). Razem: dwie osie = pełniejszy profil regeneracyjny niż jakikolwiek pojedynczy komponent osobno.",
+  "mechanism": "Synergia stack-u GLOW opiera się na trzech różnych mechanizmach molekularnych, które zbiegają się na dwóch osiach regeneracji.\n\n**1) GHK-Cu (oś powierzchniowa / kosmetyczna)**: tripeptyd Gly-His-Lys z jonem miedzi epigenetycznie moduluje ekspresję ~4000+ genów (Pickart 2018, PMID 29986520), aktywuje syntezę kolagenu III w fibroblastach, moduluje dystrybucję melaniny i upreguluje antyoksydacyjne enzymy SOD / katalazę. Działa zarówno miejscowo, jak i ogólnoustrojowo na skórę, włosy i tkankę łączną.\n\n**2) BPC-157 (gojenie ogólnoustrojowe)**: pentadekapeptyd o 15 aminokwasach jest plejotropowym induktorem angiogenezy przez oś VEGF-VEGFR2 + Akt-eNOS (przeglądy Sikirica) oraz modulatorem sygnalizacji NO. Jego efekty regeneracji GI, ścięgien, mięśni i tkanki nerwowej są dobrze udokumentowane w modelach zwierzęcych.\n\n**3) TB-500 (ogólnoustrojowa mobilizacja aktyny)**: N-końcowy fragment tymozyny β4 sekwestruje pulę globularnej G-aktyny, ułatwia migrację komórek (mioblasty, komórki śródbłonka) i wspiera naprawę tkanek poprzez remodeling cytoszkieletu aktynowego. Funkcjonalny t½ ~2-3 dni (rzeczywiste wiązanie z receptorem jest znacznie krótsze).\n\n**Logika synergii**: GHK-Cu zapewnia szybkie, widoczne (2-4 tygodnie) ulepszenie na osi skórno-kolagenowej; para BPC-157 + TB-500 celuje w regenerację głębokotkankową / ogólnoustrojową (4-6 tygodni). Razem: dwie osie = pełniejszy profil regeneracyjny niż jakikolwiek pojedynczy komponent osobno.",
   "dosingInfo": "**Standardowy protokół GLOW** (poziom społecznościowy, NIE Rx kliniczne):\n\n- **GHK-Cu**: 1-3 mg SC codziennie, w tym samym oknie czasowym dnia (np. rano)\n- **BPC-157**: 250-500 µg SC codziennie, najlepiej w innym miejscu iniekcji niż pozostałe komponenty\n- **TB-500**: 2-2,5 mg SC 2× w tygodniu (np. poniedziałek + czwartek)\n\n**Cykl**: 4-6 tygodni ciągłego on, następnie 2-4 tygodnie off przed restartem. Komponenty rekonstytuowane (woda bakteriostatyczna) w **osobnych fiolkach** — NIE mieszane w jednej strzykawce (różna stabilność, wrażliwość na pH). Rotacja miejsc iniekcji (brzuch, udo, ramię) w celu minimalizacji podrażnień tkanki SC.",
   "studies": [
     {
       "tag": "GHK-Cu epigenetyka",
       "tagColor": "rgba(167,139,250,0.16)",
       "tagText": "#a78bfa",
-      "title": "GHK Peptide as a Natural Modulator of Multiple Cellular Pathways",
+      "title": "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data",
       "authors": "Pickart L, Margolina A.",
       "journal": "Int J Mol Sci",
       "year": "2018",
-      "pmid": "29371390",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29371390/",
+      "pmid": "29986520",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29986520/",
       "finding": "GHK-Cu moduluje ekspresję ~4000+ genów, synteza kolagenu + aktywacja enzymów antyoksydacyjnych. Badanie pojedynczego komponentu, NIE na poziomie stack-u."
     },
     {
       "tag": "BPC-157 przegląd",
       "tagColor": "rgba(14,165,233,0.16)",
       "tagText": "#7dd3fc",
-      "title": "BPC-157 w ortopedycznej medycynie sportowej — przegląd systematyczny",
+      "title": "Emerging Use of BPC-157 in Orthopaedic Sports Medicine: A Systematic Review",
       "authors": "Vasireddi N, Hahamyan H, Salata MJ, et al.",
       "journal": "HSS Journal",
       "year": "2025",
@@ -84,13 +84,13 @@ export default {
       "tag": "TB-500 angiogeneza",
       "tagColor": "rgba(99,102,241,0.18)",
       "tagText": "#818cf8",
-      "title": "Thymosin beta4 induces angiogenesis through Notch signaling",
-      "authors": "Goldstein AL, Hannappel E, Kleinman HK.",
-      "journal": "Ann N Y Acad Sci",
-      "year": "2010",
-      "pmid": "20536942",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20536942/",
-      "finding": "Tymozyna β4 (cząsteczka źródłowa dla TB-500) indukuje tworzenie naczyń przez sygnalizację Notch. Brak dowodów na poziomie stack-u GLOW."
+      "title": "Thymosin beta4 induces angiogenesis through Notch signaling in endothelial cells",
+      "authors": "Lv S, Cheng G, Zhou Y, Xu G.",
+      "journal": "Mol Cell Biochem",
+      "year": "2013",
+      "pmid": "23749167",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23749167/",
+      "finding": "Tymozyna β4 (cząsteczka źródłowa dla TB-500) indukuje tworzenie naczyń przez sygnalizację Notch w komórkach śródbłonka. Brak dowodów na poziomie stack-u GLOW."
     }
   ],
   "legalStatus": "**Kontekst zaopatrzenia**: żaden z trzech komponentów nie jest zarejestrowany jako GMP-Rx w HU ani UE dla wskazań ludzkich (z wyjątkiem tymozyny α1 w niektórych krajach — która NIE jest fragmentem β4). Użytkownicy zazwyczaj pozyskują peptydy przez kanały dostawców RUO (Research Use Only), co stanowi **szarą strefę prawną** różniącą się w zależności od kraju (HU/UE: małe ilości do użytku osobistego zwykle tolerowane; strona dostawcy jest bardziej rygorystyczna).\n\n**Status WADA (obowiązkowe ostrzeżenie)**:\n- **BPC-157**: na liście zakazanej WADA od 2022 w klasie S0 (Substancje niezatwierdzone) — zakaz całoroczny (in + out-of-competition)\n- **TB-500 / Tymozyna β4**: wcześniej zakazana (klasa S2)\n- **GHK-Cu**: NIE wymieniona osobno na liście zakazanej WADA\n\nWniosek: **sportowcy startujący w zawodach NIE MOGĄ używać stack-u GLOW** — obecność BPC-157 + TB-500 czyni stack jako całość zakazanym w zawodach. Kontrola dopingowa wykryje obecność peptydów immunoassayem lub LC-MS/MS.",
