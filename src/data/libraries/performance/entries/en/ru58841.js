@@ -8,7 +8,7 @@
 export default {
   "id": "ru58841",
   "name": "RU58841 (PSK-3841 / HMR-3841)",
-  "image": "/performance/tablet-pile-white.png",
+  "image": "/performance/topical-solution-clear.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Peripheral non-steroidal AR antagonist (NOT a 5α-reductase inhibitor) — Roussel-Uclaf 1992 designer. Topical AGA research chemical. Phase II terminated 1996 due to systemic feminization. Modern UGL formulations' local-only claim has sparse supporting data.",

@@ -84,7 +84,7 @@ export default {
       "routeId": "aq",
       "routeLabel": "IM/SC injekció (vízbázisú vial)",
       "label": "IM/SC injekció",
-      "image": "/performance/water-vial.png",
+      "image": "/performance/ampoule-glass.png",
       "legalStatus": "Rx-only (IM/SC formulation), FDA-jóváhagyott Carnitor IV/IM (Sigma-Tau) primary carnitine deficiency-re. EU + HU + PL Rx-only.",
       "bioavailability": "100% (IM/SC bypass-olja first-pass-loss-t)",
       "onsetTime": "30-60 perc (IM/SC abszorpció)",

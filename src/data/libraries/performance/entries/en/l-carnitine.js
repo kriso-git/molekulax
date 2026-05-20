@@ -84,7 +84,7 @@ export default {
       "routeId": "aq",
       "routeLabel": "IM/SC injection (water-based vial)",
       "label": "IM/SC injection",
-      "image": "/performance/water-vial.png",
+      "image": "/performance/ampoule-glass.png",
       "legalStatus": "Rx-only (IM/SC formulation), FDA-approved Carnitor IV/IM (Sigma-Tau) for primary carnitine deficiency. EU + HU + PL Rx-only.",
       "bioavailability": "100% (IM/SC bypasses first-pass loss)",
       "onsetTime": "30-60 minutes (IM/SC absorption)",

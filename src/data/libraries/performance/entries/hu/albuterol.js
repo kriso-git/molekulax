@@ -189,7 +189,7 @@ export default {
       "id": "inhaled",
       "routeId": "inhaled",
       "routeLabel": "MDI inhaláló",
-      "image": "/performance/tablet-pile-white.png",
+      "image": "/performance/inhaler-asthma.png",
       "dosing": "90-200 μg/szippantás PRN, max 1600 μg/24h WADA-szint",
       "halfLife": "1.5-3 óra (local)",
       "halfLifeActive": "1.5-3 óra",

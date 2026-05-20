@@ -85,7 +85,7 @@ export default {
       "routeId": "aq",
       "routeLabel": "Iniekcja IM/SC (fiolka wodna)",
       "label": "Iniekcja IM/SC",
-      "image": "/performance/water-vial.png",
+      "image": "/performance/ampoule-glass.png",
       "legalStatus": "Tylko Rx (formulacja IM/SC), zatwierdzone przez FDA Carnitor IV/IM (Sigma-Tau) na pierwotny niedobór karnityny. UE + HU + PL tylko Rx.",
       "bioavailability": "100% (IM/SC omija straty pierwszego przejścia)",
       "onsetTime": "30-60 minut (wchłanianie IM/SC)",

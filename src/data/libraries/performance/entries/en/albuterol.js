@@ -189,7 +189,7 @@ export default {
       "id": "inhaled",
       "routeId": "inhaled",
       "routeLabel": "MDI inhaler",
-      "image": "/performance/tablet-pile-white.png",
+      "image": "/performance/inhaler-asthma.png",
       "dosing": "90-200 μg/puff PRN, max 1600 μg/24h WADA threshold",
       "halfLife": "1.5-3 h (local)",
       "halfLifeActive": "1.5-3 h",

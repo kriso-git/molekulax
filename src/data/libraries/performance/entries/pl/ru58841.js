@@ -8,7 +8,7 @@
 export default {
   "id": "ru58841",
   "name": "RU58841 (PSK-3841 / HMR-3841)",
-  "image": "/performance/tablet-pile-white.png",
+  "image": "/performance/topical-solution-clear.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Peryferyjny niesteroidowy antagonista AR (NIE inhibitor 5α-reduktazy) — projektant Roussel-Uclaf 1992. Topikalna chemia badawcza AGA. Faza II zakończona 1996 z powodu feminizacji systemowej. Twierdzenie nowoczesnych formuł UGL o działaniu tylko lokalnym ma skąpe dane wspierające.",
