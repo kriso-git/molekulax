@@ -240,5 +240,11 @@ export const UI_HU = {
   "variant.tile.badge": "{n} forma",
   "variant.toggle.aria": "Adagolási mód váltása",
   "variant.toggle.current": "Aktív: {label}",
-  "variant.sr.changed": "Adagolási mód váltva: {label}"
+  "variant.sr.changed": "Adagolási mód váltva: {label}",
+  "entry.deprecated.eyebrow": "Elavult entry",
+  "entry.deprecated.title": "Ez az entry már nem elérhető",
+  "entry.deprecated.body": "Ezt a peptidet eltávolítottuk a könyvtárból. Visszairányítunk a peptid könyvtár tetejére…",
+  "entry.composition.eyebrow": "Összetétel",
+  "entry.composition.title": "Ez a stack az alábbi peptideket tartalmazza",
+  "entry.composition.role": "Szerep"
 };

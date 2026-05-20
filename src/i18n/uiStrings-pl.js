@@ -240,5 +240,11 @@ export const UI_PL = {
   "variant.tile.badge": "{n} formy",
   "variant.toggle.aria": "Zmień drogę podania",
   "variant.toggle.current": "Aktywne: {label}",
-  "variant.sr.changed": "Zmieniono drogę podania: {label}"
+  "variant.sr.changed": "Zmieniono drogę podania: {label}",
+  "entry.deprecated.eyebrow": "Wpis nieaktualny",
+  "entry.deprecated.title": "Ten wpis nie jest już dostępny",
+  "entry.deprecated.body": "Usunęliśmy ten peptyd z biblioteki. Przekierowujemy do góry biblioteki peptydów…",
+  "entry.composition.eyebrow": "Skład",
+  "entry.composition.title": "Ten stack zawiera następujące peptydy",
+  "entry.composition.role": "Rola"
 };
