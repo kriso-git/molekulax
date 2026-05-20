@@ -54,7 +54,11 @@ export default function VariantToggle({ libraryId, entryId, availableVariants, a
         ref={tablistRef}
         role="tablist"
         aria-label={t('variant.toggle.aria') || 'Switch administration route'}
-        className="flex flex-wrap items-center gap-1 p-1 rounded-2xl max-w-full"
+        className={
+          availableVariants.length >= 3
+            ? "inline-flex flex-col items-stretch gap-1 p-1 rounded-2xl w-fit max-w-full"
+            : "inline-flex items-center gap-1 p-1 rounded-full w-fit max-w-full"
+        }
         style={{
           background: 'var(--tint-soft)',
           border: '1px solid var(--tint-soft-border)',
@@ -72,7 +76,12 @@ export default function VariantToggle({ libraryId, entryId, availableVariants, a
               tabIndex={isActive ? 0 : -1}
               onClick={() => navigateTo(v.routeId)}
               onKeyDown={(e) => onKeyDown(e, idx)}
-              className="inline-flex items-center px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-[11px] tracking-[0.14em] sm:tracking-[0.18em] uppercase font-bold transition-all whitespace-normal text-center leading-tight"
+              className={
+                (availableVariants.length >= 3
+                  ? "flex items-center justify-start text-left "
+                  : "inline-flex items-center text-center ")
+                + "px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-[11px] tracking-[0.14em] sm:tracking-[0.18em] uppercase font-bold transition-all whitespace-nowrap leading-tight"
+              }
               style={
                 isActive
                   ? {
