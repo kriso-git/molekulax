@@ -716,6 +716,159 @@ export const LIBRARY_ENTRY_META = [
     "subCategory": "pct",
     "subSection": "gonad",
     "formFactors": ["aq"]
+  },
+  {
+    "id": "anastrozol",
+    "name": "Anastrozol (Arimidex)",
+    "image": "/pharmaceutical/blister-white-oval.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Triazole-class non-steroidal aromatáz-gátló (AI). FDA-jóváhagyott (1995 AstraZeneca) postmenopauzális ER+ emlőkarcinómára. AAS-ciklus E2-control golden-standard, 0.25-1 mg EOD-2x/hét bloodwork-titrálva.",
+      "en": "Triazole-class non-steroidal aromatase inhibitor (AI). FDA-approved (1995 AstraZeneca) for postmenopausal ER+ breast cancer. AAS-cycle E2-control golden-standard, 0.25-1 mg EOD-2x/week titrated by bloodwork.",
+      "pl": "Triazolowy niesteroidowy inhibitor aromatazy (AI). Zatwierdzony przez FDA (1995 AstraZeneca) dla pomenopauzalnego ER+ raka piersi. Złoty standard kontroli E2 podczas cykli AAS, 0,25-1 mg EOD-2x/tydzień miareczkowany na podstawie badań."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "ai",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "letrozol",
+    "name": "Letrozol (Femara)",
+    "image": "/pharmaceutical/blister-white-oval.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Triazole-class non-steroidal AI, az Anastrozolnál erősebb (~99% E2-szuppresszió 2.5 mg/nap). FDA-jóváhagyott (1997 Novartis). AAS-niche: hard-suppression Tren+Mast E2-control + gynecomastia-reverzálás (2.5 mg/nap 2-3 hét).",
+      "en": "Triazole-class non-steroidal AI, stronger than anastrozole (~99% E2 suppression at 2.5 mg/day). FDA-approved (1997 Novartis). AAS-niche: hard-suppression Tren+Mast E2-control + gynecomastia reversal (2.5 mg/day × 2-3 weeks).",
+      "pl": "Triazolowy niesteroidowy AI, silniejszy od Anastrozolu (~99% supresji E2 przy 2,5 mg/dzień). Zatwierdzony przez FDA (1997 Novartis). Nisza AAS: kontrola E2 przy ciężkiej supresji Tren+Mast + cofanie ginekomastii (2,5 mg/dzień × 2-3 tygodnie)."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "ai",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "exemestane",
+    "name": "Exemestane (Aromasin)",
+    "image": "/pharmaceutical/blister-white-oval.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Steroidal \"suicide\" (irreverzibilis) aromatáz-gátló. FDA-jóváhagyott (1999 Pfizer). Egyedi: 17-hydro-exemestane metabolit mild androgén — SHBG drop + free-Test rise visible. AAS-ban E2-stability vagy SHBG-emphasis-emphasizált választás.",
+      "en": "Steroidal \"suicide\" (irreversible) aromatase inhibitor. FDA-approved (1999 Pfizer). Unique: 17-hydro-exemestane metabolite is mildly androgenic — SHBG drop + visible free-Test rise. In AAS used when E2-stability or SHBG-emphasis matters.",
+      "pl": "Steroidowy \"samobójczy\" (nieodwracalny) inhibitor aromatazy. Zatwierdzony przez FDA (1999 Pfizer). Unikalne: metabolit 17-hydro-eksemestan jest słabo androgenny — spadek SHBG + widoczny wzrost wolnego testosteronu. W AAS gdy ważna stabilność E2 lub akcent SHBG."
+    },
+    "tier": 4,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "ai",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "cabergoline",
+    "name": "Cabergoline (Dostinex)",
+    "image": "/pharmaceutical/blister-white-oval.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Long-acting ergot-D2-dopamin agonista. EMA-jóváhagyott (1992 Pharmacia, ma Pfizer) hyperprolaktinémiára. AAS-ban: 19-Nor/Tren prolactin-control golden-standard, 0.25-0.5 mg 2x/hét bloodwork-titrálva. Long t1/2 ~63 h.",
+      "en": "Long-acting ergot D2 dopamine agonist. EMA-approved (1992 Pharmacia, now Pfizer) for hyperprolactinemia. In AAS: 19-Nor/Tren prolactin-control golden-standard, 0.25-0.5 mg 2x/week titrated by bloodwork. Long t1/2 ~63 h.",
+      "pl": "Długo działający ergotaminowy agonista D2 dopaminy. Zatwierdzony przez EMA (1992 Pharmacia, obecnie Pfizer) na hiperprolaktynemię. W AAS: złoty standard kontroli prolaktyny przy 19-Nor/Tren, 0,25-0,5 mg 2x/tydzień miareczkowany badaniami. Długi t1/2 ~63 h."
+    },
+    "tier": 4,
+    "wadaStatus": "allowed",
+    "subCategory": "pct",
+    "subSection": "prolactin",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "bromocriptine",
+    "name": "Bromocriptine (Parlodel)",
+    "image": "/pharmaceutical/blister-white-oval.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Első generációs ergot-D2-DA-agonista, Sandoz 1972 (Parlodel). Cabergoline elődje; rövidebb felezés (~3-12 h), több vegetatív mellékhatás (nausea, hypotensio). Cycloset (2009 FDA) T2DM-indikációval is.",
+      "en": "First-generation ergot D2 dopamine agonist, Sandoz 1972 (Parlodel). Cabergoline's predecessor; shorter half-life (~3-12 h), more vegetative side effects (nausea, hypotension). Also marketed as Cycloset (2009 FDA) for T2DM.",
+      "pl": "Pierwszej generacji ergotaminowy agonista D2 dopaminy, Sandoz 1972 (Parlodel). Poprzednik Kabergoliny; krótszy okres półtrwania (~3-12 h), więcej wegetatywnych skutków ubocznych (nudności, hipotensja). Sprzedawany też jako Cycloset (2009 FDA) na T2DM."
+    },
+    "tier": 4,
+    "wadaStatus": "allowed",
+    "subCategory": "pct",
+    "subSection": "prolactin",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "pramipexole",
+    "name": "Pramipexole (Mirapex)",
+    "image": "/pharmaceutical/blister-white-oval.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Non-ergot D3-D2 szelektív DA-agonista. FDA-jóváhagyott (1997 Boehringer) Parkinsonra + restless leg-re. AAS-PCT niche: prolactin-control + szexuális stimulácó (D3-szelektivitás). FDA black-box ICD-rizikó (impulzus-kontroll zavar).",
+      "en": "Non-ergot D3-D2 selective DA agonist. FDA-approved (1997 Boehringer) for Parkinson's + restless legs. AAS-PCT niche: prolactin-control + sexual stimulation (D3 selectivity). FDA black-box ICD risk (impulse-control disorder).",
+      "pl": "Nieergotaminowy selektywny agonista D3-D2 dopaminy. Zatwierdzony przez FDA (1997 Boehringer) na Parkinsona + RLS. Nisza PCT po AAS: kontrola prolaktyny + stymulacja seksualna (selektywność D3). Czarna ramka FDA dla ICD (zaburzenia kontroli impulsów)."
+    },
+    "tier": 3,
+    "wadaStatus": "allowed",
+    "subCategory": "pct",
+    "subSection": "prolactin",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "finasteride",
+    "name": "Finasteride (Propecia / Proscar)",
+    "image": "/pharmaceutical/blister-white-round.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Szelektív type-II 5α-reduktáz gátló. FDA-jóváhagyott (Proscar 1992 BPH 5 mg, Propecia 1997 AGA 1 mg). AAS-ban: scalp DHT-szuppresszió genetikailag prediszponált felhasználóknál a hajhullás lassítására. Type-I 5AR nem gátolt.",
+      "en": "Selective type-II 5α-reductase inhibitor. FDA-approved (Proscar 1992 BPH 5 mg, Propecia 1997 AGA 1 mg). In AAS: scalp DHT-suppression to slow hair loss in genetically-predisposed users. Type-I 5AR not inhibited.",
+      "pl": "Selektywny inhibitor 5α-reduktazy typu II. Zatwierdzony przez FDA (Proscar 1992 BPH 5 mg, Propecia 1997 AGA 1 mg). W AAS: supresja DHT na skórze głowy w celu spowolnienia wypadania włosów u genetycznie predysponowanych użytkowników. 5AR typu I nie zahamowany."
+    },
+    "tier": 4,
+    "wadaStatus": "allowed",
+    "subCategory": "pct",
+    "subSection": "5ar",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "dutasteride",
+    "name": "Dutasteride (Avodart)",
+    "image": "/pharmaceutical/blister-white-round.png",
+    "accentColor": "#D4537E",
+    "tagColor": "rgba(212,83,126,0.18)",
+    "shortDesc": {
+      "hu": "Dual 5α-reduktáz gátló (type-I + type-II). FDA-jóváhagyott (2001 GSK) BPH-ra. AAS-ban: ~90% scalp DHT + acne-csökkentés. Long t1/2 ~5 hét — washout ~6 hónap. PFS-rizikó magasabb mint Finasteride-on.",
+      "en": "Dual 5α-reductase inhibitor (type-I + type-II). FDA-approved (2001 GSK) for BPH. In AAS: ~90% scalp DHT + acne reduction. Long t1/2 ~5 weeks — washout ~6 months. Higher PFS risk vs Finasteride.",
+      "pl": "Podwójny inhibitor 5α-reduktazy (typ I + typ II). Zatwierdzony przez FDA (2001 GSK) na BPH. W AAS: ~90% supresji DHT skóry głowy + redukcja trądziku. Długi t1/2 ~5 tygodni — washout ~6 miesięcy. Wyższe ryzyko PFS vs Finasteryd."
+    },
+    "tier": 4,
+    "wadaStatus": "allowed",
+    "subCategory": "pct",
+    "subSection": "5ar",
+    "formFactors": ["oral"]
+  },
+  {
+    "id": "ru58841",
+    "name": "RU58841 (PSK-3841 / HMR-3841)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#a78bfa",
+    "tagColor": "rgba(167,139,250,0.18)",
+    "shortDesc": {
+      "hu": "Periférás non-steroidal AR-antagonista (NEM 5α-reduktáz gátló) — Roussel-Uclaf 1992 designer. Topikális AGA-research-chemical. Phase II 1996 terminálva systemikus feminizáció miatt. Modern UGL-formulák lokal-only claim-jét sparse data támasztja alá.",
+      "en": "Peripheral non-steroidal AR antagonist (NOT a 5α-reductase inhibitor) — Roussel-Uclaf 1992 designer. Topical AGA research chemical. Phase II terminated 1996 due to systemic feminization. Modern UGL formulations' local-only claim has sparse supporting data.",
+      "pl": "Peryferyjny niesteroidowy antagonista AR (NIE inhibitor 5α-reduktazy) — projektant Roussel-Uclaf 1992. Topikalna chemia badawcza AGA. Faza II zakończona 1996 z powodu feminizacji systemowej. Twierdzenie nowoczesnych formuł UGL o działaniu tylko lokalnym ma skąpe dane wspierające."
+    },
+    "tier": 2,
+    "wadaStatus": "banned",
+    "subCategory": "pct",
+    "subSection": "5ar",
+    "formFactors": ["topical"]
   }
 ]
 
