@@ -110,6 +110,11 @@
  * @property {I18nString}    [bioavailability]   Pharma-only — oralis/sc/im biológiai hasznosulás % vagy F-érték rövid leírással.
  * @property {I18nString}    [aromatization]    Performance-only — aromatázon át ösztrogénné konverzió szintje vagy útja.
  * @property {I18nString}    [hepatotoxicity]   Performance-only — DILI/hepatotoxikus profil rövid leírás. Tier-szerű kategorizálás opcionális.
+ *
+ * Post-roadmap 2026-05-20 — Anekdota section (optional):
+ * @property {I18nString}    [anecdote]   Sean's curated notes-ból kihúzott tapasztalat-narratíva, átfogalmazva semleges
+ *                                        "users report" tónusra. Null/missing → AnecdoteSection placeholder render.
+ *                                        Per-lang body files post-Phase-12 flat-string-ként tárolják lang szerint.
  */
 
 /**

@@ -26,6 +26,7 @@ import PharmaceuticalCalculator from './PharmaceuticalCalculator'
 import { useTilt, useMagnet, ParticleField, HoloRing, LabTerminal, Eyebrow, GlassCard, TabPills } from './entry-detail/shared'
 import ChemicalFormulaPlaceholder from './ChemicalFormulaPlaceholder'
 import VariantToggle from './VariantToggle'
+import AnecdoteSection from './AnecdoteSection'
 
 // Phase 10 — dynamic "Releváns X" / "Related X" / "Powiązane X" label per library.
 // Plural noun map per language; fallback strips "Könyvtár"/"Library"/"Biblioteka" from library.name.
@@ -1410,6 +1411,9 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  />
  </div>
  </section>
+
+ {/* ─── ANEKDOTA: collapsible community-experience narrative, early position ─── */}
+ <AnecdoteSection peptide={peptide} accent={accent} />
 
  {/* ─── BENTO GRID: key facts + benefits + mechanism ─── */}
  <section className="relative px-6 sm:px-10 pb-10">

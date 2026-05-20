@@ -1053,6 +1053,11 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  bioavailability: peptide.bioavailability || null,
  aromatization: peptide.aromatization || null,
  hepatotoxicity: peptide.hepatotoxicity || null,
+ // ─── Post-roadmap 2026-05-20 passthrough: Anekdota section content.
+ //     Per-lang body file → flat-string per `lang`; legacy {hu,en,pl} triplet
+ //     also supported via the `flat()` helper at render time in AnecdoteSection.
+ //     Null/missing → placeholder render. See [[feedback_adapter_passthrough]].
+ anecdote: peptide.anecdote || null,
  // ─── Phase 6 passthrough: pharmaceutical raw fields, nested under `pharma` to
  //     avoid clashing with the adapter-derived peptide `indications` rich shape.
  //     EntryDetail reads via `peptide.pharma?.atcCode` etc. when library.id === 'pharmaceutical'.
