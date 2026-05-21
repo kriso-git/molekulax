@@ -59,14 +59,21 @@ function deriveResearchUses(peptide, library) {
 }
 
 // Build a dosing block from dosageInfo + sensible defaults.
+// Variant-aware: when the resolved variant supplies a `dosing` string
+// (the variant-spread result of variants[].dosing), prefer that over the
+// entry-level dosageInfo — the entry-level text often hardcodes a single
+// route and would lie for the other variant.
 function deriveDosing(peptide) {
- if (!peptide.dosageInfo) return null
+ const notes = (typeof peptide.dosing === 'string' && peptide.dosing.trim())
+ ? peptide.dosing
+ : peptide.dosageInfo
+ if (!notes) return null
  return {
  typical: '', // not structured in live data
  range: '',
  frequency: null,
  cycle: null,
- notes: peptide.dosageInfo,
+ notes,
  timeline: [], // hidden when empty
  }
 }
@@ -106,7 +113,7 @@ function deriveLegalStatus(peptide, tier) {
 // generic 4-step primer using reconstitution defaults (vial / BAC / dose).
 // 3. For non-peptide entries without an explicit quickStart, return null so
 // EntryDetail graceful-skips the section (no `? mg-os fiola` placeholders).
-function deriveQuickStart(peptide, library) {
+function deriveQuickStart(peptide, library, activeVariantId) {
  if (Array.isArray(peptide.quickStart) && peptide.quickStart.length > 0) {
  return peptide.quickStart.map((s, i) => {
  if (s && s.title && s.detail) return s
@@ -121,6 +128,49 @@ function deriveQuickStart(peptide, library) {
  if (library?.id !== 'peptides') {
  return null
  }
+ // Intranasal spray default — different rituals than SC vial.
+ // Triggers when the resolved variant's routeId is 'in'.
+ if (activeVariantId === 'in') {
+ return [
+ {
+ step: 1,
+ title: { hu: 'Spray előkészítés', en: 'Spray priming', pl: 'Przygotowanie sprayu' },
+ detail: {
+ hu: 'Pre-mixed RU pharma esetén: 2–3 leszorítás a levegőbe első használat előtt. Research-chemical recon esetén: vial-tartalom átöntése spray-bottle-be.',
+ en: 'Pre-mixed RU pharma: 2–3 priming sprays into air before first use. Research-chemical recon: transfer reconstituted vial contents to a sterile nasal spray bottle.',
+ pl: 'Pre-mieszany RU pharma: 2–3 spraye próbne do powietrza przed pierwszym użyciem. Research-chemical: przenieść zawartość fiolki do sterylnej butelki sprayu.',
+ },
+ },
+ {
+ step: 2,
+ title: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' },
+ detail: {
+ hu: 'Hűtőszekrényben (2–8°C), eredeti pumpás flakonban. Mindennapi adagoláshoz szobahőre meleg ítendő.',
+ en: 'Refrigerated (2–8°C) in the original pump bottle. Bring to room temperature before daily dosing.',
+ pl: 'W lodówce (2–8°C) w oryginalnej butelce z pompką. Doprowadzić do temperatury pokojowej przed dawkowaniem.',
+ },
+ },
+ {
+ step: 3,
+ title: { hu: 'Beadás', en: 'Administration', pl: 'Podanie' },
+ detail: {
+ hu: 'Intranazális spray: 1–3 szippantás per orrlyuk, fej kissé előre döntve. Beadás után 1–2 percig ne fújd ki az orrod.',
+ en: 'Intranasal spray: 1–3 sprays per nostril, head tilted slightly forward. Avoid blowing your nose for 1–2 minutes after.',
+ pl: 'Spray donosowy: 1–3 spraye na nozdrze, głowa lekko pochylona do przodu. Nie wydmuchiwać nosa przez 1–2 min po podaniu.',
+ },
+ },
+ {
+ step: 4,
+ title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
+ detail: {
+ hu: 'Orr-irritáció, szárazság vagy szubjektív hatáshiány esetén dózis-csökkentés vagy szünet.',
+ en: 'Reduce dose or pause if nasal irritation, dryness, or lack of subjective effect occurs.',
+ pl: 'Zmniejsz dawkę lub przerwij w przypadku podrażnienia, suchości nosa lub braku efektu.',
+ },
+ },
+ ]
+ }
+ // Default SC-vial reconstitution path (the original behaviour).
  return [
  {
  step: 1,
@@ -441,9 +491,36 @@ const GENERIC_CONTRAINDICATIONS = [
  { hu: '18 év alatti életkor', en: 'Age under 18', pl: 'Wiek poniżej 18 lat' },
 ]
 
-function deriveSafetyProfile(peptide, categoryIds) {
+// SC injection-site signatures we strip from the IN variant. Mirrored
+// across HU/EN/PL keywords so we don't have to enumerate every translation.
+const SC_INJECTION_KEYWORDS = /injek|injec|wstrzyk|beadás helyé|injection-site/i
+
+// Intranasal-specific side effects, replace the SC injection bullets.
+const IN_SIDE_EFFECTS = [
+ { hu: 'Orr-irritáció, csípő érzés első dózisoknál', en: 'Nasal irritation, stinging on first doses', pl: 'Podrażnienie nosa, pieczenie przy pierwszych dawkach' },
+ { hu: 'Orr-szárazság vagy enyhe nyálkahártya-pirosság', en: 'Nasal dryness or mild mucosal redness', pl: 'Suchość nosa lub łagodne zaczerwienienie błony śluzowej' },
+ { hu: 'Átmeneti ízérzet-zavar (utánfolyás a torokba)', en: 'Transient bitter aftertaste (post-nasal drip)', pl: 'Przejściowy gorzki posmak (spływ do gardła)' },
+]
+
+// Intranasal-specific stop signals, additive to category whenToStop list.
+const IN_STOP_SIGNALS = [
+ { hu: 'Tartós, ismétlődő orrvérzés', en: 'Persistent, recurrent nosebleeds', pl: 'Utrzymujące się, nawracające krwawienia z nosa' },
+ { hu: 'Súlyos orrnyálkahártya-gyulladás vagy fekély', en: 'Severe nasal mucosal inflammation or ulcer', pl: 'Ciężkie zapalenie błony śluzowej nosa lub owrzodzenie' },
+]
+
+function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
  const primary = categoryIds[0]
  const set = CATEGORY_SAFETY[primary] || CATEGORY_SAFETY.recovery
+ if (activeVariantId === 'in') {
+ // Swap SC injection-site bullets for IN-specific irritation bullets;
+ // keep all systemic / cognitive / mood bullets intact.
+ const filtered = set.sideEffects.filter(s => !SC_INJECTION_KEYWORDS.test(s.hu || ''))
+ return {
+ sideEffects: [...filtered, ...IN_SIDE_EFFECTS],
+ whenToStop: [...set.whenToStop, ...IN_STOP_SIGNALS],
+ contraindications: GENERIC_CONTRAINDICATIONS,
+ }
+ }
  return {
  sideEffects: set.sideEffects,
  whenToStop: set.whenToStop,
@@ -588,6 +665,18 @@ function deriveFaqs(peptide, tier) {
 // the section.
 function deriveReconstitute(peptide, library) {
  if (library?.id !== 'peptides') return []
+ // Phase C variant support: if the resolved variant supplies its own
+ // reconstitute.steps[] (route-specific protocol — e.g. nasal spray transfer,
+ // pre-mixed RU pharma skip), honour that directly. Empty array hides the
+ // section, populated array renders the variant-specific protocol.
+ if (peptide.reconstitute && Array.isArray(peptide.reconstitute.steps)) {
+ return peptide.reconstitute.steps.map(s => (
+ typeof s === 'string' ? { hu: s, en: s, pl: s } : s
+ ))
+ }
+ // Pre-mixed pharmaceutical or non-injectable variant (defaultVariant in,
+ // no reconstitute supplied) — hide the section entirely.
+ if (peptide._activeVariantId === 'in') return []
  if (!peptide.defaultVialMg || !peptide.defaultBacMl) return []
  const vial = peptide.defaultVialMg
  const bac = peptide.defaultBacMl
@@ -619,8 +708,29 @@ function deriveReconstitute(peptide, library) {
  ]
 }
 
-// Quality indicators, 6 standard checks; status: PASS / WARN / FAIL.
-function deriveQualityIndicators() {
+// Quality indicators, 7 standard checks; status: PASS / WARN / FAIL.
+// Variant-aware: intranasal spray uses different markers than SC vials.
+function deriveQualityIndicators(activeVariantId) {
+ if (activeVariantId === 'in') {
+ // Intranasal spray quality markers — pump bottle, clear liquid form.
+ return [
+ { status: 'PASS', title: { hu: 'Tiszta, színtelen oldat', en: 'Clear, colorless solution', pl: 'Klarowny, bezbarwny roztwór' },
+ desc: { hu: 'Pre-mixed nasal spray jellemző megjelenése, üledék vagy elszíneződés nélkül.', en: 'Typical appearance of pre-mixed nasal spray, no sediment or discoloration.', pl: 'Typowy wygląd pre-mieszanego sprayu donosowego, bez osadu ani przebarwień.' } },
+ { status: 'PASS', title: { hu: 'COA-val (Certificate of Analysis)', en: 'Comes with COA (Certificate of Analysis)', pl: 'Z COA (certyfikat analizy)' },
+ desc: { hu: 'Független laboranalízis, ≥98% tisztaság, koncentráció-igazolás (μg/csepp).', en: 'Independent lab analysis, ≥98% purity, concentration certified (μg/spray).', pl: 'Niezależna analiza laboratoryjna, ≥98% czystości, potwierdzona koncentracja (μg/spray).' } },
+ { status: 'PASS', title: { hu: 'Sértetlen pumpás flakon', en: 'Intact pump bottle', pl: 'Nienaruszona butelka z pompką' },
+ desc: { hu: 'Eredeti pumpás-szerkezet sértetlen, gyári pecsét ép.', en: 'Original pump mechanism intact, factory seal unbroken.', pl: 'Oryginalny mechanizm pompki nienaruszony, plomba fabryczna nieuszkodzona.' } },
+ { status: 'PASS', title: { hu: 'Egyenletes szippantás', en: 'Consistent spray dose', pl: 'Równomierne dawkowanie' },
+ desc: { hu: 'Egyenletes spray-kép, állandó μg/szippantás dózis (pumpa-priming után).', en: 'Even spray plume, consistent μg/spray dose (after priming).', pl: 'Równomierna chmura sprayu, stała dawka μg/spray (po przygotowaniu).' } },
+ { status: 'WARN', title: { hu: 'Tárolási hőmérséklet', en: 'Storage temperature', pl: 'Temperatura przechowywania' },
+ desc: { hu: 'Ha a flakon hosszabb ideig szobahőn vagy fényen állt, peptid-degradáció lehetséges.', en: 'Extended room-temp or light exposure may degrade the peptide.', pl: 'Długie wystawienie na temperaturę pokojową lub światło może degradować peptyd.' } },
+ { status: 'FAIL', title: { hu: 'Elszíneződés / zavaros oldat', en: 'Discoloration / cloudy liquid', pl: 'Przebarwienie / mętny roztwór' },
+ desc: { hu: 'Sárga, zavaros vagy lebegő részecskés folyadék degradációt jelez, ne használd.', en: 'Yellow, cloudy, or particulate liquid indicates degradation, do not use.', pl: 'Żółty, mętny lub z cząstkami roztwór wskazuje degradację, nie używaj.' } },
+ { status: 'FAIL', title: { hu: 'Sérült flakon / pumpa', en: 'Damaged bottle / pump', pl: 'Uszkodzona butelka / pompka' },
+ desc: { hu: 'Repedt flakon, sérült pumpa, sterilitás megszűnt, ne használd.', en: 'Cracked bottle or broken pump, sterility compromised, discard.', pl: 'Pęknięta butelka lub uszkodzona pompka, sterylność naruszona.' } },
+ ]
+ }
+ // Default SC-vial quality markers (lyophilized peptide).
  return [
  { status: 'PASS', title: { hu: 'Fehér / törtfehér por', en: 'White / off-white powder', pl: 'Biały / kremowy proszek' },
  desc: { hu: 'Steril lyofilizált peptid jellemző megjelenése.', en: 'Typical appearance of sterile lyophilized peptide.', pl: 'Typowy wygląd sterylnego lyofilizowanego peptydu.' } },
@@ -953,9 +1063,13 @@ function deriveIndications(peptide, categoryIds, library, lang) {
 }
 
 // Extended descriptive paragraphs, split full description into intro + body.
+// Variant-aware: an optional variant.whatIs override (full prose) replaces the
+// entry-level description when the active variant supplies one. Otherwise the
+// base description is used — which should be written route-neutral whenever an
+// entry has variants[].
 function deriveWhatIs(peptide) {
+ if (typeof peptide.whatIs === 'string' && peptide.whatIs.trim()) return peptide.whatIs
  if (!peptide.description) return null
- // Use the full description; the live data is already comprehensive.
  return peptide.description
 }
 
@@ -984,6 +1098,9 @@ function resolveVariant(entry, variantId) {
  body: { ...(entry.body || {}), ...(variant.body || {}) },
  quality: { ...(entry.quality || {}), ...(variant.quality || {}) },
  labTerminal: { ...(entry.labTerminal || {}), ...(variant.labTerminal || {}) },
+ // Expose the active route id on the resolved peptide so downstream
+ // deriver fns can branch on it without an extra parameter.
+ _activeVariantId: variant.routeId,
  }
  delete peptide.variants
  delete peptide.defaultVariant
@@ -1016,8 +1133,16 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  tierLabel: meta.label,
  category: primaryCat ? primaryCat.label : { hu: '-', en: '-', pl: '-' },
  oneLiner: extractOneLiner(peptide),
- keyFacts: peptide.keyInfo || [],
- quickStart: deriveQuickStart(peptide, library),
+ // When an entry has variants[], hide the static "Beadás/Route/Podanie"
+ // keyInfo row — the VariantToggle is now the single source of truth for
+ // route, so the duplicated row contradicts the SC variant when the entry
+ // body still says "Intranazális" (or vice versa).
+ keyFacts: (peptide.keyInfo || []).filter(k => {
+ if (!availableVariants) return true
+ const label = typeof k.label === 'string' ? k.label : (k.label?.hu || '')
+ return !/^(beadás|route|podanie)$/i.test(String(label).trim())
+ }),
+ quickStart: deriveQuickStart(peptide, library, activeVariantId),
  keyBenefits: deriveKeyBenefits(peptide, library),
  whatIs: deriveWhatIs(peptide),
  mechanism: deriveMechanism(peptide),
@@ -1039,10 +1164,10 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  },
  // ─── v2-only enriched fields (v1 ignores these) ──────────────────
  indications: deriveIndications(peptide, categoryIds, library, lang),
- safetyProfile: deriveSafetyProfile(peptide, categoryIds),
+ safetyProfile: deriveSafetyProfile(peptide, categoryIds, activeVariantId),
  interactions: deriveInteractions(peptide, categoryIds, related),
  reconstitute: deriveReconstitute(peptide, library),
- qualityIndicators: deriveQualityIndicators(),
+ qualityIndicators: deriveQualityIndicators(activeVariantId),
  expectations: deriveExpectations(peptide, categoryIds),
  related,
  faqList: deriveFaqs(peptide, tier),
