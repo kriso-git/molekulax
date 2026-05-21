@@ -17,3 +17,6 @@ lh-*.json
 
 # Local image staging (Gemini raw PNG drops, etc.)
 tmp/
+
+# Git worktrees (subagent-driven development isolated workspaces)
+.worktrees/
