@@ -45,13 +45,13 @@ export default {
       "tag": "Research",
       "tagColor": "rgba(34,211,238,0.16)",
       "tagText": "#22d3ee",
-      "title": "Semax in ischaemic stroke: pharmacology and clinical experience",
-      "authors": "Gusev EI, Skvortsova VI, Miasoedov NF, et al.",
-      "journal": "Zh Nevrol Psikhiatr",
-      "year": "2018",
-      "pmid": "29947337",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29947337/",
-      "finding": "Semax improves cognitive and motor recovery after ischaemic stroke, correlated with BDNF elevation."
+      "title": "Neuroprotective and antiamnesic effects of Semax during experimental ischemic infarction of the cerebral cortex",
+      "authors": "Romanova GA, Barskov IV, Ostrovskaya RU, et al.",
+      "journal": "Bull Exp Biol Med",
+      "year": "2006",
+      "pmid": "17603664",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17603664/",
+      "finding": "Semax exerts neuroprotective and antiamnesic effects in experimental ischemic cortical infarction via intranasal administration."
     }
   ],
   "anecdote": "Community reports on Semax are mixed: some users find it effective, while others report little subjective effect, including when administered subcutaneously. Those who do respond often describe a \"clean focus\" sensation — subtle but noticeable. Effects on neuroplasticity are thought to build gradually, as brain-chemistry changes are not instantaneous. Semax is used clinically in some countries (notably Russia) but remains less common in the West.\n\nSemax is most often administered intra-nasally and is typically cycled in research settings (a few weeks on, then off) rather than used continuously. Available data suggests Semax can increase dopamine and serotonin tone, raise BDNF, and aid in hypoxia tolerance, making it a meaningfully studied neurotrophic peptide.",

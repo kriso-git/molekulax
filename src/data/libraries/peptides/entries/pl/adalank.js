@@ -12,7 +12,7 @@ export default {
   "defaultBacMl": 0,
   "defaultDoseMcg": 500,
   "shortDesc": "Stabilizowany Selank, anksjolityczny + nootropowy",
-  "description": "Adalank (N-Acetyl Selank Amidate) to stabilizowana pochodna Selanka z N-acetylacją i C-amidacją, lepsza stabilność i przenikalność BBB.",
+  "description": "Adalank (N-Acetyl Selank Amidate) to stabilizowana pochodna Selanka z N-acetylacją i C-amidacją, lepsza stabilność i przenikalność BBB. Dostępny w dwóch formach: iniekcja podskórna i spray donosowy. Research-chemical analog Selanka, ograniczone dane humanitarne, brak peer-reviewed badań klinicznych.",
   "keyInfo": [
     {
       "label": "Typ",
@@ -39,19 +39,62 @@ export default {
       "value": "Placeholder, obraz później"
     }
   ],
-  "dosageInfo": "Badania: 200–500 µg donosowo 1–2× dziennie.",
-  "studies": [
+  "dosageInfo": "Anegdotyczny protokół badawczy: 100–300 µg/dzień (SC lub IN). Ograniczone dane humanitarne, brak peer-reviewed badań klinicznych.",
+  "studies": [],
+  "variants": [
     {
-      "tag": "Badania",
-      "tagColor": "rgba(103,232,249,0.16)",
-      "tagText": "#67e8f9",
-      "title": "Selank and its modifications: anxiolytic mechanisms",
-      "authors": "Volkova A, Bayramov I, Khairova R, et al.",
-      "journal": "Front Pharmacol",
-      "year": "2016",
-      "pmid": "27199746",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27199746/",
-      "finding": "Pochodne Selanka działają anksjolitycznie przez modulację układu GABA."
+      "id": "sc",
+      "routeId": "sc",
+      "routeLabel": "Iniekcja podskórna",
+      "image": "/peptides/water-vial.png",
+      "dosing": "100–300 μg SC/dzień (anegdotyczny protokół badawczy, ograniczone dane humanitarne)",
+      "halfLife": "~10–20 min w osoczu (zmodyfikowany analog Selanka, hipotetycznie dłuższy niż Selank)",
+      "halfLifeActive": "~24 h (OUN, anksjolityczny downstream)",
+      "bioavailability": "~80–100% (SC)",
+      "onsetTime": "15–30 min",
+      "routeNote": "Research-chemical analog Selanka. Hipotetyczny efekt anksjolityczny. Ograniczone dane humanitarne, anegdotyczne użycie.",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 100, "medium": 200, "high": 300 },
+        "unit": "μg SC/dzień",
+        "note": "Anegdotyczny zakres dawkowania research chemical. NIE poparty peer-reviewed RCT. Fiolka 5 mg + 2 ml wody BAC = 2500 μg/ml."
+      },
+      "reconstitute": {
+        "steps": [
+          "Liofilizowana fiolka 5 mg + 2 ml wody bakteriostatycznej",
+          "Powoli wstrzyknąć wodę na ściankę fiolki, NIE bezpośrednio na proszek",
+          "Odczekać 30 sekund, delikatnie zakręcić (NIE potrząsać)",
+          "Przechowywanie: w lodówce (2–8°C), maks. 28 dni"
+        ]
+      }
+    },
+    {
+      "id": "in",
+      "routeId": "in",
+      "routeLabel": "Spray donosowy",
+      "image": "/performance/nasal-spray-clear.png",
+      "dosing": "100–300 μg/dzień donosowo (community route)",
+      "halfLife": "~5–10 min w osoczu",
+      "halfLifeActive": "~24 h (OUN)",
+      "bioavailability": "~30–40% (IN)",
+      "onsetTime": "5–15 min",
+      "routeNote": "Research-chemical trasa IN. Brak peer-reviewed danych klinicznych, protokoły społecznościowe.",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 100, "medium": 200, "high": 300 },
+        "unit": "μg IN/dzień",
+        "note": "Research-chemical recon: fiolka 5 mg + 5 ml sterylnej wody BAC + przeniesienie do butelki sprayu donosowego. Anegdotyczne dawkowanie."
+      },
+      "reconstitute": {
+        "steps": [
+          "Liofilizowana fiolka 5 mg + 5 ml sterylnej wody bakteriostatycznej",
+          "Powoli wstrzyknąć wodę na ściankę fiolki, delikatnie zakręcić (NIE potrząsać)",
+          "Przenieść do sterylnej butelki sprayu donosowego (pompka 50 μl/puff = ~50 μg/puff)",
+          "Stężenie: 1000 μg/ml — 1 puff = ~50 μg, 2–6 puffów/dzień w zależności od dawki",
+          "Przechowywanie: w lodówce (2–8°C), maks. 28 dni; przed użyciem priming 2–3 pustych puffów"
+        ]
+      }
     }
-  ]
+  ],
+  "defaultVariant": "sc"
 }

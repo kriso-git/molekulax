@@ -52,18 +52,6 @@ export default {
       "pmid": "31599840",
       "url": "https://pubmed.ncbi.nlm.nih.gov/31599840/",
       "finding": "Szignifikáns javulás HSDD tüneteiben két Fázis 3 RCT-ben, kedvező biztonsági profillal."
-    },
-    {
-      "tag": "Hosszú távú adatok",
-      "tagColor": "rgba(244,63,94,0.14)",
-      "tagText": "#fda4af",
-      "title": "Long-term safety and efficacy of bremelanotide for HSDD",
-      "authors": "Simon JA, Kingsberg SA, Clayton AH, et al.",
-      "journal": "Journal of Sexual Medicine",
-      "year": "2022",
-      "pmid": "34953703",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34953703/",
-      "finding": "52 hetes nyílt kiterjesztés: tartós tüneti javulás HSDD-ben, mellékhatások időben csökkenő tendenciával."
     }
   ],
   "anecdote": "A PT-141 egy széles körben használt és észrevehetően érzékelhető libidó-vegyület. A felhasználók gyakran erős, némileg spontán vágynövekedésről számolnak be — nem csak enyhe javulásról — más tényezőktől függetlenül, mivel közvetlenül a melanokortin receptorokon keresztül hat. A hányinger nagyon gyakori mellékhatás, különösen magasabb dózisoknál vagy a használat elején, és kipirulás vagy átmeneti vérnyomás-emelkedés is előfordul. Tadalafil vagy Szildenafil-szerű PDE5-inhibitorral kombinálva a felhasználók fokozott vágyról és teljesítményről számolnak be, potenciális szinergiával a vérnyomás-interakcióból.\n\nA PT-141-et jellemzően szubkután adják be, mint a legtöbb peptidet. Az adagolás változó és erősen egyéni.",

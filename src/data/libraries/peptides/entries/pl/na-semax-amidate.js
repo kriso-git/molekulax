@@ -12,7 +12,7 @@ export default {
   "defaultBacMl": 0,
   "defaultDoseMcg": 400,
   "shortDesc": "N-acetylowany, amidowany Semax, dłuższy t½, silniejszy nootropowy",
-  "description": "NA Semax Amidate (N-Acetyl Semax Amidate) to stabilizowany Semax z N-acetylacją + C-amidacją: dłuższy t½ i silniejszy, trwalszy efekt nootropowy.",
+  "description": "NA Semax Amidate (N-Acetyl Semax Amidate) to stabilizowany Semax z N-acetylacją + C-amidacją: dłuższy t½ i silniejszy, trwalszy efekt nootropowy. Dostępny w dwóch formach: iniekcja podskórna i spray donosowy. Research chemical, ograniczone dane humanitarne, brak peer-reviewed badań klinicznych.",
   "keyInfo": [
     {
       "label": "Typ",
@@ -39,19 +39,62 @@ export default {
       "value": "Placeholder, obraz później"
     }
   ],
-  "dosageInfo": "Badania: 100–400 µg donosowo 1–2× dziennie, w cyklach.",
-  "studies": [
+  "dosageInfo": "Anegdotyczny protokół badawczy: 200–600 µg/dzień (SC lub IN). Ograniczone dane humanitarne, brak peer-reviewed badań klinicznych.",
+  "studies": [],
+  "variants": [
     {
-      "tag": "Badania",
-      "tagColor": "rgba(34,211,238,0.16)",
-      "tagText": "#22d3ee",
-      "title": "Semax modifications: pharmacology and stability",
-      "authors": "Shadrina MI, Dolotov OV, Grivennikov IA, et al.",
-      "journal": "Neurosci Behav Physiol",
-      "year": "2010",
-      "pmid": "20066513",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/20066513/",
-      "finding": "Modyfikowane analogi Semaxu są stabilniejsze i wywołują trwalszy wzrost BDNF."
+      "id": "sc",
+      "routeId": "sc",
+      "routeLabel": "Iniekcja podskórna",
+      "image": "/peptides/water-vial.png",
+      "dosing": "200–600 μg SC/dzień (anegdotyczny protokół badawczy, ograniczone dane humanitarne)",
+      "halfLife": "~30–60 min w osoczu (N-acetyl + amidacja = wyższa stabilność enzymatyczna niż Semax)",
+      "halfLifeActive": "~24+ h (OUN)",
+      "bioavailability": "~80–100% (SC)",
+      "onsetTime": "15–30 min",
+      "routeNote": "Research-chemical analog Semaxu (modyfikacja N-acetyl + C-amid). Hipotetyczny dłuższy t½ vs Semax. Ograniczone dane humanitarne.",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 200, "medium": 400, "high": 600 },
+        "unit": "μg SC/dzień",
+        "note": "Anegdotyczny zakres dawkowania research chemical, NIE peer-reviewed RCT. Fiolka 5 mg + 2 ml wody BAC = 2500 μg/ml."
+      },
+      "reconstitute": {
+        "steps": [
+          "Liofilizowana fiolka 5 mg + 2 ml wody bakteriostatycznej",
+          "Powoli wstrzyknąć wodę na ściankę fiolki, NIE bezpośrednio na proszek",
+          "Odczekać 30 sekund, delikatnie zakręcić (NIE potrząsać)",
+          "Przechowywanie: w lodówce (2–8°C), maks. 28 dni"
+        ]
+      }
+    },
+    {
+      "id": "in",
+      "routeId": "in",
+      "routeLabel": "Spray donosowy",
+      "image": "/performance/nasal-spray-clear.png",
+      "dosing": "200–600 μg/dzień donosowo (community route)",
+      "halfLife": "~10–15 min w osoczu",
+      "halfLifeActive": "~24+ h (OUN)",
+      "bioavailability": "~30–40% (IN)",
+      "onsetTime": "5–15 min",
+      "routeNote": "Research-chemical trasa IN, protokoły społecznościowe. Brak peer-reviewed danych.",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 200, "medium": 400, "high": 600 },
+        "unit": "μg IN/dzień",
+        "note": "Research-chemical recon: fiolka 5 mg + 5 ml sterylnej wody BAC + przeniesienie do butelki sprayu donosowego. Anegdotyczne dawkowanie."
+      },
+      "reconstitute": {
+        "steps": [
+          "Liofilizowana fiolka 5 mg + 5 ml sterylnej wody bakteriostatycznej",
+          "Powoli wstrzyknąć wodę na ściankę fiolki, delikatnie zakręcić (NIE potrząsać)",
+          "Przenieść do sterylnej butelki sprayu donosowego (pompka 50 μl/puff = ~50 μg/puff)",
+          "Stężenie: 1000 μg/ml — 1 puff = ~50 μg, 4–12 puffów/dzień w zależności od dawki",
+          "Przechowywanie: w lodówce (2–8°C), maks. 28 dni; przed użyciem priming 2–3 pustych puffów"
+        ]
+      }
     }
-  ]
+  ],
+  "defaultVariant": "sc"
 }

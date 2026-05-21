@@ -45,13 +45,13 @@ export default {
       "tag": "Kutatás",
       "tagColor": "rgba(34,211,238,0.16)",
       "tagText": "#22d3ee",
-      "title": "Semax in ischaemic stroke: pharmacology and clinical experience",
-      "authors": "Gusev EI, Skvortsova VI, Miasoedov NF, et al.",
-      "journal": "Zh Nevrol Psikhiatr",
-      "year": "2018",
-      "pmid": "29947337",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29947337/",
-      "finding": "A Semax javítja a kognitív és motoros felépülést iszkémiás stroke után, BDNF-emelkedéssel összefüggésben."
+      "title": "Neuroprotective and antiamnesic effects of Semax during experimental ischemic infarction of the cerebral cortex",
+      "authors": "Romanova GA, Barskov IV, Ostrovskaya RU, et al.",
+      "journal": "Bull Exp Biol Med",
+      "year": "2006",
+      "pmid": "17603664",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17603664/",
+      "finding": "A Semax neuroprotektív és antiamnesticus hatást fejt ki kísérletes iszkémiás kortikális infarktus során, intranazális beadással."
     }
   ],
   "anecdote": "A Semax-szal kapcsolatos közösségi beszámolók vegyesek: egyes felhasználók hatékonynak találják, mások csekély szubjektív hatásról számolnak be, akár szubkután beadás esetén is. Akik reagálnak rá, gyakran \"tiszta fókusz\" érzésről beszélnek — finom, de észrevehető. A neuroplaszticitásra gyakorolt hatások feltehetően fokozatosan épülnek fel, mivel az agyi kémiai változások nem azonnaliak. A Semaxot egyes országokban (különösen Oroszországban) klinikailag használják, de Nyugaton kevésbé elterjedt.\n\nA Semaxot leggyakrabban intranazálisan adják be, és kutatási környezetben általában ciklusokban használják (néhány hét bevitel, majd szünet). A rendelkezésre álló adatok arra utalnak, hogy a Semax növelheti a dopamin- és szerotonin-tónust, emelheti a BDNF-szintet, és segítheti a hipoxia tűrőképességet.",
