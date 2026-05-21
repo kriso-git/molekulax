@@ -1852,8 +1852,35 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
  {/* ─── FAQ CONSOLE ─── Phase 10: removed entirely (features.faq is false across all libraries) ─── */}
 
- {/* ─── CALCULATOR ─── Phase 10 flag-gated, peptide MiniCalc only ─── */}
- {library?.features?.calculator && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg && (
+ {/* ─── CALCULATOR ─── Phase 10 flag-gated, peptide MiniCalc only.
+ Phase C variant-aware: intranasal (and other fixed-dose) variants
+ hide the reconstitution calculator and render a "recommended dose"
+ info card built from variant.dosing instead. */}
+ {library?.features?.calculator && peptide._activeVariantId === 'in' && peptide.dosing?.notes && (
+ <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
+ <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
+ <div
+ className="relative p-6 rounded-2xl"
+ style={{
+ background: `linear-gradient(135deg, ${accent}22, transparent 70%)`,
+ border: `1px solid ${accent}44`,
+ }}
+ >
+ <p className="text-[10px] tracking-[0.3em] uppercase font-bold mb-2" style={{ color: accent }}>
+ {tr({ hu: 'Ajánlott adagolás', en: 'Recommended dose', pl: 'Zalecane dawkowanie' })}
+ </p>
+ <p className="text-base leading-relaxed font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>
+ {peptide.dosing.notes}
+ </p>
+ {peptide.doseCalc?.note && (
+ <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+ {peptide.doseCalc.note}
+ </p>
+ )}
+ </div>
+ </section>
+ )}
+ {library?.features?.calculator && peptide._activeVariantId !== 'in' && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg && (
  <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
  <div

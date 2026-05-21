@@ -12,7 +12,7 @@ export default {
   "defaultBacMl": 0,
   "defaultDoseMcg": 500,
   "shortDesc": "Stabilizált Selank, anxiolytikus + nootróp",
-  "description": "Az Adalank (N-Acetyl Selank Amidate) a Selank stabilizált származéka N-acetilációval és C-amidálással, jobb stabilitással és vér-agy gát átjárhatósággal.",
+  "description": "Az Adalank (N-Acetyl Selank Amidate) a Selank stabilizált származéka N-acetilációval és C-amidálással, jobb stabilitással és vér-agy gát átjárhatósággal. Két formában érhető el: szubkután injekció és intranazális spray. Research-chemical Selank-analog, korlátozott humán adat, nincs peer-reviewed klinikai vizsgálat.",
   "keyInfo": [
     {
       "label": "Típus",
@@ -39,19 +39,62 @@ export default {
       "value": "Placeholder, kép később"
     }
   ],
-  "dosageInfo": "Kutatási: 200–500 µg intranazálisan naponta 1–2×.",
-  "studies": [
+  "dosageInfo": "Anekdotális research-protokoll: 100–300 µg/nap (SC vagy IN). Korlátozott humán adat, nincs peer-reviewed klinikai vizsgálat.",
+  "studies": [],
+  "variants": [
     {
-      "tag": "Kutatás",
-      "tagColor": "rgba(103,232,249,0.16)",
-      "tagText": "#67e8f9",
-      "title": "Selank and its modifications: anxiolytic mechanisms",
-      "authors": "Volkova A, Bayramov I, Khairova R, et al.",
-      "journal": "Front Pharmacol",
-      "year": "2016",
-      "pmid": "27199746",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/27199746/",
-      "finding": "A Selank-származékok anxiolitikus hatást fejtenek ki GABA-rendszer modulációján keresztül."
+      "id": "sc",
+      "routeId": "sc",
+      "routeLabel": "Szubkután injekció",
+      "image": "/peptides/water-vial.png",
+      "dosing": "100–300 μg SC/nap (anekdotális research-protokoll, korlátozott humán adat)",
+      "halfLife": "~10–20 perc plazma (módosított Selank-analog, hipotetikusan hosszabb mint Selank)",
+      "halfLifeActive": "~24 óra (központi idegrendszer, anxiolytic downstream)",
+      "bioavailability": "~80–100% (SC)",
+      "onsetTime": "15–30 perc",
+      "routeNote": "Research-chemical Selank-analog. Hipotetikus anxiolytic hatás. Korlátozott humán adat, anekdotális használat.",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 100, "medium": 200, "high": 300 },
+        "unit": "μg SC/nap",
+        "note": "Research-chemical anekdotális dózistartomány. NEM peer-reviewed RCT-vel alátámasztott. 5 mg vial + 2 ml BAC water = 2500 μg/ml."
+      },
+      "reconstitute": {
+        "steps": [
+          "5 mg lyophilized vial + 2 ml bakteriosztatikus víz",
+          "Lassan az üvegfalra injektáld a vizet, NE direkt a porra",
+          "Várj 30 másodpercet, óvatosan forgasd (NE rázd)",
+          "Tárolás: hűtőben (2–8°C), max 28 nap"
+        ]
+      }
+    },
+    {
+      "id": "in",
+      "routeId": "in",
+      "routeLabel": "Intranazális spray",
+      "image": "/performance/nasal-spray-clear.png",
+      "dosing": "100–300 μg/nap szippantva (community-route)",
+      "halfLife": "~5–10 perc plazma",
+      "halfLifeActive": "~24 óra (központi idegrendszer)",
+      "bioavailability": "~30–40% (IN)",
+      "onsetTime": "5–15 perc",
+      "routeNote": "Research-chemical IN route. Nincs peer-reviewed klinikai adat, community-sourced protokollok.",
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": { "low": 100, "medium": 200, "high": 300 },
+        "unit": "μg IN/nap",
+        "note": "Research-chemical recon: 5 mg vial + 5 ml steril BAC water + transfer to nasal spray bottle. Anekdotális dosing."
+      },
+      "reconstitute": {
+        "steps": [
+          "5 mg lyophilized vial + 5 ml steril bakteriosztatikus víz",
+          "Lassan az üvegfalra injektáld a vizet, óvatosan forgasd (NE rázd)",
+          "Töltsd át steril orrspray-flakonba (50 μl/puff pumpa, ~50 μg/puff)",
+          "Koncentráció: 1000 μg/ml — 1 puff = ~50 μg, 2–6 puff/nap dózistól függően",
+          "Tárolás: hűtőben (2–8°C), max 28 nap; használat előtt primingolj 2–3 üres puffot"
+        ]
+      }
     }
-  ]
+  ],
+  "defaultVariant": "sc"
 }
