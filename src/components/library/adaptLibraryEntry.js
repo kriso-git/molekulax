@@ -103,6 +103,20 @@ function deriveLegalStatus(peptide, tier) {
  }
 }
 
+// Returns the route-family for a given variant.routeId.
+// 5 explicit families + 'im' fallback for ester/oil/aq injections.
+// v0.27: oral / inhaled / topical introduced; sc / in unchanged from v0.26.
+function getRouteFamily(activeVariantId) {
+ if (activeVariantId === 'in') return 'in'
+ if (activeVariantId === 'oral' || activeVariantId === 'ac-oral') return 'oral'
+ if (activeVariantId === 'inhaled') return 'inhaled'
+ if (activeVariantId === 'topical') return 'topical'
+ if (activeVariantId === 'sc') return 'sc'
+ // Fallback for ester variants + 'injectable' + 'oil' + 'aq' + 'enan-oil':
+ //   prop, enan, cyp, sus, aq, ace, hex, deca, npp, ac, en, oil, injectable, enan-oil
+ return 'im'
+}
+
 // Quick Start Guide, derived 4-step primer.
 // Resolution order:
 // 1. If the entry defines its own `quickStart` (CORE nootropic entries do),
