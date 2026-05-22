@@ -721,8 +721,58 @@ function deriveReconstitute(peptide, library) {
 // Quality indicators, 7 standard checks; status: PASS / WARN / FAIL.
 // Variant-aware: intranasal spray uses different markers than SC vials.
 function deriveQualityIndicators(activeVariantId) {
- if (activeVariantId === 'in') {
- // Intranasal spray quality markers — pump bottle, clear liquid form.
+ const family = getRouteFamily(activeVariantId)
+
+ switch (family) {
+ case 'oral':
+ return [
+ { status: 'PASS', title: { hu: 'Tabletta épsége', en: 'Tablet integrity', pl: 'Stan tabletki' },
+ desc: { hu: 'Törésmentes, repedésmentes felület. Színe egyenletes, nincs foltosodás.', en: 'No cracks, smooth surface. Even color, no spotting.', pl: 'Bez pęknięć, gładka powierzchnia. Równy kolor, bez plam.' } },
+ { status: 'PASS', title: { hu: 'Eredeti blister', en: 'Original blister', pl: 'Oryginalny blister' },
+ desc: { hu: 'Sértetlen fólia, lejárati dátum + gyártási tétel látszik.', en: 'Intact foil, expiry date and lot number visible.', pl: 'Nieuszkodzona folia, data ważności i numer serii widoczne.' } },
+ { status: 'PASS', title: { hu: 'COA-val (Certificate of Analysis)', en: 'Comes with COA', pl: 'Z COA' },
+ desc: { hu: 'Független laboranalízis, hatóanyag-tartalom igazolva (mg/tabletta).', en: 'Independent lab analysis, active ingredient certified (mg/tablet).', pl: 'Niezależna analiza laboratoryjna, potwierdzony składnik aktywny (mg/tabletka).' } },
+ { status: 'WARN', title: { hu: 'Lejárati dátum', en: 'Expiry date', pl: 'Termin ważności' },
+ desc: { hu: 'Lejárt tablettánál a hatékonyság csökkenhet, ne használd.', en: 'Potency may degrade past expiry, don\'t use expired tablets.', pl: 'Po terminie moc może spaść, nie używaj.' } },
+ { status: 'FAIL', title: { hu: 'Tört / morzsolódó tabletta', en: 'Broken / crumbling tablet', pl: 'Złamana / krusząca się tabletka' },
+ desc: { hu: 'Repedt, törött vagy puha tabletta degradációt jelez, ne használd.', en: 'Cracked, broken or soft tablets indicate degradation, discard.', pl: 'Pęknięte, złamane lub miękkie tabletki wskazują degradację.' } },
+ { status: 'FAIL', title: { hu: 'Sérült blister', en: 'Damaged blister', pl: 'Uszkodzony blister' },
+ desc: { hu: 'Lyukas vagy szakadt fólia, sterilitás megszűnt, ne használd.', en: 'Punctured or torn foil, sterility compromised, discard.', pl: 'Przedziurawiona lub rozdarta folia, sterylność naruszona.' } },
+ ]
+
+ case 'inhaled':
+ return [
+ { status: 'PASS', title: { hu: 'MDI-flakon nyomása', en: 'MDI canister pressure', pl: 'Ciśnienie kanistra MDI' },
+ desc: { hu: 'Rázott teszt: enyhe folyadékhang. Dose-counter (ha van) >10 maradt.', en: 'Shake test: light liquid sound. Dose counter (if present) >10 remaining.', pl: 'Test wstrząsania: lekki dźwięk cieczy. Licznik dawek >10.' } },
+ { status: 'PASS', title: { hu: 'Egyenletes spray-kép', en: 'Even spray plume', pl: 'Równomierna chmura sprayu' },
+ desc: { hu: 'Priming után egyenletes finom köd, konzisztens dózis.', en: 'After priming: even fine mist, consistent dose.', pl: 'Po przygotowaniu: równomierna mgiełka, stała dawka.' } },
+ { status: 'PASS', title: { hu: 'Sértetlen szájdarab', en: 'Intact mouthpiece', pl: 'Nieuszkodzony ustnik' },
+ desc: { hu: 'Repedés- és törmelékmentes szájdarab. Spacer (ha használsz) tiszta.', en: 'Mouthpiece free of cracks and debris. Spacer (if used) clean.', pl: 'Ustnik bez pęknięć i zanieczyszczeń. Spacer (jeśli używany) czysty.' } },
+ { status: 'WARN', title: { hu: 'Lejárati dátum', en: 'Expiry date', pl: 'Data ważności' },
+ desc: { hu: 'Lejárt MDI propellán-szivárgásra hajlamos, dose nem konzisztens.', en: 'Expired MDI prone to propellant leak, inconsistent dosing.', pl: 'Przeterminowany MDI podatny na wyciek propelantu.' } },
+ { status: 'FAIL', title: { hu: 'Köhögtetően erős íz / szag', en: 'Strong cough-inducing taste / smell', pl: 'Silny smak / zapach' },
+ desc: { hu: 'Szokatlanul erős kémiai szag vagy íz degradációra utal.', en: 'Unusually strong chemical smell or taste suggests degradation.', pl: 'Niezwykle silny zapach / smak chemiczny sugeruje degradację.' } },
+ { status: 'FAIL', title: { hu: 'Repedt flakon / nem spray-z', en: 'Cracked canister / no spray', pl: 'Pęknięty kanister / brak sprayu' },
+ desc: { hu: 'Sérült flakon vagy elakadt pumpa, ne használd.', en: 'Damaged canister or stuck pump, discard.', pl: 'Uszkodzony kanister lub zacięta pompka.' } },
+ ]
+
+ case 'topical':
+ return [
+ { status: 'PASS', title: { hu: 'Tiszta oldat', en: 'Clear solution', pl: 'Klarowny roztwór' },
+ desc: { hu: 'Átlátszó vagy gyártó által megadott szín, csapadékmentes.', en: 'Clear or manufacturer-specified color, no precipitate.', pl: 'Klarowny lub kolor wg producenta, bez osadu.' } },
+ { status: 'PASS', title: { hu: 'Lezárt pumpa', en: 'Sealed pump', pl: 'Uszczelniona pompka' },
+ desc: { hu: 'Eredeti pumpás flakon, sértetlen zár, egyenletes adagolás.', en: 'Original pump bottle, intact seal, even dosing.', pl: 'Oryginalna butelka z pompką, nieuszkodzona pieczęć.' } },
+ { status: 'PASS', title: { hu: 'Címke olvasható', en: 'Label legible', pl: 'Etykieta czytelna' },
+ desc: { hu: 'Gyártó + lejárat + LOT-szám látható, hatóanyag-koncentráció jelölve.', en: 'Manufacturer + expiry + LOT visible, active concentration marked.', pl: 'Producent + termin + LOT widoczne, koncentracja oznaczona.' } },
+ { status: 'WARN', title: { hu: 'Tárolási hőmérséklet', en: 'Storage temperature', pl: 'Temperatura przechowywania' },
+ desc: { hu: 'Hideg-meleg ciklusok bonthatják a vehikulumot, fázis-szétválást okozva.', en: 'Heat-cold cycles can break the vehicle, causing phase separation.', pl: 'Cykle ciepło-zimno mogą rozłożyć nośnik.' } },
+ { status: 'FAIL', title: { hu: 'Zavarosodás / csapadék', en: 'Cloudiness / precipitate', pl: 'Mętność / osad' },
+ desc: { hu: 'Zavaros oldat vagy csapadék degradációt jelez, ne használd.', en: 'Cloudy solution or precipitate indicates degradation, discard.', pl: 'Mętny roztwór lub osad wskazuje degradację.' } },
+ { status: 'FAIL', title: { hu: 'Repedt flakon', en: 'Cracked bottle', pl: 'Pęknięta butelka' },
+ desc: { hu: 'Sérült flakon vagy szakadozó pumpa, ne használd.', en: 'Damaged bottle or sputtering pump, discard.', pl: 'Uszkodzona butelka lub przerywająca pompka.' } },
+ ]
+
+ case 'in':
  return [
  { status: 'PASS', title: { hu: 'Tiszta, színtelen oldat', en: 'Clear, colorless solution', pl: 'Klarowny, bezbarwny roztwór' },
  desc: { hu: 'Pre-mixed nasal spray jellemző megjelenése, üledék vagy elszíneződés nélkül.', en: 'Typical appearance of pre-mixed nasal spray, no sediment or discoloration.', pl: 'Typowy wygląd pre-mieszanego sprayu donosowego, bez osadu ani przebarwień.' } },
@@ -739,8 +789,25 @@ function deriveQualityIndicators(activeVariantId) {
  { status: 'FAIL', title: { hu: 'Sérült flakon / pumpa', en: 'Damaged bottle / pump', pl: 'Uszkodzona butelka / pompka' },
  desc: { hu: 'Repedt flakon, sérült pumpa, sterilitás megszűnt, ne használd.', en: 'Cracked bottle or broken pump, sterility compromised, discard.', pl: 'Pęknięta butelka lub uszkodzona pompka, sterylność naruszona.' } },
  ]
- }
- // Default SC-vial quality markers (lyophilized peptide).
+
+ case 'im':
+ return [
+ { status: 'PASS', title: { hu: 'Tiszta olaj', en: 'Clear oil', pl: 'Klarowny olej' },
+ desc: { hu: 'Átlátszó vagy enyhén sárgás (MCT/szezám/ricinusolaj), részecskementes.', en: 'Clear or slightly yellow (MCT/sesame/castor oil), particle-free.', pl: 'Klarowny lub lekko żółtawy (MCT/sezamowy/rycynowy), bez cząstek.' } },
+ { status: 'PASS', title: { hu: 'Ampulla integritás', en: 'Vial integrity', pl: 'Integralność fiolki' },
+ desc: { hu: 'Üveg ép, gumi-dugó sértetlen, alumínium gallér feszesen ül.', en: 'Glass intact, rubber stopper undamaged, aluminum crimp tight.', pl: 'Szkło nienaruszone, korek gumowy nieuszkodzony, aluminiowy uszczelniacz ścisły.' } },
+ { status: 'PASS', title: { hu: 'Címke + COA', en: 'Label + COA', pl: 'Etykieta + COA' },
+ desc: { hu: 'Gyártó + LOT + lejárat olvasható; független HPLC-analízis hatóanyag-tartalomra.', en: 'Manufacturer + LOT + expiry legible; independent HPLC analysis on active content.', pl: 'Producent + LOT + termin czytelne; niezależna analiza HPLC.' } },
+ { status: 'WARN', title: { hu: 'BA/BB-keverék konzisztencia', en: 'BA/BB carrier blend', pl: 'Mieszanka BA/BB' },
+ desc: { hu: 'Túl magas benzyl-alkohol (>3%) PIP-rizikó; UGL gyártóknál ellenőrizendő.', en: 'Excessive benzyl alcohol (>3%) raises PIP risk; verify with UGL manufacturers.', pl: 'Nadmiar alkoholu benzylowego (>3%) zwiększa ryzyko PIP.' } },
+ { status: 'FAIL', title: { hu: 'Zavarosodás / üledék', en: 'Cloudiness / sediment', pl: 'Mętność / osad' },
+ desc: { hu: 'Lebegő részecskék, zavarosodás vagy üledék = KEMÉNY no-go.', en: 'Floating particles, cloudiness, or sediment = HARD NO.', pl: 'Pływające cząstki, mętność, osad = TWARDE NIE.' } },
+ { status: 'FAIL', title: { hu: 'Sérült üveg / dugó', en: 'Damaged glass / stopper', pl: 'Uszkodzone szkło / korek' },
+ desc: { hu: 'Repedt ampulla vagy meglazult dugó, sterilitás megszűnt.', en: 'Cracked vial or loose stopper, sterility compromised.', pl: 'Pęknięta fiolka lub luźny korek, sterylność naruszona.' } },
+ ]
+
+ case 'sc':
+ default:
  return [
  { status: 'PASS', title: { hu: 'Fehér / törtfehér por', en: 'White / off-white powder', pl: 'Biały / kremowy proszek' },
  desc: { hu: 'Steril lyofilizált peptid jellemző megjelenése.', en: 'Typical appearance of sterile lyophilized peptide.', pl: 'Typowy wygląd sterylnego lyofilizowanego peptydu.' } },
@@ -757,6 +824,7 @@ function deriveQualityIndicators(activeVariantId) {
  { status: 'FAIL', title: { hu: 'Sérült csomagolás', en: 'Damaged packaging', pl: 'Uszkodzone opakowanie' },
  desc: { hu: 'Repedt fiola, kilazult kupak, sterilitás megszűnt, ne használd.', en: 'Cracked vial or loose cap, sterility compromised, discard.', pl: 'Pęknięta fiolka lub luźny kapsel, sterylność naruszona.' } },
  ]
+ }
 }
 
 // What-to-expect timeline, category-aware milestones.
