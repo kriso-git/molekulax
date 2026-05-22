@@ -729,20 +729,20 @@ function deriveFaqs(peptide, tier) {
 // need BAC water reconstitution. For non-peptide libraries (or peptide entries
 // missing reconstitution defaults), return [] so EntryDetail graceful-skips
 // the section.
-function deriveReconstitute(peptide, library) {
- if (library?.id !== 'peptides') return []
- // Phase C variant support: if the resolved variant supplies its own
- // reconstitute.steps[] (route-specific protocol — e.g. nasal spray transfer,
- // pre-mixed RU pharma skip), honour that directly. Empty array hides the
- // section, populated array renders the variant-specific protocol.
+function deriveReconstitute(peptide, library, activeVariantId) {
+ // Honor variant-supplied reconstitute steps regardless of family/library
+ // (e.g. nasal spray transfer protocol, custom IM ester procedure).
  if (peptide.reconstitute && Array.isArray(peptide.reconstitute.steps)) {
  return peptide.reconstitute.steps.map(s => (
  typeof s === 'string' ? { hu: s, en: s, pl: s } : s
  ))
  }
- // Pre-mixed pharmaceutical or non-injectable variant (defaultVariant in,
- // no reconstitute supplied) — hide the section entirely.
- if (peptide._activeVariantId === 'in') return []
+ const family = getRouteFamily(activeVariantId || peptide._activeVariantId)
+ // Non-injection families never need a reconstitute step (pre-formulated form).
+ if (family === 'oral' || family === 'inhaled' || family === 'topical') return null
+ // Pre-mixed nasal spray with no explicit recon — hide section.
+ if (family === 'in') return []
+ if (library?.id !== 'peptides') return []
  if (!peptide.defaultVialMg || !peptide.defaultBacMl) return []
  const vial = peptide.defaultVialMg
  const bac = peptide.defaultBacMl
@@ -1300,7 +1300,7 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  indications: deriveIndications(peptide, categoryIds, library, lang),
  safetyProfile: deriveSafetyProfile(peptide, categoryIds, activeVariantId),
  interactions: deriveInteractions(peptide, categoryIds, related),
- reconstitute: deriveReconstitute(peptide, library),
+ reconstitute: deriveReconstitute(peptide, library, activeVariantId),
  qualityIndicators: deriveQualityIndicators(activeVariantId),
  expectations: deriveExpectations(peptide, categoryIds),
  related,
