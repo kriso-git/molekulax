@@ -1853,10 +1853,19 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {/* ─── FAQ CONSOLE ─── Phase 10: removed entirely (features.faq is false across all libraries) ─── */}
 
  {/* ─── CALCULATOR ─── Phase 10 flag-gated, peptide MiniCalc only.
- Phase C variant-aware: intranasal (and other fixed-dose) variants
- hide the reconstitution calculator and render a "recommended dose"
- info card built from variant.dosing instead. */}
- {library?.features?.calculator && peptide._activeVariantId === 'in' && peptide.dosing?.notes && (
+ v0.27 family-aware: non-injection families (in/oral/inhaled/topical)
+ render a fixed-dose info card from variant.dosing; injection families
+ (sc/im) and entries without variants render the vial+BAC MiniCalc. */}
+ {(() => {
+ if (!library?.features?.calculator) return null
+ const id = peptide._activeVariantId
+ const isFixedDose =
+ id === 'in' ||
+ id === 'oral' || id === 'ac-oral' ||
+ id === 'inhaled' ||
+ id === 'topical'
+ return isFixedDose && peptide.dosing?.notes
+ })() && (
  <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
  <div
@@ -1880,7 +1889,16 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
  </section>
  )}
- {library?.features?.calculator && peptide._activeVariantId !== 'in' && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg && (
+ {(() => {
+ if (!library?.features?.calculator) return null
+ const id = peptide._activeVariantId
+ const isFixedDose =
+ id === 'in' ||
+ id === 'oral' || id === 'ac-oral' ||
+ id === 'inhaled' ||
+ id === 'topical'
+ return !isFixedDose && peptide.miniCalc?.vialMg && peptide.miniCalc?.bacMl && peptide.miniCalc?.doseMcg
+ })() && (
  <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
  <div
