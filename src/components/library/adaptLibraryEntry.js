@@ -518,12 +518,55 @@ const IN_STOP_SIGNALS = [
  { hu: 'Súlyos orrnyálkahártya-gyulladás vagy fekély', en: 'Severe nasal mucosal inflammation or ulcer', pl: 'Ciężkie zapalenie błony śluzowej nosa lub owrzodzenie' },
 ]
 
+// Per-family side-effect + stop-signal additions. SC bullets come from category
+// data only; non-SC families strip SC injection-site bullets and append their own.
+const FAMILY_SAFETY_EXTRAS = {
+ oral: {
+ sideEffects: [
+ { hu: 'Gyomor-bél irritáció (hányinger, gyomorégés, hasmenés)', en: 'GI irritation (nausea, heartburn, diarrhea)', pl: 'Podrażnienie GI (nudności, zgaga, biegunka)' },
+ { hu: 'Májterhelés — orális 17α-methylated AAS-eknél emelkedett AST/ALT/GGT', en: 'Hepatic load — elevated AST/ALT/GGT with oral 17α-methylated AAS', pl: 'Obciążenie wątroby — podwyższone AST/ALT/GGT przy doustnych 17α-metylowanych AAS' },
+ ],
+ stop: [
+ { hu: 'Sárgaság, sötét vizelet vagy súlyos hasi fájdalom (májkárosodás jele)', en: 'Jaundice, dark urine, severe abdominal pain (hepatic damage)', pl: 'Żółtaczka, ciemny mocz, silny ból brzucha (uszkodzenie wątroby)' },
+ ],
+ },
+ inhaled: {
+ sideEffects: [
+ { hu: 'Szájüregi gombásodás (candidiasis) — szájöblítés kötelező', en: 'Oral candidiasis — mouth rinse mandatory', pl: 'Kandydoza jamy ustnej — płukanie ust obowiązkowe' },
+ { hu: 'Szájszárazság, hangképzési zavar (dysphonia), torokfájás', en: 'Dry mouth, voice changes (dysphonia), sore throat', pl: 'Suchość ust, zmiany głosu (dysfonia), ból gardła' },
+ { hu: 'Tremor, tachycardia, palpitáció (β2-agonista hatás)', en: 'Tremor, tachycardia, palpitations (β2-agonist effect)', pl: 'Drżenie, tachykardia, kołatanie (działanie β2-agonisty)' },
+ ],
+ stop: [
+ { hu: 'Súlyos szívritmuszavar vagy mellkasi fájdalom', en: 'Severe arrhythmia or chest pain', pl: 'Ciężka arytmia lub ból w klatce piersiowej' },
+ ],
+ },
+ topical: {
+ sideEffects: [
+ { hu: 'Bőrirritáció, kontakt-dermatitisz, viszketés a kezelt területen', en: 'Skin irritation, contact dermatitis, itching at application site', pl: 'Podrażnienie skóry, kontaktowe zapalenie skóry, świąd w miejscu aplikacji' },
+ { hu: 'Nem kívánt szőrnövekedés a kezelt területen (minoxidil-specifikus)', en: 'Unwanted hair growth at treatment site (minoxidil-specific)', pl: 'Niepożądany wzrost włosów w miejscu aplikacji (specyficzne dla minoxidilu)' },
+ { hu: 'Akcidentális arc/szem-kontaktus — kézmosás kötelező felvitel után', en: 'Accidental face/eye contact — hand wash mandatory after application', pl: 'Przypadkowy kontakt z twarzą/oczami — mycie rąk obowiązkowe' },
+ ],
+ stop: [
+ { hu: 'Súlyos bőrkiütés vagy hólyagosodás', en: 'Severe skin rash or blistering', pl: 'Ciężka wysypka lub pęcherze' },
+ ],
+ },
+ im: {
+ sideEffects: [
+ { hu: 'PIP (post-injection pain) — főleg propionát, trenbolone-ace vagy magas BA%-os keverékeknél', en: 'PIP (post-injection pain) — especially propionate, trenbolone-ace, or high-BA blends', pl: 'PIP (ból po iniekcji) — szczególnie propionian, trenbolon-ace, mieszanki z wysokim BA' },
+ { hu: 'Injekciós helyi reakció: csomó, vörösség, melegség, érzékenység', en: 'Injection-site reaction: lumps, redness, warmth, tenderness', pl: 'Reakcja w miejscu iniekcji: guzki, zaczerwienienie, ciepło, tkliwość' },
+ ],
+ stop: [
+ { hu: 'Cellulitisz vagy abszcessz jelei (terjedő vörösség, gennyes váladék, láz)', en: 'Cellulitis or abscess signs (spreading redness, pus, fever)', pl: 'Objawy cellulitis lub ropnia (rozprzestrzeniające się zaczerwienienie, ropa, gorączka)' },
+ ],
+ },
+}
+
 function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
  const primary = categoryIds[0]
  const set = CATEGORY_SAFETY[primary] || CATEGORY_SAFETY.recovery
- if (activeVariantId === 'in') {
- // Swap SC injection-site bullets for IN-specific irritation bullets;
- // keep all systemic / cognitive / mood bullets intact.
+ const family = getRouteFamily(activeVariantId)
+
+ if (family === 'in') {
  const filtered = set.sideEffects.filter(s => !SC_INJECTION_KEYWORDS.test(s.hu || ''))
  return {
  sideEffects: [...filtered, ...IN_SIDE_EFFECTS],
@@ -531,6 +574,19 @@ function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
  contraindications: GENERIC_CONTRAINDICATIONS,
  }
  }
+
+ const extras = FAMILY_SAFETY_EXTRAS[family]
+ if (extras) {
+ // Non-SC families: strip SC injection-site bullets, append family-specific bullets.
+ const filtered = set.sideEffects.filter(s => !SC_INJECTION_KEYWORDS.test(s.hu || ''))
+ return {
+ sideEffects: [...filtered, ...extras.sideEffects],
+ whenToStop: [...set.whenToStop, ...extras.stop],
+ contraindications: GENERIC_CONTRAINDICATIONS,
+ }
+ }
+
+ // SC / unknown family — default category-derived list (v0.13+ behavior).
  return {
  sideEffects: set.sideEffects,
  whenToStop: set.whenToStop,
