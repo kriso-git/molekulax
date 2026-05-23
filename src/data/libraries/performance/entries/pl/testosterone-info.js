@@ -215,6 +215,9 @@ export default {
     {
       "routeId": "prop",
       "routeLabel": "Testosteron Propionat (IM, szybki)",
+      "routeNote": "Szybki ester (~19h okres półtrwania), wymagany harmonogram EOD; szybkie przejście do PCT (ostatnia iniekcja +3-5 dni).",
+      "dosing": "300–700 mg/tydzień IM, podzielone 3× EOD (pon/śr/pt). Standardowa dawka kulturystyczna powyżej zakresu TRT.",
+      "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Rx (Testosteron Propionat, rzadziej produkowany niż Cyp/Enan, Rx w niektórych krajach UE). Zakaz WADA.",
       "bioavailability": "~95-100% (IM)",
@@ -256,6 +259,9 @@ export default {
     {
       "routeId": "enan",
       "routeLabel": "Testosteron Enantat (IM, wolny)",
+      "routeNote": "Średni ester (10,5 dnia), wystarczy 1-2× tygodniowo; steady-state po 4-5 tygodniach. Standard UE dla TRT i cykli masowych.",
+      "dosing": "250–750 mg/tydzień IM, podzielone 1-2× tygodniowo (pon lub pon+czw). Cykle krótsze niż 4-6 tygodni NIE są efektywne.",
+      "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-orange.png",
       "legalStatus": "Bayer Testoviron-Depot 250 mg/ml Enan (DE/UE szeroko Rx). Zakaz WADA.",
       "bioavailability": "~95-100% (IM)",
@@ -297,6 +303,9 @@ export default {
     {
       "routeId": "cyp",
       "routeLabel": "Testosteron Cypionat (IM, wolny, USA-preferowany)",
+      "routeNote": "Średni ester (~8 dni), dominacja na rynku USA; klinicznie ≈ Enantat (~2-dniowa różnica jest minimalna w praktyce). PCT ostatnia iniekcja +14-21 dni.",
+      "dosing": "250–750 mg/tydzień IM, podzielone 1-2× tygodniowo. Standard USA dla TRT i kulturystyki.",
+      "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Pfizer Depo-Testosterone Cyp 200 mg/ml (dominacja rynku USA). HU/EU: rzadszy, Enan preferowany. Zakaz WADA.",
       "bioavailability": "~95-100% (IM)",
@@ -337,6 +346,9 @@ export default {
     {
       "routeId": "sus",
       "routeLabel": "Sustanon-250 (mieszanka 4-estrowa Organon)",
+      "routeNote": "Mieszanka 4-estrowa (Prop+PhenylProp+Isokaproat+Dekanoat); zarządzanie peakami bardziej złożone niż w single-ester. PCT ostatnia iniekcja +18-21 dni (powolny klirens Dekanoatu).",
+      "dosing": "250–750 mg/tydzień IM, podzielone 1-2× tygodniowo (NIE raz w miesiącu jak w TRT). Alternatywa single-ester w dawce kulturystycznej.",
+      "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-orange.png",
       "legalStatus": "Aspen/Organon Sustanon-250 (ampułka 1 ml, 30mg Prop + 60mg PhenylProp + 60mg Isocaproate + 100mg Decanoate). UE Rx (HU/PL dostępny na polskiej/czeskiej recepcie). Zakaz WADA.",
       "bioavailability": "~95-100% (IM)",
@@ -378,6 +390,9 @@ export default {
     {
       "routeId": "aq",
       "routeLabel": "Zawiesina Testosteronu (wodna, ultra-szybka)",
+      "routeNote": "Parent T (NIE jest estryfikowany), 1-3 godzinny onset; pre-workout boost. EKSTREMALNIE bolesna iniekcja (PIP od kryształów). Harmonogram dzienny/EOD.",
+      "dosing": "50–200 mg/iniekcję IM dziennie lub EOD. Pre-workout boost: 50-100 mg przyjęte 1-2 godziny przed treningiem.",
+      "androgenicRatio": "100:100",
       "image": "/performance/water-vial.png",
       "legalStatus": "Rx rzadko (USA: Aquaviron), głównie UGL underground. UE: nie zarejestrowany. Zakaz WADA.",
       "bioavailability": "~95-100% (IM, BEZ depot, bezpośrednia absorpcja)",

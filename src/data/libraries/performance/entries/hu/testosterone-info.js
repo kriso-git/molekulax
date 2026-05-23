@@ -215,6 +215,9 @@ export default {
     {
       "routeId": "prop",
       "routeLabel": "Testosterone Propionát (IM, gyors)",
+      "routeNote": "Gyors észter (~19h), EOD ütemezés szükséges; gyors PCT-átmenet (utolsó injekció +3-5 nap).",
+      "dosing": "300–700 mg/hét IM, 3× EOD osztva (hétfő/szerda/péntek). Standard TRT-felett bodybuilding-doseban.",
+      "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Rx (Testosterone Propionate, ritkábban gyártott mint Cyp/Enan, néhány EU országban Rx). WADA tiltott.",
       "bioavailability": "~95-100% (IM)",
@@ -256,6 +259,9 @@ export default {
     {
       "routeId": "enan",
       "routeLabel": "Testosterone Enantát (IM, lassú)",
+      "routeNote": "Közepes észter (10,5 nap), heti 1-2× elég; steady-state 4-5 hét után. EU-preferált TRT és bulk-ciklus standard.",
+      "dosing": "250–750 mg/hét IM, heti 1-2× osztva (Mon vagy Mon+Thu). 4-6 hét alatti ciklus NEM hatékony.",
+      "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-orange.png",
       "legalStatus": "Bayer Testoviron-Depot 250 mg/ml Enan (DE/EU széles körben Rx). WADA tiltott.",
       "bioavailability": "~95-100% (IM)",
@@ -297,6 +303,9 @@ export default {
     {
       "routeId": "cyp",
       "routeLabel": "Testosterone Cypionát (IM, lassú, USA-preferált)",
+      "routeNote": "Közepes észter (~8 nap), USA piaci dominancia; klinikailag ≈ Enantát (~2 nap eltérés minimális gyakorlatban). PCT utolsó injekció +14-21 nap.",
+      "dosing": "250–750 mg/hét IM, heti 1-2× osztva. USA-preferált TRT és bodybuilding standard.",
+      "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Pfizer Depo-Testosterone Cyp 200 mg/ml (USA piaci dominancia). HU/EU: ritkább, Enan a preferált. WADA tiltott.",
       "bioavailability": "~95-100% (IM)",
@@ -337,6 +346,9 @@ export default {
     {
       "routeId": "sus",
       "routeLabel": "Sustanon-250 (Organon 4-ester blend)",
+      "routeNote": "4-ester keverék (Prop+PhenylProp+Isocaproate+Decanoate); peak-management komplexebb mint single-ester. PCT utolsó injekció +18-21 nap (Decanoate slow-clearance).",
+      "dosing": "250–750 mg/hét IM, heti 1-2× osztva (NEM havi 1× mint TRT). Bodybuilding-doseban single-ester alternatíva.",
+      "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-orange.png",
       "legalStatus": "Aspen/Organon Sustanon-250 (1ml ampulla, 30mg Prop + 60mg PhenylProp + 60mg Isocaproate + 100mg Decanoate). EU Rx (HU/PL elérhető lengyel/cseh receptre). WADA tiltott.",
       "bioavailability": "~95-100% (IM)",
@@ -378,6 +390,9 @@ export default {
     {
       "routeId": "aq",
       "routeLabel": "Testosterone Suspension (vizes, ultra-gyors)",
+      "routeNote": "Parent T (NEM észter), 1-3 órás onset; pre-workout boost. EXTRA fájdalmas injekció (kristályok PIP). Napi/EOD ütemezés.",
+      "dosing": "50–200 mg/injekció IM napi vagy EOD. Pre-workout boost-ra 50-100 mg edzés előtt 1-2 órával.",
+      "androgenicRatio": "100:100",
       "image": "/performance/water-vial.png",
       "legalStatus": "Rx ritkán (USA: Aquaviron), mostly UGL underground. EU: nem törzskönyvezett. WADA tiltott.",
       "bioavailability": "~95-100% (IM, depot NÉLKÜLI direct absorption)",
