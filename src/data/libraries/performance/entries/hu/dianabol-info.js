@@ -16,30 +16,30 @@ export default {
     },
     {
       "label": "Felezési idő",
-      "value": "3-6 óra"
+      "value": "3-6 óra (orális) / 1-2 nap (oil)"
     },
     {
-      "label": "Anabolikus arány",
-      "value": "210:60"
+      "label": "Anabolikus:Androgén arány",
+      "value": "40-60:90-210 (testosterone=100:100)"
     },
     {
       "label": "Jogi státusz",
-      "value": "USA: Schedule III. EU: Rx korlátozott."
+      "value": "USA: Schedule III. EU: Rx korlátozott. WADA: tiltott."
     }
   ],
   "mechanism": "17α-alkilezett AR-agonista. Aromatáz E2-vé ÉS 17α-methylestradiol-é konvertálja (utóbbi szokatlanul potens, anastrozole-rezisztens metabolit → magas gyno-kockázat még AI mellett is). 5α-reduktáz minimálisan aktiválja DHT-szerű metabolittá. Intracelluláris glikogén-szintézis + cell volumization közvetett anabolikus jel (mTOR-aktiválás).",
   "legalStatus": "USA: Schedule III. HU/EU: vény nélkül illegális, gyógyszertári forgalom megszűnt. WADA: tiltott.",
-  "onsetTime": "3-7 days",
-  "halfLife": "3-6 h",
+  "onsetTime": "3-7 nap",
+  "halfLife": "3-6 h (orális)",
+  "androgenicRatio": "40-60:90-210",
   "interactionsWith": [
     "aromatase inhibitors",
     "alcohol",
     "NSAIDs"
   ],
-  "aromatization": "Igen — közepes-magas CYP19 affinitás; \"wet gains\" (víz-retenció, gynecomastia) gyakori, anti-aromatáz kötelező hosszú ciklusban (Schänzer 1996)",
-  "hepatotoxicity": "Magas — 17α-alkilált, dózisfüggő ALT/AST emelkedés; kolesztátikus hepatitis és peliosis hepatis ritka súlyos esetek (Hartgens-Kuipers 2004)",
+  "aromatization": "high",
+  "hepatotoxicity": "high",
   "wadaStatus": "banned",
-  "androgenicRatio": "210:60",
   "benefits": [
     "Gyors izomtömeg + vízretenció (3-5 kg / 4 hét)",
     "Erő-növekedés \"kickstart\" cikluson",
@@ -47,22 +47,34 @@ export default {
   ],
   "studies": [
     {
-      "title": "Methandrostenolone effects on body composition and strength",
+      "title": "Effects of methandienone on the performance and body composition of men undergoing athletic training",
       "authors": "Hervey GR, Knibbs AV, Burkinshaw L et al.",
-      "journal": "Clin Sci. 1981;60(4):457-461.",
-      "pmid": "6263593"
+      "journal": "Clin Sci (Lond). 1981;60(4):457-461.",
+      "pmid": "7018798"
     },
     {
-      "title": "Cholestatic hepatitis associated with methandrostenolone",
-      "authors": "Søe KL, Søe M, Gluud C.",
-      "journal": "Pharmacol Toxicol. 1992;70(4):293-294.",
-      "pmid": "1502619"
+      "title": "Distinct phenotype of hepatotoxicity associated with illicit use of anabolic androgenic steroids",
+      "authors": "Robles-Diaz M, Gonzalez-Jimenez A, Medina-Caliz I et al.",
+      "journal": "Aliment Pharmacol Ther. 2015;41(1):116-125.",
+      "pmid": "25394890"
     },
     {
       "title": "Anabolic steroid cardiovascular toxicity",
       "authors": "Baggish AL, Weiner RB, Kanayama G et al.",
       "journal": "Circulation. 2017;135(21):1991-2002.",
       "pmid": "28533317"
+    },
+    {
+      "title": "Effects of androgenic-anabolic steroids in athletes",
+      "authors": "Hartgens F, Kuipers H.",
+      "journal": "Sports Med. 2004;34(8):513-554.",
+      "pmid": "15248788"
+    },
+    {
+      "title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement",
+      "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.",
+      "journal": "Endocr Rev. 2014;35(3):341-375.",
+      "pmid": "24423981"
     }
   ],
   "related": [
@@ -101,19 +113,23 @@ export default {
     },
     "cruise": null
   },
+  "defaultVariant": "oral",
   "variants": [
     {
+      "id": "oral",
       "routeId": "oral",
       "routeLabel": "Methandrostenolone orális (tabletta)",
+      "routeNote": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz — TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: FDA Rx (Ciba 1958, discontinued 1983); Schedule III. EU: UGL piacon dominans, vény nélkül illegális. WADA tiltott.",
       "bioavailability": "~80% (orális, 17α-metil first-pass-rezisztens)",
       "onsetTime": "1-2 óra (orális, fast-absorption)",
-      "halfLife": "5 óra (orális, parent compound)",
+      "halfLife": "3-6 h (orális, parent compound)",
       "halfLifeActive": "5 h",
-      "detectionWindow": "3-6 hét vizelet (parent + Schänzer 2006 6β-OH-metandienon hosszú-távú metabolitok).",
-      "aromatization": "Igen — CYP19 szubsztrát, klinikailag erős E2-konverzió (Pope-Kanayama 2014).",
-      "hepatotoxicity": "Magas — 17α-metil hepatikus first-pass-stressz, ALT/AST 3-5x emelkedés gyakori 4+ hetes ciklusban.",
+      "detectionWindow": "3-6 hét vizelet (parent + 6β-OH-metandienon hosszú-távú metabolitok).",
+      "aromatization": "high",
+      "hepatotoxicity": "high",
+      "dosing": "Tipikus adag 20-50 mg/nap, naponta 2-3x felosztva (reggel, ebéd, esetleg edzés előtt). Kezdők: 20-25 mg/nap. Haladók: 30-40 mg/nap. Maximum 50 mg/nap, 6 hétnél tovább nem ajánlott.",
       "quality": {
         "pure": [
           "Tiszta fehér jelölt tabletta (5 mg vagy 10 mg klasszikus UGL dosing)",
@@ -146,56 +162,61 @@ export default {
           "high": 50
         },
         "unit": "mg/nap (orális, 2-3x osztva)",
-        "note": "Max 6 hét ciklus. 20-50 mg/nap, 2-3x osztva (5h felezés). TUDCA + NAC kötelező. PCT 4 hét."
+        "note": "Max 6 hét ciklus. 20-50 mg/nap, 2-3x osztva (3-6h felezés). TUDCA + NAC kötelező. PCT 4 hét."
       }
     },
     {
+      "id": "oil",
       "routeId": "oil",
       "routeLabel": "Methandrostenolone in-oil (IM, UGL)",
+      "routeNote": "Ritka, alternatív forma (\"Reforvit-B\" típusú szuszpenzió). Bypass-olja a hepatikus first-pass metabolizmust → valamivel alacsonyabb de NEM nulla hepatotoxicitás (a 17α-metil-csoport intrinsic hepatotoxicitást okoz first-pass nélkül is). Egyenletesebb plazma-szint, EOD (másnap) adagolás. Fájdalmas injekció, kizárólag UGL-forrás.",
       "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Nem licencelt formátum — kizárólag UGL underground market. Mindenhol illegális. WADA tiltott.",
       "bioavailability": "~95-100% (IM bypass-olja a first-pass-t; methandrostenolone olajban suspendált slow depot-felszívódással)",
       "onsetTime": "12-24 óra (IM, depot-kinetika)",
-      "halfLife": "1-2 nap (in-oil suspension; non-észtertelt methandrostenolone)",
+      "halfLife": "1-2 nap (in-oil suspension; nem-észterelt methandrostenolone)",
       "halfLifeActive": "1-2 nap",
       "detectionWindow": "4-6 hét vizelet (hosszabb mint orálnál, depot-felszívódás miatt).",
-      "aromatization": "Igen — strukturálisan ugyanaz, mint orálnál; aromatizáció szintje azonos.",
-      "hepatotoxicity": "Mérsékelt — a 17α-metil-csoport jelenléte miatt nem nulla, de a first-pass elkerülése csökkenti a peak hepatic koncentrációt. Superdrol-injektábilishez hasonló profilú (Pope-Kanayama 2014 c17-AA injektábilis class extrapolált adatok).",
+      "aromatization": "high",
+      "hepatotoxicity": "moderate-high",
+      "dosing": "Tipikus adag 50 mg EOD (másnap), 10 ml-es 50 mg/ml fiolából. Néhány felhasználó 75-100 mg EOD-t alkalmaz. Maximálisan 8 hetes ciklus. Aszeptikus injekciós technika kötelező.",
+      "defaultVialMg": 500,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 50000,
       "quality": {
         "pure": [
-          "Tiszta sárgás olaj, 10ml fiola, sterilen szűrt, 50-75 mg/ml UGL koncentráció",
+          "Tiszta sárgás olaj, 10 ml fiola, sterilen szűrt, 50 mg/ml UGL koncentráció",
           "UGL HPLC-tesztelt forrás KÖTELEZŐ"
         ],
         "caution": [
-          "PIP (injection site pain) gyakori, methandrostenolone-in-oil notoriously fáj",
+          "PIP (injection site pain) gyakori, methandrostenolone-in-oil notorikusan fáj",
           "Lipid-zavar drasztikus: HDL csökkenés ugyanaz mint orálnál",
           "Vízretenció + gynecomastia-rizikó (aromatizáció nem változik)",
-          "Hepatotoxicitás csökkentett DE NEM nulla"
+          "Hepatotoxicitás csökkentett DE NEM nulla — TUDCA kötelező"
         ],
         "avoid": [
           "Erős injection-site-érzékenység",
-          "Bármilyen máj-zavar (mérsékelt hepatotoxicitás)",
+          "Bármilyen máj-zavar (mérsékelt-magas hepatotoxicitás)",
           "Aszeptikus injekciós technika hiánya (abszcessz-rizikó)",
           "Több mint 8 hét ciklus"
         ]
       },
       "interactions": [
         "Anastrozole 0,5 mg E3D: E2-kontroll",
-        "TUDCA 500 mg/nap ajánlott (mérsékelt hepatotoxicitás miatt)",
+        "TUDCA 500-750 mg/nap kötelező (mérsékelt-magas hepatotoxicitás)",
         "PCT utolsó injekció +5-7 nap után indul"
       ],
       "doseCalc": {
         "type": "fixed",
         "fixed": {
           "low": 50,
-          "medium": 100,
-          "high": 150
+          "medium": 75,
+          "high": 100
         },
-        "unit": "mg/hét (IM, 2-3x osztva)",
-        "note": "Max 8 hét ciklus. 50-150 mg/hét, 2-3x osztva (rövid felezés depot ellenére). TUDCA ajánlott. PCT 4 hét utolsó injekció +5-7 nap."
+        "unit": "mg/inj (EOD, IM)",
+        "note": "Max 8 hét ciklus. 50-100 mg/inj EOD. TUDCA 500-750 mg/nap kötelező. PCT 4 hét, utolsó injekció +5-7 nap."
       }
     }
   ],
-  "defaultVariant": "oral",
   "anecdote": "A Dianabol szinte legendás státusszal bír az AAS hagyományban. A felhasználók gyakran nagyon gyors változást jelentenek a teltségben, az erőkar-helyzetben, a regenerációban és az edzőtermi teljesítményben meglepően rövid időn belül. Jellegzetes vonás, hogy mennyire 'anabolikusnak' érződik — meglehetősen nyilvánvalóan, nem finoman. Az erő jellemzően gyorsan emelkedik drámai pumpa- és volumizációs hatásokkal együtt. Az, amit köznyelven 'vízsúlynak' neveznek, valójában intramuszkuláris glikogén és sejt-hidratáció, ami nem egyenértékű az értelmetlen puffadással és maga is hozzájárulhat az anabolikus jelzéshez. Közösségi beszámolók szerint a Dianabol aránytalan hatást gyakorol az edzési lendületre — produktívabb edzések, gyorsabb regeneráció és ebből adódó halmozódó növekedés. Az étvágy is gyakran nő. A kompromisszumok jelentősek: figyelemre méltó ösztrogén-kapcsolatos hatások (gyno, vízvisszatartás), vérnyomás-emelkedés, lipid-zavar és 17α-alkilált máj-terhelés. Néhány beszámoló és felmerülő bizonyíték arra utal, hogy a Dianabol egy szokatlanul erős ösztrogén-metabolittá alakul, amit érdemes szem előtt tartani AI/SERM támogatás tervezésekor."
 }

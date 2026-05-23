@@ -16,30 +16,30 @@ export default {
     },
     {
       "label": "Half-life",
-      "value": "3-6 hours"
+      "value": "3-6 hours (oral) / 1-2 days (oil)"
     },
     {
-      "label": "Anabolic ratio",
-      "value": "210:60"
+      "label": "Anabolic:Androgenic ratio",
+      "value": "40-60:90-210 (testosterone=100:100)"
     },
     {
       "label": "Legal status",
-      "value": "USA: Schedule III. EU: restricted Rx."
+      "value": "USA: Schedule III. EU: restricted Rx. WADA: banned."
     }
   ],
   "mechanism": "17α-alkylated AR agonist. Aromatase converts to E2 AND to 17α-methylestradiol (the latter an unusually potent, anastrozole-resistant metabolite → high gyno risk even on AI). 5α-reductase minimally activates to a DHT-like metabolite. Intracellular glycogen synthesis plus cell volumization act as indirect anabolic signals (mTOR activation).",
   "legalStatus": "USA: Schedule III. HU/EU: illegal without prescription, no pharmacy distribution. WADA: banned.",
   "onsetTime": "3-7 days",
-  "halfLife": "3-6 h",
+  "halfLife": "3-6 h (oral)",
+  "androgenicRatio": "40-60:90-210",
   "interactionsWith": [
     "aromatase inhibitors",
     "alcohol",
     "NSAIDs"
   ],
-  "aromatization": "Yes — moderate-high CYP19 affinity; \"wet gains\" (water retention, gynecomastia) common, anti-aromatase mandatory in long cycles (Schänzer 1996)",
-  "hepatotoxicity": "High — 17α-alkylated, dose-dependent ALT/AST elevation; cholestatic hepatitis and peliosis hepatis rare severe cases (Hartgens-Kuipers 2004)",
+  "aromatization": "high",
+  "hepatotoxicity": "high",
   "wadaStatus": "banned",
-  "androgenicRatio": "210:60",
   "benefits": [
     "Rapid mass + water retention (3-5 kg / 4 weeks)",
     "Strength gain in \"kickstart\" cycle",
@@ -47,22 +47,34 @@ export default {
   ],
   "studies": [
     {
-      "title": "Methandrostenolone effects on body composition and strength",
+      "title": "Effects of methandienone on the performance and body composition of men undergoing athletic training",
       "authors": "Hervey GR, Knibbs AV, Burkinshaw L et al.",
-      "journal": "Clin Sci. 1981;60(4):457-461.",
-      "pmid": "6263593"
+      "journal": "Clin Sci (Lond). 1981;60(4):457-461.",
+      "pmid": "7018798"
     },
     {
-      "title": "Cholestatic hepatitis associated with methandrostenolone",
-      "authors": "Søe KL, Søe M, Gluud C.",
-      "journal": "Pharmacol Toxicol. 1992;70(4):293-294.",
-      "pmid": "1502619"
+      "title": "Distinct phenotype of hepatotoxicity associated with illicit use of anabolic androgenic steroids",
+      "authors": "Robles-Diaz M, Gonzalez-Jimenez A, Medina-Caliz I et al.",
+      "journal": "Aliment Pharmacol Ther. 2015;41(1):116-125.",
+      "pmid": "25394890"
     },
     {
       "title": "Anabolic steroid cardiovascular toxicity",
       "authors": "Baggish AL, Weiner RB, Kanayama G et al.",
       "journal": "Circulation. 2017;135(21):1991-2002.",
       "pmid": "28533317"
+    },
+    {
+      "title": "Effects of androgenic-anabolic steroids in athletes",
+      "authors": "Hartgens F, Kuipers H.",
+      "journal": "Sports Med. 2004;34(8):513-554.",
+      "pmid": "15248788"
+    },
+    {
+      "title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement",
+      "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.",
+      "journal": "Endocr Rev. 2014;35(3):341-375.",
+      "pmid": "24423981"
     }
   ],
   "related": [
@@ -77,7 +89,7 @@ export default {
       "medium": 30,
       "high": 50
     },
-    "unit": "mg/nap",
+    "unit": "mg/day",
     "note": "\"Kickstart\" 4-6 weeks alongside longer-acting injectable AAS. 2-3 daily doses given the 3-6 h half-life. Aromatase inhibitor (anastrozole 0.5 mg EOD) often needed for E2 rise. TUDCA 500-750 mg/day liver support."
   },
   "bloodwork": {
@@ -101,19 +113,23 @@ export default {
     },
     "cruise": null
   },
+  "defaultVariant": "oral",
   "variants": [
     {
+      "id": "oral",
       "routeId": "oral",
       "routeLabel": "Methandrostenolone oral (tablet)",
+      "routeNote": "Classic format: 17α-methyl tablet with ~3-6 h half-life, fast plasma peak within 1-2 hours. Split dosing 2-3x daily recommended to maintain stable levels. High hepatic first-pass stress — TUDCA + NAC mandatory. Most studied and widely used Dianabol form.",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: FDA Rx (Ciba 1958, discontinued 1983); Schedule III. EU: UGL market dominant, illegal without prescription. WADA-banned.",
       "bioavailability": "~80% (oral, 17α-methyl first-pass-resistant)",
       "onsetTime": "1-2 h (oral, fast absorption)",
-      "halfLife": "5 hours (oral, parent compound)",
+      "halfLife": "3-6 h (oral, parent compound)",
       "halfLifeActive": "5 h",
-      "detectionWindow": "3-6 weeks urinary (parent + Schänzer 2006 6β-OH-methandienone long-term metabolites).",
-      "aromatization": "Yes — CYP19 substrate, clinically strong E2 conversion (Pope-Kanayama 2014).",
-      "hepatotoxicity": "High — 17α-methyl hepatic first-pass stress, ALT/AST 3-5x rise common at 4+ week cycle.",
+      "detectionWindow": "3-6 weeks urinary (parent + 6β-OH-methandienone long-term metabolites).",
+      "aromatization": "high",
+      "hepatotoxicity": "high",
+      "dosing": "Typical dose 20-50 mg/day, split 2-3x daily (morning, midday, optionally pre-workout). Beginners: 20-25 mg/day. Intermediate: 30-40 mg/day. Maximum 50 mg/day; cycles beyond 6 weeks not recommended.",
       "quality": {
         "pure": [
           "Clear white scored tablet (5 mg or 10 mg classic UGL dosing)",
@@ -145,13 +161,15 @@ export default {
           "medium": 30,
           "high": 50
         },
-        "unit": "mg/day (oral, 2-3x split)",
-        "note": "Max 6 weeks cycle. 20-50 mg/day, 2-3x split (5h half-life). TUDCA + NAC mandatory. PCT 4 weeks."
+        "unit": "mg/day (oral, split 2-3x)",
+        "note": "Max 6 weeks cycle. 20-50 mg/day, split 2-3x (3-6h half-life). TUDCA + NAC mandatory. PCT 4 weeks."
       }
     },
     {
+      "id": "oil",
       "routeId": "oil",
       "routeLabel": "Methandrostenolone in-oil (IM, UGL)",
+      "routeNote": "Rare alternative format (\"Reforvit-B\" type suspension). Bypasses hepatic first-pass metabolism → somewhat lower but NOT zero hepatotoxicity (17α-methyl group causes intrinsic hepatotoxicity even without first-pass). More stable plasma levels with EOD injection schedule. Notoriously painful injection; exclusively UGL source.",
       "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Not a licensed format — exclusively UGL underground market. Illegal everywhere. WADA-banned.",
       "bioavailability": "~95-100% (IM bypasses first-pass; methandrostenolone suspended in oil with slow depot absorption)",
@@ -159,43 +177,46 @@ export default {
       "halfLife": "1-2 days (in-oil suspension; non-esterified methandrostenolone)",
       "halfLifeActive": "1-2 days",
       "detectionWindow": "4-6 weeks urinary (longer than oral due to depot absorption).",
-      "aromatization": "Yes — structurally same as oral; aromatization level identical.",
-      "hepatotoxicity": "Moderate — not zero due to 17α-methyl group, but avoiding first-pass reduces peak hepatic concentration. Profile similar to Superdrol injectable (Pope-Kanayama 2014 c17-AA injectable class extrapolated data).",
+      "aromatization": "high",
+      "hepatotoxicity": "moderate-high",
+      "dosing": "Typical dose 50 mg EOD (every other day) from a 10 ml 50 mg/ml vial. Some users use 75-100 mg EOD. Maximum 8-week cycle. Strict aseptic injection technique required.",
+      "defaultVialMg": 500,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 50000,
       "quality": {
         "pure": [
-          "Clear yellowish oil, 10ml vial, sterile filtered, 50-75 mg/ml UGL concentration",
+          "Clear yellowish oil, 10 ml vial, sterile filtered, 50 mg/ml UGL concentration",
           "UGL HPLC-tested source MANDATORY"
         ],
         "caution": [
           "PIP (injection site pain) common, methandrostenolone-in-oil notoriously painful",
           "Lipid disturbance dramatic: HDL drop same as oral",
           "Water retention + gynecomastia risk (aromatization unchanged)",
-          "Hepatotoxicity reduced BUT not zero"
+          "Hepatotoxicity reduced BUT not zero — TUDCA mandatory"
         ],
         "avoid": [
           "Strong injection-site sensitivity",
-          "Any liver disorder (moderate hepatotoxicity)",
+          "Any liver disorder (moderate-high hepatotoxicity)",
           "Aseptic injection technique lacking (abscess risk)",
           "More than 8 weeks cycle"
         ]
       },
       "interactions": [
         "Anastrozole 0.5 mg E3D: E2 control",
-        "TUDCA 500 mg/day recommended (due to moderate hepatotoxicity)",
+        "TUDCA 500-750 mg/day mandatory (moderate-high hepatotoxicity)",
         "PCT starts last injection +5-7 days"
       ],
       "doseCalc": {
         "type": "fixed",
         "fixed": {
           "low": 50,
-          "medium": 100,
-          "high": 150
+          "medium": 75,
+          "high": 100
         },
-        "unit": "mg/week (IM, split 2-3x)",
-        "note": "Max 8 weeks cycle. 50-150 mg/week, 2-3x split (short half-life despite depot). TUDCA recommended. PCT 4 weeks last injection +5-7 days."
+        "unit": "mg/inj (EOD, IM)",
+        "note": "Max 8 weeks cycle. 50-100 mg/inj EOD. TUDCA 500-750 mg/day mandatory. PCT 4 weeks, last injection +5-7 days."
       }
     }
   ],
-  "defaultVariant": "oral",
   "anecdote": "Dianabol holds an almost legendary status in AAS lore. Users often report a very fast shift in fullness, leverage, recovery, and gym performance within surprisingly short timeframes. A hallmark feature is how 'anabolic' it feels — fairly obvious rather than subtle. Strength typically climbs rapidly alongside dramatic pump and volumization effects. Much of what is colloquially called 'water weight' is actually intramuscular glycogen and cell hydration, which is not equivalent to meaningless bloat and may itself contribute to anabolic signaling. Community accounts note Dianabol's disproportionate effect on training momentum — more productive sessions, faster recovery, and compounding growth from that alone. Appetite often increases too. Tradeoffs are significant: notable estrogen-related effects (gyno, water retention), blood pressure elevation, lipid disruption, and 17α-alkylated hepatic strain. Some accounts and emerging evidence suggest Dianabol metabolizes into an unusually potent estrogenic metabolite, which is worth keeping in mind when planning AI/SERM support."
 }
