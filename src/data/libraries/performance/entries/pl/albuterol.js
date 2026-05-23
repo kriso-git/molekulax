@@ -96,40 +96,40 @@ export default {
   ],
   "studies": [
     {
-      "title": "Selective beta-2-adrenoceptor agonists for asthma: a review",
+      "title": "Pharmacology and therapeutics of bronchodilators",
       "authors": "Cazzola M, Page CP, Calzetta L, Matera MG.",
       "journal": "Pharmacol Rev. 2012;64(3):450-504.",
       "pmid": "22611179"
     },
     {
-      "title": "Salbutamol and human performance: pharmacology and effects",
+      "title": "β2-Agonists and physical performance: a systematic review and meta-analysis of randomised controlled trials",
       "authors": "Pluim BM, de Hon O, Staal JB et al.",
       "journal": "Sports Med. 2011;41(1):39-57.",
       "pmid": "21142283"
     },
     {
-      "title": "Oral salbutamol and skeletal muscle: a meta-analysis",
+      "title": "Effects of short-term salbutamol ingestion during a Wingate test",
       "authors": "Le Panse B, Collomp K, Portier H et al.",
-      "journal": "Int J Sports Med. 2005;26(7):514-520.",
+      "journal": "Int J Sports Med. 2005;26(7):518-23.",
       "pmid": "16195983"
     },
     {
-      "title": "Asthma medications and athletic performance",
+      "title": "Do inhaled beta(2)-agonists have an ergogenic potential in non-asthmatic competitive athletes?",
       "authors": "Kindermann W.",
       "journal": "Sports Med. 2007;37(2):95-102.",
       "pmid": "17241101"
     },
     {
-      "title": "The performance-enhancing effects of inhaled and oral β2-agonists in healthy individuals: a systematic review and meta-analysis",
+      "title": "Review of WADA Prohibited Substances: Limited Evidence for Performance-Enhancing Effects",
       "authors": "Heuberger JAAC, Cohen AF.",
-      "journal": "Sports Med. 2019;49(2):217-247.",
-      "pmid": "30184186"
+      "journal": "Sports Med. 2019;49(4):525-539.",
+      "pmid": "30411235"
     },
     {
-      "title": "Anabolic effect of oral albuterol on skeletal muscle in resistance-trained men",
+      "title": "The effects of albuterol and isokinetic exercise on the quadriceps muscle group",
       "authors": "Caruso JF, Signorile JF, Perry AC et al.",
-      "journal": "Med Sci Sports Exerc. 1995;27(10):1471-1476.",
-      "pmid": "8806963"
+      "journal": "Med Sci Sports Exerc. 1995;27(11):1471-6.",
+      "pmid": "8587482"
     }
   ],
   "faq": [
@@ -170,6 +170,8 @@ export default {
       "routeId": "oral",
       "routeLabel": "Tabletka doustna",
       "image": "/performance/tablet-pile-white.png",
+      "whatIs": "Tabletka Salbutamolu HCl (2 mg, 4 mg) — stosowana off-label w cyklach termogenicznych podobnych do Clenbuterolu, z ochroną masy mięśniowej. Dostępna w aptece (Ventolin 2 mg tabletki), co gwarantuje precyzyjną zawartość substancji czynnej, w odróżnieniu od produktów UGL.",
+      "routeNote": "Wybierz formę doustną, gdy planujesz cykl redukcyjny w stylu Clenbuterolu: tabletki pozwalają na dokładne dawkowanie, a okres półtrwania ~5-6 godz daje bezpieczniejszy profil kumulacji niż Clenbuterol. Bez wskazania astmatycznego ta droga jest zakazana przez WADA — wyłącznie dla niekonkurujących sportowców w kontekście off-label.",
       "dosing": "4-8 mg PO TID, max 24 mg/dzień",
       "halfLife": "5-6 godz",
       "halfLifeActive": "5-6 godz",
@@ -182,7 +184,7 @@ export default {
         "type": "fixed",
         "fixed": { "low": 4, "medium": 8, "high": 16 },
         "unit": "mg/dzień",
-        "note": "Doustnie 4-8 mg 3x/dzień (cykl typu Clen), max 24 mg/dzień. Monitoring kardio + EKG baseline + kontrola 4-tygodniowa obowiązkowa."
+        "note": "Doustnie 4-8 mg 3x/dzień (cykl typu Clen), max 24 mg/dzień. Tolerancja rozwija się w ciągu 1-2 tygodni — cykl maksymalnie 4-6 tygodni, potem 2 tygodnie przerwy. Monitoring kardio + EKG baseline + kontrola 4-tygodniowa obowiązkowa. Magnez 400 mg + potas w połowie cyklu przeciw hipokaliemii."
       }
     },
     {
@@ -190,6 +192,8 @@ export default {
       "routeId": "inhaled",
       "routeLabel": "Inhalator MDI",
       "image": "/performance/inhaler-asthma.png",
+      "whatIs": "Inhalator z odmierzaną dawką (MDI) — standardowa forma leczenia astmy Ventolin/ProAir. Dostarcza lek bezpośrednio do płuc przy minimalnym wchłanianiu ogólnoustrojowym. Zgodnie z przepisami WADA stosowanie do 1600 μg/24h jest dozwolone dla zawodników z astmą bez konieczności TUE.",
+      "routeNote": "Wybierz inhalator, gdy głównym celem jest leczenie objawów ostrej astmy, lub gdy rywalizujesz pod kontrolą WADA i potrzebujesz bronchodylatatora. Ogólnoustrojowe działania niepożądane (drżenie, tachykardia) są znacznie łagodniejsze niż przy formie doustnej, ale off-label efekt termogeniczny i ochrona masy mięśniowej są też mniejsze.",
       "dosing": "90-200 μg/wdech PRN, max 1600 μg/24h próg WADA",
       "halfLife": "1.5-3 godz (lokalnie)",
       "halfLifeActive": "1.5-3 godz",
@@ -202,7 +206,7 @@ export default {
         "type": "fixed",
         "fixed": { "low": 90, "medium": 200, "high": 1600 },
         "unit": "μg/wdech (max 1600 μg/24h próg WADA)",
-        "note": "Inhalator MDI 90-200 μg/wdech PRN. WADA-akredytowany sport wyczynowy 1600 μg/24h maksymalne legalne odstępstwo TUE."
+        "note": "Inhalator MDI 90-200 μg/wdech w razie potrzeby (PRN). Sport wyczynowy akredytowany przez WADA: 1600 μg/24h maksymalna dozwolona dawka — stężenie w moczu musi pozostać <1000 ng/mL. Typowa dawka terapeutyczna: 90 μg (1 dawka) lub 180 μg (2 dawki) co 4-6 godz w razie potrzeby, max 4-8x/dzień."
       }
     }
   ],

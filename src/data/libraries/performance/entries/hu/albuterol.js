@@ -96,40 +96,40 @@ export default {
   ],
   "studies": [
     {
-      "title": "Selective beta-2-adrenoceptor agonists for asthma: a review",
+      "title": "Pharmacology and therapeutics of bronchodilators",
       "authors": "Cazzola M, Page CP, Calzetta L, Matera MG.",
       "journal": "Pharmacol Rev. 2012;64(3):450-504.",
       "pmid": "22611179"
     },
     {
-      "title": "Salbutamol and human performance: pharmacology and effects",
+      "title": "β2-Agonists and physical performance: a systematic review and meta-analysis of randomised controlled trials",
       "authors": "Pluim BM, de Hon O, Staal JB et al.",
       "journal": "Sports Med. 2011;41(1):39-57.",
       "pmid": "21142283"
     },
     {
-      "title": "Oral salbutamol and skeletal muscle: a meta-analysis",
+      "title": "Effects of short-term salbutamol ingestion during a Wingate test",
       "authors": "Le Panse B, Collomp K, Portier H et al.",
-      "journal": "Int J Sports Med. 2005;26(7):514-520.",
+      "journal": "Int J Sports Med. 2005;26(7):518-23.",
       "pmid": "16195983"
     },
     {
-      "title": "Asthma medications and athletic performance",
+      "title": "Do inhaled beta(2)-agonists have an ergogenic potential in non-asthmatic competitive athletes?",
       "authors": "Kindermann W.",
       "journal": "Sports Med. 2007;37(2):95-102.",
       "pmid": "17241101"
     },
     {
-      "title": "The performance-enhancing effects of inhaled and oral β2-agonists in healthy individuals: a systematic review and meta-analysis",
+      "title": "Review of WADA Prohibited Substances: Limited Evidence for Performance-Enhancing Effects",
       "authors": "Heuberger JAAC, Cohen AF.",
-      "journal": "Sports Med. 2019;49(2):217-247.",
-      "pmid": "30184186"
+      "journal": "Sports Med. 2019;49(4):525-539.",
+      "pmid": "30411235"
     },
     {
-      "title": "Anabolic effect of oral albuterol on skeletal muscle in resistance-trained men",
+      "title": "The effects of albuterol and isokinetic exercise on the quadriceps muscle group",
       "authors": "Caruso JF, Signorile JF, Perry AC et al.",
-      "journal": "Med Sci Sports Exerc. 1995;27(10):1471-1476.",
-      "pmid": "8806963"
+      "journal": "Med Sci Sports Exerc. 1995;27(11):1471-6.",
+      "pmid": "8587482"
     }
   ],
   "faq": [
@@ -170,6 +170,8 @@ export default {
       "routeId": "oral",
       "routeLabel": "Oral tabletta",
       "image": "/performance/tablet-pile-white.png",
+      "whatIs": "Salbutamol HCl tabletta (2 mg, 4 mg) — a Clenbuterolhoz hasonló thermogenikus + izommegtartó off-label ciklus céljára. Gyógyszertári forrásból elérhető (Ventolin 2 mg tabletta HU-ban), ami garantált hatóanyagtartalmat jelent az UGL-termékekkel szemben.",
+      "routeNote": "Válaszd az oral formát, ha Clen-szerű fat-loss ciklust tervezel: a tabletta pontos dózis-titrálást tesz lehetővé, és a ~5-6 órás felezési idő biztonságosabb profilt ad. Asztma-indikáció nélkül a WADA-szempontból ez a tiltott forma — kizárólag nem-versenyző off-label kontextusban.",
       "dosing": "4-8 mg PO TID, max 24 mg/nap",
       "halfLife": "5-6 óra",
       "halfLifeActive": "5-6 óra",
@@ -182,7 +184,7 @@ export default {
         "type": "fixed",
         "fixed": { "low": 4, "medium": 8, "high": 16 },
         "unit": "mg/nap",
-        "note": "Oral 4-8 mg 3x/nap (Clen-szerű ciklus), max 24 mg/nap. Kardio-monitoring + EKG-baseline + 4-week-check kötelező."
+        "note": "Oral 4-8 mg 3x/nap (Clen-szerű ciklus), max 24 mg/nap. Tolerancia 1-2 hét alatt kialakul — ciklus maximum 4-6 hét, utána 2 hét OFF. Kardio-monitoring + EKG-baseline + 4-hetes ellenőrzés kötelező. Magnézium 400 mg + kálium mid-cycle a hypokalaemia ellen."
       }
     },
     {
@@ -190,6 +192,8 @@ export default {
       "routeId": "inhaled",
       "routeLabel": "MDI inhaláló",
       "image": "/performance/inhaler-asthma.png",
+      "whatIs": "Mért dózisú aeroszol inhaláló (MDI, Metered-Dose Inhaler) — a Ventolin/ProAir szabványos asztma-kezelési formája. Direkten a tüdőbe juttatja a hatóanyagot, minimális szisztémás felszívódással. WADA szerint <1600 μg/24 óra megengedett asztmás versenyzőknél TUE nélkül.",
+      "routeNote": "Válaszd az inhaláló formát, ha asztma-tünetek kezelése az elsődleges cél, vagy WADA-ellenőrzött versenyzőként szükséged van bronchodilatátorra. Az inhaláló szisztémás mellékhatásai (tremor, tachycardia) lényegesen enyhébbek, mint az oral formánál, de a thermogenikus és izommegtartó off-label hatás is kisebb.",
       "dosing": "90-200 μg/szippantás PRN, max 1600 μg/24h WADA-szint",
       "halfLife": "1.5-3 óra (local)",
       "halfLifeActive": "1.5-3 óra",
@@ -202,7 +206,7 @@ export default {
         "type": "fixed",
         "fixed": { "low": 90, "medium": 200, "high": 1600 },
         "unit": "μg/szippantás (max 1600 μg/24h WADA-szint)",
-        "note": "MDI inhaláló 90-200 μg/szippantás PRN. WADA-akkreditált versenysportban 1600 μg/24h maximum legitim TUE-keret."
+        "note": "MDI inhaláló 90-200 μg/szippantás szükség szerint (PRN). WADA-akkreditált versenysportban 1600 μg/24h a maximum legitim TUE-keret — ennél a határnél a vizelet-koncentráció <1000 ng/mL szint alatt kell maradjon. Egyszeri terápiás szippantás 90 μg (1 puff) vagy 180 μg (2 puff) — 4-6 óránként PRN, max 4-8x/nap."
       }
     }
   ],

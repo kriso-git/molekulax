@@ -96,40 +96,40 @@ export default {
   ],
   "studies": [
     {
-      "title": "Selective beta-2-adrenoceptor agonists for asthma: a review",
+      "title": "Pharmacology and therapeutics of bronchodilators",
       "authors": "Cazzola M, Page CP, Calzetta L, Matera MG.",
       "journal": "Pharmacol Rev. 2012;64(3):450-504.",
       "pmid": "22611179"
     },
     {
-      "title": "Salbutamol and human performance: pharmacology and effects",
+      "title": "β2-Agonists and physical performance: a systematic review and meta-analysis of randomised controlled trials",
       "authors": "Pluim BM, de Hon O, Staal JB et al.",
       "journal": "Sports Med. 2011;41(1):39-57.",
       "pmid": "21142283"
     },
     {
-      "title": "Oral salbutamol and skeletal muscle: a meta-analysis",
+      "title": "Effects of short-term salbutamol ingestion during a Wingate test",
       "authors": "Le Panse B, Collomp K, Portier H et al.",
-      "journal": "Int J Sports Med. 2005;26(7):514-520.",
+      "journal": "Int J Sports Med. 2005;26(7):518-23.",
       "pmid": "16195983"
     },
     {
-      "title": "Asthma medications and athletic performance",
+      "title": "Do inhaled beta(2)-agonists have an ergogenic potential in non-asthmatic competitive athletes?",
       "authors": "Kindermann W.",
       "journal": "Sports Med. 2007;37(2):95-102.",
       "pmid": "17241101"
     },
     {
-      "title": "The performance-enhancing effects of inhaled and oral β2-agonists in healthy individuals: a systematic review and meta-analysis",
+      "title": "Review of WADA Prohibited Substances: Limited Evidence for Performance-Enhancing Effects",
       "authors": "Heuberger JAAC, Cohen AF.",
-      "journal": "Sports Med. 2019;49(2):217-247.",
-      "pmid": "30184186"
+      "journal": "Sports Med. 2019;49(4):525-539.",
+      "pmid": "30411235"
     },
     {
-      "title": "Anabolic effect of oral albuterol on skeletal muscle in resistance-trained men",
+      "title": "The effects of albuterol and isokinetic exercise on the quadriceps muscle group",
       "authors": "Caruso JF, Signorile JF, Perry AC et al.",
-      "journal": "Med Sci Sports Exerc. 1995;27(10):1471-1476.",
-      "pmid": "8806963"
+      "journal": "Med Sci Sports Exerc. 1995;27(11):1471-6.",
+      "pmid": "8587482"
     }
   ],
   "faq": [
@@ -170,6 +170,8 @@ export default {
       "routeId": "oral",
       "routeLabel": "Oral tablet",
       "image": "/performance/tablet-pile-white.png",
+      "whatIs": "Salbutamol HCl tablet (2 mg, 4 mg) — used off-label for Clenbuterol-like thermogenic and muscle-sparing cycles. Available from pharmacy (Ventolin 2 mg tablet), guaranteeing content accuracy unlike UGL products.",
+      "routeNote": "Choose the oral form when planning a Clen-style fat-loss cycle: tablets allow precise dose titration and the ~5-6 h half-life delivers a safer accumulation profile than Clenbuterol. Without an asthma indication this route is banned under WADA — for non-competing off-label context only.",
       "dosing": "4-8 mg PO TID, max 24 mg/day",
       "halfLife": "5-6 h",
       "halfLifeActive": "5-6 h",
@@ -182,7 +184,7 @@ export default {
         "type": "fixed",
         "fixed": { "low": 4, "medium": 8, "high": 16 },
         "unit": "mg/day",
-        "note": "Oral 4-8 mg 3x/day (Clen-style cycle), max 24 mg/day. Cardio monitoring + EKG baseline + 4-week check mandatory."
+        "note": "Oral 4-8 mg 3x/day (Clen-style cycle), max 24 mg/day. Tolerance develops within 1-2 weeks — cycle maximum 4-6 weeks then 2 weeks OFF. Cardio monitoring + ECG baseline + 4-week check mandatory. Magnesium 400 mg + potassium mid-cycle to counter hypokalaemia."
       }
     },
     {
@@ -190,6 +192,8 @@ export default {
       "routeId": "inhaled",
       "routeLabel": "MDI inhaler",
       "image": "/performance/inhaler-asthma.png",
+      "whatIs": "Metered-Dose Inhaler (MDI) — the standard asthma treatment form of Ventolin/ProAir. Delivers drug directly to the lungs with minimal systemic absorption. Under WADA rules, use up to 1600 μg/24 h is permitted for asthmatic athletes without a TUE.",
+      "routeNote": "Choose the inhaler when treating acute asthma symptoms is the primary goal, or when competing under WADA rules and bronchodilation is medically needed. Systemic side effects (tremor, tachycardia) are significantly milder than oral, but the off-label thermogenic and muscle-sparing effect is also smaller.",
       "dosing": "90-200 μg/puff PRN, max 1600 μg/24h WADA threshold",
       "halfLife": "1.5-3 h (local)",
       "halfLifeActive": "1.5-3 h",
@@ -202,7 +206,7 @@ export default {
         "type": "fixed",
         "fixed": { "low": 90, "medium": 200, "high": 1600 },
         "unit": "μg/puff (max 1600 μg/24h WADA threshold)",
-        "note": "MDI inhaler 90-200 μg/puff PRN. WADA-accredited competitive sport 1600 μg/24h maximum legitimate TUE allowance."
+        "note": "MDI inhaler 90-200 μg/puff as needed (PRN). WADA-accredited competitive sport: 1600 μg/24 h maximum legitimate allowance — urine concentration must remain <1000 ng/mL. Typical therapeutic dose: 90 μg (1 puff) or 180 μg (2 puffs) every 4-6 h PRN, max 4-8x/day."
       }
     }
   ],
