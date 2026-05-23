@@ -2,7 +2,7 @@
 // z prekursorów lizyny + metioniny, mitochondrialny shuttle dla długołańcuchowych
 // kwasów tłuszczowych. Izolacja Gulewitsch + Krimberg 1905, Sigma-Tau 1985 FDA
 // Rx na pierwotny niedobór karnityny, bodybuilding off-label od lat 90.
-// Źródła: Stephens 2007 PMID 17984236, Wall 2011 PMID 21224234,
+// Źródła: Stephens 2007 PMID 17331998, Wall 2011 PMID 21224234,
 // Koeth 2013 Nature Med PMID 23563705, Kraemer 2008 PMID 18204383,
 // Vukovich 1994 PMID 7960016.
 
@@ -13,7 +13,7 @@ export default {
   "accentColor": "#f97316",
   "tagColor": "rgba(249,115,22,0.18)",
   "shortDesc": "Czwartorzędowy związek amoniowy, syntetyzowany endogennie z prekursorów lizyny + metioniny, mitochondrialny shuttle dla długołańcuchowych kwasów tłuszczowych (carnitine palmitoyltransferase I/II). Izolacja Gulewitsch + Krimberg 1905, Sigma-Tau 1985 FDA Rx na pierwotny niedobór karnityny; bodybuilding off-label od lat 90., mainstream OTC fat-burner od lat 2000. WADA: dozwolona, NADA Niemcy 2018 monitored powyżej 50 mg/kg IV-bolus.",
-  "description": "L-Karnityna to czwartorzędowy związek amoniowy, który organizm ludzki syntetyzuje endogennie w ilości ~25 mg/dobę poprzez kaskadę enzymatyczną w wątrobie i nerkach z prekursorów lizyny i metioniny. Pierwotnie wyizolowana przez rosyjskich biochemików Gulewitsch i Krimberg w 1905 z tkanki mięśniowej (stąd nazwa 'carnitine' od 'caro/carnis' = mięso). Tylko izomer L jest biologicznie aktywny; izomer D jest enzymatycznie nieaktywny + sygnał kardiotoksyczny. Zatwierdzenie FDA w 1985 przez Sigma-Tau (włoska firma farma) dotyczyło wskazania Rx na pierwotny niedobór karnityny; off-label użycie w bodybuildingu zaczęło się w latach 90., a od lat 2000 mainstreamowa kategoria OTC 'fat-burner supplement'. Mechanizm opiera się na CoA-mediowanym mitochondrialnym transporcie długołańcuchowych kwasów tłuszczowych (LCFA) przez system shuttle carnitine palmitoyltransferase I/II (CPT-I/II) — jest to krok ograniczający tempo β-oksydacji. Stephens 2007 (Am J Physiol PMID 17984236), klasyczne badanie metodologii IV-clamp, wykazało, że supraphysjologiczne dawki doustne >1 g/dobę NIE podnoszą endogennego poziomu syntezy, ale przy ładowaniu przewlekłym (3-4 tygodnie, 2 g/dobę) z węglowodanami stężenie w tkance mięśniowej może wzrosnąć 2-3x dzięki insulin-stimulated muscle uptake. Doustna biodostępność jest niska (~15%), forma iniekcyjna IM/SC ma 100% biodostępność i jest 4-6x ekwiwalentna dawkowo wobec doustnej. WADA: 'dozwolona' na liście prohibited 2025, ale NADA Niemcy 2018 podniosły dawkowanie >50 mg/kg IV-bolus do kategorii monitorowanej (potencjalny kontekst marker doping krwi).",
+  "description": "L-Karnityna to czwartorzędowy związek amoniowy, który organizm ludzki syntetyzuje endogennie w ilości ~25 mg/dobę poprzez kaskadę enzymatyczną w wątrobie i nerkach z prekursorów lizyny i metioniny. Pierwotnie wyizolowana przez rosyjskich biochemików Gulewitsch i Krimberg w 1905 z tkanki mięśniowej (stąd nazwa 'carnitine' od 'caro/carnis' = mięso). Tylko izomer L jest biologicznie aktywny; izomer D jest enzymatycznie nieaktywny + sygnał kardiotoksyczny. Zatwierdzenie FDA w 1985 przez Sigma-Tau (włoska firma farma) dotyczyło wskazania Rx na pierwotny niedobór karnityny; off-label użycie w bodybuildingu zaczęło się w latach 90., a od lat 2000 mainstreamowa kategoria OTC 'fat-burner supplement'. Mechanizm opiera się na CoA-mediowanym mitochondrialnym transporcie długołańcuchowych kwasów tłuszczowych (LCFA) przez system shuttle carnitine palmitoyltransferase I/II (CPT-I/II) — jest to krok ograniczający tempo β-oksydacji. Stephens 2007 (Am J Physiol PMID 17331998), klasyczne badanie metodologii IV-clamp, wykazało, że supraphysjologiczne dawki doustne >1 g/dobę NIE podnoszą endogennego poziomu syntezy, ale przy ładowaniu przewlekłym (3-4 tygodnie, 2 g/dobę) z węglowodanami stężenie w tkance mięśniowej może wzrosnąć 2-3x dzięki insulin-stimulated muscle uptake. Doustna biodostępność jest niska (~15%), forma iniekcyjna IM/SC ma 100% biodostępność i jest 4-6x ekwiwalentna dawkowo wobec doustnej. WADA: 'dozwolona' na liście prohibited 2025, ale NADA Niemcy 2018 podniosły dawkowanie >50 mg/kg IV-bolus do kategorii monitorowanej (potencjalny kontekst marker doping krwi).",
   "keyInfo": [
     {
       "label": "Mechanizm działania",
@@ -42,11 +42,12 @@ export default {
       "id": "oral",
       "routeId": "oral",
       "routeLabel": "Kapsułka / tabletka doustna",
+      "routeNote": "Wygodna codzienna forma — niski koszt, łatwa adherencja. Ładowanie przewlekłe 2 g/dobę + współspożycie węglowodanów podnosi stężenie w tkance mięśniowej 2-3x przez 3-4 tygodnie. Preferowana trasa dla protokołów początkujących i podtrzymujących.",
       "label": "Kapsułka doustna",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "Kategoria OTC suplementu globalnie (US, UE, HU, PL), zatwierdzone przez FDA Rx na pierwotny niedobór karnityny (Sigma-Tau Carnitor 1985).",
       "bioavailability": "~15% (niska — wyciek P-glikoproteinowy w przewodzie pokarmowym + straty pierwszego przejścia)",
-      "onsetTime": "1-2 godziny (wchłanianie doustne + steady-state ładowania mięśni 3-4 tygodnie przewlekle)",
+      "onsetTime": "1-2 godziny (wchłanianie doustne); steady-state ładowania mięśni 3-4 tygodnie przewlekle",
       "halfLife": "~15 godzin",
       "halfLifeActive": "~15 godzin",
       "detectionWindow": "Akredytowane przez WADA LC-MS/MS NIE jest testem standardowym; ~1-2 tygodnie przy dawce przewlekłej wysokiej",
@@ -72,22 +73,26 @@ export default {
         ]
       },
       "indications": "Subtelne przesunięcie utleniania tłuszczu + ochrona glikogenu mięśniowego w cuttingu; ładowanie przewlekłe 3-4 tygodnie z węglowodanami (Wall 2011 PMID 21224234)",
-      "dosing": "500-2000 mg/dobę w 3 dawkach z posiłkami (współspożycie węglowodanów dla insulin-stimulated muscle uptake)",
+      "dosing": "Typowy protokół: 2-4 g/dobę w 3 dawkach z posiłkami (współspożycie węglowodanów dla insulin-stimulated muscle uptake). Dawka startowa 500-1000 mg/dobę; próg efektywności przy ładowaniu przewlekłym 2 g/dobę.",
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 500, "medium": 1000, "high": 2000 },
+        "fixed": { "low": 500, "medium": 2000, "high": 4000 },
         "unit": "mg/dzień",
-        "note": "Doustnie 500-2000 mg/dzień podzielone na 3x z posiłkami (współspożycie węglowodanów dla wychwytu mięśniowego stymulowanego insuliną). Loading chroniczny 3-4 tygodnie dla steady-state stężenia mięśniowego."
+        "note": "Doustnie 500-4000 mg/dzień podzielone na 3x z posiłkami (współspożycie węglowodanów dla wychwytu mięśniowego stymulowanego insuliną). Loading chroniczny 3-4 tygodnie dla steady-state stężenia mięśniowego. Trasa isFixedDose — wyświetlanie info-card, MiniCalc nie dotyczy."
       }
     },
     {
-      "id": "inj",
+      "id": "aq",
       "routeId": "aq",
       "routeLabel": "Iniekcja IM/SC (fiolka wodna)",
+      "routeNote": "Maksymalna biodostępność (100%) — pełna dawka trafia do krążenia vs ~15% doustnie. Protokół pre-workout zorientowany na wydajność: 500-1000 mg SC 30-60 minut przed treningiem. Ekwiwalent dawki ~4-6x doustnej; szybsze osiągnięcie steady-state w ciągu 1-2 tygodni.",
       "label": "Iniekcja IM/SC",
-      "image": "/performance/ampoule-glass.png",
+      "image": "/performance/water-vial.png",
+      "defaultVialMg": 1000,
+      "defaultBacMl": 5,
+      "defaultDoseMcg": 500000,
       "legalStatus": "Tylko Rx (formulacja IM/SC), zatwierdzone przez FDA Carnitor IV/IM (Sigma-Tau) na pierwotny niedobór karnityny. UE + HU + PL tylko Rx.",
-      "bioavailability": "100% (IM/SC omija straty pierwszego przejścia)",
+      "bioavailability": "~100% (IM/SC omija straty pierwszego przejścia)",
       "onsetTime": "30-60 minut (wchłanianie IM/SC)",
       "halfLife": "~15 godzin",
       "halfLifeActive": "~15 godzin",
@@ -97,7 +102,7 @@ export default {
       "quality": {
         "pure": [
           "Fiolka Carnitor IV/IM (Sigma-Tau) zatwierdzona przez FDA — Rx-grade ze źródła aptecznego",
-          "Fiolka IM/SC z compounding pharmacy standaryzowana do 1 g/mL (USA) lub 200 mg/mL (UE)"
+          "Fiolka IM/SC z compounding pharmacy standaryzowana do 1 g/5 mL (200 mg/mL UE) lub 1 g/mL (USA)"
         ],
         "caution": [
           "Ból w miejscu iniekcji (PIP): vehicle czwartorzędowy amoniowy IM/SC często bolesny, rotacja IM deltoid/gluteal",
@@ -111,17 +116,17 @@ export default {
           "Przy Rx na zaburzenia napadowe (IM/SC L-Karnityna niesie rzadkie ryzyko indukcji napadów)"
         ]
       },
-      "indications": "Preferencja w cuttingu: przewaga biodostępności + ekwiwalent dawki 4-6x wobec doustnej (kontekst kliniczny Rx Sigma-Tau Carnitor IM)",
-      "dosing": "1-2 g IM/SC 2-3x/tydzień w cuttingu (długość cyklu 8-12 tygodni)",
+      "indications": "Cutting zorientowany na wydajność — przewaga biodostępności + ekwiwalent dawki 4-6x wobec doustnej (kontekst kliniczny Rx Sigma-Tau Carnitor IM). Pre-workout SC 500-1000 mg 30-60 minut przed treningiem.",
+      "dosing": "200-1000 mg/iniekcję IM/SC 2-3x/tydzień w cuttingu (długość cyklu 8-12 tygodni). Typowa dawka performance: 500 mg SC pre-workout. Standardowa ampułka Sigma-Tau Carnitor 1 g/5 mL.",
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 1000, "medium": 1500, "high": 2000 },
-        "unit": "mg IM/SC 2-3x/tydzień",
-        "note": "IM/SC 1-2 g 2-3x/tydzień cykl cutting (8-12 tygodni długość cyklu). Biodostępność 100% omijająca first-pass-loss."
+        "fixed": { "low": 200, "medium": 500, "high": 1000 },
+        "unit": "mg/iniekcję",
+        "note": "IM/SC 200-1000 mg/iniekcję 2-3x/tydzień cykl cutting (8-12 tygodni). Typowa ampułka 1 g (5 mL) — 500 mg = 2.5 mL SC pre-workout. Biodostępność 100%; steady-state szybsze niż doustnie."
       }
     }
   ],
-  "mechanism": "L-Karnityna to czwartorzędowy związek amoniowy, który organizm ludzki syntetyzuje endogennie w ilości ~25 mg/dobę przez kaskadę enzymatyczną w wątrobie i nerkach z prekursorów lizyny + metioniny. Podstawową rolą jest mitochondrialny transport estrów CoA długołańcuchowych kwasów tłuszczowych (LCFA). Proces jest 3-etapowym shuttle: (1) carnitine palmitoyltransferase I (CPT-I) na powierzchni zewnętrznej błony mitochondrialnej konwertuje LCFA-CoA do LCFA-carnitine z uwolnieniem CoA + włączeniem karnityny; (2) carnitine-acylcarnitine translocase (CACT) transportuje LCFA-carnitine przez błonę wewnętrzną do macierzy; (3) carnitine palmitoyltransferase II (CPT-II) w macierzy konwertuje LCFA-carnitine z powrotem do LCFA-CoA + uwalnia wolną karnitynę. LCFA-CoA wchodzi następnie do kaskady β-oksydacji (acyl-CoA dehydrogenaza, enoyl-CoA hydrataza, hydroxyacyl-CoA dehydrogenaza, tiolaza) → acetyl-CoA → cykl TCA → ATP. CPT-I to krok ograniczający tempo β-oksydacji, regulowany cytoplazmatycznym malonyl-CoA jako inhibitorem allosterycznym (mediowany insuliną). Stephens 2007 (Am J Physiol PMID 17984236) IV-clamp methodology: dawki supraphysjologiczne doustne >1 g/dobę NIE podnoszą endogennego tempa syntezy w wątrobie + nerkach, ale ładowanie przewlekłe (3-4 tygodnie, 2 g/dobę) ze współspożyciem węglowodanów mediowanym insulin-stimulated muscle uptake może podnieść stężenie w tkance mięśniowej 2-3x. Bezpośrednie dowody utraty tłuszczu subtelne: Wall 2011 (J Physiol PMID 21224234) 6 miesięcy przewlekłe doustnie 2 g/dobę + współspożycie węglowodanów dało +11% energy output na cykloergometrze + efekt protein-sparing z treningiem oporowym. Pośredni kontekst insulin-sensitization: Bruckbauer 2011 (PMID 21900392) ko-suplementacja leucyna + L-Karnityna +25% glucose uptake w modelu szczura.",
+  "mechanism": "L-Karnityna to czwartorzędowy związek amoniowy, który organizm ludzki syntetyzuje endogennie w ilości ~25 mg/dobę przez kaskadę enzymatyczną w wątrobie i nerkach z prekursorów lizyny + metioniny. Podstawową rolą jest mitochondrialny transport estrów CoA długołańcuchowych kwasów tłuszczowych (LCFA). Proces jest 3-etapowym shuttle: (1) carnitine palmitoyltransferase I (CPT-I) na powierzchni zewnętrznej błony mitochondrialnej konwertuje LCFA-CoA do LCFA-carnitine z uwolnieniem CoA + włączeniem karnityny; (2) carnitine-acylcarnitine translocase (CACT) transportuje LCFA-carnitine przez błonę wewnętrzną do macierzy; (3) carnitine palmitoyltransferase II (CPT-II) w macierzy konwertuje LCFA-carnitine z powrotem do LCFA-CoA + uwalnia wolną karnitynę. LCFA-CoA wchodzi następnie do kaskady β-oksydacji (acyl-CoA dehydrogenaza, enoyl-CoA hydrataza, hydroxyacyl-CoA dehydrogenaza, tiolaza) → acetyl-CoA → cykl TCA → ATP. CPT-I to krok ograniczający tempo β-oksydacji, regulowany cytoplazmatycznym malonyl-CoA jako inhibitorem allosterycznym (mediowany insuliną). Stephens 2007 (Am J Physiol PMID 17331998) IV-clamp methodology: dawki supraphysjologiczne doustne >1 g/dobę NIE podnoszą endogennego tempa syntezy w wątrobie + nerkach, ale ładowanie przewlekłe (3-4 tygodnie, 2 g/dobę) ze współspożyciem węglowodanów mediowanym insulin-stimulated muscle uptake może podnieść stężenie w tkance mięśniowej 2-3x. Bezpośrednie dowody utraty tłuszczu subtelne: Wall 2011 (J Physiol PMID 21224234) 6 miesięcy przewlekłe doustnie 2 g/dobę + współspożycie węglowodanów dało +11% energy output na cykloergometrze + efekt protein-sparing z treningiem oporowym. Pośredni kontekst insulin-sensitization: Bruckbauer 2011 (PMID 21900392) ko-suplementacja leucyna + L-Karnityna +25% glucose uptake w modelu szczura.",
   "legalStatus": "USA: zatwierdzona przez FDA w 1985 (Carnitor, Sigma-Tau — obecnie Leadiant Biosciences) Rx na pierwotny niedobór karnityny. Kategoria OTC suplementu globalnie (US, UE, HU, PL); forma iniekcji IM/SC tylko Rx. UE: zatwierdzona przez EMA. HU: OTC (kapsułka, roztwór) + Rx (IM/SC). PL: OTC + Rx (IM/SC). Lista WADA prohibited 2025: 'dozwolona' (nie ma na liście S0-S9). Kategoria monitorowana NADA Niemcy 2018 powyżej 50 mg/kg IV-bolus (potencjalny kontekst doping krwi).",
   "onsetTime": "Doustnie 1-2 godziny (niska biodostępność ~15%); IM/SC 30-60 minut (100% biodostępność); steady-state ładowania mięśni przy przewlekłym 3-4 tygodnie",
   "halfLife": "~15 godzin",
@@ -140,7 +145,7 @@ export default {
   "benefits": [
     "Wspomaga mitochondrialny shuttle długołańcuchowych kwasów tłuszczowych (CPT-I/II) jako krok ograniczający tempo β-oksydacji",
     "Subtelne przesunięcie utleniania tłuszczu + ochrona glikogenu mięśniowego w cuttingu (Wall 2011 PMID 21224234)",
-    "Ładowanie przewlekłe 3-4 tygodnie ze współspożyciem węglowodanów podnosi stężenie tkankowe 2-3x (Stephens 2007 PMID 17984236)",
+    "Ładowanie przewlekłe 3-4 tygodnie ze współspożyciem węglowodanów podnosi stężenie tkankowe 2-3x (Stephens 2007 PMID 17331998)",
     "Pośredni kontekst insulin-sensitization (Bruckbauer 2011 PMID 21900392 ko-suplementacja leucyna +25% glucose uptake model szczura)",
     "Efekt protein-sparing + wsparcie regeneracji przy treningu oporowym (Kraemer 2008 PMID 18204383 L-Carnitine L-Tartrate)",
     "Profil bezpieczeństwa endogennie-syntetyzowany, dozwolona WADA, OTC globalnie"
@@ -205,7 +210,7 @@ export default {
       "title": "New insights concerning the role of carnitine in the regulation of fuel metabolism in skeletal muscle",
       "authors": "Stephens FB, Constantin-Teodosiu D, Greenhaff PL.",
       "journal": "J Physiol. 2007;581(Pt 2):431-444.",
-      "pmid": "17984236"
+      "pmid": "17331998"
     },
     {
       "title": "Chronic oral ingestion of L-carnitine and carbohydrate increases muscle carnitine content and alters muscle fuel metabolism during exercise in humans",
@@ -235,7 +240,7 @@ export default {
   "faq": [
     {
       "q": "Doustna vs IM/SC L-Karnityna — jaka jest ekwiwalencja dawki?",
-      "a": "Biodostępność doustnej L-Karnityny wynosi ~15% (wyciek P-glikoproteinowy w przewodzie pokarmowym + straty pierwszego przejścia), natomiast formulacja IM/SC ma 100% biodostępności. Kliniczna ekwiwalencja dawki to ~4-6x stosunek doustna-IM/SC: 1 g IM/SC ≈ 4-6 g doustnie. Kontekst cuttingu: ładowanie przewlekłe 3-4 tygodnie doustnie 2 g/dobę podnosi stężenie tkankowe 2-3x ze współspożyciem węglowodanów mediowanym insulin-stimulated muscle uptake (Stephens 2007 PMID 17984236), natomiast IM/SC 1-2 g 2-3x/tydzień osiąga steady-state szybciej. Sigma-Tau Carnitor IM/SC w klinicznym kontekście Rx (pierwotny niedobór karnityny)."
+      "a": "Biodostępność doustnej L-Karnityny wynosi ~15% (wyciek P-glikoproteinowy w przewodzie pokarmowym + straty pierwszego przejścia), natomiast formulacja IM/SC ma 100% biodostępności. Kliniczna ekwiwalencja dawki to ~4-6x stosunek doustna-IM/SC: 1 g IM/SC ≈ 4-6 g doustnie. Kontekst cuttingu: ładowanie przewlekłe 3-4 tygodnie doustnie 2 g/dobę podnosi stężenie tkankowe 2-3x ze współspożyciem węglowodanów mediowanym insulin-stimulated muscle uptake (Stephens 2007 PMID 17331998), natomiast IM/SC 1-2 g 2-3x/tydzień osiąga steady-state szybciej. Sigma-Tau Carnitor IM/SC w klinicznym kontekście Rx (pierwotny niedobór karnityny)."
     },
     {
       "q": "Bezpośrednie dowody utraty tłuszczu — co mówi meta-analiza?",

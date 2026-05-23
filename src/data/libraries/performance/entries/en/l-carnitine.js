@@ -2,7 +2,7 @@
 // lysine + methionine precursors, mitochondrial long-chain fatty acid shuttle.
 // Gulewitsch + Krimberg 1905 isolation, Sigma-Tau 1985 FDA primary carnitine
 // deficiency Rx, bodybuilding off-label since the 1990s. Sources: Stephens 2007
-// PMID 17984236, Wall 2011 PMID 21224234, Koeth 2013 Nature Med PMID 23563705,
+// PMID 17331998, Wall 2011 PMID 21224234, Koeth 2013 Nature Med PMID 23563705,
 // Kraemer 2008 PMID 18204383, Vukovich 1994 PMID 7960016.
 
 export default {
@@ -12,7 +12,7 @@ export default {
   "accentColor": "#f97316",
   "tagColor": "rgba(249,115,22,0.18)",
   "shortDesc": "Quaternary ammonium compound, endogenously synthesized from lysine + methionine precursors, mitochondrial long-chain fatty acid shuttle (carnitine palmitoyltransferase I/II). Gulewitsch + Krimberg 1905 isolation, Sigma-Tau 1985 FDA primary carnitine deficiency Rx; bodybuilding off-label since the 1990s, mainstream OTC fat-burner supplement since the 2000s. WADA: allowed, NADA Germany 2018 monitored above 50 mg/kg IV-bolus.",
-  "description": "L-Carnitine is a quaternary ammonium compound that the human body synthesizes endogenously at ~25 mg/day via a hepatic + renal enzyme cascade from lysine and methionine precursors. It was originally isolated by the Russian biochemists Gulewitsch and Krimberg in 1905 from muscle tissue (hence the name 'carnitine' from 'caro/carnis' = meat). Only the L-isomer is biologically active; the D-isomer is enzymatically inert and a cardiotoxicity signal. The 1985 Sigma-Tau (Italian pharma) FDA approval covered the primary carnitine deficiency Rx indication; bodybuilding off-label use began in the 1990s, and since the 2000s OTC 'fat-burner supplement' has been a mainstream category. The mechanism rests on the CoA-mediated mitochondrial inner-membrane transport of long-chain fatty acids (LCFAs) via the carnitine palmitoyltransferase I/II (CPT-I/II) enzyme shuttle system — this is the rate-limiting step of β-oxidation. Stephens 2007 (Am J Physiol PMID 17984236), the classic IV-clamp methodology trial, demonstrated that supraphysiological oral doses >1 g/day do NOT raise the endogenous synthetic level, but with chronic loading (3-4 weeks at 2 g/day) muscle-tissue concentration can be raised 2-3x in the presence of carbohydrate co-ingestion-mediated insulin-stimulated muscle uptake. Oral bioavailability is low (~15%); the IM/SC injectable form provides 100% bioavailability and is 4-6x dose-equivalent over oral. WADA: 'allowed' on the 2025 prohibited list, but NADA Germany 2018 elevated >50 mg/kg IV-bolus dosing into a monitored category (potential blood-doping-marker context).",
+  "description": "L-Carnitine is a quaternary ammonium compound that the human body synthesizes endogenously at ~25 mg/day via a hepatic + renal enzyme cascade from lysine and methionine precursors. It was originally isolated by the Russian biochemists Gulewitsch and Krimberg in 1905 from muscle tissue (hence the name 'carnitine' from 'caro/carnis' = meat). Only the L-isomer is biologically active; the D-isomer is enzymatically inert and a cardiotoxicity signal. The 1985 Sigma-Tau (Italian pharma) FDA approval covered the primary carnitine deficiency Rx indication; bodybuilding off-label use began in the 1990s, and since the 2000s OTC 'fat-burner supplement' has been a mainstream category. The mechanism rests on the CoA-mediated mitochondrial inner-membrane transport of long-chain fatty acids (LCFAs) via the carnitine palmitoyltransferase I/II (CPT-I/II) enzyme shuttle system — this is the rate-limiting step of β-oxidation. Stephens 2007 (Am J Physiol PMID 17331998), the classic IV-clamp methodology trial, demonstrated that supraphysiological oral doses >1 g/day do NOT raise the endogenous synthetic level, but with chronic loading (3-4 weeks at 2 g/day) muscle-tissue concentration can be raised 2-3x in the presence of carbohydrate co-ingestion-mediated insulin-stimulated muscle uptake. Oral bioavailability is low (~15%); the IM/SC injectable form provides 100% bioavailability and is 4-6x dose-equivalent over oral. WADA: 'allowed' on the 2025 prohibited list, but NADA Germany 2018 elevated >50 mg/kg IV-bolus dosing into a monitored category (potential blood-doping-marker context).",
   "keyInfo": [
     {
       "label": "Mechanism of action",
@@ -41,11 +41,12 @@ export default {
       "id": "oral",
       "routeId": "oral",
       "routeLabel": "Oral capsule / tablet",
+      "routeNote": "Convenient daily format — low cost, easy compliance. Chronic loading at 2 g/day oral plus carbohydrate co-ingestion reaches 2-3x muscle-tissue concentration over 3-4 weeks. The preferred route for beginner and maintenance protocols.",
       "label": "Oral capsule",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "OTC supplement category globally (US, EU, HU, PL), FDA-approved primary carnitine deficiency Rx (Sigma-Tau Carnitor 1985).",
       "bioavailability": "~15% (low — gastrointestinal P-glycoprotein efflux + first-pass loss)",
-      "onsetTime": "1-2 hours (oral absorption + steady-state muscle loading 3-4 weeks chronic)",
+      "onsetTime": "1-2 hours (oral absorption); steady-state muscle loading 3-4 weeks chronic",
       "halfLife": "~15 hours",
       "halfLifeActive": "~15 hours",
       "detectionWindow": "WADA-accredited LC-MS/MS is NOT a standard test; ~1-2 weeks at chronic high dose",
@@ -71,22 +72,26 @@ export default {
         ]
       },
       "indications": "Cutting-cycle subtle fat-oxidation shift + muscle glycogen sparing; chronic loading 3-4 weeks with carbohydrate co-ingestion (Wall 2011 PMID 21224234)",
-      "dosing": "500-2000 mg/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake)",
+      "dosing": "Typical protocol: 2-4 g/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Starting dose 500-1000 mg/day; effective chronic-loading threshold 2 g/day.",
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 500, "medium": 1000, "high": 2000 },
+        "fixed": { "low": 500, "medium": 2000, "high": 4000 },
         "unit": "mg/day",
-        "note": "Oral 500-2000 mg/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Chronic loading 3-4 weeks for steady-state muscle concentration."
+        "note": "Oral 500-4000 mg/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Chronic loading 3-4 weeks for steady-state muscle concentration. isFixedDose route — info-card display, MiniCalc not applicable."
       }
     },
     {
-      "id": "inj",
+      "id": "aq",
       "routeId": "aq",
       "routeLabel": "IM/SC injection (water-based vial)",
+      "routeNote": "Maximum bioavailability (100%) — the full dose reaches systemic circulation vs ~15% oral. Performance-focused pre-workout protocol: 500-1000 mg SC injection 30-60 minutes before training. Dose-equivalent to ~4-6x oral; faster steady-state achieved within 1-2 weeks.",
       "label": "IM/SC injection",
-      "image": "/performance/ampoule-glass.png",
+      "image": "/performance/water-vial.png",
+      "defaultVialMg": 1000,
+      "defaultBacMl": 5,
+      "defaultDoseMcg": 500000,
       "legalStatus": "Rx-only (IM/SC formulation), FDA-approved Carnitor IV/IM (Sigma-Tau) for primary carnitine deficiency. EU + HU + PL Rx-only.",
-      "bioavailability": "100% (IM/SC bypasses first-pass loss)",
+      "bioavailability": "~100% (IM/SC bypasses first-pass loss)",
       "onsetTime": "30-60 minutes (IM/SC absorption)",
       "halfLife": "~15 hours",
       "halfLifeActive": "~15 hours",
@@ -96,7 +101,7 @@ export default {
       "quality": {
         "pure": [
           "FDA-approved Carnitor IV/IM vial (Sigma-Tau) — pharmacy-sourced Rx-grade",
-          "Compounding pharmacy IM/SC vial standardized to 1 g/mL (US) or 200 mg/mL (EU)"
+          "Compounding pharmacy IM/SC vial standardized to 1 g/5 mL (200 mg/mL EU) or 1 g/mL (US)"
         ],
         "caution": [
           "Injection-site pain (PIP): IM/SC quaternary-ammonium vehicle is often painful; rotate IM deltoid/gluteal",
@@ -110,17 +115,17 @@ export default {
           "On seizure-disorder Rx (IM/SC L-Carnitine carries rare seizure-induction risk)"
         ]
       },
-      "indications": "Cutting-cycle preference: bioavailability advantage + 4-6x dose equivalence over oral (Sigma-Tau Carnitor IM clinical Rx context)",
-      "dosing": "1-2 g IM/SC 2-3x/week for cutting cycles (8-12 week cycle length)",
+      "indications": "Performance-focused cutting cycle — bioavailability advantage + 4-6x dose equivalence over oral (Sigma-Tau Carnitor IM clinical Rx context). Pre-workout SC 500-1000 mg 30-60 minutes before training.",
+      "dosing": "200-1000 mg/injection IM/SC 2-3x/week for cutting cycles (8-12 week cycle length). Typical performance dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampule 1 g/5 mL.",
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 1000, "medium": 1500, "high": 2000 },
-        "unit": "mg IM/SC 2-3x/week",
-        "note": "IM/SC 1-2 g 2-3x/week cutting cycle (8-12 week cycle length). Bioavailability 100% bypassing first-pass loss."
+        "fixed": { "low": 200, "medium": 500, "high": 1000 },
+        "unit": "mg/injection",
+        "note": "IM/SC 200-1000 mg/injection 2-3x/week cutting cycle (8-12 weeks). Typical 1 g ampule (5 mL) — 500 mg = 2.5 mL SC pre-workout. Bioavailability 100%; steady-state faster than oral."
       }
     }
   ],
-  "mechanism": "L-Carnitine is a quaternary ammonium compound that the human body synthesizes endogenously at ~25 mg/day via a hepatic + renal enzyme cascade from lysine + methionine precursors. Its core role is the mitochondrial inner-membrane transport of long-chain fatty acid (LCFA) CoA esters. The process is a three-step shuttle: (1) carnitine palmitoyltransferase I (CPT-I) at the mitochondrial outer-membrane surface converts LCFA-CoA to LCFA-carnitine, releasing CoA and incorporating carnitine; (2) carnitine-acylcarnitine translocase (CACT) transports LCFA-carnitine across the inner membrane into the matrix; (3) carnitine palmitoyltransferase II (CPT-II) in the matrix converts LCFA-carnitine back to LCFA-CoA and releases free carnitine. The LCFA-CoA then enters the β-oxidation cascade (acyl-CoA dehydrogenase, enoyl-CoA hydratase, hydroxyacyl-CoA dehydrogenase, thiolase) → acetyl-CoA → TCA cycle → ATP. CPT-I is the rate-limiting step of β-oxidation, regulated by cytoplasmic malonyl-CoA as an allosteric inhibitor (insulin-mediated). Stephens 2007 (Am J Physiol PMID 17984236) IV-clamp methodology trial: supraphysiological oral doses >1 g/day do NOT raise the endogenous synthetic level (hepatic + renal biosynthesis rate), but chronic loading (3-4 weeks at 2 g/day) with carbohydrate co-ingestion-mediated insulin-stimulated muscle uptake can raise muscle tissue concentration 2-3x. Direct fat-loss evidence is subtle: Wall 2011 (J Physiol PMID 21224234) over 6 months of chronic oral 2 g/day + carbohydrate co-ingestion showed +11% energy output on a cycle ergometer + a protein-sparing effect alongside resistance training. Indirect insulin-sensitization context: Bruckbauer 2011 (PMID 21900392) leucine + L-Carnitine co-supplementation produced +25% glucose uptake in a rat model.",
+  "mechanism": "L-Carnitine is a quaternary ammonium compound that the human body synthesizes endogenously at ~25 mg/day via a hepatic + renal enzyme cascade from lysine + methionine precursors. Its core role is the mitochondrial inner-membrane transport of long-chain fatty acid (LCFA) CoA esters. The process is a three-step shuttle: (1) carnitine palmitoyltransferase I (CPT-I) at the mitochondrial outer-membrane surface converts LCFA-CoA to LCFA-carnitine, releasing CoA and incorporating carnitine; (2) carnitine-acylcarnitine translocase (CACT) transports LCFA-carnitine across the inner membrane into the matrix; (3) carnitine palmitoyltransferase II (CPT-II) in the matrix converts LCFA-carnitine back to LCFA-CoA and releases free carnitine. The LCFA-CoA then enters the β-oxidation cascade (acyl-CoA dehydrogenase, enoyl-CoA hydratase, hydroxyacyl-CoA dehydrogenase, thiolase) → acetyl-CoA → TCA cycle → ATP. CPT-I is the rate-limiting step of β-oxidation, regulated by cytoplasmic malonyl-CoA as an allosteric inhibitor (insulin-mediated). Stephens 2007 (Am J Physiol PMID 17331998) IV-clamp methodology trial: supraphysiological oral doses >1 g/day do NOT raise the endogenous synthetic level (hepatic + renal biosynthesis rate), but chronic loading (3-4 weeks at 2 g/day) with carbohydrate co-ingestion-mediated insulin-stimulated muscle uptake can raise muscle tissue concentration 2-3x. Direct fat-loss evidence is subtle: Wall 2011 (J Physiol PMID 21224234) over 6 months of chronic oral 2 g/day + carbohydrate co-ingestion showed +11% energy output on a cycle ergometer + a protein-sparing effect alongside resistance training. Indirect insulin-sensitization context: Bruckbauer 2011 (PMID 21900392) leucine + L-Carnitine co-supplementation produced +25% glucose uptake in a rat model.",
   "legalStatus": "USA: FDA-approved 1985 (Carnitor, Sigma-Tau — now Leadiant Biosciences) primary carnitine deficiency Rx. OTC supplement category globally (US, EU, HU, PL); IM/SC injection form is Rx-only. EU: EMA-approved. HU: OTC (capsule, solution) + Rx (IM/SC). PL: OTC + Rx (IM/SC). WADA 2025 prohibited list: 'allowed' (not on the S0-S9 list). NADA Germany 2018 monitored category above 50 mg/kg IV bolus (potential blood-doping context).",
   "onsetTime": "Oral 1-2 hours (low bioavailability ~15%); IM/SC 30-60 minutes (100% bioavailability); muscle loading steady-state at chronic 3-4 weeks",
   "halfLife": "~15 hours",
@@ -139,7 +144,7 @@ export default {
   "benefits": [
     "Supports long-chain fatty acid mitochondrial shuttle (CPT-I/II) as rate-limiting step of β-oxidation",
     "Cutting-cycle subtle fat-oxidation shift + muscle glycogen sparing (Wall 2011 PMID 21224234)",
-    "Chronic loading 3-4 weeks with carbohydrate co-ingestion raises muscle-tissue concentration 2-3x (Stephens 2007 PMID 17984236)",
+    "Chronic loading 3-4 weeks with carbohydrate co-ingestion raises muscle-tissue concentration 2-3x (Stephens 2007 PMID 17331998)",
     "Indirect insulin-sensitization context (Bruckbauer 2011 PMID 21900392 leucine co-supplementation +25% glucose uptake rat model)",
     "Protein-sparing effect + recovery support on resistance training (Kraemer 2008 PMID 18204383 L-Carnitine L-Tartrate)",
     "Endogenously-synthesized safety profile, WADA-allowed, OTC globally"
@@ -204,7 +209,7 @@ export default {
       "title": "New insights concerning the role of carnitine in the regulation of fuel metabolism in skeletal muscle",
       "authors": "Stephens FB, Constantin-Teodosiu D, Greenhaff PL.",
       "journal": "J Physiol. 2007;581(Pt 2):431-444.",
-      "pmid": "17984236"
+      "pmid": "17331998"
     },
     {
       "title": "Chronic oral ingestion of L-carnitine and carbohydrate increases muscle carnitine content and alters muscle fuel metabolism during exercise in humans",
@@ -234,7 +239,7 @@ export default {
   "faq": [
     {
       "q": "Oral vs IM/SC L-Carnitine — what is the dose equivalence?",
-      "a": "Oral L-Carnitine bioavailability is ~15% (gastrointestinal P-glycoprotein efflux + first-pass loss), while IM/SC formulation has 100% bioavailability. Clinical dose equivalence is ~4-6x oral-to-IM/SC: 1 g IM/SC ≈ 4-6 g oral. Cutting-cycle context: chronic loading at oral 2 g/day for 3-4 weeks raises muscle-tissue concentration 2-3x with carbohydrate co-ingestion-mediated insulin-stimulated muscle uptake (Stephens 2007 PMID 17984236), while IM/SC at 1-2 g 2-3x/week reaches steady-state faster. Sigma-Tau Carnitor IM/SC is the clinical Rx context (primary carnitine deficiency)."
+      "a": "Oral L-Carnitine bioavailability is ~15% (gastrointestinal P-glycoprotein efflux + first-pass loss), while IM/SC formulation has 100% bioavailability. Clinical dose equivalence is ~4-6x oral-to-IM/SC: 1 g IM/SC ≈ 4-6 g oral. Cutting-cycle context: chronic loading at oral 2 g/day for 3-4 weeks raises muscle-tissue concentration 2-3x with carbohydrate co-ingestion-mediated insulin-stimulated muscle uptake (Stephens 2007 PMID 17331998), while IM/SC at 1-2 g 2-3x/week reaches steady-state faster. Sigma-Tau Carnitor IM/SC is the clinical Rx context (primary carnitine deficiency)."
     },
     {
       "q": "Direct fat-loss evidence — what do the meta-analyses say?",
