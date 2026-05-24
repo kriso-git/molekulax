@@ -106,9 +106,9 @@ export default {
   "studies": [
     {
       "title": "Anabolic steroid-induced cardiomyopathy underlying acute liver failure in a young bodybuilder",
-      "authors": "Kanayama G, Hudson JI, Pope HG Jr.",
-      "journal": "World J Gastroenterol. 2018;24(6):673-678.",
-      "pmid": "29456405"
+      "authors": "Bispo M, Valente A, Maldonado R.",
+      "journal": "World J Gastroenterol. 2009;15(23):2920-2.",
+      "pmid": "19533818"
     },
     {
       "title": "Adverse health consequences of performance-enhancing drugs",
@@ -120,7 +120,7 @@ export default {
       "title": "Long-term anabolic-androgenic steroid use is associated with left ventricular dysfunction",
       "authors": "Baggish AL, Weiner RB, Kanayama G et al.",
       "journal": "Circ Heart Fail. 2010;3(4):472-6.",
-      "pmid": "20424247"
+      "pmid": "20424234"
     },
     {
       "title": "Cardiovascular toxicity of illicit anabolic-androgenic steroid use",
@@ -138,7 +138,7 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     }
   ],
   "faq": [

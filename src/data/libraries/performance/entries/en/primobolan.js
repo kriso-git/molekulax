@@ -1,8 +1,8 @@
 // Phase C multi-variant entry (oral Acetate + injectable Enanthate). Sources:
 // Bayer Primobolan Depot SmPC (DE/ES), Schering AG historical literature
 // (Methenolone acetate 1962, Methenolone enanthate Primobolan Depot 1962),
-// Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599,
-// Schänzer 1996 PMID 8616181 (detection).
+// Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15248788,
+// Schänzer 1996 PMID 8674183 (detection).
 
 export default {
   "id": "primobolan",
@@ -46,11 +46,11 @@ export default {
     "warfarin"
   ],
   "aromatization": "No — 1-methyl-DHT structure, NOT a CYP19 substrate for either ester; clinically no E2 rise expected (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injected enanthate form has minimal hepatic stress. Oral acetate also only mild because the 1-methyl group is NOT 17α (only the 1-methyl provides oral stability), BUT high dose (50-100 mg/day) still requires monitoring (Hartgens-Kuipers 2004 PMID 15233599)",
+  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injected enanthate form has minimal hepatic stress. Oral acetate also only mild because the 1-methyl group is NOT 17α (only the 1-methyl provides oral stability), BUT high dose (50-100 mg/day) still requires monitoring (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "88:44",
   "bindingAffinity": "Moderate AR affinity (~28% vs testosterone in vitro). High SHBG affinity (DHT structural analog) → indirect free-T elevation.",
-  "detectionWindow": "Methenolone metabolites (1-methyl-5α-androstan-3-one metabolite family) urinary: oral acetate 4-5 weeks, injectable enanthate 4-6 months (Schänzer 1996 PMID 8616181). WADA-accredited GC-MS and LC-MS/MS.",
+  "detectionWindow": "Methenolone metabolites (1-methyl-5α-androstan-3-one metabolite family) urinary: oral acetate 4-5 weeks, injectable enanthate 4-6 months (Schänzer 1996 PMID 8674183). WADA-accredited GC-MS and LC-MS/MS.",
   "benefits": [
     "Vascular, hard esthetic look (low water retention)",
     "Does NOT aromatize → no E2 side effects",
@@ -115,13 +115,13 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Metabolism of anabolic androgenic steroids",
       "authors": "Schänzer W.",
       "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "pmid": "8674183"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",

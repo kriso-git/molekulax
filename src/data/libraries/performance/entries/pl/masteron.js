@@ -1,6 +1,6 @@
 // Phase C multi-variant entry (Propionate + Enanthate). Lab Terminal hard-fail
-// sources: Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599,
-// Schänzer 1996 PMID 8616181 (detection), Mottram 2008 doping handbook,
+// sources: Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15248788,
+// Schänzer 1996 PMID 8674183 (detection), Mottram 2008 doping handbook,
 // Eli Lilly Drolban DESI review (FDA 1979, discontinued early 1990s).
 
 export default {
@@ -45,11 +45,11 @@ export default {
     "warfarin"
   ],
   "aromatization": "Nie — steryczne zawady grupy 2α-metylowej oznaczają, że NIE jest substratem CYP19; klinicznie wykazuje łagodny efekt inhibitora aromatazy (Pope-Kanayama 2014 PMID 24423981 przegląd designer AAS)",
-  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma estru iniekcyjna pomija first-pass wątrobowy. Umiarkowane zaburzenia lipidowe (spadek HDL, wzrost LDL) pozostają głównym ryzykiem sercowo-naczyniowym (Hartgens-Kuipers 2004 PMID 15233599)",
+  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma estru iniekcyjna pomija first-pass wątrobowy. Umiarkowane zaburzenia lipidowe (spadek HDL, wzrost LDL) pozostają głównym ryzykiem sercowo-naczyniowym (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "62:25",
   "bindingAffinity": "Umiarkowane powinowactwo do AR; wysokie powinowactwo do SHBG (strukturalny analog DHT) → wypiera testosteron związany z SHBG, indukując pośrednio wzrost wolnego T.",
-  "detectionWindow": "Metabolity drostanolonu (rodzina metabolitów 2α-metylo-5α-androstan-3-on) w moczu 3 tygodnie (Prop) – 3 miesiące (Enan). Schänzer 1996 (PMID 8616181) akredytowane WADA GC-MS i LC-MS/MS.",
+  "detectionWindow": "Metabolity drostanolonu (rodzina metabolitów 2α-metylo-5α-androstan-3-on) w moczu 3 tygodnie (Prop) – 3 miesiące (Enan). Schänzer 1996 (PMID 8674183) akredytowane WADA GC-MS i LC-MS/MS.",
   "benefits": [
     "Naczyniowy, twardy \"estetyczny\" wygląd podczas przygotowań do zawodów (subiektywne doświadczenie kulturystyczne)",
     "Pośredni wzrost wolnego testosteronu poprzez zajęcie SHBG (wzmacniacz efektu innych AAS)",
@@ -121,13 +121,13 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Metabolism of anabolic androgenic steroids",
       "authors": "Schänzer W.",
       "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "pmid": "8674183"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",
@@ -136,10 +136,10 @@ export default {
       "pmid": "19922565"
     },
     {
-      "title": "Drostanolone propionate in advanced breast cancer",
-      "authors": "Gordan GS, Halden A, Horn Y, Fuery JJ, Parsons RJ, Walter RM.",
-      "journal": "Cancer. 1964;17:1056-62.",
-      "pmid": "14201858"
+      "title": "Long-term combined administration of dromostanolone propionate (Mastisol) and cyclophosphamide for advanced breast cancer",
+      "authors": "Nomura Y, Hattori T, Abe Y.",
+      "journal": "Gan no Rinsho. 1971;17(12):987-95.",
+      "pmid": "5172404"
     }
   ],
   "faq": [

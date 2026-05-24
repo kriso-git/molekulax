@@ -1,6 +1,6 @@
 // Phase C multi-variant entry (Propionate + Enanthate). Lab Terminal hard-fail
-// sources: Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599,
-// Schänzer 1996 PMID 8616181 (detection), Mottram 2008 doping handbook,
+// sources: Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15248788,
+// Schänzer 1996 PMID 8674183 (detection), Mottram 2008 doping handbook,
 // Eli Lilly Drolban DESI review (FDA 1979, discontinued early 1990s).
 
 export default {
@@ -45,11 +45,11 @@ export default {
     "warfarin"
   ],
   "aromatization": "Nem — a 2α-metil-csoport sztérikus akadályozása miatt NEM CYP19 szubsztrát; klinikailag enyhe aromatáz-inhibitor hatást is mutat (Pope-Kanayama 2014 PMID 24423981 designer-AAS review)",
-  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált észter forma a hepatikus first-pass-t kerüli. Mérsékelt lipid-zavar (HDL csökkenés, LDL emelkedés) marad a fő kardiovaszkuláris kockázat (Hartgens-Kuipers 2004 PMID 15233599)",
+  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált észter forma a hepatikus first-pass-t kerüli. Mérsékelt lipid-zavar (HDL csökkenés, LDL emelkedés) marad a fő kardiovaszkuláris kockázat (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "62:25",
   "bindingAffinity": "AR-affinitás közepes; magas SHBG-affinitás (DHT-strukturális analóg) → SHBG-kötött tesztoszteront verseng le, indirekt szabad-T-emelkedést indukál.",
-  "detectionWindow": "Drostanolone metabolitok (2α-metil-5α-androsztán-3-on metabolitcsalád) vizeletből 3 hét (Prop) – 3 hónap (Enan). Schänzer 1996 (PMID 8616181) WADA-akkreditált GC-MS és LC-MS/MS módszer.",
+  "detectionWindow": "Drostanolone metabolitok (2α-metil-5α-androsztán-3-on metabolitcsalád) vizeletből 3 hét (Prop) – 3 hónap (Enan). Schänzer 1996 (PMID 8674183) WADA-akkreditált GC-MS és LC-MS/MS módszer.",
   "benefits": [
     "Vaszkuláris, kemény \"esztétikus\" megjelenés contest prep alatt (subjektív bodybuilding tapasztalat)",
     "Indirekt szabad-tesztoszteron-emelkedés SHBG-elfoglalás révén (másik AAS hatás-erősítője)",
@@ -121,13 +121,13 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Metabolism of anabolic androgenic steroids",
       "authors": "Schänzer W.",
       "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "pmid": "8674183"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",
@@ -136,10 +136,10 @@ export default {
       "pmid": "19922565"
     },
     {
-      "title": "Drostanolone propionate in advanced breast cancer",
-      "authors": "Gordan GS, Halden A, Horn Y, Fuery JJ, Parsons RJ, Walter RM.",
-      "journal": "Cancer. 1964;17:1056-62.",
-      "pmid": "14201858"
+      "title": "Long-term combined administration of dromostanolone propionate (Mastisol) and cyclophosphamide for advanced breast cancer",
+      "authors": "Nomura Y, Hattori T, Abe Y.",
+      "journal": "Gan no Rinsho. 1971;17(12):987-95.",
+      "pmid": "5172404"
     }
   ],
   "faq": [

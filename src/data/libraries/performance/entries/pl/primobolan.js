@@ -1,8 +1,8 @@
 // Phase C multi-variant entry (oral Acetate + injectable Enanthate). Sources:
 // Bayer Primobolan Depot SmPC (DE/ES), Schering AG historical literature
 // (Methenolone acetate 1962, Methenolone enanthate Primobolan Depot 1962),
-// Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599,
-// Schänzer 1996 PMID 8616181 (detection).
+// Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15248788,
+// Schänzer 1996 PMID 8674183 (detection).
 
 export default {
   "id": "primobolan",
@@ -46,11 +46,11 @@ export default {
     "warfarin"
   ],
   "aromatization": "Nie — struktura 1-metylo-DHT, NIE substrat CYP19 dla żadnego estru; klinicznie nie oczekiwany wzrost E2 (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma enantatowa iniekcyjna ma minimalny stres wątrobowy. Doustny octan również tylko łagodny, bo grupa 1-metylowa nie jest 17α (tylko 1-metyl zapewnia doustną stabilność), ALE wysoka dawka (50-100 mg/dzień) wymaga monitoringu (Hartgens-Kuipers 2004 PMID 15233599)",
+  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma enantatowa iniekcyjna ma minimalny stres wątrobowy. Doustny octan również tylko łagodny, bo grupa 1-metylowa nie jest 17α (tylko 1-metyl zapewnia doustną stabilność), ALE wysoka dawka (50-100 mg/dzień) wymaga monitoringu (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "88:44",
   "bindingAffinity": "Umiarkowane powinowactwo do AR (~28% vs testosteron in vitro). Wysokie powinowactwo do SHBG (strukturalny analog DHT) → pośredni wzrost wolnego T.",
-  "detectionWindow": "Metabolity methenolonu (rodzina metabolitów 1-metylo-5α-androstan-3-on) w moczu: doustny octan 4-5 tygodni, iniekcyjny enantat 4-6 miesięcy (Schänzer 1996 PMID 8616181). Akredytowane WADA GC-MS i LC-MS/MS.",
+  "detectionWindow": "Metabolity methenolonu (rodzina metabolitów 1-metylo-5α-androstan-3-on) w moczu: doustny octan 4-5 tygodni, iniekcyjny enantat 4-6 miesięcy (Schänzer 1996 PMID 8674183). Akredytowane WADA GC-MS i LC-MS/MS.",
   "benefits": [
     "Naczyniowy, twardy estetyczny wygląd (niska retencja wody)",
     "NIE aromatyzuje → brak efektów ubocznych E2",
@@ -115,13 +115,13 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Metabolism of anabolic androgenic steroids",
       "authors": "Schänzer W.",
       "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "pmid": "8674183"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",

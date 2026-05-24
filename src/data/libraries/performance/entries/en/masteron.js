@@ -1,6 +1,6 @@
 // Phase C multi-variant entry (Propionate + Enanthate). Lab Terminal hard-fail
-// sources: Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599,
-// Schänzer 1996 PMID 8616181 (detection), Mottram 2008 doping handbook,
+// sources: Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15248788,
+// Schänzer 1996 PMID 8674183 (detection), Mottram 2008 doping handbook,
 // Eli Lilly Drolban DESI review (FDA 1979, discontinued early 1990s).
 
 export default {
@@ -45,11 +45,11 @@ export default {
     "warfarin"
   ],
   "aromatization": "No — 2α-methyl steric hindrance means NOT a CYP19 substrate; clinically exhibits mild aromatase-inhibitor effect (Pope-Kanayama 2014 PMID 24423981 designer AAS review)",
-  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injectable ester form bypasses hepatic first-pass. Moderate lipid disturbance (HDL drop, LDL rise) remains the main cardiovascular risk (Hartgens-Kuipers 2004 PMID 15233599)",
+  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injectable ester form bypasses hepatic first-pass. Moderate lipid disturbance (HDL drop, LDL rise) remains the main cardiovascular risk (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "62:25",
   "bindingAffinity": "Moderate AR affinity; high SHBG affinity (DHT structural analog) → outcompetes SHBG-bound testosterone, indirectly inducing free-T elevation.",
-  "detectionWindow": "Drostanolone metabolites (2α-methyl-5α-androstan-3-one metabolite family) urinary 3 weeks (Prop) – 3 months (Enan). Schänzer 1996 (PMID 8616181) WADA-accredited GC-MS and LC-MS/MS.",
+  "detectionWindow": "Drostanolone metabolites (2α-methyl-5α-androstan-3-one metabolite family) urinary 3 weeks (Prop) – 3 months (Enan). Schänzer 1996 (PMID 8674183) WADA-accredited GC-MS and LC-MS/MS.",
   "benefits": [
     "Vascular, hard \"esthetic\" look during contest prep (subjective bodybuilding experience)",
     "Indirect free-testosterone elevation via SHBG occupation (potentiates other AAS effects)",
@@ -121,13 +121,13 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Metabolism of anabolic androgenic steroids",
       "authors": "Schänzer W.",
       "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "pmid": "8674183"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",
@@ -136,10 +136,10 @@ export default {
       "pmid": "19922565"
     },
     {
-      "title": "Drostanolone propionate in advanced breast cancer",
-      "authors": "Gordan GS, Halden A, Horn Y, Fuery JJ, Parsons RJ, Walter RM.",
-      "journal": "Cancer. 1964;17:1056-62.",
-      "pmid": "14201858"
+      "title": "Long-term combined administration of dromostanolone propionate (Mastisol) and cyclophosphamide for advanced breast cancer",
+      "authors": "Nomura Y, Hattori T, Abe Y.",
+      "journal": "Gan no Rinsho. 1971;17(12):987-95.",
+      "pmid": "5172404"
     }
   ],
   "faq": [

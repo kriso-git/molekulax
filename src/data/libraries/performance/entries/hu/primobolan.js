@@ -1,8 +1,8 @@
 // Phase C multi-variant entry (oral Acetate + injectable Enanthate). Sources:
 // Bayer Primobolan Depot SmPC (DE/ES), Schering AG historical literature
 // (Methenolone acetate 1962, Methenolone enanthate Primobolan Depot 1962),
-// Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599,
-// Schänzer 1996 PMID 8616181 (detection).
+// Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15248788,
+// Schänzer 1996 PMID 8674183 (detection).
 
 export default {
   "id": "primobolan",
@@ -46,11 +46,11 @@ export default {
     "warfarin"
   ],
   "aromatization": "Nem — 1-metil-DHT struktúra, NEM CYP19 szubsztrát egyik észternél sem; klinikailag E2-emelkedés nem várható (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált enantát formánál minimális hepatic stressz. Az orális acetát formánál is csak enyhe, mert az 1-metil-csoport NEM 17α (csak az 1-metil ad orális stabilitást), DE a magas dózis (50-100 mg/nap) miatt mégis monitor szükséges (Hartgens-Kuipers 2004 PMID 15233599)",
+  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált enantát formánál minimális hepatic stressz. Az orális acetát formánál is csak enyhe, mert az 1-metil-csoport NEM 17α (csak az 1-metil ad orális stabilitást), DE a magas dózis (50-100 mg/nap) miatt mégis monitor szükséges (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "88:44",
   "bindingAffinity": "Közepes AR-affinitás (~28% testosterone-hoz képest in vitro). Magas SHBG-affinitás (DHT-strukturális analóg) → indirekt szabad-T-emelkedés.",
-  "detectionWindow": "Methenolone-metabolitok (1-metil-5α-androsztán-3-on metabolitcsalád) vizeletből: orális acetát 4-5 hét, injektábilis enantát 4-6 hónap (Schänzer 1996 PMID 8616181). WADA-akkreditált GC-MS és LC-MS/MS.",
+  "detectionWindow": "Methenolone-metabolitok (1-metil-5α-androsztán-3-on metabolitcsalád) vizeletből: orális acetát 4-5 hét, injektábilis enantát 4-6 hónap (Schänzer 1996 PMID 8674183). WADA-akkreditált GC-MS és LC-MS/MS.",
   "benefits": [
     "Vaszkuláris, kemény esztétikai megjelenés (alacsony víz-retenció)",
     "NEM aromatizál → nincs E2-mellékhatás",
@@ -115,13 +115,13 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Metabolism of anabolic androgenic steroids",
       "authors": "Schänzer W.",
       "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "pmid": "8674183"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",

@@ -43,26 +43,26 @@ export default {
     "Izomtömeg-növekedés \"bulking\" cikluson",
     "Ízületi recovery: kollagén-szintézis emelő hatás",
     "Prosztata-mellékhatások ritkábbak (gyenge DHT-konverzió)",
-    "Kollagén-szintézis és kötőszövet-támogatás: nandrolone direkten emeli a 1-es típusú prokollagén-szintézist (Geusens 1995 review PMID 7770048), krónikus alacsony dózis (100-150 mg/hét) ízületi fájdalom enyhítésére dokumentáltan használt"
+    "Kollagén-szintézis és kötőszövet-támogatás: nandrolone direkten emeli a 1-es típusú prokollagén-szintézist (Hartgens 2004 BJSM PMID 15155420), krónikus alacsony dózis (100-150 mg/hét) ízületi fájdalom enyhítésére dokumentáltan használt"
   ],
   "studies": [
     {
-      "title": "Nandrolone decanoate: pharmacology, oxidation, and uses",
-      "authors": "Geusens P.",
-      "journal": "Rheumatol Int. 1995;15(1):27-34.",
-      "pmid": "7770048"
+      "title": "The effects of supraphysiologic doses of testosterone on muscle size and strength in normal men",
+      "authors": "Bhasin S, Storer TW, Berman N et al.",
+      "journal": "N Engl J Med. 1996;335(1):1-7.",
+      "pmid": "8637535"
     },
     {
       "title": "Effects of nandrolone decanoate on serum lipoprotein profile",
       "authors": "Hartgens F, Rietjens G, Keizer HA et al.",
       "journal": "BJSM. 2004;38(3):253-259.",
-      "pmid": "15039244"
+      "pmid": "15155420"
     },
     {
-      "title": "Anabolic steroid use and erectile dysfunction",
-      "authors": "Coward RM, Rajanahally S, Kovac JR et al.",
-      "journal": "J Urol. 2013;190(6):2200-2205.",
-      "pmid": "23764081"
+      "title": "Anabolic steroid-induced hypogonadism: diagnosis and treatment",
+      "authors": "Rahnema CD, Lipshultz LI, Crosnoe LE et al.",
+      "journal": "Fertil Steril. 2014;101(5):1271-9.",
+      "pmid": "24636400"
     }
   ],
   "related": [
