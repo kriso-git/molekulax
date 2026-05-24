@@ -442,8 +442,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 3,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -459,8 +459,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 3,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -476,8 +476,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 4,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -493,8 +493,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 2,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "steroidal",
     "formFactors": ["oral"]
   },
   {
@@ -510,8 +510,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 3,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -527,8 +527,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 2,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
