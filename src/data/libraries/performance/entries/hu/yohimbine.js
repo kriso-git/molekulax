@@ -32,9 +32,7 @@ export default {
   "onsetTime": "30-45 min",
   "halfLife": "0.6-2 h",
   "interactionsWith": [
-    "caffeine",
-    "ephedrine",
-    "MAOI",
+    "caffeine",    "MAOI",
     "SSRI",
     "TCA",
     "tyramine-rich foods",
@@ -154,9 +152,7 @@ export default {
       "a": "A clonidine α2-agonista, a yohimbine α2-antagonista — direkt pharmakológiai konfliktus. Pham 2022 (Cureus PMID 36115742) egyetlen yohimbine-dózis utáni intracraniális vérzést dokumentált 39 éves nőnél, aki krónikusan clonidine-t szedett (198/93 BP, bazális ganglion-vérzés, súlyos neurológiai sequelae). MAOI vagy tyramin-gazdag étkezés (érlelt sajt, vörösbor, salámi) mellett hipertenzív krízis-kockázat a sympathomimetic NE-szabad halmozódás miatt. Mindkét helyzet ABSZOLÚT kontraindikáció."
     }
   ],
-  "related": [
-    "ephedrine",
-    "clenbuterol"
+  "related": [    "clenbuterol"
   ],
   "doseCalc": {
     "type": "bodyweight",

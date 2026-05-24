@@ -38,9 +38,7 @@ export default {
   "onsetTime": "20-45 perc, multi-component-peak overlap 1-3 óra",
   "halfLife": "Blend-component-dependent ~3-8 óra overall envelope",
   "interactionsWith": [
-    "eca-stack",
-    "ephedrine",
-    "yohimbine",
+    "eca-stack",    "yohimbine",
     "clenbuterol"
   ],
   "aromatization": "Nem aromatizál (multi-sympathomimetikus blend — sympathomimetic alkaloidok + xantinok + α2-antagonist kombináció, nem szteroid). Nincs CYP19-interakció.",
@@ -160,9 +158,7 @@ export default {
     }
   ],
   "related": [
-    "eca-stack",
-    "ephedrine",
-    "yohimbine"
+    "eca-stack",    "yohimbine"
   ],
   "doseCalc": {
     "type": "fixed",

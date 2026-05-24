@@ -38,10 +38,7 @@ export default {
   "legalStatus": "USA: NIE zatwierdzony przez FDA, peptyd tylko do badań (Schedule N/A, ale nie autoryzowany do dystrybucji). UE: NIE zatwierdzony przez EMA. HU + PL: NIE zarejestrowany. Status badań fazy 1/2 u ludzi to pipeline CohBar Inc + Stealth BioTherapeutics 2024-2025, pełna publikacja oczekiwana 2026. WADA: NIE jawnie zakazany (lista klasy peptydów S2.1 GH/IGF-1 nie obejmuje kategorii peptydów pochodzenia mitochondrialnego), ALE obowiązuje ryzyko klauzuli S0 'substancja niezatwierdzona' (Lista zakazów WADA 2025 § S0).",
   "onsetTime": "Ostra aktywacja AMPK 1-2 h; efekt metaboliczny 2-4 tygodnie",
   "halfLife": "~1-2 godziny (SC, ekstrapolacja z myszy)",
-  "interactionsWith": [
-    "semaglutide-perf",
-    "tesamorelin-perf",
-    "l-carnitine",
+  "interactionsWith": [    "l-carnitine",
     "5-amino-1mq"
   ],
   "aromatization": "Nie aromatyzuje — peptyd mitochondrialny, nie spokrewniony ze sterydami. Brak interakcji z CYP19; oś estrogenowa pozostaje bezpośrednio nienaruszona.",
@@ -165,10 +162,7 @@ export default {
       "a": "Biblioteka peptydów MolekulaX (peptides/) zapewnia edukację farmakologiczną na temat klinicznie wskazanych peptydów (Tesamorelina przy lipodystrofii HIV; Semaglutyd przy T2DM/otyłości). Biblioteka performance (performance/) obejmuje framing dopingu sportowego tych samych związków (Tesamorelina-perf przy utracie tłuszczu brzusznego; Semaglutyd-perf przy cyklach cięcia 6-12 tygodni). MOTS-c obecnie NIE ma odpowiednika w bibliotece peptydów MolekulaX — to pierwszy wpis MOTS-c, framing tylko performance. Wskazanie kliniczne T2DM jest w fazie 2; jeśli zatwierdzenie FDA nastąpi w 2027+, do biblioteki peptydów zostanie dodany odpowiednik kliniczny."
     }
   ],
-  "related": [
-    "semaglutide-perf",
-    "tesamorelin-perf",
-    "l-carnitine",
+  "related": [    "l-carnitine",
     "5-amino-1mq"
   ],
   "doseCalc": {

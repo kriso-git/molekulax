@@ -108,7 +108,7 @@ function CubeFaceInner({
             dotsCurrentIndex={currentIndex}
             onDotsJumpTo={onJumpTo}
           />
-          <EffectsSection />
+          {library.id !== 'performance' && <EffectsSection />}
           {library.id === 'peptides' && <Calculator />}
         </FaceLibraryProvider>
       ) : (

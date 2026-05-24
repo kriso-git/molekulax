@@ -7,7 +7,7 @@
 export default {
   "id": "primobolan",
   "name": "Primobolan (Methenolone)",
-  "image": "/performance/tablet-pile-white.png",
+  "image": "/performance/oil-vial-yellow.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Methenolone, 1-metil-DHT-származék \"enyhe\" AAS, két ester-formátumban: orális acetate (rövid, alacsony biodostupnošć) és injektábilis enanthate (Bayer Primobolan Depot, Németországban + Spanyolországban Rx). Klasszikus cutting-szteroid.",

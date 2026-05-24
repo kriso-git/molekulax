@@ -11,7 +11,7 @@ export const FORM_FACTORS = [
   { id: 'aq',      color: '#0F6E56', label: { hu: 'vizes',     en: 'aqueous',   pl: 'wodny'     } },
   { id: 'oral',    color: '#534889', label: { hu: 'orális',    en: 'oral',      pl: 'doustny'   } },
   { id: 'topical', color: '#72243E', label: { hu: 'topikális', en: 'topical',   pl: 'miejscowy' } },
-  { id: 'inhaled', color: '#0E7490', label: { hu: 'inhalált',  en: 'inhaled',   pl: 'inhalator' } },
+  { id: 'inhaled', color: '#0E7490', label: { hu: 'inhalált',  en: 'inhaled',   pl: 'inhalator' } }
 ]
 
 export const FORM_FACTOR_IDS = new Set(FORM_FACTORS.map(f => f.id))

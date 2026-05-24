@@ -245,11 +245,12 @@ for (const libId of LIBRARIES) {
     const subSectionMap = libExport?.subSections || {}
     const allowedFormFactors = new Set((libExport?.formFactors || []).map(f => f.id))
 
-    if (libCats.length !== 5) {
-      console.error(`❌ ${libId}: expected 5 subCategories, got ${libCats.length}`)
+    // v0.27.4: 6 subCategories (added 'sarm' top-level — previously SARMs were a 19nor sub-section).
+    const expected = ['dht', 'test', '19nor', 'sarm', 'pct', 'fat']
+    if (libCats.length !== expected.length) {
+      console.error(`❌ ${libId}: expected ${expected.length} subCategories, got ${libCats.length}`)
       errors++
     } else {
-      const expected = ['dht', 'test', '19nor', 'pct', 'fat']
       for (const exp of expected) {
         if (!libCats.includes(exp)) {
           console.error(`❌ ${libId}: missing required subCategory "${exp}"`)

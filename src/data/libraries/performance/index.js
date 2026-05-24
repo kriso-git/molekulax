@@ -82,23 +82,6 @@ export const LIBRARY_ENTRY_META = [
     "formFactors": ["oral", "oil"]
   },
   {
-    "id": "ephedrine",
-    "name": "Ephedrine",
-    "image": "/performance/tablet-pile-white.png",
-    "accentColor": "#fbbf24",
-    "tagColor": "rgba(251,191,36,0.18)",
-    "shortDesc": {
-      "hu": "Sympathomimetic alkaloid (Ephedra sinica), klasszikus thermogenic és bronchodilator. WADA-tiltott versenysportban.",
-      "en": "Sympathomimetic alkaloid (Ephedra sinica), the classic thermogenic and bronchodilator. WADA-banned in competitive sport.",
-      "pl": "Sympatomimetyczny alkaloid (Ephedra sinica), klasyczny termogenik i bronchodilator. Zakazany przez WADA w sporcie wyczynowym."
-    },
-    "tier": 5,
-    "wadaStatus": "banned",
-    "subCategory": "fat",
-    "subSection": "stim",
-    "formFactors": ["oral"]
-  },
-  {
     "id": "yohimbine",
     "name": "Yohimbine",
     "image": "/performance/tablet-pile-white.png",
@@ -242,7 +225,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "primobolan",
     "name": "Primobolan (Methenolone)",
-    "image": "/performance/tablet-pile-white.png",
+    "image": "/performance/oil-vial-yellow.png",
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
@@ -459,8 +442,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 3,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -476,8 +459,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 3,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -493,8 +476,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 4,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -510,8 +493,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 2,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "steroidal",
     "formFactors": ["oral"]
   },
   {
@@ -527,8 +510,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 3,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -544,8 +527,8 @@ export const LIBRARY_ENTRY_META = [
     },
     "tier": 2,
     "wadaStatus": "banned",
-    "subCategory": "19nor",
-    "subSection": "sarms",
+    "subCategory": "sarm",
+    "subSection": "non-steroid",
     "formFactors": ["oral"]
   },
   {
@@ -1126,57 +1109,6 @@ export const LIBRARY_ENTRY_META = [
     "subCategory": "fat",
     "subSection": "mito",
     "formFactors": ["oral"]
-  },
-  {
-    "id": "tesamorelin-perf",
-    "name": "Tesamorelin (perf-doping)",
-    "image": "/performance/water-vial.png",
-    "accentColor": "#f97316",
-    "tagColor": "rgba(249,115,22,0.18)",
-    "shortDesc": {
-      "hu": "Hosszú-hatású GHRH-analog (Egrifta, Theratechnologies 2010 FDA HIV-lipodystrophy), off-label cutting-cycle abdominal visceralis fat-loss 1-2 mg/nap SC 12-24 hét bro-protocol. WADA S2.1 peptide hormone in-competition + out-of-competition banned.",
-      "en": "Long-acting GHRH analog (Egrifta, Theratechnologies 2010 FDA HIV lipodystrophy), used off-label as a cutting-cycle abdominal visceral fat-loss bro protocol at 1-2 mg/day SC over 12-24 weeks. WADA S2.1 peptide hormone, in-competition + out-of-competition banned.",
-      "pl": "Długo działający analog GHRH (Egrifta, Theratechnologies 2010 FDA lipodystrofia HIV), używany off-label jako protokół bro cutting-cycle utraty trzewnego tłuszczu brzusznego 1-2 mg/dzień SC przez 12-24 tygodnie. WADA S2.1 hormon peptydowy, zakaz w trakcie zawodów + poza zawodami."
-    },
-    "tier": 3,
-    "wadaStatus": "banned",
-    "subCategory": "fat",
-    "subSection": "gh-axis",
-    "formFactors": ["aq"]
-  },
-  {
-    "id": "semaglutide-perf",
-    "name": "Semaglutide (perf-doping)",
-    "image": "/performance/water-vial.png",
-    "accentColor": "#f97316",
-    "tagColor": "rgba(249,115,22,0.18)",
-    "shortDesc": {
-      "hu": "Novo Nordisk hosszú-hatású GLP-1-receptor-agonista (Wegovy 2021 obesity-Rx). Cutting-cycle off-label doping 0.25-2.4 mg/hét SC, +15-20% súlyveszteség 68 hét. EMA 2024 Q3 PRAC alert off-label aesthetic use.",
-      "en": "Novo Nordisk long-acting GLP-1 receptor agonist (Wegovy 2021 obesity-Rx). Cutting-cycle off-label doping 0.25-2.4 mg/week SC, +15-20% weight loss in 68 weeks. EMA 2024 Q3 PRAC alert against off-label aesthetic use.",
-      "pl": "Novo Nordisk długo działający agonista receptora GLP-1 (Wegovy 2021 Rx otyłości). Off-label cutting-cycle doping 0,25-2,4 mg/tydzień SC, +15-20% utraty wagi w 68 tygodni. Alert EMA 2024 Q3 PRAC przeciw off-label użyciu estetycznemu."
-    },
-    "tier": 4,
-    "wadaStatus": "banned",
-    "subCategory": "fat",
-    "subSection": "gh-axis",
-    "formFactors": ["aq"]
-  },
-  {
-    "id": "retatrutide-perf",
-    "name": "Retatrutide (perf-doping)",
-    "image": "/performance/water-vial.png",
-    "accentColor": "#f97316",
-    "tagColor": "rgba(249,115,22,0.18)",
-    "shortDesc": {
-      "hu": "Eli Lilly LY3437943 triple-agonist (GLP-1 + GIP + glükagon) Phase 3 TRIUMPH-4 2025-2026. 24.2% súlyveszteség 12 mg/hét 48 hét (Jastreboff 2023 PMID 37356866). Cardiovascular HR-elevation; MRI baseline kötelező.",
-      "en": "Eli Lilly LY3437943 triple-agonist (GLP-1 + GIP + glucagon) Phase 3 TRIUMPH-4 2025-2026. 24.2% weight loss in 48 weeks at 12 mg/week (Jastreboff 2023 PMID 37356866). Cardiovascular HR elevation; MRI baseline mandatory.",
-      "pl": "Eli Lilly LY3437943 potrójny agonista (GLP-1 + GIP + glukagon) Faza 3 TRIUMPH-4 2025-2026. 24,2% utraty wagi w 48 tygodni przy 12 mg/tydzień (Jastreboff 2023 PMID 37356866). Wzrost HR sercowo-naczyniowy; MRI baseline obowiązkowe."
-    },
-    "tier": 4,
-    "wadaStatus": "banned",
-    "subCategory": "fat",
-    "subSection": "gh-axis",
-    "formFactors": ["aq"]
   }
 ]
 

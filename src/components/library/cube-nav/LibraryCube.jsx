@@ -163,7 +163,7 @@ export default function LibraryCube() {
               transition={{ duration: 0.2 }}
             >
               <LibraryGallery />
-              <EffectsSection />
+              {library.id !== 'performance' && <EffectsSection />}
               {library.id === 'peptides' && <Calculator />}
             </motion.div>
           </AnimatePresence>

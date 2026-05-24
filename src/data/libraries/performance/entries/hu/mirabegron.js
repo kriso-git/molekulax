@@ -41,9 +41,7 @@ export default {
   "interactionsWith": [
     "metoprolol",
     "desipramine",
-    "albuterol",
-    "ephedrine",
-    "clenbuterol"
+    "albuterol",    "clenbuterol"
   ],
   "aromatization": "Nem aromatizál (nem szteroid hatóanyag — szelektív β3-adrenoceptor agonista). Nincs CYP19-interakció, az ösztrogén-axis érintetlen.",
   "hepatotoxicity": "Alacsony — DILI ritka, ALT-emelkedés <2% incidenciával dokumentált klinikai trial-okon (Khullar 2013 OAB-RCT PMID 23537815). CYP2D6 + CYP3A4 metabolizmus, drug-interaction kockázat metoprolol és desipramine mellett (Mirabegron CYP2D6 substrate-inhibitor, plasma-szint emelő).",
@@ -173,9 +171,7 @@ export default {
     }
   ],
   "related": [
-    "albuterol",
-    "ephedrine",
-    "clenbuterol",
+    "albuterol",    "clenbuterol",
     "l-carnitine"
   ],
   "doseCalc": {

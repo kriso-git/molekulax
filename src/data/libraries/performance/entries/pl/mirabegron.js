@@ -41,9 +41,7 @@ export default {
   "interactionsWith": [
     "metoprolol",
     "desipramine",
-    "albuterol",
-    "ephedrine",
-    "clenbuterol"
+    "albuterol",    "clenbuterol"
   ],
   "aromatization": "Nie aromatyzuje (nie jest sterydem — selektywny agonista receptora β3-adrenergicznego). Brak interakcji z CYP19; oś estrogenowa pozostaje nienaruszona.",
   "hepatotoxicity": "Niska — DILI rzadkie, podwyższenie ALT <2% udokumentowane w badaniach klinicznych (Khullar 2013 OAB-RCT PMID 23537815). Metabolizm CYP2D6 + CYP3A4 stwarza ryzyko interakcji lekowej z metoprololem i desipraminą (Mirabegron jest substratem-inhibitorem CYP2D6, podnosi poziom plazmatyczny).",
@@ -173,9 +171,7 @@ export default {
     }
   ],
   "related": [
-    "albuterol",
-    "ephedrine",
-    "clenbuterol",
+    "albuterol",    "clenbuterol",
     "l-carnitine"
   ],
   "doseCalc": {

@@ -151,9 +151,7 @@ export default {
     }
   ],
   "related": [
-    "clenbuterol",
-    "ephedrine"
-  ],
+    "clenbuterol"  ],
   "doseCalc": {
     "type": "fixed",
     "fixed": {

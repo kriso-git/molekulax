@@ -54,6 +54,6 @@ export default {
       "finding": "Semaglutide 2.4 mg/week for 68 weeks achieved an average 14.9% body weight reduction vs placebo."
     }
   ],
-  "related": ["semaglutide-perf", "tirzepatide", "liraglutide", "retatrutide"],
+  "related": ["tirzepatide", "liraglutide", "retatrutide"],
   "anecdote": "Among the three main GLP-1 agonists, Semaglutide is anecdotally the strongest in pure appetite suppression, with users reporting peak suppression days 2-3 post-dose. Reduced hunger and increased satiety even from things like water are commonly noted. Some users prefer Tirzepatide due to GIP-mediated craving reductions, but Semaglutide remains a solid baseline GLP-1.\n\nGLP-1s are typically administered once weekly due to half-lives around 7 days. Clinical dosing reaches up to 2.4 mg, with most users settling on a maintenance dose after reaching a target weight. Lower doses suffice for appetite control, while higher doses target more aggressive weight loss. Slow, low titration is recommended."
 }

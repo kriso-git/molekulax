@@ -12,7 +12,6 @@ const EXPLICIT_LEVEL = {
   // L5 — FDA-approved human use
   'testosterone-info': 5,
   'albuterol': 5,
-  'ephedrine': 5,
   // L4 — EU / region Rx + research-context documented
   'trenbolone-info': 4,
   'anavar-info': 4,
