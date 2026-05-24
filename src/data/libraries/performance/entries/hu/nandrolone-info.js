@@ -107,90 +107,147 @@ export default {
   },
   "variants": [
     {
+      "id": "deca",
       "routeId": "deca",
-      "routeLabel": "Nandrolone Decanoate (Deca-Durabolin, lassú)",
+      "routeLabel": {
+        "hu": "Nandrolone Decanoate (Deca-Durabolin, lassú észter)",
+        "en": "Nandrolone Decanoate (Deca-Durabolin, slow ester)",
+        "pl": "Nandrolon Dekanian (Deca-Durabolin, wolny ester)"
+      },
+      "routeNote": {
+        "hu": "A klasszikus bulking-választás 'lassú' progesztogén AAS-stack-ekhez. ~15 napos felezés ⇒ heti 1x IM-injekció elegendő. NEM 17α-alkilált, IM bypass-olja first-pass-t. Minimális aromatizáció (~10%), de a progesztogén receptor-aktivitás miatt 'Deca-dick' libidó-csökkenés és prolaktin-emelkedés gyakori. A leghosszabb detection-ablak AAS-ek közül (12-18 hó).",
+        "en": "The classic bulking choice for 'slow' progestogenic AAS stacks. ~15-day half-life ⇒ once-weekly IM injection sufficient. NOT 17α-alkylated, IM bypasses first-pass. Minimal aromatization (~10%), but progestogenic receptor activity causes 'Deca-dick' libido loss and prolactin elevation. Longest detection window among AAS (12-18 months).",
+        "pl": "Klasyczny wybór bulking dla 'wolnych' progestagennych stacków AAS. ~15-dniowy okres półtrwania ⇒ wystarczy iniekcja IM raz w tygodniu. NIE 17α-alkilowany, IM omija first-pass. Minimalna aromatyzacja (~10%), ale aktywność progestagenna powoduje 'Deca-dick' (utratę libido) i wzrost prolaktyny. Najdłuższe okno detekcji wśród AAS (12-18 miesięcy)."
+      },
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "HU/PL/EU: Rx (Deca-Durabolin Organon SmPC). USA: Schedule III. WADA tiltott.",
-      "bioavailability": "~95% (IM, lassú decanoate-ester hidrolízis)",
-      "onsetTime": "2-3 hét (steady-state 4-6 hét)",
       "halfLife": "15 nap (Decanoate-ester)",
       "halfLifeActive": "~24 h szabad Nandrolone (hidrolízis után, depo-jellegű lassú release)",
-      "detectionWindow": "Vizelet: 12-18 hónap (Deca hosszú-távú metabolit 19-norandrosterone, WADA-akkreditált LC-MS/MS — leghosszabb detection-ablak AAS-ek közül)",
-      "aromatization": "Minimális — ~10% Testosterone-aromatizációhoz képest",
-      "hepatotoxicity": "Alacsony — NEM 17α-alkilált, IM bypass-olja first-pass-t",
+      "bioavailability": "~95% (IM, lassú decanoate-ester hidrolízis)",
+      "onsetTime": {
+        "hu": "2-3 hét (steady-state 4-6 hét)",
+        "en": "2-3 weeks (steady-state 4-6 weeks)",
+        "pl": "2-3 tygodnie (stan stacjonarny 4-6 tygodni)"
+      },
+      "dosing": {
+        "hu": "200-400 mg/hét IM, heti 1x. Bulking 400-600 mg/hét. Deca-bridge 100-150 mg/hét. Minimum 12-16 hét ciklus a hosszú felezés miatt. PCT utolsó injekció +3 hét. Cabergoline + Testosterone-base KÖTELEZŐ.",
+        "en": "200-400 mg/week IM, once weekly. Bulking 400-600 mg/week. Deca-bridge 100-150 mg/week. Minimum 12-16 week cycle due to long half-life. PCT starts last injection +3 weeks. Cabergoline + Testosterone-base MANDATORY.",
+        "pl": "200-400 mg/tydzień IM, raz w tygodniu. Bulking 400-600 mg/tydzień. Deca-bridge 100-150 mg/tydzień. Minimum 12-16 tygodni cyklu z powodu długiego okresu półtrwania. PCT od ostatniej iniekcji +3 tygodnie. Cabergolina + Testosteron-baza OBOWIĄZKOWE."
+      },
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {
+          "low": 200,
+          "medium": 400,
+          "high": 600
+        },
+        "unit": "mg/hét",
+        "note": {
+          "hu": "200-600 mg/hét, heti 1x IM (15 napos felezés). Bulking 400-600, bridge 100-200. PCT utolsó injekció +3 hét. Apaság-tervezés esetén kerülendő (HPTA-recovery 6-12 hó).",
+          "en": "200-600 mg/week, once weekly IM (15-day half-life). Bulking 400-600, bridge 100-200. PCT starts last injection +3 weeks. Avoid if planning fatherhood (HPTA recovery 6-12 months).",
+          "pl": "200-600 mg/tydzień, raz w tygodniu IM (15-dniowy okres półtrwania). Bulking 400-600, bridge 100-200. PCT od ostatniej iniekcji +3 tygodnie. Unikać przy planowanym ojcostwie (regeneracja HPTA 6-12 miesięcy)."
+        }
+      },
+      "defaultVialMg": 2000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 400000,
+      "hepatotoxicity": "low",
+      "aromatization": "low",
+      "androgenicRatio": "125:37",
+      "legalStatus": "HU/PL/EU: Rx (Deca-Durabolin Organon SmPC, indikáció: osteoporosis, anemia). USA: Schedule III. WADA tiltott.",
+      "detectionWindow": "Vizelet: 12-18 hónap (Deca hosszú-távú metabolit 19-norandrosterone, WADA-akkreditált LC-MS/MS — LEGHOSSZABB detection-ablak AAS-ek közül).",
       "quality": {
         "pure": [
-          "Organon Deca-Durabolin 50 mg/ml ampulla (EU Rx)",
-          "UGL Nandrolone Decanoate 200-300 mg/ml olajos fiola, HPLC-tesztelt"
+          "Organon Deca-Durabolin 50 mg/ml halvány-sárga olajos ampulla (EU Rx, klasszikus 1962 óta forgalomban)",
+          "UGL Nandrolone Decanoate 200-300 mg/ml halvány-sárga olajos fiola, HPLC-tesztelt forrás kötelező"
         ],
         "caution": [
-          "Hosszú-távú HPTA-szuppresszió 12-16 hét",
-          "Prolaktin-emelkedés (cabergoline készenlét)",
-          "Deca-dick libidó-csökkenés gyakori"
+          "Hosszú-távú HPTA-szuppresszió 12-16 hét után — recovery 6-12 hó lehet",
+          "Prolaktin-emelkedés a progesztogén receptor-affinitás miatt (cabergoline készenlét)",
+          "'Deca-dick' libidó-csökkenés + ED gyakori (de Souza 2011)",
+          "Hosszú detection-ablak (12-18 hó) — versenysport-tesztelés előtt EVEKKEL kerülendő"
         ],
         "avoid": [
           "Apaság-tervezés közeli időhorizonton (HPTA-recovery 6-12 hónap Deca után)",
-          "Versenysport-tesztelés 12-18 hónap előtt"
+          "Versenysport-tesztelés 12-18 hónap előtt",
+          "Prolaktin-érzékeny állapot (prolactinoma, gynecomastia)"
         ]
       },
       "interactions": [
-        "Cabergoline 0,25 mg 2x/hét prolaktin-monitor",
-        "Testosterone-base stack standard (Deca standalone ED-rizikó miatt)",
-        "PCT utolsó Deca-injekció +3 hét"
-      ],
-      "doseCalc": {
-        "type": "bodyweight",
-        "perKg": {
-          "low": 2,
-          "medium": 4,
-          "high": 6
-        },
-        "unit": "mg/hét (IM, heti 1x)",
-        "note": "100-150 mg/hét (Deca-bridge), 300-600 mg/hét (bulking). Heti 1x IM injekció a 15 napos felezés miatt."
-      }
+        "Cabergoline 0,25 mg 2x/hét prolaktin-monitor KÖTELEZŐ",
+        "Testosterone-base stack KÖTELEZŐ (Deca standalone ED-rizikó miatt)",
+        "PCT utolsó Deca-injekció +3 hét (15-napos felezés miatt hosszú wash-out)"
+      ]
     },
     {
+      "id": "npp",
       "routeId": "npp",
-      "routeLabel": "Nandrolone Phenylpropionate (NPP, gyors)",
+      "routeLabel": {
+        "hu": "Nandrolone Phenylpropionate (NPP, gyors észter)",
+        "en": "Nandrolone Phenylpropionate (NPP, fast ester)",
+        "pl": "Nandrolon Fenylopropionian (NPP, szybki ester)"
+      },
+      "routeNote": {
+        "hu": "Gyorsabb Phenylpropionate-ester ~5 napos felezéssel ⇒ EOD vagy 2x heti IM-injekció szükséges. Ugyanaz a parent Nandrolone, így a progesztogén-prolaktin profil azonos a Deca-éval, csak gyorsabb on/off. Rövidebb (8-10 hetes) ciklusokra alkalmasabb mint a Deca. PIP NPP-n jellemzően erősebb. Néhány felhasználó alacsony dózisú NPP-t (~140 mg/hét) ízületi-support célra futtatja.",
+        "en": "Faster Phenylpropionate ester with ~5-day half-life ⇒ EOD or twice-weekly IM injection required. Same parent Nandrolone, so progestogenic-prolactin profile is identical to Deca, just faster on/off. More suitable for shorter (8-10 week) cycles than Deca. PIP typically stronger on NPP. Some users run low-dose NPP (~140 mg/week) for joint support.",
+        "pl": "Szybszy ester Fenylopropionianowy z ~5-dniowym okresem półtrwania ⇒ wymagana iniekcja IM EOD lub dwa razy w tygodniu. Ten sam macierzysty Nandrolon, więc profil progestagenno-prolaktynowy identyczny z Deca, tylko szybsze on/off. Bardziej odpowiedni do krótszych cykli (8-10 tygodni) niż Deca. PIP zazwyczaj silniejszy na NPP. Niektórzy użytkownicy stosują NPP w niskich dawkach (~140 mg/tydzień) na wsparcie stawów."
+      },
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "EU: Rx (Durabolin, Phenylprop) regional. USA: Schedule III. WADA tiltott.",
-      "bioavailability": "~95% (IM, gyorsabb Phenylpropionate-ester hidrolízis)",
-      "onsetTime": "1-2 hét (steady-state 2-3 hét)",
       "halfLife": "~5 nap (Phenylpropionate-ester)",
       "halfLifeActive": "~24 h szabad Nandrolone (gyorsabb release mint Deca)",
-      "detectionWindow": "Vizelet: 10-14 hónap (19-norandrosterone-metabolit, hasonló mint Deca-é, hosszú-távú)",
-      "aromatization": "Minimális — ~10% Testosterone-aromatizációhoz képest (azonos parent Nandrolone)",
-      "hepatotoxicity": "Alacsony — NEM 17α-alkilált",
+      "bioavailability": "~95% (IM, gyorsabb Phenylpropionate-ester hidrolízis)",
+      "onsetTime": {
+        "hu": "1-2 hét (steady-state 2-3 hét)",
+        "en": "1-2 weeks (steady-state 2-3 weeks)",
+        "pl": "1-2 tygodnie (stan stacjonarny 2-3 tygodnie)"
+      },
+      "dosing": {
+        "hu": "100-150 mg EOD vagy 200-400 mg/hét IM, 2x heti osztva. Bulking 300-600 mg/hét. Ízületi-bridge 100-150 mg/hét. 8-10 hét ciklus. PCT utolsó injekció +5-7 nap. Cabergoline + Testosterone-base KÖTELEZŐ.",
+        "en": "100-150 mg EOD or 200-400 mg/week IM, split 2× weekly. Bulking 300-600 mg/week. Joint-bridge 100-150 mg/week. 8-10 week cycle. PCT starts last injection +5-7 days. Cabergoline + Testosterone-base MANDATORY.",
+        "pl": "100-150 mg EOD lub 200-400 mg/tydzień IM, podzielone 2× w tygodniu. Bulking 300-600 mg/tydzień. Joint-bridge 100-150 mg/tydzień. 8-10 tygodni cyklu. PCT od ostatniej iniekcji +5-7 dni. Cabergolina + Testosteron-baza OBOWIĄZKOWE."
+      },
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {
+          "low": 100,
+          "medium": 200,
+          "high": 300
+        },
+        "unit": "mg/inj",
+        "note": {
+          "hu": "100-150 mg EOD vagy 200-400 mg/hét, 2x heti IM (5 napos felezés). Bulking 300-600/hét, bridge 100-150. PCT utolsó injekció +5-7 nap (rövid wash-out mint Deca).",
+          "en": "100-150 mg EOD or 200-400 mg/week, split 2× weekly IM (5-day half-life). Bulking 300-600/week, bridge 100-150. PCT starts last injection +5-7 days (shorter wash-out than Deca).",
+          "pl": "100-150 mg EOD lub 200-400 mg/tydzień, podzielone 2× w tygodniu IM (5-dniowy okres półtrwania). Bulking 300-600/tydzień, bridge 100-150. PCT od ostatniej iniekcji +5-7 dni (krótszy wash-out niż Deca)."
+        }
+      },
+      "defaultVialMg": 1000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 100000,
+      "hepatotoxicity": "low",
+      "aromatization": "low",
+      "androgenicRatio": "125:37",
+      "legalStatus": "EU: Rx (Durabolin, Phenylprop) regional. USA: Schedule III. HU/PL: alig elérhető Rx, jellemzően UGL. WADA tiltott.",
+      "detectionWindow": "Vizelet: 10-14 hónap (19-norandrosterone-metabolit, hasonló mint Deca-é, hosszú-távú).",
       "quality": {
         "pure": [
-          "UGL NPP 100 mg/ml olajos fiola (HPLC-tesztelt)",
-          "Némely EU-pharmacy Durabolin (regional Rx) 25-50 mg/ml"
+          "UGL NPP 100 mg/ml halvány-sárga olajos fiola (HPLC-tesztelt forrás kötelező)",
+          "Némely EU-pharmacy Durabolin (regional Rx) 25-50 mg/ml — ritka"
         ],
         "caution": [
           "EOD vagy 2x heti IM-injekció szükséges (rövid felezés)",
-          "Prolaktin-emelkedés Deca-szintű",
-          "PIP NPP-n erősebb mint Deca-n"
+          "Prolaktin-emelkedés Deca-szintű (cabergoline készenlét)",
+          "PIP NPP-n erősebb mint Deca-n (rövid-ester carrier sűrűbb)",
+          "Detection-ablak hosszú (10-14 hó) — versenysport előtt évekkel kerülendő"
         ],
         "avoid": [
-          "Apaság-tervezés közeli időhorizonton",
-          "Erős injection-fárasztás esetén Deca preferált (heti 1x)"
+          "Apaság-tervezés közeli időhorizonton (HPTA-recovery 4-8 hó NPP után)",
+          "Erős injection-fárasztás esetén Deca preferált (heti 1x vs EOD)"
         ]
       },
       "interactions": [
-        "Cabergoline 0,25 mg 2x/hét",
-        "Testosterone-base stack standard",
+        "Cabergoline 0,25 mg 2x/hét prolaktin-monitor KÖTELEZŐ",
+        "Testosterone-base stack KÖTELEZŐ",
         "PCT utolsó NPP-injekció +5-7 nap (gyorsabb clearance mint Deca-n)"
-      ],
-      "doseCalc": {
-        "type": "bodyweight",
-        "perKg": {
-          "low": 2,
-          "medium": 4,
-          "high": 6
-        },
-        "unit": "mg/hét (IM, EOD vagy 2x heti)",
-        "note": "100-150 mg/hét (bridge), 300-600 mg/hét (bulking). EOD vagy 2x heti IM injekció. Gyorsabb on/off mint Deca → 'rövidebb' ciklusra alkalmasabb."
-      }
+      ]
     }
   ],
   "defaultVariant": "deca",
