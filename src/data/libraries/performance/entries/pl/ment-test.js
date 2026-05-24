@@ -125,54 +125,154 @@ export default {
   },
   "variants": [
     {
+      "id": "ac",
       "routeId": "ac",
-      "routeLabel": "Trestolone Octan (IM, krótki)",
-      "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Nigdy nie Rx (badanie Population Council zatrzymane). Tylko UGL. Zakaz WADA.",
-      "bioavailability": "~95-100% (IM, szybka hydroliza estru Ac)",
-      "onsetTime": "12-24 h (IM, fast-acting Ac)",
-      "halfLife": "~8 h (macierzysty Trestolon po Ac)",
-      "halfLifeActive": "~8 h",
-      "detectionWindow": "2-3 tygodnie w moczu (krótki ester).",
-      "aromatization": "Tak — CYP19 → 7α-metyloestradiol, niższe powinowactwo ER niż E2.",
-      "hepatotoxicity": "Niska — NIE 17α-alkilowany.",
-      "quality": {
-        "pure": ["Klarowny jasnożółty olej, fiolka 10 ml, 50-100 mg/ml koncentracja UGL", "Źródło testowane HPLC obowiązkowe"],
-        "caution": ["EOD/codzienna iniekcja IM potrzebna", "PIP częsty", "Monitor prolaktyny"],
-        "avoid": ["Jeśli silne zmęczenie iniekcją, Enan preferowany", "Prolaktynoma"]
+      "routeLabel": {
+        "hu": "MENT + Test Acetate mixture (gyors észter)",
+        "en": "MENT + Test Acetate mixture (fast ester)",
+        "pl": "MENT + Test Acetate mieszanka (szybki ester)"
       },
-      "interactions": ["Cabergoline E3D monitor PR", "PCT ostatnia iniekcja Ac +2-3 dni"],
+      "routeNote": {
+        "hu": "Designer kombinált compound — Trestolone (MENT, 7α-metil-19-nortestosterone) + Testosterone Acetate ester mixture, jellemzően 50/50 vagy 60/40 arányban. Cél: a MENT magas anabolic erősség + a Test androgén-baseline egyetlen olajban. Rövid Ac-ester ⇒ EOD vagy napi IM-injekció. Prolaktin-monitor a 19-Nor MENT-komponens miatt KÖTELEZŐ. Hamisítás-rizikó az UGL-piacon nagyon magas (nem tudod mit kapsz konkrétan).",
+        "en": "Designer combined compound — Trestolone (MENT, 7α-methyl-19-nortestosterone) + Testosterone Acetate ester mixture, typically 50/50 or 60/40 ratio. Goal: high MENT anabolic potency + Test androgen baseline in a single oil. Short Ac ester ⇒ EOD or daily IM injection. Prolactin monitoring MANDATORY due to 19-Nor MENT component. Counterfeit risk on UGL market very high (you don't know what's actually inside).",
+        "pl": "Designerski połączony compound — Trestolon (MENT, 7α-metylo-19-nortestosteron) + Testosteron Acetate mieszanka estrów, zazwyczaj proporcja 50/50 lub 60/40. Cel: wysoka siła anaboliczna MENT + baseline androgenny Test w jednym oleju. Krótki ester Ac ⇒ iniekcja IM EOD lub codziennie. Monitor prolaktyny OBOWIĄZKOWY z powodu komponentu MENT 19-Nor. Ryzyko podróbek na rynku UGL bardzo wysokie (nie wiesz co dokładnie dostajesz)."
+      },
+      "image": "/performance/oil-vial-yellow.png",
+      "halfLife": "~8 h (macierzysty MENT + Test po Ac)",
+      "halfLifeActive": "~8 h (mieszanka Ac)",
+      "bioavailability": "~95-100% (IM, szybka hydroliza estru Ac obu komponentów)",
+      "onsetTime": {
+        "hu": "12-24 h (IM, fast-acting Ac mixture)",
+        "en": "12-24 h (IM, fast-acting Ac mixture)",
+        "pl": "12-24 h (IM, szybko działająca mieszanka Ac)"
+      },
+      "dosing": {
+        "hu": "75-150 mg/hét IM, EOD vagy 3x/hét osztva. A magasabb dózis a Test-komponensből származik (~50% MENT-effective dose). Max 8-10 hét ciklus. Test-base NEM szükséges (már benne van). Cabergoline + PCT KÖTELEZŐ.",
+        "en": "75-150 mg/week IM, split EOD or 3×/week. Higher dose comes from Test component (~50% MENT-effective dose). Max 8-10 week cycle. Test-base NOT needed (already included). Cabergoline + PCT MANDATORY.",
+        "pl": "75-150 mg/tydzień IM, podzielone EOD lub 3×/tydzień. Wyższa dawka wynika z komponentu Test (~50% MENT-effective dose). Maks 8-10 tygodni cyklu. Baza Test niewymagana (już zawarta). Cabergolina + PCT OBOWIĄZKOWE."
+      },
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
-        "unit": "mg/tydzień (IM, EOD lub 3x/tydzień)",
-        "note": "50-100 mg/tydzień, EOD lub E3D. PCT ostatnia iniekcja +2-3 dni."
-      }
+        "fixed": {
+          "low": 75,
+          "medium": 100,
+          "high": 150
+        },
+        "unit": "mg/tydzień",
+        "note": {
+          "hu": "75-150 mg/hét, EOD vagy E3D IM (rövid felezés). Max 8-10 hét. Test-base mixture-ben, NEM kell külön. Cabergoline KÖTELEZŐ. PCT utolsó injekció +2-3 nap.",
+          "en": "75-150 mg/week, EOD or E3D IM (short half-life). Max 8-10 weeks. Test-base in mixture, NOT needed separately. Cabergoline MANDATORY. PCT starts last injection +2-3 days.",
+          "pl": "75-150 mg/tydzień, EOD lub E3D IM (krótki okres półtrwania). Maks 8-10 tygodni. Baza Test w mieszance, niewymagana osobno. Cabergolina OBOWIĄZKOWA. PCT od ostatniej iniekcji +2-3 dni."
+        }
+      },
+      "defaultVialMg": 500,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 100000,
+      "hepatotoxicity": "low",
+      "aromatization": "moderate",
+      "androgenicRatio": "varies (MENT 650:650 + Test 100:100 mixture)",
+      "legalStatus": "Nigdy nie Rx (designerska mieszanka, tylko UGL). Zakaz WADA.",
+      "detectionWindow": "W moczu: 2-3 tygodnie (krótki ester Ac; metabolity zarówno MENT jak i Test wykrywalne przez LC-MS/MS).",
+      "quality": {
+        "pure": [
+          "Klarowny jasnożółty olej, fiolka 10 ml, 75-150 mg/ml całkowite stężenie UGL",
+          "Źródło testowane HPLC ABSOLUTNIE OBOWIĄZKOWE — dwa aktywne komponenty utrudniają weryfikację niż czysty MENT-Ac"
+        ],
+        "caution": [
+          "EOD lub codzienna iniekcja IM wymagana (oba komponenty mają krótki okres półtrwania)",
+          "PIP powszechny (krótki nośnik estru Ac)",
+          "Monitor prolaktyny OBOWIĄZKOWY (komponent MENT 19-Nor)",
+          "Aromatyzacja z komponentu Test (CYP19) ⇒ monitor E2, może być wymagana AI",
+          "Proporcja MENT/Test różni się w zależności od mieszanki — nie standardyzowana"
+        ],
+        "avoid": [
+          "Prolaktynoma lub stan wrażliwy na prolaktynę",
+          "Planowane ojcostwo (połączona supresja HPTA przez 19-Nor + Test jest cięższa)",
+          "Pierwszy cykl AAS (designerska mieszanka, nieznana dokładna proporcja)",
+          "Ryzyko podróbek — używaj tylko niezawodnego UGL testowanego HPLC"
+        ]
+      },
+      "interactions": [
+        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY (komponent MENT 19-Nor)",
+        "Anastrozol 0,25-0,5 mg E3D monitor E2 (komponent Test aromatyzuje)",
+        "Baza testosteronu niewymagana (mieszanka już zawiera Test-Ac)",
+        "PCT od ostatniej iniekcji Ac +2-3 dni (krótki wash-out)"
+      ]
     },
     {
+      "id": "en",
       "routeId": "en",
-      "routeLabel": "Trestolone Enantat (IM, powolny)",
-      "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Nigdy nie Rx. Tylko UGL. Zakaz WADA.",
-      "bioavailability": "~95-100% (IM, powolna hydroliza estru Enan)",
-      "onsetTime": "48-72 h (IM, slow-acting; steady-state 3-4 tygodnie)",
-      "halfLife": "5-7 d (ester Enantatowy)",
-      "halfLifeActive": "~24 h wolny Trestolon (po hydrolizie)",
-      "detectionWindow": "6-8 tygodni w moczu.",
-      "aromatization": "Tak — CYP19 → 7α-metyloestradiol.",
-      "hepatotoxicity": "Niska — NIE 17α-alkilowany.",
-      "quality": {
-        "pure": ["Klarowny żółtawo-złoty olej, fiolka 10 ml, 100-200 mg/ml UGL", "Testowany HPLC"],
-        "caution": ["Tygodniowa 1-2x iniekcja IM", "PIP mniej niż na Ac", "Steady-state 3-4 tygodnie"],
-        "avoid": ["Krótki cykl (4-6 tygodni) NIE skuteczny", "Prolaktynoma"]
+      "routeLabel": {
+        "hu": "MENT + Test Enanthate mixture (lassú észter)",
+        "en": "MENT + Test Enanthate mixture (slow ester)",
+        "pl": "MENT + Test Enanthate mieszanka (wolny ester)"
       },
-      "interactions": ["Cabergoline E3D", "PCT ostatnia iniekcja Enan +14-21 dni"],
+      "routeNote": {
+        "hu": "Hosszabb Enan-észter mixture (~5-7 nap felezés) ⇒ heti 1-2 IM-injekció elegendő, steady-state 3-4 hét. Ugyanaz a designer compound (MENT + Test) csak lassú-onset esterekkel. Kényelmesebb mint Ac-mixture, de longer detection window (6-8 hét) + steady-state-hez 3-4 hét kell. Aromatizáció + prolaktin-monitor mindkettő KÖTELEZŐ.",
+        "en": "Longer Enan-ester mixture (~5-7 day half-life) ⇒ once/twice weekly IM injection sufficient, steady-state 3-4 weeks. Same designer compound (MENT + Test) just with slow-onset esters. More convenient than Ac mixture, but longer detection window (6-8 weeks) + 3-4 weeks needed for steady-state. Aromatization + prolactin monitoring BOTH MANDATORY.",
+        "pl": "Dłuższa mieszanka estru Enan (~5-7 dni okresu półtrwania) ⇒ iniekcja IM raz/dwa razy w tygodniu wystarcza, stan stacjonarny 3-4 tygodnie. Ten sam designerski compound (MENT + Test) tylko z estrami wolno działającymi. Wygodniejszy niż mieszanka Ac, ale dłuższe okno detekcji (6-8 tygodni) + 3-4 tygodnie potrzebne do stanu stacjonarnego. Aromatyzacja + monitor prolaktyny OBA OBOWIĄZKOWE."
+      },
+      "image": "/performance/oil-vial-orange.png",
+      "halfLife": "5-7 dni (mieszanka estru Enantatowego)",
+      "halfLifeActive": "~24 h wolny MENT + Test (po hydrolizie)",
+      "bioavailability": "~95-100% (IM, powolna hydroliza estru Enan obu komponentów)",
+      "onsetTime": {
+        "hu": "48-72 h (IM, slow-acting Enan; steady-state 3-4 hét)",
+        "en": "48-72 h (IM, slow-acting Enan; steady-state 3-4 weeks)",
+        "pl": "48-72 h (IM, wolno działający Enan; stan stacjonarny 3-4 tygodnie)"
+      },
+      "dosing": {
+        "hu": "200-400 mg/hét IM, heti 1-2x osztva. Magasabb dózis mint MENT-only (Test-komponens miatt). Minimum 8-10 hét ciklus. Test-base NEM szükséges. Cabergoline + Anastrozole + PCT KÖTELEZŐ.",
+        "en": "200-400 mg/week IM, split 1-2× weekly. Higher dose than MENT-only (due to Test component). Minimum 8-10 week cycle. Test-base NOT needed. Cabergoline + Anastrozole + PCT MANDATORY.",
+        "pl": "200-400 mg/tydzień IM, podzielone 1-2× w tygodniu. Wyższa dawka niż MENT-only (z powodu komponentu Test). Minimum 8-10 tygodni cyklu. Baza Test niewymagana. Cabergolina + Anastrozol + PCT OBOWIĄZKOWE."
+      },
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 100, "medium": 150, "high": 200},
-        "unit": "mg/tydzień (IM, podzielone 1-2x)",
-        "note": "100-200 mg/tydzień, tygodniowo 1-2x. Minimum 8-10 tygodni cyklu. PCT ostatnia iniekcja +14-21 dni."
-      }
+        "fixed": {
+          "low": 200,
+          "medium": 300,
+          "high": 400
+        },
+        "unit": "mg/tydzień",
+        "note": {
+          "hu": "200-400 mg/hét, heti 1-2x IM (Enan-mixture). Minimum 8-10 hét ciklus. Test-base mixture-ben, NEM kell külön. Cabergoline + Anastrozole KÖTELEZŐ. PCT utolsó injekció +14-21 nap.",
+          "en": "200-400 mg/week, 1-2× weekly IM (Enan mixture). Minimum 8-10 week cycle. Test-base in mixture, NOT needed separately. Cabergoline + Anastrozole MANDATORY. PCT starts last injection +14-21 days.",
+          "pl": "200-400 mg/tydzień, 1-2× w tygodniu IM (mieszanka Enan). Minimum 8-10 tygodni cyklu. Baza Test w mieszance, niewymagana osobno. Cabergolina + Anastrozol OBOWIĄZKOWE. PCT od ostatniej iniekcji +14-21 dni."
+        }
+      },
+      "defaultVialMg": 2000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 300000,
+      "hepatotoxicity": "low",
+      "aromatization": "moderate",
+      "androgenicRatio": "varies (MENT 650:650 + Test 100:100 mixture)",
+      "legalStatus": "Nigdy nie Rx (designerska mieszanka). Tylko UGL. Zakaz WADA.",
+      "detectionWindow": "W moczu: 6-8 tygodni (dłuższy ester Enan, rodziny metabolitów obu komponentów wykrywalne).",
+      "quality": {
+        "pure": [
+          "Klarowny żółtawo-złoty olej, fiolka 10 ml, 200-400 mg/ml całkowite stężenie UGL",
+          "Źródło testowane HPLC ABSOLUTNIE OBOWIĄZKOWE — dwa aktywne komponenty, proporcja mieszanki nie standardyzowana"
+        ],
+        "caution": [
+          "Tygodniowa 1-2× iniekcja IM (wygodniejsza niż mieszanka Ac)",
+          "PIP łagodniejszy niż Ac (dłuższy nośnik estru)",
+          "Stan stacjonarny 3-4 tygodnie — krótki cykl nieefektywny",
+          "Monitor prolaktyny + E2 OBA OBOWIĄZKOWE (oba komponenty)",
+          "Proporcja mieszanki różni się w zależności od UGL — nie znasz dokładnego podziału MENT/Test"
+        ],
+        "avoid": [
+          "Krótki (4-6 tygodni) cykl nieefektywny (stan stacjonarny nie osiągnięty)",
+          "Prolaktynoma lub stan wrażliwy na prolaktynę",
+          "Planowane ojcostwo (połączona supresja HPTA przez 19-Nor + Test jest cięższa)",
+          "Ryzyko podróbek — używaj tylko niezawodnego UGL testowanego HPLC"
+        ]
+      },
+      "interactions": [
+        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY (komponent MENT 19-Nor)",
+        "Anastrozol 0,25-0,5 mg E3D monitor E2 (komponent Test aromatyzuje)",
+        "Baza testosteronu niewymagana (mieszanka już zawiera Test-Enan)",
+        "PCT od ostatniej iniekcji Enan +14-21 dni (długi wash-out)"
+      ]
     }
   ],
   "defaultVariant": "ac"
