@@ -1247,7 +1247,7 @@ export const performanceLibrary = {
   features: {
   "faq": false,
   "doseRecommendations": false,
-  "calculator": false,
+  "calculator": true,
   "qualityGrid": false,
   "interactions": false,
   "quickStart": false,

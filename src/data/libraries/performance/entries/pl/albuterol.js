@@ -168,7 +168,11 @@ export default {
     {
       "id": "oral",
       "routeId": "oral",
-      "routeLabel": "Tabletka doustna",
+      "routeLabel": {
+        "hu": "Orális tabletta — Salbutamol HCl",
+        "en": "Oral tablet — Salbutamol HCl",
+        "pl": "Tabletka doustna — Salbutamol HCl"
+      },
       "image": "/performance/tablet-pile-white.png",
       "whatIs": "Tabletka Salbutamolu HCl (2 mg, 4 mg) — stosowana off-label w cyklach termogenicznych podobnych do Clenbuterolu, z ochroną masy mięśniowej. Dostępna w aptece (Ventolin 2 mg tabletki), co gwarantuje precyzyjną zawartość substancji czynnej, w odróżnieniu od produktów UGL.",
       "routeNote": "Wybierz formę doustną, gdy planujesz cykl redukcyjny w stylu Clenbuterolu: tabletki pozwalają na dokładne dawkowanie, a okres półtrwania ~5-6 godz daje bezpieczniejszy profil kumulacji niż Clenbuterol. Bez wskazania astmatycznego ta droga jest zakazana przez WADA — wyłącznie dla niekonkurujących sportowców w kontekście off-label.",
@@ -190,7 +194,11 @@ export default {
     {
       "id": "inhaled",
       "routeId": "inhaled",
-      "routeLabel": "Inhalator MDI",
+      "routeLabel": {
+        "hu": "Inhaláló (MDI) — Ventolin / ProAir",
+        "en": "Inhaler (MDI) — Ventolin / ProAir",
+        "pl": "Inhalator (MDI) — Ventolin / ProAir"
+      },
       "image": "/performance/inhaler-asthma.png",
       "whatIs": "Inhalator z odmierzaną dawką (MDI) — standardowa forma leczenia astmy Ventolin/ProAir. Dostarcza lek bezpośrednio do płuc przy minimalnym wchłanianiu ogólnoustrojowym. Zgodnie z przepisami WADA stosowanie do 1600 μg/24h jest dozwolone dla zawodników z astmą bez konieczności TUE.",
       "routeNote": "Wybierz inhalator, gdy głównym celem jest leczenie objawów ostrej astmy, lub gdy rywalizujesz pod kontrolą WADA i potrzebujesz bronchodylatatora. Ogólnoustrojowe działania niepożądane (drżenie, tachykardia) są znacznie łagodniejsze niż przy formie doustnej, ale off-label efekt termogeniczny i ochrona masy mięśniowej są też mniejsze.",

@@ -1861,13 +1861,21 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  must supply >0 values to render the MiniCalc. */}
  {(() => {
  if (!library?.features?.calculator) return null
- const id = peptide._activeVariantId
- const isFixedDose =
- id === 'in' ||
- id === 'oral' || id === 'ac-oral' ||
- id === 'inhaled' ||
- id === 'topical'
- return isFixedDose && peptide.dosing?.notes
+ // v0.27.1: Info-card branch fires for all non-peptide variants that have
+ // a structured `dosing.notes` string. This includes oral/inhaled/topical/
+ // intranasal (non-injection) AND injectable AAS esters (prop/enan/cyp/etc.)
+ // where a peptide-style MiniCalc (μg/IU/insulin-syringe) does not fit the
+ // mg/ml IM oil-vial mental model. Only peptide entries with miniCalc>0 fall
+ // through to the MiniCalc branch.
+ if (library?.id === 'peptides') {
+ // Peptides: info-card only for IN nasal-spray (v0.26 precedent)
+ if (peptide._activeVariantId !== 'in') return false
+ return !!peptide.dosing?.notes
+ }
+ // Non-peptide libraries (performance + pharmaceutical): info-card for ALL
+ // variants that have a structured dosing.notes string. doseCalc.note added
+ // as second paragraph when present.
+ return !!peptide.dosing?.notes
  })() && (
  <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
@@ -1886,7 +1894,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </p>
  {peptide.doseCalc?.note && (
  <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
- {peptide.doseCalc.note}
+ {tr(peptide.doseCalc.note)}
  </p>
  )}
  </div>
@@ -1894,13 +1902,11 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  )}
  {(() => {
  if (!library?.features?.calculator) return null
- const id = peptide._activeVariantId
- const isFixedDose =
- id === 'in' ||
- id === 'oral' || id === 'ac-oral' ||
- id === 'inhaled' ||
- id === 'topical'
- return !isFixedDose && peptide.miniCalc?.vialMg > 0 && peptide.miniCalc?.bacMl > 0 && peptide.miniCalc?.doseMcg > 0
+ // MiniCalc (peptide vial/BAC/dose μg widget) is now peptide-only and only
+ // for non-IN variants (SC). Non-peptide libraries use the info-card above.
+ if (library?.id !== 'peptides') return false
+ if (peptide._activeVariantId === 'in') return false
+ return peptide.miniCalc?.vialMg > 0 && peptide.miniCalc?.bacMl > 0 && peptide.miniCalc?.doseMcg > 0
  })() && (
  <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
  <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />

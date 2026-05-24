@@ -168,7 +168,11 @@ export default {
     {
       "id": "oral",
       "routeId": "oral",
-      "routeLabel": "Oral tablet",
+      "routeLabel": {
+        "hu": "Orális tabletta — Salbutamol HCl",
+        "en": "Oral tablet — Salbutamol HCl",
+        "pl": "Tabletka doustna — Salbutamol HCl"
+      },
       "image": "/performance/tablet-pile-white.png",
       "whatIs": "Salbutamol HCl tablet (2 mg, 4 mg) — used off-label for Clenbuterol-like thermogenic and muscle-sparing cycles. Available from pharmacy (Ventolin 2 mg tablet), guaranteeing content accuracy unlike UGL products.",
       "routeNote": "Choose the oral form when planning a Clen-style fat-loss cycle: tablets allow precise dose titration and the ~5-6 h half-life delivers a safer accumulation profile than Clenbuterol. Without an asthma indication this route is banned under WADA — for non-competing off-label context only.",
@@ -190,7 +194,11 @@ export default {
     {
       "id": "inhaled",
       "routeId": "inhaled",
-      "routeLabel": "MDI inhaler",
+      "routeLabel": {
+        "hu": "Inhaláló (MDI) — Ventolin / ProAir",
+        "en": "Inhaler (MDI) — Ventolin / ProAir",
+        "pl": "Inhalator (MDI) — Ventolin / ProAir"
+      },
       "image": "/performance/inhaler-asthma.png",
       "whatIs": "Metered-Dose Inhaler (MDI) — the standard asthma treatment form of Ventolin/ProAir. Delivers drug directly to the lungs with minimal systemic absorption. Under WADA rules, use up to 1600 μg/24 h is permitted for asthmatic athletes without a TUE.",
       "routeNote": "Choose the inhaler when treating acute asthma symptoms is the primary goal, or when competing under WADA rules and bronchodilation is medically needed. Systemic side effects (tremor, tachycardia) are significantly milder than oral, but the off-label thermogenic and muscle-sparing effect is also smaller.",

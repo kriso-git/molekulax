@@ -59,14 +59,18 @@ function deriveResearchUses(peptide, library) {
 }
 
 // Build a dosing block from dosageInfo + sensible defaults.
-// Variant-aware: when the resolved variant supplies a `dosing` string
+// Variant-aware: when the resolved variant supplies a `dosing` value
 // (the variant-spread result of variants[].dosing), prefer that over the
 // entry-level dosageInfo — the entry-level text often hardcodes a single
 // route and would lie for the other variant.
-function deriveDosing(peptide) {
- const notes = (typeof peptide.dosing === 'string' && peptide.dosing.trim())
- ? peptide.dosing
- : peptide.dosageInfo
+// v0.27.1: dosing accepts both flat-string (Round 1-2 entries) and {hu,en,pl}
+// triplet (Round 3-4 entries) shapes; the flat() helper resolves the active
+// language and falls back gracefully.
+function deriveDosing(peptide, lang) {
+ const raw = peptide.dosing != null
+ ? flat(peptide.dosing, lang)
+ : null
+ const notes = (raw && raw.trim()) ? raw : peptide.dosageInfo
  if (!notes) return null
  return {
  typical: '', // not structured in live data
@@ -118,17 +122,31 @@ function getRouteFamily(activeVariantId) {
 }
 
 // Quick Start Guide, derived 4-step primer.
-// Resolution order:
-// 1. If the entry defines its own `quickStart` (CORE nootropic entries do),
-// honor it. Accept either shape:
+// Resolution order (v0.27.1 — variant-aware override):
+// 1. If a route-family default exists for the active variant (oral/inhaled/
+// topical/in/sc/im non-null switch case), USE IT — variant-specific guidance
+// is more useful than an entry-level quickStart that hardcodes a single
+// route. This applies whenever `_activeVariantId` is set (i.e. the entry has
+// `variants[]` and the user toggled a route).
+// 2. Otherwise, honor the entry-level `quickStart` array (CORE nootropic
+// entries, peptide entries without variants, single-route performance entries).
+// Accept shapes:
 // a) Full step objects: `{ step?, title:{hu,en,pl}, detail:{hu,en,pl} }`
 // b) Flat I18nString rows: `{ hu, en, pl }`, wrapped with a numbered title.
-// 2. For peptide library entries without an explicit quickStart, derive a
-// generic 4-step primer using reconstitution defaults (vial / BAC / dose).
-// 3. For non-peptide entries without an explicit quickStart, return null so
-// EntryDetail graceful-skips the section (no `? mg-os fiola` placeholders).
+// 3. For peptide library entries with no quickStart + no family-default,
+// derive a generic SC 4-step primer.
+// 4. For non-peptide entries with no quickStart + no family-default, return
+// null so EntryDetail graceful-skips the section.
 function deriveQuickStart(peptide, library, activeVariantId) {
- if (Array.isArray(peptide.quickStart) && peptide.quickStart.length > 0) {
+ const family = getRouteFamily(activeVariantId)
+ const hasFamilyDefault = activeVariantId && (
+ family === 'oral' || family === 'inhaled' || family === 'topical' ||
+ family === 'in' || family === 'im' || (library?.id === 'peptides' && family === 'sc')
+ )
+ // v0.27.1: variant-family default wins over entry-level quickStart when both exist.
+ // (Pre-v0.27.1 bug: entry-level array always blocked the family-switch, so albuterol
+ // showed identical "Oral dosing / Inhaló" steps on both variants.)
+ if (!hasFamilyDefault && Array.isArray(peptide.quickStart) && peptide.quickStart.length > 0) {
  return peptide.quickStart.map((s, i) => {
  if (s && s.title && s.detail) return s
  return {
@@ -138,10 +156,12 @@ function deriveQuickStart(peptide, library, activeVariantId) {
  }
  })
  }
- const family = getRouteFamily(activeVariantId)
 
- // Non-peptide libraries: only oral/inhaled/topical get defaults; sc/im/in fall through to null.
- if (library?.id !== 'peptides' && family !== 'oral' && family !== 'inhaled' && family !== 'topical') {
+ // Non-peptide libraries: oral/inhaled/topical/in/im all get family defaults; only
+ // 'sc' is peptide-specific (non-peptide entries never use the SC route). v0.27.1:
+ // im included so AAS ester variants (prop/enan/cyp/sus/aq/oil/etc.) show injection
+ // guidance instead of falling back to null and rendering an empty QuickStart.
+ if (library?.id !== 'peptides' && family === 'sc') {
  return null
  }
 
@@ -177,7 +197,7 @@ function deriveQuickStart(peptide, library, activeVariantId) {
  { step: 2, title: { hu: 'Felvitel', en: 'Application', pl: 'Aplikacja' },
  detail: { hu: 'Vékony rétegben az érintett területre, körkörös mozdulatokkal masszírozd be 30-60 másodpercig. Hagyd felszívódni 2-4 percig, mielőtt ruhával érintkezne.', en: 'Thin layer to affected area, massage in circular motions 30-60 seconds. Let absorb 2-4 minutes before clothing contact.', pl: 'Cienką warstwą na obszar dotknięty, wmasuj okrężnymi ruchami 30-60 sekund. Pozostaw do wchłonięcia 2-4 minuty przed kontaktem z odzieżą.' } },
  { step: 3, title: { hu: 'Kézmosás', en: 'Hand washing', pl: 'Mycie rąk' },
- detail: { hu: 'Beadás után alaposan moss kezet szappannal (transzfer-prevenció, főleg minoxidil-nél akcidentális arc/szem-érintés).', en: 'Wash hands thoroughly with soap after application (transfer prevention, especially minoxidil to face/eyes).', pl: 'Po aplikacji dokładnie umyj ręce mydłem (zapobieganie transferowi, szczególnie minoxidilu na twarz/oczy).' } },
+ detail: { hu: 'Felvitel után alaposan moss kezet szappannal (transzfer-prevenció: ne kerüljön akcidentálisan arcra, szembe, partner bőrére — minoxidilnél kifejezetten fontos).', en: 'After application wash hands thoroughly with soap (transfer prevention: avoid accidental contact with face, eyes, or partner skin — critical for minoxidil).', pl: 'Po aplikacji dokładnie umyj ręce mydłem (zapobieganie transferowi: unikaj przypadkowego kontaktu z twarzą, oczami lub skórą partnera — szczególnie ważne dla minoxidilu).' } },
  { step: 4, title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
  detail: { hu: 'Bőrirritáció (vörösség, viszketés, hámlás), kontakt-dermatitisz, kezelt területen nem kívánt szőrnövekedés.', en: 'Skin irritation (redness, itching, peeling), contact dermatitis, unwanted hair growth at treated site.', pl: 'Podrażnienie skóry (zaczerwienienie, świąd, łuszczenie), kontaktowe zapalenie skóry, niepożądany wzrost włosów w miejscu aplikacji.' } },
  ]
@@ -1282,7 +1302,7 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  mechanism: deriveMechanism(peptide),
  researchUses: deriveResearchUses(peptide, library),
  molecular: deriveMolecular(peptide, library),
- dosing: deriveDosing(peptide),
+ dosing: deriveDosing(peptide, lang),
  stacks: [],
  sideEffects: [],
  contraindications: [],

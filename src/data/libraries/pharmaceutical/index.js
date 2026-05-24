@@ -508,7 +508,7 @@ export const pharmaceuticalLibrary = {
   features: {
   "faq": false,
   "doseRecommendations": false,
-  "calculator": false,
+  "calculator": true,
   "qualityGrid": false,
   "interactions": false,
   "quickStart": false,

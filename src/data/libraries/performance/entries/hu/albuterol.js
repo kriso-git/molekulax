@@ -168,7 +168,11 @@ export default {
     {
       "id": "oral",
       "routeId": "oral",
-      "routeLabel": "Oral tabletta",
+      "routeLabel": {
+        "hu": "Orális tabletta — Salbutamol HCl",
+        "en": "Oral tablet — Salbutamol HCl",
+        "pl": "Tabletka doustna — Salbutamol HCl"
+      },
       "image": "/performance/tablet-pile-white.png",
       "whatIs": "Salbutamol HCl tabletta (2 mg, 4 mg) — a Clenbuterolhoz hasonló thermogenikus + izommegtartó off-label ciklus céljára. Gyógyszertári forrásból elérhető (Ventolin 2 mg tabletta HU-ban), ami garantált hatóanyagtartalmat jelent az UGL-termékekkel szemben.",
       "routeNote": "Válaszd az oral formát, ha Clen-szerű fat-loss ciklust tervezel: a tabletta pontos dózis-titrálást tesz lehetővé, és a ~5-6 órás felezési idő biztonságosabb profilt ad. Asztma-indikáció nélkül a WADA-szempontból ez a tiltott forma — kizárólag nem-versenyző off-label kontextusban.",
@@ -190,7 +194,11 @@ export default {
     {
       "id": "inhaled",
       "routeId": "inhaled",
-      "routeLabel": "MDI inhaláló",
+      "routeLabel": {
+        "hu": "Inhaláló (MDI) — Ventolin / ProAir",
+        "en": "Inhaler (MDI) — Ventolin / ProAir",
+        "pl": "Inhalator (MDI) — Ventolin / ProAir"
+      },
       "image": "/performance/inhaler-asthma.png",
       "whatIs": "Mért dózisú aeroszol inhaláló (MDI, Metered-Dose Inhaler) — a Ventolin/ProAir szabványos asztma-kezelési formája. Direkten a tüdőbe juttatja a hatóanyagot, minimális szisztémás felszívódással. WADA szerint <1600 μg/24 óra megengedett asztmás versenyzőknél TUE nélkül.",
       "routeNote": "Válaszd az inhaláló formát, ha asztma-tünetek kezelése az elsődleges cél, vagy WADA-ellenőrzött versenyzőként szükséged van bronchodilatátorra. Az inhaláló szisztémás mellékhatásai (tremor, tachycardia) lényegesen enyhébbek, mint az oral formánál, de a thermogenikus és izommegtartó off-label hatás is kisebb.",
