@@ -66,6 +66,6 @@ export default {
       "finding": "Tesamorelin daje trwałą redukcję VAT i korzystne efekty metaboliczne przez 52 tygodnie przy dobrej tolerancji."
     }
   ],
-  "related": ["tesamorelin-perf", "sermorelin", "cjc-1295", "hgh"],
+  "related": ["sermorelin", "cjc-1295", "hgh"],
   "anecdote": "Wśród środków zwiększających GH, Tesamorelin jest szeroko uważany za faworyta. Raporty anegdotyczne opisują 50-dniowy cykl z dawką 2 mg dziennie podczas redukcji, dający zauważalne zmniejszenie obwodu brzucha około trzeciego tygodnia (przypisywane redukcji tłuszczu trzewnego) i lepszy sen od drugiego tygodnia. Ponieważ działa poprzez GHRH, naturalna pulsatylność GH jest zachowana. Jest słabszy niż bezpośredni HGH, ale powoduje mniej skutków ubocznych. Zazwyczaj nie wystrzeliwuje IGF-1 — wzmacnia naturalne pulsy. Zatwierdzony przez FDA do leczenia lipodystrofii wywołanej HIV.\n\nTesamorelin jest podawany podskórnie, idealnie raz dziennie przed snem w stanie na czczo."
 }

@@ -32,9 +32,7 @@ export default {
   "onsetTime": "30-45 min",
   "halfLife": "0.6-2 h",
   "interactionsWith": [
-    "caffeine",
-    "ephedrine",
-    "MAOI",
+    "caffeine",    "MAOI",
     "SSRI",
     "TCA",
     "tyramine-rich foods",
@@ -154,9 +152,7 @@ export default {
       "a": "Klonidyna to agonista α2, yohimbina to antagonista α2 — bezpośredni konflikt farmakologiczny. Pham 2022 (Cureus PMID 36115742) udokumentował krwawienie śródczaszkowe po pojedynczej dawce yohimbiny u 39-letniej kobiety na przewlekłej klonidynie (198/93, krwawienie do jąder podstawnych, ciężkie sekwencje neurologiczne). Z MAOI lub posiłkami bogatymi w tyraminę (sery dojrzewające, czerwone wino, salami) ryzyko kryzysu nadciśnieniowego przez kumulację NE. Oba scenariusze to bezwzględne przeciwwskazania."
     }
   ],
-  "related": [
-    "ephedrine",
-    "clenbuterol"
+  "related": [    "clenbuterol"
   ],
   "doseCalc": {
     "type": "bodyweight",

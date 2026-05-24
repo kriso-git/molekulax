@@ -35,7 +35,7 @@ export const CATEGORIES = [
     accent: '#BA7517',
     label: { hu: 'Zsírégetés & Stimulánsok',  en: 'Fat loss & Stimulants',    pl: 'Spalanie i stymulanty' },
     sub:   { hu: 'Metabolikus accelerátorok', en: 'Metabolic accelerators',   pl: 'Akceleratory metaboliczne' },
-  },
+  }
 ]
 
 // Sub-sections within each subCategory. Used by entry-meta `subSection` field
@@ -45,18 +45,18 @@ export const CATEGORIES = [
 export const SUB_SECTIONS = {
   dht: [
     { id: 'klasszikus', label: { hu: 'Klasszikus DHT',                en: 'Classic DHT',                  pl: 'Klasyczne DHT' } },
-    { id: 'alap-test',  label: { hu: 'Alap: Testosteron → DHT',       en: 'Base: Testosterone → DHT',     pl: 'Baza: Testosteron → DHT' } },
+    { id: 'alap-test',  label: { hu: 'Alap: Testosteron → DHT',       en: 'Base: Testosterone → DHT',     pl: 'Baza: Testosteron → DHT' } }
   ],
   test: [
     { id: '17a-alkyl',  label: { hu: 'C17α-alkylált (orális)',        en: 'C17α-alkylated (oral)',        pl: 'C17α-alkilowane (doustne)' } },
     { id: 'inj',        label: { hu: 'Injectables',                    en: 'Injectables',                  pl: 'Iniekcyjne' } },
-    { id: 'synth',      label: { hu: 'Szintetikus androgének',         en: 'Synthetic androgens',          pl: 'Syntetyczne androgeny' } },
+    { id: 'synth',      label: { hu: 'Szintetikus androgének',         en: 'Synthetic androgens',          pl: 'Syntetyczne androgeny' } }
   ],
   '19nor': [
     { id: 'nandro',     label: { hu: 'Nandrolon észterei',             en: 'Nandrolone esters',            pl: 'Estry nandrolonu' } },
     { id: 'tren',       label: { hu: 'Trenbolon',                      en: 'Trenbolone',                   pl: 'Trenbolon' } },
     { id: 'progestin',  label: { hu: 'Progestinek / egyéb 19-nor',     en: 'Progestins / other 19-nor',    pl: 'Progestyny / inne 19-nor' } },
-    { id: 'sarms',      label: { hu: 'SARMs',                          en: 'SARMs',                        pl: 'SARM-y' } },
+    { id: 'sarms',      label: { hu: 'SARMs',                          en: 'SARMs',                        pl: 'SARM-y' } }
   ],
   pct: [
     { id: 'serm',       label: { hu: 'SERMek',                         en: 'SERMs',                        pl: 'SERM-y' } },
@@ -64,7 +64,7 @@ export const SUB_SECTIONS = {
     { id: 'ai',         label: { hu: 'Aromatáz-gátlók (AI)',           en: 'Aromatase inhibitors (AI)',    pl: 'Inhibitory aromatazy (AI)' } },
     { id: 'prolactin',  label: { hu: 'Prolaktin / dopamin',            en: 'Prolactin / dopamine',         pl: 'Prolaktyna / dopamina' } },
     { id: 'axis',       label: { hu: 'Hormonhelyre / tengelymodulálás',en: 'Hormone / axis modulation',    pl: 'Hormony / modulacja osi' } },
-    { id: '5ar',        label: { hu: '5α-reduktáz gátlók',             en: '5α-reductase inhibitors',      pl: 'Inhibitory 5α-reduktazy' } },
+    { id: '5ar',        label: { hu: '5α-reduktáz gátlók',             en: '5α-reductase inhibitors',      pl: 'Inhibitory 5α-reduktazy' } }
   ],
   fat: [
     { id: 'beta',       label: { hu: 'Beta-agonisták',                 en: 'Beta-agonists',                pl: 'Beta-agoniści' } },
@@ -72,7 +72,7 @@ export const SUB_SECTIONS = {
     { id: 'stim',       label: { hu: 'Stimuláns stack-ek',             en: 'Stimulant stacks',             pl: 'Stosy stymulujące' } },
     { id: 'metabolic',  label: { hu: 'Metabolikus modulátorok',        en: 'Metabolic modulators',         pl: 'Modulatory metaboliczne' } },
     { id: 'mito',       label: { hu: 'Mitokondriális / peptid',        en: 'Mitochondrial / peptide',      pl: 'Mitochondrialne / peptydy' } },
-    { id: 'gh-axis',    label: { hu: 'Inzulin / GH-tengely',           en: 'Insulin / GH axis',            pl: 'Oś insuliny / GH' } },
+    { id: 'gh-axis',    label: { hu: 'Inzulin / GH-tengely',           en: 'Insulin / GH axis',            pl: 'Oś insuliny / GH' } }
   ],
 }
 
@@ -84,7 +84,6 @@ export const PERFORMANCE_SUB_CATEGORIES = {
   'trenbolone-info':   { subCategory: '19nor', subSection: 'tren'       },
   'anavar-info':       { subCategory: 'dht',   subSection: 'klasszikus' },
   'superdrol':         { subCategory: 'dht',   subSection: 'klasszikus' },
-  'ephedrine':         { subCategory: 'fat',   subSection: 'stim'       },
   'yohimbine':         { subCategory: 'fat',   subSection: 'stim'       },
   'clenbuterol':       { subCategory: 'fat',   subSection: 'beta'       },
   'albuterol':         { subCategory: 'fat',   subSection: 'beta'       },

@@ -78,6 +78,6 @@ export default {
       "finding": "A GIP/GLP-1/glukagon háromszoros agonizmus szinergikus hatással csökkenti a testsúlyt és javítja a lipidprofilt."
     }
   ],
-  "related": ["retatrutide-perf", "tirzepatide", "semaglutide", "cagrilintide"],
+  "related": ["tirzepatide", "semaglutide", "cagrilintide"],
   "anecdote": "Anekdotikus beszámolók szerint a Retatrutid használatának első három hónapjában gyors, jelentős fogyás következik be, de a kezdeti étvágycsökkenést gyakran túlzottan erősnek írják le, megnehezítve a fehérjebeviteli célok elérését és potenciálisan izomvesztéshez vezetve. Több felhasználó Retatrutidról Tirzepatidra vált, és simább élményről számol be az alvás és a nyugalmi pulzusszám tekintetében.\n\nA Retatrutid rendkívül hatékony az agresszív zsírvesztéshez, de általában intenzívebbnek tartják a Tirzepatidnál, amelyet sok közösségi tag a legtöbb cél esetén egyformán alkalmasnak tart. A vizsgálatokban a dózist jellemzően 4-6 hetente 2 mg-mal emelték."
 }

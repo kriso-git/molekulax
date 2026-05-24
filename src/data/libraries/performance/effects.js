@@ -28,7 +28,7 @@ export const EFFECT_CATEGORIES = [
     studies: [
       { title: 'Testosterone dose-response in healthy young men', authors: 'Bhasin S, Woodhouse L, Casaburi R, et al.', journal: 'Am J Physiol Endocrinol Metab. 2001;281(6):E1172-1181.', pmid: '11701431' },
       { title: 'Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement', authors: 'Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.', journal: 'Endocr Rev. 2014;35(3):341-375.', pmid: '24423981' },
-      { title: 'Anabolic-androgenic steroid use in the United States', authors: 'Kanayama G, Hudson JI, Pope HG Jr.', journal: 'JAMA. 2008;299(13):1532-1534.', pmid: '18387927' },
+      { title: 'Anabolic-androgenic steroid use in the United States', authors: 'Kanayama G, Hudson JI, Pope HG Jr.', journal: 'JAMA. 2008;299(13):1532-1534.', pmid: '18387927' }
     ],
     entryNames: ['Testosterone', 'Trenbolone', 'Dianabol', 'Nandrolone'],
     entryIds: ['testosterone-info', 'trenbolone-info', 'dianabol-info', 'nandrolone-info'],
@@ -56,7 +56,7 @@ export const EFFECT_CATEGORIES = [
     },
     studies: [
       { title: 'Effects of androgenic-anabolic steroids in athletes', authors: 'Hartgens F, Kuipers H.', journal: 'Sports Med. 2004;34(8):513-554.', pmid: '15248788' },
-      { title: 'Testosterone administration to older men improves muscle function', authors: 'Storer TW, Magliano L, Woodhouse L, et al.', journal: 'J Clin Endocrinol Metab. 2003;88(4):1478-1485.', pmid: '12679430' },
+      { title: 'Testosterone administration to older men improves muscle function', authors: 'Storer TW, Magliano L, Woodhouse L, et al.', journal: 'J Clin Endocrinol Metab. 2003;88(4):1478-1485.', pmid: '12679430' }
     ],
     entryNames: ['Testosterone', 'Anavar', 'Winstrol', 'Trenbolone'],
     entryIds: ['testosterone-info', 'anavar-info', 'winstrol-info', 'trenbolone-info'],
@@ -85,10 +85,10 @@ export const EFFECT_CATEGORIES = [
     studies: [
       { title: 'The effect of ephedrine/caffeine mixture on energy expenditure and body composition in obese women', authors: 'Astrup A, Buemann B, Christensen NJ, et al.', journal: 'Metabolism. 1992;41(7):686-688.', pmid: '1619987' },
       { title: 'Effect of a high-dose ephedrine/caffeine mixture on energy expenditure and body composition', authors: 'Greenway FL.', journal: 'Obes Rev. 2001;2(3):199-211.', pmid: '12120105' },
-      { title: 'Clenbuterol effects on muscle and adipose tissue: animal and human evidence', authors: 'Spann C, Winter ME.', journal: 'Ann Pharmacother. 1995;29(1):75-77.', pmid: '7741001' },
+      { title: 'Clenbuterol effects on muscle and adipose tissue: animal and human evidence', authors: 'Spann C, Winter ME.', journal: 'Ann Pharmacother. 1995;29(1):75-77.', pmid: '7741001' }
     ],
-    entryNames: ['Ephedrine', 'Clenbuterol', 'Albuterol', 'Yohimbine'],
-    entryIds: ['ephedrine', 'clenbuterol', 'albuterol', 'yohimbine'],
+    entryNames: ['Clenbuterol', 'Albuterol', 'Yohimbine'],
+    entryIds: ['clenbuterol', 'albuterol', 'yohimbine'],
     image: null,
   },
 
@@ -113,7 +113,7 @@ export const EFFECT_CATEGORIES = [
     },
     studies: [
       { title: 'Oxandrolone treatment in adults with severe burn injury', authors: 'Sheffield-Moore M, Wolfe RR, Gore DC, et al.', journal: 'J Clin Endocrinol Metab. 2000;85(11):4087-4094.', pmid: '11095438' },
-      { title: 'The effects of supraphysiologic doses of testosterone on muscle size and strength', authors: 'Bhasin S, Storer TW, Berman N, et al.', journal: 'N Engl J Med. 1996;335(1):1-7.', pmid: '8637535' },
+      { title: 'The effects of supraphysiologic doses of testosterone on muscle size and strength', authors: 'Bhasin S, Storer TW, Berman N, et al.', journal: 'N Engl J Med. 1996;335(1):1-7.', pmid: '8637535' }
     ],
     entryNames: ['Anavar', 'Testosterone', 'MK-677'],
     entryIds: ['anavar-info', 'testosterone-info', 'mk-677'],
@@ -141,7 +141,7 @@ export const EFFECT_CATEGORIES = [
     },
     studies: [
       { title: 'A specific oral activator of growth hormone secretion (MK-677) reverses diminished GH secretion in older adults', authors: 'Murray RD, Skillicorn CR, Howell SJ, et al.', journal: 'J Clin Endocrinol Metab. 1999;84(4):1391-1396.', pmid: '10199784' },
-      { title: 'MK-677 in healthy older adults: long-term safety and effects on body composition', authors: 'Garcia JM, Merriam GR, Kargi AY.', journal: 'Endocrine. 2017;57(2):261-270.', pmid: '28429293' },
+      { title: 'MK-677 in healthy older adults: long-term safety and effects on body composition', authors: 'Garcia JM, Merriam GR, Kargi AY.', journal: 'Endocrine. 2017;57(2):261-270.', pmid: '28429293' }
     ],
     entryNames: ['MK-677', 'HGH', 'Testosterone'],
     entryIds: ['mk-677', 'hgh-info', 'testosterone-info'],
@@ -169,7 +169,7 @@ export const EFFECT_CATEGORIES = [
     },
     studies: [
       { title: 'Erythropoietin treatment elevates haemoglobin concentration by increasing red cell volume and depressing plasma volume', authors: 'Lundby C, Olsen NV.', journal: 'J Physiol. 2011;589(Pt 6):1265-1271.', pmid: '21224229' },
-      { title: 'Blood doping at the Olympics', authors: 'Eichner ER.', journal: 'Curr Sports Med Rep. 2007;6(4):237-238.', pmid: '17617999' },
+      { title: 'Blood doping at the Olympics', authors: 'Eichner ER.', journal: 'Curr Sports Med Rep. 2007;6(4):237-238.', pmid: '17617999' }
     ],
     entryNames: ['EPO', 'Testosterone', 'Clenbuterol'],
     entryIds: ['epo-info', 'testosterone-info', 'clenbuterol'],
@@ -197,7 +197,7 @@ export const EFFECT_CATEGORIES = [
     },
     studies: [
       { title: 'Anabolic steroid-induced hypogonadism: diagnosis and treatment', authors: 'Rahnema CD, Lipshultz LI, Crosnoe LE, et al.', journal: 'Fertil Steril. 2014;101(5):1271-1279.', pmid: '24636400' },
-      { title: 'Anabolic-androgenic steroid use and its impact on the male reproductive system', authors: 'Coward RM, Rajanahally S, Kovac JR, et al.', journal: 'J Urol. 2013;190(6):2200-2205.', pmid: '23764081' },
+      { title: 'Anabolic-androgenic steroid use and its impact on the male reproductive system', authors: 'Coward RM, Rajanahally S, Kovac JR, et al.', journal: 'J Urol. 2013;190(6):2200-2205.', pmid: '23764081' }
     ],
     entryNames: ['Testosterone', 'Anavar', 'Trenbolone'],
     entryIds: ['testosterone-info', 'anavar-info', 'trenbolone-info'],
@@ -225,10 +225,10 @@ export const EFFECT_CATEGORIES = [
     },
     studies: [
       { title: 'Thermogenic synergism between ephedrine and caffeine in healthy volunteers', authors: 'Astrup A, Toubro S, Cannon S, et al.', journal: 'Metabolism. 1991;40(3):323-329.', pmid: '2000046' },
-      { title: 'Effect of yohimbine on body composition and exercise performance', authors: 'Ostojic SM.', journal: 'Res Sports Med. 2006;14(4):289-299.', pmid: '17214405' },
+      { title: 'Effect of yohimbine on body composition and exercise performance', authors: 'Ostojic SM.', journal: 'Res Sports Med. 2006;14(4):289-299.', pmid: '17214405' }
     ],
-    entryNames: ['Ephedrine', 'Clenbuterol', 'Yohimbine', 'DNP'],
-    entryIds: ['ephedrine', 'clenbuterol', 'yohimbine', 'dnp-info'],
+    entryNames: ['Clenbuterol', 'Yohimbine', 'DNP'],
+    entryIds: ['clenbuterol', 'yohimbine', 'dnp-info'],
     image: null,
-  },
+  }
 ]

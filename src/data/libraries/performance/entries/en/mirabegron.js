@@ -40,9 +40,7 @@ export default {
   "interactionsWith": [
     "metoprolol",
     "desipramine",
-    "albuterol",
-    "ephedrine",
-    "clenbuterol"
+    "albuterol",    "clenbuterol"
   ],
   "aromatization": "Does not aromatize (not a steroid — selective β3-adrenoceptor agonist). No CYP19 interaction; the estrogen axis is unaffected.",
   "hepatotoxicity": "Low — DILI is rare, ALT elevation <2% incidence documented in clinical trials (Khullar 2013 OAB-RCT PMID 23537815). CYP2D6 + CYP3A4 metabolism creates drug-interaction risk with metoprolol and desipramine (Mirabegron is a CYP2D6 substrate-inhibitor, plasma-level elevator).",
@@ -172,9 +170,7 @@ export default {
     }
   ],
   "related": [
-    "albuterol",
-    "ephedrine",
-    "clenbuterol",
+    "albuterol",    "clenbuterol",
     "l-carnitine"
   ],
   "doseCalc": {

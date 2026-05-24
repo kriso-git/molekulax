@@ -38,9 +38,7 @@ export default {
   "onsetTime": "20-45 min, multi-component peak overlap 1-3h",
   "halfLife": "Blend-component-dependent ~3-8h overall envelope",
   "interactionsWith": [
-    "eca-stack",
-    "ephedrine",
-    "yohimbine",
+    "eca-stack",    "yohimbine",
     "clenbuterol"
   ],
   "aromatization": "Does not aromatize (multi-sympathomimetic blend — sympathomimetic alkaloids + xanthines + α2-antagonist combination, not a steroid). No CYP19 interaction.",
@@ -160,9 +158,7 @@ export default {
     }
   ],
   "related": [
-    "eca-stack",
-    "ephedrine",
-    "yohimbine"
+    "eca-stack",    "yohimbine"
   ],
   "doseCalc": {
     "type": "fixed",

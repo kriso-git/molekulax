@@ -39,9 +39,7 @@ export default {
   "halfLife": "Ephedrine 3-6 óra; caffeine 5 óra; aspirin 4-6 óra (parent-only)",
   "interactionsWith": [
     "clenbuterol",
-    "albuterol",
-    "ephedrine",
-    "mirabegron",
+    "albuterol",    "mirabegron",
     "liothyronine"
   ],
   "aromatization": "Nem aromatizál (nem szteroid hatóanyag — sympathomimetikus alkaloid + xantin + szalicilát kombináció). Nincs CYP19-interakció.",
@@ -172,9 +170,7 @@ export default {
       "a": "Az ephedrine-on tachyphylaxis 4-6 hét chronic-use-on dokumentált: a presynaptic noradrenaline-vesicular-pool depletálódik, és a postsynaptic β-receptor-density downregulation csökkenti az aktivációs response-t. Dose-escalation NEM segít (cardiovascular-risk-multiplier), helyette 2-4 hét OFF receptor-recovery + vesicular-noradrenaline-resynthesis kötelező. Caffeine-on rövidebb tachyphylaxis (~7-10 nap), de adenosine-receptor-density rebound 4-7 nap caffeine-free után. Full ECA-stack OFF-window 2-4 hét cycle-után optimum."
     }
   ],
-  "related": [
-    "ephedrine",
-    "albuterol",
+  "related": [    "albuterol",
     "clenbuterol"
   ],
   "doseCalc": {

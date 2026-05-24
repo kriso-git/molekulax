@@ -54,6 +54,6 @@ export default {
       "finding": "68 hét semaglutide 2,4 mg/hét átlagosan 14,9%-os testtömegcsökkenést hozott placebóhoz képest."
     }
   ],
-  "related": ["semaglutide-perf", "tirzepatide", "liraglutide", "retatrutide"],
+  "related": ["tirzepatide", "liraglutide", "retatrutide"],
   "anecdote": "A három fő GLP-1 agonista közül a Semaglutid anekdotikusan a legerősebb tiszta étvágycsökkentő hatás tekintetében; a felhasználók a beadás utáni 2-3. napon érzik a legerősebb elnyomást. Csökkent éhségérzet és fokozott teltségérzet még vízfogyasztás után is gyakori beszámoló. Egyes felhasználók a Tirzepatidot preferálják a GIP közvetített sóvárgás-csökkentés miatt, de a Semaglutid szilárd alap-GLP-1 marad.\n\nA GLP-1 készítményeket általában heti egyszer adagolják a kb. 7 napos felezési idő miatt. A klinikai adagolás max. 2,4 mg-ig terjed, a legtöbb felhasználó pedig egy fenntartó adagra áll át a célsúly elérése után. Az alacsonyabb adagok elegendőek az étvágyszabályozáshoz, a magasabbak agresszívabb fogyásra szolgálnak. Lassú, alacsony titrálás javasolt."
 }

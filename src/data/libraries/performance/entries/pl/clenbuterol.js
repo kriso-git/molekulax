@@ -32,9 +32,7 @@ export default {
   "onsetTime": "15-30 min",
   "halfLife": "35-40 h",
   "interactionsWith": [
-    "caffeine",
-    "ephedrine",
-    "beta-blockers",
+    "caffeine",    "beta-blockers",
     "thyroid hormones",
     "insulin"
   ],
@@ -157,9 +155,7 @@ export default {
     }
   ],
   "related": [
-    "albuterol",
-    "ephedrine",
-    "yohimbine"
+    "albuterol",    "yohimbine"
   ],
   "doseCalc": {
     "type": "titration",

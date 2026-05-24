@@ -39,9 +39,7 @@ export default {
   "halfLife": "Ephedrine 3-6h; caffeine 5h; aspirin 4-6h (parent only)",
   "interactionsWith": [
     "clenbuterol",
-    "albuterol",
-    "ephedrine",
-    "mirabegron",
+    "albuterol",    "mirabegron",
     "liothyronine"
   ],
   "aromatization": "Does not aromatize (not a steroid — sympathomimetic alkaloid + xanthine + salicylate combination). No CYP19 interaction.",
@@ -172,9 +170,7 @@ export default {
       "a": "Ephedrine tachyphylaxis is documented after 4-6 weeks of chronic use: the presynaptic noradrenaline vesicular pool depletes, and postsynaptic β-receptor density downregulation reduces activation response. Dose escalation does NOT help (cardiovascular risk multiplier); instead 2-4 weeks OFF is required for receptor recovery + vesicular noradrenaline resynthesis. Caffeine tachyphylaxis is shorter (~7-10 days), but adenosine-receptor density rebounds in 4-7 caffeine-free days. Full ECA-stack OFF-window of 2-4 weeks post-cycle is optimum."
     }
   ],
-  "related": [
-    "ephedrine",
-    "albuterol",
+  "related": [    "albuterol",
     "clenbuterol"
   ],
   "doseCalc": {

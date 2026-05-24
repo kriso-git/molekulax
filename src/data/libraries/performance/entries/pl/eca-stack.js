@@ -39,9 +39,7 @@ export default {
   "halfLife": "Ephedryna 3-6h; kofeina 5h; aspiryna 4-6h (tylko parent)",
   "interactionsWith": [
     "clenbuterol",
-    "albuterol",
-    "ephedrine",
-    "mirabegron",
+    "albuterol",    "mirabegron",
     "liothyronine"
   ],
   "aromatization": "Nie aromatyzuje (nie jest sterydem — kombinacja sympatykomimetycznego alkaloidu + ksantyny + salicylanu). Brak interakcji z CYP19.",
@@ -172,9 +170,7 @@ export default {
       "a": "Tachyfilaksja ephedryny jest dokumentowana po 4-6 tygodniach chronicznego użycia: presynaptyczna pula pęcherzykowa noradrenaliny opróżnia się, a downregulacja gęstości receptorów β postsynaptycznych zmniejsza response aktywacyjny. Eskalacja dawki NIE pomaga (mnożnik ryzyka sercowo-naczyniowego), zamiast tego 2-4 tygodnie OFF są wymagane dla regeneracji receptorów + resyntezy pęcherzykowej noradrenaliny. Tachyfilaksja kofeiny krótsza (~7-10 dni), ale gęstość receptora adenozynowego odbija się w 4-7 dni caffeine-free. Pełne okno OFF ECA-stack 2-4 tygodnie po cyklu optimum."
     }
   ],
-  "related": [
-    "ephedrine",
-    "albuterol",
+  "related": [    "albuterol",
     "clenbuterol"
   ],
   "doseCalc": {

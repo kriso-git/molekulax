@@ -32,9 +32,7 @@ export default {
   "onsetTime": "30-45 min",
   "halfLife": "0.6-2 h",
   "interactionsWith": [
-    "caffeine",
-    "ephedrine",
-    "MAOI",
+    "caffeine",    "MAOI",
     "SSRI",
     "TCA",
     "tyramine-rich foods",
@@ -154,9 +152,7 @@ export default {
       "a": "Clonidine is α2-agonist, yohimbine is α2-antagonist — direct pharmacological conflict. Pham 2022 (Cureus PMID 36115742) documented intracranial hemorrhage after a single yohimbine dose in a 39-year-old woman on chronic clonidine (198/93 BP, basal ganglia hemorrhage, severe neurologic sequelae). With MAOI or tyramine-rich meals (aged cheese, red wine, salami), hypertensive crisis risk arises via sympathomimetic NE accumulation. Both situations are absolute contraindications."
     }
   ],
-  "related": [
-    "ephedrine",
-    "clenbuterol"
+  "related": [    "clenbuterol"
   ],
   "doseCalc": {
     "type": "bodyweight",
