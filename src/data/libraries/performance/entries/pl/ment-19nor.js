@@ -126,54 +126,149 @@ export default {
   },
   "variants": [
     {
+      "id": "ac",
       "routeId": "ac",
-      "routeLabel": "Trestolon Octan (IM, krótki)",
+      "routeLabel": {
+        "hu": "Trestolone Acetate (MENT-Ac, gyors észter)",
+        "en": "Trestolone Acetate (MENT-Ac, fast ester)",
+        "pl": "Trestolon Acetate (MENT-Ac, szybki ester)"
+      },
+      "routeNote": {
+        "hu": "Designer 19-Nor AAS (7α-metil-19-nortestosterone) — Population Council Phase II férfi-kontracepció-trial leállt, ma kizárólag UGL. Rövid ~8h felezés ⇒ EOD vagy napi IM-injekció szükséges. Aromatizál 7α-metilestradiollá (alacsonyabb ER-affinitás mint E2) ⇒ kevesebb E2-mellékhatás, DE prolaktin-monitor a 19-Nor framework miatt KÖTELEZŐ. Hatás-erőssége nagyon magas (~10x testosterone anabolic).",
+        "en": "Designer 19-Nor AAS (7α-methyl-19-nortestosterone) — Population Council Phase II male-contraception trial halted, today UGL only. Short ~8h half-life ⇒ EOD or daily IM injection required. Aromatizes to 7α-methylestradiol (lower ER affinity than E2) ⇒ fewer E2 side effects, BUT prolactin monitoring is MANDATORY due to 19-Nor framework. Very high potency (~10× testosterone anabolic).",
+        "pl": "Designerski 19-Nor AAS (7α-metylo-19-nortestosteron) — badanie Population Council Faza II antykoncepcji męskiej zatrzymane, dziś tylko UGL. Krótki ~8h okres półtrwania ⇒ wymagana iniekcja IM EOD lub codziennie. Aromatyzuje do 7α-metyloestradiolu (niższe powinowactwo ER niż E2) ⇒ mniej skutków E2, ALE monitoring prolaktyny OBOWIĄZKOWY z powodu szkieletu 19-Nor. Bardzo wysoka siła działania (~10× testosteron anaboliczny)."
+      },
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Nigdy nie był Rx (trial Population Council wstrzymany). Tylko UGL. Zakazany WADA.",
-      "bioavailability": "~95-100% (IM, szybka hydroliza Ac-estru)",
-      "onsetTime": "12-24 h (IM, fast-acting Ac)",
       "halfLife": "~8 h (macierzysty Trestolon po Ac)",
       "halfLifeActive": "~8 h",
-      "detectionWindow": "2-3 tygodnie w moczu (krótki ester).",
-      "aromatization": "Tak — CYP19 → 7α-metyloestradiol, niższe powinowactwo ER niż E2.",
-      "hepatotoxicity": "Niska — NIE 17α-alkilowany.",
-      "quality": {
-        "pure": ["Klarowny bladożółty olej, fiolka 10ml, 50-100 mg/ml stężenie UGL", "Źródło HPLC-testowane obowiązkowe"],
-        "caution": ["EOD/codzienna iniekcja IM wymagana", "PIP powszechny", "Monitor prolaktyny OBOWIĄZKOWY z powodu ramy 19-Nor"],
-        "avoid": ["Jeśli zmęczenie iniekcyjne wysokie, preferowany Enan", "Prolaktinoma"]
+      "bioavailability": "~95-100% (IM, szybka hydroliza Ac-estru)",
+      "onsetTime": {
+        "hu": "12-24 h (IM, fast-acting Ac)",
+        "en": "12-24 h (IM, fast-acting Ac)",
+        "pl": "12-24 h (IM, szybko działający Ac)"
       },
-      "interactions": ["Kabergolina E3D monitor PR (OBOWIĄZKOWY w ramie 19-Nor)", "PCT ostatnia iniekcja Ac +2-3 dni"],
+      "dosing": {
+        "hu": "50-100 mg/hét IM, EOD vagy 3x/hét osztva (Mon/Wed/Fri). Tipikus dózis 75 mg/hét. Max 8-10 hét ciklus. PCT utolsó injekció +2-3 nap. Cabergoline + Testosterone-base KÖTELEZŐ.",
+        "en": "50-100 mg/week IM, split EOD or 3×/week (Mon/Wed/Fri). Typical dose 75 mg/week. Max 8-10 week cycle. PCT starts last injection +2-3 days. Cabergoline + Testosterone-base MANDATORY.",
+        "pl": "50-100 mg/tydzień IM, podzielone EOD lub 3×/tydzień (pon/śr/pt). Typowa dawka 75 mg/tydzień. Maks 8-10 tygodni cyklu. PCT od ostatniej iniekcji +2-3 dni. Cabergolina + Testosteron-baza OBOWIĄZKOWE."
+      },
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 50, "medium": 75, "high": 100},
-        "unit": "mg/tydzień (IM, EOD lub 3x/tydzień)",
-        "note": "50-100 mg/tydzień, EOD lub E3D. PCT ostatnia iniekcja +2-3 dni."
-      }
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
+        "unit": "mg/tydzień",
+        "note": {
+          "hu": "50-100 mg/hét, EOD vagy E3D IM (rövid felezés). Max 8-10 hét. Cabergoline + Test-base KÖTELEZŐ. PCT utolsó injekció +2-3 nap.",
+          "en": "50-100 mg/week, EOD or E3D IM (short half-life). Max 8-10 weeks. Cabergoline + Test-base MANDATORY. PCT starts last injection +2-3 days.",
+          "pl": "50-100 mg/tydzień, EOD lub E3D IM (krótki okres półtrwania). Maks 8-10 tygodni. Cabergolina + Test-baza OBOWIĄZKOWE. PCT od ostatniej iniekcji +2-3 dni."
+        }
+      },
+      "defaultVialMg": 500,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 75000,
+      "hepatotoxicity": "low",
+      "aromatization": "low",
+      "androgenicRatio": "650:650",
+      "legalStatus": "Nigdy nie był Rx (trial antykoncepcji męskiej Faza II Population Council wstrzymany). Tylko UGL. Zakazany WADA.",
+      "detectionWindow": "W moczu: 2-3 tygodnie (krótki ester, szybki klirens). Akredytowane WADA LC-MS/MS.",
+      "quality": {
+        "pure": [
+          "Klarowny bladożółty olej, fiolka 10 ml, 50-100 mg/ml stężenie UGL",
+          "Źródło HPLC-testowane OBOWIĄZKOWE (designerski AAS, wysokie ryzyko podróbek)"
+        ],
+        "caution": [
+          "EOD lub codzienna iniekcja IM wymagana z powodu krótkiego okresu półtrwania",
+          "PIP powszechny (nośnik krótkiego estru, wysokie stężenie mg/ml)",
+          "Monitor prolaktyny OBOWIĄZKOWY z powodu szkieletu 19-Nor (ryzyko ginekomastii + spadku libido)",
+          "Bardzo wysoka siła działania — niższe zapotrzebowanie na dawkę niż testosteron"
+        ],
+        "avoid": [
+          "Jeśli zmęczenie iniekcyjne wysokie, preferowany wariant Enan (1-2× w tygodniu)",
+          "Prolaktinoma lub stan wrażliwy na prolaktynę",
+          "Planowane ojcostwo (regeneracja HPTA 19-Nor może być przedłużona)",
+          "Pierwszy cykl AAS (designerski compound, wymagana tolerancja TRT)"
+        ]
+      },
+      "interactions": [
+        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY (szkielet 19-Nor)",
+        "Stack z bazą testosteronu standardowy (designerski AAS, niższa dawka też wystarcza)",
+        "PCT od ostatniej iniekcji Ac +2-3 dni (krótki wash-out)"
+      ]
     },
     {
+      "id": "en",
       "routeId": "en",
-      "routeLabel": "Trestolon Enantat (IM, wolny)",
-      "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Nigdy nie był Rx. Tylko UGL. Zakazany WADA.",
-      "bioavailability": "~95-100% (IM, wolna hydroliza Enan-estru)",
-      "onsetTime": "48-72 h (IM, slow-acting; steady-state 3-4 tygodnie)",
-      "halfLife": "5-7 d (ester Enantatu)",
-      "halfLifeActive": "~24 h wolny Trestolon (po hydrolizie)",
-      "detectionWindow": "6-8 tygodni w moczu.",
-      "aromatization": "Tak — CYP19 → 7α-metyloestradiol.",
-      "hepatotoxicity": "Niska — NIE 17α-alkilowany.",
-      "quality": {
-        "pure": ["Klarowny żółto-bursztynowy olej, fiolka 10ml, 100-200 mg/ml UGL", "HPLC-testowane"],
-        "caution": ["Tygodniowo 1-2x iniekcja IM", "PIP mniejszy niż na Ac", "Steady-state 3-4 tygodnie", "Monitor prolaktyny OBOWIĄZKOWY"],
-        "avoid": ["Krótki (4-6 tygodni) cykl nieefektywny", "Prolaktinoma"]
+      "routeLabel": {
+        "hu": "Trestolone Enanthate (MENT-En, lassú észter)",
+        "en": "Trestolone Enanthate (MENT-En, slow ester)",
+        "pl": "Trestolon Enanthate (MENT-En, wolny ester)"
       },
-      "interactions": ["Kabergolina E3D (rama 19-Nor)", "PCT ostatnia iniekcja Enan +14-21 dni"],
+      "routeNote": {
+        "hu": "Hosszabb felezés (~5-7 nap) ⇒ heti 1-2 IM-injekció elegendő, steady-state 3-4 hét. PIP enyhébb mint Ac-on. Ugyanaz a designer parent Trestolone — magas anabolic erősség + 19-Nor prolaktin-rizikó. Hosszabb detection window (6-8 hét). Minimum 8-10 hét ciklus a steady-state miatt.",
+        "en": "Longer half-life (~5-7 days) ⇒ once/twice weekly IM injection sufficient, steady-state 3-4 weeks. PIP milder than Ac. Same designer parent Trestolone — high anabolic potency + 19-Nor prolactin risk. Longer detection window (6-8 weeks). Minimum 8-10 week cycle due to steady-state.",
+        "pl": "Dłuższy okres półtrwania (~5-7 dni) ⇒ iniekcja IM raz/dwa razy w tygodniu wystarcza, stan stacjonarny 3-4 tygodnie. PIP łagodniejszy niż Ac. Ten sam designerski macierzysty Trestolon — wysoka siła anaboliczna + ryzyko prolaktyny 19-Nor. Dłuższe okno detekcji (6-8 tygodni). Minimum 8-10 tygodni cyklu z powodu stanu stacjonarnego."
+      },
+      "image": "/performance/oil-vial-orange.png",
+      "halfLife": "5-7 dni (ester Enantatu)",
+      "halfLifeActive": "~24 h wolny Trestolon (po hydrolizie)",
+      "bioavailability": "~95-100% (IM, wolna hydroliza Enan-estru)",
+      "onsetTime": {
+        "hu": "48-72 h (IM, slow-acting; steady-state 3-4 hét)",
+        "en": "48-72 h (IM, slow-acting; steady-state 3-4 weeks)",
+        "pl": "48-72 h (IM, wolno działający; stan stacjonarny 3-4 tygodnie)"
+      },
+      "dosing": {
+        "hu": "100-200 mg/hét IM, heti 1-2x osztva. Tipikus dózis 150 mg/hét. Minimum 8-10 hét ciklus. PCT utolsó injekció +14-21 nap. Cabergoline + Testosterone-base KÖTELEZŐ.",
+        "en": "100-200 mg/week IM, split 1-2× weekly. Typical dose 150 mg/week. Minimum 8-10 week cycle. PCT starts last injection +14-21 days. Cabergoline + Testosterone-base MANDATORY.",
+        "pl": "100-200 mg/tydzień IM, podzielone 1-2× w tygodniu. Typowa dawka 150 mg/tydzień. Minimum 8-10 tygodni cyklu. PCT od ostatniej iniekcji +14-21 dni. Cabergolina + Testosteron-baza OBOWIĄZKOWE."
+      },
       "doseCalc": {
         "type": "fixed",
-        "fixed": {"low": 100, "medium": 150, "high": 200},
-        "unit": "mg/tydzień (IM, 1-2x podzielone)",
-        "note": "100-200 mg/tydzień, tygodniowo 1-2x. Minimum 8-10 tygodni cyklu. PCT ostatnia iniekcja +14-21 dni."
-      }
+        "fixed": {
+          "low": 100,
+          "medium": 150,
+          "high": 200
+        },
+        "unit": "mg/tydzień",
+        "note": {
+          "hu": "100-200 mg/hét, heti 1-2x IM. Minimum 8-10 hét ciklus. Cabergoline + Test-base KÖTELEZŐ. PCT utolsó injekció +14-21 nap.",
+          "en": "100-200 mg/week, 1-2× weekly IM. Minimum 8-10 week cycle. Cabergoline + Test-base MANDATORY. PCT starts last injection +14-21 days.",
+          "pl": "100-200 mg/tydzień, 1-2× w tygodniu IM. Minimum 8-10 tygodni cyklu. Cabergolina + Test-baza OBOWIĄZKOWE. PCT od ostatniej iniekcji +14-21 dni."
+        }
+      },
+      "defaultVialMg": 1000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 150000,
+      "hepatotoxicity": "low",
+      "aromatization": "low",
+      "androgenicRatio": "650:650",
+      "legalStatus": "Nigdy nie był Rx. Tylko UGL. Zakazany WADA.",
+      "detectionWindow": "W moczu: 6-8 tygodni (dłużej niż Ac z powodu uwalniania depotu).",
+      "quality": {
+        "pure": [
+          "Klarowny żółto-bursztynowy olej, fiolka 10 ml, 100-200 mg/ml stężenie UGL",
+          "Źródło HPLC-testowane OBOWIĄZKOWE (designerski AAS, wysokie ryzyko podróbek)"
+        ],
+        "caution": [
+          "Tygodniowo 1-2× iniekcja IM (wygodniejsza niż Ac)",
+          "PIP mniejszy niż Ac (dłuższy nośnik estru łagodniejszy)",
+          "Stan stacjonarny 3-4 tygodnie — krótki cykl nieefektywny",
+          "Monitor prolaktyny OBOWIĄZKOWY z powodu szkieletu 19-Nor"
+        ],
+        "avoid": [
+          "Krótki (4-6 tygodni) cykl nieefektywny (stan stacjonarny nie osiągnięty)",
+          "Prolaktinoma lub stan wrażliwy na prolaktynę",
+          "Planowane ojcostwo (regeneracja HPTA 19-Nor może być przedłużona)"
+        ]
+      },
+      "interactions": [
+        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY (szkielet 19-Nor)",
+        "Stack z bazą testosteronu standardowy",
+        "PCT od ostatniej iniekcji Enan +14-21 dni (długi wash-out)"
+      ]
     }
   ],
   "defaultVariant": "ac"
