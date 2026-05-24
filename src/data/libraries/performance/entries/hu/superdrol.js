@@ -1,10 +1,10 @@
-// Phase C — multi-variant entry (oral + injectable). See
-// docs/superpowers/specs/2026-05-19-route-toggle-design.md for shape rules.
+// Phase C — multi-variant entry (oral + injectable). v0.27 RICH expansion.
+// See docs/superpowers/specs/2026-05-19-route-toggle-design.md for shape rules.
 // Sources for Lab Terminal hard-fail fields (aromatization, hepatotoxicity):
-// Singh 2009 (PMID 19672708), Shah 2008 (PMID 18243788), Jasiurkowski 2006
-// (PMID 16865576), Nasr 2009 (PMID 19288206), Pope-Kanayama 2014 designer
-// AAS review. Injectable framing: 17α-methyl class extrapolation +
-// methyldrostanolone in-oil UGL prep convention.
+// Singh 2009 (PMID 18813027), Shah 2008 (PMID 18187367), Jasiurkowski 2006
+// (PMID 16952289), Nasr 2009 (PMID 18720005), Kazlauskas 2010 (PMID 20020364).
+// Injectable framing: 17α-methyl class extrapolation + methyldrostanolone
+// in-oil UGL prep convention.
 
 export default {
   "id": "superdrol",
@@ -12,7 +12,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Methasterone (2α,17α-dimetil-DHT-származék). Két piaci formátum: orális 17α-metilezett tabletta extrém hepatotoxicitással, illetve underground in-oil injektábilis változat csökkentett (de NEM eliminált) máj-stresszel.",
-  "description": "A Superdrol (kémiailag Methasterone, 2α,17α-dimetil-17β-hidroxi-5α-androsztán-3-on) eredetileg 1956-ban szintetizált anabolikus szteroid. Az orális formát 2005-ben Designer Supplements LLC dietary supplementként hozta forgalomba; a FDA 2012-ben (DASCA) Schedule III-as kontrollált szerré minősítette és kivonta a supplement piacról. Az underground market később megjelent egy injektábilis változatban is — methyldrostanolone olajban oldva (NEM észtertel) —, ami a hepatikus first-pass-t megkerüli, így a máj-stressz csökken, DE a 17α-metil-csoport miatt a hepatotoxicitás teljesen NEM tűnik el. Erős AR-agonista (anabolikus 400, androgén 20 referencia tesztoszteronhoz képest), 2α,17α-dimetil szerkezet miatt NEM aromatizál egyik formánál sem.",
+  "description": "A Superdrol (kémiailag Methasterone, 2α,17α-dimetil-17β-hidroxi-5α-androsztán-3-on) eredetileg 1956-ban szintetizált anabolikus szteroid. Az orális formát 2005-ben Designer Supplements LLC dietary supplementként hozta forgalomba; a FDA 2012-ben (DASCA) Schedule III-as kontrollált szerré minősítette és kivonta a supplement piacról. Az underground market később megjelent egy injektábilis változatban is — methyldrostanolone olajban oldva (NEM észterrel) —, ami a hepatikus first-pass-t megkerüli, de a 17α-metil-csoport miatt a hepatotoxicitás teljesen NEM tűnik el. Erős AR-agonista (anabolikus 400, androgén 20 referencia tesztoszteronhoz képest), 2α,17α-dimetil szerkezet miatt NEM aromatizál egyik formánál sem.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -27,9 +27,9 @@ export default {
       "value": "USA: Schedule III (2012 DASCA). EU: ellenőrzött, illegális vény nélkül."
     }
   ],
-  "mechanism": "Az AR-receptoron közvetlen agonista. A 2α-metil + 17α-metil KETTŐS metabolikus blokk: a 2α-metil-csoport gátolja az aromatázt (NEM konvertál ösztrogénné), a 17α-metil-csoport pedig a hepatikus 17β-HSD-oxidációval szembeni ellenállást ad. Orális úton a 17α-metil a first-pass hepatic clearance-t gátolja (orális biológiai hozzáférhetőség elérhető), DE prolongált cholesztatikus stresszt okoz. Injektábilis formában a first-pass elkerülésével a máj-stressz drasztikusan csökken, ám a 17α-metil-csoport jelen léte továbbra is mérhető hepatotoxicitást ad a depot-felszívódás során.",
+  "mechanism": "Az AR-receptoron közvetlen agonista. A 2α-metil + 17α-metil KETTŐS metabolikus blokk: a 2α-metil-csoport gátolja az aromatázt (NEM konvertál ösztrogénné), a 17α-metil-csoport pedig a hepatikus 17β-HSD-oxidációval szembeni ellenállást ad. Orális úton a 17α-metil a first-pass hepatic clearance-t gátolja (orális biológiai hozzáférhetőség ~75%), DE prolongált cholesztatikus stresszt okoz. Injektábilis formában a first-pass elkerülésével a máj-stressz drasztikusan csökken, ám a 17α-metil-csoport jelen léte továbbra is mérhető hepatotoxicitást ad a depot-felszívódás során.",
   "androgenicRatio": "400:20",
-  "bindingAffinity": "Erős androgén-receptor agonista, ~5x erősebb kötés mint a tesztoszteron in vitro (Stilger 2009 in vitro adat).",
+  "bindingAffinity": "Erős androgén-receptor agonista, ~5x erősebb kötés mint a tesztoszteron in vitro.",
   "interactionsWith": [
     "alcohol",
     "NSAIDs",
@@ -64,34 +64,34 @@ export default {
   ],
   "studies": [
     {
-      "title": "Severe cholestatic hepatitis caused by Methasterone (Superdrol)",
-      "authors": "Singh V, Rudraraju M, Carey EJ et al.",
-      "journal": "Dig Dis Sci. 2009;54(12):2786-2789.",
-      "pmid": "19672708"
+      "title": "Severe hepatotoxicity caused by a methasteron-containing performance-enhancing supplement",
+      "authors": "Singh V, Rudraraju M, Carey EJ, Byrne TJ, Vargas HE, Williams JE, Balan V, Douglas DD, Rakela J.",
+      "journal": "J Clin Gastroenterol. 2009;43(3):287.",
+      "pmid": "18813027"
     },
     {
-      "title": "Methasterone-associated cholestatic liver injury: clinical and biochemical characteristics",
+      "title": "Methasteron-associated cholestatic liver injury: clinicopathologic findings in 5 cases",
       "authors": "Shah NL, Zacharias I, Khettry U, Afdhal N, Gordon FD.",
       "journal": "Clin Gastroenterol Hepatol. 2008;6(2):255-258.",
-      "pmid": "18243788"
+      "pmid": "18187367"
     },
     {
-      "title": "Designer steroids: over-the-counter supplements and their androgenic component",
+      "title": "Designer steroids",
       "authors": "Kazlauskas R.",
-      "journal": "Mol Cell Endocrinol. 2010;316(1):2-7.",
-      "pmid": "19772889"
+      "journal": "Handb Exp Pharmacol. 2010;195:155-185.",
+      "pmid": "20020364"
     },
     {
-      "title": "Acute liver injury induced by Methasterone-containing dietary supplement",
-      "authors": "Jasiurkowski B, Raj J, Wisinger D et al.",
-      "journal": "Dig Dis Sci. 2006;51(6):1093-1096.",
-      "pmid": "16865576"
+      "title": "Cholestatic jaundice and IgA nephropathy induced by OTC muscle building agent superdrol",
+      "authors": "Jasiurkowski B, Raj J, Wisinger D, Carlson R, Zou L, Nadir A.",
+      "journal": "Am J Gastroenterol. 2006;101(11):2659-2662.",
+      "pmid": "16952289"
     },
     {
-      "title": "Severe cholestasis and renal failure associated with the use of the designer steroid Superdrol (methasteron)",
+      "title": "Severe cholestasis and renal failure associated with the use of the designer steroid Superdrol (methasteron): a case report and literature review",
       "authors": "Nasr J, Ahmad J.",
       "journal": "Dig Dis Sci. 2009;54(5):1144-1146.",
-      "pmid": "19288206"
+      "pmid": "18720005"
     }
   ],
   "faq": [
@@ -141,33 +141,40 @@ export default {
   },
   "variants": [
     {
+      "id": "oral",
       "routeId": "oral",
       "routeLabel": "Orális (tabletta)",
+      "routeNote": "Klasszikus Superdrol-formátum: 17α-metilezett tabletta, ~6-8 óra felezési idő. Drámai izomtömeg-növekedés és erőnövekedés, DE ez a leghepatotoxikusabb mainstream orális AAS. Rövid ciklushoz (max 4 hét) és kötelező máj-monitoringhoz tartsd magad.",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: Schedule III kontrollált szer (DASCA 2012). EU: kontrollált anabolikus szteroid, vény nélkül illegális, HU/PL piacon nem értékesíthető. WADA: tiltott versenysportban.",
-      "bioavailability": "~50% (orális, 17α-metil-csoport first-pass-resistant; FDA 2010 DESI review extrapolált a c17-AA osztály referencia-adataiból)",
+      "bioavailability": "~75% (orális, 17α-metil-csoport first-pass-resistant; c17-AA osztály referencia-adat)",
       "onsetTime": "7-14 nap (izomtömeg)",
       "halfLife": "6-8 óra (parent compound, no active metabolite)",
       "halfLifeActive": "6-8 h",
       "detectionWindow": "4-6 hét vizelet (metilezett metabolitok: 17α-metil-5α-androsztán-3α-ol-17β-on, WADA-akkreditált laborban).",
-      "aromatization": "Nem — 2α,17α-dimetil szerkezet, NEM CYP19 szubsztrát; \"wet gains\" gyakorlatilag nincs (Pope-Kanayama 2014 designer AAS review)",
-      "hepatotoxicity": "Nagyon magas — designer 17α-alkilált, súlyos DILI esetek (akut hepatitis, hepatocelluláris károsodás <30 nap alatt), Singh 2009 PMID 19672708, Shah 2008 PMID 18243788, Jasiurkowski 2006 PMID 16865576",
+      "aromatization": "none",
+      "hepatotoxicity": "very-high",
+      "androgenicRatio": "400:20",
+      "dosing": "10-30 mg/nap orálisan, napi 1-2 osztott dózisban. Maximum 4-6 hét ciklus — a hepatotoxicitás kumulatív. Étvágyvesztés és \"Superdrol-flu\" tünetek gyakoriak 20 mg felett. TUDCA 500-750 mg/nap + NAC 1200 mg/nap kötelező a teljes ciklus alatt.",
       "quality": {
         "pure": [
           "Tiszta fehér por vagy kapszula",
           "Független HPLC-tesztelt forrás (UGL piacon gyakori a hamisítás)"
         ],
         "caution": [
-          "Hepatotoxicitás (ALT/AST emelkedés, ritkán cholesztatikus jaundice)",
-          "Lipid-zavar: HDL drasztikus csökkenés (kardiovaszkuláris kockázat)",
+          "EXTRÉM HIPERTONIA: vérnyomás napi mérés kötelező, szisztolés >150 Hgmm ciklus-megszakítás indikáció",
+          "Hepatotoxicitás (ALT/AST emelkedés, ritkán cholesztatikus jaundice, dokumentált máj-szövet-elhalás esetek)",
+          "Súlyos lipid-leromlás: HDL drastikusan csökken (>30%, kardiovaszkuláris kockázat)",
+          "Étvágytalanság, hányinger, fejfájás (\"Superdrol-flu\") — különösen >20 mg/nap felett",
+          "Kolesztázis (cholestasis): epesav-felhalmozódás a máj-sejtekben, bőr-viszketés figyelmeztető jel",
           "Pszichológiai: agresszió, irritáció, anxietás",
-          "Akut vesekárosodás (AKI): Nasr 2009 case report (PMID 19288206) Methasterone-indukált cholesztatikus jaundice + AKI-t dokumentált"
+          "Akut vesekárosodás (AKI): Nasr 2009 case report (PMID 18720005) Methasterone-indukált cholesztatikus jaundice + AKI-t dokumentált"
         ],
         "avoid": [
           "Bármilyen meglévő máj-zavar (zsírmáj, hepatitis, ALT/AST emelt baseline) abszolút kontraindikáció",
           "Alkohol, NSAID-ok, paracetamol egyidejű használata szigorúan tilos",
           "Más 17α-alkilált AAS-szal (Dianabol, Anadrol, Winstrol) kombinálás extrém hepatotoxikus",
-          "Kardiovaszkuláris kockázat (családi anamnézis, magas LDL) abszolút kontraindikáció"
+          "Kardiovaszkuláris kockázat (családi anamnézis, magas LDL, hipertónia) abszolút kontraindikáció"
         ]
       },
       "interactions": [
@@ -183,37 +190,47 @@ export default {
           "medium": 20,
           "high": 30
         },
-        "unit": "mg/nap",
-        "note": "Maximum 4 hét ciklus, NIKADA tovább. TUDCA 500-750 mg/nap + NAC 1200 mg/nap a teljes ciklus alatt. ALT/AST 3x felső normál esetén AZONNAL leállítás. PCT (Clomid + Nolvadex 4 hét) kötelező."
+        "unit": "mg/day",
+        "note": "MAXIMUM 4 hét ciklus — NIKADA tovább. TUDCA 500-750 mg/nap + NAC 1200 mg/nap a teljes ciklus alatt. ALT/AST 3x felső normál esetén AZONNAL leállítás + máj-labor 2 héten belül. PCT (Clomid + Nolvadex 4 hét) kötelező. Vérnyomás naponta."
       }
     },
     {
+      "id": "injectable",
       "routeId": "injectable",
       "routeLabel": "Intramuszkuláris (injekció)",
-      "image": "/performance/oil-vial-yellow.png",
+      "routeNote": "Ritka UGL \"Methyl-Drol\" in-oil formátum: a hepatikus first-pass megkerülésével a máj-stressz csökken, de NEM tűnik el — a 17α-metil-csoport az IM-route-nál is hepatotoxikus. Lassabb felfutás (depot-kinetika), hosszabb detekciós ablak. Akkor érdemes, ha az orális hepatotoxicitás intolerabilis, DE a kockázat nem nulla.",
+      "image": "/performance/oil-vial-orange.png",
       "legalStatus": "Nem licencelt formátum — kizárólag UGL (underground lab) underground market. Mindenhol illegális gyártás + birtoklás + felhasználás. WADA: tiltott.",
-      "bioavailability": "~95-100% (IM injekció bypass-olja a first-pass-t; methyldrostanolone olajban oldva slow depot-felszívódással)",
+      "bioavailability": "~100% (IM injekció bypass-olja a first-pass-t; methyldrostanolone olajban oldva slow depot-felszívódással)",
       "onsetTime": "10-21 nap (lassabb felfutás mint orálnál, depot-kinetika miatt)",
-      "halfLife": "1-3 nap (in-oil suspension; non-észtertelt methyldrostanolone)",
-      "halfLifeActive": "1-3 nap",
+      "halfLife": "8-12 óra (in-oil depot release; non-észtertelt methyldrostanolone)",
+      "halfLifeActive": "8-12 h",
       "detectionWindow": "6-12 hét vizelet (hosszabb mint az orálnál a depot-felszívódás miatt, WADA-akkreditált laborban).",
-      "aromatization": "Nem — a molekula 2α,17α-dimetil szerkezete miatt NEM CYP19 szubsztrát egyik formánál sem (Pope-Kanayama 2014).",
-      "hepatotoxicity": "Mérsékelt — a 17α-metil-csoport jelenléte miatt nem nulla, de a first-pass elkerülése drasztikusan csökkenti a peak hepatic koncentrációt. Pope-Kanayama 2014 c17-AA injektábilis class extrapolált adatok alapján ~3-5x alacsonyabb DILI-incidencia mint az orál formánál; peer-reviewed methyldrostanolone-injektábilis-specifikus klinikai esetszám korlátozott.",
+      "aromatization": "none",
+      "hepatotoxicity": "very-high",
+      "androgenicRatio": "400:20",
+      "defaultVialMg": 500,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 50000,
+      "dosing": "50 mg EOD (minden második nap) IM, tipikusan vastus lateralis vagy ventrogluteal. UGL standard: 50 mg/ml × 10 ml fiola. Maximum 6 hét ciklus. TUDCA 500 mg/nap + NAC 1200 mg/nap kötelező a teljes ciklus alatt.",
       "quality": {
         "pure": [
           "Tiszta sárgás-lemon olaj (~#fef08a tónus), 10ml fiola, sterilen szűrt",
-          "UGL HPLC-tesztelt forrás kötelező (hamisítás és túlosolás gyakori)"
+          "UGL HPLC-tesztelt forrás kötelező (hamisítás és túladagolás gyakoriak)"
         ],
         "caution": [
-          "Injection site pain (IM, methyldrostanolone in-oil notoriously fáj — gyakori a vastus lateralis vagy ventrogluteal preferálása)",
-          "Lipid-zavar: HDL drasztikus csökkenés (kardiovaszkuláris kockázat — ugyanaz mint orálnál)",
+          "EXTRÉM HIPERTONIA: ugyanaz mint orálnál — vérnyomás napi mérés kötelező (17α-metil-osztály hatás)",
+          "Injection site irritáció/fájdalom (IM, methyldrostanolone in-oil notorikusan fájdalmas — vastus lateralis vagy ventrogluteal preferálása)",
+          "Hepatotoxicitás (17α-metil-csoport IM-route-nál is aktív): ALT/AST emelkedés, kolesztázis kockázat csökkentett de NEM nulla",
+          "Súlyos lipid-leromlás: HDL drastikusan csökken (kardiovaszkuláris kockázat — ugyanaz mint orálnál)",
+          "Étvágytalanság, hányinger (\"Superdrol-flu\" tünetek IM-nál is előfordulnak)",
           "Pszichológiai: agresszió, irritáció, anxietás",
-          "Lassú felfutás + hosszú detection — verseny közelében különösen kockázatos"
+          "Lassú felfutás + hosszú detekció — verseny közelében különösen kockázatos"
         ],
         "avoid": [
           "Bármilyen meglévő máj-zavar abszolút kontraindikáció (csökkentett, de nem nulla hepatotoxicitás)",
           "Alkohol, NSAID-ok egyidejű használata szigorúan tilos",
-          "Kardiovaszkuláris kockázat (családi anamnézis, magas LDL) abszolút kontraindikáció",
+          "Kardiovaszkuláris kockázat (családi anamnézis, magas LDL, hipertónia) abszolút kontraindikáció",
           "Aszeptikus injekciós technika hiánya (abszcessz, sebfertőzés kockázat)"
         ]
       },
@@ -226,12 +243,12 @@ export default {
       "doseCalc": {
         "type": "fixed",
         "fixed": {
-          "low": 30,
+          "low": 25,
           "medium": 50,
           "high": 100
         },
-        "unit": "mg/hét (IM, 2-3 osztott injekcióban)",
-        "note": "Maximum 6 hét ciklus. 50-100 mg/hét, 2-3 osztott injekcióban (hosszabb peak smoothing). TUDCA 500 mg/nap + NAC 1200 mg/nap a teljes ciklus alatt (a 17α-metil miatt máj-támogatás javasolt még injektábilis formánál is). ALT/AST 3x felső normál esetén AZONNAL leállítás. PCT (Clomid + Nolvadex 4-6 hét) kötelező."
+        "unit": "mg/inj",
+        "note": "50 mg EOD (minden második nap) IM — maximum 6 hét ciklus. TUDCA 500 mg/nap + NAC 1200 mg/nap kötelező (a 17α-metil miatt máj-támogatás IM-nál is szükséges). ALT/AST 3x felső normál esetén AZONNAL leállítás. PCT (Clomid + Nolvadex 4-6 hét) kötelező. Vérnyomás naponta."
       }
     }
   ],

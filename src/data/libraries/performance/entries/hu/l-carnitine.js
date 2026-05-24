@@ -1,7 +1,7 @@
 // L-Carnitine — kvaterner ammónium-vegyület, endogén lizin+metionin-precursorból
 // szintetizálódó mitokondriális long-chain fatty acid shuttle. Gulewitsch+Krimberg
 // 1905 izolálás, Sigma-Tau 1985 FDA primary carnitine deficiency Rx, bodybuilding
-// off-label 1990s. Sources: Stephens 2007 PMID 17984236, Wall 2011 PMID 21224234,
+// off-label 1990s. Sources: Stephens 2007 PMID 17331998, Wall 2011 PMID 21224234,
 // Koeth 2013 Nature Med PMID 23563705, Kraemer 2008 PMID 18204383,
 // Vukovich 1994 PMID 7960016.
 
@@ -12,7 +12,7 @@ export default {
   "accentColor": "#f97316",
   "tagColor": "rgba(249,115,22,0.18)",
   "shortDesc": "Kvaterner ammónium-vegyület, endogén lizin+metionin-precursorból szintetizálódó mitokondriális long-chain fatty acid shuttle (carnitine palmitoyltransferase I/II). Gulewitsch+Krimberg 1905 izolálás, Sigma-Tau 1985 FDA primary carnitine deficiency Rx; bodybuilding off-label 1990s, OTC fat-burner supplement 2000s. WADA: allowed, NADA Germany 2018 monitored >50 mg/kg IV-bolus.",
-  "description": "Az L-Carnitine egy kvaterner ammónium-vegyület, amelyet az emberi test endogén szintetizál ~25 mg/nap mennyiségben a hepatikus + renalis enzimkaszkádon keresztül lizin és metionin precursorokból. Eredetileg Gulewitsch és Krimberg orosz biokémikusok izolálták 1905-ben izomszövetből (innen a 'carnitine' név, 'caro/carnis' = hús). Csak az L-izomer biológiailag aktív; a D-izomer enzimatikusan inert + cardiotoxic-szignál. Az 1985-ös Sigma-Tau (olasz farma) FDA-jóváhagyás a primer karnitin-deficiencia Rx-indikációra szólt; a bodybuilding off-label use a 1990-es években indult, 2000-es évek óta mainstream 'fat-burner supplement' OTC kategória. A mechanizmus alapja a hosszú-szénláncú zsírsavak (LCFA) CoA-mediated mitokondriális belső-membrán transzportja a carnitine palmitoyltransferase I/II (CPT-I/II) enzim shuttle-rendszeren keresztül — ez a β-oxidáció rate-limiting lépése. Stephens 2007 (Am J Physiol PMID 17984236) klasszikus IV-clamp metodológia-trial bizonyította, hogy a szuprafiziológiás oral dose >1 g/nap NEM emeli az endogén szintetikus szintet, de chronic-loading-on (3-4 hét, 2 g/nap) az izomszövet-koncentrációt 2-3x emelheti carbohydrate-co-ingestion-mediated insulin-stimulated muscle-uptake mellett. Az oral bioavailability alacsony (~15%), az IM/SC injekciós forma 100% bioavailability + 4-6x dose-equivalent oral-felett. WADA: 'allowed' a 2025 prohibited listen, de a NADA Germany 2018 monitored-kategóriába emelte a >50 mg/kg IV-bolus dose-okat (potential blood-doping-marker context).",
+  "description": "Az L-Carnitine egy kvaterner ammónium-vegyület, amelyet az emberi test endogén szintetizál ~25 mg/nap mennyiségben a hepatikus + renalis enzimkaszkádon keresztül lizin és metionin precursorokból. Eredetileg Gulewitsch és Krimberg orosz biokémikusok izolálták 1905-ben izomszövetből (innen a 'carnitine' név, 'caro/carnis' = hús). Csak az L-izomer biológiailag aktív; a D-izomer enzimatikusan inert + cardiotoxic-szignál. Az 1985-ös Sigma-Tau (olasz farma) FDA-jóváhagyás a primer karnitin-deficiencia Rx-indikációra szólt; a bodybuilding off-label use a 1990-es években indult, 2000-es évek óta mainstream 'fat-burner supplement' OTC kategória. A mechanizmus alapja a hosszú-szénláncú zsírsavak (LCFA) CoA-mediated mitokondriális belső-membrán transzportja a carnitine palmitoyltransferase I/II (CPT-I/II) enzim shuttle-rendszeren keresztül — ez a β-oxidáció rate-limiting lépése. Stephens 2007 (Am J Physiol PMID 17331998) klasszikus IV-clamp metodológia-trial bizonyította, hogy a szuprafiziológiás oral dose >1 g/nap NEM emeli az endogén szintetikus szintet, de chronic-loading-on (3-4 hét, 2 g/nap) az izomszövet-koncentrációt 2-3x emelheti carbohydrate-co-ingestion-mediated insulin-stimulated muscle-uptake mellett. Az oral bioavailability alacsony (~15%), az IM/SC injekciós forma 100% bioavailability + 4-6x dose-equivalent oral-felett. WADA: 'allowed' a 2025 prohibited listen, de a NADA Germany 2018 monitored-kategóriába emelte a >50 mg/kg IV-bolus dose-okat (potential blood-doping-marker context).",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -41,11 +41,12 @@ export default {
       "id": "oral",
       "routeId": "oral",
       "routeLabel": "Oral kapszula / tabletta",
+      "routeNote": "Napi szintű kényelmes és olcsó beadási forma. Chronic-loading 3-4 hét alatt 2 g/nap oral + szénhidrát-ko-ingestion éri el az izomszövet steady-state koncentráció-emelkedését. Kezdő és fenntartó protokollok leggyakoribb választása.",
       "label": "Oral kapszula",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "OTC supplement-kategória globálisan (US, EU, HU, PL), FDA-jóváhagyott primary carnitine deficiency Rx (Sigma-Tau Carnitor 1985).",
-      "bioavailability": "~15% (low — gastrointestinal P-glycoprotein efflux + first-pass-loss)",
-      "onsetTime": "1-2 óra (oral abszorpció + steady-state izom-loading 3-4 hét chronic)",
+      "bioavailability": "~15% (alacsony — gastrointestinalis P-glycoprotein efflux + first-pass-loss)",
+      "onsetTime": "1-2 óra (oral abszorpció); steady-state izom-loading 3-4 hét chronic",
       "halfLife": "~15 óra",
       "halfLifeActive": "~15 óra",
       "detectionWindow": "WADA-akkreditált LC-MS/MS NEM standard test, chronic high-dose ~1-2 hét",
@@ -71,22 +72,26 @@ export default {
         ]
       },
       "indications": "Cutting-cycle szubtilis fat-oxidation-shift + izom-glükogén-megőrzés; chronic-loading 3-4 hét carbohydrate-co-ingestion mellett (Wall 2011 PMID 21224234)",
-      "dosing": "500-2000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake érdekében)",
+      "dosing": "Tipikus protokoll: 2-4 g/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake érdekében). Kezdő dózis 500-1000 mg/nap, hatékonysági határ chronic-loading-on 2 g/nap.",
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 500, "medium": 1000, "high": 2000 },
+        "fixed": { "low": 500, "medium": 2000, "high": 4000 },
         "unit": "mg/nap",
-        "note": "Oral 500-2000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading 3-4 hét steady-state izom-koncentráció."
+        "note": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose — info-card megjelenítés, MiniCalc nem releváns."
       }
     },
     {
-      "id": "inj",
+      "id": "aq",
       "routeId": "aq",
       "routeLabel": "IM/SC injekció (vízbázisú vial)",
+      "routeNote": "Maximális bioavailability (100%) — az oral ~15%-ával szemben a teljes dózis bejut. Performance-fókuszú pre-workout protokoll: 500-1000 mg SC injection 30-60 perccel edzés előtt. Dose-equivalent ~4-6x az oralishoz képest, gyorsabb steady-state elérés 1-2 hét alatt.",
       "label": "IM/SC injekció",
-      "image": "/performance/ampoule-glass.png",
+      "image": "/performance/water-vial.png",
+      "defaultVialMg": 1000,
+      "defaultBacMl": 5,
+      "defaultDoseMcg": 500000,
       "legalStatus": "Rx-only (IM/SC formulation), FDA-jóváhagyott Carnitor IV/IM (Sigma-Tau) primary carnitine deficiency-re. EU + HU + PL Rx-only.",
-      "bioavailability": "100% (IM/SC bypass-olja first-pass-loss-t)",
+      "bioavailability": "~100% (IM/SC bypass-olja first-pass-loss-t)",
       "onsetTime": "30-60 perc (IM/SC abszorpció)",
       "halfLife": "~15 óra",
       "halfLifeActive": "~15 óra",
@@ -96,11 +101,11 @@ export default {
       "quality": {
         "pure": [
           "FDA-jóváhagyott Carnitor IV/IM vial (Sigma-Tau) — pharmacy-szourzott Rx-grade",
-          "Compounding pharmacy IM/SC vial standardizált 1 g/mL (US) vagy 200 mg/mL (EU)"
+          "Compounding pharmacy IM/SC vial standardizált 1 g/5 mL (200 mg/mL) EU vagy 1 g/mL US"
         ],
         "caution": [
           "Injection-site pain (PIP): IM/SC quaternary-ammonium-vehicle gyakran fájdalmas, IM-deltoid/gluteal rotáció",
-          "Allergic-reaction histamine-release risk (rare): IM/SC first-dose 0.5 g test-dose javasolt",
+          "Allergic-reaction histamine-release risk (ritka): IM/SC first-dose 0.5 g test-dose javasolt",
           "Hypertonia transient post-injection (parasympathetic-vasodilation lokális)",
           "UGL liquid carnitine HPLC-tesztelt forrás kötelező — dose-variance ±20% dokumentált"
         ],
@@ -110,17 +115,17 @@ export default {
           "Seizure-disorder Rx-on (IM/SC L-Carnitine ritka seizure-induction-risk)"
         ]
       },
-      "indications": "Cutting-cycle preferable bioavailability-előny + dose-equivalent 4-6x oral-felett (Sigma-Tau Carnitor IM clinical Rx-context)",
-      "dosing": "1-2 g IM/SC 2-3x/hét cutting-cycle (8-12 hét cycle-length)",
+      "indications": "Performance-fókuszú cutting-cycle — bioavailability-előny + dose-equivalent 4-6x oral-felett (Sigma-Tau Carnitor IM clinical Rx-context). Pre-workout SC 500-1000 mg edzés előtt 30-60 perccel.",
+      "dosing": "200-1000 mg/injekció IM/SC 2-3x/hét cutting-cycle (8-12 hét cycle-length). Tipikus performance-dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampulla 1 g/5 mL.",
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 1000, "medium": 1500, "high": 2000 },
-        "unit": "mg/IM/SC 2-3x/hét",
-        "note": "IM/SC 1-2 g 2-3x/hét cutting-cycle (8-12 hét cycle-length). Bioavailability 100% bypass first-pass-loss."
+        "fixed": { "low": 200, "medium": 500, "high": 1000 },
+        "unit": "mg/injekció",
+        "note": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral."
       }
     }
   ],
-  "mechanism": "Az L-Carnitine kvaterner ammónium-vegyület, amelyet az emberi test endogén szintetizál ~25 mg/nap mennyiségben hepatikus + renalis enzimkaszkádon keresztül lizin + metionin precursorokból. Az alaprendeltetés a long-chain fatty acid (LCFA) CoA-észterek mitokondriális belső-membrán-transzportja. A folyamat 3-lépéses shuttle-rendszer: (1) carnitine palmitoyltransferase I (CPT-I) a mitokondriális külső-membrán-felszínen a LCFA-CoA-t LCFA-carnitine-vé konvertálja CoA-leadással + carnitine-felvétellel; (2) carnitine-acylcarnitine translocase (CACT) átszállítja a LCFA-carnitine-t a belső-membránon a mátrixba; (3) carnitine palmitoyltransferase II (CPT-II) a mátrixban a LCFA-carnitine-t újra LCFA-CoA-vá konvertálja + szabad carnitine-t visszaadja. A LCFA-CoA ezt követően a β-oxidációs kaszkádba lép (acyl-CoA dehydrogenase, enoyl-CoA hydratase, hydroxyacyl-CoA dehydrogenase, thiolase) → acetyl-CoA → TCA-ciklus → ATP. A CPT-I a β-oxidáció rate-limiting-step-je, citoplazmás malonyl-CoA-allosztérikus-inhibitor által regulált (insulin-mediated). Stephens 2007 (Am J Physiol PMID 17984236) IV-clamp metodológia-trial: szuprafiziológiás oral dose >1 g/nap NEM emeli az endogén szintetikus szintet hepatikus + renalis biosynthesis-rate-on, de chronic-loading (3-4 hét, 2 g/nap) carbohydrate-co-ingestion insulin-stimulated muscle-uptake mellett az izomszövet-koncentrációt 2-3x emelheti. Direkt fat-loss evidence szubtilis: Wall 2011 (J Physiol PMID 21224234) 6 hónap chronic oral 2 g/nap + carbohydrate-co-ingestion-on +11% energia-output cycle ergometer-en + protein-sparing effect resistance-training mellett. Insulin-sensitization indirekt context: Bruckbauer 2011 (PMID 21900392) leucine + L-Carnitine ko-supplementation glucose-uptake +25% rat-modell.",
+  "mechanism": "Az L-Carnitine kvaterner ammónium-vegyület, amelyet az emberi test endogén szintetizál ~25 mg/nap mennyiségben hepatikus + renalis enzimkaszkádon keresztül lizin + metionin precursorokból. Az alaprendeltetés a long-chain fatty acid (LCFA) CoA-észterek mitokondriális belső-membrán-transzportja. A folyamat 3-lépéses shuttle-rendszer: (1) carnitine palmitoyltransferase I (CPT-I) a mitokondriális külső-membrán-felszínen a LCFA-CoA-t LCFA-carnitine-vé konvertálja CoA-leadással + carnitine-felvétellel; (2) carnitine-acylcarnitine translocase (CACT) átszállítja a LCFA-carnitine-t a belső-membránon a mátrixba; (3) carnitine palmitoyltransferase II (CPT-II) a mátrixban a LCFA-carnitine-t újra LCFA-CoA-vá konvertálja + szabad carnitine-t visszaadja. A LCFA-CoA ezt követően a β-oxidációs kaszkádba lép (acyl-CoA dehydrogenase, enoyl-CoA hydratase, hydroxyacyl-CoA dehydrogenase, thiolase) → acetyl-CoA → TCA-ciklus → ATP. A CPT-I a β-oxidáció rate-limiting-step-je, citoplazmás malonyl-CoA-allosztérikus-inhibitor által regulált (insulin-mediated). Stephens 2007 (Am J Physiol PMID 17331998) IV-clamp metodológia-trial: szuprafiziológiás oral dose >1 g/nap NEM emeli az endogén szintetikus szintet hepatikus + renalis biosynthesis-rate-on, de chronic-loading (3-4 hét, 2 g/nap) carbohydrate-co-ingestion insulin-stimulated muscle-uptake mellett az izomszövet-koncentrációt 2-3x emelheti. Direkt fat-loss evidence szubtilis: Wall 2011 (J Physiol PMID 21224234) 6 hónap chronic oral 2 g/nap + carbohydrate-co-ingestion-on +11% energia-output cycle ergometer-en + protein-sparing effect resistance-training mellett. Insulin-sensitization indirekt context: Bruckbauer 2011 (PMID 21900392) leucine + L-Carnitine ko-supplementation glucose-uptake +25% rat-modell.",
   "legalStatus": "USA: FDA-jóváhagyott 1985 (Carnitor, Sigma-Tau — most Leadiant Biosciences) primary carnitine deficiency Rx. OTC supplement-kategória globálisan (US, EU, HU, PL); Rx-only az IM/SC injekciós forma. EU: EMA-jóváhagyott. HU: OTC (kapszula, oldat) + Rx (IM/SC). PL: OTC + Rx (IM/SC). WADA 2025 prohibited list: 'allowed' (nem szerepel S0-S9 listán). NADA Germany 2018 monitored-kategória >50 mg/kg IV-bolus dose-on (potential blood-doping-context).",
   "onsetTime": "Oral 1-2 óra (low-bioavailability ~15%); IM/SC 30-60 perc (100% bioavailability); izom-loading steady-state chronic 3-4 hét",
   "halfLife": "~15 óra",
@@ -139,7 +144,7 @@ export default {
   "benefits": [
     "Long-chain fatty acid mitokondriális shuttle (CPT-I/II) β-oxidáció rate-limiting-step támogatása",
     "Cutting-cycle szubtilis fat-oxidation-shift + izom-glükogén-megőrzés (Wall 2011 PMID 21224234)",
-    "Chronic-loading 3-4 hét carbohydrate-co-ingestion mellett izomszövet-koncentráció 2-3x emelés (Stephens 2007 PMID 17984236)",
+    "Chronic-loading 3-4 hét carbohydrate-co-ingestion mellett izomszövet-koncentráció 2-3x emelés (Stephens 2007 PMID 17331998)",
     "Insulin-sensitization indirect context (Bruckbauer 2011 PMID 21900392 leucine ko-supplementation +25% glucose-uptake rat-modell)",
     "Resistance-training-on protein-sparing effect + recovery-szupport (Kraemer 2008 PMID 18204383 L-Carnitine L-Tartrate)",
     "Endogén-szintetizált biztonsági-profil, WADA-allowed, OTC globálisan"
@@ -204,7 +209,7 @@ export default {
       "title": "New insights concerning the role of carnitine in the regulation of fuel metabolism in skeletal muscle",
       "authors": "Stephens FB, Constantin-Teodosiu D, Greenhaff PL.",
       "journal": "J Physiol. 2007;581(Pt 2):431-444.",
-      "pmid": "17984236"
+      "pmid": "17331998"
     },
     {
       "title": "Chronic oral ingestion of L-carnitine and carbohydrate increases muscle carnitine content and alters muscle fuel metabolism during exercise in humans",
@@ -234,7 +239,7 @@ export default {
   "faq": [
     {
       "q": "Oral vs IM/SC L-Carnitine — mi a dose-equivalency?",
-      "a": "Az oral L-Carnitine bioavailability ~15% (gastrointestinal P-glycoprotein efflux + first-pass-loss), míg az IM/SC formulation 100% bioavailability. Klinikai dose-equivalency ~4-6x oral-IM/SC arány: 1 g IM/SC ≈ 4-6 g oral. Cutting-cycle context: chronic-loading 3-4 hét oral 2 g/nap-on az izomszövet-koncentráció 2-3x emelkedik carbohydrate-co-ingestion-mediated insulin-stimulated muscle-uptake mellett (Stephens 2007 PMID 17984236), míg IM/SC 1-2 g 2-3x/hét gyorsabb steady-state-et ér el. Sigma-Tau Carnitor IM/SC clinical Rx-context (primary carnitine deficiency)."
+      "a": "Az oral L-Carnitine bioavailability ~15% (gastrointestinal P-glycoprotein efflux + first-pass-loss), míg az IM/SC formulation 100% bioavailability. Klinikai dose-equivalency ~4-6x oral-IM/SC arány: 1 g IM/SC ≈ 4-6 g oral. Cutting-cycle context: chronic-loading 3-4 hét oral 2 g/nap-on az izomszövet-koncentráció 2-3x emelkedik carbohydrate-co-ingestion-mediated insulin-stimulated muscle-uptake mellett (Stephens 2007 PMID 17331998), míg IM/SC 1-2 g 2-3x/hét gyorsabb steady-state-et ér el. Sigma-Tau Carnitor IM/SC clinical Rx-context (primary carnitine deficiency)."
     },
     {
       "q": "Fat-loss-ra direkt evidence — meta-analízis mit mond?",

@@ -106,9 +106,9 @@ export default {
   "studies": [
     {
       "title": "Anabolic steroid-induced cardiomyopathy underlying acute liver failure in a young bodybuilder",
-      "authors": "Kanayama G, Hudson JI, Pope HG Jr.",
-      "journal": "World J Gastroenterol. 2018;24(6):673-678.",
-      "pmid": "29456405"
+      "authors": "Bispo M, Valente A, Maldonado R.",
+      "journal": "World J Gastroenterol. 2009;15(23):2920-2.",
+      "pmid": "19533818"
     },
     {
       "title": "Adverse health consequences of performance-enhancing drugs",
@@ -120,7 +120,7 @@ export default {
       "title": "Long-term anabolic-androgenic steroid use is associated with left ventricular dysfunction",
       "authors": "Baggish AL, Weiner RB, Kanayama G et al.",
       "journal": "Circ Heart Fail. 2010;3(4):472-6.",
-      "pmid": "20424247"
+      "pmid": "20424234"
     },
     {
       "title": "Cardiovascular toxicity of illicit anabolic-androgenic steroid use",
@@ -138,7 +138,7 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     }
   ],
   "faq": [
@@ -204,38 +204,32 @@ export default {
   },
   "variants": [
     {
+      "id": "ace",
       "routeId": "ace",
-      "routeLabel": "Trenbolon Octan (Tren-Ace, szybki)",
+      "routeLabel": {
+        "hu": "Trenbolone Acetate (Tren-Ace, gyors észter)",
+        "en": "Trenbolone Acetate (Tren-Ace, fast ester)",
+        "pl": "Trenbolon Acetate (Tren-Ace, szybki ester)"
+      },
+      "routeNote": {
+        "hu": "Klasszikus bodybuilding-választás a gyors on/off miatt. ~2-3 napos felezés ⇒ EOD vagy napi IM-injekció szükséges a stabil szintekhez. Nincs aromatizáció, de NEM 17α-alkilált — a renális oxidatív stressz, prolaktin-emelkedés és vérnyomás-növekedés az igazi terhelés. Tren-cough rapid-onset 30-60 mp posztiv injekció után jellemző.",
+        "en": "Classic bodybuilding choice for its fast on/off kinetics. ~2-3 day half-life ⇒ EOD or daily IM injection required for steady levels. No aromatization, but NOT 17α-alkylated — renal oxidative stress, prolactin elevation and blood-pressure increase are the real burdens. Tren-cough rapid-onset 30-60 s post-injection is characteristic.",
+        "pl": "Klasyczny wybór kulturystyczny dla szybkiej kinetyki on/off. ~2-3 dni okresu półtrwania ⇒ wymagana iniekcja IM co drugi dzień lub codziennie dla stabilnych poziomów. Brak aromatyzacji, ale NIE 17α-alkilowany — oksydacyjny stres nerkowy, wzrost prolaktyny i ciśnienia krwi to prawdziwe obciążenia. Tren-cough szybko po iniekcji (30-60 s) jest charakterystyczny."
+      },
       "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Nigdy nie był Rx u ludzi (Finaplix-H weterynaryjny implant pellet). USA: Schedule III analog. Zakazany WADA.",
-      "bioavailability": "~95% (IM, szybka hydroliza estru octanu)",
-      "onsetTime": "2-3 dni (szybki onset)",
       "halfLife": "~2-3 dni (ester Octanu, KRÓTKI)",
       "halfLifeActive": "~24 h wolny Trenbolon (szybki klirens po Ace)",
-      "detectionWindow": "W moczu: 4-5 miesięcy (metabolit trenbolonu-glukuronidu, akredytowane WADA)",
-      "aromatization": "NIE — Trenbolon NIE jest substratem CYP19 (19-nor + konfiguracja Δ9,11 blok)",
-      "hepatotoxicity": "Umiarkowana — NIE 17α-alkilowany, ale wysoki skutek uboczny oksydatywnego stresu nerkowego",
-      "quality": {
-        "pure": [
-          "UGL Trenbolon Octan 100 mg/ml fiolka olejowa (HPLC-testowane)",
-          "Konwersja pelletu weterynaryjnego Finaplix-H (historyczna praktyka UGL)"
-        ],
-        "caution": [
-          "EOD lub codzienna iniekcja IM wymagana",
-          "PIP powszechny (formula oleju pomarańczowo-czerwona)",
-          "Tren-cough szybki onset 30-60 s po iniekcji"
-        ],
-        "avoid": [
-          "Silna predyspozycja nerkowa",
-          "Planowane ojcostwo",
-          "Pierwszy cykl AAS (NIE compound dla początkujących)"
-        ]
+      "bioavailability": "~95% (IM, szybka hydroliza estru octanu)",
+      "onsetTime": {
+        "hu": "2-3 nap (rapid onset)",
+        "en": "2-3 days (rapid onset)",
+        "pl": "2-3 dni (szybki początek)"
       },
-      "interactions": [
-        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY",
-        "Stack z bazą testosteronu OBOWIĄZKOWY (Tren samodzielnie ryzyko ED)",
-        "PCT ostatnia iniekcja Ace +2-3 dni"
-      ],
+      "dosing": {
+        "hu": "50-100 mg EOD IM (heti 175-350 mg). Tipikus cutting/recomp dózis 75 mg EOD = ~260 mg/hét. Max 8 hét. Cabergoline + Testosterone-base KÖTELEZŐ.",
+        "en": "50-100 mg EOD IM (175-350 mg/week). Typical cutting/recomp dose 75 mg EOD = ~260 mg/week. Max 8 weeks. Cabergoline + Testosterone-base MANDATORY.",
+        "pl": "50-100 mg EOD IM (175-350 mg/tydzień). Typowa dawka cięcia/rekompozycji 75 mg EOD = ~260 mg/tydzień. Maks 8 tygodni. Cabergolina + Testosteron-baza OBOWIĄZKOWE."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": {
@@ -243,41 +237,72 @@ export default {
           "medium": 75,
           "high": 100
         },
-        "unit": "mg/EOD (IM, EOD lub raz dziennie)",
-        "note": "50-100 mg EOD (tygodniowo 175-350 mg), max 8 tygodni. PCT ostatnia iniekcja +2-3 dni. Tren-Ace klasyczny wybór kulturystyczny z powodu szybkiego on/off."
-      }
-    },
-    {
-      "routeId": "enan",
-      "routeLabel": "Trenbolon Enantat (Tren-E, wolny)",
-      "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Nigdy nie był Rx, tylko UGL. Zakazany WADA.",
-      "bioavailability": "~95% (IM, wolna hydroliza estru Enantatu)",
-      "onsetTime": "1-2 tygodnie (steady-state 3-4 tygodnie)",
-      "halfLife": "5-7 dni (ester Enantatu)",
-      "halfLifeActive": "~24 h wolny Trenbolon (wolne uwalnianie depotu Enan)",
-      "detectionWindow": "W moczu: 5-6 miesięcy (dłużej niż na Ace)",
-      "aromatization": "NIE — strukturalny blok Trenbolonu",
-      "hepatotoxicity": "Umiarkowana — ten sam macierzysty Trenbolon, NIE 17α-alkilowany",
+        "unit": "mg/EOD",
+        "note": {
+          "hu": "50-100 mg EOD (heti 175-350 mg). Max 8 hét. PCT utolsó injekció +2-3 nap. Tren-Ace 'klasszikus' bodybuilding-választás gyors on/off miatt.",
+          "en": "50-100 mg EOD (175-350 mg/week). Max 8 weeks. PCT starts last injection +2-3 days. Tren-Ace 'classic' bodybuilding choice for fast on/off.",
+          "pl": "50-100 mg EOD (175-350 mg/tydzień). Maks 8 tygodni. PCT od ostatniej iniekcji +2-3 dni. Tren-Ace 'klasyczny' wybór kulturystyczny dla szybkiego on/off."
+        }
+      },
+      "defaultVialMg": 1000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 75000,
+      "hepatotoxicity": "low-moderate",
+      "aromatization": "none",
+      "androgenicRatio": "500:500",
+      "legalStatus": "Nigdy nie był Rx u ludzi (Finaplix-H weterynaryjny implant pellet). USA: Schedule III analog. UE: brak rejestracji u ludzi. Zakazany WADA.",
+      "detectionWindow": "W moczu: 4-5 miesięcy (metabolit trenbolonu-glukuronidu, akredytowane WADA; IRMS do 6 miesięcy).",
       "quality": {
         "pure": [
-          "UGL Trenbolon Enantat 100-200 mg/ml fiolka olejowa (HPLC-testowane)"
+          "UGL Trenbolon Octan 100 mg/ml głęboko pomarańczowa fiolka olejowa (HPLC-testowane źródło obowiązkowe)",
+          "Konwersja pelletu weterynaryjnego Finaplix-H — historyczna praktyka UGL (dziś rzadka, zastąpiona bezpośrednią syntezą UGL)"
         ],
         "caution": [
-          "Tygodniowo 1-2x iniekcja IM wystarcza (steady-state 3-4 tygodnie)",
-          "PIP łagodniejszy niż na Ace",
-          "Skutki uboczne Tren (kreatynina, prolaktyna) te same co na Ace, tylko wolniej się kumulują"
+          "EOD lub codzienna iniekcja IM wymagana z powodu krótkiego okresu półtrwania",
+          "PIP powszechny (formuła oleju pomarańczowo-czerwona, wyższe stężenie mg/ml = więcej PIP)",
+          "Tren-cough szybki onset 30-60 s po iniekcji — hipoteza mikrozatorów płucnych",
+          "Wzrost kreatyniny, wzrost ciśnienia krwi, zaburzenia snu (Pope-Kanayama 2014)"
         ],
         "avoid": [
-          "Krótki (4-6 tygodni) cykl nieefektywny",
-          "Inne przeciwwskazania Tren te same"
+          "Silna predyspozycja nerkowa (choroba nerek, obniżony eGFR)",
+          "Planowane ojcostwo (do 12+ miesięcy regeneracji spermatogenezy z powodu metabolitów 19-nor)",
+          "Pierwszy cykl AAS (NIE compound dla początkujących, wymagana tolerancja TRT)",
+          "Niestabilność psychiczna, zaburzenia lękowe (Tren-agresja + bezsenność)"
         ]
       },
       "interactions": [
-        "Kabergolina E3D",
-        "Baza testosteronu OBOWIĄZKOWA",
-        "PCT ostatnia iniekcja Enan +14-21 dni"
-      ],
+        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY",
+        "Stack z bazą testosteronu OBOWIĄZKOWY (Tren samodzielnie ryzyko ED)",
+        "PCT od ostatniej iniekcji Ace +2-3 dni (krótki wash-out)"
+      ]
+    },
+    {
+      "id": "enan",
+      "routeId": "enan",
+      "routeLabel": {
+        "hu": "Trenbolone Enanthate (Tren-E, lassú észter)",
+        "en": "Trenbolone Enanthate (Tren-E, slow ester)",
+        "pl": "Trenbolon Enanthate (Tren-E, wolny ester)"
+      },
+      "routeNote": {
+        "hu": "Hosszabb felezés (~5-7 nap) ⇒ heti 1-2 IM-injekció elegendő, steady-state 3-4 hét. PIP enyhébb mint Ace-n, de a mellékhatások (kreatinin-emelkedés, prolaktin, vérnyomás) ugyanazok, csak lassabban kumulálódnak. Rövid 4-6 hetes ciklus nem hatékony (build-up túl lassú) — minimum 8-10 hét.",
+        "en": "Longer half-life (~5-7 days) ⇒ once/twice weekly IM injection sufficient, steady-state 3-4 weeks. PIP milder than Ace, but side effects (creatinine elevation, prolactin, blood pressure) are identical, just accumulate slower. Short 4-6 week cycle ineffective (build-up too slow) — minimum 8-10 weeks.",
+        "pl": "Dłuższy okres półtrwania (~5-7 dni) ⇒ iniekcja IM raz lub dwa razy w tygodniu wystarcza, stan stacjonarny 3-4 tygodnie. PIP łagodniejszy niż Ace, ale skutki uboczne (wzrost kreatyniny, prolaktyna, ciśnienie krwi) identyczne, tylko wolniej się kumulują. Krótki cykl 4-6 tygodni nieskuteczny (zbyt wolne nasycenie) — minimum 8-10 tygodni."
+      },
+      "image": "/performance/oil-vial-orange.png",
+      "halfLife": "5-7 dni (ester Enantatu)",
+      "halfLifeActive": "~24 h wolny Trenbolon (wolne uwalnianie depotu Enan)",
+      "bioavailability": "~95% (IM, wolna hydroliza estru Enantatu)",
+      "onsetTime": {
+        "hu": "1-2 hét (steady-state 3-4 hét)",
+        "en": "1-2 weeks (steady-state 3-4 weeks)",
+        "pl": "1-2 tygodnie (stan stacjonarny 3-4 tygodnie)"
+      },
+      "dosing": {
+        "hu": "200-400 mg/hét IM, heti 1-2x osztva. Minimum 8-10 hét ciklus. PCT utolsó injekció +14-21 nap. Cabergoline + Testosterone-base KÖTELEZŐ.",
+        "en": "200-400 mg/week IM, split 1-2× weekly. Minimum 8-10 week cycle. PCT starts last injection +14-21 days. Cabergoline + Testosterone-base MANDATORY.",
+        "pl": "200-400 mg/tydzień IM, podzielone 1-2× w tygodniu. Minimum 8-10 tygodni cyklu. PCT od ostatniej iniekcji +14-21 dni. Cabergolina + Testosteron-baza OBOWIĄZKOWE."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": {
@@ -285,41 +310,70 @@ export default {
           "medium": 300,
           "high": 400
         },
-        "unit": "mg/tydzień (IM, tygodniowo 1-2x podzielone)",
-        "note": "200-400 mg/tydzień, tygodniowo 1-2x. Minimum 8-10 tygodni cyklu. PCT ostatnia iniekcja +14-21 dni. Wolniejsze on/off niż Ace, mniej iniekcji."
-      }
-    },
-    {
-      "routeId": "hex",
-      "routeLabel": "Trenbolon Hexahydrobenzylkarbonian (Parabolan, średni)",
-      "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Negma Laboratories Parabolan 1980-2000 UE Rx (Rx kacheksji), wycofany od 1997. Nowoczesny tylko UGL. Zakazany WADA.",
-      "bioavailability": "~95% (IM, średnia hydroliza estru Hexahydro)",
-      "onsetTime": "1 tydzień (steady-state 2-3 tygodnie)",
-      "halfLife": "~14 dni (ester Hexahydrobenzylkarbonianu)",
-      "halfLifeActive": "~24 h wolny Trenbolon (średnie uwalnianie depotu Parabolan)",
-      "detectionWindow": "W moczu: 5-6 miesięcy (metabolit Trenbolonu, podobny do Enan)",
-      "aromatization": "NIE — strukturalny blok Trenbolonu",
-      "hepatotoxicity": "Umiarkowana — ten sam macierzysty Trenbolon",
+        "unit": "mg/tydzień",
+        "note": {
+          "hu": "200-400 mg/hét, heti 1-2x. Minimum 8-10 hét ciklus. PCT utolsó injekció +14-21 nap. Lassabb on/off mint Ace, kevesebb injekció — kényelmi előny.",
+          "en": "200-400 mg/week, 1-2× weekly. Minimum 8-10 week cycle. PCT starts last injection +14-21 days. Slower on/off than Ace, fewer injections — convenience advantage.",
+          "pl": "200-400 mg/tydzień, 1-2× w tygodniu. Minimum 8-10 tygodni cyklu. PCT od ostatniej iniekcji +14-21 dni. Wolniejsze on/off niż Ace, mniej iniekcji — przewaga wygody."
+        }
+      },
+      "defaultVialMg": 2000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 300000,
+      "hepatotoxicity": "low-moderate",
+      "aromatization": "none",
+      "androgenicRatio": "500:500",
+      "legalStatus": "Nigdy nie był Rx, tylko UGL. UE/HU: brak rejestracji u ludzi. USA: Schedule III analog. Zakazany WADA.",
+      "detectionWindow": "W moczu: 5-6 miesięcy (dłużej niż Ace z powodu wolniejszego uwalniania depotu).",
       "quality": {
         "pure": [
-          "Negma Parabolan 76 mg/ml ampułka (HISTORYCZNY Rx 1980-1997, dziś rzadkie-kolekcjonerskie)",
-          "UGL Tren-Hex 100 mg/ml fiolka olejowa (HPLC-testowane)"
+          "UGL Trenbolon Enantat 100-200 mg/ml głęboko pomarańczowa fiolka olejowa (HPLC-testowane źródło obowiązkowe)",
+          "Wyższe stężenie mg/ml dostępne niż Ace (200 mg/ml powszechne) — mniejsza objętość iniekcji"
         ],
         "caution": [
-          "Tygodniowo 1-2x iniekcja IM (średni okres półtrwania)",
-          "PIP średni-łagodny",
-          "Klasyczny 'Parabolan' historyczny prestiż na rynku UGL"
+          "Iniekcja IM raz lub dwa razy w tygodniu wystarcza (stan stacjonarny 3-4 tygodnie)",
+          "PIP łagodniejszy niż Ace, ale wysokie stężenie (200 mg/ml) może powodować ból po wkłuciu",
+          "Skutki uboczne Tren (kreatynina, prolaktyna, ciśnienie krwi) te same co Ace, tylko wolniej się kumulują",
+          "Wolne offsetowanie oznacza wolniejszą regenerację po skutkach ubocznych (2-3 tygodnie vs Ace 5-7 dni)"
         ],
         "avoid": [
-          "Standardowe przeciwwskazania Tren te same (nerkowe, sercowo-naczyniowe, ojcostwo)"
+          "Krótki (4-6 tygodni) cykl nieefektywny (stan stacjonarny nie osiągnięty)",
+          "Inne przeciwwskazania Tren te same (nerkowe, sercowo-naczyniowe, ojcostwo, początkujący)"
         ]
       },
       "interactions": [
-        "Kabergolina E3D",
-        "Baza testosteronu OBOWIĄZKOWA",
-        "PCT ostatnia iniekcja Hex +21 dni"
-      ],
+        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY",
+        "Stack z bazą testosteronu OBOWIĄZKOWY",
+        "PCT od ostatniej iniekcji Enan +14-21 dni (długi wash-out)"
+      ]
+    },
+    {
+      "id": "hex",
+      "routeId": "hex",
+      "routeLabel": {
+        "hu": "Trenbolone Hexahydrobenzylcarbonate (Parabolan, közepes észter)",
+        "en": "Trenbolone Hexahydrobenzylcarbonate (Parabolan, medium ester)",
+        "pl": "Trenbolon Hexahydrobenzylcarbonate (Parabolan, średni ester)"
+      },
+      "routeNote": {
+        "hu": "Egyetlen Tren-észter ami valaha humán Rx-en kapható volt (Negma Parabolan 1980-1997 EU, cachexia-Rx). Közepes felezés (~14 nap) ⇒ heti 1-2 injekció, steady-state 2-3 hét. Modern UGL azonos kategoria mint Ace/Enan, csak a 'Parabolan' historikus presztízs marad. PIP közepes-enyhe.",
+        "en": "The only Tren ester that was ever human-Rx (Negma Parabolan 1980-1997 EU, cachexia indication). Medium half-life (~14 days) ⇒ once/twice weekly injection, steady-state 2-3 weeks. Modern UGL is the same category as Ace/Enan, only the 'Parabolan' historical prestige remains. PIP medium-mild.",
+        "pl": "Jedyny ester Tren, który kiedykolwiek był na receptę u ludzi (Negma Parabolan 1980-1997 EU, wskazanie kacheksja). Średni okres półtrwania (~14 dni) ⇒ iniekcja raz lub dwa razy w tygodniu, stan stacjonarny 2-3 tygodnie. Współczesne UGL to ta sama kategoria co Ace/Enan, pozostaje tylko historyczny prestiż 'Parabolan'. PIP średnie-łagodne."
+      },
+      "image": "/performance/oil-vial-orange.png",
+      "halfLife": "~14 dni (ester Hexahydrobenzylkarbonianu)",
+      "halfLifeActive": "~24 h wolny Trenbolon (średnie uwalnianie depotu Parabolan)",
+      "bioavailability": "~95% (IM, średnia hydroliza estru Hexahydro)",
+      "onsetTime": {
+        "hu": "1 hét (steady-state 2-3 hét)",
+        "en": "1 week (steady-state 2-3 weeks)",
+        "pl": "1 tydzień (stan stacjonarny 2-3 tygodnie)"
+      },
+      "dosing": {
+        "hu": "150-300 mg/hét IM, heti 1-2x. 8-10 hét ciklus. PCT utolsó injekció +21 nap. Cabergoline + Testosterone-base KÖTELEZŐ.",
+        "en": "150-300 mg/week IM, 1-2× weekly. 8-10 week cycle. PCT starts last injection +21 days. Cabergoline + Testosterone-base MANDATORY.",
+        "pl": "150-300 mg/tydzień IM, 1-2× w tygodniu. 8-10 tygodni cyklu. PCT od ostatniej iniekcji +21 dni. Cabergolina + Testosteron-baza OBOWIĄZKOWE."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": {
@@ -327,9 +381,41 @@ export default {
           "medium": 225,
           "high": 300
         },
-        "unit": "mg/tydzień (IM, tygodniowo 1-2x)",
-        "note": "150-300 mg/tydzień, tygodniowo 1-2x. 8-10 tygodni cyklu. PCT ostatnia iniekcja +21 dni. 'Parabolan' ma historyczny prestiż — iluzja jakości Rx Negma, nowoczesny UGL ta sama kategoria co Tren-Ace/Enan."
-      }
+        "unit": "mg/tydzień",
+        "note": {
+          "hu": "150-300 mg/hét, heti 1-2x. 8-10 hét ciklus. PCT utolsó injekció +21 nap. 'Parabolan' historikus presztízs — modern UGL azonos kategoria mint Tren-Ace/Enan.",
+          "en": "150-300 mg/week, 1-2× weekly. 8-10 week cycle. PCT starts last injection +21 days. 'Parabolan' historical prestige — modern UGL same category as Tren-Ace/Enan.",
+          "pl": "150-300 mg/tydzień, 1-2× w tygodniu. 8-10 tygodni cyklu. PCT od ostatniej iniekcji +21 dni. 'Parabolan' historyczny prestiż — współczesne UGL ta sama kategoria co Tren-Ace/Enan."
+        }
+      },
+      "defaultVialMg": 1000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 225000,
+      "hepatotoxicity": "low-moderate",
+      "aromatization": "none",
+      "androgenicRatio": "500:500",
+      "legalStatus": "Negma Laboratories Parabolan 1980-1997 UE Rx (Rx kacheksji), wycofany od 1997. Nowoczesny tylko UGL. Zakazany WADA.",
+      "detectionWindow": "W moczu: 5-6 miesięcy (metabolit Trenbolonu, podobny do Enan).",
+      "quality": {
+        "pure": [
+          "Negma Parabolan 76 mg/ml ampułka (HISTORYCZNY Rx 1980-1997, dziś rzadkie-kolekcjonerskie z charakterystycznym pakowaniem ampułkowym)",
+          "UGL Tren-Hex 100 mg/ml głęboko pomarańczowa fiolka olejowa (HPLC-testowane źródło obowiązkowe)"
+        ],
+        "caution": [
+          "Iniekcja IM raz lub dwa razy w tygodniu (średni okres półtrwania)",
+          "PIP średni-łagodny (bardziej korzystny niż Ace, ale wyższy niż Enan)",
+          "Klasyczny 'Parabolan' historyczny prestiż na rynku UGL ⇒ WYSOKIE ryzyko podróbek (źródło testowane laboratoryjnie krytyczne)",
+          "Skutki uboczne Tren identyczne (kreatynina, prolaktyna, ciśnienie krwi)"
+        ],
+        "avoid": [
+          "Standardowe przeciwwskazania Tren te same (nerkowe, sercowo-naczyniowe, ojcostwo, początkujący, niestabilność psychiczna)"
+        ]
+      },
+      "interactions": [
+        "Kabergolina 0,25-0,5 mg E3D monitor prolaktyny OBOWIĄZKOWY",
+        "Stack z bazą testosteronu OBOWIĄZKOWY",
+        "PCT od ostatniej iniekcji Hex +21 dni"
+      ]
     }
   ],
   "defaultVariant": "ace",

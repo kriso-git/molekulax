@@ -12,57 +12,69 @@ export default {
   "keyInfo": [
     {
       "label": "Mechanizm",
-      "value": "Agonista AR, 17α-alkilowany"
+      "value": "Agonista AR, 17α-alkilowany, aromatyzuje"
     },
     {
       "label": "Okres półtrwania",
-      "value": "3-6 godzin"
+      "value": "3-6 godzin (doustnie) / 1-2 doby (olej)"
     },
     {
-      "label": "Stosunek",
-      "value": "210:60"
+      "label": "Stosunek anaboliczny:androgenny",
+      "value": "40-60:90-210 (testosteron=100:100)"
     },
     {
       "label": "Status prawny",
-      "value": "USA: Schedule III."
+      "value": "USA: Schedule III. UE: ograniczony Rx. WADA: zakazany."
     }
   ],
   "mechanism": "17α-alkilowany agonista AR. Aromataza konwertuje do E2 ORAZ do 17α-metyloestradiolu (ten ostatni niezwykle potentny, oporny na anastrozol metabolit → wysokie ryzyko ginekomastii nawet na AI). 5α-reduktaza minimalnie tworzy metabolit podobny do DHT. Wewnątrzkomórkowa synteza glikogenu plus volumizacja jako pośrednie sygnały anaboliczne (aktywacja mTOR).",
-  "legalStatus": "USA: Schedule III. UE: nielegalny. WADA: zakazany.",
-  "onsetTime": "3-7 days",
-  "halfLife": "3-6 h",
+  "legalStatus": "USA: Schedule III. UE: nielegalny bez recepty. WADA: zakazany.",
+  "onsetTime": "3-7 dni",
+  "halfLife": "3-6 h (doustnie)",
+  "androgenicRatio": "40-60:90-210",
   "interactionsWith": [
     "aromatase inhibitors",
     "alcohol",
     "NSAIDs"
   ],
-  "aromatization": "Tak — umiarkowane-wysokie powinowactwo do CYP19; \"wet gains\" (retencja wody, ginekomastia) częste, inhibitor aromatazy konieczny w długich cyklach (Schänzer 1996)",
-  "hepatotoxicity": "Wysoka — 17α-alkilowany, zależny od dawki wzrost ALT/AST; cholestatyczne zapalenie wątroby i peliosis hepatis rzadkie ciężkie przypadki (Hartgens-Kuipers 2004)",
+  "aromatization": "high",
+  "hepatotoxicity": "high",
   "wadaStatus": "banned",
-  "androgenicRatio": "210:60",
   "benefits": [
-    "Szybki przyrost + retencja",
-    "Wzrost siły w \"kickstart\"",
-    "Podniesienie nastroju (dopaminergiczne + estrogenowe): częste doniesienia w fazie \"kickstart\", euforia + wzrost motywacji treningowej"
+    "Szybki przyrost masy + retencja wody (3-5 kg / 4 tygodnie)",
+    "Wzrost siły w fazie \"kickstart\"",
+    "Poprawa nastroju (dopaminergiczne + estrogenowe): częste doniesienia w fazie \"kickstart\", euforia i wzrost motywacji treningowej"
   ],
   "studies": [
     {
-      "title": "Methandrostenolone effects on body composition and strength",
+      "title": "Effects of methandienone on the performance and body composition of men undergoing athletic training",
       "authors": "Hervey GR, Knibbs AV, Burkinshaw L et al.",
-      "journal": "Clin Sci. 1981;60(4):457-461.",
-      "pmid": "6263593"
+      "journal": "Clin Sci (Lond). 1981;60(4):457-461.",
+      "pmid": "7018798"
     },
     {
-      "title": "Cholestatic hepatitis associated with methandrostenolone",
-      "authors": "Søe KL, Søe M, Gluud C.",
-      "journal": "Pharmacol Toxicol. 1992;70(4):293-294.",
-      "pmid": "1502619"
+      "title": "Distinct phenotype of hepatotoxicity associated with illicit use of anabolic androgenic steroids",
+      "authors": "Robles-Diaz M, Gonzalez-Jimenez A, Medina-Caliz I et al.",
+      "journal": "Aliment Pharmacol Ther. 2015;41(1):116-125.",
+      "pmid": "25394890"
     },
     {
       "title": "Anabolic steroid cardiovascular toxicity",
       "authors": "Baggish AL, Weiner RB, Kanayama G et al.",
       "journal": "Circulation. 2017;135(21):1991-2002.",
       "pmid": "28533317"
+    },
+    {
+      "title": "Effects of androgenic-anabolic steroids in athletes",
+      "authors": "Hartgens F, Kuipers H.",
+      "journal": "Sports Med. 2004;34(8):513-554.",
+      "pmid": "15248788"
+    },
+    {
+      "title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement",
+      "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.",
+      "journal": "Endocr Rev. 2014;35(3):341-375.",
+      "pmid": "24423981"
     }
   ],
   "related": [
@@ -77,43 +89,47 @@ export default {
       "medium": 30,
       "high": 50
     },
-    "unit": "mg/nap",
-    "note": "\"Kickstart\" 4-6 tygodni. 2-3 dawki dziennie. Inhibitor aromatazy często wymagany. TUDCA 500-750 mg/dzień."
+    "unit": "mg/dzień",
+    "note": "\"Kickstart\" 4-6 tygodni z dłuższymi AAS iniekcyjnymi. 2-3 dawki dziennie ze względu na krótki okres półtrwania (3-6 h). Inhibitor aromatazy (anastrozol 0,5 mg EOD) często wymagany. TUDCA 500-750 mg/dzień ochrona wątroby."
   },
   "bloodwork": {
     "preCycle": {
       "label": "Przed cyklem",
       "timing": "2 tygodnie przed",
-      "markers": "Priorytet wątrobowy + reszta.",
-      "purpose": "Baseline wątroby krytyczny."
+      "markers": "Priorytet wątrobowy: ALT, AST, GGT, bilirubina, INR. Plus: lipidy, panel hormonalny, E2, nerki.",
+      "purpose": "Baseline wątroby krytyczny. Podwyższone ALT/AST = przeciwwskazanie."
     },
     "midCycle": {
-      "label": "W trakcie",
+      "label": "W trakcie cyklu",
       "timing": "Tydzień 2-3",
-      "markers": "ALT, AST, GGT, bilirubina, lipidogram, E2, ciśnienie.",
-      "purpose": "ALT/AST >3x = przerwanie. Wzrost E2 = AI."
+      "markers": "ALT, AST, GGT, bilirubina, lipidogram (drastyczny spadek HDL), E2, ciśnienie krwi.",
+      "purpose": "ALT/AST >3x = przerwanie cyklu. Wzrost E2 = AI (anastrozol 0,5 mg EOD)."
     },
     "postCycle": {
       "label": "PCT",
       "timing": "PCT tydzień 4 + 8-12",
-      "markers": "Total T, LH, FSH, E2, recovery wątroby i lipidów.",
-      "purpose": "Weryfikacja recovery."
+      "markers": "Total T, Free T, LH, FSH, E2, recovery wątroby i lipidów.",
+      "purpose": "Weryfikacja recovery HPTA i wątroby."
     },
     "cruise": null
   },
+  "defaultVariant": "oral",
   "variants": [
     {
+      "id": "oral",
       "routeId": "oral",
       "routeLabel": "Methandrostenolone doustny (tabletka)",
+      "routeNote": "Klasyczny format: tabletka 17α-metylowa z ~3-6 h okresem półtrwania, szybki szczyt osoczowy w ciągu 1-2 godzin. Zalecane dawkowanie podzielone 2-3x dziennie dla utrzymania stabilnych poziomów. Wysoki stres first-pass wątroby — TUDCA + NAC obowiązkowe. Najszerzej zbadana i stosowana forma Dianabolu.",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: FDA Rx (Ciba 1958, wycofany 1983); Schedule III. UE: dominacja rynku UGL, nielegalny bez recepty. Zakaz WADA.",
       "bioavailability": "~80% (doustnie, 17α-metyl oporny na first-pass)",
       "onsetTime": "1-2 h (doustnie, szybkie wchłanianie)",
-      "halfLife": "5 godzin (doustnie, związek macierzysty)",
+      "halfLife": "3-6 h (doustnie, związek macierzysty)",
       "halfLifeActive": "5 h",
-      "detectionWindow": "3-6 tygodni w moczu (macierzysty + długoterminowe metabolity Schänzer 2006 6β-OH-metandienon).",
-      "aromatization": "Tak — substrat CYP19, klinicznie silna konwersja E2 (Pope-Kanayama 2014).",
-      "hepatotoxicity": "Wysoka — stres first-pass wątrobowy 17α-metyl, wzrost ALT/AST 3-5x częsty przy cyklu 4+ tygodni.",
+      "detectionWindow": "3-6 tygodni w moczu (macierzysty + długoterminowe metabolity 6β-OH-metandienon).",
+      "aromatization": "high",
+      "hepatotoxicity": "high",
+      "dosing": "Typowa dawka 20-50 mg/dzień, podzielona 2-3x dziennie (rano, w południe, opcjonalnie przed treningiem). Początkujący: 20-25 mg/dzień. Zaawansowani: 30-40 mg/dzień. Maksymalnie 50 mg/dzień; cykle powyżej 6 tygodni niezalecane.",
       "quality": {
         "pure": [
           "Klarowna biała oznaczona tabletka (5 mg lub 10 mg klasyczny dosing UGL)",
@@ -123,11 +139,11 @@ export default {
           "Hepatotoksyczność (wzrost ALT/AST 3-5x)",
           "Retencja wody + ryzyko ginekomastii (silna aromatyzacja)",
           "Wzrost ciśnienia krwi (retencja wody + AKI nerek)",
-          "Zaburzenia lipidowe dramatyczne: HDL do 50% spadek"
+          "Zaburzenia lipidowe dramatyczne: HDL do 50% spadku"
         ],
         "avoid": [
-          "Jakiekolwiek istniejące zaburzenia wątroby bezwzględne przeciwwskazanie",
-          "Jednoczesny alkohol, NSAID, paracetamol ściśle zakazane",
+          "Jakiekolwiek istniejące zaburzenia wątroby — bezwzględne przeciwwskazanie",
+          "Jednoczesny alkohol, NSAID, paracetamol — ściśle zakazane",
           "Więcej niż 6 tygodni ciągłego cyklu",
           "Stosowanie przez kobiety (wirylizacja)"
         ]
@@ -136,7 +152,7 @@ export default {
         "Anastrozol 0,5 mg EOD lub E3D: kontrola E2 obowiązkowa",
         "Nolvadex (SERM) 20 mg/dzień w gotowości na zapobieganie ginekomastii",
         "TUDCA 1000 mg/dzień + NAC 1800 mg/dzień obowiązkowe",
-        "PCT (Clomid + Nolvadex 4 tygodnie) ostatnia tabletka +1-2 dni"
+        "PCT (Clomid + Nolvadex 4 tygodnie) po ostatniej tabletce +1-2 dni"
       ],
       "doseCalc": {
         "type": "fixed",
@@ -146,56 +162,61 @@ export default {
           "high": 50
         },
         "unit": "mg/dzień (doustnie, 2-3x podzielone)",
-        "note": "Maks 6 tygodni cyklu. 20-50 mg/dzień, 2-3x podzielone (5h okres półtrwania). TUDCA + NAC obowiązkowe. PCT 4 tygodnie."
+        "note": "Maks 6 tygodni cyklu. 20-50 mg/dzień, 2-3x podzielone (3-6h okres półtrwania). TUDCA + NAC obowiązkowe. PCT 4 tygodnie."
       }
     },
     {
+      "id": "oil",
       "routeId": "oil",
       "routeLabel": "Methandrostenolone w oleju (IM, UGL)",
+      "routeNote": "Rzadki, alternatywny format (zawiesina typu \"Reforvit-B\"). Omija wątrobowy metabolizm first-pass → nieco niższa, ale NIE zerowa hepatotoksyczność (grupa 17α-metylowa powoduje hepatotoksyczność wewnętrzną nawet bez first-pass). Bardziej stabilne poziomy osoczowe przy dawkowaniu EOD. Notorycznie bolesna iniekcja; wyłącznie źródło UGL.",
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Nie licencjonowany format — wyłącznie underground UGL. Wszędzie nielegalny. Zakaz WADA.",
+      "legalStatus": "Format nielicencjonowany — wyłącznie underground UGL. Wszędzie nielegalny. Zakaz WADA.",
       "bioavailability": "~95-100% (IM pomija first-pass; methandrostenolone zawieszony w oleju z powolną absorpcją depot)",
       "onsetTime": "12-24 h (IM, kinetyka depot)",
-      "halfLife": "1-2 dni (zawiesina w oleju; nieestryfikowany methandrostenolone)",
-      "halfLifeActive": "1-2 dni",
+      "halfLife": "1-2 doby (zawiesina w oleju; nieestryfikowany methandrostenolone)",
+      "halfLifeActive": "1-2 doby",
       "detectionWindow": "4-6 tygodni w moczu (dłuższe niż doustnie ze względu na absorpcję depot).",
-      "aromatization": "Tak — strukturalnie taki sam jak doustnie; poziom aromatyzacji identyczny.",
-      "hepatotoxicity": "Umiarkowana — nie zero ze względu na grupę 17α-metylową, ale unikanie first-pass redukuje peak hepatic koncentracji. Profil podobny do Superdrol iniekcyjny (Pope-Kanayama 2014 ekstrapolowane dane klasy c17-AA iniekcyjnych).",
+      "aromatization": "high",
+      "hepatotoxicity": "moderate-high",
+      "dosing": "Typowa dawka 50 mg EOD (co drugi dzień) z fiolki 10 ml 50 mg/ml. Niektórzy użytkownicy stosują 75-100 mg EOD. Maksymalnie 8 tygodni cyklu. Wymagana ścisła aseptyczna technika iniekcji.",
+      "defaultVialMg": 500,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 50000,
       "quality": {
         "pure": [
-          "Klarowny żółtawy olej, fiolka 10 ml, sterylnie filtrowana, 50-75 mg/ml koncentracja UGL",
-          "Źródło UGL testowane HPLC OBOWIĄZKOWE"
+          "Klarowny żółtawy olej, fiolka 10 ml, sterylnie filtrowana, 50 mg/ml koncentracja UGL",
+          "Źródło UGL testowane HPLC — OBOWIĄZKOWE"
         ],
         "caution": [
           "PIP (ból w miejscu wstrzyknięcia) częsty, methandrostenolone-w-oleju notorycznie bolesny",
           "Zaburzenia lipidowe dramatyczne: spadek HDL taki sam jak doustnie",
           "Retencja wody + ryzyko ginekomastii (aromatyzacja niezmieniona)",
-          "Hepatotoksyczność zredukowana ALE nie zero"
+          "Hepatotoksyczność zredukowana ALE nie zerowa — TUDCA obowiązkowe"
         ],
         "avoid": [
           "Silna wrażliwość w miejscu wstrzyknięcia",
-          "Jakiekolwiek zaburzenia wątroby (umiarkowana hepatotoksyczność)",
+          "Jakiekolwiek zaburzenia wątroby (umiarkowana-wysoka hepatotoksyczność)",
           "Brak aseptycznej techniki iniekcji (ryzyko ropnia)",
           "Więcej niż 8 tygodni cyklu"
         ]
       },
       "interactions": [
         "Anastrozol 0,5 mg E3D: kontrola E2",
-        "TUDCA 500 mg/dzień zalecany (ze względu na umiarkowaną hepatotoksyczność)",
+        "TUDCA 500-750 mg/dzień obowiązkowe (umiarkowana-wysoka hepatotoksyczność)",
         "PCT start ostatnia iniekcja +5-7 dni"
       ],
       "doseCalc": {
         "type": "fixed",
         "fixed": {
           "low": 50,
-          "medium": 100,
-          "high": 150
+          "medium": 75,
+          "high": 100
         },
-        "unit": "mg/tydzień (IM, podzielone 2-3x)",
-        "note": "Maks 8 tygodni cyklu. 50-150 mg/tydzień, 2-3x podzielone (krótki okres półtrwania mimo depot). TUDCA zalecany. PCT 4 tygodnie ostatnia iniekcja +5-7 dni."
+        "unit": "mg/inj (EOD, IM)",
+        "note": "Maks 8 tygodni cyklu. 50-100 mg/inj EOD. TUDCA 500-750 mg/dzień obowiązkowe. PCT 4 tygodnie, ostatnia iniekcja +5-7 dni."
       }
     }
   ],
-  "defaultVariant": "oral",
   "anecdote": "Dianabol ma niemal legendarny status w tradycji AAS. Użytkownicy często zgłaszają bardzo szybką zmianę w pełności, dźwigni, regeneracji i wynikach na siłowni w zaskakująco krótkich ramach czasowych. Cechą charakterystyczną jest to, jak 'anabolicznie' się go odczuwa — dość oczywiście, nie subtelnie. Siła zazwyczaj szybko rośnie wraz z dramatycznymi efektami pompy i wolumizacji. Wiele z tego, co potocznie nazywa się 'wodą', to faktycznie wewnątrzmięśniowy glikogen i nawodnienie komórek, co nie jest równoważne bezsensownemu wzdęciu i samo może przyczyniać się do sygnalizacji anabolicznej. Doniesienia społeczności wskazują na nieproporcjonalny wpływ Dianabolu na rozpęd treningowy — bardziej produktywne sesje, szybsza regeneracja i wynikający z tego skumulowany wzrost. Apetyt również często rośnie. Kompromisy są znaczące: zauważalne efekty estrogenowe (ginekomastia, retencja wody), podwyższone ciśnienie krwi, zaburzenia lipidowe i obciążenie wątroby 17α-alkilowane. Niektóre relacje i pojawiające się dowody sugerują, że Dianabol metabolizuje się do niezwykle silnego metabolitu estrogenowego, co warto mieć na uwadze przy planowaniu wsparcia AI/SERM."
 }

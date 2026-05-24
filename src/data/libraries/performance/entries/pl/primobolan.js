@@ -1,8 +1,8 @@
 // Phase C multi-variant entry (oral Acetate + injectable Enanthate). Sources:
 // Bayer Primobolan Depot SmPC (DE/ES), Schering AG historical literature
 // (Methenolone acetate 1962, Methenolone enanthate Primobolan Depot 1962),
-// Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599,
-// Schänzer 1996 PMID 8616181 (detection).
+// Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15248788,
+// Schänzer 1996 PMID 8674183 (detection).
 
 export default {
   "id": "primobolan",
@@ -46,11 +46,11 @@ export default {
     "warfarin"
   ],
   "aromatization": "Nie — struktura 1-metylo-DHT, NIE substrat CYP19 dla żadnego estru; klinicznie nie oczekiwany wzrost E2 (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma enantatowa iniekcyjna ma minimalny stres wątrobowy. Doustny octan również tylko łagodny, bo grupa 1-metylowa nie jest 17α (tylko 1-metyl zapewnia doustną stabilność), ALE wysoka dawka (50-100 mg/dzień) wymaga monitoringu (Hartgens-Kuipers 2004 PMID 15233599)",
+  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma enantatowa iniekcyjna ma minimalny stres wątrobowy. Doustny octan również tylko łagodny, bo grupa 1-metylowa nie jest 17α (tylko 1-metyl zapewnia doustną stabilność), ALE wysoka dawka (50-100 mg/dzień) wymaga monitoringu (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "88:44",
   "bindingAffinity": "Umiarkowane powinowactwo do AR (~28% vs testosteron in vitro). Wysokie powinowactwo do SHBG (strukturalny analog DHT) → pośredni wzrost wolnego T.",
-  "detectionWindow": "Metabolity methenolonu (rodzina metabolitów 1-metylo-5α-androstan-3-on) w moczu: doustny octan 4-5 tygodni, iniekcyjny enantat 4-6 miesięcy (Schänzer 1996 PMID 8616181). Akredytowane WADA GC-MS i LC-MS/MS.",
+  "detectionWindow": "Metabolity methenolonu (rodzina metabolitów 1-metylo-5α-androstan-3-on) w moczu: doustny octan 4-5 tygodni, iniekcyjny enantat 4-6 miesięcy (Schänzer 1996 PMID 8674183). Akredytowane WADA GC-MS i LC-MS/MS.",
   "benefits": [
     "Naczyniowy, twardy estetyczny wygląd (niska retencja wody)",
     "NIE aromatyzuje → brak efektów ubocznych E2",
@@ -115,13 +115,13 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Metabolism of anabolic androgenic steroids",
       "authors": "Schänzer W.",
       "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "pmid": "8674183"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",
@@ -193,17 +193,51 @@ export default {
   },
   "variants": [
     {
+      "id": "ac-oral",
       "routeId": "ac-oral",
-      "routeLabel": "Methenolone Octan (tabletka doustna)",
+      "routeLabel": {
+        "hu": "Methenolone Acetate (Primobolan-Ac, orális tabletta)",
+        "en": "Methenolone Acetate (Primobolan-Ac, oral tablet)",
+        "pl": "Methenolon Acetate (Primobolan-Ac, tabletka doustna)"
+      },
+      "routeNote": {
+        "hu": "Klasszikus 'kozmetikai' AAS orális ága — alacsony hepatotoxicitás (NEM 17α-alkilált), nincs aromatizáció (1-metil-DHT). Hátulütő: alacsony orális bioavailability (~6%) miatt magas napi dózis kell (50-100 mg = 5-10 tabletta). A leggyakrabban hamisított AAS-tabletta (Anavar/Winstrol helyettesítés) — HPLC-tesztelés ABSZOLÚT KÖTELEZŐ. Női-barát alacsony dózisban (5-10 mg/nap).",
+        "en": "The oral arm of the classic 'cosmetic' AAS — low hepatotoxicity (NOT 17α-alkylated), no aromatization (1-methyl-DHT). Drawback: low oral bioavailability (~6%) requires high daily dose (50-100 mg = 5-10 tablets). The most commonly counterfeited AAS tablet (Anavar/Winstrol substitution) — HPLC testing ABSOLUTELY MANDATORY. Female-friendly at low doses (5-10 mg/day).",
+        "pl": "Doustna część klasycznego 'kosmetycznego' AAS — niska hepatotoksyczność (NIE 17α-alkilowany), brak aromatyzacji (1-metyl-DHT). Wada: niska biodostępność doustna (~6%) wymaga wysokiej dawki dziennej (50-100 mg = 5-10 tabletek). Najczęściej podrabiana tabletka AAS (substytut Anavar/Winstrol) — testowanie HPLC ABSOLUTNIE OBOWIĄZKOWE. Przyjazna dla kobiet w niskich dawkach (5-10 mg/dzień)."
+      },
       "image": "/performance/tablet-pile-white.png",
-      "legalStatus": "Wycofany Rx wszędzie; dostępny tylko na rynku UGL. UE/HU/PL/USA: nielegalny bez recepty, zakaz WADA.",
-      "bioavailability": "~6% (niska — ester octanowy szybko hydrolizowany w żyle wrotnej, następnie metabolizm wątrobowy macierzystego methenolonu; stąd wysokie zapotrzebowanie na dawkę)",
-      "onsetTime": "1-2 h (doustnie, szybkie wchłanianie)",
       "halfLife": "4-6 h (macierzysty methenolon, brak aktywnego metabolitu)",
       "halfLifeActive": "4-6 h",
-      "detectionWindow": "4-5 tygodni w moczu (krótsze niż enantat, szybki klirens). Akredytowane WADA GC-MS i LC-MS/MS.",
-      "aromatization": "Nie — struktura 1-metylo-DHT, NIE substrat CYP19; klinicznie nie oczekiwany wzrost E2.",
-      "hepatotoxicity": "Niska-umiarkowana — NIE 17α-alkilowany, ale wysokie zapotrzebowanie na dawkę (50-100 mg/dzień) powoduje łagodny wzrost ALT/AST; klinicznie znacznie łagodniejszy niż Anavar czy Dianabol.",
+      "bioavailability": "~6% (niska — ester octanowy szybko hydrolizowany w żyle wrotnej, następnie metabolizm wątrobowy macierzystego methenolonu; stąd wysokie zapotrzebowanie na dawkę)",
+      "onsetTime": {
+        "hu": "1-2 h (orális, fast-absorption)",
+        "en": "1-2 h (oral, fast-absorption)",
+        "pl": "1-2 h (doustnie, szybkie wchłanianie)"
+      },
+      "dosing": {
+        "hu": "50-100 mg/nap, 2-3x osztva (rövid felezés). Tipikus cutting dózis 75 mg/nap, max 100 mg/nap. Ciklus max 8 hét. Női dózis 5-10 mg/nap maximum (virilizációs küszöb).",
+        "en": "50-100 mg/day, split 2-3× (short half-life). Typical cutting dose 75 mg/day, max 100 mg/day. Cycle max 8 weeks. Female dose 5-10 mg/day maximum (virilization threshold).",
+        "pl": "50-100 mg/dzień, podzielone 2-3× (krótki okres półtrwania). Typowa dawka cięcia 75 mg/dzień, maks 100 mg/dzień. Cykl maks 8 tygodni. Dawka dla kobiet maks 5-10 mg/dzień (próg wirylizacji)."
+      },
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
+        "unit": "mg/dzień",
+        "note": {
+          "hu": "50-100 mg/nap, 2-3x osztott (rövid felezés). Max 8 hét ciklus. TUDCA 500 mg/nap opcionális (alacsony hepatotoxicitás). Női dózis max 5-10 mg/nap. PCT utolsó tabletta +1-2 nap.",
+          "en": "50-100 mg/day, 2-3× split (short half-life). Max 8 week cycle. TUDCA 500 mg/day optional (low hepatotoxicity). Female dose max 5-10 mg/day. PCT starts last tablet +1-2 days.",
+          "pl": "50-100 mg/dzień, podzielone 2-3× (krótki okres półtrwania). Cykl maks 8 tygodni. TUDCA 500 mg/dzień opcjonalnie (niska hepatotoksyczność). Dawka dla kobiet maks 5-10 mg/dzień. PCT od ostatniej tabletki +1-2 dni."
+        }
+      },
+      "hepatotoxicity": "low-moderate",
+      "aromatization": "none",
+      "androgenicRatio": "88:44",
+      "legalStatus": "Wycofany Rx wszędzie; dostępny tylko na rynku UGL. UE/HU/PL/USA: nielegalny bez recepty, zakaz WADA.",
+      "detectionWindow": "W moczu: 4-5 tygodni (krótsze niż enantat, szybki klirens). Akredytowane WADA GC-MS i LC-MS/MS.",
       "quality": {
         "pure": [
           "Klarowna biała, oznaczona tabletka (25 mg lub 50 mg częsty dosing UGL)",
@@ -211,9 +245,9 @@ export default {
         ],
         "caution": [
           "Wysoka dzienna dawka (50-100 mg/dzień) — często 5-10 tabletek rozłożonych w ciągu dnia",
-          "Przyspieszenie wypadania włosów w alopecji androgenowej",
+          "Przyspieszenie wypadania włosów w alopecji androgenowej (pochodna DHT)",
           "Zaburzenia lipidowe: spadek HDL (umiarkowany)",
-          "Koszt: dzienny koszt Ac doustnego 5-15 EUR w zależności od jakości UGL"
+          "Koszt: dzienny koszt Ac doustnego 5-15 EUR w zależności od jakości UGL — droższy niż wiele innych doustnych AAS"
         ],
         "avoid": [
           "Jakiekolwiek istniejące podwyższenie ALT/AST (forma doustna ze względu na wysokie zapotrzebowanie na dawkę)",
@@ -226,34 +260,61 @@ export default {
         "Test-Prop stack: dopasowanie okresu półtrwania estru, iniekcja EOD Test + dzienny Primo-Ac",
         "Anavar stack: połączona kombinacja doustna 17α-alkilowana + 1-metylo, stres wątrobowy rośnie",
         "PCT (Clomid + Nolvadex 4 tygodnie) start ostatnia tabletka +1-2 dni"
-      ],
+      ]
+    },
+    {
+      "id": "enan-oil",
+      "routeId": "enan-oil",
+      "routeLabel": {
+        "hu": "Methenolone Enanthate (Primobolan Depot, IM olajos)",
+        "en": "Methenolone Enanthate (Primobolan Depot, IM oil)",
+        "pl": "Methenolon Enanthate (Primobolan Depot, IM olejowy)"
+      },
+      "routeNote": {
+        "hu": "A kozmetikai AAS preferált formája — IM bypass-olja a first-pass-t ⇒ a legalacsonyabb hepatotoxicitású AAS-ek egyike, női-barát low-dose mellett is. ~5-7 napos felezés ⇒ heti 1-2 injekció, steady-state 3-4 hét. Extra hosszú detection window (4-6 hó) — WADA-tesztelt versenyzőnek tilos. Bayer Primobolan Depot ár: feketepiacon 150-250 EUR/ml (extrém drága) — UGL alternatíva gyakori, de hamisítás magas.",
+        "en": "The preferred form of the cosmetic AAS — IM bypasses first-pass ⇒ one of the lowest-hepatotoxicity AAS, female-friendly even at low dose. ~5-7 day half-life ⇒ once/twice weekly injection, steady-state 3-4 weeks. Extra-long detection window (4-6 months) — forbidden for WADA-tested athletes. Bayer Primobolan Depot price: 150-250 EUR/ml on the black market (extremely expensive) — UGL alternative common, but counterfeiting is high.",
+        "pl": "Preferowana forma kosmetycznego AAS — IM omija first-pass ⇒ jeden z AAS o najniższej hepatotoksyczności, przyjazny dla kobiet nawet w niskich dawkach. ~5-7-dniowy okres półtrwania ⇒ iniekcja raz/dwa razy w tygodniu, stan stacjonarny 3-4 tygodnie. Bardzo długie okno detekcji (4-6 miesięcy) — zakazany dla sportowców testowanych WADA. Cena Bayer Primobolan Depot: 150-250 EUR/ml na czarnym rynku (bardzo drogo) — alternatywa UGL powszechna, ale podróbki są wysokie."
+      },
+      "image": "/performance/oil-vial-yellow.png",
+      "halfLife": "5-7 dni (Enantat ester; wolny methenolon t½ ~24 h po hydrolizie)",
+      "halfLifeActive": "~24 h (depot-driven)",
+      "bioavailability": "~95-100% (iniekcja IM pomija first-pass; enantat ester powolna hydroliza ~5-7 dni)",
+      "onsetTime": {
+        "hu": "48-72 h (IM, enantát slow-acting; steady-state 3-4 hét)",
+        "en": "48-72 h (IM, enanthate slow-acting; steady-state 3-4 weeks)",
+        "pl": "48-72 h (IM, enantat wolno działający; stan stacjonarny 3-4 tygodnie)"
+      },
+      "dosing": {
+        "hu": "300-700 mg/hét IM, heti 1-2x. Tipikus cutting dózis 400-500 mg/hét. Minimum 10 hét ciklus a steady-state miatt. Női dózis 50-100 mg/hét maximum. PCT utolsó injekció +14-21 nap.",
+        "en": "300-700 mg/week IM, 1-2× weekly. Typical cutting dose 400-500 mg/week. Minimum 10 week cycle due to steady-state. Female dose 50-100 mg/week maximum. PCT starts last injection +14-21 days.",
+        "pl": "300-700 mg/tydzień IM, 1-2× w tygodniu. Typowa dawka cięcia 400-500 mg/tydzień. Minimum 10 tygodni cyklu z powodu stanu stacjonarnego. Dawka dla kobiet maks 50-100 mg/tydzień. PCT od ostatniej iniekcji +14-21 dni."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": {
-          "low": 50,
-          "medium": 75,
-          "high": 100
+          "low": 300,
+          "medium": 500,
+          "high": 700
         },
-        "unit": "mg/dzień (doustnie, 2-3x podzielone)",
-        "note": "Maksimum 8 tygodni cyklu. 50-100 mg/dzień, 2-3x podzielone dawki (krótki okres półtrwania). TUDCA 500 mg/dzień opcjonalny (niska hepatotoksyczność, ale bezpieczne ze względu na wysoką dawkę). Dawka dla kobiet maks. 5-10 mg/dzień. PCT 4 tygodnie ostatnia tabletka +1-2 dni."
-      }
-    },
-    {
-      "routeId": "enan-oil",
-      "routeLabel": "Methenolone Enantat (IM Depot)",
-      "image": "/performance/oil-vial-yellow.png",
+        "unit": "mg/tydzień",
+        "note": {
+          "hu": "300-700 mg/hét, heti 1-2x IM. Minimum 10 hét ciklus. TUDCA NEM szükséges (legalacsonyabb hepatotoxicitás). Női dózis max 50-100 mg/hét. PCT utolsó injekció +14-21 nap.",
+          "en": "300-700 mg/week, 1-2× weekly IM. Minimum 10 week cycle. TUDCA not required (lowest hepatotoxicity). Female dose max 50-100 mg/week. PCT starts last injection +14-21 days.",
+          "pl": "300-700 mg/tydzień, 1-2× w tygodniu IM. Minimum 10 tygodni cyklu. TUDCA niewymagana (najniższa hepatotoksyczność). Dawka dla kobiet maks 50-100 mg/tydzień. PCT od ostatniej iniekcji +14-21 dni."
+        }
+      },
+      "defaultVialMg": 1000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 500000,
+      "hepatotoxicity": "very-low",
+      "aromatization": "none",
+      "androgenicRatio": "88:44",
       "legalStatus": "Bayer Primobolan Depot DE/ES Rx (niedokrwistość, stany kataboliczne wcześniaków). UE/HU/PL: rzadko import-Rx, głównie UGL. Zakaz WADA.",
-      "bioavailability": "~95-100% (iniekcja IM pomija first-pass; enantat ester powolna hydroliza ~5-7 d)",
-      "onsetTime": "48-72 h (IM, enantat slow-acting; steady-state 3-4 tygodnie)",
-      "halfLife": "5-7 d (Enantat ester; wolny methenolon t½ ~24 h po hydrolizie)",
-      "halfLifeActive": "~24 h (depot-driven)",
-      "detectionWindow": "4-6 miesięcy w moczu (bardzo długie, ester enantatowy + rodzina metabolitów 1-metylowych). Akredytowane WADA GC-MS i LC-MS/MS.",
-      "aromatization": "Nie — struktura 1-metylo-DHT, NIE substrat CYP19.",
-      "hepatotoxicity": "Bardzo niska — steryd macierzysty, NIE 17α-alkilowany, forma IM pomija first-pass. Wśród najbezpieczniejszych profili wątrobowych AAS.",
+      "detectionWindow": "W moczu: 4-6 miesięcy (bardzo długie, ester enantatowy + rodzina metabolitów 1-metylowych). Akredytowane WADA GC-MS i LC-MS/MS.",
       "quality": {
         "pure": [
           "Bayer Primobolan Depot 100 mg/ml, ampułka 1 ml — autentyczne źródło z holograficznym oznaczeniem",
-          "Alternatywa UGL: klarowny żółtawo-złoty olej, fiolka 10 ml, testowany HPLC"
+          "Alternatywa UGL: klarowny żółtawo-złoty olej, fiolka 10 ml, testowane HPLC źródło obowiązkowe"
         ],
         "caution": [
           "Cena Bayer Depot: ~150-250 EUR/ml czarny rynek (skrajnie drogi)",
@@ -270,19 +331,9 @@ export default {
       },
       "interactions": [
         "Test-Enan stack: dopasowanie okresu półtrwania estru, tygodniowa 1-2x iniekcja",
-        "Tren-Enan stack: \"long-ester cutting\" 10-12 tygodni",
+        "Tren-Enan stack: 'long-ester cutting' 10-12 tygodni",
         "PCT (Clomid + Nolvadex 4-6 tygodni) start ostatnia iniekcja Enan +14-21 dni"
-      ],
-      "doseCalc": {
-        "type": "fixed",
-        "fixed": {
-          "low": 300,
-          "medium": 500,
-          "high": 700
-        },
-        "unit": "mg/tydzień (IM, podzielone 1-2x)",
-        "note": "Minimum 10 tygodni cyklu ze względu na steady-state. 300-700 mg/tydzień, tygodniowo 1-2x iniekcja. TUDCA / NAC NIE potrzebne (najniższy AAS hepatotoksyczności). Dawka dla kobiet maks. 50-100 mg/tydzień. PCT 4-6 tygodni od ostatniej iniekcji +14-21 dni."
-      }
+      ]
     }
   ],
   "defaultVariant": "enan-oil",

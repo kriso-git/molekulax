@@ -131,7 +131,6 @@ function deriveQuickStart(peptide, library, activeVariantId) {
  if (Array.isArray(peptide.quickStart) && peptide.quickStart.length > 0) {
  return peptide.quickStart.map((s, i) => {
  if (s && s.title && s.detail) return s
- // Flat I18nString → wrap with generic numbered title.
  return {
  step: i + 1,
  title: { hu: `${i + 1}. lépés`, en: `Step ${i + 1}`, pl: `Krok ${i + 1}` },
@@ -139,90 +138,87 @@ function deriveQuickStart(peptide, library, activeVariantId) {
  }
  })
  }
- if (library?.id !== 'peptides') {
+ const family = getRouteFamily(activeVariantId)
+
+ // Non-peptide libraries: only oral/inhaled/topical get defaults; sc/im/in fall through to null.
+ if (library?.id !== 'peptides' && family !== 'oral' && family !== 'inhaled' && family !== 'topical') {
  return null
  }
- // Intranasal spray default — different rituals than SC vial.
- // Triggers when the resolved variant's routeId is 'in'.
- if (activeVariantId === 'in') {
+
+ switch (family) {
+ case 'oral':
  return [
- {
- step: 1,
- title: { hu: 'Spray előkészítés', en: 'Spray priming', pl: 'Przygotowanie sprayu' },
- detail: {
- hu: 'Pre-mixed RU pharma esetén: 2–3 leszorítás a levegőbe első használat előtt. Research-chemical recon esetén: vial-tartalom átöntése spray-bottle-be.',
- en: 'Pre-mixed RU pharma: 2–3 priming sprays into air before first use. Research-chemical recon: transfer reconstituted vial contents to a sterile nasal spray bottle.',
- pl: 'Pre-mieszany RU pharma: 2–3 spraye próbne do powietrza przed pierwszym użyciem. Research-chemical: przenieść zawartość fiolki do sterylnej butelki sprayu.',
- },
- },
- {
- step: 2,
- title: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' },
- detail: {
- hu: 'Hűtőszekrényben (2–8°C), eredeti pumpás flakonban. Mindennapi adagoláshoz szobahőre meleg ítendő.',
- en: 'Refrigerated (2–8°C) in the original pump bottle. Bring to room temperature before daily dosing.',
- pl: 'W lodówce (2–8°C) w oryginalnej butelce z pompką. Doprowadzić do temperatury pokojowej przed dawkowaniem.',
- },
- },
- {
- step: 3,
- title: { hu: 'Beadás', en: 'Administration', pl: 'Podanie' },
- detail: {
- hu: 'Intranazális spray: 1–3 szippantás per orrlyuk, fej kissé előre döntve. Beadás után 1–2 percig ne fújd ki az orrod.',
- en: 'Intranasal spray: 1–3 sprays per nostril, head tilted slightly forward. Avoid blowing your nose for 1–2 minutes after.',
- pl: 'Spray donosowy: 1–3 spraye na nozdrze, głowa lekko pochylona do przodu. Nie wydmuchiwać nosa przez 1–2 min po podaniu.',
- },
- },
- {
- step: 4,
- title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
- detail: {
- hu: 'Orr-irritáció, szárazság vagy szubjektív hatáshiány esetén dózis-csökkentés vagy szünet.',
- en: 'Reduce dose or pause if nasal irritation, dryness, or lack of subjective effect occurs.',
- pl: 'Zmniejsz dawkę lub przerwij w przypadku podrażnienia, suchości nosa lub braku efektu.',
- },
- },
+ { step: 1, title: { hu: 'Adag bevétele', en: 'Take the dose', pl: 'Przyjęcie dawki' },
+ detail: { hu: 'Vízzel lenyeled éhgyomorra vagy étkezés közben (entry-specifikus, lásd dosing-szöveg).', en: 'Swallow with water on empty stomach or with food (entry-specific, see dosing note).', pl: 'Połknij z wodą na czczo lub z posiłkiem (zależnie od preparatu, patrz dawkowanie).' } },
+ { step: 2, title: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' },
+ detail: { hu: 'Eredeti blisterben, szobahőmérsékleten, fénytől védve.', en: 'Original blister, room temperature, protected from light.', pl: 'W oryginalnym blistrze, w temperaturze pokojowej, chronić przed światłem.' } },
+ { step: 3, title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
+ detail: { hu: 'GI-tünetek (hányinger, gyomorégés), májfunkció (orális AAS esetén 4-6 hetente AST/ALT/GGT/bilirubin).', en: 'GI symptoms (nausea, heartburn), liver function (oral AAS: AST/ALT/GGT/bilirubin every 4-6 weeks).', pl: 'Objawy GI (nudności, zgaga), funkcja wątroby (przy doustnych AAS: AST/ALT/GGT/bilirubina co 4-6 tygodni).' } },
+ { step: 4, title: { hu: 'Időzítés', en: 'Timing', pl: 'Timing' },
+ detail: { hu: 'A felezési idő szerint napi 1-3 részre osztva; konzisztens időzítés a stabil plazmaszintért.', en: 'Split into 1-3 daily doses based on half-life; consistent timing for stable plasma levels.', pl: 'Podzielić na 1-3 dawki dziennie wg okresu półtrwania; stałe godziny dla stabilnego poziomu w osoczu.' } },
+ ]
+
+ case 'inhaled':
+ return [
+ { step: 1, title: { hu: 'Inhalátor előkészítése', en: 'Inhaler preparation', pl: 'Przygotowanie inhalatora' },
+ detail: { hu: 'Inhalátor felrázása 5-10 másodpercig, kupak levétele. Új vagy 2 hete nem használt inhalátornál 2 próba-szippantás a levegőbe.', en: 'Shake inhaler 5-10 seconds, remove cap. For new or unused (>2 weeks) inhalers: 2 test sprays into air first.', pl: 'Wstrząsnąć inhalator 5-10 sekund, zdjąć nasadkę. Przy nowym lub nieużywanym (>2 tyg.) inhalatorze: 2 spraye próbne w powietrze.' } },
+ { step: 2, title: { hu: 'Beadás', en: 'Administration', pl: 'Podanie' },
+ detail: { hu: 'Mély kilégzés, szájdarab a fogak között, szippants be lassan és mélyen miközben megnyomod a flakont. Tartsd bent 5-10 másodpercig.', en: 'Full exhale, mouthpiece between teeth, inhale slowly and deeply while pressing the canister. Hold breath 5-10 seconds.', pl: 'Pełny wydech, ustnik między zębami, wdychaj powoli i głęboko naciskając kanister. Wstrzymaj oddech 5-10 sekund.' } },
+ { step: 3, title: { hu: 'Szájöblítés', en: 'Mouth rinse', pl: 'Płukanie ust' },
+ detail: { hu: 'Vízzel öblítsd ki a szádat és köpd ki (gombásodás-prevenció, főleg ICS-tartalmú inhalátoroknál).', en: 'Rinse mouth with water and spit out (anti-candidiasis, especially for ICS-containing inhalers).', pl: 'Przepłucz usta wodą i wypluj (zapobieganie kandydozie, szczególnie dla inhalatorów z GKS).' } },
+ { step: 4, title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
+ detail: { hu: 'Tremor, tachycardia, szájüregi gombásodás. PEF-mérés (peak expiratory flow) heti 1x ajánlott.', en: 'Tremor, tachycardia, oral candidiasis. Weekly peak expiratory flow (PEF) monitoring recommended.', pl: 'Drżenie, tachykardia, kandydoza jamy ustnej. Cotygodniowy pomiar PEF zalecany.' } },
+ ]
+
+ case 'topical':
+ return [
+ { step: 1, title: { hu: 'Bőr előkészítése', en: 'Skin preparation', pl: 'Przygotowanie skóry' },
+ detail: { hu: 'Tiszta, száraz bőrre. Fürdés/zuhanyzás után 10-15 perc várakozás, hogy a bőr teljesen megszáradjon.', en: 'Apply to clean, dry skin. Wait 10-15 min after bathing/showering for full drying.', pl: 'Aplikuj na czystą, suchą skórę. Odczekaj 10-15 min po kąpieli/prysznicu na całkowite osuszenie.' } },
+ { step: 2, title: { hu: 'Felvitel', en: 'Application', pl: 'Aplikacja' },
+ detail: { hu: 'Vékony rétegben az érintett területre, körkörös mozdulatokkal masszírozd be 30-60 másodpercig. Hagyd felszívódni 2-4 percig, mielőtt ruhával érintkezne.', en: 'Thin layer to affected area, massage in circular motions 30-60 seconds. Let absorb 2-4 minutes before clothing contact.', pl: 'Cienką warstwą na obszar dotknięty, wmasuj okrężnymi ruchami 30-60 sekund. Pozostaw do wchłonięcia 2-4 minuty przed kontaktem z odzieżą.' } },
+ { step: 3, title: { hu: 'Kézmosás', en: 'Hand washing', pl: 'Mycie rąk' },
+ detail: { hu: 'Beadás után alaposan moss kezet szappannal (transzfer-prevenció, főleg minoxidil-nél akcidentális arc/szem-érintés).', en: 'Wash hands thoroughly with soap after application (transfer prevention, especially minoxidil to face/eyes).', pl: 'Po aplikacji dokładnie umyj ręce mydłem (zapobieganie transferowi, szczególnie minoxidilu na twarz/oczy).' } },
+ { step: 4, title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
+ detail: { hu: 'Bőrirritáció (vörösség, viszketés, hámlás), kontakt-dermatitisz, kezelt területen nem kívánt szőrnövekedés.', en: 'Skin irritation (redness, itching, peeling), contact dermatitis, unwanted hair growth at treated site.', pl: 'Podrażnienie skóry (zaczerwienienie, świąd, łuszczenie), kontaktowe zapalenie skóry, niepożądany wzrost włosów w miejscu aplikacji.' } },
+ ]
+
+ case 'in':
+ return [
+ { step: 1, title: { hu: 'Spray előkészítés', en: 'Spray priming', pl: 'Przygotowanie sprayu' },
+ detail: { hu: 'Pre-mixed RU pharma esetén: 2–3 leszorítás a levegőbe első használat előtt. Research-chemical recon esetén: vial-tartalom átöntése spray-bottle-be.', en: 'Pre-mixed RU pharma: 2–3 priming sprays into air before first use. Research-chemical recon: transfer reconstituted vial contents to a sterile nasal spray bottle.', pl: 'Pre-mieszany RU pharma: 2–3 spraye próbne do powietrza przed pierwszym użyciem. Research-chemical: przenieść zawartość fiolki do sterylnej butelki sprayu.' } },
+ { step: 2, title: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' },
+ detail: { hu: 'Hűtőszekrényben (2–8°C), eredeti pumpás flakonban. Mindennapi adagoláshoz szobahőre meleg ítendő.', en: 'Refrigerated (2–8°C) in the original pump bottle. Bring to room temperature before daily dosing.', pl: 'W lodówce (2–8°C) w oryginalnej butelce z pompką. Doprowadzić do temperatury pokojowej przed dawkowaniem.' } },
+ { step: 3, title: { hu: 'Beadás', en: 'Administration', pl: 'Podanie' },
+ detail: { hu: 'Intranazális spray: 1–3 szippantás per orrlyuk, fej kissé előre döntve. Beadás után 1–2 percig ne fújd ki az orrod.', en: 'Intranasal spray: 1–3 sprays per nostril, head tilted slightly forward. Avoid blowing your nose for 1–2 minutes after.', pl: 'Spray donosowy: 1–3 spraye na nozdrze, głowa lekko pochylona do przodu. Nie wydmuchiwać nosa przez 1–2 min po podaniu.' } },
+ { step: 4, title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
+ detail: { hu: 'Orr-irritáció, szárazság vagy szubjektív hatáshiány esetén dózis-csökkentés vagy szünet.', en: 'Reduce dose or pause if nasal irritation, dryness, or lack of subjective effect occurs.', pl: 'Zmniejsz dawkę lub przerwij w przypadku podrażnienia, suchości nosa lub braku efektu.' } },
+ ]
+
+ case 'im':
+ return [
+ { step: 1, title: { hu: 'Ampulla előkészítése', en: 'Vial preparation', pl: 'Przygotowanie fiolki' },
+ detail: { hu: 'Olajos esterek: szobahőmérsékletre meleg (10-15 perc kézben), gentle swirl. Aqueous (suspension): jól rázd fel előtte.', en: 'Oil-based esters: warm to room temp (10-15 min in hand), gentle swirl. Aqueous suspension: shake well before drawing.', pl: 'Estry olejowe: ogrzej do temperatury pokojowej (10-15 min w dłoni), delikatnie obróć. Zawiesina wodna: dobrze wstrząsnąć przed pobraniem.' } },
+ { step: 2, title: { hu: 'Felszívás', en: 'Drawing', pl: 'Nabieranie' },
+ detail: { hu: 'Steril fecskendő (3-5 ml) + felszívó tű (18-21G). Felszívás után tű cseréje injekciós tűre (23-25G, 1-1.5"). Levegőbuborékok eltávolítása.', en: 'Sterile syringe (3-5 ml) + drawing needle (18-21G). After drawing, swap to injection needle (23-25G, 1-1.5"). Expel air bubbles.', pl: 'Sterylna strzykawka (3-5 ml) + igła do nabierania (18-21G). Po nabraniu wymień igłę na iniekcyjną (23-25G, 1-1.5"). Usuń pęcherzyki powietrza.' } },
+ { step: 3, title: { hu: 'Beadás', en: 'Administration', pl: 'Podanie' },
+ detail: { hu: 'Gluteus medius (felső külső kvadráns) vagy quadriceps lateralis. Alkohollal fertőtlenítve, 90°-os szögben szúrva, aspiráció után lassú befecskendezés (~10 másodperc/ml).', en: 'Gluteus medius (upper outer quadrant) or vastus lateralis (quadriceps). Alcohol-cleaned, 90° angle, aspirate then inject slowly (~10 sec/ml).', pl: 'Gluteus medius (górny zewnętrzny kwadrant) lub vastus lateralis (quadriceps). Dezynfekcja alkoholem, kąt 90°, aspiracja, powolne wstrzykiwanie (~10 sek./ml).' } },
+ { step: 4, title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
+ detail: { hu: 'Injekciós helyi reakció (csomó, vörösség), PIP (post-injection pain, főleg propionát/trenbolone), allergiás reakció. Hely rotálása (bal/jobb gluteus váltogatva).', en: 'Injection-site reactions (lumps, redness), PIP (post-injection pain, especially propionate/trenbolone), allergic reactions. Rotate sites (left/right gluteus).', pl: 'Reakcje miejscowe (guzki, zaczerwienienie), PIP (ból po iniekcji, szczególnie propionian/trenbolon), reakcje alergiczne. Rotuj miejsca (lewy/prawy gluteus).' } },
+ ]
+
+ case 'sc':
+ default:
+ return [
+ { step: 1, title: { hu: 'Rekonstituálás', en: 'Reconstitution', pl: 'Rekonstytucja' },
+ detail: { hu: 'Hideg szárított por hígítása bakteriostatikus vízzel.', en: 'Dilute the lyophilized powder with bacteriostatic water.', pl: 'Rozcieńcz liofilizowany proszek wodą bakteriostatyczną.' } },
+ { step: 2, title: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' },
+ detail: { hu: '2–8 °C-on, fénytől védve. Rekonstituálva 25–30 napig stabil.', en: '2–8 °C, protected from light. Stable 25–30 days after reconstitution.', pl: '2–8 °C, chronić przed światłem. Po rozpuszczeniu stabilny 25–30 dni.' } },
+ { step: 3, title: { hu: 'Beadás', en: 'Administration', pl: 'Podanie' },
+ detail: { hu: 'Szubkután injekció majd titrálás tolerancia szerint.', en: 'Subcutaneous injection, titrate to tolerance.', pl: 'Iniekcja podskórna, dawkowanie do tolerancji.' } },
+ { step: 4, title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
+ detail: { hu: 'Mellékhatás esetén dózis-csökkentés.', en: 'Dose reduction if side effects occur.', pl: 'Redukcja dawki w razie działań niepożądanych.' } },
  ]
  }
- // Default SC-vial reconstitution path (the original behaviour).
- return [
- {
- step: 1,
- title: { hu: 'Rekonstituálás', en: 'Reconstitution', pl: 'Rekonstytucja' },
- detail: {
- hu: 'Hideg szárított por hígítása bakteriostatikus vízzel.',
- en: 'Dilute the lyophilized powder with bacteriostatic water.',
- pl: 'Rozcieńcz liofilizowany proszek wodą bakteriostatyczną.',
- },
- },
- {
- step: 2,
- title: { hu: 'Tárolás', en: 'Storage', pl: 'Przechowywanie' },
- detail: {
- hu: '2–8 °C-on, fénytől védve. Rekonstituálva 25–30 napig stabil.',
- en: '2–8 °C, protected from light. Stable 25–30 days after reconstitution.',
- pl: '2–8 °C, chronić przed światłem. Po rozpuszczeniu stabilny 25–30 dni.',
- },
- },
- {
- step: 3,
- title: { hu: 'Beadás', en: 'Administration', pl: 'Podanie' },
- detail: {
- hu: 'Szubkután injekció majd titrálás tolerancia szerint.',
- en: 'Subcutaneous injection, titrate to tolerance.',
- pl: 'Iniekcja podskórna, dawkowanie do tolerancji.',
- },
- },
- {
- step: 4,
- title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
- detail: {
- hu: 'Mellékhatás esetén dózis-csökkentés.',
- en: 'Dose reduction if side effects occur.',
- pl: 'Redukcja dawki w razie działań niepożądanych.',
- },
- },
- ]
 }
 
 // Key Benefits, derive 3-4 benefit cards from peptide categories.
@@ -522,12 +518,55 @@ const IN_STOP_SIGNALS = [
  { hu: 'Súlyos orrnyálkahártya-gyulladás vagy fekély', en: 'Severe nasal mucosal inflammation or ulcer', pl: 'Ciężkie zapalenie błony śluzowej nosa lub owrzodzenie' },
 ]
 
+// Per-family side-effect + stop-signal additions. SC bullets come from category
+// data only; non-SC families strip SC injection-site bullets and append their own.
+const FAMILY_SAFETY_EXTRAS = {
+ oral: {
+ sideEffects: [
+ { hu: 'Gyomor-bél irritáció (hányinger, gyomorégés, hasmenés)', en: 'GI irritation (nausea, heartburn, diarrhea)', pl: 'Podrażnienie GI (nudności, zgaga, biegunka)' },
+ { hu: 'Májterhelés — orális 17α-methylated AAS-eknél emelkedett AST/ALT/GGT', en: 'Hepatic load — elevated AST/ALT/GGT with oral 17α-methylated AAS', pl: 'Obciążenie wątroby — podwyższone AST/ALT/GGT przy doustnych 17α-metylowanych AAS' },
+ ],
+ stop: [
+ { hu: 'Sárgaság, sötét vizelet vagy súlyos hasi fájdalom (májkárosodás jele)', en: 'Jaundice, dark urine, severe abdominal pain (hepatic damage)', pl: 'Żółtaczka, ciemny mocz, silny ból brzucha (uszkodzenie wątroby)' },
+ ],
+ },
+ inhaled: {
+ sideEffects: [
+ { hu: 'Szájüregi gombásodás (candidiasis) — szájöblítés kötelező', en: 'Oral candidiasis — mouth rinse mandatory', pl: 'Kandydoza jamy ustnej — płukanie ust obowiązkowe' },
+ { hu: 'Szájszárazság, hangképzési zavar (dysphonia), torokfájás', en: 'Dry mouth, voice changes (dysphonia), sore throat', pl: 'Suchość ust, zmiany głosu (dysfonia), ból gardła' },
+ { hu: 'Tremor, tachycardia, palpitáció (β2-agonista hatás)', en: 'Tremor, tachycardia, palpitations (β2-agonist effect)', pl: 'Drżenie, tachykardia, kołatanie (działanie β2-agonisty)' },
+ ],
+ stop: [
+ { hu: 'Súlyos szívritmuszavar vagy mellkasi fájdalom', en: 'Severe arrhythmia or chest pain', pl: 'Ciężka arytmia lub ból w klatce piersiowej' },
+ ],
+ },
+ topical: {
+ sideEffects: [
+ { hu: 'Bőrirritáció, kontakt-dermatitisz, viszketés a kezelt területen', en: 'Skin irritation, contact dermatitis, itching at application site', pl: 'Podrażnienie skóry, kontaktowe zapalenie skóry, świąd w miejscu aplikacji' },
+ { hu: 'Nem kívánt szőrnövekedés a kezelt területen (minoxidil-specifikus)', en: 'Unwanted hair growth at treatment site (minoxidil-specific)', pl: 'Niepożądany wzrost włosów w miejscu aplikacji (specyficzne dla minoxidilu)' },
+ { hu: 'Akcidentális arc/szem-kontaktus — kézmosás kötelező felvitel után', en: 'Accidental face/eye contact — hand wash mandatory after application', pl: 'Przypadkowy kontakt z twarzą/oczami — mycie rąk obowiązkowe' },
+ ],
+ stop: [
+ { hu: 'Súlyos bőrkiütés vagy hólyagosodás', en: 'Severe skin rash or blistering', pl: 'Ciężka wysypka lub pęcherze' },
+ ],
+ },
+ im: {
+ sideEffects: [
+ { hu: 'PIP (post-injection pain) — főleg propionát, trenbolone-ace vagy magas BA%-os keverékeknél', en: 'PIP (post-injection pain) — especially propionate, trenbolone-ace, or high-BA blends', pl: 'PIP (ból po iniekcji) — szczególnie propionian, trenbolon-ace, mieszanki z wysokim BA' },
+ { hu: 'Injekciós helyi reakció: csomó, vörösség, melegség, érzékenység', en: 'Injection-site reaction: lumps, redness, warmth, tenderness', pl: 'Reakcja w miejscu iniekcji: guzki, zaczerwienienie, ciepło, tkliwość' },
+ ],
+ stop: [
+ { hu: 'Cellulitisz vagy abszcessz jelei (terjedő vörösség, gennyes váladék, láz)', en: 'Cellulitis or abscess signs (spreading redness, pus, fever)', pl: 'Objawy cellulitis lub ropnia (rozprzestrzeniające się zaczerwienienie, ropa, gorączka)' },
+ ],
+ },
+}
+
 function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
  const primary = categoryIds[0]
  const set = CATEGORY_SAFETY[primary] || CATEGORY_SAFETY.recovery
- if (activeVariantId === 'in') {
- // Swap SC injection-site bullets for IN-specific irritation bullets;
- // keep all systemic / cognitive / mood bullets intact.
+ const family = getRouteFamily(activeVariantId)
+
+ if (family === 'in') {
  const filtered = set.sideEffects.filter(s => !SC_INJECTION_KEYWORDS.test(s.hu || ''))
  return {
  sideEffects: [...filtered, ...IN_SIDE_EFFECTS],
@@ -535,6 +574,19 @@ function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
  contraindications: GENERIC_CONTRAINDICATIONS,
  }
  }
+
+ const extras = FAMILY_SAFETY_EXTRAS[family]
+ if (extras) {
+ // Non-SC families: strip SC injection-site bullets, append family-specific bullets.
+ const filtered = set.sideEffects.filter(s => !SC_INJECTION_KEYWORDS.test(s.hu || ''))
+ return {
+ sideEffects: [...filtered, ...extras.sideEffects],
+ whenToStop: [...set.whenToStop, ...extras.stop],
+ contraindications: GENERIC_CONTRAINDICATIONS,
+ }
+ }
+
+ // SC / unknown family — default category-derived list (v0.13+ behavior).
  return {
  sideEffects: set.sideEffects,
  whenToStop: set.whenToStop,
@@ -677,20 +729,20 @@ function deriveFaqs(peptide, tier) {
 // need BAC water reconstitution. For non-peptide libraries (or peptide entries
 // missing reconstitution defaults), return [] so EntryDetail graceful-skips
 // the section.
-function deriveReconstitute(peptide, library) {
- if (library?.id !== 'peptides') return []
- // Phase C variant support: if the resolved variant supplies its own
- // reconstitute.steps[] (route-specific protocol — e.g. nasal spray transfer,
- // pre-mixed RU pharma skip), honour that directly. Empty array hides the
- // section, populated array renders the variant-specific protocol.
+function deriveReconstitute(peptide, library, activeVariantId) {
+ // Honor variant-supplied reconstitute steps regardless of family/library
+ // (e.g. nasal spray transfer protocol, custom IM ester procedure).
  if (peptide.reconstitute && Array.isArray(peptide.reconstitute.steps)) {
  return peptide.reconstitute.steps.map(s => (
  typeof s === 'string' ? { hu: s, en: s, pl: s } : s
  ))
  }
- // Pre-mixed pharmaceutical or non-injectable variant (defaultVariant in,
- // no reconstitute supplied) — hide the section entirely.
- if (peptide._activeVariantId === 'in') return []
+ const family = getRouteFamily(activeVariantId || peptide._activeVariantId)
+ // Non-injection families never need a reconstitute step (pre-formulated form).
+ if (family === 'oral' || family === 'inhaled' || family === 'topical') return null
+ // Pre-mixed nasal spray with no explicit recon — hide section.
+ if (family === 'in') return []
+ if (library?.id !== 'peptides') return []
  if (!peptide.defaultVialMg || !peptide.defaultBacMl) return []
  const vial = peptide.defaultVialMg
  const bac = peptide.defaultBacMl
@@ -725,8 +777,58 @@ function deriveReconstitute(peptide, library) {
 // Quality indicators, 7 standard checks; status: PASS / WARN / FAIL.
 // Variant-aware: intranasal spray uses different markers than SC vials.
 function deriveQualityIndicators(activeVariantId) {
- if (activeVariantId === 'in') {
- // Intranasal spray quality markers — pump bottle, clear liquid form.
+ const family = getRouteFamily(activeVariantId)
+
+ switch (family) {
+ case 'oral':
+ return [
+ { status: 'PASS', title: { hu: 'Tabletta épsége', en: 'Tablet integrity', pl: 'Stan tabletki' },
+ desc: { hu: 'Törésmentes, repedésmentes felület. Színe egyenletes, nincs foltosodás.', en: 'No cracks, smooth surface. Even color, no spotting.', pl: 'Bez pęknięć, gładka powierzchnia. Równy kolor, bez plam.' } },
+ { status: 'PASS', title: { hu: 'Eredeti blister', en: 'Original blister', pl: 'Oryginalny blister' },
+ desc: { hu: 'Sértetlen fólia, lejárati dátum + gyártási tétel látszik.', en: 'Intact foil, expiry date and lot number visible.', pl: 'Nieuszkodzona folia, data ważności i numer serii widoczne.' } },
+ { status: 'PASS', title: { hu: 'COA-val (Certificate of Analysis)', en: 'Comes with COA', pl: 'Z COA' },
+ desc: { hu: 'Független laboranalízis, hatóanyag-tartalom igazolva (mg/tabletta).', en: 'Independent lab analysis, active ingredient certified (mg/tablet).', pl: 'Niezależna analiza laboratoryjna, potwierdzony składnik aktywny (mg/tabletka).' } },
+ { status: 'WARN', title: { hu: 'Lejárati dátum', en: 'Expiry date', pl: 'Termin ważności' },
+ desc: { hu: 'Lejárt tablettánál a hatékonyság csökkenhet, ne használd.', en: 'Potency may degrade past expiry, don\'t use expired tablets.', pl: 'Po terminie moc może spaść, nie używaj.' } },
+ { status: 'FAIL', title: { hu: 'Tört / morzsolódó tabletta', en: 'Broken / crumbling tablet', pl: 'Złamana / krusząca się tabletka' },
+ desc: { hu: 'Repedt, törött vagy puha tabletta degradációt jelez, ne használd.', en: 'Cracked, broken or soft tablets indicate degradation, discard.', pl: 'Pęknięte, złamane lub miękkie tabletki wskazują degradację.' } },
+ { status: 'FAIL', title: { hu: 'Sérült blister', en: 'Damaged blister', pl: 'Uszkodzony blister' },
+ desc: { hu: 'Lyukas vagy szakadt fólia, sterilitás megszűnt, ne használd.', en: 'Punctured or torn foil, sterility compromised, discard.', pl: 'Przedziurawiona lub rozdarta folia, sterylność naruszona.' } },
+ ]
+
+ case 'inhaled':
+ return [
+ { status: 'PASS', title: { hu: 'MDI-flakon nyomása', en: 'MDI canister pressure', pl: 'Ciśnienie kanistra MDI' },
+ desc: { hu: 'Rázott teszt: enyhe folyadékhang. Dose-counter (ha van) >10 maradt.', en: 'Shake test: light liquid sound. Dose counter (if present) >10 remaining.', pl: 'Test wstrząsania: lekki dźwięk cieczy. Licznik dawek >10.' } },
+ { status: 'PASS', title: { hu: 'Egyenletes spray-kép', en: 'Even spray plume', pl: 'Równomierna chmura sprayu' },
+ desc: { hu: 'Priming után egyenletes finom köd, konzisztens dózis.', en: 'After priming: even fine mist, consistent dose.', pl: 'Po przygotowaniu: równomierna mgiełka, stała dawka.' } },
+ { status: 'PASS', title: { hu: 'Sértetlen szájdarab', en: 'Intact mouthpiece', pl: 'Nieuszkodzony ustnik' },
+ desc: { hu: 'Repedés- és törmelékmentes szájdarab. Spacer (ha használsz) tiszta.', en: 'Mouthpiece free of cracks and debris. Spacer (if used) clean.', pl: 'Ustnik bez pęknięć i zanieczyszczeń. Spacer (jeśli używany) czysty.' } },
+ { status: 'WARN', title: { hu: 'Lejárati dátum', en: 'Expiry date', pl: 'Data ważności' },
+ desc: { hu: 'Lejárt MDI propellán-szivárgásra hajlamos, dose nem konzisztens.', en: 'Expired MDI prone to propellant leak, inconsistent dosing.', pl: 'Przeterminowany MDI podatny na wyciek propelantu.' } },
+ { status: 'FAIL', title: { hu: 'Köhögtetően erős íz / szag', en: 'Strong cough-inducing taste / smell', pl: 'Silny smak / zapach' },
+ desc: { hu: 'Szokatlanul erős kémiai szag vagy íz degradációra utal.', en: 'Unusually strong chemical smell or taste suggests degradation.', pl: 'Niezwykle silny zapach / smak chemiczny sugeruje degradację.' } },
+ { status: 'FAIL', title: { hu: 'Repedt flakon / nem spray-z', en: 'Cracked canister / no spray', pl: 'Pęknięty kanister / brak sprayu' },
+ desc: { hu: 'Sérült flakon vagy elakadt pumpa, ne használd.', en: 'Damaged canister or stuck pump, discard.', pl: 'Uszkodzony kanister lub zacięta pompka.' } },
+ ]
+
+ case 'topical':
+ return [
+ { status: 'PASS', title: { hu: 'Tiszta oldat', en: 'Clear solution', pl: 'Klarowny roztwór' },
+ desc: { hu: 'Átlátszó vagy gyártó által megadott szín, csapadékmentes.', en: 'Clear or manufacturer-specified color, no precipitate.', pl: 'Klarowny lub kolor wg producenta, bez osadu.' } },
+ { status: 'PASS', title: { hu: 'Lezárt pumpa', en: 'Sealed pump', pl: 'Uszczelniona pompka' },
+ desc: { hu: 'Eredeti pumpás flakon, sértetlen zár, egyenletes adagolás.', en: 'Original pump bottle, intact seal, even dosing.', pl: 'Oryginalna butelka z pompką, nieuszkodzona pieczęć.' } },
+ { status: 'PASS', title: { hu: 'Címke olvasható', en: 'Label legible', pl: 'Etykieta czytelna' },
+ desc: { hu: 'Gyártó + lejárat + LOT-szám látható, hatóanyag-koncentráció jelölve.', en: 'Manufacturer + expiry + LOT visible, active concentration marked.', pl: 'Producent + termin + LOT widoczne, koncentracja oznaczona.' } },
+ { status: 'WARN', title: { hu: 'Tárolási hőmérséklet', en: 'Storage temperature', pl: 'Temperatura przechowywania' },
+ desc: { hu: 'Hideg-meleg ciklusok bonthatják a vehikulumot, fázis-szétválást okozva.', en: 'Heat-cold cycles can break the vehicle, causing phase separation.', pl: 'Cykle ciepło-zimno mogą rozłożyć nośnik.' } },
+ { status: 'FAIL', title: { hu: 'Zavarosodás / csapadék', en: 'Cloudiness / precipitate', pl: 'Mętność / osad' },
+ desc: { hu: 'Zavaros oldat vagy csapadék degradációt jelez, ne használd.', en: 'Cloudy solution or precipitate indicates degradation, discard.', pl: 'Mętny roztwór lub osad wskazuje degradację.' } },
+ { status: 'FAIL', title: { hu: 'Repedt flakon', en: 'Cracked bottle', pl: 'Pęknięta butelka' },
+ desc: { hu: 'Sérült flakon vagy szakadozó pumpa, ne használd.', en: 'Damaged bottle or sputtering pump, discard.', pl: 'Uszkodzona butelka lub przerywająca pompka.' } },
+ ]
+
+ case 'in':
  return [
  { status: 'PASS', title: { hu: 'Tiszta, színtelen oldat', en: 'Clear, colorless solution', pl: 'Klarowny, bezbarwny roztwór' },
  desc: { hu: 'Pre-mixed nasal spray jellemző megjelenése, üledék vagy elszíneződés nélkül.', en: 'Typical appearance of pre-mixed nasal spray, no sediment or discoloration.', pl: 'Typowy wygląd pre-mieszanego sprayu donosowego, bez osadu ani przebarwień.' } },
@@ -743,8 +845,25 @@ function deriveQualityIndicators(activeVariantId) {
  { status: 'FAIL', title: { hu: 'Sérült flakon / pumpa', en: 'Damaged bottle / pump', pl: 'Uszkodzona butelka / pompka' },
  desc: { hu: 'Repedt flakon, sérült pumpa, sterilitás megszűnt, ne használd.', en: 'Cracked bottle or broken pump, sterility compromised, discard.', pl: 'Pęknięta butelka lub uszkodzona pompka, sterylność naruszona.' } },
  ]
- }
- // Default SC-vial quality markers (lyophilized peptide).
+
+ case 'im':
+ return [
+ { status: 'PASS', title: { hu: 'Tiszta olaj', en: 'Clear oil', pl: 'Klarowny olej' },
+ desc: { hu: 'Átlátszó vagy enyhén sárgás (MCT/szezám/ricinusolaj), részecskementes.', en: 'Clear or slightly yellow (MCT/sesame/castor oil), particle-free.', pl: 'Klarowny lub lekko żółtawy (MCT/sezamowy/rycynowy), bez cząstek.' } },
+ { status: 'PASS', title: { hu: 'Ampulla integritás', en: 'Vial integrity', pl: 'Integralność fiolki' },
+ desc: { hu: 'Üveg ép, gumi-dugó sértetlen, alumínium gallér feszesen ül.', en: 'Glass intact, rubber stopper undamaged, aluminum crimp tight.', pl: 'Szkło nienaruszone, korek gumowy nieuszkodzony, aluminiowy uszczelniacz ścisły.' } },
+ { status: 'PASS', title: { hu: 'Címke + COA', en: 'Label + COA', pl: 'Etykieta + COA' },
+ desc: { hu: 'Gyártó + LOT + lejárat olvasható; független HPLC-analízis hatóanyag-tartalomra.', en: 'Manufacturer + LOT + expiry legible; independent HPLC analysis on active content.', pl: 'Producent + LOT + termin czytelne; niezależna analiza HPLC.' } },
+ { status: 'WARN', title: { hu: 'BA/BB-keverék konzisztencia', en: 'BA/BB carrier blend', pl: 'Mieszanka BA/BB' },
+ desc: { hu: 'Túl magas benzyl-alkohol (>3%) PIP-rizikó; UGL gyártóknál ellenőrizendő.', en: 'Excessive benzyl alcohol (>3%) raises PIP risk; verify with UGL manufacturers.', pl: 'Nadmiar alkoholu benzylowego (>3%) zwiększa ryzyko PIP.' } },
+ { status: 'FAIL', title: { hu: 'Zavarosodás / üledék', en: 'Cloudiness / sediment', pl: 'Mętność / osad' },
+ desc: { hu: 'Lebegő részecskék, zavarosodás vagy üledék = KEMÉNY no-go.', en: 'Floating particles, cloudiness, or sediment = HARD NO.', pl: 'Pływające cząstki, mętność, osad = TWARDE NIE.' } },
+ { status: 'FAIL', title: { hu: 'Sérült üveg / dugó', en: 'Damaged glass / stopper', pl: 'Uszkodzone szkło / korek' },
+ desc: { hu: 'Repedt ampulla vagy meglazult dugó, sterilitás megszűnt.', en: 'Cracked vial or loose stopper, sterility compromised.', pl: 'Pęknięta fiolka lub luźny korek, sterylność naruszona.' } },
+ ]
+
+ case 'sc':
+ default:
  return [
  { status: 'PASS', title: { hu: 'Fehér / törtfehér por', en: 'White / off-white powder', pl: 'Biały / kremowy proszek' },
  desc: { hu: 'Steril lyofilizált peptid jellemző megjelenése.', en: 'Typical appearance of sterile lyophilized peptide.', pl: 'Typowy wygląd sterylnego lyofilizowanego peptydu.' } },
@@ -761,6 +880,7 @@ function deriveQualityIndicators(activeVariantId) {
  { status: 'FAIL', title: { hu: 'Sérült csomagolás', en: 'Damaged packaging', pl: 'Uszkodzone opakowanie' },
  desc: { hu: 'Repedt fiola, kilazult kupak, sterilitás megszűnt, ne használd.', en: 'Cracked vial or loose cap, sterility compromised, discard.', pl: 'Pęknięta fiolka lub luźny kapsel, sterylność naruszona.' } },
  ]
+ }
 }
 
 // What-to-expect timeline, category-aware milestones.
@@ -1180,7 +1300,7 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  indications: deriveIndications(peptide, categoryIds, library, lang),
  safetyProfile: deriveSafetyProfile(peptide, categoryIds, activeVariantId),
  interactions: deriveInteractions(peptide, categoryIds, related),
- reconstitute: deriveReconstitute(peptide, library),
+ reconstitute: deriveReconstitute(peptide, library, activeVariantId),
  qualityIndicators: deriveQualityIndicators(activeVariantId),
  expectations: deriveExpectations(peptide, categoryIds),
  related,

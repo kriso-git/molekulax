@@ -1,6 +1,6 @@
 // Phase C multi-variant entry (Propionate + Enanthate). Lab Terminal hard-fail
-// sources: Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599,
-// Schänzer 1996 PMID 8616181 (detection), Mottram 2008 doping handbook,
+// sources: Pope-Kanayama 2014 PMID 24423981, Hartgens-Kuipers 2004 PMID 15248788,
+// Schänzer 1996 PMID 8674183 (detection), Mottram 2008 doping handbook,
 // Eli Lilly Drolban DESI review (FDA 1979, discontinued early 1990s).
 
 export default {
@@ -45,11 +45,11 @@ export default {
     "warfarin"
   ],
   "aromatization": "Nem — a 2α-metil-csoport sztérikus akadályozása miatt NEM CYP19 szubsztrát; klinikailag enyhe aromatáz-inhibitor hatást is mutat (Pope-Kanayama 2014 PMID 24423981 designer-AAS review)",
-  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált észter forma a hepatikus first-pass-t kerüli. Mérsékelt lipid-zavar (HDL csökkenés, LDL emelkedés) marad a fő kardiovaszkuláris kockázat (Hartgens-Kuipers 2004 PMID 15233599)",
+  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált észter forma a hepatikus first-pass-t kerüli. Mérsékelt lipid-zavar (HDL csökkenés, LDL emelkedés) marad a fő kardiovaszkuláris kockázat (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "62:25",
   "bindingAffinity": "AR-affinitás közepes; magas SHBG-affinitás (DHT-strukturális analóg) → SHBG-kötött tesztoszteront verseng le, indirekt szabad-T-emelkedést indukál.",
-  "detectionWindow": "Drostanolone metabolitok (2α-metil-5α-androsztán-3-on metabolitcsalád) vizeletből 3 hét (Prop) – 3 hónap (Enan). Schänzer 1996 (PMID 8616181) WADA-akkreditált GC-MS és LC-MS/MS módszer.",
+  "detectionWindow": "Drostanolone metabolitok (2α-metil-5α-androsztán-3-on metabolitcsalád) vizeletből 3 hét (Prop) – 3 hónap (Enan). Schänzer 1996 (PMID 8674183) WADA-akkreditált GC-MS és LC-MS/MS módszer.",
   "benefits": [
     "Vaszkuláris, kemény \"esztétikus\" megjelenés contest prep alatt (subjektív bodybuilding tapasztalat)",
     "Indirekt szabad-tesztoszteron-emelkedés SHBG-elfoglalás révén (másik AAS hatás-erősítője)",
@@ -121,13 +121,13 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Metabolism of anabolic androgenic steroids",
       "authors": "Schänzer W.",
       "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "pmid": "8674183"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",
@@ -136,10 +136,10 @@ export default {
       "pmid": "19922565"
     },
     {
-      "title": "Drostanolone propionate in advanced breast cancer",
-      "authors": "Gordan GS, Halden A, Horn Y, Fuery JJ, Parsons RJ, Walter RM.",
-      "journal": "Cancer. 1964;17:1056-62.",
-      "pmid": "14201858"
+      "title": "Long-term combined administration of dromostanolone propionate (Mastisol) and cyclophosphamide for advanced breast cancer",
+      "authors": "Nomura Y, Hattori T, Abe Y.",
+      "journal": "Gan no Rinsho. 1971;17(12):987-95.",
+      "pmid": "5172404"
     }
   ],
   "faq": [
@@ -199,17 +199,54 @@ export default {
   },
   "variants": [
     {
+      "id": "prop",
       "routeId": "prop",
-      "routeLabel": "Drostanolone Propionát (IM, gyors)",
+      "routeLabel": {
+        "hu": "Drostanolone Propionate (Masteron-Prop, gyors észter)",
+        "en": "Drostanolone Propionate (Masteron-Prop, fast ester)",
+        "pl": "Drostanolon Propionian (Masteron-Prop, szybki ester)"
+      },
+      "routeNote": {
+        "hu": "A klasszikus 'cutting' kozmetikai DHT-származék — szárazság, izom-keménység, enyhe AI-hatás. ~2-3 napos felezés ⇒ heti 3x EOD IM-injekció (Mon/Wed/Fri vagy E2D). NEM 17α-alkilált ⇒ alacsony hepatotoxicitás. PIP gyakran fájdalmas a propionát alkohol-tartalmú vehikulum miatt. Rövid detection window (~3 hét) ⇒ contest-prep preferált variánsa.",
+        "en": "The classic 'cutting' cosmetic DHT-derivative — dryness, muscle hardness, mild AI effect. ~2-3 day half-life ⇒ 3× EOD IM injection weekly (Mon/Wed/Fri or E2D). NOT 17α-alkylated ⇒ low hepatotoxicity. PIP often painful due to propionate's alcohol-containing vehicle. Short detection window (~3 weeks) ⇒ preferred contest-prep variant.",
+        "pl": "Klasyczna 'tnąca' kosmetyczna pochodna DHT — suchość, twardość mięśni, łagodne działanie AI. ~2-3-dniowy okres półtrwania ⇒ iniekcja IM 3× EOD tygodniowo (pon/śr/pt lub E2D). NIE 17α-alkilowany ⇒ niska hepatotoksyczność. PIP często bolesny z powodu wehikułu propionianu zawierającego alkohol. Krótkie okno detekcji (~3 tygodnie) ⇒ preferowany wariant contest-prep."
+      },
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Discontinued Rx (Drolban 1993 után nem gyártott), csak UGL piacon elérhető. EU/HU/PL: vény nélkül illegális, WADA tiltott.",
-      "bioavailability": "~95-100% (IM injekció bypass-olja a first-pass-t; propionát észter gyors hidrolízis ~2-3 nap)",
-      "onsetTime": "24-48 óra (IM, propionát fast-acting észter)",
       "halfLife": "2-3 nap (Propionát észter; szabad drostanolone t½ ~1-2 nap hidrolízis után)",
       "halfLifeActive": "1-2 nap",
-      "detectionWindow": "3 hét vizelet (rövidebb mint az Enantát-é, propionát rövid észter miatt). WADA-akkreditált GC-MS és LC-MS/MS.",
-      "aromatization": "Nem — a 2α-metil-DHT struktúra NEM CYP19 szubsztrát; enyhe AI-hatást mutat (Pope-Kanayama 2014).",
-      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektábilis észter forma bypass-olja a first-pass-t (Hartgens-Kuipers 2004).",
+      "bioavailability": "~95-100% (IM injekció bypass-olja a first-pass-t; propionát észter gyors hidrolízis ~2-3 nap)",
+      "onsetTime": {
+        "hu": "24-48 óra (IM, propionát fast-acting észter)",
+        "en": "24-48 h (IM, propionate fast-acting ester)",
+        "pl": "24-48 h (IM, propionian szybko działający ester)"
+      },
+      "dosing": {
+        "hu": "300-600 mg/hét IM, 3x EOD osztva (Mon/Wed/Fri). Tipikus cutting dózis 400 mg/hét. Max 8 hét ciklus. Test-Prop base + opcionális Tren-Ace stack. PCT 4 hét utolsó injekció +3-5 nap.",
+        "en": "300-600 mg/week IM, split 3× EOD (Mon/Wed/Fri). Typical cutting dose 400 mg/week. Max 8 week cycle. Test-Prop base + optional Tren-Ace stack. PCT 4 weeks last injection +3-5 days.",
+        "pl": "300-600 mg/tydzień IM, podzielone 3× EOD (pon/śr/pt). Typowa dawka cięcia 400 mg/tydzień. Maks 8 tygodni cyklu. Baza Test-Prop + opcjonalny stack Tren-Ace. PCT 4 tygodnie od ostatniej iniekcji +3-5 dni."
+      },
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {
+          "low": 300,
+          "medium": 400,
+          "high": 600
+        },
+        "unit": "mg/hét",
+        "note": {
+          "hu": "300-600 mg/hét, 3x EOD osztva IM (2-3 nap felezés). Max 8 hét. TUDCA NEM kötelező (alacsony hepatotox), DE lipid + vérnyomás monitor. PCT utolsó injekció +3-5 nap.",
+          "en": "300-600 mg/week, 3× EOD split IM (2-3 day half-life). Max 8 weeks. TUDCA not required (low hepatotox), BUT lipid + BP monitor essential. PCT starts last injection +3-5 days.",
+          "pl": "300-600 mg/tydzień, 3× EOD podzielone IM (2-3-dniowy okres półtrwania). Maks 8 tygodni. TUDCA niewymagana (niska hepatotoks), ALE monitor lipidów + ciśnienia konieczny. PCT od ostatniej iniekcji +3-5 dni."
+        }
+      },
+      "defaultVialMg": 1000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 100000,
+      "hepatotoxicity": "low",
+      "aromatization": "none",
+      "androgenicRatio": "62:25",
+      "legalStatus": "Discontinued Rx (Drolban 1993 után nem gyártott), csak UGL piacon elérhető. EU/HU/PL: vény nélkül illegális, WADA tiltott.",
+      "detectionWindow": "Vizelet: 3 hét (rövidebb mint az Enantát-é, propionát rövid észter miatt). WADA-akkreditált GC-MS és LC-MS/MS.",
       "quality": {
         "pure": [
           "Tiszta halványsárga vagy víztiszta olaj, 10ml fiola, sterilen szűrt",
@@ -219,7 +256,7 @@ export default {
           "Injection site pain (PIP): a propionát alkohol-tartalmú vehikulumban gyakran fájdalmas, 24-48 órás duzzanat",
           "Heti 3x EOD injekció szükséges a rövid felezés miatt (Mon/Wed/Fri vagy E2D)",
           "HDL csökkenés, LDL emelkedés (mérsékelt)",
-          "Hajhullás-acceleráció androgenetikus alopecia esetén"
+          "Hajhullás-acceleráció androgenetikus alopecia esetén (DHT-származék)"
         ],
         "avoid": [
           "Erős injection-site-érzékenység (ha minden IM-injekció súlyosan fáj, az Enantát-variánst preferáld)",
@@ -230,32 +267,59 @@ export default {
       },
       "interactions": [
         "Test-Propionát stack: ester-half-life-matching, EOD injekciós ütemezés",
-        "Tren-Acetate stack: \"cutting-stack\" klasszikus, mindhárom rövid észter",
+        "Tren-Acetate stack: 'cutting-stack' klasszikus, mindhárom rövid észter",
         "PCT (Clomid 50mg/nap + Nolvadex 20mg/nap, 4 hét) utolsó Prop-injekció +3-5 nap után indul"
-      ],
+      ]
+    },
+    {
+      "id": "enan",
+      "routeId": "enan",
+      "routeLabel": {
+        "hu": "Drostanolone Enanthate (Masteron-E, lassú észter)",
+        "en": "Drostanolone Enanthate (Masteron-E, slow ester)",
+        "pl": "Drostanolon Enanthate (Masteron-E, wolny ester)"
+      },
+      "routeNote": {
+        "hu": "Hosszabb felezés (~7-10 nap) ⇒ heti 1-2 IM-injekció elegendő, steady-state 4-5 hét. Sokkal kevésbé fáj mint a Propionát (nincs alkohol-vehikulum). Ugyanaz a parent drostanolone, így a cutting/cosmetic hatás azonos. Hátulütő: 2-3 hónapos detection window ⇒ contest-period <3 hónappal kerülendő. Bulking-cycle Mast-E-stack tipikus 10-12 hét.",
+        "en": "Longer half-life (~7-10 days) ⇒ once/twice weekly IM injection sufficient, steady-state 4-5 weeks. Much less painful than Propionate (no alcohol vehicle). Same parent drostanolone, so cutting/cosmetic effects identical. Drawback: 2-3 month detection window ⇒ avoid <3 months before contest period. Bulking-cycle Mast-E stack typically 10-12 weeks.",
+        "pl": "Dłuższy okres półtrwania (~7-10 dni) ⇒ iniekcja IM raz/dwa razy w tygodniu wystarcza, stan stacjonarny 4-5 tygodni. Znacznie mniej bolesny niż Propionian (brak wehikułu alkoholu). Ten sam macierzysty drostanolon, więc działanie cięcia/kosmetyczne identyczne. Wada: 2-3-miesięczne okno detekcji ⇒ unikać <3 miesięcy przed okresem zawodów. Cykl bulking ze stackiem Mast-E zazwyczaj 10-12 tygodni."
+      },
+      "image": "/performance/oil-vial-orange.png",
+      "halfLife": "7-10 nap (Enantát észter; szabad drostanolone t½ ~1-2 nap hidrolízis után)",
+      "halfLifeActive": "1-2 nap (depot-felszívódás lassú, plasma szint 1-2 hét után stabilizálódik)",
+      "bioavailability": "~95-100% (IM injekció bypass-olja a first-pass-t; enantát észter lassú hidrolízis ~7-10 nap)",
+      "onsetTime": {
+        "hu": "48-72 óra (IM, enantát slow-acting; steady-state 4-5 hét)",
+        "en": "48-72 h (IM, enanthate slow-acting; steady-state 4-5 weeks)",
+        "pl": "48-72 h (IM, enantat wolno działający; stan stacjonarny 4-5 tygodni)"
+      },
+      "dosing": {
+        "hu": "300-700 mg/hét IM, heti 1-2x. Tipikus cutting dózis 400-500 mg/hét. Minimum 8-10 hét ciklus a steady-state miatt. PCT utolsó injekció +14-21 nap.",
+        "en": "300-700 mg/week IM, 1-2× weekly. Typical cutting dose 400-500 mg/week. Minimum 8-10 week cycle due to steady-state. PCT starts last injection +14-21 days.",
+        "pl": "300-700 mg/tydzień IM, 1-2× w tygodniu. Typowa dawka cięcia 400-500 mg/tydzień. Minimum 8-10 tygodni cyklu z powodu stanu stacjonarnego. PCT od ostatniej iniekcji +14-21 dni."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": {
           "low": 300,
-          "medium": 400,
-          "high": 600
+          "medium": 500,
+          "high": 700
         },
-        "unit": "mg/hét (IM, 3x EOD osztva)",
-        "note": "Maximum 8 hét ciklus. 300-600 mg/hét, 3x EOD osztott injekcióban (rövid felezés miatt). TUDCA / NAC NEM kötelező (alacsony hepatotoxicitás), DE lipid-monitor és vérnyomás-napló elengedhetetlen. PCT 4 hét (Clomid + Nolvadex) utolsó injekció +3-5 nap után."
-      }
-    },
-    {
-      "routeId": "enan",
-      "routeLabel": "Drostanolone Enantát (IM, lassú)",
-      "image": "/performance/oil-vial-orange.png",
+        "unit": "mg/hét",
+        "note": {
+          "hu": "300-700 mg/hét, heti 1-2x IM (7-10 nap felezés). Minimum 8-10 hét. TUDCA NEM kötelező, DE lipid + vérnyomás monitor. PCT utolsó injekció +14-21 nap.",
+          "en": "300-700 mg/week, 1-2× weekly IM (7-10 day half-life). Minimum 8-10 weeks. TUDCA not required, BUT lipid + BP monitor essential. PCT starts last injection +14-21 days.",
+          "pl": "300-700 mg/tydzień, 1-2× w tygodniu IM (7-10-dniowy okres półtrwania). Minimum 8-10 tygodni. TUDCA niewymagana, ALE monitor lipidów + ciśnienia konieczny. PCT od ostatniej iniekcji +14-21 dni."
+        }
+      },
+      "defaultVialMg": 2000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 500000,
+      "hepatotoxicity": "low",
+      "aromatization": "none",
+      "androgenicRatio": "62:25",
       "legalStatus": "Sosem volt licencelt humán Rx — kizárólag UGL piac. Mindenhol illegális, WADA tiltott.",
-      "bioavailability": "~95-100% (IM injekció bypass-olja a first-pass-t; enantát észter lassú hidrolízis ~7-10 nap)",
-      "onsetTime": "48-72 óra (IM, enantát slow-acting észter; steady-state 4-5 hét)",
-      "halfLife": "7-10 nap (Enantát észter; szabad drostanolone t½ ~1-2 nap hidrolízis után)",
-      "halfLifeActive": "1-2 nap (depot-felszívódás lassú, plasma szint 1-2 hét után stabilizálódik)",
-      "detectionWindow": "2-3 hónap vizelet (jóval hosszabb mint a propionátnál, enantát hosszú észter miatt). WADA-akkreditált GC-MS és LC-MS/MS.",
-      "aromatization": "Nem — a 2α-metil-DHT struktúra NEM CYP19 szubsztrát egyik észternél sem; enyhe AI-hatás (Pope-Kanayama 2014).",
-      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektábilis észter forma bypass-olja a first-pass-t (Hartgens-Kuipers 2004).",
+      "detectionWindow": "Vizelet: 2-3 hónap (jóval hosszabb mint a propionátnál, enantát hosszú észter miatt). WADA-akkreditált GC-MS és LC-MS/MS.",
       "quality": {
         "pure": [
           "Tiszta sárgás-barnás olaj (~#f59e0b tónus), 10ml fiola, sterilen szűrt",
@@ -276,19 +340,9 @@ export default {
       },
       "interactions": [
         "Test-Enantát stack: ester-half-life-matching, heti 1-2x injekciós ütemezés",
-        "Tren-Enantát stack: \"long-ester cutting\" 10-12 hét",
-        "PCT (Clomid + Nolvadex 4-6 hét) utolsó Enan-injekció +14-21 nap után indul (steady-state clearance miatt)"
-      ],
-      "doseCalc": {
-        "type": "fixed",
-        "fixed": {
-          "low": 300,
-          "medium": 500,
-          "high": 700
-        },
-        "unit": "mg/hét (IM, 1-2x osztva)",
-        "note": "Minimum 8-10 hét ciklus a steady-state miatt. 300-700 mg/hét, heti 1-2x injekcióban. TUDCA / NAC NEM kötelező, DE lipid-monitor és vérnyomás-napló elengedhetetlen. PCT 4-6 hét (Clomid + Nolvadex) utolsó injekció +14-21 nap után."
-      }
+        "Tren-Enantát stack: 'long-ester cutting' 10-12 hét",
+        "PCT (Clomid + Nolvadex 4-6 hét) utolsó Enan-injekció +14-21 nap után indul"
+      ]
     }
   ],
   "defaultVariant": "prop",
