@@ -193,17 +193,51 @@ export default {
   },
   "variants": [
     {
+      "id": "ac-oral",
       "routeId": "ac-oral",
-      "routeLabel": "Methenolone Acetát (orális tabletta)",
+      "routeLabel": {
+        "hu": "Methenolone Acetate (Primobolan-Ac, orális tabletta)",
+        "en": "Methenolone Acetate (Primobolan-Ac, oral tablet)",
+        "pl": "Methenolon Acetate (Primobolan-Ac, tabletka doustna)"
+      },
+      "routeNote": {
+        "hu": "Klasszikus 'kozmetikai' AAS orális ága — alacsony hepatotoxicitás (NEM 17α-alkilált), nincs aromatizáció (1-metil-DHT). Hátulütő: alacsony orális bioavailability (~6%) miatt magas napi dózis kell (50-100 mg = 5-10 tabletta). A leggyakrabban hamisított AAS-tabletta (Anavar/Winstrol helyettesítés) — HPLC-tesztelés ABSZOLÚT KÖTELEZŐ. Női-barát alacsony dózisban (5-10 mg/nap).",
+        "en": "The oral arm of the classic 'cosmetic' AAS — low hepatotoxicity (NOT 17α-alkylated), no aromatization (1-methyl-DHT). Drawback: low oral bioavailability (~6%) requires high daily dose (50-100 mg = 5-10 tablets). The most commonly counterfeited AAS tablet (Anavar/Winstrol substitution) — HPLC testing ABSOLUTELY MANDATORY. Female-friendly at low doses (5-10 mg/day).",
+        "pl": "Doustna część klasycznego 'kosmetycznego' AAS — niska hepatotoksyczność (NIE 17α-alkilowany), brak aromatyzacji (1-metyl-DHT). Wada: niska biodostępność doustna (~6%) wymaga wysokiej dawki dziennej (50-100 mg = 5-10 tabletek). Najczęściej podrabiana tabletka AAS (substytut Anavar/Winstrol) — testowanie HPLC ABSOLUTNIE OBOWIĄZKOWE. Przyjazna dla kobiet w niskich dawkach (5-10 mg/dzień)."
+      },
       "image": "/performance/tablet-pile-white.png",
-      "legalStatus": "Discontinued Rx mindenhol; csak UGL piacon elérhető. EU/HU/PL/USA: vény nélkül illegális, WADA tiltott.",
-      "bioavailability": "~6% (alacsony — az acetát-észter gyors portális hidrolízis után parent methenolone hepatic metabolism; ezért magas dózisigény)",
-      "onsetTime": "1-2 h (orális, fast-absorption)",
       "halfLife": "4-6 h (parent methenolone, no active metabolite)",
       "halfLifeActive": "4-6 h",
-      "detectionWindow": "4-5 hét vizelet (rövidebb mint az enantátnál, gyors clearance). WADA-akkreditált GC-MS és LC-MS/MS.",
-      "aromatization": "Nem — 1-metil-DHT struktúra, NEM CYP19 szubsztrát; klinikailag E2-emelkedés nem várható.",
-      "hepatotoxicity": "Alacsony-mérsékelt — NEM 17α-alkilált, de a magas dózisigény (50-100 mg/nap) miatt ALT/AST enyhe emelkedés várható; klinikailag jóval enyhébb mint az Anavar vagy Dianabol.",
+      "bioavailability": "~6% (alacsony — az acetát-észter gyors portális hidrolízis után parent methenolone hepatic metabolism; ezért magas dózisigény)",
+      "onsetTime": {
+        "hu": "1-2 h (orális, fast-absorption)",
+        "en": "1-2 h (oral, fast-absorption)",
+        "pl": "1-2 h (doustnie, szybkie wchłanianie)"
+      },
+      "dosing": {
+        "hu": "50-100 mg/nap, 2-3x osztva (rövid felezés). Tipikus cutting dózis 75 mg/nap, max 100 mg/nap. Ciklus max 8 hét. Női dózis 5-10 mg/nap maximum (virilizációs küszöb).",
+        "en": "50-100 mg/day, split 2-3× (short half-life). Typical cutting dose 75 mg/day, max 100 mg/day. Cycle max 8 weeks. Female dose 5-10 mg/day maximum (virilization threshold).",
+        "pl": "50-100 mg/dzień, podzielone 2-3× (krótki okres półtrwania). Typowa dawka cięcia 75 mg/dzień, maks 100 mg/dzień. Cykl maks 8 tygodni. Dawka dla kobiet maks 5-10 mg/dzień (próg wirylizacji)."
+      },
+      "doseCalc": {
+        "type": "fixed",
+        "fixed": {
+          "low": 50,
+          "medium": 75,
+          "high": 100
+        },
+        "unit": "mg/day",
+        "note": {
+          "hu": "50-100 mg/nap, 2-3x osztott (rövid felezés). Max 8 hét ciklus. TUDCA 500 mg/nap opcionális (alacsony hepatotoxicitás). Női dózis max 5-10 mg/nap. PCT utolsó tabletta +1-2 nap.",
+          "en": "50-100 mg/day, 2-3× split (short half-life). Max 8 week cycle. TUDCA 500 mg/day optional (low hepatotoxicity). Female dose max 5-10 mg/day. PCT starts last tablet +1-2 days.",
+          "pl": "50-100 mg/dzień, podzielone 2-3× (krótki okres półtrwania). Cykl maks 8 tygodni. TUDCA 500 mg/dzień opcjonalnie (niska hepatotoksyczność). Dawka dla kobiet maks 5-10 mg/dzień. PCT od ostatniej tabletki +1-2 dni."
+        }
+      },
+      "hepatotoxicity": "low-moderate",
+      "aromatization": "none",
+      "androgenicRatio": "88:44",
+      "legalStatus": "Discontinued Rx mindenhol; csak UGL piacon elérhető. EU/HU/PL/USA: vény nélkül illegális, WADA tiltott.",
+      "detectionWindow": "Vizelet: 4-5 hét (rövidebb mint az enantátnál, gyors clearance). WADA-akkreditált GC-MS és LC-MS/MS.",
       "quality": {
         "pure": [
           "Tiszta fehér, jelölt tabletta (25 mg vagy 50 mg gyakori UGL dosing)",
@@ -211,9 +245,9 @@ export default {
         ],
         "caution": [
           "Magas napi dózisigény (50-100 mg/nap) — gyakran 5-10 tabletta szétosztva napközben",
-          "Hajhullás-acceleráció androgenetikus alopecia esetén",
+          "Hajhullás-acceleráció androgenetikus alopecia esetén (DHT-származék)",
           "Lipid-zavar: HDL csökkenés (mérsékelt)",
-          "Költség: orális Ac napi költség 5-15 EUR UGL minőségtől függően"
+          "Költség: orális Ac napi költség 5-15 EUR UGL minőségtől függően — drágább mint sok más orális AAS"
         ],
         "avoid": [
           "Bármilyen meglévő ALT/AST emelkedés (orális forma magas dózisigény miatt)",
@@ -224,36 +258,63 @@ export default {
       },
       "interactions": [
         "Test-Prop stack: ester-half-life matching, EOD injekciós Test + napi Primo-Ac",
-        "Anavar stack: együttes 17α-alkilált+1-metil orális kombináció, hepatikus stressz fokozódik",
+        "Anavar stack: együttes 17α-alkilált + 1-metil orális kombináció, hepatikus stressz fokozódik",
         "PCT (Clomid + Nolvadex 4 hét) utolsó tabletta +1-2 nap után indul"
-      ],
+      ]
+    },
+    {
+      "id": "enan-oil",
+      "routeId": "enan-oil",
+      "routeLabel": {
+        "hu": "Methenolone Enanthate (Primobolan Depot, IM olajos)",
+        "en": "Methenolone Enanthate (Primobolan Depot, IM oil)",
+        "pl": "Methenolon Enanthate (Primobolan Depot, IM olejowy)"
+      },
+      "routeNote": {
+        "hu": "A kozmetikai AAS preferált formája — IM bypass-olja a first-pass-t ⇒ a legalacsonyabb hepatotoxicitású AAS-ek egyike, női-barát low-dose mellett is. ~5-7 napos felezés ⇒ heti 1-2 injekció, steady-state 3-4 hét. Extra hosszú detection window (4-6 hó) — WADA-tesztelt versenyzőnek tilos. Bayer Primobolan Depot ár: feketepiacon 150-250 EUR/ml (extrém drága) — UGL alternatíva gyakori, de hamisítás magas.",
+        "en": "The preferred form of the cosmetic AAS — IM bypasses first-pass ⇒ one of the lowest-hepatotoxicity AAS, female-friendly even at low dose. ~5-7 day half-life ⇒ once/twice weekly injection, steady-state 3-4 weeks. Extra-long detection window (4-6 months) — forbidden for WADA-tested athletes. Bayer Primobolan Depot price: 150-250 EUR/ml on the black market (extremely expensive) — UGL alternative common, but counterfeiting is high.",
+        "pl": "Preferowana forma kosmetycznego AAS — IM omija first-pass ⇒ jeden z AAS o najniższej hepatotoksyczności, przyjazny dla kobiet nawet w niskich dawkach. ~5-7-dniowy okres półtrwania ⇒ iniekcja raz/dwa razy w tygodniu, stan stacjonarny 3-4 tygodnie. Bardzo długie okno detekcji (4-6 miesięcy) — zakazany dla sportowców testowanych WADA. Cena Bayer Primobolan Depot: 150-250 EUR/ml na czarnym rynku (bardzo drogo) — alternatywa UGL powszechna, ale podróbki są wysokie."
+      },
+      "image": "/performance/oil-vial-yellow.png",
+      "halfLife": "5-7 nap (Enantát észter; szabad methenolone t½ ~24 h hidrolízis után)",
+      "halfLifeActive": "~24 h (depot-driven)",
+      "bioavailability": "~95-100% (IM injekció bypass-olja a first-pass-t; enantát észter slow hidrolízis ~5-7 nap)",
+      "onsetTime": {
+        "hu": "48-72 h (IM, enantát slow-acting; steady-state 3-4 hét)",
+        "en": "48-72 h (IM, enanthate slow-acting; steady-state 3-4 weeks)",
+        "pl": "48-72 h (IM, enantat wolno działający; stan stacjonarny 3-4 tygodnie)"
+      },
+      "dosing": {
+        "hu": "300-700 mg/hét IM, heti 1-2x. Tipikus cutting dózis 400-500 mg/hét. Minimum 10 hét ciklus a steady-state miatt. Női dózis 50-100 mg/hét maximum. PCT utolsó injekció +14-21 nap.",
+        "en": "300-700 mg/week IM, 1-2× weekly. Typical cutting dose 400-500 mg/week. Minimum 10 week cycle due to steady-state. Female dose 50-100 mg/week maximum. PCT starts last injection +14-21 days.",
+        "pl": "300-700 mg/tydzień IM, 1-2× w tygodniu. Typowa dawka cięcia 400-500 mg/tydzień. Minimum 10 tygodni cyklu z powodu stanu stacjonarnego. Dawka dla kobiet maks 50-100 mg/tydzień. PCT od ostatniej iniekcji +14-21 dni."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": {
-          "low": 50,
-          "medium": 75,
-          "high": 100
+          "low": 300,
+          "medium": 500,
+          "high": 700
         },
-        "unit": "mg/nap (orális, 2-3x osztott)",
-        "note": "Maximum 8 hét ciklus. 50-100 mg/nap, 2-3x osztott dózisban (rövid felezés). TUDCA 500 mg/nap opcionális (alacsony hepatotoxicitás, de a magas dózis miatt biztonságos). Női dózis 5-10 mg/nap maximum. PCT 4 hét utolsó tabletta +1-2 nap után."
-      }
-    },
-    {
-      "routeId": "enan-oil",
-      "routeLabel": "Methenolone Enantát (IM Depot)",
-      "image": "/performance/oil-vial-yellow.png",
+        "unit": "mg/week",
+        "note": {
+          "hu": "300-700 mg/hét, heti 1-2x IM. Minimum 10 hét ciklus. TUDCA NEM szükséges (legalacsonyabb hepatotoxicitás). Női dózis max 50-100 mg/hét. PCT utolsó injekció +14-21 nap.",
+          "en": "300-700 mg/week, 1-2× weekly IM. Minimum 10 week cycle. TUDCA not required (lowest hepatotoxicity). Female dose max 50-100 mg/week. PCT starts last injection +14-21 days.",
+          "pl": "300-700 mg/tydzień, 1-2× w tygodniu IM. Minimum 10 tygodni cyklu. TUDCA niewymagana (najniższa hepatotoksyczność). Dawka dla kobiet maks 50-100 mg/tydzień. PCT od ostatniej iniekcji +14-21 dni."
+        }
+      },
+      "defaultVialMg": 1000,
+      "defaultBacMl": 10,
+      "defaultDoseMcg": 500000,
+      "hepatotoxicity": "very-low",
+      "aromatization": "none",
+      "androgenicRatio": "88:44",
       "legalStatus": "Bayer Primobolan Depot DE/ES Rx-szer (anémia, premature infant catabolic states). EU/HU/PL: import-Rx ritkán, többnyire UGL. WADA tiltott.",
-      "bioavailability": "~95-100% (IM injekció bypass-olja a first-pass-t; enantát észter slow hidrolízis ~5-7 nap)",
-      "onsetTime": "48-72 h (IM, enantát slow-acting; steady-state 3-4 hét)",
-      "halfLife": "5-7 nap (Enantát észter; szabad methenolone t½ ~24 h hidrolízis után)",
-      "halfLifeActive": "~24 h (depot-driven)",
-      "detectionWindow": "4-6 hónap vizelet (extra hosszú, enantát ester + 1-metil metabolitcsalád). WADA-akkreditált GC-MS és LC-MS/MS.",
-      "aromatization": "Nem — 1-metil-DHT struktúra, NEM CYP19 szubsztrát.",
-      "hepatotoxicity": "Nagyon alacsony — parent szteroid, NEM 17α-alkilált, IM forma bypass-olja a first-pass-t. A legbiztonságosabb hepatikus profilú AAS-ek közé tartozik.",
+      "detectionWindow": "Vizelet: 4-6 hónap (extra hosszú, enantát ester + 1-metil metabolitcsalád). WADA-akkreditált GC-MS és LC-MS/MS.",
       "quality": {
         "pure": [
           "Bayer Primobolan Depot 100 mg/ml, 1ml ampulla — autentikus forrás holografikus jelöléssel",
-          "UGL alternatíva: tiszta sárgás-arany olaj, 10ml fiola, HPLC-tesztelt"
+          "UGL alternatíva: tiszta sárgás-arany olaj, 10ml fiola, HPLC-tesztelt forrás kötelező"
         ],
         "caution": [
           "Bayer Depot ár: ~150-250 EUR/ml feketepiacon (extrém drága)",
@@ -270,19 +331,9 @@ export default {
       },
       "interactions": [
         "Test-Enan stack: ester-half-life matching, heti 1-2x injekció",
-        "Tren-Enan stack: \"long-ester cutting\" 10-12 hét",
+        "Tren-Enan stack: 'long-ester cutting' 10-12 hét",
         "PCT (Clomid + Nolvadex 4-6 hét) utolsó Enan-injekció +14-21 nap után indul"
-      ],
-      "doseCalc": {
-        "type": "fixed",
-        "fixed": {
-          "low": 300,
-          "medium": 500,
-          "high": 700
-        },
-        "unit": "mg/hét (IM, 1-2x osztva)",
-        "note": "Minimum 10 hét ciklus a steady-state miatt. 300-700 mg/hét, heti 1-2x injekcióban. TUDCA / NAC NEM szükséges (legalacsonyabb hepatotoxicitású AAS). Női dózis 50-100 mg/hét maximum. PCT 4-6 hét utolsó injekció +14-21 nap után."
-      }
+      ]
     }
   ],
   "defaultVariant": "enan-oil",
