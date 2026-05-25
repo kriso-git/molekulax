@@ -1,8 +1,14 @@
 // Atomic per-entry PMID-replace across all 3 lang files. No Edit tool (avoids
 // curly-quote corruption). Uses fs.readFileSync/writeFileSync UTF-8.
 //
-// Run: node scripts/apply-pmid-fix.mjs --entry <slug> --replacements '<old>=<new>:<title>:<authors>;...'
-//      node scripts/apply-pmid-fix.mjs --entry <slug> --lib <id> --replacements ... --dry-run
+// Run (preferred — handles colons in titles/journals safely):
+//   node scripts/apply-pmid-fix.mjs --entry <slug> --replacements-file pmid-candidates/<lib>/<entry>.fixes.json [--lib <id>] [--dry-run]
+//
+// Or (legacy, NO colons allowed in title/authors/journal):
+//   node scripts/apply-pmid-fix.mjs --entry <slug> --replacements '<old>=<new>:<title>:<authors>[:<journal>];...' [--lib <id>] [--dry-run]
+//
+// Fix-file JSON shape: [ { "oldPmid": "...", "newPmid": "...", "title": "...", "authors": "...", "journal": "..." }, ... ]
+// journal is optional — if present, will update the journal field too.
 
 import { readFileSync, writeFileSync, existsSync } from 'fs'
 import { resolve, dirname } from 'path'
@@ -13,30 +19,57 @@ const repoRoot = resolve(__dirname, '..')
 
 const args = process.argv.slice(2)
 const entry = args[args.indexOf('--entry') + 1]
-const replArg = args[args.indexOf('--replacements') + 1]
+const replArg = args.includes('--replacements') ? args[args.indexOf('--replacements') + 1] : null
+const replFile = args.includes('--replacements-file') ? args[args.indexOf('--replacements-file') + 1] : null
 const libArg = args.includes('--lib') ? args[args.indexOf('--lib') + 1] : null
 const dryRun = args.includes('--dry-run')
 
-if (!entry || !replArg) {
-  console.error('Usage: --entry <slug> [--lib <id>] --replacements "old=new:title:authors;old2=new2:..." [--dry-run]')
+if (!entry || (!replArg && !replFile)) {
+  console.error('Usage: --entry <slug> [--lib <id>] (--replacements-file <json> | --replacements "old=new:title:authors[:journal];...") [--dry-run]')
   process.exit(2)
 }
 
-// Parse replacements: oldPmid=newPmid:newTitle:newAuthors;oldPmid2=...
-// title/authors may contain colons; split only on the FIRST two colons of each replacement
-const replacements = replArg.split(';').map(s => s.trim()).filter(Boolean).map(s => {
-  const eqIdx = s.indexOf('=')
-  if (eqIdx < 0) throw new Error(`Bad replacement: ${s}`)
-  const oldPmid = s.slice(0, eqIdx).trim()
-  const rest = s.slice(eqIdx + 1)
-  const colon1 = rest.indexOf(':')
-  const colon2 = rest.indexOf(':', colon1 + 1)
-  if (colon1 < 0 || colon2 < 0) throw new Error(`Bad replacement (need 2 colons): ${s}`)
-  const newPmid = rest.slice(0, colon1).trim()
-  const newTitle = rest.slice(colon1 + 1, colon2).trim()
-  const newAuthors = rest.slice(colon2 + 1).trim()
-  return { oldPmid, newPmid, newTitle, newAuthors }
-})
+let replacements
+if (replFile) {
+  const jsonPath = resolve(repoRoot, replFile)
+  if (!existsSync(jsonPath)) { console.error(`Replacements file not found: ${jsonPath}`); process.exit(2) }
+  const parsed = JSON.parse(readFileSync(jsonPath, 'utf-8'))
+  if (!Array.isArray(parsed)) { console.error('Replacements file must be a JSON array'); process.exit(2) }
+  replacements = parsed.map(r => {
+    if (!r.oldPmid || !r.newPmid) throw new Error(`Bad fix entry (missing oldPmid/newPmid): ${JSON.stringify(r)}`)
+    return { oldPmid: String(r.oldPmid), newPmid: String(r.newPmid), newTitle: r.title || '', newAuthors: r.authors || '', newJournal: r.journal || null }
+  })
+} else {
+  // Legacy CLI parser: oldPmid=newPmid:newTitle:newAuthors[:newJournal];oldPmid2=...
+  // Split on FIRST `=`, then FIRST 2 (or 3) colons.
+  replacements = replArg.split(';').map(s => s.trim()).filter(Boolean).map(s => {
+    const eqIdx = s.indexOf('=')
+    if (eqIdx < 0) throw new Error(`Bad replacement: ${s}`)
+    const oldPmid = s.slice(0, eqIdx).trim()
+    const rest = s.slice(eqIdx + 1)
+    // newPmid is digits only, terminated by first `:`
+    const colon1 = rest.indexOf(':')
+    if (colon1 < 0) throw new Error(`Bad replacement (need at least 1 colon): ${s}`)
+    const newPmid = rest.slice(0, colon1).trim()
+    // For legacy CLI mode, we use a heuristic: 2 colons = title:authors, 3 colons = title:authors:journal.
+    // But title or authors MAY contain colons too — this is fragile. Recommend --replacements-file for safety.
+    const tailParts = rest.slice(colon1 + 1).split(':')
+    if (tailParts.length < 2) throw new Error(`Bad replacement (need title:authors): ${s}`)
+    let newTitle, newAuthors, newJournal = null
+    if (tailParts.length === 2) {
+      newTitle = tailParts[0].trim(); newAuthors = tailParts[1].trim()
+    } else if (tailParts.length === 3) {
+      newTitle = tailParts[0].trim(); newAuthors = tailParts[1].trim(); newJournal = tailParts[2].trim()
+    } else {
+      console.warn(`  ⚠ CLI replacement has ${tailParts.length} colons — title/authors/journal split ambiguous, use --replacements-file instead`)
+      // Greedy: assume LAST element is journal, second-to-last is authors, rest is title
+      newJournal = tailParts.pop().trim()
+      newAuthors = tailParts.pop().trim()
+      newTitle = tailParts.join(':').trim()
+    }
+    return { oldPmid, newPmid, newTitle, newAuthors, newJournal }
+  })
+}
 
 console.log(`Applying ${replacements.length} replacement(s) to ${entry} (${dryRun ? 'DRY-RUN' : 'WRITE'})`)
 
@@ -61,8 +94,8 @@ for (const lang of ['hu', 'en', 'pl']) {
   let content = readFileSync(path, 'utf-8')
   const original = content
 
-  for (const { oldPmid, newPmid, newTitle, newAuthors } of replacements) {
-    // 1. Replace pmid string. Match: pmid: "12345"  with optional surrounding whitespace
+  for (const { oldPmid, newPmid, newTitle, newAuthors, newJournal } of replacements) {
+    // 1. Replace pmid string.
     const pmidRe = new RegExp(`("pmid"\\s*:\\s*"|pmid:\\s*")${oldPmid}(")`, 'g')
     const beforePmid = content
     content = content.replace(pmidRe, `$1${newPmid}$2`)
@@ -72,20 +105,41 @@ for (const lang of ['hu', 'en', 'pl']) {
       continue
     }
 
-    // 2. Replace title. Find the studies-block entry whose pmid is now newPmid, and update title.
-    // Strategy: find the `{ ... "pmid": "newPmid" ... }` object block and replace title key inside it.
-    // We use a focused regex on the previous-line title since studies arrays have stable shape.
+    // 2. Replace title + authors. blockRe: title group + authors group + tail-up-to-pmid group.
+    // Use match-based approach (NOT g flag for inspection) to detect oldTitle === newTitle no-op.
     const blockRe = new RegExp(
-      `("title"\\s*:\\s*")[^"]*(",\\s*"authors"\\s*:\\s*")[^"]*(",[^}]*"pmid"\\s*:\\s*"${newPmid}")`,
-      'g'
+      `("title"\\s*:\\s*")([^"]*)(",\\s*"authors"\\s*:\\s*")([^"]*)(",[^}]*"pmid"\\s*:\\s*"${newPmid}")`
     )
-    const beforeBlock = content
-    const escTitle = newTitle.replace(/"/g, '\\"')
-    const escAuthors = newAuthors.replace(/"/g, '\\"')
-    content = content.replace(blockRe, `$1${escTitle}$2${escAuthors}$3`)
-    if (content === beforeBlock) {
-      console.log(`  ${lang}: ⚠ title/authors not replaced for new PMID ${newPmid} (block-regex didn't match — manual inspection needed)`)
-      // Not a hard fail — pmid was replaced, title/authors can be hand-edited
+    const m = content.match(blockRe)
+    if (!m) {
+      console.log(`  ${lang}: ⚠ title-block not found for new PMID ${newPmid} (manual inspection needed)`)
+    } else {
+      const [, openTitle, oldTitle, midAuthors, oldAuthors, tailToPmid] = m
+      const escTitle = newTitle.replace(/"/g, '\\"')
+      const escAuthors = newAuthors.replace(/"/g, '\\"')
+      const titleChanged = oldTitle !== escTitle
+      const authorsChanged = oldAuthors !== escAuthors
+      if (titleChanged || authorsChanged) {
+        const replacement = `${openTitle}${escTitle}${midAuthors}${escAuthors}${tailToPmid}`
+        content = content.replace(blockRe, replacement)
+      }
+    }
+
+    // 3. (Optional) Replace journal. Locate the same record by new PMID, swap journal value.
+    if (newJournal) {
+      const journalRe = new RegExp(
+        `("journal"\\s*:\\s*")([^"]*)(",\\s*"pmid"\\s*:\\s*"${newPmid}")`
+      )
+      const jm = content.match(journalRe)
+      if (!jm) {
+        console.log(`  ${lang}: ⚠ journal-field not found for new PMID ${newPmid} (skipped)`)
+      } else {
+        const [, openJ, oldJ, tailJ] = jm
+        const escJ = newJournal.replace(/"/g, '\\"')
+        if (oldJ !== escJ) {
+          content = content.replace(journalRe, `${openJ}${escJ}${tailJ}`)
+        }
+      }
     }
   }
 
