@@ -112,28 +112,28 @@ export default {
   ],
   "studies": [
     {
-      "title": "Efficacy and tolerability of mirabegron, a β(3)-adrenoceptor agonist, in patients with overactive bladder: results from a randomised European-Australian phase 3 trial",
-      "authors": "Khullar V, Amarenco G, Angulo JC et al.",
-      "journal": "Eur Urol. 2013;63(2):283-295.",
-      "pmid": "23537815"
+      "title": "Efficacy and Safety of Mirabegron in Males with Overactive Bladder and Lower Urinary Tract Symptoms: Analysis from an Integrated Clinical Trial Database.",
+      "authors": "Hadi FA, Schild A, Hansen MK",
+      "journal": "Eur Urol Open Sci",
+      "pmid": "41246035"
     },
     {
-      "title": "Activation of human brown adipose tissue by a β3-adrenergic receptor agonist",
-      "authors": "Cypess AM, Weiner LS, Roberts-Toler C et al.",
-      "journal": "Cell Metab. 2015;21(1):33-38.",
-      "pmid": "25437872"
+      "title": "Activation of human brown adipose tissue by a β3-adrenergic receptor agonist.",
+      "authors": "Cypess AM, Weiner LS, Roberts-Toler C, Franquet Elía E, Kessler SH, Kahn PA, English J, Chatman K, Trauger SA, Doria A, Kolodny GM",
+      "journal": "Cell Metab",
+      "pmid": "25565203"
     },
     {
-      "title": "Acute metabolic responses to mirabegron in young adult women",
-      "authors": "Loh RKC, Formosa MF, La Gerche A et al.",
-      "journal": "Front Endocrinol (Lausanne). 2019;10:402.",
-      "pmid": "31263458"
+      "title": "Acute metabolic and cardiovascular effects of mirabegron in healthy individuals.",
+      "authors": "Loh RKC, Formosa MF, La Gerche A, Reutens AT, Kingwell BA, Carey AL",
+      "journal": "Diabetes Obes Metab",
+      "pmid": "30203462"
     },
     {
-      "title": "The β3-adrenergic receptor agonist mirabegron improves glucose homeostasis in obese humans",
-      "authors": "Finlin BS, Memetimin H, Zhu B et al.",
-      "journal": "J Clin Invest. 2020;130(5):2319-2331.",
-      "pmid": "32119651"
+      "title": "Chronic mirabegron treatment increases human brown fat, HDL cholesterol, and insulin sensitivity.",
+      "authors": "O'Mara AE, Johnson JW, Linderman JD, Brychta RJ, McGehee S, Fletcher LA, Fink YA, Kapuria D, Cassimatis TM, Kelsey N, Cero C, Sater ZA, Piccinini F, Baskin AS, Leitner BP, Cai H, Millo CM, Dieckmann W, Walter M, Javitt NB, Rotman Y, Walter PJ, Ader M, Bergman RN, Herscovitch P, Chen KY, Cypess AM",
+      "journal": "J Clin Invest",
+      "pmid": "31961826"
     },
     {
       "title": "Anatomical localization, gene expression profiling and functional characterization of adult human neck brown fat",
@@ -142,10 +142,10 @@ export default {
       "pmid": "23603815"
     },
     {
-      "title": "Cardiovascular safety of mirabegron: analysis of an integrated clinical trial database of patients with overactive bladder syndrome",
-      "authors": "Rosa GM, Ferrero S, Nitti VW et al.",
-      "journal": "J Manag Care Spec Pharm. 2016;22(4):448-458.",
-      "pmid": "27023695"
+      "title": "Cardiovascular safety of mirabegron: analysis of an integrated clinical trial database of patients with overactive bladder syndrome.",
+      "authors": "White WB, Siddiqui E, Tat T, Franks B, Schermer CR",
+      "journal": "J Am Soc Hypertens",
+      "pmid": "30181042"
     }
   ],
   "faq": [
