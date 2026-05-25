@@ -79,8 +79,8 @@ export default {
     "TRT: NEM kombinálható chronic-on (Leydig-saturation suppressed by exogenous Test)"
   ],
   "studies": [
-    {"title": "Gonadotropin therapy in male hypogonadotropic hypogonadism: comparison of growth hormone and gonadotropin treatments", "authors": "Liu PY, Baker HW, Jayadev V, Zacharin M, Conway AJ, Handelsman DJ.", "journal": "J Clin Endocrinol Metab. 2009;94(3):801-8.", "pmid": "19435775"},
-    {"title": "Effects of human chorionic gonadotropin and human menopausal gonadotropin on intratesticular testosterone and spermatogenesis", "authors": "Kohn TP, Louis MR, Pickett SM, et al.", "journal": "Fertil Steril. 2017;108(4):589-595.", "pmid": "28935145"},
+    {"title": "Comparison of outcomes between pulsatile gonadotropin releasing hormone and combined gonadotropin therapy of spermatogenesis in patients with congenital hypogonadotropic hypogonadism.", "authors": "Zheng Y, Bai HZ, Zhao GC", "journal": "Reprod Biol Endocrinol", "pmid": "40119359"},
+    {"title": "Failure of combined follicle-stimulating hormone-testosterone administration to initiate and/or maintain spermatogenesis in men with hypogonadotropic hypogonadism.", "authors": "Schaison G, Young J, Pholsena M, Edery M, Touraine P, Lahlou N", "journal": "J Clin Endocrinol Metab", "pmid": "8263139"},
     {"title": "Maintenance of spermatogenesis in hypogonadotropic hypogonadal men with human chorionic gonadotropin alone", "authors": "Depenbusch M, von Eckardstein S, Simoni M, Nieschlag E.", "journal": "Eur J Endocrinol. 2002;147(5):617-24.", "pmid": "12444893"}
   ],
   "faq": [
