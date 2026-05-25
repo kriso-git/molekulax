@@ -40,13 +40,25 @@ export default {
     {
       "id": "oral",
       "routeId": "oral",
-      "routeLabel": "Oral kapszula / tabletta",
-      "routeNote": "Napi szintű kényelmes és olcsó beadási forma. Chronic-loading 3-4 hét alatt 2 g/nap oral + szénhidrát-ko-ingestion éri el az izomszövet steady-state koncentráció-emelkedését. Kezdő és fenntartó protokollok leggyakoribb választása.",
+      "routeLabel": {
+        "hu": "L-Carnitine Tartrate (orális kapszula, lassú-felszívódás ~15%)",
+        "en": "L-Carnitine Tartrate (oral capsule, slow absorption ~15%)",
+        "pl": "L-Karnityna Tartrate (kapsułka doustna, wolne wchłanianie ~15%)"
+      },
+      "routeNote": {
+        "hu": "Napi szintű kényelmes és olcsó beadási forma. Chronic-loading 3-4 hét alatt 2 g/nap oral + szénhidrát-ko-ingestion éri el az izomszövet steady-state koncentráció-emelkedését. Kezdő és fenntartó protokollok leggyakoribb választása.",
+        "en": "Day-to-day convenient and inexpensive administration form. Chronic-loading reaches muscle-tissue steady-state concentration elevation over 3-4 weeks at 2 g/day oral + carbohydrate co-ingestion. Most common choice for beginner and maintenance protocols.",
+        "pl": "Codzienna wygodna i niedroga forma podawania. Chronic-loading osiąga podwyższenie stężenia w tkance mięśniowej w stanie stacjonarnym przez 3-4 tygodnie przy 2 g/dzień doustnie + ko-ingestii węglowodanów. Najczęściej wybierany protokół dla początkujących i utrzymania."
+      },
       "label": "Oral kapszula",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "OTC supplement-kategória globálisan (US, EU, HU, PL), FDA-jóváhagyott primary carnitine deficiency Rx (Sigma-Tau Carnitor 1985).",
       "bioavailability": "~15% (alacsony — gastrointestinalis P-glycoprotein efflux + first-pass-loss)",
-      "onsetTime": "1-2 óra (oral abszorpció); steady-state izom-loading 3-4 hét chronic",
+      "onsetTime": {
+        "hu": "1-2 óra (oral abszorpció); steady-state izom-loading 3-4 hét chronic",
+        "en": "1-2 hours (oral absorption); steady-state muscle-loading 3-4 weeks chronic",
+        "pl": "1-2 godziny (wchłanianie doustne); stan stacjonarny ładowania mięśni 3-4 tygodnie chronic"
+      },
       "halfLife": "~15 óra",
       "halfLifeActive": "~15 óra",
       "detectionWindow": "WADA-akkreditált LC-MS/MS NEM standard test, chronic high-dose ~1-2 hét",
@@ -72,19 +84,35 @@ export default {
         ]
       },
       "indications": "Cutting-cycle szubtilis fat-oxidation-shift + izom-glükogén-megőrzés; chronic-loading 3-4 hét carbohydrate-co-ingestion mellett (Wall 2011 PMID 21224234)",
-      "dosing": "Tipikus protokoll: 2-4 g/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake érdekében). Kezdő dózis 500-1000 mg/nap, hatékonysági határ chronic-loading-on 2 g/nap.",
+      "dosing": {
+        "hu": "Tipikus protokoll: 2-4 g/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake érdekében). Kezdő dózis 500-1000 mg/nap, hatékonysági határ chronic-loading-on 2 g/nap.",
+        "en": "Typical protocol: 2-4 g/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Starting dose 500-1000 mg/day, efficacy plateau on chronic-loading at 2 g/day.",
+        "pl": "Typowy protokół: 2-4 g/dzień podzielone 3x z posiłkami (ko-ingestia węglowodanów dla insulino-stymulowanego wychwytu mięśniowego). Dawka początkowa 500-1000 mg/dzień, próg skuteczności na chronic-loading 2 g/dzień."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 500, "medium": 2000, "high": 4000 },
         "unit": "mg/nap",
-        "note": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose — info-card megjelenítés, MiniCalc nem releváns."
+        "note": {
+          "hu": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose — info-card megjelenítés, MiniCalc nem releváns.",
+          "en": "Oral 500-4000 mg/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Chronic-loading steady-state 3-4 weeks. The oral form is isFixedDose — info-card display, MiniCalc not relevant.",
+          "pl": "Doustnie 500-4000 mg/dzień podzielone 3x z posiłkami (ko-ingestia węglowodanów dla insulino-stymulowanego wychwytu mięśniowego). Chronic-loading stan stacjonarny 3-4 tygodnie. Forma doustna jest isFixedDose — wyświetlanie info-card, MiniCalc nie ma zastosowania."
+        }
       }
     },
     {
       "id": "aq",
       "routeId": "aq",
-      "routeLabel": "IM/SC injekció (vízbázisú vial)",
-      "routeNote": "Maximális bioavailability (100%) — az oral ~15%-ával szemben a teljes dózis bejut. Performance-fókuszú pre-workout protokoll: 500-1000 mg SC injection 30-60 perccel edzés előtt. Dose-equivalent ~4-6x az oralishoz képest, gyorsabb steady-state elérés 1-2 hét alatt.",
+      "routeLabel": {
+        "hu": "L-Carnitine Tartrate (IM/SC vizes ampulla, 100% bioavailability)",
+        "en": "L-Carnitine Tartrate (IM/SC aqueous ampoule, 100% bioavailability)",
+        "pl": "L-Karnityna Tartrate (IM/SC ampułka wodna, 100% biodostępność)"
+      },
+      "routeNote": {
+        "hu": "Maximális bioavailability (100%) — az oral ~15%-ával szemben a teljes dózis bejut. Performance-fókuszú pre-workout protokoll: 500-1000 mg SC injection 30-60 perccel edzés előtt. Dose-equivalent ~4-6x az oralishoz képest, gyorsabb steady-state elérés 1-2 hét alatt.",
+        "en": "Maximum bioavailability (100%) — versus oral ~15%, the full dose enters circulation. Performance-focused pre-workout protocol: 500-1000 mg SC injection 30-60 minutes before training. Dose-equivalent ~4-6x oral, faster steady-state reached within 1-2 weeks.",
+        "pl": "Maksymalna biodostępność (100%) — w porównaniu do doustnej ~15%, cała dawka trafia do krążenia. Protokół przedtreningowy zorientowany na wydolność: 500-1000 mg iniekcja SC 30-60 minut przed treningiem. Dawka-równoważnik ~4-6x w stosunku do doustnej, szybsze osiągnięcie stanu stacjonarnego w ciągu 1-2 tygodni."
+      },
       "label": "IM/SC injekció",
       "image": "/performance/water-vial.png",
       "defaultVialMg": 1000,
@@ -92,7 +120,11 @@ export default {
       "defaultDoseMcg": 500000,
       "legalStatus": "Rx-only (IM/SC formulation), FDA-jóváhagyott Carnitor IV/IM (Sigma-Tau) primary carnitine deficiency-re. EU + HU + PL Rx-only.",
       "bioavailability": "~100% (IM/SC bypass-olja first-pass-loss-t)",
-      "onsetTime": "30-60 perc (IM/SC abszorpció)",
+      "onsetTime": {
+        "hu": "30-60 perc (IM/SC abszorpció)",
+        "en": "30-60 minutes (IM/SC absorption)",
+        "pl": "30-60 minut (wchłanianie IM/SC)"
+      },
       "halfLife": "~15 óra",
       "halfLifeActive": "~15 óra",
       "detectionWindow": "NADA Germany 2018 monitored-kategória >50 mg/kg IV-bolus dose-on; standard WADA-test NEM detektálja",
@@ -116,12 +148,20 @@ export default {
         ]
       },
       "indications": "Performance-fókuszú cutting-cycle — bioavailability-előny + dose-equivalent 4-6x oral-felett (Sigma-Tau Carnitor IM clinical Rx-context). Pre-workout SC 500-1000 mg edzés előtt 30-60 perccel.",
-      "dosing": "200-1000 mg/injekció IM/SC 2-3x/hét cutting-cycle (8-12 hét cycle-length). Tipikus performance-dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampulla 1 g/5 mL.",
+      "dosing": {
+        "hu": "200-1000 mg/injekció IM/SC 2-3x/hét cutting-cycle (8-12 hét cycle-length). Tipikus performance-dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampulla 1 g/5 mL.",
+        "en": "200-1000 mg/injection IM/SC 2-3x/week cutting-cycle (8-12 week cycle length). Typical performance dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampoule 1 g/5 mL.",
+        "pl": "200-1000 mg/iniekcja IM/SC 2-3x/tydzień cutting-cycle (długość cyklu 8-12 tygodni). Typowa dawka wydolnościowa: 500 mg SC przed treningiem. Standardowa ampułka Sigma-Tau Carnitor 1 g/5 mL."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 200, "medium": 500, "high": 1000 },
         "unit": "mg/injekció",
-        "note": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral."
+        "note": {
+          "hu": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral.",
+          "en": "IM/SC 200-1000 mg/injection 2-3x/week cutting-cycle (8-12 weeks). Typical 1 g ampoule (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state faster than oral.",
+          "pl": "IM/SC 200-1000 mg/iniekcja 2-3x/tydzień cutting-cycle (8-12 tygodni). Typowa ampułka 1 g (5 mL) — 500 mg = 2.5 mL przed treningiem SC. Biodostępność 100%, stan stacjonarny szybszy niż doustnie."
+        }
       }
     }
   ],
