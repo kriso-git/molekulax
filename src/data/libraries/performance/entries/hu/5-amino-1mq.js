@@ -100,16 +100,16 @@ export default {
   ],
   "studies": [
     {
-      "title": "Nicotinamide N-methyltransferase knockdown protects against diet-induced obesity",
-      "authors": "Kraus D, Yang Q, Kong D, Banks AS, Zhang L, Rodgers JT, et al.",
-      "journal": "Nature. 2014;508(7495):258-262.",
-      "pmid": "24717513"
+      "title": "Genetic Nicotinamide N-Methyltransferase (Nnmt) Deficiency in Male Mice Improves Insulin Sensitivity in Diet-Induced Obesity.",
+      "authors": "Brachs S, Polack J, Brachs M, Jahn-Hofmann K, Elvert R, Pfenninger A, Bärenz F, Margerie D, Mai K, Spranger J, Kannt A",
+      "journal": "Diabetes",
+      "pmid": "30552109"
     },
     {
-      "title": "Selective inhibitors of nicotinamide N-methyltransferase (NNMT): in silico and in vitro evaluation",
-      "authors": "Neelakantan H, Vance V, Wetzel MD, Wang HL, McHardy SF, Finnerty CC, Hommel JD, Watowich SJ.",
-      "journal": "Bioorg Med Chem Lett. 2017;27(15):3231-3234.",
-      "pmid": "28533098"
+      "title": "Identification of novel Piperazine based bisubstrate inhibitors of human nicotinamide N-methyltransferase (hNNMT) with potent enzyme inhibition.",
+      "authors": "Harikrishna AS, Kesavan V",
+      "journal": "Bioorg Med Chem",
+      "pmid": "40961781"
     },
     {
       "title": "Nicotinamide riboside is uniquely and orally bioavailable in mice and humans",
