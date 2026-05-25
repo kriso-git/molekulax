@@ -78,45 +78,61 @@ export default {
     {
       "id": "oral",
       "routeId": "oral",
-      "routeLabel": "Doustny (tabletka)",
-      "routeNote": "Klasyczny format Superdrol: tabletka 17α-metylowana, czas półtrwania ~6–8 h. Dramatyczny wzrost masy i siły, ALE to najbardziej hepatotoksyczny głównonurtowy doustny AAS. Stosuj krótkie cykle (max 4 tygodnie) z obowiązkowym monitoringiem wątroby.",
+      "routeLabel": {
+        "hu": "Methyldrostanolone (Superdrol orális tabletta, 17α-metilezett)",
+        "en": "Methyldrostanolone (Superdrol oral tablet, 17α-methylated)",
+        "pl": "Methyldrostanolon (Superdrol tabletka doustna, 17α-metylowany)"
+      },
+      "routeNote": {
+        "hu": "Klasszikus Superdrol-formátum: 17α-metilezett tabletta, ~6-8 óra felezési idő. Drámai izomtömeg-növekedés és erőnövekedés, DE ez a leghepatotoxikusabb mainstream orális AAS. Rövid ciklushoz (max 4 hét) és kötelező máj-monitoringhoz tartsd magad.",
+        "en": "Classic Superdrol format: 17α-methylated tablet, ~6-8 hour half-life. Dramatic muscle mass and strength gains, BUT this is the most hepatotoxic mainstream oral AAS. Stick to short cycles (max 4 weeks) and mandatory liver monitoring.",
+        "pl": "Klasyczny format Superdrolu: tabletka 17α-metylowana, ~6-8 godzin okres półtrwania. Dramatyczny przyrost masy mięśniowej i siły, ALE to najbardziej hepatotoksyczny mainstreamowy doustny AAS. Trzymaj się krótkich cykli (maksymalnie 4 tygodnie) i obowiązkowego monitorowania wątroby."
+      },
       "image": "/performance/tablet-pile-white.png",
-      "legalStatus": "USA: substancja kontrolowana Schedule III (DASCA 2012). UE: kontrolowany steryd anaboliczny, nielegalny bez recepty, niesprzedawany w HU/PL. WADA: zakazany w sporcie wyczynowym.",
-      "bioavailability": "~75% (doustna, grupa 17α-metylowa odporna na first-pass; dane referencyjne klasy c17-AA)",
-      "onsetTime": "7–14 dni (masa mięśniowa)",
-      "halfLife": "6–8 godzin (związek wyjściowy, brak aktywnego metabolitu)",
-      "halfLifeActive": "6–8 h",
-      "detectionWindow": "4–6 tygodni mocz (metabolity metylowane: 17α-metyl-5α-androstan-3α-ol-17β-on, laboratorium akredytowane WADA).",
+      "legalStatus": "USA: Schedule III kontrollált szer (DASCA 2012). EU: kontrollált anabolikus szteroid, vény nélkül illegális, HU/PL piacon nem értékesíthető. WADA: tiltott versenysportban.",
+      "bioavailability": "~75% (orális, 17α-metil-csoport first-pass-resistant; c17-AA osztály referencia-adat)",
+      "onsetTime": {
+        "hu": "7-14 nap (izomtömeg)",
+        "en": "7-14 days (muscle mass)",
+        "pl": "7-14 dni (masa mięśniowa)"
+      },
+      "halfLife": "6-8 óra (parent compound, no active metabolite)",
+      "halfLifeActive": "6-8 h",
+      "detectionWindow": "4-6 hét vizelet (metilezett metabolitok: 17α-metil-5α-androsztán-3α-ol-17β-on, WADA-akkreditált laborban).",
       "aromatization": "none",
       "hepatotoxicity": "very-high",
       "androgenicRatio": "400:20",
-      "dosing": "10–30 mg/dzień doustnie, w 1–2 dawkach podzielonych. Maksymalnie 4–6 tygodni cyklu — hepatotoksyczność jest kumulatywna. Utrata apetytu i objawy 'Superdrol-flu' są częste powyżej 20 mg/dzień. TUDCA 500–750 mg/dzień + NAC 1200 mg/dzień obowiązkowe przez cały cykl.",
+      "dosing": {
+        "hu": "10-30 mg/nap orálisan, napi 1-2 osztott dózisban. Maximum 4-6 hét ciklus — a hepatotoxicitás kumulatív. Étvágyvesztés és \"Superdrol-flu\" tünetek gyakoriak 20 mg felett. TUDCA 500-750 mg/nap + NAC 1200 mg/nap kötelező a teljes ciklus alatt.",
+        "en": "10-30 mg/day orally, 1-2 split doses per day. Maximum 4-6 week cycle — hepatotoxicity is cumulative. Appetite loss and \"Superdrol flu\" symptoms common above 20 mg. TUDCA 500-750 mg/day + NAC 1200 mg/day mandatory throughout the cycle.",
+        "pl": "10-30 mg/dzień doustnie, 1-2 dawki podzielone dziennie. Maksymalnie 4-6 tygodni cyklu — hepatotoksyczność jest kumulacyjna. Utrata apetytu i objawy \"Superdrol flu\" częste powyżej 20 mg. TUDCA 500-750 mg/dzień + NAC 1200 mg/dzień obowiązkowo przez cały cykl."
+      },
       "quality": {
         "pure": [
-          "Czysty biały proszek lub kapsułki",
-          "Niezależnie testowane HPLC źródło (rynek UGL często fałszowany)"
+          "Tiszta fehér por vagy kapszula",
+          "Független HPLC-tesztelt forrás (UGL piacon gyakori a hamisítás)"
         ],
         "caution": [
-          "EKSTREMALNY NADCIŚNIENIE: codzienne monitorowanie ciśnienia krwi obowiązkowe; skurczowe >150 mmHg wskazanie do przerwania cyklu",
-          "Hepatotoksyczność (wzrost ALT/AST, rzadko żółtaczka cholestatyczna, udokumentowane przypadki martwicy tkanki wątrobowej)",
-          "Ciężkie pogorszenie lipidów: HDL drastycznie spada (>30%, ryzyko sercowo-naczyniowe)",
-          "Utrata apetytu, nudności, bóle głowy ('Superdrol-flu') — szczególnie powyżej 20 mg/dzień",
-          "Cholestaza: gromadzenie kwasów żółciowych w komórkach wątroby; świąd skóry jest sygnałem ostrzegawczym",
-          "Psychologiczne: agresja, drażliwość, lęk",
-          "Ostre uszkodzenie nerek (AKI): Nasr 2009 case report (PMID 18720005) udokumentował indukowaną przez Methasterone żółtaczkę cholestatyczną + AKI"
+          "EXTRÉM HIPERTONIA: vérnyomás napi mérés kötelező, szisztolés >150 Hgmm ciklus-megszakítás indikáció",
+          "Hepatotoxicitás (ALT/AST emelkedés, ritkán cholesztatikus jaundice, dokumentált máj-szövet-elhalás esetek)",
+          "Súlyos lipid-leromlás: HDL drastikusan csökken (>30%, kardiovaszkuláris kockázat)",
+          "Étvágytalanság, hányinger, fejfájás (\"Superdrol-flu\") — különösen >20 mg/nap felett",
+          "Kolesztázis (cholestasis): epesav-felhalmozódás a máj-sejtekben, bőr-viszketés figyelmeztető jel",
+          "Pszichológiai: agresszió, irritáció, anxietás",
+          "Akut vesekárosodás (AKI): Nasr 2009 case report (PMID 18720005) Methasterone-indukált cholesztatikus jaundice + AKI-t dokumentált"
         ],
         "avoid": [
-          "Jakakolwiek istniejąca dysfunkcja wątroby (stłuszczenie, zapalenie, podwyższona linia bazowa ALT/AST) bezwzględne przeciwwskazanie",
-          "Alkohol, NLPZ, paracetamol jednoczesne stosowanie ściśle zabronione",
-          "Inne 17α-alkilowane AAS (Dianabol, Anadrol, Winstrol) kombinacja ekstremalnie hepatotoksyczna",
-          "Ryzyko sercowo-naczyniowe (historia rodzinna, wysokie LDL, nadciśnienie) bezwzględne przeciwwskazanie"
+          "Bármilyen meglévő máj-zavar (zsírmáj, hepatitis, ALT/AST emelt baseline) abszolút kontraindikáció",
+          "Alkohol, NSAID-ok, paracetamol egyidejű használata szigorúan tilos",
+          "Más 17α-alkilált AAS-szal (Dianabol, Anadrol, Winstrol) kombinálás extrém hepatotoxikus",
+          "Kardiovaszkuláris kockázat (családi anamnézis, magas LDL, hipertónia) abszolút kontraindikáció"
         ]
       },
       "interactions": [
-        "Inne 17α-alkilowane AAS (Dianabol, Anadrol, Winstrol) kombinacja ekstremalnie hepatotoksyczna",
-        "Dodanie podstawy testosteronowej redukuje objawy supresji endogennego T",
-        "PCT (Clomid 50mg/dzień + Nolvadex 20mg/dzień, 4 tygodnie) obowiązkowy",
-        "Terapia statynami przeciwwskazana (skumulowana hepatotoksyczność)"
+        "Más 17α-alkilált AAS (Dianabol, Anadrol, Winstrol) egyidejű használata extrém hepatotoxikus",
+        "Testosterone-base hozzáadása csökkenti az endogén T-szuppresszió tüneteit",
+        "PCT (Clomid 50mg/nap + Nolvadex 20mg/nap, 4 hét) kötelező",
+        "Statin-terápia esetén kontraindikált (kombinált hepatotoxicitás)"
       ],
       "doseCalc": {
         "type": "fixed",
@@ -126,54 +142,74 @@ export default {
           "high": 30
         },
         "unit": "mg/day",
-        "note": "MAKSYMALNIE 4 tygodnie cyklu — NIGDY dłużej. TUDCA 500–750 mg/dzień + NAC 1200 mg/dzień przez cały cykl. ALT/AST 3× górnej normy = NATYCHMIAST stop + badania wątroby w ciągu 2 tygodni. PCT (Clomid + Nolvadex 4 tygodnie) obowiązkowy. Ciśnienie krwi codziennie."
+        "note": {
+          "hu": "MAXIMUM 4 hét ciklus — NIKADA tovább. TUDCA 500-750 mg/nap + NAC 1200 mg/nap a teljes ciklus alatt. ALT/AST 3x felső normál esetén AZONNAL leállítás + máj-labor 2 héten belül. PCT (Clomid + Nolvadex 4 hét) kötelező. Vérnyomás naponta.",
+          "en": "MAXIMUM 4-week cycle — NEVER longer. TUDCA 500-750 mg/day + NAC 1200 mg/day throughout the cycle. If ALT/AST 3x upper normal, STOP IMMEDIATELY + liver labs within 2 weeks. PCT (Clomid + Nolvadex 4 weeks) mandatory. Blood pressure daily.",
+          "pl": "MAKSYMALNIE 4-tygodniowy cykl — NIGDY dłużej. TUDCA 500-750 mg/dzień + NAC 1200 mg/dzień przez cały cykl. Jeśli ALT/AST 3x górna granica normy, NATYCHMIASTOWE PRZERWANIE + badania wątroby w ciągu 2 tygodni. PCT (Clomid + Nolvadex 4 tygodnie) obowiązkowo. Ciśnienie krwi codziennie."
+        }
       }
     },
     {
       "id": "injectable",
       "routeId": "injectable",
-      "routeLabel": "Domięśniowy (zastrzyk)",
-      "routeNote": "Rzadki format UGL 'Methyl-Drol' w-oleju: ominięcie hepatycznego first-pass zmniejsza — ale NIE eliminuje — stresu wątrobowego. Grupa 17α-metylowa pozostaje hepatotoksyczna również przy podaniu IM. Wolniejszy onset (kinetyka depo), dłuższe okno detekcji. Rozważ tylko jeśli hepatotoksyczność doustna jest nietolerowana; ryzyko nie jest zerowe.",
+      "routeLabel": {
+        "hu": "Methyldrostanolone (Methyl-Drol in-oil IM, UGL depot)",
+        "en": "Methyldrostanolone (Methyl-Drol in-oil IM, UGL depot)",
+        "pl": "Methyldrostanolon (Methyl-Drol in-oil IM, depot UGL)"
+      },
+      "routeNote": {
+        "hu": "Ritka UGL \"Methyl-Drol\" in-oil formátum: a hepatikus first-pass megkerülésével a máj-stressz csökken, de NEM tűnik el — a 17α-metil-csoport az IM-route-nál is hepatotoxikus. Lassabb felfutás (depot-kinetika), hosszabb detekciós ablak. Akkor érdemes, ha az orális hepatotoxicitás intolerabilis, DE a kockázat nem nulla.",
+        "en": "Rare UGL \"Methyl-Drol\" in-oil format: bypassing hepatic first-pass reduces liver stress but does NOT eliminate it — the 17α-methyl group remains hepatotoxic even via IM route. Slower onset (depot kinetics), longer detection window. Worth considering if oral hepatotoxicity is intolerable, BUT the risk is not zero.",
+        "pl": "Rzadki format UGL \"Methyl-Drol\" in-oil: ominięcie wątrobowego first-pass zmniejsza stres wątrobowy, ale NIE eliminuje go — grupa 17α-metylowa pozostaje hepatotoksyczna nawet drogą IM. Wolniejsze rozpoczęcie (kinetyka depot), dłuższe okno detekcji. Warto rozważyć, jeśli hepatotoksyczność doustna jest nie do zniesienia, ALE ryzyko nie jest zerowe."
+      },
       "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Nie jest licencjonowanym formatem — wyłącznie UGL (underground lab) rynek podziemny. Wytwarzanie, posiadanie, stosowanie nielegalne wszędzie. WADA: zakazany.",
-      "bioavailability": "~100% (iniekcja IM omija first-pass; methyldrostanolone rozpuszczony w oleju z powolnym uwalnianiem depo)",
-      "onsetTime": "10–21 dni (wolniejsza rampa niż doustna, kinetyka depo)",
-      "halfLife": "8–12 godzin (uwalnianie z depo w oleju; niezestryfikowany methyldrostanolone)",
-      "halfLifeActive": "8–12 h",
-      "detectionWindow": "6–12 tygodni mocz (dłużej niż doustny z powodu wchłaniania depo, laboratorium akredytowane WADA).",
+      "legalStatus": "Nem licencelt formátum — kizárólag UGL (underground lab) underground market. Mindenhol illegális gyártás + birtoklás + felhasználás. WADA: tiltott.",
+      "bioavailability": "~100% (IM injekció bypass-olja a first-pass-t; methyldrostanolone olajban oldva slow depot-felszívódással)",
+      "onsetTime": {
+        "hu": "10-21 nap (lassabb felfutás mint orálnál, depot-kinetika miatt)",
+        "en": "10-21 days (slower onset than oral due to depot kinetics)",
+        "pl": "10-21 dni (wolniejsze rozpoczęcie niż doustnie z powodu kinetyki depot)"
+      },
+      "halfLife": "8-12 óra (in-oil depot release; non-észtertelt methyldrostanolone)",
+      "halfLifeActive": "8-12 h",
+      "detectionWindow": "6-12 hét vizelet (hosszabb mint az orálnál a depot-felszívódás miatt, WADA-akkreditált laborban).",
       "aromatization": "none",
       "hepatotoxicity": "very-high",
       "androgenicRatio": "400:20",
       "defaultVialMg": 500,
       "defaultBacMl": 10,
       "defaultDoseMcg": 50000,
-      "dosing": "50 mg EOD (co drugi dzień) IM, typowo vastus lateralis lub ventrogluteal. Standard UGL: 50 mg/ml × fiolka 10 ml. Maksymalnie 6 tygodni cyklu. TUDCA 500 mg/dzień + NAC 1200 mg/dzień obowiązkowe przez cały cykl.",
+      "dosing": {
+        "hu": "50 mg EOD (minden második nap) IM, tipikusan vastus lateralis vagy ventrogluteal. UGL standard: 50 mg/ml × 10 ml fiola. Maximum 6 hét ciklus. TUDCA 500 mg/nap + NAC 1200 mg/nap kötelező a teljes ciklus alatt.",
+        "en": "50 mg EOD (every-other-day) IM, typically vastus lateralis or ventrogluteal. UGL standard: 50 mg/mL × 10 mL vial. Maximum 6-week cycle. TUDCA 500 mg/day + NAC 1200 mg/day mandatory throughout the cycle.",
+        "pl": "50 mg EOD (co drugi dzień) IM, typowo vastus lateralis lub ventrogluteal. Standard UGL: 50 mg/mL × 10 mL fiolka. Maksymalnie 6-tygodniowy cykl. TUDCA 500 mg/dzień + NAC 1200 mg/dzień obowiązkowo przez cały cykl."
+      },
       "quality": {
         "pure": [
-          "Czysty bladożółty olej (~#fef08a ton), fiolka 10 ml, sterylnie filtrowana",
-          "UGL źródło testowane HPLC obowiązkowe (fałszowanie i przedawkowanie częste)"
+          "Tiszta sárgás-lemon olaj (~#fef08a tónus), 10ml fiola, sterilen szűrt",
+          "UGL HPLC-tesztelt forrás kötelező (hamisítás és túladagolás gyakoriak)"
         ],
         "caution": [
-          "EKSTREMALNY NADCIŚNIENIE: tak samo jak przy doustnym — codzienne monitorowanie ciśnienia krwi obowiązkowe (efekt klasy 17α-metylowej)",
-          "Ból/podrażnienie miejsca iniekcji (IM methyldrostanolone w oleju notoryjnie bolesny — vastus lateralis lub ventrogluteal preferowane)",
-          "Hepatotoksyczność (grupa 17α-metylowa aktywna również przy podaniu IM): wzrost ALT/AST, ryzyko cholestazy zmniejszone ale NIE zerowe",
-          "Ciężkie pogorszenie lipidów: HDL drastycznie spada (ryzyko sercowo-naczyniowe — tak samo jak doustny)",
-          "Utrata apetytu, nudności (objawy 'Superdrol-flu' mogą wystąpić również przy iniekcyjnym)",
-          "Psychologiczne: agresja, drażliwość, lęk",
-          "Powolna rampa + długie wykrywanie — szczególnie ryzykowne w pobliżu zawodów"
+          "EXTRÉM HIPERTONIA: ugyanaz mint orálnál — vérnyomás napi mérés kötelező (17α-metil-osztály hatás)",
+          "Injection site irritáció/fájdalom (IM, methyldrostanolone in-oil notorikusan fájdalmas — vastus lateralis vagy ventrogluteal preferálása)",
+          "Hepatotoxicitás (17α-metil-csoport IM-route-nál is aktív): ALT/AST emelkedés, kolesztázis kockázat csökkentett de NEM nulla",
+          "Súlyos lipid-leromlás: HDL drastikusan csökken (kardiovaszkuláris kockázat — ugyanaz mint orálnál)",
+          "Étvágytalanság, hányinger (\"Superdrol-flu\" tünetek IM-nál is előfordulnak)",
+          "Pszichológiai: agresszió, irritáció, anxietás",
+          "Lassú felfutás + hosszú detekció — verseny közelében különösen kockázatos"
         ],
         "avoid": [
-          "Jakakolwiek istniejąca dysfunkcja wątroby bezwzględne przeciwwskazanie (obniżona ale niezerowa hepatotoksyczność)",
-          "Alkohol, NLPZ jednoczesne stosowanie ściśle zabronione",
-          "Ryzyko sercowo-naczyniowe (historia rodzinna, wysokie LDL, nadciśnienie) bezwzględne przeciwwskazanie",
-          "Brak techniki aseptycznej iniekcji (ryzyko ropnia, zakażenia rany)"
+          "Bármilyen meglévő máj-zavar abszolút kontraindikáció (csökkentett, de nem nulla hepatotoxicitás)",
+          "Alkohol, NSAID-ok egyidejű használata szigorúan tilos",
+          "Kardiovaszkuláris kockázat (családi anamnézis, magas LDL, hipertónia) abszolút kontraindikáció",
+          "Aszeptikus injekciós technika hiánya (abszcessz, sebfertőzés kockázat)"
         ]
       },
       "interactions": [
-        "Jednoczesne stosowanie innych AAS zwiększa supresję HPTA i zaburzenia lipidowe",
-        "Dodanie podstawy testosteronowej redukuje objawy supresji endogennego T",
-        "PCT (Clomid 50mg/dzień + Nolvadex 20mg/dzień, 4–6 tygodni) obowiązkowy",
-        "Inhibitor aromatazy (Anastrozol, Letrozol) NIE potrzebny (brak aromatyzacji)"
+        "Más AAS egyidejű használata fokozza a HPTA-szuppressziót és lipid-zavart",
+        "Testosterone-base hozzáadása csökkenti az endogén T-szuppresszió tüneteit",
+        "PCT (Clomid 50mg/nap + Nolvadex 20mg/nap, 4-6 hét) kötelező",
+        "Aromatáz-inhibitor (Anastrozol, Letrozol) NEM szükséges (nincs aromatizáció)"
       ],
       "doseCalc": {
         "type": "fixed",
@@ -183,7 +219,11 @@ export default {
           "high": 100
         },
         "unit": "mg/inj",
-        "note": "50 mg EOD (co drugi dzień) IM — maksymalnie 6 tygodni cyklu. TUDCA 500 mg/dzień + NAC 1200 mg/dzień obowiązkowe (grupa 17α-metylowa uzasadnia wsparcie wątroby nawet przy formie iniekcyjnej). ALT/AST 3× górnej normy = NATYCHMIAST stop. PCT (Clomid + Nolvadex 4–6 tygodni) obowiązkowy. Ciśnienie krwi codziennie."
+        "note": {
+          "hu": "50 mg EOD (minden második nap) IM — maximum 6 hét ciklus. TUDCA 500 mg/nap + NAC 1200 mg/nap kötelező (a 17α-metil miatt máj-támogatás IM-nál is szükséges). ALT/AST 3x felső normál esetén AZONNAL leállítás. PCT (Clomid + Nolvadex 4-6 hét) kötelező. Vérnyomás naponta.",
+          "en": "50 mg EOD (every-other-day) IM — maximum 6-week cycle. TUDCA 500 mg/day + NAC 1200 mg/day mandatory (liver support needed even IM due to 17α-methyl group). If ALT/AST 3x upper normal, STOP IMMEDIATELY. PCT (Clomid + Nolvadex 4-6 weeks) mandatory. Blood pressure daily.",
+          "pl": "50 mg EOD (co drugi dzień) IM — maksymalnie 6-tygodniowy cykl. TUDCA 500 mg/dzień + NAC 1200 mg/dzień obowiązkowo (wsparcie wątroby potrzebne nawet IM z powodu grupy 17α-metylowej). Jeśli ALT/AST 3x górna granica normy, NATYCHMIASTOWE PRZERWANIE. PCT (Clomid + Nolvadex 4-6 tygodni) obowiązkowo. Ciśnienie krwi codziennie."
+        }
       }
     }
   ],
