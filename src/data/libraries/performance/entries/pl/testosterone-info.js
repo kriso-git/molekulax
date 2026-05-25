@@ -214,36 +214,52 @@ export default {
   "variants": [
     {
       "routeId": "prop",
-      "routeLabel": "Testosteron Propionat (IM, szybki)",
-      "routeNote": "Szybki ester (~19h okres półtrwania), wymagany harmonogram EOD; szybkie przejście do PCT (ostatnia iniekcja +3-5 dni).",
-      "dosing": "300–700 mg/tydzień IM, podzielone 3× EOD (pon/śr/pt). Standardowa dawka kulturystyczna powyżej zakresu TRT.",
+      "routeLabel": {
+        "hu": "Testosterone Propionate (Test-Prop, gyors észter)",
+        "en": "Testosterone Propionate (Test-Prop, fast ester)",
+        "pl": "Testosteron Propionian (Test-Prop, szybki ester)"
+      },
+      "routeNote": {
+        "hu": "Gyors észter (~19h), EOD ütemezés szükséges; gyors PCT-átmenet (utolsó injekció +3-5 nap).",
+        "en": "Fast ester (~19h), EOD scheduling required; fast PCT transition (last injection +3-5 days).",
+        "pl": "Szybki ester (~19h), wymagany harmonogram EOD; szybkie przejście PCT (ostatnia iniekcja +3-5 dni)."
+      },
+      "dosing": {
+        "hu": "300–700 mg/hét IM, 3× EOD osztva (hétfő/szerda/péntek). Standard TRT-felett bodybuilding-doseban.",
+        "en": "300–700 mg/week IM, split 3x EOD (Mon/Wed/Fri). Standard above-TRT bodybuilding dose.",
+        "pl": "300–700 mg/tydzień IM, podzielone 3x EOD (pon/śr/pt). Standardowa dawka kulturystyczna powyżej TRT."
+      },
       "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Rx (Testosteron Propionat, rzadziej produkowany niż Cyp/Enan, Rx w niektórych krajach UE). Zakaz WADA.",
+      "legalStatus": "Rx (Testosterone Propionate, ritkábban gyártott mint Cyp/Enan, néhány EU országban Rx). WADA tiltott.",
       "bioavailability": "~95-100% (IM)",
-      "onsetTime": "24-48 h (IM, fast-acting propionat)",
-      "halfLife": "~19 h (ester propionat; krótszy niż Enan/Cyp)",
-      "halfLifeActive": "~19 h",
-      "detectionWindow": "2-3 tygodnie w moczu (krótsze niż Enan/Cyp).",
-      "aromatization": "Tak — macierzysty steroid Test, substrat CYP19; wszystkie estry Test mają ten sam wskaźnik aromatyzacji.",
-      "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; IM pomija first-pass.",
+      "onsetTime": {
+        "hu": "24-48 óra (IM, fast-acting propionát)",
+        "en": "24-48 hours (IM, fast-acting propionate)",
+        "pl": "24-48 godzin (IM, szybko działający propionian)"
+      },
+      "halfLife": "~19 óra (Propionát észter; rövidebb mint Enan/Cyp)",
+      "halfLifeActive": "~19 óra",
+      "detectionWindow": "2-3 hét vizelet (rövidebb mint Enan/Cyp, propionát rövid észter miatt).",
+      "aromatization": "Igen — Test parent szteroid, CYP19 szubsztrát; minden Test-észternél azonos aromatizációs arány.",
+      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; IM bypass-olja a first-pass-t.",
       "quality": {
         "pure": [
-          "Klarowny jasnożółty lub wodno-klarowny olej, fiolka 10 ml, sterylnie filtrowana",
+          "Tiszta halványsárga vagy víztiszta olaj, 10ml fiola, sterilen szűrt",
           "Rx-grade: Bayer Testoviron-Depot Prop (DE), Schering Testovis (IT)"
         ],
         "caution": [
-          "Ból w miejscu wstrzyknięcia (PIP): propionat w pojeździe alkoholowym często bolesny",
-          "Wymaga 3x tygodniowo EOD iniekcji ze względu na krótki okres półtrwania"
+          "Injection site pain (PIP): propionát alkohol-tartalmú vehikulumban gyakran fájdalmas",
+          "Heti 3x EOD injekció szükséges a rövid felezés miatt"
         ],
         "avoid": [
-          "Silna wrażliwość w miejscu wstrzyknięcia (alternatywa: Enan/Cyp tygodniowo 1-2x)",
-          "Nieregularny harmonogram (iniekcja EOD jest wrażliwa na harmonogram)"
+          "Erős injection-site-érzékenység (alternatíva: Enan/Cyp heti 1-2x)",
+          "Rendszertelen időbeosztás (EOD-injekció ütemezés-érzékeny)"
         ]
       },
       "interactions": [
-        "Anastrozol: tylko jeśli laboratoryjnie potwierdzone wysokie E2",
-        "PCT (Clomid + Nolvadex 4 tygodnie) start ostatnia iniekcja +3-5 dni"
+        "Anastrozole: csak labor-igazolt magas E2 esetén",
+        "PCT (Clomid + Nolvadex 4 hét) utolsó injekció +3-5 nap után indul"
       ],
       "doseCalc": {
         "type": "fixed",
@@ -252,42 +268,62 @@ export default {
           "medium": 500,
           "high": 700
         },
-        "unit": "mg/tydzień (IM, podzielone 3x EOD)",
-        "note": "300-700 mg/tydzień, 3x EOD podzielone (pon/śr/pt). PCT ostatnia iniekcja +3-5 dni."
+        "unit": "mg/hét (IM, 3x EOD osztva)",
+        "note": {
+          "hu": "300-700 mg/hét, 3x EOD osztott (Mon/Wed/Fri). PCT utolsó injekció +3-5 nap.",
+          "en": "300-700 mg/week, split 3x EOD (Mon/Wed/Fri). PCT last injection +3-5 days.",
+          "pl": "300-700 mg/tydzień, podzielone 3x EOD (pon/śr/pt). PCT ostatnia iniekcja +3-5 dni."
+        }
       }
     },
     {
       "routeId": "enan",
-      "routeLabel": "Testosteron Enantat (IM, wolny)",
-      "routeNote": "Średni ester (10,5 dnia), wystarczy 1-2× tygodniowo; steady-state po 4-5 tygodniach. Standard UE dla TRT i cykli masowych.",
-      "dosing": "250–750 mg/tydzień IM, podzielone 1-2× tygodniowo (pon lub pon+czw). Cykle krótsze niż 4-6 tygodni NIE są efektywne.",
+      "routeLabel": {
+        "hu": "Testosterone Enanthate (Test-E, lassú észter)",
+        "en": "Testosterone Enanthate (Test-E, slow ester)",
+        "pl": "Testosteron Enanthate (Test-E, wolny ester)"
+      },
+      "routeNote": {
+        "hu": "Közepes észter (10,5 nap), heti 1-2× elég; steady-state 4-5 hét után. EU-preferált TRT és bulk-ciklus standard.",
+        "en": "Medium ester (10.5 days), 1-2x weekly suffices; steady-state after 4-5 weeks. EU-preferred TRT and bulk-cycle standard.",
+        "pl": "Średni ester (10,5 dnia), wystarczy 1-2x tygodniowo; stan stacjonarny po 4-5 tygodniach. Standard TRT preferowany w UE i cyklach bulk."
+      },
+      "dosing": {
+        "hu": "250–750 mg/hét IM, heti 1-2× osztva (Mon vagy Mon+Thu). 4-6 hét alatti ciklus NEM hatékony.",
+        "en": "250–750 mg/week IM, split 1-2x weekly (Mon or Mon+Thu). Cycles shorter than 4-6 weeks are NOT effective.",
+        "pl": "250–750 mg/tydzień IM, podzielone 1-2x tygodniowo (pon lub pon+czw). Cykle krótsze niż 4-6 tygodni NIE są skuteczne."
+      },
       "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Bayer Testoviron-Depot 250 mg/ml Enan (DE/UE szeroko Rx). Zakaz WADA.",
+      "legalStatus": "Bayer Testoviron-Depot 250 mg/ml Enan (DE/EU széles körben Rx). WADA tiltott.",
       "bioavailability": "~95-100% (IM)",
-      "onsetTime": "48-72 h (IM, steady-state 4-5 tygodni)",
-      "halfLife": "10,5 dnia (ester enantatowy)",
-      "halfLifeActive": "~24 h wolny T (po hydrolizie estru)",
-      "detectionWindow": "3-4 miesiące w moczu (długi ester).",
-      "aromatization": "Tak — ten sam wskaźnik dla wszystkich estrów Test.",
-      "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany.",
+      "onsetTime": {
+        "hu": "48-72 óra (IM, steady-state 4-5 hét)",
+        "en": "48-72 hours (IM, steady-state 4-5 weeks)",
+        "pl": "48-72 godziny (IM, stan stacjonarny 4-5 tygodni)"
+      },
+      "halfLife": "10,5 nap (Enantát észter)",
+      "halfLifeActive": "~24 óra szabad T (észter-hidrolízis után)",
+      "detectionWindow": "3-4 hónap vizelet (hosszú észter).",
+      "aromatization": "Igen — minden Test-észternél azonos arány (CYP19 substrate, Bhasin 1996).",
+      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; IM bypass.",
       "quality": {
         "pure": [
-          "Klarowny żółtawo-brązowy olej (~#f59e0b ton), fiolka 10 ml",
-          "Rx-grade: Bayer Testoviron-Depot (DE), Aspen Sustanon alternatywa"
+          "Tiszta sárgás-barnás olaj (~#f59e0b tónus), 10ml fiola",
+          "Rx-grade: Bayer Testoviron-Depot (DE), Aspen Sustanon-alternatíva"
         ],
         "caution": [
-          "Powolny początek: efekt wyczuwalny po 2-4 tygodniach",
-          "Tygodniowa 1-2x iniekcja (pon lub pon+czw)"
+          "Lassú onset: hatás 2-4 hét után érzékelhető",
+          "Heti 1-2x injekció (Mon vagy Mon+Thu)"
         ],
         "avoid": [
-          "Krótki cykl (4-6 tygodni) NIE skuteczny — steady-state dopiero po 4-5 tygodniach",
-          "Zawody testowane WADA <4 miesiące po planowanym końcu"
+          "Rövid (4-6 hét) ciklus NEM hatékony — steady-state 4-5 hét után",
+          "WADA-tesztelt verseny <4 hónap a tervezett vég után"
         ]
       },
       "interactions": [
-        "Anastrozol 0,5 mg E3D dose titration dla wysokiego E2",
-        "PCT start ostatnia iniekcja Enan +14-21 dni"
+        "Anastrozole 0,5 mg E3D dose-titrálás magas E2 esetén",
+        "PCT utolsó Enan-injekció +14-21 nap után indul"
       ],
       "doseCalc": {
         "type": "fixed",
@@ -296,41 +332,61 @@ export default {
           "medium": 500,
           "high": 750
         },
-        "unit": "mg/tydzień (IM, podzielone 1-2x)",
-        "note": "250-750 mg/tydzień, tygodniowo 1-2x. PCT ostatnia iniekcja +14-21 dni."
+        "unit": "mg/hét (IM, 1-2x osztva)",
+        "note": {
+          "hu": "250-750 mg/hét, heti 1-2x. PCT utolsó injekció +14-21 nap.",
+          "en": "250-750 mg/week, 1-2x weekly. PCT last injection +14-21 days.",
+          "pl": "250-750 mg/tydzień, 1-2x tygodniowo. PCT ostatnia iniekcja +14-21 dni."
+        }
       }
     },
     {
       "routeId": "cyp",
-      "routeLabel": "Testosteron Cypionat (IM, wolny, USA-preferowany)",
-      "routeNote": "Średni ester (~8 dni), dominacja na rynku USA; klinicznie ≈ Enantat (~2-dniowa różnica jest minimalna w praktyce). PCT ostatnia iniekcja +14-21 dni.",
-      "dosing": "250–750 mg/tydzień IM, podzielone 1-2× tygodniowo. Standard USA dla TRT i kulturystyki.",
+      "routeLabel": {
+        "hu": "Testosterone Cypionate (Test-C, lassú észter, USA-preferált)",
+        "en": "Testosterone Cypionate (Test-C, slow ester, USA-preferred)",
+        "pl": "Testosteron Cypionian (Test-C, wolny ester, preferowany w USA)"
+      },
+      "routeNote": {
+        "hu": "Közepes észter (~8 nap), USA piaci dominancia; klinikailag ≈ Enantát (~2 nap eltérés minimális gyakorlatban). PCT utolsó injekció +14-21 nap.",
+        "en": "Medium ester (~8 days), USA market dominance; clinically ≈ Enanthate (~2 day difference minimal in practice). PCT last injection +14-21 days.",
+        "pl": "Średni ester (~8 dni), dominacja na rynku USA; klinicznie ≈ Enanthate (~2 dni różnicy minimalne w praktyce). PCT ostatnia iniekcja +14-21 dni."
+      },
+      "dosing": {
+        "hu": "250–750 mg/hét IM, heti 1-2× osztva. USA-preferált TRT és bodybuilding standard.",
+        "en": "250–750 mg/week IM, split 1-2x weekly. USA-preferred TRT and bodybuilding standard.",
+        "pl": "250–750 mg/tydzień IM, podzielone 1-2x tygodniowo. Standard TRT preferowany w USA i kulturystyce."
+      },
       "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Pfizer Depo-Testosterone Cyp 200 mg/ml (dominacja rynku USA). HU/EU: rzadszy, Enan preferowany. Zakaz WADA.",
+      "legalStatus": "Pfizer Depo-Testosterone Cyp 200 mg/ml (USA piaci dominancia). HU/EU: ritkább, Enan a preferált. WADA tiltott.",
       "bioavailability": "~95-100% (IM)",
-      "onsetTime": "48-72 h (IM, steady-state 4-5 tygodni)",
-      "halfLife": "8 dni (ester cypionatowy, ~2 dni krótszy niż Enan)",
-      "halfLifeActive": "~24 h wolny T",
-      "detectionWindow": "3-4 miesiące w moczu.",
-      "aromatization": "Tak — ten sam wskaźnik dla wszystkich estrów Test.",
-      "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany.",
+      "onsetTime": {
+        "hu": "48-72 óra (IM, steady-state 4-5 hét)",
+        "en": "48-72 hours (IM, steady-state 4-5 weeks)",
+        "pl": "48-72 godziny (IM, stan stacjonarny 4-5 tygodni)"
+      },
+      "halfLife": "8 nap (Cypionát észter, ~2 nappal rövidebb mint Enan)",
+      "halfLifeActive": "~24 óra szabad T",
+      "detectionWindow": "3-4 hónap vizelet.",
+      "aromatization": "Igen — minden Test-észternél azonos arány.",
+      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált.",
       "quality": {
         "pure": [
-          "Klarowny jasnożółty olej, fiolka 10 ml, pojazd olejowy z nasion bawełny częsty",
+          "Tiszta halványsárga olaj, 10ml fiola, kossolajos vehikulum gyakori",
           "Rx-grade: Pfizer Depo-Testosterone (USA), Watson Cyp (USA)"
         ],
         "caution": [
-          "Klinicznie NIE różni się znacząco od Enantatu (8 vs 10,5 dnia minimalna praktyczna różnica)",
-          "USA-preferowany, rzadki w UE — na rynku UGL często wymienny z Enantatem"
+          "Klinikailag NEM különbözik szignifikánsan az Enantáttól (8 vs 10,5 nap minimális gyakorlati eltérés)",
+          "USA-preferált, EU-ban ritka — UGL piacon gyakran Enantáttal cserélhető"
         ],
         "avoid": [
-          "Tak samo jak Enantat (krótki cykl nieskuteczny, detekcja WADA 4 miesiące)"
+          "Ugyanaz mint Enantátnál (rövid ciklus nem hatékony, WADA detection 4 hónap)"
         ]
       },
       "interactions": [
-        "Anastrozol 0,5 mg E3D dla wysokiego E2",
-        "PCT start ostatnia iniekcja Cyp +14-21 dni"
+        "Anastrozole 0,5 mg E3D magas E2 esetén",
+        "PCT utolsó Cyp-injekció +14-21 nap után indul"
       ],
       "doseCalc": {
         "type": "fixed",
@@ -339,42 +395,62 @@ export default {
           "medium": 500,
           "high": 750
         },
-        "unit": "mg/tydzień (IM, podzielone 1-2x)",
-        "note": "250-750 mg/tydzień, tygodniowo 1-2x. PCT ostatnia iniekcja +14-21 dni."
+        "unit": "mg/hét (IM, 1-2x osztva)",
+        "note": {
+          "hu": "250-750 mg/hét, heti 1-2x. PCT utolsó injekció +14-21 nap.",
+          "en": "250-750 mg/week, 1-2x weekly. PCT last injection +14-21 days.",
+          "pl": "250-750 mg/tydzień, 1-2x tygodniowo. PCT ostatnia iniekcja +14-21 dni."
+        }
       }
     },
     {
       "routeId": "sus",
-      "routeLabel": "Sustanon-250 (mieszanka 4-estrowa Organon)",
-      "routeNote": "Mieszanka 4-estrowa (Prop+PhenylProp+Isokaproat+Dekanoat); zarządzanie peakami bardziej złożone niż w single-ester. PCT ostatnia iniekcja +18-21 dni (powolny klirens Dekanoatu).",
-      "dosing": "250–750 mg/tydzień IM, podzielone 1-2× tygodniowo (NIE raz w miesiącu jak w TRT). Alternatywa single-ester w dawce kulturystycznej.",
+      "routeLabel": {
+        "hu": "Sustanon-250 (Organon 4-ester blend: Prop+PhenylProp+Iso+Deca)",
+        "en": "Sustanon-250 (Organon 4-ester blend: Prop+PhenylProp+Iso+Deca)",
+        "pl": "Sustanon-250 (Organon mieszanka 4-estrów: Prop+PhenylProp+Iso+Deca)"
+      },
+      "routeNote": {
+        "hu": "4-ester keverék (Prop+PhenylProp+Isocaproate+Decanoate); peak-management komplexebb mint single-ester. PCT utolsó injekció +18-21 nap (Decanoate slow-clearance).",
+        "en": "4-ester blend (Prop+PhenylProp+Isocaproate+Decanoate); peak-management more complex than single-ester. PCT last injection +18-21 days (Decanoate slow-clearance).",
+        "pl": "Mieszanka 4-estrów (Prop+PhenylProp+Izokapronian+Dekanian); zarządzanie szczytami bardziej złożone niż single-ester. PCT ostatnia iniekcja +18-21 dni (wolny klirens Dekanianu)."
+      },
+      "dosing": {
+        "hu": "250–750 mg/hét IM, heti 1-2× osztva (NEM havi 1× mint TRT). Bodybuilding-doseban single-ester alternatíva.",
+        "en": "250–750 mg/week IM, split 1-2x weekly (NOT monthly 1x as for TRT). Single-ester alternative in bodybuilding doses.",
+        "pl": "250–750 mg/tydzień IM, podzielone 1-2x tygodniowo (NIE 1x miesięcznie jak przy TRT). Alternatywa single-ester w dawkach kulturystycznych."
+      },
       "androgenicRatio": "100:100",
       "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Aspen/Organon Sustanon-250 (ampułka 1 ml, 30mg Prop + 60mg PhenylProp + 60mg Isocaproate + 100mg Decanoate). UE Rx (HU/PL dostępny na polskiej/czeskiej recepcie). Zakaz WADA.",
+      "legalStatus": "Aspen/Organon Sustanon-250 (1ml ampulla, 30mg Prop + 60mg PhenylProp + 60mg Isocaproate + 100mg Decanoate). EU Rx (HU/PL elérhető lengyel/cseh receptre). WADA tiltott.",
       "bioavailability": "~95-100% (IM)",
-      "onsetTime": "24-48 h (komponent propionatowy fast-acting, Decanoate slow-acting)",
-      "halfLife": "Mieszany: 19h (Prop) - 15 dni (Decanoate); średni efektywny t½ ~7-8 dni",
-      "halfLifeActive": "~24 h wolny T (depot-driven)",
-      "detectionWindow": "3-4 miesiące w moczu (ze względu na komponent Decanoate).",
-      "aromatization": "Tak — wszystkie komponenty aromatyzują (baza Test).",
-      "hepatotoxicity": "Niska — mieszanka sterydów macierzystych, NIE 17α-alkilowana.",
+      "onsetTime": {
+        "hu": "24-48 óra (Propionát-komponens fast-acting, Decanoate slow-acting)",
+        "en": "24-48 hours (Propionate component fast-acting, Decanoate slow-acting)",
+        "pl": "24-48 godzin (komponent Propionian szybko działający, Dekanian wolno działający)"
+      },
+      "halfLife": "Mixed: 19h (Prop) - 15 nap (Decanoate); átlag effektív t½ ~7-8 nap",
+      "halfLifeActive": "~24 óra szabad T (depot-driven)",
+      "detectionWindow": "3-4 hónap vizelet (Decanoate komponens miatt).",
+      "aromatization": "Igen — minden komponens aromatizál (Test-bázis).",
+      "hepatotoxicity": "Alacsony — parent szteroid blend, NEM 17α-alkilált.",
       "quality": {
         "pure": [
-          "Aspen Sustanon-250 ampułka 1 ml (zakład Bilbao, etykieta holograficzna)",
-          "Pakistański Karachi-Sustanon (Organon-licencjonowany, ~6 EUR/ampułka, autentyczny)"
+          "Aspen Sustanon-250 1ml ampulla (Bilbao gyár, holografikus címke)",
+          "Pakisztáni Karachi-Sustanon (Organon-licenc, ~6 EUR/ampulla, autentikus)"
         ],
         "caution": [
-          "4-komponentowy peak-shifting: niestabilny poziom plasma single-dose (kombinacja peak-trough)",
-          "Pierwotnie opracowany dla TRT miesięcznej 1x iniekcji; tygodniowy dosing kulturystyczny osiągalny ALE peak-management bardziej złożony niż single-ester"
+          "4-komponens peak-shifting: nem stabil plasma-szint single-dose esetén (peak-trough kombináció)",
+          "Eredetileg TRT-ra fejlesztve havi 1x injekcióra; bodybuilding heti dosing megvalósítható DE peak-management komplexebb mint single-ester"
         ],
         "avoid": [
-          "Reakcja alergiczna na olej kokosowy lub jeden z estrów",
-          "Preferencja single-ester (Enan/Cyp prostszy peak-management)"
+          "Allergiás reakció a kókuszdió-olajra vagy egyik észterre",
+          "Single-ester preferencia esetén (Enan/Cyp egyszerűbb peak-management)"
         ]
       },
       "interactions": [
-        "Monitor E2 Anastrozol — Sustanon ma większe fluktuacje E2",
-        "PCT start ostatnia iniekcja Sustanon +18-21 dni (komponent Decanoate slow clearance)"
+        "Anastrozole E2 monitor — Sustanon esetén E2 fluktuációja nagyobb",
+        "PCT utolsó Sustanon-injekció +18-21 nap után indul (Decanoate komponens slow clearance)"
       ],
       "doseCalc": {
         "type": "fixed",
@@ -383,43 +459,63 @@ export default {
           "medium": 500,
           "high": 750
         },
-        "unit": "mg/tydzień (IM, podzielone 1-2x)",
-        "note": "250-750 mg/tydzień, tygodniowo 1-2x zalecane (NIE miesięcznie 1x jak TRT). PCT ostatnia iniekcja +18-21 dni."
+        "unit": "mg/hét (IM, 1-2x osztva)",
+        "note": {
+          "hu": "250-750 mg/hét, heti 1-2x ajánlott (NEM havi 1x mint TRT). PCT utolsó injekció +18-21 nap.",
+          "en": "250-750 mg/week, 1-2x weekly recommended (NOT monthly 1x as for TRT). PCT last injection +18-21 days.",
+          "pl": "250-750 mg/tydzień, zalecane 1-2x tygodniowo (NIE 1x miesięcznie jak przy TRT). PCT ostatnia iniekcja +18-21 dni."
+        }
       }
     },
     {
       "routeId": "aq",
-      "routeLabel": "Zawiesina Testosteronu (wodna, ultra-szybka)",
-      "routeNote": "Parent T (NIE jest estryfikowany), 1-3 godzinny onset; pre-workout boost. EKSTREMALNIE bolesna iniekcja (PIP od kryształów). Harmonogram dzienny/EOD.",
-      "dosing": "50–200 mg/iniekcję IM dziennie lub EOD. Pre-workout boost: 50-100 mg przyjęte 1-2 godziny przed treningiem.",
+      "routeLabel": {
+        "hu": "Testosterone Suspension (vizes mikrokristály, ultra-gyors)",
+        "en": "Testosterone Suspension (aqueous microcrystal, ultra-fast)",
+        "pl": "Testosteron Suspension (mikrokryształ wodny, ultra-szybki)"
+      },
+      "routeNote": {
+        "hu": "Parent T (NEM észter), 1-3 órás onset; pre-workout boost. EXTRA fájdalmas injekció (kristályok PIP). Napi/EOD ütemezés.",
+        "en": "Parent T (NOT esterified), 1-3 hour onset; pre-workout boost. EXTRA painful injection (microcrystal PIP). Daily/EOD scheduling.",
+        "pl": "Macierzysty T (NIE estryfikowany), 1-3 godzinny początek; przedtreningowy boost. EKSTRA bolesna iniekcja (PIP mikrokryształu). Codzienny/EOD harmonogram."
+      },
+      "dosing": {
+        "hu": "50–200 mg/injekció IM napi vagy EOD. Pre-workout boost-ra 50-100 mg edzés előtt 1-2 órával.",
+        "en": "50–200 mg/injection IM daily or EOD. For pre-workout boost 50-100 mg 1-2 hours before training.",
+        "pl": "50–200 mg/iniekcja IM codziennie lub EOD. Dla przedtreningowego boostu 50-100 mg 1-2 godziny przed treningiem."
+      },
       "androgenicRatio": "100:100",
       "image": "/performance/water-vial.png",
-      "legalStatus": "Rx rzadko (USA: Aquaviron), głównie UGL underground. UE: nie zarejestrowany. Zakaz WADA.",
-      "bioavailability": "~95-100% (IM, BEZ depot, bezpośrednia absorpcja)",
-      "onsetTime": "1-3 h (IM, ultra-szybki, NIE estryfikowany)",
-      "halfLife": "~24 h (macierzysty T, NIE ester)",
-      "halfLifeActive": "~24 h",
-      "detectionWindow": "1-2 tygodnie w moczu (krótsze niż formy estryfikowane).",
-      "aromatization": "Tak — macierzysty T, substrat CYP19.",
-      "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany.",
+      "legalStatus": "Rx ritkán (USA: Aquaviron), mostly UGL underground. EU: nem törzskönyvezett. WADA tiltott.",
+      "bioavailability": "~95-100% (IM, depot NÉLKÜLI direct absorption)",
+      "onsetTime": {
+        "hu": "1-3 óra (IM, ultra-gyors, NEM észteresített)",
+        "en": "1-3 hours (IM, ultra-fast, NOT esterified)",
+        "pl": "1-3 godziny (IM, ultra-szybki, NIE estryfikowany)"
+      },
+      "halfLife": "~24 óra (parent T, NEM észter)",
+      "halfLifeActive": "~24 óra",
+      "detectionWindow": "1-2 hét vizelet (rövidebb mint észteresített formák).",
+      "aromatization": "Igen — parent T, CYP19 substrate.",
+      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált.",
       "quality": {
         "pure": [
-          "Klarowne białe mikrokryształy zawieszone w wodzie, fiolka 10 ml, opalescentny przed wstrząśnięciem",
-          "Rx-grade: Aquaviron 25mg/ml (USA, rzadki)"
+          "Tiszta vízben suspendált fehér mikrokristályok, 10ml fiola, rázás előtt opálos",
+          "Rx-grade: Aquaviron 25mg/ml (USA, ritka)"
         ],
         "caution": [
-          "EKSTRA bolesna iniekcja — kryształy fizycznie podrażniają tkankę mięśniową (PIP)",
-          "EOD lub codzienna iniekcja potrzebna ze względu na krótki okres półtrwania",
-          "Używana jako pre-workout boost (początek 1-3 h bezpośrednio zwiększa wydajność)"
+          "EXTRA fájdalmas injekció — kristályok fizikailag irritálják az izomszövetet (PIP)",
+          "EOD vagy napi injekció szükséges a rövid felezés miatt",
+          "Pre-workout boost-ra használt (1-3 órás onset miatt teljesítményt direkt boostol)"
         ],
         "avoid": [
-          "Jeśli nie chcesz wstrzykiwać codziennie (alternatywa: Prop EOD lub Enan tygodniowo 1x)",
-          "Wrażliwy na ból (kryształy powodują znaczny PIP)"
+          "Mindennap nem akarsz injektálni (alternatíva: Prop EOD vagy Enan heti 1x)",
+          "Fájdalom-érzékeny (a kristályok jelentős PIP-et okoznak)"
         ]
       },
       "interactions": [
-        "Anastrozol — monitor ze względu na szybki wzrost E2",
-        "PCT start ostatnia iniekcja zawiesiny +24-48 godzin (szybki klirens)"
+        "Anastrozole — gyors E2-emelkedés miatt monitor",
+        "PCT utolsó suspension-injekció +24-48 óra után indul (gyors clearance)"
       ],
       "doseCalc": {
         "type": "fixed",
@@ -428,8 +524,12 @@ export default {
           "medium": 100,
           "high": 200
         },
-        "unit": "mg/iniekcja (IM, codziennie lub EOD)",
-        "note": "50-200 mg/iniekcja codziennie lub EOD. Pre-workout boost 50-100 mg 1-2 godziny przed treningiem. PCT ostatnia iniekcja +24-48 godzin."
+        "unit": "mg/injekció (IM, napi vagy EOD)",
+        "note": {
+          "hu": "50-200 mg/injekció napi vagy EOD. Pre-workout boost-ra 50-100 mg 1-2 órával edzés előtt. PCT utolsó injekció +24-48 óra.",
+          "en": "50-200 mg/injection daily or EOD. For pre-workout boost 50-100 mg 1-2 hours before training. PCT last injection +24-48 hours.",
+          "pl": "50-200 mg/iniekcja codziennie lub EOD. Dla przedtreningowego boostu 50-100 mg 1-2 godziny przed treningiem. PCT ostatnia iniekcja +24-48 godzin."
+        }
       }
     }
   ],
