@@ -20,3 +20,7 @@ tmp/
 
 # Git worktrees (subagent-driven development isolated workspaces)
 .worktrees/
+
+# v0.28 PMID mega-fix transient artifacts
+pmid-candidates/
+/tmp/v028-baseline/
