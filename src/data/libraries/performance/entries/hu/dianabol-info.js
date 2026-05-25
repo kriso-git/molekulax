@@ -118,18 +118,34 @@ export default {
     {
       "id": "oral",
       "routeId": "oral",
-      "routeLabel": "Methandrostenolone orális (tabletta)",
-      "routeNote": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz — TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
+      "routeLabel": {
+        "hu": "Methandrostenolone (Dianabol orális tabletta, 17α-metilezett)",
+        "en": "Methandrostenolone (Dianabol oral tablet, 17α-methylated)",
+        "pl": "Methandrostenolon (Dianabol tabletka doustna, 17α-metylowany)"
+      },
+      "routeNote": {
+        "hu": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz — TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
+        "en": "Classic form: 17α-methylated tablet, ~3-6 h half-life, fast plasma peak within 1-2 hours. 2-3x split daily dosing recommended. High hepatic first-pass stress — TUDCA + NAC mandatory. Most widespread and most-studied Dianabol form.",
+        "pl": "Klasyczna forma: tabletka 17α-metylowana, ~3-6 h okres półtrwania, szybki szczyt osoczowy w ciągu 1-2 godzin. Zalecane podawanie podzielone 2-3x dziennie. Wysoki stres wątrobowy first-pass — TUDCA + NAC obowiązkowe. Najszerzej rozpowszechniona i najlepiej zbadana forma Dianabolu."
+      },
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: FDA Rx (Ciba 1958, discontinued 1983); Schedule III. EU: UGL piacon dominans, vény nélkül illegális. WADA tiltott.",
       "bioavailability": "~80% (orális, 17α-metil first-pass-rezisztens)",
-      "onsetTime": "1-2 óra (orális, fast-absorption)",
+      "onsetTime": {
+        "hu": "1-2 óra (orális, fast-absorption)",
+        "en": "1-2 hours (oral, fast-absorption)",
+        "pl": "1-2 godziny (doustnie, szybkie wchłanianie)"
+      },
       "halfLife": "3-6 h (orális, parent compound)",
       "halfLifeActive": "5 h",
       "detectionWindow": "3-6 hét vizelet (parent + 6β-OH-metandienon hosszú-távú metabolitok).",
       "aromatization": "high",
       "hepatotoxicity": "high",
-      "dosing": "Tipikus adag 20-50 mg/nap, naponta 2-3x felosztva (reggel, ebéd, esetleg edzés előtt). Kezdők: 20-25 mg/nap. Haladók: 30-40 mg/nap. Maximum 50 mg/nap, 6 hétnél tovább nem ajánlott.",
+      "dosing": {
+        "hu": "Tipikus adag 20-50 mg/nap, naponta 2-3x felosztva (reggel, ebéd, esetleg edzés előtt). Kezdők: 20-25 mg/nap. Haladók: 30-40 mg/nap. Maximum 50 mg/nap, 6 hétnél tovább nem ajánlott.",
+        "en": "Typical dose 20-50 mg/day, split 2-3x daily (morning, lunch, optionally pre-workout). Beginners: 20-25 mg/day. Advanced: 30-40 mg/day. Max 50 mg/day, not recommended beyond 6 weeks.",
+        "pl": "Typowa dawka 20-50 mg/dzień, podzielona 2-3x dziennie (rano, w południe, opcjonalnie przed treningiem). Początkujący: 20-25 mg/dzień. Zaawansowani: 30-40 mg/dzień. Maksymalnie 50 mg/dzień, nie zalecane powyżej 6 tygodni."
+      },
       "quality": {
         "pure": [
           "Tiszta fehér jelölt tabletta (5 mg vagy 10 mg klasszikus UGL dosing)",
@@ -162,24 +178,44 @@ export default {
           "high": 50
         },
         "unit": "mg/nap (orális, 2-3x osztva)",
-        "note": "Max 6 hét ciklus. 20-50 mg/nap, 2-3x osztva (3-6h felezés). TUDCA + NAC kötelező. PCT 4 hét."
+        "note": {
+          "hu": "Max 6 hét ciklus. 20-50 mg/nap, 2-3x osztva (3-6h felezés). TUDCA + NAC kötelező. PCT 4 hét.",
+          "en": "Max 6 week cycle. 20-50 mg/day, 2-3x split (3-6 h half-life). TUDCA + NAC mandatory. PCT 4 weeks.",
+          "pl": "Maksymalnie 6 tygodni cyklu. 20-50 mg/dzień, 2-3x podzielone (okres półtrwania 3-6 h). TUDCA + NAC obowiązkowe. PCT 4 tygodnie."
+        }
       }
     },
     {
       "id": "oil",
       "routeId": "oil",
-      "routeLabel": "Methandrostenolone in-oil (IM, UGL)",
-      "routeNote": "Ritka, alternatív forma (\"Reforvit-B\" típusú szuszpenzió). Bypass-olja a hepatikus first-pass metabolizmust → valamivel alacsonyabb de NEM nulla hepatotoxicitás (a 17α-metil-csoport intrinsic hepatotoxicitást okoz first-pass nélkül is). Egyenletesebb plazma-szint, EOD (másnap) adagolás. Fájdalmas injekció, kizárólag UGL-forrás.",
+      "routeLabel": {
+        "hu": "Methandrostenolone (Reforvit-B in-oil IM, UGL depot)",
+        "en": "Methandrostenolone (Reforvit-B in-oil IM, UGL depot)",
+        "pl": "Methandrostenolon (Reforvit-B in-oil IM, depot UGL)"
+      },
+      "routeNote": {
+        "hu": "Ritka, alternatív forma (\"Reforvit-B\" típusú szuszpenzió). Bypass-olja a hepatikus first-pass metabolizmust → valamivel alacsonyabb de NEM nulla hepatotoxicitás (a 17α-metil-csoport intrinsic hepatotoxicitást okoz first-pass nélkül is). Egyenletesebb plazma-szint, EOD (másnap) adagolás. Fájdalmas injekció, kizárólag UGL-forrás.",
+        "en": "Rare, alternative form (\"Reforvit-B\"-type suspension). Bypasses hepatic first-pass metabolism → somewhat lower but NOT zero hepatotoxicity (the 17α-methyl group causes intrinsic hepatotoxicity even without first-pass). More stable plasma levels, EOD (every-other-day) dosing. Painful injection, UGL-source only.",
+        "pl": "Rzadka, alternatywna forma (zawiesina typu \"Reforvit-B\"). Omija wątrobowy metabolizm first-pass → nieco niższa, ale NIE zerowa hepatotoksyczność (grupa 17α-metylowa powoduje wewnętrzną hepatotoksyczność nawet bez first-pass). Bardziej stabilne poziomy osoczowe, podawanie EOD (co drugi dzień). Bolesna iniekcja, wyłącznie ze źródła UGL."
+      },
       "image": "/performance/oil-vial-yellow.png",
       "legalStatus": "Nem licencelt formátum — kizárólag UGL underground market. Mindenhol illegális. WADA tiltott.",
       "bioavailability": "~95-100% (IM bypass-olja a first-pass-t; methandrostenolone olajban suspendált slow depot-felszívódással)",
-      "onsetTime": "12-24 óra (IM, depot-kinetika)",
+      "onsetTime": {
+        "hu": "12-24 óra (IM, depot-kinetika)",
+        "en": "12-24 hours (IM, depot kinetics)",
+        "pl": "12-24 godziny (IM, kinetyka depot)"
+      },
       "halfLife": "1-2 nap (in-oil suspension; nem-észterelt methandrostenolone)",
       "halfLifeActive": "1-2 nap",
       "detectionWindow": "4-6 hét vizelet (hosszabb mint orálnál, depot-felszívódás miatt).",
       "aromatization": "high",
       "hepatotoxicity": "moderate-high",
-      "dosing": "Tipikus adag 50 mg EOD (másnap), 10 ml-es 50 mg/ml fiolából. Néhány felhasználó 75-100 mg EOD-t alkalmaz. Maximálisan 8 hetes ciklus. Aszeptikus injekciós technika kötelező.",
+      "dosing": {
+        "hu": "Tipikus adag 50 mg EOD (másnap), 10 ml-es 50 mg/ml fiolából. Néhány felhasználó 75-100 mg EOD-t alkalmaz. Maximálisan 8 hetes ciklus. Aszeptikus injekciós technika kötelező.",
+        "en": "Typical dose 50 mg EOD (every-other-day), from 10 mL × 50 mg/mL vial. Some users apply 75-100 mg EOD. Maximum 8-week cycle. Aseptic injection technique mandatory.",
+        "pl": "Typowa dawka 50 mg EOD (co drugi dzień), z fiolki 10 mL × 50 mg/mL. Niektórzy użytkownicy stosują 75-100 mg EOD. Maksymalnie 8-tygodniowy cykl. Aseptyczna technika iniekcji obowiązkowa."
+      },
       "defaultVialMg": 500,
       "defaultBacMl": 10,
       "defaultDoseMcg": 50000,
@@ -214,7 +250,11 @@ export default {
           "high": 100
         },
         "unit": "mg/inj (EOD, IM)",
-        "note": "Max 8 hét ciklus. 50-100 mg/inj EOD. TUDCA 500-750 mg/nap kötelező. PCT 4 hét, utolsó injekció +5-7 nap."
+        "note": {
+          "hu": "Max 8 hét ciklus. 50-100 mg/inj EOD. TUDCA 500-750 mg/nap kötelező. PCT 4 hét, utolsó injekció +5-7 nap.",
+          "en": "Max 8-week cycle. 50-100 mg/injection EOD. TUDCA 500-750 mg/day mandatory. PCT 4 weeks, last injection +5-7 days.",
+          "pl": "Maksymalnie 8-tygodniowy cykl. 50-100 mg/iniekcja EOD. TUDCA 500-750 mg/dzień obowiązkowo. PCT 4 tygodnie, ostatnia iniekcja +5-7 dni."
+        }
       }
     }
   ],

@@ -41,88 +41,128 @@ export default {
     {
       "id": "oral",
       "routeId": "oral",
-      "routeLabel": "Kapsułka / tabletka doustna",
-      "routeNote": "Wygodna codzienna forma — niski koszt, łatwa adherencja. Ładowanie przewlekłe 2 g/dobę + współspożycie węglowodanów podnosi stężenie w tkance mięśniowej 2-3x przez 3-4 tygodnie. Preferowana trasa dla protokołów początkujących i podtrzymujących.",
-      "label": "Kapsułka doustna",
+      "routeLabel": {
+        "hu": "L-Carnitine Tartrate (orális kapszula, lassú-felszívódás ~15%)",
+        "en": "L-Carnitine Tartrate (oral capsule, slow absorption ~15%)",
+        "pl": "L-Karnityna Tartrate (kapsułka doustna, wolne wchłanianie ~15%)"
+      },
+      "routeNote": {
+        "hu": "Napi szintű kényelmes és olcsó beadási forma. Chronic-loading 3-4 hét alatt 2 g/nap oral + szénhidrát-ko-ingestion éri el az izomszövet steady-state koncentráció-emelkedését. Kezdő és fenntartó protokollok leggyakoribb választása.",
+        "en": "Day-to-day convenient and inexpensive administration form. Chronic-loading reaches muscle-tissue steady-state concentration elevation over 3-4 weeks at 2 g/day oral + carbohydrate co-ingestion. Most common choice for beginner and maintenance protocols.",
+        "pl": "Codzienna wygodna i niedroga forma podawania. Chronic-loading osiąga podwyższenie stężenia w tkance mięśniowej w stanie stacjonarnym przez 3-4 tygodnie przy 2 g/dzień doustnie + ko-ingestii węglowodanów. Najczęściej wybierany protokół dla początkujących i utrzymania."
+      },
+      "label": "Oral kapszula",
       "image": "/performance/tablet-pile-white.png",
-      "legalStatus": "Kategoria OTC suplementu globalnie (US, UE, HU, PL), zatwierdzone przez FDA Rx na pierwotny niedobór karnityny (Sigma-Tau Carnitor 1985).",
-      "bioavailability": "~15% (niska — wyciek P-glikoproteinowy w przewodzie pokarmowym + straty pierwszego przejścia)",
-      "onsetTime": "1-2 godziny (wchłanianie doustne); steady-state ładowania mięśni 3-4 tygodnie przewlekle",
-      "halfLife": "~15 godzin",
-      "halfLifeActive": "~15 godzin",
-      "detectionWindow": "Akredytowane przez WADA LC-MS/MS NIE jest testem standardowym; ~1-2 tygodnie przy dawce przewlekłej wysokiej",
-      "aromatization": "Nie aromatyzuje (nie jest sterydem — czwartorzędowy związek amoniowy).",
-      "hepatotoxicity": "Niska — syntetyzowana endogennie, przewlekle doustnie <3 g/dobę bezpieczna wątrobowo.",
+      "legalStatus": "OTC supplement-kategória globálisan (US, EU, HU, PL), FDA-jóváhagyott primary carnitine deficiency Rx (Sigma-Tau Carnitor 1985).",
+      "bioavailability": "~15% (alacsony — gastrointestinalis P-glycoprotein efflux + first-pass-loss)",
+      "onsetTime": {
+        "hu": "1-2 óra (oral abszorpció); steady-state izom-loading 3-4 hét chronic",
+        "en": "1-2 hours (oral absorption); steady-state muscle-loading 3-4 weeks chronic",
+        "pl": "1-2 godziny (wchłanianie doustne); stan stacjonarny ładowania mięśni 3-4 tygodnie chronic"
+      },
+      "halfLife": "~15 óra",
+      "halfLifeActive": "~15 óra",
+      "detectionWindow": "WADA-akkreditált LC-MS/MS NEM standard test, chronic high-dose ~1-2 hét",
+      "aromatization": "Nem aromatizál (nem szteroid hatóanyag — kvaterner ammónium-vegyület).",
+      "hepatotoxicity": "Alacsony — endogén-szintetizált, krónikus oral <3 g/nap hepatikusan biztonságos.",
       "quality": {
         "pure": [
-          "Tabletka/roztwór doustny Carnitor (Sigma-Tau) zatwierdzone przez FDA + 50+ marek suplementów OTC (NOW Foods, Jarrow Formulas, Doctor's Best) certyfikowane USP",
-          "Forma Acetyl-L-Carnitine (ALCAR) jest przepuszczalna dla bariery krew-mózg, częsty suplement kognitywny OTC",
-          "L-Carnitine L-Tartrate (LCLT) jest specyficzną dla ładowania mięśni formą OTC (Kraemer 2008 PMID 18204383)"
+          "FDA-jóváhagyott Carnitor (Sigma-Tau) tabletta/oral solution + 50+ OTC supplement-brand (NOW Foods, Jarrow Formulas, Doctor's Best) USP-certified",
+          "Acetyl-L-Carnitine (ALCAR) forma blood-brain-barrier-permeable, cognitive-szupplement OTC-en gyakori",
+          "L-Carnitine L-Tartrate (LCLT) izom-loading specific OTC-forma (Kraemer 2008 PMID 18204383)"
         ],
         "caution": [
-          "Baseline TMAO (Koeth 2013 Nature Med PMID 23563705): >2 g/dobę przewlekle przez 6+ miesięcy to marker ryzyka sercowo-naczyniowego",
-          "Działania niepożądane z przewodu pokarmowego: biegunka, nudności, rybi zapach ciała (emisja TMA z mikrobioty jelitowej powyżej 2 g/dobę)",
-          "Przy Rx na niedoczynność tarczycy: L-Karnityna obniża obwodową konwersję T4 → T3 (Benvenga 2001 PMID 11518815)",
-          "Wzrost INR przy warfarynie przy dawce przewlekłej (Martinez 2007 PMID 17449974)"
+          "TMAO baseline (Koeth 2013 Nature Med PMID 23563705) >2 g/nap chronic 6+ hónap cardiovascular-risk-marker",
+          "GI-side: hasmenés, hányinger, fishy-body-odor (gut-microbiota TMA-emission >2 g/nap)",
+          "Hypothyroidism Rx-on: L-Carnitine T4 → T3 perifériás konverzió-csökkentő (Benvenga 2001 PMID 11518815)",
+          "Warfarin INR-emelkedés krónikus dose-on (Martinez 2007 PMID 17449974)"
         ],
         "avoid": [
-          "Poza Rx specyficznym dla pierwotnego niedoboru karnityny, supraphysjologiczne dawki doustne >3 g/dobę przewlekle — wzrost TMAO ryzyko sercowo-naczyniowe",
-          "Pacjenci dializowani z krańcową niewydolnością nerek (ESRD): ryzyko kontaminacji izomerem D (unikać D,L-Carnitine OTC)",
-          "Przy Rx na zaburzenia napadowe (przewlekła doustna L-Karnityna niesie rzadkie ryzyko indukcji napadów)",
-          "Niewydolność nerek stadium 4-5 — wymagane dostosowanie dawki (obniżony klirens nerkowy)"
+          "Primary carnitine deficiency-specific Rx-on kívül szuper-supraphysiological oral dose >3 g/nap chronic — TMAO-elevation cardiovascular-risk",
+          "End-stage renal disease (ESRD) dialízis-betegnél D-isomer-kontamináció risk (D,L-Carnitine OTC kerülendő)",
+          "Seizure-disorder Rx-on (krónikus oral L-Carnitine ritka seizure-induction-risk)",
+          "Veseelégtelenség Stage 4-5 — dose-adjust szükséges (renal clearance-csökkenés)"
         ]
       },
-      "indications": "Subtelne przesunięcie utleniania tłuszczu + ochrona glikogenu mięśniowego w cuttingu; ładowanie przewlekłe 3-4 tygodnie z węglowodanami (Wall 2011 PMID 21224234)",
-      "dosing": "Typowy protokół: 2-4 g/dobę w 3 dawkach z posiłkami (współspożycie węglowodanów dla insulin-stimulated muscle uptake). Dawka startowa 500-1000 mg/dobę; próg efektywności przy ładowaniu przewlekłym 2 g/dobę.",
+      "indications": "Cutting-cycle szubtilis fat-oxidation-shift + izom-glükogén-megőrzés; chronic-loading 3-4 hét carbohydrate-co-ingestion mellett (Wall 2011 PMID 21224234)",
+      "dosing": {
+        "hu": "Tipikus protokoll: 2-4 g/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake érdekében). Kezdő dózis 500-1000 mg/nap, hatékonysági határ chronic-loading-on 2 g/nap.",
+        "en": "Typical protocol: 2-4 g/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Starting dose 500-1000 mg/day, efficacy plateau on chronic-loading at 2 g/day.",
+        "pl": "Typowy protokół: 2-4 g/dzień podzielone 3x z posiłkami (ko-ingestia węglowodanów dla insulino-stymulowanego wychwytu mięśniowego). Dawka początkowa 500-1000 mg/dzień, próg skuteczności na chronic-loading 2 g/dzień."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 500, "medium": 2000, "high": 4000 },
-        "unit": "mg/dzień",
-        "note": "Doustnie 500-4000 mg/dzień podzielone na 3x z posiłkami (współspożycie węglowodanów dla wychwytu mięśniowego stymulowanego insuliną). Loading chroniczny 3-4 tygodnie dla steady-state stężenia mięśniowego. Trasa isFixedDose — wyświetlanie info-card, MiniCalc nie dotyczy."
+        "unit": "mg/nap",
+        "note": {
+          "hu": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose — info-card megjelenítés, MiniCalc nem releváns.",
+          "en": "Oral 500-4000 mg/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Chronic-loading steady-state 3-4 weeks. The oral form is isFixedDose — info-card display, MiniCalc not relevant.",
+          "pl": "Doustnie 500-4000 mg/dzień podzielone 3x z posiłkami (ko-ingestia węglowodanów dla insulino-stymulowanego wychwytu mięśniowego). Chronic-loading stan stacjonarny 3-4 tygodnie. Forma doustna jest isFixedDose — wyświetlanie info-card, MiniCalc nie ma zastosowania."
+        }
       }
     },
     {
       "id": "aq",
       "routeId": "aq",
-      "routeLabel": "Iniekcja IM/SC (fiolka wodna)",
-      "routeNote": "Maksymalna biodostępność (100%) — pełna dawka trafia do krążenia vs ~15% doustnie. Protokół pre-workout zorientowany na wydajność: 500-1000 mg SC 30-60 minut przed treningiem. Ekwiwalent dawki ~4-6x doustnej; szybsze osiągnięcie steady-state w ciągu 1-2 tygodni.",
-      "label": "Iniekcja IM/SC",
+      "routeLabel": {
+        "hu": "L-Carnitine Tartrate (IM/SC vizes ampulla, 100% bioavailability)",
+        "en": "L-Carnitine Tartrate (IM/SC aqueous ampoule, 100% bioavailability)",
+        "pl": "L-Karnityna Tartrate (IM/SC ampułka wodna, 100% biodostępność)"
+      },
+      "routeNote": {
+        "hu": "Maximális bioavailability (100%) — az oral ~15%-ával szemben a teljes dózis bejut. Performance-fókuszú pre-workout protokoll: 500-1000 mg SC injection 30-60 perccel edzés előtt. Dose-equivalent ~4-6x az oralishoz képest, gyorsabb steady-state elérés 1-2 hét alatt.",
+        "en": "Maximum bioavailability (100%) — versus oral ~15%, the full dose enters circulation. Performance-focused pre-workout protocol: 500-1000 mg SC injection 30-60 minutes before training. Dose-equivalent ~4-6x oral, faster steady-state reached within 1-2 weeks.",
+        "pl": "Maksymalna biodostępność (100%) — w porównaniu do doustnej ~15%, cała dawka trafia do krążenia. Protokół przedtreningowy zorientowany na wydolność: 500-1000 mg iniekcja SC 30-60 minut przed treningiem. Dawka-równoważnik ~4-6x w stosunku do doustnej, szybsze osiągnięcie stanu stacjonarnego w ciągu 1-2 tygodni."
+      },
+      "label": "IM/SC injekció",
       "image": "/performance/water-vial.png",
       "defaultVialMg": 1000,
       "defaultBacMl": 5,
       "defaultDoseMcg": 500000,
-      "legalStatus": "Tylko Rx (formulacja IM/SC), zatwierdzone przez FDA Carnitor IV/IM (Sigma-Tau) na pierwotny niedobór karnityny. UE + HU + PL tylko Rx.",
-      "bioavailability": "~100% (IM/SC omija straty pierwszego przejścia)",
-      "onsetTime": "30-60 minut (wchłanianie IM/SC)",
-      "halfLife": "~15 godzin",
-      "halfLifeActive": "~15 godzin",
-      "detectionWindow": "Kategoria monitorowana NADA Niemcy 2018 powyżej 50 mg/kg IV-bolus; standardowe testowanie WADA NIE wykrywa",
-      "aromatization": "Nie aromatyzuje (nie jest sterydem — czwartorzędowy związek amoniowy).",
-      "hepatotoxicity": "Niska — syntetyzowana endogennie; IM/SC omija pierwsze przejście wątrobowe.",
+      "legalStatus": "Rx-only (IM/SC formulation), FDA-jóváhagyott Carnitor IV/IM (Sigma-Tau) primary carnitine deficiency-re. EU + HU + PL Rx-only.",
+      "bioavailability": "~100% (IM/SC bypass-olja first-pass-loss-t)",
+      "onsetTime": {
+        "hu": "30-60 perc (IM/SC abszorpció)",
+        "en": "30-60 minutes (IM/SC absorption)",
+        "pl": "30-60 minut (wchłanianie IM/SC)"
+      },
+      "halfLife": "~15 óra",
+      "halfLifeActive": "~15 óra",
+      "detectionWindow": "NADA Germany 2018 monitored-kategória >50 mg/kg IV-bolus dose-on; standard WADA-test NEM detektálja",
+      "aromatization": "Nem aromatizál (nem szteroid hatóanyag — kvaterner ammónium-vegyület).",
+      "hepatotoxicity": "Alacsony — endogén-szintetizált, IM/SC bypass first-pass hepatikus.",
       "quality": {
         "pure": [
-          "Fiolka Carnitor IV/IM (Sigma-Tau) zatwierdzona przez FDA — Rx-grade ze źródła aptecznego",
-          "Fiolka IM/SC z compounding pharmacy standaryzowana do 1 g/5 mL (200 mg/mL UE) lub 1 g/mL (USA)"
+          "FDA-jóváhagyott Carnitor IV/IM vial (Sigma-Tau) — pharmacy-szourzott Rx-grade",
+          "Compounding pharmacy IM/SC vial standardizált 1 g/5 mL (200 mg/mL) EU vagy 1 g/mL US"
         ],
         "caution": [
-          "Ból w miejscu iniekcji (PIP): vehicle czwartorzędowy amoniowy IM/SC często bolesny, rotacja IM deltoid/gluteal",
-          "Ryzyko reakcji alergicznej z uwolnieniem histaminy (rzadkie): zalecana pierwsza dawka próbna 0.5 g IM/SC",
-          "Przejściowe nadciśnienie post-injection (lokalne parasympatyczne rozszerzenie naczyń)",
-          "UGL liquid carnitine: obowiązkowe źródło HPLC-testowane — udokumentowana wariancja dawki ±20%"
+          "Injection-site pain (PIP): IM/SC quaternary-ammonium-vehicle gyakran fájdalmas, IM-deltoid/gluteal rotáció",
+          "Allergic-reaction histamine-release risk (ritka): IM/SC first-dose 0.5 g test-dose javasolt",
+          "Hypertonia transient post-injection (parasympathetic-vasodilation lokális)",
+          "UGL liquid carnitine HPLC-tesztelt forrás kötelező — dose-variance ±20% dokumentált"
         ],
         "avoid": [
-          "Sportowcy testowani WADA powyżej 50 mg/kg IV-bolus: kategoria monitorowana NADA Niemcy 2018",
-          "Pacjenci dializowani z krańcową niewydolnością nerek (ESRD): ryzyko kontaminacji izomerem D",
-          "Przy Rx na zaburzenia napadowe (IM/SC L-Karnityna niesie rzadkie ryzyko indukcji napadów)"
+          "Athletes WADA-tested >50 mg/kg IV-bolus dose-on NADA Germany 2018 monitored-kategória",
+          "End-stage renal disease (ESRD) dialízis-betegnél D-isomer-kontamináció risk",
+          "Seizure-disorder Rx-on (IM/SC L-Carnitine ritka seizure-induction-risk)"
         ]
       },
-      "indications": "Cutting zorientowany na wydajność — przewaga biodostępności + ekwiwalent dawki 4-6x wobec doustnej (kontekst kliniczny Rx Sigma-Tau Carnitor IM). Pre-workout SC 500-1000 mg 30-60 minut przed treningiem.",
-      "dosing": "200-1000 mg/iniekcję IM/SC 2-3x/tydzień w cuttingu (długość cyklu 8-12 tygodni). Typowa dawka performance: 500 mg SC pre-workout. Standardowa ampułka Sigma-Tau Carnitor 1 g/5 mL.",
+      "indications": "Performance-fókuszú cutting-cycle — bioavailability-előny + dose-equivalent 4-6x oral-felett (Sigma-Tau Carnitor IM clinical Rx-context). Pre-workout SC 500-1000 mg edzés előtt 30-60 perccel.",
+      "dosing": {
+        "hu": "200-1000 mg/injekció IM/SC 2-3x/hét cutting-cycle (8-12 hét cycle-length). Tipikus performance-dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampulla 1 g/5 mL.",
+        "en": "200-1000 mg/injection IM/SC 2-3x/week cutting-cycle (8-12 week cycle length). Typical performance dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampoule 1 g/5 mL.",
+        "pl": "200-1000 mg/iniekcja IM/SC 2-3x/tydzień cutting-cycle (długość cyklu 8-12 tygodni). Typowa dawka wydolnościowa: 500 mg SC przed treningiem. Standardowa ampułka Sigma-Tau Carnitor 1 g/5 mL."
+      },
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 200, "medium": 500, "high": 1000 },
-        "unit": "mg/iniekcję",
-        "note": "IM/SC 200-1000 mg/iniekcję 2-3x/tydzień cykl cutting (8-12 tygodni). Typowa ampułka 1 g (5 mL) — 500 mg = 2.5 mL SC pre-workout. Biodostępność 100%; steady-state szybsze niż doustnie."
+        "unit": "mg/injekció",
+        "note": {
+          "hu": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral.",
+          "en": "IM/SC 200-1000 mg/injection 2-3x/week cutting-cycle (8-12 weeks). Typical 1 g ampoule (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state faster than oral.",
+          "pl": "IM/SC 200-1000 mg/iniekcja 2-3x/tydzień cutting-cycle (8-12 tygodni). Typowa ampułka 1 g (5 mL) — 500 mg = 2.5 mL przed treningiem SC. Biodostępność 100%, stan stacjonarny szybszy niż doustnie."
+        }
       }
     }
   ],
