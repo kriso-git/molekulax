@@ -106,7 +106,7 @@ export default {
       "title": "Short-term oxandrolone administration stimulates net muscle protein synthesis in young men",
       "authors": "Sheffield-Moore M, Urban RJ, Wolf SE et al.",
       "journal": "J Clin Endocrinol Metab. 1999;84(8):2705-11.",
-      "pmid": "10443663"
+      "pmid": "10443664"
     },
     {
       "title": "Oxandrolone in the treatment of HIV-associated weight loss in men",
@@ -115,16 +115,16 @@ export default {
       "pmid": "8970686"
     },
     {
-      "title": "The anabolic agent oxandrolone improves wound healing and recovery in severely burned children",
+      "title": "The effect of oxandrolone on the endocrinologic, inflammatory, and hypermetabolic responses during the acute phase postburn",
       "authors": "Jeschke MG, Finnerty CC, Suman OE, Kulp G, Mlcak RP, Herndon DN.",
       "journal": "Ann Surg. 2007;246(3):351-60.",
-      "pmid": "17717437"
+      "pmid": "17717439"
     },
     {
-      "title": "Effect of oxandrolone on adult height in Turner syndrome",
-      "authors": "Gault EJ, Perry RJ, Cole TJ et al.",
-      "journal": "BMJ. 2011;342:d1980.",
-      "pmid": "21525094"
+      "title": "Effect of oxandrolone therapy on adult height in Turner syndrome patients treated with growth hormone: a meta-analysis",
+      "authors": "Sheanon NM, Backeljauw PF",
+      "journal": "Int J Pediatr Endocrinol. 2015;2015(1):18.",
+      "pmid": "26322078"
     },
     {
       "title": "Adverse health consequences of performance-enhancing drugs",
@@ -136,13 +136,13 @@ export default {
       "title": "Effects of an oral androgen on muscle and metabolism in older, community-dwelling men",
       "authors": "Schroeder ET, Singh A, Bhasin S, Storer TW et al.",
       "journal": "Am J Physiol Endocrinol Metab. 2003;284(1):E120-128.",
-      "pmid": "12388134"
+      "pmid": "12388137"
     },
     {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     }
   ],
   "faq": [
