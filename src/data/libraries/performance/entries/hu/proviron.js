@@ -75,9 +75,9 @@ export default {
   ],
   "studies": [
     {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"},
-    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15233599"},
-    {"title": "Effect of mesterolone treatment on pituitary, thyroid, and gonadal function", "authors": "Mauss J, Borsch G, Bormacher K, Richter E, Leyendecker G, Nocke W.", "journal": "Acta Endocrinol (Copenh). 1975;78(2):373-384.", "pmid": "168752"},
-    {"title": "Mesterolone for male infertility", "authors": "Aafjes JH, van der Vijver JC, Schenck PE.", "journal": "Lancet. 1981;317(8221):683.", "pmid": "6109840"},
+    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15248788"},
+    {"title": "Androgen treatment without inhibiting effect on hypophysis and male gonads. Biochemical and morphological studies after treatment with Mesterolone", "authors": "Petry R, Rausch-Stroomann JG, Hienz HA, Senge T, Mauss J.", "journal": "Acta Endocrinol (Copenh). 1968;59(3):497-507.", "pmid": "4880965"},
+    {"title": "Double-blind cross over treatment with mesterolone and placebo of subfertile oligozoospermic men value of testicular biopsy", "authors": "Aafjes JH, van der Vijver JC, Brugman FW, Schenck PE.", "journal": "Andrologia. 1983;15 Spec No:531-5.", "pmid": "6364886"},
     {"title": "Bayer Proviron-25 SmPC (Summary of Product Characteristics)", "authors": "Bayer AG", "journal": "EMA / German Federal Institute for Drugs (BfArM)", "pmid": null}
   ],
   "faq": [
