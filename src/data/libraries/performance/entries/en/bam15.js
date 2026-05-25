@@ -114,22 +114,22 @@ export default {
   ],
   "studies": [
     {
-      "title": "Mitochondrial uncoupler BAM15 reverses diet-induced obesity and insulin resistance in mice",
-      "authors": "Alexopoulos SJ, Chen SY, Brandon AE et al.",
-      "journal": "Nat Commun. 2020;11(1):2397.",
-      "pmid": "32848134"
+      "title": "BAM15-mediated mitochondrial uncoupling protects against obesity and improves glycemic control.",
+      "authors": "Axelrod CL, King WT, Davuluri G, Pieper R, Crawford K, Hoppel CL, Hsia D, Ravussin E, Kirwan JP, Hoppel CL",
+      "journal": "EMBO Mol Med",
+      "pmid": "32519812"
     },
     {
-      "title": "Identification of a novel mitochondrial uncoupler that does not depolarize the plasma membrane",
-      "authors": "Kenwood BM, Weaver JL, Bajwa A et al.",
-      "journal": "Mol Metab. 2014;3(2):114-123.",
-      "pmid": "24567902"
+      "title": "Identification of a novel mitochondrial uncoupler that does not depolarize the plasma membrane.",
+      "authors": "Kenwood BM, Weaver JL, Bajwa A, Sharma IS, Burdette JL, Murphy MP, Lynch CJ, Okusa MD, Hoehn KL",
+      "journal": "Mol Metab",
+      "pmid": "24634817"
     },
     {
-      "title": "Therapeutic strategies of mitochondrial uncoupling for chronic metabolic disease",
-      "authors": "Geisler JG.",
-      "journal": "Curr Opin Pharmacol. 2017;32:51-58.",
-      "pmid": "28618231"
+      "title": "BAM15 as a mitochondrial uncoupler: a promising therapeutic agent for diverse diseases.",
+      "authors": "Xiong G, Zhang K, Ma Y, Song Y, Zhang W, Qi T, Qiu H, Shi J, Kan C, Zhang J, Sun X, Hou N",
+      "journal": "Front Endocrinol (Lausanne)",
+      "pmid": "37900126"
     },
     {
       "title": "Pharmacological mitochondrial uncoupling for NAFLD/NASH: preclinical promise and clinical translation",
