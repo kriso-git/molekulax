@@ -43,16 +43,16 @@ export default {
   ],
   "studies": [
     {
-      "title": "Designer steroid hepatotoxicity: acute liver failure from methylstenbolone",
-      "authors": "Robles-Diaz M, Gonzalez-Jimenez A, Medina-Caliz I et al.",
-      "journal": "Liver Int. 2015;35(11):2483-2493.",
-      "pmid": "25867306"
+      "title": "Designer steroids - over-the-counter supplements and their androgenic component: review of an increasing problem",
+      "authors": "Rahnema CD, Crosnoe LE, Kim ED",
+      "journal": "Andrology. 2015;3(2):150-5.",
+      "pmid": "25684733"
     },
     {
-      "title": "Designer steroids in dietary supplements",
-      "authors": "Geyer H, Schänzer W, Thevis M.",
-      "journal": "Mol Cell Endocrinol. 2014;464:99-108.",
-      "pmid": "24882754"
+      "title": "Nutritional supplements cross-contaminated and faked with doping substances",
+      "authors": "Geyer H, Parr MK, Mareck U, Reinhart U, Schrader Y, Schänzer W.",
+      "journal": "J Mass Spectrom. 2008;43(7):892-902.",
+      "pmid": "18563865"
     }
   ],
   "related": [
