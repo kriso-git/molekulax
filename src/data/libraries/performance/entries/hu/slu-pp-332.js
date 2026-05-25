@@ -118,22 +118,22 @@ export default {
       "pmid": "n/a (preprint)"
     },
     {
-      "title": "Estrogen-related receptor α drives mitochondrial biogenesis and adaptive remodeling in cardiac muscle",
-      "authors": "Geng L, Liao B, Jin L et al.",
-      "journal": "Nat Commun. 2024;15(1):203.",
-      "pmid": "38233408"
+      "title": "Synthetic ERRα/β/γ Agonist Induces an ERRα-Dependent Acute Aerobic Exercise Response and Enhances Exercise Capacity.",
+      "authors": "Billon C, Sitaula S, Banerjee S, Welch R, Elgendy B, Hegazy L, Oh TG, Kazantzis M, Chatterjee A, Chrivia J, Hayes ME, Xu W, Hamilton A, Newman JD, Downes M, Evans RM, Burris TP",
+      "journal": "ACS Chem Biol",
+      "pmid": "36988910"
     },
     {
-      "title": "ERRα/PGC-1α coactivation in metabolic and oncological pathways",
-      "authors": "Misra J, Kim DK, Choi HS.",
-      "journal": "J Mol Endocrinol. 2017;58(4):R237-R256.",
-      "pmid": "28381435"
+      "title": "Estrogen-related receptors regulate innate and adaptive muscle mitochondrial energetics through cooperative and distinct actions.",
+      "authors": "Fan W, Oh TG, Wang HJ, Yu RT, Atkins AR, Downes M, Evans RM",
+      "journal": "Proc Natl Acad Sci U S A",
+      "pmid": "40354528"
     },
     {
-      "title": "Estrogen-related receptor alpha in tumor cell proliferation: a double-edged sword",
-      "authors": "Audet-Walsh É, Giguère V.",
-      "journal": "Mol Endocrinol. 2015;29(5):691-705.",
-      "pmid": "25587719"
+      "title": "A Synthetic ERR Agonist Alleviates Metabolic Syndrome.",
+      "authors": "Billon C, Schoepke E, Avdagic A, Chatterjee A, Butler AA, Elgendy B, Walker JK, Burris TP",
+      "journal": "J Pharmacol Exp Ther",
+      "pmid": "37739806"
     }
   ],
   "faq": [
