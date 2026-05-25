@@ -124,28 +124,28 @@ export default {
       "pmid": "9747868"
     },
     {
-      "title": "Mechanisms of action of selective estrogen receptor modulators",
-      "authors": "Schäcke H, Döcke WD, Asadullah K.",
-      "journal": "Pharmacol Ther. 2002;96(1):23-43.",
-      "pmid": "12433722"
+      "title": "50th anniversary of the first clinical trial with ICI 46,474 (tamoxifen): then what happened?",
+      "authors": "Jordan VC",
+      "journal": "Endocr Relat Cancer",
+      "pmid": "33151906"
     },
     {
-      "title": "Tamoxifen treatment in the postcycle recovery of hypogonadism after anabolic steroid abuse",
-      "authors": "Tan RS, Vasudevan SG.",
-      "journal": "Andrologia. 2014;46(5):542-548.",
-      "pmid": "24716172"
+      "title": "Anabolic steroid-induced hypogonadism: diagnosis and treatment.",
+      "authors": "Rahnema CD, Lipshultz LI, Crosnoe LE, Kovac JR, Kim ED",
+      "journal": "Fertil Steril",
+      "pmid": "24636400"
     },
     {
-      "title": "Male SERM PCT: clinical decisions",
-      "authors": "Karavolos S, Reynolds M, Panagiotopoulou N, et al.",
-      "journal": "Clin Endocrinol. 2015;82(5):624-635.",
-      "pmid": "25778469"
+      "title": "Enclomiphene citrate: A treatment that maintains fertility in men with secondary hypogonadism.",
+      "authors": "Earl JA, Kim ED",
+      "journal": "Expert Rev Endocrinol Metab",
+      "pmid": "31063005"
     },
     {
-      "title": "Active tamoxifen metabolite plasma concentrations after CYP2D6 inhibition",
-      "authors": "Stearns V, Johnson MD, Rae JM, et al.",
-      "journal": "J Natl Cancer Inst. 2003;95(23):1758-1764.",
-      "pmid": "12832537"
+      "title": "CYP2D6 genotype, antidepressant use, and tamoxifen metabolism during adjuvant breast cancer treatment.",
+      "authors": "Jin Y, Desta Z, Stearns V, Ward B, Ho H, Lee KH, Skaar T, Storniolo AM, Li L, Araba A, Blanchard R, Nguyen A, Ullmer L, Hayden J, Lemler S, Weinshilboum RM, Rae JM, Hayes DF, Flockhart DA",
+      "journal": "J Natl Cancer Inst",
+      "pmid": "15632378"
     }
   ],
   "faq": [
