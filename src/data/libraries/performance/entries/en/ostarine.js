@@ -107,34 +107,34 @@ export default {
   ],
   "studies": [
     {
-      "title": "The selective androgen receptor modulator GTx-024 (enobosarm) improves lean body mass and physical function in healthy elderly men and postmenopausal women: results of a double-blind, placebo-controlled phase II trial",
-      "authors": "Dalton JT, Barnette KG, Bohl CE, et al.",
-      "journal": "J Cachexia Sarcopenia Muscle. 2011;2(3):153-161.",
-      "pmid": "21833506"
+      "title": "The selective androgen receptor modulator GTx-024 (enobosarm) improves lean body mass and physical function in healthy elderly men and postmenopausal women: results of a double-blind, placebo-controlled phase II trial.",
+      "authors": "Dalton JT, Barnette KG, Bohl CE, Hancock ML, Rodriguez D, Dodson ST, Morton RA, Steiner MS",
+      "journal": "J Cachexia Sarcopenia Muscle",
+      "pmid": "22031847"
     },
     {
-      "title": "Study design and rationale for the phase 3 clinical development program of enobosarm, a selective androgen receptor modulator, for the prevention and treatment of muscle wasting in cancer patients (POWER trials)",
-      "authors": "Crawford J, Prado CM, Johnston MA, et al.",
-      "journal": "Curr Oncol Rep. 2016;18(6):37.",
-      "pmid": "26944362"
+      "title": "Study Design and Rationale for the Phase 3 Clinical Development Program of Enobosarm, a Selective Androgen Receptor Modulator, for the Prevention and Treatment of Muscle Wasting in Cancer Patients (POWER Trials).",
+      "authors": "Crawford J, Prado CM, Johnston MA, Zimmers TA, Penna F",
+      "journal": "Curr Oncol Rep",
+      "pmid": "27138015"
     },
     {
-      "title": "Selective androgen receptor modulator (SARM) hepatotoxicity: case series",
-      "authors": "Vilaca A, Saadeh A, Tay E, et al.",
-      "journal": "Liver Int. 2018;38(8):1462-1463.",
-      "pmid": "30171122"
+      "title": "Selective androgen receptor modulator use and related adverse events including drug-induced liver injury: Analysis of suspected cases.",
+      "authors": "Leciejewska N, Jędrejko K, Gómez-Renaud VM, Manríquez-Núñez J, Muszyńska B, Pokrywka A",
+      "journal": "Eur J Clin Pharmacol",
+      "pmid": "38059982"
     },
     {
-      "title": "Selective androgen receptor modulator-induced hepatotoxicity",
-      "authors": "Solomon ZJ, Mirabal JR, Mazur DJ, et al.",
-      "journal": "Sex Med Rev. 2019;7(1):84-94.",
-      "pmid": "31077635"
+      "title": "LGD-4033 and a Case of Drug-Induced Liver Injury: Exploring the Clinical Implications of Off-Label Selective Androgen Receptor Modulator Use in Healthy Adults.",
+      "authors": "Labban H, Kwait B, Paracha A, Khan A, Singh M, Lopez R",
+      "journal": "Cureus",
+      "pmid": "39421081"
     },
     {
-      "title": "Selective androgen receptor modulators in preclinical and clinical development",
-      "authors": "Bhasin S, Jasuja R.",
-      "journal": "Curr Opin Endocrinol Diabetes Obes. 2009;16(3):232-40. (and 2012 follow-up PMID 22573713)",
-      "pmid": "22573713"
+      "title": "Selective Androgen Receptor Modulators in Women: What Do We Know, and What Is Still Missing.",
+      "authors": "Vasilev V, Georgieva K, Kraeva M",
+      "journal": "Life (Basel)",
+      "pmid": "41752994"
     }
   ],
   "faq": [
