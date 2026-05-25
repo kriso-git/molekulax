@@ -78,10 +78,10 @@ export default {
   ],
   "studies": [
     {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"},
-    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15233599"},
-    {"title": "Metabolism of anabolic androgenic steroids", "authors": "Schänzer W.", "journal": "Clin Chem. 1996;42(7):1001-20.", "pmid": "8616181"},
+    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15248788"},
+    {"title": "Metabolism of anabolic androgenic steroids", "authors": "Schänzer W.", "journal": "Clin Chem. 1996;42(7):1001-20.", "pmid": "8674183"},
     {"title": "Anabolic-androgenic steroid dependence: an emerging disorder", "authors": "Kanayama G, Brower KJ, Wood RI, Hudson JI, Pope HG Jr.", "journal": "Addiction. 2009;104(12):1966-78.", "pmid": "19922565"},
-    {"title": "Designer steroids: over-the-counter supplements and their androgenic component", "authors": "Kazlauskas R.", "journal": "Mol Cell Endocrinol. 2010;316(1):2-7.", "pmid": "19772889"},
+    {"title": "Designer steroids - over-the-counter supplements and their androgenic component: review of an increasing problem", "authors": "Rahnema CD, Crosnoe LE, Kim ED", "journal": "Andrology. 2015;3(2):150-5.", "pmid": "25684733"},
     {"title": "PubChem 1-Testosterone Cypionate CID 16219612 monograph", "authors": "NIH PubChem", "journal": "PubChem Open Chemistry Database", "pmid": null}
   ],
   "faq": [
