@@ -80,11 +80,11 @@ export default {
     "Klasyczny stack AAS: NIE zalecany (kumulatywna hepatotoksyczność + ryzyko sercowo-naczyniowe)"
   ],
   "studies": [
-    {"title": "Characterization of nonsteroidal selective androgen receptor modulators (SARMs) and their use in the development of a male contraceptive", "authors": "Jones A, Hwang DJ, Bohl CE, et al.", "journal": "Endocrinology. 2009;150(4):1759-67.", "pmid": "19299500"},
-    {"title": "Preclinical pharmacology of S-23, a novel selective androgen receptor modulator with anabolic and androgenic activity in rats", "authors": "Jones A, Coss CC, Steiner MS, Dalton JT.", "journal": "Reprod Biol Endocrinol. 2010;8:62.", "pmid": "20308559"},
-    {"title": "The history of selective androgen receptor modulators (SARMs)", "authors": "Dalton JT.", "journal": "Mol Cell Endocrinol. 2011;345(1-2):2-10.", "pmid": "21674508"},
-    {"title": "Selective androgen receptor modulator-induced hepatotoxicity", "authors": "Solomon ZJ, Mirabal JR, Mazur DJ, et al.", "journal": "Sex Med Rev. 2019;7(1):84-94.", "pmid": "31077635"},
-    {"title": "Selective androgen receptor modulator (SARM) hepatotoxicity: case series", "authors": "Vilaca A, Saadeh A, Tay E, et al.", "journal": "Liver Int. 2018;38(8):1462-1463.", "pmid": "30171122"}
+    {"title": "A selective androgen receptor modulator for hormonal male contraception.", "authors": "Chen J, Hwang DJ, Bohl CE, Miller DD, Dalton JT", "journal": "J Pharmacol Exp Ther", "pmid": "15347734"},
+    {"title": "Preclinical characterization of a (S)-N-(4-cyano-3-trifluoromethyl-phenyl)-3-(3-fluoro, 4-chlorophenoxy)-2-hydroxy-2-methyl-propanamide: a selective androgen receptor modulator for hormonal male contraception.", "authors": "Jones A, Chen J, Hwang DJ, Miller DD, Dalton JT", "journal": "Endocrinology", "pmid": "18772237"},
+    {"title": "Selective Androgen Receptor Modulators (SARMs)-Induced Liver Injury: A Case Report and Review of Literature.", "authors": "Mohamed WT, Jahagirdar V, Fatima I, Ahmed MK, Goyal A, Sodeman T, Anwar N", "journal": "Cureus", "pmid": "36945289"},
+    {"title": "LGD-4033 and a Case of Drug-Induced Liver Injury: Exploring the Clinical Implications of Off-Label Selective Androgen Receptor Modulator Use in Healthy Adults.", "authors": "Labban H, Kwait B, Paracha A, Khan A, Singh M, Lopez R", "journal": "Cureus", "pmid": "39421081"},
+    {"title": "Selective androgen receptor modulator use and related adverse events including drug-induced liver injury: Analysis of suspected cases.", "authors": "Leciejewska N, Jędrejko K, Gómez-Renaud VM, Manríquez-Núñez J, Muszyńska B, Pokrywka A", "journal": "Eur J Clin Pharmacol", "pmid": "38059982"}
   ],
   "faq": [
     {"q": "Czy S23 to naprawdę najbardziej silny SARM?", "a": "**TAK, w in vivo powinowactwie AR-binding.** Jones 2009 PMID 19299500 rat bioassay S23 pokazał ~95% in vivo aktywność AR na poziomie testosteronu — wyżej niż RAD-140 (~80%), LGD-4033 (~50-70%), Ostarine (~30-40%). ALE: 'najbardziej silny' to NIE 'najlepszy'. Silna aktywność AR ma zastosowanie w OBU tkankach mięsień + prostata (mniejsza selektywność), a supresja HPTA + hepatotoksyczność + profil skutków ubocznych są również proporcjonalnie gorsze. Użytkownicy UGL nazywają go 'hard-SARM': szybki wzrost masy mięśniowej (3-5 kg w 6 tygodni), ale ścisły profil skutków ubocznych + 3-6 miesięcy odzyskania płodności."},
