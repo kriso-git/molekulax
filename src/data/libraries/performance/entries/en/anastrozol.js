@@ -118,22 +118,22 @@ export default {
   ],
   "studies": [
     {
-      "title": "Anastrozole alone or in combination with tamoxifen versus tamoxifen alone for adjuvant treatment of postmenopausal women with early breast cancer: first results of the ATAC randomised trial",
-      "authors": "Buzdar A, Howell A, ATAC Trialists' Group.",
-      "journal": "Lancet. 2002;359(9324):2131-2139.",
-      "pmid": "12081816"
+      "title": "Meta-analyses of phase 3 randomised controlled trials of third generation aromatase inhibitors versus tamoxifen as first-line endocrine therapy in postmenopausal women with hormone receptor-positive advanced breast cancer.",
+      "authors": "Robertson JFR, Paridaens RJ, Lichfield J, Bradbury I, Campbell C",
+      "journal": "Eur J Cancer",
+      "pmid": "33418233"
     },
     {
-      "title": "Influence of letrozole and anastrozole on total body aromatization and plasma estrogen levels in postmenopausal breast cancer patients evaluated in a randomized, cross-over study",
-      "authors": "Geisler J, Haynes B, Anker G, et al.",
-      "journal": "J Clin Oncol. 2002;20(3):751-757.",
-      "pmid": "12351538"
+      "title": "Influence of letrozole and anastrozole on total body aromatization and plasma estrogen levels in postmenopausal breast cancer patients evaluated in a randomized, cross-over study.",
+      "authors": "Geisler J, Haynes B, Anker G, Dowsett M, Lønning PE",
+      "journal": "J Clin Oncol",
+      "pmid": "11821457"
     },
     {
-      "title": "Pharmacokinetics and dose finding of a potent aromatase inhibitor, aromasin (exemestane), in young males",
-      "authors": "Mauras N, Lima J, Patel D, et al.",
-      "journal": "J Clin Endocrinol Metab. 2003;88(12):5951-5956.",
-      "pmid": "12759427"
+      "title": "An integrated view of aromatase and its inhibition.",
+      "authors": "Miller WR, Anderson TJ, Evans DB",
+      "journal": "J Steroid Biochem Mol Biol",
+      "pmid": "14623539"
     },
     {
       "title": "Aromatase inhibitor mechanism: review",
