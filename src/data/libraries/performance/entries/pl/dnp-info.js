@@ -50,10 +50,10 @@ export default {
       "pmid": "21739343"
     },
     {
-      "title": "Dinitrophenol-induced hyperthermia: case series and review",
-      "authors": "Bartlett J, Brunner M, Gough K.",
-      "journal": "J Emerg Med. 2010;39(2):e85-e89.",
-      "pmid": "19150189"
+      "title": "Deliberate poisoning with dinitrophenol (DNP): an unlicensed weight loss pill.",
+      "authors": "Bartlett J, Brunner M, Gough K",
+      "journal": "Emerg Med J",
+      "pmid": "20156878"
     },
     {
       "title": "Death from accidental 2,4-dinitrophenol poisoning",
@@ -62,10 +62,10 @@ export default {
       "pmid": null
     },
     {
-      "title": "Mortality in DNP poisonings: a critical analysis of online forum-marketed bodybuilder use pattern and case fatality rate",
-      "authors": "Petróczi A, Ocampo JAV, Shah I et al.",
-      "journal": "Subst Abuse Treat Prev Policy. 2015;10:39.",
-      "pmid": "26092626"
+      "title": "Dinitrophenol (DNP) Fatality Associated with a Falsely Elevated Salicylate Level: a Case Report with Verification of Laboratory Method.",
+      "authors": "Kopec KT, Freiermuth C, Maynard S, Hoyte C",
+      "journal": "J Med Toxicol",
+      "pmid": "30051204"
     }
   ],
   "related": [],
