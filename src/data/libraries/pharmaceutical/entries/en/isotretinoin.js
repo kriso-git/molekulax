@@ -55,16 +55,16 @@ export default {
       "pmid": "20436884"
     },
     {
-      "title": "Isotretinoin and risk for inflammatory bowel disease: systematic review",
-      "authors": "Lee SY, Jamal MM, Nguyen ET et al.",
-      "journal": "J Crohns Colitis. 2016;10(10):1217-1226.",
-      "pmid": "27068147"
+      "title": "Association of inflammatory bowel disease incidence with isotretinoin usage: A meta-analysis and systematic review.",
+      "authors": "Ahmed A, Liaquat A, Raza S",
+      "journal": "J Am Acad Dermatol",
+      "pmid": "38971188"
     },
     {
-      "title": "Psychiatric adverse effects of isotretinoin",
-      "authors": "Bremner JD, Shearer KD, McCaffery PJ.",
-      "journal": "J Clin Psychiatry. 2012;73(1):37-50.",
-      "pmid": "21939615"
+      "title": "Risk of Suicide and Psychiatric Disorders Among Isotretinoin Users: A Meta-Analysis.",
+      "authors": "Tan NKW, Tang A, MacAlevey NCYL",
+      "journal": "JAMA Dermatol",
+      "pmid": "38019562"
     }
   ],
   "related": [

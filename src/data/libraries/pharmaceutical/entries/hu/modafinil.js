@@ -129,16 +129,16 @@ export default {
   ],
   "studies": [
     {
-      "title": "Modafinil for narcolepsy: clinical efficacy and adverse effects",
-      "authors": "Mitler MM, Harsh J, Hirshkowitz M et al.",
-      "journal": "Sleep Med Rev. 2000;4(3):219-237.",
-      "pmid": "17210259"
+      "title": "Comparative efficacy of new wake-promoting agents for narcolepsy-a network meta-analysis.",
+      "authors": "Yan Z, Li J, Yu Y",
+      "journal": "BMC Neurol",
+      "pmid": "41233821"
     },
     {
-      "title": "Modafinil for excessive sleepiness associated with shift-work sleep disorder",
-      "authors": "Czeisler CA, Walsh JK, Roth T et al.",
-      "journal": "N Engl J Med. 2005;353(5):476-86.",
-      "pmid": "16093585"
+      "title": "The long-term tolerability and efficacy of armodafinil in patients with excessive sleepiness associated with treated obstructive sleep apnea, shift work disorder, or narcolepsy.",
+      "authors": "Black JE, Hull SG, Tiller J, Yang R, Harsh JR",
+      "journal": "J Clin Sleep Med",
+      "pmid": "20957846"
     },
     {
       "title": "Modafinil in the treatment of multiple sclerosis-related fatigue",
@@ -165,10 +165,10 @@ export default {
       "pmid": "16895262"
     },
     {
-      "title": "A long-term, open-label study of modafinil for the treatment of narcolepsy",
-      "authors": "Mitler MM, Harsh J, Hirshkowitz M et al.",
-      "journal": "Sleep Med. 2000;1(3):231-243.",
-      "pmid": "10828437"
+      "title": "Long-term efficacy and safety of modafinil (PROVIGIL((R))) for the treatment of excessive daytime sleepiness associated with narcolepsy.",
+      "authors": "Mitler MM, Harsh J, Hirshkowitz M, Guilleminault C",
+      "journal": "Sleep Med",
+      "pmid": "10828434"
     }
   ],
   "faq": [

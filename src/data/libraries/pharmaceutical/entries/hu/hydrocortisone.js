@@ -53,10 +53,10 @@ export default {
       "pmid": "26760044"
     },
     {
-      "title": "Modified-release hydrocortisone (Plenadren) in adrenal insufficiency",
-      "authors": "Johannsson G, Nilsson AG, Bergthorsdottir R et al.",
-      "journal": "J Clin Endocrinol Metab. 2012;97(2):473-81.",
-      "pmid": "22112814"
+      "title": "Effects of modified release hydrocortisone on restoration of early morning cortisol, quality of life, and fatigue in adrenal insufficiency.",
+      "authors": "Prete A, Theiler-Schwetz V, Arlt W",
+      "journal": "EClinicalMedicine",
+      "pmid": "41552007"
     }
   ],
   "related": [

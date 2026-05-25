@@ -127,10 +127,10 @@ export default {
   ],
   "studies": [
     {
-      "title": "Finasteride in the treatment of men with androgenetic alopecia (5-year results)",
-      "authors": "Kaufman KD, Olsen EA, Whiting D et al.",
-      "journal": "J Am Acad Dermatol. 1998;39(4 Pt 1):578-89.",
-      "pmid": "9591820"
+      "title": "Progression of hair loss in men with androgenetic alopecia (male pattern hair loss): long-term (5-year) controlled observational data in placebo-treated patients.",
+      "authors": "Kaufman KD, Girman CJ, Round EM, Johnson-Levonas AO, Shah AK, Rotonda J",
+      "journal": "Eur J Dermatol",
+      "pmid": "18573713"
     },
     {
       "title": "The long-term effect of doxazosin, finasteride, and combination therapy on the clinical progression of BPH (MTOPS)",
@@ -145,16 +145,16 @@ export default {
       "pmid": "12824459"
     },
     {
-      "title": "Long-term (15-year) results after finasteride treatment in men with androgenetic alopecia",
-      "authors": "Yanagisawa M, Fujimaki H, Takeda A et al.",
-      "journal": "Clin Cosmet Investig Dermatol. 2019;12:139-147.",
-      "pmid": "30863133"
+      "title": "The Risk of Benign Prostatic Hyperplasia and Prostate Cancer With Long-Term, Low Dose Finasteride Use in Adult Men with Nonscarring Alopecia.",
+      "authors": "Adler R, Kozlov M, Viola J",
+      "journal": "Urology",
+      "pmid": "42034292"
     },
     {
-      "title": "Hair growth assessment with finasteride 1 mg in male androgenetic alopecia",
-      "authors": "Sato A, Takeda A.",
-      "journal": "J Dermatol. 2012;39(1):27-32.",
-      "pmid": "22243391"
+      "title": "Effectiveness and Safety of Topical Finasteride for Male Androgenetic Alopecia: Real World Data.",
+      "authors": "Piraccini BM, Rapparini L, Quadrelli F",
+      "journal": "Int J Dermatol",
+      "pmid": "41874081"
     },
     {
       "title": "Adverse effects and safety of 5-alpha reductase inhibitors (finasteride, dutasteride)",

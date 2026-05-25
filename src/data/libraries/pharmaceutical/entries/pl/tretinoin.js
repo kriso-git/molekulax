@@ -48,22 +48,22 @@ export default {
   ],
   "studies": [
     {
-      "title": "Topical tretinoin improves photodamaged facial skin",
-      "authors": "Kligman AM, Grove GL, Hirose R et al.",
-      "journal": "J Am Acad Dermatol. 1986;15(4 Pt 2):836-59.",
-      "pmid": "3548421"
+      "title": "An Updated Review of Topical Tretinoin in Dermatology: From Acne and Photoaging to Skin Cancer.",
+      "authors": "Balado-Simó P, Morgado-Carrasco D, Gómez-Armayones S",
+      "journal": "J Clin Med",
+      "pmid": "41302994"
     },
     {
-      "title": "Topical retinoid for acne: meta-analysis",
-      "authors": "Yentzer BA, Hick J, Reese EL et al.",
-      "journal": "Cutis. 2010;86(2):94-9.",
-      "pmid": "20919605"
+      "title": "Management of Acne Vulgaris: A Review.",
+      "authors": "Eichenfield DZ, Sprague J, Eichenfield LF",
+      "journal": "JAMA",
+      "pmid": "34812859"
     },
     {
-      "title": "Tretinoin for hyperpigmentation (melasma): randomized trial",
-      "authors": "Griffiths CE, Goldfarb MT, Finkel LJ et al.",
-      "journal": "Br J Dermatol. 1994;131(1):106-13.",
-      "pmid": "8043420"
+      "title": "Efficacy and Safety of Generic Fluocinolone Acetonide, Hydroquinone, and Tretinoin Cream Compared With TRI-LUMA for the Treatment of Melasma.",
+      "authors": "Hu H, Zhou P, Yao H",
+      "journal": "J Cosmet Dermatol",
+      "pmid": "40296512"
     }
   ],
   "related": [

@@ -135,16 +135,16 @@ export default {
       "pmid": "12352386"
     },
     {
-      "title": "The efficacy and safety of tadalafil: an update",
-      "authors": "Carson CC, Rajfer J, Eardley I et al.",
-      "journal": "BJU Int. 2004;93(9):1276-81.",
-      "pmid": "15180631"
+      "title": "Update on the Safety of Phosphodiesterase Type 5 Inhibitors for the Treatment of Erectile Dysfunction.",
+      "authors": "Yafi FA, Sharlip ID, Becher EF",
+      "journal": "Sex Med Rev",
+      "pmid": "28923561"
     },
     {
-      "title": "Efficacy and safety of tadalafil for once-daily use in the treatment of erectile dysfunction",
-      "authors": "Porst H, Giuliano F, Glina S et al.",
-      "journal": "Eur Urol. 2006;50(2):351-9.",
-      "pmid": "16469523"
+      "title": "An update on new oral PDE5 inhibitors for the treatment of erectile dysfunction.",
+      "authors": "Palit V, Eardley I",
+      "journal": "Nat Rev Urol",
+      "pmid": "21068761"
     },
     {
       "title": "Tadalafil for treatment of pulmonary arterial hypertension (PHIRST)",
@@ -159,16 +159,16 @@ export default {
       "pmid": "17382741"
     },
     {
-      "title": "Endothelial function improvement after chronic tadalafil in diabetic men with erectile dysfunction",
-      "authors": "Aversa A, Vitale C, Volterrani M et al.",
-      "journal": "Eur Heart J. 2009;30(7):865-72.",
-      "pmid": "18820322"
+      "title": "Redefining the role of long-acting phosphodiesterase inhibitor tadalafil in the treatment of diabetic erectile dysfunction.",
+      "authors": "Bruzziches R, Greco EA, Pili M, Francomano D, Spera G, Aversa A",
+      "journal": "Curr Diabetes Rev",
+      "pmid": "18220692"
     },
     {
-      "title": "Comparison of tadalafil and sildenafil in patient preference and effects",
-      "authors": "Eardley I, Mirone V, Montorsi F et al.",
-      "journal": "BJU Int. 2005;96(9):1323-32.",
-      "pmid": "16287456"
+      "title": "Direct comparison of tadalafil with sildenafil for the treatment of erectile dysfunction: a systematic review and meta-analysis.",
+      "authors": "Gong B, Ma M, Xie W, Yang X, Huang Y, Sun T, Luo Y, Huang J",
+      "journal": "Int Urol Nephrol",
+      "pmid": "28741090"
     }
   ],
   "faq": [

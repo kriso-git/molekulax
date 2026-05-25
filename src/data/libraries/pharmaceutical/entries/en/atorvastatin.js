@@ -151,10 +151,10 @@ export default {
       "pmid": "21067804"
     },
     {
-      "title": "Effects of atorvastatin on early recurrent ischemic events in acute coronary syndromes (MIRACL)",
-      "authors": "Schwartz GG, Olsson AG, Ezekowitz MD et al.",
-      "journal": "JAMA. 2001;285(13):1711-8.",
-      "pmid": "11268233"
+      "title": "Early, intensive statin treatment reduces 'hard' cardiovascular outcomes after acute coronary syndrome.",
+      "authors": "Schwartz GG, Fayyad R, Szarek M, DeMicco D, Olsson AG",
+      "journal": "Eur J Prev Cardiol",
+      "pmid": "28504565"
     },
     {
       "title": "Prevention of coronary and stroke events with atorvastatin (ASCOT-LLA)",

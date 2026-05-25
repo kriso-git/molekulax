@@ -48,10 +48,10 @@ export default {
       "pmid": "24782999"
     },
     {
-      "title": "Liothyronine in major depressive disorder augmentation",
-      "authors": "Cooper-Kazaz R, Apter JT, Cohen R et al.",
-      "journal": "Arch Gen Psychiatry. 2007;64(6):679-88.",
-      "pmid": "17548750"
+      "title": "Pharmacological Treatments for Patients with Treatment-Resistant Depression.",
+      "authors": "Ruberto VL, Jha MK, Murrough JW",
+      "journal": "Pharmaceuticals (Basel)",
+      "pmid": "32512768"
     }
   ],
   "related": [

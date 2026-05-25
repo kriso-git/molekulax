@@ -61,10 +61,10 @@ export default {
       "pmid": "29744873"
     },
     {
-      "title": "Long-term safety of methylphenidate in children with ADHD",
-      "authors": "Vitiello B, Severe JB, Greenhill LL et al.",
-      "journal": "J Am Acad Child Adolesc Psychiatry. 2008;47(8):860-9.",
-      "pmid": "18596553"
+      "title": "Attention-deficit hyperactivity disorder, multimodal treatment, and longitudinal outcome: evidence, paradox, and challenge.",
+      "authors": "Hinshaw SP, Arnold LE, MTA Cooperative Group",
+      "journal": "Wiley Interdiscip Rev Cogn Sci",
+      "pmid": "26262927"
     }
   ],
   "related": [
