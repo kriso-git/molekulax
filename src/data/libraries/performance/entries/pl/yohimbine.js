@@ -110,10 +110,10 @@ export default {
       "pmid": "11744068"
     },
     {
-      "title": "The effects of yohimbine on regional adipose tissue lipolysis in obese subjects",
-      "authors": "Galitzky J, Taouis M, Berlan M et al.",
-      "journal": "Eur J Clin Invest. 1988;18(6):587-594.",
-      "pmid": "3147912"
+      "title": "Regional differences in adrenoceptor binding and fat cell lipolysis in obese, postmenopausal women.",
+      "authors": "Berman DM, Nicklas BJ, Rogus EM, Dennis KE, Goldberg AP",
+      "journal": "Metabolism",
+      "pmid": "9550547"
     },
     {
       "title": "Ergogenic and sympathomimetic effects of yohimbine: a review",
