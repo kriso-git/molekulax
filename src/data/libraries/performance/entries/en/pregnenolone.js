@@ -81,9 +81,9 @@ export default {
     "Anti-anxiety meds (benzodiazepine, SSRI): GABA-A-receptor negative-modulator action theoretical antagonism — clinical relevance NOT documented"
   ],
   "studies": [
-    {"title": "Pregnenolone and its sulfate ester in the brain: a comprehensive review of neurosteroid functions", "authors": "Mosconi L, Berti V, Quinn C, et al.", "journal": "Front Neuroendocrinol. 2017;47:34-47.", "pmid": "28259555"},
-    {"title": "Pharmacokinetics of orally administered pregnenolone in healthy volunteers", "authors": "Roberts E, Bologa L, Flood JF, Smith GE.", "journal": "Brain Res. 1992;406(1-2):357-362.", "pmid": "1610975"},
-    {"title": "Pregnenolone as a novel therapeutic candidate in schizophrenia: phase II clinical trial", "authors": "Marx CE, Keefe RS, Buchanan RW, et al.", "journal": "Neuropsychopharmacology. 2009;34(8):1885-1903.", "pmid": "19797577"}
+    {"title": "Neurosteroids Progesterone and Dehydroepiandrosterone: Molecular Mechanisms of Action in Neuroprotection and Neuroinflammation.", "authors": "Fedotcheva TA, Shimanovsky NL", "journal": "Pharmaceuticals (Basel)", "pmid": "40732235"},
+    {"title": "Therapeutic potential of enzymes, neurosteroids, and synthetic steroids in neurodegenerative disorders: A critical review.", "authors": "Servi R, Akkoç RF, Aksu F", "journal": "J Steroid Biochem Mol Biol", "pmid": "40288591"},
+    {"title": "Advancements in Non-Dopaminergic Treatments for Schizophrenia: A Systematic Review of Pipeline Developments.", "authors": "Komatsu Y, Takehara M, Hart X", "journal": "Pharmacopsychiatry", "pmid": "38710208"}
   ],
   "faq": [
     {"q": "OTC supplement — does it actually work?", "a": "**Partly — evidence-quality differential is significant.** (1) **Neurosteroid CNS effect** (NMDA/GABA-A modulator): moderately evidence-supported (Mosconi 2017 review, Marx 2009 schizophrenia trial) — mental clarity, brain fog reduction, mild cognitive enhancement user-reported consistently in the responder population. (2) **Hormone-axis substrate-loading claim** (Test/DHEA elevation via the full steroidogenesis pathway): **LOW-evidence** — Roberts 1992 PK study showed oral bioavailability <10%, downstream serum Test elevation supervariable, NOT clinical-trial validated in AAS-PCT context. **Bottom line**: brain-fog-reduction is an OK claim, hormone-axis-restart is NOT evidence-based, NOT a SERM-PCT replacement, NOT an HCG replacement."},

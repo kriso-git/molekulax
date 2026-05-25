@@ -55,16 +55,16 @@ export default {
       "pmid": "29519881"
     },
     {
-      "title": "FDA boxed warnings for fluoroquinolones: safety review",
-      "authors": "Tanne JH.",
-      "journal": "BMJ. 2018;363:k4934.",
-      "pmid": "30459112"
+      "title": "Fluoroquinolone-Associated Tendinopathy: Does Levofloxacin Pose the Greatest Risk?",
+      "authors": "Bidell MR, Lodise TP",
+      "journal": "Pharmacotherapy",
+      "pmid": "27138564"
     },
     {
-      "title": "Ciprofloxacin in complicated urinary tract infections",
-      "authors": "Wagenlehner FM, Naber KG.",
-      "journal": "Int J Antimicrob Agents. 2004;24 Suppl 1:S1-3.",
-      "pmid": "15364298"
+      "title": "Antimicrobial resistance in complicated urinary tract infections: A retrospective study from a rehabilitation centre.",
+      "authors": "Do DV, Tran TTH, Tran TL",
+      "journal": "J Glob Antimicrob Resist",
+      "pmid": "41997421"
     }
   ],
   "related": [

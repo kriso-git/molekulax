@@ -49,16 +49,16 @@ export default {
   ],
   "studies": [
     {
-      "title": "Growth hormone in sport: doping and health implications",
-      "authors": "Sigalos JT, Pastuszak AW.",
-      "journal": "World J Mens Health. 2017;35(2):109-115.",
-      "pmid": "28868816"
+      "title": "Performance Enhancing Hormone Doping in Sport.",
+      "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S",
+      "journal": "Endocr Rev",
+      "pmid": "26247087"
     },
     {
-      "title": "Effects of growth hormone on muscle and physical function",
-      "authors": "Liu H, Bravata DM, Olkin I et al.",
-      "journal": "Ann Intern Med. 2008;148(10):747-758.",
-      "pmid": "18347257"
+      "title": "Ghrelin Receptor Deletion or Pharmacological Inhibition Improves Muscle Function in Aging Male Mice.",
+      "authors": "Kerr HL, Krumm K, Myree N",
+      "journal": "Aging Cell",
+      "pmid": "41986945"
     },
     {
       "title": "Acromegaly: clinical features and management",
@@ -67,10 +67,10 @@ export default {
       "pmid": "17167139"
     },
     {
-      "title": "Growth hormone, IGF-I and insulin and their abuse in sport",
-      "authors": "Holt RIG, Sönksen PH.",
-      "journal": "Br J Pharmacol. 2008;154(3):542-556.",
-      "pmid": "18450787"
+      "title": "Application of the Athlete Biological Passport Approach to the Detection of Growth Hormone Doping.",
+      "authors": "Equey T, Pastor A, de la Torre Fornell R, Thuyne WV, Deventer K, Sottas PE",
+      "journal": "J Clin Endocrinol Metab",
+      "pmid": "34726230"
     }
   ],
   "related": [

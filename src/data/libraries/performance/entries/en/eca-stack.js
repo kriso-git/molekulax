@@ -118,16 +118,16 @@ export default {
   ],
   "studies": [
     {
-      "title": "The effect and safety of an ephedrine/caffeine compound compared to ephedrine, caffeine and placebo in obese subjects on an energy restricted diet. A double blind trial",
-      "authors": "Astrup A, Breum L, Toubro S, Hein P, Quaade F.",
-      "journal": "Int J Obes Relat Metab Disord. 1992;16(4):269-277.",
-      "pmid": "1322897"
+      "title": "Safety and efficacy of long-term treatment with ephedrine, caffeine and an ephedrine/caffeine mixture.",
+      "authors": "Toubro S, Astrup AV, Breum L, Quaade F",
+      "journal": "Int J Obes Relat Metab Disord",
+      "pmid": "8384186"
     },
     {
-      "title": "Pharmacokinetic and pharmacodynamic studies after oral administration of ephedrine to man",
-      "authors": "Daly PA, Krieger DR, Dulloo AG, Young JB, Landsberg L.",
-      "journal": "Am J Clin Nutr. 1993;57(6 Suppl):785S-786S.",
-      "pmid": "8497418"
+      "title": "Mechanistic pharmacokinetic modelling of ephedrine, norephedrine and caffeine in healthy subjects.",
+      "authors": "Csajka C, Haller CA, Benowitz NL, Verotta D",
+      "journal": "Br J Clin Pharmacol",
+      "pmid": "15752380"
     },
     {
       "title": "An herbal supplement containing Ma Huang-Guarana for weight loss: a randomized, double-blind trial",
@@ -136,10 +136,10 @@ export default {
       "pmid": "12032741"
     },
     {
-      "title": "Long-term weight loss with metformin or thermogenic combination of ephedrine and caffeine",
-      "authors": "Greenway FL.",
-      "journal": "Obes Rev. 2001;2(3):199-211.",
-      "pmid": "12120104"
+      "title": "Efficacy and safety of ephedra and ephedrine for weight loss and athletic performance: a meta-analysis.",
+      "authors": "Shekelle PG, Hardy ML, Morton SC, Maglione M, Mojica WA, Suttorp MJ, Rhodes SL, Jungvig L, Gagné J",
+      "journal": "JAMA",
+      "pmid": "12672771"
     },
     {
       "title": "Ephedra-containing dietary supplements and cardiovascular adverse events",

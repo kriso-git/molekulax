@@ -82,9 +82,9 @@ export default {
     "PDE5 inhibitors (sildenafil, tadalafil): first-line adjunct for finasteride sexual side effects"
   ],
   "studies": [
-    {"title": "Finasteride in the treatment of men with androgenetic alopecia. Finasteride Male Pattern Hair Loss Study Group", "authors": "Kaufman KD, Olsen EA, Whiting D, et al.", "journal": "J Am Acad Dermatol. 1998;39(4 Pt 1):578-589.", "pmid": "9821414"},
-    {"title": "Persistent sexual side effects of finasteride for male pattern hair loss", "authors": "Irwig MS, Kolukula S.", "journal": "J Sex Med. 2011;8(6):1747-1753.", "pmid": "22366892"},
-    {"title": "Anabolic-androgenic steroid use and 5α-reductase inhibitor co-administration: a review", "authors": "Mella M, Beneitez C, et al.", "journal": "Curr Drug Targets. 2010;11(12):1497-1510.", "pmid": "20842055"},
+    {"title": "Viable terminal scalp hair follicles constitute a necessary and sufficient biological end-organ that conditions clinical efficacy of finasteride 1mg.", "authors": "Van Neste D", "journal": "Skin Res Technol", "pmid": "31206839"},
+    {"title": "Persistent Sexual and Psychological Symptoms After Finasteride Discontinuation: A Cross-Sectional Observational Study.", "authors": "Jędrzejczyk P, Ząbkowski T, Ratajski J", "journal": "J Clin Med", "pmid": "42074750"},
+    {"title": "5-Alpha reductase inhibitors in androgenetic alopecia: Shifting paradigms, current concepts, comparative efficacy, and safety.", "authors": "Dhurat R, Sharma A, Rudnicka L, Kanti V, Vañó-Galván S, Pirmez R, Sinclair R, Doolan B, Tosti A", "journal": "Dermatol Ther", "pmid": "32279398"},
     {"title": "Long-term (5-year) multinational experience with finasteride 1 mg in the treatment of men with androgenetic alopecia", "authors": "Kaufman KD, Rotonda J, Shah AK, Meehan AG.", "journal": "Eur J Dermatol. 2008;18(4):400-406.", "pmid": "18573713"}
   ],
   "faq": [

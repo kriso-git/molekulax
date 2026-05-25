@@ -84,9 +84,9 @@ export default {
     "Alkohol: vegetatív mellékhatás-fokozódás (nausea, hypotensio), kerülni javasolt"
   ],
   "studies": [
-    {"title": "A comparison of cabergoline and bromocriptine in the treatment of hyperprolactinemic amenorrhea", "authors": "Webster J, Piscitelli G, Polli A, Ferrari CI, Ismail I, Scanlon MF.", "journal": "N Engl J Med. 1994;331(14):904-909.", "pmid": "8090165"},
-    {"title": "Cabergoline and pergolide for the treatment of Parkinson's disease — a systematic review and meta-analysis", "authors": "Schade R, Andersohn F, Suissa S, Haverkamp W, Garbe E.", "journal": "N Engl J Med. 2007;356(1):29-38.", "pmid": "17371996"},
-    {"title": "Effects of acute prolactin manipulation on sexual drive and function in males", "authors": "Krüger TH, Haake P, Haverkamp J, et al.", "journal": "J Endocrinol. 2003;179(3):357-365.", "pmid": "12849866"},
+    {"title": "Retrospective comparison of cabergoline and bromocriptine effects in hyperprolactinemia: a single center experience.", "authors": "Arduc A, Gokay F, Isik S, Ozuguz U, Akbaba G, Tutuncu Y, Berker D, Guler S", "journal": "J Endocrinol Invest", "pmid": "25421155"},
+    {"title": "Risks of Cardiac Valve Regurgitation and Heart Failure Associated with Ergot- and Non-Ergot-Derived Dopamine Agonist Use in Patients with Parkinson's Disease: A Systematic Review of Observational Studies.", "authors": "Tran T, Brophy JM, Suissa S, Renoux C", "journal": "CNS Drugs", "pmid": "26585874"},
+    {"title": "Effects of acute prolactin manipulation on sexual drive and function in males.", "authors": "Krüger TH, Haake P, Haverkamp J, Krämer M, Exton MS, Saller B, Mann K, Hartmann U, Schedlowski M", "journal": "J Endocrinol", "pmid": "14656205"},
     {"title": "Impulse control disorders in Parkinson disease: a cross-sectional study of 3090 patients (DOMINION study)", "authors": "Weintraub D, Koester J, Potenza MN, et al.", "journal": "Arch Neurol. 2010;67(5):589-595.", "pmid": "20457959"}
   ],
   "faq": [

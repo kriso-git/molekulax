@@ -84,10 +84,10 @@ export default {
     "Alcohol: mild hepatic stress, moderate consumption OK"
   ],
   "studies": [
-    {"title": "Five years of letrozole compared with tamoxifen as initial adjuvant therapy for postmenopausal women with endocrine-responsive early breast cancer: update of study BIG 1-98", "authors": "Coates AS, Keshaviah A, Thürlimann B, et al.", "journal": "J Clin Oncol. 2007;25(5):486-492.", "pmid": "17582920"},
-    {"title": "Pharmacology of CGS 20267, a potent aromatase inhibitor (letrozole)", "authors": "Bhatnagar AS, Häusler A, Schieweck K, et al.", "journal": "J Steroid Biochem Mol Biol. 1996;58(5-6):529-533.", "pmid": "8847500"},
-    {"title": "A randomized trial of letrozole in postmenopausal women after five years of tamoxifen therapy for early-stage breast cancer (MA.17 trial)", "authors": "Goss PE, Ingle JN, Martino S, et al.", "journal": "N Engl J Med. 2003;349(19):1793-1802.", "pmid": "14595025"},
-    {"title": "Influence of letrozole and anastrozole on total body aromatization and plasma estrogen levels in postmenopausal breast cancer patients evaluated in a randomized, cross-over study", "authors": "Geisler J, Haynes B, Anker G, et al.", "journal": "J Clin Oncol. 2002;20(3):751-757.", "pmid": "12351538"}
+    {"title": "A comparison of letrozole and tamoxifen in postmenopausal women with early breast cancer.", "authors": "Breast International Group (BIG) 1-98 Collaborative Group, Thürlimann B, Keshaviah A, Coates AS, Mouridsen H, Mauriac L, Forbes JF, Paridaens R, Castiglione-Gertsch M, Gelber RD, Rabaglio M, Smith I, Wardley A, Price KN, Goldhirsch A", "journal": "N Engl J Med", "pmid": "16382061"},
+    {"title": "The discovery and mechanism of action of letrozole.", "authors": "Bhatnagar AS", "journal": "Breast Cancer Res Treat", "pmid": "17912633"},
+    {"title": "Longer-term outcomes of letrozole versus placebo after 5 years of tamoxifen in the NCIC CTG MA.17 trial: analyses adjusting for treatment crossover.", "authors": "Jin H, Tu D, Zhao N, Shepherd LE, Goss PE", "journal": "J Clin Oncol", "pmid": "22042967"},
+    {"title": "Influence of letrozole and anastrozole on total body aromatization and plasma estrogen levels in postmenopausal breast cancer patients evaluated in a randomized, cross-over study.", "authors": "Geisler J, Haynes B, Anker G, Dowsett M, Lønning PE", "journal": "J Clin Oncol", "pmid": "11821457"}
   ],
   "faq": [
     {"q": "Letrozole vs. anastrozole — why stronger?", "a": "Two factors: (1) Higher penetration into intramuscular aromatase tissues — the Geisler 2002 head-to-head trial documented that letrozole's peripheral aromatase suppression is ~2-3× stronger than anastrozole's (in vivo measurement). (2) Greater enzyme-level binding stability (Ki ~5-10 nM vs. anastrozole ~15 nM). Practically: equivalent doses are anastrozole 1 mg ≈ letrozole 0.25-0.5 mg. AI-naive users should start letrozole at anastrozole-equivalent half-dose."},

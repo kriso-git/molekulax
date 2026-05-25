@@ -83,9 +83,9 @@ export default {
     "Kortyzol/Prednizon: nakładanie osi nadnerczowej, użytkownicy przewlekłych glikokortykoidów mają niedobór DHEA-S — wskazanie replacement (Allolio 1999)"
   ],
   "studies": [
-    {"title": "DHEA effects on physical and psychological functioning in androgen-deficient men: a randomized controlled trial", "authors": "Wiehle RD, Fontenot GK, Wike J, et al.", "journal": "J Clin Endocrinol Metab. 2014;99(9):3266-3275.", "pmid": "24913480"},
-    {"title": "Effects of replacement dose of dehydroepiandrosterone in men and women of advancing age", "authors": "Morales AJ, Nolan JJ, Nelson JC, Yen SS.", "journal": "J Clin Endocrinol Metab. 1994;78(6):1360-1367.", "pmid": "7910820"},
-    {"title": "Replacement of DHEA in aging men and women. Potential remedial effects", "authors": "Yen SS, Morales AJ, Khorram O.", "journal": "Ann N Y Acad Sci. 1995;774:128-142.", "pmid": "7726309"},
+    {"title": "The effect of six months treatment with a 100 mg daily dose of dehydroepiandrosterone (DHEA) on circulating sex steroids, body composition and muscle strength in age-advanced men and women.", "authors": "Morales AJ, Haubrich RH, Hwang JY, Asakura H, Yen SS", "journal": "Clin Endocrinol (Oxf)", "pmid": "9876338"},
+    {"title": "Effects of replacement dose of dehydroepiandrosterone in men and women of advancing age.", "authors": "Morales AJ, Nolan JJ, Nelson JC, Yen SS", "journal": "J Clin Endocrinol Metab", "pmid": "7515387"},
+    {"title": "Replacement of DHEA in aging men and women. Potential remedial effects.", "authors": "Yen SS, Morales AJ, Khorram O", "journal": "Ann N Y Acad Sci", "pmid": "8597453"},
     {"title": "DHEA replacement in patients with adrenal insufficiency", "authors": "Allolio B, Arlt W, Hahner S.", "journal": "Ann Endocrinol (Paris). 1999;60(2):157-162.", "pmid": "10468979"}
   ],
   "faq": [

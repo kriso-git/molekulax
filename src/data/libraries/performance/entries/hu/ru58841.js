@@ -111,28 +111,28 @@ export default {
   ],
   "studies": [
     {
-      "title": "Effects of finasteride (Proscar) and RU58841 on hair growth in stump-tail macaque",
-      "authors": "Sawaya ME, Hordinsky MK.",
-      "journal": "Skin Pharmacol. 1997;10(5-6):293-303.",
-      "pmid": "9224249"
+      "title": "Evaluation of RU58841 as an anti-androgen in prostate PC3 cells and a topical anti-alopecia agent in the bald scalp of stumptailed macaques.",
+      "authors": "Pan HJ, Wilding G, Uno H, Inui S, Goldsmith L, Messing E, Chang C",
+      "journal": "Endocrine",
+      "pmid": "9798729"
     },
     {
-      "title": "RU58841: a non-steroidal antiandrogen with potential for dermatological application",
-      "authors": "Battmann T, Bonfils A, Branche C, et al.",
-      "journal": "J Steroid Biochem Mol Biol. 1994;48(1):55-60.",
-      "pmid": "7969105"
+      "title": "A controlled study of the effects of RU58841, a non-steroidal antiandrogen, on human hair production by balding scalp grafts in nude mice.",
+      "authors": "De Brouwer B, Tételin C, Leroy T, Bonfils A, Van Neste D",
+      "journal": "Br J Dermatol",
+      "pmid": "9415227"
     },
     {
-      "title": "RU58841, a topical antiandrogen for the treatment of androgenetic alopecia",
-      "authors": "De Brouwer B, Battmann T, Bonfils A, Branche C.",
-      "journal": "Steroids. 1997;62(1):112-117.",
-      "pmid": "9203282"
+      "title": "RU 58841-myristate--prodrug development for topical treatment of acne and androgenetic alopecia.",
+      "authors": "Münster U, Nakamura C, Haberland A, Jores K, Mehnert W, Rummel S, Schaller M, Korting HC, Zouboulis ChC, Blume-Peytavi U, Schäfer-Korting M",
+      "journal": "Pharmazie",
+      "pmid": "15700772"
     },
     {
-      "title": "The emerging pharmacotherapeutic agents for the treatment of male androgenetic alopecia",
-      "authors": "Olsen EA, Hordinsky M, Whiting D, et al.",
-      "journal": "Expert Opin Pharmacother. 2018;19(15):1739-1751.",
-      "pmid": "30041755"
+      "title": "5-Alpha reductase inhibitors in androgenetic alopecia: Shifting paradigms, current concepts, comparative efficacy, and safety.",
+      "authors": "Dhurat R, Sharma A, Rudnicka L, Kanti V, Vañó-Galván S, Pirmez R, Sinclair R, Doolan B, Tosti A",
+      "journal": "Dermatol Ther",
+      "pmid": "32279398"
     }
   ],
   "faq": [

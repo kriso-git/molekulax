@@ -85,10 +85,10 @@ export default {
     "Alkohol: łagodny stres wątrobowy, umiarkowane OK"
   ],
   "studies": [
-    {"title": "The importance of dual 5alpha-reductase inhibition in the treatment of male pattern hair loss: results of a randomized placebo-controlled study of dutasteride versus finasteride", "authors": "Olsen EA, Hordinsky M, Whiting D, et al.", "journal": "J Am Acad Dermatol. 2006;55(6):1014-1023.", "pmid": "16782546"},
-    {"title": "Dutasteride increases scalp dihydrotestosterone levels in androgenetic alopecia patients", "authors": "Choi GS, Sim WY, Kang H, et al.", "journal": "J Dermatol. 2014;41(5):425-429.", "pmid": "24820896"},
-    {"title": "Comparison of dutasteride and finasteride in the development of post-finasteride syndrome", "authors": "Trost L, Saitz TR, Hellstrom WJ.", "journal": "Int J Impot Res. 2017;29(4):153-156.", "pmid": "28267184"},
-    {"title": "Long-term efficacy of dutasteride in male pattern hair loss", "authors": "Olsen EA, Hordinsky M, et al.", "journal": "J Am Acad Dermatol. 2012;67(2):362-364.", "pmid": "22810098"}
+    {"title": "Long-term efficacy and safety of dutasteride 0.5 mg in Korean men with androgenetic alopecia: 5-year data demonstrating sustained effects.", "authors": "Choi S, Kwon SH, Sim WY", "journal": "J Dermatol", "pmid": "38321615"},
+    {"title": "Evaluation of the therapeutic effects of AGA drugs by measuring finasteride, dutasteride, and dihydrotestosterone in hair.", "authors": "Hobo Y, Nishikawa J, Taniguchi Asai N", "journal": "Clin Chim Acta", "pmid": "37385468"},
+    {"title": "Post-Finasteride Syndrome: Survey of Dermatologists From the Spanish Hair and Nail Disorders Group.", "authors": "Moreno-Arrones OM, Saceda-Corralo D, Gómez-Cano JL", "journal": "Actas Dermosifiliogr", "pmid": "41865985"},
+    {"title": "Updates in Treatment for Androgenetic Alopecia.", "authors": "Shin JW, Huh CH", "journal": "Ann Dermatol", "pmid": "41331712"}
   ],
   "faq": [
     {"q": "Finasteryd vs dutasteryd — kiedy który?", "a": "Domyślny pierwszorzędny: **FINASTERYD** 1 mg/dzień (mniejsze skutki uboczne, krótszy washout, kliniczny standard protokołu AGA). Dutasteryd **drugorzędny** lub **pierwszorzędny w sytuacjach niszowych**: (1) Nieodpowiednia odpowiedź na finasteryd (<30% poprawy po 3-6 miesiącach, lub kontynuowana progresja); (2) Akcent trądziku (blokada Typ I 5AR dla bonusu redukcji sebumu); (3) Agresywny stack AAS (Test + Tren + Anadrol wysoka dawka, gdzie cel jest maksymalna supresja DHT). Ze względu na długi washout (~6 miesięcy vs finasteryd 2 tygodnie), **NIE** zalecany u użytkowników krótkoterminowych lub z akcentem płodności. Ryzyko PFS jest wyższe (Trost 2017) — użytkownicy unikający ryzyka preferują finasteryd."},

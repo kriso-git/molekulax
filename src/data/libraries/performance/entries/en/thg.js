@@ -73,11 +73,11 @@ export default {
     "TUDCA NOT mandatory (NOT 17α-alkylated)"
   ],
   "studies": [
-    {"title": "Tetrahydrogestrinone: discovery, synthesis, and detection in urine", "authors": "Catlin DH, Sekera MH, Ahrens BD, Starcevic B, Chang YC, Hatton CK.", "journal": "Rapid Commun Mass Spectrom. 2004;18(12):1245-9.", "pmid": "15170747"},
-    {"title": "Mass spectrometric study of the structure of THG", "authors": "Catlin DH et al.", "journal": "Rapid Commun Mass Spectrom. 2002;16(20):1962-9.", "pmid": "12352283"},
-    {"title": "Tetrahydrogestrinone is a potent androgen and progestin", "authors": "Death AK, McGrath KCY, Kazlauskas R, Handelsman DJ.", "journal": "J Clin Endocrinol Metab. 2004;89(5):2498-500.", "pmid": "15579773"},
+    {"title": "Tetrahydrogestrinone: discovery, synthesis, and detection in urine.", "authors": "Catlin DH, Sekera MH, Ahrens BD, Starcevic B, Chang YC, Hatton CK", "journal": "Rapid Commun Mass Spectrom", "pmid": "15174177"},
+    {"title": "Tetrahydrogestrinone is a potent but unselective binding steroid and affects glucocorticoid signalling in the liver.", "authors": "Friedel A, Geyer H, Kamber M, Laudenbach-Leschowsky U, Schänzer W, Thevis M, Vollmer G, Zierau O, Diel P", "journal": "Toxicol Lett", "pmid": "16356667"},
+    {"title": "Tetrahydrogestrinone is a potent androgen and progestin.", "authors": "Death AK, McGrath KC, Kazlauskas R, Handelsman DJ", "journal": "J Clin Endocrinol Metab", "pmid": "15126583"},
     {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"},
-    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15233599"}
+    {"title": "Effects of androgenic-anabolic steroids in athletes.", "authors": "Hartgens F, Kuipers H", "journal": "Sports Med", "pmid": "15248788"}
   ],
   "faq": [
     {"q": "How did Catlin discover THG?", "a": "In June 2003 coach Trevor Graham (coach of Marion Jones, Tim Montgomery) anonymously sent a used syringe to Don Catlin's UCLA Olympic Analytical Laboratory. Catlin identified the parent compound by LC-MS/MS — a compound the classical AAS target lists did NOT contain — a designer steroid was discovered. The 2002 solo publication (PMID 12352283) describes the chemical structure, the 2004 follow-up (PMID 15170747) the urine-detection method. The anonymous mail was a personal vendetta by Trevor Graham against Victor Conte (BALCO owner), who was also doping another athlete that Graham wanted out of competition — paradoxically Graham lost the most, because he and his own athlete group also collapsed in the investigation."},

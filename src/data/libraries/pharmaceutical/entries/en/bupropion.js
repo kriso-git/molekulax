@@ -127,10 +127,10 @@ export default {
   ],
   "studies": [
     {
-      "title": "A controlled trial of sustained-release bupropion, a nicotine patch, or both for smoking cessation",
-      "authors": "Jorenby DE, Leischow SJ, Nides MA et al.",
-      "journal": "N Engl J Med. 1999;340(9):685-91.",
-      "pmid": "10080847"
+      "title": "A randomized placebo-controlled clinical trial of 5 smoking cessation pharmacotherapies.",
+      "authors": "Piper ME, Smith SS, Schlam TR, Fiore MC, Jorenby DE, Fraser D, Baker TB",
+      "journal": "Arch Gen Psychiatry",
+      "pmid": "19884613"
     },
     {
       "title": "Bupropion versus paroxetine for the treatment of major depressive disorder",
@@ -145,10 +145,10 @@ export default {
       "pmid": "29477251"
     },
     {
-      "title": "Bupropion sustained release in the treatment of seasonal affective disorder",
-      "authors": "Modell JG, Rosenthal NE, Harriett AE et al.",
-      "journal": "Biol Psychiatry. 2005;58(8):658-67.",
-      "pmid": "16271317"
+      "title": "Bupropion for the treatment of seasonal affective disorder.",
+      "authors": "Niemegeers P, Dumont GJ, Patteet L, Neels H, Sabbe BG",
+      "journal": "Expert Opin Drug Metab Toxicol",
+      "pmid": "23705752"
     },
     {
       "title": "Effects of naltrexone-bupropion on weight loss (COR-I trial)",
@@ -163,10 +163,10 @@ export default {
       "pmid": "2500425"
     },
     {
-      "title": "Effects of bupropion sustained release on sexual function in nondepressed subjects with sexual side effects from SSRIs",
-      "authors": "Clayton AH, Warnock JK, Kornstein SG et al.",
-      "journal": "J Clin Psychiatry. 2004;65(1):62-7.",
-      "pmid": "14744170"
+      "title": "The effects of the adjunctive bupropion on male sexual dysfunction induced by a selective serotonin reuptake inhibitor: a double-blind placebo-controlled and randomized study.",
+      "authors": "Safarinejad MR",
+      "journal": "BJU Int",
+      "pmid": "20067456"
     }
   ],
   "faq": [

@@ -81,10 +81,10 @@ export default {
     "Cardio-protective agents (statin, aspirin): well combinable"
   ],
   "studies": [
-    {"title": "The effect of raloxifene on risk of breast cancer in postmenopausal women: results from the MORE randomized trial", "authors": "Cummings SR, Eckert S, Krueger KA, et al.", "journal": "JAMA. 1999;281(23):2189-97.", "pmid": "10580020"},
+    {"title": "The effect of raloxifene on risk of breast cancer in postmenopausal women: results from the MORE randomized trial. Multiple Outcomes of Raloxifene Evaluation.", "authors": "Cummings SR, Eckert S, Krueger KA, Grady D, Powles TJ, Cauley JA, Norton L, Nickelsen T, Bjarnason NH, Morrow M, Lippman ME, Black D, Glusman JE, Costa A, Jordan VC", "journal": "JAMA", "pmid": "10376571"},
     {"title": "Effects of tamoxifen vs raloxifene on the risk of developing invasive breast cancer and other disease outcomes: the NSABP Study of Tamoxifen and Raloxifene (STAR) P-2 trial", "authors": "Vogel VG, Costantino JP, Wickerham DL, et al.", "journal": "JAMA. 2006;295(23):2727-41.", "pmid": "16754727"},
-    {"title": "A randomized double-blind clinical trial of raloxifene in management of physiological gynecomastia in adolescents", "authors": "Lawrence SE, Faught KA, Vethamuthu J, Lawson ML.", "journal": "J Pediatr. 2004;145(1):71-6.", "pmid": "14744776"},
-    {"title": "Raloxifene therapy for severe pubertal gynecomastia: case report", "authors": "Khan HN, Rampaul R, Blamey RW.", "journal": "Breast. 2002;11(1):76-7.", "pmid": "11843724"}
+    {"title": "Beneficial effects of raloxifene and tamoxifen in the treatment of pubertal gynecomastia.", "authors": "Lawrence SE, Faught KA, Vethamuthu J, Lawson ML", "journal": "J Pediatr", "pmid": "15238910"},
+    {"title": "Treatment of adolescents with gynecomastia.", "authors": "Malozowski S, Stadel BV", "journal": "J Pediatr", "pmid": "15812473"}
   ],
   "faq": [
     {"q": "Gyno-reversal: Nolvadex vs Raloxifene?", "a": "Nolvadex: prevention + on-cycle pre-emptive (block mechanism); Raloxifene: REVERSAL on existing gyno tissue (stronger breast selectivity). Clinical decision tree: on-cycle gyno prevention → Nolvadex; post-cycle existing gyno rescue (Lawrence 2004 protocol) → Raloxifene. Equally safe, NOT stackable (mechanism overlap)."},

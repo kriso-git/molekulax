@@ -141,16 +141,16 @@ export default {
       "pmid": "21226576"
     },
     {
-      "title": "Treatment of community-acquired pneumonia with amoxicillin: meta-analysis",
-      "authors": "Bjerre LM, Verheij TJ, Kochen MM.",
-      "journal": "Cochrane Database Syst Rev. 2009;(4):CD002109.",
-      "pmid": "19821282"
+      "title": "Effectiveness of amoxicillin and amoxicillin-clavulanate for the treatment of community-acquired pneumonia in adults and children: a systematic review and meta-analysis.",
+      "authors": "Potter-Schwartz L, Swe MM, Sharland M",
+      "journal": "BMJ Open",
+      "pmid": "42097647"
     },
     {
-      "title": "H. pylori eradication with amoxicillin-based triple therapy: meta-analysis",
-      "authors": "Malfertheiner P, Megraud F, O'Morain CA et al.",
-      "journal": "Gut. 2017;66(1):6-30.",
-      "pmid": "27707777"
+      "title": "Non-Bismuth Quadruple Concomitant Treatment for Helicobacter pylori Eradication: A Systematic Review and Meta-Analysis.",
+      "authors": "Parra P, Nyssen OP, Gisbert JP",
+      "journal": "Helicobacter",
+      "pmid": "41498306"
     },
     {
       "title": "Prevention of infective endocarditis: AHA scientific statement",

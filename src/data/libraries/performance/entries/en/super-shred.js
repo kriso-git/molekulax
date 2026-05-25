@@ -115,28 +115,28 @@ export default {
   ],
   "studies": [
     {
-      "title": "An assessment of supplements marketed for weight loss",
-      "authors": "Cohen PA, Travis JC, Venhuis BJ.",
-      "journal": "JAMA Intern Med. 2014;174(11):1879-1880.",
-      "pmid": "25286128"
+      "title": "Nine prohibited stimulants found in sports and weight loss supplements: deterenol, phenpromethamine (Vonedrine), oxilofrine (methylsynephrine), octodrine, beta-methylphenylethylamine (BMPEA), 1,3-dimethylamylamine (1,3-DMAA), 1,4-dimethylamylamine (1,4-DMAA), 1,3-dimethylbutylamine (1,3-DMBA) and higenamine.",
+      "authors": "Cohen PA, Travis JC, Vanhee C, Ohana D, Venhuis BJ",
+      "journal": "Clin Toxicol (Phila)",
+      "pmid": "33755516"
     },
     {
-      "title": "Acute liver failure associated with the use of herbal preparations containing dimethylamylamine",
-      "authors": "Karnatovskaia LV, Leoni JC, Freeman ML.",
-      "journal": "BMJ Case Rep. 2014;2014:bcr2013202786.",
-      "pmid": "24574498"
+      "title": "Not All Herbals are Benign: A Case of Hydroxycut-induced Acute Liver Injury.",
+      "authors": "Khetpal N, Mandzhieva B, Shahid S, Khetpal A, Jain AG",
+      "journal": "Cureus",
+      "pmid": "32190438"
     },
     {
-      "title": "Sympathomimetic and cardiovascular effects of dietary supplements containing 1,3-dimethylamylamine and caffeine",
-      "authors": "Eliason MJ, Eichner A, Cancio A, Bestervelt L, Adams BD, Deuster PA.",
-      "journal": "J Spec Oper Med. 2012;12(4):12-22.",
-      "pmid": "23161313"
+      "title": "Surveillance of the armed forces as a sentinel system for detecting adverse effects of dietary supplements in the general population.",
+      "authors": "Lieberman HR, Austin KG, Farina EK",
+      "journal": "Public Health Nutr",
+      "pmid": "29151367"
     },
     {
-      "title": "Hemorrhagic stroke associated with the use of dimethylamylamine",
-      "authors": "Young C, Oladipo O, Frasier S, Putko R, Chronister S, Marovich M.",
-      "journal": "J Clin Pharmacol. 2012;52(7):1083-1084.",
-      "pmid": "22167567"
+      "title": "Use of recreational drug 1,3-Dimethylamylamine (DMAA) associated with cerebral hemorrhage.",
+      "authors": "Gee P, Tallon C, Long N, Moore G, Boet R, Jackson S",
+      "journal": "Ann Emerg Med",
+      "pmid": "22575212"
     }
   ],
   "faq": [

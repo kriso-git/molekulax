@@ -106,28 +106,28 @@ export default {
   ],
   "studies": [
     {
-      "title": "AMPK and PPARδ agonists are exercise mimetics",
-      "authors": "Narkar VA, Downes M, Yu RT, Embler E, Wang YX, Banayo E, et al.",
-      "journal": "Cell. 2008;134(3):405-415.",
+      "title": "AMPK and PPARdelta agonists are exercise mimetics.",
+      "authors": "Narkar VA, Downes M, Yu RT, Embler E, Wang YX, Banayo E, Mihaylova MM, Nelson MC, Zou Y, Juguilon H, Kang H, Shaw RJ, Evans RM",
+      "journal": "Cell",
       "pmid": "18674809"
     },
     {
-      "title": "Activation of muscle PPARδ improves exercise performance and increases endurance fitness in mice",
-      "authors": "Geiger LE, Williams DT, et al. (GlaxoSmithKline-published clinical context).",
-      "journal": "Reproduced in multiple secondary-source reviews; PPARδ Phase II termination context discussed in Sprenger 2010.",
-      "pmid": "18674806"
+      "title": "Regulation of muscle fiber type and running endurance by PPARdelta.",
+      "authors": "Wang YX, Zhang CL, Yu RT, Cho HK, Nelson MC, Bayuga-Ocampo CR, Ham J, Kang H, Evans RM",
+      "journal": "PLoS Biol",
+      "pmid": "15328533"
     },
     {
-      "title": "Phase II trial of GW501516 and termination context — Sprenger summary on PPARδ ligand carcinogenicity",
-      "authors": "Sprenger H, Kalinin V, Heider H, Klein A.",
-      "journal": "J Lipid Res. 2010;51(3):441-451.",
-      "pmid": "19752393"
+      "title": "Induction of metastatic gastric cancer by peroxisome proliferator-activated receptorδ activation.",
+      "authors": "Pollock CB, Rodriguez O, Martin PL, Albanese C, Li X, Kopelovich L, Glazer RI",
+      "journal": "PPAR Res",
+      "pmid": "21318167"
     },
     {
-      "title": "Carcinogenicity of GW501516 in two-year rat bioassays — review of preclinical evidence",
-      "authors": "Wei Y, Yang J, Wang J, Yang Y, Huang J, Gong H, Cui H, Sun D.",
-      "journal": "Oncotarget. 2017;8(23):37657-37670.",
-      "pmid": "28430633"
+      "title": "Dual acting and pan-PPAR activators as potential anti-diabetic therapies.",
+      "authors": "Heald M, Cawthorne MA",
+      "journal": "Handb Exp Pharmacol",
+      "pmid": "21484566"
     },
     {
       "title": "WADA prohibited list update — S4.5 hormone and metabolic modulators (GW501516 ban 2009)",

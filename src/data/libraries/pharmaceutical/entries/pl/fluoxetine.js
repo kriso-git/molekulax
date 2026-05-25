@@ -51,10 +51,10 @@ export default {
   ],
   "studies": [
     {
-      "title": "Fluoxetine for acute treatment of depression in children and adolescents",
-      "authors": "Stark P, Hardison CD.",
-      "journal": "J Clin Psychiatry. 1985;46(3 Pt 2):53-8.",
-      "pmid": "3155758"
+      "title": "Vortioxetine for Major Depressive Disorder in Adolescents: 12-Week Randomized, Placebo-Controlled, Fluoxetine-Referenced, Fixed-Dose Study.",
+      "authors": "Findling RL, DelBello MP, Zuddas A",
+      "journal": "J Am Acad Child Adolesc Psychiatry",
+      "pmid": "35033635"
     },
     {
       "title": "Comparative efficacy of 21 antidepressants for MDD",

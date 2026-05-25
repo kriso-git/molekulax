@@ -107,34 +107,34 @@ export default {
   ],
   "studies": [
     {
-      "title": "Selective androgen receptor modulator, YK-11, regulates myogenic differentiation of C2C12 myoblasts by follistatin expression",
-      "authors": "Kanno Y, Hikosaka R, Zhang SY, Inoue Y, Nakahama T, Kato K, Yamaguchi A, Tominaga N, Kohra S, Arizono K, Inouye Y.",
-      "journal": "Biol Pharm Bull. 2013;36(9):1460-5.",
-      "pmid": "23291286"
+      "title": "Selective androgen receptor modulator, YK11, regulates myogenic differentiation of C2C12 myoblasts by follistatin expression.",
+      "authors": "Kanno Y, Ota R, Someya K, Bochimoto H, Kondo S, Inouye Y",
+      "journal": "Biol Pharm Bull",
+      "pmid": "23995658"
     },
     {
-      "title": "Characteristics of a novel selective androgen receptor modulator, YK-11",
-      "authors": "Kanno Y, Ota R, Someya K, Kusakabe T, Kato K, Inouye Y.",
-      "journal": "Biol Pharm Bull. 2011;34(2):318-23.",
-      "pmid": "21893547"
+      "title": "Pharmacokinetics and pharmacodynamics of LGD-3303 [9-chloro-2-ethyl-1-methyl-3-(2,2,2-trifluoroethyl)-3H-pyrrolo-[3,2-f]quinolin-7(6H)-one], an orally available nonsteroidal-selective androgen receptor modulator.",
+      "authors": "Vajda EG, López FJ, Rix P, Hermann R, Allan G",
+      "journal": "J Pharmacol Exp Ther",
+      "pmid": "19017848"
     },
     {
-      "title": "Selective androgen receptor modulator-induced hepatotoxicity",
-      "authors": "Solomon ZJ, Mirabal JR, Mazur DJ, et al.",
-      "journal": "Sex Med Rev. 2019;7(1):84-94.",
-      "pmid": "31077635"
+      "title": "LGD-4033 and a Case of Drug-Induced Liver Injury: Exploring the Clinical Implications of Off-Label Selective Androgen Receptor Modulator Use in Healthy Adults.",
+      "authors": "Labban H, Kwait B, Paracha A, Khan A, Singh M, Lopez R",
+      "journal": "Cureus",
+      "pmid": "39421081"
     },
     {
-      "title": "Selective androgen receptor modulator (SARM) hepatotoxicity: case series",
-      "authors": "Vilaca A, Saadeh A, Tay E, et al.",
-      "journal": "Liver Int. 2018;38(8):1462-1463.",
-      "pmid": "30171122"
+      "title": "Selective androgen receptor modulator use and related adverse events including drug-induced liver injury: Analysis of suspected cases.",
+      "authors": "Leciejewska N, Jędrejko K, Gómez-Renaud VM, Manríquez-Núñez J, Muszyńska B, Pokrywka A",
+      "journal": "Eur J Clin Pharmacol",
+      "pmid": "38059982"
     },
     {
-      "title": "Investigating myostatin inhibitors as muscle-building compounds: a review of the literature",
-      "authors": "Yatsu A, et al.",
-      "journal": "J Steroid Biochem Mol Biol. 2018;180:88-95.",
-      "pmid": "30005896"
+      "title": "Myostatin: A Skeletal Muscle Chalone.",
+      "authors": "Lee SJ",
+      "journal": "Annu Rev Physiol",
+      "pmid": "36266260"
     }
   ],
   "faq": [

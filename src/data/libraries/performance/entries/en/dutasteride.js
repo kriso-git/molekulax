@@ -85,10 +85,10 @@ export default {
     "Alcohol: mild hepatic stress, moderate OK"
   ],
   "studies": [
-    {"title": "The importance of dual 5alpha-reductase inhibition in the treatment of male pattern hair loss: results of a randomized placebo-controlled study of dutasteride versus finasteride", "authors": "Olsen EA, Hordinsky M, Whiting D, et al.", "journal": "J Am Acad Dermatol. 2006;55(6):1014-1023.", "pmid": "16782546"},
-    {"title": "Dutasteride increases scalp dihydrotestosterone levels in androgenetic alopecia patients", "authors": "Choi GS, Sim WY, Kang H, et al.", "journal": "J Dermatol. 2014;41(5):425-429.", "pmid": "24820896"},
-    {"title": "Comparison of dutasteride and finasteride in the development of post-finasteride syndrome", "authors": "Trost L, Saitz TR, Hellstrom WJ.", "journal": "Int J Impot Res. 2017;29(4):153-156.", "pmid": "28267184"},
-    {"title": "Long-term efficacy of dutasteride in male pattern hair loss", "authors": "Olsen EA, Hordinsky M, et al.", "journal": "J Am Acad Dermatol. 2012;67(2):362-364.", "pmid": "22810098"}
+    {"title": "Long-term efficacy and safety of dutasteride 0.5 mg in Korean men with androgenetic alopecia: 5-year data demonstrating sustained effects.", "authors": "Choi S, Kwon SH, Sim WY", "journal": "J Dermatol", "pmid": "38321615"},
+    {"title": "Evaluation of the therapeutic effects of AGA drugs by measuring finasteride, dutasteride, and dihydrotestosterone in hair.", "authors": "Hobo Y, Nishikawa J, Taniguchi Asai N", "journal": "Clin Chim Acta", "pmid": "37385468"},
+    {"title": "Post-Finasteride Syndrome: Survey of Dermatologists From the Spanish Hair and Nail Disorders Group.", "authors": "Moreno-Arrones OM, Saceda-Corralo D, Gómez-Cano JL", "journal": "Actas Dermosifiliogr", "pmid": "41865985"},
+    {"title": "Updates in Treatment for Androgenetic Alopecia.", "authors": "Shin JW, Huh CH", "journal": "Ann Dermatol", "pmid": "41331712"}
   ],
   "faq": [
     {"q": "Finasteride vs dutasteride — when which?", "a": "Default first-line: **FINASTERIDE** 1 mg/day (smaller side effects, shorter washout, clinical standard AGA protocol). Dutasteride is **second-line** or **first-line in niche situations**: (1) Inadequate finasteride response (<30% improvement after 3-6 months, or continued progression); (2) Acne emphasis (Type-I 5AR blockade for sebum reduction bonus); (3) Aggressive AAS stack (Test + Tren + Anadrol high-dose, where maximum DHT suppression is the goal). Due to long washout (~6 months vs finasteride 2 weeks), **NOT** recommended in short-term or fertility-emphasizing users. PFS risk is higher (Trost 2017) — risk-averse users prefer finasteride."},

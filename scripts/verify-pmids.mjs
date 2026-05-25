@@ -18,6 +18,7 @@ const repoRoot = resolve(__dirname, '..')
 const args = process.argv.slice(2)
 const libFilter = args.includes('--lib') ? args[args.indexOf('--lib') + 1] : null
 const entryFilter = args.includes('--entry') ? args[args.indexOf('--entry') + 1] : null
+const suggestMode = args.includes('--suggest')
 
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
@@ -37,6 +38,39 @@ function overlapRatio(a, b) {
   let common = 0
   for (const t of ta) if (tb.has(t)) common++
   return common / Math.min(ta.size, tb.size)
+}
+
+async function suggestCandidates(citedTitle, excludePmids = []) {
+  const stop = new Set(['this','that','with','from','have','been','were','their','about','which','study','effects','effect','using','versus','among','during'])
+  const ts = normalize(citedTitle).split(' ').filter(t => t.length >= 4 && !stop.has(t))
+  if (ts.length === 0) return []
+  const query = encodeURIComponent(ts.slice(0, 8).join(' '))
+  const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${query}&retmax=8&retmode=json`
+  try {
+    const res = await fetch(url)
+    if (!res.ok) return []
+    const json = await res.json()
+    const pmids = (json.esearchresult?.idlist || []).filter(p => !excludePmids.includes(p))
+    if (pmids.length === 0) return []
+    await new Promise(r => setTimeout(r, 200))
+    const sumUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${pmids.join(',')}&retmode=json`
+    const sumRes = await fetch(sumUrl)
+    if (!sumRes.ok) return []
+    const sumJson = await sumRes.json()
+    const results = []
+    for (const pmid of pmids) {
+      const rec = sumJson.result?.[pmid]
+      if (!rec || rec.error) continue
+      const title = rec.title || ''
+      const authors = (rec.authors || []).slice(0, 3).map(a => a.name).join(', ')
+      const year = (rec.pubdate || '').slice(0, 4)
+      const ratio = overlapRatio(citedTitle, title)
+      results.push({ pmid, title, authors, year, ratio })
+    }
+    return results.sort((a, b) => b.ratio - a.ratio)
+  } catch (err) {
+    return []
+  }
 }
 
 async function lookupPmid(pmid) {
@@ -96,6 +130,18 @@ async function main() {
         if (!result.exists) {
           console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} NOT_FOUND (cited as "${study.title?.slice(0, 60)}")`)
           issues.push({ libId, slug, pmid, citedTitle: study.title, status: 'NOT_FOUND' })
+          if (suggestMode) {
+            const cands = await suggestCandidates(study.title || '', [pmid])
+            if (cands.length === 0) {
+              console.log(`     candidates: (none)`)
+            } else {
+              console.log(`     candidates:`)
+              for (const c of cands.slice(0, 5)) {
+                console.log(`       PMID ${c.pmid}  ratio ${(c.ratio * 100).toFixed(0)}%  (${c.year}) "${c.title.slice(0, 70)}"`)
+              }
+            }
+            await new Promise(r => setTimeout(r, 300))
+          }
           continue
         }
         const ratio = overlapRatio(study.title, result.title)
@@ -104,6 +150,18 @@ async function main() {
           console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
           console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
           issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status: 'MISMATCH' })
+          if (suggestMode) {
+            const cands = await suggestCandidates(study.title || '', [pmid])
+            if (cands.length === 0) {
+              console.log(`     candidates: (none)`)
+            } else {
+              console.log(`     candidates:`)
+              for (const c of cands.slice(0, 5)) {
+                console.log(`       PMID ${c.pmid}  ratio ${(c.ratio * 100).toFixed(0)}%  (${c.year}) "${c.title.slice(0, 70)}"`)
+              }
+            }
+            await new Promise(r => setTimeout(r, 300))
+          }
         } else {
           console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)`)
         }

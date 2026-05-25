@@ -120,22 +120,22 @@ export default {
   ],
   "studies": [
     {
-      "title": "The effects of human chorionic gonadotropin on intratesticular testosterone production in men with hypogonadotropic hypogonadism",
-      "authors": "Liu PY, Wishart SM, Handelsman DJ.",
-      "journal": "J Clin Endocrinol Metab. 2002;87(7):3125-35.",
-      "pmid": "12424222"
+      "title": "Treatment of hypogonadotropic male hypogonadism: Case-based scenarios.",
+      "authors": "Crosnoe-Shipley LE, Elkelany OO, Rahnema CD, Kim ED",
+      "journal": "World J Nephrol",
+      "pmid": "25949938"
     },
     {
-      "title": "Low-dose human chorionic gonadotropin maintains intratesticular testosterone in normal men with testosterone-induced gonadotropin suppression",
-      "authors": "Coviello AD, Matsumoto AM, Bremner WJ, et al.",
-      "journal": "J Clin Endocrinol Metab. 2005;90(5):2595-602.",
-      "pmid": "16204261"
+      "title": "Low-dose human chorionic gonadotropin maintains intratesticular testosterone in normal men with testosterone-induced gonadotropin suppression.",
+      "authors": "Coviello AD, Matsumoto AM, Bremner WJ, Lewis EW, Anawalt BD, Wang C, Yan X, Page ST, Leung A, Berman N, Swerdloff RS",
+      "journal": "J Clin Endocrinol Metab",
+      "pmid": "15713727"
     },
     {
-      "title": "Concomitant intramuscular human chorionic gonadotropin preserves spermatogenesis in men undergoing testosterone replacement therapy",
-      "authors": "Hsieh TC, Pastuszak AW, Hwang K, Lipshultz LI.",
-      "journal": "J Urol. 2013;189(2):647-50.",
-      "pmid": "23316916"
+      "title": "Concomitant intramuscular human chorionic gonadotropin preserves spermatogenesis in men undergoing testosterone replacement therapy.",
+      "authors": "Hsieh TC, Pastuszak AW, Hwang K, Lipshultz LI",
+      "journal": "J Urol",
+      "pmid": "23260550"
     },
     {
       "title": "Maintenance of spermatogenesis in hypogonadotropic hypogonadal men with human chorionic gonadotropin alone",

@@ -114,34 +114,34 @@ export default {
   ],
   "studies": [
     {
-      "title": "Effects of thyroxine as compared with thyroxine plus triiodothyronine in patients with hypothyroidism",
-      "authors": "Bunevicius R, Kazanavicius G, Zalinkevicius R, Prange AJ Jr.",
-      "journal": "N Engl J Med. 1999;340(6):424-429.",
-      "pmid": "9989958"
+      "title": "Thyroxine vs thyroxine plus triiodothyronine in treatment of hypothyroidism after thyroidectomy for Graves' disease.",
+      "authors": "Bunevicius R, Jakuboniene N, Jurkevicius R, Bunevicius A, Lasas L, Prange AJ Jr",
+      "journal": "Endocrine",
+      "pmid": "12374459"
     },
     {
-      "title": "Thyroid hormone therapy for older adults with subclinical hypothyroidism",
-      "authors": "Stott DJ, Rodondi N, Kearney PM et al.",
-      "journal": "N Engl J Med. 2017;376(26):2534-2544.",
-      "pmid": "28121505"
+      "title": "Discontinuation of levothyroxine therapy in patients with subclinical hypothyroidism: a pilot randomized clinical trial.",
+      "authors": "Maraka S, Owen RR, Singh Ospina NM",
+      "journal": "Endocrine",
+      "pmid": "40736623"
     },
     {
-      "title": "Thyroid hormone and the cardiovascular system",
-      "authors": "Klein I, Ojamaa K.",
-      "journal": "N Engl J Med. 2001;344(7):501-509.",
-      "pmid": "11171997"
+      "title": "Thyroid Hormones and Cardiovascular Function and Diseases.",
+      "authors": "Razvi S, Jabbar A, Pingitore A, Danzi S, Biondi B, Klein I, Peeters R, Zaman A, Iervasi G",
+      "journal": "J Am Coll Cardiol",
+      "pmid": "29673469"
     },
     {
-      "title": "Metabolic effects of liothyronine therapy in hypothyroidism: a randomized, double-blind, crossover trial of liothyronine versus levothyroxine",
-      "authors": "Celi FS, Zemskova M, Linderman JD et al.",
-      "journal": "J Clin Endocrinol Metab. 2011;96(11):3466-3474.",
-      "pmid": "21865364"
+      "title": "Acute Effects of Liothyronine Administration on Cardiovascular System and Energy Metabolism in Healthy Volunteers.",
+      "authors": "Chen S, Wohlford GF, Vecchie' A",
+      "journal": "Front Endocrinol (Lausanne)",
+      "pmid": "35295986"
     },
     {
-      "title": "The use of thyroid hormones in bodybuilders and weight-class athletes",
-      "authors": "Hochberg I, Hochberg Z.",
-      "journal": "Isr J Med Sci. 1989;25(8):454-455.",
-      "pmid": "2767920"
+      "title": "Factitious thyrotoxicosis and thyroid hormone misuse or abuse.",
+      "authors": "Persani L, dell'Acqua M, Ioakim S, Bonomi M",
+      "journal": "Ann Endocrinol (Paris)",
+      "pmid": "36963754"
     }
   ],
   "faq": [

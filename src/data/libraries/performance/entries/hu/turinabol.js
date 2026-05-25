@@ -108,13 +108,13 @@ export default {
       "title": "Hormonal doping and androgenization of athletes: a secret program of the German Democratic Republic government",
       "authors": "Franke WW, Berendonk B.",
       "journal": "Clin Chem. 1997;43(7):1262-79.",
-      "pmid": "9302891"
+      "pmid": "9216474"
     },
     {
-      "title": "Long-term detection of methandienone, stanozolol, dehydrochloromethyltestosterone metabolites in human urine by LC-MS/MS",
-      "authors": "Schänzer W, Geyer H, Gotzmann A et al.",
-      "journal": "Drug Test Anal. 2006;46(5):1071-1076.",
-      "pmid": "17042466"
+      "title": "Detection and mass spectrometric characterization of novel long-term dehydrochloromethyltestosterone metabolites in human urine",
+      "authors": "Sobolevsky T, Rodchenkov G.",
+      "journal": "J Steroid Biochem Mol Biol. 2012;128(3-5):121-7.",
+      "pmid": "22142641"
     },
     {
       "title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement",
@@ -126,7 +126,7 @@ export default {
       "title": "Effects of androgenic-anabolic steroids in athletes",
       "authors": "Hartgens F, Kuipers H.",
       "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "pmid": "15248788"
     },
     {
       "title": "Anabolic-androgenic steroid dependence: an emerging disorder",

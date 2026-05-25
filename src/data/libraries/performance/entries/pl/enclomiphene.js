@@ -113,28 +113,28 @@ export default {
   ],
   "studies": [
     {
-      "title": "Enclomiphene citrate stimulates testosterone production while preventing oligospermia: a randomized phase II clinical trial",
-      "authors": "Wiehle RD, Fontenot GK, Wike J, et al.",
-      "journal": "Fertil Steril. 2014;102(3):720-7.",
-      "pmid": "24913480"
+      "title": "Enclomiphene citrate stimulates testosterone production while preventing oligospermia: a randomized phase II clinical trial comparing topical testosterone.",
+      "authors": "Wiehle RD, Fontenot GK, Wike J, Hsu K, Nieschlag E, Saadabadi A",
+      "journal": "Fertil Steril",
+      "pmid": "25044085"
     },
     {
-      "title": "Enclomiphene citrate stimulates testosterone production while preserving spermatogenesis: a Phase III randomized, double-blind, placebo-controlled trial",
-      "authors": "Wiehle RD, Fontenot GK, Wike J, Hsu K, Nieschlag E, Bone HG.",
-      "journal": "J Sex Med. 2018;15(7):969-978.",
-      "pmid": "30015376"
+      "title": "Oral enclomiphene citrate raises testosterone and preserves sperm counts in obese hypogonadal men, unlike topical testosterone: restoration instead of replacement.",
+      "authors": "Kim ED, McCullough A, Kaminetsky J",
+      "journal": "BJU Int",
+      "pmid": "26496621"
     },
     {
-      "title": "Treatment of secondary male hypogonadism: a comparative study of the efficacy and safety of enclomiphene citrate and topical testosterone",
-      "authors": "Kim ED, McCullough A, Kaminetsky J.",
-      "journal": "BJU Int. 2016;117(4):677-85.",
-      "pmid": "26905294"
+      "title": "Oral enclomiphene citrate stimulates the endogenous production of testosterone and sperm counts in men with low testosterone: comparison with testosterone gel.",
+      "authors": "Kaminetsky J, Werner M, Fontenot G, Wiehle RD",
+      "journal": "J Sex Med",
+      "pmid": "23530575"
     },
     {
-      "title": "Male SERM PCT: clinical decisions",
-      "authors": "Karavolos S, Reynolds M, Panagiotopoulou N, et al.",
-      "journal": "Clin Endocrinol. 2015;82(5):624-635.",
-      "pmid": "25778469"
+      "title": "Anabolic steroid-induced hypogonadism: diagnosis and treatment.",
+      "authors": "Rahnema CD, Lipshultz LI, Crosnoe LE, Kovac JR, Kim ED",
+      "journal": "Fertil Steril",
+      "pmid": "24636400"
     }
   ],
   "faq": [

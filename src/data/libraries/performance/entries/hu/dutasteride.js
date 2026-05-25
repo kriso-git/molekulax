@@ -85,10 +85,10 @@ export default {
     "Alkohol: hepatikus stressz mild, mértékletes OK"
   ],
   "studies": [
-    {"title": "The importance of dual 5alpha-reductase inhibition in the treatment of male pattern hair loss: results of a randomized placebo-controlled study of dutasteride versus finasteride", "authors": "Olsen EA, Hordinsky M, Whiting D, et al.", "journal": "J Am Acad Dermatol. 2006;55(6):1014-1023.", "pmid": "16782546"},
-    {"title": "Dutasteride increases scalp dihydrotestosterone levels in androgenetic alopecia patients", "authors": "Choi GS, Sim WY, Kang H, et al.", "journal": "J Dermatol. 2014;41(5):425-429.", "pmid": "24820896"},
-    {"title": "Comparison of dutasteride and finasteride in the development of post-finasteride syndrome", "authors": "Trost L, Saitz TR, Hellstrom WJ.", "journal": "Int J Impot Res. 2017;29(4):153-156.", "pmid": "28267184"},
-    {"title": "Long-term efficacy of dutasteride in male pattern hair loss", "authors": "Olsen EA, Hordinsky M, et al.", "journal": "J Am Acad Dermatol. 2012;67(2):362-364.", "pmid": "22810098"}
+    {"title": "Long-term efficacy and safety of dutasteride 0.5 mg in Korean men with androgenetic alopecia: 5-year data demonstrating sustained effects.", "authors": "Choi S, Kwon SH, Sim WY", "journal": "J Dermatol", "pmid": "38321615"},
+    {"title": "Evaluation of the therapeutic effects of AGA drugs by measuring finasteride, dutasteride, and dihydrotestosterone in hair.", "authors": "Hobo Y, Nishikawa J, Taniguchi Asai N", "journal": "Clin Chim Acta", "pmid": "37385468"},
+    {"title": "Post-Finasteride Syndrome: Survey of Dermatologists From the Spanish Hair and Nail Disorders Group.", "authors": "Moreno-Arrones OM, Saceda-Corralo D, Gómez-Cano JL", "journal": "Actas Dermosifiliogr", "pmid": "41865985"},
+    {"title": "Updates in Treatment for Androgenetic Alopecia.", "authors": "Shin JW, Huh CH", "journal": "Ann Dermatol", "pmid": "41331712"}
   ],
   "faq": [
     {"q": "Finasteride vs Dutasteride — mikor melyik?", "a": "Default első-vonalbeli: **FINASTERIDE** 1 mg/nap (kisebb side-effect, shorter washout, klinikai standard AGA-protokoll). Dutasteride **second-line** vagy **első-vonalbeli niche-szituációban**: (1) Finasteride inadequate response (3-6 hónap után <30% improvement, vagy continued progression); (2) Acne-emphasis (Type-I 5AR-blokád miatt sebum-csökkentés bonus); (3) Aggresszív AAS-stack (Test + Tren + Anadrol high-dose, ahol a maximum DHT-szuppresszió cél). Long-washout (~6 hónap vs Finasteride 2 hét) miatt **NEM** ajánlott rövid-távú vagy fertility-emphasizing felhasználón. PFS-rizikó magasabb (Trost 2017) — risk-averse user inkább Finasteride."},

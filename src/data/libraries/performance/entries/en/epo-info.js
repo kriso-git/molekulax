@@ -46,28 +46,28 @@ export default {
   ],
   "studies": [
     {
-      "title": "Erythropoietin treatment elevates haemoglobin concentration",
-      "authors": "Lundby C, Olsen NV.",
-      "journal": "J Physiol. 2011;589(Pt 6):1265-1271.",
-      "pmid": "21224229"
+      "title": "Effect of rhEPO administration on serum levels of sTfR and cycling performance.",
+      "authors": "Birkeland KI, Stray-Gundersen J, Hemmersbach P, Hallen J, Haug E, Bahr R",
+      "journal": "Med Sci Sports Exerc",
+      "pmid": "10912888"
     },
     {
-      "title": "Erythropoietin doping in cycling: history and detection",
-      "authors": "Lasne F, de Ceaurriz J.",
-      "journal": "Nature. 2000;405(6787):635.",
-      "pmid": "10864312"
+      "title": "Effects of exercise on the isoelectric patterns of erythropoietin.",
+      "authors": "Lamon S, Martin L, Robinson N, Saugy M, Ceaurriz J, Lasne F",
+      "journal": "Clin J Sport Med",
+      "pmid": "19638826"
     },
     {
-      "title": "Blood doping at the Olympics",
-      "authors": "Eichner ER.",
-      "journal": "Curr Sports Med Rep. 2007;6(4):237-238.",
-      "pmid": "17617999"
+      "title": "Mapping of the Pharmacological Effect of Prohibited Substances and Methods to Athletic Physiological Characteristics.",
+      "authors": "Hayward G, Gaborini L, Robinson N",
+      "journal": "Drug Test Anal",
+      "pmid": "41147730"
     },
     {
-      "title": "Effects of erythropoietin on cycling performance of well-trained cyclists: a double-blind, randomised, placebo-controlled trial",
-      "authors": "Heuberger JAAC, Rotmans JI, Gal P et al.",
-      "journal": "Lancet Haematol. 2017;4(8):e374-e386.",
-      "pmid": "23252630"
+      "title": "A Single 60.000 IU Dose of Erythropoietin Does Not Improve Short-Term Aerobic Exercise Performance in Healthy Subjects: The Trial-EPO Study.",
+      "authors": "Haider T, Diaz V, Albert J, Strassburger K, Caicedo A, Reichkendler MH, Lundby C, Gassmann M",
+      "journal": "Front Physiol",
+      "pmid": "33117187"
     }
   ],
   "related": [

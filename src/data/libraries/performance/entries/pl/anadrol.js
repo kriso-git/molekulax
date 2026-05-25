@@ -119,28 +119,28 @@ export default {
       "pmid": "24423981"
     },
     {
-      "title": "Effects of androgenic-anabolic steroids in athletes",
-      "authors": "Hartgens F, Kuipers H.",
-      "journal": "Sports Med. 2004;34(8):513-554.",
-      "pmid": "15233599"
+      "title": "Effects of androgenic-anabolic steroids in athletes.",
+      "authors": "Hartgens F, Kuipers H",
+      "journal": "Sports Med",
+      "pmid": "15248788"
     },
     {
-      "title": "Drug-induced hepatotoxicity",
-      "authors": "Pavlatos AM, Fultz O, Monberg MJ, Vootkur A.",
-      "journal": "Am J Health Syst Pharm. 2001;58(20):1929-37.",
-      "pmid": "11329221"
+      "title": "Development of Liver Cancers as an Unexpected Consequence of Anabolic Androgenic Steroid Use.",
+      "authors": "Khalid S, Laput G, Khorfan K, Khan A, Goyal A",
+      "journal": "Cureus",
+      "pmid": "36874750"
     },
     {
-      "title": "Metabolism of anabolic androgenic steroids",
-      "authors": "Schänzer W.",
-      "journal": "Clin Chem. 1996;42(7):1001-20.",
-      "pmid": "8616181"
+      "title": "Anabolic-Androgenic Steroids Revisited: Structural Biology, Receptor Signaling, and Mechanisms of Anabolic-Androgenic Dissociation.",
+      "authors": "Wiacek M, Zubrzycki IZ",
+      "journal": "Int J Mol Sci",
+      "pmid": "41898445"
     },
     {
-      "title": "Effects of oxymetholone therapy in HIV-infected men",
-      "authors": "Hengge UR, Stocks K, Faulkner S et al.",
-      "journal": "J Infect Dis. 2003;188(11):1628-34.",
-      "pmid": "14639533"
+      "title": "Double-blind, randomized, placebo-controlled phase III trial of oxymetholone for the treatment of HIV wasting.",
+      "authors": "Hengge UR, Stocks K, Wiehler H, Faulkner S, Esser S, Lorenz R, Brockmeyer NH",
+      "journal": "AIDS",
+      "pmid": "12646793"
     }
   ],
   "faq": [

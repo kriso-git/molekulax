@@ -83,11 +83,11 @@ export default {
     "Anabolics/AAS: planned bridge during PCT → new cycle 4-6 weeks off-cycle later"
   ],
   "studies": [
-    {"title": "Efficacy and safety of clomiphene citrate as an alternative to testosterone replacement therapy in men with hypogonadism", "authors": "Tan RS, Cook KR, Reilly WG.", "journal": "J Sex Med. 2013;10(8):2080-6.", "pmid": "23617589"},
-    {"title": "Outcomes of clomiphene citrate treatment in young hypogonadal men", "authors": "Katz DJ, Nabulsi O, Tal R, Mulhall JP.", "journal": "BJU Int. 2012;110(4):573-8.", "pmid": "22500968"},
-    {"title": "Enclomiphene citrate stimulates testosterone production while preventing oligospermia: a randomized phase II clinical trial", "authors": "Wiehle RD, Fontenot GK, Wike J, et al.", "journal": "Fertil Steril. 2014;102(3):720-7.", "pmid": "24913480"},
-    {"title": "Male SERM PCT: clinical decisions", "authors": "Karavolos S, Reynolds M, Panagiotopoulou N, et al.", "journal": "Clin Endocrinol. 2015;82(5):624-635.", "pmid": "25778469"},
-    {"title": "Clomiphene citrate use in clinical practice: an overview", "authors": "Wheeler KM, Sharma D, Kavoussi PK, Smith RP, Costabile R.", "journal": "Sex Med Rev. 2019;7(2):272-276.", "pmid": "30445052"}
+    {"title": "Clomiphene Citrate Treatment as an Alternative Therapeutic Approach for Male Hypogonadism: Mechanisms and Clinical Implications.", "authors": "Wu YC, Sung WW", "journal": "Pharmaceuticals (Basel)", "pmid": "39338395"},
+    {"title": "Outcomes of clomiphene citrate treatment in young hypogonadal men.", "authors": "Katz DJ, Nabulsi O, Tal R, Mulhall JP", "journal": "BJU Int", "pmid": "22044663"},
+    {"title": "Enclomiphene citrate stimulates testosterone production while preventing oligospermia: a randomized phase II clinical trial comparing topical testosterone.", "authors": "Wiehle RD, Fontenot GK, Wike J, Hsu K, Nieschlag E, Saadabadi A", "journal": "Fertil Steril", "pmid": "25044085"},
+    {"title": "Anabolic steroid-induced hypogonadism: diagnosis and treatment.", "authors": "Rahnema CD, Lipshultz LI, Crosnoe LE, Kovac JR, Kim ED", "journal": "Fertil Steril", "pmid": "24636400"},
+    {"title": "Enclomiphene citrate: A treatment that maintains fertility in men with secondary hypogonadism.", "authors": "Earl JA, Kim ED", "journal": "Expert Rev Endocrinol Metab", "pmid": "31063005"}
   ],
   "faq": [
     {"q": "Clomid vs Nolvadex — which when?", "a": "In modern PCT protocols Nolvadex is first-line (cleaner profile, fewer side effects). Clomid is preferable when: (1) fertility-restoration goal (Clomid stronger FSH stimulus, better spermatogenesis recovery); (2) after hard-suppression long-ester cycles (deep trough); (3) Nolvadex intolerance. Stackable ('Clomid + Nolva' classic dual-PCT, dose-reduced on both)."},

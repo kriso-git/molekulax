@@ -86,9 +86,9 @@ export default {
     "Étkezés: KÖTELEZŐ étkezéssel (nausea-prevention)"
   ],
   "studies": [
-    {"title": "A comparison of cabergoline and bromocriptine in the treatment of hyperprolactinemic amenorrhea", "authors": "Webster J, Piscitelli G, Polli A, Ferrari CI, Ismail I, Scanlon MF.", "journal": "N Engl J Med. 1994;331(14):904-909.", "pmid": "8090165"},
-    {"title": "Bromocriptine: a review of its pharmacological properties and therapeutic use in Parkinson's disease", "authors": "Krupp P, Wesp M.", "journal": "Drugs. 1981;21(3):143-159.", "pmid": "7032404"},
-    {"title": "Bromocriptine (Cycloset) for the treatment of type 2 diabetes", "authors": "Cincotta AH, Meier AH.", "journal": "Diabetes Care. 1996;19(6):667-670.", "pmid": "8725867"},
+    {"title": "Impact of menopause on outcomes in prolactinomas after dopamine agonist treatment withdrawal.", "authors": "Santharam S, Fountas A, Tampourlou M", "journal": "Clin Endocrinol (Oxf)", "pmid": "29894000"},
+    {"title": "Evidence-based practice use of quick-release bromocriptine across the natural history of type 2 diabetes mellitus.", "authors": "Schwartz SS, Zangeneh F", "journal": "Postgrad Med", "pmid": "27458683"},
+    {"title": "Bromocriptine in type 2 diabetes: a promising alternative, a systematic review and meta-analysis.", "authors": "Dara T, Zabihi M, Hoseinzade F", "journal": "Cardiovasc Diabetol Endocrinol Rep", "pmid": "41013660"},
     {"title": "Bromocriptine for diabetes — randomized controlled trial", "authors": "Pijl H, Ohashi S, Matsuda M, et al.", "journal": "Diabetes Care. 2000;23(8):1154-1161.", "pmid": "10937514"}
   ],
   "faq": [

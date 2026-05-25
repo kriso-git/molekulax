@@ -81,9 +81,9 @@ export default {
     "Leki anty-anxiety (benzodiazepine, SSRI): działanie negatywnego modulatora receptora GABA-A teoretyczny antagonizm — istotność kliniczna NIE udokumentowana"
   ],
   "studies": [
-    {"title": "Pregnenolone and its sulfate ester in the brain: a comprehensive review of neurosteroid functions", "authors": "Mosconi L, Berti V, Quinn C, et al.", "journal": "Front Neuroendocrinol. 2017;47:34-47.", "pmid": "28259555"},
-    {"title": "Pharmacokinetics of orally administered pregnenolone in healthy volunteers", "authors": "Roberts E, Bologa L, Flood JF, Smith GE.", "journal": "Brain Res. 1992;406(1-2):357-362.", "pmid": "1610975"},
-    {"title": "Pregnenolone as a novel therapeutic candidate in schizophrenia: phase II clinical trial", "authors": "Marx CE, Keefe RS, Buchanan RW, et al.", "journal": "Neuropsychopharmacology. 2009;34(8):1885-1903.", "pmid": "19797577"}
+    {"title": "Neurosteroids Progesterone and Dehydroepiandrosterone: Molecular Mechanisms of Action in Neuroprotection and Neuroinflammation.", "authors": "Fedotcheva TA, Shimanovsky NL", "journal": "Pharmaceuticals (Basel)", "pmid": "40732235"},
+    {"title": "Therapeutic potential of enzymes, neurosteroids, and synthetic steroids in neurodegenerative disorders: A critical review.", "authors": "Servi R, Akkoç RF, Aksu F", "journal": "J Steroid Biochem Mol Biol", "pmid": "40288591"},
+    {"title": "Advancements in Non-Dopaminergic Treatments for Schizophrenia: A Systematic Review of Pipeline Developments.", "authors": "Komatsu Y, Takehara M, Hart X", "journal": "Pharmacopsychiatry", "pmid": "38710208"}
   ],
   "faq": [
     {"q": "Suplement OTC — czy naprawdę działa?", "a": "**Częściowo — różnica jakości dowodów jest znacząca.** (1) **Efekt neurosterodowy CNS** (modulator NMDA/GABA-A): umiarkowanie wsparty dowodami (Mosconi 2017 review, trial w schizofrenii Marx 2009) — mental clarity, redukcja brain fog, łagodne wzmocnienie poznawcze zgłaszane przez użytkowników spójnie w populacji respondera. (2) **Deklaracja hormone-axis substrate-loading** (wzrost Test/DHEA przez pełną ścieżkę steroidogenezy): **LOW-evidence** — badanie PK Roberts 1992 pokazało biodostępność doustną <10%, wzrost downstream Test w surowicy supervariable, NIE walidowane klinicznie w kontekście PCT po AAS. **Bottom line**: redukcja brain-fog to OK-deklaracja, restart hormone-axis NIE oparty na dowodach, NIE zastępuje SERM-PCT, NIE zastępuje HCG."},

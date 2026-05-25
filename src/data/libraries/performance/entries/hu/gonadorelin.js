@@ -83,8 +83,8 @@ export default {
   "studies": [
     {"title": "Factrel (gonadorelin hydrochloride) for injection — FDA Label", "authors": "Wyeth-Ayerst Laboratories", "journal": "FDA NDA 18123 (1982); US-discontinued 2008.", "pmid": "FDA-Factrel-SmPC"},
     {"title": "Lutrelef (gonadorelin acetate) — EMA Summary of Product Characteristics", "authors": "Ferring Pharmaceuticals", "journal": "EMA SPC, pulsatile-pump hypothalamic-hypogonadism indikáció.", "pmid": "EMA-Lutrelef-SPC"},
-    {"title": "Gonadorelin in the treatment of male hypogonadotropic hypogonadism", "authors": "Smals AG, Pieters GF, Boers GH, et al.", "journal": "Acta Endocrinol (Copenh). 1986;113(3):349-355.", "pmid": "3093469"},
-    {"title": "Pulsatile GnRH treatment for the induction of fertility in male hypogonadotropic hypogonadism", "authors": "Hayes FJ, Seminara SB, Crowley WF Jr.", "journal": "Endocrinol Metab Clin North Am. 2000;29(2):241-262.", "pmid": "10721060"}
+    {"title": "Therapeutic effects of a pulsatile GnRH pump on adult male patients with congenital hypogonadotropic hypogonadism (CHH): a retrospective study.", "authors": "Jiang H, Li BJ, Jin DC", "journal": "Transl Androl Urol", "pmid": "40800099"},
+    {"title": "[Effect and safety of pulsatile GnRH therapy for male congenital hypogonadotropic hypogonadism].", "authors": "Niu YH, Xu H, Chen YW", "journal": "Zhonghua Nan Ke Xue", "pmid": "39210488"}
   ],
   "faq": [
     {"q": "Gonadorelin vs Kisspeptin-10 — különbség?", "a": "Axis-level hierarchy különbség: a **Gonadorelin** direkten a pituitár GnRH-R-en hat (1 axis-szint a Kisspeptin alatt) — közvetlen LH/FSH-release-stimulus; a **Kisspeptin-10** a hypothalamic GPR54-en hat → endogén GnRH-pulse-trigger → pituitár GnRH-R-stimulus (legfelső upstream point). Molekuláris-natúra: Gonadorelin SZEKVENCIÁLISAN IDENTIKUS az endogén GnRH-val (10-aminosav decapeptid); Kisspeptin-10 a 10-aminosav C-terminál fragmens egy 145-aminosav prekurzor proteinből (KISS1). Klinikai praxis: Gonadorelin EMA Lutrelef pharmaceutical-grade elérhető (pulsatile-pump-protokoll), Kisspeptin-10 még research-emerging (Imperial College Phase II). Magnitude: hasonló LH/FSH-spike-pattern."},

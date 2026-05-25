@@ -56,9 +56,9 @@ export default {
     "Spodziewana tańsza produkcja niż peptydów (synteza mało-cząsteczkowa)"
   ],
   "studies": [
-    {"title": "Oral orforglipron for obesity: phase 2 RCT", "authors": "Wharton S, Blevins T, Connery L, et al.", "journal": "N Engl J Med. 2023;389(10):877-888.", "pmid": "37356087"},
-    {"title": "Efficacy and safety of orforglipron, an oral small-molecule GLP-1 receptor agonist, in adults with type 2 diabetes: a phase 2, dose-finding, randomised, controlled trial", "authors": "Frías JP, Hsia S, Eyde S, et al.", "journal": "Lancet. 2023;402(10400):472-483.", "pmid": "37356866"},
-    {"title": "GLP-1 receptor agonists: a review of head-to-head clinical studies", "authors": "Trujillo JM, Nuffer W, Smith BA.", "journal": "Ther Adv Endocrinol Metab. 2021;12:2042018821997320.", "pmid": "33854744"}
+    {"title": "Orforglipron, an Oral Small-Molecule GLP-1 Receptor Agonist for Obesity Treatment.", "authors": "Wharton S, Aronne LJ, Stefanski A", "journal": "N Engl J Med", "pmid": "40960239"},
+    {"title": "Efficacy and safety of oral orforglipron in patients with type 2 diabetes: a multicentre, randomised, dose-response, phase 2 study.", "authors": "Frías JP, Hsia S, Eyde S, Liu R, Ma X, Konig M, Kazda C, Mather KJ, Haupt A, Pratt E, Dunn J, Robins D, Karanikas C, Thomas MK", "journal": "Lancet", "pmid": "37369232"},
+    {"title": "Small-Molecule Oral Versus Injectable Glucagon-Like Peptide-1 (GLP-1) Receptor Agonists: Comparative Efficacy, Safety, and Cost.", "authors": "Patel D", "journal": "Cureus", "pmid": "42153087"}
   ],
   "related": [
     "metformin",

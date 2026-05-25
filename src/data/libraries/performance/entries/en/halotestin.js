@@ -79,9 +79,9 @@ export default {
   ],
   "studies": [
     {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"},
-    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15233599"},
-    {"title": "Metabolism of anabolic androgenic steroids", "authors": "Schänzer W.", "journal": "Clin Chem. 1996;42(7):1001-20.", "pmid": "8616181"},
-    {"title": "Anabolic steroid use among adolescents", "authors": "Yesalis CE, Bahrke MS.", "journal": "JAMA. 2002;288(13):1641-2.", "pmid": "12047737"},
+    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15248788"},
+    {"title": "Metabolism of anabolic androgenic steroids", "authors": "Schänzer W.", "journal": "Clin Chem. 1996;42(7):1001-20.", "pmid": "8674183"},
+    {"title": "Anabolic-androgenic steroid abuse and performance-enhancing drugs among adolescents", "authors": "Bahrke MS, Yesalis CE, Brower KJ.", "journal": "Child Adolesc Psychiatr Clin N Am. 1998;7(4):821-38.", "pmid": "9894044"},
     {"title": "Anabolic-androgenic steroid dependence: an emerging disorder", "authors": "Kanayama G, Brower KJ, Wood RI, Hudson JI, Pope HG Jr.", "journal": "Addiction. 2009;104(12):1966-78.", "pmid": "19922565"}
   ],
   "faq": [

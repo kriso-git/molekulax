@@ -77,10 +77,10 @@ export default {
   ],
   "studies": [
     {"title": "FDA Methitest / Android prescribing information", "authors": "FDA / Pfizer", "journal": "DailyMed NDA 80-070 (methyltestosterone label)", "pmid": null},
-    {"title": "Cholestatic hepatitis associated with anabolic steroid use", "authors": "Westaby D, Ogle SJ, Paradinas FJ, Randell JB, Murray-Lyon IM.", "journal": "Lancet. 1977;2(8032):262-3 (and follow-up 1980).", "pmid": "6109024"},
-    {"title": "Anabolic-androgenic steroids and adolescents", "authors": "Yesalis CE, Streit AL, Vicary JR, Friedl KE, Brannon D, Buckley W.", "journal": "Pediatrician. 1989;16(1-2):42-50.", "pmid": "2685207"},
+    {"title": "Liver damage from long-term methyltestosterone", "authors": "Westaby D, Ogle SJ, Paradinas FJ, Randell JB, Murray-Lyon IM.", "journal": "Lancet. 1977;2(8032):262-3.", "pmid": "69876"},
+    {"title": "Anabolic steroid use: indications of habituation among adolescents", "authors": "Yesalis CE, Streit AL, Vicary JR, Friedl KE, Brannon D, Buckley W.", "journal": "J Drug Educ. 1989;19(2):103-16.", "pmid": "2769530"},
     {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"},
-    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15233599"}
+    {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15248788"}
   ],
   "faq": [
     {"q": "Dlaczego przestarzały w kulturystyce?", "a": "Dwie lepsze alternatywy: (1) Anavar — podobna siła anaboliczna, znacznie łagodniejsza hepatotoksyczność, NIE aromatyzuje; (2) Dianabol — większa siła anaboliczna, podobna hepatotoksyczność. Jedyna \"zaleta\" Methyltestosterone to możliwość dawkowania sublingwalnego, ale to nie jest istotne z punktu widzenia peak-plasma. Nowoczesny protokół: jeśli potrzebny doustny AAS 17α-alkilowany, użyj Anavaru lub Dianabolu."},

@@ -84,8 +84,8 @@ export default {
   ],
   "studies": [
     {"title": "Impulse control disorders in Parkinson disease: a cross-sectional study of 3090 patients (DOMINION study)", "authors": "Weintraub D, Koester J, Potenza MN, et al.", "journal": "Arch Neurol. 2010;67(5):589-595.", "pmid": "20457959"},
-    {"title": "Pramipexole and erectile dysfunction in non-Parkinson patients: case series", "authors": "Mansour A, Allouche S, Khowaja A, et al.", "journal": "Int J Impot Res. 2012;24(3):122-126.", "pmid": "22651823"},
-    {"title": "Pramipexole in restless legs syndrome and periodic limb movement disorder", "authors": "Romigi A, Placidi F, Stefani N, et al.", "journal": "Sleep Med. 2007;8(7-8):739-747.", "pmid": "17646619"}
+    {"title": "Effects of acute prolactin manipulation on sexual drive and function in males.", "authors": "Krüger TH, Haake P, Haverkamp J, Krämer M, Exton MS, Saller B, Mann K, Hartmann U, Schedlowski M", "journal": "J Endocrinol", "pmid": "14656205"},
+    {"title": "Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine clinical practice guideline.", "authors": "Winkelman JW, Berkowski JA, DelRosso LM, Koo BB, Scharf MT, Sharon D, Zak RS, Kazmi U, Falck-Ytter Y, Shelgikar AV, Trotti LM, Walters AS", "journal": "J Clin Sleep Med", "pmid": "39324694"}
   ],
   "faq": [
     {"q": "Pramipexole vs cabergoline — when to choose?", "a": "Pramipexole in two niche situations: (1) Sexual-emphasis user — D3 selectivity provides a libido/orgasm-quality boost, which is a bonus in the AAS-Tren libido-drop context; (2) User with cardiac valvulopathy history — cabergoline/bromocriptine ergot structure is contraindicated, pramipexole is non-ergot. BUT: ICD risk monitoring is MANDATORY (Weintraub 2010 DOMINION 17-22% at Parkinson dose, lower at AAS-PCT dose but exists). Cabergoline remains first-line in 90% of cases; pramipexole is more for concurrent sexual-recreational use (RecPharm sub-community) and niche clinical cases."},

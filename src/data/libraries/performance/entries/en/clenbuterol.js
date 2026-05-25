@@ -96,34 +96,34 @@ export default {
   ],
   "studies": [
     {
-      "title": "Clenbuterol effects in skeletal muscle: animal and human evidence",
-      "authors": "Spann C, Winter ME.",
-      "journal": "Ann Pharmacother. 1995;29(1):75-77.",
-      "pmid": "7741001"
+      "title": "Clenbuterol induces lean mass and muscle protein accretion, but attenuates cardiorespiratory fitness and desensitizes muscle β2-adrenoceptors in humans.",
+      "authors": "Hostrup M, Moesgaard L, Fischer M",
+      "journal": "J Physiol",
+      "pmid": "40946331"
     },
     {
-      "title": "Effects of clenbuterol on cardiac and skeletal muscle",
-      "authors": "Burniston JG, Tan LB, Goldspink DF.",
-      "journal": "Med Sci Sports Exerc. 2006;38(3):425-433.",
-      "pmid": "16540829"
+      "title": "Clenbuterol exerts antidiabetic activity through metabolic reprogramming of skeletal muscle cells.",
+      "authors": "Meister J, Bone DBJ, Knudsen JR",
+      "journal": "Nat Commun",
+      "pmid": "35013148"
     },
     {
-      "title": "Clenbuterol toxicity: an emerging epidemic",
-      "authors": "Daubert GP, Mabasa VH, Leung VW, Aaron C.",
-      "journal": "J Med Toxicol. 2007;3(2):56-60.",
-      "pmid": "18072144"
+      "title": "Clenbuterol toxicity: a NSW poisons information centre experience.",
+      "authors": "Brett J, Dawson AH, Brown JA",
+      "journal": "Med J Aust",
+      "pmid": "24580525"
     },
     {
-      "title": "Cardiotoxicity of clenbuterol: case series and review",
-      "authors": "Hoffman RJ, Hoffman RS, Freyberg CL et al.",
-      "journal": "Clin Toxicol (Phila). 2008;46(2):160-164.",
-      "pmid": "17597361"
+      "title": "Rhabdomyolysis Secondary to Clenbuterol Use and Exercise.",
+      "authors": "Grimmer NM, Gimbar RP, Bursua A, Patel M",
+      "journal": "J Emerg Med",
+      "pmid": "26482831"
     },
     {
-      "title": "Beta2-agonists: pharmacology and therapeutic role in respiratory disease",
-      "authors": "Cazzola M, Page CP, Calzetta L, Matera MG.",
-      "journal": "Pharmacol Rev. 2010;62(3):450-504.",
-      "pmid": "20535649"
+      "title": "A Comparison of the Molecular Pharmacological Properties of Current Short, Long, and Ultra-Long-Acting β(2)-Agonists Used to Treat Asthma and COPD.",
+      "authors": "Proudman RGW, Baker JG",
+      "journal": "Pharmacol Res Perspect",
+      "pmid": "40887869"
     },
     {
       "title": "β2-adrenergic receptor agonists as neuroprotective agents in Parkinson disease: a review",

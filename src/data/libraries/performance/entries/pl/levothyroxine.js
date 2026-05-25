@@ -115,16 +115,16 @@ export default {
   ],
   "studies": [
     {
-      "title": "Thyroid hormone therapy for older adults with subclinical hypothyroidism",
-      "authors": "Stott DJ, Rodondi N, Kearney PM et al.",
-      "journal": "N Engl J Med. 2017;376(26):2534-2544.",
-      "pmid": "28121505"
+      "title": "Discontinuation of levothyroxine therapy in patients with subclinical hypothyroidism: a pilot randomized clinical trial.",
+      "authors": "Maraka S, Owen RR, Singh Ospina NM",
+      "journal": "Endocrine",
+      "pmid": "40736623"
     },
     {
-      "title": "Clinical practice guidelines for hypothyroidism in adults",
-      "authors": "Garber JR, Cobin RH, Gharib H et al.",
-      "journal": "Endocr Pract. 2012;18(6):988-1028.",
-      "pmid": "22293194"
+      "title": "A 2013 survey of clinical practice patterns in the management of primary hypothyroidism.",
+      "authors": "Burch HB, Burman KD, Cooper DS",
+      "journal": "J Clin Endocrinol Metab",
+      "pmid": "24527720"
     },
     {
       "title": "Guidelines for the treatment of hypothyroidism (ATA)",
@@ -139,10 +139,10 @@ export default {
       "pmid": "14557420"
     },
     {
-      "title": "Bioequivalence of generic and brand-name levothyroxine products",
-      "authors": "Trapnell BC, Connolly SM, Pentikis HS et al.",
-      "journal": "Clin Pharmacol Ther. 2019;106(3):608-614.",
-      "pmid": "31302949"
+      "title": "Levothyroxine Formulations: Pharmacological and Clinical Implications of Generic Substitution.",
+      "authors": "Benvenga S, Carlé A",
+      "journal": "Adv Ther",
+      "pmid": "31485974"
     }
   ],
   "faq": [

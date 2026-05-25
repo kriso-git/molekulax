@@ -56,16 +56,16 @@ export default {
       "pmid": "29477251"
     },
     {
-      "title": "Escitalopram versus citalopram: the surprising role of the R-enantiomer",
-      "authors": "Lader M, Andersen HF, Baekdal T.",
-      "journal": "Psychopharmacology. 2005;179(2):461-8.",
-      "pmid": "15692804"
+      "title": "[Escitalopram: a selective inhibitor and allosteric modulator of the serotonin transporter].",
+      "authors": "Mnie-Filali O, El Mansari M, Scarna H, Haddjeri N",
+      "journal": "Encephale",
+      "pmid": "18789789"
     },
     {
-      "title": "Efficacy of escitalopram in generalized anxiety disorder",
-      "authors": "Davidson JR, Bose A, Korotzer A et al.",
-      "journal": "J Clin Psychiatry. 2004;65(8):1059-66.",
-      "pmid": "15323590"
+      "title": "Escitalopram.",
+      "authors": "Aronson S, Delgado P",
+      "journal": "Drugs Today (Barc)",
+      "pmid": "15045034"
     }
   ],
   "related": [
