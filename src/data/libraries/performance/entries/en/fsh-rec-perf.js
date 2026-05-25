@@ -82,9 +82,9 @@ export default {
     "TRT: NOT combinable (Sertoli FSHR downregulation under chronic Test exposure)"
   ],
   "studies": [
-    {"title": "Use of recombinant human FSH in the treatment of male hypogonadotropic hypogonadism", "authors": "Burgues S, Calderon MD.", "journal": "Hum Reprod. 1997;12(5):980-6.", "pmid": "9176246"},
-    {"title": "Gonadotropin therapy in male hypogonadotropic hypogonadism: comparison of growth hormone and gonadotropin treatments", "authors": "Liu PY, Baker HW, Jayadev V, Zacharin M, Conway AJ, Handelsman DJ.", "journal": "J Clin Endocrinol Metab. 2009;94(3):801-8.", "pmid": "19435775"},
-    {"title": "Recombinant follicle-stimulating hormone for spermatogenesis induction in hypogonadotropic men", "authors": "Liu PY, Gebski VJ, Turner L, Conway AJ, Wishart SM, Handelsman DJ.", "journal": "Hum Reprod. 2002;17(3):625-33.", "pmid": "11870114"}
+    {"title": "Fertility outcomes in male adults with congenital hypogonadotropic hypogonadism treated during puberty with human chorionic gonadotropin and recombinant follicle stimulating hormone.", "authors": "Grob F, Keshwani R, Angley E", "journal": "J Paediatr Child Health", "pmid": "38572627"},
+    {"title": "Congenital combined pituitary hormone deficiency patients have better responses to gonadotrophin-induced spermatogenesis than idiopathic hypogonadotropic hypogonadism patients.", "authors": "Mao J, Xu H, Wang X, Wu X, Nie M, Zhang H, Han B, Liu Z, Zhang K, Lian S, Lu S, Wang X, Chen N, Sun B, Liu J, Cui Q", "journal": "Hum Reprod", "pmid": "26141714"},
+    {"title": "Addition of recombinant follicle-stimulating hormone to human chorionic gonadotropin treatment in adolescents and young adults with hypogonadotropic hypogonadism promotes normal testicular growth and may promote early spermatogenesis.", "authors": "Zacharin M, Sabin MA, Nair VV, Nicolaides R", "journal": "Fertil Steril", "pmid": "22763096"}
   ],
   "faq": [
     {"q": "FSH-rec vs HMG — when is selective FSH needed?", "a": "Two scenarios: (1) cost-effectiveness: HMG (~€20-25/75 IU) much cheaper than FSH-rec (~€300-400/75 IU) — BUT HMG provides mixed FSH+LH, which is superfluous if HCG already provides separate LH stimulus. (2) Pure Sertoli emphasis goal: if LH is stabilized through another route (HCG bridge or endogenous low-LH restart), and only Sertoli stimulus is needed → FSH-rec selectivity is advantageous. In clinical practice HMG + HCG is often more cost-effective than FSH-rec + HCG."},
