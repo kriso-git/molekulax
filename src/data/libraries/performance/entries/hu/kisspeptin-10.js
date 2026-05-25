@@ -80,9 +80,9 @@ export default {
     "Pulse-pump protokoll + bolus + SC-injection-szerszám: peptid-stability-tárolás kritikus"
   ],
   "studies": [
-    {"title": "Effects of kisspeptin-54 on hypothalamic-pituitary-gonadal axis in men: phase 1 study", "authors": "Jayasena CN, Comninos AN, Veldhuis JD, et al.", "journal": "Clin Endocrinol. 2017;86(2):265-273.", "pmid": "27959703"},
-    {"title": "Kisspeptin-54 stimulates the hypothalamic-pituitary gonadal axis in human males", "authors": "Dhillo WS, Chaudhri OB, Patterson M, et al.", "journal": "J Clin Endocrinol Metab. 2007;90(12):6609-6615.", "pmid": "17567849"},
-    {"title": "Kisspeptin: a novel regulator of the hypothalamic-pituitary-gonadal axis", "authors": "George JT, Anderson RA, Millar RP.", "journal": "Hum Reprod Update. 2013;19(5):540-558.", "pmid": "23390083"}
+    {"title": "Age-dependent changes in the reproductive axis responsiveness to kisspeptin-10 administration in healthy men.", "authors": "Ullah H, Nabi G, Zubair H, Shahab M", "journal": "Andrologia", "pmid": "30590872"},
+    {"title": "Changes in the Responsiveness of the Hypothalamic-Pituitary-Gonadal Axis to Kisspeptin-10 Administration during Pubertal Transition in Boys.", "authors": "Nabi G, Ullah H, Khan S, Wahab F, Duan P, Ullah R, Shireen N, Shahab M", "journal": "Reprod Sci", "pmid": "30046307"},
+    {"title": "Hypothalamic Response to Kisspeptin-54 and Pituitary Response to Gonadotropin-Releasing Hormone Are Preserved in Healthy Older Men.", "authors": "Abbara A, Narayanaswamy S, Izzi-Engbeaya C, Comninos AN, Clarke SA, Malik Z, Papadopoulou D, Modi M, Faruqi D, Mustafa R, Bassett P, Lavery S, Trew GH, Patel A, Hu M, Bloom SR, Dhillo WS", "journal": "Neuroendocrinology", "pmid": "29544222"}
   ],
   "faq": [
     {"q": "Kisspeptin-10 vs HCG vs Gonadorelin — mi a különbség?", "a": "Axis-level hierarchy különbség. (1) **Kisspeptin-10**: hypothalamic GPR54 → GnRH-pulse → LH/FSH (legfelső upstream point); (2) **Gonadorelin**: pituitár GnRH-receptor → LH/FSH (1-szint downstream Kisspeptintől, direct GnRH-analog); (3) **HCG**: testicular Leydig-sejt LHCGR-receptor → Test-produkció (3-szint downstream, pituitár teljes-bypass). Klinikai választás: Kisspeptin a legtermészetesebb-pattern (pulsatility-simulator), DE legimpraktikusabb (pump-protocol); HCG legpraktikusabb (heti 2x SC), DE pituitár-feedback-loop megkerüli. Gonadorelin köztes (pituitár-szintű direct, DE pulsatility kell)."},
