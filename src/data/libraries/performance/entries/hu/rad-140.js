@@ -108,34 +108,34 @@ export default {
   ],
   "studies": [
     {
-      "title": "An orally active selective androgen receptor modulator is efficacious on bone, muscle, and sex function with reduced impact on prostate",
-      "authors": "Miller CP, Shomali M, Lyttle CR, et al.",
-      "journal": "ACS Med Chem Lett. 2011;2(2):124-9.",
-      "pmid": "21953468"
+      "title": "An orally active selective androgen receptor modulator is efficacious on bone, muscle, and sex function with reduced impact on prostate.",
+      "authors": "Miner JN, Chang W, Chapman MS, Finn PD, Hong MH, López FJ, Marschke KB, Rosen J, Schrader W, Turner R, Van Oeveren A, Viveros H, Zhi L, Negro-Vilar A",
+      "journal": "Endocrinology",
+      "pmid": "17023534"
     },
     {
-      "title": "First-in-human use of selective androgen receptor modulator RAD140 in metastatic ER+ breast cancer: dose-escalation phase I trial",
-      "authors": "Flores R, Aggarwal R, et al.",
-      "journal": "J Clin Oncol. 2020;38(15_suppl):1063.",
-      "pmid": "32472247"
+      "title": "A First-in-Human Phase 1 Study of a Novel Selective Androgen Receptor Modulator (SARM), RAD140, in ER+/HER2- Metastatic Breast Cancer.",
+      "authors": "LoRusso P, Hamilton E, Ma C, Vidula N, Bagley RG, Troy S, Annett M, Yu Z, Conlan MG, Weise A",
+      "journal": "Clin Breast Cancer",
+      "pmid": "34565686"
     },
     {
-      "title": "Severe hepatotoxicity from SARMs RAD-140 and LGD-4033: a case report",
-      "authors": "Hilal T, Gonzalez-Velez M.",
-      "journal": "BMJ Case Rep. 2020;13(7):e236269.",
-      "pmid": "32492288"
+      "title": "RAD-140 Drug-Induced Liver Injury.",
+      "authors": "Leung K, Yaramada P, Goyal P, Cai CX, Thung I, Hammami MB",
+      "journal": "ACG Case Rep J",
+      "pmid": "36561105"
     },
     {
-      "title": "Selective androgen receptor modulator-induced hepatotoxicity",
-      "authors": "Solomon ZJ, Mirabal JR, Mazur DJ, et al.",
-      "journal": "Sex Med Rev. 2019;7(1):84-94.",
-      "pmid": "31077635"
+      "title": "LGD-4033 and a Case of Drug-Induced Liver Injury: Exploring the Clinical Implications of Off-Label Selective Androgen Receptor Modulator Use in Healthy Adults.",
+      "authors": "Labban H, Kwait B, Paracha A, Khan A, Singh M, Lopez R",
+      "journal": "Cureus",
+      "pmid": "39421081"
     },
     {
-      "title": "Selective androgen receptor modulators in preclinical and clinical development",
-      "authors": "Bhasin S, Jasuja R.",
-      "journal": "Curr Opin Endocrinol Diabetes Obes. 2009;16(3):232-40. (and 2012 follow-up PMID 22573713)",
-      "pmid": "22573713"
+      "title": "Selective Androgen Receptor Modulators in Women: What Do We Know, and What Is Still Missing.",
+      "authors": "Vasilev V, Georgieva K, Kraeva M",
+      "journal": "Life (Basel)",
+      "pmid": "41752994"
     }
   ],
   "faq": [
