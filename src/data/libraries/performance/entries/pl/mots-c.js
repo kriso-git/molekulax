@@ -110,22 +110,22 @@ export default {
   ],
   "studies": [
     {
-      "title": "The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance",
-      "authors": "Lee C, Zeng J, Drew BG et al.",
-      "journal": "Cell Metab. 2015;21(3):443-454.",
-      "pmid": "25738457"
+      "title": "The mitochondrial-derived peptide MOTS-c promotes metabolic homeostasis and reduces obesity and insulin resistance.",
+      "authors": "Lee C, Zeng J, Drew BG, Sallam T, Martin-Montalvo A, Wan J, Kim SJ, Mehta H, Hevener AL, de Cabo R, Cohen P",
+      "journal": "Cell Metab",
+      "pmid": "25738459"
     },
     {
-      "title": "MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis",
-      "authors": "Reynolds JC, Lai RW, Woodhead JST et al.",
-      "journal": "Nat Commun. 2021;12(1):470.",
-      "pmid": "33526809"
+      "title": "MOTS-c is an exercise-induced mitochondrial-encoded regulator of age-dependent physical decline and muscle homeostasis.",
+      "authors": "Reynolds JC, Lai RW, Woodhead JST, Joly JH, Mitchell CJ, Cameron-Smith D, Lu R, Cohen P, Graham NA, Benayoun BA, Merry TL, Lee C",
+      "journal": "Nat Commun",
+      "pmid": "33473109"
     },
     {
-      "title": "The mitochondrial-encoded peptide MOTS-c translocates to the nucleus to regulate nuclear gene expression in response to metabolic stress",
-      "authors": "Kim KH, Son JM, Benayoun BA, Lee C.",
-      "journal": "Cell Metab. 2018;28(3):516-524.e7.",
-      "pmid": "30172725"
+      "title": "The Mitochondrial-Encoded Peptide MOTS-c Translocates to the Nucleus to Regulate Nuclear Gene Expression in Response to Metabolic Stress.",
+      "authors": "Kim KH, Son JM, Benayoun BA, Lee C",
+      "journal": "Cell Metab",
+      "pmid": "29983246"
     },
     {
       "title": "Naturally occurring mitochondrial-derived peptides are age-dependent regulators of apoptosis, insulin sensitivity, and inflammatory markers",
@@ -134,10 +134,10 @@ export default {
       "pmid": "27070352"
     },
     {
-      "title": "Mitochondrial-derived peptides in aging and age-related diseases",
-      "authors": "Kim SJ, Mehta HH, Wan J et al.",
-      "journal": "Geroscience. 2018;40(4):339-350.",
-      "pmid": "30276962"
+      "title": "Humanin and Its Pathophysiological Roles in Aging: A Systematic Review.",
+      "authors": "Coradduzza D, Congiargiu A, Chen Z, Zinellu A, Carru C, Medici S",
+      "journal": "Biology (Basel)",
+      "pmid": "37106758"
     }
   ],
   "faq": [

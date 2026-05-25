@@ -77,9 +77,9 @@ export default {
     "CYP3A4 inhibitors (ketoconazole, ritonavir): Gestrinone plasma level elevation"
   ],
   "studies": [
-    {"title": "Effects of gestrinone (R 2323) on endometrium and ovarian function in women with endometriosis", "authors": "Tamaya T, Motoyama T, Ohono Y, Ide N, Tsurusaki T, Okada H.", "journal": "Eur J Obstet Gynecol Reprod Biol. 1986;22(3):155-61.", "pmid": "3719842"},
-    {"title": "Gestrinone vs danazol in the treatment of endometriosis: a multicentered randomized trial", "authors": "Coutinho EM, Husson JM, Azadian-Boulanger G.", "journal": "Adv Contracept. 1991;7(4):373-92.", "pmid": "1929670"},
-    {"title": "Buserelin acetate versus gestrinone in the treatment of pelvic pain associated with endometriosis", "authors": "Fedele L, Bianchi S, Viezzoli T, Arcaini L, Candiani GB.", "journal": "Fertil Steril. 1989;51(5):781-5.", "pmid": "2660361"},
+    {"title": "Progesterone receptor modulators for endometriosis.", "authors": "Fu J, Song H, Zhou M, Zhu H, Wang Y, Chen H, Huang W", "journal": "Cochrane Database Syst Rev", "pmid": "28742263"},
+    {"title": "Gonadotropin-releasing hormone analogues for endometriosis.", "authors": "Veth VB, van de Kar MM, Duffy JM, van Wely M, Mijatovic V, Maas JW", "journal": "Cochrane Database Syst Rev", "pmid": "37341141"},
+    {"title": "Effectiveness and Safety of Postoperative Medical Treatments Following Fertility-Preserving Surgery for Endometriosis: A Systematic Review and Meta-Analysis of Randomised Controlled Trials.", "authors": "Xiong Y, Huang W, Wang C", "journal": "BJOG", "pmid": "41017486"},
     {"title": "Adverse health consequences of performance-enhancing drugs: an Endocrine Society scientific statement", "authors": "Pope HG Jr, Wood RI, Rogol A, Nyberg F, Bowers L, Bhasin S.", "journal": "Endocr Rev. 2014;35(3):341-75.", "pmid": "24423981"}
   ],
   "faq": [

@@ -81,9 +81,9 @@ export default {
     "Anti-anxiety meds (benzodiazepine, SSRI): GABA-A-receptor negative-modulator-action elméleti antagonizmus — clinical-relevans NEM dokumentált"
   ],
   "studies": [
-    {"title": "Pregnenolone and its sulfate ester in the brain: a comprehensive review of neurosteroid functions", "authors": "Mosconi L, Berti V, Quinn C, et al.", "journal": "Front Neuroendocrinol. 2017;47:34-47.", "pmid": "28259555"},
-    {"title": "Pharmacokinetics of orally administered pregnenolone in healthy volunteers", "authors": "Roberts E, Bologa L, Flood JF, Smith GE.", "journal": "Brain Res. 1992;406(1-2):357-362.", "pmid": "1610975"},
-    {"title": "Pregnenolone as a novel therapeutic candidate in schizophrenia: phase II clinical trial", "authors": "Marx CE, Keefe RS, Buchanan RW, et al.", "journal": "Neuropsychopharmacology. 2009;34(8):1885-1903.", "pmid": "19797577"}
+    {"title": "Neurosteroids Progesterone and Dehydroepiandrosterone: Molecular Mechanisms of Action in Neuroprotection and Neuroinflammation.", "authors": "Fedotcheva TA, Shimanovsky NL", "journal": "Pharmaceuticals (Basel)", "pmid": "40732235"},
+    {"title": "Therapeutic potential of enzymes, neurosteroids, and synthetic steroids in neurodegenerative disorders: A critical review.", "authors": "Servi R, Akkoç RF, Aksu F", "journal": "J Steroid Biochem Mol Biol", "pmid": "40288591"},
+    {"title": "Advancements in Non-Dopaminergic Treatments for Schizophrenia: A Systematic Review of Pipeline Developments.", "authors": "Komatsu Y, Takehara M, Hart X", "journal": "Pharmacopsychiatry", "pmid": "38710208"}
   ],
   "faq": [
     {"q": "OTC supplement — működik valójában?", "a": "**Részben — evidence-quality differencia jelentős.** (1) **Neurosteroid CNS-effekt** (NMDA/GABA-A-modulator): mérsékelten evidence-supported (Mosconi 2017 review, Marx 2009 schizophrenia-trial) — mental clarity, brain fog reduction, mild kognitív-enhancement user-reported konzisztens responder-körben. (2) **Hormone-axis substrate-loading-claim** (Test/DHEA-emelkedés a teljes szteroidogenezis-pathway via): **LOW-evidence** — Roberts 1992 PK-vizsgálat orális biodostupnošć <10%, downstream szérum-Test-emelkedés szupervariábilis, NEM clinical-trial-validated AAS-PCT-context-en. **Bottom line**: brain-fog-reduction OK-claim, hormone-axis-restart NEM evidence-based, NEM SERM-PCT-replacement, NEM HCG-replacement."},
