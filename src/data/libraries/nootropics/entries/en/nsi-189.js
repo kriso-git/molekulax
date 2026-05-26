@@ -91,24 +91,6 @@ export default {
   ],
   "studies": [
     {
-      "title": "NSI-189: a small molecule with hippocampal neurogenesis-stimulating activity",
-      "authors": "Liu Y et al.",
-      "journal": "CNS Neurol Disord Drug Targets. 2014;13(2):319-326.",
-      "pmid": "24059323"
-    },
-    {
-      "title": "NSI-189 Phase 1B trial in major depressive disorder",
-      "authors": "Fava M et al.",
-      "journal": "Mol Psychiatry. 2016;21(10):1372-1380.",
-      "pmid": "26821984"
-    },
-    {
-      "title": "NSI-189 in cognition and PTSD: preclinical neuroprotection",
-      "authors": "McIntyre RS et al.",
-      "journal": "Expert Opin Investig Drugs. 2017;26(2):191-198.",
-      "pmid": "28006971"
-    },
-    {
       "title": "NSI-189, a small molecule with neurogenic properties, exerts behavioral, and neurostructural benefits in stroke rats.",
       "authors": "Tajiri N, Quach DM, Kaneko Y, et al.",
       "journal": "Journal of cellular physiology",

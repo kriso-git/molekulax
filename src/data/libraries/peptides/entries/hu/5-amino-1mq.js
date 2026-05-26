@@ -37,18 +37,7 @@ export default {
   ],
   "dosageInfo": "Kutatási (humán): 50–150 mg orálisan naponta. Hosszú távú humán biztonság nincs.",
   "studies": [
-    {
-      "tag": "Kutatás",
-      "tagColor": "rgba(254,240,138,0.16)",
-      "tagText": "#fef08a",
-      "title": "5-Amino-1MQ inhibits NNMT and reduces obesity in mice",
-      "authors": "Neelakantan H, Vance V, Wetzel MD, et al.",
-      "journal": "Biochem Pharmacol",
-      "year": "2018",
-      "pmid": "29355504",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29355504/",
-      "finding": "A 5-Amino-1MQ NNMT-gátlás révén csökkenti a fehér zsírszövetet és javítja az anyagcserét egerekben."
-    }
+    
   ],
   "anecdote": "Közösségi beszámolók szerint az 5-Amino-1MQ-t nagyra értékelik zsírvesztéshez, a felhasználók finom, háttér-jellegű zsírvesztő hatást írnak le, ami idővel épül. A beszámolók gyakran tartalmaznak jobb napi energiát. Az NNMT-gátlás révén a vegyület csökkenti a keringő NAD+ szinteket azáltal, hogy több NAD+-t tart bent a sejtekben, ahol metabolikusan aktív. Jól párosítható olyan vegyületekkel, amelyek aktívan fokozzák az anyagcserét — Cardarine, injektálható L-karnitin vagy Retatrutid. Leginkább napi háttér-zsírvesztés-optimalizálónak tekinthető, nem pedig elsődleges hajtóerőnek.\n\nAz 5-Amino-1MQ szájon át (kapszulázott készítmények elérhetők) vagy szubkután adható. Ha az orális használat gyomorbántalmat okoz, étkezéssel vagy több vízzel való bevétel segíthet."
 }

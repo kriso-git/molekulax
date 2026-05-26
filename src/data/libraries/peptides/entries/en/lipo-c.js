@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Clinical: 1 mL IM 1–2× weekly, in weight-loss or energy-support protocols. No standardised peptide protocol.",
   "studies": [
-    {
-      "tag": "Research",
-      "tagColor": "rgba(253,224,71,0.16)",
-      "tagText": "#fde047",
-      "title": "Lipotropic agents in weight management, narrative review",
-      "authors": "Singh M, Sandhir R, Kiran R.",
-      "journal": "J Obes Metab Syndr",
-      "year": "2020",
-      "pmid": "33093270",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33093270/",
-      "finding": "Lipotropic combinations (methionine/inositol/choline) may support hepatic metabolism, though stand-alone weight-loss evidence is weak."
-    }
+    
   ]
 }

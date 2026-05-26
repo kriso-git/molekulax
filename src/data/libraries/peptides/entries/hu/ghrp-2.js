@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Kutatási: 100–300 µg SC, naponta 2–3× üres gyomorra.",
   "studies": [
-    {
-      "tag": "Kutatás",
-      "tagColor": "rgba(167,139,250,0.16)",
-      "tagText": "#a78bfa",
-      "title": "GHRP-2 and ghrelin: mechanisms and clinical use",
-      "authors": "Bowers CY.",
-      "journal": "JCEM",
-      "year": "2001",
-      "pmid": "11331743",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/11331743/",
-      "finding": "A GHRP-2 a ghrelin-receptoron erőteljes, dózisfüggő GH-szekréciót indukál."
-    }
+    
   ]
 }

@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Klinikai: 1 mL IM heti 1–2×, fogyókúrás vagy energetizáló protokollokban. Nincs standard peptid-protokoll.",
   "studies": [
-    {
-      "tag": "Kutatás",
-      "tagColor": "rgba(253,224,71,0.16)",
-      "tagText": "#fde047",
-      "title": "Lipotropic agents in weight management, narrative review",
-      "authors": "Singh M, Sandhir R, Kiran R.",
-      "journal": "J Obes Metab Syndr",
-      "year": "2020",
-      "pmid": "33093270",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33093270/",
-      "finding": "A lipotrop kombinációk (methionin/inozitol/kolin) támogathatják a máj-anyagcserét, de önmagukban a fogyás bizonyítéka gyenge."
-    }
+    
   ]
 }

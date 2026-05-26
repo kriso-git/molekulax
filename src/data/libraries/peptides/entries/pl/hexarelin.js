@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Badania: 100 µg SC, 1–2× dziennie.",
   "studies": [
-    {
-      "tag": "Badania",
-      "tagColor": "rgba(221,214,254,0.16)",
-      "tagText": "#ddd6fe",
-      "title": "Hexarelin cardioprotective effects via CD36",
-      "authors": "Bisi G, Podio V, Valetto MR, et al.",
-      "journal": "Cardiovasc Drugs Ther",
-      "year": "1999",
-      "pmid": "10516862",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/10516862/",
-      "finding": "Hexarelin wykazuje kardioprotekcję w modelach niedokrwienia, częściowo niezależnie od GH."
-    }
+    
   ]
 }

@@ -41,18 +41,7 @@ export default {
   ],
   "dosageInfo": "Research: 100–300 µg SC at bedtime, in 5–10 day cycles.",
   "studies": [
-    {
-      "tag": "Research",
-      "tagColor": "rgba(147,197,253,0.16)",
-      "tagText": "#93c5fd",
-      "title": "DSIP: anxiolytic and stress-protective effects",
-      "authors": "Sudakov KV, Ivanov VT, Koplik EV, et al.",
-      "journal": "Neurosci Behav Physiol",
-      "year": "1995",
-      "pmid": "7791904",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/7791904/",
-      "finding": "DSIP reduces stress responses and improves cognitive performance in anxiety models."
-    }
+    
   ],
   "anecdote": "DSIP is a hit-or-miss peptide. It works for many users but not all, and its effects are subtle. Rather than \"knocking users out,\" it tends to gently improve sleep depth and reduce nighttime awakenings. Some users find CBN more effective than DSIP. DSIP may also help blunt nighttime cortisol spikes, though this varies. It is more regulating than sedating, potentially supporting sleep architecture rather than simply inducing sleep. Limited evidence suggests it may help increase nighttime growth-hormone production, but data is scarce. One community member reported their user's best night of sleep at 500 mcg.\n\nDSIP can be administered subcutaneously or intra-nasally. It is highly individual-dependent, and results vary considerably between users."
 }

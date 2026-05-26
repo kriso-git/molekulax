@@ -96,12 +96,6 @@ export default {
       "authors": "Robertson P Jr, Hellriegel ET.",
       "journal": "Clin Pharmacokinet. 2003;42(2):123-137.",
       "pmid": "12537513"
-    },
-    {
-      "title": "Adrafinil: a novel vigilance promoting agent",
-      "authors": "Milgram NW et al.",
-      "journal": "CNS Drug Rev. 2000;6(2):136-153.",
-      "pmid": "11079215"
     }
   ],
   "faq": [

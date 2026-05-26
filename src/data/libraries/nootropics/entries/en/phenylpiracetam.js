@@ -114,9 +114,9 @@ export default {
       "pmid": "28743458"
     },
     {
-      "title": "R-phenylpiracetam atypical DAT inhibitor reversing motivational deficits",
-      "authors": "Zvejniece L et al.",
-      "journal": "Pharmacol Biochem Behav. 2014;124:128-135.",
+      "title": "The dopamine reuptake inhibitor MRZ-9547 increases progressive ratio responding in rats.",
+      "authors": "Sommer S, Danysz W, Russ H, Valastro B, Flik G",
+      "journal": "Int J Neuropsychopharmacol. 2014;17(12):2045-56.",
       "pmid": "24964269"
     }
   ],

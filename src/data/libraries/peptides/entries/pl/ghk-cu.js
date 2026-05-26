@@ -69,12 +69,12 @@ export default {
       "tag": "Genomika",
       "tagColor": "rgba(139,92,246,0.18)",
       "tagText": "#a78bfa",
-      "title": "GHK-Cu és a humán genom: 32 gén expressziójának módosítása",
-      "authors": "Pickart L, Margolina A.",
-      "journal": "Biomedicines",
+      "title": "Regenerative and Protective Actions of the GHK-Cu Peptide in the Light of the New Gene Data.",
+      "authors": "Pickart L, Margolina A",
+      "journal": "Int J Mol Sci. 2018;19(7):1987.",
       "year": "2018",
-      "pmid": "29662016",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29662016/",
+      "pmid": "29986520",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29986520/",
       "finding": "Peptyd wpływa na ekspresję ponad 32 genów, w tym kolagenu, antyoksydantów i naprawy tkanek."
     },
     {

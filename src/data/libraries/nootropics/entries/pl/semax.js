@@ -91,12 +91,6 @@ export default {
   ],
   "studies": [
     {
-      "title": "Semax in cognitive impairment after ischemic stroke",
-      "authors": "Gusev EI et al.",
-      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2018;118(3):61-68.",
-      "pmid": "29722760"
-    },
-    {
       "title": "Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus.",
       "authors": "Dolotov OV, Karpenko EA, Inozemtseva LS, et al.",
       "journal": "Brain research",
@@ -121,9 +115,9 @@ export default {
       "pmid": "29798983"
     },
     {
-      "title": "Semax effects on memory and attention in healthy men under extreme conditions",
-      "authors": "Kaplan AYa et al.",
-      "journal": "Aviakosm Ekolog Med. 1996;30(3):29-35.",
+      "title": "[A nootropic adrenocorticotropin analog 4-10-semax (15 years experience in its design and study)].",
+      "authors": "Asmarin IP, Nezavibatko VN, Miasoedov NF, Kamenskii AA, Grivennikov IA",
+      "journal": "Zh Vyssh Nerv Deiat Im I P Pavlova. 1997;47(2):420-30.",
       "pmid": "9173745"
     }
   ],

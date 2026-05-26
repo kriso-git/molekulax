@@ -37,17 +37,6 @@ export default {
   ],
   "dosageInfo": "Humán Fázis 1: 0,43 mg/kg/nap SC 4 hétig. Tekintettel a vesetoxicitás kockázatára, csak felügyelt vizsgálatban.",
   "studies": [
-    {
-      "tag": "Kutatás",
-      "tagColor": "rgba(253,186,116,0.16)",
-      "tagText": "#fdba74",
-      "title": "Adipotide induces weight loss in obese rhesus monkeys",
-      "authors": "Barnhart KF, Christianson DR, Hanley PW, et al.",
-      "journal": "Sci Transl Med",
-      "year": "2011",
-      "pmid": "22075637",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22075637/",
-      "finding": "Az Adipotide 4 hét alatt 11% testtömegcsökkenést okozott obéz rézusz majmokban."
-    }
+    
   ]
 }

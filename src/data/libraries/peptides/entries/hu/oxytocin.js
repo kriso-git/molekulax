@@ -41,18 +41,7 @@ export default {
   ],
   "dosageInfo": "Kutatási IN: 24–40 NE szociális/pszich. indikációkra.",
   "studies": [
-    {
-      "tag": "Kutatás",
-      "tagColor": "rgba(253,164,175,0.16)",
-      "tagText": "#fda4af",
-      "title": "Intranasal oxytocin: neural and behavioural effects",
-      "authors": "Quintana DS, Smerud KT, Andreassen OA, et al.",
-      "journal": "Mol Psychiatry",
-      "year": "2018",
-      "pmid": "28925369",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28925369/",
-      "finding": "Intranazális oxitocin moduláns hatást gyakorol szociális kognícióra és érzelmi feldolgozásra."
-    }
+    
   ],
   "anecdote": "Sok felhasználó szerint az Oxitocin természetesebbé és kevésbé erőltetetté teszi a társadalmi interakciókat — szinte úgy, mintha jobban szinkronban lennének másokkal — bár a hatás intenzitása jelentősen változik az egyének között. Anekdotikus beszámolók csökkent \"szociális súrlódásról\" és javuló kötődési képességről számolnak be. A vegyület úgy tűnik, hogy felerősíti az aktuális érzelmi kontextust, így a pozitív környezetek még jobbnak, a negatívak rosszabbnak tűnhetnek. A tolerancia gyakori használat mellett kialakulhat, és néha másodlagos hatásokat is jelentenek, mint enyhe vazodilatáció és mérsékelt nyugalmi pulzusszám-emelkedés.\n\nAz oxitocin szubkután beadható, de általában az intranazális beadást részesítik előnyben a jobb BBB-áthatolás miatt. A hatások viszonylag rövid ideig tartanak."
 }

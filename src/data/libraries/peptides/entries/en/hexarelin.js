@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Research: 100 µg SC, 1–2× daily.",
   "studies": [
-    {
-      "tag": "Research",
-      "tagColor": "rgba(221,214,254,0.16)",
-      "tagText": "#ddd6fe",
-      "title": "Hexarelin cardioprotective effects via CD36",
-      "authors": "Bisi G, Podio V, Valetto MR, et al.",
-      "journal": "Cardiovasc Drugs Ther",
-      "year": "1999",
-      "pmid": "10516862",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/10516862/",
-      "finding": "Hexarelin shows cardioprotective effects in ischaemia models, partially GH-independent."
-    }
+    
   ]
 }

@@ -57,12 +57,12 @@ export default {
       "tag": "Przegląd",
       "tagColor": "rgba(168,85,247,0.18)",
       "tagText": "#c084fc",
-      "title": "The Safety and Efficacy of Growth Hormone Secretagogues",
-      "authors": "Sigalos JT, Pastuszak AW.",
-      "journal": "Sexual Medicine Reviews",
+      "title": "The Safety and Efficacy of Growth Hormone Secretagogues.",
+      "authors": "Sigalos JT, Pastuszak AW",
+      "journal": "Sex Med Rev. 2018;6(1):45-53.",
       "year": "2018",
-      "pmid": "28666687",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28666687/",
+      "pmid": "28400207",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28400207/",
       "finding": "Przegląd bezpieczeństwa i skuteczności sermoreliny oraz innych analogów GHRH na podstawie dowodów klinicznych."
     }
   ]
