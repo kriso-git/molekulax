@@ -45,11 +45,11 @@ export default {
       "tag": "Research",
       "tagColor": "rgba(190,242,100,0.16)",
       "tagText": "#bef264",
-      "title": "AOD-9604: a fragment of GH with selective lipolytic activity",
-      "authors": "Heffernan M, Summers RJ, Thorburn A, et al.",
+      "title": "Metabolic studies of a synthetic lipolytic domain (AOD9604) of human growth hormone.",
+      "authors": "Ng FM, Sun J, Sharma L, et al.",
       "journal": "Endocrinology",
       "year": "2001",
-      "pmid": "11606445",
+      "pmid": "11146367",
       "url": "https://pubmed.ncbi.nlm.nih.gov/11606445/",
       "finding": "AOD-9604 exerts lipolytic effects without significantly raising IGF-1."
     }

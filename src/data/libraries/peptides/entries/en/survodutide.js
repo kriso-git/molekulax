@@ -45,11 +45,11 @@ export default {
       "tag": "Research",
       "tagColor": "rgba(251,191,36,0.16)",
       "tagText": "#fbbf24",
-      "title": "Survodutide for weight reduction in obesity (Phase 2)",
-      "authors": "le Roux CW, Steen O, Lucas KJ, et al.",
+      "title": "Baseline characteristics in the SYNCHRONIZE-2 randomized phase 3 trial of survodutide, a glucagon receptor/GLP-1 receptor dual agonist, for obesity in people with type 2 diabetes.",
+      "authors": "Wharton S, le Roux CW, Bozkurt B, et al.",
       "journal": "Lancet Diabetes Endocrinol",
       "year": "2024",
-      "pmid": "38387467",
+      "pmid": "41216778",
       "url": "https://pubmed.ncbi.nlm.nih.gov/38387467/",
       "finding": "Survodutide 4.8 mg achieved 18.7% body weight reduction over 46 weeks."
     }

@@ -109,10 +109,10 @@ export default {
       "pmid": "28006971"
     },
     {
-      "title": "NSI-189, a novel multi-domain compound — animal hippocampal neurogenesis and behavioral effects",
-      "authors": "Liu Y et al.",
-      "journal": "Sci Rep. 2014;4:6477.",
-      "pmid": "24927526"
+      "title": "NSI-189, a small molecule with neurogenic properties, exerts behavioral, and neurostructural benefits in stroke rats.",
+      "authors": "Tajiri N, Quach DM, Kaneko Y, et al.",
+      "journal": "Journal of cellular physiology",
+      "pmid": "28181668"
     },
     {
       "title": "The neurogenic compound NSI-189 phosphate: pro-cognitive and antidepressant effects (review)",

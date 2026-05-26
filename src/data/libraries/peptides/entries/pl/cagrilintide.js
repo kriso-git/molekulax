@@ -45,11 +45,11 @@ export default {
       "tag": "Badania",
       "tagColor": "rgba(251,113,133,0.16)",
       "tagText": "#fb7185",
-      "title": "CagriSema in adults with overweight or obesity (REDEFINE 1)",
-      "authors": "Garvey WT, Frias JP, Jastreboff AM, et al.",
+      "title": "Coadministered Cagrilintide and Semaglutide in Adults with Overweight or Obesity.",
+      "authors": "Garvey WT, Blüher M, Osorto Contreras CK, et al.",
       "journal": "NEJM",
       "year": "2025",
-      "pmid": "40009844",
+      "pmid": "40544433",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40009844/",
       "finding": "CagriSema dała 22,7% redukcji masy ciała w 68 tygodni u dorosłych z otyłością."
     }

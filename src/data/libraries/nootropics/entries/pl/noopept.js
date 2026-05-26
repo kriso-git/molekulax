@@ -94,16 +94,16 @@ export default {
       "pmid": "19234797"
     },
     {
-      "title": "Noopept and NGF/BDNF expression in vivo",
-      "authors": "Ostrovskaia RU et al.",
-      "journal": "Eksp Klin Farmakol. 2008;71(4):29-35.",
-      "pmid": "18819428"
+      "title": "Noopept stimulates the expression of NGF and BDNF in rat hippocampus.",
+      "authors": "Ostrovskaya RU, Gudasheva TA, Zaplina AP, et al.",
+      "journal": "Bulletin of experimental biology and medicine",
+      "pmid": "19240853"
     },
     {
-      "title": "Original neuropsychotropic activity of noopept",
-      "authors": "Gudasheva TA et al.",
-      "journal": "Bioorg Khim. 1996;22(10-11):768-778.",
-      "pmid": "9082489"
+      "title": "The original novel nootropic and neuroprotective agent noopept.",
+      "authors": "Gudasheva TA, Voronina TA, Ostrovskaya RU, et al.",
+      "journal": "Eksperimental'naia i klinicheskaia farmakologiia",
+      "pmid": "12596521"
     },
     {
       "title": "Noopept in the treatment of mild cognitive impairment in patients with stroke",

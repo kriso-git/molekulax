@@ -69,11 +69,11 @@ export default {
       "tag": "SURMOUNT-3",
       "tagColor": "rgba(99,102,241,0.18)",
       "tagText": "#818cf8",
-      "title": "Tirzepatide after intensive lifestyle intervention in obesity",
+      "title": "Tirzepatide after intensive lifestyle intervention in adults with overweight or obesity: the SURMOUNT-3 phase 3 trial.",
       "authors": "Wadden TA, Chao AM, Machineni S, et al.",
       "journal": "Nature Medicine",
       "year": "2023",
-      "pmid": "37864208",
+      "pmid": "37840095",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37864208/",
       "finding": "After intensive lifestyle intervention, tirzepatide produced an additional 18.4% body-weight reduction over 72 weeks."
     }

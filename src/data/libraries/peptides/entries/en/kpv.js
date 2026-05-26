@@ -45,11 +45,11 @@ export default {
       "tag": "Research",
       "tagColor": "rgba(134,239,172,0.16)",
       "tagText": "#86efac",
-      "title": "KPV reduces inflammation in models of colitis and skin disease",
+      "title": "Alpha-melanocyte-stimulating hormone and related tripeptides: biochemistry, antiinflammatory and protective effects in vitro and in vivo.",
       "authors": "Brzoska T, Luger TA, Maaser C, et al.",
       "journal": "Endocr Rev",
       "year": "2008",
-      "pmid": "18483147",
+      "pmid": "18612139",
       "url": "https://pubmed.ncbi.nlm.nih.gov/18483147/",
       "finding": "KPV reduces inflammatory cytokines and clinical severity in IBD and skin models."
     }

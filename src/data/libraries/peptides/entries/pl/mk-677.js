@@ -41,11 +41,11 @@ export default {
       "tag": "Badania",
       "tagColor": "rgba(253,224,71,0.16)",
       "tagText": "#fde047",
-      "title": "MK-677 increases GH/IGF-1 and lean mass in older adults",
-      "authors": "Nass R, Pezzoli SS, Oliveri MC, et al.",
+      "title": "Oral administration of the growth hormone secretagogue MK-677 increases markers of bone turnover in healthy and functionally impaired elderly adults.",
+      "authors": "Murphy MG, Bach MA, Plotkin D, et al.",
       "journal": "Ann Intern Med",
       "year": "2008",
-      "pmid": "19018024",
+      "pmid": "10404019",
       "url": "https://pubmed.ncbi.nlm.nih.gov/19018024/",
       "finding": "2 lata MK-677 zwiększyły GH/IGF-1 i beztłuszczową masę ciała u starszych dorosłych."
     }

@@ -89,9 +89,9 @@ export default {
   ],
   "studies": [
     {
-      "title": "Piracetam, an old drug with novel properties?",
-      "authors": "Malykh AG, Sadaie MR.",
-      "journal": "Drugs. 2010;70(3):287-312.",
+      "title": "Piracetam and piracetam-like drugs: from basic science to novel clinical applications to CNS disorders.",
+      "authors": "Malykh AG, Sadaie MR",
+      "journal": "Drugs",
       "pmid": "20166767"
     },
     {
@@ -101,10 +101,10 @@ export default {
       "pmid": "11405969"
     },
     {
-      "title": "Piracetam in stroke: clinical trial review",
-      "authors": "Ricci S et al.",
-      "journal": "Cochrane Database Syst Rev. 2012;(9):CD000419.",
-      "pmid": "22972041"
+      "title": "Piracetam for acute ischaemic stroke.",
+      "authors": "Ricci S, Celani MG, Cantisani TA, et al.",
+      "journal": "The Cochrane database of systematic reviews",
+      "pmid": "22972044"
     },
     {
       "title": "Piracetam in the treatment of cortical myoclonus",
@@ -116,7 +116,7 @@ export default {
       "title": "Piracetam — an old drug with novel properties? Updated review",
       "authors": "Winblad B.",
       "journal": "CNS Drug Rev. 2005;11(2):169-182.",
-      "pmid": "12006732"
+      "pmid": "20166767"
     }
   ],
   "faq": [

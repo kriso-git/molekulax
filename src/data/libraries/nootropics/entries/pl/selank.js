@@ -88,10 +88,10 @@ export default {
   ],
   "studies": [
     {
-      "title": "Selank: anxiolytic and antidepressant peptide",
-      "authors": "Kost NV et al.",
-      "journal": "Bull Exp Biol Med. 2007;143(6):683-687.",
-      "pmid": "18239810"
+      "title": "Efficacy and possible mechanisms of action of a new peptide anxiolytic selank in the therapy of generalized anxiety disorders and neurasthenia.",
+      "authors": "Zozulia AA, Neznamov GG, Siuniakov TS, et al.",
+      "journal": "Zhurnal nevrologii i psikhiatrii imeni S.S. Korsakova",
+      "pmid": "18454096"
     },
     {
       "title": "Selank effect on cognitive function in generalized anxiety disorder",
@@ -100,10 +100,10 @@ export default {
       "pmid": "18454141"
     },
     {
-      "title": "Selank vs Diazepam in GAD: randomized comparison",
-      "authors": "Medvedev VE et al.",
-      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2007;107(6):11-16.",
-      "pmid": "17703839"
+      "title": "A comparison of the anxiolytic effect and tolerability of selank and phenazepam in the treatment of anxiety disorders.",
+      "authors": "Medvedev VE, Tereshchenko ON, Israelian AIu, et al.",
+      "journal": "Zhurnal nevrologii i psikhiatrii imeni S.S. Korsakova",
+      "pmid": "25176261"
     },
     {
       "title": "Anxiolytic efficacy of Selank in patients with generalized anxiety disorder",

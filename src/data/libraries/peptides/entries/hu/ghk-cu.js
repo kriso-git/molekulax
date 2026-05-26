@@ -57,11 +57,11 @@ export default {
       "tag": "Bőrgyógyászat",
       "tagColor": "rgba(6,182,212,0.16)",
       "tagText": "#67e8f9",
-      "title": "GHK-Cu: sejtes útvonalak a bőrregenerációban",
-      "authors": "Pickart L, Vasquez-Soltero JM, Margolina A.",
+      "title": "GHK Peptide as a Natural Modulator of Multiple Cellular Pathways in Skin Regeneration.",
+      "authors": "Pickart L, Vasquez-Soltero JM, Margolina A",
       "journal": "Biomed Research International",
       "year": "2015",
-      "pmid": "26078961",
+      "pmid": "26236730",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4508379/",
       "finding": "A GHK-Cu aktiválja a kollagén és GAG szintézist, csökkenti a gyulladásos citokineket, és epigenetikailag befolyásolja a génexpressziót."
     },
@@ -81,11 +81,11 @@ export default {
       "tag": "Hajregeneráció",
       "tagColor": "rgba(20,184,166,0.16)",
       "tagText": "#5eead4",
-      "title": "Topical GHK-Cu peptide reduces hair loss in a clinical study",
+      "title": "The effect of tripeptide-copper complex on human hair growth in vitro.",
       "authors": "Pyo HK, Yoo HG, Won CH, et al.",
       "journal": "Annals of Dermatology",
       "year": "2021",
-      "pmid": "34334873",
+      "pmid": "17703734",
       "url": "https://pubmed.ncbi.nlm.nih.gov/34334873/",
       "finding": "GHK-Cu topikálisan szignifikánsan csökkentette a hajhullást és növelte a hajsűrűséget a placebóhoz képest."
     }

@@ -45,11 +45,11 @@ export default {
       "tag": "Research",
       "tagColor": "rgba(34,211,238,0.16)",
       "tagText": "#22d3ee",
-      "title": "Elamipretide in Barth syndrome (TAZPOWER)",
-      "authors": "Reid Thompson W, Hornby B, Manuel R, et al.",
+      "title": "Long-term efficacy and safety of elamipretide in patients with Barth syndrome: 168-week open-label extension results of TAZPOWER.",
+      "authors": "Thompson WR, Manuel R, Abbruscato A, et al.",
       "journal": "Genet Med",
       "year": "2021",
-      "pmid": "33245098",
+      "pmid": "38602181",
       "url": "https://pubmed.ncbi.nlm.nih.gov/33245098/",
       "finding": "Elamipretide improves muscle strength and functional capacity in Barth syndrome patients."
     }
