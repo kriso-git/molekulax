@@ -40,6 +40,13 @@ function overlapRatio(a, b) {
   return common / Math.min(ta.size, tb.size)
 }
 
+export function isHuRuTitle(s) {
+  if (!s || typeof s !== 'string') return null
+  if (/[áéíóöőúüű]/i.test(s)) return 'hu'
+  if (/^\[.+\]$/.test(s.trim())) return 'ru'
+  return null
+}
+
 async function suggestCandidates(citedTitle, excludePmids = []) {
   const stop = new Set(['this','that','with','from','have','been','were','their','about','which','study','effects','effect','using','versus','among','during'])
   const ts = normalize(citedTitle).split(' ').filter(t => t.length >= 4 && !stop.has(t))
@@ -181,7 +188,10 @@ async function main() {
   }
 }
 
-main().catch(err => {
-  console.error('Verify failed:', err)
-  process.exit(1)
-})
+// Only run when invoked directly (not when imported by tests)
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch(err => {
+    console.error('Verify failed:', err)
+    process.exit(1)
+  })
+}
