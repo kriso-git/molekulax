@@ -152,8 +152,21 @@ async function main() {
           }
           continue
         }
+        const detectedLang = isHuRuTitle(study.title)
+        const threshold = detectedLang ? 0.10 : 0.25
         const ratio = overlapRatio(study.title, result.title)
-        if (ratio < 0.25) {
+
+        if (ratio >= threshold) {
+          const langTag = detectedLang ? ` [${detectedLang.toUpperCase()}-loose]` : ''
+          console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)${langTag}`)
+        } else if (detectedLang) {
+          const statusTag = detectedLang === 'hu' ? 'MAYBE_FP_HU' : 'MAYBE_FP_RU'
+          console.log(`  ⚠️  ${libId}/${slug}: PMID ${pmid} ${statusTag} (manual review)`)
+          console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
+          console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
+          issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status: statusTag, ratio })
+          // Skip suggest mode on MAYBE_FP — these are not fabrications
+        } else {
           console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} MISMATCH`)
           console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
           console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
@@ -170,8 +183,6 @@ async function main() {
             }
             await new Promise(r => setTimeout(r, 300))
           }
-        } else {
-          console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)`)
         }
         // Rate limit: NCBI requests max 3/sec without API key
         await new Promise(r => setTimeout(r, 400))
