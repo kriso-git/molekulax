@@ -46,6 +46,10 @@ async function main() {
       ['scripts/verify-pmids.mjs', '--lib', libId, '--entry', entryId],
       { stdio: 'inherit' }
     )
+    if (result.error) {
+      console.error(`[verify-staged-entries] spawn failed: ${result.error.message}`)
+      process.exit(1)
+    }
     if (result.status !== 0) {
       console.error(`[verify-staged-entries] FAIL on ${libId}/${entryId} — commit aborted.`)
       console.error('[verify-staged-entries] Bypass (not recommended): git commit --no-verify')
