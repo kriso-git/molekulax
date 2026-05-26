@@ -31,6 +31,15 @@ const strictMode = args.includes('--strict')
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
 
+export const STATUS = Object.freeze({
+  OK: 'OK',
+  MISMATCH: 'MISMATCH',
+  NOT_FOUND: 'NOT_FOUND',
+  MAYBE_FP_HU: 'MAYBE_FP_HU',
+  MAYBE_FP_RU: 'MAYBE_FP_RU',
+  NETWORK_ERR: 'NETWORK_ERR',
+})
+
 function normalize(s) {
   return (s || '').toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim()
 }
@@ -46,6 +55,18 @@ function overlapRatio(a, b) {
   let common = 0
   for (const t of ta) if (tb.has(t)) common++
   return common / Math.min(ta.size, tb.size)
+}
+
+export function classifyOverlap(citedTitle, realTitle) {
+  const lang = isHuRuTitle(citedTitle)
+  const threshold = lang ? 0.10 : 0.25
+  const ratio = overlapRatio(citedTitle, realTitle)
+  if (ratio >= threshold) {
+    return { status: STATUS.OK, ratio, langTag: lang || null }
+  }
+  if (lang === 'hu') return { status: STATUS.MAYBE_FP_HU, ratio, langTag: 'hu' }
+  if (lang === 'ru') return { status: STATUS.MAYBE_FP_RU, ratio, langTag: 'ru' }
+  return { status: STATUS.MISMATCH, ratio, langTag: null }
 }
 
 export function isHuRuTitle(s) {
@@ -159,25 +180,22 @@ async function main() {
           }
           continue
         }
-        const detectedLang = isHuRuTitle(study.title)
-        const threshold = detectedLang ? 0.10 : 0.25
-        const ratio = overlapRatio(study.title, result.title)
+        const { status, ratio, langTag } = classifyOverlap(study.title, result.title)
 
-        if (ratio >= threshold) {
-          const langTag = detectedLang ? ` [${detectedLang.toUpperCase()}-loose]` : ''
-          console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)${langTag}`)
-        } else if (detectedLang) {
-          const statusTag = detectedLang === 'hu' ? 'MAYBE_FP_HU' : 'MAYBE_FP_RU'
-          console.log(`  ⚠️  ${libId}/${slug}: PMID ${pmid} ${statusTag} (manual review)`)
+        if (status === STATUS.OK) {
+          const tag = langTag ? ` [${langTag.toUpperCase()}-loose]` : ''
+          console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)${tag}`)
+        } else if (status === STATUS.MAYBE_FP_HU || status === STATUS.MAYBE_FP_RU) {
+          console.log(`  ⚠️  ${libId}/${slug}: PMID ${pmid} ${status} (manual review)`)
           console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
           console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
-          issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status: statusTag, ratio })
+          issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status, ratio })
           // Skip suggest mode on MAYBE_FP — these are not fabrications
         } else {
           console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} MISMATCH`)
           console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
           console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
-          issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status: 'MISMATCH' })
+          issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status: STATUS.MISMATCH })
           if (suggestMode) {
             const cands = await suggestCandidates(study.title || '', [pmid])
             if (cands.length === 0) {
