@@ -46,7 +46,14 @@ export const STATUS = Object.freeze({
 })
 
 function normalize(s) {
-  return (s || '').toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim()
+  let str = (s || '')
+  // S4: strip RU-bracket wrapper before tokenization, so '[Russian title]'
+  // tokens aren't prefixed/suffixed with brackets that survive punct-strip
+  // until after the inner content is already counted as malformed.
+  if (isHuRuTitle(str) === 'ru') {
+    str = str.trim().slice(1, -1)
+  }
+  return str.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim()
 }
 
 function tokens(s) {
