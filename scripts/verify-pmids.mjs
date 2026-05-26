@@ -118,7 +118,7 @@ async function lookupPmid(pmid) {
   const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${pmid}&retmode=json`
   try {
     const res = await fetch(url)
-    if (!res.ok) return { exists: false, status: res.status }
+    if (!res.ok) return { exists: false, error: `HTTP ${res.status}` }
     const json = await res.json()
     const rec = json.result?.[pmid]
     if (!rec || rec.error) return { exists: false, error: rec?.error || 'no record' }
@@ -137,19 +137,19 @@ async function lookupBatched(pmids) {
       const res = await fetch(url)
       if (!res.ok) {
         for (const pmid of chunk) result.set(pmid, { exists: false, error: `HTTP ${res.status}` })
-        continue
-      }
-      const json = await res.json()
-      for (const pmid of chunk) {
-        const rec = json.result?.[pmid]
-        if (!rec || rec.error) {
-          result.set(pmid, { exists: false, error: rec?.error || 'no record' })
-        } else {
-          result.set(pmid, {
-            exists: true,
-            title: rec.title,
-            authors: (rec.authors || []).map(a => a.name).join(', '),
-          })
+      } else {
+        const json = await res.json()
+        for (const pmid of chunk) {
+          const rec = json.result?.[pmid]
+          if (!rec || rec.error) {
+            result.set(pmid, { exists: false, error: rec?.error || 'no record' })
+          } else {
+            result.set(pmid, {
+              exists: true,
+              title: rec.title,
+              authors: (rec.authors || []).map(a => a.name).join(', '),
+            })
+          }
         }
       }
     } catch (err) {
