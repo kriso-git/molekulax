@@ -139,7 +139,7 @@ async function main() {
 
         const result = await lookupPmid(pmid)
         if (result.networkError) {
-          console.log(`  NET ${libId}/${slug}: PMID ${pmid} (${result.error})`)
+          console.log(`  NETWORK_ERR ${libId}/${slug}: PMID ${pmid} (${result.error})`)
           continue
         }
         if (!result.exists) {
