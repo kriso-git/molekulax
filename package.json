@@ -14,7 +14,9 @@
     "pipeline:normalize": "node scripts/data-pipeline/normalize.mjs",
     "pipeline:diff": "node scripts/data-pipeline/merge-and-diff.mjs",
     "pipeline:apply": "node scripts/data-pipeline/apply-patches.mjs",
-    "convert-images": "node scripts/convert-images.mjs"
+    "convert-images": "node scripts/convert-images.mjs",
+    "prepare": "husky",
+    "verify:staged": "node scripts/verify-staged-entries.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.18.2",
@@ -29,6 +31,7 @@
     "cheerio": "^1.1.0",
     "diff": "^9.0.0",
     "dotenv": "^17.4.2",
+    "husky": "^9.1.7",
     "mammoth": "^1.12.0",
     "pngjs": "^7.0.0",
     "postcss": "^8.4.49",
