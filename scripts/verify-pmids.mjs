@@ -3,10 +3,17 @@
 // (token-overlap heuristic). Flags PMIDs that don't exist, return wrong-paper,
 // or match a paper whose title bears no resemblance to the cited one.
 //
-// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>]
+// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict]
 //
-// Output: per-PMID line with status (OK / MISMATCH / NOT_FOUND / NETWORK_ERR).
-// Exits 1 if any MISMATCH or NOT_FOUND found.
+// Output: per-PMID line with status — OK / MISMATCH / NOT_FOUND / MAYBE_FP_HU /
+// MAYBE_FP_RU / NETWORK_ERR. MAYBE_FP_HU and MAYBE_FP_RU are flagged when the
+// cited title contains Hungarian diacritics ([áéíóöőúüű]) or is fully wrapped
+// in brackets ([Russian-translated]), respectively, and the token-overlap with
+// the real PubMed title falls below the loose threshold (0.10) — these need
+// manual review, not automatic fabrication-rejection.
+//
+// Exits 1 if any MISMATCH or NOT_FOUND found. With --strict, MAYBE_FP_HU/RU
+// also exit 1.
 
 import { readdirSync, existsSync } from 'fs'
 import { resolve, dirname } from 'path'
@@ -203,7 +210,8 @@ async function main() {
         if (!byStatus[i.status]) byStatus[i.status] = []
         byStatus[i.status].push(i)
       }
-      for (const status of Object.keys(byStatus)) {
+      for (const status of ['MISMATCH', 'NOT_FOUND']) {
+        if (!byStatus[status]) continue
         console.log(`  ${status} (${byStatus[status].length}):`)
         for (const i of byStatus[status]) {
           console.log(`    ${i.libId}/${i.slug} PMID ${i.pmid}`)
@@ -217,7 +225,8 @@ async function main() {
         if (!byStatus[i.status]) byStatus[i.status] = []
         byStatus[i.status].push(i)
       }
-      for (const status of Object.keys(byStatus)) {
+      for (const status of ['MAYBE_FP_HU', 'MAYBE_FP_RU']) {
+        if (!byStatus[status]) continue
         console.log(`  ${status} (${byStatus[status].length}):`)
         for (const i of byStatus[status]) {
           const ratioStr = i.ratio != null ? ` (ratio ${(i.ratio * 100).toFixed(0)}%)` : ''
