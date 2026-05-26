@@ -165,7 +165,7 @@ async function main() {
         }
         if (!result.exists) {
           console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} NOT_FOUND (cited as "${study.title?.slice(0, 60)}")`)
-          issues.push({ libId, slug, pmid, citedTitle: study.title, status: 'NOT_FOUND' })
+          issues.push({ libId, slug, pmid, citedTitle: study.title, status: STATUS.NOT_FOUND })
           if (suggestMode) {
             const cands = await suggestCandidates(study.title || '', [pmid])
             if (cands.length === 0) {
@@ -215,8 +215,8 @@ async function main() {
     }
   }
 
-  const blocking = issues.filter(i => i.status === 'MISMATCH' || i.status === 'NOT_FOUND')
-  const maybeFp = issues.filter(i => i.status === 'MAYBE_FP_HU' || i.status === 'MAYBE_FP_RU')
+  const blocking = issues.filter(i => i.status === STATUS.MISMATCH || i.status === STATUS.NOT_FOUND)
+  const maybeFp = issues.filter(i => i.status === STATUS.MAYBE_FP_HU || i.status === STATUS.MAYBE_FP_RU)
 
   if (issues.length === 0) {
     console.log('\n✅ All PMIDs verified.')
@@ -228,7 +228,7 @@ async function main() {
         if (!byStatus[i.status]) byStatus[i.status] = []
         byStatus[i.status].push(i)
       }
-      for (const status of ['MISMATCH', 'NOT_FOUND']) {
+      for (const status of [STATUS.MISMATCH, STATUS.NOT_FOUND]) {
         if (!byStatus[status]) continue
         console.log(`  ${status} (${byStatus[status].length}):`)
         for (const i of byStatus[status]) {
@@ -243,7 +243,7 @@ async function main() {
         if (!byStatus[i.status]) byStatus[i.status] = []
         byStatus[i.status].push(i)
       }
-      for (const status of ['MAYBE_FP_HU', 'MAYBE_FP_RU']) {
+      for (const status of [STATUS.MAYBE_FP_HU, STATUS.MAYBE_FP_RU]) {
         if (!byStatus[status]) continue
         console.log(`  ${status} (${byStatus[status].length}):`)
         for (const i of byStatus[status]) {
