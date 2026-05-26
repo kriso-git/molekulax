@@ -97,10 +97,10 @@ export default {
       "pmid": "29722760"
     },
     {
-      "title": "Semax effect on BDNF expression in rat hippocampus",
-      "authors": "Dolotov OV et al.",
-      "journal": "J Neurochem. 2006;97(1):82-86.",
-      "pmid": "16515548"
+      "title": "Semax, an analog of ACTH(4-10) with cognitive effects, regulates BDNF and trkB expression in the rat hippocampus.",
+      "authors": "Dolotov OV, Karpenko EA, Inozemtseva LS, et al.",
+      "journal": "Brain research",
+      "pmid": "16996037"
     },
     {
       "title": "Semax in cerebrovascular disease: clinical review",

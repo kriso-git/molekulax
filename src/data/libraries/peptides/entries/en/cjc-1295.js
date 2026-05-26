@@ -57,11 +57,11 @@ export default {
       "tag": "Review",
       "tagColor": "rgba(217,119,6,0.15)",
       "tagText": "#fcd34d",
-      "title": "The Safety and Efficacy of Growth Hormone Secretagogues",
-      "authors": "Sigalos JT, Pastuszak AW.",
+      "title": "The Safety and Efficacy of Growth Hormone Secretagogues.",
+      "authors": "Sigalos JT, Pastuszak AW",
       "journal": "Sexual Medicine Reviews",
       "year": "2018",
-      "pmid": "28666687",
+      "pmid": "28400207",
       "url": "https://pubmed.ncbi.nlm.nih.gov/28666687/",
       "finding": "Comprehensive efficacy and safety review of CJC-1295, ipamorelin and other GHS, side-effect profile and dose ranges."
     }

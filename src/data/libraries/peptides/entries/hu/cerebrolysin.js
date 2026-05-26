@@ -41,11 +41,11 @@ export default {
       "tag": "Kutatás",
       "tagColor": "rgba(74,222,128,0.16)",
       "tagText": "#4ade80",
-      "title": "Cerebrolysin for acute ischaemic stroke: meta-analysis",
-      "authors": "Bornstein NM, Guekht A, Vester J, et al.",
+      "title": "Safety and Efficacy of Cerebrolysin for Neurorecovery After Acute Ischemic Stroke: A Systematic Review and Meta-Analysis of 14 Randomized Controlled Trials.",
+      "authors": "Patel PN, Mangal D, Patel K, et al.",
       "journal": "Stroke",
       "year": "2018",
-      "pmid": "29438083",
+      "pmid": "41018475",
       "url": "https://pubmed.ncbi.nlm.nih.gov/29438083/",
       "finding": "A Cerebrolysin közepes mértékben javítja a neurológiai felépülést iszkémiás stroke után."
     }

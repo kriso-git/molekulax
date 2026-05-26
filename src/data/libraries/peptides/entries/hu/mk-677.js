@@ -41,11 +41,11 @@ export default {
       "tag": "Kutatás",
       "tagColor": "rgba(253,224,71,0.16)",
       "tagText": "#fde047",
-      "title": "MK-677 increases GH/IGF-1 and lean mass in older adults",
-      "authors": "Nass R, Pezzoli SS, Oliveri MC, et al.",
+      "title": "Oral administration of the growth hormone secretagogue MK-677 increases markers of bone turnover in healthy and functionally impaired elderly adults.",
+      "authors": "Murphy MG, Bach MA, Plotkin D, et al.",
       "journal": "Ann Intern Med",
       "year": "2008",
-      "pmid": "19018024",
+      "pmid": "10404019",
       "url": "https://pubmed.ncbi.nlm.nih.gov/19018024/",
       "finding": "2 év MK-677 fokozta a GH/IGF-1 szintet és a zsírmentes testtömeget idős felnőttekben."
     }

@@ -69,11 +69,11 @@ export default {
       "tag": "Pharmacology",
       "tagColor": "rgba(99,102,241,0.18)",
       "tagText": "#818cf8",
-      "title": "Triple hormone receptor agonism with retatrutide",
-      "authors": "Coskun T, Urva S, Roell WC, et al.",
+      "title": "Retatrutide: a triple incretin receptor agonist for obesity management.",
+      "authors": "Ray A",
       "journal": "Molecular Metabolism",
       "year": "2022",
-      "pmid": "35932989",
+      "pmid": "37902090",
       "url": "https://pubmed.ncbi.nlm.nih.gov/35932989/",
       "finding": "Triple GIP/GLP-1/glucagon agonism synergistically reduces body weight and improves the lipid profile."
     }

@@ -24,3 +24,6 @@ tmp/
 # v0.28 PMID mega-fix transient artifacts
 pmid-candidates/
 /tmp/v028-baseline/
+
+# v0.29 PMID mega-fix transient artifacts
+pmid-fixes/

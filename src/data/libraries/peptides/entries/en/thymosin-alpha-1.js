@@ -45,11 +45,11 @@ export default {
       "tag": "Research",
       "tagColor": "rgba(94,234,212,0.16)",
       "tagText": "#5eead4",
-      "title": "Thymosin Alpha-1 in chronic hepatitis B: meta-analysis",
-      "authors": "Wu X, Jia J, You H.",
+      "title": "The clinical efficacy and adverse effects of Entecavir plus Thymosin alpha-1 combination therapy versus Entecavir Monotherapy in HBV-related cirrhosis: a systematic review and meta-analysis.",
+      "authors": "Peng D, Xing HY, Li C, et al.",
       "journal": "J Viral Hepat",
       "year": "2015",
-      "pmid": "25274359",
+      "pmid": "33076834",
       "url": "https://pubmed.ncbi.nlm.nih.gov/25274359/",
       "finding": "Thymosin alpha-1 improves viral load reduction and seroconversion in chronic HBV."
     }
