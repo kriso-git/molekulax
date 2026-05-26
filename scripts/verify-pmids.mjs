@@ -190,14 +190,45 @@ async function main() {
     }
   }
 
-  console.log(`\n${issues.length === 0 ? '✅ All PMIDs verified.' : `❌ ${issues.length} issue(s) found.`}`)
-  if (issues.length > 0) {
-    console.log('\nIssues summary:')
-    for (const i of issues) {
-      console.log(`  ${i.libId}/${i.slug} PMID ${i.pmid} [${i.status}]`)
+  const blocking = issues.filter(i => i.status === 'MISMATCH' || i.status === 'NOT_FOUND')
+  const maybeFp = issues.filter(i => i.status === 'MAYBE_FP_HU' || i.status === 'MAYBE_FP_RU')
+
+  if (issues.length === 0) {
+    console.log('\n✅ All PMIDs verified.')
+  } else {
+    if (blocking.length > 0) {
+      console.log(`\n❌ ${blocking.length} issue(s) found:`)
+      const byStatus = {}
+      for (const i of blocking) {
+        if (!byStatus[i.status]) byStatus[i.status] = []
+        byStatus[i.status].push(i)
+      }
+      for (const status of Object.keys(byStatus)) {
+        console.log(`  ${status} (${byStatus[status].length}):`)
+        for (const i of byStatus[status]) {
+          console.log(`    ${i.libId}/${i.slug} PMID ${i.pmid}`)
+        }
+      }
     }
-    process.exit(1)
+    if (maybeFp.length > 0) {
+      console.log(`\n⚠️  ${maybeFp.length} MAYBE_FP item(s) — manual review:`)
+      const byStatus = {}
+      for (const i of maybeFp) {
+        if (!byStatus[i.status]) byStatus[i.status] = []
+        byStatus[i.status].push(i)
+      }
+      for (const status of Object.keys(byStatus)) {
+        console.log(`  ${status} (${byStatus[status].length}):`)
+        for (const i of byStatus[status]) {
+          const ratioStr = i.ratio != null ? ` (ratio ${(i.ratio * 100).toFixed(0)}%)` : ''
+          console.log(`    ${i.libId}/${i.slug} PMID ${i.pmid}${ratioStr}`)
+        }
+      }
+    }
   }
+
+  const shouldExit1 = blocking.length > 0 || (strictMode && maybeFp.length > 0)
+  if (shouldExit1) process.exit(1)
 }
 
 // Only run when invoked directly (not when imported by tests)
