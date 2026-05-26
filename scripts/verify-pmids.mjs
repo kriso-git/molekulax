@@ -3,10 +3,17 @@
 // (token-overlap heuristic). Flags PMIDs that don't exist, return wrong-paper,
 // or match a paper whose title bears no resemblance to the cited one.
 //
-// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>]
+// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict]
 //
-// Output: per-PMID line with status (OK / MISMATCH / NOT_FOUND / NETWORK_ERR).
-// Exits 1 if any MISMATCH or NOT_FOUND found.
+// Output: per-PMID line with status — OK / MISMATCH / NOT_FOUND / MAYBE_FP_HU /
+// MAYBE_FP_RU / NETWORK_ERR. MAYBE_FP_HU and MAYBE_FP_RU are flagged when the
+// cited title contains Hungarian diacritics ([áéíóöőúüű]) or is fully wrapped
+// in brackets ([Russian-translated]), respectively, and the token-overlap with
+// the real PubMed title falls below the loose threshold (0.10) — these need
+// manual review, not automatic fabrication-rejection.
+//
+// Exits 1 if any MISMATCH or NOT_FOUND found. With --strict, MAYBE_FP_HU/RU
+// also exit 1.
 
 import { readdirSync, existsSync } from 'fs'
 import { resolve, dirname } from 'path'
@@ -19,6 +26,7 @@ const args = process.argv.slice(2)
 const libFilter = args.includes('--lib') ? args[args.indexOf('--lib') + 1] : null
 const entryFilter = args.includes('--entry') ? args[args.indexOf('--entry') + 1] : null
 const suggestMode = args.includes('--suggest')
+const strictMode = args.includes('--strict')
 
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
@@ -38,6 +46,13 @@ function overlapRatio(a, b) {
   let common = 0
   for (const t of ta) if (tb.has(t)) common++
   return common / Math.min(ta.size, tb.size)
+}
+
+export function isHuRuTitle(s) {
+  if (!s || typeof s !== 'string') return null
+  if (/[áéíóöőúüű]/i.test(s)) return 'hu'
+  if (/^\[.+\]$/.test(s.trim())) return 'ru'
+  return null
 }
 
 async function suggestCandidates(citedTitle, excludePmids = []) {
@@ -124,7 +139,7 @@ async function main() {
 
         const result = await lookupPmid(pmid)
         if (result.networkError) {
-          console.log(`  NET ${libId}/${slug}: PMID ${pmid} (${result.error})`)
+          console.log(`  NETWORK_ERR ${libId}/${slug}: PMID ${pmid} (${result.error})`)
           continue
         }
         if (!result.exists) {
@@ -144,8 +159,21 @@ async function main() {
           }
           continue
         }
+        const detectedLang = isHuRuTitle(study.title)
+        const threshold = detectedLang ? 0.10 : 0.25
         const ratio = overlapRatio(study.title, result.title)
-        if (ratio < 0.25) {
+
+        if (ratio >= threshold) {
+          const langTag = detectedLang ? ` [${detectedLang.toUpperCase()}-loose]` : ''
+          console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)${langTag}`)
+        } else if (detectedLang) {
+          const statusTag = detectedLang === 'hu' ? 'MAYBE_FP_HU' : 'MAYBE_FP_RU'
+          console.log(`  ⚠️  ${libId}/${slug}: PMID ${pmid} ${statusTag} (manual review)`)
+          console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
+          console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
+          issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status: statusTag, ratio })
+          // Skip suggest mode on MAYBE_FP — these are not fabrications
+        } else {
           console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} MISMATCH`)
           console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
           console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
@@ -162,8 +190,6 @@ async function main() {
             }
             await new Promise(r => setTimeout(r, 300))
           }
-        } else {
-          console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)`)
         }
         // Rate limit: NCBI requests max 3/sec without API key
         await new Promise(r => setTimeout(r, 400))
@@ -171,17 +197,53 @@ async function main() {
     }
   }
 
-  console.log(`\n${issues.length === 0 ? '✅ All PMIDs verified.' : `❌ ${issues.length} issue(s) found.`}`)
-  if (issues.length > 0) {
-    console.log('\nIssues summary:')
-    for (const i of issues) {
-      console.log(`  ${i.libId}/${i.slug} PMID ${i.pmid} [${i.status}]`)
+  const blocking = issues.filter(i => i.status === 'MISMATCH' || i.status === 'NOT_FOUND')
+  const maybeFp = issues.filter(i => i.status === 'MAYBE_FP_HU' || i.status === 'MAYBE_FP_RU')
+
+  if (issues.length === 0) {
+    console.log('\n✅ All PMIDs verified.')
+  } else {
+    if (blocking.length > 0) {
+      console.log(`\n❌ ${blocking.length} issue(s) found:`)
+      const byStatus = {}
+      for (const i of blocking) {
+        if (!byStatus[i.status]) byStatus[i.status] = []
+        byStatus[i.status].push(i)
+      }
+      for (const status of ['MISMATCH', 'NOT_FOUND']) {
+        if (!byStatus[status]) continue
+        console.log(`  ${status} (${byStatus[status].length}):`)
+        for (const i of byStatus[status]) {
+          console.log(`    ${i.libId}/${i.slug} PMID ${i.pmid}`)
+        }
+      }
     }
-    process.exit(1)
+    if (maybeFp.length > 0) {
+      console.log(`\n⚠️  ${maybeFp.length} MAYBE_FP item(s) — manual review:`)
+      const byStatus = {}
+      for (const i of maybeFp) {
+        if (!byStatus[i.status]) byStatus[i.status] = []
+        byStatus[i.status].push(i)
+      }
+      for (const status of ['MAYBE_FP_HU', 'MAYBE_FP_RU']) {
+        if (!byStatus[status]) continue
+        console.log(`  ${status} (${byStatus[status].length}):`)
+        for (const i of byStatus[status]) {
+          const ratioStr = i.ratio != null ? ` (ratio ${(i.ratio * 100).toFixed(0)}%)` : ''
+          console.log(`    ${i.libId}/${i.slug} PMID ${i.pmid}${ratioStr}`)
+        }
+      }
+    }
   }
+
+  const shouldExit1 = blocking.length > 0 || (strictMode && maybeFp.length > 0)
+  if (shouldExit1) process.exit(1)
 }
 
-main().catch(err => {
-  console.error('Verify failed:', err)
-  process.exit(1)
-})
+// Only run when invoked directly (not when imported by tests)
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch(err => {
+    console.error('Verify failed:', err)
+    process.exit(1)
+  })
+}
