@@ -3,7 +3,7 @@
 // (token-overlap heuristic). Flags PMIDs that don't exist, return wrong-paper,
 // or match a paper whose title bears no resemblance to the cited one.
 //
-// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict]
+// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict] [--batch]
 //
 // Output: per-PMID line with status — OK / MISMATCH / NOT_FOUND / MAYBE_FP_HU /
 // MAYBE_FP_RU / NETWORK_ERR. MAYBE_FP_HU and MAYBE_FP_RU are flagged when the
@@ -11,6 +11,10 @@
 // in brackets ([Russian-translated]), respectively, and the token-overlap with
 // the real PubMed title falls below the loose threshold (0.10) — these need
 // manual review, not automatic fabrication-rejection.
+//
+// --batch: opt-in mode for lib-wide runs. Fetches up to 50 PMIDs per esummary
+// URL with 700ms pause between chunks, ~25-30x faster than per-PMID mode.
+// Default (no flag) keeps per-PMID lookup with 400ms rate-limit (backward-compat).
 //
 // Exits 1 if any MISMATCH or NOT_FOUND found. With --strict, MAYBE_FP_HU/RU
 // also exit 1.
@@ -27,6 +31,7 @@ const libFilter = args.includes('--lib') ? args[args.indexOf('--lib') + 1] : nul
 const entryFilter = args.includes('--entry') ? args[args.indexOf('--entry') + 1] : null
 const suggestMode = args.includes('--suggest')
 const strictMode = args.includes('--strict')
+const batchMode = args.includes('--batch')
 
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
@@ -123,10 +128,44 @@ async function lookupPmid(pmid) {
   }
 }
 
+async function lookupBatched(pmids) {
+  const result = new Map()
+  for (let i = 0; i < pmids.length; i += 50) {
+    const chunk = pmids.slice(i, i + 50)
+    const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${chunk.join(',')}&retmode=json`
+    try {
+      const res = await fetch(url)
+      if (!res.ok) {
+        for (const pmid of chunk) result.set(pmid, { exists: false, error: `HTTP ${res.status}` })
+        continue
+      }
+      const json = await res.json()
+      for (const pmid of chunk) {
+        const rec = json.result?.[pmid]
+        if (!rec || rec.error) {
+          result.set(pmid, { exists: false, error: rec?.error || 'no record' })
+        } else {
+          result.set(pmid, {
+            exists: true,
+            title: rec.title,
+            authors: (rec.authors || []).map(a => a.name).join(', '),
+          })
+        }
+      }
+    } catch (err) {
+      for (const pmid of chunk) result.set(pmid, { networkError: true, error: err.message })
+    }
+    if (i + 50 < pmids.length) await new Promise(r => setTimeout(r, 700))
+  }
+  return result
+}
+
 async function main() {
   const issues = []
-  const seen = new Set() // dedupe PMID+title-pair across HU/EN/PL
+  const seen = new Set()
 
+  // Pass 1: gather all study tuples across libs/entries (always, regardless of mode)
+  const allStudies = []
   for (const libId of LIBRARIES) {
     if (libFilter && libId !== libFilter) continue
     const entriesDir = resolve(repoRoot, 'src/data/libraries', libId, 'entries')
@@ -134,7 +173,6 @@ async function main() {
     const perLang = existsSync(resolve(entriesDir, 'hu'))
     if (!perLang) continue
 
-    // Only check HU (representative — same PMIDs across HU/EN/PL typically)
     const lang = 'hu'
     const langDir = resolve(entriesDir, lang)
     const files = readdirSync(langDir).filter(f => f.endsWith('.js'))
@@ -157,62 +195,74 @@ async function main() {
         const dedupeKey = `${pmid}::${study.title}`
         if (seen.has(dedupeKey)) continue
         seen.add(dedupeKey)
-
-        const result = await lookupPmid(pmid)
-        if (result.networkError) {
-          console.log(`  NETWORK_ERR ${libId}/${slug}: PMID ${pmid} (${result.error})`)
-          continue
-        }
-        if (!result.exists) {
-          console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} NOT_FOUND (cited as "${study.title?.slice(0, 60)}")`)
-          issues.push({ libId, slug, pmid, citedTitle: study.title, status: STATUS.NOT_FOUND })
-          if (suggestMode) {
-            const cands = await suggestCandidates(study.title || '', [pmid])
-            if (cands.length === 0) {
-              console.log(`     candidates: (none)`)
-            } else {
-              console.log(`     candidates:`)
-              for (const c of cands.slice(0, 5)) {
-                console.log(`       PMID ${c.pmid}  ratio ${(c.ratio * 100).toFixed(0)}%  (${c.year}) "${c.title.slice(0, 70)}"`)
-              }
-            }
-            await new Promise(r => setTimeout(r, 300))
-          }
-          continue
-        }
-        const { status, ratio, langTag } = classifyOverlap(study.title, result.title)
-
-        if (status === STATUS.OK) {
-          const tag = langTag ? ` [${langTag.toUpperCase()}-loose]` : ''
-          console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)${tag}`)
-        } else if (status === STATUS.MAYBE_FP_HU || status === STATUS.MAYBE_FP_RU) {
-          console.log(`  ⚠️  ${libId}/${slug}: PMID ${pmid} ${status} (manual review)`)
-          console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
-          console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
-          issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status, ratio })
-          // Skip suggest mode on MAYBE_FP — these are not fabrications
-        } else {
-          console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} MISMATCH`)
-          console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
-          console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
-          issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status: STATUS.MISMATCH })
-          if (suggestMode) {
-            const cands = await suggestCandidates(study.title || '', [pmid])
-            if (cands.length === 0) {
-              console.log(`     candidates: (none)`)
-            } else {
-              console.log(`     candidates:`)
-              for (const c of cands.slice(0, 5)) {
-                console.log(`       PMID ${c.pmid}  ratio ${(c.ratio * 100).toFixed(0)}%  (${c.year}) "${c.title.slice(0, 70)}"`)
-              }
-            }
-            await new Promise(r => setTimeout(r, 300))
-          }
-        }
-        // Rate limit: NCBI requests max 3/sec without API key
-        await new Promise(r => setTimeout(r, 400))
+        allStudies.push({ libId, slug, pmid, study })
       }
     }
+  }
+
+  // Pass 2: lookup + classify
+  let batchMap = null
+  if (batchMode) {
+    const uniquePmids = [...new Set(allStudies.map(s => s.pmid))]
+    console.log(`Batch mode: looking up ${uniquePmids.length} unique PMIDs in ${Math.ceil(uniquePmids.length / 50)} chunk(s)...`)
+    batchMap = await lookupBatched(uniquePmids)
+  }
+
+  for (const { libId, slug, pmid, study } of allStudies) {
+    const result = batchMode ? batchMap.get(pmid) : await lookupPmid(pmid)
+
+    if (result.networkError) {
+      console.log(`  NETWORK_ERR ${libId}/${slug}: PMID ${pmid} (${result.error})`)
+      continue
+    }
+    if (!result.exists) {
+      console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} NOT_FOUND (cited as "${study.title?.slice(0, 60)}")`)
+      issues.push({ libId, slug, pmid, citedTitle: study.title, status: STATUS.NOT_FOUND })
+      if (suggestMode) {
+        const cands = await suggestCandidates(study.title || '', [pmid])
+        if (cands.length === 0) {
+          console.log(`     candidates: (none)`)
+        } else {
+          console.log(`     candidates:`)
+          for (const c of cands.slice(0, 5)) {
+            console.log(`       PMID ${c.pmid}  ratio ${(c.ratio * 100).toFixed(0)}%  (${c.year}) "${c.title.slice(0, 70)}"`)
+          }
+        }
+        await new Promise(r => setTimeout(r, 300))
+      }
+      continue
+    }
+
+    const { status, ratio, langTag } = classifyOverlap(study.title, result.title)
+
+    if (status === STATUS.OK) {
+      const tag = langTag ? ` [${langTag.toUpperCase()}-loose]` : ''
+      console.log(`  ✅ ${libId}/${slug}: PMID ${pmid} OK (overlap ${(ratio * 100).toFixed(0)}%)${tag}`)
+    } else if (status === STATUS.MAYBE_FP_HU || status === STATUS.MAYBE_FP_RU) {
+      console.log(`  ⚠️  ${libId}/${slug}: PMID ${pmid} ${status} (manual review)`)
+      console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
+      console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
+      issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status, ratio })
+    } else {
+      console.log(`  ❌ ${libId}/${slug}: PMID ${pmid} MISMATCH`)
+      console.log(`     cited: "${(study.title || '').slice(0, 80)}"`)
+      console.log(`     real:  "${(result.title || '').slice(0, 80)}"`)
+      issues.push({ libId, slug, pmid, citedTitle: study.title, realTitle: result.title, status: STATUS.MISMATCH })
+      if (suggestMode) {
+        const cands = await suggestCandidates(study.title || '', [pmid])
+        if (cands.length === 0) {
+          console.log(`     candidates: (none)`)
+        } else {
+          console.log(`     candidates:`)
+          for (const c of cands.slice(0, 5)) {
+            console.log(`       PMID ${c.pmid}  ratio ${(c.ratio * 100).toFixed(0)}%  (${c.year}) "${c.title.slice(0, 70)}"`)
+          }
+        }
+        await new Promise(r => setTimeout(r, 300))
+      }
+    }
+    // Rate limit only in per-PMID mode (batch mode already paused between chunks)
+    if (!batchMode) await new Promise(r => setTimeout(r, 400))
   }
 
   const blocking = issues.filter(i => i.status === STATUS.MISMATCH || i.status === STATUS.NOT_FOUND)
