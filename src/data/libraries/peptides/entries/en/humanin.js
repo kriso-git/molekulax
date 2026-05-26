@@ -45,12 +45,12 @@ export default {
       "tag": "Research",
       "tagColor": "rgba(163,230,53,0.16)",
       "tagText": "#a3e635",
-      "title": "Humanin: mitochondrial-derived peptide with neuroprotective and metabolic effects",
-      "authors": "Lee C, Yen K, Cohen P.",
-      "journal": "Trends Endocrinol Metab",
-      "year": "2013",
-      "pmid": "23375520",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/23375520/",
+      "title": "The neuroprotective role of Humanin in Alzheimer's disease: The molecular effects.",
+      "authors": "Alqahtani SM, Al-Kuraishy HM, Al-Gareeb AI, Alexiou A, Fawzy MN",
+      "journal": "Eur J Pharmacol. 2025;998:177510.",
+      "year": "2025",
+      "pmid": "40090538",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40090538/",
       "finding": "Humanin reduces apoptosis and improves insulin sensitivity in preclinical models."
     }
   ]

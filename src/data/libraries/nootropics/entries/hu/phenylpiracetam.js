@@ -90,16 +90,16 @@ export default {
   ],
   "studies": [
     {
-      "title": "Phenotropil in cerebrovascular insufficiency",
-      "authors": "Savchenko AI et al.",
-      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2005;105(12):22-26.",
-      "pmid": "16447598"
+      "title": "[Efficacy of phenotropil in the rehabilitation of stroke patients].",
+      "authors": "Koval'chuk VV, Skoromets AA, Koval'chuk IV, Stoianova EG, Vysotskaia ML",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2010;110(12 Pt 2):38-40.",
+      "pmid": "21626817"
     },
     {
-      "title": "Phenotropil in the treatment of chronic ischemic brain disease",
-      "authors": "Kalinskii PP, Nazarov VV.",
-      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2007;107(2):61-63.",
-      "pmid": "17593821"
+      "title": "[Treatment of asthenic syndrome in patients with chronic brain ischemia: results of the non-interventional observational program TRIUMPH].",
+      "authors": "Fedin AI, Solov'eva EI, Mironova OP, Fedotova AV",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2014;114(12):104-111.",
+      "pmid": "25726789"
     },
     {
       "title": "Pharmacological effects of fonturacetam (Actitropil) and prospects for its clinical use",

@@ -45,12 +45,12 @@ export default {
       "tag": "Badania",
       "tagColor": "rgba(253,164,175,0.16)",
       "tagText": "#fda4af",
-      "title": "Mazdutide in adults with overweight or obesity (GLORY-1)",
-      "authors": "Ji L, Jiang H, An P, et al.",
-      "journal": "NEJM Evidence",
-      "year": "2024",
-      "pmid": "39041741",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39041741/",
+      "title": "Once-Weekly Mazdutide in Chinese Adults with Obesity or Overweight.",
+      "authors": "Ji L, Jiang H, Bi Y, Li H, Tian J",
+      "journal": "N Engl J Med. 2025;392(22):2215-2225.",
+      "year": "2025",
+      "pmid": "40421736",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40421736/",
       "finding": "Mazdutyd 9 mg/tydz. dał 14,4% redukcji masy ciała w 32 tygodnie względem placebo."
     }
   ]

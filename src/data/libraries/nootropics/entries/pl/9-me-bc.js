@@ -95,10 +95,10 @@ export default {
   ],
   "studies": [
     {
-      "title": "9-Me-BC: neurotrophic and antiapoptotic effects on dopaminergic neurons",
-      "authors": "Polanski W et al.",
-      "journal": "J Neural Transm. 2010;117(7):835-846.",
-      "pmid": "20517703"
+      "title": "The exceptional properties of 9-methyl-beta-carboline: stimulation, protection and regeneration of dopaminergic neurons coupled with anti-inflammatory effects.",
+      "authors": "Polanski W, Enzensperger C, Reichmann H, Gille G",
+      "journal": "J Neurochem. 2010;113(6):1659-1675.",
+      "pmid": "20374418"
     },
     {
       "title": "Beta-carbolines as MAO inhibitors: comprehensive review",
@@ -107,10 +107,10 @@ export default {
       "pmid": "16111712"
     },
     {
-      "title": "9-Me-BC induces BDNF and GDNF expression in cultured neurons",
-      "authors": "Hamann J et al.",
-      "journal": "Neurosci Lett. 2008;437(2):151-155.",
-      "pmid": "18434025"
+      "title": "9-Methyl-beta-carboline has restorative effects in an animal model of Parkinson's disease.",
+      "authors": "Wernicke C, Hellmann J, Zieba B, Kuter K, Ossowska K",
+      "journal": "Pharmacol Rep. 2010;62(1):35-53.",
+      "pmid": "20360614"
     },
     {
       "title": "9-Methyl-β-carboline-induced cognitive enhancement, hippocampal dopamine, dendritic proliferation",

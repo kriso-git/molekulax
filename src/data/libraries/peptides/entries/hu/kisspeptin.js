@@ -45,12 +45,12 @@ export default {
       "tag": "Kutatás",
       "tagColor": "rgba(251,207,232,0.16)",
       "tagText": "#fbcfe8",
-      "title": "Kisspeptin restores hypothalamic-pituitary-gonadal function in patients",
-      "authors": "Jayasena CN, Comninos AN, Veldhuis JD, et al.",
-      "journal": "JCEM",
-      "year": "2014",
-      "pmid": "24450286",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/24450286/",
+      "title": "Role of Kisspeptin on Hypothalamic-Pituitary-Gonadal Pathology and Its Effect on Reproduction.",
+      "authors": "Padda J, Khalid K, Moosa A, Syam M, Kakani V",
+      "journal": "Cureus. 2021;13(8):e17600.",
+      "year": "2021",
+      "pmid": "34646652",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34646652/",
       "finding": "A kisspeptin biztonságosan indukálja az LH-pulzusokat hipotalamikus amenorrhoeában."
     }
   ],

@@ -95,10 +95,10 @@ export default {
       "pmid": "20166767"
     },
     {
-      "title": "Efficacy of piracetam in cognitive decline: meta-analysis",
-      "authors": "Flicker L, Grimley Evans G.",
-      "journal": "Cochrane Database Syst Rev. 2001;(2):CD001011.",
-      "pmid": "11405969"
+      "title": "Clinical efficacy of piracetam in cognitive impairment: a meta-analysis.",
+      "authors": "Waegemans T, Wilsher CR, Danniau A, Ferris SH, Kurz A",
+      "journal": "Dement Geriatr Cogn Disord. 2002;13(4):217-24.",
+      "pmid": "12006732"
     },
     {
       "title": "Piracetam for acute ischaemic stroke.",
