@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Klinicznie: 1 mL IM 1–2×/tydz., w odchudzaniu / wsparciu energii. Brak standardu peptydowego.",
   "studies": [
-    {
-      "tag": "Badania",
-      "tagColor": "rgba(253,224,71,0.16)",
-      "tagText": "#fde047",
-      "title": "Lipotropic agents in weight management, narrative review",
-      "authors": "Singh M, Sandhir R, Kiran R.",
-      "journal": "J Obes Metab Syndr",
-      "year": "2020",
-      "pmid": "33093270",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33093270/",
-      "finding": "Kombinacje lipotropowe (metionina/inozytol/cholina) mogą wspierać metabolizm wątroby, ale samodzielny dowód odchudzający jest słaby."
-    }
+    
   ]
 }

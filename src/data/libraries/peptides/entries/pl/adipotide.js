@@ -37,17 +37,6 @@ export default {
   ],
   "dosageInfo": "Faza 1 u ludzi: 0,43 mg/kg/dobę SC przez 4 tygodnie. Ryzyko toksyczności nerek, tylko nadzorowane badania.",
   "studies": [
-    {
-      "tag": "Badania",
-      "tagColor": "rgba(253,186,116,0.16)",
-      "tagText": "#fdba74",
-      "title": "Adipotide induces weight loss in obese rhesus monkeys",
-      "authors": "Barnhart KF, Christianson DR, Hanley PW, et al.",
-      "journal": "Sci Transl Med",
-      "year": "2011",
-      "pmid": "22075637",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/22075637/",
-      "finding": "Adipotide dał 11% redukcji masy ciała u otyłych rezusów w 4 tygodnie."
-    }
+    
   ]
 }

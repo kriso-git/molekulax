@@ -130,12 +130,6 @@ export default {
       "pmid": "20807784"
     },
     {
-      "title": "Biochemistry, physiology, and complications of blood doping: facts and speculation",
-      "authors": "Lippi G, Franchini M, Salvagno GL, Guidi GC.",
-      "journal": "Crit Rev Clin Lab Sci. 2006;43(4):349-91.",
-      "pmid": "16769597"
-    },
-    {
       "title": "Results of the European Survey on Anaemia Management 2003 (ESAM 2003): current status of anaemia management in dialysis patients, factors affecting epoetin dosage and changes in anaemia management over the last 5 years",
       "authors": "Jacobs C, Frei D, Perkins AC.",
       "journal": "Nephrol Dial Transplant. 2005;20 Suppl 3:iii3-24.",

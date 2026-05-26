@@ -52,18 +52,6 @@ export default {
       "pmid": "37782636",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37782636/",
       "finding": "Melatonin normalization, reduced tumor incidence and lifespan extension in animal studies."
-    },
-    {
-      "tag": "Cell biology",
-      "tagColor": "rgba(245,158,11,0.16)",
-      "tagText": "#fbbf24",
-      "title": "Epithalon activates telomerase and increases telomere length in human cells",
-      "authors": "Khavinson VKh, Bondarev IE, Butyugov AA.",
-      "journal": "Bull Exp Biol Med",
-      "year": "2003",
-      "pmid": "12937682",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/12937682/",
-      "finding": "In human fibroblasts Epithalon treatment increased telomere length by 33% and cells divided 10 generations longer than controls."
     }
   ],
   "anecdote": "Epithalon is not acutely felt — its effects are subtle and gradual. Anecdotal accounts from multiple users describe slightly improved sleep onset (time to fall asleep) and deeper rest, both consistently noted as positive. Over time, recovery feels improved (placebo cannot be ruled out), and sleep becomes more consistent day-to-day after roughly four weeks of pre-bed dosing. DSIP is often considered a more reliable first-line sleep peptide, with Epithalon serving as a secondary option. It is well-suited for users needing background circadian-rhythm support.\n\nEpithalon is typically administered in short cycles (several days to weeks) via subcutaneous injection. It is most often dosed before bed, as users tend to feel sleepy following administration."

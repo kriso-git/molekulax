@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Badania: 1–3 mg SC dziennie, cykl 10–20 dni.",
   "studies": [
-    {
-      "tag": "Badania",
-      "tagColor": "rgba(252,211,77,0.16)",
-      "tagText": "#fcd34d",
-      "title": "Pinealon: neuroprotective effects in oxidative stress",
-      "authors": "Khavinson VKh, Kuznik BI, Tarnovskaya SI, et al.",
-      "journal": "Bull Exp Biol Med",
-      "year": "2014",
-      "pmid": "25023411",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/25023411/",
-      "finding": "Pinealon zmniejsza stres oksydacyjny i wspiera funkcje poznawcze w modelach starzenia."
-    }
+    
   ]
 }

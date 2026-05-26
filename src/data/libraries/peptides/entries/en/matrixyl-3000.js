@@ -37,17 +37,6 @@ export default {
   ],
   "dosageInfo": "Topical serum: 3–8% Matrixyl 3000 twice daily.",
   "studies": [
-    {
-      "tag": "Research",
-      "tagColor": "rgba(251,207,232,0.16)",
-      "tagText": "#fbcfe8",
-      "title": "Matrikine peptides reduce skin wrinkles and improve elasticity",
-      "authors": "Robinson LR, Fitzgerald NC, Doughty DG, et al.",
-      "journal": "Int J Cosmet Sci",
-      "year": "2005",
-      "pmid": "18492210",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/18492210/",
-      "finding": "Matrikine peptides significantly reduce deep wrinkles over 2–4 months."
-    }
+    
   ]
 }

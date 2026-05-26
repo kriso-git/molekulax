@@ -94,33 +94,15 @@ export default {
   ],
   "studies": [
     {
-      "title": "Bromantane in asthenic disorders: clinical trial",
-      "authors": "Voznesenskaia TG et al.",
-      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2007;107(4):27-32.",
-      "pmid": "17539276"
-    },
-    {
-      "title": "Ladasten (Bromantane): pharmacological profile review",
-      "authors": "Mirzoian RS et al.",
-      "journal": "Eksp Klin Farmakol. 2009;72(1):3-7.",
-      "pmid": "19374118"
-    },
-    {
-      "title": "Bromantane: novel actoprotector with neuroprotective profile",
-      "authors": "Morozov IS et al.",
-      "journal": "Eksp Klin Farmakol. 2001;64(2):3-9.",
-      "pmid": "11548438"
-    },
-    {
-      "title": "Bromantane mechanism: nACh, mACh, and arecoline receptor interactions",
-      "authors": "Tomilin VA et al.",
-      "journal": "Eksp Klin Farmakol. 1999;62(2):3-7.",
+      "title": "[The mechanisms of the neurotropic action of bromantan].",
+      "authors": "Morozov IS, Pukhova GS, Avdulov NA, Sergeeva SA, Lukicheva TA, Kashtanov SI",
+      "journal": "Eksp Klin Farmakol. 1999;62(1):11-14.",
       "pmid": "10198757"
     },
     {
-      "title": "Bromantane: serotonin reuptake modulation and anxiolytic effects",
-      "authors": "Vakhitova IuV et al.",
-      "journal": "Eksp Klin Farmakol. 2009;72(6):3-7.",
+      "title": "[Role of the brain dopaminergic and serotoninergic systems in psychopharmacological effects of ladasten and sydnocarb].",
+      "authors": "Zimin IA, Abaimov DA, Budygin EA, Zolotarev IuA, Kovalev GI",
+      "journal": "Eksp Klin Farmakol. 2010;73(2):2-5.",
       "pmid": "20369592"
     }
   ],

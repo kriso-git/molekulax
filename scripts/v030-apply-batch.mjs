@@ -13,7 +13,7 @@ const repoRoot = resolve(__dirname, '..')
 const lib = process.argv[2]
 const phase = process.argv[3]
 const dryRun = process.argv.includes('--dry-run')
-if (!lib || !phase || !['peptides', 'nootropics'].includes(lib) || !['A', 'B', 'C'].includes(phase)) {
+if (!lib || !phase || !['peptides', 'nootropics'].includes(lib) || !['A', 'B', 'C', 'D'].includes(phase)) {
   console.error('Usage: node scripts/v029-apply-batch.mjs <peptides|nootropics> <A|B|C> [--dry-run]')
   process.exit(2)
 }

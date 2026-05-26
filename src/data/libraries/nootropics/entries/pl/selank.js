@@ -94,27 +94,9 @@ export default {
       "pmid": "18454096"
     },
     {
-      "title": "Selank effect on cognitive function in generalized anxiety disorder",
-      "authors": "Zozulia AA et al.",
-      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2008;108(4):38-48.",
-      "pmid": "18454141"
-    },
-    {
       "title": "A comparison of the anxiolytic effect and tolerability of selank and phenazepam in the treatment of anxiety disorders.",
       "authors": "Medvedev VE, Tereshchenko ON, Israelian AIu, et al.",
       "journal": "Zhurnal nevrologii i psikhiatrii imeni S.S. Korsakova",
-      "pmid": "25176261"
-    },
-    {
-      "title": "Anxiolytic efficacy of Selank in patients with generalized anxiety disorder",
-      "authors": "Zozulia AA et al.",
-      "journal": "Eksp Klin Farmakol. 2008;71(2):24-29.",
-      "pmid": "18454096"
-    },
-    {
-      "title": "Selank quality-of-life improvement in GAD vs Phenazepam",
-      "authors": "Medvedev VE et al.",
-      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2014;114(7):17-22.",
       "pmid": "25176261"
     }
   ],

@@ -97,7 +97,7 @@ export default {
     {
       "title": "Clinical efficacy of piracetam in cognitive impairment: a meta-analysis.",
       "authors": "Waegemans T, Wilsher CR, Danniau A, Ferris SH, Kurz A",
-      "journal": "Dement Geriatr Cogn Disord. 2002;13(4):217-24.",
+      "journal": "Dement Geriatr Cogn Disord. 2002;13(4):217-224.",
       "pmid": "12006732"
     },
     {

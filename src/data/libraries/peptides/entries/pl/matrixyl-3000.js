@@ -37,17 +37,6 @@ export default {
   ],
   "dosageInfo": "Topiczne serum: 3–8% Matrixyl 3000 2×/dobę.",
   "studies": [
-    {
-      "tag": "Badania",
-      "tagColor": "rgba(251,207,232,0.16)",
-      "tagText": "#fbcfe8",
-      "title": "Matrikine peptides reduce skin wrinkles and improve elasticity",
-      "authors": "Robinson LR, Fitzgerald NC, Doughty DG, et al.",
-      "journal": "Int J Cosmet Sci",
-      "year": "2005",
-      "pmid": "18492210",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/18492210/",
-      "finding": "Peptydy matrikinowe istotnie zmniejszają głębokie zmarszczki w 2–4 miesiące."
-    }
+    
   ]
 }

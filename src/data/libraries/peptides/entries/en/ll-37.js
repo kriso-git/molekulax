@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Research: topical 0.15–0.5 mg/mL gel/solution; SC doses experimental.",
   "studies": [
-    {
-      "tag": "Research",
-      "tagColor": "rgba(248,113,113,0.16)",
-      "tagText": "#f87171",
-      "title": "LL-37 promotes wound healing through cell migration and angiogenesis",
-      "authors": "Heilborn JD, Nilsson MF, Kratz G, et al.",
-      "journal": "J Invest Dermatol",
-      "year": "2003",
-      "pmid": "12592095",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/12592095/",
-      "finding": "LL-37 accelerates wound closure via keratinocyte migration and angiogenesis."
-    }
+    
   ]
 }

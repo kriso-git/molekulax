@@ -101,12 +101,6 @@ export default {
       "pmid": "20374418"
     },
     {
-      "title": "Beta-carbolines as MAO inhibitors: comprehensive review",
-      "authors": "Herraiz T, Chaparro C.",
-      "journal": "Life Sci. 2005;78(8):795-802.",
-      "pmid": "16111712"
-    },
-    {
       "title": "9-Methyl-beta-carboline has restorative effects in an animal model of Parkinson's disease.",
       "authors": "Wernicke C, Hellmann J, Zieba B, Kuter K, Ossowska K",
       "journal": "Pharmacol Rep. 2010;62(1):35-53.",
@@ -123,12 +117,6 @@ export default {
       "authors": "Hamann J et al.",
       "journal": "J Neural Transm. 2008;115(6):909-921.",
       "pmid": "17913302"
-    },
-    {
-      "title": "Beta-carbolines as endogenous phototoxic photosensitizers in skin",
-      "authors": "Herraiz T et al.",
-      "journal": "Photochem Photobiol. 2013;89(5):1116-1126.",
-      "pmid": "23842892"
     }
   ],
   "faq": [

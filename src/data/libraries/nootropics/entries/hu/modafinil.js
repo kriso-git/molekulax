@@ -113,9 +113,9 @@ export default {
       "pmid": "10720292"
     },
     {
-      "title": "Modafinil increases extracellular dopamine in human brain via DAT inhibition",
-      "authors": "Volkow ND et al.",
-      "journal": "JAMA. 2009;301(11):1148-1154.",
+      "title": "Mechanisms of modafinil: A review of current research.",
+      "authors": "Gerrard P, Malcolm R",
+      "journal": "Neuropsychiatr Dis Treat. 2007;3(3):349-64.",
       "pmid": "19300566"
     },
     {

@@ -41,18 +41,7 @@ export default {
   ],
   "dosageInfo": "Kutatási: 100–300 µg SC lefekvés előtt, 5–10 napos ciklusban.",
   "studies": [
-    {
-      "tag": "Kutatás",
-      "tagColor": "rgba(147,197,253,0.16)",
-      "tagText": "#93c5fd",
-      "title": "DSIP: anxiolytic and stress-protective effects",
-      "authors": "Sudakov KV, Ivanov VT, Koplik EV, et al.",
-      "journal": "Neurosci Behav Physiol",
-      "year": "1995",
-      "pmid": "7791904",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/7791904/",
-      "finding": "A DSIP csökkenti a stresszreakciókat és javítja a kognitív teljesítményt szorongásos modellekben."
-    }
+    
   ],
   "anecdote": "A DSIP egy találó vagy nem-találó peptid. Sok felhasználó számára működik, de nem mindenkinek, és hatásai finomak. Ahelyett, hogy \"kiütné\" a felhasználókat, inkább gyengéden javítja az alvás mélységét és csökkenti az éjszakai felébredéseket. Egyes felhasználók a CBN-t hatékonyabbnak találják a DSIP-nél. A DSIP segíthet az éjszakai kortizol-csúcsok tompításában is, bár ez változó. Inkább szabályozó, mint szedatív, potenciálisan az alvás-architektúrát támogatja, nem csak alvást indukál. Korlátozott bizonyítékok arra utalnak, hogy segíthet az éjszakai növekedési hormon termelés növelésében.\n\nA DSIP szubkután vagy intranazálisan adható. Erősen egyén-függő, és az eredmények jelentősen változnak."
 }

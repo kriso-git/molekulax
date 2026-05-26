@@ -52,18 +52,6 @@ export default {
       "pmid": "37782636",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37782636/",
       "finding": "Melatonin normalizálás, daganatincidencia csökkentés és élettartam-növelés állatkísérletekben."
-    },
-    {
-      "tag": "Sejtbiológia",
-      "tagColor": "rgba(245,158,11,0.16)",
-      "tagText": "#fbbf24",
-      "title": "Epithalon activates telomerase and increases telomere length in human cells",
-      "authors": "Khavinson VKh, Bondarev IE, Butyugov AA.",
-      "journal": "Bull Exp Biol Med",
-      "year": "2003",
-      "pmid": "12937682",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/12937682/",
-      "finding": "Humán fibroblasztokon Epithalon kezelésre 33%-kal nőtt a telomerhossz, és a sejtek 10 generációval tovább osztódtak a kontrollhoz képest."
     }
   ],
   "anecdote": "Az Epitalont nem akutan érzékelik — hatásai finomak és fokozatosak. Több felhasználó anekdotikus beszámolója szerint az alvás kezdete (elalvási idő) kissé javul, és a pihenés mélyebbé válik, mindkettő következetesen pozitívnak minősítve. Idővel a regeneráció javulónak tűnik (a placebo nem zárható ki), és az alvás napról napra konzisztensebbé válik körülbelül négy hét lefekvés előtti adagolás után. A DSIP-t gyakran megbízhatóbb első vonalbeli alvás-peptidnek tartják, az Epitalon másodlagos opcióként. Jól megfelel a háttér-cirkadián ritmus támogatást igénylő felhasználóknak.\n\nAz Epitalont jellemzően rövid ciklusokban (néhány naptól hetekig) szubkután injekció formájában adják be. Leggyakrabban lefekvés előtt adagolják."

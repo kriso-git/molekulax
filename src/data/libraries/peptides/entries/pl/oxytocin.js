@@ -41,18 +41,7 @@ export default {
   ],
   "dosageInfo": "Badania IN: 24–40 IU w wskazaniach społecznych/psych.",
   "studies": [
-    {
-      "tag": "Badania",
-      "tagColor": "rgba(253,164,175,0.16)",
-      "tagText": "#fda4af",
-      "title": "Intranasal oxytocin: neural and behavioural effects",
-      "authors": "Quintana DS, Smerud KT, Andreassen OA, et al.",
-      "journal": "Mol Psychiatry",
-      "year": "2018",
-      "pmid": "28925369",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28925369/",
-      "finding": "Donosowa oksytocyna moduluje poznanie społeczne i przetwarzanie emocji."
-    }
+    
   ],
   "anecdote": "Wielu użytkowników opisuje Oksytocynę jako sprawiającą, że interakcje społeczne wydają się bardziej naturalne i mniej wymuszone — niemal jak bycie bardziej zsynchronizowanym z innymi — choć intensywność efektu znacznie różni się między jednostkami. Raporty anegdotyczne opisują zmniejszone \"tarcia społeczne\" i poprawioną zdolność do tworzenia więzi. Związek wydaje się wzmacniać aktualny kontekst emocjonalny. Tolerancja może narastać przy częstym stosowaniu.\n\nOksytocynę można podawać podskórnie, ale ogólnie preferowane jest podawanie donosowe, ponieważ badania sugerują lepszą penetrację bariery krew-mózg drogą donosową. Efekty są stosunkowo krótkotrwałe."
 }

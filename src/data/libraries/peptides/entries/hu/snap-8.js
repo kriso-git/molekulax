@@ -41,17 +41,6 @@ export default {
   ],
   "dosageInfo": "Kozmetikai krém/szérum: 5–10% SNAP-8 koncentráció topikálisan naponta 1–2×.",
   "studies": [
-    {
-      "tag": "Kutatás",
-      "tagColor": "rgba(253,164,175,0.16)",
-      "tagText": "#fda4af",
-      "title": "Acetyl octapeptide-3 reduces expression wrinkles topically",
-      "authors": "Wang Y, Wang M, Xiao S, et al.",
-      "journal": "J Cosmet Dermatol",
-      "year": "2013",
-      "pmid": "23981350",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/23981350/",
-      "finding": "A SNAP-8 topikálisan szignifikánsan csökkentette a homlokráncokat 28 nap után."
-    }
+    
   ]
 }

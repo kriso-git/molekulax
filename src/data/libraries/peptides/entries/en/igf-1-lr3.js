@@ -41,18 +41,7 @@ export default {
   ],
   "dosageInfo": "Research: 20–80 µg SC, daily or around training. High doses risk hypoglycaemia.",
   "studies": [
-    {
-      "tag": "Research",
-      "tagColor": "rgba(251,191,36,0.16)",
-      "tagText": "#fbbf24",
-      "title": "IGF-1 LR3 pharmacology and bioactivity",
-      "authors": "Tomas FM, Knowles SE, Owens PC, et al.",
-      "journal": "Biochem J",
-      "year": "1991",
-      "pmid": "1747094",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/1747094/",
-      "finding": "IGF-1 LR3 shows greater anabolic potency than native IGF-1 due to reduced IGFBP binding."
-    }
+    
   ],
   "anecdote": "IGF-1 LR3 is widely discussed but considered relatively weak compared to Tesamorelin or HGH in many user reports, though it has specific use cases. LR3 binds less to IGF-binding proteins and shows reduced hepatic sequestration compared to native IGF-1, allowing more systemic activity. Metabolically, it overlaps with insulin signaling, so glucose levels can drop — producing muscle fullness in some users but also potential hypoglycemia symptoms. The growth pathways it activates (Akt/mTOR, Erk) are fundamental cell-growth signals, not muscle-selective, so long-term use warrants caution. Compared to IGF-1 DES, LR3 functions as a sustained systemic growth signal rather than a targeted one. Opinions in the community are mixed: useful for some, considered ineffective by others.\n\nDosing varies and is usually small. LR3 has a substantially longer duration than native IGF-1 due to reduced protein-binding affinity. Starting low and assessing response is recommended."
 }
