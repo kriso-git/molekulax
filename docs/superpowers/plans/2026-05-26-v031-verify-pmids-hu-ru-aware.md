@@ -331,10 +331,12 @@ We'll use `peptides/retatrutide` (we know its PMIDs and can restore from git aft
 
 Pick PMID `37902090` (Jastreboff retatrutide phase 2 trial). Its real title contains "Retatrutide ... in Obesity".
 
-Edit `src/data/libraries/peptides/entries/hu/retatrutide.js` and locate the studies[] entry with PMID `37902090`. Change its `title` field to a HU-translated cited title:
+Edit `src/data/libraries/peptides/entries/hu/retatrutide.js` and locate the studies[] entry with PMID `37902090`. Change its `title` field to a HU-translated cited title.
+
+**IMPORTANT:** Choose a title that does NOT share the drug name with the real PubMed title — otherwise token-overlap rises above the 10% loose-threshold (`retatrutide` alone gives ~33% overlap) and the title passes as `[HU-loose]` OK instead of triggering `MAYBE_FP_HU`. Use a drug-name-free paraphrase:
 
 ```js
-title: "Retatrutide hatása elhízásban — fázis 2 vizsgálat",
+title: "Háromszoros inkretinreceptor-agonista elhízás kezelésére: metabolikus hatások összefoglalása",
 ```
 
 - [ ] **Step 2: Run verify in non-strict mode — expect MAYBE_FP_HU, exit 0**
@@ -361,10 +363,10 @@ Expected output ends with `EXIT_CODE=1`. The MAYBE_FP_HU now blocks because of `
 
 - [ ] **Step 4: Run on Russian-bracketed fixture**
 
-Edit the same entry — change PMID `37902090` title to:
+Edit the same entry — change PMID `37902090` title to a drug-name-free transliteration so token-overlap stays below the 10% loose-threshold:
 
 ```js
-title: "[Retatrutide effects on obesity — phase 2 trial]",
+title: "[Trojnoi inkretinagonist dlya lecheniya ozhireniya: metabolicheskie effekty i klinicheskie rezultaty]",
 ```
 
 Run: `node scripts/verify-pmids.mjs --lib peptides --entry retatrutide && echo "EXIT_OK"`
