@@ -103,10 +103,10 @@ export default {
       "pmid": "16996037"
     },
     {
-      "title": "Semax in cerebrovascular disease: clinical review",
-      "authors": "Shchepankin AI et al.",
-      "journal": "Eksp Klin Farmakol. 2004;67(3):69-75.",
-      "pmid": "15293774"
+      "title": "[Semax in prevention of disease progress and development of exacerbations in patients with cerebrovascular insufficiency].",
+      "authors": "Gusev EI, Skvortsova VI, Chukanova EI",
+      "journal": "Zh Nevrol Psikhiatr Im S S Korsakova. 2005;105(2):35-40.",
+      "pmid": "15792140"
     },
     {
       "title": "Effectiveness of Semax in acute period of hemispheric ischemic stroke (12-18 mg dose)",

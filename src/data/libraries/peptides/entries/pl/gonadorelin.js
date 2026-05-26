@@ -45,12 +45,12 @@ export default {
       "tag": "Badania",
       "tagColor": "rgba(250,204,21,0.16)",
       "tagText": "#facc15",
-      "title": "Pulsatile GnRH therapy for hypogonadotropic hypogonadism",
-      "authors": "Crowley WF Jr, Filicori M, Spratt DI, et al.",
-      "journal": "Endocr Rev",
-      "year": "1985",
-      "pmid": "3935474",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/3935474/",
+      "title": "Therapeutic effects of a pulsatile GnRH pump on adult male patients with congenital hypogonadotropic hypogonadism (CHH): a retrospective study.",
+      "authors": "Jiang H, Li BJ, Jin DC, Zhong QL, Zhu T",
+      "journal": "Transl Androl Urol. 2025;14(7):2043-2058.",
+      "year": "2025",
+      "pmid": "40800099",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40800099/",
       "finding": "Pulsacyjny GnRH przywraca wydzielanie LH/FSH w hipogonadyzmie hipogonadotropowym."
     }
   ]

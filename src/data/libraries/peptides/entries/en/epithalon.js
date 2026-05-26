@@ -45,12 +45,12 @@ export default {
       "tag": "Aging research",
       "tagColor": "rgba(161,98,7,0.15)",
       "tagText": "#fde68a",
-      "title": "Peptide bioregulation of aging: results and prospects",
-      "authors": "Anisimov VN, Khavinson VK.",
-      "journal": "Biogerontology",
-      "year": "2010",
-      "pmid": "19823771",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/19823771/",
+      "title": "[KE peptide regulates SIRT1, PARP1, PARP2 gene expression and protein synthesis in human mesenchymal stem cells aging.].",
+      "authors": "Khavinson VK, Linkova NS, Ashapkin VV, Shilovsky GA, Borushko NV",
+      "journal": "Adv Gerontol. 2023;36(3):302-312.",
+      "year": "2023",
+      "pmid": "37782636",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37782636/",
       "finding": "Melatonin normalization, reduced tumor incidence and lifespan extension in animal studies."
     },
     {

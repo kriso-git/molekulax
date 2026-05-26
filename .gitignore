@@ -27,3 +27,8 @@ pmid-candidates/
 
 # v0.29 PMID mega-fix transient artifacts
 pmid-fixes/
+
+v030-resolve-output.json
+v030-resolve-round2.json
+pmid-fixes/
+

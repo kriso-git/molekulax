@@ -84,12 +84,12 @@ export default {
       "tag": "TB-500 angiogeneza",
       "tagColor": "rgba(99,102,241,0.18)",
       "tagText": "#818cf8",
-      "title": "Thymosin beta4 induces angiogenesis through Notch signaling in endothelial cells",
-      "authors": "Lv S, Cheng G, Zhou Y, Xu G.",
-      "journal": "Mol Cell Biochem",
-      "year": "2013",
-      "pmid": "23749167",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/23749167/",
+      "title": "Thymosin-β 4 induces angiogenesis in critical limb ischemia mice via regulating Notch/NF-κB pathway.",
+      "authors": "Lv S, Cai H, Xu Y, Dai J, Rong X",
+      "journal": "Int J Mol Med. 2020;46(4):1347-1358.",
+      "year": "2020",
+      "pmid": "32945357",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32945357/",
       "finding": "Tymozyna β4 (cząsteczka źródłowa dla TB-500) indukuje tworzenie naczyń przez sygnalizację Notch w komórkach śródbłonka. Brak dowodów na poziomie stack-u GLOW."
     }
   ],

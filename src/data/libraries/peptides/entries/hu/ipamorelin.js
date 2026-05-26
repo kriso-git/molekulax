@@ -57,12 +57,12 @@ export default {
       "tag": "Áttekintés",
       "tagColor": "rgba(99,102,241,0.18)",
       "tagText": "#818cf8",
-      "title": "The Safety and Efficacy of Growth Hormone Secretagogues",
-      "authors": "Sigalos JT, Pastuszak AW.",
-      "journal": "Sexual Medicine Reviews",
+      "title": "The Safety and Efficacy of Growth Hormone Secretagogues.",
+      "authors": "Sigalos JT, Pastuszak AW",
+      "journal": "Sex Med Rev. 2018;6(1):45-53.",
       "year": "2018",
-      "pmid": "28666687",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/28666687/",
+      "pmid": "28400207",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28400207/",
       "finding": "Az ipamorelin és társ GHS vegyületek hatékonyságának és biztonsági profiljának áttekintése klinikai adatok alapján."
     }
   ]

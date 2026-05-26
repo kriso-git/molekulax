@@ -45,12 +45,12 @@ export default {
       "tag": "Badania",
       "tagColor": "rgba(196,181,253,0.16)",
       "tagText": "#c4b5fd",
-      "title": "GHRP-6 stimulates growth hormone secretion in humans",
-      "authors": "Bowers CY, Reynolds GA, Durham D, et al.",
-      "journal": "JCEM",
-      "year": "1990",
-      "pmid": "2229298",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/2229298/",
+      "title": "Growth hormone-releasing peptide (GHRP).",
+      "authors": "Bowers CY",
+      "journal": "Cell Mol Life Sci. 1998;54(12):1316-1329.",
+      "year": "1998",
+      "pmid": "9893708",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9893708/",
       "finding": "GHRP-6 silnie pobudza wydzielanie GH u zdrowych mężczyzn; rośnie też apetyt i motoryka żołądka."
     }
   ]
