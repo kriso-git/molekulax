@@ -19,6 +19,7 @@ const args = process.argv.slice(2)
 const libFilter = args.includes('--lib') ? args[args.indexOf('--lib') + 1] : null
 const entryFilter = args.includes('--entry') ? args[args.indexOf('--entry') + 1] : null
 const suggestMode = args.includes('--suggest')
+const strictMode = args.includes('--strict')
 
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
