@@ -3,7 +3,7 @@
 // (token-overlap heuristic). Flags PMIDs that don't exist, return wrong-paper,
 // or match a paper whose title bears no resemblance to the cited one.
 //
-// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict] [--batch] [--ci]
+// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--lang <hu|en|pl>] [--suggest] [--strict] [--batch] [--ci]
 //
 // Output: per-PMID line with status — OK / MISMATCH / NOT_FOUND / MAYBE_FP_HU /
 // MAYBE_FP_RU / NETWORK_ERR. MAYBE_FP_HU and MAYBE_FP_RU are flagged when the
@@ -35,9 +35,18 @@ const suggestMode = args.includes('--suggest')
 const strictMode = args.includes('--strict')
 const batchMode = args.includes('--batch')
 const ciMode = args.includes('--ci')
+const langArg = args.includes('--lang') ? args[args.indexOf('--lang') + 1] : 'hu'
 
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
+if (args.includes('--lang') && (langArg === undefined || langArg.startsWith('--'))) {
+  console.error(`--lang requires a value: ${langs.join(', ')}`)
+  process.exit(1)
+}
+if (!langs.includes(langArg)) {
+  console.error(`Invalid --lang "${langArg}". Expected one of: ${langs.join(', ')}`)
+  process.exit(1)
+}
 
 export const STATUS = Object.freeze({
   OK: 'OK',
@@ -209,8 +218,9 @@ async function main() {
     const perLang = existsSync(resolve(entriesDir, 'hu'))
     if (!perLang) continue
 
-    const lang = 'hu'
+    const lang = langArg
     const langDir = resolve(entriesDir, lang)
+    if (!existsSync(langDir)) continue
     const files = readdirSync(langDir).filter(f => f.endsWith('.js'))
 
     for (const file of files) {

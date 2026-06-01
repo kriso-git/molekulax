@@ -16,7 +16,9 @@
     "pipeline:apply": "node scripts/data-pipeline/apply-patches.mjs",
     "convert-images": "node scripts/convert-images.mjs",
     "prepare": "husky",
-    "verify:staged": "node scripts/verify-staged-entries.mjs"
+    "verify:staged": "node scripts/verify-staged-entries.mjs",
+    "verify:consistency": "node scripts/verify-lang-consistency.mjs",
+    "test": "node --test scripts/test/"
   },
   "dependencies": {
     "framer-motion": "^11.18.2",
