@@ -45,6 +45,13 @@ export const STATUS = Object.freeze({
   NETWORK_ERR: 'NETWORK_ERR',
 })
 
+// E1: append the NCBI API key (if NCBI_API_KEY env is set) to an eutils URL.
+// Raises the rate limit 3→10 req/s. No env → url unchanged (graceful degrade).
+export function withApiKey(url) {
+  const key = process.env.NCBI_API_KEY
+  return key ? `${url}&api_key=${encodeURIComponent(key)}` : url
+}
+
 function normalize(s) {
   let str = (s || '')
   // S4: strip RU-bracket wrapper before tokenization, so '[Russian title]'
@@ -95,14 +102,14 @@ async function suggestCandidates(citedTitle, excludePmids = []) {
   const query = encodeURIComponent(ts.slice(0, 8).join(' '))
   const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${query}&retmax=8&retmode=json`
   try {
-    const res = await fetch(url)
+    const res = await fetch(withApiKey(url))
     if (!res.ok) return []
     const json = await res.json()
     const pmids = (json.esearchresult?.idlist || []).filter(p => !excludePmids.includes(p))
     if (pmids.length === 0) return []
     await new Promise(r => setTimeout(r, 200))
     const sumUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${pmids.join(',')}&retmode=json`
-    const sumRes = await fetch(sumUrl)
+    const sumRes = await fetch(withApiKey(sumUrl))
     if (!sumRes.ok) return []
     const sumJson = await sumRes.json()
     const results = []
@@ -124,7 +131,7 @@ async function suggestCandidates(citedTitle, excludePmids = []) {
 async function lookupPmid(pmid) {
   const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${pmid}&retmode=json`
   try {
-    const res = await fetch(url)
+    const res = await fetch(withApiKey(url))
     if (!res.ok) return { exists: false, error: `HTTP ${res.status}` }
     const json = await res.json()
     const rec = json.result?.[pmid]
@@ -141,7 +148,7 @@ async function lookupBatched(pmids) {
     const chunk = pmids.slice(i, i + 50)
     const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${chunk.join(',')}&retmode=json`
     try {
-      const res = await fetch(url)
+      const res = await fetch(withApiKey(url))
       if (!res.ok) {
         for (const pmid of chunk) result.set(pmid, { exists: false, error: `HTTP ${res.status}` })
       } else {
