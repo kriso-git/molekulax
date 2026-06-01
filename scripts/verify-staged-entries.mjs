@@ -1,5 +1,5 @@
-// Pre-commit gate: runs verify-pmids on staged entry-data files.
-// Triggered by .husky/pre-commit. Exits 1 on any PMID failure → commit aborted.
+// Pre-commit gate: (1) offline cross-lang drift check, (2) verify-pmids on staged entry-data files.
+// Triggered by .husky/pre-commit. Exits 1 on drift or PMID failure → commit aborted.
 // Bypass via `git commit --no-verify`.
 
 import { execSync, spawnSync } from 'node:child_process'
