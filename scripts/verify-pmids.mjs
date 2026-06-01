@@ -39,6 +39,10 @@ const langArg = args.includes('--lang') ? args[args.indexOf('--lang') + 1] : 'hu
 
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
+if (args.includes('--lang') && (langArg === undefined || langArg.startsWith('--'))) {
+  console.error(`--lang requires a value: ${langs.join(', ')}`)
+  process.exit(1)
+}
 if (!langs.includes(langArg)) {
   console.error(`Invalid --lang "${langArg}". Expected one of: ${langs.join(', ')}`)
   process.exit(1)
@@ -216,6 +220,7 @@ async function main() {
 
     const lang = langArg
     const langDir = resolve(entriesDir, lang)
+    if (!existsSync(langDir)) continue
     const files = readdirSync(langDir).filter(f => f.endsWith('.js'))
 
     for (const file of files) {
