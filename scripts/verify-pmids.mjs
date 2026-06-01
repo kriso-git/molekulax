@@ -3,7 +3,7 @@
 // (token-overlap heuristic). Flags PMIDs that don't exist, return wrong-paper,
 // or match a paper whose title bears no resemblance to the cited one.
 //
-// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict] [--batch]
+// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict] [--batch] [--ci]
 //
 // Output: per-PMID line with status — OK / MISMATCH / NOT_FOUND / MAYBE_FP_HU /
 // MAYBE_FP_RU / NETWORK_ERR. MAYBE_FP_HU and MAYBE_FP_RU are flagged when the
@@ -15,9 +15,11 @@
 // --batch: opt-in mode for lib-wide runs. Fetches up to 50 PMIDs per esummary
 // URL with 700ms pause between chunks, ~25-30x faster than per-PMID mode.
 // Default (no flag) keeps per-PMID lookup with 400ms rate-limit (backward-compat).
+// --ci: CI mode. Exits 2 (not 0) when transient network errors leave PMIDs
+// unverified, so the workflow can retry. Real MISMATCH/NOT_FOUND still exit 1.
 //
-// Exits 1 if any MISMATCH or NOT_FOUND found. With --strict, MAYBE_FP_HU/RU
-// also exit 1.
+// Exit codes: 0 = clean; 1 = MISMATCH/NOT_FOUND (and MAYBE_FP_HU/RU under --strict);
+// 2 = transient network errors left PMIDs unverified under --ci (retry signal).
 
 import { readdirSync, existsSync } from 'fs'
 import { resolve, dirname } from 'path'
@@ -32,6 +34,7 @@ const entryFilter = args.includes('--entry') ? args[args.indexOf('--entry') + 1]
 const suggestMode = args.includes('--suggest')
 const strictMode = args.includes('--strict')
 const batchMode = args.includes('--batch')
+const ciMode = args.includes('--ci')
 
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
@@ -44,6 +47,28 @@ export const STATUS = Object.freeze({
   MAYBE_FP_RU: 'MAYBE_FP_RU',
   NETWORK_ERR: 'NETWORK_ERR',
 })
+
+// E1: append the NCBI API key (if NCBI_API_KEY env is set) to an eutils URL.
+// Raises the rate limit 3→10 req/s. No env → url unchanged (graceful degrade).
+export function withApiKey(url) {
+  const key = process.env.NCBI_API_KEY
+  return key ? `${url}&api_key=${encodeURIComponent(key)}` : url
+}
+
+// E3: final summary line for PMIDs left unverified by transient network errors.
+export function networkSummaryLine(count) {
+  return count > 0 ? `⚠️  ${count} PMID(s) unverified (network error)` : null
+}
+
+// E4: exit code decision. Blocking issues (MISMATCH/NOT_FOUND) → 1. In --strict,
+// MAYBE_FP → 1. In --ci, leftover network-unverified PMIDs → 2 (workflow retries).
+// Without --ci, network errors never block (hook path: exit 0). Blocking wins over ci/network.
+export function computeExitCode({ blockingCount, maybeFpCount, networkErrCount, strictMode, ciMode }) {
+  if (blockingCount > 0) return 1
+  if (strictMode && maybeFpCount > 0) return 1
+  if (ciMode && networkErrCount > 0) return 2
+  return 0
+}
 
 function normalize(s) {
   let str = (s || '')
@@ -95,14 +120,14 @@ async function suggestCandidates(citedTitle, excludePmids = []) {
   const query = encodeURIComponent(ts.slice(0, 8).join(' '))
   const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${query}&retmax=8&retmode=json`
   try {
-    const res = await fetch(url)
+    const res = await fetch(withApiKey(url))
     if (!res.ok) return []
     const json = await res.json()
     const pmids = (json.esearchresult?.idlist || []).filter(p => !excludePmids.includes(p))
     if (pmids.length === 0) return []
     await new Promise(r => setTimeout(r, 200))
     const sumUrl = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${pmids.join(',')}&retmode=json`
-    const sumRes = await fetch(sumUrl)
+    const sumRes = await fetch(withApiKey(sumUrl))
     if (!sumRes.ok) return []
     const sumJson = await sumRes.json()
     const results = []
@@ -121,11 +146,13 @@ async function suggestCandidates(citedTitle, excludePmids = []) {
   }
 }
 
-async function lookupPmid(pmid) {
+export async function lookupPmid(pmid) {
   const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${pmid}&retmode=json`
   try {
-    const res = await fetch(url)
-    if (!res.ok) return { exists: false, error: `HTTP ${res.status}` }
+    const res = await fetch(withApiKey(url))
+    // E2: transport-level failure (429/503/etc.) is transient — a real "not found"
+    // comes from a 200 response with rec.error below, not from an HTTP error.
+    if (!res.ok) return { networkError: true, error: `HTTP ${res.status}` }
     const json = await res.json()
     const rec = json.result?.[pmid]
     if (!rec || rec.error) return { exists: false, error: rec?.error || 'no record' }
@@ -135,15 +162,16 @@ async function lookupPmid(pmid) {
   }
 }
 
-async function lookupBatched(pmids) {
+export async function lookupBatched(pmids) {
   const result = new Map()
   for (let i = 0; i < pmids.length; i += 50) {
     const chunk = pmids.slice(i, i + 50)
     const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${chunk.join(',')}&retmode=json`
     try {
-      const res = await fetch(url)
+      const res = await fetch(withApiKey(url))
+      // E2: transport-level failure (429/503/etc.) is transient (see lookupPmid).
       if (!res.ok) {
-        for (const pmid of chunk) result.set(pmid, { exists: false, error: `HTTP ${res.status}` })
+        for (const pmid of chunk) result.set(pmid, { networkError: true, error: `HTTP ${res.status}` })
       } else {
         const json = await res.json()
         for (const pmid of chunk) {
@@ -170,6 +198,7 @@ async function lookupBatched(pmids) {
 async function main() {
   const issues = []
   const seen = new Set()
+  let networkErrCount = 0
 
   // Pass 1: gather all study tuples across libs/entries (always, regardless of mode)
   const allStudies = []
@@ -220,6 +249,7 @@ async function main() {
 
     if (result.networkError) {
       console.log(`  NETWORK_ERR ${libId}/${slug}: PMID ${pmid} (${result.error})`)
+      networkErrCount++
       continue
     }
     if (!result.exists) {
@@ -311,8 +341,17 @@ async function main() {
     }
   }
 
-  const shouldExit1 = blocking.length > 0 || (strictMode && maybeFp.length > 0)
-  if (shouldExit1) process.exit(1)
+  const netLine = networkSummaryLine(networkErrCount)
+  if (netLine) console.log(netLine)
+
+  const exitCode = computeExitCode({
+    blockingCount: blocking.length,
+    maybeFpCount: maybeFp.length,
+    networkErrCount,
+    strictMode,
+    ciMode,
+  })
+  if (exitCode !== 0) process.exit(exitCode)
 }
 
 // Only run when invoked directly (not when imported by tests)
