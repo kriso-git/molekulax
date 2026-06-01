@@ -55,7 +55,13 @@ export function compareEntryStudies({ hu, en, pl }) {
 async function loadStudies(entriesDir, lang, slug) {
   const p = resolve(entriesDir, lang, `${slug}.js`)
   if (!existsSync(p)) return undefined
-  const mod = await import(`file://${p.replace(/\\/g, '/')}`)
+  let mod
+  try {
+    mod = await import(`file://${p.replace(/\\/g, '/')}`)
+  } catch (err) {
+    console.warn(`  ⚠ ${lang}/${slug}: import error — ${err.message}`)
+    return undefined
+  }
   return mod.default?.studies
 }
 
