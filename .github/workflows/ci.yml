@@ -11,6 +11,10 @@ on:
 env:
   HUSKY: 0
 
+# Least-privilege: the workflow only reads code (no deploys, comments, or status writes).
+permissions:
+  contents: read
+
 jobs:
   build-and-test:
     name: Build & Test (offline)
