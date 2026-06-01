@@ -128,11 +128,11 @@ async function suggestCandidates(citedTitle, excludePmids = []) {
   }
 }
 
-async function lookupPmid(pmid) {
+export async function lookupPmid(pmid) {
   const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${pmid}&retmode=json`
   try {
     const res = await fetch(withApiKey(url))
-    if (!res.ok) return { exists: false, error: `HTTP ${res.status}` }
+    if (!res.ok) return { networkError: true, error: `HTTP ${res.status}` }
     const json = await res.json()
     const rec = json.result?.[pmid]
     if (!rec || rec.error) return { exists: false, error: rec?.error || 'no record' }
@@ -142,7 +142,7 @@ async function lookupPmid(pmid) {
   }
 }
 
-async function lookupBatched(pmids) {
+export async function lookupBatched(pmids) {
   const result = new Map()
   for (let i = 0; i < pmids.length; i += 50) {
     const chunk = pmids.slice(i, i + 50)
@@ -150,7 +150,7 @@ async function lookupBatched(pmids) {
     try {
       const res = await fetch(withApiKey(url))
       if (!res.ok) {
-        for (const pmid of chunk) result.set(pmid, { exists: false, error: `HTTP ${res.status}` })
+        for (const pmid of chunk) result.set(pmid, { networkError: true, error: `HTTP ${res.status}` })
       } else {
         const json = await res.json()
         for (const pmid of chunk) {
