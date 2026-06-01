@@ -51,7 +51,7 @@ would only re-catch what the drift check already catches, at 3× the NCBI calls 
 ## 2. Goals / non-goals
 
 **Goals**
-- G1. A single `npm test` command, cross-platform safe (Node 20 local Windows + Node 24 CI).
+- G1. A single `npm test` command, cross-platform safe (Node 20, both local Windows and CI).
 - G2. An offline cross-lang drift guard that fails on any `{pmid, title}` divergence between
   `hu`/`en`/`pl` for the same entry.
 - G3. Wire the drift guard into the pre-commit hook (per staged entry) and CI (lib-wide, offline).
@@ -219,7 +219,7 @@ test files):
 
 ## 7. Acceptance criteria
 
-- AC1. `npm test` runs all `scripts/test/*.test.mjs` on Node 20 (local Windows) and Node 24 (CI); all green.
+- AC1. `npm test` runs all `scripts/test/*.test.mjs` on Node 20 (both local Windows and CI); all green.
 - AC2. `verify-lang-consistency.mjs` exits 0 on the current library (no drift) and exits 1 with an
   actionable diff report when any `{pmid,title}` diverges across langs.
 - AC3. `compareEntryStudies` unit tests (§5.1) all pass.

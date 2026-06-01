@@ -102,6 +102,9 @@ async function main() {
       }
     }
   }
+  if (checked === 0 && entryFilter) {
+    console.warn(`  ⚠ no entry matched --entry "${entryFilter}"${libFilter ? ` (lib "${libFilter}")` : ''}`)
+  }
   console.log(`\nChecked ${checked} entr${checked === 1 ? 'y' : 'ies'}, ${driftCount} with drift.`)
   process.exit(driftCount > 0 ? 1 : 0)
 }
