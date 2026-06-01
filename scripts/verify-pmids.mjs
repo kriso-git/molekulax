@@ -18,8 +18,8 @@
 // --ci: CI mode. Exits 2 (not 0) when transient network errors leave PMIDs
 // unverified, so the workflow can retry. Real MISMATCH/NOT_FOUND still exit 1.
 //
-// Exits 1 if any MISMATCH or NOT_FOUND found. With --strict, MAYBE_FP_HU/RU
-// also exit 1.
+// Exit codes: 0 = clean; 1 = MISMATCH/NOT_FOUND (and MAYBE_FP_HU/RU under --strict);
+// 2 = transient network errors left PMIDs unverified under --ci (retry signal).
 
 import { readdirSync, existsSync } from 'fs'
 import { resolve, dirname } from 'path'
@@ -150,6 +150,8 @@ export async function lookupPmid(pmid) {
   const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${pmid}&retmode=json`
   try {
     const res = await fetch(withApiKey(url))
+    // E2: transport-level failure (429/503/etc.) is transient — a real "not found"
+    // comes from a 200 response with rec.error below, not from an HTTP error.
     if (!res.ok) return { networkError: true, error: `HTTP ${res.status}` }
     const json = await res.json()
     const rec = json.result?.[pmid]
@@ -167,6 +169,7 @@ export async function lookupBatched(pmids) {
     const url = `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id=${chunk.join(',')}&retmode=json`
     try {
       const res = await fetch(withApiKey(url))
+      // E2: transport-level failure (429/503/etc.) is transient (see lookupPmid).
       if (!res.ok) {
         for (const pmid of chunk) result.set(pmid, { networkError: true, error: `HTTP ${res.status}` })
       } else {
