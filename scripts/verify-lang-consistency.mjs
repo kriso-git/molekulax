@@ -4,6 +4,20 @@
 //
 // Run: node scripts/verify-lang-consistency.mjs [--lib <id>] [--entry <slug>]
 
+import { readdirSync, existsSync } from 'fs'
+import { resolve, dirname } from 'path'
+import { fileURLToPath } from 'url'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const repoRoot = resolve(__dirname, '..')
+
+const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
+const LANGS = ['hu', 'en', 'pl']
+
+const args = process.argv.slice(2)
+const libFilter = args.includes('--lib') ? args[args.indexOf('--lib') + 1] : null
+const entryFilter = args.includes('--entry') ? args[args.indexOf('--entry') + 1] : null
+
 function toSeq(studies) {
   const arr = Array.isArray(studies) ? studies : []
   return arr.map(s => ({
@@ -36,4 +50,59 @@ export function compareEntryStudies({ hu, en, pl }) {
     }
   }
   return { ok: diffs.length === 0, diffs }
+}
+
+async function loadStudies(entriesDir, lang, slug) {
+  const p = resolve(entriesDir, lang, `${slug}.js`)
+  if (!existsSync(p)) return undefined
+  const mod = await import(`file://${p.replace(/\\/g, '/')}`)
+  return mod.default?.studies
+}
+
+async function main() {
+  let driftCount = 0
+  let checked = 0
+  for (const libId of LIBRARIES) {
+    if (libFilter && libId !== libFilter) continue
+    const entriesDir = resolve(repoRoot, 'src/data/libraries', libId, 'entries')
+    if (!existsSync(resolve(entriesDir, 'hu'))) continue
+
+    const slugSet = new Set()
+    for (const lang of LANGS) {
+      const dir = resolve(entriesDir, lang)
+      if (!existsSync(dir)) continue
+      for (const f of readdirSync(dir)) {
+        if (f.endsWith('.js')) slugSet.add(f.replace(/\.js$/, ''))
+      }
+    }
+
+    for (const slug of [...slugSet].sort()) {
+      if (entryFilter && slug !== entryFilter) continue
+      const [hu, en, pl] = await Promise.all(LANGS.map(l => loadStudies(entriesDir, l, slug)))
+      const { ok, diffs } = compareEntryStudies({ hu, en, pl })
+      checked++
+      if (ok) {
+        console.log(`  ✅ ${libId}/${slug}`)
+      } else {
+        driftCount++
+        console.log(`  ❌ ${libId}/${slug}`)
+        for (const d of diffs) {
+          if (d.field === 'count') {
+            console.log(`     [${d.lang}] study count: hu=${d.hu} ${d.lang}=${d.other}`)
+          } else {
+            console.log(`     [${d.lang}] #${d.index} ${d.field}: hu="${d.hu}" ${d.lang}="${d.other}"`)
+          }
+        }
+      }
+    }
+  }
+  console.log(`\nChecked ${checked} entr${checked === 1 ? 'y' : 'ies'}, ${driftCount} with drift.`)
+  process.exit(driftCount > 0 ? 1 : 0)
+}
+
+if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
+  main().catch(err => {
+    console.error('verify-lang-consistency failed:', err)
+    process.exit(1)
+  })
 }

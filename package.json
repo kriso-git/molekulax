@@ -17,6 +17,7 @@
     "convert-images": "node scripts/convert-images.mjs",
     "prepare": "husky",
     "verify:staged": "node scripts/verify-staged-entries.mjs",
+    "verify:consistency": "node scripts/verify-lang-consistency.mjs",
     "test": "node --test scripts/test/"
   },
   "dependencies": {
