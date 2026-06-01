@@ -5,6 +5,8 @@ import {
   withApiKey,
   lookupPmid,
   lookupBatched,
+  computeExitCode,
+  networkSummaryLine,
 } from '../verify-pmids.mjs'
 
 let pass = 0
@@ -83,6 +85,38 @@ await (async () => {
     },
   )
 })()
+
+// --- E4: computeExitCode ---
+check('E4: clean → 0', () => {
+  assert.equal(computeExitCode({ blockingCount: 0, maybeFpCount: 0, networkErrCount: 0, strictMode: false, ciMode: false }), 0)
+})
+check('E4: blocking → 1', () => {
+  assert.equal(computeExitCode({ blockingCount: 2, maybeFpCount: 0, networkErrCount: 0, strictMode: false, ciMode: false }), 1)
+})
+check('E4: strict + maybeFp → 1', () => {
+  assert.equal(computeExitCode({ blockingCount: 0, maybeFpCount: 1, networkErrCount: 0, strictMode: true, ciMode: false }), 1)
+})
+check('E4: maybeFp without strict → 0', () => {
+  assert.equal(computeExitCode({ blockingCount: 0, maybeFpCount: 3, networkErrCount: 0, strictMode: false, ciMode: false }), 0)
+})
+check('E4: ci + network → 2', () => {
+  assert.equal(computeExitCode({ blockingCount: 0, maybeFpCount: 0, networkErrCount: 5, strictMode: false, ciMode: true }), 2)
+})
+check('E4: network WITHOUT ci → 0 (hook path unchanged)', () => {
+  assert.equal(computeExitCode({ blockingCount: 0, maybeFpCount: 0, networkErrCount: 5, strictMode: false, ciMode: false }), 0)
+})
+check('E4: blocking beats ci+network (1 wins over 2)', () => {
+  assert.equal(computeExitCode({ blockingCount: 1, maybeFpCount: 0, networkErrCount: 5, strictMode: false, ciMode: true }), 1)
+})
+
+// --- E3: networkSummaryLine ---
+check('E3: count 0 → null', () => {
+  assert.equal(networkSummaryLine(0), null)
+})
+check('E3: count 3 → message with count', () => {
+  const line = networkSummaryLine(3)
+  assert.ok(line && line.includes('3') && /unverified/i.test(line))
+})
 
 console.log(`\n${pass}/${pass + fail} passed`)
 if (fail > 0) process.exit(1)

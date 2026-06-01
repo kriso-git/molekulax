@@ -3,7 +3,7 @@
 // (token-overlap heuristic). Flags PMIDs that don't exist, return wrong-paper,
 // or match a paper whose title bears no resemblance to the cited one.
 //
-// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict] [--batch]
+// Run: node scripts/verify-pmids.mjs [--lib <id>] [--entry <slug>] [--suggest] [--strict] [--batch] [--ci]
 //
 // Output: per-PMID line with status — OK / MISMATCH / NOT_FOUND / MAYBE_FP_HU /
 // MAYBE_FP_RU / NETWORK_ERR. MAYBE_FP_HU and MAYBE_FP_RU are flagged when the
@@ -15,6 +15,8 @@
 // --batch: opt-in mode for lib-wide runs. Fetches up to 50 PMIDs per esummary
 // URL with 700ms pause between chunks, ~25-30x faster than per-PMID mode.
 // Default (no flag) keeps per-PMID lookup with 400ms rate-limit (backward-compat).
+// --ci: CI mode. Exits 2 (not 0) when transient network errors leave PMIDs
+// unverified, so the workflow can retry. Real MISMATCH/NOT_FOUND still exit 1.
 //
 // Exits 1 if any MISMATCH or NOT_FOUND found. With --strict, MAYBE_FP_HU/RU
 // also exit 1.
@@ -32,6 +34,7 @@ const entryFilter = args.includes('--entry') ? args[args.indexOf('--entry') + 1]
 const suggestMode = args.includes('--suggest')
 const strictMode = args.includes('--strict')
 const batchMode = args.includes('--batch')
+const ciMode = args.includes('--ci')
 
 const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
 const langs = ['hu', 'en', 'pl']
@@ -50,6 +53,21 @@ export const STATUS = Object.freeze({
 export function withApiKey(url) {
   const key = process.env.NCBI_API_KEY
   return key ? `${url}&api_key=${encodeURIComponent(key)}` : url
+}
+
+// E3: final summary line for PMIDs left unverified by transient network errors.
+export function networkSummaryLine(count) {
+  return count > 0 ? `⚠️  ${count} PMID(s) unverified (network error)` : null
+}
+
+// E4: exit code decision. Blocking issues (MISMATCH/NOT_FOUND) → 1. In --strict,
+// MAYBE_FP → 1. In --ci, leftover network-unverified PMIDs → 2 (workflow retries).
+// Without --ci, network errors never block (hook path: exit 0). Blocking wins over ci/network.
+export function computeExitCode({ blockingCount, maybeFpCount, networkErrCount, strictMode, ciMode }) {
+  if (blockingCount > 0) return 1
+  if (strictMode && maybeFpCount > 0) return 1
+  if (ciMode && networkErrCount > 0) return 2
+  return 0
 }
 
 function normalize(s) {
@@ -177,6 +195,7 @@ export async function lookupBatched(pmids) {
 async function main() {
   const issues = []
   const seen = new Set()
+  let networkErrCount = 0
 
   // Pass 1: gather all study tuples across libs/entries (always, regardless of mode)
   const allStudies = []
@@ -227,6 +246,7 @@ async function main() {
 
     if (result.networkError) {
       console.log(`  NETWORK_ERR ${libId}/${slug}: PMID ${pmid} (${result.error})`)
+      networkErrCount++
       continue
     }
     if (!result.exists) {
@@ -318,8 +338,17 @@ async function main() {
     }
   }
 
-  const shouldExit1 = blocking.length > 0 || (strictMode && maybeFp.length > 0)
-  if (shouldExit1) process.exit(1)
+  const netLine = networkSummaryLine(networkErrCount)
+  if (netLine) console.log(netLine)
+
+  const exitCode = computeExitCode({
+    blockingCount: blocking.length,
+    maybeFpCount: maybeFp.length,
+    networkErrCount,
+    strictMode,
+    ciMode,
+  })
+  if (exitCode !== 0) process.exit(exitCode)
 }
 
 // Only run when invoked directly (not when imported by tests)
