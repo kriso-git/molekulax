@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+# Skip husky hook installation during `npm ci` (no local git hooks needed in CI).
+env:
+  HUSKY: 0
+
+jobs:
+  build-and-test:
+    name: Build & Test (offline)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Unit tests
+        run: node --test scripts/test/*.test.mjs
+      - name: Build
+        run: npm run build
+
+  pmid-gate:
+    name: PMID integrity gate (NCBI)
+    runs-on: ubuntu-latest
+    env:
+      NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Verify PMIDs (lib-wide, 1 retry on transient)
+        shell: bash
+        run: |
+          set +e
+          node scripts/verify-pmids.mjs --batch --ci | tee verify-output.txt
+          code=${PIPESTATUS[0]}
+          if [ "$code" = "2" ]; then
+            echo "::warning::Transient NCBI errors on first pass — retrying once"
+            node scripts/verify-pmids.mjs --batch --ci | tee verify-output.txt
+            code=${PIPESTATUS[0]}
+          fi
+          if [ "$code" = "1" ]; then
+            echo "::error::PMID verification failed (fabricated/mismatched PMID)."
+            exit 1
+          fi
+          exit 0
+      - name: Job summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "### PMID gate result"
+            echo '```'
+            tail -n 25 verify-output.txt 2>/dev/null || echo "(no output captured)"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
