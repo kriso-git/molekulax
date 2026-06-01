@@ -16,10 +16,12 @@ function toSeq(studies) {
 // Diff: { lang, index, field: 'count'|'pmid'|'title', hu, other }.
 // For 'count', index = -1 and hu/other are the array lengths.
 export function compareEntryStudies({ hu, en, pl }) {
+  // hu undefined/non-array → empty ref; en/pl then surface count diffs against it.
   const ref = toSeq(hu)
   const diffs = []
+  const inputs = { en, pl }
   for (const lang of ['en', 'pl']) {
-    const other = toSeq(lang === 'en' ? en : pl)
+    const other = toSeq(inputs[lang])
     if (other.length !== ref.length) {
       diffs.push({ lang, index: -1, field: 'count', hu: ref.length, other: other.length })
     }

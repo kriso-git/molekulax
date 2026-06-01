@@ -66,6 +66,30 @@ const cases = [
     },
     expected: { ok: true, diffs: [] },
   },
+  {
+    name: 'pmid AND title drift at same index → two diffs (pmid before title)',
+    input: {
+      hu: [study('111', 'A')],
+      en: [study('999', 'Z')],
+      pl: [study('111', 'A')],
+    },
+    expected: { ok: false, diffs: [
+      { lang: 'en', index: 0, field: 'pmid', hu: '111', other: '999' },
+      { lang: 'en', index: 0, field: 'title', hu: 'A', other: 'Z' },
+    ] },
+  },
+  {
+    name: 'both en and pl drift → en diff before pl diff',
+    input: {
+      hu: [study('111', 'A')],
+      en: [study('999', 'A')],
+      pl: [study('888', 'A')],
+    },
+    expected: { ok: false, diffs: [
+      { lang: 'en', index: 0, field: 'pmid', hu: '111', other: '999' },
+      { lang: 'pl', index: 0, field: 'pmid', hu: '111', other: '888' },
+    ] },
+  },
 ]
 
 let passed = 0
