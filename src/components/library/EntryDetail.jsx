@@ -570,8 +570,8 @@ function SafetyTriptych({ profile, accent, tr, t }) {
 
 // ─── Related Peptides, fixed-corner layout, click jumps to peptide ─
 function RelatedCard({ peptide, onJump, tr, t }) {
- if (!peptide) return null
  const tiltRef = useTilt(10)
+ if (!peptide) return null
  return (
  <button
  ref={tiltRef}
@@ -1133,6 +1133,7 @@ function StudyCard({ s, accent, tr, t }) {
 }
 
 export default function EntryDetail({ peptide, onClose, onJump }) {
+ if (!peptide) return null
  const { t, tr, lang } = useLang()
  const { theme } = useTheme()
  const { library } = useLibrary()
@@ -1181,8 +1182,6 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  ro.observe(parent)
  return () => ro.disconnect()
  }, [peptide.name])
-
- if (!peptide) return null
 
  const accent = peptide.accentColor || '#a78bfa'
  const tierMeta = TIER_META[peptide.tier] || TIER_META[1]
