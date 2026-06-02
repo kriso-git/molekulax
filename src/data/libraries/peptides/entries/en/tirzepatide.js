@@ -4,7 +4,7 @@
 export default {
   "id": "tirzepatide",
   "name": "Tirzepatide",
-  "image": null,
+  "image": "/peptides/tirzepatide.png",
   "accentColor": "#fb923c",
   "tagColor": "rgba(251,146,60,0.16)",
   "tagText": "#fb923c",
