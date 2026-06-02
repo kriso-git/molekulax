@@ -358,7 +358,15 @@ export default function EffectsSection() {
  key={i}
  className="group rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 select-none"
  style={{ border: '1px solid var(--tint-soft-border)', background: 'var(--tint-soft)' }}
+ role="button"
+ tabIndex={0}
  onClick={() => setActive({ cat, idx: i })}
+ onKeyDown={(e) => {
+ if (e.key === 'Enter' || e.key === ' ') {
+ e.preventDefault()
+ setActive({ cat, idx: i })
+ }
+ }}
  onMouseEnter={e => {
  e.currentTarget.style.border = `1px solid ${cat.color}40`
  e.currentTarget.style.boxShadow = `0 0 40px ${cat.glow}`

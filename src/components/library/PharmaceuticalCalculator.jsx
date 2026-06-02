@@ -267,6 +267,7 @@ export default function PharmaceuticalCalculator({ doseCalc, accent = '#10b981' 
                   value={weight}
                   onChange={e => setWeight(parseInt(e.target.value, 10))}
                   className="mlx-tsh-slider"
+                  aria-label={t('entry.calc.bodyweight')}
                 />
               </div>
 

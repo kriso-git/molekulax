@@ -706,6 +706,7 @@ export default function LibraryGallery({
  value={query}
  onChange={(e) => setQuery(e.target.value)}
  placeholder={t('gal.all.search')}
+ aria-label={t('gal.all.search')}
  className="w-full pl-11 pr-4 py-3 rounded-xl text-white text-sm placeholder:text-gray-600
  focus:outline-none focus:border-[#818cf8]/50 transition-colors"
  style={{

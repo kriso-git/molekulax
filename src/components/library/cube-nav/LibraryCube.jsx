@@ -139,7 +139,6 @@ export default function LibraryCube() {
         id="library"
         ref={sectionRef}
         tabIndex={0}
-        role="region"
         aria-roledescription="Library selector"
         aria-label={library.name[lang]}
         onKeyDown={handleKeyDown}
@@ -185,7 +184,6 @@ export default function LibraryCube() {
       id="library"
       ref={sectionRef}
       tabIndex={0}
-      role="region"
       aria-roledescription="Library selector"
       aria-label={library.name[lang]}
       onKeyDown={handleKeyDown}
