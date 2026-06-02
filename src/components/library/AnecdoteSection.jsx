@@ -8,7 +8,10 @@ import { Eyebrow, GlassCard } from './entry-detail/shared'
 // The LanguageContext `tr` helper handles both shapes.
 function renderAnecdoteBody(text) {
  if (!text || typeof text !== 'string') return null
- const paras = text.split(/\n\s*\n/).map(p => p.trim()).filter(Boolean)
+ const paras = text.split(/\n\s*\n/).flatMap(p => {
+ const trimmed = p.trim()
+ return trimmed ? [trimmed] : []
+ })
  return paras.map((p, i) => (
  <p
  key={i}

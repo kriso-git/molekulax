@@ -304,7 +304,10 @@ export default function LibraryGallery({
  const metaList = library.meta || library.entries || []
 
  const top10 = useMemo(
- () => (library.topEntries || []).map(id => metaList.find(p => p.id === id)).filter(Boolean),
+ () => (library.topEntries || []).flatMap(id => {
+ const entry = metaList.find(p => p.id === id)
+ return entry ? [entry] : []
+ }),
  [library, metaList]
  )
 

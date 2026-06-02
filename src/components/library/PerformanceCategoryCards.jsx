@@ -36,8 +36,14 @@ const PerformanceCategoryCards = memo(function PerformanceCategoryCards({
 
   const order1 = ['dht', 'test', '19nor']
   const order2 = ['pct', 'fat']
-  const row1 = order1.map(id => subCategories.find(c => c.id === id)).filter(Boolean)
-  const row2 = order2.map(id => subCategories.find(c => c.id === id)).filter(Boolean)
+  const row1 = order1.flatMap(id => {
+    const cat = subCategories.find(c => c.id === id)
+    return cat ? [cat] : []
+  })
+  const row2 = order2.flatMap(id => {
+    const cat = subCategories.find(c => c.id === id)
+    return cat ? [cat] : []
+  })
 
   return (
     <div className="mb-10 [perspective:1000px]">

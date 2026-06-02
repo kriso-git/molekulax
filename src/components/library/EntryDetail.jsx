@@ -438,7 +438,7 @@ const INTERACTION_PALETTE = {
 const INTERACTION_ORDER = ['SYNERGISTIC', 'COMPLEMENTARY', 'COMPATIBLE', 'TIMING', 'CAUTION', 'AVOID']
 function InteractionsOrbit({ items, tr }) {
  if (!items?.length) return null
- const sorted = [...items].sort((a, b) => {
+ const sorted = items.toSorted((a, b) => {
  const ai = INTERACTION_ORDER.indexOf(a.status); const bi = INTERACTION_ORDER.indexOf(b.status)
  return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi)
  })

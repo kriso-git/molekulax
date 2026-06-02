@@ -67,12 +67,12 @@ function splitName(name) {
   if (trimmed.length <= 10) return [trimmed]
   // Only split at word boundaries — never inside a word. Apostrophes and
   // backticks are intra-word punctuation (Lion's) so we must NOT split there.
-  const breakChars = [' ', '-', '–']
+  const breakChars = new Set([' ', '-', '–'])
   const mid = Math.floor(trimmed.length / 2)
   let bestIdx = -1
   let bestDist = Infinity
   for (let i = 1; i < trimmed.length - 1; i++) {
-    if (breakChars.includes(trimmed[i])) {
+    if (breakChars.has(trimmed[i])) {
       const d = Math.abs(i - mid)
       if (d < bestDist) {
         bestDist = d

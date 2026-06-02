@@ -52,10 +52,10 @@ function deriveMechanism(peptide) {
 // Build a category chip list from the peptide's mapped categories.
 function deriveResearchUses(peptide, library) {
  const ids = (library.entryCategoryMap[peptide.id] || [])
- return ids
- .map(id => library.categories.find(c => c.id === id))
- .filter(Boolean)
- .map(cat => ({ id: cat.id, label: cat.label }))
+ return ids.flatMap(id => {
+ const cat = library.categories.find(c => c.id === id)
+ return cat ? [{ id: cat.id, label: cat.label }] : []
+ })
 }
 
 // Build a dosing block from dosageInfo + sensible defaults.
@@ -292,9 +292,10 @@ const CATEGORY_BENEFITS = {
 }
 function deriveKeyBenefits(peptide, library) {
  const ids = (library.entryCategoryMap[peptide.id] || [])
- return ids
- .map(id => CATEGORY_BENEFITS[id] && { id, ...CATEGORY_BENEFITS[id] })
- .filter(Boolean)
+ return ids.flatMap(id => {
+ const benefit = CATEGORY_BENEFITS[id]
+ return benefit ? [{ id, ...benefit }] : []
+ })
 }
 
 // Peptide library molecular row-set — keyInfo label-based extraction.
@@ -620,7 +621,7 @@ function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
 function deriveRelated(peptide, categoryIds, library) {
  if (!categoryIds.length) return []
  const metaList = library?.meta || library?.entries || []
- return metaList
+ const scored = metaList
  .filter(p => p.id !== peptide.id)
  .map(p => {
  const theirIds = (library.entryCategoryMap[p.id] || [])
@@ -630,15 +631,14 @@ function deriveRelated(peptide, categoryIds, library) {
  .filter(x => x.overlap > 0)
  .sort((a, b) => b.overlap - a.overlap)
  .slice(0, 4)
- .map(x => {
+ return scored.map(x => {
  const tier = x.peptide.tier ?? library.getResearchLevel?.(x.peptide) ?? 1
  const meta = getLevelMeta(tier)
  const ids = (library.entryCategoryMap[x.peptide.id] || [])
- const chips = ids
- .map(id => library.categories.find(c => c.id === id))
- .filter(Boolean)
- .slice(0, 3)
- .map(c => c.label)
+ const chips = ids.flatMap(id => {
+ const cat = library.categories.find(c => c.id === id)
+ return cat ? [cat.label] : []
+ }).slice(0, 3)
  return {
  id: x.peptide.id,
  name: x.peptide.name,
@@ -1165,10 +1165,13 @@ function deriveIndicationGroupsFromStudies(peptide, excludeLabels, lang) {
  const out = []
  for (const [topic, b] of buckets) {
  // Build sub-items: 1-2 study findings + 1-2 mechanism phrases for that topic
- const studyItems = b.studies.slice(0, 2).map(s => ({
+ const studyItems = b.studies.slice(0, 2).flatMap(s => {
+ const it = {
  title: s.tag || { hu: '-', en: '-', pl: '-' },
  desc: s.finding || (typeof s.title === 'string' ? { hu: s.title, en: s.title, pl: s.title } : (s.title || { hu: '', en: '', pl: '' })),
- })).filter(it => flat(it.desc, lang))
+ }
+ return flat(it.desc, lang) ? [it] : []
+ })
  const mechs = TOPIC_MECHANISMS[topic] || []
  const mechItems = mechs.slice(0, Math.max(0, 3 - studyItems.length)).map(m => ({
  title: m.t, desc: m.d,
@@ -1178,8 +1181,8 @@ function deriveIndicationGroupsFromStudies(peptide, excludeLabels, lang) {
  const label = b.tag && typeof b.tag === 'object' ? b.tag : { hu: flat(b.tag, lang) || topic, en: flat(b.tag, lang) || topic, pl: flat(b.tag, lang) || topic }
  // Skip if this label is already represented by a category-based group
  const labelLower = flat(label, lang).toLowerCase()
- const isDup = excludeLabels.some(lbl => {
- const llow = lbl.toLowerCase()
+ const excludeSet = new Set(excludeLabels.map(l => l.toLowerCase()))
+ const isDup = Array.from(excludeSet).some(llow => {
  return llow.includes(labelLower) || labelLower.includes(llow)
  })
  if (isDup) continue
@@ -1194,12 +1197,11 @@ function deriveIndicationGroupsFromStudies(peptide, excludeLabels, lang) {
 }
 
 function deriveIndications(peptide, categoryIds, library, lang) {
- const fromCategories = categoryIds
- .map(id => {
+ const fromCategories = categoryIds.flatMap(id => {
  const cat = library.categories.find(c => c.id === id)
  const items = CATEGORY_INDICATIONS[id] || []
- if (!cat || !items.length) return null
- return {
+ if (!cat || !items.length) return []
+ return [{
  id,
  label: cat.label,
  accent: cat.accent,
@@ -1207,9 +1209,8 @@ function deriveIndications(peptide, categoryIds, library, lang) {
  title: { hu: it.hu, en: it.en, pl: it.pl },
  desc: it.d,
  })),
- }
+ }]
  })
- .filter(Boolean)
  const excludeLabels = fromCategories.flatMap(g => [g.label?.hu, g.label?.en, g.label?.pl].filter(Boolean))
  const fromStudies = deriveIndicationGroupsFromStudies(peptide, excludeLabels, lang)
  // Cap at 6 groups total
