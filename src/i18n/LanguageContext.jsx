@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { UI_HU } from './uiStrings-hu'
 
 const LanguageContext = createContext({
@@ -74,22 +74,27 @@ export function LanguageProvider({ children }) {
     return () => { cancelled = true }
   }, [lang])
 
-  const t = (key) => uiMap[key] ?? UI_HU[key] ?? key
+  const t = useCallback((key) => uiMap[key] ?? UI_HU[key] ?? key, [uiMap])
 
   // tr: localizes a value that may be a plain string OR an object {hu, en, pl}.
   // Entry data still ships full triplets (entries-data locale-split deferred
   // to a later Phase per spec §11 backlog) — tr handles both shapes.
-  const tr = (value) => {
+  const tr = useCallback((value) => {
     if (value == null) return value
     if (typeof value === 'string') return value
     if (typeof value === 'object' && (value.hu || value.en || value.pl)) {
       return value[lang] ?? value.hu ?? value.en ?? value.pl ?? ''
     }
     return value
-  }
+  }, [lang])
+
+  const value = useMemo(
+    () => ({ lang, setLang, t, tr, loadingLang }),
+    [lang, loadingLang, t, tr]
+  )
 
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t, tr, loadingLang }}>
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   )
