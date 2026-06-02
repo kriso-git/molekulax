@@ -144,7 +144,7 @@ function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, on
           boxShadow: hovered && !disabled
             ? `0 0 14px ${accent}cc, inset 0 0 6px ${accent}66`
             : `0 0 6px ${accent}55, inset 0 0 3px ${accent}33`,
-          transition: 'all 220ms ease-out',
+          transition: 'box-shadow 220ms ease-out',
           flexShrink: 0,
         }}
       >
@@ -217,7 +217,7 @@ function SidePill({ direction, libLabel, libraries, currentIdx, currentLabel, on
                 height: 6,
                 background: i === currentIdx ? accent : `${accent}33`,
                 boxShadow: i === currentIdx ? `0 0 8px ${accent}cc` : 'none',
-                transition: 'all 220ms ease-out',
+                transition: 'background 220ms ease-out, box-shadow 220ms ease-out',
               }}
             />
           ))}
