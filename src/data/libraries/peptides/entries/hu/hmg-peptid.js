@@ -40,7 +40,6 @@ export default {
   "halfLifeActive": "Klinikai effect 2-3 nap (single SC bolus után, mixed FSH+LH component decay)",
   "interactionsWith": [
     "hcg-peptid",
-    "fsh-rec-peptid",
     "hmg-perf",
     "kisspeptin",
     "anastrozol",
@@ -160,7 +159,6 @@ export default {
   ],
   "related": [
     "hcg-peptid",
-    "fsh-rec-peptid",
     "hmg-perf",
     "kisspeptin"
   ],

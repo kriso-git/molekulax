@@ -6,8 +6,8 @@
 
 ## Motivation
 
-40 of the 55 peptide entries still render the `VialFallback` SVG placeholder (`image: null`).
-This delivers the **prompt-kit + integration pipeline** so the 40 can be filled with real
+39 of the 53 peptide entries still render the `VialFallback` SVG placeholder (`image: null`).
+This delivers the **prompt-kit + integration pipeline** so the 39 can be filled with real
 Molekulax-branded vial renders. Image generation itself is the user's manual Gemini
 workflow (chosen 2026-06-02); this branch produces what's needed for it + the script that
 binds delivered PNGs into the data.
@@ -26,9 +26,9 @@ binds delivered PNGs into the data.
    artifact; the negative prompt hard-rejects it.
 5. **Amounts** = the research-grade vial sizes from the original 50-table (unchanged).
 
-## Scope: the 40 entries (reconciled 2026-06-02)
+## Scope: the 39 entries (reconciled 2026-06-02)
 
-All 40 live `image: null` peptides map to the original 50-table with documented amounts.
+All 39 live `image: null` peptides map to the original 50-table with documented amounts.
 Filename convention: **`<entryId>.png`** (lowercase), bound as `image: "/peptides/<id>.png"`.
 (The existing 10 use legacy capitalized names — left as-is.)
 
@@ -48,7 +48,6 @@ Filename convention: **`<entryId>.png`** (lowercase), bound as `image: "/peptide
 | ghrp-2 | GHRP-2 | 5 mg | white lyo powder |
 | ghrp-6 | GHRP-6 | 5 mg | white lyo powder |
 | hexarelin | Hexarelin | 2 mg | white lyo powder |
-| mk-677 | MK-677 | 25 mg | white powder |
 | igf-1-lr3 | IGF-1 LR3 | 1 mg | white lyo powder |
 | semax | Semax | 30 mg | white lyo powder |
 | selank | Selank | 30 mg | white lyo powder |
@@ -158,7 +157,7 @@ it can be verified now, before any PNGs exist.
 
 ## Acceptance Criteria
 
-1. Per-peptide table covers all 40 live `image: null` entries with name + amount + appearance.
+1. Per-peptide table covers all 39 live `image: null` entries with name + amount + appearance.
 2. `scripts/integrate-peptide-vials.mjs --dry-run` lists the correct 4 bind-targets per
    present PNG and skips non-peptide / already-bound ids; offline unit test green via
    `npm test`.

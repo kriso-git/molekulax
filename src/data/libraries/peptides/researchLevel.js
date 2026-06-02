@@ -44,7 +44,6 @@ const EXPLICIT_LEVEL = {
   'melanotan-2':      3,
   'pt-141':           5,  // bremelanotide IS FDA-approved (Vyleesi) — bump to 5
   'epithalon':        3,
-  'mk-677':           3,
   'aod-9604':         3,
   'cjc-1295-ipamorelin': 3,
 

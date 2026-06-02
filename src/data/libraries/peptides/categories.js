@@ -86,7 +86,6 @@ export const PEPTIDE_CATEGORIES = {
   'ghrp-2':              ['growth-factors'],
   'ghrp-6':              ['growth-factors'],
   'hexarelin':           ['growth-factors'],
-  'mk-677':              ['growth-factors'],
   'igf-1-lr3':           ['growth-factors', 'recovery'],
   'semax':               ['cognitive'],
   'selank':              ['cognitive', 'sleep'],
@@ -121,7 +120,6 @@ export const PEPTIDE_CATEGORIES = {
   // ── Post-roadmap 2026-05-20 — Peptide curation v0.23 ──────────────────
   'hcg-peptid':          ['growth-factors', 'recovery', 'hpta-fertility'],
   'hmg-peptid':          ['growth-factors', 'hpta-fertility'],
-  'fsh-rec-peptid':      ['growth-factors', 'hpta-fertility'],
   'epo':                 ['metabolic', 'recovery', 'endurance'],
   'glow':                ['anti-aging', 'recovery', 'immune'],
 }
