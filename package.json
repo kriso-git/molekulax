@@ -18,7 +18,8 @@
     "prepare": "husky",
     "verify:staged": "node scripts/verify-staged-entries.mjs",
     "verify:consistency": "node scripts/verify-lang-consistency.mjs",
-    "test": "node --test scripts/test/"
+    "test": "node --test scripts/test/",
+    "smoke": "node scripts/smoke-render.mjs --serve"
   },
   "dependencies": {
     "framer-motion": "^11.18.2",
@@ -37,6 +38,7 @@
     "mammoth": "^1.12.0",
     "pngjs": "^7.0.0",
     "postcss": "^8.4.49",
+    "puppeteer": "^24.43.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^3.4.16",
     "turndown": "^7.2.4",
