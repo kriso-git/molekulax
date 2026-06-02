@@ -19,7 +19,8 @@
     "verify:staged": "node scripts/verify-staged-entries.mjs",
     "verify:consistency": "node scripts/verify-lang-consistency.mjs",
     "test": "node --test scripts/test/",
-    "smoke": "node scripts/smoke-render.mjs --serve"
+    "smoke": "node scripts/smoke-render.mjs --serve",
+    "vials:integrate": "node scripts/integrate-peptide-vials.mjs"
   },
   "dependencies": {
     "framer-motion": "^11.18.2",
