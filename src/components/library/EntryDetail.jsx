@@ -243,7 +243,7 @@ const GROUPS = [
  { key: 'WARN', color: '#fbbf24', icon: AlertTriangle,
  title: { hu: 'Óvatosan', en: 'Use caution', pl: 'Z ostrożnością' } },
  { key: 'FAIL', color: '#f87171', icon: XCircle,
- title: { hu: 'Ne használd', en: 'Do not use', pl: 'Nie használaj' } },
+ title: { hu: 'Ne használd', en: 'Do not use', pl: 'Nie używaj' } },
 ]
 
 function QualityGrid({ items, tr, t }) {

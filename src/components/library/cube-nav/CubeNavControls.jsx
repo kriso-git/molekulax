@@ -66,7 +66,7 @@ export default function CubeNavControls({
         onClick={onPrev}
         aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
         className="md:hidden absolute top-[480px] left-2 z-20 flex items-center justify-center rounded-full"
-        style={{ width: 40, height: 40, ...arrowBase }}
+        style={{ width: 40, height: 40, ...ARROW_BASE_STYLE }}
       >
         <ChevronLeft size={18} strokeWidth={2.5} />
       </button>
@@ -77,7 +77,7 @@ export default function CubeNavControls({
         onClick={onNext}
         aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
         className="md:hidden absolute top-[480px] right-2 z-20 flex items-center justify-center rounded-full"
-        style={{ width: 40, height: 40, ...arrowBase }}
+        style={{ width: 40, height: 40, ...ARROW_BASE_STYLE }}
       >
         <ChevronRight size={18} strokeWidth={2.5} />
       </button>
