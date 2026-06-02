@@ -15,25 +15,9 @@ import { useLibrary } from '../../context/LibraryContext'
 import { EntryDetailSkeleton, EntryDetailError } from './entry-detail/skeleton'
 import HeroPreview from './HeroPreview'
 import RedirectFlash from './RedirectFlash'
+import { parseEntryHash, isEntryDetailHash } from './entryHash'
 
 const EntryDetail = lazy(() => import('./EntryDetail'))
-
-// Phase C: 3-segment hash `#entry/<library>/<id>/<variantId?>` for multi-variant
-// entries. `variantId` is optional in the parser — the EntryDetailRoute applies
-// auto-redirect rules below (single-variant → ignore segment; multi-variant
-// missing/bad segment → replaceState to defaultVariant).
-export function parseEntryHash(hash) {
-  if (!hash) return null
-  const clean = hash.replace(/^#/, '')
-  const parts = clean.split('/')
-  if (parts[0] !== 'entry' || !parts[1] || !parts[2]) return null
-  if (!getLibrary(parts[1])) return null
-  return { library: parts[1], id: parts[2], variantId: parts[3] || null }
-}
-
-export function isEntryDetailHash(hash) {
-  return parseEntryHash(hash) !== null
-}
 
 export default function EntryDetailRoute({ hash }) {
   const parsed = parseEntryHash(hash)

@@ -24,6 +24,13 @@ const SIZE_SMALL  = 'text-[clamp(0.95rem,10.5cqi,1.7rem)]' // 12+ chars
 const NAME_SIZE_LARGE  = 'text-[clamp(1.1rem,11cqi,2rem)]'
 const NAME_SIZE_MEDIUM = 'text-[clamp(0.95rem,9cqi,1.6rem)]'
 
+const CORNER_POSITIONS = {
+  tl: { top: 14, left: 14, borderRight: 'none', borderBottom: 'none' },
+  tr: { top: 14, right: 14, borderLeft: 'none', borderBottom: 'none' },
+  bl: { bottom: 14, left: 14, borderRight: 'none', borderTop: 'none' },
+  br: { bottom: 14, right: 14, borderLeft: 'none', borderTop: 'none' },
+}
+
 function parseFormula(input) {
   // Accept either a single string ('C15H15NO2S') or an explicit row array (['C14H26N4','O11P2']).
   const rows = Array.isArray(input) ? input : [input]
@@ -67,12 +74,12 @@ function splitName(name) {
   if (trimmed.length <= 10) return [trimmed]
   // Only split at word boundaries — never inside a word. Apostrophes and
   // backticks are intra-word punctuation (Lion's) so we must NOT split there.
-  const breakChars = [' ', '-', '–']
+  const breakChars = new Set([' ', '-', '–'])
   const mid = Math.floor(trimmed.length / 2)
   let bestIdx = -1
   let bestDist = Infinity
   for (let i = 1; i < trimmed.length - 1; i++) {
-    if (breakChars.includes(trimmed[i])) {
+    if (breakChars.has(trimmed[i])) {
       const d = Math.abs(i - mid)
       if (d < bestDist) {
         bestDist = d
@@ -87,12 +94,6 @@ function splitName(name) {
 }
 
 function Corner({ pos, color }) {
-  const map = {
-    tl: { top: 14, left: 14, borderRight: 'none', borderBottom: 'none' },
-    tr: { top: 14, right: 14, borderLeft: 'none', borderBottom: 'none' },
-    bl: { bottom: 14, left: 14, borderRight: 'none', borderTop: 'none' },
-    br: { bottom: 14, right: 14, borderLeft: 'none', borderTop: 'none' },
-  }
   return (
     <span
       aria-hidden="true"
@@ -103,7 +104,7 @@ function Corner({ pos, color }) {
         border: `1.5px solid ${color}`,
         opacity: 0.55,
         boxShadow: `0 0 6px ${color}33`,
-        ...map[pos],
+        ...CORNER_POSITIONS[pos],
       }}
     />
   )

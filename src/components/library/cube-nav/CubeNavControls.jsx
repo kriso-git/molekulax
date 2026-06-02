@@ -6,6 +6,12 @@ import { useLang } from '../../../i18n/LanguageContext'
 // label rejtett. A pozíció `top-[480px] md:top-[680px]` aligned a Top10 grid
 // függőleges közepével (section py-40 + face title block + Top10 fejlec +
 // fél grid magasság).
+const ARROW_BASE_STYLE = {
+  background: 'rgba(0,255,153,0.18)',
+  border: '1px solid rgba(0,255,153,0.5)',
+  color: '#00ff99',
+}
+
 export default function CubeNavControls({
   libraries,
   currentIndex,
@@ -16,12 +22,6 @@ export default function CubeNavControls({
   const count = libraries.length
   const prevLib = libraries[(currentIndex + count - 1) % count]
   const nextLib = libraries[(currentIndex + 1) % count]
-
-  const arrowBase = {
-    background: 'rgba(0,255,153,0.18)',
-    border: '1px solid rgba(0,255,153,0.5)',
-    color: '#00ff99',
-  }
 
   const labelClass =
     'text-xs uppercase tracking-[0.1em] text-[var(--text-tertiary,#94a3b8)] text-center leading-tight max-w-[180px] line-clamp-2'
@@ -35,7 +35,7 @@ export default function CubeNavControls({
           onClick={onPrev}
           aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
           className="flex items-center justify-center rounded-full"
-          style={{ width: 50, height: 50, ...arrowBase }}
+          style={{ width: 50, height: 50, ...ARROW_BASE_STYLE }}
         >
           <ChevronLeft size={22} strokeWidth={2.5} />
         </button>
@@ -51,7 +51,7 @@ export default function CubeNavControls({
           onClick={onNext}
           aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
           className="flex items-center justify-center rounded-full"
-          style={{ width: 50, height: 50, ...arrowBase }}
+          style={{ width: 50, height: 50, ...ARROW_BASE_STYLE }}
         >
           <ChevronRight size={22} strokeWidth={2.5} />
         </button>

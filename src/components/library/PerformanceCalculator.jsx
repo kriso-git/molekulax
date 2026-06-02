@@ -290,6 +290,7 @@ export default function PerformanceCalculator({ doseCalc, accent = '#10b981' }) 
                   value={bw}
                   onChange={e => setBw(parseInt(e.target.value, 10))}
                   className="mlx-bw-slider"
+                  aria-label={t('entry.calc.bodyweight')}
                 />
               </div>
 

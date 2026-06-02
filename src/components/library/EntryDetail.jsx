@@ -237,15 +237,16 @@ function ReconstitutePath({ steps, accent, tr }) {
 // Groups by status: green PASS column (positive markers), amber WARN
 // column (caution markers), red FAIL column (do-not-use markers). Each
 // column has a tinted header with a count chip.
-function QualityGrid({ items, tr, t }) {
- const GROUPS = [
+const GROUPS = [
  { key: 'PASS', color: '#34d399', icon: CheckCircle2,
  title: { hu: 'Tisztaság jelei', en: 'Purity markers', pl: 'Oznaki czystości' } },
  { key: 'WARN', color: '#fbbf24', icon: AlertTriangle,
  title: { hu: 'Óvatosan', en: 'Use caution', pl: 'Z ostrożnością' } },
  { key: 'FAIL', color: '#f87171', icon: XCircle,
- title: { hu: 'Ne használd', en: 'Do not use', pl: 'Nie używaj' } },
- ]
+ title: { hu: 'Ne használd', en: 'Do not use', pl: 'Nie használaj' } },
+]
+
+function QualityGrid({ items, tr, t }) {
  return (
  <div className="grid md:grid-cols-3 gap-3">
  {GROUPS.map(group => {
@@ -438,7 +439,7 @@ const INTERACTION_PALETTE = {
 const INTERACTION_ORDER = ['SYNERGISTIC', 'COMPLEMENTARY', 'COMPATIBLE', 'TIMING', 'CAUTION', 'AVOID']
 function InteractionsOrbit({ items, tr }) {
  if (!items?.length) return null
- const sorted = [...items].sort((a, b) => {
+ const sorted = items.toSorted((a, b) => {
  const ai = INTERACTION_ORDER.indexOf(a.status); const bi = INTERACTION_ORDER.indexOf(b.status)
  return (ai === -1 ? 99 : ai) - (bi === -1 ? 99 : bi)
  })
@@ -570,8 +571,8 @@ function SafetyTriptych({ profile, accent, tr, t }) {
 
 // ─── Related Peptides, fixed-corner layout, click jumps to peptide ─
 function RelatedCard({ peptide, onJump, tr, t }) {
- if (!peptide) return null
  const tiltRef = useTilt(10)
+ if (!peptide) return null
  return (
  <button
  ref={tiltRef}
@@ -1133,6 +1134,7 @@ function StudyCard({ s, accent, tr, t }) {
 }
 
 export default function EntryDetail({ peptide, onClose, onJump }) {
+ if (!peptide) return null
  const { t, tr, lang } = useLang()
  const { theme } = useTheme()
  const { library } = useLibrary()
@@ -1181,8 +1183,6 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  ro.observe(parent)
  return () => ro.disconnect()
  }, [peptide.name])
-
- if (!peptide) return null
 
  const accent = peptide.accentColor || '#a78bfa'
  const tierMeta = TIER_META[peptide.tier] || TIER_META[1]

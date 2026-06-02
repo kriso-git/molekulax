@@ -18,9 +18,9 @@ export default function BloodworkProtocol({ bloodwork, accent = '#fbbf24' }) {
   const { t, tr } = useLang()
   if (!bloodwork) return null
 
-  const phases = PHASE_ORDER
-    .map(key => (bloodwork[key] ? { key, ...bloodwork[key] } : null))
-    .filter(Boolean)
+  const phases = PHASE_ORDER.flatMap(key => {
+    return bloodwork[key] ? [{ key, ...bloodwork[key] }] : []
+  })
 
   if (phases.length === 0) return null
 

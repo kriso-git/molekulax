@@ -11,7 +11,8 @@ import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
 import SideLibrarySwitcher from './components/SideLibrarySwitcher'
 import AffiliateButton from './components/AffiliateButton'
-import EntryDetailRoute, { isEntryDetailHash } from './components/library/EntryDetailRoute'
+import EntryDetailRoute from './components/library/EntryDetailRoute'
+import { isEntryDetailHash } from './components/library/entryHash'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
 import { ThemeProvider } from './theme/ThemeContext'
@@ -23,11 +24,14 @@ import { LibraryProvider } from './context/LibraryContext'
 // audit (Home mobile Perf 65) tied directly to eager framer-motion load.
 const LibraryCube = lazy(() => import('./components/library/cube-nav/LibraryCube'))
 
+function readHash() {
+  return typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, '')
+}
+
 function useHashRoute() {
-  const read = () => (typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, ''))
-  const [hash, setHash] = useState(read)
+  const [hash, setHash] = useState(readHash)
   useEffect(() => {
-    const onChange = () => setHash(read())
+    const onChange = () => setHash(readHash())
     window.addEventListener('hashchange', onChange)
     return () => window.removeEventListener('hashchange', onChange)
   }, [])

@@ -259,7 +259,7 @@ function Modal({ cat, idx, libraryId, onClose }) {
  const pid = entryIds[i]
  return pid ? (
  <button
- key={i}
+ key={pid || `${p}-${i}`}
  onClick={() => openEntryInGallery(libraryId, pid, onClose)}
  className="group text-[11px] px-3 py-1.5 rounded-full font-mono tracking-wide font-semibold flex items-center gap-1.5 transition-all duration-200"
  style={{ background: `${color}16`, border: `1px solid ${color}40`, color }}
@@ -272,7 +272,7 @@ function Modal({ cat, idx, libraryId, onClose }) {
  </svg>
  </button>
  ) : (
- <span key={i} className="text-[11px] px-3 py-1.5 rounded-full font-mono tracking-wide font-semibold opacity-60"
+ <span key={pid || `${p}-${i}`} className="text-[11px] px-3 py-1.5 rounded-full font-mono tracking-wide font-semibold opacity-60"
  style={{ background: `${color}0d`, border: `1px solid ${color}25`, color }}>
  {p}
  </span>
@@ -358,7 +358,15 @@ export default function EffectsSection() {
  key={i}
  className="group rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 select-none"
  style={{ border: '1px solid var(--tint-soft-border)', background: 'var(--tint-soft)' }}
+ role="button"
+ tabIndex={0}
  onClick={() => setActive({ cat, idx: i })}
+ onKeyDown={(e) => {
+ if (e.key === 'Enter' || e.key === ' ') {
+ e.preventDefault()
+ setActive({ cat, idx: i })
+ }
+ }}
  onMouseEnter={e => {
  e.currentTarget.style.border = `1px solid ${cat.color}40`
  e.currentTarget.style.boxShadow = `0 0 40px ${cat.glow}`
@@ -394,7 +402,7 @@ export default function EffectsSection() {
  const pid = (cat.entryIds || cat.peptideIds || [])[j]
  if (!pid) {
  return (
- <span key={j} className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide opacity-70"
+ <span key={pid || `${p}-${j}`} className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide opacity-70"
  style={{ background: `${cat.color}14`, border: `1px solid ${cat.color}35`, color: cat.color }}>
  {p}
  </span>
@@ -402,7 +410,7 @@ export default function EffectsSection() {
  }
  return (
  <button
- key={j}
+ key={pid || `${p}-${j}`}
  type="button"
  onClick={e => {
  e.stopPropagation()

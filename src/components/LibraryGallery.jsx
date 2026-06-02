@@ -304,7 +304,10 @@ export default function LibraryGallery({
  const metaList = library.meta || library.entries || []
 
  const top10 = useMemo(
- () => (library.topEntries || []).map(id => metaList.find(p => p.id === id)).filter(Boolean),
+ () => (library.topEntries || []).flatMap(id => {
+ const entry = metaList.find(p => p.id === id)
+ return entry ? [entry] : []
+ }),
  [library, metaList]
  )
 
@@ -706,6 +709,7 @@ export default function LibraryGallery({
  value={query}
  onChange={(e) => setQuery(e.target.value)}
  placeholder={t('gal.all.search')}
+ aria-label={t('gal.all.search')}
  className="w-full pl-11 pr-4 py-3 rounded-xl text-white text-sm placeholder:text-gray-600
  focus:outline-none focus:border-[#818cf8]/50 transition-colors"
  style={{
