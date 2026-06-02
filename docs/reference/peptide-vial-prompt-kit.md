@@ -99,4 +99,44 @@ Aspect: 1:1 square, prefer 2048×2048.
 | 38 | klow-protocol.png | KLOW Protocol | 10 mg | — |
 | 39 | lipo-c.png | Lipo-C | 100 mg | **pink/magenta (see exceptions)** |
 
+---
+
+## Regenerate — currently-imaged peptides (14)
+
+These 14 already have a real image but in the OLD style (the original photos / GHK-Cu-era
+renders), or the file is now missing. Regenerate them with the **same EDIT-PROMPT** (Tirzepatide
+reference) so the whole gallery is one consistent style. Save as `tmp/gemini-vials/<id>.png`
+(lowercase id). **`hcg-peptid` / `hmg-peptid` / `epo` / `glow` image files are currently MISSING
+from the repo (broken on the live site) — regenerating these fixes them too.**
+
+| # | save as `tmp/gemini-vials/…` | `{{NAME}}` | `{{AMOUNT}}` | `{{APPEARANCE}}` |
+|---|---|---|---|---|
+| 1 | ghk-cu.png | GHK-Cu | 100 mg | **light blue/teal (see below)** |
+| 2 | retatrutide.png | Retatrutide | 10 mg | — |
+| 3 | bpc-157.png | BPC-157 | 5 mg | — |
+| 4 | tb-500.png | TB-500 | 5 mg | — |
+| 5 | cjc-1295.png | CJC-1295 | 5 mg | — |
+| 6 | ipamorelin.png | Ipamorelin | 5 mg | — |
+| 7 | melanotan-2.png | Melanotan-2 | 10 mg | — |
+| 8 | pt-141.png | PT-141 | 10 mg | — |
+| 9 | sermorelin.png | Sermorelin | 5 mg | — |
+| 10 | epithalon.png | Epithalon | 10 mg | — |
+| 11 | hcg-peptid.png | HCG | 5000 IU | — |
+| 12 | hmg-peptid.png | HMG | 75 IU | — |
+| 13 | epo.png | EPO | 3000 IU | **clear liquid (see below)** |
+| 14 | glow.png | GLOW | 70 mg | **off-white + faint blue (see below)** |
+
+**Regenerate-table appearance exceptions:**
+- **ghk-cu:** *a light blue / teal lyophilized powder cake filling ~35% of the vial (the copper-peptide complex colour — NOT white, NOT purple)*
+- **epo:** *a clear, colourless transparent liquid filling ~80% of the vial (an aqueous solution, NOT a powder cake), with a subtle meniscus*
+- **glow:** *an off-white lyophilized powder cake filling ~35% with a faint blue cast (the blend contains GHK-Cu)*
+
+> Amounts are research-grade suggestions — adjust if you prefer. Filenames use the lowercase
+> entry id (not the current capitalised `GHK-Cu.png` etc.); the integration step rebinds every
+> peptide image to `/peptides/<id>.png` so the whole library uses one naming convention. (The
+> integrate script needs a `--regenerate` mode to bind these already-imaged entries — ask Claude
+> to add it when this batch is ready.)
+
+---
+
 Full rationale + integration details: `docs/superpowers/specs/2026-06-02-peptide-vial-prompt-kit-design.md`.
