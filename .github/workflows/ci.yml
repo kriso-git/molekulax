@@ -32,6 +32,10 @@ jobs:
         run: npm run verify:consistency
       - name: Build
         run: npm run build
+      - name: Install Puppeteer Chromium
+        run: npx puppeteer browsers install chrome
+      - name: Render smoke (headless)
+        run: npm run smoke
 
   pmid-gate:
     name: PMID integrity gate (NCBI)
