@@ -1,0 +1,19 @@
+# Dependabot configuration — https://docs.github.com/code-security/dependabot
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    ignore:
+      # vite 5 -> 8 is a breaking 3-major jump: vite-plugin-pwa@1.3, @vitejs/plugin-react@4
+      # and the custom inline-css Vite plugin are all built for Vite 5, so the bump fails to
+      # build (Vercel preview deploys failed on it 2026-06-02). The underlying advisory is
+      # dev-only — vite/esbuild run at build time and are NOT shipped in the PWA bundle, so
+      # there is no production exposure. Defer major bumps; revisit deliberately if/when the
+      # plugin ecosystem supports a newer major.
+      - dependency-name: "vite"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "esbuild"
+        update-types: ["version-update:semver-major"]
