@@ -47,7 +47,7 @@ Aspect: 1:1 square, prefer 2048×2048.
 - **lipo-c:** *a soft pink/magenta lyophilized powder cake filling ~35% of the vial (pink from a B12 lipotropic blend)*
 - **nad-plus:** *an off-white powder cake with a faint tan cast filling ~35% of the vial*
 
-## 40-vial table
+## 39-vial table
 
 | # | save as `tmp/gemini-vials/…` | `{{NAME}}` | `{{AMOUNT}}` | `{{APPEARANCE}}` |
 |---|---|---|---|---|
@@ -60,36 +60,35 @@ Aspect: 1:1 square, prefer 2048×2048.
 | 7 | ghrp-2.png | GHRP-2 | 5 mg | — |
 | 8 | ghrp-6.png | GHRP-6 | 5 mg | — |
 | 9 | hexarelin.png | Hexarelin | 2 mg | — |
-| 10 | mk-677.png | MK-677 | 25 mg | — |
-| 11 | igf-1-lr3.png | IGF-1 LR3 | 1 mg | — |
-| 12 | semax.png | Semax | 30 mg | — |
-| 13 | selank.png | Selank | 30 mg | — |
-| 14 | cerebrolysin.png | Cerebrolysin | 30 mg | **liquid (see exceptions)** |
-| 15 | melanotan-1.png | Melanotan-1 | 10 mg | — |
-| 16 | kpv.png | KPV | 5 mg | — |
-| 17 | thymosin-alpha-1.png | Thymosin Alpha-1 | 5 mg | — |
-| 18 | ll-37.png | LL-37 | 5 mg | — |
-| 19 | humanin.png | Humanin | 5 mg | — |
-| 20 | mots-c.png | MOTS-c | 10 mg | — |
-| 21 | pinealon.png | Pinealon | 5 mg | — |
-| 22 | gonadorelin.png | Gonadorelin | 1 mg | — |
-| 23 | kisspeptin.png | Kisspeptin-10 | 5 mg | — |
-| 24 | oxytocin.png | Oxytocin | 5 mg | — |
-| 25 | aod-9604.png | AOD-9604 | 5 mg | — |
-| 26 | 5-amino-1mq.png | 5-Amino-1MQ | 25 mg | — |
-| 27 | nad-plus.png | NAD+ | 100 mg | **off-white+tan (see exceptions)** |
-| 28 | dsip.png | DSIP | 5 mg | — |
-| 29 | adipotide.png | Adipotide | 10 mg | — |
-| 30 | snap-8.png | SNAP-8 | 10 mg | — |
-| 31 | matrixyl-3000.png | Matrixyl 3000 | 5 mg | — |
-| 32 | ss-31.png | SS-31 | 40 mg | — |
-| 33 | cagrilintide.png | Cagrilintide | 5 mg | — |
-| 34 | mazdutide.png | Mazdutide | 10 mg | — |
-| 35 | survodutide.png | Survodutide | 5 mg | — |
-| 36 | na-semax-amidate.png | NA Semax Amidate | 30 mg | — |
-| 37 | adalank.png | Adalank | 10 mg | — |
-| 38 | adamax.png | Adamax | 5 mg | — |
-| 39 | klow-protocol.png | KLOW Protocol | 10 mg | — |
-| 40 | lipo-c.png | Lipo-C | 100 mg | **pink/magenta (see exceptions)** |
+| 10 | igf-1-lr3.png | IGF-1 LR3 | 1 mg | — |
+| 11 | semax.png | Semax | 30 mg | — |
+| 12 | selank.png | Selank | 30 mg | — |
+| 13 | cerebrolysin.png | Cerebrolysin | 30 mg | **liquid (see exceptions)** |
+| 14 | melanotan-1.png | Melanotan-1 | 10 mg | — |
+| 15 | kpv.png | KPV | 5 mg | — |
+| 16 | thymosin-alpha-1.png | Thymosin Alpha-1 | 5 mg | — |
+| 17 | ll-37.png | LL-37 | 5 mg | — |
+| 18 | humanin.png | Humanin | 5 mg | — |
+| 19 | mots-c.png | MOTS-c | 10 mg | — |
+| 20 | pinealon.png | Pinealon | 5 mg | — |
+| 21 | gonadorelin.png | Gonadorelin | 1 mg | — |
+| 22 | kisspeptin.png | Kisspeptin-10 | 5 mg | — |
+| 23 | oxytocin.png | Oxytocin | 5 mg | — |
+| 24 | aod-9604.png | AOD-9604 | 5 mg | — |
+| 25 | 5-amino-1mq.png | 5-Amino-1MQ | 25 mg | — |
+| 26 | nad-plus.png | NAD+ | 100 mg | **off-white+tan (see exceptions)** |
+| 27 | dsip.png | DSIP | 5 mg | — |
+| 28 | adipotide.png | Adipotide | 10 mg | — |
+| 29 | snap-8.png | SNAP-8 | 10 mg | — |
+| 30 | matrixyl-3000.png | Matrixyl 3000 | 5 mg | — |
+| 31 | ss-31.png | SS-31 | 40 mg | — |
+| 32 | cagrilintide.png | Cagrilintide | 5 mg | — |
+| 33 | mazdutide.png | Mazdutide | 10 mg | — |
+| 34 | survodutide.png | Survodutide | 5 mg | — |
+| 35 | na-semax-amidate.png | NA Semax Amidate | 30 mg | — |
+| 36 | adalank.png | Adalank | 10 mg | — |
+| 37 | adamax.png | Adamax | 5 mg | — |
+| 38 | klow-protocol.png | KLOW Protocol | 10 mg | — |
+| 39 | lipo-c.png | Lipo-C | 100 mg | **pink/magenta (see exceptions)** |
 
 Full rationale + integration details: `docs/superpowers/specs/2026-06-02-peptide-vial-prompt-kit-design.md`.

@@ -258,19 +258,6 @@ export const LIBRARY_ENTRY_META = [
     "tier": 2
   },
   {
-    "id": "mk-677",
-    "name": "MK-677 (Ibutamoren)",
-    "image": null,
-    "accentColor": "#fde047",
-    "tagColor": "rgba(253,224,71,0.16)",
-    "shortDesc": {
-      "hu": "Orálisan ható ghrelinmimetikum, nem peptid",
-      "en": "Orally active ghrelin mimetic, non-peptide",
-      "pl": "Doustny mimetyk greliny, niepeptydowy"
-    },
-    "tier": 3
-  },
-  {
     "id": "igf-1-lr3",
     "name": "IGF-1 LR3",
     "image": null,
@@ -618,19 +605,6 @@ export const LIBRARY_ENTRY_META = [
       "hu": "Humán Menopauzális Gonadotropin: FSH+LH 1:1 spermatogenezis-induction",
       "en": "Human Menopausal Gonadotropin: FSH+LH 1:1 spermatogenesis induction",
       "pl": "Ludzka Gonadotropina Menopauzalna: indukcja spermatogenezy FSH+LH 1:1"
-    },
-    "tier": 4
-  },
-  {
-    "id": "fsh-rec-peptid",
-    "name": "rFSH (fertilitás)",
-    "image": "/peptides/rFSH.png",
-    "accentColor": "#fbbf24",
-    "tagColor": "rgba(251,191,36,0.16)",
-    "shortDesc": {
-      "hu": "Rekombináns FSH: szelektív Sertoli-sejt stimulus, spermatogenezis",
-      "en": "Recombinant FSH: selective Sertoli cell stimulation, spermatogenesis",
-      "pl": "Rekombinowany FSH: selektywna stymulacja komórek Sertolego, spermatogeneza"
     },
     "tier": 4
   },

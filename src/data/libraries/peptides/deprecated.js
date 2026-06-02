@@ -15,4 +15,6 @@ export const DEPRECATED_PEPTIDE_IDS = [
   'pemvidutide',
   'pentadeca-arginate',
   'thymulin',
+  'fsh-rec-peptid',
+  'mk-677',
 ]

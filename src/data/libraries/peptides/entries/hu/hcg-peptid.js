@@ -70,14 +70,12 @@ export default {
   "halfLife": "uHCG ~24-36 óra; rHCG ~38 óra",
   "interactionsWith": [
     "hmg-peptid",
-    "fsh-rec-peptid",
     "hcg-perf",
     "gonadorelin"
   ],
   "wadaStatus": "banned",
   "related": [
     "hmg-peptid",
-    "fsh-rec-peptid",
     "hcg-perf",
     "gonadorelin"
   ],

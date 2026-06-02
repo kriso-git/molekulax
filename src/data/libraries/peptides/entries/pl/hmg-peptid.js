@@ -40,7 +40,6 @@ export default {
   "halfLifeActive": "Efekt kliniczny 2-3 dni (po pojedynczym bolusie SC, mieszany rozpad komponentów FSH+LH)",
   "interactionsWith": [
     "hcg-peptid",
-    "fsh-rec-peptid",
     "hmg-perf",
     "kisspeptin",
     "anastrozol",
@@ -160,7 +159,6 @@ export default {
   ],
   "related": [
     "hcg-peptid",
-    "fsh-rec-peptid",
     "hmg-perf",
     "kisspeptin"
   ],
