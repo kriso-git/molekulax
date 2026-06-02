@@ -4,7 +4,7 @@
 export default {
   "id": "retatrutide",
   "name": "Retatrutide",
-  "image": "/peptides/Retatrutide.png",
+  "image": "/peptides/retatrutide.png",
   "accentColor": "#6ee7b7",
   "tagColor": "rgba(16,185,129,0.16)",
   "tagText": "#6ee7b7",

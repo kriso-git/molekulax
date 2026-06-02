@@ -4,7 +4,7 @@
 export default {
   "id": "liraglutide",
   "name": "Liraglutide",
-  "image": null,
+  "image": "/peptides/liraglutide.png",
   "accentColor": "#38bdf8",
   "tagColor": "rgba(56,189,248,0.16)",
   "tagText": "#38bdf8",

@@ -4,7 +4,7 @@
 export default {
   "id": "thymosin-alpha-1",
   "name": "Thymosin Alpha-1",
-  "image": null,
+  "image": "/peptides/thymosin-alpha-1.png",
   "accentColor": "#5eead4",
   "tagColor": "rgba(94,234,212,0.16)",
   "tagText": "#5eead4",

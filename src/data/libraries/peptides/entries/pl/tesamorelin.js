@@ -4,7 +4,7 @@
 export default {
   "id": "tesamorelin",
   "name": "Tesamorelin",
-  "image": null,
+  "image": "/peptides/tesamorelin.png",
   "accentColor": "#34d399",
   "tagColor": "rgba(52,211,153,0.16)",
   "tagText": "#34d399",

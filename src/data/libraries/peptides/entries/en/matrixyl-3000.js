@@ -4,7 +4,7 @@
 export default {
   "id": "matrixyl-3000",
   "name": "Matrixyl 3000",
-  "image": null,
+  "image": "/peptides/matrixyl-3000.png",
   "accentColor": "#fbcfe8",
   "tagColor": "rgba(251,207,232,0.16)",
   "tagText": "#fbcfe8",

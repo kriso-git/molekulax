@@ -4,7 +4,7 @@
 export default {
   "id": "cjc-1295",
   "name": "CJC-1295",
-  "image": "/peptides/CJC-1295.png",
+  "image": "/peptides/cjc-1295.png",
   "accentColor": "#fcd34d",
   "tagColor": "rgba(217,119,6,0.15)",
   "tagText": "#fcd34d",

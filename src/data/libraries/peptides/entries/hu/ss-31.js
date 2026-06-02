@@ -4,7 +4,7 @@
 export default {
   "id": "ss-31",
   "name": "SS-31 (Elamipretide)",
-  "image": null,
+  "image": "/peptides/ss-31.png",
   "accentColor": "#22d3ee",
   "tagColor": "rgba(34,211,238,0.16)",
   "tagText": "#22d3ee",

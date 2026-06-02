@@ -4,7 +4,7 @@
 export default {
   "id": "bpc-157",
   "name": "BPC-157",
-  "image": "/peptides/BPC-157.png",
+  "image": "/peptides/bpc-157.png",
   "accentColor": "#818cf8",
   "tagColor": "rgba(99,102,241,0.18)",
   "tagText": "#818cf8",

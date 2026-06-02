@@ -4,7 +4,7 @@
 export default {
   "id": "aod-9604",
   "name": "AOD-9604",
-  "image": null,
+  "image": "/peptides/aod-9604.png",
   "accentColor": "#bef264",
   "tagColor": "rgba(190,242,100,0.16)",
   "tagText": "#bef264",

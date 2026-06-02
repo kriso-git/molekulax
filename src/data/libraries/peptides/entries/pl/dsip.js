@@ -4,7 +4,7 @@
 export default {
   "id": "dsip",
   "name": "DSIP (Delta Sleep Inducing Peptide)",
-  "image": null,
+  "image": "/peptides/dsip.png",
   "accentColor": "#93c5fd",
   "tagColor": "rgba(147,197,253,0.16)",
   "tagText": "#93c5fd",

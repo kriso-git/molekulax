@@ -4,7 +4,7 @@
 export default {
   "id": "humanin",
   "name": "Humanin",
-  "image": null,
+  "image": "/peptides/humanin.png",
   "accentColor": "#a3e635",
   "tagColor": "rgba(163,230,53,0.16)",
   "tagText": "#a3e635",

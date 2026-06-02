@@ -4,7 +4,7 @@
 export default {
   "id": "5-amino-1mq",
   "name": "5-Amino-1MQ",
-  "image": null,
+  "image": "/peptides/5-amino-1mq.png",
   "accentColor": "#fef08a",
   "tagColor": "rgba(254,240,138,0.16)",
   "tagText": "#fef08a",

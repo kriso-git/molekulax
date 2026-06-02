@@ -4,7 +4,7 @@
 export default {
   "id": "adipotide",
   "name": "Adipotide (FTPP)",
-  "image": null,
+  "image": "/peptides/adipotide.png",
   "accentColor": "#fdba74",
   "tagColor": "rgba(253,186,116,0.16)",
   "tagText": "#fdba74",

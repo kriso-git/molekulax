@@ -13,7 +13,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "ghk-cu",
     "name": "GHK-Cu",
-    "image": "/peptides/GHK-Cu.png",
+    "image": "/peptides/ghk-cu.png",
     "accentColor": "#67e8f9",
     "tagColor": "rgba(6,182,212,0.16)",
     "shortDesc": {
@@ -26,7 +26,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "retatrutide",
     "name": "Retatrutide",
-    "image": "/peptides/Retatrutide.png",
+    "image": "/peptides/retatrutide.png",
     "accentColor": "#6ee7b7",
     "tagColor": "rgba(16,185,129,0.16)",
     "shortDesc": {
@@ -39,7 +39,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "bpc-157",
     "name": "BPC-157",
-    "image": "/peptides/BPC-157.png",
+    "image": "/peptides/bpc-157.png",
     "accentColor": "#818cf8",
     "tagColor": "rgba(99,102,241,0.18)",
     "shortDesc": {
@@ -52,7 +52,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "tb-500",
     "name": "TB-500",
-    "image": "/peptides/TB-500.png",
+    "image": "/peptides/tb-500.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(139,92,246,0.18)",
     "shortDesc": {
@@ -65,7 +65,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "cjc-1295",
     "name": "CJC-1295",
-    "image": "/peptides/CJC-1295.png",
+    "image": "/peptides/cjc-1295.png",
     "accentColor": "#fcd34d",
     "tagColor": "rgba(217,119,6,0.15)",
     "shortDesc": {
@@ -78,7 +78,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "ipamorelin",
     "name": "Ipamorelin",
-    "image": "/peptides/Ipamorelin.png",
+    "image": "/peptides/ipamorelin.png",
     "accentColor": "#5eead4",
     "tagColor": "rgba(20,184,166,0.16)",
     "shortDesc": {
@@ -91,7 +91,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "melanotan-2",
     "name": "Melanotan-2",
-    "image": "/peptides/Melanotan-2.png",
+    "image": "/peptides/melanotan-2.png",
     "accentColor": "#f59e0b",
     "tagColor": "rgba(245,158,11,0.16)",
     "shortDesc": {
@@ -104,7 +104,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "pt-141",
     "name": "PT-141",
-    "image": "/peptides/PT-141.png",
+    "image": "/peptides/pt-141.png",
     "accentColor": "#fda4af",
     "tagColor": "rgba(244,63,94,0.14)",
     "shortDesc": {
@@ -117,7 +117,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "sermorelin",
     "name": "Sermorelin",
-    "image": "/peptides/Sermorelin.png",
+    "image": "/peptides/sermorelin.png",
     "accentColor": "#c084fc",
     "tagColor": "rgba(168,85,247,0.18)",
     "shortDesc": {
@@ -130,7 +130,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "epithalon",
     "name": "Epithalon",
-    "image": "/peptides/Epithalon.png",
+    "image": "/peptides/epithalon.png",
     "accentColor": "#fde68a",
     "tagColor": "rgba(161,98,7,0.15)",
     "shortDesc": {
@@ -156,7 +156,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "hgh",
     "name": "HGH",
-    "image": null,
+    "image": "/peptides/hgh.png",
     "accentColor": "#fcd34d",
     "tagColor": "rgba(252,211,77,0.16)",
     "shortDesc": {
@@ -169,7 +169,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "cjc-1295-ipamorelin",
     "name": "CJC-1295 / Ipamorelin",
-    "image": null,
+    "image": "/peptides/cjc-1295-ipamorelin.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.16)",
     "shortDesc": {
@@ -182,7 +182,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "tesamorelin",
     "name": "Tesamorelin",
-    "image": null,
+    "image": "/peptides/tesamorelin.png",
     "accentColor": "#34d399",
     "tagColor": "rgba(52,211,153,0.16)",
     "shortDesc": {
@@ -195,7 +195,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "semaglutide",
     "name": "Semaglutide",
-    "image": null,
+    "image": "/peptides/semaglutide.png",
     "accentColor": "#60a5fa",
     "tagColor": "rgba(96,165,250,0.16)",
     "shortDesc": {
@@ -208,7 +208,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "liraglutide",
     "name": "Liraglutide",
-    "image": null,
+    "image": "/peptides/liraglutide.png",
     "accentColor": "#38bdf8",
     "tagColor": "rgba(56,189,248,0.16)",
     "shortDesc": {
@@ -221,7 +221,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "ghrp-2",
     "name": "GHRP-2",
-    "image": null,
+    "image": "/peptides/ghrp-2.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.16)",
     "shortDesc": {
@@ -234,7 +234,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "ghrp-6",
     "name": "GHRP-6",
-    "image": null,
+    "image": "/peptides/ghrp-6.png",
     "accentColor": "#c4b5fd",
     "tagColor": "rgba(196,181,253,0.16)",
     "shortDesc": {
@@ -247,7 +247,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "hexarelin",
     "name": "Hexarelin",
-    "image": null,
+    "image": "/peptides/hexarelin.png",
     "accentColor": "#ddd6fe",
     "tagColor": "rgba(221,214,254,0.16)",
     "shortDesc": {
@@ -260,7 +260,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "igf-1-lr3",
     "name": "IGF-1 LR3",
-    "image": null,
+    "image": "/peptides/igf-1-lr3.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.16)",
     "shortDesc": {
@@ -273,7 +273,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "semax",
     "name": "Semax",
-    "image": null,
+    "image": "/peptides/semax.png",
     "accentColor": "#22d3ee",
     "tagColor": "rgba(34,211,238,0.16)",
     "shortDesc": {
@@ -286,7 +286,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "selank",
     "name": "Selank",
-    "image": null,
+    "image": "/peptides/selank.png",
     "accentColor": "#67e8f9",
     "tagColor": "rgba(103,232,249,0.16)",
     "shortDesc": {
@@ -299,7 +299,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "cerebrolysin",
     "name": "Cerebrolysin",
-    "image": null,
+    "image": "/peptides/cerebrolysin.png",
     "accentColor": "#4ade80",
     "tagColor": "rgba(74,222,128,0.16)",
     "shortDesc": {
@@ -312,7 +312,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "melanotan-1",
     "name": "Melanotan-1 (Afamelanotide)",
-    "image": null,
+    "image": "/peptides/melanotan-1.png",
     "accentColor": "#fdba74",
     "tagColor": "rgba(253,186,116,0.16)",
     "shortDesc": {
@@ -325,7 +325,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "kpv",
     "name": "KPV",
-    "image": null,
+    "image": "/peptides/kpv.png",
     "accentColor": "#86efac",
     "tagColor": "rgba(134,239,172,0.16)",
     "shortDesc": {
@@ -338,7 +338,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "thymosin-alpha-1",
     "name": "Thymosin Alpha-1",
-    "image": null,
+    "image": "/peptides/thymosin-alpha-1.png",
     "accentColor": "#5eead4",
     "tagColor": "rgba(94,234,212,0.16)",
     "shortDesc": {
@@ -351,7 +351,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "ll-37",
     "name": "LL-37 (Cathelicidin)",
-    "image": null,
+    "image": "/peptides/ll-37.png",
     "accentColor": "#f87171",
     "tagColor": "rgba(248,113,113,0.16)",
     "shortDesc": {
@@ -364,7 +364,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "humanin",
     "name": "Humanin",
-    "image": null,
+    "image": "/peptides/humanin.png",
     "accentColor": "#a3e635",
     "tagColor": "rgba(163,230,53,0.16)",
     "shortDesc": {
@@ -377,7 +377,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "mots-c",
     "name": "MOTS-c",
-    "image": null,
+    "image": "/peptides/mots-c.png",
     "accentColor": "#84cc16",
     "tagColor": "rgba(132,204,22,0.16)",
     "shortDesc": {
@@ -390,7 +390,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "pinealon",
     "name": "Pinealon",
-    "image": null,
+    "image": "/peptides/pinealon.png",
     "accentColor": "#fcd34d",
     "tagColor": "rgba(252,211,77,0.16)",
     "shortDesc": {
@@ -403,7 +403,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "gonadorelin",
     "name": "Gonadorelin (GnRH)",
-    "image": null,
+    "image": "/peptides/gonadorelin.png",
     "accentColor": "#facc15",
     "tagColor": "rgba(250,204,21,0.16)",
     "shortDesc": {
@@ -416,7 +416,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "kisspeptin",
     "name": "Kisspeptin-10",
-    "image": null,
+    "image": "/peptides/kisspeptin.png",
     "accentColor": "#fbcfe8",
     "tagColor": "rgba(251,207,232,0.16)",
     "shortDesc": {
@@ -429,7 +429,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "oxytocin",
     "name": "Oxytocin",
-    "image": null,
+    "image": "/peptides/oxytocin.png",
     "accentColor": "#fda4af",
     "tagColor": "rgba(253,164,175,0.16)",
     "shortDesc": {
@@ -442,7 +442,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "aod-9604",
     "name": "AOD-9604",
-    "image": null,
+    "image": "/peptides/aod-9604.png",
     "accentColor": "#bef264",
     "tagColor": "rgba(190,242,100,0.16)",
     "shortDesc": {
@@ -455,7 +455,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "5-amino-1mq",
     "name": "5-Amino-1MQ",
-    "image": null,
+    "image": "/peptides/5-amino-1mq.png",
     "accentColor": "#fef08a",
     "tagColor": "rgba(254,240,138,0.16)",
     "shortDesc": {
@@ -468,7 +468,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "nad-plus",
     "name": "NAD+",
-    "image": null,
+    "image": "/peptides/nad-plus.png",
     "accentColor": "#bbf7d0",
     "tagColor": "rgba(187,247,208,0.16)",
     "shortDesc": {
@@ -481,7 +481,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "dsip",
     "name": "DSIP (Delta Sleep Inducing Peptide)",
-    "image": null,
+    "image": "/peptides/dsip.png",
     "accentColor": "#93c5fd",
     "tagColor": "rgba(147,197,253,0.16)",
     "shortDesc": {
@@ -494,7 +494,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "adipotide",
     "name": "Adipotide (FTPP)",
-    "image": null,
+    "image": "/peptides/adipotide.png",
     "accentColor": "#fdba74",
     "tagColor": "rgba(253,186,116,0.16)",
     "shortDesc": {
@@ -507,7 +507,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "snap-8",
     "name": "SNAP-8",
-    "image": null,
+    "image": "/peptides/snap-8.png",
     "accentColor": "#fda4af",
     "tagColor": "rgba(253,164,175,0.16)",
     "shortDesc": {
@@ -520,7 +520,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "matrixyl-3000",
     "name": "Matrixyl 3000",
-    "image": null,
+    "image": "/peptides/matrixyl-3000.png",
     "accentColor": "#fbcfe8",
     "tagColor": "rgba(251,207,232,0.16)",
     "shortDesc": {
@@ -533,7 +533,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "ss-31",
     "name": "SS-31 (Elamipretide)",
-    "image": null,
+    "image": "/peptides/ss-31.png",
     "accentColor": "#22d3ee",
     "tagColor": "rgba(34,211,238,0.16)",
     "shortDesc": {
@@ -546,7 +546,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "cagrilintide",
     "name": "Cagrilintide (AM833)",
-    "image": null,
+    "image": "/peptides/cagrilintide.png",
     "accentColor": "#fb7185",
     "tagColor": "rgba(251,113,133,0.16)",
     "shortDesc": {
@@ -559,7 +559,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "mazdutide",
     "name": "Mazdutide (IBI362)",
-    "image": null,
+    "image": "/peptides/mazdutide.png",
     "accentColor": "#fda4af",
     "tagColor": "rgba(253,164,175,0.16)",
     "shortDesc": {
@@ -572,7 +572,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "survodutide",
     "name": "Survodutide",
-    "image": null,
+    "image": "/peptides/survodutide.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.16)",
     "shortDesc": {
@@ -585,7 +585,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "hcg-peptid",
     "name": "HCG (fertilitás)",
-    "image": "/peptides/HCG.png",
+    "image": "/peptides/hcg-peptid.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.16)",
     "shortDesc": {
@@ -598,7 +598,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "hmg-peptid",
     "name": "HMG (fertilitás)",
-    "image": "/peptides/HMG.png",
+    "image": "/peptides/hmg-peptid.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.16)",
     "shortDesc": {
@@ -611,7 +611,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "epo",
     "name": "EPO",
-    "image": "/peptides/EPO.png",
+    "image": "/peptides/epo.png",
     "accentColor": "#f87171",
     "tagColor": "rgba(248,113,113,0.16)",
     "shortDesc": {
@@ -624,7 +624,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "glow",
     "name": "GLOW",
-    "image": "/peptides/GLOW.png",
+    "image": "/peptides/glow.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -637,7 +637,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "na-semax-amidate",
     "name": "NA Semax Amidate",
-    "image": null,
+    "image": "/peptides/na-semax-amidate.png",
     "accentColor": "#22d3ee",
     "tagColor": "rgba(34,211,238,0.16)",
     "shortDesc": {
@@ -650,7 +650,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "adalank",
     "name": "Adalank (NA Selank Amidate)",
-    "image": null,
+    "image": "/peptides/adalank.png",
     "accentColor": "#67e8f9",
     "tagColor": "rgba(103,232,249,0.16)",
     "shortDesc": {
@@ -663,7 +663,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "adamax",
     "name": "Adamax",
-    "image": null,
+    "image": "/peptides/adamax.png",
     "accentColor": "#a5b4fc",
     "tagColor": "rgba(165,180,252,0.16)",
     "shortDesc": {
@@ -676,7 +676,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "klow-protocol",
     "name": "KLOW Protocol",
-    "image": null,
+    "image": "/peptides/klow-protocol.png",
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.16)",
     "shortDesc": {
@@ -689,7 +689,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "lipo-c",
     "name": "Lipo-C",
-    "image": null,
+    "image": "/peptides/lipo-c.png",
     "accentColor": "#fde047",
     "tagColor": "rgba(253,224,71,0.16)",
     "shortDesc": {

@@ -4,7 +4,7 @@
 export default {
   "id": "mots-c",
   "name": "MOTS-c",
-  "image": null,
+  "image": "/peptides/mots-c.png",
   "accentColor": "#84cc16",
   "tagColor": "rgba(132,204,22,0.16)",
   "tagText": "#84cc16",

@@ -4,7 +4,7 @@
 export default {
   "id": "adalank",
   "name": "Adalank (NA Selank Amidate)",
-  "image": null,
+  "image": "/peptides/adalank.png",
   "accentColor": "#67e8f9",
   "tagColor": "rgba(103,232,249,0.16)",
   "tagText": "#67e8f9",

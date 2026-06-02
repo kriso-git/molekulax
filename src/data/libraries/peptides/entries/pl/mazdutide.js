@@ -4,7 +4,7 @@
 export default {
   "id": "mazdutide",
   "name": "Mazdutide (IBI362)",
-  "image": null,
+  "image": "/peptides/mazdutide.png",
   "accentColor": "#fda4af",
   "tagColor": "rgba(253,164,175,0.16)",
   "tagText": "#fda4af",

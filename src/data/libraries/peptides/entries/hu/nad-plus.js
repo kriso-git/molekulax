@@ -4,7 +4,7 @@
 export default {
   "id": "nad-plus",
   "name": "NAD+",
-  "image": null,
+  "image": "/peptides/nad-plus.png",
   "accentColor": "#bbf7d0",
   "tagColor": "rgba(187,247,208,0.16)",
   "tagText": "#bbf7d0",

@@ -6,7 +6,7 @@
 export default {
   "id": "hmg-peptid",
   "name": "HMG (fertilitás)",
-  "image": "/peptides/HMG.png",
+  "image": "/peptides/hmg-peptid.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "shortDesc": "Humán Menopauzális Gonadotropin — 1:1 FSH+LH glikoprotein. Teljes spermatogenezis-induction (Leydig + Sertoli kettős axis), IVF szuper-ovuláció. Klinikai Rx infertilitás-indikációkra (HypoH férfi + IVF-ovulation-induction nő), NEM doping. Cross-frame: AAS-PCT-kontextusban a `hmg-perf` entry.",

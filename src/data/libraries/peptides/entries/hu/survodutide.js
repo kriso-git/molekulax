@@ -4,7 +4,7 @@
 export default {
   "id": "survodutide",
   "name": "Survodutide",
-  "image": null,
+  "image": "/peptides/survodutide.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "tagText": "#fbbf24",

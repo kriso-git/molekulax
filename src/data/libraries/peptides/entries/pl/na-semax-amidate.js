@@ -4,7 +4,7 @@
 export default {
   "id": "na-semax-amidate",
   "name": "NA Semax Amidate",
-  "image": null,
+  "image": "/peptides/na-semax-amidate.png",
   "accentColor": "#22d3ee",
   "tagColor": "rgba(34,211,238,0.16)",
   "tagText": "#22d3ee",

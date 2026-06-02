@@ -4,7 +4,7 @@
 export default {
   "id": "pinealon",
   "name": "Pinealon",
-  "image": null,
+  "image": "/peptides/pinealon.png",
   "accentColor": "#fcd34d",
   "tagColor": "rgba(252,211,77,0.16)",
   "tagText": "#fcd34d",

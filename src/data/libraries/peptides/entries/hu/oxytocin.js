@@ -4,7 +4,7 @@
 export default {
   "id": "oxytocin",
   "name": "Oxytocin",
-  "image": null,
+  "image": "/peptides/oxytocin.png",
   "accentColor": "#fda4af",
   "tagColor": "rgba(253,164,175,0.16)",
   "tagText": "#fda4af",

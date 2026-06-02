@@ -7,7 +7,7 @@
 export default {
   "id": "epo",
   "name": "EPO",
-  "image": "/peptides/EPO.png",
+  "image": "/peptides/epo.png",
   "accentColor": "#f87171",
   "tagColor": "rgba(248,113,113,0.16)",
   "shortDesc": "Erythropoietin — EPO-receptor agonist 165-AA glycoprotein. CKD anemia treatment (clinical Rx); WADA-strictly-banned in endurance-doping context.",

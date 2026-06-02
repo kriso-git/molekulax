@@ -4,7 +4,7 @@
 export default {
   "id": "snap-8",
   "name": "SNAP-8",
-  "image": null,
+  "image": "/peptides/snap-8.png",
   "accentColor": "#fda4af",
   "tagColor": "rgba(253,164,175,0.16)",
   "tagText": "#fda4af",

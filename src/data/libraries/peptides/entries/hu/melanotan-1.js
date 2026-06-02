@@ -4,7 +4,7 @@
 export default {
   "id": "melanotan-1",
   "name": "Melanotan-1 (Afamelanotide)",
-  "image": null,
+  "image": "/peptides/melanotan-1.png",
   "accentColor": "#fdba74",
   "tagColor": "rgba(253,186,116,0.16)",
   "tagText": "#fdba74",

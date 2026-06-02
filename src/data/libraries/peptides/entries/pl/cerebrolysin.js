@@ -4,7 +4,7 @@
 export default {
   "id": "cerebrolysin",
   "name": "Cerebrolysin",
-  "image": null,
+  "image": "/peptides/cerebrolysin.png",
   "accentColor": "#4ade80",
   "tagColor": "rgba(74,222,128,0.16)",
   "tagText": "#4ade80",

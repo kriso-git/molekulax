@@ -4,7 +4,7 @@
 export default {
   "id": "lipo-c",
   "name": "Lipo-C",
-  "image": null,
+  "image": "/peptides/lipo-c.png",
   "accentColor": "#fde047",
   "tagColor": "rgba(253,224,71,0.16)",
   "tagText": "#fde047",

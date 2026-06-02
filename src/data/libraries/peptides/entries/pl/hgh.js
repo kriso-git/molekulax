@@ -4,7 +4,7 @@
 export default {
   "id": "hgh",
   "name": "HGH",
-  "image": null,
+  "image": "/peptides/hgh.png",
   "accentColor": "#fcd34d",
   "tagColor": "rgba(252,211,77,0.16)",
   "tagText": "#fcd34d",

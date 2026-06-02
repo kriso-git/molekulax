@@ -4,7 +4,7 @@
 export default {
   "id": "semax",
   "name": "Semax",
-  "image": null,
+  "image": "/peptides/semax.png",
   "accentColor": "#22d3ee",
   "tagColor": "rgba(34,211,238,0.16)",
   "tagText": "#22d3ee",

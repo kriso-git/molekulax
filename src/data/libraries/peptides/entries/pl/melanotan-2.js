@@ -4,7 +4,7 @@
 export default {
   "id": "melanotan-2",
   "name": "Melanotan-2",
-  "image": "/peptides/Melanotan-2.png",
+  "image": "/peptides/melanotan-2.png",
   "accentColor": "#f59e0b",
   "tagColor": "rgba(245,158,11,0.16)",
   "tagText": "#fbbf24",

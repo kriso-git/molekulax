@@ -4,7 +4,7 @@
 export default {
   "id": "epithalon",
   "name": "Epithalon",
-  "image": "/peptides/Epithalon.png",
+  "image": "/peptides/epithalon.png",
   "accentColor": "#fde68a",
   "tagColor": "rgba(161,98,7,0.15)",
   "tagText": "#fde68a",
