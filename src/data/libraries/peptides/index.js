@@ -710,7 +710,8 @@ export const TOP_ENTRY_IDS = [
   "tb-500",
   "hgh",
   "cjc-1295-ipamorelin",
-  "tesamorelin"
+  "tesamorelin",
+  "mots-c"
 ]
 
 export const peptidesLibrary = {
