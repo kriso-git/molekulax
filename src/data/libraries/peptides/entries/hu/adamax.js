@@ -4,7 +4,7 @@
 export default {
   "id": "adamax",
   "name": "Adamax",
-  "image": null,
+  "image": "/peptides/adamax.png",
   "accentColor": "#a5b4fc",
   "tagColor": "rgba(165,180,252,0.16)",
   "tagText": "#a5b4fc",

@@ -4,7 +4,7 @@
 export default {
   "id": "pt-141",
   "name": "PT-141",
-  "image": "/peptides/PT-141.png",
+  "image": "/peptides/pt-141.png",
   "accentColor": "#fda4af",
   "tagColor": "rgba(244,63,94,0.14)",
   "tagText": "#fda4af",

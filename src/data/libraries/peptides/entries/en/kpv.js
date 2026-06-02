@@ -4,7 +4,7 @@
 export default {
   "id": "kpv",
   "name": "KPV",
-  "image": null,
+  "image": "/peptides/kpv.png",
   "accentColor": "#86efac",
   "tagColor": "rgba(134,239,172,0.16)",
   "tagText": "#86efac",

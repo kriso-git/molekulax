@@ -4,7 +4,7 @@
 export default {
   "id": "ghk-cu",
   "name": "GHK-Cu",
-  "image": "/peptides/GHK-Cu.png",
+  "image": "/peptides/ghk-cu.png",
   "accentColor": "#67e8f9",
   "tagColor": "rgba(6,182,212,0.16)",
   "tagText": "#67e8f9",

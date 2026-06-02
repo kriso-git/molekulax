@@ -4,7 +4,7 @@
 export default {
   "id": "igf-1-lr3",
   "name": "IGF-1 LR3",
-  "image": null,
+  "image": "/peptides/igf-1-lr3.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "tagText": "#fbbf24",

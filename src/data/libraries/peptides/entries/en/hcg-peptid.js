@@ -7,7 +7,7 @@
 export default {
   "id": "hcg-peptid",
   "name": "HCG (Fertility)",
-  "image": "/peptides/HCG.png",
+  "image": "/peptides/hcg-peptid.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "shortDesc": "Human Chorionic Gonadotropin — LH-receptor agonist glycoprotein. Fertility induction (male hypogonadism + IVF), spermatogenesis restoration, HPTA-recovery in clinical Rx framing.",

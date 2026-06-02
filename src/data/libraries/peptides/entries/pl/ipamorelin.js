@@ -4,7 +4,7 @@
 export default {
   "id": "ipamorelin",
   "name": "Ipamorelin",
-  "image": "/peptides/Ipamorelin.png",
+  "image": "/peptides/ipamorelin.png",
   "accentColor": "#5eead4",
   "tagColor": "rgba(20,184,166,0.16)",
   "tagText": "#5eead4",

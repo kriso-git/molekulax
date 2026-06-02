@@ -7,7 +7,7 @@
 export default {
   "id": "hcg-peptid",
   "name": "HCG (Płodność)",
-  "image": "/peptides/HCG.png",
+  "image": "/peptides/hcg-peptid.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "shortDesc": "Ludzka Gonadotropina Kosmówkowa — agonista receptora LH (glikoprotein). Indukcja płodności (męski hipogonadyzm + IVF), restauracja spermatogenezy, regeneracja HPTA w klinicznych ramach Rx.",

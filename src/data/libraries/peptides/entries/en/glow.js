@@ -4,7 +4,7 @@
 export default {
   "id": "glow",
   "name": "GLOW",
-  "image": "/peptides/GLOW.png",
+  "image": "/peptides/glow.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "tagText": "#a78bfa",

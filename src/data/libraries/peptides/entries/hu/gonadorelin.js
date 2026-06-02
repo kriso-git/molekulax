@@ -4,7 +4,7 @@
 export default {
   "id": "gonadorelin",
   "name": "Gonadorelin (GnRH)",
-  "image": null,
+  "image": "/peptides/gonadorelin.png",
   "accentColor": "#facc15",
   "tagColor": "rgba(250,204,21,0.16)",
   "tagText": "#facc15",

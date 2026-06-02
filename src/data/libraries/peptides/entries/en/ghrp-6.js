@@ -4,7 +4,7 @@
 export default {
   "id": "ghrp-6",
   "name": "GHRP-6",
-  "image": null,
+  "image": "/peptides/ghrp-6.png",
   "accentColor": "#c4b5fd",
   "tagColor": "rgba(196,181,253,0.16)",
   "tagText": "#c4b5fd",

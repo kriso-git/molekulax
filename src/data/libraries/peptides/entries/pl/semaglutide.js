@@ -4,7 +4,7 @@
 export default {
   "id": "semaglutide",
   "name": "Semaglutide",
-  "image": null,
+  "image": "/peptides/semaglutide.png",
   "accentColor": "#60a5fa",
   "tagColor": "rgba(96,165,250,0.16)",
   "tagText": "#60a5fa",

@@ -4,7 +4,7 @@
 export default {
   "id": "cjc-1295-ipamorelin",
   "name": "CJC-1295 / Ipamorelin",
-  "image": null,
+  "image": "/peptides/cjc-1295-ipamorelin.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.16)",
   "tagText": "#a78bfa",

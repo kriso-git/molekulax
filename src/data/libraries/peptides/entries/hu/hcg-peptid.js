@@ -8,7 +8,7 @@
 export default {
   "id": "hcg-peptid",
   "name": "HCG (fertilitás)",
-  "image": "/peptides/HCG.png",
+  "image": "/peptides/hcg-peptid.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "shortDesc": "Humán Chorionic Gonadotropin — LH-receptor agonist glycoprotein. Fertilitás-indukció (male hypogonadism + IVF), spermatogenezis-restauráció, HPTA-recovery klinikai Rx-keretben.",

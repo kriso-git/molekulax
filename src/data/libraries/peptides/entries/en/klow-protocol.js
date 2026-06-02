@@ -4,7 +4,7 @@
 export default {
   "id": "klow-protocol",
   "name": "KLOW Protocol",
-  "image": null,
+  "image": "/peptides/klow-protocol.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "tagText": "#fbbf24",

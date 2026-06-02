@@ -4,7 +4,7 @@
 export default {
   "id": "cagrilintide",
   "name": "Cagrilintide (AM833)",
-  "image": null,
+  "image": "/peptides/cagrilintide.png",
   "accentColor": "#fb7185",
   "tagColor": "rgba(251,113,133,0.16)",
   "tagText": "#fb7185",

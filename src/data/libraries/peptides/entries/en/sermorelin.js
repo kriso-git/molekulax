@@ -4,7 +4,7 @@
 export default {
   "id": "sermorelin",
   "name": "Sermorelin",
-  "image": "/peptides/Sermorelin.png",
+  "image": "/peptides/sermorelin.png",
   "accentColor": "#c084fc",
   "tagColor": "rgba(168,85,247,0.18)",
   "tagText": "#c084fc",

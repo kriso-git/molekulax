@@ -6,7 +6,7 @@
 export default {
   "id": "hmg-peptid",
   "name": "HMG (Płodność)",
-  "image": "/peptides/HMG.png",
+  "image": "/peptides/hmg-peptid.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "shortDesc": "Ludzka Gonadotropina Menopauzalna — 1:1 FSH+LH glikoproteina. Pełna indukcja spermatogenezy (podwójna oś Leydig + Sertoli), superowulacja IVF. Kliniczne Rx do wskazań niepłodności (męski HypoH + IVF indukcja owulacji u kobiet), NIE doping. Cross-frame: kontekst PCT po AAS objęty wpisem `hmg-perf`.",

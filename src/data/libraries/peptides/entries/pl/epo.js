@@ -7,7 +7,7 @@
 export default {
   "id": "epo",
   "name": "EPO",
-  "image": "/peptides/EPO.png",
+  "image": "/peptides/epo.png",
   "accentColor": "#f87171",
   "tagColor": "rgba(248,113,113,0.16)",
   "shortDesc": "Erytropoetyna — agonista receptora EPO 165-AA glikoproteinowy. Leczenie anemii w CKD (kliniczne Rx); ściśle zakazana przez WADA w kontekście dopingu wytrzymałościowego.",

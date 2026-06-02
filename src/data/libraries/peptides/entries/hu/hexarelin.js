@@ -4,7 +4,7 @@
 export default {
   "id": "hexarelin",
   "name": "Hexarelin",
-  "image": null,
+  "image": "/peptides/hexarelin.png",
   "accentColor": "#ddd6fe",
   "tagColor": "rgba(221,214,254,0.16)",
   "tagText": "#ddd6fe",

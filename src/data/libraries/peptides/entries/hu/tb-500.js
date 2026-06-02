@@ -4,7 +4,7 @@
 export default {
   "id": "tb-500",
   "name": "TB-500",
-  "image": "/peptides/TB-500.png",
+  "image": "/peptides/tb-500.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(139,92,246,0.18)",
   "tagText": "#a78bfa",

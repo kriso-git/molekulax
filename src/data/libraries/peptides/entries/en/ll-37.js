@@ -4,7 +4,7 @@
 export default {
   "id": "ll-37",
   "name": "LL-37 (Cathelicidin)",
-  "image": null,
+  "image": "/peptides/ll-37.png",
   "accentColor": "#f87171",
   "tagColor": "rgba(248,113,113,0.16)",
   "tagText": "#f87171",

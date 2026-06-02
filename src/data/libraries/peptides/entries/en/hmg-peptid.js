@@ -6,7 +6,7 @@
 export default {
   "id": "hmg-peptid",
   "name": "HMG (Fertility)",
-  "image": "/peptides/HMG.png",
+  "image": "/peptides/hmg-peptid.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
   "shortDesc": "Human Menopausal Gonadotropin — 1:1 FSH+LH glycoprotein. Full spermatogenesis induction (dual Leydig + Sertoli axis), IVF superovulation. Clinical Rx for infertility indications (male HypoH + female IVF ovulation induction), NOT doping. Cross-frame: AAS-PCT context covered by the `hmg-perf` entry.",

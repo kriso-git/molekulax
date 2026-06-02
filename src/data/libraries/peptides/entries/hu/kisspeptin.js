@@ -4,7 +4,7 @@
 export default {
   "id": "kisspeptin",
   "name": "Kisspeptin-10",
-  "image": null,
+  "image": "/peptides/kisspeptin.png",
   "accentColor": "#fbcfe8",
   "tagColor": "rgba(251,207,232,0.16)",
   "tagText": "#fbcfe8",
