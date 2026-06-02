@@ -97,7 +97,9 @@ Generate a new image PIXEL-PERFECT identical to this reference EXCEPT for THREE 
 EVERYTHING ELSE stays 100% identical to the reference:
   • Same 10ml clear glass vial, shape, proportions, height
   • Same dark gray rubber stopper + silver knurled aluminum crimp cap
-  • Same holographic-iridescent silver-foil label (same size/position/edge bevel/rainbow shimmer)
+  • Same holographic-iridescent silver-foil label — FULLY OPAQUE (a solid foil sticker you
+    canNOT see through; the rainbow shimmer is a reflective surface effect, NOT transparency;
+    glass/powder behind the label is hidden) — same size/position/edge bevel/shimmer
   • Same "MOLEKULAX" rounded-pill frame at top, same ">99% Tisztaság" line, same
     "Kutatási célra ajánlott" line at the bottom
   • Same bold black sans-serif font family/weight/color, same centering
@@ -108,6 +110,7 @@ DO NOT add any text, batch/lot numbers, QR codes, expiry, barcodes, manufacturer
 URLs, the "Beim" / "Beim..." fragment (it appears in the reference's lower-right — REMOVE it),
 German/Polish/English word fragments, or any other element.
 DO NOT change the glass, stopper, cap, label foil, layout, framing, or background.
+DO NOT make the label transparent, translucent, or see-through — it is a solid opaque sticker.
 DO NOT add Gemini/Google watermarks.
 
 The name, the amount, and the substance appearance are the ONLY three things that change.

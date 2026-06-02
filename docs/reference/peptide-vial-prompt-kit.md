@@ -9,6 +9,10 @@ here as `docs/reference/molekulax-vial-reference.png` and upload it to the Gemin
 `tmp/gemini-vials/<id>.png` (lowercase id, see table) → when a batch is ready, tell Claude:
 `npm run vials:integrate` does rembg + binds it into the data.
 
+> ⚠️ **Reject see-through labels.** Gemini sometimes renders the foil label as transparent
+> (you can see the glass/powder through it). The label must be a **solid opaque sticker** —
+> if a generation comes out with a see-through/translucent label, regenerate it.
+
 ---
 
 ## EDIT-PROMPT
@@ -23,7 +27,9 @@ Generate a new image PIXEL-PERFECT identical to this reference EXCEPT for THREE 
 
 EVERYTHING ELSE stays 100% identical: same 10ml clear glass vial, shape, proportions; same
 dark gray rubber stopper + silver knurled aluminum crimp cap; same holographic-iridescent
-silver-foil label (same size/position/edge/rainbow shimmer); same "MOLEKULAX" rounded-pill
+silver-foil label — FULLY OPAQUE: a SOLID foil sticker you CANNOT see through (the rainbow
+shimmer is a reflective surface effect, NOT transparency; the glass/powder behind the label
+is completely hidden by it), same size/position/edge/shimmer; same "MOLEKULAX" rounded-pill
 frame at top, same ">99% Tisztaság" line, same "Kutatási célra ajánlott" line at the bottom;
 same bold black sans-serif font; same neutral pale-gray gradient background; same soft
 3-point studio lighting; same camera angle; same 1:1 square aspect; same contact shadow.
@@ -31,7 +37,9 @@ same bold black sans-serif font; same neutral pale-gray gradient background; sam
 DO NOT add any text, batch/lot numbers, QR codes, expiry, barcodes, manufacturer info, URLs,
 the "Beim"/"Beim..." fragment (it appears in the reference's lower-right — REMOVE it), or any
 foreign-word fragment. DO NOT change the glass, stopper, cap, foil, layout, framing, or
-background. DO NOT add Gemini/Google watermarks.
+background. DO NOT make the label transparent, translucent, or see-through — it is a solid
+opaque sticker; you must NOT see the glass or powder through the label area. DO NOT add
+Gemini/Google watermarks.
 
 The name, the amount, and the substance appearance are the ONLY three things that change.
 Aspect: 1:1 square, prefer 2048×2048.
