@@ -24,11 +24,14 @@ import { LibraryProvider } from './context/LibraryContext'
 // audit (Home mobile Perf 65) tied directly to eager framer-motion load.
 const LibraryCube = lazy(() => import('./components/library/cube-nav/LibraryCube'))
 
+function readHash() {
+  return typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, '')
+}
+
 function useHashRoute() {
-  const read = () => (typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, ''))
-  const [hash, setHash] = useState(read)
+  const [hash, setHash] = useState(readHash)
   useEffect(() => {
-    const onChange = () => setHash(read())
+    const onChange = () => setHash(readHash())
     window.addEventListener('hashchange', onChange)
     return () => window.removeEventListener('hashchange', onChange)
   }, [])

@@ -237,15 +237,16 @@ function ReconstitutePath({ steps, accent, tr }) {
 // Groups by status: green PASS column (positive markers), amber WARN
 // column (caution markers), red FAIL column (do-not-use markers). Each
 // column has a tinted header with a count chip.
-function QualityGrid({ items, tr, t }) {
- const GROUPS = [
+const GROUPS = [
  { key: 'PASS', color: '#34d399', icon: CheckCircle2,
  title: { hu: 'Tisztaság jelei', en: 'Purity markers', pl: 'Oznaki czystości' } },
  { key: 'WARN', color: '#fbbf24', icon: AlertTriangle,
  title: { hu: 'Óvatosan', en: 'Use caution', pl: 'Z ostrożnością' } },
  { key: 'FAIL', color: '#f87171', icon: XCircle,
- title: { hu: 'Ne használd', en: 'Do not use', pl: 'Nie używaj' } },
- ]
+ title: { hu: 'Ne használd', en: 'Do not use', pl: 'Nie használaj' } },
+]
+
+function QualityGrid({ items, tr, t }) {
  return (
  <div className="grid md:grid-cols-3 gap-3">
  {GROUPS.map(group => {

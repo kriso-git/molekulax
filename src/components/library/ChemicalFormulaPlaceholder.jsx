@@ -24,6 +24,13 @@ const SIZE_SMALL  = 'text-[clamp(0.95rem,10.5cqi,1.7rem)]' // 12+ chars
 const NAME_SIZE_LARGE  = 'text-[clamp(1.1rem,11cqi,2rem)]'
 const NAME_SIZE_MEDIUM = 'text-[clamp(0.95rem,9cqi,1.6rem)]'
 
+const CORNER_POSITIONS = {
+  tl: { top: 14, left: 14, borderRight: 'none', borderBottom: 'none' },
+  tr: { top: 14, right: 14, borderLeft: 'none', borderBottom: 'none' },
+  bl: { bottom: 14, left: 14, borderRight: 'none', borderTop: 'none' },
+  br: { bottom: 14, right: 14, borderLeft: 'none', borderTop: 'none' },
+}
+
 function parseFormula(input) {
   // Accept either a single string ('C15H15NO2S') or an explicit row array (['C14H26N4','O11P2']).
   const rows = Array.isArray(input) ? input : [input]
@@ -87,12 +94,6 @@ function splitName(name) {
 }
 
 function Corner({ pos, color }) {
-  const map = {
-    tl: { top: 14, left: 14, borderRight: 'none', borderBottom: 'none' },
-    tr: { top: 14, right: 14, borderLeft: 'none', borderBottom: 'none' },
-    bl: { bottom: 14, left: 14, borderRight: 'none', borderTop: 'none' },
-    br: { bottom: 14, right: 14, borderLeft: 'none', borderTop: 'none' },
-  }
   return (
     <span
       aria-hidden="true"
@@ -103,7 +104,7 @@ function Corner({ pos, color }) {
         border: `1.5px solid ${color}`,
         opacity: 0.55,
         boxShadow: `0 0 6px ${color}33`,
-        ...map[pos],
+        ...CORNER_POSITIONS[pos],
       }}
     />
   )

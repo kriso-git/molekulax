@@ -18,6 +18,9 @@ import { useTilt } from './entry-detail/shared'
 // row 2. On mobile (< md), each grid reflows to single-column. The tilt effect
 // requires mousemove events so it gracefully degrades to a static glass card
 // on touch devices.
+const ORDER_1 = ['dht', 'test', '19nor']
+const ORDER_2 = ['pct', 'fat']
+
 const PerformanceCategoryCards = memo(function PerformanceCategoryCards({
   onCategorySelect,
   activeCategoryId,
@@ -33,14 +36,11 @@ const PerformanceCategoryCards = memo(function PerformanceCategoryCards({
     acc[c.id] = meta.filter(m => m.subCategory === c.id).length
     return acc
   }, {})
-
-  const order1 = ['dht', 'test', '19nor']
-  const order2 = ['pct', 'fat']
-  const row1 = order1.flatMap(id => {
+  const row1 = ORDER_1.flatMap(id => {
     const cat = subCategories.find(c => c.id === id)
     return cat ? [cat] : []
   })
-  const row2 = order2.flatMap(id => {
+  const row2 = ORDER_2.flatMap(id => {
     const cat = subCategories.find(c => c.id === id)
     return cat ? [cat] : []
   })
