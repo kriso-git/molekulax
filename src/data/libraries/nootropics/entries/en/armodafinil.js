@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Identical profile to Modafinil: weak dopamine transporter (DAT) inhibition, indirect activation of the orexin/histamine pathway, hypothalamic-mediated wakefulness, but smoother PK due to R-enantiomer selectivity.",
   "legalStatus": "FDA-approved in the USA (Nuvigil), DEA Schedule IV. Prescription-only in most EU member states. Hungary requires specialist prescription.",
-  "chemicalFormula": "C15H15NO2S"
+  "chemicalFormula": "C15H15NO2S",
+  "anecdote": "Compared to Modafinil, anecdotal reports describe Armodafinil as a longer-lasting, steadier and more linear boost: instead of the mid-day wear-off many users report on Modafinil, focus is said to stay locked on a single task for hours, likely tied to its dopaminergic effect. Appetite suppression and emotional flattening are mentioned as possible trade-offs, though relatively few users report them as significant.\n\nThe biggest caveat is sleep: with a 12-15 hour half-life it is far less forgiving than Modafinil, and mistimed dosing reportedly bleeds deep into the night. Reports consistently recommend taking it first thing in the morning and not too frequently — timing genuinely matters with this one."
 }

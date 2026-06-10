@@ -101,5 +101,6 @@ export default {
     },
     "postCycle": null,
     "cruise": null
-  }
+  },
+  "anecdote": "HGH is an intricate peptide with effects more complex than commonly assumed. It can increase the conversion of T4 to reverse T3, lowering active thyroid output over time, so some users pair it with T4/T3 and monitor thyroid panels closely. It tends to raise fasting blood glucose and acutely reduce insulin sensitivity at higher doses, making carbohydrate and insulin dynamics important. Water retention is extremely common early on due to sodium retention and increased extracellular fluid. Numbness, tingling, or carpal-tunnel-like symptoms from fluid-driven nerve compression are also reported. HGH significantly raises IGF-1, which is responsible for most of the anabolic/recovery effects. Sleep can become more restorative, but exogenous GH can sometimes disrupt sleep in susceptible users. Exogenous use suppresses endogenous GH production, so a dose above natural output is typically required. Long-term effects may include improved collagen density but also potential organ growth at very high doses.\n\nHGH is almost always administered subcutaneously, typically daily due to its short half-life. Pre-bed dosing in a fasted state (2-4 hours after the last meal) is commonly recommended since insulin directly opposes GH."
 }

@@ -38,7 +38,8 @@ export default {
   "legalStatus": "USA: NIE zatwierdzony przez FDA, peptyd tylko do badań (Schedule N/A, ale nie autoryzowany do dystrybucji). UE: NIE zatwierdzony przez EMA. HU + PL: NIE zarejestrowany. Status badań fazy 1/2 u ludzi to pipeline CohBar Inc + Stealth BioTherapeutics 2024-2025, pełna publikacja oczekiwana 2026. WADA: NIE jawnie zakazany (lista klasy peptydów S2.1 GH/IGF-1 nie obejmuje kategorii peptydów pochodzenia mitochondrialnego), ALE obowiązuje ryzyko klauzuli S0 'substancja niezatwierdzona' (Lista zakazów WADA 2025 § S0).",
   "onsetTime": "Ostra aktywacja AMPK 1-2 h; efekt metaboliczny 2-4 tygodnie",
   "halfLife": "~1-2 godziny (SC, ekstrapolacja z myszy)",
-  "interactionsWith": [    "l-carnitine",
+  "interactionsWith": [
+    "l-carnitine",
     "5-amino-1mq"
   ],
   "aromatization": "Nie aromatyzuje — peptyd mitochondrialny, nie spokrewniony ze sterydami. Brak interakcji z CYP19; oś estrogenowa pozostaje bezpośrednio nienaruszona.",
@@ -162,7 +163,8 @@ export default {
       "a": "Biblioteka peptydów MolekulaX (peptides/) zapewnia edukację farmakologiczną na temat klinicznie wskazanych peptydów (Tesamorelina przy lipodystrofii HIV; Semaglutyd przy T2DM/otyłości). Biblioteka performance (performance/) obejmuje framing dopingu sportowego tych samych związków (Tesamorelina-perf przy utracie tłuszczu brzusznego; Semaglutyd-perf przy cyklach cięcia 6-12 tygodni). MOTS-c obecnie NIE ma odpowiednika w bibliotece peptydów MolekulaX — to pierwszy wpis MOTS-c, framing tylko performance. Wskazanie kliniczne T2DM jest w fazie 2; jeśli zatwierdzenie FDA nastąpi w 2027+, do biblioteki peptydów zostanie dodany odpowiednik kliniczny."
     }
   ],
-  "related": [    "l-carnitine",
+  "related": [
+    "l-carnitine",
     "5-amino-1mq"
   ],
   "doseCalc": {
@@ -194,5 +196,6 @@ export default {
       "markers": "Fasting glucose (powrót do baseline ~2-4 tygodnie), HbA1c (skumulowane -0,1-0,3% od baseline), IGF-1, panel lipidowy",
       "purpose": "Potwierdzenie trwałości efektu uwrażliwiania na insulinę po cyklu + regeneracji osi tarczycowej. Redukcja HbA1c jest skumulowanym markerem mechanizmu klasy aktywatorów AMPK."
     }
-  }
+  },
+  "anecdote": "Doniesienia społeczności często faworyzują MOTS-c lub 5-Amino-1MQ do wzmacniania utraty tłuszczu. Niektórzy użytkownicy opisują MOTS-c jako \"lekką Cardarinę\", choć jest to ogólnie uważane za przesadę. W połączeniu z innymi środkami spalającymi tłuszcz, MOTS-c może tworzyć silny stack. Działa najlepiej u już aktywnych użytkowników, ponieważ wzmacnia wykorzystanie paliwa, a nie wymusza spalanie tłuszczu. Poprawiona wrażliwość na insulinę poprzez aktywację AMPK jest istotną korzyścią. Raporty anegdotyczne opisują lepszą codzienną energię.\n\nMOTS-c jest zwykle podawany podskórnie. Ponieważ MOTS-c jest naturalnie produkowany, a poziomy spadają z wiekiem, suplementacja u starszych użytkowników może przynosić wyraźniejsze korzyści."
 }

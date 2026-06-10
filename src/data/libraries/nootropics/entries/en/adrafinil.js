@@ -120,5 +120,6 @@ export default {
     "modafinil",
     "armodafinil",
     "flmodafinil"
-  ]
+  ],
+  "anecdote": "Anecdotal reports frame Adrafinil as the older prodrug route to Modafinil: the liver must first convert it before anything happens, so the kick-in is slower and smoother, the overall arc longer, and the drop-off gentler. Users who want a \"longer, softer Modafinil\" describe it positively for exactly that profile.\n\nThe trade-offs repeat across reports: conversion is less predictable between individuals, it carries more metabolic baggage, and it is a weak choice when an instant boost is needed — Modafinil itself is the active compound doing the work. Most accounts treat it as a situational, smoother-curve alternative used with deliberate, infrequent timing."
 }

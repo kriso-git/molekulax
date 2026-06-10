@@ -40,7 +40,8 @@ export default {
   "interactionsWith": [
     "metoprolol",
     "desipramine",
-    "albuterol",    "clenbuterol"
+    "albuterol",
+    "clenbuterol"
   ],
   "aromatization": "Does not aromatize (not a steroid — selective β3-adrenoceptor agonist). No CYP19 interaction; the estrogen axis is unaffected.",
   "hepatotoxicity": "Low — DILI is rare, ALT elevation <2% incidence documented in clinical trials (Khullar 2013 OAB-RCT PMID 23537815). CYP2D6 + CYP3A4 metabolism creates drug-interaction risk with metoprolol and desipramine (Mirabegron is a CYP2D6 substrate-inhibitor, plasma-level elevator).",
@@ -170,7 +171,8 @@ export default {
     }
   ],
   "related": [
-    "albuterol",    "clenbuterol",
+    "albuterol",
+    "clenbuterol",
     "l-carnitine"
   ],
   "doseCalc": {
@@ -202,5 +204,6 @@ export default {
       "markers": "BP + HR home-tracking, EKG (confirm QTc normalization), receptor-recovery signal (BAT volume optional PET-CT in research contexts)",
       "purpose": "Verify β3-receptor recovery + cardiovascular baseline restoration before starting a new cycle"
     }
-  }
+  },
+  "anecdote": "Mirabegron stands out in community reports as one of the few compounds with actual human evidence for brown adipose tissue (BAT) activation. Users describe it as well tolerated, with a real but mild \"background\" thermogenic effect that passively contributes to fat loss — notably without any stimulant-like feeling. Reports consistently frame it as a long-game compound rather than a rapid weight-shedding tool.\n\nAt higher doses, a noticeable rise in resting heart rate or blood pressure is reported, which is why some accounts mention co-administration with a selective beta-1 blocker; the more pronounced fat-loss effects also tend to appear only at those higher doses. Combining it with cold-exposure protocols is anecdotally said to amplify BAT activation, as both target similar thermogenic pathways."
 }

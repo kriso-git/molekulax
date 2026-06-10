@@ -168,5 +168,6 @@ export default {
     },
     "unit": "mg/day PO (mouse extrapolation, NO human validation)",
     "note": "Mouse dose 50 mg/kg/day PO (Billon 2024 Salk preprint). Human-dose extrapolation with BSA correction + species-difference yields 50-100 mg/day PO (NO human Phase 1 dose-finding as of January 2026). Cycle length 4-6 weeks in mouse trials; human cycle extrapolation uncharacterized. NOT recommended for human experimentation outside Phase 1 trials."
-  }
+  },
+  "anecdote": "Community interest in SLU-PP-332 comes from its \"exercise-mimetic\" framing: reports describe tangible fat-loss and insulin-sensitivity benefits, attributed to enhanced mitochondrial respiration and ERR-driven transcription — the layer that produces the endurance/exercise-like effects. A consistently repeated caveat is poor oral absorption: injectable, gel or powder routes reportedly raise levels far more effectively than oral dosing.\n\nReports frequently stack it with Cardarine or injectable L-carnitine, as the pathways are considered complementary (AMPK vs ERR). It is explicitly not viewed as a \"magic exercise pill\", and the field has already moved toward a successor molecule (SLU-PP-915) promising better bioavailability — a reminder of how experimental this compound still is."
 }

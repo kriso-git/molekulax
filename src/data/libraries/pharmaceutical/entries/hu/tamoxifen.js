@@ -68,10 +68,10 @@ export default {
       "pmid": "29385237"
     }
   ],
-  "related": [
-  ],
+  "related": [],
   "doseCalc": {
     "type": "warning",
     "warning": "A Tamoxifen az ONKOLÓGIAI HORMONÁLIS TERÁPIA pillére ER+ emlőkarcinómában. SZAKORVOSI (ONKOLÓGUS) FELÜGYELET KÖTELEZŐ. NEM ÖNÁLLÓ DÓZIS-KALKULÁTOR ezen az oldalon, mert: (1) a dózis (20 mg/nap) és a kúra-időtartam (5-10 év) onkológiai protokoll-döntés, beteg-specifikus; (2) VTE (DVT/PE) és ENDOMETRIUM-KARCINÓMA kockázat fokozása érdemi monitorozást igényel; (3) CYP2D6-genetikai státusz a hatékonyságot szignifikánsan befolyásolja — egyes betegnél genotípus-tesztelés indokolt; (4) ERŐS CYP2D6-inhibitor (Fluoxetine, Paroxetine, Bupropion) ELLENJAVASOLT — Tamoxifen-hatékonyság veszélyeztetése. Beszélj az onkológusoddal. Sürgősségi tünet (egyoldalú láb-duzzanat, légszomj-mellkasi fájdalom, vaginalis vérzés): AZONNALI ellátás."
-  }
+  },
+  "anecdote": "A Nolvadex (Tamoxifen) és a Raloxifen anekdotikusan a két legmegbízhatóbb vegyület a gyno megelőzésére, mert a tamoxifen közvetlenül blokkolja az ösztrogént a receptor szintjén, szelektíven az emlőszövetben — egy nagyon célzott mechanizmus. Az Arimidexszel ellentétben nem aromatáz-inhibitor, így az előnyök receptor-célzottak, nem rendszer-szintűek. Gyakran használják PCT-protokollokban, mert közvetlenebbül stimulálja az LH/FSH-t, ami hasznos lehet a HPTA helyreállításához. A jelentett mellékhatások közé tartozik az enyhe hangulati ingadozás, ritka látászavarok és hosszú távú vérrögképződési kockázat — bár a legtöbb alvadási esetjelentés posztmenopauzális nőktől származik, akik mellrák megelőzésére használták, így az AAS-felhasználókra való alkalmazhatóság kevésbé egyértelmű. Összességében a közösségi beszámolók szerint a Nolvadex szilárd eszköz az ösztrogén blokkolására az emlőszövetben és erős gyno-megelőzési opció. Orálisan adják be, az adagolást jellemzően több hetes ciklusokban strukturálják, különösen PCT alatt."
 }

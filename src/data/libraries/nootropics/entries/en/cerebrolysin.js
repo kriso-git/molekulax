@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "The peptide fractions exhibit NGF-, BDNF- and GDNF-like neurotrophic activity, reduce ischemia-induced excitotoxicity and apoptosis, and stimulate neurogenesis in the subventricular zone.",
   "legalStatus": "Prescription medicine in Hungary, Austria, Poland and many EU/Russian states. Not FDA-approved in the USA.",
-  "chemicalFormula": "mixture"
+  "chemicalFormula": "mixture",
+  "anecdote": "Cerebrolysin has a reputation in cognitive-research communities as a \"growth-factor-flavored\" compound — not something users acutely feel, but rather one that supports gradual brain adaptation, calmness, and function. Human efficacy data is mixed on paper, but anecdotal reports describe robust results, with a recurring theme of improved \"mental depth,\" where thoughts feel more connected and memory retrieval becomes slightly easier.\n\nIt is more repair-oriented than conventional nootropics like the racetams. It is conceptually paired with cholinergic or AMPA/LTP-supportive agents (Phenylpiracetam, Nefiracetam, TAK-653) because it may support the structural side of plasticity while those compounds enhance signaling. Some users frame it as \"exercise for a damaged brain\" — an oversimplification, but illustrative of its repair-focused profile."
 }

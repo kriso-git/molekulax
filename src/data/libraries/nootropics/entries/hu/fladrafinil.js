@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Az Adrafinilhez hasonló profil, májban Modafinil-szerű metabolittá konvertálódik, amely DAT-gátlás és orexin/hisztamin moduláció révén éberség-emelő. A fluor-szubsztitúció a metabolizmust lassítja.",
   "legalStatus": "Sehol nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja; máshol „research chemical\" minősítéssel árusított.",
-  "chemicalFormula": "C15H13F2NO3S"
+  "chemicalFormula": "C15H13F2NO3S",
+  "anecdote": "Anekdotikus beszámolók a Fladrafinilt a Modafinilnél kifejezetten erősebb, \"felpörgetettebb\" élményként írják le, hangsúlyosabb fókusszal és éberséggel — jellemzően rossz alvású éjszakák után használják, nem napi szinten. A magasabb dózisokat az érzékeny felhasználóknál visszatérően szorongással kötik össze, és mivel pro-drug, a gyakori használat melletti májterhelés-aggodalom rendszeresen felmerül, bár kemény adat kevés van. A gyakori következtetés: helyzeti eszköz arra, amikor az ébrenlét tényleg elengedhetetlen, nem napi hajtóanyag.\n\nA gyakran 12-16+ órásra jelentett hatástartam miatt következetesen a kora reggeli adagolást javasolják az alvászavar elkerülésére, és a legtöbb beszámoló alacsony dózissal indítást ajánl a tolerancia felmérésére, mert a nagyobb mennyiség egyeseknél túlzottan stimulálónak bizonyul."
 }

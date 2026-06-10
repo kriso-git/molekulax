@@ -91,7 +91,11 @@ export default {
       },
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 500, "medium": 2000, "high": 4000 },
+        "fixed": {
+          "low": 500,
+          "medium": 2000,
+          "high": 4000
+        },
         "unit": "mg/nap",
         "note": {
           "hu": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose — info-card megjelenítés, MiniCalc nem releváns.",
@@ -155,7 +159,11 @@ export default {
       },
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 200, "medium": 500, "high": 1000 },
+        "fixed": {
+          "low": 200,
+          "medium": 500,
+          "high": 1000
+        },
         "unit": "mg/injekció",
         "note": {
           "hu": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral.",
@@ -333,5 +341,6 @@ export default {
       "purpose": "TMAO-szint-recovery verifikálása cycle-off-on, lipid panel + glucose-homeostasis baseline-recovery"
     }
   },
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "A közösségi beszámolók az injektálható L-karnitint hosszú távú, napi alapvegyületként írják le, nem gyors megoldásként: a felhasználók önmagában is jobb napközbeni energiaszintet említenek, és jellemzően edzés előtt, szénhidráttal együtt adagolják a maximális izomfelvétel érdekében. Következetesen úgy keretezik, hogy \"nem csodaszer-zsírégető\" — a látható hatás megfelelő rutinnal és kalóriadeficittel együtt jelenik meg, vágási fázisban a beszámolók gyakran Cardarine-nal kombinálják.\n\nKét gyakorlati megjegyzés visszatérő: vizes bázisú vegyület, amelyet tilos olajos készítményekkel keverni, és a beszámolók szerint a konzisztens napi adagolás kulcsfontosságú a szöveti telítettség stabilan tartásához."
 }

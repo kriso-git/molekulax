@@ -199,5 +199,6 @@ export default {
   "doseCalc": {
     "type": "warning",
     "warning": "Modafinil's official Rx indications (narcolepsy, SWSD, OSA adjunct) require specialist-confirmed diagnosis and oversight. NO STANDALONE DOSE CALCULATOR on this page because: (1) standard 200 mg/day morning dose is fixed, titration rare; (2) Schedule IV classification means we do not promote any \"calculator-format\" dose selection; (3) FDA boxed warning for SJS/TEN/DRESS requires IMMEDIATE STOP on any rash; (4) in women contraceptive efficacy is REDUCED, alternative protection MANDATORY. Psychiatrist, neurologist, or sleep physician consultation indicated for prescription."
-  }
+  },
+  "anecdote": "Anecdotal reports describe Modafinil as one of the most functional cognitive enhancers, with users noting baseline energy that feels extended for hours without a pronounced peak or crash. Because it modulates orexin and histamine, appetite suppression and significant reductions in sleep drive are common, which is why early-morning dosing upon waking is consistently recommended given the 12-15 hour half-life. Modest cortisol elevations contribute to a task-focused, in-the-moment state. Community accounts note tolerance builds slower than with traditional stimulants, though psychological reliance on the productivity boost can develop. CYP-mediated hepatic metabolism creates potential drug-interaction considerations. Compared to Fladrafinil, Modafinil feels smoother, shorter-lasting, and less wired. Lower doses can be effective in sensitive individuals."
 }

@@ -91,7 +91,11 @@ export default {
       },
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 500, "medium": 2000, "high": 4000 },
+        "fixed": {
+          "low": 500,
+          "medium": 2000,
+          "high": 4000
+        },
         "unit": "mg/nap",
         "note": {
           "hu": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose — info-card megjelenítés, MiniCalc nem releváns.",
@@ -155,7 +159,11 @@ export default {
       },
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 200, "medium": 500, "high": 1000 },
+        "fixed": {
+          "low": 200,
+          "medium": 500,
+          "high": 1000
+        },
         "unit": "mg/injekció",
         "note": {
           "hu": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral.",
@@ -333,5 +341,6 @@ export default {
       "purpose": "Verify TMAO level recovery off-cycle, lipid panel + glucose-homeostasis baseline recovery"
     }
   },
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "Community reports describe injectable L-carnitine as a long-term daily staple rather than a quick fix: users note better day-to-day energy even on its own, and typically administer it pre-workout together with carbohydrates to maximise muscle uptake. It is consistently framed as \"not a magic fat burner\" — the visible effect appears when combined with a proper routine and a caloric deficit, and reports frequently stack it with Cardarine during cutting phases.\n\nTwo practical notes recur across reports: it is a water-based compound that must never be mixed with oil-based preparations, and consistent daily dosing is considered key to keeping tissue saturation stable."
 }

@@ -193,5 +193,6 @@ export default {
       "markers": "Enzymy wątrobowe, pełna morfologia, markery tumorów (AFP, CEA), follow-up po 6 miesiącach + 1 rok + 2 lata",
       "purpose": "Long-term monitoring kancerogenności (latencja 5-10 lat na human extrapolation) — research-only chemical, nie używaj"
     }
-  }
+  },
+  "anecdote": "Według anegdotycznych doniesień Cardarine to jeden z ulubionych związków podczas deficytu kalorycznego: przy 20 mg dziennie użytkownicy zgłaszają wyraźną poprawę wytrzymałości, stabilną całodzienną energię bez skoków i załamań, lepszy profil lipidowy i zauważalnie łatwiejsze cardio — zmęczenie i \"czynnik cierpienia\" według relacji spadają tak bardzo, że dzięki efektowi oszczędzania glikogenu nawet osoby nielubiące cardio zaczynają tolerować treningi. Często wymienianym minusem jest nasilona potliwość, a efekt spalania tłuszczu pojawia się wyłącznie w połączeniu z deficytem kalorycznym i regularnym cardio; w relacjach społeczności podczas redukcji często łączy się go z iniekcyjną L-karnityną.\n\nSzeroko komentowane obawy o nowotwory wywodzą się z badań na gryzoniach przy bardzo wysokich dawkach podawanych ponad dwa lata; do dziś nie udokumentowano żadnego przypadku nowotworu u człowieka — jednak długoterminowych danych o bezpieczeństwie u ludzi po prostu brak, więc ostrożność pozostaje wskazana."
 }

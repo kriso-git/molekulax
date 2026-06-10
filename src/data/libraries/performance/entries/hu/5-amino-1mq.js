@@ -156,5 +156,6 @@ export default {
     },
     "unit": "RESEARCH-ONLY (humán-Rx-dose NINCS)",
     "note": "PRECLINICAL-ONLY chemical — humán-trial NEM létezik, humán-Rx-dose NINCS. Mouse-modell extrapoláció: 50-200 mg/kg/nap PO (Kraus 2014 NNMT-knockdown analogon-context). Humán-equivalent BSA-conversion (~12x dose-csökkentés) + bioavailability-ismeretlen miatt NEM kiszámítható megbízhatóan. Research-chemical underground market 50-150 mg/cap online-termékek label-claim-discrepancy + HPLC-untested-content. FDA never approved + EU EMA never approved. WADA 'S0 catch-all non-approved substance' kategória potenciális szankció versenysport-aktív sportoló-on. Humán-konzumálás NEM ajánlott — biztonságos protokoll NEM létezik."
-  }
+  },
+  "anecdote": "Közösségi beszámolók szerint az 5-Amino-1MQ-t nagyra értékelik zsírvesztéshez, a felhasználók finom, háttér-jellegű zsírvesztő hatást írnak le, ami idővel épül. A beszámolók gyakran tartalmaznak jobb napi energiát. Az NNMT-gátlás révén a vegyület csökkenti a keringő NAD+ szinteket azáltal, hogy több NAD+-t tart bent a sejtekben, ahol metabolikusan aktív. Jól párosítható olyan vegyületekkel, amelyek aktívan fokozzák az anyagcserét — Cardarine, injektálható L-karnitin vagy Retatrutid. Leginkább napi háttér-zsírvesztés-optimalizálónak tekinthető, nem pedig elsődleges hajtóerőnek.\n\nAz 5-Amino-1MQ szájon át (kapszulázott készítmények elérhetők) vagy szubkután adható. Ha az orális használat gyomorbántalmat okoz, étkezéssel vagy több vízzel való bevétel segíthet."
 }

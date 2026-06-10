@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "The peptide core (Semax) modulates melanocortin receptors MCR3/MCR4, upregulates BDNF + NGF gene expression, and initiates a neurotrophic cascade in the hippocampus and striatum. The adamantyl group confers CYP3A4 stability and blocks N-terminal peptidase access, multiplying the duration of action. Intranasal dosing routes the peptide directly to the CNS via the olfactory pathway (BBB transit not required).",
   "legalStatus": "EU/HU/USA: not medically approved, research/grey-market compound. In Russia the parent compound Semax is prescription-approved (Ministry of Health 1996), but the Adamax modification has only academic research status.",
-  "chemicalFormula": "mixture"
+  "chemicalFormula": "mixture",
+  "anecdote": "Adamax is positioned as a theoretical upgrade to Semax, with improved BBB penetration, longer duration, and more potent neurotrophic effects on paper. While more definitive data is still needed, anecdotal accounts describe clearer thinking, better train of thought, and smoother cognition. Numerous community discussions document user experiences with Adamax, though all reports remain anecdotal — no peer-reviewed clinical trial exists.\n\nAdamax aims for similar neurotrophic and nootropic benefits to Semax, but with greater emphasis on sustained activity due to improved BBB permeability and a longer duration. As a grey-zone research chemical, all use is at your own risk, based on community-sourced protocols."
 }

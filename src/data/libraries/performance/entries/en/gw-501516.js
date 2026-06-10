@@ -193,5 +193,6 @@ export default {
       "markers": "Liver enzymes, full CBC, tumor markers (AFP, CEA), follow-up at 6 months + 1 year + 2 years",
       "purpose": "Long-term carcinogenicity monitoring (latency 5-10 years on human extrapolation) — research-only chemical, do not use"
     }
-  }
+  },
+  "anecdote": "Anecdotal reports describe Cardarine as a favourite during caloric deficits at 20 mg daily: users note markedly improved endurance, steady all-day energy without spikes or crashes, better lipid profiles and noticeably easier cardio — the fatigue and \"suffering\" component reportedly drops so much that even cardio-averse users say they start tolerating sessions, thanks to the glycogen-sparing effect. A commonly mentioned downside is increased sweating, and the fat-loss effect only shows up alongside a caloric deficit and regular cardio; community reports often pair it with injectable L-carnitine during cuts.\n\nThe widely cited cancer concern traces back to rodent studies using very high doses for over two years; no human cancer case has been documented in the community to date — but long-term human safety data simply does not exist, so caution remains warranted."
 }

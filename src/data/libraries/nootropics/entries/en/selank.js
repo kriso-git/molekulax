@@ -127,5 +127,6 @@ export default {
     "phenibut",
     "l-theanine",
     "tianeptine"
-  ]
+  ],
+  "anecdote": "Anecdotal accounts on Selank mirror those of Semax: some users notice clear effects, others do not. One common report describes 500 mcg intra-nasally easing anxiety on dosing days compared to non-dosing days. It is not heavy or sedating like conventional anxiolytics but is reliably effective for many. Selank is commonly paired with Semax for a calm, nootropic-like profile, with effects often noticeable shortly after dosing.\n\nSelank is most often administered intra-nasally, though subcutaneous injection works as well. It is typically administered daily or situationally \"on-demand,\" depending on the user's protocol. It is generally well-tolerated and has anti-inflammatory and modulatory effects in addition to its anxiolytic profile."
 }

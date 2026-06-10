@@ -68,10 +68,10 @@ export default {
       "pmid": "29385237"
     }
   ],
-  "related": [
-  ],
+  "related": [],
   "doseCalc": {
     "type": "warning",
     "warning": "Tamoksyfen to filar HORMONALNEJ TERAPII ONKOLOGICZNEJ w ER+ raku piersi. NADZÓR SPECJALISTY (ONKOLOGA) OBOWIĄZKOWY. BRAK KALKULATORA DAWEK na tej stronie, ponieważ: (1) dawka (20 mg/dzień) i czas trwania (5-10 lat) to decyzje protokołu onkologicznego, specyficzne dla pacjenta; (2) ryzyko VTE (DVT/PE) i RAKA ENDOMETRIUM wymaga rzeczywistego monitorowania; (3) status genetyczny CYP2D6 znacząco wpływa na skuteczność; (4) SILNE inhibitory CYP2D6 (fluoksetyna, paroksetyna, bupropion) PRZECIWWSKAZANE. Porozmawiaj z onkologiem. Objawy nagłe (jednostronny obrzęk nogi, duszność-ból klatki, krwawienie pochwowe): NATYCHMIASTOWA opieka."
-  }
+  },
+  "anecdote": "Nolvadex (Tamoksyfen) i Raloksyfen są anegdotycznie dwoma najbardziej niezawodnymi związkami do zapobiegania ginekomastii, ponieważ tamoksyfen bezpośrednio blokuje estrogen na poziomie receptora selektywnie w tkance piersi — wysoce ukierunkowany mechanizm. W przeciwieństwie do Arimidexu, nie jest inhibitorem aromatazy, więc korzyści są ukierunkowane na receptor, a nie ogólnoustrojowe. Jest powszechnie stosowany w protokołach PCT, ponieważ bardziej bezpośrednio stymuluje LH/FSH, co może być przydatne do regeneracji HPTA. Zgłaszane skutki uboczne obejmują łagodne wahania nastroju, rzadkie zaburzenia widzenia i długoterminowe ryzyko zakrzepów krwi — choć większość raportów o zakrzepach pochodzi od kobiet po menopauzie stosujących go do profilaktyki raka piersi, więc zastosowanie do użytkowników AAS jest mniej jasne. Ogólnie doniesienia społeczności uznają Nolvadex za solidne narzędzie do blokowania estrogenu w tkance piersi i silną opcję zapobiegania ginekomastii. Podawany doustnie, dawkowanie zwykle strukturyzowane w cyklach wielotygodniowych, szczególnie podczas PCT."
 }

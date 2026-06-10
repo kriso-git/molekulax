@@ -148,5 +148,6 @@ export default {
     "cerebrolysin",
     "noopept",
     "nsi-189"
-  ]
+  ],
+  "anecdote": "A Semax-szal kapcsolatos közösségi beszámolók vegyesek: egyes felhasználók hatékonynak találják, mások csekély szubjektív hatásról számolnak be, akár szubkután beadás esetén is. Akik reagálnak rá, gyakran \"tiszta fókusz\" érzésről beszélnek — finom, de észrevehető. A neuroplaszticitásra gyakorolt hatások feltehetően fokozatosan épülnek fel, mivel az agyi kémiai változások nem azonnaliak. A Semaxot egyes országokban (különösen Oroszországban) klinikailag használják, de Nyugaton kevésbé elterjedt.\n\nA Semaxot leggyakrabban intranazálisan adják be, és kutatási környezetben általában ciklusokban használják (néhány hét bevitel, majd szünet). A rendelkezésre álló adatok arra utalnak, hogy a Semax növelheti a dopamin- és szerotonin-tónust, emelheti a BDNF-szintet, és segítheti a hipoxia tűrőképességet."
 }

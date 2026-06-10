@@ -168,5 +168,6 @@ export default {
     },
     "unit": "mg/nap PO (egér-extrapoláció, NO humán-validated)",
     "note": "Egér-dose 50 mg/kg/nap PO (Billon 2024 Salk preprint). Humán-dose extrapoláció BSA-correction + species-difference figyelembevétellel 50-100 mg/nap PO (NO humán-Phase 1 dose-finding 2026 januárban). Cycle-length 4-6 hét egér-trial-on; humán-cycle-extrapolation feltérképezetlen. NEM ajánlott humán-experimentation Phase 1-trial-on kívül."
-  }
+  },
+  "anecdote": "A SLU-PP-332 iránti közösségi érdeklődés az \"edzés-mimetikum\" keretezésből ered: a beszámolók kézzelfogható zsírvesztési és inzulinérzékenység-javulási hatást írnak le, amit a fokozott mitokondriális légzésnek és az ERR-vezérelt transzkripciónak tulajdonítanak — ez a réteg adja az állóképesség-/edzésszerű hatásokat. Következetesen ismételt kikötés a gyenge orális felszívódás: az injektálható, gél vagy por beviteli út a beszámolók szerint lényegesen hatékonyabban emeli a szinteket, mint a szájon át adagolás.\n\nA beszámolók gyakran Cardarine-nal vagy injektálható L-karnitinnel kombinálják, mivel az útvonalakat egymást kiegészítőnek tartják (AMPK vs ERR). Kifejezetten nem tekintik \"varázs-edzéstablettának\", és a terület már egy utód-molekula (SLU-PP-915) felé mozdult, amely jobb biohasznosulást ígér — emlékeztetőül arra, mennyire kísérleti még ez a vegyület."
 }

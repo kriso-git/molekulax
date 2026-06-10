@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "A peptid-frakciók NGF-, BDNF- és GDNF-szerű neurotrofikus aktivitást mutatnak, csökkentik az ischaemia-indukált excitotoxicitást és apoptózist, és serkentik a neurogenezist a szubventrikuláris zónában.",
   "legalStatus": "Vényköteles gyógyszer Magyarországon, Ausztriában, Lengyelországban és számos EU/orosz államban. USA-ban nem FDA-jóváhagyott.",
-  "chemicalFormula": "mixture"
+  "chemicalFormula": "mixture",
+  "anecdote": "A Cerebrolysin a kognitív kutatási közösségekben \"növekedési-faktor-ízű\" vegyületként ismert — nem olyan, amit a felhasználók akutan éreznek, hanem amely fokozatosan támogatja az agyi adaptációt, nyugalmat és működést. Az emberi hatékonysági adatok papíron vegyesek, de anekdotikus beszámolók szerint robusztus eredmények jelentkeznek, ismétlődő témaként a javuló \"mentális mélység\", ahol a gondolatok összekapcsoltabbnak tűnnek, és az emlékelőhívás kissé könnyebbé válik.\n\nInkább helyreállító jellegű, mint a hagyományos nootropikumok, például a racetámok. Koncepcionálisan kolinerg vagy AMPA/LTP-támogató szerekkel párosítják (Phenylpiracetam, Nefiracetam, TAK-653), mivel támogathatja a plaszticitás strukturális oldalát, míg ezek a vegyületek a jelátvitelt erősítik. Egyes felhasználók \"edzésnek a sérült agy számára\" nevezik — leegyszerűsítés, de jól szemlélteti helyreállító profilját."
 }

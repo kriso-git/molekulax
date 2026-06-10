@@ -120,5 +120,6 @@ export default {
     "modafinil",
     "armodafinil",
     "flmodafinil"
-  ]
+  ],
+  "anecdote": "Anegdotyczne doniesienia przedstawiają Adrafinil jako starszą, prolekową drogę do Modafinilu: wątroba musi go najpierw przekonwertować, zanim cokolwiek się wydarzy, więc początek działania jest wolniejszy i łagodniejszy, cały przebieg dłuższy, a wygaszanie delikatniejsze. Użytkownicy szukający \"dłuższego, miększego Modafinilu\" opisują go pozytywnie dokładnie za ten profil.\n\nKoszty powtarzają się w relacjach: konwersja jest mniej przewidywalna między osobami, niesie więcej obciążenia metabolicznego i jest słabym wyborem, gdy potrzebny jest natychmiastowy zastrzyk energii — to sam Modafinil jest aktywnym związkiem wykonującym pracę. Większość relacji traktuje go jako sytuacyjną alternatywę o łagodniejszej krzywej, stosowaną z rozmysłem i rzadko."
 }

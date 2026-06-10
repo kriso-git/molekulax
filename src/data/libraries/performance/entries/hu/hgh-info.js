@@ -101,5 +101,6 @@ export default {
     },
     "postCycle": null,
     "cruise": null
-  }
+  },
+  "anecdote": "A HGH bonyolult peptid, hatásai összetettebbek a közhiedelemnél. Növelheti a T4 reverz-T3-mé alakulását, idővel csökkentve az aktív pajzsmirigy-kimenetet, ezért egyes felhasználók T4/T3 mellett figyelik a pajzsmirigy-panelt. Hajlamos megemelni az éhomi vércukrot és magasabb dózisokban akutan csökkenteni az inzulinérzékenységet, így a szénhidrát- és inzulindinamika fontos. A vízvisszatartás korán nagyon gyakori a nátrium-retenció és a megnövekedett extracelluláris folyadék miatt. Zsibbadás, bizsergés vagy alagút-szerű tünetek is előfordulnak a folyadék-okozta idegi kompresszió miatt. A HGH jelentősen emeli az IGF-1 szintet, amely a legtöbb anabolikus/regenerációs hatásért felelős.\n\nA HGH-t szinte mindig szubkután adják be, jellemzően naponta a rövid felezési idő miatt. Lefekvés előtti, böjtölt állapotú (utolsó étkezés után 2-4 órával) adagolás ajánlott, mivel az inzulin közvetlenül ellensúlyozza a GH-t."
 }
