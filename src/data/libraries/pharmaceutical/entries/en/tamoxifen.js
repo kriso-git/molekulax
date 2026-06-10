@@ -68,10 +68,10 @@ export default {
       "pmid": "29385237"
     }
   ],
-  "related": [
-  ],
+  "related": [],
   "doseCalc": {
     "type": "warning",
     "warning": "Tamoxifen is the pillar of HORMONAL ONCO-THERAPY in ER+ breast cancer. SPECIALIST (ONCOLOGIST) SUPERVISION MANDATORY. NO STANDALONE DOSE CALCULATOR on this page because: (1) dose (20 mg/day) and duration (5-10 years) are oncology protocol decisions, patient-specific; (2) VTE (DVT/PE) and ENDOMETRIAL CANCER risk requires real monitoring; (3) CYP2D6 genetic status significantly affects efficacy — in some patients genotype testing indicated; (4) STRONG CYP2D6 inhibitors (fluoxetine, paroxetine, bupropion) CONTRAINDICATED — compromises tamoxifen efficacy. Talk to your oncologist. Emergency symptoms (unilateral leg swelling, dyspnea-chest pain, vaginal bleeding): IMMEDIATE care."
-  }
+  },
+  "anecdote": "Nolvadex (Tamoxifen) and Raloxifene are anecdotally the two most reliable compounds for gyno prevention, because tamoxifen directly blocks estrogen at the receptor level selectively in breast tissue — a highly targeted mechanism. Unlike Arimidex, it is not an aromatase inhibitor, so the benefits are receptor-targeted rather than system-wide. It is commonly used in PCT protocols because it stimulates LH/FSH more directly, which can be useful for HPTA recovery. Reported side effects include mild mood swings, rare vision disturbances, and long-term blood-clot risk — though most clotting case reports come from postmenopausal women using it for breast cancer prevention, so applicability to AAS users is less clear. Overall, community accounts regard Nolvadex as a solid tool for blocking estrogen in breast tissue and a strong gyno-prevention option. Administered orally, with dosing typically structured in multi-week cycles, especially during PCT."
 }

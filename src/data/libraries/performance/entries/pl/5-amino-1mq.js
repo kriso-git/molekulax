@@ -156,5 +156,6 @@ export default {
     },
     "unit": "RESEARCH-ONLY (brak human Rx dose)",
     "note": "PRECLINICAL-ONLY chemical — human trials NIE istnieją, brak human Rx dose. Ekstrapolacja modelu myszy: 50-200 mg/kg/dziennie PO (kontekst Kraus 2014 NNMT-knockdown analog). Konwersja mysz → człowiek BSA (~12x redukcja dawki) + nieznana biodostępność oznaczają, że human-equivalent NIE jest niezawodnie obliczalna. Research-chemical underground market 50-150 mg/kapsuła online produkty: label-claim discrepancy + HPLC-untested content. FDA never approved + UE EMA never approved. Kategoria WADA 'S0 catch-all non-approved substance' może się stosować dla aktywnych sportowców. Konsumpcja ludzka NIE zalecana — bezpieczny protokół nie istnieje."
-  }
+  },
+  "anecdote": "Doniesienia społeczności opisują 5-Amino-1MQ jako wysoko ceniony za utratę tłuszczu, a użytkownicy opisują subtelny, podstawowy efekt utraty tłuszczu, który buduje się z czasem. Raporty często obejmują lepszą całodzienną energię. Poprzez hamowanie NNMT, związek obniża krążące poziomy NAD+, zachowując więcej NAD+ wewnątrz komórek, gdzie jest metabolicznie aktywny. Dobrze łączy się ze związkami, które aktywnie zwiększają metabolizm — Cardarine, iniekcyjną L-karnityną lub Retatrutydem. Najlepiej traktować jako codzienny optymalizator utraty tłuszczu tła, a nie główny czynnik napędzający.\n\n5-Amino-1MQ można podawać doustnie (dostępne są formy kapsułkowane) lub podskórnie."
 }

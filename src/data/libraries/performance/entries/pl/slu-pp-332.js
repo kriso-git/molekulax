@@ -168,5 +168,6 @@ export default {
     },
     "unit": "mg/dzień PO (ekstrapolacja z myszy, BRAK walidacji u ludzi)",
     "note": "Dawka mysia 50 mg/kg/dzień PO (Billon 2024 Salk preprint). Ekstrapolacja dawki u ludzi z korekcją BSA + różnicami gatunkowymi daje 50-100 mg/dzień PO (BRAK ustalenia dawki fazy 1 u ludzi na styczeń 2026 r.). Długość cyklu 4-6 tygodni w badaniach mysich; ekstrapolacja cyklu u ludzi nieokreślona. NIE zalecane do eksperymentów na ludziach poza badaniami fazy 1."
-  }
+  },
+  "anecdote": "Zainteresowanie społeczności SLU-PP-332 wynika z jego ramy \"mimetyku ćwiczeń\": doniesienia opisują wymierne korzyści w spalaniu tłuszczu i wrażliwości insulinowej, przypisywane wzmocnionemu oddychaniu mitochondrialnemu i transkrypcji sterowanej przez ERR — to ta warstwa odpowiada za efekty wytrzymałościowe/przypominające trening. Konsekwentnie powtarzanym zastrzeżeniem jest słaba wchłanialność doustna: drogi iniekcyjna, żelowa lub proszkowa według relacji podnoszą poziomy znacznie skuteczniej niż dawkowanie doustne.\n\nW doniesieniach często łączy się go z Cardarine lub iniekcyjną L-karnityną, ponieważ szlaki uznaje się za komplementarne (AMPK vs ERR). Wyraźnie nie jest postrzegany jako \"magiczna pigułka treningowa\", a branża już przesunęła się ku cząsteczce-następcy (SLU-PP-915) obiecującej lepszą biodostępność — co przypomina, jak eksperymentalny to wciąż związek."
 }

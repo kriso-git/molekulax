@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Frakcje peptydowe wykazują aktywność neurotroficzną podobną do NGF, BDNF i GDNF, zmniejszają ekscytotoksyczność i apoptozę indukowaną niedokrwieniem oraz stymulują neurogenezę w strefie podkomorowej.",
   "legalStatus": "Lek na receptę na Węgrzech, w Austrii, Polsce i wielu państwach UE/rosyjskich. Niezatwierdzony przez FDA w USA.",
-  "chemicalFormula": "mixture"
+  "chemicalFormula": "mixture",
+  "anecdote": "Cerebrolysin ma w społecznościach badawczych reputację związku o \"smaku czynnika wzrostu\" — nie czegoś, co użytkownicy odczuwają ostro, lecz wspierającego stopniową adaptację mózgu, spokój i funkcjonowanie. Dane dotyczące skuteczności u ludzi są na papierze mieszane, ale raporty anegdotyczne opisują solidne wyniki, z powtarzającym się motywem poprawy \"głębi mentalnej\", gdzie myśli wydają się bardziej połączone, a wydobywanie wspomnień staje się nieco łatwiejsze.\n\nJest bardziej zorientowany na regenerację niż konwencjonalne nootropy, takie jak racetamy. Koncepcyjnie łączy się go z agentami cholinergicznymi lub wspierającymi AMPA/LTP (Phenylpiracetam, Nefiracetam, TAK-653), ponieważ może wspierać strukturalną stronę plastyczności, podczas gdy te związki wzmacniają sygnalizację."
 }

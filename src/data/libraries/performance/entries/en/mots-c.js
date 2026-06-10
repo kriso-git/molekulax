@@ -38,7 +38,8 @@ export default {
   "legalStatus": "USA: NOT FDA-approved, research-only peptide (Schedule N/A, but not authorized for distribution). EU: NOT EMA-approved. HU + PL: NOT registered. Phase 1/2 human-trial status is CohBar Inc + Stealth BioTherapeutics pipeline 2024-2025, full publication expected 2026. WADA: NOT explicitly banned (peptide-class S2.1 GH/IGF-1-axis-banned list does not include the mitochondrial-derived peptide category), but S0 'non-approved substance' catch-all risk applies (WADA 2025 prohibited list § S0).",
   "onsetTime": "Acute AMPK activation 1-2 h; metabolic effect 2-4 weeks",
   "halfLife": "~1-2 hours (SC, mouse extrapolation)",
-  "interactionsWith": [    "l-carnitine",
+  "interactionsWith": [
+    "l-carnitine",
     "5-amino-1mq"
   ],
   "aromatization": "Does not aromatize — mitochondrial peptide, not steroid-related. No CYP19 interaction; the estrogen axis is directly unaffected.",
@@ -162,7 +163,8 @@ export default {
       "a": "The MolekulaX peptide library (peptides/) provides pharmacology education on clinically indicated peptides (Tesamorelin for HIV lipodystrophy; Semaglutide for T2DM/obesity). The performance library (performance/) covers the athletic-doping framing of the same compounds (Tesamorelin-perf for abdominal fat loss; Semaglutide-perf for 6-12 week cutting cycles). MOTS-c currently has NO peptide-counterpart entry in the MolekulaX peptide library — this is the first MOTS-c entry, performance-only framing. The clinical T2DM indication is in Phase 2; if FDA approval lands in 2027+, a clinical-counterpart entry will be added to the peptide library."
     }
   ],
-  "related": [    "l-carnitine",
+  "related": [
+    "l-carnitine",
     "5-amino-1mq"
   ],
   "doseCalc": {
@@ -194,5 +196,6 @@ export default {
       "markers": "Fasting glucose (returns to baseline ~2-4 weeks), HbA1c (cumulative -0.1-0.3% on baseline), IGF-1, lipid panel",
       "purpose": "Confirm post-cycle persistence of insulin-sensitization effect + thyroid-axis recovery. HbA1c reduction is the cumulative marker of the AMPK-activator class mechanism."
     }
-  }
+  },
+  "anecdote": "Community reports frequently favor either MOTS-c or 5-Amino-1MQ for fat-loss enhancement. Some users describe MOTS-c as a \"Cardarine-lite,\" though this is generally regarded as an exaggeration. Combined with other fat-loss agents, MOTS-c may form a strong stack. It works best in already-active users, since it enhances fuel utilization rather than forcing fat burn. Improved insulin sensitivity via AMPK activation is a notable benefit, paralleling Metformin's mechanism. Anecdotal reports describe better day-to-day energy especially during steep caloric deficits — subtle but meaningful.\n\nMOTS-c is typically administered subcutaneously. Frequency comes down to user preference. Since MOTS-c is naturally produced and levels decline with age, supplementation in older users may yield more pronounced benefits."
 }

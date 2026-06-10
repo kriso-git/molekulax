@@ -41,7 +41,8 @@ export default {
   "interactionsWith": [
     "metoprolol",
     "desipramine",
-    "albuterol",    "clenbuterol"
+    "albuterol",
+    "clenbuterol"
   ],
   "aromatization": "Nem aromatizál (nem szteroid hatóanyag — szelektív β3-adrenoceptor agonista). Nincs CYP19-interakció, az ösztrogén-axis érintetlen.",
   "hepatotoxicity": "Alacsony — DILI ritka, ALT-emelkedés <2% incidenciával dokumentált klinikai trial-okon (Khullar 2013 OAB-RCT PMID 23537815). CYP2D6 + CYP3A4 metabolizmus, drug-interaction kockázat metoprolol és desipramine mellett (Mirabegron CYP2D6 substrate-inhibitor, plasma-szint emelő).",
@@ -171,7 +172,8 @@ export default {
     }
   ],
   "related": [
-    "albuterol",    "clenbuterol",
+    "albuterol",
+    "clenbuterol",
     "l-carnitine"
   ],
   "doseCalc": {
@@ -203,5 +205,6 @@ export default {
       "markers": "BP + HR home-tracking, EKG (QTc-normalizáció confirm), receptor-recovery-szignál (BAT-volume optional PET-CT ha research-context)",
       "purpose": "β3-receptor recovery + cardiovascular-baseline-helyreállítás verifikálása cycle-off előtt új cycle-ra"
     }
-  }
+  },
+  "anecdote": "A Mirabegron a közösségi beszámolókban azzal tűnik ki, hogy azon kevés vegyületek egyike, amelynél tényleges humán bizonyíték van a barna zsírszövet (BAT) aktivációjára. A felhasználók jól tolerálhatónak írják le, valós, de enyhe, \"háttérben zajló\" termogén hatással, amely passzívan járul hozzá a zsírvesztéshez — jellemzően mindenféle stimuláns-szerű érzet nélkül. A beszámolók következetesen hosszú távú vegyületként keretezik, nem gyors fogyasztó eszközként.\n\nMagasabb dózisoknál a nyugalmi pulzus vagy a vérnyomás érezhető emelkedését jelentik, ezért egyes beszámolók szelektív béta-1 blokkolóval való együttadásról számolnak be; a kifejezettebb zsírvesztő hatások is jellemzően csak ezeknél a magasabb dózisoknál jelennek meg. A hidegexpozíciós protokollokkal való kombinálás az anekdoták szerint felerősíti a BAT-aktivációt, mivel mindkettő hasonló termogén útvonalakat céloz."
 }

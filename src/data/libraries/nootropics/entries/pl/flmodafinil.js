@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Mechanizm podobny do modafinilu: słabe hamowanie DAT, pośrednia aktywacja szlaku oreksyny/histaminy. Dwa podstawienia para-fluoro zwiększają biodostępność i spowalniają metabolizm.",
   "legalStatus": "Nigdzie nie zatwierdzony jako lek. Sprzedawany jako „chemikalium badawcze”; zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act.",
-  "chemicalFormula": "C15H13F2NO2S"
+  "chemicalFormula": "C15H13F2NO2S",
+  "anecdote": "Anegdoty badaczy konsekwentnie nazywają Flmodafinil \"czystszym, łagodniejszym\" członkiem rodziny afinili: czuwanie bez agresywnego mentalnego napędu czy presji, których część osób doświadcza przy innych afinilach — co czyni go atrakcyjnym dla użytkowników źle znoszących obwodowe efekty tej klasy. Jego działanie dopaminergiczne w niektórych relacjach porównywano wręcz do metylofenidatu, a według doniesień działa dłużej niż zwykły Modafinil.\n\nCzęsto podkreślanym bonusem jest mniejszy wpływ na architekturę snu w porównaniu z pokrewnymi związkami. Pod względem ogólnej mocy zwykle plasuje się między Armodafinilem a słabszymi związkami selektywnymi — według większości relacji to solidna, skromna pozycja w linii Modafinilu."
 }

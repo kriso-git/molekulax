@@ -38,7 +38,8 @@ export default {
   "legalStatus": "USA: NEM FDA-jóváhagyott, research-only peptide (Schedule N/A, de NEM forgalombahoz jogosult). EU: NEM EMA-jóváhagyott. HU + PL: NEM törzskönyvezett. Phase 1/2 humán-trial-status CohBar Inc + Stealth BioTherapeutics pipeline 2024-2025, full publication 2026 várható. WADA: NEM explicit-banned (peptide-class S2.1 GH/IGF-1-axis-banned listán NEM szerepel mitochondrial-derived peptide kategóriában), DE S0 'non-approved substance' catch-all veszély (WADA 2025 prohibited list § S0).",
   "onsetTime": "Akut AMPK-aktiváció 1-2 óra; metabolic-effect 2-4 hét",
   "halfLife": "~1-2 óra (SC, mouse-extrapolation)",
-  "interactionsWith": [    "l-carnitine",
+  "interactionsWith": [
+    "l-carnitine",
     "5-amino-1mq"
   ],
   "aromatization": "Nem aromatizál — mitokondriális peptid, nem szteroid-rokon. CYP19-interakció NINCS, ösztrogén-axis közvetlenül érintetlen.",
@@ -162,7 +163,8 @@ export default {
       "a": "A MolekulaX peptid-library (peptides/) klinikai-indikált peptidek farmakológiai edukációját nyújtja (Tesamorelin HIV-lipodystrophy, Semaglutide T2DM/obesity). A performance-library (performance/) ugyanazon hatóanyagok athletic-doping framing-ét adja (Tesamorelin-perf abdominal fat-loss, Semaglutide-perf cutting-cycle 6-12 hét). MOTS-c jelenleg NEM rendelkezik peptid-counterpart entry-vel a MolekulaX peptid-library-ben — ez az első MOTS-c entry, performance-only framing. Klinikai T2DM-indikáció Phase 2 stádiumban van; ha FDA-jóváhagyás történik 2027+ évben, a peptid-library-be is kerül egy klinikai-counterpart entry."
     }
   ],
-  "related": [    "l-carnitine",
+  "related": [
+    "l-carnitine",
     "5-amino-1mq"
   ],
   "doseCalc": {
@@ -194,5 +196,6 @@ export default {
       "markers": "Fasting glucose (visszatérés baseline-re ~2-4 hét), HbA1c (cumulative -0.1-0.3% baseline-on), IGF-1, lipid panel",
       "purpose": "Insulin-sensitization-effect cumulative-cumulation post-cycle persistence + tireoid-axis-recovery confirm. HbA1c-csökkenés cumulative-marker AMPK-aktivátor-class mechanism."
     }
-  }
+  },
+  "anecdote": "Közösségi beszámolók gyakran kedvelik vagy a MOTS-c-t, vagy az 5-Amino-1MQ-t zsírvesztés-fokozásra. Egyes felhasználók a MOTS-c-t \"Cardarine-light\"-ként írják le, bár ezt általában túlzásnak tartják. Más zsírvesztő szerekkel kombinálva a MOTS-c erős stacket alkothat. Aktív felhasználóknál működik a legjobban, mivel inkább az üzemanyag-felhasználást fokozza, mintsem zsírégetést kényszerít ki. A javuló inzulinérzékenység AMPK-aktiváción keresztül figyelemre méltó előny, párhuzamosan a Metformin mechanizmusával. Anekdotikus beszámolók szerint jobb napi energia, különösen meredek kalóriadeficitek alatt.\n\nA MOTS-c-t jellemzően szubkután adják be. Mivel a MOTS-c természetesen termelődik, és szintjei a kor előrehaladtával csökkennek, az idősebbeknél történő pótlás kifejezettebb előnyöket eredményezhet."
 }

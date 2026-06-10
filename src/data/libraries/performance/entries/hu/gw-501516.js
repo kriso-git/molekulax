@@ -193,5 +193,6 @@ export default {
       "markers": "Liver enzymes, full CBC, tumor-marker (AFP, CEA), follow-up 6 hónap + 1 év + 2 év",
       "purpose": "Long-term carcinogenicity-monitoring (latencia 5-10 év humán-extrapoláció esetén) — research-only chemical, ne használd"
     }
-  }
+  },
+  "anecdote": "Anekdotikus beszámolók szerint a Cardarine kalóriadeficit alatt az egyik legkedveltebb vegyület: napi 20 mg mellett a felhasználók kiugró állóképesség-javulást, egyenletes, csúcsok és összeomlások nélküli egésznapos energiát, javuló lipidprofilt és érezhetően könnyebb kardióedzéseket említenek — a fáradtság és a \"szenvedés-faktor\" a beszámolók szerint annyira csökken, hogy a glikogén-kímélő hatás miatt még a kardiót utálók is elkezdik tolerálni az edzéseket. Gyakran említett mellékhatás a fokozott izzadás, a zsírvesztő hatás pedig csak kalóriadeficittel és rendszeres kardióval együtt jelentkezik; a közösségi beszámolók vágás alatt gyakran injektálható L-karnitinnel kombinálják.\n\nA széles körben emlegetett rák-aggodalom két éven túl, extrém dózisokkal végzett rágcsálókísérletekből ered; humán rákesetet a közösség máig nem dokumentált — ugyanakkor hosszú távú humán biztonsági adat egyszerűen nincs, így az óvatosság továbbra is indokolt."
 }

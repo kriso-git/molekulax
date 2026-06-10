@@ -92,7 +92,11 @@ export default {
       },
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 500, "medium": 2000, "high": 4000 },
+        "fixed": {
+          "low": 500,
+          "medium": 2000,
+          "high": 4000
+        },
         "unit": "mg/nap",
         "note": {
           "hu": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose — info-card megjelenítés, MiniCalc nem releváns.",
@@ -156,7 +160,11 @@ export default {
       },
       "doseCalc": {
         "type": "fixed",
-        "fixed": { "low": 200, "medium": 500, "high": 1000 },
+        "fixed": {
+          "low": 200,
+          "medium": 500,
+          "high": 1000
+        },
         "unit": "mg/injekció",
         "note": {
           "hu": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral.",
@@ -334,5 +342,6 @@ export default {
       "purpose": "Weryfikacja regeneracji poziomu TMAO po cyklu, regeneracja baseline panelu lipidowego + homeostazy glukozy"
     }
   },
-  "defaultVariant": "oral"
+  "defaultVariant": "oral",
+  "anecdote": "Relacje społeczności opisują iniekcyjną L-karnitynę jako długoterminowy, codzienny element protokołu, a nie szybkie rozwiązanie: użytkownicy zgłaszają lepszy poziom energii w ciągu dnia już przy samodzielnym stosowaniu, a zazwyczaj podają ją przed treningiem razem z węglowodanami, by zmaksymalizować wychwyt do mięśni. Konsekwentnie podkreśla się, że to \"nie magiczny spalacz tłuszczu\" — widoczny efekt pojawia się w połączeniu z odpowiednią rutyną i deficytem kalorycznym, a podczas redukcji w relacjach często łączy się ją z Cardarine.\n\nDwie uwagi praktyczne powtarzają się w doniesieniach: to związek na bazie wodnej, którego nie wolno mieszać z preparatami olejowymi, a stałe, codzienne dawkowanie uznaje się za klucz do utrzymania stabilnego wysycenia tkanek."
 }

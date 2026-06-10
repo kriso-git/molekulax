@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "Profile similar to Adrafinil, converted in the liver into a Modafinil-like metabolite that promotes wakefulness via DAT inhibition and orexin/histamine modulation. The fluorine substitution slows metabolism.",
   "legalStatus": "Not approved as a medicine anywhere. Banned in the UK under the Psychoactive Substances Act; sold elsewhere as a “research chemical”.",
-  "chemicalFormula": "C15H13F2NO3S"
+  "chemicalFormula": "C15H13F2NO3S",
+  "anecdote": "Anecdotal reports describe Fladrafinil as a distinctly stronger, more \"wired\" experience than Modafinil, with more pronounced focus and alertness — typically used after nights of poor sleep rather than daily. Higher doses are repeatedly linked to anxiety in sensitive users, and because it is a pro-drug, concerns about liver strain with frequent use come up regularly, though hard data is limited. The common conclusion: a situational tool for when wakefulness is absolutely needed, not a daily driver.\n\nWith a duration often reported at 12-16+ hours, early-morning administration is consistently advised to avoid sleep disruption, and most reports recommend starting at a low dose to assess tolerance, as higher amounts feel overly stimulating for some."
 }

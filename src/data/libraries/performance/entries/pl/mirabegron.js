@@ -41,7 +41,8 @@ export default {
   "interactionsWith": [
     "metoprolol",
     "desipramine",
-    "albuterol",    "clenbuterol"
+    "albuterol",
+    "clenbuterol"
   ],
   "aromatization": "Nie aromatyzuje (nie jest sterydem — selektywny agonista receptora β3-adrenergicznego). Brak interakcji z CYP19; oś estrogenowa pozostaje nienaruszona.",
   "hepatotoxicity": "Niska — DILI rzadkie, podwyższenie ALT <2% udokumentowane w badaniach klinicznych (Khullar 2013 OAB-RCT PMID 23537815). Metabolizm CYP2D6 + CYP3A4 stwarza ryzyko interakcji lekowej z metoprololem i desipraminą (Mirabegron jest substratem-inhibitorem CYP2D6, podnosi poziom plazmatyczny).",
@@ -171,7 +172,8 @@ export default {
     }
   ],
   "related": [
-    "albuterol",    "clenbuterol",
+    "albuterol",
+    "clenbuterol",
     "l-carnitine"
   ],
   "doseCalc": {
@@ -203,5 +205,6 @@ export default {
       "markers": "BP + HR home-tracking, EKG (potwierdzenie normalizacji QTc), sygnał odbudowy receptora (objętość BAT opcjonalnie PET-CT w kontekście badawczym)",
       "purpose": "Weryfikacja odbudowy receptora β3 + przywrócenia baseline sercowo-naczyniowego przed rozpoczęciem nowego cyklu"
     }
-  }
+  },
+  "anecdote": "Mirabegron wyróżnia się w relacjach społeczności jako jeden z nielicznych związków z rzeczywistymi dowodami u ludzi na aktywację brunatnej tkanki tłuszczowej (BAT). Użytkownicy opisują go jako dobrze tolerowany, z realnym, ale łagodnym, działającym \"w tle\" efektem termogenicznym, który pasywnie wspiera utratę tłuszczu — co istotne, bez żadnego odczucia stymulacji. Doniesienia konsekwentnie przedstawiają go jako związek długodystansowy, a nie narzędzie szybkiej redukcji.\n\nPrzy wyższych dawkach zgłaszany jest zauważalny wzrost spoczynkowego tętna lub ciśnienia krwi, dlatego część relacji wspomina o łączeniu z selektywnym beta-1 blokerem; wyraźniejsze efekty spalania tłuszczu również pojawiają się zwykle dopiero przy tych wyższych dawkach. Łączenie z protokołami ekspozycji na zimno według anegdot wzmacnia aktywację BAT, ponieważ oba działają na podobne szlaki termogeniczne."
 }

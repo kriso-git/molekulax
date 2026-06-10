@@ -156,5 +156,6 @@ export default {
     },
     "unit": "RESEARCH-ONLY (no human Rx dose)",
     "note": "PRECLINICAL-ONLY chemical — human trials do NOT exist, no human Rx dose. Mouse-model extrapolation: 50-200 mg/kg/day PO (Kraus 2014 NNMT-knockdown analog context). Mouse → human BSA conversion (~12x dose reduction) + unknown bioavailability mean the human-equivalent cannot be reliably calculated. Research-chemical underground market 50-150 mg/cap online products: label-claim discrepancy + HPLC-untested content. FDA never approved + EU EMA never approved. WADA 'S0 catch-all non-approved substance' category may apply for active competitive athletes. Human consumption is NOT recommended — no safe protocol exists."
-  }
+  },
+  "anecdote": "Community accounts describe 5-Amino-1MQ as highly regarded for fat loss, with users describing a subtle, background fat-loss effect that builds over time. Reports often include better day-long energy. Through NNMT inhibition, the compound lowers circulating NAD+ levels by retaining more NAD+ inside cells where it is metabolically active. It pairs well with compounds that actively boost metabolism — Cardarine, injectable L-Carnitine, or Retatrutide. Best framed as a daily background fat-loss optimizer rather than a primary driver.\n\n5-Amino-1MQ can be administered orally (encapsulated formulations are available) or subcutaneously. If oral use causes stomach upset, taking it with food or extra water helps. Pre-cardio dosing is often considered ideal for performance applications."
 }

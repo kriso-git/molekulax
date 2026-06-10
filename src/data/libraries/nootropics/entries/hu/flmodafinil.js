@@ -25,5 +25,6 @@ export default {
   ],
   "mechanism": "A Modafinilhez hasonló mechanizmus: gyenge DAT-gátlás, orexin/hisztamin út indirekt aktiválás. A két para-fluor szubsztitúció növeli a biológiai hasznosulást és lassítja a metabolizmust.",
   "legalStatus": "Sehol nem jóváhagyott gyógyszer. „Research chemical\" minősítéssel árusított; UK-ban a Psychoactive Substances Act tiltja.",
-  "chemicalFormula": "C15H13F2NO2S"
+  "chemicalFormula": "C15H13F2NO2S",
+  "anecdote": "A kutatói anekdoták a Flmodafinilt következetesen az afinil-család \"tisztább, szelídebb\" tagjának nevezik: ébrenlét az agresszív mentális hajtás vagy nyomás nélkül, amit egyesek más afinileknél tapasztalnak — emiatt vonzó azoknak, akik rosszul tűrik az osztály perifériás hatásait. Dopaminerg hatását egyes beszámolók egyenesen a metilfenidátéhoz hasonlítják, és a jelentések szerint tovább tart, mint a sima Modafinil.\n\nGyakran kiemelt bónusz az alvási architektúrára gyakorolt kisebb hatás a testvérvegyületekhez képest. Összpotenciálban általában az Armodafinil és a gyengébb szelektív vegyületek közé sorolják — a legtöbb beszámoló szerint szolid, szerény belépő a Modafinil-vonalba."
 }
