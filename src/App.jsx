@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import Hero from './components/Hero'
 import Education from './components/Education'
+import Sourcing from './components/Sourcing'
 import TelegramSection from './components/TelegramSection'
 import Faq from './components/Faq'
 import Disclaimer from './components/Disclaimer'
@@ -99,6 +100,7 @@ export default function App() {
               <>
                 <Hero />
                 <Education />
+                <Sourcing />
                 <Suspense fallback={<div style={{ minHeight: 600 }} />}>
                   <LibraryCube />
                 </Suspense>

@@ -61,7 +61,7 @@ export default function DnaPreview() {
           Így néz ki egy szövegblokk a 3D DNS háttér felett — ellenőrizd, hogy jól olvasható-e, és hogy a háttér mozgása nem zavaró-e.
         </p>
         <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 760 }}>
-          {['Tudományos farmakológia', 'Klinikai kutatások', 'Tanácsadók elérhetősége'].map((t) => (
+          {['Tudományos farmakológia', 'Klinikai kutatások', 'Tanácsadó elérhetősége'].map((t) => (
             <div key={t} style={{ width: 220, background: 'rgba(13,16,32,0.55)', backdropFilter: 'blur(10px)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 16, padding: '22px 18px', textAlign: 'left' }}>
               <h3 style={{ color: '#fff', fontSize: 16, fontWeight: 700, marginBottom: 8 }}>{t}</h3>
               <p style={{ color: '#9aa0bb', fontSize: 13, lineHeight: 1.5 }}>Minta kártya, hogy lásd, hogyan ül meg a tartalom a háttéren.</p>
