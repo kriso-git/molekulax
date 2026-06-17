@@ -232,6 +232,21 @@
     background-color: var(--bg-base);
     transition: background-color 360ms ease;
   }
+  /* Immediate + fallback backdrop behind the 3D DNA background: theme-aware base
+     + the teal/violet corner glows (same colours the old MoleculeBackground drew).
+     Shows before three.js loads, on mobile (3D gated to >=768px), and if WebGL is
+     unavailable. The DNA canvas renders transparently on top of this. */
+  .dna-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(55vw 55vw at 2% 2%, rgba(28, 130, 155, 0.20), transparent 70%),
+      radial-gradient(52vw 52vw at 98% 98%, rgba(75, 38, 120, 0.26), transparent 70%),
+      var(--bg-base);
+    transition: background-color 360ms ease;
+  }
 }
 
 /* Smooth colour transitions across the whole tree when the theme flips.
@@ -351,10 +366,6 @@
    stop becomes dark in light mode so the title is readable. */
 [data-theme="light"] .from-white { --tw-gradient-from: #0f172a var(--tw-gradient-from-position); }
 [data-theme="light"] .to-white   { --tw-gradient-to:   #0f172a var(--tw-gradient-to-position); }
-
-/* FloatingScientific decorative SVGs use stroke/fill="white". Invert in
-   light mode so the white linework becomes dark and stays visible. */
-[data-theme="light"] .floating-deco { filter: invert(1) hue-rotate(180deg); }
 
 /* ── PeptideTile hover lift — translateY + accent halo. Replaces the
    previous image-scale-on-hover behaviour with a card-wide elevation. */

@@ -5,8 +5,6 @@ import TelegramSection from './components/TelegramSection'
 import Faq from './components/Faq'
 import Disclaimer from './components/Disclaimer'
 import Footer from './components/Footer'
-import MoleculeBackground from './components/MoleculeBackground'
-import FloatingScientific from './components/FloatingScientific'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
 import SideLibrarySwitcher from './components/SideLibrarySwitcher'
@@ -15,7 +13,7 @@ import EntryDetailRoute from './components/library/EntryDetailRoute'
 import { isEntryDetailHash } from './components/library/entryHash'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
-import { ThemeProvider } from './theme/ThemeContext'
+import { ThemeProvider, useTheme } from './theme/ThemeContext'
 import { LibraryProvider } from './context/LibraryContext'
 
 // LibraryCube + framer-motion are split into a separate chunk via React.lazy
@@ -24,9 +22,13 @@ import { LibraryProvider } from './context/LibraryContext'
 // audit (Home mobile Perf 65) tied directly to eager framer-motion load.
 const LibraryCube = lazy(() => import('./components/library/cube-nav/LibraryCube'))
 
-// Hidden preview route (#dna-preview) for the WIP 3D DNA background. Lazy so
-// three.js only loads on this route, never in the main bundle. Not linked.
+// Hidden preview route (#dna-preview) for tuning the 3D DNA background. Lazy.
 const DnaPreview = lazy(() => import('./components/DnaPreview'))
+
+// Live homepage background (replaces the old 2D MoleculeBackground). Lazy so
+// three.js stays OUT of the initial bundle; gated to >=768px so mobile
+// Lighthouse is untouched (the CSS .dna-backdrop covers mobile + the load gap).
+const DnaBackground = lazy(() => import('./components/DnaBackground'))
 
 function readHash() {
   return typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, '')
@@ -40,6 +42,25 @@ function useHashRoute() {
     return () => window.removeEventListener('hashchange', onChange)
   }, [])
   return hash
+}
+
+// Background: always-on CSS backdrop (theme-aware base + teal/violet glows) +
+// the lazy 3D DNA layer ONLY in dark mode on >=768px. The DNA is a dark-mode
+// feature (its palette/fog are tuned for the dark base); light mode and mobile
+// fall back to the CSS backdrop, and three.js is never downloaded there.
+function BackgroundLayer() {
+  const { theme } = useTheme()
+  const showDnaBg = useMediaQuery('(min-width: 768px)')
+  return (
+    <>
+      <div aria-hidden="true" className="dna-backdrop" />
+      {showDnaBg && theme === 'dark' && (
+        <Suspense fallback={null}>
+          <DnaBackground />
+        </Suspense>
+      )}
+    </>
+  )
 }
 
 export default function App() {
@@ -57,7 +78,6 @@ export default function App() {
   }
 
   const isEntryDetail = isEntryDetailHash(hash)
-  const isDesktop = useMediaQuery('(min-width: 1024px)')
   // Phase 9 LCP fix: hide landing on ALL devices (not just desktop) when
   // entry-detail is active. The mobile modal is position:fixed and covers
   // the viewport, so the user never sees the landing — but Lighthouse was
@@ -70,8 +90,7 @@ export default function App() {
       <LanguageProvider>
         <LibraryProvider>
         <div className="relative min-h-screen page-root overflow-x-hidden">
-          <MoleculeBackground />
-          <FloatingScientific />
+          <BackgroundLayer />
           <ThemeSwitcher />
           <LanguageSwitcher />
           <AffiliateButton />
