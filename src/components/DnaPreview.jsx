@@ -32,7 +32,7 @@ function Slider({ label, value, min, max, step = 1, onChange, fmt }) {
 }
 
 export default function DnaPreview() {
-  const [p, setP] = useState({ count: 7, size: 0.55, glow: 0.7, rough: 0.2, speed: 1.0, palette: 'mixed' })
+  const [p, setP] = useState({ count: 11, size: 0.55, glow: 0.7, rough: 0.2, speed: 1.0, palette: 'mixed' })
   const set = (k) => (v) => setP((s) => ({ ...s, [k]: v }))
 
   // matches the live site backdrop: #07071e base + teal (top-left) & violet

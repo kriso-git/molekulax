@@ -1,17 +1,19 @@
-// dnaField.js — framework-agnostic Three.js "floating DNA helices" background.
+// dnaField.js — framework-agnostic Three.js "DNA data-network" background.
 //
-// Renders many small, detailed, glossy double-helix strands drifting in depth,
-// with bloom glow. Designed as a site background: transparent canvas (the page
-// background shows through), pointer-events handled by the host element, paused
-// when the tab is hidden, reduced on mobile / prefers-reduced-motion.
+// Renders many small DNA double-helices styled as glowing data networks:
+// glassy/iridescent nucleotide NODES connected by additive network EDGES
+// (backbone + base-pair rungs + sparse cross-links). Scattered across the whole
+// viewport on a jittered grid, drifting + slowly rotating, with bloom glow.
+//
+// Designed as a site background: transparent canvas (page bg shows through),
+// paused when the tab is hidden, reduced on mobile, full dispose() teardown.
 //
 // Public API:
 //   const field = createDnaField(canvas, params)
-//   field.setParams(partial)   // live-tune; rebuilds geometry only when count/size/palette change
-//   field.dispose()            // full teardown (GL context, geometries, materials, listeners)
+//   field.setParams(partial)   // live-tune; rebuilds only on count/size/palette
+//   field.dispose()            // full teardown (GL, geometries, materials, listeners)
 //
-// params: { count, size, glow, rough, speed, palette }
-//   palette ∈ 'mixed' | 'green' | 'cool'
+// params: { count, size, glow, rough, speed, palette }   palette ∈ 'mixed'|'green'|'cool'
 
 import * as THREE from 'three'
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js'
@@ -20,23 +22,23 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
 
+// Site base palette: teal + violet dominant (same as the live MoleculeBackground),
+// Chemical-Green (#00ff99) only as the accent "hub" colour.
+const TEAL = 0x64b2c0, VIOLET = 0x9480b9, GREEN = 0x00ff99, BLUE = 0x7fb0ff
 const PALETTES = {
-  mixed: [[0x64b2c0, 0x9480b9, 0x00ff99], [0x00ff99, 0x39d3a0, 0x64b2c0], [0x9480b9, 0x7fb0ff, 0x00ff99]],
-  green: [[0x00ff99, 0x39d3a0, 0x7fffd4], [0x10b981, 0x00ff99, 0x39d3a0]],
-  cool: [[0x64b2c0, 0x9480b9, 0x7fb0ff], [0x7fe9ff, 0x9480b9, 0x64b2c0]],
+  mixed: [[TEAL, VIOLET, GREEN], [VIOLET, TEAL, GREEN], [TEAL, BLUE, GREEN]],
+  green: [[GREEN, 0x39d3a0, 0x7fffd4], [0x10b981, GREEN, 0x39d3a0]],
+  cool: [[TEAL, VIOLET, BLUE], [0x7fe9ff, VIOLET, TEAL]],
 }
 
-// speed defaults to a gentle slow auto-rotation; fog matches the site base (#07071e)
 const SITE_BG = 0x07071e
-const DEFAULTS = { count: 7, size: 0.55, glow: 0.7, rough: 0.2, speed: 1.0, palette: 'mixed' }
+const DEFAULTS = { count: 11, size: 0.55, glow: 0.7, rough: 0.2, speed: 1.0, palette: 'mixed' }
 
 export function createDnaField(canvas, params = {}) {
   const state = { ...DEFAULTS, ...params }
 
-  const mqMobile = window.matchMedia('(max-width: 767px)')
-  const mqReduce = window.matchMedia('(prefers-reduced-motion: reduce)')
-  const isMobile = mqMobile.matches
-  const reduce = mqReduce.matches
+  const isMobile = window.matchMedia('(max-width: 767px)').matches
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: !isMobile, alpha: true, powerPreference: 'high-performance' })
   renderer.setClearColor(0x000000, 0)
@@ -46,18 +48,17 @@ export function createDnaField(canvas, params = {}) {
   renderer.toneMappingExposure = 1.1
 
   const scene = new THREE.Scene()
-  scene.fog = new THREE.FogExp2(SITE_BG, 0.045) // a touch hazier / softer DNA
+  scene.fog = new THREE.FogExp2(SITE_BG, 0.045) // a touch hazier / softer depth
 
   const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 200)
   camera.position.set(0, 0, 26)
 
   scene.add(new THREE.AmbientLight(0x3a4263, 1.0))
-  const l1 = new THREE.PointLight(0x64b2c0, 200, 90); l1.position.set(14, 10, 18); scene.add(l1)
-  const l2 = new THREE.PointLight(0x9480b9, 200, 90); l2.position.set(-16, -8, 12); scene.add(l2)
-  const l3 = new THREE.PointLight(0x00ff99, 120, 80); l3.position.set(0, 14, -10); scene.add(l3)
+  const l1 = new THREE.PointLight(TEAL, 200, 90); l1.position.set(14, 10, 18); scene.add(l1)
+  const l2 = new THREE.PointLight(VIOLET, 200, 90); l2.position.set(-16, -8, 12); scene.add(l2)
+  const l3 = new THREE.PointLight(GREEN, 120, 80); l3.position.set(0, 14, -10); scene.add(l3)
 
-  // PMREM studio environment → high-quality reflections for the physical
-  // materials (clearcoat + iridescence read from this env map).
+  // PMREM studio environment → high-quality reflections for the physical nodes.
   const pmrem = new THREE.PMREMGenerator(renderer)
   const envRT = pmrem.fromScene(new RoomEnvironment(), 0.04)
   scene.environment = envRT.texture
@@ -71,90 +72,66 @@ export function createDnaField(canvas, params = {}) {
   composer.addPass(outputPass)
   composer.setSize(window.innerWidth, window.innerHeight)
 
-  // shared geometry (re-used across every instance)
-  const sphereGeo = new THREE.SphereGeometry(1, 16, 16)
-  const rungGeo = new THREE.CylinderGeometry(1, 1, 1, 8)
-  const up = new THREE.Vector3(0, 1, 0)
-  const q = new THREE.Quaternion()
+  const sphereGeo = new THREE.SphereGeometry(1, 16, 16) // shared node geometry
   const tmp = new THREE.Object3D()
 
   let field = []         // { grp, spin, drift, baseY }
-  let ownedMeshes = []   // InstancedMeshes — must .dispose() to free instanceMatrix/instanceColor GPU buffers
+  let ownedMeshes = []   // InstancedMeshes — dispose to free instance buffers
   let ownedMats = []     // materials to dispose / live-update
-  let ownedGeos = []     // per-build tube geometries to dispose
+  let ownedGeos = []     // per-build BufferGeometries (network edges) to dispose
 
   function effectiveCount() {
-    return isMobile ? Math.min(state.count, 4) : state.count
+    return isMobile ? Math.min(state.count, 5) : state.count
   }
 
+  // One helix = glowing nodes + an additive line-network (backbone, rungs, cross-links).
   function buildHelix(colors, scale) {
     const g = new THREE.Group()
     const BP = 14, R = 2.2, rise = 0.5, twist = 0.6, H = BP * rise, yOff = -H / 2
 
-    // high-quality glassy/iridescent strands: clearcoat + iridescence reflect
-    // the PMREM env map; modest emissive so they still feed the bloom glow.
-    const physBase = { roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.18, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.1 }
-    const matA = new THREE.MeshPhysicalMaterial({ ...physBase, color: colors[0], emissive: colors[0], emissiveIntensity: 0.3 })
-    const matB = new THREE.MeshPhysicalMaterial({ ...physBase, color: colors[1], emissive: colors[1], emissiveIntensity: 0.3 })
-    ownedMats.push(matA, matB)
-
-    const ptsA = [], ptsB = [], S = 6
-    for (let i = 0; i <= BP * S; i++) {
-      const t = i / S, a = t * twist, y = t * rise + yOff
-      ptsA.push(new THREE.Vector3(Math.cos(a) * R, y, Math.sin(a) * R))
-      ptsB.push(new THREE.Vector3(Math.cos(a + Math.PI) * R, y, Math.sin(a + Math.PI) * R))
-    }
-    const geoA = new THREE.TubeGeometry(new THREE.CatmullRomCurve3(ptsA), BP * S, 0.14, 7, false)
-    const geoB = new THREE.TubeGeometry(new THREE.CatmullRomCurve3(ptsB), BP * S, 0.14, 7, false)
-    ownedGeos.push(geoA, geoB)
-    g.add(new THREE.Mesh(geoA, matA), new THREE.Mesh(geoB, matB))
-
-    // nuc/rung carry varied per-instance colors (instanceColor); they glow via
-    // scene lighting + bloom + the env-map reflections (emissive isn't
-    // per-instance on physical materials, so it's intentionally not set).
-    const nucMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.45, iridescenceIOR: 1.3, envMapIntensity: 1.2 })
-    ownedMats.push(nucMat)
-    const nuc = new THREE.InstancedMesh(sphereGeo, nucMat, BP * 2)
-    nuc.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
-
-    const rungMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.85, clearcoat: 1, clearcoatRoughness: 0.25, iridescence: 0.4, envMapIntensity: 1.1 })
-    ownedMats.push(rungMat)
-    const rung = new THREE.InstancedMesh(rungGeo, rungMat, BP * 2)
-    rung.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
-
-    const c = new THREE.Color()
-    let n = 0, r = 0
+    const A = [], B = []
     for (let i = 0; i < BP; i++) {
       const a = i * twist, y = i * rise + yOff
-      const sa = new THREE.Vector3(Math.cos(a) * R, y, Math.sin(a) * R)
-      const sb = new THREE.Vector3(Math.cos(a + Math.PI) * R, y, Math.sin(a + Math.PI) * R)
-      const acc = i % 4 === 0
-      tmp.position.copy(sa); tmp.scale.setScalar(acc ? 0.4 : 0.3); tmp.rotation.set(0, 0, 0); tmp.updateMatrix()
-      nuc.setMatrixAt(n, tmp.matrix); nuc.setColorAt(n, c.setHex(acc ? colors[2] : colors[0])); n++
-      tmp.position.copy(sb); tmp.scale.setScalar(acc ? 0.4 : 0.3); tmp.updateMatrix()
-      nuc.setMatrixAt(n, tmp.matrix); nuc.setColorAt(n, c.setHex(acc ? colors[2] : colors[1])); n++
-      const mid = new THREE.Vector3().copy(sa).add(sb).multiplyScalar(0.5)
-      r = placeRung(rung, r, sa, mid, acc ? colors[2] : colors[0], c)
-      r = placeRung(rung, r, sb, mid, acc ? colors[2] : colors[1], c)
+      A.push(new THREE.Vector3(Math.cos(a) * R, y, Math.sin(a) * R))
+      B.push(new THREE.Vector3(Math.cos(a + Math.PI) * R, y, Math.sin(a + Math.PI) * R))
     }
-    nuc.instanceMatrix.needsUpdate = true; nuc.instanceColor.needsUpdate = true
-    rung.instanceMatrix.needsUpdate = true; rung.instanceColor.needsUpdate = true
-    g.add(nuc, rung)
-    ownedMeshes.push(nuc, rung)
+
+    // --- network edges (additive glowing lines) ---
+    const ePos = [], eCol = []
+    const cA = new THREE.Color(colors[0]), cB = new THREE.Color(colors[1])
+    const edge = (p, qy, c1, c2) => { ePos.push(p.x, p.y, p.z, qy.x, qy.y, qy.z); eCol.push(c1.r, c1.g, c1.b, c2.r, c2.g, c2.b) }
+    for (let i = 0; i < BP; i++) {
+      if (i < BP - 1) { edge(A[i], A[i + 1], cA, cA); edge(B[i], B[i + 1], cB, cB) } // backbone
+      edge(A[i], B[i], cA, cB)                                                       // base-pair rung
+      if (i < BP - 2 && i % 2 === 0) edge(A[i], B[i + 2], cA, cB)                    // sparse cross-link
+    }
+    const edgeGeo = new THREE.BufferGeometry()
+    edgeGeo.setAttribute('position', new THREE.Float32BufferAttribute(ePos, 3))
+    edgeGeo.setAttribute('color', new THREE.Float32BufferAttribute(eCol, 3))
+    ownedGeos.push(edgeGeo)
+    const edgeMat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.45, blending: THREE.AdditiveBlending, depthWrite: false })
+    ownedMats.push(edgeMat)
+    g.add(new THREE.LineSegments(edgeGeo, edgeMat))
+
+    // --- nodes (glassy / iridescent instanced spheres) ---
+    const nodeMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.2 })
+    ownedMats.push(nodeMat)
+    const nodes = new THREE.InstancedMesh(sphereGeo, nodeMat, BP * 2)
+    nodes.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
+    const c = new THREE.Color()
+    let n = 0
+    for (let i = 0; i < BP; i++) {
+      const acc = i % 4 === 0 // green "hub" nodes
+      tmp.position.copy(A[i]); tmp.scale.setScalar(acc ? 0.32 : 0.2); tmp.rotation.set(0, 0, 0); tmp.updateMatrix()
+      nodes.setMatrixAt(n, tmp.matrix); nodes.setColorAt(n, c.setHex(acc ? colors[2] : colors[0])); n++
+      tmp.position.copy(B[i]); tmp.scale.setScalar(acc ? 0.32 : 0.2); tmp.updateMatrix()
+      nodes.setMatrixAt(n, tmp.matrix); nodes.setColorAt(n, c.setHex(acc ? colors[2] : colors[1])); n++
+    }
+    nodes.instanceMatrix.needsUpdate = true; nodes.instanceColor.needsUpdate = true
+    g.add(nodes); ownedMeshes.push(nodes)
+
     g.scale.setScalar(scale)
     return g
-  }
-
-  function placeRung(mesh, idx, from, to, colorHex, c) {
-    const dir = new THREE.Vector3().copy(to).sub(from)
-    const len = dir.length() - 0.12
-    dir.normalize()
-    const pos = new THREE.Vector3().copy(from).addScaledVector(dir, len / 2)
-    q.setFromUnitVectors(up, dir)
-    tmp.position.copy(pos); tmp.quaternion.copy(q); tmp.scale.set(0.06, len, 0.06); tmp.updateMatrix()
-    mesh.setMatrixAt(idx, tmp.matrix)
-    mesh.setColorAt(idx, c.setHex(colorHex))
-    return idx + 1
   }
 
   // deterministic pseudo-random so layout is stable across rebuilds within a session
@@ -163,13 +140,10 @@ export function createDnaField(canvas, params = {}) {
 
   function clearField() {
     field.forEach((h) => scene.remove(h.grp))
-    ownedMeshes.forEach((m) => m.dispose()) // fires 'dispose' → frees instanceMatrix/instanceColor
+    ownedMeshes.forEach((m) => m.dispose()) // frees instanceMatrix/instanceColor
     ownedMats.forEach((m) => m.dispose())
     ownedGeos.forEach((g) => g.dispose())
-    field = []
-    ownedMeshes = []
-    ownedMats = []
-    ownedGeos = []
+    field = []; ownedMeshes = []; ownedMats = []; ownedGeos = []
   }
 
   function rebuild() {
@@ -177,15 +151,21 @@ export function createDnaField(canvas, params = {}) {
     seed = 1337
     const pals = PALETTES[state.palette] || PALETTES.mixed
     const n = effectiveCount()
+    // jittered grid → even coverage across the whole viewport (no clustering)
+    const cols = Math.max(1, Math.ceil(Math.sqrt(n * 1.6)))
+    const rows = Math.max(1, Math.ceil(n / cols))
     for (let i = 0; i < n; i++) {
       const colors = pals[i % pals.length]
-      const sc = state.size * (0.6 + rnd() * 0.9)
+      const sc = state.size * (0.55 + rnd() * 0.8)
       const grp = buildHelix(colors, sc)
-      grp.position.set((rnd() - 0.5) * 34, (rnd() - 0.5) * 22, (rnd() - 0.5) * 22 - 4)
+      const col = i % cols, row = Math.floor(i / cols)
+      const gx = ((col + 0.5) / cols - 0.5) * 48 + (rnd() - 0.5) * 9
+      const gy = ((row + 0.5) / rows - 0.5) * 32 + (rnd() - 0.5) * 8
+      const gz = (rnd() - 0.5) * 20 - 4
+      grp.position.set(gx, gy, gz)
       grp.rotation.set(rnd() * 0.8 - 0.4, rnd() * Math.PI, rnd() * 0.6 - 0.3)
       scene.add(grp)
-      // min spin floor so every helix visibly (but gently) rotates
-      field.push({ grp, spin: (0.3 + rnd() * 0.5) * (rnd() < 0.5 ? -1 : 1), drift: rnd() * Math.PI * 2, baseY: grp.position.y })
+      field.push({ grp, spin: (0.3 + rnd() * 0.5) * (rnd() < 0.5 ? -1 : 1), drift: rnd() * Math.PI * 2, baseY: gy })
     }
   }
 
@@ -205,19 +185,15 @@ export function createDnaField(canvas, params = {}) {
   }
   window.addEventListener('resize', onResize)
 
-  let raf = 0
-  let running = true
-  let t = 0
-  let last = 0
+  let raf = 0, running = true, t = 0, last = 0
   function animate(now) {
     if (!running) return
     raf = requestAnimationFrame(animate)
     let dt = ((now || 0) - last) / 1000
     last = now || 0
-    if (!(dt > 0) || dt > 0.1) dt = 0.016 // clamp first frame / tab-refocus / hitches
-    const f = dt * 60 // normalize motion to 60fps units (frame-rate independent)
-    // rotation is the requested core behavior → always on (gentle); only the
-    // vertical drift is suppressed under prefers-reduced-motion.
+    if (!(dt > 0) || dt > 0.1) dt = 0.016 // clamp first frame / refocus / hitches
+    const f = dt * 60
+    // rotation is the requested core behavior → always on; only drift respects reduced-motion
     t = (t + dt) % 10000
     camera.position.x += (targetX - camera.position.x) * 0.03 * f
     camera.position.y += (-targetY - camera.position.y) * 0.03 * f
@@ -246,7 +222,7 @@ export function createDnaField(canvas, params = {}) {
       (p.palette !== undefined && p.palette !== state.palette)
     Object.assign(state, p)
     if (p.glow !== undefined) bloom.strength = state.glow
-    if (p.rough !== undefined) ownedMats.forEach((m) => { m.roughness = state.rough; m.needsUpdate = true })
+    if (p.rough !== undefined) ownedMats.forEach((m) => { if (m.isMeshStandardMaterial || m.isMeshPhysicalMaterial) { m.roughness = state.rough; m.needsUpdate = true } })
     if (needRebuild) rebuild()
   }
 
@@ -257,16 +233,10 @@ export function createDnaField(canvas, params = {}) {
     window.removeEventListener('resize', onResize)
     document.removeEventListener('visibilitychange', onVisibility)
     clearField()
-    sphereGeo.dispose(); rungGeo.dispose()
-    // EffectComposer.dispose() only frees its two internal render targets + copyPass —
-    // it does NOT dispose the passes, so free the bloom render targets/materials explicitly.
-    bloom.dispose()
-    outputPass.dispose()
-    renderPass.dispose()
-    composer.dispose()
-    scene.environment = null
-    envRT.dispose()
-    pmrem.dispose()
+    sphereGeo.dispose()
+    // EffectComposer.dispose() doesn't dispose its passes → free them explicitly.
+    bloom.dispose(); outputPass.dispose(); renderPass.dispose(); composer.dispose()
+    scene.environment = null; envRT.dispose(); pmrem.dispose()
     renderer.dispose()
   }
 
