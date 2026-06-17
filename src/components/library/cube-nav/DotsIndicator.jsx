@@ -21,6 +21,9 @@ export default function DotsIndicator({ libraries, currentIndex, onJumpTo, class
   const active = libraries[currentIndex]
 
   return (
+    // `className` is a plain passthrough wrapper — the flex/centering lives on the
+    // inner variant divs below (the only mount site supplies its own flex container,
+    // and passes no className). Don't rely on `className` for flex layout here.
     <div className={className}>
       {/* mobile: dots */}
       <div role="tablist" aria-label="Library selector" className="flex lg:hidden justify-center gap-2">

@@ -40,13 +40,13 @@ export default function Sourcing() {
               href={p.href}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="group flex flex-col p-8 rounded-2xl glass no-underline hover:border-[rgba(129,140,248,0.3)] hover:bg-[rgba(99,102,241,0.07)] transition-all duration-400"
+              className="group flex flex-col p-8 rounded-2xl glass no-underline hover:border-[rgba(129,140,248,0.3)] hover:bg-[rgba(99,102,241,0.07)] transition-all duration-300"
             >
               <h3 className="text-xl font-extrabold tracking-wide text-white">{p.name}</h3>
               <p className="text-gray-400 text-sm mt-2 mb-5 flex-1">{t(p.descKey)}</p>
 
               <div
-                className="inline-flex items-center gap-2 self-start mb-6 px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider"
+                className="inline-flex items-center gap-2 self-start mb-6 px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider whitespace-nowrap"
                 style={{
                   background: 'rgba(129,140,248,0.12)',
                   border: '1px solid rgba(129,140,248,0.4)',
