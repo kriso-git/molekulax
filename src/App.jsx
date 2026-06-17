@@ -24,6 +24,10 @@ import { LibraryProvider } from './context/LibraryContext'
 // audit (Home mobile Perf 65) tied directly to eager framer-motion load.
 const LibraryCube = lazy(() => import('./components/library/cube-nav/LibraryCube'))
 
+// Hidden preview route (#dna-preview) for the WIP 3D DNA background. Lazy so
+// three.js only loads on this route, never in the main bundle. Not linked.
+const DnaPreview = lazy(() => import('./components/DnaPreview'))
+
 function readHash() {
   return typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, '')
 }
@@ -40,6 +44,16 @@ function useHashRoute() {
 
 export default function App() {
   const hash = useHashRoute()
+
+  // Hidden preview route — fully isolated, no providers/landing mounted.
+  if (hash === 'dna-preview') {
+    return (
+      <Suspense fallback={null}>
+        <DnaPreview />
+      </Suspense>
+    )
+  }
+
   const isEntryDetail = isEntryDetailHash(hash)
   const isDesktop = useMediaQuery('(min-width: 1024px)')
   // Phase 9 LCP fix: hide landing on ALL devices (not just desktop) when
