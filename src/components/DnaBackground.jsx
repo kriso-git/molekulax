@@ -54,7 +54,7 @@ export default function DnaBackground(props) {
     <canvas
       ref={canvasRef}
       aria-hidden="true"
-      style={{ position: 'fixed', inset: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }}
+      style={{ position: 'fixed', inset: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none', filter: 'blur(1.4px)' }}
     />
   )
 }

@@ -45,7 +45,7 @@ export function createDnaField(canvas, params = {}) {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2))
   renderer.setSize(window.innerWidth, window.innerHeight)
   renderer.toneMapping = THREE.ACESFilmicToneMapping
-  renderer.toneMappingExposure = 1.1
+  renderer.toneMappingExposure = 1.15 // a touch brighter / lighter nodes
 
   const scene = new THREE.Scene()
   scene.fog = new THREE.FogExp2(SITE_BG, 0.045) // a touch hazier / softer depth
@@ -114,7 +114,7 @@ export function createDnaField(canvas, params = {}) {
     g.add(new THREE.LineSegments(edgeGeo, edgeMat))
 
     // --- nodes (glassy / iridescent instanced spheres) ---
-    const nodeMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.2, transparent: true, opacity: 0.82 })
+    const nodeMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.2, transparent: true, opacity: 0.9 })
     ownedMats.push(nodeMat)
     const nodes = new THREE.InstancedMesh(sphereGeo, nodeMat, BP * 2)
     nodes.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
