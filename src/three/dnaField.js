@@ -18,6 +18,7 @@ import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js'
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass.js'
 import { OutputPass } from 'three/examples/jsm/postprocessing/OutputPass.js'
+import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js'
 
 const PALETTES = {
   mixed: [[0x64b2c0, 0x9480b9, 0x00ff99], [0x00ff99, 0x39d3a0, 0x64b2c0], [0x9480b9, 0x7fb0ff, 0x00ff99]],
@@ -27,7 +28,7 @@ const PALETTES = {
 
 // speed defaults to a gentle slow auto-rotation; fog matches the site base (#07071e)
 const SITE_BG = 0x07071e
-const DEFAULTS = { count: 7, size: 0.55, glow: 0.7, rough: 0.2, speed: 0.6, palette: 'mixed' }
+const DEFAULTS = { count: 7, size: 0.55, glow: 0.7, rough: 0.2, speed: 1.0, palette: 'mixed' }
 
 export function createDnaField(canvas, params = {}) {
   const state = { ...DEFAULTS, ...params }
@@ -45,7 +46,7 @@ export function createDnaField(canvas, params = {}) {
   renderer.toneMappingExposure = 1.1
 
   const scene = new THREE.Scene()
-  scene.fog = new THREE.FogExp2(SITE_BG, 0.03)
+  scene.fog = new THREE.FogExp2(SITE_BG, 0.045) // a touch hazier / softer DNA
 
   const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 200)
   camera.position.set(0, 0, 26)
@@ -54,6 +55,12 @@ export function createDnaField(canvas, params = {}) {
   const l1 = new THREE.PointLight(0x64b2c0, 200, 90); l1.position.set(14, 10, 18); scene.add(l1)
   const l2 = new THREE.PointLight(0x9480b9, 200, 90); l2.position.set(-16, -8, 12); scene.add(l2)
   const l3 = new THREE.PointLight(0x00ff99, 120, 80); l3.position.set(0, 14, -10); scene.add(l3)
+
+  // PMREM studio environment → high-quality reflections for the physical
+  // materials (clearcoat + iridescence read from this env map).
+  const pmrem = new THREE.PMREMGenerator(renderer)
+  const envRT = pmrem.fromScene(new RoomEnvironment(), 0.04)
+  scene.environment = envRT.texture
 
   const composer = new EffectComposer(renderer)
   const renderPass = new RenderPass(scene, camera)
@@ -84,8 +91,11 @@ export function createDnaField(canvas, params = {}) {
     const g = new THREE.Group()
     const BP = 14, R = 2.2, rise = 0.5, twist = 0.6, H = BP * rise, yOff = -H / 2
 
-    const matA = new THREE.MeshStandardMaterial({ color: colors[0], roughness: state.rough, metalness: 0.65, emissive: colors[0], emissiveIntensity: 0.6 })
-    const matB = new THREE.MeshStandardMaterial({ color: colors[1], roughness: state.rough, metalness: 0.65, emissive: colors[1], emissiveIntensity: 0.6 })
+    // high-quality glassy/iridescent strands: clearcoat + iridescence reflect
+    // the PMREM env map; modest emissive so they still feed the bloom glow.
+    const physBase = { roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.18, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.1 }
+    const matA = new THREE.MeshPhysicalMaterial({ ...physBase, color: colors[0], emissive: colors[0], emissiveIntensity: 0.3 })
+    const matB = new THREE.MeshPhysicalMaterial({ ...physBase, color: colors[1], emissive: colors[1], emissiveIntensity: 0.3 })
     ownedMats.push(matA, matB)
 
     const ptsA = [], ptsB = [], S = 6
@@ -99,15 +109,15 @@ export function createDnaField(canvas, params = {}) {
     ownedGeos.push(geoA, geoB)
     g.add(new THREE.Mesh(geoA, matA), new THREE.Mesh(geoB, matB))
 
-    // nuc/rung carry varied per-instance colors (instanceColor) and glow via
-    // scene lighting + bloom; MeshStandardMaterial.emissive isn't per-instance,
-    // so we intentionally don't set it here (no dead emissiveIntensity).
-    const nucMat = new THREE.MeshStandardMaterial({ roughness: state.rough, metalness: 0.6 })
+    // nuc/rung carry varied per-instance colors (instanceColor); they glow via
+    // scene lighting + bloom + the env-map reflections (emissive isn't
+    // per-instance on physical materials, so it's intentionally not set).
+    const nucMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.45, iridescenceIOR: 1.3, envMapIntensity: 1.2 })
     ownedMats.push(nucMat)
     const nuc = new THREE.InstancedMesh(sphereGeo, nucMat, BP * 2)
     nuc.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
 
-    const rungMat = new THREE.MeshStandardMaterial({ roughness: state.rough, metalness: 0.4 })
+    const rungMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.85, clearcoat: 1, clearcoatRoughness: 0.25, iridescence: 0.4, envMapIntensity: 1.1 })
     ownedMats.push(rungMat)
     const rung = new THREE.InstancedMesh(rungGeo, rungMat, BP * 2)
     rung.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
@@ -174,8 +184,8 @@ export function createDnaField(canvas, params = {}) {
       grp.position.set((rnd() - 0.5) * 34, (rnd() - 0.5) * 22, (rnd() - 0.5) * 22 - 4)
       grp.rotation.set(rnd() * 0.8 - 0.4, rnd() * Math.PI, rnd() * 0.6 - 0.3)
       scene.add(grp)
-      // min spin floor so every helix visibly (but slowly) rotates
-      field.push({ grp, spin: (0.2 + rnd() * 0.35) * (rnd() < 0.5 ? -1 : 1), drift: rnd() * Math.PI * 2, baseY: grp.position.y })
+      // min spin floor so every helix visibly (but gently) rotates
+      field.push({ grp, spin: (0.3 + rnd() * 0.5) * (rnd() < 0.5 ? -1 : 1), drift: rnd() * Math.PI * 2, baseY: grp.position.y })
     }
   }
 
@@ -206,13 +216,14 @@ export function createDnaField(canvas, params = {}) {
     last = now || 0
     if (!(dt > 0) || dt > 0.1) dt = 0.016 // clamp first frame / tab-refocus / hitches
     const f = dt * 60 // normalize motion to 60fps units (frame-rate independent)
-    const spd = reduce ? 0 : state.speed
+    // rotation is the requested core behavior → always on (gentle); only the
+    // vertical drift is suppressed under prefers-reduced-motion.
     t = (t + dt) % 10000
     camera.position.x += (targetX - camera.position.x) * 0.03 * f
     camera.position.y += (-targetY - camera.position.y) * 0.03 * f
     camera.lookAt(0, 0, 0)
     field.forEach((h) => {
-      h.grp.rotation.y += 0.004 * h.spin * spd * f
+      h.grp.rotation.y += 0.006 * h.spin * state.speed * f
       h.grp.position.y = h.baseY + Math.sin(t * 0.4 + h.drift) * 0.6 * (reduce ? 0 : 1)
     })
     composer.render()
@@ -253,6 +264,9 @@ export function createDnaField(canvas, params = {}) {
     outputPass.dispose()
     renderPass.dispose()
     composer.dispose()
+    scene.environment = null
+    envRT.dispose()
+    pmrem.dispose()
     renderer.dispose()
   }
 
