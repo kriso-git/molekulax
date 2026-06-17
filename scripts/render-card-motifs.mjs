@@ -98,13 +98,13 @@ for (const job of JOBS) {
   const src = `http://127.0.0.1:${FPORT}/card-viz/${job.lib}/${job.id}.webm`
   process.stdout.write(`poster ${job.lib}/${job.id} ... `)
   try {
-    await page.setContent(`<body style="margin:0"><video id="v" src="${src}" muted crossorigin="anonymous"></video><canvas id="c" width="600" height="280"></canvas></body>`, { waitUntil: 'load' })
+    await page.setContent(`<body style="margin:0"><video id="v" src="${src}" muted crossorigin="anonymous"></video><canvas id="c" width="1200" height="480"></canvas></body>`, { waitUntil: 'load' })
     const data = await page.evaluate(async () => {
       const v = document.getElementById('v'), c = document.getElementById('c')
       await new Promise((res, rej) => { v.addEventListener('loadeddata', res, { once: true }); v.addEventListener('error', () => rej(new Error('video load error')), { once: true }); v.load() })
       await new Promise((res) => { v.addEventListener('seeked', res, { once: true }); v.currentTime = 1.5 })
-      c.getContext('2d').drawImage(v, 0, 0, 600, 280)
-      return c.toDataURL('image/jpeg', 0.82)
+      c.getContext('2d').drawImage(v, 0, 0, 1200, 480)
+      return c.toDataURL('image/jpeg', 0.9)
     })
     if (data && data.startsWith('data:image/jpeg')) { writeFileSync(join(PUB, 'card-viz', job.lib, `${job.id}.jpg`), Buffer.from(data.split(',')[1], 'base64')); console.log('OK') }
     else { console.log('FAIL: no poster'); fail++ }
