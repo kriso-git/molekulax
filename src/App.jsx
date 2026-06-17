@@ -25,6 +25,9 @@ const LibraryCube = lazy(() => import('./components/library/cube-nav/LibraryCube
 // Hidden preview route (#dna-preview) for tuning the 3D DNA background. Lazy.
 const DnaPreview = lazy(() => import('./components/DnaPreview'))
 
+// Hidden preview route (#card-preview) for the WIP per-category 3D card visuals.
+const CardVizPreview = lazy(() => import('./components/CardVizPreview'))
+
 // Live homepage background (replaces the old 2D MoleculeBackground). Lazy so
 // three.js stays OUT of the initial bundle; gated to >=768px so mobile
 // Lighthouse is untouched (the CSS .dna-backdrop covers mobile + the load gap).
@@ -73,6 +76,13 @@ export default function App() {
     return (
       <Suspense fallback={null}>
         <DnaPreview />
+      </Suspense>
+    )
+  }
+  if (hash === 'card-preview' || path === '/card-preview') {
+    return (
+      <Suspense fallback={null}>
+        <CardVizPreview />
       </Suspense>
     )
   }
