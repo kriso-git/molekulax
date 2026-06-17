@@ -44,6 +44,11 @@ const JOBS = Object.entries(CARD_MOTIFS).map(([key, motif]) => {
 const HTML = readFileSync(join(__dirname, 'card-recorder.html'), 'utf8')
 const PORT = 4399
 const LOOP = 6 // seconds, seamless
+// Output resolution. Kept moderate so the headless SwiftShader render sustains
+// ~30fps during MediaRecorder capture (1200x480 dropped the heavy scenes to
+// ~17-22fps → choppy) and so runtime decode stays light. Override with W=/H=.
+const OUT_W = parseInt(process.env.W || '900', 10)
+const OUT_H = parseInt(process.env.H || '360', 10)
 
 const server = createServer((req, res) => { res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(HTML) })
 await new Promise((r) => server.listen(PORT, '127.0.0.1', r))
@@ -61,11 +66,13 @@ for (const job of JOBS) {
   const errors = []
   page.on('pageerror', (e) => errors.push(String(e)))
   page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()) })
-  const url = `http://127.0.0.1:${PORT}/?motif=${job.motif}&color=${encodeURIComponent(job.color)}&loop=${LOOP}&secs=${LOOP}`
+  const url = `http://127.0.0.1:${PORT}/?motif=${job.motif}&color=${encodeURIComponent(job.color)}&loop=${LOOP}&secs=${LOOP}&w=${OUT_W}&h=${OUT_H}`
   process.stdout.write(`render ${job.lib}/${job.id} (${job.motif}) ... `)
   try {
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
-    await page.waitForFunction('window.__done === true', { timeout: (LOOP + 25) * 1000 })
+    await page.waitForFunction('window.__done === true || window.__err', { timeout: 90000 })
+    const err = await page.evaluate(() => window.__err)
+    if (err) throw new Error(err)
     const dataUrl = await page.evaluate(() => window.__webm)
     if (!dataUrl || !dataUrl.startsWith('data:video/webm')) throw new Error('no webm produced')
     const webmOut = join(outDir, `${job.id}.webm`)
@@ -98,14 +105,14 @@ for (const job of JOBS) {
   const src = `http://127.0.0.1:${FPORT}/card-viz/${job.lib}/${job.id}.webm`
   process.stdout.write(`poster ${job.lib}/${job.id} ... `)
   try {
-    await page.setContent(`<body style="margin:0"><video id="v" src="${src}" muted crossorigin="anonymous"></video><canvas id="c" width="1200" height="480"></canvas></body>`, { waitUntil: 'load' })
-    const data = await page.evaluate(async () => {
+    await page.setContent(`<body style="margin:0"><video id="v" src="${src}" muted crossorigin="anonymous"></video><canvas id="c" width="${OUT_W}" height="${OUT_H}"></canvas></body>`, { waitUntil: 'load' })
+    const data = await page.evaluate(async (W, H) => {
       const v = document.getElementById('v'), c = document.getElementById('c')
       await new Promise((res, rej) => { v.addEventListener('loadeddata', res, { once: true }); v.addEventListener('error', () => rej(new Error('video load error')), { once: true }); v.load() })
       await new Promise((res) => { v.addEventListener('seeked', res, { once: true }); v.currentTime = 1.5 })
-      c.getContext('2d').drawImage(v, 0, 0, 1200, 480)
+      c.getContext('2d').drawImage(v, 0, 0, W, H)
       return c.toDataURL('image/jpeg', 0.9)
-    })
+    }, OUT_W, OUT_H)
     if (data && data.startsWith('data:image/jpeg')) { writeFileSync(join(PUB, 'card-viz', job.lib, `${job.id}.jpg`), Buffer.from(data.split(',')[1], 'base64')); console.log('OK') }
     else { console.log('FAIL: no poster'); fail++ }
   } catch (e) { console.log(`FAIL: ${e.message}`); fail++ }

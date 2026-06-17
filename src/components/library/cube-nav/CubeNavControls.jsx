@@ -21,7 +21,7 @@ function NavArrow({ dir, lib, onClick, lang }) {
   const Icon = isLeft ? ChevronLeft : ChevronRight
   const pos = isLeft ? 'left-1 sm:left-3 lg:left-4 xl:left-8' : 'right-1 sm:right-3 lg:right-4 xl:right-8'
   return (
-    <div className={`absolute z-30 top-[440px] md:top-[620px] lg:top-[700px] ${pos} flex flex-col items-center gap-2.5`}>
+    <div className={`absolute z-30 top-[460px] md:top-[640px] lg:top-[720px] ${pos}`}>
       <button
         type="button"
         onClick={onClick}
@@ -31,13 +31,6 @@ function NavArrow({ dir, lib, onClick, lang }) {
       >
         <Icon className="w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9" strokeWidth={2.5} />
       </button>
-      <span
-        className="hidden md:block text-[11px] font-semibold uppercase tracking-[0.1em] text-center leading-tight max-w-[120px]"
-        style={{ color: 'rgba(0,255,153,0.85)' }}
-        aria-hidden="true"
-      >
-        {lib.name[lang]}
-      </span>
     </div>
   )
 }
