@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { X, Send, ExternalLink } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
@@ -103,6 +103,40 @@ const ILLUSTRATIONS = {
 
 const ILLUSTRATION_BY_INDEX = ['healing', 'growth', 'muscle', 'metabolic', 'longevity', 'nervous', 'cosmetic', 'immune']
 
+// Pre-rendered 3D motif loop. Plays only while in the viewport (IntersectionObserver)
+// and never under prefers-reduced-motion (poster still frame shows instead).
+// preload="none" so off-screen / inactive-face cards don't fetch until they play.
+function MotifVideo({ libId, cat }) {
+ const { tr } = useLang()
+ const ref = useRef(null)
+ useEffect(() => {
+ const v = ref.current
+ if (!v) return
+ const reduce = typeof window !== 'undefined' && window.matchMedia
+   && window.matchMedia('(prefers-reduced-motion: reduce)').matches
+ if (reduce) return // leave paused → poster shows
+ const io = new IntersectionObserver((entries) => {
+ entries.forEach((e) => { if (e.isIntersecting) v.play().catch(() => {}); else v.pause() })
+ }, { threshold: 0.2 })
+ io.observe(v)
+ return () => io.disconnect()
+ }, [])
+ return (
+ <video
+   ref={ref}
+   className="absolute inset-0 w-full h-full object-cover"
+   loop
+   muted
+   playsInline
+   preload="none"
+   poster={`/card-viz/${libId}/${cat.id}.jpg`}
+   aria-label={tr(cat.title)}
+ >
+   <source src={`/card-viz/${libId}/${cat.id}.webm`} type="video/webm" />
+ </video>
+ )
+}
+
 function CategoryVisual({ cat, idx }) {
  const { tr } = useLang()
  const { library } = useLibrary()
@@ -110,17 +144,7 @@ function CategoryVisual({ cat, idx }) {
  if (libId && hasCardMotif(libId, cat.id)) {
  return (
  <div className="relative w-full h-full overflow-hidden">
- <video
-   className="absolute inset-0 w-full h-full object-cover"
-   autoPlay
-   loop
-   muted
-   playsInline
-   preload="metadata"
-   aria-label={tr(cat.title)}
- >
-   <source src={`/card-viz/${libId}/${cat.id}.webm`} type="video/webm" />
- </video>
+ <MotifVideo libId={libId} cat={cat} />
  <div className="absolute inset-0" style={{
  background: `radial-gradient(ellipse at 50% 50%, ${cat.color}10 0%, var(--effect-visual-vignette) 85%)`,
  }} />
