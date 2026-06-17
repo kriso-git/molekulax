@@ -1,8 +1,12 @@
 import { useEffect, useRef } from 'react'
 
 // Pre-rendered 3D motif loop, shared by EffectsSection cards and the performance
-// chemistry-class cards. Plays only while in the viewport (IntersectionObserver)
-// and never under prefers-reduced-motion (the poster still frame shows instead).
+// chemistry-class cards. Plays while in the viewport (IntersectionObserver-gated
+// for perf). It does NOT short-circuit on prefers-reduced-motion: these subtle,
+// muted, looping backdrops are part of the site's visual identity and the
+// full-page DNA background already animates regardless of that setting, so
+// gating only these would be inconsistent (and hid the motion from the owner,
+// whose OS has "reduce motion" on).
 //
 // Lazy source: the webm `src` is attached only on first intersection (NOT a
 // <source> child with preload="none" — that combo leaves the element frozen at
@@ -16,9 +20,6 @@ export default function MotifVideo({ libId, catId, label, className = 'absolute 
   useEffect(() => {
     const v = ref.current
     if (!v) return
-    const reduce = typeof window !== 'undefined' && window.matchMedia
-      && window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (reduce) return // no src attached → poster still frame shows
     const src = `/card-viz/${libId}/${catId}.webm`
     const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}) }
     const io = new IntersectionObserver(([e]) => {
