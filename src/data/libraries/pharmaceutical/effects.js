@@ -9,6 +9,7 @@
 export const EFFECT_CATEGORIES = [
   // 1. Anyagcsere és Diabétesz
   {
+    id: 'diabetes',
     color: '#10b981',
     glow: 'rgba(16,185,129,0.18)',
     title: { hu: 'Anyagcsere és Diabétesz', en: 'Metabolic & Diabetes', pl: 'Metabolizm i Cukrzyca' },
@@ -39,6 +40,7 @@ export const EFFECT_CATEGORIES = [
 
   // 2. Koleszterin és Szív
   {
+    id: 'cholesterol-heart',
     color: '#dc2626',
     glow: 'rgba(220,38,38,0.18)',
     title: { hu: 'Koleszterin és Szív', en: 'Cholesterol & Heart', pl: 'Cholesterol i Serce' },
@@ -68,6 +70,7 @@ export const EFFECT_CATEGORIES = [
 
   // 3. Hangulat és Depresszió
   {
+    id: 'mood',
     color: '#a78bfa',
     glow: 'rgba(167,139,250,0.18)',
     title: { hu: 'Hangulat és Depresszió', en: 'Mood & Depression', pl: 'Nastrój i Depresja' },
@@ -96,6 +99,7 @@ export const EFFECT_CATEGORIES = [
 
   // 4. Éberlét és Alvás
   {
+    id: 'wakefulness',
     color: '#3b82f6',
     glow: 'rgba(59,130,246,0.18)',
     title: { hu: 'Éberlét és Alvás', en: 'Wakefulness & Sleep', pl: 'Czuwanie i Sen' },
@@ -125,6 +129,7 @@ export const EFFECT_CATEGORIES = [
 
   // 5. Pajzsmirigy
   {
+    id: 'thyroid',
     color: '#f59e0b',
     glow: 'rgba(245,158,11,0.18)',
     title: { hu: 'Pajzsmirigy', en: 'Thyroid', pl: 'Tarczyca' },
@@ -153,6 +158,7 @@ export const EFFECT_CATEGORIES = [
 
   // 6. Bakteriális Infekciók
   {
+    id: 'bacterial',
     color: '#06b6d4',
     glow: 'rgba(6,182,212,0.18)',
     title: { hu: 'Bakteriális Infekciók', en: 'Bacterial Infections', pl: 'Infekcje Bakteryjne' },
@@ -181,6 +187,7 @@ export const EFFECT_CATEGORIES = [
 
   // 7. Hormon és Szexuális Egészség
   {
+    id: 'hormonal-sexual',
     color: '#ec4899',
     glow: 'rgba(236,72,153,0.18)',
     title: { hu: 'Hormon és Szexuális Egészség', en: 'Hormonal & Sexual Health', pl: 'Hormony i Zdrowie Seksualne' },
@@ -209,6 +216,7 @@ export const EFFECT_CATEGORIES = [
 
   // 8. Bőr és Hajhullás
   {
+    id: 'skin-hair',
     color: '#fbbf24',
     glow: 'rgba(251,191,36,0.18)',
     title: { hu: 'Bőr és Hajhullás', en: 'Skin & Hair Loss', pl: 'Skóra i Wypadanie Włosów' },
