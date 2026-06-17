@@ -26,7 +26,8 @@
     "framer-motion": "^12.40.0",
     "lucide-react": "^0.468.0",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "three": "^0.184.0"
   },
   "devDependencies": {
     "@anthropic-ai/sdk": "^0.104.2",
