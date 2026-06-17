@@ -8,7 +8,6 @@ import Disclaimer from './components/Disclaimer'
 import Footer from './components/Footer'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
-import SideLibrarySwitcher from './components/SideLibrarySwitcher'
 import AffiliateButton from './components/AffiliateButton'
 import EntryDetailRoute from './components/library/EntryDetailRoute'
 import { isEntryDetailHash } from './components/library/entryHash'
@@ -108,7 +107,6 @@ export default function App() {
                 <Faq />
                 <Disclaimer />
                 <Footer />
-                <SideLibrarySwitcher />
               </>
             )}
             {isEntryDetail && <EntryDetailRoute hash={hash} />}
