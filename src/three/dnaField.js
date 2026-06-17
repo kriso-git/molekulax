@@ -54,10 +54,12 @@ export function createDnaField(canvas, params = {}) {
   const l3 = new THREE.PointLight(0x00ff99, 120, 80); l3.position.set(0, 14, -10); scene.add(l3)
 
   const composer = new EffectComposer(renderer)
-  composer.addPass(new RenderPass(scene, camera))
+  const renderPass = new RenderPass(scene, camera)
+  composer.addPass(renderPass)
   const bloom = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), state.glow, 0.5, 0.08)
   composer.addPass(bloom)
-  composer.addPass(new OutputPass())
+  const outputPass = new OutputPass()
+  composer.addPass(outputPass)
   composer.setSize(window.innerWidth, window.innerHeight)
 
   // shared geometry (re-used across every instance)
@@ -68,6 +70,7 @@ export function createDnaField(canvas, params = {}) {
   const tmp = new THREE.Object3D()
 
   let field = []         // { grp, spin, drift, baseY }
+  let ownedMeshes = []   // InstancedMeshes — must .dispose() to free instanceMatrix/instanceColor GPU buffers
   let ownedMats = []     // materials to dispose / live-update
   let ownedGeos = []     // per-build tube geometries to dispose
 
@@ -94,12 +97,15 @@ export function createDnaField(canvas, params = {}) {
     ownedGeos.push(geoA, geoB)
     g.add(new THREE.Mesh(geoA, matA), new THREE.Mesh(geoB, matB))
 
-    const nucMat = new THREE.MeshStandardMaterial({ roughness: state.rough, metalness: 0.6, emissiveIntensity: 0.7 })
+    // nuc/rung carry varied per-instance colors (instanceColor) and glow via
+    // scene lighting + bloom; MeshStandardMaterial.emissive isn't per-instance,
+    // so we intentionally don't set it here (no dead emissiveIntensity).
+    const nucMat = new THREE.MeshStandardMaterial({ roughness: state.rough, metalness: 0.6 })
     ownedMats.push(nucMat)
     const nuc = new THREE.InstancedMesh(sphereGeo, nucMat, BP * 2)
     nuc.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
 
-    const rungMat = new THREE.MeshStandardMaterial({ roughness: state.rough, metalness: 0.4, emissiveIntensity: 0.45 })
+    const rungMat = new THREE.MeshStandardMaterial({ roughness: state.rough, metalness: 0.4 })
     ownedMats.push(rungMat)
     const rung = new THREE.InstancedMesh(rungGeo, rungMat, BP * 2)
     rung.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
@@ -122,6 +128,7 @@ export function createDnaField(canvas, params = {}) {
     nuc.instanceMatrix.needsUpdate = true; nuc.instanceColor.needsUpdate = true
     rung.instanceMatrix.needsUpdate = true; rung.instanceColor.needsUpdate = true
     g.add(nuc, rung)
+    ownedMeshes.push(nuc, rung)
     g.scale.setScalar(scale)
     return g
   }
@@ -144,9 +151,11 @@ export function createDnaField(canvas, params = {}) {
 
   function clearField() {
     field.forEach((h) => scene.remove(h.grp))
-    field = []
+    ownedMeshes.forEach((m) => m.dispose()) // fires 'dispose' → frees instanceMatrix/instanceColor
     ownedMats.forEach((m) => m.dispose())
     ownedGeos.forEach((g) => g.dispose())
+    field = []
+    ownedMeshes = []
     ownedMats = []
     ownedGeos = []
   }
@@ -186,16 +195,21 @@ export function createDnaField(canvas, params = {}) {
   let raf = 0
   let running = true
   let t = 0
-  function animate() {
+  let last = 0
+  function animate(now) {
     if (!running) return
     raf = requestAnimationFrame(animate)
+    let dt = ((now || 0) - last) / 1000
+    last = now || 0
+    if (!(dt > 0) || dt > 0.1) dt = 0.016 // clamp first frame / tab-refocus / hitches
+    const f = dt * 60 // normalize motion to 60fps units (frame-rate independent)
     const spd = reduce ? 0 : state.speed
-    t += 0.016
-    camera.position.x += (targetX - camera.position.x) * 0.03
-    camera.position.y += (-targetY - camera.position.y) * 0.03
+    t = (t + dt) % 10000
+    camera.position.x += (targetX - camera.position.x) * 0.03 * f
+    camera.position.y += (-targetY - camera.position.y) * 0.03 * f
     camera.lookAt(0, 0, 0)
     field.forEach((h) => {
-      h.grp.rotation.y += 0.004 * h.spin * spd
+      h.grp.rotation.y += 0.004 * h.spin * spd * f
       h.grp.position.y = h.baseY + Math.sin(t * 0.4 + h.drift) * 0.6 * (reduce ? 0 : 1)
     })
     composer.render()
@@ -203,7 +217,7 @@ export function createDnaField(canvas, params = {}) {
 
   function onVisibility() {
     running = !document.hidden
-    if (running && !raf) animate()
+    if (running && !raf) { last = 0; animate() }
     if (!running) { cancelAnimationFrame(raf); raf = 0 }
   }
   document.addEventListener('visibilitychange', onVisibility)
@@ -230,6 +244,11 @@ export function createDnaField(canvas, params = {}) {
     document.removeEventListener('visibilitychange', onVisibility)
     clearField()
     sphereGeo.dispose(); rungGeo.dispose()
+    // EffectComposer.dispose() only frees its two internal render targets + copyPass —
+    // it does NOT dispose the passes, so free the bloom render targets/materials explicitly.
+    bloom.dispose()
+    outputPass.dispose()
+    renderPass.dispose()
     composer.dispose()
     renderer.dispose()
   }

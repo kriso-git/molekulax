@@ -9,8 +9,10 @@ import { useEffect, useRef } from 'react'
 export default function DnaBackground(props) {
   const canvasRef = useRef(null)
   const apiRef = useRef(null)
-  // keep latest props in a ref so the create-once effect can read initial values
-  const initialRef = useRef(props)
+  // always points at the latest props so create-time (after the async import
+  // resolves) uses current values — no param change is dropped in the import gap
+  const propsRef = useRef(props)
+  propsRef.current = props
 
   useEffect(() => {
     let disposed = false
@@ -19,7 +21,7 @@ export default function DnaBackground(props) {
       .then(({ createDnaField }) => {
         if (disposed || !canvasRef.current) return
         try {
-          api = createDnaField(canvasRef.current, initialRef.current)
+          api = createDnaField(canvasRef.current, propsRef.current)
           apiRef.current = api
         } catch (err) {
           // No WebGL / GL context failure → degrade gracefully (page background shows).
