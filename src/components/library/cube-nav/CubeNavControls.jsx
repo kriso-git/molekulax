@@ -1,86 +1,57 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useLang } from '../../../i18n/LanguageContext'
 
-// Kontroll-réteg: bal/jobb nyíl + szomszéd library NÉV-LABEL alá-stack-elve
-// (text-xs uppercase). Desktop/tablet: 50px arrow + label. Mobile: 40px arrow,
-// label rejtett. A pozíció `top-[480px] md:top-[680px]` aligned a Top10 grid
-// függőleges közepével (section py-40 + face title block + Top10 fejlec +
-// fél grid magasság).
-const ARROW_BASE_STYLE = {
-  background: 'rgba(0,255,153,0.18)',
-  border: '1px solid rgba(0,255,153,0.5)',
+// Big, obvious library prev/next arrows flanking the grid (the "table"). Shown on
+// ALL breakpoints (earlier they were lg:hidden, so first-time desktop visitors
+// never saw a switch affordance — only the small centred pager). Each arrow shows
+// the neighbour library name and a gentle attention pulse (`.cube-nav-arrow` in
+// index.css). Positioned absolute within the library <section>, vertically aligned
+// to the Top10 / category grid, horizontally just outside the max-w-6xl cube.
+const ARROW_STYLE = {
+  background: 'rgba(0,255,153,0.16)',
+  border: '1.5px solid rgba(0,255,153,0.55)',
   color: '#00ff99',
+  boxShadow: '0 0 26px rgba(0,255,153,0.28), inset 0 0 14px rgba(0,255,153,0.12)',
+  backdropFilter: 'blur(6px)',
+  WebkitBackdropFilter: 'blur(6px)',
 }
 
-export default function CubeNavControls({
-  libraries,
-  currentIndex,
-  onPrev,
-  onNext,
-}) {
+function NavArrow({ dir, lib, onClick, lang }) {
+  const isLeft = dir === 'left'
+  const Icon = isLeft ? ChevronLeft : ChevronRight
+  const pos = isLeft ? 'left-1 sm:left-3 lg:left-4 xl:left-8' : 'right-1 sm:right-3 lg:right-4 xl:right-8'
+  return (
+    <div className={`absolute z-30 top-[440px] md:top-[620px] lg:top-[700px] ${pos} flex flex-col items-center gap-2.5`}>
+      <button
+        type="button"
+        onClick={onClick}
+        aria-label={`${isLeft ? 'Előző' : 'Következő'} könyvtár: ${lib.name[lang]}`}
+        className="cube-nav-arrow flex items-center justify-center rounded-full transition-transform duration-200 hover:scale-110 active:scale-95 w-12 h-12 md:w-[60px] md:h-[60px] lg:w-[68px] lg:h-[68px]"
+        style={ARROW_STYLE}
+      >
+        <Icon className="w-7 h-7 md:w-8 md:h-8 lg:w-9 lg:h-9" strokeWidth={2.5} />
+      </button>
+      <span
+        className="hidden md:block text-[11px] font-semibold uppercase tracking-[0.1em] text-center leading-tight max-w-[120px]"
+        style={{ color: 'rgba(0,255,153,0.85)' }}
+        aria-hidden="true"
+      >
+        {lib.name[lang]}
+      </span>
+    </div>
+  )
+}
+
+export default function CubeNavControls({ libraries, currentIndex, onPrev, onNext }) {
   const { lang } = useLang()
   const count = libraries.length
   const prevLib = libraries[(currentIndex + count - 1) % count]
   const nextLib = libraries[(currentIndex + 1) % count]
 
-  const labelClass =
-    'text-xs uppercase tracking-[0.1em] text-[var(--text-tertiary,#94a3b8)] text-center leading-tight max-w-[180px] line-clamp-2'
-
   return (
     <>
-      {/* Desktop/tablet (md+): left arrow + label stack */}
-      <div className="hidden md:flex lg:hidden flex-col items-center gap-2 absolute top-[480px] md:top-[680px] left-2 lg:left-6 z-20">
-        <button
-          type="button"
-          onClick={onPrev}
-          aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
-          className="flex items-center justify-center rounded-full"
-          style={{ width: 50, height: 50, ...ARROW_BASE_STYLE }}
-        >
-          <ChevronLeft size={22} strokeWidth={2.5} />
-        </button>
-        <span className={`hidden lg:block ${labelClass}`} aria-hidden="true">
-          {prevLib.name[lang]}
-        </span>
-      </div>
-
-      {/* Desktop/tablet (md+): right arrow + label stack */}
-      <div className="hidden md:flex lg:hidden flex-col items-center gap-2 absolute top-[480px] md:top-[680px] right-2 lg:right-6 z-20">
-        <button
-          type="button"
-          onClick={onNext}
-          aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
-          className="flex items-center justify-center rounded-full"
-          style={{ width: 50, height: 50, ...ARROW_BASE_STYLE }}
-        >
-          <ChevronRight size={22} strokeWidth={2.5} />
-        </button>
-        <span className={`hidden lg:block ${labelClass}`} aria-hidden="true">
-          {nextLib.name[lang]}
-        </span>
-      </div>
-
-      {/* Mobile (<md): left arrow only, no label */}
-      <button
-        type="button"
-        onClick={onPrev}
-        aria-label={`Előző könyvtár: ${prevLib.name[lang]}`}
-        className="md:hidden absolute top-[480px] left-2 z-20 flex items-center justify-center rounded-full"
-        style={{ width: 40, height: 40, ...ARROW_BASE_STYLE }}
-      >
-        <ChevronLeft size={18} strokeWidth={2.5} />
-      </button>
-
-      {/* Mobile (<md): right arrow */}
-      <button
-        type="button"
-        onClick={onNext}
-        aria-label={`Következő könyvtár: ${nextLib.name[lang]}`}
-        className="md:hidden absolute top-[480px] right-2 z-20 flex items-center justify-center rounded-full"
-        style={{ width: 40, height: 40, ...ARROW_BASE_STYLE }}
-      >
-        <ChevronRight size={18} strokeWidth={2.5} />
-      </button>
+      <NavArrow dir="left" lib={prevLib} onClick={onPrev} lang={lang} />
+      <NavArrow dir="right" lib={nextLib} onClick={onNext} lang={lang} />
     </>
   )
 }
