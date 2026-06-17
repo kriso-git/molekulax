@@ -17,15 +17,8 @@ export const CARD_MOTIFS = {
   'nootropics:bdnf-neuroplasticity': 'dna',
   'nootropics:cholinergic-boosters': 'atom',
 
-  // peptides — physiological effects
-  'peptides:healing': 'molecule',
-  'peptides:growth': 'dna',
-  'peptides:muscle': 'fiber',
-  'peptides:metabolic': 'plasma',
-  'peptides:longevity': 'atom',
-  'peptides:nervous-system': 'neural',
-  'peptides:cosmetic': 'molecule',
-  'peptides:immune': 'shield',
+  // peptides intentionally OMITTED — its "Élettani Hatások" cards already ship
+  // real product photos (effects.js `image:`), which we keep instead of a motif.
 
   // performance — chemistry classes (these are the cards the perf face actually
   // renders, via PerformanceCategoryCards; the effect-grid is disabled here)
