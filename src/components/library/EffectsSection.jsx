@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { X, Send, ExternalLink } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
+import { hasCardMotif } from './cardMotifMap'
 
 const TELEGRAM_URL = 'https://t.me/molekulaxtra'
 const TIKTOK_URL = 'https://www.tiktok.com/@moleculextra'
@@ -104,6 +105,28 @@ const ILLUSTRATION_BY_INDEX = ['healing', 'growth', 'muscle', 'metabolic', 'long
 
 function CategoryVisual({ cat, idx }) {
  const { tr } = useLang()
+ const { library } = useLibrary()
+ const libId = library?.id
+ if (libId && hasCardMotif(libId, cat.id)) {
+ return (
+ <div className="relative w-full h-full overflow-hidden">
+ <video
+   className="absolute inset-0 w-full h-full object-cover"
+   autoPlay
+   loop
+   muted
+   playsInline
+   preload="metadata"
+   aria-label={tr(cat.title)}
+ >
+   <source src={`/card-viz/${libId}/${cat.id}.webm`} type="video/webm" />
+ </video>
+ <div className="absolute inset-0" style={{
+ background: `radial-gradient(ellipse at 50% 50%, ${cat.color}10 0%, var(--effect-visual-vignette) 85%)`,
+ }} />
+ </div>
+ )
+ }
  if (cat.image) {
  const altText = tr(cat.title)
  return (
