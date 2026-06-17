@@ -38,6 +38,18 @@ export default defineConfig({
             },
           },
           {
+            // pre-rendered card-motif loops — CacheFirst so returning users don't
+            // re-download the ~2 MB per library on every visit. Not precached
+            // (would block the SW install); status 0 covers media range requests.
+            urlPattern: /\/card-viz\/.*\.webm$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'card-viz',
+              expiration: { maxEntries: 40, maxAgeSeconds: 30 * 24 * 60 * 60 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+          {
             urlPattern: /\.woff2$/,
             handler: 'CacheFirst',
             options: {
