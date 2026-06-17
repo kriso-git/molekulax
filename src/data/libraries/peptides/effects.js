@@ -3,6 +3,7 @@
 
 export const EFFECT_CATEGORIES = [
   {
+    id: 'healing',
     color: '#f43f5e',
     glow: 'rgba(244,63,94,0.18)',
     title: { hu: 'Gyógyulást segítő peptidek', en: 'Healing peptides', pl: 'Peptydy wspomagające gojenie' },
@@ -27,6 +28,7 @@ export const EFFECT_CATEGORIES = [
     image: '/peptides/gyogyulastsegitopeptidek.png',
   },
   {
+    id: 'growth',
     color: '#10b981',
     glow: 'rgba(16,185,129,0.18)',
     title: { hu: 'Növekedési hormont serkentő peptidek', en: 'Growth-hormone-stimulating peptides', pl: 'Peptydy stymulujące hormon wzrostu' },
@@ -51,6 +53,7 @@ export const EFFECT_CATEGORIES = [
     image: '/peptides/novekedesihormonserkentopeptidek.png',
   },
   {
+    id: 'muscle',
     color: '#f97316',
     glow: 'rgba(249,115,22,0.18)',
     title: { hu: 'Izomépítő peptidek', en: 'Muscle-building peptides', pl: 'Peptydy budujące mięśnie' },
@@ -75,6 +78,7 @@ export const EFFECT_CATEGORIES = [
     image: '/peptides/izomepitopeptidek.png',
   },
   {
+    id: 'metabolic',
     color: '#eab308',
     glow: 'rgba(234,179,8,0.18)',
     title: { hu: 'Anyagcsere peptidek', en: 'Metabolic peptides', pl: 'Peptydy metaboliczne' },
@@ -99,6 +103,7 @@ export const EFFECT_CATEGORIES = [
     image: '/peptides/anyagcserepeptidek.png',
   },
   {
+    id: 'longevity',
     color: '#14b8a6',
     glow: 'rgba(20,184,166,0.18)',
     title: { hu: 'Longevity peptidek', en: 'Longevity peptides', pl: 'Peptydy długowieczności' },
@@ -123,6 +128,7 @@ export const EFFECT_CATEGORIES = [
     image: '/peptides/longevitypeptidek.png',
   },
   {
+    id: 'nervous-system',
     color: '#a855f7',
     glow: 'rgba(168,85,247,0.18)',
     title: { hu: 'Idegrendszert támogató peptidek', en: 'Nervous-system peptides', pl: 'Peptydy układu nerwowego' },
@@ -147,6 +153,7 @@ export const EFFECT_CATEGORIES = [
     image: '/peptides/idegrendszerttamogatopeptidek.png',
   },
   {
+    id: 'cosmetic',
     color: '#ec4899',
     glow: 'rgba(236,72,153,0.18)',
     title: { hu: 'Kozmetikai peptidek', en: 'Cosmetic peptides', pl: 'Peptydy kosmetyczne' },
@@ -171,6 +178,7 @@ export const EFFECT_CATEGORIES = [
     image: '/peptides/kozmetikaipeptidek.png',
   },
   {
+    id: 'immune',
     color: '#3b82f6',
     glow: 'rgba(59,130,246,0.18)',
     title: { hu: 'Immunrendszert erősítő peptidek', en: 'Immune-system peptides', pl: 'Peptydy wzmacniające odporność' },

@@ -2,6 +2,8 @@ import { memo } from 'react'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
 import { useTilt } from './entry-detail/shared'
+import { hasCardMotif } from './cardMotifMap'
+import MotifVideo from './MotifVideo'
 
 // Performance-library-only CategoryCard grid: 3+2 layout.
 // Replaces the TOP 10 block on the perf face. Click → propagates the
@@ -81,6 +83,7 @@ function CategoryCard({ cat, count, active, t, tr, onClick }) {
   const accent = cat.accent
   const tiltRef = useTilt(5)
   const countLabel = (t('perf.cat.entryCount') || '{n} →').replace('{n}', count)
+  const showMotif = hasCardMotif('performance', cat.id)
 
   return (
     <button
@@ -100,6 +103,17 @@ function CategoryCard({ cat, count, active, t, tr, onClick }) {
       }}
       aria-pressed={active}
     >
+      {/* Motif loop backdrop (relevance per chemistry class) — kept subtle behind
+          a dark gradient so the label/count stay fully legible. */}
+      {showMotif && (
+        <>
+          <MotifVideo libId="performance" catId={cat.id} label={tr(cat.label)} className="absolute inset-0 w-full h-full object-cover opacity-[0.55]" />
+          <div className="absolute inset-0 pointer-events-none" style={{
+            background: `linear-gradient(160deg, rgba(5,7,18,0.55) 0%, rgba(5,7,18,0.74) 60%, rgba(5,7,18,0.9) 100%)`,
+          }} />
+        </>
+      )}
+
       {/* Top-left accent radial wash — matches GlassCard pattern */}
       <div
         className={`absolute -inset-px rounded-2xl pointer-events-none transition-opacity duration-500 ${

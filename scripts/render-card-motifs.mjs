@@ -19,20 +19,27 @@ const imp = (rel) => import(pathToFileURL(join(__dirname, rel)).href)
 
 const { CARD_MOTIFS } = await imp('../src/components/library/cardMotifMap.js')
 
-// library id -> its effect-categories array (for colour lookup). Extend as the
-// rollout adds libraries.
-const LIB_EFFECTS = {
-  nootropics: (await imp('../src/data/libraries/nootropics/effects.js')).EFFECT_CATEGORIES,
+// library id -> { id -> colour }. Most libraries key the motif by effect-category
+// (effects.js EFFECT_CATEGORIES, `color`). Performance is special: its face renders
+// the chemistry-class cards (categories.js CATEGORIES, `accent`), not the effect grid.
+const byColor = (arr) => Object.fromEntries(arr.map((c) => [c.id, c.color]))
+const byAccent = (arr) => Object.fromEntries(arr.map((c) => [c.id, c.accent]))
+const COLOR_OF = {
+  nootropics: byColor((await imp('../src/data/libraries/nootropics/effects.js')).EFFECT_CATEGORIES),
+  peptides: byColor((await imp('../src/data/libraries/peptides/effects.js')).EFFECT_CATEGORIES),
+  pharmaceutical: byColor((await imp('../src/data/libraries/pharmaceutical/effects.js')).EFFECT_CATEGORIES),
+  performance: byAccent((await imp('../src/data/libraries/performance/categories.js')).CATEGORIES),
 }
 
 // Build the job list from the map: { lib, id, motif, color }.
+// ONLY=<lib> (env) restricts the render to one library (handy after a tweak).
+const ONLY = process.env.ONLY
 const JOBS = Object.entries(CARD_MOTIFS).map(([key, motif]) => {
   const [lib, id] = key.split(':')
-  const cats = LIB_EFFECTS[lib]
-  const cat = cats && cats.find((c) => c.id === id)
-  if (!cat) throw new Error(`No effect category "${id}" in library "${lib}" (effects import missing?)`)
-  return { lib, id, motif, color: cat.color }
-})
+  const color = COLOR_OF[lib] && COLOR_OF[lib][id]
+  if (!color) throw new Error(`No colour for "${id}" in library "${lib}" (import/map missing?)`)
+  return { lib, id, motif, color }
+}).filter((j) => !ONLY || j.lib === ONLY)
 
 const HTML = readFileSync(join(__dirname, 'card-recorder.html'), 'utf8')
 const PORT = 4399
