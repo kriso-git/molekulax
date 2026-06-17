@@ -244,6 +244,7 @@ export function createDnaField(canvas, params = {}) {
     // EffectComposer.dispose() doesn't dispose its passes → free them explicitly.
     bloom.dispose(); outputPass.dispose(); renderPass.dispose(); composer.dispose()
     scene.environment = null; envRT.dispose(); pmrem.dispose()
+    renderer.forceContextLoss() // deterministic GL context release (don't wait for GC)
     renderer.dispose()
   }
 

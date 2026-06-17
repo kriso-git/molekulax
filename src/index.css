@@ -367,10 +367,6 @@
 [data-theme="light"] .from-white { --tw-gradient-from: #0f172a var(--tw-gradient-from-position); }
 [data-theme="light"] .to-white   { --tw-gradient-to:   #0f172a var(--tw-gradient-to-position); }
 
-/* FloatingScientific decorative SVGs use stroke/fill="white". Invert in
-   light mode so the white linework becomes dark and stays visible. */
-[data-theme="light"] .floating-deco { filter: invert(1) hue-rotate(180deg); }
-
 /* ── PeptideTile hover lift — translateY + accent halo. Replaces the
    previous image-scale-on-hover behaviour with a card-wide elevation. */
 .peptide-tile {

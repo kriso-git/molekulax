@@ -13,7 +13,7 @@ import EntryDetailRoute from './components/library/EntryDetailRoute'
 import { isEntryDetailHash } from './components/library/entryHash'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
-import { ThemeProvider } from './theme/ThemeContext'
+import { ThemeProvider, useTheme } from './theme/ThemeContext'
 import { LibraryProvider } from './context/LibraryContext'
 
 // LibraryCube + framer-motion are split into a separate chunk via React.lazy
@@ -44,6 +44,25 @@ function useHashRoute() {
   return hash
 }
 
+// Background: always-on CSS backdrop (theme-aware base + teal/violet glows) +
+// the lazy 3D DNA layer ONLY in dark mode on >=768px. The DNA is a dark-mode
+// feature (its palette/fog are tuned for the dark base); light mode and mobile
+// fall back to the CSS backdrop, and three.js is never downloaded there.
+function BackgroundLayer() {
+  const { theme } = useTheme()
+  const showDnaBg = useMediaQuery('(min-width: 768px)')
+  return (
+    <>
+      <div aria-hidden="true" className="dna-backdrop" />
+      {showDnaBg && theme === 'dark' && (
+        <Suspense fallback={null}>
+          <DnaBackground />
+        </Suspense>
+      )}
+    </>
+  )
+}
+
 export default function App() {
   const hash = useHashRoute()
 
@@ -59,8 +78,6 @@ export default function App() {
   }
 
   const isEntryDetail = isEntryDetailHash(hash)
-  const isDesktop = useMediaQuery('(min-width: 1024px)')
-  const showDnaBg = useMediaQuery('(min-width: 768px)')
   // Phase 9 LCP fix: hide landing on ALL devices (not just desktop) when
   // entry-detail is active. The mobile modal is position:fixed and covers
   // the viewport, so the user never sees the landing — but Lighthouse was
@@ -73,12 +90,7 @@ export default function App() {
       <LanguageProvider>
         <LibraryProvider>
         <div className="relative min-h-screen page-root overflow-x-hidden">
-          <div aria-hidden="true" className="dna-backdrop" />
-          {showDnaBg && (
-            <Suspense fallback={null}>
-              <DnaBackground />
-            </Suspense>
-          )}
+          <BackgroundLayer />
           <ThemeSwitcher />
           <LanguageSwitcher />
           <AffiliateButton />
