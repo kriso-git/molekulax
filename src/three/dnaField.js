@@ -40,7 +40,14 @@ export function createDnaField(canvas, params = {}) {
   const isMobile = window.matchMedia('(max-width: 767px)').matches
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: !isMobile, alpha: true, powerPreference: 'high-performance' })
+  // Feature-detect WebGL2 BEFORE constructing the renderer, so a no-GPU / headless
+  // environment (the render-smoke runner) or a browser without WebGL degrades
+  // gracefully (caller's try/catch) instead of three.js emitting a console.error
+  // — which would otherwise fail the smoke gate and flash an error to real users.
+  const gl = canvas.getContext('webgl2', { alpha: true, antialias: !isMobile, powerPreference: 'high-performance' })
+  if (!gl) throw new Error('WebGL2 unavailable')
+
+  const renderer = new THREE.WebGLRenderer({ canvas, context: gl, alpha: true })
   renderer.setClearColor(0x000000, 0)
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2))
   renderer.setSize(window.innerWidth, window.innerHeight)
