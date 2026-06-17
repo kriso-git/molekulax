@@ -25,7 +25,9 @@ const PALETTES = {
   cool: [[0x64b2c0, 0x9480b9, 0x7fb0ff], [0x7fe9ff, 0x9480b9, 0x64b2c0]],
 }
 
-const DEFAULTS = { count: 7, size: 0.55, glow: 0.7, rough: 0.2, speed: 1.0, palette: 'mixed' }
+// speed defaults to a gentle slow auto-rotation; fog matches the site base (#07071e)
+const SITE_BG = 0x07071e
+const DEFAULTS = { count: 7, size: 0.55, glow: 0.7, rough: 0.2, speed: 0.6, palette: 'mixed' }
 
 export function createDnaField(canvas, params = {}) {
   const state = { ...DEFAULTS, ...params }
@@ -43,7 +45,7 @@ export function createDnaField(canvas, params = {}) {
   renderer.toneMappingExposure = 1.1
 
   const scene = new THREE.Scene()
-  scene.fog = new THREE.FogExp2(0x05050b, 0.03)
+  scene.fog = new THREE.FogExp2(SITE_BG, 0.03)
 
   const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 200)
   camera.position.set(0, 0, 26)
@@ -172,7 +174,8 @@ export function createDnaField(canvas, params = {}) {
       grp.position.set((rnd() - 0.5) * 34, (rnd() - 0.5) * 22, (rnd() - 0.5) * 22 - 4)
       grp.rotation.set(rnd() * 0.8 - 0.4, rnd() * Math.PI, rnd() * 0.6 - 0.3)
       scene.add(grp)
-      field.push({ grp, spin: (0.1 + rnd() * 0.4) * (rnd() < 0.5 ? -1 : 1), drift: rnd() * Math.PI * 2, baseY: grp.position.y })
+      // min spin floor so every helix visibly (but slowly) rotates
+      field.push({ grp, spin: (0.2 + rnd() * 0.35) * (rnd() < 0.5 ? -1 : 1), drift: rnd() * Math.PI * 2, baseY: grp.position.y })
     }
   }
 

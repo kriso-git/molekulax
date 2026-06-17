@@ -32,11 +32,18 @@ function Slider({ label, value, min, max, step = 1, onChange, fmt }) {
 }
 
 export default function DnaPreview() {
-  const [p, setP] = useState({ count: 7, size: 0.55, glow: 0.7, rough: 0.2, speed: 1.0, palette: 'mixed' })
+  const [p, setP] = useState({ count: 7, size: 0.55, glow: 0.7, rough: 0.2, speed: 0.6, palette: 'mixed' })
   const set = (k) => (v) => setP((s) => ({ ...s, [k]: v }))
 
+  // matches the live site backdrop: #07071e base + teal (top-left) & violet
+  // (bottom-right) radial glows (same colors as the current MoleculeBackground)
+  const siteBg =
+    'radial-gradient(55vw 55vw at 2% 2%, rgba(28,130,155,0.20), transparent 70%),' +
+    'radial-gradient(52vw 52vw at 98% 98%, rgba(75,38,120,0.26), transparent 70%),' +
+    '#07071e'
+
   return (
-    <div style={{ position: 'fixed', inset: 0, background: '#05050b', overflow: 'hidden', fontFamily: 'system-ui, Segoe UI, Roboto, sans-serif' }}>
+    <div style={{ position: 'fixed', inset: 0, background: siteBg, overflow: 'hidden', fontFamily: 'system-ui, Segoe UI, Roboto, sans-serif' }}>
       <DnaBackground {...p} />
 
       {/* PREVIEW banner */}
