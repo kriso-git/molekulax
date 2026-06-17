@@ -22,3 +22,13 @@ updates:
       # until the project moves to Node 22+. devDep used only by the render-smoke gate.
       - dependency-name: "puppeteer"
         update-types: ["version-update:semver-major"]
+      # tailwindcss 4 is a ground-up rewrite (CSS-first config, @tailwindcss/postcss split,
+      # new content/theme model). It would require a deliberate migration of index.css +
+      # tailwind.config + postcss pipeline. Stay on 3.x; revisit as a dedicated migration.
+      - dependency-name: "tailwindcss"
+        update-types: ["version-update:semver-major"]
+      # lucide-react 0.x -> 1.x is a major with possible icon renames/removals that the
+      # render-smoke can't fully catch. react 19 already works with 0.468 (peer ^19), so
+      # there is no forcing reason. Take it deliberately later with an icon-import audit.
+      - dependency-name: "lucide-react"
+        update-types: ["version-update:semver-major"]
