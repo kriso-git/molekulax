@@ -45,8 +45,10 @@ function useHashRoute() {
 export default function App() {
   const hash = useHashRoute()
 
-  // Hidden preview route — fully isolated, no providers/landing mounted.
-  if (hash === 'dna-preview') {
+  // Hidden preview route — works as a clean path (/dna-preview) OR hash
+  // (#dna-preview). Fully isolated, no providers/landing mounted.
+  const path = typeof window !== 'undefined' ? window.location.pathname.replace(/\/+$/, '') : ''
+  if (hash === 'dna-preview' || path === '/dna-preview') {
     return (
       <Suspense fallback={null}>
         <DnaPreview />
