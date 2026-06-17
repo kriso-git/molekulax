@@ -514,7 +514,7 @@ export default function LibraryGallery({
  {/* Library-selector dots — a könyvtár cím/leírás ÉS a Top10 fejléc közé,
  így minden face-en stabilan ugyanazon a vizuális helyen van. */}
  {dotsLibraries && onDotsJumpTo && (
- <div className="flex justify-center mb-10">
+ <div className="flex justify-center mb-10 lg:hidden">
  <DotsIndicator
  libraries={dotsLibraries}
  currentIndex={dotsCurrentIndex}
