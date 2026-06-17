@@ -28,11 +28,11 @@ const TEAL = 0x64b2c0, VIOLET = 0x9480b9, GREEN = 0x00ff99, BLUE = 0x7fb0ff
 const PALETTES = {
   mixed: [[TEAL, VIOLET, GREEN], [VIOLET, TEAL, GREEN], [TEAL, BLUE, GREEN]],
   green: [[GREEN, 0x39d3a0, 0x7fffd4], [0x10b981, GREEN, 0x39d3a0]],
-  cool: [[TEAL, VIOLET, BLUE], [0x7fe9ff, VIOLET, TEAL]],
+  cool: [[TEAL, VIOLET, BLUE], [0x4fb8cc, VIOLET, TEAL]], // no near-white node colour
 }
 
 const SITE_BG = 0x07071e
-const DEFAULTS = { count: 11, size: 0.55, glow: 0.7, rough: 0.2, speed: 1.0, palette: 'mixed' }
+const DEFAULTS = { count: 16, size: 0.72, glow: 0.34, rough: 0.6, speed: 2.0, palette: 'cool' }
 
 export function createDnaField(canvas, params = {}) {
   const state = { ...DEFAULTS, ...params }
@@ -109,12 +109,12 @@ export function createDnaField(canvas, params = {}) {
     edgeGeo.setAttribute('position', new THREE.Float32BufferAttribute(ePos, 3))
     edgeGeo.setAttribute('color', new THREE.Float32BufferAttribute(eCol, 3))
     ownedGeos.push(edgeGeo)
-    const edgeMat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.45, blending: THREE.AdditiveBlending, depthWrite: false })
+    const edgeMat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.3, blending: THREE.AdditiveBlending, depthWrite: false })
     ownedMats.push(edgeMat)
     g.add(new THREE.LineSegments(edgeGeo, edgeMat))
 
     // --- nodes (glassy / iridescent instanced spheres) ---
-    const nodeMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.2 })
+    const nodeMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.2, transparent: true, opacity: 0.82 })
     ownedMats.push(nodeMat)
     const nodes = new THREE.InstancedMesh(sphereGeo, nodeMat, BP * 2)
     nodes.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
@@ -122,9 +122,9 @@ export function createDnaField(canvas, params = {}) {
     let n = 0
     for (let i = 0; i < BP; i++) {
       const acc = i % 4 === 0 // green "hub" nodes
-      tmp.position.copy(A[i]); tmp.scale.setScalar(acc ? 0.32 : 0.2); tmp.rotation.set(0, 0, 0); tmp.updateMatrix()
+      tmp.position.copy(A[i]); tmp.scale.setScalar(acc ? 0.26 : 0.16); tmp.rotation.set(0, 0, 0); tmp.updateMatrix()
       nodes.setMatrixAt(n, tmp.matrix); nodes.setColorAt(n, c.setHex(acc ? colors[2] : colors[0])); n++
-      tmp.position.copy(B[i]); tmp.scale.setScalar(acc ? 0.32 : 0.2); tmp.updateMatrix()
+      tmp.position.copy(B[i]); tmp.scale.setScalar(acc ? 0.26 : 0.16); tmp.updateMatrix()
       nodes.setMatrixAt(n, tmp.matrix); nodes.setColorAt(n, c.setHex(acc ? colors[2] : colors[1])); n++
     }
     nodes.instanceMatrix.needsUpdate = true; nodes.instanceColor.needsUpdate = true
@@ -156,12 +156,12 @@ export function createDnaField(canvas, params = {}) {
     const rows = Math.max(1, Math.ceil(n / cols))
     for (let i = 0; i < n; i++) {
       const colors = pals[i % pals.length]
-      const sc = state.size * (0.55 + rnd() * 0.8)
+      const sc = state.size * (0.5 + rnd() * 0.55)
       const grp = buildHelix(colors, sc)
       const col = i % cols, row = Math.floor(i / cols)
-      const gx = ((col + 0.5) / cols - 0.5) * 48 + (rnd() - 0.5) * 9
-      const gy = ((row + 0.5) / rows - 0.5) * 32 + (rnd() - 0.5) * 8
-      const gz = (rnd() - 0.5) * 20 - 4
+      const gx = ((col + 0.5) / cols - 0.5) * 54 + (rnd() - 0.5) * 10
+      const gy = ((row + 0.5) / rows - 0.5) * 36 + (rnd() - 0.5) * 9
+      const gz = -6 - rnd() * 13 // always behind the origin → never looms close to the camera
       grp.position.set(gx, gy, gz)
       grp.rotation.set(rnd() * 0.8 - 0.4, rnd() * Math.PI, rnd() * 0.6 - 0.3)
       scene.add(grp)
