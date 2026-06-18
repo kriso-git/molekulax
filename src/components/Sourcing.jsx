@@ -10,6 +10,7 @@ const PARTNERS = [
     id: 'limitless',
     name: 'LIMITLESS',
     href: 'https://www.limitlessbiochem.com/?ref=molekulax',
+    logo: '/sourcing/limitless.png',
     descKey: 'besz.limitless.desc',
     couponKey: 'besz.limitless.coupon',
     ctaKey: 'besz.limitless.cta',
@@ -18,6 +19,7 @@ const PARTNERS = [
     id: 'pctzone',
     name: 'PCTZONE',
     href: 'https://pctzone.su/?coupon=molekulax',
+    logo: '/sourcing/pctzone.png',
     descKey: 'besz.pctzone.desc',
     couponKey: 'besz.pctzone.coupon',
     ctaKey: 'besz.pctzone.cta',
@@ -43,8 +45,17 @@ export default function Sourcing() {
               rel="noopener noreferrer sponsored"
               className="group flex flex-col p-8 rounded-2xl glass no-underline hover:border-[rgba(129,140,248,0.3)] hover:bg-[rgba(99,102,241,0.07)] transition-all duration-300"
             >
-              <h3 className="text-xl font-extrabold tracking-wide text-white">{p.name}</h3>
-              <p className="text-gray-400 text-sm mt-2 mb-5 flex-1">{t(p.descKey)}</p>
+              <div className="flex items-center justify-between gap-4">
+                <h3 className="text-xl font-extrabold tracking-wide text-white">{p.name}</h3>
+                <img
+                  src={p.logo}
+                  alt={`${p.name} logo`}
+                  className="h-10 w-auto max-w-[140px] object-contain shrink-0 opacity-95"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
+              <p className="text-gray-400 text-sm mt-3 mb-5 flex-1">{t(p.descKey)}</p>
 
               <div
                 className="inline-flex items-center gap-2 self-start mb-6 px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider whitespace-nowrap"
