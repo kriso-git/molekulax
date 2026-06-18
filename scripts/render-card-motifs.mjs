@@ -49,6 +49,7 @@ const LOOP = 6 // seconds, seamless
 // ~17-22fps → choppy) and so runtime decode stays light. Override with W=/H=.
 const OUT_W = parseInt(process.env.W || '900', 10)
 const OUT_H = parseInt(process.env.H || '360', 10)
+const OUT_FPS = parseInt(process.env.FPS_OUT || '60', 10) // deterministic encode → smooth at any fps
 
 const server = createServer((req, res) => { res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); res.end(HTML) })
 await new Promise((r) => server.listen(PORT, '127.0.0.1', r))
@@ -66,7 +67,7 @@ for (const job of JOBS) {
   const errors = []
   page.on('pageerror', (e) => errors.push(String(e)))
   page.on('console', (m) => { if (m.type() === 'error') errors.push(m.text()) })
-  const url = `http://127.0.0.1:${PORT}/?motif=${job.motif}&color=${encodeURIComponent(job.color)}&loop=${LOOP}&secs=${LOOP}&w=${OUT_W}&h=${OUT_H}`
+  const url = `http://127.0.0.1:${PORT}/?motif=${job.motif}&color=${encodeURIComponent(job.color)}&loop=${LOOP}&secs=${LOOP}&w=${OUT_W}&h=${OUT_H}&fps=${OUT_FPS}`
   process.stdout.write(`render ${job.lib}/${job.id} (${job.motif}) ... `)
   try {
     await page.goto(url, { waitUntil: 'networkidle2', timeout: 30000 })
