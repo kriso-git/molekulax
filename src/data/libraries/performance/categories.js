@@ -48,7 +48,6 @@ export const CATEGORIES = [
 export const SUB_SECTIONS = {
   dht: [
     { id: 'klasszikus', label: { hu: 'Klasszikus DHT',                en: 'Classic DHT',                  pl: 'Klasyczne DHT' } },
-    { id: 'alap-test',  label: { hu: 'Alap: Testosteron → DHT',       en: 'Base: Testosterone → DHT',     pl: 'Baza: Testosteron → DHT' } },
   ],
   test: [
     { id: '17a-alkyl',  label: { hu: 'C17α-alkylált (orális)',        en: 'C17α-alkylated (oral)',        pl: 'C17α-alkilowane (doustne)' } },
@@ -87,7 +86,6 @@ export const SUB_SECTIONS = {
 // to the new top-level 'sarm' subCategory; yk-11 is steroidal, rest non-steroidal.
 export const PERFORMANCE_SUB_CATEGORIES = {
   // DHT derivatives
-  'testosterone-info': { subCategory: 'dht',   subSection: 'alap-test'  },
   'anavar-info':       { subCategory: 'dht',   subSection: 'klasszikus' },
   'superdrol':         { subCategory: 'dht',   subSection: 'klasszikus' },
   'winstrol-info':     { subCategory: 'dht',   subSection: 'klasszikus' },
@@ -99,6 +97,7 @@ export const PERFORMANCE_SUB_CATEGORIES = {
   'dhb':               { subCategory: 'dht',   subSection: 'klasszikus' },
 
   // Testosterone derivatives
+  'testosterone-info': { subCategory: 'test',  subSection: 'inj'        },
   'dianabol-info':     { subCategory: 'test',  subSection: '17a-alkyl'  },
   'halotestin':        { subCategory: 'test',  subSection: '17a-alkyl'  },
   'turinabol':         { subCategory: 'test',  subSection: '17a-alkyl'  },
