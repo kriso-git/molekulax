@@ -69,11 +69,11 @@ export default function Sourcing() {
                 <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform duration-300" />
               </span>
               </div>
-              <div className="order-first md:order-none shrink-0 flex items-center justify-center md:w-[36%]">
+              <div className="order-first md:order-none shrink-0 flex items-center justify-center md:justify-end md:w-[34%]">
                 <img
                   src={p.logo}
                   alt={`${p.name} logo`}
-                  className="max-h-[120px] md:max-h-[150px] w-auto max-w-[180px] md:max-w-[210px] object-contain opacity-95 transition-transform duration-300 group-hover:scale-105"
+                  className="max-h-[120px] md:max-h-[124px] w-auto max-w-[180px] md:max-w-[210px] object-contain opacity-95 transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   draggable="false"
                 />
