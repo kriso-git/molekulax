@@ -8,7 +8,6 @@ import Disclaimer from './components/Disclaimer'
 import Footer from './components/Footer'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import ThemeSwitcher from './components/ThemeSwitcher'
-import AffiliateButton from './components/AffiliateButton'
 import EntryDetailRoute from './components/library/EntryDetailRoute'
 import { isEntryDetailHash } from './components/library/entryHash'
 import { useMediaQuery } from './hooks/useMediaQuery'
@@ -103,7 +102,6 @@ export default function App() {
           <BackgroundLayer />
           <ThemeSwitcher />
           <LanguageSwitcher />
-          <AffiliateButton />
           <div className="relative z-10">
             {!hideLanding && (
               <>

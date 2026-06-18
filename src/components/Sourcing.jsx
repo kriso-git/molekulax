@@ -2,8 +2,9 @@ import { ArrowRight, Tag } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
 
 // "Beszerzés" — partner sourcing section (under Education). Affiliate links with
-// coupons. Indigo/purple accent like AffiliateButton (green is reserved for
-// chemistry content). URLs are constants; copy comes from besz.* i18n keys.
+// coupons. Indigo/purple accent (green is reserved for chemistry content).
+// URLs are constants; copy comes from besz.* i18n keys. This section replaced the
+// old top-left floating PCTZONE coupon pill.
 const PARTNERS = [
   {
     id: 'limitless',
