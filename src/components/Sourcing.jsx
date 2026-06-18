@@ -43,19 +43,11 @@ export default function Sourcing() {
               href={p.href}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="group flex flex-col p-8 rounded-2xl glass no-underline hover:border-[rgba(129,140,248,0.3)] hover:bg-[rgba(99,102,241,0.07)] transition-all duration-300"
+              className="group flex flex-col md:flex-row md:items-stretch gap-5 md:gap-7 p-8 rounded-2xl glass no-underline hover:border-[rgba(129,140,248,0.3)] hover:bg-[rgba(99,102,241,0.07)] transition-all duration-300"
             >
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-col flex-1 min-w-0">
                 <h3 className="text-xl font-extrabold tracking-wide text-white">{p.name}</h3>
-                <img
-                  src={p.logo}
-                  alt={`${p.name} logo`}
-                  className="h-10 w-auto max-w-[140px] object-contain shrink-0 opacity-95"
-                  loading="lazy"
-                  draggable="false"
-                />
-              </div>
-              <p className="text-gray-400 text-sm mt-3 mb-5 flex-1">{t(p.descKey)}</p>
+                <p className="text-gray-400 text-sm mt-2 mb-5 flex-1">{t(p.descKey)}</p>
 
               <div
                 className="inline-flex items-center gap-2 self-start mb-6 px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider whitespace-nowrap"
@@ -76,6 +68,16 @@ export default function Sourcing() {
                 {t(p.ctaKey)}
                 <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform duration-300" />
               </span>
+              </div>
+              <div className="order-first md:order-none shrink-0 flex items-center justify-center md:w-[36%]">
+                <img
+                  src={p.logo}
+                  alt={`${p.name} logo`}
+                  className="max-h-[120px] md:max-h-[150px] w-auto max-w-[180px] md:max-w-[210px] object-contain opacity-95 transition-transform duration-300 group-hover:scale-105"
+                  loading="lazy"
+                  draggable="false"
+                />
+              </div>
             </a>
           ))}
         </div>
