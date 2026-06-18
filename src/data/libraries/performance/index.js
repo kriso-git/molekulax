@@ -24,8 +24,8 @@ export const LIBRARY_ENTRY_META = [
     "tier": 5,
     "wadaStatus": "banned",
     "variantCount": 5,
-    "subCategory": "dht",
-    "subSection": "alap-test",
+    "subCategory": "test",
+    "subSection": "inj",
     "formFactors": ["oil", "aq"]
   },
   {
