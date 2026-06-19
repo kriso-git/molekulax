@@ -1393,7 +1393,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
  
  {/* Where-to-buy pills — only for compounds a partner shop confirmedly carries (verified links); absent = not available. */}
- <SourcingButtons entryId={peptide.id} className="mt-4" />
+ <SourcingButtons entryId={peptide.id} variantId={peptide._activeVariantId} className="mt-4" />
  </div>
 
  {/* Holosphere */}

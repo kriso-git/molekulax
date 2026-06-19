@@ -42,6 +42,9 @@ const PCTZONE_PRODUCT_IDS = {
   'provironum-25mg': 3051,
   'raloxiheal-60mg': 3165,
   'testacyp-250inj': 3322,
+  'testorapid-100mg-ml': 44939,
+  'testobalin-250mg-ml': 44909,
+  'sustanon-250-inj': 3319,
   'winstrol-10mg': 3253,
   'bupron-sr-150mg': 2849,
   'healpecia-1mg': 2932,
@@ -207,7 +210,15 @@ export const SOURCING_AVAILABILITY = {
     "s4": { driada: "andarine-s4" },
     "slu-pp-332": { limitless: "slu-pp-332-250mcg-60-capsules" },
     "superdrol": { driada: "superdrolyn-10-mg-methasterone" },
-    "testosterone-info": { driada: "testos-250-mg-ml-testosterone-enanthate", pctzone: "testacyp-250inj" },
+    "testosterone-info": {
+      driada: "testos-250-mg-ml-testosterone-enanthate", pctzone: "testobalin-250mg-ml",
+      variants: {
+        prop: { driada: "propios-100-mg-ml-testosterone-propionate", pctzone: "testorapid-100mg-ml" },
+        enan: { driada: "testos-250-mg-ml-testosterone-enanthate", pctzone: "testobalin-250mg-ml" },
+        cyp: { driada: "cypilos-250-mg-ml-testosterone-cypionate", pctzone: "testacyp-250inj" },
+        sus: { driada: "sustalad-250-mg-ml-sustanon", pctzone: "sustanon-250-inj" },
+      },
+    },
     "trenbolone-info": { driada: "trenacetos-100-mg-ml-trenbolone-acetate" },
     "turinabol": { driada: "turinadyn-10-mg-turinabol" },
     "winstrol-info": { driada: "stanos-10-mg-stanozolol", pctzone: "winstrol-10mg" },
@@ -235,9 +246,12 @@ export const SOURCING_AVAILABILITY = {
  * Returns the ordered list of buyable sources for an entry, or [] when none.
  * Each item: { key, name, url, coupon }.
  */
-export function getSourcing(libraryId, entryId) {
-  const avail = SOURCING_AVAILABILITY[libraryId]?.[entryId]
-  if (!avail) return []
+export function getSourcing(libraryId, entryId, variantId) {
+  const entry = SOURCING_AVAILABILITY[libraryId]?.[entryId]
+  if (!entry) return []
+  // Multi-form entries map each form (variant routeId) to its own shop product;
+  // fall back to the entry's base slugs when the active form has no specific match.
+  const avail = (variantId && entry.variants && entry.variants[variantId]) || entry
   return PARTNER_ORDER.filter((key) => avail[key]).map((key) => {
     const p = SOURCING_PARTNERS[key]
     return { key, name: p.name, logo: p.logo, url: p.productUrl(avail[key]), coupon: p.coupon }
