@@ -92,12 +92,12 @@ function buildPanel(canvas, data, style) {
   if (style === 'ballstick') {
     data.atoms.forEach((a,i)=>{ if(!keep[i]) return
       const col = EL_COLOR[a.el] || NEON
-      const m = new THREE.MeshStandardMaterial({ color:col, emissive:col, emissiveIntensity:0.35, roughness:0.3, metalness:0.15 })
+      const m = new THREE.MeshStandardMaterial({ color:col, emissive:col, emissiveIntensity:0.62, roughness:0.22, metalness:0.18 })
       const s = new THREE.Mesh(new THREE.SphereGeometry((EL_R[a.el]||0.2), 30, 30), m)
       s.position.copy(pos[i]); group.add(s)
     })
   }
-  const bondMat = new THREE.MeshStandardMaterial({ color:NEON, emissive:NEON, emissiveIntensity:0.32, roughness:0.35, metalness:0.1 })
+  const bondMat = new THREE.MeshStandardMaterial({ color:NEON, emissive:NEON, emissiveIntensity:0.58, roughness:0.28, metalness:0.12 })
   const pulses = []
   const bondR = style==='ballstick' ? 0.075 : 0.055
   data.bonds.forEach(b=>{ if(!keep[b.a]||!keep[b.b]) return
@@ -110,7 +110,7 @@ function buildPanel(canvas, data, style) {
   try {
     composer = new EffectComposer(renderer)
     composer.addPass(new RenderPass(scene, cam))
-    composer.addPass(new UnrealBloomPass(new THREE.Vector2(w,h), 0.42, 0.55, 0.5))
+    composer.addPass(new UnrealBloomPass(new THREE.Vector2(w,h), 0.62, 0.6, 0.32))
   } catch (e) { composer = null }
   return { renderer, composer, scene, cam, group, pulses }
 }
