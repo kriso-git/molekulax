@@ -1,0 +1,6 @@
+# https://molekulax.hu robots
+User-agent: *
+Allow: /
+
+# No crawl-sensitive areas; the app is a single-page site.
+Sitemap: https://molekulax.hu/sitemap.xml

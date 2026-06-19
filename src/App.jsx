@@ -1,4 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Hero from './components/Hero'
 import Education from './components/Education'
 import Sourcing from './components/Sourcing'
@@ -99,6 +101,9 @@ export default function App() {
       <LanguageProvider>
         <LibraryProvider>
         <div className="relative min-h-screen page-root overflow-x-hidden">
+          {/* Cookieless, GDPR-friendly measurement (enable in the Vercel dashboard). */}
+          <Analytics />
+          <SpeedInsights />
           <BackgroundLayer />
           <ThemeSwitcher />
           <LanguageSwitcher />
