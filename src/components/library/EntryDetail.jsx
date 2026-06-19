@@ -19,6 +19,7 @@ import { useLang } from '../../i18n/LanguageContext'
 import { useTheme } from '../../theme/ThemeContext'
 import { useLibrary } from '../../context/LibraryContext'
 import TelegramButtons from '../TelegramButtons'
+import SourcingButtons from './SourcingButtons'
 import MiniCalc from '../MiniCalc'
 import BloodworkProtocol from './BloodworkProtocol'
 import PerformanceCalculator from './PerformanceCalculator'
@@ -1390,6 +1391,9 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  )}
  <TelegramButtons />
  </div>
+ 
+ {/* Where-to-buy pills — only for compounds a partner shop confirmedly carries (verified links); absent = not available. */}
+ <SourcingButtons entryId={peptide.id} className="mt-4" />
  </div>
 
  {/* Holosphere */}
