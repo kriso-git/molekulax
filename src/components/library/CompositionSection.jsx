@@ -37,14 +37,18 @@ export default function CompositionSection({ composition, accent }) {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {composition.map((item) => {
-            const meta = metaById[item.id]
-            const displayName = meta?.name || item.id
+            // item.id links to a same-library entry; display-only ingredients
+            // (a non-entry blend component) carry `name` and don't link.
+            const meta = item.id ? metaById[item.id] : null
+            const displayName = meta?.name || item.name || item.id
+            const linkable = !!meta
+            const Tag = linkable ? 'button' : 'div'
             return (
-              <button
-                key={item.id}
-                onClick={() => handleClick(item.id)}
-                aria-label={`${displayName} — ${item.role} (${item.typicalDose})`}
-                className="text-left p-4 rounded-xl transition-all hover:scale-[1.02]"
+              <Tag
+                key={item.id || item.name}
+                {...(linkable ? { onClick: () => handleClick(item.id) } : {})}
+                aria-label={`${displayName} – ${item.role} (${item.typicalDose})`}
+                className={`text-left p-4 rounded-xl transition-all ${linkable ? 'hover:scale-[1.02] cursor-pointer' : ''}`}
                 style={{
                   background: 'var(--tint-medium)',
                   border: '1px solid var(--tint-medium-border)',
@@ -55,7 +59,7 @@ export default function CompositionSection({ composition, accent }) {
                     style={{ color: meta?.accentColor || accent }}>
                     {displayName}
                   </h3>
-                  <ChevronRight className="w-4 h-4 opacity-50 mt-1" />
+                  {linkable && <ChevronRight className="w-4 h-4 opacity-50 mt-1" />}
                 </div>
                 <div className="text-xs opacity-70 mb-1">
                   <span className="uppercase tracking-wide opacity-60">
@@ -64,7 +68,7 @@ export default function CompositionSection({ composition, accent }) {
                   {item.role}
                 </div>
                 <div className="text-xs font-mono opacity-80">{item.typicalDose}</div>
-              </button>
+              </Tag>
             )
           })}
         </div>

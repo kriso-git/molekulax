@@ -143,9 +143,13 @@ export const PERFORMANCE_SUB_CATEGORIES = {
   'dhea':              { subCategory: 'pct',   subSection: 'axis'       },
 
   // Fat loss & Stimulants
+  'atx-304':           { subCategory: 'fat',   subSection: 'metabolic'  },
+  'sobetirome':        { subCategory: 'fat',   subSection: 'thyroid'    },
+  'sana-mvd1':         { subCategory: 'fat',   subSection: 'mito'       },
+  'slu-pp-915':        { subCategory: 'fat',   subSection: 'mito'       },
   'yohimbine':         { subCategory: 'fat',   subSection: 'stim'       },
   'eca-stack':         { subCategory: 'fat',   subSection: 'stim'       },
-  'super-shred':       { subCategory: 'fat',   subSection: 'stim'       },
+  'super-shred':       { subCategory: 'fat',   subSection: 'metabolic'       },
   'clenbuterol':       { subCategory: 'fat',   subSection: 'beta'       },
   'albuterol':         { subCategory: 'fat',   subSection: 'beta'       },
   'mirabegron':        { subCategory: 'fat',   subSection: 'beta'       },

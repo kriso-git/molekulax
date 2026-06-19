@@ -1,193 +1,182 @@
-// Super-Shred — generic proprietary stim-blend archetípus (ECA-rokon +
-// yohimbine + synephrine + 1,3-DMAA-tipikus). Sources: Cohen 2014 JAMA
-// PMID 25406303, FDA 2013 1,3-DMAA Consumer Update, Karnatovskaia 2015
-// PMID 25525083, Eichner 2002 PMID 12172251, Haller 2008 PMID 18403028.
+// Super-Shred (lipotropic blend) – compounded INJEKTÁLHATÓ "lipo shot" zsírégető
+// koktél. Valódi összetétel (tulajdonos): L-Carnitine 400 mg + MIC blend 100 mg
+// (Methionine + Inositol + Choline) + ATP 50 mg + Albuterol 2 mg + B12
+// (cyanocobalamin) 1 mg. Komponens-evidence: Stephens 2007 PMID 17331998,
+// Koeth 2013 Nat Med PMID 23563705, Kraemer 2003 PMID 12930169 (L-Carnitine),
+// Cazzola 2012 PMID 22611179 (bronchodilatorok / Albuterol).
 
 export default {
   "id": "super-shred",
-  "name": "Super-Shred (multi-stim blend)",
-  "image": "/performance/tablet-pile-white.png",
+  "name": "Super-Shred (lipotropic blend)",
+  "image": "/performance/water-vial.png",
   "accentColor": "#f97316",
   "tagColor": "rgba(249,115,22,0.18)",
-  "shortDesc": "Generic proprietary multi-stim blend archetípus: ECA-rokon + yohimbine HCl + synephrine + 1,3-DMAA-tipikus komponens-kombináció. Cohen 2014 JAMA (PMID 25406303) label-claim vs actual-content discrepancy warning; FDA 2013 1,3-DMAA ban (Consumer Update); Karnatovskaia 2015 (PMID 25525083) dokumentált DMAA-acute-hepatitis case-cluster.",
-  "description": "A 'Super-Shred' nem egyetlen FDA-Rx hatóanyag, hanem a 2010-es évek bodybuilding-blackmarket fat-burner-blend-arketípusának generic megnevezése. A tipikus Super-Shred-style proprietary blend 4-6 sympathomimetic komponenst tartalmaz egyazon kapszulában: ECA-rokon (ephedra-alkaloid, synephrine, vagy methylsynephrine), yohimbine HCl (α2-antagonist), 1,3-dimethylamylamine (DMAA, geranamine-szintetikus rokon), caffeine + theobromine + theacrine kombináció, és gyakran rauwolscine (yohimbine-stereoisomer α2-szelektív). A multi-receptor sympathomimetic aktiváció α1/α2 (yohimbine + DMAA) + β1/β2 (ephedrine-analog + synephrine) + adenosine-receptor-antagonizmus (caffeine) együttes-stack-szerű, ami acute thermogenic-rate-emelést okoz +400-600 kcal/nap REE-növekedéssel, de a cardiovascular-risk-cluster (acute hypertonia, tachycardia, stroke, AMI, sudden cardiac death) magas. Cohen 2014 JAMA (PMID 25406303) RCT 27 OTC fat-burner-blendet HPLC-tesztelt: 12 blend tartalmazott egyáltalán nem-deklarált hatóanyagot, 8 blend label-claim ±30% dose-variance-szel. FDA 2013 1,3-DMAA Consumer Update banned the DMAA dietary-supplement use 100+ adverse-event-report + 5 halál után. Karnatovskaia 2015 (PMID 25525083) dokumentált acute hepatitis case-cluster DMAA-yohimbine kombináció-on. WADA S6 stimulant in-competition banned. DON'T do at home protokoll: a label-claim-discrepancy + komponens-szinergisztikus-cardiac-stress miatt akár a 'safe-looking' dose-on is hospitalizáció dokumentált.",
+  "composition": [
+    {
+      "id": "l-carnitine",
+      "role": "Long-chain zsírsav-shuttle (CPT-I) – a zsírt viszi a mitokondriumba beta-oxidációra; injektálva megkerüli a gyenge orális felszívódást",
+      "typicalDose": "400 mg"
+    },
+    {
+      "name": "MIC Blend (Methionine, Inositol, Choline)",
+      "role": "Lipotrop trió (Methionine + Inositol + Choline) – a máj zsír-anyagcseréjét és zsír-exportját támogatja; cholin + metionin metil-donorok",
+      "typicalDose": "100 mg"
+    },
+    {
+      "name": "ATP",
+      "role": "Sejtszintű energia / szubsztrát komponens",
+      "typicalDose": "50 mg"
+    },
+    {
+      "id": "albuterol",
+      "role": "Szelektív béta-2 agonista – enyhe termogén / lipolitikus hatás; ez a WADA-tiltott, kardiovaszkulárisan aktív összetevő",
+      "typicalDose": "2 mg"
+    },
+    {
+      "name": "B12 (cyanocobalamin)",
+      "role": "Cyanocobalamin – kofaktor az energia- és metil-anyagcserében, energia-támogatásra adva",
+      "typicalDose": "1 mg"
+    }
+  ],
+  "shortDesc": "Compounded INJEKTÁLHATÓ lipotrop zsírégető koktél (a klasszikus 'lipo shot' archetípus): L-Carnitine 400 mg + MIC blend 100 mg (Methionine + Inositol + Choline) + ATP 50 mg + Albuterol 2 mg + B12 1 mg. Zsírsav-transzport (carnitine) + hepatikus lipotropikumok (MIC) + béta-2 termogén (albuterol) + kofaktorok (ATP, B12) egy fecskendőben. Az Albuterol miatt WADA-tiltott, és kardiovaszkuláris kockázatot hordoz. A klinikai fogyás-evidence az egyes komponensekre van, NEM a keverékre.",
+  "description": "A 'Super-Shred (lipotropic blend)' egy compounded, INJEKTÁLHATÓ zsírégető koktél, a klasszikus 'lipo shot' / 'lipotrop injekció' archetípus egy konkrét változata. Öt komponenst kombinál egyetlen vizes injekcióban: L-Carnitine 400 mg (long-chain zsírsav-shuttle), MIC blend 100 mg (Methionine + Inositol + Choline lipotrop trió), ATP 50 mg (energia/szubsztrát), Albuterol 2 mg (szelektív béta-2 agonista) és B12 / cyanocobalamin 1 mg (energia- és metil-anyagcsere kofaktor). A logika négyrétegű: zsírsav-transzport (carnitine) + hepatikus lipotropikumok (MIC) + béta-2 termogén lipolízis (albuterol) + kofaktorok (ATP, B12). Az injektálható forma a carnitine gyenge orális biohasznosulását (~15%) kerüli meg. FONTOS őszinte keretezés: a klinikai fogyás-evidence túlnyomórészt az EGYES komponensekre vonatkozik (és ott is szerény), NEM erre a konkrét keverékre – ennek a kombinációnak nincs RCT-vizsgálata. A valódi kockázatot az Albuterol komponens hordozza: tachycardia, tremor, hypokalaemia és kardiovaszkuláris terhelés, ráadásul WADA-tiltott béta-2 agonista. A készítmény szürke-piaci, compounding / házi keverés, így a tisztaság és a tényleges hatóanyag-tartalom NEM garantált."
+  ,
   "keyInfo": [
     {
+      "label": "Típus",
+      "value": "Compounded injektálható lipotrop zsírégető koktél (5-komponensű 'lipo shot')"
+    },
+    {
+      "label": "Összetétel",
+      "value": "L-Carnitine 400 mg + MIC 100 mg + ATP 50 mg + Albuterol 2 mg + B12 1 mg / injekció"
+    },
+    {
       "label": "Hatásmechanizmus",
-      "value": "Multi-receptor sympathomimetic stack: α1/α2 + β1/β2 + adenosine-receptor-antagonizmus"
+      "value": "Zsírsav-shuttle (carnitine) + hepatikus lipotropikumok (MIC) + béta-2 termogén (albuterol) + kofaktorok (ATP, B12)"
     },
     {
-      "label": "Adagolás",
-      "value": "1-2 cap PO BID AM/preworkout, MAX 4 cap/nap (label-claim szerinti dose — actual-content discrepancy gyakori)"
-    },
-    {
-      "label": "Felezési idő",
-      "value": "Blend-component-dependent ~3-8 óra overall envelope"
-    },
-    {
-      "label": "Hatáskezdet",
-      "value": "20-45 perc, multi-component-peak overlap 1-3 óra"
+      "label": "Beadás",
+      "value": "Szubkután / intramuszkuláris injekció (vizes oldat)"
     },
     {
       "label": "Jogi státusz",
-      "value": "DMAA FDA 2013 banned dietary-supplement; ephedra FDA 2004 banned; yohimbine OTC USA (EU Rx); synephrine OTC. WADA S6 in-competition banned."
+      "value": "Egyetlen jóváhagyott fixed-dose keverék SEM létezik; compounding / szürke-piaci. Albuterol béta-2 agonista WADA-tiltott (oral/injekciós forma). EU + HU: Rx-komponensek."
     }
   ],
-  "mechanism": "A 'Super-Shred' multi-component sympathomimetic stack három párhuzamos receptor-pályán aktivál. Először az α-adrenoceptor-szelektív komponensek: yohimbine α2-antagonist (presynaptic noradrenaline-autoreceptor-blokád → noradrenaline-release-disinhibíció) + 1,3-DMAA mixed α/β-szerű geranamine-rokon (presynaptic NRA-szerű mechanism, de neurotoxikus profilú). Másodszor a β-adrenoceptor-aktivátorok: synephrine (citrus aurantium-extract, β3-preferenciás de β1-spillover dokumentált), ephedrine-analog (Ma Huang alkaloid). Harmadszor az adenosine-receptor-antagonizmus: caffeine + theobromine + theacrine xantin-stack az A1/A2A-receptor-blokáddal a CNS-feedback-suppression-t megszünteti. A szinergisztikus eredmény: massive sympathomimetic-storm — BP-emelkedés +20-30 mmHg sysztolés, HR +25-40 bpm, QTc-prolongation potential, és vasoconstrictive-rebound. Karnatovskaia 2015 (PMID 25525083) acute hepatitis-cluster: DMAA + yohimbine-co-administration hepatikus enzymes (ALT >5x ULN, AST >3x ULN) dokumentált 4-7 nap blend-use-on belül. A label-claim-discrepancy (Cohen 2014 JAMA PMID 25406303) miatt az 'actual-content vs box-content' nem ismert: HPLC-tesztelt blendek 30-50%-ánál a deklarált hatóanyag-tartalom NEM egyezik az actual-tartalommal.",
-  "legalStatus": "USA: 1,3-DMAA dietary-supplement FDA-banned 2013 (Consumer Update); ephedra-dietary-supplement FDA-banned 2004; yohimbine OTC dietary-supplement; synephrine OTC. EU: 1,3-DMAA tilos (EFSA 2015 safety-assessment-negatív); ephedrine ATC R03CA02 vény-köteles Rx; yohimbine vény-köteles Rx (psychogenic erectile dysfunction Rx-indikáció); synephrine OTC (gyakran energy-drink). HU + PL: yohimbine + ephedrine vény-köteles; synephrine + caffeine + theobromine OTC. WADA: ephedrine + DMAA + synephrine S6 stimulant in-competition banned; yohimbine NEM-listán (monitored alkalmazástól függően). Pre-formulated proprietary blendek 'DON'T do at home' framing: a komponens-szinergisztikus-cardiac-stress + label-claim-discrepancy miatt high-risk.",
-  "onsetTime": "20-45 perc, multi-component-peak overlap 1-3 óra",
-  "halfLife": "Blend-component-dependent ~3-8 óra overall envelope",
+  "mechanism": "A Super-Shred (lipotropic blend) négy, egymástól független mechanizmuson keresztül próbálja a zsírvesztést támogatni. (1) L-Carnitine: a hosszú-szénláncú zsírsavakat a carnitine palmitoyltransferase-I (CPT-I) shuttle-rendszeren keresztül viszi be a mitokondriumba beta-oxidációra – ez a zsír-mint-üzemanyag útvonal sebesség-meghatározó lépése. Az injektálható forma megkerüli a gyenge orális felszívódást (~15%). (2) MIC (Methionine, Inositol, Choline): klasszikus 'lipotrop' ágensek, amelyek a máj lipid-anyagcseréjét és a májból való zsír-exportot támogatják; a cholin és a metionin metil-donorok, az inozitol a lipid-kezelést segíti. (3) ATP: energia- / sejtszintű szubsztrát komponensként adva. (4) Albuterol: szelektív béta-2 adrenerg agonista, amely enyhe termogén / lipolitikus hatást és bronchodilatációt fejt ki – ez a kardiovaszkulárisan aktív és WADA-tiltott összetevő, tachycardia, tremor és hypokalaemia kockázattal. (5) B12 (cyanocobalamin): az energia- és metil-anyagcsere kofaktora, amelyet rendszerint energia-támogatásra adnak a lipotrop injekciókhoz. Összességében egy compounded zsírégető koktél, ahol a komponensek külön-külön rendelkeznek (szerény) evidenciával, de a konkrét keverék nem vizsgált; a kardiovaszkuláris és WADA-kockázat gyakorlatilag teljes egészében az Albuterol-komponensből ered.",
+  "legalStatus": "Nincs jóváhagyott fixed-dose 'Super-Shred' keverék – a termék compounding pharmacy vagy szürke-piaci házi formulálás eredménye. Komponensenként: L-Carnitine OTC supplement / Rx IM-SC forma; Albuterol (Salbutamol) Rx béta-2 agonista (Ventolin); a MIC, ATP és B12 supplement / injekciós lipotrop ágensek. WADA: az Albuterol béta-2 agonista, oral/injekciós használat TILTOTT (csak inhalációs <1600 µg/24h engedett) – emiatt a teljes keverék verseny-kontextusban tiltott. EU + HU + PL: az Albuterol Rx-köteles.",
+  "onsetTime": "Albuterol-komponens 15-30 perc; carnitine izom-loading napok-hetek alatt steady-state",
+  "halfLife": "Komponens-függő: Albuterol ~5-6 óra, L-Carnitine ~15 óra, B12 raktározódik",
   "interactionsWith": [
-    "eca-stack",    "yohimbine",
-    "clenbuterol"
+    "l-carnitine",
+    "albuterol",
+    "clenbuterol",
+    "mots-c"
   ],
-  "aromatization": "Nem aromatizál (multi-sympathomimetikus blend — sympathomimetic alkaloidok + xantinok + α2-antagonist kombináció, nem szteroid). Nincs CYP19-interakció.",
-  "hepatotoxicity": "Közepes — DMAA + yohimbine kombináció dokumentált acute hepatitis case-cluster (FDA 2013 1,3-DMAA ban; Karnatovskaia 2015 PMID 25525083). Multi-component blendek HPLC-undeclared-content-szel hepatotoxikus-szignál potenciálisan magasabb mint label-claim alapján vélelmezett. Pre-existing liver-disease abszolút kontraindikáció.",
+  "aromatization": "Nem aromatizál – nem szteroid. A keverék lipotropikumokból, egy béta-2 agonistából és kofaktorokból áll, nincs CYP19 (aromatáz) interakció és nincs ösztrogén-axis hatás.",
+  "hepatotoxicity": "A lipotrop komponensek (cholin, metionin, inozitol) általában TÁMOGATJÁK a máj zsír-anyagcseréjét és a zsír-exportot, így önmagukban nem hepatotoxikusak. Őszinte megjegyzés: mivel a Super-Shred compounded / szürke-piaci injektálható készítmény, a tisztaság, a steril gyártás és a tényleges hatóanyag-tartalom NEM garantált – a kockázat itt nem a hepatotoxicitásból, hanem a házi formulálás tisztasági és sterilitási bizonytalanságából, valamint az Albuterol kardiovaszkuláris hatásából ered.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nem AAS)",
-  "bindingAffinity": "Blend-component-dependent: yohimbine α2-AR Ki ~3 nM (high-affinity), synephrine β3-AR Ki ~150 nM, DMAA presynaptic NRA-mechanism (Ki-data limited), ephedrine-analog α1/β1 Ki ~10-50 μM (low-affinity, indirect NRA).",
-  "detectionWindow": "WADA-akkreditált LC-MS/MS multi-component vizelet-detektálás: ephedrine 1-3 nap (küszöb 10 μg/mL), DMAA 1-2 nap, synephrine 1-2 nap. Yohimbine NEM-banned, monitored alkalmazás-függő.",
+  "detectionWindow": "Albuterol 24-72 óra vizelet (WADA threshold 1000 ng/mL). L-Carnitine nem standard WADA-test; B12 / lipotropikumok nem listázottak.",
   "benefits": [
-    "Acute thermogenic-rate-emelés +400-600 kcal/nap (multi-receptor stack, dose-dependent)",
-    "Acute appetite-suppression (sympathomimetic + α2-antagonist kombináció)",
-    "Energy + focus-emelés (caffeine + DMAA preworkout context)",
-    "Lipid-mobilization yohimbine-mediated (α2-blokád stubborn-fat-area-redukció Galitzky 1988 analóg-evidence)",
-    "Olcsó komponensek a label-claim-szinten (de actual-content-quality NEM garantált — Cohen 2014 PMID 25406303)"
+    "Injektálható L-Carnitine: megkerüli a gyenge orális felszívódást, támogatja a zsírsav-mitokondriális transzportot (CPT-I, beta-oxidáció)",
+    "MIC lipotrop trió: a máj lipid-anyagcseréjét és zsír-exportját támogatja (metil-donor cholin + metionin)",
+    "Albuterol: enyhe termogén / lipolitikus béta-2 hatás kalória-deficitben (de ez a kockázati komponens)",
+    "B12 + ATP: energia- és metil-anyagcsere kofaktor-támogatás",
+    "Egyetlen injekcióban kombinált 'lipo shot' kényelem – DE a keverék egészére nincs klinikai evidence, csak a komponensekre külön-külön"
   ],
   "quickStart": [
-    "DO NOT START — DON'T do at home protokoll, a label-claim-discrepancy + komponens-szinergisztikus-cardiac-stress high-risk",
-    "Ha ellenére is használsz: pre-cycle 12-lead EKG + BP home-tracking 7-nap baseline, lipid panel, liver enzymes",
-    "Single-component szétválasztva NEM kombinálva biztonságosabb (ephedrine Rx-Rx-on, caffeine OTC, yohimbine Rx-Rx-on külön-külön dose-titrálás)",
-    "Pre-formulated proprietary blend kerülni javasolt (Cohen 2014 JAMA label-claim discrepancy)",
-    "Cycle-length 2-4 hét MAX (cardiovascular + hepatic-recovery + tachyphylaxis)",
-    "Last dose 14:00 előtt mandatory (insomnia-prevention, DMAA + caffeine extended t1/2)"
-  ],
-  "expectations": [
-    {
-      "label": "1. hét",
-      "body": "Acute sympathomimetic-storm érzékelhető: szignifikáns HR-emelkedés (+25-40 bpm), BP-emelkedés (+20-30 mmHg sysztolés), izzadás, tremor, anxietás. Étvágy-csökkenés erős, energy-emelés szignifikáns. Insomnia-risk magas. Acute hepatitis-szignál (RUQ-fájdalom, fáradtság) → IMMEDIATE leállítás + ALT/AST mérés."
-    },
-    {
-      "label": "2-3. hét",
-      "body": "Tolerance kezd kialakulni (caffeine-tachyphylaxis 7-10 nap, ephedrine 3-4 hét). Dose-escalation NEM ajánlott (cardiovascular-risk-multiplier). Subjektív fat-loss tempó +0.5-1.0 kg/hét adekvát kalória-deficitben — DE iatrogén-risk magasabb mint a benefit. Liver-enzymes-monitoring 2-hét-interval kötelező."
-    },
-    {
-      "label": "Cycle-end (2-4 hét MAX)",
-      "body": "Cycle-cap 2-4 hét MAX a cardiovascular + hepatic-recovery-window miatt. Hirtelen leállítás rebound-fatigue + rebound-appetite-risk. 4-6 hét OFF kötelező. Post-cycle bloodwork: BP + EKG + lipid panel + liver enzymes verifikáció. Új cycle NEM ajánlott — single-component alternative biztonságosabb."
-    }
+    "Edukatív kontextus: ez egy compounded szürke-piaci INJEKTÁLHATÓ zsírégető koktél – a keverék egészére nincs jóváhagyás vagy RCT-evidence",
+    "A valódi kockázat az Albuterol-komponensből ered: tachycardia, tremor, hypokalaemia – pre-cycle EKG + vérnyomás-baseline + kálium/magnézium szükséges",
+    "WADA-tesztelt sportolónak TILOS: az Albuterol injekciós/oral béta-2 agonista verseny-kontextusban tiltott",
+    "A komponensek külön-külön, ellenőrzött forrásból követhetőbbek és titrálhatóbbak, mint egy fix házi keverék",
+    "Vizes (water-based) injekció – TILOS olajos készítményekkel keverni",
+    "Szürke-piaci forrásnál a tisztaság és sterilitás NEM garantált – sterilitási és dose-variance kockázat"
   ],
   "quality": {
     "pure": [
-      "Egyetlen pre-formulated 'Super-Shred-style' blend SEM ajánlott — Cohen 2014 JAMA (PMID 25406303) label-claim-discrepancy 30-50% blendek-en",
-      "Single-component szétválasztva (Rx-pharmacy ephedrine + OTC caffeine + Rx yohimbine) követhetőbb, dose-titrálható",
-      "DMAA-containing pre-blendek FDA 2013 óta banned dietary-supplement-formátum (USA + EU)",
-      "Ephedra-containing pre-blendek FDA 2004 óta banned dietary-supplement-formátum"
+      "Nincs jóváhagyott fixed-dose 'Super-Shred' termék – minden ilyen keverék compounding pharmacy vagy szürke-piaci formulálás, a hatóanyag-tartalom nem garantált",
+      "A komponensek külön-külön, gyógyszertári / ellenőrzött forrásból beszerezve követhetőbbek (Rx Salbutamol, Rx vagy OTC L-Carnitine, lipotrop injekciós ágensek)",
+      "Vizes bázisú injekció – HPLC-tesztelt forrás és steril gyártás kötelező lenne, szürke-piacon ez ritkán igazolt",
+      "Albuterol-tartalom miatt a teljes keverék WADA-tiltott verseny-kontextusban"
     ],
     "caution": [
-      "BP home-tracking 2x/nap (AM + estére), heti átlag napló",
-      "EKG-baseline + 2-week-check (QTc + arrhythmia-monitoring)",
-      "Liver enzymes (ALT/AST/ALP) 2-hét-interval (DMAA + yohimbine hepatic-cluster Karnatovskaia 2015 PMID 25525083)",
-      "Insomnia-risk magas — last dose 14:00 előtt mandatory",
-      "Anxietás + panic-attack potenciál szignifikáns (multi-sympathomimetic stack)",
-      "Pszichoaktív komponens-overlap (caffeine + DMAA + theacrine) → behavioral-side-effect"
+      "Albuterol kardio-monitoring: vérnyomás-napló, nyugalmi pulzus <100, EKG-baseline + ellenőrzés",
+      "Hypokalaemia: a béta-2 aktiváció a K+-ot intracellulárisan shifteli – magnézium 400 mg + kálium-szupplementálás ajánlott, főleg diuretikum mellett",
+      "Tremor, szívdobogás, szorongás, insomnia (Albuterol-komponens)",
+      "Sterilitás és tisztaság szürke-piacon NEM garantált – injekciós helyi reakció, fertőzés-kockázat",
+      "Dose-variance: compounded keveréknél a tényleges Albuterol-dózis ±jelentős eltérést mutathat",
+      "L-Carnitine vizes vegyület – tilos olajos készítményekkel keverni"
     ],
     "avoid": [
-      "Pre-existing hypertonia (>140/90 mmHg) — abszolút kontraindikáció",
-      "Pre-existing tachyarrhythmia, AF, cardiomyopathy — abszolút kontraindikáció",
-      "Pre-existing liver-disease (NAFLD, hepatitis, cirrhosis) — abszolút kontraindikáció",
-      "MAO-inhibitor (phenelzine, tranylcypromine) — hypertensiv-krízis abszolút kontraindikáció",
-      "SSRI/SNRI — serotonin-szindróma-risk relativ kontraindikáció",
-      "Hyperthyroidism / Graves-betegség — abszolút kontraindikáció",
-      "Pheochromocytoma — abszolút kontraindikáció",
-      "Pregnancy + szoptatás",
-      "Pre-formulated proprietary blendek általában (Cohen 2014 label-claim-discrepancy)",
-      "Kombináció bármely más sympathomimetic-szel (clenbuterol, ECA-stack, ephedrine, mirabegron) — additív kardio-stressz"
+      "Pre-existing tachyarrhythmia, AF, kardiomiopátia – abszolút kontraindikáció (Albuterol)",
+      "Pre-existing hipertónia (>140/90 mmHg) – relatív/abszolút kontraindikáció",
+      "Béta-blokkoló-terápia – blokkolja az Albuterol hatását és vasokonstrikció-kockázat",
+      "MAO-gátló egyidejű használata – tachycardia + hypertensiv krízis kockázat",
+      "Hyperthyreosis / Graves-betegség – kontraindikáció",
+      "Súlyos szorongás, pánikbetegség, epilepszia",
+      "Terhesség és szoptatás",
+      "WADA-tesztelt versenyzők (Albuterol injekciós/oral forma tiltott)",
+      "Kombináció bármely más béta-2 agonistával vagy szimpatomimetikummal (clenbuterol, ECA-stack) – additív kardio-stressz"
     ]
   },
   "interactions": [
-    "ECA-stack co-administration — additív sympathomimetic-storm, KONTRAINDIKÁLT",
-    "Clenbuterol + Mirabegron — additív kardio-stressz, KONTRAINDIKÁLT",
-    "MAO-inhibitor — hypertensiv-krízis, KONTRAINDIKÁLT",
-    "SSRI/SNRI — serotonin-szindróma-risk, low-dose-escalation óvatosság",
-    "Krónikus β-blokkoló-terápia — α-receptor-unopposed vasoconstriction-risk",
-    "Acetaminophen — DMAA-acetaminophen hepatic-interaction Yokota 2013 analóg",
-    "Alkohol — DMAA + alkohol hepatic-stress-multiplier"
+    "Clenbuterol / más béta-2 agonista – additív kardio-stressz + hypokalaemia, KONTRAINDIKÁLT",
+    "Béta-blokkoló – blokkolja az Albuterol hatását, vasokonstrikció-kockázat",
+    "MAO-gátló – tachycardia + hypertensiv krízis kockázat",
+    "Diuretikum (thiazid, furosemid) – additív hypokalaemia kockázat az Albuterol mellett",
+    "Caffeine / stimulánsok – szinergisztikus kardio-stressz az Albuterol-lal",
+    "Warfarin – krónikus L-Carnitine INR-emelkedést okozhat",
+    "Levothyroxine (T4) – L-Carnitine csökkentheti a perifériás T4 → T3 konverziót"
   ],
   "studies": [
     {
-      "title": "Nine prohibited stimulants found in sports and weight loss supplements: deterenol, phenpromethamine (Vonedrine), oxilofrine (methylsynephrine), octodrine, beta-methylphenylethylamine (BMPEA), 1,3-dimethylamylamine (1,3-DMAA), 1,4-dimethylamylamine (1,4-DMAA), 1,3-dimethylbutylamine (1,3-DMBA) and higenamine.",
-      "authors": "Cohen PA, Travis JC, Vanhee C, Ohana D, Venhuis BJ",
-      "journal": "Clin Toxicol (Phila)",
-      "pmid": "33755516"
+      "title": "New insights concerning the role of carnitine in the regulation of fuel metabolism in skeletal muscle",
+      "authors": "Stephens FB, Constantin-Teodosiu D, Greenhaff PL.",
+      "journal": "J Physiol. 2007;581(Pt 2):431-444.",
+      "pmid": "17331998"
     },
     {
-      "title": "Not All Herbals are Benign: A Case of Hydroxycut-induced Acute Liver Injury.",
-      "authors": "Khetpal N, Mandzhieva B, Shahid S, Khetpal A, Jain AG",
-      "journal": "Cureus",
-      "pmid": "32190438"
+      "title": "Intestinal microbiota metabolism of L-carnitine, a nutrient in red meat, promotes atherosclerosis",
+      "authors": "Koeth RA, Wang Z, Levison BS et al.",
+      "journal": "Nat Med. 2013;19(5):576-585.",
+      "pmid": "23563705"
     },
     {
-      "title": "Surveillance of the armed forces as a sentinel system for detecting adverse effects of dietary supplements in the general population.",
-      "authors": "Lieberman HR, Austin KG, Farina EK",
-      "journal": "Public Health Nutr",
-      "pmid": "29151367"
+      "title": "Pharmacology and therapeutics of bronchodilators",
+      "authors": "Cazzola M, Page CP, Calzetta L, Matera MG.",
+      "journal": "Pharmacol Rev. 2012;64(3):450-504.",
+      "pmid": "22611179"
     },
     {
-      "title": "Use of recreational drug 1,3-Dimethylamylamine (DMAA) associated with cerebral hemorrhage.",
-      "authors": "Gee P, Tallon C, Long N, Moore G, Boet R, Jackson S",
-      "journal": "Ann Emerg Med",
-      "pmid": "22575212"
+      "title": "L-carnitine L-tartrate supplementation favorably affects markers of recovery from exercise stress",
+      "authors": "Kraemer WJ, Volek JS, French DN et al.",
+      "journal": "J Strength Cond Res. 2003;17(3):455-462.",
+      "pmid": "12930169"
     }
   ],
   "faq": [
     {
-      "q": "Mi a Super-Shred — egyetlen FDA-Rx-szer?",
-      "a": "Nem, a 'Super-Shred' nem egyetlen FDA-Rx hatóanyag, hanem a 2010-es évek bodybuilding-blackmarket fat-burner-blend-arketípusának generic megnevezése. Tipikus komponens-kombináció: ECA-rokon (ephedra-alkaloid, synephrine), yohimbine HCl, 1,3-DMAA, caffeine + theobromine + theacrine. A label-claim NEM egyezik az actual-content-tal a Cohen 2014 JAMA (PMID 25406303) HPLC-RCT alapján: 12 blend tartalmazott egyáltalán nem-deklarált hatóanyagot."
+      "q": "Mi valójában a Super-Shred?",
+      "a": "Egy compounded, INJEKTÁLHATÓ lipotrop zsírégető koktél – a klasszikus 'lipo shot' archetípus konkrét változata. Öt komponenst kombinál egy vizes injekcióban: L-Carnitine 400 mg, MIC blend 100 mg (Methionine + Inositol + Choline), ATP 50 mg, Albuterol 2 mg és B12 (cyanocobalamin) 1 mg. Nem egyetlen jóváhagyott gyógyszer, hanem szürke-piaci / compounding formulálás, ezért a tényleges hatóanyag-tartalom és a sterilitás NEM garantált."
     },
     {
-      "q": "Miért tiltotta be az FDA 2013-ban a DMAA-t?",
-      "a": "Az FDA 2013 Consumer Update az 1,3-DMAA (geranamine) dietary-supplement-formátumát banned-listára helyezte 100+ adverse-event-report + 5 halál után (acute hypertonia + stroke + AMI). Az FDA-érv: az 1,3-DMAA NEM természetes geranium-növényi-extract (mint a 2010-es évek pre-blend-címkék állították), hanem szintetikus geranamine-rokon-szerkezet, ami nem-naturalisztikus dietary-ingredient-status-szal nem felelt meg a DSHEA-1994 amerikai szabályozásnak. EU EFSA 2015 safety-assessment is negatív (no-safe-dose-determinable). Karnatovskaia 2015 (PMID 25525083) acute hepatitis-cluster ezt megerősítette."
+      "q": "Hogyan próbál hatni a keverék?",
+      "a": "Négy független mechanizmuson keresztül: az L-Carnitine a zsírsavakat a mitokondriumba viszi beta-oxidációra (CPT-I shuttle, injektálva megkerülve a gyenge orális felszívódást); a MIC trió (Methionine, Inositol, Choline) a máj zsír-anyagcseréjét és zsír-exportját támogatja (metil-donorok); az ATP és a B12 energia- és metil-anyagcsere kofaktorok; az Albuterol pedig szelektív béta-2 agonistaként enyhe termogén / lipolitikus hatást ad. FONTOS: a klinikai fogyás-evidence az EGYES komponensekre van (és ott is szerény), nem erre a konkrét kombinációra."
     },
     {
-      "q": "Yohimbine + synephrine kardiális risk-cluster — mit dokumentáltak?",
-      "a": "Mindkét hatóanyag dokumentált kardiális-cluster-szignál szel rendelkezik. Yohimbine α2-antagonist noradrenaline-release-disinhibition + panic-attack-induction risk magas: pre-existing anxiety + pánikrohanam-history kontraindikáció. Synephrine (citrus aurantium) β3-preferenciás de β1-spillover dokumentált: Haller 2008 (PMID 18403028) acute cardiovascular adverse-event-cluster synephrine-blendek-en. Kombináció yohimbine + synephrine (mint Super-Shred-style blendekben) szinergisztikus α + β-receptor-stack additív cardiac-stress-szel."
+      "q": "Miért WADA-tiltott?",
+      "a": "Az Albuterol (Salbutamol) szelektív béta-2 adrenerg agonista. A WADA az inhalációs használatot <1600 µg/24 óráig engedi (asztma-kontextusban), de az ORAL és INJEKCIÓS béta-2 agonista használat TILTOTT. Mivel a Super-Shred injektálható és Albuterol-t tartalmaz, a teljes keverék tiltott verseny-kontextusban (vizelet-detektálás 24-72 óra, threshold 1000 ng/mL)."
     },
     {
-      "q": "Miért 'Super-Shred' nem egy single Rx-szer, hanem blend-archetype?",
-      "a": "A 'Super-Shred' brand-name a 2010-es évek bodybuilding-supplement-cég brand-portfolio-jából származott (gyakori marketing-szlogen-stílus 'shredding-stack', 'cutting-stack', 'fat-burner-X', 'Hydroxycut', 'Lipo-6 Black' typed proprietary blends). A blend-archetype kifejezés azt jelzi, hogy nem egy specifikus Rx-szer (mint Clenbuterol vagy Mirabegron), hanem egy gyűjtőfogalom a multi-component sympathomimetic + xantin + α2-antagonist OTC-blendekre. A MolekulaX-on a Super-Shred-record az ilyen blendek általános framing-jét adja, a komponens-szinergisztikus-cardiac-risk + label-claim-discrepancy-warning-szel."
+      "q": "Mennyire biztonságos?",
+      "a": "A lipotrop komponensek (cholin, metionin, inozitol) és a kofaktorok (ATP, B12) önmagukban a máj zsír-anyagcseréjét támogatják és nem hepatotoxikusak. A valódi kockázatot az Albuterol-komponens hordozza: tachycardia, tremor, hypokalaemia és kardiovaszkuláris terhelés. Ehhez jön a szürke-piaci / házi formulálás bizonytalansága – a tisztaság, a sterilitás és a tényleges dózis NEM garantált. Pre-existing kardiovaszkuláris betegség, hyperthyreosis, MAO-gátló vagy béta-blokkoló mellett kontraindikált."
     }
   ],
   "related": [
-    "eca-stack",    "yohimbine"
-  ],
-  "doseCalc": {
-    "type": "fixed",
-    "fixed": {
-      "low": 1,
-      "medium": 2,
-      "high": 4
-    },
-    "unit": "cap/nap (label-claim szerinti — actual-content NEM garantált)",
-    "note": "DON'T do at home protokoll. Ha ellenére is használsz: 1-2 cap PO BID AM/preworkout, MAX 4 cap/nap label-claim szerint. Cycle-length 2-4 hét MAX, majd 4-6 hét OFF (cardiovascular + hepatic-recovery). Pre-cycle 12-lead EKG + BP home-tracking 7-nap baseline + lipid panel + liver enzymes kötelező. Mid-cycle 2-hét-interval liver enzymes + EKG + BP. Last dose 14:00 előtt mandatory (DMAA + caffeine extended t1/2 insomnia-prevention). WADA S6 in-competition banned. Single-component szétválasztva biztonságosabb mint pre-formulated blend (Cohen 2014 PMID 25406303 label-claim-discrepancy)."
-  },
-  "bloodwork": {
-    "preCycle": {
-      "label": "Ciklus előtt",
-      "timing": "Cycle-start előtt 1-2 hét",
-      "markers": "Blood pressure baseline (home-tracking AM+estére 7 nap átlag), resting HR, 12-lead EKG (QTc + ritmus), lipid panel (TC/LDL/HDL/TG), liver enzymes (ALT/AST/ALP/GGT), full CBC, bilirubin",
-      "purpose": "Cardiovascular + hepatic baseline-status felmérése. DMAA + yohimbine acute hepatitis-cluster (Karnatovskaia 2015 PMID 25525083) miatt liver enzymes pre-cycle MANDATORY."
-    },
-    "midCycle": {
-      "label": "Ciklus közben",
-      "timing": "Cycle-start után 1 + 2 hét",
-      "markers": "Blood pressure 2x/nap home-tracking heti átlag, resting HR weekly, EKG 2-week-check, liver enzymes (ALT/AST/ALP/GGT) 2-hét-interval MANDATORY, lipid panel",
-      "purpose": "Acute hepatitis-szignál (RUQ-fájdalom, fáradtság, ALT >3x ULN) korai detektálás → IMMEDIATE cycle-leállítás. Hypertonia + QTc-prolongation-szignál monitoring."
-    },
-    "postCycle": {
-      "label": "Ciklus után",
-      "timing": "Cycle-end után 2 + 4 hét",
-      "markers": "BP + HR home-tracking, EKG (QTc-normalizáció confirm), lipid panel, liver enzymes (cycle-vége hepatic-baseline-helyreállítás), CRP (inflammation-recovery)",
-      "purpose": "Cardiovascular + hepatic-baseline-helyreállítás verifikálása. 4-6 hét OFF kötelező. Új cycle NEM ajánlott — single-component alternative biztonságosabb."
-    }
-  }
+    "l-carnitine",
+    "albuterol",
+    "clenbuterol",
+    "mots-c"
+  ]
 }
