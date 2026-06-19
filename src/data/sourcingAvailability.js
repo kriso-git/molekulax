@@ -9,6 +9,51 @@
 // Rollout: peptides first. Other libraries are added once their catalogues are
 // matched + verified the same way.
 
+// PCTZONE WooCommerce product IDs (scraped from each product page). Used to build
+// an add-to-cart + coupon URL that lands on the CART with the item already added
+// and the MOLEKULAX coupon applied — so the discount is visible immediately
+// (a plain product URL only stages the coupon in the session).
+const PCTZONE_PRODUCT_IDS = {
+  'artvigil-150mg': 2814,
+  'cerebrolysin-injection-10ml-215-2mg': 16837,
+  'modvigil-200mg': 3095,
+  'modvigil-200mg-2': 6112,
+  'tynept-12-5mg': 3332,
+  'femistra-1mg': 2813,
+  'oxandro-10mg': 44953,
+  'sicriptin-2-5mg': 29840,
+  'caberdost-0-5mg': 2851,
+  'clenbut-40mcg': 2872,
+  'clomisign-50mg': 2879,
+  'dutanol-0-5mg': 2901,
+  'xtane-25mg': 2925,
+  'finpecia-1mg': 2931,
+  'gonal-f-900iu': 24959,
+  'zyhcg-5000iu': 2975,
+  'genotropin-36iu-pen-hgh': 3249,
+  'menodac-150iu': 3049,
+  'letroz-2-5mg': 3021,
+  'lethyrox-100mcg': 3027,
+  'linorma-t3-20mcg': 36886,
+  'masterbol-injection-100mg-x5-1ml-ampules': 37828,
+  'tamoxifen-20mg-3': 14095,
+  'pramipex-0-25mg': 3132,
+  'primobol-100mg-ml-1ml-10-ampules': 27152,
+  'provironum-25mg': 3051,
+  'raloxiheal-60mg': 3165,
+  'testacyp-250inj': 3322,
+  'winstrol-10mg': 3253,
+  'bupron-sr-150mg': 2849,
+  'healpecia-1mg': 2932,
+  'fludac-20mg': 2943,
+  'hisone-10mg': 42513,
+  'accufine-20mg-3': 8978,
+  'metfor-500mg': 3063,
+  'morr-f-5-60ml': 3086,
+  'tadacip-20mg': 3264,
+  'tretigel-0-025-20gm': 31346,
+}
+
 // Partner shops. `productUrl(slug)` returns the full link with the affiliate
 // attribution already applied. `coupon` is non-null only when the discount
 // requires the visitor to type the code at checkout (no referral param exists).
@@ -31,12 +76,17 @@ export const SOURCING_PARTNERS = {
   pctzone: {
     name: 'PCTZONE',
     logo: '/sourcing/pctzone.png',
-    // WooCommerce product page with the coupon auto-applied. The shop's own
-    // ?coupon= param 404s on product pages, but the WooCommerce-standard
-    // ?coupon-code= loads the product AND applies the MOLEKULAX coupon
-    // (verified: the cart shows an active coupon). Code still surfaced as a
-    // visible fallback.
-    productUrl: (slug) => `https://pctzone.su/product/${slug}/?coupon-code=molekulax`,
+    // Land on the CART with the product already added AND the MOLEKULAX coupon
+    // applied (add-to-cart + coupon-code) — the discount is visible immediately.
+    // The shop's own ?coupon= 404s on product pages; ?coupon-code= is the
+    // WooCommerce-standard that actually applies. Falls back to the product page
+    // when the id is unknown. Code still surfaced as a visible fallback.
+    productUrl: (slug) => {
+      const id = PCTZONE_PRODUCT_IDS[slug]
+      return id
+        ? `https://pctzone.su/cart/?add-to-cart=${id}&coupon-code=molekulax`
+        : `https://pctzone.su/product/${slug}/?coupon-code=molekulax`
+    },
     coupon: 'MOLEKULAX',
   },
 }
@@ -114,6 +164,7 @@ export const SOURCING_AVAILABILITY = {
     "anadrol": { driada: "anadrolus-50-mg-oxymetholone" },
     "anastrozol": { driada: "arimidyn-0-5-mg-anastrozole", pctzone: "femistra-1mg" },
     "anavar-info": { driada: "anavaros-10mg-oxandrolone", pctzone: "oxandro-10mg" },
+    "atx-304": { limitless: "o-304-atx-inhibitor-100mg-30-capsules" },
     "bam15": { limitless: "bam-15-50mg-60-capsules" },
     "bromocriptine": { pctzone: "sicriptin-2-5mg" },
     "cabergoline": { driada: "caberos-cabergoline-0-25mg", pctzone: "caberdost-0-5mg" },
