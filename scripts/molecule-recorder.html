@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hu"><head><meta charset="utf-8" /><title>molecule recorder</title>
+<style>html,body{margin:0;background:#04060c}#c{display:block}</style></head>
+<body>
+<canvas id="c" width="512" height="512"></canvas>
+<script type="importmap">{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/",
+  "webm-muxer": "https://esm.sh/webm-muxer@5.0.3"
+}}</script>
+<script type="module">
+import * as THREE from 'three'
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js'
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js'
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
+import { Muxer, ArrayBufferTarget } from 'webm-muxer'
+
+const q = new URLSearchParams(location.search)
+const MOL = q.get('mol')
+const L = parseFloat(q.get('loop') || '6')
+const SECS = parseFloat(q.get('secs') || '6')
+const W = parseInt(q.get('w') || '512', 10)
+const H = parseInt(q.get('h') || '512', 10)
+const FPS = parseInt(q.get('fps') || '30', 10)
+const TAU = Math.PI * 2
+
+// Locked look (matches the approved mol-preview): site Chemical Green bonds,
+// element-tinted atoms, a touch of glow.
+const NEON = 0x00ff99
+const EL_COLOR = { C:0xaef0d0, O:0xff8a9a, N:0x8ec5ff, S:0xf2dd7a, P:0xffb27a, F:0x9bf0e0, Cl:0x9bf0b0, H:0xcfeede }
+const EL_R = { C:0.20, O:0.22, N:0.21, S:0.28, P:0.27, F:0.18, Cl:0.24, H:0.12 }
+const seeded = (s) => () => { s = (s*1664525+1013904223) % 4294967296; return s/4294967296 }
+const rnd = seeded(20260620)
+
+const canvas = document.getElementById('c')
+const renderer = new THREE.WebGLRenderer({ canvas, antialias:true, preserveDrawingBuffer:true })
+renderer.setPixelRatio(1); renderer.setSize(W, H, false)
+const scene = new THREE.Scene()
+;(() => { const cv=document.createElement('canvas'); cv.width=cv.height=256; const ctx=cv.getContext('2d'); const g=ctx.createRadialGradient(128,128,10,128,128,185); g.addColorStop(0,'rgba(0,255,153,0.06)'); g.addColorStop(0.5,'rgba(8,12,20,1)'); g.addColorStop(1,'rgba(4,6,12,1)'); ctx.fillStyle='#04060c'; ctx.fillRect(0,0,256,256); ctx.fillStyle=g; ctx.fillRect(0,0,256,256); const tex=new THREE.CanvasTexture(cv); tex.colorSpace=THREE.SRGBColorSpace; scene.background=tex })()
+const cam = new THREE.PerspectiveCamera(42, W/H, 0.1, 100); cam.position.set(0, 0, 11)
+scene.add(new THREE.AmbientLight(0xffffff, 0.5))
+const key = new THREE.PointLight(0xffffff, 60, 100); key.position.set(6, 8, 10); scene.add(key)
+
+function cylinderBetween(p1, p2, radius, mat) {
+  const dir = new THREE.Vector3().subVectors(p2, p1)
+  const len = Math.max(dir.length(), 0.001)
+  const mesh = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, len, 16, 1, true), mat)
+  mesh.position.copy(p1).add(p2).multiplyScalar(0.5)
+  mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0), dir.clone().normalize())
+  return mesh
+}
+
+let upd
+async function build() {
+  const data = await (await fetch('/mol3d/' + MOL + '.json')).json()
+  const keep = data.atoms.map(a => a.el !== 'H')
+  const cen = { x:0, y:0, z:0 }; let n=0
+  data.atoms.forEach((a,i)=>{ if(keep[i]){ cen.x+=a.x; cen.y+=a.y; cen.z+=a.z; n++ } })
+  cen.x/=n||1; cen.y/=n||1; cen.z/=n||1
+  let maxR=0.001; data.atoms.forEach((a,i)=>{ if(keep[i]){ const d=Math.hypot(a.x-cen.x,a.y-cen.y,a.z-cen.z); if(d>maxR)maxR=d } })
+  const S = 4.2 / maxR
+  const pos = data.atoms.map(a => new THREE.Vector3((a.x-cen.x)*S, (a.y-cen.y)*S, (a.z-cen.z)*S))
+  const group = new THREE.Group(); scene.add(group)
+  data.atoms.forEach((a,i)=>{ if(!keep[i]) return
+    const col = EL_COLOR[a.el] || NEON
+    const m = new THREE.MeshStandardMaterial({ color:col, emissive:col, emissiveIntensity:0.62, roughness:0.22, metalness:0.18 })
+    const s = new THREE.Mesh(new THREE.SphereGeometry((EL_R[a.el]||0.2), 30, 30), m)
+    s.position.copy(pos[i]); group.add(s)
+  })
+  const bondMat = new THREE.MeshStandardMaterial({ color:NEON, emissive:NEON, emissiveIntensity:0.58, roughness:0.28, metalness:0.12 })
+  const pulses = []
+  data.bonds.forEach(b=>{ if(!keep[b.a]||!keep[b.b]) return
+    group.add(cylinderBetween(pos[b.a], pos[b.b], 0.075, bondMat))
+    const pulse = new THREE.Mesh(new THREE.SphereGeometry(0.105, 14, 14), new THREE.MeshBasicMaterial({ color:0xccffe6 }))
+    group.add(pulse); pulses.push({ pulse, p1:pos[b.a], p2:pos[b.b], phase:rnd()*TAU })
+  })
+  // u in [0,1) over the loop. Full Y turn + period-aligned tilt + 2-cycle pulses = seamless.
+  upd = (u) => {
+    group.rotation.y = u * TAU
+    group.rotation.x = 0.32 + Math.sin(u*TAU) * 0.08
+    for (const b of pulses) {
+      const t = (Math.sin(u*TAU*2 + b.phase) + 1) / 2
+      b.pulse.position.lerpVectors(b.p1, b.p2, t)
+      const k = 0.5 + 0.28*Math.sin(u*TAU*4 + b.phase)
+      b.pulse.material.color.setRGB(0.55*k, 1.0*k, 0.82*k)
+    }
+  }
+}
+
+const composer = new EffectComposer(renderer)
+build().then(() => {
+  composer.addPass(new RenderPass(scene, cam))
+  composer.addPass(new UnrealBloomPass(new THREE.Vector2(W,H), 0.62, 0.6, 0.32))
+  warmLoop()
+}).catch(e => { window.__err = 'build: ' + (e && e.message || e) })
+
+let warm = 0
+function warmLoop(){ upd(0); composer.render(); if(++warm<8){ requestAnimationFrame(warmLoop) } else start() }
+
+async function start(){
+  const total = Math.round(SECS*FPS)
+  let muxer, encoder, nChunks=0
+  try{
+    muxer = new Muxer({ target:new ArrayBufferTarget(), video:{ codec:'V_VP9', width:W, height:H, frameRate:FPS } })
+    encoder = new VideoEncoder({ output:(chunk,meta)=>{ nChunks++; muxer.addVideoChunk(chunk,meta) }, error:e=>{ window.__err='encoder: '+e } })
+    encoder.configure({ codec:'vp09.00.40.08', width:W, height:H, bitrate:2000000, framerate:FPS, latencyMode:'quality' })
+  }catch(e){ window.__err='setup: '+(e&&e.message||e); return }
+  const drain = async(max)=>{ while(encoder.encodeQueueSize>max) await new Promise(r=>setTimeout(r,3)) }
+  try{
+    for(let nn=0; nn<total; nn++){
+      upd(nn/total)
+      composer.render()
+      const frame = new VideoFrame(canvas, { timestamp:Math.round(nn*1e6/FPS), duration:Math.round(1e6/FPS) })
+      encoder.encode(frame, { keyFrame:nn%30===0 })
+      frame.close()
+      await drain(6)
+    }
+    await encoder.flush(); muxer.finalize()
+    window.__chunks = nChunks
+    const blob = new Blob([muxer.target.buffer], { type:'video/webm' })
+    const fr = new FileReader(); fr.onload=()=>{ window.__webm=fr.result; window.__done=true }; fr.readAsDataURL(blob)
+  }catch(e){ window.__err='encode-loop: '+(e&&e.message||e) }
+}
+</script>
+</body></html>

@@ -67,7 +67,19 @@ async function renderRoute(browser, route) {
   const errors = []
   page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`))
   page.on('console', (m) => {
-    if (m.type() === 'error') errors.push(`console.error: ${m.text()}`)
+    if (m.type() !== 'error') return
+    const t = m.text()
+    // The browser logs a generic, URL-less "Failed to load resource ... 404"
+    // console error. We assess 404s via the response handler instead (so we can
+    // tell the benign Vercel-edge scripts apart from a real missing asset).
+    if (/Failed to load resource.*404 \(Not Found\)/.test(t)) return
+    errors.push(`console.error: ${t}`)
+  })
+  // Vercel Analytics + Speed Insights load /_vercel/insights|speed-insights/
+  // script.js, which only exist on the Vercel edge → they 404 on localhost
+  // (harmless, production serves them). Any OTHER 404 is a real missing asset.
+  page.on('response', (r) => {
+    if (r.status() === 404 && !/\/_vercel\//.test(r.url())) errors.push(`404: ${r.url()}`)
   })
   if (route.lib) {
     await page.evaluateOnNewDocument((lib) => {
