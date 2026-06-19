@@ -77,15 +77,17 @@ export const SOURCING_PARTNERS = {
     name: 'PCTZONE',
     logo: '/sourcing/pctzone.png',
     // Land on the CART with the product already added AND the MOLEKULAX coupon
-    // applied (add-to-cart + coupon-code) — the discount is visible immediately.
-    // The shop's own ?coupon= 404s on product pages; ?coupon-code= is the
-    // WooCommerce-standard that actually applies. Falls back to the product page
-    // when the id is unknown. Code still surfaced as a visible fallback.
+    // applied in ONE click: /cart/?add-to-cart=<id>&coupon=molekulax. The shop's
+    // own ?coupon= param is the only one that actually applies the discount
+    // (verified: $3.96 → $3.56, coupon-molekulax row in the cart); it 404s on
+    // /product/ pages but works on /cart/. Falls back to the clean product URL
+    // (NOT ?coupon=, which would 404) when the id is unknown; the code is still
+    // shown as a visible fallback.
     productUrl: (slug) => {
       const id = PCTZONE_PRODUCT_IDS[slug]
       return id
-        ? `https://pctzone.su/cart/?add-to-cart=${id}&coupon-code=molekulax`
-        : `https://pctzone.su/product/${slug}/?coupon-code=molekulax`
+        ? `https://pctzone.su/cart/?add-to-cart=${id}&coupon=molekulax`
+        : `https://pctzone.su/product/${slug}/`
     },
     coupon: 'MOLEKULAX',
   },
