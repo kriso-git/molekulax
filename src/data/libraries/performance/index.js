@@ -1045,7 +1045,7 @@ export const LIBRARY_ENTRY_META = [
   {
     "id": "5-amino-1mq",
     "name": "5-Amino-1MQ",
-    "image": "/performance/tablet-pile-white.png",
+    "image": "/performance/water-vial.png",
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
@@ -1057,7 +1057,7 @@ export const LIBRARY_ENTRY_META = [
     "wadaStatus": "allowed",
     "subCategory": "fat",
     "subSection": "metabolic",
-    "formFactors": ["oral"]
+    "formFactors": ["aq"]
   },
   {
     "id": "mots-c",

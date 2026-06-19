@@ -6,7 +6,7 @@
 export default {
   "id": "5-amino-1mq",
   "name": "5-Amino-1MQ",
-  "image": "/performance/tablet-pile-white.png",
+  "image": "/performance/water-vial.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Designer methylquinoline NNMT-inhibitor (nicotinamide N-methyltransferase). PRECLINICAL-ONLY — Kraus 2014 Nature (PMID 24622204) NNMT-knockdown obese mouse-modell-evidence; Neelakantan 2018 (PMID 28425865) 5-amino-1MQ molecule-design first-publication. Humán-trial NEM létezik.",
