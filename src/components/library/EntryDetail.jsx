@@ -1500,24 +1500,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {/* ─── ANEKDOTA: collapsible community-experience narrative, under "What is X?" ─── */}
  <AnecdoteSection peptide={peptide} accent={accent} />
 
- {/* ─── QUICK START: constellation ─── */}
- {peptide.quickStart?.length > 0 && (
- <section className="relative px-6 sm:px-10 pb-10">
- <Eyebrow icon={Rocket} label={t('entry.sec.quickstart.eyebrow') || 'Quick Start'} accent={accent} />
- <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
- {(t('entry.sec.quickstart.title.template') || '{n} lépésben az indulásig').replace('{n}', peptide.quickStart.length)}
- </h3>
- <div
- className="relative p-6 rounded-2xl"
- style={{
- background: 'linear-gradient(135deg, var(--tint-row), var(--tint-soft))',
- border: '1px solid var(--tint-soft-border)',
- }}
- >
- <Constellation steps={peptide.quickStart} accent={accent} tr={tr} />
- </div>
- </section>
- )}
+ {/* QUICK START ("Quick Start" / constellation) section removed from ALL cards (owner kérés). */}
 
  {/* ─── TABBED RAIL: molecular / dosing / studies ─── Phase 10 flag-gated ─── */}
  {library?.features?.labTerminal && (

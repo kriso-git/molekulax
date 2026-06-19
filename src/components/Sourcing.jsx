@@ -24,6 +24,17 @@ const PARTNERS = [
     couponKey: 'besz.pctzone.coupon',
     ctaKey: 'besz.pctzone.cta',
   },
+  {
+    // Driada has NO referral link in the URL — the discount only applies if the
+    // visitor enters the MOLEKULAX coupon at checkout (emphasised in besz.driada.coupon).
+    id: 'driada',
+    name: 'DRIADA SHOP',
+    href: 'https://driadashop.to/',
+    logo: '/sourcing/driada.png',
+    descKey: 'besz.driada.desc',
+    couponKey: 'besz.driada.coupon',
+    ctaKey: 'besz.driada.cta',
+  },
 ]
 
 export default function Sourcing() {
@@ -36,7 +47,7 @@ export default function Sourcing() {
           <p className="text-gray-400 text-sm mt-4">{t('besz.subtitle')}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {PARTNERS.map((p) => (
             <a
               key={p.id}
@@ -76,6 +87,7 @@ export default function Sourcing() {
                   className="max-h-[120px] md:max-h-[124px] w-auto max-w-[180px] md:max-w-[210px] object-contain opacity-95 transition-transform duration-300 group-hover:scale-105"
                   loading="lazy"
                   draggable="false"
+                  onError={(e) => { e.currentTarget.style.display = 'none' }}
                 />
               </div>
             </a>
