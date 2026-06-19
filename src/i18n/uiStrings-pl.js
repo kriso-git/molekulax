@@ -141,6 +141,7 @@ export const UI_PL = {
   "entry.cta.contact": "Kontakt",
   "entry.sourcing.label": "Dostępne w",
   "entry.sourcing.coupon": "kupon",
+  "entry.sourcing.product": "Strona produktu",
   "entry.dosing.warn": "Tylko do celów badawczych. Dawkowanie zawsze pod nadzorem specjalisty.",
   "entry.tab.citations": "Cytowania",
   "entry.cite.view": "Otwórz",

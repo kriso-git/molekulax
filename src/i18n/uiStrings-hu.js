@@ -141,6 +141,7 @@ export const UI_HU = {
   "entry.cta.contact": "Kapcsolat",
   "entry.sourcing.label": "Beszerezhető",
   "entry.sourcing.coupon": "kupon",
+  "entry.sourcing.product": "Termékoldal",
   "entry.dosing.warn": "Csak kutatási célra. Az adagolás minden esetben szakember felügyelete mellett történhet.",
   "entry.tab.citations": "Hivatkozások",
   "entry.cite.view": "Megnyitás",

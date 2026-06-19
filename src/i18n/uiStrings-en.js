@@ -138,6 +138,7 @@ export const UI_EN = {
   "entry.cta.contact": "Contact",
   "entry.sourcing.label": "Available at",
   "entry.sourcing.coupon": "coupon",
+  "entry.sourcing.product": "Product page",
   "entry.dosing.warn": "Research use only. Dosing should always happen under expert supervision.",
   "entry.tab.citations": "Citations",
   "entry.cite.view": "Open",

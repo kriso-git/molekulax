@@ -15,12 +15,14 @@
 export const SOURCING_PARTNERS = {
   limitless: {
     name: 'LIMITLESS',
+    logo: '/sourcing/limitless.png',
     // WooCommerce product page; ?ref=molekulax carries the affiliate attribution.
     productUrl: (slug) => `https://www.limitlessbiochem.com/product/${slug}/?ref=molekulax`,
     coupon: null,
   },
   driada: {
     name: 'DRIADA',
+    logo: '/sourcing/driada.png',
     // OpenCart flat product handle. No referral param — the visitor MUST enter
     // the MOLEKULAX coupon at checkout for the discount, so we surface it.
     productUrl: (slug) => `https://driadashop.to/${slug}`,
@@ -28,6 +30,7 @@ export const SOURCING_PARTNERS = {
   },
   pctzone: {
     name: 'PCTZONE',
+    logo: '/sourcing/pctzone.png',
     // WooCommerce product page. ?coupon=molekulax applies the MOLEKULAX discount;
     // the code is also surfaced so the visitor can enter it manually if needed.
     productUrl: (slug) => `https://pctzone.su/product/${slug}/?coupon=molekulax`,
@@ -54,15 +57,14 @@ export const SOURCING_AVAILABILITY = {
     'ghrp-2': { limitless: 'ghrp-2-10mg-lyophilized-powder', driada: 'ghrp-2-5mg' },
     'ghrp-6': { limitless: 'ghrp-6-10mg-lyophilized-powder', driada: 'ghrp-6-5mg' },
     'glow': { limitless: 'glow-blend-ghk-cu-bpc-157-tb-500-70mg-lyophilized-powder' },
-    'hcg-peptid': { driada: 'hcg-5000iu-human-chorionic-gonadotropin', pctzone: 'zyhcg-5000iu' },
-    'hgh': { driada: 'somatropin-hgh-powder-100iu', pctzone: 'genotropin-36iu-pen-hgh' },
+    'hcg-peptid': { driada: 'hcg-5000iu-human-chorionic-gonadotropin' },
+    'hgh': { driada: 'somatropin-hgh-powder-100iu' },
     'hmg-peptid': { driada: 'hmg-75iu' },
     'humanin': { limitless: 'humanin-10mg-lyophilized-powder' },
     'igf-1-lr3': { driada: 'igf-1-lr3' },
     'ipamorelin': { limitless: 'ipamorelin-10mg-lyophilized-powder', driada: 'ipamorelin-2mg' },
     'klow-protocol': { limitless: 'klow-80-mg' },
     'kpv': { limitless: 'kpv-10mg-lyophilized-powder' },
-    'liraglutide': { pctzone: 'victoza-inj' },
     'll-37': { limitless: 'll-37-5mg-lyophilized-powder' },
     'melanotan-2': { limitless: 'melanotan-2-10mg-lyophilized-powder', driada: 'melanotan-2-10mg' },
     'mots-c': { limitless: 'mots-c', driada: 'mots-c-10-mg' },
@@ -71,14 +73,17 @@ export const SOURCING_AVAILABILITY = {
     'pt-141': { limitless: 'pt-141-10mg', driada: 'pt-141-10mg' },
     'retatrutide': { limitless: 'retatrutide-10mg' },
     'selank': { limitless: 'selank-10mg' },
-    'semaglutide': { driada: 'semaglutide-2mg', pctzone: 'wegovy-2-4mg-3-ml-pen' },
+    'semaglutide': { driada: 'semaglutide-2mg' },
     'sermorelin': { limitless: 'sermorelin-5mg-lyophilized-powder' },
     'snap-8': { limitless: 'snap-8-10mg-lyophilized-powder' },
     'ss-31': { limitless: 'ss-31-50-mg' },
     'tb-500': { limitless: 'tb-500-10-mg', driada: 'tb-500-3' },
     'tesamorelin': { limitless: 'tesamorelin-10-mg' },
     'thymosin-alpha-1': { limitless: 'thymosin-alpha-1-5mg-lyophilized-powder' },
-    'tirzepatide': { pctzone: 'mounjaro-10mg-2-4ml-pen-4-doses' },
+    // NOTE: PCTZONE is intentionally excluded from peptides (it is a pharma /
+    // PCT-focused shop). It is reserved for the pharmaceutical / performance
+    // libraries. So tirzepatide / liraglutide (only carried by PCTZONE) show no
+    // peptide button.
   },
 }
 
@@ -91,6 +96,6 @@ export function getSourcing(libraryId, entryId) {
   if (!avail) return []
   return PARTNER_ORDER.filter((key) => avail[key]).map((key) => {
     const p = SOURCING_PARTNERS[key]
-    return { key, name: p.name, url: p.productUrl(avail[key]), coupon: p.coupon }
+    return { key, name: p.name, logo: p.logo, url: p.productUrl(avail[key]), coupon: p.coupon }
   })
 }
