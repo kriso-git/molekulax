@@ -3,6 +3,22 @@
 
 export default {
   "id": "nsi-189",
+  "sideEffects": [
+    { "hu": "Korai irritáció, ingerlékenység (jellemzően a kúra első hetében)", "en": "Early irritability, mood agitation (typically in the first week)", "pl": "Wczesna drażliwość, pobudzenie nastroju (zwykle w pierwszym tygodniu)" },
+    { "hu": "Álmatlanság, alvászavar (kerüld a késő esti bevételt)", "en": "Insomnia, disrupted sleep (avoid late-evening dosing)", "pl": "Bezsenność, zaburzenia snu (unikaj dawkowania późnym wieczorem)" },
+    { "hu": "Fejfájás, enyhe szorongás (anekdotikus beszámolók)", "en": "Headache, mild anxiety (anecdotal reports)", "pl": "Ból głowy, łagodny lęk (relacje anegdotyczne)" },
+    { "hu": "Magasabb dózison (80+ mg) erősebb mellékhatás-profil, NEM erősebb hatás (harangformájú görbe)", "en": "Higher doses (80+ mg) bring more side effects, not stronger benefit (bell-shaped curve)", "pl": "Wyższe dawki (80+ mg) nasilają działania niepożądane, a nie efekt (krzywa dzwonowa)" },
+    { "hu": "Korlátozott humán biztonsági adat, a teljes mellékhatás-spektrum ismeretlen", "en": "Limited human safety data, full side-effect spectrum unknown", "pl": "Ograniczone dane o bezpieczeństwie u ludzi, pełne spektrum działań niepożądanych nieznane" },
+    { "hu": "Hosszú felezési idő (17-20 óra) miatt kumulatív hatás, steady state 4-5 nap alatt", "en": "Long half-life (17-20 h) gives cumulative effect, steady state in 4-5 days", "pl": "Długi okres półtrwania (17-20 h) daje efekt kumulacyjny, stan stacjonarny w 4-5 dni" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség, szoptatás (klinikai biztonsági adat hiányzik)", "en": "Pregnancy, breastfeeding (no clinical safety data)", "pl": "Ciąża, karmienie piersią (brak danych o bezpieczeństwie klinicznym)" },
+    { "hu": "MAOI együttszedés kerülendő (preklinikailag nem vizsgált monoaminerg interakció)", "en": "Avoid combining with MAOIs (preclinically untested monoaminergic interaction)", "pl": "Unikaj łączenia z inhibitorami MAO (niezbadana interakcja monoaminergiczna)" },
+    { "hu": "SSRI/SNRI kombináció csak orvosi felügyelet mellett (szerotonin-szindróma kockázat)", "en": "SSRI/SNRI combination only under medical supervision (serotonin syndrome risk)", "pl": "Łączenie z SSRI/SNRI tylko pod nadzorem lekarza (ryzyko zespołu serotoninowego)" },
+    { "hu": "Bipoláris spektrum: mánia-kockázat, orvosi monitorozás kötelező", "en": "Bipolar spectrum: mania risk, medical monitoring required", "pl": "Spektrum dwubiegunowe: ryzyko manii, wymagane monitorowanie lekarskie" },
+    { "hu": "Aktív pszichotikus zavar (neurogenezis-induktor mechanizmus tüneteket súlyosbíthat)", "en": "Active psychotic disorder (neurogenesis-inducing mechanism may worsen symptoms)", "pl": "Aktywne zaburzenie psychotyczne (mechanizm indukcji neurogenezy może nasilić objawy)" },
+    { "hu": "CNS-depresszánsokkal (alkohol, benzodiazepinek) óvatosság; nem FDA-jóváhagyott, ismeretlen hosszú távú biztonság", "en": "Caution with CNS depressants (alcohol, benzodiazepines); not FDA-approved, unknown long-term safety", "pl": "Ostrożność z depresantami OUN (alkohol, benzodiazepiny); niezatwierdzony przez FDA, nieznane długoterminowe bezpieczeństwo" }
+  ],
   "name": "NSI-189",
   "image": null,
   "accentColor": "#00ff99",

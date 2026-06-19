@@ -3,6 +3,23 @@
 
 export default {
   "id": "alpha-gpc",
+  "sideEffects": [
+    { "hu": "Fejfájás (kolinerg túltelítettség, jellemzően magasabb dózisnál)", "en": "Headache (cholinergic overload, typically at higher doses)", "pl": "Ból głowy (przeciążenie cholinergiczne, zwykle przy wyższych dawkach)" },
+    { "hu": "Hányinger és gyomor-bélrendszeri panaszok", "en": "Nausea and gastrointestinal discomfort", "pl": "Nudności i dolegliwości żołądkowo-jelitowe" },
+    { "hu": "Agyköd, fejnehézség túladagolásnál", "en": "Brain fog, mental heaviness when overdosed", "pl": "Mgła mózgowa, ociężałość umysłowa przy przedawkowaniu" },
+    { "hu": "Szorongás, idegesség magas kolinerg tónus mellett", "en": "Anxiety, nervousness from high cholinergic tone", "pl": "Lęk, nerwowość przy wysokim napięciu cholinergicznym" },
+    { "hu": "Élénk álmok, alvászavar (főleg esti bevételnél)", "en": "Vivid dreams, sleep disturbance (especially with evening dosing)", "pl": "Wyraziste sny, zaburzenia snu (zwłaszcza przy wieczornym dawkowaniu)" },
+    { "hu": "Szédülés, alacsony vérnyomás-érzet", "en": "Dizziness, sensation of low blood pressure", "pl": "Zawroty głowy, uczucie niskiego ciśnienia" },
+    { "hu": "Izzadás, fokozott nyálelválasztás (kolinerg jel)", "en": "Sweating, increased salivation (cholinergic sign)", "pl": "Pocenie się, zwiększone ślinienie (objaw cholinergiczny)" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás (nincs elég biztonsági adat)", "en": "Pregnancy and breastfeeding (insufficient safety data)", "pl": "Ciąża i karmienie piersią (niewystarczające dane dotyczące bezpieczeństwa)" },
+    { "hu": "Stroke-előzmény / érrendszeri kockázat: tartós magas dózis stroke-kockázattal hozható összefüggésbe, orvosi felügyelet szükséges", "en": "Stroke history / cardiovascular risk: chronic high-dose use has been associated with increased stroke risk, medical supervision needed", "pl": "Przebyty udar / ryzyko sercowo-naczyniowe: długotrwałe wysokie dawki wiązano ze zwiększonym ryzykiem udaru, wymagany nadzór lekarski" },
+    { "hu": "Depresszió: a túlzott kolinerg tónus ronthatja a hangulatot", "en": "Depression: excessive cholinergic tone may worsen mood", "pl": "Depresja: nadmierne napięcie cholinergiczne może pogorszyć nastrój" },
+    { "hu": "Antikolinerg gyógyszerekkel egyidejű szedés (hatás-ellentét)", "en": "Concurrent use with anticholinergic medications (opposing effects)", "pl": "Jednoczesne stosowanie z lekami antycholinergicznymi (przeciwstawne działanie)" },
+    { "hu": "Kolinerg / kolinészteráz-gátló szerek mellett (additív kolinerg hatás kockázata)", "en": "Alongside cholinergic / cholinesterase-inhibitor agents (risk of additive cholinergic effect)", "pl": "Łącznie ze środkami cholinergicznymi / inhibitorami cholinesterazy (ryzyko addytywnego efektu cholinergicznego)" },
+    { "hu": "Alacsony vérnyomás vagy görcsküszöb-érzékenység esetén óvatosság", "en": "Caution with low blood pressure or seizure-threshold sensitivity", "pl": "Ostrożność przy niskim ciśnieniu lub wrażliwości na próg drgawkowy" }
+  ],
   "name": "Alpha-GPC",
   "image": null,
   "accentColor": "#06b6d4",

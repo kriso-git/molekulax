@@ -3,6 +3,21 @@
 
 export default {
   "id": "oxiracetam",
+  "sideEffects": [
+    { "hu": "Fejfájás acetilkolin-kimerülésből, kolinforrással (Alpha-GPC, CDP-kolin) enyhíthető", "en": "Headache from acetylcholine depletion, mitigated by a choline source (Alpha-GPC, CDP-choline)", "pl": "Ból głowy z wyczerpania acetylocholiny, łagodzony źródłem choliny (Alpha-GPC, CDP-cholina)" },
+    { "hu": "Álmatlanság és nyugtalanság, főleg késő esti adagolásnál (stimuláns jellegű racetam)", "en": "Insomnia and restlessness, especially with late-evening dosing (stimulating-type racetam)", "pl": "Bezsenność i niepokój, zwłaszcza przy dawkowaniu późnym wieczorem (racetam o profilu stymulującym)" },
+    { "hu": "Ingerlékenység, idegesség magasabb adagoknál", "en": "Irritability and nervousness at higher doses", "pl": "Drażliwość i nerwowość przy wyższych dawkach" },
+    { "hu": "Enyhe gyomor-bélrendszeri panaszok, hányinger", "en": "Mild gastrointestinal discomfort, nausea", "pl": "Łagodne dolegliwości żołądkowo-jelitowe, nudności" },
+    { "hu": "Mentális fáradtság vagy „brain fog\" elégtelen kolinbevitel mellett", "en": "Mental fatigue or brain fog with insufficient choline intake", "pl": "Zmęczenie umysłowe lub mgła mózgowa przy niewystarczającej podaży choliny" },
+    { "hu": "Szédülés, néha rövid ideig tartó koncentrációs ingadozás a bevezető szakaszban", "en": "Dizziness, occasionally brief concentration fluctuations during the initial phase", "pl": "Zawroty głowy, sporadycznie krótkie wahania koncentracji w fazie początkowej" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás: nincs elegendő biztonságossági adat, kerülendő", "en": "Pregnancy and breastfeeding: insufficient safety data, avoid", "pl": "Ciąża i karmienie piersią: brak wystarczających danych o bezpieczeństwie, unikać" },
+    { "hu": "Súlyos vesekárosodás: dóziscsökkentés szükséges, mivel főként változatlanul, renálisan ürül", "en": "Severe renal impairment: dose reduction needed, as it is excreted largely unchanged via the kidneys", "pl": "Ciężka niewydolność nerek: konieczna redukcja dawki, ponieważ wydalany jest głównie w postaci niezmienionej przez nerki" },
+    { "hu": "Epilepszia, görcsroham-hajlam: óvatosság, glutamáterg/AMPA-fokozó hatás miatt", "en": "Epilepsy or seizure predisposition: caution due to glutamatergic/AMPA-enhancing activity", "pl": "Padaczka lub skłonność do napadów: ostrożność ze względu na działanie glutaminergiczne/wzmacniające AMPA" },
+    { "hu": "Egyidejű kolinerg szerek: kolinforrással kombinálva fejfájás helyett kolinerg túlsúly (hányinger, izzadás) jelentkezhet", "en": "Concurrent cholinergic agents: combined with a choline source, cholinergic excess (nausea, sweating) may appear instead of headache", "pl": "Jednoczesne środki cholinergiczne: w połączeniu ze źródłem choliny może wystąpić nadmiar cholinergiczny (nudności, pocenie) zamiast bólu głowy" },
+    { "hu": "Stimulánsok és koffein: a serkentő hatás összeadódhat, fokozva a szorongást és álmatlanságot", "en": "Stimulants and caffeine: the stimulating effect can stack, increasing anxiety and insomnia", "pl": "Stymulanty i kofeina: efekt pobudzający może się sumować, nasilając lęk i bezsenność" }
+  ],
   "name": "Oxiracetam",
   "image": null,
   "accentColor": "#a78bfa",

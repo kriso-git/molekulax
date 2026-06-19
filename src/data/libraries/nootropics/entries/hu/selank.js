@@ -3,6 +3,22 @@
 
 export default {
   "id": "selank",
+  "sideEffects": [
+    { "hu": "Orrnyálkahártya-irritáció, enyhe csípés vagy szárazság az intranazális adagolás helyén", "en": "Nasal mucosa irritation, mild stinging or dryness at the intranasal application site", "pl": "Podrażnienie błony śluzowej nosa, lekkie pieczenie lub suchość w miejscu donosowego podania" },
+    { "hu": "Enyhe fejfájás vagy szédülés, főleg az első adagoknál", "en": "Mild headache or dizziness, especially with initial doses", "pl": "Łagodny ból głowy lub zawroty głowy, zwłaszcza przy pierwszych dawkach" },
+    { "hu": "Fáradtság vagy enyhe levertség egyes felhasználóknál (a nem-szedáló profil ellenére)", "en": "Fatigue or mild lethargy in some users, despite the non-sedating profile", "pl": "Zmęczenie lub łagodna ospałość u niektórych użytkowników, mimo nieuspokajającego profilu" },
+    { "hu": "Ingerlékenység vagy hangulatingadozás, főleg megszakításkor", "en": "Irritability or mood fluctuation, particularly on discontinuation", "pl": "Drażliwość lub wahania nastroju, szczególnie przy odstawieniu" },
+    { "hu": "Ritka allergiás vagy túlérzékenységi reakció (a peptid-szerkezet miatt)", "en": "Rare allergic or hypersensitivity reaction due to the peptide structure", "pl": "Rzadka reakcja alergiczna lub nadwrażliwości ze względu na strukturę peptydową" },
+    { "hu": "Egyes felhasználók semmilyen érzékelhető hatást nem tapasztalnak (variábilis válasz)", "en": "Some users report no perceptible effect at all (variable response)", "pl": "Niektórzy użytkownicy nie odczuwają żadnego efektu (zmienna odpowiedź)" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás: peptid-specifikus humán biztonsági adat nincs, kerülendő", "en": "Pregnancy and breastfeeding: no peptide-specific human safety data, avoid", "pl": "Ciąża i karmienie piersią: brak danych dotyczących bezpieczeństwa dla tego peptydu, unikać" },
+    { "hu": "Ismert túlérzékenység Selankra vagy Tuftsin-analógokra", "en": "Known hypersensitivity to Selank or Tuftsin analogs", "pl": "Znana nadwrażliwość na Selank lub analogi tuftsyny" },
+    { "hu": "Aktív autoimmun betegség: az immunmoduláló (Tuftsin-eredetű) hatás miatt óvatosan", "en": "Active autoimmune disease: caution due to the immunomodulatory (Tuftsin-derived) action", "pl": "Aktywna choroba autoimmunologiczna: ostrożnie ze względu na działanie immunomodulujące (pochodzące od tuftsyny)" },
+    { "hu": "Súlyos depresszió monoterápiaként nem ajánlott, szakorvosi felügyelet szükséges", "en": "Not recommended as monotherapy in severe depression, specialist supervision required", "pl": "Niezalecany jako monoterapia w ciężkiej depresji, wymagany nadzór specjalisty" },
+    { "hu": "Benzodiazepinekkel és alkohollal együtt óvatosan (elméleti additív GABA-erg hatás)", "en": "Caution with benzodiazepines and alcohol due to theoretical additive GABAergic effect", "pl": "Ostrożnie z benzodiazepinami i alkoholem ze względu na teoretyczne addytywne działanie GABAergiczne" },
+    { "hu": "SSRI-vel csak klinikai monitorozás mellett, szerotonerg moduláció miatt", "en": "With SSRIs only under clinical monitoring, due to serotonergic modulation", "pl": "Z lekami SSRI tylko pod kontrolą kliniczną, ze względu na modulację serotoninergiczną" }
+  ],
   "name": "Selank",
   "image": null,
   "accentColor": "#10b981",

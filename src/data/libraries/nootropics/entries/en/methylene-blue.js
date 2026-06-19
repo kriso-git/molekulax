@@ -3,6 +3,21 @@
 
 export default {
   "id": "methylene-blue",
+  "sideEffects": [
+    { "hu": "Kék-zöld elszíneződésű vizelet és széklet (ártalmatlan, de gyakori)", "en": "Blue-green discoloration of urine and stool (harmless but common)", "pl": "Niebiesko-zielone zabarwienie moczu i stolca (nieszkodliwe, ale częste)" },
+    { "hu": "Hányinger, gyomorpanasz, emésztési diszkomfort orális adagolásnál", "en": "Nausea, stomach upset, digestive discomfort with oral dosing", "pl": "Nudności, rozstrój żołądka, dyskomfort trawienny przy dawkowaniu doustnym" },
+    { "hu": "Vizelési diszkomfort, húgyúti irritáció, gyakori vizelési inger", "en": "Dysuria, urinary tract irritation, frequent urination", "pl": "Dyzuria, podrażnienie dróg moczowych, częste oddawanie moczu" },
+    { "hu": "Fejfájás, szédülés, magasabb dózisnál", "en": "Headache, dizziness at higher doses", "pl": "Ból głowy, zawroty głowy przy wyższych dawkach" },
+    { "hu": "Enyhe nyelv-, fog- vagy bőr-elszíneződés, fémes szájíz", "en": "Mild tongue, teeth or skin staining, metallic taste", "pl": "Łagodne przebarwienie języka, zębów lub skóry, metaliczny posmak" },
+    { "hu": "Magas dózisban (>4 mg/kg) pro-oxidáns hatás, paradox methemoglobinémia", "en": "At high doses (>4 mg/kg) pro-oxidant effect, paradoxical methemoglobinemia", "pl": "W wysokich dawkach (>4 mg/kg) działanie prooksydacyjne, paradoksalna methemoglobinemia" }
+  ],
+  "contraindications": [
+    { "hu": "Szerotonerg gyógyszerek (SSRI, SNRI, MAO-gátlók, triptánok) – szerotonin-szindróma kockázat az MAO-A gátlás miatt, kombinációt kerülni", "en": "Serotonergic drugs (SSRIs, SNRIs, MAO inhibitors, triptans) – serotonin syndrome risk from MAO-A inhibition, avoid combination", "pl": "Leki serotoninergiczne (SSRI, SNRI, inhibitory MAO, tryptany) – ryzyko zespołu serotoninowego z powodu hamowania MAO-A, unikać łączenia" },
+    { "hu": "G6PD-enzimhiány – súlyos hemolitikus anémia kockázata, ellenjavallt", "en": "G6PD deficiency – risk of severe hemolytic anemia, contraindicated", "pl": "Niedobór G6PD – ryzyko ciężkiej niedokrwistości hemolitycznej, przeciwwskazane" },
+    { "hu": "Terhesség és szoptatás – kerülendő (magzati károsodás kockázata)", "en": "Pregnancy and breastfeeding – avoid (risk of fetal harm)", "pl": "Ciąża i karmienie piersią – unikać (ryzyko uszkodzenia płodu)" },
+    { "hu": "Súlyos vesekárosodás – csökkent kiválasztás, fokozott felhalmozódás", "en": "Severe renal impairment – reduced clearance, increased accumulation", "pl": "Ciężka niewydolność nerek – zmniejszone wydalanie, zwiększona kumulacja" },
+    { "hu": "Csak USP-gyógyszerkönyvi tisztaságú forma; ipari festék-minőség NEM beszedhető", "en": "Only USP pharmaceutical-grade form; industrial dye grade is NOT for ingestion", "pl": "Tylko forma o czystości farmaceutycznej USP; klasa barwnika przemysłowego NIE nadaje się do spożycia" }
+  ],
   "name": "Methylene Blue",
   "image": null,
   "accentColor": "#00ff99",

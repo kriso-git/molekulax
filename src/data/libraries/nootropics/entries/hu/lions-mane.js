@@ -3,6 +3,20 @@
 
 export default {
   "id": "lions-mane",
+  "sideEffects": [
+    { "hu": "Gyomor-bélrendszeri panaszok (puffadás, hasi diszkomfort), főleg üres gyomorra", "en": "Gastrointestinal complaints (bloating, abdominal discomfort), especially on an empty stomach", "pl": "Dolegliwości żołądkowo-jelitowe (wzdęcia, dyskomfort brzucha), zwłaszcza na czczo" },
+    { "hu": "Hányinger, enyhe emésztési zavar magasabb extract-dózisnál", "en": "Nausea, mild indigestion at higher extract doses", "pl": "Nudności, łagodna niestrawność przy wyższych dawkach ekstraktu" },
+    { "hu": "Bőrkiütés, viszketés, ritka kontakt- vagy allergiás bőrreakció", "en": "Skin rash, itching, rare contact or allergic skin reaction", "pl": "Wysypka skórna, świąd, rzadka kontaktowa lub alergiczna reakcja skórna" },
+    { "hu": "Légúti allergiás tünetek (orrfolyás, légszomj) gombára érzékenyeknél", "en": "Respiratory allergic symptoms (runny nose, shortness of breath) in those sensitive to fungi", "pl": "Alergiczne objawy oddechowe (katar, duszność) u osób wrażliwych na grzyby" },
+    { "hu": "Enyhe fejfájás vagy szédülés a kúra elején (egyéni érzékenység)", "en": "Mild headache or dizziness early in the course (individual sensitivity)", "pl": "Łagodny ból głowy lub zawroty na początku kuracji (wrażliwość osobnicza)" }
+  ],
+  "contraindications": [
+    { "hu": "Ismert gomba- vagy penészallergia (Hericium erinaceus érzékenység)", "en": "Known mushroom or mold allergy (Hericium erinaceus sensitivity)", "pl": "Znana alergia na grzyby lub pleśń (wrażliwość na Hericium erinaceus)" },
+    { "hu": "Terhesség és szoptatás: nem áll rendelkezésre elegendő biztonsági adat", "en": "Pregnancy and breastfeeding: insufficient safety data available", "pl": "Ciąża i karmienie piersią: brak wystarczających danych o bezpieczeństwie" },
+    { "hu": "Véralvadásgátló terápia: lehetséges vérzékenység-fokozó hatás, óvatosság", "en": "Anticoagulant therapy: possible additive bleeding tendency, use caution", "pl": "Terapia przeciwzakrzepowa: możliwe nasilenie skłonności do krwawień, ostrożność" },
+    { "hu": "Tervezett műtét előtt: a vérzési kockázat miatt 1-2 héttel előbb ajánlott elhagyni", "en": "Before planned surgery: advisable to stop 1-2 weeks prior due to bleeding risk", "pl": "Przed planowanym zabiegiem: zaleca się odstawienie 1-2 tygodnie wcześniej z powodu ryzyka krwawienia" },
+    { "hu": "Diabétesz / vércukorcsökkentő gyógyszer: lehetséges vércukorszint-csökkentés, monitorozás", "en": "Diabetes / glucose-lowering medication: possible blood-sugar lowering, monitor levels", "pl": "Cukrzyca / leki obniżające glukozę: możliwe obniżenie poziomu cukru, monitorowanie" }
+  ],
   "name": "Lion's Mane",
   "image": null,
   "accentColor": "#84cc16",

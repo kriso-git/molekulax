@@ -3,6 +3,22 @@
 
 export default {
   "id": "huperzine-a",
+  "sideEffects": [
+    { "hu": "Élénk, gyakran lucid álmok és alvászavar (a leggyakrabban jelentett hatás)", "en": "Vivid, often lucid dreams and disturbed sleep (the most commonly reported effect)", "pl": "Żywe, często świadome sny i zaburzenia snu (najczęściej zgłaszany efekt)" },
+    { "hu": "Hányinger, gyomorpanasz, hasmenés (kolinerg túlsúly)", "en": "Nausea, stomach upset, diarrhea (cholinergic excess)", "pl": "Nudności, dolegliwości żołądkowe, biegunka (nadmiar cholinergiczny)" },
+    { "hu": "Fokozott nyál- és izzadságtermelés", "en": "Increased salivation and sweating", "pl": "Wzmożone wydzielanie śliny i pocenie się" },
+    { "hu": "Izomrángás, izomgörcs, fascikuláció", "en": "Muscle twitching, cramps, fasciculation", "pl": "Drżenie mięśni, skurcze, fascykulacje" },
+    { "hu": "Szédülés, lassú szívverés (bradikardia)", "en": "Dizziness, slow heart rate (bradycardia)", "pl": "Zawroty głowy, wolne tętno (bradykardia)" },
+    { "hu": "Fejfájás, fáradtság, ingerlékenység tartós szedésnél", "en": "Headache, fatigue, irritability with prolonged use", "pl": "Ból głowy, zmęczenie, drażliwość przy długotrwałym stosowaniu" }
+  ],
+  "contraindications": [
+    { "hu": "Más AChE-inhibitorral (donepezil, rivastigmin, galantamin) együtt tilos: additív kolinerg toxicitás", "en": "Do not combine with other AChE inhibitors (donepezil, rivastigmine, galantamine): additive cholinergic toxicity", "pl": "Nie łączyć z innymi inhibitorami AChE (donepezil, riwastygmina, galantamina): addytywna toksyczność cholinergiczna" },
+    { "hu": "Bradikardia, szív-ingerületvezetési zavar esetén óvatosan (vagotóniás hatás)", "en": "Caution with bradycardia or cardiac conduction disorders (vagotonic effect)", "pl": "Ostrożnie przy bradykardii lub zaburzeniach przewodzenia serca (efekt wagotoniczny)" },
+    { "hu": "Asztma, COPD: a kolinerg tónus hörgőgörcsöt válthat ki", "en": "Asthma, COPD: cholinergic tone can trigger bronchospasm", "pl": "Astma, POChP: napięcie cholinergiczne może wywołać skurcz oskrzeli" },
+    { "hu": "Epilepszia / görcskészség: csökkentheti a görcsküszöböt", "en": "Epilepsy / seizure susceptibility: may lower seizure threshold", "pl": "Padaczka / skłonność do drgawek: może obniżać próg drgawkowy" },
+    { "hu": "Peptikus fekély vagy gyomor-bél obstrukció esetén kerülendő", "en": "Avoid with peptic ulcer or gastrointestinal obstruction", "pl": "Unikać przy chorobie wrzodowej lub niedrożności przewodu pokarmowego" },
+    { "hu": "Terhesség, szoptatás alatt nem ajánlott; hosszú felezési idő miatt cycling kötelező (2-4 hét on / off)", "en": "Not advised in pregnancy or breastfeeding; cycling required due to long half-life (2-4 weeks on / off)", "pl": "Niewskazany w ciąży i podczas karmienia; ze względu na długi okres półtrwania wymagane cyklowanie (2-4 tyg. on / off)" }
+  ],
   "name": "Huperzine-A",
   "image": null,
   "accentColor": "#06b6d4",

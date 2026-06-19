@@ -3,6 +3,20 @@
 
 export default {
   "id": "bacopa",
+  "sideEffects": [
+    { "hu": "Gastrointestinális diszkomfort: hányinger, hasi görcs, fokozott bélmozgás és híg széklet, főleg üres gyomorra szedve", "en": "Gastrointestinal discomfort: nausea, abdominal cramping, increased bowel motility and loose stools, especially on an empty stomach", "pl": "Dyskomfort żołądkowo-jelitowy: nudności, skurcze brzucha, wzmożona perystaltyka i luźne stolce, zwłaszcza na czczo" },
+    { "hu": "Szájszárazság és fokozott szomjúság (cholinerg hatás)", "en": "Dry mouth and increased thirst (cholinergic effect)", "pl": "Suchość w ustach i wzmożone pragnienie (efekt cholinergiczny)" },
+    { "hu": "Fáradtság, sedáció vagy mentális „lassúság\" érzése, k: szerotonerg lassítás", "en": "Fatigue, sedation or a feeling of mental slowness, linked to serotonergic dampening", "pl": "Zmęczenie, sedacja lub uczucie spowolnienia umysłowego, związane z wyciszeniem serotoninergicznym" },
+    { "hu": "Étvágycsökkenés vagy enyhe gyomorpanasz", "en": "Reduced appetite or mild stomach upset", "pl": "Zmniejszony apetyt lub łagodne dolegliwości żołądkowe" },
+    { "hu": "Krónikus szedésnél fejfájás vagy szédülés (ritka, egyéni érzékenység)", "en": "Headache or dizziness with chronic use (rare, individual sensitivity)", "pl": "Ból głowy lub zawroty głowy przy przewlekłym stosowaniu (rzadko, indywidualna wrażliwość)" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás: nincs elegendő biztonságossági adat, kerülendő", "en": "Pregnancy and breastfeeding: insufficient safety data, avoid", "pl": "Ciąża i karmienie piersią: niewystarczające dane dotyczące bezpieczeństwa, unikać" },
+    { "hu": "Pajzsmirigy-betegség: a bakozidok növelhetik a T4-szintet, óvatosság hyperthyreosisban és pajzsmirigy-gyógyszer mellett", "en": "Thyroid disorders: bacosides may raise T4 levels, caution in hyperthyroidism and with thyroid medication", "pl": "Choroby tarczycy: bakozydy mogą podnosić poziom T4, ostrożność w nadczynności i przy lekach tarczycowych" },
+    { "hu": "Bradycardia és cholinerg gyógyszerek: additív szívfrekvencia-csökkenés, óvatosság béta-blokkoló és kalciumcsatorna-blokkoló mellett", "en": "Bradycardia and cholinergic drugs: additive heart-rate slowing, caution with beta blockers and calcium channel blockers", "pl": "Bradykardia i leki cholinergiczne: addytywne zwolnienie rytmu serca, ostrożność z beta-blokerami i blokerami kanału wapniowego" },
+    { "hu": "Gyomor-bélfekély vagy bélelzáródás: a fokozott szekréció és motilitás súlyosbíthatja", "en": "Peptic ulcer or bowel obstruction: increased secretion and motility may worsen it", "pl": "Wrzód trawienny lub niedrożność jelit: wzmożona sekrecja i motoryka mogą nasilić objawy" },
+    { "hu": "Szedatívumokkal és anticholinerg szerekkel való kölcsönhatás: fokozott sedáció, illetve a hatás kioltása", "en": "Interaction with sedatives and anticholinergic agents: increased sedation or counteracted effect", "pl": "Interakcja z lekami uspokajającymi i antycholinergicznymi: nasilona sedacja lub zniesienie działania" }
+  ],
   "name": "Bacopa monnieri",
   "image": null,
   "accentColor": "#84cc16",

@@ -3,6 +3,20 @@
 
 export default {
   "id": "l-theanine",
+  "sideEffects": [
+    { "hu": "Fejfájás, főleg magasabb (>400 mg) dózisoknál", "en": "Headache, mainly at higher (>400 mg) doses", "pl": "Ból głowy, głównie przy wyższych dawkach (>400 mg)" },
+    { "hu": "Enyhe szédülés, bódultság érzékeny egyéneknél", "en": "Mild dizziness or lightheadedness in sensitive individuals", "pl": "Łagodne zawroty głowy lub uczucie oszołomienia u osób wrażliwych" },
+    { "hu": "Enyhe álmosság, nyugtató hatás nagyobb adagnál", "en": "Mild drowsiness or sedation at larger doses", "pl": "Łagodna senność lub działanie uspokajające przy większych dawkach" },
+    { "hu": "Enyhe emésztési panaszok, hányinger üres gyomorra", "en": "Mild GI upset or nausea on an empty stomach", "pl": "Łagodne dolegliwości żołądkowe lub nudności na czczo" },
+    { "hu": "Kismértékű vérnyomáscsökkenés", "en": "Slight lowering of blood pressure", "pl": "Niewielkie obniżenie ciśnienia krwi" }
+  ],
+  "contraindications": [
+    { "hu": "Vérnyomáscsökkentő gyógyszerek, additív hipotenzív hatás miatt", "en": "Antihypertensive medication, due to additive blood-pressure-lowering effect", "pl": "Leki obniżające ciśnienie, ze względu na addytywne działanie hipotensyjne" },
+    { "hu": "Eleve alacsony vérnyomás, óvatosság javasolt", "en": "Pre-existing low blood pressure, caution advised", "pl": "Istniejące niskie ciśnienie krwi, zalecana ostrożność" },
+    { "hu": "Nyugtatók, CNS-depresszánsok, fokozott szedáció lehetséges", "en": "Sedatives or CNS depressants, additive sedation possible", "pl": "Leki uspokajające lub depresanty OUN, możliwe nasilenie sedacji" },
+    { "hu": "Stimulánsokkal együtt mérsékelheti azok hatását", "en": "May blunt the effect of stimulants when taken together", "pl": "Może osłabiać działanie stymulantów przy jednoczesnym stosowaniu" },
+    { "hu": "Terhesség és szoptatás, elégtelen biztonsági adat miatt", "en": "Pregnancy and breastfeeding, due to insufficient safety data", "pl": "Ciąża i karmienie piersią, ze względu na niewystarczające dane bezpieczeństwa" }
+  ],
   "name": "L-Theanine",
   "image": null,
   "accentColor": "#84cc16",

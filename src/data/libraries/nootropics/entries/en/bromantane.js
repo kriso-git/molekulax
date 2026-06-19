@@ -3,6 +3,23 @@
 
 export default {
   "id": "bromantane",
+  "sideEffects": [
+    { "hu": "Alvászavar, álmatlanság (főleg esti szedéssel, a dopaminerg aktiváció miatt)", "en": "Sleep disturbance, insomnia (especially with evening dosing, due to dopaminergic activation)", "pl": "Zaburzenia snu, bezsenność (zwłaszcza przy wieczornym dawkowaniu, z powodu aktywacji dopaminergicznej)" },
+    { "hu": "Ingerlékenység, nyugtalanság", "en": "Irritability, restlessness", "pl": "Drażliwość, niepokój" },
+    { "hu": "Enyhe szájszárazság", "en": "Mild dry mouth", "pl": "Łagodna suchość w ustach" },
+    { "hu": "Fejfájás", "en": "Headache", "pl": "Ból głowy" },
+    { "hu": "Magas dózisnál (>200 mg/nap) étvágycsökkenés és fokozott szomjúság", "en": "Appetite loss and increased thirst at high doses (>200 mg/day)", "pl": "Utrata apetytu i wzmożone pragnienie przy wysokich dawkach (>200 mg/dziennie)" },
+    { "hu": "Tolerancia kialakulása hosszú kúrával, cycle-off szükséges", "en": "Tolerance with prolonged use, requiring cycling off", "pl": "Tolerancja przy długotrwałym stosowaniu, wymagająca przerw w cyklu" },
+    { "hu": "Egyéni variabilitás: egyeseknél enyhe szedáció a stimuláció helyett", "en": "Individual variability: mild sedation rather than stimulation in some users", "pl": "Zmienność osobnicza: u niektórych łagodna sedacja zamiast stymulacji" }
+  ],
+  "contraindications": [
+    { "hu": "MAO-gátlókkal együtt kerülendő (szerotonin-szindróma és hipertenzív krízis kockázata)", "en": "Avoid with MAO inhibitors (risk of serotonin syndrome and hypertensive crisis)", "pl": "Unikać z inhibitorami MAO (ryzyko zespołu serotoninowego i przełomu nadciśnieniowego)" },
+    { "hu": "Terhesség és szoptatás (humán biztonsági adatok hiányoznak)", "en": "Pregnancy and breastfeeding (no human safety data)", "pl": "Ciąża i karmienie piersią (brak danych dotyczących bezpieczeństwa u ludzi)" },
+    { "hu": "Bipoláris zavar (a dopaminerg aktiváció mániás epizódot indukálhat)", "en": "Bipolar disorder (dopaminergic activation may trigger a manic episode)", "pl": "Choroba afektywna dwubiegunowa (aktywacja dopaminergiczna może wywołać epizod maniakalny)" },
+    { "hu": "Aktív pszichotikus zavar (dopaminerg túlserkentés súlyosbíthatja a tüneteket)", "en": "Active psychotic disorder (dopaminergic overstimulation may worsen symptoms)", "pl": "Aktywne zaburzenie psychotyczne (nadmierna stymulacja dopaminergiczna może nasilić objawy)" },
+    { "hu": "Súlyos szív- vagy májbetegség", "en": "Severe cardiovascular or hepatic disease", "pl": "Ciężka choroba sercowo-naczyniowa lub wątroby" },
+    { "hu": "Versenysportolóknak tiltott (WADA S0, nem-jóváhagyott szerek)", "en": "Prohibited for competitive athletes (WADA S0, non-approved substances)", "pl": "Zakazane dla sportowców wyczynowych (WADA S0, substancje niezatwierdzone)" }
+  ],
   "name": "Bromantane",
   "image": null,
   "accentColor": "#f43f5e",

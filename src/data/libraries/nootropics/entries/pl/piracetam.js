@@ -3,6 +3,21 @@
 
 export default {
   "id": "piracetam",
+  "sideEffects": [
+    { "hu": "Kolinerg fejfájás, kolinhiány esetén gyakori, cholinforrással (Alpha-GPC/CDP-kolin) mérsékelhető", "en": "Cholinergic headache, common with low choline, mitigated by a choline source (Alpha-GPC/CDP-choline)", "pl": "Cholinergiczny ból głowy, częsty przy niedoborze choliny, łagodzony źródłem choliny (Alpha-GPC/CDP-cholina)" },
+    { "hu": "Idegesség, irritáció és szorongás, főleg magasabb dózisnál", "en": "Nervousness, irritability and anxiety, mainly at higher doses", "pl": "Nerwowość, drażliwość i lęk, głównie przy wyższych dawkach" },
+    { "hu": "Álmatlanság vagy alvászavar, ha estefelé szedik", "en": "Insomnia or disturbed sleep when taken late in the day", "pl": "Bezsenność lub zaburzenia snu przy przyjmowaniu wieczorem" },
+    { "hu": "Emésztőrendszeri panaszok: hányinger, hasi diszkomfort, hasmenés", "en": "Gastrointestinal complaints: nausea, abdominal discomfort, diarrhea", "pl": "Dolegliwości żołądkowo-jelitowe: nudności, dyskomfort brzucha, biegunka" },
+    { "hu": "Agitáció, hiperkinézia és nyugtalanság, ritkábban aluszékonyság", "en": "Agitation, hyperkinesia and restlessness, less often somnolence", "pl": "Pobudzenie, hiperkinezja i niepokój, rzadziej senność" },
+    { "hu": "Testsúlygyarapodás, klinikai vizsgálatokban dokumentálva", "en": "Weight gain, documented in clinical trials", "pl": "Przyrost masy ciała, udokumentowany w badaniach klinicznych" }
+  ],
+  "contraindications": [
+    { "hu": "Súlyos veseelégtelenség: a piracetam renálisan ürül, dóziscsökkentés szükséges, végstádiumú vesebetegségben kontraindikált", "en": "Severe renal impairment: piracetam is renally excreted, dose reduction needed, contraindicated in end-stage renal disease", "pl": "Ciężka niewydolność nerek: piracetam wydalany jest przez nerki, konieczna redukcja dawki, przeciwwskazany w schyłkowej niewydolności nerek" },
+    { "hu": "Huntington-betegség és chorea: ronthatja a tüneteket, kontraindikált", "en": "Huntington's disease and chorea: may worsen symptoms, contraindicated", "pl": "Choroba Huntingtona i pląsawica: może nasilać objawy, przeciwwskazany" },
+    { "hu": "Agyi vérzés vagy hemorrágiás stroke: vérlemezke-aggregációt gátló hatása miatt kerülendő", "en": "Cerebral hemorrhage or hemorrhagic stroke: avoid due to its platelet-aggregation inhibiting effect", "pl": "Krwotok mózgowy lub udar krwotoczny: unikać ze względu na hamowanie agregacji płytek" },
+    { "hu": "Antikoagulánsok és vérlemezke-gátlók (warfarin, aszpirin, NSAID): fokozott vérzéskockázat, műtét előtt 1-2 héttel leállítás", "en": "Anticoagulants and antiplatelets (warfarin, aspirin, NSAIDs): increased bleeding risk, stop 1-2 weeks before surgery", "pl": "Antykoagulanty i leki przeciwpłytkowe (warfaryna, aspiryna, NLPZ): zwiększone ryzyko krwawienia, odstawić 1-2 tygodnie przed operacją" },
+    { "hu": "Terhesség és szoptatás: nem áll rendelkezésre elegendő biztonságossági adat, kerülendő", "en": "Pregnancy and breastfeeding: insufficient safety data, avoid", "pl": "Ciąża i karmienie piersią: niewystarczające dane dotyczące bezpieczeństwa, unikać" }
+  ],
   "name": "Piracetam",
   "image": null,
   "accentColor": "#a78bfa",

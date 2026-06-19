@@ -3,6 +3,22 @@
 
 export default {
   "id": "phenylpiracetam",
+  "sideEffects": [
+    { "hu": "Álmatlanság és alvászavar, főleg délutáni bevétel esetén (stimuláns jelleg)", "en": "Insomnia and disrupted sleep, especially with afternoon dosing (stimulant nature)", "pl": "Bezsenność i zaburzenia snu, zwłaszcza przy popołudniowym dawkowaniu (działanie stymulujące)" },
+    { "hu": "Fejfájás, gyakran kolinhiányból (racetam-rész, kolinforrással mérsékelhető)", "en": "Headache, often from choline depletion (racetam component, eased by a choline source)", "pl": "Ból głowy, często z niedoboru choliny (komponent racetamowy, łagodzony źródłem choliny)" },
+    { "hu": "Ingerlékenység és szorongás, idegesség (dopaminerg/noradrenerg stimuláció)", "en": "Irritability and anxiety, jitteriness (dopaminergic/noradrenergic stimulation)", "pl": "Drażliwość i lęk, nerwowość (stymulacja dopaminergiczna/noradrenergiczna)" },
+    { "hu": "Szapora szívverés és palpitáció, enyhe vérnyomás-emelkedés", "en": "Rapid heartbeat and palpitations, mild blood pressure rise", "pl": "Przyspieszone bicie serca i kołatanie, łagodny wzrost ciśnienia" },
+    { "hu": "Gyors tolerancia-fejlődés napi szedéssel, csökkenő hatás", "en": "Rapid tolerance with daily use, diminishing effect", "pl": "Szybki rozwój tolerancji przy codziennym stosowaniu, słabnący efekt" },
+    { "hu": "Étvágycsökkenés és enyhe gyomor-bélrendszeri panaszok", "en": "Appetite suppression and mild gastrointestinal discomfort", "pl": "Zmniejszenie apetytu i łagodne dolegliwości żołądkowo-jelitowe" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás, hiányos biztonsági adatok miatt kerülendő", "en": "Pregnancy and breastfeeding, avoid due to insufficient safety data", "pl": "Ciąża i karmienie piersią, unikać z powodu braku danych o bezpieczeństwie" },
+    { "hu": "MAO-gátlókkal együtt szigorúan kerülendő (hipertenzív krízis kockázata)", "en": "Strictly avoid with MAO inhibitors (risk of hypertensive crisis)", "pl": "Bezwzględnie unikać z inhibitorami MAO (ryzyko przełomu nadciśnieniowego)" },
+    { "hu": "Más stimulánsokkal (koffein, amfetaminok) additív tachycardia és vérnyomás-emelkedés", "en": "Additive tachycardia and blood pressure rise with other stimulants (caffeine, amphetamines)", "pl": "Addytywna tachykardia i wzrost ciśnienia z innymi stymulantami (kofeina, amfetaminy)" },
+    { "hu": "Instabil szívbetegség, aritmia, súlyos hipertónia esetén kerülendő", "en": "Avoid with unstable cardiac disease, arrhythmia, severe hypertension", "pl": "Unikać przy niestabilnej chorobie serca, arytmii, ciężkim nadciśnieniu" },
+    { "hu": "Aktív szorongászavar és álmatlanság, a stim-jelleg súlyosbíthatja", "en": "Active anxiety disorder and insomnia, the stimulant nature may worsen them", "pl": "Aktywne zaburzenia lękowe i bezsenność, działanie stymulujące może je nasilić" },
+    { "hu": "Versenysportolóknak tiltott (WADA S6 stimuláns kategória)", "en": "Prohibited for competitive athletes (WADA S6 stimulant category)", "pl": "Zakazany dla sportowców wyczynowych (kategoria stymulantów WADA S6)" }
+  ],
   "name": "Phenylpiracetam",
   "image": null,
   "accentColor": "#a78bfa",
