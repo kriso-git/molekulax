@@ -3,6 +3,21 @@
 
 export default {
   "id": "noopept",
+  "sideEffects": [
+    { "hu": "Fejfájás, jellemzően cholin-deficit mellett (cholinforrással mérsékelhető)", "en": "Headache, typically with choline deficiency (mitigated by a choline source)", "pl": "Ból głowy, zwykle przy niedoborze choliny (łagodzony źródłem choliny)" },
+    { "hu": "Ingerlékenység, agitáció, főleg magasabb dózisnál (>40 mg/nap)", "en": "Irritability, agitation, especially at higher doses (>40 mg/day)", "pl": "Drażliwość, pobudzenie, zwłaszcza przy wyższych dawkach (>40 mg/dobę)" },
+    { "hu": "Álmatlanság, alvászavar, ha késő délután szedik", "en": "Insomnia, disturbed sleep if taken late in the day", "pl": "Bezsenność, zaburzenia snu przy zażyciu późnym popołudniem" },
+    { "hu": "Túlingerlés, fókuszálatlanság, a jel-zaj zaj-komponensének felerősödése", "en": "Overstimulation, scattered focus, amplification of the signal-to-noise noise component", "pl": "Nadmierna stymulacja, rozproszenie uwagi, wzmocnienie składnika szumu sygnału" },
+    { "hu": "Enyhe szédülés vagy fáradtság egyes felhasználóknál", "en": "Mild dizziness or fatigue in some users", "pl": "Łagodne zawroty głowy lub zmęczenie u niektórych użytkowników" },
+    { "hu": "Tolerancia és hatáscsökkenés folyamatos, ciklus nélküli szedésnél", "en": "Tolerance and reduced effect with continuous, non-cycled use", "pl": "Tolerancja i osłabienie efektu przy ciągłym stosowaniu bez cykli" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás (humán biztonsági adatok hiányoznak)", "en": "Pregnancy and breastfeeding (human safety data lacking)", "pl": "Ciąża i karmienie piersią (brak danych o bezpieczeństwie u ludzi)" },
+    { "hu": "Bipoláris spektrum-zavar: agitáció, ingerlékenység, mániás váltás kockázata", "en": "Bipolar spectrum disorder: risk of agitation, irritability, manic switch", "pl": "Zaburzenia ze spektrum dwubiegunowego: ryzyko pobudzenia, drażliwości, przejścia w manię" },
+    { "hu": "Súlyos vese- vagy májelégtelenség (metabolizmus és kiürülés érintett)", "en": "Severe renal or hepatic impairment (metabolism and clearance affected)", "pl": "Ciężka niewydolność nerek lub wątroby (zaburzony metabolizm i eliminacja)" },
+    { "hu": "Egyidejű alkoholfogyasztás: fokozott szedáció", "en": "Concurrent alcohol use: increased sedation", "pl": "Jednoczesne spożycie alkoholu: nasilona sedacja" },
+    { "hu": "Magas vérnyomás: vérnyomás-monitorozás javasolt szedés alatt", "en": "Hypertension: blood pressure monitoring advised during use", "pl": "Nadciśnienie: zalecane monitorowanie ciśnienia w trakcie stosowania" }
+  ],
   "name": "Noopept",
   "image": null,
   "accentColor": "#a78bfa",

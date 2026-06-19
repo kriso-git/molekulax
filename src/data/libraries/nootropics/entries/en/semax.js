@@ -3,6 +3,22 @@
 
 export default {
   "id": "semax",
+  "sideEffects": [
+    { "hu": "Orrnyálkahártya-irritáció, csípő vagy száraz érzés az intranazális adagolás helyén", "en": "Nasal mucosa irritation, stinging or dryness at the intranasal application site", "pl": "Podrażnienie błony śluzowej nosa, pieczenie lub suchość w miejscu donosowego podania" },
+    { "hu": "Fejfájás, főleg magasabb dózisnál", "en": "Headache, especially at higher doses", "pl": "Ból głowy, zwłaszcza przy wyższych dawkach" },
+    { "hu": "Túlserkentés, ingerlékenység vagy nyugtalanság (dopaminerg/szerotonerg tónus emelkedés)", "en": "Overstimulation, irritability or restlessness (raised dopaminergic/serotonergic tone)", "pl": "Nadmierna stymulacja, drażliwość lub niepokój (podwyższony ton dopaminergiczny/serotoninergiczny)" },
+    { "hu": "Alvászavar, ha késő délután vagy este adják be", "en": "Disrupted sleep if taken in the late afternoon or evening", "pl": "Zaburzenia snu przy podaniu późnym popołudniem lub wieczorem" },
+    { "hu": "Átmeneti vérnyomás-emelkedés érzékeny egyéneknél (ACTH-fragmens analóg jelleg)", "en": "Transient blood-pressure rise in sensitive individuals (ACTH-fragment analog nature)", "pl": "Przejściowy wzrost ciśnienia krwi u osób wrażliwych (natura analogu fragmentu ACTH)" },
+    { "hu": "Hajritkulás/hajhullás-jelentések közösségi forrásból (feltételezett BDNF szőrtüsző-ciklus hatás, nem klinikailag igazolt)", "en": "Anecdotal hair thinning/shedding reports (presumed BDNF hair-follicle-cycle effect, not clinically confirmed)", "pl": "Anegdotyczne zgłoszenia przerzedzenia/wypadania włosów (domniemany wpływ BDNF na cykl mieszka włosowego, niepotwierdzony klinicznie)" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás (peptid-specifikus humán biztonsági adat hiányzik)", "en": "Pregnancy and breastfeeding (peptide-specific human safety data lacking)", "pl": "Ciąża i karmienie piersią (brak danych dotyczących bezpieczeństwa dla tego peptydu u ludzi)" },
+    { "hu": "MAO-gátlóval való együttszedés kerülendő (szerotonerg potencírozás kockázata)", "en": "Avoid combining with MAO inhibitors (risk of serotonergic potentiation)", "pl": "Unikać łączenia z inhibitorami MAO (ryzyko nasilenia działania serotoninergicznego)" },
+    { "hu": "Aktív skizofrénia, mánia vagy bipoláris spektrum (dopaminerg túlserkentés, mánia-trigger kockázat)", "en": "Active schizophrenia, mania or bipolar spectrum (dopaminergic overstimulation, mania-trigger risk)", "pl": "Aktywna schizofrenia, mania lub spektrum dwubiegunowe (nadmierna stymulacja dopaminergiczna, ryzyko wyzwolenia manii)" },
+    { "hu": "SSRI/SNRI vagy stimulánsok mellett óvatosság és klinikai monitorozás (additív szerotonerg/serkentő hatás)", "en": "Caution and clinical monitoring with SSRIs/SNRIs or stimulants (additive serotonergic/stimulant effect)", "pl": "Ostrożność i monitorowanie kliniczne przy SSRI/SNRI lub stymulantach (addytywne działanie serotoninergiczne/stymulujące)" },
+    { "hu": "Ismert túlérzékenység a Semax-ra vagy ACTH-fragmens analógokra", "en": "Known hypersensitivity to Semax or ACTH-fragment analogs", "pl": "Znana nadwrażliwość na Semax lub analogi fragmentów ACTH" },
+    { "hu": "Melanokortin-receptor-érzékeny tumorok, pl. aktív melanóma (elméleti, az ACTH-analóg jelleg miatt)", "en": "Melanocortin-receptor-sensitive tumors, e.g. active melanoma (theoretical, due to ACTH-analog nature)", "pl": "Guzy wrażliwe na receptor melanokortyny, np. aktywny czerniak (teoretyczne, ze względu na naturę analogu ACTH)" }
+  ],
   "name": "Semax",
   "image": null,
   "accentColor": "#00ff99",

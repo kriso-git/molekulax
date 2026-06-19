@@ -3,6 +3,23 @@
 
 export default {
   "id": "paraxanthine",
+  "sideEffects": [
+    { "hu": "Álmatlanság vagy alvászavar, ha túl későn adagolják (stimuláns hatás)", "en": "Insomnia or disrupted sleep if dosed too late in the day (stimulant effect)", "pl": "Bezsenność lub zaburzenia snu przy zbyt późnym dawkowaniu (efekt stymulujący)" },
+    { "hu": "Szapora vagy erős szívverés, enyhe vérnyomás-emelkedés", "en": "Increased heart rate or palpitations, mild rise in blood pressure", "pl": "Przyspieszone bicie serca lub kołatanie, niewielki wzrost ciśnienia" },
+    { "hu": "Nyugtalanság, remegés, főleg magasabb dózisban", "en": "Jitteriness or tremor, especially at higher doses", "pl": "Niepokój lub drżenie, zwłaszcza przy wyższych dawkach" },
+    { "hu": "Fejfájás, illetve elhagyáskor rebound-fejfájás", "en": "Headache, including rebound headache on withdrawal", "pl": "Ból głowy, w tym ból odstawienny po zaprzestaniu" },
+    { "hu": "Gyomorpanasz, hányinger, fokozott gyomorsav-termelés", "en": "Stomach upset, nausea, increased gastric acid", "pl": "Dolegliwości żołądkowe, nudności, zwiększone wydzielanie kwasu" },
+    { "hu": "Fokozott vizeletürítés (enyhe diuretikus hatás)", "en": "Increased urination (mild diuretic effect)", "pl": "Zwiększone oddawanie moczu (łagodne działanie moczopędne)" },
+    { "hu": "Szorongás, bár a koffeinnél jellemzően enyhébb mértékben", "en": "Anxiety, though typically milder than with caffeine", "pl": "Lęk, choć zwykle łagodniejszy niż przy kofeinie" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás: kerülendő, mint minden metilxantin-stimuláns", "en": "Pregnancy and breastfeeding: avoid, as with all methylxanthine stimulants", "pl": "Ciąża i karmienie piersią: unikać, jak przy wszystkich stymulantach metyloksantynowych" },
+    { "hu": "Szív- és érrendszeri betegség, ritmuszavar, kontrollálatlan magas vérnyomás", "en": "Cardiovascular disease, arrhythmia, uncontrolled hypertension", "pl": "Choroby układu krążenia, arytmia, niekontrolowane nadciśnienie" },
+    { "hu": "Szorongásos zavarok, pánikbetegség: stimuláns hatás súlyosbíthatja", "en": "Anxiety disorders, panic disorder: stimulant effect may worsen them", "pl": "Zaburzenia lękowe, napady paniki: działanie stymulujące może je nasilać" },
+    { "hu": "Más koffein- vagy stimuláns-forrásokkal együtt halmozódó hatás", "en": "Additive effect when combined with other caffeine or stimulant sources", "pl": "Efekt sumujący się przy łączeniu z innymi źródłami kofeiny lub stymulantów" },
+    { "hu": "CYP1A2-t gátló szerek (pl. fluvoxamin, ciprofloxacin) lassítják a lebontását", "en": "CYP1A2-inhibiting drugs (e.g. fluvoxamine, ciprofloxacin) slow its clearance", "pl": "Leki hamujące CYP1A2 (np. fluwoksamina, cyprofloksacyna) spowalniają jego eliminację" },
+    { "hu": "Késő esti adagolás kerülendő az alvászavar miatt", "en": "Avoid late-evening dosing due to sleep disruption", "pl": "Unikać dawkowania późnym wieczorem ze względu na zaburzenia snu" }
+  ],
   "name": "Paraxanthine",
   "image": null,
   "accentColor": "#fbbf24",

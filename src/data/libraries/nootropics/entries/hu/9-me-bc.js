@@ -3,6 +3,22 @@
 
 export default {
   "id": "9-me-bc",
+  "sideEffects": [
+    { "hu": "Korlátozott humán biztonsági adat: a hatások többsége in vitro és állatmodellből származik", "en": "Limited human safety data: most effects derive from in vitro and animal models", "pl": "Ograniczone dane o bezpieczeństwie u ludzi: większość efektów pochodzi z badań in vitro i na zwierzętach" },
+    { "hu": "Fényérzékenység, gyorsabb napégés (béta-karbolin váz UV-interakciója)", "en": "Photosensitivity, faster sunburn (beta-carboline scaffold interacts with UV light)", "pl": "Nadwrażliwość na światło, szybsze oparzenia słoneczne (szkielet beta-karboliny reaguje z UV)" },
+    { "hu": "Érzelmi tompulás, ellaposodás hosszabb használat után (anekdotikus)", "en": "Emotional blunting or flattening after prolonged use (anecdotal)", "pl": "Stępienie lub spłaszczenie emocji po dłuższym stosowaniu (anegdotycznie)" },
+    { "hu": "Dopaminerg túlserkentés: nyugtalanság, álmatlanság, stim-jelleg magasabb dózison", "en": "Dopaminergic overstimulation: restlessness, insomnia, stimulant-like feel at higher doses", "pl": "Nadmierna stymulacja dopaminergiczna: niepokój, bezsenność, efekt stymulujący przy wyższych dawkach" },
+    { "hu": "Tyramin-reakció lehetősége (MAO-B-szelektív, de nem nulla kockázat): fejfájás, vérnyomás-emelkedés", "en": "Possible tyramine reaction (MAO-B selective, but not zero risk): headache, blood pressure rise", "pl": "Możliwa reakcja tyraminowa (selektywny MAO-B, ale ryzyko niezerowe): ból głowy, wzrost ciśnienia" },
+    { "hu": "Ismeretlen hosszú távú biztonságosság, krónikus napi szedés nem jellemzett", "en": "Unknown long-term safety, chronic daily use uncharacterized", "pl": "Nieznane bezpieczeństwo długoterminowe, przewlekłe codzienne stosowanie niezbadane" }
+  ],
+  "contraindications": [
+    { "hu": "MAOI, SSRI, SNRI együttszedés tilos: szerotonin-szindróma és hypertenzív krízis veszélye", "en": "Do not combine with MAOIs, SSRIs, SNRIs: risk of serotonin syndrome and hypertensive crisis", "pl": "Nie łączyć z MAOI, SSRI, SNRI: ryzyko zespołu serotoninowego i przełomu nadciśnieniowego" },
+    { "hu": "Tyramin-gazdag ételek (érlelt sajt, vörösbor, pácolt hús) kerülendők a kúra alatt", "en": "Avoid tyramine-rich foods (aged cheese, red wine, cured meat) during use", "pl": "Unikać pokarmów bogatych w tyraminę (dojrzewający ser, czerwone wino, peklowane mięso) podczas stosowania" },
+    { "hu": "Direkt UV-/napfény-expozíció kerülendő (fotoszenzitivitás): SPF 50+ ajánlott", "en": "Avoid direct UV/sun exposure (photosensitivity): SPF 50+ recommended", "pl": "Unikać bezpośredniej ekspozycji na UV/słońce (nadwrażliwość na światło): zalecany SPF 50+" },
+    { "hu": "Stimulánsokkal additív dopaminerg túlserkentés: ne kombináld stimulánsokkal", "en": "Additive dopaminergic overstimulation with stimulants: do not combine with stimulants", "pl": "Addytywna nadmierna stymulacja dopaminergiczna ze stymulantami: nie łączyć ze stymulantami" },
+    { "hu": "Terhesség, szoptatás alatt kerülendő (nincs biztonsági adat)", "en": "Avoid during pregnancy and breastfeeding (no safety data)", "pl": "Unikać w ciąży i podczas karmienia piersią (brak danych o bezpieczeństwie)" },
+    { "hu": "Aktív pszichiátriai krízis, mánia spektrum esetén kerülendő", "en": "Avoid in active psychiatric crisis or mania spectrum", "pl": "Unikać w czynnym kryzysie psychiatrycznym lub spektrum manii" }
+  ],
   "name": "9-Me-BC",
   "image": null,
   "accentColor": "#f43f5e",

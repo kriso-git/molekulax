@@ -3,6 +3,22 @@
 
 export default {
   "id": "cerebrolysin",
+  "sideEffects": [
+    { "hu": "Szédülés, vertigo és fejfájás", "en": "Dizziness, vertigo and headache", "pl": "Zawroty głowy, vertigo i ból głowy" },
+    { "hu": "Túl gyors infúziónál hőhullám, izzadás, palpitáció", "en": "Heat sensation, sweating, palpitations with too-rapid infusion", "pl": "Uczucie gorąca, pocenie i kołatanie serca przy zbyt szybkim wlewie" },
+    { "hu": "Agitáltság, nyugtalanság, ritkán álmatlanság vagy alvászavar", "en": "Agitation, restlessness, occasionally insomnia or sleep disturbance", "pl": "Pobudzenie, niepokój, rzadziej bezsenność lub zaburzenia snu" },
+    { "hu": "Hányinger, hányás, étvágytalanság, hasmenés", "en": "Nausea, vomiting, loss of appetite, diarrhoea", "pl": "Nudności, wymioty, utrata apetytu, biegunka" },
+    { "hu": "Beadás helyén lokális reakció, kipirulás", "en": "Local injection-site reaction, flushing", "pl": "Miejscowa reakcja w miejscu wstrzyknięcia, zaczerwienienie" },
+    { "hu": "Ritkán túlérzékenységi/allergiás reakció (kiütés, viszketés)", "en": "Rare hypersensitivity/allergic reaction (rash, itching)", "pl": "Rzadko reakcja nadwrażliwości/alergiczna (wysypka, świąd)" }
+  ],
+  "contraindications": [
+    { "hu": "A peptidkészítménnyel szembeni ismert túlérzékenység", "en": "Known hypersensitivity to the peptide preparation", "pl": "Znana nadwrażliwość na preparat peptydowy" },
+    { "hu": "Status epilepticus és grand mal rohamok (csökkentheti a görcsküszöböt)", "en": "Status epilepticus and grand mal seizures (may lower seizure threshold)", "pl": "Stan padaczkowy i napady grand mal (może obniżać próg drgawkowy)" },
+    { "hu": "Súlyos veseelégtelenség", "en": "Severe renal impairment", "pl": "Ciężka niewydolność nerek" },
+    { "hu": "Terhesség és szoptatás (nincs elegendő biztonságossági adat)", "en": "Pregnancy and breastfeeding (insufficient safety data)", "pl": "Ciąża i karmienie piersią (niewystarczające dane o bezpieczeństwie)" },
+    { "hu": "Antidepresszánsok/MAO-gátlók egyidejű adása: additív hatás miatt dóziskiigazítás javasolt", "en": "Concurrent antidepressants/MAO inhibitors: dose adjustment advised due to additive effects", "pl": "Jednoczesne leki przeciwdepresyjne/inhibitory MAO: zalecana korekta dawki ze względu na efekt addytywny" },
+    { "hu": "Csak lassú i.v./i.m. beadás, balansztott aminosav-infúzióval nem keverhető", "en": "Slow i.v./i.m. administration only; not to be mixed with balanced amino-acid infusions", "pl": "Tylko powolne podanie i.v./i.m.; nie mieszać z wlewami zbilansowanych aminokwasów" }
+  ],
   "name": "Cerebrolysin",
   "image": null,
   "accentColor": "#00ff99",

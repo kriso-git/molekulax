@@ -3,6 +3,23 @@
 
 export default {
   "id": "modafinil",
+  "sideEffects": [
+    { "hu": "Fejfájás (a leggyakoribb mellékhatás, dózisfüggő)", "en": "Headache (most common side effect, dose-dependent)", "pl": "Ból głowy (najczęstszy efekt uboczny, zależny od dawki)" },
+    { "hu": "Álmatlanság, alvászavar (főleg késő délutáni bevételnél)", "en": "Insomnia, sleep disturbance (especially with late-afternoon dosing)", "pl": "Bezsenność, zaburzenia snu (zwłaszcza przy dawkowaniu późnym popołudniem)" },
+    { "hu": "Szorongás, idegesség, ingerlékenység", "en": "Anxiety, nervousness, irritability", "pl": "Lęk, nerwowość, drażliwość" },
+    { "hu": "Étvágycsökkenés, hányinger, szájszárazság", "en": "Decreased appetite, nausea, dry mouth", "pl": "Zmniejszony apetyt, nudności, suchość w ustach" },
+    { "hu": "Enyhe vérnyomás- és pulzusemelkedés, szívdobogásérzés", "en": "Mild increase in blood pressure and heart rate, palpitations", "pl": "Łagodny wzrost ciśnienia krwi i tętna, kołatanie serca" },
+    { "hu": "Ritka, de súlyos bőrreakciók (SJS, TEN, DRESS, FDA boxed warning)", "en": "Rare but serious skin reactions (SJS, TEN, DRESS, FDA boxed warning)", "pl": "Rzadkie, ale poważne reakcje skórne (SJS, TEN, DRESS, ostrzeżenie FDA)" },
+    { "hu": "Tolerancia és pszichológiai függőség krónikus napi használatnál", "en": "Tolerance and psychological dependence with chronic daily use", "pl": "Tolerancja i zależność psychiczna przy przewlekłym codziennym stosowaniu" }
+  ],
+  "contraindications": [
+    { "hu": "Súlyos szívbetegség: instabil angina, aritmia, bal kamrai hipertrófia, korábbi stimuláns-asszociált szívizomzavar (FDA Provigil címke)", "en": "Serious cardiovascular disease: unstable angina, arrhythmia, left ventricular hypertrophy, prior stimulant-associated cardiac issues (FDA Provigil label)", "pl": "Poważna choroba sercowo-naczyniowa: niestabilna dławica, arytmia, przerost lewej komory, wcześniejsze problemy sercowe związane ze stymulantami (etykieta FDA)" },
+    { "hu": "Súlyos bőrreakció (SJS, TEN, DRESS) az anamnézisben vagy modafinil-túlérzékenység", "en": "History of serious skin reaction (SJS, TEN, DRESS) or modafinil hypersensitivity", "pl": "Poważna reakcja skórna (SJS, TEN, DRESS) w wywiadzie lub nadwrażliwość na modafinil" },
+    { "hu": "Hormonális fogamzásgátló: CYP3A4-indukció csökkenti a hatékonyságát, kiegészítő védekezés szükséges (a kezelés alatt és 1 hónapig utána)", "en": "Hormonal contraceptives: CYP3A4 induction reduces efficacy, backup contraception needed (during and 1 month after treatment)", "pl": "Antykoncepcja hormonalna: indukcja CYP3A4 zmniejsza skuteczność, potrzebna metoda zapasowa (w trakcie i 1 miesiąc po leczeniu)" },
+    { "hu": "Terhesség (FDA C-kategória) és szoptatás: kerülendő, korlátozott biztonságossági adat", "en": "Pregnancy (FDA category C) and breastfeeding: avoid, limited safety data", "pl": "Ciąża (kategoria C FDA) i karmienie piersią: unikać, ograniczone dane o bezpieczeństwie" },
+    { "hu": "Warfarin-interakció: INR-monitorozás szükséges; CYP2C19-gátlás megemelheti a fenitoin szintjét", "en": "Warfarin interaction: INR monitoring needed; CYP2C19 inhibition can raise phenytoin levels", "pl": "Interakcja z warfaryną: konieczne monitorowanie INR; hamowanie CYP2C19 może podnieść poziom fenytoiny" },
+    { "hu": "Kontrollálatlan magas vérnyomás; súlyos máj- vagy vesekárosodás esetén dóziscsökkentés", "en": "Uncontrolled hypertension; dose reduction with severe hepatic or renal impairment", "pl": "Niekontrolowane nadciśnienie; redukcja dawki przy ciężkim uszkodzeniu wątroby lub nerek" }
+  ],
   "name": "Modafinil",
   "image": null,
   "accentColor": "#fbbf24",

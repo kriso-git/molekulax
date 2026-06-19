@@ -3,6 +3,21 @@
 
 export default {
   "id": "coluracetam",
+  "sideEffects": [
+    { "hu": "Fejfájás, gyakran az acetilkolin-igény megnövekedése miatt (kolin-bevitellel mérsékelhető)", "en": "Headache, often from increased acetylcholine demand (can be mitigated by choline intake)", "pl": "Bóle głowy, często z powodu zwiększonego zapotrzebowania na acetylocholinę (łagodzone podażą choliny)" },
+    { "hu": "Túlzott kolinerg hatások: hányinger, gyomor-bélrendszeri panaszok", "en": "Excess cholinergic effects: nausea, gastrointestinal discomfort", "pl": "Nadmierne efekty cholinergiczne: nudności, dolegliwości żołądkowo-jelitowe" },
+    { "hu": "Szorongás, ingerlékenység, túlpörgetettség (cholinerg túlstimuláció)", "en": "Anxiety, irritability, overstimulation (cholinergic overdrive)", "pl": "Lęk, drażliwość, nadmierna stymulacja (przeciążenie cholinergiczne)" },
+    { "hu": "Rövid hatástartam miatti lezuhanás (crash) az adagok között (~3 órás felezési idő)", "en": "Crash between doses due to short duration of action (~3 hour half-life)", "pl": "Spadek formy (crash) między dawkami z powodu krótkiego działania (okres półtrwania ~3 h)" },
+    { "hu": "Fáradtság, mentális köd, ha a kolinszint kimerül", "en": "Fatigue, brain fog when choline stores become depleted", "pl": "Zmęczenie, mgła mózgowa przy wyczerpaniu zapasów choliny" },
+    { "hu": "Szublingvális alkalmazáskor kellemetlen, tartós íz", "en": "Unpleasant, lingering taste with sublingual use", "pl": "Nieprzyjemny, utrzymujący się smak przy stosowaniu podjęzykowym" }
+  ],
+  "contraindications": [
+    { "hu": "Terhesség és szoptatás: nincs biztonságossági adat, kerülendő", "en": "Pregnancy and breastfeeding: no safety data, should be avoided", "pl": "Ciąża i karmienie piersią: brak danych o bezpieczeństwie, należy unikać" },
+    { "hu": "Más kolinerg szerek (kolinészteráz-gátlók, magas dózisú kolin) együttadása additív kolinerg túlsúlyt okozhat", "en": "Combining with other cholinergics (cholinesterase inhibitors, high-dose choline) may cause additive cholinergic excess", "pl": "Łączenie z innymi cholinergikami (inhibitory cholinesterazy, wysokie dawki choliny) może powodować nadmiar cholinergiczny" },
+    { "hu": "Szorongásos zavar esetén óvatosan: a kolinerg túlstimuláció ronthatja a szorongást", "en": "Caution in anxiety disorders: cholinergic overstimulation may worsen anxiety", "pl": "Ostrożnie przy zaburzeniach lękowych: nadmierna stymulacja cholinergiczna może nasilać lęk" },
+    { "hu": "Sehol nem jóváhagyott kísérleti vegyület, nincs hosszú távú humán biztonságossági adat", "en": "Unapproved experimental compound with no long-term human safety data", "pl": "Niezatwierdzony związek eksperymentalny bez danych o długoterminowym bezpieczeństwie u ludzi" },
+    { "hu": "Depresszió kezelése alatt csak orvosi felügyelettel (Phase 2A vizsgálat nem igazolt hatékonyságot)", "en": "Only under medical supervision when treating depression (Phase 2A trial did not confirm efficacy)", "pl": "Tylko pod nadzorem lekarza przy leczeniu depresji (badanie fazy 2A nie potwierdziło skuteczności)" }
+  ],
   "name": "Coluracetam",
   "image": null,
   "accentColor": "#a78bfa",

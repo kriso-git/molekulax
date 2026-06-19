@@ -3,6 +3,23 @@
 
 export default {
   "id": "adrafinil",
+  "sideEffects": [
+    { "hu": "Fejfájás, gyakori, gyakran dózisfüggő", "en": "Headache, common and often dose-dependent", "pl": "Ból głowy, częsty, często zależny od dawki" },
+    { "hu": "Álmatlanság, alvászavar, főleg késő délutáni bevételnél", "en": "Insomnia and disrupted sleep, especially with late dosing", "pl": "Bezsenność i zaburzenia snu, zwłaszcza przy późnym dawkowaniu" },
+    { "hu": "Szájszárazság, gyomorpanasz, hányinger", "en": "Dry mouth, stomach discomfort, nausea", "pl": "Suchość w ustach, dyskomfort żołądkowy, nudności" },
+    { "hu": "Szorongás, idegesség, ingerlékenység", "en": "Anxiety, nervousness, irritability", "pl": "Lęk, nerwowość, drażliwość" },
+    { "hu": "Mérsékelt vérnyomás-emelkedés és szapora szívverés", "en": "Mild blood pressure rise and palpitations", "pl": "Łagodny wzrost ciśnienia i kołatanie serca" },
+    { "hu": "Máj-enzimek (ALT/AST) emelkedése tartós szedésnél", "en": "Elevated liver enzymes (ALT/AST) with prolonged use", "pl": "Podwyższone enzymy wątrobowe (ALT/AST) przy długotrwałym stosowaniu" },
+    { "hu": "Étvágycsökkenés", "en": "Reduced appetite", "pl": "Zmniejszony apetyt" }
+  ],
+  "contraindications": [
+    { "hu": "Máj- vagy vesebetegség, a hepatikus Modafinil-konverzió miatt fokozott kockázat, rendszeres LFT-ellenőrzés", "en": "Liver or kidney disease, higher risk due to hepatic conversion to modafinil, monitor LFTs", "pl": "Choroby wątroby lub nerek, większe ryzyko z powodu wątrobowej konwersji do modafinilu, kontrola prób wątrobowych" },
+    { "hu": "Terhesség és szoptatás", "en": "Pregnancy and breastfeeding", "pl": "Ciąża i karmienie piersią" },
+    { "hu": "Súlyos szív-érrendszeri betegség, aritmia, instabil angina, kontrollálatlan magas vérnyomás", "en": "Serious cardiovascular disease, arrhythmia, unstable angina, uncontrolled hypertension", "pl": "Poważna choroba sercowo-naczyniowa, arytmia, niestabilna dławica, niekontrolowane nadciśnienie" },
+    { "hu": "Modafinil-túlérzékenység vagy súlyos bőrreakció (Stevens-Johnson, DRESS) anamnézisében", "en": "Modafinil hypersensitivity or history of severe skin reaction (Stevens-Johnson, DRESS)", "pl": "Nadwrażliwość na modafinil lub ciężka reakcja skórna w wywiadzie (Stevens-Johnson, DRESS)" },
+    { "hu": "Hormonális fogamzásgátlóval csökkent védelem (CYP3A4-indukció), kiegészítő módszer ajánlott", "en": "Reduces hormonal contraceptive efficacy (CYP3A4 induction), use backup method", "pl": "Obniża skuteczność hormonalnej antykoncepcji (indukcja CYP3A4), zaleca się metodę zapasową" },
+    { "hu": "Egyidejű alkohol és más hepatotoxikus szerek kerülendők", "en": "Avoid concurrent alcohol and other hepatotoxic drugs", "pl": "Unikać jednoczesnego alkoholu i innych leków hepatotoksycznych" }
+  ],
   "name": "Adrafinil",
   "image": null,
   "accentColor": "#fbbf24",

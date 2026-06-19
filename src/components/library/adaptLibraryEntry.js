@@ -583,6 +583,23 @@ const FAMILY_SAFETY_EXTRAS = {
 }
 
 function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
+ // Per-entry override (variant-aware): a reworked entry supplies its OWN true,
+ // sourced sideEffects / contraindications. A matching variant overrides the
+ // entry base (per-form relevance). Falls back to the generic category set when
+ // the entry has no own safety yet.
+ const ownVariant = Array.isArray(peptide.variants)
+ ? peptide.variants.find((v) => v.id === activeVariantId)
+ : null
+ const ownSide = ownVariant?.sideEffects || peptide.sideEffects
+ const ownContra = ownVariant?.contraindications || peptide.contraindications
+ if (Array.isArray(ownSide) && ownSide.length) {
+ return {
+ sideEffects: ownSide,
+ whenToStop: ownVariant?.whenToStop || peptide.whenToStop || [],
+ contraindications: Array.isArray(ownContra) && ownContra.length ? ownContra : GENERIC_CONTRAINDICATIONS,
+ }
+ }
+
  const primary = categoryIds[0]
  const set = CATEGORY_SAFETY[primary] || CATEGORY_SAFETY.recovery
  const family = getRouteFamily(activeVariantId)
