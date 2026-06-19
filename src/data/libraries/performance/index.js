@@ -992,20 +992,22 @@ export const LIBRARY_ENTRY_META = [
   },
   {
     "id": "super-shred",
-    "name": "Super-Shred (multi-stim blend)",
-    "image": "/performance/tablet-pile-white.png",
+    "name": "Super-Shred (lipotropic blend)",
+    "image": "/performance/water-vial.png",
     "accentColor": "#f97316",
     "tagColor": "rgba(249,115,22,0.18)",
     "shortDesc": {
-      "hu": "Generic proprietary multi-stim blend archetípus: ECA-rokon + yohimbine HCl + synephrine + 1,3-DMAA-tipikus. Cohen 2014 JAMA (PMID 25406303) label-claim discrepancy warning; FDA 2013 1,3-DMAA ban; Karnatovskaia 2015 (PMID 25525083) DMAA-acute-hepatitis case-cluster.",
-      "en": "Generic proprietary multi-stim blend archetype: ECA-related + yohimbine HCl + synephrine + 1,3-DMAA-typical. Cohen 2014 JAMA (PMID 25406303) label-claim vs. actual-content discrepancy warning; FDA 2013 1,3-DMAA ban; Karnatovskaia 2015 (PMID 25525083) documented DMAA acute-hepatitis case cluster.",
-      "pl": "Generyczny archetyp multi-stim blend: ECA-pokrewny + yohimbina HCl + synephryna + 1,3-DMAA-typowa. Cohen 2014 JAMA (PMID 25406303) ostrzeżenie o label-claim discrepancy; FDA 2013 1,3-DMAA ban; Karnatovskaia 2015 (PMID 25525083) udokumentowany klaster acute hepatitis DMAA."
+      "hu": "Compounded INJEKTÁLHATÓ lipotrop zsírégető koktél (a klasszikus 'lipo shot' archetípus): L-Carnitine 400 mg + MIC blend 100 mg (Methionine + Inositol + Choline) + ATP 50 mg + Albuterol 2 mg + B12 1 mg. Zsírsav-transzport (carnitine) + hepatikus lipotropikumok (MIC) + béta-2 termogén (albuterol) + kofaktorok (ATP, B12) egy fecskendőben. Az Albuterol miatt WADA-tiltott, és kardiovaszkuláris kockázatot hordoz. A klinikai fogyás-evidence az egyes komponensekre van, NEM a keverékre.",
+      "en": "Compounded INJECTABLE lipotropic fat-burner cocktail (the classic 'lipo shot' archetype): L-Carnitine 400 mg + MIC blend 100 mg (Methionine + Inositol + Choline) + ATP 50 mg + Albuterol 2 mg + B12 1 mg. Fatty-acid transport (carnitine) + hepatic lipotropics (MIC) + a beta-2 thermogenic (albuterol) + cofactors (ATP, B12) in one injection. WADA-banned because of the albuterol, and it carries real cardiovascular risk. The clinical fat-loss evidence is for the individual components, NOT for the blend.",
+      "pl": "Compounded INIEKCYJNY koktajl lipotropowy spalający tłuszcz (klasyczny archetyp 'lipo shot'): L-Carnitine 400 mg + MIC blend 100 mg (Methionine + Inositol + Choline) + ATP 50 mg + Albuterol 2 mg + B12 1 mg. Transport kwasów tłuszczowych (carnitine) + lipotropiki wątrobowe (MIC) + termogenik beta-2 (albuterol) + kofaktory (ATP, B12) w jednej iniekcji. Zakazany przez WADA z powodu albuterolu i niosący realne ryzyko sercowo-naczyniowe. Kliniczne evidence utraty tłuszczu dotyczy poszczególnych komponentów, NIE mieszanki."
     },
     "tier": 3,
     "wadaStatus": "banned",
     "subCategory": "fat",
-    "subSection": "stim",
-    "formFactors": ["oral"]
+    "subSection": "metabolic",
+    "formFactors": [
+      "aq"
+    ]
   },
   {
     "id": "l-carnitine",
@@ -1041,6 +1043,82 @@ export const LIBRARY_ENTRY_META = [
     "subCategory": "fat",
     "subSection": "metabolic",
     "formFactors": ["oral"]
+  },
+  {
+    "id": "atx-304",
+    "name": "ATX-304",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#fbbf24",
+    "tagColor": "rgba(251,191,36,0.18)",
+    "shortDesc": {
+      "hu": "Perifériásan korlátozott, orálisan aktív kismolekulás pan-AMPK (AMP-aktivált protein-kináz) és mitokondrium-aktivátor, zsírvesztő/kardiometabolikus kutatási vegyület. Phase 2 klinikai fejlesztésben obesity + cardiometabolic disease-re (Amplifier Therapeutics, Cambrian BioPharma). NEM jóváhagyott gyógyszer – INVESTIGATIONAL státusz.",
+      "en": "Peripherally restricted, orally active small-molecule pan-AMPK (AMP-activated protein kinase) and mitochondrial activator, a fat-loss / cardiometabolic research compound. In Phase 2 clinical development for obesity + cardiometabolic disease (Amplifier Therapeutics, Cambrian BioPharma). NOT an approved drug – INVESTIGATIONAL status.",
+      "pl": "Peryferyjnie ograniczony, doustnie aktywny niskocząsteczkowy aktywator pan-AMPK (kinaza białkowa aktywowana AMP) i mitochondriów, związek badawczy do utraty tłuszczu / kardiometaboliczny. W Phase 2 rozwoju klinicznego dla obesity + cardiometabolic disease (Amplifier Therapeutics, Cambrian BioPharma). NIE zatwierdzony lek – status INVESTIGATIONAL."
+    },
+    "tier": 2,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "metabolic",
+    "formFactors": [
+      "oral"
+    ]
+  },
+  {
+    "id": "sobetirome",
+    "name": "Sobetirome (GC-1)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#14b8a6",
+    "tagColor": "rgba(20,184,166,0.18)",
+    "shortDesc": {
+      "hu": "Orálisan aktív, szelektív pajzsmirigyhormon-receptor béta (TRβ) agonista thyromimetikum (kutatási kód: GC-1). Szelektíven kötődik a TRβ-1-hez (EC50 ~0.16 μM), kíméli a szívizom TRα-t, a T3 kedvező metabolikus/lipid-hatásait célozza a tipikus hyperthyreoid szívmellékhatások nélkül. INVESTIGATIONAL: Phase 1 lezárva (~2008), Phase 2 a metabolikus indikációra NEM zajlott.",
+      "en": "Orally active, selective thyroid hormone receptor beta (TRβ) agonist thyromimetic (research code: GC-1). Binds selectively to TRβ-1 (EC50 ~0.16 μM), sparing the cardiac TRα, aims to mimic the beneficial metabolic/lipid effects of T3 without the typical hyperthyroid cardiac side effects. INVESTIGATIONAL: completed Phase 1 (~2008); Phase 2 was NOT conducted for the metabolic indication.",
+      "pl": "Doustnie aktywny, selektywny agonista receptora beta hormonu tarczycy (TRβ), thyromimetic (kod badawczy: GC-1). Wiąże się selektywnie z TRβ-1 (EC50 ~0.16 μM), oszczędzając sercowy TRα, ma naśladować korzystne metaboliczne/lipidowe efekty T3 bez typowych nadczynnościowych skutków sercowych. INVESTIGATIONAL: ukończona Phase 1 (~2008); Phase 2 dla wskazania metabolicznego NIE została przeprowadzona."
+    },
+    "tier": 3,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "thyroid",
+    "formFactors": [
+      "oral"
+    ]
+  },
+  {
+    "id": "sana-mvd1",
+    "name": "SANA (MVD-1)",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#fb923c",
+    "tagColor": "rgba(251,146,60,0.18)",
+    "shortDesc": {
+      "hu": "Klinikai-fázisú small molecule (Eolo Pharma, fejlesztési kód MVD1), amely a kreatin-függő termogenezist (a termogén/bézs zsír 'futile creatine cycle'-ját) aktiválja, így az ENERGIALEADÁST emeli – nem az étvágyat csökkenti, mint a GLP-1 szerek. A 3 hivatkozott tanulmány a PATHWAY-t igazolja, NEM a SANA-t. Vizsgálati státusz, NEM engedélyezett.",
+      "en": "Clinical-stage small molecule (Eolo Pharma, development code MVD1) that activates creatine-dependent thermogenesis (the 'futile creatine cycle' in thermogenic / beige fat), raising ENERGY EXPENDITURE rather than suppressing appetite like GLP-1 drugs. The 3 cited studies establish the PATHWAY, NOT SANA. Investigational, NOT approved.",
+      "pl": "Clinical-stage small molecule (Eolo Pharma, kod rozwojowy MVD1), który aktywuje termogenezę zależną od kreatyny ('futile creatine cycle' w termogenicznej / beżowej tkance tłuszczowej), podnosząc WYDATEK ENERGETYCZNY zamiast tłumić apetyt jak leki GLP-1. 3 cytowane badania ustanawiają SZLAK, NIE SANA. Badawczy, NIE zatwierdzony."
+    },
+    "tier": 3,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "mito",
+    "formFactors": [
+      "oral"
+    ]
+  },
+  {
+    "id": "slu-pp-915",
+    "name": "SLU-PP-915",
+    "image": "/performance/tablet-pile-white.png",
+    "accentColor": "#818cf8",
+    "tagColor": "rgba(129,140,248,0.18)",
+    "shortDesc": {
+      "hu": "Pan-ERR (ösztrogén-rokon receptor α/β/γ) agonista \"exercise-mimetic\" kutatási vegyület, az SLU-PP-332 utódja a Burris-laborból (Saint Louis University). Kulcskülönbség: ORÁLISAN BIOHASZNOSULÓ (a 332 NEM) és in vivo potensebb – hasonló futás-/aerob-kapacitás-emelést ér el a 332 felénél kisebb dózison. RESEARCH-ONLY, NINCS humán-trial.",
+      "en": "Pan-ERR (estrogen-related receptor α/β/γ) agonist \"exercise-mimetic\" research compound, the successor to SLU-PP-332 from the Burris lab (Saint Louis University). Key difference: ORALLY BIOAVAILABLE (the 332 is not) and more potent in vivo – it enhanced running/aerobic capacity to a similar extent as the 332 but at less than half the dose. RESEARCH-ONLY, no human trials.",
+      "pl": "Pan-ERR (estrogen-related receptor α/β/γ) agonista, badawczy związek \"exercise-mimetic\", następca SLU-PP-332 z laboratorium Burris (Saint Louis University). Kluczowa różnica: DOUSTNIE BIODOSTĘPNY (332 nie jest) i bardziej potentny in vivo – zwiększał wydolność biegową/aerobową w podobnym stopniu jak 332, ale przy mniej niż połowie dawki. RESEARCH-ONLY, brak human trials."
+    },
+    "tier": 2,
+    "wadaStatus": "allowed",
+    "subCategory": "fat",
+    "subSection": "mito",
+    "formFactors": [
+      "oral"
+    ]
   },
   {
     "id": "5-amino-1mq",

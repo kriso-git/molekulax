@@ -1,193 +1,182 @@
-// Super-Shred — generic proprietary stim-blend archetype (ECA-related +
-// yohimbine + synephrine + 1,3-DMAA-typical). Sources: Cohen 2014 JAMA
-// PMID 25406303, FDA 2013 1,3-DMAA Consumer Update, Karnatovskaia 2015
-// PMID 25525083, Eichner 2002 PMID 12172251, Haller 2008 PMID 18403028.
+// Super-Shred (lipotropic blend) – compounded INJECTABLE "lipo shot" fat-burner
+// cocktail. Real composition (per owner): L-Carnitine 400 mg + MIC blend 100 mg
+// (Methionine + Inositol + Choline) + ATP 50 mg + Albuterol 2 mg + B12
+// (cyanocobalamin) 1 mg. Component evidence: Stephens 2007 PMID 17331998,
+// Koeth 2013 Nat Med PMID 23563705, Kraemer 2003 PMID 12930169 (L-Carnitine),
+// Cazzola 2012 PMID 22611179 (bronchodilators / Albuterol).
 
 export default {
   "id": "super-shred",
-  "name": "Super-Shred (multi-stim blend)",
-  "image": "/performance/tablet-pile-white.png",
+  "name": "Super-Shred (lipotropic blend)",
+  "image": "/performance/water-vial.png",
   "accentColor": "#f97316",
   "tagColor": "rgba(249,115,22,0.18)",
-  "shortDesc": "Generic proprietary multi-stim blend archetype: ECA-related + yohimbine HCl + synephrine + 1,3-DMAA-typical component combination. Cohen 2014 JAMA (PMID 25406303) label-claim vs. actual-content discrepancy warning; FDA 2013 1,3-DMAA ban (Consumer Update); Karnatovskaia 2015 (PMID 25525083) documented DMAA acute-hepatitis case cluster.",
-  "description": "'Super-Shred' is not a single FDA-Rx compound but the generic label for the 2010s bodybuilding blackmarket fat-burner blend archetype. A typical Super-Shred-style proprietary blend contains 4-6 sympathomimetic components in one capsule: ECA-related (ephedra alkaloid, synephrine, or methylsynephrine), yohimbine HCl (α2-antagonist), 1,3-dimethylamylamine (DMAA, geranamine synthetic relative), caffeine + theobromine + theacrine combination, and often rauwolscine (yohimbine stereoisomer, α2-selective). Multi-receptor sympathomimetic activation stacks α1/α2 (yohimbine + DMAA) + β1/β2 (ephedrine-analog + synephrine) + adenosine-receptor antagonism (caffeine), producing acute thermogenic-rate elevation with +400-600 kcal/day REE increase but high cardiovascular-risk cluster (acute hypertension, tachycardia, stroke, AMI, sudden cardiac death). Cohen 2014 JAMA (PMID 25406303) HPLC-tested 27 OTC fat-burner blends: 12 contained completely undeclared compounds, 8 had label-claim ±30% dose variance. FDA 2013 1,3-DMAA Consumer Update banned DMAA dietary-supplement use after 100+ adverse-event reports + 5 deaths. Karnatovskaia 2015 (PMID 25525083) documented acute hepatitis case clusters on DMAA-yohimbine combinations. WADA S6 stimulant in-competition banned. DON'T do at home protocol: label-claim discrepancy + synergistic-cardiac-stress means hospitalization is documented even at apparently 'safe' doses.",
+  "composition": [
+    {
+      "id": "l-carnitine",
+      "role": "Long-chain fatty-acid shuttle (CPT-I) – moves fat into the mitochondria for beta-oxidation; injectable form bypasses poor oral absorption",
+      "typicalDose": "400 mg"
+    },
+    {
+      "name": "MIC Blend (Methionine, Inositol, Choline)",
+      "role": "Lipotropic trio (Methionine + Inositol + Choline) – supports hepatic lipid metabolism and fat export; choline + methionine are methyl donors",
+      "typicalDose": "100 mg"
+    },
+    {
+      "name": "ATP",
+      "role": "Cellular energy / substrate component",
+      "typicalDose": "50 mg"
+    },
+    {
+      "id": "albuterol",
+      "role": "Selective beta-2 agonist – mild thermogenic / lipolytic effect; this is the WADA-banned, cardiovascularly active component",
+      "typicalDose": "2 mg"
+    },
+    {
+      "name": "B12 (cyanocobalamin)",
+      "role": "Cyanocobalamin – cofactor in energy and methyl metabolism, added for energy support",
+      "typicalDose": "1 mg"
+    }
+  ],
+  "shortDesc": "Compounded INJECTABLE lipotropic fat-burner cocktail (the classic 'lipo shot' archetype): L-Carnitine 400 mg + MIC blend 100 mg (Methionine + Inositol + Choline) + ATP 50 mg + Albuterol 2 mg + B12 1 mg. Fatty-acid transport (carnitine) + hepatic lipotropics (MIC) + a beta-2 thermogenic (albuterol) + cofactors (ATP, B12) in one injection. WADA-banned because of the albuterol, and it carries real cardiovascular risk. The clinical fat-loss evidence is for the individual components, NOT for the blend.",
+  "description": "'Super-Shred (lipotropic blend)' is a compounded, INJECTABLE fat-burner cocktail – a specific version of the classic 'lipo shot' / lipotropic-injection archetype. It combines five components in one aqueous injection: L-Carnitine 400 mg (long-chain fatty-acid shuttle), MIC blend 100 mg (Methionine + Inositol + Choline lipotropic trio), ATP 50 mg (energy/substrate), Albuterol 2 mg (selective beta-2 agonist) and B12 / cyanocobalamin 1 mg (energy and methyl-metabolism cofactor). The logic is four-layered: fatty-acid transport (carnitine) + hepatic lipotropics (MIC) + beta-2 thermogenic lipolysis (albuterol) + cofactors (ATP, B12). The injectable route bypasses the poor oral bioavailability of carnitine (~15%). IMPORTANT honest framing: the clinical fat-loss evidence is overwhelmingly for the INDIVIDUAL components (and even there it is modest), NOT for this specific blend – there is no RCT of this combination. The real risk comes from the albuterol component: tachycardia, tremor, hypokalaemia and cardiovascular strain, and it is a WADA-banned beta-2 agonist. The preparation is grey-market, compounded / home-mixed, so purity and actual active content are NOT guaranteed."
+  ,
   "keyInfo": [
     {
+      "label": "Type",
+      "value": "Compounded injectable lipotropic fat-burner cocktail (5-component 'lipo shot')"
+    },
+    {
+      "label": "Composition",
+      "value": "L-Carnitine 400 mg + MIC 100 mg + ATP 50 mg + Albuterol 2 mg + B12 1 mg per injection"
+    },
+    {
       "label": "Mechanism",
-      "value": "Multi-receptor sympathomimetic stack: α1/α2 + β1/β2 + adenosine-receptor antagonism"
+      "value": "Fatty-acid shuttle (carnitine) + hepatic lipotropics (MIC) + beta-2 thermogenic (albuterol) + cofactors (ATP, B12)"
     },
     {
-      "label": "Dosing",
-      "value": "1-2 cap PO BID AM/preworkout, MAX 4 cap/day (per label claim — actual-content discrepancy common)"
-    },
-    {
-      "label": "Half-life",
-      "value": "Blend-component-dependent ~3-8h overall envelope"
-    },
-    {
-      "label": "Onset",
-      "value": "20-45 min, multi-component peak overlap 1-3h"
+      "label": "Administration",
+      "value": "Subcutaneous / intramuscular injection (aqueous solution)"
     },
     {
       "label": "Legal status",
-      "value": "DMAA FDA-banned dietary supplement 2013; ephedra FDA-banned 2004; yohimbine OTC in USA (EU Rx); synephrine OTC. WADA S6 in-competition banned."
+      "value": "No approved fixed-dose blend exists; compounded / grey-market. Albuterol beta-2 agonist is WADA-banned (oral/injectable). EU + HU: Rx components."
     }
   ],
-  "mechanism": "'Super-Shred' multi-component sympathomimetic stack activates three parallel receptor pathways. First the α-adrenoceptor-selective components: yohimbine α2-antagonist (presynaptic noradrenaline autoreceptor block → noradrenaline release disinhibition) + 1,3-DMAA mixed α/β-like geranamine relative (presynaptic NRA-like mechanism but with neurotoxic profile). Second the β-adrenoceptor activators: synephrine (citrus aurantium extract, β3-preferential but β1 spillover documented), ephedrine-analog (Ma Huang alkaloid). Third the adenosine-receptor antagonism: caffeine + theobromine + theacrine xanthine stack blocks A1/A2A and removes CNS feedback suppression. The synergistic result: a massive sympathomimetic storm — BP elevation +20-30 mmHg systolic, HR +25-40 bpm, QTc-prolongation potential, and vasoconstrictive rebound. Karnatovskaia 2015 (PMID 25525083) acute-hepatitis cluster: DMAA + yohimbine co-administration produced hepatic enzymes (ALT >5x ULN, AST >3x ULN) documented within 4-7 days of blend use. Due to label-claim discrepancy (Cohen 2014 JAMA PMID 25406303), 'actual content vs. box content' is unknown: in HPLC-tested blends, 30-50% had declared compound content that did NOT match actual content.",
-  "legalStatus": "USA: 1,3-DMAA dietary supplements FDA-banned 2013 (Consumer Update); ephedra dietary supplements FDA-banned 2004; yohimbine OTC dietary supplement; synephrine OTC. EU: 1,3-DMAA banned (EFSA 2015 safety-assessment negative); ephedrine ATC R03CA02 Rx; yohimbine Rx (psychogenic erectile dysfunction Rx indication); synephrine OTC (often in energy drinks). HU + PL: yohimbine + ephedrine Rx; synephrine + caffeine + theobromine OTC. WADA: ephedrine + DMAA + synephrine S6 stimulant in-competition banned; yohimbine NOT listed (monitored depending on use). Pre-formulated proprietary blends: 'DON'T do at home' framing — synergistic cardiac stress + label-claim discrepancy make them high-risk.",
-  "onsetTime": "20-45 min, multi-component peak overlap 1-3h",
-  "halfLife": "Blend-component-dependent ~3-8h overall envelope",
+  "mechanism": "Super-Shred (lipotropic blend) attempts to support fat loss through four independent mechanisms. (1) L-Carnitine: shuttles long-chain fatty acids into the mitochondria via carnitine palmitoyltransferase-I (CPT-I) for beta-oxidation – the rate-limiting step of the fat-as-fuel pathway. The injectable form bypasses poor oral absorption (~15%). (2) MIC (Methionine, Inositol, Choline): classic 'lipotropic' agents that support hepatic lipid metabolism and fat export from the liver; choline and methionine are methyl donors, inositol supports lipid handling. (3) ATP: provided as an energy / cellular-substrate component. (4) Albuterol: a selective beta-2 adrenergic agonist with a mild thermogenic / lipolytic effect and bronchodilation – this is the cardiovascularly active and WADA-banned component, carrying tachycardia, tremor and hypokalaemia risk. (5) B12 (cyanocobalamin): a cofactor in energy and methyl metabolism, commonly added for energy support in lipotropic injections. Overall it is a compounded fat-burner cocktail in which the components each have (modest) individual evidence, but the specific blend is unstudied; the cardiovascular and WADA risk comes essentially entirely from the albuterol component.",
+  "legalStatus": "No approved fixed-dose 'Super-Shred' blend exists – the product is the result of compounding-pharmacy or grey-market home formulation. By component: L-Carnitine is an OTC supplement / Rx IM-SC form; Albuterol (Salbutamol) is an Rx beta-2 agonist (Ventolin); MIC, ATP and B12 are supplement / injectable lipotropic agents. WADA: albuterol is a beta-2 agonist, oral/injectable use is BANNED (only inhaled <1600 µg/24h is permitted) – so the whole blend is prohibited in competition. EU + HU + PL: albuterol is Rx-only.",
+  "onsetTime": "Albuterol component 15-30 min; carnitine muscle-loading reaches steady-state over days to weeks",
+  "halfLife": "Component-dependent: albuterol ~5-6 h, L-carnitine ~15 h, B12 is stored",
   "interactionsWith": [
-    "eca-stack",    "yohimbine",
-    "clenbuterol"
+    "l-carnitine",
+    "albuterol",
+    "clenbuterol",
+    "mots-c"
   ],
-  "aromatization": "Does not aromatize (multi-sympathomimetic blend — sympathomimetic alkaloids + xanthines + α2-antagonist combination, not a steroid). No CYP19 interaction.",
-  "hepatotoxicity": "Moderate — DMAA + yohimbine combination has documented acute hepatitis case clusters (FDA 2013 1,3-DMAA ban; Karnatovskaia 2015 PMID 25525083). Multi-component blends with HPLC-undeclared content potentially carry higher hepatotoxic signal than label claim suggests. Pre-existing liver disease is an absolute contraindication.",
+  "aromatization": "Does not aromatize – not a steroid. The blend consists of lipotropics, a beta-2 agonist and cofactors, with no CYP19 (aromatase) interaction and no estrogen-axis effect.",
+  "hepatotoxicity": "The lipotropic components (choline, methionine, inositol) generally SUPPORT hepatic fat metabolism and fat export, so they are not hepatotoxic on their own. Honest note: because Super-Shred is a compounded / grey-market injectable, purity, sterile manufacturing and actual active content are NOT guaranteed – here the risk comes not from hepatotoxicity but from the purity and sterility uncertainty of home formulation and from the cardiovascular effect of the albuterol.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (not AAS)",
-  "bindingAffinity": "Blend-component-dependent: yohimbine α2-AR Ki ~3 nM (high-affinity), synephrine β3-AR Ki ~150 nM, DMAA presynaptic NRA mechanism (Ki data limited), ephedrine-analog α1/β1 Ki ~10-50 μM (low-affinity, indirect NRA).",
-  "detectionWindow": "WADA-accredited LC-MS/MS multi-component urine detection: ephedrine 1-3 days (threshold 10 μg/mL), DMAA 1-2 days, synephrine 1-2 days. Yohimbine NOT banned, monitored depending on use.",
+  "detectionWindow": "Albuterol 24-72 h urine (WADA threshold 1000 ng/mL). L-Carnitine is not a standard WADA test; B12 / lipotropics are not listed.",
   "benefits": [
-    "Acute thermogenic-rate elevation +400-600 kcal/day (multi-receptor stack, dose-dependent)",
-    "Acute appetite suppression (sympathomimetic + α2-antagonist combination)",
-    "Energy + focus elevation (caffeine + DMAA preworkout context)",
-    "Yohimbine-mediated lipid mobilization (α2-block stubborn-fat area reduction Galitzky 1988 analog evidence)",
-    "Cheap components at label-claim level (but actual-content quality NOT guaranteed — Cohen 2014 PMID 25406303)"
+    "Injectable L-Carnitine: bypasses poor oral absorption, supports fatty-acid mitochondrial transport (CPT-I, beta-oxidation)",
+    "MIC lipotropic trio: supports hepatic lipid metabolism and fat export (methyl-donor choline + methionine)",
+    "Albuterol: mild thermogenic / lipolytic beta-2 effect in a caloric deficit (but this is the risk component)",
+    "B12 + ATP: energy and methyl-metabolism cofactor support",
+    "'Lipo shot' convenience of one combined injection – BUT there is no clinical evidence for the blend as a whole, only for the components individually"
   ],
   "quickStart": [
-    "DO NOT START — DON'T do at home protocol; label-claim discrepancy + synergistic-cardiac-stress are high-risk",
-    "If you use anyway: pre-cycle 12-lead EKG + BP home-tracking 7-day baseline, lipid panel, liver enzymes",
-    "Single-component separated dosing is safer than blends (Rx ephedrine, OTC caffeine, Rx yohimbine titrated independently)",
-    "Pre-formulated proprietary blends should be avoided (Cohen 2014 JAMA label-claim discrepancy)",
-    "Cycle length 2-4 weeks MAX (cardiovascular + hepatic recovery + tachyphylaxis)",
-    "Last dose before 14:00 mandatory (insomnia prevention, DMAA + caffeine extended t1/2)"
-  ],
-  "expectations": [
-    {
-      "label": "Week 1",
-      "body": "Acute sympathomimetic storm felt: significant HR elevation (+25-40 bpm), BP elevation (+20-30 mmHg systolic), sweating, tremor, anxiety. Appetite suppression strong, energy elevation significant. High insomnia risk. Acute hepatitis signal (RUQ pain, fatigue) → IMMEDIATE discontinuation + ALT/AST testing."
-    },
-    {
-      "label": "Weeks 2-3",
-      "body": "Tolerance begins (caffeine tachyphylaxis 7-10 days, ephedrine 3-4 weeks). Dose escalation NOT recommended (cardiovascular risk multiplier). Subjective fat-loss pace +0.5-1.0 kg/week with adequate caloric deficit — but iatrogenic risk is higher than benefit. Liver-enzymes monitoring at 2-week intervals is mandatory."
-    },
-    {
-      "label": "Cycle end (2-4 weeks MAX)",
-      "body": "Cycle cap 2-4 weeks MAX due to cardiovascular + hepatic recovery window. Abrupt stop risks rebound fatigue + rebound appetite. 4-6 weeks OFF mandatory. Post-cycle bloodwork: BP + EKG + lipid panel + liver enzymes verification. A new cycle is NOT recommended — single-component alternatives are safer."
-    }
+    "Educational context: this is a compounded grey-market INJECTABLE fat-burner cocktail – there is no approval or RCT evidence for the blend as a whole",
+    "The real risk comes from the albuterol component: tachycardia, tremor, hypokalaemia – pre-cycle EKG + blood-pressure baseline + potassium/magnesium are needed",
+    "Forbidden for WADA-tested athletes: injectable/oral albuterol beta-2 agonist is banned in competition",
+    "The components, sourced separately and verified, are more traceable and titratable than a fixed home blend",
+    "Aqueous (water-based) injection – do NOT mix with oil-based preparations",
+    "From a grey-market source purity and sterility are NOT guaranteed – sterility and dose-variance risk"
   ],
   "quality": {
     "pure": [
-      "No pre-formulated 'Super-Shred-style' blend is recommended — Cohen 2014 JAMA (PMID 25406303) label-claim discrepancy in 30-50% of blends",
-      "Single-component separation (Rx-pharmacy ephedrine + OTC caffeine + Rx yohimbine) is more traceable and dose-titratable",
-      "DMAA-containing pre-blends FDA-banned dietary-supplement format since 2013 (USA + EU)",
-      "Ephedra-containing pre-blends FDA-banned dietary-supplement format since 2004"
+      "No approved fixed-dose 'Super-Shred' product exists – every such blend is a compounding-pharmacy or grey-market formulation, with active content not guaranteed",
+      "Components sourced separately from pharmacy / verified sources are more traceable (Rx Salbutamol, Rx or OTC L-Carnitine, injectable lipotropic agents)",
+      "Aqueous injection – an HPLC-tested source and sterile manufacturing would be mandatory, which is rarely verified on the grey market",
+      "Due to the albuterol content, the whole blend is WADA-banned in competition"
     ],
     "caution": [
-      "BP home-tracking 2x/day (AM + evening), weekly average log",
-      "EKG baseline + 2-week check (QTc + arrhythmia monitoring)",
-      "Liver enzymes (ALT/AST/ALP) 2-week interval (DMAA + yohimbine hepatic cluster Karnatovskaia 2015 PMID 25525083)",
-      "Insomnia risk high — last dose before 14:00 mandatory",
-      "Anxiety + panic-attack potential significant (multi-sympathomimetic stack)",
-      "Psychoactive component overlap (caffeine + DMAA + theacrine) → behavioral side-effects"
+      "Albuterol cardio-monitoring: blood-pressure log, resting heart rate <100, EKG baseline + check",
+      "Hypokalaemia: beta-2 activation shifts K+ intracellularly – magnesium 400 mg + potassium supplementation advised, especially alongside a diuretic",
+      "Tremor, palpitations, anxiety, insomnia (albuterol component)",
+      "Sterility and purity are NOT guaranteed on the grey market – injection-site reaction, infection risk",
+      "Dose variance: in a compounded blend the actual albuterol dose can vary significantly",
+      "L-Carnitine is an aqueous compound – do not mix with oil-based preparations"
     ],
     "avoid": [
-      "Pre-existing hypertension (>140/90 mmHg) — absolute contraindication",
-      "Pre-existing tachyarrhythmia, AF, cardiomyopathy — absolute contraindication",
-      "Pre-existing liver disease (NAFLD, hepatitis, cirrhosis) — absolute contraindication",
-      "MAO inhibitor (phenelzine, tranylcypromine) — hypertensive crisis, absolute contraindication",
-      "SSRI/SNRI — serotonin syndrome risk, relative contraindication",
-      "Hyperthyroidism / Graves disease — absolute contraindication",
-      "Pheochromocytoma — absolute contraindication",
-      "Pregnancy + breastfeeding",
-      "Pre-formulated proprietary blends in general (Cohen 2014 label-claim discrepancy)",
-      "Combination with any other sympathomimetic (clenbuterol, ECA-stack, ephedrine, mirabegron) — additive cardio-stress"
+      "Pre-existing tachyarrhythmia, AF, cardiomyopathy – absolute contraindication (albuterol)",
+      "Pre-existing hypertension (>140/90 mmHg) – relative/absolute contraindication",
+      "Beta-blocker therapy – blocks the albuterol effect and carries vasoconstriction risk",
+      "Concurrent MAO inhibitor – tachycardia + hypertensive crisis risk",
+      "Hyperthyroidism / Graves disease – contraindication",
+      "Severe anxiety, panic disorder, epilepsy",
+      "Pregnancy and breastfeeding",
+      "WADA-tested competitors (injectable/oral albuterol form is banned)",
+      "Combination with any other beta-2 agonist or sympathomimetic (clenbuterol, ECA-stack) – additive cardio-stress"
     ]
   },
   "interactions": [
-    "ECA-stack co-administration — additive sympathomimetic storm, CONTRAINDICATED",
-    "Clenbuterol + Mirabegron — additive cardio-stress, CONTRAINDICATED",
-    "MAO inhibitor — hypertensive crisis, CONTRAINDICATED",
-    "SSRI/SNRI — serotonin syndrome risk, low-dose escalation caution",
-    "Chronic β-blocker therapy — α-receptor unopposed vasoconstriction risk",
-    "Acetaminophen — DMAA-acetaminophen hepatic interaction (Yokota 2013 analog)",
-    "Alcohol — DMAA + alcohol hepatic-stress multiplier"
+    "Clenbuterol / other beta-2 agonist – additive cardio-stress + hypokalaemia, CONTRAINDICATED",
+    "Beta-blocker – blocks the albuterol effect, vasoconstriction risk",
+    "MAO inhibitor – tachycardia + hypertensive crisis risk",
+    "Diuretic (thiazide, furosemide) – additive hypokalaemia risk alongside albuterol",
+    "Caffeine / stimulants – synergistic cardio-stress with albuterol",
+    "Warfarin – chronic L-Carnitine can raise INR",
+    "Levothyroxine (T4) – L-Carnitine may reduce peripheral T4 → T3 conversion"
   ],
   "studies": [
     {
-      "title": "Nine prohibited stimulants found in sports and weight loss supplements: deterenol, phenpromethamine (Vonedrine), oxilofrine (methylsynephrine), octodrine, beta-methylphenylethylamine (BMPEA), 1,3-dimethylamylamine (1,3-DMAA), 1,4-dimethylamylamine (1,4-DMAA), 1,3-dimethylbutylamine (1,3-DMBA) and higenamine.",
-      "authors": "Cohen PA, Travis JC, Vanhee C, Ohana D, Venhuis BJ",
-      "journal": "Clin Toxicol (Phila)",
-      "pmid": "33755516"
+      "title": "New insights concerning the role of carnitine in the regulation of fuel metabolism in skeletal muscle",
+      "authors": "Stephens FB, Constantin-Teodosiu D, Greenhaff PL.",
+      "journal": "J Physiol. 2007;581(Pt 2):431-444.",
+      "pmid": "17331998"
     },
     {
-      "title": "Not All Herbals are Benign: A Case of Hydroxycut-induced Acute Liver Injury.",
-      "authors": "Khetpal N, Mandzhieva B, Shahid S, Khetpal A, Jain AG",
-      "journal": "Cureus",
-      "pmid": "32190438"
+      "title": "Intestinal microbiota metabolism of L-carnitine, a nutrient in red meat, promotes atherosclerosis",
+      "authors": "Koeth RA, Wang Z, Levison BS et al.",
+      "journal": "Nat Med. 2013;19(5):576-585.",
+      "pmid": "23563705"
     },
     {
-      "title": "Surveillance of the armed forces as a sentinel system for detecting adverse effects of dietary supplements in the general population.",
-      "authors": "Lieberman HR, Austin KG, Farina EK",
-      "journal": "Public Health Nutr",
-      "pmid": "29151367"
+      "title": "Pharmacology and therapeutics of bronchodilators",
+      "authors": "Cazzola M, Page CP, Calzetta L, Matera MG.",
+      "journal": "Pharmacol Rev. 2012;64(3):450-504.",
+      "pmid": "22611179"
     },
     {
-      "title": "Use of recreational drug 1,3-Dimethylamylamine (DMAA) associated with cerebral hemorrhage.",
-      "authors": "Gee P, Tallon C, Long N, Moore G, Boet R, Jackson S",
-      "journal": "Ann Emerg Med",
-      "pmid": "22575212"
+      "title": "L-carnitine L-tartrate supplementation favorably affects markers of recovery from exercise stress",
+      "authors": "Kraemer WJ, Volek JS, French DN et al.",
+      "journal": "J Strength Cond Res. 2003;17(3):455-462.",
+      "pmid": "12930169"
     }
   ],
   "faq": [
     {
-      "q": "What is Super-Shred — a single FDA-Rx compound?",
-      "a": "No, 'Super-Shred' is not a single FDA-Rx compound — it's the generic label for the 2010s bodybuilding blackmarket fat-burner blend archetype. A typical component combination: ECA-related (ephedra alkaloid, synephrine), yohimbine HCl, 1,3-DMAA, caffeine + theobromine + theacrine. Per Cohen 2014 JAMA (PMID 25406303) HPLC-RCT, label claim does NOT match actual content: 12 of 27 tested blends contained completely undeclared compounds."
+      "q": "What is Super-Shred really?",
+      "a": "A compounded, INJECTABLE lipotropic fat-burner cocktail – a specific version of the classic 'lipo shot' archetype. It combines five components in one aqueous injection: L-Carnitine 400 mg, MIC blend 100 mg (Methionine + Inositol + Choline), ATP 50 mg, Albuterol 2 mg and B12 (cyanocobalamin) 1 mg. It is not a single approved drug but a grey-market / compounded formulation, so the actual active content and sterility are NOT guaranteed."
     },
     {
-      "q": "Why did the FDA ban DMAA in 2013?",
-      "a": "The FDA 2013 Consumer Update placed 1,3-DMAA (geranamine) dietary-supplement format on the banned-list after 100+ adverse-event reports + 5 deaths (acute hypertension + stroke + AMI). The FDA argument: 1,3-DMAA is NOT a natural geranium plant extract (as 2010s pre-blend labels claimed) but a synthetic geranamine analog that does not qualify as a naturalistic dietary ingredient under DSHEA-1994 US regulation. The EU EFSA 2015 safety assessment was also negative (no-safe-dose-determinable). Karnatovskaia 2015 (PMID 25525083) acute-hepatitis cluster confirmed this."
+      "q": "How does the blend try to work?",
+      "a": "Through four independent mechanisms: L-Carnitine shuttles fatty acids into the mitochondria for beta-oxidation (CPT-I shuttle, injectable to bypass poor oral absorption); the MIC trio (Methionine, Inositol, Choline) supports hepatic fat metabolism and fat export (methyl donors); ATP and B12 are energy and methyl-metabolism cofactors; and albuterol, as a selective beta-2 agonist, adds a mild thermogenic / lipolytic effect. IMPORTANT: the clinical fat-loss evidence is for the INDIVIDUAL components (and even there it is modest), not for this specific combination."
     },
     {
-      "q": "Yohimbine + synephrine cardiac risk cluster — what is documented?",
-      "a": "Both compounds carry documented cardiac cluster signals. Yohimbine α2-antagonist increases noradrenaline-release disinhibition + panic-attack induction risk: pre-existing anxiety + panic-disorder history is a contraindication. Synephrine (citrus aurantium) is β3-preferential but with β1 spillover documented: Haller 2008 (PMID 18403028) acute cardiovascular adverse-event cluster on synephrine blends. The yohimbine + synephrine combination (as in Super-Shred-style blends) creates a synergistic α + β-receptor stack with additive cardiac stress."
+      "q": "Why is it WADA-banned?",
+      "a": "Albuterol (Salbutamol) is a selective beta-2 adrenergic agonist. WADA permits inhaled use up to <1600 µg/24h (in an asthma context), but ORAL and INJECTABLE beta-2 agonist use is BANNED. Because Super-Shred is injectable and contains albuterol, the whole blend is prohibited in competition (urine detection 24-72 h, threshold 1000 ng/mL)."
     },
     {
-      "q": "Why is 'Super-Shred' not a single Rx but a blend-archetype?",
-      "a": "The 'Super-Shred' brand name comes from the 2010s bodybuilding supplement brand portfolio (common marketing-slogan styles like 'shredding-stack', 'cutting-stack', 'fat-burner-X', 'Hydroxycut', 'Lipo-6 Black' typed proprietary blends). The blend-archetype term signals that this isn't a specific Rx compound (like Clenbuterol or Mirabegron) but a category-label for multi-component sympathomimetic + xanthine + α2-antagonist OTC blends. The MolekulaX Super-Shred record frames such blends in general, with the synergistic-cardiac-risk + label-claim discrepancy warning."
+      "q": "How safe is it?",
+      "a": "The lipotropic components (choline, methionine, inositol) and the cofactors (ATP, B12) support hepatic fat metabolism on their own and are not hepatotoxic. The real risk comes from the albuterol component: tachycardia, tremor, hypokalaemia and cardiovascular strain. On top of that is the uncertainty of grey-market / home formulation – purity, sterility and actual dose are NOT guaranteed. It is contraindicated with pre-existing cardiovascular disease, hyperthyroidism, a MAO inhibitor or a beta-blocker."
     }
   ],
   "related": [
-    "eca-stack",    "yohimbine"
-  ],
-  "doseCalc": {
-    "type": "fixed",
-    "fixed": {
-      "low": 1,
-      "medium": 2,
-      "high": 4
-    },
-    "unit": "cap/day (per label claim — actual content NOT guaranteed)",
-    "note": "DON'T do at home protocol. If you use anyway: 1-2 cap PO BID AM/preworkout, MAX 4 cap/day per label claim. Cycle length 2-4 weeks MAX, then 4-6 weeks OFF (cardiovascular + hepatic recovery). Pre-cycle 12-lead EKG + BP home-tracking 7-day baseline + lipid panel + liver enzymes mandatory. Mid-cycle 2-week interval liver enzymes + EKG + BP. Last dose before 14:00 mandatory (DMAA + caffeine extended t1/2 insomnia prevention). WADA S6 in-competition banned. Single-component separation is safer than pre-formulated blends (Cohen 2014 PMID 25406303 label-claim discrepancy)."
-  },
-  "bloodwork": {
-    "preCycle": {
-      "label": "Pre-cycle",
-      "timing": "1-2 weeks before cycle start",
-      "markers": "Blood pressure baseline (home-tracking AM+evening 7-day average), resting HR, 12-lead EKG (QTc + rhythm), lipid panel (TC/LDL/HDL/TG), liver enzymes (ALT/AST/ALP/GGT), full CBC, bilirubin",
-      "purpose": "Assess cardiovascular + hepatic baseline. Liver enzymes are MANDATORY pre-cycle due to DMAA + yohimbine acute-hepatitis cluster (Karnatovskaia 2015 PMID 25525083)."
-    },
-    "midCycle": {
-      "label": "Mid-cycle",
-      "timing": "1 + 2 weeks after cycle start",
-      "markers": "Blood pressure 2x/day home-tracking weekly average, resting HR weekly, EKG 2-week check, liver enzymes (ALT/AST/ALP/GGT) 2-week interval MANDATORY, lipid panel",
-      "purpose": "Early detection of acute hepatitis signal (RUQ pain, fatigue, ALT >3x ULN) → IMMEDIATE cycle stop. Monitor hypertension + QTc-prolongation signal."
-    },
-    "postCycle": {
-      "label": "Post-cycle",
-      "timing": "2 + 4 weeks after cycle end",
-      "markers": "BP + HR home-tracking, EKG (confirm QTc normalization), lipid panel, liver enzymes (cycle-end hepatic baseline restoration), CRP (inflammation recovery)",
-      "purpose": "Verify cardiovascular + hepatic baseline restoration. 4-6 weeks OFF mandatory. A new cycle is NOT recommended — single-component alternatives are safer."
-    }
-  }
+    "l-carnitine",
+    "albuterol",
+    "clenbuterol",
+    "mots-c"
+  ]
 }

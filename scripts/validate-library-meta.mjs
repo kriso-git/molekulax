@@ -353,8 +353,12 @@ for (const libId of LIBRARIES) {
     if (Array.isArray(entry?.composition)) {
       for (const item of entry.composition) {
         if (!item?.id) {
-          console.error(`❌ ${libId}/${m.id} composition[] item missing 'id' field`)
-          errors++
+          // Display-only component (e.g. a non-entry blend ingredient like a
+          // vitamin or generic mix): allowed, but must carry a `name` to render.
+          if (!item?.name) {
+            console.error(`❌ ${libId}/${m.id} composition[] item missing both 'id' and 'name'`)
+            errors++
+          }
           continue
         }
         if (!sameLibIds.has(item.id)) {
