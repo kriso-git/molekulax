@@ -136,6 +136,8 @@ export const UI_EN = {
   "entry.tab.studies": "Studies",
   "entry.cta.calc": "Dose calculator",
   "entry.cta.contact": "Contact",
+  "entry.sourcing.label": "Available at",
+  "entry.sourcing.coupon": "coupon",
   "entry.dosing.warn": "Research use only. Dosing should always happen under expert supervision.",
   "entry.tab.citations": "Citations",
   "entry.cite.view": "Open",
