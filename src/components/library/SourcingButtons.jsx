@@ -12,10 +12,10 @@ import { getSourcing } from '../../data/sourcingAvailability'
  * coupon. When no partner carries the compound, nothing renders — so the
  * absence of a card means "not available".
  */
-export default function SourcingButtons({ entryId, className = '' }) {
+export default function SourcingButtons({ entryId, variantId, className = '' }) {
   const { t } = useLang()
   const { library } = useLibrary()
-  const sources = getSourcing(library?.id, entryId)
+  const sources = getSourcing(library?.id, entryId, variantId)
   if (sources.length === 0) return null
 
   return (
