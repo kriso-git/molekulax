@@ -13,12 +13,15 @@
   h1 { font-size:18px; margin:0 0 4px; font-weight:700; }
   p.sub { margin:0; font-size:13px; color:#789; }
   .grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; padding:16px 20px 40px; max-width:1180px; margin:0 auto; }
-  .cell { background:radial-gradient(ellipse at 50% 40%, #0c1018, #05060a 70%); border:1px solid #1a2230; border-radius:18px; overflow:hidden; position:relative; }
+  @media (max-width:760px){ .grid{ grid-template-columns:1fr; } }
+  .cell { background:radial-gradient(ellipse at 50% 40%, #0c1018, #05060a 70%); border:1px solid #1a2230; border-radius:18px; overflow:hidden; position:relative; min-height:360px; }
   .cell canvas { display:block; width:100%; height:360px; }
-  .cap { position:absolute; left:14px; top:12px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; }
+  .cap { position:absolute; left:14px; top:12px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; z-index:2; }
   .cap b { color:#fff; font-weight:700; }
   .cap .style { color:var(--neon); }
+  .err { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; padding:20px; color:#ff8080; font-size:13px; text-align:center; }
   .legend { padding:0 20px 30px; max-width:1180px; margin:0 auto; font-size:13px; color:#9ab; line-height:1.6; }
+  #boot { padding:0 20px; color:#789; font-size:13px; }
 </style>
 </head>
 <body>
@@ -26,12 +29,14 @@
   <h1>3D vegyjel pilot — lassan forog, a kötéseken pulzáló fény fut oda-vissza</h1>
   <p class="sub">Két stílus, két molekula. Élesben ez majd offline-renderelt webm-loop lesz (mint a kártya-motívumok) — nem futásidejű WebGL, nem bántja a performance-t.</p>
 </header>
+<div id="boot">Betöltés…</div>
 <div class="grid" id="grid"></div>
 <div class="legend">
   <b>① Ball-and-stick:</b> atomok neon-csomópontként (elem szerint árnyalva), kötések neon-zöld csövekként, térben forog. Kémiailag teljes.<br/>
   <b>② Drótváz (line):</b> csak a kötés-váz neon-zölden, tisztább, közelebb a mostani 2D-szerű látványhoz. Mindkettőn a fény-impulzus a kötések mentén oszcillál.
 </div>
 
+<script>window.__MOLDATA__ = {modafinil:{"na":34,"nb":35,"atoms":[{"x":-0.9501,"y":-1.3296,"z":-0.4483,"el":"S"},{"x":-0.6587,"y":-2.7047,"z":0.0393,"el":"O"},{"x":-4.0124,"y":-1.4111,"z":-1.2303,"el":"O"},{"x":-4.318,"y":-2.098,"z":0.9414,"el":"N"},{"x":0.2271,"y":-0.2123,"z":0.4418,"el":"C"},{"x":-0.0707,"y":1.2358,"z":0.2451,"el":"C"},{"x":1.6802,"y":-0.5968,"z":0.1666,"el":"C"},{"x":-2.4087,"y":-0.7168,"z":0.4216,"el":"C"},{"x":0.0765,"y":2.1287,"z":1.3065,"el":"C"},{"x":2.4159,"y":-1.1686,"z":1.1803,"el":"C"},{"x":-0.4967,"y":1.6972,"z":-1.0005,"el":"C"},{"x":2.2013,"y":-0.3573,"z":-1.0852,"el":"C"},{"x":-0.2023,"y":3.483,"z":1.1225,"el":"C"},{"x":3.7423,"y":-1.5194,"z":0.9291,"el":"C"},{"x":-0.7755,"y":3.0515,"z":-1.1845,"el":"C"},{"x":3.5277,"y":-0.7082,"z":-1.3365,"el":"C"},{"x":-0.6282,"y":3.9444,"z":-0.1231,"el":"C"},{"x":4.2982,"y":-1.2893,"z":-0.3294,"el":"C"},{"x":-3.6479,"y":-1.4286,"z":-0.0566,"el":"C"},{"x":0.0248,"y":-0.4437,"z":1.4975,"el":"H"},{"x":-2.2674,"y":-0.8543,"z":1.498,"el":"H"},{"x":-2.5699,"y":0.3456,"z":0.2256,"el":"H"},{"x":0.4092,"y":1.7839,"z":2.282,"el":"H"},{"x":1.994,"y":-1.3531,"z":2.1633,"el":"H"},{"x":-0.6083,"y":1.039,"z":-1.8568,"el":"H"},{"x":1.6198,"y":0.0793,"z":-1.8892,"el":"H"},{"x":-0.0871,"y":4.1785,"z":1.9487,"el":"H"},{"x":4.3423,"y":-1.9722,"z":1.7131,"el":"H"},{"x":-1.1036,"y":3.4118,"z":-2.1551,"el":"H"},{"x":3.9598,"y":-0.5323,"z":-2.3173,"el":"H"},{"x":-0.8442,"y":4.999,"z":-0.2667,"el":"H"},{"x":5.3308,"y":-1.5633,"z":-0.5253,"el":"H"},{"x":-5.1667,"y":-2.6164,"z":0.7398,"el":"H"},{"x":-4.0022,"y":-2.105,"z":1.9058,"el":"H"}],"bonds":[{"a":0,"b":1,"order":2},{"a":0,"b":4,"order":1},{"a":0,"b":7,"order":1},{"a":2,"b":18,"order":2},{"a":3,"b":18,"order":1},{"a":3,"b":32,"order":1},{"a":3,"b":33,"order":1},{"a":4,"b":5,"order":1},{"a":4,"b":6,"order":1},{"a":4,"b":19,"order":1},{"a":5,"b":8,"order":2},{"a":5,"b":10,"order":1},{"a":6,"b":9,"order":2},{"a":6,"b":11,"order":1},{"a":7,"b":18,"order":1},{"a":7,"b":20,"order":1},{"a":7,"b":21,"order":1},{"a":8,"b":12,"order":1},{"a":8,"b":22,"order":1},{"a":9,"b":13,"order":1},{"a":9,"b":23,"order":1},{"a":10,"b":14,"order":2},{"a":10,"b":24,"order":1},{"a":11,"b":15,"order":2},{"a":11,"b":25,"order":1},{"a":12,"b":16,"order":2},{"a":12,"b":26,"order":1},{"a":13,"b":17,"order":2},{"a":13,"b":27,"order":1},{"a":14,"b":16,"order":1},{"a":14,"b":28,"order":1},{"a":15,"b":17,"order":1},{"a":15,"b":29,"order":1},{"a":16,"b":30,"order":1},{"a":17,"b":31,"order":1}]},noopept:{"na":45,"nb":46,"atoms":[{"x":-2.0589,"y":0.9488,"z":-1.3676,"el":"O"},{"x":0.7133,"y":-0.0565,"z":0.6729,"el":"O"},{"x":-2.2834,"y":-2.2099,"z":0.3085,"el":"O"},{"x":-4.1818,"y":-3.0089,"z":-0.717,"el":"O"},{"x":-0.123,"y":2.0309,"z":0.1254,"el":"N"},{"x":-3.1687,"y":0.2236,"z":0.5458,"el":"N"},{"x":-1.4284,"y":1.856,"z":0.7485,"el":"C"},{"x":-2.0126,"y":3.2619,"z":0.8248,"el":"C"},{"x":-1.3731,"y":3.9768,"z":-0.3629,"el":"C"},{"x":0.0239,"y":3.3777,"z":-0.4207,"el":"C"},{"x":-2.2324,"y":0.9671,"z":-0.1519,"el":"C"},{"x":0.8746,"y":1.0717,"z":0.2047,"el":"C"},{"x":2.2181,"y":1.485,"z":-0.341,"el":"C"},{"x":3.1978,"y":0.3581,"z":-0.2384,"el":"C"},{"x":-4.0847,"y":-0.6938,"z":-0.0927,"el":"C"},{"x":3.9813,"y":0.2172,"z":0.907,"el":"C"},{"x":3.327,"y":-0.5517,"z":-1.2879,"el":"C"},{"x":-3.5378,"y":-2.0971,"z":-0.2084,"el":"C"},{"x":4.8942,"y":-0.8331,"z":1.0029,"el":"C"},{"x":4.2398,"y":-1.6021,"z":-1.1919,"el":"C"},{"x":5.0234,"y":-1.7427,"z":-0.0465,"el":"C"},{"x":-1.6961,"y":-3.5134,"z":0.2366,"el":"C"},{"x":-0.3128,"y":-3.4655,"z":0.8498,"el":"C"},{"x":-1.3082,"y":1.399,"z":1.7368,"el":"H"},{"x":-3.1056,"y":3.2891,"z":0.7839,"el":"H"},{"x":-1.691,"y":3.7472,"z":1.7543,"el":"H"},{"x":-1.3587,"y":5.0642,"z":-0.2472,"el":"H"},{"x":-1.9233,"y":3.7418,"z":-1.2816,"el":"H"},{"x":0.7191,"y":3.9293,"z":0.2212,"el":"H"},{"x":0.4241,"y":3.3453,"z":-1.4376,"el":"H"},{"x":2.5859,"y":2.3555,"z":0.2146,"el":"H"},{"x":2.113,"y":1.7871,"z":-1.3892,"el":"H"},{"x":-3.2225,"y":0.3115,"z":1.5563,"el":"H"},{"x":-4.3159,"y":-0.3278,"z":-1.0975,"el":"H"},{"x":-4.9917,"y":-0.7222,"z":0.5177,"el":"H"},{"x":3.8886,"y":0.918,"z":1.7324,"el":"H"},{"x":2.7207,"y":-0.4544,"z":-2.1846,"el":"H"},{"x":5.5037,"y":-0.9432,"z":1.895,"el":"H"},{"x":4.3399,"y":-2.311,"z":-2.0086,"el":"H"},{"x":5.7338,"y":-2.5608,"z":0.0283,"el":"H"},{"x":-1.6271,"y":-3.8274,"z":-0.8109,"el":"H"},{"x":-2.3204,"y":-4.2241,"z":0.7896,"el":"H"},{"x":-0.3584,"y":-3.1015,"z":1.8815,"el":"H"},{"x":0.3292,"y":-2.7742,"z":0.2948,"el":"H"},{"x":0.1518,"y":-4.4555,"z":0.843,"el":"H"}],"bonds":[{"a":0,"b":10,"order":2},{"a":1,"b":11,"order":2},{"a":2,"b":17,"order":1},{"a":2,"b":21,"order":1},{"a":3,"b":17,"order":2},{"a":4,"b":6,"order":1},{"a":4,"b":9,"order":1},{"a":4,"b":11,"order":1},{"a":5,"b":10,"order":1},{"a":5,"b":14,"order":1},{"a":5,"b":32,"order":1},{"a":6,"b":7,"order":1},{"a":6,"b":10,"order":1},{"a":6,"b":23,"order":1},{"a":7,"b":8,"order":1},{"a":7,"b":24,"order":1},{"a":7,"b":25,"order":1},{"a":8,"b":9,"order":1},{"a":8,"b":26,"order":1},{"a":8,"b":27,"order":1},{"a":9,"b":28,"order":1},{"a":9,"b":29,"order":1},{"a":11,"b":12,"order":1},{"a":12,"b":13,"order":1},{"a":12,"b":30,"order":1},{"a":12,"b":31,"order":1},{"a":13,"b":15,"order":2},{"a":13,"b":16,"order":1},{"a":14,"b":17,"order":1},{"a":14,"b":33,"order":1},{"a":14,"b":34,"order":1},{"a":15,"b":18,"order":1},{"a":15,"b":35,"order":1},{"a":16,"b":19,"order":2},{"a":16,"b":36,"order":1},{"a":18,"b":20,"order":2},{"a":18,"b":37,"order":1},{"a":19,"b":20,"order":1},{"a":19,"b":38,"order":1},{"a":20,"b":39,"order":1},{"a":21,"b":22,"order":1},{"a":21,"b":40,"order":1},{"a":21,"b":41,"order":1},{"a":22,"b":42,"order":1},{"a":22,"b":43,"order":1},{"a":22,"b":44,"order":1}]}};</script>
 <script type="importmap">
 { "imports": {
   "three": "https://unpkg.com/three@0.184.0/build/three.module.js",
@@ -39,10 +44,15 @@
 } }
 </script>
 <script type="module">
-import * as THREE from 'three'
-import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js'
-import { RenderPass } from 'three/addons/postprocessing/RenderPass.js'
-import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js'
+const boot = document.getElementById('boot')
+function fail(msg){ boot.textContent = 'Hiba: ' + msg; boot.style.color = '#ff8080' }
+let THREE, EffectComposer, RenderPass, UnrealBloomPass
+try {
+  THREE = await import('three')
+  ;({ EffectComposer } = await import('three/addons/postprocessing/EffectComposer.js'))
+  ;({ RenderPass } = await import('three/addons/postprocessing/RenderPass.js'))
+  ;({ UnrealBloomPass } = await import('three/addons/postprocessing/UnrealBloomPass.js'))
+} catch (e) { fail('Three.js betöltés sikertelen (CDN): ' + e.message); throw e }
 
 const NEON = 0x39ff14
 const EL_COLOR = { C:0x8effb0, O:0xff5b6e, N:0x5aa9ff, S:0xffe14d, P:0xff9a3d, F:0x7dffe0, Cl:0x7dff8a, H:0xbfeccf }
@@ -50,7 +60,7 @@ const EL_R = { C:0.20, O:0.22, N:0.21, S:0.28, P:0.27, F:0.18, Cl:0.24, H:0.12 }
 
 function cylinderBetween(p1, p2, radius, mat) {
   const dir = new THREE.Vector3().subVectors(p2, p1)
-  const len = dir.length()
+  const len = Math.max(dir.length(), 0.001)
   const geo = new THREE.CylinderGeometry(radius, radius, len, 10, 1, true)
   const mesh = new THREE.Mesh(geo, mat)
   mesh.position.copy(p1).add(p2).multiplyScalar(0.5)
@@ -59,7 +69,8 @@ function cylinderBetween(p1, p2, radius, mat) {
 }
 
 function buildPanel(canvas, data, style) {
-  const w = canvas.clientWidth, h = 360
+  const w = Math.max(canvas.clientWidth || canvas.parentElement.clientWidth || 480, 200)
+  const h = 360
   const renderer = new THREE.WebGLRenderer({ canvas, antialias:true, alpha:true })
   renderer.setPixelRatio(Math.min(devicePixelRatio, 2))
   renderer.setSize(w, h, false)
@@ -69,15 +80,13 @@ function buildPanel(canvas, data, style) {
   scene.add(new THREE.AmbientLight(0xffffff, 0.5))
   const key = new THREE.PointLight(0xffffff, 60, 100); key.position.set(6,8,10); scene.add(key)
 
-  // heavy-atom skeleton (skip H for the classic structural look)
   const keep = data.atoms.map(a => a.el !== 'H')
   const cen = { x:0, y:0, z:0 }; let n=0
   data.atoms.forEach((a,i)=>{ if(keep[i]){ cen.x+=a.x; cen.y+=a.y; cen.z+=a.z; n++ } })
-  cen.x/=n; cen.y/=n; cen.z/=n
-  let maxR=0; data.atoms.forEach((a,i)=>{ if(keep[i]){ const d=Math.hypot(a.x-cen.x,a.y-cen.y,a.z-cen.z); if(d>maxR)maxR=d } })
+  cen.x/=n||1; cen.y/=n||1; cen.z/=n||1
+  let maxR=0.001; data.atoms.forEach((a,i)=>{ if(keep[i]){ const d=Math.hypot(a.x-cen.x,a.y-cen.y,a.z-cen.z); if(d>maxR)maxR=d } })
   const S = 4.4 / maxR
   const pos = data.atoms.map(a => new THREE.Vector3((a.x-cen.x)*S, (a.y-cen.y)*S, (a.z-cen.z)*S))
-
   const group = new THREE.Group(); scene.add(group)
 
   if (style === 'ballstick') {
@@ -88,25 +97,23 @@ function buildPanel(canvas, data, style) {
       s.position.copy(pos[i]); group.add(s)
     })
   }
-
   const bondMat = new THREE.MeshStandardMaterial({ color:NEON, emissive:NEON, emissiveIntensity:0.5, roughness:0.4, metalness:0.05 })
   const pulses = []
   const bondR = style==='ballstick' ? 0.075 : 0.055
   data.bonds.forEach(b=>{ if(!keep[b.a]||!keep[b.b]) return
     group.add(cylinderBetween(pos[b.a], pos[b.b], bondR, bondMat))
-    const pm = new THREE.MeshBasicMaterial({ color:0xeafff0 })
-    const pulse = new THREE.Mesh(new THREE.SphereGeometry(style==='ballstick'?0.13:0.10, 10, 10), pm)
+    const pulse = new THREE.Mesh(new THREE.SphereGeometry(style==='ballstick'?0.13:0.10, 10, 10), new THREE.MeshBasicMaterial({ color:0xeafff0 }))
     group.add(pulse); pulses.push({ pulse, p1:pos[b.a], p2:pos[b.b], phase:Math.random()*Math.PI*2 })
   })
 
-  const composer = new EffectComposer(renderer)
-  composer.addPass(new RenderPass(scene, cam))
-  composer.addPass(new UnrealBloomPass(new THREE.Vector2(w,h), 0.9, 0.7, 0.2))
-
-  return { renderer, composer, group, pulses, cam }
+  let composer = null
+  try {
+    composer = new EffectComposer(renderer)
+    composer.addPass(new RenderPass(scene, cam))
+    composer.addPass(new UnrealBloomPass(new THREE.Vector2(w,h), 0.9, 0.7, 0.2))
+  } catch (e) { composer = null }
+  return { renderer, composer, scene, cam, group, pulses }
 }
-
-async function load(name){ const r = await fetch('/mol3d/'+name+'.json'); return r.json() }
 
 const layout = [
   { name:'modafinil', label:'Modafinil', style:'ballstick', styleLabel:'① Ball-and-stick' },
@@ -116,16 +123,31 @@ const layout = [
 ]
 
 const grid = document.getElementById('grid')
-const panels = []
-for (const item of layout) {
+const cells = layout.map(item => {
   const cell = document.createElement('div'); cell.className='cell'
   const cap = document.createElement('div'); cap.className='cap'
-  cap.innerHTML = `<b>${item.label}</b> · <span class="style">${item.styleLabel}</span>`
+  cap.innerHTML = '<b>' + item.label + '</b> · <span class="style">' + item.styleLabel + '</span>'
   const canvas = document.createElement('canvas')
   cell.appendChild(canvas); cell.appendChild(cap); grid.appendChild(cell)
-  const data = await load(item.name)
-  panels.push(buildPanel(canvas, data, item.style))
+  return { item, cell, canvas }
+})
+
+// Build AFTER layout so canvas width is valid.
+await new Promise(r => requestAnimationFrame(() => requestAnimationFrame(r)))
+
+const panels = []
+for (const c of cells) {
+  try {
+    const data = window.__MOLDATA__[c.item.name]
+    if (!data) throw new Error('nincs molekula-adat: ' + c.item.name)
+    panels.push(buildPanel(c.canvas, data, c.item.style))
+  } catch (e) {
+    const err = document.createElement('div'); err.className='err'; err.textContent = c.item.label + ': ' + e.message
+    c.cell.appendChild(err)
+  }
 }
+boot.style.display = panels.length ? 'none' : 'block'
+if (!panels.length) fail('egy panel sem épült fel')
 
 let t0 = performance.now()
 function frame(now){
@@ -134,11 +156,11 @@ function frame(now){
     p.group.rotation.y = t * 0.4
     p.group.rotation.x = Math.sin(t*0.25) * 0.25
     for (const b of p.pulses) {
-      const u = (Math.sin(t * 1.6 + b.phase) + 1) / 2  // oda-vissza
+      const u = (Math.sin(t * 1.6 + b.phase) + 1) / 2
       b.pulse.position.lerpVectors(b.p1, b.p2, u)
       b.pulse.material.color.setScalar(0.7 + 0.3*Math.sin(t*6 + b.phase))
     }
-    p.composer.render()
+    if (p.composer) p.composer.render(); else p.renderer.render(p.scene, p.cam)
   }
   requestAnimationFrame(frame)
 }
