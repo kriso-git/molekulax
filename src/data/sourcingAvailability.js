@@ -31,9 +31,12 @@ export const SOURCING_PARTNERS = {
   pctzone: {
     name: 'PCTZONE',
     logo: '/sourcing/pctzone.png',
-    // WooCommerce product page. ?coupon=molekulax applies the MOLEKULAX discount;
-    // the code is also surfaced so the visitor can enter it manually if needed.
-    productUrl: (slug) => `https://pctzone.su/product/${slug}/?coupon=molekulax`,
+    // WooCommerce product page with the coupon auto-applied. The shop's own
+    // ?coupon= param 404s on product pages, but the WooCommerce-standard
+    // ?coupon-code= loads the product AND applies the MOLEKULAX coupon
+    // (verified: the cart shows an active coupon). Code still surfaced as a
+    // visible fallback.
+    productUrl: (slug) => `https://pctzone.su/product/${slug}/?coupon-code=molekulax`,
     coupon: 'MOLEKULAX',
   },
 }
