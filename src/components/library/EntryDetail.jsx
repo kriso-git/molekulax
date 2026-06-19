@@ -1195,11 +1195,6 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  return (
  <div
  className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto"
- style={{
- background: 'var(--bg-modal-fade)',
- backdropFilter: 'blur(20px)',
- WebkitBackdropFilter: 'blur(20px)',
- }}
  onClick={onClose}
  >
  <div
