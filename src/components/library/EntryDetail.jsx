@@ -510,16 +510,16 @@ function InteractionsOrbit({ items, tr }) {
 // ─── Safety triptych, three glass columns ─────────────────────────
 function SafetyTriptych({ profile, accent, tr, t }) {
  if (!profile) return null
+ // "Mikor hagyd abba a használatot" (stop) oszlop eltávolítva minden kártyáról
+ // (owner kérés) — marad a Mellékhatások + Ellenjavallatok kétoszlopos elrendezés.
  const cols = [
  { id: 'side', color: '#fbbf24', icon: AlertTriangle, items: profile.sideEffects,
  heading: t('entry.safe.side') || 'Mellékhatások' },
- { id: 'stop', color: '#f87171', icon: XCircle, items: profile.whenToStop,
- heading: t('entry.safe.stop') || 'Mikor hagyd abba a használatot' },
  { id: 'contra', color: '#a78bfa', icon: Shield, items: profile.contraindications,
  heading: t('entry.safe.contra') || 'Ellenjavallatok' },
  ]
  return (
- <div className="grid md:grid-cols-3 gap-3">
+ <div className="grid md:grid-cols-2 gap-3">
  {cols.map(col => {
  const Icon = col.icon
  return (
@@ -1139,11 +1139,9 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  const { theme } = useTheme()
  const { library } = useLibrary()
  const isLight = theme === 'light'
- // Phase 10: calculator only on libraries with features.calculator (peptides).
- const hasCalc = !!(library?.features?.calculator
- && peptide.miniCalc?.vialMg
- && peptide.miniCalc?.bacMl
- && peptide.miniCalc?.doseMcg)
+ // Calculator section ("Beépített kalkulátor") removed from ALL cards (owner kérés),
+ // so the "Dózis kalkulátor" jump-CTA is disabled too (would scroll to nothing).
+ const hasCalc = false
  // Phase 10: dynamic library-name-driven label takes precedence over labels.relatedLabel.
  const relatedLabel = getRelatedLabel(library, lang)
  const [tab, setTab] = useState('molecular')
@@ -1689,24 +1687,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </section>
  )}
 
- {/* ─── EXPECTATIONS TIMELINE ─── */}
- {peptide.expectations?.length > 0 && (
- <section className="relative px-6 sm:px-10 pb-10">
- <Eyebrow icon={TimerReset} label={t('entry.exp.label') || 'Mire számíts'} accent={accent} />
- <h3 className="text-xl font-bold tracking-tight mb-5" style={{ color: 'var(--text-primary)' }}>
- {t('entry.exp.title') || 'Időzítés és várható hatások'}
- </h3>
- <div
- className="relative p-6 rounded-2xl overflow-x-auto"
- style={{
- background: 'var(--tint-soft)',
- border: '1px solid var(--tint-soft-border)',
- }}
- >
- <ExpectationsTimeline items={peptide.expectations} accent={accent} tr={tr} />
- </div>
- </section>
- )}
+ {/* EXPECTATIONS TIMELINE ("Időzítés és várható hatások") eltávolítva minden kártyáról (owner kérés). */}
 
  {/* ─── DOSING (separate section) ─── Phase 10 flag-gated ─── */}
  {library?.features?.doseRecommendations && peptide.dosing && (peptide.dosing.notes || peptide.dosing.typical || peptide.dosing.range || peptide.dosing.timeline?.length > 0) && (
@@ -1852,79 +1833,8 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
 
  {/* ─── FAQ CONSOLE ─── Phase 10: removed entirely (features.faq is false across all libraries) ─── */}
 
- {/* ─── CALCULATOR ─── Phase 10 flag-gated, peptide MiniCalc only.
- v0.27 family-aware: non-injection families (in/oral/ac-oral/inhaled/topical)
- render a fixed-dose info card from variant.dosing; injection families
- (sc/im) and entries without variants render the vial+BAC MiniCalc.
- The `> 0` truthy-guard guards against entries whose entry-level
- defaultVialMg/BacMl are 0 (placeholder); variant-level overrides
- must supply >0 values to render the MiniCalc. */}
- {(() => {
- if (!library?.features?.calculator) return null
- // v0.27.1: Info-card branch fires for all non-peptide variants that have
- // a structured `dosing.notes` string. This includes oral/inhaled/topical/
- // intranasal (non-injection) AND injectable AAS esters (prop/enan/cyp/etc.)
- // where a peptide-style MiniCalc (μg/IU/insulin-syringe) does not fit the
- // mg/ml IM oil-vial mental model. Only peptide entries with miniCalc>0 fall
- // through to the MiniCalc branch.
- if (library?.id === 'peptides') {
- // Peptides: info-card only for IN nasal-spray (v0.26 precedent)
- if (peptide._activeVariantId !== 'in') return false
- return !!peptide.dosing?.notes
- }
- // Non-peptide libraries (performance + pharmaceutical): info-card for ALL
- // variants that have a structured dosing.notes string. doseCalc.note added
- // as second paragraph when present.
- return !!peptide.dosing?.notes
- })() && (
- <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
- <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
- <div
- className="relative p-6 rounded-2xl"
- style={{
- background: `linear-gradient(135deg, ${accent}22, transparent 70%)`,
- border: `1px solid ${accent}44`,
- }}
- >
- <p className="text-[10px] tracking-[0.3em] uppercase font-bold mb-2" style={{ color: accent }}>
- {tr({ hu: 'Ajánlott adagolás', en: 'Recommended dose', pl: 'Zalecane dawkowanie' })}
- </p>
- <p className="text-base leading-relaxed font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>
- {peptide.dosing.notes}
- </p>
- {peptide.doseCalc?.note && (
- <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
- {tr(peptide.doseCalc.note)}
- </p>
- )}
- </div>
- </section>
- )}
- {(() => {
- if (!library?.features?.calculator) return null
- // MiniCalc (peptide vial/BAC/dose μg widget) is now peptide-only and only
- // for non-IN variants (SC). Non-peptide libraries use the info-card above.
- if (library?.id !== 'peptides') return false
- if (peptide._activeVariantId === 'in') return false
- return peptide.miniCalc?.vialMg > 0 && peptide.miniCalc?.bacMl > 0 && peptide.miniCalc?.doseMcg > 0
- })() && (
- <section id="v2-calc" className="relative px-6 sm:px-10 pb-10">
- <Eyebrow icon={Calculator} label={t('entry.sec.calc.eyebrow') || 'Dózis kalkulátor'} accent={accent} />
- <div
- className="relative p-2 rounded-2xl"
- style={{
- background: `linear-gradient(135deg, ${accent}22, transparent 70%)`,
- border: `1px solid ${accent}44`,
- }}
- >
- <MiniCalc
- defaultVialMg={peptide.miniCalc.vialMg}
- defaultBacMl={peptide.miniCalc.bacMl}
- defaultDoseMcg={peptide.miniCalc.doseMcg}
- />
- </div>
- </section>
- )}
+ {/* CALCULATOR section ("Beépített kalkulátor": dózis info-card + peptid MiniCalc widget)
+ eltávolítva MINDEN kártyáról (owner kérés). */}
 
  {/* ─── Telegram CTA ─── */}
  <section id="v2-tg" className="relative px-6 sm:px-10 pb-10">
