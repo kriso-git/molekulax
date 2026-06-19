@@ -12,6 +12,8 @@
 // All three modes share the same HUD shell so the gallery reads consistently.
 
 import { useMemo, useState } from 'react'
+import { MOL_VIZ } from './molViz'
+import MoleculeVideo from './MoleculeVideo'
 
 const CHEMICAL_GREEN = '#00ff99'
 
@@ -220,6 +222,23 @@ export default function ChemicalFormulaPlaceholder({ formula, name, entryId, acc
     const rs = parsed.length > 1 ? parsed : splitToTwoRows(parsed[0] || [])
     return { rows: rs, sizeClass: sc }
   }, [formula])
+
+  // ── 1a. Rotating 3D structure loop (pre-rendered webm) ────────────
+  // For nootropics with a pre-rendered molecule loop, the static 2D PNG is
+  // replaced by an IO-gated, pre-rendered rotating ball-and-stick webm (its
+  // own .jpg still is the poster, so no blank flash). Same perf-safe pattern
+  // as the card motifs: nothing runs at runtime until it scrolls into view.
+  if (hasImage && MOL_VIZ.has(entryId)) {
+    return (
+      <PlaceholderShell ariaLabel={`${name || entryId} forgó 3D kémiai szerkezet`} className={className} cornerColor={accent}>
+        <MoleculeVideo
+          entryId={entryId}
+          name={name || entryId}
+          className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
+        />
+      </PlaceholderShell>
+    )
+  }
 
   // ── 1. Structural image (preferred) ──────────────────────────────
   if (hasImage) {

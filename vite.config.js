@@ -50,6 +50,19 @@ export default defineConfig({
             },
           },
           {
+            // pre-rendered rotating 3D chemical-structure loops + posters (the
+            // nootropic entry/gallery visuals). CacheFirst, NOT precached (37
+            // entries × ~0.9 MB would bloat the SW install). status 0 covers the
+            // media range requests for the webm.
+            urlPattern: /\/mol-viz\/.*\.(?:webm|jpg)$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'mol-viz',
+              expiration: { maxEntries: 100, maxAgeSeconds: 30 * 24 * 60 * 60 },
+              cacheableResponse: { statuses: [0, 200] },
+            },
+          },
+          {
             urlPattern: /\.woff2$/,
             handler: 'CacheFirst',
             options: {
