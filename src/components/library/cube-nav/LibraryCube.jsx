@@ -30,6 +30,7 @@ export default function LibraryCube() {
   const cubeRef = useRef(null)
   const busyRef = useRef(false)
   const touchRef = useRef(null)
+  const dirRef = useRef('fwd')
   const [, force] = useReducer((x) => x + 1, 0)
 
   // Render straight from the synchronous cache (getLibrary) so that, inside the
@@ -71,9 +72,18 @@ export default function LibraryCube() {
     const id = targetId(idx)
     if (id === libraryId || busyRef.current) return // ignore clicks mid-rotation
     busyRef.current = true
+    dirRef.current = dir
     try {
-      await loadLibrary(id) // preload so the new snapshot is the real gallery
-      if (!supportsVT) { setLibraryId(id); return }
+      await loadLibrary(id) // preload so the swap is instant (no skeleton/jump)
+      const mobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches
+      if (mobile || !supportsVT) {
+        // Phone: NO View Transition — its flushSync snapshot blocks the main thread
+        // ~1s on mobile (the felt delay). Plain swap + a light CSS slide-in driven by
+        // the key-remount (data-libdir) instead; renders async, never freezes.
+        setLibraryId(id)
+        await new Promise((r) => setTimeout(r, 340))
+        return
+      }
       const root = document.documentElement
       // Put the two snapshots on real cube faces: half = cube width / 2 (translateZ
       // in the keyframes); comp cancels the perspective enlargement at the front so
@@ -135,7 +145,7 @@ export default function LibraryCube() {
       onKeyDown={handleKeyDown}
       onTouchStart={onTouchStart}
       onTouchEnd={onTouchEnd}
-      className="relative outline-none py-28 px-4 scroll-mt-24"
+      className="relative outline-none py-28 px-4 scroll-mt-24 overflow-x-clip"
     >
       <span className="sr-only" aria-live="polite" aria-atomic="true">
         {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
@@ -165,32 +175,36 @@ export default function LibraryCube() {
         role="tabpanel"
         aria-labelledby={`lib-tab-${library.id}`}
       >
-        {ready ? (
-          <LibraryContext.Provider
-            value={{
-              library: data,
-              libraryId,
-              setLibraryId,
-              availableLibraries: libraries,
-              isLoading: false,
-            }}
-          >
-            <LibraryGallery
-              dotsLibraries={libraries}
-              dotsCurrentIndex={currentIndex}
-              onDotsJumpTo={goJump}
-            />
-            {data.id !== 'performance' && <EffectsSection />}
-            {data.id === 'peptides' && <Calculator />}
-          </LibraryContext.Provider>
-        ) : (
-          <div
-            className="flex items-center justify-center text-2xl font-black tracking-[0.2em] uppercase"
-            style={{ minHeight: 600, color: library.accent }}
-          >
-            {library.name[lang]}
-          </div>
-        )}
+        {/* key remounts on switch — on phones .lib-frame plays a CSS slide-in (CSS
+            in index.css, mobile-only); on desktop the View Transition handles it. */}
+        <div key={libraryId} className="lib-frame" data-libdir={dirRef.current}>
+          {ready ? (
+            <LibraryContext.Provider
+              value={{
+                library: data,
+                libraryId,
+                setLibraryId,
+                availableLibraries: libraries,
+                isLoading: false,
+              }}
+            >
+              <LibraryGallery
+                dotsLibraries={libraries}
+                dotsCurrentIndex={currentIndex}
+                onDotsJumpTo={goJump}
+              />
+              {data.id !== 'performance' && <EffectsSection />}
+              {data.id === 'peptides' && <Calculator />}
+            </LibraryContext.Provider>
+          ) : (
+            <div
+              className="flex items-center justify-center text-2xl font-black tracking-[0.2em] uppercase"
+              style={{ minHeight: 600, color: library.accent }}
+            >
+              {library.name[lang]}
+            </div>
+          )}
+        </div>
       </div>
     </section>
   )

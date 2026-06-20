@@ -498,24 +498,16 @@
 @keyframes vt-cube-old-back { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(90deg)  translateZ(var(--vt-half,0px)); } }
 @keyframes vt-cube-new-back { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(-90deg) translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } }
 
-/* Phone: a simple horizontal slide + fade instead of the 3D cube (lighter, and
-   the cube's perspective reads awkwardly on a narrow viewport). */
+/* Phone: the library switch is NOT a View Transition — its flushSync snapshot
+   costs ~1s of main-thread jank on a mobile CPU (the felt delay). Instead the
+   gallery wrapper (.lib-frame) remounts on switch and plays this light CSS
+   slide-in; data-libdir (fwd/back) is set in LibraryCube. Async render, no freeze. */
 @media (max-width: 767px) {
-  /* Clip the snapshot to ~viewport so the GPU isn't compositing a 5000px-tall
-     texture (that made the slide low-fps and slow to capture → the felt delay).
-     For a horizontal slide the cut sits at the fold, off-screen, so it never shows. */
-  :root[data-vt-dir] .vt-cube { max-height: 100vh; overflow: hidden; }
-  ::view-transition-old(library-view),
-  ::view-transition-new(library-view) { animation-duration: 0.34s; }
-  :root[data-vt-dir="fwd"]::view-transition-old(library-view) { animation-name: vt-slide-out-left; }
-  :root[data-vt-dir="fwd"]::view-transition-new(library-view) { animation-name: vt-slide-in-right; }
-  :root[data-vt-dir="back"]::view-transition-old(library-view) { animation-name: vt-slide-out-right; }
-  :root[data-vt-dir="back"]::view-transition-new(library-view) { animation-name: vt-slide-in-left; }
+  .lib-frame[data-libdir="fwd"]  { animation: lib-in-right 0.32s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .lib-frame[data-libdir="back"] { animation: lib-in-left  0.32s cubic-bezier(0.22, 1, 0.36, 1) both; }
 }
-@keyframes vt-slide-out-left  { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-26%); opacity: 0; } }
-@keyframes vt-slide-in-right  { from { transform: translateX(26%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
-@keyframes vt-slide-out-right { from { transform: translateX(0); opacity: 1; } to { transform: translateX(26%); opacity: 0; } }
-@keyframes vt-slide-in-left   { from { transform: translateX(-26%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes lib-in-right { from { transform: translateX(38%);  opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes lib-in-left  { from { transform: translateX(-38%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 
 /* Phone swipe hint chevrons — gently nudge outward */
 @keyframes vt-swipe-left  { 0%, 100% { transform: translateX(0); opacity: 0.5; } 50% { transform: translateX(-3px); opacity: 1; } }
