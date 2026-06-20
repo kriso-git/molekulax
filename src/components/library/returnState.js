@@ -2,7 +2,7 @@
 //
 // Pipeline:
 // - Publisher (LibraryGallery.openEntry): sessionStorage.setItem on tile click.
-// - Consumer (EntryDetailRoute.closeDetail + hashchange listener): consumeReturnState()
+// - Consumer (EntryDetailRoute.closeDetail + LibraryContext popstate listener): consumeReturnState()
 //   reads + clears the snapshot, returns the parsed object (or null on miss/stale/error).
 // - Restore site (LibraryGallery useEffect on library.id, Task C.3): reads
 //   window.__libraryGalleryPendingRestore__ which the consumer publishes.

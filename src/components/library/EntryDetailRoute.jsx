@@ -1,4 +1,4 @@
-// Hash-driven route that mounts EntryDetail in the right form factor
+// Path-driven route that mounts EntryDetail in the right form factor
 // (desktop full-page, mobile modal). Phase 9: fetches the entry data via
 // loadEntry() so deep-link landings download only the requested entry,
 // not the full library. Reacts to loading/error states with skeleton +
@@ -32,8 +32,8 @@ export default function EntryDetailRoute({ route }) {
   const [retryCounter, setRetryCounter] = useState(0)
   const [redirectId, setRedirectId] = useState(null)
 
-  // Sync the active library context with the hash. If a visitor deep-links
-  // to #entry/nootropics/<id> while the in-memory library is still the
+  // Sync the active library context with the path. If a visitor deep-links
+  // to /nootropikumok/<id> while the in-memory library is still the
   // default 'peptides', closeDetail() would land on the wrong gallery.
   useEffect(() => {
     if (parsed?.library && parsed.library !== libraryId) {
@@ -59,13 +59,16 @@ export default function EntryDetailRoute({ route }) {
     // Deprecated entry redirect-flash (post-roadmap 2026-05-20).
     // Library.deprecatedIds is set in LIBRARY_META (sync, deep-link-ready)
     // and on the full peptidesLibrary object. EntryDetailRoute shows
-    // RedirectFlash for 1.8s, then hash-navs to library top.
+    // RedirectFlash for 1.8s, then navigates to the library landing.
     const lib = getLibrary(parsed.library)
     if (lib?.deprecatedIds?.includes(parsed.id)) {
       setRedirectId(parsed.id)
       setEntry(null)
       setError(null)
       setLoading(false)
+      // A deep-link onto a deprecated entry may carry a stale gallery snapshot;
+      // clear it so it can't strand in sessionStorage until its TTL.
+      consumeReturnState()
       const timer = setTimeout(() => {
         if (!cancelled) { navigate(libraryPath(parsed.library)) }
       }, 1800)
@@ -104,9 +107,9 @@ export default function EntryDetailRoute({ route }) {
   }, [parsed?.library, parsed?.id, lang, loadEntry, getCachedEntry, retryCounter])
 
   // Library-aware close: snap the LibraryContext to the current library
-  // BEFORE the hash change re-renders the landing, then nav to #library.
-  // If the hash already equals '#library' (e.g. user pressed Back twice),
-  // fall back to a manual scrollIntoView so the user still moves.
+  // BEFORE navigating, then navigate to the library landing path. If we're
+  // already on that path (e.g. user pressed Back twice), fall back to a
+  // manual scrollIntoView so the user still moves.
   const closeDetail = () => {
     if (typeof window === 'undefined') return
     const restoreData = consumeReturnState()
