@@ -29,6 +29,7 @@ const ROUTES = [
   { label: 'entry — peptides/retatrutide (QualityGrid)', lib: null, path: '/peptidek/retatrutide' },
   { label: 'entry — nootropics/semax', lib: null, path: '/nootropikumok/semax' },
   { label: 'entry — performance/testosterone-info', lib: null, path: '/teljesitmenyfokozok/testosterone-info' },
+  { label: 'library landing — /peptidek', lib: null, path: '/peptidek' },
 ]
 
 async function waitForServer(url, tries = 60) {

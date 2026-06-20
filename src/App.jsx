@@ -1,4 +1,4 @@
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 import Hero from './components/Hero'
@@ -16,7 +16,7 @@ import { useDocumentHead } from './seo/useDocumentHead'
 import { listLibraries } from './data/libraries'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
-import { LibraryProvider } from './context/LibraryContext'
+import { LibraryProvider, useLibrary } from './context/LibraryContext'
 
 // LibraryCube + framer-motion are split into a separate chunk via React.lazy
 // so the initial bundle doesn't carry ~80 KiB of animation runtime that
@@ -57,6 +57,20 @@ function libraryNameFor(libId) {
   return lib ? lib.name.hu : null // Phase 1 = HU
 }
 
+// When the path is a library landing (/peptidek …), make that library active so
+// the cube shows the matching gallery. Cold loads are already covered by
+// LibraryContext.readInitialLibraryId; this hardens browser back/forward and any
+// later in-app library-landing navigation. LibraryCube owns the scroll-into-view.
+function LibraryLandingSync({ route }) {
+  const { libraryId, setLibraryId } = useLibrary()
+  useEffect(() => {
+    if (route.kind === 'library' && route.library !== libraryId) {
+      setLibraryId(route.library)
+    }
+  }, [route.kind, route.library, libraryId, setLibraryId])
+  return null
+}
+
 export default function App() {
   const path = useLocationPath()
   const route = parsePath(path)
@@ -82,6 +96,7 @@ export default function App() {
           <Analytics />
           <SpeedInsights />
           <BackgroundLayer />
+          <LibraryLandingSync route={route} />
           <LanguageSwitcher />
           <div className="relative z-10">
             {!hideLanding && (
