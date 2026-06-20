@@ -6,7 +6,7 @@ import path from 'node:path'
 
 const BASE_URL = 'https://dopamine.club'
 const OUT_DIR = 'scripts/data-pipeline/cache/raw/dopamine'
-const USER_AGENT = 'MolekulaX-Education/1.0 (educational research; contact: petrikkristof66@gmail.com)'
+const USER_AGENT = 'MolekulaX-Education/1.0 (educational research; contact: molekulaxtra@gmail.com)'
 const DELAY_MS = 1000
 
 const turndown = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' })
