@@ -32,3 +32,5 @@ v030-resolve-output.json
 v030-resolve-round2.json
 pmid-fixes/
 
+# Visual regression baseline PNGs (local only, not committed)
+scripts/.visual-baseline/
