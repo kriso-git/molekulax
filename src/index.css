@@ -457,3 +457,43 @@
 }
 .cube-nav-arrow { animation: cubeNavPulse 2.6s ease-in-out infinite; }
 .cube-nav-arrow:hover, .cube-nav-arrow:focus-visible { animation: none; }
+
+/* ── Library cube via the View Transitions API ───────────────────────────
+   On a library switch the browser natively snapshots the old + new gallery and we
+   animate the two flat snapshots as a 3D cube rotation. Because it transforms
+   cached images (not the live DOM), the turn stays smooth no matter how heavy the
+   galleries are. Direction is data-vt-dir on <html>; the named element is clipped
+   to ~viewport height during capture so the rotation pivots around the screen
+   centre, not the middle of a 5000px gallery. */
+.vt-cube { view-transition-name: library-view; }
+/* No clip: the full gallery (incl. the educational/effects section at the bottom)
+   is snapshotted and rotates as one face. A large perspective (16000px, like the
+   original cube) keeps even a tall expanded gallery from distorting during the
+   turn, so there's no cut-off edge swinging into view and nothing pops on arrival. */
+
+/* don't clip the cube faces as they translateZ/rotate out of the group box */
+::view-transition-group(library-view),
+::view-transition-image-pair(library-view) { overflow: visible; }
+
+::view-transition-old(library-view),
+::view-transition-new(library-view) {
+  backface-visibility: hidden;
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  animation-fill-mode: both;
+  mix-blend-mode: normal;
+}
+:root[data-vt-dir="fwd"]::view-transition-old(library-view) { transform-origin: center center; animation-name: vt-cube-old-fwd; }
+:root[data-vt-dir="fwd"]::view-transition-new(library-view) { transform-origin: center center; animation-name: vt-cube-new-fwd; }
+:root[data-vt-dir="back"]::view-transition-old(library-view) { transform-origin: center center; animation-name: vt-cube-old-back; }
+:root[data-vt-dir="back"]::view-transition-new(library-view) { transform-origin: center center; animation-name: vt-cube-new-back; }
+
+/* The two snapshots sit on REAL cube faces: translateZ(--vt-half) pushes each out
+   to the cube surface and they rotate around the cube CENTRE — so the next face
+   swings in from the side instead of both crossing through the middle. scale
+   (--vt-comp) cancels the perspective enlargement so the front face is 1:1.
+   --vt-half (= cube width / 2) and --vt-comp are set per-switch in JS. */
+@keyframes vt-cube-old-fwd  { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(-90deg) translateZ(var(--vt-half,0px)); } }
+@keyframes vt-cube-new-fwd  { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(90deg)  translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } }
+@keyframes vt-cube-old-back { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(90deg)  translateZ(var(--vt-half,0px)); } }
+@keyframes vt-cube-new-back { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(-90deg) translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } }

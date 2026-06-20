@@ -1,104 +1,59 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { useLibrary } from '../../../context/LibraryContext'
+import { useEffect, useReducer, useRef } from 'react'
+import { flushSync } from 'react-dom'
+import { LibraryContext, useLibrary } from '../../../context/LibraryContext'
 import { useLang } from '../../../i18n/LanguageContext'
-import { useMediaQuery } from '../../../hooks/useMediaQuery'
+import { listLibraries, loadLibrary, getLibrary } from '../../../data/libraries'
 import LibraryGallery from '../../LibraryGallery'
 import Calculator from '../../Calculator'
 import EffectsSection from '../EffectsSection'
-import { useCubeIndex } from './useCubeIndex'
-import CubeFace from './CubeFace'
 import CubeNavControls from './CubeNavControls'
 
 const LIBRARY_WORD = { hu: 'könyvtár', en: 'library', pl: 'biblioteka' }
 
-// Tween instead of spring for smoothness — spring physics can produce
-// micro-jitter from oscillation, tween gives a clean monotonic curve.
-// 850ms power3-ease-out feels deliberate without dragging.
-const ROTATION_TRANSITION = {
-  type: 'tween',
-  duration: 0.7,
-  ease: [0.22, 1, 0.36, 1],
-}
-
-const HEIGHT_TWEEN = {
-  type: 'tween',
-  duration: 0.5,
-  ease: [0.16, 1, 0.3, 1],
-}
-
-const PERSPECTIVE_PX = 16000
-
-const SWIPE_DIST = 60
-const SWIPE_VELOCITY = 300
+// View Transitions API: on switch, the browser natively snapshots the old + new
+// library states as GPU images and we animate the two flat snapshots as a 3D cube
+// rotation (CSS in index.css, ::view-transition-old/new(library-view)). Because it
+// transforms cached images — not the live DOM — the turn is smooth regardless of
+// how heavy the galleries are. Falls back to an instant swap where unsupported.
+const supportsVT =
+  typeof document !== 'undefined' && typeof document.startViewTransition === 'function'
 
 export default function LibraryCube() {
   const { library, libraryId, setLibraryId } = useLibrary()
   const { lang } = useLang()
-  const { currentIndex, rotationDeg, isFirstRender, libraries, next, prev, jumpTo } =
-    useCubeIndex(libraryId, setLibraryId)
-
-  // Design decision (Phase 7, 2026-05-17): the 3D cube is the primary
-  // library navigation paradigm, NOT decorative animation — disabling it
-  // under `prefers-reduced-motion` would hide the entire navigation
-  // affordance. Smoke iter confirmed users with OS reduce-motion ON still
-  // expect the cube to rotate. The cross-fade branch below is kept as
-  // dead-code in case we later add an explicit in-app "Reduce motion"
-  // toggle that opts into it. WCAG 2.3.3 exemption: every cube rotation
-  // is user-input-triggered (swipe/click/keyboard), never autoplay.
-  const reduceMotion = false
-  const isTouch = useMediaQuery('(pointer: coarse)')
-  const wrapperRef = useRef(null)
+  const libraries = listLibraries()
+  const count = libraries.length
+  const currentIndex = Math.max(0, libraries.findIndex((l) => l.id === libraryId))
   const sectionRef = useRef(null)
-  const [halfWidth, setHalfWidth] = useState(0)
-  const [faceHeights, setFaceHeights] = useState({ 0: 0, 1: 0, 2: 0, 3: 0 })
+  const cubeRef = useRef(null)
+  const busyRef = useRef(false)
+  const [, force] = useReducer((x) => x + 1, 0)
 
-  // 3D vs 2D rendering mode. During rotation: preserve-3d + faces 3D-transformed
-  // (cube paradigm). After settle: flat + active-face transform:none + inactive
-  // faces display:none. Reason — `transform-style: preserve-3d` + a `transform:
-  // rotateY(...)` ancestor keeps the active face on a GPU compositing layer that
-  // produces sub-pixel-blurry text/imagery in steady state. Switching to "flat"
-  // post-settle releases the GPU layer → crisp 2D rendering. Re-enabled on next
-  // rotation trigger so the cube animation still plays. Driven by Framer Motion
-  // onAnimationStart/Complete (NOT useEffect[rotationDeg] — that would also fire
-  // on ResizeObserver-triggered re-renders where rotation didn't actually run).
-  const [is3DActive, setIs3DActive] = useState(false)
+  // Render straight from the synchronous cache (getLibrary) so that, inside the
+  // transition's flushSync, the NEW snapshot is the real gallery — not the async
+  // skeleton an effect would still be loading.
+  const data = getLibrary(libraryId)
+  const ready = !!(data && data.categories) // full library (not just meta) is loaded
 
-  // Compensation scale: a 3D-mode-ban az aktív face translateZ(halfWidth)-en
-  // ül, amit a perspective scale-up-ol P/(P-halfWidth) ≈ 1.04-re. A 2D-mode
-  // mode-switch transform:none → 1.0 scale → user "shrink" flicker-t lát. Pre-
-  // shrinking the cube by (P-halfWidth)/P inverse-eli ezt: perspective vissza-
-  // scale-eli pontosan 1.0 visible size-ra. 2D-mode-ban scale 1.0 → ugyanaz a
-  // visible size → snap nélkül átmegy.
-  const compensationScale = halfWidth > 0
-    ? (PERSPECTIVE_PX - halfWidth) / PERSPECTIVE_PX
-    : 1
-
-  // True-cube geometry: halfWidth = wrapper_width / 2. Így a face-ek
-  // valódi kockaként hinge-elnek a megosztott élnél, NEM keresztezik
-  // egymást rotáció közben (face 1 a jobb oldali élről swing-el be).
-  // Perspective=16000-rel a max scale ~1.04× (=4% bleed). Eredetileg 8000
-  // volt (Phase 7), de az `expanded` accordion-state-en (Top10 + Összes XYZ
-  // ki van nyitva) a face content akár 5000px+ magas → 8000 perspective
-  // mellett a bleed ~200px lett, ami túlcsúszott a py-48 padding-en és
-  // beleharapott a felső "Miért a molekulax?" szekcióba. 16000-rel az
-  // expanded bleed ~95-100px → biztosan a padding-en belül marad.
   useEffect(() => {
-    if (!wrapperRef.current) return
-    const el = wrapperRef.current
-    const ro = new ResizeObserver((entries) => {
-      const w = entries[0]?.contentRect?.width
-      if (w) setHalfWidth(Math.round(w / 2))
-    })
-    ro.observe(el)
-    return () => ro.disconnect()
+    if (!ready) loadLibrary(libraryId).then(() => force())
+  }, [libraryId, ready])
+
+  // Warm the other libraries on idle so switching is instant — no async load
+  // delay before the view transition (the snapshot would otherwise be a skeleton).
+  useEffect(() => {
+    const warm = () => libraries.forEach((l) => loadLibrary(l.id))
+    if (typeof window.requestIdleCallback === 'function') {
+      const id = window.requestIdleCallback(warm, { timeout: 3000 })
+      return () => window.cancelIdleCallback(id)
+    }
+    const id = setTimeout(warm, 2000)
+    return () => clearTimeout(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Hash-scroll-restore: ha a hash #library-re vált (pl. EntryDetail bezárás),
-  // ide scrollolunk. SKIP ha pending restore van — a LibraryGallery restore
-  // consumer kezeli a teljes scroll-átmenetet (instant jump library top + smooth
-  // scroll a saved scrollY-ig). Dupla smooth-scroll race-elne és "aggressive
-  // home jump"-szerű érzést okozna.
+  // Hash-scroll-restore: scroll the section into view when the hash returns to
+  // #library (e.g. EntryDetail close), unless the gallery owns the restore.
   useEffect(() => {
     const scrollIfLibrary = () => {
       if (window.location.hash !== '#library' || !sectionRef.current) return
@@ -112,73 +67,47 @@ export default function LibraryCube() {
     return () => window.removeEventListener('hashchange', scrollIfLibrary)
   }, [])
 
-  // useCallback so CubeFace's ResizeObserver useEffect (which has
-  // onHeightChange in deps) doesn't recreate on every LibraryCube re-render.
-  const handleFaceHeight = useCallback((idx, h) => {
-    setFaceHeights((prev) => (prev[idx] === h ? prev : { ...prev, [idx]: h }))
-  }, [])
+  const targetId = (i) => libraries[((i % count) + count) % count].id
 
-  const activeHeight = faceHeights[currentIndex] || 600
-
-  const handleDragEnd = (_, info) => {
-    if (info.offset.x < -SWIPE_DIST || info.velocity.x < -SWIPE_VELOCITY) next()
-    else if (info.offset.x > SWIPE_DIST || info.velocity.x > SWIPE_VELOCITY) prev()
+  const switchTo = async (dir, idx) => {
+    const id = targetId(idx)
+    if (id === libraryId || busyRef.current) return // ignore clicks mid-rotation
+    busyRef.current = true
+    try {
+      await loadLibrary(id) // preload so the new snapshot is the real gallery
+      if (!supportsVT) { setLibraryId(id); return }
+      const root = document.documentElement
+      // Put the two snapshots on real cube faces: half = cube width / 2 (translateZ
+      // in the keyframes); comp cancels the perspective enlargement at the front so
+      // the face stays 1:1 (P must match the perspective() in index.css).
+      const P = 16000
+      const half = Math.round((cubeRef.current?.getBoundingClientRect().width || 1100) / 2)
+      root.style.setProperty('--vt-half', half + 'px')
+      root.style.setProperty('--vt-comp', String((P - half) / P))
+      // data-vt-dir on <html> drives the rotation direction (CSS) without React
+      // clobbering an element class during flushSync.
+      root.dataset.vtDir = dir
+      const t = document.startViewTransition(() => flushSync(() => setLibraryId(id)))
+      // Wait for the turn, but never stay "busy" longer than 1.2s — a safety net so
+      // an interrupted/non-resolving t.finished can't permanently lock switching.
+      await Promise.race([t.finished.catch(() => {}), new Promise((r) => setTimeout(r, 1200))])
+      delete root.dataset.vtDir
+    } finally {
+      busyRef.current = false
+    }
   }
+
+  const goNext = () => switchTo('fwd', currentIndex + 1)
+  const goPrev = () => switchTo('back', currentIndex - 1)
+  const goJump = (i) => switchTo(i >= currentIndex ? 'fwd' : 'back', i)
 
   const handleKeyDown = (e) => {
-    if (e.key === 'ArrowLeft') { e.preventDefault(); prev() }
-    else if (e.key === 'ArrowRight') { e.preventDefault(); next() }
-    else if (e.key === 'Home') { e.preventDefault(); jumpTo(0) }
-    else if (e.key === 'End') { e.preventDefault(); jumpTo(libraries.length - 1) }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); goPrev() }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); goNext() }
+    else if (e.key === 'Home') { e.preventDefault(); goJump(0) }
+    else if (e.key === 'End') { e.preventDefault(); goJump(count - 1) }
   }
 
-  // Reduced-motion ág: 3D wrapper kihagyva, csak cross-fade.
-  if (reduceMotion) {
-    return (
-      <section
-        id="library"
-        ref={sectionRef}
-        tabIndex={0}
-        aria-roledescription="Library selector"
-        aria-label={library.name[lang]}
-        onKeyDown={handleKeyDown}
-        className="relative outline-none py-28 px-4 scroll-mt-24"
-      >
-        <span className="sr-only" aria-live="polite" aria-atomic="true">
-          {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
-        </span>
-        <div
-          id="library-cube-panel"
-          role="tabpanel"
-          aria-labelledby={`lib-tab-${library.id}`}
-          className="max-w-6xl mx-auto relative"
-        >
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={library.id}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-            >
-              <LibraryGallery />
-              {library.id !== 'performance' && <EffectsSection />}
-              {library.id === 'peptides' && <Calculator />}
-            </motion.div>
-          </AnimatePresence>
-        </div>
-        <CubeNavControls
-          libraries={libraries}
-          currentIndex={currentIndex}
-          onPrev={prev}
-          onNext={next}
-          onJumpTo={jumpTo}
-        />
-      </section>
-    )
-  }
-
-  // Default ág: full 3D cube
   return (
     <section
       id="library"
@@ -187,77 +116,52 @@ export default function LibraryCube() {
       aria-roledescription="Library selector"
       aria-label={library.name[lang]}
       onKeyDown={handleKeyDown}
-      className="relative outline-none py-48 px-4 scroll-mt-24"
+      className="relative outline-none py-28 px-4 scroll-mt-24"
     >
       <span className="sr-only" aria-live="polite" aria-atomic="true">
         {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
       </span>
-      {/* CubeNavControls SECTION-szintűen — széles a viewport-on, arrows */}
-      {/* a viewport széléhez igazodva, NEM a max-w-6xl wrapperhez */}
+
       <CubeNavControls
         libraries={libraries}
         currentIndex={currentIndex}
-        onPrev={prev}
-        onNext={next}
+        onPrev={goPrev}
+        onNext={goNext}
       />
-      {/* Nincs overflow:hidden — a perspective scaling (~1.04x @ perspective */}
-      {/* 16000px) miatt a face vizuálisan ~40-100px-szel kilóg a wrapper */}
-      {/* bounds-án (expanded-en a 100 felé), ezt a section py-48 padding-je */}
-      {/* (192px) bőven elnyeli, így nem folyik át sem az Education fenti */}
-      {/* szekcióra, sem a Telegram alsóra. */}
+
       <div
-        ref={wrapperRef}
-        className="max-w-6xl mx-auto"
-        style={{ perspective: `${PERSPECTIVE_PX}px` }}
+        ref={cubeRef}
+        className="vt-cube max-w-6xl mx-auto"
+        id="library-cube-panel"
+        role="tabpanel"
+        aria-labelledby={`lib-tab-${library.id}`}
       >
-        <motion.div
-          id="library-cube-panel"
-          role="tabpanel"
-          aria-labelledby={`lib-tab-${library.id}`}
-          animate={{ height: activeHeight }}
-          transition={isFirstRender ? { duration: 0 } : { height: HEIGHT_TWEEN }}
-          style={{
-            position: 'relative',
-            transformStyle: is3DActive ? 'preserve-3d' : 'flat',
-            width: '100%',
-            overflow: 'visible',
-          }}
-        >
-          <motion.div
-            animate={{ rotateY: rotationDeg }}
-            transition={isFirstRender ? { duration: 0 } : ROTATION_TRANSITION}
-            transformTemplate={(_, generated) =>
-              is3DActive ? `scale(${compensationScale}) ${generated}` : 'none'
-            }
-            onAnimationStart={() => setIs3DActive(true)}
-            onAnimationComplete={() => setIs3DActive(false)}
-            drag={isTouch ? 'x' : false}
-            dragConstraints={{ left: 0, right: 0 }}
-            dragElastic={0.15}
-            onDragEnd={handleDragEnd}
-            style={{
-              position: 'relative',
-              width: '100%',
-              height: '100%',
-              transformStyle: is3DActive ? 'preserve-3d' : 'flat',
+        {ready ? (
+          <LibraryContext.Provider
+            value={{
+              library: data,
+              libraryId,
+              setLibraryId,
+              availableLibraries: libraries,
+              isLoading: false,
             }}
           >
-            {libraries.map((lib, idx) => (
-              <CubeFace
-                key={lib.id}
-                library={lib}
-                isActive={idx === currentIndex}
-                faceIndex={idx}
-                halfWidth={halfWidth}
-                onHeightChange={handleFaceHeight}
-                libraries={libraries}
-                currentIndex={currentIndex}
-                onJumpTo={jumpTo}
-                is3DActive={is3DActive}
-              />
-            ))}
-          </motion.div>
-        </motion.div>
+            <LibraryGallery
+              dotsLibraries={libraries}
+              dotsCurrentIndex={currentIndex}
+              onDotsJumpTo={goJump}
+            />
+            {data.id !== 'performance' && <EffectsSection />}
+            {data.id === 'peptides' && <Calculator />}
+          </LibraryContext.Provider>
+        ) : (
+          <div
+            className="flex items-center justify-center text-2xl font-black tracking-[0.2em] uppercase"
+            style={{ minHeight: 600, color: library.accent }}
+          >
+            {library.name[lang]}
+          </div>
+        )}
       </div>
     </section>
   )

@@ -4,6 +4,10 @@ import { VitePWA } from 'vite-plugin-pwa'
 import { inlineCss } from './vite-plugin-inline-css.js'
 
 export default defineConfig({
+  // Restrict the dev dep-scan to the app entry so Vite does not try to crawl the
+  // offline render tools in scripts/*.html (which import three / webm-muxer from
+  // a CDN importmap, not from node_modules).
+  optimizeDeps: { entries: ['index.html'] },
   plugins: [
     react(),
     VitePWA({
