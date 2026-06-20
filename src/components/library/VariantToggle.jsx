@@ -1,7 +1,7 @@
 // Phase C — Multi-variant route toggle. Mounted in EntryDetail's Hero section
-// when the entry has 2+ variants (administration routes). Clicks `replaceState`
-// the URL hash to `#entry/<lib>/<id>/<routeId>` and dispatches a `hashchange`
-// event so the App-level listener re-parses without history pollution.
+// when the entry has 2+ variants (administration routes). Clicks `navigate`
+// (replace) to the variant path `/<lib-slug>/<id>/<routeId>` so the App
+// re-parses the active variant without history pollution.
 //
 // Visual: Indigo segmented-control, theme-aware via var(--tint-*) overlays
 // (avoids the Light-Mode-Inline-Rgba-Trap — see [[Light_Mode_Inline_Rgba_Trap]]).
@@ -10,6 +10,8 @@
 
 import { useEffect, useRef } from 'react'
 import { useLang } from '../../i18n/LanguageContext'
+import { navigate } from '../../router/location'
+import { entryPath } from '../../seo/urls'
 
 const INDIGO_PRIMARY = '#818cf8'
 const INDIGO_SOFT = 'rgba(129,140,248,0.20)'
@@ -26,8 +28,7 @@ export default function VariantToggle({ libraryId, entryId, availableVariants, a
   const navigateTo = (routeId) => {
     if (typeof window === 'undefined') return
     if (routeId === activeVariantId) return
-    window.history.replaceState(null, '', `#entry/${libraryId}/${entryId}/${routeId}`)
-    window.dispatchEvent(new Event('hashchange'))
+    navigate(entryPath(libraryId, entryId, routeId), { replace: true })
     const variant = availableVariants.find(v => v.routeId === routeId)
     const label = variant ? tr(variant.routeLabel) : routeId
     if (announceRef.current) {

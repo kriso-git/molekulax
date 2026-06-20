@@ -3,6 +3,8 @@ import { createPortal } from 'react-dom'
 import { X, Send, ExternalLink } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
+import { navigate } from '../../router/location'
+import { entryPath } from '../../seo/urls'
 import { hasCardMotif } from './cardMotifMap'
 import MotifVideo from './MotifVideo'
 
@@ -152,7 +154,7 @@ function CategoryVisual({ cat, idx }) {
 function openEntryInGallery(libraryId, entryId, onClose) {
  onClose()
  setTimeout(() => {
- window.location.hash = `entry/${libraryId}/${entryId}`
+ navigate(entryPath(libraryId, entryId))
  }, 300)
 }
 
@@ -428,7 +430,7 @@ export default function EffectsSection() {
  type="button"
  onClick={e => {
  e.stopPropagation()
- window.location.hash = `entry/${library.id}/${pid}`
+ navigate(entryPath(library.id, pid))
  }}
  className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide font-semibold transition-all duration-200 hover:scale-105"
  style={{ background: `${cat.color}14`, border: `1px solid ${cat.color}35`, color: cat.color }}

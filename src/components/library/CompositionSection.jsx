@@ -1,6 +1,8 @@
 import { ChevronRight } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
+import { navigate } from '../../router/location'
+import { entryPath } from '../../seo/urls'
 
 /**
  * Renders multi-peptide stack composition as clickable component cards.
@@ -22,7 +24,7 @@ export default function CompositionSection({ composition, accent }) {
   const metaById = Object.fromEntries(library.meta.map((m) => [m.id, m]))
 
   const handleClick = (id) => {
-    window.location.hash = `entry/${library.id}/${id}`
+    navigate(entryPath(library.id, id))
   }
 
   return (
