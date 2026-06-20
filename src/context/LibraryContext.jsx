@@ -14,6 +14,8 @@ import {
   getCachedEntry,
   DEFAULT_LIBRARY_ID,
 } from '../data/libraries'
+import { parsePath } from '../seo/urls'
+import { consumeReturnState } from '../components/library/returnState'
 
 const STORAGE_KEY = 'molekulax:libraryId'
 
@@ -29,9 +31,8 @@ export const LibraryContext = createContext({
 
 function readInitialLibraryId(defaultId) {
   if (typeof window === 'undefined') return defaultId
-  const hash = window.location.hash.replace(/^#/, '')
-  const m = hash.match(/^entry\/([a-z-]+)\//)
-  if (m && getLibrary(m[1])) return m[1]
+  const route = parsePath(window.location.pathname)
+  if ((route.kind === 'entry' || route.kind === 'library') && getLibrary(route.library)) return route.library
   const stored = sessionStorage.getItem(STORAGE_KEY)
   if (stored && getLibrary(stored)) return stored
   return defaultId
@@ -47,6 +48,25 @@ export function LibraryProvider({ children, defaultId = DEFAULT_LIBRARY_ID }) {
       sessionStorage.setItem(STORAGE_KEY, libraryId)
     }
   }, [libraryId])
+
+  // Browser back/forward away from an entry route → restore the gallery snapshot.
+  // popstate fires synchronously BEFORE React re-renders, so the pending-restore is
+  // set before LibraryGallery re-mounts and reads it (mirrors the old hashchange path).
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const onPop = () => {
+      const route = parsePath(window.location.pathname)
+      if (route.kind !== 'entry') {
+        const snapshot = consumeReturnState()
+        if (snapshot) {
+          window.__libraryGalleryPendingRestore__ = snapshot
+          if (snapshot.libraryId) setLibraryId(snapshot.libraryId)
+        }
+      }
+    }
+    window.addEventListener('popstate', onPop)
+    return () => window.removeEventListener('popstate', onPop)
+  }, [])
 
   useEffect(() => {
     let cancelled = false

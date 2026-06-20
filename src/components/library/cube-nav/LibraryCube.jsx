@@ -8,6 +8,8 @@ import Calculator from '../../Calculator'
 import EffectsSection from '../EffectsSection'
 import CubeNavControls from './CubeNavControls'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { useLocationPath } from '../../../router/location'
+import { parsePath } from '../../../seo/urls'
 
 const LIBRARY_WORD = { hu: 'könyvtár', en: 'library', pl: 'biblioteka' }
 const SWIPE_HINT = { hu: 'húzd a könyvtárváltáshoz', en: 'swipe to switch library', pl: 'przesuń, aby zmienić bibliotekę' }
@@ -51,20 +53,21 @@ export default function LibraryCube() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  // Hash-scroll-restore: scroll the section into view when the hash returns to
-  // #library (e.g. EntryDetail close), unless the gallery owns the restore.
+  // When the location returns to a library landing (e.g. closing an entry), scroll
+  // the section into view — unless the gallery owns the restore. Only a real
+  // library landing (/peptidek, /nootropikumok, …) triggers the scroll; the bare
+  // home '/' must NOT auto-scroll past Hero on a fresh load (old behavior only
+  // fired on hash === '#library', never on a plain home visit).
+  const libLocPath = useLocationPath()
   useEffect(() => {
-    const scrollIfLibrary = () => {
-      if (window.location.hash !== '#library' || !sectionRef.current) return
-      if (window.__libraryGalleryPendingRestore__) return
-      requestAnimationFrame(() => {
-        sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      })
-    }
-    scrollIfLibrary()
-    window.addEventListener('hashchange', scrollIfLibrary)
-    return () => window.removeEventListener('hashchange', scrollIfLibrary)
-  }, [])
+    const r = parsePath(libLocPath)
+    if (r.kind !== 'library') return
+    if (!sectionRef.current) return
+    if (window.__libraryGalleryPendingRestore__) return
+    requestAnimationFrame(() => {
+      sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+  }, [libLocPath])
 
   const targetId = (i) => libraries[((i % count) + count) % count].id
 

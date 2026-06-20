@@ -13,6 +13,8 @@ import NavArrowButton from './library/cube-nav/NavArrowButton'
 import PerformanceCategoryCards from './library/PerformanceCategoryCards'
 import FormFactorChipRow from './library/FormFactorChipRow'
 import { RETURN_STATE_KEY } from './library/returnState'
+import { navigate } from '../router/location'
+import { entryPath } from '../seo/urls'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
 // Tile layout:
@@ -262,9 +264,9 @@ function SortControl({ value, onChange, t }) {
 }
 
 // ── Main component ───────────────────────────────────────────────────────────
-// Tile clicks update the URL hash to #entry/<library>/<id>; the App-level
-// EntryDetailRoute observes the hash and renders the detail view (modal on
-// mobile, full page on desktop).
+// Tile clicks navigate to /<library-slug>/<id>; the App-level router parses the
+// path and renders EntryDetailRoute as the detail view (modal on mobile, full
+// page on desktop).
 export default function LibraryGallery({
   library: libraryProp,
   dotsLibraries,
@@ -347,7 +349,7 @@ export default function LibraryGallery({
  }, [library, metaList, query, lang, activeFilters, levelFilters, sortMode, selectedSubCategory, selectedFormFactors])
 
  // Restore consumer for Task C. Reads window.__libraryGalleryPendingRestore__
- // (set by EntryDetailRoute closeDetail or hashchange listener) and restores
+ // (set by EntryDetailRoute closeDetail or the LibraryContext popstate listener) and restores
  // state when the library.id matches the snapshot. Idempotent — clears the
  // pending object after consumption.
  //
@@ -498,7 +500,7 @@ export default function LibraryGallery({
   } catch (e) {
    // sessionStorage full / disabled — silently skip, falls back to fresh landing
   }
-  window.location.hash = `entry/${library.id}/${entry.id}`
+  navigate(entryPath(library.id, entry.id))
  }, [library.id])
 
  return (

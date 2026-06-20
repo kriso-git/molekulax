@@ -26,9 +26,10 @@ const ROUTES = [
   { label: 'gallery — nootropics (ChemicalFormulaPlaceholder)', lib: 'nootropics', path: '/' },
   { label: 'gallery — performance (PerformanceCategoryCards)', lib: 'performance', path: '/' },
   { label: 'gallery — pharmaceutical', lib: 'pharmaceutical', path: '/' },
-  { label: 'entry — peptides/retatrutide (QualityGrid)', lib: null, path: '/#entry/peptides/retatrutide' },
-  { label: 'entry — nootropics/semax', lib: null, path: '/#entry/nootropics/semax' },
-  { label: 'entry — performance/testosterone-info', lib: null, path: '/#entry/performance/testosterone-info' },
+  { label: 'entry — peptides/retatrutide (QualityGrid)', lib: null, path: '/peptidek/retatrutide' },
+  { label: 'entry — nootropics/semax', lib: null, path: '/nootropikumok/semax' },
+  { label: 'entry — performance/testosterone-info', lib: null, path: '/teljesitmenyfokozok/testosterone-info' },
+  { label: 'library landing — /peptidek', lib: null, path: '/peptidek' },
 ]
 
 async function waitForServer(url, tries = 60) {

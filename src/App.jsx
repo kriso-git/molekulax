@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 import Hero from './components/Hero'
@@ -10,10 +10,13 @@ import Disclaimer from './components/Disclaimer'
 import Footer from './components/Footer'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import EntryDetailRoute from './components/library/EntryDetailRoute'
-import { isEntryDetailHash } from './components/library/entryHash'
+import { useLocationPath } from './router/location'
+import { parsePath } from './seo/urls'
+import { useDocumentHead } from './seo/useDocumentHead'
+import { listLibraries } from './data/libraries'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
-import { LibraryProvider } from './context/LibraryContext'
+import { LibraryProvider, useLibrary } from './context/LibraryContext'
 
 // LibraryCube + framer-motion are split into a separate chunk via React.lazy
 // so the initial bundle doesn't carry ~80 KiB of animation runtime that
@@ -32,20 +35,6 @@ const CardVizPreview = lazy(() => import('./components/CardVizPreview'))
 // Lighthouse is untouched (the CSS .dna-backdrop covers mobile + the load gap).
 const DnaBackground = lazy(() => import('./components/DnaBackground'))
 
-function readHash() {
-  return typeof window === 'undefined' ? '' : window.location.hash.replace(/^#/, '')
-}
-
-function useHashRoute() {
-  const [hash, setHash] = useState(readHash)
-  useEffect(() => {
-    const onChange = () => setHash(readHash())
-    window.addEventListener('hashchange', onChange)
-    return () => window.removeEventListener('hashchange', onChange)
-  }, [])
-  return hash
-}
-
 // Background: always-on CSS backdrop (dark base + teal/violet glows) + the lazy
 // 3D DNA layer on >=768px. Mobile falls back to the CSS backdrop (three.js never
 // downloaded there).
@@ -63,34 +52,40 @@ function BackgroundLayer() {
   )
 }
 
+function libraryNameFor(libId) {
+  const lib = listLibraries().find((l) => l.id === libId)
+  return lib ? lib.name.hu : null // Phase 1 = HU
+}
+
+// When the path is a library landing (/peptidek …), make that library active so
+// the cube shows the matching gallery. Cold loads are already covered by
+// LibraryContext.readInitialLibraryId; this hardens browser back/forward and any
+// later in-app library-landing navigation. LibraryCube owns the scroll-into-view.
+function LibraryLandingSync({ route }) {
+  const { libraryId, setLibraryId } = useLibrary()
+  useEffect(() => {
+    if (route.kind === 'library' && route.library !== libraryId) {
+      setLibraryId(route.library)
+    }
+  }, [route.kind, route.library, libraryId, setLibraryId])
+  return null
+}
+
 export default function App() {
-  const hash = useHashRoute()
+  const path = useLocationPath()
+  const route = parsePath(path)
+  useDocumentHead(route, route.kind === 'library' ? libraryNameFor(route.library) : null, null)
 
-  // Hidden preview routes (#dna-preview / #card-preview) — internal tuning tools.
-  // Gated to DEV only so they are never reachable on the production site (in prod
-  // import.meta.env.DEV is false, so these fall through to the normal landing).
-  const path = typeof window !== 'undefined' ? window.location.pathname.replace(/\/+$/, '') : ''
-  if (import.meta.env.DEV && (hash === 'dna-preview' || path === '/dna-preview')) {
-    return (
-      <Suspense fallback={null}>
-        <DnaPreview />
-      </Suspense>
-    )
+  // Hidden preview routes (#dna-preview / #card-preview), DEV only.
+  const rawPath = typeof window !== 'undefined' ? window.location.pathname.replace(/\/+$/, '') : ''
+  if (import.meta.env.DEV && rawPath === '/dna-preview') {
+    return (<Suspense fallback={null}><DnaPreview /></Suspense>)
   }
-  if (import.meta.env.DEV && (hash === 'card-preview' || path === '/card-preview')) {
-    return (
-      <Suspense fallback={null}>
-        <CardVizPreview />
-      </Suspense>
-    )
+  if (import.meta.env.DEV && rawPath === '/card-preview') {
+    return (<Suspense fallback={null}><CardVizPreview /></Suspense>)
   }
 
-  const isEntryDetail = isEntryDetailHash(hash)
-  // Phase 9 LCP fix: hide landing on ALL devices (not just desktop) when
-  // entry-detail is active. The mobile modal is position:fixed and covers
-  // the viewport, so the user never sees the landing — but Lighthouse was
-  // mounting + parsing Hero/Education/LibraryCube/FAQ/Footer behind it,
-  // tanking mobile Perf scores. Hash-change re-mounts landing on close.
+  const isEntryDetail = route.kind === 'entry'
   const hideLanding = isEntryDetail
 
   return (
@@ -101,6 +96,7 @@ export default function App() {
           <Analytics />
           <SpeedInsights />
           <BackgroundLayer />
+          <LibraryLandingSync route={route} />
           <LanguageSwitcher />
           <div className="relative z-10">
             {!hideLanding && (
@@ -117,7 +113,7 @@ export default function App() {
                 <Footer />
               </>
             )}
-            {isEntryDetail && <EntryDetailRoute hash={hash} />}
+            {isEntryDetail && <EntryDetailRoute route={route} />}
           </div>
         </div>
         </LibraryProvider>
