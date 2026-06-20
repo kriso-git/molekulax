@@ -49,18 +49,19 @@ function useHashRoute() {
 }
 
 // Background: always-on CSS backdrop (theme-aware base + teal/violet glows) +
-// the lazy 3D DNA layer ONLY in dark mode on >=768px. The DNA is a dark-mode
-// feature (its palette/fog are tuned for the dark base); light mode and mobile
-// fall back to the CSS backdrop, and three.js is never downloaded there.
+// the lazy 3D DNA layer on >=768px in BOTH themes. The field re-tunes per theme
+// (light: normal-blend ink strokes + off bloom + light fog; dark: additive glow);
+// key={theme} forces a fresh GL context on toggle so blend modes rebuild cleanly.
+// Mobile still falls back to the CSS backdrop (three.js never downloaded there).
 function BackgroundLayer() {
   const { theme } = useTheme()
   const showDnaBg = useMediaQuery('(min-width: 768px)')
   return (
     <>
       <div aria-hidden="true" className="dna-backdrop" />
-      {showDnaBg && theme === 'dark' && (
+      {showDnaBg && (
         <Suspense fallback={null}>
-          <DnaBackground />
+          <DnaBackground key={theme} theme={theme} />
         </Suspense>
       )}
     </>

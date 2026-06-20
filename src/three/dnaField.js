@@ -31,11 +31,26 @@ const PALETTES = {
   cool: [[TEAL, VIOLET, BLUE], [0x4fb8cc, VIOLET, TEAL]], // no near-white node colour
 }
 
+// Light-theme palette: deeper, more saturated "molecular ink" colours that read
+// as strokes/beads on the light page (#f4f6fb). The bright dark-mode hexes wash
+// out on white (additive glow + near-white nodes vanish), so light mode swaps to
+// these + normal (non-additive) edge blending + near-off bloom (see isLight below).
+const TEAL_L = 0x1f7a8c, VIOLET_L = 0x5b46a8, GREEN_L = 0x0c9466, BLUE_L = 0x2f6fd0
+const PALETTES_LIGHT = {
+  mixed: [[TEAL_L, VIOLET_L, GREEN_L], [VIOLET_L, TEAL_L, GREEN_L], [TEAL_L, BLUE_L, GREEN_L]],
+  green: [[GREEN_L, 0x0e8c5e, 0x14a06e], [0x0c9466, GREEN_L, 0x0e8c5e]],
+  cool: [[TEAL_L, VIOLET_L, BLUE_L], [0x2a7d92, VIOLET_L, TEAL_L]],
+}
+
 const SITE_BG = 0x07071e
-const DEFAULTS = { count: 16, size: 0.72, glow: 0.34, rough: 0.6, speed: 2.0, palette: 'cool' }
+const LIGHT_BG = 0xe9edf6 // fog tint on light theme → distant helices fade into the page, not into dark haze
+const DEFAULTS = { count: 16, size: 0.72, glow: 0.34, rough: 0.6, speed: 2.0, palette: 'cool', theme: 'dark' }
 
 export function createDnaField(canvas, params = {}) {
   const state = { ...DEFAULTS, ...params }
+  // Theme is fixed per GL instance (App remounts DnaBackground via key={theme} on
+  // toggle), so we branch the renderer/material setup once here instead of in setParams.
+  const isLight = state.theme === 'light'
 
   const isMobile = window.matchMedia('(max-width: 767px)').matches
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -52,15 +67,18 @@ export function createDnaField(canvas, params = {}) {
   renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.5 : 2))
   renderer.setSize(window.innerWidth, window.innerHeight)
   renderer.toneMapping = THREE.ACESFilmicToneMapping
-  renderer.toneMappingExposure = 1.15 // a touch brighter / lighter nodes
+  // light mode: lower exposure so the glossy nodes don't blow out to white on the page
+  renderer.toneMappingExposure = isLight ? 0.95 : 1.15
 
   const scene = new THREE.Scene()
-  scene.fog = new THREE.FogExp2(SITE_BG, 0.045) // a touch hazier / softer depth
+  scene.fog = new THREE.FogExp2(isLight ? LIGHT_BG : SITE_BG, isLight ? 0.038 : 0.045)
 
   const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 200)
   camera.position.set(0, 0, 26)
 
-  scene.add(new THREE.AmbientLight(0x3a4263, 1.0))
+  // light: a softer ambient so the coloured point-lights/base-colour win over a flat
+  // white wash (too-bright ambient blows the glossy nodes out to near-white on the page).
+  scene.add(new THREE.AmbientLight(isLight ? 0x8088a8 : 0x3a4263, isLight ? 0.85 : 1.0))
   const l1 = new THREE.PointLight(TEAL, 200, 90); l1.position.set(14, 10, 18); scene.add(l1)
   const l2 = new THREE.PointLight(VIOLET, 200, 90); l2.position.set(-16, -8, 12); scene.add(l2)
   const l3 = new THREE.PointLight(GREEN, 120, 80); l3.position.set(0, 14, -10); scene.add(l3)
@@ -73,7 +91,9 @@ export function createDnaField(canvas, params = {}) {
   const composer = new EffectComposer(renderer)
   const renderPass = new RenderPass(scene, camera)
   composer.addPass(renderPass)
-  const bloom = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), state.glow, 0.5, 0.08)
+  // additive bloom is invisible-to-harmful on a light page (adds toward white) →
+  // near-off in light mode so nodes/edges stay crisp; full glow in dark mode.
+  const bloom = new UnrealBloomPass(new THREE.Vector2(window.innerWidth, window.innerHeight), isLight ? 0.0 : state.glow, 0.5, 0.08)
   composer.addPass(bloom)
   const outputPass = new OutputPass()
   composer.addPass(outputPass)
@@ -116,12 +136,20 @@ export function createDnaField(canvas, params = {}) {
     edgeGeo.setAttribute('position', new THREE.Float32BufferAttribute(ePos, 3))
     edgeGeo.setAttribute('color', new THREE.Float32BufferAttribute(eCol, 3))
     ownedGeos.push(edgeGeo)
-    const edgeMat = new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.3, blending: THREE.AdditiveBlending, depthWrite: false })
+    // dark: additive glow lines. light: normal-blend dark-ink strokes (additive
+    // would vanish against white), a touch more opaque so the network reads.
+    const edgeMat = isLight
+      ? new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.62, depthWrite: false })
+      : new THREE.LineBasicMaterial({ vertexColors: true, transparent: true, opacity: 0.3, blending: THREE.AdditiveBlending, depthWrite: false })
     ownedMats.push(edgeMat)
     g.add(new THREE.LineSegments(edgeGeo, edgeMat))
 
     // --- nodes (glassy / iridescent instanced spheres) ---
-    const nodeMat = new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.2, transparent: true, opacity: 0.9 })
+    // light: drop metalness/env reflection so the saturated base colour shows as a
+    // solid glossy bead (high-metal mirrors the bright env → colourless on white).
+    const nodeMat = isLight
+      ? new THREE.MeshPhysicalMaterial({ roughness: 0.4, metalness: 0.2, clearcoat: 1, clearcoatRoughness: 0.25, iridescence: 0.15, iridescenceIOR: 1.3, envMapIntensity: 0.35, transparent: true, opacity: 0.98 })
+      : new THREE.MeshPhysicalMaterial({ roughness: state.rough, metalness: 0.9, clearcoat: 1, clearcoatRoughness: 0.2, iridescence: 0.5, iridescenceIOR: 1.3, envMapIntensity: 1.2, transparent: true, opacity: 0.9 })
     ownedMats.push(nodeMat)
     const nodes = new THREE.InstancedMesh(sphereGeo, nodeMat, BP * 2)
     nodes.instanceColor = new THREE.InstancedBufferAttribute(new Float32Array(BP * 2 * 3), 3)
@@ -156,7 +184,8 @@ export function createDnaField(canvas, params = {}) {
   function rebuild() {
     clearField()
     seed = 1337
-    const pals = PALETTES[state.palette] || PALETTES.mixed
+    const palSet = isLight ? PALETTES_LIGHT : PALETTES
+    const pals = palSet[state.palette] || palSet.mixed
     const n = effectiveCount()
     // jittered grid → even coverage across the whole viewport (no clustering)
     const cols = Math.max(1, Math.ceil(Math.sqrt(n * 1.6)))

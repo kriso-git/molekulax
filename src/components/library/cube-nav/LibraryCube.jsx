@@ -151,7 +151,7 @@ export default function LibraryCube() {
         {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
       </span>
 
-      {/* Phone-only swipe hint (arrows are hidden on mobile). */}
+      {/* Phone-only swipe hint (in addition to the dots-flanking arrows below). */}
       <div
         className="sm:hidden flex items-center justify-center gap-2 mb-5 text-[11px] tracking-wide uppercase select-none"
         style={{ color: 'var(--text-muted)' }}
@@ -192,6 +192,8 @@ export default function LibraryCube() {
                 dotsLibraries={libraries}
                 dotsCurrentIndex={currentIndex}
                 onDotsJumpTo={goJump}
+                onDotsPrev={goPrev}
+                onDotsNext={goNext}
               />
               {data.id !== 'performance' && <EffectsSection />}
               {data.id === 'peptides' && <Calculator />}

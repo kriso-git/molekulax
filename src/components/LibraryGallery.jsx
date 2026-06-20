@@ -9,6 +9,7 @@ import {
 import EntryImage from './EntryImage'
 import TelegramButtons from './TelegramButtons'
 import DotsIndicator from './library/cube-nav/DotsIndicator'
+import NavArrowButton from './library/cube-nav/NavArrowButton'
 import PerformanceCategoryCards from './library/PerformanceCategoryCards'
 import FormFactorChipRow from './library/FormFactorChipRow'
 import { RETURN_STATE_KEY } from './library/returnState'
@@ -269,6 +270,8 @@ export default function LibraryGallery({
   dotsLibraries,
   dotsCurrentIndex,
   onDotsJumpTo,
+  onDotsPrev,
+  onDotsNext,
 } = {}) {
  const [expanded, setExpanded] = useState(false)
  const [hasOpened, setHasOpened] = useState(false)
@@ -514,12 +517,30 @@ export default function LibraryGallery({
  {/* Library-selector dots — a könyvtár cím/leírás ÉS a Top10 fejléc közé,
  így minden face-en stabilan ugyanazon a vizuális helyen van. */}
  {dotsLibraries && onDotsJumpTo && (
- <div className="flex justify-center mb-10 lg:hidden">
+ <div className="flex items-center justify-center gap-4 mb-10 lg:hidden">
+ {onDotsPrev && (
+ <NavArrowButton
+ dir="left"
+ onClick={onDotsPrev}
+ ariaLabel="Előző könyvtár"
+ className="sm:hidden w-11 h-11 shrink-0"
+ iconClassName="w-6 h-6"
+ />
+ )}
  <DotsIndicator
  libraries={dotsLibraries}
  currentIndex={dotsCurrentIndex}
  onJumpTo={onDotsJumpTo}
  />
+ {onDotsNext && (
+ <NavArrowButton
+ dir="right"
+ onClick={onDotsNext}
+ ariaLabel="Következő könyvtár"
+ className="sm:hidden w-11 h-11 shrink-0"
+ iconClassName="w-6 h-6"
+ />
+ )}
  </div>
  )}
 
