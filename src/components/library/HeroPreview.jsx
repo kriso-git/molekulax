@@ -10,13 +10,10 @@
 
 import { ArrowLeft, ShieldCheck } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
-import { useTheme } from '../../theme/ThemeContext'
 import { LEVEL_META } from '../../data/libraries/shared/researchLevel'
 
 export default function HeroPreview({ meta, onClose }) {
   const { t, tr } = useLang()
-  const { theme } = useTheme()
-  const isLight = theme === 'light'
   const tier = meta.tier ?? 1
   const tierMeta = LEVEL_META[tier] || LEVEL_META[1]
   const tierColor = tierMeta.color
@@ -92,15 +89,11 @@ export default function HeroPreview({ meta, onClose }) {
             className="font-black tracking-tight leading-[1.1] pb-2 text-5xl sm:text-6xl lg:text-7xl mb-3"
             style={{
               whiteSpace: 'nowrap',
-              background: isLight
-                ? `linear-gradient(135deg, #0f172a 0%, ${accent} 55%, ${tierColor} 100%)`
-                : `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
+              background: `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
               WebkitBackgroundClip: 'text',
               backgroundClip: 'text',
               color: 'transparent',
-              filter: isLight
-                ? `drop-shadow(0 2px 8px ${accent}33)`
-                : `drop-shadow(0 4px 24px ${accent}55)`,
+              filter: `drop-shadow(0 4px 24px ${accent}55)`,
             }}
           >
             {meta.name?.replace(/-/g, '‑')}

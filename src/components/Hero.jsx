@@ -14,6 +14,10 @@ function TikTokIcon({ size = 16 }) {
 export default function Hero() {
   const { t } = useLang()
   const tickerText = t('hero.ticker')
+  // Clean item list (no empties), so the marquee renders exactly ONE bullet after
+  // every item — including at the loop seam (the old split/repeat left a trailing
+  // empty segment → a doubled "• •" where the track wrapped).
+  const tickerItems = tickerText.split('•').map(s => s.trim()).filter(Boolean)
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-0 text-center relative">
@@ -23,12 +27,14 @@ export default function Hero() {
         <div className="ticker-track whitespace-nowrap">
           {[0, 1].map(n => (
             <span key={n} className="inline-block">
-              {tickerText.repeat(3).split('•').map((seg, i) => (
-                <span key={i}>
-                  <span className="text-[11px] text-gray-500 tracking-[0.2em] uppercase">{seg.trim()}</span>
-                  <span className="text-[#818cf8] mx-4 opacity-50">•</span>
-                </span>
-              ))}
+              {Array.from({ length: 3 }).flatMap((_, r) =>
+                tickerItems.map((item, i) => (
+                  <span key={`${r}-${i}`}>
+                    <span className="text-[11px] text-gray-500 tracking-[0.2em] uppercase">{item}</span>
+                    <span className="text-[#818cf8] mx-4 opacity-50">•</span>
+                  </span>
+                ))
+              )}
             </span>
           ))}
         </div>

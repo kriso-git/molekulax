@@ -16,7 +16,6 @@ import {
  Clock, BookOpen, Syringe, Pill, CalendarClock, CheckCircle2, Ban,
 } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
-import { useTheme } from '../../theme/ThemeContext'
 import { useLibrary } from '../../context/LibraryContext'
 import TelegramButtons from '../TelegramButtons'
 import SourcingButtons from './SourcingButtons'
@@ -802,7 +801,7 @@ function Constellation({ steps, accent, tr }) {
 }
 
 // ─── Vial Holosphere, center hero element ─────────────────────────
-function Holosphere({ image, name, accent, tierColor, isLight, library, chemicalFormula, entryId }) {
+function Holosphere({ image, name, accent, tierColor, library, chemicalFormula, entryId }) {
  const useFormula =
  !image &&
  library?.features?.chemicalFormulaPlaceholder &&
@@ -822,14 +821,12 @@ function Holosphere({ image, name, accent, tierColor, isLight, library, chemical
  <div
  className="absolute inset-0 rounded-full pointer-events-none"
  style={{
- background: isLight
- ? `radial-gradient(circle at 50% 50%, ${accent}1a 0%, transparent 60%)`
- : `radial-gradient(circle at 50% 50%, ${accent}30 0%, transparent 60%)`,
+ background: `radial-gradient(circle at 50% 50%, ${accent}30 0%, transparent 60%)`,
  filter: 'blur(20px)',
  }}
  />
  <ParticleField color={accent} count={42} />
- <HoloRing color={accent} tierColor={tierColor} isLight={isLight} />
+ <HoloRing color={accent} tierColor={tierColor} />
  {/* Vial */}
  <div className="absolute inset-[18%] flex items-center justify-center">
  {image ? (
@@ -845,10 +842,8 @@ function Holosphere({ image, name, accent, tierColor, isLight, library, chemical
    <img
      src={image}
      alt={`${name} vial`}
-     className={isLight
-     ? "w-full h-full object-contain drop-shadow-[0_10px_24px_rgba(15,23,42,0.25)]"
-     : "w-full h-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)]"}
-     style={{ filter: `drop-shadow(0 0 ${isLight ? '18px' : '30px'} ${accent}${isLight ? '33' : '66'})` }}
+     className="w-full h-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)]"
+     style={{ filter: `drop-shadow(0 0 30px ${accent}66)` }}
      draggable="false"
    />
  </picture>
@@ -860,9 +855,7 @@ function Holosphere({ image, name, accent, tierColor, isLight, library, chemical
  <div
  className="absolute bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-4 rounded-full"
  style={{
- background: isLight
- ? `radial-gradient(ellipse at center, ${accent}33 0%, transparent 70%)`
- : `radial-gradient(ellipse at center, ${accent}66 0%, transparent 70%)`,
+ background: `radial-gradient(ellipse at center, ${accent}66 0%, transparent 70%)`,
  filter: 'blur(8px)',
  }}
  />
@@ -1137,9 +1130,7 @@ function StudyCard({ s, accent, tr, t }) {
 export default function EntryDetail({ peptide, onClose, onJump }) {
  if (!peptide) return null
  const { t, tr, lang } = useLang()
- const { theme } = useTheme()
  const { library } = useLibrary()
- const isLight = theme === 'light'
  // Calculator section ("Beépített kalkulátor") removed from ALL cards (owner kérés),
  // so the "Dózis kalkulátor" jump-CTA is disabled too (would scroll to nothing).
  const hasCalc = false
@@ -1315,15 +1306,11 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  wordBreak: 'normal',
  overflowWrap: 'break-word',
  hyphens: 'manual',
- background: isLight
- ? `linear-gradient(135deg, #0f172a 0%, ${accent} 55%, ${tierColor} 100%)`
- : `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
+ background: `linear-gradient(135deg, #fff 0%, ${accent} 60%, ${tierColor} 100%)`,
  WebkitBackgroundClip: 'text',
  backgroundClip: 'text',
  color: 'transparent',
- filter: isLight
- ? `drop-shadow(0 2px 8px ${accent}33)`
- : `drop-shadow(0 4px 24px ${accent}55)`,
+ filter: `drop-shadow(0 4px 24px ${accent}55)`,
  }}
  >
  {peptide.name?.replace(/-/g, '‑')}
@@ -1376,14 +1363,10 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  }}
  className="group relative inline-flex items-center gap-2 px-5 py-3 rounded-full font-bold text-sm tracking-wide transition-transform"
  style={{
- background: isLight
- ? `linear-gradient(135deg, ${accent}ee, ${tierColor}ee)`
- : `linear-gradient(135deg, ${accent}, ${tierColor})`,
+ background: `linear-gradient(135deg, ${accent}, ${tierColor})`,
  color: '#ffffff',
  textShadow: '0 1px 2px rgba(0,0,0,0.25)',
- boxShadow: isLight
- ? `0 8px 24px -8px ${accent}88, inset 0 1px 0 rgba(255,255,255,0.4)`
- : `0 12px 40px -10px ${accent}cc, inset 0 1px 0 rgba(255,255,255,0.4)`,
+ boxShadow: `0 12px 40px -10px ${accent}cc, inset 0 1px 0 rgba(255,255,255,0.4)`,
  }}
  >
  <Calculator size={15} strokeWidth={2.5} />
@@ -1406,7 +1389,6 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  name={peptide.name}
  accent={accent}
  tierColor={tierColor}
- isLight={isLight}
  library={library}
  chemicalFormula={peptide.chemicalFormula}
  entryId={peptide.id}

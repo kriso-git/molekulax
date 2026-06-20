@@ -128,8 +128,8 @@
 }
 
 /* ── Theme tokens ──────────────────────────────────────────────────────────
-   Dark is the brand default. Light is an opt-in override toggled via
-   `data-theme="light"` on <html>. */
+   Dark is the only theme (brand identity). `data-theme="dark"` is set
+   statically on <html>; `:root` carries the tokens regardless. */
 :root,
 :root[data-theme="dark"] {
   --bg-base:           #07071e;
@@ -169,42 +169,6 @@
   --scrim-rgb:         5, 7, 18;        /* media-overlay scrim base (dark) */
   --danger-fg:         #fca5a5;         /* warning text color */
   color-scheme: dark;
-}
-
-:root[data-theme="light"] {
-  --bg-base:           #f4f6fb;
-  --bg-elevated:       rgba(255, 255, 255, 0.96);
-  --bg-overlay:        rgba(224, 226, 240, 0.85);
-  --bg-tile:           rgba(244, 246, 251, 0.6);
-  --bg-tile-fade:      rgba(244, 246, 251, 0.95);
-  --bg-modal-fade:     rgba(255, 255, 255, 0.97);
-  --bg-modal-backdrop: rgba(8, 14, 36, 0.55);
-  --text-primary:      #0f172a;
-  --text-secondary:    #1f2937;
-  --text-muted:        #4b5563;
-  --text-faint:        #6b7280;
-  --text-fainter:      #9ca3af;
-  --glass-bg:          rgba(99, 102, 241, 0.06);
-  --glass-border:      rgba(129, 140, 248, 0.25);
-  --border-soft:       rgba(15, 23, 42, 0.10);
-  --border-softer:     rgba(15, 23, 42, 0.06);
-  --surface-bubble:    rgba(255, 255, 255, 0.85);
-  --border-accent:     rgba(99, 102, 241, 0.30);
-  --border-accent-strong: rgba(99, 102, 241, 0.55);
-  --shadow-accent:     rgba(99, 102, 241, 0.22);
-  --accent:            #4f46e5;
-  --accent-strong:     #6d28d9;
-  --tint-soft:         rgba(15, 23, 42, 0.04);
-  --tint-soft-border:  rgba(15, 23, 42, 0.08);
-  --tint-medium:       rgba(15, 23, 42, 0.05);
-  --tint-medium-border:rgba(15, 23, 42, 0.18);
-  --tint-strong:       rgba(15, 23, 42, 0.08);
-  --tint-strong-border:rgba(15, 23, 42, 0.22);
-  --tint-row:          rgba(15, 23, 42, 0.04);
-  --effect-visual-vignette: rgba(244, 246, 251, 0.05);
-  --scrim-rgb:         232, 235, 244;   /* media-overlay scrim base (light) */
-  --danger-fg:         #b91c1c;
-  color-scheme: light;
 }
 
 @layer base {
@@ -253,28 +217,6 @@
   }
 }
 
-/* Smooth colour transitions across the whole tree when the theme flips.
-   We constrain to colours/borders/shadows so layout transitions stay snappy. */
-[data-theme] *,
-[data-theme] *::before,
-[data-theme] *::after {
-  transition-property: background-color, border-color, color, box-shadow, fill, stroke;
-  transition-duration: 280ms;
-  transition-timing-function: ease;
-}
-
-/* ── Light theme overrides for Tailwind utility classes that show on the
-   page today.  We override the heavy-handed dark defaults so existing
-   components don't need rewrites to look correct in light mode. ───────── */
-[data-theme="light"] .text-white { color: #0f172a; }
-[data-theme="light"] .text-gray-100 { color: #1f2937; }
-[data-theme="light"] .text-gray-200 { color: #1f2937; }
-[data-theme="light"] .text-gray-300 { color: #334155; }
-[data-theme="light"] .text-gray-400 { color: #475569; }
-[data-theme="light"] .text-gray-500 { color: #64748b; }
-[data-theme="light"] .text-gray-600 { color: #6b7280; }
-[data-theme="light"] .text-gray-700 { color: #94a3b8; }
-
 /* Dark-theme contrast lift: Tailwind defaults #6b7280 / #4b5563 sit at 4.1:1
    and 2.7:1 on the #07071e canvas — both below WCAG AA. Bump them so body
    copy + secondary labels stay above 4.5:1 without component rewrites. */
@@ -282,97 +224,6 @@
 [data-theme="dark"] .text-gray-600 { color: #94a3b8; }
 [data-theme="dark"] .text-gray-700 { color: #94a3b8; }
 
-[data-theme="light"] .placeholder\:text-gray-500::placeholder,
-[data-theme="light"] .placeholder\:text-gray-600::placeholder { color: #94a3b8; }
-
-/* Brand accent stays close to the original purple; only nudge it a touch
-   darker in light theme so the contrast on near-white surfaces still pops. */
-[data-theme="light"] .text-\[\#818cf8\] { color: #4f46e5; }
-[data-theme="light"] .bg-\[\#07071e\] { background-color: var(--bg-base); }
-[data-theme="light"] .bg-\[\#050505\] { background-color: var(--bg-base); }
-
-/* Glass + soft inline-style surfaces — these are the most common rgba()
-   helpers used directly via the `style` prop in JSX components. We rely
-   on a CSS hook: the components reading from --surface-* fall through. */
-[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.08\)\] { border-color: rgba(15,23,42,0.12); }
-[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.06\)\] { border-color: rgba(15,23,42,0.08); }
-[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.10\)\] { border-color: rgba(15,23,42,0.10); }
-[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.18\)\] { border-color: rgba(15,23,42,0.18); }
-[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.12\)\] { border-color: rgba(15,23,42,0.12); }
-[data-theme="light"] .border-\[rgba\(129\,140\,248\,0\.08\)\] { border-color: rgba(99,102,241,0.16); }
-[data-theme="light"] .border-\[rgba\(129\,140\,248\,0\.18\)\] { border-color: rgba(99,102,241,0.30); }
-[data-theme="light"] .hover\:border-\[rgba\(255\,255\,255\,0\.09\)\]:hover { border-color: rgba(15,23,42,0.14); }
-[data-theme="light"] .hover\:border-\[rgba\(255\,255\,255\,0\.15\)\]:hover { border-color: rgba(15,23,42,0.20); }
-[data-theme="light"] .hover\:border-\[rgba\(255\,255\,255\,0\.18\)\]:hover { border-color: rgba(15,23,42,0.24); }
-[data-theme="light"] .hover\:bg-\[rgba\(255\,255\,255\,0\.03\)\]:hover { background-color: rgba(15,23,42,0.04); }
-[data-theme="light"] .hover\:bg-white\/\[0\.07\]:hover { background-color: rgba(15,23,42,0.06); }
-[data-theme="light"] .border-\[rgba\(255\,255\,255\,0\.08\)\] { border-color: rgba(15,23,42,0.12); }
-[data-theme="light"] .via-\[rgba\(255\,255\,255\,0\.12\)\] { --tw-gradient-via: rgba(15,23,42,0.18) var(--tw-gradient-via-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
-
-/* Soft surfaces using bracket utilities */
-[data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.03\)\] { background-color: rgba(15,23,42,0.04); }
-[data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.04\)\] { background-color: rgba(15,23,42,0.05); }
-[data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.06\)\] { background-color: rgba(15,23,42,0.06); }
-[data-theme="light"] .bg-\[rgba\(255\,255\,255\,0\.05\)\] { background-color: rgba(15,23,42,0.05); }
-
-/* Dotted/dashed separators stay visible on the new pale base */
-[data-theme="light"] .from-\[rgba\(255\,255\,255\,0\.12\)\] { --tw-gradient-from: rgba(15,23,42,0.18) var(--tw-gradient-from-position); }
-[data-theme="light"] .via-\[rgba\(255\,255\,255\,0\.12\)\] { --tw-gradient-via: rgba(15,23,42,0.18) var(--tw-gradient-via-position); --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-via), var(--tw-gradient-to); }
-[data-theme="light"] .to-\[rgba\(255\,255\,255\,0\.12\)\] { --tw-gradient-to: rgba(15,23,42,0.18) var(--tw-gradient-to-position); }
-[data-theme="light"] .to-\[\#818cf8\] { --tw-gradient-to: #4f46e5 var(--tw-gradient-to-position); }
-[data-theme="light"] .from-transparent { --tw-gradient-from: transparent var(--tw-gradient-from-position); }
-
-/* Modal & overlay surfaces — components set these via style. We can't
-   override inline styles via plain CSS specificity, but the overall
-   readability still works because we re-tint the text colours above. */
-[data-theme="light"] .accent-glow {
-  text-shadow: 0 0 28px rgba(99, 102, 241, 0.35);
-}
-
-/* ── Tailwind `bg-white/[α]` and `border-white/[α]` (and hover variants)
-   compile to background-color: rgb(255 255 255 / α). In light mode those
-   white overlays disappear; flip them to dark overlays. ────────────── */
-[data-theme="light"] .bg-white\/\[0\.02\] { background-color: rgba(15,23,42,0.04); }
-[data-theme="light"] .bg-white\/\[0\.03\] { background-color: rgba(15,23,42,0.05); }
-[data-theme="light"] .bg-white\/\[0\.04\] { background-color: rgba(15,23,42,0.06); }
-[data-theme="light"] .bg-white\/\[0\.05\] { background-color: rgba(15,23,42,0.06); }
-[data-theme="light"] .bg-white\/\[0\.06\] { background-color: rgba(15,23,42,0.06); }
-[data-theme="light"] .bg-white\/\[0\.07\] { background-color: rgba(15,23,42,0.07); }
-[data-theme="light"] .bg-white\/\[0\.08\] { background-color: rgba(15,23,42,0.08); }
-[data-theme="light"] .bg-white\/\[0\.10\] { background-color: rgba(15,23,42,0.10); }
-
-[data-theme="light"] .hover\:bg-white\/\[0\.02\]:hover { background-color: rgba(15,23,42,0.04); }
-[data-theme="light"] .hover\:bg-white\/\[0\.07\]:hover { background-color: rgba(15,23,42,0.08); }
-
-[data-theme="light"] .border-white\/\[0\.04\] { border-color: rgba(15,23,42,0.08); }
-[data-theme="light"] .border-white\/\[0\.05\] { border-color: rgba(15,23,42,0.10); }
-[data-theme="light"] .border-white\/\[0\.06\] { border-color: rgba(15,23,42,0.10); }
-[data-theme="light"] .border-white\/\[0\.07\] { border-color: rgba(15,23,42,0.10); }
-[data-theme="light"] .border-white\/\[0\.08\] { border-color: rgba(15,23,42,0.12); }
-
-[data-theme="light"] .hover\:border-white\/\[0\.10\]:hover { border-color: rgba(15,23,42,0.14); }
-
-/* Inputs styled with Tailwind utilities — keep text dark on light bg. */
-[data-theme="light"] input.text-white,
-[data-theme="light"] select.text-white,
-[data-theme="light"] textarea.text-white { color: #0f172a; }
-[data-theme="light"] input.text-white::placeholder,
-[data-theme="light"] textarea.text-white::placeholder { color: #94a3b8; }
-
-/* Bare `bg-[rgba(0,0,0,…)]` darks used inside MiniCalc — flip to light. */
-[data-theme="light"] .bg-\[rgba\(0\,0\,0\,0\.35\)\] { background-color: rgba(15,23,42,0.06); }
-[data-theme="light"] .bg-\[rgba\(0\,0\,0\,0\.25\)\] { background-color: rgba(15,23,42,0.04); }
-
-/* `bg-[#0f0f0f]` (Calculator <option>) — best we can do for native dropdowns. */
-[data-theme="light"] .bg-\[\#0f0f0f\] { background-color: #f4f6fb; color: #0f172a; }
-
-/* Gradient text used on Hero (white-to-something) — ensure the white
-   stop becomes dark in light mode so the title is readable. */
-[data-theme="light"] .from-white { --tw-gradient-from: #0f172a var(--tw-gradient-from-position); }
-[data-theme="light"] .to-white   { --tw-gradient-to:   #0f172a var(--tw-gradient-to-position); }
-
-/* ── PeptideTile hover lift — translateY + accent halo. Replaces the
-   previous image-scale-on-hover behaviour with a card-wide elevation. */
 .peptide-tile {
   transition:
     transform     320ms cubic-bezier(0.2, 0.7, 0.2, 1),

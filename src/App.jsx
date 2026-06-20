@@ -9,12 +9,10 @@ import Faq from './components/Faq'
 import Disclaimer from './components/Disclaimer'
 import Footer from './components/Footer'
 import LanguageSwitcher from './components/LanguageSwitcher'
-import ThemeSwitcher from './components/ThemeSwitcher'
 import EntryDetailRoute from './components/library/EntryDetailRoute'
 import { isEntryDetailHash } from './components/library/entryHash'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
-import { ThemeProvider, useTheme } from './theme/ThemeContext'
 import { LibraryProvider } from './context/LibraryContext'
 
 // LibraryCube + framer-motion are split into a separate chunk via React.lazy
@@ -48,20 +46,17 @@ function useHashRoute() {
   return hash
 }
 
-// Background: always-on CSS backdrop (theme-aware base + teal/violet glows) +
-// the lazy 3D DNA layer on >=768px in BOTH themes. The field re-tunes per theme
-// (light: normal-blend ink strokes + off bloom + light fog; dark: additive glow);
-// key={theme} forces a fresh GL context on toggle so blend modes rebuild cleanly.
-// Mobile still falls back to the CSS backdrop (three.js never downloaded there).
+// Background: always-on CSS backdrop (dark base + teal/violet glows) + the lazy
+// 3D DNA layer on >=768px. Mobile falls back to the CSS backdrop (three.js never
+// downloaded there).
 function BackgroundLayer() {
-  const { theme } = useTheme()
   const showDnaBg = useMediaQuery('(min-width: 768px)')
   return (
     <>
       <div aria-hidden="true" className="dna-backdrop" />
       {showDnaBg && (
         <Suspense fallback={null}>
-          <DnaBackground key={theme} theme={theme} />
+          <DnaBackground />
         </Suspense>
       )}
     </>
@@ -98,15 +93,13 @@ export default function App() {
   const hideLanding = isEntryDetail
 
   return (
-    <ThemeProvider>
-      <LanguageProvider>
+    <LanguageProvider>
         <LibraryProvider>
         <div className="relative min-h-screen page-root overflow-x-hidden">
           {/* Cookieless, GDPR-friendly measurement (enable in the Vercel dashboard). */}
           <Analytics />
           <SpeedInsights />
           <BackgroundLayer />
-          <ThemeSwitcher />
           <LanguageSwitcher />
           <div className="relative z-10">
             {!hideLanding && (
@@ -127,7 +120,6 @@ export default function App() {
           </div>
         </div>
         </LibraryProvider>
-      </LanguageProvider>
-    </ThemeProvider>
+    </LanguageProvider>
   )
 }

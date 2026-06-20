@@ -111,11 +111,8 @@ export function ParticleField({ color = '#a78bfa', count = 32 }) {
 }
 
 // ─── Conic-gradient halo ring around the vial ────────────────────────
-export function HoloRing({ color, tierColor, isLight }) {
- // In light mode, dial down ring alpha so it complements the cream backdrop
- // instead of fighting it.
- const o = isLight ? { strong: '99', medium: '66', light: '44', faint: '33' }
- : { strong: 'cc', medium: 'aa', light: '66', faint: '55' }
+export function HoloRing({ color, tierColor }) {
+ const o = { strong: 'cc', medium: 'aa', light: '66', faint: '55' }
  return (
  <>
  <div
