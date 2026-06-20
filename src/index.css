@@ -503,8 +503,8 @@
    gallery wrapper (.lib-frame) remounts on switch and plays this light CSS
    slide-in; data-libdir (fwd/back) is set in LibraryCube. Async render, no freeze. */
 @media (max-width: 767px) {
-  .lib-frame[data-libdir="fwd"]  { animation: lib-in-right 0.46s cubic-bezier(0.22, 1, 0.36, 1) both; }
-  .lib-frame[data-libdir="back"] { animation: lib-in-left  0.46s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .lib-frame[data-libdir="fwd"]  { animation: lib-in-right 0.65s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .lib-frame[data-libdir="back"] { animation: lib-in-left  0.65s cubic-bezier(0.22, 1, 0.36, 1) both; }
 }
 @keyframes lib-in-right { from { transform: translateX(38%);  opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 @keyframes lib-in-left  { from { transform: translateX(-38%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
