@@ -501,6 +501,12 @@
 /* Phone: a simple horizontal slide + fade instead of the 3D cube (lighter, and
    the cube's perspective reads awkwardly on a narrow viewport). */
 @media (max-width: 767px) {
+  /* Clip the snapshot to ~viewport so the GPU isn't compositing a 5000px-tall
+     texture (that made the slide low-fps and slow to capture → the felt delay).
+     For a horizontal slide the cut sits at the fold, off-screen, so it never shows. */
+  :root[data-vt-dir] .vt-cube { max-height: 100vh; overflow: hidden; }
+  ::view-transition-old(library-view),
+  ::view-transition-new(library-view) { animation-duration: 0.34s; }
   :root[data-vt-dir="fwd"]::view-transition-old(library-view) { animation-name: vt-slide-out-left; }
   :root[data-vt-dir="fwd"]::view-transition-new(library-view) { animation-name: vt-slide-in-right; }
   :root[data-vt-dir="back"]::view-transition-old(library-view) { animation-name: vt-slide-out-right; }
