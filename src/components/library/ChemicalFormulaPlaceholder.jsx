@@ -132,6 +132,9 @@ function PlaceholderShell({ children, ariaLabel, className, cornerColor }) {
       className={`cfp-root relative w-full h-full overflow-hidden rounded-2xl flex items-center justify-center ${className}`}
       style={{
         containerType: 'inline-size',
+        // Contain the molecule video's mix-blend-mode:screen so it composites only
+        // against the shell's own grid/glow layers, never leaking to the page.
+        isolation: 'isolate',
         background:
           'radial-gradient(rgba(0,255,153,0.08) 1px, transparent 1.4px) 0 0 / 14px 14px, ' +
           'radial-gradient(circle at 50% 50%, rgba(0,255,153,0.10) 0%, transparent 65%), ' +

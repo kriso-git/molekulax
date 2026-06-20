@@ -33,10 +33,13 @@ const seeded = (s) => () => { s = (s*1664525+1013904223) % 4294967296; return s/
 const rnd = seeded(20260620)
 
 const canvas = document.getElementById('c')
+// Pure-black background so the runtime <video> can use mix-blend-mode:screen —
+// black drops out, only the glowing molecule composites over the page (floats,
+// no baked halo, no alpha-webm needed which SwiftShader's encoder rejects).
 const renderer = new THREE.WebGLRenderer({ canvas, antialias:true, preserveDrawingBuffer:true })
 renderer.setPixelRatio(1); renderer.setSize(W, H, false)
+renderer.setClearColor(0x000000, 1)
 const scene = new THREE.Scene()
-;(() => { const cv=document.createElement('canvas'); cv.width=cv.height=256; const ctx=cv.getContext('2d'); const g=ctx.createRadialGradient(128,128,10,128,128,185); g.addColorStop(0,'rgba(0,255,153,0.06)'); g.addColorStop(0.5,'rgba(8,12,20,1)'); g.addColorStop(1,'rgba(4,6,12,1)'); ctx.fillStyle='#04060c'; ctx.fillRect(0,0,256,256); ctx.fillStyle=g; ctx.fillRect(0,0,256,256); const tex=new THREE.CanvasTexture(cv); tex.colorSpace=THREE.SRGBColorSpace; scene.background=tex })()
 const cam = new THREE.PerspectiveCamera(42, W/H, 0.1, 100); cam.position.set(0, 0, 11)
 scene.add(new THREE.AmbientLight(0xffffff, 0.5))
 const key = new THREE.PointLight(0xffffff, 60, 100); key.position.set(6, 8, 10); scene.add(key)
@@ -53,7 +56,21 @@ function cylinderBetween(p1, p2, radius, mat) {
 let upd
 async function build() {
   const data = await (await fetch('/mol3d/' + MOL + '.json')).json()
-  const keep = data.atoms.map(a => a.el !== 'H')
+  // Keep only the largest connected component (drops counterions / salt fragments
+  // / isolated atoms like the methylene-blue chloride) AND drop explicit H.
+  const adj = data.atoms.map(() => [])
+  data.bonds.forEach(b => { adj[b.a].push(b.b); adj[b.b].push(b.a) })
+  const compOf = new Array(data.atoms.length).fill(-1)
+  let nc = 0
+  for (let i = 0; i < data.atoms.length; i++) {
+    if (compOf[i] >= 0) continue
+    const st = [i]; compOf[i] = nc
+    while (st.length) { const x = st.pop(); for (const y of adj[x]) if (compOf[y] < 0) { compOf[y] = nc; st.push(y) } }
+    nc++
+  }
+  const sz = new Array(nc).fill(0); compOf.forEach(c => sz[c]++)
+  let big = 0; for (let c = 1; c < nc; c++) if (sz[c] > sz[big]) big = c
+  const keep = data.atoms.map((a, i) => a.el !== 'H' && compOf[i] === big)
   const cen = { x:0, y:0, z:0 }; let n=0
   data.atoms.forEach((a,i)=>{ if(keep[i]){ cen.x+=a.x; cen.y+=a.y; cen.z+=a.z; n++ } })
   cen.x/=n||1; cen.y/=n||1; cen.z/=n||1

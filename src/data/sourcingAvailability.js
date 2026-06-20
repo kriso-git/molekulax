@@ -249,9 +249,20 @@ export const SOURCING_AVAILABILITY = {
 export function getSourcing(libraryId, entryId, variantId) {
   const entry = SOURCING_AVAILABILITY[libraryId]?.[entryId]
   if (!entry) return []
-  // Multi-form entries map each form (variant routeId) to its own shop product;
-  // fall back to the entry's base slugs when the active form has no specific match.
-  const avail = (variantId && entry.variants && entry.variants[variantId]) || entry
+  let avail
+  if (entry.variants) {
+    // Multi-form entry: sourcing is STRICTLY per-form. A form that no shop carries
+    // (not in the variants map) gets NO button — never a base fallback. The base
+    // is only used when no form is active (e.g. a non-variant context).
+    if (variantId) {
+      avail = entry.variants[variantId]
+      if (!avail) return []
+    } else {
+      avail = entry
+    }
+  } else {
+    avail = entry
+  }
   return PARTNER_ORDER.filter((key) => avail[key]).map((key) => {
     const p = SOURCING_PARTNERS[key]
     return { key, name: p.name, logo: p.logo, url: p.productUrl(avail[key]), coupon: p.coupon }

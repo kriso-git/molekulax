@@ -32,6 +32,9 @@ export default function MoleculeVideo({ entryId, name, className = 'absolute ins
     <video
       ref={ref}
       className={className}
+      // Renders on pure black; `screen` drops the black out so only the glowing
+      // molecule composites over the page (floats, no baked background square).
+      style={{ mixBlendMode: 'screen' }}
       loop
       muted
       playsInline

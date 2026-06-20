@@ -31,7 +31,7 @@ const ids = readdirSync(join(PUB, 'mol3d'))
 const server = createServer((req, res) => {
   const path = decodeURIComponent(req.url.split('?')[0])
   if (path.startsWith('/mol3d/')) {
-    try { res.setHeader('Access-Control-Allow-Origin', '*'); res.writeHead(200, { 'Content-Type': 'application/json' }); res.end(readFileSync(join(PUB, path))) }
+    try { const buf = readFileSync(join(PUB, path)); res.setHeader('Access-Control-Allow-Origin', '*'); res.writeHead(200, { 'Content-Type': 'application/json' }); res.end(buf) }
     catch { res.writeHead(404); res.end() }
     return
   }
@@ -78,9 +78,10 @@ const FPORT = 4402
 const fileServer = createServer((req, res) => {
   try {
     const p = join(PUB, decodeURIComponent(req.url.split('?')[0]))
+    const buf = readFileSync(p)
     res.setHeader('Access-Control-Allow-Origin', '*')
     res.writeHead(200, { 'Content-Type': p.endsWith('.webm') ? 'video/webm' : 'application/octet-stream' })
-    res.end(readFileSync(p))
+    res.end(buf)
   } catch { res.writeHead(404); res.end() }
 })
 await new Promise((r) => fileServer.listen(FPORT, '127.0.0.1', r))
