@@ -57,17 +57,22 @@ function libraryNameFor(libId) {
   return lib ? lib.name.hu : null // Phase 1 = HU
 }
 
-// When the path is a library landing (/peptidek …), make that library active so
-// the cube shows the matching gallery. Cold loads are already covered by
-// LibraryContext.readInitialLibraryId; this hardens browser back/forward and any
-// later in-app library-landing navigation. LibraryCube owns the scroll-into-view.
+// On navigation TO a library landing (/peptidek …), make that library active so
+// the cube opens on the matching gallery. Cold loads are already covered by
+// LibraryContext.readInitialLibraryId; this hardens browser back/forward + in-app
+// landing nav. LibraryCube owns the scroll-into-view.
+//
+// CRITICAL: keyed ONLY on the path (route.kind/route.library), NOT on libraryId.
+// The cube switcher changes libraryId WITHOUT changing the URL (state-only by
+// design); if libraryId were a dependency, every cube switch on a landing path
+// would re-fire this effect and snap the library back to the path's — making it
+// impossible to switch away. setLibraryId(same) is a no-op, so re-setting on an
+// unchanged path is harmless.
 function LibraryLandingSync({ route }) {
-  const { libraryId, setLibraryId } = useLibrary()
+  const { setLibraryId } = useLibrary()
   useEffect(() => {
-    if (route.kind === 'library' && route.library !== libraryId) {
-      setLibraryId(route.library)
-    }
-  }, [route.kind, route.library, libraryId, setLibraryId])
+    if (route.kind === 'library') setLibraryId(route.library)
+  }, [route.kind, route.library, setLibraryId])
   return null
 }
 
