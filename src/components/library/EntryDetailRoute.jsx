@@ -12,6 +12,7 @@ import { consumeReturnState } from './returnState'
 import { useMediaQuery } from '../../hooks/useMediaQuery'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
+import { useDocumentHead } from '../../seo/useDocumentHead'
 import { EntryDetailSkeleton, EntryDetailError } from './entry-detail/skeleton'
 import HeroPreview from './HeroPreview'
 import RedirectFlash from './RedirectFlash'
@@ -31,6 +32,8 @@ export default function EntryDetailRoute({ route }) {
   const [loading, setLoading] = useState(false)
   const [retryCounter, setRetryCounter] = useState(0)
   const [redirectId, setRedirectId] = useState(null)
+
+  useDocumentHead(parsed, library?.name ? (library.name[lang] || library.name.hu) : null, entry)
 
   // Sync the active library context with the path. If a visitor deep-links
   // to /nootropikumok/<id> while the in-memory library is still the

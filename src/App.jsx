@@ -12,6 +12,8 @@ import LanguageSwitcher from './components/LanguageSwitcher'
 import EntryDetailRoute from './components/library/EntryDetailRoute'
 import { useLocationPath } from './router/location'
 import { parsePath } from './seo/urls'
+import { useDocumentHead } from './seo/useDocumentHead'
+import { listLibraries } from './data/libraries'
 import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider } from './i18n/LanguageContext'
 import { LibraryProvider } from './context/LibraryContext'
@@ -50,9 +52,15 @@ function BackgroundLayer() {
   )
 }
 
+function libraryNameFor(libId) {
+  const lib = listLibraries().find((l) => l.id === libId)
+  return lib ? lib.name.hu : null // Phase 1 = HU
+}
+
 export default function App() {
   const path = useLocationPath()
   const route = parsePath(path)
+  useDocumentHead(route, route.kind === 'library' ? libraryNameFor(route.library) : null, null)
 
   // Hidden preview routes (#dna-preview / #card-preview), DEV only.
   const rawPath = typeof window !== 'undefined' ? window.location.pathname.replace(/\/+$/, '') : ''
