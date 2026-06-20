@@ -15,12 +15,13 @@ import { useLibrary } from '../../context/LibraryContext'
 import { EntryDetailSkeleton, EntryDetailError } from './entry-detail/skeleton'
 import HeroPreview from './HeroPreview'
 import RedirectFlash from './RedirectFlash'
-import { parseEntryHash, isEntryDetailHash } from './entryHash'
+import { navigate } from '../../router/location'
+import { entryPath, libraryPath } from '../../seo/urls'
 
 const EntryDetail = lazy(() => import('./EntryDetail'))
 
-export default function EntryDetailRoute({ hash }) {
-  const parsed = parseEntryHash(hash)
+export default function EntryDetailRoute({ route }) {
+  const parsed = route && route.kind === 'entry' ? route : null
   const isDesktop = useMediaQuery('(min-width: 1024px)')
   const { t, lang } = useLang()
   const { library, libraryId, setLibraryId, loadEntry, getCachedEntry } = useLibrary()
@@ -66,9 +67,7 @@ export default function EntryDetailRoute({ hash }) {
       setError(null)
       setLoading(false)
       const timer = setTimeout(() => {
-        if (!cancelled) {
-          window.location.hash = 'library'
-        }
+        if (!cancelled) { navigate(libraryPath(parsed.library)) }
       }, 1800)
       return () => {
         cancelled = true
@@ -111,24 +110,21 @@ export default function EntryDetailRoute({ hash }) {
   const closeDetail = () => {
     if (typeof window === 'undefined') return
     const restoreData = consumeReturnState()
+    const back = parsed?.library ? libraryPath(parsed.library) : '/'
 
     if (restoreData) {
-      // Pipeline handoff: LibraryGallery's library.id useEffect (Task C.3) reads
-      // and deletes this on next mount. Ephemeral, single-consumer, single-shot.
       window.__libraryGalleryPendingRestore__ = restoreData
       if (restoreData.libraryId) setLibraryId(restoreData.libraryId)
-      window.location.hash = 'library'
+      navigate(back)
       return
     }
-
-    // Original fallback behavior (no snapshot or stale/corrupted)
     if (parsed?.library) setLibraryId(parsed.library)
-    if (window.location.hash === '#library') {
+    if (window.location.pathname === back) {
       requestAnimationFrame(() => {
         document.getElementById('library')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
       })
     } else {
-      window.location.hash = 'library'
+      navigate(back)
     }
   }
 
@@ -177,34 +173,9 @@ export default function EntryDetailRoute({ hash }) {
     const validId = (id) => variants.some(v => v.routeId === id)
     if (!parsed.variantId || !validId(parsed.variantId)) {
       const fallback = validId(entry.defaultVariant) ? entry.defaultVariant : variants[0].routeId
-      window.history.replaceState(null, '', `#entry/${parsed.library}/${parsed.id}/${fallback}`)
-      // replaceState alone doesn't reliably fire `hashchange` across browsers
-      // (Chrome+Firefox do, but the contract is fuzzy). Dispatch manually so
-      // the App-level hash listener re-parses immediately.
-      window.dispatchEvent(new Event('hashchange'))
+      navigate(entryPath(parsed.library, parsed.id, fallback), { replace: true })
     }
   }, [parsed?.library, parsed?.id, parsed?.variantId, entry])
-
-  // Browser-back path: if hash transitions from #entry/... to #library or
-  // empty (popstate), closeDetail() is NOT called automatically. We consume
-  // the snapshot here too so browser-back also restores. Double-consume across
-  // closeDetail → hashchange is safe — consumeReturnState removes-and-returns
-  // atomically per sessionStorage call.
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    const onHashChange = () => {
-      const newHash = window.location.hash
-      if (newHash === '#library' || newHash === '' || newHash === '#') {
-        const snapshot = consumeReturnState()
-        if (snapshot) {
-          window.__libraryGalleryPendingRestore__ = snapshot
-          if (snapshot.libraryId) setLibraryId(snapshot.libraryId)
-        }
-      }
-    }
-    window.addEventListener('hashchange', onHashChange)
-    return () => window.removeEventListener('hashchange', onHashChange)
-  }, [setLibraryId])
 
   if (!parsed) return null
 
@@ -240,9 +211,7 @@ export default function EntryDetailRoute({ hash }) {
     // visible with an opacity-50 + spinner overlay instead of a full skeleton.
     const peptide = adaptLibraryEntry(entry, library, lang, parsed.variantId)
     const handleJump = (id) => {
-      if (parsed?.library) {
-        window.location.hash = `entry/${parsed.library}/${id}`
-      }
+      if (parsed?.library) navigate(entryPath(parsed.library, id))
     }
     // entryKey excludes variantId on purpose — EntryDetail stays mounted across
     // variant toggles; internal state (scroll, magnet, nameRef) survives the

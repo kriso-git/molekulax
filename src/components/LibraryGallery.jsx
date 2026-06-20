@@ -13,6 +13,8 @@ import NavArrowButton from './library/cube-nav/NavArrowButton'
 import PerformanceCategoryCards from './library/PerformanceCategoryCards'
 import FormFactorChipRow from './library/FormFactorChipRow'
 import { RETURN_STATE_KEY } from './library/returnState'
+import { navigate } from '../router/location'
+import { entryPath } from '../seo/urls'
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
 // Tile layout:
@@ -498,7 +500,7 @@ export default function LibraryGallery({
   } catch (e) {
    // sessionStorage full / disabled — silently skip, falls back to fresh landing
   }
-  window.location.hash = `entry/${library.id}/${entry.id}`
+  navigate(entryPath(library.id, entry.id))
  }, [library.id])
 
  return (
