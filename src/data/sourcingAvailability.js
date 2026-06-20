@@ -196,9 +196,10 @@ export const SOURCING_AVAILABILITY = {
     "hgh-info": { driada: "somatropin-hgh-liquid-100iu", pctzone: "genotropin-36iu-pen-hgh" },
     "hmg-perf": { driada: "hmg-75iu", pctzone: "menodac-150iu" },
     "l-carnitine": {
-      limitless: "l-carnitine-500-mg-ml-solution-20-ml", driada: "levocarnitine-500-mg-ml-l-carnitine-10ml-vial",
+      driada: "levocarnitine-500-mg-ml-l-carnitine-10ml-vial",
       variants: {
-        oral: { limitless: "l-carnitine-500-mg-ml-solution-20-ml" }, // oral L-carnitine liquid
+        // oral (capsule): no partner sells an oral L-carnitine capsule -> no button.
+        // (LIMITLESS only has a 500mg/ml liquid solution, which is not an oral capsule.)
         aq: { driada: "levocarnitine-500-mg-ml-l-carnitine-10ml-vial" }, // injectable L-carnitine vial
       },
     },
@@ -291,7 +292,13 @@ export const SOURCING_AVAILABILITY = {
     "levothyroxin": { driada: "t4-euthymed-50-mcg-levothyroxine-sodium" },
     "liothyronine": { driada: "liothymed-25-mcg-t3-triiodothyronine", pctzone: "linorma-t3-20mcg" },
     "metformin": { pctzone: "metfor-500mg" },
-    "minoxidil": { driada: "minoxytop-5mg-minoxidil-tablets-ip", pctzone: "morr-f-5-60ml" },
+    "minoxidil": {
+      driada: "minoxytop-5mg-minoxidil-tablets-ip", pctzone: "morr-f-5-60ml",
+      variants: {
+        oral: { driada: "minoxytop-5mg-minoxidil-tablets-ip" }, // oral minoxidil tablets
+        topical: { pctzone: "morr-f-5-60ml" }, // topical 5% foam/solution (MORR-F)
+      },
+    },
     "modafinil": { driada: "modus-100mg-modafinil", pctzone: "modvigil-200mg-2" },
     "tadalafil": { driada: "tadalafil-10mg", pctzone: "tadacip-20mg" },
     "tamoxifen": { driada: "nolvados-10-mg-tamoxifen-citrate", pctzone: "tamoxifen-20mg-3" },
