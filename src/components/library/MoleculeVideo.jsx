@@ -11,6 +11,17 @@ export default function MoleculeVideo({ entryId, name, className = 'absolute ins
   useEffect(() => {
     const v = ref.current
     if (!v) return
+    // iOS: make this a pure decorative background, never a player. The muted
+    // ATTRIBUTE (not just React's prop, which React doesn't reliably reflect to
+    // the attribute) is required for inline autoplay; without it iOS shows native
+    // controls and lets the video open in a fullscreen / Picture-in-Picture player
+    // that can even stick on the home screen. Also kill PiP and remote playback.
+    v.muted = true
+    v.defaultMuted = true
+    v.setAttribute('muted', '')
+    v.setAttribute('x-webkit-airplay', 'deny')
+    v.disablePictureInPicture = true
+    try { v.disableRemotePlayback = true } catch { /* not supported everywhere */ }
     const src = `/mol-viz/${entryId}.webm`
     const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}) }
     const io = new IntersectionObserver(([e]) => {
@@ -33,12 +44,15 @@ export default function MoleculeVideo({ entryId, name, className = 'absolute ins
       ref={ref}
       className={className}
       // Renders on pure black; `screen` drops the black out so only the glowing
-      // molecule composites over the page (floats, no baked background square).
-      style={{ mixBlendMode: 'screen' }}
+      // molecule composites over the page. pointerEvents:none so a tap goes to the
+      // card (open the entry), never to the video (which could open a player).
+      style={{ mixBlendMode: 'screen', pointerEvents: 'none' }}
       loop
       muted
       playsInline
+      disablePictureInPicture
       preload="none"
+      tabIndex={-1}
       poster={`/mol-viz/${entryId}.jpg`}
       aria-label={`${name} 3D kémiai szerkezet`}
     />

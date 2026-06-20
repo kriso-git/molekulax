@@ -497,3 +497,16 @@
 @keyframes vt-cube-new-fwd  { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(90deg)  translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } }
 @keyframes vt-cube-old-back { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(90deg)  translateZ(var(--vt-half,0px)); } }
 @keyframes vt-cube-new-back { from { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(-90deg) translateZ(var(--vt-half,0px)); } to { transform: perspective(16000px) scale(var(--vt-comp,1)) rotateY(0deg)   translateZ(var(--vt-half,0px)); } }
+
+/* Phone: a simple horizontal slide + fade instead of the 3D cube (lighter, and
+   the cube's perspective reads awkwardly on a narrow viewport). */
+@media (max-width: 767px) {
+  :root[data-vt-dir="fwd"]::view-transition-old(library-view) { animation-name: vt-slide-out-left; }
+  :root[data-vt-dir="fwd"]::view-transition-new(library-view) { animation-name: vt-slide-in-right; }
+  :root[data-vt-dir="back"]::view-transition-old(library-view) { animation-name: vt-slide-out-right; }
+  :root[data-vt-dir="back"]::view-transition-new(library-view) { animation-name: vt-slide-in-left; }
+}
+@keyframes vt-slide-out-left  { from { transform: translateX(0); opacity: 1; } to { transform: translateX(-26%); opacity: 0; } }
+@keyframes vt-slide-in-right  { from { transform: translateX(26%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+@keyframes vt-slide-out-right { from { transform: translateX(0); opacity: 1; } to { transform: translateX(26%); opacity: 0; } }
+@keyframes vt-slide-in-left   { from { transform: translateX(-26%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }

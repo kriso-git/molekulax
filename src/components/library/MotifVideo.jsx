@@ -20,6 +20,16 @@ export default function MotifVideo({ libId, catId, label, className = 'absolute 
   useEffect(() => {
     const v = ref.current
     if (!v) return
+    // iOS: pure decorative background, never a player. The muted ATTRIBUTE (not
+    // just React's prop) is required for inline autoplay; without it iOS shows
+    // native controls and lets it open in a fullscreen / PiP player. Kill PiP +
+    // remote playback too.
+    v.muted = true
+    v.defaultMuted = true
+    v.setAttribute('muted', '')
+    v.setAttribute('x-webkit-airplay', 'deny')
+    v.disablePictureInPicture = true
+    try { v.disableRemotePlayback = true } catch { /* not supported everywhere */ }
     const src = `/card-viz/${libId}/${catId}.webm`
     const play = () => { const p = v.play(); if (p && p.catch) p.catch(() => {}) }
     const io = new IntersectionObserver(([e]) => {
@@ -41,10 +51,15 @@ export default function MotifVideo({ libId, catId, label, className = 'absolute 
     <video
       ref={ref}
       className={className}
+      // pointerEvents:none so a tap goes to the card, never to the video (which
+      // could otherwise open a fullscreen/PiP player on iOS).
+      style={{ pointerEvents: 'none' }}
       loop
       muted
       playsInline
+      disablePictureInPicture
       preload="none"
+      tabIndex={-1}
       poster={`/card-viz/${libId}/${catId}.jpg`}
       aria-label={label}
     />
