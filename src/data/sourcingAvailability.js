@@ -165,7 +165,11 @@ export const SOURCING_AVAILABILITY = {
   },
   performance: {
     "5-amino-1mq": { limitless: "5-amino-1mq-50mg-30-capsules" },
-    "albuterol": { driada: "salbutamol-4mg" },
+    "albuterol": {
+      driada: "salbutamol-4mg",
+      // inhaled (Ventolin/ProAir MDI): no partner carries a metered-dose inhaler -> no button.
+      variants: { oral: { driada: "salbutamol-4mg" } },
+    },
     "anadrol": { driada: "anadrolus-50-mg-oxymetholone" },
     "anastrozol": { driada: "arimidyn-0-5-mg-anastrozole", pctzone: "femistra-1mg" },
     "anavar-info": { driada: "anavaros-10mg-oxandrolone", pctzone: "oxandro-10mg" },
@@ -176,7 +180,11 @@ export const SOURCING_AVAILABILITY = {
     "clenbuterol": { driada: "clenbutos-40-mcg-clenbuterol", pctzone: "clenbut-40mcg" },
     "clomid": { driada: "clomilad-25-mg-clomiphene-citrate", pctzone: "clomisign-50mg" },
     "dhb": { driada: "dihydroboldos-100-mg-ml-dihydroboldenone-cypionate" },
-    "dianabol-info": { driada: "dinabolyn-10-mg-methandienone" },
+    "dianabol-info": {
+      driada: "dinabolyn-10-mg-methandienone",
+      // oil (Reforvit-B in-oil IM): not carried -> no button.
+      variants: { oral: { driada: "dinabolyn-10-mg-methandienone" } },
+    },
     "dutasteride": { pctzone: "dutanol-0-5mg" },
     "equipoise": { driada: "boldelad-250-mg-ml-boldenone-undecylenate" },
     "exemestane": { driada: "aromalyn-25-mg-exemestane", pctzone: "xtane-25mg" },
@@ -187,21 +195,53 @@ export const SOURCING_AVAILABILITY = {
     "hcg-perf": { driada: "hcg-5000iu-human-chorionic-gonadotropin", pctzone: "zyhcg-5000iu" },
     "hgh-info": { driada: "somatropin-hgh-liquid-100iu", pctzone: "genotropin-36iu-pen-hgh" },
     "hmg-perf": { driada: "hmg-75iu", pctzone: "menodac-150iu" },
-    "l-carnitine": { limitless: "l-carnitine-500-mg-ml-solution-20-ml", driada: "levocarnitine-500-mg-ml-l-carnitine-10ml-vial" },
+    "l-carnitine": {
+      limitless: "l-carnitine-500-mg-ml-solution-20-ml", driada: "levocarnitine-500-mg-ml-l-carnitine-10ml-vial",
+      variants: {
+        oral: { limitless: "l-carnitine-500-mg-ml-solution-20-ml" }, // oral L-carnitine liquid
+        aq: { driada: "levocarnitine-500-mg-ml-l-carnitine-10ml-vial" }, // injectable L-carnitine vial
+      },
+    },
     "letrozol": { driada: "femaralyn-2-5-mg-letrozole", pctzone: "letroz-2-5mg" },
     "levothyroxine": { driada: "t4-euthymed-50-mcg-levothyroxine-sodium", pctzone: "lethyrox-100mcg" },
     "lgd-4033": { driada: "ligandrol-lgd4033" },
     "liothyronine": { driada: "liothymed-25-mcg-t3-triiodothyronine", pctzone: "linorma-t3-20mcg" },
-    "masteron": { driada: "mastelad-100-mg-ml-drostanolone-propionate", pctzone: "masterbol-injection-100mg-x5-1ml-ampules" },
-    "ment-19nor": { driada: "mentolad-50-mg-ml-trestolone-acetate" },
-    "ment-test": { driada: "mentolad-50-mg-ml-trestolone-acetate" },
+    "masteron": {
+      driada: "mastelad-100-mg-ml-drostanolone-propionate", pctzone: "masterbol-injection-100mg-x5-1ml-ampules",
+      variants: {
+        prop: { driada: "mastelad-100-mg-ml-drostanolone-propionate", pctzone: "masterbol-injection-100mg-x5-1ml-ampules" },
+        enan: { driada: "drostanolone-enanthate" }, // Drostargos 200mg/ml (Masteron-E); no PCTZONE enanthate
+      },
+    },
+    "ment-19nor": {
+      driada: "mentolad-50-mg-ml-trestolone-acetate",
+      // en (trestolone enanthate): not carried (driadashop.to/trestolone-enanthate -> 404) -> no button.
+      variants: { ac: { driada: "mentolad-50-mg-ml-trestolone-acetate" } },
+    },
+    "ment-test": {
+      driada: "mentolad-50-mg-ml-trestolone-acetate",
+      // en: no trestolone enanthate product -> no button.
+      variants: { ac: { driada: "mentolad-50-mg-ml-trestolone-acetate" } },
+    },
     "mots-c": { limitless: "mots-c", driada: "mots-c-10-mg" },
-    "nandrolone-info": { driada: "nandecos-200-mg-ml-nandrolone-decanoate" },
+    "nandrolone-info": {
+      driada: "nandecos-200-mg-ml-nandrolone-decanoate",
+      variants: {
+        deca: { driada: "nandecos-200-mg-ml-nandrolone-decanoate" },
+        npp: { driada: "nandrolone-phenylpropionate" },
+      },
+    },
     "nolvadex": { driada: "nolvados-10-mg-tamoxifen-citrate", pctzone: "tamoxifen-20mg-3" },
     "ostarine": { driada: "ostarine-mk-2866" },
     "pramipexole": { pctzone: "pramipex-0-25mg" },
     "pregnenolone": { limitless: "pregnenolone-micronized-10mg-60-capsules" },
-    "primobolan": { driada: "primos-100-mg-ml-methenolone-enanthate", pctzone: "primobol-100mg-ml-1ml-10-ampules" },
+    "primobolan": {
+      driada: "primos-100-mg-ml-methenolone-enanthate", pctzone: "primobol-100mg-ml-1ml-10-ampules",
+      variants: {
+        "ac-oral": { driada: "methacetos-25-mg-methenolone-acetate" }, // oral methenolone acetate tablets
+        "enan-oil": { driada: "primos-100-mg-ml-methenolone-enanthate", pctzone: "primobol-100mg-ml-1ml-10-ampules" },
+      },
+    },
     "proviron": { driada: "provironus-25-mg-mesterolone", pctzone: "provironum-25mg" },
     "rad-140": { driada: "testolone-rad-140" },
     "raloxifene": { driada: "raloxos-30mg-raloxifene", pctzone: "raloxiheal-60mg" },
@@ -209,7 +249,11 @@ export const SOURCING_AVAILABILITY = {
     "s23": { driada: "mastorine-10mg-s23" },
     "s4": { driada: "andarine-s4" },
     "slu-pp-332": { limitless: "slu-pp-332-250mcg-60-capsules" },
-    "superdrol": { driada: "superdrolyn-10-mg-methasterone" },
+    "superdrol": {
+      driada: "superdrolyn-10-mg-methasterone",
+      // injectable (Methyl-Drol in-oil IM): not carried -> no button.
+      variants: { oral: { driada: "superdrolyn-10-mg-methasterone" } },
+    },
     "testosterone-info": {
       driada: "testos-250-mg-ml-testosterone-enanthate", pctzone: "testobalin-250mg-ml",
       variants: {
@@ -219,9 +263,22 @@ export const SOURCING_AVAILABILITY = {
         sus: { driada: "sustalad-250-mg-ml-sustanon", pctzone: "sustanon-250-inj" },
       },
     },
-    "trenbolone-info": { driada: "trenacetos-100-mg-ml-trenbolone-acetate" },
+    "trenbolone-info": {
+      driada: "trenacetos-100-mg-ml-trenbolone-acetate",
+      variants: {
+        ace: { driada: "trenacetos-100-mg-ml-trenbolone-acetate" },
+        enan: { driada: "trenbolone-enanthate" },
+        hex: { driada: "trenbolone-hexahydrobenzyl-carbonate" }, // Parabolan
+      },
+    },
     "turinabol": { driada: "turinadyn-10-mg-turinabol" },
-    "winstrol-info": { driada: "stanos-10-mg-stanozolol", pctzone: "winstrol-10mg" },
+    "winstrol-info": {
+      driada: "stanos-10-mg-stanozolol", pctzone: "winstrol-10mg",
+      variants: {
+        oral: { driada: "stanos-10-mg-stanozolol", pctzone: "winstrol-10mg" },
+        aq: { driada: "stanozolol-winstrolad" }, // injectable Stanozolol 50mg/ml (Winstrol Depot); no PCTZONE injectable
+      },
+    },
     "yk-11": { driada: "myostan-yk-11" },
     "yohimbine": { driada: "yohimbinos-yohimbine-hydrochloride" },
   },
