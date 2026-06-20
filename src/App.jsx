@@ -66,17 +66,18 @@ function BackgroundLayer() {
 export default function App() {
   const hash = useHashRoute()
 
-  // Hidden preview route — works as a clean path (/dna-preview) OR hash
-  // (#dna-preview). Fully isolated, no providers/landing mounted.
+  // Hidden preview routes (#dna-preview / #card-preview) — internal tuning tools.
+  // Gated to DEV only so they are never reachable on the production site (in prod
+  // import.meta.env.DEV is false, so these fall through to the normal landing).
   const path = typeof window !== 'undefined' ? window.location.pathname.replace(/\/+$/, '') : ''
-  if (hash === 'dna-preview' || path === '/dna-preview') {
+  if (import.meta.env.DEV && (hash === 'dna-preview' || path === '/dna-preview')) {
     return (
       <Suspense fallback={null}>
         <DnaPreview />
       </Suspense>
     )
   }
-  if (hash === 'card-preview' || path === '/card-preview') {
+  if (import.meta.env.DEV && (hash === 'card-preview' || path === '/card-preview')) {
     return (
       <Suspense fallback={null}>
         <CardVizPreview />

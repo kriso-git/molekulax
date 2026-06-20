@@ -40,6 +40,11 @@ jobs:
   pmid-gate:
     name: PMID integrity gate (NCBI)
     runs-on: ubuntu-latest
+    # Do NOT expose NCBI_API_KEY to fork-PR runs (which execute PR-authored entry
+    # files via dynamic import). Runs on push/dispatch + same-repo PRs only; fork
+    # PRs skip the gate (GitHub already withholds secrets from fork PRs, this makes
+    # it explicit and future-proofs against a pull_request_target switch).
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     env:
       NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
     steps:
