@@ -287,7 +287,9 @@ export const SOURCING_AVAILABILITY = {
     "bupropion": { pctzone: "bupron-sr-150mg" },
     "finasteride": { driada: "finastelad-1-mg-finasteride", pctzone: "healpecia-1mg" },
     "fluoxetine": { pctzone: "fludac-20mg" },
-    "hydrocortisone": { pctzone: "hisone-10mg" },
+    // hydrocortisone: presented as the topical ointment (Hydrocortison-Wagner 1%).
+    // No partner shop carries a topical hydrocortisone cream/ointment (PCTZONE's
+    // Hisone is ORAL tablets, a different form) -> no sourcing button, by design.
     "isotretinoin": { driada: "accutadyn-isotretinoin-1", pctzone: "accufine-20mg-3" },
     "levothyroxin": { driada: "t4-euthymed-50-mcg-levothyroxine-sodium" },
     "liothyronine": { driada: "liothymed-25-mcg-t3-triiodothyronine", pctzone: "linorma-t3-20mcg" },
