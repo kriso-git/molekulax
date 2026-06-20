@@ -34,7 +34,7 @@ export default function SourcingButtons({ entryId, variantId, className = '' }) 
             href={s.url}
             target="_blank"
             rel="noopener noreferrer sponsored"
-            aria-label={`${s.name}${s.coupon ? ` – ${t('entry.sourcing.coupon')}: ${s.coupon}` : ''}`}
+            aria-label={`${s.name}${s.coupon ? `, -10% ${t('entry.sourcing.coupon')}: ${s.coupon}` : ''}`}
             className="group flex items-center gap-4 p-5 rounded-2xl glass no-underline transition-all duration-300 hover:border-[rgba(129,140,248,0.35)] hover:bg-[rgba(99,102,241,0.07)]"
           >
             <span
@@ -61,7 +61,7 @@ export default function SourcingButtons({ entryId, variantId, className = '' }) 
                   style={{ color: '#818cf8' }}
                 >
                   <Tag size={12} strokeWidth={2.5} className="shrink-0" />
-                  {t('entry.sourcing.coupon')}: {s.coupon}
+                  {`-10% ${t('entry.sourcing.coupon')}: ${s.coupon}`}
                 </span>
               ) : (
                 <span className="mt-1 text-xs" style={{ color: 'var(--text-muted)' }}>

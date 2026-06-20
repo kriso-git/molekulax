@@ -65,8 +65,9 @@ export const SOURCING_PARTNERS = {
     name: 'LIMITLESS',
     logo: '/sourcing/limitless.png',
     // WooCommerce product page; ?ref=molekulax carries the affiliate attribution.
+    // The visitor still types the MOLEKULA code at checkout for the -10% discount.
     productUrl: (slug) => `https://www.limitlessbiochem.com/product/${slug}/?ref=molekulax`,
-    coupon: null,
+    coupon: 'MOLEKULA',
   },
   driada: {
     name: 'DRIADA',

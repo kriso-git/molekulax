@@ -67,14 +67,14 @@ export default function Sourcing() {
                   <p className="text-gray-400 text-sm mt-2 mb-4">{t(p.descKey)}</p>
 
                   <div
-                    className="inline-flex items-center gap-2 self-start mb-5 px-3 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider"
+                    className="inline-flex items-center gap-2 self-start mb-5 px-3.5 py-2 rounded-full text-[13px] font-bold uppercase tracking-wider"
                     style={{
                       background: 'rgba(129,140,248,0.12)',
                       border: '1px solid rgba(129,140,248,0.4)',
                       color: '#818cf8',
                     }}
                   >
-                    <Tag size={12} strokeWidth={2.5} className="shrink-0" />
+                    <Tag size={14} strokeWidth={2.5} className="shrink-0" />
                     {t(p.couponKey)}
                   </div>
 
