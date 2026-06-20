@@ -109,7 +109,7 @@ function CategoryCard({ cat, count, active, t, tr, onClick }) {
         <>
           <MotifVideo libId="performance" catId={cat.id} label={tr(cat.label)} className="absolute inset-0 w-full h-full object-cover opacity-[0.55]" />
           <div className="absolute inset-0 pointer-events-none" style={{
-            background: `linear-gradient(160deg, rgba(5,7,18,0.55) 0%, rgba(5,7,18,0.74) 60%, rgba(5,7,18,0.9) 100%)`,
+            background: `linear-gradient(160deg, rgba(var(--scrim-rgb),0.55) 0%, rgba(var(--scrim-rgb),0.74) 60%, rgba(var(--scrim-rgb),0.9) 100%)`,
           }} />
         </>
       )}

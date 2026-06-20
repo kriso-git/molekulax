@@ -81,7 +81,7 @@ export default function LibraryCube() {
         // ~1s on mobile (the felt delay). Plain swap + a light CSS slide-in driven by
         // the key-remount (data-libdir) instead; renders async, never freezes.
         setLibraryId(id)
-        await new Promise((r) => setTimeout(r, 680)) // ~ the slide duration
+        await new Promise((r) => setTimeout(r, 1020)) // ~ the slide duration
         return
       }
       const root = document.documentElement

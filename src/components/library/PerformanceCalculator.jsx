@@ -56,11 +56,11 @@ export default function PerformanceCalculator({ doseCalc, accent = '#10b981' }) 
     return (
       <section className="relative px-6 sm:px-10 pb-10">
         <header className="mb-5">
-          <p className="text-xs uppercase tracking-[0.22em] mb-2 inline-flex items-center gap-2" style={{ color: '#fca5a5' }}>
+          <p className="text-xs uppercase tracking-[0.22em] mb-2 inline-flex items-center gap-2" style={{ color: 'var(--danger-fg)' }}>
             <AlertTriangle size={12} strokeWidth={2.5} />
             {t('entry.calc.eyebrow')}
           </p>
-          <h2 className="text-2xl font-bold tracking-tight" style={{ color: '#fca5a5' }}>
+          <h2 className="text-2xl font-bold tracking-tight" style={{ color: 'var(--danger-fg)' }}>
             {t('entry.calc.warning.title')}
           </h2>
         </header>
@@ -81,9 +81,9 @@ export default function PerformanceCalculator({ doseCalc, accent = '#10b981' }) 
               className="shrink-0 w-12 h-12 rounded-2xl flex items-center justify-center"
               style={{ background: 'rgba(220,38,38,0.25)', border: '1px solid #dc2626' }}
             >
-              <AlertTriangle size={22} strokeWidth={2.25} color="#fecaca" />
+              <AlertTriangle size={22} strokeWidth={2.25} color="var(--danger-fg)" />
             </div>
-            <p className="text-sm leading-relaxed" style={{ color: '#fecaca' }}>
+            <p className="text-sm leading-relaxed" style={{ color: 'var(--danger-fg)' }}>
               {tr(doseCalc.warning)}
             </p>
           </div>

@@ -32,7 +32,7 @@ export default function MiniCalc({ defaultVialMg = 5, defaultBacMl = 2, defaultD
           onChange={e => setter(e.target.value)}
           step={step}
           min="0"
-          className="w-full bg-[rgba(0,0,0,0.35)] border border-white/[0.08] rounded-lg px-3 py-2
+          className="w-full bg-[var(--tint-medium)] border border-[var(--tint-medium-border)] rounded-lg px-3 py-2
                      text-white text-sm focus:outline-none focus:border-[rgba(129,140,248,0.4)]
                      transition-colors"
         />
@@ -42,7 +42,7 @@ export default function MiniCalc({ defaultVialMg = 5, defaultBacMl = 2, defaultD
   )
 
   return (
-    <div className="rounded-xl border border-white/[0.07] bg-[rgba(0,0,0,0.25)] p-5">
+    <div className="rounded-xl border border-[var(--tint-soft-border)] bg-[var(--tint-soft)] p-5">
       <div className="flex items-center gap-2 mb-4">
         <Calculator size={14} style={{ color: accentColor }} />
         <span className="text-xs font-semibold tracking-widest uppercase" style={{ color: accentColor }}>

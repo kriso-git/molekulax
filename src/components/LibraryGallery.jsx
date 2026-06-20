@@ -650,7 +650,7 @@ export default function LibraryGallery({
       style={{
        background: `${cat.accent}26`,
        border: `1px solid ${cat.accent}`,
-       color: '#fff',
+       color: 'var(--text-primary)',
       }}
      >
       {tr(cat.label)}
@@ -670,7 +670,7 @@ export default function LibraryGallery({
       style={{
        background: `${ff.color}26`,
        border: `1px solid ${ff.color}`,
-       color: '#fff',
+       color: 'var(--text-primary)',
       }}
      >
       {tr(ff.label)}

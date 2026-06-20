@@ -139,7 +139,11 @@ function PlaceholderShell({ children, ariaLabel, className, cornerColor }) {
           'radial-gradient(rgba(0,255,153,0.08) 1px, transparent 1.4px) 0 0 / 14px 14px, ' +
           'radial-gradient(circle at 50% 50%, rgba(0,255,153,0.10) 0%, transparent 65%), ' +
           `linear-gradient(135deg, ${tint(cc, 0.05)} 0%, transparent 50%, rgba(99,102,241,0.05) 100%), ` +
-          'var(--bg-base, #050505)',
+          // Always dark (NOT var(--bg-base)) so the glowing molecule / neon image
+          // and the mix-blend-mode:screen video composite correctly in BOTH themes
+          // — on a light --bg-base they wash out to nothing. A dark HUD tile in a
+          // light card reads as an intentional "scope" display.
+          '#0a0a16',
         border: `1px solid ${tint(cc, 0.22)}`,
         boxShadow: `inset 0 0 40px ${tint(cc, 0.05)}, inset 0 1px 0 rgba(255,255,255,0.04)`,
       }}

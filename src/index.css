@@ -166,6 +166,8 @@
   /* Image vignette used inside CategoryVisual. Strong dark fade in dark
      theme; nearly transparent in light theme so the photo stays bright. */
   --effect-visual-vignette: rgba(7, 7, 30, 0.25);
+  --scrim-rgb:         5, 7, 18;        /* media-overlay scrim base (dark) */
+  --danger-fg:         #fca5a5;         /* warning text color */
   color-scheme: dark;
 }
 
@@ -200,6 +202,8 @@
   --tint-strong-border:rgba(15, 23, 42, 0.22);
   --tint-row:          rgba(15, 23, 42, 0.04);
   --effect-visual-vignette: rgba(244, 246, 251, 0.05);
+  --scrim-rgb:         232, 235, 244;   /* media-overlay scrim base (light) */
+  --danger-fg:         #b91c1c;
   color-scheme: light;
 }
 
@@ -503,8 +507,8 @@
    gallery wrapper (.lib-frame) remounts on switch and plays this light CSS
    slide-in; data-libdir (fwd/back) is set in LibraryCube. Async render, no freeze. */
 @media (max-width: 767px) {
-  .lib-frame[data-libdir="fwd"]  { animation: lib-in-right 0.65s cubic-bezier(0.22, 1, 0.36, 1) both; }
-  .lib-frame[data-libdir="back"] { animation: lib-in-left  0.65s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .lib-frame[data-libdir="fwd"]  { animation: lib-in-right 1s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .lib-frame[data-libdir="back"] { animation: lib-in-left  1s cubic-bezier(0.22, 1, 0.36, 1) both; }
 }
 @keyframes lib-in-right { from { transform: translateX(38%);  opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 @keyframes lib-in-left  { from { transform: translateX(-38%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }

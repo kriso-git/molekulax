@@ -136,7 +136,7 @@ function ReconTab() {
  className="w-full appearance-none bg-white/[0.06] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm font-medium focus:outline-none focus:border-[rgba(129,140,248,0.5)] transition-colors duration-200 cursor-pointer"
  >
  {PEPTIDES.map((p, i) => (
- <option key={i} value={i} className="bg-[#0f0f0f]">
+ <option key={i} value={i} className="bg-[var(--bg-elevated)]">
  {p.name === '__custom' ? t('calc.custom') : p.name}
  </option>
  ))}
