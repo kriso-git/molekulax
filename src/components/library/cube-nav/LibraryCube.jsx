@@ -7,8 +7,10 @@ import LibraryGallery from '../../LibraryGallery'
 import Calculator from '../../Calculator'
 import EffectsSection from '../EffectsSection'
 import CubeNavControls from './CubeNavControls'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const LIBRARY_WORD = { hu: 'könyvtár', en: 'library', pl: 'biblioteka' }
+const SWIPE_HINT = { hu: 'húzd a könyvtárváltáshoz', en: 'swipe to switch library', pl: 'przesuń, aby zmienić bibliotekę' }
 
 // View Transitions API: on switch, the browser natively snapshots the old + new
 // library states as GPU images and we animate the two flat snapshots as a 3D cube
@@ -27,6 +29,7 @@ export default function LibraryCube() {
   const sectionRef = useRef(null)
   const cubeRef = useRef(null)
   const busyRef = useRef(false)
+  const touchRef = useRef(null)
   const [, force] = useReducer((x) => x + 1, 0)
 
   // Render straight from the synchronous cache (getLibrary) so that, inside the
@@ -39,15 +42,10 @@ export default function LibraryCube() {
     if (!ready) loadLibrary(libraryId).then(() => force())
   }, [libraryId, ready])
 
-  // Warm the other libraries on idle so switching is instant — no async load
-  // delay before the view transition (the snapshot would otherwise be a skeleton).
+  // Warm ALL libraries shortly after first paint so every switch is instant — no
+  // async load delay (and no skeleton-height jump) before the view transition.
   useEffect(() => {
-    const warm = () => libraries.forEach((l) => loadLibrary(l.id))
-    if (typeof window.requestIdleCallback === 'function') {
-      const id = window.requestIdleCallback(warm, { timeout: 3000 })
-      return () => window.cancelIdleCallback(id)
-    }
-    const id = setTimeout(warm, 2000)
+    const id = setTimeout(() => libraries.forEach((l) => loadLibrary(l.id)), 600)
     return () => clearTimeout(id)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
@@ -108,6 +106,25 @@ export default function LibraryCube() {
     else if (e.key === 'End') { e.preventDefault(); goJump(count - 1) }
   }
 
+  // Touch swipe → switch. Only horizontal swipes count, so vertical scrolling of
+  // the (tall) gallery is untouched.
+  const onTouchStart = (e) => {
+    const t = e.touches[0]
+    touchRef.current = { x: t.clientX, y: t.clientY }
+  }
+  const onTouchEnd = (e) => {
+    const s = touchRef.current
+    if (!s) return
+    touchRef.current = null
+    const t = e.changedTouches[0]
+    const dx = t.clientX - s.x
+    const dy = t.clientY - s.y
+    if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy) * 1.6) {
+      if (dx < 0) goNext()
+      else goPrev()
+    }
+  }
+
   return (
     <section
       id="library"
@@ -116,11 +133,23 @@ export default function LibraryCube() {
       aria-roledescription="Library selector"
       aria-label={library.name[lang]}
       onKeyDown={handleKeyDown}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
       className="relative outline-none py-28 px-4 scroll-mt-24"
     >
       <span className="sr-only" aria-live="polite" aria-atomic="true">
         {`${library.name[lang]} ${LIBRARY_WORD[lang] || 'könyvtár'}`}
       </span>
+
+      {/* Phone-only swipe hint (arrows are hidden on mobile). */}
+      <div
+        className="sm:hidden flex items-center justify-center gap-2 mb-5 text-[11px] tracking-wide uppercase select-none"
+        style={{ color: 'var(--text-muted)' }}
+      >
+        <ChevronLeft size={14} className="vt-swipe-hint" strokeWidth={2.5} />
+        <span>{SWIPE_HINT[lang] || SWIPE_HINT.hu}</span>
+        <ChevronRight size={14} className="vt-swipe-hint vt-swipe-hint-r" strokeWidth={2.5} />
+      </div>
 
       <CubeNavControls
         libraries={libraries}

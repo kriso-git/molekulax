@@ -510,3 +510,9 @@
 @keyframes vt-slide-in-right  { from { transform: translateX(26%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
 @keyframes vt-slide-out-right { from { transform: translateX(0); opacity: 1; } to { transform: translateX(26%); opacity: 0; } }
 @keyframes vt-slide-in-left   { from { transform: translateX(-26%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+
+/* Phone swipe hint chevrons — gently nudge outward */
+@keyframes vt-swipe-left  { 0%, 100% { transform: translateX(0); opacity: 0.5; } 50% { transform: translateX(-3px); opacity: 1; } }
+@keyframes vt-swipe-right { 0%, 100% { transform: translateX(0); opacity: 0.5; } 50% { transform: translateX(3px); opacity: 1; } }
+.vt-swipe-hint   { animation: vt-swipe-left 1.7s ease-in-out infinite; }
+.vt-swipe-hint-r { animation: vt-swipe-right 1.7s ease-in-out infinite; }

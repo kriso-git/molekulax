@@ -21,7 +21,7 @@ function NavArrow({ dir, lib, onClick, lang }) {
   const Icon = isLeft ? ChevronLeft : ChevronRight
   const pos = isLeft ? 'left-1 sm:left-3 lg:left-4 xl:left-8' : 'right-1 sm:right-3 lg:right-4 xl:right-8'
   return (
-    <div className={`absolute z-30 top-[460px] md:top-[640px] lg:top-[720px] ${pos}`}>
+    <div className={`hidden sm:block absolute z-30 top-[460px] md:top-[640px] lg:top-[720px] ${pos}`}>
       <button
         type="button"
         onClick={onClick}
