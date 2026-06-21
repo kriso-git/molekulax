@@ -38,8 +38,28 @@ for (const [key, words] of Object.entries(STATIC_PAGES)) {
   }
 }
 
+// Comparison section: a reserved base word per language + a curated list of compound
+// comparisons. The detail slug is the member ids joined by '-vs-' (language-invariant, like
+// entry ids). All members of a comparison share one library (data shapes align). Add a
+// comparison here + it is auto-enumerated by parsePath, prerender, and the sitemap.
+export const COMPARISON_BASE = { hu: 'osszehasonlitas', en: 'compare', pl: 'porownanie' }
+export const COMPARISONS = [
+  { slug: 'ostarine-vs-rad-140', lib: 'performance', members: ['ostarine', 'rad-140'] },
+  { slug: 'semaglutide-vs-tirzepatide-vs-retatrutide', lib: 'peptides', members: ['semaglutide', 'tirzepatide', 'retatrutide'] },
+  { slug: 'bpc-157-vs-tb-500', lib: 'peptides', members: ['bpc-157', 'tb-500'] },
+]
+const SLUG_TO_COMPARISON = Object.fromEntries(COMPARISONS.map((c) => [c.slug, c]))
+
 export function homePath(lang = 'hu') {
   return LANG_PREFIX[lang] || '/'
+}
+
+export function comparisonBasePath(lang = 'hu') {
+  return `${LANG_PREFIX[lang]}/${COMPARISON_BASE[lang]}`
+}
+
+export function comparisonPath(slug, lang = 'hu') {
+  return `${LANG_PREFIX[lang]}/${COMPARISON_BASE[lang]}/${slug}`
 }
 
 export function pagePath(pageKey, lang = 'hu') {
@@ -69,6 +89,12 @@ export function parsePath(pathname) {
   const parts = clean.replace(/^\//, '').split('/')
   const pageKey = SLUG_TO_PAGE[lang] && SLUG_TO_PAGE[lang][parts[0]]
   if (pageKey && parts.length === 1) return { kind: 'page', lang, page: pageKey }
+  // Comparison section: /<base> (index) or /<base>/<a-vs-b[-vs-c]> (detail).
+  if (parts[0] === COMPARISON_BASE[lang]) {
+    if (parts.length === 1) return { kind: 'comparison-index', lang }
+    if (parts.length === 2 && SLUG_TO_COMPARISON[parts[1]]) return { kind: 'comparison', lang, slug: parts[1] }
+    return { kind: 'unknown' }
+  }
   const library = SLUG_TO_LIB[lang][parts[0]]
   if (!library) return { kind: 'unknown' }
   if (parts.length === 1) return { kind: 'library', lang, library }
@@ -82,6 +108,8 @@ export function parsePath(pathname) {
 export function translatePath(route, lang) {
   if (!route || route.kind === 'unknown' || route.kind === 'home') return homePath(lang)
   if (route.kind === 'page') return pagePath(route.page, lang)
+  if (route.kind === 'comparison-index') return comparisonBasePath(lang)
+  if (route.kind === 'comparison') return comparisonPath(route.slug, lang)
   if (route.kind === 'library') return libraryPath(route.library, lang)
   return entryPath(route.library, route.id, route.variantId, lang)
 }

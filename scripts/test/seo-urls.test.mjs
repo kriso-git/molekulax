@@ -1,6 +1,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
-import { LIB_SLUGS, entryPath, libraryPath, homePath, parsePath, translatePath } from '../../src/seo/urls.js'
+import { LIB_SLUGS, entryPath, libraryPath, homePath, parsePath, translatePath, COMPARISONS, COMPARISON_BASE, comparisonBasePath, comparisonPath } from '../../src/seo/urls.js'
 
 test('LIB_SLUGS has all 4 libraries with hu/en/pl words', () => {
   for (const id of ['peptides', 'nootropics', 'performance', 'pharmaceutical']) {
@@ -70,4 +70,45 @@ test('parsePath ignores a trailing slash', () => {
 test('roundtrip: parsePath(entryPath(x)) recovers x', () => {
   const p = entryPath('pharmaceutical', 'tadalafil')
   assert.deepEqual(parsePath(p), { kind: 'entry', lang: 'hu', library: 'pharmaceutical', id: 'tadalafil', variantId: null })
+})
+
+test('COMPARISONS registry: 3 curated comparisons with members + lib, slug = members joined', () => {
+  assert.equal(COMPARISONS.length, 3)
+  assert.deepEqual(Object.keys(COMPARISON_BASE), ['hu', 'en', 'pl'])
+  for (const c of COMPARISONS) {
+    assert.ok(c.slug && c.lib && Array.isArray(c.members) && c.members.length >= 2)
+    assert.equal(c.slug, c.members.join('-vs-'))
+  }
+})
+
+test('comparisonBasePath + comparisonPath per language', () => {
+  assert.equal(comparisonBasePath('hu'), '/osszehasonlitas')
+  assert.equal(comparisonBasePath('en'), '/en/compare')
+  assert.equal(comparisonBasePath('pl'), '/pl/porownanie')
+  assert.equal(comparisonPath('bpc-157-vs-tb-500', 'hu'), '/osszehasonlitas/bpc-157-vs-tb-500')
+  assert.equal(comparisonPath('bpc-157-vs-tb-500', 'en'), '/en/compare/bpc-157-vs-tb-500')
+  assert.equal(comparisonPath('ostarine-vs-rad-140', 'pl'), '/pl/porownanie/ostarine-vs-rad-140')
+})
+
+test('parsePath classifies comparison-index + comparison', () => {
+  assert.deepEqual(parsePath('/osszehasonlitas'), { kind: 'comparison-index', lang: 'hu' })
+  assert.deepEqual(parsePath('/en/compare'), { kind: 'comparison-index', lang: 'en' })
+  assert.deepEqual(parsePath('/pl/porownanie/'), { kind: 'comparison-index', lang: 'pl' })
+  assert.deepEqual(parsePath('/osszehasonlitas/bpc-157-vs-tb-500'),
+    { kind: 'comparison', lang: 'hu', slug: 'bpc-157-vs-tb-500' })
+  assert.deepEqual(parsePath('/pl/porownanie/ostarine-vs-rad-140'),
+    { kind: 'comparison', lang: 'pl', slug: 'ostarine-vs-rad-140' })
+  // unknown slug under the comparison base -> unknown (soft-404)
+  assert.equal(parsePath('/osszehasonlitas/not-a-real-pair').kind, 'unknown')
+  // a HU base under /en is not the EN base -> unknown
+  assert.equal(parsePath('/en/osszehasonlitas').kind, 'unknown')
+})
+
+test('translatePath: comparison + comparison-index keep slug, swap prefix', () => {
+  assert.equal(translatePath({ kind: 'comparison', lang: 'hu', slug: 'bpc-157-vs-tb-500' }, 'en'),
+    '/en/compare/bpc-157-vs-tb-500')
+  assert.equal(translatePath({ kind: 'comparison', lang: 'en', slug: 'ostarine-vs-rad-140' }, 'pl'),
+    '/pl/porownanie/ostarine-vs-rad-140')
+  assert.equal(translatePath({ kind: 'comparison-index', lang: 'en' }, 'pl'), '/pl/porownanie')
+  assert.equal(translatePath({ kind: 'comparison-index', lang: 'hu' }, 'hu'), '/osszehasonlitas')
 })
