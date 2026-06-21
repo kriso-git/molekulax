@@ -4,9 +4,10 @@
 // `vite build`. The bundle <script> stays, so the client re-renders the identical
 // SPA over the prerendered content (no hydration; content matches => no flash).
 import http from 'node:http'
-import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, existsSync, statSync, readdirSync } from 'node:fs'
 import { join, extname, dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { createHash } from 'node:crypto'
 import puppeteer from 'puppeteer'
 import { LIB_SLUGS } from '../src/seo/urls.js'
 import { FAQ_CONTENT } from '../src/data/faqContent.js'
@@ -43,6 +44,67 @@ try { entryDates = JSON.parse(readFileSync(join(repoRoot, 'src/data/entryDates.j
 const diskFor = (lang, ...segs) => join(PREFIX[lang].replace('/', ''), ...segs, 'index.html')
 const altMap = (byLang) => Object.fromEntries([...LANGS.map((l) => [l, ORIGIN + byLang(l)]), ['x-default', ORIGIN + byLang('hu')]])
 const homeUrl = (l) => PREFIX[l] + (l === 'hu' ? '/' : '')
+
+// ---- Incremental prerender cache --------------------------------------------------------
+// Reuse the browser-rendered #root of routes whose inputs are unchanged since the last
+// build, so a small content edit re-renders only the touched entries (fast on the cheap
+// 4-core Standard machine) instead of all 588 (which needs Turbo). Two hash layers:
+//   shellHash   = every rendering input EXCEPT the per-entry data files (app code, UI
+//                 strings, shared data, deps, the HTML shell). If ANY of these change the
+//                 whole render is invalidated (a code/shared-data/dep change -> full render).
+//   contentHash = one entry's per-lang data file. A content edit to entry X bumps only X's
+//                 contentHash -> only X re-renders.
+// Cache lives in node_modules/.cache (a dir Vercel persists in its build cache) as one JSON
+// of { shellHash, routes: { diskPath: { contentHash, cap:{root,title,desc} } } }. Only the
+// expensive #root is cached; the <head> (jsonld/og/canonical/dateModified) is rebuilt fresh
+// every build, so head-only inputs never serve stale. Disable with PRERENDER_NO_CACHE=1.
+const CACHE_DIR = join(repoRoot, 'node_modules', '.cache', 'molekulax-prerender')
+const CACHE_FILE = join(CACHE_DIR, 'cache.json')
+const CACHE_VERSION = 2
+const sha = (buf) => createHash('sha256').update(buf).digest('hex')
+// per-entry data file: src/data/libraries/<lib>/entries/<hu|en|pl>/<id>.js — excluded from
+// shellHash (handled per-route by contentHash), everything else in src/ feeds shellHash.
+const ENTRY_DATA_RE = /[\\/]entries[\\/](hu|en|pl)[\\/][^\\/]+\.(js|jsx|ts|tsx)$/
+function walkFiles(dir, acc = []) {
+  let ents = []
+  try { ents = readdirSync(dir, { withFileTypes: true }) } catch { return acc }
+  for (const e of ents) {
+    const p = join(dir, e.name)
+    if (e.isDirectory()) walkFiles(p, acc)
+    else acc.push(p)
+  }
+  return acc
+}
+function computeShellHash() {
+  const files = walkFiles(join(repoRoot, 'src'))
+    .filter((p) => /\.(js|jsx|ts|tsx|css|json)$/.test(p) && !ENTRY_DATA_RE.test(p))
+    .sort()
+  const h = createHash('sha256')
+  for (const f of files) { h.update(f.replace(repoRoot, '').replace(/\\/g, '/')); h.update(readFileSync(f)) }
+  // build inputs outside src/ that change the rendered output too — incl. the prerender
+  // scripts themselves, so a change to the capture/write logic invalidates every cached cap.
+  for (const extra of ['package-lock.json', 'vite.config.js', 'index.html', 'scripts/prerender.mjs', 'scripts/seo-jsonld.mjs']) {
+    const p = join(repoRoot, extra)
+    if (existsSync(p)) { h.update(extra); h.update(readFileSync(p)) }
+  }
+  return h.digest('hex')
+}
+function contentHashFor(route) {
+  if (!route.isEntry) return null // non-entry pages (home/library) depend only on shell inputs
+  const p = join(repoRoot, 'src', 'data', 'libraries', route.libId, 'entries', route.lang, `${route.id}.js`)
+  try { return sha(readFileSync(p)) } catch { return null }
+}
+function loadCache() {
+  try {
+    const c = JSON.parse(readFileSync(CACHE_FILE, 'utf8'))
+    if (c && c.version === CACHE_VERSION && c.shellHash && c.routes) return c
+  } catch {}
+  return null
+}
+function saveCache(cache) {
+  try { mkdirSync(CACHE_DIR, { recursive: true }); writeFileSync(CACHE_FILE, JSON.stringify(cache)) }
+  catch (e) { console.warn('[prerender] cache save failed (non-fatal):', e.message) }
+}
 
 async function buildRoutes() {
   const routes = []
@@ -223,18 +285,14 @@ async function coldBootPage(browser, route) {
   return page
 }
 
-// Capture the rendered #root + title/desc from an already-rendered page, build the
-// per-page JSON-LD, inject head, and write the static HTML. Shared by the warm worker
-// (after a client nav) and renderOne (after a cold boot) so both paths emit byte-for-byte
-// identical output.
-async function captureAndWrite(page, template, route) {
-  const cap = await page.evaluate(() => ({
-    root: document.getElementById('root').innerHTML,
-    title: document.title,
-    desc: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
-  }))
+// Write a static page from a `cap` ({root,title,desc}) — whether freshly browser-captured
+// or reused from the incremental cache. Builds the per-page JSON-LD + head and writes the
+// HTML. Pure (no page), so a cache hit emits BYTE-IDENTICAL output to a fresh render with
+// the same cap. The name-guard doubles as a stale-cache tripwire (a reused cap that no
+// longer contains the entry name throws -> the caller re-renders it).
+function writeRoute(template, route, cap) {
   if (route.isEntry && !normHyphens(cap.root).includes(normHyphens(route.name))) {
-    throw new Error(`prerender ${route.urlPath}: rendered #root does not contain entry name "${route.name}" (skeleton captured?)`)
+    throw new Error(`prerender ${route.urlPath}: rendered #root does not contain entry name "${route.name}" (skeleton/stale-cache?)`)
   }
   const canonical = ORIGIN + route.urlPath
   // Prefer the rendered (localized) meta description; route.desc is the HU shortDesc
@@ -261,8 +319,21 @@ async function captureAndWrite(page, template, route) {
   return route.urlPath
 }
 
+// Capture the rendered #root + title/desc from an already-rendered page, write the page,
+// and RETURN the cap so main() can store it in the incremental cache.
+async function captureAndWrite(page, template, route) {
+  const cap = await page.evaluate(() => ({
+    root: document.getElementById('root').innerHTML,
+    title: document.title,
+    desc: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+  }))
+  writeRoute(template, route, cap)
+  return cap
+}
+
 // Cold-boot one route on its own throwaway page. Used by the sequential retry pass (a
 // fresh page per route is maximally robust for the handful of routes that flaked).
+// Returns the cap (for caching).
 async function renderOne(browser, template, route) {
   const page = await coldBootPage(browser, route)
   try {
@@ -311,9 +382,32 @@ async function main() {
   const libName = Object.fromEntries(libMod.listLibraries().map((l) => [l.id, l.name])) // {hu,en,pl} triplet
   for (const r of routes) { if (r.libId) r.libraryName = libName[r.libId]?.[r.lang] || libName[r.libId]?.hu || null }
 
+  // Incremental cache: write the unchanged routes' #root straight from cache (no browser);
+  // render only routes whose entry-data file changed (or, if the shell changed, all of
+  // them). See the cache-helper comment above. PRERENDER_NO_CACHE=1 forces a full render.
+  const shellHash = computeShellHash()
+  for (const r of routes) r._contentHash = contentHashFor(r)
+  const cache = process.env.PRERENDER_NO_CACHE ? null : loadCache()
+  const shellValid = !!(cache && cache.shellHash === shellHash)
+  const newCache = { version: CACHE_VERSION, shellHash, routes: {} }
+  let done = 0, stillFailed = 0, cacheHits = 0
+  const misses = []
+  for (const r of routes) {
+    const c = shellValid ? cache.routes[r.diskPath] : null
+    if (c && c.contentHash === r._contentHash && c.cap) {
+      try {
+        writeRoute(template, r, c.cap)
+        newCache.routes[r.diskPath] = { contentHash: r._contentHash, cap: c.cap }
+        done++; cacheHits++
+        continue
+      } catch { /* stale/failed cached cap -> fall through and re-render */ }
+    }
+    misses.push(r)
+  }
+  console.log(`[prerender] cache: ${cacheHits} reused, ${misses.length} to render (shell ${shellValid ? 'unchanged' : 'CHANGED -> full render'})`)
+
   const server = await startServer(template)
   const launch = await makeLauncher()
-  let done = 0, stillFailed = 0
   let browsers = []
   let retryBrowser = null
   try {
@@ -331,7 +425,7 @@ async function main() {
     // on popstate), so grouping keeps the costly cold boots to ~one per (worker x language)
     // plus the periodic recycle, instead of one per page.
     const LANG_ORDER = { hu: 0, en: 1, pl: 2 }
-    const queue = [...routes].sort((a, b) => (LANG_ORDER[a.lang] ?? 9) - (LANG_ORDER[b.lang] ?? 9))
+    const queue = [...misses].sort((a, b) => (LANG_ORDER[a.lang] ?? 9) - (LANG_ORDER[b.lang] ?? 9))
     const failures = []
     let warmNavs = 0, coldBoots = 0
     // Reuse ONE warm page across consecutive same-language routes, driving the app's own
@@ -365,7 +459,8 @@ async function main() {
             await waitRenderedAfterNav(page, r.isEntry ? r.name : null, prevTitle)
             uses++; warmNavs++
           }
-          await captureAndWrite(page, template, r)
+          const cap = await captureAndWrite(page, template, r)
+          newCache.routes[r.diskPath] = { contentHash: r._contentHash, cap }
           done++
         } catch (e) {
           // If THIS browser died (single-process crash / OOM-kill), don't let the worker
@@ -381,7 +476,7 @@ async function main() {
       await discard()
     }
     await Promise.all(browsers.map((b) => worker(b)))
-    console.log(`[prerender] ${coldBoots} cold boots + ${warmNavs} warm navs (${routes.length} routes)`)
+    console.log(`[prerender] ${coldBoots} cold boots + ${warmNavs} warm navs (${misses.length} rendered)`)
 
     // Retry failures + any routes a dead worker handed back, SEQUENTIALLY on a FRESH
     // browser: most failures are flaky waitRendered timeouts that pass cleanly when alone,
@@ -393,7 +488,9 @@ async function main() {
       for (const r of retryRoutes) {
         try {
           if (retryBrowser.connected === false) { await retryBrowser.close().catch(() => {}); retryBrowser = await launch() }
-          await renderOne(retryBrowser, template, r); done++
+          const cap = await renderOne(retryBrowser, template, r)
+          newCache.routes[r.diskPath] = { contentHash: r._contentHash, cap }
+          done++
         } catch (e) { stillFailed++; console.error(`[prerender] FAIL (after retry) ${r.urlPath}: ${e.message}`) }
       }
     }
@@ -402,6 +499,7 @@ async function main() {
     await Promise.all(browsers.map((b) => b.close().catch(() => {})))
     server.close()
   }
+  saveCache(newCache)
   // Variant URLs (/<lib>/<id>/<variantId>) aren't rendered (they consolidate to the base
   // entry), but a SHARED variant link still needs the compound's og:image + the right
   // canonical. Copy each base entry's prerendered HTML to its variant disk paths — cheap,
