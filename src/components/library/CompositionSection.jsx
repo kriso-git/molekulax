@@ -13,7 +13,7 @@ import { entryPath } from '../../seo/urls'
  * an entry in the same library's LIBRARY_ENTRY_META (validator-enforced).
  */
 export default function CompositionSection({ composition, accent }) {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const { library } = useLibrary()
 
   if (!composition || !Array.isArray(composition) || composition.length === 0) {
@@ -24,7 +24,7 @@ export default function CompositionSection({ composition, accent }) {
   const metaById = Object.fromEntries(library.meta.map((m) => [m.id, m]))
 
   const handleClick = (id) => {
-    navigate(entryPath(library.id, id))
+    navigate(entryPath(library.id, id, null, lang))
   }
 
   return (

@@ -17,7 +17,7 @@ import { EntryDetailSkeleton, EntryDetailError } from './entry-detail/skeleton'
 import HeroPreview from './HeroPreview'
 import RedirectFlash from './RedirectFlash'
 import { navigate } from '../../router/location'
-import { entryPath, libraryPath } from '../../seo/urls'
+import { entryPath, libraryPath, homePath } from '../../seo/urls'
 
 const EntryDetail = lazy(() => import('./EntryDetail'))
 
@@ -73,7 +73,7 @@ export default function EntryDetailRoute({ route }) {
       // clear it so it can't strand in sessionStorage until its TTL.
       consumeReturnState()
       const timer = setTimeout(() => {
-        if (!cancelled) { navigate(libraryPath(parsed.library)) }
+        if (!cancelled) { navigate(libraryPath(parsed.library, lang)) }
       }, 1800)
       return () => {
         cancelled = true
@@ -116,7 +116,7 @@ export default function EntryDetailRoute({ route }) {
   const closeDetail = () => {
     if (typeof window === 'undefined') return
     const restoreData = consumeReturnState()
-    const back = parsed?.library ? libraryPath(parsed.library) : '/'
+    const back = parsed?.library ? libraryPath(parsed.library, lang) : homePath(lang)
 
     if (restoreData) {
       window.__libraryGalleryPendingRestore__ = restoreData
@@ -179,7 +179,7 @@ export default function EntryDetailRoute({ route }) {
     const validId = (id) => variants.some(v => v.routeId === id)
     if (!parsed.variantId || !validId(parsed.variantId)) {
       const fallback = validId(entry.defaultVariant) ? entry.defaultVariant : variants[0].routeId
-      navigate(entryPath(parsed.library, parsed.id, fallback), { replace: true })
+      navigate(entryPath(parsed.library, parsed.id, fallback, lang), { replace: true })
     }
   }, [parsed?.library, parsed?.id, parsed?.variantId, entry])
 
@@ -217,7 +217,7 @@ export default function EntryDetailRoute({ route }) {
     // visible with an opacity-50 + spinner overlay instead of a full skeleton.
     const peptide = adaptLibraryEntry(entry, library, lang, parsed.variantId)
     const handleJump = (id) => {
-      if (parsed?.library) navigate(entryPath(parsed.library, id))
+      if (parsed?.library) navigate(entryPath(parsed.library, id, null, lang))
     }
     // entryKey excludes variantId on purpose — EntryDetail stays mounted across
     // variant toggles; internal state (scroll, magnet, nameRef) survives the

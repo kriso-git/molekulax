@@ -151,15 +151,15 @@ function CategoryVisual({ cat, idx }) {
  return <Illu />
 }
 
-function openEntryInGallery(libraryId, entryId, onClose) {
+function openEntryInGallery(libraryId, entryId, onClose, lang) {
  onClose()
  setTimeout(() => {
- navigate(entryPath(libraryId, entryId))
+ navigate(entryPath(libraryId, entryId, null, lang))
  }, 300)
 }
 
 function Modal({ cat, idx, libraryId, onClose }) {
- const { t, tr } = useLang()
+ const { t, tr, lang } = useLang()
  useEffect(() => {
  const handleKey = e => { if (e.key === 'Escape') onClose() }
  document.addEventListener('keydown', handleKey)
@@ -276,7 +276,7 @@ function Modal({ cat, idx, libraryId, onClose }) {
  return pid ? (
  <button
  key={pid || `${p}-${i}`}
- onClick={() => openEntryInGallery(libraryId, pid, onClose)}
+ onClick={() => openEntryInGallery(libraryId, pid, onClose, lang)}
  className="group text-[11px] px-3 py-1.5 rounded-full font-mono tracking-wide font-semibold flex items-center gap-1.5 transition-all duration-200"
  style={{ background: `${color}16`, border: `1px solid ${color}40`, color }}
  onMouseEnter={e => { e.currentTarget.style.background=`${color}30`; e.currentTarget.style.borderColor=`${color}70` }}
@@ -336,7 +336,7 @@ function Modal({ cat, idx, libraryId, onClose }) {
 }
 
 export default function EffectsSection() {
- const { t, tr } = useLang()
+ const { t, tr, lang } = useLang()
  const { library } = useLibrary()
  const [active, setActive] = useState(null)
 
@@ -430,7 +430,7 @@ export default function EffectsSection() {
  type="button"
  onClick={e => {
  e.stopPropagation()
- navigate(entryPath(library.id, pid))
+ navigate(entryPath(library.id, pid, null, lang))
  }}
  className="text-[11px] px-3 py-1 rounded-full font-mono tracking-wide font-semibold transition-all duration-200 hover:scale-105"
  style={{ background: `${cat.color}14`, border: `1px solid ${cat.color}35`, color: cat.color }}

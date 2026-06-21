@@ -30,6 +30,8 @@ const ROUTES = [
   { label: 'entry — nootropics/semax', lib: null, path: '/nootropikumok/semax' },
   { label: 'entry — performance/testosterone-info', lib: null, path: '/teljesitmenyfokozok/testosterone-info' },
   { label: 'library landing — /peptidek', lib: null, path: '/peptidek' },
+  { label: 'EN entry — /en/peptides/bpc-157', lib: null, path: '/en/peptides/bpc-157' },
+  { label: 'PL entry — /pl/peptydy/bpc-157', lib: null, path: '/pl/peptydy/bpc-157' },
 ]
 
 async function waitForServer(url, tries = 60) {

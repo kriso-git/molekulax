@@ -500,8 +500,8 @@ export default function LibraryGallery({
   } catch (e) {
    // sessionStorage full / disabled — silently skip, falls back to fresh landing
   }
-  navigate(entryPath(library.id, entry.id))
- }, [library.id])
+  navigate(entryPath(library.id, entry.id, null, lang))
+ }, [library.id, lang])
 
  return (
  <>

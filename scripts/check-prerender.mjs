@@ -13,6 +13,10 @@ const CHECKS = [
   { path: '/nootropikumok/semax', must: 'Semax' },
   { path: '/teljesitmenyfokozok/testosterone-info', must: 'Testosterone' },
   { path: '/peptidek', must: 'Peptid' },
+  // EN/PL: langMust is a language-distinct content fragment from the rendered body.
+  // It fails if the URL did NOT drive the language (a HU fallback would show "gyomor").
+  { path: '/en/peptides/bpc-157', must: 'BPC-157', langMust: 'gastric' },
+  { path: '/pl/peptydy/bpc-157', must: 'BPC-157', langMust: 'żołądk' },
 ]
 const server = http.createServer((req, res) => {
   let file = join(DIST, decodeURIComponent(req.url.split('?')[0]))
@@ -29,9 +33,12 @@ for (const c of CHECKS) {
   await page.setJavaScriptEnabled(false)
   await page.goto(`http://127.0.0.1:${PORT}${c.path}`, { waitUntil: 'domcontentloaded', timeout: 20000 })
   const text = await page.evaluate(() => document.getElementById('root')?.innerText || '')
-  const ok = text.includes(c.must)
+  const okMust = text.includes(c.must)
+  const okLang = !c.langMust || text.includes(c.langMust)
+  const ok = okMust && okLang
   if (!ok) fail++
-  console.log(`[${ok ? 'OK' : 'FAIL'}] JS-off ${c.path} contains "${c.must}" (root text ${text.length} chars)`)
+  const label = c.langMust ? `"${c.must}" + lang "${c.langMust}"` : `"${c.must}"`
+  console.log(`[${ok ? 'OK' : 'FAIL'}] JS-off ${c.path} contains ${label} (root text ${text.length} chars)`)
   await page.close()
 }
 await browser.close(); server.close()

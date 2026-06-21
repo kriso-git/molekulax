@@ -19,7 +19,7 @@ const INDIGO_BORDER = 'rgba(129,140,248,0.55)'
 const INDIGO_GLOW = '0 0 12px rgba(129,140,248,0.40)'
 
 export default function VariantToggle({ libraryId, entryId, availableVariants, activeVariantId }) {
-  const { t, tr } = useLang()
+  const { t, tr, lang } = useLang()
   const tablistRef = useRef(null)
   const announceRef = useRef(null)
 
@@ -28,7 +28,7 @@ export default function VariantToggle({ libraryId, entryId, availableVariants, a
   const navigateTo = (routeId) => {
     if (typeof window === 'undefined') return
     if (routeId === activeVariantId) return
-    navigate(entryPath(libraryId, entryId, routeId), { replace: true })
+    navigate(entryPath(libraryId, entryId, routeId, lang), { replace: true })
     const variant = availableVariants.find(v => v.routeId === routeId)
     const label = variant ? tr(variant.routeLabel) : routeId
     if (announceRef.current) {

@@ -17,27 +17,56 @@ const DIST = join(repoRoot, 'dist')
 const ORIGIN = 'https://molekulax.hu'
 const PORT = 4388
 const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
-// 12 on Vercel: the Pro "Turbo" build machine is 30 vCPU / 60 GB. We run 12 browsers
+// 16 on Vercel: the Pro "Turbo" build machine is 30 vCPU / 60 GB. We run 16 browsers
 // in parallel (one per worker - @sparticuz forces --single-process, so parallelism has
-// to come from separate browser PROCESSES, not tabs in one browser). ~12 cores used,
-// headroom left for the shell http server. Cuts the 196-page prerender from ~30 min
-// (single-process, ~1 core) to a few minutes. 3 locally (a dev laptop). The retry pass
-// re-runs flaky timeouts.
-const CONCURRENCY = process.env.VERCEL ? 12 : 3
+// to come from separate browser PROCESSES, not tabs in one browser). ~16 cores used,
+// ample headroom on 30 vCPU + the shell http server; ~16 x ~0.7 GB << 60 GB. Renders the
+// 588-page trilingual prerender (196 pages x hu/en/pl) in a few minutes. 3 locally (a dev
+// laptop). The retry pass re-runs flaky timeouts.
+const CONCURRENCY = process.env.VERCEL ? 16 : 3
 // All hyphen/dash variants -> '-'. The entry H1 renders non-breaking hyphens (U+2011),
 // so a raw includes('SLU-PP-915') would miss 'SLU‑PP‑915'. Normalise both sides.
 const normHyphens = (s) => String(s).replace(/[‐-―−]/g, '-')
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.svg': 'image/svg+xml', '.png': 'image/png', '.webp': 'image/webp', '.avif': 'image/avif', '.jpg': 'image/jpeg', '.woff2': 'font/woff2', '.webm': 'video/webm', '.ico': 'image/x-icon', '.webmanifest': 'application/manifest+json' }
 
+// Phase 3: enumerate every logical page in all three languages. HU at the root, EN/PL
+// prefixed. Each route carries its lang, the localized disk path, and the hreflang map
+// (the 3 language URLs for this page + x-default -> HU) so injectHead can emit alternates.
+const LANGS = ['hu', 'en', 'pl']
+const PREFIX = { hu: '', en: '/en', pl: '/pl' }
+const diskFor = (lang, ...segs) => join(PREFIX[lang].replace('/', ''), ...segs, 'index.html')
+const altMap = (byLang) => Object.fromEntries([...LANGS.map((l) => [l, ORIGIN + byLang(l)]), ['x-default', ORIGIN + byLang('hu')]])
+const homeUrl = (l) => PREFIX[l] + (l === 'hu' ? '/' : '')
+
 async function buildRoutes() {
-  const routes = [{ urlPath: '/', diskPath: 'index.html', name: null, libraryName: null }]
+  const routes = []
+  for (const lang of LANGS) {
+    routes.push({ lang, urlPath: homeUrl(lang), diskPath: diskFor(lang), name: null, libId: null, libraryName: null, hreflang: altMap(homeUrl) })
+  }
   for (const libId of LIBS) {
-    const slug = LIB_SLUGS[libId].hu
     const mod = await import(`file://${join(repoRoot, 'src/data/libraries', libId, 'index.js').replace(/\\/g, '/')}`)
-    routes.push({ urlPath: `/${slug}`, diskPath: join(slug, 'index.html'), name: null, libraryName: null })
+    const libUrl = (l) => `${PREFIX[l]}/${LIB_SLUGS[libId][l]}`
+    for (const lang of LANGS) {
+      routes.push({ lang, urlPath: libUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang]), name: null, libId, libraryName: null, hreflang: altMap(libUrl) })
+    }
     for (const e of mod.LIBRARY_ENTRY_META) {
-      const desc = typeof e.shortDesc === 'string' ? e.shortDesc : (e.shortDesc?.hu || '')
-      routes.push({ urlPath: `/${slug}/${e.id}`, diskPath: join(slug, e.id, 'index.html'), name: e.name, libraryName: null, desc, isEntry: true })
+      const metaDesc = typeof e.shortDesc === 'string' ? e.shortDesc : (e.shortDesc?.hu || '')
+      const entUrl = (l) => `${PREFIX[l]}/${LIB_SLUGS[libId][l]}/${e.id}`
+      for (const lang of LANGS) {
+        // The entry NAME is localized (Letrozol/Letrozole, Exemestane/Eksemestan, ...), so
+        // the route must carry the PER-LANG name — the waitRendered + capture guards match on
+        // it, and META.name is a single language (a mismatch times the 60s wait out). Falls
+        // back to META.name / META.shortDesc if the per-lang data file can't be imported.
+        let name = e.name, desc = metaDesc
+        try {
+          const m = await import(`file://${join(repoRoot, 'src/data/libraries', libId, 'entries', lang, `${e.id}.js`).replace(/\\/g, '/')}`)
+          if (m.default?.name) name = m.default.name
+          const sd = m.default?.shortDesc
+          const localized = typeof sd === 'string' ? sd : sd?.[lang]
+          if (localized) desc = localized
+        } catch {}
+        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl) })
+      }
     }
   }
   return routes
@@ -94,14 +123,16 @@ async function waitRendered(page, mustContain) {
 function escapeHtml(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') }
 function escapeAttr(s) { return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;') }
 
-function injectHead(html, { title, desc, canonical, jsonld }) {
+function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld }) {
   let out = html
+  out = out.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`)
   out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
   out = out.replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${escapeAttr(desc)}">`)
   out = out.replace(/<link rel="canonical"[^>]*>/, `<link rel="canonical" href="${canonical}">`)
   out = out.replace(/<meta property="og:url"[^>]*>/, `<meta property="og:url" content="${canonical}">`)
   out = out.replace(/<meta property="og:title"[^>]*>/, `<meta property="og:title" content="${escapeAttr(title)}">`)
-  if (jsonld) out = out.replace('</head>', `<script type="application/ld+json">${JSON.stringify(jsonld)}</script></head>`)
+  const alt = Object.entries(hreflang || {}).map(([hl, href]) => `<link rel="alternate" hreflang="${hl}" href="${href}">`).join('')
+  out = out.replace('</head>', `${alt}${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}</head>`)
   return out
 }
 
@@ -127,8 +158,10 @@ async function renderOne(browser, template, route) {
       throw new Error(`prerender ${route.urlPath}: rendered #root does not contain entry name "${route.name}" (skeleton captured?)`)
     }
     const canonical = ORIGIN + route.urlPath
-    const jsonld = route.isEntry ? entryJsonLd({ name: route.name, desc: route.desc || cap.desc, url: canonical, libraryName: route.libraryName }) : null
-    let html = injectHead(template, { title: cap.title, desc: cap.desc, canonical, jsonld })
+    // Prefer the rendered (localized) meta description; route.desc is the HU shortDesc
+    // fallback from LIBRARY_ENTRY_META, only used if the page set no meta.
+    const jsonld = route.isEntry ? entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang }) : null
+    let html = injectHead(template, { lang: route.lang, title: cap.title, desc: cap.desc, canonical, hreflang: route.hreflang, jsonld })
     html = html.replace('<div id="root"></div>', `<div id="root">${cap.root}</div>`)
     const outPath = join(DIST, route.diskPath)
     mkdirSync(dirname(outPath), { recursive: true })
@@ -175,9 +208,8 @@ async function main() {
   template = template.replace(/<div id="root">[\s\S]*<\/div>(\s*<\/body>)/, '<div id="root"></div>$1')
   const routes = await buildRoutes()
   const libMod = await import(`file://${join(repoRoot, 'src/data/libraries/index.js').replace(/\\/g, '/')}`)
-  const libName = Object.fromEntries(libMod.listLibraries().map((l) => [l.id, l.name.hu]))
-  const slugToLib = Object.fromEntries(LIBS.map((id) => [LIB_SLUGS[id].hu, id]))
-  for (const r of routes) { const seg = r.urlPath.split('/')[1]; const lib = slugToLib[seg]; if (lib) r.libraryName = libName[lib] }
+  const libName = Object.fromEntries(libMod.listLibraries().map((l) => [l.id, l.name])) // {hu,en,pl} triplet
+  for (const r of routes) { if (r.libId) r.libraryName = libName[r.libId]?.[r.lang] || libName[r.libId]?.hu || null }
 
   const server = await startServer(template)
   const launch = await makeLauncher()
