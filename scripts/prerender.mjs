@@ -135,6 +135,30 @@ async function waitRendered(page, mustContain) {
   }
 }
 
+// Like waitRendered, but for a CLIENT-SIDE nav on a warm (already-booted) page: the
+// previous route's content is still in #root when we fire popstate, so the name guard
+// alone can't tell "transitioned" from "stale" on home/library pages (they carry no
+// unique compound name). document.title (set per route by useDocumentHead AFTER the new
+// route commits) is the reliable transition signal: wait for it to differ from the
+// pre-nav title, THEN apply the usual name + settle checks.
+async function waitRenderedAfterNav(page, mustContain, prevTitle) {
+  await page.waitForFunction((name, prev) => {
+    if (document.title === prev) return false
+    const r = document.getElementById('root')
+    if (!r || r.innerHTML.length < 2000) return false
+    if (!name) return true
+    const norm = (s) => String(s).replace(/[‐-―−]/g, '-')
+    return norm(r.innerText).includes(norm(name))
+  }, { timeout: 60000 }, mustContain || null, prevTitle)
+  let last = -1, stable = 0
+  for (let i = 0; i < 60; i++) {
+    const len = await page.evaluate(() => document.getElementById('root').innerHTML.length)
+    if (len === last) { if (++stable >= 2) return } else { stable = 0 }
+    last = len
+    await new Promise((r) => setTimeout(r, 250))
+  }
+}
+
 function escapeHtml(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') }
 function escapeAttr(s) { return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;') }
 
@@ -168,53 +192,71 @@ function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld, ogIm
   return out
 }
 
-async function renderOne(browser, template, route) {
+// Cold boot: open a fresh page and full-load the route's URL (reparses + re-executes the
+// whole JS bundle). Used as the FIRST page of a warm run, on every language switch, and
+// for the sequential retry pass. setViewport once — it persists across later client navs.
+async function coldBootPage(browser, route) {
   const page = await browser.newPage()
+  // Desktop viewport so entries render the full PAGE (not the mobile modal, whose
+  // JS-off innerText collapses). The three.js DNA background gets no WebGL context
+  // (local: --disable-gpu; Vercel: --disable-webgl* over @sparticuz's swiftshader),
+  // so it bails via getContext('webgl2')->null and adds no build-time cost.
+  await page.setViewport({ width: 1280, height: 900 })
+  // domcontentloaded, NOT networkidle: the SPA keeps connections open (analytics/SW)
+  // so networkidle never settles on the slow build Chromium -> 60s nav timeout.
+  // waitRendered() then waits for the real content to render + settle.
+  await page.goto(`http://127.0.0.1:${PORT}${route.urlPath}`, { waitUntil: 'domcontentloaded', timeout: 60000 })
+  await waitRendered(page, route.isEntry ? route.name : null)
+  return page
+}
+
+// Capture the rendered #root + title/desc from an already-rendered page, build the
+// per-page JSON-LD, inject head, and write the static HTML. Shared by the warm worker
+// (after a client nav) and renderOne (after a cold boot) so both paths emit byte-for-byte
+// identical output.
+async function captureAndWrite(page, template, route) {
+  const cap = await page.evaluate(() => ({
+    root: document.getElementById('root').innerHTML,
+    title: document.title,
+    desc: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+  }))
+  if (route.isEntry && !normHyphens(cap.root).includes(normHyphens(route.name))) {
+    throw new Error(`prerender ${route.urlPath}: rendered #root does not contain entry name "${route.name}" (skeleton captured?)`)
+  }
+  const canonical = ORIGIN + route.urlPath
+  // Prefer the rendered (localized) meta description; route.desc is the HU shortDesc
+  // fallback from LIBRARY_ENTRY_META, only used if the page set no meta.
+  const jsonld = []
+  if (route.isEntry) jsonld.push(entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang, dateModified: route.dateModified, citations: route.citations }))
+  const faqLd = faqJsonLd(route.faq, route.lang)
+  if (faqLd) jsonld.push(faqLd)
+  // BreadcrumbList: Home > Library (landing) > Compound (entry). Home itself has none.
+  if (route.libId) {
+    const crumbs = [
+      { name: HOME_LABEL[route.lang] || HOME_LABEL.hu, url: ORIGIN + homeUrl(route.lang) },
+      { name: route.libraryName, url: `${ORIGIN}${PREFIX[route.lang]}/${LIB_SLUGS[route.libId][route.lang]}` },
+    ]
+    if (route.isEntry) crumbs.push({ name: route.name, url: canonical })
+    const bc = breadcrumbJsonLd(crumbs)
+    if (bc) jsonld.push(bc)
+  }
+  let html = injectHead(template, { lang: route.lang, title: cap.title, desc: cap.desc, canonical, hreflang: route.hreflang, jsonld, ogImage: route.ogImage })
+  html = html.replace('<div id="root"></div>', `<div id="root">${cap.root}</div>`)
+  const outPath = join(DIST, route.diskPath)
+  mkdirSync(dirname(outPath), { recursive: true })
+  writeFileSync(outPath, html)
+  return route.urlPath
+}
+
+// Cold-boot one route on its own throwaway page. Used by the sequential retry pass (a
+// fresh page per route is maximally robust for the handful of routes that flaked).
+async function renderOne(browser, template, route) {
+  const page = await coldBootPage(browser, route)
   try {
-    // Desktop viewport so entries render the full PAGE (not the mobile modal, whose
-    // JS-off innerText collapses). The three.js DNA background gets no WebGL context
-    // (local: --disable-gpu; Vercel: --disable-webgl* over @sparticuz's swiftshader),
-    // so it bails via getContext('webgl2')->null and adds no build-time cost.
-    await page.setViewport({ width: 1280, height: 900 })
-    // domcontentloaded, NOT networkidle: the SPA keeps connections open (analytics/SW)
-    // so networkidle never settles on the slow build Chromium -> 60s nav timeout.
-    // waitRendered() then waits for the real content to render + settle.
-    await page.goto(`http://127.0.0.1:${PORT}${route.urlPath}`, { waitUntil: 'domcontentloaded', timeout: 60000 })
-    await waitRendered(page, route.isEntry ? route.name : null)
-    const cap = await page.evaluate(() => ({
-      root: document.getElementById('root').innerHTML,
-      title: document.title,
-      desc: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
-    }))
-    if (route.isEntry && !normHyphens(cap.root).includes(normHyphens(route.name))) {
-      throw new Error(`prerender ${route.urlPath}: rendered #root does not contain entry name "${route.name}" (skeleton captured?)`)
-    }
-    const canonical = ORIGIN + route.urlPath
-    // Prefer the rendered (localized) meta description; route.desc is the HU shortDesc
-    // fallback from LIBRARY_ENTRY_META, only used if the page set no meta.
-    const jsonld = []
-    if (route.isEntry) jsonld.push(entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang, dateModified: route.dateModified, citations: route.citations }))
-    const faqLd = faqJsonLd(route.faq, route.lang)
-    if (faqLd) jsonld.push(faqLd)
-    // BreadcrumbList: Home > Library (landing) > Compound (entry). Home itself has none.
-    if (route.libId) {
-      const crumbs = [
-        { name: HOME_LABEL[route.lang] || HOME_LABEL.hu, url: ORIGIN + homeUrl(route.lang) },
-        { name: route.libraryName, url: `${ORIGIN}${PREFIX[route.lang]}/${LIB_SLUGS[route.libId][route.lang]}` },
-      ]
-      if (route.isEntry) crumbs.push({ name: route.name, url: canonical })
-      const bc = breadcrumbJsonLd(crumbs)
-      if (bc) jsonld.push(bc)
-    }
-    let html = injectHead(template, { lang: route.lang, title: cap.title, desc: cap.desc, canonical, hreflang: route.hreflang, jsonld, ogImage: route.ogImage })
-    html = html.replace('<div id="root"></div>', `<div id="root">${cap.root}</div>`)
-    const outPath = join(DIST, route.diskPath)
-    mkdirSync(dirname(outPath), { recursive: true })
-    writeFileSync(outPath, html)
-    return route.urlPath
+    return await captureAndWrite(page, template, route)
   } finally {
-    // Always close the page, even on a waitRendered/goto timeout throw, so a single
-    // --single-process browser never accumulates leaked renderer state across its routes.
+    // Always close the page so a single --single-process browser never accumulates
+    // leaked renderer state across retried routes.
     await page.close().catch(() => {})
   }
 }
@@ -271,22 +313,62 @@ async function main() {
     if (!browsers.length) throw new Error('prerender: no Chromium could be launched')
     if (browsers.length < CONCURRENCY) console.warn(`[prerender] only ${browsers.length}/${CONCURRENCY} browsers launched; continuing degraded`)
 
-    const queue = [...routes]
+    // Sort so each language's pages are contiguous: a warm worker page can only client-nav
+    // WITHIN one language (lang is fixed at SPA mount by detectInitial and is NOT re-derived
+    // on popstate), so grouping keeps the costly cold boots to ~one per (worker x language)
+    // plus the periodic recycle, instead of one per page.
+    const LANG_ORDER = { hu: 0, en: 1, pl: 2 }
+    const queue = [...routes].sort((a, b) => (LANG_ORDER[a.lang] ?? 9) - (LANG_ORDER[b.lang] ?? 9))
     const failures = []
+    let warmNavs = 0, coldBoots = 0
+    // Reuse ONE warm page across consecutive same-language routes, driving the app's own
+    // History-API router with pushState+popstate (exactly what a real user's link click
+    // does, so the rendered DOM is identical) instead of a full reload. A cold boot
+    // reparses + re-executes the whole JS bundle (~15-20s on a 4-core build box) for every
+    // page; a warm client nav skips that (~1-3s) — the difference between a 45-min-timeout
+    // and a ~10-min build on the cheap Standard machine. Recycle the page every RECYCLE
+    // renders so a --single-process Chromium can't accumulate unbounded renderer state.
+    const RECYCLE = 40
     async function worker(browser) {
+      let page = null, pageLang = null, uses = 0
+      const discard = async () => { if (page) await page.close().catch(() => {}); page = null; pageLang = null; uses = 0 }
       while (queue.length) {
         const r = queue.shift()
-        try { await renderOne(browser, template, r); done++ }
-        catch (e) {
+        if (!r) break
+        try {
+          if (!page || pageLang !== r.lang || uses >= RECYCLE) {
+            await discard()
+            page = await coldBootPage(browser, r)
+            pageLang = r.lang; uses = 1; coldBoots++
+          } else {
+            // Drive the in-app router: snapshot the current title, pushState to the target,
+            // fire popstate (what useSyncExternalStore + LibraryContext listen for).
+            const prevTitle = await page.evaluate((to) => {
+              const t = document.title
+              window.history.pushState(null, '', to)
+              window.dispatchEvent(new PopStateEvent('popstate'))
+              return t
+            }, r.urlPath)
+            await waitRenderedAfterNav(page, r.isEntry ? r.name : null, prevTitle)
+            uses++; warmNavs++
+          }
+          await captureAndWrite(page, template, r)
+          done++
+        } catch (e) {
           // If THIS browser died (single-process crash / OOM-kill), don't let the worker
           // spin the shared queue into `failures` at thousands/sec — hand the route back
           // and stop, so the healthy workers reclaim it. Else it's a normal flaky failure.
           if (browser.connected === false) { queue.unshift(r); break }
+          // A failed warm nav can leave the page mid-transition; discard it so the next
+          // route cold-boots clean. The route itself is retried (cold) in the retry pass.
+          await discard()
           failures.push({ r, msg: e.message })
         }
       }
+      await discard()
     }
     await Promise.all(browsers.map((b) => worker(b)))
+    console.log(`[prerender] ${coldBoots} cold boots + ${warmNavs} warm navs (${routes.length} routes)`)
 
     // Retry failures + any routes a dead worker handed back, SEQUENTIALLY on a FRESH
     // browser: most failures are flaky waitRendered timeouts that pass cleanly when alone,
