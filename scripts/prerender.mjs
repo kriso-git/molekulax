@@ -17,9 +17,11 @@ const DIST = join(repoRoot, 'dist')
 const ORIGIN = 'https://molekulax.hu'
 const PORT = 4388
 const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
-// 2 on Vercel (the Hobby build box is 2 cores; @sparticuz single-process Chromium
-// thrashes at higher concurrency -> CDP protocol timeouts + skeleton captures). 3 locally.
-const CONCURRENCY = process.env.VERCEL ? 2 : 3
+// 12 on Vercel: the Pro "Turbo" build machine is 30 vCPU / 60 GB, so we can run
+// many Chromium pages at once (~2.5 vCPU/page + headroom for the shell http server).
+// This cuts the 196-page browser prerender from ~30 min (Hobby 4 vCPU, conc 2) to
+// ~5 min. 3 locally (a dev laptop). The retry pass still re-runs any flaky timeouts.
+const CONCURRENCY = process.env.VERCEL ? 12 : 3
 // All hyphen/dash variants -> '-'. The entry H1 renders non-breaking hyphens (U+2011),
 // so a raw includes('SLU-PP-915') would miss 'SLU‑PP‑915'. Normalise both sides.
 const normHyphens = (s) => String(s).replace(/[‐-―−]/g, '-')
