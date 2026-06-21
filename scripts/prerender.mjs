@@ -249,7 +249,10 @@ function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld, ogIm
   }
   const alt = Object.entries(hreflang || {}).map(([hl, href]) => `<link rel="alternate" hreflang="${hl}" href="${href}">`).join('')
   const blocks = (Array.isArray(jsonld) ? jsonld : (jsonld ? [jsonld] : []))
-    .filter(Boolean).map((b) => `<script type="application/ld+json">${JSON.stringify(b)}</script>`).join('')
+    // Escape `<` -> < so a `</script>` in any string value can't break out of the
+    // ld+json block (defence-in-depth; today the data is build-time curated, but a future
+    // scrape/ingest pipeline could carry hostile markup the CSP would NOT catch here).
+    .filter(Boolean).map((b) => `<script type="application/ld+json">${JSON.stringify(b).replace(/</g, '\\u003c')}</script>`).join('')
   out = out.replace('</head>', `${alt}${blocks}</head>`)
   return out
 }

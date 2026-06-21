@@ -1344,8 +1344,7 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  related,
  faqList: deriveFaqs(peptide, tier),
  citations: deriveCitations(peptide),
- // ─── Phase 5 passthrough: structured bloodwork + per-entry dose helper ───
- bloodwork: peptide.bloodwork || null,
+ // ─── Phase 5 passthrough: per-entry dose helper (bloodwork module removed) ───
  doseCalc: peptide.doseCalc || null,
  // ─── Task A.1 (post-roadmap) passthrough: lab data fields. derive*Molecular
  //     reads from raw peptide, but UI sites (tooltips, comparisons) may want

@@ -21,7 +21,6 @@ import entryDates from '../../data/entryDates.json'
 import TelegramButtons from '../TelegramButtons'
 import SourcingButtons from './SourcingButtons'
 import MiniCalc from '../MiniCalc'
-import BloodworkProtocol from './BloodworkProtocol'
 import PerformanceCalculator from './PerformanceCalculator'
 import PharmaceuticalCalculator from './PharmaceuticalCalculator'
 import { useTilt, useMagnet, ParticleField, HoloRing, LabTerminal, Eyebrow, GlassCard, TabPills } from './entry-detail/shared'
@@ -1683,13 +1682,6 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {t('entry.qua.title') || 'Hogyan ismerd fel a tiszta peptidet'}
  </h3>
  <QualityGrid items={peptide.qualityIndicators} tr={tr} t={t} />
- </section>
- )}
-
- {/* ─── BLOODWORK PROTOCOL (Phase 5, performance entries) ─── */}
- {peptide.bloodwork && (
- <section className="relative px-6 sm:px-10 pb-10">
- <BloodworkProtocol bloodwork={peptide.bloodwork} accent={accent} />
  </section>
  )}
 

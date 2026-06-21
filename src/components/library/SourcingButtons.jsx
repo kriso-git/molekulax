@@ -1,4 +1,5 @@
 import { ArrowRight, Tag } from 'lucide-react'
+import { track } from '@vercel/analytics'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
 import { getSourcing } from '../../data/sourcingAvailability'
@@ -13,7 +14,7 @@ import { getSourcing } from '../../data/sourcingAvailability'
  * absence of a card means "not available".
  */
 export default function SourcingButtons({ entryId, variantId, className = '' }) {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const { library } = useLibrary()
   const sources = getSourcing(library?.id, entryId, variantId)
   if (sources.length === 0) return null
@@ -34,6 +35,7 @@ export default function SourcingButtons({ entryId, variantId, className = '' }) 
             href={s.url}
             target="_blank"
             rel="noopener noreferrer sponsored"
+            onClick={() => track('sourcing_click', { entry: entryId, vendor: s.key, variant: variantId || 'base', library: library?.id || 'unknown', lang })}
             aria-label={`${s.name}${s.coupon ? `, -10% ${t('entry.sourcing.coupon')}: ${s.coupon}` : ''}`}
             className="group flex items-center gap-4 p-5 rounded-2xl glass no-underline transition-all duration-300 hover:border-[rgba(129,140,248,0.35)] hover:bg-[rgba(99,102,241,0.07)]"
           >
