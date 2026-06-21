@@ -36,17 +36,30 @@ export function entryPath(libId, id, variantId = null, lang = 'hu') {
   return variantId ? `${base}/${variantId}` : base
 }
 
-// Phase 1: parse HU paths only (no prefix). Returns one of:
+// Parse HU (no prefix), /en, and /pl paths. Returns one of:
 //   { kind:'home', lang } | { kind:'library', lang, library }
 //   { kind:'entry', lang, library, id, variantId } | { kind:'unknown' }
+// The slug word must match the language (e.g. /en/peptides, not /en/peptidek).
 export function parsePath(pathname) {
-  const clean = (pathname || '/').replace(/\/+$/, '') || '/'
-  if (clean === '/') return { kind: 'home', lang: 'hu' }
+  let clean = (pathname || '/').replace(/\/+$/, '') || '/'
+  // Detect a language prefix; HU has none (it lives at the root).
+  let lang = 'hu'
+  const m = clean.match(/^\/(en|pl)(\/|$)/)
+  if (m) { lang = m[1]; clean = clean.slice(m[1].length + 1) || '/' }
+  if (clean === '/') return { kind: 'home', lang }
   const parts = clean.replace(/^\//, '').split('/')
-  const library = SLUG_TO_LIB.hu[parts[0]]
+  const library = SLUG_TO_LIB[lang][parts[0]]
   if (!library) return { kind: 'unknown' }
-  if (parts.length === 1) return { kind: 'library', lang: 'hu', library }
-  if (parts.length === 2) return { kind: 'entry', lang: 'hu', library, id: parts[1], variantId: null }
-  if (parts.length === 3) return { kind: 'entry', lang: 'hu', library, id: parts[1], variantId: parts[2] }
+  if (parts.length === 1) return { kind: 'library', lang, library }
+  if (parts.length === 2) return { kind: 'entry', lang, library, id: parts[1], variantId: null }
+  if (parts.length === 3) return { kind: 'entry', lang, library, id: parts[1], variantId: parts[2] }
   return { kind: 'unknown' }
+}
+
+// Map a parsed route to the SAME logical page in another language (for the language
+// switcher: navigating to the translated URL is what changes the rendered language).
+export function translatePath(route, lang) {
+  if (!route || route.kind === 'unknown' || route.kind === 'home') return homePath(lang)
+  if (route.kind === 'library') return libraryPath(route.library, lang)
+  return entryPath(route.library, route.id, route.variantId, lang)
 }
