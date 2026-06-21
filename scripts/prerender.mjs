@@ -197,6 +197,19 @@ function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld, ogIm
 // for the sequential retry pass. setViewport once — it persists across later client navs.
 async function coldBootPage(browser, route) {
   const page = await browser.newPage()
+  // Block font + media requests (the lazy card-motif / molecule webm loops). Neither
+  // affects the captured #root innerHTML — we snapshot HTML not pixels, the decorative
+  // <video> element + its poster stay in the DOM regardless of whether the webm bytes
+  // load, and fonts never change innerHTML — but on the single-process @sparticuz build
+  // Chromium their fetch+decode steals the one shared thread from JS execution and slows
+  // every page. NOT images: a blocked /molecules/*.png would trip ChemicalFormulaPlaceholder's
+  // onError -> formula-text fallback and change the nootropic prerender output. CSS / JS /
+  // XHR / images all pass through unchanged. (Proven byte-identical via dist HTML hash diff.)
+  await page.setRequestInterception(true)
+  page.on('request', (req) => {
+    const t = req.resourceType()
+    try { (t === 'font' || t === 'media') ? req.abort() : req.continue() } catch { /* already handled */ }
+  })
   // Desktop viewport so entries render the full PAGE (not the mobile modal, whose
   // JS-off innerText collapses). The three.js DNA background gets no WebGL context
   // (local: --disable-gpu; Vercel: --disable-webgl* over @sparticuz's swiftshader),
