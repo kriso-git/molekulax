@@ -75,7 +75,7 @@ async function buildRoutes() {
           if (localized) desc = localized
           if (Array.isArray(m.default?.faq)) faq = m.default.faq
         } catch {}
-        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq, dateModified: entryDates[e.id] || null })
+        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq, dateModified: entryDates[e.id] || null, ogImage: `${ORIGIN}/og/${e.id}.jpg` })
       }
     }
   }
@@ -133,7 +133,7 @@ async function waitRendered(page, mustContain) {
 function escapeHtml(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;') }
 function escapeAttr(s) { return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;') }
 
-function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld }) {
+function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld, ogImage }) {
   let out = html
   out = out.replace(/<html lang="[^"]*"/, `<html lang="${lang}"`)
   out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`)
@@ -149,6 +149,12 @@ function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld }) {
     out = out.replace(/<meta property="og:description"[^>]*>/, `<meta property="og:description" content="${escapeAttr(desc)}">`)
     out = out.replace(/<meta name="twitter:title"[^>]*>/, `<meta name="twitter:title" content="${escapeAttr(title)}">`)
     out = out.replace(/<meta name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${escapeAttr(desc)}">`)
+  }
+  // Per-compound social card (entry pages); home/library keep the default og-image.png.
+  if (ogImage) {
+    out = out.replace(/<meta property="og:image" content="[^"]*"/, `<meta property="og:image" content="${ogImage}"`)
+    out = out.replace(/<meta name="twitter:image" content="[^"]*"/, `<meta name="twitter:image" content="${ogImage}"`)
+    out = out.replace(/<meta property="og:image:alt"[^>]*>/, `<meta property="og:image:alt" content="${escapeAttr(title)}">`)
   }
   const alt = Object.entries(hreflang || {}).map(([hl, href]) => `<link rel="alternate" hreflang="${hl}" href="${href}">`).join('')
   const blocks = (Array.isArray(jsonld) ? jsonld : (jsonld ? [jsonld] : []))
@@ -195,7 +201,7 @@ async function renderOne(browser, template, route) {
       const bc = breadcrumbJsonLd(crumbs)
       if (bc) jsonld.push(bc)
     }
-    let html = injectHead(template, { lang: route.lang, title: cap.title, desc: cap.desc, canonical, hreflang: route.hreflang, jsonld })
+    let html = injectHead(template, { lang: route.lang, title: cap.title, desc: cap.desc, canonical, hreflang: route.hreflang, jsonld, ogImage: route.ogImage })
     html = html.replace('<div id="root"></div>', `<div id="root">${cap.root}</div>`)
     const outPath = join(DIST, route.diskPath)
     mkdirSync(dirname(outPath), { recursive: true })
