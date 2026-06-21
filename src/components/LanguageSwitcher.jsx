@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { Globe, Check, ChevronDown } from 'lucide-react'
 import { useLang, SUPPORTED_LANGS } from '../i18n/LanguageContext'
+import { navigate, useLocationPath } from '../router/location'
+import { parsePath, translatePath } from '../seo/urls'
 
 const LANG_META = {
   hu: { label: 'Magyar', short: 'HU', flag: '🇭🇺' },
@@ -9,7 +11,8 @@ const LANG_META = {
 }
 
 export default function LanguageSwitcher() {
-  const { lang, setLang } = useLang()
+  const { lang } = useLang()
+  const path = useLocationPath()
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
 
@@ -66,7 +69,7 @@ export default function LanguageSwitcher() {
             return (
               <button
                 key={code}
-                onClick={() => { setLang(code); setOpen(false) }}
+                onClick={() => { navigate(translatePath(parsePath(path), code)); setOpen(false) }}
                 className="w-full flex items-center justify-between gap-3 px-3.5 py-2.5 text-left transition-colors duration-150"
                 style={{
                   color: active ? 'var(--accent)' : 'var(--text-secondary)',

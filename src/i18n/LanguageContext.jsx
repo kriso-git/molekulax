@@ -12,9 +12,12 @@ const LanguageContext = createContext({
 const SUPPORTED = ['hu', 'en', 'pl']
 
 function detectInitial() {
-  // Hungarian is the default. We only honour an explicit user choice from a
-  // previous visit — the browser language is intentionally NOT used.
+  // 1) URL prefix wins (so an /en or /pl deep-link / the build-time prerender renders
+  //    that language with no HU->lang flash). 2) else an explicit prior choice from a
+  //    previous visit. 3) else Hungarian. The browser language is intentionally NOT used.
   if (typeof window === 'undefined') return 'hu'
+  const m = window.location.pathname.match(/^\/(en|pl)(\/|$)/)
+  if (m) return m[1]
   try {
     const stored = localStorage.getItem('molekulax-lang')
     if (stored && SUPPORTED.includes(stored)) return stored
