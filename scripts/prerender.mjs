@@ -96,6 +96,22 @@ async function renderOne(browser, template, route) {
   return route.urlPath
 }
 
+// On Vercel's build container regular Chromium won't launch (missing system libs),
+// so use @sparticuz/chromium (a serverless-ready Chromium build) there. Local/dev
+// builds keep the full puppeteer Chromium. Detected via process.env.VERCEL.
+async function launchBrowser() {
+  if (process.env.VERCEL) {
+    const chromium = (await import('@sparticuz/chromium')).default
+    const puppeteerCore = (await import('puppeteer-core')).default
+    return puppeteerCore.launch({
+      args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox'],
+      executablePath: await chromium.executablePath(),
+      headless: true,
+    })
+  }
+  return puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] })
+}
+
 async function main() {
   const template = readFileSync(join(DIST, 'index.html'), 'utf8')
   const routes = await buildRoutes()
@@ -105,7 +121,7 @@ async function main() {
   for (const r of routes) { const seg = r.urlPath.split('/')[1]; const lib = slugToLib[seg]; if (lib) r.libraryName = libName[lib] }
 
   const server = await startServer()
-  const browser = await puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'] })
+  const browser = await launchBrowser()
   let done = 0, failed = 0
   const queue = [...routes]
   async function worker() {
