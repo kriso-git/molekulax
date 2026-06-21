@@ -1,6 +1,5 @@
-import { Fragment, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ArrowLeft, GitCompareArrows } from 'lucide-react'
-import { useLang } from '../../i18n/LanguageContext'
 import { COMPARISONS, homePath } from '../../seo/urls'
 import { loadEntry, listLibraries } from '../../data/libraries'
 import { buildComparison } from './buildComparison'

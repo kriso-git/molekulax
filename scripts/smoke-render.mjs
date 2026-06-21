@@ -32,6 +32,8 @@ const ROUTES = [
   { label: 'library landing — /peptidek', lib: null, path: '/peptidek' },
   { label: 'EN entry — /en/peptides/bpc-157', lib: null, path: '/en/peptides/bpc-157' },
   { label: 'PL entry — /pl/peptydy/bpc-157', lib: null, path: '/pl/peptydy/bpc-157' },
+  { label: 'comparison index — /osszehasonlitas', lib: null, path: '/osszehasonlitas' },
+  { label: 'comparison detail — bpc-157-vs-tb-500', lib: null, path: '/osszehasonlitas/bpc-157-vs-tb-500' },
 ]
 
 async function waitForServer(url, tries = 60) {

@@ -18,7 +18,8 @@ const loc = (v, lang) => (v == null ? null : typeof v === 'string' ? v : (v[lang
 export function buildComparison(memberEntries, lang = 'hu', lib = null) {
   const members = memberEntries.map((e) =>
     e
-      ? { id: e.id, name: e.name, shortDesc: loc(e.shortDesc, lang), href: lib ? entryPath(lib, e.id, null, lang) : null }
+      // name is normally a flat string; loc() defends against a future {hu,en,pl} triplet
+      ? { id: e.id, name: loc(e.name, lang) ?? e.name, shortDesc: loc(e.shortDesc, lang), href: lib ? entryPath(lib, e.id, null, lang) : null }
       : null)
 
   // union of keyInfo labels, first-seen order across members
