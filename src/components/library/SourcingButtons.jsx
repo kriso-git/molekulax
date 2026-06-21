@@ -14,7 +14,7 @@ import { getSourcing } from '../../data/sourcingAvailability'
  * absence of a card means "not available".
  */
 export default function SourcingButtons({ entryId, variantId, className = '' }) {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const { library } = useLibrary()
   const sources = getSourcing(library?.id, entryId, variantId)
   if (sources.length === 0) return null
@@ -35,7 +35,7 @@ export default function SourcingButtons({ entryId, variantId, className = '' }) 
             href={s.url}
             target="_blank"
             rel="noopener noreferrer sponsored"
-            onClick={() => track('sourcing_click', { vendor: s.key, where: entryId })}
+            onClick={() => track('sourcing_click', { vendor: s.key, where: entryId, library: library?.id || 'unknown', variant: variantId || 'base', lang })}
             aria-label={`${s.name}${s.coupon ? `, -10% ${t('entry.sourcing.coupon')}: ${s.coupon}` : ''}`}
             className="group flex items-center gap-4 p-5 rounded-2xl glass no-underline transition-all duration-300 hover:border-[rgba(129,140,248,0.35)] hover:bg-[rgba(99,102,241,0.07)]"
           >

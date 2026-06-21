@@ -39,7 +39,7 @@ const PARTNERS = [
 ]
 
 export default function Sourcing() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   return (
     <section className="py-10 px-4">
       <div className="max-w-5xl mx-auto">
@@ -59,7 +59,7 @@ export default function Sourcing() {
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                onClick={() => track('sourcing_click', { vendor: p.id, where: 'home' })}
+                onClick={() => track('sourcing_click', { vendor: p.id, where: 'home', lang })}
                 className={`group flex flex-row items-center gap-5 p-7 rounded-2xl glass no-underline hover:border-[rgba(129,140,248,0.3)] hover:bg-[rgba(99,102,241,0.07)] transition-all duration-300${isLoneLast ? ' md:col-span-2 md:w-[calc(50%-12px)] md:mx-auto' : ''}`}
               >
                 {/* Text column – flex-1 + min-w-0 so long coupon labels never push
