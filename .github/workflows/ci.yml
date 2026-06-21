@@ -26,6 +26,9 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - name: Dependency audit (advisory, non-blocking)
+        run: npm audit --audit-level=high
+        continue-on-error: true
       - name: Unit tests
         run: npm test
       - name: Cross-lang consistency (offline)
