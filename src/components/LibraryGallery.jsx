@@ -46,8 +46,12 @@ const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSe
  const accent = peptide.accentColor
 
  return (
- <button
- onClick={() => onSelect(peptide)}
+ // Real <a href> so Googlebot can follow library -> compound (the primary crawl
+ // path); preventDefault keeps the SPA nav + gallery-snapshot logic. Tailwind
+ // preflight neutralises anchor underline/colour so it stays pixel-identical.
+ <a
+ href={entryPath(library.id, peptide.id, null, lang)}
+ onClick={(e) => { e.preventDefault(); onSelect(peptide) }}
  data-entry-id={peptide.id}
  className="group peptide-tile relative flex flex-col gap-4 p-5 rounded-2xl text-left cursor-pointer"
  style={{
@@ -216,7 +220,7 @@ const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSe
  )}
  </div>
  </div>
- </button>
+ </a>
  )
 })
 
