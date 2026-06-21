@@ -44,6 +44,13 @@ export default function Footer() {
  <p className="text-gray-700 tracking-wide text-xs">
  {t('footer.rights')}
  </p>
+
+ <p className="max-w-2xl text-center text-gray-700 text-[11px] leading-relaxed">
+ {t('footer.disclosure')}
+ </p>
+ <p className="max-w-2xl text-center text-gray-700 text-[11px] leading-relaxed">
+ {t('footer.notice')}
+ </p>
  </div>
  </footer>
  )

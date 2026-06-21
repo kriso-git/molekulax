@@ -246,6 +246,8 @@ export const UI_EN = {
   "dc.eyebrow": "Important notice",
   "dc.body": "This website was created strictly for educational and informational purposes. We do not sell products, do not provide medical advice, do not run a group, and do not encourage illegal substance or pharmaceutical use. The content is based on peer-reviewed scientific sources but does not replace medical advice. When in doubt, consult your doctor.",
   "footer.rights": "© 2026 MolekulaX. All rights reserved.",
+  "footer.disclosure": "The 'sourcing' links are labelled third-party affiliate links – MolekulaX does not sell and does not verify product quality.",
+  "footer.notice": "18+ only. Educational content, not medical advice. The legal status of these compounds varies by country – check your local regulations.",
   "pe.title": "Physiological effects",
   "pe.subtitle": "Peptides are not a uniform group. Each category acts on a different biological pathway.",
   "pe.hint": "Click on a tile for details",

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/validate-library-meta.mjs && node scripts/gen-sitemap.mjs && node scripts/gen-llms.mjs && vite build",
+    "build": "node scripts/validate-library-meta.mjs && node scripts/gen-sitemap.mjs && node scripts/gen-llms.mjs && node scripts/gen-security-txt.mjs && vite build",
     "build:prerender": "npm run build && node scripts/prerender.mjs",
     "preview": "vite preview",
     "validate:meta": "node scripts/validate-library-meta.mjs",

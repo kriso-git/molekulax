@@ -246,6 +246,8 @@ export const UI_PL = {
   "dc.eyebrow": "Ważna informacja",
   "dc.body": "Ta strona powstała wyłącznie w celach edukacyjnych i informacyjnych. Nie sprzedajemy produktów, nie świadczymy porad medycznych, nie prowadzimy grupy ani nie zachęcamy do nielegalnego używania substancji ani leków. Treści opierają się na recenzowanych naukowo źródłach, ale nie zastępują opinii lekarskiej. W razie wątpliwości skonsultuj się z lekarzem.",
   "footer.rights": "© 2026 MolekulaX. Wszelkie prawa zastrzeżone.",
+  "footer.disclosure": "Linki 'zaopatrzenie' to oznaczone linki afiliacyjne do sklepów osób trzecich – MolekulaX nie sprzedaje i nie weryfikuje jakości produktów.",
+  "footer.notice": "Tylko 18+. Treści edukacyjne, nie porada medyczna. Status prawny tych związków różni się w zależności od kraju – sprawdź lokalne przepisy.",
   "pe.title": "Efekty fizjologiczne",
   "pe.subtitle": "Peptydy nie są jednolitą grupą. Każda kategoria działa innym szlakiem biologicznym.",
   "pe.hint": "Kliknij kafelek, aby poznać szczegóły",
