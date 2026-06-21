@@ -1,4 +1,5 @@
 import { ArrowRight, Tag } from 'lucide-react'
+import { track } from '@vercel/analytics'
 import { useLang } from '../i18n/LanguageContext'
 
 // "Beszerzés" – partner sourcing section (under Education). Affiliate links with
@@ -58,6 +59,7 @@ export default function Sourcing() {
                 href={p.href}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
+                onClick={() => track('sourcing_click', { vendor: p.id, where: 'home' })}
                 className={`group flex flex-row items-center gap-5 p-7 rounded-2xl glass no-underline hover:border-[rgba(129,140,248,0.3)] hover:bg-[rgba(99,102,241,0.07)] transition-all duration-300${isLoneLast ? ' md:col-span-2 md:w-[calc(50%-12px)] md:mx-auto' : ''}`}
               >
                 {/* Text column – flex-1 + min-w-0 so long coupon labels never push
