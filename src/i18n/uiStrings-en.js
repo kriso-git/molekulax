@@ -243,6 +243,7 @@ export const UI_EN = {
   "footer.rights": "© 2026 MolekulaX. All rights reserved.",
   "footer.legal.methodology": "Methodology",
   "footer.legal.privacy": "Privacy",
+  "footer.legal.compare": "Compare",
   "footer.disclosure": "The 'sourcing' links are labelled third-party affiliate links – MolekulaX does not sell and does not verify product quality.",
   "footer.notice": "18+ only. Educational content, not medical advice. The legal status of these compounds varies by country – check your local regulations.",
   "pe.title": "Physiological effects",

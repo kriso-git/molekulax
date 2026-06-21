@@ -243,6 +243,7 @@ export const UI_HU = {
   "footer.rights": "© 2026 MolekulaX. Minden jog fenntartva.",
   "footer.legal.methodology": "Módszertan",
   "footer.legal.privacy": "Adatvédelem",
+  "footer.legal.compare": "Összehasonlítás",
   "footer.disclosure": "A »beszerzés« linkek harmadik fél boltjaira mutató, jelölt affiliate-linkek – a MolekulaX nem értékesít és nem vizsgálja a termékminőséget.",
   "footer.notice": "Csak 18+. Edukációs tartalom, nem orvosi tanács. A vegyületek jogi státusza országonként eltér – tájékozódj a helyi szabályozásról.",
   "pe.title": "Élettani hatások",

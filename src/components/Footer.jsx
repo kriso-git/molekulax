@@ -1,6 +1,6 @@
 import { Mail } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
-import { pagePath } from '../seo/urls'
+import { pagePath, comparisonBasePath } from '../seo/urls'
 import { navigate } from '../router/location'
 import TelegramButtons from './TelegramButtons'
 
@@ -63,6 +63,13 @@ export default function Footer() {
  <a href={pagePath('privacy', lang)} onClick={(e) => legalNav(e, pagePath('privacy', lang))}
  className="text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-widest uppercase text-xs">
  {t('footer.legal.privacy')}
+ </a>
+
+ <span className="w-1 h-1 rounded-full bg-[rgba(129,140,248,0.3)]" />
+
+ <a href={comparisonBasePath(lang)} onClick={(e) => legalNav(e, comparisonBasePath(lang))}
+ className="text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-widest uppercase text-xs">
+ {t('footer.legal.compare')}
  </a>
  </div>
 

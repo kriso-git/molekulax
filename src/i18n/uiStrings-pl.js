@@ -243,6 +243,7 @@ export const UI_PL = {
   "footer.rights": "© 2026 MolekulaX. Wszelkie prawa zastrzeżone.",
   "footer.legal.methodology": "Metodologia",
   "footer.legal.privacy": "Prywatność",
+  "footer.legal.compare": "Porównanie",
   "footer.disclosure": "Linki 'zaopatrzenie' to oznaczone linki afiliacyjne do sklepów osób trzecich – MolekulaX nie sprzedaje i nie weryfikuje jakości produktów.",
   "footer.notice": "Tylko 18+. Treści edukacyjne, nie porada medyczna. Status prawny tych związków różni się w zależności od kraju – sprawdź lokalne przepisy.",
   "pe.title": "Efekty fizjologiczne",
