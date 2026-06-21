@@ -34,6 +34,7 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 // (the 3 language URLs for this page + x-default -> HU) so injectHead can emit alternates.
 const LANGS = ['hu', 'en', 'pl']
 const PREFIX = { hu: '', en: '/en', pl: '/pl' }
+const OG_LOCALE = { hu: 'hu_HU', en: 'en_US', pl: 'pl_PL' }
 const diskFor = (lang, ...segs) => join(PREFIX[lang].replace('/', ''), ...segs, 'index.html')
 const altMap = (byLang) => Object.fromEntries([...LANGS.map((l) => [l, ORIGIN + byLang(l)]), ['x-default', ORIGIN + byLang('hu')]])
 const homeUrl = (l) => PREFIX[l] + (l === 'hu' ? '/' : '')
@@ -131,6 +132,15 @@ function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld }) {
   out = out.replace(/<link rel="canonical"[^>]*>/, `<link rel="canonical" href="${canonical}">`)
   out = out.replace(/<meta property="og:url"[^>]*>/, `<meta property="og:url" content="${canonical}">`)
   out = out.replace(/<meta property="og:title"[^>]*>/, `<meta property="og:title" content="${escapeAttr(title)}">`)
+  // Localize the social-card locale for all langs (HU stays hu_HU = a no-op). Localize the
+  // social descriptions + twitter title ONLY for EN/PL, so HU's curated OG/twitter tagline
+  // stays byte-identical to the shipped HU output.
+  out = out.replace(/<meta property="og:locale"[^>]*>/, `<meta property="og:locale" content="${OG_LOCALE[lang] || 'hu_HU'}">`)
+  if (lang !== 'hu') {
+    out = out.replace(/<meta property="og:description"[^>]*>/, `<meta property="og:description" content="${escapeAttr(desc)}">`)
+    out = out.replace(/<meta name="twitter:title"[^>]*>/, `<meta name="twitter:title" content="${escapeAttr(title)}">`)
+    out = out.replace(/<meta name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${escapeAttr(desc)}">`)
+  }
   const alt = Object.entries(hreflang || {}).map(([hl, href]) => `<link rel="alternate" hreflang="${hl}" href="${href}">`).join('')
   out = out.replace('</head>', `${alt}${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}</head>`)
   return out

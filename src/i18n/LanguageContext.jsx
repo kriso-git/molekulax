@@ -12,17 +12,15 @@ const LanguageContext = createContext({
 const SUPPORTED = ['hu', 'en', 'pl']
 
 function detectInitial() {
-  // 1) URL prefix wins (so an /en or /pl deep-link / the build-time prerender renders
-  //    that language with no HU->lang flash). 2) else an explicit prior choice from a
-  //    previous visit. 3) else Hungarian. The browser language is intentionally NOT used.
+  // The URL is the single source of truth for language: an /en or /pl prefix => that
+  // language, otherwise Hungarian (the root is HU). We deliberately do NOT read a stored
+  // preference here: on a prefix-less URL it would disagree with the (HU) path and the
+  // prerendered HU HTML, then get force-corrected by LanguageRouteSync -> a first-paint
+  // flicker. Language is chosen by navigating to the localized URL. Browser language is
+  // intentionally not used.
   if (typeof window === 'undefined') return 'hu'
   const m = window.location.pathname.match(/^\/(en|pl)(\/|$)/)
-  if (m) return m[1]
-  try {
-    const stored = localStorage.getItem('molekulax-lang')
-    if (stored && SUPPORTED.includes(stored)) return stored
-  } catch {}
-  return 'hu'
+  return m ? m[1] : 'hu'
 }
 
 // Phase 11: per-locale dynamic-import. HU is sync-bundled as the default;

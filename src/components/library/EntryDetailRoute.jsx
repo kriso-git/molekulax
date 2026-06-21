@@ -181,7 +181,7 @@ export default function EntryDetailRoute({ route }) {
       const fallback = validId(entry.defaultVariant) ? entry.defaultVariant : variants[0].routeId
       navigate(entryPath(parsed.library, parsed.id, fallback, lang), { replace: true })
     }
-  }, [parsed?.library, parsed?.id, parsed?.variantId, entry])
+  }, [parsed?.library, parsed?.id, parsed?.variantId, entry, lang])
 
   if (!parsed) return null
 
