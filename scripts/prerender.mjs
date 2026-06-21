@@ -17,10 +17,12 @@ const DIST = join(repoRoot, 'dist')
 const ORIGIN = 'https://molekulax.hu'
 const PORT = 4388
 const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
-// 12 on Vercel: the Pro "Turbo" build machine is 30 vCPU / 60 GB, so we can run
-// many Chromium pages at once (~2.5 vCPU/page + headroom for the shell http server).
-// This cuts the 196-page browser prerender from ~30 min (Hobby 4 vCPU, conc 2) to
-// ~5 min. 3 locally (a dev laptop). The retry pass still re-runs any flaky timeouts.
+// 12 on Vercel: the Pro "Turbo" build machine is 30 vCPU / 60 GB. We run 12 browsers
+// in parallel (one per worker - @sparticuz forces --single-process, so parallelism has
+// to come from separate browser PROCESSES, not tabs in one browser). ~12 cores used,
+// headroom left for the shell http server. Cuts the 196-page prerender from ~30 min
+// (single-process, ~1 core) to a few minutes. 3 locally (a dev laptop). The retry pass
+// re-runs flaky timeouts.
 const CONCURRENCY = process.env.VERCEL ? 12 : 3
 // All hyphen/dash variants -> '-'. The entry H1 renders non-breaking hyphens (U+2011),
 // so a raw includes('SLU-PP-915') would miss 'SLU‑PP‑915'. Normalise both sides.
@@ -105,52 +107,63 @@ function injectHead(html, { title, desc, canonical, jsonld }) {
 
 async function renderOne(browser, template, route) {
   const page = await browser.newPage()
-  // Desktop viewport so entries render the full PAGE (not the mobile modal, whose
-  // JS-off innerText collapses). The three.js DNA background degrades to nothing
-  // under --disable-gpu (no WebGL context), so it adds no build-time cost.
-  await page.setViewport({ width: 1280, height: 900 })
-  // domcontentloaded, NOT networkidle: the SPA keeps connections open (analytics/SW)
-  // so networkidle never settles on the slow build Chromium -> 60s nav timeout.
-  // waitStable() then waits for the real content to render + settle.
-  await page.goto(`http://127.0.0.1:${PORT}${route.urlPath}`, { waitUntil: 'domcontentloaded', timeout: 60000 })
-  await waitRendered(page, route.isEntry ? route.name : null)
-  const cap = await page.evaluate(() => ({
-    root: document.getElementById('root').innerHTML,
-    title: document.title,
-    desc: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
-  }))
-  await page.close()
-  if (route.isEntry && !normHyphens(cap.root).includes(normHyphens(route.name))) {
-    throw new Error(`prerender ${route.urlPath}: rendered #root does not contain entry name "${route.name}" (skeleton captured?)`)
+  try {
+    // Desktop viewport so entries render the full PAGE (not the mobile modal, whose
+    // JS-off innerText collapses). The three.js DNA background gets no WebGL context
+    // (local: --disable-gpu; Vercel: --disable-webgl* over @sparticuz's swiftshader),
+    // so it bails via getContext('webgl2')->null and adds no build-time cost.
+    await page.setViewport({ width: 1280, height: 900 })
+    // domcontentloaded, NOT networkidle: the SPA keeps connections open (analytics/SW)
+    // so networkidle never settles on the slow build Chromium -> 60s nav timeout.
+    // waitRendered() then waits for the real content to render + settle.
+    await page.goto(`http://127.0.0.1:${PORT}${route.urlPath}`, { waitUntil: 'domcontentloaded', timeout: 60000 })
+    await waitRendered(page, route.isEntry ? route.name : null)
+    const cap = await page.evaluate(() => ({
+      root: document.getElementById('root').innerHTML,
+      title: document.title,
+      desc: document.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+    }))
+    if (route.isEntry && !normHyphens(cap.root).includes(normHyphens(route.name))) {
+      throw new Error(`prerender ${route.urlPath}: rendered #root does not contain entry name "${route.name}" (skeleton captured?)`)
+    }
+    const canonical = ORIGIN + route.urlPath
+    const jsonld = route.isEntry ? entryJsonLd({ name: route.name, desc: route.desc || cap.desc, url: canonical, libraryName: route.libraryName }) : null
+    let html = injectHead(template, { title: cap.title, desc: cap.desc, canonical, jsonld })
+    html = html.replace('<div id="root"></div>', `<div id="root">${cap.root}</div>`)
+    const outPath = join(DIST, route.diskPath)
+    mkdirSync(dirname(outPath), { recursive: true })
+    writeFileSync(outPath, html)
+    return route.urlPath
+  } finally {
+    // Always close the page, even on a waitRendered/goto timeout throw, so a single
+    // --single-process browser never accumulates leaked renderer state across its routes.
+    await page.close().catch(() => {})
   }
-  const canonical = ORIGIN + route.urlPath
-  const jsonld = route.isEntry ? entryJsonLd({ name: route.name, desc: route.desc || cap.desc, url: canonical, libraryName: route.libraryName }) : null
-  let html = injectHead(template, { title: cap.title, desc: cap.desc, canonical, jsonld })
-  html = html.replace('<div id="root"></div>', `<div id="root">${cap.root}</div>`)
-  const outPath = join(DIST, route.diskPath)
-  mkdirSync(dirname(outPath), { recursive: true })
-  writeFileSync(outPath, html)
-  return route.urlPath
 }
 
 // On Vercel's build container regular Chromium won't launch (missing system libs),
 // so use @sparticuz/chromium (a serverless-ready Chromium build) there. Local/dev
 // builds keep the full puppeteer Chromium. Detected via process.env.VERCEL.
-async function launchBrowser() {
+//
+// Returns a THUNK that launches a fresh browser. main() launches one browser PER
+// worker rather than many tabs in one browser, because @sparticuz/chromium forces
+// --single-process: a single browser renders everything on ~1 core regardless of
+// concurrency, so the 30 vCPU Turbo box would sit idle. N separate browsers = N OS
+// process trees = real N-core parallelism. The heavy @sparticuz setup (binary
+// extraction + args) is resolved ONCE here so launching N browsers at once never
+// races on the executable extraction.
+async function makeLauncher() {
   if (process.env.VERCEL) {
     const chromium = (await import('@sparticuz/chromium')).default
     const puppeteerCore = (await import('puppeteer-core')).default
-    return puppeteerCore.launch({
-      // --disable-software-rasterizer kills the SwiftShader fallback so the three.js
-      // DNA background gets no WebGL2 context and degrades to nothing (its try/catch),
-      // instead of software-rendering and starving the React render of each page.
-      args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox', '--disable-software-rasterizer'],
-      executablePath: await chromium.executablePath(),
-      headless: true,
-      protocolTimeout: 180000,
-    })
+    const executablePath = await chromium.executablePath()
+    // --disable-webgl/-webgl2/-3d-apis make the decorative three.js DNA background bail
+    // out via its getContext('webgl2') feature-detect, so it never software-renders
+    // (swiftshader, which @sparticuz's own args enable) and burn CPU on every page.
+    const args = [...chromium.args, '--disable-software-rasterizer', '--disable-webgl', '--disable-webgl2', '--disable-3d-apis']
+    return () => puppeteerCore.launch({ args, executablePath, headless: true, protocolTimeout: 180000 })
   }
-  return puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu', '--disable-software-rasterizer'], protocolTimeout: 180000 })
+  return () => puppeteer.launch({ headless: 'new', args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu', '--disable-software-rasterizer'], protocolTimeout: 180000 })
 }
 
 async function main() {
@@ -167,29 +180,59 @@ async function main() {
   for (const r of routes) { const seg = r.urlPath.split('/')[1]; const lib = slugToLib[seg]; if (lib) r.libraryName = libName[lib] }
 
   const server = await startServer(template)
-  const browser = await launchBrowser()
-  let done = 0
-  const queue = [...routes]
-  const failures = []
-  async function worker() {
-    while (queue.length) {
-      const r = queue.shift()
-      try { await renderOne(browser, template, r); done++ } catch (e) { failures.push({ r, msg: e.message }) }
-    }
-  }
-  await Promise.all(Array.from({ length: CONCURRENCY }, worker))
+  const launch = await makeLauncher()
+  let done = 0, stillFailed = 0
+  let browsers = []
+  let retryBrowser = null
+  try {
+    // One browser PER worker (see makeLauncher): N browsers = N OS processes = N cores,
+    // the only way to beat @sparticuz's --single-process. allSettled (not all): one flaky
+    // launch in the CONCURRENCY-wide burst must not fail the whole build — degrade to the
+    // browsers that did come up.
+    const launched = await Promise.allSettled(Array.from({ length: CONCURRENCY }, () => launch()))
+    browsers = launched.filter((r) => r.status === 'fulfilled').map((r) => r.value)
+    if (!browsers.length) throw new Error('prerender: no Chromium could be launched')
+    if (browsers.length < CONCURRENCY) console.warn(`[prerender] only ${browsers.length}/${CONCURRENCY} browsers launched; continuing degraded`)
 
-  // Retry the failures SEQUENTIALLY — almost all are flaky waitRendered timeouts
-  // from CPU contention during the concurrent pass, and pass cleanly when alone.
-  let stillFailed = 0
-  if (failures.length) {
-    console.log(`[prerender] retrying ${failures.length} page(s) sequentially...`)
-    for (const { r } of failures) {
-      try { await renderOne(browser, template, r); done++ } catch (e) { stillFailed++; console.error(`[prerender] FAIL (after retry) ${r.urlPath}: ${e.message}`) }
+    const queue = [...routes]
+    const failures = []
+    async function worker(browser) {
+      while (queue.length) {
+        const r = queue.shift()
+        try { await renderOne(browser, template, r); done++ }
+        catch (e) {
+          // If THIS browser died (single-process crash / OOM-kill), don't let the worker
+          // spin the shared queue into `failures` at thousands/sec — hand the route back
+          // and stop, so the healthy workers reclaim it. Else it's a normal flaky failure.
+          if (browser.connected === false) { queue.unshift(r); break }
+          failures.push({ r, msg: e.message })
+        }
+      }
     }
+    await Promise.all(browsers.map((b) => worker(b)))
+
+    // Retry failures + any routes a dead worker handed back, SEQUENTIALLY on a FRESH
+    // browser: most failures are flaky waitRendered timeouts that pass cleanly when alone,
+    // and a fresh browser can't be a crashed pool member. Relaunch it if it dies mid-retry.
+    const retryRoutes = [...failures.map((f) => f.r), ...queue]
+    if (retryRoutes.length) {
+      console.log(`[prerender] retrying ${retryRoutes.length} page(s) sequentially on a fresh browser...`)
+      retryBrowser = await launch()
+      for (const r of retryRoutes) {
+        try {
+          if (retryBrowser.connected === false) { await retryBrowser.close().catch(() => {}); retryBrowser = await launch() }
+          await renderOne(retryBrowser, template, r); done++
+        } catch (e) { stillFailed++; console.error(`[prerender] FAIL (after retry) ${r.urlPath}: ${e.message}`) }
+      }
+    }
+  } finally {
+    if (retryBrowser) await retryBrowser.close().catch(() => {})
+    await Promise.all(browsers.map((b) => b.close().catch(() => {})))
+    server.close()
   }
-  await browser.close(); server.close()
-  console.log(`[prerender] wrote ${done} static pages, ${stillFailed} failed`)
-  if (stillFailed > 0) process.exit(1)
+  console.log(`[prerender] wrote ${done}/${routes.length} static pages, ${stillFailed} failed after retry`)
+  // Fail the build if ANY route is missing (retry failures OR routes left unrendered by a
+  // dead worker) — a partial dist must never deploy as if it were complete.
+  if (done < routes.length) process.exit(1)
 }
 main().catch((e) => { console.error('[prerender] fatal:', e); process.exit(1) })
