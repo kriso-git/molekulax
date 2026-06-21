@@ -43,10 +43,12 @@ for (const [key, words] of Object.entries(STATIC_PAGES)) {
 // entry ids). All members of a comparison share one library (data shapes align). Add a
 // comparison here + it is auto-enumerated by parsePath, prerender, and the sitemap.
 export const COMPARISON_BASE = { hu: 'osszehasonlitas', en: 'compare', pl: 'porownanie' }
+// `title` is the human-readable display name (compound names are language-invariant), used by
+// the index cards + detail H1 without loading entry data.
 export const COMPARISONS = [
-  { slug: 'ostarine-vs-rad-140', lib: 'performance', members: ['ostarine', 'rad-140'] },
-  { slug: 'semaglutide-vs-tirzepatide-vs-retatrutide', lib: 'peptides', members: ['semaglutide', 'tirzepatide', 'retatrutide'] },
-  { slug: 'bpc-157-vs-tb-500', lib: 'peptides', members: ['bpc-157', 'tb-500'] },
+  { slug: 'ostarine-vs-rad-140', lib: 'performance', members: ['ostarine', 'rad-140'], title: 'Ostarine vs RAD-140' },
+  { slug: 'semaglutide-vs-tirzepatide-vs-retatrutide', lib: 'peptides', members: ['semaglutide', 'tirzepatide', 'retatrutide'], title: 'Semaglutide vs Tirzepatide vs Retatrutide' },
+  { slug: 'bpc-157-vs-tb-500', lib: 'peptides', members: ['bpc-157', 'tb-500'], title: 'BPC-157 vs TB-500' },
 ]
 const SLUG_TO_COMPARISON = Object.fromEntries(COMPARISONS.map((c) => [c.slug, c]))
 

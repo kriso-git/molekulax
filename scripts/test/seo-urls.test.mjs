@@ -78,6 +78,7 @@ test('COMPARISONS registry: 3 curated comparisons with members + lib, slug = mem
   for (const c of COMPARISONS) {
     assert.ok(c.slug && c.lib && Array.isArray(c.members) && c.members.length >= 2)
     assert.equal(c.slug, c.members.join('-vs-'))
+    assert.equal(typeof c.title, 'string')
   }
 })
 
