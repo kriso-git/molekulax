@@ -34,3 +34,4 @@ pmid-fixes/
 
 # Visual regression baseline PNGs (local only, not committed)
 scripts/.visual-baseline/
+.vercel
