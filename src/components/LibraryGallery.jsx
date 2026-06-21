@@ -509,6 +509,15 @@ export default function LibraryGallery({
 
  return (
  <>
+ {/* SEO + a11y: a crawlable index of EVERY compound in this library, so Googlebot can
+     reach all entries from the library page (the visible gallery is a Top-10 preview
+     until expanded). Visually hidden (sr-only) -> zero UX / visual change. Real DOM in
+     both the SPA and the prerendered HTML (not cloaking). */}
+ <nav className="sr-only" aria-label={library.name ? tr(library.name) : t('gal.title')}>
+ {metaList.map(p => (
+ <a key={p.id} href={entryPath(library.id, p.id, null, lang)}>{p.name}</a>
+ ))}
+ </nav>
  <div className="max-w-6xl mx-auto">
 
  <div className="text-center mb-16">
