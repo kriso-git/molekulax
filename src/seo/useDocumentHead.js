@@ -40,6 +40,11 @@ const PAGE_HEAD = {
     en: { title: 'Methodology and source policy | MolekulaX', desc: 'How MolekulaX content is produced and verified: source hierarchy (PubMed, FDA, EMA), machine PMID verification, harm-reduction principles. Educational, not medical advice.' },
     pl: { title: 'Metodologia i polityka źródeł | MolekulaX', desc: 'Jak powstają i są weryfikowane treści MolekulaX: hierarchia źródeł (PubMed, FDA, EMA), maszynowa weryfikacja PMID, zasady redukcji szkód. Edukacyjne, nie porada medyczna.' },
   },
+  privacy: {
+    hu: { title: 'Adatvédelmi tájékoztató | MolekulaX', desc: 'Hogyan kezeli a MolekulaX az adataidat: sütimentes, anonim látogatottság-mérés, nincs felhasználói fiók, nincs személyes adat eladása. GDPR-jogok és kapcsolat.' },
+    en: { title: 'Privacy policy | MolekulaX', desc: 'How MolekulaX handles your data: cookieless, anonymous analytics, no user accounts, no sale of personal data. Your GDPR rights and contact details.' },
+    pl: { title: 'Polityka prywatności | MolekulaX', desc: 'Jak MolekulaX przetwarza Twoje dane: analityka bez ciasteczek i anonimowa, brak kont użytkowników, brak sprzedaży danych osobowych. Twoje prawa RODO i kontakt.' },
+  },
 }
 
 function setMeta(name, content) {

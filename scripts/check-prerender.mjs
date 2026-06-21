@@ -17,6 +17,9 @@ const CHECKS = [
   // It fails if the URL did NOT drive the language (a HU fallback would show "gyomor").
   { path: '/en/peptides/bpc-157', must: 'BPC-157', langMust: 'gastric' },
   { path: '/pl/peptydy/bpc-157', must: 'BPC-157', langMust: 'żołądk' },
+  // Static content pages must also prerender visible content for JS-off crawlers.
+  { path: '/adatvedelem', must: 'Adatvédelmi' },
+  { path: '/en/privacy', must: 'Privacy', langMust: 'cookieless' },
 ]
 const server = http.createServer((req, res) => {
   let file = join(DIST, decodeURIComponent(req.url.split('?')[0]))

@@ -247,6 +247,8 @@ export const UI_HU = {
   "dc.eyebrow": "Fontos tájékoztatás",
   "dc.body": "Ez a weboldal kizárólag edukatív és tájékoztatási céllal jött létre. Nem értékesítünk termékeket, nem nyújtunk orvosi tanácsadást, nem üzemeltetünk csoportot, és nem ösztönzünk illegális szer- vagy gyógyszerhasználatra. Az itt közölt tartalom peer-reviewed tudományos forrásokra épül, azonban nem helyettesíti az orvosi szakvéleményt. Kétség esetén fordulj orvosodhoz.",
   "footer.rights": "© 2026 MolekulaX. Minden jog fenntartva.",
+  "footer.legal.methodology": "Módszertan",
+  "footer.legal.privacy": "Adatvédelem",
   "footer.disclosure": "A »beszerzés« linkek harmadik fél boltjaira mutató, jelölt affiliate-linkek – a MolekulaX nem értékesít és nem vizsgálja a termékminőséget.",
   "footer.notice": "Csak 18+. Edukációs tartalom, nem orvosi tanács. A vegyületek jogi státusza országonként eltér – tájékozódj a helyi szabályozásról.",
   "pe.title": "Élettani hatások",

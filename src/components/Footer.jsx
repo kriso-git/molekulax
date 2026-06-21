@@ -1,6 +1,17 @@
 import { Mail } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
+import { pagePath } from '../seo/urls'
+import { navigate } from '../router/location'
 import TelegramButtons from './TelegramButtons'
+
+// Crawlable internal link (real href so bots follow it + it works JS-off) that also does a
+// smooth in-app SPA nav on a plain left-click; modifier/middle clicks fall through to the
+// browser so "open in new tab" still works.
+function legalNav(e, to) {
+ if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return
+ e.preventDefault()
+ navigate(to)
+}
 
 const TIKTOK_URL = 'https://www.tiktok.com/@moleculextra'
 const EMAIL = 'molekulaxtra@gmail.com'
@@ -14,7 +25,7 @@ function TikTokIcon({ size = 14 }) {
 }
 
 export default function Footer() {
- const { t } = useLang()
+ const { t, lang } = useLang()
  return (
  <footer className="py-12 px-4 mt-8 border-t border-[rgba(129,140,248,0.08)]">
  <div className="max-w-5xl mx-auto flex flex-col items-center gap-6 text-sm">
@@ -38,6 +49,20 @@ export default function Footer() {
  className="inline-flex items-center gap-2 text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-wide text-xs lowercase">
  <Mail size={13} strokeWidth={1.5} />
  {EMAIL}
+ </a>
+ </div>
+
+ <div className="flex flex-wrap items-center justify-center gap-6">
+ <a href={pagePath('methodology', lang)} onClick={(e) => legalNav(e, pagePath('methodology', lang))}
+ className="text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-widest uppercase text-xs">
+ {t('footer.legal.methodology')}
+ </a>
+
+ <span className="w-1 h-1 rounded-full bg-[rgba(129,140,248,0.3)]" />
+
+ <a href={pagePath('privacy', lang)} onClick={(e) => legalNav(e, pagePath('privacy', lang))}
+ className="text-gray-500 hover:text-[#818cf8] transition-colors duration-300 tracking-widest uppercase text-xs">
+ {t('footer.legal.privacy')}
  </a>
  </div>
 

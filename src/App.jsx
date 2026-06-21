@@ -11,6 +11,7 @@ import Footer from './components/Footer'
 import LanguageSwitcher from './components/LanguageSwitcher'
 import EntryDetailRoute from './components/library/EntryDetailRoute'
 import MethodologyPage from './components/MethodologyPage'
+import PrivacyPage from './components/PrivacyPage'
 import { useLocationPath } from './router/location'
 import { parsePath } from './seo/urls'
 import { useDocumentHead } from './seo/useDocumentHead'
@@ -133,6 +134,7 @@ export default function App() {
             )}
             {isEntryDetail && <EntryDetailRoute route={route} />}
             {isPage && route.page === 'methodology' && <MethodologyPage lang={route.lang} />}
+            {isPage && route.page === 'privacy' && <PrivacyPage lang={route.lang} />}
           </div>
         </div>
         </LibraryProvider>

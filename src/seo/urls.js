@@ -28,6 +28,7 @@ for (const [libId, words] of Object.entries(LIB_SLUGS)) {
 // new prerendered static route.
 export const STATIC_PAGES = {
   methodology: { hu: 'modszertan', en: 'methodology', pl: 'metodologia' },
+  privacy:     { hu: 'adatvedelem', en: 'privacy', pl: 'prywatnosc' },
 }
 const SLUG_TO_PAGE = {}
 for (const [key, words] of Object.entries(STATIC_PAGES)) {
