@@ -27,7 +27,7 @@ export default {
   "accentColor": "#ef4444",
   "tagColor": "rgba(239,68,68,0.18)",
   "shortDesc": "NIE STOSUJ. 2,4-dinitrofenol, ryzyko śmiertelnej hipertermii. Kontekst edukacyjny.",
-  "description": "**OSTRZEŻENIE: DNP jest SKRAJNIE NIEBEZPIECZNY, z udokumentowanymi przypadkami śmiertelnej hipertermii. Ta pozycja jest wyłącznie edukacyjna, NIE dostarcza wskazówek użycia.** 2,4-dinitrofenol to chemikalia przemysłowa, krótko sprzedawana jako lek odchudzający w latach 30. XX w. Rozprzęga mitochondrialną fosforylację oksydacyjną. **Ilościowo**: zdrowa mitochondria produkuje 38 ATP/glukozę; na DNP spada do ~10-15 ATP, brakująca energia rozprasza się niekontrolowanie jako ciepło. Wzrost BMR do +50%, ale niekontrolowana hipertermia 41-43°C i śmierć. **Wzorzec użycia u kulturystów (Petróczi 2015 PMID 26092626 inline)**: pre-contest \"magiczna kula\", protokoły online 200-400 mg/dzień zbliżają się lub przekraczają śmiertelny próg 4.3 mg/kg (~300 mg u dorosłego). Większość zgonów u zdrowych mężczyzn 21-32 lat. **Początek śmiertelnej hipertermii**: 41-43°C w 6-12 h po dawce ostrej — pocenie → tachykardia → tachypnea → splątanie → drgawki → niewydolność narządów. NIE MA antidotum.",
+  "description": "**OSTRZEŻENIE: DNP jest SKRAJNIE NIEBEZPIECZNY, z udokumentowanymi przypadkami śmiertelnej hipertermii. Ta pozycja jest wyłącznie edukacyjna, NIE dostarcza wskazówek użycia.** 2,4-dinitrofenol to chemikalia przemysłowa, krótko sprzedawana jako lek odchudzający w latach 30. XX w. Rozprzęga mitochondrialną fosforylację oksydacyjną. **Ilościowo**: zdrowa mitochondria produkuje 38 ATP/glukozę; na DNP spada do ~10-15 ATP, brakująca energia rozprasza się niekontrolowanie jako ciepło. Wzrost BMR do +50%, ale niekontrolowana hipertermia 41-43°C i śmierć. **Wzorzec użycia u kulturystów (Petróczi 2015 PMID 26092626 inline)**: pre-contest \"magiczna kula\", protokoły online 200-400 mg/dzień zbliżają się lub przekraczają śmiertelny próg 4.3 mg/kg (~300 mg u dorosłego). Większość zgonów u zdrowych mężczyzn 21-32 lat. **Początek śmiertelnej hipertermii**: 41-43°C w 6-12 h po dawce ostrej – pocenie → tachykardia → tachypnea → splątanie → drgawki → niewydolność narządów. NIE MA antidotum.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -55,8 +55,8 @@ export default {
     "thyroid hormones",
     "stimulants"
   ],
-  "aromatization": "Nie dotyczy — przemysłowy związek nitroaromatyczny (2,4-dinitrofenol — odsprzęgacz mitochondrialny), NIE steroid",
-  "hepatotoxicity": "Ciężka — toksyczność wielonarządowa; hipertermia (>42°C), rabdomioliza, ostra niewydolność wątroby, MOF; zgony niezależnie od dawki powyżej 600 mg (Grundlingh 2011 PMID 21739343)",
+  "aromatization": "Nie dotyczy – przemysłowy związek nitroaromatyczny (2,4-dinitrofenol – odsprzęgacz mitochondrialny), NIE steroid",
+  "hepatotoxicity": "Ciężka – toksyczność wielonarządowa; hipertermia (>42°C), rabdomioliza, ostra niewydolność wątroby, MOF; zgony niezależnie od dawki powyżej 600 mg (Grundlingh 2011 PMID 21739343)",
   "wadaStatus": "banned",
   "benefits": [
     "BRAK bezpiecznych korzyści."

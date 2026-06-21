@@ -49,16 +49,16 @@ export default function DnaPreview() {
       {/* PREVIEW banner */}
       <div style={{ position: 'fixed', top: 14, left: 16, zIndex: 20, pointerEvents: 'none' }}>
         <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#00ff99', background: 'rgba(0,255,153,0.1)', border: '1px solid rgba(0,255,153,0.35)', borderRadius: 20, padding: '5px 12px' }}>
-          ● Preview — DNS háttér (nem éles)
+          ● Preview – DNS háttér (nem éles)
         </span>
       </div>
 
-      {/* sample content overlay — shows legibility over the animated background */}
+      {/* sample content overlay – shows legibility over the animated background */}
       <div style={{ position: 'relative', zIndex: 10, minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 24px', pointerEvents: 'none' }}>
         <p style={{ color: '#818cf8', fontSize: 13, fontWeight: 600, letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: 14 }}>Tudásbázis</p>
         <h1 style={{ color: '#fff', fontSize: 'clamp(34px, 6vw, 64px)', fontWeight: 800, fontStyle: 'italic', marginBottom: 18 }}>Miért a MolekulaX?</h1>
         <p style={{ color: '#c3c8e0', fontSize: 17, maxWidth: 620, lineHeight: 1.6, marginBottom: 30 }}>
-          Így néz ki egy szövegblokk a 3D DNS háttér felett — ellenőrizd, hogy jól olvasható-e, és hogy a háttér mozgása nem zavaró-e.
+          Így néz ki egy szövegblokk a 3D DNS háttér felett – ellenőrizd, hogy jól olvasható-e, és hogy a háttér mozgása nem zavaró-e.
         </p>
         <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center', maxWidth: 760 }}>
           {['Tudományos farmakológia', 'Klinikai kutatások', 'Tanácsadó elérhetősége'].map((t) => (

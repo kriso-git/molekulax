@@ -27,7 +27,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Nandrolone Decanoate (Deca-Durabolin), 19-nor AAS. Klasyczny \"bulking\" AAS z efektem regeneracji stawów.",
-  "description": "Nandrolone Decanoate to pochodna 19-nor testosteronu, długo działający iniekcyjny AAS. **Warianty estru**: Decanoate (Deca-Durabolin) ~15-dniowy t1/2, depo-styl, 1x tygodniowo, więcej retencji wody; Phenylpropionate (NPP) ~5-dniowy t1/2, szybszy profil on/off, 2x tygodniowo, anegdotycznie mniej retencji. Klinicznie dla anemii i kacheksji. W kulturystyce dla masy i regeneracji stawów (wzrost syntezy kolagenu). Słaba aromatyzacja (~10% vs testosteron), a 5α-reduktaza tworzy dihydronandrolon o tylko ~20% aktywności AR (vs DHT) — **to fizjologiczna podstawa ochrony prostaty, jedna z głównych zalet Nandrolonu vs Testosteron**. \"Deca-dick\" spadek libido (wzrost prolaktyny); \"Deca-blues\" anegdota nastrojowa: przewlekłe 19-nor podejrzewane o przesunięcie dopamina-serotonina (depresyjne objawy u części użytkowników po 3+ miesiącach).",
+  "description": "Nandrolone Decanoate to pochodna 19-nor testosteronu, długo działający iniekcyjny AAS. **Warianty estru**: Decanoate (Deca-Durabolin) ~15-dniowy t1/2, depo-styl, 1x tygodniowo, więcej retencji wody; Phenylpropionate (NPP) ~5-dniowy t1/2, szybszy profil on/off, 2x tygodniowo, anegdotycznie mniej retencji. Klinicznie dla anemii i kacheksji. W kulturystyce dla masy i regeneracji stawów (wzrost syntezy kolagenu). Słaba aromatyzacja (~10% vs testosteron), a 5α-reduktaza tworzy dihydronandrolon o tylko ~20% aktywności AR (vs DHT) – **to fizjologiczna podstawa ochrony prostaty, jedna z głównych zalet Nandrolonu vs Testosteron**. \"Deca-dick\" spadek libido (wzrost prolaktyny); \"Deca-blues\" anegdota nastrojowa: przewlekłe 19-nor podejrzewane o przesunięcie dopamina-serotonina (depresyjne objawy u części użytkowników po 3+ miesiącach).",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -46,7 +46,7 @@ export default {
       "value": "USA: Schedule III. UE: Rx."
     }
   ],
-  "mechanism": "19-nor AAS, bezpośredni agonista AR. Słaba aromatyzacja (~10% vs testosteron). 5α-reduktaza tworzy dihydronandrolon o tylko ~20% aktywności AR (vs DHT) — fizjologicznie chroni prostatę, jedna z głównych zalet farmakologicznych. Wtórnie częściowy agonista receptora progesteronowego (wzrost prolaktyny).",
+  "mechanism": "19-nor AAS, bezpośredni agonista AR. Słaba aromatyzacja (~10% vs testosteron). 5α-reduktaza tworzy dihydronandrolon o tylko ~20% aktywności AR (vs DHT) – fizjologicznie chroni prostatę, jedna z głównych zalet farmakologicznych. Wtórnie częściowy agonista receptora progesteronowego (wzrost prolaktyny).",
   "legalStatus": "USA: Schedule III. UE: Rx. WADA: zakazany.",
   "onsetTime": "2-3 weeks",
   "halfLife": "15 days (decanoate)",
@@ -54,8 +54,8 @@ export default {
     "cabergoline (prolactin)",
     "aromatase inhibitors"
   ],
-  "aromatization": "Minimalna — steroid 19-nor, 5-10% konwersja CYP19 do E2 (vs testosteron); dominuje aktywność progestogenowa (Bhasin-Kanayama 2003)",
-  "hepatotoxicity": "Niska — sterydy macierzysty, NIE 17α-alkilowany; postać iniekcyjna omija first-pass wątrobowy (Pope-Kanayama 2014)",
+  "aromatization": "Minimalna – steroid 19-nor, 5-10% konwersja CYP19 do E2 (vs testosteron); dominuje aktywność progestogenowa (Bhasin-Kanayama 2003)",
+  "hepatotoxicity": "Niska – sterydy macierzysty, NIE 17α-alkilowany; postać iniekcyjna omija first-pass wątrobowy (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "125:37",
   "benefits": [
@@ -173,17 +173,17 @@ export default {
       "aromatization": "low",
       "androgenicRatio": "125:37",
       "legalStatus": "HU/PL/UE: Rx (Deca-Durabolin Organon SmPC, wskazanie: osteoporoza, anemia). USA: Schedule III. Zakazany WADA.",
-      "detectionWindow": "W moczu: 12-18 miesięcy (długoterminowy metabolit Deca 19-norandrosteron, LC-MS/MS akredytowane WADA — NAJDŁUŻSZE okno detekcji wśród AAS).",
+      "detectionWindow": "W moczu: 12-18 miesięcy (długoterminowy metabolit Deca 19-norandrosteron, LC-MS/MS akredytowane WADA – NAJDŁUŻSZE okno detekcji wśród AAS).",
       "quality": {
         "pure": [
           "Organon Deca-Durabolin 50 mg/ml jasno-żółta olejowa ampułka (UE Rx, klasyka od 1962)",
           "UGL Nandrolon Dekanonat 200-300 mg/ml jasno-żółta fiolka olejowa, HPLC-testowane źródło obowiązkowe"
         ],
         "caution": [
-          "Długoterminowa supresja HPTA po 12-16 tygodniach — regeneracja może trwać 6-12 miesięcy",
+          "Długoterminowa supresja HPTA po 12-16 tygodniach – regeneracja może trwać 6-12 miesięcy",
           "Wzrost prolaktyny z powodu powinowactwa do receptora progestagennego (gotowość kabergoliny)",
           "'Deca-dick' utrata libido + ED powszechne (de Souza 2011)",
-          "Długie okno detekcji (12-18 miesięcy) — unikać LATA przed testowaniem sportu wyczynowego"
+          "Długie okno detekcji (12-18 miesięcy) – unikać LATA przed testowaniem sportu wyczynowego"
         ],
         "avoid": [
           "Planowane ojcostwo w bliskim horyzoncie czasowym (regeneracja HPTA 6-12 miesięcy po Deca)",
@@ -249,13 +249,13 @@ export default {
       "quality": {
         "pure": [
           "UGL NPP 100 mg/ml jasno-żółta fiolka olejowa (HPLC-testowane źródło obowiązkowe)",
-          "Niektóre apteki UE Durabolin (regionalne Rx) 25-50 mg/ml — rzadkie"
+          "Niektóre apteki UE Durabolin (regionalne Rx) 25-50 mg/ml – rzadkie"
         ],
         "caution": [
           "EOD lub 2× tygodniowo iniekcja IM wymagana (krótki okres półtrwania)",
           "Wzrost prolaktyny na poziomie Deca (gotowość kabergoliny)",
           "PIP silniejszy na NPP niż Deca (nośnik krótkiego estru gęstszy)",
-          "Okno detekcji długie (10-14 miesięcy) — unikać lata przed sportem wyczynowym"
+          "Okno detekcji długie (10-14 miesięcy) – unikać lata przed sportem wyczynowym"
         ],
         "avoid": [
           "Planowane ojcostwo w bliskim horyzoncie czasowym (regeneracja HPTA 4-8 miesięcy po NPP)",

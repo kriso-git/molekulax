@@ -27,10 +27,10 @@ export default {
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "SGLT2 inhibitor (Jardiance), Boehringer Ingelheim/Eli Lilly. Cardio-reno-protective drug for T2DM + HFrEF/HFpEF + CKD.",
-  "description": "Empagliflozin is a selective SGLT2 inhibitor (sodium-glucose cotransporter 2) that blocks glucose reabsorption in proximal renal tubule, causing 60-90 g/day urinary glucose loss (glycosuria). FDA-approved for T2DM (2014), HFrEF (EMPEROR-Reduced 2020 PMID 32865377), HFpEF (EMPEROR-Preserved 2021 PMID 34449189), and CKD (EMPA-KIDNEY 2023 PMID 36331190). The EMPA-REG OUTCOME trial (Zinman 2015 NEJM PMID 26378978) was the first MACE-positive SGLT2i trial — showed 38% relative cardiovascular mortality reduction in T2DM + ASCVD.",
+  "description": "Empagliflozin is a selective SGLT2 inhibitor (sodium-glucose cotransporter 2) that blocks glucose reabsorption in proximal renal tubule, causing 60-90 g/day urinary glucose loss (glycosuria). FDA-approved for T2DM (2014), HFrEF (EMPEROR-Reduced 2020 PMID 32865377), HFpEF (EMPEROR-Preserved 2021 PMID 34449189), and CKD (EMPA-KIDNEY 2023 PMID 36331190). The EMPA-REG OUTCOME trial (Zinman 2015 NEJM PMID 26378978) was the first MACE-positive SGLT2i trial – showed 38% relative cardiovascular mortality reduction in T2DM + ASCVD.",
   "mechanism": "Selective SGLT2 (sodium-glucose cotransporter 2) inhibition in proximal renal tubule. Result: 60-90 g/day glucose loss in urine, lowering HbA1c by insulin-independent mechanism. Secondary effects: osmotic diuresis (BP reduction), nephron-level effect (intraglomerular pressure drop, CKD-protective), mild ketone elevation (cardio-protective).",
   "legalStatus": "EU/HU: prescription only (Jardiance, Synjardy = Empagliflozin + Metformin). USA: FDA Rx.",
-  "bioavailability": "~78% (oral — FDA Jardiance label, Section 12.3)",
+  "bioavailability": "~78% (oral – FDA Jardiance label, Section 12.3)",
   "onsetTime": "1-2 weeks (BP, HbA1c)",
   "halfLife": "~12.4 h (once-daily dosing)",
   "atcCode": "A10BK03",
@@ -105,5 +105,5 @@ export default {
     "unit": "mg/nap",
     "note": "Standard 10 mg/day morning, up to 25 mg/day for HbA1c target. HFrEF/HFpEF indication fixed at 10 mg/day, no escalation. eGFR < 30: dose reduction or discontinuation. Food-independent."
   },
-  "anecdote": "Community accounts note that Empagliflozin (Jardiance) feels mechanistically distinct from GLP-1 agonists for body composition support — users report reduced water retention with a mild diuretic-like quality. Beyond glycemic control, the drug has FDA-approved cardio-reno-protective indications for HFrEF, HFpEF, and CKD, with evidence suggesting attenuation of structural cardiac remodeling. Anecdotal reports describe off-label use for caloric loss via urinary glucose excretion (roughly 200-300 kcal/day), though in non-diabetic users this can cause low energy and reduced gym performance. Caution: euglycemic DKA risk, increased UTI/genital mycotic infection rates, and volume depletion warrant clinician monitoring."
+  "anecdote": "Community accounts note that Empagliflozin (Jardiance) feels mechanistically distinct from GLP-1 agonists for body composition support – users report reduced water retention with a mild diuretic-like quality. Beyond glycemic control, the drug has FDA-approved cardio-reno-protective indications for HFrEF, HFpEF, and CKD, with evidence suggesting attenuation of structural cardiac remodeling. Anecdotal reports describe off-label use for caloric loss via urinary glucose excretion (roughly 200-300 kcal/day), though in non-diabetic users this can cause low energy and reduced gym performance. Caution: euglycemic DKA risk, increased UTI/genital mycotic infection rates, and volume depletion warrant clinician monitoring."
 }

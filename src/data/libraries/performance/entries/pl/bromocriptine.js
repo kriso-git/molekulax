@@ -1,4 +1,4 @@
-// Bromokryptyna (Parlodel) — pierwszej generacji ergotaminowy agonista D2.
+// Bromokryptyna (Parlodel) – pierwszej generacji ergotaminowy agonista D2.
 // Sandoz 1972 (Parlodel), FDA 1978. Poprzednik kabergoliny, obecnie nisza.
 // Cycloset 2009 FDA wskazanie T2DM.
 // Źródła: FDA Parlodel SmPC, FDA Cycloset SmPC, Webster 1994 PMID 8090165,
@@ -30,7 +30,7 @@ export default {
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
   "shortDesc": "Pierwszej generacji ergotaminowy agonista D2 dopaminy, Sandoz 1972 (Parlodel). Poprzednik kabergoliny; krótszy okres półtrwania (~3-12 h), więcej wegetatywnych skutków ubocznych (nudności, hipotensja). Sprzedawany też jako Cycloset (2009 FDA) na T2DM.",
-  "description": "Bromokryptyna (Parlodel) jest pierwszej generacji agonistą receptora D2 dopaminy o strukturze ergotaminowej, zsyntetyzowanym przez Sandoz (obecnie Novartis) w 1972 roku i zatwierdzonym przez FDA w 1978 roku na hiperprolaktynemię (Parlodel 2,5/5 mg). Ma dłuższą historię kliniczną niż kabergolina, i chociaż w dużej mierze została zastąpiona przez czystszą kabergolinę D2-selektywną, pozostała w arsenale AAS-PCT z trzech powodów: (1) Cena — generyk ~€3/opakowanie (vs kabergolina ~€25-40), szczególnie atrakcyjne na rynkach farmaceutycznych krajów rozwijających się; (2) Fallback nietolerancji kabergoliny (gdy występuje zaburzenie kontroli impulsów lub utrzymujące się nudności na kabergolinie); (3) Drugorzędna aplikacja korzyści metabolicznej — Cycloset (S2 Therapeutics, FDA 2009) jest specjalną formulacją quick-release mezylanu bromokryptyny do poprawy wrażliwości insulinowej w cukrzycy typu 2 (podstawy PMID Cincotta 1991/1996), która może być incydentalnie użyteczna u otyłego cyklera AAS. Profil mechanistyczny: agonista mieszany D1+D2 (vs kabergolina selektywna D2), stąd więcej wegetatywnych skutków ubocznych (nudności, hipotensja ortostatyczna, dyskinezja), krótszy okres półtrwania (~3-12 h, wymagający dawkowania 2-3× dziennie).",
+  "description": "Bromokryptyna (Parlodel) jest pierwszej generacji agonistą receptora D2 dopaminy o strukturze ergotaminowej, zsyntetyzowanym przez Sandoz (obecnie Novartis) w 1972 roku i zatwierdzonym przez FDA w 1978 roku na hiperprolaktynemię (Parlodel 2,5/5 mg). Ma dłuższą historię kliniczną niż kabergolina, i chociaż w dużej mierze została zastąpiona przez czystszą kabergolinę D2-selektywną, pozostała w arsenale AAS-PCT z trzech powodów: (1) Cena – generyk ~€3/opakowanie (vs kabergolina ~€25-40), szczególnie atrakcyjne na rynkach farmaceutycznych krajów rozwijających się; (2) Fallback nietolerancji kabergoliny (gdy występuje zaburzenie kontroli impulsów lub utrzymujące się nudności na kabergolinie); (3) Drugorzędna aplikacja korzyści metabolicznej – Cycloset (S2 Therapeutics, FDA 2009) jest specjalną formulacją quick-release mezylanu bromokryptyny do poprawy wrażliwości insulinowej w cukrzycy typu 2 (podstawy PMID Cincotta 1991/1996), która może być incydentalnie użyteczna u otyłego cyklera AAS. Profil mechanistyczny: agonista mieszany D1+D2 (vs kabergolina selektywna D2), stąd więcej wegetatywnych skutków ubocznych (nudności, hipotensja ortostatyczna, dyskinezja), krótszy okres półtrwania (~3-12 h, wymagający dawkowania 2-3× dziennie).",
   "keyInfo": [
     {"label": "Mechanizm", "value": "Pierwszej generacji ergotaminowy mieszany agonista D1+D2 DA, supresja prolaktyny + drugorzędna poprawa wrażliwości insulinowej T2DM"},
     {"label": "Dawkowanie (AAS prolaktyna)", "value": "1,25-5 mg/dzień podzielone 2-3× (start 1,25 mg z jedzeniem, powolne miareczkowanie)"},
@@ -38,13 +38,13 @@ export default {
     {"label": "Początek działania", "value": "Redukcja prolaktyny 1-2 h, plateau 8-24 h"},
     {"label": "Status prawny", "value": "FDA + EMA Rx, HU + PL zarejestrowany, WADA allowed"}
   ],
-  "mechanism": "Bromokryptyna jest agonistą D2 o strukturze ergotaminowej (D2 Ki ~5 nM, ~10× mniej selektywny dla D1 niż kabergolina). Wiąże się z receptorem D2 na laktotrofach przysadki, hamując wydzielanie prolaktyny. Nieselektywna aktywność D1+D2 powoduje różnicę profilu wegetatywnego: hipotensja ortostatyczna, nudności/wymioty (efekt dopaminergiczny obwodowy), dyskinezja (modulacja dopaminy OUN). Działa również na receptory D2 komórek β trzustki — to podstawa formulacji Cycloset (quick-release dawka 0,8 mg rano) dla cukrzycy typu 2: poranny puls dopaminy poprawia obwodową wrażliwość insulinową (paper mechanistyczny Cincotta 1991). Wątrobowy CYP3A4 metabolizuje, ~30% biodostępność. W kontekście AAS: bromokryptyna może zastąpić kabergolinę w kontroli prolaktyny, ale jest drugorzędną opcją ze względu na więcej skutków ubocznych.",
+  "mechanism": "Bromokryptyna jest agonistą D2 o strukturze ergotaminowej (D2 Ki ~5 nM, ~10× mniej selektywny dla D1 niż kabergolina). Wiąże się z receptorem D2 na laktotrofach przysadki, hamując wydzielanie prolaktyny. Nieselektywna aktywność D1+D2 powoduje różnicę profilu wegetatywnego: hipotensja ortostatyczna, nudności/wymioty (efekt dopaminergiczny obwodowy), dyskinezja (modulacja dopaminy OUN). Działa również na receptory D2 komórek β trzustki – to podstawa formulacji Cycloset (quick-release dawka 0,8 mg rano) dla cukrzycy typu 2: poranny puls dopaminy poprawia obwodową wrażliwość insulinową (paper mechanistyczny Cincotta 1991). Wątrobowy CYP3A4 metabolizuje, ~30% biodostępność. W kontekście AAS: bromokryptyna może zastąpić kabergolinę w kontroli prolaktyny, ale jest drugorzędną opcją ze względu na więcej skutków ubocznych.",
   "legalStatus": "USA: FDA-approved Parlodel 1978 (Sandoz, obecnie Novartis), Cycloset 2009 (S2 Therapeutics, wskazanie T2DM). Wskazania: hiperprolaktynemia, prolaktynoma, adjuvant choroby Parkinsona, akromegalia, T2DM (Cycloset). UE: zatwierdzony przez EMA. HU: zarejestrowany (Parlodel Rx). PL: zarejestrowany (Bromergon, Parlodel Rx). WADA: nie na liście.",
   "onsetTime": "Redukcja prolaktyny 1-2 h, plateau 8-24 h",
   "halfLife": "~3-12 godzin",
   "halfLifeActive": "~3-12 godzin (związek macierzysty aktywny)",
   "interactionsWith": ["cabergoline", "pramipexole", "trenbolone-info", "nandrolone-info"],
-  "aromatization": "Brak — agonista DA.",
+  "aromatization": "Brak – agonista DA.",
   "hepatotoxicity": "Niska hepatyczna; ryzyko cardiac valvulopathy podobne do kabergoliny przy wysokich dawkach; rzadziej udokumentowane w kontekście AAS-PCT.",
   "wadaStatus": "allowed",
   "androgenicRatio": "N/A (nie AAS)",
@@ -75,15 +75,15 @@ export default {
     "pure": [
       "Novartis Parlodel 2,5/5 mg, Rx pharma-grade (apteka UE)",
       "Generyk mezylanu bromokryptyny (Sandoz, Teva, Ratiopharm)",
-      "Cycloset 0,8 mg (S2 Therapeutics, US T2DM Rx) — poranna dawka quick-release",
+      "Cycloset 0,8 mg (S2 Therapeutics, US T2DM Rx) – poranna dawka quick-release",
       "Indyjski generyk (Sun Pharma Bromergon, Cipla)",
       "UGL liquid bromokryptyna: rzadkie, wymagane źródło testowane HPLC"
     ],
     "caution": [
       "Zarządzanie nudnościami: powolne miareczkowanie od 1,25 mg w krokach 3-7 dni, zawsze z jedzeniem",
       "Hipotensja ortostatyczna: wstawać powoli rano, monitor nawodnienia",
-      "Cardiac valvulopathy: chronic wysoka dawka (>30 mg/dzień, protokół Parkinsona) — przy dawce AAS ryzyko jest niskie",
-      "Dyskinezja: rzadka, zależna od dawki — odwracalna po zaprzestaniu",
+      "Cardiac valvulopathy: chronic wysoka dawka (>30 mg/dzień, protokół Parkinsona) – przy dawce AAS ryzyko jest niskie",
+      "Dyskinezja: rzadka, zależna od dawki – odwracalna po zaprzestaniu",
       "Nie można łączyć z lekami przeciwpsychotycznymi (nakładanie antagonizmu D2)",
       "Ciąża / karmienie piersią"
     ],
@@ -108,20 +108,20 @@ export default {
     {"title": "Impact of menopause on outcomes in prolactinomas after dopamine agonist treatment withdrawal.", "authors": "Santharam S, Fountas A, Tampourlou M", "journal": "Clin Endocrinol (Oxf)", "pmid": "29894000"},
     {"title": "Evidence-based practice use of quick-release bromocriptine across the natural history of type 2 diabetes mellitus.", "authors": "Schwartz SS, Zangeneh F", "journal": "Postgrad Med", "pmid": "27458683"},
     {"title": "Bromocriptine in type 2 diabetes: a promising alternative, a systematic review and meta-analysis.", "authors": "Dara T, Zabihi M, Hoseinzade F", "journal": "Cardiovasc Diabetol Endocrinol Rep", "pmid": "41013660"},
-    {"title": "Bromocriptine for diabetes — randomized controlled trial", "authors": "Pijl H, Ohashi S, Matsuda M, et al.", "journal": "Diabetes Care. 2000;23(8):1154-1161.", "pmid": "10937514"}
+    {"title": "Bromocriptine for diabetes – randomized controlled trial", "authors": "Pijl H, Ohashi S, Matsuda M, et al.", "journal": "Diabetes Care. 2000;23(8):1154-1161.", "pmid": "10937514"}
   ],
   "faq": [
-    {"q": "Bromokryptyna vs kabergolina — kiedy pierwszorzędna?", "a": "Kabergolina jest domyślnym pierwszorzędnym wyborem (90% użytkowników AAS-PCT). Bromokryptyna jest pierwszorzędna w 3 sytuacjach niszowych: (1) Ekonomia rynków rozwijających się — bromokryptyna ~€3/opakowanie vs kabergolina ~€25-40, droższa kabergolina w aptekach na Węgrzech/w Polsce; (2) Nietolerancja kabergoliny — jeśli zaburzenie kontroli impulsów lub utrzymujące się nudności na kabergolinie, fallback bromokryptyną; (3) Aplikacja Cycloset T2DM — otyły cykler AAS (BMI >30, prediabetes HbA1c 5,7-6,4%), Cycloset 0,8 mg poranny quick-release dla poprawy wrażliwości insulinowej jako korzyść uboczna obok kontroli prolaktyny. U użytkowników bez doświadczenia z kabergoliną NIE bromokryptyna — kabergolina lepiej tolerowana."},
-    {"q": "Zarządzanie nudnościami?", "a": "Skutek uboczny #1 bromokryptyny. Strategia łagodzenia: (1) Powolne miareczkowanie OBOWIĄZKOWE — 1,25 mg/wieczór (przed snem) × 3-7 dni, potem 1,25 mg 2×/dzień × 3-7 dni, potem 2,5 mg 2×/dzień × 7 dni, potem dawka docelowa; (2) MUSI z jedzeniem (nigdy pusty żołądek); (3) Pierwsze dawkowanie wieczorem (przespanie szczytu nudności); (4) Antiemetyk (metoclopramid NIE jest dobry — konflikt antagonisty D2 z mechanizmem bromokryptyny!), preferuj ondansetron 4 mg PRN. Jeśli nudności utrzymują się po 2 tygodniach → zmiana na kabergolinę."},
-    {"q": "Aplikacja Cycloset T2DM — korzyść metaboliczna AAS?", "a": "Cycloset (mezylan bromokryptyny quick-release 0,8 mg rano) w trialach Pijl 2000 (PMID 10937514) i Cincotta 1996 (PMID 8725867) udokumentował redukcję HbA1c 0,5-1,0% jako terapia adjuwantowa do metforminy u pacjentów z cukrzycą typu 2. Mechanizm: poranny puls dopaminy poprawia obwodową (tłuszcz + wątroba) wrażliwość insulinową. AAS context off-label: otyły cykler AAS (BMI >30, nietolerancja glukozy po stack GH/Insulin) może zastosować jako korzyść uboczną. NIE zastępuje metforminy/inhibitora SGLT2. Kabergolina NIE ma tej aplikacji T2DM (inny mechanizm z powodu selektywności D2)."},
-    {"q": "Korzyść seksualna podobna do kabergoliny?", "a": "Tak, ale na niższej magnitudzie. Skrócenie okresu refrakcji post-orgazmicznej w stylu Krüger 2003 jest silniej udokumentowane na kabergolinie (z powodu selektywności D2). Na bromokryptynie korzyść seksualna jest mniejsza, a profil skutków ubocznych (nudności, hipotensja) może pogorszyć jakość życia seksualnego — net effect mieszany. Jeśli akcent seksualny jest celem, kabergolina > bromokryptyna."}
+    {"q": "Bromokryptyna vs kabergolina – kiedy pierwszorzędna?", "a": "Kabergolina jest domyślnym pierwszorzędnym wyborem (90% użytkowników AAS-PCT). Bromokryptyna jest pierwszorzędna w 3 sytuacjach niszowych: (1) Ekonomia rynków rozwijających się – bromokryptyna ~€3/opakowanie vs kabergolina ~€25-40, droższa kabergolina w aptekach na Węgrzech/w Polsce; (2) Nietolerancja kabergoliny – jeśli zaburzenie kontroli impulsów lub utrzymujące się nudności na kabergolinie, fallback bromokryptyną; (3) Aplikacja Cycloset T2DM – otyły cykler AAS (BMI >30, prediabetes HbA1c 5,7-6,4%), Cycloset 0,8 mg poranny quick-release dla poprawy wrażliwości insulinowej jako korzyść uboczna obok kontroli prolaktyny. U użytkowników bez doświadczenia z kabergoliną NIE bromokryptyna – kabergolina lepiej tolerowana."},
+    {"q": "Zarządzanie nudnościami?", "a": "Skutek uboczny #1 bromokryptyny. Strategia łagodzenia: (1) Powolne miareczkowanie OBOWIĄZKOWE – 1,25 mg/wieczór (przed snem) × 3-7 dni, potem 1,25 mg 2×/dzień × 3-7 dni, potem 2,5 mg 2×/dzień × 7 dni, potem dawka docelowa; (2) MUSI z jedzeniem (nigdy pusty żołądek); (3) Pierwsze dawkowanie wieczorem (przespanie szczytu nudności); (4) Antiemetyk (metoclopramid NIE jest dobry – konflikt antagonisty D2 z mechanizmem bromokryptyny!), preferuj ondansetron 4 mg PRN. Jeśli nudności utrzymują się po 2 tygodniach → zmiana na kabergolinę."},
+    {"q": "Aplikacja Cycloset T2DM – korzyść metaboliczna AAS?", "a": "Cycloset (mezylan bromokryptyny quick-release 0,8 mg rano) w trialach Pijl 2000 (PMID 10937514) i Cincotta 1996 (PMID 8725867) udokumentował redukcję HbA1c 0,5-1,0% jako terapia adjuwantowa do metforminy u pacjentów z cukrzycą typu 2. Mechanizm: poranny puls dopaminy poprawia obwodową (tłuszcz + wątroba) wrażliwość insulinową. AAS context off-label: otyły cykler AAS (BMI >30, nietolerancja glukozy po stack GH/Insulin) może zastosować jako korzyść uboczną. NIE zastępuje metforminy/inhibitora SGLT2. Kabergolina NIE ma tej aplikacji T2DM (inny mechanizm z powodu selektywności D2)."},
+    {"q": "Korzyść seksualna podobna do kabergoliny?", "a": "Tak, ale na niższej magnitudzie. Skrócenie okresu refrakcji post-orgazmicznej w stylu Krüger 2003 jest silniej udokumentowane na kabergolinie (z powodu selektywności D2). Na bromokryptynie korzyść seksualna jest mniejsza, a profil skutków ubocznych (nudności, hipotensja) może pogorszyć jakość życia seksualnego – net effect mieszany. Jeśli akcent seksualny jest celem, kabergolina > bromokryptyna."}
   ],
   "related": ["cabergoline", "pramipexole", "trenbolone-info", "nandrolone-info"],
   "doseCalc": {
     "type": "fixed",
     "fixed": {"low": 1.25, "medium": 2.5, "high": 5},
     "unit": "mg / dzień podzielone 2-3× (doustnie, z jedzeniem)",
-    "note": "Standardowa kontrola prolaktyny w AAS: 2,5-5 mg/dzień podzielone 2-3×. Powolne miareczkowanie OBOWIĄZKOWE od 1,25 mg (zarządzanie nudnościami). Aplikacja Cycloset T2DM: 0,8 mg poranny quick-release. Drugorzędna do kabergoliny — pierwszy wybór tylko w przypadku nietolerancji/akcent kosztów/przypadek Cycloset."
+    "note": "Standardowa kontrola prolaktyny w AAS: 2,5-5 mg/dzień podzielone 2-3×. Powolne miareczkowanie OBOWIĄZKOWE od 1,25 mg (zarządzanie nudnościami). Aplikacja Cycloset T2DM: 0,8 mg poranny quick-release. Drugorzędna do kabergoliny – pierwszy wybór tylko w przypadku nietolerancji/akcent kosztów/przypadek Cycloset."
   },
   "bloodwork": {
     "preCycle": {

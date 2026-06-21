@@ -1,7 +1,7 @@
 import { ArrowRight, Tag } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
 
-// "Beszerzés" — partner sourcing section (under Education). Affiliate links with
+// "Beszerzés" – partner sourcing section (under Education). Affiliate links with
 // coupons. Indigo/purple accent (green is reserved for chemistry content).
 // URLs are constants; copy comes from besz.* i18n keys. This section replaced the
 // old top-left floating PCTZONE coupon pill.
@@ -25,7 +25,7 @@ const PARTNERS = [
     ctaKey: 'besz.pctzone.cta',
   },
   {
-    // Driada has NO referral link in the URL — the discount only applies if the
+    // Driada has NO referral link in the URL – the discount only applies if the
     // visitor enters the MOLEKULAX coupon at checkout (emphasised in besz.driada.coupon).
     id: 'driada',
     name: 'DRIADA SHOP',
@@ -60,7 +60,7 @@ export default function Sourcing() {
                 rel="noopener noreferrer sponsored"
                 className={`group flex flex-row items-center gap-5 p-7 rounded-2xl glass no-underline hover:border-[rgba(129,140,248,0.3)] hover:bg-[rgba(99,102,241,0.07)] transition-all duration-300${isLoneLast ? ' md:col-span-2 md:w-[calc(50%-12px)] md:mx-auto' : ''}`}
               >
-                {/* Text column — flex-1 + min-w-0 so long coupon labels never push
+                {/* Text column – flex-1 + min-w-0 so long coupon labels never push
                     into the logo column. */}
                 <div className="flex flex-col flex-1 min-w-0">
                   <h3 className="text-xl font-extrabold tracking-wide text-white">{p.name}</h3>
@@ -87,7 +87,7 @@ export default function Sourcing() {
                   </span>
                 </div>
 
-                {/* Logo column — small, fixed-width and isolated. The fixed width +
+                {/* Logo column – small, fixed-width and isolated. The fixed width +
                     max-w-full keep the logo inside its own column so it can never
                     overlap the text/coupon (the previous overflow bug). */}
                 <div className="shrink-0 flex items-center justify-center w-[72px] sm:w-[84px]">

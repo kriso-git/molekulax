@@ -1,10 +1,10 @@
-// Phase C — Multi-variant route toggle. Mounted in EntryDetail's Hero section
+// Phase C – Multi-variant route toggle. Mounted in EntryDetail's Hero section
 // when the entry has 2+ variants (administration routes). Clicks `navigate`
 // (replace) to the variant path `/<lib-slug>/<id>/<routeId>` so the App
 // re-parses the active variant without history pollution.
 //
 // Visual: Indigo segmented-control, theme-aware via var(--tint-*) overlays
-// (avoids the Light-Mode-Inline-Rgba-Trap — see [[Light_Mode_Inline_Rgba_Trap]]).
+// (avoids the Light-Mode-Inline-Rgba-Trap – see [[Light_Mode_Inline_Rgba_Trap]]).
 // a11y: role="tablist" container, role="tab" buttons, aria-selected; keyboard
 // left/right cycle, plus an aria-live announce for screen readers.
 

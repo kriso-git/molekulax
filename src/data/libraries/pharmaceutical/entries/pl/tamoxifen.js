@@ -27,9 +27,9 @@ export default {
   "tagColor": "rgba(236,72,153,0.18)",
   "shortDesc": "Selektywny modulator receptora estrogenowego (SERM). Leczenie uzupełniające i przerzutowe HR-dodatniego raka piersi (Nolvadex).",
   "description": "Tamoksyfen to pierwszy klinicznie znaczący SERM, opracowany przez AstraZeneca (Nolvadex, FDA 1977). W leczeniu uzupełniającym ER+ raka piersi z protokołem 5-10-letnim zmniejsza ryzyko nawrotu o 50% (EBCTCG 2011 Lancet PMID 21684593). U kobiet przedmenopauzalnych inhibitory aromatazy (anastrozol, letrozol) nieskuteczne, więc tamoksyfen jest pierwszą linią SERM. Profil działań: zakrzepica (DVT, PE 2-3x wzrost), ryzyko raka endometrium (~2x), objawy menopauzopodobne. Prewencja DCIS i pierwotna wysokiego ryzyka zatwierdzona FDA (NSABP-P1).",
-  "mechanism": "Tkanowo-specyficzna modulacja: ANTAGONISTA w piersi, CZĘŚCIOWY AGONISTA w kościach + endometrium + wątrobie. Aktywne metabolity (4-hydroksytamoksyfen, endoksyfen) zależne od CYP2D6 — słabi metabolizatorzy mają zmniejszoną skuteczność.",
+  "mechanism": "Tkanowo-specyficzna modulacja: ANTAGONISTA w piersi, CZĘŚCIOWY AGONISTA w kościach + endometrium + wątrobie. Aktywne metabolity (4-hydroksytamoksyfen, endoksyfen) zależne od CYP2D6 – słabi metabolizatorzy mają zmniejszoną skuteczność.",
   "legalStatus": "UE/PL: na receptę (Nolvadex, Tamoxen, generyki). USA: FDA Rx.",
-  "bioavailability": "~100% (doustnie, \"dobrze wchłaniany\", Tmax ~5 h — etykieta FDA Soltamox/Nolvadex)",
+  "bioavailability": "~100% (doustnie, \"dobrze wchłaniany\", Tmax ~5 h – etykieta FDA Soltamox/Nolvadex)",
   "onsetTime": "Klinikai válasz hónapok-évek (adjuváns)",
   "halfLife": "~7 days (parent); 14 days (4-hydroxytamoxifen)",
   "atcCode": "L02BA01",
@@ -57,7 +57,7 @@ export default {
     "Poor CYP2D6 metabolizers have reduced efficacy"
   ],
   "crossMolInteractions": [
-    "SILNE inhibitory CYP2D6 (fluoksetyna, paroksetyna, bupropion): zmniejszone tworzenie endoksyfenu, POGORSZA skuteczność — unikać, alternatywy (wenlafaksyna, citalopram)",
+    "SILNE inhibitory CYP2D6 (fluoksetyna, paroksetyna, bupropion): zmniejszone tworzenie endoksyfenu, POGORSZA skuteczność – unikać, alternatywy (wenlafaksyna, citalopram)",
     "Warfaryna: wzrost INR, monitor",
     "Substytucja hormonalna (HRT) estrogen: unikać (konflikt mechanistyczny)"
   ],
@@ -91,5 +91,5 @@ export default {
     "type": "warning",
     "warning": "Tamoksyfen to filar HORMONALNEJ TERAPII ONKOLOGICZNEJ w ER+ raku piersi. NADZÓR SPECJALISTY (ONKOLOGA) OBOWIĄZKOWY. BRAK KALKULATORA DAWEK na tej stronie, ponieważ: (1) dawka (20 mg/dzień) i czas trwania (5-10 lat) to decyzje protokołu onkologicznego, specyficzne dla pacjenta; (2) ryzyko VTE (DVT/PE) i RAKA ENDOMETRIUM wymaga rzeczywistego monitorowania; (3) status genetyczny CYP2D6 znacząco wpływa na skuteczność; (4) SILNE inhibitory CYP2D6 (fluoksetyna, paroksetyna, bupropion) PRZECIWWSKAZANE. Porozmawiaj z onkologiem. Objawy nagłe (jednostronny obrzęk nogi, duszność-ból klatki, krwawienie pochwowe): NATYCHMIASTOWA opieka."
   },
-  "anecdote": "Nolvadex (Tamoksyfen) i Raloksyfen są anegdotycznie dwoma najbardziej niezawodnymi związkami do zapobiegania ginekomastii, ponieważ tamoksyfen bezpośrednio blokuje estrogen na poziomie receptora selektywnie w tkance piersi — wysoce ukierunkowany mechanizm. W przeciwieństwie do Arimidexu, nie jest inhibitorem aromatazy, więc korzyści są ukierunkowane na receptor, a nie ogólnoustrojowe. Jest powszechnie stosowany w protokołach PCT, ponieważ bardziej bezpośrednio stymuluje LH/FSH, co może być przydatne do regeneracji HPTA. Zgłaszane skutki uboczne obejmują łagodne wahania nastroju, rzadkie zaburzenia widzenia i długoterminowe ryzyko zakrzepów krwi — choć większość raportów o zakrzepach pochodzi od kobiet po menopauzie stosujących go do profilaktyki raka piersi, więc zastosowanie do użytkowników AAS jest mniej jasne. Ogólnie doniesienia społeczności uznają Nolvadex za solidne narzędzie do blokowania estrogenu w tkance piersi i silną opcję zapobiegania ginekomastii. Podawany doustnie, dawkowanie zwykle strukturyzowane w cyklach wielotygodniowych, szczególnie podczas PCT."
+  "anecdote": "Nolvadex (Tamoksyfen) i Raloksyfen są anegdotycznie dwoma najbardziej niezawodnymi związkami do zapobiegania ginekomastii, ponieważ tamoksyfen bezpośrednio blokuje estrogen na poziomie receptora selektywnie w tkance piersi – wysoce ukierunkowany mechanizm. W przeciwieństwie do Arimidexu, nie jest inhibitorem aromatazy, więc korzyści są ukierunkowane na receptor, a nie ogólnoustrojowe. Jest powszechnie stosowany w protokołach PCT, ponieważ bardziej bezpośrednio stymuluje LH/FSH, co może być przydatne do regeneracji HPTA. Zgłaszane skutki uboczne obejmują łagodne wahania nastroju, rzadkie zaburzenia widzenia i długoterminowe ryzyko zakrzepów krwi – choć większość raportów o zakrzepach pochodzi od kobiet po menopauzie stosujących go do profilaktyki raka piersi, więc zastosowanie do użytkowników AAS jest mniej jasne. Ogólnie doniesienia społeczności uznają Nolvadex za solidne narzędzie do blokowania estrogenu w tkance piersi i silną opcję zapobiegania ginekomastii. Podawany doustnie, dawkowanie zwykle strukturyzowane w cyklach wielotygodniowych, szczególnie podczas PCT."
 }

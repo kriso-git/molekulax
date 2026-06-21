@@ -138,7 +138,7 @@ export default {
     },
     {
       "q": "Miért javasolt L-Tyrosine-nal kombinálni?",
-      "a": "A Bromantane a tirozin-hidroxiláz (TH) expression-jét növeli, ami az L-tirozin → L-DOPA → dopamin konverzió sebesség-meghatározó enzime. L-tirozin co-administration (500-1000 mg) biztosítja a raw substrate-ot, hogy a fokozott enzimaktivitásnak legyen miből dolgoznia — anélkül a TH-upregulation hatás limitált marad."
+      "a": "A Bromantane a tirozin-hidroxiláz (TH) expression-jét növeli, ami az L-tirozin → L-DOPA → dopamin konverzió sebesség-meghatározó enzime. L-tirozin co-administration (500-1000 mg) biztosítja a raw substrate-ot, hogy a fokozott enzimaktivitásnak legyen miből dolgoznia – anélkül a TH-upregulation hatás limitált marad."
     }
   ],
   "related": [

@@ -29,7 +29,7 @@ export default {
   "description": "A Fluoxetine az SSRI-osztály úttörője (Eli Lilly Prozac, FDA 1987), az első klinikailag sikeres szerotonin-szelektív gyógyszer. Ultra-hosszú farmakokinetikája (parent 4-6 nap, aktív metabolit norfluoxetin 4-16 nap) miatt steady-state lassan alakul ki (4-5 hét), de a discontinuation-syndrom is enyhébb (a hosszú \"auto-taper\" miatt). Az EGYETLEN SSRI, ami FDA-jóváhagyással rendelkezik PEDIÁTRIAI MDD-re (8 év fölött), valamint OCD-re és bulimia nervosa-ra. A Stark 2003 (PMID 14692046) trial dokumentálta a pediátriai MDD hatékonyságát. Generikus, megfizethető. Erős CYP2D6-inhibítor, ami klinikailag jelentős interakciókat okoz.",
   "mechanism": "SERT szelektív gátlása. Mérsékelt 5-HT2C antagonizmus (ami az enyhe stimuláló-hangulati effekthez járulhat). A NORFLUOXETIN metabolit hasonlóan aktív és farmakológiailag identikus.",
   "legalStatus": "EU/HU: vényköteles (Prozac, Fluctin, Floxet, generikus). USA: FDA Rx.",
-  "bioavailability": "Abszolút értékben nem karakterizált (IV formula nincs); 60-80% relatív orális szuszpenzióhoz — FDA Prozac label",
+  "bioavailability": "Abszolút értékben nem karakterizált (IV formula nincs); 60-80% relatív orális szuszpenzióhoz – FDA Prozac label",
   "onsetTime": "4-6 weeks (full antidepressant response)",
   "halfLife": "4-6 days (parent); norfluoxetine 4-16 days",
   "atcCode": "N06AB03",
@@ -41,7 +41,7 @@ export default {
     "Pánikbetegség, PMDD (Sarafem branding)"
   ],
   "contraindications": [
-    "MAOi 14 napon belül (vagy 5 hét Fluoxetine elhagyás után — hosszú felezési idő miatt)",
+    "MAOi 14 napon belül (vagy 5 hét Fluoxetine elhagyás után – hosszú felezési idő miatt)",
     "Pimozide, Thioridazine egyidejű"
   ],
   "commonSideEffects": [
@@ -113,5 +113,5 @@ export default {
     "unit": "mg/nap",
     "note": "REGGEL bevenni (aktiváló profil, inszomnia mitigálására). MDD cél-dózis 20 mg/nap, OCD/bulimia 40-60 mg/nap. Ultra-hosszú felezési idő miatt steady-state 4-5 hét, és elhagyásnál ~5 hét auto-taper."
   },
-  "anecdote": "Anekdotikus beszámolók szerint a Fluoxetin (Prozac) az egyik legjobban tolerálható, hosszan ható SSRI, könnyebb, energizálóbb szubjektív profillal a szedatív alternatívákhoz képest. Ultra-hosszú felezési ideje (4-6 nap az aktív metabolitokra) megbocsátó a kihagyott adagokkal szemben, ezért gyakori Rx-választás az idős, gyógyszerkihagyásra hajlamos pácienseknél. Gyakori korai kezelési kompromisszumok közé tartozik az aktiváció, álmatlanság, érzelmi tompultság és az SSRI-osztály szexuális mellékhatásai. Közösségi beszámolók szerint prokognitív tulajdonságokkal rendelkezik — preklinikai és klinikai jelentések hosszú távú memória, végrehajtó funkció, figyelem és impulzivitás javulását mutatják, erősebb hatással neurodegeneratív kontextusokban. Figyelem: a megvonási szindróma enyhébb, mint a rövidebb hatású SSRI-knél az önelvonó hatás miatt, de MAOi-val való kombináció szigorúan ellenjavallt (szerotoninszindróma kockázata)."
+  "anecdote": "Anekdotikus beszámolók szerint a Fluoxetin (Prozac) az egyik legjobban tolerálható, hosszan ható SSRI, könnyebb, energizálóbb szubjektív profillal a szedatív alternatívákhoz képest. Ultra-hosszú felezési ideje (4-6 nap az aktív metabolitokra) megbocsátó a kihagyott adagokkal szemben, ezért gyakori Rx-választás az idős, gyógyszerkihagyásra hajlamos pácienseknél. Gyakori korai kezelési kompromisszumok közé tartozik az aktiváció, álmatlanság, érzelmi tompultság és az SSRI-osztály szexuális mellékhatásai. Közösségi beszámolók szerint prokognitív tulajdonságokkal rendelkezik – preklinikai és klinikai jelentések hosszú távú memória, végrehajtó funkció, figyelem és impulzivitás javulását mutatják, erősebb hatással neurodegeneratív kontextusokban. Figyelem: a megvonási szindróma enyhébb, mint a rövidebb hatású SSRI-knél az önelvonó hatás miatt, de MAOi-val való kombináció szigorúan ellenjavallt (szerotoninszindróma kockázata)."
 }

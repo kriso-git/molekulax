@@ -25,11 +25,11 @@ export default {
   "image": "/pharmaceutical/softgel-orange.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
-  "shortDesc": "13-cis-retinoic acid (Roche Roaccutane). Gold standard for severe nodulocystic acne. FDA category X due to severe teratogenicity — iPLEDGE program mandatory.",
-  "description": "Isotretinoin (Roche Roaccutane / Accutane, FDA 1982) is the gold-standard treatment for severe nodulocystic acne. 13-cis-retinoic acid (vitamin A metabolite) causes sebaceous gland atrophy, sebum production reduction, and P. acnes growth inhibition. EXTREME TERATOGENICITY (FDA category X) — every female patient must enroll in pregnancy prevention program (USA: iPLEDGE, EU: similar national programs). 2 negative pregnancy tests before start, 2 forms contraception mandatory, monthly testing. Layton 2009 (PMID 20436884) 6-month course produces sustained remission in ~80% of cases. Side effect profile SIGNIFICANT: dryness (mouth, eye, skin, lip), muscle pain, liver function disturbance, depression risk.",
+  "shortDesc": "13-cis-retinoic acid (Roche Roaccutane). Gold standard for severe nodulocystic acne. FDA category X due to severe teratogenicity – iPLEDGE program mandatory.",
+  "description": "Isotretinoin (Roche Roaccutane / Accutane, FDA 1982) is the gold-standard treatment for severe nodulocystic acne. 13-cis-retinoic acid (vitamin A metabolite) causes sebaceous gland atrophy, sebum production reduction, and P. acnes growth inhibition. EXTREME TERATOGENICITY (FDA category X) – every female patient must enroll in pregnancy prevention program (USA: iPLEDGE, EU: similar national programs). 2 negative pregnancy tests before start, 2 forms contraception mandatory, monthly testing. Layton 2009 (PMID 20436884) 6-month course produces sustained remission in ~80% of cases. Side effect profile SIGNIFICANT: dryness (mouth, eye, skin, lip), muscle pain, liver function disturbance, depression risk.",
   "mechanism": "Retinoid receptor (RAR) partial agonist. Sebaceous gland atrophy, ~80% sebum production reduction, P. acnes population decrease, normalization of follicular hyperkeratinization. Multimodal anti-acne effect.",
   "legalStatus": "EU/HU: prescription only, dermatologist-strictly-supervised protocol (Roaccutane). USA: FDA Rx iPLEDGE program.",
-  "bioavailability": "~25% (oral, fasted; >2× higher with high-fat meal — FDA Accutane label)",
+  "bioavailability": "~25% (oral, fasted; >2× higher with high-fat meal – FDA Accutane label)",
   "onsetTime": "4-8 weeks (initial improvement), 4-6 months (full course)",
   "halfLife": "~21 h (parent), 24 h (active 4-oxo-isotretinoin)",
   "atcCode": "D10BA01",
@@ -40,7 +40,7 @@ export default {
     "Off-label: severe rosacea, hidradenitis suppurativa"
   ],
   "contraindications": [
-    "PREGNANCY (FDA category X — severe craniofacial, CV, CNS malformations)",
+    "PREGNANCY (FDA category X – severe craniofacial, CV, CNS malformations)",
     "Childbearing age without contraception",
     "Hypervitaminosis A, severe hepatic disease"
   ],
@@ -48,14 +48,14 @@ export default {
     "Cheilitis (lip dryness, 90%), skin dryness, xerophthalmia (eye), epistaxis (nosebleed)",
     "Triglyceride and cholesterol elevation",
     "Muscle pain, back pain, ALT/AST elevation",
-    "Severe: SEVERE TERATOGENICITY (X), psychiatric symptoms (depression, suicidality — FDA warning), pseudotumor cerebri, IBD (debate), retinoid acid syndrome"
+    "Severe: SEVERE TERATOGENICITY (X), psychiatric symptoms (depression, suicidality – FDA warning), pseudotumor cerebri, IBD (debate), retinoid acid syndrome"
   ],
   "cyp450": [
     "CYP2C9, CYP2C8, CYP3A4 (multiple)",
     "Photo-degradation"
   ],
   "crossMolInteractions": [
-    "Tetracycline (doxycycline, tetracycline): SEVERE pseudotumor cerebri risk — FORBIDDEN",
+    "Tetracycline (doxycycline, tetracycline): SEVERE pseudotumor cerebri risk – FORBIDDEN",
     "Vitamin A (multivitamin): hypervitaminosis additivity, avoid",
     "Alcohol: hepatotoxicity + triglyceride additivity, moderation",
     "High-dose corticosteroids: bone mineralization disturbance"
@@ -92,7 +92,7 @@ export default {
   ],
   "doseCalc": {
     "type": "warning",
-    "warning": "Isotretinoin is the GOLD STANDARD for SEVERE ACNE, but STRICTLY UNDER DERMATOLOGIST SUPERVISION with pregnancy-prevention protocol (USA: iPLEDGE, EU: national programs). NO STANDALONE DOSE CALCULATOR on this page because: (1) FDA X TERATOGENICITY — a single missed contraception or lab check can lead to severe fetal malformation; (2) cumulative dose (120-150 mg/kg body weight/course) is body-weight-individual, dermatologist-calculated; (3) MONTHLY CBC, liver function + LIPID monitor MANDATORY; (4) Tetracycline COMBINATION FORBIDDEN (pseudotumor cerebri); (5) Psychiatric symptoms (depression-suicidality) FDA warning. Talk to your dermatologist. Emergency symptoms (vision change, persistent headache, mood depression, blood in stool, pregnancy suspicion): IMMEDIATE care."
+    "warning": "Isotretinoin is the GOLD STANDARD for SEVERE ACNE, but STRICTLY UNDER DERMATOLOGIST SUPERVISION with pregnancy-prevention protocol (USA: iPLEDGE, EU: national programs). NO STANDALONE DOSE CALCULATOR on this page because: (1) FDA X TERATOGENICITY – a single missed contraception or lab check can lead to severe fetal malformation; (2) cumulative dose (120-150 mg/kg body weight/course) is body-weight-individual, dermatologist-calculated; (3) MONTHLY CBC, liver function + LIPID monitor MANDATORY; (4) Tetracycline COMBINATION FORBIDDEN (pseudotumor cerebri); (5) Psychiatric symptoms (depression-suicidality) FDA warning. Talk to your dermatologist. Emergency symptoms (vision change, persistent headache, mood depression, blood in stool, pregnancy suspicion): IMMEDIATE care."
   },
-  "anecdote": "Anecdotal reports describe Isotretinoin (Accutane) as a systemic treatment rather than a topical skin drug, with effects that extend beyond acne clearance. Users frequently note increased skin elasticity, with some reporting fuller-appearing facial features (nose, lips) during and after a course — highly subject-dependent. Long-term acne remission is a notable outcome reported by many. Mood-related side effects remain debated; evidence is mixed but warrants screening. Clinical context: lipid panel and LFT monitoring are mandatory, and FDA category X teratogenicity requires iPLEDGE enrollment for female patients with strict pregnancy-prevention protocols."
+  "anecdote": "Anecdotal reports describe Isotretinoin (Accutane) as a systemic treatment rather than a topical skin drug, with effects that extend beyond acne clearance. Users frequently note increased skin elasticity, with some reporting fuller-appearing facial features (nose, lips) during and after a course – highly subject-dependent. Long-term acne remission is a notable outcome reported by many. Mood-related side effects remain debated; evidence is mixed but warrants screening. Clinical context: lipid panel and LFT monitoring are mandatory, and FDA category X teratogenicity requires iPLEDGE enrollment for female patients with strict pregnancy-prevention protocols."
 }

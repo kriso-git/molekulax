@@ -1,10 +1,10 @@
 // Per-entry dose helper for performance library entries.
 //
 // Renders one of four UI variants depending on entry.doseCalc.type:
-//   'bodyweight' — body-weight slider + 3 dose-level chips, computed mg/mcg/IU output
-//   'fixed'      — 3 dose-level chips, fixed mg/mcg/IU output (no slider)
-//   'titration'  — read-only titration table (e.g. Clenbuterol weekly ramp)
-//   'warning'    — no-dose card (e.g. DNP) with explicit "do not use" message
+//   'bodyweight' – body-weight slider + 3 dose-level chips, computed mg/mcg/IU output
+//   'fixed'      – 3 dose-level chips, fixed mg/mcg/IU output (no slider)
+//   'titration'  – read-only titration table (e.g. Clenbuterol weekly ramp)
+//   'warning'    – no-dose card (e.g. DNP) with explicit "do not use" message
 //
 // All UI strings come from i18n; per-entry note + warning live in doseCalc.
 

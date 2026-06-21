@@ -8,7 +8,7 @@ import { entryPath } from '../../seo/urls'
  * Renders multi-peptide stack composition as clickable component cards.
  * Each card deep-links to the component entry (#entry/peptides/<id>).
  *
- * `composition` is null when the entry is not a stack — return null.
+ * `composition` is null when the entry is not a stack – return null.
  * Each composition item is {id, role, typicalDose} where id MUST reference
  * an entry in the same library's LIBRARY_ENTRY_META (validator-enforced).
  */

@@ -16,12 +16,12 @@ export default {
   "composition": [
     {
       "id": "cjc-1295",
-      "role": "Analog GHRH — podstawa przedłużonego pulsu GH",
+      "role": "Analog GHRH – podstawa przedłużonego pulsu GH",
       "typicalDose": "100-200 µg subQ codziennie"
     },
     {
       "id": "ipamorelin",
-      "role": "Selektywny sekretagog GH — wzmacniacz pulsu",
+      "role": "Selektywny sekretagog GH – wzmacniacz pulsu",
       "typicalDose": "100-200 µg subQ codziennie"
     }
   ],

@@ -148,7 +148,7 @@ export default {
     },
     {
       "q": "How long can I use it continuously?",
-      "a": "The Russian Rx protocol prescribes 56-day cycles followed by 2-4 weeks off. Continuous use beyond 3 months has not been formally studied — risk of receptor downregulation and NGF/BDNF tolerance."
+      "a": "The Russian Rx protocol prescribes 56-day cycles followed by 2-4 weeks off. Continuous use beyond 3 months has not been formally studied – risk of receptor downregulation and NGF/BDNF tolerance."
     }
   ],
   "related": [

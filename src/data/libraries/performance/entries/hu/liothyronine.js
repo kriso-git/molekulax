@@ -1,4 +1,4 @@
-// Liothyronine (T3, Cytomel) — Pfizer 1956 FDA-jóváhagyott szintetikus
+// Liothyronine (T3, Cytomel) – Pfizer 1956 FDA-jóváhagyott szintetikus
 // 3,5,3'-triiodothyronine, hypothyroidism Rx. Cutting-cycle off-label use
 // 1980s óta. Sources: FDA Cytomel SmPC, Bunevicius 1999 PMID 9989958,
 // Stott 2017 TRUST NEJM PMID 28121505, Klein 2001 PMID 11257082,
@@ -52,8 +52,8 @@ export default {
       "value": "FDA + EMA Rx (hypothyroidism), HU + PL törzskönyvezett. WADA: S4.5 in-competition banned non-Rx athletán."
     }
   ],
-  "mechanism": "A Liothyronine az endogén T3 szintetikus változata, amely a tireoid-hormon farmakológiailag aktív formája. A T4 (Levothyroxine) jelentős részben prohormon — a hepatikus + renalis 5'-deiodinase (D1/D2) enzimek konvertálják aktív T3-má (~80% T4 → T3 perifériás konverzió). Az exogén T3 megkerüli ezt a konverziós lépést, így gyorsabb on/off-kinetikát biztosít (24 óra t1/2 vs T4 7 nap). A T3 nukleáris tireoid-receptor (TR-α a vázizomban + szívizomban, TR-β a májban + hypothalamusban) ligand: kötődéskor a receptor heterodimerizálódik a retinoid-X-receptor-rel (RXR), és transzkripciós faktorként direkt génexpressziós aktivációt indít. Fő downstream-célok: UCP1 + UCP3 mitokondriális uncoupling-protein-gén, β-oxidáció kulcs-enzimek (CPT-1, ACOX), Na/K-ATPase α-alegység-gén. A vázizomszövet REE-emelkedése részben Na/K-ATPase-density-emelkedéséből származik (~30% basal REE allocation). Központi mechanizmus a hypothalamic-pituitary-thyroid (HPT) negatív feedback: az exogén T3 dose-dependent suppression-t okoz az endogén TSH-szekrécióra, ami secondary hypothyroidism-induction-t jelent, ha a cycle hosszabb mint a recovery-window engedi (kb. 4-6 hét cycle után 4-8 hét recovery; >100 μg/nap 12+ hét cycle után potenciálisan permanent shutdown).",
-  "legalStatus": "USA: FDA-jóváhagyott 1956 (Cytomel, Pfizer — akkor Lederle/Wyeth) hypothyroidism kezelésére; Schedule N/A. EU: EMA-jóváhagyott. HU: törzskönyvezett (Cytomel Rx). PL: törzskönyvezett (Cytomel Rx). WADA: S4.5 thyroid hormone modulator, in-competition banned (NADA Switzerland 2023 explicit listing, USADA 2024 update). TUE-process pre-existing hypothyroidism diagnózissal lehetséges out-of-competition use-ra.",
+  "mechanism": "A Liothyronine az endogén T3 szintetikus változata, amely a tireoid-hormon farmakológiailag aktív formája. A T4 (Levothyroxine) jelentős részben prohormon – a hepatikus + renalis 5'-deiodinase (D1/D2) enzimek konvertálják aktív T3-má (~80% T4 → T3 perifériás konverzió). Az exogén T3 megkerüli ezt a konverziós lépést, így gyorsabb on/off-kinetikát biztosít (24 óra t1/2 vs T4 7 nap). A T3 nukleáris tireoid-receptor (TR-α a vázizomban + szívizomban, TR-β a májban + hypothalamusban) ligand: kötődéskor a receptor heterodimerizálódik a retinoid-X-receptor-rel (RXR), és transzkripciós faktorként direkt génexpressziós aktivációt indít. Fő downstream-célok: UCP1 + UCP3 mitokondriális uncoupling-protein-gén, β-oxidáció kulcs-enzimek (CPT-1, ACOX), Na/K-ATPase α-alegység-gén. A vázizomszövet REE-emelkedése részben Na/K-ATPase-density-emelkedéséből származik (~30% basal REE allocation). Központi mechanizmus a hypothalamic-pituitary-thyroid (HPT) negatív feedback: az exogén T3 dose-dependent suppression-t okoz az endogén TSH-szekrécióra, ami secondary hypothyroidism-induction-t jelent, ha a cycle hosszabb mint a recovery-window engedi (kb. 4-6 hét cycle után 4-8 hét recovery; >100 μg/nap 12+ hét cycle után potenciálisan permanent shutdown).",
+  "legalStatus": "USA: FDA-jóváhagyott 1956 (Cytomel, Pfizer – akkor Lederle/Wyeth) hypothyroidism kezelésére; Schedule N/A. EU: EMA-jóváhagyott. HU: törzskönyvezett (Cytomel Rx). PL: törzskönyvezett (Cytomel Rx). WADA: S4.5 thyroid hormone modulator, in-competition banned (NADA Switzerland 2023 explicit listing, USADA 2024 update). TUE-process pre-existing hypothyroidism diagnózissal lehetséges out-of-competition use-ra.",
   "onsetTime": "Metabolic-rate emelés 24-48 óra; fat-loss-effekt 1-2 hét; steady-state 7 nap",
   "halfLife": "~24 óra",
   "interactionsWith": [
@@ -62,8 +62,8 @@ export default {
     "mirabegron",
     "warfarin"
   ],
-  "aromatization": "Nem aromatizál — tireoid-hormon, NEM szteroid; nincs CYP19 interakció. Az ösztrogén-axis közvetlenül érintetlen, viszont indirect SHBG-emelkedés dokumentált T3-on (Klein 2001 PMID 11257082), ami free-Test-csökkenést okoz.",
-  "hepatotoxicity": "Alacsony — tireoid-overdose hyperthyroid-szindrómát okoz (cardiac arrhythmia, hyperthermia, weight-loss extrém), NEM közvetlen hepatikus toxikus. ALT-emelkedés ritka, csak iatrogén-overdose esetén dokumentált klinikai literátúrában.",
+  "aromatization": "Nem aromatizál – tireoid-hormon, NEM szteroid; nincs CYP19 interakció. Az ösztrogén-axis közvetlenül érintetlen, viszont indirect SHBG-emelkedés dokumentált T3-on (Klein 2001 PMID 11257082), ami free-Test-csökkenést okoz.",
+  "hepatotoxicity": "Alacsony – tireoid-overdose hyperthyroid-szindrómát okoz (cardiac arrhythmia, hyperthermia, weight-loss extrém), NEM közvetlen hepatikus toxikus. ALT-emelkedés ritka, csak iatrogén-overdose esetén dokumentált klinikai literátúrában.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nem AAS, tireoid-hormon)",
   "bindingAffinity": "TR-α + TR-β nukleáris receptor Ki ~50-100 pM (high-affinity, T4-nél ~10x erősebb).",
@@ -101,12 +101,12 @@ export default {
   ],
   "quality": {
     "pure": [
-      "FDA-jóváhagyott Cytomel tabletta (Pfizer) vagy generic Liothyronine (USA) — pharmacy-szourzott biztosítja a hatóanyag-tartalmat",
+      "FDA-jóváhagyott Cytomel tabletta (Pfizer) vagy generic Liothyronine (USA) – pharmacy-szourzott biztosítja a hatóanyag-tartalmat",
       "EU brand-only Cytomel (Pfizer) Rx, generic limitált",
       "UGL Liothyronine vial-szubsztáncia compounding-on dose-variance ±30% dokumentált"
     ],
     "caution": [
-      "Hyperthyroid-szindróma overdose esetén: tachycardia, hyperthermia, anxietás, insomnia, weight-loss extrém — leállítás javasolt",
+      "Hyperthyroid-szindróma overdose esetén: tachycardia, hyperthermia, anxietás, insomnia, weight-loss extrém – leállítás javasolt",
       "Beta-blocker (propranolol) co-administration tachycardia + tremor enyhítésére",
       "Cardiovascular monitoring: resting HR + BP weekly, EKG baseline + 4-week-check",
       "Bone-density-loss long-term chronic dose dokumentált (>50 μg/nap >1 év, osteoporosis-risk)",
@@ -114,21 +114,21 @@ export default {
       "Iatrogén-secondary-hypothyroidism risk cycle-off-on >100 μg/nap chronic 12+ hét"
     ],
     "avoid": [
-      "Hashimoto autoimmune hypothyroidism — KONTRAINDIKÁLT (anti-TPO + Tg-AB titre-escalation klinikai-evidence)",
-      "Pre-existing cardiac arrhythmia (atrial fibrillation, ventricular tachycardia) — abszolút kontraindikáció",
-      "Cardiovascular betegség (CAD, súlyos angina) — relativ kontraindikáció",
-      "Diabetes mellitus type 1 — relativ kontraindikáció (T3 + insulin-stack glucose-management-zavar)",
-      "Pheochromocytoma — abszolút kontraindikáció",
-      "Pregnancy (FDA category A — Rx-Pregnancy hypothyroidism legitim, off-label cutting-cycle NEM)"
+      "Hashimoto autoimmune hypothyroidism – KONTRAINDIKÁLT (anti-TPO + Tg-AB titre-escalation klinikai-evidence)",
+      "Pre-existing cardiac arrhythmia (atrial fibrillation, ventricular tachycardia) – abszolút kontraindikáció",
+      "Cardiovascular betegség (CAD, súlyos angina) – relativ kontraindikáció",
+      "Diabetes mellitus type 1 – relativ kontraindikáció (T3 + insulin-stack glucose-management-zavar)",
+      "Pheochromocytoma – abszolút kontraindikáció",
+      "Pregnancy (FDA category A – Rx-Pregnancy hypothyroidism legitim, off-label cutting-cycle NEM)"
     ]
   },
   "interactions": [
-    "Levothyroxine (T4) — stack-szerű cutting-protokoll, dose-adjust mindkettőhöz külön",
-    "Warfarin — T3 enhances anticoagulant effect, INR-monitoring szükséges",
-    "Insulin + oral hypoglykemiás — T3 emeli a glükóz-metabolizmust, hypoglycemia-risk titration alatt",
-    "Beta-blocker (propranolol + atenolol) — tachycardia + tremor enyhítő, T3-toxicity-szignál maszkolhat",
-    "Clenbuterol + Mirabegron + ephedrine — additív kardio-stressz, magas HR + BP-emelkedés",
-    "Calcium + iron oral supplement — T3-abszorpciót csökkentik (4 óra separation javasolt)"
+    "Levothyroxine (T4) – stack-szerű cutting-protokoll, dose-adjust mindkettőhöz külön",
+    "Warfarin – T3 enhances anticoagulant effect, INR-monitoring szükséges",
+    "Insulin + oral hypoglykemiás – T3 emeli a glükóz-metabolizmust, hypoglycemia-risk titration alatt",
+    "Beta-blocker (propranolol + atenolol) – tachycardia + tremor enyhítő, T3-toxicity-szignál maszkolhat",
+    "Clenbuterol + Mirabegron + ephedrine – additív kardio-stressz, magas HR + BP-emelkedés",
+    "Calcium + iron oral supplement – T3-abszorpciót csökkentik (4 óra separation javasolt)"
   ],
   "studies": [
     {
@@ -164,7 +164,7 @@ export default {
   ],
   "faq": [
     {
-      "q": "T3 vs T4 cutting-cycle — melyik biztonságosabb?",
+      "q": "T3 vs T4 cutting-cycle – melyik biztonságosabb?",
       "a": "A T4 lassabb on/off-kinetikájú (~7 nap t1/2), így a steady-state változás 4-6 hét, dose-titration robusztusabb és iatrogén-hyperthyroid-risk alacsonyabb. A T3 viszont gyors-akciós (~24 óra t1/2), de hirtelen endogén-TSH-suppression-t okoz, ami magasabb iatrogén-secondary-hypothyroidism-risk-et eredményez cycle-off-on. Cutting-cycle protokoll-on tradicionálisan T3 dominál (gyorsabb metabolic-rate emelés), de T4 lassabb-titration biztonságosabb hosszú-távú használatra. Pure-cutting-cycle 4-6 hét T3 75 μg/nap szokványos, de pre-cycle TSH + free-T3 + free-T4 baseline kötelező."
     },
     {
@@ -177,7 +177,7 @@ export default {
     },
     {
       "q": "Hashimoto autoimmune hypothyroidism beteg használhat T3?",
-      "a": "Klinikai-Rx kontextusban Hashimoto + hypothyroidism-Rx-on T4 (Levothyroxine) az első-vonalbeli, T3 add-on csak Bunevicius 1999 NEJM cognitive-szimptóma-relief megfontolásból. Cutting-cycle off-label kontextusban Hashimoto KONTRAINDIKÁLT — az anti-TPO + Tg-AB titre-escalation klinikai-evidence (Saglam 2013 PMID 23612648) miatt az autoimmune-flare risk magas. Pre-cycle anti-TPO + anti-Tg screening kötelező off-label cutting-cycle előtt."
+      "a": "Klinikai-Rx kontextusban Hashimoto + hypothyroidism-Rx-on T4 (Levothyroxine) az első-vonalbeli, T3 add-on csak Bunevicius 1999 NEJM cognitive-szimptóma-relief megfontolásból. Cutting-cycle off-label kontextusban Hashimoto KONTRAINDIKÁLT – az anti-TPO + Tg-AB titre-escalation klinikai-evidence (Saglam 2013 PMID 23612648) miatt az autoimmune-flare risk magas. Pre-cycle anti-TPO + anti-Tg screening kötelező off-label cutting-cycle előtt."
     },
     {
       "q": "WADA in-competition vs out-of-competition?",
@@ -216,7 +216,7 @@ export default {
       "label": "Ciklus után",
       "timing": "Cycle-end után 2 + 4 + 8 hét",
       "markers": "TSH (visszatérés 0.5-2.5 mIU/L tartomány), free-T3, free-T4, reverse-T3, anti-TPO follow-up (autoimmun-flare-detect), BP + HR home-tracking",
-      "purpose": "Endogén tireoid-axis recovery verifikálása. >100 μg/nap chronic 12+ hét utáni cycle-off-on potenciális permanent secondary hypothyroidism — endokrinológus follow-up szükséges ha TSH >5 mIU/L 8 hét után"
+      "purpose": "Endogén tireoid-axis recovery verifikálása. >100 μg/nap chronic 12+ hét utáni cycle-off-on potenciális permanent secondary hypothyroidism – endokrinológus follow-up szükséges ha TSH >5 mIU/L 8 hét után"
     },
     "cruise": {
       "label": "Long-term (klinikai hypothyroidism Rx)",

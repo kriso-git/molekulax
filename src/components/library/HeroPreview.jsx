@@ -1,4 +1,4 @@
-// HeroPreview — Phase 9 LCP optimization. Renders the entry Hero h1 + tier
+// HeroPreview – Phase 9 LCP optimization. Renders the entry Hero h1 + tier
 // chip immediately from LIBRARY_ENTRY_META, so the LCP element (entry name)
 // fires as soon as the small meta chunk loads. Without this, the heavy
 // EntryDetail.jsx chunk + per-entry chunk had to load before LCP could fire
@@ -6,7 +6,7 @@
 //
 // Visual MUST match EntryDetail.jsx's Hero so the swap is seamless when the
 // full EntryDetail mounts. Sync component, NO framer-motion / NO lazy imports
-// — every byte counts on the LCP path.
+// – every byte counts on the LCP path.
 
 import { ArrowLeft, ShieldCheck } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
@@ -84,7 +84,7 @@ export default function HeroPreview({ meta, onClose }) {
             )}
           </div>
 
-          {/* THE LCP ELEMENT — entry name h1, same gradient as EntryDetail.jsx */}
+          {/* THE LCP ELEMENT – entry name h1, same gradient as EntryDetail.jsx */}
           <h1
             className="font-black tracking-tight leading-[1.1] pb-2 text-5xl sm:text-6xl lg:text-7xl mb-3"
             style={{
@@ -99,7 +99,7 @@ export default function HeroPreview({ meta, onClose }) {
             {meta.name?.replace(/-/g, '‑')}
           </h1>
 
-          {/* Short description from meta — gives the user readable content
+          {/* Short description from meta – gives the user readable content
               even before the full entry loads. */}
           <p
             className="text-base sm:text-lg leading-relaxed max-w-xl mb-6"

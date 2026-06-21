@@ -10,17 +10,17 @@
 //   dna     double helix        · atom    orbital core    · fiber    muscle fibre bundle
 //   shield  protective dome     · vessel  vascular flow
 export const CARD_MOTIFS = {
-  // nootropics — cognition
+  // nootropics – cognition
   'nootropics:racetams': 'neural',
   'nootropics:modafinil-types': 'plasma',
   'nootropics:dopamine-motivation': 'molecule',
   'nootropics:bdnf-neuroplasticity': 'dna',
   'nootropics:cholinergic-boosters': 'atom',
 
-  // peptides intentionally OMITTED — its "Élettani Hatások" cards already ship
+  // peptides intentionally OMITTED – its "Élettani Hatások" cards already ship
   // real product photos (effects.js `image:`), which we keep instead of a motif.
 
-  // performance — chemistry classes (these are the cards the perf face actually
+  // performance – chemistry classes (these are the cards the perf face actually
   // renders, via PerformanceCategoryCards; the effect-grid is disabled here)
   'performance:dht': 'molecule',
   'performance:test': 'fiber',
@@ -28,7 +28,7 @@ export const CARD_MOTIFS = {
   'performance:pct': 'neural',
   'performance:fat': 'plasma',
 
-  // pharmaceutical — therapeutic areas
+  // pharmaceutical – therapeutic areas
   'pharmaceutical:diabetes': 'molecule',
   'pharmaceutical:cholesterol-heart': 'vessel',
   'pharmaceutical:mood': 'neural',

@@ -130,7 +130,7 @@ export default {
     },
     {
       "q": "Miért vonták ki az Olmifont 2011-ben?",
-      "a": "A Cephalon (Olmifon gyártója) kereskedelmi okokból nem újította meg az EU forgalombahozatali engedélyt — a Modafinil (Provigil) magasabb haszonkulcs-rátája mellett. NEM volt safety-recall vagy hatóság-mandátum. A vegyület továbbra is kutatás-jogosult, a klinikai farmakológia nem változott."
+      "a": "A Cephalon (Olmifon gyártója) kereskedelmi okokból nem újította meg az EU forgalombahozatali engedélyt – a Modafinil (Provigil) magasabb haszonkulcs-rátája mellett. NEM volt safety-recall vagy hatóság-mandátum. A vegyület továbbra is kutatás-jogosult, a klinikai farmakológia nem változott."
     }
   ],
   "related": [
@@ -138,5 +138,5 @@ export default {
     "armodafinil",
     "flmodafinil"
   ],
-  "anecdote": "Az anekdotikus beszámolók az Adrafinilt a Modafinilhez vezető régebbi prodrug-útvonalként keretezik: a májnak előbb át kell alakítania, mielőtt bármi történne, így a beindulás lassabb és simább, a teljes ív hosszabb, a lecsengés pedig szelídebb. Akik \"hosszabb, lágyabb Modafinilt\" keresnek, pontosan ezért a profilért írják le pozitívan.\n\nA kompromisszumok visszatérőek: az átalakulás egyénenként kevésbé kiszámítható, több metabolikus terheléssel jár, és gyenge választás, amikor azonnali löket kell — maga a Modafinil az aktív vegyület, amely a munkát végzi. A legtöbb beszámoló helyzeti, simább görbéjű alternatívaként kezeli, tudatos, ritka időzítéssel."
+  "anecdote": "Az anekdotikus beszámolók az Adrafinilt a Modafinilhez vezető régebbi prodrug-útvonalként keretezik: a májnak előbb át kell alakítania, mielőtt bármi történne, így a beindulás lassabb és simább, a teljes ív hosszabb, a lecsengés pedig szelídebb. Akik \"hosszabb, lágyabb Modafinilt\" keresnek, pontosan ezért a profilért írják le pozitívan.\n\nA kompromisszumok visszatérőek: az átalakulás egyénenként kevésbé kiszámítható, több metabolikus terheléssel jár, és gyenge választás, amikor azonnali löket kell – maga a Modafinil az aktív vegyület, amely a munkát végzi. A legtöbb beszámoló helyzeti, simább görbéjű alternatívaként kezeli, tudatos, ritka időzítéssel."
 }

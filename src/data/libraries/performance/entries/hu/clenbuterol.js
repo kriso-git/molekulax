@@ -55,8 +55,8 @@ export default {
     "thyroid hormones",
     "insulin"
   ],
-  "aromatization": "Nem releváns — β2-agonista bronchodilatátor, NEM szteroid; nincs aromatáz-szubsztrát",
-  "hepatotoxicity": "Alacsony — kardiotoxicitás dominál (kardiomiocita-károsodás, hypertrophia, arrhythmia); hepatikus terhelés elhanyagolható (Beermann 2009)",
+  "aromatization": "Nem releváns – β2-agonista bronchodilatátor, NEM szteroid; nincs aromatáz-szubsztrát",
+  "hepatotoxicity": "Alacsony – kardiotoxicitás dominál (kardiomiocita-károsodás, hypertrophia, arrhythmia); hepatikus terhelés elhanyagolható (Beermann 2009)",
   "wadaStatus": "banned",
   "detectionWindow": "7-14 nap vizelet (WADA-akkreditált laborban érzékeny LC-MS-tesztek).",
   "benefits": [
@@ -101,7 +101,7 @@ export default {
       "Bármilyen kardiovaszkuláris zavar (hipertónia, aritmia, családi anamnézis) abszolút kontraindikáció",
       "Hyperthyreosis kontraindikáció (β2 + pajzsmirigy túl-stimuláció)",
       "β-blokkoló-terápia kontraindikálja a Clenbuterol-t",
-      "Kardiomiopátia, korábbi MI — hosszú tachikardia szívizom-fibrózist és bal kamrai hipertrófiát okoz",
+      "Kardiomiopátia, korábbi MI – hosszú tachikardia szívizom-fibrózist és bal kamrai hipertrófiát okoz",
       "Epilepszia, görcsroham-anamnézis (β2 + hypokalemia görcsküszöböt csökkenti)",
       "Súlyos szorongás, pánikbetegség",
       "Terhesség és szoptatás (teratogén állatkísérletekben, kardio-fejlődési hatások)"
@@ -170,7 +170,7 @@ export default {
     },
     {
       "q": "Tényleg Parkinson-kutatásban használják?",
-      "a": "Igen, preklinikai szinten. A Mittal et al 2024 review (Mov Disord, PMID 38953404) szerint a β2-agonisták (clenbuterol, salbutamol) preklinikai modellekben (egér MPTP-modell, sejtkultúra) cerebral blood flow emelést + dopaminerg neuron-védelmet mutatnak α-szinuklein-aggregáció gátlásával + neurotrofikus jelutak aktiválásával. KIZÁRÓLAG kutatási kontextusban — emberi Parkinson-kórban Rx-ként NEM alkalmazható, és a kardiotoxikus profil miatt klinikai vizsgálatok korlátozottak. Egy érdekes alternatív β2-célmolekula a kutatásban: salbutamol (rövidebb t1/2, biztonságosabb)."
+      "a": "Igen, preklinikai szinten. A Mittal et al 2024 review (Mov Disord, PMID 38953404) szerint a β2-agonisták (clenbuterol, salbutamol) preklinikai modellekben (egér MPTP-modell, sejtkultúra) cerebral blood flow emelést + dopaminerg neuron-védelmet mutatnak α-szinuklein-aggregáció gátlásával + neurotrofikus jelutak aktiválásával. KIZÁRÓLAG kutatási kontextusban – emberi Parkinson-kórban Rx-ként NEM alkalmazható, és a kardiotoxikus profil miatt klinikai vizsgálatok korlátozottak. Egy érdekes alternatív β2-célmolekula a kutatásban: salbutamol (rövidebb t1/2, biztonságosabb)."
     }
   ],
   "related": [
@@ -207,5 +207,5 @@ export default {
     "unit": "mcg/nap",
     "note": "Dose-titrating a 35-40 órás felezési idő miatt: +20 mcg/nap minden 2-3 napban. Maximum 120-140 mcg/nap, 6-8 hét OFF + ketotifen 1-2 mg lefekvés előtt receptor down-regulation gátlására. Taurin 3 g + magnézium 2 g/nap az izomgörcsökre. Vérnyomás napló otthon, EKG 6 hét után."
   },
-  "anecdote": "A Clenbuterolnak megalapozott a hírhedt reputációja — anekdotikus beszámolók szerint nagyon hatékony a zsírvesztésre, de jelentős mellékhatás-terheléssel jár. A felhasználók jellemzően megnövekedett energiát, erős stimulációt, emelkedett pulzusszámot és hőtermelést tapasztalnak meglehetősen gyorsan a beadás után. A tolerancia gyorsan kiépül a béta-receptor downregulációja miatt, így sok felhasználó néhány hetente felfelé titrálja az adagot, bár ez kontextusfüggő. Az elektrolit-egyensúlyzavarok gyakori aggály, kiszáradást is gyakran jelentenek. Alvászavar is előfordulhat a szokatlanul hosszú felezési idő miatt, ezért egyes felhasználók az Albuterol rövidebb felezési idejét részesítik előnyben kontraszt-opcióként. Összességében a közösségi beszámolók szerint a Clenbuterol a hirdetett módon működik a zsírvesztésre és egyértelmű helye van óvatos adagolás mellett, de gondos kardiovaszkuláris, elektrolit- és alvásparaméter-kezelést igényel."
+  "anecdote": "A Clenbuterolnak megalapozott a hírhedt reputációja – anekdotikus beszámolók szerint nagyon hatékony a zsírvesztésre, de jelentős mellékhatás-terheléssel jár. A felhasználók jellemzően megnövekedett energiát, erős stimulációt, emelkedett pulzusszámot és hőtermelést tapasztalnak meglehetősen gyorsan a beadás után. A tolerancia gyorsan kiépül a béta-receptor downregulációja miatt, így sok felhasználó néhány hetente felfelé titrálja az adagot, bár ez kontextusfüggő. Az elektrolit-egyensúlyzavarok gyakori aggály, kiszáradást is gyakran jelentenek. Alvászavar is előfordulhat a szokatlanul hosszú felezési idő miatt, ezért egyes felhasználók az Albuterol rövidebb felezési idejét részesítik előnyben kontraszt-opcióként. Összességében a közösségi beszámolók szerint a Clenbuterol a hirdetett módon működik a zsírvesztésre és egyértelmű helye van óvatos adagolás mellett, de gondos kardiovaszkuláris, elektrolit- és alvásparaméter-kezelést igényel."
 }

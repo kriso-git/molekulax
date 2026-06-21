@@ -52,7 +52,7 @@ export default {
       "value": "Bayer Primobolan Depot DE/ES Rx, USA: discontinued"
     }
   ],
-  "mechanism": "1-metil-dihidrotesztoszteron AR-agonista. Az 1-metil-csoport — kifejezetten Δ1-pozícióban — gátolja a 17β-HSD-oxidatív lebontást és kifejezetten ellenálló a hepatikus metabolizmusnak. A 17β-OH-acetát észter (orális forma) gyorsan hidrolizál a portális vénában szabad methenolonra, amelyet aztán a máj gyorsan metabolizál (alacsony 6% biodostupnošć). Az enantát észter (Depot forma) IM-injekcióval depot-tárolt, lassú hidrolízis ad stabil plazma-szintet. NEM 17α-alkilált → minimális hepatikus stressz. NEM CYP19 szubsztrát → NEM aromatizál ösztrogénné.",
+  "mechanism": "1-metil-dihidrotesztoszteron AR-agonista. Az 1-metil-csoport – kifejezetten Δ1-pozícióban – gátolja a 17β-HSD-oxidatív lebontást és kifejezetten ellenálló a hepatikus metabolizmusnak. A 17β-OH-acetát észter (orális forma) gyorsan hidrolizál a portális vénában szabad methenolonra, amelyet aztán a máj gyorsan metabolizál (alacsony 6% biodostupnošć). Az enantát észter (Depot forma) IM-injekcióval depot-tárolt, lassú hidrolízis ad stabil plazma-szintet. NEM 17α-alkilált → minimális hepatikus stressz. NEM CYP19 szubsztrát → NEM aromatizál ösztrogénné.",
   "legalStatus": "USA: 1965 után discontinued (FDA), Schedule III kontrollált. DE/ES: Bayer Primobolan Depot Rx-szer (anémia, premature infant catabolic states). HU/PL: vény nélkül illegális, kontrollált AAS. WADA tiltott egész évben (S1.1.a).",
   "onsetTime": "1-2 h (Ac oral), 48-72 h (Enan IM)",
   "halfLife": "4-6 h (Ac oral), 5-7 d (Enan IM)",
@@ -63,8 +63,8 @@ export default {
     "finasteride",
     "warfarin"
   ],
-  "aromatization": "Nem — 1-metil-DHT struktúra, NEM CYP19 szubsztrát egyik észternél sem; klinikailag E2-emelkedés nem várható (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált enantát formánál minimális hepatic stressz. Az orális acetát formánál is csak enyhe, mert az 1-metil-csoport NEM 17α (csak az 1-metil ad orális stabilitást), DE a magas dózis (50-100 mg/nap) miatt mégis monitor szükséges (Hartgens-Kuipers 2004 PMID 15248788)",
+  "aromatization": "Nem – 1-metil-DHT struktúra, NEM CYP19 szubsztrát egyik észternél sem; klinikailag E2-emelkedés nem várható (Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált; injektált enantát formánál minimális hepatic stressz. Az orális acetát formánál is csak enyhe, mert az 1-metil-csoport NEM 17α (csak az 1-metil ad orális stabilitást), DE a magas dózis (50-100 mg/nap) miatt mégis monitor szükséges (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "88:44",
   "bindingAffinity": "Közepes AR-affinitás (~28% testosterone-hoz képest in vitro). Magas SHBG-affinitás (DHT-strukturális analóg) → indirekt szabad-T-emelkedés.",
@@ -78,7 +78,7 @@ export default {
   ],
   "quickStart": [
     "Realisztikus elvárások: a Primobolan ENYHE AAS, ne várj Dianabol-szerű 10 kg/4 hét eredményt",
-    "Orális Ac dózis MAGAS (50-100 mg/nap) az alacsony biodostupnošć miatt — minőségi forrás kritikus",
+    "Orális Ac dózis MAGAS (50-100 mg/nap) az alacsony biodostupnošć miatt – minőségi forrás kritikus",
     "DHT-strukturális analóg → SZIGORÚ hajhullás-kockázat genetikai prediszpozíció esetén",
     "Lipid panel (HDL/LDL) baseline + 4-hét + post-cycle kötelező",
     "PCT (Clomid + Nolvadex 4 hét) szükséges férfiaknál a HPTA-szuppresszió miatt"
@@ -90,7 +90,7 @@ export default {
     },
     {
       "label": "4-6. hét",
-      "body": "Szubjektíven \"keményebb\" izom-tónus, vaszkuláris venosity. SHBG csökken, lean mass gyarapodás 1-2 kg (NEM extrém — a Primobolan enyhe AAS)."
+      "body": "Szubjektíven \"keményebb\" izom-tónus, vaszkuláris venosity. SHBG csökken, lean mass gyarapodás 1-2 kg (NEM extrém – a Primobolan enyhe AAS)."
     },
     {
       "label": "10-12. hét vége",
@@ -99,11 +99,11 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Bayer Primobolan Depot original Rx (DE/ES, 100 mg/ml, 1ml ampulla) — autentikus enantát forrás",
+      "Bayer Primobolan Depot original Rx (DE/ES, 100 mg/ml, 1ml ampulla) – autentikus enantát forrás",
       "UGL acetát-tabletta: HPLC-tesztelt forrás kötelező, gyakran hamisított (Anavar vagy Winstrol helyettesítés)"
     ],
     "caution": [
-      "Orális Ac magas dózis (50-100 mg/nap) — költséges és minőség-kritikus",
+      "Orális Ac magas dózis (50-100 mg/nap) – költséges és minőség-kritikus",
       "Hajhullás-acceleráció androgenetikus alopecia esetén (DHT-strukturális analóg)",
       "Lipid-zavar: HDL csökkenés (mérsékelt)",
       "Hangmélyülés és hirsutizmus nőknél (alacsonyabb dózisnál is virilizációs kockázat marad)"
@@ -113,13 +113,13 @@ export default {
       "Prosztata-hipertrófia, prosztatakarcinóma (DHT-analóg)",
       "Női felhasználás magasabb dózisnál (>10 mg/nap orális Ac, >50 mg/hét Enan)",
       "Kardiovaszkuláris kockázat (családi anamnézis, magas LDL)",
-      "Bulking/tömegnövelő cél — a Primobolan cutting és kondicionáló szteroid, NEM tömeg-építő"
+      "Bulking/tömegnövelő cél – a Primobolan cutting és kondicionáló szteroid, NEM tömeg-építő"
     ]
   },
   "interactions": [
     "Testosterone-base stack: standard, fokozza az izom-protein-szintézist; ester-half-life matching ajánlott (Test-Prop+Primo-Ac vagy Test-Enan+Primo-Enan)",
     "Anastrozole (AI): NEM szükséges Primo-only ciklusnál (nem aromatizál); Test-stack mellett csak labor-igazolt magas E2 esetén",
-    "Finasteride: NEM gátolja a Primobolan-hatást (Primobolan már 5α-redukált), NEM véd a scalp-DHT ellen — értelmetlen",
+    "Finasteride: NEM gátolja a Primobolan-hatást (Primobolan már 5α-redukált), NEM véd a scalp-DHT ellen – értelmetlen",
     "Warfarin: antikoaguláns hatás fokozódhat, INR monitor"
   ],
   "studies": [
@@ -157,19 +157,19 @@ export default {
   "faq": [
     {
       "q": "Miért olyan drága a Primobolan?",
-      "a": "Két ok: (1) az alapanyag (methenolone) szintézise drága, kevés UGL labor tudja tisztán előállítani; (2) hamisítás extrém gyakori — sok UGL Primo valójában Anavar vagy Winstrol. Bayer Primobolan Depot eredeti DE/ES Rx ár ~150-250 EUR/ml feketepiacon. Az orális Ac még drágább, mert a magas dózisigény (50-100 mg/nap) miatt napi költség jelentős."
+      "a": "Két ok: (1) az alapanyag (methenolone) szintézise drága, kevés UGL labor tudja tisztán előállítani; (2) hamisítás extrém gyakori – sok UGL Primo valójában Anavar vagy Winstrol. Bayer Primobolan Depot eredeti DE/ES Rx ár ~150-250 EUR/ml feketepiacon. Az orális Ac még drágább, mert a magas dózisigény (50-100 mg/nap) miatt napi költség jelentős."
     },
     {
       "q": "Tényleg \"enyhe\" AAS, mint mondják?",
-      "a": "Igen, a klasszikus AAS-ek között az egyik legszelídebb hepatotoxicitási és kardiovaszkuláris profilját tekintve. DE az enyheség miatt NEM várhatsz spektakuláris izomtömeg-növekedést — a Primobolan cutting és kondicionáló szer, NEM bulking. Pope-Kanayama 2014 kiemeli: a felhasználói várakozás-realitás közötti gap az egyik fő frusztráció-forrás."
+      "a": "Igen, a klasszikus AAS-ek között az egyik legszelídebb hepatotoxicitási és kardiovaszkuláris profilját tekintve. DE az enyheség miatt NEM várhatsz spektakuláris izomtömeg-növekedést – a Primobolan cutting és kondicionáló szer, NEM bulking. Pope-Kanayama 2014 kiemeli: a felhasználói várakozás-realitás közötti gap az egyik fő frusztráció-forrás."
     },
     {
       "q": "Miért alacsony az orális acetát biodostupnošć?",
-      "a": "Az acetát-észter (17β-OH-acetát) GYORSAN hidrolizál a portális vénában szabad methenolonra, amelyet aztán a máj gyorsan metabolizál (NEM 17α-alkilált, így nincs first-pass-védettség). Ezért az orális Primobolan biodostupnošć alig 6% — összehasonlítva pl. az Anavar 30-40%-os biodostupnošć-ével a 17α-alkilált védettség miatt."
+      "a": "Az acetát-észter (17β-OH-acetát) GYORSAN hidrolizál a portális vénában szabad methenolonra, amelyet aztán a máj gyorsan metabolizál (NEM 17α-alkilált, így nincs first-pass-védettség). Ezért az orális Primobolan biodostupnošć alig 6% – összehasonlítva pl. az Anavar 30-40%-os biodostupnošć-ével a 17α-alkilált védettség miatt."
     },
     {
       "q": "Miért használnak Primobolant nők is?",
-      "a": "Alacsony androgén potenciál (44% testosterone-hoz képest) miatt a virilizáció kockázata az AAS-ek közül az alacsonyabbak közé tartozik (Anavar és Primobolan a klasszikus \"női-barát\" AAS-páros). DE a virilizáció NEM nulla — magasabb dózisnál (>10 mg/nap orális vagy >50 mg/hét Enan) hangmélyülés és hirsutizmus dokumentált. Bármilyen virilizáció-tünet azonnali ciklus-megszakítás."
+      "a": "Alacsony androgén potenciál (44% testosterone-hoz képest) miatt a virilizáció kockázata az AAS-ek közül az alacsonyabbak közé tartozik (Anavar és Primobolan a klasszikus \"női-barát\" AAS-páros). DE a virilizáció NEM nulla – magasabb dózisnál (>10 mg/nap orális vagy >50 mg/hét Enan) hangmélyülés és hirsutizmus dokumentált. Bármilyen virilizáció-tünet azonnali ciklus-megszakítás."
     },
     {
       "q": "Igaz, hogy Arnold Schwarzenegger használta?",
@@ -219,14 +219,14 @@ export default {
         "pl": "Methenolon Acetate (Primobolan-Ac, tabletka doustna)"
       },
       "routeNote": {
-        "hu": "Klasszikus 'kozmetikai' AAS orális ága — alacsony hepatotoxicitás (NEM 17α-alkilált), nincs aromatizáció (1-metil-DHT). Hátulütő: alacsony orális bioavailability (~6%) miatt magas napi dózis kell (50-100 mg = 5-10 tabletta). A leggyakrabban hamisított AAS-tabletta (Anavar/Winstrol helyettesítés) — HPLC-tesztelés ABSZOLÚT KÖTELEZŐ. Női-barát alacsony dózisban (5-10 mg/nap).",
-        "en": "The oral arm of the classic 'cosmetic' AAS — low hepatotoxicity (NOT 17α-alkylated), no aromatization (1-methyl-DHT). Drawback: low oral bioavailability (~6%) requires high daily dose (50-100 mg = 5-10 tablets). The most commonly counterfeited AAS tablet (Anavar/Winstrol substitution) — HPLC testing ABSOLUTELY MANDATORY. Female-friendly at low doses (5-10 mg/day).",
-        "pl": "Doustna część klasycznego 'kosmetycznego' AAS — niska hepatotoksyczność (NIE 17α-alkilowany), brak aromatyzacji (1-metyl-DHT). Wada: niska biodostępność doustna (~6%) wymaga wysokiej dawki dziennej (50-100 mg = 5-10 tabletek). Najczęściej podrabiana tabletka AAS (substytut Anavar/Winstrol) — testowanie HPLC ABSOLUTNIE OBOWIĄZKOWE. Przyjazna dla kobiet w niskich dawkach (5-10 mg/dzień)."
+        "hu": "Klasszikus 'kozmetikai' AAS orális ága – alacsony hepatotoxicitás (NEM 17α-alkilált), nincs aromatizáció (1-metil-DHT). Hátulütő: alacsony orális bioavailability (~6%) miatt magas napi dózis kell (50-100 mg = 5-10 tabletta). A leggyakrabban hamisított AAS-tabletta (Anavar/Winstrol helyettesítés) – HPLC-tesztelés ABSZOLÚT KÖTELEZŐ. Női-barát alacsony dózisban (5-10 mg/nap).",
+        "en": "The oral arm of the classic 'cosmetic' AAS – low hepatotoxicity (NOT 17α-alkylated), no aromatization (1-methyl-DHT). Drawback: low oral bioavailability (~6%) requires high daily dose (50-100 mg = 5-10 tablets). The most commonly counterfeited AAS tablet (Anavar/Winstrol substitution) – HPLC testing ABSOLUTELY MANDATORY. Female-friendly at low doses (5-10 mg/day).",
+        "pl": "Doustna część klasycznego 'kosmetycznego' AAS – niska hepatotoksyczność (NIE 17α-alkilowany), brak aromatyzacji (1-metyl-DHT). Wada: niska biodostępność doustna (~6%) wymaga wysokiej dawki dziennej (50-100 mg = 5-10 tabletek). Najczęściej podrabiana tabletka AAS (substytut Anavar/Winstrol) – testowanie HPLC ABSOLUTNIE OBOWIĄZKOWE. Przyjazna dla kobiet w niskich dawkach (5-10 mg/dzień)."
       },
       "image": "/performance/tablet-pile-white.png",
       "halfLife": "4-6 h (parent methenolone, no active metabolite)",
       "halfLifeActive": "4-6 h",
-      "bioavailability": "~6% (alacsony — az acetát-észter gyors portális hidrolízis után parent methenolone hepatic metabolism; ezért magas dózisigény)",
+      "bioavailability": "~6% (alacsony – az acetát-észter gyors portális hidrolízis után parent methenolone hepatic metabolism; ezért magas dózisigény)",
       "onsetTime": {
         "hu": "1-2 h (orális, fast-absorption)",
         "en": "1-2 h (oral, fast-absorption)",
@@ -259,18 +259,18 @@ export default {
       "quality": {
         "pure": [
           "Tiszta fehér, jelölt tabletta (25 mg vagy 50 mg gyakori UGL dosing)",
-          "HPLC-tesztelés ABSZOLÚT KÖTELEZŐ — a Primobolan-Ac a leggyakrabban hamisított AAS-tabletta (Anavar/Winstrol helyettesítés)"
+          "HPLC-tesztelés ABSZOLÚT KÖTELEZŐ – a Primobolan-Ac a leggyakrabban hamisított AAS-tabletta (Anavar/Winstrol helyettesítés)"
         ],
         "caution": [
-          "Magas napi dózisigény (50-100 mg/nap) — gyakran 5-10 tabletta szétosztva napközben",
+          "Magas napi dózisigény (50-100 mg/nap) – gyakran 5-10 tabletta szétosztva napközben",
           "Hajhullás-acceleráció androgenetikus alopecia esetén (DHT-származék)",
           "Lipid-zavar: HDL csökkenés (mérsékelt)",
-          "Költség: orális Ac napi költség 5-15 EUR UGL minőségtől függően — drágább mint sok más orális AAS"
+          "Költség: orális Ac napi költség 5-15 EUR UGL minőségtől függően – drágább mint sok más orális AAS"
         ],
         "avoid": [
           "Bármilyen meglévő ALT/AST emelkedés (orális forma magas dózisigény miatt)",
           "Alkohol, paracetamol egyidejű használata",
-          "Hamisítás-kockázat magas — ha nincs HPLC-tesztelt forrás, NE használd",
+          "Hamisítás-kockázat magas – ha nincs HPLC-tesztelt forrás, NE használd",
           "Női felhasználás >10 mg/nap (virilizációs kockázat)"
         ]
       },
@@ -289,9 +289,9 @@ export default {
         "pl": "Methenolon Enanthate (Primobolan Depot, IM olejowy)"
       },
       "routeNote": {
-        "hu": "A kozmetikai AAS preferált formája — IM bypass-olja a first-pass-t ⇒ a legalacsonyabb hepatotoxicitású AAS-ek egyike, női-barát low-dose mellett is. ~5-7 napos felezés ⇒ heti 1-2 injekció, steady-state 3-4 hét. Extra hosszú detection window (4-6 hó) — WADA-tesztelt versenyzőnek tilos. Bayer Primobolan Depot ár: feketepiacon 150-250 EUR/ml (extrém drága) — UGL alternatíva gyakori, de hamisítás magas.",
-        "en": "The preferred form of the cosmetic AAS — IM bypasses first-pass ⇒ one of the lowest-hepatotoxicity AAS, female-friendly even at low dose. ~5-7 day half-life ⇒ once/twice weekly injection, steady-state 3-4 weeks. Extra-long detection window (4-6 months) — forbidden for WADA-tested athletes. Bayer Primobolan Depot price: 150-250 EUR/ml on the black market (extremely expensive) — UGL alternative common, but counterfeiting is high.",
-        "pl": "Preferowana forma kosmetycznego AAS — IM omija first-pass ⇒ jeden z AAS o najniższej hepatotoksyczności, przyjazny dla kobiet nawet w niskich dawkach. ~5-7-dniowy okres półtrwania ⇒ iniekcja raz/dwa razy w tygodniu, stan stacjonarny 3-4 tygodnie. Bardzo długie okno detekcji (4-6 miesięcy) — zakazany dla sportowców testowanych WADA. Cena Bayer Primobolan Depot: 150-250 EUR/ml na czarnym rynku (bardzo drogo) — alternatywa UGL powszechna, ale podróbki są wysokie."
+        "hu": "A kozmetikai AAS preferált formája – IM bypass-olja a first-pass-t ⇒ a legalacsonyabb hepatotoxicitású AAS-ek egyike, női-barát low-dose mellett is. ~5-7 napos felezés ⇒ heti 1-2 injekció, steady-state 3-4 hét. Extra hosszú detection window (4-6 hó) – WADA-tesztelt versenyzőnek tilos. Bayer Primobolan Depot ár: feketepiacon 150-250 EUR/ml (extrém drága) – UGL alternatíva gyakori, de hamisítás magas.",
+        "en": "The preferred form of the cosmetic AAS – IM bypasses first-pass ⇒ one of the lowest-hepatotoxicity AAS, female-friendly even at low dose. ~5-7 day half-life ⇒ once/twice weekly injection, steady-state 3-4 weeks. Extra-long detection window (4-6 months) – forbidden for WADA-tested athletes. Bayer Primobolan Depot price: 150-250 EUR/ml on the black market (extremely expensive) – UGL alternative common, but counterfeiting is high.",
+        "pl": "Preferowana forma kosmetycznego AAS – IM omija first-pass ⇒ jeden z AAS o najniższej hepatotoksyczności, przyjazny dla kobiet nawet w niskich dawkach. ~5-7-dniowy okres półtrwania ⇒ iniekcja raz/dwa razy w tygodniu, stan stacjonarny 3-4 tygodnie. Bardzo długie okno detekcji (4-6 miesięcy) – zakazany dla sportowców testowanych WADA. Cena Bayer Primobolan Depot: 150-250 EUR/ml na czarnym rynku (bardzo drogo) – alternatywa UGL powszechna, ale podróbki są wysokie."
       },
       "image": "/performance/oil-vial-yellow.png",
       "halfLife": "5-7 nap (Enantát észter; szabad methenolone t½ ~24 h hidrolízis után)",
@@ -331,7 +331,7 @@ export default {
       "detectionWindow": "Vizelet: 4-6 hónap (extra hosszú, enantát ester + 1-metil metabolitcsalád). WADA-akkreditált GC-MS és LC-MS/MS.",
       "quality": {
         "pure": [
-          "Bayer Primobolan Depot 100 mg/ml, 1ml ampulla — autentikus forrás holografikus jelöléssel",
+          "Bayer Primobolan Depot 100 mg/ml, 1ml ampulla – autentikus forrás holografikus jelöléssel",
           "UGL alternatíva: tiszta sárgás-arany olaj, 10ml fiola, HPLC-tesztelt forrás kötelező"
         ],
         "caution": [
@@ -341,7 +341,7 @@ export default {
           "Extra hosszú detection window: WADA-tesztelt verseny <6 hónappal a tervezett vég után tilos"
         ],
         "avoid": [
-          "Rövid (4-6 hét) ciklus NEM hatékony — Enan steady-state 3-4 hét után",
+          "Rövid (4-6 hét) ciklus NEM hatékony – Enan steady-state 3-4 hét után",
           "Több mint 12-14 hét folyamatos ciklus (HPTA-szuppresszió súlyos)",
           "WADA-tesztelt versenyező a teljes off-season alatt (detection window 6 hónap)",
           "Kardiovaszkuláris kockázat, női felhasználás (>50 mg/hét virilizáció)"

@@ -1,4 +1,4 @@
-// Auto-split from uiStrings.js — Phase 11 locale-split
+// Auto-split from uiStrings.js – Phase 11 locale-split
 // Edit this file directly; do not regenerate.
 
 export const UI_HU = {
@@ -83,7 +83,7 @@ export const UI_HU = {
   "entry.sec.quickstart.title.template": "{n} lépésben az indulásig",
   "entry.sec.anecdote.eyebrow": "Anekdota",
   "entry.sec.anecdote.title": "Tapasztalati beszámolók",
-  "entry.sec.anecdote.disclaimer": "Nem klinikai bizonyíték — felhasználói tapasztalatokon alapul.",
+  "entry.sec.anecdote.disclaimer": "Nem klinikai bizonyíték – felhasználói tapasztalatokon alapul.",
   "entry.sec.anecdote.placeholder": "Még nincs anekdota gyűjtésben.",
   "entry.sec.anecdote.expand": "Mutasd",
   "entry.sec.anecdote.collapse": "Bezárás",

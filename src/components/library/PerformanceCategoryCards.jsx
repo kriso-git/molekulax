@@ -103,7 +103,7 @@ function CategoryCard({ cat, count, active, t, tr, onClick }) {
       }}
       aria-pressed={active}
     >
-      {/* Motif loop backdrop (relevance per chemistry class) — kept subtle behind
+      {/* Motif loop backdrop (relevance per chemistry class) – kept subtle behind
           a dark gradient so the label/count stay fully legible. */}
       {showMotif && (
         <>
@@ -114,7 +114,7 @@ function CategoryCard({ cat, count, active, t, tr, onClick }) {
         </>
       )}
 
-      {/* Top-left accent radial wash — matches GlassCard pattern */}
+      {/* Top-left accent radial wash – matches GlassCard pattern */}
       <div
         className={`absolute -inset-px rounded-2xl pointer-events-none transition-opacity duration-500 ${
           active ? 'opacity-100' : 'opacity-60 group-hover:opacity-90'
@@ -124,7 +124,7 @@ function CategoryCard({ cat, count, active, t, tr, onClick }) {
         }}
       />
 
-      {/* Bottom-right accent glow halo — adds depth + chemistry-identity */}
+      {/* Bottom-right accent glow halo – adds depth + chemistry-identity */}
       <div
         className="absolute -bottom-16 -right-16 w-44 h-44 rounded-full pointer-events-none transition-all duration-500 opacity-30 group-hover:opacity-60 blur-3xl"
         style={{ background: accent }}

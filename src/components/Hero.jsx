@@ -15,7 +15,7 @@ export default function Hero() {
   const { t } = useLang()
   const tickerText = t('hero.ticker')
   // Clean item list (no empties), so the marquee renders exactly ONE bullet after
-  // every item — including at the loop seam (the old split/repeat left a trailing
+  // every item – including at the loop seam (the old split/repeat left a trailing
   // empty segment → a doubled "• •" where the track wrapped).
   const tickerItems = tickerText.split('•').map(s => s.trim()).filter(Boolean)
 

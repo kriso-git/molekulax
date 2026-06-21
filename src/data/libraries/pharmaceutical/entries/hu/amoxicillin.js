@@ -50,8 +50,8 @@ export default {
     }
   ],
   "mechanism": "A β-laktám-gyűrű kötődik a baktérium sejtfal-szintézis kulcsenzimeinek aktív centrumába (PBP, penicillin-binding protein, transzpeptidázok), gátolva a peptidoglikán-keresztkötést. A baktérium-sejtfal gyengül, az ozmotikus stressz okozta lízishez vezet. Baktericid hatású szuszceptibilis organizmusokon. Az osztott pszeudo-irreverzibilis kötés miatt a hatás dózis-függő és idő-függő (T > MIC az AUC fontosabb prediktora a klinikai válasznak).",
-  "legalStatus": "EU/HU: vényköteles (Amoxil, Ospamox, Hiconcil, Duomox, generikus). USA: FDA Rx. Antibiotikum-stewardship-program szigorú felírási feltételekkel — empirikus felírás csak megerősített bakteriális infekcióra. WHO AWaRe kategória: ACCESS (széles körű, alacsony rezisztencia-kockázattal).",
-  "bioavailability": "~74-92% (orális, étkezéstől kis mértékben függő — FDA Amoxil label)",
+  "legalStatus": "EU/HU: vényköteles (Amoxil, Ospamox, Hiconcil, Duomox, generikus). USA: FDA Rx. Antibiotikum-stewardship-program szigorú felírási feltételekkel – empirikus felírás csak megerősített bakteriális infekcióra. WHO AWaRe kategória: ACCESS (széles körű, alacsony rezisztencia-kockázattal).",
+  "bioavailability": "~74-92% (orális, étkezéstől kis mértékben függő – FDA Amoxil label)",
   "onsetTime": "1-2 h (plasma peak), 24-72 h (clinical symptom response)",
   "halfLife": "1-1.5 h (normal renal function); extends to 7-21 h in renal failure",
   "atcCode": "J01CA04",
@@ -68,7 +68,7 @@ export default {
   "contraindications": [
     "Ismert penicillin- vagy β-laktám-allergia (anaphylaxia anamnézis)",
     "Súlyos hipersenzitivitás (Stevens-Johnson, TEN, DRESS) anamnézis",
-    "Mononukleózis (EBV) infekció — Amoxicillin makulopapuláris bőrkiütést okoz 80-95%-ban"
+    "Mononukleózis (EBV) infekció – Amoxicillin makulopapuláris bőrkiütést okoz 80-95%-ban"
   ],
   "commonSideEffects": [
     "GI: hasmenés (10%, antibiotikum-asszociált), hányinger (5%), hányás (3%)",
@@ -96,7 +96,7 @@ export default {
     "Dentális endocarditisz-prophylaxis ABZS gold-standard (AHA 2007 guideline)"
   ],
   "quickStart": [
-    "Diagnózis MEGERŐSÍTÉS előbb — antibiotikumot CSAK megerősített bakteriális infekcióra (nem virális)",
+    "Diagnózis MEGERŐSÍTÉS előbb – antibiotikumot CSAK megerősített bakteriális infekcióra (nem virális)",
     "Standard felnőtt dózis 500 mg 8 óránként (q8h) vagy 875 mg 12 óránként (q12h)",
     "Súlyos infekcióban 1000 mg q8h vagy q12h, akár Augmentin-formában (Amoxicillin + Clavulansav)",
     "Étkezéssel vagy anélkül, hidratáció (2 L/nap) a kristalluria mitigálására",
@@ -124,7 +124,7 @@ export default {
     ],
     "caution": [
       "Penicillin-allergia anamnézis: cefalosporin keresztreaktivitás 1-10%, részletes allergológiai értékelés ajánlott",
-      "Mononukleózis (EBV) gyanújánál NE adni — 80-95%-os bőrkiütés-kockázat",
+      "Mononukleózis (EBV) gyanújánál NE adni – 80-95%-os bőrkiütés-kockázat",
       "Vesefunkció-zavar (eGFR < 30): dóziscsökkentés és/vagy adagolási intervallum-meghosszabbítás szükséges",
       "Antibiotikum-asszociált hasmenés (Clostridioides difficile colitis figyelmeztető jelei)"
     ],
@@ -134,7 +134,7 @@ export default {
       "Mononukleózis vagy egyéb virális tetszetős infekció (közönséges nátha, influenza)",
       "Önkezelés sub-terápiás dózisokkal (rezisztencia-fejlődés)",
       "Korábbi amoxicillin/clavulansav-indukált kolestatikus sárgaság vagy májfunkció-zavar anamnézis",
-      "Súlyos vesekárosodás (CrCl <30 ml/min) dóziskorrekció nélkül — akkumuláció és toxicitás-kockázat",
+      "Súlyos vesekárosodás (CrCl <30 ml/min) dóziskorrekció nélkül – akkumuláció és toxicitás-kockázat",
       "Korábbi C. difficile-asszociált pszeudomembranózus colitis béta-laktám antibiotikum után"
     ]
   },
@@ -196,7 +196,7 @@ export default {
     },
     {
       "q": "Mit jelent az \"Amoxicillin-bőrkiütés EBV-vel\"?",
-      "a": "Az infectious mononukleózis (Epstein-Barr vírus, \"kissing disease\") egyik klasszikus jele a makulopapuláris bőrkiütés Amoxicillin (vagy Ampicillin) adásakor — 80-95%-os incidencia. NEM IgE-mediált penicillin-allergia, hanem virális szuperinfekciós immunkomplex-mechanizmus. A betegnek később NEM lesz penicillin-allergiás. Mégis a kezelést azonnal le kell állítani, és az EBV-szerológia (heterofil ellenanyag, anti-VCA IgM) ellenőrzendő. Más antibiotikum-választás (vagy nincs szükség egyáltalán, mert EBV virális)."
+      "a": "Az infectious mononukleózis (Epstein-Barr vírus, \"kissing disease\") egyik klasszikus jele a makulopapuláris bőrkiütés Amoxicillin (vagy Ampicillin) adásakor – 80-95%-os incidencia. NEM IgE-mediált penicillin-allergia, hanem virális szuperinfekciós immunkomplex-mechanizmus. A betegnek később NEM lesz penicillin-allergiás. Mégis a kezelést azonnal le kell állítani, és az EBV-szerológia (heterofil ellenanyag, anti-VCA IgM) ellenőrzendő. Más antibiotikum-választás (vagy nincs szükség egyáltalán, mert EBV virális)."
     },
     {
       "q": "Miért kell befejezni a teljes antibiotikum-kúrát?",
@@ -222,6 +222,6 @@ export default {
       "high": 1000
     },
     "unit": "mg",
-    "note": "Alacsony (500 mg q8h, 3x/nap): standard otitis media, sinusitis, akut UTI, mild infekció. Mérsékelt (875 mg q12h, 2x/nap): közösségi pneumónia, súlyosabb infekció — egyszerűbb compliance miatt sokszor előnyösebb. Magas (1000 mg q8h, 3x/nap): súlyos infekció, H. pylori-eradikáció triple-terápia, dentális endocarditisz-prophylaxis 2 g egyszerre. Étkezéssel vagy anélkül, hidratáció. Teljes kúra-idő befejezni — orvosi utasítás szerint, általában 5-14 nap."
+    "note": "Alacsony (500 mg q8h, 3x/nap): standard otitis media, sinusitis, akut UTI, mild infekció. Mérsékelt (875 mg q12h, 2x/nap): közösségi pneumónia, súlyosabb infekció – egyszerűbb compliance miatt sokszor előnyösebb. Magas (1000 mg q8h, 3x/nap): súlyos infekció, H. pylori-eradikáció triple-terápia, dentális endocarditisz-prophylaxis 2 g egyszerre. Étkezéssel vagy anélkül, hidratáció. Teljes kúra-idő befejezni – orvosi utasítás szerint, általában 5-14 nap."
   }
 }

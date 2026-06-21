@@ -1,4 +1,4 @@
-// dnaField.js — framework-agnostic Three.js "DNA data-network" background.
+// dnaField.js – framework-agnostic Three.js "DNA data-network" background.
 //
 // Renders many small DNA double-helices styled as glowing data networks:
 // glassy/iridescent nucleotide NODES connected by additive network EDGES
@@ -43,7 +43,7 @@ export function createDnaField(canvas, params = {}) {
   // Feature-detect WebGL2 BEFORE constructing the renderer, so a no-GPU / headless
   // environment (the render-smoke runner) or a browser without WebGL degrades
   // gracefully (caller's try/catch) instead of three.js emitting a console.error
-  // — which would otherwise fail the smoke gate and flash an error to real users.
+  // – which would otherwise fail the smoke gate and flash an error to real users.
   const gl = canvas.getContext('webgl2', { alpha: true, antialias: !isMobile, powerPreference: 'high-performance' })
   if (!gl) throw new Error('WebGL2 unavailable')
 
@@ -83,7 +83,7 @@ export function createDnaField(canvas, params = {}) {
   const tmp = new THREE.Object3D()
 
   let field = []         // { grp, spin, drift, baseY }
-  let ownedMeshes = []   // InstancedMeshes — dispose to free instance buffers
+  let ownedMeshes = []   // InstancedMeshes – dispose to free instance buffers
   let ownedMats = []     // materials to dispose / live-update
   let ownedGeos = []     // per-build BufferGeometries (network edges) to dispose
 

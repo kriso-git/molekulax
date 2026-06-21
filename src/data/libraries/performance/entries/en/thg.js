@@ -28,7 +28,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Tetrahydrogestrinone (\"The Clear\"), designer AAS synthesized by Patrick Arnold in 2002 for BALCO Conte. Don Catlin (UCLA) discovered it from an anonymous used-syringe sample in 2003. Marion Jones, Tim Montgomery, Barry Bonds scandal. Today USA Schedule III, never an Rx.",
-  "description": "THG (Tetrahydrogestrinone) is a designer anabolic steroid: a tetrahydro-Gestrinone analog synthesized in 2002 by Patrick Arnold (inventor of 1-Andro) for Victor Conte, owner of BALCO Laboratories (Burlingame, CA), for the doping of athlete clients. BALCO marketed it under the code name \"The Clear\"; as a designer it was specifically created to NOT BE DETECTABLE by pre-2003 WADA-accredited assays. In June 2003 an anonymous whistleblower (Trevor Graham, a coach) sent a used THG syringe to Don Catlin's lab (UCLA Olympic Analytical Laboratory), from which Catlin identified the parent compound by LC-MS/MS. The 2003-2007 grand jury investigation that followed implicated 6+ Olympic-World Championship athletes: Marion Jones (5 Olympic medals stripped 2007), Tim Montgomery (100m WR 9.78s stripped), Barry Bonds (MLB perjury indictment), Bill Romanowski (NFL), Trevor Graham coach (lifetime ban). In 2004 the US Congress Anabolic Steroid Control Act amendment placed it under Schedule III. Chemically it is a tetrahydro-reduced derivative of Gestrinone (an existing progestin/anti-progestin) — high AR affinity + progestogenic activity dual action. Never an Rx, exclusively a BALCO-designed designer steroid. WADA-banned year-round.",
+  "description": "THG (Tetrahydrogestrinone) is a designer anabolic steroid: a tetrahydro-Gestrinone analog synthesized in 2002 by Patrick Arnold (inventor of 1-Andro) for Victor Conte, owner of BALCO Laboratories (Burlingame, CA), for the doping of athlete clients. BALCO marketed it under the code name \"The Clear\"; as a designer it was specifically created to NOT BE DETECTABLE by pre-2003 WADA-accredited assays. In June 2003 an anonymous whistleblower (Trevor Graham, a coach) sent a used THG syringe to Don Catlin's lab (UCLA Olympic Analytical Laboratory), from which Catlin identified the parent compound by LC-MS/MS. The 2003-2007 grand jury investigation that followed implicated 6+ Olympic-World Championship athletes: Marion Jones (5 Olympic medals stripped 2007), Tim Montgomery (100m WR 9.78s stripped), Barry Bonds (MLB perjury indictment), Bill Romanowski (NFL), Trevor Graham coach (lifetime ban). In 2004 the US Congress Anabolic Steroid Control Act amendment placed it under Schedule III. Chemically it is a tetrahydro-reduced derivative of Gestrinone (an existing progestin/anti-progestin) – high AR affinity + progestogenic activity dual action. Never an Rx, exclusively a BALCO-designed designer steroid. WADA-banned year-round.",
   "keyInfo": [
     {"label": "Mechanism", "value": "AR agonist + progesterone-receptor agonist, designer non-aromatizing"},
     {"label": "Anabolic:Androgenic", "value": "Extrapolated ~150:75 (no clinical trial)"},
@@ -42,8 +42,8 @@ export default {
   "halfLife": "~16-24 h (extrapolated from gestrinone; clinical trial absent)",
   "halfLifeActive": "~16-24 h",
   "interactionsWith": ["testosterone", "cabergoline", "warfarin", "tudca"],
-  "aromatization": "No — tetrahydro-triene structure NOT a CYP19 substrate; designer purpose explicit non-aromatizing (Catlin 2002 PMID 12352283, Death 2004 PMID 15579773)",
-  "hepatotoxicity": "Data missing — no peer-reviewed clinical trial. Structurally NOT 17α-alkylated, so expected low-moderate hepatotoxicity (extrapolated from gestrinone). But long-term safety profile completely unknown.",
+  "aromatization": "No – tetrahydro-triene structure NOT a CYP19 substrate; designer purpose explicit non-aromatizing (Catlin 2002 PMID 12352283, Death 2004 PMID 15579773)",
+  "hepatotoxicity": "Data missing – no peer-reviewed clinical trial. Structurally NOT 17α-alkylated, so expected low-moderate hepatotoxicity (extrapolated from gestrinone). But long-term safety profile completely unknown.",
   "wadaStatus": "banned",
   "androgenicRatio": "Extrapolated ~150:75 (no clinical trial)",
   "bindingAffinity": "High AR affinity + moderate progesterone receptor (PR) agonist activity (Death 2004 PMID 15579773 in vitro receptor-binding assay).",
@@ -55,11 +55,11 @@ export default {
     "Sublingual oil drop compatible (BALCO classical protocol)"
   ],
   "quickStart": [
-    "HISTORICAL ENTRY — modern WADA labs detect since 2003, designer purpose lost",
+    "HISTORICAL ENTRY – modern WADA labs detect since 2003, designer purpose lost",
     "Never had clinical trial → safety profile UNKNOWN",
     "PR activity requires prolactin monitor (cabergoline standby)",
     "PCT (Clomid + Nolvadex 4-6 weeks) needed",
-    "Modern alternatives recommended (Test, Anavar, etc.) — THG exclusively historical-educational interest"
+    "Modern alternatives recommended (Test, Anavar, etc.) – THG exclusively historical-educational interest"
   ],
   "expectations": [
     {"label": "Historical BALCO protocol", "body": "Sublingual oil drop ~50 µg dose 1-2x daily. Acute effect minimal, cumulative performance boost perceptible after 2-3 weeks."},
@@ -72,7 +72,7 @@ export default {
       "Modern UGL: virtually nonexistent (designer purpose lost, low demand)"
     ],
     "caution": [
-      "Clinical trial MISSING — safety data unknown",
+      "Clinical trial MISSING – safety data unknown",
       "Prolactin elevation from PR activity → gyno risk (paradoxical though it doesn't aromatize)",
       "Modern WADA labs detect (designer purpose lost)",
       "Psychological side effects from individual case reports (Marion Jones grand jury testimony: anxiety, sleep disturbance)"
@@ -81,7 +81,7 @@ export default {
       "Any athlete during WADA-tested career (detectable)",
       "Female use (PR activity progestogenic side effects)",
       "Planned fatherhood (PR activity HPG-axis complications)",
-      "Modern bodybuilding goal — better-documented alternatives exist (Test, Anavar)"
+      "Modern bodybuilding goal – better-documented alternatives exist (Test, Anavar)"
     ]
   },
   "interactions": [
@@ -98,11 +98,11 @@ export default {
     {"title": "Effects of androgenic-anabolic steroids in athletes.", "authors": "Hartgens F, Kuipers H", "journal": "Sports Med", "pmid": "15248788"}
   ],
   "faq": [
-    {"q": "How did Catlin discover THG?", "a": "In June 2003 coach Trevor Graham (coach of Marion Jones, Tim Montgomery) anonymously sent a used syringe to Don Catlin's UCLA Olympic Analytical Laboratory. Catlin identified the parent compound by LC-MS/MS — a compound the classical AAS target lists did NOT contain — a designer steroid was discovered. The 2002 solo publication (PMID 12352283) describes the chemical structure, the 2004 follow-up (PMID 15170747) the urine-detection method. The anonymous mail was a personal vendetta by Trevor Graham against Victor Conte (BALCO owner), who was also doping another athlete that Graham wanted out of competition — paradoxically Graham lost the most, because he and his own athlete group also collapsed in the investigation."},
+    {"q": "How did Catlin discover THG?", "a": "In June 2003 coach Trevor Graham (coach of Marion Jones, Tim Montgomery) anonymously sent a used syringe to Don Catlin's UCLA Olympic Analytical Laboratory. Catlin identified the parent compound by LC-MS/MS – a compound the classical AAS target lists did NOT contain – a designer steroid was discovered. The 2002 solo publication (PMID 12352283) describes the chemical structure, the 2004 follow-up (PMID 15170747) the urine-detection method. The anonymous mail was a personal vendetta by Trevor Graham against Victor Conte (BALCO owner), who was also doping another athlete that Graham wanted out of competition – paradoxically Graham lost the most, because he and his own athlete group also collapsed in the investigation."},
     {"q": "What was the BALCO scandal?", "a": "BALCO (Bay Area Laboratory Co-operative, Burlingame CA) was a supplement company owned by Victor Conte. From late 1990s to 2003 it secretly supplied doping agents (\"The Clear\" = THG, \"The Cream\" = Testosterone-Epitestosterone topical) to elite athletes: Marion Jones (Olympics 2000), Tim Montgomery (100m WR), Bill Romanowski (NFL), Barry Bonds (MLB), Bill Walsh (track coach) and others. The 2003 Catlin discovery + Trevor Graham anonymous tip + IRS-USADA joint grand jury investigation 2004-2007 indicted 6 main figures; Conte got 4 months prison + 4 months house arrest. Marion Jones admitted use in 2007, 5 Olympic medals (2 gold, 3 bronze) stripped."},
-    {"q": "Why was it \"undetectable\"?", "a": "THG's structure was NOT on the classical AAS target lists — pre-2003 GC-MS WADA screening was specifically set up for known compound patterns (Test, Nandrolone, Stanozolol metabolites). THG's tetrahydro-triene structure differed from these, and its metabolite pattern was also different. It could only be identified by DIRECT parent compound LC-MS/MS detection, which was NOT done in routine pre-2003 screening. Catlin 2004 PMID 15170747 built the urine detection method; since then every WADA-accredited lab has it on its target list."},
+    {"q": "Why was it \"undetectable\"?", "a": "THG's structure was NOT on the classical AAS target lists – pre-2003 GC-MS WADA screening was specifically set up for known compound patterns (Test, Nandrolone, Stanozolol metabolites). THG's tetrahydro-triene structure differed from these, and its metabolite pattern was also different. It could only be identified by DIRECT parent compound LC-MS/MS detection, which was NOT done in routine pre-2003 screening. Catlin 2004 PMID 15170747 built the urine detection method; since then every WADA-accredited lab has it on its target list."},
     {"q": "Marion Jones case?", "a": "Marion Jones won 5 medals at the 2000 Sydney Olympics (3 gold: 100m, 200m, 4x400m; 2 bronze: long jump, 4x100m). She denied in the 2003-2007 BALCO grand jury investigation. In October 2007 she admitted that she received \"The Clear\" (THG) from Victor Conte in sublingual drop form between 1999-2001. The IOC stripped all 5 medals, USA Track & Field imposed a 2-year ban. Jones received 6 months prison + 2 years probation in 2008 from a US court for perjury (lying under oath during the investigation). Historically one of the biggest doping scandals in USA athletics."},
-    {"q": "Modern relevance?", "a": "Minimal. THG's designer purpose (\"undetectable\") was lost after 2003 — every WADA-accredited lab detects it by LC-MS/MS. In bodybuilding context it was never popular (BALCO specifically supplied elite athletes, no UGL market sale). Today the entry content is exclusively HISTORICAL-EDUCATIONAL interest — one of the most important scandal compounds in sport doping history + giving meaning to the 2004 USA Anabolic Steroid Control Act amendment (explicit Schedule III placement of designer AAS)."}
+    {"q": "Modern relevance?", "a": "Minimal. THG's designer purpose (\"undetectable\") was lost after 2003 – every WADA-accredited lab detects it by LC-MS/MS. In bodybuilding context it was never popular (BALCO specifically supplied elite athletes, no UGL market sale). Today the entry content is exclusively HISTORICAL-EDUCATIONAL interest – one of the most important scandal compounds in sport doping history + giving meaning to the 2004 USA Anabolic Steroid Control Act amendment (explicit Schedule III placement of designer AAS)."}
   ],
   "related": ["testosterone-info", "nandrolone-info", "trenbolone-info", "anavar-info"],
   "doseCalc": {
@@ -116,7 +116,7 @@ export default {
       "label": "Pre-cycle",
       "timing": "2-4 weeks before cycle start",
       "markers": "Hormone panel: Total T, Free T, E2, LH, FSH, SHBG, Prolactin (critical due to PR activity). Lipid panel. Hepatic.",
-      "purpose": "Prolactin baseline critical due to PR activity. Limited evidence — safety profile unknown."
+      "purpose": "Prolactin baseline critical due to PR activity. Limited evidence – safety profile unknown."
     },
     "midCycle": {
       "label": "Mid-cycle",
@@ -134,7 +134,7 @@ export default {
       "label": "On cruise (NOT standard)",
       "timing": "THG cruise was never a protocol",
       "markers": "N/A",
-      "purpose": "Limited evidence — long-term cruise safety unknown."
+      "purpose": "Limited evidence – long-term cruise safety unknown."
     }
   }
 }

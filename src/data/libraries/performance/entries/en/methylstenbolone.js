@@ -41,7 +41,7 @@ export default {
       "value": "USA: DASCA 2014 controlled. EU: not uniformly regulated."
     }
   ],
-  "mechanism": "Strong AR agonist. **AR selectivity**: the 2,3α-epithio group blocks both aromatase affinity AND 5α-reductase conversion, giving a clean AR-only agonist profile (no E2 or DHT conversion). **The SYMMETRIC 660:660 ratio means prostate androgenicity is AS STRONG as the anabolic effect** — so prostate side effects (acne, aggression, androgenic alopecia, prostate hypertrophy) are more pronounced than Superdrol (400:20 ratio). The 17α-methyl group provides oral bioavailability but causes hepatotoxicity.",
+  "mechanism": "Strong AR agonist. **AR selectivity**: the 2,3α-epithio group blocks both aromatase affinity AND 5α-reductase conversion, giving a clean AR-only agonist profile (no E2 or DHT conversion). **The SYMMETRIC 660:660 ratio means prostate androgenicity is AS STRONG as the anabolic effect** – so prostate side effects (acne, aggression, androgenic alopecia, prostate hypertrophy) are more pronounced than Superdrol (400:20 ratio). The 17α-methyl group provides oral bioavailability but causes hepatotoxicity.",
   "legalStatus": "USA: controlled since DASCA 2014. EU: not uniformly regulated, illegal without prescription. WADA: banned.",
   "onsetTime": "7-10 days",
   "halfLife": "8-12 h",
@@ -50,8 +50,8 @@ export default {
     "NSAIDs",
     "liver hepatotoxins"
   ],
-  "aromatization": "No — 2α,17α-dimethyl designer steroid, NOT a CYP19 substrate; \"dry gains\" typical (Cohen 2014 NEJM letter designer AAS)",
-  "hepatotoxicity": "Very high — designer 17α-alkylated, severe DILI cases documented (acute hepatitis within 4-6 weeks) (PubMed Robles-Diaz 2015)",
+  "aromatization": "No – 2α,17α-dimethyl designer steroid, NOT a CYP19 substrate; \"dry gains\" typical (Cohen 2014 NEJM letter designer AAS)",
+  "hepatotoxicity": "Very high – designer 17α-alkylated, severe DILI cases documented (acute hepatitis within 4-6 weeks) (PubMed Robles-Diaz 2015)",
   "wadaStatus": "banned",
   "androgenicRatio": "660:660",
   "benefits": [

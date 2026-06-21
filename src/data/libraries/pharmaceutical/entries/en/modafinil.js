@@ -51,7 +51,7 @@ export default {
   ],
   "mechanism": "Selective low-affinity dopamine transporter (DAT) inhibition raises synaptic dopamine in hypothalamus and specific prefrontal areas, and activates histaminergic tuberomammillary neurons and orexin-containing lateral hypothalamic system. These pathways selectively promote wakefulness, unlike amphetamines' broad CNS stimulation. No significant noradrenergic or serotonergic effect at standard dose.",
   "legalStatus": "EU/HU: prescription only (Provigil, Modiodal, generics). USA: DEA Schedule IV (scheduled, low abuse potential, but NOT non-scheduled). In HU specialist prescription (neurologist, sleep physician) recommended. Generic forms widely available (originator patent expired 2012).",
-  "bioavailability": "Not determined (aqueous insolubility precludes IV); oral tablet ≈ aqueous suspension — FDA Provigil label",
+  "bioavailability": "Not determined (aqueous insolubility precludes IV); oral tablet ≈ aqueous suspension – FDA Provigil label",
   "onsetTime": "30-60 min, peak plasma 2-4 h",
   "halfLife": "12-15 h (parent); R-modafinil 14-16 h, S-modafinil 4-5 h (armodafinil = R-enantiomer)",
   "atcCode": "N06BA07",
@@ -96,7 +96,7 @@ export default {
     "Low abuse potential (Schedule IV, vs Schedule II amphetamines)"
   ],
   "quickStart": [
-    "CONFIRM diagnosis of narcolepsy/SWSD/OSA by specialist (polysomnography, MSLT) — modafinil cannot be initiated off-label for cognitive enhancement under pharma indication",
+    "CONFIRM diagnosis of narcolepsy/SWSD/OSA by specialist (polysomnography, MSLT) – modafinil cannot be initiated off-label for cognitive enhancement under pharma indication",
     "Standard dose 200 mg once in morning, with or without food",
     "For SWSD dose 1 h before shift",
     "ON ANY RASH STOP IMMEDIATELY and emergency consult (SJS/TEN risk)",
@@ -123,10 +123,10 @@ export default {
       "Online \"modafinil\" sources (Modalert, Modvigil) GENERICS CAN BE COUNTERFEIT, API content variable, FDA warning"
     ],
     "caution": [
-      "FDA boxed warning 2007: skin reactions (SJS/TEN), DRESS syndrome, multi-organ hypersensitivity — ANY RASH = IMMEDIATE STOP",
+      "FDA boxed warning 2007: skin reactions (SJS/TEN), DRESS syndrome, multi-organ hypersensitivity – ANY RASH = IMMEDIATE STOP",
       "Psychiatric side effects: anxiety, mania, psychosis, aggression (mainly with psychiatric history)",
       "Cardiovascular: BP elevation, palpitations, rare arrhythmias",
-      "Oral contraceptive efficacy REDUCED (CYP3A4 induction) — contraceptive modification mandatory"
+      "Oral contraceptive efficacy REDUCED (CYP3A4 induction) – contraceptive modification mandatory"
     ],
     "avoid": [
       "Prior SJS/TEN/DRESS history",
@@ -134,7 +134,7 @@ export default {
       "Psychosis, severe anxiety (relative)",
       "Off-label cognitive enhancement IN A DIFFERENT legal frame (Nootropic library separate framing)",
       "Pregnancy and breastfeeding (animal embryotoxicity, no human safety data)",
-      "Sole reliance on oral hormonal contraception during treatment and 1 month after (CYP3A4 induction — reduced efficacy, supplementary barrier method required)",
+      "Sole reliance on oral hormonal contraception during treatment and 1 month after (CYP3A4 induction – reduced efficacy, supplementary barrier method required)",
       "Ischemic ECG changes, chest pain, or prior arrhythmia history under stimulant therapy"
     ]
   },

@@ -52,7 +52,7 @@ export default {
   ],
   "mechanism": "A norepinefrin és dopamin reuptake gátlása mérsékelt mértékben (NDRI, ~3x DAT/NET szelektivitás SERT-tel szemben), valamint a neurális nikotin-receptor (α3β2, α4β2) antagonista hatása. A nikotin-receptor blokk magyarázza a dohányzás-leszokást támogató hatást: csökkenti a nikotin-elvonás dysphoriás komponensét. Aktív metabolit (hidroxibupropion) hasonlóan aktív, és a CYP2B6-katalizált képződése jelentős inter-individuális variabilitást mutat.",
   "legalStatus": "EU/HU: vényköteles (Wellbutrin, Zyban smoking-cessation, generikus). USA: FDA Rx, nem ütemezett. SR (sustained release) és XL (extended release) formulációk standardak. Generikus formák széles körben hozzáférhetőek.",
-  "bioavailability": "Abszolút értékben nem karakterizált (IV formula nincs); gyors orális felszívódás, Tmax ~3 h — FDA Wellbutrin label",
+  "bioavailability": "Abszolút értékben nem karakterizált (IV formula nincs); gyors orális felszívódás, Tmax ~3 h – FDA Wellbutrin label",
   "onsetTime": "1-2 weeks (motivation, focus, energy), 4-6 weeks (full antidepressant response)",
   "halfLife": "~21 h (parent); hydroxybupropion metabolite 20-37 h, similar activity",
   "atcCode": "N06AX12",
@@ -66,16 +66,16 @@ export default {
   ],
   "contraindications": [
     "Görcsroham-zavar (epilepszia) anamnézis vagy ismert hajlam",
-    "Étkezési zavarok (bulimia, anorexia nervosa) — emelt görcs-kockázat",
+    "Étkezési zavarok (bulimia, anorexia nervosa) – emelt görcs-kockázat",
     "Akut alkohol- vagy benzodiazepin-elvonás (görcs-kockázat)",
     "MAOi egyidejű vagy 14 napon belüli használat (hipertenzív krízis)"
   ],
   "commonSideEffects": [
     "Inszomnia (15-20%), szájszárazság (10-15%), fejfájás (10%)",
-    "Agitáció, szorongás-fokozódás (5-10%) — főleg az első hetekben",
+    "Agitáció, szorongás-fokozódás (5-10%) – főleg az első hetekben",
     "Vérnyomás-emelkedés (mérsékelt, dóziseffekt)",
     "Tremor, izzadás, súlyveszteség (5-8%)",
-    "Súlyos, ritka: görcsroham (0,1% standard dózisnál, 0,4% 450 mg-nál — DÓZISFÜGGŐ), pszichotikus tünet, mánia (BD-betegen)"
+    "Súlyos, ritka: görcsroham (0,1% standard dózisnál, 0,4% 450 mg-nál – DÓZISFÜGGŐ), pszichotikus tünet, mánia (BD-betegen)"
   ],
   "cyp450": [
     "CYP2B6 substrate (primary metabolism)",
@@ -99,8 +99,8 @@ export default {
   "quickStart": [
     "SR-formulációval indítani: 150 mg/nap (reggel) 4 napig, majd 150 mg 2x/nap",
     "XL-formuláció: 150 mg/nap reggel 7 napig, majd 300 mg/nap reggel",
-    "NE adja este (inszomnia-kockázat) — utolsó dózis legkésőbb 17 óráig",
-    "Max-dózis SR 400 mg/nap, XL 450 mg/nap — felette EXPONENCIÁLISAN nő a görcs-kockázat",
+    "NE adja este (inszomnia-kockázat) – utolsó dózis legkésőbb 17 óráig",
+    "Max-dózis SR 400 mg/nap, XL 450 mg/nap – felette EXPONENCIÁLISAN nő a görcs-kockázat",
     "Tablettát NE törje meg (SR/XL formuláció dose-dumping kockázata)"
   ],
   "expectations": [
@@ -134,12 +134,12 @@ export default {
       "MAOi (egyidejű vagy 14 napon belüli)",
       "Linezolid vagy IV metilénkék (MAO-gátló hatás, szerotonin-szindróma kockázat)",
       "Hirtelen antiepileptikum- vagy szedatohipnotikum-elvonás (görcsroham-küszöb csökkenés)",
-      "Súlyos májkárosodás (Child-Pugh ≥10) — kontraindikált az FDA-címke szerint"
+      "Súlyos májkárosodás (Child-Pugh ≥10) – kontraindikált az FDA-címke szerint"
     ]
   },
   "interactions": [
     "SSRI (Sertralin, Fluoxetin) augmentációja: szexuális diszfunkció mitigálása",
-    "Naltrexone + Bupropion (Contrave) — FDA súlykezelés-indikáció obesitásra",
+    "Naltrexone + Bupropion (Contrave) – FDA súlykezelés-indikáció obesitásra",
     "Nikotin-patch: 30,3% 1-éves absztinencia (vs 16,4% placebo)",
     "Vareniclin (Chantix): NEM ajánlott kombináció (additív CV-kockázat)",
     "Stimuláns ADHD-gyógyszer (Methylphenidate, Lisdexamfetamine): óvatos kombináció (görcs- és CV-kockázat)"
@@ -203,7 +203,7 @@ export default {
     },
     {
       "q": "Kombinálható-e SSRI-vel?",
-      "a": "Igen, ez egy gyakori klinikai stratégia: SSRI (pl. Sertralin) + Bupropion az SSRI-indukált szexuális diszfunkció mitigálására és/vagy a hiányos AD-válasz augmentációjára. Az NDRI-mechanizmus a SERT-mechanizmus mellett kiegészítő (dopamin+norepinefrin emelkedés szerotonin emelkedés mellett). KIVÉTEL: Fluoxetin + Bupropion kombinációnál fokozott figyelem (Fluoxetin erős CYP2D6-inhibitor, Bupropion erős CYP2D6-inhibitor — kumulatív CYP-blokk)."
+      "a": "Igen, ez egy gyakori klinikai stratégia: SSRI (pl. Sertralin) + Bupropion az SSRI-indukált szexuális diszfunkció mitigálására és/vagy a hiányos AD-válasz augmentációjára. Az NDRI-mechanizmus a SERT-mechanizmus mellett kiegészítő (dopamin+norepinefrin emelkedés szerotonin emelkedés mellett). KIVÉTEL: Fluoxetin + Bupropion kombinációnál fokozott figyelem (Fluoxetin erős CYP2D6-inhibitor, Bupropion erős CYP2D6-inhibitor – kumulatív CYP-blokk)."
     },
     {
       "q": "Súlygyarapodás kockázata?",
@@ -230,7 +230,7 @@ export default {
       }
     ],
     "unit": "mg/nap",
-    "note": "SR 150 mg/nap reggel 4 nap, majd 150 mg 2x/nap (8+ órás távolság). XL 150 mg/nap reggel 7 nap, majd 300 mg/nap. Max-dózis SR 400 / XL 450 mg/nap — felette EXPONENCIÁLISAN nő a görcs-kockázat. NE adja este. Tablettát NE törje meg."
+    "note": "SR 150 mg/nap reggel 4 nap, majd 150 mg 2x/nap (8+ órás távolság). XL 150 mg/nap reggel 7 nap, majd 300 mg/nap. Max-dózis SR 400 / XL 450 mg/nap – felette EXPONENCIÁLISAN nő a görcs-kockázat. NE adja este. Tablettát NE törje meg."
   },
-  "anecdote": "Anekdotikus beszámolók szerint a Bupropion sokoldalú NDRI antidepresszáns, érzékelhető motiváció- és hajtóerő-fokozó hatással a dopamin és noradrenalin emelésén keresztül. Közösségi beszámolók szerint erős hatékonyságot mutat alacsony motivációjú depresszióban, beleértve az ADHD-átfedéses eseteket is. Alacsony DAT-affinitása arra utal, hogy inkább VMAT-2-n keresztüli dopaminerg modulátorként hat, mint közvetlen visszavétel-blokkolóként. A nikotinos receptor antagonizmus áll az FDA által jóváhagyott dohányzásleszoktatási indikáció (Zyban) hátterében; folyamatban lévő kutatások vizsgálják kokain-, metamfetamin- és impulzív-viselkedési zavarokban való hasznosságát. A Bupropion paradox módon aktiváló vagy túlstimuláló is lehet, szűk terápiás ablakkal. Mechanikai megjegyzések: a nitrogén-monoxid-donorok és PDE-5-gátlók (Sildenafil, Tadalafil) tompíthatják az antidepresszáns hatékonyságát; a metilénkék fokozhatja azt. Figyelem: rohamküszöb-csökkentés — étkezési zavarokban és rohamtörténet esetén ellenjavallt."
+  "anecdote": "Anekdotikus beszámolók szerint a Bupropion sokoldalú NDRI antidepresszáns, érzékelhető motiváció- és hajtóerő-fokozó hatással a dopamin és noradrenalin emelésén keresztül. Közösségi beszámolók szerint erős hatékonyságot mutat alacsony motivációjú depresszióban, beleértve az ADHD-átfedéses eseteket is. Alacsony DAT-affinitása arra utal, hogy inkább VMAT-2-n keresztüli dopaminerg modulátorként hat, mint közvetlen visszavétel-blokkolóként. A nikotinos receptor antagonizmus áll az FDA által jóváhagyott dohányzásleszoktatási indikáció (Zyban) hátterében; folyamatban lévő kutatások vizsgálják kokain-, metamfetamin- és impulzív-viselkedési zavarokban való hasznosságát. A Bupropion paradox módon aktiváló vagy túlstimuláló is lehet, szűk terápiás ablakkal. Mechanikai megjegyzések: a nitrogén-monoxid-donorok és PDE-5-gátlók (Sildenafil, Tadalafil) tompíthatják az antidepresszáns hatékonyságát; a metilénkék fokozhatja azt. Figyelem: rohamküszöb-csökkentés – étkezési zavarokban és rohamtörténet esetén ellenjavallt."
 }

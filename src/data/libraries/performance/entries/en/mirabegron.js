@@ -1,4 +1,4 @@
-// Mirabegron (Myrbetriq) — Astellas Pharma 2012 FDA-approved selective β3-adrenoceptor
+// Mirabegron (Myrbetriq) – Astellas Pharma 2012 FDA-approved selective β3-adrenoceptor
 // agonist for OAB. BAT-tissue activation enables thermogenic off-label fat-loss use
 // since Cypess 2015. Sources: FDA Myrbetriq SmPC, Khullar 2013 PMID 23537815,
 // Cypess 2015 PMID 25437872, Loh 2019 PMID 31263458, Finlin 2020 PMID 32119651.
@@ -53,7 +53,7 @@ export default {
     }
   ],
   "mechanism": "Mirabegron is a selective agonist at the β3-adrenoceptor (β3-AR), a G-protein-coupled receptor whose tissue expression makes three sites pharmacologically relevant: detrusor smooth muscle (bladder relaxation), brown adipose tissue (UCP1-mediated thermogenic activation), and visceral white adipose tissue (browning-induction). The intracellular cascade is standard β-receptor: β3 → Gs-protein → adenylyl cyclase → cAMP → PKA → CREB phosphorylation → UCP1 gene transcription upregulation. BAT activation is directly thermogenic: UCP1, an inner mitochondrial membrane proton channel, dissipates the proton gradient as heat, bypassing ATP synthesis. An average adult male carries approximately 40-50 g of active BAT (lifestyle + age-dependent decline), cold-exposure inducible. Chronic Mirabegron dosing (>4 weeks, 50-100 mg/day) increases BAT volume by +30-50% as measured by 18F-FDG PET-CT (Loh 2019). β1/β2 receptor spillover is minimal (>50x selectivity for β3), so the cardiotoxic tachycardia risk is lower than with Clenbuterol; however, hypertension risk is DOMINANT, because the β3 receptor also participates in peripheral arterial vascular-tone regulation.",
-  "legalStatus": "USA: FDA-approved 2012 (Myrbetriq, Astellas Pharma) for symptomatic OAB treatment; Schedule N/A (not controlled). 2018 FDA black-box update after severe hypertension + tachycardia case clusters. EU: EMA-approved (Betmiga). HU: registered (Betmiga Rx). PL: registered (Betmiga Rx). WADA: not explicitly banned (β3-agonist not listed in S6 stimulant or S3 β2-agonist categories), BUT national federations have placed it in the monitored category — TUE process recommended with pre-existing OAB-Rx diagnosis.",
+  "legalStatus": "USA: FDA-approved 2012 (Myrbetriq, Astellas Pharma) for symptomatic OAB treatment; Schedule N/A (not controlled). 2018 FDA black-box update after severe hypertension + tachycardia case clusters. EU: EMA-approved (Betmiga). HU: registered (Betmiga Rx). PL: registered (Betmiga Rx). WADA: not explicitly banned (β3-agonist not listed in S6 stimulant or S3 β2-agonist categories), BUT national federations have placed it in the monitored category – TUE process recommended with pre-existing OAB-Rx diagnosis.",
   "onsetTime": "Detrusor 2-4 h; BAT activation chronic dose 2-4 weeks",
   "halfLife": "~50 hours",
   "interactionsWith": [
@@ -62,8 +62,8 @@ export default {
     "albuterol",
     "clenbuterol"
   ],
-  "aromatization": "Does not aromatize (not a steroid — selective β3-adrenoceptor agonist). No CYP19 interaction; the estrogen axis is unaffected.",
-  "hepatotoxicity": "Low — DILI is rare, ALT elevation <2% incidence documented in clinical trials (Khullar 2013 OAB-RCT PMID 23537815). CYP2D6 + CYP3A4 metabolism creates drug-interaction risk with metoprolol and desipramine (Mirabegron is a CYP2D6 substrate-inhibitor, plasma-level elevator).",
+  "aromatization": "Does not aromatize (not a steroid – selective β3-adrenoceptor agonist). No CYP19 interaction; the estrogen axis is unaffected.",
+  "hepatotoxicity": "Low – DILI is rare, ALT elevation <2% incidence documented in clinical trials (Khullar 2013 OAB-RCT PMID 23537815). CYP2D6 + CYP3A4 metabolism creates drug-interaction risk with metoprolol and desipramine (Mirabegron is a CYP2D6 substrate-inhibitor, plasma-level elevator).",
   "wadaStatus": "restricted",
   "androgenicRatio": "N/A (not an AAS)",
   "bindingAffinity": "β3-adrenoceptor Ki ~5-10 nM; β1/β2-receptor >50x lower affinity (selectivity index per Astellas FDA-submission documentation).",
@@ -101,33 +101,33 @@ export default {
   ],
   "quality": {
     "pure": [
-      "FDA-approved Myrbetriq tablets (Astellas Pharma) or EMA Betmiga — pharmacy-sourcing guarantees active-ingredient content",
+      "FDA-approved Myrbetriq tablets (Astellas Pharma) or EMA Betmiga – pharmacy-sourcing guarantees active-ingredient content",
       "Generic Mirabegron substitute expected after 2027 patent expiry; currently brand-only globally"
     ],
     "caution": [
       "BP home-tracking 2x/day (FDA 2018 black-box hypertension risk, severe hypertension + tachycardia case clusters post-marketing)",
       "EKG baseline + 4-week check (resting HR + QTc-prolongation monitoring)",
-      "CYP2D6 + CYP3A4 metabolism — SSRI fluoxetine / paroxetine interaction (plasma-level elevator)",
+      "CYP2D6 + CYP3A4 metabolism – SSRI fluoxetine / paroxetine interaction (plasma-level elevator)",
       "Metoprolol + desipramine plasma-level dose-adjust required alongside Mirabegron",
-      "Tachyphylaxis after 8-12 weeks — 2-4 week cycle-off recommended",
+      "Tachyphylaxis after 8-12 weeks – 2-4 week cycle-off recommended",
       "Insomnia, anxiety low-incidence side effects"
     ],
     "avoid": [
-      "Severe hypertension (>180/110 mmHg) — absolute contraindication",
-      "Pre-existing tachyarrhythmia, cardiomyopathy — absolute contraindication",
-      "Chronic β-blocker therapy (metoprolol, propranolol) — β3-selectivity disturbance documented in clinical trials",
+      "Severe hypertension (>180/110 mmHg) – absolute contraindication",
+      "Pre-existing tachyarrhythmia, cardiomyopathy – absolute contraindication",
+      "Chronic β-blocker therapy (metoprolol, propranolol) – β3-selectivity disturbance documented in clinical trials",
       "Pregnancy and lactation (FDA pregnancy category C)",
-      "Pheochromocytoma — absolute contraindication (catecholamine storm risk)",
+      "Pheochromocytoma – absolute contraindication (catecholamine storm risk)",
       "Stroke history (relative contraindication, individual risk assessment)"
     ]
   },
   "interactions": [
-    "Metoprolol + propranolol (β-blockers) — contraindicated, β3-selectivity disturbance documented in clinical trials",
-    "Fluoxetine + paroxetine (SSRI CYP2D6-inhibitors) — Mirabegron plasma-level elevation 2-3x",
-    "Desipramine + amitriptyline (TCA) — Mirabegron CYP2D6 substrate-inhibitor combination yields higher plasma levels and QTc-prolongation risk",
-    "Albuterol + ephedrine + clenbuterol — additive cardio-stress, high HR + BP, avoidance recommended",
-    "Caffeine + theobromine — synergistic sympathomimetic effect, higher BP elevation",
-    "Digoxin — Mirabegron CYP3A4-mediated plasma-level elevation of digoxin, EKG monitoring required"
+    "Metoprolol + propranolol (β-blockers) – contraindicated, β3-selectivity disturbance documented in clinical trials",
+    "Fluoxetine + paroxetine (SSRI CYP2D6-inhibitors) – Mirabegron plasma-level elevation 2-3x",
+    "Desipramine + amitriptyline (TCA) – Mirabegron CYP2D6 substrate-inhibitor combination yields higher plasma levels and QTc-prolongation risk",
+    "Albuterol + ephedrine + clenbuterol – additive cardio-stress, high HR + BP, avoidance recommended",
+    "Caffeine + theobromine – synergistic sympathomimetic effect, higher BP elevation",
+    "Digoxin – Mirabegron CYP3A4-mediated plasma-level elevation of digoxin, EKG monitoring required"
   ],
   "studies": [
     {
@@ -169,16 +169,16 @@ export default {
   ],
   "faq": [
     {
-      "q": "Mirabegron vs Clenbuterol — which is safer for fat loss?",
+      "q": "Mirabegron vs Clenbuterol – which is safer for fat loss?",
       "a": "Mirabegron's β3-selectivity (>50x over β1/β2) minimizes cardio-receptor spillover, so the Clenbuterol-style chronic tachycardia + myocardial hypertrophy risk is lower. However, Mirabegron's hypertension risk is DOMINANT (FDA 2018 black-box update following post-marketing severe hypertension + tachycardia case clusters). Both require BP + EKG monitoring. Clenbuterol's accumulation (~35-40 h t1/2) is less predictable; Mirabegron's once-daily (~50 h t1/2) makes steady-state dose-titration easier."
     },
     {
       "q": "How much BMR elevation can be expected from BAT activation?",
-      "a": "5-10% with average BAT volume (40-50 g active BAT, Cypess 2013 Nat Med PMID 23603815). In low-BAT-baseline individuals (cold-exposure non-induced, older, BMI>30 — all reduce BAT volume), 0-3%. Cypess 2015 Cell Metab PMID 25437872 demonstrated acute BAT activation at single-dose 200 mg; chronic dosing (4+ weeks) per Finlin 2020 PMID 32119651 yielded +30-50% BAT volume elevation on 18F-FDG PET-CT."
+      "a": "5-10% with average BAT volume (40-50 g active BAT, Cypess 2013 Nat Med PMID 23603815). In low-BAT-baseline individuals (cold-exposure non-induced, older, BMI>30 – all reduce BAT volume), 0-3%. Cypess 2015 Cell Metab PMID 25437872 demonstrated acute BAT activation at single-dose 200 mg; chronic dosing (4+ weeks) per Finlin 2020 PMID 32119651 yielded +30-50% BAT volume elevation on 18F-FDG PET-CT."
     },
     {
       "q": "Is hypertensive crisis risk real?",
-      "a": "Yes — the FDA 2018 black-box update was a regulatory mandate following severe hypertension + tachycardia case clusters. Across clinical trials (Khullar 2013, ~13,000 patients), elevated BP incidence ~5%, severe events ~1%. Pre-existing hypertension (>140/90 mmHg) baseline is a contraindication on Mirabegron. Home BP tracking 2x/day (AM + evening) for the first 4 weeks + monthly checks on chronic dosing is the minimum protocol."
+      "a": "Yes – the FDA 2018 black-box update was a regulatory mandate following severe hypertension + tachycardia case clusters. Across clinical trials (Khullar 2013, ~13,000 patients), elevated BP incidence ~5%, severe events ~1%. Pre-existing hypertension (>140/90 mmHg) baseline is a contraindication on Mirabegron. Home BP tracking 2x/day (AM + evening) for the first 4 weeks + monthly checks on chronic dosing is the minimum protocol."
     },
     {
       "q": "Which drug interactions are dangerous?",
@@ -224,5 +224,5 @@ export default {
       "purpose": "Verify β3-receptor recovery + cardiovascular baseline restoration before starting a new cycle"
     }
   },
-  "anecdote": "Mirabegron stands out in community reports as one of the few compounds with actual human evidence for brown adipose tissue (BAT) activation. Users describe it as well tolerated, with a real but mild \"background\" thermogenic effect that passively contributes to fat loss — notably without any stimulant-like feeling. Reports consistently frame it as a long-game compound rather than a rapid weight-shedding tool.\n\nAt higher doses, a noticeable rise in resting heart rate or blood pressure is reported, which is why some accounts mention co-administration with a selective beta-1 blocker; the more pronounced fat-loss effects also tend to appear only at those higher doses. Combining it with cold-exposure protocols is anecdotally said to amplify BAT activation, as both target similar thermogenic pathways."
+  "anecdote": "Mirabegron stands out in community reports as one of the few compounds with actual human evidence for brown adipose tissue (BAT) activation. Users describe it as well tolerated, with a real but mild \"background\" thermogenic effect that passively contributes to fat loss – notably without any stimulant-like feeling. Reports consistently frame it as a long-game compound rather than a rapid weight-shedding tool.\n\nAt higher doses, a noticeable rise in resting heart rate or blood pressure is reported, which is why some accounts mention co-administration with a selective beta-1 blocker; the more pronounced fat-loss effects also tend to appear only at those higher doses. Combining it with cold-exposure protocols is anecdotally said to amplify BAT activation, as both target similar thermogenic pathways."
 }

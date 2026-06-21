@@ -1,7 +1,7 @@
-// HMG (Menopur / Pergonal) — Human Menopausal Gonadotropin, fertility-Rx
+// HMG (Menopur / Pergonal) – Human Menopausal Gonadotropin, fertility-Rx
 // framing. Cross-frame counterpart: `hmg-perf` with AAS-PCT framing.
 // Sources: EMA Menopur SPC (Ferring 2002), Liu 2009 PMID 19066302,
-// Liu 2002 Hum Reprod PMID 11870114, Hill 2018 (Int J Impot Res — no PMID).
+// Liu 2002 Hum Reprod PMID 11870114, Hill 2018 (Int J Impot Res – no PMID).
 
 export default {
   "id": "hmg-peptid",
@@ -9,12 +9,12 @@ export default {
   "image": "/peptides/hmg-peptid.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
-  "shortDesc": "Human Menopausal Gonadotropin — 1:1 FSH+LH glycoprotein. Full spermatogenesis induction (dual Leydig + Sertoli axis), IVF superovulation. Clinical Rx for infertility indications (male HypoH + female IVF ovulation induction), NOT doping. Cross-frame: AAS-PCT context covered by the `hmg-perf` entry.",
-  "description": "HMG (Human Menopausal Gonadotropin) is a glycoprotein mixture purified from postmenopausal female urine, containing **approximately 75 IU FSH (follicle-stimulating hormone) + 75 IU LH (luteinizing hormone) in 1:1 ratio** per standard ampoule. Modern clinical HMG sources: (1) **urinary-extracted** (Menopur Ferring 2002 EMA, 2005 FDA — higher-purity urinary-purified product; the older Pergonal Serono 1962 was globally withdrawn ~2005 due to vCJD risk mitigation); (2) **recombinant menotropin** (research stage, limited clinical distribution). **Dual gonadotropin-axis stimulus mechanism**: HMG's unique value in clinical fertility treatment is that it stimulates BOTH Leydig cells (LH component → testosterone production) AND Sertoli cells (FSH component → spermatogenesis support + inhibin-B production). HCG monotherapy ONLY activates the Leydig-LH axis (intratesticular testosterone rises, but Sertoli-FSH support is absent) → full spermatogenesis induction requires combined HCG + HMG in hypogonadotropic hypogonadism (HypoH). **Clinical indications** (FDA + EMA Rx): (1) **male spermatogenesis induction** in HypoH (Kallmann syndrome, idiopathic HypoH, pituitary-origin infertility): 75-150 IU SC 3x/week × 6-24 months, stacked with HCG; (2) **female IVF superovulation** and COS (controlled ovarian stimulation): 75-300 IU/day individualized. **Cross-frame note**: same Menopur vial as in AAS-user PCT protocols (`hmg-perf` entry) — different narrative (clinical infertility vs sport-cycle recovery), IDENTICAL pharmacology. WADA-banned year-round (S2 Peptide Hormones).",
+  "shortDesc": "Human Menopausal Gonadotropin – 1:1 FSH+LH glycoprotein. Full spermatogenesis induction (dual Leydig + Sertoli axis), IVF superovulation. Clinical Rx for infertility indications (male HypoH + female IVF ovulation induction), NOT doping. Cross-frame: AAS-PCT context covered by the `hmg-perf` entry.",
+  "description": "HMG (Human Menopausal Gonadotropin) is a glycoprotein mixture purified from postmenopausal female urine, containing **approximately 75 IU FSH (follicle-stimulating hormone) + 75 IU LH (luteinizing hormone) in 1:1 ratio** per standard ampoule. Modern clinical HMG sources: (1) **urinary-extracted** (Menopur Ferring 2002 EMA, 2005 FDA – higher-purity urinary-purified product; the older Pergonal Serono 1962 was globally withdrawn ~2005 due to vCJD risk mitigation); (2) **recombinant menotropin** (research stage, limited clinical distribution). **Dual gonadotropin-axis stimulus mechanism**: HMG's unique value in clinical fertility treatment is that it stimulates BOTH Leydig cells (LH component → testosterone production) AND Sertoli cells (FSH component → spermatogenesis support + inhibin-B production). HCG monotherapy ONLY activates the Leydig-LH axis (intratesticular testosterone rises, but Sertoli-FSH support is absent) → full spermatogenesis induction requires combined HCG + HMG in hypogonadotropic hypogonadism (HypoH). **Clinical indications** (FDA + EMA Rx): (1) **male spermatogenesis induction** in HypoH (Kallmann syndrome, idiopathic HypoH, pituitary-origin infertility): 75-150 IU SC 3x/week × 6-24 months, stacked with HCG; (2) **female IVF superovulation** and COS (controlled ovarian stimulation): 75-300 IU/day individualized. **Cross-frame note**: same Menopur vial as in AAS-user PCT protocols (`hmg-perf` entry) – different narrative (clinical infertility vs sport-cycle recovery), IDENTICAL pharmacology. WADA-banned year-round (S2 Peptide Hormones).",
   "keyInfo": [
     {
       "label": "Mechanism",
-      "value": "1:1 FSH+LH glycoprotein mixture — Sertoli-FSHR + Leydig-LHCGR receptor double-stimulus, full HPG axis induction"
+      "value": "1:1 FSH+LH glycoprotein mixture – Sertoli-FSHR + Leydig-LHCGR receptor double-stimulus, full HPG axis induction"
     },
     {
       "label": "Dosing (male HypoH spermatogenesis)",
@@ -33,8 +33,8 @@ export default {
       "value": "FDA + EMA Rx Menopur (Ferring), WADA S2 (banned in+out-of-competition)"
     }
   ],
-  "mechanism": "HMG is a two-component glycoprotein mixture: (1) **FSH** (follicle-stimulating hormone) — Sertoli-cell FSHR receptor agonist → cAMP-PKA pathway → spermatogenesis stimulus (Sertoli-mediated germ-cell maturation support) + inhibin-B production + androgen-binding-protein (ABP) synthesis; (2) **LH** (luteinizing hormone) — Leydig-cell LHCGR receptor agonist → cAMP-PKA pathway → steroidogenesis (cholesterol → pregnenolone → testosterone). The two components have different biological t1/2: FSH ~12-20 h, LH ~8-12 h (LH similar to endogenous short t1/2, hence clinical protocols use 3x/week or daily dosing). **Clinical dual-axis logic**: for HypoH male spermatogenesis induction, the Sertoli-FSH stimulus is INDISPENSABLE; HCG monotherapy (LH mimicry) raises intratesticular testosterone, but germ-cell maturation WITHOUT Sertoli-FSH support is NOT complete. Standard induction protocol: HCG monotherapy 3-6 months (Leydig-axis buildup, ITT rise), then HCG + HMG combination (FSH-axis addition) → spermatogenesis inducible within 6-24 months in ~70-90% (Liu 2009).",
-  "legalStatus": "**USA**: FDA Rx Menopur (Ferring 2005 approval) — indications: COS-IVF, ovulation induction, male HypoH spermatogenesis induction. **EU**: EMA Rx Menopur (Ferring 2002 approval) — same indications. **HU + PL**: registered (Menopur Rx, common IVF clinical use). **Pergonal** (Serono historical product, 1962-2005) globally withdrawn due to vCJD theoretical risk + urinary-source reduction. **WADA**: S2.2 Peptide Hormones — banned in-competition + out-of-competition for all male competitors year-round (exception: documented infertility Rx on TUE protocol).",
+  "mechanism": "HMG is a two-component glycoprotein mixture: (1) **FSH** (follicle-stimulating hormone) – Sertoli-cell FSHR receptor agonist → cAMP-PKA pathway → spermatogenesis stimulus (Sertoli-mediated germ-cell maturation support) + inhibin-B production + androgen-binding-protein (ABP) synthesis; (2) **LH** (luteinizing hormone) – Leydig-cell LHCGR receptor agonist → cAMP-PKA pathway → steroidogenesis (cholesterol → pregnenolone → testosterone). The two components have different biological t1/2: FSH ~12-20 h, LH ~8-12 h (LH similar to endogenous short t1/2, hence clinical protocols use 3x/week or daily dosing). **Clinical dual-axis logic**: for HypoH male spermatogenesis induction, the Sertoli-FSH stimulus is INDISPENSABLE; HCG monotherapy (LH mimicry) raises intratesticular testosterone, but germ-cell maturation WITHOUT Sertoli-FSH support is NOT complete. Standard induction protocol: HCG monotherapy 3-6 months (Leydig-axis buildup, ITT rise), then HCG + HMG combination (FSH-axis addition) → spermatogenesis inducible within 6-24 months in ~70-90% (Liu 2009).",
+  "legalStatus": "**USA**: FDA Rx Menopur (Ferring 2005 approval) – indications: COS-IVF, ovulation induction, male HypoH spermatogenesis induction. **EU**: EMA Rx Menopur (Ferring 2002 approval) – same indications. **HU + PL**: registered (Menopur Rx, common IVF clinical use). **Pergonal** (Serono historical product, 1962-2005) globally withdrawn due to vCJD theoretical risk + urinary-source reduction. **WADA**: S2.2 Peptide Hormones – banned in-competition + out-of-competition for all male competitors year-round (exception: documented infertility Rx on TUE protocol).",
   "onsetTime": "Hormonal response 24-48 hours (Test rise + measurable inhibin-B); clinical spermatogenesis induction 3-6 months (on HCG-stacked protocol)",
   "halfLife": "FSH component ~12-20 hours; LH component ~8-12 hours",
   "halfLifeActive": "Clinical effect 2-3 days (after single SC bolus, mixed FSH+LH component decay)",
@@ -46,17 +46,17 @@ export default {
     "gonadorelin"
   ],
   "aromatization": "Indirect: testicular FSH+LH stimulus → endogenous Test rise → secondary peripheral E2 conversion via testicular + adipose CYP19 aromatase. Magnitude moderate (slightly lower than pure HCG protocol, because Sertoli-FSH activity dominates over Leydig-Test rise). In clinical infertility context E2 monitoring is generally not necessary (target Test rise is physiologic induction range, not supraphysiologic), but at high-dose HMG (>150 IU EOD), E2 watch may be warranted in gyno-sensitive male users.",
-  "hepatotoxicity": "No hepatic stress — protein-based subcutaneous (SC) or intramuscular (IM) injection, NOT oral, NOT 17α-alkylated. Hepatic enzyme rise not documented in the 60+ year clinical trial database.",
+  "hepatotoxicity": "No hepatic stress – protein-based subcutaneous (SC) or intramuscular (IM) injection, NOT oral, NOT 17α-alkylated. Hepatic enzyme rise not documented in the 60+ year clinical trial database.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (not an AAS; indirect testicular Test stimulus + Sertoli spermatogenesis stimulus)",
-  "bindingAffinity": "FSH component: FSHR Kd ~0.5 nM (Sertoli cell). LH component: LHCGR Kd ~0.3 nM (Leydig cell). HMG's mixed-receptor-binding profile is unique — in the purified urinary-extracted product the FSH/LH ratio may vary slightly per batch (~70-80 IU FSH : 70-80 IU LH per 75/75-labeled ampoule).",
-  "detectionWindow": "WADA-accredited isoelectric focusing (IEF) urinary test — distinguishes urinary-extracted HMG from endogenous pituitary FSH/LH based on isoelectric-point shift. Detectable 5-7 days after single bolus, 10-14 days after chronic protocol. Recombinant FSH (Gonal-F) is more clearly detectable on IEF, urinary HMG harder (endogenous-overlap-related false-negative risk).",
+  "bindingAffinity": "FSH component: FSHR Kd ~0.5 nM (Sertoli cell). LH component: LHCGR Kd ~0.3 nM (Leydig cell). HMG's mixed-receptor-binding profile is unique – in the purified urinary-extracted product the FSH/LH ratio may vary slightly per batch (~70-80 IU FSH : 70-80 IU LH per 75/75-labeled ampoule).",
+  "detectionWindow": "WADA-accredited isoelectric focusing (IEF) urinary test – distinguishes urinary-extracted HMG from endogenous pituitary FSH/LH based on isoelectric-point shift. Detectable 5-7 days after single bolus, 10-14 days after chronic protocol. Recombinant FSH (Gonal-F) is more clearly detectable on IEF, urinary HMG harder (endogenous-overlap-related false-negative risk).",
   "benefits": [
     "Full spermatogenesis induction in male HypoH (~70-90% success rate on HCG-stacked protocol, Liu 2009)",
     "Dual FSH+LH axis: Sertoli-FSH support complements HCG-only Leydig-LH stimulus",
     "IVF superovulation (COS) female-infertility protocol: standard EU + USA clinical protocol element",
     "Restoration of inhibin-B production (Sertoli-functionality marker)",
-    "60+ years clinical trial database (Pergonal since 1962, Menopur since 2002) — extensive safety data",
+    "60+ years clinical trial database (Pergonal since 1962, Menopur since 2002) – extensive safety data",
     "Cheap (Menopur 75 IU vial ~€25-40 EU pharmacy)"
   ],
   "quickStart": [
@@ -82,20 +82,20 @@ export default {
     },
     {
       "label": "Months 12-24",
-      "body": "Sustained spermatogenesis stabilization. On successful induction, switch back to HCG monotherapy (FSH stop) — Sertoli axis is by then self-sustaining. ~70-90% clinical success rate (Liu 2009, n=75 HypoH males)."
+      "body": "Sustained spermatogenesis stabilization. On successful induction, switch back to HCG monotherapy (FSH stop) – Sertoli axis is by then self-sustaining. ~70-90% clinical success rate (Liu 2009, n=75 HypoH males)."
     }
   ],
   "quality": {
     "pure": [
-      "Menopur 75 IU vial (Ferring 2002 EMA / 2005 FDA) — golden-standard urinary-extracted HMG, higher purity, available in EU + USA pharmacies",
-      "Menopur 1200 IU multi-dose vial (Ferring) — IVF clinical protocol package",
-      "Bemfola 75 IU (Gedeon Richter) — European biosimilar pure FSH (NOT HMG, but rFSH — alternative for those needing pure FSH)",
-      "Pergonal — HISTORICAL, globally withdrawn ~2005 (vCJD risk mitigation); if anyone today sells 'Pergonal', it is suspicious grey-market stock or fake",
-      "UGL HMG — AVOID for infertility-Rx purposes: clinical protocol requires precise dose titration; UGL batch-level FSH/LH ratio uncertainty can jeopardize induction success"
+      "Menopur 75 IU vial (Ferring 2002 EMA / 2005 FDA) – golden-standard urinary-extracted HMG, higher purity, available in EU + USA pharmacies",
+      "Menopur 1200 IU multi-dose vial (Ferring) – IVF clinical protocol package",
+      "Bemfola 75 IU (Gedeon Richter) – European biosimilar pure FSH (NOT HMG, but rFSH – alternative for those needing pure FSH)",
+      "Pergonal – HISTORICAL, globally withdrawn ~2005 (vCJD risk mitigation); if anyone today sells 'Pergonal', it is suspicious grey-market stock or fake",
+      "UGL HMG – AVOID for infertility-Rx purposes: clinical protocol requires precise dose titration; UGL batch-level FSH/LH ratio uncertainty can jeopardize induction success"
     ],
     "caution": [
-      "Female IVF users: ovarian hyperstimulation syndrome (OHSS) risk at high doses — reproductive endocrinologist supervision mandatory (NOT self-protocol)",
-      "During first 3-6 months of male induction protocol, sperm is NOT YET expected (Sertoli-FSH stimulus requires time to initiate) — psychological frustration risk, clinical contact important",
+      "Female IVF users: ovarian hyperstimulation syndrome (OHSS) risk at high doses – reproductive endocrinologist supervision mandatory (NOT self-protocol)",
+      "During first 3-6 months of male induction protocol, sperm is NOT YET expected (Sertoli-FSH stimulus requires time to initiate) – psychological frustration risk, clinical contact important",
       "TUE documentation for competing users: WADA TUE application must be submitted BEFORE use (retrospective TUE typically denied)",
       "Reconstituted solution at 2-8°C max 28 days (sterile clinical practice mandatory)",
       "High-dose HMG (>150 IU EOD chronic) → E2 rebound and gyno risk in gyno-sensitive male users → AI co-admin worth considering (Anastrozol 0.25 mg EOD)"
@@ -111,10 +111,10 @@ export default {
   "interactions": [
     "**HCG stack partner** (mandatory in spermatogenesis-induction protocol): HCG 2000-2500 IU 2-3x/week + HMG 75-150 IU 3x/week → full HPG axis induction",
     "**Aromatase inhibitor (Anastrozol 0.25 mg EOD)**: optional E2 control on high-dose HMG in gyno-sensitive male users",
-    "**SERM (Clomid, Nolvadex)**: NOT co-administered on HMG protocol — different mechanism (SERM = endogenous GnRH stimulus, HMG = exogenous FSH+LH bypass)",
+    "**SERM (Clomid, Nolvadex)**: NOT co-administered on HMG protocol – different mechanism (SERM = endogenous GnRH stimulus, HMG = exogenous FSH+LH bypass)",
     "**rFSH (Gonal-F, Puregon)**: alternative for pure FSH-axis stimulus (if LH component not needed; e.g. adequate endogenous LH already)",
-    "**Gonadorelin/kisspeptin**: NOT stacked (different mechanism — pulsatile GnRH stimulus vs exogenous gonadotropin bypass), but theoretical follow-up protocol element after long-term induction",
-    "**TRT (testosterone replacement)**: CONTRAINDICATED on HMG induction protocol — exogenous Test suppresses HPG axis, working against the goal of induction"
+    "**Gonadorelin/kisspeptin**: NOT stacked (different mechanism – pulsatile GnRH stimulus vs exogenous gonadotropin bypass), but theoretical follow-up protocol element after long-term induction",
+    "**TRT (testosterone replacement)**: CONTRAINDICATED on HMG induction protocol – exogenous Test suppresses HPG axis, working against the goal of induction"
   ],
   "studies": [
     {
@@ -146,15 +146,15 @@ export default {
     },
     {
       "q": "How long does spermatogenesis induction take to succeed?",
-      "a": "Slow process: 6-24 months is the clinical trial average (Liu 2009, n=75 HypoH males, median 9 months). The human spermatogenesis cycle is ~74 days (Sertoli-mediated germ-cell maturation), so biologically CANNOT be accelerated — minimum 3 cycles (~9 months) must be waited for steady state. Predictor factors: pre-treatment testicular volume (>4 mL favorable), genetic HypoH origin (Kallmann better prognosis than post-surgical pituitary tumor), induction protocol adherence (skipped pins slow it). Psychological preparation important: during the first 6 months, sperm is NOT YET expected."
+      "a": "Slow process: 6-24 months is the clinical trial average (Liu 2009, n=75 HypoH males, median 9 months). The human spermatogenesis cycle is ~74 days (Sertoli-mediated germ-cell maturation), so biologically CANNOT be accelerated – minimum 3 cycles (~9 months) must be waited for steady state. Predictor factors: pre-treatment testicular volume (>4 mL favorable), genetic HypoH origin (Kallmann better prognosis than post-surgical pituitary tumor), induction protocol adherence (skipped pins slow it). Psychological preparation important: during the first 6 months, sperm is NOT YET expected."
     },
     {
       "q": "Can HMG be used alongside TRT or instead of TRT?",
-      "a": "**Alongside TRT: CONTRAINDICATED.** Exogenous testosterone (TRT) suppresses the HPG axis (negative feedback on the hypothalamus), working against HMG induction goal. In male-fertility-Rx protocol, TRT MUST be discontinued at least 6 weeks before starting HMG. **Instead of TRT for HypoH induction**: HMG is NOT a TRT substitute — Test rise is indirect (Leydig stimulus), of smaller magnitude than direct TRT, and clinical goal is spermatogenesis induction, NOT symptomatic Test-deficiency treatment. In a HypoH male user prioritizing fertility (family building), HMG+HCG throughout the entire induction protocol (6-24 months), then optionally switching back to TRT afterward (but NOT within the fertility window)."
+      "a": "**Alongside TRT: CONTRAINDICATED.** Exogenous testosterone (TRT) suppresses the HPG axis (negative feedback on the hypothalamus), working against HMG induction goal. In male-fertility-Rx protocol, TRT MUST be discontinued at least 6 weeks before starting HMG. **Instead of TRT for HypoH induction**: HMG is NOT a TRT substitute – Test rise is indirect (Leydig stimulus), of smaller magnitude than direct TRT, and clinical goal is spermatogenesis induction, NOT symptomatic Test-deficiency treatment. In a HypoH male user prioritizing fertility (family building), HMG+HCG throughout the entire induction protocol (6-24 months), then optionally switching back to TRT afterward (but NOT within the fertility window)."
     },
     {
       "q": "Cross-frame: same Menopur as in AAS-PCT protocols?",
-      "a": "Yes — identical molecule. The `hmg-peptid` (this entry, fertility-Rx framing) and `hmg-perf` (AAS-PCT framing) entries have ~80% content overlap (same chemical structure, pharmacology, route of administration). The DIFFERENCE is framing: `hmg-peptid` in clinical infertility-Rx context (HypoH spermatogenesis induction, female IVF COS), while `hmg-perf` in AAS-post-cycle-recovery context (Sertoli-FSH stimulus for spermatogenesis restart after long cycle). The user can buy the same Menopur vial at the fertility clinic on Rx, or as part of an AAS-cycle-recovery protocol — different narrative, identical pharmacology."
+      "a": "Yes – identical molecule. The `hmg-peptid` (this entry, fertility-Rx framing) and `hmg-perf` (AAS-PCT framing) entries have ~80% content overlap (same chemical structure, pharmacology, route of administration). The DIFFERENCE is framing: `hmg-peptid` in clinical infertility-Rx context (HypoH spermatogenesis induction, female IVF COS), while `hmg-perf` in AAS-post-cycle-recovery context (Sertoli-FSH stimulus for spermatogenesis restart after long cycle). The user can buy the same Menopur vial at the fertility clinic on Rx, or as part of an AAS-cycle-recovery protocol – different narrative, identical pharmacology."
     }
   ],
   "related": [
@@ -189,7 +189,7 @@ export default {
       "label": "After successful induction (HMG stop)",
       "timing": "6 weeks after spermatogenesis stabilization",
       "markers": "Total Test, LH, FSH, semen analysis, fertility confirmation (IUI-eligible or spontaneous conception).",
-      "purpose": "After HMG stop, switch back to HCG monotherapy (Sertoli axis self-sustaining) — confirm that sperm count doesn't fall back to azoospermia level."
+      "purpose": "After HMG stop, switch back to HCG monotherapy (Sertoli axis self-sustaining) – confirm that sperm count doesn't fall back to azoospermia level."
     },
     "cruise": {
       "label": "Long-term maintenance (within family-building window)",

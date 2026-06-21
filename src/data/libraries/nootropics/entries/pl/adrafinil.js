@@ -130,7 +130,7 @@ export default {
     },
     {
       "q": "Dlaczego Olmifon wycofano w 2011?",
-      "a": "Cephalon (producent Olmifonu) nie odnowił zezwolenia na obrót w UE z powodów komercyjnych — wobec wyższej marży Modafinilu (Provigil). NIE był to safety-recall ani decyzja regulatora. Związek nadal kwalifikuje się do badań; farmakologia kliniczna nie uległa zmianie."
+      "a": "Cephalon (producent Olmifonu) nie odnowił zezwolenia na obrót w UE z powodów komercyjnych – wobec wyższej marży Modafinilu (Provigil). NIE był to safety-recall ani decyzja regulatora. Związek nadal kwalifikuje się do badań; farmakologia kliniczna nie uległa zmianie."
     }
   ],
   "related": [
@@ -138,5 +138,5 @@ export default {
     "armodafinil",
     "flmodafinil"
   ],
-  "anecdote": "Anegdotyczne doniesienia przedstawiają Adrafinil jako starszą, prolekową drogę do Modafinilu: wątroba musi go najpierw przekonwertować, zanim cokolwiek się wydarzy, więc początek działania jest wolniejszy i łagodniejszy, cały przebieg dłuższy, a wygaszanie delikatniejsze. Użytkownicy szukający \"dłuższego, miększego Modafinilu\" opisują go pozytywnie dokładnie za ten profil.\n\nKoszty powtarzają się w relacjach: konwersja jest mniej przewidywalna między osobami, niesie więcej obciążenia metabolicznego i jest słabym wyborem, gdy potrzebny jest natychmiastowy zastrzyk energii — to sam Modafinil jest aktywnym związkiem wykonującym pracę. Większość relacji traktuje go jako sytuacyjną alternatywę o łagodniejszej krzywej, stosowaną z rozmysłem i rzadko."
+  "anecdote": "Anegdotyczne doniesienia przedstawiają Adrafinil jako starszą, prolekową drogę do Modafinilu: wątroba musi go najpierw przekonwertować, zanim cokolwiek się wydarzy, więc początek działania jest wolniejszy i łagodniejszy, cały przebieg dłuższy, a wygaszanie delikatniejsze. Użytkownicy szukający \"dłuższego, miększego Modafinilu\" opisują go pozytywnie dokładnie za ten profil.\n\nKoszty powtarzają się w relacjach: konwersja jest mniej przewidywalna między osobami, niesie więcej obciążenia metabolicznego i jest słabym wyborem, gdy potrzebny jest natychmiastowy zastrzyk energii – to sam Modafinil jest aktywnym związkiem wykonującym pracę. Większość relacji traktuje go jako sytuacyjną alternatywę o łagodniejszej krzywej, stosowaną z rozmysłem i rzadko."
 }

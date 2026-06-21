@@ -78,5 +78,5 @@ export default {
       "finding": "Kompleksowy przegląd struktury Tβ4 oraz zastosowań w gojeniu ran i kardiologii."
     }
   ],
-  "anecdote": "Doniesienia społeczności opisują TB-500 stosowany samodzielnie w kontekstach samodzielnych eksperymentów, gdzie jeden starszy użytkownik zgłaszał większą elastyczność podczas typowych rutyn rozciągających na siłowni — korzyść, którą przypisywał peptydowi, a nie czynnikom treningowym. Raporty pozostają wstępne, ale sygnał jest na tyle spójny między członkami społeczności, by zostać odnotowany.\n\nDawkowanie zależy od celów. TB-500 jest zwykle podawany podskórnie, często podczas fazy ładowania, a następnie utrzymania, choć ładowanie nie jest ściśle wymagane."
+  "anecdote": "Doniesienia społeczności opisują TB-500 stosowany samodzielnie w kontekstach samodzielnych eksperymentów, gdzie jeden starszy użytkownik zgłaszał większą elastyczność podczas typowych rutyn rozciągających na siłowni – korzyść, którą przypisywał peptydowi, a nie czynnikom treningowym. Raporty pozostają wstępne, ale sygnał jest na tyle spójny między członkami społeczności, by zostać odnotowany.\n\nDawkowanie zależy od celów. TB-500 jest zwykle podawany podskórnie, często podczas fazy ładowania, a następnie utrzymania, choć ładowanie nie jest ściśle wymagane."
 }

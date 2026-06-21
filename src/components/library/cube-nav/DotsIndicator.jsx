@@ -1,7 +1,7 @@
 import { useLang } from '../../../i18n/LanguageContext'
 
 // Mobile-only library position indicator: 4 dots (active = Chemical Green pill).
-// The desktop "◄ name ►" pager was removed — the big side arrows (CubeNavControls)
+// The desktop "◄ name ►" pager was removed – the big side arrows (CubeNavControls)
 // are the switch affordance there, and the section's h2 already names the library.
 export default function DotsIndicator({ libraries, currentIndex, onJumpTo, className = '' }) {
   const { lang } = useLang()

@@ -49,8 +49,8 @@ export default {
     }
   ],
   "mechanism": "Synthetic L-T4 is identical to natural endogenous T4. In peripheral tissues (liver, kidney, muscle), D1 and D2 deiodinases convert T4 to active T3 by 5'-deiodination. T3 binds the nuclear thyroid hormone receptors (TR-α, TR-β), where it binds thyroid response elements (TRE) and modifies transcription, regulating basal metabolism, thermogenesis, protein synthesis, and many metabolic pathways.",
-  "legalStatus": "EU/HU: prescription only (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generics). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generics). No abuse potential. Due to narrow therapeutic index (NTI), brand-switching within same Rx avoided — higher dose precision required.",
-  "bioavailability": "40-80% (oral, fasted; food and calcium/iron reduce — FDA Synthroid label)",
+  "legalStatus": "EU/HU: prescription only (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generics). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generics). No abuse potential. Due to narrow therapeutic index (NTI), brand-switching within same Rx avoided – higher dose precision required.",
+  "bioavailability": "40-80% (oral, fasted; food and calcium/iron reduce – FDA Synthroid label)",
   "onsetTime": "4-6 weeks (steady-state TSH reduction), 7-10 days (initial symptomatic effect)",
   "halfLife": "6-7 days (allowing once-daily dosing; steady-state in 4-6 weeks)",
   "atcCode": "H03AA01",
@@ -64,7 +64,7 @@ export default {
   ],
   "contraindications": [
     "Untreated thyrotoxicosis (hyperthyroidism)",
-    "Untreated adrenal insufficiency (Addison) — corticosteroid replacement mandatory before levothyroxine",
+    "Untreated adrenal insufficiency (Addison) – corticosteroid replacement mandatory before levothyroxine",
     "Acute MI or active ischemia (consider; cautious initiation)",
     "Known hypersensitivity to active substance or excipients"
   ],
@@ -97,7 +97,7 @@ export default {
     "Measure TSH (and free T4) before initiation, recheck new steady-state at 6-8 weeks",
     "Take morning on EMPTY STOMACH, 30-60 min BEFORE breakfast, with water",
     "Calcium, iron, magnesium agents and multivitamins SPACED 4 hours apart",
-    "Coffee (espresso) min. 60 min after levothyroxine — or consider evening dosing (Bolk 2010)",
+    "Coffee (espresso) min. 60 min after levothyroxine – or consider evening dosing (Bolk 2010)",
     "Slow dose escalation in age >65 or ischemic heart disease (25 µg/2-4 weeks)"
   ],
   "expectations": [
@@ -118,7 +118,7 @@ export default {
     "pure": [
       "Merck Euthyrox/L-Thyrox (EU/HU reference), Berlin-Chemie L-Thyroxin (HU widespread)",
       "AbbVie Synthroid (USA reference), Lloyd Pharmaceutical Levoxyl, Pfizer Tirosint (lactose-free)",
-      "12.5/25/50/75/88/100/112/125/137/150/175/200 µg tablets — fine titration steps"
+      "12.5/25/50/75/88/100/112/125/137/150/175/200 µg tablets – fine titration steps"
     ],
     "caution": [
       "Narrow therapeutic index (NTI): avoid brand switching, same generic brand preferred",
@@ -194,7 +194,7 @@ export default {
     },
     {
       "q": "Why is empty-stomach intake and coffee timing important?",
-      "a": "Levothyroxine absorption is optimal in acidic gastric pH (<4). Food, coffee (espresso), high-fiber diet, antacids/PPIs raise gastric pH, reducing absorption by 30-40%. The 30-60 min empty-stomach window ensures maximum bioavailability. Alternative: take at bedtime 3-4 hours after dinner (Bolk 2010 RCT PMID 21149757) — better compliance for some."
+      "a": "Levothyroxine absorption is optimal in acidic gastric pH (<4). Food, coffee (espresso), high-fiber diet, antacids/PPIs raise gastric pH, reducing absorption by 30-40%. The 30-60 min empty-stomach window ensures maximum bioavailability. Alternative: take at bedtime 3-4 hours after dinner (Bolk 2010 RCT PMID 21149757) – better compliance for some."
     },
     {
       "q": "What does TSH suppression mean in DTC patients?",

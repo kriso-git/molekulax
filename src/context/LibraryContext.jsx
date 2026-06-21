@@ -1,4 +1,4 @@
-// LibraryContext — Phase 3 abstraction that exposes the active library to
+// LibraryContext – Phase 3 abstraction that exposes the active library to
 // gallery + detail components. Phase 7 added sessionStorage persistence
 // (F5 keeps you on the same library) and hash-deep-link priority. Phase 8
 // makes library data lazy. Phase 9 adds per-entry caching and a loadEntry

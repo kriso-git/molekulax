@@ -124,7 +124,7 @@ export default {
       "pmid": "39269293"
     },
     {
-      "title": "Phenylpiracetam stereoisomer pharmacology — R-enantiomer atypical DAT inhibitor",
+      "title": "Phenylpiracetam stereoisomer pharmacology – R-enantiomer atypical DAT inhibitor",
       "authors": "Zvejniece L et al.",
       "journal": "Pharmacol Res. 2017;124:122-130.",
       "pmid": "28743458"

@@ -1,4 +1,4 @@
-// Auto-split from uiStrings.js — Phase 11 locale-split
+// Auto-split from uiStrings.js – Phase 11 locale-split
 // Edit this file directly; do not regenerate.
 
 export const UI_EN = {
@@ -80,7 +80,7 @@ export const UI_EN = {
   "entry.sec.quickstart.title.template": "Up and running in {n} steps",
   "entry.sec.anecdote.eyebrow": "Anecdote",
   "entry.sec.anecdote.title": "Anecdotal reports",
-  "entry.sec.anecdote.disclaimer": "Not clinical evidence — based on user accounts.",
+  "entry.sec.anecdote.disclaimer": "Not clinical evidence – based on user accounts.",
   "entry.sec.anecdote.placeholder": "No anecdote collected yet.",
   "entry.sec.anecdote.expand": "Show",
   "entry.sec.anecdote.collapse": "Collapse",

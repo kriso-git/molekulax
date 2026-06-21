@@ -24,7 +24,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Zsírban oldódó racetam, AMPA-pozitív moduláció + anxiolitikus profil.",
-  "description": "Az Aniracetam a Piracetam zsíroldható pirrolidon-származéka, amely AMPA-receptor pozitív allosztérikus modulátorként (PAM) lassítja a deszenzitizációt és anxiolitikus mellékprofilt mutat. Olaszországban Ampamet és Memodrin néven vényköteles. Plazma felezési ideje rövid (~1-2.5 óra), de a metabolitjai (különösen a 2-pirrolidinon-acetamid és az N-anizoil-GABA) tovább hatnak — utóbbi GABA-erg interakció révén magyarázza a \"részleges prodrug\" jelleget (PMID 11834304, 11702095). Anti-szorongásos + pro-szociális reputáció szinte minden anekdotában.",
+  "description": "Az Aniracetam a Piracetam zsíroldható pirrolidon-származéka, amely AMPA-receptor pozitív allosztérikus modulátorként (PAM) lassítja a deszenzitizációt és anxiolitikus mellékprofilt mutat. Olaszországban Ampamet és Memodrin néven vényköteles. Plazma felezési ideje rövid (~1-2.5 óra), de a metabolitjai (különösen a 2-pirrolidinon-acetamid és az N-anizoil-GABA) tovább hatnak – utóbbi GABA-erg interakció révén magyarázza a \"részleges prodrug\" jelleget (PMID 11834304, 11702095). Anti-szorongásos + pro-szociális reputáció szinte minden anekdotában.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",

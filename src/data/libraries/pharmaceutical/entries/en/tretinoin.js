@@ -24,10 +24,10 @@ export default {
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Topical retinoid all-trans-retinoic acid. Acne, photoaging, hyperpigmentation treatment. Dermatological gold standard.",
-  "description": "Tretinoin (all-trans-retinoic acid) is the first topical retinoid (Ortho Retin-A, FDA 1971), dermatological standard in acneology + anti-aging. Retinoid receptor (RAR) activation normalizes follicular keratinization (acne mechanism), accelerates collagen synthesis (anti-aging), and reduces melanin pigmentation (hyperpigmentation). Common strengths: 0.025%, 0.05%, 0.1% cream or gel. Vs Isotretinoin it is topical — non-systemic, pregnancy risk SIGNIFICANTLY LOWER but avoid in childbearing-age women. Long-term anti-aging evidence: Kligman 1986 PMID 3548421 the best-documented topical treatment for photoaging.",
+  "description": "Tretinoin (all-trans-retinoic acid) is the first topical retinoid (Ortho Retin-A, FDA 1971), dermatological standard in acneology + anti-aging. Retinoid receptor (RAR) activation normalizes follicular keratinization (acne mechanism), accelerates collagen synthesis (anti-aging), and reduces melanin pigmentation (hyperpigmentation). Common strengths: 0.025%, 0.05%, 0.1% cream or gel. Vs Isotretinoin it is topical – non-systemic, pregnancy risk SIGNIFICANTLY LOWER but avoid in childbearing-age women. Long-term anti-aging evidence: Kligman 1986 PMID 3548421 the best-documented topical treatment for photoaging.",
   "mechanism": "RAR-α/β/γ receptor activation → gene transcription modulation → follicular keratinization normalization + collagen synthesis enhancement + melanin reduction.",
   "legalStatus": "EU/HU: prescription only (Atrederm, Locacid, Retin-A). USA: FDA Rx (Retin-A, Renova, Tretin-X).",
-  "bioavailability": "~20% (oral capsule, variable — FDA Vesanoid label; for APL treatment, NOT topical form)",
+  "bioavailability": "~20% (oral capsule, variable – FDA Vesanoid label; for APL treatment, NOT topical form)",
   "onsetTime": "8-12 weeks (acne improvement), 4-6 months (anti-aging visible)",
   "halfLife": "Topical, minimal systemic absorption",
   "atcCode": "D10AD01",
@@ -39,11 +39,11 @@ export default {
     "Off-label: keratosis pilaris, stretch marks"
   ],
   "contraindications": [
-    "Pregnancy (relative, low systemic absorption but avoid — vitamin A-like embryopathy risk)",
+    "Pregnancy (relative, low systemic absorption but avoid – vitamin A-like embryopathy risk)",
     "Active eczema, severe psoriasis on application area"
   ],
   "commonSideEffects": [
-    "Skin dryness, peeling, irritation (common initially — \"retinization\")",
+    "Skin dryness, peeling, irritation (common initially – \"retinization\")",
     "Photosensitivity (SUNSCREEN MANDATORY SPF 30+)",
     "Initial acne flare (purging, 2-4 weeks)",
     "Severe, rare: severe irritation (contact dermatitis), retinoid photodermatitis"
@@ -96,5 +96,5 @@ export default {
     "unit": "% topikális",
     "note": "Low (0.025%): sensitive skin, anti-aging start, dryness-prone. Moderate (0.05%): standard acne and anti-aging. High (0.1%): resistant acne, thicker skin. Apply at EVENING in pea-sized amount on clean, dry skin. SUNSCREEN SPF 30+ MANDATORY. Slow introduction (2x/wk → 4x/wk → daily) to mitigate irritation. Effect 8-12 weeks."
   },
-  "anecdote": "Anecdotal reports describe Tretinoin as one of the most potent topical treatments for facial acne and overall skin quality. Initial irritation — redness, breakouts, peeling — typically occurs in the first month and resolves with continued use. Best effects are delayed: collagen-related improvements and texture changes appear after several months of consistent application. Community accounts note that Tretinoin may enhance penetration of adjunct skincare topicals, though this is largely anecdotal. It has a narrower therapeutic window than cosmetic retinoids — most users find a stable concentration without needing escalation. Caution: photosensitivity is significant; daily SPF is mandatory. Pregnancy contraindication applies."
+  "anecdote": "Anecdotal reports describe Tretinoin as one of the most potent topical treatments for facial acne and overall skin quality. Initial irritation – redness, breakouts, peeling – typically occurs in the first month and resolves with continued use. Best effects are delayed: collagen-related improvements and texture changes appear after several months of consistent application. Community accounts note that Tretinoin may enhance penetration of adjunct skincare topicals, though this is largely anecdotal. It has a narrower therapeutic window than cosmetic retinoids – most users find a stable concentration without needing escalation. Caution: photosensitivity is significant; daily SPF is mandatory. Pregnancy contraindication applies."
 }

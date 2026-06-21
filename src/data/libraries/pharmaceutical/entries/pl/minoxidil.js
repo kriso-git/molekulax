@@ -1,5 +1,5 @@
 // v0.27 RICH multi-variant entry (oral + topical).
-// Phase B Round 1 expansion — route-toggle-aware shape.
+// Phase B Round 1 expansion – route-toggle-aware shape.
 // Sources: FDA Loniten + Rogaine Drug Labels, Perera & Sinclair 2017 (PMID
 // 29167734), Pirmez 2020 (PMID 31520662), Olsen 2002 (PMID 12196747),
 // Suchonwanit 2019 (PMID 31496654), Vañó-Galván 2021 (PMID 33639244).
@@ -27,7 +27,7 @@ export default {
   "name": "Minoxidil",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
-  "shortDesc": "Aktywator kanałów K, środek miejscowy lub doustny (Rogaine, Loniten + LDOM). Leczenie łysienia androgenowego od 1988 — dwie drogi podania z bardzo różnym profilem ekspozycji systemowej.",
+  "shortDesc": "Aktywator kanałów K, środek miejscowy lub doustny (Rogaine, Loniten + LDOM). Leczenie łysienia androgenowego od 1988 – dwie drogi podania z bardzo różnym profilem ekspozycji systemowej.",
   "description": "Minoxidil został pierwotnie opracowany jako doustny lek przeciwnadciśnieniowy (Loniten, 1979). Hipertrychoza obserwowana jako działanie uboczne doprowadziła do opracowania formulacji miejscowych dla łysienia (Upjohn Rogaine 2% 1988, 5% 1996). Dwie drogi podania mają fundamentalnie odmienne profile farmakokinetyczne: wchłanianie systemowe miejscowe wynosi <2%, więc wpływ na ciśnienie krwi jest minimalny; doustna LDOM (0,25–5 mg/dzień) zapewnia ekspozycję systemową, skuteczniejszą niż miejscowa (Perera & Sinclair 2017 PMID 29167734), ale wymaga monitorowania sercowo-naczyniowego.",
   "mechanism": "Otwarcie kanałów K ATP-zależnych → wazodylatacja + perfuzja mieszka włosowego. Wtórnie: aktywny metabolit (siarczan minoxidilu) aktywowany przez sulfotransferazę (SULT1A1), wzrost prostaglandyny E2. Wariancja aktywności enzymu SULT1A1 daje ~40–50% non-responderów na poziomie populacji (Goren 2014).",
   "cyp450": [
@@ -39,7 +39,7 @@ export default {
     "Leki przeciwnadciśnieniowe: addytywna hipotensja przy podaniu doustnym"
   ],
   "benefits": [
-    "Forma miejscowa OTC — niski próg wejścia",
+    "Forma miejscowa OTC – niski próg wejścia",
     "Doustna LDOM skuteczniejsza niż miejscowa (Perera & Sinclair 2017)",
     "Komplementarny z finasterydem (protokół Big-3: Minoxidil + Finasteryd + Ketokonazol)"
   ],
@@ -133,10 +133,10 @@ export default {
         "Aktywny wysięk osierdziowy"
       ],
       "commonSideEffects": [
-        "HIPOTENSJA — systemowa wazodylatacja, zwiększone ryzyko przy lekach przeciwnadciśnieniowych",
+        "HIPOTENSJA – systemowa wazodylatacja, zwiększone ryzyko przy lekach przeciwnadciśnieniowych",
         "Odruchowa tachykardia, przyspieszenie tętna (+10–20 bpm)",
         "Obrzęk (kostka, miejscowy; częstszy powyżej 2,5 mg)",
-        "Uogólniona hipertrychoza (wzrost owłosienia na ciele i twarzy — ekspozycja systemowa)",
+        "Uogólniona hipertrychoza (wzrost owłosienia na ciele i twarzy – ekspozycja systemowa)",
         "Hipotensja ortostatyczna",
         "Początkowe wypadanie włosów (telogenowe effluvium) w ciągu 1–2 miesięcy"
       ]
@@ -151,8 +151,8 @@ export default {
       },
       "routeNote": {
         "hu": "A topikális forma az első választás hajhullásra: OTC elérhető, minimális szisztémás hatás (<2% abszorpció), kisebb mellékhatás-profil. Lassabb válasz mint az orális LDOM, de biztonságosabb és egyszerűbben bevezethető kezelés.",
-        "en": "Topical is the first-choice route for hair loss: OTC available, minimal systemic exposure (<2% absorption), smaller side-effect profile. Slower response than oral LDOM but safer and easier to initiate — FDA OTC approved.",
-        "pl": "Forma miejscowa jest pierwszym wyborem w leczeniu wypadania włosów: dostępna bez recepty (OTC), minimalna ekspozycja systemowa (<2% wchłaniania), mniejszy profil działań niepożądanych. Wolniejsza odpowiedź niż doustna LDOM, ale bezpieczniejsza i łatwiejsza do wdrożenia — zatwierdzona przez FDA jako OTC."
+        "en": "Topical is the first-choice route for hair loss: OTC available, minimal systemic exposure (<2% absorption), smaller side-effect profile. Slower response than oral LDOM but safer and easier to initiate – FDA OTC approved.",
+        "pl": "Forma miejscowa jest pierwszym wyborem w leczeniu wypadania włosów: dostępna bez recepty (OTC), minimalna ekspozycja systemowa (<2% wchłaniania), mniejszy profil działań niepożądanych. Wolniejsza odpowiedź niż doustna LDOM, ale bezpieczniejsza i łatwiejsza do wdrożenia – zatwierdzona przez FDA jako OTC."
       },
       "image": "/performance/topical-solution-clear.png",
       "halfLife": "~22 godziny (retencja w skórze głowy; systemowa minimalna)",
@@ -176,16 +176,16 @@ export default {
         },
         "unit": "% roztwór, 2× dziennie 1 ml",
         "note": {
-          "hu": "Standard protokoll: 5% oldat vagy hab, 1 ml 2× naponta száraz fejbőrre (reggel + este). Nőknél 2% kevésbé irritáló alternatíva, vagy 5% propilén-glikol-mentes hab. Hatás 3–6 hónap alatt várható. Elhagyás esetén 3–4 hónap alatt visszahúzódik a növekedés — a kezelés hosszú távú.",
-          "en": "Standard protocol: 5% solution or foam, 1 ml 2× daily to dry scalp (morning + evening). For women, 2% is a less irritating alternative, or 5% propylene glycol-free foam. Effect expected within 3–6 months. After stopping, regrowth recedes over 3–4 months — treatment is long-term.",
-          "pl": "Standardowy protokół: roztwór 5% lub pianka, 1 ml 2× dziennie na suchą skórę głowy (rano + wieczór). Dla kobiet 2% to mniej drażniąca alternatywa, lub pianka 5% bez glikolu propylenowego. Efekt oczekiwany w ciągu 3–6 miesięcy. Po odstawieniu odrost cofa się w ciągu 3–4 miesięcy — leczenie jest długoterminowe."
+          "hu": "Standard protokoll: 5% oldat vagy hab, 1 ml 2× naponta száraz fejbőrre (reggel + este). Nőknél 2% kevésbé irritáló alternatíva, vagy 5% propilén-glikol-mentes hab. Hatás 3–6 hónap alatt várható. Elhagyás esetén 3–4 hónap alatt visszahúzódik a növekedés – a kezelés hosszú távú.",
+          "en": "Standard protocol: 5% solution or foam, 1 ml 2× daily to dry scalp (morning + evening). For women, 2% is a less irritating alternative, or 5% propylene glycol-free foam. Effect expected within 3–6 months. After stopping, regrowth recedes over 3–4 months – treatment is long-term.",
+          "pl": "Standardowy protokół: roztwór 5% lub pianka, 1 ml 2× dziennie na suchą skórę głowy (rano + wieczór). Dla kobiet 2% to mniej drażniąca alternatywa, lub pianka 5% bez glikolu propylenowego. Efekt oczekiwany w ciągu 3–6 miesięcy. Po odstawieniu odrost cofa się w ciągu 3–4 miesięcy – leczenie jest długoterminowe."
         }
       },
       "legalStatus": "OTC UE/USA/PL (roztwory 2% i 5% + pianka 5% dostępne bez recepty).",
       "prescriptionStatus": "OTC",
       "atcCode": "D11AX01",
       "indications": [
-        "Łysienie androgenowe (wzór męski, wskazanie podstawowe — Rogaine 5%)",
+        "Łysienie androgenowe (wzór męski, wskazanie podstawowe – Rogaine 5%)",
         "Łysienie androgenowe u kobiet (2% Rogaine lub pianka 5%)"
       ],
       "contraindications": [
@@ -194,7 +194,7 @@ export default {
       ],
       "commonSideEffects": [
         "Miejscowe podrażnienie skóry głowy, swędzenie, łuszczenie",
-        "Kontaktowe zapalenie skóry (glikol propylenowy — unikalne z pianką)",
+        "Kontaktowe zapalenie skóry (glikol propylenowy – unikalne z pianką)",
         "Niechciany wzrost owłosienia na czole / uszach ze spływania preparatu",
         "Paradoksalne wypadanie włosów (telogenowe effluvium 2–4 tygodnie)"
       ]

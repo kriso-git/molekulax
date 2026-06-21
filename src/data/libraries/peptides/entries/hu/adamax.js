@@ -12,7 +12,7 @@ export default {
   "defaultBacMl": 0,
   "defaultDoseMcg": 200,
   "shortDesc": "Adamantán-konjugált Semax-analóg, grey-zone research chemical",
-  "description": "Az Adamax egy Semax-analóg research chemical: N-terminális acetilezés + adamantán modifikáció, ami elméletileg javítja a lipofilicitást és a BBB-penetrációt. Két formában érhető el: szubkután injekció és intranazális spray. Research-chemical, korlátozott humán adat, anekdotális használat — nincs peer-reviewed klinikai vizsgálat.",
+  "description": "Az Adamax egy Semax-analóg research chemical: N-terminális acetilezés + adamantán modifikáció, ami elméletileg javítja a lipofilicitást és a BBB-penetrációt. Két formában érhető el: szubkután injekció és intranazális spray. Research-chemical, korlátozott humán adat, anekdotális használat – nincs peer-reviewed klinikai vizsgálat.",
   "keyInfo": [
     {
       "label": "Típus",
@@ -37,7 +37,7 @@ export default {
   ],
   "dosageInfo": "Anekdotális research-protokoll: 100–300 µg/nap (SC vagy IN). Humán hosszú távú biztonsági adat nincs, nincs peer-reviewed klinikai vizsgálat.",
   "studies": [],
-  "anecdote": "Az Adamax a Semax elméleti továbbfejlesztéseként van pozicionálva, papíron jobb BBB-áthatolással, hosszabb hatástartammal és erősebb neurotrofikus hatásokkal. Bár több végleges adatra van szükség, anekdotikus beszámolók szerint tisztább gondolkodás, jobb gondolatmenet és simább kogníció jellemzi. Számos közösségi vita dokumentálja a felhasználói tapasztalatokat az Adamax-szal, bár minden beszámoló anekdotikus — peer-reviewed klinikai vizsgálat nem létezik.\n\nAz Adamax a Semaxhoz hasonló neurotrofikus és nootropikus előnyökre törekszik, de nagyobb hangsúlyt fektet a tartós aktivitásra a feltételezett jobb BBB-permeabilitás és a hosszabb hatástartam révén. Mivel grey-zone research chemical, minden használat saját felelősségre, community-sourced protokoll alapján.",
+  "anecdote": "Az Adamax a Semax elméleti továbbfejlesztéseként van pozicionálva, papíron jobb BBB-áthatolással, hosszabb hatástartammal és erősebb neurotrofikus hatásokkal. Bár több végleges adatra van szükség, anekdotikus beszámolók szerint tisztább gondolkodás, jobb gondolatmenet és simább kogníció jellemzi. Számos közösségi vita dokumentálja a felhasználói tapasztalatokat az Adamax-szal, bár minden beszámoló anekdotikus – peer-reviewed klinikai vizsgálat nem létezik.\n\nAz Adamax a Semaxhoz hasonló neurotrofikus és nootropikus előnyökre törekszik, de nagyobb hangsúlyt fektet a tartós aktivitásra a feltételezett jobb BBB-permeabilitás és a hosszabb hatástartam révén. Mivel grey-zone research chemical, minden használat saját felelősségre, community-sourced protokoll alapján.",
   "variants": [
     {
       "id": "sc",
@@ -87,7 +87,7 @@ export default {
           "5 mg lyophilized vial + 5 ml steril bakteriosztatikus víz",
           "Lassan az üvegfalra injektáld a vizet, óvatosan forgasd (NE rázd)",
           "Töltsd át steril orrspray-flakonba (50 μl/puff pumpa, így ~50 μg/puff)",
-          "Koncentráció: 1000 μg/ml — 1 puff = ~50 μg, 2–6 puff/nap dózistól függően",
+          "Koncentráció: 1000 μg/ml – 1 puff = ~50 μg, 2–6 puff/nap dózistól függően",
           "Tárolás: hűtőben (2–8°C), max 28 nap; használat előtt primingolj 2–3 üres puffot"
         ]
       }

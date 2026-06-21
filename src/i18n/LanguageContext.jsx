@@ -79,7 +79,7 @@ export function LanguageProvider({ children }) {
 
   // tr: localizes a value that may be a plain string OR an object {hu, en, pl}.
   // Entry data still ships full triplets (entries-data locale-split deferred
-  // to a later Phase per spec §11 backlog) — tr handles both shapes.
+  // to a later Phase per spec §11 backlog) – tr handles both shapes.
   const tr = useCallback((value) => {
     if (value == null) return value
     if (typeof value === 'string') return value

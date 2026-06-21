@@ -6,7 +6,7 @@ import { useLibrary } from '../../context/LibraryContext'
 // administration) filtering. Chips toggle independently; AND-combined with
 // subCategory filter in LibraryGallery's filteredAll memo.
 //
-// Controlled component — owner is LibraryGallery.
+// Controlled component – owner is LibraryGallery.
 const FormFactorChipRow = memo(function FormFactorChipRow({
   selectedFormFactors,
   onToggle,

@@ -1,5 +1,5 @@
 // v0.27 RICH multi-variant entry (oral + topical).
-// Phase B Round 1 expansion — route-toggle-aware shape.
+// Phase B Round 1 expansion – route-toggle-aware shape.
 // Sources: FDA Loniten + Rogaine Drug Labels, Perera & Sinclair 2017 (PMID
 // 29167734), Pirmez 2020 (PMID 31520662), Olsen 2002 (PMID 12196747),
 // Suchonwanit 2019 (PMID 31496654), Vañó-Galván 2021 (PMID 33639244).
@@ -27,7 +27,7 @@ export default {
   "name": "Minoxidil",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
-  "shortDesc": "K-csatorna-aktivátor topikális vagy orális szer (Rogaine, Loniten + LDOM). Androgenetikus alopecia kezelés 1988 óta — két adagolási mód, eltérő szisztémás expozícióval.",
+  "shortDesc": "K-csatorna-aktivátor topikális vagy orális szer (Rogaine, Loniten + LDOM). Androgenetikus alopecia kezelés 1988 óta – két adagolási mód, eltérő szisztémás expozícióval.",
   "description": "A Minoxidil eredetileg orális antihipertenzív szerként (Loniten 1979) lett kifejlesztve, de a mellékhatásként megjelenő hipertrichózis miatt topikális formulációt fejlesztettek alopecia kezelésére (Upjohn Rogaine 2% 1988, 5% 1996). A két adagolási forma alapjaiban különböző farmakokinetikai profillal rendelkezik: a topikális szisztémás abszorpciója <2%, így a vérnyomás-hatás minimális; az orális LDOM (0,25–5 mg/nap) szisztémás expozíciót ad, hatékonyabb mint a topikális (Perera & Sinclair 2017 PMID 29167734), de monitorálandó kardiovaszkuláris profilt igényel.",
   "mechanism": "ATP-érzékeny K-csatorna nyitása → vazodilatáció + hajhagyma-perfúzió. Másodlagos: szulfo-transzferáz (SULT1A1) aktivált aktív metabolit (Minoxidil-szulfát), prosztaglandin-E2 emelkedés. A SULT1A1 enzim-aktivitás populáció-szintű variancia ~40–50% non-responder arányt eredményez (Goren 2014).",
   "cyp450": [
@@ -39,7 +39,7 @@ export default {
     "Antihipertenzív szerek: orális esetén additív hipotenzió"
   ],
   "benefits": [
-    "OTC elérhető topikális forma — alacsony belépési küszöb",
+    "OTC elérhető topikális forma – alacsony belépési küszöb",
     "Orális LDOM hatékonyabb mint topikális (Perera & Sinclair 2017)",
     "Komplementer Finasteride-hez (Big-3 protokoll: Minoxidil + Finasteride + Ketoconazole)"
   ],
@@ -133,10 +133,10 @@ export default {
         "Aktív perikardiális effúzió"
       ],
       "commonSideEffects": [
-        "HIPOTENZIÓ — szisztémás vazodilatáció, fokozott kockázat antihipertenzívumok mellett",
+        "HIPOTENZIÓ – szisztémás vazodilatáció, fokozott kockázat antihipertenzívumok mellett",
         "Reflex-tachycardia, pulzusgyorsulás (+10–20 bpm)",
         "Ödéma (boka, lokális; gyakoribb 2,5 mg felett)",
-        "Generalizált hirsutism (test- és arcszőrzet növekedés — szisztémás expozíció)",
+        "Generalizált hirsutism (test- és arcszőrzet növekedés – szisztémás expozíció)",
         "Posturalis hipotenzió",
         "Kezdeti shedding (telogén-effluvium) 1–2 hónap körül"
       ]
@@ -176,16 +176,16 @@ export default {
         },
         "unit": "% oldat, 2× napi 1 ml",
         "note": {
-          "hu": "Standard protokoll: 5% oldat vagy hab, 1 ml 2× naponta száraz fejbőrre (reggel + este). Nőknél 2% kevésbé irritáló alternatíva, vagy 5% propilén-glikol-mentes hab. Hatás 3–6 hónap alatt várható. Elhagyás esetén 3–4 hónap alatt visszahúzódik a növekedés — a kezelés hosszú távú.",
-          "en": "Standard protocol: 5% solution or foam, 1 ml 2× daily to dry scalp (morning + evening). For women, 2% is a less irritating alternative, or 5% propylene glycol-free foam. Effect expected within 3–6 months. After stopping, regrowth recedes over 3–4 months — treatment is long-term.",
-          "pl": "Standardowy protokół: roztwór 5% lub pianka, 1 ml 2× dziennie na suchą skórę głowy (rano + wieczór). Dla kobiet 2% to mniej drażniąca alternatywa, lub pianka 5% bez glikolu propylenowego. Efekt oczekiwany w ciągu 3–6 miesięcy. Po odstawieniu odrost cofa się w ciągu 3–4 miesięcy — leczenie jest długoterminowe."
+          "hu": "Standard protokoll: 5% oldat vagy hab, 1 ml 2× naponta száraz fejbőrre (reggel + este). Nőknél 2% kevésbé irritáló alternatíva, vagy 5% propilén-glikol-mentes hab. Hatás 3–6 hónap alatt várható. Elhagyás esetén 3–4 hónap alatt visszahúzódik a növekedés – a kezelés hosszú távú.",
+          "en": "Standard protocol: 5% solution or foam, 1 ml 2× daily to dry scalp (morning + evening). For women, 2% is a less irritating alternative, or 5% propylene glycol-free foam. Effect expected within 3–6 months. After stopping, regrowth recedes over 3–4 months – treatment is long-term.",
+          "pl": "Standardowy protokół: roztwór 5% lub pianka, 1 ml 2× dziennie na suchą skórę głowy (rano + wieczór). Dla kobiet 2% to mniej drażniąca alternatywa, lub pianka 5% bez glikolu propylenowego. Efekt oczekiwany w ciągu 3–6 miesięcy. Po odstawieniu odrost cofa się w ciągu 3–4 miesięcy – leczenie jest długoterminowe."
         }
       },
       "legalStatus": "OTC EU/USA/HU (2% és 5% oldat + 5% hab vény nélkül).",
       "prescriptionStatus": "OTC",
       "atcCode": "D11AX01",
       "indications": [
-        "Androgenetikus alopecia (férfi mintázat, primer indikáció — Rogaine 5%)",
+        "Androgenetikus alopecia (férfi mintázat, primer indikáció – Rogaine 5%)",
         "Női androgenetikus alopecia (2% Rogaine vagy 5% hab)"
       ],
       "contraindications": [
@@ -194,7 +194,7 @@ export default {
       ],
       "commonSideEffects": [
         "Lokális bőrirritáció, viszketés, hámlás a fejbőrön",
-        "Kontakt-dermatitis (propilén-glikol miatt — hab alternatívával elkerülhető)",
+        "Kontakt-dermatitis (propilén-glikol miatt – hab alternatívával elkerülhető)",
         "Nem kívánt szőrnövekedés homlokon/fülön (lecsorgásból)",
         "Paradox shedding (telogén-effluvium 2–4 hét körül)"
       ]

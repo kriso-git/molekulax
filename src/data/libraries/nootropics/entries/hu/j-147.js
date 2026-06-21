@@ -38,7 +38,7 @@ export default {
       "value": "Klinikai vizsgálati szer, nem FDA-jóváhagyott"
     }
   ],
-  "mechanism": "Az ATP-szintáz F1-katalitikus alegységének (ATP5A) közvetlen modulációja → fokozott mitokondriális ATP-produkció és csökkent szabadgyök-képződés. Másodlagosan BDNF, NGF gén-expresszió emelése, CREB-pathway aktiváció. NEM direkt amyloid-plakk-target — a kognitív hatás a mitokondriális energia-helyreállításán és a neurotrofin-induktoron keresztül érvényesül.",
+  "mechanism": "Az ATP-szintáz F1-katalitikus alegységének (ATP5A) közvetlen modulációja → fokozott mitokondriális ATP-produkció és csökkent szabadgyök-képződés. Másodlagosan BDNF, NGF gén-expresszió emelése, CREB-pathway aktiváció. NEM direkt amyloid-plakk-target – a kognitív hatás a mitokondriális energia-helyreállításán és a neurotrofin-induktoron keresztül érvényesül.",
   "legalStatus": "EU/HU: nincs orvosi engedély, klinikai vizsgálati vegyület. USA: csak kutatási célra, FDA nem hagyta jóvá. „Research chemical\" piacon hozzáférhető, humán használata orvosi felügyelet nélkül NEM ajánlott.",
   "chemicalFormula": "C18H17F3N4O"
 }

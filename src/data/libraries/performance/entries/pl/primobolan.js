@@ -52,7 +52,7 @@ export default {
       "value": "Bayer Primobolan Depot DE/ES Rx, USA: wycofany"
     }
   ],
-  "mechanism": "Agonista AR 1-metylo-dihydrotestosteron. Grupa 1-metylowa — szczególnie w pozycji Δ1 — blokuje oksydacyjny rozkład 17β-HSD i jest wyraźnie oporna na metabolizm wątrobowy. Ester octanowy 17β-OH (forma doustna) szybko hydrolizuje w żyle wrotnej do wolnego methenolonu, który jest następnie szybko metabolizowany przez wątrobę (niska biodostępność ~6%). Ester enantatowy (forma Depot) jest magazynowany jako depot poprzez iniekcję IM, powolna hydroliza daje stabilne poziomy w osoczu. NIE 17α-alkilowany → minimalny stres wątrobowy. NIE substrat CYP19 → NIE aromatyzuje do estrogenu.",
+  "mechanism": "Agonista AR 1-metylo-dihydrotestosteron. Grupa 1-metylowa – szczególnie w pozycji Δ1 – blokuje oksydacyjny rozkład 17β-HSD i jest wyraźnie oporna na metabolizm wątrobowy. Ester octanowy 17β-OH (forma doustna) szybko hydrolizuje w żyle wrotnej do wolnego methenolonu, który jest następnie szybko metabolizowany przez wątrobę (niska biodostępność ~6%). Ester enantatowy (forma Depot) jest magazynowany jako depot poprzez iniekcję IM, powolna hydroliza daje stabilne poziomy w osoczu. NIE 17α-alkilowany → minimalny stres wątrobowy. NIE substrat CYP19 → NIE aromatyzuje do estrogenu.",
   "legalStatus": "USA: wycofany po 1965 (FDA), Schedule III kontrolowany. DE/ES: Bayer Primobolan Depot Rx (niedokrwistość, stany kataboliczne wcześniaków). HU/PL: nielegalny bez recepty, kontrolowany AAS. Zakazany przez WADA cały rok (S1.1.a).",
   "onsetTime": "1-2 h (Ac doustny), 48-72 h (Enan IM)",
   "halfLife": "4-6 h (Ac doustny), 5-7 d (Enan IM)",
@@ -63,8 +63,8 @@ export default {
     "finasteride",
     "warfarin"
   ],
-  "aromatization": "Nie — struktura 1-metylo-DHT, NIE substrat CYP19 dla żadnego estru; klinicznie nie oczekiwany wzrost E2 (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma enantatowa iniekcyjna ma minimalny stres wątrobowy. Doustny octan również tylko łagodny, bo grupa 1-metylowa nie jest 17α (tylko 1-metyl zapewnia doustną stabilność), ALE wysoka dawka (50-100 mg/dzień) wymaga monitoringu (Hartgens-Kuipers 2004 PMID 15248788)",
+  "aromatization": "Nie – struktura 1-metylo-DHT, NIE substrat CYP19 dla żadnego estru; klinicznie nie oczekiwany wzrost E2 (Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Niska – steryd macierzysty, NIE 17α-alkilowany; forma enantatowa iniekcyjna ma minimalny stres wątrobowy. Doustny octan również tylko łagodny, bo grupa 1-metylowa nie jest 17α (tylko 1-metyl zapewnia doustną stabilność), ALE wysoka dawka (50-100 mg/dzień) wymaga monitoringu (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "88:44",
   "bindingAffinity": "Umiarkowane powinowactwo do AR (~28% vs testosteron in vitro). Wysokie powinowactwo do SHBG (strukturalny analog DHT) → pośredni wzrost wolnego T.",
@@ -78,7 +78,7 @@ export default {
   ],
   "quickStart": [
     "Realistyczne oczekiwania: Primobolan to ŁAGODNY AAS, nie oczekuj wyników Dianabol-podobnych 10 kg/4 tygodnie",
-    "Dawka Ac doustnego jest WYSOKA (50-100 mg/dzień) ze względu na niską biodostępność — źródło wysokiej jakości kluczowe",
+    "Dawka Ac doustnego jest WYSOKA (50-100 mg/dzień) ze względu na niską biodostępność – źródło wysokiej jakości kluczowe",
     "Strukturalny analog DHT → ŚCISŁE ryzyko wypadania włosów przy genetycznej predyspozycji",
     "Lipidogram (HDL/LDL) baseline + 4 tygodnie + post-cycle OBOWIĄZKOWY",
     "PCT (Clomid + Nolvadex 4 tygodnie) potrzebne u mężczyzn ze względu na supresję HPTA"
@@ -90,7 +90,7 @@ export default {
     },
     {
       "label": "Tydzień 4-6",
-      "body": "Subiektywnie \"twardszy\" tonus mięśniowy, naczyniowość. SHBG spada, przyrost masy mięśniowej 1-2 kg (NIE ekstremalne — Primobolan to łagodny AAS)."
+      "body": "Subiektywnie \"twardszy\" tonus mięśniowy, naczyniowość. SHBG spada, przyrost masy mięśniowej 1-2 kg (NIE ekstremalne – Primobolan to łagodny AAS)."
     },
     {
       "label": "Koniec tygodnia 10-12",
@@ -99,11 +99,11 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Bayer Primobolan Depot oryginalny Rx (DE/ES, 100 mg/ml, ampułka 1 ml) — autentyczne źródło enantatu",
+      "Bayer Primobolan Depot oryginalny Rx (DE/ES, 100 mg/ml, ampułka 1 ml) – autentyczne źródło enantatu",
       "Tabletka octanu UGL: źródło testowane HPLC obowiązkowe, często fałszowane (zastępowanie Anavarem lub Winstrolem)"
     ],
     "caution": [
-      "Wysoka dzienna dawka Ac doustnego (50-100 mg/dzień) — kosztowna i krytyczna jakościowo",
+      "Wysoka dzienna dawka Ac doustnego (50-100 mg/dzień) – kosztowna i krytyczna jakościowo",
       "Przyspieszenie wypadania włosów w alopecji androgenowej (strukturalny analog DHT)",
       "Zaburzenia lipidowe: spadek HDL (umiarkowany)",
       "Pogłębienie głosu i hirsutyzm u kobiet (ryzyko wirylizacji utrzymuje się nawet przy niższych dawkach)"
@@ -113,13 +113,13 @@ export default {
       "Przerost prostaty, rak prostaty (analog DHT)",
       "Stosowanie przez kobiety przy wyższych dawkach (>10 mg/dzień doustny Ac, >50 mg/tydzień Enan)",
       "Ryzyko sercowo-naczyniowe (rodzinna historia, wysokie LDL)",
-      "Cel bulking/przyrost masy — Primobolan to steryd cięciowy i kondycyjny, NIE budujący masę"
+      "Cel bulking/przyrost masy – Primobolan to steryd cięciowy i kondycyjny, NIE budujący masę"
     ]
   },
   "interactions": [
     "Stack z bazą testosteronu: standardowy, wzmacnia syntezę białek mięśniowych; dopasowanie okresu półtrwania estru zalecane (Test-Prop+Primo-Ac lub Test-Enan+Primo-Enan)",
     "Anastrozol (AI): NIE potrzebny dla cyklu tylko-Primo (brak aromatyzacji); podczas Test-stacku tylko jeśli laboratoryjnie potwierdzone wysokie E2",
-    "Finasteryd: NIE hamuje efektu Primobolanu (już 5α-zredukowany), NIE chroni przed DHT skóry głowy — bezużyteczny",
+    "Finasteryd: NIE hamuje efektu Primobolanu (już 5α-zredukowany), NIE chroni przed DHT skóry głowy – bezużyteczny",
     "Warfaryna: efekt antykoagulacyjny może być wzmocniony, monitoring INR"
   ],
   "studies": [
@@ -157,19 +157,19 @@ export default {
   "faq": [
     {
       "q": "Dlaczego Primobolan jest tak drogi?",
-      "a": "Dwa powody: (1) surowiec (methenolon) jest drogi do syntezy, niewiele laboratoriów UGL potrafi go wyprodukować czysto; (2) fałszerstwo jest skrajnie częste — wiele Primo z UGL to w rzeczywistości Anavar lub Winstrol. Bayer Primobolan Depot oryginalny DE/ES Rx cena czarnorynkowa ~150-250 EUR/ml. Doustny Ac jest jeszcze droższy, ponieważ dzienny koszt jest wysoki ze względu na wymóg 50-100 mg/dzień."
+      "a": "Dwa powody: (1) surowiec (methenolon) jest drogi do syntezy, niewiele laboratoriów UGL potrafi go wyprodukować czysto; (2) fałszerstwo jest skrajnie częste – wiele Primo z UGL to w rzeczywistości Anavar lub Winstrol. Bayer Primobolan Depot oryginalny DE/ES Rx cena czarnorynkowa ~150-250 EUR/ml. Doustny Ac jest jeszcze droższy, ponieważ dzienny koszt jest wysoki ze względu na wymóg 50-100 mg/dzień."
     },
     {
       "q": "Czy to naprawdę \"łagodny\" AAS, jak mówią?",
-      "a": "Tak, wśród klasycznych AAS jeden z najłagodniejszych pod względem hepatotoksyczności i profilu sercowo-naczyniowego. ALE ze względu na łagodność NIE oczekuj spektakularnych przyrostów masy mięśniowej — Primobolan to środek na cięcie i kondycję, NIE bulker. Pope-Kanayama 2014 podkreśla: rozdźwięk między oczekiwaniami a rzeczywistością użytkowników jest głównym źródłem frustracji."
+      "a": "Tak, wśród klasycznych AAS jeden z najłagodniejszych pod względem hepatotoksyczności i profilu sercowo-naczyniowego. ALE ze względu na łagodność NIE oczekuj spektakularnych przyrostów masy mięśniowej – Primobolan to środek na cięcie i kondycję, NIE bulker. Pope-Kanayama 2014 podkreśla: rozdźwięk między oczekiwaniami a rzeczywistością użytkowników jest głównym źródłem frustracji."
     },
     {
       "q": "Dlaczego biodostępność doustnego octanu jest tak niska?",
-      "a": "Ester octanowy (17β-OH-octan) SZYBKO hydrolizuje w żyle wrotnej do wolnego methenolonu, który jest następnie szybko metabolizowany przez wątrobę (NIE 17α-alkilowany, więc brak ochrony first-pass). Stąd biodostępność doustnego Primobolanu wynosi tylko ~6% — w porównaniu z np. 30-40% Anavaru ze względu na ochronę first-pass 17α-alkilowaną."
+      "a": "Ester octanowy (17β-OH-octan) SZYBKO hydrolizuje w żyle wrotnej do wolnego methenolonu, który jest następnie szybko metabolizowany przez wątrobę (NIE 17α-alkilowany, więc brak ochrony first-pass). Stąd biodostępność doustnego Primobolanu wynosi tylko ~6% – w porównaniu z np. 30-40% Anavaru ze względu na ochronę first-pass 17α-alkilowaną."
     },
     {
       "q": "Dlaczego kobiety również używają Primobolanu?",
-      "a": "Niski potencjał androgenny (44% vs testosteron) oznacza, że ryzyko wirylizacji należy do najniższych wśród AAS (Anavar i Primobolan to klasyczna \"przyjazna kobietom\" para AAS). ALE wirylizacja NIE wynosi zero — przy wyższych dawkach (>10 mg/dzień doustnie lub >50 mg/tydzień Enan) udokumentowano pogłębienie głosu i hirsutyzm. Jakikolwiek objaw wirylizacji = natychmiastowe przerwanie cyklu."
+      "a": "Niski potencjał androgenny (44% vs testosteron) oznacza, że ryzyko wirylizacji należy do najniższych wśród AAS (Anavar i Primobolan to klasyczna \"przyjazna kobietom\" para AAS). ALE wirylizacja NIE wynosi zero – przy wyższych dawkach (>10 mg/dzień doustnie lub >50 mg/tydzień Enan) udokumentowano pogłębienie głosu i hirsutyzm. Jakikolwiek objaw wirylizacji = natychmiastowe przerwanie cyklu."
     },
     {
       "q": "Czy to prawda, że Arnold Schwarzenegger go używał?",
@@ -219,14 +219,14 @@ export default {
         "pl": "Methenolon Acetate (Primobolan-Ac, tabletka doustna)"
       },
       "routeNote": {
-        "hu": "Klasszikus 'kozmetikai' AAS orális ága — alacsony hepatotoxicitás (NEM 17α-alkilált), nincs aromatizáció (1-metil-DHT). Hátulütő: alacsony orális bioavailability (~6%) miatt magas napi dózis kell (50-100 mg = 5-10 tabletta). A leggyakrabban hamisított AAS-tabletta (Anavar/Winstrol helyettesítés) — HPLC-tesztelés ABSZOLÚT KÖTELEZŐ. Női-barát alacsony dózisban (5-10 mg/nap).",
-        "en": "The oral arm of the classic 'cosmetic' AAS — low hepatotoxicity (NOT 17α-alkylated), no aromatization (1-methyl-DHT). Drawback: low oral bioavailability (~6%) requires high daily dose (50-100 mg = 5-10 tablets). The most commonly counterfeited AAS tablet (Anavar/Winstrol substitution) — HPLC testing ABSOLUTELY MANDATORY. Female-friendly at low doses (5-10 mg/day).",
-        "pl": "Doustna część klasycznego 'kosmetycznego' AAS — niska hepatotoksyczność (NIE 17α-alkilowany), brak aromatyzacji (1-metyl-DHT). Wada: niska biodostępność doustna (~6%) wymaga wysokiej dawki dziennej (50-100 mg = 5-10 tabletek). Najczęściej podrabiana tabletka AAS (substytut Anavar/Winstrol) — testowanie HPLC ABSOLUTNIE OBOWIĄZKOWE. Przyjazna dla kobiet w niskich dawkach (5-10 mg/dzień)."
+        "hu": "Klasszikus 'kozmetikai' AAS orális ága – alacsony hepatotoxicitás (NEM 17α-alkilált), nincs aromatizáció (1-metil-DHT). Hátulütő: alacsony orális bioavailability (~6%) miatt magas napi dózis kell (50-100 mg = 5-10 tabletta). A leggyakrabban hamisított AAS-tabletta (Anavar/Winstrol helyettesítés) – HPLC-tesztelés ABSZOLÚT KÖTELEZŐ. Női-barát alacsony dózisban (5-10 mg/nap).",
+        "en": "The oral arm of the classic 'cosmetic' AAS – low hepatotoxicity (NOT 17α-alkylated), no aromatization (1-methyl-DHT). Drawback: low oral bioavailability (~6%) requires high daily dose (50-100 mg = 5-10 tablets). The most commonly counterfeited AAS tablet (Anavar/Winstrol substitution) – HPLC testing ABSOLUTELY MANDATORY. Female-friendly at low doses (5-10 mg/day).",
+        "pl": "Doustna część klasycznego 'kosmetycznego' AAS – niska hepatotoksyczność (NIE 17α-alkilowany), brak aromatyzacji (1-metyl-DHT). Wada: niska biodostępność doustna (~6%) wymaga wysokiej dawki dziennej (50-100 mg = 5-10 tabletek). Najczęściej podrabiana tabletka AAS (substytut Anavar/Winstrol) – testowanie HPLC ABSOLUTNIE OBOWIĄZKOWE. Przyjazna dla kobiet w niskich dawkach (5-10 mg/dzień)."
       },
       "image": "/performance/tablet-pile-white.png",
       "halfLife": "4-6 h (macierzysty methenolon, brak aktywnego metabolitu)",
       "halfLifeActive": "4-6 h",
-      "bioavailability": "~6% (niska — ester octanowy szybko hydrolizowany w żyle wrotnej, następnie metabolizm wątrobowy macierzystego methenolonu; stąd wysokie zapotrzebowanie na dawkę)",
+      "bioavailability": "~6% (niska – ester octanowy szybko hydrolizowany w żyle wrotnej, następnie metabolizm wątrobowy macierzystego methenolonu; stąd wysokie zapotrzebowanie na dawkę)",
       "onsetTime": {
         "hu": "1-2 h (orális, fast-absorption)",
         "en": "1-2 h (oral, fast-absorption)",
@@ -259,18 +259,18 @@ export default {
       "quality": {
         "pure": [
           "Klarowna biała, oznaczona tabletka (25 mg lub 50 mg częsty dosing UGL)",
-          "Testowanie HPLC BEZWZGLĘDNIE OBOWIĄZKOWE — Primobolan-Ac to najczęściej fałszowana tabletka AAS (zastępowanie Anavarem/Winstrolem)"
+          "Testowanie HPLC BEZWZGLĘDNIE OBOWIĄZKOWE – Primobolan-Ac to najczęściej fałszowana tabletka AAS (zastępowanie Anavarem/Winstrolem)"
         ],
         "caution": [
-          "Wysoka dzienna dawka (50-100 mg/dzień) — często 5-10 tabletek rozłożonych w ciągu dnia",
+          "Wysoka dzienna dawka (50-100 mg/dzień) – często 5-10 tabletek rozłożonych w ciągu dnia",
           "Przyspieszenie wypadania włosów w alopecji androgenowej (pochodna DHT)",
           "Zaburzenia lipidowe: spadek HDL (umiarkowany)",
-          "Koszt: dzienny koszt Ac doustnego 5-15 EUR w zależności od jakości UGL — droższy niż wiele innych doustnych AAS"
+          "Koszt: dzienny koszt Ac doustnego 5-15 EUR w zależności od jakości UGL – droższy niż wiele innych doustnych AAS"
         ],
         "avoid": [
           "Jakiekolwiek istniejące podwyższenie ALT/AST (forma doustna ze względu na wysokie zapotrzebowanie na dawkę)",
           "Jednoczesne stosowanie alkoholu lub paracetamolu",
-          "Wysokie ryzyko fałszerstwa — jeśli brak źródła testowanego HPLC, NIE stosować",
+          "Wysokie ryzyko fałszerstwa – jeśli brak źródła testowanego HPLC, NIE stosować",
           "Stosowanie przez kobiety >10 mg/dzień (ryzyko wirylizacji)"
         ]
       },
@@ -289,9 +289,9 @@ export default {
         "pl": "Methenolon Enanthate (Primobolan Depot, IM olejowy)"
       },
       "routeNote": {
-        "hu": "A kozmetikai AAS preferált formája — IM bypass-olja a first-pass-t ⇒ a legalacsonyabb hepatotoxicitású AAS-ek egyike, női-barát low-dose mellett is. ~5-7 napos felezés ⇒ heti 1-2 injekció, steady-state 3-4 hét. Extra hosszú detection window (4-6 hó) — WADA-tesztelt versenyzőnek tilos. Bayer Primobolan Depot ár: feketepiacon 150-250 EUR/ml (extrém drága) — UGL alternatíva gyakori, de hamisítás magas.",
-        "en": "The preferred form of the cosmetic AAS — IM bypasses first-pass ⇒ one of the lowest-hepatotoxicity AAS, female-friendly even at low dose. ~5-7 day half-life ⇒ once/twice weekly injection, steady-state 3-4 weeks. Extra-long detection window (4-6 months) — forbidden for WADA-tested athletes. Bayer Primobolan Depot price: 150-250 EUR/ml on the black market (extremely expensive) — UGL alternative common, but counterfeiting is high.",
-        "pl": "Preferowana forma kosmetycznego AAS — IM omija first-pass ⇒ jeden z AAS o najniższej hepatotoksyczności, przyjazny dla kobiet nawet w niskich dawkach. ~5-7-dniowy okres półtrwania ⇒ iniekcja raz/dwa razy w tygodniu, stan stacjonarny 3-4 tygodnie. Bardzo długie okno detekcji (4-6 miesięcy) — zakazany dla sportowców testowanych WADA. Cena Bayer Primobolan Depot: 150-250 EUR/ml na czarnym rynku (bardzo drogo) — alternatywa UGL powszechna, ale podróbki są wysokie."
+        "hu": "A kozmetikai AAS preferált formája – IM bypass-olja a first-pass-t ⇒ a legalacsonyabb hepatotoxicitású AAS-ek egyike, női-barát low-dose mellett is. ~5-7 napos felezés ⇒ heti 1-2 injekció, steady-state 3-4 hét. Extra hosszú detection window (4-6 hó) – WADA-tesztelt versenyzőnek tilos. Bayer Primobolan Depot ár: feketepiacon 150-250 EUR/ml (extrém drága) – UGL alternatíva gyakori, de hamisítás magas.",
+        "en": "The preferred form of the cosmetic AAS – IM bypasses first-pass ⇒ one of the lowest-hepatotoxicity AAS, female-friendly even at low dose. ~5-7 day half-life ⇒ once/twice weekly injection, steady-state 3-4 weeks. Extra-long detection window (4-6 months) – forbidden for WADA-tested athletes. Bayer Primobolan Depot price: 150-250 EUR/ml on the black market (extremely expensive) – UGL alternative common, but counterfeiting is high.",
+        "pl": "Preferowana forma kosmetycznego AAS – IM omija first-pass ⇒ jeden z AAS o najniższej hepatotoksyczności, przyjazny dla kobiet nawet w niskich dawkach. ~5-7-dniowy okres półtrwania ⇒ iniekcja raz/dwa razy w tygodniu, stan stacjonarny 3-4 tygodnie. Bardzo długie okno detekcji (4-6 miesięcy) – zakazany dla sportowców testowanych WADA. Cena Bayer Primobolan Depot: 150-250 EUR/ml na czarnym rynku (bardzo drogo) – alternatywa UGL powszechna, ale podróbki są wysokie."
       },
       "image": "/performance/oil-vial-yellow.png",
       "halfLife": "5-7 dni (Enantat ester; wolny methenolon t½ ~24 h po hydrolizie)",
@@ -331,7 +331,7 @@ export default {
       "detectionWindow": "W moczu: 4-6 miesięcy (bardzo długie, ester enantatowy + rodzina metabolitów 1-metylowych). Akredytowane WADA GC-MS i LC-MS/MS.",
       "quality": {
         "pure": [
-          "Bayer Primobolan Depot 100 mg/ml, ampułka 1 ml — autentyczne źródło z holograficznym oznaczeniem",
+          "Bayer Primobolan Depot 100 mg/ml, ampułka 1 ml – autentyczne źródło z holograficznym oznaczeniem",
           "Alternatywa UGL: klarowny żółtawo-złoty olej, fiolka 10 ml, testowane HPLC źródło obowiązkowe"
         ],
         "caution": [
@@ -341,7 +341,7 @@ export default {
           "Bardzo długie okno detekcji: zawody testowane WADA <6 miesięcy po planowanym końcu zabronione"
         ],
         "avoid": [
-          "Krótki cykl (4-6 tygodni) NIE skuteczny — Enan steady-state dopiero po 3-4 tygodniach",
+          "Krótki cykl (4-6 tygodni) NIE skuteczny – Enan steady-state dopiero po 3-4 tygodniach",
           "Więcej niż 12-14 tygodni ciągłego cyklu (ciężka supresja HPTA)",
           "Sportowiec testowany WADA przez cały off-season (okno detekcji 6 miesięcy)",
           "Ryzyko sercowo-naczyniowe, stosowanie przez kobiety (>50 mg/tydzień wirylizacja)"

@@ -7,9 +7,9 @@ import { getSourcing } from '../../data/sourcingAvailability'
  * Per-entry "where to buy" cards, shown below the Telegram CTA.
  *
  * Renders one card per partner shop confirmed to carry this exact compound (see
- * data/sourcingAvailability.js — every link is verified). Each link already has
+ * data/sourcingAvailability.js – every link is verified). Each link already has
  * the referral baked in; shops that need a checkout code (Driada) surface the
- * coupon. When no partner carries the compound, nothing renders — so the
+ * coupon. When no partner carries the compound, nothing renders – so the
  * absence of a card means "not available".
  */
 export default function SourcingButtons({ entryId, variantId, className = '' }) {

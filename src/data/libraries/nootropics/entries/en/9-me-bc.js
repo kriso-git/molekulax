@@ -69,7 +69,7 @@ export default {
     "Sublingual (under tongue, 10-15 min) gives stronger effect than oral",
     "Do NOT combine with MAOI, SSRI, SNRI medications",
     "Avoid tyramine-rich foods (aged cheese, red wine)",
-    "SUNLIGHT: photosensitivity risk — avoid direct UV during course",
+    "SUNLIGHT: photosensitivity risk – avoid direct UV during course",
     "Short course (3-5 days), pause required to avoid sensitization"
   ],
   "expectations": [
@@ -94,7 +94,7 @@ export default {
     "caution": [
       "Tyramine reaction risk (MAO-B reversible, but still monoaminergic)",
       "Human pharmacokinetics not fully characterized",
-      "Photosensitivity (UV sensitivity, easier sunburn) — typical β-carboline backbone × UV interaction",
+      "Photosensitivity (UV sensitivity, easier sunburn) – typical β-carboline backbone × UV interaction",
       "Emotional \"flattening\" reported after extended use"
     ],
     "avoid": [
@@ -106,7 +106,7 @@ export default {
     "MAOI co-administration forbidden (serotonin syndrome + hypertensive crisis)",
     "Avoid SSRI/SNRI co-administration",
     "Tyramine-rich foods + drinks (aged cheese, red wine, cured meat)",
-    "Additive with stimulants (dopaminergic over-stimulation) — do NOT use stimulants during 9-Me-BC course; Bromantane is a softer alternative",
+    "Additive with stimulants (dopaminergic over-stimulation) – do NOT use stimulants during 9-Me-BC course; Bromantane is a softer alternative",
     "L-Tyrosine synergistic (raw substrate for upregulated TH activity)"
   ],
   "studies": [
@@ -154,7 +154,7 @@ export default {
     },
     {
       "q": "Why photosensitive (sunburn risk)?",
-      "a": "The β-carboline backbone, once in the skin, catalyzes UV-light reactions — it acts as an endogenous photosensitizer (Herraiz 2013). Result: sunburn at normal UV exposure, pigmentation risk during longer courses. Protection: broad-spectrum SPF 50+ + avoid direct sun during the entire course + for 5-7 days after."
+      "a": "The β-carboline backbone, once in the skin, catalyzes UV-light reactions – it acts as an endogenous photosensitizer (Herraiz 2013). Result: sunburn at normal UV exposure, pigmentation risk during longer courses. Protection: broad-spectrum SPF 50+ + avoid direct sun during the entire course + for 5-7 days after."
     },
     {
       "q": "Stim resensitization protocol?",

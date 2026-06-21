@@ -28,7 +28,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Drostanolon, iniekcyjny AAS pochodny 2α-metylo-DHT. Pierwotnie zatwierdzony przez FDA (Drolban, Lilly 1959) na nieoperacyjnego raka piersi u kobiet po menopauzie; dziś tylko underground market. Klasyczny \"hardening\" steryd na cięcie.",
-  "description": "Masteron (Drostanolon) to pochodna 2α-metylo-dihydrotestosteronu, wspólnie zsyntetyzowana przez Syntex i Eli Lilly w 1959 r. i zatwierdzona przez FDA w 1961 r. pod marką Drolban do paliatywnego leczenia nieoperacyjnego raka piersi po menopauzie. Wyparta przez nowoczesną terapię tamoksyfenem; Lilly wycofał w 1993 r. Stosunek anaboliczno-androgenny ~62:25 (niski anaboliczny, umiarkowany androgenny). Grupa 2α-metylowa blokuje zarówno aktywność 5α-reduktazy jak i aromatazy — NIE konwertuje do estrogenu i wykazuje unikalny łagodny efekt inhibitora aromatazy (Bhasin 2018 klasyfikacja AAS). NIE 17α-alkilowany, więc hepatotoksyczność minimalna. W kontekście kulturystycznym klasyczny steryd cięciowy do osiągnięcia \"twardości\" i estetyki naczyniowej, często w ostatnich 6-8 tygodniach przygotowań do zawodów. Zakazany przez WADA cały rok.",
+  "description": "Masteron (Drostanolon) to pochodna 2α-metylo-dihydrotestosteronu, wspólnie zsyntetyzowana przez Syntex i Eli Lilly w 1959 r. i zatwierdzona przez FDA w 1961 r. pod marką Drolban do paliatywnego leczenia nieoperacyjnego raka piersi po menopauzie. Wyparta przez nowoczesną terapię tamoksyfenem; Lilly wycofał w 1993 r. Stosunek anaboliczno-androgenny ~62:25 (niski anaboliczny, umiarkowany androgenny). Grupa 2α-metylowa blokuje zarówno aktywność 5α-reduktazy jak i aromatazy – NIE konwertuje do estrogenu i wykazuje unikalny łagodny efekt inhibitora aromatazy (Bhasin 2018 klasyfikacja AAS). NIE 17α-alkilowany, więc hepatotoksyczność minimalna. W kontekście kulturystycznym klasyczny steryd cięciowy do osiągnięcia \"twardości\" i estetyki naczyniowej, często w ostatnich 6-8 tygodniach przygotowań do zawodów. Zakazany przez WADA cały rok.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -52,7 +52,7 @@ export default {
     }
   ],
   "mechanism": "Agonista AR 2α-metylo-dihydrotestosteron (5α-zredukowany). Metylacja 2α zapewnia trzy bloki metaboliczne: (1) hamuje aromatazę (CYP19), więc molekuła NIE konwertuje do estradiolu i klinicznie wykazuje łagodny efekt inhibitora aromatazy; (2) opiera się oksydacyjnemu rozkładowi 17β-HSD (dłuższy okres półtrwania); (3) nie ulega bezpośredniej 5α-redukcji (już zredukowany). Forma estryfikowana 17β-OH (Propionat lub Enantat) po wstrzyknięciu IM powoli hydrolizuje w depocie tłuszczowym do wolnego drostanolonu, który ma wysokie powinowactwo do SHBG i redukuje frakcję testosteronu związanego z SHBG → pośredni wzrost wolnego T.",
-  "legalStatus": "USA: Schedule III kontrolowana substancja (DEA, wycofany Rx — Drolban nie produkowany po 1993). UE: kontrolowany steryd anaboliczny, nielegalny bez recepty. HU/PL: posiadanie i sprzedaż przestępstwo. Zakazany przez WADA cały rok w sporcie wyczynowym (S1.1.a sterydy anaboliczno-androgenne).",
+  "legalStatus": "USA: Schedule III kontrolowana substancja (DEA, wycofany Rx – Drolban nie produkowany po 1993). UE: kontrolowany steryd anaboliczny, nielegalny bez recepty. HU/PL: posiadanie i sprzedaż przestępstwo. Zakazany przez WADA cały rok w sporcie wyczynowym (S1.1.a sterydy anaboliczno-androgenne).",
   "onsetTime": "24-72 h (IM, zależnie od hydrolizy estru)",
   "halfLife": "2-3 d (Propionat), 7-10 d (Enantat)",
   "halfLifeActive": "~1-2 d wolny drostanolon po hydrolizie estru",
@@ -62,8 +62,8 @@ export default {
     "testosterone",
     "warfarin"
   ],
-  "aromatization": "Nie — steryczne zawady grupy 2α-metylowej oznaczają, że NIE jest substratem CYP19; klinicznie wykazuje łagodny efekt inhibitora aromatazy (Pope-Kanayama 2014 PMID 24423981 przegląd designer AAS)",
-  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma estru iniekcyjna pomija first-pass wątrobowy. Umiarkowane zaburzenia lipidowe (spadek HDL, wzrost LDL) pozostają głównym ryzykiem sercowo-naczyniowym (Hartgens-Kuipers 2004 PMID 15248788)",
+  "aromatization": "Nie – steryczne zawady grupy 2α-metylowej oznaczają, że NIE jest substratem CYP19; klinicznie wykazuje łagodny efekt inhibitora aromatazy (Pope-Kanayama 2014 PMID 24423981 przegląd designer AAS)",
+  "hepatotoxicity": "Niska – steryd macierzysty, NIE 17α-alkilowany; forma estru iniekcyjna pomija first-pass wątrobowy. Umiarkowane zaburzenia lipidowe (spadek HDL, wzrost LDL) pozostają głównym ryzykiem sercowo-naczyniowym (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "62:25",
   "bindingAffinity": "Umiarkowane powinowactwo do AR; wysokie powinowactwo do SHBG (strukturalny analog DHT) → wypiera testosteron związany z SHBG, indukując pośrednio wzrost wolnego T.",
@@ -93,32 +93,32 @@ export default {
     },
     {
       "label": "6-8 tygodni",
-      "body": "Szczyt contest-prep — kontur mięśni pod skórą maksymalnie wyróżniony. HDL ~20-30% spadek oczekiwany. Osoby podatne na wypadanie włosów mogą zauważyć przyspieszoną miniaturyzację."
+      "body": "Szczyt contest-prep – kontur mięśni pod skórą maksymalnie wyróżniony. HDL ~20-30% spadek oczekiwany. Osoby podatne na wypadanie włosów mogą zauważyć przyspieszoną miniaturyzację."
     }
   ],
   "quality": {
     "pure": [
       "Klarowny żółtawy lub jasnożółty olej (~#fef08a ton), bez osadu, fiolka 10 ml",
-      "Źródło UGL testowane HPLC obowiązkowe — Drostanolon Propionat i Enantat mają różny profil bólu PIP, fałszerstwa (zastępowanie Test-Prop) są częste"
+      "Źródło UGL testowane HPLC obowiązkowe – Drostanolon Propionat i Enantat mają różny profil bólu PIP, fałszerstwa (zastępowanie Test-Prop) są częste"
     ],
     "caution": [
       "Przyspieszenie wypadania włosów u użytkowników z genetyką alopecji androgenowej (strukturalny analog DHT)",
       "Zaburzenia lipidowe: spadek HDL, wzrost LDL (umiarkowane, NIE ekstremalne)",
       "Ból w miejscu wstrzyknięcia (szczególnie Propionat, ze względu na pojazd alkoholowy)",
-      "Pogłębienie głosu i hirsutyzm u kobiet (po 1 cyklu może być NIEODWRACALNE — ściśle przeciwwskazany)"
+      "Pogłębienie głosu i hirsutyzm u kobiet (po 1 cyklu może być NIEODWRACALNE – ściśle przeciwwskazany)"
     ],
     "avoid": [
       "Rodzinna historia alopecji androgenowej (skóra głowy wrażliwa na DHT)",
       "Przerost prostaty, rak prostaty (analog DHT → aktywacja AR prostaty)",
       "Stosowanie przez kobiety (ryzyko wirylizacji ekstremalne, korzyść estetyczna mała ze względu na niski wskaźnik anaboliczny)",
       "Ryzyko sercowo-naczyniowe (rodzinna historia, wysokie LDL, miażdżyca) bezwzględne przeciwwskazanie",
-      "Jakikolwiek \"pierwszy cykl\" — Masteron jest zawsze partnerem stacku, nigdy samodzielnym pierwszym AAS"
+      "Jakikolwiek \"pierwszy cykl\" – Masteron jest zawsze partnerem stacku, nigdy samodzielnym pierwszym AAS"
     ]
   },
   "interactions": [
     "Baza testosteronu (dopasowanie Prop+Prop lub Enan+Enan): standardowy stack, wzmacnia syntezę białek mięśniowych",
     "Anastrozol (AI): NIE potrzebny dla cyklu tylko-Masteron (łagodne własne AI); podczas Test-stacku tylko jeśli laboratoryjnie potwierdzone wysokie E2",
-    "Finasteryd: NIE hamuje efektu Masteronu (już 5α-zredukowany), i NIE chroni przed DHT skóry głowy — bezużyteczny dla zapobiegania wypadaniu włosów",
+    "Finasteryd: NIE hamuje efektu Masteronu (już 5α-zredukowany), i NIE chroni przed DHT skóry głowy – bezużyteczny dla zapobiegania wypadaniu włosów",
     "Warfaryna: efekt antykoagulacyjny może być wzmocniony, monitoring INR",
     "Kombinacja z innymi AAS wzmacnia supresję HPTA, PCT staje się niezbędne"
   ],
@@ -163,11 +163,11 @@ export default {
   "faq": [
     {
       "q": "Dlaczego nazywa się go sterydem \"hardening\"?",
-      "a": "Masteron NIE aromatyzuje i redukuje retencję wody dzięki wysokiemu powinowactwu do SHBG, więc przy niskim procencie tłuszczu (<10-12%) warstwa wody pod skórą kurczy się do minimum, dając naczyniowo zaakcentowany, \"twardy\" wygląd. Przy wyższym tłuszczu (>15%) efekt estetyczny niewidoczny — stąd specyfika contest-prep."
+      "a": "Masteron NIE aromatyzuje i redukuje retencję wody dzięki wysokiemu powinowactwu do SHBG, więc przy niskim procencie tłuszczu (<10-12%) warstwa wody pod skórą kurczy się do minimum, dając naczyniowo zaakcentowany, \"twardy\" wygląd. Przy wyższym tłuszczu (>15%) efekt estetyczny niewidoczny – stąd specyfika contest-prep."
     },
     {
       "q": "Czy to prawda, że jest też inhibitorem aromatazy?",
-      "a": "Częściowo. Steryczne zawady grupy 2α-metylowej dają Masteronowi klinicznie łagodny efekt inhibitora aromatazy — może redukować zapotrzebowanie na adiunktywny Anastrozol podczas stacków Test. ALE efekt NIE jest silny (Letrozol/Anastrozol-poziomu kompletna blokada NIE oczekiwana), a przy wysokich dawkach Test (>500 mg/tydzień) sam NIE wystarcza do kontroli E2."
+      "a": "Częściowo. Steryczne zawady grupy 2α-metylowej dają Masteronowi klinicznie łagodny efekt inhibitora aromatazy – może redukować zapotrzebowanie na adiunktywny Anastrozol podczas stacków Test. ALE efekt NIE jest silny (Letrozol/Anastrozol-poziomu kompletna blokada NIE oczekiwana), a przy wysokich dawkach Test (>500 mg/tydzień) sam NIE wystarcza do kontroli E2."
     },
     {
       "q": "Czy ryzyko wypadania włosów jest naprawdę tak wysokie?",
@@ -179,7 +179,7 @@ export default {
     },
     {
       "q": "Zagrożenia długotrwałego stosowania?",
-      "a": "Przewlekłe stosowanie AAS powoduje supresję HPTA (możliwie przedłużony wtórny hipogonadyzm wg kohortu Rasmussen-Christofferides 2016 PMID 27568523), ryzyko sercowo-naczyniowe (wzrost LDL, przerost lewej komory), efekty psychologiczne (Kanayama 2009 PMID 19922565 — uzależnienie od AAS). Sam Masteron nie jest skrajnie hepatotoksyczny, ALE skumulowana ekspozycja AAS (Test+Mast+inny stack) jest znacząca."
+      "a": "Przewlekłe stosowanie AAS powoduje supresję HPTA (możliwie przedłużony wtórny hipogonadyzm wg kohortu Rasmussen-Christofferides 2016 PMID 27568523), ryzyko sercowo-naczyniowe (wzrost LDL, przerost lewej komory), efekty psychologiczne (Kanayama 2009 PMID 19922565 – uzależnienie od AAS). Sam Masteron nie jest skrajnie hepatotoksyczny, ALE skumulowana ekspozycja AAS (Test+Mast+inny stack) jest znacząca."
     }
   ],
   "related": [
@@ -200,7 +200,7 @@ export default {
       "label": "W trakcie cyklu",
       "timing": "Tydzień 4-6, połowa cyklu",
       "markers": "Lipidogram (HDL może drastycznie spaść), E2 (jeśli z Test), SHBG (oczekiwany spadek napędzany Masteronem), dziennik ciśnienia, panel wątrobowy (ALT/AST), hematokryt.",
-      "purpose": "HDL <30 mg/dL jest alarmem sercowo-naczyniowym. Spadek SHBG (>50%) potwierdza aktywność Masteronu. E2 (podczas Test-stacku) jeśli rośnie, decyduje o potrzebie AI — łagodne własne AI Masteronu NIE wystarcza przy wysokich dawkach Test."
+      "purpose": "HDL <30 mg/dL jest alarmem sercowo-naczyniowym. Spadek SHBG (>50%) potwierdza aktywność Masteronu. E2 (podczas Test-stacku) jeśli rośnie, decyduje o potrzebie AI – łagodne własne AI Masteronu NIE wystarcza przy wysokich dawkach Test."
     },
     "postCycle": {
       "label": "PCT (Post-Cycle Therapy)",
@@ -212,7 +212,7 @@ export default {
       "label": "Na cruise (cruise zawierający Masteron NIE standardowy)",
       "timing": "Cruise z Masteronem atypowy; jeśli na cruise, monitoring co 6-8 tygodni",
       "markers": "Lipidogram (HDL), SHBG, Total T, E2, dziennik ciśnienia, PSA (powyżej 30 lat).",
-      "purpose": "Przedłużona ekspozycja Masteronu akumuluje zaburzenia lipidowe i aktywację AR prostaty. Na cruise TRT-Test Masteron jest zazwyczaj pomijany — efekt estetyczny tylko wartościowy podczas contest-prep."
+      "purpose": "Przedłużona ekspozycja Masteronu akumuluje zaburzenia lipidowe i aktywację AR prostaty. Na cruise TRT-Test Masteron jest zazwyczaj pomijany – efekt estetyczny tylko wartościowy podczas contest-prep."
     }
   },
   "variants": [
@@ -225,9 +225,9 @@ export default {
         "pl": "Drostanolon Propionian (Masteron-Prop, szybki ester)"
       },
       "routeNote": {
-        "hu": "A klasszikus 'cutting' kozmetikai DHT-származék — szárazság, izom-keménység, enyhe AI-hatás. ~2-3 napos felezés ⇒ heti 3x EOD IM-injekció (Mon/Wed/Fri vagy E2D). NEM 17α-alkilált ⇒ alacsony hepatotoxicitás. PIP gyakran fájdalmas a propionát alkohol-tartalmú vehikulum miatt. Rövid detection window (~3 hét) ⇒ contest-prep preferált variánsa.",
-        "en": "The classic 'cutting' cosmetic DHT-derivative — dryness, muscle hardness, mild AI effect. ~2-3 day half-life ⇒ 3× EOD IM injection weekly (Mon/Wed/Fri or E2D). NOT 17α-alkylated ⇒ low hepatotoxicity. PIP often painful due to propionate's alcohol-containing vehicle. Short detection window (~3 weeks) ⇒ preferred contest-prep variant.",
-        "pl": "Klasyczna 'tnąca' kosmetyczna pochodna DHT — suchość, twardość mięśni, łagodne działanie AI. ~2-3-dniowy okres półtrwania ⇒ iniekcja IM 3× EOD tygodniowo (pon/śr/pt lub E2D). NIE 17α-alkilowany ⇒ niska hepatotoksyczność. PIP często bolesny z powodu wehikułu propionianu zawierającego alkohol. Krótkie okno detekcji (~3 tygodnie) ⇒ preferowany wariant contest-prep."
+        "hu": "A klasszikus 'cutting' kozmetikai DHT-származék – szárazság, izom-keménység, enyhe AI-hatás. ~2-3 napos felezés ⇒ heti 3x EOD IM-injekció (Mon/Wed/Fri vagy E2D). NEM 17α-alkilált ⇒ alacsony hepatotoxicitás. PIP gyakran fájdalmas a propionát alkohol-tartalmú vehikulum miatt. Rövid detection window (~3 hét) ⇒ contest-prep preferált variánsa.",
+        "en": "The classic 'cutting' cosmetic DHT-derivative – dryness, muscle hardness, mild AI effect. ~2-3 day half-life ⇒ 3× EOD IM injection weekly (Mon/Wed/Fri or E2D). NOT 17α-alkylated ⇒ low hepatotoxicity. PIP often painful due to propionate's alcohol-containing vehicle. Short detection window (~3 weeks) ⇒ preferred contest-prep variant.",
+        "pl": "Klasyczna 'tnąca' kosmetyczna pochodna DHT – suchość, twardość mięśni, łagodne działanie AI. ~2-3-dniowy okres półtrwania ⇒ iniekcja IM 3× EOD tygodniowo (pon/śr/pt lub E2D). NIE 17α-alkilowany ⇒ niska hepatotoksyczność. PIP często bolesny z powodu wehikułu propionianu zawierającego alkohol. Krótkie okno detekcji (~3 tygodnie) ⇒ preferowany wariant contest-prep."
       },
       "image": "/performance/oil-vial-yellow.png",
       "halfLife": "2-3 dni (Propionat ester; wolny drostanolon t½ ~1-2 d po hydrolizie)",
@@ -268,7 +268,7 @@ export default {
       "quality": {
         "pure": [
           "Klarowny jasnożółty lub wodno-klarowny olej, fiolka 10 ml, sterylnie filtrowana",
-          "Źródło UGL testowane HPLC obowiązkowe — ester propionatowy charakterystycznie bolesny PIP, odróżnialnie inny niż enantat"
+          "Źródło UGL testowane HPLC obowiązkowe – ester propionatowy charakterystycznie bolesny PIP, odróżnialnie inny niż enantat"
         ],
         "caution": [
           "Ból w miejscu wstrzyknięcia (PIP): propionat w pojeździe alkoholowym często bolesny, obrzęk 24-48 h",
@@ -336,12 +336,12 @@ export default {
       "hepatotoxicity": "low",
       "aromatization": "none",
       "androgenicRatio": "62:25",
-      "legalStatus": "Nigdy nie licencjonowany jako ludzki Rx — tylko rynek UGL. Wszędzie nielegalny, zakaz WADA.",
+      "legalStatus": "Nigdy nie licencjonowany jako ludzki Rx – tylko rynek UGL. Wszędzie nielegalny, zakaz WADA.",
       "detectionWindow": "W moczu: 2-3 miesiące (znacznie dłużej niż propionat ze względu na długi ester enantatowy). Akredytowane WADA GC-MS i LC-MS/MS.",
       "quality": {
         "pure": [
           "Klarowny żółtawo-brązowy olej (~#f59e0b ton), fiolka 10 ml, sterylnie filtrowana",
-          "Źródło UGL testowane HPLC obowiązkowe — enantat ester znacznie mniej bolesny niż propionat"
+          "Źródło UGL testowane HPLC obowiązkowe – enantat ester znacznie mniej bolesny niż propionat"
         ],
         "caution": [
           "Powolny początek: zmiana estetyczna wyczuwalna dopiero po 4-5 tygodniach (steady-state)",
@@ -350,7 +350,7 @@ export default {
           "Długie okno detekcji: preferuj Prop podczas okresu zawodów"
         ],
         "avoid": [
-          "Krótki cykl (4-6 tygodni) NIE skuteczny — Enan steady-state tylko po 4-5 tygodniach",
+          "Krótki cykl (4-6 tygodni) NIE skuteczny – Enan steady-state tylko po 4-5 tygodniach",
           "Więcej niż 12 tygodni ciągłego cyklu (ciężka supresja HPTA)",
           "Zawody testowane WADA <3 miesiące po planowanym końcu (okno detekcji)",
           "Ryzyko sercowo-naczyniowe, stosowanie przez kobiety (patrz Propionat)"
@@ -364,5 +364,5 @@ export default {
     }
   ],
   "defaultVariant": "prop",
-  "anecdote": "Raporty anegdotyczne opisują Masteron jako wywołujący wyraźne efekty diuretyczne, użytkownicy często zauważają znacznie zwiększone oddawanie moczu. Doniesienia społeczności wskazują również na zmniejszone objawy wysokiego E2 nawet przy znacznych dawkach testosteronu, co jest zgodne z jego znaną aktywnością anty-estrogenową na poziomie receptora. Jednak Masteron jest notorycznie znany z przyspieszania androgenowego wypadania włosów; użytkownicy podatni na łysienie typu męskiego często zgłaszają natychmiastowe przerzedzenie linii włosów po rozpoczęciu stosowania. Jest ogólnie postrzegany jako 'kosmetyczny anabolik' — przydatny do twardości, suchości i poprawy sylwetki, a nie do znaczącego przyrostu mięśni. Ogólnie uznawany za solidny anabolik pochodny DHT z wyraźną niszą przy odpowiednim stosowaniu, ale androgenowe kompromisy (zwłaszcza wypadanie włosów) są poważnym rozważaniem dla genetycznie predysponowanych użytkowników."
+  "anecdote": "Raporty anegdotyczne opisują Masteron jako wywołujący wyraźne efekty diuretyczne, użytkownicy często zauważają znacznie zwiększone oddawanie moczu. Doniesienia społeczności wskazują również na zmniejszone objawy wysokiego E2 nawet przy znacznych dawkach testosteronu, co jest zgodne z jego znaną aktywnością anty-estrogenową na poziomie receptora. Jednak Masteron jest notorycznie znany z przyspieszania androgenowego wypadania włosów; użytkownicy podatni na łysienie typu męskiego często zgłaszają natychmiastowe przerzedzenie linii włosów po rozpoczęciu stosowania. Jest ogólnie postrzegany jako 'kosmetyczny anabolik' – przydatny do twardości, suchości i poprawy sylwetki, a nie do znaczącego przyrostu mięśni. Ogólnie uznawany za solidny anabolik pochodny DHT z wyraźną niszą przy odpowiednim stosowaniu, ale androgenowe kompromisy (zwłaszcza wypadanie włosów) są poważnym rozważaniem dla genetycznie predysponowanych użytkowników."
 }

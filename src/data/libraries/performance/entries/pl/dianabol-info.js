@@ -27,7 +27,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Methandrostenolone, 17α-alkilowany doustny AAS. Klasyczny \"kickstart\" bulking z wysoką hepatotoksycznością.",
-  "description": "Dianabol to pierwszy masowo sprzedawany doustny AAS, zsyntetyzowany przez Zieglera w 1955 r. dla amerykańskich ciężarowców. Doustny 17α-alkilowany, szybki retencyjny przyrost masy. **Rewizja mitu \"mokrych zysków\"**: większość przyrostu masy na Dianabolu to nie obrzęk podskórny, ale WEWNĄTRZMIĘŚNIOWE magazynowanie glikogenu plus volumizacja komórki (hydratacja wewnątrzkomórkowa). Pęcznienie komórki samo w sobie to sygnał anaboliczny (hipoteza Häussingera: wzrost objętości komórki aktywuje mTOR i syntezę białek). \"Kickstart\" 4-6 tygodni z dłuższymi AAS iniekcyjnymi. Aromatyzuje — ALE Dianabol tworzy też niezwykle potentny **metabolit 17α-metyloestradiolu oporny na anastrozol**, więc ryzyko ginekomastii pozostaje wysokie nawet na AI, a klasyczna tytracja AI (anastrozol 0,5 mg EOD) jest mniej skuteczna niż na Testosteronie. Wysoka hepatotoksyczność.",
+  "description": "Dianabol to pierwszy masowo sprzedawany doustny AAS, zsyntetyzowany przez Zieglera w 1955 r. dla amerykańskich ciężarowców. Doustny 17α-alkilowany, szybki retencyjny przyrost masy. **Rewizja mitu \"mokrych zysków\"**: większość przyrostu masy na Dianabolu to nie obrzęk podskórny, ale WEWNĄTRZMIĘŚNIOWE magazynowanie glikogenu plus volumizacja komórki (hydratacja wewnątrzkomórkowa). Pęcznienie komórki samo w sobie to sygnał anaboliczny (hipoteza Häussingera: wzrost objętości komórki aktywuje mTOR i syntezę białek). \"Kickstart\" 4-6 tygodni z dłuższymi AAS iniekcyjnymi. Aromatyzuje – ALE Dianabol tworzy też niezwykle potentny **metabolit 17α-metyloestradiolu oporny na anastrozol**, więc ryzyko ginekomastii pozostaje wysokie nawet na AI, a klasyczna tytracja AI (anastrozol 0,5 mg EOD) jest mniej skuteczna niż na Testosteronie. Wysoka hepatotoksyczność.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -143,9 +143,9 @@ export default {
         "pl": "Methandrostenolon (Dianabol tabletka doustna, 17α-metylowany)"
       },
       "routeNote": {
-        "hu": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz — TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
-        "en": "Classic form: 17α-methylated tablet, ~3-6 h half-life, fast plasma peak within 1-2 hours. 2-3x split daily dosing recommended. High hepatic first-pass stress — TUDCA + NAC mandatory. Most widespread and most-studied Dianabol form.",
-        "pl": "Klasyczna forma: tabletka 17α-metylowana, ~3-6 h okres półtrwania, szybki szczyt osoczowy w ciągu 1-2 godzin. Zalecane podawanie podzielone 2-3x dziennie. Wysoki stres wątrobowy first-pass — TUDCA + NAC obowiązkowe. Najszerzej rozpowszechniona i najlepiej zbadana forma Dianabolu."
+        "hu": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz – TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
+        "en": "Classic form: 17α-methylated tablet, ~3-6 h half-life, fast plasma peak within 1-2 hours. 2-3x split daily dosing recommended. High hepatic first-pass stress – TUDCA + NAC mandatory. Most widespread and most-studied Dianabol form.",
+        "pl": "Klasyczna forma: tabletka 17α-metylowana, ~3-6 h okres półtrwania, szybki szczyt osoczowy w ciągu 1-2 godzin. Zalecane podawanie podzielone 2-3x dziennie. Wysoki stres wątrobowy first-pass – TUDCA + NAC obowiązkowe. Najszerzej rozpowszechniona i najlepiej zbadana forma Dianabolu."
       },
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: FDA Rx (Ciba 1958, discontinued 1983); Schedule III. EU: UGL piacon dominans, vény nélkül illegális. WADA tiltott.",
@@ -218,7 +218,7 @@ export default {
         "pl": "Rzadka, alternatywna forma (zawiesina typu \"Reforvit-B\"). Omija wątrobowy metabolizm first-pass → nieco niższa, ale NIE zerowa hepatotoksyczność (grupa 17α-metylowa powoduje wewnętrzną hepatotoksyczność nawet bez first-pass). Bardziej stabilne poziomy osoczowe, podawanie EOD (co drugi dzień). Bolesna iniekcja, wyłącznie ze źródła UGL."
       },
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Nem licencelt formátum — kizárólag UGL underground market. Mindenhol illegális. WADA tiltott.",
+      "legalStatus": "Nem licencelt formátum – kizárólag UGL underground market. Mindenhol illegális. WADA tiltott.",
       "bioavailability": "~95-100% (IM bypass-olja a first-pass-t; methandrostenolone olajban suspendált slow depot-felszívódással)",
       "onsetTime": {
         "hu": "12-24 óra (IM, depot-kinetika)",
@@ -247,7 +247,7 @@ export default {
           "PIP (injection site pain) gyakori, methandrostenolone-in-oil notorikusan fáj",
           "Lipid-zavar drasztikus: HDL csökkenés ugyanaz mint orálnál",
           "Vízretenció + gynecomastia-rizikó (aromatizáció nem változik)",
-          "Hepatotoxicitás csökkentett DE NEM nulla — TUDCA kötelező"
+          "Hepatotoxicitás csökkentett DE NEM nulla – TUDCA kötelező"
         ],
         "avoid": [
           "Erős injection-site-érzékenység",
@@ -277,5 +277,5 @@ export default {
       }
     }
   ],
-  "anecdote": "Dianabol ma niemal legendarny status w tradycji AAS. Użytkownicy często zgłaszają bardzo szybką zmianę w pełności, dźwigni, regeneracji i wynikach na siłowni w zaskakująco krótkich ramach czasowych. Cechą charakterystyczną jest to, jak 'anabolicznie' się go odczuwa — dość oczywiście, nie subtelnie. Siła zazwyczaj szybko rośnie wraz z dramatycznymi efektami pompy i wolumizacji. Wiele z tego, co potocznie nazywa się 'wodą', to faktycznie wewnątrzmięśniowy glikogen i nawodnienie komórek, co nie jest równoważne bezsensownemu wzdęciu i samo może przyczyniać się do sygnalizacji anabolicznej. Doniesienia społeczności wskazują na nieproporcjonalny wpływ Dianabolu na rozpęd treningowy — bardziej produktywne sesje, szybsza regeneracja i wynikający z tego skumulowany wzrost. Apetyt również często rośnie. Kompromisy są znaczące: zauważalne efekty estrogenowe (ginekomastia, retencja wody), podwyższone ciśnienie krwi, zaburzenia lipidowe i obciążenie wątroby 17α-alkilowane. Niektóre relacje i pojawiające się dowody sugerują, że Dianabol metabolizuje się do niezwykle silnego metabolitu estrogenowego, co warto mieć na uwadze przy planowaniu wsparcia AI/SERM."
+  "anecdote": "Dianabol ma niemal legendarny status w tradycji AAS. Użytkownicy często zgłaszają bardzo szybką zmianę w pełności, dźwigni, regeneracji i wynikach na siłowni w zaskakująco krótkich ramach czasowych. Cechą charakterystyczną jest to, jak 'anabolicznie' się go odczuwa – dość oczywiście, nie subtelnie. Siła zazwyczaj szybko rośnie wraz z dramatycznymi efektami pompy i wolumizacji. Wiele z tego, co potocznie nazywa się 'wodą', to faktycznie wewnątrzmięśniowy glikogen i nawodnienie komórek, co nie jest równoważne bezsensownemu wzdęciu i samo może przyczyniać się do sygnalizacji anabolicznej. Doniesienia społeczności wskazują na nieproporcjonalny wpływ Dianabolu na rozpęd treningowy – bardziej produktywne sesje, szybsza regeneracja i wynikający z tego skumulowany wzrost. Apetyt również często rośnie. Kompromisy są znaczące: zauważalne efekty estrogenowe (ginekomastia, retencja wody), podwyższone ciśnienie krwi, zaburzenia lipidowe i obciążenie wątroby 17α-alkilowane. Niektóre relacje i pojawiające się dowody sugerują, że Dianabol metabolizuje się do niezwykle silnego metabolitu estrogenowego, co warto mieć na uwadze przy planowaniu wsparcia AI/SERM."
 }

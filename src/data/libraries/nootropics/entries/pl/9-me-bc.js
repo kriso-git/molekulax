@@ -69,7 +69,7 @@ export default {
     "Podjęzykowo (pod językiem, 10-15 min) daje silniejszy efekt niż doustnie",
     "NIE łączyć z MAOI, SSRI, SNRI",
     "Unikać pokarmów bogatych w tyraminę (sery dojrzewające, czerwone wino)",
-    "ŚWIATŁO SŁONECZNE: ryzyko fotouczulenia — unikać bezpośredniego UV podczas kursu",
+    "ŚWIATŁO SŁONECZNE: ryzyko fotouczulenia – unikać bezpośredniego UV podczas kursu",
     "Krótki kurs (3-5 dni), przerwa wymagana, by uniknąć sensytyzacji"
   ],
   "expectations": [
@@ -94,7 +94,7 @@ export default {
     "caution": [
       "Ryzyko reakcji tyraminowej (MAO-B odwracalne, ale monoaminergiczne)",
       "Farmakokinetyka u ludzi niepełna",
-      "Fotouczulenie (wrażliwość na UV, szybsze poparzenie słoneczne) — typowa interakcja β-karboliny × UV",
+      "Fotouczulenie (wrażliwość na UV, szybsze poparzenie słoneczne) – typowa interakcja β-karboliny × UV",
       "Po dłuższym stosowaniu raportowane emocjonalne \"spłaszczenie\""
     ],
     "avoid": [
@@ -106,7 +106,7 @@ export default {
     "Współpodawanie MAOI zabronione (zespół serotoninowy + przełom nadciśnieniowy)",
     "Unikać współpodawania SSRI/SNRI",
     "Pokarmy + napoje bogate w tyraminę (sery dojrzewające, wino, peklowane mięso)",
-    "Addytywny ze stymulantami (nadmierna stymulacja dopaminergiczna) — NIE stosować stymulantów podczas kursu 9-Me-BC; Bromantan to łagodniejsza alternatywa",
+    "Addytywny ze stymulantami (nadmierna stymulacja dopaminergiczna) – NIE stosować stymulantów podczas kursu 9-Me-BC; Bromantan to łagodniejsza alternatywa",
     "L-Tyrozyna synergistyczna (surowy substrat dla podwyższonej aktywności TH)"
   ],
   "studies": [
@@ -154,7 +154,7 @@ export default {
     },
     {
       "q": "Dlaczego światłoczułe (ryzyko poparzenia słonecznego)?",
-      "a": "Szkielet β-karbolinowy w skórze katalizuje reakcje pod światłem UV — działa jako endogenny fotosensybilizator (Herraiz 2013). Wynik: poparzenie słoneczne przy normalnym UV, ryzyko przebarwień przy dłuższych kursach. Ochrona: SPF 50+ szerokiego spektrum + unikać bezpośredniego słońca podczas całego kursu + 5-7 dni po nim."
+      "a": "Szkielet β-karbolinowy w skórze katalizuje reakcje pod światłem UV – działa jako endogenny fotosensybilizator (Herraiz 2013). Wynik: poparzenie słoneczne przy normalnym UV, ryzyko przebarwień przy dłuższych kursach. Ochrona: SPF 50+ szerokiego spektrum + unikać bezpośredniego słońca podczas całego kursu + 5-7 dni po nim."
     },
     {
       "q": "Protokół resensytyzacji stymulantów?",

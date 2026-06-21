@@ -27,7 +27,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Nandrolone Decanoate (Deca-Durabolin), 19-nor-AAS. Klasszikus \"bulking\" AAS, ízületi recovery hatással.",
-  "description": "A Nandrolone Decanoate egy 19-nor-tesztoszteron származék, hosszú-hatású injekciós AAS. **Észter-variánsok**: Decanoate (Deca-Durabolin) ~15 napos t1/2, depo-jellegű lassú stabil release, 1x heti injekció elegendő, több vízretenció; Phenylpropionate (NPP) ~5 napos t1/2, gyorsabb on/off profil, 2x heti injekció, anekdotálisan kevesebb vízretenció. Klinikailag anémia és cachexia kezelésére használt. Bodybuildingban \"bulking\" cikluson izomtömeg-növelésre és ízületi recovery-re használt (kollagén-szintézis-emelés). Az aromatáz minimálisan konvertálja ösztrogénné (~10% Testosterone-hoz képest), és 5α-reduktáz dihydronandrolone-é alakítja, ami csak ~20%-os AR-aktivitású (vs DHT, mely STARK AR-agonista) — **ez a fiziológiás prosztata-védelem alapja, Nandrolone egyik fő előnye Testosterone-nal szemben**. \"Deca-dick\" libidó-csökkenés gyakori panasz (prolactin-emelés), \"Deca-blues\" hangulati-anekdota: krónikus 19-nor használat dopamin-szerotonin balance shift gyanúja (3+ hónap után észlelhető depresszív tünetek egyéni jelentésekben).",
+  "description": "A Nandrolone Decanoate egy 19-nor-tesztoszteron származék, hosszú-hatású injekciós AAS. **Észter-variánsok**: Decanoate (Deca-Durabolin) ~15 napos t1/2, depo-jellegű lassú stabil release, 1x heti injekció elegendő, több vízretenció; Phenylpropionate (NPP) ~5 napos t1/2, gyorsabb on/off profil, 2x heti injekció, anekdotálisan kevesebb vízretenció. Klinikailag anémia és cachexia kezelésére használt. Bodybuildingban \"bulking\" cikluson izomtömeg-növelésre és ízületi recovery-re használt (kollagén-szintézis-emelés). Az aromatáz minimálisan konvertálja ösztrogénné (~10% Testosterone-hoz képest), és 5α-reduktáz dihydronandrolone-é alakítja, ami csak ~20%-os AR-aktivitású (vs DHT, mely STARK AR-agonista) – **ez a fiziológiás prosztata-védelem alapja, Nandrolone egyik fő előnye Testosterone-nal szemben**. \"Deca-dick\" libidó-csökkenés gyakori panasz (prolactin-emelés), \"Deca-blues\" hangulati-anekdota: krónikus 19-nor használat dopamin-szerotonin balance shift gyanúja (3+ hónap után észlelhető depresszív tünetek egyéni jelentésekben).",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -46,7 +46,7 @@ export default {
       "value": "USA: Schedule III. HU/EU: Rx (Deca-Durabolin)."
     }
   ],
-  "mechanism": "19-nor-AAS, közvetlen AR-agonista. Aromatáz minimálisan ösztrogénné konvertálja (~10% Testosterone-hoz képest). 5α-reduktáz dihydronandrolone-é alakítja, ami csak ~20%-os AR-aktivitású (vs DHT mely STARK AR-agonista) — fiziológiásan prosztata-védő, Nandrolone egyik fő pharmakológiai előnye. Másodlagosan progeszteron-receptor parciális agonista (prolactin-emelkedés).",
+  "mechanism": "19-nor-AAS, közvetlen AR-agonista. Aromatáz minimálisan ösztrogénné konvertálja (~10% Testosterone-hoz képest). 5α-reduktáz dihydronandrolone-é alakítja, ami csak ~20%-os AR-aktivitású (vs DHT mely STARK AR-agonista) – fiziológiásan prosztata-védő, Nandrolone egyik fő pharmakológiai előnye. Másodlagosan progeszteron-receptor parciális agonista (prolactin-emelkedés).",
   "legalStatus": "USA: Schedule III. HU/PL/EU: Rx (Deca-Durabolin gyógyszertári forgalom). WADA: tiltott.",
   "onsetTime": "2-3 weeks",
   "halfLife": "15 days (decanoate)",
@@ -54,8 +54,8 @@ export default {
     "cabergoline (prolactin)",
     "aromatase inhibitors"
   ],
-  "aromatization": "Minimális — 19-nor szteroid, 5-10% CYP19 konverzió E2-vé (testosterone-hez képest); progesztogén-aktivitás dominál (Bhasin-Kanayama 2003)",
-  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált észter forma hepatikus first-pass-t kerüli (Pope-Kanayama 2014)",
+  "aromatization": "Minimális – 19-nor szteroid, 5-10% CYP19 konverzió E2-vé (testosterone-hez képest); progesztogén-aktivitás dominál (Bhasin-Kanayama 2003)",
+  "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált; injektált észter forma hepatikus first-pass-t kerüli (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "125:37",
   "benefits": [
@@ -173,17 +173,17 @@ export default {
       "aromatization": "low",
       "androgenicRatio": "125:37",
       "legalStatus": "HU/PL/EU: Rx (Deca-Durabolin Organon SmPC, indikáció: osteoporosis, anemia). USA: Schedule III. WADA tiltott.",
-      "detectionWindow": "Vizelet: 12-18 hónap (Deca hosszú-távú metabolit 19-norandrosterone, WADA-akkreditált LC-MS/MS — LEGHOSSZABB detection-ablak AAS-ek közül).",
+      "detectionWindow": "Vizelet: 12-18 hónap (Deca hosszú-távú metabolit 19-norandrosterone, WADA-akkreditált LC-MS/MS – LEGHOSSZABB detection-ablak AAS-ek közül).",
       "quality": {
         "pure": [
           "Organon Deca-Durabolin 50 mg/ml halvány-sárga olajos ampulla (EU Rx, klasszikus 1962 óta forgalomban)",
           "UGL Nandrolone Decanoate 200-300 mg/ml halvány-sárga olajos fiola, HPLC-tesztelt forrás kötelező"
         ],
         "caution": [
-          "Hosszú-távú HPTA-szuppresszió 12-16 hét után — recovery 6-12 hó lehet",
+          "Hosszú-távú HPTA-szuppresszió 12-16 hét után – recovery 6-12 hó lehet",
           "Prolaktin-emelkedés a progesztogén receptor-affinitás miatt (cabergoline készenlét)",
           "'Deca-dick' libidó-csökkenés + ED gyakori (de Souza 2011)",
-          "Hosszú detection-ablak (12-18 hó) — versenysport-tesztelés előtt EVEKKEL kerülendő"
+          "Hosszú detection-ablak (12-18 hó) – versenysport-tesztelés előtt EVEKKEL kerülendő"
         ],
         "avoid": [
           "Apaság-tervezés közeli időhorizonton (HPTA-recovery 6-12 hónap Deca után)",
@@ -249,13 +249,13 @@ export default {
       "quality": {
         "pure": [
           "UGL NPP 100 mg/ml halvány-sárga olajos fiola (HPLC-tesztelt forrás kötelező)",
-          "Némely EU-pharmacy Durabolin (regional Rx) 25-50 mg/ml — ritka"
+          "Némely EU-pharmacy Durabolin (regional Rx) 25-50 mg/ml – ritka"
         ],
         "caution": [
           "EOD vagy 2x heti IM-injekció szükséges (rövid felezés)",
           "Prolaktin-emelkedés Deca-szintű (cabergoline készenlét)",
           "PIP NPP-n erősebb mint Deca-n (rövid-ester carrier sűrűbb)",
-          "Detection-ablak hosszú (10-14 hó) — versenysport előtt évekkel kerülendő"
+          "Detection-ablak hosszú (10-14 hó) – versenysport előtt évekkel kerülendő"
         ],
         "avoid": [
           "Apaság-tervezés közeli időhorizonton (HPTA-recovery 4-8 hó NPP után)",

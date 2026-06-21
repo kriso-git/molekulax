@@ -27,9 +27,9 @@ export default {
   "tagColor": "rgba(236,72,153,0.18)",
   "shortDesc": "Szelektív ösztrogén receptor modulátor (SERM). Hormonreceptor-pozitív emlőkarcinóma adjuváns és metastatikus kezelése (Nolvadex).",
   "description": "A Tamoxifen az első klinikailag jelentős SERM, amelyet az AstraZeneca fejlesztett ki (Nolvadex, FDA 1977). Az ER+ emlőkarcinóma adjuváns kezelésében 5-10 éves protokollal a relapszus-kockázatot 50%-kal csökkenti (EBCTCG 2011 Lancet PMID 21684593). Premenopausal nőknél az aromatáz-inhibítor (Anastrozole, Letrozole) nem hatékony, ezért a Tamoxifen az első-vonal SERM. Mellékhatás-profil: thromboembólia (DVT, PE 2-3x emelkedés), endometrium-karcinóma kockázat (~2x), menopausal-szerű tünetek (hőhullám). Az ER+ DCIS prevenció és magas-rizikójú primer prevenció FDA-jóváhagyott (NSABP-P1 trial).",
-  "mechanism": "Tkivat-specifikus ösztrogén receptor moduláció: emlőszövetben ANTAGONISTA, csontban + endometriumban + májban PARCIÁLIS AGONISTA. Aktív metabolitok (4-hidroxitamoxifen, endoxifen) CYP2D6-tól függenek — gyenge metabolizálóknál csökkent hatékonyság.",
+  "mechanism": "Tkivat-specifikus ösztrogén receptor moduláció: emlőszövetben ANTAGONISTA, csontban + endometriumban + májban PARCIÁLIS AGONISTA. Aktív metabolitok (4-hidroxitamoxifen, endoxifen) CYP2D6-tól függenek – gyenge metabolizálóknál csökkent hatékonyság.",
   "legalStatus": "EU/HU: vényköteles (Nolvadex, Tamoxen, generikus). USA: FDA Rx.",
-  "bioavailability": "~100% (orális, \"well-absorbed\", Tmax ~5 óra — FDA Soltamox/Nolvadex label)",
+  "bioavailability": "~100% (orális, \"well-absorbed\", Tmax ~5 óra – FDA Soltamox/Nolvadex label)",
   "onsetTime": "Klinikai válasz hónapok-évek (adjuváns)",
   "halfLife": "~7 days (parent); 14 days (4-hydroxytamoxifen)",
   "atcCode": "L02BA01",
@@ -57,7 +57,7 @@ export default {
     "Poor CYP2D6 metabolizers have reduced efficacy"
   ],
   "crossMolInteractions": [
-    "ERŐS CYP2D6-inhibitor (Fluoxetine, Paroxetine, Bupropion): endoxifen-képződés csökken, Tamoxifen-hatékonyság ROMLIK — kerülendő, alternatív AD (Venlafaxine, Citalopram)",
+    "ERŐS CYP2D6-inhibitor (Fluoxetine, Paroxetine, Bupropion): endoxifen-képződés csökken, Tamoxifen-hatékonyság ROMLIK – kerülendő, alternatív AD (Venlafaxine, Citalopram)",
     "Warfarin: INR-emelkedés (interakció), monitor",
     "Hormon-pótlás (HRT) ösztrogén: kerülendő (mechanikai konfliktus)"
   ],
@@ -89,7 +89,7 @@ export default {
   "related": [],
   "doseCalc": {
     "type": "warning",
-    "warning": "A Tamoxifen az ONKOLÓGIAI HORMONÁLIS TERÁPIA pillére ER+ emlőkarcinómában. SZAKORVOSI (ONKOLÓGUS) FELÜGYELET KÖTELEZŐ. NEM ÖNÁLLÓ DÓZIS-KALKULÁTOR ezen az oldalon, mert: (1) a dózis (20 mg/nap) és a kúra-időtartam (5-10 év) onkológiai protokoll-döntés, beteg-specifikus; (2) VTE (DVT/PE) és ENDOMETRIUM-KARCINÓMA kockázat fokozása érdemi monitorozást igényel; (3) CYP2D6-genetikai státusz a hatékonyságot szignifikánsan befolyásolja — egyes betegnél genotípus-tesztelés indokolt; (4) ERŐS CYP2D6-inhibitor (Fluoxetine, Paroxetine, Bupropion) ELLENJAVASOLT — Tamoxifen-hatékonyság veszélyeztetése. Beszélj az onkológusoddal. Sürgősségi tünet (egyoldalú láb-duzzanat, légszomj-mellkasi fájdalom, vaginalis vérzés): AZONNALI ellátás."
+    "warning": "A Tamoxifen az ONKOLÓGIAI HORMONÁLIS TERÁPIA pillére ER+ emlőkarcinómában. SZAKORVOSI (ONKOLÓGUS) FELÜGYELET KÖTELEZŐ. NEM ÖNÁLLÓ DÓZIS-KALKULÁTOR ezen az oldalon, mert: (1) a dózis (20 mg/nap) és a kúra-időtartam (5-10 év) onkológiai protokoll-döntés, beteg-specifikus; (2) VTE (DVT/PE) és ENDOMETRIUM-KARCINÓMA kockázat fokozása érdemi monitorozást igényel; (3) CYP2D6-genetikai státusz a hatékonyságot szignifikánsan befolyásolja – egyes betegnél genotípus-tesztelés indokolt; (4) ERŐS CYP2D6-inhibitor (Fluoxetine, Paroxetine, Bupropion) ELLENJAVASOLT – Tamoxifen-hatékonyság veszélyeztetése. Beszélj az onkológusoddal. Sürgősségi tünet (egyoldalú láb-duzzanat, légszomj-mellkasi fájdalom, vaginalis vérzés): AZONNALI ellátás."
   },
-  "anecdote": "A Nolvadex (Tamoxifen) és a Raloxifen anekdotikusan a két legmegbízhatóbb vegyület a gyno megelőzésére, mert a tamoxifen közvetlenül blokkolja az ösztrogént a receptor szintjén, szelektíven az emlőszövetben — egy nagyon célzott mechanizmus. Az Arimidexszel ellentétben nem aromatáz-inhibitor, így az előnyök receptor-célzottak, nem rendszer-szintűek. Gyakran használják PCT-protokollokban, mert közvetlenebbül stimulálja az LH/FSH-t, ami hasznos lehet a HPTA helyreállításához. A jelentett mellékhatások közé tartozik az enyhe hangulati ingadozás, ritka látászavarok és hosszú távú vérrögképződési kockázat — bár a legtöbb alvadási esetjelentés posztmenopauzális nőktől származik, akik mellrák megelőzésére használták, így az AAS-felhasználókra való alkalmazhatóság kevésbé egyértelmű. Összességében a közösségi beszámolók szerint a Nolvadex szilárd eszköz az ösztrogén blokkolására az emlőszövetben és erős gyno-megelőzési opció. Orálisan adják be, az adagolást jellemzően több hetes ciklusokban strukturálják, különösen PCT alatt."
+  "anecdote": "A Nolvadex (Tamoxifen) és a Raloxifen anekdotikusan a két legmegbízhatóbb vegyület a gyno megelőzésére, mert a tamoxifen közvetlenül blokkolja az ösztrogént a receptor szintjén, szelektíven az emlőszövetben – egy nagyon célzott mechanizmus. Az Arimidexszel ellentétben nem aromatáz-inhibitor, így az előnyök receptor-célzottak, nem rendszer-szintűek. Gyakran használják PCT-protokollokban, mert közvetlenebbül stimulálja az LH/FSH-t, ami hasznos lehet a HPTA helyreállításához. A jelentett mellékhatások közé tartozik az enyhe hangulati ingadozás, ritka látászavarok és hosszú távú vérrögképződési kockázat – bár a legtöbb alvadási esetjelentés posztmenopauzális nőktől származik, akik mellrák megelőzésére használták, így az AAS-felhasználókra való alkalmazhatóság kevésbé egyértelmű. Összességében a közösségi beszámolók szerint a Nolvadex szilárd eszköz az ösztrogén blokkolására az emlőszövetben és erős gyno-megelőzési opció. Orálisan adják be, az adagolást jellemzően több hetes ciklusokban strukturálják, különösen PCT alatt."
 }

@@ -1,7 +1,7 @@
-// Phase 10 — 5 cognitive cluster cards replacing the prior 8-tile effects layout.
+// Phase 10 – 5 cognitive cluster cards replacing the prior 8-tile effects layout.
 // Each cluster lists 4-5 in-card clickable entry IDs that route to EntryDetail.
 // image: null → EffectsSection's ILLUSTRATION_BY_INDEX SVG fallback (gradient + decorative).
-// Peer-reviewed sourcing (PubMed / PMC / FDA / EMA) — content audit task 17 will revisit.
+// Peer-reviewed sourcing (PubMed / PMC / FDA / EMA) – content audit task 17 will revisit.
 
 export const EFFECT_CATEGORIES = [
   {
@@ -10,9 +10,9 @@ export const EFFECT_CATEGORIES = [
     glow: 'rgba(251,191,36,0.35)',
     title: { hu: 'Racetamok', en: 'Racetams', pl: 'Racetamy' },
     subtitle: {
-      hu: '4 vegyület — AMPA / mGluR moduláció',
-      en: '4 compounds — AMPA / mGluR modulation',
-      pl: '4 związki — modulacja AMPA / mGluR',
+      hu: '4 vegyület – AMPA / mGluR moduláció',
+      en: '4 compounds – AMPA / mGluR modulation',
+      pl: '4 związki – modulacja AMPA / mGluR',
     },
     description: {
       hu: 'A racetamok az AMPA-glutamát receptort és a metabotrop glutamát receptorokat modulálják, fokozva a kolinerg transzmissziót és a hosszú távú potenciációt (LTP).',
@@ -37,9 +37,9 @@ export const EFFECT_CATEGORIES = [
     glow: 'rgba(125,211,252,0.35)',
     title: { hu: 'Modafinil típusok', en: 'Modafinil-types', pl: 'Typy modafinilu' },
     subtitle: {
-      hu: '4 vegyület — eugeroikum stimulánsok',
-      en: '4 compounds — eugeroic stimulants',
-      pl: '4 związki — stymulanty eugeroiczne',
+      hu: '4 vegyület – eugeroikum stimulánsok',
+      en: '4 compounds – eugeroic stimulants',
+      pl: '4 związki – stymulanty eugeroiczne',
     },
     description: {
       hu: 'Eugeroikum (ébrenléti) szerek dopamin-transzporter és hisztamin H3-receptor-rendszereken keresztül. Klinikailag a narkolepszia és a műszakos munka álmossága javallatban használtak.',
@@ -65,9 +65,9 @@ export const EFFECT_CATEGORIES = [
     glow: 'rgba(251,146,60,0.35)',
     title: { hu: 'Dopamin / Motiváció', en: 'Dopamine / Motivation', pl: 'Dopamina / Motywacja' },
     subtitle: {
-      hu: '4 vegyület — D2/D3 + MAO modulátorok',
-      en: '4 compounds — D2/D3 + MAO modulators',
-      pl: '4 związki — modulatory D2/D3 + MAO',
+      hu: '4 vegyület – D2/D3 + MAO modulátorok',
+      en: '4 compounds – D2/D3 + MAO modulators',
+      pl: '4 związki – modulatory D2/D3 + MAO',
     },
     description: {
       hu: 'A dopaminerg motivációs rendszer modulátorai: szelektív MAO-B inhibitor (Selegiline), D2-pozitív allosztérikus modulátor (9-Me-BC), adaptogén (Bromantane) és koffein-metabolit (Paraxanthine).',
@@ -81,7 +81,7 @@ export const EFFECT_CATEGORIES = [
     },
     studies: [
       { title: '9-Me-BC: neurotrophic and antiapoptotic effects', authors: 'Polanski W et al.', journal: 'J Neural Transm. 2010;117(7):835-846.', pmid: '20517703' },
-      { title: 'Paraxanthine, a non-anxiogenic stimulant — RCT', authors: 'Yoo C et al.', journal: 'J Int Soc Sports Nutr. 2022;19(1):1-15.', pmid: '35008471' },
+      { title: 'Paraxanthine, a non-anxiogenic stimulant – RCT', authors: 'Yoo C et al.', journal: 'J Int Soc Sports Nutr. 2022;19(1):1-15.', pmid: '35008471' },
     ],
     entryNames: ['9-Me-BC', 'Bromantane', 'Selegiline', 'Paraxanthine'],
     entryIds:   ['9-me-bc', 'bromantane', 'selegiline', 'paraxanthine'],
@@ -93,9 +93,9 @@ export const EFFECT_CATEGORIES = [
     glow: 'rgba(167,139,250,0.35)',
     title: { hu: 'BDNF / Neuroplaszticitás', en: 'BDNF / Neuroplasticity', pl: 'BDNF / Neuroplastyczność' },
     subtitle: {
-      hu: '5 vegyület — BDNF-induktorok és szinapszisképzők',
-      en: '5 compounds — BDNF inducers and synaptogenic agents',
-      pl: '5 związków — induktory BDNF i czynniki synaptogenne',
+      hu: '5 vegyület – BDNF-induktorok és szinapszisképzők',
+      en: '5 compounds – BDNF inducers and synaptogenic agents',
+      pl: '5 związków – induktory BDNF i czynniki synaptogenne',
     },
     description: {
       hu: 'BDNF (Brain-Derived Neurotrophic Factor) és szinapszisképzés serkentői: Dihexa (Ang-IV analóg), NSI-189 (neurogén), J-147 (mitokondriális), Semax (orosz ACTH-analóg) és Adamax (Semax-adamantyl konjugátum).',
@@ -104,7 +104,7 @@ export const EFFECT_CATEGORIES = [
     },
     detail: {
       hu: 'A Dihexa az egyik legpotenciálisabb in vitro szinapszisképző molekula (állati modellben ~10⁷× erősebb mint a BDNF egyes végpontokon). A J-147 az ATP5A mitokondriális alegységen hat, nem direkt BDNF-induktor de funkcionálisan analóg. Az Adamax az adamantyl-csoporttal stabilizált Semax: hosszabb CNS-expozíció intranasalisan.',
-      en: 'Dihexa is among the most potent in vitro synaptogenic molecules (~10⁷× stronger than BDNF on certain animal-model endpoints). J-147 acts on the ATP5A mitochondrial subunit — not a direct BDNF inducer but functionally analogous. Adamax is adamantyl-stabilized Semax: longer CNS exposure intranasally.',
+      en: 'Dihexa is among the most potent in vitro synaptogenic molecules (~10⁷× stronger than BDNF on certain animal-model endpoints). J-147 acts on the ATP5A mitochondrial subunit – not a direct BDNF inducer but functionally analogous. Adamax is adamantyl-stabilized Semax: longer CNS exposure intranasally.',
       pl: 'Diheksa jest jedną z najsilniejszych molekuł synaptogennych in vitro (~10⁷× silniejsza niż BDNF na niektórych punktach końcowych). J-147 działa na podjednostkę mitochondrialną ATP5A. Adamax to Semax stabilizowany adamantylowo: dłuższa ekspozycja CNS donosowo.',
     },
     studies: [
@@ -121,9 +121,9 @@ export const EFFECT_CATEGORIES = [
     glow: 'rgba(94,234,212,0.35)',
     title: { hu: 'Kolinerg boosterek', en: 'Cholinergic Boosters', pl: 'Wzmacniacze cholinergiczne' },
     subtitle: {
-      hu: '4 vegyület — acetilkolin szubsztrát + receptor moduláció',
-      en: '4 compounds — acetylcholine substrate + receptor modulation',
-      pl: '4 związki — substrat acetylocholiny + modulacja receptorów',
+      hu: '4 vegyület – acetilkolin szubsztrát + receptor moduláció',
+      en: '4 compounds – acetylcholine substrate + receptor modulation',
+      pl: '4 związki – substrat acetylocholiny + modulacja receptorów',
     },
     description: {
       hu: 'Az acetilkolin precursorai (CDP-Choline, Alpha-GPC) emelik a szinaptikus acetilkolin szintet. A Pramiracetam és az AF710B muszkarin-receptor szelektív modulátorok.',

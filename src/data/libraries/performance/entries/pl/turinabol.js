@@ -28,7 +28,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Oral-Turinabol (Chlorodehydromethyltestosteron, CDMT), 17α-alkilowany chlorowany doustny AAS analog Dianabolu. Jenapharm 1962, niesławny jako główny środek programu dopingowego NRD 1968-1989 (\"Komplex 08\"). Notoryczny ze względu na długotrwałe metabolity detekcyjne.",
-  "description": "Turinabol (4-chlorodehydromethyltestosteron, CDMT) to 17α-alkilowany chlorowany doustny AAS analog strukturalny Dianabolu, zsyntetyzowany przez Jenapharm (Wschodnie Niemcy, Jena) w 1962 r., sprzedawany w 1965 r. jako Oral-Turinabol Rx. Stał się GŁÓWNYM środkiem państwowego programu dopingowego NRD (\"Staatsplanthema 14.25\", kod Stasi \"Komplex 08\", 1968-1989); ~10,000+ sportowców NRD otrzymało Turinabol bez wiedzy lub niedokumentowane, głównie w pływaniu, lekkoatletyce, wioślarstwie. Otwarcia archiwów Stasi w latach 90. dokumentują szkody (uszkodzenie wątroby, kardiomiopatia, wirylizacja u sportowczyń, wrodzone wady u dzieci dopingowanych matek). Stosunek anaboliczno-androgenny 53:6 — wysoki anaboliczny, praktycznie zero androgenny (\"bardziej suchy Anavar\"). NIE aromatyzuje (substytucja 4-chloro blokuje wiązanie substratu CYP19). 17α-metyl → umiarkowana hepatotoksyczność (4-chloro redukuje, podobna do Anavar). Schänzer 2006 (PMID 17042466) opisuje ekstra-długie metabolity detekcyjne (6β-OH-CDMT i inne) — możliwa 12-18 miesięczna detekcja w moczu, podstawa retestu IOC w Rio 2016: 100+ sportowców retrospektywnie zdyskwalifikowanych po ponownej ocenie próbek 2008-2012. Zakaz WADA cały rok.",
+  "description": "Turinabol (4-chlorodehydromethyltestosteron, CDMT) to 17α-alkilowany chlorowany doustny AAS analog strukturalny Dianabolu, zsyntetyzowany przez Jenapharm (Wschodnie Niemcy, Jena) w 1962 r., sprzedawany w 1965 r. jako Oral-Turinabol Rx. Stał się GŁÓWNYM środkiem państwowego programu dopingowego NRD (\"Staatsplanthema 14.25\", kod Stasi \"Komplex 08\", 1968-1989); ~10,000+ sportowców NRD otrzymało Turinabol bez wiedzy lub niedokumentowane, głównie w pływaniu, lekkoatletyce, wioślarstwie. Otwarcia archiwów Stasi w latach 90. dokumentują szkody (uszkodzenie wątroby, kardiomiopatia, wirylizacja u sportowczyń, wrodzone wady u dzieci dopingowanych matek). Stosunek anaboliczno-androgenny 53:6 – wysoki anaboliczny, praktycznie zero androgenny (\"bardziej suchy Anavar\"). NIE aromatyzuje (substytucja 4-chloro blokuje wiązanie substratu CYP19). 17α-metyl → umiarkowana hepatotoksyczność (4-chloro redukuje, podobna do Anavar). Schänzer 2006 (PMID 17042466) opisuje ekstra-długie metabolity detekcyjne (6β-OH-CDMT i inne) – możliwa 12-18 miesięczna detekcja w moczu, podstawa retestu IOC w Rio 2016: 100+ sportowców retrospektywnie zdyskwalifikowanych po ponownej ocenie próbek 2008-2012. Zakaz WADA cały rok.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -62,12 +62,12 @@ export default {
     "testosterone",
     "alcohol"
   ],
-  "aromatization": "Nie — substytucja 4-chloro blokuje wiązanie CYP19; klinicznie wzrost E2 zasadniczo zero (Pope-Kanayama 2014 PMID 24423981, Schänzer 2006 PMID 17042466)",
-  "hepatotoxicity": "Umiarkowana — grupa 17α-metylowa stres first-pass wątrobowy, ALE 4-chloro redukuje hepatotoksyczność vs inne AAS 17α-alkilowane (Dianabol, Anadrol). Wzrost ALT/AST 2-3x częsty przy cyklu 6+ tygodni, klinicznie łagodniejszy niż Dianabol czy Anadrol (Hartgens-Kuipers 2004 PMID 15233599)",
+  "aromatization": "Nie – substytucja 4-chloro blokuje wiązanie CYP19; klinicznie wzrost E2 zasadniczo zero (Pope-Kanayama 2014 PMID 24423981, Schänzer 2006 PMID 17042466)",
+  "hepatotoxicity": "Umiarkowana – grupa 17α-metylowa stres first-pass wątrobowy, ALE 4-chloro redukuje hepatotoksyczność vs inne AAS 17α-alkilowane (Dianabol, Anadrol). Wzrost ALT/AST 2-3x częsty przy cyklu 6+ tygodni, klinicznie łagodniejszy niż Dianabol czy Anadrol (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
   "androgenicRatio": "53:6",
   "bindingAffinity": "Umiarkowane-wysokie powinowactwo do AR; praktycznie zero substrat 5α-reduktazy → BRAK aktywności DHT; brak ryzyka androgennego skóry głowy lub prostaty.",
-  "detectionWindow": "EKSTRA DŁUGIE — w moczu 12-18 miesięcy (Schänzer 2006 6β-OH-CDMT i metabolity 3α-hydroksy-3-on). Retrospektywny retest Rio 2016 zdyskwalifikował 100+ sportowców na podstawie ponownej oceny 2008-2012. Akredytowane WADA LC-MS/MS.",
+  "detectionWindow": "EKSTRA DŁUGIE – w moczu 12-18 miesięcy (Schänzer 2006 6β-OH-CDMT i metabolity 3α-hydroksy-3-on). Retrospektywny retest Rio 2016 zdyskwalifikował 100+ sportowców na podstawie ponownej oceny 2008-2012. Akredytowane WADA LC-MS/MS.",
   "benefits": [
     "Czysty przyrost masy beztłuszczowej (3-5 kg w 6-8 tygodni, MINIMALNA retencja wody)",
     "NIE aromatyzuje → brak ginekomastii, brak retencji wody",
@@ -76,7 +76,7 @@ export default {
     "Wzrost wytrzymałości udokumentowany w sub-elite sportach wytrzymałościowych (wioślarstwo NRD, lekkoatletyka)"
   ],
   "quickStart": [
-    "EKSTRA DŁUGIE OKNO DETEKCJI — 12-18 miesięcy w moczu; sportowcy testowani WADA potrzebują min. 18 miesięcy fade-out off-season",
+    "EKSTRA DŁUGIE OKNO DETEKCJI – 12-18 miesięcy w moczu; sportowcy testowani WADA potrzebują min. 18 miesięcy fade-out off-season",
     "Monitor wątrobowy co 4 tygodnie (umiarkowana, ale 17α-metyl)",
     "TUDCA 500 mg/dzień + NAC 1200 mg/dzień zalecane",
     "Typowa dawka 30-60 mg/dzień, cykl 6-8 tygodni",
@@ -99,10 +99,10 @@ export default {
   "quality": {
     "pure": [
       "Oryginalna tabletka Jenapharm Oral-Turinabol 5 mg (1962-1994, dziś kolekcjonerska)",
-      "Tabletka UGL: źródło testowane HPLC obowiązkowe — Turinabol często fałszowany (zastępowanie Anavarem/Dianabolem)"
+      "Tabletka UGL: źródło testowane HPLC obowiązkowe – Turinabol często fałszowany (zastępowanie Anavarem/Dianabolem)"
     ],
     "caution": [
-      "EKSTRA długie okno detekcji — ryzyko sportowca wysokie",
+      "EKSTRA długie okno detekcji – ryzyko sportowca wysokie",
       "Hepatotoksyczność (wzrost ALT/AST 2-3x)",
       "Zaburzenia lipidowe: spadek HDL umiarkowany",
       "Zmiany nastroju (depresja, irytacja) przerwij jeśli zaobserwowane"
@@ -168,7 +168,7 @@ export default {
     },
     {
       "q": "Stosowanie przez kobiety?",
-      "a": "Historia NRD pokazuje, że sportowczynie (Heidi Krieger, medalistka olimpijska w pchnięciu kulą, dobrze udokumentowany przypadek) otrzymywały Turinabol bez wiedzy w dawkach 10-20 mg/dzień — wirylizacyjne efekty uboczne (nieodwracalne pogłębienie głosu, przerost łechtaczki, hirsutyzm) WYSTĄPIŁY. Krieger przeszła operację zmiany płci w 1997 (Andreas Krieger). Wniosek kliniczny: chociaż Turinabol ma niski stosunek androgenny (6 vs 100 testosteron), przy wyższych dawkach (>10 mg/dzień) i dłuższej ekspozycji wirylizacja może być NIEODWRACALNA. Jedyny bezpieczny protokół dla kobiet: nie używaj."
+      "a": "Historia NRD pokazuje, że sportowczynie (Heidi Krieger, medalistka olimpijska w pchnięciu kulą, dobrze udokumentowany przypadek) otrzymywały Turinabol bez wiedzy w dawkach 10-20 mg/dzień – wirylizacyjne efekty uboczne (nieodwracalne pogłębienie głosu, przerost łechtaczki, hirsutyzm) WYSTĄPIŁY. Krieger przeszła operację zmiany płci w 1997 (Andreas Krieger). Wniosek kliniczny: chociaż Turinabol ma niski stosunek androgenny (6 vs 100 testosteron), przy wyższych dawkach (>10 mg/dzień) i dłuższej ekspozycji wirylizacja może być NIEODWRACALNA. Jedyny bezpieczny protokół dla kobiet: nie używaj."
     },
     {
       "q": "Wzrost wytrzymałości w sportach wioślarskich?",
@@ -218,5 +218,5 @@ export default {
       "purpose": "Turinabol wyłącznie zalecany do użytku cyklicznego. Długi cruise = hepatotoksyczny + ryzyko detekcji WADA."
     }
   },
-  "anecdote": "Turinabol jest często przyćmiewany przez Anadrol lub Dianabol, ale raporty anegdotyczne cenią go właśnie za to, że jest mniej efektowny. Użytkownicy zwykle opisują postęp jako stały, efektywny i mylnie produktywny — zmiany kumulują się powoli, a nie eksplodują. Siła ma tendencję do wzrastania bez ogromnych skoków masy ciała, co jest centralne dla jego reputacji. Jest również kojarzony z silnym przeniesieniem wydajności: nie tylko wygląda się inaczej, ale lepiej się porusza, lepiej regeneruje i utrzymuje wyniki. Niektórzy użytkownicy postrzegają go bliżej 'optymalizatora suchej tkanki' niż klasycznego leku na masę. Ponieważ nie aromatyzuje, wygląd jest zwykle twardszy i bardziej suchy, choć bez dramatycznej pełności bardziej glikogenowych związków. Pomimo łagodniejszego profilu, Turinabol może nadal negatywnie wpływać na lipidy, enzymy wątrobowe, ciśnienie krwi i naturalną produkcję testosteronu — te efekty są często niedoceniane, ponieważ związek wydaje się gładszy. Jako 17α-alkilowany doustny stres wątrobowy pozostaje istotny; 'łagodny' nie powinien być mylony z nieszkodliwym."
+  "anecdote": "Turinabol jest często przyćmiewany przez Anadrol lub Dianabol, ale raporty anegdotyczne cenią go właśnie za to, że jest mniej efektowny. Użytkownicy zwykle opisują postęp jako stały, efektywny i mylnie produktywny – zmiany kumulują się powoli, a nie eksplodują. Siła ma tendencję do wzrastania bez ogromnych skoków masy ciała, co jest centralne dla jego reputacji. Jest również kojarzony z silnym przeniesieniem wydajności: nie tylko wygląda się inaczej, ale lepiej się porusza, lepiej regeneruje i utrzymuje wyniki. Niektórzy użytkownicy postrzegają go bliżej 'optymalizatora suchej tkanki' niż klasycznego leku na masę. Ponieważ nie aromatyzuje, wygląd jest zwykle twardszy i bardziej suchy, choć bez dramatycznej pełności bardziej glikogenowych związków. Pomimo łagodniejszego profilu, Turinabol może nadal negatywnie wpływać na lipidy, enzymy wątrobowe, ciśnienie krwi i naturalną produkcję testosteronu – te efekty są często niedoceniane, ponieważ związek wydaje się gładszy. Jako 17α-alkilowany doustny stres wątrobowy pozostaje istotny; 'łagodny' nie powinien być mylony z nieszkodliwym."
 }

@@ -54,7 +54,7 @@ export default {
       "finding": "Semax wykazuje efekt neuroprotekcyjny i antyamnestyczny w eksperymentalnym ostrym zawale korowym poprzez podanie donosowe."
     }
   ],
-  "anecdote": "Doniesienia społeczności na temat Semaxu są mieszane: niektórzy użytkownicy uważają go za skuteczny, podczas gdy inni zgłaszają niewielki subiektywny efekt, nawet przy podawaniu podskórnym. Ci, którzy reagują, często opisują uczucie \"czystego skupienia\" — subtelne, ale zauważalne. Uważa się, że efekty na neuroplastyczność narastają stopniowo. Semax jest stosowany klinicznie w niektórych krajach (zwłaszcza w Rosji), ale pozostaje mniej powszechny na Zachodzie.\n\nSemax jest najczęściej podawany donosowo i zazwyczaj cyklowany w badaniach (kilka tygodni stosowania, potem przerwa). Dostępne dane sugerują, że Semax może zwiększać dopaminę i serotoninę, podnosić BDNF i wspomagać tolerancję hipoksji.",
+  "anecdote": "Doniesienia społeczności na temat Semaxu są mieszane: niektórzy użytkownicy uważają go za skuteczny, podczas gdy inni zgłaszają niewielki subiektywny efekt, nawet przy podawaniu podskórnym. Ci, którzy reagują, często opisują uczucie \"czystego skupienia\" – subtelne, ale zauważalne. Uważa się, że efekty na neuroplastyczność narastają stopniowo. Semax jest stosowany klinicznie w niektórych krajach (zwłaszcza w Rosji), ale pozostaje mniej powszechny na Zachodzie.\n\nSemax jest najczęściej podawany donosowo i zazwyczaj cyklowany w badaniach (kilka tygodni stosowania, potem przerwa). Dostępne dane sugerują, że Semax może zwiększać dopaminę i serotoninę, podnosić BDNF i wspomagać tolerancję hipoksji.",
   "variants": [
     {
       "id": "sc",

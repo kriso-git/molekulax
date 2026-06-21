@@ -51,7 +51,7 @@ export default {
   ],
   "mechanism": "Selektywne, niskopowinowackowe hamowanie transportera dopaminy (DAT) podnosi synaptyczną dopaminę w podwzgórzu i określonych obszarach przedczołowych oraz aktywuje neurony histaminergiczne tuberomammillarne i system oreksynowy bocznego podwzgórza. Te szlaki selektywnie promują czuwanie, w przeciwieństwie do szerokiej stymulacji OUN amfetamin. Brak znaczącego efektu noradrenergicznego lub serotoninergicznego przy standardowej dawce.",
   "legalStatus": "UE/PL: na receptę (Provigil, Modiodal, generyki). USA: DEA Schedule IV (kontrolowany, niski potencjał nadużywania, ale NIE niekontrolowany). W PL zalecana recepta specjalisty (neurolog, lekarz snu). Formy generyczne szeroko dostępne (patent oryginatora wygasł 2012).",
-  "bioavailability": "Nieokreślona (nierozpuszczalność w wodzie uniemożliwia IV); tabletka doustna ≈ zawiesina wodna — etykieta FDA Provigil",
+  "bioavailability": "Nieokreślona (nierozpuszczalność w wodzie uniemożliwia IV); tabletka doustna ≈ zawiesina wodna – etykieta FDA Provigil",
   "onsetTime": "30-60 min, peak plasma 2-4 h",
   "halfLife": "12-15 h (parent); R-modafinil 14-16 h, S-modafinil 4-5 h (armodafinil = R-enantiomer)",
   "atcCode": "N06BA07",
@@ -96,7 +96,7 @@ export default {
     "Niski potencjał nadużywania (Schedule IV, vs amfetaminy Schedule II)"
   ],
   "quickStart": [
-    "POTWIERDZENIE diagnozy narkolepsji/SWSD/OSA przez specjalistę (polisomnografia, MSLT) — modafinil nie może być rozpoczęty off-label dla wzmocnienia poznawczego pod wskazaniem pharma",
+    "POTWIERDZENIE diagnozy narkolepsji/SWSD/OSA przez specjalistę (polisomnografia, MSLT) – modafinil nie może być rozpoczęty off-label dla wzmocnienia poznawczego pod wskazaniem pharma",
     "Standardowa dawka 200 mg raz rano, z jedzeniem lub bez",
     "Dla SWSD dawka 1 h przed zmianą",
     "PRZY JAKIEJKOLWIEK WYSYPCE NATYCHMIAST STOP i konsultacja nagła (ryzyko SJS/TEN)",
@@ -123,10 +123,10 @@ export default {
       "Internetowe źródła \"modafinilu\" (Modalert, Modvigil) GENERYKI MOGĄ BYĆ PODRABIANE, zawartość API zmienna, ostrzeżenie FDA"
     ],
     "caution": [
-      "Ostrzeżenie FDA boxed 2007: reakcje skórne (SJS/TEN), zespół DRESS, wieloorganowa nadwrażliwość — KAŻDA WYSYPKA = NATYCHMIASTOWY STOP",
+      "Ostrzeżenie FDA boxed 2007: reakcje skórne (SJS/TEN), zespół DRESS, wieloorganowa nadwrażliwość – KAŻDA WYSYPKA = NATYCHMIASTOWY STOP",
       "Działania psychiatryczne: niepokój, mania, psychoza, agresja (głównie z wywiadem psychiatrycznym)",
       "Sercowo-naczyniowe: wzrost BP, kołatania serca, rzadkie arytmie",
-      "Skuteczność doustnej antykoncepcji ZMNIEJSZONA (indukcja CYP3A4) — wymagana modyfikacja antykoncepcji"
+      "Skuteczność doustnej antykoncepcji ZMNIEJSZONA (indukcja CYP3A4) – wymagana modyfikacja antykoncepcji"
     ],
     "avoid": [
       "Wywiad SJS/TEN/DRESS",
@@ -134,7 +134,7 @@ export default {
       "Psychoza, ciężki niepokój (względne)",
       "Off-label wzmocnienie poznawcze w INNYM ramie prawnym (osobne framing biblioteki Nootropik)",
       "Ciąża i karmienie piersią (embriotoksyczność u zwierząt, brak danych dotyczących bezpieczeństwa u ludzi)",
-      "Wyłączne poleganie na doustnej antykoncepcji hormonalnej w trakcie leczenia i 1 miesiąc po (indukcja CYP3A4 — zmniejszona skuteczność, wymagana dodatkowa metoda barierowa)",
+      "Wyłączne poleganie na doustnej antykoncepcji hormonalnej w trakcie leczenia i 1 miesiąc po (indukcja CYP3A4 – zmniejszona skuteczność, wymagana dodatkowa metoda barierowa)",
       "Niedokrwienne zmiany w EKG, ból w klatce piersiowej lub wcześniejsze arytmie podczas terapii stymulującej"
     ]
   },

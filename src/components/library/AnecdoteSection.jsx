@@ -74,7 +74,7 @@ export default function AnecdoteSection({ peptide, accent }) {
  className="text-[10.5px] tracking-[0.15em] uppercase font-semibold"
  style={{ color: 'var(--text-muted)', opacity: 0.85 }}
  >
- ⚠ {t('entry.sec.anecdote.disclaimer') || 'Nem klinikai bizonyíték — felhasználói tapasztalatokon alapul.'}
+ ⚠ {t('entry.sec.anecdote.disclaimer') || 'Nem klinikai bizonyíték – felhasználói tapasztalatokon alapul.'}
  </p>
  </>
  ) : (

@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Potent cholinergic racetam, HACU enhancement + AMPA modulation.",
-  "description": "Pramiracetam is a high-potency Piracetam analog whose primary action is facilitation of hippocampal high-affinity choline uptake (HACU) — showing a 30-37% increase in ACh turnover in vivo, with a bell-shaped dose-response curve (lower doses often work better). It does NOT modulate GABA, dopamine, noradrenaline, or serotonin — a pure cholinergic profile. Orally well-bioavailable (~4-5 h half-life). Chronic corticosteroid elevation (stress) can block its memory-enhancing effect (PMID 1410129). The typical dose (300-600 mg) is far lower than Piracetam`s. It was prescription-only in Italy as Pramistar; currently withdrawn in several markets.",
+  "description": "Pramiracetam is a high-potency Piracetam analog whose primary action is facilitation of hippocampal high-affinity choline uptake (HACU) – showing a 30-37% increase in ACh turnover in vivo, with a bell-shaped dose-response curve (lower doses often work better). It does NOT modulate GABA, dopamine, noradrenaline, or serotonin – a pure cholinergic profile. Orally well-bioavailable (~4-5 h half-life). Chronic corticosteroid elevation (stress) can block its memory-enhancing effect (PMID 1410129). The typical dose (300-600 mg) is far lower than Piracetam`s. It was prescription-only in Italy as Pramistar; currently withdrawn in several markets.",
   "keyInfo": [
     {
       "label": "Mechanism",

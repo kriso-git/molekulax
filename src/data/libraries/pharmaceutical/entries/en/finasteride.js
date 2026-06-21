@@ -51,7 +51,7 @@ export default {
   ],
   "mechanism": "Selective competitive inhibition of type II 5α-reductase (5AR2) reduces serum DHT by ~70-90% (Roberts 1999). Type I 5AR (sebaceous gland, skin) is relatively spared, so finasteride has milder peripheral antiandrogen effect. Hair follicle DHT reduction reverses miniaturization: anagen phase prolongs, hair shaft thickness returns. In prostate, DHT reduction slows hyperplasia progression.",
   "legalStatus": "EU/HU: prescription only (Propecia 1 mg, Proscar 5 mg, generics). USA: FDA Rx, not scheduled. Generic forms widely available (originator patent expired 2013). Telemedicine services (Roman, Hims) in USA offer online Rx access.",
-  "bioavailability": "65% (oral, 1-mg tablet, AUC vs IV reference; range 26-170% — FDA Propecia label)",
+  "bioavailability": "65% (oral, 1-mg tablet, AUC vs IV reference; range 26-170% – FDA Propecia label)",
   "onsetTime": "3-6 months (hair stabilization), 6-12 months (visible regrowth)",
   "halfLife": "5-6 h (plasma); 96+ h enzyme affinity (sustained DHT suppression with daily dosing)",
   "atcCode": "D11AX10 (1 mg alopecia) / G04CB01 (5 mg BPH)",
@@ -64,7 +64,7 @@ export default {
     "Transgender hormone therapy (MtF): off-label antiandrogen for DHT reduction"
   ],
   "contraindications": [
-    "Pregnancy (FDA category X — finasteride causes male fetus genital development damage)",
+    "Pregnancy (FDA category X – finasteride causes male fetus genital development damage)",
     "Female patients (childbearing age, without contraception)",
     "Known hypersensitivity",
     "Children (< 18 yr)"
@@ -73,7 +73,7 @@ export default {
     "Sexual side effects: libido decrease (1-2%), erectile dysfunction (1-2%), ejaculation disorder (1%)",
     "Gynecomastia (male breast enlargement, 0.5-1%)",
     "Mood disorder (depression elevation, literature-debated)",
-    "PSA reduction by ~50% — must factor in prostate screening (PSA × 2 corrected)",
+    "PSA reduction by ~50% – must factor in prostate screening (PSA × 2 corrected)",
     "Post-finasteride syndrome (PFS): controversial, persistent sexual/mental symptom cluster, FDA 2012 label update"
   ],
   "cyp450": [
@@ -127,13 +127,13 @@ export default {
       "Mood disorder and depression monitoring during treatment"
     ],
     "avoid": [
-      "Pregnancy (FDA category X — male fetus genital damage)",
+      "Pregnancy (FDA category X – male fetus genital damage)",
       "Women of childbearing age without contraception",
-      "Psychiatric history (depression) — enhanced monitoring or alternative treatment",
+      "Psychiatric history (depression) – enhanced monitoring or alternative treatment",
       "Children and adolescents (< 18 yr)",
-      "Handling of broken/crushed tablets by pregnant (or potentially pregnant) women — transdermal absorption can disrupt male fetal genital development",
+      "Handling of broken/crushed tablets by pregnant (or potentially pregnant) women – transdermal absorption can disrupt male fetal genital development",
       "Blood or semen donation during treatment and 1 month after (prevent secondary fetal exposure)",
-      "Concurrent dutasteride (another 5α-reductase inhibitor) — redundant risk, not rational"
+      "Concurrent dutasteride (another 5α-reductase inhibitor) – redundant risk, not rational"
     ]
   },
   "interactions": [

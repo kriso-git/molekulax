@@ -27,8 +27,8 @@ export default {
   "image": "/performance/tablet-pile-white.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
-  "shortDesc": "Fluoxymesterone, 9α-fluoro-11β-hydroxy-17α-methyl-testosterone-derivative oral AAS. Originally FDA-approved (Halotestin, Upjohn 1957). The highest androgenic activity among AAS — boxing/powerlifting pre-competition \"strength-amplifier\" use with MINIMAL muscle mass building.",
-  "description": "Halotestin (Fluoxymesterone) is a 9α-fluoro-11β-hydroxy-17α-methyl-testosterone-derivative oral AAS synthesized by Upjohn in 1956, FDA-approved in 1957 for delayed puberty, male hypogonadism and (formerly) breast cancer. Withdrawn from the US market in 1992, Pfizer generic still available on some EU markets. Anabolic:androgenic ratio ~1900:850 (extreme — the highest androgenic activity among AAS). The 9α-fluoro + 11β-OH steric blocking prevents aromatization + glucocorticoid receptor (GR) agonist activity (hence the \"drying\" effect and spiky aggression). 17α-methyl group → HIGH hepatotoxicity. NOT a standard bodybuilding use (NOT a bulker, NOT good for cutting); specifically a boxing, powerlifting, strongman pre-competition \"strength + aggression amplifier\" with 5-10% 1RM elevation in 1-3 weeks and minimal actual muscle mass gain. Roy Jones Jr. (2003 Boxing News doping scandal) and many other boxers have tested positive for Halotestin. WADA-banned year-round.",
+  "shortDesc": "Fluoxymesterone, 9α-fluoro-11β-hydroxy-17α-methyl-testosterone-derivative oral AAS. Originally FDA-approved (Halotestin, Upjohn 1957). The highest androgenic activity among AAS – boxing/powerlifting pre-competition \"strength-amplifier\" use with MINIMAL muscle mass building.",
+  "description": "Halotestin (Fluoxymesterone) is a 9α-fluoro-11β-hydroxy-17α-methyl-testosterone-derivative oral AAS synthesized by Upjohn in 1956, FDA-approved in 1957 for delayed puberty, male hypogonadism and (formerly) breast cancer. Withdrawn from the US market in 1992, Pfizer generic still available on some EU markets. Anabolic:androgenic ratio ~1900:850 (extreme – the highest androgenic activity among AAS). The 9α-fluoro + 11β-OH steric blocking prevents aromatization + glucocorticoid receptor (GR) agonist activity (hence the \"drying\" effect and spiky aggression). 17α-methyl group → HIGH hepatotoxicity. NOT a standard bodybuilding use (NOT a bulker, NOT good for cutting); specifically a boxing, powerlifting, strongman pre-competition \"strength + aggression amplifier\" with 5-10% 1RM elevation in 1-3 weeks and minimal actual muscle mass gain. Roy Jones Jr. (2003 Boxing News doping scandal) and many other boxers have tested positive for Halotestin. WADA-banned year-round.",
   "keyInfo": [
     {"label": "Mechanism", "value": "AR + GR agonist, 9α-fluoro, NOT aromatized"},
     {"label": "Anabolic:Androgenic", "value": "1900:850"},
@@ -42,8 +42,8 @@ export default {
   "halfLife": "9 h (oral, parent compound)",
   "halfLifeActive": "9 h",
   "interactionsWith": ["tudca", "warfarin", "tamoxifen", "alcohol"],
-  "aromatization": "No — 9α-fluoro-11β-OH steric blocking against CYP19; clinically E2 elevation essentially zero (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Very high — 17α-methyl group + 9α-fluoro further increases hepatic stress; ALT/AST 3-7x rise common at 4+ week cycle, cholestatic jaundice case-reported (Hartgens-Kuipers 2004 PMID 15233599)",
+  "aromatization": "No – 9α-fluoro-11β-OH steric blocking against CYP19; clinically E2 elevation essentially zero (Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Very high – 17α-methyl group + 9α-fluoro further increases hepatic stress; ALT/AST 3-7x rise common at 4+ week cycle, cholestatic jaundice case-reported (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
   "androgenicRatio": "1900:850",
   "bindingAffinity": "Extremely high AR affinity (~330% vs testosterone in vitro) plus GR affinity (~10-15% vs cortisol).",
@@ -56,25 +56,25 @@ export default {
     "Minimal muscle mass gain → weight-class competitions (boxing, powerlifting weight class) not affected"
   ],
   "quickStart": [
-    "NOT a standalone bulker, NOT cutting — Halotestin is specifically a pre-competition strength-amplifier 1-3 weeks",
-    "EXTREME HEPATOTOXICITY — maximum 4 weeks continuous cycle, NEVER longer",
+    "NOT a standalone bulker, NOT cutting – Halotestin is specifically a pre-competition strength-amplifier 1-3 weeks",
+    "EXTREME HEPATOTOXICITY – maximum 4 weeks continuous cycle, NEVER longer",
     "TUDCA 1000 mg/day + NAC 1800 mg/day MANDATORY throughout the cycle",
-    "Psychological side effect: \"Halo-rage\" — psychiatric predisposition absolute contraindication",
-    "Bloodwork pre-cycle + week 2 + post — ALT/AST priority"
+    "Psychological side effect: \"Halo-rage\" – psychiatric predisposition absolute contraindication",
+    "Bloodwork pre-cycle + week 2 + post – ALT/AST priority"
   ],
   "expectations": [
     {"label": "First week", "body": "Acute effect: after 3-5 days spiky aggression, training focus drastic increase, 1RM rise 2-5%."},
-    {"label": "Week 2-3", "body": "Maximum strength gain (5-10% 1RM), \"drying\" effect perceptible (sub-water muscle contour maximized). ALT/AST 3-7x upper normal — MANDATORY cycle discontinuation at end of week 3-4."},
+    {"label": "Week 2-3", "body": "Maximum strength gain (5-10% 1RM), \"drying\" effect perceptible (sub-water muscle contour maximized). ALT/AST 3-7x upper normal – MANDATORY cycle discontinuation at end of week 3-4."},
     {"label": "Post-cycle", "body": "Strength drop fast (return to baseline in 1-2 weeks), muscle mass preservation minimal (nothing was preserved). Hepatic recovery 4-8 weeks."}
   ],
   "quality": {
     "pure": [
       "Pfizer Fluoxymesterone generic 5 mg or 10 mg tablet (EU-Rx, rarely obtainable)",
-      "UGL tablet: HPLC-tested source mandatory — Halotestin often counterfeited (Anavar/Methyltestosterone substitution)"
+      "UGL tablet: HPLC-tested source mandatory – Halotestin often counterfeited (Anavar/Methyltestosterone substitution)"
     ],
     "caution": [
       "Extreme hepatotoxicity (ALT/AST 3-7x rise the most common acute effect)",
-      "Psychological: \"Halo-rage\", aggression, irritation — family/work conflict risk",
+      "Psychological: \"Halo-rage\", aggression, irritation – family/work conflict risk",
       "Lipid disturbance dramatic: HDL up to 50% drop in 4 weeks",
       "Blood pressure elevation (often >140/90)"
     ],
@@ -84,7 +84,7 @@ export default {
       "Psychiatric predisposition (depression, bipolar, anxiety, aggression disorders) absolute contraindication",
       "Cardiovascular risk (family history, high LDL, hypertension)",
       "Female use (extreme androgenic activity → rapid irreversible virilization)",
-      "Bulking/bodybuilding goal — Halotestin is NOT for that",
+      "Bulking/bodybuilding goal – Halotestin is NOT for that",
       "More than 4 weeks continuous cycle (cumulative hepatotoxicity)"
     ]
   },
@@ -104,9 +104,9 @@ export default {
   ],
   "faq": [
     {"q": "Why doesn't it build muscle if it's such a strong androgen?", "a": "Halotestin's unique GR (glucocorticoid receptor) agonist activity is paradoxical: high androgenic activity (AR) is theoretically anabolic, BUT GR activity simultaneously induces cortisol-like protein degradation. Net effect: drastic strength gain (CNS stimulation + neuromuscular efficiency) with MINIMAL actual muscle mass gain. Pre-competition strength-amplifier, NOT a bulker."},
-    {"q": "How real is \"Halo-rage\"?", "a": "Clinically documented. Kanayama 2009 PMID 19922565 cohort + boxing/UFC literature case reports indicate Halotestin is the most psychotropic AAS — aggression, irritation, mood swings more extreme than Anadrol or Trenbolone. Several boxers (Roy Jones Jr. 2003, James Toney 2005) positive tests + documented behavior changes. Psychiatric predisposition ABSOLUTE contraindication."},
+    {"q": "How real is \"Halo-rage\"?", "a": "Clinically documented. Kanayama 2009 PMID 19922565 cohort + boxing/UFC literature case reports indicate Halotestin is the most psychotropic AAS – aggression, irritation, mood swings more extreme than Anadrol or Trenbolone. Several boxers (Roy Jones Jr. 2003, James Toney 2005) positive tests + documented behavior changes. Psychiatric predisposition ABSOLUTE contraindication."},
     {"q": "Why do boxers/MMA fighters use Halotestin?", "a": "Three reasons: (1) extreme strength gain in 1-3 weeks WITHOUT weight gain (boxing weight class doesn't change); (2) spiky aggression for fight psychology; (3) \"drying\" effect for pre-weigh-in water depletion. WADA-banned, USADA tests detect it for 2 months. Due to severe side-effect profile generally used only 1-2 weeks before fight (\"peak week\"), max 10-30 mg/day."},
-    {"q": "Hepatotoxicity vs Anadrol?", "a": "Halotestin is somewhat more hepatotoxic than Anadrol — the 9α-fluoro + 17α-methyl combination causes more extreme hepatic stress than 2-hydroxymethylene + 17α-methyl in Anadrol. Both top-3 in the 17α-alkylated AAS hepatotoxicity ranking (Superdrol-Halotestin-Anadrol). Neither is recommended."},
+    {"q": "Hepatotoxicity vs Anadrol?", "a": "Halotestin is somewhat more hepatotoxic than Anadrol – the 9α-fluoro + 17α-methyl combination causes more extreme hepatic stress than 2-hydroxymethylene + 17α-methyl in Anadrol. Both top-3 in the 17α-alkylated AAS hepatotoxicity ranking (Superdrol-Halotestin-Anadrol). Neither is recommended."},
     {"q": "Roy Jones Jr. 2003 case?", "a": "Roy Jones Jr. tested positive for Halotestin metabolites after the Antonio Tarver title fight in 2003. The positive test cost him the IBF and WBA titles; Jones denied, legal dispute ensued. The case contributed to Halotestin's \"boxer steroid\" reputation."}
   ],
   "related": ["dianabol-info", "anadrol", "superdrol", "anavar-info", "testosterone-info"],
@@ -136,9 +136,9 @@ export default {
       "purpose": "Verify HEPATIC recovery absolutely critical. If ALT/AST does not normalize by 12 weeks, hepatologist consultation MANDATORY."
     },
     "cruise": {
-      "label": "On cruise (Halotestin cruise DOES NOT EXIST — strictly cyclical)",
-      "timing": "Halotestin cruising FORBIDDEN — mandatory discontinuation after 4 weeks. Continuous use = hepatic failure.",
-      "markers": "N/A — Halotestin cruise is not standard.",
+      "label": "On cruise (Halotestin cruise DOES NOT EXIST – strictly cyclical)",
+      "timing": "Halotestin cruising FORBIDDEN – mandatory discontinuation after 4 weeks. Continuous use = hepatic failure.",
+      "markers": "N/A – Halotestin cruise is not standard.",
       "purpose": "Halotestin used exclusively in short (max 4 weeks, typically 1-3 weeks) pre-competition cycle."
     }
   }

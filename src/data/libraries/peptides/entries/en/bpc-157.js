@@ -78,5 +78,5 @@ export default {
       "finding": "Modulation of dopaminergic and serotonergic systems; neural tissue protection against ischemia and trauma."
     }
   ],
-  "anecdote": "Anecdotal reports describe users injecting BPC-157 subcutaneously near an injured ankle, with reduced walking pain noted within 2-3 days at 500 mcg morning dosing near the site. Over a 4-week run, community accounts mention improved gym recovery and reduced soreness — placebo cannot be ruled out, but the timing is consistent with BPC-157's purported tissue-repair mechanism.\n\nThe peptide is typically administered daily, either via subcutaneous injection or as oral capsules. It can be administered for as long as the benefits are needed or warranted by the user's situation."
+  "anecdote": "Anecdotal reports describe users injecting BPC-157 subcutaneously near an injured ankle, with reduced walking pain noted within 2-3 days at 500 mcg morning dosing near the site. Over a 4-week run, community accounts mention improved gym recovery and reduced soreness – placebo cannot be ruled out, but the timing is consistent with BPC-157's purported tissue-repair mechanism.\n\nThe peptide is typically administered daily, either via subcutaneous injection or as oral capsules. It can be administered for as long as the benefits are needed or warranted by the user's situation."
 }

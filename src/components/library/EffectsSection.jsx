@@ -174,7 +174,7 @@ function Modal({ cat, idx, libraryId, onClose }) {
  const entryNames = cat.entryNames || cat.peptides || []
  const entryIds = cat.entryIds || cat.peptideIds || []
 
- // Portal to document.body — a Modal a LibraryCube `transformStyle: preserve-3d`
+ // Portal to document.body – a Modal a LibraryCube `transformStyle: preserve-3d`
  // és face `transform: rotateY()` ancestor-aiban ülne ha inline render-elnénk,
  // és a CSS spec szerint a `position: fixed` egy transformed ancestor-ban a
  // transformed-parent containing block-jára pin-elődik, nem a viewport-ra.

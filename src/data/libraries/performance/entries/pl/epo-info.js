@@ -27,7 +27,7 @@ export default {
   "accentColor": "#ef4444",
   "tagColor": "rgba(239,68,68,0.18)",
   "shortDesc": "Rekombinowana ludzka erytropoetyna (rhEPO). Stymuluje produkcję erytrocytów, zakazana przez WADA.",
-  "description": "Rekombinowana erytropoetyna (rhEPO) to biologicznie identyczna forma naturalnej EPO nerek. Zatwierdzona FDA dla CKD i anemii chemoterapeutycznej. W sportach wytrzymałościowych podnosi hematokryt, anegdotycznie +8-10% VO2max (Lundby 2011), ale placebo-kontrolowane BLINDED RCT pokazują realistycznie +1-3% (Heuberger 2013). WADA-zakazana. **Analogia stabilizacji HIF-α**: endogenną EPO aktywuje HIF-α indukowany hipoksją (Nobel Semenza 2019). **Kontekst historyczny**: era EPO w Tour de France 1990-2000, skandal Festina 1998, protokół Armstrong/USPS udokumentowany (USADA 2012). **Przełom detekcji**: Lasne & de Ceaurriz 2000 Nature (PMID 10864312) test IEF. **Dynamika hematokrytu**: 7-10 dni do szczytu retikulocytów, 21-28 dni do szczytu hematokrytu — stąd protokoły mikrodawkowania (20-30 IU/kg co 2 dni) poniżej okna detekcji.",
+  "description": "Rekombinowana erytropoetyna (rhEPO) to biologicznie identyczna forma naturalnej EPO nerek. Zatwierdzona FDA dla CKD i anemii chemoterapeutycznej. W sportach wytrzymałościowych podnosi hematokryt, anegdotycznie +8-10% VO2max (Lundby 2011), ale placebo-kontrolowane BLINDED RCT pokazują realistycznie +1-3% (Heuberger 2013). WADA-zakazana. **Analogia stabilizacji HIF-α**: endogenną EPO aktywuje HIF-α indukowany hipoksją (Nobel Semenza 2019). **Kontekst historyczny**: era EPO w Tour de France 1990-2000, skandal Festina 1998, protokół Armstrong/USPS udokumentowany (USADA 2012). **Przełom detekcji**: Lasne & de Ceaurriz 2000 Nature (PMID 10864312) test IEF. **Dynamika hematokrytu**: 7-10 dni do szczytu retikulocytów, 21-28 dni do szczytu hematokrytu – stąd protokoły mikrodawkowania (20-30 IU/kg co 2 dni) poniżej okna detekcji.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -54,12 +54,12 @@ export default {
     "iron supplements",
     "ACE inhibitors"
   ],
-  "aromatization": "Nie dotyczy — 165-aminokwasowa glikoproteina (erytropoetyna), NIE steroid; brak substratu aromatazy",
-  "hepatotoxicity": "Niska — brak bezpośredniej hepatotoksyczności; dominuje wzrost hematokrytu z ryzykiem zakrzepicy (zdarzenia CV, udar) (ostrzeżenie black-box FDA Epogen)",
+  "aromatization": "Nie dotyczy – 165-aminokwasowa glikoproteina (erytropoetyna), NIE steroid; brak substratu aromatazy",
+  "hepatotoxicity": "Niska – brak bezpośredniej hepatotoksyczności; dominuje wzrost hematokrytu z ryzykiem zakrzepicy (zdarzenia CV, udar) (ostrzeżenie black-box FDA Epogen)",
   "wadaStatus": "banned",
   "detectionWindow": "Test bezpośredni: 3-4 dni. Biomarker (ABP) 4-6 tygodni.",
   "benefits": [
-    "Wzrost VO2max: anegdotycznie 8-10% (Lundby 2011), ale placebo-kontrolowane BLINDED RCT pokazują 1-3% (Heuberger 2013) — subiektywne odczucie sportowców znacznie zawyża mierzalny efekt",
+    "Wzrost VO2max: anegdotycznie 8-10% (Lundby 2011), ale placebo-kontrolowane BLINDED RCT pokazują 1-3% (Heuberger 2013) – subiektywne odczucie sportowców znacznie zawyża mierzalny efekt",
     "Wzrost hematokrytu",
     "Wzrost hemoglobiny"
   ],

@@ -1,4 +1,4 @@
-// Performance library — 6 chemistry-based sub-categories. v0.27.3 + v0.27.4:
+// Performance library – 6 chemistry-based sub-categories. v0.27.3 + v0.27.4:
 // PERFORMANCE_SUB_CATEGORIES now covers all 64 entries (was 14), so every tile
 // renders its "research uses" tag instead of falling back to "-" dash. SARMs
 // promoted from 19nor/sarms sub-section to a top-level 'sarm' subCategory
@@ -81,7 +81,7 @@ export const SUB_SECTIONS = {
   ],
 }
 
-// Map: entry-id → { subCategory, subSection } — covers all 64 perf entries.
+// Map: entry-id → { subCategory, subSection } – covers all 64 perf entries.
 // SARMs (yk-11, s4, s23, ostarine, lgd-4033, rad-140) moved from 19nor/sarms
 // to the new top-level 'sarm' subCategory; yk-11 is steroidal, rest non-steroidal.
 export const PERFORMANCE_SUB_CATEGORIES = {
@@ -112,7 +112,7 @@ export const PERFORMANCE_SUB_CATEGORIES = {
   'ment-19nor':        { subCategory: '19nor', subSection: 'progestin'  },
   'gestrinone':        { subCategory: '19nor', subSection: 'progestin'  },
 
-  // SARMs — new top-level subCategory (was 19nor/sarms)
+  // SARMs – new top-level subCategory (was 19nor/sarms)
   'rad-140':           { subCategory: 'sarm',  subSection: 'non-steroid' },
   'lgd-4033':          { subCategory: 'sarm',  subSection: 'non-steroid' },
   'ostarine':          { subCategory: 'sarm',  subSection: 'non-steroid' },
@@ -170,7 +170,7 @@ export function getPerformanceSubCategory(entryId) {
   return PERFORMANCE_SUB_CATEGORIES[entryId] || null
 }
 
-// Back-compat shim — LibraryGallery's tile-render + filter loop calls
+// Back-compat shim – LibraryGallery's tile-render + filter loop calls
 // library.entryCategoryMap[id] expecting an array of category-ids. Now covers
 // all 64 entries so every tile renders its "research uses" tag (was dash-fallback).
 export const PERFORMANCE_CATEGORIES = Object.fromEntries(

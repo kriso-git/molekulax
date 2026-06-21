@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Erős cholinerg racetam, HACU-fokozás + AMPA-modulácó.",
-  "description": "A Pramiracetam egy nagy potencitású Piracetam-analóg, amely elsősorban a hippokampális magas-affinitású kolin-felvétel (HACU) facilitációján keresztül hat — 30-37%-os ACh-turnover emelést mutat in vivo, harangformájú dózis-válasz görbével (alacsonyabb dózis gyakran erősebb). NEM modulálja a GABA-t, dopamint, noradrenalint vagy szerotonint — tiszta cholinerg profil. Orálisan jól biológiailag elérhető (~4-5 órás felezési idő). Krónikus kortikoszteroid-emelkedés (stressz) blokkolhatja a memória-javító hatást (PMID 1410129). A tipikus dózis (300-600 mg) jelentősen alacsonyabb, mint a Piracetamé. Olaszországban Pramistar néven vényköteles volt; jelenleg több piacon visszavonva.",
+  "description": "A Pramiracetam egy nagy potencitású Piracetam-analóg, amely elsősorban a hippokampális magas-affinitású kolin-felvétel (HACU) facilitációján keresztül hat – 30-37%-os ACh-turnover emelést mutat in vivo, harangformájú dózis-válasz görbével (alacsonyabb dózis gyakran erősebb). NEM modulálja a GABA-t, dopamint, noradrenalint vagy szerotonint – tiszta cholinerg profil. Orálisan jól biológiailag elérhető (~4-5 órás felezési idő). Krónikus kortikoszteroid-emelkedés (stressz) blokkolhatja a memória-javító hatást (PMID 1410129). A tipikus dózis (300-600 mg) jelentősen alacsonyabb, mint a Piracetamé. Olaszországban Pramistar néven vényköteles volt; jelenleg több piacon visszavonva.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",

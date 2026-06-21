@@ -1,4 +1,4 @@
-// Nootropic library — 7 categories grouping the entries by mechanism / role.
+// Nootropic library – 7 categories grouping the entries by mechanism / role.
 // Each category exposes a stable id, accent color, and HU/EN/PL label.
 
 export const CATEGORIES = [
@@ -26,7 +26,7 @@ export const NOOTROPIC_CATEGORIES = {
   'selank':          ['anxiolytics', 'neuroprotective'],
   '9-me-bc':         ['dopaminergic'],
 
-  // EXTRA — Racetams (Task 7)
+  // EXTRA – Racetams (Task 7)
   'aniracetam':      ['racetams', 'anxiolytics'],
   'oxiracetam':      ['racetams'],
   'pramiracetam':    ['racetams', 'cholinergics'],
@@ -37,29 +37,29 @@ export const NOOTROPIC_CATEGORIES = {
   'unifiram':        ['racetams'],
   'nooglutyl':       ['racetams'],
 
-  // EXTRA — Eugeroics (Task 7)
+  // EXTRA – Eugeroics (Task 7)
   'armodafinil':     ['eugeroics'],
   'fladrafinil':     ['eugeroics'],
   'flmodafinil':     ['eugeroics'],
 
-  // EXTRA — Cholinergics (Task 7)
+  // EXTRA – Cholinergics (Task 7)
   'alpha-gpc':       ['cholinergics'],
   'cdp-choline':     ['cholinergics'],
   'centrophenoxine': ['cholinergics'],
   'huperzine-a':     ['cholinergics'],
 
-  // EXTRA — Dopaminergic (Task 7)
+  // EXTRA – Dopaminergic (Task 7)
   'selegiline':      ['dopaminergic'],
   'bpap':            ['dopaminergic'],
   'prl-8-53':        ['dopaminergic', 'racetams'],
 
-  // EXTRA — Anxiolytics (Task 7)
+  // EXTRA – Anxiolytics (Task 7)
   'phenibut':        ['anxiolytics'],
   'tianeptine':      ['anxiolytics'],
   'f-phenibut':      ['anxiolytics'],
   'picamilon':       ['anxiolytics'],
 
-  // EXTRA — Adaptogens (Task 7)
+  // EXTRA – Adaptogens (Task 7)
   'bacopa':              ['adaptogens'],
   'ashwagandha':         ['adaptogens'],
   'rhodiola':            ['adaptogens'],
@@ -67,14 +67,14 @@ export const NOOTROPIC_CATEGORIES = {
   'l-theanine':          ['adaptogens', 'anxiolytics'],
   'tongkat-ali':         ['adaptogens'],
 
-  // EXTRA — Neuroprotective (Task 7)
+  // EXTRA – Neuroprotective (Task 7)
   'cerebrolysin':            ['neuroprotective'],
   'cortexin':                ['neuroprotective'],
   'dihexa':                  ['neuroprotective'],
   'methylene-blue':          ['neuroprotective'],
   'magnesium-l-threonate':   ['neuroprotective'],
 
-  // Phase 10 — 4 new entries (Task 7)
+  // Phase 10 – 4 new entries (Task 7)
   'paraxanthine':            ['dopaminergic'],
   'j-147':                   ['neuroprotective'],
   'af710b':                  ['cholinergics', 'neuroprotective'],

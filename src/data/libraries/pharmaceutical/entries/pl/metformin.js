@@ -48,7 +48,7 @@ export default {
   ],
   "mechanism": "Przez aktywację AMPK hamuje glukoneogenezę wątrobową (represja PEPCK i G6Pase), zmniejsza aktywność mitochondrialnego kompleksu I (Owen 2000 Biochem J), zwiększa obwodową wrażliwość na insulinę i wychwyt glukozy w mięśniach szkieletowych. Nie stymuluje wydzielania insuliny, dlatego ryzyko hipoglikemii w monoterapii jest minimalne.",
   "legalStatus": "UE/PL: na receptę (Glucophage, Siofor, Metformax, Formetic). USA: FDA Rx (Glucophage, Fortamet, Glumetza). Brak potencjału nadużywania, nie jest substancją kontrolowaną. Wskazania PCOS i stan przedcukrzycowy są off-label, ale powszechne w praktyce klinicznej.",
-  "bioavailability": "~50-60% (doustnie, na czczo, tabletka 500 mg — etykieta FDA Glucophage)",
+  "bioavailability": "~50-60% (doustnie, na czczo, tabletka 500 mg – etykieta FDA Glucophage)",
   "onsetTime": "1-3 h (single dose), 4-7 days (steady-state HbA1c lowering)",
   "halfLife": "4-9 h (plasma), ~17 h (erythrocyte compartment)",
   "atcCode": "A10BA02",

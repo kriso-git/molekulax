@@ -27,7 +27,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Nandrolone Decanoate (Deca-Durabolin), 19-nor AAS. Classic \"bulking\" AAS with joint recovery effect.",
-  "description": "Nandrolone Decanoate is a 19-nor testosterone derivative, long-acting injectable AAS. **Ester variants**: Decanoate (Deca-Durabolin) ~15-day t1/2, depo-style slow stable release, 1x weekly injection sufficient, more water retention; Phenylpropionate (NPP) ~5-day t1/2, faster on/off profile, 2x weekly injection, anecdotally less water retention. Clinically used for anemia and cachexia. In bodybuilding it is used in \"bulking\" cycles for muscle mass and joint recovery (collagen synthesis elevation). Aromatase converts it to estrogen minimally (~10% vs testosterone), and 5α-reductase forms dihydronandrolone with only ~20% AR activity (vs DHT, a STRONG AR agonist) — **this is the physiological prostate-sparing basis, one of Nandrolone main advantages over Testosterone**. \"Deca-dick\" libido drop is a common complaint (prolactin elevation); \"Deca-blues\" mood anecdote: chronic 19-nor use suspected of dopamine-serotonin balance shift (depressive symptoms reported in some users after 3+ months).",
+  "description": "Nandrolone Decanoate is a 19-nor testosterone derivative, long-acting injectable AAS. **Ester variants**: Decanoate (Deca-Durabolin) ~15-day t1/2, depo-style slow stable release, 1x weekly injection sufficient, more water retention; Phenylpropionate (NPP) ~5-day t1/2, faster on/off profile, 2x weekly injection, anecdotally less water retention. Clinically used for anemia and cachexia. In bodybuilding it is used in \"bulking\" cycles for muscle mass and joint recovery (collagen synthesis elevation). Aromatase converts it to estrogen minimally (~10% vs testosterone), and 5α-reductase forms dihydronandrolone with only ~20% AR activity (vs DHT, a STRONG AR agonist) – **this is the physiological prostate-sparing basis, one of Nandrolone main advantages over Testosterone**. \"Deca-dick\" libido drop is a common complaint (prolactin elevation); \"Deca-blues\" mood anecdote: chronic 19-nor use suspected of dopamine-serotonin balance shift (depressive symptoms reported in some users after 3+ months).",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -46,7 +46,7 @@ export default {
       "value": "USA: Schedule III. HU/EU: Rx."
     }
   ],
-  "mechanism": "19-nor AAS, direct AR agonist. Aromatase converts to estrogen minimally (~10% vs testosterone). 5α-reductase forms dihydronandrolone with only ~20% AR activity (vs DHT, a STRONG AR agonist) — physiologically prostate-sparing, one of Nandrolone main pharmacological advantages. Secondarily a partial progesterone-receptor agonist (prolactin elevation).",
+  "mechanism": "19-nor AAS, direct AR agonist. Aromatase converts to estrogen minimally (~10% vs testosterone). 5α-reductase forms dihydronandrolone with only ~20% AR activity (vs DHT, a STRONG AR agonist) – physiologically prostate-sparing, one of Nandrolone main pharmacological advantages. Secondarily a partial progesterone-receptor agonist (prolactin elevation).",
   "legalStatus": "USA: Schedule III. HU/PL/EU: Rx (Deca-Durabolin pharmacy). WADA: banned.",
   "onsetTime": "2-3 weeks",
   "halfLife": "15 days (decanoate)",
@@ -54,8 +54,8 @@ export default {
     "cabergoline (prolactin)",
     "aromatase inhibitors"
   ],
-  "aromatization": "Minimal — 19-nor steroid, 5-10% CYP19 conversion to E2 (vs testosterone); progestogenic activity dominates (Bhasin-Kanayama 2003)",
-  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injected ester bypasses hepatic first-pass (Pope-Kanayama 2014)",
+  "aromatization": "Minimal – 19-nor steroid, 5-10% CYP19 conversion to E2 (vs testosterone); progestogenic activity dominates (Bhasin-Kanayama 2003)",
+  "hepatotoxicity": "Low – parent steroid, NOT 17α-alkylated; injected ester bypasses hepatic first-pass (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "125:37",
   "benefits": [
@@ -173,17 +173,17 @@ export default {
       "aromatization": "low",
       "androgenicRatio": "125:37",
       "legalStatus": "HU/PL/EU: Rx (Deca-Durabolin Organon SmPC, indication: osteoporosis, anemia). USA: Schedule III. WADA-banned.",
-      "detectionWindow": "Urinary: 12-18 months (Deca long-term metabolite 19-norandrosterone, WADA-accredited LC-MS/MS — LONGEST detection window among AAS).",
+      "detectionWindow": "Urinary: 12-18 months (Deca long-term metabolite 19-norandrosterone, WADA-accredited LC-MS/MS – LONGEST detection window among AAS).",
       "quality": {
         "pure": [
           "Organon Deca-Durabolin 50 mg/ml pale-yellow oil ampoule (EU Rx, classic since 1962)",
           "UGL Nandrolone Decanoate 200-300 mg/ml pale-yellow oil vial, HPLC-tested source mandatory"
         ],
         "caution": [
-          "Long-term HPTA suppression after 12-16 weeks — recovery can take 6-12 months",
+          "Long-term HPTA suppression after 12-16 weeks – recovery can take 6-12 months",
           "Prolactin elevation due to progestogenic receptor affinity (cabergoline standby)",
           "'Deca-dick' libido loss + ED common (de Souza 2011)",
-          "Long detection window (12-18 months) — avoid YEARS before competitive sport testing"
+          "Long detection window (12-18 months) – avoid YEARS before competitive sport testing"
         ],
         "avoid": [
           "Planned fatherhood on near time horizon (HPTA recovery 6-12 months after Deca)",
@@ -249,13 +249,13 @@ export default {
       "quality": {
         "pure": [
           "UGL NPP 100 mg/ml pale-yellow oil vial (HPLC-tested source mandatory)",
-          "Some EU pharmacy Durabolin (regional Rx) 25-50 mg/ml — rare"
+          "Some EU pharmacy Durabolin (regional Rx) 25-50 mg/ml – rare"
         ],
         "caution": [
           "EOD or 2× weekly IM injection required (short half-life)",
           "Prolactin elevation at Deca level (cabergoline standby)",
           "PIP stronger on NPP than Deca (short-ester carrier denser)",
-          "Detection window long (10-14 months) — avoid years before competitive sport"
+          "Detection window long (10-14 months) – avoid years before competitive sport"
         ],
         "avoid": [
           "Planned fatherhood on near time horizon (HPTA recovery 4-8 months after NPP)",

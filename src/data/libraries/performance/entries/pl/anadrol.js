@@ -29,7 +29,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Oksymetholon, doustny AAS pochodny 2-hydroksymetyleno-17α-metylo-DHT. Zatwierdzony przez FDA (Anadrol-50) na aplastyczną i hipoplastyczną niedokrwistość. Klasyczny \"mokry\" steryd bulkingowy; wysoka hepatotoksyczność i paradoksalne estrogenopodobne efekty uboczne.",
-  "description": "Anadrol (Oksymetholon) to doustny AAS pochodny 2-hydroksymetyleno-17α-metylo-DHT, pierwotnie zsyntetyzowany przez Syntex w 1960 r. Wskazania kliniczne zatwierdzone przez FDA: niedokrwistość aplastyczna, wrodzone i nabyte niedokrwistości z niedoborem krwinek czerwonych (Anadrol-50, obecnie Alaven/Meda Pharmaceuticals). Stosunek anaboliczno-androgenny 320:45 (wysoki anaboliczny, umiarkowany androgenny). Wysoka hepatotoksyczność ze względu na grupę 17α-metylową (jedna z najwyższych wśród AAS). Grupa 2-hydroksymetylenowa NIE jest substratem CYP19 (nie aromatyzuje), ALE wykazuje bezpośrednią aktywność agonisty ER — paradoksalne \"estrogenopodobne\" efekty uboczne (retencja wody, ryzyko ginekomastii) pojawiają się nawet bez aromatyzacji. W kontekście kulturystycznym, \"mokry\" steryd bulkingowy: 10-15 kg przyrostu masy w 4-6 tygodni (znacząco woda + glikogen) udokumentowane. Zakazany przez WADA cały rok.",
+  "description": "Anadrol (Oksymetholon) to doustny AAS pochodny 2-hydroksymetyleno-17α-metylo-DHT, pierwotnie zsyntetyzowany przez Syntex w 1960 r. Wskazania kliniczne zatwierdzone przez FDA: niedokrwistość aplastyczna, wrodzone i nabyte niedokrwistości z niedoborem krwinek czerwonych (Anadrol-50, obecnie Alaven/Meda Pharmaceuticals). Stosunek anaboliczno-androgenny 320:45 (wysoki anaboliczny, umiarkowany androgenny). Wysoka hepatotoksyczność ze względu na grupę 17α-metylową (jedna z najwyższych wśród AAS). Grupa 2-hydroksymetylenowa NIE jest substratem CYP19 (nie aromatyzuje), ALE wykazuje bezpośrednią aktywność agonisty ER – paradoksalne \"estrogenopodobne\" efekty uboczne (retencja wody, ryzyko ginekomastii) pojawiają się nawet bez aromatyzacji. W kontekście kulturystycznym, \"mokry\" steryd bulkingowy: 10-15 kg przyrostu masy w 4-6 tygodni (znacząco woda + glikogen) udokumentowane. Zakazany przez WADA cały rok.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -52,7 +52,7 @@ export default {
       "value": "FDA Rx (Anadrol-50), Schedule III, zakaz WADA"
     }
   ],
-  "mechanism": "Agonista AR 2-hydroksymetyleno-17α-metylo-DHT pochodny. Grupa 17α-metylowa zapewnia biodostępność doustną (oporna na first-pass wątrobowy, ~80% biodostępność). Grupa 2-hydroksymetylenowa zapewnia KILKA niezwykłych efektów: (1) NIE substrat CYP19 → NIE aromatyzuje; (2) ALE bezpośrednia aktywność agonisty ER → paradoksalne estrogenopodobne efekty uboczne (retencja wody, ryzyko ginekomastii) pojawiają się mimo leczenia antyaromatazowego; (3) wysoki efekt erytropoetynopodobny (stąd wskazanie niedokrwistości) — liczba krwinek czerwonych i hemoglobina rosną szybko. Ze względu na aktywność ER, SERM (Nolvadex/Raloksyfen) jest skuteczny w zapobieganiu ginekomastii, AI (Anastrozol) NIE jest skuteczny.",
+  "mechanism": "Agonista AR 2-hydroksymetyleno-17α-metylo-DHT pochodny. Grupa 17α-metylowa zapewnia biodostępność doustną (oporna na first-pass wątrobowy, ~80% biodostępność). Grupa 2-hydroksymetylenowa zapewnia KILKA niezwykłych efektów: (1) NIE substrat CYP19 → NIE aromatyzuje; (2) ALE bezpośrednia aktywność agonisty ER → paradoksalne estrogenopodobne efekty uboczne (retencja wody, ryzyko ginekomastii) pojawiają się mimo leczenia antyaromatazowego; (3) wysoki efekt erytropoetynopodobny (stąd wskazanie niedokrwistości) – liczba krwinek czerwonych i hemoglobina rosną szybko. Ze względu na aktywność ER, SERM (Nolvadex/Raloksyfen) jest skuteczny w zapobieganiu ginekomastii, AI (Anastrozol) NIE jest skuteczny.",
   "legalStatus": "USA: zatwierdzony przez FDA Rx Anadrol-50 (Alaven/Meda), Schedule III kontrolowana substancja (DEA). UE: rzadko import na receptę, nie zarejestrowany na rynkach HU/PL. HU/PL: nielegalny bez recepty. Zakaz WADA cały rok (S1.1.a).",
   "onsetTime": "1-2 h (doustnie)",
   "halfLife": "8-9 h (doustnie, związek macierzysty)",
@@ -63,8 +63,8 @@ export default {
     "tudca",
     "warfarin"
   ],
-  "aromatization": "Nie substrat CYP19 — ALE ze względu na bezpośrednią aktywność agonisty ER, estrogenopodobne efekty uboczne (retencja wody, ginekomastia) pojawiają się mimo leczenia antyaromatazowego. Jedyna ochrona: SERM (Nolvadex 20 mg/dzień lub Raloksyfen 60 mg/dzień) (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Bardzo wysoka — grupa 17α-metylowa ekstremalny stres first-pass wątrobowy, ALT/AST 5-10x wzrost częsty, żółtaczka cholestatyczna case-reported. Wśród AAS o najwyższej hepatotoksyczności wraz z Dianabolem i Superdrolem (Hartgens-Kuipers 2004 PMID 15233599, Pavlatos 2001 PMID 11329221)",
+  "aromatization": "Nie substrat CYP19 – ALE ze względu na bezpośrednią aktywność agonisty ER, estrogenopodobne efekty uboczne (retencja wody, ginekomastia) pojawiają się mimo leczenia antyaromatazowego. Jedyna ochrona: SERM (Nolvadex 20 mg/dzień lub Raloksyfen 60 mg/dzień) (Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Bardzo wysoka – grupa 17α-metylowa ekstremalny stres first-pass wątrobowy, ALT/AST 5-10x wzrost częsty, żółtaczka cholestatyczna case-reported. Wśród AAS o najwyższej hepatotoksyczności wraz z Dianabolem i Superdrolem (Hartgens-Kuipers 2004 PMID 15233599, Pavlatos 2001 PMID 11329221)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:45",
   "bindingAffinity": "Wysokie powinowactwo do AR + atypowa aktywność ER (Pope-Kanayama 2014 przegląd designer AAS).",
@@ -76,9 +76,9 @@ export default {
     "Komfort stawów: retencja wody zapewnia mechaniczny efekt amortyzatora, mniej bólu treningowego"
   ],
   "quickStart": [
-    "EKSTREMALNA HEPATOTOKSYCZNOŚĆ — maksimum 4 tygodnie ciągłego cyklu, NIGDY dłużej",
+    "EKSTREMALNA HEPATOTOKSYCZNOŚĆ – maksimum 4 tygodnie ciągłego cyklu, NIGDY dłużej",
     "TUDCA 1000-1500 mg/dzień + NAC 1800 mg/dzień OBOWIĄZKOWE przez cały cykl",
-    "SERM (Nolvadex 20 mg/dzień) dla zapobiegania ginekomastii — AI NIE skuteczny ze względu na atypową aktywność ER",
+    "SERM (Nolvadex 20 mg/dzień) dla zapobiegania ginekomastii – AI NIE skuteczny ze względu na atypową aktywność ER",
     "Próby ALT/AST co 2-3 tygodnie, >3x norma górna = NATYCHMIASTOWE przerwanie",
     "PCT (Clomid + Nolvadex 4-6 tygodni) obowiązkowe dla recovery HPTA"
   ],
@@ -89,7 +89,7 @@ export default {
     },
     {
       "label": "Tydzień 3-4",
-      "body": "Maksymalny efekt bulkingowy. 8-12 kg całkowitego przyrostu. ALT/AST 3-5x norma górna często manifestuje się tutaj — OBOWIĄZKOWE przerwanie cyklu na koniec tygodnia 4."
+      "body": "Maksymalny efekt bulkingowy. 8-12 kg całkowitego przyrostu. ALT/AST 3-5x norma górna często manifestuje się tutaj – OBOWIĄZKOWE przerwanie cyklu na koniec tygodnia 4."
     },
     {
       "label": "Post-cykl",
@@ -99,7 +99,7 @@ export default {
   "quality": {
     "pure": [
       "Anadrol-50 (Alaven/Meda Pharmaceuticals) oryginalna tabletka Rx, 50 mg",
-      "Tabletka UGL: źródło testowane HPLC obowiązkowe — Anadrol często fałszowany (zastępowanie Dianabolem lub Methylstenbolonem)"
+      "Tabletka UGL: źródło testowane HPLC obowiązkowe – Anadrol często fałszowany (zastępowanie Dianabolem lub Methylstenbolonem)"
     ],
     "caution": [
       "Hepatotoksyczność (wzrost ALT/AST 5-10x najczęstszy ostry efekt)",
@@ -114,7 +114,7 @@ export default {
       "Ryzyko sercowo-naczyniowe (rodzinna historia, wysokie LDL, nadciśnienie) bezwzględne przeciwwskazanie",
       "Stosowanie przez kobiety (skrajnie szybka wirylizacja ze względu na wysoką aktywność androgenną)",
       "Planowane ojcostwo (supresja HPTA wymaga miesięcy-lat na odzyskanie)",
-      "Czerwienica (paradoksalnie — własna aktywność ER może powodować czerwienicę)"
+      "Czerwienica (paradoksalnie – własna aktywność ER może powodować czerwienicę)"
     ]
   },
   "interactions": [
@@ -165,7 +165,7 @@ export default {
   "faq": [
     {
       "q": "Dlaczego powoduje retencję wody, skoro nie aromatyzuje?",
-      "a": "Grupa 2-hydroksymetylenowa Oksymetholonu zapewnia bezpośrednią aktywność agonisty ER — całkowicie omija enzymy CYP19 i aktywuje receptory estrogenowe bezpośrednio. Stąd antyaromatazowy (Anastrozol, Letrozol) jest TUTAJ BEZUŻYTECZNY; tylko SERM (Nolvadex, Raloksyfen) blokuje receptory ER bezpośrednio. To jest paradoksalny efekt specyficzny dla Anadrolu."
+      "a": "Grupa 2-hydroksymetylenowa Oksymetholonu zapewnia bezpośrednią aktywność agonisty ER – całkowicie omija enzymy CYP19 i aktywuje receptory estrogenowe bezpośrednio. Stąd antyaromatazowy (Anastrozol, Letrozol) jest TUTAJ BEZUŻYTECZNY; tylko SERM (Nolvadex, Raloksyfen) blokuje receptory ER bezpośrednio. To jest paradoksalny efekt specyficzny dla Anadrolu."
     },
     {
       "q": "Czy naprawdę można przybrać 10-15 kg w 4 tygodnie?",
@@ -173,10 +173,10 @@ export default {
     },
     {
       "q": "Dlaczego FDA zatwierdziła, skoro tak toksyczny?",
-      "a": "Zatwierdzone wskazanie FDA (niedokrwistość aplastyczna) jest ratujące życie — stosunek korzyść-ryzyko jest korzystny u tych pacjentów. Off-label użycie w kulturystyce NIE jest częścią zatwierdzenia FDA; u zdrowych młodych osób 50-100 mg/dzień przez 4 tygodnie może powodować zagrażającą życiu hepatotoksyczność (Pavlatos 2001 PMID 11329221 raporty DILI)."
+      "a": "Zatwierdzone wskazanie FDA (niedokrwistość aplastyczna) jest ratujące życie – stosunek korzyść-ryzyko jest korzystny u tych pacjentów. Off-label użycie w kulturystyce NIE jest częścią zatwierdzenia FDA; u zdrowych młodych osób 50-100 mg/dzień przez 4 tygodnie może powodować zagrażającą życiu hepatotoksyczność (Pavlatos 2001 PMID 11329221 raporty DILI)."
     },
     {
-      "q": "Anadrol vs Dianabol — który jest gorszy?",
+      "q": "Anadrol vs Dianabol – który jest gorszy?",
       "a": "Hepatotoksyczność z grubsza równa (oba top-2 wśród AAS 17α-alkilowanych). Profil aromatyzacji: Dianabol klasyczny CYP19-aromatyzujący (AI skuteczny), Anadrol bezpośredni agonista ER (tylko SERM działa). W efekcie bulkingowym Anadrol szybszy i bardziej dramatyczny, ale Dianabol zachowuje więcej mięśni po zakończeniu cyklu. Żaden nie jest zalecany."
     },
     {
@@ -221,11 +221,11 @@ export default {
       "purpose": "Weryfikacja recovery WĄTROBOWEGO bezwzględnie krytyczna. Jeśli ALT/AST nie normalizuje się w 12 tygodni, konsultacja hepatologa OBOWIĄZKOWA. Recovery HPTA zazwyczaj 8-16 tygodni."
     },
     "cruise": {
-      "label": "Na cruise (cruise Anadrolem NIE ISTNIEJE — ściśle cykliczny)",
-      "timing": "Anadrol na cruise ZABRONIONY — obowiązkowe przerwanie po 4 tygodniach. Jeśli ktoś próbuje cruise, niewydolność wątrobowa w krótkim czasie.",
-      "markers": "N/A — cruise Anadrolem nie standardowy, nie zalecany w żadnym protokole.",
+      "label": "Na cruise (cruise Anadrolem NIE ISTNIEJE – ściśle cykliczny)",
+      "timing": "Anadrol na cruise ZABRONIONY – obowiązkowe przerwanie po 4 tygodniach. Jeśli ktoś próbuje cruise, niewydolność wątrobowa w krótkim czasie.",
+      "markers": "N/A – cruise Anadrolem nie standardowy, nie zalecany w żadnym protokole.",
       "purpose": "Anadrol jest używany wyłącznie w krótkim (maks 4 tygodnie) cyklu bulkingowym. Ciągłe stosowanie powoduje fatalne konsekwencje wątrobowe."
     }
   },
-  "anecdote": "Anadrol ma reputację 'mokrego', ale raporty anegdotyczne opisują coś więcej niż tylko przyrost wody — użytkownicy często zauważają wyraźnie gęsty, hiper-pełny wygląd mięśniowy, niemal jakby mięśnie były przepełnione. Wzrosty siły są zwykle nagłe i nieproporcjonalne, często pojawiają się szybciej niż oczekiwano, z ekstremalnymi pompami. Niektórzy użytkownicy doświadczają również zwiększenia apetytu, co wzmacnia fazy wzrostu. Kompromisy są poważne: Anadrol jest notorycznie znany z podnoszenia ciśnienia krwi, zagęszczania hematokrytu, obrzęków i zaburzeń lipidowych. Przesunięcia płynów mogą powodować pompy w plecach, bóle głowy i odczucia ciśnieniowe. Część szybkiego przyrostu masy to przejściowa woda, ale część reprezentuje prawdziwe anaboliczne przyspieszenie. Jako 17α-alkilowany doustny, stres wątrobowy jest nietrywialny i nie powinien być lekceważony. Pomimo swojej staroszkolnej reputacji, Anadrol jest mechanistycznie złożony z powodu nietypowego zachowania estrogenopodobnego i atypowego profilu sygnalizacyjnego."
+  "anecdote": "Anadrol ma reputację 'mokrego', ale raporty anegdotyczne opisują coś więcej niż tylko przyrost wody – użytkownicy często zauważają wyraźnie gęsty, hiper-pełny wygląd mięśniowy, niemal jakby mięśnie były przepełnione. Wzrosty siły są zwykle nagłe i nieproporcjonalne, często pojawiają się szybciej niż oczekiwano, z ekstremalnymi pompami. Niektórzy użytkownicy doświadczają również zwiększenia apetytu, co wzmacnia fazy wzrostu. Kompromisy są poważne: Anadrol jest notorycznie znany z podnoszenia ciśnienia krwi, zagęszczania hematokrytu, obrzęków i zaburzeń lipidowych. Przesunięcia płynów mogą powodować pompy w plecach, bóle głowy i odczucia ciśnieniowe. Część szybkiego przyrostu masy to przejściowa woda, ale część reprezentuje prawdziwe anaboliczne przyspieszenie. Jako 17α-alkilowany doustny, stres wątrobowy jest nietrywialny i nie powinien być lekceważony. Pomimo swojej staroszkolnej reputacji, Anadrol jest mechanistycznie złożony z powodu nietypowego zachowania estrogenopodobnego i atypowego profilu sygnalizacyjnego."
 }

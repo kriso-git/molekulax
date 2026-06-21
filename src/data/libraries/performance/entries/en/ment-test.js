@@ -25,12 +25,12 @@ export default {
     { "hu": "Hormonérzékeny daganat (prosztatarák, emlőrák) vagy diagnosztizálatlan prosztata-megnagyobbodás: az androgén stimuláció elősegítheti a hormonfüggő daganatok és a BPH progresszióját.", "en": "Hormone-sensitive cancer (prostate, breast) or undiagnosed prostate enlargement: androgenic stimulation can promote progression of hormone-dependent tumors and BPH.", "pl": "Nowotwór wrażliwy na hormony (prostaty, piersi) lub niezdiagnozowane powiększenie prostaty: stymulacja androgenna może sprzyjać progresji guzów hormonozależnych i BPH." },
     { "hu": "Kamaszkor / be nem fejeződött csontnövekedés, valamint első AAS-ciklusosok: a rendkívüli potencia és a designer-mixture ismeretlen, nem standardizált MENT/Test aránya miatt különösen kockázatos.", "en": "Adolescence / incomplete bone growth, and first-time AAS users: the extreme potency and the unknown, non-standardized MENT/Test ratio of the designer mixture make it especially risky.", "pl": "Okres dojrzewania / niezakończony wzrost kości oraz osoby po raz pierwszy używające AAS: skrajna siła działania i nieznany, niestandaryzowany stosunek MENT/Test designerskiej mieszanki czynią go szczególnie ryzykownym." }
   ],
-  "name": "MENT (Trestolone) — synthetic androgen frame",
+  "name": "MENT (Trestolone) – synthetic androgen frame",
   "image": "/performance/oil-vial-yellow.png",
   "accentColor": "#1D9E75",
   "tagColor": "rgba(29,158,117,0.18)",
-  "shortDesc": "Trestolone (7α-methyl-19-nortestosterone, MENT) Population Council 1990s male contraceptive candidate. Synthetic androgen — ~8-10x AR affinity vs testosterone, NOT 17α-alkylated → low hepatotoxicity. Two variants: Acetate (short) and Enanthate (slow). Cross-framed: 19-Nor analog separate entry.",
-  "description": "MENT (Trestolone, 7α-methyl-19-nortestosterone) is a synthetic androgen steroid developed by the Population Council (NYC) in the late 1990s-early 2000s as a male contraceptive candidate (Anderson 1999 PMID 10522995 clinical trial). Anabolic/androgenic activity is ~8-10x testosterone in vitro AR-binding assay (Sundaram 1993 PMID 8489761) — one of the strongest synthetic androgens. The 7α-methyl group inhibits 5α-reductase substrate binding (does NOT convert to DHT → lower scalp-DHT and prostate androgenic activity than testosterone), while the 19-nor structure also shows PROGESTOGENIC ACTIVITY (cross-framed entry character: here in the synthetic androgen frame, separate entry in the 19-Nor framework). Aromatizes via CYP19 to 7α-methylestradiol, which has lower ER affinity than plain E2 → estrogen effect weaker than on Test. NOT 17α-alkylated → low hepatotoxicity. In clinical trials (Population Council 1999-2005) it was tested as a 4-week implant + 8 mg/day sublingual formulation; male contraceptive development was STOPPED after Phase III for financial reasons. In bodybuilding context UGL market offers Acetate ester (Trestolone Acetate, short, ~8h half-life) and Enanthate ester (Trestolone Enanthate, slow, ~5-7 day half-life). WADA-banned year-round.",
+  "shortDesc": "Trestolone (7α-methyl-19-nortestosterone, MENT) Population Council 1990s male contraceptive candidate. Synthetic androgen – ~8-10x AR affinity vs testosterone, NOT 17α-alkylated → low hepatotoxicity. Two variants: Acetate (short) and Enanthate (slow). Cross-framed: 19-Nor analog separate entry.",
+  "description": "MENT (Trestolone, 7α-methyl-19-nortestosterone) is a synthetic androgen steroid developed by the Population Council (NYC) in the late 1990s-early 2000s as a male contraceptive candidate (Anderson 1999 PMID 10522995 clinical trial). Anabolic/androgenic activity is ~8-10x testosterone in vitro AR-binding assay (Sundaram 1993 PMID 8489761) – one of the strongest synthetic androgens. The 7α-methyl group inhibits 5α-reductase substrate binding (does NOT convert to DHT → lower scalp-DHT and prostate androgenic activity than testosterone), while the 19-nor structure also shows PROGESTOGENIC ACTIVITY (cross-framed entry character: here in the synthetic androgen frame, separate entry in the 19-Nor framework). Aromatizes via CYP19 to 7α-methylestradiol, which has lower ER affinity than plain E2 → estrogen effect weaker than on Test. NOT 17α-alkylated → low hepatotoxicity. In clinical trials (Population Council 1999-2005) it was tested as a 4-week implant + 8 mg/day sublingual formulation; male contraceptive development was STOPPED after Phase III for financial reasons. In bodybuilding context UGL market offers Acetate ester (Trestolone Acetate, short, ~8h half-life) and Enanthate ester (Trestolone Enanthate, slow, ~5-7 day half-life). WADA-banned year-round.",
   "keyInfo": [
     {"label": "Mechanism", "value": "AR agonist (8-10x Test) + progesterone receptor, 7α-methyl-19-nor-T, aromatizes weakly"},
     {"label": "Anabolic:Androgenic", "value": "~2300:650 (extrapolated in vitro AR-binding)"},
@@ -38,14 +38,14 @@ export default {
     {"label": "Onset", "value": "12-24 h (Ac IM), 48-72 h (Enan IM)"},
     {"label": "Legal status", "value": "Never an Rx, UGL only. Schedule III analog (USA), WADA-banned."}
   ],
-  "mechanism": "7α-methyl-19-nortestosterone AR agonist. The 7α-methyl group provides THREE critical structural modifications: (1) inhibits 5α-reductase substrate binding → does NOT convert to DHT (lower scalp-DHT, prostate androgenic activity); (2) increases AR-binding affinity (~8-10x Test, Sundaram 1993 PMID 8489761); (3) stabilizes the molecule against 17β-HSD-mediated oxidative breakdown → longer plasma half-life. The 19-nor structural character provides PROGESTOGENIC ACTIVITY (moderate PR affinity), useful for the male contraceptive purpose (negative feedback on HPG axis) BUT in bodybuilding context creates prolactin monitoring need. Aromatizes via CYP19 to 7α-methylestradiol (about 50% of Test-level E2 conversion) — but the metabolite ER affinity is lower than plain E2 → estrogen effect clinically weaker.",
+  "mechanism": "7α-methyl-19-nortestosterone AR agonist. The 7α-methyl group provides THREE critical structural modifications: (1) inhibits 5α-reductase substrate binding → does NOT convert to DHT (lower scalp-DHT, prostate androgenic activity); (2) increases AR-binding affinity (~8-10x Test, Sundaram 1993 PMID 8489761); (3) stabilizes the molecule against 17β-HSD-mediated oxidative breakdown → longer plasma half-life. The 19-nor structural character provides PROGESTOGENIC ACTIVITY (moderate PR affinity), useful for the male contraceptive purpose (negative feedback on HPG axis) BUT in bodybuilding context creates prolactin monitoring need. Aromatizes via CYP19 to 7α-methylestradiol (about 50% of Test-level E2 conversion) – but the metabolite ER affinity is lower than plain E2 → estrogen effect clinically weaker.",
   "legalStatus": "Never an Rx (Population Council male contraceptive development stalled for financial reasons). USA: Schedule III analog (DEA, designer AAS classification). EU/HU/PL: controlled AAS analog, illegal without prescription. WADA-banned year-round (S1.1.a).",
   "onsetTime": "12-24 h (Ac IM), 48-72 h (Enan IM)",
   "halfLife": "~8 h (Ac), 5-7 d (Enan)",
   "halfLifeActive": "~8 h free Trestolone (after Ac), depot ~24 h (after Enan)",
   "interactionsWith": ["cabergoline", "testosterone", "anastrozole", "warfarin"],
-  "aromatization": "Yes — CYP19 substrate, metabolite 7α-methylestradiol (lower ER affinity than plain E2); clinically E2 elevation moderate-low (Sundaram 1993 PMID 8489761, Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; IM bypasses first-pass. ALT/AST <2x normal for MENT-only cycle (Hartgens-Kuipers 2004 PMID 15248788)",
+  "aromatization": "Yes – CYP19 substrate, metabolite 7α-methylestradiol (lower ER affinity than plain E2); clinically E2 elevation moderate-low (Sundaram 1993 PMID 8489761, Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Low – parent steroid, NOT 17α-alkylated; IM bypasses first-pass. ALT/AST <2x normal for MENT-only cycle (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "~2300:650 (extrapolated from in vitro AR-binding affinity, NOT classical rat-ventral-prostate assay)",
   "bindingAffinity": "Extremely high AR affinity (~8-10x testosterone in vitro, Sundaram 1993 PMID 8489761) + moderate PR activity.",
@@ -58,7 +58,7 @@ export default {
     "Clinical significance: male contraceptive candidate (Population Council reached Phase III trial)"
   ],
   "quickStart": [
-    "EXTREMELY POTENT — doses are significantly lower than on Test (50-100 mg/week Trestolone equivalent to 500-1000 mg Test)",
+    "EXTREMELY POTENT – doses are significantly lower than on Test (50-100 mg/week Trestolone equivalent to 500-1000 mg Test)",
     "PR activity requires prolactin monitor + cabergoline standby",
     "Aromatization weaker than on Test, BUT NOT zero → AI if E2 demands",
     "PCT (Clomid + Nolvadex 4-6 weeks) mandatory",
@@ -73,7 +73,7 @@ export default {
     "pure": [
       "UGL Trestolone Acetate 50-100 mg/ml oil vial, sterile filtered (the most common UGL format)",
       "UGL Trestolone Enanthate 100-200 mg/ml oil vial (less available than Ac)",
-      "HPLC-tested source MANDATORY — MENT often counterfeited or under-concentrated (high-cost raw material)"
+      "HPLC-tested source MANDATORY – MENT often counterfeited or under-concentrated (high-cost raw material)"
     ],
     "caution": [
       "Prolactin elevation common (PR activity) → gyno risk (paradoxical, since aromatization is mild)",
@@ -103,10 +103,10 @@ export default {
     {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15248788"}
   ],
   "faq": [
-    {"q": "What is a cross-framed entry?", "a": "MENT (Trestolone, 7α-methyl-19-nortestosterone) belongs structurally to TWO chemical classes SIMULTANEOUSLY: (1) synthetic androgen — the 7α-methyl substitution gives a unique non-DHT-convertible profile; (2) 19-Nor derivative — removal of the 19-carbon methyl group gives progestogenic activity. The library structure per the HTML reference lists it under both class columns with TWO SEPARATE entries: 'MENT-test' (this, synthetic androgen frame, Test column) and 'MENT-19nor' (separate entry in the 19-Nor column, coming in sub-task 4). The two entries' content overlaps ~80%, but the 'AR-binding affinity vs progestogenic activity' framing differs."},
-    {"q": "Why was male contraceptive development stopped?", "a": "Population Council ran Phase II-III clinical trials between 1999-2005 with the MENT sublingual implant 4-week formulation (Anderson 1999 PMID 10522995). Results were promising (90%+ spermatogenesis suppression, good tolerability), BUT in 2005 the Population Council HALTED Phase III for financial reasons — given the dominance of female contraceptives in the market, commercial-failure risk was too high for investors. Today MENT male contraceptive development is largely dead, except for some academic follow-up studies."},
+    {"q": "What is a cross-framed entry?", "a": "MENT (Trestolone, 7α-methyl-19-nortestosterone) belongs structurally to TWO chemical classes SIMULTANEOUSLY: (1) synthetic androgen – the 7α-methyl substitution gives a unique non-DHT-convertible profile; (2) 19-Nor derivative – removal of the 19-carbon methyl group gives progestogenic activity. The library structure per the HTML reference lists it under both class columns with TWO SEPARATE entries: 'MENT-test' (this, synthetic androgen frame, Test column) and 'MENT-19nor' (separate entry in the 19-Nor column, coming in sub-task 4). The two entries' content overlaps ~80%, but the 'AR-binding affinity vs progestogenic activity' framing differs."},
+    {"q": "Why was male contraceptive development stopped?", "a": "Population Council ran Phase II-III clinical trials between 1999-2005 with the MENT sublingual implant 4-week formulation (Anderson 1999 PMID 10522995). Results were promising (90%+ spermatogenesis suppression, good tolerability), BUT in 2005 the Population Council HALTED Phase III for financial reasons – given the dominance of female contraceptives in the market, commercial-failure risk was too high for investors. Today MENT male contraceptive development is largely dead, except for some academic follow-up studies."},
     {"q": "MENT vs Testosterone direct comparison?", "a": "In AR affinity MENT is ~8-10x stronger (Sundaram 1993 PMID 8489761), so 100 mg/week MENT equivalent to about 800-1000 mg/week Test. Does NOT 5α-reduce → lower scalp-DHT and prostate AR activity (benefit for hair-loss and BPH prevention). Aromatization milder (7α-methylestradiol weaker ER-affinity metabolite). BUT: PR activity (Test does not activate PR) → prolactin monitor + cabergoline need. Net-positive for experienced bodybuilding users, but NOT a first cycle."},
-    {"q": "Acetate vs Enanthate variant — which to choose?", "a": "Ac (Acetate): short (~8 h half-life), EOD or daily IM injection, fast onset (12-24 h), PIP common. More common in bodybuilding context (better control, easier to stop). Enan (Enanthate): long (~5-7 day half-life), weekly 1-2x IM, slower onset (48-72 h, steady-state 3-4 weeks), less PIP. Ac recommended for new MENT users (better dose control + fast discontinuation if side effects appear); Enan more convenient for experienced."},
+    {"q": "Acetate vs Enanthate variant – which to choose?", "a": "Ac (Acetate): short (~8 h half-life), EOD or daily IM injection, fast onset (12-24 h), PIP common. More common in bodybuilding context (better control, easier to stop). Enan (Enanthate): long (~5-7 day half-life), weekly 1-2x IM, slower onset (48-72 h, steady-state 3-4 weeks), less PIP. Ac recommended for new MENT users (better dose control + fast discontinuation if side effects appear); Enan more convenient for experienced."},
     {"q": "Modern WADA detectability?", "a": "MENT-Ac urinary detection 2-3 weeks, MENT-Enan 6-8 weeks (WADA-accredited LC-MS/MS). The 7α-methyl-19-nor-androstene metabolite family has been on the WADA target list since the late 2010s; detectable in modern athlete tests. Some used it as a pre-2010 designer-steroid zone, but today there is clear WADA prohibition + LC-MS/MS detection."}
   ],
   "related": ["testosterone-info", "nandrolone-info", "trenbolone-info", "anavar-info"],
@@ -152,9 +152,9 @@ export default {
         "pl": "MENT + Test Acetate mieszanka (szybki ester)"
       },
       "routeNote": {
-        "hu": "Designer kombinált compound — Trestolone (MENT, 7α-metil-19-nortestosterone) + Testosterone Acetate ester mixture, jellemzően 50/50 vagy 60/40 arányban. Cél: a MENT magas anabolic erősség + a Test androgén-baseline egyetlen olajban. Rövid Ac-ester ⇒ EOD vagy napi IM-injekció. Prolaktin-monitor a 19-Nor MENT-komponens miatt KÖTELEZŐ. Hamisítás-rizikó az UGL-piacon nagyon magas (nem tudod mit kapsz konkrétan).",
-        "en": "Designer combined compound — Trestolone (MENT, 7α-methyl-19-nortestosterone) + Testosterone Acetate ester mixture, typically 50/50 or 60/40 ratio. Goal: high MENT anabolic potency + Test androgen baseline in a single oil. Short Ac ester ⇒ EOD or daily IM injection. Prolactin monitoring MANDATORY due to 19-Nor MENT component. Counterfeit risk on UGL market very high (you don't know what's actually inside).",
-        "pl": "Designerski połączony compound — Trestolon (MENT, 7α-metylo-19-nortestosteron) + Testosteron Acetate mieszanka estrów, zazwyczaj proporcja 50/50 lub 60/40. Cel: wysoka siła anaboliczna MENT + baseline androgenny Test w jednym oleju. Krótki ester Ac ⇒ iniekcja IM EOD lub codziennie. Monitor prolaktyny OBOWIĄZKOWY z powodu komponentu MENT 19-Nor. Ryzyko podróbek na rynku UGL bardzo wysokie (nie wiesz co dokładnie dostajesz)."
+        "hu": "Designer kombinált compound – Trestolone (MENT, 7α-metil-19-nortestosterone) + Testosterone Acetate ester mixture, jellemzően 50/50 vagy 60/40 arányban. Cél: a MENT magas anabolic erősség + a Test androgén-baseline egyetlen olajban. Rövid Ac-ester ⇒ EOD vagy napi IM-injekció. Prolaktin-monitor a 19-Nor MENT-komponens miatt KÖTELEZŐ. Hamisítás-rizikó az UGL-piacon nagyon magas (nem tudod mit kapsz konkrétan).",
+        "en": "Designer combined compound – Trestolone (MENT, 7α-methyl-19-nortestosterone) + Testosterone Acetate ester mixture, typically 50/50 or 60/40 ratio. Goal: high MENT anabolic potency + Test androgen baseline in a single oil. Short Ac ester ⇒ EOD or daily IM injection. Prolactin monitoring MANDATORY due to 19-Nor MENT component. Counterfeit risk on UGL market very high (you don't know what's actually inside).",
+        "pl": "Designerski połączony compound – Trestolon (MENT, 7α-metylo-19-nortestosteron) + Testosteron Acetate mieszanka estrów, zazwyczaj proporcja 50/50 lub 60/40. Cel: wysoka siła anaboliczna MENT + baseline androgenny Test w jednym oleju. Krótki ester Ac ⇒ iniekcja IM EOD lub codziennie. Monitor prolaktyny OBOWIĄZKOWY z powodu komponentu MENT 19-Nor. Ryzyko podróbek na rynku UGL bardzo wysokie (nie wiesz co dokładnie dostajesz)."
       },
       "image": "/performance/oil-vial-yellow.png",
       "halfLife": "~8 h (parent MENT + Test after Ac)",
@@ -195,20 +195,20 @@ export default {
       "quality": {
         "pure": [
           "Clear pale-yellow oil, 10ml vial, 75-150 mg/ml total UGL concentration",
-          "HPLC-tested source ABSOLUTELY MANDATORY — two active components make verification harder than pure MENT-Ac"
+          "HPLC-tested source ABSOLUTELY MANDATORY – two active components make verification harder than pure MENT-Ac"
         ],
         "caution": [
           "EOD or daily IM injection required (both components have short half-life)",
           "PIP common (short Ac ester carrier)",
           "Prolactin monitor MANDATORY (19-Nor MENT component)",
           "Aromatization from Test component (CYP19) ⇒ E2 monitor, AI may be required",
-          "MENT/Test ratio varies per mixture — not standardized"
+          "MENT/Test ratio varies per mixture – not standardized"
         ],
         "avoid": [
           "Prolactinoma or prolactin-sensitive state",
           "Planned fatherhood (19-Nor + Test combined HPTA suppression is more severe)",
           "First AAS cycle (designer mixture, unknown exact ratio)",
-          "Counterfeit risk — use only reliable HPLC-tested UGL"
+          "Counterfeit risk – use only reliable HPLC-tested UGL"
         ]
       },
       "interactions": [
@@ -270,20 +270,20 @@ export default {
       "quality": {
         "pure": [
           "Clear yellowish-gold oil, 10ml vial, 200-400 mg/ml total UGL concentration",
-          "HPLC-tested source ABSOLUTELY MANDATORY — two active components, mixture ratio not standardized"
+          "HPLC-tested source ABSOLUTELY MANDATORY – two active components, mixture ratio not standardized"
         ],
         "caution": [
           "1-2× weekly IM injection (more convenient than Ac mixture)",
           "PIP milder than Ac (longer ester carrier)",
-          "Steady-state 3-4 weeks — short cycle ineffective",
+          "Steady-state 3-4 weeks – short cycle ineffective",
           "Prolactin + E2 monitoring BOTH MANDATORY (both components)",
-          "Mixture ratio varies per UGL — you don't know the exact MENT/Test split"
+          "Mixture ratio varies per UGL – you don't know the exact MENT/Test split"
         ],
         "avoid": [
           "Short (4-6 week) cycle ineffective (steady-state not reached)",
           "Prolactinoma or prolactin-sensitive state",
           "Planned fatherhood (19-Nor + Test combined HPTA suppression is more severe)",
-          "Counterfeit risk — use only reliable HPLC-tested UGL"
+          "Counterfeit risk – use only reliable HPLC-tested UGL"
         ]
       },
       "interactions": [

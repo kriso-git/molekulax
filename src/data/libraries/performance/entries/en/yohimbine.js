@@ -57,8 +57,8 @@ export default {
     "tyramine-rich foods",
     "clonidine"
   ],
-  "aromatization": "Not applicable — indole alkaloid α2-antagonist, NOT a steroid; no CYP19 interaction",
-  "hepatotoxicity": "Low — anxiogenic and cardiovascular risk dominates (tachycardia, hypertension); rare hepatotoxicity only at overdose (NIH LiverTox 2024)",
+  "aromatization": "Not applicable – indole alkaloid α2-antagonist, NOT a steroid; no CYP19 interaction",
+  "hepatotoxicity": "Low – anxiogenic and cardiovascular risk dominates (tachycardia, hypertension); rare hepatotoxicity only at overdose (NIH LiverTox 2024)",
   "wadaStatus": null,
   "benefits": [
     "Mobilization of \"stubborn fat\" from α2-rich depots (Ostojic 2006 athlete study: 2.2% fat loss in 3 weeks)",
@@ -113,7 +113,7 @@ export default {
     "Ephedrine: combined sympathomimetic stress, cardio monitoring mandatory",
     "Insulin (postprandial): blocks Yohimbine fat mobilization effect",
     "PDE5 inhibitor (Viagra/Cialis): cardio stress amplifies",
-    "Clonidine (α2-agonist): complete effect antagonism plus intracranial hemorrhage risk in chronic clonidine users (Pham 2022 PMID 36115742 — single yohimbine dose triggered 198/93 BP plus basal ganglia hemorrhage). Absolute contraindication on chronic clonidine."
+    "Clonidine (α2-agonist): complete effect antagonism plus intracranial hemorrhage risk in chronic clonidine users (Pham 2022 PMID 36115742 – single yohimbine dose triggered 198/93 BP plus basal ganglia hemorrhage). Absolute contraindication on chronic clonidine."
   ],
   "studies": [
     {
@@ -168,7 +168,7 @@ export default {
     },
     {
       "q": "What is the risk with clonidine or MAOI?",
-      "a": "Clonidine is α2-agonist, yohimbine is α2-antagonist — direct pharmacological conflict. Pham 2022 (Cureus PMID 36115742) documented intracranial hemorrhage after a single yohimbine dose in a 39-year-old woman on chronic clonidine (198/93 BP, basal ganglia hemorrhage, severe neurologic sequelae). With MAOI or tyramine-rich meals (aged cheese, red wine, salami), hypertensive crisis risk arises via sympathomimetic NE accumulation. Both situations are absolute contraindications."
+      "a": "Clonidine is α2-agonist, yohimbine is α2-antagonist – direct pharmacological conflict. Pham 2022 (Cureus PMID 36115742) documented intracranial hemorrhage after a single yohimbine dose in a 39-year-old woman on chronic clonidine (198/93 BP, basal ganglia hemorrhage, severe neurologic sequelae). With MAOI or tyramine-rich meals (aged cheese, red wine, salami), hypertensive crisis risk arises via sympathomimetic NE accumulation. Both situations are absolute contraindications."
     }
   ],
   "related": [    "clenbuterol"

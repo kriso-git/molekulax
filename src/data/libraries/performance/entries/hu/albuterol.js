@@ -46,7 +46,7 @@ export default {
       "value": "USA: FDA Rx (Ventolin/ProAir). HU/EU: Rx (Ventolin). WADA: inhaláló <1600 μg engedett."
     }
   ],
-  "mechanism": "Szelektív β2-adrenoceptor agonista, légúti simaizmot ellazítja (bronchodilatáció). Intracelluláris kaszkád azonos a Clenbuterol-éval: β2 → Gs-protein → adenil-cikláz → cAMP → PKA → HSL foszforilálás → lipolízis. **KÜLÖNBSÉG a Clenbuterol-tól: SHORT receptor-occupancy** — az Albuterol gyors dissociation rate-je miatt nincs krónikus β2-down-regulation a szövetekben, ezért a kardiotoxikus akkumuláció elmarad, DE a tolerancia gyorsabban kialakul (1-2 hét). Anabolikus hatás vázizomban szerényebb, mert a rövidebb felezési idő miatt nem akkumulálódik.",
+  "mechanism": "Szelektív β2-adrenoceptor agonista, légúti simaizmot ellazítja (bronchodilatáció). Intracelluláris kaszkád azonos a Clenbuterol-éval: β2 → Gs-protein → adenil-cikláz → cAMP → PKA → HSL foszforilálás → lipolízis. **KÜLÖNBSÉG a Clenbuterol-tól: SHORT receptor-occupancy** – az Albuterol gyors dissociation rate-je miatt nincs krónikus β2-down-regulation a szövetekben, ezért a kardiotoxikus akkumuláció elmarad, DE a tolerancia gyorsabban kialakul (1-2 hét). Anabolikus hatás vázizomban szerényebb, mert a rövidebb felezési idő miatt nem akkumulálódik.",
   "legalStatus": "USA: FDA Rx (Ventolin, ProAir, Proventil). EU: Rx, Magyarországon gyógyszertári forgalom. WADA: inhalációs használat <1600 μg/24 óra megengedett, oral/intravénás tiltott.",
   "onsetTime": "5-15 min (inhaled), 15-30 min (oral)",
   "halfLife": "5-6 h (oral)",
@@ -56,8 +56,8 @@ export default {
     "MAOI",
     "tricyclic antidepressants"
   ],
-  "aromatization": "Nem releváns — β2-agonista, NEM szteroid; nincs CYP19 interakció",
-  "hepatotoxicity": "Alacsony — gyakorlatilag nincs hepatotoxicitás therapeutic dózisban; tremor és tachycardia a fő mellékhatás (FDA Proventil label)",
+  "aromatization": "Nem releváns – β2-agonista, NEM szteroid; nincs CYP19 interakció",
+  "hepatotoxicity": "Alacsony – gyakorlatilag nincs hepatotoxicitás therapeutic dózisban; tremor és tachycardia a fő mellékhatás (FDA Proventil label)",
   "wadaStatus": "monitored",
   "detectionWindow": "24-72 óra vizelet (WADA threshold: 1000 ng/mL).",
   "benefits": [
@@ -101,9 +101,9 @@ export default {
       "Kardio-zavar (aritmia, súlyos hipertónia) kontraindikáció",
       "β-blokkoló-terápiával kontraindikált",
       "Hyperthyreosis, glaukóma kontraindikáció",
-      "Off-label fogyásra használat kontraindikált súlyos kardiovaszkuláris betegség mellett — medical inhaler-indikáció ettől eltér",
+      "Off-label fogyásra használat kontraindikált súlyos kardiovaszkuláris betegség mellett – medical inhaler-indikáció ettől eltér",
       "Súlyos szorongás, pánikbetegség, epilepszia",
-      "MAO-gátló egyidejű használata — hypertensive krízis-kockázat",
+      "MAO-gátló egyidejű használata – hypertensive krízis-kockázat",
       "Terhesség és szoptatás (kategória C, csak indokolt esetben)"
     ]
   },
@@ -186,52 +186,52 @@ export default {
       "id": "oral",
       "routeId": "oral",
       "routeLabel": {
-        "hu": "Orális tabletta — Salbutamol HCl",
-        "en": "Oral tablet — Salbutamol HCl",
-        "pl": "Tabletka doustna — Salbutamol HCl"
+        "hu": "Orális tabletta – Salbutamol HCl",
+        "en": "Oral tablet – Salbutamol HCl",
+        "pl": "Tabletka doustna – Salbutamol HCl"
       },
       "image": "/performance/tablet-pile-white.png",
-      "whatIs": "Salbutamol HCl tabletta (2 mg, 4 mg) — a Clenbuterolhoz hasonló thermogenikus + izommegtartó off-label ciklus céljára. Gyógyszertári forrásból elérhető (Ventolin 2 mg tabletta HU-ban), ami garantált hatóanyagtartalmat jelent az UGL-termékekkel szemben.",
-      "routeNote": "Válaszd az oral formát, ha Clen-szerű fat-loss ciklust tervezel: a tabletta pontos dózis-titrálást tesz lehetővé, és a ~5-6 órás felezési idő biztonságosabb profilt ad. Asztma-indikáció nélkül a WADA-szempontból ez a tiltott forma — kizárólag nem-versenyző off-label kontextusban.",
+      "whatIs": "Salbutamol HCl tabletta (2 mg, 4 mg) – a Clenbuterolhoz hasonló thermogenikus + izommegtartó off-label ciklus céljára. Gyógyszertári forrásból elérhető (Ventolin 2 mg tabletta HU-ban), ami garantált hatóanyagtartalmat jelent az UGL-termékekkel szemben.",
+      "routeNote": "Válaszd az oral formát, ha Clen-szerű fat-loss ciklust tervezel: a tabletta pontos dózis-titrálást tesz lehetővé, és a ~5-6 órás felezési idő biztonságosabb profilt ad. Asztma-indikáció nélkül a WADA-szempontból ez a tiltott forma – kizárólag nem-versenyző off-label kontextusban.",
       "dosing": "4-8 mg PO TID, max 24 mg/nap",
       "halfLife": "5-6 óra",
       "halfLifeActive": "5-6 óra",
       "bioavailability": "~30-40% (oral, gastric first-pass)",
       "onsetTime": "15-30 perc",
-      "aromatization": "Nem releváns — β2-agonista, NEM szteroid; nincs CYP19 interakció",
-      "hepatotoxicity": "Alacsony — gyakorlatilag nincs hepatotoxicitás therapeutic dózisban; tremor és tachycardia a fő mellékhatás (FDA Proventil label)",
+      "aromatization": "Nem releváns – β2-agonista, NEM szteroid; nincs CYP19 interakció",
+      "hepatotoxicity": "Alacsony – gyakorlatilag nincs hepatotoxicitás therapeutic dózisban; tremor és tachycardia a fő mellékhatás (FDA Proventil label)",
       "indications": "Off-label fat-loss + izom-megtartás kalória-deficitben (Clen-szerű ciklus)",
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 4, "medium": 8, "high": 16 },
         "unit": "mg/nap",
-        "note": "Oral 4-8 mg 3x/nap (Clen-szerű ciklus), max 24 mg/nap. Tolerancia 1-2 hét alatt kialakul — ciklus maximum 4-6 hét, utána 2 hét OFF. Kardio-monitoring + EKG-baseline + 4-hetes ellenőrzés kötelező. Magnézium 400 mg + kálium mid-cycle a hypokalaemia ellen."
+        "note": "Oral 4-8 mg 3x/nap (Clen-szerű ciklus), max 24 mg/nap. Tolerancia 1-2 hét alatt kialakul – ciklus maximum 4-6 hét, utána 2 hét OFF. Kardio-monitoring + EKG-baseline + 4-hetes ellenőrzés kötelező. Magnézium 400 mg + kálium mid-cycle a hypokalaemia ellen."
       }
     },
     {
       "id": "inhaled",
       "routeId": "inhaled",
       "routeLabel": {
-        "hu": "Inhaláló (MDI) — Ventolin / ProAir",
-        "en": "Inhaler (MDI) — Ventolin / ProAir",
-        "pl": "Inhalator (MDI) — Ventolin / ProAir"
+        "hu": "Inhaláló (MDI) – Ventolin / ProAir",
+        "en": "Inhaler (MDI) – Ventolin / ProAir",
+        "pl": "Inhalator (MDI) – Ventolin / ProAir"
       },
       "image": "/performance/inhaler-asthma.png",
-      "whatIs": "Mért dózisú aeroszol inhaláló (MDI, Metered-Dose Inhaler) — a Ventolin/ProAir szabványos asztma-kezelési formája. Direkten a tüdőbe juttatja a hatóanyagot, minimális szisztémás felszívódással. WADA szerint <1600 μg/24 óra megengedett asztmás versenyzőknél TUE nélkül.",
+      "whatIs": "Mért dózisú aeroszol inhaláló (MDI, Metered-Dose Inhaler) – a Ventolin/ProAir szabványos asztma-kezelési formája. Direkten a tüdőbe juttatja a hatóanyagot, minimális szisztémás felszívódással. WADA szerint <1600 μg/24 óra megengedett asztmás versenyzőknél TUE nélkül.",
       "routeNote": "Válaszd az inhaláló formát, ha asztma-tünetek kezelése az elsődleges cél, vagy WADA-ellenőrzött versenyzőként szükséged van bronchodilatátorra. Az inhaláló szisztémás mellékhatásai (tremor, tachycardia) lényegesen enyhébbek, mint az oral formánál, de a thermogenikus és izommegtartó off-label hatás is kisebb.",
       "dosing": "90-200 μg/szippantás PRN, max 1600 μg/24h WADA-szint",
       "halfLife": "1.5-3 óra (local)",
       "halfLifeActive": "1.5-3 óra",
       "bioavailability": "~10-20% (systemic, local-szöveti magas)",
       "onsetTime": "5-15 perc",
-      "aromatization": "Nem releváns — β2-agonista, NEM szteroid; nincs CYP19 interakció",
-      "hepatotoxicity": "Alacsony — local-szöveti dominált hatás, systemic-szint minimális, hepatikus stressz elhanyagolható",
+      "aromatization": "Nem releváns – β2-agonista, NEM szteroid; nincs CYP19 interakció",
+      "hepatotoxicity": "Alacsony – local-szöveti dominált hatás, systemic-szint minimális, hepatikus stressz elhanyagolható",
       "indications": "FDA-Rx asztma + bronchodilatáció; athletic legitim TUE-protokoll WADA-monitored",
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 90, "medium": 200, "high": 1600 },
         "unit": "μg/szippantás (max 1600 μg/24h WADA-szint)",
-        "note": "MDI inhaláló 90-200 μg/szippantás szükség szerint (PRN). WADA-akkreditált versenysportban 1600 μg/24h a maximum legitim TUE-keret — ennél a határnél a vizelet-koncentráció <1000 ng/mL szint alatt kell maradjon. Egyszeri terápiás szippantás 90 μg (1 puff) vagy 180 μg (2 puff) — 4-6 óránként PRN, max 4-8x/nap."
+        "note": "MDI inhaláló 90-200 μg/szippantás szükség szerint (PRN). WADA-akkreditált versenysportban 1600 μg/24h a maximum legitim TUE-keret – ennél a határnél a vizelet-koncentráció <1000 ng/mL szint alatt kell maradjon. Egyszeri terápiás szippantás 90 μg (1 puff) vagy 180 μg (2 puff) – 4-6 óránként PRN, max 4-8x/nap."
       }
     }
   ],

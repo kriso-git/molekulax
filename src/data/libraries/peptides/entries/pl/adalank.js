@@ -90,7 +90,7 @@ export default {
           "Liofilizowana fiolka 5 mg + 5 ml sterylnej wody bakteriostatycznej",
           "Powoli wstrzyknąć wodę na ściankę fiolki, delikatnie zakręcić (NIE potrząsać)",
           "Przenieść do sterylnej butelki sprayu donosowego (pompka 50 μl/puff = ~50 μg/puff)",
-          "Stężenie: 1000 μg/ml — 1 puff = ~50 μg, 2–6 puffów/dzień w zależności od dawki",
+          "Stężenie: 1000 μg/ml – 1 puff = ~50 μg, 2–6 puffów/dzień w zależności od dawki",
           "Przechowywanie: w lodówce (2–8°C), maks. 28 dni; przed użyciem priming 2–3 pustych puffów"
         ]
       }

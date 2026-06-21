@@ -1,6 +1,6 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-// Shared library prev/next chevron button — the brand chemical-green glow.
+// Shared library prev/next chevron button – the brand chemical-green glow.
 // Used by CubeNavControls (desktop absolute arrows flanking the grid) and by the
 // mobile dots-row arrows in LibraryGallery (flanking the pager).
 const ARROW_STYLE = {

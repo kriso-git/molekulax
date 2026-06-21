@@ -28,7 +28,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Oral-Turinabol (Chlorodehydromethyltestosterone, CDMT), 17α-alkylated chlorinated Dianabol-analog oral AAS. Jenapharm 1962, infamous as the main agent of the GDR state doping program 1968-1989 (\"Komplex 08\"). Notorious for long-term detection metabolites.",
-  "description": "Turinabol (4-chlorodehydromethyltestosterone, CDMT) is a 17α-alkylated chlorinated Dianabol structural analog oral AAS, synthesized by Jenapharm (East Germany, Jena) in 1962, marketed in 1965 as Oral-Turinabol Rx. It became the MAIN agent of the GDR state doping program (\"Staatsplanthema 14.25\", Stasi code-named \"Komplex 08\", 1968-1989); ~10,000+ GDR athletes received Turinabol unknowingly or undocumented, mainly in swimming, athletics, rowing programs. The 1990s Stasi archive openings document the harms (liver damage, cardiomyopathy, virilization in female athletes, neonatal anomalies in doped mothers' children). Anabolic:androgenic ratio 53:6 — high anabolic, virtually zero androgenic (\"drier Anavar\"). Does NOT aromatize (4-chloro substitution blocks CYP19 substrate binding). 17α-methyl → moderate hepatotoxicity (the 4-chloro reduces it, similar to Anavar). Schänzer 2006 (PMID 17042466) describes extra-long detection metabolites (6β-OH-CDMT and others) — urinary 12-18 month detection is possible, basis of the 2016 Olympic (Rio) IOC re-test: 100+ athletes retrospectively disqualified after 2008-2012 sample re-evaluation. WADA-banned year-round.",
+  "description": "Turinabol (4-chlorodehydromethyltestosterone, CDMT) is a 17α-alkylated chlorinated Dianabol structural analog oral AAS, synthesized by Jenapharm (East Germany, Jena) in 1962, marketed in 1965 as Oral-Turinabol Rx. It became the MAIN agent of the GDR state doping program (\"Staatsplanthema 14.25\", Stasi code-named \"Komplex 08\", 1968-1989); ~10,000+ GDR athletes received Turinabol unknowingly or undocumented, mainly in swimming, athletics, rowing programs. The 1990s Stasi archive openings document the harms (liver damage, cardiomyopathy, virilization in female athletes, neonatal anomalies in doped mothers' children). Anabolic:androgenic ratio 53:6 – high anabolic, virtually zero androgenic (\"drier Anavar\"). Does NOT aromatize (4-chloro substitution blocks CYP19 substrate binding). 17α-methyl → moderate hepatotoxicity (the 4-chloro reduces it, similar to Anavar). Schänzer 2006 (PMID 17042466) describes extra-long detection metabolites (6β-OH-CDMT and others) – urinary 12-18 month detection is possible, basis of the 2016 Olympic (Rio) IOC re-test: 100+ athletes retrospectively disqualified after 2008-2012 sample re-evaluation. WADA-banned year-round.",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -62,12 +62,12 @@ export default {
     "testosterone",
     "alcohol"
   ],
-  "aromatization": "No — 4-chloro substitution blocks CYP19 binding; clinically E2 elevation essentially zero (Pope-Kanayama 2014 PMID 24423981, Schänzer 2006 PMID 17042466)",
-  "hepatotoxicity": "Moderate — 17α-methyl group hepatic first-pass stress, BUT 4-chloro reduces hepatic toxicity vs other 17α-alkylated AAS (Dianabol, Anadrol). ALT/AST 2-3x rise common at 6+ week cycle, clinically milder than Dianabol or Anadrol (Hartgens-Kuipers 2004 PMID 15233599)",
+  "aromatization": "No – 4-chloro substitution blocks CYP19 binding; clinically E2 elevation essentially zero (Pope-Kanayama 2014 PMID 24423981, Schänzer 2006 PMID 17042466)",
+  "hepatotoxicity": "Moderate – 17α-methyl group hepatic first-pass stress, BUT 4-chloro reduces hepatic toxicity vs other 17α-alkylated AAS (Dianabol, Anadrol). ALT/AST 2-3x rise common at 6+ week cycle, clinically milder than Dianabol or Anadrol (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
   "androgenicRatio": "53:6",
   "bindingAffinity": "Moderate-high AR affinity; virtually zero 5α-reductase substrate → NO DHT activity; no scalp or prostate androgen risk.",
-  "detectionWindow": "EXTRA LONG — urinary 12-18 months (Schänzer 2006 6β-OH-CDMT and 3α-hydroxy-3-one metabolites). 2016 Rio Olympics retrospective re-test disqualified 100+ athletes based on 2008-2012 reevaluation. WADA-accredited LC-MS/MS.",
+  "detectionWindow": "EXTRA LONG – urinary 12-18 months (Schänzer 2006 6β-OH-CDMT and 3α-hydroxy-3-one metabolites). 2016 Rio Olympics retrospective re-test disqualified 100+ athletes based on 2008-2012 reevaluation. WADA-accredited LC-MS/MS.",
   "benefits": [
     "Clean lean mass gain (3-5 kg in 6-8 weeks, MINIMAL water retention)",
     "Does NOT aromatize → no gynecomastia, no water retention",
@@ -76,7 +76,7 @@ export default {
     "Stamina gain documented in sub-elite endurance sports (GDR rowing, athletics)"
   ],
   "quickStart": [
-    "EXTRA LONG DETECTION — 12-18 months urinary; WADA-tested athletes need minimum 18-month off-season fade-out",
+    "EXTRA LONG DETECTION – 12-18 months urinary; WADA-tested athletes need minimum 18-month off-season fade-out",
     "Hepatic monitor every 4 weeks (moderate, but 17α-methyl)",
     "TUDCA 500 mg/day + NAC 1200 mg/day recommended",
     "Typical dose 30-60 mg/day, 6-8 week cycle",
@@ -99,10 +99,10 @@ export default {
   "quality": {
     "pure": [
       "Original Jenapharm Oral-Turinabol 5 mg tablet (1962-1994, today collectible)",
-      "UGL tablet: HPLC-tested source mandatory — Turinabol often counterfeited (Anavar/Dianabol substitution)"
+      "UGL tablet: HPLC-tested source mandatory – Turinabol often counterfeited (Anavar/Dianabol substitution)"
     ],
     "caution": [
-      "EXTRA long detection window — athlete risk high",
+      "EXTRA long detection window – athlete risk high",
       "Hepatotoxicity (ALT/AST 2-3x rise)",
       "Lipid disturbance: HDL drop moderate",
       "Mood changes (depression, irritability) discontinue if observed"
@@ -168,7 +168,7 @@ export default {
     },
     {
       "q": "Female use?",
-      "a": "GDR history shows female athletes (Heidi Krieger Olympic medal shot-putter, well-documented case) received Turinabol unknowingly at 10-20 mg/day — virilization side effects (irreversible voice deepening, clitoral hypertrophy, hirsutism) ENSUED. Krieger underwent sex-reassignment surgery in 1997 (Andreas Krieger). Clinical lesson: although Turinabol has a low androgenic ratio (6 vs 100 testosterone), at higher doses (>10 mg/day) and longer exposure virilization can be IRREVERSIBLE. The only safe female protocol: don't use it."
+      "a": "GDR history shows female athletes (Heidi Krieger Olympic medal shot-putter, well-documented case) received Turinabol unknowingly at 10-20 mg/day – virilization side effects (irreversible voice deepening, clitoral hypertrophy, hirsutism) ENSUED. Krieger underwent sex-reassignment surgery in 1997 (Andreas Krieger). Clinical lesson: although Turinabol has a low androgenic ratio (6 vs 100 testosterone), at higher doses (>10 mg/day) and longer exposure virilization can be IRREVERSIBLE. The only safe female protocol: don't use it."
     },
     {
       "q": "Stamina gain in rowing sports?",
@@ -218,5 +218,5 @@ export default {
       "purpose": "Turinabol exclusively recommended for cyclical use. Long cruise = hepatotoxic + WADA detection risk."
     }
   },
-  "anecdote": "Turinabol is often overshadowed by Anadrol or Dianabol, but anecdotal reports value it precisely for being less flashy. Users commonly describe progress as steady, efficient, and deceptively productive — changes accrue slowly rather than exploding. Strength tends to rise without massive bodyweight jumps, which is central to its reputation. It is also associated with strong performance carryover: not just looking different, but moving better, recovering better, and sustaining output. Some users view it closer to a 'lean-tissue optimizer' than a classic mass drug. Because it does not aromatize, the visual is typically harder and drier, though without the dramatic fullness of more glycogen-heavy compounds. Despite a milder profile, Turinabol can still negatively affect lipids, liver enzymes, blood pressure, and natural testosterone production — these are often underestimated because the compound feels smoother. As a 17α-alkylated oral, hepatic stress remains relevant; 'mild' should not be confused with harmless."
+  "anecdote": "Turinabol is often overshadowed by Anadrol or Dianabol, but anecdotal reports value it precisely for being less flashy. Users commonly describe progress as steady, efficient, and deceptively productive – changes accrue slowly rather than exploding. Strength tends to rise without massive bodyweight jumps, which is central to its reputation. It is also associated with strong performance carryover: not just looking different, but moving better, recovering better, and sustaining output. Some users view it closer to a 'lean-tissue optimizer' than a classic mass drug. Because it does not aromatize, the visual is typically harder and drier, though without the dramatic fullness of more glycogen-heavy compounds. Despite a milder profile, Turinabol can still negatively affect lipids, liver enzymes, blood pressure, and natural testosterone production – these are often underestimated because the compound feels smoother. As a 17α-alkylated oral, hepatic stress remains relevant; 'mild' should not be confused with harmless."
 }

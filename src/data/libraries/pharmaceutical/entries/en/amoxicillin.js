@@ -50,8 +50,8 @@ export default {
     }
   ],
   "mechanism": "The β-lactam ring binds to active sites of bacterial cell wall synthesis key enzymes (PBP, penicillin-binding proteins, transpeptidases), inhibiting peptidoglycan cross-linking. Bacterial cell wall weakens, leading to osmotic-stress lysis. Bactericidal against susceptible organisms. Due to pseudo-irreversible binding, effect is dose- and time-dependent (T > MIC is more important AUC predictor of clinical response).",
-  "legalStatus": "EU/HU: prescription only (Amoxil, Ospamox, Hiconcil, Duomox, generics). USA: FDA Rx. Antibiotic stewardship program imposes strict prescribing criteria — empirical prescribing only for confirmed bacterial infection. WHO AWaRe category: ACCESS (widespread, low resistance risk).",
-  "bioavailability": "~74-92% (oral, mildly food-affected — FDA Amoxil label)",
+  "legalStatus": "EU/HU: prescription only (Amoxil, Ospamox, Hiconcil, Duomox, generics). USA: FDA Rx. Antibiotic stewardship program imposes strict prescribing criteria – empirical prescribing only for confirmed bacterial infection. WHO AWaRe category: ACCESS (widespread, low resistance risk).",
+  "bioavailability": "~74-92% (oral, mildly food-affected – FDA Amoxil label)",
   "onsetTime": "1-2 h (plasma peak), 24-72 h (clinical symptom response)",
   "halfLife": "1-1.5 h (normal renal function); extends to 7-21 h in renal failure",
   "atcCode": "J01CA04",
@@ -68,7 +68,7 @@ export default {
   "contraindications": [
     "Known penicillin or β-lactam allergy (anaphylaxis history)",
     "Severe hypersensitivity (Stevens-Johnson, TEN, DRESS) history",
-    "Mononucleosis (EBV) infection — amoxicillin causes maculopapular rash in 80-95%"
+    "Mononucleosis (EBV) infection – amoxicillin causes maculopapular rash in 80-95%"
   ],
   "commonSideEffects": [
     "GI: diarrhea (10%, antibiotic-associated), nausea (5%), vomiting (3%)",
@@ -96,7 +96,7 @@ export default {
     "Dental endocarditis prophylaxis gold standard (AHA 2007 guideline)"
   ],
   "quickStart": [
-    "CONFIRM diagnosis first — antibiotic ONLY for confirmed bacterial infection (not viral)",
+    "CONFIRM diagnosis first – antibiotic ONLY for confirmed bacterial infection (not viral)",
     "Standard adult dose 500 mg every 8 h (q8h) or 875 mg every 12 h (q12h)",
     "In severe infection 1000 mg q8h or q12h, possibly as Augmentin (amoxicillin + clavulanic acid)",
     "With or without food, hydration (2 L/day) to mitigate crystalluria",
@@ -124,7 +124,7 @@ export default {
     ],
     "caution": [
       "Penicillin allergy history: cephalosporin cross-reactivity 1-10%, detailed allergy evaluation advised",
-      "In mononucleosis (EBV) suspicion DO NOT prescribe — 80-95% rash risk",
+      "In mononucleosis (EBV) suspicion DO NOT prescribe – 80-95% rash risk",
       "Renal impairment (eGFR < 30): dose reduction and/or interval extension required",
       "Antibiotic-associated diarrhea (C. difficile colitis warning signs)"
     ],
@@ -134,7 +134,7 @@ export default {
       "Mononucleosis or other viral-suspicious infection (common cold, flu)",
       "Self-treatment with sub-therapeutic doses (resistance development)",
       "Prior amoxicillin/clavulanate-induced cholestatic jaundice or hepatic dysfunction history",
-      "Severe renal impairment (CrCl <30 ml/min) without dose adjustment — accumulation and toxicity risk",
+      "Severe renal impairment (CrCl <30 ml/min) without dose adjustment – accumulation and toxicity risk",
       "Prior C. difficile-associated pseudomembranous colitis following beta-lactam antibiotic"
     ]
   },
@@ -196,7 +196,7 @@ export default {
     },
     {
       "q": "What does \"amoxicillin rash with EBV\" mean?",
-      "a": "Infectious mononucleosis (Epstein-Barr virus, \"kissing disease\") classically presents with maculopapular rash on amoxicillin (or ampicillin) — 80-95% incidence. NOT IgE-mediated penicillin allergy but viral-superinfection immune-complex mechanism. Patient will NOT later be penicillin-allergic. Still, stop treatment immediately and check EBV serology (heterophile antibody, anti-VCA IgM). Choose another antibiotic (or none needed since EBV is viral)."
+      "a": "Infectious mononucleosis (Epstein-Barr virus, \"kissing disease\") classically presents with maculopapular rash on amoxicillin (or ampicillin) – 80-95% incidence. NOT IgE-mediated penicillin allergy but viral-superinfection immune-complex mechanism. Patient will NOT later be penicillin-allergic. Still, stop treatment immediately and check EBV serology (heterophile antibody, anti-VCA IgM). Choose another antibiotic (or none needed since EBV is viral)."
     },
     {
       "q": "Why complete the full antibiotic course?",
@@ -222,6 +222,6 @@ export default {
       "high": 1000
     },
     "unit": "mg",
-    "note": "Low (500 mg q8h, 3x/day): standard otitis media, sinusitis, acute UTI, mild infection. Moderate (875 mg q12h, 2x/day): community pneumonia, more severe infection — better compliance often preferred. High (1000 mg q8h, 3x/day): severe infection, H. pylori triple therapy, dental endocarditis prophylaxis 2 g once. With or without food, hydration. Complete full course per physician instruction, usually 5-14 days."
+    "note": "Low (500 mg q8h, 3x/day): standard otitis media, sinusitis, acute UTI, mild infection. Moderate (875 mg q12h, 2x/day): community pneumonia, more severe infection – better compliance often preferred. High (1000 mg q8h, 3x/day): severe infection, H. pylori triple therapy, dental endocarditis prophylaxis 2 g once. With or without food, hydration. Complete full course per physician instruction, usually 5-14 days."
   }
 }

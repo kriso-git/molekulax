@@ -30,7 +30,7 @@ export default function CardVizPreview() {
     <div style={{ minHeight: '100vh', background: '#070914', color: '#e7e9f3', fontFamily: 'system-ui, Segoe UI, Roboto, sans-serif', padding: '0 0 60px' }}>
       <div style={{ position: 'fixed', top: 14, left: 16, zIndex: 20, pointerEvents: 'none' }}>
         <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#a78bfa', background: 'rgba(167,139,250,0.1)', border: '1px solid rgba(167,139,250,0.35)', borderRadius: 20, padding: '5px 12px' }}>
-          ● Preview — kártya-vizuál (nem éles)
+          ● Preview – kártya-vizuál (nem éles)
         </span>
       </div>
 

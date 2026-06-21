@@ -1,4 +1,4 @@
-// FSH-rec (Gonal-F / Puregon) — Rekombináns FSH (CHO-expresszált), szelektív
+// FSH-rec (Gonal-F / Puregon) – Rekombináns FSH (CHO-expresszált), szelektív
 // Sertoli-FSHR stimulus. AAS-PCT niche: azoospermia-recovery + Sertoli-támogatás
 // HCG-LH mellett. Cross-frame: a future peptid-libben `fsh-rec-peptid`.
 // Sources: EMA Gonal-F SPC (Merck Serono 1995), EMA Puregon SPC (Organon 1996),
@@ -27,27 +27,27 @@ export default {
   "image": "/performance/water-vial.png",
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
-  "shortDesc": "Rekombináns FSH (CHO-expresszált) — szelektív Sertoli-FSHR stimulus, NINCS LH-aktivitás. AAS-PCT niche: azoospermia-recovery + Sertoli-támogatás HCG-LH mellett. Drága (€300+/75 IU vial EU). Cross-frame: future peptid-libben `fsh-rec-peptid`.",
-  "description": "Az FSH-rec (rekombináns follicle-stimulating hormone) egy bioteknológiai gyártású glikoprotein, amelyet kínai hörcsög-petefészek-sejt-vonalban (CHO, Chinese Hamster Ovary) expresszálnak. Két fő márkanév: Gonal-F (Merck Serono, EMA 1995, FDA 1997) és Puregon/Follistim (Organon, EMA 1996, FDA 1997). A rekombináns gyártás megoldotta az urinary-source-hoz kapcsolódó tisztítási problémákat (LH-szennyeződés a Pergonal-éránál, prion-rizikó vCJD-kontextusban) — a Gonal-F + Puregon tiszta FSH-aktivitást ad, NINCS LH-mellékaktivitás. **AAS-PCT kontextus**: az FSH-rec niche-pozíciója a Sertoli-szelektív stimulus szükségessége esetén áll fenn. Tipikus indikáció: hard-suppression hosszú-ciklus (>20 hét) vagy 'blast-and-cruise' utáni azoospermia-recovery, ahol a Leydig-funkcionalitás megőrződhet (HCG mid-cycle protokoll vagy endogén low-LH-restart), DE a Sertoli-FSH-receptor-aktivitás külön stimulus nélkül nem áll vissza. Az FSH-rec ekkor specifikus Sertoli-FSHR-aktivátorként hat → spermatogenesis-restart, inhibin-B-emelkedés. **Cross-frame note**: ez a `-perf` suffix entry, a future peptid-library batch hozza majd a `fsh-rec-peptid` entry-t (fertility-clinic-framing — IVF male-factor + ICSI sperm-prep protokoll). WADA-tilos egész évben (S2 Peptide Hormones).",
+  "shortDesc": "Rekombináns FSH (CHO-expresszált) – szelektív Sertoli-FSHR stimulus, NINCS LH-aktivitás. AAS-PCT niche: azoospermia-recovery + Sertoli-támogatás HCG-LH mellett. Drága (€300+/75 IU vial EU). Cross-frame: future peptid-libben `fsh-rec-peptid`.",
+  "description": "Az FSH-rec (rekombináns follicle-stimulating hormone) egy bioteknológiai gyártású glikoprotein, amelyet kínai hörcsög-petefészek-sejt-vonalban (CHO, Chinese Hamster Ovary) expresszálnak. Két fő márkanév: Gonal-F (Merck Serono, EMA 1995, FDA 1997) és Puregon/Follistim (Organon, EMA 1996, FDA 1997). A rekombináns gyártás megoldotta az urinary-source-hoz kapcsolódó tisztítási problémákat (LH-szennyeződés a Pergonal-éránál, prion-rizikó vCJD-kontextusban) – a Gonal-F + Puregon tiszta FSH-aktivitást ad, NINCS LH-mellékaktivitás. **AAS-PCT kontextus**: az FSH-rec niche-pozíciója a Sertoli-szelektív stimulus szükségessége esetén áll fenn. Tipikus indikáció: hard-suppression hosszú-ciklus (>20 hét) vagy 'blast-and-cruise' utáni azoospermia-recovery, ahol a Leydig-funkcionalitás megőrződhet (HCG mid-cycle protokoll vagy endogén low-LH-restart), DE a Sertoli-FSH-receptor-aktivitás külön stimulus nélkül nem áll vissza. Az FSH-rec ekkor specifikus Sertoli-FSHR-aktivátorként hat → spermatogenesis-restart, inhibin-B-emelkedés. **Cross-frame note**: ez a `-perf` suffix entry, a future peptid-library batch hozza majd a `fsh-rec-peptid` entry-t (fertility-clinic-framing – IVF male-factor + ICSI sperm-prep protokoll). WADA-tilos egész évben (S2 Peptide Hormones).",
   "keyInfo": [
-    {"label": "Hatásmechanizmus", "value": "Rekombináns FSH (CHO-expresszált) — szelektív Sertoli-FSHR-agonist, NINCS LH-aktivitás"},
+    {"label": "Hatásmechanizmus", "value": "Rekombináns FSH (CHO-expresszált) – szelektív Sertoli-FSHR-agonist, NINCS LH-aktivitás"},
     {"label": "Adagolás (PCT azoospermia-recovery)", "value": "75-150 IU EOD × 4-12 hét"},
     {"label": "Felezési idő", "value": "~24-36 óra (rekombináns)"},
     {"label": "Hatáskezdet", "value": "Inhibin-B emelkedés 2-4 hét, sperm-count emelkedés 3-9 hónap"},
     {"label": "Jogi státusz", "value": "EMA Rx Gonal-F (1995) + Puregon (1996), FDA Rx (1997), WADA S2 (banned)"}
   ],
-  "mechanism": "Az FSH-rec a természetes follicle-stimulating hormone-mal strukturálisan azonos rekombináns glikoprotein (alfa + beta alegység, glikozilálási mintázat hasonló az endogén FSH-éhoz). Bioteknológiai forrás: CHO-sejt-vonal genetikailag módosítva humán FSH-α + FSH-β gének expresszálására (két plazmid együttes transzfekciója). Aktivitás: kizárólag Sertoli-sejt FSHR (FSH-receptor) agonizmus, a Leydig-sejteket NEM stimulálja (mivel a Leydig-LHCGR receptor LH-specifikus). Az FSH-effekt: spermatogenezis-szabályozás (Sertoli-elhajlított Sertoli-sejt-érés → spermatogonium-számolás), inhibin-B-produkció (Sertoli-marker), androgén-binding protein (ABP) szintézis. AAS-PCT-kontextusban a Sertoli-stimulus NEM helyettesíti a Leydig-stimulust (Test-emelkedés FSH-rec-en nem várt) — ezért a klasszikus protokoll HCG + FSH-rec dual-stimulus.",
+  "mechanism": "Az FSH-rec a természetes follicle-stimulating hormone-mal strukturálisan azonos rekombináns glikoprotein (alfa + beta alegység, glikozilálási mintázat hasonló az endogén FSH-éhoz). Bioteknológiai forrás: CHO-sejt-vonal genetikailag módosítva humán FSH-α + FSH-β gének expresszálására (két plazmid együttes transzfekciója). Aktivitás: kizárólag Sertoli-sejt FSHR (FSH-receptor) agonizmus, a Leydig-sejteket NEM stimulálja (mivel a Leydig-LHCGR receptor LH-specifikus). Az FSH-effekt: spermatogenezis-szabályozás (Sertoli-elhajlított Sertoli-sejt-érés → spermatogonium-számolás), inhibin-B-produkció (Sertoli-marker), androgén-binding protein (ABP) szintézis. AAS-PCT-kontextusban a Sertoli-stimulus NEM helyettesíti a Leydig-stimulust (Test-emelkedés FSH-rec-en nem várt) – ezért a klasszikus protokoll HCG + FSH-rec dual-stimulus.",
   "legalStatus": "USA: FDA Rx Gonal-F (Merck Serono 1997 jóváhagyás), Follistim (Organon 1997). EU: EMA Rx Gonal-F (1995), Puregon (1996). HU + PL: törzskönyvezett (Gonal-F, Puregon Rx). WADA: S2.2 Peptide Hormones (banned in-competition + out-of-competition).",
   "onsetTime": "Inhibin-B emelkedés 2-4 hét, sperm-count emelkedés 3-9 hónap",
   "halfLife": "~24-36 óra (rekombináns FSH, SC injekció)",
   "halfLifeActive": "Klinikai effect 3-5 nap (single dose)",
   "interactionsWith": ["hcg-perf", "hmg-perf", "gonadorelin", "kisspeptin-10"],
-  "aromatization": "Nincs direkt aromatizáció — FSH NEM stimulál Leydig-Test-produkciót, tehát endogén Test-emelkedés csak HCG-vel kombinálva. FSH-rec monotherapy E2-szint nem emeli klinikailag.",
-  "hepatotoxicity": "Nincs hepatikus stressz — rekombináns fehérje SC injekció.",
+  "aromatization": "Nincs direkt aromatizáció – FSH NEM stimulál Leydig-Test-produkciót, tehát endogén Test-emelkedés csak HCG-vel kombinálva. FSH-rec monotherapy E2-szint nem emeli klinikailag.",
+  "hepatotoxicity": "Nincs hepatikus stressz – rekombináns fehérje SC injekció.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nem AAS; szelektív Sertoli-stimulus)",
   "bindingAffinity": "FSH-FSHR Kd ~0.1 nM, kizárólag Sertoli-sejteken expresszált receptor. Magasabb tisztaság-szint mint urinary-extracted HMG-FSH-effekt.",
-  "detectionWindow": "WADA-akkreditált immunoassay urinary FSH detection — rekombináns FSH-marker megkülönböztethető az endogén FSH-tól specifikus glikolezilálási mintázat alapján (Bidlingmaier 2010-es publikációk).",
+  "detectionWindow": "WADA-akkreditált immunoassay urinary FSH detection – rekombináns FSH-marker megkülönböztethető az endogén FSH-tól specifikus glikolezilálási mintázat alapján (Bidlingmaier 2010-es publikációk).",
   "benefits": [
     "Szelektív Sertoli-stimulus (spermatogenezis-recovery emphasis cél)",
     "Magasabb tisztaság-szint mint HMG (urinary-extracted FSH-LH mix)",
@@ -72,16 +72,16 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Gonal-F 75 IU pre-filled pen (Merck Serono) — Rx pharma-minőség (EU + USA)",
-      "Gonal-F 300/450/900 IU multi-dose patron (Merck Serono) — Rx, költséghatékonyabb hosszú-protokollon",
-      "Puregon/Follistim 50/75/100/150 IU ampoule (Organon) — Rx pharma-minőség",
-      "UGL rekombináns FSH — RITKA (rekombináns gyártás bonyolult, kevés UGL-source), HPLC + immunoassay-tesztelt forrás kötelező",
-      "Indiai biosimilar (Folicare, Recagon) — egyes EU-pharmacy-n elérhető, pharma-minőség"
+      "Gonal-F 75 IU pre-filled pen (Merck Serono) – Rx pharma-minőség (EU + USA)",
+      "Gonal-F 300/450/900 IU multi-dose patron (Merck Serono) – Rx, költséghatékonyabb hosszú-protokollon",
+      "Puregon/Follistim 50/75/100/150 IU ampoule (Organon) – Rx pharma-minőség",
+      "UGL rekombináns FSH – RITKA (rekombináns gyártás bonyolult, kevés UGL-source), HPLC + immunoassay-tesztelt forrás kötelező",
+      "Indiai biosimilar (Folicare, Recagon) – egyes EU-pharmacy-n elérhető, pharma-minőség"
     ],
     "caution": [
-      "Pricing magas — €300-400/75 IU vial vs Menopur €20-25/75 IU; long-term-recovery cél esetén HMG költséghatékonyabb",
-      "Sertoli-only-emphasis — Leydig-stimulus külön szükséges (HCG vagy endogén LH-recovery)",
-      "OHSS-risk (Ovarian Hyperstimulation Syndrome) female-indikációban — férfi-paciens N/A",
+      "Pricing magas – €300-400/75 IU vial vs Menopur €20-25/75 IU; long-term-recovery cél esetén HMG költséghatékonyabb",
+      "Sertoli-only-emphasis – Leydig-stimulus külön szükséges (HCG vagy endogén LH-recovery)",
+      "OHSS-risk (Ovarian Hyperstimulation Syndrome) female-indikációban – férfi-paciens N/A",
       "Klinefelter-szindróma esetén FSH-rec NEM hat (Sertoli-defektus eredet primér)"
     ],
     "avoid": [
@@ -95,7 +95,7 @@ export default {
     "HCG-kombináció: standard 'HCG + FSH-rec' dual-stimulus full-axis-restart (LH-Leydig + FSH-Sertoli külön)",
     "HMG alternative: ha cost-effectiveness fontos és LH-stimulus is needed → HMG (mixed FSH+LH) helyettesítheti",
     "SERM-bridge (Nolvadex/Clomid): post-protocol PCT standard",
-    "Gonadorelin: hypothalamic upstream-stimulus, FSH-rec downstream — sequential-protocol opcionálisan",
+    "Gonadorelin: hypothalamic upstream-stimulus, FSH-rec downstream – sequential-protocol opcionálisan",
     "TRT: NEM kombinálható (Sertoli-FSHR downregulation chronic Test-exposure mellett)"
   ],
   "studies": [
@@ -104,10 +104,10 @@ export default {
     {"title": "Addition of recombinant follicle-stimulating hormone to human chorionic gonadotropin treatment in adolescents and young adults with hypogonadotropic hypogonadism promotes normal testicular growth and may promote early spermatogenesis.", "authors": "Zacharin M, Sabin MA, Nair VV, Nicolaides R", "journal": "Fertil Steril", "pmid": "22763096"}
   ],
   "faq": [
-    {"q": "FSH-rec vs HMG — mikor szelektív FSH kell?", "a": "Két forgatókönyv: (1) cost-effectiveness: HMG (~€20-25/75 IU) sokkal olcsóbb mint FSH-rec (~€300-400/75 IU) — DE HMG mixed FSH+LH-t ad, ami felesleges ha HCG-vel külön LH-stimulust adunk. (2) Tiszta Sertoli-emphasis cél: ha az LH-szintet más úton stabilizáljuk (HCG-bridge vagy endogén low-LH-restart), és csak Sertoli-stimulus kell → FSH-rec szelektivitás előny. Klinikai gyakorlatban gyakran HMG + HCG költséghatékonyabb mint FSH-rec + HCG."},
-    {"q": "Azoospermia-recovery sebessége?", "a": "Lassú folyamat — spermatogenezis-cycle 64-74 nap, tehát első sperm-count-emelkedés 8-12 hét, full recovery 3-9 hónap a hard-suppression-mérték függvényében. Klinikai gyakorlatban a Liu 2002 PMID 11870114 protokoll: FSH-rec 150 IU EOD × 12-24 hét, kombinálva HCG 1000-2000 IU EOD-vel. Spermatogenesis-restoration azoospermiás férfin 60-80% (függő a hard-suppression-mértéktől és a duration-tól)."},
+    {"q": "FSH-rec vs HMG – mikor szelektív FSH kell?", "a": "Két forgatókönyv: (1) cost-effectiveness: HMG (~€20-25/75 IU) sokkal olcsóbb mint FSH-rec (~€300-400/75 IU) – DE HMG mixed FSH+LH-t ad, ami felesleges ha HCG-vel külön LH-stimulust adunk. (2) Tiszta Sertoli-emphasis cél: ha az LH-szintet más úton stabilizáljuk (HCG-bridge vagy endogén low-LH-restart), és csak Sertoli-stimulus kell → FSH-rec szelektivitás előny. Klinikai gyakorlatban gyakran HMG + HCG költséghatékonyabb mint FSH-rec + HCG."},
+    {"q": "Azoospermia-recovery sebessége?", "a": "Lassú folyamat – spermatogenezis-cycle 64-74 nap, tehát első sperm-count-emelkedés 8-12 hét, full recovery 3-9 hónap a hard-suppression-mérték függvényében. Klinikai gyakorlatban a Liu 2002 PMID 11870114 protokoll: FSH-rec 150 IU EOD × 12-24 hét, kombinálva HCG 1000-2000 IU EOD-vel. Spermatogenesis-restoration azoospermiás férfin 60-80% (függő a hard-suppression-mértéktől és a duration-tól)."},
     {"q": "Költség?", "a": "Magas. Gonal-F 75 IU pre-filled pen €300-400, Puregon ampoule €280-350. Long-term protokollon (12-24 hét) a kumulatív cost €5000-15000-ig terjedhet. Költséghatékonyabb alternatívák: (1) HMG (Menopur) ~€20-25/75 IU LH-FSH mixed; (2) Indiai biosimilar (Folicare, Recagon) ~€100-150/75 IU. Klinikai értelemben mindhárom hatékony, csak a tisztaság-szint és FSH-szelektivitás eltér."},
-    {"q": "Tartós sterilitás esetében használható?", "a": "Igen — az FSH-rec a primér klinikai indikáció hypogonadotrópikus hipogonadizmussal (Kallmann-szindróma, idiopátiás secondary hypogonadism, hypothalamic injury) társuló férfi-infertilitásban. AAS-mediated secondary hypogonadism (anabolic-steroid-induced hypogonadism, ASIH) hasonló mechanizmus, klinikai protokoll átvehető. 6-12 hónap FSH-rec + HCG kombinációval 60-80% sperm-recovery várható, függő a hard-suppression-mértéktől."}
+    {"q": "Tartós sterilitás esetében használható?", "a": "Igen – az FSH-rec a primér klinikai indikáció hypogonadotrópikus hipogonadizmussal (Kallmann-szindróma, idiopátiás secondary hypogonadism, hypothalamic injury) társuló férfi-infertilitásban. AAS-mediated secondary hypogonadism (anabolic-steroid-induced hypogonadism, ASIH) hasonló mechanizmus, klinikai protokoll átvehető. 6-12 hónap FSH-rec + HCG kombinációval 60-80% sperm-recovery várható, függő a hard-suppression-mértéktől."}
   ],
   "related": ["hcg-perf", "hmg-perf", "gonadorelin", "kisspeptin-10"],
   "doseCalc": {
@@ -126,7 +126,7 @@ export default {
     "midCycle": {
       "label": "Protokoll közben (4. hét)",
       "timing": "Indítás +4 hét",
-      "markers": "FSH (rekombináns kontroll), inhibin-B (Sertoli-aktivitás-marker — KÖTELEZŐ), Total Test (HCG-co-admin effect), E2.",
+      "markers": "FSH (rekombináns kontroll), inhibin-B (Sertoli-aktivitás-marker – KÖTELEZŐ), Total Test (HCG-co-admin effect), E2.",
       "purpose": "Inhibin-B emelkedés a Sertoli-restart indikátora. Ha inhibin-B NEM emelkedik 4 hét után, dose-emelés (150 → 225 IU EOD) mérlegelhető."
     },
     "postCycle": {

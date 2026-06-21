@@ -154,7 +154,7 @@ export function LabTerminal({ rows, accent, tr }) {
  className="relative p-5 rounded-2xl overflow-hidden"
  style={{
  // Always-dark terminal aesthetic (NOT var(--bg-tile)) so the monospace data +
- // the light row text stay readable in light mode too — a dark code/terminal
+ // the light row text stay readable in light mode too – a dark code/terminal
  // panel reads as intentional on a light page.
  background: '#0b0e1a',
  border: `1px solid ${accent}44`,

@@ -1,4 +1,4 @@
-// ECA-stack (Ephedrine + Caffeine + Aspirin) — klasszikus 1990-es évek
+// ECA-stack (Ephedrine + Caffeine + Aspirin) – klasszikus 1990-es évek
 // thermogenic-stack. Sources: Astrup 1992 PMID 1346830, Greenway 2001
 // PMID 11707560, Boozer 2002 PMID 12122475, Daly 1993 PMID 8367356,
 // FDA 2004 ephedra consumer update, Yokota 2013 acetaminophen-ephedra hepatic.
@@ -29,7 +29,7 @@ export default {
   "accentColor": "#f97316",
   "tagColor": "rgba(249,115,22,0.18)",
   "shortDesc": "Ephedrine 25 mg + Caffeine 200 mg + Aspirin 81 mg klasszikus 1990-es évek thermogenic-stack. Astrup 1992 Lancet obesity-trial (PMID 1346830) szerint ~3x potenseebb mint ephedrine önállóan; FDA 2004 ephedra-ban óta EU Rx-only, blackmarket fat-burner-protokoll.",
-  "description": "Az ECA-stack (Ephedrine + Caffeine + Aspirin) az 1990-es évek thermogenic fat-loss-protokollja, ami Astrup 1992 Lancet obesity-trial (PMID 1346830) után robbant be a bodybuilding underground-ba. A három komponens szinergisztikus mechanizmusa: az ephedrine α/β-sympathomimetikus alkaloid noradrenerg-szabadulást indít a presynaptic-vezikulumokból; a caffeine PDE-inhibitor és adenosine-receptor-antagonist a cAMP-degradációt gátolja, így az ephedrine-effekt prolongál; az aspirin (81 mg low-dose) endothelial prostaglandin-modulációval az ephedrine-vasoconstrictive-rebound-ot tompítja. Daly 1993 Am J Clin Nutr (PMID 8367356) RCT-evidence: a 25/200 mg-os ephedrine+caffeine kombináció ~3x potenseebb thermogenic-rate-elevation-t okoz, mint ephedrine önállóan. Boozer 2002 Int J Obes (PMID 12122475) 6-hónapos RCT obesity-cohort-on 7.2 kg fat-loss-t mért placebo-2.4 kg-mal szemben. FDA 2004 Consumer Update az ephedra-banned ban-listára helyezte 100+ halál + 16 000+ adverse-event-report után (kardiovaszkuláris stroke + AMI-cluster), így az EU R03CA02 (ephedrine ATC-class) vény-köteles lett. Aspirin OTC, caffeine OTC. WADA S6 stimulant — in-competition banned.",
+  "description": "Az ECA-stack (Ephedrine + Caffeine + Aspirin) az 1990-es évek thermogenic fat-loss-protokollja, ami Astrup 1992 Lancet obesity-trial (PMID 1346830) után robbant be a bodybuilding underground-ba. A három komponens szinergisztikus mechanizmusa: az ephedrine α/β-sympathomimetikus alkaloid noradrenerg-szabadulást indít a presynaptic-vezikulumokból; a caffeine PDE-inhibitor és adenosine-receptor-antagonist a cAMP-degradációt gátolja, így az ephedrine-effekt prolongál; az aspirin (81 mg low-dose) endothelial prostaglandin-modulációval az ephedrine-vasoconstrictive-rebound-ot tompítja. Daly 1993 Am J Clin Nutr (PMID 8367356) RCT-evidence: a 25/200 mg-os ephedrine+caffeine kombináció ~3x potenseebb thermogenic-rate-elevation-t okoz, mint ephedrine önállóan. Boozer 2002 Int J Obes (PMID 12122475) 6-hónapos RCT obesity-cohort-on 7.2 kg fat-loss-t mért placebo-2.4 kg-mal szemben. FDA 2004 Consumer Update az ephedra-banned ban-listára helyezte 100+ halál + 16 000+ adverse-event-report után (kardiovaszkuláris stroke + AMI-cluster), így az EU R03CA02 (ephedrine ATC-class) vény-köteles lett. Aspirin OTC, caffeine OTC. WADA S6 stimulant – in-competition banned.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -52,8 +52,8 @@ export default {
       "value": "HU ephedrine ATC R03CA02 Rx; EU R03 Rx-only (FDA 2004 ban óta); aspirin OTC; caffeine OTC. WADA S6 in-competition banned."
     }
   ],
-  "mechanism": "Az ECA-stack három különböző sympathomimetic + xantin + szalicilát komponens szinergisztikus thermogenic-aktivációja. Ephedrine: α1/α2 + β1/β2-adrenoceptor mixed-agonist, részben presynaptic noradrenaline-releasing agent (NRA) is — a vezikuláris noradrenaline-pool depletes 20-30 perc alatt single-dose-on, ezért a tachyphylaxis 4-6 hét chronic-use-on dokumentált. Caffeine: nem-szelektív adenosine-receptor-antagonist (A1+A2A) + PDE-3+PDE-4 inhibitor. Az adenosine-antagonizmus a hypothalamic + locus-coeruleus-feedback-suppression-t megszünteti, ami további noradrenaline-release-t enged; a PDE-gátlás a cAMP-degradációt csökkenti, így az ephedrine-mediated β-receptor-signaling prolongál. Aspirin (low-dose 81 mg): COX-1 inhibitor, az endothelial thromboxane-A2-szintézist gátolja, ami az ephedrine-vasoconstrictive-rebound + platelet-aggregation-risk-et tompítja. A három hatóanyag együttes adagolása ~3x potenseebb thermogenic-rate-emelést okoz +250-300 kcal/nap REE-növekedéssel egészséges felnőtt férfin (Astrup 1992, Daly 1993). A mechanizmus DOSE-DEPENDENT cardiovascular-risk-emelést is okoz: a noradrenaline-release plus vasoconstrictive-effekt synergikus BP-emelkedést okoz (+10-20 mmHg sysztolés, +5-10 mmHg diasztolés), HR-emelkedés (+15-25 bpm), QTc-prolongation potential 4-week-cikluson belül mérhető.",
-  "legalStatus": "USA: ephedrine kontrollált a Combat Methamphetamine Epidemic Act 2005 alatt (≤3.6 g/30-nap OTC limit, behind-counter regisztráció); ephedra-dietary supplements 2004 óta tilosak (FDA Consumer Update). EU + EMA: ephedrine R03CA02 ATC-class, vény-köteles Rx (asthma + nasal decongestant) — 2004 óta dietary-supplement-formátum tilos. HU: ephedrine vény-köteles (R03CA02), aspirin OTC, caffeine OTC. PL: ephedrine vény-köteles (R03CA02), aspirin OTC, caffeine OTC. WADA: ephedrine S6 stimulant in-competition banned (vizelet-küszöb 10 μg/mL); pseudoephedrine 2010 óta WADA-listán (vizelet-küszöb 150 μg/mL). Caffeine 2004 óta NEM banned (monitored). Aspirin allowed.",
+  "mechanism": "Az ECA-stack három különböző sympathomimetic + xantin + szalicilát komponens szinergisztikus thermogenic-aktivációja. Ephedrine: α1/α2 + β1/β2-adrenoceptor mixed-agonist, részben presynaptic noradrenaline-releasing agent (NRA) is – a vezikuláris noradrenaline-pool depletes 20-30 perc alatt single-dose-on, ezért a tachyphylaxis 4-6 hét chronic-use-on dokumentált. Caffeine: nem-szelektív adenosine-receptor-antagonist (A1+A2A) + PDE-3+PDE-4 inhibitor. Az adenosine-antagonizmus a hypothalamic + locus-coeruleus-feedback-suppression-t megszünteti, ami további noradrenaline-release-t enged; a PDE-gátlás a cAMP-degradációt csökkenti, így az ephedrine-mediated β-receptor-signaling prolongál. Aspirin (low-dose 81 mg): COX-1 inhibitor, az endothelial thromboxane-A2-szintézist gátolja, ami az ephedrine-vasoconstrictive-rebound + platelet-aggregation-risk-et tompítja. A három hatóanyag együttes adagolása ~3x potenseebb thermogenic-rate-emelést okoz +250-300 kcal/nap REE-növekedéssel egészséges felnőtt férfin (Astrup 1992, Daly 1993). A mechanizmus DOSE-DEPENDENT cardiovascular-risk-emelést is okoz: a noradrenaline-release plus vasoconstrictive-effekt synergikus BP-emelkedést okoz (+10-20 mmHg sysztolés, +5-10 mmHg diasztolés), HR-emelkedés (+15-25 bpm), QTc-prolongation potential 4-week-cikluson belül mérhető.",
+  "legalStatus": "USA: ephedrine kontrollált a Combat Methamphetamine Epidemic Act 2005 alatt (≤3.6 g/30-nap OTC limit, behind-counter regisztráció); ephedra-dietary supplements 2004 óta tilosak (FDA Consumer Update). EU + EMA: ephedrine R03CA02 ATC-class, vény-köteles Rx (asthma + nasal decongestant) – 2004 óta dietary-supplement-formátum tilos. HU: ephedrine vény-köteles (R03CA02), aspirin OTC, caffeine OTC. PL: ephedrine vény-köteles (R03CA02), aspirin OTC, caffeine OTC. WADA: ephedrine S6 stimulant in-competition banned (vizelet-küszöb 10 μg/mL); pseudoephedrine 2010 óta WADA-listán (vizelet-küszöb 150 μg/mL). Caffeine 2004 óta NEM banned (monitored). Aspirin allowed.",
   "onsetTime": "30-60 perc, thermogenic-peak 1-2 óra",
   "halfLife": "Ephedrine 3-6 óra; caffeine 5 óra; aspirin 4-6 óra (parent-only)",
   "interactionsWith": [
@@ -61,8 +61,8 @@ export default {
     "albuterol",    "mirabegron",
     "liothyronine"
   ],
-  "aromatization": "Nem aromatizál (nem szteroid hatóanyag — sympathomimetikus alkaloid + xantin + szalicilát kombináció). Nincs CYP19-interakció.",
-  "hepatotoxicity": "Közepes — ephedrine krónikus cardio-stress + acetaminophen ECA-stack-blend kombináció esetén hepatikus interakció dokumentált (Yokota 2013 PMID 23545017). Aspirin chronic high-dose Reye-szindróma-risk (gyermek-kontraindikáció). Ephedra-blackmarket-blendek 2004 előtt acute hepatitis-case-cluster (FDA Consumer Update 2004).",
+  "aromatization": "Nem aromatizál (nem szteroid hatóanyag – sympathomimetikus alkaloid + xantin + szalicilát kombináció). Nincs CYP19-interakció.",
+  "hepatotoxicity": "Közepes – ephedrine krónikus cardio-stress + acetaminophen ECA-stack-blend kombináció esetén hepatikus interakció dokumentált (Yokota 2013 PMID 23545017). Aspirin chronic high-dose Reye-szindróma-risk (gyermek-kontraindikáció). Ephedra-blackmarket-blendek 2004 előtt acute hepatitis-case-cluster (FDA Consumer Update 2004).",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nem AAS, sympathomimetic + xantin + szalicilát)",
   "bindingAffinity": "Ephedrine α1-AR Ki ~50 μM (low-affinity, indirect NRA-dominant); β1/β2 Ki ~10 μM. Caffeine A1-receptor Ki ~12 μM, A2A-receptor Ki ~2.4 μM. Aspirin COX-1 IC50 ~3.2 μM.",
@@ -91,7 +91,7 @@ export default {
     },
     {
       "label": "2-3. hét",
-      "body": "Steady-state thermogenic-rate. Fat-loss tempó +0.5-0.8 kg/hét adekvát kalória-deficitben (Boozer 2002 6-hónap-rate analóg). Mild tachyphylaxis a 3. hét vége felé érezhető — dose-escalation NEM ajánlott (cardiovascular-risk-multiplier)."
+      "body": "Steady-state thermogenic-rate. Fat-loss tempó +0.5-0.8 kg/hét adekvát kalória-deficitben (Boozer 2002 6-hónap-rate analóg). Mild tachyphylaxis a 3. hét vége felé érezhető – dose-escalation NEM ajánlott (cardiovascular-risk-multiplier)."
     },
     {
       "label": "4-6. hét + cycle-off",
@@ -103,37 +103,37 @@ export default {
       "Ephedrine HCl 25 mg tabletta pharmacy-szourzott (HU + EU Rx, R03CA02 ATC-class)",
       "Caffeine OTC No-Doz / Vivarin tablet vagy pharmaceutical-grade caffeine 200 mg",
       "Aspirin 81 mg low-dose cardio-protective OTC (Bayer Aspirin Cardio + generic)",
-      "Pre-formulated ECA-blend dietary supplements 2004 óta FDA-tilosak — DO NOT use blackmarket pre-blends (label-claim discrepancy + acetaminophen-blend-risk Yokota 2013)"
+      "Pre-formulated ECA-blend dietary supplements 2004 óta FDA-tilosak – DO NOT use blackmarket pre-blends (label-claim discrepancy + acetaminophen-blend-risk Yokota 2013)"
     ],
     "caution": [
       "BP home-tracking 2x/nap (AM + estére), heti átlag napló (cardiovascular-risk-monitoring)",
       "EKG-baseline + 4-week-check (QTc-prolongation + arrhythmia-monitoring)",
-      "Insomnia-risk magas — last dose 16:00 előtt mandatory",
+      "Insomnia-risk magas – last dose 16:00 előtt mandatory",
       "Anxietás + irritability subjektív side-effect dose-dependent",
       "Krónikus aspirin GI-bleed-risk (low-dose 81 mg cardio-protective tartomány biztonságos PPI-szel; >325 mg/nap GI-ulcer-risk)",
-      "Tachyphylaxis 4-6 hét után — cycle-off 2-4 hét javasolt, dose-escalation NEM"
+      "Tachyphylaxis 4-6 hét után – cycle-off 2-4 hét javasolt, dose-escalation NEM"
     ],
     "avoid": [
-      "Súlyos hypertonia (>140/90 mmHg) — abszolút kontraindikáció (FDA 2004 ephedra ban kardiovaszkuláris stroke + AMI-cluster)",
-      "Pre-existing tachyarrhythmia, AF, cardiomyopathy — abszolút kontraindikáció",
-      "Krónikus β-blokkoló-terápia — α-receptor-unopposed vasoconstriction-risk",
-      "MAO-inhibitor (phenelzine, tranylcypromine) — hypertensiv-krízis-risk abszolút kontraindikáció",
-      "SSRI/SNRI (sertraline, venlafaxine) — serotonin-szindróma-risk relativ kontraindikáció",
-      "Hyperthyroidism / Graves-betegség — abszolút kontraindikáció (additív sympathomimetic-storm)",
-      "Pheochromocytoma — abszolút kontraindikáció",
+      "Súlyos hypertonia (>140/90 mmHg) – abszolút kontraindikáció (FDA 2004 ephedra ban kardiovaszkuláris stroke + AMI-cluster)",
+      "Pre-existing tachyarrhythmia, AF, cardiomyopathy – abszolút kontraindikáció",
+      "Krónikus β-blokkoló-terápia – α-receptor-unopposed vasoconstriction-risk",
+      "MAO-inhibitor (phenelzine, tranylcypromine) – hypertensiv-krízis-risk abszolút kontraindikáció",
+      "SSRI/SNRI (sertraline, venlafaxine) – serotonin-szindróma-risk relativ kontraindikáció",
+      "Hyperthyroidism / Graves-betegség – abszolút kontraindikáció (additív sympathomimetic-storm)",
+      "Pheochromocytoma – abszolút kontraindikáció",
       "Pregnancy + szoptatás (FDA Category C)",
       "Pre-formulated ECA-blend dietary supplements (label-claim discrepancy + acetaminophen-blend hepatotoxicity)",
-      "Gyermek (<16 év) — Reye-szindróma-risk aspirin-on"
+      "Gyermek (<16 év) – Reye-szindróma-risk aspirin-on"
     ]
   },
   "interactions": [
-    "Clenbuterol + Albuterol — additív β2-sympathomimetic kardio-stressz, tachycardia + hypertonia-multiplier, KONTRAINDIKÁLT",
-    "Mirabegron — β3 + β1/β2 spillover additív cardiac-stress, kerülni javasolt",
-    "MAO-inhibitor (phenelzine) — hypertensiv-krízis, KONTRAINDIKÁLT",
-    "SSRI/SNRI — serotonin-szindróma-risk, low-dose-escalation óvatosság",
-    "Liothyronine (T3) — additív cardiac-tachyphylaxis-risk, mindkét cycle-monitoring szigorú",
-    "Acetaminophen (paracetamol) — Yokota 2013 dokumentált hepatic-interaction (PMID 23545017), kerülni",
-    "Warfarin — aspirin INR-emelkedés, dose-adjust + INR-monitoring szükséges"
+    "Clenbuterol + Albuterol – additív β2-sympathomimetic kardio-stressz, tachycardia + hypertonia-multiplier, KONTRAINDIKÁLT",
+    "Mirabegron – β3 + β1/β2 spillover additív cardiac-stress, kerülni javasolt",
+    "MAO-inhibitor (phenelzine) – hypertensiv-krízis, KONTRAINDIKÁLT",
+    "SSRI/SNRI – serotonin-szindróma-risk, low-dose-escalation óvatosság",
+    "Liothyronine (T3) – additív cardiac-tachyphylaxis-risk, mindkét cycle-monitoring szigorú",
+    "Acetaminophen (paracetamol) – Yokota 2013 dokumentált hepatic-interaction (PMID 23545017), kerülni",
+    "Warfarin – aspirin INR-emelkedés, dose-adjust + INR-monitoring szükséges"
   ],
   "studies": [
     {
@@ -177,15 +177,15 @@ export default {
       "a": "Az FDA 2004 Consumer Update az ephedra-dietary-supplements-eket banned-listára helyezte 100+ halál + 16 000+ adverse-event-report után (kardiovaszkuláris stroke + AMI-cluster, sudden cardiac death case-szerű). A magas-incidence-faktor: pre-formulated blendek dose-variance (label-claim 25 mg/cap ephedrine vs actual 30-50 mg) + komponens-kombinációk dokumentálatlan kardiovaszkuláris szinergizmusa. Pharma-Rx ephedrine NEM banned (R03CA02 vény-köteles), csak a dietary-supplement-formátum."
     },
     {
-      "q": "Clenbuterol vs ECA-stack — melyik jobb fat-loss-ra?",
-      "a": "Mindkettő β-sympathomimetic mechanism, de eltérő profil. Clenbuterol szelektív β2-agonist + hosszú t1/2 (~35-40 óra) → akkumuláció + szívizom-hipertrófia-risk dokumentált 8-hét chronic. ECA-stack mixed α/β + rövid t1/2 (3-6 óra ephedrine) → kontrollálhatóbb dosing, de gyakoribb cycle-mid-day-fluktuáció. Clenbuterol cyclic 2-on/2-off népszerű, ECA-stack continuous 4-6 hét standard. Mindkettő kardiovaszkuláris-risk magas — BP + EKG monitoring kötelező."
+      "q": "Clenbuterol vs ECA-stack – melyik jobb fat-loss-ra?",
+      "a": "Mindkettő β-sympathomimetic mechanism, de eltérő profil. Clenbuterol szelektív β2-agonist + hosszú t1/2 (~35-40 óra) → akkumuláció + szívizom-hipertrófia-risk dokumentált 8-hét chronic. ECA-stack mixed α/β + rövid t1/2 (3-6 óra ephedrine) → kontrollálhatóbb dosing, de gyakoribb cycle-mid-day-fluktuáció. Clenbuterol cyclic 2-on/2-off népszerű, ECA-stack continuous 4-6 hét standard. Mindkettő kardiovaszkuláris-risk magas – BP + EKG monitoring kötelező."
     },
     {
       "q": "Milyen kardiovaszkuláris kontraindikációk?",
       "a": "Abszolút kontraindikációk: súlyos hypertonia (>140/90 mmHg), pre-existing tachyarrhythmia/AF, cardiomyopathy, pheochromocytoma, hyperthyroidism/Graves-betegség, MAO-inhibitor-co-administration. Relativ kontraindikációk: SSRI/SNRI (serotonin-szindróma-risk), krónikus β-blokkoló-terápia (α-receptor-unopposed vasoconstriction), pregnancy/szoptatás (FDA Category C), gyermek <16 év (Reye-szindróma aspirin-on). Pre-cycle 12-lead EKG + BP home-tracking 7-nap baseline minimum protokoll."
     },
     {
-      "q": "Tolerance + cycle-off — miért kötelező?",
+      "q": "Tolerance + cycle-off – miért kötelező?",
       "a": "Az ephedrine-on tachyphylaxis 4-6 hét chronic-use-on dokumentált: a presynaptic noradrenaline-vesicular-pool depletálódik, és a postsynaptic β-receptor-density downregulation csökkenti az aktivációs response-t. Dose-escalation NEM segít (cardiovascular-risk-multiplier), helyette 2-4 hét OFF receptor-recovery + vesicular-noradrenaline-resynthesis kötelező. Caffeine-on rövidebb tachyphylaxis (~7-10 nap), de adenosine-receptor-density rebound 4-7 nap caffeine-free után. Full ECA-stack OFF-window 2-4 hét cycle-után optimum."
     }
   ],
@@ -200,7 +200,7 @@ export default {
       "high": 75
     },
     "unit": "mg ephedrine/nap (200/81 mg caffeine/aspirin co-dose)",
-    "note": "Standard ECA-stack: 25 mg ephedrine + 200 mg caffeine + 81 mg aspirin PO 2-3x/nap (AM + early-afternoon). Cycle-length 4-6 hét MAX, majd 2-4 hét OFF (ephedrine-tachyphylaxis + cardiovascular-recovery). Pre-cycle BP + EKG baseline; mid-cycle 4-week-check; post-cycle 2-week BP + lipid panel + liver-enzymes confirm-recovery. Last dose 16:00 előtt mandatory (insomnia-prevention). WADA S6 in-competition banned — versenysport-aktív TILOS."
+    "note": "Standard ECA-stack: 25 mg ephedrine + 200 mg caffeine + 81 mg aspirin PO 2-3x/nap (AM + early-afternoon). Cycle-length 4-6 hét MAX, majd 2-4 hét OFF (ephedrine-tachyphylaxis + cardiovascular-recovery). Pre-cycle BP + EKG baseline; mid-cycle 4-week-check; post-cycle 2-week BP + lipid panel + liver-enzymes confirm-recovery. Last dose 16:00 előtt mandatory (insomnia-prevention). WADA S6 in-competition banned – versenysport-aktív TILOS."
   },
   "bloodwork": {
     "preCycle": {

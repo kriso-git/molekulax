@@ -1,4 +1,4 @@
-// Performance library — 4 form-factor (route-of-administration) tags per
+// Performance library – 4 form-factor (route-of-administration) tags per
 // Sub-Task 1 of the 2026-05-19 perf-restructure mega-phase. Kept in a separate
 // module from categories.js so the taxonomy file stays focused.
 //

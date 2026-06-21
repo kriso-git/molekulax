@@ -1,4 +1,4 @@
-// HCG (Pregnyl / Novarel / Choragon) — Ludzka Gonadotropina Kosmówkowa,
+// HCG (Pregnyl / Novarel / Choragon) – Ludzka Gonadotropina Kosmówkowa,
 // framing PCT po AAS. Wpis cross-frame: przyszły batch biblioteki peptydów
 // doda counterpart `hcg-peptid` z framingiem fertility-clinic. Źródła: FDA
 // Pregnyl SmPC (Organon 1973), EMA Choragon SPC, Liu 2002 PMID 12424222,
@@ -28,8 +28,8 @@ export default {
   "image": "/performance/water-vial.png",
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
-  "shortDesc": "Ludzka Gonadotropina Kosmówkowa — analog strukturalny LH, stymulator receptora LHCGR komórek Leydiga. Pomost PCT po AAS przeciw atrofii jąder i do restartu HPTA. Cross-frame: w przyszłej bibliotece peptydów dojdzie `hcg-peptid` z framingiem fertility-clinic.",
-  "description": "HCG (Ludzka Gonadotropina Kosmówkowa) to glikoproteina 244-aminokwasowa (podjednostka α + β), strukturalnie analog LH z ~80% identycznością sekwencji na podjednostce β. Endogenne źródło: łożyskowy syncytiotrophoblast ciąży → krew + mocz (szczyt w 8-12 tygodniu ciąży). Kliniczne źródła HCG: (1) wyekstrahowany z moczu (uHCG) — oczyszczony z moczu kobiet w ciąży (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring UE); (2) rekombinowany (rHCG / choriogonadotropina alfa) — Serono Ovidrel/Ovitrelle ekspresja CHO, wyższa czystość. Mechanizm: agonizm receptora LHCGR komórek Leydiga → egzogenna mimikra LH → testikularna produkcja testosteronu. **Kontekst PCT po AAS**: HCG mostuje okno supresji LH, kiedy własna przysadka jeszcze nie wydziela wystarczającej ilości LH. Dwa główne protokoły użycia: **mid-cycle HCG** (250-500 IU 2-3x/tydzień przez cały cykl AAS — zapobieganie atrofii jąder); **PCT-blast HCG** (1500-2500 IU EOD × 10-14 dni po ostatniej iniekcji AAS, potem przejście na SERM PCT). **Uwaga cross-frame**: to jest wpis z sufiksem `-perf`; przyszły batch biblioteki peptydów doda wpis `hcg-peptid` (framing fertility-clinic — IVF czynnik męski + kontekst Rx wtórnego hipogonadyzmu, IDENTYCZNA cząsteczka, inna narracja). WADA-zakazany cały rok (S2 Hormony Peptydowe).",
+  "shortDesc": "Ludzka Gonadotropina Kosmówkowa – analog strukturalny LH, stymulator receptora LHCGR komórek Leydiga. Pomost PCT po AAS przeciw atrofii jąder i do restartu HPTA. Cross-frame: w przyszłej bibliotece peptydów dojdzie `hcg-peptid` z framingiem fertility-clinic.",
+  "description": "HCG (Ludzka Gonadotropina Kosmówkowa) to glikoproteina 244-aminokwasowa (podjednostka α + β), strukturalnie analog LH z ~80% identycznością sekwencji na podjednostce β. Endogenne źródło: łożyskowy syncytiotrophoblast ciąży → krew + mocz (szczyt w 8-12 tygodniu ciąży). Kliniczne źródła HCG: (1) wyekstrahowany z moczu (uHCG) – oczyszczony z moczu kobiet w ciąży (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring UE); (2) rekombinowany (rHCG / choriogonadotropina alfa) – Serono Ovidrel/Ovitrelle ekspresja CHO, wyższa czystość. Mechanizm: agonizm receptora LHCGR komórek Leydiga → egzogenna mimikra LH → testikularna produkcja testosteronu. **Kontekst PCT po AAS**: HCG mostuje okno supresji LH, kiedy własna przysadka jeszcze nie wydziela wystarczającej ilości LH. Dwa główne protokoły użycia: **mid-cycle HCG** (250-500 IU 2-3x/tydzień przez cały cykl AAS – zapobieganie atrofii jąder); **PCT-blast HCG** (1500-2500 IU EOD × 10-14 dni po ostatniej iniekcji AAS, potem przejście na SERM PCT). **Uwaga cross-frame**: to jest wpis z sufiksem `-perf`; przyszły batch biblioteki peptydów doda wpis `hcg-peptid` (framing fertility-clinic – IVF czynnik męski + kontekst Rx wtórnego hipogonadyzmu, IDENTYCZNA cząsteczka, inna narracja). WADA-zakazany cały rok (S2 Hormony Peptydowe).",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -66,7 +66,7 @@ export default {
     "testosterone-info"
   ],
   "aromatization": "Pośrednia: HCG → Leydig Test → peryferyjna konwersja E2 przez testikularną + adipocytarną aromatazę CYP19. Wielkość umiarkowana-do-wysokiej (wzrost Test większy niż na TRT), przy wyższych dawkach HCG (>2000 IU EOD) współpodanie AI (Anastrozol 0,25-0,5 mg EOD) często wskazane u użytkowników wrażliwych na ginekomastię. Na protokole PCT-blast obserwacja rebound E2 obowiązkowa.",
-  "hepatotoxicity": "Brak stresu wątrobowego — iniekcja podskórna (SC) lub domięśniowa (IM) opartego na białku, NIE doustnie, NIE 17α-alkilowany. Wzrost enzymów wątrobowych nie udokumentowany w bazie badań.",
+  "hepatotoxicity": "Brak stresu wątrobowego – iniekcja podskórna (SC) lub domięśniowa (IM) opartego na białku, NIE doustnie, NIE 17α-alkilowany. Wzrost enzymów wątrobowych nie udokumentowany w bazie badań.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nie AAS; pośrednia stymulacja testikularnego Test)",
   "bindingAffinity": "Powinowactwo do receptora LHCGR Kd ~0,1 nM. Unikalna własność: z powodu ogona CTP HCG dysocjuje od receptora wolniej niż LH → przedłużona stymulacja na cząsteczkę.",
@@ -107,11 +107,11 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Pregnyl 5000 IU fiolka (Organon, obecnie Merck) — jakość Rx farmaceutyczna (UE + USA dostępne)",
-      "Novarel 10000 IU fiolka (Ferring) — jakość Rx farmaceutyczna (USA)",
-      "Choragon 5000 IU fiolka (Ferring UE) — jakość Rx farmaceutyczna",
-      "Ovidrel/Ovitrelle 250 µg (rekombinowany HCG, Serono) — wyższa czystość, droższy, strzykawka napełniona",
-      "UGL liquid HCG — HPLC + immunoassay-testowane źródło obowiązkowe; często słabo skoncentrowany (lub przerwany łańcuch chłodniczy, aktywność kliniczna spada)"
+      "Pregnyl 5000 IU fiolka (Organon, obecnie Merck) – jakość Rx farmaceutyczna (UE + USA dostępne)",
+      "Novarel 10000 IU fiolka (Ferring) – jakość Rx farmaceutyczna (USA)",
+      "Choragon 5000 IU fiolka (Ferring UE) – jakość Rx farmaceutyczna",
+      "Ovidrel/Ovitrelle 250 µg (rekombinowany HCG, Serono) – wyższa czystość, droższy, strzykawka napełniona",
+      "UGL liquid HCG – HPLC + immunoassay-testowane źródło obowiązkowe; często słabo skoncentrowany (lub przerwany łańcuch chłodniczy, aktywność kliniczna spada)"
     ],
     "caution": [
       "Długoterminowa wysoka dawka (>2500 IU EOD chronicznie) → ryzyko downregulacji receptora Leydiga (>4 tygodnie ciągle przeciwwskazane)",
@@ -129,9 +129,9 @@ export default {
     ]
   },
   "interactions": [
-    "Współpodanie AI (Anastrozol 0,25-0,5 mg EOD): łagodzenie rebound E2 — zalecane u użytkowników wrażliwych na ginekomastię",
+    "Współpodanie AI (Anastrozol 0,25-0,5 mg EOD): łagodzenie rebound E2 – zalecane u użytkowników wrażliwych na ginekomastię",
     "Bridge SERM (Nolvadex 20-40 mg/dzień, Clomid 25-50 mg/dzień): protokół PCT, startowany po blast HCG",
-    "Mid-cycle współpodanie AAS: kompatybilny ze wszystkimi klasycznymi AAS (Test/Tren/Mast/Dianabol/Anavar — cel prewencji atrofii)",
+    "Mid-cycle współpodanie AAS: kompatybilny ze wszystkimi klasycznymi AAS (Test/Tren/Mast/Dianabol/Anavar – cel prewencji atrofii)",
     "Zastępcza testosteronu (TRT): współpodanie niestandardowe (ratunek HCG tylko w przypadku nieprawidłowej odbudowy)",
     "Współpodanie FSH-rec (Gonal-F): cel odbudowy azoospermii, pełny stymulus osi HPG",
     "Inne peptydy (CJC-1295, Ipamorelin, BPC-157): brak interakcji, kompatybilny"
@@ -164,8 +164,8 @@ export default {
   ],
   "faq": [
     {
-      "q": "Mid-cycle HCG vs PCT-blast HCG — co robi każdy?",
-      "a": "Dwa odrębne protokoły z różnymi celami. **Mid-cycle**: 250-500 IU 2-3x/tydzień przez cały cykl AAS — PREWENCJA ATROFII jąder (zachowanie tkanki jąder, szybsza odbudowa po cyklu). **PCT-blast**: 1500-2500 IU EOD × 10-14 dni w pierwszych 2 tygodniach po końcu cyklu — RESTART HPTA z bypassem Leydiga (mostuje własne okno supresji przysadkowego LH). Oba protokoły są następnie wspierane przez SERM PCT (Nolvadex) dla pełnej odbudowy HPTA."
+      "q": "Mid-cycle HCG vs PCT-blast HCG – co robi każdy?",
+      "a": "Dwa odrębne protokoły z różnymi celami. **Mid-cycle**: 250-500 IU 2-3x/tydzień przez cały cykl AAS – PREWENCJA ATROFII jąder (zachowanie tkanki jąder, szybsza odbudowa po cyklu). **PCT-blast**: 1500-2500 IU EOD × 10-14 dni w pierwszych 2 tygodniach po końcu cyklu – RESTART HPTA z bypassem Leydiga (mostuje własne okno supresji przysadkowego LH). Oba protokoły są następnie wspierane przez SERM PCT (Nolvadex) dla pełnej odbudowy HPTA."
     },
     {
       "q": "Czy HCG aromatyzuje? Ile?",
@@ -176,12 +176,12 @@ export default {
       "a": "Standardowy protokół: 1 mL lub 2 mL wody bakteriostatycznej (BAC, sterylna woda zakonserwowana benzylo-alkoholem) do fiolki 5000 IU. 1 mL → koncentracja 5000 IU/mL; 2 mL → 2500 IU/mL. Sterylna praktyka: czyszczenie alkoholowe, NIE wstrząsać (denaturacja), delikatne wirowanie. Iniekcja SC lub IM (SC wygodniejsza, w tkankę brzucha lub uda, strzykawka insulinowa 27-30G). Przechowywać roztwór po rekonstytucji w 2-8°C przez 30 dni (potem aktywność kliniczna spada)."
     },
     {
-      "q": "Pregnyl vs Ovidrel vs UGL — który wybrać?",
-      "a": "**Pregnyl/Choragon (urinary)**: złoty standard, dostępny w aptekach UE (~€20/5000 IU), 60+ lat literatury klinicznej. **Ovidrel/Ovitrelle (rekombinowany)**: wyższa czystość (strzykawka napełniona 250 µg), droższy (~€40-60/dawkę), dostępny w USA. **UGL**: HPLC + immunoassay-testowane źródło OBOWIĄZKOWE — HCG UGL często słabo skoncentrowany lub przerwany łańcuch chłodniczy (aktywność spada). Klinicznie: pharma > UGL >> źródło niepewne."
+      "q": "Pregnyl vs Ovidrel vs UGL – który wybrać?",
+      "a": "**Pregnyl/Choragon (urinary)**: złoty standard, dostępny w aptekach UE (~€20/5000 IU), 60+ lat literatury klinicznej. **Ovidrel/Ovitrelle (rekombinowany)**: wyższa czystość (strzykawka napełniona 250 µg), droższy (~€40-60/dawkę), dostępny w USA. **UGL**: HPLC + immunoassay-testowane źródło OBOWIĄZKOWE – HCG UGL często słabo skoncentrowany lub przerwany łańcuch chłodniczy (aktywność spada). Klinicznie: pharma > UGL >> źródło niepewne."
     },
     {
       "q": "Uwaga cross-frame: ten sam HCG jak w protokołach fertility-clinic?",
-      "a": "Tak — identyczna cząsteczka. Wpisy `hcg-perf` i przyszły `hcg-peptid` mają ~80% pokrycia treści (ta sama struktura chemiczna, farmakologia, droga podania). RÓŻNICA to framing: `hcg-perf` w kontekście pomostu PCT po AAS (peryferyjny stymulus Test, prewencja atrofii, doping), podczas gdy `hcg-peptid` (przyjdzie z przyszłym batchem biblioteki peptydów) z framingiem fertility-clinic (IVF czynnik męski + wtórny hipogonadyzm Rx, kliniczny kontekst Rx). Użytkownik może kupić tę samą fiolkę Pregnylu — tylko przeczyta przez inną narrację."
+      "a": "Tak – identyczna cząsteczka. Wpisy `hcg-perf` i przyszły `hcg-peptid` mają ~80% pokrycia treści (ta sama struktura chemiczna, farmakologia, droga podania). RÓŻNICA to framing: `hcg-perf` w kontekście pomostu PCT po AAS (peryferyjny stymulus Test, prewencja atrofii, doping), podczas gdy `hcg-peptid` (przyjdzie z przyszłym batchem biblioteki peptydów) z framingiem fertility-clinic (IVF czynnik męski + wtórny hipogonadyzm Rx, kliniczny kontekst Rx). Użytkownik może kupić tę samą fiolkę Pregnylu – tylko przeczyta przez inną narrację."
     }
   ],
   "related": [

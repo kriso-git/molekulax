@@ -1,7 +1,7 @@
 // Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:12:21.980Z
 // Phase 12: per-lang entry chunks. loadEntry(id, lang) dynamic-imports
 // entries/<lang>/<id>.js. Library-level fields (categories, effects, faq,
-// labels) still triplet — only entry bodies are lang-split.
+// labels) still triplet – only entry bodies are lang-split.
 
 import { CATEGORIES, PERFORMANCE_CATEGORIES, PERFORMANCE_SUB_CATEGORIES, SUB_SECTIONS, getPerformanceCategories, getPerformanceSubCategory } from './categories.js'
 import { FORM_FACTORS } from './formFactors.js'
@@ -70,9 +70,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
-      "hu": "Methasterone (2α,17α-dimetil-DHT-származék). Két adagolási mód: orális tabletta vs. underground injektábilis olaj — eltérő hepatikus profillal.",
-      "en": "Methasterone (2α,17α-dimethyl DHT derivative). Two administration routes: oral tablet vs. underground injectable oil — different hepatic profiles.",
-      "pl": "Methasterone (pochodna 2α,17α-dimetylo-DHT). Dwie drogi podania: doustna tabletka vs. iniekcyjny olej UGL — różne profile hepatyczne."
+      "hu": "Methasterone (2α,17α-dimetil-DHT-származék). Két adagolási mód: orális tabletta vs. underground injektábilis olaj – eltérő hepatikus profillal.",
+      "en": "Methasterone (2α,17α-dimethyl DHT derivative). Two administration routes: oral tablet vs. underground injectable oil – different hepatic profiles.",
+      "pl": "Methasterone (pochodna 2α,17α-dimetylo-DHT). Dwie drogi podania: doustna tabletka vs. iniekcyjny olej UGL – różne profile hepatyczne."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -264,9 +264,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#dc2626",
     "tagColor": "rgba(220,38,38,0.18)",
     "shortDesc": {
-      "hu": "Mesterolone, 1α-metil-DHT orális androgén Bayer Rx (Proviron-25, DE/AT/PL). Adjunkt-szerep AAS-ciklus alatt — SHBG-szuppresszor + enyhe AI, NEM standalone bulker.",
-      "en": "Mesterolone, 1α-methyl-DHT oral androgen Bayer Rx (Proviron-25, DE/AT/PL). Adjunct role during AAS cycle — SHBG suppressor + mild AI, NOT a standalone bulker.",
-      "pl": "Mesterolon, doustny androgen 1α-metylo-DHT Bayer Rx (Proviron-25, DE/AT/PL). Rola adiunkt podczas cyklu AAS — supresor SHBG + łagodny AI, NIE samodzielny bulker."
+      "hu": "Mesterolone, 1α-metil-DHT orális androgén Bayer Rx (Proviron-25, DE/AT/PL). Adjunkt-szerep AAS-ciklus alatt – SHBG-szuppresszor + enyhe AI, NEM standalone bulker.",
+      "en": "Mesterolone, 1α-methyl-DHT oral androgen Bayer Rx (Proviron-25, DE/AT/PL). Adjunct role during AAS cycle – SHBG suppressor + mild AI, NOT a standalone bulker.",
+      "pl": "Mesterolon, doustny androgen 1α-metylo-DHT Bayer Rx (Proviron-25, DE/AT/PL). Rola adiunkt podczas cyklu AAS – supresor SHBG + łagodny AI, NIE samodzielny bulker."
     },
     "tier": 4,
     "wadaStatus": "banned",
@@ -281,9 +281,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
-      "hu": "1-Testosterone Cypionát, designer-AAS injektábilis. Boldenone 5α-redukált analógja. Csak UGL, NEM aromatizál, alacsony hepatotoxicitás — DE notórius PIP miatt.",
-      "en": "1-Testosterone Cypionate, injectable designer AAS. 5α-reduced analog of Boldenone. UGL only, does NOT aromatize, low hepatotoxicity — but notorious for severe PIP.",
-      "pl": "1-Testosteron Cypionat, iniekcyjny designer AAS. Analog Boldenonu 5α-zredukowany. Tylko UGL, NIE aromatyzuje, niska hepatotoksyczność — ALE notoryczny ze względu na silny PIP."
+      "hu": "1-Testosterone Cypionát, designer-AAS injektábilis. Boldenone 5α-redukált analógja. Csak UGL, NEM aromatizál, alacsony hepatotoxicitás – DE notórius PIP miatt.",
+      "en": "1-Testosterone Cypionate, injectable designer AAS. 5α-reduced analog of Boldenone. UGL only, does NOT aromatize, low hepatotoxicity – but notorious for severe PIP.",
+      "pl": "1-Testosteron Cypionat, iniekcyjny designer AAS. Analog Boldenonu 5α-zredukowany. Tylko UGL, NIE aromatyzuje, niska hepatotoksyczność – ALE notoryczny ze względu na silny PIP."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -378,7 +378,7 @@ export const LIBRARY_ENTRY_META = [
   },
   {
     "id": "ment-test",
-    "name": "MENT (Trestolone) — szintetikus androgén frame",
+    "name": "MENT (Trestolone) – szintetikus androgén frame",
     "image": "/performance/oil-vial-yellow.png",
     "accentColor": "#1D9E75",
     "tagColor": "rgba(29,158,117,0.18)",
@@ -396,7 +396,7 @@ export const LIBRARY_ENTRY_META = [
   },
   {
     "id": "ment-19nor",
-    "name": "MENT (Trestolone) — 19-Nor progestin frame",
+    "name": "MENT (Trestolone) – 19-Nor progestin frame",
     "image": "/performance/oil-vial-yellow.png",
     "accentColor": "#D85A30",
     "tagColor": "rgba(216,90,48,0.18)",
@@ -453,9 +453,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#9333ea",
     "tagColor": "rgba(147,51,234,0.18)",
     "shortDesc": {
-      "hu": "Non-szteroidal SARM, Ligand Pharma 2007. Phase I egészséges férfi-alanyokban (Basaria 2013) — 1,21 kg lean mass @ 1 mg/nap. Második leghíresebb SARM. 12+ DILI esetjelentés (Vilaca 2018). WADA tiltott.",
-      "en": "Non-steroidal SARM, Ligand Pharma 2007. Phase I in healthy male subjects (Basaria 2013) — 1.21 kg lean mass @ 1 mg/day. Second most famous SARM. 12+ DILI case reports (Vilaca 2018). WADA-banned.",
-      "pl": "Niesterydowy SARM, Ligand Pharma 2007. Faza I u zdrowych męskich badanych (Basaria 2013) — 1,21 kg lean mass @ 1 mg/dzień. Drugi najsłynniejszy SARM. 12+ raportów DILI (Vilaca 2018). Zakazany WADA."
+      "hu": "Non-szteroidal SARM, Ligand Pharma 2007. Phase I egészséges férfi-alanyokban (Basaria 2013) – 1,21 kg lean mass @ 1 mg/nap. Második leghíresebb SARM. 12+ DILI esetjelentés (Vilaca 2018). WADA tiltott.",
+      "en": "Non-steroidal SARM, Ligand Pharma 2007. Phase I in healthy male subjects (Basaria 2013) – 1.21 kg lean mass @ 1 mg/day. Second most famous SARM. 12+ DILI case reports (Vilaca 2018). WADA-banned.",
+      "pl": "Niesterydowy SARM, Ligand Pharma 2007. Faza I u zdrowych męskich badanych (Basaria 2013) – 1,21 kg lean mass @ 1 mg/dzień. Drugi najsłynniejszy SARM. 12+ raportów DILI (Vilaca 2018). Zakazany WADA."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -504,9 +504,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#9333ea",
     "tagColor": "rgba(147,51,234,0.18)",
     "shortDesc": {
-      "hu": "Non-szteroidal SARM, GTx Inc 2005. EGYEDI mellékhatás: dose-dependent sárga látás + éjszakai vakság (Marhefka 2004 — retinal opszin-binding). 'Cutting SARM' hírnévvel. WADA tiltott.",
-      "en": "Non-steroidal SARM, GTx Inc 2005. UNIQUE side effect: dose-dependent yellow vision + night blindness (Marhefka 2004 — retinal opsin binding). 'Cutting SARM' reputation. WADA-banned.",
-      "pl": "Niesterydowy SARM, GTx Inc 2005. UNIKALNY skutek uboczny: zależne od dawki żółte widzenie + nocna ślepota (Marhefka 2004 — wiązanie opsynu siatkówki). Reputacja 'cutting SARM'. Zakazany WADA."
+      "hu": "Non-szteroidal SARM, GTx Inc 2005. EGYEDI mellékhatás: dose-dependent sárga látás + éjszakai vakság (Marhefka 2004 – retinal opszin-binding). 'Cutting SARM' hírnévvel. WADA tiltott.",
+      "en": "Non-steroidal SARM, GTx Inc 2005. UNIQUE side effect: dose-dependent yellow vision + night blindness (Marhefka 2004 – retinal opsin binding). 'Cutting SARM' reputation. WADA-banned.",
+      "pl": "Niesterydowy SARM, GTx Inc 2005. UNIKALNY skutek uboczny: zależne od dawki żółte widzenie + nocna ślepota (Marhefka 2004 – wiązanie opsynu siatkówki). Reputacja 'cutting SARM'. Zakazany WADA."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -589,9 +589,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "Tamoxifen-citrát, 1962 ICI szintézis, FDA-jóváhagyott (1977) ER+ emlőkarcinómára. Az AAS-PCT golden-standard SERM — pituiter ER-blokád → LH/FSH-disinhibíció → endogén testosterone-recovery.",
-      "en": "Tamoxifen citrate, ICI 1962 synthesis, FDA-approved (1977) for ER+ breast cancer. The AAS-PCT golden-standard SERM — pituitary ER blockade → LH/FSH disinhibition → endogenous testosterone recovery.",
-      "pl": "Cytrynian tamoksyfenu, synteza ICI 1962, zatwierdzony przez FDA (1977) dla ER+ raka piersi. Złoty standard PCT po AAS — blokada ER w przysadce → disinhibicja LH/FSH → odbudowa endogennego testosteronu."
+      "hu": "Tamoxifen-citrát, 1962 ICI szintézis, FDA-jóváhagyott (1977) ER+ emlőkarcinómára. Az AAS-PCT golden-standard SERM – pituiter ER-blokád → LH/FSH-disinhibíció → endogén testosterone-recovery.",
+      "en": "Tamoxifen citrate, ICI 1962 synthesis, FDA-approved (1977) for ER+ breast cancer. The AAS-PCT golden-standard SERM – pituitary ER blockade → LH/FSH disinhibition → endogenous testosterone recovery.",
+      "pl": "Cytrynian tamoksyfenu, synteza ICI 1962, zatwierdzony przez FDA (1977) dla ER+ raka piersi. Złoty standard PCT po AAS – blokada ER w przysadce → disinhibicja LH/FSH → odbudowa endogennego testosteronu."
     },
     "tier": 5,
     "wadaStatus": "restricted",
@@ -606,9 +606,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "Clomiphene-citrát, Merrell 1956 szintézis, FDA-jóváhagyott (1967) női infertilitásra (ovulációs disfunkció). Racém keverék (zuclo + enclomiphene) — utóbbi a PCT-aktív fél.",
-      "en": "Clomiphene citrate, Merrell 1956 synthesis, FDA-approved (1967) for female infertility (ovulatory dysfunction). Racemic mixture (zuclo + enclomiphene) — the latter is the PCT-active half.",
-      "pl": "Cytrynian klomifenu, synteza Merrell 1956, zatwierdzony przez FDA (1967) dla niepłodności kobiet (dysfunkcja owulacji). Mieszanina racemiczna (zuklo + enklomifen) — ten ostatni jest aktywną częścią PCT."
+      "hu": "Clomiphene-citrát, Merrell 1956 szintézis, FDA-jóváhagyott (1967) női infertilitásra (ovulációs disfunkció). Racém keverék (zuclo + enclomiphene) – utóbbi a PCT-aktív fél.",
+      "en": "Clomiphene citrate, Merrell 1956 synthesis, FDA-approved (1967) for female infertility (ovulatory dysfunction). Racemic mixture (zuclo + enclomiphene) – the latter is the PCT-active half.",
+      "pl": "Cytrynian klomifenu, synteza Merrell 1956, zatwierdzony przez FDA (1967) dla niepłodności kobiet (dysfunkcja owulacji). Mieszanina racemiczna (zuklo + enklomifen) – ten ostatni jest aktywną częścią PCT."
     },
     "tier": 5,
     "wadaStatus": "restricted",
@@ -623,9 +623,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "A clomiphene tiszta trans-izomerje — Repros Therapeutics 2014-2016 Phase III hypogonadism trial-jelölt. Tisztább SERM-profil mint a Clomid (zuclomiphene-mentes), DE FDA-CRL 2016 → nem törzskönyvezett.",
-      "en": "Pure trans-isomer of clomiphene — Repros Therapeutics 2014-2016 Phase III hypogonadism candidate. Cleaner SERM profile than Clomid (zuclomiphene-free), BUT FDA CRL 2016 → not approved.",
-      "pl": "Czysty trans-izomer klomifenu — kandydat Repros Therapeutics z badania Phase III hipogonadyzmu 2014-2016. Czystszy profil SERM niż Clomid (bez zuklomifenu), ALE FDA CRL 2016 → nie zatwierdzony."
+      "hu": "A clomiphene tiszta trans-izomerje – Repros Therapeutics 2014-2016 Phase III hypogonadism trial-jelölt. Tisztább SERM-profil mint a Clomid (zuclomiphene-mentes), DE FDA-CRL 2016 → nem törzskönyvezett.",
+      "en": "Pure trans-isomer of clomiphene – Repros Therapeutics 2014-2016 Phase III hypogonadism candidate. Cleaner SERM profile than Clomid (zuclomiphene-free), BUT FDA CRL 2016 → not approved.",
+      "pl": "Czysty trans-izomer klomifenu – kandydat Repros Therapeutics z badania Phase III hipogonadyzmu 2014-2016. Czystszy profil SERM niż Clomid (bez zuklomifenu), ALE FDA CRL 2016 → nie zatwierdzony."
     },
     "tier": 3,
     "wadaStatus": "restricted",
@@ -657,9 +657,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "Humán Chorionic Gonadotropin — LH-strukturális analóg, Leydig-sejt LHCGR-receptor stimulus. AAS-PCT bridge a testikulár-atrófia ellen és HPTA-restart-hoz. (Cross-frame: a future peptid-libben `hcg-peptid` fertility-clinic-framing-gel jön.)",
-      "en": "Human Chorionic Gonadotropin — LH structural analog, Leydig-cell LHCGR receptor stimulus. AAS-PCT bridge against testicular atrophy and for HPTA restart. (Cross-frame: future peptid library will add `hcg-peptid` with fertility-clinic framing.)",
-      "pl": "Ludzka Gonadotropina Kosmówkowa — analog strukturalny LH, stymulator receptora LHCGR komórek Leydiga. Pomost PCT po AAS przeciwko atrofii jąder i restartowi HPTA. (Cross-frame: w przyszłej bibliotece peptydów dojdzie `hcg-peptid` z framingiem fertility-clinic.)"
+      "hu": "Humán Chorionic Gonadotropin – LH-strukturális analóg, Leydig-sejt LHCGR-receptor stimulus. AAS-PCT bridge a testikulár-atrófia ellen és HPTA-restart-hoz. (Cross-frame: a future peptid-libben `hcg-peptid` fertility-clinic-framing-gel jön.)",
+      "en": "Human Chorionic Gonadotropin – LH structural analog, Leydig-cell LHCGR receptor stimulus. AAS-PCT bridge against testicular atrophy and for HPTA restart. (Cross-frame: future peptid library will add `hcg-peptid` with fertility-clinic framing.)",
+      "pl": "Ludzka Gonadotropina Kosmówkowa – analog strukturalny LH, stymulator receptora LHCGR komórek Leydiga. Pomost PCT po AAS przeciwko atrofii jąder i restartowi HPTA. (Cross-frame: w przyszłej bibliotece peptydów dojdzie `hcg-peptid` z framingiem fertility-clinic.)"
     },
     "tier": 4,
     "wadaStatus": "banned",
@@ -674,9 +674,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "Humán Menopauzális Gonadotropin — vizeletből kinyert FSH + LH 75/75 IU keverék. AAS-PCT-ben: teljes HPG-tengely restart (Sertoli-FSH-támogatás is, NEM csak Leydig-LH mint a HCG). Pergonal kivonva 2005-ben, Menopur modern alternatíva.",
-      "en": "Human Menopausal Gonadotropin — urinary-extracted FSH + LH 75/75 IU mixture. In AAS-PCT: full HPG axis restart (Sertoli FSH support too, not just Leydig LH like HCG). Pergonal withdrawn 2005, Menopur modern alternative.",
-      "pl": "Ludzka Gonadotropina Menopauzalna — mieszanina FSH + LH 75/75 IU ekstrahowana z moczu. W PCT po AAS: pełny restart osi HPG (wsparcie FSH dla Sertoli, nie tylko LH dla Leydiga jak w HCG). Pergonal wycofany 2005, Menopur nowoczesna alternatywa."
+      "hu": "Humán Menopauzális Gonadotropin – vizeletből kinyert FSH + LH 75/75 IU keverék. AAS-PCT-ben: teljes HPG-tengely restart (Sertoli-FSH-támogatás is, NEM csak Leydig-LH mint a HCG). Pergonal kivonva 2005-ben, Menopur modern alternatíva.",
+      "en": "Human Menopausal Gonadotropin – urinary-extracted FSH + LH 75/75 IU mixture. In AAS-PCT: full HPG axis restart (Sertoli FSH support too, not just Leydig LH like HCG). Pergonal withdrawn 2005, Menopur modern alternative.",
+      "pl": "Ludzka Gonadotropina Menopauzalna – mieszanina FSH + LH 75/75 IU ekstrahowana z moczu. W PCT po AAS: pełny restart osi HPG (wsparcie FSH dla Sertoli, nie tylko LH dla Leydiga jak w HCG). Pergonal wycofany 2005, Menopur nowoczesna alternatywa."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -691,9 +691,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "Rekombináns FSH (CHO-expresszált) — szelektív Sertoli-FSHR stimulus, NINCS LH-aktivitás. AAS-PCT niche: azoospermia-recovery + Sertoli-támogatás HCG-LH mellett. Drága (€300+/75 IU vial EU).",
-      "en": "Recombinant FSH (CHO-expressed) — selective Sertoli FSHR stimulus, NO LH activity. AAS-PCT niche: azoospermia recovery + Sertoli support alongside HCG LH. Expensive (€300+/75 IU vial EU).",
-      "pl": "Rekombinowany FSH (ekspresja CHO) — selektywna stymulacja Sertoli-FSHR, BRAK aktywności LH. Niszowe użycie w PCT po AAS: cofanie azoospermii + wsparcie Sertoli obok HCG-LH. Drogie (€300+/fiolka 75 IU UE)."
+      "hu": "Rekombináns FSH (CHO-expresszált) – szelektív Sertoli-FSHR stimulus, NINCS LH-aktivitás. AAS-PCT niche: azoospermia-recovery + Sertoli-támogatás HCG-LH mellett. Drága (€300+/75 IU vial EU).",
+      "en": "Recombinant FSH (CHO-expressed) – selective Sertoli FSHR stimulus, NO LH activity. AAS-PCT niche: azoospermia recovery + Sertoli support alongside HCG LH. Expensive (€300+/75 IU vial EU).",
+      "pl": "Rekombinowany FSH (ekspresja CHO) – selektywna stymulacja Sertoli-FSHR, BRAK aktywności LH. Niszowe użycie w PCT po AAS: cofanie azoospermii + wsparcie Sertoli obok HCG-LH. Drogie (€300+/fiolka 75 IU UE)."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -742,9 +742,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "Steroidal \"suicide\" (irreverzibilis) aromatáz-gátló. FDA-jóváhagyott (1999 Pfizer). Egyedi: 17-hydro-exemestane metabolit mild androgén — SHBG drop + free-Test rise visible. AAS-ban E2-stability vagy SHBG-emphasis-emphasizált választás.",
-      "en": "Steroidal \"suicide\" (irreversible) aromatase inhibitor. FDA-approved (1999 Pfizer). Unique: 17-hydro-exemestane metabolite is mildly androgenic — SHBG drop + visible free-Test rise. In AAS used when E2-stability or SHBG-emphasis matters.",
-      "pl": "Steroidowy \"samobójczy\" (nieodwracalny) inhibitor aromatazy. Zatwierdzony przez FDA (1999 Pfizer). Unikalne: metabolit 17-hydro-eksemestan jest słabo androgenny — spadek SHBG + widoczny wzrost wolnego testosteronu. W AAS gdy ważna stabilność E2 lub akcent SHBG."
+      "hu": "Steroidal \"suicide\" (irreverzibilis) aromatáz-gátló. FDA-jóváhagyott (1999 Pfizer). Egyedi: 17-hydro-exemestane metabolit mild androgén – SHBG drop + free-Test rise visible. AAS-ban E2-stability vagy SHBG-emphasis-emphasizált választás.",
+      "en": "Steroidal \"suicide\" (irreversible) aromatase inhibitor. FDA-approved (1999 Pfizer). Unique: 17-hydro-exemestane metabolite is mildly androgenic – SHBG drop + visible free-Test rise. In AAS used when E2-stability or SHBG-emphasis matters.",
+      "pl": "Steroidowy \"samobójczy\" (nieodwracalny) inhibitor aromatazy. Zatwierdzony przez FDA (1999 Pfizer). Unikalne: metabolit 17-hydro-eksemestan jest słabo androgenny – spadek SHBG + widoczny wzrost wolnego testosteronu. W AAS gdy ważna stabilność E2 lub akcent SHBG."
     },
     "tier": 4,
     "wadaStatus": "banned",
@@ -827,9 +827,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "Dual 5α-reduktáz gátló (type-I + type-II). FDA-jóváhagyott (2001 GSK) BPH-ra. AAS-ban: ~90% scalp DHT + acne-csökkentés. Long t1/2 ~5 hét — washout ~6 hónap. PFS-rizikó magasabb mint Finasteride-on.",
-      "en": "Dual 5α-reductase inhibitor (type-I + type-II). FDA-approved (2001 GSK) for BPH. In AAS: ~90% scalp DHT + acne reduction. Long t1/2 ~5 weeks — washout ~6 months. Higher PFS risk vs Finasteride.",
-      "pl": "Podwójny inhibitor 5α-reduktazy (typ I + typ II). Zatwierdzony przez FDA (2001 GSK) na BPH. W AAS: ~90% supresji DHT skóry głowy + redukcja trądziku. Długi t1/2 ~5 tygodni — washout ~6 miesięcy. Wyższe ryzyko PFS vs Finasteryd."
+      "hu": "Dual 5α-reduktáz gátló (type-I + type-II). FDA-jóváhagyott (2001 GSK) BPH-ra. AAS-ban: ~90% scalp DHT + acne-csökkentés. Long t1/2 ~5 hét – washout ~6 hónap. PFS-rizikó magasabb mint Finasteride-on.",
+      "en": "Dual 5α-reductase inhibitor (type-I + type-II). FDA-approved (2001 GSK) for BPH. In AAS: ~90% scalp DHT + acne reduction. Long t1/2 ~5 weeks – washout ~6 months. Higher PFS risk vs Finasteride.",
+      "pl": "Podwójny inhibitor 5α-reduktazy (typ I + typ II). Zatwierdzony przez FDA (2001 GSK) na BPH. W AAS: ~90% supresji DHT skóry głowy + redukcja trądziku. Długi t1/2 ~5 tygodni – washout ~6 miesięcy. Wyższe ryzyko PFS vs Finasteryd."
     },
     "tier": 4,
     "wadaStatus": "allowed",
@@ -844,9 +844,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
-      "hu": "Periférás non-steroidal AR-antagonista (NEM 5α-reduktáz gátló) — Roussel-Uclaf 1992 designer. Topikális AGA-research-chemical. Phase II 1996 terminálva systemikus feminizáció miatt. Modern UGL-formulák lokal-only claim-jét sparse data támasztja alá.",
-      "en": "Peripheral non-steroidal AR antagonist (NOT a 5α-reductase inhibitor) — Roussel-Uclaf 1992 designer. Topical AGA research chemical. Phase II terminated 1996 due to systemic feminization. Modern UGL formulations' local-only claim has sparse supporting data.",
-      "pl": "Peryferyjny niesteroidowy antagonista AR (NIE inhibitor 5α-reduktazy) — projektant Roussel-Uclaf 1992. Topikalna chemia badawcza AGA. Faza II zakończona 1996 z powodu feminizacji systemowej. Twierdzenie nowoczesnych formuł UGL o działaniu tylko lokalnym ma skąpe dane wspierające."
+      "hu": "Periférás non-steroidal AR-antagonista (NEM 5α-reduktáz gátló) – Roussel-Uclaf 1992 designer. Topikális AGA-research-chemical. Phase II 1996 terminálva systemikus feminizáció miatt. Modern UGL-formulák lokal-only claim-jét sparse data támasztja alá.",
+      "en": "Peripheral non-steroidal AR antagonist (NOT a 5α-reductase inhibitor) – Roussel-Uclaf 1992 designer. Topical AGA research chemical. Phase II terminated 1996 due to systemic feminization. Modern UGL formulations' local-only claim has sparse supporting data.",
+      "pl": "Peryferyjny niesteroidowy antagonista AR (NIE inhibitor 5α-reduktazy) – projektant Roussel-Uclaf 1992. Topikalna chemia badawcza AGA. Faza II zakończona 1996 z powodu feminizacji systemowej. Twierdzenie nowoczesnych formuł UGL o działaniu tylko lokalnym ma skąpe dane wspierające."
     },
     "tier": 2,
     "wadaStatus": "banned",
@@ -861,9 +861,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "10 aminosav C-terminál kisspeptin-fragmens — hypothalamic GPR54 → GnRH-pulse → LH/FSH. Legfelsőbb axis-restart pont a HPG-tengelyben. Imperial College London Phase I-II 2020-as években; research-emerging.",
-      "en": "10-amino-acid C-terminal kisspeptin fragment — hypothalamic GPR54 → GnRH pulse → LH/FSH. Highest-upstream HPG axis restart agent. Imperial College London Phase I-II ongoing in 2020s; research-emerging.",
-      "pl": "10-aminokwasowy fragment C-końcowy kisspeptyny — podwzgórzowe GPR54 → impuls GnRH → LH/FSH. Najwyższy punkt restartu osi HPG. Imperial College London Phase I-II trwa w 2020s; emerging-research."
+      "hu": "10 aminosav C-terminál kisspeptin-fragmens – hypothalamic GPR54 → GnRH-pulse → LH/FSH. Legfelsőbb axis-restart pont a HPG-tengelyben. Imperial College London Phase I-II 2020-as években; research-emerging.",
+      "en": "10-amino-acid C-terminal kisspeptin fragment – hypothalamic GPR54 → GnRH pulse → LH/FSH. Highest-upstream HPG axis restart agent. Imperial College London Phase I-II ongoing in 2020s; research-emerging.",
+      "pl": "10-aminokwasowy fragment C-końcowy kisspeptyny – podwzgórzowe GPR54 → impuls GnRH → LH/FSH. Najwyższy punkt restartu osi HPG. Imperial College London Phase I-II trwa w 2020s; emerging-research."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -878,9 +878,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "Szintetikus 10 aminosav GnRH — direkt pituiter GnRH-R stimulus, LH/FSH-release. FDA Factrel 1982 (kivonva US 2008); EMA Lutrelef pulsatile-pump hypothalamic-hipogonadism Rx. Continuous dose paradox-downregulation prostate-cancer kezelésben.",
-      "en": "Synthetic 10-aa GnRH — direct pituitary GnRH-R stimulus, LH/FSH release. FDA Factrel 1982 (US-discontinued 2008); EMA Lutrelef pulsatile-pump Rx for hypothalamic hypogonadism. Continuous dose paradox-downregulation in prostate cancer therapy.",
-      "pl": "Syntetyczna 10-aa GnRH — bezpośrednia stymulacja przysadkowych receptorów GnRH-R, uwolnienie LH/FSH. FDA Factrel 1982 (wycofany USA 2008); EMA Lutrelef pulsatile-pompa Rx dla podwzgórzowej hipogonadyzmu. Dawka ciągła paradoks-downregulacja w terapii raka prostaty."
+      "hu": "Szintetikus 10 aminosav GnRH – direkt pituiter GnRH-R stimulus, LH/FSH-release. FDA Factrel 1982 (kivonva US 2008); EMA Lutrelef pulsatile-pump hypothalamic-hipogonadism Rx. Continuous dose paradox-downregulation prostate-cancer kezelésben.",
+      "en": "Synthetic 10-aa GnRH – direct pituitary GnRH-R stimulus, LH/FSH release. FDA Factrel 1982 (US-discontinued 2008); EMA Lutrelef pulsatile-pump Rx for hypothalamic hypogonadism. Continuous dose paradox-downregulation in prostate cancer therapy.",
+      "pl": "Syntetyczna 10-aa GnRH – bezpośrednia stymulacja przysadkowych receptorów GnRH-R, uwolnienie LH/FSH. FDA Factrel 1982 (wycofany USA 2008); EMA Lutrelef pulsatile-pompa Rx dla podwzgórzowej hipogonadyzmu. Dawka ciągła paradoks-downregulacja w terapii raka prostaty."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -895,9 +895,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#D4537E",
     "tagColor": "rgba(212,83,126,0.18)",
     "shortDesc": {
-      "hu": "\"Master steroid\" — endogén szteroid-precursor (cholesterol → pregnenolone → összes szteroid-hormon). OTC supplement. Evidence quality LOW: orális biodostupnošć gyenge (~5-10%), neurosztiered NMDA/GABA hatás kis kognitív-előny. AAS-PCT niche.",
-      "en": "\"Master steroid\" — endogenous steroid precursor (cholesterol → pregnenolone → all steroid hormones). OTC supplement. Evidence quality LOW: oral bioavailability poor (~5-10%), neurosteroid NMDA/GABA action drives small cognitive benefit. AAS-PCT niche use.",
-      "pl": "\"Steroid macierzysty\" — endogenny prekursor steroidowy (cholesterol → pregnenolon → wszystkie hormony steroidowe). Suplement OTC. Jakość dowodów NISKA: biodostępność doustna słaba (~5-10%), działanie neurosterodowe NMDA/GABA daje małą korzyść poznawczą. Nisza w PCT po AAS."
+      "hu": "\"Master steroid\" – endogén szteroid-precursor (cholesterol → pregnenolone → összes szteroid-hormon). OTC supplement. Evidence quality LOW: orális biodostupnošć gyenge (~5-10%), neurosztiered NMDA/GABA hatás kis kognitív-előny. AAS-PCT niche.",
+      "en": "\"Master steroid\" – endogenous steroid precursor (cholesterol → pregnenolone → all steroid hormones). OTC supplement. Evidence quality LOW: oral bioavailability poor (~5-10%), neurosteroid NMDA/GABA action drives small cognitive benefit. AAS-PCT niche use.",
+      "pl": "\"Steroid macierzysty\" – endogenny prekursor steroidowy (cholesterol → pregnenolon → wszystkie hormony steroidowe). Suplement OTC. Jakość dowodów NISKA: biodostępność doustna słaba (~5-10%), działanie neurosterodowe NMDA/GABA daje małą korzyść poznawczą. Nisza w PCT po AAS."
     },
     "tier": 3,
     "wadaStatus": "allowed",
@@ -963,9 +963,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#f97316",
     "tagColor": "rgba(249,115,22,0.18)",
     "shortDesc": {
-      "hu": "Szintetikus T4 (3,5,3',5'-tetraiodothyronine), Knoll/AbbVie 1955 FDA-jóváhagyott hypothyroidism Rx gold-standard (Synthroid). Prohormon — hepatikus + renalis 5'-deiodinase (D1/D2) konvertálja aktív T3-má. Cutting-cycle off-label use kevésbé jellemző mint T3.",
-      "en": "Synthetic T4 (3,5,3',5'-tetraiodothyronine), Knoll/AbbVie 1955 FDA-approved hypothyroidism Rx gold standard (Synthroid). A prohormone — hepatic and renal 5'-deiodinase (D1/D2) convert it to active T3. Off-label cutting-cycle use is less common than T3.",
-      "pl": "Syntetyczna T4 (3,5,3',5'-tetrajodotyronina), Knoll/AbbVie 1955, zatwierdzona przez FDA gold-standard Rx na niedoczynność tarczycy (Synthroid). Prohormon — wątrobowa i nerkowa 5'-dejodynaza (D1/D2) konwertuje ją do aktywnej T3. Off-label w cyklach cutting używana rzadziej niż T3."
+      "hu": "Szintetikus T4 (3,5,3',5'-tetraiodothyronine), Knoll/AbbVie 1955 FDA-jóváhagyott hypothyroidism Rx gold-standard (Synthroid). Prohormon – hepatikus + renalis 5'-deiodinase (D1/D2) konvertálja aktív T3-má. Cutting-cycle off-label use kevésbé jellemző mint T3.",
+      "en": "Synthetic T4 (3,5,3',5'-tetraiodothyronine), Knoll/AbbVie 1955 FDA-approved hypothyroidism Rx gold standard (Synthroid). A prohormone – hepatic and renal 5'-deiodinase (D1/D2) convert it to active T3. Off-label cutting-cycle use is less common than T3.",
+      "pl": "Syntetyczna T4 (3,5,3',5'-tetrajodotyronina), Knoll/AbbVie 1955, zatwierdzona przez FDA gold-standard Rx na niedoczynność tarczycy (Synthroid). Prohormon – wątrobowa i nerkowa 5'-dejodynaza (D1/D2) konwertuje ją do aktywnej T3. Off-label w cyklach cutting używana rzadziej niż T3."
     },
     "tier": 4,
     "wadaStatus": "allowed",
@@ -982,7 +982,7 @@ export const LIBRARY_ENTRY_META = [
     "shortDesc": {
       "hu": "Ephedrine 25 mg + Caffeine 200 mg + Aspirin 81 mg klasszikus 1990-es évek thermogenic-stack. Astrup 1992 Lancet (PMID 1346830) ~3x potensebb mint ephedrine önállóan; FDA 2004 ephedra-ban óta EU Rx-only.",
       "en": "Ephedrine 25 mg + Caffeine 200 mg + Aspirin 81 mg classic 1990s thermogenic-stack. Astrup 1992 Lancet (PMID 1346830) reports ~3x more potent than ephedrine alone; since the FDA 2004 ephedra ban, ephedrine is Rx-only in the EU.",
-      "pl": "Ephedryna 25 mg + Kofeina 200 mg + Aspiryna 81 mg — klasyczny stack termogeniczny lat 90. Według Astrup 1992 Lancet (PMID 1346830) ~3x bardziej potencjalny niż sama ephedryna; od bana FDA 2004 ephedrine jest w UE na Rx."
+      "pl": "Ephedryna 25 mg + Kofeina 200 mg + Aspiryna 81 mg – klasyczny stack termogeniczny lat 90. Według Astrup 1992 Lancet (PMID 1346830) ~3x bardziej potencjalny niż sama ephedryna; od bana FDA 2004 ephedrine jest w UE na Rx."
     },
     "tier": 3,
     "wadaStatus": "banned",
@@ -1127,9 +1127,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
-      "hu": "Designer methylquinoline NNMT-inhibitor (nicotinamide N-methyltransferase). PRECLINICAL-ONLY — Kraus 2014 Nature (PMID 24622204) NNMT-knockdown obese-mouse-evidence; Neelakantan 2018 (PMID 28425865) 5-amino-1MQ molecule-design. Humán-trial NEM létezik.",
-      "en": "Designer methylquinoline NNMT-inhibitor (nicotinamide N-methyltransferase). PRECLINICAL-ONLY — Kraus 2014 Nature (PMID 24622204) NNMT-knockdown obese mouse-model evidence; Neelakantan 2018 (PMID 28425865) first 5-amino-1MQ molecule-design publication. Human trials do NOT exist.",
-      "pl": "Designer methylquinoline inhibitor NNMT (nicotinamide N-methyltransferase). PRECLINICAL-ONLY — Kraus 2014 Nature (PMID 24622204) evidence z myszy NNMT-knockdown w otyłości; Neelakantan 2018 (PMID 28425865) pierwsza publikacja design molekuły 5-amino-1MQ. Human trials NIE istnieją."
+      "hu": "Designer methylquinoline NNMT-inhibitor (nicotinamide N-methyltransferase). PRECLINICAL-ONLY – Kraus 2014 Nature (PMID 24622204) NNMT-knockdown obese-mouse-evidence; Neelakantan 2018 (PMID 28425865) 5-amino-1MQ molecule-design. Humán-trial NEM létezik.",
+      "en": "Designer methylquinoline NNMT-inhibitor (nicotinamide N-methyltransferase). PRECLINICAL-ONLY – Kraus 2014 Nature (PMID 24622204) NNMT-knockdown obese mouse-model evidence; Neelakantan 2018 (PMID 28425865) first 5-amino-1MQ molecule-design publication. Human trials do NOT exist.",
+      "pl": "Designer methylquinoline inhibitor NNMT (nicotinamide N-methyltransferase). PRECLINICAL-ONLY – Kraus 2014 Nature (PMID 24622204) evidence z myszy NNMT-knockdown w otyłości; Neelakantan 2018 (PMID 28425865) pierwsza publikacja design molekuły 5-amino-1MQ. Human trials NIE istnieją."
     },
     "tier": 2,
     "wadaStatus": "allowed",
@@ -1161,9 +1161,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#a78bfa",
     "tagColor": "rgba(167,139,250,0.18)",
     "shortDesc": {
-      "hu": "ERRα (Estrogen-related receptor alpha) synthetic-agonist, Salk 2024 preprint (Billon et al. bioRxiv) — preclinical-only, egér-trial exercise-mimetic evidence. NINCS humán PK / safety data; \"exercise-mimetic\" myth-marketing 2024 óta.",
-      "en": "ERRα (Estrogen-related receptor alpha) synthetic agonist, Salk 2024 preprint (Billon et al. bioRxiv) — preclinical-only, mouse-trial exercise-mimetic evidence. NO human PK / safety data; \"exercise-mimetic\" myth-marketing since 2024.",
-      "pl": "Syntetyczny agonista ERRα (Estrogen-related receptor alpha), preprint Salk 2024 (Billon et al. bioRxiv) — tylko preklinicznie, dowody exercise-mimetic z badań na myszach. BRAK danych PK / bezpieczeństwa u ludzi; marketing-myth \"exercise-mimetic\" od 2024 r."
+      "hu": "ERRα (Estrogen-related receptor alpha) synthetic-agonist, Salk 2024 preprint (Billon et al. bioRxiv) – preclinical-only, egér-trial exercise-mimetic evidence. NINCS humán PK / safety data; \"exercise-mimetic\" myth-marketing 2024 óta.",
+      "en": "ERRα (Estrogen-related receptor alpha) synthetic agonist, Salk 2024 preprint (Billon et al. bioRxiv) – preclinical-only, mouse-trial exercise-mimetic evidence. NO human PK / safety data; \"exercise-mimetic\" myth-marketing since 2024.",
+      "pl": "Syntetyczny agonista ERRα (Estrogen-related receptor alpha), preprint Salk 2024 (Billon et al. bioRxiv) – tylko preklinicznie, dowody exercise-mimetic z badań na myszach. BRAK danych PK / bezpieczeństwa u ludzi; marketing-myth \"exercise-mimetic\" od 2024 r."
     },
     "tier": 2,
     "wadaStatus": "allowed",

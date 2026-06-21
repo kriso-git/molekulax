@@ -9,10 +9,10 @@
 // Per-entry explicit overrides keep the tier deterministic. Entries not listed default to L1.
 
 const EXPLICIT_LEVEL = {
-  // L5 — FDA-approved human use
+  // L5 – FDA-approved human use
   'testosterone-info': 5,
   'albuterol': 5,
-  // L4 — EU / region Rx + research-context documented
+  // L4 – EU / region Rx + research-context documented
   'trenbolone-info': 4,
   'anavar-info': 4,
   'clenbuterol': 4,
@@ -21,12 +21,12 @@ const EXPLICIT_LEVEL = {
   'dianabol-info': 4,
   'hgh-info': 4,
   'epo-info': 4,
-  // L3 — clinical trials / off-label documented
+  // L3 – clinical trials / off-label documented
   'yohimbine': 3,
   'superdrol': 3,
-  // L2 — early human + strong animal
+  // L2 – early human + strong animal
   'methylstenbolone': 2,
-  // L1 — preclinical / dangerous (default for unlisted entries)
+  // L1 – preclinical / dangerous (default for unlisted entries)
   'dnp-info': 1,
 }
 

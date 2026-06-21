@@ -1,11 +1,11 @@
 // Sets document.title + <meta name="description"> for the active route, per language.
 // Entry titles are owned by the caller that has the loaded entry (EntryDetailRoute);
-// home/library titles by App. Derived from existing data only — no new body copy. These
+// home/library titles by App. Derived from existing data only – no new body copy. These
 // appear only in the browser tab + search snippet, never in the page body.
 import { useEffect } from 'react'
 
 // Per-language head templates. HU values are verbatim copies of the Phase 1/2 strings
-// (so HU output is byte-identical — the visual/meta baseline must not move).
+// (so HU output is byte-identical – the visual/meta baseline must not move).
 const T = {
   hu: {
     defTitle: 'MolekulaX · Farmakológiai edukáció tudományos alapon',

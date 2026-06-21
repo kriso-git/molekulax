@@ -29,7 +29,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Oxymetholone, 2-hydroxymethylene-17α-methyl-DHT derivative oral AAS. FDA-approved (Anadrol-50) for aplastic and hypoplastic anemia. Classic \"wet\" bulking steroid; high hepatotoxicity and paradoxical estrogen-like side effects.",
-  "description": "Anadrol (Oxymetholone) is a 2-hydroxymethylene-17α-methyl-DHT derivative oral AAS originally synthesized by Syntex in 1960. FDA-approved clinical indications: aplastic anemia, congenital and acquired red cell deficiency anemias (Anadrol-50, now Alaven/Meda Pharmaceuticals). Anabolic:androgenic ratio 320:45 (high anabolic, moderate androgenic). High hepatotoxicity due to 17α-methyl group (one of the highest among AAS). The 2-hydroxymethylene group is NOT a CYP19 substrate (does not aromatize), BUT shows direct ER agonist activity — paradoxical \"estrogen-like\" side effects (water retention, gynecomastia risk) appear even without aromatization. In bodybuilding context, a \"wet\" bulking steroid: 10-15 kg weight gain in 4-6 weeks (substantially water + glycogen) documented. WADA-banned year-round.",
+  "description": "Anadrol (Oxymetholone) is a 2-hydroxymethylene-17α-methyl-DHT derivative oral AAS originally synthesized by Syntex in 1960. FDA-approved clinical indications: aplastic anemia, congenital and acquired red cell deficiency anemias (Anadrol-50, now Alaven/Meda Pharmaceuticals). Anabolic:androgenic ratio 320:45 (high anabolic, moderate androgenic). High hepatotoxicity due to 17α-methyl group (one of the highest among AAS). The 2-hydroxymethylene group is NOT a CYP19 substrate (does not aromatize), BUT shows direct ER agonist activity – paradoxical \"estrogen-like\" side effects (water retention, gynecomastia risk) appear even without aromatization. In bodybuilding context, a \"wet\" bulking steroid: 10-15 kg weight gain in 4-6 weeks (substantially water + glycogen) documented. WADA-banned year-round.",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -52,7 +52,7 @@ export default {
       "value": "FDA Rx (Anadrol-50), Schedule III, WADA-banned"
     }
   ],
-  "mechanism": "AR agonist 2-hydroxymethylene-17α-methyl-DHT derivative. The 17α-methyl group provides oral bioavailability (hepatic first-pass resistant, ~80% bioavailability). The 2-hydroxymethylene group provides SEVERAL unusual effects: (1) NOT a CYP19 substrate → does NOT aromatize; (2) BUT direct ER agonist activity → paradoxical estrogen-like side effects (water retention, gyno risk) appear despite anti-aromatase treatment; (3) high erythropoietin-like effect (hence the anemia indication) — red blood cell count and hemoglobin rise rapidly. Due to ER activity, SERM (Nolvadex/Raloxifene) is effective for gyno prevention, AI (Anastrozole) is NOT effective.",
+  "mechanism": "AR agonist 2-hydroxymethylene-17α-methyl-DHT derivative. The 17α-methyl group provides oral bioavailability (hepatic first-pass resistant, ~80% bioavailability). The 2-hydroxymethylene group provides SEVERAL unusual effects: (1) NOT a CYP19 substrate → does NOT aromatize; (2) BUT direct ER agonist activity → paradoxical estrogen-like side effects (water retention, gyno risk) appear despite anti-aromatase treatment; (3) high erythropoietin-like effect (hence the anemia indication) – red blood cell count and hemoglobin rise rapidly. Due to ER activity, SERM (Nolvadex/Raloxifene) is effective for gyno prevention, AI (Anastrozole) is NOT effective.",
   "legalStatus": "USA: FDA-approved Rx Anadrol-50 (Alaven/Meda), Schedule III controlled substance (DEA). EU: prescription rare import, not registered in HU/PL markets. HU/PL: illegal without prescription. WADA-banned year-round (S1.1.a).",
   "onsetTime": "1-2 h (oral)",
   "halfLife": "8-9 h (oral, parent compound)",
@@ -63,8 +63,8 @@ export default {
     "tudca",
     "warfarin"
   ],
-  "aromatization": "Not a CYP19 substrate — BUT due to direct ER agonist activity, estrogen-like side effects (water retention, gynecomastia) appear despite anti-aromatase treatment. Only protection: SERM (Nolvadex 20 mg/day or Raloxifene 60 mg/day) (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Very high — 17α-methyl group extreme hepatic first-pass stress, ALT/AST 5-10x rise common, cholestatic jaundice case-reported. Among the highest hepatotoxicity AAS together with Dianabol and Superdrol (Hartgens-Kuipers 2004 PMID 15233599, Pavlatos 2001 PMID 11329221)",
+  "aromatization": "Not a CYP19 substrate – BUT due to direct ER agonist activity, estrogen-like side effects (water retention, gynecomastia) appear despite anti-aromatase treatment. Only protection: SERM (Nolvadex 20 mg/day or Raloxifene 60 mg/day) (Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Very high – 17α-methyl group extreme hepatic first-pass stress, ALT/AST 5-10x rise common, cholestatic jaundice case-reported. Among the highest hepatotoxicity AAS together with Dianabol and Superdrol (Hartgens-Kuipers 2004 PMID 15233599, Pavlatos 2001 PMID 11329221)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:45",
   "bindingAffinity": "High AR affinity + atypical ER activity (Pope-Kanayama 2014 designer AAS review).",
@@ -76,9 +76,9 @@ export default {
     "Joint comfort: water retention provides mechanical shock-absorber effect, less training pain"
   ],
   "quickStart": [
-    "EXTREME HEPATOTOXICITY — maximum 4 weeks continuous cycle, NEVER longer",
+    "EXTREME HEPATOTOXICITY – maximum 4 weeks continuous cycle, NEVER longer",
     "TUDCA 1000-1500 mg/day + NAC 1800 mg/day MANDATORY throughout the cycle",
-    "SERM (Nolvadex 20 mg/day) for gyno prevention — AI is NOT effective due to atypical ER activity",
+    "SERM (Nolvadex 20 mg/day) for gyno prevention – AI is NOT effective due to atypical ER activity",
     "ALT/AST labs every 2-3 weeks, >3x upper normal = IMMEDIATE discontinuation",
     "PCT (Clomid + Nolvadex 4-6 weeks) mandatory for HPTA recovery"
   ],
@@ -89,7 +89,7 @@ export default {
     },
     {
       "label": "Week 3-4",
-      "body": "Maximum bulking effect. 8-12 kg total weight gain. ALT/AST 3-5x upper normal often manifests here — MANDATORY cycle discontinuation at end of week 4."
+      "body": "Maximum bulking effect. 8-12 kg total weight gain. ALT/AST 3-5x upper normal often manifests here – MANDATORY cycle discontinuation at end of week 4."
     },
     {
       "label": "Post-cycle",
@@ -99,7 +99,7 @@ export default {
   "quality": {
     "pure": [
       "Anadrol-50 (Alaven/Meda Pharmaceuticals) original Rx tablet, 50 mg",
-      "UGL tablet: HPLC-tested source mandatory — Anadrol often counterfeited (Dianabol or Methylstenbolone substitution)"
+      "UGL tablet: HPLC-tested source mandatory – Anadrol often counterfeited (Dianabol or Methylstenbolone substitution)"
     ],
     "caution": [
       "Hepatotoxicity (ALT/AST 5-10x rise the most common acute effect)",
@@ -114,7 +114,7 @@ export default {
       "Cardiovascular risk (family history, high LDL, hypertension) absolute contraindication",
       "Female use (extremely rapid virilization due to high androgenic activity)",
       "Planned fatherhood (HPTA suppression takes months-years to recover)",
-      "Polycythemia (paradox — its own ER activity can cause polycythemia)"
+      "Polycythemia (paradox – its own ER activity can cause polycythemia)"
     ]
   },
   "interactions": [
@@ -165,7 +165,7 @@ export default {
   "faq": [
     {
       "q": "Why does it cause water retention if it doesn't aromatize?",
-      "a": "Oxymetholone's 2-hydroxymethylene group provides direct ER agonist activity — it completely bypasses the CYP19 enzymes and activates estrogen receptors directly. So anti-aromatase (Anastrozole, Letrozole) is USELESS here; only SERM (Nolvadex, Raloxifene) blocks the ER receptors directly. This is the Anadrol-specific paradoxical effect."
+      "a": "Oxymetholone's 2-hydroxymethylene group provides direct ER agonist activity – it completely bypasses the CYP19 enzymes and activates estrogen receptors directly. So anti-aromatase (Anastrozole, Letrozole) is USELESS here; only SERM (Nolvadex, Raloxifene) blocks the ER receptors directly. This is the Anadrol-specific paradoxical effect."
     },
     {
       "q": "Can you really gain 10-15 kg in 4 weeks?",
@@ -173,10 +173,10 @@ export default {
     },
     {
       "q": "Why FDA-approved if so toxic?",
-      "a": "FDA-approved indication (aplastic anemia) is life-saving — risk-benefit ratio is favorable in those patients. Bodybuilding off-label use is NOT part of FDA approval; in healthy young people, 50-100 mg/day for 4 weeks can cause life-threatening hepatotoxicity (Pavlatos 2001 PMID 11329221 DILI case reports)."
+      "a": "FDA-approved indication (aplastic anemia) is life-saving – risk-benefit ratio is favorable in those patients. Bodybuilding off-label use is NOT part of FDA approval; in healthy young people, 50-100 mg/day for 4 weeks can cause life-threatening hepatotoxicity (Pavlatos 2001 PMID 11329221 DILI case reports)."
     },
     {
-      "q": "Anadrol vs Dianabol — which is worse?",
+      "q": "Anadrol vs Dianabol – which is worse?",
       "a": "Hepatotoxicity roughly equal (both top-2 among 17α-alkylated AAS). Aromatization profile: Dianabol classical CYP19-aromatizing (AI effective), Anadrol direct ER agonist (only SERM works). In bulking effect Anadrol is faster and more dramatic, but Dianabol preserves more muscle after the cycle ends. Neither is recommended."
     },
     {
@@ -221,11 +221,11 @@ export default {
       "purpose": "Verify HEPATIC recovery absolutely critical. If ALT/AST does not normalize by 12 weeks, hepatologist consultation MANDATORY. HPTA recovery typically 8-16 weeks."
     },
     "cruise": {
-      "label": "On cruise (Anadrol cruise DOES NOT EXIST — strictly cyclical)",
-      "timing": "Anadrol on cruise FORBIDDEN — mandatory discontinuation after 4 weeks. If anyone tries to cruise, hepatic failure within short time.",
-      "markers": "N/A — Anadrol cruise is not standard, not recommended in any protocol.",
+      "label": "On cruise (Anadrol cruise DOES NOT EXIST – strictly cyclical)",
+      "timing": "Anadrol on cruise FORBIDDEN – mandatory discontinuation after 4 weeks. If anyone tries to cruise, hepatic failure within short time.",
+      "markers": "N/A – Anadrol cruise is not standard, not recommended in any protocol.",
       "purpose": "Anadrol is used exclusively in short (max 4 weeks) bulking cycle. Continuous use causes fatal hepatic consequences."
     }
   },
-  "anecdote": "Anadrol has a reputation for being 'wet,' but anecdotal reports describe more than just water gain — users often note a distinctly dense, hyper-full muscular look, almost as if muscles are overfilled. Strength increases tend to be abrupt and disproportionate, often arriving faster than expected, with extreme pumps. Some users also experience appetite increases that amplify growth phases. Tradeoffs are serious: Anadrol is notorious for blood pressure elevation, hematocrit thickening, edema, and lipid disruption. Fluid shifts can produce back pumps, headaches, and pressure-type sensations. Some of the rapid weight gain is transient water, but a portion represents genuine anabolic acceleration. As a 17α-alkylated oral, hepatic stress is non-trivial and should not be dismissed. Despite its old-school reputation, Anadrol is mechanistically complex due to its unusual estrogen-like behavior and atypical signaling profile."
+  "anecdote": "Anadrol has a reputation for being 'wet,' but anecdotal reports describe more than just water gain – users often note a distinctly dense, hyper-full muscular look, almost as if muscles are overfilled. Strength increases tend to be abrupt and disproportionate, often arriving faster than expected, with extreme pumps. Some users also experience appetite increases that amplify growth phases. Tradeoffs are serious: Anadrol is notorious for blood pressure elevation, hematocrit thickening, edema, and lipid disruption. Fluid shifts can produce back pumps, headaches, and pressure-type sensations. Some of the rapid weight gain is transient water, but a portion represents genuine anabolic acceleration. As a 17α-alkylated oral, hepatic stress is non-trivial and should not be dismissed. Despite its old-school reputation, Anadrol is mechanistically complex due to its unusual estrogen-like behavior and atypical signaling profile."
 }

@@ -28,7 +28,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Drostanolone, 2α-metil-DHT-származék injektábilis AAS. Eredetileg FDA-jóváhagyott (Drolban, Lilly 1959) inoperábilis emlőkarcinómára posztmenopauzális nőknél; ma kizárólag underground market. Klasszikus \"hardening\" cutting-szteroid.",
-  "description": "A Masteron (Drostanolone) egy 2α-metil-dihidrotesztoszteron-származék, amelyet 1959-ben Syntex és Eli Lilly közösen szintetizált, és Drolban néven 1961-ben FDA-jóváhagyást kapott inoperábilis, posztmenopauzális emlőkarcinóma palliatív kezelésére. A modern tamoxifén-bázisú terápia kiszorította; Lilly 1993-ban discontinue-olta. Anabolikus:androgén arány ~62:25 (alacsony anabolikus, közepes androgén). A 2α-metil-csoport gátolja az 5α-reduktáz és az aromatáz aktivitását — NEM konvertál ösztrogénné és sajátos enyhe aromatáz-inhibitor hatást is mutat (Bhasin 2018 referencia AAS-osztályozás). NEM 17α-alkilált, így a hepatotoxicitás minimális. A bodybuilding kontextusban a \"keménység\" és vaszkuláris esztétika eléréséhez használt klasszikus cutting-szteroid, gyakran contest prep utolsó 6-8 hetében. WADA tiltott egész évben.",
+  "description": "A Masteron (Drostanolone) egy 2α-metil-dihidrotesztoszteron-származék, amelyet 1959-ben Syntex és Eli Lilly közösen szintetizált, és Drolban néven 1961-ben FDA-jóváhagyást kapott inoperábilis, posztmenopauzális emlőkarcinóma palliatív kezelésére. A modern tamoxifén-bázisú terápia kiszorította; Lilly 1993-ban discontinue-olta. Anabolikus:androgén arány ~62:25 (alacsony anabolikus, közepes androgén). A 2α-metil-csoport gátolja az 5α-reduktáz és az aromatáz aktivitását – NEM konvertál ösztrogénné és sajátos enyhe aromatáz-inhibitor hatást is mutat (Bhasin 2018 referencia AAS-osztályozás). NEM 17α-alkilált, így a hepatotoxicitás minimális. A bodybuilding kontextusban a \"keménység\" és vaszkuláris esztétika eléréséhez használt klasszikus cutting-szteroid, gyakran contest prep utolsó 6-8 hetében. WADA tiltott egész évben.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -52,7 +52,7 @@ export default {
     }
   ],
   "mechanism": "2α-metil-dihidrotesztoszteron (5α-redukált) AR-agonista. A 2α-metilezés három metabolikus blokkot ad: (1) gátolja az aromatázt (CYP19), így a molekula NEM konvertál ösztradiollá és klinikailag enyhe aromatáz-inhibitor hatást is mutat; (2) ellenáll a 17β-HSD oxidatív lebontásnak (hosszabb plazma half-life); (3) közvetlenül NEM 5α-redukálódik (mert már redukált). A 17β-OH-ra észteresített forma (Propionát vagy Enantát) IM-injekció után lassan hidrolizál a depot-zsírban szabad drostanolonra, amely magas SHBG-affinitással csökkenti a SHBG-kötött tesztoszteron-frakciót → szabad-T emelkedés indirekt módon.",
-  "legalStatus": "USA: Schedule III kontrollált szer (DEA, discontinued Rx — Drolban 1993 után nem gyártott). EU: kontrollált anabolikus szteroid, vény nélkül illegális. HU/PL: birtoklás és értékesítés bűncselekmény. WADA tiltott versenysportban egész évben (S1.1.a anabolikus androgén szteroidok).",
+  "legalStatus": "USA: Schedule III kontrollált szer (DEA, discontinued Rx – Drolban 1993 után nem gyártott). EU: kontrollált anabolikus szteroid, vény nélkül illegális. HU/PL: birtoklás és értékesítés bűncselekmény. WADA tiltott versenysportban egész évben (S1.1.a anabolikus androgén szteroidok).",
   "onsetTime": "24-72 h (IM, ester-hydrolysis-dependent)",
   "halfLife": "2-3 d (Propionate), 7-10 d (Enanthate)",
   "halfLifeActive": "~1-2 nap szabad drostanolone észter-hidrolízis után",
@@ -62,8 +62,8 @@ export default {
     "testosterone",
     "warfarin"
   ],
-  "aromatization": "Nem — a 2α-metil-csoport sztérikus akadályozása miatt NEM CYP19 szubsztrát; klinikailag enyhe aromatáz-inhibitor hatást is mutat (Pope-Kanayama 2014 PMID 24423981 designer-AAS review)",
-  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; injektált észter forma a hepatikus first-pass-t kerüli. Mérsékelt lipid-zavar (HDL csökkenés, LDL emelkedés) marad a fő kardiovaszkuláris kockázat (Hartgens-Kuipers 2004 PMID 15248788)",
+  "aromatization": "Nem – a 2α-metil-csoport sztérikus akadályozása miatt NEM CYP19 szubsztrát; klinikailag enyhe aromatáz-inhibitor hatást is mutat (Pope-Kanayama 2014 PMID 24423981 designer-AAS review)",
+  "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált; injektált észter forma a hepatikus first-pass-t kerüli. Mérsékelt lipid-zavar (HDL csökkenés, LDL emelkedés) marad a fő kardiovaszkuláris kockázat (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "62:25",
   "bindingAffinity": "AR-affinitás közepes; magas SHBG-affinitás (DHT-strukturális analóg) → SHBG-kötött tesztoszteront verseng le, indirekt szabad-T-emelkedést indukál.",
@@ -93,32 +93,32 @@ export default {
     },
     {
       "label": "6-8. hét",
-      "body": "Contest-prep \"peak\" — a víz alóli izomzat-kontúr maximálisan kihangsúlyozott. Lipid panel HDL ~20-30% csökkenés várható. Hajhullás-érzékenyek scalp-DHT esetén accelerált miniaturizáció."
+      "body": "Contest-prep \"peak\" – a víz alóli izomzat-kontúr maximálisan kihangsúlyozott. Lipid panel HDL ~20-30% csökkenés várható. Hajhullás-érzékenyek scalp-DHT esetén accelerált miniaturizáció."
     }
   ],
   "quality": {
     "pure": [
       "Tiszta sárgás vagy halványsárga olaj (~#fef08a tónus), üledék nélküli, 10ml fiola",
-      "UGL HPLC-tesztelt forrás kötelező — Drostanolone Propionát és Enantát különböző PIP-fájdalom-profilt ad, hamisítás (Test-Prop helyettesítés) gyakori"
+      "UGL HPLC-tesztelt forrás kötelező – Drostanolone Propionát és Enantát különböző PIP-fájdalom-profilt ad, hamisítás (Test-Prop helyettesítés) gyakori"
     ],
     "caution": [
       "Hajhullás-acceleráció androgenetikus alopecia-genetikájú felhasználóknál (DHT-strukturális analóg)",
       "Lipid-zavar: HDL csökkenés, LDL emelkedés (mérsékelt, NEM extrém)",
       "Injection site pain (Propionát különösen, alkohol-tartalmú vehikulum miatt)",
-      "Hangmélyülés és hirsutizmus nőknél (1 ciklus után IRREVERZIBILIS lehet — szigorúan kontraindikált)"
+      "Hangmélyülés és hirsutizmus nőknél (1 ciklus után IRREVERZIBILIS lehet – szigorúan kontraindikált)"
     ],
     "avoid": [
       "Androgenetikus alopecia családi anamnézis (DHT-érzékeny scalp)",
       "Prosztata-hipertrófia, prosztatakarcinóma (DHT-analóg → prosztata-AR-aktiválás)",
       "Női felhasználás (virilizáció kockázata extrém, alacsony anabolikus arány miatt esztétikai haszon kicsi)",
       "Kardiovaszkuláris rizikó (családi anamnézis, magas LDL, ateroszklerózis) abszolút kontraindikáció",
-      "Bármilyen \"első ciklus\" — Masteron mindig stack-társ, sosem standalone első AAS"
+      "Bármilyen \"első ciklus\" – Masteron mindig stack-társ, sosem standalone első AAS"
     ]
   },
   "interactions": [
     "Testosterone-base (Prop+Prop vagy Enan+Enan match): standard stack, fokozza az izom-protein-szintézist",
     "Anastrozole (AI): NEM szükséges Masteron-only ciklusnál (önmaga enyhe AI); Test-stack mellett csak labor-igazolt magas E2 esetén",
-    "Finasteride: NEM gátolja a Masteron-hatást (Masteron már 5α-redukált), DE NEM is véd a scalp-DHT ellen — hajhullás-megelőzés szempontjából értelmetlen",
+    "Finasteride: NEM gátolja a Masteron-hatást (Masteron már 5α-redukált), DE NEM is véd a scalp-DHT ellen – hajhullás-megelőzés szempontjából értelmetlen",
     "Warfarin: antikoaguláns hatás fokozódhat, INR monitor",
     "Más AAS-szal kombinálva fokozza HPTA-szuppressziót, PCT szükségessé válik"
   ],
@@ -163,11 +163,11 @@ export default {
   "faq": [
     {
       "q": "Miért hívják \"hardening\" szteroidnak?",
-      "a": "A Masteron NEM aromatizál és magas SHBG-affinitással csökkenti a vízretenciót, így alacsony testzsír-százalék (<10-12%) mellett a bőr alatti vízréteg minimálisra zsugorodik, vaszkulárisan kihangsúlyozott, \"kemény\" megjelenést adva. Magasabb testzsír-szinten (>15%) az esztétikai hatás láthatatlan — ezért contest prep specifikus."
+      "a": "A Masteron NEM aromatizál és magas SHBG-affinitással csökkenti a vízretenciót, így alacsony testzsír-százalék (<10-12%) mellett a bőr alatti vízréteg minimálisra zsugorodik, vaszkulárisan kihangsúlyozott, \"kemény\" megjelenést adva. Magasabb testzsír-szinten (>15%) az esztétikai hatás láthatatlan – ezért contest prep specifikus."
     },
     {
       "q": "Igaz, hogy aromatáz-inhibitor is egyben?",
-      "a": "Részben. A 2α-metil-csoport sztérikus akadályozása miatt a Masteron klinikailag enyhe aromatáz-gátló hatást is mutat — Test-stack mellett csökkentheti az adjunkt Anastrozole igényt. DE az effekt NEM erős (Letrozol/Anastrozol-szerű komplett blokk NEM várható), és magas Test-dózis mellett (>500 mg/hét) önállóan NEM elegendő E2-kontrollra."
+      "a": "Részben. A 2α-metil-csoport sztérikus akadályozása miatt a Masteron klinikailag enyhe aromatáz-gátló hatást is mutat – Test-stack mellett csökkentheti az adjunkt Anastrozole igényt. DE az effekt NEM erős (Letrozol/Anastrozol-szerű komplett blokk NEM várható), és magas Test-dózis mellett (>500 mg/hét) önállóan NEM elegendő E2-kontrollra."
     },
     {
       "q": "Hajhullás-kockázat tényleg ennyire magas?",
@@ -179,7 +179,7 @@ export default {
     },
     {
       "q": "Hosszú távú használat veszélyei?",
-      "a": "Tartós AAS-használat HPTA-szuppressziót okoz (akár tartós sekunder hipogonadizmus a Rasmussen-Christofferides 2016 PMID 27568523 cohort szerint), kardiovaszkuláris kockázat (LDL emelkedés, balkamra-hipertrófia), pszichológiai hatások (Kanayama 2009 PMID 19922565 — AAS-függőség). Masteron önmaga nem extrém hepatotoxikus, DE a kumulatív AAS-expozíció (Test+Mast+egyéb stack) jelentős."
+      "a": "Tartós AAS-használat HPTA-szuppressziót okoz (akár tartós sekunder hipogonadizmus a Rasmussen-Christofferides 2016 PMID 27568523 cohort szerint), kardiovaszkuláris kockázat (LDL emelkedés, balkamra-hipertrófia), pszichológiai hatások (Kanayama 2009 PMID 19922565 – AAS-függőség). Masteron önmaga nem extrém hepatotoxikus, DE a kumulatív AAS-expozíció (Test+Mast+egyéb stack) jelentős."
     }
   ],
   "related": [
@@ -200,7 +200,7 @@ export default {
       "label": "Ciklus közben",
       "timing": "4-6. hetén, ciklus felénél",
       "markers": "Lipid panel (HDL drasztikusan csökkenhet), E2 (ha Test-stack), SHBG (Masteron-driven csökkenés várható), vérnyomás napló, hepatikus panel (ALT/AST), hematokrit.",
-      "purpose": "HDL <30 mg/dL kardiovaszkuláris riasztó. SHBG-csökkenés (>50%) megerősíti a Masteron-aktivitást. E2 (Test-stack mellett) ha emelkedik, az AI-igény eldönti — Masteron önmaga enyhe AI hatása NEM elég magas dózisú Test mellett."
+      "purpose": "HDL <30 mg/dL kardiovaszkuláris riasztó. SHBG-csökkenés (>50%) megerősíti a Masteron-aktivitást. E2 (Test-stack mellett) ha emelkedik, az AI-igény eldönti – Masteron önmaga enyhe AI hatása NEM elég magas dózisú Test mellett."
     },
     "postCycle": {
       "label": "PCT (Post-Cycle Therapy)",
@@ -212,7 +212,7 @@ export default {
       "label": "Cruise alatt (Masteron-tartalmú cruise NEM standard)",
       "timing": "Masteron-cruise atipikus; ha cruise-on tartja, 6-8 hetente monitoring",
       "markers": "Lipid panel (HDL), SHBG, Total T, E2, vérnyomás napló, PSA (30 év felett).",
-      "purpose": "Tartós Masteron-expozíció a lipid-zavart és prosztata-AR-aktivációt felhalmozza. Cruise-on TRT-Test-dózis mellett a Masteron tipikusan kihagyott — esztétikai hatása csak contest-prep alatt értékes."
+      "purpose": "Tartós Masteron-expozíció a lipid-zavart és prosztata-AR-aktivációt felhalmozza. Cruise-on TRT-Test-dózis mellett a Masteron tipikusan kihagyott – esztétikai hatása csak contest-prep alatt értékes."
     }
   },
   "variants": [
@@ -225,9 +225,9 @@ export default {
         "pl": "Drostanolon Propionian (Masteron-Prop, szybki ester)"
       },
       "routeNote": {
-        "hu": "A klasszikus 'cutting' kozmetikai DHT-származék — szárazság, izom-keménység, enyhe AI-hatás. ~2-3 napos felezés ⇒ heti 3x EOD IM-injekció (Mon/Wed/Fri vagy E2D). NEM 17α-alkilált ⇒ alacsony hepatotoxicitás. PIP gyakran fájdalmas a propionát alkohol-tartalmú vehikulum miatt. Rövid detection window (~3 hét) ⇒ contest-prep preferált variánsa.",
-        "en": "The classic 'cutting' cosmetic DHT-derivative — dryness, muscle hardness, mild AI effect. ~2-3 day half-life ⇒ 3× EOD IM injection weekly (Mon/Wed/Fri or E2D). NOT 17α-alkylated ⇒ low hepatotoxicity. PIP often painful due to propionate's alcohol-containing vehicle. Short detection window (~3 weeks) ⇒ preferred contest-prep variant.",
-        "pl": "Klasyczna 'tnąca' kosmetyczna pochodna DHT — suchość, twardość mięśni, łagodne działanie AI. ~2-3-dniowy okres półtrwania ⇒ iniekcja IM 3× EOD tygodniowo (pon/śr/pt lub E2D). NIE 17α-alkilowany ⇒ niska hepatotoksyczność. PIP często bolesny z powodu wehikułu propionianu zawierającego alkohol. Krótkie okno detekcji (~3 tygodnie) ⇒ preferowany wariant contest-prep."
+        "hu": "A klasszikus 'cutting' kozmetikai DHT-származék – szárazság, izom-keménység, enyhe AI-hatás. ~2-3 napos felezés ⇒ heti 3x EOD IM-injekció (Mon/Wed/Fri vagy E2D). NEM 17α-alkilált ⇒ alacsony hepatotoxicitás. PIP gyakran fájdalmas a propionát alkohol-tartalmú vehikulum miatt. Rövid detection window (~3 hét) ⇒ contest-prep preferált variánsa.",
+        "en": "The classic 'cutting' cosmetic DHT-derivative – dryness, muscle hardness, mild AI effect. ~2-3 day half-life ⇒ 3× EOD IM injection weekly (Mon/Wed/Fri or E2D). NOT 17α-alkylated ⇒ low hepatotoxicity. PIP often painful due to propionate's alcohol-containing vehicle. Short detection window (~3 weeks) ⇒ preferred contest-prep variant.",
+        "pl": "Klasyczna 'tnąca' kosmetyczna pochodna DHT – suchość, twardość mięśni, łagodne działanie AI. ~2-3-dniowy okres półtrwania ⇒ iniekcja IM 3× EOD tygodniowo (pon/śr/pt lub E2D). NIE 17α-alkilowany ⇒ niska hepatotoksyczność. PIP często bolesny z powodu wehikułu propionianu zawierającego alkohol. Krótkie okno detekcji (~3 tygodnie) ⇒ preferowany wariant contest-prep."
       },
       "image": "/performance/oil-vial-yellow.png",
       "halfLife": "2-3 nap (Propionát észter; szabad drostanolone t½ ~1-2 nap hidrolízis után)",
@@ -268,7 +268,7 @@ export default {
       "quality": {
         "pure": [
           "Tiszta halványsárga vagy víztiszta olaj, 10ml fiola, sterilen szűrt",
-          "UGL HPLC-tesztelt forrás kötelező — propionát-észter karakterisztikus a PIP-fájdalom miatt érzékelhetően különbözik az enantáttól"
+          "UGL HPLC-tesztelt forrás kötelező – propionát-észter karakterisztikus a PIP-fájdalom miatt érzékelhetően különbözik az enantáttól"
         ],
         "caution": [
           "Injection site pain (PIP): a propionát alkohol-tartalmú vehikulumban gyakran fájdalmas, 24-48 órás duzzanat",
@@ -336,12 +336,12 @@ export default {
       "hepatotoxicity": "low",
       "aromatization": "none",
       "androgenicRatio": "62:25",
-      "legalStatus": "Sosem volt licencelt humán Rx — kizárólag UGL piac. Mindenhol illegális, WADA tiltott.",
+      "legalStatus": "Sosem volt licencelt humán Rx – kizárólag UGL piac. Mindenhol illegális, WADA tiltott.",
       "detectionWindow": "Vizelet: 2-3 hónap (jóval hosszabb mint a propionátnál, enantát hosszú észter miatt). WADA-akkreditált GC-MS és LC-MS/MS.",
       "quality": {
         "pure": [
           "Tiszta sárgás-barnás olaj (~#f59e0b tónus), 10ml fiola, sterilen szűrt",
-          "UGL HPLC-tesztelt forrás kötelező — enantát-észter sokkal kevésbé fáj mint a propionát"
+          "UGL HPLC-tesztelt forrás kötelező – enantát-észter sokkal kevésbé fáj mint a propionát"
         ],
         "caution": [
           "Lassú onset: az esztétikai változás 4-5 hét után érzékelhető (steady-state)",
@@ -350,7 +350,7 @@ export default {
           "Hosszú detection window: contest-period esetén Prop preferálandó"
         ],
         "avoid": [
-          "Rövid (4-6 hét) ciklus NEM hatékony — Enan steady-state csak 4-5 hét után",
+          "Rövid (4-6 hét) ciklus NEM hatékony – Enan steady-state csak 4-5 hét után",
           "Több mint 12 hét folyamatos ciklus (HPTA-szuppresszió súlyos)",
           "WADA-tesztelt verseny <3 hónappal a tervezett vég után (detection window)",
           "Kardiovaszkuláris kockázat, női felhasználás (lásd Propionát)"
@@ -364,5 +364,5 @@ export default {
     }
   ],
   "defaultVariant": "prop",
-  "anecdote": "Az anekdotikus beszámolók szerint a Masteron kifejezett diuretikus hatást vált ki, a felhasználók gyakran jelentősen megnövekedett vizeletürítésről számolnak be. Közösségi beszámolók szerint a magas E2 tünetei is csökkennek, még jelentős tesztoszteron-dózisok mellett is, ami összhangban van a receptorszintű anti-ösztrogén aktivitásával. A Masteron azonban hírhedten gyorsítja az androgén hajhullást; a férfias kopaszodásra hajlamos felhasználók gyakran azonnali hajszélvékonyodást tapasztalnak a kezdés után. Általában 'kozmetikai anabolikumnak' tekintik — keménység, szárazság és fizikai finomítás céljából hasznos, nem pedig érdemi izomgyarapodásra. Összességében szilárd DHT-származékos anabolikumnak tartják, megfelelő használat esetén egyértelmű réssel, de az androgén kompromisszumok (különösen a hajhullás) komoly megfontolandóak a genetikailag hajlamos felhasználók számára."
+  "anecdote": "Az anekdotikus beszámolók szerint a Masteron kifejezett diuretikus hatást vált ki, a felhasználók gyakran jelentősen megnövekedett vizeletürítésről számolnak be. Közösségi beszámolók szerint a magas E2 tünetei is csökkennek, még jelentős tesztoszteron-dózisok mellett is, ami összhangban van a receptorszintű anti-ösztrogén aktivitásával. A Masteron azonban hírhedten gyorsítja az androgén hajhullást; a férfias kopaszodásra hajlamos felhasználók gyakran azonnali hajszélvékonyodást tapasztalnak a kezdés után. Általában 'kozmetikai anabolikumnak' tekintik – keménység, szárazság és fizikai finomítás céljából hasznos, nem pedig érdemi izomgyarapodásra. Összességében szilárd DHT-származékos anabolikumnak tartják, megfelelő használat esetén egyértelmű réssel, de az androgén kompromisszumok (különösen a hajhullás) komoly megfontolandóak a genetikailag hajlamos felhasználók számára."
 }

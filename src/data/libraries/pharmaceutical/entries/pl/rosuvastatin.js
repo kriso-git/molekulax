@@ -27,10 +27,10 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Hydrofilna statyna o wysokiej intensywności (AstraZeneca Crestor). JUPITER ustanowił prewencję pierwotną ASCVD nawet przy podwyższonym CRP. Mało interakcji CYP.",
-  "description": "Rozuwastatyna to hydrofilna inhibitor reduktazy HMG-CoA (AstraZeneca Crestor, FDA 2003). Najmocniejsza statyna pod względem intensywności — 40 mg/dzień daje ~60-63% redukcję LDL (vs atorwastatyna 80 mg ~55%). Badanie JUPITER (Ridker 2008 NEJM PMID 18997196) ustanowiło prewencję pierwotną ASCVD u pacjentów z podwyższonym CRP, normo-LDL. Mniej CYP-zaangażowana niż atorwastatyna (głównie CYP2C9, mały CYP3A4), mniej interakcji. Profil działań podobny do innych statyn.",
+  "description": "Rozuwastatyna to hydrofilna inhibitor reduktazy HMG-CoA (AstraZeneca Crestor, FDA 2003). Najmocniejsza statyna pod względem intensywności – 40 mg/dzień daje ~60-63% redukcję LDL (vs atorwastatyna 80 mg ~55%). Badanie JUPITER (Ridker 2008 NEJM PMID 18997196) ustanowiło prewencję pierwotną ASCVD u pacjentów z podwyższonym CRP, normo-LDL. Mniej CYP-zaangażowana niż atorwastatyna (głównie CYP2C9, mały CYP3A4), mniej interakcji. Profil działań podobny do innych statyn.",
   "mechanism": "Hydrofilne konkurencyjne hamowanie reduktazy HMG-CoA. Wyższa potencja, mniej efektów plejotropowych. Redukcja CRP nawet przy normo-LDL.",
   "legalStatus": "UE/PL: na receptę (Crestor, Roswera, generyki). USA: FDA Rx.",
-  "bioavailability": "~20% (doustnie — etykieta FDA Crestor)",
+  "bioavailability": "~20% (doustnie – etykieta FDA Crestor)",
   "onsetTime": "1-2 weeks (lipid), 4 weeks (steady-state LDL)",
   "halfLife": "19 h (once-daily, any time)",
   "atcCode": "C10AA07",
@@ -42,7 +42,7 @@ export default {
   ],
   "contraindications": [
     "Aktywna choroba wątroby, ciąża, karmienie",
-    "Ciężka niewydolność nerek (eGFR < 30 — dla dawki 40 mg)"
+    "Ciężka niewydolność nerek (eGFR < 30 – dla dawki 40 mg)"
   ],
   "commonSideEffects": [
     "Ból mięśni (3-5%), wzrost ALT/AST (1-2%)",

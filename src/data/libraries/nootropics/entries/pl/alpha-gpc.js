@@ -25,7 +25,7 @@ export default {
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Glicerofosfocholina, biodostępny prekursor choliny.",
-  "description": "Alfa-GPC (L-α-glicerylofosforylocholina) to naturalny metabolit fosfolipidowy, który organizm wbudowuje w acetylocholinę i fosfatydylocholinę. Przenika barierę krew-mózg z biodostępnością ~95%. Ostro działające źródło choliny — szybko podnosi poziom acetylocholiny w OUN, więc należy do \"odczuwalnych\" form choliny (vs. CDP-Cholina, która wspiera długoterminowy poziom). **Korzyść pre-workout dla połączenia umysł-mięsień** udokumentowana (PMID PMC4595381) — zawarta w wielu formułach pre-workout. Wspiera syntezę fosfolipidów na poziomie błony (PMID 8190709). Przy wysokich dawkach przeciążenie cholinergiczne (ból głowy, brain fog, lęk) → Magnez L-Treonian może łagodzić. Lek na receptę we Włoszech (Delecit, w otępieniu naczyniowym), suplement gdzie indziej.",
+  "description": "Alfa-GPC (L-α-glicerylofosforylocholina) to naturalny metabolit fosfolipidowy, który organizm wbudowuje w acetylocholinę i fosfatydylocholinę. Przenika barierę krew-mózg z biodostępnością ~95%. Ostro działające źródło choliny – szybko podnosi poziom acetylocholiny w OUN, więc należy do \"odczuwalnych\" form choliny (vs. CDP-Cholina, która wspiera długoterminowy poziom). **Korzyść pre-workout dla połączenia umysł-mięsień** udokumentowana (PMID PMC4595381) – zawarta w wielu formułach pre-workout. Wspiera syntezę fosfolipidów na poziomie błony (PMID 8190709). Przy wysokich dawkach przeciążenie cholinergiczne (ból głowy, brain fog, lęk) → Magnez L-Treonian może łagodzić. Lek na receptę we Włoszech (Delecit, w otępieniu naczyniowym), suplement gdzie indziej.",
   "keyInfo": [
     {
       "label": "Mechanizm",

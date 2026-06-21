@@ -41,7 +41,7 @@ export default {
       "value": "USA: DASCA 2014 kontrollált. EU: nem szabályozott egységesen."
     }
   ],
-  "mechanism": "AR-receptor erős agonista. **AR-szelektivitás**: a 2,3α-epithio-csoport blokkolja az aromatáz-affinitást ÉS a 5α-reduktáz-konverziót, ezért tiszta-AR-agonista profil (sem E2, sem DHT konverzió). **A 660:660 SZIMMETRIKUS arány azt jelenti, hogy a prosztata-androgenicitás ANNYIRA ERŐS, mint az anabolikus hatás** — ezért a prosztata-mellékhatások (akne, agresszió, androgenikus hajhullás, prosztata-hipertrófia) markánsabbak mint a Superdrol-nál (400:20 arány). 17α-metil-csoport miatt orálisan biológiailag hozzáférhető, de hepatotoxikus.",
+  "mechanism": "AR-receptor erős agonista. **AR-szelektivitás**: a 2,3α-epithio-csoport blokkolja az aromatáz-affinitást ÉS a 5α-reduktáz-konverziót, ezért tiszta-AR-agonista profil (sem E2, sem DHT konverzió). **A 660:660 SZIMMETRIKUS arány azt jelenti, hogy a prosztata-androgenicitás ANNYIRA ERŐS, mint az anabolikus hatás** – ezért a prosztata-mellékhatások (akne, agresszió, androgenikus hajhullás, prosztata-hipertrófia) markánsabbak mint a Superdrol-nál (400:20 arány). 17α-metil-csoport miatt orálisan biológiailag hozzáférhető, de hepatotoxikus.",
   "legalStatus": "USA: DASCA 2014 óta kontrollált. EU: nem szabályozott egységesen, vény nélkül illegális. WADA: tiltott.",
   "onsetTime": "7-10 days",
   "halfLife": "8-12 h",
@@ -50,8 +50,8 @@ export default {
     "NSAIDs",
     "liver hepatotoxins"
   ],
-  "aromatization": "Nem — 2α,17α-dimetil designer szteroid, NEM CYP19 szubsztrát; \"dry gains\" jellemzők (Cohen 2014 NEJM levél designer AAS)",
-  "hepatotoxicity": "Nagyon magas — designer 17α-alkilált, súlyos DILI esetek dokumentálva (akut hepatitis 4-6 héten belül) (PubMed Robles-Diaz 2015)",
+  "aromatization": "Nem – 2α,17α-dimetil designer szteroid, NEM CYP19 szubsztrát; \"dry gains\" jellemzők (Cohen 2014 NEJM levél designer AAS)",
+  "hepatotoxicity": "Nagyon magas – designer 17α-alkilált, súlyos DILI esetek dokumentálva (akut hepatitis 4-6 héten belül) (PubMed Robles-Diaz 2015)",
   "wadaStatus": "banned",
   "androgenicRatio": "660:660",
   "benefits": [

@@ -1,6 +1,6 @@
 // Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:12:21.966Z
 // Edit this file directly to update the PL body; do not re-run the script.
-// v0.27 RICH multi-variant expansion — 2026-05-23
+// v0.27 RICH multi-variant expansion – 2026-05-23
 
 export default {
   "id": "winstrol-info",
@@ -28,7 +28,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Stanozolol, 17α-alkilowana pochodna DHT. Klasyczny \"cutting\" AAS, supresor SHBG.",
-  "description": "Stanozolol (Winstrol) to pochodna DHT, 17α-alkilowany doustny lub iniekcyjny AAS. Mechanizm obniżenia SHBG to bezpośrednie hamowanie wątrobowej syntezy mRNA SHBG (Sinnecker & Köhler 1990, PMID 2723028), podnosząc frakcję wolnego testosteronu — znaczne wzmocnienie androgenne nawet przy bazie TRT. Nie aromatyzuje, brak efektów estrogenowych. Klinicznie rozwinięty dla wrodzonego obrzęku naczynioruchowego i anemii; w sporcie używany w \"cuttingu\" do ochrony mięśni. Skandal Bena Johnsona 1988. **Pozycjonowanie farmakologiczne**: wzmacniacz siły i modulator jakości tkanek bardziej niż konstruktor hipertrofii — przyrost siły jest często nieproporcjonalny do widocznego przyrostu mięśni. **Ostrzeżenie o tkance łącznej (Liow 1995 PMID 7551764)**: przypadki zerwań ścięgien związane ze stanozololem dobrze udokumentowane; siła mięśni rośnie szybciej niż dojrzałość mostków kolagenowych ścięgna, tworząc ryzyko zerwania zwłaszcza w sportach sprinterskich/eksplozywnych.",
+  "description": "Stanozolol (Winstrol) to pochodna DHT, 17α-alkilowany doustny lub iniekcyjny AAS. Mechanizm obniżenia SHBG to bezpośrednie hamowanie wątrobowej syntezy mRNA SHBG (Sinnecker & Köhler 1990, PMID 2723028), podnosząc frakcję wolnego testosteronu – znaczne wzmocnienie androgenne nawet przy bazie TRT. Nie aromatyzuje, brak efektów estrogenowych. Klinicznie rozwinięty dla wrodzonego obrzęku naczynioruchowego i anemii; w sporcie używany w \"cuttingu\" do ochrony mięśni. Skandal Bena Johnsona 1988. **Pozycjonowanie farmakologiczne**: wzmacniacz siły i modulator jakości tkanek bardziej niż konstruktor hipertrofii – przyrost siły jest często nieproporcjonalny do widocznego przyrostu mięśni. **Ostrzeżenie o tkance łącznej (Liow 1995 PMID 7551764)**: przypadki zerwań ścięgien związane ze stanozololem dobrze udokumentowane; siła mięśni rośnie szybciej niż dojrzałość mostków kolagenowych ścięgna, tworząc ryzyko zerwania zwłaszcza w sportach sprinterskich/eksplozywnych.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -152,9 +152,9 @@ export default {
         "pl": "Stanozolol doustny (tabletka)"
       },
       "routeNote": {
-        "hu": "Kényelmes napi tabletta, ~9 órás felezési idő — 2 részre osztott napi dózis az egyenletes szintekhez. 17α-metil csoport ⇒ hepatotoxikus first-pass stressz. Cutting cycle izom-megtartásra és SHBG-szuppresszióra a legelterjedtebb forma. Ínszakadás-veszélyre fokozottan ügyelj explosive/sprint sportoknál.",
-        "en": "Convenient daily tablet with ~9 h half-life — split into 2 daily doses for steady levels. 17α-methyl group ⇒ hepatotoxic first-pass stress. Most common form for cutting cycle muscle sparing and SHBG suppression. Watch for tendon rupture risk in explosive/sprint sports.",
-        "pl": "Wygodna tabletka dzienna z ~9 h okresem półtrwania — podziel na 2 dawki dziennie dla stabilnych poziomów. Grupa 17α-metylu ⇒ hepatotoksyczny stres first-pass. Najczęstsza forma do ochrony mięśni w cyklu redukcyjnym i supresji SHBG. Uwaga na ryzyko zerwania ścięgna w sportach eksplozywnych/sprinterskich."
+        "hu": "Kényelmes napi tabletta, ~9 órás felezési idő – 2 részre osztott napi dózis az egyenletes szintekhez. 17α-metil csoport ⇒ hepatotoxikus first-pass stressz. Cutting cycle izom-megtartásra és SHBG-szuppresszióra a legelterjedtebb forma. Ínszakadás-veszélyre fokozottan ügyelj explosive/sprint sportoknál.",
+        "en": "Convenient daily tablet with ~9 h half-life – split into 2 daily doses for steady levels. 17α-methyl group ⇒ hepatotoxic first-pass stress. Most common form for cutting cycle muscle sparing and SHBG suppression. Watch for tendon rupture risk in explosive/sprint sports.",
+        "pl": "Wygodna tabletka dzienna z ~9 h okresem półtrwania – podziel na 2 dawki dziennie dla stabilnych poziomów. Grupa 17α-metylu ⇒ hepatotoksyczny stres first-pass. Najczęstsza forma do ochrony mięśni w cyklu redukcyjnym i supresji SHBG. Uwaga na ryzyko zerwania ścięgna w sportach eksplozywnych/sprinterskich."
       },
       "image": "/performance/tablet-pile-white.png",
       "halfLife": "~9 godz (doustnie)",
@@ -192,13 +192,13 @@ export default {
       "quality": {
         "pure": [
           "Klarowna biała, oznaczona tabletka (5 mg lub 10 mg klasyczny dosing UGL)",
-          "Źródło testowane HPLC obowiązkowe — tabletka Winstrol często fałszowana"
+          "Źródło testowane HPLC obowiązkowe – tabletka Winstrol często fałszowana"
         ],
         "caution": [
           "Hepatotoksyczność: wzrost ALT/AST 2-4x częsty przy cyklu 6+ tygodni (Hartgens-Kuipers 2004)",
-          "Zaburzenia lipidowe: drastyczny spadek HDL (>30% vs baseline) — ryzyko sercowo-naczyniowe",
-          "Ryzyko zerwania ścięgna (Liow 1995): siła mięśni rośnie szybciej niż kolagen ścięgien — unikaj sportów eksplozywnych/sprinterskich",
-          "Suchość stawów (\"Winstrol joint pain\") — subiektywnie bardzo uciążliwa, redukcja płynu maziowego"
+          "Zaburzenia lipidowe: drastyczny spadek HDL (>30% vs baseline) – ryzyko sercowo-naczyniowe",
+          "Ryzyko zerwania ścięgna (Liow 1995): siła mięśni rośnie szybciej niż kolagen ścięgien – unikaj sportów eksplozywnych/sprinterskich",
+          "Suchość stawów (\"Winstrol joint pain\") – subiektywnie bardzo uciążliwa, redukcja płynu maziowego"
         ],
         "avoid": [
           "Jakiekolwiek istniejące zaburzenia wątroby (stłuszczenie, zapalenie)",
@@ -221,9 +221,9 @@ export default {
         "pl": "Stanozolol zawiesina wodna (IM, Winstrol Depot)"
       },
       "routeNote": {
-        "hu": "Vizes szuszpenzió IM (NEM olajbázis!) — a stanozolol vízben szuszpendálható mikrokristályok formájában (innen az 'aq' = aqueous). ~24 h felezési idő depot-felszívódásból. FONTOS: az injekció tipikusan nagyon fájdalmas (a kristályok irritálják az izomszövetet — PIP, ödéma). Hepatotoxicitás EGYENLŐ az orálissal, mert ugyanaz a 17α-metil molekula szisztémásan hat.",
-        "en": "Aqueous suspension IM (NOT oil-based!) — stanozolol as water-suspended microcrystals (hence 'aq' = aqueous). ~24 h half-life from depot absorption. IMPORTANT: injection is typically very painful (crystals irritate muscle tissue — PIP, edema). Hepatotoxicity is EQUAL to oral because the same 17α-methyl molecule acts systemically.",
-        "pl": "Zawiesina wodna IM (NIE na bazie oleju!) — stanozolol jako mikrokryształy zawieszone w wodzie (stąd 'aq' = aqueous). ~24 h okres półtrwania z absorpcji depot. WAŻNE: iniekcja jest zazwyczaj bardzo bolesna (kryształy drażnią tkankę mięśniową — PIP, obrzęk). Hepatotoksyczność RÓWNA doustnej, bo ta sama cząsteczka 17α-metylu działa systemowo."
+        "hu": "Vizes szuszpenzió IM (NEM olajbázis!) – a stanozolol vízben szuszpendálható mikrokristályok formájában (innen az 'aq' = aqueous). ~24 h felezési idő depot-felszívódásból. FONTOS: az injekció tipikusan nagyon fájdalmas (a kristályok irritálják az izomszövetet – PIP, ödéma). Hepatotoxicitás EGYENLŐ az orálissal, mert ugyanaz a 17α-metil molekula szisztémásan hat.",
+        "en": "Aqueous suspension IM (NOT oil-based!) – stanozolol as water-suspended microcrystals (hence 'aq' = aqueous). ~24 h half-life from depot absorption. IMPORTANT: injection is typically very painful (crystals irritate muscle tissue – PIP, edema). Hepatotoxicity is EQUAL to oral because the same 17α-methyl molecule acts systemically.",
+        "pl": "Zawiesina wodna IM (NIE na bazie oleju!) – stanozolol jako mikrokryształy zawieszone w wodzie (stąd 'aq' = aqueous). ~24 h okres półtrwania z absorpcji depot. WAŻNE: iniekcja jest zazwyczaj bardzo bolesna (kryształy drażnią tkankę mięśniową – PIP, obrzęk). Hepatotoksyczność RÓWNA doustnej, bo ta sama cząsteczka 17α-metylu działa systemowo."
       },
       "image": "/performance/water-vial.png",
       "halfLife": "~24 godz (IM depot, mikrokrystaliczny)",
@@ -267,10 +267,10 @@ export default {
           "Rx-grade: Sanofi Winstrol Depot 50 mg/ml (UE, rzadki); kontrola jakości"
         ],
         "caution": [
-          "EKSTRA bolesna iniekcja — kryształy fizycznie drażnią tkankę mięśniową (PIP, obrzęk, ryzyko ropnia)",
-          "Hepatotoksyczność RÓWNA doustnej — 17α-metyl działa systemowo, NIE tylko przez first-pass (Hartgens-Kuipers 2004)",
+          "EKSTRA bolesna iniekcja – kryształy fizycznie drażnią tkankę mięśniową (PIP, obrzęk, ryzyko ropnia)",
+          "Hepatotoksyczność RÓWNA doustnej – 17α-metyl działa systemowo, NIE tylko przez first-pass (Hartgens-Kuipers 2004)",
           "Drastyczny spadek HDL (Bausserman 1997): zaburzenia lipidowe porównywalne do formy doustnej",
-          "Ryzyko zerwania ścięgna takie samo jak doustnie — kolagen ścięgna pozostaje w tyle za siłą mięśni"
+          "Ryzyko zerwania ścięgna takie samo jak doustnie – kolagen ścięgna pozostaje w tyle za siłą mięśni"
         ],
         "avoid": [
           "Wrażliwość na ból (kryształy powodują znaczny PIP + ryzyko ropnia)",
@@ -286,5 +286,5 @@ export default {
     }
   ],
   "defaultVariant": "oral",
-  "anecdote": "Raporty anegdotyczne opisują Winstrol mniej w kategoriach dramatycznego wzrostu, a bardziej jako wytwarzający wyraźny gęsty, napięty, wzmacniający wydajność charakter — ze wzrostami siły, które czasem wydają się nieproporcjonalne do widocznego przyrostu mięśni. Powracającym motywem jest to, że Winstrol wywołuje zauważalne zmiany w twardości mięśni, separacji i rekompozycji, co pomogło ugruntować jego reputację w zastosowaniach sylwetkowych. Jednocześnie użytkownicy podkreślają, że 'suchy, wyrafinowany' wizerunek może zasłaniać ważne kompromisy — surowe efekty lipidowe, stres wątrobowy w OBIE formach (doustnej i iniekcyjnej; 17α-metyl działa systemowo niezależnie od drogi podania), supresję HPTA i dolegliwości tkanki łącznej. Winstrol jest czasem niedoceniany bo nie prezentuje się jako dramatyczny lek na masę — w praktyce wywiera jednak silne efekty na wydajność i jakość tkanek."
+  "anecdote": "Raporty anegdotyczne opisują Winstrol mniej w kategoriach dramatycznego wzrostu, a bardziej jako wytwarzający wyraźny gęsty, napięty, wzmacniający wydajność charakter – ze wzrostami siły, które czasem wydają się nieproporcjonalne do widocznego przyrostu mięśni. Powracającym motywem jest to, że Winstrol wywołuje zauważalne zmiany w twardości mięśni, separacji i rekompozycji, co pomogło ugruntować jego reputację w zastosowaniach sylwetkowych. Jednocześnie użytkownicy podkreślają, że 'suchy, wyrafinowany' wizerunek może zasłaniać ważne kompromisy – surowe efekty lipidowe, stres wątrobowy w OBIE formach (doustnej i iniekcyjnej; 17α-metyl działa systemowo niezależnie od drogi podania), supresję HPTA i dolegliwości tkanki łącznej. Winstrol jest czasem niedoceniany bo nie prezentuje się jako dramatyczny lek na masę – w praktyce wywiera jednak silne efekty na wydajność i jakość tkanek."
 }

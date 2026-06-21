@@ -22,7 +22,7 @@ export default {
   "accentColor": "#84cc16",
   "tagColor": "rgba(132,204,22,0.18)",
   "shortDesc": "Aminokwas zielonej herbaty, γ-glutamylo-etyloamid, wzmacniacz fal α.",
-  "description": "L-Teanina (N-etylo-L-glutamina, γ-glutamylo-etyloamid) to wolny aminokwas, główny niebiałkowy aminokwas liści Camellia sinensis (zielonej herbaty). Przenika barierę krew-mózg (Tmax ~50 min) i zwiększa aktywność fal α w EEG w stanie zrelaksowanej czuwania (Nobre 2008, PMID 18296328). **Połączona z kofeiną (klasyczny protokół L-teanina:kofeina 2:1 lub 200 mg:100 mg)** synergistycznie poprawia uwagę (Foxe 2012, PMID 22849538) i zmniejsza wywołane kofeiną zwężenie naczyń + lęk. Pojedyncza dawka 200-400 mg może łagodzić reakcję stresową u zdrowych dorosłych. **NIE wywołuje sedacji** ani uzależnienia — jeden z najbezpieczniejszych nootropików przeciwlękowych. Badana także w pediatrycznym ADHD (Lyon 2011 — poprawiła jakość snu u chłopców). FDA GRAS.",
+  "description": "L-Teanina (N-etylo-L-glutamina, γ-glutamylo-etyloamid) to wolny aminokwas, główny niebiałkowy aminokwas liści Camellia sinensis (zielonej herbaty). Przenika barierę krew-mózg (Tmax ~50 min) i zwiększa aktywność fal α w EEG w stanie zrelaksowanej czuwania (Nobre 2008, PMID 18296328). **Połączona z kofeiną (klasyczny protokół L-teanina:kofeina 2:1 lub 200 mg:100 mg)** synergistycznie poprawia uwagę (Foxe 2012, PMID 22849538) i zmniejsza wywołane kofeiną zwężenie naczyń + lęk. Pojedyncza dawka 200-400 mg może łagodzić reakcję stresową u zdrowych dorosłych. **NIE wywołuje sedacji** ani uzależnienia – jeden z najbezpieczniejszych nootropików przeciwlękowych. Badana także w pediatrycznym ADHD (Lyon 2011 – poprawiła jakość snu u chłopców). FDA GRAS.",
   "keyInfo": [
     {
       "label": "Mechanizm",

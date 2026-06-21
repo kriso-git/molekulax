@@ -61,7 +61,7 @@ function deriveResearchUses(peptide, library) {
 // Build a dosing block from dosageInfo + sensible defaults.
 // Variant-aware: when the resolved variant supplies a `dosing` value
 // (the variant-spread result of variants[].dosing), prefer that over the
-// entry-level dosageInfo — the entry-level text often hardcodes a single
+// entry-level dosageInfo – the entry-level text often hardcodes a single
 // route and would lie for the other variant.
 // v0.27.1: dosing accepts both flat-string (Round 1-2 entries) and {hu,en,pl}
 // triplet (Round 3-4 entries) shapes; the flat() helper resolves the active
@@ -122,9 +122,9 @@ function getRouteFamily(activeVariantId) {
 }
 
 // Quick Start Guide, derived 4-step primer.
-// Resolution order (v0.27.1 — variant-aware override):
+// Resolution order (v0.27.1 – variant-aware override):
 // 1. If a route-family default exists for the active variant (oral/inhaled/
-// topical/in/sc/im non-null switch case), USE IT — variant-specific guidance
+// topical/in/sc/im non-null switch case), USE IT – variant-specific guidance
 // is more useful than an entry-level quickStart that hardcodes a single
 // route. This applies whenever `_activeVariantId` is set (i.e. the entry has
 // `variants[]` and the user toggled a route).
@@ -197,7 +197,7 @@ function deriveQuickStart(peptide, library, activeVariantId) {
  { step: 2, title: { hu: 'Felvitel', en: 'Application', pl: 'Aplikacja' },
  detail: { hu: 'Vékony rétegben az érintett területre, körkörös mozdulatokkal masszírozd be 30-60 másodpercig. Hagyd felszívódni 2-4 percig, mielőtt ruhával érintkezne.', en: 'Thin layer to affected area, massage in circular motions 30-60 seconds. Let absorb 2-4 minutes before clothing contact.', pl: 'Cienką warstwą na obszar dotknięty, wmasuj okrężnymi ruchami 30-60 sekund. Pozostaw do wchłonięcia 2-4 minuty przed kontaktem z odzieżą.' } },
  { step: 3, title: { hu: 'Kézmosás', en: 'Hand washing', pl: 'Mycie rąk' },
- detail: { hu: 'Felvitel után alaposan moss kezet szappannal (transzfer-prevenció: ne kerüljön akcidentálisan arcra, szembe, partner bőrére — minoxidilnél kifejezetten fontos).', en: 'After application wash hands thoroughly with soap (transfer prevention: avoid accidental contact with face, eyes, or partner skin — critical for minoxidil).', pl: 'Po aplikacji dokładnie umyj ręce mydłem (zapobieganie transferowi: unikaj przypadkowego kontaktu z twarzą, oczami lub skórą partnera — szczególnie ważne dla minoxidilu).' } },
+ detail: { hu: 'Felvitel után alaposan moss kezet szappannal (transzfer-prevenció: ne kerüljön akcidentálisan arcra, szembe, partner bőrére – minoxidilnél kifejezetten fontos).', en: 'After application wash hands thoroughly with soap (transfer prevention: avoid accidental contact with face, eyes, or partner skin – critical for minoxidil).', pl: 'Po aplikacji dokładnie umyj ręce mydłem (zapobieganie transferowi: unikaj przypadkowego kontaktu z twarzą, oczami lub skórą partnera – szczególnie ważne dla minoxidilu).' } },
  { step: 4, title: { hu: 'Monitorozás', en: 'Monitoring', pl: 'Monitorowanie' },
  detail: { hu: 'Bőrirritáció (vörösség, viszketés, hámlás), kontakt-dermatitisz, kezelt területen nem kívánt szőrnövekedés.', en: 'Skin irritation (redness, itching, peeling), contact dermatitis, unwanted hair growth at treated site.', pl: 'Podrażnienie skóry (zaczerwienienie, świąd, łuszczenie), kontaktowe zapalenie skóry, niepożądany wzrost włosów w miejscu aplikacji.' } },
  ]
@@ -298,7 +298,7 @@ function deriveKeyBenefits(peptide, library) {
  })
 }
 
-// Peptide library molecular row-set — keyInfo label-based extraction.
+// Peptide library molecular row-set – keyInfo label-based extraction.
 function derivePeptideMolecular(peptide) {
  const type = findFactByLabel(peptide.keyInfo, ['típus', 'type', 'typ'])
  const structure = findFactByLabel(peptide.keyInfo, ['szerkezet', 'structure', 'struktura'])
@@ -545,7 +545,7 @@ const FAMILY_SAFETY_EXTRAS = {
  oral: {
  sideEffects: [
  { hu: 'Gyomor-bél irritáció (hányinger, gyomorégés, hasmenés)', en: 'GI irritation (nausea, heartburn, diarrhea)', pl: 'Podrażnienie GI (nudności, zgaga, biegunka)' },
- { hu: 'Májterhelés — orális 17α-methylated AAS-eknél emelkedett AST/ALT/GGT', en: 'Hepatic load — elevated AST/ALT/GGT with oral 17α-methylated AAS', pl: 'Obciążenie wątroby — podwyższone AST/ALT/GGT przy doustnych 17α-metylowanych AAS' },
+ { hu: 'Májterhelés – orális 17α-methylated AAS-eknél emelkedett AST/ALT/GGT', en: 'Hepatic load – elevated AST/ALT/GGT with oral 17α-methylated AAS', pl: 'Obciążenie wątroby – podwyższone AST/ALT/GGT przy doustnych 17α-metylowanych AAS' },
  ],
  stop: [
  { hu: 'Sárgaság, sötét vizelet vagy súlyos hasi fájdalom (májkárosodás jele)', en: 'Jaundice, dark urine, severe abdominal pain (hepatic damage)', pl: 'Żółtaczka, ciemny mocz, silny ból brzucha (uszkodzenie wątroby)' },
@@ -553,7 +553,7 @@ const FAMILY_SAFETY_EXTRAS = {
  },
  inhaled: {
  sideEffects: [
- { hu: 'Szájüregi gombásodás (candidiasis) — szájöblítés kötelező', en: 'Oral candidiasis — mouth rinse mandatory', pl: 'Kandydoza jamy ustnej — płukanie ust obowiązkowe' },
+ { hu: 'Szájüregi gombásodás (candidiasis) – szájöblítés kötelező', en: 'Oral candidiasis – mouth rinse mandatory', pl: 'Kandydoza jamy ustnej – płukanie ust obowiązkowe' },
  { hu: 'Szájszárazság, hangképzési zavar (dysphonia), torokfájás', en: 'Dry mouth, voice changes (dysphonia), sore throat', pl: 'Suchość ust, zmiany głosu (dysfonia), ból gardła' },
  { hu: 'Tremor, tachycardia, palpitáció (β2-agonista hatás)', en: 'Tremor, tachycardia, palpitations (β2-agonist effect)', pl: 'Drżenie, tachykardia, kołatanie (działanie β2-agonisty)' },
  ],
@@ -565,7 +565,7 @@ const FAMILY_SAFETY_EXTRAS = {
  sideEffects: [
  { hu: 'Bőrirritáció, kontakt-dermatitisz, viszketés a kezelt területen', en: 'Skin irritation, contact dermatitis, itching at application site', pl: 'Podrażnienie skóry, kontaktowe zapalenie skóry, świąd w miejscu aplikacji' },
  { hu: 'Nem kívánt szőrnövekedés a kezelt területen (minoxidil-specifikus)', en: 'Unwanted hair growth at treatment site (minoxidil-specific)', pl: 'Niepożądany wzrost włosów w miejscu aplikacji (specyficzne dla minoxidilu)' },
- { hu: 'Akcidentális arc/szem-kontaktus — kézmosás kötelező felvitel után', en: 'Accidental face/eye contact — hand wash mandatory after application', pl: 'Przypadkowy kontakt z twarzą/oczami — mycie rąk obowiązkowe' },
+ { hu: 'Akcidentális arc/szem-kontaktus – kézmosás kötelező felvitel után', en: 'Accidental face/eye contact – hand wash mandatory after application', pl: 'Przypadkowy kontakt z twarzą/oczami – mycie rąk obowiązkowe' },
  ],
  stop: [
  { hu: 'Súlyos bőrkiütés vagy hólyagosodás', en: 'Severe skin rash or blistering', pl: 'Ciężka wysypka lub pęcherze' },
@@ -573,7 +573,7 @@ const FAMILY_SAFETY_EXTRAS = {
  },
  im: {
  sideEffects: [
- { hu: 'PIP (post-injection pain) — főleg propionát, trenbolone-ace vagy magas BA%-os keverékeknél', en: 'PIP (post-injection pain) — especially propionate, trenbolone-ace, or high-BA blends', pl: 'PIP (ból po iniekcji) — szczególnie propionian, trenbolon-ace, mieszanki z wysokim BA' },
+ { hu: 'PIP (post-injection pain) – főleg propionát, trenbolone-ace vagy magas BA%-os keverékeknél', en: 'PIP (post-injection pain) – especially propionate, trenbolone-ace, or high-BA blends', pl: 'PIP (ból po iniekcji) – szczególnie propionian, trenbolon-ace, mieszanki z wysokim BA' },
  { hu: 'Injekciós helyi reakció: csomó, vörösség, melegség, érzékenység', en: 'Injection-site reaction: lumps, redness, warmth, tenderness', pl: 'Reakcja w miejscu iniekcji: guzki, zaczerwienienie, ciepło, tkliwość' },
  ],
  stop: [
@@ -624,7 +624,7 @@ function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
  }
  }
 
- // SC / unknown family — default category-derived list (v0.13+ behavior).
+ // SC / unknown family – default category-derived list (v0.13+ behavior).
  return {
  sideEffects: set.sideEffects,
  whenToStop: set.whenToStop,
@@ -634,7 +634,7 @@ function deriveSafetyProfile(peptide, categoryIds, activeVariantId) {
 
 // Related peptides, share at least one category, sorted by overlap count.
 // Phase 9: iterates library.meta (tile-shape records) instead of library.entries
-// (full entry objects no longer exist in-memory eagerly — see loadEntry).
+// (full entry objects no longer exist in-memory eagerly – see loadEntry).
 function deriveRelated(peptide, categoryIds, library) {
  if (!categoryIds.length) return []
  const metaList = library?.meta || library?.entries || []
@@ -777,7 +777,7 @@ function deriveReconstitute(peptide, library, activeVariantId) {
  const family = getRouteFamily(activeVariantId || peptide._activeVariantId)
  // Non-injection families never need a reconstitute step (pre-formulated form).
  if (family === 'oral' || family === 'inhaled' || family === 'topical') return null
- // Pre-mixed nasal spray with no explicit recon — hide section.
+ // Pre-mixed nasal spray with no explicit recon – hide section.
  if (family === 'in') return []
  if (library?.id !== 'peptides') return []
  if (!peptide.defaultVialMg || !peptide.defaultBacMl) return []
@@ -1237,7 +1237,7 @@ function deriveIndications(peptide, categoryIds, library, lang) {
 // Extended descriptive paragraphs, split full description into intro + body.
 // Variant-aware: an optional variant.whatIs override (full prose) replaces the
 // entry-level description when the active variant supplies one. Otherwise the
-// base description is used — which should be written route-neutral whenever an
+// base description is used – which should be written route-neutral whenever an
 // entry has variants[].
 function deriveWhatIs(peptide) {
  if (typeof peptide.whatIs === 'string' && peptide.whatIs.trim()) return peptide.whatIs
@@ -1306,7 +1306,7 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  category: primaryCat ? primaryCat.label : { hu: '-', en: '-', pl: '-' },
  oneLiner: extractOneLiner(peptide),
  // When an entry has variants[], hide the static "Beadás/Route/Podanie"
- // keyInfo row — the VariantToggle is now the single source of truth for
+ // keyInfo row – the VariantToggle is now the single source of truth for
  // route, so the duplicated row contradicts the SC variant when the entry
  // body still says "Intranazális" (or vice versa).
  keyFacts: (peptide.keyInfo || []).filter(k => {
@@ -1378,7 +1378,7 @@ export function adaptLibraryEntry(entry, library, lang, variantId) {
  cyp450: peptide.cyp450 || null,
  crossMolInteractions: peptide.crossMolInteractions || null,
  } : null,
- // Phase C — route-toggle metadata for the EntryDetail UI. Null when the
+ // Phase C – route-toggle metadata for the EntryDetail UI. Null when the
  // entry has no `variants[]` (=> VariantToggle hidden, no chip).
  _activeVariantId: activeVariantId,
  _availableVariants: availableVariants,

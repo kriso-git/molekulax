@@ -28,8 +28,8 @@ export default {
   "image": "/performance/oil-vial-orange.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
-  "shortDesc": "Boldenone Undecylenate (Δ1-testosterone Undecylenate), veterinary-only injectable AAS. Originally Squibb 1949 human Rx, today exclusively veterinary (horses) — Fort Dodge Equipoise 1972-2008. Slow, stable lean gains; AROMATIZES at ~half the rate of testosterone. \"Appetite-stimulant\" reputation.",
-  "description": "Equipoise (Boldenone Undecylenate) is a Δ1-testosterone Undecylenate-esterified injectable AAS. Originally synthesized by Squibb (USA) in 1949 as Parenabol (human Rx) for elderly male osteoporosis + cachexia treatment, BUT discontinued in the 1970s due to preference for Test esters. In 1972 Fort Dodge Animal Health acquired the license and marketed it as Equipoise veterinary-only (horse joint recovery + appetite stimulant) Rx — also discontinued in 2008. Today UGL market only. Anabolic:androgenic ratio 100:50 (moderate anabolic, moderate androgenic). NOT 17α-alkylated → LOW hepatotoxicity. AROMATIZES (about half as strongly as testosterone, CYP19 substrate). Undecylenate ester (10-carbon undecylenic acid) → long half-life ~14 days, monthly-injection-compatible depot. Classic \"slow lean gainer\" — 3-5 kg dry muscle in 8-12 weeks + documented appetite-stimulant effect (boldenone-driven). WADA-banned year-round.",
+  "shortDesc": "Boldenone Undecylenate (Δ1-testosterone Undecylenate), veterinary-only injectable AAS. Originally Squibb 1949 human Rx, today exclusively veterinary (horses) – Fort Dodge Equipoise 1972-2008. Slow, stable lean gains; AROMATIZES at ~half the rate of testosterone. \"Appetite-stimulant\" reputation.",
+  "description": "Equipoise (Boldenone Undecylenate) is a Δ1-testosterone Undecylenate-esterified injectable AAS. Originally synthesized by Squibb (USA) in 1949 as Parenabol (human Rx) for elderly male osteoporosis + cachexia treatment, BUT discontinued in the 1970s due to preference for Test esters. In 1972 Fort Dodge Animal Health acquired the license and marketed it as Equipoise veterinary-only (horse joint recovery + appetite stimulant) Rx – also discontinued in 2008. Today UGL market only. Anabolic:androgenic ratio 100:50 (moderate anabolic, moderate androgenic). NOT 17α-alkylated → LOW hepatotoxicity. AROMATIZES (about half as strongly as testosterone, CYP19 substrate). Undecylenate ester (10-carbon undecylenic acid) → long half-life ~14 days, monthly-injection-compatible depot. Classic \"slow lean gainer\" – 3-5 kg dry muscle in 8-12 weeks + documented appetite-stimulant effect (boldenone-driven). WADA-banned year-round.",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -52,7 +52,7 @@ export default {
       "value": "Veterinary-only Rx (discontinued 2008), today UGL; Schedule III"
     }
   ],
-  "mechanism": "AR agonist Δ1-testosterone-undecylenate. The Δ1 double bond (same as in Dianabol) provides mild metabolic stability + lower 5α-reductase substrate affinity (NOT strongly DHT-converting like plain Test). Aromatization via CYP19 enzyme at ~50% of Test level — clinically E2 elevation moderate, gynecomastia risk lower than on Test. Undecylenate ester slow-release IM depot with ~14-day half-life. According to bodybuilding experience, marked appetite-stimulant effect (mechanism not fully understood — hypothesis: indirect ghrelin pathway modulation).",
+  "mechanism": "AR agonist Δ1-testosterone-undecylenate. The Δ1 double bond (same as in Dianabol) provides mild metabolic stability + lower 5α-reductase substrate affinity (NOT strongly DHT-converting like plain Test). Aromatization via CYP19 enzyme at ~50% of Test level – clinically E2 elevation moderate, gynecomastia risk lower than on Test. Undecylenate ester slow-release IM depot with ~14-day half-life. According to bodybuilding experience, marked appetite-stimulant effect (mechanism not fully understood – hypothesis: indirect ghrelin pathway modulation).",
   "legalStatus": "Veterinary-only Rx (Fort Dodge Equipoise 1972-2008, today discontinued). USA: Schedule III controlled substance (DEA, human off-label illegal). EU/HU/PL: controlled AAS, illegal without prescription. WADA-banned year-round (S1.1.a).",
   "onsetTime": "48-72 h (IM, steady-state 4-5 weeks)",
   "halfLife": "14 d (Undecylenate ester)",
@@ -63,8 +63,8 @@ export default {
     "warfarin",
     "finasteride"
   ],
-  "aromatization": "Yes — Δ1-testosterone CYP19 substrate at ~50% of Test level; clinically E2 elevation moderate (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; IM bypasses first-pass. ALT/AST <2x normal for Equipoise-only cycle (Hartgens-Kuipers 2004 PMID 15233599)",
+  "aromatization": "Yes – Δ1-testosterone CYP19 substrate at ~50% of Test level; clinically E2 elevation moderate (Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Low – parent steroid, NOT 17α-alkylated; IM bypasses first-pass. ALT/AST <2x normal for Equipoise-only cycle (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
   "androgenicRatio": "100:50",
   "bindingAffinity": "Moderate AR affinity (~50-60% vs testosterone in vitro).",
@@ -158,7 +158,7 @@ export default {
   "faq": [
     {
       "q": "Why is it called an \"appetite-stimulant\" steroid?",
-      "a": "Classic bodybuilding experience: users on Equipoise report marked appetite increase (anecdotally \"unstoppable hunger\"). The mechanism is NOT fully understood — hypothesis: boldenone indirectly modulates ghrelin receptors or CNS appetite pathways. Clinically the effect is ideal for bulking cycles (more calories easier to consume), BUT counterproductive on cutting cycles — \"deficit dieting\" on Equipoise is harder."
+      "a": "Classic bodybuilding experience: users on Equipoise report marked appetite increase (anecdotally \"unstoppable hunger\"). The mechanism is NOT fully understood – hypothesis: boldenone indirectly modulates ghrelin receptors or CNS appetite pathways. Clinically the effect is ideal for bulking cycles (more calories easier to consume), BUT counterproductive on cutting cycles – \"deficit dieting\" on Equipoise is harder."
     },
     {
       "q": "Equipoise vs Dianabol (both Δ1-T)?",
@@ -170,11 +170,11 @@ export default {
     },
     {
       "q": "What does the long detection window mean?",
-      "a": "Equipoise-undecylenate has 5-6 months urinary detection at WADA labs (due to Undecylenate long ester + Δ1-androstene metabolite family). For WADA-tested athletes it should be avoided even during off-season — minimum 6-month fade-out before planned competition. The Boldenone metabolite pattern also carries ENDOGENOUS confound risk: in some rare cases 1-androstene-3,17-dione appears in athlete samples due to endogenous biological variance, posing a legal dispute risk (but WADA labs filter via isotope-ratio tests)."
+      "a": "Equipoise-undecylenate has 5-6 months urinary detection at WADA labs (due to Undecylenate long ester + Δ1-androstene metabolite family). For WADA-tested athletes it should be avoided even during off-season – minimum 6-month fade-out before planned competition. The Boldenone metabolite pattern also carries ENDOGENOUS confound risk: in some rare cases 1-androstene-3,17-dione appears in athlete samples due to endogenous biological variance, posing a legal dispute risk (but WADA labs filter via isotope-ratio tests)."
     },
     {
       "q": "Does it need a long cycle?",
-      "a": "Yes — minimum 10-12 weeks, often 14-16 weeks. Due to the Undecylenate ester slow-release, steady-state is only perceptible after 4-5 weeks, so a short (6-8 week) cycle is wasteful. Typical protocol: 400-600 mg/week, 12-16 weeks, monthly Test-base stack (Test-Enan or Cyp), PCT after last EQ injection +21-28 days."
+      "a": "Yes – minimum 10-12 weeks, often 14-16 weeks. Due to the Undecylenate ester slow-release, steady-state is only perceptible after 4-5 weeks, so a short (6-8 week) cycle is wasteful. Typical protocol: 400-600 mg/week, 12-16 weeks, monthly Test-base stack (Test-Enan or Cyp), PCT after last EQ injection +21-28 days."
     }
   ],
   "related": [
@@ -205,7 +205,7 @@ export default {
       "label": "Mid-cycle",
       "timing": "Week 5-6 (after steady-state)",
       "markers": "CBC + hematocrit (>54% alarm), lipid panel (HDL), E2, blood pressure log.",
-      "purpose": "Hematocrit risk is the Equipoise-specific issue — phlebotomy if >54%. HDL drop moderate."
+      "purpose": "Hematocrit risk is the Equipoise-specific issue – phlebotomy if >54%. HDL drop moderate."
     },
     "postCycle": {
       "label": "PCT (Post-Cycle Therapy)",
@@ -215,10 +215,10 @@ export default {
     },
     "cruise": {
       "label": "On cruise",
-      "timing": "Alongside TRT-Test cruise, Equipoise adjunct 200-300 mg/week — monitor every 6-8 weeks",
+      "timing": "Alongside TRT-Test cruise, Equipoise adjunct 200-300 mg/week – monitor every 6-8 weeks",
       "markers": "CBC + hematocrit (critical!), lipid panel, E2, PSA.",
       "purpose": "Long-term Equipoise + hematocrit rise cumulative, polycythemia risk. Phlebotomy every 8-12 weeks standard if hematocrit >54%."
     }
   },
-  "anecdote": "Anecdotal reports describe Equipoise (Boldenone Undecylenate) as producing slow but 'keepable' gains. Users running it commonly note a more ravenous appetite and increased vascularity within the first few weeks. Equipoise is well known for aggressively elevating hematocrit, so blood thickness should be monitored regularly — phlebotomy may become necessary. Its extremely long ester also means it takes a long time to build up and clear, so it is poorly suited to short-term adjustments or quick course corrections. Community accounts note that Equipoise has gained renewed traction as a secondary anabolic, in part because Primobolan and Masteron have become harder to source and more expensive. Overall, it is considered a solid choice for users seeking slow, lean, sustainable gains in a longer cycle structure."
+  "anecdote": "Anecdotal reports describe Equipoise (Boldenone Undecylenate) as producing slow but 'keepable' gains. Users running it commonly note a more ravenous appetite and increased vascularity within the first few weeks. Equipoise is well known for aggressively elevating hematocrit, so blood thickness should be monitored regularly – phlebotomy may become necessary. Its extremely long ester also means it takes a long time to build up and clear, so it is poorly suited to short-term adjustments or quick course corrections. Community accounts note that Equipoise has gained renewed traction as a secondary anabolic, in part because Primobolan and Masteron have become harder to source and more expensive. Overall, it is considered a solid choice for users seeking slow, lean, sustainable gains in a longer cycle structure."
 }

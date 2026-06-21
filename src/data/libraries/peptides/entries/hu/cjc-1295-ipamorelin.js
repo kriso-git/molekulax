@@ -16,12 +16,12 @@ export default {
   "composition": [
     {
       "id": "cjc-1295",
-      "role": "GHRH analóg — tartós GH-pulzus alap",
+      "role": "GHRH analóg – tartós GH-pulzus alap",
       "typicalDose": "100-200 µg subQ naponta"
     },
     {
       "id": "ipamorelin",
-      "role": "Szelektív GH-szekretagóg — pulzus-amplifikátor",
+      "role": "Szelektív GH-szekretagóg – pulzus-amplifikátor",
       "typicalDose": "100-200 µg subQ naponta"
     }
   ],

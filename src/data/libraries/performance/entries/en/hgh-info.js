@@ -27,7 +27,7 @@ export default {
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "Recombinant human growth hormone (rhGH, Somatropin). Exogenous GH replacement, banned by WADA as doping.",
-  "description": "Recombinant human growth hormone (rhGH, Somatropin) is the biologically identical form of natural pituitary GH. FDA-approved for GH deficiency, Turner syndrome, idiopathic short stature, and AIDS cachexia (Genotropin, Humatrope, Norditropin, Saizen). In sport, off-label use for muscle mass + recovery + fat loss. WADA-banned (S2 category); short detection window (~24 h) makes biomarker testing essential. Long-term use leads to acromegaly, cardiac hypertrophy, and insulin resistance. **Key nuances**: (a) **IGF-1 is the primary effector** — GH alone is less anabolic; the hepatic IGF-1 paracrine/endocrine signal is the main mediator (70-80% of sport anabolism is IGF-1-routed); (b) **T4→reverse T3 conversion shift**: on HGH rT3 rises while active T3 drops → subclinical hypothyroidism risk; T4/T3 co-administration plus mid-cycle TSH/fT3/fT4/rT3 panel is MANDATORY; (c) **Carpal tunnel and peripheral edema**: extracellular fluid plus Na+ retention → nerve compression, mostly above 4-6 IU/day; (d) **Fasted-state SC administration**: before bed or at least 2-4 h after last meal, because insulin directly antagonizes GH — fasted state gives max GH pulse.",
+  "description": "Recombinant human growth hormone (rhGH, Somatropin) is the biologically identical form of natural pituitary GH. FDA-approved for GH deficiency, Turner syndrome, idiopathic short stature, and AIDS cachexia (Genotropin, Humatrope, Norditropin, Saizen). In sport, off-label use for muscle mass + recovery + fat loss. WADA-banned (S2 category); short detection window (~24 h) makes biomarker testing essential. Long-term use leads to acromegaly, cardiac hypertrophy, and insulin resistance. **Key nuances**: (a) **IGF-1 is the primary effector** – GH alone is less anabolic; the hepatic IGF-1 paracrine/endocrine signal is the main mediator (70-80% of sport anabolism is IGF-1-routed); (b) **T4→reverse T3 conversion shift**: on HGH rT3 rises while active T3 drops → subclinical hypothyroidism risk; T4/T3 co-administration plus mid-cycle TSH/fT3/fT4/rT3 panel is MANDATORY; (c) **Carpal tunnel and peripheral edema**: extracellular fluid plus Na+ retention → nerve compression, mostly above 4-6 IU/day; (d) **Fasted-state SC administration**: before bed or at least 2-4 h after last meal, because insulin directly antagonizes GH – fasted state gives max GH pulse.",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -55,8 +55,8 @@ export default {
     "thyroid hormones",
     "glucocorticoids"
   ],
-  "aromatization": "Not applicable — 191-amino-acid peptide hormone (somatotropin), NOT a steroid; no CYP19 interaction",
-  "hepatotoxicity": "Low — no direct hepatotoxicity; IGF-1 elevation indirectly drives T2DM/insulin resistance risk (Mauras 2005)",
+  "aromatization": "Not applicable – 191-amino-acid peptide hormone (somatotropin), NOT a steroid; no CYP19 interaction",
+  "hepatotoxicity": "Low – no direct hepatotoxicity; IGF-1 elevation indirectly drives T2DM/insulin resistance risk (Mauras 2005)",
   "wadaStatus": "banned",
   "detectionWindow": "~24 h direct rhGH test; biomarker test (IGF-1 + P-III-NP) more sensitive with 7-14 day window.",
   "benefits": [
@@ -64,7 +64,7 @@ export default {
     "Fat loss (HSL activation in adipose)",
     "Recovery + tissue regeneration",
     "Skin, hair, nail quality improvement",
-    "Connective tissue and type-1 collagen density improvement (skin, fascia, tendon, joint cartilage) — in the anti-aging context the principal documented HGH effect at low 1-2 IU/day protocols"
+    "Connective tissue and type-1 collagen density improvement (skin, fascia, tendon, joint cartilage) – in the anti-aging context the principal documented HGH effect at low 1-2 IU/day protocols"
   ],
   "studies": [
     {

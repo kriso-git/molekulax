@@ -1,4 +1,4 @@
-// Pharmaceutical library — 7 categories grouping entries by therapeutic area.
+// Pharmaceutical library – 7 categories grouping entries by therapeutic area.
 // Each category exposes a stable id, accent color, and HU/EN/PL label.
 // Populated in Task 16-23 as entries land (Session 5-6).
 

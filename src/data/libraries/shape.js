@@ -106,17 +106,17 @@
  * @property {string[]}      [cyp450]               ['CYP3A4 substrate', 'CYP2D6 inhibitor'].
  * @property {I18nString[]}  [crossMolInteractions] Gyógyszer-interakciók i18n szövegei.
  *
- * Task A (post-roadmap 2026-05-18) — Lab Terminal data refresh fields (optional):
- * @property {I18nString}    [bioavailability]   Pharma-only — oralis/sc/im biológiai hasznosulás % vagy F-érték rövid leírással.
- * @property {I18nString}    [aromatization]    Performance-only — aromatázon át ösztrogénné konverzió szintje vagy útja.
- * @property {I18nString}    [hepatotoxicity]   Performance-only — DILI/hepatotoxikus profil rövid leírás. Tier-szerű kategorizálás opcionális.
+ * Task A (post-roadmap 2026-05-18) – Lab Terminal data refresh fields (optional):
+ * @property {I18nString}    [bioavailability]   Pharma-only – oralis/sc/im biológiai hasznosulás % vagy F-érték rövid leírással.
+ * @property {I18nString}    [aromatization]    Performance-only – aromatázon át ösztrogénné konverzió szintje vagy útja.
+ * @property {I18nString}    [hepatotoxicity]   Performance-only – DILI/hepatotoxikus profil rövid leírás. Tier-szerű kategorizálás opcionális.
  *
- * Post-roadmap 2026-05-20 — Anekdota section (optional):
+ * Post-roadmap 2026-05-20 – Anekdota section (optional):
  * @property {I18nString}    [anecdote]   Sean's curated notes-ból kihúzott tapasztalat-narratíva, átfogalmazva semleges
  *                                        "users report" tónusra. Null/missing → AnecdoteSection placeholder render.
  *                                        Per-lang body files post-Phase-12 flat-string-ként tárolják lang szerint.
  *
- * Post-roadmap 2026-05-20 — Peptide curation (optional):
+ * Post-roadmap 2026-05-20 – Peptide curation (optional):
  * @property {Array<{id: string, role: string, typicalDose: string}>} [composition]
  *   Multi-peptide stack composition. Each entry MUST reference another entry
  *   in the same library (validator enforces). `role` and `typicalDose` are
@@ -164,8 +164,8 @@
  * @property {I18nString} effectsTitle NEW Phase 4, section header.
  * @property {I18nString} effectsSubtitle NEW Phase 4, section subtitle.
  * @property {LibraryLabels} [labels] NEW Phase 4, per-library UI string overrides; falls back to i18n.
- * @property {LibraryFeatureFlags} features Phase 10 — conditional render flags per library.
- * @property {string[]} [deprecatedIds] Post-roadmap 2026-05-20 — Hard-removed entry
+ * @property {LibraryFeatureFlags} features Phase 10 – conditional render flags per library.
+ * @property {string[]} [deprecatedIds] Post-roadmap 2026-05-20 – Hard-removed entry
  *   IDs. EntryDetailRoute renders RedirectFlash for deep-links to these IDs and
  *   redirects to library top after 1.8s. See [[Deprecation_Redirect_Flash_Pattern]].
  */
@@ -181,7 +181,7 @@
  */
 
 /**
- * Phase 9 — meta-only shape returned by LIBRARY_ENTRY_META. Carries
+ * Phase 9 – meta-only shape returned by LIBRARY_ENTRY_META. Carries
  * exactly the fields needed to render the gallery tile, the LibraryCube
  * face, the LibrarySwitcher, and category-grouping. Full entry detail
  * (description, keyInfo, dosing, studies, faq, bloodwork, indications,
@@ -201,7 +201,7 @@
  */
 
 /**
- * Phase 10 — per-library feature flags driving conditional render in EntryDetail.
+ * Phase 10 – per-library feature flags driving conditional render in EntryDetail.
  * @typedef {Object} LibraryFeatureFlags
  * @property {boolean} faq                          Show per-entry FAQ block. Currently always false (removed JSX).
  * @property {boolean} doseRecommendations          Show per-entry dose recommendation list. Currently always false (removed JSX).

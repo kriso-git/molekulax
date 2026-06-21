@@ -18,10 +18,10 @@ export function consumeReturnState() {
   let raw = null
   try {
     raw = sessionStorage.getItem(RETURN_STATE_KEY)
-  } catch (e) { /* storage disabled — treat as miss */ }
+  } catch (e) { /* storage disabled – treat as miss */ }
   if (!raw) return null
 
-  // Always remove — even on parse failure or stale TTL, the key should not
+  // Always remove – even on parse failure or stale TTL, the key should not
   // persist across the rest of the session.
   try { sessionStorage.removeItem(RETURN_STATE_KEY) } catch (e) { /* ignore */ }
 
@@ -29,7 +29,7 @@ export function consumeReturnState() {
   try {
     snapshot = JSON.parse(raw)
   } catch (e) {
-    return null   // corrupted JSON — bad key already cleared above
+    return null   // corrupted JSON – bad key already cleared above
   }
 
   const ageMs = Date.now() - (snapshot?.token || 0)

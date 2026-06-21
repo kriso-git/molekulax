@@ -1,4 +1,4 @@
-// Phase C — multi-variant entry (oral + injectable). v0.27 RICH expansion.
+// Phase C – multi-variant entry (oral + injectable). v0.27 RICH expansion.
 // See docs/superpowers/specs/2026-05-19-route-toggle-design.md for shape rules.
 // Sources for Lab Terminal hard-fail fields (aromatization, hepatotoxicity):
 // Singh 2009 (PMID 18813027), Shah 2008 (PMID 18187367), Jasiurkowski 2006
@@ -31,7 +31,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Methasterone (pochodna 2α,17α-dimetylo-DHT). Dwa formaty rynkowe: doustna tabletka 17α-metylowana z ekstremalną hepatotoksycznością oraz podziemna iniekcyjna w-oleju z obniżonym (ale NIE wyeliminowanym) stresem wątrobowym.",
-  "description": "Superdrol (chemicznie Methasterone, 2α,17α-dimetylo-17β-hydroksy-5α-androstan-3-on) pierwotnie zsyntetyzowany w 1956. Designer Supplements LLC wprowadziła formę doustną jako suplement diety w 2005; FDA w 2012 (DASCA) sklasyfikowała jako substancję kontrolowaną Schedule III i wycofała z rynku suplementów. Wariant iniekcyjny pojawił się później na rynku podziemnym — methyldrostanolone rozpuszczony w oleju (NIE estryfikowany) — który omija first-pass wątroby i obniża stres wątrobowy, ale grupa 17α-metylowa oznacza, że hepatotoksyczność NIE jest całkowicie wyeliminowana. Silny agonista AR (anaboliczny 400, androgenny 20 vs. testosteron); struktura 2α,17α-dimetylowa oznacza brak aromatyzacji w obu formach.",
+  "description": "Superdrol (chemicznie Methasterone, 2α,17α-dimetylo-17β-hydroksy-5α-androstan-3-on) pierwotnie zsyntetyzowany w 1956. Designer Supplements LLC wprowadziła formę doustną jako suplement diety w 2005; FDA w 2012 (DASCA) sklasyfikowała jako substancję kontrolowaną Schedule III i wycofała z rynku suplementów. Wariant iniekcyjny pojawił się później na rynku podziemnym – methyldrostanolone rozpuszczony w oleju (NIE estryfikowany) – który omija first-pass wątroby i obniża stres wątrobowy, ale grupa 17α-metylowa oznacza, że hepatotoksyczność NIE jest całkowicie wyeliminowana. Silny agonista AR (anaboliczny 400, androgenny 20 vs. testosteron); struktura 2α,17α-dimetylowa oznacza brak aromatyzacji w obu formach.",
   "keyInfo": [
     { "label": "Mechanizm", "value": "Agonista AR (anaboliczny 400 / androgenny 20)" },
     { "label": "Stosunek anaboliczny", "value": "400:20" },
@@ -56,7 +56,7 @@ export default {
   "expectations": [
     { "label": "Tydzień 1", "body": "Efekt akutny minimalny. Niektórzy zgłaszają lekki wzrost agresji, 'pump' podczas treningu." },
     { "label": "Tygodnie 2–3", "body": "Wyraźny wzrost siły (10–20% 1RM), szybki suchy przyrost mięśni. Panel lipidowy HDL gwałtownie spada (>30% dokumentowane)." },
-    { "label": "Koniec tygodnia 4", "body": "Maksymalny przyrost mięśni. Przy formie doustnej hepatotoksyczność często ujawnia się w tym momencie (ALT/AST 3–5× wzrost) — OBOWIĄZKOWA przerwa cyklu. Przy formie iniekcyjnej wzrost markerów wątrobowych łagodniejszy i wolniejszy." }
+    { "label": "Koniec tygodnia 4", "body": "Maksymalny przyrost mięśni. Przy formie doustnej hepatotoksyczność często ujawnia się w tym momencie (ALT/AST 3–5× wzrost) – OBOWIĄZKOWA przerwa cyklu. Przy formie iniekcyjnej wzrost markerów wątrobowych łagodniejszy i wolniejszy." }
   ],
   "studies": [
     { "title": "Severe hepatotoxicity caused by a methasteron-containing performance-enhancing supplement", "authors": "Singh V, Rudraraju M, Carey EJ, Byrne TJ, Vargas HE, Williams JE, Balan V, Douglas DD, Rakela J.", "journal": "J Clin Gastroenterol. 2009;43(3):287.", "pmid": "18813027" },
@@ -68,7 +68,7 @@ export default {
   "faq": [
     { "q": "Dlaczego FDA zakazało Superdrol?", "a": "Wiele przypadków cholestatycznej żółtaczki zgłoszonych do FDA między 2008–2011 (Singh 2009, Shah 2008, Jasiurkowski 2006) wykazało ostrą hepatotoksyczność Methasterone u zdrowych młodych mężczyzn. Ustawa DASCA z 2012 sklasyfikowała jako Schedule III." },
     { "q": "Jak różni się od Anavar?", "a": "Oba są 17α-alkilowanymi AAS doustnymi, ale Superdrol jest podwójnie metylowany (2α + 17α), co daje ekstremalną afiniczność AR, podczas gdy hepatotoksyczność jest ~10× wyższa na poziomie przypadków klinicznych vs. Anavar. Anavar 320:24 stosunek anaboliczny:androgenny, Superdrol 400:20." },
-    { "q": "Czy iniekcyjny Superdrol jest bezpieczniejszy?", "a": "Hepatycznie TAK, znacząco — pominięcie first-pass znacznie obniża szczytowe stężenie wątrobowe. ALE z powodu grupy 17α-metylowej pełne bezpieczeństwo NIE istnieje — mierzalny wzrost markerów wątrobowych jest oczekiwany w całym cyklu z powodu przedłużonego uwalniania depo. Ryzyko sercowo-naczyniowe (spadek HDL) i supresji HPTA jest identyczne z formą doustną." },
+    { "q": "Czy iniekcyjny Superdrol jest bezpieczniejszy?", "a": "Hepatycznie TAK, znacząco – pominięcie first-pass znacznie obniża szczytowe stężenie wątrobowe. ALE z powodu grupy 17α-metylowej pełne bezpieczeństwo NIE istnieje – mierzalny wzrost markerów wątrobowych jest oczekiwany w całym cyklu z powodu przedłużonego uwalniania depo. Ryzyko sercowo-naczyniowe (spadek HDL) i supresji HPTA jest identyczne z formą doustną." },
     { "q": "Co oznacza ALT/AST 3× normy?", "a": "Znaczące uszkodzenie hepatocelularne. NATYCHMIASTOWE przerwanie cyklu, TUDCA do 1000 mg/dzień, NAC 1800 mg/dzień, nawodnienie, retest po 2 tygodniach. Jeśli nie znormalizuje się lub bilirubina wzrośnie, konsultacja hepatologa." }
   ],
   "related": ["methylstenbolone", "anavar-info", "dianabol-info", "testosterone-info"],
@@ -122,9 +122,9 @@ export default {
       "hepatotoxicity": "very-high",
       "androgenicRatio": "400:20",
       "dosing": {
-        "hu": "10-30 mg/nap orálisan, napi 1-2 osztott dózisban. Maximum 4-6 hét ciklus — a hepatotoxicitás kumulatív. Étvágyvesztés és \"Superdrol-flu\" tünetek gyakoriak 20 mg felett. TUDCA 500-750 mg/nap + NAC 1200 mg/nap kötelező a teljes ciklus alatt.",
-        "en": "10-30 mg/day orally, 1-2 split doses per day. Maximum 4-6 week cycle — hepatotoxicity is cumulative. Appetite loss and \"Superdrol flu\" symptoms common above 20 mg. TUDCA 500-750 mg/day + NAC 1200 mg/day mandatory throughout the cycle.",
-        "pl": "10-30 mg/dzień doustnie, 1-2 dawki podzielone dziennie. Maksymalnie 4-6 tygodni cyklu — hepatotoksyczność jest kumulacyjna. Utrata apetytu i objawy \"Superdrol flu\" częste powyżej 20 mg. TUDCA 500-750 mg/dzień + NAC 1200 mg/dzień obowiązkowo przez cały cykl."
+        "hu": "10-30 mg/nap orálisan, napi 1-2 osztott dózisban. Maximum 4-6 hét ciklus – a hepatotoxicitás kumulatív. Étvágyvesztés és \"Superdrol-flu\" tünetek gyakoriak 20 mg felett. TUDCA 500-750 mg/nap + NAC 1200 mg/nap kötelező a teljes ciklus alatt.",
+        "en": "10-30 mg/day orally, 1-2 split doses per day. Maximum 4-6 week cycle – hepatotoxicity is cumulative. Appetite loss and \"Superdrol flu\" symptoms common above 20 mg. TUDCA 500-750 mg/day + NAC 1200 mg/day mandatory throughout the cycle.",
+        "pl": "10-30 mg/dzień doustnie, 1-2 dawki podzielone dziennie. Maksymalnie 4-6 tygodni cyklu – hepatotoksyczność jest kumulacyjna. Utrata apetytu i objawy \"Superdrol flu\" częste powyżej 20 mg. TUDCA 500-750 mg/dzień + NAC 1200 mg/dzień obowiązkowo przez cały cykl."
       },
       "quality": {
         "pure": [
@@ -135,7 +135,7 @@ export default {
           "EXTRÉM HIPERTONIA: vérnyomás napi mérés kötelező, szisztolés >150 Hgmm ciklus-megszakítás indikáció",
           "Hepatotoxicitás (ALT/AST emelkedés, ritkán cholesztatikus jaundice, dokumentált máj-szövet-elhalás esetek)",
           "Súlyos lipid-leromlás: HDL drastikusan csökken (>30%, kardiovaszkuláris kockázat)",
-          "Étvágytalanság, hányinger, fejfájás (\"Superdrol-flu\") — különösen >20 mg/nap felett",
+          "Étvágytalanság, hányinger, fejfájás (\"Superdrol-flu\") – különösen >20 mg/nap felett",
           "Kolesztázis (cholestasis): epesav-felhalmozódás a máj-sejtekben, bőr-viszketés figyelmeztető jel",
           "Pszichológiai: agresszió, irritáció, anxietás",
           "Akut vesekárosodás (AKI): Nasr 2009 case report (PMID 18720005) Methasterone-indukált cholesztatikus jaundice + AKI-t dokumentált"
@@ -162,9 +162,9 @@ export default {
         },
         "unit": "mg/day",
         "note": {
-          "hu": "MAXIMUM 4 hét ciklus — NIKADA tovább. TUDCA 500-750 mg/nap + NAC 1200 mg/nap a teljes ciklus alatt. ALT/AST 3x felső normál esetén AZONNAL leállítás + máj-labor 2 héten belül. PCT (Clomid + Nolvadex 4 hét) kötelező. Vérnyomás naponta.",
-          "en": "MAXIMUM 4-week cycle — NEVER longer. TUDCA 500-750 mg/day + NAC 1200 mg/day throughout the cycle. If ALT/AST 3x upper normal, STOP IMMEDIATELY + liver labs within 2 weeks. PCT (Clomid + Nolvadex 4 weeks) mandatory. Blood pressure daily.",
-          "pl": "MAKSYMALNIE 4-tygodniowy cykl — NIGDY dłużej. TUDCA 500-750 mg/dzień + NAC 1200 mg/dzień przez cały cykl. Jeśli ALT/AST 3x górna granica normy, NATYCHMIASTOWE PRZERWANIE + badania wątroby w ciągu 2 tygodni. PCT (Clomid + Nolvadex 4 tygodnie) obowiązkowo. Ciśnienie krwi codziennie."
+          "hu": "MAXIMUM 4 hét ciklus – NIKADA tovább. TUDCA 500-750 mg/nap + NAC 1200 mg/nap a teljes ciklus alatt. ALT/AST 3x felső normál esetén AZONNAL leállítás + máj-labor 2 héten belül. PCT (Clomid + Nolvadex 4 hét) kötelező. Vérnyomás naponta.",
+          "en": "MAXIMUM 4-week cycle – NEVER longer. TUDCA 500-750 mg/day + NAC 1200 mg/day throughout the cycle. If ALT/AST 3x upper normal, STOP IMMEDIATELY + liver labs within 2 weeks. PCT (Clomid + Nolvadex 4 weeks) mandatory. Blood pressure daily.",
+          "pl": "MAKSYMALNIE 4-tygodniowy cykl – NIGDY dłużej. TUDCA 500-750 mg/dzień + NAC 1200 mg/dzień przez cały cykl. Jeśli ALT/AST 3x górna granica normy, NATYCHMIASTOWE PRZERWANIE + badania wątroby w ciągu 2 tygodni. PCT (Clomid + Nolvadex 4 tygodnie) obowiązkowo. Ciśnienie krwi codziennie."
         }
       }
     },
@@ -177,12 +177,12 @@ export default {
         "pl": "Methyldrostanolon (Methyl-Drol in-oil IM, depot UGL)"
       },
       "routeNote": {
-        "hu": "Ritka UGL \"Methyl-Drol\" in-oil formátum: a hepatikus first-pass megkerülésével a máj-stressz csökken, de NEM tűnik el — a 17α-metil-csoport az IM-route-nál is hepatotoxikus. Lassabb felfutás (depot-kinetika), hosszabb detekciós ablak. Akkor érdemes, ha az orális hepatotoxicitás intolerabilis, DE a kockázat nem nulla.",
-        "en": "Rare UGL \"Methyl-Drol\" in-oil format: bypassing hepatic first-pass reduces liver stress but does NOT eliminate it — the 17α-methyl group remains hepatotoxic even via IM route. Slower onset (depot kinetics), longer detection window. Worth considering if oral hepatotoxicity is intolerable, BUT the risk is not zero.",
-        "pl": "Rzadki format UGL \"Methyl-Drol\" in-oil: ominięcie wątrobowego first-pass zmniejsza stres wątrobowy, ale NIE eliminuje go — grupa 17α-metylowa pozostaje hepatotoksyczna nawet drogą IM. Wolniejsze rozpoczęcie (kinetyka depot), dłuższe okno detekcji. Warto rozważyć, jeśli hepatotoksyczność doustna jest nie do zniesienia, ALE ryzyko nie jest zerowe."
+        "hu": "Ritka UGL \"Methyl-Drol\" in-oil formátum: a hepatikus first-pass megkerülésével a máj-stressz csökken, de NEM tűnik el – a 17α-metil-csoport az IM-route-nál is hepatotoxikus. Lassabb felfutás (depot-kinetika), hosszabb detekciós ablak. Akkor érdemes, ha az orális hepatotoxicitás intolerabilis, DE a kockázat nem nulla.",
+        "en": "Rare UGL \"Methyl-Drol\" in-oil format: bypassing hepatic first-pass reduces liver stress but does NOT eliminate it – the 17α-methyl group remains hepatotoxic even via IM route. Slower onset (depot kinetics), longer detection window. Worth considering if oral hepatotoxicity is intolerable, BUT the risk is not zero.",
+        "pl": "Rzadki format UGL \"Methyl-Drol\" in-oil: ominięcie wątrobowego first-pass zmniejsza stres wątrobowy, ale NIE eliminuje go – grupa 17α-metylowa pozostaje hepatotoksyczna nawet drogą IM. Wolniejsze rozpoczęcie (kinetyka depot), dłuższe okno detekcji. Warto rozważyć, jeśli hepatotoksyczność doustna jest nie do zniesienia, ALE ryzyko nie jest zerowe."
       },
       "image": "/performance/oil-vial-orange.png",
-      "legalStatus": "Nem licencelt formátum — kizárólag UGL (underground lab) underground market. Mindenhol illegális gyártás + birtoklás + felhasználás. WADA: tiltott.",
+      "legalStatus": "Nem licencelt formátum – kizárólag UGL (underground lab) underground market. Mindenhol illegális gyártás + birtoklás + felhasználás. WADA: tiltott.",
       "bioavailability": "~100% (IM injekció bypass-olja a first-pass-t; methyldrostanolone olajban oldva slow depot-felszívódással)",
       "onsetTime": {
         "hu": "10-21 nap (lassabb felfutás mint orálnál, depot-kinetika miatt)",
@@ -209,13 +209,13 @@ export default {
           "UGL HPLC-tesztelt forrás kötelező (hamisítás és túladagolás gyakoriak)"
         ],
         "caution": [
-          "EXTRÉM HIPERTONIA: ugyanaz mint orálnál — vérnyomás napi mérés kötelező (17α-metil-osztály hatás)",
-          "Injection site irritáció/fájdalom (IM, methyldrostanolone in-oil notorikusan fájdalmas — vastus lateralis vagy ventrogluteal preferálása)",
+          "EXTRÉM HIPERTONIA: ugyanaz mint orálnál – vérnyomás napi mérés kötelező (17α-metil-osztály hatás)",
+          "Injection site irritáció/fájdalom (IM, methyldrostanolone in-oil notorikusan fájdalmas – vastus lateralis vagy ventrogluteal preferálása)",
           "Hepatotoxicitás (17α-metil-csoport IM-route-nál is aktív): ALT/AST emelkedés, kolesztázis kockázat csökkentett de NEM nulla",
-          "Súlyos lipid-leromlás: HDL drastikusan csökken (kardiovaszkuláris kockázat — ugyanaz mint orálnál)",
+          "Súlyos lipid-leromlás: HDL drastikusan csökken (kardiovaszkuláris kockázat – ugyanaz mint orálnál)",
           "Étvágytalanság, hányinger (\"Superdrol-flu\" tünetek IM-nál is előfordulnak)",
           "Pszichológiai: agresszió, irritáció, anxietás",
-          "Lassú felfutás + hosszú detekció — verseny közelében különösen kockázatos"
+          "Lassú felfutás + hosszú detekció – verseny közelében különösen kockázatos"
         ],
         "avoid": [
           "Bármilyen meglévő máj-zavar abszolút kontraindikáció (csökkentett, de nem nulla hepatotoxicitás)",
@@ -239,9 +239,9 @@ export default {
         },
         "unit": "mg/inj",
         "note": {
-          "hu": "50 mg EOD (minden második nap) IM — maximum 6 hét ciklus. TUDCA 500 mg/nap + NAC 1200 mg/nap kötelező (a 17α-metil miatt máj-támogatás IM-nál is szükséges). ALT/AST 3x felső normál esetén AZONNAL leállítás. PCT (Clomid + Nolvadex 4-6 hét) kötelező. Vérnyomás naponta.",
-          "en": "50 mg EOD (every-other-day) IM — maximum 6-week cycle. TUDCA 500 mg/day + NAC 1200 mg/day mandatory (liver support needed even IM due to 17α-methyl group). If ALT/AST 3x upper normal, STOP IMMEDIATELY. PCT (Clomid + Nolvadex 4-6 weeks) mandatory. Blood pressure daily.",
-          "pl": "50 mg EOD (co drugi dzień) IM — maksymalnie 6-tygodniowy cykl. TUDCA 500 mg/dzień + NAC 1200 mg/dzień obowiązkowo (wsparcie wątroby potrzebne nawet IM z powodu grupy 17α-metylowej). Jeśli ALT/AST 3x górna granica normy, NATYCHMIASTOWE PRZERWANIE. PCT (Clomid + Nolvadex 4-6 tygodni) obowiązkowo. Ciśnienie krwi codziennie."
+          "hu": "50 mg EOD (minden második nap) IM – maximum 6 hét ciklus. TUDCA 500 mg/nap + NAC 1200 mg/nap kötelező (a 17α-metil miatt máj-támogatás IM-nál is szükséges). ALT/AST 3x felső normál esetén AZONNAL leállítás. PCT (Clomid + Nolvadex 4-6 hét) kötelező. Vérnyomás naponta.",
+          "en": "50 mg EOD (every-other-day) IM – maximum 6-week cycle. TUDCA 500 mg/day + NAC 1200 mg/day mandatory (liver support needed even IM due to 17α-methyl group). If ALT/AST 3x upper normal, STOP IMMEDIATELY. PCT (Clomid + Nolvadex 4-6 weeks) mandatory. Blood pressure daily.",
+          "pl": "50 mg EOD (co drugi dzień) IM – maksymalnie 6-tygodniowy cykl. TUDCA 500 mg/dzień + NAC 1200 mg/dzień obowiązkowo (wsparcie wątroby potrzebne nawet IM z powodu grupy 17α-metylowej). Jeśli ALT/AST 3x górna granica normy, NATYCHMIASTOWE PRZERWANIE. PCT (Clomid + Nolvadex 4-6 tygodni) obowiązkowo. Ciśnienie krwi codziennie."
         }
       }
     }

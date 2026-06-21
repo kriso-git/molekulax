@@ -65,7 +65,7 @@ function libraryNameFor(libId, lang = 'hu') {
 // CRITICAL: keyed ONLY on the path (route.kind/route.library), NOT on libraryId.
 // The cube switcher changes libraryId WITHOUT changing the URL (state-only by
 // design); if libraryId were a dependency, every cube switch on a landing path
-// would re-fire this effect and snap the library back to the path's — making it
+// would re-fire this effect and snap the library back to the path's – making it
 // impossible to switch away. setLibraryId(same) is a no-op, so re-setting on an
 // unchanged path is harmless.
 function LibraryLandingSync({ route }) {

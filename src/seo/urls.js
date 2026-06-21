@@ -1,7 +1,7 @@
 // Pure URL <-> {library,id,variant} translation for SEO path routing.
 // Phase 1 = HU only (no language prefix; HU lives at the site root). The
 // hu/en/pl slug words are all defined here so Phase 3 can add /en + /pl
-// prefixes without touching callers — but parsePath() below only recognises
+// prefixes without touching callers – but parsePath() below only recognises
 // HU paths in Phase 1; /en and /pl resolve to { kind: 'unknown' } until Phase 3.
 
 export const LIB_SLUGS = {

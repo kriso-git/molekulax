@@ -27,7 +27,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Methandrostenolone, 17α-alkilált orális AAS. Klasszikus \"kickstart\" bulking szteroid, magas hepatotoxicitással.",
-  "description": "A Dianabol (Methandrostenolone) az első tömegesen forgalmazott orális AAS, John Bosley Ziegler szintetizálta 1955-ben az amerikai súlyemelő válogatott számára. 17α-alkilezett orális vegyület, gyors vízretenciós izomtömeg-növekedést okoz. **\"Wet gain\" mítosz revíziója**: a Dianabol-on tapasztalt súlygyarapodás nagy része nem szubkután extracelluláris edema, hanem INTRAMUSZKULÁRIS glikogén-tárolás + cell volumization (intracelluláris hidratáció). A cell swelling önmagában anabolikus jel (Häussinger hipotézis: a sejt-térfogat növekedés mTOR-szignált aktivál és protein-szintézist serkent), ezért a \"vizes\" megjelenés mögött valós, produktív anabolikus folyamat áll. \"Kickstart\" használat 4-6 hét, hosszabb-hatású injekciós AAS-ek mellé. Aromatizál, ami E2-növelést + gyno + vízretenció kockázatot ad — DE a Dianabol egy szokatlanul potens, **anastrozole-rezisztens 17α-methylestradiol metabolitot** is képez aromatáz-katalízissel, ezért gyno-kockázat magas még AI mellett is, és klasszikus AI-titrációs stratégia (anastrozole 0,5 mg EOD) kevésbé hatékony mint Testosterone-on. Hepatotoxicitás magas (ALT/AST jelentősen emelkedik), 17α-alkilezett első-pass metabolizmus miatt.",
+  "description": "A Dianabol (Methandrostenolone) az első tömegesen forgalmazott orális AAS, John Bosley Ziegler szintetizálta 1955-ben az amerikai súlyemelő válogatott számára. 17α-alkilezett orális vegyület, gyors vízretenciós izomtömeg-növekedést okoz. **\"Wet gain\" mítosz revíziója**: a Dianabol-on tapasztalt súlygyarapodás nagy része nem szubkután extracelluláris edema, hanem INTRAMUSZKULÁRIS glikogén-tárolás + cell volumization (intracelluláris hidratáció). A cell swelling önmagában anabolikus jel (Häussinger hipotézis: a sejt-térfogat növekedés mTOR-szignált aktivál és protein-szintézist serkent), ezért a \"vizes\" megjelenés mögött valós, produktív anabolikus folyamat áll. \"Kickstart\" használat 4-6 hét, hosszabb-hatású injekciós AAS-ek mellé. Aromatizál, ami E2-növelést + gyno + vízretenció kockázatot ad – DE a Dianabol egy szokatlanul potens, **anastrozole-rezisztens 17α-methylestradiol metabolitot** is képez aromatáz-katalízissel, ezért gyno-kockázat magas még AI mellett is, és klasszikus AI-titrációs stratégia (anastrozole 0,5 mg EOD) kevésbé hatékony mint Testosterone-on. Hepatotoxicitás magas (ALT/AST jelentősen emelkedik), 17α-alkilezett első-pass metabolizmus miatt.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -143,9 +143,9 @@ export default {
         "pl": "Methandrostenolon (Dianabol tabletka doustna, 17α-metylowany)"
       },
       "routeNote": {
-        "hu": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz — TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
-        "en": "Classic form: 17α-methylated tablet, ~3-6 h half-life, fast plasma peak within 1-2 hours. 2-3x split daily dosing recommended. High hepatic first-pass stress — TUDCA + NAC mandatory. Most widespread and most-studied Dianabol form.",
-        "pl": "Klasyczna forma: tabletka 17α-metylowana, ~3-6 h okres półtrwania, szybki szczyt osoczowy w ciągu 1-2 godzin. Zalecane podawanie podzielone 2-3x dziennie. Wysoki stres wątrobowy first-pass — TUDCA + NAC obowiązkowe. Najszerzej rozpowszechniona i najlepiej zbadana forma Dianabolu."
+        "hu": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz – TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
+        "en": "Classic form: 17α-methylated tablet, ~3-6 h half-life, fast plasma peak within 1-2 hours. 2-3x split daily dosing recommended. High hepatic first-pass stress – TUDCA + NAC mandatory. Most widespread and most-studied Dianabol form.",
+        "pl": "Klasyczna forma: tabletka 17α-metylowana, ~3-6 h okres półtrwania, szybki szczyt osoczowy w ciągu 1-2 godzin. Zalecane podawanie podzielone 2-3x dziennie. Wysoki stres wątrobowy first-pass – TUDCA + NAC obowiązkowe. Najszerzej rozpowszechniona i najlepiej zbadana forma Dianabolu."
       },
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: FDA Rx (Ciba 1958, discontinued 1983); Schedule III. EU: UGL piacon dominans, vény nélkül illegális. WADA tiltott.",
@@ -218,7 +218,7 @@ export default {
         "pl": "Rzadka, alternatywna forma (zawiesina typu \"Reforvit-B\"). Omija wątrobowy metabolizm first-pass → nieco niższa, ale NIE zerowa hepatotoksyczność (grupa 17α-metylowa powoduje wewnętrzną hepatotoksyczność nawet bez first-pass). Bardziej stabilne poziomy osoczowe, podawanie EOD (co drugi dzień). Bolesna iniekcja, wyłącznie ze źródła UGL."
       },
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Nem licencelt formátum — kizárólag UGL underground market. Mindenhol illegális. WADA tiltott.",
+      "legalStatus": "Nem licencelt formátum – kizárólag UGL underground market. Mindenhol illegális. WADA tiltott.",
       "bioavailability": "~95-100% (IM bypass-olja a first-pass-t; methandrostenolone olajban suspendált slow depot-felszívódással)",
       "onsetTime": {
         "hu": "12-24 óra (IM, depot-kinetika)",
@@ -247,7 +247,7 @@ export default {
           "PIP (injection site pain) gyakori, methandrostenolone-in-oil notorikusan fáj",
           "Lipid-zavar drasztikus: HDL csökkenés ugyanaz mint orálnál",
           "Vízretenció + gynecomastia-rizikó (aromatizáció nem változik)",
-          "Hepatotoxicitás csökkentett DE NEM nulla — TUDCA kötelező"
+          "Hepatotoxicitás csökkentett DE NEM nulla – TUDCA kötelező"
         ],
         "avoid": [
           "Erős injection-site-érzékenység",
@@ -277,5 +277,5 @@ export default {
       }
     }
   ],
-  "anecdote": "A Dianabol szinte legendás státusszal bír az AAS hagyományban. A felhasználók gyakran nagyon gyors változást jelentenek a teltségben, az erőkar-helyzetben, a regenerációban és az edzőtermi teljesítményben meglepően rövid időn belül. Jellegzetes vonás, hogy mennyire 'anabolikusnak' érződik — meglehetősen nyilvánvalóan, nem finoman. Az erő jellemzően gyorsan emelkedik drámai pumpa- és volumizációs hatásokkal együtt. Az, amit köznyelven 'vízsúlynak' neveznek, valójában intramuszkuláris glikogén és sejt-hidratáció, ami nem egyenértékű az értelmetlen puffadással és maga is hozzájárulhat az anabolikus jelzéshez. Közösségi beszámolók szerint a Dianabol aránytalan hatást gyakorol az edzési lendületre — produktívabb edzések, gyorsabb regeneráció és ebből adódó halmozódó növekedés. Az étvágy is gyakran nő. A kompromisszumok jelentősek: figyelemre méltó ösztrogén-kapcsolatos hatások (gyno, vízvisszatartás), vérnyomás-emelkedés, lipid-zavar és 17α-alkilált máj-terhelés. Néhány beszámoló és felmerülő bizonyíték arra utal, hogy a Dianabol egy szokatlanul erős ösztrogén-metabolittá alakul, amit érdemes szem előtt tartani AI/SERM támogatás tervezésekor."
+  "anecdote": "A Dianabol szinte legendás státusszal bír az AAS hagyományban. A felhasználók gyakran nagyon gyors változást jelentenek a teltségben, az erőkar-helyzetben, a regenerációban és az edzőtermi teljesítményben meglepően rövid időn belül. Jellegzetes vonás, hogy mennyire 'anabolikusnak' érződik – meglehetősen nyilvánvalóan, nem finoman. Az erő jellemzően gyorsan emelkedik drámai pumpa- és volumizációs hatásokkal együtt. Az, amit köznyelven 'vízsúlynak' neveznek, valójában intramuszkuláris glikogén és sejt-hidratáció, ami nem egyenértékű az értelmetlen puffadással és maga is hozzájárulhat az anabolikus jelzéshez. Közösségi beszámolók szerint a Dianabol aránytalan hatást gyakorol az edzési lendületre – produktívabb edzések, gyorsabb regeneráció és ebből adódó halmozódó növekedés. Az étvágy is gyakran nő. A kompromisszumok jelentősek: figyelemre méltó ösztrogén-kapcsolatos hatások (gyno, vízvisszatartás), vérnyomás-emelkedés, lipid-zavar és 17α-alkilált máj-terhelés. Néhány beszámoló és felmerülő bizonyíték arra utal, hogy a Dianabol egy szokatlanul erős ösztrogén-metabolittá alakul, amit érdemes szem előtt tartani AI/SERM támogatás tervezésekor."
 }

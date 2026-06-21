@@ -35,7 +35,7 @@ function formatTrustDate(iso, lang) {
   try { return new Date(iso + 'T00:00:00').toLocaleDateString(lang || 'hu', { year: 'numeric', month: 'long', day: 'numeric' }) } catch { return iso }
 }
 
-// Phase 10 — dynamic "Releváns X" / "Related X" / "Powiązane X" label per library.
+// Phase 10 – dynamic "Releváns X" / "Related X" / "Powiązane X" label per library.
 // Plural noun map per language; fallback strips "Könyvtár"/"Library"/"Biblioteka" from library.name.
 const RELATED_PLURAL = {
   peptides:       { hu: 'Peptidek',          en: 'Peptides',              pl: 'Peptydy' },
@@ -517,7 +517,7 @@ function InteractionsOrbit({ items, tr }) {
 function SafetyTriptych({ profile, accent, tr, t }) {
  if (!profile) return null
  // "Mikor hagyd abba a használatot" (stop) oszlop eltávolítva minden kártyáról
- // (owner kérés) — marad a Mellékhatások + Ellenjavallatok kétoszlopos elrendezés.
+ // (owner kérés) – marad a Mellékhatások + Ellenjavallatok kétoszlopos elrendezés.
  const cols = [
  { id: 'side', color: '#fbbf24', icon: AlertTriangle, items: profile.sideEffects,
  heading: t('entry.safe.side') || 'Mellékhatások' },
@@ -1325,7 +1325,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  {peptide.name?.replace(/-/g, '‑')}
  </h1>
 
- {/* Phase C — Variant route toggle (only renders when entry has 2+ variants) */}
+ {/* Phase C – Variant route toggle (only renders when entry has 2+ variants) */}
  <VariantToggle
  libraryId={library?.id}
  entryId={peptide.id}
@@ -1386,7 +1386,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  <TelegramButtons />
  </div>
  
- {/* Where-to-buy pills — only for compounds a partner shop confirmedly carries (verified links); absent = not available. */}
+ {/* Where-to-buy pills – only for compounds a partner shop confirmedly carries (verified links); absent = not available. */}
  <SourcingButtons entryId={peptide.id} variantId={peptide._activeVariantId} className="mt-4" />
  </div>
 

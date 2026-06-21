@@ -1,4 +1,4 @@
-// Liothyronine (T3, Cytomel) — Pfizer 1956 FDA-approved synthetic
+// Liothyronine (T3, Cytomel) – Pfizer 1956 FDA-approved synthetic
 // 3,5,3'-triiodothyronine, hypothyroidism Rx. Cutting-cycle off-label use
 // documented since the 1980s. Sources: FDA Cytomel SmPC, Bunevicius 1999 PMID 9989958,
 // Stott 2017 TRUST NEJM PMID 28121505, Klein 2001 PMID 11257082,
@@ -52,8 +52,8 @@ export default {
       "value": "FDA + EMA Rx (hypothyroidism), registered in HU + PL. WADA: S4.5 in-competition banned for non-Rx athletes."
     }
   ],
-  "mechanism": "Liothyronine is the synthetic form of endogenous T3, the pharmacologically active form of thyroid hormone. T4 (Levothyroxine) is largely a prohormone — hepatic and renal 5'-deiodinase enzymes (D1/D2) convert it into active T3 (~80% peripheral T4 → T3 conversion). Exogenous T3 bypasses this conversion step and delivers faster on/off kinetics (24-hour t1/2 vs T4's 7 days). T3 is a ligand for the nuclear thyroid receptor (TR-α in skeletal and cardiac muscle, TR-β in liver and hypothalamus): on binding, the receptor heterodimerizes with the retinoid-X-receptor (RXR) and acts as a transcription factor driving direct gene-expression activation. Key downstream targets: the UCP1 and UCP3 mitochondrial uncoupling-protein genes, β-oxidation key enzymes (CPT-1, ACOX) and the Na/K-ATPase α-subunit gene. The REE elevation in skeletal muscle is partly due to Na/K-ATPase density increase (~30% of basal REE allocation). A central mechanism is the hypothalamic-pituitary-thyroid (HPT) negative feedback: exogenous T3 produces dose-dependent suppression of endogenous TSH secretion, leading to secondary hypothyroidism induction if cycle length exceeds the recovery window (about 4-6 weeks of cycle followed by 4-8 weeks of recovery; >100 μg/day for 12+ weeks may cause potentially permanent shutdown).",
-  "legalStatus": "USA: FDA-approved 1956 (Cytomel, Pfizer — then Lederle/Wyeth) for hypothyroidism; Schedule N/A. EU: EMA-approved. HU: registered (Cytomel Rx). PL: registered (Cytomel Rx). WADA: S4.5 thyroid hormone modulator, in-competition banned (NADA Switzerland 2023 explicit listing, USADA 2024 update). TUE process possible for out-of-competition use with pre-existing hypothyroidism diagnosis.",
+  "mechanism": "Liothyronine is the synthetic form of endogenous T3, the pharmacologically active form of thyroid hormone. T4 (Levothyroxine) is largely a prohormone – hepatic and renal 5'-deiodinase enzymes (D1/D2) convert it into active T3 (~80% peripheral T4 → T3 conversion). Exogenous T3 bypasses this conversion step and delivers faster on/off kinetics (24-hour t1/2 vs T4's 7 days). T3 is a ligand for the nuclear thyroid receptor (TR-α in skeletal and cardiac muscle, TR-β in liver and hypothalamus): on binding, the receptor heterodimerizes with the retinoid-X-receptor (RXR) and acts as a transcription factor driving direct gene-expression activation. Key downstream targets: the UCP1 and UCP3 mitochondrial uncoupling-protein genes, β-oxidation key enzymes (CPT-1, ACOX) and the Na/K-ATPase α-subunit gene. The REE elevation in skeletal muscle is partly due to Na/K-ATPase density increase (~30% of basal REE allocation). A central mechanism is the hypothalamic-pituitary-thyroid (HPT) negative feedback: exogenous T3 produces dose-dependent suppression of endogenous TSH secretion, leading to secondary hypothyroidism induction if cycle length exceeds the recovery window (about 4-6 weeks of cycle followed by 4-8 weeks of recovery; >100 μg/day for 12+ weeks may cause potentially permanent shutdown).",
+  "legalStatus": "USA: FDA-approved 1956 (Cytomel, Pfizer – then Lederle/Wyeth) for hypothyroidism; Schedule N/A. EU: EMA-approved. HU: registered (Cytomel Rx). PL: registered (Cytomel Rx). WADA: S4.5 thyroid hormone modulator, in-competition banned (NADA Switzerland 2023 explicit listing, USADA 2024 update). TUE process possible for out-of-competition use with pre-existing hypothyroidism diagnosis.",
   "onsetTime": "Metabolic-rate increase 24-48 hours; fat-loss effect 1-2 weeks; steady-state 7 days",
   "halfLife": "~24 hours",
   "interactionsWith": [
@@ -62,8 +62,8 @@ export default {
     "mirabegron",
     "warfarin"
   ],
-  "aromatization": "Does not aromatize — thyroid hormone, NOT a steroid; no CYP19 interaction. The estrogen axis is directly unaffected, but indirect SHBG elevation has been documented on T3 (Klein 2001 PMID 11257082), causing a drop in free testosterone.",
-  "hepatotoxicity": "Low — thyroid overdose produces a hyperthyroid syndrome (cardiac arrhythmia, hyperthermia, extreme weight loss), NOT direct hepatic toxicity. ALT elevation is rare and only documented in clinical literature with iatrogenic overdose.",
+  "aromatization": "Does not aromatize – thyroid hormone, NOT a steroid; no CYP19 interaction. The estrogen axis is directly unaffected, but indirect SHBG elevation has been documented on T3 (Klein 2001 PMID 11257082), causing a drop in free testosterone.",
+  "hepatotoxicity": "Low – thyroid overdose produces a hyperthyroid syndrome (cardiac arrhythmia, hyperthermia, extreme weight loss), NOT direct hepatic toxicity. ALT elevation is rare and only documented in clinical literature with iatrogenic overdose.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (not an AAS, thyroid hormone)",
   "bindingAffinity": "TR-α + TR-β nuclear receptor Ki ~50-100 pM (high affinity, ~10x stronger than T4).",
@@ -101,12 +101,12 @@ export default {
   ],
   "quality": {
     "pure": [
-      "FDA-approved Cytomel tablet (Pfizer) or generic Liothyronine (US) — pharmacy-sourced ensures actual active ingredient",
+      "FDA-approved Cytomel tablet (Pfizer) or generic Liothyronine (US) – pharmacy-sourced ensures actual active ingredient",
       "EU brand-only Cytomel (Pfizer) Rx, generics limited",
       "UGL Liothyronine vial-substance compounding documented at ±30% dose variance"
     ],
     "caution": [
-      "Hyperthyroid syndrome on overdose: tachycardia, hyperthermia, anxiety, insomnia, extreme weight loss — discontinuation recommended",
+      "Hyperthyroid syndrome on overdose: tachycardia, hyperthermia, anxiety, insomnia, extreme weight loss – discontinuation recommended",
       "Beta-blocker (propranolol) co-administration to relieve tachycardia and tremor",
       "Cardiovascular monitoring: resting HR + BP weekly, ECG baseline + 4-week check",
       "Bone-density loss with long-term chronic dose documented (>50 μg/day >1 year, osteoporosis risk)",
@@ -114,21 +114,21 @@ export default {
       "Iatrogenic secondary hypothyroidism risk off-cycle after >100 μg/day chronic for 12+ weeks"
     ],
     "avoid": [
-      "Hashimoto autoimmune hypothyroidism — CONTRAINDICATED (anti-TPO + Tg-AB titre escalation clinical evidence)",
-      "Pre-existing cardiac arrhythmia (atrial fibrillation, ventricular tachycardia) — absolute contraindication",
-      "Cardiovascular disease (CAD, severe angina) — relative contraindication",
-      "Diabetes mellitus type 1 — relative contraindication (T3 + insulin stack disrupts glucose management)",
-      "Pheochromocytoma — absolute contraindication",
-      "Pregnancy (FDA category A — Rx hypothyroidism legitimate in pregnancy, off-label cutting cycle is NOT)"
+      "Hashimoto autoimmune hypothyroidism – CONTRAINDICATED (anti-TPO + Tg-AB titre escalation clinical evidence)",
+      "Pre-existing cardiac arrhythmia (atrial fibrillation, ventricular tachycardia) – absolute contraindication",
+      "Cardiovascular disease (CAD, severe angina) – relative contraindication",
+      "Diabetes mellitus type 1 – relative contraindication (T3 + insulin stack disrupts glucose management)",
+      "Pheochromocytoma – absolute contraindication",
+      "Pregnancy (FDA category A – Rx hypothyroidism legitimate in pregnancy, off-label cutting cycle is NOT)"
     ]
   },
   "interactions": [
-    "Levothyroxine (T4) — stack-style cutting protocol, dose-adjust each separately",
-    "Warfarin — T3 enhances anticoagulant effect, INR monitoring required",
-    "Insulin + oral hypoglycemics — T3 raises glucose metabolism, hypoglycemia risk during titration",
-    "Beta-blocker (propranolol + atenolol) — relieves tachycardia and tremor, may mask T3-toxicity signals",
-    "Clenbuterol + Mirabegron + ephedrine — additive cardio stress, high HR + BP elevation",
-    "Calcium + iron oral supplements — reduce T3 absorption (4-hour separation recommended)"
+    "Levothyroxine (T4) – stack-style cutting protocol, dose-adjust each separately",
+    "Warfarin – T3 enhances anticoagulant effect, INR monitoring required",
+    "Insulin + oral hypoglycemics – T3 raises glucose metabolism, hypoglycemia risk during titration",
+    "Beta-blocker (propranolol + atenolol) – relieves tachycardia and tremor, may mask T3-toxicity signals",
+    "Clenbuterol + Mirabegron + ephedrine – additive cardio stress, high HR + BP elevation",
+    "Calcium + iron oral supplements – reduce T3 absorption (4-hour separation recommended)"
   ],
   "studies": [
     {
@@ -164,7 +164,7 @@ export default {
   ],
   "faq": [
     {
-      "q": "T3 vs T4 cutting cycle — which is safer?",
+      "q": "T3 vs T4 cutting cycle – which is safer?",
       "a": "T4 has slower on/off kinetics (~7-day t1/2), so the steady-state change takes 4-6 weeks, dose titration is more robust and iatrogenic hyperthyroid risk is lower. T3 is fast-acting (~24-hour t1/2) but causes sudden endogenous TSH suppression, resulting in a higher iatrogenic secondary-hypothyroidism risk off-cycle. In cutting-cycle protocols T3 traditionally dominates (faster metabolic-rate increase), but slower T4 titration is safer for long-term use. A 4-6 week T3 cycle at 75 μg/day is typical for pure cutting, but pre-cycle TSH + free-T3 + free-T4 baseline is mandatory."
     },
     {
@@ -177,7 +177,7 @@ export default {
     },
     {
       "q": "Can a Hashimoto autoimmune hypothyroidism patient use T3?",
-      "a": "In a clinical-Rx context with Hashimoto + hypothyroidism Rx, T4 (Levothyroxine) is first-line; T3 add-on is reserved for cognitive-symptom relief consideration per Bunevicius 1999 NEJM. In off-label cutting context, Hashimoto is CONTRAINDICATED — clinical evidence of anti-TPO + Tg-AB titre escalation (Saglam 2013 PMID 23612648) makes autoimmune-flare risk high. Pre-cycle anti-TPO + anti-Tg screening is mandatory before off-label cutting cycle."
+      "a": "In a clinical-Rx context with Hashimoto + hypothyroidism Rx, T4 (Levothyroxine) is first-line; T3 add-on is reserved for cognitive-symptom relief consideration per Bunevicius 1999 NEJM. In off-label cutting context, Hashimoto is CONTRAINDICATED – clinical evidence of anti-TPO + Tg-AB titre escalation (Saglam 2013 PMID 23612648) makes autoimmune-flare risk high. Pre-cycle anti-TPO + anti-Tg screening is mandatory before off-label cutting cycle."
     },
     {
       "q": "WADA in-competition vs out-of-competition?",
@@ -216,7 +216,7 @@ export default {
       "label": "After cycle",
       "timing": "2 + 4 + 8 weeks after cycle end",
       "markers": "TSH (return to 0.5-2.5 mIU/L range), free-T3, free-T4, reverse-T3, anti-TPO follow-up (autoimmune-flare detection), BP + HR home-tracking",
-      "purpose": "Verify endogenous thyroid-axis recovery. After >100 μg/day chronic 12+ weeks, off-cycle there is a potentially permanent secondary hypothyroidism risk — endocrinologist follow-up required if TSH >5 mIU/L after 8 weeks"
+      "purpose": "Verify endogenous thyroid-axis recovery. After >100 μg/day chronic 12+ weeks, off-cycle there is a potentially permanent secondary hypothyroidism risk – endocrinologist follow-up required if TSH >5 mIU/L after 8 weeks"
     },
     "cruise": {
       "label": "Long-term (clinical hypothyroidism Rx)",

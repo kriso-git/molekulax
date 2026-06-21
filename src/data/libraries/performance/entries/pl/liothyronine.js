@@ -1,4 +1,4 @@
-// Liothyronine (T3, Cytomel) — Pfizer 1956, zatwierdzona przez FDA syntetyczna
+// Liothyronine (T3, Cytomel) – Pfizer 1956, zatwierdzona przez FDA syntetyczna
 // 3,5,3'-trijodotyronina, Rx na niedoczynność tarczycy. Zastosowanie off-label
 // w cyklach cutting udokumentowane od lat 80. Źródła: FDA Cytomel SmPC,
 // Bunevicius 1999 PMID 9989958, Stott 2017 TRUST NEJM PMID 28121505,
@@ -52,8 +52,8 @@ export default {
       "value": "FDA + EMA Rx (niedoczynność tarczycy), zarejestrowana w HU + PL. WADA: S4.5 in-competition zakazana dla sportowców bez Rx."
     }
   ],
-  "mechanism": "Liothyronine jest syntetyczną formą endogennej T3, farmakologicznie aktywnej formy hormonu tarczycy. T4 (Levothyroxine) jest w dużej mierze prohormonem — wątrobowe i nerkowe enzymy 5'-dejodynazy (D1/D2) konwertują go do aktywnej T3 (~80% obwodowej konwersji T4 → T3). Egzogenna T3 omija ten krok konwersji, dając szybszą kinetykę on/off (24-godzinne t1/2 vs 7 dni T4). T3 jest ligandem jądrowego receptora tarczycy (TR-α w mięśniach szkieletowych i sercowym, TR-β w wątrobie i podwzgórzu): po związaniu receptor heterodimeryzuje z receptorem retinoidowym-X (RXR) i działa jako czynnik transkrypcyjny inicjujący bezpośrednią aktywację ekspresji genów. Główne cele downstream: geny mitochondrialnych białek rozprzęgających UCP1 i UCP3, kluczowe enzymy β-oksydacji (CPT-1, ACOX) oraz gen podjednostki α Na/K-ATP-azy. Wzrost REE w mięśniach szkieletowych wynika częściowo ze wzrostu gęstości Na/K-ATP-azy (~30% udziału w spoczynkowym REE). Centralnym mechanizmem jest ujemne sprzężenie zwrotne osi podwzgórze-przysadka-tarczyca (HPT): egzogenna T3 powoduje zależną od dawki supresję wydzielania endogennego TSH, prowadząc do indukcji wtórnej niedoczynności tarczycy, jeśli długość cyklu przekracza okno regeneracji (około 4-6 tygodni cyklu, potem 4-8 tygodni regeneracji; >100 μg/dobę przez 12+ tygodni może powodować potencjalnie trwałe wyłączenie osi).",
-  "legalStatus": "USA: zatwierdzona przez FDA w 1956 (Cytomel, Pfizer — wówczas Lederle/Wyeth) na niedoczynność tarczycy; Schedule N/A. UE: zatwierdzona przez EMA. HU: zarejestrowana (Cytomel Rx). PL: zarejestrowana (Cytomel Rx). WADA: S4.5 modulator hormonów tarczycy, in-competition zakazana (NADA Szwajcaria 2023 explicit listing, USADA 2024 update). Proces TUE możliwy dla użycia out-of-competition przy istniejącym wcześniej rozpoznaniu niedoczynności tarczycy.",
+  "mechanism": "Liothyronine jest syntetyczną formą endogennej T3, farmakologicznie aktywnej formy hormonu tarczycy. T4 (Levothyroxine) jest w dużej mierze prohormonem – wątrobowe i nerkowe enzymy 5'-dejodynazy (D1/D2) konwertują go do aktywnej T3 (~80% obwodowej konwersji T4 → T3). Egzogenna T3 omija ten krok konwersji, dając szybszą kinetykę on/off (24-godzinne t1/2 vs 7 dni T4). T3 jest ligandem jądrowego receptora tarczycy (TR-α w mięśniach szkieletowych i sercowym, TR-β w wątrobie i podwzgórzu): po związaniu receptor heterodimeryzuje z receptorem retinoidowym-X (RXR) i działa jako czynnik transkrypcyjny inicjujący bezpośrednią aktywację ekspresji genów. Główne cele downstream: geny mitochondrialnych białek rozprzęgających UCP1 i UCP3, kluczowe enzymy β-oksydacji (CPT-1, ACOX) oraz gen podjednostki α Na/K-ATP-azy. Wzrost REE w mięśniach szkieletowych wynika częściowo ze wzrostu gęstości Na/K-ATP-azy (~30% udziału w spoczynkowym REE). Centralnym mechanizmem jest ujemne sprzężenie zwrotne osi podwzgórze-przysadka-tarczyca (HPT): egzogenna T3 powoduje zależną od dawki supresję wydzielania endogennego TSH, prowadząc do indukcji wtórnej niedoczynności tarczycy, jeśli długość cyklu przekracza okno regeneracji (około 4-6 tygodni cyklu, potem 4-8 tygodni regeneracji; >100 μg/dobę przez 12+ tygodni może powodować potencjalnie trwałe wyłączenie osi).",
+  "legalStatus": "USA: zatwierdzona przez FDA w 1956 (Cytomel, Pfizer – wówczas Lederle/Wyeth) na niedoczynność tarczycy; Schedule N/A. UE: zatwierdzona przez EMA. HU: zarejestrowana (Cytomel Rx). PL: zarejestrowana (Cytomel Rx). WADA: S4.5 modulator hormonów tarczycy, in-competition zakazana (NADA Szwajcaria 2023 explicit listing, USADA 2024 update). Proces TUE możliwy dla użycia out-of-competition przy istniejącym wcześniej rozpoznaniu niedoczynności tarczycy.",
   "onsetTime": "Wzrost tempa metabolizmu 24-48 godzin; efekt utraty tłuszczu 1-2 tygodnie; steady-state 7 dni",
   "halfLife": "~24 godziny",
   "interactionsWith": [
@@ -62,8 +62,8 @@ export default {
     "mirabegron",
     "warfarin"
   ],
-  "aromatization": "Nie aromatyzuje — hormon tarczycy, NIE jest sterydem; brak interakcji z CYP19. Oś estrogenowa pozostaje bezpośrednio nienaruszona, ale na T3 udokumentowano pośredni wzrost SHBG (Klein 2001 PMID 11257082), powodujący spadek wolnego testosteronu.",
-  "hepatotoxicity": "Niska — przedawkowanie tarczycowe wywołuje zespół hipertyreozy (arytmia serca, hipertermia, skrajna utrata masy ciała), NIE bezpośrednią toksyczność wątrobową. Wzrost ALT jest rzadki i udokumentowany w literaturze klinicznej tylko przy przedawkowaniu jatrogennym.",
+  "aromatization": "Nie aromatyzuje – hormon tarczycy, NIE jest sterydem; brak interakcji z CYP19. Oś estrogenowa pozostaje bezpośrednio nienaruszona, ale na T3 udokumentowano pośredni wzrost SHBG (Klein 2001 PMID 11257082), powodujący spadek wolnego testosteronu.",
+  "hepatotoxicity": "Niska – przedawkowanie tarczycowe wywołuje zespół hipertyreozy (arytmia serca, hipertermia, skrajna utrata masy ciała), NIE bezpośrednią toksyczność wątrobową. Wzrost ALT jest rzadki i udokumentowany w literaturze klinicznej tylko przy przedawkowaniu jatrogennym.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nie AAS, hormon tarczycy)",
   "bindingAffinity": "Receptor jądrowy TR-α + TR-β Ki ~50-100 pM (wysokie powinowactwo, ~10x silniejsze niż T4).",
@@ -101,12 +101,12 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Tabletka Cytomel zatwierdzona przez FDA (Pfizer) lub generyczna Liothyronine (USA) — źródło farmaceutyczne gwarantuje zawartość substancji czynnej",
+      "Tabletka Cytomel zatwierdzona przez FDA (Pfizer) lub generyczna Liothyronine (USA) – źródło farmaceutyczne gwarantuje zawartość substancji czynnej",
       "W UE tylko brand Cytomel (Pfizer) Rx, generyki ograniczone",
       "Compounding UGL Liothyronine z fiolek udokumentowany przy wariancji dawki ±30%"
     ],
     "caution": [
-      "Zespół hipertyreozy przy przedawkowaniu: tachykardia, hipertermia, lęk, bezsenność, skrajna utrata masy ciała — zalecane odstawienie",
+      "Zespół hipertyreozy przy przedawkowaniu: tachykardia, hipertermia, lęk, bezsenność, skrajna utrata masy ciała – zalecane odstawienie",
       "Współpodawanie beta-blokera (propranolol) na łagodzenie tachykardii i drżenia",
       "Monitorowanie układu sercowo-naczyniowego: tętno spoczynkowe + BP cotygodniowo, EKG baseline + 4-tygodniowa kontrola",
       "Utrata gęstości kości udokumentowana przy długotrwałej dawce przewlekłej (>50 μg/dobę >1 rok, ryzyko osteoporozy)",
@@ -114,21 +114,21 @@ export default {
       "Ryzyko jatrogennej wtórnej hipotyreozy po cyklu >100 μg/dobę przewlekle przez 12+ tygodni"
     ],
     "avoid": [
-      "Hashimoto autoimmunologiczna niedoczynność tarczycy — PRZECIWWSKAZANE (kliniczne dowody wzrostu miana anti-TPO + Tg-AB)",
-      "Istniejąca arytmia serca (migotanie przedsionków, częstoskurcz komorowy) — bezwzględne przeciwwskazanie",
-      "Choroba sercowo-naczyniowa (CAD, ciężka dławica) — względne przeciwwskazanie",
-      "Cukrzyca typu 1 — względne przeciwwskazanie (T3 + insulina zaburza zarządzanie glukozą)",
-      "Pheochromocytoma — bezwzględne przeciwwskazanie",
-      "Ciąża (FDA kategoria A — Rx niedoczynności tarczycy w ciąży legitymne, off-label cutting NIE)"
+      "Hashimoto autoimmunologiczna niedoczynność tarczycy – PRZECIWWSKAZANE (kliniczne dowody wzrostu miana anti-TPO + Tg-AB)",
+      "Istniejąca arytmia serca (migotanie przedsionków, częstoskurcz komorowy) – bezwzględne przeciwwskazanie",
+      "Choroba sercowo-naczyniowa (CAD, ciężka dławica) – względne przeciwwskazanie",
+      "Cukrzyca typu 1 – względne przeciwwskazanie (T3 + insulina zaburza zarządzanie glukozą)",
+      "Pheochromocytoma – bezwzględne przeciwwskazanie",
+      "Ciąża (FDA kategoria A – Rx niedoczynności tarczycy w ciąży legitymne, off-label cutting NIE)"
     ]
   },
   "interactions": [
-    "Levothyroxine (T4) — protokół stack cuttingu, dawkowanie dostosowywane osobno",
-    "Warfaryna — T3 nasila działanie przeciwzakrzepowe, wymagane monitorowanie INR",
-    "Insulina + doustne hipoglikemizujące — T3 zwiększa metabolizm glukozy, ryzyko hipoglikemii podczas titracji",
-    "Beta-bloker (propranolol + atenolol) — łagodzi tachykardię i drżenie, może maskować sygnały toksyczności T3",
-    "Clenbuterol + Mirabegron + efedryna — addycyjny stres sercowy, wysokie HR + wzrost BP",
-    "Doustne suplementy wapnia + żelaza — zmniejszają wchłanianie T3 (zalecany odstęp 4-godzinny)"
+    "Levothyroxine (T4) – protokół stack cuttingu, dawkowanie dostosowywane osobno",
+    "Warfaryna – T3 nasila działanie przeciwzakrzepowe, wymagane monitorowanie INR",
+    "Insulina + doustne hipoglikemizujące – T3 zwiększa metabolizm glukozy, ryzyko hipoglikemii podczas titracji",
+    "Beta-bloker (propranolol + atenolol) – łagodzi tachykardię i drżenie, może maskować sygnały toksyczności T3",
+    "Clenbuterol + Mirabegron + efedryna – addycyjny stres sercowy, wysokie HR + wzrost BP",
+    "Doustne suplementy wapnia + żelaza – zmniejszają wchłanianie T3 (zalecany odstęp 4-godzinny)"
   ],
   "studies": [
     {
@@ -164,7 +164,7 @@ export default {
   ],
   "faq": [
     {
-      "q": "T3 vs T4 w cuttingu — który jest bezpieczniejszy?",
+      "q": "T3 vs T4 w cuttingu – który jest bezpieczniejszy?",
       "a": "T4 ma wolniejszą kinetykę on/off (~7-dniowe t1/2), więc zmiana steady-state trwa 4-6 tygodni, titracja dawki jest bardziej stabilna a ryzyko jatrogennej hipertyreozy niższe. T3 jest szybko działająca (~24-godzinne t1/2), ale powoduje nagłą supresję endogennego TSH, dając wyższe ryzyko jatrogennej wtórnej hipotyreozy po cyklu. W protokołach cuttingu tradycyjnie dominuje T3 (szybszy wzrost tempa metabolizmu), ale wolniejsza titracja T4 jest bezpieczniejsza w dłuższym horyzoncie. 4-6 tygodniowy cykl T3 75 μg/dobę to typowy pure-cutting, ale baseline TSH + wolne-T3 + wolne-T4 przed cyklem jest obowiązkowy."
     },
     {
@@ -177,7 +177,7 @@ export default {
     },
     {
       "q": "Czy pacjent z Hashimoto autoimmunologiczną hipotyreozą może używać T3?",
-      "a": "W kontekście klinicznego Rx z Hashimoto + niedoczynnością tarczycy T4 (Levothyroxine) jest leczeniem pierwszej linii, dodatek T3 tylko z rozważenia ulgi w objawach poznawczych wg Bunevicius 1999 NEJM. W kontekście off-label cuttingu Hashimoto jest PRZECIWWSKAZANE — dowody kliniczne wzrostu miana anti-TPO + Tg-AB (Saglam 2013 PMID 23612648) podnoszą ryzyko zaostrzenia autoimmunologicznego. Screening anti-TPO + anti-Tg przed cyklem jest obowiązkowy przed off-label cuttingiem."
+      "a": "W kontekście klinicznego Rx z Hashimoto + niedoczynnością tarczycy T4 (Levothyroxine) jest leczeniem pierwszej linii, dodatek T3 tylko z rozważenia ulgi w objawach poznawczych wg Bunevicius 1999 NEJM. W kontekście off-label cuttingu Hashimoto jest PRZECIWWSKAZANE – dowody kliniczne wzrostu miana anti-TPO + Tg-AB (Saglam 2013 PMID 23612648) podnoszą ryzyko zaostrzenia autoimmunologicznego. Screening anti-TPO + anti-Tg przed cyklem jest obowiązkowy przed off-label cuttingiem."
     },
     {
       "q": "WADA in-competition vs out-of-competition?",
@@ -216,7 +216,7 @@ export default {
       "label": "Po cyklu",
       "timing": "2 + 4 + 8 tygodni po końcu cyklu",
       "markers": "TSH (powrót do zakresu 0.5-2.5 mIU/L), wolne-T3, wolne-T4, odwrotne-T3, follow-up anti-TPO (detekcja autoimmunologicznego zaostrzenia), home-tracking BP + HR",
-      "purpose": "Weryfikacja regeneracji endogennej osi tarczycy. Po przewlekłym >100 μg/dobę przez 12+ tygodni potencjalnie trwała wtórna hipotyreoza — konsultacja endokrynologa wymagana jeśli TSH >5 mIU/L po 8 tygodniach"
+      "purpose": "Weryfikacja regeneracji endogennej osi tarczycy. Po przewlekłym >100 μg/dobę przez 12+ tygodni potencjalnie trwała wtórna hipotyreoza – konsultacja endokrynologa wymagana jeśli TSH >5 mIU/L po 8 tygodniach"
     },
     "cruise": {
       "label": "Długoterminowo (kliniczne Rx niedoczynności tarczycy)",

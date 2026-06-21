@@ -52,7 +52,7 @@ export default {
   ],
   "mechanism": "Umiarkowane hamowanie wychwytu zwrotnego norepinefryny i dopaminy (NDRI, ~3x selektywność DAT/NET vs SERT), plus antagonizm receptorów nikotynowych neuronalnych (α3β2, α4β2). Blokada nikotynowa wyjaśnia efekt rzucania palenia: zmniejsza dysforyczny komponent abstynencji nikotynowej. Aktywny metabolit (hydroksybupropion) podobnie aktywny, z formacją katalizowaną przez CYP2B6 wykazującą dużą zmienność międzyosobniczą.",
   "legalStatus": "UE/PL: na receptę (Wellbutrin, Zyban rzucanie palenia, generyki). USA: FDA Rx, niekontrolowany. Standardowe formy SR (przedłużone uwalnianie) i XL (rozszerzone uwalnianie). Formy generyczne szeroko dostępne.",
-  "bioavailability": "Nieokreślone bezwzględnie (brak postaci IV); szybkie wchłanianie doustne, Tmax ~3 h — etykieta FDA Wellbutrin",
+  "bioavailability": "Nieokreślone bezwzględnie (brak postaci IV); szybkie wchłanianie doustne, Tmax ~3 h – etykieta FDA Wellbutrin",
   "onsetTime": "1-2 weeks (motivation, focus, energy), 4-6 weeks (full antidepressant response)",
   "halfLife": "~21 h (parent); hydroxybupropion metabolite 20-37 h, similar activity",
   "atcCode": "N06AX12",
@@ -66,16 +66,16 @@ export default {
   ],
   "contraindications": [
     "Wywiad zaburzeń drgawkowych (padaczka) lub znana predyspozycja",
-    "Zaburzenia odżywiania (bulimia, anoreksja) — podwyższone ryzyko drgawek",
+    "Zaburzenia odżywiania (bulimia, anoreksja) – podwyższone ryzyko drgawek",
     "Ostra abstynencja alkoholowa lub benzodiazepinowa (ryzyko drgawek)",
     "Jednoczesne lub w ciągu 14 dni MAOi (przełom nadciśnieniowy)"
   ],
   "commonSideEffects": [
     "Bezsenność (15-20%), suchość w ustach (10-15%), ból głowy (10%)",
-    "Pobudzenie, zwiększony niepokój (5-10%) — głównie w pierwszych tygodniach",
+    "Pobudzenie, zwiększony niepokój (5-10%) – głównie w pierwszych tygodniach",
     "Podwyższenie ciśnienia krwi (umiarkowane, zależne od dawki)",
     "Drżenie, pocenie się, utrata wagi (5-8%)",
-    "Ciężkie, rzadkie: drgawki (0,1% przy dawce standardowej, 0,4% przy 450 mg — ZALEŻNE OD DAWKI), objawy psychotyczne, mania (u pacjentów BD)"
+    "Ciężkie, rzadkie: drgawki (0,1% przy dawce standardowej, 0,4% przy 450 mg – ZALEŻNE OD DAWKI), objawy psychotyczne, mania (u pacjentów BD)"
   ],
   "cyp450": [
     "CYP2B6 substrate (primary metabolism)",
@@ -99,8 +99,8 @@ export default {
   "quickStart": [
     "Zacznij od formy SR: 150 mg/dzień (rano) przez 4 dni, potem 150 mg 2x/dzień",
     "Forma XL: 150 mg/dzień rano przez 7 dni, potem 300 mg/dzień rano",
-    "NIE przyjmuj wieczorem (ryzyko bezsenności) — ostatnia dawka do 17:00",
-    "Maks. SR 400 mg/dzień, XL 450 mg/dzień — powyżej tego ryzyko drgawek rośnie WYKŁADNICZO",
+    "NIE przyjmuj wieczorem (ryzyko bezsenności) – ostatnia dawka do 17:00",
+    "Maks. SR 400 mg/dzień, XL 450 mg/dzień – powyżej tego ryzyko drgawek rośnie WYKŁADNICZO",
     "NIE kruszyć tabletki (ryzyko dose-dumping formy SR/XL)"
   ],
   "expectations": [
@@ -134,12 +134,12 @@ export default {
       "MAOi (jednocześnie lub w ciągu 14 dni)",
       "Linezolid lub dożylny błękit metylenowy (działanie MAOI, ryzyko zespołu serotoninowego)",
       "Nagłe odstawienie leków przeciwpadaczkowych lub uspokajająco-nasennych (obniżony próg drgawkowy)",
-      "Ciężka niewydolność wątroby (Child-Pugh ≥10) — przeciwwskazane wg etykiety FDA"
+      "Ciężka niewydolność wątroby (Child-Pugh ≥10) – przeciwwskazane wg etykiety FDA"
     ]
   },
   "interactions": [
     "Augmentacja SSRI (sertralina, fluoksetyna): łagodzi dysfunkcje seksualne",
-    "Naltrekson + bupropion (Contrave) — wskazanie FDA do leczenia masy ciała w otyłości",
+    "Naltrekson + bupropion (Contrave) – wskazanie FDA do leczenia masy ciała w otyłości",
     "Plaster nikotynowy: 30,3% rocznej abstynencji (vs 16,4% placebo)",
     "Wareniklina (Chantix): kombinacja NIE zalecana (addytywne ryzyko CV)",
     "Stymulant ADHD (metylofenidat, lizdeksamfetamina): ostrożna kombinacja (ryzyko drgawkowe i CV)"
@@ -203,7 +203,7 @@ export default {
     },
     {
       "q": "Czy można łączyć z SSRI?",
-      "a": "Tak, częsta strategia kliniczna: SSRI (np. sertralina) + bupropion dla złagodzenia dysfunkcji seksualnych indukowanych SSRI i/lub augmentacji niepełnej odpowiedzi AD. Mechanizm NDRI uzupełnia SERT (wzrost dopaminy+norepinefryny obok serotoniny). WYJĄTEK: kombinacja fluoksetyny + bupropionu wymaga dodatkowej ostrożności (fluoksetyna silny inhibitor CYP2D6, bupropion silny inhibitor CYP2D6 — kumulatywna blokada CYP)."
+      "a": "Tak, częsta strategia kliniczna: SSRI (np. sertralina) + bupropion dla złagodzenia dysfunkcji seksualnych indukowanych SSRI i/lub augmentacji niepełnej odpowiedzi AD. Mechanizm NDRI uzupełnia SERT (wzrost dopaminy+norepinefryny obok serotoniny). WYJĄTEK: kombinacja fluoksetyny + bupropionu wymaga dodatkowej ostrożności (fluoksetyna silny inhibitor CYP2D6, bupropion silny inhibitor CYP2D6 – kumulatywna blokada CYP)."
     },
     {
       "q": "Ryzyko przyrostu masy?",
@@ -230,7 +230,7 @@ export default {
       }
     ],
     "unit": "mg/nap",
-    "note": "SR 150 mg/dzień rano przez 4 dni, potem 150 mg 2x/dzień (8+ h odstępu). XL 150 mg/dzień rano przez 7 dni, potem 300 mg/dzień. Maks. SR 400 / XL 450 mg/dzień — powyżej ryzyko drgawek rośnie WYKŁADNICZO. NIE przyjmuj wieczorem. NIE kruszyć tabletki."
+    "note": "SR 150 mg/dzień rano przez 4 dni, potem 150 mg 2x/dzień (8+ h odstępu). XL 150 mg/dzień rano przez 7 dni, potem 300 mg/dzień. Maks. SR 400 / XL 450 mg/dzień – powyżej ryzyko drgawek rośnie WYKŁADNICZO. NIE przyjmuj wieczorem. NIE kruszyć tabletki."
   },
-  "anecdote": "Raporty anegdotyczne opisują Bupropion jako wszechstronny antydepresant NDRI o zauważalnym działaniu zwiększającym motywację i napęd poprzez wzmocnienie dopaminy i noradrenaliny. Doniesienia społeczności wskazują na silną skuteczność w prezentacjach depresji z niską motywacją, w tym w przypadkach z nakładającym się ADHD. Jego niskie powinowactwo do DAT sugeruje, że działa bardziej jako modulator dopaminergiczny przez VMAT-2 niż bezpośredni bloker wychwytu zwrotnego. Antagonizm receptora nikotynowego leży u podstaw zatwierdzonego przez FDA wskazania do rzucania palenia (Zyban); trwające badania analizują jego użyteczność w zaburzeniach związanych z kokainą, metamfetaminą i zachowaniami impulsywnymi. Bupropion może być paradoksalnie aktywizujący lub nadmiernie stymulujący, z wąskim oknem terapeutycznym. Notatki mechanistyczne: donory tlenku azotu i inhibitory PDE-5 (Sildenafil, Tadalafil) mogą osłabiać skuteczność antydepresyjną; błękit metylenowy wydaje się ją wzmacniać. Uwaga: obniżenie progu drgawkowego — przeciwwskazane w zaburzeniach odżywiania i historii drgawek."
+  "anecdote": "Raporty anegdotyczne opisują Bupropion jako wszechstronny antydepresant NDRI o zauważalnym działaniu zwiększającym motywację i napęd poprzez wzmocnienie dopaminy i noradrenaliny. Doniesienia społeczności wskazują na silną skuteczność w prezentacjach depresji z niską motywacją, w tym w przypadkach z nakładającym się ADHD. Jego niskie powinowactwo do DAT sugeruje, że działa bardziej jako modulator dopaminergiczny przez VMAT-2 niż bezpośredni bloker wychwytu zwrotnego. Antagonizm receptora nikotynowego leży u podstaw zatwierdzonego przez FDA wskazania do rzucania palenia (Zyban); trwające badania analizują jego użyteczność w zaburzeniach związanych z kokainą, metamfetaminą i zachowaniami impulsywnymi. Bupropion może być paradoksalnie aktywizujący lub nadmiernie stymulujący, z wąskim oknem terapeutycznym. Notatki mechanistyczne: donory tlenku azotu i inhibitory PDE-5 (Sildenafil, Tadalafil) mogą osłabiać skuteczność antydepresyjną; błękit metylenowy wydaje się ją wzmacniać. Uwaga: obniżenie progu drgawkowego – przeciwwskazane w zaburzeniach odżywiania i historii drgawek."
 }

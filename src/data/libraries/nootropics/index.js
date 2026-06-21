@@ -1,7 +1,7 @@
 // Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:11:53.272Z
 // Phase 12: per-lang entry chunks. loadEntry(id, lang) dynamic-imports
 // entries/<lang>/<id>.js. Library-level fields (categories, effects, faq,
-// labels) still triplet — only entry bodies are lang-split.
+// labels) still triplet – only entry bodies are lang-split.
 
 import { CATEGORIES, NOOTROPIC_CATEGORIES, getNootropicCategories } from './categories.js'
 import { getResearchLevel } from './researchLevel.js'

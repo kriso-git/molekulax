@@ -1,4 +1,4 @@
-// Designer AAS — limited peer-reviewed evidence. Sources: Pope-Kanayama 2014
+// Designer AAS – limited peer-reviewed evidence. Sources: Pope-Kanayama 2014
 // PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599, USADA designer steroid
 // alerts 2018-2024, PubChem 1-Testosterone Cypionate (CID 16219612),
 // Llewellyn 2017 "Anabolics" (UGL reference). Phenomenological + extrapolated
@@ -28,8 +28,8 @@ export default {
   "image": "/performance/oil-vial-orange.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
-  "shortDesc": "1-Testosterone (Δ1-DHT) Cypionate, injectable designer AAS. 5α-reduced analog of Boldenone. Never licensed as Rx, UGL market only. Does NOT aromatize, NOT 17α-alkylated, low hepatotoxicity — but notorious for severe PIP (injection site pain).",
-  "description": "DHB (Dihydroboldenone, or 1-Testosterone) is a designer anabolic steroid: the 5α-reduced analog of Boldenone (Equipoise), chemically 1-testosterone (17β-hydroxy-androst-1-en-3-one). Available exclusively in UGL underground market format, typically cypionate-esterified as an oily IM suspension (DHB-Cyp 100 mg/ml). Never licensed for human or veterinary Rx — no FDA/EMA approval whatsoever. Anabolic:androgenic ratio ~200:100 (high anabolic, high androgenic). NOT 17α-alkylated → low hepatotoxicity. NOT a CYP19 substrate → does NOT aromatize (Boldenone aromatizes, but DHB is already 5α-reduced, so does not). Notorious for extreme severe injection site pain (PIP) — high crystallinity is the classic cause, often causing 3-5 days of local swelling and pain. Limited peer-reviewed evidence: most clinical pharmacology data is extrapolated from Boldenone and Methenolone class data (Pope-Kanayama 2014 designer AAS review). WADA-banned year-round.",
+  "shortDesc": "1-Testosterone (Δ1-DHT) Cypionate, injectable designer AAS. 5α-reduced analog of Boldenone. Never licensed as Rx, UGL market only. Does NOT aromatize, NOT 17α-alkylated, low hepatotoxicity – but notorious for severe PIP (injection site pain).",
+  "description": "DHB (Dihydroboldenone, or 1-Testosterone) is a designer anabolic steroid: the 5α-reduced analog of Boldenone (Equipoise), chemically 1-testosterone (17β-hydroxy-androst-1-en-3-one). Available exclusively in UGL underground market format, typically cypionate-esterified as an oily IM suspension (DHB-Cyp 100 mg/ml). Never licensed for human or veterinary Rx – no FDA/EMA approval whatsoever. Anabolic:androgenic ratio ~200:100 (high anabolic, high androgenic). NOT 17α-alkylated → low hepatotoxicity. NOT a CYP19 substrate → does NOT aromatize (Boldenone aromatizes, but DHB is already 5α-reduced, so does not). Notorious for extreme severe injection site pain (PIP) – high crystallinity is the classic cause, often causing 3-5 days of local swelling and pain. Limited peer-reviewed evidence: most clinical pharmacology data is extrapolated from Boldenone and Methenolone class data (Pope-Kanayama 2014 designer AAS review). WADA-banned year-round.",
   "keyInfo": [
     {"label": "Mechanism", "value": "AR agonist, 1-Testosterone (Δ1-DHT), NOT aromatized"},
     {"label": "Anabolic:Androgenic", "value": "200:100"},
@@ -38,13 +38,13 @@ export default {
     {"label": "Legal status", "value": "UGL only, no Rx approval. WADA-banned."}
   ],
   "mechanism": "1-Testosterone (Δ1-DHT) AR agonist. The Δ1 double bond is inherited from Boldenone, while 5α-reduction provides DHT-like character. High AR affinity (~200% vs testosterone in vitro). NOT a CYP19 substrate (Boldenone aromatizes, DHB is already 5α-reduced) → does NOT aromatize to estrogen, no gynecomastia risk. NOT 17α-alkylated → minimal hepatic stress. The 17β-OH-cypionate ester provides slow hydrolysis (~8-10 days), giving depot-stable plasma levels.",
-  "legalStatus": "Never licensed as human or veterinary Rx — UGL underground market only. USA: USADA designer steroid alert (Schedule III by analogue). EU/HU/PL: controlled AAS analog, illegal without prescription, WADA-banned year-round (S1.1.a).",
+  "legalStatus": "Never licensed as human or veterinary Rx – UGL underground market only. USA: USADA designer steroid alert (Schedule III by analogue). EU/HU/PL: controlled AAS analog, illegal without prescription, WADA-banned year-round (S1.1.a).",
   "onsetTime": "48-72 h (IM, Cypionate ester)",
   "halfLife": "8-10 d (Cypionate ester)",
   "halfLifeActive": "~24-36 h (depot-driven, free 1-testosterone after hydrolysis)",
   "interactionsWith": ["testosterone", "anastrozole", "finasteride", "warfarin"],
-  "aromatization": "No — 5α-reduced structure, NOT a CYP19 substrate; the parent Boldenone aromatizes, but DHB is already reduced → clinically no E2 elevation expected (Pope-Kanayama 2014 PMID 24423981 designer AAS review, extrapolated Boldenone-Methenolone data)",
-  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injected form bypasses first-pass. Hepatic profile similar to Masteron-Primobolan class (extrapolated, DHB-specific peer-reviewed data missing; Hartgens-Kuipers 2004 PMID 15233599 c17-non-AA injectable AAS class data).",
+  "aromatization": "No – 5α-reduced structure, NOT a CYP19 substrate; the parent Boldenone aromatizes, but DHB is already reduced → clinically no E2 elevation expected (Pope-Kanayama 2014 PMID 24423981 designer AAS review, extrapolated Boldenone-Methenolone data)",
+  "hepatotoxicity": "Low – parent steroid, NOT 17α-alkylated; injected form bypasses first-pass. Hepatic profile similar to Masteron-Primobolan class (extrapolated, DHB-specific peer-reviewed data missing; Hartgens-Kuipers 2004 PMID 15233599 c17-non-AA injectable AAS class data).",
   "wadaStatus": "banned",
   "androgenicRatio": "200:100",
   "bindingAffinity": "High AR affinity (~200% vs testosterone in vitro, extrapolated). SHBG affinity moderate-high (DHT structural character).",
@@ -56,8 +56,8 @@ export default {
     "Esthetic \"hard\" look (Masteron-like hardening, slightly wetter than Masteron due to higher androgenic activity)"
   ],
   "quickStart": [
-    "BE READY: DHB is notorious for extreme PIP (injection site pain) — 3-5 days of local swelling and pain common; apply HEAT-PAD on glute after injection",
-    "Only for experienced users — NOT a first cycle",
+    "BE READY: DHB is notorious for extreme PIP (injection site pain) – 3-5 days of local swelling and pain common; apply HEAT-PAD on glute after injection",
+    "Only for experienced users – NOT a first cycle",
     "Typically stacked with testosterone base + third AAS (Test-Cyp + DHB-Cyp + Tren-E is a common example)",
     "DHT structural analog → STRICT hair-loss risk in genetic predisposition",
     "PCT (Clomid + Nolvadex 4-6 weeks) mandatory; from last DHB injection +14-21 days"
@@ -70,13 +70,13 @@ export default {
   "quality": {
     "pure": [
       "Clear yellowish-brown or amber oil, 10ml vial, sterile filtered (DHB-Cyp 100 mg/ml classical UGL concentration)",
-      "UGL HPLC-tested source MANDATORY — DHB often counterfeited (Test-Cyp or Boldenone-Cyp substitution)"
+      "UGL HPLC-tested source MANDATORY – DHB often counterfeited (Test-Cyp or Boldenone-Cyp substitution)"
     ],
     "caution": [
-      "PIP (injection site pain) extreme — the most common user complaint, many can't train the target muscle for 3-5 days after",
+      "PIP (injection site pain) extreme – the most common user complaint, many can't train the target muscle for 3-5 days after",
       "Hair-loss acceleration in androgenic alopecia (DHT structural analog with high androgenic activity)",
       "Lipid disturbance: HDL drop, LDL rise (moderate-high, more cumulative than Masteron-Primobolan due to higher androgenic activity)",
-      "Limited peer-reviewed evidence — long-term safety profile NOT known from clinical trials"
+      "Limited peer-reviewed evidence – long-term safety profile NOT known from clinical trials"
     ],
     "avoid": [
       "Anyone who cannot tolerate strong PIP (alternative: Masteron-Enan or Primobolan-Enan with less PIP)",
@@ -84,7 +84,7 @@ export default {
       "Prostate hypertrophy, prostate cancer (high androgenic activity)",
       "Female use (extreme virilization risk)",
       "Cardiovascular risk (family history, high LDL)",
-      "Any \"first cycle\" — DHB is always a stack partner, never a standalone first AAS"
+      "Any \"first cycle\" – DHB is always a stack partner, never a standalone first AAS"
     ]
   },
   "interactions": [
@@ -103,11 +103,11 @@ export default {
     {"title": "PubChem 1-Testosterone Cypionate CID 16219612 monograph", "authors": "NIH PubChem", "journal": "PubChem Open Chemistry Database", "pmid": null}
   ],
   "faq": [
-    {"q": "Why does DHB injection hurt so much?", "a": "DHB's high crystallinity + relatively low solubility cause significant PIP (injection site pain). The crystals trigger aseptic inflammation in the muscle tissue, manifesting as 3-5 days of local swelling and pain. Solutions: larger volume (2 ml instead of 1 ml — more vehicle dilutes concentration), gluteus medius or ventrogluteal injection (larger muscle with more space), HEAT-PAD post-injection + daily mild movement."},
-    {"q": "DHB vs Boldenone (Equipoise) — what's the difference?", "a": "Boldenone aromatizes (about half as strongly as testosterone, so E2 elevation expected), DHB is already 5α-reduced, so does NOT aromatize. Boldenone is Δ1-double-bond + non-reduced form; DHB is the same Δ1-double-bond + 5α-reduced. Clinically DHB gives a \"harder and drier\" effect than Boldenone, but with much greater PIP."},
-    {"q": "Why no Rx approval?", "a": "DHB was never developed for human or veterinary indication. Classically a designer AAS — the 1990s-2000s bodybuilding/UGL market sought a \"new AAS\" as an alternative to aromatizing Boldenone. Since it was never clinically trialed, long-term safety data is missing; all pharmacology data is extrapolated from Boldenone and Methenolone class data."},
+    {"q": "Why does DHB injection hurt so much?", "a": "DHB's high crystallinity + relatively low solubility cause significant PIP (injection site pain). The crystals trigger aseptic inflammation in the muscle tissue, manifesting as 3-5 days of local swelling and pain. Solutions: larger volume (2 ml instead of 1 ml – more vehicle dilutes concentration), gluteus medius or ventrogluteal injection (larger muscle with more space), HEAT-PAD post-injection + daily mild movement."},
+    {"q": "DHB vs Boldenone (Equipoise) – what's the difference?", "a": "Boldenone aromatizes (about half as strongly as testosterone, so E2 elevation expected), DHB is already 5α-reduced, so does NOT aromatize. Boldenone is Δ1-double-bond + non-reduced form; DHB is the same Δ1-double-bond + 5α-reduced. Clinically DHB gives a \"harder and drier\" effect than Boldenone, but with much greater PIP."},
+    {"q": "Why no Rx approval?", "a": "DHB was never developed for human or veterinary indication. Classically a designer AAS – the 1990s-2000s bodybuilding/UGL market sought a \"new AAS\" as an alternative to aromatizing Boldenone. Since it was never clinically trialed, long-term safety data is missing; all pharmacology data is extrapolated from Boldenone and Methenolone class data."},
     {"q": "Hair-loss risk?", "a": "High if genetic predisposition for androgenic alopecia. DHB with higher androgenic activity (100 vs Masteron 25, Primobolan 44) directly activates the scalp hair follicle AR. Finasteride does NOT protect (DHB is already reduced). The only protection: if genetically sensitive, do NOT use DHT-derivative AAS (and especially NOT DHB, which is more androgenic than the Masteron-Primobolan class)."},
-    {"q": "Long detection window — what's the actual fade-out at the end?", "a": "DHB-Cyp 6-9 month urinary detection (USADA designer-steroid-alert) — extra long due to Cypionate long ester + Δ1-1-testosterone metabolite family. For WADA-tested athletes: avoid during off-season, and minimum 9-month fade-out before planned competition. Boldenone-like \"long fade\" clearance pattern."}
+    {"q": "Long detection window – what's the actual fade-out at the end?", "a": "DHB-Cyp 6-9 month urinary detection (USADA designer-steroid-alert) – extra long due to Cypionate long ester + Δ1-1-testosterone metabolite family. For WADA-tested athletes: avoid during off-season, and minimum 9-month fade-out before planned competition. Boldenone-like \"long fade\" clearance pattern."}
   ],
   "related": ["masteron", "primobolan", "testosterone-info", "trenbolone-info", "anavar-info"],
   "doseCalc": {
@@ -139,7 +139,7 @@ export default {
       "label": "On cruise (DHB cruise NOT standard)",
       "timing": "DHB cruise atypical due to long detection + PIP; if cruising, monitor every 6-8 weeks",
       "markers": "Lipid panel (HDL), SHBG, Total T, E2, blood pressure log, PSA.",
-      "purpose": "Prolonged DHB exposure accumulates lipid disturbance and prostate AR activation. On TRT-Test cruise DHB is typically omitted — esthetic effect only valuable during contest prep, and PIP makes weekly injections burdensome."
+      "purpose": "Prolonged DHB exposure accumulates lipid disturbance and prostate AR activation. On TRT-Test cruise DHB is typically omitted – esthetic effect only valuable during contest prep, and PIP makes weekly injections burdensome."
     }
   }
 }

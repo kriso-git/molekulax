@@ -24,7 +24,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Rozpuszczalny w tłuszczach racetam z aktywnością AMPA-PAM i profilem anksjolitycznym.",
-  "description": "Aniracetam to rozpuszczalna w tłuszczach pochodna pirolidonowa piracetamu, działająca jako pozytywny modulator allosteryczny (PAM) receptora AMPA, spowalniając desensytyzację z dodatkowym profilem anksjolitycznym. We Włoszech jest na receptę jako Ampamet i Memodrin. Okres półtrwania w osoczu jest krótki (~1-2,5 h), ale jego metabolity (zwłaszcza 2-pirolidynon-acetamid i N-anizoilo-GABA) działają dalej — interakcja GABA-ergiczna tego ostatniego tłumaczy określenie \"częściowy prolek\" (PMID 11834304, 11702095). Reputacja przeciwlękowa + prospołeczna w niemal każdej anegdocie.",
+  "description": "Aniracetam to rozpuszczalna w tłuszczach pochodna pirolidonowa piracetamu, działająca jako pozytywny modulator allosteryczny (PAM) receptora AMPA, spowalniając desensytyzację z dodatkowym profilem anksjolitycznym. We Włoszech jest na receptę jako Ampamet i Memodrin. Okres półtrwania w osoczu jest krótki (~1-2,5 h), ale jego metabolity (zwłaszcza 2-pirolidynon-acetamid i N-anizoilo-GABA) działają dalej – interakcja GABA-ergiczna tego ostatniego tłumaczy określenie \"częściowy prolek\" (PMID 11834304, 11702095). Reputacja przeciwlękowa + prospołeczna w niemal każdej anegdocie.",
   "keyInfo": [
     {
       "label": "Mechanizm",

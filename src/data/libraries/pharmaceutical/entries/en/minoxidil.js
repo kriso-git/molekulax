@@ -1,5 +1,5 @@
 // v0.27 RICH multi-variant entry (oral + topical).
-// Phase B Round 1 expansion — route-toggle-aware shape.
+// Phase B Round 1 expansion – route-toggle-aware shape.
 // Sources: FDA Loniten + Rogaine Drug Labels, Perera & Sinclair 2017 (PMID
 // 29167734), Pirmez 2020 (PMID 31520662), Olsen 2002 (PMID 12196747),
 // Suchonwanit 2019 (PMID 31496654), Vañó-Galván 2021 (PMID 33639244).
@@ -27,7 +27,7 @@ export default {
   "name": "Minoxidil",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
-  "shortDesc": "K-channel activator, topical or oral (Rogaine, Loniten + LDOM). Androgenetic alopecia treatment since 1988 — two administration routes with very different systemic exposure profiles.",
+  "shortDesc": "K-channel activator, topical or oral (Rogaine, Loniten + LDOM). Androgenetic alopecia treatment since 1988 – two administration routes with very different systemic exposure profiles.",
   "description": "Minoxidil was originally developed as an oral antihypertensive (Loniten, 1979). Hypertrichosis observed as a side effect led to topical formulations for alopecia (Upjohn Rogaine 2% 1988, 5% 1996). The two routes have fundamentally different pharmacokinetic profiles: topical systemic absorption is <2%, so blood-pressure impact is minimal; oral LDOM (0.25–5 mg/day) provides systemic exposure, more effective than topical (Perera & Sinclair 2017 PMID 29167734), but requires cardiovascular monitoring.",
   "mechanism": "ATP-sensitive K-channel opening → vasodilation + hair-follicle perfusion. Secondary: sulfotransferase (SULT1A1)-activated metabolite (minoxidil sulfate), prostaglandin-E2 elevation. SULT1A1 enzyme-activity variance produces ~40–50% non-responder rate at population level (Goren 2014).",
   "cyp450": [
@@ -39,7 +39,7 @@ export default {
     "Antihypertensive agents: additive hypotension with oral route"
   ],
   "benefits": [
-    "OTC topical form — low barrier to entry",
+    "OTC topical form – low barrier to entry",
     "Oral LDOM more effective than topical (Perera & Sinclair 2017)",
     "Complementary to Finasteride (Big-3 protocol: Minoxidil + Finasteride + Ketoconazole)"
   ],
@@ -133,10 +133,10 @@ export default {
         "Active pericardial effusion"
       ],
       "commonSideEffects": [
-        "HYPOTENSION — systemic vasodilation, increased risk with antihypertensives",
+        "HYPOTENSION – systemic vasodilation, increased risk with antihypertensives",
         "Reflex tachycardia, elevated heart rate (+10–20 bpm)",
         "Edema (ankle, localized; more common above 2.5 mg)",
-        "Generalized hirsutism (body and facial hair growth — systemic exposure)",
+        "Generalized hirsutism (body and facial hair growth – systemic exposure)",
         "Postural hypotension",
         "Initial shedding (telogen effluvium) around 1–2 months"
       ]
@@ -151,7 +151,7 @@ export default {
       },
       "routeNote": {
         "hu": "A topikális forma az első választás hajhullásra: OTC elérhető, minimális szisztémás hatás (<2% abszorpció), kisebb mellékhatás-profil. Lassabb válasz mint az orális LDOM, de biztonságosabb és egyszerűbben bevezethető kezelés.",
-        "en": "Topical is the first-choice route for hair loss: OTC available, minimal systemic exposure (<2% absorption), smaller side-effect profile. Slower response than oral LDOM but safer and easier to initiate — FDA OTC approved.",
+        "en": "Topical is the first-choice route for hair loss: OTC available, minimal systemic exposure (<2% absorption), smaller side-effect profile. Slower response than oral LDOM but safer and easier to initiate – FDA OTC approved.",
         "pl": "Forma miejscowa jest pierwszym wyborem w leczeniu wypadania włosów: dostępna bez recepty, minimalna ekspozycja systemowa (<2% wchłaniania), mniejszy profil działań niepożądanych. Wolniejsza odpowiedź niż doustna LDOM, ale bezpieczniejsza i łatwiejsza do wdrożenia."
       },
       "image": "/performance/topical-solution-clear.png",
@@ -176,16 +176,16 @@ export default {
         },
         "unit": "% solution, 2× daily 1 ml",
         "note": {
-          "hu": "Standard protokoll: 5% oldat vagy hab, 1 ml 2× naponta száraz fejbőrre (reggel + este). Nőknél 2% kevésbé irritáló alternatíva, vagy 5% propilén-glikol-mentes hab. Hatás 3–6 hónap alatt várható. Elhagyás esetén 3–4 hónap alatt visszahúzódik a növekedés — a kezelés hosszú távú.",
-          "en": "Standard protocol: 5% solution or foam, 1 ml 2× daily to dry scalp (morning + evening). For women, 2% is a less irritating alternative, or 5% propylene glycol-free foam. Effect expected within 3–6 months. After stopping, regrowth recedes over 3–4 months — treatment is long-term.",
-          "pl": "Standardowy protokół: roztwór 5% lub pianka, 1 ml 2× dziennie na suchą skórę głowy (rano + wieczór). Dla kobiet 2% to mniej drażniąca alternatywa, lub pianka 5% bez glikolu propylenowego. Efekt oczekiwany w ciągu 3–6 miesięcy. Po odstawieniu odrost cofa się w ciągu 3–4 miesięcy — leczenie jest długoterminowe."
+          "hu": "Standard protokoll: 5% oldat vagy hab, 1 ml 2× naponta száraz fejbőrre (reggel + este). Nőknél 2% kevésbé irritáló alternatíva, vagy 5% propilén-glikol-mentes hab. Hatás 3–6 hónap alatt várható. Elhagyás esetén 3–4 hónap alatt visszahúzódik a növekedés – a kezelés hosszú távú.",
+          "en": "Standard protocol: 5% solution or foam, 1 ml 2× daily to dry scalp (morning + evening). For women, 2% is a less irritating alternative, or 5% propylene glycol-free foam. Effect expected within 3–6 months. After stopping, regrowth recedes over 3–4 months – treatment is long-term.",
+          "pl": "Standardowy protokół: roztwór 5% lub pianka, 1 ml 2× dziennie na suchą skórę głowy (rano + wieczór). Dla kobiet 2% to mniej drażniąca alternatywa, lub pianka 5% bez glikolu propylenowego. Efekt oczekiwany w ciągu 3–6 miesięcy. Po odstawieniu odrost cofa się w ciągu 3–4 miesięcy – leczenie jest długoterminowe."
         }
       },
       "legalStatus": "OTC EU/USA (2% and 5% solution + 5% foam available without prescription).",
       "prescriptionStatus": "OTC",
       "atcCode": "D11AX01",
       "indications": [
-        "Androgenetic alopecia (male pattern, primary indication — Rogaine 5%)",
+        "Androgenetic alopecia (male pattern, primary indication – Rogaine 5%)",
         "Female androgenetic alopecia (2% Rogaine or 5% foam)"
       ],
       "contraindications": [
@@ -194,7 +194,7 @@ export default {
       ],
       "commonSideEffects": [
         "Local scalp irritation, itching, flaking",
-        "Contact dermatitis (propylene glycol-driven — avoidable with foam)",
+        "Contact dermatitis (propylene glycol-driven – avoidable with foam)",
         "Unwanted hair growth on forehead / ears from runoff",
         "Paradoxical shedding (telogen effluvium at 2–4 weeks)"
       ]

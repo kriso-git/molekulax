@@ -128,7 +128,7 @@ export default {
       "pmid": "10338109"
     },
     {
-      "title": "Piracetam — an old drug with novel properties? Updated review",
+      "title": "Piracetam – an old drug with novel properties? Updated review",
       "authors": "Winblad B.",
       "journal": "CNS Drug Rev. 2005;11(2):169-182.",
       "pmid": "20166767"
@@ -153,7 +153,7 @@ export default {
     },
     {
       "q": "Jaka dawka na mioklonię?",
-      "a": "Klinicznie 7-24 g/dzień, czasem do 45 g (Koskiniemi 1998). Zawsze pod nadzorem neurologa — to nie zastosowanie nootropowe, lecz rzadkie wskazanie neurologiczne."
+      "a": "Klinicznie 7-24 g/dzień, czasem do 45 g (Koskiniemi 1998). Zawsze pod nadzorem neurologa – to nie zastosowanie nootropowe, lecz rzadkie wskazanie neurologiczne."
     }
   ],
   "related": [

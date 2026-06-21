@@ -69,7 +69,7 @@ export default {
     "Sublingual (nyelv alá, 10-15 perc) erősebb hatás mint orális",
     "NEM kombinálandó MAOI, SSRI, SNRI gyógyszerekkel",
     "Tyramin-gazdag ételek (érlelt sajt, vörösbor) kerülendők",
-    "NAPFÉNY: fotoszenzitivitás-kockázat — kerüld a direkt UV-t kúra alatt",
+    "NAPFÉNY: fotoszenzitivitás-kockázat – kerüld a direkt UV-t kúra alatt",
     "Kúraidő rövid (3-5 nap), pause kötelező a sensitization elkerülésére"
   ],
   "expectations": [
@@ -94,7 +94,7 @@ export default {
     "caution": [
       "Tyramin-reakció kockázata (MAO-B reverzibilis, de mégis monoaminerg)",
       "Humán farmakokinetika nem teljesen jellemzett",
-      "Fotoszenzitivitás (UV-érzékenység, napégés gyorsabban) — béta-karbolin váz tipikus interakciója UV-vel",
+      "Fotoszenzitivitás (UV-érzékenység, napégés gyorsabban) – béta-karbolin váz tipikus interakciója UV-vel",
       "Hosszabb használat után emocionális \"lapulás\" (érzelmek tompulása) reportált"
     ],
     "avoid": [
@@ -106,7 +106,7 @@ export default {
     "MAOI együttszedés tilos (szerotonin-szindróma + hypertenzív krízis)",
     "SSRI/SNRI együttszedés kerülendő",
     "Tyramin-gazdag ételek + ital (érlelt sajt, vörösbor, pácolt hús)",
-    "Stimulánsokkal additív (dopaminerg túlserkentés) — NE használj stimulánsokat 9-Me-BC kúra alatt; Bromantane lágy alternatíva",
+    "Stimulánsokkal additív (dopaminerg túlserkentés) – NE használj stimulánsokat 9-Me-BC kúra alatt; Bromantane lágy alternatíva",
     "L-Tyrosine szinergista (raw substrate a megnövelt TH-aktivitáshoz)"
   ],
   "studies": [
@@ -154,7 +154,7 @@ export default {
     },
     {
       "q": "Miért fotoszenzitív (napégés-kockázat)?",
-      "a": "A béta-karbolin váz a bőrbe jutva UV-fényre reakciókat katalizál — endogén fotoszenzitizátor szerepet vesz fel (Herraiz 2013). Eredmény: napégés normál UV-expozíciónál is, lebarnulási kockázat hosszabb kúrákon. Védelem: széles spektrumú SPF 50+ + direkt napsütés-kerülés a kúra teljes ideje alatt + 5-7 nap utána."
+      "a": "A béta-karbolin váz a bőrbe jutva UV-fényre reakciókat katalizál – endogén fotoszenzitizátor szerepet vesz fel (Herraiz 2013). Eredmény: napégés normál UV-expozíciónál is, lebarnulási kockázat hosszabb kúrákon. Védelem: széles spektrumú SPF 50+ + direkt napsütés-kerülés a kúra teljes ideje alatt + 5-7 nap utána."
     },
     {
       "q": "Stim-rezenzitizációs protokoll?",

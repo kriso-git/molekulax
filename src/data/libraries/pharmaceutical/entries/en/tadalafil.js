@@ -133,7 +133,7 @@ export default {
       "Riociguat (sGC stimulator)",
       "Recent (< 90 d) MI, unstable angina, NYHA III-IV",
       "Severe hypotension, severe hepatic or renal impairment",
-      "Prior non-arteritic ischemic optic neuropathy (NAION) in either eye — PDE5i-induced vision loss risk",
+      "Prior non-arteritic ischemic optic neuropathy (NAION) in either eye – PDE5i-induced vision loss risk",
       "Uncontrolled hypertension (>170/100 mmHg) or symptomatic hypotension (<90/50 mmHg)",
       "Stroke or life-threatening arrhythmia within the last 6 months",
       "Sudden hearing loss history under PDE5i"
@@ -226,5 +226,5 @@ export default {
     "unit": "mg",
     "note": "Low (2.5 mg daily): ED daily-mode start or elderly/renal-impaired dose reduction. Moderate (5 mg daily): ED daily standard or BPH (FDA 2011 indication) or ED+BPH dual. High (20 mg PRN): ED on-demand, max once daily, 30-45 min before activity. Never combine with nitrate."
   },
-  "anecdote": "Anecdotal reports describe daily low-dose Tadalafil (typically 5 mg, sometimes 10-20 mg) as producing sustained vasodilation with notable improvements in pump quality during resistance training, mild blood pressure reduction (around 5 mmHg systolic/diastolic), and consistent all-day blood flow benefits. Due to its 17.5-hour half-life, timing is forgiving — effects are usually felt 30-60 minutes after administration, but daily dosing produces stable plasma levels. Rx context covers erectile dysfunction, BPH, and pulmonary arterial hypertension. Caution: concurrent nitrate use is contraindicated; alpha-blocker interactions warrant clinician oversight."
+  "anecdote": "Anecdotal reports describe daily low-dose Tadalafil (typically 5 mg, sometimes 10-20 mg) as producing sustained vasodilation with notable improvements in pump quality during resistance training, mild blood pressure reduction (around 5 mmHg systolic/diastolic), and consistent all-day blood flow benefits. Due to its 17.5-hour half-life, timing is forgiving – effects are usually felt 30-60 minutes after administration, but daily dosing produces stable plasma levels. Rx context covers erectile dysfunction, BPH, and pulmonary arterial hypertension. Caution: concurrent nitrate use is contraindicated; alpha-blocker interactions warrant clinician oversight."
 }

@@ -51,7 +51,7 @@ export default {
   ],
   "mechanism": "A típus II 5α-reduktáz (5AR2) szelektív, kompetitív gátlása ~70-90%-kal csökkenti a szérum DHT-szintet (Roberts 1999). A típus I 5AR (faggyúmirigy, bőr) viszonylag érintetlen, ezért a Finasteride enyhébb periphériás antiandrogén-hatása. A hajhagyma-szintű DHT csökkenése megfordítja a miniaturizációt: az anagén fázis meghosszabbodik, a hajszálak vastagsága visszatér. A prosztatában a DHT-csökkenés a hiperplázia progresszióját lassítja.",
   "legalStatus": "EU/HU: vényköteles (Propecia 1 mg, Proscar 5 mg, generikus). USA: FDA Rx, nem ütemezett. Generikus formák széles körben (originator patent 2013-ban lejárt). Telemedicine-szolgáltatások (Roman, Hims) USA-ban online Rx-szel hozzáférhető.",
-  "bioavailability": "65% (orális, 1 mg tabletta, IV-referenciához viszonyított AUC; tartomány 26-170% — FDA Propecia label)",
+  "bioavailability": "65% (orális, 1 mg tabletta, IV-referenciához viszonyított AUC; tartomány 26-170% – FDA Propecia label)",
   "onsetTime": "3-6 months (hair stabilization), 6-12 months (visible regrowth)",
   "halfLife": "5-6 h (plasma); 96+ h enzyme affinity (sustained DHT suppression with daily dosing)",
   "atcCode": "D11AX10 (1 mg alopecia) / G04CB01 (5 mg BPH)",
@@ -64,7 +64,7 @@ export default {
     "Transznem-hormon-terápia (MtF): off-label antiandrogén DHT-csökkentésre"
   ],
   "contraindications": [
-    "Terhesség (FDA X kategória — Finasteride férfi-magzat genitális-fejlődési károsodás)",
+    "Terhesség (FDA X kategória – Finasteride férfi-magzat genitális-fejlődési károsodás)",
     "Női páciensek (gyermekvállalási korban, fogamzásgátlás nélkül)",
     "Ismert hipersenzitivitás",
     "Gyermekek (< 18 év)"
@@ -73,7 +73,7 @@ export default {
     "Szexuális mellékhatás: libidó-csökkenés (1-2%), erektilis diszfunkció (1-2%), ejakuláció-zavar (1%)",
     "Gynaecomastia (mellnagyobbodás férfin, 0,5-1%)",
     "Hangulatzavar (depresszió-emelkedés, irodalom-vita)",
-    "PSA-csökkenés ~50%-kal — prosztata-szűréskor figyelembe veendő (PSA × 2 korrigálva)",
+    "PSA-csökkenés ~50%-kal – prosztata-szűréskor figyelembe veendő (PSA × 2 korrigálva)",
     "Post-finasteride szindróma (PFS): vitatott, perzisztens szexuális/mentális tünet-cluster, FDA 2012 label-update"
   ],
   "cyp450": [
@@ -127,13 +127,13 @@ export default {
       "Hangulatzavar és depresszió-monitor a kezelés alatt"
     ],
     "avoid": [
-      "Terhesség (FDA X kategória — férfi-magzat genitális-károsodás)",
+      "Terhesség (FDA X kategória – férfi-magzat genitális-károsodás)",
       "Női gyermekvállalási korban fogamzásgátlás nélkül",
-      "Pszichiátriai anamnézis (depresszió) — fokozott monitorozás vagy alternatív kezelés",
+      "Pszichiátriai anamnézis (depresszió) – fokozott monitorozás vagy alternatív kezelés",
       "Gyermekek és serdülők (< 18 év)",
-      "Tört vagy porított tabletta terhes (vagy potenciálisan terhes) nő általi megérintése — transzdermális felszívódás magzati hímivarszerv-fejlődési zavart okozhat",
+      "Tört vagy porított tabletta terhes (vagy potenciálisan terhes) nő általi megérintése – transzdermális felszívódás magzati hímivarszerv-fejlődési zavart okozhat",
       "Vér- vagy spermadonáció a kezelés alatt és 1 hónapig utána (másodlagos magzati expozíció megelőzése)",
-      "Egyidejű dutasterid (másik 5α-reduktáz inhibitor) — redundáns kockázat, nem racionális"
+      "Egyidejű dutasterid (másik 5α-reduktáz inhibitor) – redundáns kockázat, nem racionális"
     ]
   },
   "interactions": [

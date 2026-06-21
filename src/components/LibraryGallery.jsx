@@ -32,7 +32,7 @@ import { entryPath } from '../seo/urls'
 // search-input typing (was 60 re-renders per keystroke before).
 const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSelect, t, tr, lang }) {
  // Nootropic entries render the neon ChemicalFormulaPlaceholder as their
- // intentional visual — either a real formula or a name fallback for mixtures.
+ // intentional visual – either a real formula or a name fallback for mixtures.
  // Those aren't "placeholders" in the UX sense, so suppress the PLACEHOLDER chip.
  const hasFormulaArt =
  !peptide.image &&
@@ -109,7 +109,7 @@ const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSe
  </div>
  )}
 
- {/* Phase C — multi-variant chip (Indigo). Stacks below Placeholder if both present. */}
+ {/* Phase C – multi-variant chip (Indigo). Stacks below Placeholder if both present. */}
  {peptide.variantCount >= 2 && (
  <div
  className={`absolute right-3 z-20 inline-flex items-center px-2 py-0.5 rounded-full text-[9px] tracking-[0.15em] uppercase font-semibold ${isPlaceholder ? 'top-9' : 'top-3'}`}
@@ -287,7 +287,7 @@ export default function LibraryGallery({
  const [levelFilters, setLevelFilters] = useState([]) // research level numbers
  const [sortMode, setSortMode] = useState('az') // 'az' | 'za' | 'level'
 
- // Sub-Task 1 (perf-restructure) — perf-only filter state.
+ // Sub-Task 1 (perf-restructure) – perf-only filter state.
  // subCategory is single-select (one chip active at a time); formFactors is
  // multi-select (AND-combined). Both apply only when library.id === 'performance'.
  const [selectedSubCategory, setSelectedSubCategory] = useState(null)
@@ -308,7 +308,7 @@ export default function LibraryGallery({
  const library = libraryProp || ctxLibrary
 
  // Phase 9: meta-only iteration. library.meta is the synchronous
- // LIBRARY_ENTRY_META array — full entries are loaded on demand via
+ // LIBRARY_ENTRY_META array – full entries are loaded on demand via
  // useLibrary().loadEntry(libraryId, entryId) when a tile is clicked.
  const metaList = library.meta || library.entries || []
 
@@ -338,7 +338,7 @@ export default function LibraryGallery({
  const lvl = p.tier ?? library.getResearchLevel?.(p) ?? 1
  if (!levelFilters.includes(lvl)) return false
  }
- // Sub-Task 1 — perf-only chemistry-class subCategory + form-factor filters.
+ // Sub-Task 1 – perf-only chemistry-class subCategory + form-factor filters.
  if (library.id === 'performance') {
   if (selectedSubCategory && p.subCategory !== selectedSubCategory) return false
   if (selectedFormFactors.length > 0) {
@@ -354,10 +354,10 @@ export default function LibraryGallery({
 
  // Restore consumer for Task C. Reads window.__libraryGalleryPendingRestore__
  // (set by EntryDetailRoute closeDetail or the LibraryContext popstate listener) and restores
- // state when the library.id matches the snapshot. Idempotent — clears the
+ // state when the library.id matches the snapshot. Idempotent – clears the
  // pending object after consumption.
  //
- // useLayoutEffect (NOT useEffect) so setState fires BEFORE the browser paint —
+ // useLayoutEffect (NOT useEffect) so setState fires BEFORE the browser paint –
  // otherwise the user sees one flickered frame of default state before the
  // restored state shows up. The rAF chain below is still needed for scrollTo,
  // since the CSS grid-template-rows accordion transition needs a layout pass.
@@ -373,7 +373,7 @@ export default function LibraryGallery({
   // csúszik → flicker visszajön.)
   // Pre-snap MINDIG fusson: minden tile (TOP 10 + accordion egyaránt) a library
   // section-ön belül van, így biztonságos. Korábban targetY > libraryTopY + 4
-  // conditional volt — ez kihagyta a TOP 10 close-back path-t (ahol
+  // conditional volt – ez kihagyta a TOP 10 close-back path-t (ahol
   // targetY ≈ libraryTopY, mert a TOP 10 a library tetején van), ami azt
   // eredményezte hogy a smooth-scroll a Hero tetejéről húzta végig.
   const targetY = pending.scrollY || 0
@@ -458,12 +458,12 @@ export default function LibraryGallery({
  const clearFilters = () => { setActiveFilters([]); setLevelFilters([]) }
  const totalActive = activeFilters.length + levelFilters.length
 
- // Sub-Task 1 (perf-restructure) — handlers for CategoryCards + FormFactorChipRow.
+ // Sub-Task 1 (perf-restructure) – handlers for CategoryCards + FormFactorChipRow.
  const handleSubCategoryClick = useCallback((id) => {
   setSelectedSubCategory(prev => (prev === id ? null : id))
   setExpanded(true)
   setHasOpened(true)
-  // Scroll to the "Összes Teljesítményfokozó" accordion header — gives the
+  // Scroll to the "Összes Teljesítményfokozó" accordion header – gives the
   // user visual context (library title visible) before the filtered tiles.
   // Wait a frame for the accordion-expand transition to start so the target
   // position is correct relative to the post-expand layout.
@@ -502,7 +502,7 @@ export default function LibraryGallery({
    }
    sessionStorage.setItem(RETURN_STATE_KEY, JSON.stringify(snapshot))
   } catch (e) {
-   // sessionStorage full / disabled — silently skip, falls back to fresh landing
+   // sessionStorage full / disabled – silently skip, falls back to fresh landing
   }
   navigate(entryPath(library.id, entry.id, null, lang))
  }, [library.id, lang])
@@ -529,7 +529,7 @@ export default function LibraryGallery({
  </p>
  </div>
 
- {/* Library-selector dots — a könyvtár cím/leírás ÉS a Top10 fejléc közé,
+ {/* Library-selector dots – a könyvtár cím/leírás ÉS a Top10 fejléc közé,
  így minden face-en stabilan ugyanazon a vizuális helyen van. */}
  {dotsLibraries && onDotsJumpTo && (
  <div className="flex items-center justify-center gap-4 mb-10 lg:hidden">
@@ -666,7 +666,7 @@ export default function LibraryGallery({
  </div>
  </div>
 
- {/* Sub-Task 1 (perf-restructure) — active filter chips for subCategory + form-factors */}
+ {/* Sub-Task 1 (perf-restructure) – active filter chips for subCategory + form-factors */}
  {library.id === 'performance' && (selectedSubCategory || selectedFormFactors.length > 0) && (
   <div className="mb-3 flex flex-wrap items-center gap-2">
    <span

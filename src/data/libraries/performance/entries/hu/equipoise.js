@@ -28,8 +28,8 @@ export default {
   "image": "/performance/oil-vial-orange.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
-  "shortDesc": "Boldenone Undecylenate (Δ1-testosterone Undecylenate), veterinary-only injektábilis AAS. Eredetileg Squibb 1949 humán Rx, ma kizárólag állatorvosi (lovak) — Fort Dodge Equipoise 1972-2008. Lassú, stabil lean gains; AROMATIZÁL ~fele olyan erősen mint a testosterone. \"Étvágy-stimuláns\" reputation.",
-  "description": "Az Equipoise (Boldenone Undecylenate) egy Δ1-testosterone Undecylenate-észteresített injektábilis AAS. Eredetileg Squibb (USA) 1949-ben szintetizálta Parenabol (humán Rx) néven idős férfi osteoporosis + cachexia kezelésére, DE az 1970-es években a Test-észterek preferenciája miatt discontinued. 1972-ben Fort Dodge Animal Health megvásárolta a licencet és Equipoise néven veterinary-only (lovak ízületi recovery + étvágy-stimuláns) Rx-szerként forgalmazta — 2008-ban szintén discontinued. Ma kizárólag UGL piacon. Anabolikus:androgén arány 100:50 (közepes anabolikus, közepes androgén). NEM 17α-alkilált → ALACSONY hepatotoxicitás. AROMATIZÁL (kb. fél olyan erősen mint a testosterone, CYP19 substrate). Undecylenate-észter (10-carbon undecénsav) → hosszú felezés ~14 nap, monthly injection-kompatibilis depot. Klasszikus \"slow lean gainer\" — 8-12 hét alatt 3-5 kg száraz izom + dokumentált étvágy-stimuláns hatás (boldenone-driven). WADA tiltott egész évben.",
+  "shortDesc": "Boldenone Undecylenate (Δ1-testosterone Undecylenate), veterinary-only injektábilis AAS. Eredetileg Squibb 1949 humán Rx, ma kizárólag állatorvosi (lovak) – Fort Dodge Equipoise 1972-2008. Lassú, stabil lean gains; AROMATIZÁL ~fele olyan erősen mint a testosterone. \"Étvágy-stimuláns\" reputation.",
+  "description": "Az Equipoise (Boldenone Undecylenate) egy Δ1-testosterone Undecylenate-észteresített injektábilis AAS. Eredetileg Squibb (USA) 1949-ben szintetizálta Parenabol (humán Rx) néven idős férfi osteoporosis + cachexia kezelésére, DE az 1970-es években a Test-észterek preferenciája miatt discontinued. 1972-ben Fort Dodge Animal Health megvásárolta a licencet és Equipoise néven veterinary-only (lovak ízületi recovery + étvágy-stimuláns) Rx-szerként forgalmazta – 2008-ban szintén discontinued. Ma kizárólag UGL piacon. Anabolikus:androgén arány 100:50 (közepes anabolikus, közepes androgén). NEM 17α-alkilált → ALACSONY hepatotoxicitás. AROMATIZÁL (kb. fél olyan erősen mint a testosterone, CYP19 substrate). Undecylenate-észter (10-carbon undecénsav) → hosszú felezés ~14 nap, monthly injection-kompatibilis depot. Klasszikus \"slow lean gainer\" – 8-12 hét alatt 3-5 kg száraz izom + dokumentált étvágy-stimuláns hatás (boldenone-driven). WADA tiltott egész évben.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -52,7 +52,7 @@ export default {
       "value": "Veterinary-only Rx (discontinued 2008), ma UGL; Schedule III"
     }
   ],
-  "mechanism": "AR-agonista Δ1-testosterone-undecylenate. A Δ1-double-bond (azonos a Dianabolban) ad enyhe metabolikus stabilitást + alacsonyabb 5α-reduktáz substrate-affinitást (NEM erősen DHT-konvertáló mint a sima Test). Aromatizáció CYP19 enzimen át kb. 50%-ra a Test-szinttől — klinikailag E2-emelkedés mérsékelt, gynecomastia-rizikó alacsonyabb mint Test-en. Undecylenate-észter slow-release IM depot ~14 napos felezéssel. Bodybuilding-tapasztalat szerint markáns étvágy-stimuláns hatás (mechanizmus nem teljesen tisztázott — hipotézis: ghrelin-pálya közvetett modulálás).",
+  "mechanism": "AR-agonista Δ1-testosterone-undecylenate. A Δ1-double-bond (azonos a Dianabolban) ad enyhe metabolikus stabilitást + alacsonyabb 5α-reduktáz substrate-affinitást (NEM erősen DHT-konvertáló mint a sima Test). Aromatizáció CYP19 enzimen át kb. 50%-ra a Test-szinttől – klinikailag E2-emelkedés mérsékelt, gynecomastia-rizikó alacsonyabb mint Test-en. Undecylenate-észter slow-release IM depot ~14 napos felezéssel. Bodybuilding-tapasztalat szerint markáns étvágy-stimuláns hatás (mechanizmus nem teljesen tisztázott – hipotézis: ghrelin-pálya közvetett modulálás).",
   "legalStatus": "Veterinary-only Rx (Fort Dodge Equipoise 1972-2008, ma discontinued). USA: Schedule III kontrollált szer (DEA, humán off-label illegális). EU/HU/PL: kontrollált AAS, vény nélkül illegális. WADA tiltott egész évben (S1.1.a).",
   "onsetTime": "48-72 h (IM, steady-state 4-5 hét)",
   "halfLife": "14 d (Undecylenate ester)",
@@ -63,8 +63,8 @@ export default {
     "warfarin",
     "finasteride"
   ],
-  "aromatization": "Igen — Δ1-testosterone CYP19 szubsztrát, kb. 50%-ra a Test-szinttől; klinikailag E2-emelkedés mérsékelt (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; IM bypass-olja a first-pass-t. ALT/AST <2x normál Equipoise-only ciklusnál (Hartgens-Kuipers 2004 PMID 15233599)",
+  "aromatization": "Igen – Δ1-testosterone CYP19 szubsztrát, kb. 50%-ra a Test-szinttől; klinikailag E2-emelkedés mérsékelt (Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált; IM bypass-olja a first-pass-t. ALT/AST <2x normál Equipoise-only ciklusnál (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
   "androgenicRatio": "100:50",
   "bindingAffinity": "AR-affinitás közepes (~50-60% testosterone-hoz képest in vitro).",
@@ -158,7 +158,7 @@ export default {
   "faq": [
     {
       "q": "Miért nevezik \"étvágy-stimuláns\" szteroidnak?",
-      "a": "Klasszikus bodybuilding-tapasztalat: Equipoise-on a felhasználók markáns étvágy-növekedést jeleznek (anekdotikusan \"unstoppable hunger\"). A mechanizmus NEM teljesen tisztázott — hipotézis: a boldenone indirekt módon modulálja a ghrelin-receptorokat vagy a központi idegrendszeri appetite-pathway-eket. Klinikailag a hatás bulking-cycle-hez ideális (több kalória könnyebben elfogyasztva), DE cutting-cycle-en ellenálló — Equipoise-on \"deficit-diéta\" nehezebb."
+      "a": "Klasszikus bodybuilding-tapasztalat: Equipoise-on a felhasználók markáns étvágy-növekedést jeleznek (anekdotikusan \"unstoppable hunger\"). A mechanizmus NEM teljesen tisztázott – hipotézis: a boldenone indirekt módon modulálja a ghrelin-receptorokat vagy a központi idegrendszeri appetite-pathway-eket. Klinikailag a hatás bulking-cycle-hez ideális (több kalória könnyebben elfogyasztva), DE cutting-cycle-en ellenálló – Equipoise-on \"deficit-diéta\" nehezebb."
     },
     {
       "q": "Equipoise vs Dianabol (mindkettő Δ1-T)?",
@@ -170,11 +170,11 @@ export default {
     },
     {
       "q": "Hosszú detection-window mit jelent?",
-      "a": "Equipoise-undecylenate 5-6 hónapos vizelet detection a WADA-laborokban (Undecylenate hosszú ester + Δ1-androstén metabolit-család miatt). WADA-tesztelt sportoló szempontjából off-season alatt is kerülendő — minimum 6 hónap fade-out a tervezett verseny előtt. A Boldenone metabolit-mintázat ENDOGÉN-konfound rizikójú is: néhány ritka esetben a 1-androstén-3,17-dion endogén biológiai variancia miatt jelentkezik atléta-mintában, ami legal vita kockázat (de WADA-laborok izotóp-arány-tesztekkel kiszűrik)."
+      "a": "Equipoise-undecylenate 5-6 hónapos vizelet detection a WADA-laborokban (Undecylenate hosszú ester + Δ1-androstén metabolit-család miatt). WADA-tesztelt sportoló szempontjából off-season alatt is kerülendő – minimum 6 hónap fade-out a tervezett verseny előtt. A Boldenone metabolit-mintázat ENDOGÉN-konfound rizikójú is: néhány ritka esetben a 1-androstén-3,17-dion endogén biológiai variancia miatt jelentkezik atléta-mintában, ami legal vita kockázat (de WADA-laborok izotóp-arány-tesztekkel kiszűrik)."
     },
     {
       "q": "Hosszú ciklus kell?",
-      "a": "Igen — minimum 10-12 hét, de gyakran 14-16 hét. A Undecylenate-ester slow-release miatt steady-state csak 4-5 hét után érzékelhető, ezért rövid (6-8 hét) ciklus elpazaroltság. Tipikus protokoll: 400-600 mg/hét, 12-16 hét, monthly Test-base stack (Test-Enan vagy Cyp), PCT utolsó EQ-injekció +21-28 nap után."
+      "a": "Igen – minimum 10-12 hét, de gyakran 14-16 hét. A Undecylenate-ester slow-release miatt steady-state csak 4-5 hét után érzékelhető, ezért rövid (6-8 hét) ciklus elpazaroltság. Tipikus protokoll: 400-600 mg/hét, 12-16 hét, monthly Test-base stack (Test-Enan vagy Cyp), PCT utolsó EQ-injekció +21-28 nap után."
     }
   ],
   "related": [
@@ -205,7 +205,7 @@ export default {
       "label": "Ciklus közben",
       "timing": "5-6. hetén (steady-state után)",
       "markers": "CBC + hematokrit (>54% riasztó), lipid panel (HDL), E2, vérnyomás napló.",
-      "purpose": "Hematokrit-rizikó az Equipoise specifikus problémája — phlebotomy >54% esetén. HDL csökkenés mérsékelt."
+      "purpose": "Hematokrit-rizikó az Equipoise specifikus problémája – phlebotomy >54% esetén. HDL csökkenés mérsékelt."
     },
     "postCycle": {
       "label": "PCT (Post-Cycle Therapy)",
@@ -215,10 +215,10 @@ export default {
     },
     "cruise": {
       "label": "Cruise alatt",
-      "timing": "TRT-Test cruise mellett Equipoise-adjunkt 200-300 mg/hét — 6-8 hetente monitoring",
+      "timing": "TRT-Test cruise mellett Equipoise-adjunkt 200-300 mg/hét – 6-8 hetente monitoring",
       "markers": "CBC + hematokrit (kritikus!), lipid panel, E2, PSA.",
       "purpose": "Hosszú-távú Equipoise + hematokrit-emelkedés kumulatív, polycythaemia-rizikó. Phlebotomy 8-12 hetente standard ha hematokrit >54%."
     }
   },
-  "anecdote": "Az anekdotikus beszámolók szerint az Equipoise (Boldenone Undecylenate) lassú, de 'megtartható' gyarapodást eredményez. Az ezt futtató felhasználók jellemzően erősebb étvágyról és fokozott vaszkularitásról számolnak be az első néhány héten belül. Az Equipoise jól ismert arról, hogy agresszívan emeli a hematokritot, ezért a vérsűrűséget rendszeresen kell monitorozni — szükségessé válhat a phlebotomia. A rendkívül hosszú észtere azt is jelenti, hogy hosszú időbe telik, mire felépül és kiürül, így rosszul illeszkedik rövid távú módosításokhoz vagy gyors korrekciókhoz. Közösségi beszámolók szerint az Equipoise új lendületet kapott másodlagos anabolikumként, részben mert a Primobolan és Masteron nehezebben beszerezhető és drágább lett. Összességében szilárd választásnak tartják azon felhasználók számára, akik lassú, sovány, fenntartható gyarapodást keresnek hosszabb ciklusstruktúrában."
+  "anecdote": "Az anekdotikus beszámolók szerint az Equipoise (Boldenone Undecylenate) lassú, de 'megtartható' gyarapodást eredményez. Az ezt futtató felhasználók jellemzően erősebb étvágyról és fokozott vaszkularitásról számolnak be az első néhány héten belül. Az Equipoise jól ismert arról, hogy agresszívan emeli a hematokritot, ezért a vérsűrűséget rendszeresen kell monitorozni – szükségessé válhat a phlebotomia. A rendkívül hosszú észtere azt is jelenti, hogy hosszú időbe telik, mire felépül és kiürül, így rosszul illeszkedik rövid távú módosításokhoz vagy gyors korrekciókhoz. Közösségi beszámolók szerint az Equipoise új lendületet kapott másodlagos anabolikumként, részben mert a Primobolan és Masteron nehezebben beszerezhető és drágább lett. Összességében szilárd választásnak tartják azon felhasználók számára, akik lassú, sovány, fenntartható gyarapodást keresnek hosszabb ciklusstruktúrában."
 }

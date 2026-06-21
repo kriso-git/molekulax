@@ -46,7 +46,7 @@ export default {
       "value": "USA: FDA Rx (Ventolin/ProAir). HU/EU: Rx (Ventolin). WADA: inhaled <1600 μg permitted."
     }
   ],
-  "mechanism": "Selective β2-adrenoceptor agonist that relaxes airway smooth muscle (bronchodilation). Intracellular cascade identical to Clenbuterol: β2 → Gs-protein → adenylyl cyclase → cAMP → PKA → HSL phosphorylation → lipolysis. **DIFFERENCE vs Clenbuterol: SHORT receptor occupancy** — Albuterol fast dissociation rate avoids chronic β2 down-regulation in tissues, eliminating cardiotoxic accumulation BUT producing faster tolerance (1-2 weeks). Anabolic effect in skeletal muscle is more modest because the shorter half-life prevents accumulation.",
+  "mechanism": "Selective β2-adrenoceptor agonist that relaxes airway smooth muscle (bronchodilation). Intracellular cascade identical to Clenbuterol: β2 → Gs-protein → adenylyl cyclase → cAMP → PKA → HSL phosphorylation → lipolysis. **DIFFERENCE vs Clenbuterol: SHORT receptor occupancy** – Albuterol fast dissociation rate avoids chronic β2 down-regulation in tissues, eliminating cardiotoxic accumulation BUT producing faster tolerance (1-2 weeks). Anabolic effect in skeletal muscle is more modest because the shorter half-life prevents accumulation.",
   "legalStatus": "USA: FDA Rx (Ventolin, ProAir, Proventil). EU: Rx, available in pharmacies. WADA: inhaled use up to 1600 μg/24 h permitted, oral/IV banned.",
   "onsetTime": "5-15 min (inhaled), 15-30 min (oral)",
   "halfLife": "5-6 h (oral)",
@@ -56,8 +56,8 @@ export default {
     "MAOI",
     "tricyclic antidepressants"
   ],
-  "aromatization": "Not applicable — β2-agonist, NOT a steroid; no CYP19 interaction",
-  "hepatotoxicity": "Low — virtually no hepatotoxicity at therapeutic dose; tremor and tachycardia are main side effects (FDA Proventil label)",
+  "aromatization": "Not applicable – β2-agonist, NOT a steroid; no CYP19 interaction",
+  "hepatotoxicity": "Low – virtually no hepatotoxicity at therapeutic dose; tremor and tachycardia are main side effects (FDA Proventil label)",
   "wadaStatus": "monitored",
   "detectionWindow": "24-72 hours urine (WADA threshold: 1000 ng/mL).",
   "benefits": [
@@ -101,9 +101,9 @@ export default {
       "Cardiac disorder (arrhythmia, severe hypertension) is a contraindication",
       "Contraindicated with β-blocker therapy",
       "Hyperthyroidism, glaucoma are contraindications",
-      "Off-label fat-loss use is contraindicated with severe cardiovascular disease — medical inhaler indication differs",
+      "Off-label fat-loss use is contraindicated with severe cardiovascular disease – medical inhaler indication differs",
       "Severe anxiety, panic disorder, seizure disorder",
-      "Concurrent MAOI use — hypertensive crisis risk",
+      "Concurrent MAOI use – hypertensive crisis risk",
       "Pregnancy and breastfeeding (category C, only if clearly indicated)"
     ]
   },
@@ -186,52 +186,52 @@ export default {
       "id": "oral",
       "routeId": "oral",
       "routeLabel": {
-        "hu": "Orális tabletta — Salbutamol HCl",
-        "en": "Oral tablet — Salbutamol HCl",
-        "pl": "Tabletka doustna — Salbutamol HCl"
+        "hu": "Orális tabletta – Salbutamol HCl",
+        "en": "Oral tablet – Salbutamol HCl",
+        "pl": "Tabletka doustna – Salbutamol HCl"
       },
       "image": "/performance/tablet-pile-white.png",
-      "whatIs": "Salbutamol HCl tablet (2 mg, 4 mg) — used off-label for Clenbuterol-like thermogenic and muscle-sparing cycles. Available from pharmacy (Ventolin 2 mg tablet), guaranteeing content accuracy unlike UGL products.",
-      "routeNote": "Choose the oral form when planning a Clen-style fat-loss cycle: tablets allow precise dose titration and the ~5-6 h half-life delivers a safer accumulation profile than Clenbuterol. Without an asthma indication this route is banned under WADA — for non-competing off-label context only.",
+      "whatIs": "Salbutamol HCl tablet (2 mg, 4 mg) – used off-label for Clenbuterol-like thermogenic and muscle-sparing cycles. Available from pharmacy (Ventolin 2 mg tablet), guaranteeing content accuracy unlike UGL products.",
+      "routeNote": "Choose the oral form when planning a Clen-style fat-loss cycle: tablets allow precise dose titration and the ~5-6 h half-life delivers a safer accumulation profile than Clenbuterol. Without an asthma indication this route is banned under WADA – for non-competing off-label context only.",
       "dosing": "4-8 mg PO TID, max 24 mg/day",
       "halfLife": "5-6 h",
       "halfLifeActive": "5-6 h",
       "bioavailability": "~30-40% (oral, gastric first-pass)",
       "onsetTime": "15-30 min",
-      "aromatization": "Not applicable — β2-agonist, NOT a steroid; no CYP19 interaction",
-      "hepatotoxicity": "Low — virtually no hepatotoxicity at therapeutic doses; tremor and tachycardia are the main side effects (FDA Proventil label)",
+      "aromatization": "Not applicable – β2-agonist, NOT a steroid; no CYP19 interaction",
+      "hepatotoxicity": "Low – virtually no hepatotoxicity at therapeutic doses; tremor and tachycardia are the main side effects (FDA Proventil label)",
       "indications": "Off-label fat-loss + muscle preservation in caloric deficit (Clen-style cycle)",
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 4, "medium": 8, "high": 16 },
         "unit": "mg/day",
-        "note": "Oral 4-8 mg 3x/day (Clen-style cycle), max 24 mg/day. Tolerance develops within 1-2 weeks — cycle maximum 4-6 weeks then 2 weeks OFF. Cardio monitoring + ECG baseline + 4-week check mandatory. Magnesium 400 mg + potassium mid-cycle to counter hypokalaemia."
+        "note": "Oral 4-8 mg 3x/day (Clen-style cycle), max 24 mg/day. Tolerance develops within 1-2 weeks – cycle maximum 4-6 weeks then 2 weeks OFF. Cardio monitoring + ECG baseline + 4-week check mandatory. Magnesium 400 mg + potassium mid-cycle to counter hypokalaemia."
       }
     },
     {
       "id": "inhaled",
       "routeId": "inhaled",
       "routeLabel": {
-        "hu": "Inhaláló (MDI) — Ventolin / ProAir",
-        "en": "Inhaler (MDI) — Ventolin / ProAir",
-        "pl": "Inhalator (MDI) — Ventolin / ProAir"
+        "hu": "Inhaláló (MDI) – Ventolin / ProAir",
+        "en": "Inhaler (MDI) – Ventolin / ProAir",
+        "pl": "Inhalator (MDI) – Ventolin / ProAir"
       },
       "image": "/performance/inhaler-asthma.png",
-      "whatIs": "Metered-Dose Inhaler (MDI) — the standard asthma treatment form of Ventolin/ProAir. Delivers drug directly to the lungs with minimal systemic absorption. Under WADA rules, use up to 1600 μg/24 h is permitted for asthmatic athletes without a TUE.",
+      "whatIs": "Metered-Dose Inhaler (MDI) – the standard asthma treatment form of Ventolin/ProAir. Delivers drug directly to the lungs with minimal systemic absorption. Under WADA rules, use up to 1600 μg/24 h is permitted for asthmatic athletes without a TUE.",
       "routeNote": "Choose the inhaler when treating acute asthma symptoms is the primary goal, or when competing under WADA rules and bronchodilation is medically needed. Systemic side effects (tremor, tachycardia) are significantly milder than oral, but the off-label thermogenic and muscle-sparing effect is also smaller.",
       "dosing": "90-200 μg/puff PRN, max 1600 μg/24h WADA threshold",
       "halfLife": "1.5-3 h (local)",
       "halfLifeActive": "1.5-3 h",
       "bioavailability": "~10-20% (systemic, high local tissue)",
       "onsetTime": "5-15 min",
-      "aromatization": "Not applicable — β2-agonist, NOT a steroid; no CYP19 interaction",
-      "hepatotoxicity": "Low — local-tissue dominated effect, systemic levels minimal, hepatic stress negligible",
+      "aromatization": "Not applicable – β2-agonist, NOT a steroid; no CYP19 interaction",
+      "hepatotoxicity": "Low – local-tissue dominated effect, systemic levels minimal, hepatic stress negligible",
       "indications": "FDA-Rx asthma + bronchodilation; athletic legitimate TUE protocol WADA-monitored",
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 90, "medium": 200, "high": 1600 },
         "unit": "μg/puff (max 1600 μg/24h WADA threshold)",
-        "note": "MDI inhaler 90-200 μg/puff as needed (PRN). WADA-accredited competitive sport: 1600 μg/24 h maximum legitimate allowance — urine concentration must remain <1000 ng/mL. Typical therapeutic dose: 90 μg (1 puff) or 180 μg (2 puffs) every 4-6 h PRN, max 4-8x/day."
+        "note": "MDI inhaler 90-200 μg/puff as needed (PRN). WADA-accredited competitive sport: 1600 μg/24 h maximum legitimate allowance – urine concentration must remain <1000 ng/mL. Typical therapeutic dose: 90 μg (1 puff) or 180 μg (2 puffs) every 4-6 h PRN, max 4-8x/day."
       }
     }
   ],

@@ -80,7 +80,7 @@ async function buildRoutes() {
           // compound's card + canonical; we copy the base HTML to them after rendering.
           if (Array.isArray(m.default?.variants)) variantIds = m.default.variants.map((v) => v && v.routeId).filter(Boolean)
         } catch {}
-        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq, dateModified: entryDates[e.id] || null, ogImage: `${ORIGIN}/og/${e.id}.jpg`, citations, variantIds })
+        routes.push({ lang, id: e.id, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq, dateModified: entryDates[e.id] || null, ogImage: `${ORIGIN}/og/${e.id}.jpg`, citations, variantIds })
       }
     }
   }
@@ -411,12 +411,24 @@ async function main() {
     if (!r.isEntry || !r.variantIds || !r.variantIds.length) continue
     const baseFile = join(DIST, r.diskPath)
     if (!existsSync(baseFile)) continue
-    const html = readFileSync(baseFile)
+    const baseHtml = readFileSync(baseFile, 'utf8')
     const baseDir = dirname(baseFile)
     for (const vid of r.variantIds) {
       const vp = join(baseDir, vid, 'index.html')
       mkdirSync(dirname(vp), { recursive: true })
-      writeFileSync(vp, html)
+      // Point the variant's social card at its OWN image (form factor / ester) when
+      // gen-og-cards produced one (/og/<id>__<routeId>.jpg). The canonical stays the base
+      // URL (variants consolidate for SEO); only the shareable card differs. Falls back to
+      // the base compound card if no variant card exists.
+      let vhtml = baseHtml
+      const cardRel = `/og/${r.id}__${vid}.jpg`
+      if (r.id && existsSync(join(DIST, 'og', `${r.id}__${vid}.jpg`))) {
+        const cardUrl = ORIGIN + cardRel
+        vhtml = vhtml
+          .replace(/<meta property="og:image" content="[^"]*"/, `<meta property="og:image" content="${cardUrl}"`)
+          .replace(/<meta name="twitter:image" content="[^"]*"/, `<meta name="twitter:image" content="${cardUrl}"`)
+      }
+      writeFileSync(vp, vhtml)
       variantCopies++
     }
   }

@@ -1,7 +1,7 @@
 // Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:12:46.653Z
 // Phase 12: per-lang entry chunks. loadEntry(id, lang) dynamic-imports
 // entries/<lang>/<id>.js. Library-level fields (categories, effects, faq,
-// labels) still triplet — only entry bodies are lang-split.
+// labels) still triplet – only entry bodies are lang-split.
 
 import { CATEGORIES, PHARMACEUTICAL_CATEGORIES, getPharmaceuticalCategories } from './categories.js'
 import { getResearchLevel } from './researchLevel.js'
@@ -378,9 +378,9 @@ export const LIBRARY_ENTRY_META = [
     "accentColor": "#fbbf24",
     "tagColor": "rgba(251,191,36,0.18)",
     "shortDesc": {
-      "hu": "13-cisz-retinoinsav (Roche Roaccutane). Súlyos acne nodulocystica gold-standard. FDA X kategória súlyos teratogenitás miatt — iPLEDGE program kötelező.",
-      "en": "13-cis-retinoic acid (Roche Roaccutane). Gold standard for severe nodulocystic acne. FDA category X due to severe teratogenicity — iPLEDGE program mandatory.",
-      "pl": "Kwas 13-cis-retinowy (Roche Roaccutane). Złoty standard dla ciężkiego trądziku guzkowo-torbielowatego. Kategoria X FDA z powodu teratogenności — program iPLEDGE obowiązkowy."
+      "hu": "13-cisz-retinoinsav (Roche Roaccutane). Súlyos acne nodulocystica gold-standard. FDA X kategória súlyos teratogenitás miatt – iPLEDGE program kötelező.",
+      "en": "13-cis-retinoic acid (Roche Roaccutane). Gold standard for severe nodulocystic acne. FDA category X due to severe teratogenicity – iPLEDGE program mandatory.",
+      "pl": "Kwas 13-cis-retinowy (Roche Roaccutane). Złoty standard dla ciężkiego trądziku guzkowo-torbielowatego. Kategoria X FDA z powodu teratogenności – program iPLEDGE obowiązkowy."
     },
     "tier": 3,
     "prescriptionStatus": {

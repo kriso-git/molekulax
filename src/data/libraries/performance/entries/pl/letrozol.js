@@ -1,4 +1,4 @@
-// Letrozol (Femara) — niesteroidowy triazolowy AI, silniejszy od anastrozolu.
+// Letrozol (Femara) – niesteroidowy triazolowy AI, silniejszy od anastrozolu.
 // Zatwierdzony przez FDA 1997 Novartis. Nisza AAS: kontrola E2 przy ciężkiej
 // supresji Tren+Mast + cofanie ginekomastii (2,5 mg/dzień × 2-3 tygodnie).
 // Źródła: FDA Femara SmPC, Coates 2007 BIG1-98 PMID 17582920,
@@ -29,7 +29,7 @@ export default {
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
   "shortDesc": "Triazolowy niesteroidowy AI, silniejszy od anastrozolu (~99% supresji E2 przy 2,5 mg/dzień). Zatwierdzony przez FDA (1997 Novartis). Nisza AAS: kontrola E2 przy ciężkiej supresji Tren+Mast + cofanie ginekomastii (2,5 mg/dzień × 2-3 tygodnie).",
-  "description": "Letrozol (Femara) jest niesteroidowym triazolowym AI trzeciej generacji opracowanym przez Novartis i zatwierdzonym przez FDA w 1997 roku dla pomenopauzalnego raka piersi ER+. Silniejszy inhibitor aromatazy niż anastrozol (~97%): badanie BIG1-98 (Coates 2007, PMID 17582920) udokumentowało ~99% supresji E2 w surowicy przy dawce 2,5 mg/dzień — head-to-head trial dwóch AI (Geisler 2002) wykazał, że letrozol ma większą penetrację do tkanek mięśniowej aromatazy (silniejsze działanie na aromatazę obwodową). W świecie AAS są dwa główne zastosowania: (1) kontrola E2 w stackach ciężkiej supresji (Tren-Acetate + Mast-Prop + Test-Prop blast — na silnie aromatyzujących steroidach jak kombinacje Dianabol lub Anadrol), oraz (2) cofanie ginekomastii (zmniejszenie tkanki gruczołowej piersi mediowane ER, 2,5 mg/dzień × 14-21 dni z protokołem taperowym). Ponieważ jest silniejszy od anastrozolu, użytkownicy bez doświadczenia z AI powinni zaczynać od dawek odpowiadających połowie anastrozolu. WADA S4.1 — banned.",
+  "description": "Letrozol (Femara) jest niesteroidowym triazolowym AI trzeciej generacji opracowanym przez Novartis i zatwierdzonym przez FDA w 1997 roku dla pomenopauzalnego raka piersi ER+. Silniejszy inhibitor aromatazy niż anastrozol (~97%): badanie BIG1-98 (Coates 2007, PMID 17582920) udokumentowało ~99% supresji E2 w surowicy przy dawce 2,5 mg/dzień – head-to-head trial dwóch AI (Geisler 2002) wykazał, że letrozol ma większą penetrację do tkanek mięśniowej aromatazy (silniejsze działanie na aromatazę obwodową). W świecie AAS są dwa główne zastosowania: (1) kontrola E2 w stackach ciężkiej supresji (Tren-Acetate + Mast-Prop + Test-Prop blast – na silnie aromatyzujących steroidach jak kombinacje Dianabol lub Anadrol), oraz (2) cofanie ginekomastii (zmniejszenie tkanki gruczołowej piersi mediowane ER, 2,5 mg/dzień × 14-21 dni z protokołem taperowym). Ponieważ jest silniejszy od anastrozolu, użytkownicy bez doświadczenia z AI powinni zaczynać od dawek odpowiadających połowie anastrozolu. WADA S4.1 – banned.",
   "keyInfo": [
     {"label": "Mechanizm", "value": "Odwracalny niesteroidowy inhibitor CYP19-aromatazy, ~99% supresji E2 w surowicy przy 2,5 mg/dzień"},
     {"label": "Dawkowanie (AAS)", "value": "0,25-1,25 mg EOD miareczkowane badaniami; cofanie gino 2,5 mg/dzień × 14-21 dni"},
@@ -37,20 +37,20 @@ export default {
     {"label": "Początek działania", "value": "Redukcja E2 mierzalna 24-48 h, plateau 4-6 dni"},
     {"label": "Status prawny", "value": "FDA + EMA Rx, HU + PL zarejestrowany, WADA S4.1 banned"}
   ],
-  "mechanism": "Letrozol jest również kompetycyjnym odwracalnym triazolowym AI wiążącym się z żelazem hemowym CYP19-aromatazy. Bhatnagar 1996 PMID 8847500 udokumentował IC50 aromatazy ~11 nM in vitro (preparat submikrosomalny aromatazy ludzkiej łożyska), nieco niższe niż ~15 nM anastrozolu. Penetracja tkankowa in vivo i stabilność wiązania na poziomie enzymu są wyższe — supresja aromatazy w całym ciele przy 2,5 mg/dzień jest ~99% (vs. anastrozol 1 mg ~97%). Resztkowa aromatyzacja w całym ciele przy tym poziomie supresji spada poniżej granicy wykrywalności. Wątrobowe CYP3A4 + CYP2A6 metabolizują; ~60-90% wydalania nerkowego jako glukuronid. NIE jest agonistą AR/ER/PR. Wykrywanie WADA 1-2 miesiące.",
-  "legalStatus": "USA: zatwierdzony przez FDA 1997 (Femara 2,5 mg, Novartis; generyczny letrozol 2007). Wskazanie: pomenopauzalne ER+ rak piersi adjuvant/metastatyczny + przedłużona terapia adjuwantowa. UE: zatwierdzony przez EMA 1996. HU: zarejestrowany (Femara, Letrozol-ratiopharm, Letrozol Teva Rx). PL: zarejestrowany (Femara Rx). WADA: S4.1 inhibitor aromatazy — banned w/poza-konkurencji.",
+  "mechanism": "Letrozol jest również kompetycyjnym odwracalnym triazolowym AI wiążącym się z żelazem hemowym CYP19-aromatazy. Bhatnagar 1996 PMID 8847500 udokumentował IC50 aromatazy ~11 nM in vitro (preparat submikrosomalny aromatazy ludzkiej łożyska), nieco niższe niż ~15 nM anastrozolu. Penetracja tkankowa in vivo i stabilność wiązania na poziomie enzymu są wyższe – supresja aromatazy w całym ciele przy 2,5 mg/dzień jest ~99% (vs. anastrozol 1 mg ~97%). Resztkowa aromatyzacja w całym ciele przy tym poziomie supresji spada poniżej granicy wykrywalności. Wątrobowe CYP3A4 + CYP2A6 metabolizują; ~60-90% wydalania nerkowego jako glukuronid. NIE jest agonistą AR/ER/PR. Wykrywanie WADA 1-2 miesiące.",
+  "legalStatus": "USA: zatwierdzony przez FDA 1997 (Femara 2,5 mg, Novartis; generyczny letrozol 2007). Wskazanie: pomenopauzalne ER+ rak piersi adjuvant/metastatyczny + przedłużona terapia adjuwantowa. UE: zatwierdzony przez EMA 1996. HU: zarejestrowany (Femara, Letrozol-ratiopharm, Letrozol Teva Rx). PL: zarejestrowany (Femara Rx). WADA: S4.1 inhibitor aromatazy – banned w/poza-konkurencji.",
   "onsetTime": "Redukcja E2 24-48 h, plateau 4-6 dni",
   "halfLife": "~42 godziny",
   "halfLifeActive": "N/A (związek macierzysty aktywny, metabolity nieaktywne)",
   "interactionsWith": ["anastrozol", "exemestane", "nolvadex", "testosterone-info"],
-  "aromatization": "Nie aromatyzuje — niesteroidowy triazolowy AI, ~99% supresji E2 w surowicy przy 2,5 mg/dzień (badanie BIG2-98).",
-  "hepatotoxicity": "Niska — niesteroidowy, nie 17α-alkilowany. Hepatic adverse events <2% (FDA Femara label). Długoterminowy adjuwant kobiecy 5-10 lat: brak znaczącego wzorca DILI.",
+  "aromatization": "Nie aromatyzuje – niesteroidowy triazolowy AI, ~99% supresji E2 w surowicy przy 2,5 mg/dzień (badanie BIG2-98).",
+  "hepatotoxicity": "Niska – niesteroidowy, nie 17α-alkilowany. Hepatic adverse events <2% (FDA Femara label). Długoterminowy adjuwant kobiecy 5-10 lat: brak znaczącego wzorca DILI.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nie AAS, AI)",
-  "bindingAffinity": "Wiązanie kompetycyjne w aktywnym miejscu CYP19-aromatazy, Ki ~5-10 nM. ER/AR/PR — minimalne wiązanie (<1%).",
+  "bindingAffinity": "Wiązanie kompetycyjne w aktywnym miejscu CYP19-aromatazy, Ki ~5-10 nM. ER/AR/PR – minimalne wiązanie (<1%).",
   "detectionWindow": "Wykrywanie w moczu metodą WADA GC-MS/LC-MS/MS 1-2 miesiące (parent + glukuronidowany metabolit).",
   "benefits": [
-    "Silniejszy niż anastrozol — kontrola E2 w stack ciężkiej supresji Tren+Mast",
+    "Silniejszy niż anastrozol – kontrola E2 w stack ciężkiej supresji Tren+Mast",
     "Cofanie ginekomastii (regresja istniejącej tkanki gruczołowej przy 2,5 mg × 2-3 tygodnie)",
     "~99% supresji E2 w surowicy przy 2,5 mg/dzień (BIG1-98 trial)",
     "Odwracalne wiązanie → miareczkowalny (ale ostrożnie, łatwiej crash E2 niż anastrozol)",
@@ -62,7 +62,7 @@ export default {
     "Standardowa kontrola E2 w AAS: 0,25-1,25 mg EOD miareczkowane badaniami",
     "Protokół cofania ginekomastii: 2,5 mg/dzień × 14-21 dni, potem taper (1,25 → 0,625 → 0,25 → 0)",
     "Pre-treatment baseline E2 LC-MS/MS, 10-14 dni później powtórzenie",
-    "Letrozol łatwiej crashuje E2 niż anastrozol — zaczynaj od niższej dawki",
+    "Letrozol łatwiej crashuje E2 niż anastrozol – zaczynaj od niższej dawki",
     "Z wodą + rano, jedzenie indyferentne (biodostępność doustna ~85%)"
   ],
   "expectations": [
@@ -76,12 +76,12 @@ export default {
       "Novartis Femara 2,5 mg blister, Rx pharma-grade (apteka UE dostępne)",
       "Letrozol-ratiopharm, Letrozol Teva, Letrozol Sandoz generyczne (UE)",
       "Indyjski generyk (Sun Pharma, Cipla Letroz 2,5 mg)",
-      "UGL liquid letrozole: wymagane źródło testowane HPLC — często 30 mg/mL i ryzyko przedawkowania"
+      "UGL liquid letrozole: wymagane źródło testowane HPLC – często 30 mg/mL i ryzyko przedawkowania"
     ],
     "caution": [
-      "E2 crash łatwiej niż na anastrozolu — dodatkowa ostrożność u użytkowników bez doświadczenia AI",
-      "Lipidogram drastyczne pogorszenie przy 2,5 mg/dzień chronic — spadek HDL do 30%, wzrost LDL 15-25%",
-      "BMD stresor długoterminowy — pomijalny podczas 3-tygodniowego cofania gino, chronic use wymaga monitora DEXA",
+      "E2 crash łatwiej niż na anastrozolu – dodatkowa ostrożność u użytkowników bez doświadczenia AI",
+      "Lipidogram drastyczne pogorszenie przy 2,5 mg/dzień chronic – spadek HDL do 30%, wzrost LDL 15-25%",
+      "BMD stresor długoterminowy – pomijalny podczas 3-tygodniowego cofania gino, chronic use wymaga monitora DEXA",
       "Interakcje induktor/inhibitor CYP3A4 (jak anastrozol)",
       "Współadministracja tamoksyfenu: przeciwwskazana (nakładający się mechanizm + crash E2)"
     ],
@@ -94,7 +94,7 @@ export default {
     ]
   },
   "interactions": [
-    "Tamoksyfen (Nolvadex): NIE zalecany razem w PCT — nakładający się mechanizm, ryzyko crash E2",
+    "Tamoksyfen (Nolvadex): NIE zalecany razem w PCT – nakładający się mechanizm, ryzyko crash E2",
     "Testosteron + Tren stack: standardowa kontrola E2 ciężkiej supresji",
     "Dianabol/Anadrol stack: letrozol silnie skuteczny przeciw silnej aromatyzacji",
     "Metylowane 17α-alkilowane sterydy doustne: stres wątrobowy podwójny monitor",
@@ -108,17 +108,17 @@ export default {
     {"title": "Influence of letrozole and anastrozole on total body aromatization and plasma estrogen levels in postmenopausal breast cancer patients evaluated in a randomized, cross-over study.", "authors": "Geisler J, Haynes B, Anker G, Dowsett M, Lønning PE", "journal": "J Clin Oncol", "pmid": "11821457"}
   ],
   "faq": [
-    {"q": "Letrozol vs. anastrozol — dlaczego silniejszy?", "a": "Dwa czynniki: (1) Wyższa penetracja do tkanek aromatazy mięśniowej — head-to-head trial Geisler 2002 udokumentował, że obwodowa supresja aromatazy letrozolu jest ~2-3× silniejsza niż anastrozolu (pomiar in vivo). (2) Większa stabilność wiązania na poziomie enzymu (Ki ~5-10 nM vs. anastrozol ~15 nM). Praktycznie: równoważne dawki to anastrozol 1 mg ≈ letrozol 0,25-0,5 mg. Użytkownicy bez doświadczenia AI powinni zaczynać letrozol od dawki odpowiadającej połowie anastrozolu."},
-    {"q": "Protokół cofania ginekomastii w szczegółach?", "a": "Cel: regresja istniejącej tkanki gruczołowej (NIE tylko redukcja E2). Protokół: letrozol 2,5 mg/dzień × 14-21 dni (krótki hard hit), potem taper 1,25 mg → 0,625 mg → 0,25 mg w krokach 5-7 dni. Wsparcie: raloksyfen 60 mg/dzień (SERM selektywny dla piersi, antagonista gruczołu gino) równocześnie. Wynik: jeśli tkanka gruczołowa <6 miesięcy → 60-80% regresji; jeśli >12 miesięcy → 20-40% regresji (może być potrzebna chirurgiczna gynektomia). Pre-treatment USG wskazane — potwierdź obecność tkanki gruczołowej (vs. pseudo-ginekomastia tylko tłuszczowa)."},
-    {"q": "Crashed E2 ryzyko śmiertelności? Trwałe?", "a": "Nie ryzyko śmiertelności, ale znaczne pogorszenie jakości życia. Objawy: bóle stawów (nadgarstki + kolana), spadek libido, lipidowa katastrofa (HDL <30 mg/dL), nastrój depresyjny. Odwracalne 1-2 tygodnie po zatrzymaniu. Bez taperowania i <14 dni → trwałe efekty niezwykle rzadkie. Długoterminowe stosowanie (3+ miesięcy chronic) powoduje utratę BMD — monitor DEXA potrzebny. Letrozol ryzyko śmiertelności: rzadkie (FDA Femara label: zdarzenia sercowo-naczyniowe 5-7% w 5-letnim trialu — ale w populacji 60+ kobiet, nie u mężczyzn AAS-PCT)."},
-    {"q": "Tier 4 — dlaczego nie tier 5?", "a": "Letrozol jest nieco nowszy niż anastrozol (1997 vs. 1995 FDA), z nieco krótszą literaturą kliniczną. Oba są tier 4 — anastrozol jest domyślnym AI pierwszej linii (podstawa tier 4), letrozol jest niszowym wyborem w sytuacjach ciężkiej supresji lub cofania gino. Tier 5 oznacza dojrzałość poziomu Nolvadex 50+ lat (letrozol ~28 lat, jeszcze za mało)."}
+    {"q": "Letrozol vs. anastrozol – dlaczego silniejszy?", "a": "Dwa czynniki: (1) Wyższa penetracja do tkanek aromatazy mięśniowej – head-to-head trial Geisler 2002 udokumentował, że obwodowa supresja aromatazy letrozolu jest ~2-3× silniejsza niż anastrozolu (pomiar in vivo). (2) Większa stabilność wiązania na poziomie enzymu (Ki ~5-10 nM vs. anastrozol ~15 nM). Praktycznie: równoważne dawki to anastrozol 1 mg ≈ letrozol 0,25-0,5 mg. Użytkownicy bez doświadczenia AI powinni zaczynać letrozol od dawki odpowiadającej połowie anastrozolu."},
+    {"q": "Protokół cofania ginekomastii w szczegółach?", "a": "Cel: regresja istniejącej tkanki gruczołowej (NIE tylko redukcja E2). Protokół: letrozol 2,5 mg/dzień × 14-21 dni (krótki hard hit), potem taper 1,25 mg → 0,625 mg → 0,25 mg w krokach 5-7 dni. Wsparcie: raloksyfen 60 mg/dzień (SERM selektywny dla piersi, antagonista gruczołu gino) równocześnie. Wynik: jeśli tkanka gruczołowa <6 miesięcy → 60-80% regresji; jeśli >12 miesięcy → 20-40% regresji (może być potrzebna chirurgiczna gynektomia). Pre-treatment USG wskazane – potwierdź obecność tkanki gruczołowej (vs. pseudo-ginekomastia tylko tłuszczowa)."},
+    {"q": "Crashed E2 ryzyko śmiertelności? Trwałe?", "a": "Nie ryzyko śmiertelności, ale znaczne pogorszenie jakości życia. Objawy: bóle stawów (nadgarstki + kolana), spadek libido, lipidowa katastrofa (HDL <30 mg/dL), nastrój depresyjny. Odwracalne 1-2 tygodnie po zatrzymaniu. Bez taperowania i <14 dni → trwałe efekty niezwykle rzadkie. Długoterminowe stosowanie (3+ miesięcy chronic) powoduje utratę BMD – monitor DEXA potrzebny. Letrozol ryzyko śmiertelności: rzadkie (FDA Femara label: zdarzenia sercowo-naczyniowe 5-7% w 5-letnim trialu – ale w populacji 60+ kobiet, nie u mężczyzn AAS-PCT)."},
+    {"q": "Tier 4 – dlaczego nie tier 5?", "a": "Letrozol jest nieco nowszy niż anastrozol (1997 vs. 1995 FDA), z nieco krótszą literaturą kliniczną. Oba są tier 4 – anastrozol jest domyślnym AI pierwszej linii (podstawa tier 4), letrozol jest niszowym wyborem w sytuacjach ciężkiej supresji lub cofania gino. Tier 5 oznacza dojrzałość poziomu Nolvadex 50+ lat (letrozol ~28 lat, jeszcze za mało)."}
   ],
   "related": ["anastrozol", "exemestane", "nolvadex", "testosterone-info"],
   "doseCalc": {
     "type": "fixed",
     "fixed": {"low": 0.25, "medium": 0.625, "high": 1.25},
     "unit": "mg / EOD (doustnie, miareczkowane badaniami)",
-    "note": "Standardowa kontrola E2 w AAS ciężka supresja: 0,25-1,25 mg EOD miareczkowane badaniami. Cofanie gino: 2,5 mg/dzień × 14-21 dni, potem protokół taperowy (1,25 → 0,625 → 0,25 → 0). Letrozol silniejszy niż anastrozol — użytkownicy bez doświadczenia AI startują od połowy dawki."
+    "note": "Standardowa kontrola E2 w AAS ciężka supresja: 0,25-1,25 mg EOD miareczkowane badaniami. Cofanie gino: 2,5 mg/dzień × 14-21 dni, potem protokół taperowy (1,25 → 0,625 → 0,25 → 0). Letrozol silniejszy niż anastrozol – użytkownicy bez doświadczenia AI startują od połowy dawki."
   },
   "bloodwork": {
     "preCycle": {
@@ -140,10 +140,10 @@ export default {
       "purpose": "Potwierdź: E2 wraca do baseline (24-72 h, brak rebound). Monitor lipidogramu recovery (rebound HDL ~2-4 tygodnie)."
     },
     "cruise": {
-      "label": "Stosowanie długoterminowe — nie kontekst AAS",
+      "label": "Stosowanie długoterminowe – nie kontekst AAS",
       "timing": "Adjuwant kobiecy 5-10 lat; AAS-PCT max 14-21 dni cofanie gino",
       "markers": "Cruise w kontekście AAS N/A.",
-      "purpose": "W AAS-PCT cruise NIE zalecany — letrozol używany dla ostrych wskazań hard-hit, nie dla długoterminowej kontroli E2 (ryzyko utraty BMD)."
+      "purpose": "W AAS-PCT cruise NIE zalecany – letrozol używany dla ostrych wskazań hard-hit, nie dla długoterminowej kontroli E2 (ryzyko utraty BMD)."
     }
   }
 }

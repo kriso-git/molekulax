@@ -51,7 +51,7 @@ export default {
   ],
   "mechanism": "A dopamin transzporter (DAT) szelektív, alacsony-affinitású gátlása növeli a szinaptikus dopamint a hipotalamuszban, az adott prefrontalis területeken, valamint aktiválja a hisztaminerg tuberomammilláris neuronokat és az orexin-tartalmú laterális hipotalamikus rendszert. Ezek a pathway-k szelektíven promotálják az ébrenléti állapotot, ellentétben az amfetaminok széles CNS-stimulációjával. Nincs jelentős noradrenerg vagy szerotoninerg hatás standard dózisnál.",
   "legalStatus": "EU/HU: vényköteles (Provigil, Modiodal, generikus). USA: DEA Schedule IV (ütemezett, alacsony visszaélési potenciál, de NEM ütemezet-nélküli). HU-ban szakorvosi (neurológus, alvásmedikuus) javasolt felírás. Generikus formák széles körben elérhetőek (originator patent 2012-ben lejárt).",
-  "bioavailability": "Nem meghatározott (vízoldhatatlanság miatt IV nem alkalmazható); orális tabletta ≈ aqueous szuszpenzió — FDA Provigil label",
+  "bioavailability": "Nem meghatározott (vízoldhatatlanság miatt IV nem alkalmazható); orális tabletta ≈ aqueous szuszpenzió – FDA Provigil label",
   "onsetTime": "30-60 min, peak plasma 2-4 h",
   "halfLife": "12-15 h (parent); R-modafinil 14-16 h, S-modafinil 4-5 h (armodafinil = R-enantiomer)",
   "atcCode": "N06BA07",
@@ -96,7 +96,7 @@ export default {
     "Alacsony visszaélési potenciál (Schedule IV, vs Schedule II amfetaminok)"
   ],
   "quickStart": [
-    "Diagnózis MEGERŐSÍTÉS narkolepszia/SWSD/OSA-ban szakorvos által (poliszomnográfia, MSLT) — Modafinil nem indítható off-label kognitív fokozásra a pharma-jogcím alapján",
+    "Diagnózis MEGERŐSÍTÉS narkolepszia/SWSD/OSA-ban szakorvos által (poliszomnográfia, MSLT) – Modafinil nem indítható off-label kognitív fokozásra a pharma-jogcím alapján",
     "Standard dózis 200 mg reggel egyszer, étkezéssel vagy anélkül",
     "SWSD esetén műszak előtt 1 órával beadva",
     "BŐRKIÜTÉSNÉL AZONNAL STOP és sürgősségi konzultáció (SJS/TEN kockázat)",
@@ -123,10 +123,10 @@ export default {
       "Internetes \"modafinil\" források (Modalert, Modvigil) GENERIKUS LEHET HAMIS, hatóanyag-tartalom változó, FDA warning"
     ],
     "caution": [
-      "FDA boxed warning 2007: bőr-reakciók (SJS/TEN), DRESS-szindróma, multi-organ hipersenzitivitás — minden bőrkiütésnél AZONNAL STOP",
+      "FDA boxed warning 2007: bőr-reakciók (SJS/TEN), DRESS-szindróma, multi-organ hipersenzitivitás – minden bőrkiütésnél AZONNAL STOP",
       "Pszichiátriai mellékhatás: szorongás, mánia, pszichózis, agresszió (főleg pszichiátriai anamnézissel)",
       "Kardiovaszkuláris: vérnyomás-emelkedés, palpitációk, ritka aritmia",
-      "Orális fogamzásgátló-hatékonyság CSÖKKEN (CYP3A4-indukció) — fogamzásgátló módosítás kötelező"
+      "Orális fogamzásgátló-hatékonyság CSÖKKEN (CYP3A4-indukció) – fogamzásgátló módosítás kötelező"
     ],
     "avoid": [
       "Korábbi SJS/TEN/DRESS anamnézis",
@@ -134,7 +134,7 @@ export default {
       "Pszichózis, súlyos szorongás (relatív)",
       "Off-label kognitív fokozás MÁS jogi keretben (Nootropikum-könyvtár külön framing)",
       "Terhesség és szoptatás (állatkísérletes embriotoxicitás, nincs humán biztonsági adat)",
-      "Csak orális hormonális fogamzásgátlóra hagyatkozás a kezelés alatt és 1 hónappal utána (CYP3A4-indukció — csökkent hatékonyság, kiegészítő barrier-módszer kell)",
+      "Csak orális hormonális fogamzásgátlóra hagyatkozás a kezelés alatt és 1 hónappal utána (CYP3A4-indukció – csökkent hatékonyság, kiegészítő barrier-módszer kell)",
       "Iszkémiás EKG-eltérések, mellkasi fájdalom vagy korábbi arrhythmia anamnézis stimuláns-kezelés alatt"
     ]
   },

@@ -41,7 +41,7 @@ export default {
   ],
   "dosageInfo": "Anegdotyczny protokół badawczy: 100–300 µg/dzień (SC lub IN). Brak długoterminowych danych bezpieczeństwa, brak peer-reviewed badań klinicznych.",
   "studies": [],
-  "anecdote": "Adamax jest pozycjonowany jako teoretyczne ulepszenie Semaxu, z poprawioną penetracją BBB, dłuższym czasem działania i silniejszymi efektami neurotroficznymi na papierze. Choć wciąż potrzebne są bardziej definitywne dane, raporty anegdotyczne opisują jaśniejsze myślenie, lepszy tok myślenia i płynniejszą kognicję. Liczne dyskusje społecznościowe dokumentują doświadczenia użytkowników z Adamaxem, choć wszystkie raporty pozostają anegdotyczne — nie istnieje żadne peer-reviewed badanie kliniczne.\n\nAdamax dąży do podobnych korzyści neurotroficznych i nootropowych jak Semax, ale z większym naciskiem na utrzymaną aktywność dzięki poprawionej przepuszczalności BBB i dłuższemu czasowi działania. Jako research chemical w szarej strefie, wszelkie użycie na własne ryzyko, w oparciu o protokoły społecznościowe.",
+  "anecdote": "Adamax jest pozycjonowany jako teoretyczne ulepszenie Semaxu, z poprawioną penetracją BBB, dłuższym czasem działania i silniejszymi efektami neurotroficznymi na papierze. Choć wciąż potrzebne są bardziej definitywne dane, raporty anegdotyczne opisują jaśniejsze myślenie, lepszy tok myślenia i płynniejszą kognicję. Liczne dyskusje społecznościowe dokumentują doświadczenia użytkowników z Adamaxem, choć wszystkie raporty pozostają anegdotyczne – nie istnieje żadne peer-reviewed badanie kliniczne.\n\nAdamax dąży do podobnych korzyści neurotroficznych i nootropowych jak Semax, ale z większym naciskiem na utrzymaną aktywność dzięki poprawionej przepuszczalności BBB i dłuższemu czasowi działania. Jako research chemical w szarej strefie, wszelkie użycie na własne ryzyko, w oparciu o protokoły społecznościowe.",
   "variants": [
     {
       "id": "sc",
@@ -91,7 +91,7 @@ export default {
           "Liofilizowana fiolka 5 mg + 5 ml sterylnej wody bakteriostatycznej",
           "Powoli wstrzyknąć wodę na ściankę fiolki, delikatnie zakręcić (NIE potrząsać)",
           "Przenieść do sterylnej butelki sprayu donosowego (pompka 50 μl/puff = ~50 μg/puff)",
-          "Stężenie: 1000 μg/ml — 1 puff = ~50 μg, 2–6 puffów/dzień w zależności od dawki",
+          "Stężenie: 1000 μg/ml – 1 puff = ~50 μg, 2–6 puffów/dzień w zależności od dawki",
           "Przechowywanie: w lodówce (2–8°C), maks. 28 dni; przed użyciem przeprowadzić priming 2–3 pustych puffów"
         ]
       }

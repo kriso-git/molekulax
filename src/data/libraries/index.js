@@ -1,4 +1,4 @@
-// Library registry — Phase 8 perf-pass: lazy-load library data so each
+// Library registry – Phase 8 perf-pass: lazy-load library data so each
 // library's ~500-900kB raw entry array is fetched only when the user
 // navigates to that face of the 3D cube. The synchronous LIBRARY_META
 // constant carries the minimal info needed for cube navigation (name,
@@ -90,7 +90,7 @@ export async function loadLibrary(id) {
 
 export const DEFAULT_LIBRARY_ID = 'peptides'
 
-// Phase 9 — Entry-level cache and loader. Keyed by `<libraryId>:<entryId>`.
+// Phase 9 – Entry-level cache and loader. Keyed by `<libraryId>:<entryId>`.
 // The entry-file lives in libraries/<lib>/entries/<id>.js and default-exports
 // the full Entry object. Each library's index.js also exports its own
 // loadEntry(id) helper; this top-level loadEntry(lib, id) routes to the

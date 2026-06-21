@@ -1,4 +1,4 @@
-// Bromocriptine (Parlodel) — első generációs ergot-D2-dopamin agonista.
+// Bromocriptine (Parlodel) – első generációs ergot-D2-dopamin agonista.
 // Sandoz 1972 (Parlodel), FDA 1978. Cabergoline elődje, ma niche-választás.
 // Cycloset 2009 FDA T2DM-indikációval.
 // Sources: FDA Parlodel SmPC, FDA Cycloset SmPC, Webster 1994 PMID 8090165,
@@ -30,7 +30,7 @@ export default {
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
   "shortDesc": "Első generációs ergot-D2-DA-agonista, Sandoz 1972 (Parlodel). Cabergoline elődje; rövidebb felezés (~3-12 h), több vegetatív mellékhatás (nausea, hypotensio). Cycloset (2009 FDA) T2DM-indikációval is.",
-  "description": "A Bromocriptine (Parlodel) az első generációs ergot-szerkezetű dopamin D2-receptor agonista, amelyet a Sandoz (ma Novartis) szintetizált 1972-ben, és 1978-ban kapott FDA-jóváhagyást hyperprolaktinémiára (Parlodel 2.5/5 mg). Hosszabb klinikai múlttal rendelkezik mint a Cabergoline, és bár nagyrészt szupersedáltatták a tisztább D2-szelektivitású Cabergoline-nel, három okból megmaradt az AAS-PCT-arzenálban: (1) Ár — generikum ~€3/box (vs Cabergoline ~€25-40), különösen emerging-markets gyógyszer-piacon vonzó; (2) Cabergoline-intolerancia fallback (Cabergoline-on impulse-control disorder vagy nausea-persisting esetén); (3) Metabolic-benefit szekunder application — a Cycloset (S2 Therapeutics, FDA 2009) Bromocriptine-mesylát-egy különleges quick-release formulációja Type-2-diabetes inzulin-szenzitivitás-javításra (Cincotta 1991/1996 PMIDs alapján), ami az obese AAS-cyclerön mellékesen jól jöhet. Mechanikus profil: D1+D2 mixed agonist (vs Cabergoline D2-szelektív), így több vegetatív side-effect (nausea, orthostatic hypotensio, dyskinesia), rövidebb felezés (~3-12 h, 2-3x napi dose szükséges).",
+  "description": "A Bromocriptine (Parlodel) az első generációs ergot-szerkezetű dopamin D2-receptor agonista, amelyet a Sandoz (ma Novartis) szintetizált 1972-ben, és 1978-ban kapott FDA-jóváhagyást hyperprolaktinémiára (Parlodel 2.5/5 mg). Hosszabb klinikai múlttal rendelkezik mint a Cabergoline, és bár nagyrészt szupersedáltatták a tisztább D2-szelektivitású Cabergoline-nel, három okból megmaradt az AAS-PCT-arzenálban: (1) Ár – generikum ~€3/box (vs Cabergoline ~€25-40), különösen emerging-markets gyógyszer-piacon vonzó; (2) Cabergoline-intolerancia fallback (Cabergoline-on impulse-control disorder vagy nausea-persisting esetén); (3) Metabolic-benefit szekunder application – a Cycloset (S2 Therapeutics, FDA 2009) Bromocriptine-mesylát-egy különleges quick-release formulációja Type-2-diabetes inzulin-szenzitivitás-javításra (Cincotta 1991/1996 PMIDs alapján), ami az obese AAS-cyclerön mellékesen jól jöhet. Mechanikus profil: D1+D2 mixed agonist (vs Cabergoline D2-szelektív), így több vegetatív side-effect (nausea, orthostatic hypotensio, dyskinesia), rövidebb felezés (~3-12 h, 2-3x napi dose szükséges).",
   "keyInfo": [
     {"label": "Hatásmechanizmus", "value": "Első generációs ergot D1+D2-mixed DA-agonista, prolaktin-szuppresszió + szekunder T2DM-inzulin-szenzitivitás-javítás"},
     {"label": "Adagolás (AAS prolaktin)", "value": "1.25-5 mg/nap divided 2-3x (kezdés 1.25 mg étkezéssel, lassú-titrálás)"},
@@ -38,13 +38,13 @@ export default {
     {"label": "Hatáskezdet", "value": "Prolaktin-csökkenés 1-2 óra, plateau 8-24 óra"},
     {"label": "Jogi státusz", "value": "FDA + EMA Rx, HU + PL törzskönyvezett, WADA allowed"}
   ],
-  "mechanism": "A Bromocriptine ergot-szerkezetű D2-agonista (D2 Ki ~5 nM, ~10x kevésbé szelektív D1 felett mint Cabergoline). A pituitár lactotrof D2-receptorhoz kötődik, gátolva a prolaktin-szekréciót. A nem-szelektív D1+D2-aktivitás okozza a vegetatív profil-különbséget: orthostatic hypotensio, nausea/vomiting (perifériás dopaminerg-effekt), dyskinesia (CNS-dopamin-modulation). Pancreatic β-sejtek D2-receptorára is hat — ez a Cycloset-formuláció (quick-release 0.8 mg morning-dose) Type-2-diabetes-applikáció alapja: a morning dopamine-pulse javítja a perifériás inzulin-szenzitivitást (Cincotta 1991 mechanism paper). Hepatikus CYP3A4 metabolizál, ~30%-os bioavailability. AAS-kontextusban: a Bromocriptine helyettesítheti a Cabergoline-t prolaktin-control-ra, DE a több mellékhatás miatt second-line választás.",
+  "mechanism": "A Bromocriptine ergot-szerkezetű D2-agonista (D2 Ki ~5 nM, ~10x kevésbé szelektív D1 felett mint Cabergoline). A pituitár lactotrof D2-receptorhoz kötődik, gátolva a prolaktin-szekréciót. A nem-szelektív D1+D2-aktivitás okozza a vegetatív profil-különbséget: orthostatic hypotensio, nausea/vomiting (perifériás dopaminerg-effekt), dyskinesia (CNS-dopamin-modulation). Pancreatic β-sejtek D2-receptorára is hat – ez a Cycloset-formuláció (quick-release 0.8 mg morning-dose) Type-2-diabetes-applikáció alapja: a morning dopamine-pulse javítja a perifériás inzulin-szenzitivitást (Cincotta 1991 mechanism paper). Hepatikus CYP3A4 metabolizál, ~30%-os bioavailability. AAS-kontextusban: a Bromocriptine helyettesítheti a Cabergoline-t prolaktin-control-ra, DE a több mellékhatás miatt second-line választás.",
   "legalStatus": "USA: FDA-jóváhagyott Parlodel 1978 (Sandoz, ma Novartis), Cycloset 2009 (S2 Therapeutics, T2DM-indikáció). Indikációk: hyperprolaktinémia, prolaktinoma, Parkinson-kór adjuváns, akromegália, T2DM (Cycloset). EU: EMA-jóváhagyott. HU: törzskönyvezett (Parlodel Rx). PL: törzskönyvezett (Bromergon, Parlodel Rx). WADA: nem listán.",
   "onsetTime": "Prolaktin-csökkenés 1-2 óra, plateau 8-24 óra",
   "halfLife": "~3-12 óra",
   "halfLifeActive": "~3-12 óra (parent compound aktív)",
   "interactionsWith": ["cabergoline", "pramipexole", "trenbolone-info", "nandrolone-info"],
-  "aromatization": "Nincs — DA-agonista.",
+  "aromatization": "Nincs – DA-agonista.",
   "hepatotoxicity": "Alacsony hepatikus; cardiac valvulopathy risk hasonló mint Cabergoline magas dózison; ritkábban dokumentált AAS-PCT kontextusban.",
   "wadaStatus": "allowed",
   "androgenicRatio": "N/A (nem AAS)",
@@ -75,15 +75,15 @@ export default {
     "pure": [
       "Novartis Parlodel 2.5/5 mg, Rx pharma-grade (EU-pharmacy)",
       "Bromocriptine-mesylát generic (Sandoz, Teva, Ratiopharm)",
-      "Cycloset 0.8 mg (S2 Therapeutics, US T2DM-Rx) — quick-release morning-dose",
+      "Cycloset 0.8 mg (S2 Therapeutics, US T2DM-Rx) – quick-release morning-dose",
       "Indiai generikum (Sun Pharma Bromergon, Cipla)",
       "UGL liquid bromocriptine: rare, HPLC-tested forrás kötelező"
     ],
     "caution": [
       "Nausea kezelése: lassú-titrálás 1.25 mg-tól indítva 3-7 napos lépcsőkben, mindig étkezéssel",
       "Orthostatic hypotensio: lassan kelni reggel, hydration-monitor",
-      "Cardiac valvulopathy: chronic high-dose (>30 mg/nap, Parkinson-protokoll) — AAS-dose-on rizikó alacsony",
-      "Dyskinesia: ritka, dose-dependent — leállítás reverzibilis",
+      "Cardiac valvulopathy: chronic high-dose (>30 mg/nap, Parkinson-protokoll) – AAS-dose-on rizikó alacsony",
+      "Dyskinesia: ritka, dose-dependent – leállítás reverzibilis",
       "Antipszichotikumokkal NEM kombinálható (D2-antagonist-overlap)",
       "Pregnancy / breastfeeding"
     ],
@@ -108,20 +108,20 @@ export default {
     {"title": "Impact of menopause on outcomes in prolactinomas after dopamine agonist treatment withdrawal.", "authors": "Santharam S, Fountas A, Tampourlou M", "journal": "Clin Endocrinol (Oxf)", "pmid": "29894000"},
     {"title": "Evidence-based practice use of quick-release bromocriptine across the natural history of type 2 diabetes mellitus.", "authors": "Schwartz SS, Zangeneh F", "journal": "Postgrad Med", "pmid": "27458683"},
     {"title": "Bromocriptine in type 2 diabetes: a promising alternative, a systematic review and meta-analysis.", "authors": "Dara T, Zabihi M, Hoseinzade F", "journal": "Cardiovasc Diabetol Endocrinol Rep", "pmid": "41013660"},
-    {"title": "Bromocriptine for diabetes — randomized controlled trial", "authors": "Pijl H, Ohashi S, Matsuda M, et al.", "journal": "Diabetes Care. 2000;23(8):1154-1161.", "pmid": "10937514"}
+    {"title": "Bromocriptine for diabetes – randomized controlled trial", "authors": "Pijl H, Ohashi S, Matsuda M, et al.", "journal": "Diabetes Care. 2000;23(8):1154-1161.", "pmid": "10937514"}
   ],
   "faq": [
-    {"q": "Bromocriptine vs Cabergoline — mikor első választás?", "a": "Cabergoline a default első-vonalbeli választás (90% AAS-PCT-felhasználó). Bromocriptine 3 niche-szituációban első: (1) Emerging-markets economics — Bromocriptine ~€3/box vs Cabergoline ~€25-40, Hungary/Poland-pharmacy-on Cabergoline drágább; (2) Cabergoline-intolerancia — ha Cabergoline-on impulse-control disorder vagy persistent-nausea van, Bromocriptine fallback; (3) Cycloset-T2DM-application — obese AAS-cycler (BMI >30, prediabetes HbA1c 5.7-6.4%), Cycloset 0.8 mg morning quick-release inzulin-szenzitivitás-javítás mellékhatásként prolaktin-control mellett. Cabergoline-naive felhasználónak NEM Bromocriptine — Cabergoline jobb tolerábilitás."},
-    {"q": "Nausea-management?", "a": "Bromocriptine #1 mellékhatása. Mitigációs stratégia: (1) Lassú-titrálás KÖTELEZŐ — 1.25 mg/este (lefekvés előtt) × 3-7 nap, majd 1.25 mg 2x/nap × 3-7 nap, majd 2.5 mg 2x/nap × 7 nap, majd target dose; (2) Étkezéssel KÖTELEZŐ (sosem üres-gyomor); (3) Evening dosing first (alvás kihagy a nausea peak-tájékot); (4) Antiemetikum (metoclopramide NEM jó — D2-antagonist konfliktus a Bromocriptine-mechanizmussal!), inkább ondansetron 4 mg PRN. Ha nausea persistens 2 hét után → switch Cabergoline-re."},
-    {"q": "Cycloset T2DM-application — AAS metabolic-benefit?", "a": "A Cycloset (Bromocriptine-mesylát quick-release 0.8 mg morning) Pijl 2000 (PMID 10937514) és Cincotta 1996 (PMID 8725867) trial-jain Type-2-diabetes-felhasználón HbA1c csökkenést 0.5-1.0% dokumentált adjuváns-therapy-ként metforminre. Mechanizmus: morning dopamine-pulse a perifériás (zsírszövet + máj) inzulin-szenzitivitást javítja. AAS-context off-label: obese AAS-cycler (BMI >30, glükóz-intolerancia GH/Insulin-stack után) mellékelőnyként alkalmazható. NEM helyettesíti a metformint/SGLT2-inhibitort. Cabergoline-nak NINCS ezen T2DM-applikációja (D2-szelektivitás miatt másmilyen mechanism)."},
-    {"q": "Sexual benefit hasonló Cabergolinhoz?", "a": "Igen, DE alacsonyabb magnitúdóval. A Krüger 2003-szerű post-orgasmic refractory period-shortening Cabergoline-nál erősebben dokumentált (D2-szelektivitás miatt). Bromocriptine-on a sexual-benefit kisebb, és a mellékhatás-profil (nausea, hypotensio) ronthatja a szexuális élet-minőséget — net effect mixed. Ha sexual-emphasis cél, Cabergoline > Bromocriptine."}
+    {"q": "Bromocriptine vs Cabergoline – mikor első választás?", "a": "Cabergoline a default első-vonalbeli választás (90% AAS-PCT-felhasználó). Bromocriptine 3 niche-szituációban első: (1) Emerging-markets economics – Bromocriptine ~€3/box vs Cabergoline ~€25-40, Hungary/Poland-pharmacy-on Cabergoline drágább; (2) Cabergoline-intolerancia – ha Cabergoline-on impulse-control disorder vagy persistent-nausea van, Bromocriptine fallback; (3) Cycloset-T2DM-application – obese AAS-cycler (BMI >30, prediabetes HbA1c 5.7-6.4%), Cycloset 0.8 mg morning quick-release inzulin-szenzitivitás-javítás mellékhatásként prolaktin-control mellett. Cabergoline-naive felhasználónak NEM Bromocriptine – Cabergoline jobb tolerábilitás."},
+    {"q": "Nausea-management?", "a": "Bromocriptine #1 mellékhatása. Mitigációs stratégia: (1) Lassú-titrálás KÖTELEZŐ – 1.25 mg/este (lefekvés előtt) × 3-7 nap, majd 1.25 mg 2x/nap × 3-7 nap, majd 2.5 mg 2x/nap × 7 nap, majd target dose; (2) Étkezéssel KÖTELEZŐ (sosem üres-gyomor); (3) Evening dosing first (alvás kihagy a nausea peak-tájékot); (4) Antiemetikum (metoclopramide NEM jó – D2-antagonist konfliktus a Bromocriptine-mechanizmussal!), inkább ondansetron 4 mg PRN. Ha nausea persistens 2 hét után → switch Cabergoline-re."},
+    {"q": "Cycloset T2DM-application – AAS metabolic-benefit?", "a": "A Cycloset (Bromocriptine-mesylát quick-release 0.8 mg morning) Pijl 2000 (PMID 10937514) és Cincotta 1996 (PMID 8725867) trial-jain Type-2-diabetes-felhasználón HbA1c csökkenést 0.5-1.0% dokumentált adjuváns-therapy-ként metforminre. Mechanizmus: morning dopamine-pulse a perifériás (zsírszövet + máj) inzulin-szenzitivitást javítja. AAS-context off-label: obese AAS-cycler (BMI >30, glükóz-intolerancia GH/Insulin-stack után) mellékelőnyként alkalmazható. NEM helyettesíti a metformint/SGLT2-inhibitort. Cabergoline-nak NINCS ezen T2DM-applikációja (D2-szelektivitás miatt másmilyen mechanism)."},
+    {"q": "Sexual benefit hasonló Cabergolinhoz?", "a": "Igen, DE alacsonyabb magnitúdóval. A Krüger 2003-szerű post-orgasmic refractory period-shortening Cabergoline-nál erősebben dokumentált (D2-szelektivitás miatt). Bromocriptine-on a sexual-benefit kisebb, és a mellékhatás-profil (nausea, hypotensio) ronthatja a szexuális élet-minőséget – net effect mixed. Ha sexual-emphasis cél, Cabergoline > Bromocriptine."}
   ],
   "related": ["cabergoline", "pramipexole", "trenbolone-info", "nandrolone-info"],
   "doseCalc": {
     "type": "fixed",
     "fixed": {"low": 1.25, "medium": 2.5, "high": 5},
     "unit": "mg / nap divided 2-3x (orális, étkezéssel)",
-    "note": "Standard AAS-prolaktin-control: 2.5-5 mg/nap divided 2-3x. Lassú-titrálás KÖTELEZŐ 1.25 mg-tól (nausea-management). Cycloset T2DM-application: 0.8 mg morning quick-release. Cabergoline second-line — első választás csak intolerancia/cost-emphasis/Cycloset-case-en."
+    "note": "Standard AAS-prolaktin-control: 2.5-5 mg/nap divided 2-3x. Lassú-titrálás KÖTELEZŐ 1.25 mg-tól (nausea-management). Cycloset T2DM-application: 0.8 mg morning quick-release. Cabergoline second-line – első választás csak intolerancia/cost-emphasis/Cycloset-case-en."
   },
   "bloodwork": {
     "preCycle": {

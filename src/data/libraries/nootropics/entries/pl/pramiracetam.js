@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Silny cholinergiczny racetam, wzmocnienie HACU + modulacja AMPA.",
-  "description": "Pramiracetam to wysokopotencyjny analog piracetamu, którego głównym działaniem jest ułatwianie hipokampalnego wysokopowinowactwego wychwytu choliny (HACU) — pokazuje 30-37% wzrost obrotu ACh in vivo, z krzywą dawka-odpowiedź w kształcie dzwonu (niższe dawki często działają lepiej). NIE moduluje GABA, dopaminy, noradrenaliny ani serotoniny — czysty profil cholinergiczny. Dobrze biodostępny doustnie (~4-5 h okres półtrwania). Przewlekły wzrost kortykosteroidów (stres) może zablokować efekt poprawy pamięci (PMID 1410129). Typowa dawka (300-600 mg) jest znacznie niższa niż piracetamu. We Włoszech był na receptę jako Pramistar; obecnie wycofany na kilku rynkach.",
+  "description": "Pramiracetam to wysokopotencyjny analog piracetamu, którego głównym działaniem jest ułatwianie hipokampalnego wysokopowinowactwego wychwytu choliny (HACU) – pokazuje 30-37% wzrost obrotu ACh in vivo, z krzywą dawka-odpowiedź w kształcie dzwonu (niższe dawki często działają lepiej). NIE moduluje GABA, dopaminy, noradrenaliny ani serotoniny – czysty profil cholinergiczny. Dobrze biodostępny doustnie (~4-5 h okres półtrwania). Przewlekły wzrost kortykosteroidów (stres) może zablokować efekt poprawy pamięci (PMID 1410129). Typowa dawka (300-600 mg) jest znacznie niższa niż piracetamu. We Włoszech był na receptę jako Pramistar; obecnie wycofany na kilku rynkach.",
   "keyInfo": [
     {
       "label": "Mechanizm",

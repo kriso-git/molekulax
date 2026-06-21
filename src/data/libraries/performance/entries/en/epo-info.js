@@ -27,7 +27,7 @@ export default {
   "accentColor": "#ef4444",
   "tagColor": "rgba(239,68,68,0.18)",
   "shortDesc": "Recombinant human erythropoietin (rhEPO). Stimulates red blood cell production, WADA-banned in endurance sports.",
-  "description": "Recombinant human erythropoietin (rhEPO, Epoetin alfa/beta, Procrit, Eprex, Aranesp) is the biologically identical form of natural kidney-produced EPO. FDA-approved for chronic kidney disease, chemo-induced anemia, and prematurity anemia. In endurance sports (cycling, distance athletics) off-label use raises hematocrit, with anecdotal +8-10% VO2max (Lundby 2011) but blinded placebo-controlled RCTs showing a realistic +1-3% performance gain (Heuberger 2013). WADA-banned; erythropoietic stimulation carries serious thrombotic + cardiovascular risk (blood viscosity rise). **HIF-α stabilization analogy**: endogenous renal EPO is activated by hypoxia-induced HIF-α (Semenza Nobel 2019); rhEPO mimics this signal as an exogenous receptor agonist. **Historical context**: the Tour de France 1990-2000 \"EPO era\" (Festina scandal 1998), Lance Armstrong USPS protocol documented (USADA 2012). **Detection breakthrough**: Lasne & de Ceaurriz 2000 Nature (PMID 10864312) IEF testing. **Hematocrit ramp dynamics**: 7-10 days post-SC reticulocyte peak, 21-28 day hematocrit peak — hence the spread of micro-dose protocols (20-30 IU/kg every other day) for sub-detection-window boosting.",
+  "description": "Recombinant human erythropoietin (rhEPO, Epoetin alfa/beta, Procrit, Eprex, Aranesp) is the biologically identical form of natural kidney-produced EPO. FDA-approved for chronic kidney disease, chemo-induced anemia, and prematurity anemia. In endurance sports (cycling, distance athletics) off-label use raises hematocrit, with anecdotal +8-10% VO2max (Lundby 2011) but blinded placebo-controlled RCTs showing a realistic +1-3% performance gain (Heuberger 2013). WADA-banned; erythropoietic stimulation carries serious thrombotic + cardiovascular risk (blood viscosity rise). **HIF-α stabilization analogy**: endogenous renal EPO is activated by hypoxia-induced HIF-α (Semenza Nobel 2019); rhEPO mimics this signal as an exogenous receptor agonist. **Historical context**: the Tour de France 1990-2000 \"EPO era\" (Festina scandal 1998), Lance Armstrong USPS protocol documented (USADA 2012). **Detection breakthrough**: Lasne & de Ceaurriz 2000 Nature (PMID 10864312) IEF testing. **Hematocrit ramp dynamics**: 7-10 days post-SC reticulocyte peak, 21-28 day hematocrit peak – hence the spread of micro-dose protocols (20-30 IU/kg every other day) for sub-detection-window boosting.",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -54,12 +54,12 @@ export default {
     "iron supplements",
     "ACE inhibitors"
   ],
-  "aromatization": "Not applicable — 165-amino-acid glycoprotein (erythropoietin), NOT a steroid; no aromatase substrate",
-  "hepatotoxicity": "Low — no direct hepatotoxicity; hematocrit elevation with thrombosis risk (CV events, stroke) dominates (FDA Epogen black-box warning)",
+  "aromatization": "Not applicable – 165-amino-acid glycoprotein (erythropoietin), NOT a steroid; no aromatase substrate",
+  "hepatotoxicity": "Low – no direct hepatotoxicity; hematocrit elevation with thrombosis risk (CV events, stroke) dominates (FDA Epogen black-box warning)",
   "wadaStatus": "banned",
   "detectionWindow": "Direct rhEPO test: 3-4 days (IEF testing in WADA-accredited labs). Biomarker (ABP, Athlete Biological Passport) sensitive over 4-6 week window.",
   "benefits": [
-    "VO2max gain: anecdotal 8-10% (Lundby 2011), but blinded placebo-controlled RCTs show only 1-3% realistic performance gain (Heuberger 2013) — athlete subjective perception substantially overestimates the measurable effect",
+    "VO2max gain: anecdotal 8-10% (Lundby 2011), but blinded placebo-controlled RCTs show only 1-3% realistic performance gain (Heuberger 2013) – athlete subjective perception substantially overestimates the measurable effect",
     "Hematocrit rise (45 → 50+%)",
     "Hemoglobin rise and O2 carrying capacity"
   ],

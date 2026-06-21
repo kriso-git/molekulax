@@ -1,10 +1,10 @@
 // Per-entry dose helper for pharmaceutical library entries (Phase 6).
 //
 // Renders one of four UI variants depending on entry.doseCalc.type:
-//   'titration' — read-only titration table (e.g. SSRI start → therapeutic dose)
-//   'fixedDose' — 3 dose-level chips (e.g. Atorvastatin low/medium/high intensity)
-//   'tshWeight' — weight-based starting dose (Levothyroxin: 1.6 µg/kg/day)
-//   'warning'   — no-dose card with explicit "consult your doctor" message
+//   'titration' – read-only titration table (e.g. SSRI start → therapeutic dose)
+//   'fixedDose' – 3 dose-level chips (e.g. Atorvastatin low/medium/high intensity)
+//   'tshWeight' – weight-based starting dose (Levothyroxin: 1.6 µg/kg/day)
+//   'warning'   – no-dose card with explicit "consult your doctor" message
 //
 // Design tokens shared with PerformanceCalculator: glassmorph container,
 // accent-glow shadow, decorative radial orbs, gradient slider track.

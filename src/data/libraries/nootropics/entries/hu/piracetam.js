@@ -128,7 +128,7 @@ export default {
       "pmid": "10338109"
     },
     {
-      "title": "Piracetam — an old drug with novel properties? Updated review",
+      "title": "Piracetam – an old drug with novel properties? Updated review",
       "authors": "Winblad B.",
       "journal": "CNS Drug Rev. 2005;11(2):169-182.",
       "pmid": "20166767"
@@ -153,7 +153,7 @@ export default {
     },
     {
       "q": "Mioklónusz kezelésére milyen dózis?",
-      "a": "Klinikailag 7-24 g/nap, ritkán 45 g-ig (Koskiniemi 1998). Mindenképp neurológus felügyelete mellett — ez nem nootropikum-felhasználás, hanem ritka neurológiai indikáció."
+      "a": "Klinikailag 7-24 g/nap, ritkán 45 g-ig (Koskiniemi 1998). Mindenképp neurológus felügyelete mellett – ez nem nootropikum-felhasználás, hanem ritka neurológiai indikáció."
     }
   ],
   "related": [

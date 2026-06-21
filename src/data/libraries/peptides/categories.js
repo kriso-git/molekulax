@@ -1,4 +1,4 @@
-// Peptide categories — therapeutic groupings.
+// Peptide categories – therapeutic groupings.
 // Each peptide can belong to multiple categories. The filter UI lets users
 // narrow the "Összes Peptid" list by any combination of these tags.
 
@@ -117,14 +117,14 @@ export const PEPTIDE_CATEGORIES = {
   'klow-protocol':       ['recovery', 'gi'],
   'lipo-c':              ['metabolic'],
 
-  // ── Post-roadmap 2026-05-20 — Peptide curation v0.23 ──────────────────
+  // ── Post-roadmap 2026-05-20 – Peptide curation v0.23 ──────────────────
   'hcg-peptid':          ['growth-factors', 'recovery', 'hpta-fertility'],
   'hmg-peptid':          ['growth-factors', 'hpta-fertility'],
   'epo':                 ['metabolic', 'recovery', 'endurance'],
   'glow':                ['anti-aging', 'recovery', 'immune'],
 }
 
-// Lookup helper — returns array of category IDs for a peptide.
+// Lookup helper – returns array of category IDs for a peptide.
 export function getPeptideCategories(id) {
   return PEPTIDE_CATEGORIES[id] || []
 }

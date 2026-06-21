@@ -57,8 +57,8 @@ export default {
     "tyramine-rich foods",
     "clonidine"
   ],
-  "aromatization": "Nem releváns — indol-alkaloid α2-antagonista, NEM szteroid; nincs CYP19 interakció",
-  "hepatotoxicity": "Alacsony — anxiogén és kardiovaszkuláris rizikó dominál (tachycardia, hypertonia); ritka hepatotoxicitás csak túladagolásban (NIH LiverTox 2024)",
+  "aromatization": "Nem releváns – indol-alkaloid α2-antagonista, NEM szteroid; nincs CYP19 interakció",
+  "hepatotoxicity": "Alacsony – anxiogén és kardiovaszkuláris rizikó dominál (tachycardia, hypertonia); ritka hepatotoxicitás csak túladagolásban (NIH LiverTox 2024)",
   "wadaStatus": null,
   "benefits": [
     "\"Stubborn fat\" mobilizálás α2-rich depókból (Ostojic 2006 sportoló-vizsgálat: 2.2% zsírvesztés 3 hét alatt)",
@@ -113,7 +113,7 @@ export default {
     "Ephedrine: kombinált sympathomimetic stressz, kardio-monitoring kötelező",
     "Inzulin (étkezés utáni hatás): blokkolja a yohimbine zsírmobilizációs hatását",
     "PDE5-inhibitor (Viagra/Cialis): kardio-stressz fokozódik",
-    "Clonidine (α2-agonista): teljes hatás-antagonizmus + intracraniális vérzés-kockázat krónikus clonidine-felhasználónál (Pham 2022 PMID 36115742 — egyetlen yohimbine-dózis után 198/93 BP + bazális ganglion-vérzés). Krónikus clonidine mellett ABSZOLÚT kontraindikáció."
+    "Clonidine (α2-agonista): teljes hatás-antagonizmus + intracraniális vérzés-kockázat krónikus clonidine-felhasználónál (Pham 2022 PMID 36115742 – egyetlen yohimbine-dózis után 198/93 BP + bazális ganglion-vérzés). Krónikus clonidine mellett ABSZOLÚT kontraindikáció."
   ],
   "studies": [
     {
@@ -168,7 +168,7 @@ export default {
     },
     {
       "q": "Mi a kockázata clonidine vagy MAOI mellett?",
-      "a": "A clonidine α2-agonista, a yohimbine α2-antagonista — direkt pharmakológiai konfliktus. Pham 2022 (Cureus PMID 36115742) egyetlen yohimbine-dózis utáni intracraniális vérzést dokumentált 39 éves nőnél, aki krónikusan clonidine-t szedett (198/93 BP, bazális ganglion-vérzés, súlyos neurológiai sequelae). MAOI vagy tyramin-gazdag étkezés (érlelt sajt, vörösbor, salámi) mellett hipertenzív krízis-kockázat a sympathomimetic NE-szabad halmozódás miatt. Mindkét helyzet ABSZOLÚT kontraindikáció."
+      "a": "A clonidine α2-agonista, a yohimbine α2-antagonista – direkt pharmakológiai konfliktus. Pham 2022 (Cureus PMID 36115742) egyetlen yohimbine-dózis utáni intracraniális vérzést dokumentált 39 éves nőnél, aki krónikusan clonidine-t szedett (198/93 BP, bazális ganglion-vérzés, súlyos neurológiai sequelae). MAOI vagy tyramin-gazdag étkezés (érlelt sajt, vörösbor, salámi) mellett hipertenzív krízis-kockázat a sympathomimetic NE-szabad halmozódás miatt. Mindkét helyzet ABSZOLÚT kontraindikáció."
     }
   ],
   "related": [    "clenbuterol"

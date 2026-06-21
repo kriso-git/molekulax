@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 // React wrapper around the framework-agnostic Three.js DNA field.
 // Three.js is dynamically imported so it lands in this component's own chunk
-// (only loaded where DnaBackground is actually mounted — currently the hidden
+// (only loaded where DnaBackground is actually mounted – currently the hidden
 // #dna-preview route).
 //
 // Props (all optional, live-tunable): count, size, glow, rough, speed, palette.
@@ -10,7 +10,7 @@ export default function DnaBackground(props) {
   const canvasRef = useRef(null)
   const apiRef = useRef(null)
   // always points at the latest props so create-time (after the async import
-  // resolves) uses current values — no param change is dropped in the import gap
+  // resolves) uses current values – no param change is dropped in the import gap
   const propsRef = useRef(props)
   propsRef.current = props
 

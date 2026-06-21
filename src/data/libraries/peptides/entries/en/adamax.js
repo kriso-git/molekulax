@@ -41,7 +41,7 @@ export default {
   ],
   "dosageInfo": "Anecdotal research protocol: 100–300 µg/day (SC or IN). No long-term human safety data, no peer-reviewed clinical trials.",
   "studies": [],
-  "anecdote": "Adamax is positioned as a theoretical upgrade to Semax, with improved BBB penetration, longer duration, and more potent neurotrophic effects on paper. While more definitive data is still needed, anecdotal accounts describe clearer thinking, better train of thought, and smoother cognition. Numerous community discussions document user experiences with Adamax, though all reports remain anecdotal — no peer-reviewed clinical trial exists.\n\nAdamax aims for similar neurotrophic and nootropic benefits to Semax, but with greater emphasis on sustained activity due to improved BBB permeability and a longer duration. As a grey-zone research chemical, all use is at your own risk, based on community-sourced protocols.",
+  "anecdote": "Adamax is positioned as a theoretical upgrade to Semax, with improved BBB penetration, longer duration, and more potent neurotrophic effects on paper. While more definitive data is still needed, anecdotal accounts describe clearer thinking, better train of thought, and smoother cognition. Numerous community discussions document user experiences with Adamax, though all reports remain anecdotal – no peer-reviewed clinical trial exists.\n\nAdamax aims for similar neurotrophic and nootropic benefits to Semax, but with greater emphasis on sustained activity due to improved BBB permeability and a longer duration. As a grey-zone research chemical, all use is at your own risk, based on community-sourced protocols.",
   "variants": [
     {
       "id": "sc",
@@ -91,7 +91,7 @@ export default {
           "5 mg lyophilized vial + 5 ml sterile bacteriostatic water",
           "Inject water slowly onto vial wall, swirl gently (DO NOT shake)",
           "Transfer to a sterile nasal spray bottle (50 μl/puff pump = ~50 μg/puff)",
-          "Concentration: 1000 μg/ml — 1 puff = ~50 μg, 2–6 puffs/day depending on dose",
+          "Concentration: 1000 μg/ml – 1 puff = ~50 μg, 2–6 puffs/day depending on dose",
           "Storage: refrigerated (2–8°C), max 28 days; prime 2–3 empty puffs before use"
         ]
       }

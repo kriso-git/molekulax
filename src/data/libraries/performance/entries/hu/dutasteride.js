@@ -1,4 +1,4 @@
-// Dutasteride (Avodart) — dual 5α-reduktáz gátló (type-I + type-II).
+// Dutasteride (Avodart) – dual 5α-reduktáz gátló (type-I + type-II).
 // FDA 2001 GSK BPH. AAS: ~90% scalp DHT + acne-csökkentés.
 // Sources: FDA Avodart SmPC, Olsen 2006 PMID 16782546,
 // Choi 2014 PMID 24820896, Trost 2017 PFS PMID 28267184.
@@ -27,8 +27,8 @@ export default {
   "image": "/pharmaceutical/blister-white-round.png",
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
-  "shortDesc": "Dual 5α-reduktáz gátló (type-I + type-II). FDA-jóváhagyott (2001 GSK) BPH-ra. AAS-ban: ~90% scalp DHT + acne-csökkentés. Long t1/2 ~5 hét — washout ~6 hónap. PFS-rizikó magasabb mint Finasteride-on.",
-  "description": "A Dutasteride (Avodart) egy dual 5α-reduktáz inhibitor, amely a type-I + type-II izoformokat egyaránt gátolja, és így a Finasteride-nál szignifikánsan szélesebb DHT-szuppressziós spektrumot ad. A GSK fejlesztette ki, és 2001-ben kapott FDA-jóváhagyást benign prostatic hyperplasia (BPH) kezelésére (Avodart 0.5 mg). Az Olsen 2006 (PMID 16782546) randomized head-to-head trial dokumentálta, hogy a Dutasteride 0.5 mg/nap-on **~90% scalp DHT** + ~95% prostate DHT szuppressziót ér el — vs Finasteride 1 mg/nap ~70% scalp DHT. Ez a magasabb szuppresszió + Type-I (skin/sebum) gátlás bonusz **acne-improvement** szekunder hatást ad AAS-felhasználón (a Test-emelkedés acne-tendenciát csökkenti). Off-label AGA-használata széles körű (Korea+Japán: AGA-Rx; US/EU: off-label). Long-felezés ~5 hét → washout ~6 hónap (Finasteride 2 hét vs Dutasteride 6 hónap — szignifikáns sexual-decision-implication a fertility-tervezésnél). Tier-4 — second-line a Finasteride után, vagy első-vonalbeli ha acne-emphasis. PFS-rizikó magasabb mint Finasteride-on (Trost 2017 PMID 28267184).",
+  "shortDesc": "Dual 5α-reduktáz gátló (type-I + type-II). FDA-jóváhagyott (2001 GSK) BPH-ra. AAS-ban: ~90% scalp DHT + acne-csökkentés. Long t1/2 ~5 hét – washout ~6 hónap. PFS-rizikó magasabb mint Finasteride-on.",
+  "description": "A Dutasteride (Avodart) egy dual 5α-reduktáz inhibitor, amely a type-I + type-II izoformokat egyaránt gátolja, és így a Finasteride-nál szignifikánsan szélesebb DHT-szuppressziós spektrumot ad. A GSK fejlesztette ki, és 2001-ben kapott FDA-jóváhagyást benign prostatic hyperplasia (BPH) kezelésére (Avodart 0.5 mg). Az Olsen 2006 (PMID 16782546) randomized head-to-head trial dokumentálta, hogy a Dutasteride 0.5 mg/nap-on **~90% scalp DHT** + ~95% prostate DHT szuppressziót ér el – vs Finasteride 1 mg/nap ~70% scalp DHT. Ez a magasabb szuppresszió + Type-I (skin/sebum) gátlás bonusz **acne-improvement** szekunder hatást ad AAS-felhasználón (a Test-emelkedés acne-tendenciát csökkenti). Off-label AGA-használata széles körű (Korea+Japán: AGA-Rx; US/EU: off-label). Long-felezés ~5 hét → washout ~6 hónap (Finasteride 2 hét vs Dutasteride 6 hónap – szignifikáns sexual-decision-implication a fertility-tervezésnél). Tier-4 – second-line a Finasteride után, vagy első-vonalbeli ha acne-emphasis. PFS-rizikó magasabb mint Finasteride-on (Trost 2017 PMID 28267184).",
   "keyInfo": [
     {"label": "Hatásmechanizmus", "value": "Dual 5α-reduktáz gátló (type-I + type-II), ~90% scalp DHT szuppresszió 0.5 mg/nap"},
     {"label": "Adagolás (AAS hair-loss + acne)", "value": "0.5 mg/nap continuous vagy minden 2. nap (cost-saving)"},
@@ -36,18 +36,18 @@ export default {
     {"label": "Hatáskezdet", "value": "DHT-csökkenés mérhető 1 hét, hair-stabilization 3-6 hónap"},
     {"label": "Jogi státusz", "value": "FDA + EMA Rx (BPH), HU + PL törzskönyvezett, off-label AGA US/EU, WADA allowed"}
   ],
-  "mechanism": "Dutasteride 4-aza-szteroid struktúrájú compound, dual 5α-reduktáz inhibitor — mindkét izoformot (type-I + type-II) kompetitíven gátolja: Type-I 5AR Ki ~6 nM, Type-II 5AR Ki ~7 nM (vs Finasteride Type-I ~300 nM = ~50x kevésbé hatékony). A dual-blokád → magasabb össz-szervezeti DHT-szuppresszió (~95% prostate, ~90% scalp, ~80% skin/sebum). Az enzim-kötés még a Finasteride-nál is erősebb és lassabban reverzibilis — innen jön a long felezés (~5 hét) és a washout-idő (~6 hónap teljes elimináció). Ez a long-pharmakokinetika a fő különbség Finasteride-tól: missed-dose-tolerance magasabb (jól adagolható minden 2. napon), DE leállítás után 6 hónap is kell DHT teljes recovery-hez (vs Finasteride 2 hét). Hepatikus CYP3A4 metabolizmus minimális.",
-  "legalStatus": "USA: FDA-jóváhagyott Avodart 2001 BPH (0.5 mg, GSK), Jalyn 2010 (Dutasteride 0.5 + Tamsulosin 0.4 BPH-kombináció). AGA-Rx US/EU off-label, Korea/Japán Rx AGA-ra. EU: EMA-jóváhagyott BPH. HU: törzskönyvezett (Avodart Rx). PL: törzskönyvezett. WADA: S5 hormone modulator — banned in competition (TUE possible), out-of-competition allowed.",
+  "mechanism": "Dutasteride 4-aza-szteroid struktúrájú compound, dual 5α-reduktáz inhibitor – mindkét izoformot (type-I + type-II) kompetitíven gátolja: Type-I 5AR Ki ~6 nM, Type-II 5AR Ki ~7 nM (vs Finasteride Type-I ~300 nM = ~50x kevésbé hatékony). A dual-blokád → magasabb össz-szervezeti DHT-szuppresszió (~95% prostate, ~90% scalp, ~80% skin/sebum). Az enzim-kötés még a Finasteride-nál is erősebb és lassabban reverzibilis – innen jön a long felezés (~5 hét) és a washout-idő (~6 hónap teljes elimináció). Ez a long-pharmakokinetika a fő különbség Finasteride-tól: missed-dose-tolerance magasabb (jól adagolható minden 2. napon), DE leállítás után 6 hónap is kell DHT teljes recovery-hez (vs Finasteride 2 hét). Hepatikus CYP3A4 metabolizmus minimális.",
+  "legalStatus": "USA: FDA-jóváhagyott Avodart 2001 BPH (0.5 mg, GSK), Jalyn 2010 (Dutasteride 0.5 + Tamsulosin 0.4 BPH-kombináció). AGA-Rx US/EU off-label, Korea/Japán Rx AGA-ra. EU: EMA-jóváhagyott BPH. HU: törzskönyvezett (Avodart Rx). PL: törzskönyvezett. WADA: S5 hormone modulator – banned in competition (TUE possible), out-of-competition allowed.",
   "onsetTime": "DHT-csökkenés 1 hét, hair-stabilization 3-6 hónap",
   "halfLife": "~5 hét (very long)",
   "halfLifeActive": "~5 hét (parent compound aktív), washout ~6 hónap teljes elimináció",
   "interactionsWith": ["finasteride", "ru58841", "testosterone-info"],
-  "aromatization": "Nem aromatizál — kompetitív dual-5AR inhibitor; DHT-konverziót gátolja (type-I + type-II egyaránt), aromatázra nincs hatás.",
+  "aromatization": "Nem aromatizál – kompetitív dual-5AR inhibitor; DHT-konverziót gátolja (type-I + type-II egyaránt), aromatázra nincs hatás.",
   "hepatotoxicity": "Alacsony; szteroid-szerű struktúra DE NEM 17α-alkilált. Hepatic AE <2% (FDA Avodart label). PFS-szerű szindróma dutasteride-on is dokumentált (Trost 2017 PMID 28267184), gyakoribb mint finasteride-on a stronger + longer effect miatt.",
   "wadaStatus": "allowed",
   "androgenicRatio": "N/A (nem AAS, dual-5AR inhibitor)",
   "bindingAffinity": "Type-I 5AR Ki ~6 nM, Type-II 5AR Ki ~7 nM. Finasteride ~50x kevésbé hatékony Type-I-en (Ki ~300 nM).",
-  "detectionWindow": "WADA-listáról 2009-ben levéve (5AR-masking-agent) — allowed competition kontextus.",
+  "detectionWindow": "WADA-listáról 2009-ben levéve (5AR-masking-agent) – allowed competition kontextus.",
   "benefits": [
     "AAS hair-loss-prevention erősebb mint Finasteride (~90% vs ~70% scalp DHT)",
     "Acne-csökkentés bonus (Type-I 5AR blokád → sebum-csökkentés)",
@@ -67,13 +67,13 @@ export default {
     {"label": "1-2. hét", "body": "DHT serum csökkenés mérhető (~70-85%). Acne-improvement érzékelhető (skin-sebum-csökkenés)."},
     {"label": "1-3. hónap", "body": "Hair-shedding stabilizálódik. Steady-state plateau (steady-state ~6 hónap után). Vertex regrowth observable."},
     {"label": "3-6. hónap", "body": "Maximum effect plateau scalp DHT ~90% szuppresszió, hair-loss-progression sustained-prevention. Choi 2014 (PMID 24820896): Dutasteride vs Finasteride 6-hónapos trial-en ~21% nagyobb hair-count improvement."},
-    {"label": "Leállítás után", "body": "DHT FOKOZATOSAN visszatér 3-6 hónap alatt (long felezés). Hair-loss-acceleráció lassabban tér vissza mint Finasteride leállítás után — DE long-term cycle-tervezés óvatosság (fertility-decision, sexual-side-effect-monitoring)."}
+    {"label": "Leállítás után", "body": "DHT FOKOZATOSAN visszatér 3-6 hónap alatt (long felezés). Hair-loss-acceleráció lassabban tér vissza mint Finasteride leállítás után – DE long-term cycle-tervezés óvatosság (fertility-decision, sexual-side-effect-monitoring)."}
   ],
   "quality": {
     "pure": [
       "GSK Avodart 0.5 mg blister, Rx pharma-grade (US + EU)",
       "GSK Jalyn (Dutasteride 0.5 + Tamsulosin 0.4 BPH-kombináció)",
-      "Generic dutasteride 0.5 mg (Sandoz, Teva, Ratiopharm — EU)",
+      "Generic dutasteride 0.5 mg (Sandoz, Teva, Ratiopharm – EU)",
       "Indiai generikum (Dr Reddy's Dutas, Cipla Veltride 0.5 mg)",
       "UGL liquid dutasteride: ritkán, pharma-grade Rx alternative ajánlott"
     ],
@@ -86,7 +86,7 @@ export default {
       "PSA-szint: Dutasteride a PSA-szintet ~50%-kal csökkenti (mint Finasteride), prostate-cancer-screen-interpretation differential"
     ],
     "avoid": [
-      "Pregnant partner / breastfeeding (Pregnancy Category X — magzati férfi-fejlődés-zavar)",
+      "Pregnant partner / breastfeeding (Pregnancy Category X – magzati férfi-fejlődés-zavar)",
       "Depresszió-history (mood-dysfunction-rizikó)",
       "Gyermek-tervezés-tervezés-akadály-mentesítés (6 hónap pre-pregnancy washout szükséges)",
       "Adolescent felhasználó (<18 év)",
@@ -109,10 +109,10 @@ export default {
     {"title": "Updates in Treatment for Androgenetic Alopecia.", "authors": "Shin JW, Huh CH", "journal": "Ann Dermatol", "pmid": "41331712"}
   ],
   "faq": [
-    {"q": "Finasteride vs Dutasteride — mikor melyik?", "a": "Default első-vonalbeli: **FINASTERIDE** 1 mg/nap (kisebb side-effect, shorter washout, klinikai standard AGA-protokoll). Dutasteride **second-line** vagy **első-vonalbeli niche-szituációban**: (1) Finasteride inadequate response (3-6 hónap után <30% improvement, vagy continued progression); (2) Acne-emphasis (Type-I 5AR-blokád miatt sebum-csökkentés bonus); (3) Aggresszív AAS-stack (Test + Tren + Anadrol high-dose, ahol a maximum DHT-szuppresszió cél). Long-washout (~6 hónap vs Finasteride 2 hét) miatt **NEM** ajánlott rövid-távú vagy fertility-emphasizing felhasználón. PFS-rizikó magasabb (Trost 2017) — risk-averse user inkább Finasteride."},
-    {"q": "Long washout-time (~6 hónap) — gond?", "a": "**Igen, szignifikáns sexual-decision-implication**. A Dutasteride felezési ideje ~5 hét → steady-state ~6 hónap, ÉS leállítás után ~6 hónap kell a teljes elimináció-szintű DHT-baseline-recoveryhez. Probléma: (1) Sexual-side-effect Finasteride-en 2 hét recovery, Dutasteride-on 3-6 hónap; (2) Fertility-decision: ha gyermek-tervezés cél, 6 hónappal pre-pregnancy leállítás szükséges (sperma-DHT-szubsztrát fertility-impact dokumentált); (3) Side-effect emergence months later harder to attribute. Long-term-decision-implication: a fertility-tervező felhasználón NEM Dutasteride első-vonalbeli, hanem Finasteride (shorter washout, könnyebben átszervezni)."},
-    {"q": "PFS-rizikó magasabb?", "a": "Trost 2017 (PMID 28267184) systematic review-ban a Dutasteride-PFS-incidencia ~2-3% (vs Finasteride ~1-2%), és a side-effect erőteljesebb + tartósabb mint a Finasteride-PFS. Mechanizmus: dual-blokád (type-I + type-II) → szélesebb neurosteroid-pathway-disrupció — type-I 5AR a brain-szteroid-szintézisben is fontosabb, így a brain-szintű-changes nagyobb amplitudóval. Lower-doses safer: 0.5 mg minden 2. nap (cost-saving + alacsony-side-effect alternative) racionális risk-reduction. Risk-mitigation: pre-treatment depresszió-history-screen, IIEF-5 + PHQ-9 baseline, monthly self-monitor; symptom-onset → AZONNALI leállítás (DE long-washout miatt symptom-relief lassabb)."},
-    {"q": "Topical dutasteride emerging?", "a": "Igen, emerging-trend dermatology-compounding pharmacies. Topical Dutasteride 0.1-0.5% solution daily applied scalp — scalp DHT-suppression hasonlóan az 0.5 mg orális-hez, DE ~10-20% systemic absorption (vs 100% orális) → drasztikusan alacsonyabb sysztemikus side-effect-rizikó (PFS-prone-felhasználón előny). Compounded only (NINCS FDA-jóváhagyás), drágább (~€150-300/hónap UGL/compounding). Modern AGA-clinics ajánlása PFS-risk-averse user-nek: topical Dutasteride > orális Finasteride > orális Dutasteride. AAS-kontextusban worth exploring (long-term cycle + side-effect-minimization cél)."}
+    {"q": "Finasteride vs Dutasteride – mikor melyik?", "a": "Default első-vonalbeli: **FINASTERIDE** 1 mg/nap (kisebb side-effect, shorter washout, klinikai standard AGA-protokoll). Dutasteride **second-line** vagy **első-vonalbeli niche-szituációban**: (1) Finasteride inadequate response (3-6 hónap után <30% improvement, vagy continued progression); (2) Acne-emphasis (Type-I 5AR-blokád miatt sebum-csökkentés bonus); (3) Aggresszív AAS-stack (Test + Tren + Anadrol high-dose, ahol a maximum DHT-szuppresszió cél). Long-washout (~6 hónap vs Finasteride 2 hét) miatt **NEM** ajánlott rövid-távú vagy fertility-emphasizing felhasználón. PFS-rizikó magasabb (Trost 2017) – risk-averse user inkább Finasteride."},
+    {"q": "Long washout-time (~6 hónap) – gond?", "a": "**Igen, szignifikáns sexual-decision-implication**. A Dutasteride felezési ideje ~5 hét → steady-state ~6 hónap, ÉS leállítás után ~6 hónap kell a teljes elimináció-szintű DHT-baseline-recoveryhez. Probléma: (1) Sexual-side-effect Finasteride-en 2 hét recovery, Dutasteride-on 3-6 hónap; (2) Fertility-decision: ha gyermek-tervezés cél, 6 hónappal pre-pregnancy leállítás szükséges (sperma-DHT-szubsztrát fertility-impact dokumentált); (3) Side-effect emergence months later harder to attribute. Long-term-decision-implication: a fertility-tervező felhasználón NEM Dutasteride első-vonalbeli, hanem Finasteride (shorter washout, könnyebben átszervezni)."},
+    {"q": "PFS-rizikó magasabb?", "a": "Trost 2017 (PMID 28267184) systematic review-ban a Dutasteride-PFS-incidencia ~2-3% (vs Finasteride ~1-2%), és a side-effect erőteljesebb + tartósabb mint a Finasteride-PFS. Mechanizmus: dual-blokád (type-I + type-II) → szélesebb neurosteroid-pathway-disrupció – type-I 5AR a brain-szteroid-szintézisben is fontosabb, így a brain-szintű-changes nagyobb amplitudóval. Lower-doses safer: 0.5 mg minden 2. nap (cost-saving + alacsony-side-effect alternative) racionális risk-reduction. Risk-mitigation: pre-treatment depresszió-history-screen, IIEF-5 + PHQ-9 baseline, monthly self-monitor; symptom-onset → AZONNALI leállítás (DE long-washout miatt symptom-relief lassabb)."},
+    {"q": "Topical dutasteride emerging?", "a": "Igen, emerging-trend dermatology-compounding pharmacies. Topical Dutasteride 0.1-0.5% solution daily applied scalp – scalp DHT-suppression hasonlóan az 0.5 mg orális-hez, DE ~10-20% systemic absorption (vs 100% orális) → drasztikusan alacsonyabb sysztemikus side-effect-rizikó (PFS-prone-felhasználón előny). Compounded only (NINCS FDA-jóváhagyás), drágább (~€150-300/hónap UGL/compounding). Modern AGA-clinics ajánlása PFS-risk-averse user-nek: topical Dutasteride > orális Finasteride > orális Dutasteride. AAS-kontextusban worth exploring (long-term cycle + side-effect-minimization cél)."}
   ],
   "related": ["finasteride", "ru58841", "testosterone-info"],
   "doseCalc": {

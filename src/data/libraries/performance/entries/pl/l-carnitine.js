@@ -1,4 +1,4 @@
-// L-Carnitine — czwartorzędowy związek amoniowy, syntetyzowany endogennie
+// L-Carnitine – czwartorzędowy związek amoniowy, syntetyzowany endogennie
 // z prekursorów lizyny + metioniny, mitochondrialny shuttle dla długołańcuchowych
 // kwasów tłuszczowych. Izolacja Gulewitsch + Krimberg 1905, Sigma-Tau 1985 FDA
 // Rx na pierwotny niedobór karnityny, bodybuilding off-label od lat 90.
@@ -32,7 +32,7 @@ export default {
   "accentColor": "#f97316",
   "tagColor": "rgba(249,115,22,0.18)",
   "shortDesc": "Czwartorzędowy związek amoniowy, syntetyzowany endogennie z prekursorów lizyny + metioniny, mitochondrialny shuttle dla długołańcuchowych kwasów tłuszczowych (carnitine palmitoyltransferase I/II). Izolacja Gulewitsch + Krimberg 1905, Sigma-Tau 1985 FDA Rx na pierwotny niedobór karnityny; bodybuilding off-label od lat 90., mainstream OTC fat-burner od lat 2000. WADA: dozwolona, NADA Niemcy 2018 monitored powyżej 50 mg/kg IV-bolus.",
-  "description": "L-Karnityna to czwartorzędowy związek amoniowy, który organizm ludzki syntetyzuje endogennie w ilości ~25 mg/dobę poprzez kaskadę enzymatyczną w wątrobie i nerkach z prekursorów lizyny i metioniny. Pierwotnie wyizolowana przez rosyjskich biochemików Gulewitsch i Krimberg w 1905 z tkanki mięśniowej (stąd nazwa 'carnitine' od 'caro/carnis' = mięso). Tylko izomer L jest biologicznie aktywny; izomer D jest enzymatycznie nieaktywny + sygnał kardiotoksyczny. Zatwierdzenie FDA w 1985 przez Sigma-Tau (włoska firma farma) dotyczyło wskazania Rx na pierwotny niedobór karnityny; off-label użycie w bodybuildingu zaczęło się w latach 90., a od lat 2000 mainstreamowa kategoria OTC 'fat-burner supplement'. Mechanizm opiera się na CoA-mediowanym mitochondrialnym transporcie długołańcuchowych kwasów tłuszczowych (LCFA) przez system shuttle carnitine palmitoyltransferase I/II (CPT-I/II) — jest to krok ograniczający tempo β-oksydacji. Stephens 2007 (Am J Physiol PMID 17331998), klasyczne badanie metodologii IV-clamp, wykazało, że supraphysjologiczne dawki doustne >1 g/dobę NIE podnoszą endogennego poziomu syntezy, ale przy ładowaniu przewlekłym (3-4 tygodnie, 2 g/dobę) z węglowodanami stężenie w tkance mięśniowej może wzrosnąć 2-3x dzięki insulin-stimulated muscle uptake. Doustna biodostępność jest niska (~15%), forma iniekcyjna IM/SC ma 100% biodostępność i jest 4-6x ekwiwalentna dawkowo wobec doustnej. WADA: 'dozwolona' na liście prohibited 2025, ale NADA Niemcy 2018 podniosły dawkowanie >50 mg/kg IV-bolus do kategorii monitorowanej (potencjalny kontekst marker doping krwi).",
+  "description": "L-Karnityna to czwartorzędowy związek amoniowy, który organizm ludzki syntetyzuje endogennie w ilości ~25 mg/dobę poprzez kaskadę enzymatyczną w wątrobie i nerkach z prekursorów lizyny i metioniny. Pierwotnie wyizolowana przez rosyjskich biochemików Gulewitsch i Krimberg w 1905 z tkanki mięśniowej (stąd nazwa 'carnitine' od 'caro/carnis' = mięso). Tylko izomer L jest biologicznie aktywny; izomer D jest enzymatycznie nieaktywny + sygnał kardiotoksyczny. Zatwierdzenie FDA w 1985 przez Sigma-Tau (włoska firma farma) dotyczyło wskazania Rx na pierwotny niedobór karnityny; off-label użycie w bodybuildingu zaczęło się w latach 90., a od lat 2000 mainstreamowa kategoria OTC 'fat-burner supplement'. Mechanizm opiera się na CoA-mediowanym mitochondrialnym transporcie długołańcuchowych kwasów tłuszczowych (LCFA) przez system shuttle carnitine palmitoyltransferase I/II (CPT-I/II) – jest to krok ograniczający tempo β-oksydacji. Stephens 2007 (Am J Physiol PMID 17331998), klasyczne badanie metodologii IV-clamp, wykazało, że supraphysjologiczne dawki doustne >1 g/dobę NIE podnoszą endogennego poziomu syntezy, ale przy ładowaniu przewlekłym (3-4 tygodnie, 2 g/dobę) z węglowodanami stężenie w tkance mięśniowej może wzrosnąć 2-3x dzięki insulin-stimulated muscle uptake. Doustna biodostępność jest niska (~15%), forma iniekcyjna IM/SC ma 100% biodostępność i jest 4-6x ekwiwalentna dawkowo wobec doustnej. WADA: 'dozwolona' na liście prohibited 2025, ale NADA Niemcy 2018 podniosły dawkowanie >50 mg/kg IV-bolus do kategorii monitorowanej (potencjalny kontekst marker doping krwi).",
   "keyInfo": [
     {
       "label": "Mechanizm działania",
@@ -73,7 +73,7 @@ export default {
       "label": "Oral kapszula",
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "OTC supplement-kategória globálisan (US, EU, HU, PL), FDA-jóváhagyott primary carnitine deficiency Rx (Sigma-Tau Carnitor 1985).",
-      "bioavailability": "~15% (alacsony — gastrointestinalis P-glycoprotein efflux + first-pass-loss)",
+      "bioavailability": "~15% (alacsony – gastrointestinalis P-glycoprotein efflux + first-pass-loss)",
       "onsetTime": {
         "hu": "1-2 óra (oral abszorpció); steady-state izom-loading 3-4 hét chronic",
         "en": "1-2 hours (oral absorption); steady-state muscle-loading 3-4 weeks chronic",
@@ -82,8 +82,8 @@ export default {
       "halfLife": "~15 óra",
       "halfLifeActive": "~15 óra",
       "detectionWindow": "WADA-akkreditált LC-MS/MS NEM standard test, chronic high-dose ~1-2 hét",
-      "aromatization": "Nem aromatizál (nem szteroid hatóanyag — kvaterner ammónium-vegyület).",
-      "hepatotoxicity": "Alacsony — endogén-szintetizált, krónikus oral <3 g/nap hepatikusan biztonságos.",
+      "aromatization": "Nem aromatizál (nem szteroid hatóanyag – kvaterner ammónium-vegyület).",
+      "hepatotoxicity": "Alacsony – endogén-szintetizált, krónikus oral <3 g/nap hepatikusan biztonságos.",
       "quality": {
         "pure": [
           "FDA-jóváhagyott Carnitor (Sigma-Tau) tabletta/oral solution + 50+ OTC supplement-brand (NOW Foods, Jarrow Formulas, Doctor's Best) USP-certified",
@@ -97,10 +97,10 @@ export default {
           "Warfarin INR-emelkedés krónikus dose-on (Martinez 2007 PMID 17449974)"
         ],
         "avoid": [
-          "Primary carnitine deficiency-specific Rx-on kívül szuper-supraphysiological oral dose >3 g/nap chronic — TMAO-elevation cardiovascular-risk",
+          "Primary carnitine deficiency-specific Rx-on kívül szuper-supraphysiological oral dose >3 g/nap chronic – TMAO-elevation cardiovascular-risk",
           "End-stage renal disease (ESRD) dialízis-betegnél D-isomer-kontamináció risk (D,L-Carnitine OTC kerülendő)",
           "Seizure-disorder Rx-on (krónikus oral L-Carnitine ritka seizure-induction-risk)",
-          "Veseelégtelenség Stage 4-5 — dose-adjust szükséges (renal clearance-csökkenés)"
+          "Veseelégtelenség Stage 4-5 – dose-adjust szükséges (renal clearance-csökkenés)"
         ]
       },
       "indications": "Cutting-cycle szubtilis fat-oxidation-shift + izom-glükogén-megőrzés; chronic-loading 3-4 hét carbohydrate-co-ingestion mellett (Wall 2011 PMID 21224234)",
@@ -118,9 +118,9 @@ export default {
         },
         "unit": "mg/nap",
         "note": {
-          "hu": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose — info-card megjelenítés, MiniCalc nem releváns.",
-          "en": "Oral 500-4000 mg/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Chronic-loading steady-state 3-4 weeks. The oral form is isFixedDose — info-card display, MiniCalc not relevant.",
-          "pl": "Doustnie 500-4000 mg/dzień podzielone 3x z posiłkami (ko-ingestia węglowodanów dla insulino-stymulowanego wychwytu mięśniowego). Chronic-loading stan stacjonarny 3-4 tygodnie. Forma doustna jest isFixedDose — wyświetlanie info-card, MiniCalc nie ma zastosowania."
+          "hu": "Oral 500-4000 mg/nap split 3x étkezésekkel (carbohydrate-co-ingestion insulin-stimulated muscle-uptake). Chronic-loading steady-state 3-4 hét. Az oral forma isFixedDose – info-card megjelenítés, MiniCalc nem releváns.",
+          "en": "Oral 500-4000 mg/day split 3x with meals (carbohydrate co-ingestion for insulin-stimulated muscle uptake). Chronic-loading steady-state 3-4 weeks. The oral form is isFixedDose – info-card display, MiniCalc not relevant.",
+          "pl": "Doustnie 500-4000 mg/dzień podzielone 3x z posiłkami (ko-ingestia węglowodanów dla insulino-stymulowanego wychwytu mięśniowego). Chronic-loading stan stacjonarny 3-4 tygodnie. Forma doustna jest isFixedDose – wyświetlanie info-card, MiniCalc nie ma zastosowania."
         }
       }
     },
@@ -133,9 +133,9 @@ export default {
         "pl": "L-Karnityna Tartrate (IM/SC ampułka wodna, 100% biodostępność)"
       },
       "routeNote": {
-        "hu": "Maximális bioavailability (100%) — az oral ~15%-ával szemben a teljes dózis bejut. Performance-fókuszú pre-workout protokoll: 500-1000 mg SC injection 30-60 perccel edzés előtt. Dose-equivalent ~4-6x az oralishoz képest, gyorsabb steady-state elérés 1-2 hét alatt.",
-        "en": "Maximum bioavailability (100%) — versus oral ~15%, the full dose enters circulation. Performance-focused pre-workout protocol: 500-1000 mg SC injection 30-60 minutes before training. Dose-equivalent ~4-6x oral, faster steady-state reached within 1-2 weeks.",
-        "pl": "Maksymalna biodostępność (100%) — w porównaniu do doustnej ~15%, cała dawka trafia do krążenia. Protokół przedtreningowy zorientowany na wydolność: 500-1000 mg iniekcja SC 30-60 minut przed treningiem. Dawka-równoważnik ~4-6x w stosunku do doustnej, szybsze osiągnięcie stanu stacjonarnego w ciągu 1-2 tygodni."
+        "hu": "Maximális bioavailability (100%) – az oral ~15%-ával szemben a teljes dózis bejut. Performance-fókuszú pre-workout protokoll: 500-1000 mg SC injection 30-60 perccel edzés előtt. Dose-equivalent ~4-6x az oralishoz képest, gyorsabb steady-state elérés 1-2 hét alatt.",
+        "en": "Maximum bioavailability (100%) – versus oral ~15%, the full dose enters circulation. Performance-focused pre-workout protocol: 500-1000 mg SC injection 30-60 minutes before training. Dose-equivalent ~4-6x oral, faster steady-state reached within 1-2 weeks.",
+        "pl": "Maksymalna biodostępność (100%) – w porównaniu do doustnej ~15%, cała dawka trafia do krążenia. Protokół przedtreningowy zorientowany na wydolność: 500-1000 mg iniekcja SC 30-60 minut przed treningiem. Dawka-równoważnik ~4-6x w stosunku do doustnej, szybsze osiągnięcie stanu stacjonarnego w ciągu 1-2 tygodni."
       },
       "label": "IM/SC injekció",
       "image": "/performance/water-vial.png",
@@ -152,18 +152,18 @@ export default {
       "halfLife": "~15 óra",
       "halfLifeActive": "~15 óra",
       "detectionWindow": "NADA Germany 2018 monitored-kategória >50 mg/kg IV-bolus dose-on; standard WADA-test NEM detektálja",
-      "aromatization": "Nem aromatizál (nem szteroid hatóanyag — kvaterner ammónium-vegyület).",
-      "hepatotoxicity": "Alacsony — endogén-szintetizált, IM/SC bypass first-pass hepatikus.",
+      "aromatization": "Nem aromatizál (nem szteroid hatóanyag – kvaterner ammónium-vegyület).",
+      "hepatotoxicity": "Alacsony – endogén-szintetizált, IM/SC bypass first-pass hepatikus.",
       "quality": {
         "pure": [
-          "FDA-jóváhagyott Carnitor IV/IM vial (Sigma-Tau) — pharmacy-szourzott Rx-grade",
+          "FDA-jóváhagyott Carnitor IV/IM vial (Sigma-Tau) – pharmacy-szourzott Rx-grade",
           "Compounding pharmacy IM/SC vial standardizált 1 g/5 mL (200 mg/mL) EU vagy 1 g/mL US"
         ],
         "caution": [
           "Injection-site pain (PIP): IM/SC quaternary-ammonium-vehicle gyakran fájdalmas, IM-deltoid/gluteal rotáció",
           "Allergic-reaction histamine-release risk (ritka): IM/SC first-dose 0.5 g test-dose javasolt",
           "Hypertonia transient post-injection (parasympathetic-vasodilation lokális)",
-          "UGL liquid carnitine HPLC-tesztelt forrás kötelező — dose-variance ±20% dokumentált"
+          "UGL liquid carnitine HPLC-tesztelt forrás kötelező – dose-variance ±20% dokumentált"
         ],
         "avoid": [
           "Athletes WADA-tested >50 mg/kg IV-bolus dose-on NADA Germany 2018 monitored-kategória",
@@ -171,7 +171,7 @@ export default {
           "Seizure-disorder Rx-on (IM/SC L-Carnitine ritka seizure-induction-risk)"
         ]
       },
-      "indications": "Performance-fókuszú cutting-cycle — bioavailability-előny + dose-equivalent 4-6x oral-felett (Sigma-Tau Carnitor IM clinical Rx-context). Pre-workout SC 500-1000 mg edzés előtt 30-60 perccel.",
+      "indications": "Performance-fókuszú cutting-cycle – bioavailability-előny + dose-equivalent 4-6x oral-felett (Sigma-Tau Carnitor IM clinical Rx-context). Pre-workout SC 500-1000 mg edzés előtt 30-60 perccel.",
       "dosing": {
         "hu": "200-1000 mg/injekció IM/SC 2-3x/hét cutting-cycle (8-12 hét cycle-length). Tipikus performance-dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampulla 1 g/5 mL.",
         "en": "200-1000 mg/injection IM/SC 2-3x/week cutting-cycle (8-12 week cycle length). Typical performance dose: 500 mg SC pre-workout. Sigma-Tau Carnitor standard ampoule 1 g/5 mL.",
@@ -186,15 +186,15 @@ export default {
         },
         "unit": "mg/injekció",
         "note": {
-          "hu": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral.",
-          "en": "IM/SC 200-1000 mg/injection 2-3x/week cutting-cycle (8-12 weeks). Typical 1 g ampoule (5 mL) — 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state faster than oral.",
-          "pl": "IM/SC 200-1000 mg/iniekcja 2-3x/tydzień cutting-cycle (8-12 tygodni). Typowa ampułka 1 g (5 mL) — 500 mg = 2.5 mL przed treningiem SC. Biodostępność 100%, stan stacjonarny szybszy niż doustnie."
+          "hu": "IM/SC 200-1000 mg/injekció 2-3x/hét cutting-cycle (8-12 hét). Tipikus 1 g ampulla (5 mL) – 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state gyorsabb mint oral.",
+          "en": "IM/SC 200-1000 mg/injection 2-3x/week cutting-cycle (8-12 weeks). Typical 1 g ampoule (5 mL) – 500 mg = 2.5 mL pre-workout SC. Bioavailability 100%, steady-state faster than oral.",
+          "pl": "IM/SC 200-1000 mg/iniekcja 2-3x/tydzień cutting-cycle (8-12 tygodni). Typowa ampułka 1 g (5 mL) – 500 mg = 2.5 mL przed treningiem SC. Biodostępność 100%, stan stacjonarny szybszy niż doustnie."
         }
       }
     }
   ],
   "mechanism": "L-Karnityna to czwartorzędowy związek amoniowy, który organizm ludzki syntetyzuje endogennie w ilości ~25 mg/dobę przez kaskadę enzymatyczną w wątrobie i nerkach z prekursorów lizyny + metioniny. Podstawową rolą jest mitochondrialny transport estrów CoA długołańcuchowych kwasów tłuszczowych (LCFA). Proces jest 3-etapowym shuttle: (1) carnitine palmitoyltransferase I (CPT-I) na powierzchni zewnętrznej błony mitochondrialnej konwertuje LCFA-CoA do LCFA-carnitine z uwolnieniem CoA + włączeniem karnityny; (2) carnitine-acylcarnitine translocase (CACT) transportuje LCFA-carnitine przez błonę wewnętrzną do macierzy; (3) carnitine palmitoyltransferase II (CPT-II) w macierzy konwertuje LCFA-carnitine z powrotem do LCFA-CoA + uwalnia wolną karnitynę. LCFA-CoA wchodzi następnie do kaskady β-oksydacji (acyl-CoA dehydrogenaza, enoyl-CoA hydrataza, hydroxyacyl-CoA dehydrogenaza, tiolaza) → acetyl-CoA → cykl TCA → ATP. CPT-I to krok ograniczający tempo β-oksydacji, regulowany cytoplazmatycznym malonyl-CoA jako inhibitorem allosterycznym (mediowany insuliną). Stephens 2007 (Am J Physiol PMID 17331998) IV-clamp methodology: dawki supraphysjologiczne doustne >1 g/dobę NIE podnoszą endogennego tempa syntezy w wątrobie + nerkach, ale ładowanie przewlekłe (3-4 tygodnie, 2 g/dobę) ze współspożyciem węglowodanów mediowanym insulin-stimulated muscle uptake może podnieść stężenie w tkance mięśniowej 2-3x. Bezpośrednie dowody utraty tłuszczu subtelne: Wall 2011 (J Physiol PMID 21224234) 6 miesięcy przewlekłe doustnie 2 g/dobę + współspożycie węglowodanów dało +11% energy output na cykloergometrze + efekt protein-sparing z treningiem oporowym. Pośredni kontekst insulin-sensitization: Bruckbauer 2011 (PMID 21900392) ko-suplementacja leucyna + L-Karnityna +25% glucose uptake w modelu szczura.",
-  "legalStatus": "USA: zatwierdzona przez FDA w 1985 (Carnitor, Sigma-Tau — obecnie Leadiant Biosciences) Rx na pierwotny niedobór karnityny. Kategoria OTC suplementu globalnie (US, UE, HU, PL); forma iniekcji IM/SC tylko Rx. UE: zatwierdzona przez EMA. HU: OTC (kapsułka, roztwór) + Rx (IM/SC). PL: OTC + Rx (IM/SC). Lista WADA prohibited 2025: 'dozwolona' (nie ma na liście S0-S9). Kategoria monitorowana NADA Niemcy 2018 powyżej 50 mg/kg IV-bolus (potencjalny kontekst doping krwi).",
+  "legalStatus": "USA: zatwierdzona przez FDA w 1985 (Carnitor, Sigma-Tau – obecnie Leadiant Biosciences) Rx na pierwotny niedobór karnityny. Kategoria OTC suplementu globalnie (US, UE, HU, PL); forma iniekcji IM/SC tylko Rx. UE: zatwierdzona przez EMA. HU: OTC (kapsułka, roztwór) + Rx (IM/SC). PL: OTC + Rx (IM/SC). Lista WADA prohibited 2025: 'dozwolona' (nie ma na liście S0-S9). Kategoria monitorowana NADA Niemcy 2018 powyżej 50 mg/kg IV-bolus (potencjalny kontekst doping krwi).",
   "onsetTime": "Doustnie 1-2 godziny (niska biodostępność ~15%); IM/SC 30-60 minut (100% biodostępność); steady-state ładowania mięśni przy przewlekłym 3-4 tygodnie",
   "halfLife": "~15 godzin",
   "interactionsWith": [
@@ -203,8 +203,8 @@ export default {
     "valproic-acid",
     "metformin"
   ],
-  "aromatization": "Nie aromatyzuje (nie jest sterydem — czwartorzędowy związek amoniowy, transporter mitochondrialny). Brak interakcji z CYP19, oś estrogenowa bezpośrednio nienaruszona.",
-  "hepatotoxicity": "Niska — syntetyzowana endogennie; przewlekle doustnie <3 g/dobę bezpieczna wątrobowo. Wzrost trimethylamine-N-oxide (TMAO) przy długoterminowej przewlekłej wysokiej dawce (>2 g/dobę przez 6+ miesięcy) to marker ryzyka sercowo-naczyniowego (Koeth 2013 Nature Med PMID 23563705, kontrowersyjna replikacja Yancey 2018 PMID 30201668).",
+  "aromatization": "Nie aromatyzuje (nie jest sterydem – czwartorzędowy związek amoniowy, transporter mitochondrialny). Brak interakcji z CYP19, oś estrogenowa bezpośrednio nienaruszona.",
+  "hepatotoxicity": "Niska – syntetyzowana endogennie; przewlekle doustnie <3 g/dobę bezpieczna wątrobowo. Wzrost trimethylamine-N-oxide (TMAO) przy długoterminowej przewlekłej wysokiej dawce (>2 g/dobę przez 6+ miesięcy) to marker ryzyka sercowo-naczyniowego (Koeth 2013 Nature Med PMID 23563705, kontrowersyjna replikacja Yancey 2018 PMID 30201668).",
   "wadaStatus": "allowed",
   "androgenicRatio": "N/A (nie AAS, czwartorzędowy związek amoniowy)",
   "bindingAffinity": "Brak wiązania z receptorem jądrowym; aktywność enzymatyczna CPT-I + CPT-II Km ~50 μM (wiązanie substratu, nie powinowactwo do receptora).",
@@ -242,7 +242,7 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Carnitor (Sigma-Tau/Leadiant Biosciences) tabletka/roztwór doustny/fiolka IM/SC zatwierdzone przez FDA — Rx-grade ze źródła aptecznego",
+      "Carnitor (Sigma-Tau/Leadiant Biosciences) tabletka/roztwór doustny/fiolka IM/SC zatwierdzone przez FDA – Rx-grade ze źródła aptecznego",
       "50+ marek suplementów OTC (NOW Foods, Jarrow Formulas, Doctor's Best) certyfikowane USP, weryfikowane HPLC przez stronę trzecią",
       "Forma Acetyl-L-Carnitine (ALCAR) jest suplementem kognitywnym przepuszczalnym dla bariery krew-mózg",
       "L-Carnitine L-Tartrate (LCLT) jest specyficzną dla ładowania mięśni (Kraemer 2008 PMID 18204383)",
@@ -253,24 +253,24 @@ export default {
       "Działania niepożądane GI: biegunka, nudności, rybi zapach ciała (emisja TMA z mikrobioty jelitowej powyżej 2 g/dobę)",
       "Przy Rx na niedoczynność tarczycy: L-Karnityna obniża obwodową konwersję T4 → T3 (Benvenga 2001 PMID 11518815)",
       "Wzrost INR przy warfarynie przy dawce przewlekłej (Martinez 2007 PMID 17449974)",
-      "Forma D,L-Carnitine OTC ma sygnał kardiotoksyczny — używać wyłącznie formy izomeru L",
+      "Forma D,L-Carnitine OTC ma sygnał kardiotoksyczny – używać wyłącznie formy izomeru L",
       "Przy Rx kwasem walproinowym: przewlekły kontekst Rx niedoboru L-Karnityny (unikać nakładania suplementacji cyklicznej)"
     ],
     "avoid": [
       "Pacjenci dializowani z krańcową niewydolnością nerek (ESRD): ryzyko kontaminacji izomerem D (unikać D,L-Carnitine OTC)",
       "Przy Rx na zaburzenia napadowe (przewlekła doustna L-Karnityna niesie rzadkie ryzyko indukcji napadów)",
-      "Niewydolność nerek stadium 4-5 — wymagane dostosowanie dawki (obniżony klirens nerkowy)",
+      "Niewydolność nerek stadium 4-5 – wymagane dostosowanie dawki (obniżony klirens nerkowy)",
       "Sportowcy testowani WADA powyżej 50 mg/kg IV-bolus: kategoria monitorowana NADA Niemcy 2018",
-      "Ciąża + karmienie piersią: FDA Kategoria B — dawka suplementu bezpieczna; dawkowanie IM/SC nie zalecane bez indykacji Rx"
+      "Ciąża + karmienie piersią: FDA Kategoria B – dawka suplementu bezpieczna; dawkowanie IM/SC nie zalecane bez indykacji Rx"
     ]
   },
   "interactions": [
-    "Warfaryna — przewlekła dawka L-Karnityny może powodować wzrost INR (Martinez 2007 PMID 17449974)",
-    "Levothyroxine (T4) — L-Karnityna obniża obwodową konwersję T4 → T3 (Benvenga 2001 PMID 11518815); monitorowanie dawki wymagane przy Rx niedoczynności tarczycy",
-    "Kwas walproinowy — przewlekłe Rx może indukować niedobór L-Karnityny; suplementacja częsta w kontekście Rx",
-    "Metformina — L-Karnityna + metformina synergistyczne dla glucose-uptake (Bruckbauer 2011 PMID 21900392 kontekst analogiczny)",
-    "Acetyl-L-Carnitine (ALCAR) + kwas alfa-liponowy (ALA) — antyoksydacyjnie-synergistyczny stack mitochondrialnie-protective",
-    "Kofeina + efedryna — addycyjne wsparcie termogeniczne + glucose-uptake; unikać przy wysokim BP/HR"
+    "Warfaryna – przewlekła dawka L-Karnityny może powodować wzrost INR (Martinez 2007 PMID 17449974)",
+    "Levothyroxine (T4) – L-Karnityna obniża obwodową konwersję T4 → T3 (Benvenga 2001 PMID 11518815); monitorowanie dawki wymagane przy Rx niedoczynności tarczycy",
+    "Kwas walproinowy – przewlekłe Rx może indukować niedobór L-Karnityny; suplementacja częsta w kontekście Rx",
+    "Metformina – L-Karnityna + metformina synergistyczne dla glucose-uptake (Bruckbauer 2011 PMID 21900392 kontekst analogiczny)",
+    "Acetyl-L-Carnitine (ALCAR) + kwas alfa-liponowy (ALA) – antyoksydacyjnie-synergistyczny stack mitochondrialnie-protective",
+    "Kofeina + efedryna – addycyjne wsparcie termogeniczne + glucose-uptake; unikać przy wysokim BP/HR"
   ],
   "studies": [
     {
@@ -306,24 +306,24 @@ export default {
   ],
   "faq": [
     {
-      "q": "Doustna vs IM/SC L-Karnityna — jaka jest ekwiwalencja dawki?",
+      "q": "Doustna vs IM/SC L-Karnityna – jaka jest ekwiwalencja dawki?",
       "a": "Biodostępność doustnej L-Karnityny wynosi ~15% (wyciek P-glikoproteinowy w przewodzie pokarmowym + straty pierwszego przejścia), natomiast formulacja IM/SC ma 100% biodostępności. Kliniczna ekwiwalencja dawki to ~4-6x stosunek doustna-IM/SC: 1 g IM/SC ≈ 4-6 g doustnie. Kontekst cuttingu: ładowanie przewlekłe 3-4 tygodnie doustnie 2 g/dobę podnosi stężenie tkankowe 2-3x ze współspożyciem węglowodanów mediowanym insulin-stimulated muscle uptake (Stephens 2007 PMID 17331998), natomiast IM/SC 1-2 g 2-3x/tydzień osiąga steady-state szybciej. Sigma-Tau Carnitor IM/SC w klinicznym kontekście Rx (pierwotny niedobór karnityny)."
     },
     {
-      "q": "Bezpośrednie dowody utraty tłuszczu — co mówi meta-analiza?",
-      "a": "Meta-analiza Talenezhad 2020 (Clin Nutr ESPEN PMID 32359762) na 37 RCT (n=2292) znalazła średnią utratę masy ~1.21 kg (CI 0.69-1.73) przy suplementacji L-Karnityną przez 8-24 tygodnie, głównie w populacji nadwagi + otyłości. Wielkość efektu jest subtelna, NIE jest standalone fat-burnerem — Wall 2011 (PMID 21224234) w kontekście współspożycia węglowodanów z treningiem oporowym pokazuje odczuwalny efekt protein-sparing + ochronę glikogenu mięśniowego. Kontekst cuttingu: w kombinacji ze stackiem AAS + deficytem kalorycznym + L-Karnityną przesunięcie utleniania tłuszczu jest subtelne, NIE mainstreamowy standalone fat-burner."
+      "q": "Bezpośrednie dowody utraty tłuszczu – co mówi meta-analiza?",
+      "a": "Meta-analiza Talenezhad 2020 (Clin Nutr ESPEN PMID 32359762) na 37 RCT (n=2292) znalazła średnią utratę masy ~1.21 kg (CI 0.69-1.73) przy suplementacji L-Karnityną przez 8-24 tygodnie, głównie w populacji nadwagi + otyłości. Wielkość efektu jest subtelna, NIE jest standalone fat-burnerem – Wall 2011 (PMID 21224234) w kontekście współspożycia węglowodanów z treningiem oporowym pokazuje odczuwalny efekt protein-sparing + ochronę glikogenu mięśniowego. Kontekst cuttingu: w kombinacji ze stackiem AAS + deficytem kalorycznym + L-Karnityną przesunięcie utleniania tłuszczu jest subtelne, NIE mainstreamowy standalone fat-burner."
     },
     {
       "q": "Czy ryzyko sercowo-naczyniowe TMAO jest realne?",
-      "a": "Koeth 2013 Nature Med (PMID 23563705), oryginalne badanie: chroniczna wysoka dawka L-Karnityny ze współspożyciem czerwonego mięsa mediowane emisją TMA przez mikrobiotę jelitową → wątrobowa konwersja TMAO mediowana FMO3 → wzrost markera miażdżycy (model szczura + kohorta 2595 zdarzeń sercowo-naczyniowych u ludzi). Yancey 2018 (PMID 30201668), kontrowersyjna replikacja: wzrost TMAO jest markerem ryzyka sercowo-naczyniowego, ale NIE driverem przyczynowym — analiza randomizacji Mendlowskiej wskazuje, że wzrost TMAO nie jest bezpośrednim czynnikiem ryzyka sercowo-naczyniowego. Relewancja kliniczna: przy przewlekłym doustnym L-Karnitynie >2 g/dobę przez 6+ miesięcy zalecane monitorowanie baseline TMAO, ale relacja przyczynowa jest kontrowersyjna. W oknie 4-6 tygodniowego cyklu cuttingu ryzyko minimalne."
+      "a": "Koeth 2013 Nature Med (PMID 23563705), oryginalne badanie: chroniczna wysoka dawka L-Karnityny ze współspożyciem czerwonego mięsa mediowane emisją TMA przez mikrobiotę jelitową → wątrobowa konwersja TMAO mediowana FMO3 → wzrost markera miażdżycy (model szczura + kohorta 2595 zdarzeń sercowo-naczyniowych u ludzi). Yancey 2018 (PMID 30201668), kontrowersyjna replikacja: wzrost TMAO jest markerem ryzyka sercowo-naczyniowego, ale NIE driverem przyczynowym – analiza randomizacji Mendlowskiej wskazuje, że wzrost TMAO nie jest bezpośrednim czynnikiem ryzyka sercowo-naczyniowego. Relewancja kliniczna: przy przewlekłym doustnym L-Karnitynie >2 g/dobę przez 6+ miesięcy zalecane monitorowanie baseline TMAO, ale relacja przyczynowa jest kontrowersyjna. W oknie 4-6 tygodniowego cyklu cuttingu ryzyko minimalne."
     },
     {
-      "q": "Status WADA — czy sportowiec może bezpiecznie używać?",
-      "a": "Na liście WADA prohibited 2025 L-Karnityna jest w kategorii 'dozwolona' (nie jest na liście S0-S9). NADA Niemcy 2018 podniosło jednak dawkowanie >50 mg/kg IV-bolus do kategorii monitorowanej — to ~4 g IV bolus dla sportowca 80 kg, znacznie powyżej zakresu klinicznej dawki Rx. Standardowe dawki suplementu (doustnie 500-2000 mg/dobę) + IM/SC w cuttingu 1-2 g 2-3x/tydzień w standardowym kontekście sportowym są bezpieczne pod względem WADA. Kontekst wysokiej dawki IV bolus (marker doping krwi: sygnał wsparcia erytropoezy) najlepiej unikać poza wskazaniami klinicznymi ze względu na monitorowanie NADA."
+      "q": "Status WADA – czy sportowiec może bezpiecznie używać?",
+      "a": "Na liście WADA prohibited 2025 L-Karnityna jest w kategorii 'dozwolona' (nie jest na liście S0-S9). NADA Niemcy 2018 podniosło jednak dawkowanie >50 mg/kg IV-bolus do kategorii monitorowanej – to ~4 g IV bolus dla sportowca 80 kg, znacznie powyżej zakresu klinicznej dawki Rx. Standardowe dawki suplementu (doustnie 500-2000 mg/dobę) + IM/SC w cuttingu 1-2 g 2-3x/tydzień w standardowym kontekście sportowym są bezpieczne pod względem WADA. Kontekst wysokiej dawki IV bolus (marker doping krwi: sygnał wsparcia erytropoezy) najlepiej unikać poza wskazaniami klinicznymi ze względu na monitorowanie NADA."
     },
     {
       "q": "Skala insulin-sensitization + okno dawkowania?",
-      "a": "Bruckbauer 2011 (PMID 21900392) pokazał +25% glucose uptake przy ko-suplementacji leucyna + L-Karnityna w modelu szczura. Dowody kliniczne na ludziach są skromniejsze: Mingrone 1999 PMID 10580247 + Galvano 2007 PMID 17449974 udokumentowały +10-15% wzrost indeksu wrażliwości na insulinę w populacji nadwagi + insulinoopornej przy przewlekłym doustnym 2-4 g/dobę przez 8-12 tygodni. Mechanizm jest pośredni: upregulacja utleniania kwasów tłuszczowych mediowana CPT-I obniża sygnał lipotoksyczności w mięśniach szkieletowych + wątrobie, co poprawia uwalnianie sygnalizacji receptora insuliny. W kontekście cuttingu deficyt kaloryczny + insulin-sensitization mediowana stackiem AAS NIE jest addycyjna z L-Karnityną — efekt wykrywalny głównie na baseline insulinoopornym."
+      "a": "Bruckbauer 2011 (PMID 21900392) pokazał +25% glucose uptake przy ko-suplementacji leucyna + L-Karnityna w modelu szczura. Dowody kliniczne na ludziach są skromniejsze: Mingrone 1999 PMID 10580247 + Galvano 2007 PMID 17449974 udokumentowały +10-15% wzrost indeksu wrażliwości na insulinę w populacji nadwagi + insulinoopornej przy przewlekłym doustnym 2-4 g/dobę przez 8-12 tygodni. Mechanizm jest pośredni: upregulacja utleniania kwasów tłuszczowych mediowana CPT-I obniża sygnał lipotoksyczności w mięśniach szkieletowych + wątrobie, co poprawia uwalnianie sygnalizacji receptora insuliny. W kontekście cuttingu deficyt kaloryczny + insulin-sensitization mediowana stackiem AAS NIE jest addycyjna z L-Karnityną – efekt wykrywalny głównie na baseline insulinoopornym."
     }
   ],
   "related": [
@@ -362,5 +362,5 @@ export default {
     }
   },
   "defaultVariant": "oral",
-  "anecdote": "Relacje społeczności opisują iniekcyjną L-karnitynę jako długoterminowy, codzienny element protokołu, a nie szybkie rozwiązanie: użytkownicy zgłaszają lepszy poziom energii w ciągu dnia już przy samodzielnym stosowaniu, a zazwyczaj podają ją przed treningiem razem z węglowodanami, by zmaksymalizować wychwyt do mięśni. Konsekwentnie podkreśla się, że to \"nie magiczny spalacz tłuszczu\" — widoczny efekt pojawia się w połączeniu z odpowiednią rutyną i deficytem kalorycznym, a podczas redukcji w relacjach często łączy się ją z Cardarine.\n\nDwie uwagi praktyczne powtarzają się w doniesieniach: to związek na bazie wodnej, którego nie wolno mieszać z preparatami olejowymi, a stałe, codzienne dawkowanie uznaje się za klucz do utrzymania stabilnego wysycenia tkanek."
+  "anecdote": "Relacje społeczności opisują iniekcyjną L-karnitynę jako długoterminowy, codzienny element protokołu, a nie szybkie rozwiązanie: użytkownicy zgłaszają lepszy poziom energii w ciągu dnia już przy samodzielnym stosowaniu, a zazwyczaj podają ją przed treningiem razem z węglowodanami, by zmaksymalizować wychwyt do mięśni. Konsekwentnie podkreśla się, że to \"nie magiczny spalacz tłuszczu\" – widoczny efekt pojawia się w połączeniu z odpowiednią rutyną i deficytem kalorycznym, a podczas redukcji w relacjach często łączy się ją z Cardarine.\n\nDwie uwagi praktyczne powtarzają się w doniesieniach: to związek na bazie wodnej, którego nie wolno mieszać z preparatami olejowymi, a stałe, codzienne dawkowanie uznaje się za klucz do utrzymania stabilnego wysycenia tkanek."
 }

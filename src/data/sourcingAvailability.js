@@ -1,17 +1,17 @@
-// Per-entry sourcing availability — which partner shop carries each compound,
+// Per-entry sourcing availability – which partner shop carries each compound,
 // and the exact product URL (with referral / coupon baked in by the builders).
 //
 // Every slug below was verified against the live catalogue: each product URL
 // returned HTTP 200 and its page <title> named the exact compound (no
 // false-positive links). Entries NOT listed here have no confirmed source on
-// any partner shop, so the UI shows no sourcing button for them — by design.
+// any partner shop, so the UI shows no sourcing button for them – by design.
 //
 // Rollout: peptides first. Other libraries are added once their catalogues are
 // matched + verified the same way.
 
 // PCTZONE WooCommerce product IDs (scraped from each product page). Used to build
 // an add-to-cart + coupon URL that lands on the CART with the item already added
-// and the MOLEKULAX coupon applied — so the discount is visible immediately
+// and the MOLEKULAX coupon applied – so the discount is visible immediately
 // (a plain product URL only stages the coupon in the session).
 const PCTZONE_PRODUCT_IDS = {
   'artvigil-150mg': 2814,
@@ -72,7 +72,7 @@ export const SOURCING_PARTNERS = {
   driada: {
     name: 'DRIADA',
     logo: '/sourcing/driada.png',
-    // OpenCart flat product handle. No referral param — the visitor MUST enter
+    // OpenCart flat product handle. No referral param – the visitor MUST enter
     // the MOLEKULAX coupon at checkout for the discount, so we surface it.
     productUrl: (slug) => `https://driadashop.to/${slug}`,
     coupon: 'MOLEKULAX',
@@ -319,7 +319,7 @@ export function getSourcing(libraryId, entryId, variantId) {
   let avail
   if (entry.variants) {
     // Multi-form entry: sourcing is STRICTLY per-form. A form that no shop carries
-    // (not in the variants map) gets NO button — never a base fallback. The base
+    // (not in the variants map) gets NO button – never a base fallback. The base
     // is only used when no form is active (e.g. a non-variant context).
     if (variantId) {
       avail = entry.variants[variantId]

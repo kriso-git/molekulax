@@ -52,7 +52,7 @@ export default {
   ],
   "mechanism": "Moderate norepinephrine and dopamine reuptake inhibition (NDRI, ~3x DAT/NET selectivity vs SERT), plus neuronal nicotinic receptor (α3β2, α4β2) antagonism. The nicotinic block explains smoking-cessation effect: reduces the dysphoric component of nicotine withdrawal. Active metabolite (hydroxybupropion) similarly active, with CYP2B6-catalyzed formation showing major interindividual variability.",
   "legalStatus": "EU/HU: prescription only (Wellbutrin, Zyban smoking-cessation, generics). USA: FDA Rx, not scheduled. SR (sustained release) and XL (extended release) formulations standard. Generic forms widely available.",
-  "bioavailability": "Not characterized as absolute (no IV formulation exists); rapid oral absorption, Tmax ~3 h — FDA Wellbutrin label",
+  "bioavailability": "Not characterized as absolute (no IV formulation exists); rapid oral absorption, Tmax ~3 h – FDA Wellbutrin label",
   "onsetTime": "1-2 weeks (motivation, focus, energy), 4-6 weeks (full antidepressant response)",
   "halfLife": "~21 h (parent); hydroxybupropion metabolite 20-37 h, similar activity",
   "atcCode": "N06AX12",
@@ -66,16 +66,16 @@ export default {
   ],
   "contraindications": [
     "Seizure disorder (epilepsy) history or known predisposition",
-    "Eating disorders (bulimia, anorexia nervosa) — elevated seizure risk",
+    "Eating disorders (bulimia, anorexia nervosa) – elevated seizure risk",
     "Acute alcohol or benzodiazepine withdrawal (seizure risk)",
     "Concurrent or within-14-days MAOi use (hypertensive crisis)"
   ],
   "commonSideEffects": [
     "Insomnia (15-20%), dry mouth (10-15%), headache (10%)",
-    "Agitation, anxiety increase (5-10%) — mainly in first weeks",
+    "Agitation, anxiety increase (5-10%) – mainly in first weeks",
     "Blood pressure elevation (moderate, dose-dependent)",
     "Tremor, sweating, weight loss (5-8%)",
-    "Severe, rare: seizure (0.1% at standard dose, 0.4% at 450 mg — DOSE-DEPENDENT), psychotic symptoms, mania (in BD patients)"
+    "Severe, rare: seizure (0.1% at standard dose, 0.4% at 450 mg – DOSE-DEPENDENT), psychotic symptoms, mania (in BD patients)"
   ],
   "cyp450": [
     "CYP2B6 substrate (primary metabolism)",
@@ -99,8 +99,8 @@ export default {
   "quickStart": [
     "Start with SR formulation: 150 mg/day (morning) for 4 days, then 150 mg 2x/day",
     "XL formulation: 150 mg/day morning for 7 days, then 300 mg/day morning",
-    "DO NOT take in evening (insomnia risk) — last dose by 5 PM",
-    "Max SR 400 mg/day, XL 450 mg/day — above this seizure risk grows EXPONENTIALLY",
+    "DO NOT take in evening (insomnia risk) – last dose by 5 PM",
+    "Max SR 400 mg/day, XL 450 mg/day – above this seizure risk grows EXPONENTIALLY",
     "DO NOT crush tablet (SR/XL formulation dose-dumping risk)"
   ],
   "expectations": [
@@ -134,12 +134,12 @@ export default {
       "MAOi (concurrent or within 14 days)",
       "Linezolid or IV methylene blue (MAOI activity, serotonin syndrome risk)",
       "Abrupt antiepileptic or sedative-hypnotic withdrawal (lowered seizure threshold)",
-      "Severe hepatic impairment (Child-Pugh ≥10) — contraindicated per FDA label"
+      "Severe hepatic impairment (Child-Pugh ≥10) – contraindicated per FDA label"
     ]
   },
   "interactions": [
     "SSRI (sertraline, fluoxetine) augmentation: mitigates sexual dysfunction",
-    "Naltrexone + bupropion (Contrave) — FDA weight management indication for obesity",
+    "Naltrexone + bupropion (Contrave) – FDA weight management indication for obesity",
     "Nicotine patch: 30.3% 1-year abstinence (vs 16.4% placebo)",
     "Varenicline (Chantix): combination NOT recommended (additive CV risk)",
     "Stimulant ADHD drug (methylphenidate, lisdexamfetamine): cautious combination (seizure and CV risk)"
@@ -203,7 +203,7 @@ export default {
     },
     {
       "q": "Can it be combined with an SSRI?",
-      "a": "Yes, common clinical strategy: SSRI (e.g. sertraline) + bupropion to mitigate SSRI-induced sexual dysfunction and/or augment incomplete AD response. NDRI mechanism complements SERT (dopamine+norepinephrine rise alongside serotonin). EXCEPTION: fluoxetine + bupropion combination needs added caution (fluoxetine is strong CYP2D6 inhibitor, bupropion is strong CYP2D6 inhibitor — cumulative CYP block)."
+      "a": "Yes, common clinical strategy: SSRI (e.g. sertraline) + bupropion to mitigate SSRI-induced sexual dysfunction and/or augment incomplete AD response. NDRI mechanism complements SERT (dopamine+norepinephrine rise alongside serotonin). EXCEPTION: fluoxetine + bupropion combination needs added caution (fluoxetine is strong CYP2D6 inhibitor, bupropion is strong CYP2D6 inhibitor – cumulative CYP block)."
     },
     {
       "q": "Risk of weight gain?",
@@ -230,7 +230,7 @@ export default {
       }
     ],
     "unit": "mg/nap",
-    "note": "SR 150 mg/day morning for 4 days, then 150 mg 2x/day (8+ h apart). XL 150 mg/day morning for 7 days, then 300 mg/day. Max SR 400 / XL 450 mg/day — above seizure risk grows EXPONENTIALLY. DO NOT take in evening. DO NOT crush tablet."
+    "note": "SR 150 mg/day morning for 4 days, then 150 mg 2x/day (8+ h apart). XL 150 mg/day morning for 7 days, then 300 mg/day. Max SR 400 / XL 450 mg/day – above seizure risk grows EXPONENTIALLY. DO NOT take in evening. DO NOT crush tablet."
   },
-  "anecdote": "Anecdotal reports describe Bupropion as a versatile NDRI antidepressant with notable motivation- and drive-boosting effects via dopamine and norepinephrine enhancement. Community accounts note strong efficacy for low-motivation depression presentations, including ADHD-overlap cases. Its low DAT affinity suggests it acts more as a dopaminergic modulator via VMAT-2 than a direct reuptake blocker. Nicotinic receptor antagonism underlies its FDA-approved smoking-cessation indication (Zyban); ongoing research examines utility in cocaine, methamphetamine, and impulsive-behavior disorders. Bupropion can be paradoxically activating or overstimulating, with a narrow therapeutic window. Mechanistic notes: nitric oxide donors and PDE-5 inhibitors (Sildenafil, Tadalafil) may blunt antidepressant efficacy; methylene blue appears to potentiate it. Caution: seizure threshold lowering — contraindicated in eating disorders and seizure history."
+  "anecdote": "Anecdotal reports describe Bupropion as a versatile NDRI antidepressant with notable motivation- and drive-boosting effects via dopamine and norepinephrine enhancement. Community accounts note strong efficacy for low-motivation depression presentations, including ADHD-overlap cases. Its low DAT affinity suggests it acts more as a dopaminergic modulator via VMAT-2 than a direct reuptake blocker. Nicotinic receptor antagonism underlies its FDA-approved smoking-cessation indication (Zyban); ongoing research examines utility in cocaine, methamphetamine, and impulsive-behavior disorders. Bupropion can be paradoxically activating or overstimulating, with a narrow therapeutic window. Mechanistic notes: nitric oxide donors and PDE-5 inhibitors (Sildenafil, Tadalafil) may blunt antidepressant efficacy; methylene blue appears to potentiate it. Caution: seizure threshold lowering – contraindicated in eating disorders and seizure history."
 }

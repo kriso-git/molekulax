@@ -7,7 +7,7 @@ function emit() { listeners.forEach((l) => l()) }
 
 export function navigate(to, { replace = false } = {}) {
   if (typeof window === 'undefined') return
-  if (to === window.location.pathname) return // already here — don't push a duplicate history entry
+  if (to === window.location.pathname) return // already here – don't push a duplicate history entry
   if (replace) window.history.replaceState(null, '', to)
   else window.history.pushState(null, '', to)
   emit()

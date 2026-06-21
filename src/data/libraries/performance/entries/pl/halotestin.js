@@ -27,8 +27,8 @@ export default {
   "image": "/performance/tablet-pile-white.png",
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
-  "shortDesc": "Fluoxymesterone, doustny AAS pochodny 9α-fluoro-11β-hydroksy-17α-metylo-testosteronu. Pierwotnie zatwierdzony przez FDA (Halotestin, Upjohn 1957). Najwyższa aktywność androgenna wśród AAS — boks/powerlifting pre-competition \"strength-amplifier\" z MINIMALNYM budowaniem masy mięśniowej.",
-  "description": "Halotestin (Fluoxymesterone) to doustny AAS pochodny 9α-fluoro-11β-hydroksy-17α-metylo-testosteronu, zsyntetyzowany przez Upjohn w 1956 r., zatwierdzony przez FDA w 1957 r. na opóźnione dojrzewanie, męski hipogonadyzm i (dawniej) raka piersi. Wycofany z rynku USA w 1992 r., Pfizer generic nadal dostępny na niektórych rynkach UE. Stosunek anaboliczno-androgenny ~1900:850 (ekstremalny — najwyższa aktywność androgenna wśród AAS). 9α-fluoro + 11β-OH steryczne blokowanie zapobiega aromatyzacji + aktywność agonisty receptora glikokortykoidowego (GR) (stąd efekt \"wysuszający\" i spiczasta agresja). Grupa 17α-metylowa → WYSOKA hepatotoksyczność. NIE jest standardowym użyciem kulturystycznym (NIE bulker, NIE dobry na cięcie); specyficznie boks, powerlifting, strongman pre-competition \"strength + aggression amplifier\" z 5-10% wzrostem 1RM w 1-3 tygodni i minimalnym faktycznym przyrostem masy mięśniowej. Roy Jones Jr. (2003 skandal dopingowy Boxing News) i wielu innych bokserów testowało pozytywnie na Halotestin. Zakaz WADA cały rok.",
+  "shortDesc": "Fluoxymesterone, doustny AAS pochodny 9α-fluoro-11β-hydroksy-17α-metylo-testosteronu. Pierwotnie zatwierdzony przez FDA (Halotestin, Upjohn 1957). Najwyższa aktywność androgenna wśród AAS – boks/powerlifting pre-competition \"strength-amplifier\" z MINIMALNYM budowaniem masy mięśniowej.",
+  "description": "Halotestin (Fluoxymesterone) to doustny AAS pochodny 9α-fluoro-11β-hydroksy-17α-metylo-testosteronu, zsyntetyzowany przez Upjohn w 1956 r., zatwierdzony przez FDA w 1957 r. na opóźnione dojrzewanie, męski hipogonadyzm i (dawniej) raka piersi. Wycofany z rynku USA w 1992 r., Pfizer generic nadal dostępny na niektórych rynkach UE. Stosunek anaboliczno-androgenny ~1900:850 (ekstremalny – najwyższa aktywność androgenna wśród AAS). 9α-fluoro + 11β-OH steryczne blokowanie zapobiega aromatyzacji + aktywność agonisty receptora glikokortykoidowego (GR) (stąd efekt \"wysuszający\" i spiczasta agresja). Grupa 17α-metylowa → WYSOKA hepatotoksyczność. NIE jest standardowym użyciem kulturystycznym (NIE bulker, NIE dobry na cięcie); specyficznie boks, powerlifting, strongman pre-competition \"strength + aggression amplifier\" z 5-10% wzrostem 1RM w 1-3 tygodni i minimalnym faktycznym przyrostem masy mięśniowej. Roy Jones Jr. (2003 skandal dopingowy Boxing News) i wielu innych bokserów testowało pozytywnie na Halotestin. Zakaz WADA cały rok.",
   "keyInfo": [
     {"label": "Mechanizm", "value": "Agonista AR + GR, 9α-fluoro, NIE aromatyzuje"},
     {"label": "Anaboliczny:Androgenny", "value": "1900:850"},
@@ -42,8 +42,8 @@ export default {
   "halfLife": "9 h (doustnie, związek macierzysty)",
   "halfLifeActive": "9 h",
   "interactionsWith": ["tudca", "warfarin", "tamoxifen", "alcohol"],
-  "aromatization": "Nie — 9α-fluoro-11β-OH steryczne blokowanie przeciwko CYP19; klinicznie wzrost E2 zasadniczo zero (Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Bardzo wysoka — grupa 17α-metylowa + 9α-fluoro dodatkowo zwiększa stres wątrobowy; wzrost ALT/AST 3-7x częsty przy cyklu 4+ tygodni, żółtaczka cholestatyczna case-reported (Hartgens-Kuipers 2004 PMID 15233599)",
+  "aromatization": "Nie – 9α-fluoro-11β-OH steryczne blokowanie przeciwko CYP19; klinicznie wzrost E2 zasadniczo zero (Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Bardzo wysoka – grupa 17α-metylowa + 9α-fluoro dodatkowo zwiększa stres wątrobowy; wzrost ALT/AST 3-7x częsty przy cyklu 4+ tygodni, żółtaczka cholestatyczna case-reported (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
   "androgenicRatio": "1900:850",
   "bindingAffinity": "Skrajnie wysokie powinowactwo do AR (~330% vs testosteron in vitro) plus powinowactwo GR (~10-15% vs kortyzol).",
@@ -56,25 +56,25 @@ export default {
     "Minimalny przyrost masy mięśniowej → zawody wagi (boks, powerlifting kategoria wagowa) nie wpływane"
   ],
   "quickStart": [
-    "NIE samodzielny bulker, NIE cięcie — Halotestin specyficznie pre-competition strength-amplifier 1-3 tygodnie",
-    "EKSTREMALNA HEPATOTOKSYCZNOŚĆ — maksimum 4 tygodnie ciągłego cyklu, NIGDY dłużej",
+    "NIE samodzielny bulker, NIE cięcie – Halotestin specyficznie pre-competition strength-amplifier 1-3 tygodnie",
+    "EKSTREMALNA HEPATOTOKSYCZNOŚĆ – maksimum 4 tygodnie ciągłego cyklu, NIGDY dłużej",
     "TUDCA 1000 mg/dzień + NAC 1800 mg/dzień OBOWIĄZKOWE przez cały cykl",
-    "Psychologiczny efekt uboczny: \"Halo-rage\" — predyspozycja psychiatryczna bezwzględne przeciwwskazanie",
-    "Bloodwork pre-cykl + tydzień 2 + post — priorytet ALT/AST"
+    "Psychologiczny efekt uboczny: \"Halo-rage\" – predyspozycja psychiatryczna bezwzględne przeciwwskazanie",
+    "Bloodwork pre-cykl + tydzień 2 + post – priorytet ALT/AST"
   ],
   "expectations": [
     {"label": "Pierwszy tydzień", "body": "Efekt ostry: po 3-5 dniach spiczasta agresja, drastyczny wzrost koncentracji treningowej, 1RM wzrost 2-5%."},
-    {"label": "Tydzień 2-3", "body": "Maksymalny wzrost siły (5-10% 1RM), efekt \"wysuszający\" wyczuwalny (kontur mięśni pod-wodny zmaksymalizowany). ALT/AST 3-7x norma górna — OBOWIĄZKOWE przerwanie cyklu na koniec tygodnia 3-4."},
+    {"label": "Tydzień 2-3", "body": "Maksymalny wzrost siły (5-10% 1RM), efekt \"wysuszający\" wyczuwalny (kontur mięśni pod-wodny zmaksymalizowany). ALT/AST 3-7x norma górna – OBOWIĄZKOWE przerwanie cyklu na koniec tygodnia 3-4."},
     {"label": "Post-cykl", "body": "Spadek siły szybki (powrót do baseline w 1-2 tygodni), zachowanie masy mięśniowej minimalne (nie było co zachować). Recovery wątrobowy 4-8 tygodni."}
   ],
   "quality": {
     "pure": [
       "Pfizer Fluoxymesterone generic tabletka 5 mg lub 10 mg (UE-Rx, rzadko możliwy)",
-      "Tabletka UGL: źródło testowane HPLC obowiązkowe — Halotestin często fałszowany (zastępowanie Anavarem/Methyltestosteronem)"
+      "Tabletka UGL: źródło testowane HPLC obowiązkowe – Halotestin często fałszowany (zastępowanie Anavarem/Methyltestosteronem)"
     ],
     "caution": [
       "Ekstremalna hepatotoksyczność (wzrost ALT/AST 3-7x najczęstszy ostry efekt)",
-      "Psychologiczne: \"Halo-rage\", agresja, irytacja — ryzyko konfliktów rodzinnych/zawodowych",
+      "Psychologiczne: \"Halo-rage\", agresja, irytacja – ryzyko konfliktów rodzinnych/zawodowych",
       "Zaburzenia lipidowe dramatyczne: HDL do 50% spadek w 4 tygodnie",
       "Wzrost ciśnienia krwi (często >140/90)"
     ],
@@ -84,7 +84,7 @@ export default {
       "Predyspozycja psychiatryczna (depresja, choroba dwubiegunowa, zaburzenia lękowe, zaburzenia agresji) bezwzględne przeciwwskazanie",
       "Ryzyko sercowo-naczyniowe (rodzinna historia, wysokie LDL, nadciśnienie)",
       "Stosowanie przez kobiety (ekstremalna aktywność androgenna → szybka nieodwracalna wirylizacja)",
-      "Cel bulking/kulturystyczny — Halotestin NIE do tego",
+      "Cel bulking/kulturystyczny – Halotestin NIE do tego",
       "Więcej niż 4 tygodnie ciągłego cyklu (kumulatywna hepatotoksyczność)"
     ]
   },
@@ -104,9 +104,9 @@ export default {
   ],
   "faq": [
     {"q": "Dlaczego nie buduje mięśni, skoro to tak silny androgen?", "a": "Unikalna aktywność agonisty GR (receptora glikokortykoidowego) Halotestinu jest paradoksalna: wysoka aktywność androgenna (AR) jest teoretycznie anaboliczna, ALE aktywność GR jednocześnie indukuje kortyzolopodobną degradację białek. Efekt netto: drastyczny wzrost siły (stymulacja CUN + sprawność nerwowo-mięśniowa) z MINIMALNYM faktycznym przyrostem masy mięśniowej. Pre-competition strength-amplifier, NIE bulker."},
-    {"q": "Jak realny jest \"Halo-rage\"?", "a": "Klinicznie udokumentowany. Kanayama 2009 PMID 19922565 kohort + raporty literatury boksu/UFC wskazują, że Halotestin to najbardziej psychotropowy AAS — agresja, irytacja, wahania nastroju bardziej ekstremalne niż Anadrol czy Trenbolon. Kilku bokserów (Roy Jones Jr. 2003, James Toney 2005) testy pozytywne + udokumentowane zmiany zachowania. Predyspozycja psychiatryczna BEZWZGLĘDNE przeciwwskazanie."},
+    {"q": "Jak realny jest \"Halo-rage\"?", "a": "Klinicznie udokumentowany. Kanayama 2009 PMID 19922565 kohort + raporty literatury boksu/UFC wskazują, że Halotestin to najbardziej psychotropowy AAS – agresja, irytacja, wahania nastroju bardziej ekstremalne niż Anadrol czy Trenbolon. Kilku bokserów (Roy Jones Jr. 2003, James Toney 2005) testy pozytywne + udokumentowane zmiany zachowania. Predyspozycja psychiatryczna BEZWZGLĘDNE przeciwwskazanie."},
     {"q": "Dlaczego bokserzy/MMA używają Halotestin?", "a": "Trzy powody: (1) ekstremalny wzrost siły w 1-3 tygodni BEZ przyrostu wagi (kategoria wagowa boksu się nie zmienia); (2) spiczasta agresja na psychologię walki; (3) efekt \"wysuszający\" na utratę wody przed ważeniem. Zakaz WADA, testy USADA wykrywają przez 2 miesiące. Ze względu na ciężki profil efektów ubocznych zazwyczaj używany tylko 1-2 tygodnie przed walką (\"peak week\"), maks 10-30 mg/dzień."},
-    {"q": "Hepatotoksyczność vs Anadrol?", "a": "Halotestin jest nieco bardziej hepatotoksyczny niż Anadrol — kombinacja 9α-fluoro + 17α-metyl powoduje bardziej ekstremalny stres wątrobowy niż 2-hydroksymetylen + 17α-metyl w Anadrolu. Oba top-3 w rankingu hepatotoksyczności AAS 17α-alkilowanych (Superdrol-Halotestin-Anadrol). Żaden nie zalecany."},
+    {"q": "Hepatotoksyczność vs Anadrol?", "a": "Halotestin jest nieco bardziej hepatotoksyczny niż Anadrol – kombinacja 9α-fluoro + 17α-metyl powoduje bardziej ekstremalny stres wątrobowy niż 2-hydroksymetylen + 17α-metyl w Anadrolu. Oba top-3 w rankingu hepatotoksyczności AAS 17α-alkilowanych (Superdrol-Halotestin-Anadrol). Żaden nie zalecany."},
     {"q": "Sprawa Roya Jonesa Jr. 2003?", "a": "Roy Jones Jr. testował pozytywnie na metabolity Halotestinu po walce tytułowej z Antonio Tarverem w 2003 r. Pozytywny test kosztował go tytuły IBF i WBA; Jones zaprzeczył, spór prawny się rozwinął. Sprawa przyczyniła się do reputacji Halotestinu jako \"sterydu boksera\"."}
   ],
   "related": ["dianabol-info", "anadrol", "superdrol", "anavar-info", "testosterone-info"],
@@ -136,9 +136,9 @@ export default {
       "purpose": "Weryfikacja recovery WĄTROBOWEGO bezwzględnie krytyczna. Jeśli ALT/AST nie normalizuje się w 12 tygodni, konsultacja hepatologa OBOWIĄZKOWA."
     },
     "cruise": {
-      "label": "Na cruise (cruise Halotestinem NIE ISTNIEJE — ściśle cykliczny)",
-      "timing": "Cruise Halotestinem ZABRONIONY — obowiązkowe przerwanie po 4 tygodniach. Ciągłe stosowanie = niewydolność wątrobowa.",
-      "markers": "N/A — cruise Halotestinem nie standardowy.",
+      "label": "Na cruise (cruise Halotestinem NIE ISTNIEJE – ściśle cykliczny)",
+      "timing": "Cruise Halotestinem ZABRONIONY – obowiązkowe przerwanie po 4 tygodniach. Ciągłe stosowanie = niewydolność wątrobowa.",
+      "markers": "N/A – cruise Halotestinem nie standardowy.",
       "purpose": "Halotestin używany wyłącznie w krótkim (maks 4 tygodnie, zazwyczaj 1-3 tygodnie) cyklu pre-competition."
     }
   }

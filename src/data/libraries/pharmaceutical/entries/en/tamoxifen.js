@@ -27,9 +27,9 @@ export default {
   "tagColor": "rgba(236,72,153,0.18)",
   "shortDesc": "Selective estrogen receptor modulator (SERM). Adjuvant and metastatic treatment of hormone receptor-positive breast cancer (Nolvadex).",
   "description": "Tamoxifen is the first clinically major SERM, developed by AstraZeneca (Nolvadex, FDA 1977). In ER+ breast cancer adjuvant treatment with 5-10 year protocol, reduces relapse risk by 50% (EBCTCG 2011 Lancet PMID 21684593). In premenopausal women, aromatase inhibitors (anastrozole, letrozole) ineffective, so tamoxifen is first-line SERM. Side effect profile: thromboembolism (DVT, PE 2-3x rise), endometrial cancer risk (~2x), menopausal-like symptoms (hot flashes). ER+ DCIS prevention and high-risk primary prevention FDA-approved (NSABP-P1 trial).",
-  "mechanism": "Tissue-specific estrogen receptor modulation: ANTAGONIST in breast tissue, PARTIAL AGONIST in bone + endometrium + liver. Active metabolites (4-hydroxytamoxifen, endoxifen) CYP2D6-dependent — poor metabolizers have reduced efficacy.",
+  "mechanism": "Tissue-specific estrogen receptor modulation: ANTAGONIST in breast tissue, PARTIAL AGONIST in bone + endometrium + liver. Active metabolites (4-hydroxytamoxifen, endoxifen) CYP2D6-dependent – poor metabolizers have reduced efficacy.",
   "legalStatus": "EU/HU: prescription only (Nolvadex, Tamoxen, generics). USA: FDA Rx.",
-  "bioavailability": "~100% (oral, \"well-absorbed\", Tmax ~5 h — FDA Soltamox/Nolvadex label)",
+  "bioavailability": "~100% (oral, \"well-absorbed\", Tmax ~5 h – FDA Soltamox/Nolvadex label)",
   "onsetTime": "Klinikai válasz hónapok-évek (adjuváns)",
   "halfLife": "~7 days (parent); 14 days (4-hydroxytamoxifen)",
   "atcCode": "L02BA01",
@@ -57,7 +57,7 @@ export default {
     "Poor CYP2D6 metabolizers have reduced efficacy"
   ],
   "crossMolInteractions": [
-    "STRONG CYP2D6 inhibitors (fluoxetine, paroxetine, bupropion): reduced endoxifen formation, Tamoxifen efficacy WORSENS — avoid, alternative AD (venlafaxine, citalopram)",
+    "STRONG CYP2D6 inhibitors (fluoxetine, paroxetine, bupropion): reduced endoxifen formation, Tamoxifen efficacy WORSENS – avoid, alternative AD (venlafaxine, citalopram)",
     "Warfarin: INR rise (interaction), monitor",
     "Hormone replacement (HRT) estrogen: avoid (mechanistic conflict)"
   ],
@@ -89,7 +89,7 @@ export default {
   "related": [],
   "doseCalc": {
     "type": "warning",
-    "warning": "Tamoxifen is the pillar of HORMONAL ONCO-THERAPY in ER+ breast cancer. SPECIALIST (ONCOLOGIST) SUPERVISION MANDATORY. NO STANDALONE DOSE CALCULATOR on this page because: (1) dose (20 mg/day) and duration (5-10 years) are oncology protocol decisions, patient-specific; (2) VTE (DVT/PE) and ENDOMETRIAL CANCER risk requires real monitoring; (3) CYP2D6 genetic status significantly affects efficacy — in some patients genotype testing indicated; (4) STRONG CYP2D6 inhibitors (fluoxetine, paroxetine, bupropion) CONTRAINDICATED — compromises tamoxifen efficacy. Talk to your oncologist. Emergency symptoms (unilateral leg swelling, dyspnea-chest pain, vaginal bleeding): IMMEDIATE care."
+    "warning": "Tamoxifen is the pillar of HORMONAL ONCO-THERAPY in ER+ breast cancer. SPECIALIST (ONCOLOGIST) SUPERVISION MANDATORY. NO STANDALONE DOSE CALCULATOR on this page because: (1) dose (20 mg/day) and duration (5-10 years) are oncology protocol decisions, patient-specific; (2) VTE (DVT/PE) and ENDOMETRIAL CANCER risk requires real monitoring; (3) CYP2D6 genetic status significantly affects efficacy – in some patients genotype testing indicated; (4) STRONG CYP2D6 inhibitors (fluoxetine, paroxetine, bupropion) CONTRAINDICATED – compromises tamoxifen efficacy. Talk to your oncologist. Emergency symptoms (unilateral leg swelling, dyspnea-chest pain, vaginal bleeding): IMMEDIATE care."
   },
-  "anecdote": "Nolvadex (Tamoxifen) and Raloxifene are anecdotally the two most reliable compounds for gyno prevention, because tamoxifen directly blocks estrogen at the receptor level selectively in breast tissue — a highly targeted mechanism. Unlike Arimidex, it is not an aromatase inhibitor, so the benefits are receptor-targeted rather than system-wide. It is commonly used in PCT protocols because it stimulates LH/FSH more directly, which can be useful for HPTA recovery. Reported side effects include mild mood swings, rare vision disturbances, and long-term blood-clot risk — though most clotting case reports come from postmenopausal women using it for breast cancer prevention, so applicability to AAS users is less clear. Overall, community accounts regard Nolvadex as a solid tool for blocking estrogen in breast tissue and a strong gyno-prevention option. Administered orally, with dosing typically structured in multi-week cycles, especially during PCT."
+  "anecdote": "Nolvadex (Tamoxifen) and Raloxifene are anecdotally the two most reliable compounds for gyno prevention, because tamoxifen directly blocks estrogen at the receptor level selectively in breast tissue – a highly targeted mechanism. Unlike Arimidex, it is not an aromatase inhibitor, so the benefits are receptor-targeted rather than system-wide. It is commonly used in PCT protocols because it stimulates LH/FSH more directly, which can be useful for HPTA recovery. Reported side effects include mild mood swings, rare vision disturbances, and long-term blood-clot risk – though most clotting case reports come from postmenopausal women using it for breast cancer prevention, so applicability to AAS users is less clear. Overall, community accounts regard Nolvadex as a solid tool for blocking estrogen in breast tissue and a strong gyno-prevention option. Administered orally, with dosing typically structured in multi-week cycles, especially during PCT."
 }

@@ -1,6 +1,6 @@
-// Exemestane (Aromasin) — szteroidal "suicide" (irreverzibilis) AI.
+// Exemestane (Aromasin) – szteroidal "suicide" (irreverzibilis) AI.
 // FDA-jóváhagyott 1999 Pfizer. 17-hydro-exemestane metabolit mild androgén
-// — SHBG drop + free-Test rise visible.
+// – SHBG drop + free-Test rise visible.
 // Sources: FDA Aromasin SmPC, Bonneterre 2003 PMID 14523076,
 // Geisler 2008 PMID 19012260, Lønning 2005 PMID 16091756.
 
@@ -29,30 +29,30 @@ export default {
   "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
-  "shortDesc": "Steroidal \"suicide\" (irreverzibilis) aromatáz-gátló. FDA-jóváhagyott (1999 Pfizer). Egyedi: 17-hydro-exemestane metabolit mild androgén — SHBG drop + free-Test rise visible. AAS-ban E2-stability vagy SHBG-emphasis-emphasizált választás.",
-  "description": "Az Exemestane (Aromasin) egy harmadik generációs szteroidal aromatáz-gátló, amelyet a Pharmacia & Upjohn (ma Pfizer) fejlesztett ki, és 1999-ben kapott FDA-jóváhagyást postmenopauzális ER+ emlőkarcinómára. Pharmakokinetikailag eltér a non-szteroidal triazole-AI-któl (Anastrozol/Letrozol): irreverzibilis kovalens kötést képez a CYP19-aromatáz aktív helyén — minden dose a aromatáz-pool egy részét végleg inaktiválja, a recovery csak de novo enzim-szintézis után jön (~5-7 napos félhatás-felezés). Az Exemestane parent compound szteroidstruktúrával rendelkezik (androstadiendion-analóg), és a 17-hydro-exemestane metabolit MILD androgén-receptor agonist (klinikailag jelentéktelen anabolikus hatás, DE SHBG-csökkentő, így a free-Test mérhetően emelkedik — Lønning 2005 PMID 16091756 dokumentálta). AAS-kontextusban két niche: (1) E2-stability ahol a non-rebound profil előnyös (cycle-end taper), és (2) SHBG-emphasis stack-en (a free-Test boost a 17-hydro-metabolit miatt). Az Aromasin az AAS-AI-trifecta harmadik tagja az Anastrozol+Letrozol mellett. WADA S4.1 — banned.",
+  "shortDesc": "Steroidal \"suicide\" (irreverzibilis) aromatáz-gátló. FDA-jóváhagyott (1999 Pfizer). Egyedi: 17-hydro-exemestane metabolit mild androgén – SHBG drop + free-Test rise visible. AAS-ban E2-stability vagy SHBG-emphasis-emphasizált választás.",
+  "description": "Az Exemestane (Aromasin) egy harmadik generációs szteroidal aromatáz-gátló, amelyet a Pharmacia & Upjohn (ma Pfizer) fejlesztett ki, és 1999-ben kapott FDA-jóváhagyást postmenopauzális ER+ emlőkarcinómára. Pharmakokinetikailag eltér a non-szteroidal triazole-AI-któl (Anastrozol/Letrozol): irreverzibilis kovalens kötést képez a CYP19-aromatáz aktív helyén – minden dose a aromatáz-pool egy részét végleg inaktiválja, a recovery csak de novo enzim-szintézis után jön (~5-7 napos félhatás-felezés). Az Exemestane parent compound szteroidstruktúrával rendelkezik (androstadiendion-analóg), és a 17-hydro-exemestane metabolit MILD androgén-receptor agonist (klinikailag jelentéktelen anabolikus hatás, DE SHBG-csökkentő, így a free-Test mérhetően emelkedik – Lønning 2005 PMID 16091756 dokumentálta). AAS-kontextusban két niche: (1) E2-stability ahol a non-rebound profil előnyös (cycle-end taper), és (2) SHBG-emphasis stack-en (a free-Test boost a 17-hydro-metabolit miatt). Az Aromasin az AAS-AI-trifecta harmadik tagja az Anastrozol+Letrozol mellett. WADA S4.1 – banned.",
   "keyInfo": [
-    {"label": "Hatásmechanizmus", "value": "Szteroidal \"suicide\" (irreverzibilis kovalens) CYP19-aromatáz inhibitor — egyetlen dose a pool egy részét végleg inaktiválja"},
+    {"label": "Hatásmechanizmus", "value": "Szteroidal \"suicide\" (irreverzibilis kovalens) CYP19-aromatáz inhibitor – egyetlen dose a pool egy részét végleg inaktiválja"},
     {"label": "Adagolás (AAS)", "value": "12.5-25 mg EOD vagy 25 mg/nap"},
     {"label": "Felezési idő", "value": "~27 óra (parent), ~24-48 h aktív metabolit; pharmakodinamiás hatás 5-7 nap"},
     {"label": "Hatáskezdet", "value": "E2-csökkenés mérhető 12-24 óra, full effect 3-5 nap"},
     {"label": "Jogi státusz", "value": "FDA + EMA Rx, HU + PL törzskönyvezett, WADA S4.1 banned"}
   ],
-  "mechanism": "Az Exemestane szubsztrát-analóg pro-drug: maga az androstadiendion-szerkezet beleköt a CYP19-aromatáz aktív helyére, és az enzim katalitikus folyamatában reaktív elektrofil köztiterméket képez (suicide-inhibitor / mechanism-based irreversible inhibitor). A reaktív köztitermék kovalensen kötődik az aktív hely lizin/cisztein-oldalláncához, permanensen inaktiválva az enzim-molekulát. A recovery teljes egészében de novo aromatáz-szintézistől függ (~5-7 nap félfunkció-recovery rate). A parent compound 17-hidroxiláción megy keresztül májon, és az aktív 17-hydro-exemestane metabolit MILD AR-agonist (Lønning 2005), klinikailag jelentéktelen anabolikus hatás DE SHBG-csökkentő — a free-Test mérhetően emelkedik (+5-10 ng/dL standard dose-on). Hepatikus CYP3A4 metabolizmus a fő útvonal, ~30%-os orális biodostupnošć. WADA-detection ~1 hónap.",
-  "legalStatus": "USA: FDA-jóváhagyott 1999 (Aromasin 25 mg, Pharmacia, ma Pfizer; generic exemestane 2010+). Indikáció: postmenopauzális ER+ emlőkarcinóma adjuváns + metasztatikus, valamint post-Tamoxifen 2-3 év switch-protokollok (Bonneterre 2003 ITA-CL97). EU: EMA-jóváhagyott. HU: törzskönyvezett (Aromasin Rx). PL: törzskönyvezett (Aromasin Rx). WADA: S4.1 aromatáz-gátló — banned in/out-of-competition.",
+  "mechanism": "Az Exemestane szubsztrát-analóg pro-drug: maga az androstadiendion-szerkezet beleköt a CYP19-aromatáz aktív helyére, és az enzim katalitikus folyamatában reaktív elektrofil köztiterméket képez (suicide-inhibitor / mechanism-based irreversible inhibitor). A reaktív köztitermék kovalensen kötődik az aktív hely lizin/cisztein-oldalláncához, permanensen inaktiválva az enzim-molekulát. A recovery teljes egészében de novo aromatáz-szintézistől függ (~5-7 nap félfunkció-recovery rate). A parent compound 17-hidroxiláción megy keresztül májon, és az aktív 17-hydro-exemestane metabolit MILD AR-agonist (Lønning 2005), klinikailag jelentéktelen anabolikus hatás DE SHBG-csökkentő – a free-Test mérhetően emelkedik (+5-10 ng/dL standard dose-on). Hepatikus CYP3A4 metabolizmus a fő útvonal, ~30%-os orális biodostupnošć. WADA-detection ~1 hónap.",
+  "legalStatus": "USA: FDA-jóváhagyott 1999 (Aromasin 25 mg, Pharmacia, ma Pfizer; generic exemestane 2010+). Indikáció: postmenopauzális ER+ emlőkarcinóma adjuváns + metasztatikus, valamint post-Tamoxifen 2-3 év switch-protokollok (Bonneterre 2003 ITA-CL97). EU: EMA-jóváhagyott. HU: törzskönyvezett (Aromasin Rx). PL: törzskönyvezett (Aromasin Rx). WADA: S4.1 aromatáz-gátló – banned in/out-of-competition.",
   "onsetTime": "E2-csökkenés 12-24 óra, full effect 3-5 nap",
   "halfLife": "~27 óra (parent)",
   "halfLifeActive": "~24-48 óra (17-hydro-exemestane); pharmakodinamiás hatás 5-7 nap (irreverzibilis enzim-inaktiváció)",
   "interactionsWith": ["anastrozol", "letrozol", "nolvadex", "testosterone-info"],
-  "aromatization": "Nem aromatizál — steroidal-class \"suicide inhibitor\" (irreverzibilis kovalens CYP19-kötés). Parent compound szteroid struktúrával rendelkezik (androstadiendion-analóg), nem agonist.",
-  "hepatotoxicity": "Alacsony — szteroid-struktúra DE NEM 17α-alkilált. Hepatic AE <2% (FDA Aromasin label). 17-hydro-metabolit mild-AR-aktivitás nem jelent klinikailag releváns hepatikus stresszt.",
+  "aromatization": "Nem aromatizál – steroidal-class \"suicide inhibitor\" (irreverzibilis kovalens CYP19-kötés). Parent compound szteroid struktúrával rendelkezik (androstadiendion-analóg), nem agonist.",
+  "hepatotoxicity": "Alacsony – szteroid-struktúra DE NEM 17α-alkilált. Hepatic AE <2% (FDA Aromasin label). 17-hydro-metabolit mild-AR-aktivitás nem jelent klinikailag releváns hepatikus stresszt.",
   "wadaStatus": "banned",
-  "androgenicRatio": "Negligible — a 17-hydro-exemestane metabolit mild AR-affinitással rendelkezik (~5% testosterone-affinitás), klinikailag jelentéktelen anabolikus hatás, DE SHBG-csökkentő (free-Test rise mérhető).",
+  "androgenicRatio": "Negligible – a 17-hydro-exemestane metabolit mild AR-affinitással rendelkezik (~5% testosterone-affinitás), klinikailag jelentéktelen anabolikus hatás, DE SHBG-csökkentő (free-Test rise mérhető).",
   "bindingAffinity": "CYP19-aromatáz aktív hely irreverzibilis kovalens kötés. 17-hydro-exemestane: AR Ki ~5-50 nM range (gyenge), ER minimal.",
   "detectionWindow": "WADA-akkreditált GC-MS/LC-MS/MS vizeletminta-detektálás ~1 hónap az utolsó dose után.",
   "benefits": [
-    "Suicide-inhibitor: no rebound E2 leállítás után — cycle-end taper-stability",
-    "17-hydro-metabolit mild androgén — SHBG-drop és free-Test-rise mérhető (+5-10 ng/dL)",
+    "Suicide-inhibitor: no rebound E2 leállítás után – cycle-end taper-stability",
+    "17-hydro-metabolit mild androgén – SHBG-drop és free-Test-rise mérhető (+5-10 ng/dL)",
     "Egyenletes E2-control (no daily fluctuation Anastrozol-szerűen)",
     "Lipid-panel mérsékeltebb hatás mint Letrozol (intermediate)",
     "FDA + EMA Rx pharma-grade globally available",
@@ -69,7 +69,7 @@ export default {
   "expectations": [
     {"label": "1-3. nap", "body": "E2-csökkenés mérhető (~50-70%). SHBG-drop érzékelhető, free-Test mérhetően emelkedik (vérvétel +5 nap után dokumentálható)."},
     {"label": "1-2. hét", "body": "Steady-state aromatáz-szuppresszió (~85-90%), Anastrozolnál kissé enyhébb total-E2-reduction de stabilabb baseline. Lipid-panel mérsékelt változás."},
-    {"label": "Leállítás után 1. hét", "body": "E2 fokozatosan emelkedik (~5-7 nap teljes recovery — de novo aromatáz-szintézis). Rebound minimális, NO spike."},
+    {"label": "Leállítás után 1. hét", "body": "E2 fokozatosan emelkedik (~5-7 nap teljes recovery – de novo aromatáz-szintézis). Rebound minimális, NO spike."},
     {"label": "Leállítás után 2-4. hét", "body": "Baseline E2 helyreáll. PCT-fázis indítható Nolvadex/Clomid SERM-szel."}
   ],
   "quality": {
@@ -109,9 +109,9 @@ export default {
     {"title": "Pharmacological profiles of exemestane and formestane, steroidal aromatase inhibitors used for treatment of postmenopausal breast cancer.", "authors": "Lønning PE", "journal": "Breast Cancer Res Treat", "pmid": "9797017"}
   ],
   "faq": [
-    {"q": "Suicide inhibitor — mit jelent praktikusan?", "a": "A 'suicide-inhibitor' (mechanism-based irreversible inhibitor) azt jelenti, hogy az Exemestane szubsztrát-analógként belekapcsolódik a CYP19-aromatáz aktív katalitikus ciklusába, és a reakció során reaktív köztitermékké alakul, amely kovalensen, permanensen lekapcsolja az enzimet. A pool-csökkentés gyűlik fel — minden dose a meglévő aromatáz-pool egy részét végleg inaktiválja. A recovery csak az új aromatáz-szintézistől függ (~5-7 nap félreaktiváció). Praktikusan: no E2-rebound a leállítás után (vs Anastrozol/Letrozol reverzibilis kötés, amelyek gyors E2-spike-ot okozhatnak). Cycle-end taper-stability és gradient-recovery előnyös."},
-    {"q": "Exemestane mild anabolic — mit ad?", "a": "A 17-hydro-exemestane metabolit mild AR-affinitással rendelkezik (~5% testosterone), és SHBG-csökkentő hatású (Lønning 2005 dokumentálta SHBG-drop ~15-25% a postmenopauzális női populáción). AAS-felhasználón a free-Test (NEM total-Test) mérhetően emelkedik +5-10 ng/dL stabil dose-on. Klinikailag jelentéktelen anabolikus boost (NEM cycle-helyettesítő), DE measurable SHBG-emphasis stack-en (Mast+Var+Aromasin) szinergiát ad. Free-Test rise = jobb lib-libidó és muscle-protein-synthesis-szignál szubjektív szinten."},
-    {"q": "Anastrozol vs Letrozol vs Exemestane — clinical decision tree?", "a": "Default: ANASTROZOL (1 mg EOD, könnyű titrálás, reverzibilis, klinikai default). Hard-suppression Tren+Mast stack vagy gyno-reverzálás: LETROZOL (erősebb, gyno-shrink képes). E2-stability/taper-end VAGY SHBG-emphasis: EXEMESTANE (no-rebound, free-Test rise bonusz). AI-naive felhasználónak: Anastrozolt vagy Aromasint válasszon (Letrozol crashed-E2 rizikó magasabb). Tren-only stack: gyakran semmilyen AI nem kell (Tren NEM aromatizál)."},
+    {"q": "Suicide inhibitor – mit jelent praktikusan?", "a": "A 'suicide-inhibitor' (mechanism-based irreversible inhibitor) azt jelenti, hogy az Exemestane szubsztrát-analógként belekapcsolódik a CYP19-aromatáz aktív katalitikus ciklusába, és a reakció során reaktív köztitermékké alakul, amely kovalensen, permanensen lekapcsolja az enzimet. A pool-csökkentés gyűlik fel – minden dose a meglévő aromatáz-pool egy részét végleg inaktiválja. A recovery csak az új aromatáz-szintézistől függ (~5-7 nap félreaktiváció). Praktikusan: no E2-rebound a leállítás után (vs Anastrozol/Letrozol reverzibilis kötés, amelyek gyors E2-spike-ot okozhatnak). Cycle-end taper-stability és gradient-recovery előnyös."},
+    {"q": "Exemestane mild anabolic – mit ad?", "a": "A 17-hydro-exemestane metabolit mild AR-affinitással rendelkezik (~5% testosterone), és SHBG-csökkentő hatású (Lønning 2005 dokumentálta SHBG-drop ~15-25% a postmenopauzális női populáción). AAS-felhasználón a free-Test (NEM total-Test) mérhetően emelkedik +5-10 ng/dL stabil dose-on. Klinikailag jelentéktelen anabolikus boost (NEM cycle-helyettesítő), DE measurable SHBG-emphasis stack-en (Mast+Var+Aromasin) szinergiát ad. Free-Test rise = jobb lib-libidó és muscle-protein-synthesis-szignál szubjektív szinten."},
+    {"q": "Anastrozol vs Letrozol vs Exemestane – clinical decision tree?", "a": "Default: ANASTROZOL (1 mg EOD, könnyű titrálás, reverzibilis, klinikai default). Hard-suppression Tren+Mast stack vagy gyno-reverzálás: LETROZOL (erősebb, gyno-shrink képes). E2-stability/taper-end VAGY SHBG-emphasis: EXEMESTANE (no-rebound, free-Test rise bonusz). AI-naive felhasználónak: Anastrozolt vagy Aromasint válasszon (Letrozol crashed-E2 rizikó magasabb). Tren-only stack: gyakran semmilyen AI nem kell (Tren NEM aromatizál)."},
     {"q": "Lipid panel hatás?", "a": "Aromasin lipid-panel-hatása INTERMEDIATE: HDL-drop ~10-15% (vs Anastrozol ~10-20%, Letrozol ~20-30%), LDL-emelés ~5-10%. A Letrozolnál jelentősen enyhébb, közelít az Anastrozol-szinthez. Kardio-monitor: lipid-panel pre-cycle + 6. hét + post-cycle. Standard mitigációk: omega-3, krill oil, CoQ10. Ha LDL >180 mg/dL: berberin vagy statin szakorvosi konzultáció."}
   ],
   "related": ["anastrozol", "letrozol", "nolvadex", "testosterone-info"],

@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Ampakina (DM-232), alkinyl-pochodna sunifiramu, AMPA-PAM.",
-  "description": "Unifiram (DM-232) to zaprojektowany alkinyl-analog sunifiramu (DM-235), o podobnej aktywności in vivo poniżej miligrama w szczurzych modelach przeciwamnezyjnych. Co ciekawe NIE działa bezpośrednio jako AMPA-PAM (w przeciwieństwie do klasycznych ampakin) — zamiast tego poprawia wydajność przetwarzania sygnałów glutaminergicznych, wzmacniając odpowiedź obwodów pamięci na glutaminian. Pośrednia aktywacja w miejscu glicyny NMDA + modulacja uwalniania acetylocholiny w korze mózgowej. Długotrwałe podniesienie LTP hipokampu. Mniej aktywujący niż Sunifiram, bardziej pro-poznawczy profil; dane raportują brak działań niepożądanych. Brak danych u ludzi.",
+  "description": "Unifiram (DM-232) to zaprojektowany alkinyl-analog sunifiramu (DM-235), o podobnej aktywności in vivo poniżej miligrama w szczurzych modelach przeciwamnezyjnych. Co ciekawe NIE działa bezpośrednio jako AMPA-PAM (w przeciwieństwie do klasycznych ampakin) – zamiast tego poprawia wydajność przetwarzania sygnałów glutaminergicznych, wzmacniając odpowiedź obwodów pamięci na glutaminian. Pośrednia aktywacja w miejscu glicyny NMDA + modulacja uwalniania acetylocholiny w korze mózgowej. Długotrwałe podniesienie LTP hipokampu. Mniej aktywujący niż Sunifiram, bardziej pro-poznawczy profil; dane raportują brak działań niepożądanych. Brak danych u ludzi.",
   "keyInfo": [
     {
       "label": "Mechanizm",

@@ -57,8 +57,8 @@ export default {
     "tyramine-rich foods",
     "clonidine"
   ],
-  "aromatization": "Nie dotyczy — alkaloid indolowy, antagonista α2, NIE steroid; brak interakcji z CYP19",
-  "hepatotoxicity": "Niska — dominuje ryzyko anksjogenne i sercowo-naczyniowe (tachykardia, nadciśnienie); rzadka hepatotoksyczność tylko przy przedawkowaniu (NIH LiverTox 2024)",
+  "aromatization": "Nie dotyczy – alkaloid indolowy, antagonista α2, NIE steroid; brak interakcji z CYP19",
+  "hepatotoxicity": "Niska – dominuje ryzyko anksjogenne i sercowo-naczyniowe (tachykardia, nadciśnienie); rzadka hepatotoksyczność tylko przy przedawkowaniu (NIH LiverTox 2024)",
   "wadaStatus": null,
   "benefits": [
     "Mobilizacja \"stubborn fat\" z depozytów α2 (Ostojic 2006: 2.2% redukcji w 3 tyg)",
@@ -113,7 +113,7 @@ export default {
     "Efedryna: skumulowany stres sympatomimetyczny, monitoring obowiązkowy",
     "Insulina (poposiłkowa): blokuje efekt mobilizacji tłuszczu",
     "Inhibitor PDE5 (Viagra/Cialis): stres sercowo-naczyniowy wzrasta",
-    "Klonidyna (agonista α2): pełny antagonizm efektu plus ryzyko krwawienia śródczaszkowego u przewlekłych użytkowników klonidyny (Pham 2022 PMID 36115742 — pojedyncza dawka yohimbiny wywołała ciśnienie 198/93 plus krwawienie do jąder podstawnych). Bezwzględne przeciwwskazanie przy przewlekłej klonidynie."
+    "Klonidyna (agonista α2): pełny antagonizm efektu plus ryzyko krwawienia śródczaszkowego u przewlekłych użytkowników klonidyny (Pham 2022 PMID 36115742 – pojedyncza dawka yohimbiny wywołała ciśnienie 198/93 plus krwawienie do jąder podstawnych). Bezwzględne przeciwwskazanie przy przewlekłej klonidynie."
   ],
   "studies": [
     {
@@ -168,7 +168,7 @@ export default {
     },
     {
       "q": "Jakie jest ryzyko z klonidyną lub MAOI?",
-      "a": "Klonidyna to agonista α2, yohimbina to antagonista α2 — bezpośredni konflikt farmakologiczny. Pham 2022 (Cureus PMID 36115742) udokumentował krwawienie śródczaszkowe po pojedynczej dawce yohimbiny u 39-letniej kobiety na przewlekłej klonidynie (198/93, krwawienie do jąder podstawnych, ciężkie sekwencje neurologiczne). Z MAOI lub posiłkami bogatymi w tyraminę (sery dojrzewające, czerwone wino, salami) ryzyko kryzysu nadciśnieniowego przez kumulację NE. Oba scenariusze to bezwzględne przeciwwskazania."
+      "a": "Klonidyna to agonista α2, yohimbina to antagonista α2 – bezpośredni konflikt farmakologiczny. Pham 2022 (Cureus PMID 36115742) udokumentował krwawienie śródczaszkowe po pojedynczej dawce yohimbiny u 39-letniej kobiety na przewlekłej klonidynie (198/93, krwawienie do jąder podstawnych, ciężkie sekwencje neurologiczne). Z MAOI lub posiłkami bogatymi w tyraminę (sery dojrzewające, czerwone wino, salami) ryzyko kryzysu nadciśnieniowego przez kumulację NE. Oba scenariusze to bezwzględne przeciwwskazania."
     }
   ],
   "related": [    "clenbuterol"

@@ -148,7 +148,7 @@ export default {
     },
     {
       "q": "Jak długo można stosować ciągle?",
-      "a": "Rosyjski protokół Rx przewiduje 56-dniowe cykle z 2-4-tygodniową przerwą. Ciągłe stosowanie powyżej 3 miesięcy nie zostało formalnie zbadane — ryzyko obniżenia regulacji receptorów i tolerancji NGF/BDNF."
+      "a": "Rosyjski protokół Rx przewiduje 56-dniowe cykle z 2-4-tygodniową przerwą. Ciągłe stosowanie powyżej 3 miesięcy nie zostało formalnie zbadane – ryzyko obniżenia regulacji receptorów i tolerancji NGF/BDNF."
     }
   ],
   "related": [

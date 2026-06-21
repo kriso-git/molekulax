@@ -10,17 +10,17 @@
 // any field text. Entries not listed default to L1.
 
 const EXPLICIT_LEVEL = {
-  // L5 — FDA-approved
+  // L5 – FDA-approved
   'modafinil': 5,
   'armodafinil': 5,
   'selegiline': 5,
   'methylene-blue': 5,
-  // L4 — Rx in Russia / EU regions
+  // L4 – Rx in Russia / EU regions
   'phenibut': 4,
   'tianeptine': 4,
   'cerebrolysin': 4,
   'cortexin': 4,
-  // L3 — extensive peer-reviewed human studies / clinical use
+  // L3 – extensive peer-reviewed human studies / clinical use
   'piracetam': 3,
   'aniracetam': 3,
   'oxiracetam': 3,
@@ -35,7 +35,7 @@ const EXPLICIT_LEVEL = {
   'citicoline': 3,
   'huperzine-a': 3,
   'magnesium-l-threonate': 3,
-  // L2 — early human + strong animal evidence
+  // L2 – early human + strong animal evidence
   'noopept': 2,
   'semax': 2,
   'selank': 2,

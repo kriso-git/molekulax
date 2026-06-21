@@ -1,6 +1,6 @@
 // Root-level error boundary: converts a render-path crash anywhere in the app into an
-// on-brand fallback instead of a blank white page. The fallback is SELF-CONTAINED —
-// inline styles + literal copy, NO context hooks (useTheme/useLang) — so it renders even
+// on-brand fallback instead of a blank white page. The fallback is SELF-CONTAINED –
+// inline styles + literal copy, NO context hooks (useTheme/useLang) – so it renders even
 // when a provider is the thing that crashed. The data-error-boundary marker lets the
 // render-smoke detect a caught crash as a failure; componentDidCatch logs to console.error
 // so the smoke's console check also trips (production React does not auto-log caught errors).
@@ -43,7 +43,7 @@ export default class ErrorBoundary extends Component {
           Hiba történt
         </h1>
         <p style={{ maxWidth: '34rem', lineHeight: 1.6, color: '#9ca3af', margin: 0 }}>
-          Váratlan hiba lépett fel az oldal betöltésekor. Töltsd újra az oldalt — ha a hiba
+          Váratlan hiba lépett fel az oldal betöltésekor. Töltsd újra az oldalt – ha a hiba
           megmarad, próbáld meg később.
         </p>
         <button

@@ -1,4 +1,4 @@
-// Mirabegron (Myrbetriq) — Astellas Pharma 2012 FDA-jóváhagyott szelektív
+// Mirabegron (Myrbetriq) – Astellas Pharma 2012 FDA-jóváhagyott szelektív
 // β3-adrenoceptor agonista OAB-Rx. BAT-szövet aktivációval thermogenic off-label
 // fat-loss use 2015 óta dokumentált. Sources: FDA Myrbetriq SmPC,
 // Khullar 2013 PMID 23537815, Cypess 2015 PMID 25437872, Loh 2019 PMID 31188988,
@@ -54,7 +54,7 @@ export default {
     }
   ],
   "mechanism": "A Mirabegron szelektív agonist a β3-adrenoceptoron (β3-AR), egy G-protein-csatolt receptoron, ami szöveti expressziós mintázata alapján három fő helyen aktív: detrusor-simaizom (húgyhólyag-relaxáció), barna zsírszövet (UCP1-mediated thermogenikus aktiváció), és visceralis fehér zsírszövet (browning-induction). Az intracelluláris kaszkád standard β-receptor: β3 → Gs-protein → adenil-cikláz → cAMP → PKA → CREB foszforilálás → UCP1-gén-transzkripció emelése. A BAT-aktiváció direkt thermogenikus: a UCP1 a mitokondriális belső-membrán protein-ION-channele a proton-gradienst hő formájában disszipálja, ATP-szintézis-bypass-szal. Egy átlagos felnőtt férfiban kb. 40-50 g aktív BAT található (life-style + age-dependent declining), cold-exposure inducible. Krónikus Mirabegron-dose-on (>4 hét, 50-100 mg/nap) BAT-volume +30-50% emelkedés dokumentált 18F-FDG PET-CT-vel (Loh 2019). A β1/β2-receptor-spillover Mirabegron-on minimális (>50x szelektivitás β3 javára), ezért kardiotoxikus tachycardia-risk alacsonyabb mint a Clenbuterol-on; viszont hypertonia-risk DOMINENS, mert a β3-receptor a vascular-tone-szabályzás-ban is részt vesz periferiás artériákon.",
-  "legalStatus": "USA: FDA-jóváhagyott 2012 (Myrbetriq, Astellas Pharma) OAB tüneti kezelésére; Schedule N/A (nem kontrollált szer). 2018 FDA black-box update súlyos hypertonia + tachycardia case-cluster után. EU: EMA-jóváhagyott (Betmiga). HU: törzskönyvezett (Betmiga Rx). PL: törzskönyvezett (Betmiga Rx). WADA: nem-explicit-banned (β3-agonist nem szerepel a S6 stimuláns vagy S3 β2-agonist listán), DE hazai szövetségek monitored kategóriába helyezték — TUE-process pre-existing-OAB-Rx diagnózissal javasolt.",
+  "legalStatus": "USA: FDA-jóváhagyott 2012 (Myrbetriq, Astellas Pharma) OAB tüneti kezelésére; Schedule N/A (nem kontrollált szer). 2018 FDA black-box update súlyos hypertonia + tachycardia case-cluster után. EU: EMA-jóváhagyott (Betmiga). HU: törzskönyvezett (Betmiga Rx). PL: törzskönyvezett (Betmiga Rx). WADA: nem-explicit-banned (β3-agonist nem szerepel a S6 stimuláns vagy S3 β2-agonist listán), DE hazai szövetségek monitored kategóriába helyezték – TUE-process pre-existing-OAB-Rx diagnózissal javasolt.",
   "onsetTime": "Detrusor 2-4 óra; BAT-aktiváció krónikus dose 2-4 hét",
   "halfLife": "~50 óra",
   "interactionsWith": [
@@ -63,8 +63,8 @@ export default {
     "albuterol",
     "clenbuterol"
   ],
-  "aromatization": "Nem aromatizál (nem szteroid hatóanyag — szelektív β3-adrenoceptor agonista). Nincs CYP19-interakció, az ösztrogén-axis érintetlen.",
-  "hepatotoxicity": "Alacsony — DILI ritka, ALT-emelkedés <2% incidenciával dokumentált klinikai trial-okon (Khullar 2013 OAB-RCT PMID 23537815). CYP2D6 + CYP3A4 metabolizmus, drug-interaction kockázat metoprolol és desipramine mellett (Mirabegron CYP2D6 substrate-inhibitor, plasma-szint emelő).",
+  "aromatization": "Nem aromatizál (nem szteroid hatóanyag – szelektív β3-adrenoceptor agonista). Nincs CYP19-interakció, az ösztrogén-axis érintetlen.",
+  "hepatotoxicity": "Alacsony – DILI ritka, ALT-emelkedés <2% incidenciával dokumentált klinikai trial-okon (Khullar 2013 OAB-RCT PMID 23537815). CYP2D6 + CYP3A4 metabolizmus, drug-interaction kockázat metoprolol és desipramine mellett (Mirabegron CYP2D6 substrate-inhibitor, plasma-szint emelő).",
   "wadaStatus": "restricted",
   "androgenicRatio": "N/A (nem AAS)",
   "bindingAffinity": "β3-adrenoceptor Ki ~5-10 nM; β1/β2-receptor >50x alacsonyabb affinitás (szelektivitási index Astellas FDA-submission documentation).",
@@ -102,33 +102,33 @@ export default {
   ],
   "quality": {
     "pure": [
-      "FDA-jóváhagyott Myrbetriq tabletta (Astellas Pharma) vagy EMA Betmiga — pharmacy-szourzott biztosítja a hatóanyag-tartalmat",
+      "FDA-jóváhagyott Myrbetriq tabletta (Astellas Pharma) vagy EMA Betmiga – pharmacy-szourzott biztosítja a hatóanyag-tartalmat",
       "Generic Mirabegron-szubszt 2027 patent-expire utáni várt; jelenleg brand-only globálisan"
     ],
     "caution": [
       "BP home-tracking 2x/nap (FDA 2018 black-box hypertonia-risk, súlyos hypertonia + tachycardia case-cluster post-marketing)",
       "EKG-baseline + 4-week-check (resting HR + QTc-prolongation-monitoring)",
-      "CYP2D6 + CYP3A4 metabolizmus — SSRI fluoxetin / paroxetin interakció (plasma-szint emelő)",
+      "CYP2D6 + CYP3A4 metabolizmus – SSRI fluoxetin / paroxetin interakció (plasma-szint emelő)",
       "Metoprolol + desipramine plasma-szint dose-adjust szükséges Mirabegron-mellett",
-      "Tachyphylaxis 8-12 hét után — cycle-off 2-4 hét javasolt",
+      "Tachyphylaxis 8-12 hét után – cycle-off 2-4 hét javasolt",
       "Insomnia, anxietás low-incidence side-effect"
     ],
     "avoid": [
-      "Súlyos hypertonia (>180/110 mmHg) — abszolút kontraindikáció",
-      "Pre-existing tachyarrhythmia, cardiomyopathy — abszolút kontraindikáció",
-      "Krónikus β-blokkoló-terápia (metoprolol, propranolol) — β3-szelektivitás-zavar dokumentált",
+      "Súlyos hypertonia (>180/110 mmHg) – abszolút kontraindikáció",
+      "Pre-existing tachyarrhythmia, cardiomyopathy – abszolút kontraindikáció",
+      "Krónikus β-blokkoló-terápia (metoprolol, propranolol) – β3-szelektivitás-zavar dokumentált",
       "Terhesség és szoptatás (FDA pregnancy category C)",
-      "Pheochromocytoma — abszolút kontraindikáció (catecholamine-storm risk)",
+      "Pheochromocytoma – abszolút kontraindikáció (catecholamine-storm risk)",
       "Stroke-tört. (relativ kontraindikáció, individual-risk-assessment)"
     ]
   },
   "interactions": [
-    "Metoprolol + propranolol (β-blocker) — kontraindikált, β3-szelektivitás-zavar dokumentált klinikai trial-okon",
-    "Fluoxetin + paroxetin (SSRI CYP2D6-inhibitor) — Mirabegron plasma-szint emelkedés 2-3x",
-    "Desipramine + amitriptilin (TCA) — Mirabegron CYP2D6-substrate-inhibitor együtt magasabb plasma-szint, QTc-prolongation-risk",
-    "Albuterol + ephedrine + clenbuterol — additív kardio-stressz, magas HR + BP, kerülni javasolt",
-    "Caffeine + theobromine — szinergisztikus sympathomimetic effekt, BP-emelkedés magasabb",
-    "Digoxin — Mirabegron CYP3A4-mediated plasma-szint emelkedés digoxin-on, EKG-monitoring szükséges"
+    "Metoprolol + propranolol (β-blocker) – kontraindikált, β3-szelektivitás-zavar dokumentált klinikai trial-okon",
+    "Fluoxetin + paroxetin (SSRI CYP2D6-inhibitor) – Mirabegron plasma-szint emelkedés 2-3x",
+    "Desipramine + amitriptilin (TCA) – Mirabegron CYP2D6-substrate-inhibitor együtt magasabb plasma-szint, QTc-prolongation-risk",
+    "Albuterol + ephedrine + clenbuterol – additív kardio-stressz, magas HR + BP, kerülni javasolt",
+    "Caffeine + theobromine – szinergisztikus sympathomimetic effekt, BP-emelkedés magasabb",
+    "Digoxin – Mirabegron CYP3A4-mediated plasma-szint emelkedés digoxin-on, EKG-monitoring szükséges"
   ],
   "studies": [
     {
@@ -170,16 +170,16 @@ export default {
   ],
   "faq": [
     {
-      "q": "Mirabegron vs Clenbuterol — melyik biztonságosabb fat-loss-ra?",
+      "q": "Mirabegron vs Clenbuterol – melyik biztonságosabb fat-loss-ra?",
       "a": "A Mirabegron β3-szelektivitása (>50x β1/β2-felett) miatt a kardio-receptor-spillover minimális, így a Clenbuterol-szerű krónikus tachycardia + szívizom-hipertrófia rizikó alacsonyabb. Viszont a Mirabegron hypertonia-risk DOMINENS (FDA 2018 black-box update, súlyos hypertonia + tachycardia case-cluster post-marketing). Mindkettő-egyiknél: BP + EKG monitoring kötelező. A Clenbuterol akkumulációja (~35-40 óra t1/2) kiszámíthatatlanabb; a Mirabegron 1x/nap (~50 óra t1/2) steady-state-on könnyebb dose-titrálás."
     },
     {
       "q": "Mennyi BMR-emelkedés várható BAT-aktiváció mellett?",
-      "a": "5-10% ha a BAT-volume átlag (40-50 g aktív BAT, Cypess 2013 Nat Med PMID 23603815). Low-BAT-baseline egyénekben 0-3% (cold-exposure-non-induced, idősebb, BMI>30 — alacsonyabb BAT-volume). A Cypess 2015 Cell Metab PMID 25437872 single-dose 200 mg-on demonstrált akut BAT-aktivációt, krónikus-dose-on (4 hét+) Finlin 2020 PMID 32119651 +30-50% BAT-volume emelkedést mért 18F-FDG PET-CT-vel."
+      "a": "5-10% ha a BAT-volume átlag (40-50 g aktív BAT, Cypess 2013 Nat Med PMID 23603815). Low-BAT-baseline egyénekben 0-3% (cold-exposure-non-induced, idősebb, BMI>30 – alacsonyabb BAT-volume). A Cypess 2015 Cell Metab PMID 25437872 single-dose 200 mg-on demonstrált akut BAT-aktivációt, krónikus-dose-on (4 hét+) Finlin 2020 PMID 32119651 +30-50% BAT-volume emelkedést mért 18F-FDG PET-CT-vel."
     },
     {
       "q": "Hypertensive krízis kockázat valós?",
-      "a": "Igen — FDA 2018 black-box update súlyos hypertonia + tachycardia case-cluster utáni biztosítási követelmény. A klinikai trial-okon (Khullar 2013, ~13 000 beteg) ~5% incidence emelkedett BP, ~1% súlyos esetek. Pre-existing hypertonia (>140/90 mmHg) baseline-on Mirabegron-on tilos. Home BP-tracking 2x/nap (AM + estére) az első 4 hét + havi check krónikus dose-on minimum protokoll."
+      "a": "Igen – FDA 2018 black-box update súlyos hypertonia + tachycardia case-cluster utáni biztosítási követelmény. A klinikai trial-okon (Khullar 2013, ~13 000 beteg) ~5% incidence emelkedett BP, ~1% súlyos esetek. Pre-existing hypertonia (>140/90 mmHg) baseline-on Mirabegron-on tilos. Home BP-tracking 2x/nap (AM + estére) az első 4 hét + havi check krónikus dose-on minimum protokoll."
     },
     {
       "q": "Milyen drug-interaction veszélyes?",
@@ -225,5 +225,5 @@ export default {
       "purpose": "β3-receptor recovery + cardiovascular-baseline-helyreállítás verifikálása cycle-off előtt új cycle-ra"
     }
   },
-  "anecdote": "A Mirabegron a közösségi beszámolókban azzal tűnik ki, hogy azon kevés vegyületek egyike, amelynél tényleges humán bizonyíték van a barna zsírszövet (BAT) aktivációjára. A felhasználók jól tolerálhatónak írják le, valós, de enyhe, \"háttérben zajló\" termogén hatással, amely passzívan járul hozzá a zsírvesztéshez — jellemzően mindenféle stimuláns-szerű érzet nélkül. A beszámolók következetesen hosszú távú vegyületként keretezik, nem gyors fogyasztó eszközként.\n\nMagasabb dózisoknál a nyugalmi pulzus vagy a vérnyomás érezhető emelkedését jelentik, ezért egyes beszámolók szelektív béta-1 blokkolóval való együttadásról számolnak be; a kifejezettebb zsírvesztő hatások is jellemzően csak ezeknél a magasabb dózisoknál jelennek meg. A hidegexpozíciós protokollokkal való kombinálás az anekdoták szerint felerősíti a BAT-aktivációt, mivel mindkettő hasonló termogén útvonalakat céloz."
+  "anecdote": "A Mirabegron a közösségi beszámolókban azzal tűnik ki, hogy azon kevés vegyületek egyike, amelynél tényleges humán bizonyíték van a barna zsírszövet (BAT) aktivációjára. A felhasználók jól tolerálhatónak írják le, valós, de enyhe, \"háttérben zajló\" termogén hatással, amely passzívan járul hozzá a zsírvesztéshez – jellemzően mindenféle stimuláns-szerű érzet nélkül. A beszámolók következetesen hosszú távú vegyületként keretezik, nem gyors fogyasztó eszközként.\n\nMagasabb dózisoknál a nyugalmi pulzus vagy a vérnyomás érezhető emelkedését jelentik, ezért egyes beszámolók szelektív béta-1 blokkolóval való együttadásról számolnak be; a kifejezettebb zsírvesztő hatások is jellemzően csak ezeknél a magasabb dózisoknál jelennek meg. A hidegexpozíciós protokollokkal való kombinálás az anekdoták szerint felerősíti a BAT-aktivációt, mivel mindkettő hasonló termogén útvonalakat céloz."
 }

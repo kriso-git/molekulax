@@ -50,8 +50,8 @@ export default {
     }
   ],
   "mechanism": "Pierścień β-laktamowy wiąże aktywne miejsca kluczowych enzymów syntezy ściany komórkowej bakterii (PBP, białka wiążące penicylinę, transpeptydazy), hamując sieciowanie peptydoglikanu. Ściana komórkowa słabnie, prowadząc do lizy z powodu stresu osmotycznego. Działa bakteriobójczo na podatne organizmy. Ze względu na pseudoodwracalne wiązanie efekt jest zależny od dawki i czasu (T > MIC jest ważniejszym predyktorem AUC odpowiedzi klinicznej).",
-  "legalStatus": "UE/PL: na receptę (Amoxil, Ospamox, Hiconcil, Duomox, generyki). USA: FDA Rx. Program stewardship antybiotykowy nakłada ścisłe kryteria przepisywania — empiryczne przepisywanie tylko dla potwierdzonej infekcji bakteryjnej. Kategoria WHO AWaRe: ACCESS (szeroko stosowany, niskie ryzyko oporności).",
-  "bioavailability": "~74-92% (doustnie, niewielki wpływ pokarmu — etykieta FDA Amoxil)",
+  "legalStatus": "UE/PL: na receptę (Amoxil, Ospamox, Hiconcil, Duomox, generyki). USA: FDA Rx. Program stewardship antybiotykowy nakłada ścisłe kryteria przepisywania – empiryczne przepisywanie tylko dla potwierdzonej infekcji bakteryjnej. Kategoria WHO AWaRe: ACCESS (szeroko stosowany, niskie ryzyko oporności).",
+  "bioavailability": "~74-92% (doustnie, niewielki wpływ pokarmu – etykieta FDA Amoxil)",
   "onsetTime": "1-2 h (plasma peak), 24-72 h (clinical symptom response)",
   "halfLife": "1-1.5 h (normal renal function); extends to 7-21 h in renal failure",
   "atcCode": "J01CA04",
@@ -68,7 +68,7 @@ export default {
   "contraindications": [
     "Znana alergia na penicylinę lub β-laktamy (wywiad anafilaksji)",
     "Wywiad ciężkiej nadwrażliwości (Stevens-Johnson, TEN, DRESS)",
-    "Infekcja mononukleozą (EBV) — amoksycylina powoduje wysypkę plamisto-grudkową w 80-95%"
+    "Infekcja mononukleozą (EBV) – amoksycylina powoduje wysypkę plamisto-grudkową w 80-95%"
   ],
   "commonSideEffects": [
     "GI: biegunka (10%, związana z antybiotykiem), nudności (5%), wymioty (3%)",
@@ -96,7 +96,7 @@ export default {
     "Standard złoty profilaktyki zapalenia wsierdzia stomatologicznego (wytyczne AHA 2007)"
   ],
   "quickStart": [
-    "POTWIERDZENIE diagnozy najpierw — antybiotyk TYLKO dla potwierdzonej infekcji bakteryjnej (nie wirusowej)",
+    "POTWIERDZENIE diagnozy najpierw – antybiotyk TYLKO dla potwierdzonej infekcji bakteryjnej (nie wirusowej)",
     "Standardowa dawka u dorosłych 500 mg co 8 h (q8h) lub 875 mg co 12 h (q12h)",
     "W ciężkiej infekcji 1000 mg q8h lub q12h, możliwie jako Augmentin (amoksycylina + kwas klawulanowy)",
     "Z jedzeniem lub bez, nawodnienie (2 L/dzień) dla łagodzenia krystallurii",
@@ -124,7 +124,7 @@ export default {
     ],
     "caution": [
       "Wywiad alergii na penicylinę: reaktywność krzyżowa cefalosporyn 1-10%, zalecana szczegółowa ocena alergologiczna",
-      "Przy podejrzeniu mononukleozy (EBV) NIE przepisywać — 80-95% ryzyka wysypki",
+      "Przy podejrzeniu mononukleozy (EBV) NIE przepisywać – 80-95% ryzyka wysypki",
       "Niewydolność nerek (eGFR < 30): wymagana redukcja dawki i/lub wydłużenie odstępu",
       "Biegunka związana z antybiotykiem (oznaki ostrzegawcze zapalenia jelita C. difficile)"
     ],
@@ -134,7 +134,7 @@ export default {
       "Mononukleoza lub inna podejrzana infekcja wirusowa (przeziębienie, grypa)",
       "Samoleczenie dawkami subterapeutycznymi (rozwój oporności)",
       "Wcześniejsza cholestatyczna żółtaczka lub zaburzenia czynności wątroby indukowane amoksycyliną/klawulanianem",
-      "Ciężka niewydolność nerek (CrCl <30 ml/min) bez korekty dawki — ryzyko kumulacji i toksyczności",
+      "Ciężka niewydolność nerek (CrCl <30 ml/min) bez korekty dawki – ryzyko kumulacji i toksyczności",
       "Wcześniejsze rzekomobłoniaste zapalenie jelita grubego związane z C. difficile po antybiotyku beta-laktamowym"
     ]
   },
@@ -196,7 +196,7 @@ export default {
     },
     {
       "q": "Co oznacza \"wysypka amoksycyliny z EBV\"?",
-      "a": "Mononukleoza zakaźna (wirus Epsteina-Barr, \"choroba pocałunkowa\") klasycznie objawia się wysypką plamisto-grudkową przy amoksycylinie (lub ampicylinie) — 80-95% częstość. NIE jest to alergia IgE-zależna na penicylinę, lecz wirusowo-superinfekcyjny mechanizm kompleksów immunologicznych. Pacjent NIE będzie później uczulony na penicylinę. Mimo to natychmiast przerwij leczenie i sprawdź serologię EBV (przeciwciało heterofilne, anty-VCA IgM). Wybierz inny antybiotyk (lub żaden, bo EBV jest wirusowe)."
+      "a": "Mononukleoza zakaźna (wirus Epsteina-Barr, \"choroba pocałunkowa\") klasycznie objawia się wysypką plamisto-grudkową przy amoksycylinie (lub ampicylinie) – 80-95% częstość. NIE jest to alergia IgE-zależna na penicylinę, lecz wirusowo-superinfekcyjny mechanizm kompleksów immunologicznych. Pacjent NIE będzie później uczulony na penicylinę. Mimo to natychmiast przerwij leczenie i sprawdź serologię EBV (przeciwciało heterofilne, anty-VCA IgM). Wybierz inny antybiotyk (lub żaden, bo EBV jest wirusowe)."
     },
     {
       "q": "Dlaczego ukończyć pełny kurs antybiotyku?",
@@ -222,6 +222,6 @@ export default {
       "high": 1000
     },
     "unit": "mg",
-    "note": "Niska (500 mg q8h, 3x/dzień): standardowe zapalenie ucha, zatok, ostry UTI, łagodna infekcja. Średnia (875 mg q12h, 2x/dzień): środowiskowe zapalenie płuc, cięższa infekcja — często preferowane dla lepszego compliance. Wysoka (1000 mg q8h, 3x/dzień): ciężka infekcja, potrójna terapia H. pylori, profilaktyka endocarditis stomatologicznego 2 g jednorazowo. Z jedzeniem lub bez, nawodnienie. Ukończyć pełny kurs wg instrukcji lekarza, zwykle 5-14 dni."
+    "note": "Niska (500 mg q8h, 3x/dzień): standardowe zapalenie ucha, zatok, ostry UTI, łagodna infekcja. Średnia (875 mg q12h, 2x/dzień): środowiskowe zapalenie płuc, cięższa infekcja – często preferowane dla lepszego compliance. Wysoka (1000 mg q8h, 3x/dzień): ciężka infekcja, potrójna terapia H. pylori, profilaktyka endocarditis stomatologicznego 2 g jednorazowo. Z jedzeniem lub bez, nawodnienie. Ukończyć pełny kurs wg instrukcji lekarza, zwykle 5-14 dni."
   }
 }

@@ -51,7 +51,7 @@ export default {
   ],
   "mechanism": "Konkurencyjnie hamuje reduktazę HMG-CoA w hepatocytach, zmniejszając szlak mewalonianu (spowolnienie de novo syntezy cholesterolu). Zmniejszony cholesterol wewnątrzkomórkowy reguluje w górę receptory LDL, oczyszczając krążący LDL do wątroby. Efekty plejotropowe: przeciwzapalne (redukcja CRP w JUPITER), poprawa funkcji śródbłonka, stabilizacja blaszki.",
   "legalStatus": "UE/PL: na receptę (Sortis, Atoris, Tulip, Atorvox, generyki). USA: FDA Rx (Lipitor, generyki). Brak potencjału nadużywania, niekontrolowany. Formy generyczne biorównoważne (FDA Orange Book AB).",
-  "bioavailability": "~14% (doustnie, klirens presystemowy + metabolizm first-pass — etykieta FDA Lipitor)",
+  "bioavailability": "~14% (doustnie, klirens presystemowy + metabolizm first-pass – etykieta FDA Lipitor)",
   "onsetTime": "1-2 weeks (lipid lowering), 4-6 weeks (steady-state LDL effect)",
   "halfLife": "14 h (parent), 20-30 h (active ortho- and para-hydroxylated metabolites)",
   "atcCode": "C10AA05",

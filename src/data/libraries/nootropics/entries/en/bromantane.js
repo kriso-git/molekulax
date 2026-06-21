@@ -138,7 +138,7 @@ export default {
     },
     {
       "q": "Why combine with L-Tyrosine?",
-      "a": "Bromantane upregulates tyrosine hydroxylase (TH), the rate-limiting enzyme converting L-tyrosine → L-DOPA → dopamine. L-tyrosine co-administration (500-1000 mg) provides the raw substrate for the upregulated enzyme to work on — otherwise the TH-upregulation benefit stays limited."
+      "a": "Bromantane upregulates tyrosine hydroxylase (TH), the rate-limiting enzyme converting L-tyrosine → L-DOPA → dopamine. L-tyrosine co-administration (500-1000 mg) provides the raw substrate for the upregulated enzyme to work on – otherwise the TH-upregulation benefit stays limited."
     }
   ],
   "related": [

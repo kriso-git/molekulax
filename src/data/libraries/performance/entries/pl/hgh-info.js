@@ -27,7 +27,7 @@ export default {
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "Rekombinowany ludzki hormon wzrostu (rhGH, Somatropin). Egzogenne wsparcie GH, zakazany przez WADA.",
-  "description": "Rekombinowany ludzki hormon wzrostu (rhGH, Somatropin) to biologicznie identyczna forma naturalnego GH. Zatwierdzony FDA dla niedoboru GH, zespołu Turnera, kacheksji AIDS. W sporcie off-label dla masy + recovery + redukcji. WADA-zakazany. **Kluczowe niuanse**: (a) **IGF-1 jako pierwotny efektor** — sam GH mniej anaboliczny, główny mediator to wątrobowy IGF-1 (70-80% anabolizmu sportowego przez IGF-1); (b) **Konwersja T4→reverse T3**: na HGH rT3 rośnie, aktywne T3 spada → ryzyko subklinicznej niedoczynności tarczycy; ko-administracja T4/T3 + panel TSH/fT3/fT4/rT3 mid-cycle OBOWIĄZKOWE; (c) **Zespół cieśni nadgarstka i obrzęki obwodowe**: retencja płynów + Na+ → kompresja nerwów, głównie powyżej 4-6 IU/dzień; (d) **Podanie SC na czczo**: przed snem lub min. 2-4 h po posiłku, bo insulina bezpośrednio antagonizuje GH.",
+  "description": "Rekombinowany ludzki hormon wzrostu (rhGH, Somatropin) to biologicznie identyczna forma naturalnego GH. Zatwierdzony FDA dla niedoboru GH, zespołu Turnera, kacheksji AIDS. W sporcie off-label dla masy + recovery + redukcji. WADA-zakazany. **Kluczowe niuanse**: (a) **IGF-1 jako pierwotny efektor** – sam GH mniej anaboliczny, główny mediator to wątrobowy IGF-1 (70-80% anabolizmu sportowego przez IGF-1); (b) **Konwersja T4→reverse T3**: na HGH rT3 rośnie, aktywne T3 spada → ryzyko subklinicznej niedoczynności tarczycy; ko-administracja T4/T3 + panel TSH/fT3/fT4/rT3 mid-cycle OBOWIĄZKOWE; (c) **Zespół cieśni nadgarstka i obrzęki obwodowe**: retencja płynów + Na+ → kompresja nerwów, głównie powyżej 4-6 IU/dzień; (d) **Podanie SC na czczo**: przed snem lub min. 2-4 h po posiłku, bo insulina bezpośrednio antagonizuje GH.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -55,8 +55,8 @@ export default {
     "thyroid hormones",
     "glucocorticoids"
   ],
-  "aromatization": "Nie dotyczy — 191-aminokwasowy hormon peptydowy (somatotropina), NIE steroid; brak interakcji z CYP19",
-  "hepatotoxicity": "Niska — brak bezpośredniej hepatotoksyczności; wzrost IGF-1 pośrednio zwiększa ryzyko T2DM/oporności insulinowej (Mauras 2005)",
+  "aromatization": "Nie dotyczy – 191-aminokwasowy hormon peptydowy (somatotropina), NIE steroid; brak interakcji z CYP19",
+  "hepatotoxicity": "Niska – brak bezpośredniej hepatotoksyczności; wzrost IGF-1 pośrednio zwiększa ryzyko T2DM/oporności insulinowej (Mauras 2005)",
   "wadaStatus": "banned",
   "detectionWindow": "~24 h test bezpośredni; biomarker 7-14 dni.",
   "benefits": [
@@ -64,7 +64,7 @@ export default {
     "Redukcja tłuszczu",
     "Regeneracja",
     "Poprawa skóry, włosów",
-    "Poprawa tkanki łącznej i gęstości kolagenu typu 1 (skóra, powięź, ścięgna, chrząstki) — w kontekście anti-aging główny udokumentowany efekt HGH przy niskich protokołach 1-2 IU/dzień"
+    "Poprawa tkanki łącznej i gęstości kolagenu typu 1 (skóra, powięź, ścięgna, chrząstki) – w kontekście anti-aging główny udokumentowany efekt HGH przy niskich protokołach 1-2 IU/dzień"
   ],
   "studies": [
     {

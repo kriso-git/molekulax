@@ -1,4 +1,4 @@
-// Post-roadmap 2026-05-20 — Hard-removed peptide entry IDs.
+// Post-roadmap 2026-05-20 – Hard-removed peptide entry IDs.
 // Deep-links to these slugs render RedirectFlash + redirect to library top
 // after 1.8s. EntryDetailRoute checks `library.deprecatedIds.includes(parsed.id)`
 // BEFORE attempting loadEntry().

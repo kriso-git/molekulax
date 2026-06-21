@@ -1,4 +1,4 @@
-// Phase 10 — Doto neon chemical-structure placeholder.
+// Phase 10 – Doto neon chemical-structure placeholder.
 // Renders when nootropic library is active and entry has no image.
 //
 // Render priority:
@@ -22,7 +22,7 @@ const CHEMICAL_GREEN = '#00ff99'
 const SIZE_LARGE  = 'text-[clamp(1.4rem,16cqi,2.6rem)]'  // short formulas, ≤8 visible chars
 const SIZE_MEDIUM = 'text-[clamp(1.15rem,13cqi,2.1rem)]' // 9-11 chars
 const SIZE_SMALL  = 'text-[clamp(0.95rem,10.5cqi,1.7rem)]' // 12+ chars
-// Name-mode sizes (single token, no subscripts) — slightly tighter scaling.
+// Name-mode sizes (single token, no subscripts) – slightly tighter scaling.
 const NAME_SIZE_LARGE  = 'text-[clamp(1.1rem,11cqi,2rem)]'
 const NAME_SIZE_MEDIUM = 'text-[clamp(0.95rem,9cqi,1.6rem)]'
 
@@ -74,7 +74,7 @@ function splitName(name) {
   const trimmed = (name || '').trim()
   if (!trimmed) return ['', '']
   if (trimmed.length <= 10) return [trimmed]
-  // Only split at word boundaries — never inside a word. Apostrophes and
+  // Only split at word boundaries – never inside a word. Apostrophes and
   // backticks are intra-word punctuation (Lion's) so we must NOT split there.
   const breakChars = new Set([' ', '-', '–'])
   const mid = Math.floor(trimmed.length / 2)
@@ -141,7 +141,7 @@ function PlaceholderShell({ children, ariaLabel, className, cornerColor }) {
           `linear-gradient(135deg, ${tint(cc, 0.05)} 0%, transparent 50%, rgba(99,102,241,0.05) 100%), ` +
           // Always dark (NOT var(--bg-base)) so the glowing molecule / neon image
           // and the mix-blend-mode:screen video composite correctly in BOTH themes
-          // — on a light --bg-base they wash out to nothing. A dark HUD tile in a
+          // – on a light --bg-base they wash out to nothing. A dark HUD tile in a
           // light card reads as an intentional "scope" display.
           '#0a0a16',
         border: `1px solid ${tint(cc, 0.22)}`,
@@ -177,7 +177,7 @@ function NeonText({ children, sizeClass, letterSpacing = '0.03em' }) {
         color: CHEMICAL_GREEN,
         textShadow:
           '0 0 4px rgba(0,255,153,0.9), 0 0 12px rgba(0,255,153,0.7), 0 0 28px rgba(0,255,153,0.45), 0 0 56px rgba(0,255,153,0.25)',
-        /* Static — pulse intentionally removed: animating filter brightness
+        /* Static – pulse intentionally removed: animating filter brightness
            on an element with 3 stacked drop-shadow filters forced a paint
            every frame across 44 gallery tiles, blocking 60fps during cube
            rotation. The shell still pulses (opacity/transform, GPU-only). */
@@ -203,7 +203,7 @@ function MoleculeImage({ entryId, name }) {
           'drop-shadow(0 0 6px rgba(0,255,153,0.85)) ' +
           'drop-shadow(0 0 14px rgba(0,255,153,0.55)) ' +
           'drop-shadow(0 0 28px rgba(0,255,153,0.30))',
-        /* Static — pulse intentionally removed: animating filter brightness
+        /* Static – pulse intentionally removed: animating filter brightness
            on an element with 3 stacked drop-shadow filters forced a paint
            every frame across 44 gallery tiles, blocking 60fps during cube
            rotation. The shell still pulses (opacity/transform, GPU-only). */
@@ -260,7 +260,7 @@ export default function ChemicalFormulaPlaceholder({ formula, name, entryId, acc
               'drop-shadow(0 0 6px rgba(0,255,153,0.85)) ' +
               'drop-shadow(0 0 14px rgba(0,255,153,0.55)) ' +
               'drop-shadow(0 0 28px rgba(0,255,153,0.30))',
-            /* Static — pulse intentionally removed: animating filter brightness
+            /* Static – pulse intentionally removed: animating filter brightness
            on an element with 3 stacked drop-shadow filters forced a paint
            every frame across 44 gallery tiles, blocking 60fps during cube
            rotation. The shell still pulses (opacity/transform, GPU-only). */

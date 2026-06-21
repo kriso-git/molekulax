@@ -25,11 +25,11 @@ export default {
   "image": "/pharmaceutical/softgel-orange.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
-  "shortDesc": "Kwas 13-cis-retinowy (Roche Roaccutane). Złoty standard dla ciężkiego trądziku guzkowo-torbielowatego. Kategoria X FDA z powodu teratogenności — program iPLEDGE obowiązkowy.",
-  "description": "Izotretynoina (Roche Roaccutane / Accutane, FDA 1982) to złoty standard leczenia ciężkiego trądziku guzkowo-torbielowatego. Kwas 13-cis-retinowy (metabolit witaminy A) powoduje atrofię gruczołów łojowych, redukcję produkcji łoju i hamowanie wzrostu P. acnes. EKSTREMALNA TERATOGENNOŚĆ (kategoria X FDA) — każda pacjentka musi uczestniczyć w programie zapobiegania ciąży (USA: iPLEDGE, UE: podobne krajowe programy). 2 negatywne testy ciążowe przed startem, 2 formy antykoncepcji obowiązkowe, comiesięczne testy. Layton 2009 (PMID 20436884) 6-miesięczny kurs daje trwałą remisję w ~80% przypadków.",
+  "shortDesc": "Kwas 13-cis-retinowy (Roche Roaccutane). Złoty standard dla ciężkiego trądziku guzkowo-torbielowatego. Kategoria X FDA z powodu teratogenności – program iPLEDGE obowiązkowy.",
+  "description": "Izotretynoina (Roche Roaccutane / Accutane, FDA 1982) to złoty standard leczenia ciężkiego trądziku guzkowo-torbielowatego. Kwas 13-cis-retinowy (metabolit witaminy A) powoduje atrofię gruczołów łojowych, redukcję produkcji łoju i hamowanie wzrostu P. acnes. EKSTREMALNA TERATOGENNOŚĆ (kategoria X FDA) – każda pacjentka musi uczestniczyć w programie zapobiegania ciąży (USA: iPLEDGE, UE: podobne krajowe programy). 2 negatywne testy ciążowe przed startem, 2 formy antykoncepcji obowiązkowe, comiesięczne testy. Layton 2009 (PMID 20436884) 6-miesięczny kurs daje trwałą remisję w ~80% przypadków.",
   "mechanism": "Częściowy agonista receptora retinoidowego (RAR). Atrofia gruczołów łojowych, redukcja produkcji łoju o ~80%, redukcja populacji P. acnes, normalizacja hiperkeratynizacji mieszkowej.",
   "legalStatus": "UE/PL: na receptę, ściśle nadzorowane przez dermatologa (Roaccutane). USA: FDA Rx program iPLEDGE.",
-  "bioavailability": "~25% (doustnie, na czczo; >2× wyższa z posiłkiem wysokotłuszczowym — etykieta FDA Accutane)",
+  "bioavailability": "~25% (doustnie, na czczo; >2× wyższa z posiłkiem wysokotłuszczowym – etykieta FDA Accutane)",
   "onsetTime": "4-8 weeks (initial improvement), 4-6 months (full course)",
   "halfLife": "~21 h (parent), 24 h (active 4-oxo-isotretinoin)",
   "atcCode": "D10BA01",
@@ -40,7 +40,7 @@ export default {
     "Off-label: ciężki trądzik różowaty, hidradenitis suppurativa"
   ],
   "contraindications": [
-    "CIĄŻA (kategoria X FDA — ciężkie wady twarzoczaszki, CV, CNS)",
+    "CIĄŻA (kategoria X FDA – ciężkie wady twarzoczaszki, CV, CNS)",
     "Wiek rozrodczy bez antykoncepcji",
     "Hiperwitaminoza A, ciężka choroba wątroby"
   ],
@@ -48,14 +48,14 @@ export default {
     "Zapalenie warg (suchość warg, 90%), suchość skóry, xerophthalmia, krwawienia z nosa",
     "Wzrost triglicerydów i cholesterolu",
     "Ból mięśni, pleców, wzrost ALT/AST",
-    "Ciężkie: CIĘŻKA TERATOGENNOŚĆ (X), objawy psychiatryczne (depresja, samobójstwo — ostrzeżenie FDA), pseudotumor cerebri, IBD (dyskusja)"
+    "Ciężkie: CIĘŻKA TERATOGENNOŚĆ (X), objawy psychiatryczne (depresja, samobójstwo – ostrzeżenie FDA), pseudotumor cerebri, IBD (dyskusja)"
   ],
   "cyp450": [
     "CYP2C9, CYP2C8, CYP3A4 (multiple)",
     "Photo-degradation"
   ],
   "crossMolInteractions": [
-    "Tetracyklina (doksycyklina, tetracyklina): CIĘŻKIE ryzyko pseudotumor cerebri — ZAKAZANE",
+    "Tetracyklina (doksycyklina, tetracyklina): CIĘŻKIE ryzyko pseudotumor cerebri – ZAKAZANE",
     "Witamina A (multiwitamina): addytywność hiperwitaminozy, unikać",
     "Alkohol: hepatotoksyczność + addytywność triglicerydów, umiar",
     "Wysokie dawki kortykosteroidów: zaburzenie mineralizacji kości"
@@ -92,7 +92,7 @@ export default {
   ],
   "doseCalc": {
     "type": "warning",
-    "warning": "Izotretynoina to ZŁOTY STANDARD dla CIĘŻKIEGO TRĄDZIKU, ale ŚCIŚLE POD NADZOREM DERMATOLOGA z protokołem prewencji ciąży (USA: iPLEDGE, UE: programy krajowe). BRAK KALKULATORA DAWEK na tej stronie, ponieważ: (1) kategoria X FDA TERATOGENNOŚĆ — pojedyncze pominięcie antykoncepcji lub kontroli laboratoryjnej może prowadzić do ciężkiej wady płodu; (2) kumulatywna dawka (120-150 mg/kg masy ciała/kurs) jest indywidualna, kalkulowana przez dermatologa; (3) COMIESIĘCZNA CBC, próby wątrobowe + LIPIDY OBOWIĄZKOWE; (4) Kombinacja z tetracykliną ZAKAZANA (pseudotumor cerebri); (5) Objawy psychiatryczne (depresja-samobójstwo) ostrzeżenie FDA. Porozmawiaj z dermatologiem. Objawy nagłe (zaburzenia wzroku, uporczywy ból głowy, depresja, krew w stolcu, podejrzenie ciąży): NATYCHMIASTOWA opieka."
+    "warning": "Izotretynoina to ZŁOTY STANDARD dla CIĘŻKIEGO TRĄDZIKU, ale ŚCIŚLE POD NADZOREM DERMATOLOGA z protokołem prewencji ciąży (USA: iPLEDGE, UE: programy krajowe). BRAK KALKULATORA DAWEK na tej stronie, ponieważ: (1) kategoria X FDA TERATOGENNOŚĆ – pojedyncze pominięcie antykoncepcji lub kontroli laboratoryjnej może prowadzić do ciężkiej wady płodu; (2) kumulatywna dawka (120-150 mg/kg masy ciała/kurs) jest indywidualna, kalkulowana przez dermatologa; (3) COMIESIĘCZNA CBC, próby wątrobowe + LIPIDY OBOWIĄZKOWE; (4) Kombinacja z tetracykliną ZAKAZANA (pseudotumor cerebri); (5) Objawy psychiatryczne (depresja-samobójstwo) ostrzeżenie FDA. Porozmawiaj z dermatologiem. Objawy nagłe (zaburzenia wzroku, uporczywy ból głowy, depresja, krew w stolcu, podejrzenie ciąży): NATYCHMIASTOWA opieka."
   },
-  "anecdote": "Raporty anegdotyczne opisują Izotretynoinę (Accutane) jako leczenie ogólnoustrojowe, a nie miejscowy lek na skórę, którego efekty wykraczają poza oczyszczenie trądziku. Użytkownicy często zauważają zwiększoną elastyczność skóry, niektórzy zgłaszają pełniej wyglądające rysy twarzy (nos, usta) w trakcie i po kuracji — silnie zależne od osobnika. Długoterminowa remisja trądziku to znaczący wynik zgłaszany przez wielu. Skutki uboczne związane z nastrojem pozostają przedmiotem dyskusji; dowody są mieszane, ale uzasadniają badania przesiewowe. Kontekst kliniczny: monitorowanie lipidogramu i prób wątrobowych jest obowiązkowe, a teratogenność kategorii X FDA wymaga rejestracji w iPLEDGE u pacjentek z surowymi protokołami zapobiegania ciąży."
+  "anecdote": "Raporty anegdotyczne opisują Izotretynoinę (Accutane) jako leczenie ogólnoustrojowe, a nie miejscowy lek na skórę, którego efekty wykraczają poza oczyszczenie trądziku. Użytkownicy często zauważają zwiększoną elastyczność skóry, niektórzy zgłaszają pełniej wyglądające rysy twarzy (nos, usta) w trakcie i po kuracji – silnie zależne od osobnika. Długoterminowa remisja trądziku to znaczący wynik zgłaszany przez wielu. Skutki uboczne związane z nastrojem pozostają przedmiotem dyskusji; dowody są mieszane, ale uzasadniają badania przesiewowe. Kontekst kliniczny: monitorowanie lipidogramu i prób wątrobowych jest obowiązkowe, a teratogenność kategorii X FDA wymaga rejestracji w iPLEDGE u pacjentek z surowymi protokołami zapobiegania ciąży."
 }

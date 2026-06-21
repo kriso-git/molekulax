@@ -138,7 +138,7 @@ export default {
     },
     {
       "q": "Dlaczego łączyć z L-tyrozyną?",
-      "a": "Bromantan zwiększa ekspresję hydroksylazy tyrozynowej (TH), enzymu ograniczającego tempo konwersji L-tyrozyna → L-DOPA → dopamina. Współpodawanie L-tyrozyny (500-1000 mg) zapewnia surowy substrat dla podwyższonego enzymu — bez tego korzyść TH-upregulation pozostaje ograniczona."
+      "a": "Bromantan zwiększa ekspresję hydroksylazy tyrozynowej (TH), enzymu ograniczającego tempo konwersji L-tyrozyna → L-DOPA → dopamina. Współpodawanie L-tyrozyny (500-1000 mg) zapewnia surowy substrat dla podwyższonego enzymu – bez tego korzyść TH-upregulation pozostaje ograniczona."
     }
   ],
   "related": [

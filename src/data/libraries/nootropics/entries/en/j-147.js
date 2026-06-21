@@ -38,7 +38,7 @@ export default {
       "value": "Investigational, not FDA-approved"
     }
   ],
-  "mechanism": "Direct modulation of the F1 catalytic subunit (ATP5A) of ATP synthase → enhanced mitochondrial ATP production and reduced free-radical generation. Secondarily, upregulation of BDNF and NGF gene expression with CREB-pathway activation. NOT a direct amyloid-plaque target — the cognitive effect operates via mitochondrial energy restoration and neurotrophin induction.",
+  "mechanism": "Direct modulation of the F1 catalytic subunit (ATP5A) of ATP synthase → enhanced mitochondrial ATP production and reduced free-radical generation. Secondarily, upregulation of BDNF and NGF gene expression with CREB-pathway activation. NOT a direct amyloid-plaque target – the cognitive effect operates via mitochondrial energy restoration and neurotrophin induction.",
   "legalStatus": "EU/HU: no medical approval, investigational compound. USA: research use only, not FDA-approved. Available on the \"research chemical\" market; human use without medical supervision is NOT recommended.",
   "chemicalFormula": "C18H17F3N4O"
 }

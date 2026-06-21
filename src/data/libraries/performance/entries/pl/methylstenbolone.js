@@ -41,7 +41,7 @@ export default {
       "value": "USA: kontrolowany od 2014."
     }
   ],
-  "mechanism": "Silny agonista AR. **Selektywność AR**: grupa 2,3α-epitio blokuje powinowactwo do aromatazy ORAZ konwersję 5α-reduktazą, dając czysty profil agonisty AR (brak konwersji do E2 ani DHT). **SYMETRYCZNY stosunek 660:660 oznacza, że androgenność prostaty jest TAK SAMO SILNA jak efekt anaboliczny** — stąd efekty prostaty (trądzik, agresja, łysienie androgenne, przerost) bardziej wyraźne niż Superdrol (400:20). Grupa 17α-metylowa zapewnia biodostępność, ale powoduje hepatotoksyczność.",
+  "mechanism": "Silny agonista AR. **Selektywność AR**: grupa 2,3α-epitio blokuje powinowactwo do aromatazy ORAZ konwersję 5α-reduktazą, dając czysty profil agonisty AR (brak konwersji do E2 ani DHT). **SYMETRYCZNY stosunek 660:660 oznacza, że androgenność prostaty jest TAK SAMO SILNA jak efekt anaboliczny** – stąd efekty prostaty (trądzik, agresja, łysienie androgenne, przerost) bardziej wyraźne niż Superdrol (400:20). Grupa 17α-metylowa zapewnia biodostępność, ale powoduje hepatotoksyczność.",
   "legalStatus": "USA: kontrolowany od 2014. UE: nielegalny bez recepty. WADA: zakazany.",
   "onsetTime": "7-10 days",
   "halfLife": "8-12 h",
@@ -50,8 +50,8 @@ export default {
     "NSAIDs",
     "liver hepatotoxins"
   ],
-  "aromatization": "Nie — designerski steroid 2α,17α-dimetylowy, NIE substrat CYP19; typowe \"dry gains\" (Cohen 2014 NEJM list designer AAS)",
-  "hepatotoxicity": "Bardzo wysoka — designerski 17α-alkilowany, udokumentowane ciężkie przypadki DILI (ostre zapalenie wątroby w ciągu 4-6 tygodni) (PubMed Robles-Diaz 2015)",
+  "aromatization": "Nie – designerski steroid 2α,17α-dimetylowy, NIE substrat CYP19; typowe \"dry gains\" (Cohen 2014 NEJM list designer AAS)",
+  "hepatotoxicity": "Bardzo wysoka – designerski 17α-alkilowany, udokumentowane ciężkie przypadki DILI (ostre zapalenie wątroby w ciągu 4-6 tygodni) (PubMed Robles-Diaz 2015)",
   "wadaStatus": "banned",
   "androgenicRatio": "660:660",
   "benefits": [

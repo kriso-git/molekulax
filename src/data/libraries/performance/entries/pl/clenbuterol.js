@@ -55,8 +55,8 @@ export default {
     "thyroid hormones",
     "insulin"
   ],
-  "aromatization": "Nie dotyczy — bronchodilatator agonista β2, NIE steroid; brak substratu aromatazy",
-  "hepatotoxicity": "Niska — dominuje kardiotoksyczność (uszkodzenie kardiomiocytów, przerost, arytmia); znikome obciążenie wątroby (Beermann 2009)",
+  "aromatization": "Nie dotyczy – bronchodilatator agonista β2, NIE steroid; brak substratu aromatazy",
+  "hepatotoxicity": "Niska – dominuje kardiotoksyczność (uszkodzenie kardiomiocytów, przerost, arytmia); znikome obciążenie wątroby (Beermann 2009)",
   "wadaStatus": "banned",
   "detectionWindow": "7-14 dni mocz (czułe testy LC-MS w laboratoriach akredytowanych WADA).",
   "benefits": [
@@ -101,7 +101,7 @@ export default {
       "Każde zaburzenie sercowo-naczyniowe (nadciśnienie, arytmia, wywiad rodzinny) to bezwzględne przeciwwskazanie",
       "Nadczynność tarczycy to przeciwwskazanie",
       "Terapia β-blokerami przeciwwskazuje Clenbuterol",
-      "Kardiomiopatia, przebyty MI — przedłużona tachykardia powoduje włóknienie mięśnia sercowego i przerost lewej komory",
+      "Kardiomiopatia, przebyty MI – przedłużona tachykardia powoduje włóknienie mięśnia sercowego i przerost lewej komory",
       "Padaczka, drgawki w wywiadzie (β2 + hipokaliemia obniża próg drgawkowy)",
       "Ciężki lęk lub zaburzenia paniczne",
       "Ciąża i karmienie piersią (teratogenny w badaniach na zwierzętach, efekty rozwojowe serca)"
@@ -170,7 +170,7 @@ export default {
     },
     {
       "q": "Czy naprawdę bada się go w chorobie Parkinsona?",
-      "a": "Tak, na poziomie przedklinicznym. Według przeglądu Mittal i wsp. 2024 (Mov Disord, PMID 38953404), agoniści β2 (klenbuterol, salbutamol) w modelach przedklinicznych (mysz MPTP, kultura komórkowa) wykazują wzrost mózgowego przepływu krwi plus ochronę neuronów dopaminergicznych przez hamowanie agregacji α-synukleiny i aktywację szlaków neurotroficznych. WYŁĄCZNIE w kontekście badawczym — nie ma zastosowania jako Rx w chorobie Parkinsona u ludzi, a profil kardiotoksyczny ogranicza badania kliniczne. Interesująca alternatywa β2 w badaniach: salbutamol (krótszy t1/2, bezpieczniejszy)."
+      "a": "Tak, na poziomie przedklinicznym. Według przeglądu Mittal i wsp. 2024 (Mov Disord, PMID 38953404), agoniści β2 (klenbuterol, salbutamol) w modelach przedklinicznych (mysz MPTP, kultura komórkowa) wykazują wzrost mózgowego przepływu krwi plus ochronę neuronów dopaminergicznych przez hamowanie agregacji α-synukleiny i aktywację szlaków neurotroficznych. WYŁĄCZNIE w kontekście badawczym – nie ma zastosowania jako Rx w chorobie Parkinsona u ludzi, a profil kardiotoksyczny ogranicza badania kliniczne. Interesująca alternatywa β2 w badaniach: salbutamol (krótszy t1/2, bezpieczniejszy)."
     }
   ],
   "related": [
@@ -207,5 +207,5 @@ export default {
     "unit": "mcg/nap",
     "note": "Tytracja dawki: +20 mcg/dzień co 2-3 dni. Maks. 120-140 mcg/dzień. Tauryna 3 g + magnez 2 g/dzień. Dziennik ciśnienia, EKG po 6 tygodniach."
   },
-  "anecdote": "Klenbuterol ma notoryczną reputację z dobrego powodu — raporty anegdotyczne opisują go jako wysoce skuteczny w redukcji tkanki tłuszczowej, ale z istotnym obciążeniem działaniami niepożądanymi. Użytkownicy zazwyczaj zgłaszają wzrost energii, silną stymulację, podwyższoną częstość akcji serca i produkcję ciepła dość szybko po dawkowaniu. Tolerancja narasta szybko z powodu downregulacji receptorów beta, więc wielu użytkowników stopniowo zwiększa dawkę co kilka tygodni, choć zależy to od kontekstu. Zaburzenia elektrolitowe są częstym problemem, a odwodnienie jest powszechnie zgłaszane. Zaburzenia snu mogą również wystąpić z powodu nietypowo długiego okresu półtrwania, dlatego niektórzy użytkownicy preferują krótszy okres półtrwania Albuterolu jako alternatywę. Ogólnie doniesienia społeczności wskazują, że klenbuterol działa zgodnie z reklamą w redukcji tkanki tłuszczowej i ma swoje miejsce przy ostrożnym podawaniu, ale wymaga starannego zarządzania parametrami sercowo-naczyniowymi, elektrolitowymi i snu."
+  "anecdote": "Klenbuterol ma notoryczną reputację z dobrego powodu – raporty anegdotyczne opisują go jako wysoce skuteczny w redukcji tkanki tłuszczowej, ale z istotnym obciążeniem działaniami niepożądanymi. Użytkownicy zazwyczaj zgłaszają wzrost energii, silną stymulację, podwyższoną częstość akcji serca i produkcję ciepła dość szybko po dawkowaniu. Tolerancja narasta szybko z powodu downregulacji receptorów beta, więc wielu użytkowników stopniowo zwiększa dawkę co kilka tygodni, choć zależy to od kontekstu. Zaburzenia elektrolitowe są częstym problemem, a odwodnienie jest powszechnie zgłaszane. Zaburzenia snu mogą również wystąpić z powodu nietypowo długiego okresu półtrwania, dlatego niektórzy użytkownicy preferują krótszy okres półtrwania Albuterolu jako alternatywę. Ogólnie doniesienia społeczności wskazują, że klenbuterol działa zgodnie z reklamą w redukcji tkanki tłuszczowej i ma swoje miejsce przy ostrożnym podawaniu, ale wymaga starannego zarządzania parametrami sercowo-naczyniowymi, elektrolitowymi i snu."
 }

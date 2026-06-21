@@ -1,4 +1,4 @@
-// HCG (Pregnyl / Novarel / Choragon) — Humán Chorionic Gonadotropin,
+// HCG (Pregnyl / Novarel / Choragon) – Humán Chorionic Gonadotropin,
 // AAS-PCT framing. Cross-frame entry: a future peptid-library batch
 // fertility-clinic-framing-gel adja majd a `hcg-peptid` counterpart-et.
 // Sources: FDA Pregnyl SmPC (Organon 1973), EMA Choragon SPC, Liu 2002
@@ -29,8 +29,8 @@ export default {
   "image": "/performance/water-vial.png",
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
-  "shortDesc": "Humán Chorionic Gonadotropin — LH-strukturális analóg, Leydig-sejt LHCGR-receptor stimulus. AAS-PCT bridge a testikulár-atrófia ellen és HPTA-restart-hoz. Cross-frame: a future peptid-libben `hcg-peptid` fertility-clinic-framing-gel jön.",
-  "description": "A HCG (Humán Chorionic Gonadotropin) egy 244-aminosav-glikoprotein (α + β alegység), strukturálisan az LH analóg ~80% szekvencia-identitással a β-alegységen. Endogén forrás: terhességi placentális szincíciotrophoblast → vér + vizelet (terhesség 8-12. hét csúcs). Klinikai HCG-források: (1) urinary-extracted (uHCG) — terhes nők vizeletéből tisztítva (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring EU); (2) rekombináns (rHCG / choriogonadotropin alfa) — Serono Ovidrel/Ovitrelle CHO-expresszált, magasabb-tisztaságú. Mechanizmus: Leydig-sejt LHCGR-receptor agonist → exogén LH-mimikry → testicular testosterone-produkció. **AAS-PCT kontextus**: a HCG bridgeli az LH-szuppresszió-ablakot, amikor a saját pituiter még nem szekretál elég LH-t. Két fő használati protokoll: **mid-cycle HCG** (250-500 IU 2-3x/hét a teljes AAS-ciklus alatt — testikulár-atrófia-prevention); **PCT-blast HCG** (1500-2500 IU EOD × 10-14 nap a ciklus utolsó pin után, majd SERM-PCT-re átkapcsolás). **Cross-frame note**: ez a `-perf` suffix entry, a future peptid-library batch hozza majd a `hcg-peptid` entry-t (fertility-clinic-framing — IVF male-factor + secondary hypogonadism Rx kontextus, AZONOS molekula, eltérő narratíva). WADA-tilos egész évben (S2 Peptide Hormones).",
+  "shortDesc": "Humán Chorionic Gonadotropin – LH-strukturális analóg, Leydig-sejt LHCGR-receptor stimulus. AAS-PCT bridge a testikulár-atrófia ellen és HPTA-restart-hoz. Cross-frame: a future peptid-libben `hcg-peptid` fertility-clinic-framing-gel jön.",
+  "description": "A HCG (Humán Chorionic Gonadotropin) egy 244-aminosav-glikoprotein (α + β alegység), strukturálisan az LH analóg ~80% szekvencia-identitással a β-alegységen. Endogén forrás: terhességi placentális szincíciotrophoblast → vér + vizelet (terhesség 8-12. hét csúcs). Klinikai HCG-források: (1) urinary-extracted (uHCG) – terhes nők vizeletéből tisztítva (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring EU); (2) rekombináns (rHCG / choriogonadotropin alfa) – Serono Ovidrel/Ovitrelle CHO-expresszált, magasabb-tisztaságú. Mechanizmus: Leydig-sejt LHCGR-receptor agonist → exogén LH-mimikry → testicular testosterone-produkció. **AAS-PCT kontextus**: a HCG bridgeli az LH-szuppresszió-ablakot, amikor a saját pituiter még nem szekretál elég LH-t. Két fő használati protokoll: **mid-cycle HCG** (250-500 IU 2-3x/hét a teljes AAS-ciklus alatt – testikulár-atrófia-prevention); **PCT-blast HCG** (1500-2500 IU EOD × 10-14 nap a ciklus utolsó pin után, majd SERM-PCT-re átkapcsolás). **Cross-frame note**: ez a `-perf` suffix entry, a future peptid-library batch hozza majd a `hcg-peptid` entry-t (fertility-clinic-framing – IVF male-factor + secondary hypogonadism Rx kontextus, AZONOS molekula, eltérő narratíva). WADA-tilos egész évben (S2 Peptide Hormones).",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -67,7 +67,7 @@ export default {
     "testosterone-info"
   ],
   "aromatization": "Indirekt: HCG → Leydig-Test → peripheral E2-emelkedés a testis + adipose CYP19-aromatáz révén. Magnitude moderate-to-high (Test-rise nagyobb mint TRT-en), magasabb HCG-dose-on (>2000 IU EOD) gyno-szenzitív felhasználón AI co-administration (Anastrozol 0.25-0.5 mg EOD) gyakran indokolt. PCT-blast protokollon az E2-rebound-watch kötelező.",
-  "hepatotoxicity": "Nincs hepatikus stressz — fehérje-alapú szubkután (SC) vagy intramuszkuláris (IM) injekció, NEM oral, NEM 17α-alkilált. Hepatic enzyme rise nem dokumentált trial-database-en.",
+  "hepatotoxicity": "Nincs hepatikus stressz – fehérje-alapú szubkután (SC) vagy intramuszkuláris (IM) injekció, NEM oral, NEM 17α-alkilált. Hepatic enzyme rise nem dokumentált trial-database-en.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nem AAS; indirekt testicular Test-stimulus)",
   "bindingAffinity": "LHCGR receptor-affinitás Kd ~0.1 nM. Egyedi tulajdonság: a CTP-farok miatt a HCG lassabban disszociál a receptortól mint az LH → prolonged stimulation per molecule.",
@@ -108,11 +108,11 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Pregnyl 5000 IU vial (Organon, ma Merck) — Rx pharma-minőség (EU + USA elérhető)",
-      "Novarel 10000 IU vial (Ferring) — Rx pharma-minőség (USA)",
-      "Choragon 5000 IU vial (Ferring EU) — Rx pharma-minőség",
-      "Ovidrel/Ovitrelle 250 µg (rekombináns HCG, Serono) — magasabb-tisztaságú, drágább, pre-filled syringe",
-      "UGL liquid HCG — HPLC + immunoassay-tesztelt forrás kötelező, gyakran alulkoncentrált (vagy hidegláncot eltört, klinikai aktivitás csökken)"
+      "Pregnyl 5000 IU vial (Organon, ma Merck) – Rx pharma-minőség (EU + USA elérhető)",
+      "Novarel 10000 IU vial (Ferring) – Rx pharma-minőség (USA)",
+      "Choragon 5000 IU vial (Ferring EU) – Rx pharma-minőség",
+      "Ovidrel/Ovitrelle 250 µg (rekombináns HCG, Serono) – magasabb-tisztaságú, drágább, pre-filled syringe",
+      "UGL liquid HCG – HPLC + immunoassay-tesztelt forrás kötelező, gyakran alulkoncentrált (vagy hidegláncot eltört, klinikai aktivitás csökken)"
     ],
     "caution": [
       "Long-term high-dose (>2500 IU EOD chronic) → Leydig-receptor downregulation rizikó (>4 hét folyamatosan kontraindikált)",
@@ -130,9 +130,9 @@ export default {
     ]
   },
   "interactions": [
-    "AI co-administration (Anastrozol 0.25-0.5 mg EOD): E2-rebound mitigation — gyno-szenzitív felhasználón ajánlott",
+    "AI co-administration (Anastrozol 0.25-0.5 mg EOD): E2-rebound mitigation – gyno-szenzitív felhasználón ajánlott",
     "SERM-bridge (Nolvadex 20-40 mg/nap, Clomid 25-50 mg/nap): PCT-protokoll, HCG-blast után indítás",
-    "Mid-cycle AAS-co-admin: minden klasszikus AAS-szal kompatibilis (Test/Tren/Mast/Dianabol/Anavar — atrófia-prevention cél)",
+    "Mid-cycle AAS-co-admin: minden klasszikus AAS-szal kompatibilis (Test/Tren/Mast/Dianabol/Anavar – atrófia-prevention cél)",
     "Testosterone-replacement (TRT): co-administration nem standard (HCG-rescue csak abnormal-recovery-case-ben)",
     "FSH-rec (Gonal-F) co-admin: ha azoospermia-recovery cél, full HPG-axis stimulus",
     "Egyéb peptid (CJC-1295, Ipamorelin, BPC-157): nincs interakció, kompatibilis"
@@ -165,8 +165,8 @@ export default {
   ],
   "faq": [
     {
-      "q": "Mid-cycle HCG vs PCT-blast HCG — melyik mit csinál?",
-      "a": "Két különálló protokoll, eltérő céllal. **Mid-cycle**: 250-500 IU 2-3x/hét a teljes AAS-ciklus alatt — testicular ATRÓFIA-PREVENTION (here-állomány-megtartás, post-cycle gyorsabb recovery). **PCT-blast**: 1500-2500 IU EOD × 10-14 nap a ciklus utáni első 2 hétben — HPTA-RESTART Leydig-bypass-szal (a saját pituiter LH-szuppresszió-ablakot bridgeli). Mindkét protokoll után SERM-PCT (Nolvadex) ajánlott a HPTA teljes recovery-jéhez."
+      "q": "Mid-cycle HCG vs PCT-blast HCG – melyik mit csinál?",
+      "a": "Két különálló protokoll, eltérő céllal. **Mid-cycle**: 250-500 IU 2-3x/hét a teljes AAS-ciklus alatt – testicular ATRÓFIA-PREVENTION (here-állomány-megtartás, post-cycle gyorsabb recovery). **PCT-blast**: 1500-2500 IU EOD × 10-14 nap a ciklus utáni első 2 hétben – HPTA-RESTART Leydig-bypass-szal (a saját pituiter LH-szuppresszió-ablakot bridgeli). Mindkét protokoll után SERM-PCT (Nolvadex) ajánlott a HPTA teljes recovery-jéhez."
     },
     {
       "q": "HCG aromatizál-e? Mennyit?",
@@ -177,12 +177,12 @@ export default {
       "a": "Standard protokoll: 5000 IU vial-hoz 1 mL vagy 2 mL bact-water (BAC, benzyl-alcohol-preserved sterile water). 1 mL → 5000 IU/mL koncentráció; 2 mL → 2500 IU/mL. Steril gyakorlat: alkoholos tisztítás, NEM rázni (denaturáció), gentle swirl. SC vagy IM injekció (SC kényelmesebb, hasi vagy combi szövetbe, 27-30G inzulin-fecskendő). Reconstituált oldat 2-8°C tárolás 30 napig (afterthat klinikai aktivitás drop)."
     },
     {
-      "q": "Pregnyl vs Ovidrel vs UGL — melyiket válasszam?",
-      "a": "**Pregnyl/Choragon (urinary)**: golden-standard, EU pharmacy hozzáférhető (~€20/5000 IU), 60+ év klinikai irodalom. **Ovidrel/Ovitrelle (rekombináns)**: magasabb tisztaság (pre-filled syringe 250 µg), drágább (~€40-60/dose), USA elérhető. **UGL**: HPLC + immunoassay-tesztelt forrás KÖTELEZŐ — UGL-HCG gyakran alulkoncentrált vagy hidegláncot eltört (aktivitás csökken). Klinikai értékben pharma > UGL >> bizonytalan-source."
+      "q": "Pregnyl vs Ovidrel vs UGL – melyiket válasszam?",
+      "a": "**Pregnyl/Choragon (urinary)**: golden-standard, EU pharmacy hozzáférhető (~€20/5000 IU), 60+ év klinikai irodalom. **Ovidrel/Ovitrelle (rekombináns)**: magasabb tisztaság (pre-filled syringe 250 µg), drágább (~€40-60/dose), USA elérhető. **UGL**: HPLC + immunoassay-tesztelt forrás KÖTELEZŐ – UGL-HCG gyakran alulkoncentrált vagy hidegláncot eltört (aktivitás csökken). Klinikai értékben pharma > UGL >> bizonytalan-source."
     },
     {
       "q": "Cross-frame note: ugyanaz a HCG mint a fertility-clinic protokollokban?",
-      "a": "Igen — identikus molekula. A `hcg-perf` és a future `hcg-peptid` entry-k ~80% content-overlap-pel rendelkeznek (azonos kémiai struktúra, farmakológia, beadás-mód). A KÜLÖNBSÉG a framing: `hcg-perf` AAS-PCT bridge-kontextusban (perifériás Test-stimulus, atrófia-prevention, doping), míg `hcg-peptid` (jön a future peptid-library batch-csel) fertility-clinic-framing-gel (IVF male-factor + secondary hypogonadism Rx, klinikai Rx-kontextus). A felhasználó ugyanazt a Pregnyl vial-t veheti meg, csak más narratívával fogja olvasni."
+      "a": "Igen – identikus molekula. A `hcg-perf` és a future `hcg-peptid` entry-k ~80% content-overlap-pel rendelkeznek (azonos kémiai struktúra, farmakológia, beadás-mód). A KÜLÖNBSÉG a framing: `hcg-perf` AAS-PCT bridge-kontextusban (perifériás Test-stimulus, atrófia-prevention, doping), míg `hcg-peptid` (jön a future peptid-library batch-csel) fertility-clinic-framing-gel (IVF male-factor + secondary hypogonadism Rx, klinikai Rx-kontextus). A felhasználó ugyanazt a Pregnyl vial-t veheti meg, csak más narratívával fogja olvasni."
     }
   ],
   "related": [

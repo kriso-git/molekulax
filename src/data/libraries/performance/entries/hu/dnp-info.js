@@ -55,8 +55,8 @@ export default {
     "thyroid hormones",
     "stimulants"
   ],
-  "aromatization": "Nem releváns — ipari nitroaromatás vegyület (2,4-dinitrofenol mitokondriális uncoupler), NEM szteroid",
-  "hepatotoxicity": "Súlyos — multi-organ toxikus; hyperthermia (>42°C), rhabdomyolysis, akut májelégtelenség, MOF; halálesetek dózisfüggetlenül 600 mg felett (Grundlingh 2011 PMID 21739343)",
+  "aromatization": "Nem releváns – ipari nitroaromatás vegyület (2,4-dinitrofenol mitokondriális uncoupler), NEM szteroid",
+  "hepatotoxicity": "Súlyos – multi-organ toxikus; hyperthermia (>42°C), rhabdomyolysis, akut májelégtelenség, MOF; halálesetek dózisfüggetlenül 600 mg felett (Grundlingh 2011 PMID 21739343)",
   "wadaStatus": "banned",
   "benefits": [
     "NINCSENEK biztonságos benefit-ek. A DNP használata KRITIKUS veszélyt jelent, függetlenül a kontextustól."

@@ -4,7 +4,7 @@
 //   - entry.keyInfo[*].value  (status / legal-status / clinical-phase strings)
 //   - entry.studies[]          (number of distinct peer-reviewed entries)
 //
-// Tier semantics (shared with all libraries — visual scale lives in
+// Tier semantics (shared with all libraries – visual scale lives in
 // libraries/shared/researchLevel.js, only the *inference* differs per library):
 //   5  approved        FDA / EMA / major-regulator approved for any indication
 //   4  late-stage      Phase 3 ongoing or regulator approval in a non-US market
@@ -12,10 +12,10 @@
 //   2  preclinical     Animal / in-vitro evidence dominant, no human RCT yet
 //   1  emerging        Limited data, single source only
 
-// Explicit overrides — peptides where the regulatory status is unambiguous
+// Explicit overrides – peptides where the regulatory status is unambiguous
 // and the heuristic alone might miss it.
 const EXPLICIT_LEVEL = {
-  // L5 — FDA / major-regulator approved
+  // L5 – FDA / major-regulator approved
   'semaglutide':      5,
   'tirzepatide':      5,
   'liraglutide':      5,
@@ -25,9 +25,9 @@ const EXPLICIT_LEVEL = {
   'oxytocin':         5,
   'gonadorelin':      5,
   'ss-31':            5,  // FORZINITY (elamipretide) FDA-approved 2025 for Barth syndrome
-  'matrixyl-3000':    5,  // cosmetic — broadly approved ingredient
+  'matrixyl-3000':    5,  // cosmetic – broadly approved ingredient
 
-  // L4 — late-stage clinical / phase 3 / approved abroad only
+  // L4 – late-stage clinical / phase 3 / approved abroad only
   'retatrutide':      4,
   'cagrilintide':     4,
   'mazdutide':        4,
@@ -36,18 +36,18 @@ const EXPLICIT_LEVEL = {
   'ghk-cu':           4,  // FDA-cosmetic approved; medical use still clinical
   'cerebrolysin':     4,  // approved in multiple countries (not US)
 
-  // L3 — clinical Phase 1/2 / strong human data
+  // L3 – clinical Phase 1/2 / strong human data
   'bpc-157':          3,  // human pilots + extensive preclinical
   'tb-500':           3,
   'cjc-1295':         3,
   'ipamorelin':       3,
   'melanotan-2':      3,
-  'pt-141':           5,  // bremelanotide IS FDA-approved (Vyleesi) — bump to 5
+  'pt-141':           5,  // bremelanotide IS FDA-approved (Vyleesi) – bump to 5
   'epithalon':        3,
   'aod-9604':         3,
   'cjc-1295-ipamorelin': 3,
 
-  // L2 — preclinical / animal-model dominant
+  // L2 – preclinical / animal-model dominant
   'igf-1-lr3':        2,
   'humanin':          2,
   'mots-c':           2,

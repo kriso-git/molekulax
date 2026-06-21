@@ -9,7 +9,7 @@ import { useEffect, useRef } from 'react'
 // whose OS has "reduce motion" on).
 //
 // Lazy source: the webm `src` is attached only on first intersection (NOT a
-// <source> child with preload="none" — that combo leaves the element frozen at
+// <source> child with preload="none" – that combo leaves the element frozen at
 // readyState 0 / networkState IDLE in real browsers, so play() never starts the
 // fetch and only the poster shows). Setting `src` on intersect kicks off the
 // load; we then play on `loadeddata` (plus an eager attempt) for reliability.

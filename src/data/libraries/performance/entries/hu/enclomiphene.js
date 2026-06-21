@@ -1,4 +1,4 @@
-// Enclomiphene (Androxal) — a clomiphene tiszta transz-izomerje, Repros
+// Enclomiphene (Androxal) – a clomiphene tiszta transz-izomerje, Repros
 // Therapeutics 2014-2016 Phase III hypogonadism trial-jelölt. FDA Complete
 // Response Letter 2016, soha nem vontak újra a piacra. US-compounding +
 // EU-research-pharm UGL elérhető. Sources: Wiehle 2014 PMID 24913480,
@@ -27,8 +27,8 @@ export default {
   "image": "/performance/tablet-pile-white.png",
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
-  "shortDesc": "A clomiphene tiszta transz-izomerje — Repros Therapeutics 2014-2016 Phase III hypogonadism trial-jelölt. Tisztább SERM-profil mint a Clomid (zuclomiphene-mentes), DE FDA-CRL 2016 → nem törzskönyvezett. US-compounding + EU-research-pharm elérhető.",
-  "description": "Az Enclomiphene (Androxal) a Clomid (clomiphene-citrát) tiszta transz-izomerje — eliminálva belőle a zuclomiphene-fél, amely a Clomid hangulati zavarainak fő oka. Repros Therapeutics fejlesztette ki 2007-2014 között férfi szekunder hypogonadism orális kezelésére, a Phase III ZA-301 + ZA-302 trial-okban (Wiehle 2014 PMID 24913480, Wiehle 2018 PMID 30015376) 12.5-25 mg/nap dose-on hatékony testosterone-emelés (T <300 ng/dL → T >450 ng/dL) + spermatogenesis-preservation. A Phase III prim végpont (T >450 ng/dL) elérve mind az alacsony-dose, mind a magas-dose csoportban; azonban a FDA Complete Response Letter (CRL) 2016-ban további efikacia + biztonsági adatokat kért, és a Repros pénzügyi nehézségek miatt soha nem nyújtotta be újra (2018 csőd). 2026-ban Enclomiphene NEM FDA-jóváhagyott; US-compounding pharmacy + EU research-pharmacy elérhető, UGL liquid formula szintén. Klinikai protokoll-relevancia AAS-PCT-ben: tisztább mood-profil mint Clomid, megőrzi a spermatogenezist (vs Test-replacement, amely szuppresszálja). Off-label TRT-alternatíva férfi-szekunder-hipogonadizmusban (fertility-preservation cél).",
+  "shortDesc": "A clomiphene tiszta transz-izomerje – Repros Therapeutics 2014-2016 Phase III hypogonadism trial-jelölt. Tisztább SERM-profil mint a Clomid (zuclomiphene-mentes), DE FDA-CRL 2016 → nem törzskönyvezett. US-compounding + EU-research-pharm elérhető.",
+  "description": "Az Enclomiphene (Androxal) a Clomid (clomiphene-citrát) tiszta transz-izomerje – eliminálva belőle a zuclomiphene-fél, amely a Clomid hangulati zavarainak fő oka. Repros Therapeutics fejlesztette ki 2007-2014 között férfi szekunder hypogonadism orális kezelésére, a Phase III ZA-301 + ZA-302 trial-okban (Wiehle 2014 PMID 24913480, Wiehle 2018 PMID 30015376) 12.5-25 mg/nap dose-on hatékony testosterone-emelés (T <300 ng/dL → T >450 ng/dL) + spermatogenesis-preservation. A Phase III prim végpont (T >450 ng/dL) elérve mind az alacsony-dose, mind a magas-dose csoportban; azonban a FDA Complete Response Letter (CRL) 2016-ban további efikacia + biztonsági adatokat kért, és a Repros pénzügyi nehézségek miatt soha nem nyújtotta be újra (2018 csőd). 2026-ban Enclomiphene NEM FDA-jóváhagyott; US-compounding pharmacy + EU research-pharmacy elérhető, UGL liquid formula szintén. Klinikai protokoll-relevancia AAS-PCT-ben: tisztább mood-profil mint Clomid, megőrzi a spermatogenezist (vs Test-replacement, amely szuppresszálja). Off-label TRT-alternatíva férfi-szekunder-hipogonadizmusban (fertility-preservation cél).",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -62,8 +62,8 @@ export default {
     "raloxifene",
     "hcg-perf"
   ],
-  "aromatization": "Nem aromatizál — szelektíven blokkolja az ER-α-t a pituiterben, NEM az aromatázt. Klinikailag az E2 enyhe rise (LH↑ → testicular E2↑), DE Clomidnál tisztább profil (zuclomiphene-mentes intrinsic agonist hiánya).",
-  "hepatotoxicity": "Alacsony — nem 17α-alkilált, non-steroidal. Trial-database adverse-event-rate <1% ALT/AST emelkedés (Wiehle 2014 + Kim 2016 Phase III data). Hepatikus tolerancia kiváló.",
+  "aromatization": "Nem aromatizál – szelektíven blokkolja az ER-α-t a pituiterben, NEM az aromatázt. Klinikailag az E2 enyhe rise (LH↑ → testicular E2↑), DE Clomidnál tisztább profil (zuclomiphene-mentes intrinsic agonist hiánya).",
+  "hepatotoxicity": "Alacsony – nem 17α-alkilált, non-steroidal. Trial-database adverse-event-rate <1% ALT/AST emelkedés (Wiehle 2014 + Kim 2016 Phase III data). Hepatikus tolerancia kiváló.",
   "wadaStatus": "restricted",
   "androgenicRatio": "N/A (nem AAS, SERM)",
   "bindingAffinity": "ER-α kompetitív affinitás közepes-magas (~10 nM Ki). Cleaner clean-profil mint Clomid (zuclomiphene-akkumuláció hiányzik).",
@@ -82,12 +82,12 @@ export default {
     "Reggeli adagolás (mimic endogén diurnál pattern)",
     "Bloodwork: Total/Free Test, LH, FSH, E2 baseline + 4 hét + 12 hét",
     "Beszerzhetőség 2026: US-compounding (compounding pharmacy Rx alapon), EU research-pharmacy + UGL liquid",
-    "UGL-rizikó magas — HPLC-tesztelt forrás kötelező (gyakran clomiphene mixed-isomer hibridizálva 'enclomiphene'-ként árulva)"
+    "UGL-rizikó magas – HPLC-tesztelt forrás kötelező (gyakran clomiphene mixed-isomer hibridizálva 'enclomiphene'-ként árulva)"
   ],
   "expectations": [
     {
       "label": "1-2. hét",
-      "body": "LH/FSH-emelkedés mérhető, korai Test-recovery. Hangulati profil tiszta — NINCS Clomid-style 'érzelmes' fluktuáció."
+      "body": "LH/FSH-emelkedés mérhető, korai Test-recovery. Hangulati profil tiszta – NINCS Clomid-style 'érzelmes' fluktuáció."
     },
     {
       "label": "3-4. hét",
@@ -104,27 +104,27 @@ export default {
   ],
   "quality": {
     "pure": [
-      "US-compounding pharmacy (BodyLogicMD, OptimaleMD, Defy Medical) — compounded liquid vagy tabletta, Rx-alapon, ~$200/havi",
-      "EU research-pharmacy (peptid-CDMO) — research-chemical labeling, nem klinikai felhasználásra",
-      "UGL liquid 'enclomiphene' — HPLC-tesztelt forrás KÖTELEZŐ, gyakran clomiphene-mixed isomer hibridizált",
-      "Repros Androxal eredeti — már nem elérhető (2018 csőd után brand-licensing nem újraindult)"
+      "US-compounding pharmacy (BodyLogicMD, OptimaleMD, Defy Medical) – compounded liquid vagy tabletta, Rx-alapon, ~$200/havi",
+      "EU research-pharmacy (peptid-CDMO) – research-chemical labeling, nem klinikai felhasználásra",
+      "UGL liquid 'enclomiphene' – HPLC-tesztelt forrás KÖTELEZŐ, gyakran clomiphene-mixed isomer hibridizált",
+      "Repros Androxal eredeti – már nem elérhető (2018 csőd után brand-licensing nem újraindult)"
     ],
     "caution": [
       "FDA-CRL státusz miatt long-term biztonsági data hiányos vs Nolvadex/Clomid (60+ év)",
       "Vision-side ritka, de elvileg ugyanaz mint Clomidé (mass-effect tartja a clean isomer is)",
-      "Beszerzhetőség korlátozott — US-compounding csak Rx-paciens számára"
+      "Beszerzhetőség korlátozott – US-compounding csak Rx-paciens számára"
     ],
     "avoid": [
       "Aktív máj-zavar (relatív kontraindikáció)",
       "Pszichiátriai prediszpozíció (kevésbé súlyos mint Clomidnál, DE óvatos)",
-      "Egyidejű terhesség (Pregnancy Category X — női partner)",
-      "Magas-dose (>50 mg/nap) — extrém ritka, nincs evidencia"
+      "Egyidejű terhesség (Pregnancy Category X – női partner)",
+      "Magas-dose (>50 mg/nap) – extrém ritka, nincs evidencia"
     ]
   },
   "interactions": [
-    "Clomid switch — sok PCT-felhasználó 'Clomid → Enclomiphene' switch-elt a mood-profil miatt",
+    "Clomid switch – sok PCT-felhasználó 'Clomid → Enclomiphene' switch-elt a mood-profil miatt",
     "HCG-bridge: HCG → Enclomiphene sequential, hatékony kombináció",
-    "Test-replacement (TRT) — alternatíva, NEM kombinálható (mechanism-overlap)",
+    "Test-replacement (TRT) – alternatíva, NEM kombinálható (mechanism-overlap)",
     "AI co-administration: NEM ajánlott",
     "Alkohol: minimal hatás, óvatos fogyasztás javasolt"
   ],
@@ -157,18 +157,18 @@ export default {
   "faq": [
     {
       "q": "Miért nem FDA-jóváhagyott Enclomiphene?",
-      "a": "Repros Therapeutics 2014-ben submisszionálta a Phase III ZA-301 + ZA-302 adatokat (T <300 → T >450 ng/dL primer végpont elérve mind a 12.5 és 25 mg/nap dose-on). FDA Complete Response Letter (CRL) 2016 — további efikacia + biztonsági adatokat kért (hosszú távú kardio-, lipid-, fertility-data). Repros pénzügyi gondok miatt soha nem nyújtotta be újra; 2018 csőd. A molekula továbbra is hatékony, de regulatory orphan."
+      "a": "Repros Therapeutics 2014-ben submisszionálta a Phase III ZA-301 + ZA-302 adatokat (T <300 → T >450 ng/dL primer végpont elérve mind a 12.5 és 25 mg/nap dose-on). FDA Complete Response Letter (CRL) 2016 – további efikacia + biztonsági adatokat kért (hosszú távú kardio-, lipid-, fertility-data). Repros pénzügyi gondok miatt soha nem nyújtotta be újra; 2018 csőd. A molekula továbbra is hatékony, de regulatory orphan."
     },
     {
-      "q": "Enclomiphene vs Clomid — érdemes-e fizetni 10x annyit?",
-      "a": "Klinikailag tisztább profil — kevesebb hangulati labilitás, kevesebb vision-side. DE: $200/havi compounding ár vs $5/box Clomid. Indok jó: (1) Clomid-intolerancia hangulati zavar miatt; (2) hosszú távú TRT-alternatíva fertility-preservation cél esetén; (3) AAS-PCT clean-profil emphasis. Standard short-PCT-re Clomid költséghatékonyabb."
+      "q": "Enclomiphene vs Clomid – érdemes-e fizetni 10x annyit?",
+      "a": "Klinikailag tisztább profil – kevesebb hangulati labilitás, kevesebb vision-side. DE: $200/havi compounding ár vs $5/box Clomid. Indok jó: (1) Clomid-intolerancia hangulati zavar miatt; (2) hosszú távú TRT-alternatíva fertility-preservation cél esetén; (3) AAS-PCT clean-profil emphasis. Standard short-PCT-re Clomid költséghatékonyabb."
     },
     {
       "q": "Beszerzhetőség 2026-ban?",
-      "a": "US: compounding pharmacy Rx-alapon (BodyLogicMD, OptimaleMD, Defy Medical, Marek Health, Empower Pharmacy). EU: research-pharmacy + UGL liquid (research-chemical labeling). HU/PL pharmacy NEM elérhető. UGL-rizikó magas — gyakran clomiphene-mixed-isomer hibridizálva 'enclomiphene'-ként árulják; HPLC-tesztelt forrás kötelező."
+      "a": "US: compounding pharmacy Rx-alapon (BodyLogicMD, OptimaleMD, Defy Medical, Marek Health, Empower Pharmacy). EU: research-pharmacy + UGL liquid (research-chemical labeling). HU/PL pharmacy NEM elérhető. UGL-rizikó magas – gyakran clomiphene-mixed-isomer hibridizálva 'enclomiphene'-ként árulják; HPLC-tesztelt forrás kötelező."
     },
     {
-      "q": "Long-term TRT-alternatíva — biztonságos?",
+      "q": "Long-term TRT-alternatíva – biztonságos?",
       "a": "Wiehle 2018 Phase III adatból max 3 hónap requires; long-term (>1 év) clinical safety adat hiányos. Hypothetical előny vs TRT: spermatogenesis-preservation, természetes intra-testicular testosterone-produkció megőrzése. Hátrány: long-term ER-modulation hatás csontra, kardióra, prosztatára nem teljesen ismert. Off-label kontextusban orvosi felügyelet kötelező (3 havi bloodwork)."
     }
   ],
@@ -210,9 +210,9 @@ export default {
     "cruise": {
       "label": "Long-term TRT-alternatíva (off-label, orvosi felügyelet)",
       "timing": "3 havonta bloodwork chronic-use",
-      "markers": "Full HPG panel, hematokrit (NEM emelkedik jelentősen — Enclomiphene preserves natural production), PSA (idős férfi), DEXA (csontsűrűség long-term).",
+      "markers": "Full HPG panel, hematokrit (NEM emelkedik jelentősen – Enclomiphene preserves natural production), PSA (idős férfi), DEXA (csontsűrűség long-term).",
       "purpose": "Long-term safety + efikacia monitoring."
     }
   },
-  "anecdote": "Az Enclomiphene-t az anekdotikus beszámolók szilárd opcióként írják le az endogén tesztoszteron-termelés fokozására törekvő felhasználók számára. Általában nem pozícionálják AAS-helyettesítőként, de van egy meghatározott rése. A Clomiphene-hez képest az Enclomiphene a 'tisztább' izomer — a tesztoszteron-fokozó hatást nyújtja anélkül, hogy a Clomidhoz társított érzelmi vagy látással kapcsolatos mellékhatások nagy részét tartalmazná (amely a zuklomifén izomert is tartalmazza). A felhasználók jellemzően jobb energiáról, fokozott libidóról, jobb hangulatról és más tesztoszteronnal kapcsolatos hatásokról számolnak be. Nem nyomja el érdemben az endogén termelést, de a hatékonysága egy működő HPTA-tól függ — fokoz, nem helyettesít. Erősen elnyomott felhasználóknál időbe telhet, mire működik, vagy kevésbé hatékony lehet a HCG-nél. Összességében a közösségi beszámolók szerint az egyik kedvezőbb opció a tesztoszteron természetes emelésére anélkül, hogy leállást idézne elő. Orálisan adják be; a protokollokat a vérvizsgálat és a tünetek alapján igazítják."
+  "anecdote": "Az Enclomiphene-t az anekdotikus beszámolók szilárd opcióként írják le az endogén tesztoszteron-termelés fokozására törekvő felhasználók számára. Általában nem pozícionálják AAS-helyettesítőként, de van egy meghatározott rése. A Clomiphene-hez képest az Enclomiphene a 'tisztább' izomer – a tesztoszteron-fokozó hatást nyújtja anélkül, hogy a Clomidhoz társított érzelmi vagy látással kapcsolatos mellékhatások nagy részét tartalmazná (amely a zuklomifén izomert is tartalmazza). A felhasználók jellemzően jobb energiáról, fokozott libidóról, jobb hangulatról és más tesztoszteronnal kapcsolatos hatásokról számolnak be. Nem nyomja el érdemben az endogén termelést, de a hatékonysága egy működő HPTA-tól függ – fokoz, nem helyettesít. Erősen elnyomott felhasználóknál időbe telhet, mire működik, vagy kevésbé hatékony lehet a HCG-nél. Összességében a közösségi beszámolók szerint az egyik kedvezőbb opció a tesztoszteron természetes emelésére anélkül, hogy leállást idézne elő. Orálisan adják be; a protokollokat a vérvizsgálat és a tünetek alapján igazítják."
 }

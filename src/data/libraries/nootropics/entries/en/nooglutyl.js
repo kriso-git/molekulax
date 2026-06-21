@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Russian AMPA-PAM research compound, plasticity enhancer.",
-  "description": "Nooglutyl (NSG, ONK-10, N-5-oxynicotinoyl-L-glutamic acid) is an experimental compound developed at the Pharmacology Institute of the Russian Academy of Sciences (Moscow), structurally related to Picamilon. AMPA receptor positive allosteric modulator — with substantially stronger AMPA binding affinity than Noopept (PMID 21476267). Unique data: benzodiazepine-withdrawal anxiety reduction in animal models without touching the GABA system; preservation of post-trauma mitochondrial oxidative phosphorylation (ATP-synthesis protection; PMID 9621180); anti-aging pro-cognitive effects in accelerated-aging models (PMID 18078032); enhanced neuroprotection when co-administered with Nimodipine. No human Phase data; rare on Western markets.",
+  "description": "Nooglutyl (NSG, ONK-10, N-5-oxynicotinoyl-L-glutamic acid) is an experimental compound developed at the Pharmacology Institute of the Russian Academy of Sciences (Moscow), structurally related to Picamilon. AMPA receptor positive allosteric modulator – with substantially stronger AMPA binding affinity than Noopept (PMID 21476267). Unique data: benzodiazepine-withdrawal anxiety reduction in animal models without touching the GABA system; preservation of post-trauma mitochondrial oxidative phosphorylation (ATP-synthesis protection; PMID 9621180); anti-aging pro-cognitive effects in accelerated-aging models (PMID 18078032); enhanced neuroprotection when co-administered with Nimodipine. No human Phase data; rare on Western markets.",
   "keyInfo": [
     {
       "label": "Mechanism",

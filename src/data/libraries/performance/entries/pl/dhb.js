@@ -1,4 +1,4 @@
-// Designer AAS — limited peer-reviewed evidence. Sources: Pope-Kanayama 2014
+// Designer AAS – limited peer-reviewed evidence. Sources: Pope-Kanayama 2014
 // PMID 24423981, Hartgens-Kuipers 2004 PMID 15233599, USADA designer steroid
 // alerts 2018-2024, PubChem 1-Testosterone Cypionate (CID 16219612),
 // Llewellyn 2017 "Anabolics" (UGL reference). Phenomenological + extrapolated
@@ -28,8 +28,8 @@ export default {
   "image": "/performance/oil-vial-orange.png",
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
-  "shortDesc": "1-Testosteron (Δ1-DHT) Cypionat, iniekcyjny designer AAS. Analog Boldenonu 5α-zredukowany. Nigdy nie licencjonowany jako Rx, tylko rynek UGL. NIE aromatyzuje, NIE 17α-alkilowany, niska hepatotoksyczność — ALE notoryczny ze względu na silny PIP (ból w miejscu wstrzyknięcia).",
-  "description": "DHB (Dihydroboldenon, lub 1-Testosteron) to designer steryd anaboliczny: 5α-zredukowany analog Boldenonu (Equipoise), chemicznie 1-testosteron (17β-hydroksy-androst-1-en-3-on). Dostępny wyłącznie w formie underground UGL, zazwyczaj cypionatowo-estryfikowany jako olejowa zawiesina IM (DHB-Cyp 100 mg/ml). Nigdy nie licencjonowany do ludzkiego ani weterynaryjnego Rx — żadnej zgody FDA/EMA. Stosunek anaboliczno-androgenny ~200:100 (wysoki anaboliczny, wysoki androgenny). NIE 17α-alkilowany → niska hepatotoksyczność. NIE substrat CYP19 → NIE aromatyzuje (Boldenon aromatyzuje, ale DHB już 5α-zredukowany, więc nie). Notoryczny dla ekstremalnie silnego bólu w miejscu wstrzyknięcia (PIP) — wysoka krystaliczność to klasyczna przyczyna, często powodująca 3-5 dni lokalnego obrzęku i bólu. Limited peer-reviewed evidence: większość danych farmakologicznych jest ekstrapolowana z danych klasy Boldenonu i Methenolonu (Pope-Kanayama 2014 przegląd designer AAS). Zakazany przez WADA cały rok.",
+  "shortDesc": "1-Testosteron (Δ1-DHT) Cypionat, iniekcyjny designer AAS. Analog Boldenonu 5α-zredukowany. Nigdy nie licencjonowany jako Rx, tylko rynek UGL. NIE aromatyzuje, NIE 17α-alkilowany, niska hepatotoksyczność – ALE notoryczny ze względu na silny PIP (ból w miejscu wstrzyknięcia).",
+  "description": "DHB (Dihydroboldenon, lub 1-Testosteron) to designer steryd anaboliczny: 5α-zredukowany analog Boldenonu (Equipoise), chemicznie 1-testosteron (17β-hydroksy-androst-1-en-3-on). Dostępny wyłącznie w formie underground UGL, zazwyczaj cypionatowo-estryfikowany jako olejowa zawiesina IM (DHB-Cyp 100 mg/ml). Nigdy nie licencjonowany do ludzkiego ani weterynaryjnego Rx – żadnej zgody FDA/EMA. Stosunek anaboliczno-androgenny ~200:100 (wysoki anaboliczny, wysoki androgenny). NIE 17α-alkilowany → niska hepatotoksyczność. NIE substrat CYP19 → NIE aromatyzuje (Boldenon aromatyzuje, ale DHB już 5α-zredukowany, więc nie). Notoryczny dla ekstremalnie silnego bólu w miejscu wstrzyknięcia (PIP) – wysoka krystaliczność to klasyczna przyczyna, często powodująca 3-5 dni lokalnego obrzęku i bólu. Limited peer-reviewed evidence: większość danych farmakologicznych jest ekstrapolowana z danych klasy Boldenonu i Methenolonu (Pope-Kanayama 2014 przegląd designer AAS). Zakazany przez WADA cały rok.",
   "keyInfo": [
     {"label": "Mechanizm", "value": "Agonista AR, 1-Testosteron (Δ1-DHT), NIE aromatyzuje"},
     {"label": "Anaboliczny:Androgenny", "value": "200:100"},
@@ -38,13 +38,13 @@ export default {
     {"label": "Status prawny", "value": "Tylko UGL, brak zgody Rx. Zakaz WADA."}
   ],
   "mechanism": "Agonista AR 1-Testosteron (Δ1-DHT). Wiązanie podwójne Δ1 odziedziczone z Boldenonu, podczas gdy 5α-redukcja zapewnia charakter DHT-podobny. Wysokie powinowactwo do AR (~200% vs testosteron in vitro). NIE substrat CYP19 (Boldenon aromatyzuje, DHB już 5α-zredukowany) → NIE aromatyzuje do estrogenu, brak ryzyka ginekomastii. NIE 17α-alkilowany → minimalny stres wątrobowy. Ester 17β-OH-cypionatowy zapewnia powolną hydrolizę (~8-10 dni), dając stabilne poziomy depot w osoczu.",
-  "legalStatus": "Nigdy nie licencjonowany jako ludzki ani weterynaryjny Rx — tylko underground UGL. USA: alert USADA designer steroid (Schedule III przez analog). UE/HU/PL: kontrolowany analog AAS, nielegalny bez recepty, zakaz WADA cały rok (S1.1.a).",
+  "legalStatus": "Nigdy nie licencjonowany jako ludzki ani weterynaryjny Rx – tylko underground UGL. USA: alert USADA designer steroid (Schedule III przez analog). UE/HU/PL: kontrolowany analog AAS, nielegalny bez recepty, zakaz WADA cały rok (S1.1.a).",
   "onsetTime": "48-72 h (IM, ester Cypionatowy)",
   "halfLife": "8-10 d (ester Cypionatowy)",
   "halfLifeActive": "~24-36 h (zależny od depot, wolny 1-testosteron po hydrolizie)",
   "interactionsWith": ["testosterone", "anastrozole", "finasteride", "warfarin"],
-  "aromatization": "Nie — struktura 5α-zredukowana, NIE substrat CYP19; macierzysty Boldenon aromatyzuje, ale DHB już zredukowany → klinicznie nie oczekiwany wzrost E2 (Pope-Kanayama 2014 PMID 24423981 przegląd designer AAS, ekstrapolowane dane Boldenon-Methenolon)",
-  "hepatotoxicity": "Niska — steryd macierzysty, NIE 17α-alkilowany; forma iniekcyjna pomija first-pass. Profil wątrobowy podobny do klasy Masteron-Primobolan (ekstrapolowany, dane specyficzne dla DHB peer-reviewed brakuje; Hartgens-Kuipers 2004 PMID 15233599 dane klasy AAS iniekcyjnych c17-non-AA).",
+  "aromatization": "Nie – struktura 5α-zredukowana, NIE substrat CYP19; macierzysty Boldenon aromatyzuje, ale DHB już zredukowany → klinicznie nie oczekiwany wzrost E2 (Pope-Kanayama 2014 PMID 24423981 przegląd designer AAS, ekstrapolowane dane Boldenon-Methenolon)",
+  "hepatotoxicity": "Niska – steryd macierzysty, NIE 17α-alkilowany; forma iniekcyjna pomija first-pass. Profil wątrobowy podobny do klasy Masteron-Primobolan (ekstrapolowany, dane specyficzne dla DHB peer-reviewed brakuje; Hartgens-Kuipers 2004 PMID 15233599 dane klasy AAS iniekcyjnych c17-non-AA).",
   "wadaStatus": "banned",
   "androgenicRatio": "200:100",
   "bindingAffinity": "Wysokie powinowactwo do AR (~200% vs testosteron in vitro, ekstrapolowane). Powinowactwo do SHBG umiarkowane-wysokie (strukturalny charakter DHT).",
@@ -56,8 +56,8 @@ export default {
     "Estetyczny \"twardy\" wygląd (hardening Masteron-podobny, nieco bardziej mokry niż Masteron ze względu na wyższą aktywność androgenną)"
   ],
   "quickStart": [
-    "PRZYGOTUJ SIĘ: DHB jest notoryczny ze względu na ekstremalny PIP (ból w miejscu wstrzyknięcia) — 3-5 dni lokalnego obrzęku i bólu częste; nałóż HEAT-PAD na pośladek po iniekcji",
-    "Tylko dla doświadczonych użytkowników — NIE pierwszy cykl",
+    "PRZYGOTUJ SIĘ: DHB jest notoryczny ze względu na ekstremalny PIP (ból w miejscu wstrzyknięcia) – 3-5 dni lokalnego obrzęku i bólu częste; nałóż HEAT-PAD na pośladek po iniekcji",
+    "Tylko dla doświadczonych użytkowników – NIE pierwszy cykl",
     "Zazwyczaj stackowany z bazą testosteronu + trzecim AAS (Test-Cyp + DHB-Cyp + Tren-E częsty przykład)",
     "Strukturalny analog DHT → ŚCISŁE ryzyko wypadania włosów przy genetycznej predyspozycji",
     "PCT (Clomid + Nolvadex 4-6 tygodni) obowiązkowe; od ostatniej iniekcji DHB +14-21 dni"
@@ -70,13 +70,13 @@ export default {
   "quality": {
     "pure": [
       "Klarowny żółtawo-brązowy lub bursztynowy olej, fiolka 10 ml, sterylnie filtrowana (DHB-Cyp 100 mg/ml klasyczna koncentracja UGL)",
-      "Źródło UGL testowane HPLC OBOWIĄZKOWE — DHB często fałszowany (zastępowanie Test-Cyp lub Boldenon-Cyp)"
+      "Źródło UGL testowane HPLC OBOWIĄZKOWE – DHB często fałszowany (zastępowanie Test-Cyp lub Boldenon-Cyp)"
     ],
     "caution": [
-      "PIP (ból w miejscu wstrzyknięcia) ekstremalny — najczęstsza skarga użytkowników, wielu nie może trenować docelowego mięśnia przez 3-5 dni po iniekcji",
+      "PIP (ból w miejscu wstrzyknięcia) ekstremalny – najczęstsza skarga użytkowników, wielu nie może trenować docelowego mięśnia przez 3-5 dni po iniekcji",
       "Przyspieszenie wypadania włosów w alopecji androgenowej (strukturalny analog DHT z wysoką aktywnością androgenną)",
       "Zaburzenia lipidowe: spadek HDL, wzrost LDL (umiarkowane-wysokie, bardziej kumulatywne niż Masteron-Primobolan ze względu na wyższą aktywność androgenną)",
-      "Limited peer-reviewed evidence — profil bezpieczeństwa długoterminowego NIE znany z badań klinicznych"
+      "Limited peer-reviewed evidence – profil bezpieczeństwa długoterminowego NIE znany z badań klinicznych"
     ],
     "avoid": [
       "Każdy, kto nie znosi silnego PIP (alternatywa: Masteron-Enan lub Primobolan-Enan z mniejszym PIP)",
@@ -84,7 +84,7 @@ export default {
       "Przerost prostaty, rak prostaty (wysoka aktywność androgenna)",
       "Stosowanie przez kobiety (ekstremalne ryzyko wirylizacji)",
       "Ryzyko sercowo-naczyniowe (rodzinna historia, wysokie LDL)",
-      "Jakikolwiek \"pierwszy cykl\" — DHB zawsze partner stacku, nigdy samodzielny pierwszy AAS"
+      "Jakikolwiek \"pierwszy cykl\" – DHB zawsze partner stacku, nigdy samodzielny pierwszy AAS"
     ]
   },
   "interactions": [
@@ -103,11 +103,11 @@ export default {
     {"title": "PubChem 1-Testosterone Cypionate CID 16219612 monograph", "authors": "NIH PubChem", "journal": "PubChem Open Chemistry Database", "pmid": null}
   ],
   "faq": [
-    {"q": "Dlaczego iniekcja DHB tak boli?", "a": "Wysoka krystaliczność DHB + względnie niska rozpuszczalność powodują znaczny PIP (ból w miejscu wstrzyknięcia). Kryształy wyzwalają aseptyczne zapalenie w tkance mięśniowej, manifestujące się jako 3-5 dni lokalnego obrzęku i bólu. Rozwiązania: większa objętość (2 ml zamiast 1 ml — więcej pojazdu rozcieńcza stężenie), iniekcja gluteus medius lub ventrogluteal (większy mięsień z większą przestrzenią), HEAT-PAD post-iniekcja + codzienny łagodny ruch."},
-    {"q": "DHB vs Boldenon (Equipoise) — jaka różnica?", "a": "Boldenon aromatyzuje (około połowy tak silnie jak testosteron, więc wzrost E2 oczekiwany), DHB już 5α-zredukowany, więc NIE aromatyzuje. Boldenon to Δ1-podwójne wiązanie + nie-zredukowana forma; DHB to to samo Δ1-podwójne wiązanie + 5α-zredukowany. Klinicznie DHB daje \"twardszy i bardziej suchy\" efekt niż Boldenon, ale z dużo większym PIP."},
-    {"q": "Dlaczego brak zgody Rx?", "a": "DHB nigdy nie był opracowany do wskazania ludzkiego ani weterynaryjnego. Klasycznie designer AAS — rynek kulturystyczny/UGL lat 1990-2000 szukał \"nowego AAS\" jako alternatywy dla aromatyzującego Boldenonu. Ponieważ nigdy nie był badany klinicznie, dane bezpieczeństwa długoterminowego brakują; wszystkie dane farmakologiczne są ekstrapolowane z danych klasy Boldenonu i Methenolonu."},
+    {"q": "Dlaczego iniekcja DHB tak boli?", "a": "Wysoka krystaliczność DHB + względnie niska rozpuszczalność powodują znaczny PIP (ból w miejscu wstrzyknięcia). Kryształy wyzwalają aseptyczne zapalenie w tkance mięśniowej, manifestujące się jako 3-5 dni lokalnego obrzęku i bólu. Rozwiązania: większa objętość (2 ml zamiast 1 ml – więcej pojazdu rozcieńcza stężenie), iniekcja gluteus medius lub ventrogluteal (większy mięsień z większą przestrzenią), HEAT-PAD post-iniekcja + codzienny łagodny ruch."},
+    {"q": "DHB vs Boldenon (Equipoise) – jaka różnica?", "a": "Boldenon aromatyzuje (około połowy tak silnie jak testosteron, więc wzrost E2 oczekiwany), DHB już 5α-zredukowany, więc NIE aromatyzuje. Boldenon to Δ1-podwójne wiązanie + nie-zredukowana forma; DHB to to samo Δ1-podwójne wiązanie + 5α-zredukowany. Klinicznie DHB daje \"twardszy i bardziej suchy\" efekt niż Boldenon, ale z dużo większym PIP."},
+    {"q": "Dlaczego brak zgody Rx?", "a": "DHB nigdy nie był opracowany do wskazania ludzkiego ani weterynaryjnego. Klasycznie designer AAS – rynek kulturystyczny/UGL lat 1990-2000 szukał \"nowego AAS\" jako alternatywy dla aromatyzującego Boldenonu. Ponieważ nigdy nie był badany klinicznie, dane bezpieczeństwa długoterminowego brakują; wszystkie dane farmakologiczne są ekstrapolowane z danych klasy Boldenonu i Methenolonu."},
     {"q": "Ryzyko wypadania włosów?", "a": "Wysokie jeśli genetyczna predyspozycja do alopecji androgenowej. DHB z wyższą aktywnością androgenną (100 vs Masteron 25, Primobolan 44) bezpośrednio aktywuje AR mieszka włosowego skóry głowy. Finasteryd NIE chroni (DHB już zredukowany). Jedyna ochrona: jeśli genetycznie wrażliwy, NIE używaj AAS pochodnych DHT (a szczególnie NIE DHB, który jest bardziej androgenny niż klasa Masteron-Primobolan)."},
-    {"q": "Długie okno detekcji — jaki jest faktyczny fade-out na końcu?", "a": "DHB-Cyp 6-9 miesięcy detekcji w moczu (USADA designer-steroid-alert) — ekstra długie ze względu na ester Cypionatowy + rodzina metabolitów Δ1-1-testosteronu. Dla sportowców testowanych WADA: unikaj podczas off-season, i minimum 9 miesięcy fade-out przed planowanymi zawodami. Wzór klirensu \"długi fade\" Boldenon-podobny."}
+    {"q": "Długie okno detekcji – jaki jest faktyczny fade-out na końcu?", "a": "DHB-Cyp 6-9 miesięcy detekcji w moczu (USADA designer-steroid-alert) – ekstra długie ze względu na ester Cypionatowy + rodzina metabolitów Δ1-1-testosteronu. Dla sportowców testowanych WADA: unikaj podczas off-season, i minimum 9 miesięcy fade-out przed planowanymi zawodami. Wzór klirensu \"długi fade\" Boldenon-podobny."}
   ],
   "related": ["masteron", "primobolan", "testosterone-info", "trenbolone-info", "anavar-info"],
   "doseCalc": {
@@ -139,7 +139,7 @@ export default {
       "label": "Na cruise (cruise DHB NIE standardowy)",
       "timing": "Cruise DHB atypowy ze względu na długą detekcję + PIP; jeśli na cruise, monitoring co 6-8 tygodni",
       "markers": "Lipidogram (HDL), SHBG, Total T, E2, dziennik ciśnienia, PSA.",
-      "purpose": "Przedłużona ekspozycja DHB akumuluje zaburzenia lipidowe i aktywację AR prostaty. Na cruise TRT-Test DHB zazwyczaj pomijany — efekt estetyczny tylko wartościowy podczas contest-prep, a PIP czyni tygodniowe iniekcje uciążliwymi."
+      "purpose": "Przedłużona ekspozycja DHB akumuluje zaburzenia lipidowe i aktywację AR prostaty. Na cruise TRT-Test DHB zazwyczaj pomijany – efekt estetyczny tylko wartościowy podczas contest-prep, a PIP czyni tygodniowe iniekcje uciążliwymi."
     }
   }
 }

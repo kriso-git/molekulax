@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Orosz AMPA-PAM kutatási vegyület, plaszticitás-fokozó.",
-  "description": "A Nooglutyl (NSG, ONK-10, N-5-oxynicotinoyl-L-glutaminsav) az Orosz Tudományos Akadémia Farmakológiai Intézetében (Moszkva) fejlesztett kísérleti vegyület, strukturálisan rokona a Picamilonnak. AMPA-receptor pozitív allosztérikus modulátor — Noopeptnél jelentősen erősebb AMPA-kötési affinitással (PMID 21476267). Egyedülálló adatok: benzodiazepin-megvonási szorongás-csökkentés állat-modellekben GABA-rendszer érintése nélkül; trauma utáni mitokondriális oxidatív foszforiláció megőrzése (ATP-szintézis védelem; PMID 9621180); felgyorsult öregedés-modellekben anti-aging pro-kognitív hatás (PMID 18078032); Nimodipinnel együttadva fokozott neuroprotektív hatás. Humán Phase nincs, nyugati piacon ritka.",
+  "description": "A Nooglutyl (NSG, ONK-10, N-5-oxynicotinoyl-L-glutaminsav) az Orosz Tudományos Akadémia Farmakológiai Intézetében (Moszkva) fejlesztett kísérleti vegyület, strukturálisan rokona a Picamilonnak. AMPA-receptor pozitív allosztérikus modulátor – Noopeptnél jelentősen erősebb AMPA-kötési affinitással (PMID 21476267). Egyedülálló adatok: benzodiazepin-megvonási szorongás-csökkentés állat-modellekben GABA-rendszer érintése nélkül; trauma utáni mitokondriális oxidatív foszforiláció megőrzése (ATP-szintézis védelem; PMID 9621180); felgyorsult öregedés-modellekben anti-aging pro-kognitív hatás (PMID 18078032); Nimodipinnel együttadva fokozott neuroprotektív hatás. Humán Phase nincs, nyugati piacon ritka.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",

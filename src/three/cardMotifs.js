@@ -1,4 +1,4 @@
-// cardMotifs.js — framework-agnostic Three.js "category motif" mini-scenes for
+// cardMotifs.js – framework-agnostic Three.js "category motif" mini-scenes for
 // the educational effect-cards. Each motif is parameterised by the category's
 // accent colour. Used by the hidden /card-preview demo now, and will back the
 // offline pre-render pipeline for the production cards.

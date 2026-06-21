@@ -1,6 +1,6 @@
 // Auto-decomposed by scripts/decompose-library.mjs --per-lang at 2026-05-18T08:12:21.944Z
 // Edit this file directly to update the HU body; do not re-run the script.
-// v0.27 RICH multi-variant expansion — 2026-05-23
+// v0.27 RICH multi-variant expansion – 2026-05-23
 
 export default {
   "id": "winstrol-info",
@@ -28,7 +28,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Stanozolol, 17α-alkilált DHT-származék. Klasszikus \"cutting\" AAS, SHBG-szuppresszor.",
-  "description": "A Stanozolol (Winstrol) DHT-származék, 17α-alkilezett orális vagy injekciós AAS. Az SHBG-csökkenés mechanizmusa direkt hepatikus SHBG-mRNA-szintézis-gátlás (Sinnecker & Köhler 1990, PMID 2723028), ami emeli a szabad tesztoszteron-frakciót — még TRT-baseline mellett is jelentős andro-amplifikáció. Nem aromatizál, így nincs ösztrogén-mellékhatás. Klinikailag hereditary angioedema és anémia kezelésére fejlesztették, sportkontextusban \"cutting\" cikluson izom-megtartás céljából használt. A Ben Johnson 1988 olimpiai szkandallum ezt a vegyületet érintette. **Pharmakológiai pozícionálás**: force-amplifier és tissue-quality modulátor inkább, mint hypertrophy-builder — az erő-növekedés gyakran aránytalan a látható izomtömeg-gyarapodáshoz. **Connective tissue figyelmeztetés (Liow 1995 PMID 7551764)**: stanozolol-asszociált ínszakadás-esetek atléta-irodalomban jól dokumentáltak; az izomerő gyorsabban nő mint az ínszövet kollagén-keresztkötés-érettsége, ami szakadás-veszélyt teremt különösen sprinter/explosive-sportokban.",
+  "description": "A Stanozolol (Winstrol) DHT-származék, 17α-alkilezett orális vagy injekciós AAS. Az SHBG-csökkenés mechanizmusa direkt hepatikus SHBG-mRNA-szintézis-gátlás (Sinnecker & Köhler 1990, PMID 2723028), ami emeli a szabad tesztoszteron-frakciót – még TRT-baseline mellett is jelentős andro-amplifikáció. Nem aromatizál, így nincs ösztrogén-mellékhatás. Klinikailag hereditary angioedema és anémia kezelésére fejlesztették, sportkontextusban \"cutting\" cikluson izom-megtartás céljából használt. A Ben Johnson 1988 olimpiai szkandallum ezt a vegyületet érintette. **Pharmakológiai pozícionálás**: force-amplifier és tissue-quality modulátor inkább, mint hypertrophy-builder – az erő-növekedés gyakran aránytalan a látható izomtömeg-gyarapodáshoz. **Connective tissue figyelmeztetés (Liow 1995 PMID 7551764)**: stanozolol-asszociált ínszakadás-esetek atléta-irodalomban jól dokumentáltak; az izomerő gyorsabban nő mint az ínszövet kollagén-keresztkötés-érettsége, ami szakadás-veszélyt teremt különösen sprinter/explosive-sportokban.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -152,9 +152,9 @@ export default {
         "pl": "Stanozolol doustny (tabletka)"
       },
       "routeNote": {
-        "hu": "Kényelmes napi tabletta, ~9 órás felezési idő — 2 részre osztott napi dózis az egyenletes szintekhez. 17α-metil csoport ⇒ hepatotoxikus first-pass stressz. Cutting cycle izom-megtartásra és SHBG-szuppresszióra a legelterjedtebb forma. Ínszakadás-veszélyre fokozottan ügyelj explosive/sprint sportoknál.",
-        "en": "Convenient daily tablet with ~9 h half-life — split into 2 daily doses for steady levels. 17α-methyl group ⇒ hepatotoxic first-pass stress. Most common form for cutting cycle muscle sparing and SHBG suppression. Watch for tendon rupture risk in explosive/sprint sports.",
-        "pl": "Wygodna tabletka dzienna z ~9 h okresem półtrwania — podziel na 2 dawki dziennie dla stabilnych poziomów. Grupa 17α-metylu ⇒ hepatotoksyczny stres first-pass. Najczęstsza forma do ochrony mięśni w cyklu redukcyjnym i supresji SHBG. Uwaga na ryzyko zerwania ścięgna w sportach eksplozywnych/sprinterskich."
+        "hu": "Kényelmes napi tabletta, ~9 órás felezési idő – 2 részre osztott napi dózis az egyenletes szintekhez. 17α-metil csoport ⇒ hepatotoxikus first-pass stressz. Cutting cycle izom-megtartásra és SHBG-szuppresszióra a legelterjedtebb forma. Ínszakadás-veszélyre fokozottan ügyelj explosive/sprint sportoknál.",
+        "en": "Convenient daily tablet with ~9 h half-life – split into 2 daily doses for steady levels. 17α-methyl group ⇒ hepatotoxic first-pass stress. Most common form for cutting cycle muscle sparing and SHBG suppression. Watch for tendon rupture risk in explosive/sprint sports.",
+        "pl": "Wygodna tabletka dzienna z ~9 h okresem półtrwania – podziel na 2 dawki dziennie dla stabilnych poziomów. Grupa 17α-metylu ⇒ hepatotoksyczny stres first-pass. Najczęstsza forma do ochrony mięśni w cyklu redukcyjnym i supresji SHBG. Uwaga na ryzyko zerwania ścięgna w sportach eksplozywnych/sprinterskich."
       },
       "image": "/performance/tablet-pile-white.png",
       "halfLife": "~9 h (oral)",
@@ -192,13 +192,13 @@ export default {
       "quality": {
         "pure": [
           "Tiszta fehér, jelölt tabletta (5 mg vagy 10 mg klasszikus UGL dosing)",
-          "HPLC-tesztelt forrás kötelező — Winstrol-tabletta gyakran hamisított"
+          "HPLC-tesztelt forrás kötelező – Winstrol-tabletta gyakran hamisított"
         ],
         "caution": [
           "Hepatotoxicitás: ALT/AST 2-4x emelkedés 6+ hetes ciklusban gyakori (Hartgens-Kuipers 2004)",
-          "Lipid-zavar: HDL drasztikus csökkenés (>30% baseline-hez képest) — szív-kockázat",
-          "Ínszakadás-veszély (Liow 1995): izomerő gyorsabban nő mint az ínkollagén — sprinter/explosive sport kerülendő",
-          "Ízületi szárazság (\"Winstrol joint pain\") — szubjektíven kínzó, ízületi folyadék-csökkentő hatás"
+          "Lipid-zavar: HDL drasztikus csökkenés (>30% baseline-hez képest) – szív-kockázat",
+          "Ínszakadás-veszély (Liow 1995): izomerő gyorsabban nő mint az ínkollagén – sprinter/explosive sport kerülendő",
+          "Ízületi szárazság (\"Winstrol joint pain\") – szubjektíven kínzó, ízületi folyadék-csökkentő hatás"
         ],
         "avoid": [
           "Bármilyen meglévő máj-zavar (zsírmáj, hepatitis)",
@@ -221,9 +221,9 @@ export default {
         "pl": "Stanozolol zawiesina wodna (IM, Winstrol Depot)"
       },
       "routeNote": {
-        "hu": "Vizes szuszpenzió IM (NEM olajbázis!) — a stanozolol vízben szuszpendálható mikrokristályok formájában (innen az 'aq' = aqueous). ~24 h felezési idő depot-felszívódásból. FONTOS: az injekció tipikusan nagyon fájdalmas (a kristályok irritálják az izomszövetet — PIP, ödéma). Hepatotoxicitás EGYENLŐ az orálissal, mert ugyanaz a 17α-metil molekula szisztémásan hat.",
-        "en": "Aqueous suspension IM (NOT oil-based!) — stanozolol as water-suspended microcrystals (hence 'aq' = aqueous). ~24 h half-life from depot absorption. IMPORTANT: injection is typically very painful (crystals irritate muscle tissue — PIP, edema). Hepatotoxicity is EQUAL to oral because the same 17α-methyl molecule acts systemically.",
-        "pl": "Zawiesina wodna IM (NIE na bazie oleju!) — stanozolol jako mikrokryształy zawieszone w wodzie (stąd 'aq' = aqueous). ~24 h okres półtrwania z absorpcji depot. WAŻNE: iniekcja jest zazwyczaj bardzo bolesna (kryształy drażnią tkankę mięśniową — PIP, obrzęk). Hepatotoksyczność RÓWNA doustnej, bo ta sama cząsteczka 17α-metylu działa systemowo."
+        "hu": "Vizes szuszpenzió IM (NEM olajbázis!) – a stanozolol vízben szuszpendálható mikrokristályok formájában (innen az 'aq' = aqueous). ~24 h felezési idő depot-felszívódásból. FONTOS: az injekció tipikusan nagyon fájdalmas (a kristályok irritálják az izomszövetet – PIP, ödéma). Hepatotoxicitás EGYENLŐ az orálissal, mert ugyanaz a 17α-metil molekula szisztémásan hat.",
+        "en": "Aqueous suspension IM (NOT oil-based!) – stanozolol as water-suspended microcrystals (hence 'aq' = aqueous). ~24 h half-life from depot absorption. IMPORTANT: injection is typically very painful (crystals irritate muscle tissue – PIP, edema). Hepatotoxicity is EQUAL to oral because the same 17α-methyl molecule acts systemically.",
+        "pl": "Zawiesina wodna IM (NIE na bazie oleju!) – stanozolol jako mikrokryształy zawieszone w wodzie (stąd 'aq' = aqueous). ~24 h okres półtrwania z absorpcji depot. WAŻNE: iniekcja jest zazwyczaj bardzo bolesna (kryształy drażnią tkankę mięśniową – PIP, obrzęk). Hepatotoksyczność RÓWNA doustnej, bo ta sama cząsteczka 17α-metylu działa systemowo."
       },
       "image": "/performance/water-vial.png",
       "halfLife": "~24 h (IM depot, mikrokristályos)",
@@ -267,10 +267,10 @@ export default {
           "Rx-grade: Sanofi Winstrol Depot 50 mg/ml (EU, ritka); minőség-ellenőrzött"
         ],
         "caution": [
-          "EXTRA fájdalmas injekció — kristályok fizikailag irritálják az izomszövetet (PIP, ödéma, abszcessz-veszély)",
-          "Hepatotoxicitás EGYENLŐ az orálissal — a 17α-metil szisztémásan hat, NEM csak first-pass (Hartgens-Kuipers 2004)",
+          "EXTRA fájdalmas injekció – kristályok fizikailag irritálják az izomszövetet (PIP, ödéma, abszcessz-veszély)",
+          "Hepatotoxicitás EGYENLŐ az orálissal – a 17α-metil szisztémásan hat, NEM csak first-pass (Hartgens-Kuipers 2004)",
           "HDL drasztikus csökkenés (Bausserman 1997): lipid-zavar orálhoz hasonló mértékben",
-          "Ínszakadás-veszély ugyanaz mint orálnál — ínkollagén lagging az izomerő mögött"
+          "Ínszakadás-veszély ugyanaz mint orálnál – ínkollagén lagging az izomerő mögött"
         ],
         "avoid": [
           "Fájdalom-érzékenység (a kristályok jelentős PIP-et + abszcessz-rizikót okoznak)",
@@ -280,11 +280,11 @@ export default {
       },
       "interactions": [
         "Más AAS-szal kombinálva fokozza HPTA-szuppressziót",
-        "TUDCA 500 mg/nap ajánlott (a hepatotoxicitás miatt — NEM nulla IM-formánál sem)",
+        "TUDCA 500 mg/nap ajánlott (a hepatotoxicitás miatt – NEM nulla IM-formánál sem)",
         "PCT utolsó injekció +5-7 nap után indul"
       ]
     }
   ],
   "defaultVariant": "oral",
-  "anecdote": "Az anekdotikus beszámolók a Winstrolt kevésbé drámai növekedéssel és inkább jellegzetes sűrű, feszes, teljesítményfokozó karakterrel írják le — az erőnövekedés néha aránytalannak tűnik a látható izomgyarapodáshoz képest. Visszatérő téma a közösségi beszámolókban, hogy a Winstrol észrevehető eltolódásokat okoz az izomkeménységben, a szeparációban és a rekompozícióban, ami megalapozta hosszú távú hírnevét a fizikai megjelenésre összpontosító használatban. Ugyanakkor a felhasználók hangsúlyozzák, hogy a 'száraz, finomított' kép elfedheti a fontos kompromisszumokat — különösen a kemény lipid-hatásokat, az orális forma máj-stresszét (és az injekciós formáét is!), a HPTA-szuppressziót és a kötőszöveti panaszokat. Az aq (depot) forma látszólag 'kíméletesebb' útnak tűnik, de a hepatotoxicitás nem csökken — mert ugyanaz a 17α-metil molekula szisztémásan hat."
+  "anecdote": "Az anekdotikus beszámolók a Winstrolt kevésbé drámai növekedéssel és inkább jellegzetes sűrű, feszes, teljesítményfokozó karakterrel írják le – az erőnövekedés néha aránytalannak tűnik a látható izomgyarapodáshoz képest. Visszatérő téma a közösségi beszámolókban, hogy a Winstrol észrevehető eltolódásokat okoz az izomkeménységben, a szeparációban és a rekompozícióban, ami megalapozta hosszú távú hírnevét a fizikai megjelenésre összpontosító használatban. Ugyanakkor a felhasználók hangsúlyozzák, hogy a 'száraz, finomított' kép elfedheti a fontos kompromisszumokat – különösen a kemény lipid-hatásokat, az orális forma máj-stresszét (és az injekciós formáét is!), a HPTA-szuppressziót és a kötőszöveti panaszokat. Az aq (depot) forma látszólag 'kíméletesebb' útnak tűnik, de a hepatotoxicitás nem csökken – mert ugyanaz a 17α-metil molekula szisztémásan hat."
 }

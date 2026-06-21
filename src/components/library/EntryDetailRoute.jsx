@@ -46,7 +46,7 @@ export default function EntryDetailRoute({ route }) {
 
   // Phase 9: async per-entry loader. Each deep-link only pulls one entry's
   // chunk, not the whole library.
-  // Phase 12: lang in dep-array — language switch re-fires the load with the
+  // Phase 12: lang in dep-array – language switch re-fires the load with the
   // fresh-lang chunk. Inline cancel-flag prevents stale state on rapid switches
   // (HU→EN→PL→HU before the EN chunk resolves).
   useEffect(() => {
@@ -151,7 +151,7 @@ export default function EntryDetailRoute({ route }) {
   // Smooth-scroll to top whenever the active entry changes (e.g. clicking a
   // RelatedCard navigates from #entry/.../A to #entry/.../B). Without this,
   // the user lands mid-page on the new entry.
-  // NOTE: variantId change does NOT scroll — staying in place is the desired
+  // NOTE: variantId change does NOT scroll – staying in place is the desired
   // UX when toggling between oral/topical on the same compound.
   useEffect(() => {
     if (!parsed?.id) return
@@ -161,7 +161,7 @@ export default function EntryDetailRoute({ route }) {
     })
   }, [parsed?.library, parsed?.id])
 
-  // Phase C — Variant auto-redirect. Once the entry has loaded, check whether
+  // Phase C – Variant auto-redirect. Once the entry has loaded, check whether
   // the hash carries a valid variantId. Rules:
   //   - Entry has `variants` array AND parsed.variantId is missing → redirect to defaultVariant.
   //   - Entry has `variants` array AND parsed.variantId is unknown → redirect to defaultVariant.
@@ -219,7 +219,7 @@ export default function EntryDetailRoute({ route }) {
     const handleJump = (id) => {
       if (parsed?.library) navigate(entryPath(parsed.library, id, null, lang))
     }
-    // entryKey excludes variantId on purpose — EntryDetail stays mounted across
+    // entryKey excludes variantId on purpose – EntryDetail stays mounted across
     // variant toggles; internal state (scroll, magnet, nameRef) survives the
     // swap, only the prop-driven body re-renders.
     const entryKey = `${parsed.library}:${peptide.id}`

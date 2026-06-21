@@ -78,5 +78,5 @@ export default {
       "finding": "Modulacja układu dopaminergicznego i serotoninergicznego; ochrona tkanki nerwowej przed niedokrwieniem i urazem."
     }
   ],
-  "anecdote": "Raporty anegdotyczne opisują użytkowników wstrzykujących BPC-157 podskórnie w pobliżu uszkodzonej kostki, ze zmniejszonym bólem przy chodzeniu obserwowanym w ciągu 2-3 dni przy dawkowaniu 500 mcg rano w pobliżu miejsca urazu. W ciągu 4-tygodniowego cyklu doniesienia społeczności wspominają o poprawionej regeneracji po treningu i zmniejszonej bolesności — placebo nie można wykluczyć, ale czas jest zgodny z postulowanym mechanizmem naprawy tkanek BPC-157.\n\nPeptyd jest zwykle podawany codziennie, albo poprzez iniekcję podskórną, albo w postaci kapsułek doustnych."
+  "anecdote": "Raporty anegdotyczne opisują użytkowników wstrzykujących BPC-157 podskórnie w pobliżu uszkodzonej kostki, ze zmniejszonym bólem przy chodzeniu obserwowanym w ciągu 2-3 dni przy dawkowaniu 500 mcg rano w pobliżu miejsca urazu. W ciągu 4-tygodniowego cyklu doniesienia społeczności wspominają o poprawionej regeneracji po treningu i zmniejszonej bolesności – placebo nie można wykluczyć, ale czas jest zgodny z postulowanym mechanizmem naprawy tkanek BPC-157.\n\nPeptyd jest zwykle podawany codziennie, albo poprzez iniekcję podskórną, albo w postaci kapsułek doustnych."
 }

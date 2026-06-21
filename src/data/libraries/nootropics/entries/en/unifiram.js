@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Ampakine (DM-232), alkynyl variant of Sunifiram, AMPA-PAM.",
-  "description": "Unifiram (DM-232) is a designed alkynyl analog of Sunifiram (DM-235), with similar sub-mg in vivo activity in rat anti-amnestic models. Interestingly it does NOT directly act as an AMPA-PAM (unlike classical ampakines) — instead it improves glutamatergic signal-processing efficiency, enhancing how memory circuits respond to glutamate. Indirect activation at the NMDA glycine site + acetylcholine release modulation in cerebral cortex. Long-lasting hippocampal LTP elevation. Less activating than Sunifiram, more pro-cognitive profile; data report no adverse effects in studied models. No human data exist.",
+  "description": "Unifiram (DM-232) is a designed alkynyl analog of Sunifiram (DM-235), with similar sub-mg in vivo activity in rat anti-amnestic models. Interestingly it does NOT directly act as an AMPA-PAM (unlike classical ampakines) – instead it improves glutamatergic signal-processing efficiency, enhancing how memory circuits respond to glutamate. Indirect activation at the NMDA glycine site + acetylcholine release modulation in cerebral cortex. Long-lasting hippocampal LTP elevation. Less activating than Sunifiram, more pro-cognitive profile; data report no adverse effects in studied models. No human data exist.",
   "keyInfo": [
     {
       "label": "Mechanism",

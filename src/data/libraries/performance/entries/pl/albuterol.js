@@ -46,7 +46,7 @@ export default {
       "value": "USA: FDA Rx. UE: na receptę (Ventolin). WADA: inhalacja <1600 μg dozwolone."
     }
   ],
-  "mechanism": "Selektywny agonista β2 rozluźniający mięśnie gładkie dróg oddechowych. Wewnątrzkomórkowy szlak identyczny z Clenbuterolem: β2 → Gs → cyklaza adenylanowa → cAMP → PKA → fosforylacja HSL → lipoliza. **RÓŻNICA vs Clenbuterol: KRÓTKIE zajęcie receptora** — szybka dysocjacja Albuterolu eliminuje przewlekłą down-regulację β2, więc brak kumulacji kardiotoksycznej, ALE szybsza tolerancja (1-2 tygodnie). Efekt anaboliczny skromniejszy.",
+  "mechanism": "Selektywny agonista β2 rozluźniający mięśnie gładkie dróg oddechowych. Wewnątrzkomórkowy szlak identyczny z Clenbuterolem: β2 → Gs → cyklaza adenylanowa → cAMP → PKA → fosforylacja HSL → lipoliza. **RÓŻNICA vs Clenbuterol: KRÓTKIE zajęcie receptora** – szybka dysocjacja Albuterolu eliminuje przewlekłą down-regulację β2, więc brak kumulacji kardiotoksycznej, ALE szybsza tolerancja (1-2 tygodnie). Efekt anaboliczny skromniejszy.",
   "legalStatus": "USA: FDA Rx. UE: na receptę, dostępny w aptekach. WADA: inhalacja do 1600 μg/24h dozwolona, doustnie/dożylnie zakazane.",
   "onsetTime": "5-15 min (inhaled), 15-30 min (oral)",
   "halfLife": "5-6 h (oral)",
@@ -56,8 +56,8 @@ export default {
     "MAOI",
     "tricyclic antidepressants"
   ],
-  "aromatization": "Nie dotyczy — agonista β2, NIE steroid; brak interakcji z CYP19",
-  "hepatotoxicity": "Niska — praktycznie brak hepatotoksyczności w dawce terapeutycznej; główne działania niepożądane to drżenie i tachykardia (etykieta FDA Proventil)",
+  "aromatization": "Nie dotyczy – agonista β2, NIE steroid; brak interakcji z CYP19",
+  "hepatotoxicity": "Niska – praktycznie brak hepatotoksyczności w dawce terapeutycznej; główne działania niepożądane to drżenie i tachykardia (etykieta FDA Proventil)",
   "wadaStatus": "monitored",
   "detectionWindow": "24-72 godziny mocz (próg WADA: 1000 ng/mL).",
   "benefits": [
@@ -101,9 +101,9 @@ export default {
       "Zaburzenia sercowe (arytmia, ciężkie nadciśnienie) to przeciwwskazania",
       "Przeciwwskazany z terapią β-blokerami",
       "Nadczynność tarczycy, jaskra to przeciwwskazania",
-      "Stosowanie off-label do redukcji tkanki tłuszczowej jest przeciwwskazane przy ciężkiej chorobie sercowo-naczyniowej — wskazanie medyczne (inhalator) jest inne",
+      "Stosowanie off-label do redukcji tkanki tłuszczowej jest przeciwwskazane przy ciężkiej chorobie sercowo-naczyniowej – wskazanie medyczne (inhalator) jest inne",
       "Ciężki lęk, zaburzenia paniczne, padaczka",
-      "Jednoczesne stosowanie MAOI — ryzyko przełomu nadciśnieniowego",
+      "Jednoczesne stosowanie MAOI – ryzyko przełomu nadciśnieniowego",
       "Ciąża i karmienie piersią (kategoria C, tylko gdy wyraźnie wskazane)"
     ]
   },
@@ -186,52 +186,52 @@ export default {
       "id": "oral",
       "routeId": "oral",
       "routeLabel": {
-        "hu": "Orális tabletta — Salbutamol HCl",
-        "en": "Oral tablet — Salbutamol HCl",
-        "pl": "Tabletka doustna — Salbutamol HCl"
+        "hu": "Orális tabletta – Salbutamol HCl",
+        "en": "Oral tablet – Salbutamol HCl",
+        "pl": "Tabletka doustna – Salbutamol HCl"
       },
       "image": "/performance/tablet-pile-white.png",
-      "whatIs": "Tabletka Salbutamolu HCl (2 mg, 4 mg) — stosowana off-label w cyklach termogenicznych podobnych do Clenbuterolu, z ochroną masy mięśniowej. Dostępna w aptece (Ventolin 2 mg tabletki), co gwarantuje precyzyjną zawartość substancji czynnej, w odróżnieniu od produktów UGL.",
-      "routeNote": "Wybierz formę doustną, gdy planujesz cykl redukcyjny w stylu Clenbuterolu: tabletki pozwalają na dokładne dawkowanie, a okres półtrwania ~5-6 godz daje bezpieczniejszy profil kumulacji niż Clenbuterol. Bez wskazania astmatycznego ta droga jest zakazana przez WADA — wyłącznie dla niekonkurujących sportowców w kontekście off-label.",
+      "whatIs": "Tabletka Salbutamolu HCl (2 mg, 4 mg) – stosowana off-label w cyklach termogenicznych podobnych do Clenbuterolu, z ochroną masy mięśniowej. Dostępna w aptece (Ventolin 2 mg tabletki), co gwarantuje precyzyjną zawartość substancji czynnej, w odróżnieniu od produktów UGL.",
+      "routeNote": "Wybierz formę doustną, gdy planujesz cykl redukcyjny w stylu Clenbuterolu: tabletki pozwalają na dokładne dawkowanie, a okres półtrwania ~5-6 godz daje bezpieczniejszy profil kumulacji niż Clenbuterol. Bez wskazania astmatycznego ta droga jest zakazana przez WADA – wyłącznie dla niekonkurujących sportowców w kontekście off-label.",
       "dosing": "4-8 mg PO TID, max 24 mg/dzień",
       "halfLife": "5-6 godz",
       "halfLifeActive": "5-6 godz",
       "bioavailability": "~30-40% (oral, gastric first-pass)",
       "onsetTime": "15-30 min",
-      "aromatization": "Nie dotyczy — agonista β2, NIE steroid; brak interakcji z CYP19",
-      "hepatotoxicity": "Niska — praktycznie brak hepatotoksyczności w dawkach terapeutycznych; drżenie i tachykardia to główne skutki uboczne (etykieta FDA Proventil)",
+      "aromatization": "Nie dotyczy – agonista β2, NIE steroid; brak interakcji z CYP19",
+      "hepatotoxicity": "Niska – praktycznie brak hepatotoksyczności w dawkach terapeutycznych; drżenie i tachykardia to główne skutki uboczne (etykieta FDA Proventil)",
       "indications": "Off-label utrata tłuszczu + zachowanie mięśni w deficycie kalorycznym (cykl typu Clen)",
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 4, "medium": 8, "high": 16 },
         "unit": "mg/dzień",
-        "note": "Doustnie 4-8 mg 3x/dzień (cykl typu Clen), max 24 mg/dzień. Tolerancja rozwija się w ciągu 1-2 tygodni — cykl maksymalnie 4-6 tygodni, potem 2 tygodnie przerwy. Monitoring kardio + EKG baseline + kontrola 4-tygodniowa obowiązkowa. Magnez 400 mg + potas w połowie cyklu przeciw hipokaliemii."
+        "note": "Doustnie 4-8 mg 3x/dzień (cykl typu Clen), max 24 mg/dzień. Tolerancja rozwija się w ciągu 1-2 tygodni – cykl maksymalnie 4-6 tygodni, potem 2 tygodnie przerwy. Monitoring kardio + EKG baseline + kontrola 4-tygodniowa obowiązkowa. Magnez 400 mg + potas w połowie cyklu przeciw hipokaliemii."
       }
     },
     {
       "id": "inhaled",
       "routeId": "inhaled",
       "routeLabel": {
-        "hu": "Inhaláló (MDI) — Ventolin / ProAir",
-        "en": "Inhaler (MDI) — Ventolin / ProAir",
-        "pl": "Inhalator (MDI) — Ventolin / ProAir"
+        "hu": "Inhaláló (MDI) – Ventolin / ProAir",
+        "en": "Inhaler (MDI) – Ventolin / ProAir",
+        "pl": "Inhalator (MDI) – Ventolin / ProAir"
       },
       "image": "/performance/inhaler-asthma.png",
-      "whatIs": "Inhalator z odmierzaną dawką (MDI) — standardowa forma leczenia astmy Ventolin/ProAir. Dostarcza lek bezpośrednio do płuc przy minimalnym wchłanianiu ogólnoustrojowym. Zgodnie z przepisami WADA stosowanie do 1600 μg/24h jest dozwolone dla zawodników z astmą bez konieczności TUE.",
+      "whatIs": "Inhalator z odmierzaną dawką (MDI) – standardowa forma leczenia astmy Ventolin/ProAir. Dostarcza lek bezpośrednio do płuc przy minimalnym wchłanianiu ogólnoustrojowym. Zgodnie z przepisami WADA stosowanie do 1600 μg/24h jest dozwolone dla zawodników z astmą bez konieczności TUE.",
       "routeNote": "Wybierz inhalator, gdy głównym celem jest leczenie objawów ostrej astmy, lub gdy rywalizujesz pod kontrolą WADA i potrzebujesz bronchodylatatora. Ogólnoustrojowe działania niepożądane (drżenie, tachykardia) są znacznie łagodniejsze niż przy formie doustnej, ale off-label efekt termogeniczny i ochrona masy mięśniowej są też mniejsze.",
       "dosing": "90-200 μg/wdech PRN, max 1600 μg/24h próg WADA",
       "halfLife": "1.5-3 godz (lokalnie)",
       "halfLifeActive": "1.5-3 godz",
       "bioavailability": "~10-20% (systemowo, wysoka lokalna tkankowo)",
       "onsetTime": "5-15 min",
-      "aromatization": "Nie dotyczy — agonista β2, NIE steroid; brak interakcji z CYP19",
-      "hepatotoxicity": "Niska — efekt dominowany lokalnie w tkankach, poziom ogólnoustrojowy minimalny, stres wątrobowy pomijalny",
+      "aromatization": "Nie dotyczy – agonista β2, NIE steroid; brak interakcji z CYP19",
+      "hepatotoxicity": "Niska – efekt dominowany lokalnie w tkankach, poziom ogólnoustrojowy minimalny, stres wątrobowy pomijalny",
       "indications": "FDA-Rx astma + bronchodylatacja; sportowy legalny protokół TUE WADA-monitored",
       "doseCalc": {
         "type": "fixed",
         "fixed": { "low": 90, "medium": 200, "high": 1600 },
         "unit": "μg/wdech (max 1600 μg/24h próg WADA)",
-        "note": "Inhalator MDI 90-200 μg/wdech w razie potrzeby (PRN). Sport wyczynowy akredytowany przez WADA: 1600 μg/24h maksymalna dozwolona dawka — stężenie w moczu musi pozostać <1000 ng/mL. Typowa dawka terapeutyczna: 90 μg (1 dawka) lub 180 μg (2 dawki) co 4-6 godz w razie potrzeby, max 4-8x/dzień."
+        "note": "Inhalator MDI 90-200 μg/wdech w razie potrzeby (PRN). Sport wyczynowy akredytowany przez WADA: 1600 μg/24h maksymalna dozwolona dawka – stężenie w moczu musi pozostać <1000 ng/mL. Typowa dawka terapeutyczna: 90 μg (1 dawka) lub 180 μg (2 dawki) co 4-6 godz w razie potrzeby, max 4-8x/dzień."
       }
     }
   ],

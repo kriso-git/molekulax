@@ -4,8 +4,8 @@ import { Send, ArrowRight } from 'lucide-react'
 // Hero and Footer so the contact action stays identical everywhere.
 //
 // Variants:
-//   - "pill"   (default) — full-size pill with label + arrow (TelegramSection, Hero)
-//   - "compact"           — tiny pill (footer-grade)
+//   - "pill"   (default) – full-size pill with label + arrow (TelegramSection, Hero)
+//   - "compact"           – tiny pill (footer-grade)
 
 export const TELEGRAM_HU_URL = 'https://t.me/molekulaxtra'
 

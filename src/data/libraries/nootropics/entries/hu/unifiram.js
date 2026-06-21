@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Ampakine (DM-232), Sunifiram alkinil-variánsa, AMPA-PAM.",
-  "description": "Az Unifiram (DM-232) a Sunifiram (DM-235) tervezett alkinil-származéka, hasonló sub-mg in vivo aktivitással patkány anti-amnesztikus modellekben. Érdekes módon NEM direkt AMPA-PAM-ként hat (klasszikus ampakine-okkal ellentétben), hanem a glutamáterg jel-feldolgozási hatékonyság javításán keresztül — a memóriát alkotó áramkörök Glu-jelzésekre adott válaszát fokozza. NMDA glicin-helyén indirekt aktivátor + cerebrális kéreg ACh-felszabadulás moduláció. Hosszan tartó hippocampális LTP-emelés. Sunifiramnál kevésbé aktiváló, inkább pro-kognitív profil; adatok szerint NEM termel mellékhatást a vizsgált modellekben. Humán adat egyáltalán nincs.",
+  "description": "Az Unifiram (DM-232) a Sunifiram (DM-235) tervezett alkinil-származéka, hasonló sub-mg in vivo aktivitással patkány anti-amnesztikus modellekben. Érdekes módon NEM direkt AMPA-PAM-ként hat (klasszikus ampakine-okkal ellentétben), hanem a glutamáterg jel-feldolgozási hatékonyság javításán keresztül – a memóriát alkotó áramkörök Glu-jelzésekre adott válaszát fokozza. NMDA glicin-helyén indirekt aktivátor + cerebrális kéreg ACh-felszabadulás moduláció. Hosszan tartó hippocampális LTP-emelés. Sunifiramnál kevésbé aktiváló, inkább pro-kognitív profil; adatok szerint NEM termel mellékhatást a vizsgált modellekben. Humán adat egyáltalán nincs.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",

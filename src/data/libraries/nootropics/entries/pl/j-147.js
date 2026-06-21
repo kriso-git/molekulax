@@ -38,7 +38,7 @@ export default {
       "value": "Lek badawczy, brak rejestracji FDA"
     }
   ],
-  "mechanism": "Bezpośrednia modulacja podjednostki katalitycznej F1 (ATP5A) syntazy ATP → zwiększona produkcja ATP mitochondrialnego i zmniejszenie wolnych rodników. Wtórnie zwiększa ekspresję genów BDNF i NGF z aktywacją szlaku CREB. NIE jest bezpośrednim celem płytek amyloidowych — efekt poznawczy wynika z przywrócenia energii mitochondrialnej i indukcji neurotrofin.",
+  "mechanism": "Bezpośrednia modulacja podjednostki katalitycznej F1 (ATP5A) syntazy ATP → zwiększona produkcja ATP mitochondrialnego i zmniejszenie wolnych rodników. Wtórnie zwiększa ekspresję genów BDNF i NGF z aktywacją szlaku CREB. NIE jest bezpośrednim celem płytek amyloidowych – efekt poznawczy wynika z przywrócenia energii mitochondrialnej i indukcji neurotrofin.",
   "legalStatus": "UE/HU: brak rejestracji medycznej, związek badawczy. USA: wyłącznie do badań naukowych, niezatwierdzony przez FDA. Dostępny na rynku „chemikaliów badawczych\"; stosowanie u ludzi bez nadzoru medycznego NIE jest zalecane.",
   "chemicalFormula": "C18H17F3N4O"
 }

@@ -29,7 +29,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Mesterolone, 1α-metil-DHT orális androgén Bayer Rx (Proviron-25, DE/AT/PL piacon törzskönyvezett). NEM 17α-alkilált → alacsony hepatotoxicitás. AAS-ciklus alatt SHBG-szuppresszor és \"AI-mimikker\" adjunkt; standalone bulker NEM.",
-  "description": "A Proviron (Mesterolone) egy 1α-metil-dihydrotesztoszteron-származék orális androgén, Schering AG 1966-ban szintetizálta és Proviron márkanéven (Bayer 2006 óta) forgalmazza. Bayer-Rx Németországban, Ausztriában, Lengyelországban (Proviron-25, 25 mg tabletta) — eredeti klinikai indikációk: férfi szubfertilitás, késleltett pubertás, hipogonadizmus, libido-csökkenés idős férfiaknál. Anabolikus:androgén arány ~100:30-40 (gyenge anabolikus, mérsékelt androgén). NEM 17α-alkilált (csak 1α-metil) → alacsony hepatotoxicitás. NEM aromatizál (CYP19 NEM szubsztrát). MAGAS SHBG-affinitás → \"AI-mimikker\" effekt: a Proviron a SHBG-hez kötve csökkenti a SHBG-T fraction-t, így a szabad-T (és szabad-E2) emelkedik a stack-társ Test mellett. Bodybuilding kontextusban tipikusan AAS-ciklus adjunkt (25-50 mg/nap), NEM standalone bulker. WADA tiltott egész évben.",
+  "description": "A Proviron (Mesterolone) egy 1α-metil-dihydrotesztoszteron-származék orális androgén, Schering AG 1966-ban szintetizálta és Proviron márkanéven (Bayer 2006 óta) forgalmazza. Bayer-Rx Németországban, Ausztriában, Lengyelországban (Proviron-25, 25 mg tabletta) – eredeti klinikai indikációk: férfi szubfertilitás, késleltett pubertás, hipogonadizmus, libido-csökkenés idős férfiaknál. Anabolikus:androgén arány ~100:30-40 (gyenge anabolikus, mérsékelt androgén). NEM 17α-alkilált (csak 1α-metil) → alacsony hepatotoxicitás. NEM aromatizál (CYP19 NEM szubsztrát). MAGAS SHBG-affinitás → \"AI-mimikker\" effekt: a Proviron a SHBG-hez kötve csökkenti a SHBG-T fraction-t, így a szabad-T (és szabad-E2) emelkedik a stack-társ Test mellett. Bodybuilding kontextusban tipikusan AAS-ciklus adjunkt (25-50 mg/nap), NEM standalone bulker. WADA tiltott egész évben.",
   "keyInfo": [
     {"label": "Hatásmechanizmus", "value": "AR-agonista (gyenge) + SHBG-szuppresszor + enyhe AI"},
     {"label": "Anabolikus:Androgén", "value": "100:30-40"},
@@ -37,14 +37,14 @@ export default {
     {"label": "Hatáskezdet", "value": "1-2 óra (orális)"},
     {"label": "Jogi státusz", "value": "Bayer Rx (DE/AT/PL), WADA tiltott"}
   ],
-  "mechanism": "1α-metil-dihydrotesztoszteron AR-agonista. Az 1α-metil-csoport (Δ1, NEM 17α!) ad orális stabilitást a hepatikus first-pass-rezisztenciával — DE alacsonyabb mértékben mint a 17α-metil. NEM CYP19 szubsztrát → NEM aromatizál. NEM 5α-reduktáz szubsztrát (már redukált). HÁROM klinikailag releváns effekt: (1) gyenge direkt AR-agonista aktivitás (önmagában minimális izomtömeg-építő); (2) magas SHBG-affinitás → SHBG-kötött tesztoszteront verseng le, indirekt szabad-T-emelkedést indukál stack-társ Test mellett; (3) enyhe aromatáz-inhibitor aktivitás → csökkenti az E2-emelkedést Test-stack alatt. Ezért tipikusan 25-50 mg/nap dózisban AAS-ciklus adjunkt szerepre használt, NEM standalone bulker.",
+  "mechanism": "1α-metil-dihydrotesztoszteron AR-agonista. Az 1α-metil-csoport (Δ1, NEM 17α!) ad orális stabilitást a hepatikus first-pass-rezisztenciával – DE alacsonyabb mértékben mint a 17α-metil. NEM CYP19 szubsztrát → NEM aromatizál. NEM 5α-reduktáz szubsztrát (már redukált). HÁROM klinikailag releváns effekt: (1) gyenge direkt AR-agonista aktivitás (önmagában minimális izomtömeg-építő); (2) magas SHBG-affinitás → SHBG-kötött tesztoszteront verseng le, indirekt szabad-T-emelkedést indukál stack-társ Test mellett; (3) enyhe aromatáz-inhibitor aktivitás → csökkenti az E2-emelkedést Test-stack alatt. Ezért tipikusan 25-50 mg/nap dózisban AAS-ciklus adjunkt szerepre használt, NEM standalone bulker.",
   "legalStatus": "DE/AT/PL: Bayer Proviron-25 Rx-szer (25 mg tabletta). HU: nem törzskönyvezett (import-Rx ritkán). USA: nem FDA-jóváhagyott, csak underground. WADA tiltott egész évben (S1.1.a). Lengyel piacon Proviron-25 elérhető lengyel receptre.",
   "onsetTime": "1-2 h (orális)",
   "halfLife": "12-13 h",
   "halfLifeActive": "12-13 h",
   "interactionsWith": ["testosterone", "anastrozole", "tamoxifen", "warfarin"],
-  "aromatization": "Nem — 1α-metil-DHT struktúra, NEM CYP19 szubsztrát; klinikailag enyhe AI-aktivitást is mutat magas SHBG-affinitása révén (Nieschlag-Behre 2012 testosterone monograph, Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Alacsony — 1α-metil-csoport (NEM 17α!) gyenge hepatikus first-pass-stressz; klinikai ALT/AST emelkedés ritkán dokumentált, jóval enyhébb mint az Anavar vagy Dianabol. Hosszú távú használat (Bayer SmPC tartós Rx-indikáció) hepatikus profil viszonylag biztonságos (Hartgens-Kuipers 2004 PMID 15233599)",
+  "aromatization": "Nem – 1α-metil-DHT struktúra, NEM CYP19 szubsztrát; klinikailag enyhe AI-aktivitást is mutat magas SHBG-affinitása révén (Nieschlag-Behre 2012 testosterone monograph, Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Alacsony – 1α-metil-csoport (NEM 17α!) gyenge hepatikus first-pass-stressz; klinikai ALT/AST emelkedés ritkán dokumentált, jóval enyhébb mint az Anavar vagy Dianabol. Hosszú távú használat (Bayer SmPC tartós Rx-indikáció) hepatikus profil viszonylag biztonságos (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
   "androgenicRatio": "100:30-40",
   "bindingAffinity": "AR-affinitás gyenge (~10% testosterone-hoz képest). MAGAS SHBG-affinitás (DHT-strukturális analóg) → SHBG-kötött tesztoszteront indirekt módon szabaddá teszi.",
@@ -53,15 +53,15 @@ export default {
     "Szabad-tesztoszteron indirekt emelkedés (SHBG-elfoglalás révén) AAS-ciklus alatt",
     "Enyhe AI-effekt → adjunkt-Anastrozol-igény csökkentés Test-stack mellett",
     "Libido és erektilis funkció javulása (klinikai Bayer SmPC indikáció)",
-    "Alacsony hepatotoxicitás — hosszú távú alkalmazás biztonsági profilja kedvezőbb",
+    "Alacsony hepatotoxicitás – hosszú távú alkalmazás biztonsági profilja kedvezőbb",
     "NEM aromatizál → nincs gynecomastia-kockázat önmagában"
   ],
   "quickStart": [
-    "Standalone bulker NEM — Proviron mindig adjunkt szerepre stack-társ AAS mellett",
+    "Standalone bulker NEM – Proviron mindig adjunkt szerepre stack-társ AAS mellett",
     "Tipikus dózis 25-50 mg/nap (1-2 tabletta), 6-12 hét",
     "DHT-strukturális analóg → hajhullás-acceleráció androgenetikus alopecia esetén",
     "Lipid panel monitor (HDL csökkenhet, mérsékelten)",
-    "Klinikai libido-boost effekt — Bayer SmPC alapján TRT-adjunkt indikáció valós"
+    "Klinikai libido-boost effekt – Bayer SmPC alapján TRT-adjunkt indikáció valós"
   ],
   "expectations": [
     {"label": "Első hét", "body": "Onset 1-2 h, akut hatás minimális. Subjektív libido-növekedés és szabad-T-érzés (\"jobb hangulat\") gyakori 3-5 nap után."},
@@ -74,7 +74,7 @@ export default {
       "UGL tabletta: HPLC-tesztelt forrás kötelező, ritkábban hamisított mint az Anavar/Primobolan (alacsonyabb piaci érték)"
     ],
     "caution": [
-      "Önmagában NEM bulker — felhasználói várakozás-realitás gap a leggyakoribb frusztráció-forrás",
+      "Önmagában NEM bulker – felhasználói várakozás-realitás gap a leggyakoribb frusztráció-forrás",
       "Hajhullás-acceleráció androgenetikus alopecia esetén (DHT-strukturális analóg)",
       "Lipid-zavar: HDL csökkenés (mérsékelt)",
       "Hangmélyülés és hirsutizmus nőknél (alacsonyabb dózisnál is virilizációs kockázat)"
@@ -83,7 +83,7 @@ export default {
       "Androgenetikus alopecia családi anamnézis",
       "Prosztata-hipertrófia, prosztatakarcinóma (DHT-analóg)",
       "Női felhasználás (alacsony anabolikus, magas virilizáció-kockázat-arány esztétikailag nem éri meg)",
-      "Bulking/tömegnövelő cél — Proviron NEM standalone bulker"
+      "Bulking/tömegnövelő cél – Proviron NEM standalone bulker"
     ]
   },
   "interactions": [
@@ -100,11 +100,11 @@ export default {
     {"title": "Bayer Proviron-25 SmPC (Summary of Product Characteristics)", "authors": "Bayer AG", "journal": "EMA / German Federal Institute for Drugs (BfArM)", "pmid": null}
   ],
   "faq": [
-    {"q": "Igaz, hogy a Proviron \"AI-mimikker\"?", "a": "Részben. A magas SHBG-affinitása csökkenti a SHBG-kötött tesztoszteron-frakciót, ami közvetve csökkenti a SHBG-kötött ösztradiol-szintet is. PLUS direkt, gyenge aromatáz-gátló aktivitása is van. DE az effekt NEM olyan erős mint az Anastrozol vagy Letrozol — magas Test-dózis mellett (>500 mg/hét) a Proviron önmagában NEM elegendő E2-kontrollra, csak Anastrozole-dózis-csökkentésre."},
-    {"q": "Miért NEM jó standalone bulker?", "a": "Az anabolikus aktivitás gyenge (~100 vs 320 Anavar vs 400 Superdrol). Standalone Proviron-ciklus után 25-50 mg/nap 8 héten át tipikusan 1-2 kg lean mass-gyarapodás várható (Anavar 4-5 kg, Dianabol 8-10 kg) — kifejezetten alacsony. Proviron mindig adjunkt szerepre, NEM bulker."},
-    {"q": "Lengyel piacon legálisan elérhető?", "a": "Igen, Bayer Proviron-25 (25 mg tabletta) lengyel piacon Rx-szer, lengyel orvos által felírható male infertility, hipogonadizmus, libido-csökkenés indikációkra. HU-piacon nem törzskönyvezett, magyar receptre nem írható fel — de import-Rx ritkán beszerezhető."},
+    {"q": "Igaz, hogy a Proviron \"AI-mimikker\"?", "a": "Részben. A magas SHBG-affinitása csökkenti a SHBG-kötött tesztoszteron-frakciót, ami közvetve csökkenti a SHBG-kötött ösztradiol-szintet is. PLUS direkt, gyenge aromatáz-gátló aktivitása is van. DE az effekt NEM olyan erős mint az Anastrozol vagy Letrozol – magas Test-dózis mellett (>500 mg/hét) a Proviron önmagában NEM elegendő E2-kontrollra, csak Anastrozole-dózis-csökkentésre."},
+    {"q": "Miért NEM jó standalone bulker?", "a": "Az anabolikus aktivitás gyenge (~100 vs 320 Anavar vs 400 Superdrol). Standalone Proviron-ciklus után 25-50 mg/nap 8 héten át tipikusan 1-2 kg lean mass-gyarapodás várható (Anavar 4-5 kg, Dianabol 8-10 kg) – kifejezetten alacsony. Proviron mindig adjunkt szerepre, NEM bulker."},
+    {"q": "Lengyel piacon legálisan elérhető?", "a": "Igen, Bayer Proviron-25 (25 mg tabletta) lengyel piacon Rx-szer, lengyel orvos által felírható male infertility, hipogonadizmus, libido-csökkenés indikációkra. HU-piacon nem törzskönyvezett, magyar receptre nem írható fel – de import-Rx ritkán beszerezhető."},
     {"q": "Hajhullás-kockázat?", "a": "Mérsékelt-magas, ha androgenetikus alopecia genetikai prediszpozíció van. A Proviron 1α-metil-DHT-strukturális analóg, ami a scalp 5α-reduktáz-bypass-szal közvetlenül aktiválja a hajtüsző AR-jét. Finasteride NEM véd (a Proviron már redukált). Egyetlen védelem: ha genetikailag érzékeny vagy, NE használj DHT-derivátum AAS-t."},
-    {"q": "Bayer Proviron biztonságos hosszú távon?", "a": "Bayer SmPC alapján male infertility és hipogonadizmus indikációkra hosszú távú (12+ hónap) folyamatos használat dokumentáltan biztonságos megfelelő monitoringgal (lipid, ALT/AST, PSA). DE a bodybuilding off-label supraphysiológiás dózisok (100+ mg/nap) NEM tartoznak ide — a Bayer terápiás 25-75 mg/nap dózissávban értelmezhető a biztonság."}
+    {"q": "Bayer Proviron biztonságos hosszú távon?", "a": "Bayer SmPC alapján male infertility és hipogonadizmus indikációkra hosszú távú (12+ hónap) folyamatos használat dokumentáltan biztonságos megfelelő monitoringgal (lipid, ALT/AST, PSA). DE a bodybuilding off-label supraphysiológiás dózisok (100+ mg/nap) NEM tartoznak ide – a Bayer terápiás 25-75 mg/nap dózissávban értelmezhető a biztonság."}
   ],
   "related": ["masteron", "primobolan", "anavar-info", "testosterone-info", "winstrol-info"],
   "doseCalc": {
@@ -124,7 +124,7 @@ export default {
       "label": "Ciklus közben",
       "timing": "4-6. hetén, ciklus felénél",
       "markers": "Total T, Free T (a Proviron-effekt fő marker), SHBG (csökkenés várható), E2, lipid panel (HDL), hepatikus (ALT/AST <2x normál Proviron-only ciklusnál várható).",
-      "purpose": "Free-T-emelkedés a Proviron-aktivitás indikátora (SHBG-csökkenés-driven). E2 a stack-társ Test alapján. ALT/AST emelkedés enyhe — ha >3x normál, gyanús más AAS additívan."
+      "purpose": "Free-T-emelkedés a Proviron-aktivitás indikátora (SHBG-csökkenés-driven). E2 a stack-társ Test alapján. ALT/AST emelkedés enyhe – ha >3x normál, gyanús más AAS additívan."
     },
     "postCycle": {
       "label": "PCT (Post-Cycle Therapy)",

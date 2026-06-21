@@ -61,8 +61,8 @@ export default {
     "hcg",
     "pramipexole"
   ],
-  "aromatization": "Nie — steroid 19-nor, NIE substrat CYP19; aktywność receptora progesteronu dominuje zamiast E2 (Hartgens-Kuipers 2004)",
-  "hepatotoxicity": "Niska-umiarkowana — NIE 17α-alkilowany, ale dominuje stres nerkowy (nefrotoksyczne metabolity) i obciążenie sercowo-naczyniowe (Pope-Kanayama 2014)",
+  "aromatization": "Nie – steroid 19-nor, NIE substrat CYP19; aktywność receptora progesteronu dominuje zamiast E2 (Hartgens-Kuipers 2004)",
+  "hepatotoxicity": "Niska-umiarkowana – NIE 17α-alkilowany, ale dominuje stres nerkowy (nefrotoksyczne metabolity) i obciążenie sercowo-naczyniowe (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "500:500",
   "bindingAffinity": "Powinowactwo do AR ~5x testosteronu; częściowy agonista receptora progesteronowego, stąd wzrost prolaktyny.",
@@ -110,7 +110,7 @@ export default {
       "Niestabilność psychiczna, zaburzenia snu, zaburzenia lękowe",
       "Pierwszy cykl, użycie bez bazy TRT, choroba sercowo-naczyniowa",
       "Rak prostaty lub piersi (androgenowrażliwy nowotwór przeciwwskazuje)",
-      "Czerwienica (hematokryt >54%) — ryzyko zakrzepicy",
+      "Czerwienica (hematokryt >54%) – ryzyko zakrzepicy",
       "Planowane ojcostwo (możliwe 12+ miesięcy odbudowy spermatogenezy z powodu metabolitów 19-nor)",
       "Ciąża i karmienie piersią"
     ]
@@ -231,9 +231,9 @@ export default {
         "pl": "Trenbolon Acetate (Tren-Ace, szybki ester)"
       },
       "routeNote": {
-        "hu": "Klasszikus bodybuilding-választás a gyors on/off miatt. ~2-3 napos felezés ⇒ EOD vagy napi IM-injekció szükséges a stabil szintekhez. Nincs aromatizáció, de NEM 17α-alkilált — a renális oxidatív stressz, prolaktin-emelkedés és vérnyomás-növekedés az igazi terhelés. Tren-cough rapid-onset 30-60 mp posztiv injekció után jellemző.",
-        "en": "Classic bodybuilding choice for its fast on/off kinetics. ~2-3 day half-life ⇒ EOD or daily IM injection required for steady levels. No aromatization, but NOT 17α-alkylated — renal oxidative stress, prolactin elevation and blood-pressure increase are the real burdens. Tren-cough rapid-onset 30-60 s post-injection is characteristic.",
-        "pl": "Klasyczny wybór kulturystyczny dla szybkiej kinetyki on/off. ~2-3 dni okresu półtrwania ⇒ wymagana iniekcja IM co drugi dzień lub codziennie dla stabilnych poziomów. Brak aromatyzacji, ale NIE 17α-alkilowany — oksydacyjny stres nerkowy, wzrost prolaktyny i ciśnienia krwi to prawdziwe obciążenia. Tren-cough szybko po iniekcji (30-60 s) jest charakterystyczny."
+        "hu": "Klasszikus bodybuilding-választás a gyors on/off miatt. ~2-3 napos felezés ⇒ EOD vagy napi IM-injekció szükséges a stabil szintekhez. Nincs aromatizáció, de NEM 17α-alkilált – a renális oxidatív stressz, prolaktin-emelkedés és vérnyomás-növekedés az igazi terhelés. Tren-cough rapid-onset 30-60 mp posztiv injekció után jellemző.",
+        "en": "Classic bodybuilding choice for its fast on/off kinetics. ~2-3 day half-life ⇒ EOD or daily IM injection required for steady levels. No aromatization, but NOT 17α-alkylated – renal oxidative stress, prolactin elevation and blood-pressure increase are the real burdens. Tren-cough rapid-onset 30-60 s post-injection is characteristic.",
+        "pl": "Klasyczny wybór kulturystyczny dla szybkiej kinetyki on/off. ~2-3 dni okresu półtrwania ⇒ wymagana iniekcja IM co drugi dzień lub codziennie dla stabilnych poziomów. Brak aromatyzacji, ale NIE 17α-alkilowany – oksydacyjny stres nerkowy, wzrost prolaktyny i ciśnienia krwi to prawdziwe obciążenia. Tren-cough szybko po iniekcji (30-60 s) jest charakterystyczny."
       },
       "image": "/performance/oil-vial-orange.png",
       "halfLife": "~2-3 dni (ester Octanu, KRÓTKI)",
@@ -274,12 +274,12 @@ export default {
       "quality": {
         "pure": [
           "UGL Trenbolon Octan 100 mg/ml głęboko pomarańczowa fiolka olejowa (HPLC-testowane źródło obowiązkowe)",
-          "Konwersja pelletu weterynaryjnego Finaplix-H — historyczna praktyka UGL (dziś rzadka, zastąpiona bezpośrednią syntezą UGL)"
+          "Konwersja pelletu weterynaryjnego Finaplix-H – historyczna praktyka UGL (dziś rzadka, zastąpiona bezpośrednią syntezą UGL)"
         ],
         "caution": [
           "EOD lub codzienna iniekcja IM wymagana z powodu krótkiego okresu półtrwania",
           "PIP powszechny (formuła oleju pomarańczowo-czerwona, wyższe stężenie mg/ml = więcej PIP)",
-          "Tren-cough szybki onset 30-60 s po iniekcji — hipoteza mikrozatorów płucnych",
+          "Tren-cough szybki onset 30-60 s po iniekcji – hipoteza mikrozatorów płucnych",
           "Wzrost kreatyniny, wzrost ciśnienia krwi, zaburzenia snu (Pope-Kanayama 2014)"
         ],
         "avoid": [
@@ -304,9 +304,9 @@ export default {
         "pl": "Trenbolon Enanthate (Tren-E, wolny ester)"
       },
       "routeNote": {
-        "hu": "Hosszabb felezés (~5-7 nap) ⇒ heti 1-2 IM-injekció elegendő, steady-state 3-4 hét. PIP enyhébb mint Ace-n, de a mellékhatások (kreatinin-emelkedés, prolaktin, vérnyomás) ugyanazok, csak lassabban kumulálódnak. Rövid 4-6 hetes ciklus nem hatékony (build-up túl lassú) — minimum 8-10 hét.",
-        "en": "Longer half-life (~5-7 days) ⇒ once/twice weekly IM injection sufficient, steady-state 3-4 weeks. PIP milder than Ace, but side effects (creatinine elevation, prolactin, blood pressure) are identical, just accumulate slower. Short 4-6 week cycle ineffective (build-up too slow) — minimum 8-10 weeks.",
-        "pl": "Dłuższy okres półtrwania (~5-7 dni) ⇒ iniekcja IM raz lub dwa razy w tygodniu wystarcza, stan stacjonarny 3-4 tygodnie. PIP łagodniejszy niż Ace, ale skutki uboczne (wzrost kreatyniny, prolaktyna, ciśnienie krwi) identyczne, tylko wolniej się kumulują. Krótki cykl 4-6 tygodni nieskuteczny (zbyt wolne nasycenie) — minimum 8-10 tygodni."
+        "hu": "Hosszabb felezés (~5-7 nap) ⇒ heti 1-2 IM-injekció elegendő, steady-state 3-4 hét. PIP enyhébb mint Ace-n, de a mellékhatások (kreatinin-emelkedés, prolaktin, vérnyomás) ugyanazok, csak lassabban kumulálódnak. Rövid 4-6 hetes ciklus nem hatékony (build-up túl lassú) – minimum 8-10 hét.",
+        "en": "Longer half-life (~5-7 days) ⇒ once/twice weekly IM injection sufficient, steady-state 3-4 weeks. PIP milder than Ace, but side effects (creatinine elevation, prolactin, blood pressure) are identical, just accumulate slower. Short 4-6 week cycle ineffective (build-up too slow) – minimum 8-10 weeks.",
+        "pl": "Dłuższy okres półtrwania (~5-7 dni) ⇒ iniekcja IM raz lub dwa razy w tygodniu wystarcza, stan stacjonarny 3-4 tygodnie. PIP łagodniejszy niż Ace, ale skutki uboczne (wzrost kreatyniny, prolaktyna, ciśnienie krwi) identyczne, tylko wolniej się kumulują. Krótki cykl 4-6 tygodni nieskuteczny (zbyt wolne nasycenie) – minimum 8-10 tygodni."
       },
       "image": "/performance/oil-vial-orange.png",
       "halfLife": "5-7 dni (ester Enantatu)",
@@ -331,9 +331,9 @@ export default {
         },
         "unit": "mg/tydzień",
         "note": {
-          "hu": "200-400 mg/hét, heti 1-2x. Minimum 8-10 hét ciklus. PCT utolsó injekció +14-21 nap. Lassabb on/off mint Ace, kevesebb injekció — kényelmi előny.",
-          "en": "200-400 mg/week, 1-2× weekly. Minimum 8-10 week cycle. PCT starts last injection +14-21 days. Slower on/off than Ace, fewer injections — convenience advantage.",
-          "pl": "200-400 mg/tydzień, 1-2× w tygodniu. Minimum 8-10 tygodni cyklu. PCT od ostatniej iniekcji +14-21 dni. Wolniejsze on/off niż Ace, mniej iniekcji — przewaga wygody."
+          "hu": "200-400 mg/hét, heti 1-2x. Minimum 8-10 hét ciklus. PCT utolsó injekció +14-21 nap. Lassabb on/off mint Ace, kevesebb injekció – kényelmi előny.",
+          "en": "200-400 mg/week, 1-2× weekly. Minimum 8-10 week cycle. PCT starts last injection +14-21 days. Slower on/off than Ace, fewer injections – convenience advantage.",
+          "pl": "200-400 mg/tydzień, 1-2× w tygodniu. Minimum 8-10 tygodni cyklu. PCT od ostatniej iniekcji +14-21 dni. Wolniejsze on/off niż Ace, mniej iniekcji – przewaga wygody."
         }
       },
       "defaultVialMg": 2000,
@@ -347,7 +347,7 @@ export default {
       "quality": {
         "pure": [
           "UGL Trenbolon Enantat 100-200 mg/ml głęboko pomarańczowa fiolka olejowa (HPLC-testowane źródło obowiązkowe)",
-          "Wyższe stężenie mg/ml dostępne niż Ace (200 mg/ml powszechne) — mniejsza objętość iniekcji"
+          "Wyższe stężenie mg/ml dostępne niż Ace (200 mg/ml powszechne) – mniejsza objętość iniekcji"
         ],
         "caution": [
           "Iniekcja IM raz lub dwa razy w tygodniu wystarcza (stan stacjonarny 3-4 tygodnie)",
@@ -402,9 +402,9 @@ export default {
         },
         "unit": "mg/tydzień",
         "note": {
-          "hu": "150-300 mg/hét, heti 1-2x. 8-10 hét ciklus. PCT utolsó injekció +21 nap. 'Parabolan' historikus presztízs — modern UGL azonos kategoria mint Tren-Ace/Enan.",
-          "en": "150-300 mg/week, 1-2× weekly. 8-10 week cycle. PCT starts last injection +21 days. 'Parabolan' historical prestige — modern UGL same category as Tren-Ace/Enan.",
-          "pl": "150-300 mg/tydzień, 1-2× w tygodniu. 8-10 tygodni cyklu. PCT od ostatniej iniekcji +21 dni. 'Parabolan' historyczny prestiż — współczesne UGL ta sama kategoria co Tren-Ace/Enan."
+          "hu": "150-300 mg/hét, heti 1-2x. 8-10 hét ciklus. PCT utolsó injekció +21 nap. 'Parabolan' historikus presztízs – modern UGL azonos kategoria mint Tren-Ace/Enan.",
+          "en": "150-300 mg/week, 1-2× weekly. 8-10 week cycle. PCT starts last injection +21 days. 'Parabolan' historical prestige – modern UGL same category as Tren-Ace/Enan.",
+          "pl": "150-300 mg/tydzień, 1-2× w tygodniu. 8-10 tygodni cyklu. PCT od ostatniej iniekcji +21 dni. 'Parabolan' historyczny prestiż – współczesne UGL ta sama kategoria co Tren-Ace/Enan."
         }
       },
       "defaultVialMg": 1000,
@@ -438,5 +438,5 @@ export default {
     }
   ],
   "defaultVariant": "ace",
-  "anecdote": "Trenbolon to bardzo silny i złożony steryd, niezalecany dla początkujących, nawet w mikrodawkach. W obiegu są dwa główne estry: Acetate (okres półtrwania ~2-4 dni) i Enanthate (okres półtrwania ~7-9 dni). Użytkownicy opisują ten związek jako bardziej 'wyczuwalny' niż większość AAS, zarówno fizycznie, jak i mentalnie — szalone przyrosty siły, szybka rekompozycja (jednoczesna utrata tłuszczu i przyrost mięśni) oraz twardy, suchy wygląd. Partycjonowanie składników odżywczych jest dramatycznie zwiększone. Kompromisy są poważne: Tren znacząco podnosi ciśnienie krwi, niszczy HDL, podnosząc LDL, i podwyższa hematokryt. Zaburzenia snu (nocne poty, ciężka bezsenność) są bardzo częste, wywołane efektami stymulującymi OUN i podwyższonym napięciem współczulnym. Wzrost prolaktyny z aktywności progestagennej może powodować wahania libido, ED, ginekomastię, a nawet laktację. Wpływ na tarczycę (obniżone T3, zmieniona konwersja) i obciążenie sercowo-naczyniowe poprzez stres oksydacyjny są również udokumentowane. Mentalnie użytkownicy opisują zwiększoną agresję, lęk i drażliwość. Niezwykle skuteczny, ale bardzo ryzykowny — przeprowadź własne badania."
+  "anecdote": "Trenbolon to bardzo silny i złożony steryd, niezalecany dla początkujących, nawet w mikrodawkach. W obiegu są dwa główne estry: Acetate (okres półtrwania ~2-4 dni) i Enanthate (okres półtrwania ~7-9 dni). Użytkownicy opisują ten związek jako bardziej 'wyczuwalny' niż większość AAS, zarówno fizycznie, jak i mentalnie – szalone przyrosty siły, szybka rekompozycja (jednoczesna utrata tłuszczu i przyrost mięśni) oraz twardy, suchy wygląd. Partycjonowanie składników odżywczych jest dramatycznie zwiększone. Kompromisy są poważne: Tren znacząco podnosi ciśnienie krwi, niszczy HDL, podnosząc LDL, i podwyższa hematokryt. Zaburzenia snu (nocne poty, ciężka bezsenność) są bardzo częste, wywołane efektami stymulującymi OUN i podwyższonym napięciem współczulnym. Wzrost prolaktyny z aktywności progestagennej może powodować wahania libido, ED, ginekomastię, a nawet laktację. Wpływ na tarczycę (obniżone T3, zmieniona konwersja) i obciążenie sercowo-naczyniowe poprzez stres oksydacyjny są również udokumentowane. Mentalnie użytkownicy opisują zwiększoną agresję, lęk i drażliwość. Niezwykle skuteczny, ale bardzo ryzykowny – przeprowadź własne badania."
 }

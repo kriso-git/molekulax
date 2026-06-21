@@ -25,12 +25,12 @@ export default {
     { "hu": "Hormonérzékeny daganat (prosztatarák, emlőrák) vagy diagnosztizálatlan prosztata-megnagyobbodás: az androgén stimuláció elősegítheti a hormonfüggő daganatok és a BPH progresszióját.", "en": "Hormone-sensitive cancer (prostate, breast) or undiagnosed prostate enlargement: androgenic stimulation can promote progression of hormone-dependent tumors and BPH.", "pl": "Nowotwór wrażliwy na hormony (prostaty, piersi) lub niezdiagnozowane powiększenie prostaty: stymulacja androgenna może sprzyjać progresji guzów hormonozależnych i BPH." },
     { "hu": "Kamaszkor / be nem fejeződött csontnövekedés, valamint első AAS-ciklusosok: a rendkívüli potencia és a designer-mixture ismeretlen, nem standardizált MENT/Test aránya miatt különösen kockázatos.", "en": "Adolescence / incomplete bone growth, and first-time AAS users: the extreme potency and the unknown, non-standardized MENT/Test ratio of the designer mixture make it especially risky.", "pl": "Okres dojrzewania / niezakończony wzrost kości oraz osoby po raz pierwszy używające AAS: skrajna siła działania i nieznany, niestandaryzowany stosunek MENT/Test designerskiej mieszanki czynią go szczególnie ryzykownym." }
   ],
-  "name": "MENT (Trestolone) — szintetikus androgén frame",
+  "name": "MENT (Trestolone) – szintetikus androgén frame",
   "image": "/performance/oil-vial-yellow.png",
   "accentColor": "#1D9E75",
   "tagColor": "rgba(29,158,117,0.18)",
-  "shortDesc": "Trestolone (7α-metil-19-nortestosterone, MENT) Population Council 1990-es évek férfi-fogamzásgátló-jelölt. Szintetikus androgén — ~8-10x AR-affinitás vs testosterone, NEM 17α-alkilált → alacsony hepatotoxicitás. Két variant: Acetát (rövid) és Enantát (lassú). Cross-framed: 19-Nor analóg külön entry.",
-  "description": "A MENT (Trestolone, 7α-metil-19-nortestosterone) egy szintetikus androgén szteroid, amelyet a Population Council (NYC) fejlesztett 1990-es évek vége - 2000-es évek eleje között férfi-fogamzásgátló-jelöltként (Anderson 1999 PMID 10522995 klinikai trial). Az anabolikus/androgén aktivitás ~8-10x testosterone-hoz képest in vitro AR-binding-assay alapján (Sundaram 1993 PMID 8489761) — az egyik legerősebb szintetikus androgén. A 7α-metil-csoport gátolja az 5α-reduktáz-substrate-binding-et (NEM DHT-konvertál → alacsonyabb scalp-DHT és prosztata-androgén-aktivitás mint a testosterone), miközben a 19-nor-strukturával PROGESZTOGÉN AKTIVITÁS-T is mutat (cross-framed entry-jellegű: itt szintetikus androgén frame, külön entry 19-Nor framework-ban). Aromatizál CYP19-en át 7α-metilestradiollá, ami alacsonyabb ER-affinitású mint a sima E2 → estrogén-effekt gyengébb mint Test-en. NEM 17α-alkilált → alacsony hepatotoxicitás. Klinikai trial-okban (Population Council 1999-2005) 4-hetes implantátum + 8 mg/nap szublinguális készítményekben tesztelték; férfi-fogamzásgátló kifejlesztés a Phase III után LEÁLLT financiális okok miatt. Bodybuilding kontextusban UGL piacon Acetát-észter (Trestolone Acetate, rövid, ~8h felezés) és Enantát-észter (Trestolone Enanthate, lassú, ~5-7 nap felezés) formákban elérhető. WADA tiltott egész évben.",
+  "shortDesc": "Trestolone (7α-metil-19-nortestosterone, MENT) Population Council 1990-es évek férfi-fogamzásgátló-jelölt. Szintetikus androgén – ~8-10x AR-affinitás vs testosterone, NEM 17α-alkilált → alacsony hepatotoxicitás. Két variant: Acetát (rövid) és Enantát (lassú). Cross-framed: 19-Nor analóg külön entry.",
+  "description": "A MENT (Trestolone, 7α-metil-19-nortestosterone) egy szintetikus androgén szteroid, amelyet a Population Council (NYC) fejlesztett 1990-es évek vége - 2000-es évek eleje között férfi-fogamzásgátló-jelöltként (Anderson 1999 PMID 10522995 klinikai trial). Az anabolikus/androgén aktivitás ~8-10x testosterone-hoz képest in vitro AR-binding-assay alapján (Sundaram 1993 PMID 8489761) – az egyik legerősebb szintetikus androgén. A 7α-metil-csoport gátolja az 5α-reduktáz-substrate-binding-et (NEM DHT-konvertál → alacsonyabb scalp-DHT és prosztata-androgén-aktivitás mint a testosterone), miközben a 19-nor-strukturával PROGESZTOGÉN AKTIVITÁS-T is mutat (cross-framed entry-jellegű: itt szintetikus androgén frame, külön entry 19-Nor framework-ban). Aromatizál CYP19-en át 7α-metilestradiollá, ami alacsonyabb ER-affinitású mint a sima E2 → estrogén-effekt gyengébb mint Test-en. NEM 17α-alkilált → alacsony hepatotoxicitás. Klinikai trial-okban (Population Council 1999-2005) 4-hetes implantátum + 8 mg/nap szublinguális készítményekben tesztelték; férfi-fogamzásgátló kifejlesztés a Phase III után LEÁLLT financiális okok miatt. Bodybuilding kontextusban UGL piacon Acetát-észter (Trestolone Acetate, rövid, ~8h felezés) és Enantát-észter (Trestolone Enanthate, lassú, ~5-7 nap felezés) formákban elérhető. WADA tiltott egész évben.",
   "keyInfo": [
     {"label": "Hatásmechanizmus", "value": "AR-agonista (8-10x Test) + progeszteron-receptor, 7α-metil-19-nor-T, aromatizál gyengébben"},
     {"label": "Anabolikus:Androgén", "value": "~2300:650 (extrapolált in vitro AR-binding)"},
@@ -38,14 +38,14 @@ export default {
     {"label": "Hatáskezdet", "value": "12-24 h (Ac IM), 48-72 h (Enan IM)"},
     {"label": "Jogi státusz", "value": "Soha nem volt Rx, UGL only. Schedule III analógia (USA), WADA tiltott."}
   ],
-  "mechanism": "7α-metil-19-nortestosterone AR-agonista. A 7α-metilcsoport HÁROM kritikus szerkezeti módosítást ad: (1) gátolja az 5α-reduktáz-substrate-binding-et → NEM DHT-konvertál (alacsonyabb scalp-DHT, prosztata-androgén-aktivitás); (2) növeli az AR-binding-affinitást (~8-10x Test, Sundaram 1993 PMID 8489761); (3) stabilizálja a molekulát a 17β-HSD-mediated oxidatív lebontás ellen → hosszabb plasma half-life. A 19-nor-strukturális karakter PROGESZTOGÉN AKTIVITÁS-T ad (közepes PR-affinitás), ami a férfi-fogamzásgátló-célnál hasznos (negative-feedback HPG-axisra) DE bodybuilding-context-ben prolaktin-monitor-igényt teremt. Aromatizál CYP19-en át 7α-metilestradiollá (kb. 50%-ra a Test-szintű E2-konverziónál) — de a metabolit ER-affinitása alacsonyabb mint a sima E2-é → estrogén-effekt klinikailag gyengébb.",
+  "mechanism": "7α-metil-19-nortestosterone AR-agonista. A 7α-metilcsoport HÁROM kritikus szerkezeti módosítást ad: (1) gátolja az 5α-reduktáz-substrate-binding-et → NEM DHT-konvertál (alacsonyabb scalp-DHT, prosztata-androgén-aktivitás); (2) növeli az AR-binding-affinitást (~8-10x Test, Sundaram 1993 PMID 8489761); (3) stabilizálja a molekulát a 17β-HSD-mediated oxidatív lebontás ellen → hosszabb plasma half-life. A 19-nor-strukturális karakter PROGESZTOGÉN AKTIVITÁS-T ad (közepes PR-affinitás), ami a férfi-fogamzásgátló-célnál hasznos (negative-feedback HPG-axisra) DE bodybuilding-context-ben prolaktin-monitor-igényt teremt. Aromatizál CYP19-en át 7α-metilestradiollá (kb. 50%-ra a Test-szintű E2-konverziónál) – de a metabolit ER-affinitása alacsonyabb mint a sima E2-é → estrogén-effekt klinikailag gyengébb.",
   "legalStatus": "Soha nem volt Rx (Population Council férfi-fogamzásgátló-fejlesztés financial-leállás miatt megrekedt). USA: Schedule III analógia (DEA, designer-AAS classification). EU/HU/PL: kontrollált AAS analóg, vény nélkül illegális. WADA tiltott egész évben (S1.1.a).",
   "onsetTime": "12-24 h (Ac IM), 48-72 h (Enan IM)",
   "halfLife": "~8 h (Ac), 5-7 d (Enan)",
   "halfLifeActive": "~8 h szabad Trestolone (Ac után), depot ~24 h (Enan után)",
   "interactionsWith": ["cabergoline", "testosterone", "anastrozole", "warfarin"],
-  "aromatization": "Igen — CYP19 szubsztrát, metabolit 7α-metilestradiol (alacsonyabb ER-affinitás mint sima E2); klinikailag E2-emelkedés mérsékelt-alacsony (Sundaram 1993 PMID 8489761, Pope-Kanayama 2014 PMID 24423981)",
-  "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; IM bypass-olja a first-pass-t. ALT/AST <2x normál MENT-only ciklusnál (Hartgens-Kuipers 2004 PMID 15248788)",
+  "aromatization": "Igen – CYP19 szubsztrát, metabolit 7α-metilestradiol (alacsonyabb ER-affinitás mint sima E2); klinikailag E2-emelkedés mérsékelt-alacsony (Sundaram 1993 PMID 8489761, Pope-Kanayama 2014 PMID 24423981)",
+  "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált; IM bypass-olja a first-pass-t. ALT/AST <2x normál MENT-only ciklusnál (Hartgens-Kuipers 2004 PMID 15248788)",
   "wadaStatus": "banned",
   "androgenicRatio": "~2300:650 (extrapolált in vitro AR-binding-affinity szerint, NEM klasszikus rat-ventral-prostate assay)",
   "bindingAffinity": "Extrém magas AR-affinitás (~8-10x testosterone in vitro, Sundaram 1993 PMID 8489761) + közepes PR-aktivitás.",
@@ -58,7 +58,7 @@ export default {
     "Klinikai jelentőség: férfi-fogamzásgátló-jelölt (Population Council Phase III trial-ig jutott)"
   ],
   "quickStart": [
-    "EXTRÉM POTENS — dózisok jelentősen alacsonyabbak mint Test-en (50-100 mg/hét Trestolone ekvivalens 500-1000 mg Test-tel)",
+    "EXTRÉM POTENS – dózisok jelentősen alacsonyabbak mint Test-en (50-100 mg/hét Trestolone ekvivalens 500-1000 mg Test-tel)",
     "PR-aktivitás miatt prolaktin-monitor + cabergoline-készenlét",
     "Aromatizáció gyengébb mint Test-en, DE NEM nulla → AI E2-igényesetén",
     "PCT (Clomid + Nolvadex 4-6 hét) kötelező",
@@ -73,7 +73,7 @@ export default {
     "pure": [
       "UGL Trestolone Acetate 50-100 mg/ml olajos fiola, sterilen szűrt (a leggyakoribb UGL formátum)",
       "UGL Trestolone Enanthate 100-200 mg/ml olajos fiola (kevésbé elérhető mint Ac)",
-      "HPLC-tesztelt forrás KÖTELEZŐ — MENT gyakran hamisított vagy alulkoncentrált (high-cost raw material)"
+      "HPLC-tesztelt forrás KÖTELEZŐ – MENT gyakran hamisított vagy alulkoncentrált (high-cost raw material)"
     ],
     "caution": [
       "Prolaktin-emelkedés gyakori (PR-aktivitás) → gynecomastia-rizikó (paradox, mert aromatizáció enyhe)",
@@ -103,10 +103,10 @@ export default {
     {"title": "Effects of androgenic-anabolic steroids in athletes", "authors": "Hartgens F, Kuipers H.", "journal": "Sports Med. 2004;34(8):513-554.", "pmid": "15248788"}
   ],
   "faq": [
-    {"q": "Mi az a cross-framed entry?", "a": "A MENT (Trestolone, 7α-metil-19-nortestosterone) strukturálisan EGYSZERRE két kémiai osztályba tartozik: (1) szintetikus androgén — 7α-metil-szubsztitúció ad NEM-DHT-konvertálható egyedi profilt; (2) 19-Nor-származék — a 19-szénatomi metilcsoport eltávolítása progesztogén aktivitást ad. A library-struktúra a HTML-referencia szerint mindkét osztály-oszlopban szerepelteti, KÉT KÜLÖN entry-vel: 'MENT-test' (ez, szintetikus androgén frame, Test-oszlop) és 'MENT-19nor' (külön entry a 19-Nor-oszlopban, sub-task 4-ben jön). A két entry tartalma 80%-ban átfed, az 'AR-binding affinity vs progesztogén aktivitás' framing különbözik."},
-    {"q": "Miért állították le a férfi-fogamzásgátló kifejlesztést?", "a": "Population Council 1999-2005 között Phase II-III klinikai trial-eket futtatott a MENT-szublinguális implantátum 4-hetes formulációval (Anderson 1999 PMID 10522995). Az eredmények ígéretesek voltak (90%+ spermatogenezis-szuppresszió, jó tolerálhatóság), DE 2005-ben a Population Council financial-okok miatt LEÁLLÍTOTTA a Phase III-at — a fogamzásgátló-piacon a női-fogamzásgátló dominanciája miatt a kereskedelmi sikertelenség-kockázat magas volt befektetőknek. Ma a MENT férfi-fogamzásgátló-fejlesztése zömmel halott, kivéve néhány akadémikus follow-up vizsgálat."},
+    {"q": "Mi az a cross-framed entry?", "a": "A MENT (Trestolone, 7α-metil-19-nortestosterone) strukturálisan EGYSZERRE két kémiai osztályba tartozik: (1) szintetikus androgén – 7α-metil-szubsztitúció ad NEM-DHT-konvertálható egyedi profilt; (2) 19-Nor-származék – a 19-szénatomi metilcsoport eltávolítása progesztogén aktivitást ad. A library-struktúra a HTML-referencia szerint mindkét osztály-oszlopban szerepelteti, KÉT KÜLÖN entry-vel: 'MENT-test' (ez, szintetikus androgén frame, Test-oszlop) és 'MENT-19nor' (külön entry a 19-Nor-oszlopban, sub-task 4-ben jön). A két entry tartalma 80%-ban átfed, az 'AR-binding affinity vs progesztogén aktivitás' framing különbözik."},
+    {"q": "Miért állították le a férfi-fogamzásgátló kifejlesztést?", "a": "Population Council 1999-2005 között Phase II-III klinikai trial-eket futtatott a MENT-szublinguális implantátum 4-hetes formulációval (Anderson 1999 PMID 10522995). Az eredmények ígéretesek voltak (90%+ spermatogenezis-szuppresszió, jó tolerálhatóság), DE 2005-ben a Population Council financial-okok miatt LEÁLLÍTOTTA a Phase III-at – a fogamzásgátló-piacon a női-fogamzásgátló dominanciája miatt a kereskedelmi sikertelenség-kockázat magas volt befektetőknek. Ma a MENT férfi-fogamzásgátló-fejlesztése zömmel halott, kivéve néhány akadémikus follow-up vizsgálat."},
     {"q": "MENT vs Testosterone direct comparison?", "a": "AR-affinitásban MENT ~8-10x erősebb (Sundaram 1993 PMID 8489761), tehát 100 mg/hét MENT ekvivalens kb. 800-1000 mg/hét Test-tel. NEM 5α-redukálódik → alacsonyabb scalp-DHT és prosztata-AR-aktivitás (előny a hajhullás- és BPH-prevenció szempontjából). Aromatizáció enyhébb (7α-metilestradiol gyengébb ER-affinitású metabolit). DE: PR-aktivitás (Test nem aktivál PR-t) → prolaktin-monitor + cabergoline-igény. Nettó-pozitív bodybuilding-context-ben tapasztalt felhasználóknak, de NEM első-ciklus."},
-    {"q": "Acetát vs Enantát variant — melyiket válassz?", "a": "Ac (Acetát): rövid (~8h felezés), EOD vagy napi IM injekció, gyors onset (12-24 h), PIP gyakori. Bodybuilding-context-ben gyakoribb (jobb kontroll, könnyebb leállás). Enan (Enantát): hosszú (~5-7 nap felezés), heti 1-2x IM, lassabb onset (48-72 h, steady-state 3-4 hét), kevesebb PIP. Új MENT-felhasználónak Ac ajánlott (jobb dose-control + gyors leállíthatóság ha mellékhatás jelentkezik); tapasztaltnál Enan kényelmesebb."},
+    {"q": "Acetát vs Enantát variant – melyiket válassz?", "a": "Ac (Acetát): rövid (~8h felezés), EOD vagy napi IM injekció, gyors onset (12-24 h), PIP gyakori. Bodybuilding-context-ben gyakoribb (jobb kontroll, könnyebb leállás). Enan (Enantát): hosszú (~5-7 nap felezés), heti 1-2x IM, lassabb onset (48-72 h, steady-state 3-4 hét), kevesebb PIP. Új MENT-felhasználónak Ac ajánlott (jobb dose-control + gyors leállíthatóság ha mellékhatás jelentkezik); tapasztaltnál Enan kényelmesebb."},
     {"q": "Modern WADA-detectability?", "a": "MENT-Ac vizelet-detection 2-3 hét, MENT-Enan 6-8 hét (WADA-akkreditált LC-MS/MS). A 7α-metil-19-nor-androsztén-metabolitcsalád 2010-es évek vége óta benne van a WADA-target-listán; modern atléta-teszteknél detektálható. Pre-2010 designer-szteroid-zónaként használták néhányan, ma egyértelmű WADA-tiltás + LC-MS/MS-detection."}
   ],
   "related": ["testosterone-info", "nandrolone-info", "trenbolone-info", "anavar-info"],
@@ -152,9 +152,9 @@ export default {
         "pl": "MENT + Test Acetate mieszanka (szybki ester)"
       },
       "routeNote": {
-        "hu": "Designer kombinált compound — Trestolone (MENT, 7α-metil-19-nortestosterone) + Testosterone Acetate ester mixture, jellemzően 50/50 vagy 60/40 arányban. Cél: a MENT magas anabolic erősség + a Test androgén-baseline egyetlen olajban. Rövid Ac-ester ⇒ EOD vagy napi IM-injekció. Prolaktin-monitor a 19-Nor MENT-komponens miatt KÖTELEZŐ. Hamisítás-rizikó az UGL-piacon nagyon magas (nem tudod mit kapsz konkrétan).",
-        "en": "Designer combined compound — Trestolone (MENT, 7α-methyl-19-nortestosterone) + Testosterone Acetate ester mixture, typically 50/50 or 60/40 ratio. Goal: high MENT anabolic potency + Test androgen baseline in a single oil. Short Ac ester ⇒ EOD or daily IM injection. Prolactin monitoring MANDATORY due to 19-Nor MENT component. Counterfeit risk on UGL market very high (you don't know what's actually inside).",
-        "pl": "Designerski połączony compound — Trestolon (MENT, 7α-metylo-19-nortestosteron) + Testosteron Acetate mieszanka estrów, zazwyczaj proporcja 50/50 lub 60/40. Cel: wysoka siła anaboliczna MENT + baseline androgenny Test w jednym oleju. Krótki ester Ac ⇒ iniekcja IM EOD lub codziennie. Monitor prolaktyny OBOWIĄZKOWY z powodu komponentu MENT 19-Nor. Ryzyko podróbek na rynku UGL bardzo wysokie (nie wiesz co dokładnie dostajesz)."
+        "hu": "Designer kombinált compound – Trestolone (MENT, 7α-metil-19-nortestosterone) + Testosterone Acetate ester mixture, jellemzően 50/50 vagy 60/40 arányban. Cél: a MENT magas anabolic erősség + a Test androgén-baseline egyetlen olajban. Rövid Ac-ester ⇒ EOD vagy napi IM-injekció. Prolaktin-monitor a 19-Nor MENT-komponens miatt KÖTELEZŐ. Hamisítás-rizikó az UGL-piacon nagyon magas (nem tudod mit kapsz konkrétan).",
+        "en": "Designer combined compound – Trestolone (MENT, 7α-methyl-19-nortestosterone) + Testosterone Acetate ester mixture, typically 50/50 or 60/40 ratio. Goal: high MENT anabolic potency + Test androgen baseline in a single oil. Short Ac ester ⇒ EOD or daily IM injection. Prolactin monitoring MANDATORY due to 19-Nor MENT component. Counterfeit risk on UGL market very high (you don't know what's actually inside).",
+        "pl": "Designerski połączony compound – Trestolon (MENT, 7α-metylo-19-nortestosteron) + Testosteron Acetate mieszanka estrów, zazwyczaj proporcja 50/50 lub 60/40. Cel: wysoka siła anaboliczna MENT + baseline androgenny Test w jednym oleju. Krótki ester Ac ⇒ iniekcja IM EOD lub codziennie. Monitor prolaktyny OBOWIĄZKOWY z powodu komponentu MENT 19-Nor. Ryzyko podróbek na rynku UGL bardzo wysokie (nie wiesz co dokładnie dostajesz)."
       },
       "image": "/performance/oil-vial-yellow.png",
       "halfLife": "~8 h (parent MENT + Test Ac után)",
@@ -195,14 +195,14 @@ export default {
       "quality": {
         "pure": [
           "Tiszta halványsárga olaj, 10ml fiola, 75-150 mg/ml total UGL koncentráció",
-          "HPLC-tesztelt forrás ABSZOLÚT KÖTELEZŐ — két aktív komponens miatt nehezebben verifikálható mint a tiszta MENT-Ac"
+          "HPLC-tesztelt forrás ABSZOLÚT KÖTELEZŐ – két aktív komponens miatt nehezebben verifikálható mint a tiszta MENT-Ac"
         ],
         "caution": [
           "EOD vagy napi IM-injekció szükséges (mindkét komponens rövid felezés)",
           "PIP gyakori (rövid Ac-ester carrier)",
           "Prolaktin-monitor KÖTELEZŐ (19-Nor MENT-komponens)",
           "Aromatizáció a Test-komponensből (CYP19) ⇒ E2-emelkedés monitor, AI esetleg szükséges",
-          "MENT/Test arány mixture-enként változik — nem standardizált"
+          "MENT/Test arány mixture-enként változik – nem standardizált"
         ],
         "avoid": [
           "Prolaktinóma vagy prolaktin-érzékeny állapot",
@@ -270,14 +270,14 @@ export default {
       "quality": {
         "pure": [
           "Tiszta sárgás-arany olaj, 10ml fiola, 200-400 mg/ml total UGL koncentráció",
-          "HPLC-tesztelt forrás ABSZOLÚT KÖTELEZŐ — két aktív komponens, mixture-arány nem standardizált"
+          "HPLC-tesztelt forrás ABSZOLÚT KÖTELEZŐ – két aktív komponens, mixture-arány nem standardizált"
         ],
         "caution": [
           "Heti 1-2x IM-injekció (kényelmesebb mint Ac-mixture)",
           "PIP enyhébb mint Ac-on (hosszabb ester carrier)",
-          "Steady-state 3-4 hét — rövid ciklus nem hatékony",
+          "Steady-state 3-4 hét – rövid ciklus nem hatékony",
           "Prolaktin + E2 monitor mindkettő KÖTELEZŐ (mindkét komponens)",
-          "Mixture-arány UGL-enként változik — nem tudod a pontos MENT/Test megoszlást"
+          "Mixture-arány UGL-enként változik – nem tudod a pontos MENT/Test megoszlást"
         ],
         "avoid": [
           "Rövid (4-6 hét) ciklus nem hatékony (steady-state nem éri el)",

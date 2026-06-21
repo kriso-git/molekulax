@@ -24,7 +24,7 @@ export default {
   "accentColor": "#84cc16",
   "tagColor": "rgba(132,204,22,0.18)",
   "shortDesc": "Malaysian “longjack”, quassinoids + eurycomanone, testosterone support.",
-  "description": "Tongkat Ali (Eurycoma longifolia, \"longjack\") is a Southeast Asian root herb. Its actives are quassinoids (notably eurycomanone) and a glycoprotein fraction (Physta® extract). RCT evidence: Tambi 2012 (PMID 22458760) — **46.8% serum testosterone elevation in hypogonadal men over 1 month**; Talbott 2013 (PMID 23705007) — cortisol reduction + testosterone elevation under chronic stress. In eugonadal healthy men the effect is smaller (~15-20%) — the action has a \"ceiling-effect\" tied to baseline. **Best indication: chronic stress + low libido + sleep disturbance combination**. NOT on the WADA prohibited list. In athletes, a standard Physta® extract 200 mg/day on a 5-day-per-week cycle protocol is common.",
+  "description": "Tongkat Ali (Eurycoma longifolia, \"longjack\") is a Southeast Asian root herb. Its actives are quassinoids (notably eurycomanone) and a glycoprotein fraction (Physta® extract). RCT evidence: Tambi 2012 (PMID 22458760) – **46.8% serum testosterone elevation in hypogonadal men over 1 month**; Talbott 2013 (PMID 23705007) – cortisol reduction + testosterone elevation under chronic stress. In eugonadal healthy men the effect is smaller (~15-20%) – the action has a \"ceiling-effect\" tied to baseline. **Best indication: chronic stress + low libido + sleep disturbance combination**. NOT on the WADA prohibited list. In athletes, a standard Physta® extract 200 mg/day on a 5-day-per-week cycle protocol is common.",
   "keyInfo": [
     {
       "label": "Mechanism",

@@ -55,8 +55,8 @@ export default {
     "thyroid hormones",
     "insulin"
   ],
-  "aromatization": "Not applicable — β2-agonist bronchodilator, NOT a steroid; no aromatase substrate",
-  "hepatotoxicity": "Low — cardiotoxicity dominates (cardiomyocyte damage, hypertrophy, arrhythmia); negligible hepatic load (Beermann 2009)",
+  "aromatization": "Not applicable – β2-agonist bronchodilator, NOT a steroid; no aromatase substrate",
+  "hepatotoxicity": "Low – cardiotoxicity dominates (cardiomyocyte damage, hypertrophy, arrhythmia); negligible hepatic load (Beermann 2009)",
   "wadaStatus": "banned",
   "detectionWindow": "7-14 days urine (sensitive LC-MS testing in WADA-accredited labs).",
   "benefits": [
@@ -101,7 +101,7 @@ export default {
       "Any cardiovascular disorder (hypertension, arrhythmia, family history) is an absolute contraindication",
       "Hyperthyroidism is a contraindication (β2 + thyroid over-stimulation)",
       "β-blocker therapy contraindicates Clenbuterol",
-      "Cardiomyopathy, prior MI — prolonged tachycardia causes myocardial fibrosis and left ventricular hypertrophy",
+      "Cardiomyopathy, prior MI – prolonged tachycardia causes myocardial fibrosis and left ventricular hypertrophy",
       "Seizure disorder, history of seizures (β2 + hypokalemia lowers seizure threshold)",
       "Severe anxiety or panic disorder",
       "Pregnancy and breastfeeding (teratogenic in animal studies, cardiac developmental effects)"
@@ -170,7 +170,7 @@ export default {
     },
     {
       "q": "Is it really being researched for Parkinson disease?",
-      "a": "Yes, at the preclinical level. Per the Mittal et al 2024 review (Mov Disord, PMID 38953404), β2-agonists (clenbuterol, salbutamol) in preclinical models (MPTP mouse, cell culture) show cerebral blood flow elevation plus dopaminergic neuron protection via α-synuclein aggregation inhibition and neurotrophic pathway activation. ONLY in research context — not applicable as Rx for human Parkinson disease, and the cardiotoxic profile limits clinical trials. An interesting alternative β2-target in research: salbutamol (shorter t1/2, safer)."
+      "a": "Yes, at the preclinical level. Per the Mittal et al 2024 review (Mov Disord, PMID 38953404), β2-agonists (clenbuterol, salbutamol) in preclinical models (MPTP mouse, cell culture) show cerebral blood flow elevation plus dopaminergic neuron protection via α-synuclein aggregation inhibition and neurotrophic pathway activation. ONLY in research context – not applicable as Rx for human Parkinson disease, and the cardiotoxic profile limits clinical trials. An interesting alternative β2-target in research: salbutamol (shorter t1/2, safer)."
     }
   ],
   "related": [
@@ -207,5 +207,5 @@ export default {
     "unit": "mcg/nap",
     "note": "Dose-titrating due to 35-40 h half-life: +20 mcg/day every 2-3 days. Max 120-140 mcg/day, 6-8 weeks then OFF + ketotifen 1-2 mg at bedtime to block receptor down-regulation. Taurine 3 g + magnesium 2 g/day for muscle cramps. Home BP log, EKG after 6 weeks."
   },
-  "anecdote": "Clenbuterol has a notorious reputation for good reason — anecdotal reports describe it as highly effective for fat loss but with a meaningful side-effect burden. Users typically report increased energy, strong stimulation, elevated heart rate, and heat production fairly quickly after dosing. Tolerance tends to build rapidly due to beta-receptor downregulation, so many users titrate the dose upward every few weeks, though this is context-dependent. Electrolyte imbalances are a frequent concern, with dehydration commonly reported. Sleep disruption may also occur because of the unusually long half-life, which is why some users prefer Albuterol's shorter half-life as a contrast option. Overall, community accounts note that Clenbuterol works as advertised for fat loss and has a clear place when administered cautiously, but it requires careful management of cardiovascular, electrolyte, and sleep parameters."
+  "anecdote": "Clenbuterol has a notorious reputation for good reason – anecdotal reports describe it as highly effective for fat loss but with a meaningful side-effect burden. Users typically report increased energy, strong stimulation, elevated heart rate, and heat production fairly quickly after dosing. Tolerance tends to build rapidly due to beta-receptor downregulation, so many users titrate the dose upward every few weeks, though this is context-dependent. Electrolyte imbalances are a frequent concern, with dehydration commonly reported. Sleep disruption may also occur because of the unusually long half-life, which is why some users prefer Albuterol's shorter half-life as a contrast option. Overall, community accounts note that Clenbuterol works as advertised for fat loss and has a clear place when administered cautiously, but it requires careful management of cardiovascular, electrolyte, and sleep parameters."
 }

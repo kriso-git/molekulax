@@ -22,7 +22,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "mGluR I/II/III modulator racetam, ADHD clinical research.",
-  "description": "Fasoracetam (NS-105 / LAM-105 / NFC-1) is originally a Nippon Shinyaku (Japan) development that acts via up-regulation of metabotropic glutamate receptors (mGluR I/II/III). Aevi Medical (formerly Medgenics) advanced it to Phase 2/3 in ADHD (mGluR-mutation-positive adolescents) — initially positive, then mixed results in the 2019 expanded ADHD trial (PMID 31167583). Unique: upregulates GABA-B receptor expression (PMID 10494996) — anecdotally used to support Phenibut withdrawal. Cholinergic HACU enhancement (Coluracetam-like but weaker). cAMP→BDNF signaling cascade for memory formation. Banned in the UK under the Psychoactive Substances Act (since 2016).",
+  "description": "Fasoracetam (NS-105 / LAM-105 / NFC-1) is originally a Nippon Shinyaku (Japan) development that acts via up-regulation of metabotropic glutamate receptors (mGluR I/II/III). Aevi Medical (formerly Medgenics) advanced it to Phase 2/3 in ADHD (mGluR-mutation-positive adolescents) – initially positive, then mixed results in the 2019 expanded ADHD trial (PMID 31167583). Unique: upregulates GABA-B receptor expression (PMID 10494996) – anecdotally used to support Phenibut withdrawal. Cholinergic HACU enhancement (Coluracetam-like but weaker). cAMP→BDNF signaling cascade for memory formation. Banned in the UK under the Psychoactive Substances Act (since 2016).",
   "keyInfo": [
     {
       "label": "Mechanism",

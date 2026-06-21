@@ -118,7 +118,7 @@ function EntryImageInner({ accentColor = '#818cf8', name = '', uid = 'v', image,
   }
   // ChemicalFormulaPlaceholder handles structural images (PubChem-derived neon
   // PNGs under /molecules/<entryId>.png) with a text-formula fallback, and a
-  // name display for mixtures — single visual language across the gallery.
+  // name display for mixtures – single visual language across the gallery.
   if (library?.features?.chemicalFormulaPlaceholder && (entryId || chemicalFormula || name)) {
     return <ChemicalFormulaPlaceholder formula={chemicalFormula} name={name} entryId={entryId} accent={accentColor} />
   }

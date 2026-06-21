@@ -24,7 +24,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Ampakine, AMPA-PAM, sub-mg active dose.",
-  "description": "Sunifiram (DM-235) is a piperazine-scaffold ampakine showing ~1000× higher in vivo potency than classical pyrrolidone racetams; active dose is in the sub-milligram range. It acts as an AMPA receptor positive allosteric modulator and as an indirect activator at the NMDA glycine site; activates CaMKII + PKC-α signaling pathways → LTP enhancement. Increases acetylcholine release in cerebral cortex. Bell-shaped dose-response curve. **Excitotoxicity risk** from glutamatergic over-stimulation — avoid high doses + consider NMDA antagonist (e.g. Memantine) co-administration. Tolerance develops within 3-4 days of daily use. Only preclinical data; no human Phase trials.",
+  "description": "Sunifiram (DM-235) is a piperazine-scaffold ampakine showing ~1000× higher in vivo potency than classical pyrrolidone racetams; active dose is in the sub-milligram range. It acts as an AMPA receptor positive allosteric modulator and as an indirect activator at the NMDA glycine site; activates CaMKII + PKC-α signaling pathways → LTP enhancement. Increases acetylcholine release in cerebral cortex. Bell-shaped dose-response curve. **Excitotoxicity risk** from glutamatergic over-stimulation – avoid high doses + consider NMDA antagonist (e.g. Memantine) co-administration. Tolerance develops within 3-4 days of daily use. Only preclinical data; no human Phase trials.",
   "keyInfo": [
     {
       "label": "Mechanism",

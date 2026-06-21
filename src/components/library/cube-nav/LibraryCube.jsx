@@ -17,7 +17,7 @@ const SWIPE_HINT = { hu: 'húzd a könyvtárváltáshoz', en: 'swipe to switch l
 // View Transitions API: on switch, the browser natively snapshots the old + new
 // library states as GPU images and we animate the two flat snapshots as a 3D cube
 // rotation (CSS in index.css, ::view-transition-old/new(library-view)). Because it
-// transforms cached images — not the live DOM — the turn is smooth regardless of
+// transforms cached images – not the live DOM – the turn is smooth regardless of
 // how heavy the galleries are. Falls back to an instant swap where unsupported.
 const supportsVT =
   typeof document !== 'undefined' && typeof document.startViewTransition === 'function'
@@ -36,7 +36,7 @@ export default function LibraryCube() {
   const [, force] = useReducer((x) => x + 1, 0)
 
   // Render straight from the synchronous cache (getLibrary) so that, inside the
-  // transition's flushSync, the NEW snapshot is the real gallery — not the async
+  // transition's flushSync, the NEW snapshot is the real gallery – not the async
   // skeleton an effect would still be loading.
   const data = getLibrary(libraryId)
   const ready = !!(data && data.categories) // full library (not just meta) is loaded
@@ -45,7 +45,7 @@ export default function LibraryCube() {
     if (!ready) loadLibrary(libraryId).then(() => force())
   }, [libraryId, ready])
 
-  // Warm ALL libraries shortly after first paint so every switch is instant — no
+  // Warm ALL libraries shortly after first paint so every switch is instant – no
   // async load delay (and no skeleton-height jump) before the view transition.
   useEffect(() => {
     const id = setTimeout(() => libraries.forEach((l) => loadLibrary(l.id)), 600)
@@ -54,7 +54,7 @@ export default function LibraryCube() {
   }, [])
 
   // When the location returns to a library landing (e.g. closing an entry), scroll
-  // the section into view — unless the gallery owns the restore. Only a real
+  // the section into view – unless the gallery owns the restore. Only a real
   // library landing (/peptidek, /nootropikumok, …) triggers the scroll; the bare
   // home '/' must NOT auto-scroll past Hero on a fresh load (old behavior only
   // fired on hash === '#library', never on a plain home visit).
@@ -80,7 +80,7 @@ export default function LibraryCube() {
       await loadLibrary(id) // preload so the swap is instant (no skeleton/jump)
       const mobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 767px)').matches
       if (mobile || !supportsVT) {
-        // Phone: NO View Transition — its flushSync snapshot blocks the main thread
+        // Phone: NO View Transition – its flushSync snapshot blocks the main thread
         // ~1s on mobile (the felt delay). Plain swap + a light CSS slide-in driven by
         // the key-remount (data-libdir) instead; renders async, never freezes.
         setLibraryId(id)
@@ -99,7 +99,7 @@ export default function LibraryCube() {
       // clobbering an element class during flushSync.
       root.dataset.vtDir = dir
       const t = document.startViewTransition(() => flushSync(() => setLibraryId(id)))
-      // Wait for the turn, but never stay "busy" longer than 1.2s — a safety net so
+      // Wait for the turn, but never stay "busy" longer than 1.2s – a safety net so
       // an interrupted/non-resolving t.finished can't permanently lock switching.
       await Promise.race([t.finished.catch(() => {}), new Promise((r) => setTimeout(r, 1200))])
       delete root.dataset.vtDir
@@ -178,7 +178,7 @@ export default function LibraryCube() {
         role="tabpanel"
         aria-labelledby={`lib-tab-${library.id}`}
       >
-        {/* key remounts on switch — on phones .lib-frame plays a CSS slide-in (CSS
+        {/* key remounts on switch – on phones .lib-frame plays a CSS slide-in (CSS
             in index.css, mobile-only); on desktop the View Transition handles it. */}
         <div key={libraryId} className="lib-frame" data-libdir={dirRef.current}>
           {ready ? (

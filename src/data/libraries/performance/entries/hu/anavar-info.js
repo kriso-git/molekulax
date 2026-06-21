@@ -59,8 +59,8 @@ export default {
     "testosterone",
     "tudca"
   ],
-  "aromatization": "Nem — 17α-alkilált szteroid, NEM CYP19 szubsztrát; minimális ösztrogén-konverzió (Schänzer 1996 Clin Chem)",
-  "hepatotoxicity": "Magas — 17α-alkilált szerkezet hepatikus first-pass-en metabolizál, dózisfüggő transzaminázemelkedés, kolesztázis-rizikó (Hartgens-Kuipers 2004)",
+  "aromatization": "Nem – 17α-alkilált szteroid, NEM CYP19 szubsztrát; minimális ösztrogén-konverzió (Schänzer 1996 Clin Chem)",
+  "hepatotoxicity": "Magas – 17α-alkilált szerkezet hepatikus first-pass-en metabolizál, dózisfüggő transzaminázemelkedés, kolesztázis-rizikó (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:24",
   "bindingAffinity": "AR-affinitás közepes; alacsony androgén potenciál (24% testosterone-hoz képest), magas anabolikus aktivitás.",
@@ -228,5 +228,5 @@ export default {
       "purpose": "Az Anavar-cruise nem standard (a legtöbb protokoll 6-8 hetes ciklusban használja). Ha mégis tartós használat, a hepatikus markerek folyamatos monitorozása nem kerülhető meg."
     }
   },
-  "anecdote": "Az Anavar 'enyhe' szteroidként ismert, de az anekdotikus beszámolók figyelmeztetnek: az enyhe nem jelent gyengét — kilogrammra kilogrammra meglepően erős lehet a fizikai változásokban, különösen a keménység, teltség és erő terén. A felhasználók tiszta teljesítményfokozó érzést írnak le, nem pedig drámai hormonális hatást. A pumpák intenzívvé válhatnak, néha szinte bénítóvá edzés közben, az intracelluláris volumizáció miatt. Visszatérő megfigyelés, hogy az erőnyereség gyakran meghaladja a testtömeg-növekedést, ami részben az ok, amiért a sportolók történelmileg kedvelték. Fő kompromisszum: az enyhe reputáció ellenére az Anavar ismert arról, hogy lerombolja a HDL-t és jelentősen rontja az LDL-t. 17α-alkilált orálisként máj-terhelést okoz és HPTA-szuppresszióhoz járul hozzá, még ha nem is 'érződik' szuppresszívnek. DHT-származékként a hajhullás felgyorsulása lehetséges genetikailag hajlamos felhasználóknál. Mechanisztikusan az Anavar inkább tápanyag-partícionáló és szövet-megőrző szerként funkcionál, nem klasszikus tömegnövelőként, jól teljesít szárító fázisokban, de sovány tömegnövelő fázisokban is."
+  "anecdote": "Az Anavar 'enyhe' szteroidként ismert, de az anekdotikus beszámolók figyelmeztetnek: az enyhe nem jelent gyengét – kilogrammra kilogrammra meglepően erős lehet a fizikai változásokban, különösen a keménység, teltség és erő terén. A felhasználók tiszta teljesítményfokozó érzést írnak le, nem pedig drámai hormonális hatást. A pumpák intenzívvé válhatnak, néha szinte bénítóvá edzés közben, az intracelluláris volumizáció miatt. Visszatérő megfigyelés, hogy az erőnyereség gyakran meghaladja a testtömeg-növekedést, ami részben az ok, amiért a sportolók történelmileg kedvelték. Fő kompromisszum: az enyhe reputáció ellenére az Anavar ismert arról, hogy lerombolja a HDL-t és jelentősen rontja az LDL-t. 17α-alkilált orálisként máj-terhelést okoz és HPTA-szuppresszióhoz járul hozzá, még ha nem is 'érződik' szuppresszívnek. DHT-származékként a hajhullás felgyorsulása lehetséges genetikailag hajlamos felhasználóknál. Mechanisztikusan az Anavar inkább tápanyag-partícionáló és szövet-megőrző szerként funkcionál, nem klasszikus tömegnövelőként, jól teljesít szárító fázisokban, de sovány tömegnövelő fázisokban is."
 }

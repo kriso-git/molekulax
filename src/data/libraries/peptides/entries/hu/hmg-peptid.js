@@ -1,7 +1,7 @@
-// HMG (Menopur / Pergonal) — Humán Menopauzális Gonadotropin, fertility-Rx
+// HMG (Menopur / Pergonal) – Humán Menopauzális Gonadotropin, fertility-Rx
 // framing. Cross-frame counterpart: `hmg-perf` AAS-PCT framing-gel.
 // Sources: EMA Menopur SPC (Ferring 2002), Liu 2009 PMID 19066302,
-// Liu 2002 Hum Reprod PMID 11870114, Hill 2018 (Int J Impot Res — no PMID).
+// Liu 2002 Hum Reprod PMID 11870114, Hill 2018 (Int J Impot Res – no PMID).
 
 export default {
   "id": "hmg-peptid",
@@ -9,12 +9,12 @@ export default {
   "image": "/peptides/hmg-peptid.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.16)",
-  "shortDesc": "Humán Menopauzális Gonadotropin — 1:1 FSH+LH glikoprotein. Teljes spermatogenezis-induction (Leydig + Sertoli kettős axis), IVF szuper-ovuláció. Klinikai Rx infertilitás-indikációkra (HypoH férfi + IVF-ovulation-induction nő), NEM doping. Cross-frame: AAS-PCT-kontextusban a `hmg-perf` entry.",
-  "description": "Az HMG (Humán Menopauzális Gonadotropin) egy postmenopauzális női vizeletből tisztított glikoprotein-keverék, amely **körülbelül 75 IU FSH (follicle-stimulating hormone) + 75 IU LH (luteinizing hormone) 1:1 arányban** tartalmaz egy standard ampoulában. A modern klinikai HMG-források: (1) **urinary-extracted** (Menopur Ferring 2002 EMA, 2005 FDA — magasabb-tisztaságú urinary-purified termék; a régebbi Pergonal Serono 1962 globálisan kivonva ~2005 vCJD-rizikó-csökkentés miatt); (2) **rekombináns menotropin** (kutatási stádium, klinikai forgalom limitált). **Mechanizmus duális gonadotropin-axis stimulus**: az HMG egyedi értéke a klinikai fertilitás-kezelésben, hogy MIND a Leydig-sejteket (LH-komponens → testosterone-produkció), MIND a Sertoli-sejteket (FSH-komponens → spermatogenezis-támogatás + inhibin-B produkció) stimulálja. A HCG mono-protokoll CSAK Leydig-LH-axist hozza fel (intratesticular testosterone emelkedik, de a Sertoli-FSH-támogatás hiányzik) → a teljes spermatogenezis-induction-hez HCG + HMG kombináció szükséges hypogonadotrop hypogonadizmusban (HypoH). **Klinikai indikációk** (FDA + EMA Rx): (1) **férfi spermatogenezis-induction** HypoH-ben (Kallmann-szindróma, idiopátiás HypoH, hipofízis-eredetű infertilitás): 75-150 IU SC 3x/hét × 6-24 hónap, HCG-vel stacked; (2) **női IVF-szuper-ovuláció** és COS (controlled ovarian stimulation): 75-300 IU/nap individualizált. **Cross-frame note**: ugyanaz a Menopur-vial, mint az AAS-felhasználói PCT-protokollokban (`hmg-perf` entry) — eltérő narratíva (klinikai infertilitás vs sport-cycle-recovery), AZONOS farmakológia. WADA-tilos egész évben (S2 Peptide Hormones).",
+  "shortDesc": "Humán Menopauzális Gonadotropin – 1:1 FSH+LH glikoprotein. Teljes spermatogenezis-induction (Leydig + Sertoli kettős axis), IVF szuper-ovuláció. Klinikai Rx infertilitás-indikációkra (HypoH férfi + IVF-ovulation-induction nő), NEM doping. Cross-frame: AAS-PCT-kontextusban a `hmg-perf` entry.",
+  "description": "Az HMG (Humán Menopauzális Gonadotropin) egy postmenopauzális női vizeletből tisztított glikoprotein-keverék, amely **körülbelül 75 IU FSH (follicle-stimulating hormone) + 75 IU LH (luteinizing hormone) 1:1 arányban** tartalmaz egy standard ampoulában. A modern klinikai HMG-források: (1) **urinary-extracted** (Menopur Ferring 2002 EMA, 2005 FDA – magasabb-tisztaságú urinary-purified termék; a régebbi Pergonal Serono 1962 globálisan kivonva ~2005 vCJD-rizikó-csökkentés miatt); (2) **rekombináns menotropin** (kutatási stádium, klinikai forgalom limitált). **Mechanizmus duális gonadotropin-axis stimulus**: az HMG egyedi értéke a klinikai fertilitás-kezelésben, hogy MIND a Leydig-sejteket (LH-komponens → testosterone-produkció), MIND a Sertoli-sejteket (FSH-komponens → spermatogenezis-támogatás + inhibin-B produkció) stimulálja. A HCG mono-protokoll CSAK Leydig-LH-axist hozza fel (intratesticular testosterone emelkedik, de a Sertoli-FSH-támogatás hiányzik) → a teljes spermatogenezis-induction-hez HCG + HMG kombináció szükséges hypogonadotrop hypogonadizmusban (HypoH). **Klinikai indikációk** (FDA + EMA Rx): (1) **férfi spermatogenezis-induction** HypoH-ben (Kallmann-szindróma, idiopátiás HypoH, hipofízis-eredetű infertilitás): 75-150 IU SC 3x/hét × 6-24 hónap, HCG-vel stacked; (2) **női IVF-szuper-ovuláció** és COS (controlled ovarian stimulation): 75-300 IU/nap individualizált. **Cross-frame note**: ugyanaz a Menopur-vial, mint az AAS-felhasználói PCT-protokollokban (`hmg-perf` entry) – eltérő narratíva (klinikai infertilitás vs sport-cycle-recovery), AZONOS farmakológia. WADA-tilos egész évben (S2 Peptide Hormones).",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
-      "value": "1:1 FSH+LH glikoprotein-keverék — Sertoli-FSHR + Leydig-LHCGR receptor double-stimulus, teljes HPG-axis induction"
+      "value": "1:1 FSH+LH glikoprotein-keverék – Sertoli-FSHR + Leydig-LHCGR receptor double-stimulus, teljes HPG-axis induction"
     },
     {
       "label": "Adagolás (férfi HypoH spermatogenezis)",
@@ -33,8 +33,8 @@ export default {
       "value": "FDA + EMA Rx Menopur (Ferring), WADA S2 (banned in+out-of-competition)"
     }
   ],
-  "mechanism": "Az HMG egy két-komponensű glikoprotein-keverék: (1) **FSH** (follicle-stimulating hormone) — Sertoli-sejt FSHR-receptor agonist → cAMP-PKA pathway → spermatogenezis-stimulus (germ-cell-érés Sertoli-mediated támogatása) + inhibin-B produkció + androgen-binding-protein (ABP) szintézis; (2) **LH** (luteinizing hormone) — Leydig-sejt LHCGR-receptor agonist → cAMP-PKA pathway → szteroidogenezis (cholesterol → pregnenolone → testosterone). A két komponens biológiai t1/2-je eltér: FSH ~12-20 h, LH ~8-12 h (a saját endogén LH-hoz hasonló rövid t1/2, ezért a klinikai protokollok 3x/hét vagy napi dosing-ot használnak). **Klinikai duális-axis logika**: HypoH-férfi spermatogenezis-induction-hez a Sertoli-FSH-stimulus NÉLKÜLÖZHETETLEN; a HCG-monoterápia (LH-mimikry) intratesticular testosterone-t emel, de a germ-cell-érés Sertoli-FSH-támogatás nélkül NEM teljes. A standard induction-protokoll: HCG-monoterápia 3-6 hónap (Leydig-axis felépítés, ITT-emelés), majd HCG + HMG kombináció (FSH-axis hozzáadása) → spermatogenezis 6-24 hónapon belül indukálható ~70-90%-ban (Liu 2009).",
-  "legalStatus": "**USA**: FDA Rx Menopur (Ferring 2005 jóváhagyás) — indikációk: COS-IVF, ovulation induction, male HypoH spermatogenezis-induction. **EU**: EMA Rx Menopur (Ferring 2002 jóváhagyás) — azonos indikációk. **HU + PL**: törzskönyvezett (Menopur Rx, gyakori IVF-klinikai használat). **Pergonal** (Serono történelmi termék, 1962-2005) globálisan kivonva vCJD theoretical risk + urinary-source-csökkentés miatt. **WADA**: S2.2 Peptide Hormones — banned in-competition + out-of-competition minden férfi versenyző számára egész évben (kivétel: dokumentált infertilitás-Rx TUE-protokollon).",
+  "mechanism": "Az HMG egy két-komponensű glikoprotein-keverék: (1) **FSH** (follicle-stimulating hormone) – Sertoli-sejt FSHR-receptor agonist → cAMP-PKA pathway → spermatogenezis-stimulus (germ-cell-érés Sertoli-mediated támogatása) + inhibin-B produkció + androgen-binding-protein (ABP) szintézis; (2) **LH** (luteinizing hormone) – Leydig-sejt LHCGR-receptor agonist → cAMP-PKA pathway → szteroidogenezis (cholesterol → pregnenolone → testosterone). A két komponens biológiai t1/2-je eltér: FSH ~12-20 h, LH ~8-12 h (a saját endogén LH-hoz hasonló rövid t1/2, ezért a klinikai protokollok 3x/hét vagy napi dosing-ot használnak). **Klinikai duális-axis logika**: HypoH-férfi spermatogenezis-induction-hez a Sertoli-FSH-stimulus NÉLKÜLÖZHETETLEN; a HCG-monoterápia (LH-mimikry) intratesticular testosterone-t emel, de a germ-cell-érés Sertoli-FSH-támogatás nélkül NEM teljes. A standard induction-protokoll: HCG-monoterápia 3-6 hónap (Leydig-axis felépítés, ITT-emelés), majd HCG + HMG kombináció (FSH-axis hozzáadása) → spermatogenezis 6-24 hónapon belül indukálható ~70-90%-ban (Liu 2009).",
+  "legalStatus": "**USA**: FDA Rx Menopur (Ferring 2005 jóváhagyás) – indikációk: COS-IVF, ovulation induction, male HypoH spermatogenezis-induction. **EU**: EMA Rx Menopur (Ferring 2002 jóváhagyás) – azonos indikációk. **HU + PL**: törzskönyvezett (Menopur Rx, gyakori IVF-klinikai használat). **Pergonal** (Serono történelmi termék, 1962-2005) globálisan kivonva vCJD theoretical risk + urinary-source-csökkentés miatt. **WADA**: S2.2 Peptide Hormones – banned in-competition + out-of-competition minden férfi versenyző számára egész évben (kivétel: dokumentált infertilitás-Rx TUE-protokollon).",
   "onsetTime": "Hormonális válasz 24-48 óra (Test-emelkedés + inhibin-B mérhető); klinikai spermatogenezis-induction 3-6 hónap (HCG-vel stacked protokollon)",
   "halfLife": "FSH-komponens ~12-20 óra; LH-komponens ~8-12 óra",
   "halfLifeActive": "Klinikai effect 2-3 nap (single SC bolus után, mixed FSH+LH component decay)",
@@ -46,17 +46,17 @@ export default {
     "gonadorelin"
   ],
   "aromatization": "Indirekt: testicular FSH+LH stimulus → endogén Test-emelkedés → másodlagos peripheral E2-konverzió a testis + adipose CYP19-aromatáz révén. Magnitude moderate (kissé alacsonyabb mint pure HCG-protokoll, mert Sertoli-FSH-aktivitás dominál a Leydig-Test-emelés felett). Klinikai infertilitás-kontextusban E2-monitoring általában nem szükséges (a célzott Test-emelés a fiziológiás induction-érték, nem suprafiziológiás), de magas-dose HMG (>150 IU EOD) esetén E2-watch indokolt lehet gyno-szenzitív felhasználón.",
-  "hepatotoxicity": "Nincs hepatikus stressz — fehérje-alapú szubkután (SC) vagy intramuszkuláris (IM) injekció, NEM oral, NEM 17α-alkilált. Hepatic enzyme rise nem dokumentált a 60+ év klinikai trial-database-en.",
+  "hepatotoxicity": "Nincs hepatikus stressz – fehérje-alapú szubkután (SC) vagy intramuszkuláris (IM) injekció, NEM oral, NEM 17α-alkilált. Hepatic enzyme rise nem dokumentált a 60+ év klinikai trial-database-en.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nem AAS; indirekt testicular Test-stimulus + Sertoli-spermatogenezis-stimulus)",
-  "bindingAffinity": "FSH-komponens: FSHR Kd ~0.5 nM (Sertoli-sejt). LH-komponens: LHCGR Kd ~0.3 nM (Leydig-sejt). A HMG mixed-receptor-binding profilja egyedi — a tisztított urinary-extracted termékben FSH/LH-arány batch-szerint kissé varíálhat (~70-80 IU FSH : 70-80 IU LH per 75/75-címkézett ampoula).",
-  "detectionWindow": "WADA-akkreditált isoelectric focusing (IEF) urinary test — urinary-extracted HMG vs endogén pituitary-FSH/LH megkülönböztetése izoelektromos pont-eltolódás alapján. Single bolus után 5-7 nap detektálható, chronic protokoll után 10-14 nap. Recombinant FSH (Gonal-F) jobban detektálható az IEF-en, urinary HMG nehezebben (endogén overlap-szerinti false-negative rizikó).",
+  "bindingAffinity": "FSH-komponens: FSHR Kd ~0.5 nM (Sertoli-sejt). LH-komponens: LHCGR Kd ~0.3 nM (Leydig-sejt). A HMG mixed-receptor-binding profilja egyedi – a tisztított urinary-extracted termékben FSH/LH-arány batch-szerint kissé varíálhat (~70-80 IU FSH : 70-80 IU LH per 75/75-címkézett ampoula).",
+  "detectionWindow": "WADA-akkreditált isoelectric focusing (IEF) urinary test – urinary-extracted HMG vs endogén pituitary-FSH/LH megkülönböztetése izoelektromos pont-eltolódás alapján. Single bolus után 5-7 nap detektálható, chronic protokoll után 10-14 nap. Recombinant FSH (Gonal-F) jobban detektálható az IEF-en, urinary HMG nehezebben (endogén overlap-szerinti false-negative rizikó).",
   "benefits": [
     "Teljes spermatogenezis-induction HypoH-férfi (~70-90% sikerráta HCG-vel stacked protokollon, Liu 2009)",
     "Duális FSH+LH axis: a Sertoli-FSH-támogatás kiegészíti a HCG-csak Leydig-LH stimulus-t",
     "IVF-szuper-ovuláció (COS) női infertilitás-protokoll: standard EU + USA klinikai protokoll-elem",
     "Inhibin-B produkció helyreállítása (Sertoli-funkcionalitás-marker)",
-    "60+ év klinikai trial-database (Pergonal 1962 óta, Menopur 2002 óta) — extenzív biztonsági adatok",
+    "60+ év klinikai trial-database (Pergonal 1962 óta, Menopur 2002 óta) – extenzív biztonsági adatok",
     "Olcsó (Menopur 75 IU vial ~€25-40 EU pharmacy)"
   ],
   "quickStart": [
@@ -87,15 +87,15 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Menopur 75 IU vial (Ferring 2002 EMA / 2005 FDA) — golden-standard urinary-extracted HMG, magasabb-tisztaságú, EU + USA pharmacy elérhető",
-      "Menopur 1200 IU multi-dose vial (Ferring) — IVF-klinikai protokoll-csomag",
-      "Bemfola 75 IU (Gedeon Richter) — európai biosimilar pure FSH (NEM HMG, hanem rFSH — alternatíva azoknak, akiknek pure FSH kell)",
-      "Pergonal — TÖRTÉNELMI, globálisan kivonva ~2005 (vCJD-rizikó-csökkentés); ha valaki ma 'Pergonal'-t árul, az gyanús grey-market készlet vagy fake",
-      "UGL HMG — KERÜLENDŐ infertilitás-Rx célra: a klinikai protokoll precíz dose-titrálást igényel, UGL-batch-szerű FSH/LH-arány-bizonytalanság az induction sikerét veszélyeztetheti"
+      "Menopur 75 IU vial (Ferring 2002 EMA / 2005 FDA) – golden-standard urinary-extracted HMG, magasabb-tisztaságú, EU + USA pharmacy elérhető",
+      "Menopur 1200 IU multi-dose vial (Ferring) – IVF-klinikai protokoll-csomag",
+      "Bemfola 75 IU (Gedeon Richter) – európai biosimilar pure FSH (NEM HMG, hanem rFSH – alternatíva azoknak, akiknek pure FSH kell)",
+      "Pergonal – TÖRTÉNELMI, globálisan kivonva ~2005 (vCJD-rizikó-csökkentés); ha valaki ma 'Pergonal'-t árul, az gyanús grey-market készlet vagy fake",
+      "UGL HMG – KERÜLENDŐ infertilitás-Rx célra: a klinikai protokoll precíz dose-titrálást igényel, UGL-batch-szerű FSH/LH-arány-bizonytalanság az induction sikerét veszélyeztetheti"
     ],
     "caution": [
-      "Női IVF-felhasználón: ovarian hyperstimulation syndrome (OHSS) rizikó magas-dose mellett — kötelező reprodukciós endokrinológus felügyelete (NEM önprotokoll)",
-      "Férfi induction-protokollon az első 3-6 hónap során spermium MÉG NEM várható (Sertoli-FSH-stimulus elindításához idő kell) — pszichés frusztráció-rizikó, klinikai kontaktus fontos",
+      "Női IVF-felhasználón: ovarian hyperstimulation syndrome (OHSS) rizikó magas-dose mellett – kötelező reprodukciós endokrinológus felügyelete (NEM önprotokoll)",
+      "Férfi induction-protokollon az első 3-6 hónap során spermium MÉG NEM várható (Sertoli-FSH-stimulus elindításához idő kell) – pszichés frusztráció-rizikó, klinikai kontaktus fontos",
       "TUE dokumentáció versenyző-felhasználónak: a WADA-TUE pályázatot a használat ELŐTT kell benyújtani (retrospektív TUE általában elutasítva)",
       "Reconstituált oldat 2-8°C max 28 nap (egészségügyi steril gyakorlat kötelező)",
       "Magas-dose HMG (>150 IU EOD chronic) → E2-rebound és gyno-rizikó gyno-szenzitív férfi felhasználón → AI co-admin megfontolandó (Anastrozol 0.25 mg EOD)"
@@ -111,10 +111,10 @@ export default {
   "interactions": [
     "**HCG stack-partner** (kötelező spermatogenezis-induction-protokollban): HCG 2000-2500 IU 2-3x/hét + HMG 75-150 IU 3x/hét → full HPG-axis induction",
     "**Aromatase-inhibitor (Anastrozol 0.25 mg EOD)**: opcionális E2-kontroll magas-dose HMG-on gyno-szenzitív férfi felhasználón",
-    "**SERM (Clomid, Nolvadex)**: NEM co-administered HMG-protokollon — eltérő mechanizmus (SERM = endogén GnRH-stimulus, HMG = exogén FSH+LH bypass)",
+    "**SERM (Clomid, Nolvadex)**: NEM co-administered HMG-protokollon – eltérő mechanizmus (SERM = endogén GnRH-stimulus, HMG = exogén FSH+LH bypass)",
     "**rFSH (Gonal-F, Puregon)**: alternatíva pure FSH-axis-stimulus-hoz (ha LH-komponens nem szükséges; pl. már megfelelő endogén LH van)",
-    "**Gonadorelin/kisspeptin**: NEM stacked (eltérő mechanizmus — pulsatile GnRH-stimulus vs exogén gonadotropin-bypass), de elméleti follow-up protokoll-elem long-term induction után",
-    "**TRT (testosterone replacement)**: KONTRAINDIKÁLT a HMG-induction-protokollon — exogén Test szuppresszálja a HPG-axist, ami az induction célja ellen dolgozik"
+    "**Gonadorelin/kisspeptin**: NEM stacked (eltérő mechanizmus – pulsatile GnRH-stimulus vs exogén gonadotropin-bypass), de elméleti follow-up protokoll-elem long-term induction után",
+    "**TRT (testosterone replacement)**: KONTRAINDIKÁLT a HMG-induction-protokollon – exogén Test szuppresszálja a HPG-axist, ami az induction célja ellen dolgozik"
   ],
   "studies": [
     {
@@ -146,15 +146,15 @@ export default {
     },
     {
       "q": "Mennyi időbe telik a spermatogenezis-induction sikere?",
-      "a": "Lassú folyamat: 6-24 hónap a klinikai trial-átlag (Liu 2009, n=75 HypoH-férfi, median 9 hónap). A spermatogenezis-ciklus emberben ~74 nap (germ-cell-érés Sertoli-mediated), tehát biológiailag NEM lehet gyorsítani — minimum 3 ciklust (~9 hónap) kell várni a steady-state-hez. Prediktor-faktorok: testicular-volumen pre-treatment (>4 mL kedvező), genetikus HypoH-oka (Kallmann jobb prognózisú mint hipofízis-tumor-post-surgery), induction-protokoll-adherencia (skipped pinek lassítják). Pszichés felkészülés fontos: az első 6 hónap során spermium MÉG NEM várható."
+      "a": "Lassú folyamat: 6-24 hónap a klinikai trial-átlag (Liu 2009, n=75 HypoH-férfi, median 9 hónap). A spermatogenezis-ciklus emberben ~74 nap (germ-cell-érés Sertoli-mediated), tehát biológiailag NEM lehet gyorsítani – minimum 3 ciklust (~9 hónap) kell várni a steady-state-hez. Prediktor-faktorok: testicular-volumen pre-treatment (>4 mL kedvező), genetikus HypoH-oka (Kallmann jobb prognózisú mint hipofízis-tumor-post-surgery), induction-protokoll-adherencia (skipped pinek lassítják). Pszichés felkészülés fontos: az első 6 hónap során spermium MÉG NEM várható."
     },
     {
       "q": "Lehet HMG-t használni TRT-mellett vagy TRT helyett?",
-      "a": "**TRT-mellett: KONTRAINDIKÁLT.** Az exogén testosterone (TRT) szuppresszálja a HPG-axist (negative feedback a hypothalamusra), ami az HMG-induction célja ellen dolgozik. A férfi-fertility-Rx-protokollon a TRT-t le KELL állítani min. 6 hét HMG-start előtt. **TRT helyett HypoH-induction-re**: az HMG NEM TRT-helyettesítő — a Test-emelkedés indirekt (Leydig-stimulus), kisebb magnitude mint direct TRT, és klinikai cél a spermatogenezis-induction, NEM symptomatic-Test-deficiency-kezelés. HypoH-férfi-felhasználón, akinek prioritás a fertility (családalapítás), a teljes induction-protokoll alatt (6-24 hónap) HMG+HCG, utána TRT-re visszaváltás opcionális (de a fertility-window-on belül NEM)."
+      "a": "**TRT-mellett: KONTRAINDIKÁLT.** Az exogén testosterone (TRT) szuppresszálja a HPG-axist (negative feedback a hypothalamusra), ami az HMG-induction célja ellen dolgozik. A férfi-fertility-Rx-protokollon a TRT-t le KELL állítani min. 6 hét HMG-start előtt. **TRT helyett HypoH-induction-re**: az HMG NEM TRT-helyettesítő – a Test-emelkedés indirekt (Leydig-stimulus), kisebb magnitude mint direct TRT, és klinikai cél a spermatogenezis-induction, NEM symptomatic-Test-deficiency-kezelés. HypoH-férfi-felhasználón, akinek prioritás a fertility (családalapítás), a teljes induction-protokoll alatt (6-24 hónap) HMG+HCG, utána TRT-re visszaváltás opcionális (de a fertility-window-on belül NEM)."
     },
     {
       "q": "Cross-frame: ugyanaz a Menopur, mint az AAS-PCT-protokollokban?",
-      "a": "Igen — identikus molekula. A `hmg-peptid` (jelen entry, fertility-Rx-framing) és a `hmg-perf` (AAS-PCT-framing) entry-k ~80% content-overlap-pel rendelkeznek (azonos kémiai struktúra, farmakológia, beadás-mód). A KÜLÖNBSÉG a framing: `hmg-peptid` klinikai infertilitás-Rx kontextusban (HypoH spermatogenezis-induction, IVF női COS), míg `hmg-perf` AAS-post-cycle-recovery-kontextusban (Sertoli-FSH-stimulus a hosszú-ciklus utáni spermatogenezis-restart-hoz). A felhasználó ugyanazt a Menopur-vial-t veheti meg a fertility-klinikán Rx-re vagy az AAS-cycle-recovery-protokoll-elemként — eltérő narratíva, azonos farmakológia."
+      "a": "Igen – identikus molekula. A `hmg-peptid` (jelen entry, fertility-Rx-framing) és a `hmg-perf` (AAS-PCT-framing) entry-k ~80% content-overlap-pel rendelkeznek (azonos kémiai struktúra, farmakológia, beadás-mód). A KÜLÖNBSÉG a framing: `hmg-peptid` klinikai infertilitás-Rx kontextusban (HypoH spermatogenezis-induction, IVF női COS), míg `hmg-perf` AAS-post-cycle-recovery-kontextusban (Sertoli-FSH-stimulus a hosszú-ciklus utáni spermatogenezis-restart-hoz). A felhasználó ugyanazt a Menopur-vial-t veheti meg a fertility-klinikán Rx-re vagy az AAS-cycle-recovery-protokoll-elemként – eltérő narratíva, azonos farmakológia."
     }
   ],
   "related": [
@@ -189,7 +189,7 @@ export default {
       "label": "Sikeres induction után (HMG-stop)",
       "timing": "Spermatogenezis-stabilizáció után 6 hét",
       "markers": "Total Test, LH, FSH, semen-analízis, fertility-confirmation (IUI-eligible vagy spontán fogamzás).",
-      "purpose": "HMG-stop után HCG-monoterápiára visszaváltás (Sertoli-axis self-sustaining) — confirm hogy a sperm count nem esik vissza azoospermia-szintre."
+      "purpose": "HMG-stop után HCG-monoterápiára visszaváltás (Sertoli-axis self-sustaining) – confirm hogy a sperm count nem esik vissza azoospermia-szintre."
     },
     "cruise": {
       "label": "Long-term maintenance (családalapítás-window-on belül)",

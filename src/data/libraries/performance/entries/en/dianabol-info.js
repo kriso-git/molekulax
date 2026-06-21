@@ -27,7 +27,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Methandrostenolone, 17α-alkylated oral AAS. Classic \"kickstart\" bulking steroid with high hepatotoxicity.",
-  "description": "Dianabol (Methandrostenolone) was the first mass-marketed oral AAS, synthesized by John Bosley Ziegler in 1955 for the US weightlifting team. A 17α-alkylated oral compound, it produces rapid water-retentive muscle gain. **\"Wet gain\" myth revision**: most of the weight gained on Dianabol is not subcutaneous extracellular edema but INTRAMUSCULAR glycogen storage plus cell volumization (intracellular hydration). Cell swelling itself is an anabolic signal (Häussinger hypothesis: cell-volume rise activates mTOR signaling and stimulates protein synthesis), so behind the \"wet\" appearance lies a real productive anabolic process. \"Kickstart\" use is 4-6 weeks alongside longer-acting injectable AAS. It aromatizes, causing E2 rise + gyno + water retention risk — BUT Dianabol also forms an unusually potent **anastrozole-resistant 17α-methylestradiol metabolite** via aromatase catalysis, so gyno risk remains high even on AI, and classical AI titration (anastrozole 0.5 mg EOD) is less effective than on Testosterone. Hepatotoxicity is high (ALT/AST rises significantly) due to 17α-alkylated first-pass metabolism.",
+  "description": "Dianabol (Methandrostenolone) was the first mass-marketed oral AAS, synthesized by John Bosley Ziegler in 1955 for the US weightlifting team. A 17α-alkylated oral compound, it produces rapid water-retentive muscle gain. **\"Wet gain\" myth revision**: most of the weight gained on Dianabol is not subcutaneous extracellular edema but INTRAMUSCULAR glycogen storage plus cell volumization (intracellular hydration). Cell swelling itself is an anabolic signal (Häussinger hypothesis: cell-volume rise activates mTOR signaling and stimulates protein synthesis), so behind the \"wet\" appearance lies a real productive anabolic process. \"Kickstart\" use is 4-6 weeks alongside longer-acting injectable AAS. It aromatizes, causing E2 rise + gyno + water retention risk – BUT Dianabol also forms an unusually potent **anastrozole-resistant 17α-methylestradiol metabolite** via aromatase catalysis, so gyno risk remains high even on AI, and classical AI titration (anastrozole 0.5 mg EOD) is less effective than on Testosterone. Hepatotoxicity is high (ALT/AST rises significantly) due to 17α-alkylated first-pass metabolism.",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -143,9 +143,9 @@ export default {
         "pl": "Methandrostenolon (Dianabol tabletka doustna, 17α-metylowany)"
       },
       "routeNote": {
-        "hu": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz — TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
-        "en": "Classic form: 17α-methylated tablet, ~3-6 h half-life, fast plasma peak within 1-2 hours. 2-3x split daily dosing recommended. High hepatic first-pass stress — TUDCA + NAC mandatory. Most widespread and most-studied Dianabol form.",
-        "pl": "Klasyczna forma: tabletka 17α-metylowana, ~3-6 h okres półtrwania, szybki szczyt osoczowy w ciągu 1-2 godzin. Zalecane podawanie podzielone 2-3x dziennie. Wysoki stres wątrobowy first-pass — TUDCA + NAC obowiązkowe. Najszerzej rozpowszechniona i najlepiej zbadana forma Dianabolu."
+        "hu": "Klasszikus forma: 17α-metil tabletta, kb. 3-6 h felezési idő, gyors plazma-csúcs 1-2 órán belül. Naponta 2-3x felosztott adagolás javasolt. Magas hepatikus first-pass stressz – TUDCA + NAC kötelező. Legelterjedtebb és legtöbbet kutatott Dianabol-forma.",
+        "en": "Classic form: 17α-methylated tablet, ~3-6 h half-life, fast plasma peak within 1-2 hours. 2-3x split daily dosing recommended. High hepatic first-pass stress – TUDCA + NAC mandatory. Most widespread and most-studied Dianabol form.",
+        "pl": "Klasyczna forma: tabletka 17α-metylowana, ~3-6 h okres półtrwania, szybki szczyt osoczowy w ciągu 1-2 godzin. Zalecane podawanie podzielone 2-3x dziennie. Wysoki stres wątrobowy first-pass – TUDCA + NAC obowiązkowe. Najszerzej rozpowszechniona i najlepiej zbadana forma Dianabolu."
       },
       "image": "/performance/tablet-pile-white.png",
       "legalStatus": "USA: FDA Rx (Ciba 1958, discontinued 1983); Schedule III. EU: UGL piacon dominans, vény nélkül illegális. WADA tiltott.",
@@ -218,7 +218,7 @@ export default {
         "pl": "Rzadka, alternatywna forma (zawiesina typu \"Reforvit-B\"). Omija wątrobowy metabolizm first-pass → nieco niższa, ale NIE zerowa hepatotoksyczność (grupa 17α-metylowa powoduje wewnętrzną hepatotoksyczność nawet bez first-pass). Bardziej stabilne poziomy osoczowe, podawanie EOD (co drugi dzień). Bolesna iniekcja, wyłącznie ze źródła UGL."
       },
       "image": "/performance/oil-vial-yellow.png",
-      "legalStatus": "Nem licencelt formátum — kizárólag UGL underground market. Mindenhol illegális. WADA tiltott.",
+      "legalStatus": "Nem licencelt formátum – kizárólag UGL underground market. Mindenhol illegális. WADA tiltott.",
       "bioavailability": "~95-100% (IM bypass-olja a first-pass-t; methandrostenolone olajban suspendált slow depot-felszívódással)",
       "onsetTime": {
         "hu": "12-24 óra (IM, depot-kinetika)",
@@ -247,7 +247,7 @@ export default {
           "PIP (injection site pain) gyakori, methandrostenolone-in-oil notorikusan fáj",
           "Lipid-zavar drasztikus: HDL csökkenés ugyanaz mint orálnál",
           "Vízretenció + gynecomastia-rizikó (aromatizáció nem változik)",
-          "Hepatotoxicitás csökkentett DE NEM nulla — TUDCA kötelező"
+          "Hepatotoxicitás csökkentett DE NEM nulla – TUDCA kötelező"
         ],
         "avoid": [
           "Erős injection-site-érzékenység",
@@ -277,5 +277,5 @@ export default {
       }
     }
   ],
-  "anecdote": "Dianabol holds an almost legendary status in AAS lore. Users often report a very fast shift in fullness, leverage, recovery, and gym performance within surprisingly short timeframes. A hallmark feature is how 'anabolic' it feels — fairly obvious rather than subtle. Strength typically climbs rapidly alongside dramatic pump and volumization effects. Much of what is colloquially called 'water weight' is actually intramuscular glycogen and cell hydration, which is not equivalent to meaningless bloat and may itself contribute to anabolic signaling. Community accounts note Dianabol's disproportionate effect on training momentum — more productive sessions, faster recovery, and compounding growth from that alone. Appetite often increases too. Tradeoffs are significant: notable estrogen-related effects (gyno, water retention), blood pressure elevation, lipid disruption, and 17α-alkylated hepatic strain. Some accounts and emerging evidence suggest Dianabol metabolizes into an unusually potent estrogenic metabolite, which is worth keeping in mind when planning AI/SERM support."
+  "anecdote": "Dianabol holds an almost legendary status in AAS lore. Users often report a very fast shift in fullness, leverage, recovery, and gym performance within surprisingly short timeframes. A hallmark feature is how 'anabolic' it feels – fairly obvious rather than subtle. Strength typically climbs rapidly alongside dramatic pump and volumization effects. Much of what is colloquially called 'water weight' is actually intramuscular glycogen and cell hydration, which is not equivalent to meaningless bloat and may itself contribute to anabolic signaling. Community accounts note Dianabol's disproportionate effect on training momentum – more productive sessions, faster recovery, and compounding growth from that alone. Appetite often increases too. Tradeoffs are significant: notable estrogen-related effects (gyno, water retention), blood pressure elevation, lipid disruption, and 17α-alkylated hepatic strain. Some accounts and emerging evidence suggest Dianabol metabolizes into an unusually potent estrogenic metabolite, which is worth keeping in mind when planning AI/SERM support."
 }

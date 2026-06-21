@@ -1,4 +1,4 @@
-// HMG (Menopur / Pergonal) — Humán Menopauzális Gonadotropin, urinary-extracted
+// HMG (Menopur / Pergonal) – Humán Menopauzális Gonadotropin, urinary-extracted
 // FSH+LH 75/75 IU keverék. AAS-PCT framing: full HPG-tengely restart (Sertoli-
 // FSH-támogatás is). Cross-frame: a future peptid-libben `hmg-peptid`.
 // Sources: EMA Menopur SPC (Ferring 2002), Pergonal historical (Lunenfeld 1962),
@@ -28,27 +28,27 @@ export default {
   "image": "/performance/water-vial.png",
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
-  "shortDesc": "Humán Menopauzális Gonadotropin — vizeletből kinyert FSH + LH 75/75 IU keverék. AAS-PCT-ben: teljes HPG-tengely restart (Sertoli-FSH-támogatás is, NEM csak Leydig-LH mint a HCG). Pergonal kivonva 2005-ben, Menopur modern alternatíva. Cross-frame: future peptid-libben `hmg-peptid`.",
-  "description": "Az HMG (Humán Menopauzális Gonadotropin) egy postmenopauzális női vizeletből tisztított glikoprotein-keverék, amely körülbelül 75 IU follicle-stimulating hormone (FSH) + 75 IU luteinizing hormone (LH) tartalmaz egy standard ampoulában (1:1 arány). A klinikai HMG fejlődése két korszakra osztható: (1) **Pergonal-korszak** (1962-2005) — Bruno Lunenfeld izraeli endokrinológus vezetésével a vatikáni katolikus apáca-rend menopauzális nővéreinek vizeletéből gyűjtve (Sister Carmela apáca és Donatella Donatella 1962 első klinikai indítás), Serono Pharmacia gyártás, ovulációs infertilitás indikációval. (2) **Menopur-korszak** (2002 EMA jóváhagyás → ma) — Ferring magasabb-tisztaságú urinary-extracted termék, vCJD-rizikó-csökkentés céljából a Pergonal helyettesítésére. **AAS-PCT kontextus**: az HMG különleges értéke, hogy a HCG-vel ellentétben mindkét gonadotropint (FSH + LH) szállítja → teljes HPG-axis restart (NEM csak Leydig-stimulus mint HCG, hanem Sertoli-cell-FSH-stimulus is). Indikáció AAS-felhasználón: long-cycle/hard-suppression hard-suppression után, ahol a saját pituiter FSH még nem szekretál elég Sertoli-támogatást → spermatogenesis-recovery siettetése. **Cross-frame note**: ez a `-perf` suffix entry, a future peptid-library batch hozza majd a `hmg-peptid` entry-t (fertility-clinic-framing — IVF male-factor protokoll, IUI/COS ovulation induction kontextus). WADA-tilos egész évben (S2 Peptide Hormones).",
+  "shortDesc": "Humán Menopauzális Gonadotropin – vizeletből kinyert FSH + LH 75/75 IU keverék. AAS-PCT-ben: teljes HPG-tengely restart (Sertoli-FSH-támogatás is, NEM csak Leydig-LH mint a HCG). Pergonal kivonva 2005-ben, Menopur modern alternatíva. Cross-frame: future peptid-libben `hmg-peptid`.",
+  "description": "Az HMG (Humán Menopauzális Gonadotropin) egy postmenopauzális női vizeletből tisztított glikoprotein-keverék, amely körülbelül 75 IU follicle-stimulating hormone (FSH) + 75 IU luteinizing hormone (LH) tartalmaz egy standard ampoulában (1:1 arány). A klinikai HMG fejlődése két korszakra osztható: (1) **Pergonal-korszak** (1962-2005) – Bruno Lunenfeld izraeli endokrinológus vezetésével a vatikáni katolikus apáca-rend menopauzális nővéreinek vizeletéből gyűjtve (Sister Carmela apáca és Donatella Donatella 1962 első klinikai indítás), Serono Pharmacia gyártás, ovulációs infertilitás indikációval. (2) **Menopur-korszak** (2002 EMA jóváhagyás → ma) – Ferring magasabb-tisztaságú urinary-extracted termék, vCJD-rizikó-csökkentés céljából a Pergonal helyettesítésére. **AAS-PCT kontextus**: az HMG különleges értéke, hogy a HCG-vel ellentétben mindkét gonadotropint (FSH + LH) szállítja → teljes HPG-axis restart (NEM csak Leydig-stimulus mint HCG, hanem Sertoli-cell-FSH-stimulus is). Indikáció AAS-felhasználón: long-cycle/hard-suppression hard-suppression után, ahol a saját pituiter FSH még nem szekretál elég Sertoli-támogatást → spermatogenesis-recovery siettetése. **Cross-frame note**: ez a `-perf` suffix entry, a future peptid-library batch hozza majd a `hmg-peptid` entry-t (fertility-clinic-framing – IVF male-factor protokoll, IUI/COS ovulation induction kontextus). WADA-tilos egész évben (S2 Peptide Hormones).",
   "keyInfo": [
-    {"label": "Hatásmechanizmus", "value": "Urinary-extracted FSH (75 IU) + LH (75 IU) keverék — Sertoli-FSHR + Leydig-LHCGR receptor double-stimulus"},
+    {"label": "Hatásmechanizmus", "value": "Urinary-extracted FSH (75 IU) + LH (75 IU) keverék – Sertoli-FSHR + Leydig-LHCGR receptor double-stimulus"},
     {"label": "Adagolás (PCT)", "value": "75-150 IU EOD × 2-4 hét"},
     {"label": "Felezési idő", "value": "FSH ~24-36 h / LH ~20 h (mixed component decay)"},
     {"label": "Hatáskezdet", "value": "Test-emelkedés 5-10 nap, spermatogenesis-restart 4-8 hét"},
     {"label": "Jogi státusz", "value": "EMA Rx Menopur (Ferring 2002), USA FDA Rx Menopur (2005), WADA S2 (banned)"}
   ],
-  "mechanism": "HMG egy két-komponensű glikoprotein-keverék: (1) FSH (follicle-stimulating hormone) — Sertoli-sejt FSHR-receptor agonist → spermatogenesis-stimulus + inhibin-B produkció; (2) LH (luteinizing hormone) — Leydig-sejt LHCGR-receptor agonist → testicular testosterone-produkció. A két komponens biológiai t1/2-je eltér: FSH ~24-36 h, LH ~20 h. Az AAS-PCT kontextusban HMG előnye HCG felett: a Sertoli-FSH-stimulus szükséges a teljes spermatogenesis-recovery-hez, különösen hosszú-ciklus/hard-suppression után, amikor a saját pituiter FSH még nem szekretál elegendő mennyiséget. Az HMG NEM helyettesíti a HCG-t (rövid LH-effekt miatt mind kettő szükséges lehet), hanem complementer protokoll-elem.",
+  "mechanism": "HMG egy két-komponensű glikoprotein-keverék: (1) FSH (follicle-stimulating hormone) – Sertoli-sejt FSHR-receptor agonist → spermatogenesis-stimulus + inhibin-B produkció; (2) LH (luteinizing hormone) – Leydig-sejt LHCGR-receptor agonist → testicular testosterone-produkció. A két komponens biológiai t1/2-je eltér: FSH ~24-36 h, LH ~20 h. Az AAS-PCT kontextusban HMG előnye HCG felett: a Sertoli-FSH-stimulus szükséges a teljes spermatogenesis-recovery-hez, különösen hosszú-ciklus/hard-suppression után, amikor a saját pituiter FSH még nem szekretál elegendő mennyiséget. Az HMG NEM helyettesíti a HCG-t (rövid LH-effekt miatt mind kettő szükséges lehet), hanem complementer protokoll-elem.",
   "legalStatus": "USA: FDA Rx Menopur (Ferring 2005 jóváhagyás). EU: EMA Rx Menopur (Ferring 2002 jóváhagyás). HU + PL: törzskönyvezett (Menopur Rx). Pergonal kivonva globálisan ~2005 (vCJD theoretical risk + urinary-source-csökkentés). WADA: S2.2 Peptide Hormones (banned in-competition + out-of-competition).",
   "onsetTime": "Test-emelkedés 5-10 nap, spermatogenesis-restart 4-8 hét",
   "halfLife": "FSH ~24-36 h, LH ~20 h (mixed)",
   "halfLifeActive": "Klinikai effect 3-5 nap (mixed component)",
   "interactionsWith": ["hcg-perf", "fsh-rec-perf", "nolvadex", "clomid", "gonadorelin"],
   "aromatization": "Indirekt: testicular FSH+LH stimulus → endogén Test → másodlagos peripheral E2 (similar magnitude to HCG, kissé alacsonyabb mert Sertoli-aktivitás dominál vs Leydig). AAS-PCT kontextusban E2-rebound monitor szükséges magasabb HMG-dose (>150 IU EOD) esetén.",
-  "hepatotoxicity": "Nincs hepatikus stressz — fehérje-alapú SC vagy IM injekció.",
+  "hepatotoxicity": "Nincs hepatikus stressz – fehérje-alapú SC vagy IM injekció.",
   "wadaStatus": "banned",
   "androgenicRatio": "N/A (nem AAS; FSH + LH indirekt stimulus)",
   "bindingAffinity": "FSH-FSHR Kd ~0.1 nM (Sertoli), LH-LHCGR Kd ~0.1 nM (Leydig). Mixed receptor-stimulus tehát egyaránt Sertoli + Leydig sejteket aktiválja.",
-  "detectionWindow": "WADA-akkreditált immunoassay urinary FSH + LH detection — chronic protokoll után 7-14 nap, single bolus 3-5 nap.",
+  "detectionWindow": "WADA-akkreditált immunoassay urinary FSH + LH detection – chronic protokoll után 7-14 nap, single bolus 3-5 nap.",
   "benefits": [
     "Full HPG-axis restart (FSH + LH együtt, NEM csak Leydig-LH mint HCG)",
     "Spermatogenesis-recovery siettetése hosszú-ciklus/hard-suppression után",
@@ -71,20 +71,20 @@ export default {
   ],
   "quality": {
     "pure": [
-      "Menopur 75 IU ampoule (Ferring) — Rx pharma-minőség (EU + USA)",
-      "Repronex 75 IU (Ferring USA generic) — pharma-minőség",
-      "Indiai generikum (Bharat Serums HMG) — pharma-minőség",
-      "UGL HMG — HPLC + immunoassay-tesztelt forrás kötelező (FSH/LH-arány gyakran eltér)",
+      "Menopur 75 IU ampoule (Ferring) – Rx pharma-minőség (EU + USA)",
+      "Repronex 75 IU (Ferring USA generic) – pharma-minőség",
+      "Indiai generikum (Bharat Serums HMG) – pharma-minőség",
+      "UGL HMG – HPLC + immunoassay-tesztelt forrás kötelező (FSH/LH-arány gyakran eltér)",
       "Pergonal historikus: NEM ajánlott modern protokollban (post-2005 expired stock + vCJD theoretical risk)"
     ],
     "caution": [
-      "vCJD-rizikó: theoretical, urinary-extracted from menopausal women — modern Menopur ultra-purified, nincs dokumentált eset",
-      "Multiple-pregnancy-rizikó (female-indikáció only) — férfi-paciens N/A",
+      "vCJD-rizikó: theoretical, urinary-extracted from menopausal women – modern Menopur ultra-purified, nincs dokumentált eset",
+      "Multiple-pregnancy-rizikó (female-indikáció only) – férfi-paciens N/A",
       "FSH-szelektivitás vs HCG-LH-szelektivitás megfontolandó protokoll-tervezésnél"
     ],
     "avoid": [
       "Anamnézisben testicular tumor",
-      "Aktív male-fertility-clinic kontextusban más-cause-os infertilitás (Klinefelter, Y-chromosome deletion — HMG nem hat)",
+      "Aktív male-fertility-clinic kontextusban más-cause-os infertilitás (Klinefelter, Y-chromosome deletion – HMG nem hat)",
       "Hypersensitivity HMG-re vagy alapanyagra",
       "Pre-pubertás férfi"
     ]
@@ -102,17 +102,17 @@ export default {
     {"title": "Maintenance of spermatogenesis in hypogonadotropic hypogonadal men with human chorionic gonadotropin alone", "authors": "Depenbusch M, von Eckardstein S, Simoni M, Nieschlag E.", "journal": "Eur J Endocrinol. 2002;147(5):617-24.", "pmid": "12444893"}
   ],
   "faq": [
-    {"q": "HMG vs HCG — mikor melyik?", "a": "HCG = LH-only-mimic (Leydig-stimulus), HMG = LH + FSH mixed (Leydig + Sertoli stimulus). Klinikai döntés-fa: (1) mid-cycle atrófia-prevention → HCG (olcsóbb, single mechanism elegendő); (2) PCT-blast rövid-axis-restart → HCG; (3) hosszú-ciklus/blast-and-cruise utáni azoospermia-recovery → HMG (FSH-emphasis); (4) full-axis-restart cél → HCG-blast + HMG sequential. Sok klinikai protokoll mindkettőt kombinálja."},
-    {"q": "Menopur vs Pergonal — még elérhető Pergonal?", "a": "Pergonal globálisan kivonva ~2005-2007 között. A klasszikus Pergonal forrás (postmenopauzális vatikáni apácák vizelete) szimbolikusan zárta a korszakot. Modern alternatíva: Menopur (Ferring 2002 EMA, 2005 FDA), magasabb-tisztaságú urinary-extracted termék vCJD-theoretical-risk-csökkentéssel. Klinikai értelemben Menopur ekvivalens vagy jobb mint Pergonal volt."},
+    {"q": "HMG vs HCG – mikor melyik?", "a": "HCG = LH-only-mimic (Leydig-stimulus), HMG = LH + FSH mixed (Leydig + Sertoli stimulus). Klinikai döntés-fa: (1) mid-cycle atrófia-prevention → HCG (olcsóbb, single mechanism elegendő); (2) PCT-blast rövid-axis-restart → HCG; (3) hosszú-ciklus/blast-and-cruise utáni azoospermia-recovery → HMG (FSH-emphasis); (4) full-axis-restart cél → HCG-blast + HMG sequential. Sok klinikai protokoll mindkettőt kombinálja."},
+    {"q": "Menopur vs Pergonal – még elérhető Pergonal?", "a": "Pergonal globálisan kivonva ~2005-2007 között. A klasszikus Pergonal forrás (postmenopauzális vatikáni apácák vizelete) szimbolikusan zárta a korszakot. Modern alternatíva: Menopur (Ferring 2002 EMA, 2005 FDA), magasabb-tisztaságú urinary-extracted termék vCJD-theoretical-risk-csökkentéssel. Klinikai értelemben Menopur ekvivalens vagy jobb mint Pergonal volt."},
     {"q": "vCJD-rizikó valós?", "a": "Theoretical, NEM dokumentált eset. A klasszikus aggály: prion-fehérjék urinary-source-ban való jelenléte (postmenopauzális női kohort). Modern Menopur ultra-purified gyártás (Ferring proprietary process) drasztikusan csökkenti a theoretical-rizikót. 2026-ban a klinikai gyakorlat Menopurt biztonságosnak tekinti; rekombináns FSH-rec (Gonal-F) alternatíva ha a felhasználó kategorikusan elutasít urinary-source-t."},
-    {"q": "FSH-rec-vel kombinálható?", "a": "Igen, ha Sertoli-emphasis erős (azoospermia-recovery). Egy speciális protokoll: HMG (LH + FSH 75/75) + FSH-rec (extra Sertoli-stimulus 75-150 IU). Költséges (~€800-1200/havi), DE long-term-infertilitás esetén indokolt. Mainstream PCT-re overkill — HMG-only vagy HMG + HCG elegendő."}
+    {"q": "FSH-rec-vel kombinálható?", "a": "Igen, ha Sertoli-emphasis erős (azoospermia-recovery). Egy speciális protokoll: HMG (LH + FSH 75/75) + FSH-rec (extra Sertoli-stimulus 75-150 IU). Költséges (~€800-1200/havi), DE long-term-infertilitás esetén indokolt. Mainstream PCT-re overkill – HMG-only vagy HMG + HCG elegendő."}
   ],
   "related": ["hcg-perf", "fsh-rec-perf", "nolvadex", "clomid", "gonadorelin"],
   "doseCalc": {
     "type": "fixed",
     "fixed": {"low": 75, "medium": 112.5, "high": 150},
     "unit": "IU/dose (SC vagy IM, EOD-frequency)",
-    "note": "PCT-protokoll: 75-150 IU EOD × 2-4 hét. Azoospermia-recovery (hosszú-ciklus után): 150 IU EOD × 4-12 hét HCG mid-cycle protokollal kombinálva. SC kényelmesebb (hasi vagy combi szövetbe, 27-30G fecskendő). NEM monotherapy chronic (>6 hét) — Leydig + Sertoli kombinált downregulation rizikó."
+    "note": "PCT-protokoll: 75-150 IU EOD × 2-4 hét. Azoospermia-recovery (hosszú-ciklus után): 150 IU EOD × 4-12 hét HCG mid-cycle protokollal kombinálva. SC kényelmesebb (hasi vagy combi szövetbe, 27-30G fecskendő). NEM monotherapy chronic (>6 hét) – Leydig + Sertoli kombinált downregulation rizikó."
   },
   "bloodwork": {
     "preCycle": {

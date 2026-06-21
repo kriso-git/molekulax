@@ -49,8 +49,8 @@ export default {
     }
   ],
   "mechanism": "Syntetyczna L-T4 jest identyczna z naturalną endogenną T4. W tkankach obwodowych (wątroba, nerki, mięśnie) dejodynazy D1 i D2 konwertują T4 do aktywnej T3 przez 5'-dejodynację. T3 wiąże jądrowe receptory hormonów tarczycy (TR-α, TR-β), gdzie wiąże się z elementami odpowiedzi tarczycy (TRE) i modyfikuje transkrypcję, regulując metabolizm podstawowy, termogenezę, syntezę białek i wiele szlaków metabolicznych.",
-  "legalStatus": "UE/PL: na receptę (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generyki). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generyki). Brak potencjału nadużywania. Ze względu na wąski indeks terapeutyczny (NTI) zmiana marki w obrębie tej samej Rx jest unikana — wymagana wyższa precyzja dawkowania.",
-  "bioavailability": "40-80% (doustnie, na czczo; pokarm i wapń/żelazo zmniejszają — etykieta FDA Synthroid)",
+  "legalStatus": "UE/PL: na receptę (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generyki). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generyki). Brak potencjału nadużywania. Ze względu na wąski indeks terapeutyczny (NTI) zmiana marki w obrębie tej samej Rx jest unikana – wymagana wyższa precyzja dawkowania.",
+  "bioavailability": "40-80% (doustnie, na czczo; pokarm i wapń/żelazo zmniejszają – etykieta FDA Synthroid)",
   "onsetTime": "4-6 weeks (steady-state TSH reduction), 7-10 days (initial symptomatic effect)",
   "halfLife": "6-7 days (allowing once-daily dosing; steady-state in 4-6 weeks)",
   "atcCode": "H03AA01",
@@ -64,7 +64,7 @@ export default {
   ],
   "contraindications": [
     "Nieleczona tyreotoksykoza (nadczynność tarczycy)",
-    "Nieleczona niewydolność nadnerczy (Addisona) — przed lewotyroksyną wymagane uzupełnienie kortykosteroidów",
+    "Nieleczona niewydolność nadnerczy (Addisona) – przed lewotyroksyną wymagane uzupełnienie kortykosteroidów",
     "Ostre MI lub aktywne niedokrwienie (rozważyć; ostrożne rozpoczęcie)",
     "Znana nadwrażliwość na substancję czynną lub substancje pomocnicze"
   ],
@@ -97,7 +97,7 @@ export default {
     "Zmierz TSH (i wolne T4) przed rozpoczęciem, sprawdź nowy steady-state po 6-8 tygodniach",
     "Przyjmuj rano NA CZCZO, 30-60 min PRZED śniadaniem, z wodą",
     "Wapń, żelazo, magnez i multiwitaminy w ODSTĘPIE 4 godzin",
-    "Kawa (espresso) min. 60 min po lewotyroksynie — lub rozważ wieczorne dawkowanie (Bolk 2010)",
+    "Kawa (espresso) min. 60 min po lewotyroksynie – lub rozważ wieczorne dawkowanie (Bolk 2010)",
     "Powolna eskalacja dawki w wieku >65 lat lub chorobie niedokrwiennej serca (25 µg/2-4 tygodnie)"
   ],
   "expectations": [
@@ -118,7 +118,7 @@ export default {
     "pure": [
       "Merck Euthyrox/L-Thyrox (referencja UE/PL), Berlin-Chemie L-Thyroxin (powszechne w PL)",
       "AbbVie Synthroid (USA referencja), Lloyd Pharmaceutical Levoxyl, Pfizer Tirosint (bez laktozy)",
-      "12,5/25/50/75/88/100/112/125/137/150/175/200 µg tabletek — drobne kroki titracji"
+      "12,5/25/50/75/88/100/112/125/137/150/175/200 µg tabletek – drobne kroki titracji"
     ],
     "caution": [
       "Wąski indeks terapeutyczny (NTI): unikaj zmiany marki, preferowana ta sama marka generyczna",
@@ -194,7 +194,7 @@ export default {
     },
     {
       "q": "Dlaczego ważne jest przyjmowanie na czczo i timing kawy?",
-      "a": "Wchłanianie lewotyroksyny optymalne w kwaśnym pH żołądka (<4). Jedzenie, kawa (espresso), dieta wysokobłonnikowa, leki zobojętniające/PPI podnoszą pH żołądka, redukując wchłanianie o 30-40%. Okno 30-60 min na czczo zapewnia maksymalną biodostępność. Alternatywa: przyjąć przed snem 3-4 h po kolacji (Bolk 2010 RCT PMID 21149757) — lepszy compliance dla niektórych."
+      "a": "Wchłanianie lewotyroksyny optymalne w kwaśnym pH żołądka (<4). Jedzenie, kawa (espresso), dieta wysokobłonnikowa, leki zobojętniające/PPI podnoszą pH żołądka, redukując wchłanianie o 30-40%. Okno 30-60 min na czczo zapewnia maksymalną biodostępność. Alternatywa: przyjąć przed snem 3-4 h po kolacji (Bolk 2010 RCT PMID 21149757) – lepszy compliance dla niektórych."
     },
     {
       "q": "Co oznacza supresja TSH u pacjentów DTC?",

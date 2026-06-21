@@ -148,7 +148,7 @@ export default {
     },
     {
       "q": "Mennyi ideig használhatom folyamatosan?",
-      "a": "Az orosz Rx-protokoll 56 napos kúrákat ír elő, utána 2-4 hét off. Hosszabb folyamatos szedés (>3 hónap) nincs formálisan vizsgálva — receptor-downregulation és NGF/BDNF tolerancia-kockázat van."
+      "a": "Az orosz Rx-protokoll 56 napos kúrákat ír elő, utána 2-4 hét off. Hosszabb folyamatos szedés (>3 hónap) nincs formálisan vizsgálva – receptor-downregulation és NGF/BDNF tolerancia-kockázat van."
     }
   ],
   "related": [

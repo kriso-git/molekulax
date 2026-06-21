@@ -49,8 +49,8 @@ export default {
     }
   ],
   "mechanism": "A szintetikus L-T4 azonos a természetes endogén T4-gyel. A perifériás szövetekben (máj, vese, izom) a D1 és D2 deiodinaze-enzimek 5'-deiodálással aktív T3-má alakítják. A T3 a sejtmagi tiroid hormon-receptorra (TR-α, TR-β) kötődik, ahol a tiroid-választható elem-szekvenciákhoz (TRE) kötve transzkripciós módosítást végez, ami az alapanyagcserét, hőtermelést, fehérje-szintézist és számos egyéb metabolikus pathway-t szabályoz.",
-  "legalStatus": "EU/HU: vényköteles (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generikus). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generikus). Nincs visszaélési potenciálja. EU narrow therapeutic index (NTI) miatt brand-csere kerülendő ugyanazon recepten — magasabb dózis-pontosság szükséges.",
-  "bioavailability": "40-80% (orális, éhgyomri; étkezés és kalcium/vas csökkenti — FDA Synthroid label)",
+  "legalStatus": "EU/HU: vényköteles (Euthyrox, Letrox, L-Thyroxin Berlin-Chemie, Synthroid generikus). USA: FDA Rx (Synthroid, Levoxyl, Tirosint, generikus). Nincs visszaélési potenciálja. EU narrow therapeutic index (NTI) miatt brand-csere kerülendő ugyanazon recepten – magasabb dózis-pontosság szükséges.",
+  "bioavailability": "40-80% (orális, éhgyomri; étkezés és kalcium/vas csökkenti – FDA Synthroid label)",
   "onsetTime": "4-6 weeks (steady-state TSH reduction), 7-10 days (initial symptomatic effect)",
   "halfLife": "6-7 days (allowing once-daily dosing; steady-state in 4-6 weeks)",
   "atcCode": "H03AA01",
@@ -64,7 +64,7 @@ export default {
   ],
   "contraindications": [
     "Kezeletlen tireotoxikózis (hipertireózis)",
-    "Kezeletlen mellékvese-elégtelenség (Addison) — Levothyroxin előtt kortikoszteroid pótlás kötelező",
+    "Kezeletlen mellékvese-elégtelenség (Addison) – Levothyroxin előtt kortikoszteroid pótlás kötelező",
     "Akut MI vagy aktív iszkémia (mérlegelendő, óvatos induló dózis)",
     "Ismert hipersenzitivitás a hatóanyag vagy a kötőanyagok iránt"
   ],
@@ -97,7 +97,7 @@ export default {
     "TSH (és free T4) mérése a kezdés előtt, majd 6-8 hét után új steady-state ellenőrzése",
     "Reggel ÉHGYOMORRA bevenni, 30-60 perccel reggeli ELŐTT, vízzel",
     "Kálcium-, vas-, magnézium-tartalmú szerek és multivitaminok 4 órával ELTOLVA",
-    "Kávé (espresso) min. 60 perccel a Levothyroxin után — vagy érdemes este bevenni (Bolk 2010)",
+    "Kávé (espresso) min. 60 perccel a Levothyroxin után – vagy érdemes este bevenni (Bolk 2010)",
     "Dóziseszkaláció lassú 65 év feletteknél vagy iszkémiás szívbetegségben (25 µg/2-4 hét)"
   ],
   "expectations": [
@@ -118,7 +118,7 @@ export default {
     "pure": [
       "Merck Euthyrox/L-Thyrox (EU/HU referencia), Berlin-Chemie L-Thyroxin (HU széles körű)",
       "AbbVie Synthroid (USA reference), Lloyd Pharmaceutical Levoxyl, Pfizer Tirosint (laktóz-mentes)",
-      "12,5/25/50/75/88/100/112/125/137/150/175/200 µg tabletták — finom-titrációs lépések"
+      "12,5/25/50/75/88/100/112/125/137/150/175/200 µg tabletták – finom-titrációs lépések"
     ],
     "caution": [
       "Narrow therapeutic index (NTI): brand-csere kerülendő, ugyanaz a generikus brand jobb",
@@ -194,7 +194,7 @@ export default {
     },
     {
       "q": "Miért fontos az éhgyomri bevétel és a kávé időzítése?",
-      "a": "A Levothyroxin abszorpciója a vékonybél savas közegében optimális (gyomor-pH < 4). Étel, kávé (espresso), magas-rost étrend, és savkötők/PPI-k a gyomor-pH-t emelik, csökkentve az abszorpciót akár 30-40%-kal. A 30-60 perces éhgyomri ablak biztosítja a maximum biológiai elérhetőséget. Alternatíva: este lefekvés előtt 3-4 órával bevenni (Bolk 2010 RCT PMID 21149757) — egyes betegben jobb compliance."
+      "a": "A Levothyroxin abszorpciója a vékonybél savas közegében optimális (gyomor-pH < 4). Étel, kávé (espresso), magas-rost étrend, és savkötők/PPI-k a gyomor-pH-t emelik, csökkentve az abszorpciót akár 30-40%-kal. A 30-60 perces éhgyomri ablak biztosítja a maximum biológiai elérhetőséget. Alternatíva: este lefekvés előtt 3-4 órával bevenni (Bolk 2010 RCT PMID 21149757) – egyes betegben jobb compliance."
     },
     {
       "q": "Mit jelent a TSH-szuppresszió DTC-betegen?",

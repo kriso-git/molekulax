@@ -61,8 +61,8 @@ export default {
     "finasteride",
     "warfarin"
   ],
-  "aromatization": "Yes — CYP19 (aromatase) → estradiol; dose-dependent, suppressible with anti-aromatase (anastrozole) (Bhasin 1996 NEJM)",
-  "hepatotoxicity": "Low — parent steroid, NOT 17α-alkylated; injected ester bypasses hepatic first-pass (Pope-Kanayama 2014)",
+  "aromatization": "Yes – CYP19 (aromatase) → estradiol; dose-dependent, suppressible with anti-aromatase (anastrozole) (Bhasin 1996 NEJM)",
+  "hepatotoxicity": "Low – parent steroid, NOT 17α-alkylated; injected ester bypasses hepatic first-pass (Pope-Kanayama 2014)",
   "wadaStatus": "banned",
   "androgenicRatio": "100:100",
   "bindingAffinity": "AR-affinity reference 100% (all other AAS measured relative to this).",
@@ -109,7 +109,7 @@ export default {
       "Prostate or breast carcinoma (contraindicated)",
       "Severe heart failure, untreated sleep apnea",
       "During planned fatherhood (spermatogenesis suppression)",
-      "Polycythemia (hematocrit >54%) — thrombosis, stroke, MI risk",
+      "Polycythemia (hematocrit >54%) – thrombosis, stroke, MI risk",
       "Untreated hypertension, coronary artery disease, severe heart failure (NYHA III-IV)",
       "Pregnancy and breastfeeding (virilization and teratogenic risk to female fetal development)"
     ]
@@ -260,8 +260,8 @@ export default {
       "halfLife": "~19 óra (Propionát észter; rövidebb mint Enan/Cyp)",
       "halfLifeActive": "~19 óra",
       "detectionWindow": "2-3 hét vizelet (rövidebb mint Enan/Cyp, propionát rövid észter miatt).",
-      "aromatization": "Igen — Test parent szteroid, CYP19 szubsztrát; minden Test-észternél azonos aromatizációs arány.",
-      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; IM bypass-olja a first-pass-t.",
+      "aromatization": "Igen – Test parent szteroid, CYP19 szubsztrát; minden Test-észternél azonos aromatizációs arány.",
+      "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált; IM bypass-olja a first-pass-t.",
       "quality": {
         "pure": [
           "Tiszta halványsárga vagy víztiszta olaj, 10ml fiola, sterilen szűrt",
@@ -324,8 +324,8 @@ export default {
       "halfLife": "10,5 nap (Enantát észter)",
       "halfLifeActive": "~24 óra szabad T (észter-hidrolízis után)",
       "detectionWindow": "3-4 hónap vizelet (hosszú észter).",
-      "aromatization": "Igen — minden Test-észternél azonos arány (CYP19 substrate, Bhasin 1996).",
-      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált; IM bypass.",
+      "aromatization": "Igen – minden Test-észternél azonos arány (CYP19 substrate, Bhasin 1996).",
+      "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált; IM bypass.",
       "quality": {
         "pure": [
           "Tiszta sárgás-barnás olaj (~#f59e0b tónus), 10ml fiola",
@@ -336,7 +336,7 @@ export default {
           "Heti 1-2x injekció (Mon vagy Mon+Thu)"
         ],
         "avoid": [
-          "Rövid (4-6 hét) ciklus NEM hatékony — steady-state 4-5 hét után",
+          "Rövid (4-6 hét) ciklus NEM hatékony – steady-state 4-5 hét után",
           "WADA-tesztelt verseny <4 hónap a tervezett vég után"
         ]
       },
@@ -388,8 +388,8 @@ export default {
       "halfLife": "8 nap (Cypionát észter, ~2 nappal rövidebb mint Enan)",
       "halfLifeActive": "~24 óra szabad T",
       "detectionWindow": "3-4 hónap vizelet.",
-      "aromatization": "Igen — minden Test-észternél azonos arány.",
-      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált.",
+      "aromatization": "Igen – minden Test-észternél azonos arány.",
+      "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált.",
       "quality": {
         "pure": [
           "Tiszta halványsárga olaj, 10ml fiola, kossolajos vehikulum gyakori",
@@ -397,7 +397,7 @@ export default {
         ],
         "caution": [
           "Klinikailag NEM különbözik szignifikánsan az Enantáttól (8 vs 10,5 nap minimális gyakorlati eltérés)",
-          "USA-preferált, EU-ban ritka — UGL piacon gyakran Enantáttal cserélhető"
+          "USA-preferált, EU-ban ritka – UGL piacon gyakran Enantáttal cserélhető"
         ],
         "avoid": [
           "Ugyanaz mint Enantátnál (rövid ciklus nem hatékony, WADA detection 4 hónap)"
@@ -451,8 +451,8 @@ export default {
       "halfLife": "Mixed: 19h (Prop) - 15 nap (Decanoate); átlag effektív t½ ~7-8 nap",
       "halfLifeActive": "~24 óra szabad T (depot-driven)",
       "detectionWindow": "3-4 hónap vizelet (Decanoate komponens miatt).",
-      "aromatization": "Igen — minden komponens aromatizál (Test-bázis).",
-      "hepatotoxicity": "Alacsony — parent szteroid blend, NEM 17α-alkilált.",
+      "aromatization": "Igen – minden komponens aromatizál (Test-bázis).",
+      "hepatotoxicity": "Alacsony – parent szteroid blend, NEM 17α-alkilált.",
       "quality": {
         "pure": [
           "Aspen Sustanon-250 1ml ampulla (Bilbao gyár, holografikus címke)",
@@ -468,7 +468,7 @@ export default {
         ]
       },
       "interactions": [
-        "Anastrozole E2 monitor — Sustanon esetén E2 fluktuációja nagyobb",
+        "Anastrozole E2 monitor – Sustanon esetén E2 fluktuációja nagyobb",
         "PCT utolsó Sustanon-injekció +18-21 nap után indul (Decanoate komponens slow clearance)"
       ],
       "doseCalc": {
@@ -515,15 +515,15 @@ export default {
       "halfLife": "~24 óra (parent T, NEM észter)",
       "halfLifeActive": "~24 óra",
       "detectionWindow": "1-2 hét vizelet (rövidebb mint észteresített formák).",
-      "aromatization": "Igen — parent T, CYP19 substrate.",
-      "hepatotoxicity": "Alacsony — parent szteroid, NEM 17α-alkilált.",
+      "aromatization": "Igen – parent T, CYP19 substrate.",
+      "hepatotoxicity": "Alacsony – parent szteroid, NEM 17α-alkilált.",
       "quality": {
         "pure": [
           "Tiszta vízben suspendált fehér mikrokristályok, 10ml fiola, rázás előtt opálos",
           "Rx-grade: Aquaviron 25mg/ml (USA, ritka)"
         ],
         "caution": [
-          "EXTRA fájdalmas injekció — kristályok fizikailag irritálják az izomszövetet (PIP)",
+          "EXTRA fájdalmas injekció – kristályok fizikailag irritálják az izomszövetet (PIP)",
           "EOD vagy napi injekció szükséges a rövid felezés miatt",
           "Pre-workout boost-ra használt (1-3 órás onset miatt teljesítményt direkt boostol)"
         ],
@@ -533,7 +533,7 @@ export default {
         ]
       },
       "interactions": [
-        "Anastrozole — gyors E2-emelkedés miatt monitor",
+        "Anastrozole – gyors E2-emelkedés miatt monitor",
         "PCT utolsó suspension-injekció +24-48 óra után indul (gyors clearance)"
       ],
       "doseCalc": {

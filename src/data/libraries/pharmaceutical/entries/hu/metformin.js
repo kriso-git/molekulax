@@ -48,7 +48,7 @@ export default {
   ],
   "mechanism": "Az AMPK aktivációján keresztül gátolja a hepatikus glükoneogenezist (PEPCK és G6Pase represszió), csökkenti a mitokondriális komplex I aktivitását (Owen 2000 Biochem J), növeli a perifériás inzulin-érzékenységet és a glükóz-felvételt a vázizomban. Nem stimulálja az inzulin-szekréciót, ezért hipoglikémia-kockázata monoterápiában minimális.",
   "legalStatus": "EU/HU: vényköteles (Glucophage, Siofor, Metfogamma, Adimet). USA: FDA Rx (Glucophage, Fortamet, Glumetza). Nincs visszaélési potenciálja, nem ütemezett szer. PCOS és prediabétesz indikációkban off-label, de széles körű klinikai gyakorlatban.",
-  "bioavailability": "~50-60% (orális, éhgyomri, 500 mg tabletta — FDA Glucophage label)",
+  "bioavailability": "~50-60% (orális, éhgyomri, 500 mg tabletta – FDA Glucophage label)",
   "onsetTime": "1-3 h (single dose), 4-7 days (steady-state HbA1c lowering)",
   "halfLife": "4-9 h (plasma), ~17 h (erythrocyte compartment)",
   "atcCode": "A10BA02",

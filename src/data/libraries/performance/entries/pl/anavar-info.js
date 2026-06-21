@@ -59,8 +59,8 @@ export default {
     "testosterone",
     "tudca"
   ],
-  "aromatization": "Nie — steroid 17α-alkilowany, NIE substrat CYP19; minimalna konwersja estrogenowa (Schänzer 1996 Clin Chem)",
-  "hepatotoxicity": "Wysoka — struktura 17α-alkilowana metabolizowana przez first-pass wątrobowy; zależny od dawki wzrost transaminaz, ryzyko cholestazy (Hartgens-Kuipers 2004)",
+  "aromatization": "Nie – steroid 17α-alkilowany, NIE substrat CYP19; minimalna konwersja estrogenowa (Schänzer 1996 Clin Chem)",
+  "hepatotoxicity": "Wysoka – struktura 17α-alkilowana metabolizowana przez first-pass wątrobowy; zależny od dawki wzrost transaminaz, ryzyko cholestazy (Hartgens-Kuipers 2004)",
   "wadaStatus": "banned",
   "androgenicRatio": "320:24",
   "bindingAffinity": "Powinowactwo do AR umiarkowane; niski potencjał androgenny (24% vs testosteron), wysoka aktywność anaboliczna.",
@@ -228,5 +228,5 @@ export default {
       "purpose": "Cruise z Anavarem nie jest standardem (większość protokołów używa w cyklach 6-8 tygodni). Jeśli jednak długotrwałe użycie, ciągły monitoring markerów wątrobowych jest nieunikniony."
     }
   },
-  "anecdote": "Anavar ma reputację 'łagodnego', ale raporty anegdotyczne ostrzegają, że łagodny nie znaczy słaby — funt za funt może być zaskakująco silny w zmianach sylwetki, zwłaszcza w twardości, pełności i sile. Użytkownicy opisują czyste uczucie wzmocnienia wydajności zamiast dramatycznego efektu hormonalnego. Pompy mogą stać się intensywne, czasem niemal obezwładniające podczas treningu, z powodu wewnątrzkomórkowej wolumizacji. Powracającą obserwacją jest, że przyrosty siły często przekraczają przyrosty masy ciała, co częściowo wyjaśnia, dlaczego sportowcy historycznie go preferowali. Główny kompromis: pomimo łagodnej reputacji Anavar jest znany z miażdżenia HDL i znacznego pogarszania LDL. Jako 17α-alkilowany doustny niesie obciążenie wątroby i przyczynia się do supresji HPTA, nawet gdy 'nie odczuwa się' jako supresyjny. Będąc pochodną DHT, możliwe jest przyspieszone wypadanie włosów u genetycznie predysponowanych użytkowników. Mechanistycznie Anavar funkcjonuje bardziej jako lek partycjonujący składniki odżywcze i zachowujący tkankę niż klasyczny budulec masy, sprawdzając się w redukcji, ale także w fazach suchego budowania."
+  "anecdote": "Anavar ma reputację 'łagodnego', ale raporty anegdotyczne ostrzegają, że łagodny nie znaczy słaby – funt za funt może być zaskakująco silny w zmianach sylwetki, zwłaszcza w twardości, pełności i sile. Użytkownicy opisują czyste uczucie wzmocnienia wydajności zamiast dramatycznego efektu hormonalnego. Pompy mogą stać się intensywne, czasem niemal obezwładniające podczas treningu, z powodu wewnątrzkomórkowej wolumizacji. Powracającą obserwacją jest, że przyrosty siły często przekraczają przyrosty masy ciała, co częściowo wyjaśnia, dlaczego sportowcy historycznie go preferowali. Główny kompromis: pomimo łagodnej reputacji Anavar jest znany z miażdżenia HDL i znacznego pogarszania LDL. Jako 17α-alkilowany doustny niesie obciążenie wątroby i przyczynia się do supresji HPTA, nawet gdy 'nie odczuwa się' jako supresyjny. Będąc pochodną DHT, możliwe jest przyspieszone wypadanie włosów u genetycznie predysponowanych użytkowników. Mechanistycznie Anavar funkcjonuje bardziej jako lek partycjonujący składniki odżywcze i zachowujący tkankę niż klasyczny budulec masy, sprawdzając się w redukcji, ale także w fazach suchego budowania."
 }

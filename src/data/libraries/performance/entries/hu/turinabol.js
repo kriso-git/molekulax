@@ -28,7 +28,7 @@ export default {
   "accentColor": "#dc2626",
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Oral-Turinabol (Chlorodehydromethyltestosterone, CDMT), 17α-alkilált klorózott Dianabol-analóg orális AAS. Jenapharm 1962, hírhedten az 1968-1989 közötti NDK állami dopping-program (\"Komplex 08\") fő szere. Hosszú-távú detection-metabolitok miatt notórius.",
-  "description": "A Turinabol (4-chlorodehydromethyltestosterone, CDMT) egy 17α-alkilált klorózott Dianabol-strukturális analóg orális AAS, amelyet 1962-ben Jenapharm (Kelet-Németország, Jena) szintetizált, és 1965-ben Oral-Turinabol néven Rx-szerként forgalmazott. Az NDK állami dopping-program (\"Staatsplanthema 14.25\", Stasi-fedőnévvel \"Komplex 08\", 1968-1989) FŐ szere lett, ~10,000+ NDK-sportoló kapott Turinabolt tudtán kívül vagy iratlanul; az 1990-es Stasi-archívumok kinyitása dokumentálja a kórokat (májkárosodás, kardiomyopátia, virilizáció női atlétáknál, neonatális rendellenességek a dopping-anyák gyermekeinél). Anabolikus:androgén arány 53:6 — magas anabolikus, gyakorlatilag nulla androgén (\"szárazabb Anavar\"). NEM aromatizál (4-kloro-szubsztitúció miatt NEM CYP19 szubsztrát). 17α-metil → mérsékelt hepatotoxicitás (a 4-kloro csökkenti, az Anavarhez hasonló). Schänzer 2006 (PMID 17042466) extra-hosszú detection-metabolitokat (6β-OH-CDMT és társai) ír le — vizeletből 12-18 hónap detection lehetséges, ami a 2016-os Olimpia (Rio) MOB-revízió alapja: 100+ atléta retrospektíve diszkvalifikálva 2008-2012-es teszt-újraértékelés után. WADA tiltott egész évben.",
+  "description": "A Turinabol (4-chlorodehydromethyltestosterone, CDMT) egy 17α-alkilált klorózott Dianabol-strukturális analóg orális AAS, amelyet 1962-ben Jenapharm (Kelet-Németország, Jena) szintetizált, és 1965-ben Oral-Turinabol néven Rx-szerként forgalmazott. Az NDK állami dopping-program (\"Staatsplanthema 14.25\", Stasi-fedőnévvel \"Komplex 08\", 1968-1989) FŐ szere lett, ~10,000+ NDK-sportoló kapott Turinabolt tudtán kívül vagy iratlanul; az 1990-es Stasi-archívumok kinyitása dokumentálja a kórokat (májkárosodás, kardiomyopátia, virilizáció női atlétáknál, neonatális rendellenességek a dopping-anyák gyermekeinél). Anabolikus:androgén arány 53:6 – magas anabolikus, gyakorlatilag nulla androgén (\"szárazabb Anavar\"). NEM aromatizál (4-kloro-szubsztitúció miatt NEM CYP19 szubsztrát). 17α-metil → mérsékelt hepatotoxicitás (a 4-kloro csökkenti, az Anavarhez hasonló). Schänzer 2006 (PMID 17042466) extra-hosszú detection-metabolitokat (6β-OH-CDMT és társai) ír le – vizeletből 12-18 hónap detection lehetséges, ami a 2016-os Olimpia (Rio) MOB-revízió alapja: 100+ atléta retrospektíve diszkvalifikálva 2008-2012-es teszt-újraértékelés után. WADA tiltott egész évben.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -62,12 +62,12 @@ export default {
     "testosterone",
     "alcohol"
   ],
-  "aromatization": "Nem — 4-kloro-szubsztitúció CYP19-binding gátlás; klinikailag E2-emelkedés gyakorlatilag nulla (Pope-Kanayama 2014 PMID 24423981, Schänzer 2006 PMID 17042466)",
-  "hepatotoxicity": "Mérsékelt — 17α-metil-csoport hepatikus first-pass-stressz, DE a 4-kloro csökkenti a hepatikus toxicitást más 17α-alkilált AAS-ekkel (Dianabol, Anadrol) szemben. ALT/AST 2-3x emelkedés gyakori 6+ hetes ciklusban, klinikailag enyhébb mint a Dianabol vagy Anadrol (Hartgens-Kuipers 2004 PMID 15233599)",
+  "aromatization": "Nem – 4-kloro-szubsztitúció CYP19-binding gátlás; klinikailag E2-emelkedés gyakorlatilag nulla (Pope-Kanayama 2014 PMID 24423981, Schänzer 2006 PMID 17042466)",
+  "hepatotoxicity": "Mérsékelt – 17α-metil-csoport hepatikus first-pass-stressz, DE a 4-kloro csökkenti a hepatikus toxicitást más 17α-alkilált AAS-ekkel (Dianabol, Anadrol) szemben. ALT/AST 2-3x emelkedés gyakori 6+ hetes ciklusban, klinikailag enyhébb mint a Dianabol vagy Anadrol (Hartgens-Kuipers 2004 PMID 15233599)",
   "wadaStatus": "banned",
   "androgenicRatio": "53:6",
   "bindingAffinity": "Közepes-magas AR-affinitás; gyakorlatilag nulla 5α-reduktáz substrate → NEM DHT-aktivitás; nincs scalp- vagy prosztata-androgén-rizikó.",
-  "detectionWindow": "EXTRA HOSSZÚ — vizeletből 12-18 hónap (Schänzer 2006 6β-OH-CDMT és 3α-hidroxi-3-on metabolitok). 2016-os Rio Olimpia retrospektív teszt-revízió 100+ atléta diszkvalifikálta 2008-2012-es újraértékelés alapján. WADA-akkreditált LC-MS/MS.",
+  "detectionWindow": "EXTRA HOSSZÚ – vizeletből 12-18 hónap (Schänzer 2006 6β-OH-CDMT és 3α-hidroxi-3-on metabolitok). 2016-os Rio Olimpia retrospektív teszt-revízió 100+ atléta diszkvalifikálta 2008-2012-es újraértékelés alapján. WADA-akkreditált LC-MS/MS.",
   "benefits": [
     "Tiszta lean mass-gyarapodás (3-5 kg 6-8 hét alatt, MINIMÁLIS víz-retencióval)",
     "NEM aromatizál → nincs gynecomastia, nincs víz-retenció",
@@ -76,7 +76,7 @@ export default {
     "Stamina-növekedés sub-elite endurance-sportokban dokumentált (NDK-evezős, atlétika)"
   ],
   "quickStart": [
-    "EXTRA HOSSZÚ DETECTION — 12-18 hónap vizelet; WADA-tesztelt sportoló esetén minimum 18 hónap off-season fade-out",
+    "EXTRA HOSSZÚ DETECTION – 12-18 hónap vizelet; WADA-tesztelt sportoló esetén minimum 18 hónap off-season fade-out",
     "Hepatikus monitor 4 hetente (mérsékelt, de 17α-metil)",
     "TUDCA 500 mg/nap + NAC 1200 mg/nap ajánlott",
     "Tipikus dózis 30-60 mg/nap, 6-8 hét ciklus",
@@ -99,10 +99,10 @@ export default {
   "quality": {
     "pure": [
       "Eredeti Jenapharm Oral-Turinabol 5 mg tabletta (1962-1994, ma collectible)",
-      "UGL tabletta: HPLC-tesztelt forrás kötelező — Turinabol gyakran hamisított (Anavar/Dianabol helyettesítés)"
+      "UGL tabletta: HPLC-tesztelt forrás kötelező – Turinabol gyakran hamisított (Anavar/Dianabol helyettesítés)"
     ],
     "caution": [
-      "EXTRA hosszú detection window — sportoló-kockázat magas",
+      "EXTRA hosszú detection window – sportoló-kockázat magas",
       "Hepatotoxicitás (ALT/AST 2-3x emelkedés)",
       "Lipid-zavar: HDL csökkenés mérsékelt",
       "Hangulat-változás esetén (depresszió, irritabilitás) leállítás"
@@ -168,7 +168,7 @@ export default {
     },
     {
       "q": "Női használat?",
-      "a": "Az NDK-történelem szerint női atléták (Heidi Krieger Olimpia-érmes súlyemelő, jó dokumentált eset) tudtán kívül kaptak Turinabolt 10-20 mg/nap dózisban — a virilizációs mellékhatások (irreverzibilis hangmélyülés, klitorisz-hipertrófia, hirsutizmus) ESETÉN. Krieger 1997-ben nemi átalakító műtéten esett át (Andreas Krieger). A klinikai tanulság: bár a Turinabol alacsony androgén-arányú (6 vs 100 testosterone), magasabb dózisnál (>10 mg/nap) és hosszabb expozíciónál a virilizáció IRREVERZIBILIS lehet. Egyetlen biztos női-protokoll: ne használd."
+      "a": "Az NDK-történelem szerint női atléták (Heidi Krieger Olimpia-érmes súlyemelő, jó dokumentált eset) tudtán kívül kaptak Turinabolt 10-20 mg/nap dózisban – a virilizációs mellékhatások (irreverzibilis hangmélyülés, klitorisz-hipertrófia, hirsutizmus) ESETÉN. Krieger 1997-ben nemi átalakító műtéten esett át (Andreas Krieger). A klinikai tanulság: bár a Turinabol alacsony androgén-arányú (6 vs 100 testosterone), magasabb dózisnál (>10 mg/nap) és hosszabb expozíciónál a virilizáció IRREVERZIBILIS lehet. Egyetlen biztos női-protokoll: ne használd."
     },
     {
       "q": "Stamina-növekedés evezős sportokban?",
@@ -218,5 +218,5 @@ export default {
       "purpose": "Turinabol kizárólag ciklikus használatra ajánlott. Hosszú cruise hepatotoxikus + WADA-detection-rizikó."
     }
   },
-  "anecdote": "A Turinabolt gyakran háttérbe szorítja az Anadrol vagy a Dianabol, de az anekdotikus beszámolók pontosan azért értékelik, mert kevésbé feltűnő. A felhasználók jellemzően egyenletesnek, hatékonynak és megtévesztően produktívnak írják le a haladást — a változások lassan halmozódnak, nem robbannak. Az erő hajlamos emelkedni masszív testsúly-ugrások nélkül, ami központi a hírnevében. Erős teljesítményátvitellel is társítják: nem csak más a megjelenés, hanem jobban mozog, jobban regenerálódik és fenntartja a teljesítményt. Néhány felhasználó inkább 'sovány-szövet optimalizálónak' látja, mint klasszikus tömegnövelő szernek. Mivel nem aromatizálódik, a vizuális jellemzően keményebb és szárazabb, bár a glikogénben gazdagabb vegyületek drámai teltsége nélkül. Az enyhébb profil ellenére a Turinabol negatívan befolyásolhatja a lipideket, a májenzimeket, a vérnyomást és a természetes tesztoszteron-termelést — ezeket gyakran alábecsülik, mert a vegyület simábbnak érződik. 17α-alkilált orálisként a máj-stressz továbbra is releváns; az 'enyhe' nem összetévesztendő az ártalmatlannal."
+  "anecdote": "A Turinabolt gyakran háttérbe szorítja az Anadrol vagy a Dianabol, de az anekdotikus beszámolók pontosan azért értékelik, mert kevésbé feltűnő. A felhasználók jellemzően egyenletesnek, hatékonynak és megtévesztően produktívnak írják le a haladást – a változások lassan halmozódnak, nem robbannak. Az erő hajlamos emelkedni masszív testsúly-ugrások nélkül, ami központi a hírnevében. Erős teljesítményátvitellel is társítják: nem csak más a megjelenés, hanem jobban mozog, jobban regenerálódik és fenntartja a teljesítményt. Néhány felhasználó inkább 'sovány-szövet optimalizálónak' látja, mint klasszikus tömegnövelő szernek. Mivel nem aromatizálódik, a vizuális jellemzően keményebb és szárazabb, bár a glikogénben gazdagabb vegyületek drámai teltsége nélkül. Az enyhébb profil ellenére a Turinabol negatívan befolyásolhatja a lipideket, a májenzimeket, a vérnyomást és a természetes tesztoszteron-termelést – ezeket gyakran alábecsülik, mert a vegyület simábbnak érződik. 17α-alkilált orálisként a máj-stressz továbbra is releváns; az 'enyhe' nem összetévesztendő az ártalmatlannal."
 }

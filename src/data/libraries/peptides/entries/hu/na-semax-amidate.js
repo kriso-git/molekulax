@@ -90,7 +90,7 @@ export default {
           "5 mg lyophilized vial + 5 ml steril bakteriosztatikus víz",
           "Lassan az üvegfalra injektáld a vizet, óvatosan forgasd (NE rázd)",
           "Töltsd át steril orrspray-flakonba (50 μl/puff pumpa, ~50 μg/puff)",
-          "Koncentráció: 1000 μg/ml — 1 puff = ~50 μg, 4–12 puff/nap dózistól függően",
+          "Koncentráció: 1000 μg/ml – 1 puff = ~50 μg, 4–12 puff/nap dózistól függően",
           "Tárolás: hűtőben (2–8°C), max 28 nap; használat előtt primingolj 2–3 üres puffot"
         ]
       }

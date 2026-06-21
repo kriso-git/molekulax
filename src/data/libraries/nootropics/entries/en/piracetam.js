@@ -128,7 +128,7 @@ export default {
       "pmid": "10338109"
     },
     {
-      "title": "Piracetam — an old drug with novel properties? Updated review",
+      "title": "Piracetam – an old drug with novel properties? Updated review",
       "authors": "Winblad B.",
       "journal": "CNS Drug Rev. 2005;11(2):169-182.",
       "pmid": "20166767"
@@ -153,7 +153,7 @@ export default {
     },
     {
       "q": "What dose for myoclonus?",
-      "a": "Clinically 7-24 g/day, occasionally up to 45 g (Koskiniemi 1998). Always under neurologist supervision — this is not nootropic use but a rare neurological indication."
+      "a": "Clinically 7-24 g/day, occasionally up to 45 g (Koskiniemi 1998). Always under neurologist supervision – this is not nootropic use but a rare neurological indication."
     }
   ],
   "related": [

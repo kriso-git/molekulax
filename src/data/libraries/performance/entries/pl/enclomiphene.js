@@ -1,4 +1,4 @@
-// Enclomiphene (Androxal) — czysty trans-izomer klomifenu, kandydat Repros
+// Enclomiphene (Androxal) – czysty trans-izomer klomifenu, kandydat Repros
 // Therapeutics z badania Phase III hipogonadyzmu 2014-2016. FDA Complete
 // Response Letter 2016, nigdy nie złożone ponownie. US compounding +
 // UE research-pharm UGL dostępne. Źródła: Wiehle 2014 PMID 24913480,
@@ -27,8 +27,8 @@ export default {
   "image": "/performance/tablet-pile-white.png",
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
-  "shortDesc": "Czysty trans-izomer klomifenu — kandydat Repros Therapeutics z badania Phase III hipogonadyzmu 2014-2016. Czystszy profil SERM niż Clomid (bez zuklomifenu), ALE FDA CRL 2016 → nie zatwierdzony. Dostępne przez US-compounding + UE research-pharm.",
-  "description": "Enclomiphene (Androxal) jest czystym trans-izomerem cytrynianu klomifenu (Clomidu) — eliminując połówkę zuklomifenu, która jest główną przyczyną zaburzeń nastroju Clomidu. Opracowane przez Repros Therapeutics w latach 2007-2014 do doustnego leczenia wtórnego hipogonadyzmu u mężczyzn, badania Phase III ZA-301 + ZA-302 (Wiehle 2014 PMID 24913480, Wiehle 2018 PMID 30015376) wykazały skuteczność przy dawce 12,5-25 mg/dzień (T <300 ng/dL → T >450 ng/dL) + zachowanie spermatogenezy. Pierwotny punkt końcowy Phase III (T >450 ng/dL) osiągnięty w obu ramionach — niskiej i wysokiej dawki; jednak FDA Complete Response Letter (CRL) z 2016 zażądał dodatkowych danych skuteczności + bezpieczeństwa, a Repros — z powodu trudności finansowych — nigdy nie złożył ponownie (bankructwo 2018). W 2026 Enclomiphene NIE jest zatwierdzony przez FDA; dostępność przez US-compounding pharmacy + UE research-pharmacy, formulacje UGL liquid także istnieją. Znaczenie kliniczne dla PCT po AAS: czystszy profil nastroju niż Clomid, zachowuje spermatogenezę (vs zastępcza terapia testosteronem która ją tłumi). Off-label alternatywa TRT w wtórnym hipogonadyzmie męskim (cel zachowania płodności).",
+  "shortDesc": "Czysty trans-izomer klomifenu – kandydat Repros Therapeutics z badania Phase III hipogonadyzmu 2014-2016. Czystszy profil SERM niż Clomid (bez zuklomifenu), ALE FDA CRL 2016 → nie zatwierdzony. Dostępne przez US-compounding + UE research-pharm.",
+  "description": "Enclomiphene (Androxal) jest czystym trans-izomerem cytrynianu klomifenu (Clomidu) – eliminując połówkę zuklomifenu, która jest główną przyczyną zaburzeń nastroju Clomidu. Opracowane przez Repros Therapeutics w latach 2007-2014 do doustnego leczenia wtórnego hipogonadyzmu u mężczyzn, badania Phase III ZA-301 + ZA-302 (Wiehle 2014 PMID 24913480, Wiehle 2018 PMID 30015376) wykazały skuteczność przy dawce 12,5-25 mg/dzień (T <300 ng/dL → T >450 ng/dL) + zachowanie spermatogenezy. Pierwotny punkt końcowy Phase III (T >450 ng/dL) osiągnięty w obu ramionach – niskiej i wysokiej dawki; jednak FDA Complete Response Letter (CRL) z 2016 zażądał dodatkowych danych skuteczności + bezpieczeństwa, a Repros – z powodu trudności finansowych – nigdy nie złożył ponownie (bankructwo 2018). W 2026 Enclomiphene NIE jest zatwierdzony przez FDA; dostępność przez US-compounding pharmacy + UE research-pharmacy, formulacje UGL liquid także istnieją. Znaczenie kliniczne dla PCT po AAS: czystszy profil nastroju niż Clomid, zachowuje spermatogenezę (vs zastępcza terapia testosteronem która ją tłumi). Off-label alternatywa TRT w wtórnym hipogonadyzmie męskim (cel zachowania płodności).",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -51,7 +51,7 @@ export default {
       "value": "NIE zatwierdzony przez FDA (CRL 2016), US-compounding + UE research-pharm + UGL"
     }
   ],
-  "mechanism": "Enclomiphene jest czystym trans-izomerem (E-izomer) klomifenu — strukturalnie pozbawiony połówki cis-zuklomifenu, która napędza agonizm ER-α w OUN i wynikającą labilność nastroju Clomidu. Zapewnia tylko aktywność antagonistyczną ER w przysadce i podwzgórzu → disinhibicja GnRH → wzrost LH/FSH → odbudowa testikularnego Test + zachowanie spermatogenezy. Z powodu czystego profilu wskazania zachowania płodności (alternatywa TRT we wtórnym hipogonadyzmie męskim) preferują go nad Clomidem. Nie inhibitor aromatazy, NIE AAS.",
+  "mechanism": "Enclomiphene jest czystym trans-izomerem (E-izomer) klomifenu – strukturalnie pozbawiony połówki cis-zuklomifenu, która napędza agonizm ER-α w OUN i wynikającą labilność nastroju Clomidu. Zapewnia tylko aktywność antagonistyczną ER w przysadce i podwzgórzu → disinhibicja GnRH → wzrost LH/FSH → odbudowa testikularnego Test + zachowanie spermatogenezy. Z powodu czystego profilu wskazania zachowania płodności (alternatywa TRT we wtórnym hipogonadyzmie męskim) preferują go nad Clomidem. Nie inhibitor aromatazy, NIE AAS.",
   "legalStatus": "USA: NIE zatwierdzony przez FDA (Repros Phase III Complete Response Letter 2016, nigdy nie złożone ponownie). Dostępne przez compounding pharmacy off-label. UE: NIE zatwierdzony przez EMA. Dostępność przez research-pharmacy + UGL. WADA: S4 SERM (zabroniony w zawodach i poza zawodami dla mężczyzn).",
   "onsetTime": "Wzrost LH 24-72 h, odbudowa Test 2-4 tygodnie",
   "halfLife": "~5 dni",
@@ -62,8 +62,8 @@ export default {
     "raloxifene",
     "hcg-perf"
   ],
-  "aromatization": "Nie aromatyzuje — selektywnie blokuje ER-α w przysadce, NIE aromatazę. Klinicznie E2 nieznacznie wzrasta (LH↑ → testikularny E2↑), ale czystszy profil niż Clomid (brak intrinsicznego agonisty zuklomifenu).",
-  "hepatotoxicity": "Niska — nie 17α-alkilowany, niesteroidowy. Częstość działań niepożądanych w bazie badań <1% wzrost ALT/AST (Wiehle 2014 + Kim 2016 Phase III). Tolerancja wątrobowa doskonała.",
+  "aromatization": "Nie aromatyzuje – selektywnie blokuje ER-α w przysadce, NIE aromatazę. Klinicznie E2 nieznacznie wzrasta (LH↑ → testikularny E2↑), ale czystszy profil niż Clomid (brak intrinsicznego agonisty zuklomifenu).",
+  "hepatotoxicity": "Niska – nie 17α-alkilowany, niesteroidowy. Częstość działań niepożądanych w bazie badań <1% wzrost ALT/AST (Wiehle 2014 + Kim 2016 Phase III). Tolerancja wątrobowa doskonała.",
   "wadaStatus": "restricted",
   "androgenicRatio": "N/A (nie AAS, SERM)",
   "bindingAffinity": "Powinowactwo kompetycyjne do ER-α umiarkowane-wysokie (~10 nM Ki). Czystszy profil niż Clomid (brak akumulacji zuklomifenu).",
@@ -82,12 +82,12 @@ export default {
     "Dawkowanie poranne (naśladuje endogenny wzorzec dobowy)",
     "Badania krwi: Total/Free Test, LH, FSH, E2 baseline + 4 tygodnie + 12 tygodni",
     "Dostępność 2026: US-compounding (compounding pharmacy na Rx), UE research-pharmacy + UGL liquid",
-    "Wysokie ryzyko UGL — HPLC-testowane źródło obowiązkowe (często sprzedawane jako 'enclomiphene' ale faktycznie klomifen mixed-izomer)"
+    "Wysokie ryzyko UGL – HPLC-testowane źródło obowiązkowe (często sprzedawane jako 'enclomiphene' ale faktycznie klomifen mixed-izomer)"
   ],
   "expectations": [
     {
       "label": "Tygodnie 1-2",
-      "body": "Wzrost LH/FSH mierzalny, wczesna odbudowa Test. Profil nastroju czysty — BRAK 'emocjonalnej' fluktuacji w stylu Clomidu."
+      "body": "Wzrost LH/FSH mierzalny, wczesna odbudowa Test. Profil nastroju czysty – BRAK 'emocjonalnej' fluktuacji w stylu Clomidu."
     },
     {
       "label": "Tygodnie 3-4",
@@ -104,27 +104,27 @@ export default {
   ],
   "quality": {
     "pure": [
-      "US-compounding pharmacy (BodyLogicMD, OptimaleMD, Defy Medical) — compounded liquid lub tabletki na Rx, ~$200/miesiąc",
-      "UE research-pharmacy (peptide CDMO) — etykietowanie research-chemical, nie do użytku klinicznego",
-      "UGL liquid 'enclomiphene' — HPLC-testowane źródło OBOWIĄZKOWE, często hybryda klomifenu mixed-izomer",
-      "Oryginalny Repros Androxal — już niedostępny (po bankructwie 2018, brak restartu licencji marki)"
+      "US-compounding pharmacy (BodyLogicMD, OptimaleMD, Defy Medical) – compounded liquid lub tabletki na Rx, ~$200/miesiąc",
+      "UE research-pharmacy (peptide CDMO) – etykietowanie research-chemical, nie do użytku klinicznego",
+      "UGL liquid 'enclomiphene' – HPLC-testowane źródło OBOWIĄZKOWE, często hybryda klomifenu mixed-izomer",
+      "Oryginalny Repros Androxal – już niedostępny (po bankructwie 2018, brak restartu licencji marki)"
     ],
     "caution": [
       "Długoterminowe dane bezpieczeństwa ograniczone z powodu statusu FDA-CRL vs Nolvadex/Clomid (60+ lat)",
       "Skutki wzroku rzadkie, ale teoretycznie te same co Clomid (efekt klasy zachowany nawet w czystym izomerze)",
-      "Ograniczona dostępność — US-compounding tylko dla pacjentów Rx"
+      "Ograniczona dostępność – US-compounding tylko dla pacjentów Rx"
     ],
     "avoid": [
       "Aktywna choroba wątroby (względne przeciwwskazanie)",
       "Predyspozycja psychiatryczna (mniej ciężka niż przy Clomidzie, ale ostrożna)",
-      "Współczesna ciąża (Pregnancy Category X — partnerka)",
-      "Wysoka dawka (>50 mg/dzień) — skrajnie rzadkie, brak dowodów"
+      "Współczesna ciąża (Pregnancy Category X – partnerka)",
+      "Wysoka dawka (>50 mg/dzień) – skrajnie rzadkie, brak dowodów"
     ]
   },
   "interactions": [
-    "Zmiana z Clomidu — wielu użytkowników PCT 'Clomid → Enclomiphene' zmieniło z powodu profilu nastroju",
+    "Zmiana z Clomidu – wielu użytkowników PCT 'Clomid → Enclomiphene' zmieniło z powodu profilu nastroju",
     "HCG-bridge: HCG → Enclomiphene sekwencyjny, skuteczna kombinacja",
-    "Zastępcza testosteronu (TRT) — alternatywa, NIE łączona (pokrywający się mechanizm)",
+    "Zastępcza testosteronu (TRT) – alternatywa, NIE łączona (pokrywający się mechanizm)",
     "Współpodanie z AI: NIE zalecane",
     "Alkohol: minimalny efekt, umiarkowane spożycie zalecane"
   ],
@@ -160,15 +160,15 @@ export default {
       "a": "Repros Therapeutics złożył dane Phase III ZA-301 + ZA-302 w 2014 (T <300 → T >450 ng/dL pierwotny punkt końcowy osiągnięty zarówno przy 12,5 jak i 25 mg/dzień). FDA Complete Response Letter (CRL) 2016 zażądał dodatkowych danych skuteczności + bezpieczeństwa (długoterminowe dane kardio, lipidowe, płodności). Repros z powodu trudności finansowych nigdy nie złożył ponownie; bankructwo 2018. Cząsteczka pozostaje skuteczna ale jest regulacyjnym sierotą."
     },
     {
-      "q": "Enclomiphene vs Clomid — czy warto płacić 10x więcej?",
-      "a": "Klinicznie czystszy profil — mniej labilności nastroju, mniej skutków wzroku. ALE: $200/miesiąc compounding vs $5/opakowanie Clomid. Uzasadnienia: (1) nietolerancja Clomidu z powodu zaburzeń nastroju; (2) długoterminowa alternatywa TRT z celem zachowania płodności; (3) akcent czystego profilu PCT po AAS. Dla standardowego krótkiego PCT Clomid jest bardziej opłacalny."
+      "q": "Enclomiphene vs Clomid – czy warto płacić 10x więcej?",
+      "a": "Klinicznie czystszy profil – mniej labilności nastroju, mniej skutków wzroku. ALE: $200/miesiąc compounding vs $5/opakowanie Clomid. Uzasadnienia: (1) nietolerancja Clomidu z powodu zaburzeń nastroju; (2) długoterminowa alternatywa TRT z celem zachowania płodności; (3) akcent czystego profilu PCT po AAS. Dla standardowego krótkiego PCT Clomid jest bardziej opłacalny."
     },
     {
       "q": "Dostępność w 2026?",
-      "a": "USA: compounding pharmacy na Rx (BodyLogicMD, OptimaleMD, Defy Medical, Marek Health, Empower Pharmacy). UE: research-pharmacy + UGL liquid (etykietowanie research-chemical). Niedostępne w aptekach HU/PL. Wysokie ryzyko UGL — często klomifen mixed-izomer hybrydowo sprzedawany jako 'enclomiphene'; HPLC-testowane źródło obowiązkowe."
+      "a": "USA: compounding pharmacy na Rx (BodyLogicMD, OptimaleMD, Defy Medical, Marek Health, Empower Pharmacy). UE: research-pharmacy + UGL liquid (etykietowanie research-chemical). Niedostępne w aptekach HU/PL. Wysokie ryzyko UGL – często klomifen mixed-izomer hybrydowo sprzedawany jako 'enclomiphene'; HPLC-testowane źródło obowiązkowe."
     },
     {
-      "q": "Długoterminowa alternatywa TRT — bezpieczna?",
+      "q": "Długoterminowa alternatywa TRT – bezpieczna?",
       "a": "Dane Phase III Wiehle 2018 obejmują do 3 miesięcy; długoterminowe (>1 rok) dane bezpieczeństwa klinicznego ograniczone. Hipotetyczna przewaga vs TRT: zachowanie spermatogenezy, zachowanie naturalnej produkcji intra-testikularnego testosteronu. Wady: długoterminowy efekt modulacji ER na kości, kardio, prostatę nie do końca znany. Kontekst off-label wymaga nadzoru medycznego (badania krwi co 3 miesiące)."
     }
   ],
@@ -210,9 +210,9 @@ export default {
     "cruise": {
       "label": "Długoterminowa alternatywa TRT (off-label, nadzór medyczny)",
       "timing": "Badania krwi co 3 miesiące dla użycia chronicznego",
-      "markers": "Pełny panel HPG, hematokryt (NIE wzrasta znacząco — Enclomiphene zachowuje naturalną produkcję), PSA (starsi mężczyźni), DEXA (gęstość kości długoterminowo).",
+      "markers": "Pełny panel HPG, hematokryt (NIE wzrasta znacząco – Enclomiphene zachowuje naturalną produkcję), PSA (starsi mężczyźni), DEXA (gęstość kości długoterminowo).",
       "purpose": "Długoterminowe monitorowanie bezpieczeństwa + skuteczności."
     }
   },
-  "anecdote": "Enklomifen jest opisywany w raportach anegdotycznych jako solidna opcja dla użytkowników poszukujących zwiększenia endogennej produkcji testosteronu. Nie jest ogólnie pozycjonowany jako zamiennik AAS, ale ma określoną niszę. W porównaniu do Klomifenu, Enklomifen jest 'czystszym' izomerem — zapewniając efekt podnoszący testosteron bez większości emocjonalnych lub związanych z widzeniem skutków ubocznych związanych z Klomidem (który zawiera izomer zuklomifenu). Użytkownicy zwykle zgłaszają lepszą energię, zwiększone libido, lepszy nastrój i inne efekty związane z testosteronem. Nie tłumi znacząco produkcji endogennej, ale jego skuteczność zależy od funkcjonalnej HPTA — wzmacnia, a nie zastępuje. U mocno stłumionych użytkowników może potrzebować czasu, aby zadziałać, lub być mniej skuteczny niż HCG. Ogólnie doniesienia społeczności uważają go za jedną z bardziej korzystnych opcji do naturalnego podnoszenia testosteronu bez wywoływania wyłączenia. Podawany doustnie; protokoły są dostosowywane na podstawie badań krwi i objawów."
+  "anecdote": "Enklomifen jest opisywany w raportach anegdotycznych jako solidna opcja dla użytkowników poszukujących zwiększenia endogennej produkcji testosteronu. Nie jest ogólnie pozycjonowany jako zamiennik AAS, ale ma określoną niszę. W porównaniu do Klomifenu, Enklomifen jest 'czystszym' izomerem – zapewniając efekt podnoszący testosteron bez większości emocjonalnych lub związanych z widzeniem skutków ubocznych związanych z Klomidem (który zawiera izomer zuklomifenu). Użytkownicy zwykle zgłaszają lepszą energię, zwiększone libido, lepszy nastrój i inne efekty związane z testosteronem. Nie tłumi znacząco produkcji endogennej, ale jego skuteczność zależy od funkcjonalnej HPTA – wzmacnia, a nie zastępuje. U mocno stłumionych użytkowników może potrzebować czasu, aby zadziałać, lub być mniej skuteczny niż HCG. Ogólnie doniesienia społeczności uważają go za jedną z bardziej korzystnych opcji do naturalnego podnoszenia testosteronu bez wywoływania wyłączenia. Podawany doustnie; protokoły są dostosowywane na podstawie badań krwi i objawów."
 }

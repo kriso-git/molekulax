@@ -27,7 +27,7 @@ export default {
   "accentColor": "#ef4444",
   "tagColor": "rgba(239,68,68,0.18)",
   "shortDesc": "Rekombináns humán eritropoetin (rhEPO). Vörösvértest-termelés stimuláló, endurance-sportokban WADA-tiltott.",
-  "description": "A rekombináns humán eritropoetin (rhEPO, Epoetin alfa/beta, Procrit, Eprex, Aranesp) a természetes vesetermelt EPO biológiailag azonos formája. FDA-engedélyezett krónikus vesebetegség, kemoterápia-okozta anémia és prematuritás-anémia indikációkban. Endurance-sportokban (kerékpározás, állóképességi atlétika) off-label használat: a hematokritot emeli, anekdotikusan a VO2max +8-10%-ot (Lundby 2011), de placebo-kontrollált BLINDED RCT-k +1-3%-os realisztikus performance-gain-t mutatnak (Heuberger 2013). WADA-tiltott, és a vérképzési stimuláció jelentős thromboticus + kardiovaszkuláris kockázattal jár (vérviszkozitás-emelkedés). **HIF-α stabilizáció analógia**: az endogén EPO-termelést a vesében a hypoxia-induced HIF-α aktiválja (Semenza Nobel-díj 2019); a rhEPO ezt a természetes szignált simulálja exogén receptor-agonista módon. **Történelmi kontextus**: Tour de France 1990-2000-es \"EPO-era\" (Festina-szkandallum 1998), Lance Armstrong USPS-protokoll dokumentálva (USADA 2012). **Detekciós breakthrough**: Lasne & de Ceaurriz 2000 Nature (PMID 10864312) IEF-tesztelés. **Hematokrit-rampolás dinamikája**: SC injekció után 7-10 nap retikulocita-csúcs, 21-28 nap hematokrit-csúcs — ezért micro-dose protokollok (20-30 IU/kg minden 2. nap) terjedtek el a detekciós ablak alatti emeléshez.",
+  "description": "A rekombináns humán eritropoetin (rhEPO, Epoetin alfa/beta, Procrit, Eprex, Aranesp) a természetes vesetermelt EPO biológiailag azonos formája. FDA-engedélyezett krónikus vesebetegség, kemoterápia-okozta anémia és prematuritás-anémia indikációkban. Endurance-sportokban (kerékpározás, állóképességi atlétika) off-label használat: a hematokritot emeli, anekdotikusan a VO2max +8-10%-ot (Lundby 2011), de placebo-kontrollált BLINDED RCT-k +1-3%-os realisztikus performance-gain-t mutatnak (Heuberger 2013). WADA-tiltott, és a vérképzési stimuláció jelentős thromboticus + kardiovaszkuláris kockázattal jár (vérviszkozitás-emelkedés). **HIF-α stabilizáció analógia**: az endogén EPO-termelést a vesében a hypoxia-induced HIF-α aktiválja (Semenza Nobel-díj 2019); a rhEPO ezt a természetes szignált simulálja exogén receptor-agonista módon. **Történelmi kontextus**: Tour de France 1990-2000-es \"EPO-era\" (Festina-szkandallum 1998), Lance Armstrong USPS-protokoll dokumentálva (USADA 2012). **Detekciós breakthrough**: Lasne & de Ceaurriz 2000 Nature (PMID 10864312) IEF-tesztelés. **Hematokrit-rampolás dinamikája**: SC injekció után 7-10 nap retikulocita-csúcs, 21-28 nap hematokrit-csúcs – ezért micro-dose protokollok (20-30 IU/kg minden 2. nap) terjedtek el a detekciós ablak alatti emeléshez.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -54,12 +54,12 @@ export default {
     "iron supplements",
     "ACE inhibitors"
   ],
-  "aromatization": "Nem releváns — 165-aminosav glikoprotein (erythropoietin), NEM szteroid; nincs aromatáz-szubsztrát",
-  "hepatotoxicity": "Alacsony — közvetlen hepatotoxicitás nincs; hematocrit-emelkedés trombosis-rizikóval (CV-events, stroke) dominál (FDA Epogen black-box warning)",
+  "aromatization": "Nem releváns – 165-aminosav glikoprotein (erythropoietin), NEM szteroid; nincs aromatáz-szubsztrát",
+  "hepatotoxicity": "Alacsony – közvetlen hepatotoxicitás nincs; hematocrit-emelkedés trombosis-rizikóval (CV-events, stroke) dominál (FDA Epogen black-box warning)",
   "wadaStatus": "banned",
   "detectionWindow": "rhEPO direkt teszt: 3-4 nap (IEF-tesztelés WADA-akkreditált laborban). Biomarker (ABP, Athlete Biological Passport) 4-6 hetes ablakkal érzékeny.",
   "benefits": [
-    "VO2max-emelés: anekdotikus 8-10% (Lundby 2011), de placebo-kontrollált blinded RCT-k 1-3% realisztikus performance-gain-t mutatnak (Heuberger 2013) — a sportoló-szubjektív perception jelentősen felülbecsüli a mérhető hatást",
+    "VO2max-emelés: anekdotikus 8-10% (Lundby 2011), de placebo-kontrollált blinded RCT-k 1-3% realisztikus performance-gain-t mutatnak (Heuberger 2013) – a sportoló-szubjektív perception jelentősen felülbecsüli a mérhető hatást",
     "Hematokrit-emelkedés (45 → 50+%)",
     "Hemoglobin-emelés és oxigén-szállító kapacitás"
   ],
