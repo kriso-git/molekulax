@@ -80,6 +80,10 @@ export default function SourcingButtons({ entryId, variantId, className = '' }) 
           </a>
         ))}
       </div>
+
+      <p className="mt-4 max-w-2xl text-[11px] leading-relaxed" style={{ color: 'var(--text-muted)' }}>
+        {t('entry.sourcing.disclosure')}
+      </p>
     </div>
   )
 }

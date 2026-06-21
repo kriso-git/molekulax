@@ -145,6 +145,7 @@ export const UI_HU = {
   "entry.sourcing.label": "Beszerezhető",
   "entry.sourcing.coupon": "kupon",
   "entry.sourcing.product": "Termékoldal",
+  "entry.sourcing.disclosure": "A fenti linkek harmadik fél boltjaira mutató, jelölt affiliate-linkek. A MolekulaX nem értékesít és nem vizsgálja a termékminőséget.",
   "entry.dosing.warn": "Csak kutatási célra. Az adagolás minden esetben szakember felügyelete mellett történhet.",
   "entry.tab.citations": "Hivatkozások",
   "entry.cite.view": "Megnyitás",

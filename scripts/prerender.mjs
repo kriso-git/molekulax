@@ -9,7 +9,7 @@ import { join, extname, dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
 import puppeteer from 'puppeteer'
-import { LIB_SLUGS } from '../src/seo/urls.js'
+import { LIB_SLUGS, STATIC_PAGES } from '../src/seo/urls.js'
 import { FAQ_CONTENT } from '../src/data/faqContent.js'
 import { entryJsonLd, faqJsonLd, breadcrumbJsonLd } from './seo-jsonld.mjs'
 
@@ -112,6 +112,13 @@ async function buildRoutes() {
     // Homepage FAQPage: flatten the localized FAQ_CONTENT categories into {q,a}[].
     const faq = (FAQ_CONTENT[lang] || []).flatMap((c) => c.items || [])
     routes.push({ lang, urlPath: homeUrl(lang), diskPath: diskFor(lang), name: null, libId: null, libraryName: null, hreflang: altMap(homeUrl), faq })
+  }
+  // Static content pages (methodology, ...): one prerendered page per language.
+  for (const slugs of Object.values(STATIC_PAGES)) {
+    const pageUrl = (l) => `${PREFIX[l]}/${slugs[l]}`
+    for (const lang of LANGS) {
+      routes.push({ lang, urlPath: pageUrl(lang), diskPath: diskFor(lang, slugs[lang]), name: null, libId: null, libraryName: null, hreflang: altMap(pageUrl) })
+    }
   }
   for (const libId of LIBS) {
     const mod = await import(`file://${join(repoRoot, 'src/data/libraries', libId, 'index.js').replace(/\\/g, '/')}`)

@@ -23,8 +23,26 @@ for (const [libId, words] of Object.entries(LIB_SLUGS)) {
   }
 }
 
+// Static content pages (methodology, later privacy/compare): a page key -> localized slug
+// per language. Add a page here + a component branch in App + a buildRoutes entry to ship a
+// new prerendered static route.
+export const STATIC_PAGES = {
+  methodology: { hu: 'modszertan', en: 'methodology', pl: 'metodologia' },
+}
+const SLUG_TO_PAGE = {}
+for (const [key, words] of Object.entries(STATIC_PAGES)) {
+  for (const [lang, word] of Object.entries(words)) {
+    SLUG_TO_PAGE[lang] = SLUG_TO_PAGE[lang] || {}
+    SLUG_TO_PAGE[lang][word] = key
+  }
+}
+
 export function homePath(lang = 'hu') {
   return LANG_PREFIX[lang] || '/'
+}
+
+export function pagePath(pageKey, lang = 'hu') {
+  return `${LANG_PREFIX[lang]}/${STATIC_PAGES[pageKey][lang]}`
 }
 
 export function libraryPath(libId, lang = 'hu') {
@@ -48,6 +66,8 @@ export function parsePath(pathname) {
   if (m) { lang = m[1]; clean = clean.slice(m[1].length + 1) || '/' }
   if (clean === '/') return { kind: 'home', lang }
   const parts = clean.replace(/^\//, '').split('/')
+  const pageKey = SLUG_TO_PAGE[lang] && SLUG_TO_PAGE[lang][parts[0]]
+  if (pageKey && parts.length === 1) return { kind: 'page', lang, page: pageKey }
   const library = SLUG_TO_LIB[lang][parts[0]]
   if (!library) return { kind: 'unknown' }
   if (parts.length === 1) return { kind: 'library', lang, library }
@@ -60,6 +80,7 @@ export function parsePath(pathname) {
 // switcher: navigating to the translated URL is what changes the rendered language).
 export function translatePath(route, lang) {
   if (!route || route.kind === 'unknown' || route.kind === 'home') return homePath(lang)
+  if (route.kind === 'page') return pagePath(route.page, lang)
   if (route.kind === 'library') return libraryPath(route.library, lang)
   return entryPath(route.library, route.id, route.variantId, lang)
 }

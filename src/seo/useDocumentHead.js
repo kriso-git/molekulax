@@ -33,6 +33,15 @@ const T = {
   },
 }
 
+// Static content pages own their own title/desc (no entry/library involved).
+const PAGE_HEAD = {
+  methodology: {
+    hu: { title: 'Módszertan és forrás-politika | MolekulaX', desc: 'Hogyan állítjuk elő és ellenőrizzük a MolekulaX tartalmát: forrás-hierarchia (PubMed, FDA, EMA), gépi PMID-verifikáció, harm-reduction elvek. Edukatív, nem orvosi tanács.' },
+    en: { title: 'Methodology and source policy | MolekulaX', desc: 'How MolekulaX content is produced and verified: source hierarchy (PubMed, FDA, EMA), machine PMID verification, harm-reduction principles. Educational, not medical advice.' },
+    pl: { title: 'Metodologia i polityka źródeł | MolekulaX', desc: 'Jak powstają i są weryfikowane treści MolekulaX: hierarchia źródeł (PubMed, FDA, EMA), maszynowa weryfikacja PMID, zasady redukcji szkód. Edukacyjne, nie porada medyczna.' },
+  },
+}
+
 function setMeta(name, content) {
   let el = document.querySelector(`meta[name="${name}"]`)
   if (!el) { el = document.createElement('meta'); el.setAttribute('name', name); document.head.appendChild(el) }
@@ -50,6 +59,10 @@ export function useDocumentHead(route, libraryName, entry) {
     setMeta('robots', route?.kind === 'unknown'
       ? 'noindex, follow'
       : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
+    if (route?.kind === 'page') {
+      const ph = PAGE_HEAD[route.page]?.[route.lang] || PAGE_HEAD[route.page]?.hu
+      if (ph) { document.title = ph.title; setMeta('description', ph.desc); return }
+    }
     if (route?.kind === 'entry') {
       // Owned by EntryDetailRoute once the entry is loaded. While loading (entry null),
       // do nothing so App's parallel call for the same route doesn't reset it.
@@ -68,5 +81,5 @@ export function useDocumentHead(route, libraryName, entry) {
     }
     document.title = t.defTitle
     setMeta('description', t.defDesc)
-  }, [route?.kind, route?.library, route?.id, route?.lang, libraryName, entry])
+  }, [route?.kind, route?.library, route?.id, route?.page, route?.lang, libraryName, entry])
 }

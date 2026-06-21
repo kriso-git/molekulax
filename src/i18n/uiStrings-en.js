@@ -142,6 +142,7 @@ export const UI_EN = {
   "entry.sourcing.label": "Available at",
   "entry.sourcing.coupon": "coupon",
   "entry.sourcing.product": "Product page",
+  "entry.sourcing.disclosure": "The links above are labelled third-party affiliate links. MolekulaX does not sell and does not verify product quality.",
   "entry.dosing.warn": "Research use only. Dosing should always happen under expert supervision.",
   "entry.tab.citations": "Citations",
   "entry.cite.view": "Open",
