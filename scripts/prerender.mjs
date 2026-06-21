@@ -9,7 +9,8 @@ import { join, extname, dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import puppeteer from 'puppeteer'
 import { LIB_SLUGS } from '../src/seo/urls.js'
-import { entryJsonLd } from './seo-jsonld.mjs'
+import { FAQ_CONTENT } from '../src/data/faqContent.js'
+import { entryJsonLd, faqJsonLd, breadcrumbJsonLd } from './seo-jsonld.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const repoRoot = resolve(__dirname, '..')
@@ -35,6 +36,7 @@ const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/cs
 const LANGS = ['hu', 'en', 'pl']
 const PREFIX = { hu: '', en: '/en', pl: '/pl' }
 const OG_LOCALE = { hu: 'hu_HU', en: 'en_US', pl: 'pl_PL' }
+const HOME_LABEL = { hu: 'Főoldal', en: 'Home', pl: 'Strona główna' }
 const diskFor = (lang, ...segs) => join(PREFIX[lang].replace('/', ''), ...segs, 'index.html')
 const altMap = (byLang) => Object.fromEntries([...LANGS.map((l) => [l, ORIGIN + byLang(l)]), ['x-default', ORIGIN + byLang('hu')]])
 const homeUrl = (l) => PREFIX[l] + (l === 'hu' ? '/' : '')
@@ -42,7 +44,9 @@ const homeUrl = (l) => PREFIX[l] + (l === 'hu' ? '/' : '')
 async function buildRoutes() {
   const routes = []
   for (const lang of LANGS) {
-    routes.push({ lang, urlPath: homeUrl(lang), diskPath: diskFor(lang), name: null, libId: null, libraryName: null, hreflang: altMap(homeUrl) })
+    // Homepage FAQPage: flatten the localized FAQ_CONTENT categories into {q,a}[].
+    const faq = (FAQ_CONTENT[lang] || []).flatMap((c) => c.items || [])
+    routes.push({ lang, urlPath: homeUrl(lang), diskPath: diskFor(lang), name: null, libId: null, libraryName: null, hreflang: altMap(homeUrl), faq })
   }
   for (const libId of LIBS) {
     const mod = await import(`file://${join(repoRoot, 'src/data/libraries', libId, 'index.js').replace(/\\/g, '/')}`)
@@ -58,15 +62,16 @@ async function buildRoutes() {
         // the route must carry the PER-LANG name — the waitRendered + capture guards match on
         // it, and META.name is a single language (a mismatch times the 60s wait out). Falls
         // back to META.name / META.shortDesc if the per-lang data file can't be imported.
-        let name = e.name, desc = metaDesc
+        let name = e.name, desc = metaDesc, faq = null
         try {
           const m = await import(`file://${join(repoRoot, 'src/data/libraries', libId, 'entries', lang, `${e.id}.js`).replace(/\\/g, '/')}`)
           if (m.default?.name) name = m.default.name
           const sd = m.default?.shortDesc
           const localized = typeof sd === 'string' ? sd : sd?.[lang]
           if (localized) desc = localized
+          if (Array.isArray(m.default?.faq)) faq = m.default.faq
         } catch {}
-        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl) })
+        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq })
       }
     }
   }
@@ -142,7 +147,9 @@ function injectHead(html, { lang, title, desc, canonical, hreflang, jsonld }) {
     out = out.replace(/<meta name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${escapeAttr(desc)}">`)
   }
   const alt = Object.entries(hreflang || {}).map(([hl, href]) => `<link rel="alternate" hreflang="${hl}" href="${href}">`).join('')
-  out = out.replace('</head>', `${alt}${jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : ''}</head>`)
+  const blocks = (Array.isArray(jsonld) ? jsonld : (jsonld ? [jsonld] : []))
+    .filter(Boolean).map((b) => `<script type="application/ld+json">${JSON.stringify(b)}</script>`).join('')
+  out = out.replace('</head>', `${alt}${blocks}</head>`)
   return out
 }
 
@@ -170,7 +177,20 @@ async function renderOne(browser, template, route) {
     const canonical = ORIGIN + route.urlPath
     // Prefer the rendered (localized) meta description; route.desc is the HU shortDesc
     // fallback from LIBRARY_ENTRY_META, only used if the page set no meta.
-    const jsonld = route.isEntry ? entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang }) : null
+    const jsonld = []
+    if (route.isEntry) jsonld.push(entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang }))
+    const faqLd = faqJsonLd(route.faq, route.lang)
+    if (faqLd) jsonld.push(faqLd)
+    // BreadcrumbList: Home > Library (landing) > Compound (entry). Home itself has none.
+    if (route.libId) {
+      const crumbs = [
+        { name: HOME_LABEL[route.lang] || HOME_LABEL.hu, url: ORIGIN + homeUrl(route.lang) },
+        { name: route.libraryName, url: `${ORIGIN}${PREFIX[route.lang]}/${LIB_SLUGS[route.libId][route.lang]}` },
+      ]
+      if (route.isEntry) crumbs.push({ name: route.name, url: canonical })
+      const bc = breadcrumbJsonLd(crumbs)
+      if (bc) jsonld.push(bc)
+    }
     let html = injectHead(template, { lang: route.lang, title: cap.title, desc: cap.desc, canonical, hreflang: route.hreflang, jsonld })
     html = html.replace('<div id="root"></div>', `<div id="root">${cap.root}</div>`)
     const outPath = join(DIST, route.diskPath)
