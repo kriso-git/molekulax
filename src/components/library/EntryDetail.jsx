@@ -844,6 +844,9 @@ function Holosphere({ image, name, accent, tierColor, library, chemicalFormula, 
      alt={`${name} vial`}
      className="w-full h-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.7)]"
      style={{ filter: `drop-shadow(0 0 30px ${accent}66)` }}
+     fetchPriority="high"
+     loading="eager"
+     decoding="async"
      draggable="false"
    />
  </picture>

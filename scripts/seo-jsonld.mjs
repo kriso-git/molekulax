@@ -38,7 +38,7 @@ export function breadcrumbJsonLd(items) {
   }
 }
 
-export function entryJsonLd({ name, desc, url, libraryName, lang = 'hu' }) {
+export function entryJsonLd({ name, desc, url, libraryName, lang = 'hu', dateModified = null }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -46,6 +46,7 @@ export function entryJsonLd({ name, desc, url, libraryName, lang = 'hu' }) {
     url,
     name,
     description: desc || '',
+    ...(dateModified ? { dateModified } : {}),
     about: {
       '@type': 'Drug',
       name,

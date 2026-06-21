@@ -37,6 +37,10 @@ const LANGS = ['hu', 'en', 'pl']
 const PREFIX = { hu: '', en: '/en', pl: '/pl' }
 const OG_LOCALE = { hu: 'hu_HU', en: 'en_US', pl: 'pl_PL' }
 const HOME_LABEL = { hu: 'Főoldal', en: 'Home', pl: 'Strona główna' }
+// Per-entry content-modified dates (committed; generated locally by gen-entry-dates.mjs,
+// since Vercel's shallow build clone can't run per-file git log). Empty if absent.
+let entryDates = {}
+try { entryDates = JSON.parse(readFileSync(join(repoRoot, 'src/data/entryDates.json'), 'utf8')) } catch {}
 const diskFor = (lang, ...segs) => join(PREFIX[lang].replace('/', ''), ...segs, 'index.html')
 const altMap = (byLang) => Object.fromEntries([...LANGS.map((l) => [l, ORIGIN + byLang(l)]), ['x-default', ORIGIN + byLang('hu')]])
 const homeUrl = (l) => PREFIX[l] + (l === 'hu' ? '/' : '')
@@ -71,7 +75,7 @@ async function buildRoutes() {
           if (localized) desc = localized
           if (Array.isArray(m.default?.faq)) faq = m.default.faq
         } catch {}
-        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq })
+        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq, dateModified: entryDates[e.id] || null })
       }
     }
   }
@@ -178,7 +182,7 @@ async function renderOne(browser, template, route) {
     // Prefer the rendered (localized) meta description; route.desc is the HU shortDesc
     // fallback from LIBRARY_ENTRY_META, only used if the page set no meta.
     const jsonld = []
-    if (route.isEntry) jsonld.push(entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang }))
+    if (route.isEntry) jsonld.push(entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang, dateModified: route.dateModified }))
     const faqLd = faqJsonLd(route.faq, route.lang)
     if (faqLd) jsonld.push(faqLd)
     // BreadcrumbList: Home > Library (landing) > Compound (entry). Home itself has none.

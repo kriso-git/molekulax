@@ -67,6 +67,13 @@ test('breadcrumbJsonLd: ordered ListItems with positions', () => {
   assert.equal(bc.itemListElement[1].item, 'https://molekulax.hu/en/peptides')
 })
 
+test('entryJsonLd: dateModified included only when provided', () => {
+  const withDate = entryJsonLd({ name: 'X', desc: 'd', url: 'https://molekulax.hu/peptidek/x', libraryName: 'L', dateModified: '2026-06-19' })
+  assert.equal(withDate.dateModified, '2026-06-19')
+  const without = entryJsonLd({ name: 'X', desc: 'd', url: 'https://molekulax.hu/peptidek/x', libraryName: 'L' })
+  assert.equal('dateModified' in without, false)
+})
+
 test('breadcrumbJsonLd: null for <2 crumbs', () => {
   assert.equal(breadcrumbJsonLd([{ name: 'Home', url: 'https://molekulax.hu/' }]), null)
   assert.equal(breadcrumbJsonLd([]), null)
