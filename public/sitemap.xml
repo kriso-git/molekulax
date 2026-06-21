@@ -91,6 +91,126 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://molekulax.hu/osszehasonlitas</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/en/compare</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/pl/porownanie</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/osszehasonlitas/ostarine-vs-rad-140</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/ostarine-vs-rad-140"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/en/compare/ostarine-vs-rad-140</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/ostarine-vs-rad-140"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/pl/porownanie/ostarine-vs-rad-140</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/ostarine-vs-rad-140"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/ostarine-vs-rad-140"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/osszehasonlitas/semaglutide-vs-tirzepatide-vs-retatrutide</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/en/compare/semaglutide-vs-tirzepatide-vs-retatrutide</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/pl/porownanie/semaglutide-vs-tirzepatide-vs-retatrutide</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/semaglutide-vs-tirzepatide-vs-retatrutide"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/osszehasonlitas/bpc-157-vs-tb-500</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/bpc-157-vs-tb-500"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/en/compare/bpc-157-vs-tb-500</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/bpc-157-vs-tb-500"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://molekulax.hu/pl/porownanie/bpc-157-vs-tb-500</loc>
+      <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/osszehasonlitas/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/compare/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="pl" href="https://molekulax.hu/pl/porownanie/bpc-157-vs-tb-500"/>
+      <xhtml:link rel="alternate" hreflang="x-default" href="https://molekulax.hu/osszehasonlitas/bpc-157-vs-tb-500"/>
+    <lastmod>2026-06-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://molekulax.hu/peptidek</loc>
       <xhtml:link rel="alternate" hreflang="hu" href="https://molekulax.hu/peptidek"/>
       <xhtml:link rel="alternate" hreflang="en" href="https://molekulax.hu/en/peptides"/>

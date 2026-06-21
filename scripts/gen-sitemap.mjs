@@ -4,7 +4,7 @@
 import { writeFileSync } from 'node:fs'
 import { resolve, dirname } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
-import { LIB_SLUGS, STATIC_PAGES } from '../src/seo/urls.js'
+import { LIB_SLUGS, STATIC_PAGES, COMPARISONS, COMPARISON_BASE } from '../src/seo/urls.js'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const repoRoot = resolve(__dirname, '..')
@@ -30,6 +30,11 @@ export async function buildSitemapGroups() {
   groups.push(mk('home', (l) => homeUrl(l)))
   for (const slugs of Object.values(STATIC_PAGES)) {
     groups.push(mk('page', (l) => `${ORIGIN}${PREFIX[l]}/${slugs[l]}`))
+  }
+  // Comparison index + each curated comparison detail.
+  groups.push(mk('page', (l) => `${ORIGIN}${PREFIX[l]}/${COMPARISON_BASE[l]}`))
+  for (const c of COMPARISONS) {
+    groups.push(mk('page', (l) => `${ORIGIN}${PREFIX[l]}/${COMPARISON_BASE[l]}/${c.slug}`))
   }
   for (const libId of LIBS) {
     groups.push(mk('library', (l) => libUrl(l, libId)))

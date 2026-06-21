@@ -9,7 +9,7 @@ import { join, extname, dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { createHash } from 'node:crypto'
 import puppeteer from 'puppeteer'
-import { LIB_SLUGS, STATIC_PAGES } from '../src/seo/urls.js'
+import { LIB_SLUGS, STATIC_PAGES, COMPARISONS, COMPARISON_BASE } from '../src/seo/urls.js'
 import { FAQ_CONTENT } from '../src/data/faqContent.js'
 import { entryJsonLd, faqJsonLd, breadcrumbJsonLd } from './seo-jsonld.mjs'
 
@@ -37,6 +37,7 @@ const LANGS = ['hu', 'en', 'pl']
 const PREFIX = { hu: '', en: '/en', pl: '/pl' }
 const OG_LOCALE = { hu: 'hu_HU', en: 'en_US', pl: 'pl_PL' }
 const HOME_LABEL = { hu: 'Főoldal', en: 'Home', pl: 'Strona główna' }
+const COMPARISON_LABEL = { hu: 'Összehasonlítások', en: 'Comparisons', pl: 'Porównania' }
 // Per-entry content-modified dates (committed; generated locally by gen-entry-dates.mjs,
 // since Vercel's shallow build clone can't run per-file git log). Empty if absent.
 let entryDates = {}
@@ -118,6 +119,17 @@ async function buildRoutes() {
     const pageUrl = (l) => `${PREFIX[l]}/${slugs[l]}`
     for (const lang of LANGS) {
       routes.push({ lang, urlPath: pageUrl(lang), diskPath: diskFor(lang, slugs[lang]), name: null, libId: null, libraryName: null, hreflang: altMap(pageUrl) })
+    }
+  }
+  // Comparison index + each curated comparison detail (one prerendered page per language).
+  const cmpIndexUrl = (l) => `${PREFIX[l]}/${COMPARISON_BASE[l]}`
+  for (const lang of LANGS) {
+    routes.push({ lang, urlPath: cmpIndexUrl(lang), diskPath: diskFor(lang, COMPARISON_BASE[lang]), name: null, libId: null, libraryName: null, hreflang: altMap(cmpIndexUrl) })
+  }
+  for (const c of COMPARISONS) {
+    const cmpUrl = (l) => `${PREFIX[l]}/${COMPARISON_BASE[l]}/${c.slug}`
+    for (const lang of LANGS) {
+      routes.push({ lang, urlPath: cmpUrl(lang), diskPath: diskFor(lang, COMPARISON_BASE[lang], c.slug), name: null, libId: null, libraryName: null, hreflang: altMap(cmpUrl), isComparison: true, comparisonTitle: c.title })
     }
   }
   for (const libId of LIBS) {
@@ -318,6 +330,16 @@ function writeRoute(template, route, cap) {
       { name: route.libraryName, url: `${ORIGIN}${PREFIX[route.lang]}/${LIB_SLUGS[route.libId][route.lang]}` },
     ]
     if (route.isEntry) crumbs.push({ name: route.name, url: canonical })
+    const bc = breadcrumbJsonLd(crumbs)
+    if (bc) jsonld.push(bc)
+  }
+  // Comparison detail: Home > Comparisons > this comparison.
+  if (route.isComparison && route.comparisonTitle) {
+    const crumbs = [
+      { name: HOME_LABEL[route.lang] || HOME_LABEL.hu, url: ORIGIN + homeUrl(route.lang) },
+      { name: COMPARISON_LABEL[route.lang] || COMPARISON_LABEL.hu, url: `${ORIGIN}${PREFIX[route.lang]}/${COMPARISON_BASE[route.lang]}` },
+      { name: route.comparisonTitle, url: canonical },
+    ]
     const bc = breadcrumbJsonLd(crumbs)
     if (bc) jsonld.push(bc)
   }

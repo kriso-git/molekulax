@@ -20,6 +20,9 @@ const CHECKS = [
   // Static content pages must also prerender visible content for JS-off crawlers.
   { path: '/adatvedelem', must: 'Adatvédelmi' },
   { path: '/en/privacy', must: 'Privacy', langMust: 'cookieless' },
+  // Comparison index + a detail page (the detail must show member names + render in-language).
+  { path: '/osszehasonlitas', must: 'Összehasonlít' },
+  { path: '/en/compare/bpc-157-vs-tb-500', must: 'BPC-157', langMust: 'compares' },
 ]
 const server = http.createServer((req, res) => {
   let file = join(DIST, decodeURIComponent(req.url.split('?')[0]))
