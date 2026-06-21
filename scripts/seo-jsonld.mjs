@@ -38,7 +38,15 @@ export function breadcrumbJsonLd(items) {
   }
 }
 
-export function entryJsonLd({ name, desc, url, libraryName, lang = 'hu', dateModified = null }) {
+// E-E-A-T entities. To attribute a NAMED medical reviewer later, change REVIEWER to a
+// Person ({ '@type':'Person', name:'Dr. ...', jobTitle:'gyógyszerész' }) — this single
+// const feeds the JSON-LD reviewedBy. The visible byline lives in the `trust.author`
+// i18n keys (uiStrings-hu/en/pl.js). Keep the two in sync.
+const PUBLISHER = { '@type': 'Organization', name: 'MolekulaX', url: 'https://molekulax.hu/' }
+const AUTHOR = PUBLISHER
+const REVIEWER = PUBLISHER
+
+export function entryJsonLd({ name, desc, url, libraryName, lang = 'hu', dateModified = null, citations = null }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
@@ -46,7 +54,10 @@ export function entryJsonLd({ name, desc, url, libraryName, lang = 'hu', dateMod
     url,
     name,
     description: desc || '',
-    ...(dateModified ? { dateModified } : {}),
+    author: AUTHOR,
+    reviewedBy: REVIEWER,
+    ...(dateModified ? { dateModified, lastReviewed: dateModified } : {}),
+    ...(Array.isArray(citations) && citations.length ? { citation: citations } : {}),
     about: {
       '@type': 'Drug',
       name,

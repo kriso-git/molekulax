@@ -18,13 +18,12 @@ const DIST = join(repoRoot, 'dist')
 const ORIGIN = 'https://molekulax.hu'
 const PORT = 4388
 const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
-// 16 on Vercel: the Pro "Turbo" build machine is 30 vCPU / 60 GB. We run 16 browsers
-// in parallel (one per worker - @sparticuz forces --single-process, so parallelism has
-// to come from separate browser PROCESSES, not tabs in one browser). ~16 cores used,
-// ample headroom on 30 vCPU + the shell http server; ~16 x ~0.7 GB << 60 GB. Renders the
-// 588-page trilingual prerender (196 pages x hu/en/pl) in a few minutes. 3 locally (a dev
-// laptop). The retry pass re-runs flaky timeouts.
-const CONCURRENCY = process.env.VERCEL ? 16 : 3
+// On Vercel: one browser PER worker (@sparticuz forces --single-process, so parallelism
+// must come from separate browser PROCESSES). Default 6 is SAFE for the cheaper "Standard"
+// build machine (4 vCPU / 8 GB): ~6 x ~0.7 GB ≈ 4 GB < 8 GB, no OOM. If you switch back to
+// the pricier 30 vCPU "Turbo" machine for speed, set env PRERENDER_CONCURRENCY=16. 3 locally.
+// (Build cost note: Turbo bills a high per-minute rate — keep builds infrequent.)
+const CONCURRENCY = process.env.VERCEL ? Number(process.env.PRERENDER_CONCURRENCY || 6) : 3
 // All hyphen/dash variants -> '-'. The entry H1 renders non-breaking hyphens (U+2011),
 // so a raw includes('SLU-PP-915') would miss 'SLU‑PP‑915'. Normalise both sides.
 const normHyphens = (s) => String(s).replace(/[‐-―−]/g, '-')
@@ -66,7 +65,7 @@ async function buildRoutes() {
         // the route must carry the PER-LANG name — the waitRendered + capture guards match on
         // it, and META.name is a single language (a mismatch times the 60s wait out). Falls
         // back to META.name / META.shortDesc if the per-lang data file can't be imported.
-        let name = e.name, desc = metaDesc, faq = null
+        let name = e.name, desc = metaDesc, faq = null, citations = null, variantIds = null
         try {
           const m = await import(`file://${join(repoRoot, 'src/data/libraries', libId, 'entries', lang, `${e.id}.js`).replace(/\\/g, '/')}`)
           if (m.default?.name) name = m.default.name
@@ -74,8 +73,14 @@ async function buildRoutes() {
           const localized = typeof sd === 'string' ? sd : sd?.[lang]
           if (localized) desc = localized
           if (Array.isArray(m.default?.faq)) faq = m.default.faq
+          // PubMed/source URLs from the entry's studies -> JSON-LD citation (E-E-A-T).
+          const urls = [...new Set((m.default?.studies || []).map((s) => s && s.url).filter(Boolean))]
+          if (urls.length) citations = urls.slice(0, 30)
+          // Variant route-ids (form factors / esters) -> the variant URLs that share this
+          // compound's card + canonical; we copy the base HTML to them after rendering.
+          if (Array.isArray(m.default?.variants)) variantIds = m.default.variants.map((v) => v && v.routeId).filter(Boolean)
         } catch {}
-        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq, dateModified: entryDates[e.id] || null, ogImage: `${ORIGIN}/og/${e.id}.jpg` })
+        routes.push({ lang, urlPath: entUrl(lang), diskPath: diskFor(lang, LIB_SLUGS[libId][lang], e.id), name, libId, libraryName: null, desc, isEntry: true, hreflang: altMap(entUrl), faq, dateModified: entryDates[e.id] || null, ogImage: `${ORIGIN}/og/${e.id}.jpg`, citations, variantIds })
       }
     }
   }
@@ -188,7 +193,7 @@ async function renderOne(browser, template, route) {
     // Prefer the rendered (localized) meta description; route.desc is the HU shortDesc
     // fallback from LIBRARY_ENTRY_META, only used if the page set no meta.
     const jsonld = []
-    if (route.isEntry) jsonld.push(entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang, dateModified: route.dateModified }))
+    if (route.isEntry) jsonld.push(entryJsonLd({ name: route.name, desc: cap.desc || route.desc || '', url: canonical, libraryName: route.libraryName, lang: route.lang, dateModified: route.dateModified, citations: route.citations }))
     const faqLd = faqJsonLd(route.faq, route.lang)
     if (faqLd) jsonld.push(faqLd)
     // BreadcrumbList: Home > Library (landing) > Compound (entry). Home itself has none.
@@ -302,7 +307,25 @@ async function main() {
     await Promise.all(browsers.map((b) => b.close().catch(() => {})))
     server.close()
   }
-  console.log(`[prerender] wrote ${done}/${routes.length} static pages, ${stillFailed} failed after retry`)
+  // Variant URLs (/<lib>/<id>/<variantId>) aren't rendered (they consolidate to the base
+  // entry), but a SHARED variant link still needs the compound's og:image + the right
+  // canonical. Copy each base entry's prerendered HTML to its variant disk paths — cheap,
+  // and the base HTML already carries the compound og:image + canonical = the base URL.
+  let variantCopies = 0
+  for (const r of routes) {
+    if (!r.isEntry || !r.variantIds || !r.variantIds.length) continue
+    const baseFile = join(DIST, r.diskPath)
+    if (!existsSync(baseFile)) continue
+    const html = readFileSync(baseFile)
+    const baseDir = dirname(baseFile)
+    for (const vid of r.variantIds) {
+      const vp = join(baseDir, vid, 'index.html')
+      mkdirSync(dirname(vp), { recursive: true })
+      writeFileSync(vp, html)
+      variantCopies++
+    }
+  }
+  console.log(`[prerender] wrote ${done}/${routes.length} static pages + ${variantCopies} variant copies, ${stillFailed} failed after retry`)
   // Fail the build if ANY route is missing (retry failures OR routes left unrendered by a
   // dead worker) — a partial dist must never deploy as if it were complete.
   if (done < routes.length) process.exit(1)

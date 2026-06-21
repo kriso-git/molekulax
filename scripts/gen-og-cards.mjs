@@ -27,12 +27,12 @@ function wrap(s, n, max = 2) {
   if (cur.trim()) lines.push(cur.trim())
   return lines.slice(0, max)
 }
-// Big name: scale font + wrap so long names (MENT (Trestolone) ...) stay on the card.
+// Big name: scale font + wrap so long names (MENT (Trestolone) ..., Anadrol (Oxymetholone))
+// stay inside the LEFT text column and never reach the vial on the right.
 function nameLayout(name) {
-  if (name.length <= 13) return { size: 92, lines: [name] }
-  if (name.length <= 22) return { size: 60, lines: [name] }
-  const lines = wrap(name, 22, 2)
-  return { size: 52, lines }
+  if (name.length <= 13) return { size: 84, lines: [name] }
+  if (name.length <= 18) return { size: 58, lines: [name] }
+  return { size: 48, lines: wrap(name, 17, 2) }
 }
 
 function cardSvg({ name, accent, descLines, libUpper }) {
@@ -74,9 +74,11 @@ for (const libId of LIBS) {
     let base = sharp(Buffer.from(svg))
     const vialPath = resolveVial(e)
     if (vialPath) {
-      const vial = await sharp(vialPath).resize({ height: 440, fit: 'inside' }).toBuffer()
+      // Cap BOTH width and height so a wide image (pill clusters) can't reach the left
+      // text column. Right-aligned ending at x=1150; the text column ends ~700 -> safe gap.
+      const vial = await sharp(vialPath).resize({ width: 380, height: 470, fit: 'inside' }).toBuffer()
       const vm = await sharp(vial).metadata()
-      const left = Math.round(W - 70 - vm.width)
+      const left = Math.round(1150 - vm.width)
       const top = Math.round((H - vm.height) / 2)
       base = sharp(await base.png().toBuffer()).composite([{ input: vial, left, top }])
     } else { noVial++ }

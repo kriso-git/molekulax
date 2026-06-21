@@ -17,6 +17,7 @@ import {
 } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
+import entryDates from '../../data/entryDates.json'
 import TelegramButtons from '../TelegramButtons'
 import SourcingButtons from './SourcingButtons'
 import MiniCalc from '../MiniCalc'
@@ -28,6 +29,11 @@ import ChemicalFormulaPlaceholder from './ChemicalFormulaPlaceholder'
 import VariantToggle from './VariantToggle'
 import AnecdoteSection from './AnecdoteSection'
 import CompositionSection from './CompositionSection'
+
+// E-E-A-T trust footer: localize the per-entry last-modified date (YYYY-MM-DD -> long form).
+function formatTrustDate(iso, lang) {
+  try { return new Date(iso + 'T00:00:00').toLocaleDateString(lang || 'hu', { year: 'numeric', month: 'long', day: 'numeric' }) } catch { return iso }
+}
 
 // Phase 10 — dynamic "Releváns X" / "Related X" / "Powiązane X" label per library.
 // Plural noun map per language; fallback strips "Könyvtár"/"Library"/"Biblioteka" from library.name.
@@ -1839,6 +1845,23 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
  <TelegramButtons />
  </div>
+ </div>
+ </section>
+
+ {/* ─── E-E-A-T trust footer: byline + source-verified + last-updated ─── */}
+ <section className="relative px-6 sm:px-10 pb-5">
+ <div className="mx-auto max-w-2xl flex flex-col items-center gap-1.5 text-center">
+ <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-0.5 text-[12px] font-semibold" style={{ color: 'var(--text-secondary)' }}>
+ <span className="inline-flex items-center gap-1.5"><ShieldCheck size={14} style={{ color: accent }} />{t('trust.author')}</span>
+ <span style={{ color: 'var(--text-fainter)' }}>·</span>
+ <span className="font-medium" style={{ color: 'var(--text-fainter)' }}>{t('trust.sourced')}</span>
+ </div>
+ {entryDates[peptide.id] && (
+ <div className="inline-flex items-center gap-1.5 text-[11px]" style={{ color: 'var(--text-fainter)' }}>
+ <Clock size={11} />
+ <span>{t('trust.updated')}: {formatTrustDate(entryDates[peptide.id], lang)}</span>
+ </div>
+ )}
  </div>
  </section>
 
