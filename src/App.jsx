@@ -37,6 +37,11 @@ const CardVizPreview = lazy(() => import('./components/CardVizPreview'))
 // Lighthouse is untouched (the CSS .dna-backdrop covers mobile + the load gap).
 const DnaBackground = lazy(() => import('./components/DnaBackground'))
 
+// Comparison routes (/osszehasonlitas …). Lazy so the table + buildComparison stay out of
+// the initial home/entry bundle.
+const ComparisonPage = lazy(() => import('./components/comparison/ComparisonPage'))
+const ComparisonIndex = lazy(() => import('./components/comparison/ComparisonIndex'))
+
 // Background: always-on CSS backdrop (dark base + teal/violet glows) + the lazy
 // 3D DNA layer on >=768px. Mobile falls back to the CSS backdrop (three.js never
 // downloaded there).
@@ -104,7 +109,8 @@ export default function App() {
 
   const isEntryDetail = route.kind === 'entry'
   const isPage = route.kind === 'page'
-  const hideLanding = isEntryDetail || isPage
+  const isComparison = route.kind === 'comparison' || route.kind === 'comparison-index'
+  const hideLanding = isEntryDetail || isPage || isComparison
 
   return (
     <LanguageProvider>
@@ -135,6 +141,8 @@ export default function App() {
             {isEntryDetail && <EntryDetailRoute route={route} />}
             {isPage && route.page === 'methodology' && <MethodologyPage lang={route.lang} />}
             {isPage && route.page === 'privacy' && <PrivacyPage lang={route.lang} />}
+            {route.kind === 'comparison-index' && <Suspense fallback={null}><ComparisonIndex lang={route.lang} /></Suspense>}
+            {route.kind === 'comparison' && <Suspense fallback={null}><ComparisonPage lang={route.lang} slug={route.slug} /></Suspense>}
           </div>
         </div>
         </LibraryProvider>

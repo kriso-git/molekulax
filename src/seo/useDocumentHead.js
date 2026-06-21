@@ -3,6 +3,7 @@
 // home/library titles by App. Derived from existing data only – no new body copy. These
 // appear only in the browser tab + search snippet, never in the page body.
 import { useEffect } from 'react'
+import { COMPARISONS } from './urls.js'
 
 // Per-language head templates. HU values are verbatim copies of the Phase 1/2 strings
 // (so HU output is byte-identical – the visual/meta baseline must not move).
@@ -47,6 +48,18 @@ const PAGE_HEAD = {
   },
 }
 
+// Comparison index page (the detail pages derive their head from the COMPARISONS title).
+const COMPARISON_HEAD = {
+  hu: { title: 'Összehasonlítások | MolekulaX', desc: 'Hasonló vegyületek legfontosabb adatainak összehasonlítása egymás mellett, forrásolt adatlapok alapján. Edukatív, nem orvosi tanács.' },
+  en: { title: 'Comparisons | MolekulaX', desc: 'Side-by-side comparison of related compounds’ key data, based on sourced entry pages. Educational, not medical advice.' },
+  pl: { title: 'Porównania | MolekulaX', desc: 'Porównanie najważniejszych danych powiązanych związków obok siebie, na podstawie kart źródłowych. Edukacyjne, nie porada medyczna.' },
+}
+const COMPARISON_DETAIL = {
+  hu: { suffix: (t) => `${t} – összehasonlítás | MolekulaX`, desc: (t) => `${t}: a legfontosabb adatok egymás mellett, forrásolt adatlapok alapján. Edukatív, nem orvosi tanács.` },
+  en: { suffix: (t) => `${t} – comparison | MolekulaX`, desc: (t) => `${t}: key data side by side, based on sourced entry pages. Educational, not medical advice.` },
+  pl: { suffix: (t) => `${t} – porównanie | MolekulaX`, desc: (t) => `${t}: najważniejsze dane obok siebie, na podstawie kart źródłowych. Edukacyjne, nie porada medyczna.` },
+}
+
 function setMeta(name, content) {
   let el = document.querySelector(`meta[name="${name}"]`)
   if (!el) { el = document.createElement('meta'); el.setAttribute('name', name); document.head.appendChild(el) }
@@ -67,6 +80,15 @@ export function useDocumentHead(route, libraryName, entry) {
     if (route?.kind === 'page') {
       const ph = PAGE_HEAD[route.page]?.[route.lang] || PAGE_HEAD[route.page]?.hu
       if (ph) { document.title = ph.title; setMeta('description', ph.desc); return }
+    }
+    if (route?.kind === 'comparison-index') {
+      const ch = COMPARISON_HEAD[route.lang] || COMPARISON_HEAD.hu
+      document.title = ch.title; setMeta('description', ch.desc); return
+    }
+    if (route?.kind === 'comparison') {
+      const cmp = COMPARISONS.find((x) => x.slug === route.slug)
+      const cd = COMPARISON_DETAIL[route.lang] || COMPARISON_DETAIL.hu
+      if (cmp) { document.title = cd.suffix(cmp.title); setMeta('description', cd.desc(cmp.title)); return }
     }
     if (route?.kind === 'entry') {
       // Owned by EntryDetailRoute once the entry is loaded. While loading (entry null),
