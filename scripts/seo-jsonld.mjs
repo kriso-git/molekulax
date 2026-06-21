@@ -2,11 +2,11 @@
 // Phase 2 emits a MedicalWebPage describing each compound as a Drug. Educational,
 // not medical advice — kept factual (name + description + url), no dosing claims.
 
-export function entryJsonLd({ name, desc, url, libraryName }) {
+export function entryJsonLd({ name, desc, url, libraryName, lang = 'hu' }) {
   return {
     '@context': 'https://schema.org',
     '@type': 'MedicalWebPage',
-    inLanguage: 'hu',
+    inLanguage: lang,
     url,
     name,
     description: desc || '',
