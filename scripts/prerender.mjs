@@ -38,9 +38,6 @@ const PREFIX = { hu: '', en: '/en', pl: '/pl' }
 const OG_LOCALE = { hu: 'hu_HU', en: 'en_US', pl: 'pl_PL' }
 const HOME_LABEL = { hu: 'Főoldal', en: 'Home', pl: 'Strona główna' }
 const COMPARISON_LABEL = { hu: 'Összehasonlítások', en: 'Comparisons', pl: 'Porównania' }
-// The localized "what it is" row label renders ONLY after the detail page's async member load
-// resolves — used as the prerender wait-guard so we never capture the loading skeleton.
-const COMPARISON_WHATIS = { hu: 'Mi ez', en: 'What it is', pl: 'Co to jest' }
 // Per-entry content-modified dates (committed; generated locally by gen-entry-dates.mjs,
 // since Vercel's shallow build clone can't run per-file git log). Empty if absent.
 let entryDates = {}
@@ -142,9 +139,12 @@ async function buildRoutes() {
   for (const c of COMPARISONS) {
     const cmpUrl = (l) => `${PREFIX[l]}/${COMPARISON_BASE[l]}/${c.slug}`
     for (const lang of LANGS) {
-      // `name` = the post-load "what it is" label so waitRendered waits for the rendered
-      // table (not the skeleton). members + lib feed contentHashFor for cache correctness.
-      routes.push({ lang, urlPath: cmpUrl(lang), diskPath: diskFor(lang, COMPARISON_BASE[lang], c.slug), name: COMPARISON_WHATIS[lang], libId: null, libraryName: null, hreflang: altMap(cmpUrl), isComparison: true, comparisonTitle: c.title, members: c.members, lib: c.lib })
+      // `name` guard = the first member's display name (e.g. "BPC-157"). It is transform-stable
+      // (member names have no `uppercase` CSS, unlike the table row labels), so it matches in
+      // BOTH page.innerText (waitRendered) and #root innerHTML (writeRoute tripwire). The
+      // skeleton's #root (~1.3k chars) is < the 2000-char gate, so the name is only checked
+      // after the real table renders. members + lib feed contentHashFor for cache correctness.
+      routes.push({ lang, urlPath: cmpUrl(lang), diskPath: diskFor(lang, COMPARISON_BASE[lang], c.slug), name: c.title.split(' vs ')[0], libId: null, libraryName: null, hreflang: altMap(cmpUrl), isComparison: true, comparisonTitle: c.title, members: c.members, lib: c.lib })
     }
   }
   for (const libId of LIBS) {
