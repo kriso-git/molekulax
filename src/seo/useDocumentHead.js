@@ -45,6 +45,11 @@ export function useDocumentHead(route, libraryName, entry) {
   useEffect(() => {
     if (typeof document === 'undefined') return
     const t = T[route?.lang] || T.hu
+    // soft-404: an unknown path is served the SPA shell (catch-all rewrite) and renders
+    // the home, so mark it noindex to avoid indexing a garbage URL as a home duplicate.
+    setMeta('robots', route?.kind === 'unknown'
+      ? 'noindex, follow'
+      : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
     if (route?.kind === 'entry') {
       // Owned by EntryDetailRoute once the entry is loaded. While loading (entry null),
       // do nothing so App's parallel call for the same route doesn't reset it.

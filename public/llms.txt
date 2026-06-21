@@ -1,0 +1,215 @@
+# MolekulaX
+
+> Farmakológiai edukáció tudományos alapon: peptidek, nootropikumok, teljesítményfokozók és gyógyszerek hatásmechanizmusa, farmakokinetikája és kutatási háttere, forrás-igazolt (PubMed/FDA/EMA/PubChem) alapon. Edukatív tartalom, nem orvosi tanács. HU/EN/PL nyelven.
+
+## Peptid Könyvtár
+
+https://molekulax.hu/peptidek
+
+- [GHK-Cu](https://molekulax.hu/peptidek/ghk-cu): Rézpeptid: bőrregeneráció és epigenetikai moduláció
+- [Retatrutide](https://molekulax.hu/peptidek/retatrutide): Háromszoros inkretinagonista: metabolikus egészség és súlycsökkentés
+- [BPC-157](https://molekulax.hu/peptidek/bpc-157): Gyomor-pentadekapeptid: szöveti regeneráció és gyógyulás
+- [TB-500](https://molekulax.hu/peptidek/tb-500): Thymosin β4: aktin-kötés, sejtvándorlás és szövetjavítás
+- [CJC-1295](https://molekulax.hu/peptidek/cjc-1295): GHRH analóg: tartós növekedési hormon stimuláció
+- [Ipamorelin](https://molekulax.hu/peptidek/ipamorelin): Szelektív GH-szekretórium: kortizolemelkedés nélkül
+- [Melanotan-2](https://molekulax.hu/peptidek/melanotan-2): Szintetikus α-MSH analóg: pigmentáció és libidó moduláció
+- [PT-141](https://molekulax.hu/peptidek/pt-141): Melanokortinreceptor-agonista: FDA engedélyezett (bremelanotid)
+- [Sermorelin](https://molekulax.hu/peptidek/sermorelin): GHRH(1-29) analóg: fiziológiás GH-helyreállítás
+- [Epithalon](https://molekulax.hu/peptidek/epithalon): Tobozmirigy-tetrapeptid: telomeráz aktiválás és öregedéskutatás
+- [Tirzepatide](https://molekulax.hu/peptidek/tirzepatide): Kettős GIP/GLP-1 agonista: testsúly és vércukor kontroll
+- [HGH](https://molekulax.hu/peptidek/hgh): Humán növekedési hormon (rhGH / Somatropin): anyagcsere és regeneráció
+- [CJC-1295 / Ipamorelin](https://molekulax.hu/peptidek/cjc-1295-ipamorelin): GHRH-analóg + szelektív ghrelin-mimetikum kombináció a szinergikus GH-pulzusért
+- [Tesamorelin](https://molekulax.hu/peptidek/tesamorelin): GHRH-analóg: viscerális zsírcsökkentés (FDA-jóváhagyott)
+- [Semaglutide](https://molekulax.hu/peptidek/semaglutide): GLP-1 agonista, testsúly és vércukor kontroll
+- [Liraglutide](https://molekulax.hu/peptidek/liraglutide): GLP-1 agonista, napi adagolású elődpeptid
+- [GHRP-2](https://molekulax.hu/peptidek/ghrp-2): GH-szekretagóg hexapeptid, pulzatilis GH-felszabadulás
+- [GHRP-6](https://molekulax.hu/peptidek/ghrp-6): Korai GH-szekretagóg, étvágynövelő mellékhatással
+- [Hexarelin](https://molekulax.hu/peptidek/hexarelin): Erős GHRP, kardioprotektív hatás vizsgálatok
+- [IGF-1 LR3](https://molekulax.hu/peptidek/igf-1-lr3): Hosszú féléletidejű IGF-1 analóg, anabolikus jelzés
+- [Semax](https://molekulax.hu/peptidek/semax): ACTH(4-10) analóg, nootróp orrspray
+- [Selank](https://molekulax.hu/peptidek/selank): Tuftsin-analóg, szorongáscsökkentő nootróp
+- [Cerebrolysin](https://molekulax.hu/peptidek/cerebrolysin): Neuropeptid-koktél, neuroprotektív/regeneratív
+- [Melanotan-1 (Afamelanotide)](https://molekulax.hu/peptidek/melanotan-1): α-MSH analóg, eritropoietikus protoporfíriában jóváhagyva
+- [KPV](https://molekulax.hu/peptidek/kpv): α-MSH tripeptid végszakasza, gyulladáscsökkentő
+- [Thymosin Alpha-1](https://molekulax.hu/peptidek/thymosin-alpha-1): 28 aa-as immunmoduláns peptid, T-sejt aktiváció
+- [LL-37 (Cathelicidin)](https://molekulax.hu/peptidek/ll-37): Antimikrobiális peptid, sebgyógyulás és immunitás
+- [Humanin](https://molekulax.hu/peptidek/humanin): Mitokondriális eredetű peptid, neuro- és metabolikus védelem
+- [MOTS-c](https://molekulax.hu/peptidek/mots-c): Mitokondriális peptid, anyagcsere és AMPK aktiváció
+- [Pinealon](https://molekulax.hu/peptidek/pinealon): Tripeptid, neuroprotektív és anti-aging hipotézis
+- [Gonadorelin (GnRH)](https://molekulax.hu/peptidek/gonadorelin): Természetes GnRH, LH/FSH pulzus stimulátor
+- [Kisspeptin-10](https://molekulax.hu/peptidek/kisspeptin): Hypothalamus szintű GnRH-aktivátor
+- [Oxytocin](https://molekulax.hu/peptidek/oxytocin): 9 aa-as neuropeptid, szociális kötés és szülés
+- [AOD-9604](https://molekulax.hu/peptidek/aod-9604): HGH fragmens (176-191), célzott lipolízis
+- [5-Amino-1MQ](https://molekulax.hu/peptidek/5-amino-1mq): NNMT inhibitor, anyagcsere-fokozó kismolekula
+- [NAD+](https://molekulax.hu/peptidek/nad-plus): Nicotinamide adenine dinucleotide, sejtenergia és sirtuin
+- [DSIP (Delta Sleep Inducing Peptide)](https://molekulax.hu/peptidek/dsip): 9 aa-as peptid, delta-alvás indukció hipotézis
+- [Adipotide (FTPP)](https://molekulax.hu/peptidek/adipotide): Pro-apoptotikus peptid, adipocita-specifikus zsírcsökkentés
+- [SNAP-8](https://molekulax.hu/peptidek/snap-8): Topikális Argireline-analóg, ráncellenes kozmetikum
+- [Matrixyl 3000](https://molekulax.hu/peptidek/matrixyl-3000): Kollagén-szignál peptid mátrix, anti-aging topikum
+- [SS-31 (Elamipretide)](https://molekulax.hu/peptidek/ss-31): Mitokondriális tetrapeptid, kardiolipin-célzott védelem
+- [Cagrilintide (AM833)](https://molekulax.hu/peptidek/cagrilintide): Hosszan ható amilin-analóg, telítettség és testsúly
+- [Mazdutide (IBI362)](https://molekulax.hu/peptidek/mazdutide): GLP-1/glukagon dual agonista, Kínában törzskönyvezve
+- [Survodutide](https://molekulax.hu/peptidek/survodutide): Glukagon/GLP-1 dual agonista, Boehringer/Zealand
+- [HCG (fertilitás)](https://molekulax.hu/peptidek/hcg-peptid): LH-receptor agonist glycoprotein: fertilitás-induction és HPTA-recovery
+- [HMG (fertilitás)](https://molekulax.hu/peptidek/hmg-peptid): Humán Menopauzális Gonadotropin: FSH+LH 1:1 spermatogenezis-induction
+- [EPO](https://molekulax.hu/peptidek/epo): Eritropoietin: EPO-receptor agonist, RBC-tömeg + oxigénszállítás
+- [GLOW](https://molekulax.hu/peptidek/glow): Multi-peptid stack: GHK-Cu + BPC-157 + TB-500 bőr- és szövetregenerációra
+- [NA Semax Amidate](https://molekulax.hu/peptidek/na-semax-amidate): N-acetilált, amidált Semax, hosszabb féléletidő, erősebb nootróp
+- [Adalank (NA Selank Amidate)](https://molekulax.hu/peptidek/adalank): Stabilizált Selank, anxiolytikus + nootróp
+- [Adamax](https://molekulax.hu/peptidek/adamax): Adamantán-konjugált Semax, fokozott BBB-penetráció
+- [KLOW Protocol](https://molekulax.hu/peptidek/klow-protocol): Peptid-stack: GHK-Cu + TB-500 + BPC-157 + KPV, regeneráció + gyulladáscsökkentés
+- [Lipo-C](https://molekulax.hu/peptidek/lipo-c): Lipotrop injekciós keverék, methionin / inozitol / kolin / B12
+
+## Nootropikum Könyvtár
+
+https://molekulax.hu/nootropikumok
+
+- [Piracetam](https://molekulax.hu/nootropikumok/piracetam): Az eredeti racetam (Giurgea, 1972). Glutamáterg AMPA-modulátor, klasszikus memóriát és kogníciót támogató nootropikum.
+- [Modafinil](https://molekulax.hu/nootropikumok/modafinil): FDA-jóváhagyott wakefulness-promoting szer (Provigil). Szelektív DAT-gátló, narkolepszia, alvási apnoé, váltóműszakos zavar Rx.
+- [Noopept](https://molekulax.hu/nootropikumok/noopept): Orosz Rx racetam-szerű nootropikum; kicsi dózis (10-30 mg), NGF/BDNF expression-növelő.
+- [Phenylpiracetam](https://molekulax.hu/nootropikumok/phenylpiracetam): Phenyl-csoport piracetam-vázon. Stimuláns racetam + dopaminerg modulátor, WADA tiltott versenysportban.
+- [Adrafinil](https://molekulax.hu/nootropikumok/adrafinil): Modafinil prekurzor (hepatikus konverzió). EU-régiókban OTC, lassabb hatáskezdettel.
+- [Bromantane](https://molekulax.hu/nootropikumok/bromantane): Orosz actoprotector, dopaminerg + szerotonerg modulátor + immunmodulátor. Anti-fatigue, anxiolítikus.
+- [NSI-189](https://molekulax.hu/nootropikumok/nsi-189): Hippocampus-szelektív neurogenezis-induktor. Neuralstem Phase 1b/2 klinikai vizsgálatok depresszióra.
+- [Semax](https://molekulax.hu/nootropikumok/semax): Orosz Rx heptapeptid (ACTH 4-10 analóg). Stroke-rehabilitáció + kognitív enhancement, intranazális spray.
+- [Selank](https://molekulax.hu/nootropikumok/selank): Tuftsin-analóg heptapeptid (TKPRPGP). Anxiolítikus + cognition szedáció nélkül, intranazális.
+- [9-Me-BC](https://molekulax.hu/nootropikumok/9-me-bc): Béta-karbolin alkaloid. MAO-B gátló + neurotrofikus, dopaminerg motivációs nootropikum (in vitro adat).
+- [Aniracetam](https://molekulax.hu/nootropikumok/aniracetam): Zsírban oldódó racetam, AMPA-pozitív moduláció + anxiolitikus profil.
+- [Oxiracetam](https://molekulax.hu/nootropikumok/oxiracetam): Stimuláns hangulatú racetam, AMPA + cholinerg aktivitás, fókusz-orientált.
+- [Pramiracetam](https://molekulax.hu/nootropikumok/pramiracetam): Erős cholinerg racetam, HACU-fokozás + AMPA-modulácó.
+- [Coluracetam](https://molekulax.hu/nootropikumok/coluracetam): Szelektív HACU-fokozó (BCI-540), vizuális élmény és antidepresszív profil.
+- [Fasoracetam](https://molekulax.hu/nootropikumok/fasoracetam): mGluR I/II/III modulátor racetam, ADHD klinikai kutatás.
+- [Nefiracetam](https://molekulax.hu/nootropikumok/nefiracetam): GABA + AMPA + Ca-csatorna-modulátor racetam, anti-amnesztikus.
+- [Sunifiram](https://molekulax.hu/nootropikumok/sunifiram): Ampakine, AMPA-PAM, sub-mg aktív dózis.
+- [Unifiram](https://molekulax.hu/nootropikumok/unifiram): Ampakine (DM-232), Sunifiram alkinil-variánsa, AMPA-PAM.
+- [Nooglutyl](https://molekulax.hu/nootropikumok/nooglutyl): Orosz AMPA-PAM kutatási vegyület, plaszticitás-fokozó.
+- [Armodafinil](https://molekulax.hu/nootropikumok/armodafinil): A Modafinil R-enantiomerje, hosszabb felezési idő, simább koncentráció.
+- [Fladrafinil](https://molekulax.hu/nootropikumok/fladrafinil): Bisz-fluor-adrafinil analóg, agresszió-csökkentő profil, kísérleti.
+- [Flmodafinil](https://molekulax.hu/nootropikumok/flmodafinil): Biszfluor-modafinil (CRL-40,940), kb. 3× potensebb in vivo.
+- [Alpha-GPC](https://molekulax.hu/nootropikumok/alpha-gpc): Glicerofoszfokolin, biológiailag hasznosuló kolin-prekurzor.
+- [CDP-Choline](https://molekulax.hu/nootropikumok/cdp-choline): Citidin-difoszfát-kolin, kolin + uridin kettős prekurzor.
+- [Centrophenoxine](https://molekulax.hu/nootropikumok/centrophenoxine): Meclofenoxate, DMAE + p-klórfenoxiecetsav konjugátum, lipofuszcin-eltávolítás.
+- [Huperzine-A](https://molekulax.hu/nootropikumok/huperzine-a): Reverzibilis AChE-inhibitor, kínai mohából (Huperzia serrata) izolálva.
+- [Selegiline](https://molekulax.hu/nootropikumok/selegiline): Szelektív MAO-B inhibitor, Parkinson + depresszió, FDA-jóváhagyott.
+- [BPAP](https://molekulax.hu/nootropikumok/bpap): Szelektív PEA-aktivitás-fokozó (CAE), Selegiline-utód, kísérleti.
+- [PRL-8-53](https://molekulax.hu/nootropikumok/prl-8-53): Fenil-metil-piperidinil-benzoát, 1970-es évek, egyetlen humán memóriavizsgálat.
+- [Phenibut](https://molekulax.hu/nootropikumok/phenibut): β-fenil-GABA, GABA-B agonista, orosz Rx anxiolitikum.
+- [Tianeptine](https://molekulax.hu/nootropikumok/tianeptine): Atípusos antidepresszáns, μ-opioid moduláció, EU/orosz vényköteles.
+- [F-Phenibut](https://molekulax.hu/nootropikumok/f-phenibut): Fluorozott Phenibut, potensebb, lipofilebb GABA-B agonista variáns.
+- [Picamilon](https://molekulax.hu/nootropikumok/picamilon): Nikotinsav + GABA konjugátum, orosz vényköteles anxiolitikum.
+- [Bacopa monnieri](https://molekulax.hu/nootropikumok/bacopa): Ayurvédikus gyógynövény, bakozid-glikozidok, memória + anxiolítikum.
+- [Ashwagandha](https://molekulax.hu/nootropikumok/ashwagandha): Indiai ginszeng, withanolid-glikozidok, kortizol-csökkentő adaptogén.
+- [Rhodiola rosea](https://molekulax.hu/nootropikumok/rhodiola): Sarki gyökér, salidrozid + rozavin, fáradtság-ellenes adaptogén.
+- [Lion's Mane](https://molekulax.hu/nootropikumok/lions-mane): Süngomba, hericenonok + erinacinok, NGF-szintézis indukció.
+- [L-Theanine](https://molekulax.hu/nootropikumok/l-theanine): Zöld tea aminosav, γ-glutamil-etilamid, α-hullám fokozó.
+- [Tongkat Ali](https://molekulax.hu/nootropikumok/tongkat-ali): Maláj „longjack", quassinoidok + eurycomanon, tesztoszteron-támogatás.
+- [Cerebrolysin](https://molekulax.hu/nootropikumok/cerebrolysin): Sertés-agy peptid-hidrolizátum, EU Rx, stroke + demencia.
+- [Cortexin](https://molekulax.hu/nootropikumok/cortexin): Marha-agykéreg polipeptid kivonat, orosz Rx, neurológiai indikációk.
+- [Dihexa](https://molekulax.hu/nootropikumok/dihexa): Angiotensin IV analóg, HGF/c-Met agonista, hippokampális szinapszis-építő.
+- [Methylene Blue](https://molekulax.hu/nootropikumok/methylene-blue): Mitokondriális elektronhordozó, FDA Rx methemoglobinémiára, alacsony dózisú nootropikum.
+- [Magnesium L-Threonate](https://molekulax.hu/nootropikumok/magnesium-l-threonate): MIT-fejlesztésű Mg-kelát (Magtein®), szinaptikus Mg²⁺-emelő.
+- [Paraxanthine](https://molekulax.hu/nootropikumok/paraxanthine): Koffein-metabolit nootropikum, alacsonyabb szorongáskeltő profillal mint a koffein.
+- [J-147](https://molekulax.hu/nootropikumok/j-147): Salk Institute curcumin-származék, mitokondriális ATP5A modulátor, BDNF-induktor.
+- [AF710B (Trapaxin)](https://molekulax.hu/nootropikumok/af710b): Dual M1 muszkarin / σ1 agonista, Alzheimer-jelölt kismolekula.
+- [Adamax](https://molekulax.hu/nootropikumok/adamax): Adamantán-konjugált Semax peptid, fokozott BBB-penetráció és tartós neurotrofikus hatás.
+
+## Teljesítményfokozók Könyvtár
+
+https://molekulax.hu/teljesitmenyfokozok
+
+- [Testosterone](https://molekulax.hu/teljesitmenyfokozok/testosterone-info): Az endogén férfi nemi hormon és az összes AAS referencia-molekulája. FDA-jóváhagyott TRT (testosterone replacement therapy) hipogonadizmusra.
+- [Trenbolone](https://molekulax.hu/teljesitmenyfokozok/trenbolone-info): Erős 19-nortestosterone-származék, 5x androgén aktivitás vs. testosterone. Vesére, vérnyomásra és prolaktinra agresszív, soha nem volt FDA-jóváhagyott emberi gyógyszer.
+- [Anavar (Oxandrolone)](https://molekulax.hu/teljesitmenyfokozok/anavar-info): Oxandrolone, FDA-jóváhagyott orális AAS égési sérülésekre és HIV-cachexia kezelésére. Enyhén hepatotoxikus 17α-alkilált, gyakran "női-barát" szteroidnak nevezik.
+- [Superdrol](https://molekulax.hu/teljesitmenyfokozok/superdrol): Methasterone (2α,17α-dimetil-DHT-származék). Két adagolási mód: orális tabletta vs. underground injektábilis olaj — eltérő hepatikus profillal.
+- [Yohimbine](https://molekulax.hu/teljesitmenyfokozok/yohimbine): α2-adrenoceptor antagonist (Pausinystalia yohimbe), "stubborn fat" zsírdepók mobilizálására használt sport-supplement.
+- [Clenbuterol](https://molekulax.hu/teljesitmenyfokozok/clenbuterol): Szelektív β2-adrenoceptor agonista, EU veterinär-Rx asztmás lovaknak. Bodybuilding off-label fat-loss + izom-megtartás.
+- [Albuterol](https://molekulax.hu/teljesitmenyfokozok/albuterol): FDA-approved szelektív β2-agonist asztma-Rx (Ventolin). Rövidebb felezésű, biztonságosabb Clenbuterol-alternatíva. Multi-variant: oral tabletta + MDI inhaláló (Sub-Task 6 retrofit).
+- [Winstrol](https://molekulax.hu/teljesitmenyfokozok/winstrol-info): Stanozolol, 17α-alkilált DHT-származék. Klasszikus "cutting" AAS, SHBG-szuppresszor.
+- [Nandrolone](https://molekulax.hu/teljesitmenyfokozok/nandrolone-info): Nandrolone Decanoate (Deca-Durabolin), 19-nor-AAS. Klasszikus "bulking" AAS, ízületi recovery hatással.
+- [Dianabol](https://molekulax.hu/teljesitmenyfokozok/dianabol-info): Methandrostenolone, 17α-alkilált orális AAS. Klasszikus "kickstart" bulking szteroid, magas hepatotoxicitással.
+- [Methylstenbolone](https://molekulax.hu/teljesitmenyfokozok/methylstenbolone): Designer prohormon (2,3α-epitio-17α-methylstenbolone). Erős AR-agonista, magas hepatotoxicitással.
+- [Masteron (Drostanolone)](https://molekulax.hu/teljesitmenyfokozok/masteron): Drostanolone, 2α-metil-DHT injektábilis AAS. Eredetileg FDA-jóváhagyott (Drolban) inoperábilis emlőkarcinómára; ma kizárólag UGL. Klasszikus "hardening" cutting-szteroid.
+- [Primobolan (Methenolone)](https://molekulax.hu/teljesitmenyfokozok/primobolan): Methenolone, 1-metil-DHT "enyhe" AAS két ester-formátumban: orális acetate (alacsony bio) és Bayer Primobolan Depot enantate (DE/ES Rx). Klasszikus cutting-szteroid.
+- [Anadrol (Oxymetholone)](https://molekulax.hu/teljesitmenyfokozok/anadrol): Oxymetholone, 17α-metil-DHT orális AAS. FDA-jóváhagyott (Anadrol-50) aplasztikus anémiára. Klasszikus "wet" bulking-szteroid, magas hepatotoxicitás + paradox estrogén-szerű mellékhatások.
+- [Proviron (Mesterolone)](https://molekulax.hu/teljesitmenyfokozok/proviron): Mesterolone, 1α-metil-DHT orális androgén Bayer Rx (Proviron-25, DE/AT/PL). Adjunkt-szerep AAS-ciklus alatt — SHBG-szuppresszor + enyhe AI, NEM standalone bulker.
+- [DHB (Dihydroboldenone)](https://molekulax.hu/teljesitmenyfokozok/dhb): 1-Testosterone Cypionát, designer-AAS injektábilis. Boldenone 5α-redukált analógja. Csak UGL, NEM aromatizál, alacsony hepatotoxicitás — DE notórius PIP miatt.
+- [Halotestin (Fluoxymesterone)](https://molekulax.hu/teljesitmenyfokozok/halotestin): Fluoxymesterone, 9α-fluoro-17α-metil-T orális AAS. AAS-ek közül a legmagasabb androgén-aktivitás. Boksz/powerlifting pre-competition strength-amplifier MINIMÁLIS izomtömeg-építéssel.
+- [Turinabol (4-Chlorodehydromethyltestosterone)](https://molekulax.hu/teljesitmenyfokozok/turinabol): Oral-Turinabol (CDMT), Jenapharm 1962. Hírhedten az NDK állami dopping-program ("Komplex 08", 1968-1989) fő szere. Hosszú-távú detection-metabolitok 12-18 hónap.
+- [Methyltestosterone](https://molekulax.hu/teljesitmenyfokozok/methyltestosterone): 17α-metil-testosterone, az ELSŐ szintetizált orális AAS (Ruzicka 1935). FDA Rx (Android, Methitest). Bodybuilding-ben elavult, modern alternatívák (Anavar/Dianabol) preferáltak.
+- [Equipoise (Boldenone Undecylenate)](https://molekulax.hu/teljesitmenyfokozok/equipoise): Boldenone Undecylenate, veterinary-only injektábilis AAS (Fort Dodge 1972-2008). Lassú, stabil lean gains; aromatizál fél-Test arányban. "Étvágy-stimuláns" reputation.
+- [THG (Tetrahydrogestrinone)](https://molekulax.hu/teljesitmenyfokozok/thg): BALCO designer-AAS ("The Clear"), 2003-ban Catlin felfedezte. Marion Jones, Tim Montgomery, Barry Bonds szkandallum. Ma USA Schedule III, sosem volt Rx.
+- [MENT (Trestolone) — szintetikus androgén frame](https://molekulax.hu/teljesitmenyfokozok/ment-test): Trestolone (7α-metil-19-nortestosterone), Population Council férfi-fogamzásgátló-jelölt. ~8-10x AR-affinitás vs T. Cross-framed: szintetikus androgén frame (Test-oszlop).
+- [MENT (Trestolone) — 19-Nor progestin frame](https://molekulax.hu/teljesitmenyfokozok/ment-19nor): Trestolone 19-Nor framework progesztogén-emphasis: közepes PR-affinitás → spermatogenezis-szuppresszió + bodybuilding prolaktin-monitor. Cross-framed: ment-test szintetikus androgén külön entry.
+- [Gestrinone (Dimetrose, Nemestran)](https://molekulax.hu/teljesitmenyfokozok/gestrinone): 13β-etil-17α-etinil-19-nor-trien származék. Roussel-Uclaf 1986 endometriózis-Rx (Dimetrose/Nemestran). Anti-progesztin/progesztin mixed + gyenge androgén. Bodybuilding-kontextusban ritka, UGL néha SARM-szerűként marketingelt.
+- [RAD-140 (Testolone)](https://molekulax.hu/teljesitmenyfokozok/rad-140): Non-szteroidal SARM, Radius Health 2010. Phase II breast cancer + cachexia trial. Erős izomtömeg-építő AR-szelektivitással, DE 2017-2020 6+ hepatotoxicitás-esetjelentés (Hilal 2020). WADA tiltott.
+- [LGD-4033 (Ligandrol)](https://molekulax.hu/teljesitmenyfokozok/lgd-4033): Non-szteroidal SARM, Ligand Pharma 2007. Phase I egészséges férfi-alanyokban (Basaria 2013) — 1,21 kg lean mass @ 1 mg/nap. Második leghíresebb SARM. 12+ DILI esetjelentés (Vilaca 2018). WADA tiltott.
+- [MK-2866 (Ostarine, Enobosarm)](https://molekulax.hu/teljesitmenyfokozok/ostarine): Non-szteroidal SARM (Enobosarm), GTx 2007. Legtöbb klinikai trial-adatú SARM: Phase II cachexia (Dalton 2011, 159 páciens) + Phase III POWER. Legnépszerűbb SARM, 'lágy első-SARM' UGL-marketing. WADA tiltott.
+- [YK-11 (Myostatin Inhibitor SARM)](https://molekulax.hu/teljesitmenyfokozok/yk-11): Szteroid-szerű SARM EGYEDÜLI dual-mechanizmussal: AR-agonista + myostatin-pathway inhibitor (follistatin-felregulálás, Kanno 2013). 17α-szteroid-szerű hepatotoxicitás-profil. Klinikai precedens NINCS emberben. WADA tiltott.
+- [S4 (Andarine, GTx-007)](https://molekulax.hu/teljesitmenyfokozok/s4): Non-szteroidal SARM, GTx Inc 2005. EGYEDI mellékhatás: dose-dependent sárga látás + éjszakai vakság (Marhefka 2004 — retinal opszin-binding). 'Cutting SARM' hírnévvel. WADA tiltott.
+- [S23 (Most Potent SARM)](https://molekulax.hu/teljesitmenyfokozok/s23): Non-szteroidal SARM, az SARM-osztály legpotensebb compoundja (~95% Test AR-binding, Jones 2009). Férfi-fogamzásgátló-jelölt (Jones 2010 rat-trial). Teljes HPTA-szuppresszió + intenzív mellékhatás. WADA tiltott.
+- [HGH](https://molekulax.hu/teljesitmenyfokozok/hgh-info): Rekombináns humán növekedési hormon (rhGH, Somatropin). Exogén GH-pótlás, sport-doppingként WADA-tiltott.
+- [EPO](https://molekulax.hu/teljesitmenyfokozok/epo-info): Rekombináns humán eritropoetin (rhEPO). Vörösvértest-termelés stimuláló, endurance-sportokban WADA-tiltott.
+- [DNP](https://molekulax.hu/teljesitmenyfokozok/dnp-info): NE HASZNÁLD. 2,4-dinitrofenol, halálos kimenetelű hipertermia kockázattal. Edukatív kontextus a veszélyek megismertetésére.
+- [Nolvadex (Tamoxifen)](https://molekulax.hu/teljesitmenyfokozok/nolvadex): Tamoxifen-citrát, 1962 ICI szintézis, FDA-jóváhagyott (1977) ER+ emlőkarcinómára. Az AAS-PCT golden-standard SERM — pituiter ER-blokád → LH/FSH-disinhibíció → endogén testosterone-recovery.
+- [Clomid (Clomiphene Citrate)](https://molekulax.hu/teljesitmenyfokozok/clomid): Clomiphene-citrát, Merrell 1956 szintézis, FDA-jóváhagyott (1967) női infertilitásra (ovulációs disfunkció). Racém keverék (zuclo + enclomiphene) — utóbbi a PCT-aktív fél.
+- [Enclomiphene (Androxal)](https://molekulax.hu/teljesitmenyfokozok/enclomiphene): A clomiphene tiszta trans-izomerje — Repros Therapeutics 2014-2016 Phase III hypogonadism trial-jelölt. Tisztább SERM-profil mint a Clomid (zuclomiphene-mentes), DE FDA-CRL 2016 → nem törzskönyvezett.
+- [Raloxifene (Evista)](https://molekulax.hu/teljesitmenyfokozok/raloxifene): Benzothiophene-SERM, FDA-jóváhagyott (1997 Lilly) postmenopauzális osteoporózisra + ER+ emlőkarcinóma chemoprevencióra. AAS-kontextusban niche használat: létező gynecomastia reverzálása erősebb mell-szelektivitással mint a Nolvadex.
+- [HCG (Pregnyl / Novarel / Choragon)](https://molekulax.hu/teljesitmenyfokozok/hcg-perf): Humán Chorionic Gonadotropin — LH-strukturális analóg, Leydig-sejt LHCGR-receptor stimulus. AAS-PCT bridge a testikulár-atrófia ellen és HPTA-restart-hoz. (Cross-frame: a future peptid-libben `hcg-peptid` fertility-clinic-framing-gel jön.)
+- [HMG (Menopur / Pergonal)](https://molekulax.hu/teljesitmenyfokozok/hmg-perf): Humán Menopauzális Gonadotropin — vizeletből kinyert FSH + LH 75/75 IU keverék. AAS-PCT-ben: teljes HPG-tengely restart (Sertoli-FSH-támogatás is, NEM csak Leydig-LH mint a HCG). Pergonal kivonva 2005-ben, Menopur modern alternatíva.
+- [FSH-rec (Gonal-F / Puregon)](https://molekulax.hu/teljesitmenyfokozok/fsh-rec-perf): Rekombináns FSH (CHO-expresszált) — szelektív Sertoli-FSHR stimulus, NINCS LH-aktivitás. AAS-PCT niche: azoospermia-recovery + Sertoli-támogatás HCG-LH mellett. Drága (€300+/75 IU vial EU).
+- [Anastrozol (Arimidex)](https://molekulax.hu/teljesitmenyfokozok/anastrozol): Triazole-class non-steroidal aromatáz-gátló (AI). FDA-jóváhagyott (1995 AstraZeneca) postmenopauzális ER+ emlőkarcinómára. AAS-ciklus E2-control golden-standard, 0.25-1 mg EOD-2x/hét bloodwork-titrálva.
+- [Letrozol (Femara)](https://molekulax.hu/teljesitmenyfokozok/letrozol): Triazole-class non-steroidal AI, az Anastrozolnál erősebb (~99% E2-szuppresszió 2.5 mg/nap). FDA-jóváhagyott (1997 Novartis). AAS-niche: hard-suppression Tren+Mast E2-control + gynecomastia-reverzálás (2.5 mg/nap 2-3 hét).
+- [Exemestane (Aromasin)](https://molekulax.hu/teljesitmenyfokozok/exemestane): Steroidal "suicide" (irreverzibilis) aromatáz-gátló. FDA-jóváhagyott (1999 Pfizer). Egyedi: 17-hydro-exemestane metabolit mild androgén — SHBG drop + free-Test rise visible. AAS-ban E2-stability vagy SHBG-emphasis-emphasizált választás.
+- [Cabergoline (Dostinex)](https://molekulax.hu/teljesitmenyfokozok/cabergoline): Long-acting ergot-D2-dopamin agonista. EMA-jóváhagyott (1992 Pharmacia, ma Pfizer) hyperprolaktinémiára. AAS-ban: 19-Nor/Tren prolactin-control golden-standard, 0.25-0.5 mg 2x/hét bloodwork-titrálva. Long t1/2 ~63 h.
+- [Bromocriptine (Parlodel)](https://molekulax.hu/teljesitmenyfokozok/bromocriptine): Első generációs ergot-D2-DA-agonista, Sandoz 1972 (Parlodel). Cabergoline elődje; rövidebb felezés (~3-12 h), több vegetatív mellékhatás (nausea, hypotensio). Cycloset (2009 FDA) T2DM-indikációval is.
+- [Pramipexole (Mirapex)](https://molekulax.hu/teljesitmenyfokozok/pramipexole): Non-ergot D3-D2 szelektív DA-agonista. FDA-jóváhagyott (1997 Boehringer) Parkinsonra + restless leg-re. AAS-PCT niche: prolactin-control + szexuális stimulácó (D3-szelektivitás). FDA black-box ICD-rizikó (impulzus-kontroll zavar).
+- [Finasteride (Propecia / Proscar)](https://molekulax.hu/teljesitmenyfokozok/finasteride): Szelektív type-II 5α-reduktáz gátló. FDA-jóváhagyott (Proscar 1992 BPH 5 mg, Propecia 1997 AGA 1 mg). AAS-ban: scalp DHT-szuppresszió genetikailag prediszponált felhasználóknál a hajhullás lassítására. Type-I 5AR nem gátolt.
+- [Dutasteride (Avodart)](https://molekulax.hu/teljesitmenyfokozok/dutasteride): Dual 5α-reduktáz gátló (type-I + type-II). FDA-jóváhagyott (2001 GSK) BPH-ra. AAS-ban: ~90% scalp DHT + acne-csökkentés. Long t1/2 ~5 hét — washout ~6 hónap. PFS-rizikó magasabb mint Finasteride-on.
+- [RU58841 (PSK-3841 / HMR-3841)](https://molekulax.hu/teljesitmenyfokozok/ru58841): Periférás non-steroidal AR-antagonista (NEM 5α-reduktáz gátló) — Roussel-Uclaf 1992 designer. Topikális AGA-research-chemical. Phase II 1996 terminálva systemikus feminizáció miatt. Modern UGL-formulák lokal-only claim-jét sparse data támasztja alá.
+- [Kisspeptin-10](https://molekulax.hu/teljesitmenyfokozok/kisspeptin-10): 10 aminosav C-terminál kisspeptin-fragmens — hypothalamic GPR54 → GnRH-pulse → LH/FSH. Legfelsőbb axis-restart pont a HPG-tengelyben. Imperial College London Phase I-II 2020-as években; research-emerging.
+- [Gonadorelin (Factrel / Lutrelef)](https://molekulax.hu/teljesitmenyfokozok/gonadorelin): Szintetikus 10 aminosav GnRH — direkt pituiter GnRH-R stimulus, LH/FSH-release. FDA Factrel 1982 (kivonva US 2008); EMA Lutrelef pulsatile-pump hypothalamic-hipogonadism Rx. Continuous dose paradox-downregulation prostate-cancer kezelésben.
+- [Pregnenolone](https://molekulax.hu/teljesitmenyfokozok/pregnenolone): "Master steroid" — endogén szteroid-precursor (cholesterol → pregnenolone → összes szteroid-hormon). OTC supplement. Evidence quality LOW: orális biodostupnošć gyenge (~5-10%), neurosztiered NMDA/GABA hatás kis kognitív-előny. AAS-PCT niche.
+- [DHEA (Dehydroepiandrosterone)](https://molekulax.hu/teljesitmenyfokozok/dhea): Endogén adrenális androgén-precursor (cholesterol → DHEA → androstenedione → Test). US-OTC, EU-Rx. Jobb evidence mint a Pregnenolone, de a fiatal egészséges férfin minimális Test-emelkedés + ~15-20% E2-rise. WADA S1.1.b listára vett (banned).
+- [Mirabegron (Myrbetriq)](https://molekulax.hu/teljesitmenyfokozok/mirabegron): Mirabegron-citrát, Astellas 2012 FDA-jóváhagyott szelektív β3-agonist OAB-Rx. BAT-szövet aktivációval thermogenic off-label fat-loss use (Cypess 2015 PMID 25437872).
+- [Liothyronine (T3, Cytomel)](https://molekulax.hu/teljesitmenyfokozok/liothyronine): Szintetikus T3 (3,5,3'-triiodothyronine), Pfizer 1956 FDA-jóváhagyott hypothyroidism Rx (Cytomel). Cutting-cycle off-label thermogenic +10-30% REE; WADA in-competition banned non-Rx athletán.
+- [Levothyroxine (T4, Synthroid)](https://molekulax.hu/teljesitmenyfokozok/levothyroxine): Szintetikus T4 (3,5,3',5'-tetraiodothyronine), Knoll/AbbVie 1955 FDA-jóváhagyott hypothyroidism Rx gold-standard (Synthroid). Prohormon — hepatikus + renalis 5'-deiodinase (D1/D2) konvertálja aktív T3-má. Cutting-cycle off-label use kevésbé jellemző mint T3.
+- [ECA-stack (Ephedrine + Caffeine + Aspirin)](https://molekulax.hu/teljesitmenyfokozok/eca-stack): Ephedrine 25 mg + Caffeine 200 mg + Aspirin 81 mg klasszikus 1990-es évek thermogenic-stack. Astrup 1992 Lancet (PMID 1346830) ~3x potensebb mint ephedrine önállóan; FDA 2004 ephedra-ban óta EU Rx-only.
+- [Super-Shred (lipotropic blend)](https://molekulax.hu/teljesitmenyfokozok/super-shred): Compounded INJEKTÁLHATÓ lipotrop zsírégető koktél (a klasszikus 'lipo shot' archetípus): L-Carnitine 400 mg + MIC blend 100 mg (Methionine + Inositol + Choline) + ATP 50 mg + Albuterol 2 mg + B12 1 mg. Zsírsav-transzport (carnitine) + hepatikus lipotropikumok (MIC) + béta-2 termogén (albuterol) + kofaktorok (ATP, B12) egy fecskendőben. Az Albuterol miatt WADA-tiltott, és kardiovaszkuláris kockázatot hordoz. A klinikai fogyás-evidence az egyes komponensekre van, NEM a keverékre.
+- [L-Carnitine](https://molekulax.hu/teljesitmenyfokozok/l-carnitine): Kvaterner ammónium-vegyület, endogén lizin+metionin-precursorból szintetizálódó mitokondriális long-chain fatty acid shuttle (carnitine palmitoyltransferase I/II). Sigma-Tau 1985 FDA primary carnitine deficiency Rx; bodybuilding off-label 1990s. WADA: allowed, NADA Germany 2018 monitored >50 mg/kg IV.
+- [GW-501516 (Cardarine)](https://molekulax.hu/teljesitmenyfokozok/gw-501516): PPARδ-agonista GlaxoSmithKline-fejlesztés (NEM AR-binding). GSK 2007 belső Sprague-Dawley rat 2-éves karcinogenicitás (intestinal + hepatocellular tumors) → Phase II terminated (Sprenger 2010 PMID 20189836). RESEARCH-ONLY chemical, ne használd; WADA S4.5 banned 2009 óta.
+- [ATX-304](https://molekulax.hu/teljesitmenyfokozok/atx-304): Perifériásan korlátozott, orálisan aktív kismolekulás pan-AMPK (AMP-aktivált protein-kináz) és mitokondrium-aktivátor, zsírvesztő/kardiometabolikus kutatási vegyület. Phase 2 klinikai fejlesztésben obesity + cardiometabolic disease-re (Amplifier Therapeutics, Cambrian BioPharma). NEM jóváhagyott gyógyszer – INVESTIGATIONAL státusz.
+- [Sobetirome (GC-1)](https://molekulax.hu/teljesitmenyfokozok/sobetirome): Orálisan aktív, szelektív pajzsmirigyhormon-receptor béta (TRβ) agonista thyromimetikum (kutatási kód: GC-1). Szelektíven kötődik a TRβ-1-hez (EC50 ~0.16 μM), kíméli a szívizom TRα-t, a T3 kedvező metabolikus/lipid-hatásait célozza a tipikus hyperthyreoid szívmellékhatások nélkül. INVESTIGATIONAL: Phase 1 lezárva (~2008), Phase 2 a metabolikus indikációra NEM zajlott.
+- [SANA (MVD-1)](https://molekulax.hu/teljesitmenyfokozok/sana-mvd1): Klinikai-fázisú small molecule (Eolo Pharma, fejlesztési kód MVD1), amely a kreatin-függő termogenezist (a termogén/bézs zsír 'futile creatine cycle'-ját) aktiválja, így az ENERGIALEADÁST emeli – nem az étvágyat csökkenti, mint a GLP-1 szerek. A 3 hivatkozott tanulmány a PATHWAY-t igazolja, NEM a SANA-t. Vizsgálati státusz, NEM engedélyezett.
+- [SLU-PP-915](https://molekulax.hu/teljesitmenyfokozok/slu-pp-915): Pan-ERR (ösztrogén-rokon receptor α/β/γ) agonista "exercise-mimetic" kutatási vegyület, az SLU-PP-332 utódja a Burris-laborból (Saint Louis University). Kulcskülönbség: ORÁLISAN BIOHASZNOSULÓ (a 332 NEM) és in vivo potensebb – hasonló futás-/aerob-kapacitás-emelést ér el a 332 felénél kisebb dózison. RESEARCH-ONLY, NINCS humán-trial.
+- [5-Amino-1MQ](https://molekulax.hu/teljesitmenyfokozok/5-amino-1mq): Designer methylquinoline NNMT-inhibitor (nicotinamide N-methyltransferase). PRECLINICAL-ONLY — Kraus 2014 Nature (PMID 24622204) NNMT-knockdown obese-mouse-evidence; Neelakantan 2018 (PMID 28425865) 5-amino-1MQ molecule-design. Humán-trial NEM létezik.
+- [MOTS-c](https://molekulax.hu/teljesitmenyfokozok/mots-c): Mitochondrial-derived peptide (16 aminosav, 12S rRNA mtDNA-encoded), Lee 2015 Cell Metab PMID 25738457 felfedezés. AMPK-aktivátor, glükóz-homeostázis + insulin-sensitization preclinical-evidence; humán Phase 1/2 trial preliminary, fat-loss-effect szubtilis.
+- [SLU-PP-332](https://molekulax.hu/teljesitmenyfokozok/slu-pp-332): ERRα (Estrogen-related receptor alpha) synthetic-agonist, Salk 2024 preprint (Billon et al. bioRxiv) — preclinical-only, egér-trial exercise-mimetic evidence. NINCS humán PK / safety data; "exercise-mimetic" myth-marketing 2024 óta.
+- [BAM15](https://molekulax.hu/teljesitmenyfokozok/bam15): Mitokondriális protonophore uncoupler, DNP-rokon mechanism (Alexopoulos 2020 Nat Comms PMID 32848134), DE safer therapeutic window preclinical-evidence. BAT-thermogenic-aktivátor + insulin-sensitization obese-mice; humán-trial NEM aktív 2026 januárig.
+
+## Gyógyszerek Könyvtár
+
+https://molekulax.hu/gyogyszerek
+
+- [Metformin](https://molekulax.hu/gyogyszerek/metformin): A 2-es típusú cukorbetegség első-vonal orális kezelése világszerte. WHO Essential Medicines, ADA és EASD guideline-anchor 1957 óta.
+- [Atorvastatin](https://molekulax.hu/gyogyszerek/atorvastatin): A leginkább felírt nagy-intenzitású statin, HMG-CoA reduktáz-gátló. AHA/ACC és ESC lipid-guideline-anchor 1996 óta. Primer és szekunder ASCVD-prevenció gold standard.
+- [Tadalafil](https://molekulax.hu/gyogyszerek/tadalafil): Hosszú felezési idejű (17,5 óra) PDE5-inhibitor. FDA-jóváhagyott erektilis diszfunkcióra (Cialis), benignus prostata-hiperpláziára (BPH) és pulmonális artériás hipertóniára (Adcirca).
+- [Bupropion](https://molekulax.hu/gyogyszerek/bupropion): Norepinefrin-dopamin reuptake gátló (NDRI) atipikus antidepresszáns. MDD + szezonális affektív zavar + dohányzás-leszokás (Zyban) indikációkkal. Nem szexuális diszfunkciót okoz, kevéssé szedáló.
+- [Modafinil](https://molekulax.hu/gyogyszerek/modafinil): Ébrenléti-promotáló szer, FDA-jóváhagyott narkolepszia, műszak-munka alvászavar, OSA-adjunkt indikációkkal. DEA Schedule IV. Off-label kognitív-fokozás MolekulaX Nootropikum-könyvtárában külön framing.
+- [Levothyroxin (L-T4)](https://molekulax.hu/gyogyszerek/levothyroxin): Szintetikus tiroxin (T4) hormon-pótlás hipotireózisra. WHO Essential Medicines, az egyik legtöbbet felírt gyógyszer globálisan. ATA és ETA endokrin-guideline-anchor.
+- [Finasteride](https://molekulax.hu/gyogyszerek/finasteride): 5α-reduktáz II-es típusú szelektív gátló. FDA-jóváhagyott androgenetikus alopeciára (Propecia 1 mg) és BPH-ra (Proscar 5 mg). A DHT képződés ~70%-kal csökkenti.
+- [Amoxicillin](https://molekulax.hu/gyogyszerek/amoxicillin): Széles spektrumú β-laktám penicillin-osztálybeli antibiotikum. WHO Essential Medicines, az egyik legtöbbet felírt antibiotikum a világon. Standard első-vonal otitisz, sinusitis, pneumonia, UTI, dentális prophylaxis és H. pylori eradikáció.
+- [Empagliflozin](https://molekulax.hu/gyogyszerek/empagliflozin): SGLT2-inhibitor (Jardiance), Boehringer Ingelheim/Eli Lilly. T2DM + HFrEF/HFpEF + CKD kardio-reno-protektív gyógyszer.
+- [Escitalopram](https://molekulax.hu/gyogyszerek/escitalopram): SSRI, citalopram S-enantiomere (Lundbeck Lexapro/Cipralex). MDD + szorongásos zavarok első-vonal Rx. Cipriani 2018 meta szerint top-3 hatékonyság.
+- [Fluoxetine](https://molekulax.hu/gyogyszerek/fluoxetine): Az első SSRI (Eli Lilly Prozac, FDA 1987). Ultra-hosszú felezési idő (4-6 nap), pediátriai MDD-re FDA-jóváhagyott.
+- [Methylphenidate](https://molekulax.hu/gyogyszerek/methylphenidate): DAT/NET-inhibitor stimuláns, ADHD első-vonal Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, visszaélés-potenciál szignifikáns.
+- [Rosuvastatin](https://molekulax.hu/gyogyszerek/rosuvastatin): Hidrofil, nagy-intenzitású statin (AstraZeneca Crestor). JUPITER-trial alapján primer ASCVD-prevenció emelt CRP-nél is. Kevés CYP-interakció.
+- [Hydrocortisone](https://molekulax.hu/gyogyszerek/hydrocortisone): Természetes glükokortikoid (Cortef), Addison-betegség és mellékvese-elégtelenség élethosszig tartó hormon-pótlása. Standard 15-25 mg/nap.
+- [Liothyronine (T3)](https://molekulax.hu/gyogyszerek/liothyronine): Szintetikus T3 trijodotironin (Cytomel). Specifikus indikációkban (mixedéma-kóma, T4-konverzió-zavar, MDD-augmentáció). NEM rutin-választás.
+- [Ciprofloxacin](https://molekulax.hu/gyogyszerek/ciprofloxacin): Fluorokinolon antibiotikum (Bayer Cipro). UTI, gasztrointesztinális + komplex Gram-negatív infekciók. FDA boxed warning: ínszakadás + perifériás neuropátia.
+- [Doxycycline](https://molekulax.hu/gyogyszerek/doxycycline): Tetraciklin antibiotikum (Vibramycin). Lyme, malária-prevenció, acne, klamidia, atipikus pneumónia. 100 mg standard.
+- [Tamoxifen](https://molekulax.hu/gyogyszerek/tamoxifen): Szelektív ösztrogén receptor modulátor (SERM). Hormonreceptor-pozitív emlőkarcinóma adjuváns és metastatikus kezelése (Nolvadex).
+- [Minoxidil](https://molekulax.hu/gyogyszerek/minoxidil): K-csatorna-aktivátor topikális vagy orális szer (Rogaine, Loniten + LDOM). Két adagolási mód, eltérő szisztémás expozícióval.
+- [Isotretinoin](https://molekulax.hu/gyogyszerek/isotretinoin): 13-cisz-retinoinsav (Roche Roaccutane). Súlyos acne nodulocystica gold-standard. FDA X kategória súlyos teratogenitás miatt — iPLEDGE program kötelező.
+- [Tretinoin](https://molekulax.hu/gyogyszerek/tretinoin): Topikális retinoid all-transz-retinoinsav. Acne, fotoöregedés, hiperpigmentáció kezelés. Bőrgyógyászati gold-standard.
+- [Orforglipron (LY3502970)](https://molekulax.hu/gyogyszerek/orforglipron): Eli Lilly napi egyszer szedhető, KIS MOLEKULÁJÚ ORÁLIS GLP-1 receptor agonista (LY3502970). Phase 3 obesity + T2DM trial-ok 2026-ban folyamatban, FDA-jóváhagyás várt 2026-2027.
+
