@@ -38,6 +38,9 @@ const PREFIX = { hu: '', en: '/en', pl: '/pl' }
 const OG_LOCALE = { hu: 'hu_HU', en: 'en_US', pl: 'pl_PL' }
 const HOME_LABEL = { hu: 'Főoldal', en: 'Home', pl: 'Strona główna' }
 const COMPARISON_LABEL = { hu: 'Összehasonlítások', en: 'Comparisons', pl: 'Porównania' }
+// The localized "what it is" row label renders ONLY after the detail page's async member load
+// resolves — used as the prerender wait-guard so we never capture the loading skeleton.
+const COMPARISON_WHATIS = { hu: 'Mi ez', en: 'What it is', pl: 'Co to jest' }
 // Per-entry content-modified dates (committed; generated locally by gen-entry-dates.mjs,
 // since Vercel's shallow build clone can't run per-file git log). Empty if absent.
 let entryDates = {}
@@ -91,7 +94,17 @@ function computeShellHash() {
   return h.digest('hex')
 }
 function contentHashFor(route) {
-  if (!route.isEntry) return null // non-entry pages (home/library) depend only on shell inputs
+  // Comparison detail depends on its members' per-lang entry data (which is EXCLUDED from
+  // shellHash), so hash those files — else a member edit would serve a stale cached table.
+  if (route.isComparison && route.members) {
+    const h = createHash('sha256')
+    for (const id of route.members) {
+      const p = join(repoRoot, 'src', 'data', 'libraries', route.lib, 'entries', route.lang, `${id}.js`)
+      try { h.update(readFileSync(p)) } catch {}
+    }
+    return h.digest('hex')
+  }
+  if (!route.isEntry) return null // non-entry pages (home/library/comparison-index) depend only on shell inputs
   const p = join(repoRoot, 'src', 'data', 'libraries', route.libId, 'entries', route.lang, `${route.id}.js`)
   try { return sha(readFileSync(p)) } catch { return null }
 }
@@ -129,7 +142,9 @@ async function buildRoutes() {
   for (const c of COMPARISONS) {
     const cmpUrl = (l) => `${PREFIX[l]}/${COMPARISON_BASE[l]}/${c.slug}`
     for (const lang of LANGS) {
-      routes.push({ lang, urlPath: cmpUrl(lang), diskPath: diskFor(lang, COMPARISON_BASE[lang], c.slug), name: null, libId: null, libraryName: null, hreflang: altMap(cmpUrl), isComparison: true, comparisonTitle: c.title })
+      // `name` = the post-load "what it is" label so waitRendered waits for the rendered
+      // table (not the skeleton). members + lib feed contentHashFor for cache correctness.
+      routes.push({ lang, urlPath: cmpUrl(lang), diskPath: diskFor(lang, COMPARISON_BASE[lang], c.slug), name: COMPARISON_WHATIS[lang], libId: null, libraryName: null, hreflang: altMap(cmpUrl), isComparison: true, comparisonTitle: c.title, members: c.members, lib: c.lib })
     }
   }
   for (const libId of LIBS) {
@@ -303,7 +318,7 @@ async function coldBootPage(browser, route) {
   // so networkidle never settles on the slow build Chromium -> 60s nav timeout.
   // waitRendered() then waits for the real content to render + settle.
   await page.goto(`http://127.0.0.1:${PORT}${route.urlPath}`, { waitUntil: 'domcontentloaded', timeout: 60000 })
-  await waitRendered(page, route.isEntry ? route.name : null)
+  await waitRendered(page, (route.isEntry || route.isComparison) ? route.name : null)
   return page
 }
 
@@ -313,8 +328,8 @@ async function coldBootPage(browser, route) {
 // the same cap. The name-guard doubles as a stale-cache tripwire (a reused cap that no
 // longer contains the entry name throws -> the caller re-renders it).
 function writeRoute(template, route, cap) {
-  if (route.isEntry && !normHyphens(cap.root).includes(normHyphens(route.name))) {
-    throw new Error(`prerender ${route.urlPath}: rendered #root does not contain entry name "${route.name}" (skeleton/stale-cache?)`)
+  if ((route.isEntry || route.isComparison) && !normHyphens(cap.root).includes(normHyphens(route.name))) {
+    throw new Error(`prerender ${route.urlPath}: rendered #root does not contain "${route.name}" (skeleton/stale-cache?)`)
   }
   const canonical = ORIGIN + route.urlPath
   // Prefer the rendered (localized) meta description; route.desc is the HU shortDesc
@@ -491,7 +506,7 @@ async function main() {
               window.dispatchEvent(new PopStateEvent('popstate'))
               return t
             }, r.urlPath)
-            await waitRenderedAfterNav(page, r.isEntry ? r.name : null, prevTitle)
+            await waitRenderedAfterNav(page, (r.isEntry || r.isComparison) ? r.name : null, prevTitle)
             uses++; warmNavs++
           }
           const cap = await captureAndWrite(page, template, r)
