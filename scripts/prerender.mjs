@@ -360,7 +360,10 @@ async function renderOne(browser, template, route) {
 // extraction + args) is resolved ONCE here so launching N browsers at once never
 // races on the executable extraction.
 async function makeLauncher() {
-  if (process.env.VERCEL) {
+  // PRERENDER_FULL_CHROMIUM forces the fast full multi-process Chromium even under VERCEL=1
+  // (e.g. local `vercel build` for a prebuilt deploy), bypassing @sparticuz's slow
+  // --single-process build. On the real Vercel build container, leave it unset.
+  if (process.env.VERCEL && !process.env.PRERENDER_FULL_CHROMIUM) {
     const chromium = (await import('@sparticuz/chromium')).default
     const puppeteerCore = (await import('puppeteer-core')).default
     const executablePath = await chromium.executablePath()
