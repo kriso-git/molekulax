@@ -25,6 +25,28 @@ export default {
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Miejscowy retinoid kwas all-trans-retinowy. Trądzik, fotostarzenie, leczenie hiperpigmentacji. Dermatologiczny złoty standard.",
   "description": "Tretynoina (kwas all-trans-retinowy) to pierwszy miejscowy retinoid (Ortho Retin-A, FDA 1971), dermatologiczny standard w trądziku + anti-aging. Aktywacja receptora retinoidowego (RAR) normalizuje keratynizację mieszkową (mechanizm trądziku), przyspiesza syntezę kolagenu (anti-aging) i zmniejsza pigmentację melaniny (hiperpigmentacja). Powszechne stężenia: 0,025%, 0,05%, 0,1% krem lub żel. Vs izotretynoina jest miejscowa – nieukładowa, ryzyko ciążowe ZNACZNIE NIŻSZE, ale unikać u kobiet w wieku rozrodczym.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "D10AD01"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx), nadzór dermatologa"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Agonista receptorów RAR-α/β/γ (kwas all-trans-retinowy)"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "Miejscowo, minimalne wchłanianie systemowe"
+    },
+    {
+      "label": "Początek",
+      "value": "8-12 tyg. (trądzik), 4-6 mies. (anti-aging)"
+    }
+  ],
   "mechanism": "Aktywacja receptorów RAR-α/β/γ → modulacja transkrypcji genów → normalizacja keratynizacji + wzmocnienie kolagenu + redukcja melaniny.",
   "legalStatus": "UE/PL: na receptę (Atrederm, Locacid, Retin-A). USA: FDA Rx.",
   "bioavailability": "~20% (kapsułka doustna, zmienna – etykieta FDA Vesanoid; w leczeniu APL, NIE forma miejscowa)",

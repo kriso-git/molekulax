@@ -27,6 +27,28 @@ export default {
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Kwas 13-cis-retinowy (Roche Roaccutane). Złoty standard dla ciężkiego trądziku guzkowo-torbielowatego. Kategoria X FDA z powodu teratogenności – program iPLEDGE obowiązkowy.",
   "description": "Izotretynoina (Roche Roaccutane / Accutane, FDA 1982) to złoty standard leczenia ciężkiego trądziku guzkowo-torbielowatego. Kwas 13-cis-retinowy (metabolit witaminy A) powoduje atrofię gruczołów łojowych, redukcję produkcji łoju i hamowanie wzrostu P. acnes. EKSTREMALNA TERATOGENNOŚĆ (kategoria X FDA) – każda pacjentka musi uczestniczyć w programie zapobiegania ciąży (USA: iPLEDGE, UE: podobne krajowe programy). 2 negatywne testy ciążowe przed startem, 2 formy antykoncepcji obowiązkowe, comiesięczne testy. Layton 2009 (PMID 20436884) 6-miesięczny kurs daje trwałą remisję w ~80% przypadków.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "D10BA01"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx), iPLEDGE/prewencja ciąży"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Retinoid (agonista RAR), supresja gruczołów łojowych"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "~21 godz. (aktywny metabolit 4-oxo ~24 godz.)"
+    },
+    {
+      "label": "Początek",
+      "value": "4-8 tyg. (wstępna poprawa), 15-20 tyg. pełna kuracja"
+    }
+  ],
   "mechanism": "Częściowy agonista receptora retinoidowego (RAR). Atrofia gruczołów łojowych, redukcja produkcji łoju o ~80%, redukcja populacji P. acnes, normalizacja hiperkeratynizacji mieszkowej.",
   "legalStatus": "UE/PL: na receptę, ściśle nadzorowane przez dermatologa (Roaccutane). USA: FDA Rx program iPLEDGE.",
   "bioavailability": "~25% (doustnie, na czczo; >2× wyższa z posiłkiem wysokotłuszczowym – etykieta FDA Accutane)",

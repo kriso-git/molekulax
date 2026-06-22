@@ -90,6 +90,14 @@ export const COMPARISONS = [
     { display: { hu: 'Felezési idő', en: 'Half-life', pl: 'Okres półtrwania' }, match: { hu: ['Felezési idő'], en: ['Half-life'], pl: ['Okres półtrwania'] } },
     { display: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Początek działania' }, match: { hu: ['Hatáskezdet'], en: ['Onset'], pl: ['Początek działania', 'Początek'] } },
   ] },
+  // --- pharmaceutical same-library (Comparison v2 keyInfo backfill) ---
+  { slug: 'atorvastatin-vs-rosuvastatin', members: [{ id: 'atorvastatin', lib: 'pharmaceutical' }, { id: 'rosuvastatin', lib: 'pharmaceutical' }], title: 'Atorvastatin vs Rosuvastatin', topic: { hu: 'Statinok', en: 'Statins', pl: 'Statyny' } },
+  { slug: 'escitalopram-vs-fluoxetine', members: [{ id: 'escitalopram', lib: 'pharmaceutical' }, { id: 'fluoxetine', lib: 'pharmaceutical' }], title: 'Escitalopram vs Fluoxetine', topic: { hu: 'SSRI antidepresszánsok', en: 'SSRI antidepressants', pl: 'Antydepresanty SSRI' } },
+  { slug: 'isotretinoin-vs-tretinoin', members: [{ id: 'isotretinoin', lib: 'pharmaceutical' }, { id: 'tretinoin', lib: 'pharmaceutical' }], title: 'Isotretinoin vs Tretinoin', topic: { hu: 'Retinoidok', en: 'Retinoids', pl: 'Retinoidy' } },
+  { slug: 'amoxicillin-vs-ciprofloxacin-vs-doxycycline', members: [{ id: 'amoxicillin', lib: 'pharmaceutical' }, { id: 'ciprofloxacin', lib: 'pharmaceutical' }, { id: 'doxycycline', lib: 'pharmaceutical' }], title: 'Amoxicillin vs Ciprofloxacin vs Doxycycline', topic: { hu: 'Antibiotikumok', en: 'Antibiotics', pl: 'Antybiotyki' } },
+  { slug: 'metformin-vs-empagliflozin', members: [{ id: 'metformin', lib: 'pharmaceutical' }, { id: 'empagliflozin', lib: 'pharmaceutical' }], title: 'Metformin vs Empagliflozin', topic: { hu: 'Antidiabetikumok', en: 'Antidiabetics', pl: 'Leki przeciwcukrzycowe' } },
+  { slug: 'modafinil-vs-methylphenidate', members: [{ id: 'modafinil', lib: 'pharmaceutical' }, { id: 'methylphenidate', lib: 'pharmaceutical' }], title: 'Modafinil vs Methylphenidate', topic: { hu: 'Éberség-fokozók', en: 'Wakefulness agents', pl: 'Środki na czujność' } },
+  { slug: 'finasteride-vs-minoxidil', members: [{ id: 'finasteride', lib: 'pharmaceutical' }, { id: 'minoxidil', lib: 'pharmaceutical' }], title: 'Finasteride vs Minoxidil', topic: { hu: 'Hajhullás-kezelés', en: 'Hair-loss treatment', pl: 'Leczenie wypadania włosów' } },
 ]
 const SLUG_TO_COMPARISON = Object.fromEntries(COMPARISONS.map((c) => [c.slug, c]))
 

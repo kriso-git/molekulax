@@ -95,6 +95,28 @@ export default {
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Maść kortykosteroidowa o działaniu przeciwzapalnym na receptę (octan hydrokortyzonu 10 mg/g, 1%). Najsłabszy steroid miejscowy na łagodne stany zapalne skóry: atopowe i kontaktowe zapalenie skóry.",
   "description": "Maść Hydrocortison-Wagner 10 mg/g (1%) zawiera octan hydrokortyzonu, przeciwzapalny kortykosteroid – NAJSŁABSZĄ klasę steroidów miejscowych (klasa VII / grupa I UE). Leczy łagodne zapalne choroby skóry, głównie atopowe zapalenie skóry (egzema) i kontaktowe zapalenie skóry: zmniejsza stan zapalny, zaczerwienienie, obrzęk i świąd. Na nieuszkodzonej skórze, na małej powierzchni i krótko wchłanianie jest niskie (<1–3%), więc ryzyko jest głównie miejscowe; na dużych powierzchniach, w fałdach, na twarzy lub pod opatrunkiem okluzyjnym może dojść do znacznego wchłaniania i działania ogólnoustrojowego (niewydolność nadnerczy). Produkt na receptę/apteczny, stosowany zgodnie z zaleceniem lekarza.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "D07AA02"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Bez recepty (OTC), apteczny (1% miejscowo)"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Agonista receptora glukokortykoidowego (słaby steroid, grupa I)"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "1,2-2 godz. (wchłonięta frakcja ogólnoustrojowa)"
+    },
+    {
+      "label": "Początek",
+      "value": "Godziny do dni (miejscowe ustąpienie zapalenia i świądu)"
+    }
+  ],
   "mechanism": "Agonista receptora glukokortykoidowego (GR): w skórze hamuje mediatory zapalne (fosfolipazę-A2, cytokiny, prostaglandyny), działa obkurczająco na naczynia i immunomodulująco – zmniejsza zaczerwienienie, obrzęk, świąd i łuszczenie.",
   "legalStatus": "UE/HU: na receptę/apteczny (maść Hydrocortison-Wagner 10 mg/g). Najsłabsza klasa kortykosteroidów dermatologicznych (klasa VII / grupa I UE).",
   "bioavailability": "<1–3% wchłaniania przezskórnego na nieuszkodzonej skórze; znacznie wyższe na twarzy, w fałdach, na mosznie, pod okluzją i na uszkodzonej skórze",

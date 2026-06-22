@@ -27,6 +27,28 @@ export default {
   "tagColor": "rgba(236,72,153,0.18)",
   "shortDesc": "Szelektív ösztrogén receptor modulátor (SERM). Hormonreceptor-pozitív emlőkarcinóma adjuváns és metastatikus kezelése (Nolvadex).",
   "description": "A Tamoxifen az első klinikailag jelentős SERM, amelyet az AstraZeneca fejlesztett ki (Nolvadex, FDA 1977). Az ER+ emlőkarcinóma adjuváns kezelésében 5-10 éves protokollal a relapszus-kockázatot 50%-kal csökkenti (EBCTCG 2011 Lancet PMID 21684593). Premenopausal nőknél az aromatáz-inhibítor (Anastrozole, Letrozole) nem hatékony, ezért a Tamoxifen az első-vonal SERM. Mellékhatás-profil: thromboembólia (DVT, PE 2-3x emelkedés), endometrium-karcinóma kockázat (~2x), menopausal-szerű tünetek (hőhullám). Az ER+ DCIS prevenció és magas-rizikójú primer prevenció FDA-jóváhagyott (NSABP-P1 trial).",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "L02BA01"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx), onkológus felügyelet"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Szelektív ösztrogén receptor modulátor (SERM), emlőben antagonista"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "5-7 nap (anyavegyület), N-dezmetil-metabolit ~14 nap"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "Hónapok-évek (adjuváns klinikai válasz)"
+    }
+  ],
   "mechanism": "Tkivat-specifikus ösztrogén receptor moduláció: emlőszövetben ANTAGONISTA, csontban + endometriumban + májban PARCIÁLIS AGONISTA. Aktív metabolitok (4-hidroxitamoxifen, endoxifen) CYP2D6-tól függenek – gyenge metabolizálóknál csökkent hatékonyság.",
   "legalStatus": "EU/HU: vényköteles (Nolvadex, Tamoxen, generikus). USA: FDA Rx.",
   "bioavailability": "~100% (orális, \"well-absorbed\", Tmax ~5 óra – FDA Soltamox/Nolvadex label)",

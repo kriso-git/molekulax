@@ -105,6 +105,21 @@ export const GLOSSARY = [
   { key: 'peptide-hydrolysate', match: { hu: ['peptid-hidrolizátum', 'hidrolizátum'], en: ['peptide hydrolysate', 'hydrolysate'], pl: ['hydrolizat'] },
     term: { hu: 'Peptid-hidrolizátum', en: 'Peptide hydrolysate', pl: 'Hydrolizat peptydowy' },
     def: { hu: 'Fehérje (gyakran állati agyszövet) lebontásából nyert, kis peptidek keverékét tartalmazó injekciós készítmény.', en: 'An injectable preparation containing a mix of small peptides obtained by breaking down a protein (often animal brain tissue).', pl: 'Iniekcyjny preparat zawierający mieszaninę małych peptydów uzyskanych przez rozkład białka (często tkanki mózgowej zwierząt).' } },
+  { key: 'retinoid', match: { hu: ['retinoid'], en: ['retinoid'], pl: ['retinoid'] },
+    term: { hu: 'Retinoid', en: 'Retinoid', pl: 'Retinoid' },
+    def: { hu: 'A-vitamin-származék vegyület-osztály, amely a retinoidreceptorokon (RAR/RXR) keresztül a sejtdifferenciációt és a bőrhám megújulását szabályozza.', en: 'A class of vitamin-A-derived compounds that regulate cell differentiation and skin renewal via the retinoid receptors (RAR/RXR).', pl: 'Klasa związków pochodnych witaminy A, regulujących różnicowanie komórek i odnowę naskórka przez receptory retinoidowe (RAR/RXR).' } },
+  { key: 'antibiotic', match: { hu: ['antibiotikum'], en: ['antibiotic'], pl: ['antybiotyk'] },
+    term: { hu: 'Antibiotikum', en: 'Antibiotic', pl: 'Antybiotyk' },
+    def: { hu: 'Baktériumokat elpusztító vagy szaporodásukat gátló vegyület-osztály; mechanizmus szerint több alcsoportra oszlik (pl. sejtfal-, fehérjeszintézis- vagy DNS-gátlók).', en: 'A class of compounds that kill bacteria or stop their growth; divided by mechanism into subgroups (e.g. cell-wall, protein-synthesis or DNA inhibitors).', pl: 'Klasa związków zabijających bakterie lub hamujących ich wzrost; dzielona według mechanizmu na podgrupy (np. inhibitory ściany komórkowej, syntezy białek lub DNA).' } },
+  { key: 'antidiabetic', match: { hu: ['antidiabetikum'], en: ['antidiabetic'], pl: ['przeciwcukrzyc'] },
+    term: { hu: 'Antidiabetikum', en: 'Antidiabetic', pl: 'Lek przeciwcukrzycowy' },
+    def: { hu: 'A vércukorszint csökkentésére használt gyógyszer-osztály; különböző mechanizmusokkal hat (pl. inzulinérzékenyítés, vesén át történő glükóz-ürítés, inkretin-hatás).', en: 'A class of drugs used to lower blood glucose, acting by different mechanisms (e.g. insulin sensitisation, renal glucose excretion, incretin effect).', pl: 'Klasa leków obniżających poziom glukozy we krwi, działających różnymi mechanizmami (np. uwrażliwianie na insulinę, wydalanie glukozy przez nerki, efekt inkretynowy).' } },
+  { key: 'wakefulness', match: { hu: ['éberség'], en: ['wakefulness'], pl: ['czujno'] },
+    term: { hu: 'Éberség-fokozó', en: 'Wakefulness agent', pl: 'Środek na czujność' },
+    def: { hu: 'Az éberséget és a figyelmi teljesítményt növelő vegyületek gyűjtőkategóriája (pl. klasszikus stimulánsok és eugeroikumok).', en: 'An umbrella category of compounds that increase wakefulness and attentional performance (e.g. classic stimulants and eugeroics).', pl: 'Zbiorcza kategoria związków zwiększających czujność i wydajność uwagi (np. klasyczne stymulanty i eugeroiki).' } },
+  { key: 'hairloss', match: { hu: ['hajhullás'], en: ['hair-loss', 'hair loss'], pl: ['wypadania włos', 'wypadanie włos'] },
+    term: { hu: 'Hajhullás-kezelés', en: 'Hair-loss treatment', pl: 'Leczenie wypadania włosów' },
+    def: { hu: 'Az androgén-eredetű hajhullás (androgenetikus alopécia) kezelésére használt vegyületek kategóriája; eltérő mechanizmusokkal (pl. a DHT csökkentése vagy a hajhagyma-perfúzió fokozása).', en: 'A category of compounds used to treat androgen-related hair loss (androgenetic alopecia) by different mechanisms (e.g. reducing DHT or increasing follicle perfusion).', pl: 'Kategoria związków stosowanych w leczeniu wypadania włosów pochodzenia androgenowego (łysienie androgenowe) różnymi mechanizmami (np. obniżanie DHT lub zwiększanie perfuzji mieszków).' } },
 ]
 
 // Find the glossary entry whose lang-specific root appears in `text` (a Dimension label or a

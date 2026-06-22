@@ -27,6 +27,28 @@ export default {
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "13-cisz-retinoinsav (Roche Roaccutane). Súlyos acne nodulocystica gold-standard. FDA X kategória súlyos teratogenitás miatt – iPLEDGE program kötelező.",
   "description": "Az Isotretinoin (Roche Roaccutane / Accutane, FDA 1982) a súlyos acne nodulocystica gold-standard kezelése. A 13-cisz-retinoinsav (a vitamin A metabolitja) a sebáceus-mirigy atrofizálását, talgproducció-csökkenést és Propionibacterium acnes-növekedés gátlását okozza. EXTRÉM TERATOGENITÁS (FDA X kategória) – minden női páciensnek a TERHESSÉG-MEGELŐZŐ programmba kell részt vennie (USA: iPLEDGE, EU: hasonló nemzeti programok). 2 negatív terhességi teszt indítás előtt, 2 forma fogamzásgátlás kötelező, havi teszt. Layton 2009 (PMID 20436884) 6 hónapos kúrája az esetek ~80%-ában tartós remissziót okoz. Mellékhatás-profil JELENTŐS: szárazság (száj, szem, bőr, ajak), izomfájdalom, májfunkció-zavar, depresszió-rizikó.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "D10BA01"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx), iPLEDGE/terhességi prevenció"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Retinoid (RAR-agonista), faggyúmirigy-szuppresszió"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "~21 óra (aktív 4-oxo-metabolit ~24 óra)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "4-8 hét (kezdeti javulás), 15-20 hét teljes kúra"
+    }
+  ],
   "mechanism": "Retinoid receptor (RAR) parciális agonista. Sebaceus-mirigy atrofizálása, talgproducció ~80%-os csökkentése, Propionibacterium acnes-populáció csökkentés, follikuláris hiperkeratinizáció normalizálása. Multimodális anti-acne hatás.",
   "legalStatus": "EU/HU: vényköteles, bőrgyógyász szigorúan ellenőrzött protokoll (Roaccutane). USA: FDA Rx iPLEDGE-program.",
   "bioavailability": "~25% (orális, éhgyomri; magas-zsírtartalmú étkezéssel >2× emelkedik – FDA Accutane label)",

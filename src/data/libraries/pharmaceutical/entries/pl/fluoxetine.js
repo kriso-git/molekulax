@@ -27,6 +27,28 @@ export default {
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Pierwszy SSRI (Eli Lilly Prozac, FDA 1987). Ultra-długi okres półtrwania (4-6 dni), zatwierdzony przez FDA dla pediatrycznego MDD.",
   "description": "Fluoksetyna to pionier klasy SSRI (Eli Lilly Prozac, FDA 1987), pierwszy klinicznie udany lek selektywny dla serotoniny. Ultra-długa farmakokinetyka (lek macierzysty 4-6 dni, aktywny metabolit norfluoksetyna 4-16 dni) oznacza powolny steady-state (4-5 tygodni), ale łagodniejszy zespół odstawienny (auto-taper). JEDYNY SSRI z zatwierdzeniem FDA dla PEDIATRYCZNEGO MDD (wiek 8+), plus OCD i bulimia. Badanie Stark 2003 (PMID 14692046) udokumentowało skuteczność w pediatrycznym MDD. Generyczny, przystępny cenowo. Silny inhibitor CYP2D6 powodujący klinicznie istotne interakcje.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "N06AB03"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx)"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Selektywny inhibitor wychwytu zwrotnego serotoniny (SSRI), hamowanie SERT"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "4-6 dni (parent), norfluoksetyna ~16 dni"
+    },
+    {
+      "label": "Początek",
+      "value": "4-6 tyg. (pełna odpowiedź przeciwdepresyjna)"
+    }
+  ],
   "mechanism": "Selektywne hamowanie SERT. Umiarkowany antagonizm 5-HT2C (może przyczyniać się do łagodnego aktywująco-nastrojowego efektu). Metabolit NORFLUOKSETYNA jest podobnie aktywny i farmakologicznie identyczny.",
   "legalStatus": "UE/PL: na receptę (Prozac, Fluctin, Floxet, generyki). USA: FDA Rx.",
   "bioavailability": "Nieokreślone bezwzględnie (brak postaci IV); 60-80% względem roztworu doustnego – etykieta FDA Prozac",

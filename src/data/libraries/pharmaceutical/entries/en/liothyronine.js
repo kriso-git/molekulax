@@ -25,6 +25,28 @@ export default {
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Synthetic T3 triiodothyronine (Cytomel). Specific indications (myxedema coma, T4-conversion impairment, MDD augmentation). NOT routine choice.",
   "description": "Liothyronine is the synthetic form of active T3 hormone (Cytomel, FDA 1956). NOT routine in hypothyroidism – levothyroxine (T4) provides physiologic T3 via endogenous deiodinase conversion. Specific indications: (1) MYXEDEMA COMA emergency treatment (fast-onset T3 IV), (2) subjective symptomatic hypothyroidism on levothyroxine with normal TSH (suspected T4-T3 conversion impairment, ETA 2012 PMID 24782999 debate), (3) MDD augmentation (Cooper-Kazaz 2007 PMID 17888912 treatment-resistant MDD), (4) DTC suppression post-thyroidectomy with fast onset. Short half-life (1 day vs T4 7 days), so 2-3x/day dosing required, harder to achieve stable levels.",
+  "keyInfo": [
+    {
+      "label": "ATC code",
+      "value": "H03AA02"
+    },
+    {
+      "label": "Prescription",
+      "value": "Prescription only (Rx)"
+    },
+    {
+      "label": "Mechanism",
+      "value": "Synthetic T3 (triiodothyronine) hormone replacement, direct thyroid receptor agonist"
+    },
+    {
+      "label": "Half-life",
+      "value": "about 2.5 days (~60 h, shorter than T4)"
+    },
+    {
+      "label": "Onset",
+      "value": "within a few hours (max effect 2-3 days)"
+    }
+  ],
   "mechanism": "Direct T3 replacement, NOT requiring T4 → T3 peripheral deiodinase conversion. Immediately activates thyroid receptor.",
   "legalStatus": "EU/HU: prescription only (Cytomel, Thybon). USA: FDA Rx (Cytomel).",
   "bioavailability": "95% (oral, within 4 hours – FDA Cytomel label)",

@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "SSRI, citalopram S-enantiomere (Lundbeck Lexapro/Cipralex). MDD + szorongásos zavarok első-vonal Rx. Cipriani 2018 meta szerint top-3 hatékonyság.",
   "description": "Az Escitalopram a citalopram aktív S-enantiomere (R-enantiomer farmakológiailag inaktív, sőt enyhén interferálhat). A Lundbeck fejlesztette ki (Lexapro FDA 2002), az SSRI-osztály egyik legtisztább SERT-szelektivitású gyógyszere. A Cipriani 2018 Lancet (PMID 29477251) Network Meta-Analízis szerint a 21 antidepresszáns közül a top-3 hatékonyság-tolerabilitás arányban (mellette Vortioxetin, Mirtazapin). Lader 2004 (PMID 15125014) trial szerint MDD-ben szuperior a citalopramhoz képest 8 hét után. Általában jobb tolerabilitás-profil, mint a citalopramnak, és QTc-prolongáció kockázat alacsonyabb (FDA 2011 figyelmeztetés citalopramra > 40 mg/nap, escitalopramra > 20 mg/nap).",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "N06AB10"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx)"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Szelektív szerotonin-visszavétel-gátló (SSRI), SERT-célpont"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "27-32 óra (napi egyszeri adagolás)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "2-6 hét (teljes antidepresszáns válasz)"
+    }
+  ],
   "mechanism": "A SERT (szerotonin transzporter) szelektív, allosztérikus inhibitor. Magasabb SERT-szelektivitás, mint a többi SSRI-nak. Nincs jelentős affinitása más receptorokhoz.",
   "legalStatus": "EU/HU: vényköteles (Cipralex, Lexapro, generikus). USA: FDA Rx.",
   "bioavailability": "~80% (orális, étkezéstől független – FDA Lexapro label)",

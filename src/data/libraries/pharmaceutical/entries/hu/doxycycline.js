@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Tetraciklin antibiotikum (Vibramycin). Lyme, malária-prevenció, acne, klamidia, atipikus pneumónia. 100 mg standard.",
   "description": "A Doxycycline egy hosszú-hatású tetraciklin (Pfizer Vibramycin, FDA 1967). A bakteriális 30S riboszomális alegységet gátolja (aminoacyl-tRNS-kötés blokk). Spektrum: atipikus organizmusok (Mycoplasma, Chlamydia, Rickettsia, Borrelia, Treponema), néhány Gram-pozitív (Staphylococcus érzékeny törzsek), Helicobacter pylori (másodlagos vonal). Klinikailag legjelentősebb indikációi: Lyme-betegség korai stádium, atipikus pneumónia, klamidia STD, malária-prevenció (utazás), súlyos acne (alacsony dózis krónikusan). Mellékhatás-profil általában jól tolerált, fototoxicitás és GI-mellékhatás a leggyakoribb.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "J01AA02"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx)"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "30S riboszóma-kötő fehérjeszintézis-gátló (tetraciklin, bakteriosztatikus)"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "18-22 óra (napi 1-2x adagolás)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "24-48 óra (klinikai válasz)"
+    }
+  ],
   "mechanism": "30S riboszomális alegység-blokk → aminoacyl-tRNS nem tud kötődni → fehérje-szintézis blokk. Bakteriosztatikus.",
   "legalStatus": "EU/HU: vényköteles (Vibramycin, Doxakne, generikus). USA: FDA Rx.",
   "bioavailability": "~95-100% (orális, \"virtually completely absorbed\" – FDA Vibramycin label)",

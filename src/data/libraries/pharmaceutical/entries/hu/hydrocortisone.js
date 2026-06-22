@@ -95,6 +95,28 @@ export default {
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Vényköteles, gyulladáscsökkentő kortikoszteroid kenőcs (hidrokortizon-acetát 10 mg/g, 1%). A legenyhébb külsőleges szteroid enyhe bőrgyulladásokra: atópiás és kontakt dermatitisz.",
   "description": "A Hydrocortison-Wagner 10 mg/g (1%) kenőcs hatóanyaga a hidrokortizon-acetát, amely a gyulladáscsökkentő kortikoszteroidok csoportjába tartozik – ez a külsőleges szteroidok LEGENYHÉBB osztálya (Class VII / EU I. csoport). Enyhe gyulladásos bőrbetegségek, elsősorban atópiás dermatitisz (ekcéma) és kontakt dermatitisz kezelésére alkalmazzák: csökkenti a gyulladást, a pírt, az ödémát és a viszketést. Ép bőrön, kis felületen, rövid ideig alkalmazva a felszívódás csekély (<1–3%), így a kockázat főként lokális; nagy felületen, hajlatokban, arcon vagy zárt kötés alatt azonban jelentős felszívódás és szisztémás hatás (mellékvesekéreg-elégtelenség) léphet fel. Vényköteles/patikai készítmény, alkalmazása orvosi utasítás szerint.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "D07AA02"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vény nélküli (OTC), patikai (1% külsőleges)"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Glükokortikoid-receptor agonista (gyenge szteroid, I. csoport)"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "1,2-2 óra (felszívódott szisztémás frakció)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "Órák-napok (helyi gyulladás- és viszketéscsökkenés)"
+    }
+  ],
   "mechanism": "Glükokortikoid-receptor (GR) agonista: a bőrben gátolja a gyulladásos mediátorok (foszfolipáz-A2, citokinek, prosztaglandinok) termelődését, érösszehúzó és immunmoduláló hatású – csökkenti a pírt, ödémát, viszketést és hámlást.",
   "legalStatus": "EU/HU: vényköteles/patikai (Hydrocortison-Wagner 10 mg/g kenőcs). A dermatológiai kortikoszteroidok legenyhébb osztálya (Class VII / EU I. csoport).",
   "bioavailability": "<1–3% perkután felszívódás ép bőrön; arcon, hajlatokban, herezacskón, occlusio alatt és sérült bőrön jelentősen magasabb",

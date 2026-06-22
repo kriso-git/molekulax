@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Slim, theme-tinted scrollbars (the chunky OS-default bars look harsh on the dark theme).
+   Applies to the window, the entry-detail modal scroll, and any inner scroll container. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(129, 140, 248, 0.40) transparent;
+}
+*::-webkit-scrollbar { width: 9px; height: 9px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: rgba(129, 140, 248, 0.32);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+*::-webkit-scrollbar-thumb:hover { background: rgba(129, 140, 248, 0.55); }
+*::-webkit-scrollbar-corner { background: transparent; }
+
 @font-face {
   font-family: 'Corporea';
   src: url('/fonts/CORPOREA.TTF') format('truetype');

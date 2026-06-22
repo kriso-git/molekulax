@@ -25,10 +25,33 @@ export default {
     { "hu": "Interakció guanetidinnel (orális): súlyos ortosztatikus hipotenzió kockázata; egyidejű antihipertenzívumok mellett szoros vérnyomás-monitorozás kell.", "en": "Interaction with guanethidine (oral): risk of severe orthostatic hypotension; close blood-pressure monitoring is required with concurrent antihypertensives.", "pl": "Interakcja z guanetydyną (doustnie): ryzyko ciężkiej hipotensji ortostatycznej; przy jednoczesnych lekach hipotensyjnych konieczne jest ścisłe monitorowanie ciśnienia." }
   ],
   "name": "Minoxidil",
+  "image": "/pharmaceutical/minoxidil-topical.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Aktywator kanałów K, środek miejscowy lub doustny (Rogaine, Loniten + LDOM). Leczenie łysienia androgenowego od 1988 – dwie drogi podania z bardzo różnym profilem ekspozycji systemowej.",
   "description": "Minoxidil został pierwotnie opracowany jako doustny lek przeciwnadciśnieniowy (Loniten, 1979). Hipertrychoza obserwowana jako działanie uboczne doprowadziła do opracowania formulacji miejscowych dla łysienia (Upjohn Rogaine 2% 1988, 5% 1996). Dwie drogi podania mają fundamentalnie odmienne profile farmakokinetyczne: wchłanianie systemowe miejscowe wynosi <2%, więc wpływ na ciśnienie krwi jest minimalny; doustna LDOM (0,25–5 mg/dzień) zapewnia ekspozycję systemową, skuteczniejszą niż miejscowa (Perera & Sinclair 2017 PMID 29167734), ale wymaga monitorowania sercowo-naczyniowego.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "D11AX01 (miejscowy); doustny C02DC01"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Bez recepty (OTC) miejscowo; doustny na receptę (Rx)"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Otwieracz kanałów K ATP-zależnych (wazodylatator); aktywowany przez SULT1A1"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "22 godz. (miejscowy); 3-4 godz. (doustny)"
+    },
+    {
+      "label": "Początek",
+      "value": "2-4 miesiące (widoczny odrost włosów)"
+    }
+  ],
   "mechanism": "Otwarcie kanałów K ATP-zależnych → wazodylatacja + perfuzja mieszka włosowego. Wtórnie: aktywny metabolit (siarczan minoxidilu) aktywowany przez sulfotransferazę (SULT1A1), wzrost prostaglandyny E2. Wariancja aktywności enzymu SULT1A1 daje ~40–50% non-responderów na poziomie populacji (Goren 2014).",
   "cyp450": [
     "Aktywacja przez sulfotransferazę (SULT1A1)",

@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Antybiotyk tetracyklinowy (Vibramycin). Lyme, profilaktyka malarii, trądzik, chlamydia, atypowe zapalenie płuc. Standard 100 mg.",
   "description": "Doksycyklina to długodziałająca tetracyklina (Pfizer Vibramycin, FDA 1967). Hamuje podjednostkę rybosomalną 30S (blok wiązania aminoacylo-tRNA). Spektrum: atypowe (Mycoplasma, Chlamydia, Rickettsia, Borrelia, Treponema), niektóre Gram-dodatnie, H. pylori (druga linia). Kluczowe wskazania: wczesna Lyme, atypowe zapalenie płuc, chlamydia STD, profilaktyka malarii (podróże), ciężki trądzik. Profil ogólnie dobrze tolerowany, fotouczulenie i GI najczęstsze.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "J01AA02"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx)"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Inhibitor syntezy białek wiążący rybosom 30S (tetracyklina, bakteriostatyczny)"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "18-22 godz. (raz lub dwa razy dziennie)"
+    },
+    {
+      "label": "Początek",
+      "value": "24-48 godz. (odpowiedź kliniczna)"
+    }
+  ],
   "mechanism": "Blok podjednostki 30S → aminoacylo-tRNA nie może się związać → blok syntezy białek. Bakteriostatyczna.",
   "legalStatus": "UE/PL: na receptę (Vibramycin, Doxakne, generyki). USA: FDA Rx.",
   "bioavailability": "~95-100% (doustnie, \"praktycznie całkowicie wchłaniana\" – etykieta FDA Vibramycin)",

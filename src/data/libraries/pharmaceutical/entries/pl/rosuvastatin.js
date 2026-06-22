@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(220,38,38,0.18)",
   "shortDesc": "Hydrofilna statyna o wysokiej intensywności (AstraZeneca Crestor). JUPITER ustanowił prewencję pierwotną ASCVD nawet przy podwyższonym CRP. Mało interakcji CYP.",
   "description": "Rozuwastatyna to hydrofilna inhibitor reduktazy HMG-CoA (AstraZeneca Crestor, FDA 2003). Najmocniejsza statyna pod względem intensywności – 40 mg/dzień daje ~60-63% redukcję LDL (vs atorwastatyna 80 mg ~55%). Badanie JUPITER (Ridker 2008 NEJM PMID 18997196) ustanowiło prewencję pierwotną ASCVD u pacjentów z podwyższonym CRP, normo-LDL. Mniej CYP-zaangażowana niż atorwastatyna (głównie CYP2C9, mały CYP3A4), mniej interakcji. Profil działań podobny do innych statyn.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "C10AA07"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx)"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Inhibitor reduktazy HMG-CoA (statyna hydrofilna)"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "19 godz. (raz dziennie, o dowolnej porze)"
+    },
+    {
+      "label": "Redukcja LDL",
+      "value": "50-55% (wysoka intensywność, 20-40 mg)"
+    }
+  ],
   "mechanism": "Hydrofilne konkurencyjne hamowanie reduktazy HMG-CoA. Wyższa potencja, mniej efektów plejotropowych. Redukcja CRP nawet przy normo-LDL.",
   "legalStatus": "UE/PL: na receptę (Crestor, Roswera, generyki). USA: FDA Rx.",
   "bioavailability": "~20% (doustnie – etykieta FDA Crestor)",

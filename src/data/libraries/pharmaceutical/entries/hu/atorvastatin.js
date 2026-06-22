@@ -45,8 +45,8 @@ export default {
       "value": "14 óra (aktív metabolitokkal 20-30 óra)"
     },
     {
-      "label": "LDL-csökkenés (40-80 mg)",
-      "value": "50-60% (nagy-intenzitású)"
+      "label": "LDL-csökkenés",
+      "value": "50-60% (nagy-intenzitású, 40-80 mg)"
     }
   ],
   "mechanism": "A máj-sejtek HMG-CoA reduktáz-enzimét kompetitíven gátolja, ami a mevalonát-pathway csökkentését eredményezi (de novo koleszterin-szintézis lassítása). A csökkent intracelluláris koleszterin az LDL-receptorok up-regulációjához vezet, ami a keringő LDL-t a májba clear-eli. Pleiotróp hatások: gyulladás-csökkentés (CRP-csökkenés a JUPITER trial-ben), endotel-funkció javítása, plakk-stabilizáció.",
