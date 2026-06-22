@@ -4,7 +4,7 @@ import { getLevelMeta, LEVEL_META, makeSortComparator } from '../data/libraries/
 import { useLang } from '../i18n/LanguageContext'
 import {
  ChevronDown, Search, Star, SlidersHorizontal, X,
- ArrowDownAZ, ArrowUpAZ, BarChart3,
+ ArrowDownAZ, ArrowUpAZ, BarChart3, GitCompareArrows,
 } from 'lucide-react'
 import EntryImage from './EntryImage'
 import TelegramButtons from './TelegramButtons'
@@ -14,7 +14,10 @@ import PerformanceCategoryCards from './library/PerformanceCategoryCards'
 import FormFactorChipRow from './library/FormFactorChipRow'
 import { RETURN_STATE_KEY } from './library/returnState'
 import { navigate } from '../router/location'
-import { entryPath } from '../seo/urls'
+import { entryPath, comparisonsForEntry } from '../seo/urls'
+
+// Tile indicator label (Phase D): the compound has at least one published comparison.
+const COMPARE_LABEL = { hu: 'Van összehasonlítás', en: 'Has a comparison', pl: 'Ma porównanie' }
 
 // ── Tile ─────────────────────────────────────────────────────────────────────
 // Tile layout:
@@ -44,6 +47,7 @@ const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSe
  const levelMeta = getLevelMeta(level)
  const catIds = (library.entryCategoryMap[peptide.id] || [])
  const accent = peptide.accentColor
+ const hasComparison = comparisonsForEntry(library.id, peptide.id).length > 0
 
  return (
  // Real <a href> so Googlebot can follow library -> compound (the primary crawl
@@ -157,15 +161,26 @@ const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSe
  >
  {peptide.name}
  </p>
+ <span className="shrink-0 mt-1 flex items-center gap-1.5">
+ {hasComparison && (
+ <GitCompareArrows
+ size={13}
+ strokeWidth={2.25}
+ aria-label={COMPARE_LABEL[lang] || COMPARE_LABEL.hu}
+ title={COMPARE_LABEL[lang] || COMPARE_LABEL.hu}
+ style={{ color: '#818cf8' }}
+ />
+ )}
  <span
  aria-label={tr(levelMeta.label)}
  title={tr(levelMeta.label)}
- className="shrink-0 mt-1 w-2.5 h-2.5 rounded-full"
+ className="w-2.5 h-2.5 rounded-full"
  style={{
  background: levelMeta.color,
  boxShadow: `0 0 8px ${levelMeta.color}88`,
  }}
  />
+ </span>
  </div>
 
  {/* Tier label */}
