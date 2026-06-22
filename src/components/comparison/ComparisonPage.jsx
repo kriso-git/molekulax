@@ -4,6 +4,7 @@ import { COMPARISONS, homePath } from '../../seo/urls'
 import { loadEntry, listLibraries } from '../../data/libraries'
 import { buildComparison } from './buildComparison'
 import DimensionIcon from './DimensionIcon'
+import MemberAvatar from './MemberAvatar'
 import { navigate } from '../../router/location'
 import Footer from '../Footer'
 
@@ -40,23 +41,6 @@ function navTo(e, to) {
   if (!to || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return
   e.preventDefault()
   navigate(to)
-}
-
-// Member avatar = the compound's image floating on its own accentColor radial glow (echoes
-// the entry-page hero, scaled down). Falls back to the name's initial when an entry has no
-// image. Decorative; the surrounding link carries the accessible name.
-function MemberAvatar({ member, size }) {
-  const accent = member?.accent || '#818cf8'
-  return (
-    <span
-      className="relative inline-flex items-center justify-center rounded-full shrink-0"
-      style={{ width: size, height: size, background: `radial-gradient(circle at 50% 42%, ${accent}33, transparent 72%)`, border: `1px solid ${accent}44` }}
-    >
-      {member?.image
-        ? <img src={member.image} alt="" loading="lazy" className="object-contain" style={{ width: '78%', height: '78%' }} />
-        : <span className="font-bold" style={{ color: accent, fontSize: size * 0.4 }}>{(member?.name || '?').charAt(0)}</span>}
-    </span>
-  )
 }
 
 export default function ComparisonPage({ lang = 'hu', slug }) {
@@ -109,7 +93,7 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
                 {m
                   ? (
                     <a href={m.href} onClick={(e) => navTo(e, m.href)} className="group flex flex-col items-center gap-2 no-underline w-24">
-                      <MemberAvatar member={m} size={64} />
+                      <MemberAvatar accent={m.accent} image={m.image} name={m.name} size={72} />
                       <span className="text-center text-xs font-bold leading-tight transition-colors group-hover:text-[#818cf8]" style={{ color: 'var(--text-primary)' }}>{m.name}</span>
                       <span className="h-0.5 w-8 rounded-full" style={{ background: m.accent }} />
                     </a>
@@ -143,7 +127,7 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
                         {m
                           ? (
                             <a href={m.href} onClick={(e) => navTo(e, m.href)} className="group inline-flex flex-col items-center gap-2 no-underline">
-                              <MemberAvatar member={m} size={56} />
+                              <MemberAvatar accent={m.accent} image={m.image} name={m.name} size={80} />
                               <span className="text-base font-bold tracking-wide transition-colors group-hover:text-[#818cf8]" style={{ color: 'var(--text-primary)' }}>{m.name}</span>
                             </a>
                           )
