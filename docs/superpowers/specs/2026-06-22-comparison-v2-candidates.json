@@ -1,0 +1,63 @@
+{
+  "_note": "GROUNDED Comparison v2 publish set (Phase A source of truth), validated against real entry keyInfo via scripts/tmp-validate-comparisons.mjs. 21 original-valid + 7 backfill + 2 working cross-lib = 30 new. SAME-LIB comparisons omit `dimensions` (the keyInfo-label union is already clean within a library). CROSS-LIB comparisons carry `dimensions` = the literal shared HU labels; Phase A converts these to {hu,en,pl} triplets (verified against en/pl entry files) so they match in every language. topic.en/topic.pl are localized in Phase A. The 7 DROPPED-as-broken comparisons (no usable shared keyInfo) are listed under dropped_broken. Pharma keyInfo backfill is a SEPARATE future content sub-project (14 pharma entries lack keyInfo).",
+  "existing": [
+    { "slug": "ostarine-vs-rad-140", "members": [{ "id": "ostarine", "lib": "performance" }, { "id": "rad-140", "lib": "performance" }] },
+    { "slug": "semaglutide-vs-tirzepatide-vs-retatrutide", "members": [{ "id": "semaglutide", "lib": "peptides" }, { "id": "tirzepatide", "lib": "peptides" }, { "id": "retatrutide", "lib": "peptides" }] },
+    { "slug": "bpc-157-vs-tb-500", "members": [{ "id": "bpc-157", "lib": "peptides" }, { "id": "tb-500", "lib": "peptides" }] }
+  ],
+  "new": [
+    { "slug": "anastrozol-vs-letrozol-vs-exemestane", "crossLib": false, "topic": { "hu": "Aromatázgátlók (AI)" }, "members": [{ "id": "anastrozol", "lib": "performance" }, { "id": "letrozol", "lib": "performance" }, { "id": "exemestane", "lib": "performance" }], "sharedHu": 7 },
+    { "slug": "nolvadex-vs-clomid-vs-enclomiphene", "crossLib": false, "topic": { "hu": "SERM-ek (PCT)" }, "members": [{ "id": "nolvadex", "lib": "performance" }, { "id": "clomid", "lib": "performance" }, { "id": "enclomiphene", "lib": "performance" }], "sharedHu": 5 },
+    { "slug": "finasteride-vs-dutasteride", "crossLib": false, "topic": { "hu": "5α-reduktáz gátlók" }, "members": [{ "id": "finasteride", "lib": "performance" }, { "id": "dutasteride", "lib": "performance" }], "sharedHu": 6 },
+    { "slug": "modafinil-vs-armodafinil-vs-flmodafinil", "crossLib": false, "topic": { "hu": "Afinil-család (eugeroikumok)" }, "members": [{ "id": "modafinil", "lib": "nootropics" }, { "id": "armodafinil", "lib": "nootropics" }, { "id": "flmodafinil", "lib": "nootropics" }], "sharedHu": 3 },
+    { "slug": "liothyronine-vs-levothyroxine", "crossLib": false, "topic": { "hu": "Pajzsmirigyhormonok (T3/T4)" }, "members": [{ "id": "liothyronine", "lib": "performance" }, { "id": "levothyroxine", "lib": "performance" }], "sharedHu": 8 },
+    { "slug": "clenbuterol-vs-albuterol", "crossLib": false, "topic": { "hu": "β2-agonisták" }, "members": [{ "id": "clenbuterol", "lib": "performance" }, { "id": "albuterol", "lib": "performance" }], "sharedHu": 6 },
+    { "slug": "sermorelin-vs-cjc-1295-vs-tesamorelin", "crossLib": false, "topic": { "hu": "GHRH-analógok" }, "members": [{ "id": "sermorelin", "lib": "peptides" }, { "id": "cjc-1295", "lib": "peptides" }, { "id": "tesamorelin", "lib": "peptides" }], "sharedHu": 6 },
+    { "slug": "cabergoline-vs-bromocriptine-vs-pramipexole", "crossLib": false, "topic": { "hu": "Dopamin-agonisták (prolaktin-kontroll)" }, "members": [{ "id": "cabergoline", "lib": "performance" }, { "id": "bromocriptine", "lib": "performance" }, { "id": "pramipexole", "lib": "performance" }], "sharedHu": 7 },
+    { "slug": "sunifiram-vs-unifiram", "crossLib": false, "topic": { "hu": "Ampakinok (AMPA-PAM)" }, "members": [{ "id": "sunifiram", "lib": "nootropics" }, { "id": "unifiram", "lib": "nootropics" }], "sharedHu": 3 },
+    { "slug": "ghrp-2-vs-ghrp-6-vs-hexarelin", "crossLib": false, "topic": { "hu": "GHRP szekretagógok" }, "members": [{ "id": "ghrp-2", "lib": "peptides" }, { "id": "ghrp-6", "lib": "peptides" }, { "id": "hexarelin", "lib": "peptides" }], "sharedHu": 6 },
+    { "slug": "lgd-4033-vs-s23-vs-s4", "crossLib": false, "topic": { "hu": "Non-szteroidal SARM-ok" }, "members": [{ "id": "lgd-4033", "lib": "performance" }, { "id": "s23", "lib": "performance" }, { "id": "s4", "lib": "performance" }], "sharedHu": 8 },
+    { "slug": "alpha-gpc-vs-cdp-choline", "crossLib": false, "topic": { "hu": "Kolin-prekurzorok" }, "members": [{ "id": "alpha-gpc", "lib": "nootropics" }, { "id": "cdp-choline", "lib": "nootropics" }], "sharedHu": 3 },
+    { "slug": "mazdutide-vs-survodutide", "crossLib": false, "topic": { "hu": "GLP-1/glukagon kettős agonisták" }, "members": [{ "id": "mazdutide", "lib": "peptides" }, { "id": "survodutide", "lib": "peptides" }], "sharedHu": 6 },
+    { "slug": "phenibut-vs-f-phenibut", "crossLib": false, "topic": { "hu": "GABA-B agonisták (Phenibut-család)" }, "members": [{ "id": "phenibut", "lib": "nootropics" }, { "id": "f-phenibut", "lib": "nootropics" }], "sharedHu": 3 },
+    { "slug": "melanotan-1-vs-melanotan-2", "crossLib": false, "topic": { "hu": "α-MSH analógok" }, "members": [{ "id": "melanotan-1", "lib": "peptides" }, { "id": "melanotan-2", "lib": "peptides" }], "sharedHu": 3 },
+    { "slug": "selank-vs-adalank", "crossLib": false, "topic": { "hu": "Tuftsin-analóg nootropok" }, "members": [{ "id": "selank", "lib": "peptides" }, { "id": "adalank", "lib": "peptides" }], "sharedHu": 6 },
+    { "slug": "hcg-perf-vs-hmg-perf-vs-fsh-rec-perf", "crossLib": false, "topic": { "hu": "Gonadotropinok (tengely-újraindítás)" }, "members": [{ "id": "hcg-perf", "lib": "performance" }, { "id": "hmg-perf", "lib": "performance" }, { "id": "fsh-rec-perf", "lib": "performance" }], "sharedHu": 4 },
+    { "slug": "slu-pp-332-vs-slu-pp-915", "crossLib": false, "topic": { "hu": "ERR-agonista exercise-mimetikumok" }, "members": [{ "id": "slu-pp-332", "lib": "performance" }, { "id": "slu-pp-915", "lib": "performance" }], "sharedHu": 4 },
+    { "slug": "semax-vs-na-semax-amidate-vs-adamax", "crossLib": false, "topic": { "hu": "Semax (ACTH 4-10) származékok" }, "members": [{ "id": "semax", "lib": "peptides" }, { "id": "na-semax-amidate", "lib": "peptides" }, { "id": "adamax", "lib": "peptides" }], "sharedHu": 5 },
+    { "slug": "adrafinil-vs-fladrafinil", "crossLib": false, "topic": { "hu": "Modafinil-prodrug eugeroikumok" }, "members": [{ "id": "adrafinil", "lib": "nootropics" }, { "id": "fladrafinil", "lib": "nootropics" }], "sharedHu": 3 },
+    { "slug": "semax-vs-selank", "crossLib": false, "topic": { "hu": "Orosz intranazális neuropeptidek" }, "members": [{ "id": "semax", "lib": "nootropics" }, { "id": "selank", "lib": "nootropics" }], "sharedHu": 7 },
+    { "slug": "pramiracetam-vs-coluracetam", "crossLib": false, "topic": { "hu": "HACU-fokozó racetamok" }, "members": [{ "id": "pramiracetam", "lib": "nootropics" }, { "id": "coluracetam", "lib": "nootropics" }], "sharedHu": null, "backfill": true },
+    { "slug": "cerebrolysin-vs-cortexin", "crossLib": false, "topic": { "hu": "Injektálható agyi peptid-hidrolizátumok" }, "members": [{ "id": "cerebrolysin", "lib": "nootropics" }, { "id": "cortexin", "lib": "nootropics" }], "sharedHu": null, "backfill": true },
+    { "slug": "gonadorelin-vs-kisspeptin", "crossLib": false, "topic": { "hu": "GnRH-tengely aktivátorok" }, "members": [{ "id": "gonadorelin", "lib": "peptides" }, { "id": "kisspeptin", "lib": "peptides" }], "sharedHu": null, "backfill": true },
+    { "slug": "pregnenolone-vs-dhea", "crossLib": false, "topic": { "hu": "Endogén szteroid-prekurzorok" }, "members": [{ "id": "pregnenolone", "lib": "performance" }, { "id": "dhea", "lib": "performance" }], "sharedHu": null, "backfill": true },
+    { "slug": "melanotan-2-vs-pt-141", "crossLib": false, "topic": { "hu": "Melanokortinreceptor-agonisták" }, "members": [{ "id": "melanotan-2", "lib": "peptides" }, { "id": "pt-141", "lib": "peptides" }], "sharedHu": null, "backfill": true },
+    { "slug": "ashwagandha-vs-rhodiola-vs-bacopa", "crossLib": false, "topic": { "hu": "Adaptogének (stressz/kogníció)" }, "members": [{ "id": "ashwagandha", "lib": "nootropics" }, { "id": "rhodiola", "lib": "nootropics" }, { "id": "bacopa", "lib": "nootropics" }], "sharedHu": 3, "backfill": true },
+    { "slug": "hmg-perf-vs-hmg-peptid", "crossLib": true, "topic": { "hu": "HMG: tengely-restart és fertilitás-keret" }, "members": [{ "id": "hmg-perf", "lib": "performance" }, { "id": "hmg-peptid", "lib": "peptides" }], "dimensions": [
+      { "display": { "hu": "Hatásmechanizmus", "en": "Mechanism of action", "pl": "Mechanizm działania" }, "match": { "hu": ["Hatásmechanizmus"], "en": ["Mechanism"], "pl": ["Mechanizm"] } },
+      { "display": { "hu": "Felezési idő", "en": "Half-life", "pl": "Okres półtrwania" }, "match": { "hu": ["Felezési idő"], "en": ["Half-life"], "pl": ["Okres półtrwania"] } },
+      { "display": { "hu": "Jogi státusz", "en": "Legal status", "pl": "Status prawny" }, "match": { "hu": ["Jogi státusz"], "en": ["Legal status"], "pl": ["Status prawny"] } }
+    ], "sharedHu": 3 },
+    { "slug": "finasteride-performance-vs-pharmaceutical", "crossLib": true, "sameId": true, "topic": { "hu": "Finasteride: teljesítmény-keret és gyógyszer-keret" }, "members": [{ "id": "finasteride", "lib": "performance" }, { "id": "finasteride", "lib": "pharmaceutical" }], "dimensions": [
+      { "display": { "hu": "Hatásmechanizmus", "en": "Mechanism of action", "pl": "Mechanizm działania" }, "match": { "hu": ["Hatásmechanizmus"], "en": ["Mechanism"], "pl": ["Mechanizm"] } },
+      { "display": { "hu": "Felezési idő", "en": "Half-life", "pl": "Okres półtrwania" }, "match": { "hu": ["Felezési idő"], "en": ["Half-life"], "pl": ["Okres półtrwania"] } },
+      { "display": { "hu": "Hatáskezdet", "en": "Onset", "pl": "Początek działania" }, "match": { "hu": ["Hatáskezdet"], "en": ["Onset"], "pl": ["Początek działania", "Początek"] } }
+    ], "sharedHu": 4 }
+  ],
+  "dropped_broken": [
+    "atorvastatin-vs-rosuvastatin (rosuvastatin has 0 keyInfo)",
+    "escitalopram-vs-fluoxetine (both 0 keyInfo)",
+    "levothyroxin-vs-liothyronine pharma (pharma liothyronine 0 keyInfo)",
+    "nolvadex-vs-tamoxifen cross (pharma tamoxifen 0 keyInfo)",
+    "liothyronine performance-vs-pharmaceutical cross (pharma liothyronine 0 keyInfo)",
+    "hgh-vs-hgh-info cross (peptide hgh uses STRUCTURAL keyInfo Típus/Szerkezet; 0 shared with performance pharmacological labels)",
+    "hgh-info-vs-cjc-1295-ipamorelin-vs-ipamorelin cross GH-axis (same structural-vs-pharmacological vocab mismatch; 0 shared)",
+    "hcg-perf-vs-hcg-peptid cross (only 2 shared labels, below the 3 threshold)",
+    "hcg-peptid-vs-hmg-peptid within-peptides (only 2 shared labels Hatásmechanizmus+Felezési idő, below threshold)"
+  ],
+  "pharma_keyinfo_gap": {
+    "_note": "SEPARATE future content sub-project. Only 8/22 pharma entries have keyInfo. Filling the missing 14 (from SmPC/openFDA, 3 langs) would unlock statin/SSRI/thyroid/retinoid comparisons AND add the quick-facts strip to those entry pages.",
+    "have_keyinfo": ["amoxicillin", "atorvastatin", "bupropion", "finasteride", "levothyroxin", "metformin", "modafinil", "tadalafil"],
+    "missing_keyinfo": ["ciprofloxacin", "doxycycline", "empagliflozin", "escitalopram", "fluoxetine", "hydrocortisone", "isotretinoin", "liothyronine", "methylphenidate", "minoxidil", "orforglipron", "rosuvastatin", "tamoxifen", "tretinoin"]
+  }
+}
