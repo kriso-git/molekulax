@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "Inhibitor SGLT2 (Jardiance), Boehringer Ingelheim/Eli Lilly. Lek kardio-renoprotekcyjny dla T2DM + HFrEF/HFpEF + CKD.",
   "description": "Empagliflozyna to selektywny inhibitor SGLT2 (kotransporter sodowo-glukozowy 2), blokujący reabsorpcję glukozy w proksymalnym kanaliku nerkowym, powodując utratę 60-90 g glukozy dziennie z moczem (glikozuria). Zatwierdzony przez FDA dla T2DM (2014), HFrEF (EMPEROR-Reduced 2020 PMID 32865377), HFpEF (EMPEROR-Preserved 2021 PMID 34449189) i CKD (EMPA-KIDNEY 2023 PMID 36331190). Badanie EMPA-REG OUTCOME (Zinman 2015 NEJM PMID 26378978) to pierwsze badanie SGLT2i z dodatnim MACE – wykazało 38% redukcję względnej śmiertelności CV w T2DM + ASCVD.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "A10BK03"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx)"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Inhibitor SGLT2 (kotransporter sodowo-glukozowy 2), kanalik proksymalny"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "~12,4 godz. (raz dziennie)"
+    },
+    {
+      "label": "Początek",
+      "value": "Glukozuria po pierwszej dawce; zmiany HbA1c i ciśnienia w ciągu kilku tygodni"
+    }
+  ],
   "mechanism": "Selektywne hamowanie SGLT2 (kotransporter sodowo-glukozowy 2) w proksymalnym kanaliku nerkowym. Rezultat: utrata 60-90 g glukozy/dzień z moczem, obniżając HbA1c mechanizmem niezależnym od insuliny. Efekty wtórne: diureza osmotyczna (redukcja BP), efekt na poziomie nefronu (spadek ciśnienia wewnątrzkłębuszkowego, ochrona CKD), łagodne podniesienie ketonów (kardioprotekcja).",
   "legalStatus": "UE/PL: na receptę (Jardiance, Synjardy = empagliflozyna + metformina). USA: FDA Rx.",
   "bioavailability": "~78% (doustnie – etykieta FDA Jardiance, sekcja 12.3)",

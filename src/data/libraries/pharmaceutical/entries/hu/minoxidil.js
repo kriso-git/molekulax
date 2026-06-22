@@ -25,10 +25,33 @@ export default {
     { "hu": "Interakció guanetidinnel (orális): súlyos ortosztatikus hipotenzió kockázata; egyidejű antihipertenzívumok mellett szoros vérnyomás-monitorozás kell.", "en": "Interaction with guanethidine (oral): risk of severe orthostatic hypotension; close blood-pressure monitoring is required with concurrent antihypertensives.", "pl": "Interakcja z guanetydyną (doustnie): ryzyko ciężkiej hipotensji ortostatycznej; przy jednoczesnych lekach hipotensyjnych konieczne jest ścisłe monitorowanie ciśnienia." }
   ],
   "name": "Minoxidil",
+  "image": "/pharmaceutical/minoxidil-topical.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "K-csatorna-aktivátor topikális vagy orális szer (Rogaine, Loniten + LDOM). Androgenetikus alopecia kezelés 1988 óta – két adagolási mód, eltérő szisztémás expozícióval.",
   "description": "A Minoxidil eredetileg orális antihipertenzív szerként (Loniten 1979) lett kifejlesztve, de a mellékhatásként megjelenő hipertrichózis miatt topikális formulációt fejlesztettek alopecia kezelésére (Upjohn Rogaine 2% 1988, 5% 1996). A két adagolási forma alapjaiban különböző farmakokinetikai profillal rendelkezik: a topikális szisztémás abszorpciója <2%, így a vérnyomás-hatás minimális; az orális LDOM (0,25–5 mg/nap) szisztémás expozíciót ad, hatékonyabb mint a topikális (Perera & Sinclair 2017 PMID 29167734), de monitorálandó kardiovaszkuláris profilt igényel.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "D11AX01 (topikális); orális C02DC01"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vény nélküli (OTC) topikális; orális vényköteles (Rx)"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "ATP-érzékeny K-csatorna-nyitó (vazodilatátor); SULT1A1 aktiválja"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "22 óra (topikális); 3-4 óra (orális)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "2-4 hónap (látható hajnövekedés)"
+    }
+  ],
   "mechanism": "ATP-érzékeny K-csatorna nyitása → vazodilatáció + hajhagyma-perfúzió. Másodlagos: szulfo-transzferáz (SULT1A1) aktivált aktív metabolit (Minoxidil-szulfát), prosztaglandin-E2 emelkedés. A SULT1A1 enzim-aktivitás populáció-szintű variancia ~40–50% non-responder arányt eredményez (Goren 2014).",
   "cyp450": [
     "Sulfotransferase activation (SULT1A1)",

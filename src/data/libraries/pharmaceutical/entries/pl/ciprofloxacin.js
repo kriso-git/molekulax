@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Antybiotyk fluorochinolonowy (Bayer Cipro). UTI, GI + złożone infekcje Gram-ujemne. Ostrzeżenie FDA boxed: zerwania ścięgien + neuropatia obwodowa.",
   "description": "Cyprofloksacyna to prototyp klasy fluorochinolonów (Bayer Cipro, FDA 1987). Bakteriobójcza przez hamowanie gyrazy DNA i topoizomerazy IV. Silna aktywność Gram-ujemna (E. coli, Pseudomonas, Klebsiella), umiarkowana Gram-dodatnia. OSTRZEŻENIE FDA 2016/2018 BOXED: zerwania ścięgien, neuropatia obwodowa, działania mentalne (dezorientacja, delirium), tętniak aorty. Ze względu na stewardship antybiotykowy NIE pierwsza linia dla łagodnego UTI – typowe wskazania: powikłany UTI, zapalenie prostaty, niesilne ostre zapalenie zatok, infekcje GI (Salmonella, Shigella). Ponowna ocena FDA + EMA 2019 ściśle ogranicza stosowanie fluorochinolonów.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "J01MA02"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx), protokół stewardship"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Inhibitor gyrazy DNA i topoizomerazy IV (fluorochinolon)"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "~4 godz. (dawkowanie dwa razy dziennie)"
+    },
+    {
+      "label": "Początek",
+      "value": "24–48 godz. (odpowiedź kliniczna)"
+    }
+  ],
   "mechanism": "Selektywne hamowanie gyrazy DNA (topoizomeraza II) i topoizomerazy IV → blok replikacji i transkrypcji DNA → bakteriobójcze.",
   "legalStatus": "UE/PL: na receptę (Ciprobay, Ciprinol, generyki). USA: FDA Rx (Cipro).",
   "bioavailability": "~70% (doustnie tabletka, niezależnie od pokarmu – etykieta FDA Cipro)",

@@ -45,8 +45,8 @@ export default {
       "value": "14 h (active metabolites 20-30 h)"
     },
     {
-      "label": "LDL reduction (40-80 mg)",
-      "value": "50-60% (high-intensity)"
+      "label": "LDL reduction",
+      "value": "50-60% (high-intensity, 40-80 mg)"
     }
   ],
   "mechanism": "Competitively inhibits hepatocyte HMG-CoA reductase, decreasing the mevalonate pathway (slowing de novo cholesterol synthesis). Reduced intracellular cholesterol upregulates LDL receptors, clearing circulating LDL into the liver. Pleiotropic effects: anti-inflammatory (CRP reduction in JUPITER), endothelial function improvement, plaque stabilization.",

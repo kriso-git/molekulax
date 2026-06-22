@@ -45,8 +45,8 @@ export default {
       "value": "14 h (aktywne metabolity 20-30 h)"
     },
     {
-      "label": "Redukcja LDL (40-80 mg)",
-      "value": "50-60% (wysoka intensywność)"
+      "label": "Redukcja LDL",
+      "value": "50-60% (wysoka intensywność, 40-80 mg)"
     }
   ],
   "mechanism": "Konkurencyjnie hamuje reduktazę HMG-CoA w hepatocytach, zmniejszając szlak mewalonianu (spowolnienie de novo syntezy cholesterolu). Zmniejszony cholesterol wewnątrzkomórkowy reguluje w górę receptory LDL, oczyszczając krążący LDL do wątroby. Efekty plejotropowe: przeciwzapalne (redukcja CRP w JUPITER), poprawa funkcji śródbłonka, stabilizacja blaszki.",

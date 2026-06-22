@@ -25,6 +25,28 @@ export default {
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Syntetyczna T3 trójjodotyronina (Cytomel). Specyficzne wskazania (śpiączka miksowobrzękowa, zaburzenie konwersji T4, augmentacja MDD). NIE rutynowy wybór.",
   "description": "Liotyronina to syntetyczna forma aktywnego hormonu T3 (Cytomel, FDA 1956). NIE rutynowo w niedoczynności – lewotyroksyna (T4) zapewnia fizjologiczną T3 przez endogenne dejodynazy. Specyficzne wskazania: (1) ŚPIĄCZKA MIKSOWOBRZĘKOWA leczenie nagłe (szybko działająca T3 IV), (2) subiektywna objawowa niedoczynność na lewotyroksynie z normalnym TSH (podejrzenie zaburzenia konwersji T4-T3, ETA 2012 PMID 24782999), (3) augmentacja MDD (Cooper-Kazaz 2007 PMID 17888912 oporne MDD), (4) supresja DTC po tyreoidektomii z szybkim startem. Krótki okres półtrwania (1 dzień vs T4 7 dni), wymaga 2-3x/dzień, trudniej osiągnąć stabilne poziomy.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "H03AA02"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx)"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Syntetyczne uzupełnienie hormonu T3 (trójjodotyronina), agonista receptora tarczycy"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "około 2,5 dnia (~60 godz., krótszy niż T4)"
+    },
+    {
+      "label": "Początek",
+      "value": "w ciągu kilku godzin (maks. efekt 2-3 dni)"
+    }
+  ],
   "mechanism": "Bezpośrednie uzupełnienie T3, NIE wymaga obwodowej konwersji T4 → T3. Natychmiast aktywuje receptor tarczycy.",
   "legalStatus": "UE/PL: na receptę (Cytomel, Thybon). USA: FDA Rx (Cytomel).",
   "bioavailability": "95% (doustnie, w ciągu 4 godzin – etykieta FDA Cytomel)",

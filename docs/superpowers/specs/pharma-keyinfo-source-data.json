@@ -1,0 +1,396 @@
+{
+  "ciprofloxacin": {
+    "hu": {
+      "name": "Ciprofloxacin",
+      "shortDesc": "Fluorokinolon antibiotikum (Bayer Cipro). UTI, gasztrointesztinális + komplex Gram-negatív infekciók. FDA boxed warning: ínszakadás + perifériás neuropátia.",
+      "atcCode": "J01MA02",
+      "prescriptionStatus": "Vényköteles (Rx), stewardship-protokoll",
+      "mechanism": "DNS-giráz (topoizomeráz-II) és topoizomeráz-IV szelektív gátlás → DNS-replikáció és transzkripció blokk → baktericid.",
+      "halfLife": "~4 h (twice-daily dosing)",
+      "onsetTime": "24-48 h (clinical response)"
+    },
+    "en": {
+      "name": "Ciprofloxacin",
+      "shortDesc": "Fluoroquinolone antibiotic (Bayer Cipro). UTI, GI + complex Gram-negative infections. FDA boxed warning: tendon rupture + peripheral neuropathy.",
+      "atcCode": "J01MA02",
+      "prescriptionStatus": "Prescription only (Rx), stewardship protocol",
+      "mechanism": "Selective DNA gyrase (topoisomerase II) and topoisomerase IV inhibition → DNA replication and transcription block → bactericidal.",
+      "halfLife": "~4 h (twice-daily dosing)",
+      "onsetTime": "24-48 h (clinical response)"
+    },
+    "pl": {
+      "name": "Ciprofloxacin",
+      "shortDesc": "Antybiotyk fluorochinolonowy (Bayer Cipro). UTI, GI + złożone infekcje Gram-ujemne. Ostrzeżenie FDA boxed: zerwania ścięgien + neuropatia obwodowa.",
+      "atcCode": "J01MA02",
+      "prescriptionStatus": "Na receptę (Rx), protokół stewardship",
+      "mechanism": "Selektywne hamowanie gyrazy DNA (topoizomeraza II) i topoizomerazy IV → blok replikacji i transkrypcji DNA → bakteriobójcze.",
+      "halfLife": "~4 h (twice-daily dosing)",
+      "onsetTime": "24-48 h (clinical response)"
+    }
+  },
+  "doxycycline": {
+    "hu": {
+      "name": "Doxycycline",
+      "shortDesc": "Tetraciklin antibiotikum (Vibramycin). Lyme, malária-prevenció, acne, klamidia, atipikus pneumónia. 100 mg standard.",
+      "atcCode": "J01AA02",
+      "prescriptionStatus": "Vényköteles (Rx)",
+      "mechanism": "30S riboszomális alegység-blokk → aminoacyl-tRNS nem tud kötődni → fehérje-szintézis blokk. Bakteriosztatikus.",
+      "halfLife": "18-22 h (once or twice daily)",
+      "onsetTime": "24-48 h (clinical response)"
+    },
+    "en": {
+      "name": "Doxycycline",
+      "shortDesc": "Tetracycline antibiotic (Vibramycin). Lyme, malaria prevention, acne, chlamydia, atypical pneumonia. 100 mg standard.",
+      "atcCode": "J01AA02",
+      "prescriptionStatus": "Prescription only (Rx)",
+      "mechanism": "30S ribosomal subunit block → aminoacyl-tRNA cannot bind → protein synthesis block. Bacteriostatic.",
+      "halfLife": "18-22 h (once or twice daily)",
+      "onsetTime": "24-48 h (clinical response)"
+    },
+    "pl": {
+      "name": "Doxycycline",
+      "shortDesc": "Antybiotyk tetracyklinowy (Vibramycin). Lyme, profilaktyka malarii, trądzik, chlamydia, atypowe zapalenie płuc. Standard 100 mg.",
+      "atcCode": "J01AA02",
+      "prescriptionStatus": "Na receptę (Rx)",
+      "mechanism": "Blok podjednostki 30S → aminoacylo-tRNA nie może się związać → blok syntezy białek. Bakteriostatyczna.",
+      "halfLife": "18-22 h (once or twice daily)",
+      "onsetTime": "24-48 h (clinical response)"
+    }
+  },
+  "empagliflozin": {
+    "hu": {
+      "name": "Empagliflozin",
+      "shortDesc": "SGLT2-inhibitor (Jardiance), Boehringer Ingelheim/Eli Lilly. T2DM + HFrEF/HFpEF + CKD kardio-reno-protektív gyógyszer.",
+      "atcCode": "A10BK03",
+      "prescriptionStatus": "Vényköteles (Rx)",
+      "mechanism": "SGLT2 (sodium-glucose cotransporter 2) szelektív gátlása a proximális vesetubulusban. Eredmény: 60-90 g/nap glükóz-vesztés vizelettel, ami a HbA1c-t csökkenti és insulin-független mechanizmussal. Másodlagos hatások: ozmotikus diurézis (vérnyomás-csökkentés), nephron-szintű hatás (intraglomeruláris nyomás csökkentés, CKD-protektív), ketonszint enyhe emelése (kardio-protektív).",
+      "halfLife": "~12.4 h (once-daily dosing)",
+      "onsetTime": "1-2 weeks (BP, HbA1c)"
+    },
+    "en": {
+      "name": "Empagliflozin",
+      "shortDesc": "SGLT2 inhibitor (Jardiance), Boehringer Ingelheim/Eli Lilly. Cardio-reno-protective drug for T2DM + HFrEF/HFpEF + CKD.",
+      "atcCode": "A10BK03",
+      "prescriptionStatus": "Prescription only (Rx)",
+      "mechanism": "Selective SGLT2 (sodium-glucose cotransporter 2) inhibition in proximal renal tubule. Result: 60-90 g/day glucose loss in urine, lowering HbA1c by insulin-independent mechanism. Secondary effects: osmotic diuresis (BP reduction), nephron-level effect (intraglomerular pressure drop, CKD-protective), mild ketone elevation (cardio-protective).",
+      "halfLife": "~12.4 h (once-daily dosing)",
+      "onsetTime": "1-2 weeks (BP, HbA1c)"
+    },
+    "pl": {
+      "name": "Empagliflozin",
+      "shortDesc": "Inhibitor SGLT2 (Jardiance), Boehringer Ingelheim/Eli Lilly. Lek kardio-renoprotekcyjny dla T2DM + HFrEF/HFpEF + CKD.",
+      "atcCode": "A10BK03",
+      "prescriptionStatus": "Na receptę (Rx)",
+      "mechanism": "Selektywne hamowanie SGLT2 (kotransporter sodowo-glukozowy 2) w proksymalnym kanaliku nerkowym. Rezultat: utrata 60-90 g glukozy/dzień z moczem, obniżając HbA1c mechanizmem niezależnym od insuliny. Efekty wtórne: diureza osmotyczna (redukcja BP), efekt na poziomie nefronu (spadek ciśnienia wewnątrzkłębuszkowego, ochrona CKD), łagodne podniesienie ketonów (kardioprotekcja).",
+      "halfLife": "~12.4 h (once-daily dosing)",
+      "onsetTime": "1-2 weeks (BP, HbA1c)"
+    }
+  },
+  "escitalopram": {
+    "hu": {
+      "name": "Escitalopram",
+      "shortDesc": "SSRI, citalopram S-enantiomere (Lundbeck Lexapro/Cipralex). MDD + szorongásos zavarok első-vonal Rx. Cipriani 2018 meta szerint top-3 hatékonyság.",
+      "atcCode": "N06AB10",
+      "prescriptionStatus": "Vényköteles (Rx)",
+      "mechanism": "A SERT (szerotonin transzporter) szelektív, allosztérikus inhibitor. Magasabb SERT-szelektivitás, mint a többi SSRI-nak. Nincs jelentős affinitása más receptorokhoz.",
+      "halfLife": "27-32 h (once-daily dosing)",
+      "onsetTime": "2-6 weeks (full antidepressant response)"
+    },
+    "en": {
+      "name": "Escitalopram",
+      "shortDesc": "SSRI, S-enantiomer of citalopram (Lundbeck Lexapro/Cipralex). First-line Rx for MDD + anxiety disorders. Cipriani 2018 meta-analysis: top-3 efficacy.",
+      "atcCode": "N06AB10",
+      "prescriptionStatus": "Prescription only (Rx)",
+      "mechanism": "Selective allosteric SERT (serotonin transporter) inhibitor. Higher SERT selectivity than other SSRIs. No significant affinity for other receptors.",
+      "halfLife": "27-32 h (once-daily dosing)",
+      "onsetTime": "2-6 weeks (full antidepressant response)"
+    },
+    "pl": {
+      "name": "Escitalopram",
+      "shortDesc": "SSRI, S-enancjomer cytalopramu (Lundbeck Lexapro/Cipralex). Pierwsza linia Rx dla MDD + zaburzeń lękowych. Metaanaliza Cipriani 2018: top-3 skuteczność.",
+      "atcCode": "N06AB10",
+      "prescriptionStatus": "Na receptę (Rx)",
+      "mechanism": "Selektywny allosteryczny inhibitor SERT (transporter serotoniny). Wyższa selektywność SERT niż inne SSRI. Brak znaczącego powinowactwa do innych receptorów.",
+      "halfLife": "27-32 h (once-daily dosing)",
+      "onsetTime": "2-6 weeks (full antidepressant response)"
+    }
+  },
+  "fluoxetine": {
+    "hu": {
+      "name": "Fluoxetine",
+      "shortDesc": "Az első SSRI (Eli Lilly Prozac, FDA 1987). Ultra-hosszú felezési idő (4-6 nap), pediátriai MDD-re FDA-jóváhagyott.",
+      "atcCode": "N06AB03",
+      "prescriptionStatus": "Vényköteles (Rx)",
+      "mechanism": "SERT szelektív gátlása. Mérsékelt 5-HT2C antagonizmus (ami az enyhe stimuláló-hangulati effekthez járulhat). A NORFLUOXETIN metabolit hasonlóan aktív és farmakológiailag identikus.",
+      "halfLife": "4-6 days (parent); norfluoxetine 4-16 days",
+      "onsetTime": "4-6 weeks (full antidepressant response)"
+    },
+    "en": {
+      "name": "Fluoxetine",
+      "shortDesc": "The first SSRI (Eli Lilly Prozac, FDA 1987). Ultra-long half-life (4-6 days), FDA-approved for pediatric MDD.",
+      "atcCode": "N06AB03",
+      "prescriptionStatus": "Prescription only (Rx)",
+      "mechanism": "Selective SERT inhibition. Moderate 5-HT2C antagonism (may contribute to mild activating-mood effect). The NORFLUOXETINE metabolite is similarly active and pharmacologically identical.",
+      "halfLife": "4-6 days (parent); norfluoxetine 4-16 days",
+      "onsetTime": "4-6 weeks (full antidepressant response)"
+    },
+    "pl": {
+      "name": "Fluoxetine",
+      "shortDesc": "Pierwszy SSRI (Eli Lilly Prozac, FDA 1987). Ultra-długi okres półtrwania (4-6 dni), zatwierdzony przez FDA dla pediatrycznego MDD.",
+      "atcCode": "N06AB03",
+      "prescriptionStatus": "Na receptę (Rx)",
+      "mechanism": "Selektywne hamowanie SERT. Umiarkowany antagonizm 5-HT2C (może przyczyniać się do łagodnego aktywująco-nastrojowego efektu). Metabolit NORFLUOKSETYNA jest podobnie aktywny i farmakologicznie identyczny.",
+      "halfLife": "4-6 days (parent); norfluoxetine 4-16 days",
+      "onsetTime": "4-6 weeks (full antidepressant response)"
+    }
+  },
+  "hydrocortisone": {
+    "hu": {
+      "name": "Hydrocortisone",
+      "shortDesc": "Vényköteles, gyulladáscsökkentő kortikoszteroid kenőcs (hidrokortizon-acetát 10 mg/g, 1%). A legenyhébb külsőleges szteroid enyhe bőrgyulladásokra: atópiás és kontakt dermatitisz.",
+      "atcCode": "D07AA02",
+      "prescriptionStatus": "Vényköteles / patikai (külsőleges kenőcs)",
+      "mechanism": "Glükokortikoid-receptor (GR) agonista: a bőrben gátolja a gyulladásos mediátorok (foszfolipáz-A2, citokinek, prosztaglandinok) termelődését, érösszehúzó és immunmoduláló hatású – csökkenti a pírt, ödémát, viszketést és hámlást.",
+      "halfLife": "Lokális bőrhatás; a felszívódott rész szisztémás t½ ~1,5 óra",
+      "onsetTime": "Gyulladás- és viszketéscsökkenés órák–napok alatt"
+    },
+    "en": {
+      "name": "Hydrocortisone",
+      "shortDesc": "Prescription anti-inflammatory corticosteroid ointment (hydrocortisone acetate 10 mg/g, 1%). The mildest topical steroid for mild skin inflammation: atopic and contact dermatitis.",
+      "atcCode": "D07AA02",
+      "prescriptionStatus": "Prescription / pharmacy (topical ointment)",
+      "mechanism": "Glucocorticoid-receptor (GR) agonist: in the skin it inhibits inflammatory mediators (phospholipase-A2, cytokines, prostaglandins), is vasoconstrictive and immunomodulatory – reducing redness, oedema, itching and scaling.",
+      "halfLife": "Local skin action; systemic t½ of the absorbed fraction ~1.5 h",
+      "onsetTime": "Inflammation and itch relief within hours to days"
+    },
+    "pl": {
+      "name": "Hydrocortisone",
+      "shortDesc": "Maść kortykosteroidowa o działaniu przeciwzapalnym na receptę (octan hydrokortyzonu 10 mg/g, 1%). Najsłabszy steroid miejscowy na łagodne stany zapalne skóry: atopowe i kontaktowe zapalenie skóry.",
+      "atcCode": "D07AA02",
+      "prescriptionStatus": "Na receptę / apteczny (maść miejscowa)",
+      "mechanism": "Agonista receptora glukokortykoidowego (GR): w skórze hamuje mediatory zapalne (fosfolipazę-A2, cytokiny, prostaglandyny), działa obkurczająco na naczynia i immunomodulująco – zmniejsza zaczerwienienie, obrzęk, świąd i łuszczenie.",
+      "halfLife": "Miejscowe działanie skórne; t½ ogólnoustrojowy wchłoniętej frakcji ~1,5 h",
+      "onsetTime": "Ustąpienie stanu zapalnego i świądu w ciągu godzin–dni"
+    }
+  },
+  "isotretinoin": {
+    "hu": {
+      "name": "Isotretinoin",
+      "shortDesc": "13-cisz-retinoinsav (Roche Roaccutane). Súlyos acne nodulocystica gold-standard. FDA X kategória súlyos teratogenitás miatt – iPLEDGE program kötelező.",
+      "atcCode": "D10BA01",
+      "prescriptionStatus": "Vényköteles (Rx), bőrgyógyász protokoll + terhességi prevenció",
+      "mechanism": "Retinoid receptor (RAR) parciális agonista. Sebaceus-mirigy atrofizálása, talgproducció ~80%-os csökkentése, Propionibacterium acnes-populáció csökkentés, follikuláris hiperkeratinizáció normalizálása. Multimodális anti-acne hatás.",
+      "halfLife": "~21 h (parent), 24 h (active 4-oxo-isotretinoin)",
+      "onsetTime": "4-8 weeks (initial improvement), 4-6 months (full course)"
+    },
+    "en": {
+      "name": "Isotretinoin",
+      "shortDesc": "13-cis-retinoic acid (Roche Roaccutane). Gold standard for severe nodulocystic acne. FDA category X due to severe teratogenicity – iPLEDGE program mandatory.",
+      "atcCode": "D10BA01",
+      "prescriptionStatus": "Prescription only (Rx), dermatologist protocol + pregnancy prevention",
+      "mechanism": "Retinoid receptor (RAR) partial agonist. Sebaceous gland atrophy, ~80% sebum production reduction, P. acnes population decrease, normalization of follicular hyperkeratinization. Multimodal anti-acne effect.",
+      "halfLife": "~21 h (parent), 24 h (active 4-oxo-isotretinoin)",
+      "onsetTime": "4-8 weeks (initial improvement), 4-6 months (full course)"
+    },
+    "pl": {
+      "name": "Isotretinoin",
+      "shortDesc": "Kwas 13-cis-retinowy (Roche Roaccutane). Złoty standard dla ciężkiego trądziku guzkowo-torbielowatego. Kategoria X FDA z powodu teratogenności – program iPLEDGE obowiązkowy.",
+      "atcCode": "D10BA01",
+      "prescriptionStatus": "Na receptę (Rx), protokół dermatologa + prewencja ciąży",
+      "mechanism": "Częściowy agonista receptora retinoidowego (RAR). Atrofia gruczołów łojowych, redukcja produkcji łoju o ~80%, redukcja populacji P. acnes, normalizacja hiperkeratynizacji mieszkowej.",
+      "halfLife": "~21 h (parent), 24 h (active 4-oxo-isotretinoin)",
+      "onsetTime": "4-8 weeks (initial improvement), 4-6 months (full course)"
+    }
+  },
+  "liothyronine": {
+    "hu": {
+      "name": "Liothyronine (T3)",
+      "shortDesc": "Szintetikus T3 trijodotironin (Cytomel). Specifikus indikációkban (mixedéma-kóma, T4-konverzió-zavar, MDD-augmentáció). NEM rutin-választás.",
+      "atcCode": "H03AA02",
+      "prescriptionStatus": "Vényköteles (Rx)",
+      "mechanism": "Direkt T3-pótlás, NEM igényli a T4 → T3 perifériás deiodáz-konverziót. Azonnal aktiválja a tiroid receptor.",
+      "halfLife": "~1 day (much shorter than T4)",
+      "onsetTime": "2-4 h (oral), minutes (IV)"
+    },
+    "en": {
+      "name": "Liothyronine (T3)",
+      "shortDesc": "Synthetic T3 triiodothyronine (Cytomel). Specific indications (myxedema coma, T4-conversion impairment, MDD augmentation). NOT routine choice.",
+      "atcCode": "H03AA02",
+      "prescriptionStatus": "Prescription only (Rx)",
+      "mechanism": "Direct T3 replacement, NOT requiring T4 → T3 peripheral deiodinase conversion. Immediately activates thyroid receptor.",
+      "halfLife": "~1 day (much shorter than T4)",
+      "onsetTime": "2-4 h (oral), minutes (IV)"
+    },
+    "pl": {
+      "name": "Liothyronine (T3)",
+      "shortDesc": "Syntetyczna T3 trójjodotyronina (Cytomel). Specyficzne wskazania (śpiączka miksowobrzękowa, zaburzenie konwersji T4, augmentacja MDD). NIE rutynowy wybór.",
+      "atcCode": "H03AA02",
+      "prescriptionStatus": "Na receptę (Rx)",
+      "mechanism": "Bezpośrednie uzupełnienie T3, NIE wymaga obwodowej konwersji T4 → T3. Natychmiast aktywuje receptor tarczycy.",
+      "halfLife": "~1 day (much shorter than T4)",
+      "onsetTime": "2-4 h (oral), minutes (IV)"
+    }
+  },
+  "methylphenidate": {
+    "hu": {
+      "name": "Methylphenidate",
+      "shortDesc": "DAT/NET-inhibitor stimuláns, ADHD első-vonal Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, visszaélés-potenciál szignifikáns.",
+      "atcCode": "N06BA04",
+      "prescriptionStatus": "Vényköteles (Rx), DEA Schedule II (USA), HU-ban kábítószer-receptre",
+      "mechanism": "DAT (dopamine transzporter) és NET (norepinefrin transzporter) reuptake gátlása. Eltér az amfetamintól: a Methylphenidate \"csak\" gátol, nem fordítja meg a transzportert (amfetamin VMAT2-szintű DA-felszabadulást is okoz, ami az erősebb euforikus hatás).",
+      "halfLife": "IR: 3-5 h; ER/OROS: 6-8 h (effective duration 10-12 h via osmotic delivery)",
+      "onsetTime": "IR: 30-45 min; ER/OROS: 1-2 h; effect lasts 3-5 h (IR), 10-12 h (Concerta OROS)"
+    },
+    "en": {
+      "name": "Methylphenidate",
+      "shortDesc": "DAT/NET inhibitor stimulant, ADHD first-line Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, significant abuse potential.",
+      "atcCode": "N06BA04",
+      "prescriptionStatus": "Prescription only (Rx), DEA Schedule II (USA), HU narcotic Rx",
+      "mechanism": "DAT (dopamine transporter) and NET (norepinephrine transporter) reuptake inhibition. Differs from amphetamine: methylphenidate \"only\" inhibits and does not reverse the transporter (amphetamine causes VMAT2-level DA release, hence stronger euphoria).",
+      "halfLife": "IR: 3-5 h; ER/OROS: 6-8 h (effective duration 10-12 h via osmotic delivery)",
+      "onsetTime": "IR: 30-45 min; ER/OROS: 1-2 h; effect lasts 3-5 h (IR), 10-12 h (Concerta OROS)"
+    },
+    "pl": {
+      "name": "Methylphenidate",
+      "shortDesc": "Inhibitor DAT/NET stymulant, lek pierwszej linii ADHD Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, znaczący potencjał nadużywania.",
+      "atcCode": "N06BA04",
+      "prescriptionStatus": "Na receptę (Rx), DEA Schedule II (USA), PL recepta narkotyczna",
+      "mechanism": "Hamowanie wychwytu DAT (transporter dopaminy) i NET (transporter norepinefryny). Różni się od amfetaminy: metylofenidat \"tylko\" hamuje, nie odwraca transportera (amfetamina powoduje uwolnienie DA na poziomie VMAT2, stąd silniejsza euforia).",
+      "halfLife": "IR: 3-5 h; ER/OROS: 6-8 h (effective duration 10-12 h via osmotic delivery)",
+      "onsetTime": "IR: 30-45 min; ER/OROS: 1-2 h; effect lasts 3-5 h (IR), 10-12 h (Concerta OROS)"
+    }
+  },
+  "minoxidil": {
+    "hu": {
+      "name": "Minoxidil",
+      "shortDesc": "K-csatorna-aktivátor topikális vagy orális szer (Rogaine, Loniten + LDOM). Androgenetikus alopecia kezelés 1988 óta – két adagolási mód, eltérő szisztémás expozícióval.",
+      "mechanism": "ATP-érzékeny K-csatorna nyitása → vazodilatáció + hajhagyma-perfúzió. Másodlagos: szulfo-transzferáz (SULT1A1) aktivált aktív metabolit (Minoxidil-szulfát), prosztaglandin-E2 emelkedés. A SULT1A1 enzim-aktivitás populáció-szintű variancia ~40–50% non-responder arányt eredményez (Goren 2014)."
+    },
+    "en": {
+      "name": "Minoxidil",
+      "shortDesc": "K-channel activator, topical or oral (Rogaine, Loniten + LDOM). Androgenetic alopecia treatment since 1988 – two administration routes with very different systemic exposure profiles.",
+      "mechanism": "ATP-sensitive K-channel opening → vasodilation + hair-follicle perfusion. Secondary: sulfotransferase (SULT1A1)-activated metabolite (minoxidil sulfate), prostaglandin-E2 elevation. SULT1A1 enzyme-activity variance produces ~40–50% non-responder rate at population level (Goren 2014)."
+    },
+    "pl": {
+      "name": "Minoxidil",
+      "shortDesc": "Aktywator kanałów K, środek miejscowy lub doustny (Rogaine, Loniten + LDOM). Leczenie łysienia androgenowego od 1988 – dwie drogi podania z bardzo różnym profilem ekspozycji systemowej.",
+      "mechanism": "Otwarcie kanałów K ATP-zależnych → wazodylatacja + perfuzja mieszka włosowego. Wtórnie: aktywny metabolit (siarczan minoxidilu) aktywowany przez sulfotransferazę (SULT1A1), wzrost prostaglandyny E2. Wariancja aktywności enzymu SULT1A1 daje ~40–50% non-responderów na poziomie populacji (Goren 2014)."
+    }
+  },
+  "orforglipron": {
+    "hu": {
+      "name": "Orforglipron (LY3502970)",
+      "shortDesc": "Eli Lilly napi egyszer szedhető, KIS MOLEKULÁJÚ ORÁLIS GLP-1 receptor agonista (LY3502970). Phase 3 obesity (ATTAIN) + T2DM (ACHIEVE) folyamatban. Várt FDA-jóváhagyás 2026-2027. NEM peptid – a klasszikus injektábilis GLP-1 RA-k (Semaglutide, Liraglutide) orális alternatívája.",
+      "atcCode": "Még nem assigned (Phase 3)",
+      "prescriptionStatus": "Klinikai vizsgálati fázis (még NEM Rx)",
+      "mechanism": "Kis molekulájú GLP-1 receptor biased agonist – szelektíven aktiválja a Gs-pathway-t (cAMP-elevation → inzulin-szekréció + lassú gastric emptying + jóllakottság-érzés), és minimálisan a β-arrestin-pathway-t (ez magyarázza a kisebb GI mellékhatás-incidenciát). Orális biodostupnošć alacsony (~6-9%), DE a hosszú felezési idő (~29-49 h) napi egyszeri adagolást enged. NEM peptid – gastric proteolizishez NEM érzékeny, food-interakció minimális.",
+      "halfLife": "~29-49 óra (napi egyszeri dose-on steady-state 7-10 nap)",
+      "onsetTime": "Tmax 3-5 óra (csúcsplazma-szint), klinikai hatás 2-4 hét alatt steady-state"
+    },
+    "en": {
+      "name": "Orforglipron (LY3502970)",
+      "shortDesc": "Eli Lilly once-daily, SMALL-MOLECULE ORAL GLP-1 receptor agonist (LY3502970). Phase 3 obesity (ATTAIN) + T2DM (ACHIEVE) ongoing. FDA approval expected 2026-2027. NOT a peptide – oral alternative to the classic injectable GLP-1 RAs (Semaglutide, Liraglutide).",
+      "atcCode": "Not yet assigned (Phase 3)",
+      "prescriptionStatus": "Clinical-trial phase (not yet Rx)",
+      "mechanism": "Small-molecule GLP-1 receptor biased agonist – selectively activates the Gs pathway (cAMP elevation → insulin secretion + slowed gastric emptying + satiety), minimally the β-arrestin pathway (explains smaller GI side-effect incidence). Oral bioavailability low (~6-9%), but the long half-life (~29-49 h) supports once-daily dosing. NOT a peptide – not susceptible to gastric proteolysis, food interaction minimal.",
+      "halfLife": "~29-49 hours (once-daily dosing reaches steady-state in 7-10 days)",
+      "onsetTime": "Tmax 3-5 h (peak plasma), clinical effect within 2-4 weeks at steady-state"
+    },
+    "pl": {
+      "name": "Orforglipron (LY3502970)",
+      "shortDesc": "Doustny mało-cząsteczkowy agonista receptora GLP-1 Eli Lilly (LY3502970), raz dziennie. Fazy 3 obesity (ATTAIN) + T2DM (ACHIEVE) w toku. Zatwierdzenie FDA spodziewane 2026-2027. NIE peptyd – doustna alternatywa dla klasycznych iniekcyjnych GLP-1 RA (Semaglutid, Liraglutyd).",
+      "atcCode": "Jeszcze nie przypisany (Phase 3)",
+      "prescriptionStatus": "Faza badań klinicznych (jeszcze NIE Rx)",
+      "mechanism": "Mało-cząsteczkowy biased agonista receptora GLP-1 – selektywnie aktywuje ścieżkę Gs (wzrost cAMP → wydzielanie insuliny + zwolnienie opróżniania żołądka + uczucie sytości), minimalnie ścieżkę β-arrestyny (tłumaczy mniejszą częstość skutków ubocznych GI). Doustna biodostępność niska (~6-9%), ale długi okres półtrwania (~29-49 h) wspiera dawkowanie raz dziennie. NIE peptyd – nie podatny na żołądkową proteolizę, interakcja z jedzeniem minimalna.",
+      "halfLife": "~29-49 godzin (dawkowanie raz dziennie osiąga steady-state w 7-10 dni)",
+      "onsetTime": "Tmax 3-5 h (szczyt stężenia osoczowego), efekt kliniczny w 2-4 tygodnie w steady-state"
+    }
+  },
+  "rosuvastatin": {
+    "hu": {
+      "name": "Rosuvastatin",
+      "shortDesc": "Hidrofil, nagy-intenzitású statin (AstraZeneca Crestor). JUPITER-trial alapján primer ASCVD-prevenció emelt CRP-nél is. Kevés CYP-interakció.",
+      "atcCode": "C10AA07",
+      "prescriptionStatus": "Vényköteles (Rx)",
+      "mechanism": "HMG-CoA reduktáz hidrofil kompetitív gátlása. Magasabb potencia, kevesebb pleiotróp lipofil-szerű hatás. CRP-csökkentés még normo-LDL-en is.",
+      "halfLife": "19 h (once-daily, any time)",
+      "onsetTime": "1-2 weeks (lipid), 4 weeks (steady-state LDL)"
+    },
+    "en": {
+      "name": "Rosuvastatin",
+      "shortDesc": "Hydrophilic high-intensity statin (AstraZeneca Crestor). JUPITER trial established primary ASCVD prevention even at elevated CRP. Few CYP interactions.",
+      "atcCode": "C10AA07",
+      "prescriptionStatus": "Prescription only (Rx)",
+      "mechanism": "Hydrophilic competitive HMG-CoA reductase inhibition. Higher potency, fewer lipophilic-like pleiotropic effects. CRP reduction even at normo-LDL.",
+      "halfLife": "19 h (once-daily, any time)",
+      "onsetTime": "1-2 weeks (lipid), 4 weeks (steady-state LDL)"
+    },
+    "pl": {
+      "name": "Rosuvastatin",
+      "shortDesc": "Hydrofilna statyna o wysokiej intensywności (AstraZeneca Crestor). JUPITER ustanowił prewencję pierwotną ASCVD nawet przy podwyższonym CRP. Mało interakcji CYP.",
+      "atcCode": "C10AA07",
+      "prescriptionStatus": "Na receptę (Rx)",
+      "mechanism": "Hydrofilne konkurencyjne hamowanie reduktazy HMG-CoA. Wyższa potencja, mniej efektów plejotropowych. Redukcja CRP nawet przy normo-LDL.",
+      "halfLife": "19 h (once-daily, any time)",
+      "onsetTime": "1-2 weeks (lipid), 4 weeks (steady-state LDL)"
+    }
+  },
+  "tamoxifen": {
+    "hu": {
+      "name": "Tamoxifen",
+      "shortDesc": "Szelektív ösztrogén receptor modulátor (SERM). Hormonreceptor-pozitív emlőkarcinóma adjuváns és metastatikus kezelése (Nolvadex).",
+      "atcCode": "L02BA01",
+      "prescriptionStatus": "Vényköteles (Rx), onkológus felügyelet",
+      "mechanism": "Tkivat-specifikus ösztrogén receptor moduláció: emlőszövetben ANTAGONISTA, csontban + endometriumban + májban PARCIÁLIS AGONISTA. Aktív metabolitok (4-hidroxitamoxifen, endoxifen) CYP2D6-tól függenek – gyenge metabolizálóknál csökkent hatékonyság.",
+      "halfLife": "~7 days (parent); 14 days (4-hydroxytamoxifen)",
+      "onsetTime": "Klinikai válasz hónapok-évek (adjuváns)"
+    },
+    "en": {
+      "name": "Tamoxifen",
+      "shortDesc": "Selective estrogen receptor modulator (SERM). Adjuvant and metastatic treatment of hormone receptor-positive breast cancer (Nolvadex).",
+      "atcCode": "L02BA01",
+      "prescriptionStatus": "Prescription only (Rx), oncologist-supervised",
+      "mechanism": "Tissue-specific estrogen receptor modulation: ANTAGONIST in breast tissue, PARTIAL AGONIST in bone + endometrium + liver. Active metabolites (4-hydroxytamoxifen, endoxifen) CYP2D6-dependent – poor metabolizers have reduced efficacy.",
+      "halfLife": "~7 days (parent); 14 days (4-hydroxytamoxifen)",
+      "onsetTime": "Klinikai válasz hónapok-évek (adjuváns)"
+    },
+    "pl": {
+      "name": "Tamoxifen",
+      "shortDesc": "Selektywny modulator receptora estrogenowego (SERM). Leczenie uzupełniające i przerzutowe HR-dodatniego raka piersi (Nolvadex).",
+      "atcCode": "L02BA01",
+      "prescriptionStatus": "Na receptę (Rx), nadzór onkologa",
+      "mechanism": "Tkanowo-specyficzna modulacja: ANTAGONISTA w piersi, CZĘŚCIOWY AGONISTA w kościach + endometrium + wątrobie. Aktywne metabolity (4-hydroksytamoksyfen, endoksyfen) zależne od CYP2D6 – słabi metabolizatorzy mają zmniejszoną skuteczność.",
+      "halfLife": "~7 days (parent); 14 days (4-hydroxytamoxifen)",
+      "onsetTime": "Klinikai válasz hónapok-évek (adjuváns)"
+    }
+  },
+  "tretinoin": {
+    "hu": {
+      "name": "Tretinoin",
+      "shortDesc": "Topikális retinoid all-transz-retinoinsav. Acne, fotoöregedés, hiperpigmentáció kezelés. Bőrgyógyászati gold-standard.",
+      "atcCode": "D10AD01",
+      "prescriptionStatus": "Vényköteles (Rx), bőrgyógyász felügyelet",
+      "mechanism": "RAR-α/β/γ receptor aktiváció → géntranszkripció moduláció → follikuláris keratinizáció normalizálása + kollagén-szintézis fokozás + melanin-csökkentés.",
+      "halfLife": "Topical, minimal systemic absorption",
+      "onsetTime": "8-12 weeks (acne improvement), 4-6 months (anti-aging visible)"
+    },
+    "en": {
+      "name": "Tretinoin",
+      "shortDesc": "Topical retinoid all-trans-retinoic acid. Acne, photoaging, hyperpigmentation treatment. Dermatological gold standard.",
+      "atcCode": "D10AD01",
+      "prescriptionStatus": "Prescription only (Rx), dermatologist-supervised",
+      "mechanism": "RAR-α/β/γ receptor activation → gene transcription modulation → follicular keratinization normalization + collagen synthesis enhancement + melanin reduction.",
+      "halfLife": "Topical, minimal systemic absorption",
+      "onsetTime": "8-12 weeks (acne improvement), 4-6 months (anti-aging visible)"
+    },
+    "pl": {
+      "name": "Tretinoin",
+      "shortDesc": "Miejscowy retinoid kwas all-trans-retinowy. Trądzik, fotostarzenie, leczenie hiperpigmentacji. Dermatologiczny złoty standard.",
+      "atcCode": "D10AD01",
+      "prescriptionStatus": "Na receptę (Rx), nadzór dermatologa",
+      "mechanism": "Aktywacja receptorów RAR-α/β/γ → modulacja transkrypcji genów → normalizacja keratynizacji + wzmocnienie kolagenu + redukcja melaniny.",
+      "halfLife": "Topical, minimal systemic absorption",
+      "onsetTime": "8-12 weeks (acne improvement), 4-6 months (anti-aging visible)"
+    }
+  }
+}

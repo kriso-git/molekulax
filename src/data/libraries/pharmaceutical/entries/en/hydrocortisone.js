@@ -95,6 +95,28 @@ export default {
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Prescription anti-inflammatory corticosteroid ointment (hydrocortisone acetate 10 mg/g, 1%). The mildest topical steroid for mild skin inflammation: atopic and contact dermatitis.",
   "description": "Hydrocortison-Wagner 10 mg/g (1%) ointment contains hydrocortisone acetate, an anti-inflammatory corticosteroid – the MILDEST class of topical steroids (Class VII / EU Group I). It treats mild inflammatory skin disease, mainly atopic dermatitis (eczema) and contact dermatitis: it reduces inflammation, redness, oedema and itching. Applied to intact skin over a small area for a short time, absorption is low (<1–3%) so risk is mainly local; over large areas, folds, the face or under occlusion, significant absorption and systemic effects (adrenal insufficiency) can occur. A prescription/pharmacy product, used as directed by a doctor.",
+  "keyInfo": [
+    {
+      "label": "ATC code",
+      "value": "D07AA02"
+    },
+    {
+      "label": "Prescription",
+      "value": "Over-the-counter (OTC), pharmacy (1% topical)"
+    },
+    {
+      "label": "Mechanism",
+      "value": "Glucocorticoid-receptor agonist (weak steroid, group I)"
+    },
+    {
+      "label": "Half-life",
+      "value": "1.2-2 h (absorbed systemic fraction)"
+    },
+    {
+      "label": "Onset",
+      "value": "Hours to days (local inflammation and itch relief)"
+    }
+  ],
   "mechanism": "Glucocorticoid-receptor (GR) agonist: in the skin it inhibits inflammatory mediators (phospholipase-A2, cytokines, prostaglandins), is vasoconstrictive and immunomodulatory – reducing redness, oedema, itching and scaling.",
   "legalStatus": "EU/HU: prescription/pharmacy (Hydrocortison-Wagner 10 mg/g ointment). The mildest class of dermatological corticosteroids (Class VII / EU Group I).",
   "bioavailability": "<1–3% percutaneous absorption on intact skin; substantially higher on the face, folds, scrotum, under occlusion and on broken skin",

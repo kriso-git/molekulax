@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Fluorokinolon antibiotikum (Bayer Cipro). UTI, gasztrointesztinális + komplex Gram-negatív infekciók. FDA boxed warning: ínszakadás + perifériás neuropátia.",
   "description": "A Ciprofloxacin a fluorokinolon-osztály prototípusa (Bayer Cipro, FDA 1987). DNS-giráz és topoizomeráz-IV gátlása révén baktericid. Erős Gram-negatív (E. coli, Pseudomonas, Klebsiella), mérsékelt Gram-pozitív aktivitás. Az FDA 2016/2018 BOXED WARNING jelentős: ínszakadás, perifériás neuropátia, mentális mellékhatás (zavartság, delirium), aorta-aneurizma. Az \"antibiotic stewardship\" miatt enyhe UTI-re NEM ajánlott első-vonalként – komplikációs UTI, prosztatitisz, akut sinusitis (nem-súlyos), GI-infekciók (Salmonella, Shigella) tipikus indikációk. A FDA + EMA 2019-es újraértékelés a fluorokinolonok használatát szigorúan limitálja.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "J01MA02"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx), stewardship-protokoll"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "DNS-giráz és topoizomeráz-IV gátló (fluorokinolon)"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "~4 óra (napi kétszeri adagolás)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "24–48 óra (klinikai válasz)"
+    }
+  ],
   "mechanism": "DNS-giráz (topoizomeráz-II) és topoizomeráz-IV szelektív gátlás → DNS-replikáció és transzkripció blokk → baktericid.",
   "legalStatus": "EU/HU: vényköteles (Ciprobay, Ciprinol, generikus). USA: FDA Rx (Cipro).",
   "bioavailability": "~70% (orális tabletta, étkezéstől független – FDA Cipro label)",

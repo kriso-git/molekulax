@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "DAT/NET-inhibitor stimuláns, ADHD első-vonal Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, visszaélés-potenciál szignifikáns.",
   "description": "A Methylphenidate egy pszichostimuláns, amelyet 1944-ben szintetizáltak, 1954 óta engedélyezett gyermek-hyperaktivitásra, 1990-es évek óta az ADHD első-vonal kezelése. A DAT és NET reuptake gátlásával növeli a synaptikus dopamint és norepinefrint a prefrontalis kortexben, ami az exekutív funkció (figyelem, impulzus-kontroll, munkamemória) javulásához vezet ADHD-betegen. DEA Schedule II (USA), aminek megfelelően Rx-szigorítás. IR (Ritalin, 3-5 h) és ER/OROS (Concerta 10-12 h) formák. Az MTA-trial (1999 JAMA, 14 hónapos follow-up) szerint a stimuláns-terápia + viselkedés-terápia kombináció szuperior. Visszaélés-potenciál: szétmorzsolt-belélegezve vagy IV-be adva amfetamin-szerű euforikus hatás, ezért XR-formák preferáltak.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "N06BA04"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx), kábítószer-recept; DEA Schedule II"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "DAT/NET reuptake-gátló CNS-stimuláns (dopamin + noradrenalin)"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "IR ~3,5 óra (1,3–7,7 óra); ER/OROS hatástartam 10–12 óra"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "IR 30–45 perc (csúcs 1–3 óra); ER/OROS 1–2 óra"
+    }
+  ],
   "mechanism": "DAT (dopamine transzporter) és NET (norepinefrin transzporter) reuptake gátlása. Eltér az amfetamintól: a Methylphenidate \"csak\" gátol, nem fordítja meg a transzportert (amfetamin VMAT2-szintű DA-felszabadulást is okoz, ami az erősebb euforikus hatás).",
   "legalStatus": "EU/HU: vényköteles, kábítószer-rendelet alá tartozó (Ritalin, Concerta, Medikinet). USA: DEA Schedule II.",
   "bioavailability": "22 ± 8% (d-methylphenidate), 5 ± 3% (l-methylphenidate) – orális, gyerekek; magas first-pass – FDA Ritalin label",

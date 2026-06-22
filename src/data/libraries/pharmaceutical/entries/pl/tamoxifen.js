@@ -27,6 +27,28 @@ export default {
   "tagColor": "rgba(236,72,153,0.18)",
   "shortDesc": "Selektywny modulator receptora estrogenowego (SERM). Leczenie uzupełniające i przerzutowe HR-dodatniego raka piersi (Nolvadex).",
   "description": "Tamoksyfen to pierwszy klinicznie znaczący SERM, opracowany przez AstraZeneca (Nolvadex, FDA 1977). W leczeniu uzupełniającym ER+ raka piersi z protokołem 5-10-letnim zmniejsza ryzyko nawrotu o 50% (EBCTCG 2011 Lancet PMID 21684593). U kobiet przedmenopauzalnych inhibitory aromatazy (anastrozol, letrozol) nieskuteczne, więc tamoksyfen jest pierwszą linią SERM. Profil działań: zakrzepica (DVT, PE 2-3x wzrost), ryzyko raka endometrium (~2x), objawy menopauzopodobne. Prewencja DCIS i pierwotna wysokiego ryzyka zatwierdzona FDA (NSABP-P1).",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "L02BA01"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx), nadzór onkologa"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Selektywny modulator receptora estrogenowego (SERM), antagonista w piersi"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "5-7 dni (zw. macierzysty), metabolit N-desmetylo ~14 dni"
+    },
+    {
+      "label": "Początek",
+      "value": "Miesiące do lat (uzupełniająca odpowiedź kliniczna)"
+    }
+  ],
   "mechanism": "Tkanowo-specyficzna modulacja: ANTAGONISTA w piersi, CZĘŚCIOWY AGONISTA w kościach + endometrium + wątrobie. Aktywne metabolity (4-hydroksytamoksyfen, endoksyfen) zależne od CYP2D6 – słabi metabolizatorzy mają zmniejszoną skuteczność.",
   "legalStatus": "UE/PL: na receptę (Nolvadex, Tamoxen, generyki). USA: FDA Rx.",
   "bioavailability": "~100% (doustnie, \"dobrze wchłaniany\", Tmax ~5 h – etykieta FDA Soltamox/Nolvadex)",

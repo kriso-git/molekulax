@@ -25,6 +25,28 @@ export default {
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Topikális retinoid all-transz-retinoinsav. Acne, fotoöregedés, hiperpigmentáció kezelés. Bőrgyógyászati gold-standard.",
   "description": "A Tretinoin (all-transz-retinoinsav) az első topikális retinoid (Ortho Retin-A, FDA 1971), bőrgyógyászati standard akneológus + anti-aging-területen. A retinoid receptor (RAR) aktiválása révén normalizálja a follikuláris keratinizációt (acne-mechanizmus), gyorsítja a kollagén-szintézist (anti-aging), és csökkenti a melanin-pigmentációt (hiperpigmentáció). A leggyakoribb erősségek: 0,025%, 0,05%, 0,1% krém vagy gél. Az Isotretinoinhoz képest topikális – nem szisztémás, terhesség-rizikó SZIGNIFIKÁNSAN ALACSONYABB, de szülő-kort viselő nőknek kerülendő. Hosszú-távú anti-aging-evidencia: Kligman 1986 PMID 3548421 a fotoöregedés legjobban dokumentált topikális kezelése.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "D10AD01"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx), bőrgyógyász felügyelet"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "RAR-α/β/γ retinoid-receptor agonista (all-transz-retinoinsav)"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "Topikális, minimális szisztémás felszívódás"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "8-12 hét (acne), 4-6 hónap (anti-aging)"
+    }
+  ],
   "mechanism": "RAR-α/β/γ receptor aktiváció → géntranszkripció moduláció → follikuláris keratinizáció normalizálása + kollagén-szintézis fokozás + melanin-csökkentés.",
   "legalStatus": "EU/HU: vényköteles (Atrederm, Locacid, Retin-A). USA: FDA Rx (Retin-A, Renova, Tretin-X).",
   "bioavailability": "~20% (orális kapszula, variábilis – FDA Vesanoid label; APL-kezelésre, NEM topikális forma)",

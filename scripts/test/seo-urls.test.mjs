@@ -73,8 +73,8 @@ test('roundtrip: parsePath(entryPath(x)) recovers x', () => {
   assert.deepEqual(parsePath(p), { kind: 'entry', lang: 'hu', library: 'pharmaceutical', id: 'tadalafil', variantId: null })
 })
 
-test('COMPARISONS registry: 32 curated comparisons with per-member lib, slug string, valid title', () => {
-  assert.equal(COMPARISONS.length, 32)
+test('COMPARISONS registry: 39 curated comparisons with per-member lib, slug string, valid title', () => {
+  assert.equal(COMPARISONS.length, 39)
   assert.deepEqual(Object.keys(COMPARISON_BASE), ['hu', 'en', 'pl'])
   for (const c of COMPARISONS) {
     assert.ok(c.slug && Array.isArray(c.members) && c.members.length >= 2, `bad shape: ${c.slug}`)
@@ -124,9 +124,12 @@ test('comparisonsForEntry returns comparisons containing the entry (by lib+id)',
   assert.ok(slugs.includes('finasteride-performance-vs-pharmaceutical'))
 })
 
-test('comparisonsForEntry is lib-specific (pharma finasteride only matches the cross-lib one)', () => {
+test('comparisonsForEntry is lib-specific (pharma finasteride matches its pharma comparisons, not the performance-only one)', () => {
   const slugs = comparisonsForEntry('pharmaceutical', 'finasteride').map((c) => c.slug)
-  assert.deepEqual(slugs, ['finasteride-performance-vs-pharmaceutical'])
+  assert.ok(slugs.includes('finasteride-performance-vs-pharmaceutical'))
+  assert.ok(slugs.includes('finasteride-vs-minoxidil'))
+  // a performance-only comparison must NOT bleed into the pharma entry
+  assert.ok(!slugs.includes('finasteride-vs-dutasteride'))
 })
 
 test('comparisonsForEntry returns [] for an entry in no comparison', () => {

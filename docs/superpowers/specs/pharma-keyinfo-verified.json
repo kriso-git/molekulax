@@ -1,0 +1,1076 @@
+[
+  {
+    "id": "rosuvastatin",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [
+      {
+        "field": "ldlReduction",
+        "problem": "The verification source_quote attributes specific STELLAR figures (rosuvastatin 20 mg ~52%, 40 mg ~55%, n=2431) to the cited StatPearls page (NBK539883), but that page does NOT contain those STELLAR numbers. It only states high-intensity rosuvastatin 20-40 mg achieves 'LDL-C reduction of 50% or greater'. The quote is partly fabricated/embellished, so the citation is unreliable even though the value is defensible.",
+        "correction": "Keep value '50-55%' (lower bound 50% is directly grounded by StatPearls; 55% upper bound is established clinical consensus for 40 mg). Replace the source_quote with what the page actually says: 'high-intensity rosuvastatin therapy uses 20 to 40 mg once daily, achieving an LDL-C reduction of 50% or greater.' Do not present STELLAR-specific percentages as sourced from StatPearls."
+      }
+    ],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "C10AA07"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "HMG-CoA reduktáz-gátló (hidrofil statin)"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "19 óra (napi egyszeri, bármikor)"
+      },
+      {
+        "label": "LDL-csökkenés",
+        "value": "50-55% (nagy-intenzitású, 20-40 mg)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "C10AA07"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "HMG-CoA reductase inhibitor (hydrophilic statin)"
+      },
+      {
+        "label": "Half-life",
+        "value": "19 h (once-daily, any time)"
+      },
+      {
+        "label": "LDL reduction",
+        "value": "50-55% (high-intensity, 20-40 mg)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "C10AA07"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Inhibitor reduktazy HMG-CoA (statyna hydrofilna)"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "19 godz. (raz dziennie, o dowolnej porze)"
+      },
+      {
+        "label": "Redukcja LDL",
+        "value": "50-55% (wysoka intensywność, 20-40 mg)"
+      }
+    ]
+  },
+  {
+    "id": "escitalopram",
+    "overall": "needs-fix",
+    "atc_confirmed": true,
+    "halflife_confirmed": false,
+    "issues": [
+      {
+        "field": "halfLife",
+        "problem": "Composed value was changed to '27-33 h' citing StatPearls (a secondary tertiary source). The official FDA prescribing information (DailyMed Lexapro PI, Clinical Pharmacology) states a 'mean terminal half-life of about 27-32 hours', which is the canonical label value and matches the original existing dataset value.",
+        "correction": "Revert to '27-32 h' in all three languages to match the authoritative FDA PI. EN: '27-32 h (once-daily dosing)'; HU: '27-32 óra (napi egyszeri adagolás)'; PL: '27-32 godz. (raz dziennie)'."
+      }
+    ],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "N06AB10"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "Szelektív szerotonin-visszavétel-gátló (SSRI), SERT-célpont"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "27-32 óra (napi egyszeri adagolás)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "2-6 hét (teljes antidepresszáns válasz)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "N06AB10"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "Selective serotonin reuptake inhibitor (SSRI), SERT target"
+      },
+      {
+        "label": "Half-life",
+        "value": "27-32 h (once-daily dosing)"
+      },
+      {
+        "label": "Onset",
+        "value": "2-6 weeks (full antidepressant response)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "N06AB10"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Selektywny inhibitor wychwytu serotoniny (SSRI), cel SERT"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "27-32 godz. (raz dziennie)"
+      },
+      {
+        "label": "Początek",
+        "value": "2-6 tyg. (pełna odpowiedź przeciwdepresyjna)"
+      }
+    ]
+  },
+  {
+    "id": "fluoxetine",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "N06AB03"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "Szelektív szerotonin-visszavétel-gátló (SSRI), SERT-gátlás"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "4-6 nap (parent), norfluoxetin ~16 nap"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "4-6 hét (teljes antidepresszáns hatás)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "N06AB03"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "Selective serotonin reuptake inhibitor (SSRI), SERT inhibition"
+      },
+      {
+        "label": "Half-life",
+        "value": "4-6 days (parent), norfluoxetine ~16 days"
+      },
+      {
+        "label": "Onset",
+        "value": "4-6 weeks (full antidepressant response)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "N06AB03"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Selektywny inhibitor wychwytu zwrotnego serotoniny (SSRI), hamowanie SERT"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "4-6 dni (parent), norfluoksetyna ~16 dni"
+      },
+      {
+        "label": "Początek",
+        "value": "4-6 tyg. (pełna odpowiedź przeciwdepresyjna)"
+      }
+    ]
+  },
+  {
+    "id": "liothyronine",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "H03AA02"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "Szintetikus T3 (trijodtironin) hormon-pótlás, direkt tiroid-receptor agonista"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "kb. 2,5 nap (~60 óra, rövidebb mint a T4)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "néhány óra (max. hatás 2-3 nap)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "H03AA02"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "Synthetic T3 (triiodothyronine) hormone replacement, direct thyroid receptor agonist"
+      },
+      {
+        "label": "Half-life",
+        "value": "about 2.5 days (~60 h, shorter than T4)"
+      },
+      {
+        "label": "Onset",
+        "value": "within a few hours (max effect 2-3 days)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "H03AA02"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Syntetyczne uzupełnienie hormonu T3 (trójjodotyronina), agonista receptora tarczycy"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "około 2,5 dnia (~60 godz., krótszy niż T4)"
+      },
+      {
+        "label": "Początek",
+        "value": "w ciągu kilku godzin (maks. efekt 2-3 dni)"
+      }
+    ]
+  },
+  {
+    "id": "isotretinoin",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "D10BA01"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx), iPLEDGE/terhességi prevenció"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "Retinoid (RAR-agonista), faggyúmirigy-szuppresszió"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "~21 óra (aktív 4-oxo-metabolit ~24 óra)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "4-8 hét (kezdeti javulás), 15-20 hét teljes kúra"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "D10BA01"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx), iPLEDGE/pregnancy prevention"
+      },
+      {
+        "label": "Mechanism",
+        "value": "Retinoid (RAR agonist), sebaceous gland suppression"
+      },
+      {
+        "label": "Half-life",
+        "value": "~21 h (active 4-oxo metabolite ~24 h)"
+      },
+      {
+        "label": "Onset",
+        "value": "4-8 weeks (initial), 15-20 weeks full course"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "D10BA01"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx), iPLEDGE/prewencja ciąży"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Retinoid (agonista RAR), supresja gruczołów łojowych"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "~21 godz. (aktywny metabolit 4-oxo ~24 godz.)"
+      },
+      {
+        "label": "Początek",
+        "value": "4-8 tyg. (wstępna poprawa), 15-20 tyg. pełna kuracja"
+      }
+    ]
+  },
+  {
+    "id": "tretinoin",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "D10AD01"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx), bőrgyógyász felügyelet"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "RAR-α/β/γ retinoid-receptor agonista (all-transz-retinoinsav)"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "Topikális, minimális szisztémás felszívódás"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "8-12 hét (acne), 4-6 hónap (anti-aging)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "D10AD01"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx), dermatologist-supervised"
+      },
+      {
+        "label": "Mechanism",
+        "value": "RAR-α/β/γ retinoid receptor agonist (all-trans-retinoic acid)"
+      },
+      {
+        "label": "Half-life",
+        "value": "Topical, minimal systemic absorption"
+      },
+      {
+        "label": "Onset",
+        "value": "8-12 weeks (acne), 4-6 months (anti-aging)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "D10AD01"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx), nadzór dermatologa"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Agonista receptorów RAR-α/β/γ (kwas all-trans-retinowy)"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "Miejscowo, minimalne wchłanianie systemowe"
+      },
+      {
+        "label": "Początek",
+        "value": "8-12 tyg. (trądzik), 4-6 mies. (anti-aging)"
+      }
+    ]
+  },
+  {
+    "id": "ciprofloxacin",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [
+      {
+        "field": "onsetTime",
+        "problem": "The '24-48 h (clinical response)' value is not a PK figure from any FDA label or SmPC; it is a general antibiotic clinical-improvement estimate. It is acceptable because it is explicitly qualified as '(clinical response)' and not presented as a hard PK value, but it is the weakest-grounded field and could not be confirmed against a primary source.",
+        "correction": "Keep as-is but ensure the '(clinical response)' qualifier remains in all three languages so it is not mistaken for a pharmacokinetic onset. No factual change required."
+      },
+      {
+        "field": "onsetTime/halfLife formatting",
+        "problem": "Numeric ranges used ASCII hyphen ('24-48') instead of en-dash, inconsistent with project numeric-range convention.",
+        "correction": "Normalized to en-dash: '24-48' -> '24–48' across EN/HU/PL."
+      }
+    ],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "J01MA02"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx), stewardship-protokoll"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "DNS-giráz és topoizomeráz-IV gátló (fluorokinolon)"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "~4 óra (napi kétszeri adagolás)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "24–48 óra (klinikai válasz)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "J01MA02"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx), stewardship protocol"
+      },
+      {
+        "label": "Mechanism",
+        "value": "DNA gyrase and topoisomerase IV inhibitor (fluoroquinolone)"
+      },
+      {
+        "label": "Half-life",
+        "value": "~4 h (twice-daily dosing)"
+      },
+      {
+        "label": "Onset",
+        "value": "24–48 h (clinical response)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "J01MA02"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx), protokół stewardship"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Inhibitor gyrazy DNA i topoizomerazy IV (fluorochinolon)"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "~4 godz. (dawkowanie dwa razy dziennie)"
+      },
+      {
+        "label": "Początek",
+        "value": "24–48 godz. (odpowiedź kliniczna)"
+      }
+    ]
+  },
+  {
+    "id": "doxycycline",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "J01AA02"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "30S riboszóma-kötő fehérjeszintézis-gátló (tetraciklin, bakteriosztatikus)"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "18-22 óra (napi 1-2x adagolás)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "24-48 óra (klinikai válasz)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "J01AA02"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "30S ribosome-binding protein synthesis inhibitor (tetracycline, bacteriostatic)"
+      },
+      {
+        "label": "Half-life",
+        "value": "18-22 h (once or twice daily)"
+      },
+      {
+        "label": "Onset",
+        "value": "24-48 h (clinical response)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "J01AA02"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Inhibitor syntezy białek wiążący rybosom 30S (tetracyklina, bakteriostatyczny)"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "18-22 godz. (raz lub dwa razy dziennie)"
+      },
+      {
+        "label": "Początek",
+        "value": "24-48 godz. (odpowiedź kliniczna)"
+      }
+    ]
+  },
+  {
+    "id": "empagliflozin",
+    "overall": "needs-fix",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [
+      {
+        "field": "onsetTime",
+        "problem": "'1-2 weeks (blood pressure, HbA1c)' is unsupported by the cited PMC source and the FDA/SmPC label. Glucosuria is immediate (first dose, sustained to week 4), but measurable BP reduction is reported at ~12 weeks and HbA1c lowering at 12-24 weeks. The 1-2 week figure overstates clinical onset for BP/HbA1c.",
+        "correction": "Replace with a value that distinguishes the immediate glucosuric effect from the multi-week BP/HbA1c endpoints (see final_keyInfo). No em-dash; ASCII hyphen only."
+      }
+    ],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "A10BK03"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "SGLT2 (nátrium-glükóz kotranszporter 2) gátló, proximális vesetubulus"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "~12,4 óra (napi egyszeri adagolás)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "Glükózürítés már az első adag után; HbA1c és vérnyomás változása több hét alatt"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "A10BK03"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "SGLT2 (sodium-glucose cotransporter 2) inhibitor, proximal renal tubule"
+      },
+      {
+        "label": "Half-life",
+        "value": "~12.4 h (once-daily dosing)"
+      },
+      {
+        "label": "Onset",
+        "value": "Glucosuria within first dose; HbA1c and blood pressure changes over several weeks"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "A10BK03"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Inhibitor SGLT2 (kotransporter sodowo-glukozowy 2), kanalik proksymalny"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "~12,4 godz. (raz dziennie)"
+      },
+      {
+        "label": "Początek",
+        "value": "Glukozuria po pierwszej dawce; zmiany HbA1c i ciśnienia w ciągu kilku tygodni"
+      }
+    ]
+  },
+  {
+    "id": "methylphenidate",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [
+      {
+        "field": "halfLife / onsetTime / prescriptionStatus (range formatting)",
+        "problem": "Numeric ranges use ASCII hyphen-minus (e.g. '1.3-7.7 h', '30-45 min', '10-12 h') instead of the en-dash convention used for numeric ranges on the site.",
+        "correction": "Normalize numeric ranges to en-dash (–): '1.3–7.7 h', '30–45 min', '10–12 h', '1–3 h', '1–2 h'. Purely cosmetic; no factual change. All facts (ATC N06BA04, IR ~3.5 h half-life, Tmax 1-3 h, CNS stimulant DAT/NET reuptake inhibitor, Schedule II) independently confirmed against WHO ATC/DDD index and openFDA label."
+      }
+    ],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "N06BA04"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx), kábítószer-recept; DEA Schedule II"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "DAT/NET reuptake-gátló CNS-stimuláns (dopamin + noradrenalin)"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "IR ~3,5 óra (1,3–7,7 óra); ER/OROS hatástartam 10–12 óra"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "IR 30–45 perc (csúcs 1–3 óra); ER/OROS 1–2 óra"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "N06BA04"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx), narcotic Rx; DEA Schedule II"
+      },
+      {
+        "label": "Mechanism",
+        "value": "DAT/NET reuptake inhibitor CNS stimulant (dopamine + norepinephrine)"
+      },
+      {
+        "label": "Half-life",
+        "value": "IR ~3.5 h (1.3–7.7 h); ER/OROS effect lasts 10–12 h"
+      },
+      {
+        "label": "Onset",
+        "value": "IR 30–45 min (peak 1–3 h); ER/OROS 1–2 h"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "N06BA04"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx), recepta narkotyczna; DEA Schedule II"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Inhibitor wychwytu DAT/NET, stymulant OUN (dopamina + noradrenalina)"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "IR ~3,5 godz. (1,3–7,7 godz.); ER/OROS działa 10–12 godz."
+      },
+      {
+        "label": "Początek",
+        "value": "IR 30–45 min (szczyt 1–3 godz.); ER/OROS 1–2 godz."
+      }
+    ]
+  },
+  {
+    "id": "minoxidil",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "D11AX01 (topikális); orális C02DC01"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vény nélküli (OTC) topikális; orális vényköteles (Rx)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "ATP-érzékeny K-csatorna-nyitó (vazodilatátor); SULT1A1 aktiválja"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "22 óra (topikális); 3-4 óra (orális)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "2-4 hónap (látható hajnövekedés)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "D11AX01 (topical); oral C02DC01"
+      },
+      {
+        "label": "Prescription",
+        "value": "Over-the-counter (OTC) topical; oral prescription only (Rx)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "ATP-sensitive K-channel opener (vasodilator); activated by SULT1A1"
+      },
+      {
+        "label": "Half-life",
+        "value": "22 h (topical); 3-4 h (oral)"
+      },
+      {
+        "label": "Onset",
+        "value": "2-4 months (visible hair regrowth)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "D11AX01 (miejscowy); doustny C02DC01"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Bez recepty (OTC) miejscowo; doustny na receptę (Rx)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Otwieracz kanałów K ATP-zależnych (wazodylatator); aktywowany przez SULT1A1"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "22 godz. (miejscowy); 3-4 godz. (doustny)"
+      },
+      {
+        "label": "Początek",
+        "value": "2-4 miesiące (widoczny odrost włosów)"
+      }
+    ]
+  },
+  {
+    "id": "hydrocortisone",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "D07AA02"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vény nélküli (OTC), patikai (1% külsőleges)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "Glükokortikoid-receptor agonista (gyenge szteroid, I. csoport)"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "1,2-2 óra (felszívódott szisztémás frakció)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "Órák-napok (helyi gyulladás- és viszketéscsökkenés)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "D07AA02"
+      },
+      {
+        "label": "Prescription",
+        "value": "Over-the-counter (OTC), pharmacy (1% topical)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "Glucocorticoid-receptor agonist (weak steroid, group I)"
+      },
+      {
+        "label": "Half-life",
+        "value": "1.2-2 h (absorbed systemic fraction)"
+      },
+      {
+        "label": "Onset",
+        "value": "Hours to days (local inflammation and itch relief)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "D07AA02"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Bez recepty (OTC), apteczny (1% miejscowo)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Agonista receptora glukokortykoidowego (słaby steroid, grupa I)"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "1,2-2 godz. (wchłonięta frakcja ogólnoustrojowa)"
+      },
+      {
+        "label": "Początek",
+        "value": "Godziny do dni (miejscowe ustąpienie zapalenia i świądu)"
+      }
+    ]
+  },
+  {
+    "id": "tamoxifen",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [
+      {
+        "field": "halfLife",
+        "problem": "Original source JSON attributed the ~14-day half-life to 4-hydroxytamoxifen, but the FDA SOLTAMOX label assigns ~14 days to N-desmethyltamoxifen (major metabolite); 4-hydroxytamoxifen is a minor metabolite with no stated half-life. This was already corrected in the composed keyInfo.",
+        "correction": "5-7 days (parent), N-desmethyl metabolite ~14 days (already applied in composed output)"
+      },
+      {
+        "field": "onsetTime",
+        "problem": "Original EN and PL onset fields contained leaked Hungarian text ('Klinikai valasz honapok-evek (adjuvans)'). This was already corrected to localized EN/PL in the composed output.",
+        "correction": "EN: 'Months to years (adjuvant clinical response)'; PL: 'Miesiace do lat (uzupelniajaca odpowiedz kliniczna)' (already applied)"
+      }
+    ],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "L02BA01"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx), onkológus felügyelet"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "Szelektív ösztrogén receptor modulátor (SERM), emlőben antagonista"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "5-7 nap (anyavegyület), N-dezmetil-metabolit ~14 nap"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "Hónapok-évek (adjuváns klinikai válasz)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "L02BA01"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx), oncologist-supervised"
+      },
+      {
+        "label": "Mechanism",
+        "value": "Selective estrogen receptor modulator (SERM), breast antagonist"
+      },
+      {
+        "label": "Half-life",
+        "value": "5-7 days (parent), N-desmethyl metabolite ~14 days"
+      },
+      {
+        "label": "Onset",
+        "value": "Months to years (adjuvant clinical response)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "L02BA01"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx), nadzór onkologa"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Selektywny modulator receptora estrogenowego (SERM), antagonista w piersi"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "5-7 dni (zw. macierzysty), metabolit N-desmetylo ~14 dni"
+      },
+      {
+        "label": "Początek",
+        "value": "Miesiące do lat (uzupełniająca odpowiedź kliniczna)"
+      }
+    ]
+  },
+  {
+    "id": "orforglipron",
+    "overall": "pass",
+    "atc_confirmed": true,
+    "halflife_confirmed": true,
+    "issues": [
+      {
+        "field": "prescriptionStatus",
+        "problem": "The task's special instruction assumes orforglipron is INVESTIGATIONAL / not-yet-Rx, but independent verification (PR Newswire, Lilly IR, FDA.gov press release, Pharmacy Times, Drugs.com, openFDA label record, FDA label PDF 220934Orig1s000lbl.pdf) confirms FDA approval on 2026-04-01 as Foundayo (NDA 220934). The composed data is CORRECT; the task premise is outdated. No fix to the composed value needed, but flagging the premise conflict for transparency.",
+        "correction": "Keep composed value 'Prescription only (Rx); FDA-approved 2026-04-01 (Foundayo)'. It reflects verified reality. Do NOT revert to an investigational/clinical-trial label."
+      }
+    ],
+    "keyInfo_hu": [
+      {
+        "label": "ATC kód",
+        "value": "Nincs (WHO ATC indexben még nem szerepel)"
+      },
+      {
+        "label": "Vény-státusz",
+        "value": "Vényköteles (Rx); FDA-jóváhagyott 2026.04.01 (Foundayo)"
+      },
+      {
+        "label": "Hatásmechanizmus",
+        "value": "Kis molekulájú orális GLP-1 receptor agonista (nem peptid)"
+      },
+      {
+        "label": "Felezési idő",
+        "value": "~29-49 óra (napi egyszeri adagolás)"
+      },
+      {
+        "label": "Hatáskezdet",
+        "value": "Tmax 4-8 óra; klinikai hatás 2-4 hét (steady-state)"
+      }
+    ],
+    "keyInfo_en": [
+      {
+        "label": "ATC code",
+        "value": "None (not yet in WHO ATC index)"
+      },
+      {
+        "label": "Prescription",
+        "value": "Prescription only (Rx); FDA-approved 2026-04-01 (Foundayo)"
+      },
+      {
+        "label": "Mechanism",
+        "value": "Small-molecule oral GLP-1 receptor agonist (non-peptide)"
+      },
+      {
+        "label": "Half-life",
+        "value": "~29-49 h (once-daily dosing)"
+      },
+      {
+        "label": "Onset",
+        "value": "Tmax 4-8 h; clinical effect 2-4 weeks (steady-state)"
+      }
+    ],
+    "keyInfo_pl": [
+      {
+        "label": "Kod ATC",
+        "value": "Brak (jeszcze nie w indeksie ATC WHO)"
+      },
+      {
+        "label": "Status recepty",
+        "value": "Na receptę (Rx); zatwierdzony przez FDA 2026-04-01 (Foundayo)"
+      },
+      {
+        "label": "Mechanizm",
+        "value": "Mało-cząsteczkowy doustny agonista receptora GLP-1 (nie peptyd)"
+      },
+      {
+        "label": "Okres półtrwania",
+        "value": "~29-49 godz. (raz dziennie)"
+      },
+      {
+        "label": "Początek",
+        "value": "Tmax 4-8 godz.; efekt kliniczny 2-4 tyg. (steady-state)"
+      }
+    ]
+  }
+]

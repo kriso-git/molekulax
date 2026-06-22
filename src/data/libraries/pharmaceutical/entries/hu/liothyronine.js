@@ -25,6 +25,28 @@ export default {
   "tagColor": "rgba(245,158,11,0.18)",
   "shortDesc": "Szintetikus T3 trijodotironin (Cytomel). Specifikus indikációkban (mixedéma-kóma, T4-konverzió-zavar, MDD-augmentáció). NEM rutin-választás.",
   "description": "A Liothyronine az aktív T3-hormon szintetikus formája (Cytomel, FDA 1956). NEM rutin-választás a hipotireózis kezelésében – Levothyroxin (T4) az endogén deiodaze-konverzió révén ad fiziológiás T3-szintet. Specifikus indikációk: (1) MIXEDÉMA-KÓMA sürgősségi kezelése (gyors hatású T3 IV), (2) szubjektív tüneti hipotireózis Levothyroxin-en normál TSH-val (T4-T3 konverzió-zavar gyanúja, ETA 2012 PMID 24782999 vita), (3) MDD-augmentáció (Cooper-Kazaz 2007 PMID 17888912 MDD-rezisztens), (4) DTC-szuppresszió post-thyroidectomia gyors hatás-kezdettel. A felezési ideje rövid (1 nap vs T4 7 nap), ezért 2-3x/nap adagolás szükséges, és nehezebb stabil-szintet elérni.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "H03AA02"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx)"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Szintetikus T3 (trijodtironin) hormon-pótlás, direkt tiroid-receptor agonista"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "kb. 2,5 nap (~60 óra, rövidebb mint a T4)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "néhány óra (max. hatás 2-3 nap)"
+    }
+  ],
   "mechanism": "Direkt T3-pótlás, NEM igényli a T4 → T3 perifériás deiodáz-konverziót. Azonnal aktiválja a tiroid receptor.",
   "legalStatus": "EU/HU: vényköteles (Cytomel, Thybon). USA: FDA Rx (Cytomel).",
   "bioavailability": "95% (orális, 4 óra alatt – FDA Cytomel label)",

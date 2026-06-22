@@ -27,6 +27,28 @@ export default {
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "13-cis-retinoic acid (Roche Roaccutane). Gold standard for severe nodulocystic acne. FDA category X due to severe teratogenicity – iPLEDGE program mandatory.",
   "description": "Isotretinoin (Roche Roaccutane / Accutane, FDA 1982) is the gold-standard treatment for severe nodulocystic acne. 13-cis-retinoic acid (vitamin A metabolite) causes sebaceous gland atrophy, sebum production reduction, and P. acnes growth inhibition. EXTREME TERATOGENICITY (FDA category X) – every female patient must enroll in pregnancy prevention program (USA: iPLEDGE, EU: similar national programs). 2 negative pregnancy tests before start, 2 forms contraception mandatory, monthly testing. Layton 2009 (PMID 20436884) 6-month course produces sustained remission in ~80% of cases. Side effect profile SIGNIFICANT: dryness (mouth, eye, skin, lip), muscle pain, liver function disturbance, depression risk.",
+  "keyInfo": [
+    {
+      "label": "ATC code",
+      "value": "D10BA01"
+    },
+    {
+      "label": "Prescription",
+      "value": "Prescription only (Rx), iPLEDGE/pregnancy prevention"
+    },
+    {
+      "label": "Mechanism",
+      "value": "Retinoid (RAR agonist), sebaceous gland suppression"
+    },
+    {
+      "label": "Half-life",
+      "value": "~21 h (active 4-oxo metabolite ~24 h)"
+    },
+    {
+      "label": "Onset",
+      "value": "4-8 weeks (initial), 15-20 weeks full course"
+    }
+  ],
   "mechanism": "Retinoid receptor (RAR) partial agonist. Sebaceous gland atrophy, ~80% sebum production reduction, P. acnes population decrease, normalization of follicular hyperkeratinization. Multimodal anti-acne effect.",
   "legalStatus": "EU/HU: prescription only, dermatologist-strictly-supervised protocol (Roaccutane). USA: FDA Rx iPLEDGE program.",
   "bioavailability": "~25% (oral, fasted; >2× higher with high-fat meal – FDA Accutane label)",

@@ -25,10 +25,33 @@ export default {
     { "hu": "Interakció guanetidinnel (orális): súlyos ortosztatikus hipotenzió kockázata; egyidejű antihipertenzívumok mellett szoros vérnyomás-monitorozás kell.", "en": "Interaction with guanethidine (oral): risk of severe orthostatic hypotension; close blood-pressure monitoring is required with concurrent antihypertensives.", "pl": "Interakcja z guanetydyną (doustnie): ryzyko ciężkiej hipotensji ortostatycznej; przy jednoczesnych lekach hipotensyjnych konieczne jest ścisłe monitorowanie ciśnienia." }
   ],
   "name": "Minoxidil",
+  "image": "/pharmaceutical/minoxidil-topical.png",
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "K-channel activator, topical or oral (Rogaine, Loniten + LDOM). Androgenetic alopecia treatment since 1988 – two administration routes with very different systemic exposure profiles.",
   "description": "Minoxidil was originally developed as an oral antihypertensive (Loniten, 1979). Hypertrichosis observed as a side effect led to topical formulations for alopecia (Upjohn Rogaine 2% 1988, 5% 1996). The two routes have fundamentally different pharmacokinetic profiles: topical systemic absorption is <2%, so blood-pressure impact is minimal; oral LDOM (0.25–5 mg/day) provides systemic exposure, more effective than topical (Perera & Sinclair 2017 PMID 29167734), but requires cardiovascular monitoring.",
+  "keyInfo": [
+    {
+      "label": "ATC code",
+      "value": "D11AX01 (topical); oral C02DC01"
+    },
+    {
+      "label": "Prescription",
+      "value": "Over-the-counter (OTC) topical; oral prescription only (Rx)"
+    },
+    {
+      "label": "Mechanism",
+      "value": "ATP-sensitive K-channel opener (vasodilator); activated by SULT1A1"
+    },
+    {
+      "label": "Half-life",
+      "value": "22 h (topical); 3-4 h (oral)"
+    },
+    {
+      "label": "Onset",
+      "value": "2-4 months (visible hair regrowth)"
+    }
+  ],
   "mechanism": "ATP-sensitive K-channel opening → vasodilation + hair-follicle perfusion. Secondary: sulfotransferase (SULT1A1)-activated metabolite (minoxidil sulfate), prostaglandin-E2 elevation. SULT1A1 enzyme-activity variance produces ~40–50% non-responder rate at population level (Goren 2014).",
   "cyp450": [
     "Sulfotransferase activation (SULT1A1)",

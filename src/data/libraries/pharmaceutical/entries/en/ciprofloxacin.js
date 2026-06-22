@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Fluoroquinolone antibiotic (Bayer Cipro). UTI, GI + complex Gram-negative infections. FDA boxed warning: tendon rupture + peripheral neuropathy.",
   "description": "Ciprofloxacin is the fluoroquinolone class prototype (Bayer Cipro, FDA 1987). Bactericidal via DNA gyrase and topoisomerase IV inhibition. Strong Gram-negative (E. coli, Pseudomonas, Klebsiella), moderate Gram-positive activity. FDA 2016/2018 BOXED WARNING is significant: tendon rupture, peripheral neuropathy, mental side effects (confusion, delirium), aortic aneurysm. Due to antibiotic stewardship, NOT first-line for mild UTI – typical indications: complicated UTI, prostatitis, non-severe acute sinusitis, GI infections (Salmonella, Shigella). FDA + EMA 2019 reassessment strictly limits fluoroquinolone use.",
+  "keyInfo": [
+    {
+      "label": "ATC code",
+      "value": "J01MA02"
+    },
+    {
+      "label": "Prescription",
+      "value": "Prescription only (Rx), stewardship protocol"
+    },
+    {
+      "label": "Mechanism",
+      "value": "DNA gyrase and topoisomerase IV inhibitor (fluoroquinolone)"
+    },
+    {
+      "label": "Half-life",
+      "value": "~4 h (twice-daily dosing)"
+    },
+    {
+      "label": "Onset",
+      "value": "24–48 h (clinical response)"
+    }
+  ],
   "mechanism": "Selective DNA gyrase (topoisomerase II) and topoisomerase IV inhibition → DNA replication and transcription block → bactericidal.",
   "legalStatus": "EU/HU: prescription only (Ciprobay, Ciprinol, generics). USA: FDA Rx (Cipro).",
   "bioavailability": "~70% (oral tablet, food-independent – FDA Cipro label)",

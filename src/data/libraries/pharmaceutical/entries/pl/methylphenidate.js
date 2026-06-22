@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Inhibitor DAT/NET stymulant, lek pierwszej linii ADHD Rx (Novartis Ritalin, Janssen Concerta). DEA Schedule II, znaczący potencjał nadużywania.",
   "description": "Metylofenidat to psychostymulant zsyntetyzowany w 1944, zatwierdzony w 1954 dla nadaktywności dziecięcej, od lat 90. lek pierwszej linii ADHD. Hamowanie wychwytu DAT i NET podnosi synaptyczną dopaminę i norepinefrynę w korze przedczołowej, poprawiając funkcję wykonawczą (uwaga, kontrola impulsów, pamięć robocza) w ADHD. DEA Schedule II (USA), odpowiednie zaostrzenie Rx. Formy IR (Ritalin, 3-5 h) i ER/OROS (Concerta 10-12 h). Badanie MTA (1999 JAMA, 14-miesięczna obserwacja) wykazało wyższość kombinacji stymulant + terapia behawioralna. Potencjał nadużywania: pokruszony-wdychany lub iv. daje euforię typu amfetaminowego, stąd preferowane formy XR.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "N06BA04"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx), recepta narkotyczna; DEA Schedule II"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Inhibitor wychwytu DAT/NET, stymulant OUN (dopamina + noradrenalina)"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "IR ~3,5 godz. (1,3–7,7 godz.); ER/OROS działa 10–12 godz."
+    },
+    {
+      "label": "Początek",
+      "value": "IR 30–45 min (szczyt 1–3 godz.); ER/OROS 1–2 godz."
+    }
+  ],
   "mechanism": "Hamowanie wychwytu DAT (transporter dopaminy) i NET (transporter norepinefryny). Różni się od amfetaminy: metylofenidat \"tylko\" hamuje, nie odwraca transportera (amfetamina powoduje uwolnienie DA na poziomie VMAT2, stąd silniejsza euforia).",
   "legalStatus": "UE/PL: na receptę, regulacja jako lek kontrolowany (Ritalin, Concerta, Medikinet). USA: DEA Schedule II.",
   "bioavailability": "22 ± 8% (d-metylofenidat), 5 ± 3% (l-metylofenidat) – doustnie, dzieci; intensywny first-pass – etykieta FDA Ritalin",

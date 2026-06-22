@@ -28,6 +28,28 @@ export default {
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Tetracycline antibiotic (Vibramycin). Lyme, malaria prevention, acne, chlamydia, atypical pneumonia. 100 mg standard.",
   "description": "Doxycycline is a long-acting tetracycline (Pfizer Vibramycin, FDA 1967). Inhibits bacterial 30S ribosomal subunit (aminoacyl-tRNA binding block). Spectrum: atypicals (Mycoplasma, Chlamydia, Rickettsia, Borrelia, Treponema), some Gram-positive (susceptible Staphylococcus), H. pylori (second-line). Key indications: early-stage Lyme disease, atypical pneumonia, chlamydia STD, malaria prevention (travel), severe acne (low-dose chronic). Side effect profile generally well-tolerated, photosensitivity and GI most common.",
+  "keyInfo": [
+    {
+      "label": "ATC code",
+      "value": "J01AA02"
+    },
+    {
+      "label": "Prescription",
+      "value": "Prescription only (Rx)"
+    },
+    {
+      "label": "Mechanism",
+      "value": "30S ribosome-binding protein synthesis inhibitor (tetracycline, bacteriostatic)"
+    },
+    {
+      "label": "Half-life",
+      "value": "18-22 h (once or twice daily)"
+    },
+    {
+      "label": "Onset",
+      "value": "24-48 h (clinical response)"
+    }
+  ],
   "mechanism": "30S ribosomal subunit block → aminoacyl-tRNA cannot bind → protein synthesis block. Bacteriostatic.",
   "legalStatus": "EU/HU: prescription only (Vibramycin, Doxakne, generics). USA: FDA Rx.",
   "bioavailability": "~95-100% (oral, \"virtually completely absorbed\" – FDA Vibramycin label)",
