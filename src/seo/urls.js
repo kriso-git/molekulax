@@ -93,6 +93,12 @@ export const COMPARISONS = [
 ]
 const SLUG_TO_COMPARISON = Object.fromEntries(COMPARISONS.map((c) => [c.slug, c]))
 
+// Reverse index: every comparison whose members include this {lib,id}. Pure, used by the
+// tile badge + the entry-page "related comparisons" block (Phase D).
+export function comparisonsForEntry(lib, id) {
+  return COMPARISONS.filter((c) => c.members.some((m) => m.lib === lib && m.id === id))
+}
+
 export function homePath(lang = 'hu') {
   return LANG_PREFIX[lang] || '/'
 }

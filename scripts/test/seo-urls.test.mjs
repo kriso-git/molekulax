@@ -1,6 +1,7 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { LIB_SLUGS, entryPath, libraryPath, homePath, parsePath, translatePath, COMPARISONS, COMPARISON_BASE, comparisonBasePath, comparisonPath } from '../../src/seo/urls.js'
+import { comparisonsForEntry } from '../../src/seo/urls.js'
 
 test('LIB_SLUGS has all 4 libraries with hu/en/pl words', () => {
   for (const id of ['peptides', 'nootropics', 'performance', 'pharmaceutical']) {
@@ -114,4 +115,20 @@ test('translatePath: comparison + comparison-index keep slug, swap prefix', () =
     '/pl/porownanie/ostarine-vs-rad-140')
   assert.equal(translatePath({ kind: 'comparison-index', lang: 'en' }, 'pl'), '/pl/porownanie')
   assert.equal(translatePath({ kind: 'comparison-index', lang: 'hu' }, 'hu'), '/osszehasonlitas')
+})
+
+test('comparisonsForEntry returns comparisons containing the entry (by lib+id)', () => {
+  const r = comparisonsForEntry('performance', 'finasteride')
+  const slugs = r.map((c) => c.slug)
+  assert.ok(slugs.includes('finasteride-vs-dutasteride'))
+  assert.ok(slugs.includes('finasteride-performance-vs-pharmaceutical'))
+})
+
+test('comparisonsForEntry is lib-specific (pharma finasteride only matches the cross-lib one)', () => {
+  const slugs = comparisonsForEntry('pharmaceutical', 'finasteride').map((c) => c.slug)
+  assert.deepEqual(slugs, ['finasteride-performance-vs-pharmaceutical'])
+})
+
+test('comparisonsForEntry returns [] for an entry in no comparison', () => {
+  assert.deepEqual(comparisonsForEntry('peptides', 'glow'), [])
 })
