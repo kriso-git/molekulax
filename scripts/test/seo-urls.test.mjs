@@ -72,12 +72,14 @@ test('roundtrip: parsePath(entryPath(x)) recovers x', () => {
   assert.deepEqual(parsePath(p), { kind: 'entry', lang: 'hu', library: 'pharmaceutical', id: 'tadalafil', variantId: null })
 })
 
-test('COMPARISONS registry: 3 curated comparisons with members + lib, slug = members joined', () => {
-  assert.equal(COMPARISONS.length, 3)
+test('COMPARISONS registry: 32 curated comparisons with per-member lib, slug string, valid title', () => {
+  assert.equal(COMPARISONS.length, 32)
   assert.deepEqual(Object.keys(COMPARISON_BASE), ['hu', 'en', 'pl'])
   for (const c of COMPARISONS) {
-    assert.ok(c.slug && c.lib && Array.isArray(c.members) && c.members.length >= 2)
-    assert.equal(c.slug, c.members.join('-vs-'))
+    assert.ok(c.slug && Array.isArray(c.members) && c.members.length >= 2, `bad shape: ${c.slug}`)
+    for (const m of c.members) {
+      assert.ok(m.id && m.lib, `member missing id or lib in ${c.slug}`)
+    }
     assert.equal(typeof c.title, 'string')
   }
 })
