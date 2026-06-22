@@ -26,8 +26,8 @@ export default function RelatedComparisons({ libraryId, entryId, lang = 'hu' }) 
   return (
     <section className="px-6 sm:px-10 py-3">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
-        <h2 className="text-[11px] uppercase tracking-[0.2em] inline-flex items-center gap-1.5 shrink-0" style={{ color: '#818cf8' }}>
-          <GitCompareArrows size={14} strokeWidth={2} aria-hidden="true" />
+        <h2 className="text-xs font-semibold uppercase tracking-[0.18em] inline-flex items-center gap-2 shrink-0" style={{ color: '#c7d2fe' }}>
+          <GitCompareArrows size={15} strokeWidth={2.25} aria-hidden="true" />
           {HEADING[lang] || HEADING.hu}
         </h2>
         {cmps.map((cmp) => {
