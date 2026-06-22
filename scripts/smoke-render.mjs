@@ -34,6 +34,9 @@ const ROUTES = [
   { label: 'PL entry — /pl/peptydy/bpc-157', lib: null, path: '/pl/peptydy/bpc-157' },
   { label: 'comparison index — /osszehasonlitas', lib: null, path: '/osszehasonlitas' },
   { label: 'comparison detail — bpc-157-vs-tb-500', lib: null, path: '/osszehasonlitas/bpc-157-vs-tb-500' },
+  { label: 'comparison new within-lib — AI trio', lib: null, path: '/osszehasonlitas/anastrozol-vs-letrozol-vs-exemestane' },
+  { label: 'comparison cross-lib — HMG perf vs peptid', lib: null, path: '/osszehasonlitas/hmg-perf-vs-hmg-peptid' },
+  { label: 'comparison same-id cross — finasteride', lib: null, path: '/osszehasonlitas/finasteride-performance-vs-pharmaceutical' },
 ]
 
 async function waitForServer(url, tries = 60) {
