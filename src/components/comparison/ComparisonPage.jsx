@@ -5,6 +5,8 @@ import { loadEntry, listLibraries } from '../../data/libraries'
 import { buildComparison } from './buildComparison'
 import DimensionIcon from './DimensionIcon'
 import MemberAvatar from './MemberAvatar'
+import InfoDot from './InfoDot'
+import { glossaryFor } from '../../data/glossary'
 import { navigate } from '../../router/location'
 import Footer from '../Footer'
 
@@ -79,6 +81,7 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
         <div className="inline-flex items-center gap-2 mb-4 text-[#818cf8]">
           <GitCompareArrows size={18} strokeWidth={2} />
           <span className="text-xs uppercase tracking-[0.2em]">{libName}</span>
+          {(() => { const g = glossaryFor(libName, lang); return g ? <InfoDot term={g.term[lang] || g.term.hu} def={g.def[lang] || g.def.hu} /> : null })()}
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>{cmp.title}</h1>
         <p className="text-base leading-relaxed mb-8 max-w-3xl" style={{ color: 'var(--text-secondary)' }}>{c.intro}</p>
@@ -148,7 +151,7 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
                   {data.rows.map((row, ri) => (
                     <tr key={ri} className="border-t border-[rgba(129,140,248,0.10)]">
                       <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>
-                        <span className="inline-flex items-center gap-1.5"><DimensionIcon label={row.label} />{row.label}</span>
+                        <span className="inline-flex items-center gap-1.5"><DimensionIcon label={row.label} />{row.label}{(() => { const g = glossaryFor(row.label, lang); return g ? <InfoDot term={g.term[lang] || g.term.hu} def={g.def[lang] || g.def.hu} /> : null })()}</span>
                       </th>
                       {row.values.map((v, vi) => (
                         <td key={vi} className="p-4 text-sm leading-relaxed align-top" style={{ color: 'var(--text-secondary)' }}>{v || DASH}</td>
@@ -174,7 +177,7 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
               {[{ label: c.whatIs, values: data.members.map((m) => m?.shortDesc || null) }, ...data.rows].map((row, ri) => (
                 <div key={ri} className="rounded-2xl glass p-4">
                   <div className="text-xs uppercase tracking-widest font-semibold mb-3 inline-flex items-center gap-1.5" style={{ color: 'var(--text-muted)' }}>
-                    <DimensionIcon label={row.label} />{row.label}
+                    <DimensionIcon label={row.label} />{row.label}{(() => { const g = glossaryFor(row.label, lang); return g ? <InfoDot term={g.term[lang] || g.term.hu} def={g.def[lang] || g.def.hu} /> : null })()}
                   </div>
                   <div className="space-y-2">
                     {data.members.map((m, vi) => (
