@@ -2,41 +2,43 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { buildComparison } from '../../src/components/comparison/buildComparison.js'
 
-const A = { id: 'a', name: 'A', shortDesc: 'first', keyInfo: [{ label: 'Típus', value: 'X' }, { label: 'Felezési idő', value: '1h' }] }
-const B = { id: 'b', name: 'B', shortDesc: 'second', keyInfo: [{ label: 'Típus', value: 'Y' }, { label: 'Tárolás', value: 'fridge' }] }
+const e = (id, keyInfo, extra = {}) => ({ id, name: id.toUpperCase(), shortDesc: `${id} desc`, keyInfo, ...extra })
 
-test('buildComparison: members carry id + name + shortDesc + href', () => {
-  const r = buildComparison([A, B], 'hu', 'peptides')
-  assert.deepEqual(r.members.map((m) => m.name), ['A', 'B'])
-  assert.equal(r.members[0].shortDesc, 'first')
-  assert.equal(r.members[0].href, '/peptidek/a')
+test('same-lib: union of keyInfo labels, per-member href uses member lib', () => {
+  const cmp = { members: [{ id: 'a', lib: 'performance' }, { id: 'b', lib: 'performance' }] }
+  const entries = [
+    e('a', [{ label: 'Mech', value: 'x' }, { label: 'Half', value: '1h' }]),
+    e('b', [{ label: 'Mech', value: 'y' }, { label: 'Legal', value: 'Rx' }]),
+  ]
+  const { members, rows } = buildComparison(entries, cmp, 'hu')
+  assert.equal(members[0].href, '/teljesitmenyfokozok/a')
+  assert.deepEqual(rows.map((r) => r.label), ['Mech', 'Half', 'Legal']) // first-seen union
+  assert.deepEqual(rows[2].values, [null, 'Rx']) // gap for member a
 })
 
-test('buildComparison: keyInfo union, first-seen order, null for gaps', () => {
-  const r = buildComparison([A, B], 'hu', 'peptides')
-  assert.deepEqual(r.rows.map((row) => row.label), ['Típus', 'Felezési idő', 'Tárolás'])
-  assert.deepEqual(r.rows.find((row) => row.label === 'Típus').values, ['X', 'Y'])
-  assert.deepEqual(r.rows.find((row) => row.label === 'Tárolás').values, [null, 'fridge'])
-  assert.deepEqual(r.rows.find((row) => row.label === 'Felezési idő').values, ['1h', null])
+test('curated dimensions: match synonyms per lang, display label used', () => {
+  const cmp = {
+    members: [{ id: 'a', lib: 'performance' }, { id: 'b', lib: 'pharmaceutical' }],
+    dimensions: [
+      { display: { hu: 'Hatáskezdet', en: 'Onset', pl: 'Początek działania' }, match: { hu: ['Hatáskezdet'], en: ['Onset'], pl: ['Początek działania', 'Początek'] } },
+    ],
+  }
+  const entriesPl = [e('a', [{ label: 'Początek działania', value: 'szybko' }]), e('b', [{ label: 'Początek', value: 'wolno' }])]
+  const { rows } = buildComparison(entriesPl, cmp, 'pl')
+  assert.equal(rows[0].label, 'Początek działania')
+  assert.deepEqual(rows[0].values, ['szybko', 'wolno']) // synonym list matched both members
 })
 
-test('buildComparison: handles a null member (failed import) gracefully', () => {
-  const r = buildComparison([A, null], 'hu', 'peptides')
-  assert.equal(r.members[1], null)
-  assert.equal(r.rows.find((row) => row.label === 'Típus').values[1], null)
-  // labels still come only from the surviving member
-  assert.deepEqual(r.rows.map((row) => row.label), ['Típus', 'Felezési idő'])
+test('same-id cross-lib: column name disambiguated by library', () => {
+  const cmp = { sameId: true, members: [{ id: 'finasteride', lib: 'performance' }, { id: 'finasteride', lib: 'pharmaceutical' }] }
+  const entries = [e('finasteride', []), e('finasteride', [])]
+  const { members } = buildComparison(entries, cmp, 'hu')
+  assert.equal(members[0].name, 'FINASTERIDE · teljesítmény')
+  assert.equal(members[1].name, 'FINASTERIDE · gyógyszer')
 })
 
-test('buildComparison: tolerates triplet {hu,en,pl} shortDesc + value via lang', () => {
-  const T = { id: 't', name: 'T', shortDesc: { hu: 'magyar', en: 'eng' }, keyInfo: [{ label: 'Típus', value: { hu: 'm', en: 'e' } }] }
-  const r = buildComparison([T], 'en', 'peptides')
-  assert.equal(r.members[0].shortDesc, 'eng')
-  assert.equal(r.rows[0].values[0], 'e')
-})
-
-test('buildComparison: no lib -> href null, entries with no keyInfo -> no rows', () => {
-  const r = buildComparison([{ id: 'x', name: 'X', shortDesc: 'd' }], 'hu', null)
-  assert.equal(r.members[0].href, null)
-  assert.deepEqual(r.rows, [])
+test('null member entry yields null slot (failed import)', () => {
+  const cmp = { members: [{ id: 'a', lib: 'peptides' }, { id: 'b', lib: 'peptides' }] }
+  const { members } = buildComparison([e('a', []), null], cmp, 'hu')
+  assert.equal(members[1], null)
 })
