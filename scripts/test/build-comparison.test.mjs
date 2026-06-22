@@ -37,8 +37,28 @@ test('same-id cross-lib: column name disambiguated by library', () => {
   assert.equal(members[1].name, 'FINASTERIDE · gyógyszer')
 })
 
-test('null member entry yields null slot (failed import)', () => {
+test('null member entry yields null slot AND does not pollute the union', () => {
   const cmp = { members: [{ id: 'a', lib: 'peptides' }, { id: 'b', lib: 'peptides' }] }
-  const { members } = buildComparison([e('a', []), null], cmp, 'hu')
+  const { members, rows } = buildComparison([e('a', [{ label: 'Mech', value: 'x' }]), null], cmp, 'hu')
   assert.equal(members[1], null)
+  assert.deepEqual(rows.map((r) => r.label), ['Mech']) // null member contributes no labels
+  assert.deepEqual(rows[0].values, ['x', null]) // surviving value present, null slot for missing member
+})
+
+test('triplet {hu,en,pl} values are localized per lang (name, shortDesc, keyInfo value)', () => {
+  const cmp = { members: [{ id: 'a', lib: 'peptides' }] }
+  const tripletEntry = {
+    id: 'a',
+    name: { hu: 'Anév', en: 'Aname', pl: 'Anazwa' },
+    shortDesc: { hu: 'leiras', en: 'desc', pl: 'opis' },
+    keyInfo: [{ label: 'Mech', value: { hu: 'huval', en: 'enval', pl: 'plval' } }],
+  }
+  const en = buildComparison([tripletEntry], cmp, 'en')
+  assert.equal(en.members[0].name, 'Aname')
+  assert.equal(en.members[0].shortDesc, 'desc')
+  assert.equal(en.rows[0].values[0], 'enval')
+  // missing lang falls back to hu
+  const de = buildComparison([tripletEntry], cmp, 'de')
+  assert.equal(de.members[0].name, 'Anév')
+  assert.equal(de.rows[0].values[0], 'huval')
 })
