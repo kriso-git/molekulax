@@ -99,21 +99,22 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
         <h1 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>{cmp.title}</h1>
         <p className="text-base leading-relaxed mb-8 max-w-3xl" style={{ color: 'var(--text-secondary)' }}>{c.intro}</p>
 
-        {/* Hero lineup: each member's avatar (image on its accent glow) joined by the ⇄ motif. */}
+        {/* Mobile-only member lineup (the desktop table puts avatars in its column headers,
+            aligned over each column; on mobile there is no table to align to). */}
         {data && (
-          <div className="flex flex-wrap items-end gap-x-3 gap-y-4 mb-10">
+          <div className="sm:hidden flex flex-wrap items-end gap-x-3 gap-y-4 mb-10">
             {data.members.map((m, i) => (
               <div key={i} className="contents">
                 {i > 0 && <GitCompareArrows size={20} strokeWidth={1.75} className="mb-6 opacity-50" style={{ color: '#818cf8' }} />}
                 {m
                   ? (
-                    <a href={m.href} onClick={(e) => navTo(e, m.href)} className="group flex flex-col items-center gap-2 no-underline w-24 sm:w-28">
+                    <a href={m.href} onClick={(e) => navTo(e, m.href)} className="group flex flex-col items-center gap-2 no-underline w-24">
                       <MemberAvatar member={m} size={64} />
-                      <span className="text-center text-xs sm:text-sm font-bold leading-tight transition-colors group-hover:text-[#818cf8]" style={{ color: 'var(--text-primary)' }}>{m.name}</span>
+                      <span className="text-center text-xs font-bold leading-tight transition-colors group-hover:text-[#818cf8]" style={{ color: 'var(--text-primary)' }}>{m.name}</span>
                       <span className="h-0.5 w-8 rounded-full" style={{ background: m.accent }} />
                     </a>
                   )
-                  : <span className="w-24 sm:w-28 text-center text-2xl font-bold" style={{ color: 'var(--text-muted)' }}>{DASH}</span>}
+                  : <span className="w-24 text-center text-2xl font-bold" style={{ color: 'var(--text-muted)' }}>{DASH}</span>}
               </div>
             ))}
           </div>
@@ -134,12 +135,19 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr>
-                    <th className="p-4 text-xs uppercase tracking-widest font-semibold align-bottom" style={{ color: 'var(--text-muted)' }}></th>
+                    <th className="p-4 align-bottom text-center" style={{ color: '#818cf8' }}>
+                      <GitCompareArrows size={18} strokeWidth={1.75} className="mx-auto opacity-50" aria-hidden="true" />
+                    </th>
                     {data.members.map((m, i) => (
-                      <th key={i} className="p-4 align-bottom border-b-2" style={{ color: 'var(--text-primary)', borderColor: m?.accent || 'rgba(129,140,248,0.4)' }}>
+                      <th key={i} className="p-4 align-bottom border-b-2 text-center" style={{ borderColor: m?.accent || 'rgba(129,140,248,0.4)' }}>
                         {m
-                          ? <a href={m.href} onClick={(e) => navTo(e, m.href)} className="text-lg font-bold tracking-wide hover:text-[#818cf8] transition-colors">{m.name}</a>
-                          : <span className="text-lg font-bold">{DASH}</span>}
+                          ? (
+                            <a href={m.href} onClick={(e) => navTo(e, m.href)} className="group inline-flex flex-col items-center gap-2 no-underline">
+                              <MemberAvatar member={m} size={56} />
+                              <span className="text-base font-bold tracking-wide transition-colors group-hover:text-[#818cf8]" style={{ color: 'var(--text-primary)' }}>{m.name}</span>
+                            </a>
+                          )
+                          : <span className="text-lg font-bold" style={{ color: 'var(--text-muted)' }}>{DASH}</span>}
                       </th>
                     ))}
                   </tr>
