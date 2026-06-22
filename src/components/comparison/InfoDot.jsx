@@ -56,7 +56,7 @@ export default function InfoDot({ term, def, className = '' }) {
         ref={popRef}
         id={popId}
         role="tooltip"
-        className={`absolute left-0 top-[calc(100%+6px)] z-50 w-[min(17rem,calc(100vw-2.5rem))] rounded-xl p-3 text-left normal-case tracking-normal shadow-xl transition-opacity duration-150 motion-reduce:transition-none ${open ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
+        className={`absolute left-0 top-[calc(100%+6px)] z-50 w-[min(17rem,calc(100vw-2.5rem))] rounded-xl p-3 text-left normal-case tracking-normal whitespace-normal break-words shadow-xl transition-opacity duration-150 motion-reduce:transition-none ${open ? 'opacity-100 visible' : 'opacity-0 invisible'}`}
         style={{ background: 'rgba(17,17,27,0.98)', border: '1px solid rgba(129,140,248,0.40)', backdropFilter: 'blur(8px)', transform: `translateX(${shift}px)` }}
       >
         <span className="block text-xs font-bold mb-1" style={{ color: '#a5b4fc' }}>{term}</span>
