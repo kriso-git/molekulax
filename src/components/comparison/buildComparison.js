@@ -28,7 +28,8 @@ export function buildComparison(memberEntries, comparison, lang = 'hu') {
     const lib = meta[i]?.lib
     const baseName = loc(e.name, lang) ?? e.name
     const name = comparison.sameId ? `${baseName} · ${LIB_SHORT[lib]?.[lang] ?? lib}` : baseName
-    return { id: e.id, lib, name, shortDesc: loc(e.shortDesc, lang), href: lib ? entryPath(lib, e.id, null, lang) : null }
+    // image + accent power the Phase B visual headers (member avatar on its accent glow).
+    return { id: e.id, lib, name, shortDesc: loc(e.shortDesc, lang), href: lib ? entryPath(lib, e.id, null, lang) : null, image: e.image ?? null, accent: e.accentColor ?? '#818cf8' }
   })
 
   let rows

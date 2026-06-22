@@ -3,6 +3,7 @@ import { ArrowLeft, GitCompareArrows } from 'lucide-react'
 import { COMPARISONS, homePath } from '../../seo/urls'
 import { loadEntry, listLibraries } from '../../data/libraries'
 import { buildComparison } from './buildComparison'
+import DimensionIcon from './DimensionIcon'
 import { navigate } from '../../router/location'
 import Footer from '../Footer'
 
@@ -39,6 +40,23 @@ function navTo(e, to) {
   if (!to || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return
   e.preventDefault()
   navigate(to)
+}
+
+// Member avatar = the compound's image floating on its own accentColor radial glow (echoes
+// the entry-page hero, scaled down). Falls back to the name's initial when an entry has no
+// image. Decorative; the surrounding link carries the accessible name.
+function MemberAvatar({ member, size }) {
+  const accent = member?.accent || '#818cf8'
+  return (
+    <span
+      className="relative inline-flex items-center justify-center rounded-full shrink-0"
+      style={{ width: size, height: size, background: `radial-gradient(circle at 50% 42%, ${accent}33, transparent 72%)`, border: `1px solid ${accent}44` }}
+    >
+      {member?.image
+        ? <img src={member.image} alt="" loading="lazy" className="object-contain" style={{ width: '78%', height: '78%' }} />
+        : <span className="font-bold" style={{ color: accent, fontSize: size * 0.4 }}>{(member?.name || '?').charAt(0)}</span>}
+    </span>
+  )
 }
 
 export default function ComparisonPage({ lang = 'hu', slug }) {
@@ -79,7 +97,27 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
           <span className="text-xs uppercase tracking-[0.2em]">{libName}</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>{cmp.title}</h1>
-        <p className="text-base leading-relaxed mb-10 max-w-3xl" style={{ color: 'var(--text-secondary)' }}>{c.intro}</p>
+        <p className="text-base leading-relaxed mb-8 max-w-3xl" style={{ color: 'var(--text-secondary)' }}>{c.intro}</p>
+
+        {/* Hero lineup: each member's avatar (image on its accent glow) joined by the ⇄ motif. */}
+        {data && (
+          <div className="flex flex-wrap items-end gap-x-3 gap-y-4 mb-10">
+            {data.members.map((m, i) => (
+              <div key={i} className="contents">
+                {i > 0 && <GitCompareArrows size={20} strokeWidth={1.75} className="mb-6 opacity-50" style={{ color: '#818cf8' }} />}
+                {m
+                  ? (
+                    <a href={m.href} onClick={(e) => navTo(e, m.href)} className="group flex flex-col items-center gap-2 no-underline w-24 sm:w-28">
+                      <MemberAvatar member={m} size={64} />
+                      <span className="text-center text-xs sm:text-sm font-bold leading-tight transition-colors group-hover:text-[#818cf8]" style={{ color: 'var(--text-primary)' }}>{m.name}</span>
+                      <span className="h-0.5 w-8 rounded-full" style={{ background: m.accent }} />
+                    </a>
+                  )
+                  : <span className="w-24 sm:w-28 text-center text-2xl font-bold" style={{ color: 'var(--text-muted)' }}>{DASH}</span>}
+              </div>
+            ))}
+          </div>
+        )}
 
         {!data && (
           <div className="animate-pulse space-y-3" aria-hidden="true">
@@ -98,7 +136,7 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
                   <tr>
                     <th className="p-4 text-xs uppercase tracking-widest font-semibold align-bottom" style={{ color: 'var(--text-muted)' }}></th>
                     {data.members.map((m, i) => (
-                      <th key={i} className="p-4 align-bottom" style={{ color: 'var(--text-primary)' }}>
+                      <th key={i} className="p-4 align-bottom border-b-2" style={{ color: 'var(--text-primary)', borderColor: m?.accent || 'rgba(129,140,248,0.4)' }}>
                         {m
                           ? <a href={m.href} onClick={(e) => navTo(e, m.href)} className="text-lg font-bold tracking-wide hover:text-[#818cf8] transition-colors">{m.name}</a>
                           : <span className="text-lg font-bold">{DASH}</span>}
@@ -108,14 +146,18 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
                 </thead>
                 <tbody>
                   <tr className="border-t border-[rgba(129,140,248,0.10)]">
-                    <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>{c.whatIs}</th>
+                    <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>
+                      <span className="inline-flex items-center gap-1.5"><DimensionIcon label={c.whatIs} />{c.whatIs}</span>
+                    </th>
                     {data.members.map((m, i) => (
                       <td key={i} className="p-4 text-sm leading-relaxed align-top" style={{ color: 'var(--text-secondary)' }}>{m?.shortDesc || DASH}</td>
                     ))}
                   </tr>
                   {data.rows.map((row, ri) => (
                     <tr key={ri} className="border-t border-[rgba(129,140,248,0.10)]">
-                      <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>{row.label}</th>
+                      <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>
+                        <span className="inline-flex items-center gap-1.5"><DimensionIcon label={row.label} />{row.label}</span>
+                      </th>
                       {row.values.map((v, vi) => (
                         <td key={vi} className="p-4 text-sm leading-relaxed align-top" style={{ color: 'var(--text-secondary)' }}>{v || DASH}</td>
                       ))}
@@ -139,11 +181,16 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
             <div className="sm:hidden space-y-4">
               {[{ label: c.whatIs, values: data.members.map((m) => m?.shortDesc || null) }, ...data.rows].map((row, ri) => (
                 <div key={ri} className="rounded-2xl glass p-4">
-                  <div className="text-xs uppercase tracking-widest font-semibold mb-3" style={{ color: 'var(--text-muted)' }}>{row.label}</div>
+                  <div className="text-xs uppercase tracking-widest font-semibold mb-3 inline-flex items-center gap-1.5" style={{ color: 'var(--text-muted)' }}>
+                    <DimensionIcon label={row.label} />{row.label}
+                  </div>
                   <div className="space-y-2">
                     {data.members.map((m, vi) => (
                       <div key={vi} className="flex flex-col gap-0.5">
-                        <span className="text-[11px] font-bold tracking-wide" style={{ color: 'var(--text-primary)' }}>{m?.name || DASH}</span>
+                        <span className="text-[11px] font-bold tracking-wide inline-flex items-center gap-1.5" style={{ color: 'var(--text-primary)' }}>
+                          {m?.name || DASH}
+                          {m && <span className="h-2 w-2 rounded-full" style={{ background: m.accent }} />}
+                        </span>
                         <span className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{row.values[vi] || DASH}</span>
                       </div>
                     ))}
