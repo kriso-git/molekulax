@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { ArrowLeft, ArrowRight, GitCompareArrows } from 'lucide-react'
 import { COMPARISONS, comparisonPath, homePath } from '../../seo/urls'
 import { listLibraries, loadLibrary, getLibrary } from '../../data/libraries'
-import MemberAvatar from './MemberAvatar'
 import { navigate } from '../../router/location'
 import Footer from '../Footer'
 
@@ -23,10 +22,11 @@ export default function ComparisonIndex({ lang = 'hu' }) {
   const libs = listLibraries()
   const libName = (id) => { const l = libs.find((x) => x.id === id); return l ? (l.name[lang] || l.name.hu) : '' }
 
-  // Member thumbnails on each card: image + accent come from each library's LIBRARY_ENTRY_META
-  // (the same sync meta the gallery tiles use). Lazy-load only the referenced libraries, then
-  // build a `${lib}:${id}` -> {image, accent} map. Cards render immediately; avatars fill in.
-  const [media, setMedia] = useState({})
+  // Per-member accent dots on each card: the accent colour comes from each library's
+  // LIBRARY_ENTRY_META (LIBRARY_META's library accent is uniform, so it can't tint per member).
+  // Lazy-load only the referenced libraries, then build a `${lib}:${id}` -> accent map. Cards
+  // render immediately (indigo fallback dots) and recolour once the meta resolves.
+  const [accents, setAccents] = useState({})
   useEffect(() => {
     let cancelled = false
     const libIds = [...new Set(COMPARISONS.flatMap((cmp) => cmp.members.map((m) => m.lib)))]
@@ -35,9 +35,9 @@ export default function ComparisonIndex({ lang = 'hu' }) {
       const map = {}
       for (const id of libIds) {
         const meta = getLibrary(id)?.meta || []
-        for (const e of meta) map[`${id}:${e.id}`] = { image: e.image || null, accent: e.accentColor || '#818cf8' }
+        for (const e of meta) map[`${id}:${e.id}`] = e.accentColor || '#818cf8'
       }
-      setMedia(map)
+      setAccents(map)
     })
     return () => { cancelled = true }
   }, [])
@@ -69,11 +69,12 @@ export default function ComparisonIndex({ lang = 'hu' }) {
                 onClick={(e) => navTo(e, href)}
                 className="group flex items-center gap-4 p-5 rounded-2xl glass no-underline transition-all duration-300 hover:border-[rgba(129,140,248,0.35)] hover:bg-[rgba(99,102,241,0.07)]"
               >
-                {/* Member thumbnails: shows at a glance which compounds the comparison holds. */}
-                <div className="flex items-center gap-1.5 shrink-0">
+                {/* Accent dots: one per member in its compound accent — shows the count + adds
+                    colour without image clutter. */}
+                <div className="flex items-center gap-2 shrink-0">
                   {cmp.members.map((m, i) => {
-                    const mm = media[`${m.lib}:${m.id}`]
-                    return <MemberAvatar key={i} accent={mm?.accent} image={mm?.image} name={m.id} size={40} />
+                    const accent = accents[`${m.lib}:${m.id}`] || '#818cf8'
+                    return <span key={i} className="w-2.5 h-2.5 rounded-full" style={{ background: accent, boxShadow: `0 0 8px ${accent}99` }} />
                   })}
                 </div>
                 <div className="flex flex-col min-w-0">

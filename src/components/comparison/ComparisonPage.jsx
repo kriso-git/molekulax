@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ArrowLeft, GitCompareArrows } from 'lucide-react'
-import { COMPARISONS, homePath } from '../../seo/urls'
+import { COMPARISONS, comparisonBasePath } from '../../seo/urls'
 import { loadEntry, listLibraries } from '../../data/libraries'
 import { buildComparison } from './buildComparison'
 import DimensionIcon from './DimensionIcon'
@@ -13,21 +13,21 @@ const DASH = '—'
 // UI labels only (no body / medical prose — content is the juxtaposed entry data).
 const CONTENT = {
   hu: {
-    back: 'Vissza a főoldalra',
+    back: 'Vissza az összehasonlításokhoz',
     whatIs: 'Mi ez',
     fullEntry: 'Teljes leírás',
     open: 'Megnyitás',
     intro: 'A táblázat a vegyületek legfontosabb adatait veti össze az adatlapjaik alapján. A részletekért nyisd meg az egyes vegyületek teljes leírását. Edukatív tartalom, nem orvosi tanács.',
   },
   en: {
-    back: 'Back to home',
+    back: 'Back to comparisons',
     whatIs: 'What it is',
     fullEntry: 'Full entry',
     open: 'Open',
     intro: 'The table compares the compounds’ key data from their entry pages. Open each compound’s full entry for details. Educational content, not medical advice.',
   },
   pl: {
-    back: 'Powrót do strony głównej',
+    back: 'Powrót do porównań',
     whatIs: 'Co to jest',
     fullEntry: 'Pełny opis',
     open: 'Otwórz',
@@ -70,7 +70,7 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
     <div className="min-h-screen">
       <article className="max-w-5xl mx-auto px-6 sm:px-8 pt-24 pb-16">
         <button
-          onClick={() => navigate(homePath(lang))}
+          onClick={() => navigate(comparisonBasePath(lang))}
           className="inline-flex items-center gap-2 text-xs uppercase tracking-widest mb-10 text-gray-500 hover:text-[#818cf8] transition-colors"
         >
           <ArrowLeft size={14} /> {c.back}
