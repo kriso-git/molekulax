@@ -46,9 +46,9 @@ export const COMPARISON_BASE = { hu: 'osszehasonlitas', en: 'compare', pl: 'poro
 // `title` is the human-readable display name (compound names are language-invariant), used by
 // the index cards + detail H1 without loading entry data.
 export const COMPARISONS = [
-  { slug: 'ostarine-vs-rad-140', lib: 'performance', members: ['ostarine', 'rad-140'], title: 'Ostarine vs RAD-140' },
-  { slug: 'semaglutide-vs-tirzepatide-vs-retatrutide', lib: 'peptides', members: ['semaglutide', 'tirzepatide', 'retatrutide'], title: 'Semaglutide vs Tirzepatide vs Retatrutide' },
-  { slug: 'bpc-157-vs-tb-500', lib: 'peptides', members: ['bpc-157', 'tb-500'], title: 'BPC-157 vs TB-500' },
+  { slug: 'ostarine-vs-rad-140', members: [{ id: 'ostarine', lib: 'performance' }, { id: 'rad-140', lib: 'performance' }], title: 'Ostarine vs RAD-140' },
+  { slug: 'semaglutide-vs-tirzepatide-vs-retatrutide', members: [{ id: 'semaglutide', lib: 'peptides' }, { id: 'tirzepatide', lib: 'peptides' }, { id: 'retatrutide', lib: 'peptides' }], title: 'Semaglutide vs Tirzepatide vs Retatrutide' },
+  { slug: 'bpc-157-vs-tb-500', members: [{ id: 'bpc-157', lib: 'peptides' }, { id: 'tb-500', lib: 'peptides' }], title: 'BPC-157 vs TB-500' },
 ]
 const SLUG_TO_COMPARISON = Object.fromEntries(COMPARISONS.map((c) => [c.slug, c]))
 

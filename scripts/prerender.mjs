@@ -95,8 +95,8 @@ function contentHashFor(route) {
   // shellHash), so hash those files — else a member edit would serve a stale cached table.
   if (route.isComparison && route.members) {
     const h = createHash('sha256')
-    for (const id of route.members) {
-      const p = join(repoRoot, 'src', 'data', 'libraries', route.lib, 'entries', route.lang, `${id}.js`)
+    for (const m of route.members) {
+      const p = join(repoRoot, 'src', 'data', 'libraries', m.lib, 'entries', route.lang, `${m.id}.js`)
       try { h.update(readFileSync(p)) } catch {}
     }
     return h.digest('hex')
@@ -144,7 +144,7 @@ async function buildRoutes() {
       // BOTH page.innerText (waitRendered) and #root innerHTML (writeRoute tripwire). The
       // skeleton's #root (~1.3k chars) is < the 2000-char gate, so the name is only checked
       // after the real table renders. members + lib feed contentHashFor for cache correctness.
-      routes.push({ lang, urlPath: cmpUrl(lang), diskPath: diskFor(lang, COMPARISON_BASE[lang], c.slug), name: c.title.split(' vs ')[0], libId: null, libraryName: null, hreflang: altMap(cmpUrl), isComparison: true, comparisonTitle: c.title, members: c.members, lib: c.lib })
+      routes.push({ lang, urlPath: cmpUrl(lang), diskPath: diskFor(lang, COMPARISON_BASE[lang], c.slug), name: c.title.split(' vs ')[0], libId: null, libraryName: null, hreflang: altMap(cmpUrl), isComparison: true, comparisonTitle: c.title, members: c.members })
     }
   }
   for (const libId of LIBS) {
