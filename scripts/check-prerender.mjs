@@ -23,6 +23,8 @@ const CHECKS = [
   // Comparison index + a detail page (the detail must show member names + render in-language).
   { path: '/osszehasonlitas', must: 'Összehasonlít' },
   { path: '/en/compare/bpc-157-vs-tb-500', must: 'BPC-157', langMust: 'compares' },
+  { path: '/osszehasonlitas/anastrozol-vs-letrozol-vs-exemestane', must: 'Anastrozol' },
+  { path: '/en/compare/hmg-perf-vs-hmg-peptid', must: 'HMG', langMust: 'compares' },
 ]
 const server = http.createServer((req, res) => {
   let file = join(DIST, decodeURIComponent(req.url.split('?')[0]))

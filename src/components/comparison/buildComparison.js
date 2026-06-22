@@ -1,41 +1,66 @@
 import { entryPath } from '../../seo/urls.js'
 
-// Localize a value that may be a plain string OR a {hu,en,pl} triplet (entry data still ships
-// some triplets). Returns null for missing values so the table can render an em-dash gap.
+// Localize a value that may be a plain string OR a {hu,en,pl} triplet.
 const loc = (v, lang) => (v == null ? null : typeof v === 'string' ? v : (v[lang] ?? v.hu ?? null))
 
-/**
- * Derive a render-ready comparison from already-loaded localized entry objects (kept pure +
- * sync-testable: the caller does the import). The table is the UNION of each member's keyInfo
- * labels in first-seen order, with each member's value or null for a gap (gaps are themselves
- * informative — e.g. one compound having an FDA "Státusz" row the others lack).
- *
- * @param {Array<object|null>} memberEntries  loaded localized entries (null if an import failed)
- * @param {string} lang
- * @param {string|null} lib  shared library id, used to build the full-entry link
- * @returns {{ members: Array<{id,name,shortDesc,href}|null>, rows: Array<{label, values: Array<string|null>}> }}
- */
-export function buildComparison(memberEntries, lang = 'hu', lib = null) {
-  const members = memberEntries.map((e) =>
-    e
-      // name is normally a flat string; loc() defends against a future {hu,en,pl} triplet
-      ? { id: e.id, name: loc(e.name, lang) ?? e.name, shortDesc: loc(e.shortDesc, lang), href: lib ? entryPath(lib, e.id, null, lang) : null }
-      : null)
+// Short library label per language, used ONLY to disambiguate same-id cross-lib columns
+// (e.g. two "Finasteride" columns -> "Finasteride · teljesítmény" / "· gyógyszer").
+const LIB_SHORT = {
+  peptides:       { hu: 'peptid',        en: 'peptide',     pl: 'peptyd' },
+  nootropics:     { hu: 'nootropikum',   en: 'nootropic',   pl: 'nootropik' },
+  performance:    { hu: 'teljesítmény',  en: 'performance', pl: 'wydajność' },
+  pharmaceutical: { hu: 'gyógyszer',     en: 'pharma',      pl: 'lek' },
+}
 
-  // union of keyInfo labels, first-seen order across members
-  const order = []
-  const seen = new Set()
-  for (const e of memberEntries) {
-    for (const ki of (e?.keyInfo || [])) {
-      if (ki && ki.label && !seen.has(ki.label)) { seen.add(ki.label); order.push(ki.label) }
+/**
+ * Derive a render-ready comparison from already-loaded localized entries.
+ * Pure + sync-testable: the caller loads each member with its own library.
+ *
+ * @param {Array<object|null>} memberEntries  loaded localized entries, aligned with comparison.members
+ * @param {{members:Array<{id,lib}>, dimensions?:Array, sameId?:boolean}} comparison  registry entry
+ * @param {string} lang
+ * @returns {{ members: Array<{id,lib,name,shortDesc,href}|null>, rows: Array<{label, values:Array<string|null>}> }}
+ */
+export function buildComparison(memberEntries, comparison, lang = 'hu') {
+  const meta = comparison.members || []
+  const members = memberEntries.map((e, i) => {
+    if (!e) return null
+    const lib = meta[i]?.lib
+    const baseName = loc(e.name, lang) ?? e.name
+    const name = comparison.sameId ? `${baseName} · ${LIB_SHORT[lib]?.[lang] ?? lib}` : baseName
+    return { id: e.id, lib, name, shortDesc: loc(e.shortDesc, lang), href: lib ? entryPath(lib, e.id, null, lang) : null }
+  })
+
+  let rows
+  if (comparison.dimensions && comparison.dimensions.length) {
+    // Curated rows (cross-lib): each dimension has a per-lang display label + a per-lang
+    // synonym list of accepted keyInfo labels (handles cross-entry label drift).
+    rows = comparison.dimensions.map((dim) => {
+      const accepted = dim.match?.[lang] ?? dim.match?.hu ?? []
+      return {
+        label: dim.display?.[lang] ?? dim.display?.hu ?? '',
+        values: memberEntries.map((e) => {
+          const ki = (e?.keyInfo || []).find((k) => k && accepted.includes(k.label))
+          return ki ? loc(ki.value, lang) : null
+        }),
+      }
+    })
+  } else {
+    // Union of keyInfo labels, first-seen order (same-lib default, = v1 behavior).
+    const order = []
+    const seen = new Set()
+    for (const e of memberEntries) {
+      for (const ki of (e?.keyInfo || [])) {
+        if (ki && ki.label && !seen.has(ki.label)) { seen.add(ki.label); order.push(ki.label) }
+      }
     }
+    rows = order.map((label) => ({
+      label,
+      values: memberEntries.map((e) => {
+        const ki = (e?.keyInfo || []).find((k) => k && k.label === label)
+        return ki ? loc(ki.value, lang) : null
+      }),
+    }))
   }
-  const rows = order.map((label) => ({
-    label,
-    values: memberEntries.map((e) => {
-      const ki = (e?.keyInfo || []).find((k) => k && k.label === label)
-      return ki ? loc(ki.value, lang) : null
-    }),
-  }))
   return { members, rows }
 }

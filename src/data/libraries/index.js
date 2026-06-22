@@ -70,16 +70,16 @@ export async function loadLibrary(id) {
   let lib = null
   switch (id) {
     case 'peptides':
-      lib = (await import('./peptides')).peptidesLibrary
+      lib = (await import('./peptides/index.js')).peptidesLibrary
       break
     case 'nootropics':
-      lib = (await import('./nootropics')).nootropicsLibrary
+      lib = (await import('./nootropics/index.js')).nootropicsLibrary
       break
     case 'performance':
-      lib = (await import('./performance')).performanceLibrary
+      lib = (await import('./performance/index.js')).performanceLibrary
       break
     case 'pharmaceutical':
-      lib = (await import('./pharmaceutical')).pharmaceuticalLibrary
+      lib = (await import('./pharmaceutical/index.js')).pharmaceuticalLibrary
       break
     default:
       return null
@@ -103,10 +103,10 @@ export async function loadEntry(libraryId, entryId, lang) {
   if (entryCache.has(key)) return entryCache.get(key)
   let mod = null
   switch (libraryId) {
-    case 'peptides':       mod = await import('./peptides');       break
-    case 'nootropics':     mod = await import('./nootropics');     break
-    case 'performance':    mod = await import('./performance');    break
-    case 'pharmaceutical': mod = await import('./pharmaceutical'); break
+    case 'peptides':       mod = await import('./peptides/index.js');       break
+    case 'nootropics':     mod = await import('./nootropics/index.js');     break
+    case 'performance':    mod = await import('./performance/index.js');    break
+    case 'pharmaceutical': mod = await import('./pharmaceutical/index.js'); break
     default: throw new Error(`Unknown library: ${libraryId}`)
   }
   if (typeof mod.loadEntry !== 'function') {

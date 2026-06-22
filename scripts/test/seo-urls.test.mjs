@@ -1,6 +1,7 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { LIB_SLUGS, entryPath, libraryPath, homePath, parsePath, translatePath, COMPARISONS, COMPARISON_BASE, comparisonBasePath, comparisonPath } from '../../src/seo/urls.js'
+import { comparisonsForEntry } from '../../src/seo/urls.js'
 
 test('LIB_SLUGS has all 4 libraries with hu/en/pl words', () => {
   for (const id of ['peptides', 'nootropics', 'performance', 'pharmaceutical']) {
@@ -72,12 +73,14 @@ test('roundtrip: parsePath(entryPath(x)) recovers x', () => {
   assert.deepEqual(parsePath(p), { kind: 'entry', lang: 'hu', library: 'pharmaceutical', id: 'tadalafil', variantId: null })
 })
 
-test('COMPARISONS registry: 3 curated comparisons with members + lib, slug = members joined', () => {
-  assert.equal(COMPARISONS.length, 3)
+test('COMPARISONS registry: 32 curated comparisons with per-member lib, slug string, valid title', () => {
+  assert.equal(COMPARISONS.length, 32)
   assert.deepEqual(Object.keys(COMPARISON_BASE), ['hu', 'en', 'pl'])
   for (const c of COMPARISONS) {
-    assert.ok(c.slug && c.lib && Array.isArray(c.members) && c.members.length >= 2)
-    assert.equal(c.slug, c.members.join('-vs-'))
+    assert.ok(c.slug && Array.isArray(c.members) && c.members.length >= 2, `bad shape: ${c.slug}`)
+    for (const m of c.members) {
+      assert.ok(m.id && m.lib, `member missing id or lib in ${c.slug}`)
+    }
     assert.equal(typeof c.title, 'string')
   }
 })
@@ -112,4 +115,20 @@ test('translatePath: comparison + comparison-index keep slug, swap prefix', () =
     '/pl/porownanie/ostarine-vs-rad-140')
   assert.equal(translatePath({ kind: 'comparison-index', lang: 'en' }, 'pl'), '/pl/porownanie')
   assert.equal(translatePath({ kind: 'comparison-index', lang: 'hu' }, 'hu'), '/osszehasonlitas')
+})
+
+test('comparisonsForEntry returns comparisons containing the entry (by lib+id)', () => {
+  const r = comparisonsForEntry('performance', 'finasteride')
+  const slugs = r.map((c) => c.slug)
+  assert.ok(slugs.includes('finasteride-vs-dutasteride'))
+  assert.ok(slugs.includes('finasteride-performance-vs-pharmaceutical'))
+})
+
+test('comparisonsForEntry is lib-specific (pharma finasteride only matches the cross-lib one)', () => {
+  const slugs = comparisonsForEntry('pharmaceutical', 'finasteride').map((c) => c.slug)
+  assert.deepEqual(slugs, ['finasteride-performance-vs-pharmaceutical'])
+})
+
+test('comparisonsForEntry returns [] for an entry in no comparison', () => {
+  assert.deepEqual(comparisonsForEntry('peptides', 'glow'), [])
 })
