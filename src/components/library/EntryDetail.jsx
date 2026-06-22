@@ -20,6 +20,7 @@ import { useLibrary } from '../../context/LibraryContext'
 import entryDates from '../../data/entryDates.json'
 import TelegramButtons from '../TelegramButtons'
 import SourcingButtons from './SourcingButtons'
+import RelatedComparisons from './RelatedComparisons'
 import MiniCalc from '../MiniCalc'
 import PerformanceCalculator from './PerformanceCalculator'
 import PharmaceuticalCalculator from './PharmaceuticalCalculator'
@@ -1403,6 +1404,9 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  />
  </div>
  </section>
+
+ {/* Related comparisons (Phase D): surfaces this compound's comparisons contextually. */}
+ <RelatedComparisons libraryId={library?.id} entryId={peptide.id} lang={lang} />
 
  {/* ─── BENTO GRID: key facts + benefits + mechanism ─── */}
  <section className="relative px-6 sm:px-10 pb-10">

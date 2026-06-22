@@ -16,6 +16,19 @@ test('same-lib: union of keyInfo labels, per-member href uses member lib', () =>
   assert.deepEqual(rows[2].values, [null, 'Rx']) // gap for member a
 })
 
+test('members carry image + accent for the visual headers (with defaults)', () => {
+  const cmp = { members: [{ id: 'a', lib: 'peptides' }, { id: 'b', lib: 'peptides' }] }
+  const entries = [
+    e('a', [], { image: '/peptides/a.png', accentColor: '#00ff99' }),
+    e('b', []), // no image/accent -> null image + default accent
+  ]
+  const { members } = buildComparison(entries, cmp, 'hu')
+  assert.equal(members[0].image, '/peptides/a.png')
+  assert.equal(members[0].accent, '#00ff99')
+  assert.equal(members[1].image, null)
+  assert.equal(members[1].accent, '#818cf8')
+})
+
 test('curated dimensions: match synonyms per lang, display label used', () => {
   const cmp = {
     members: [{ id: 'a', lib: 'performance' }, { id: 'b', lib: 'pharmaceutical' }],

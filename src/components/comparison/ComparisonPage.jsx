@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { ArrowLeft, GitCompareArrows } from 'lucide-react'
-import { COMPARISONS, homePath } from '../../seo/urls'
+import { COMPARISONS, comparisonBasePath } from '../../seo/urls'
 import { loadEntry, listLibraries } from '../../data/libraries'
 import { buildComparison } from './buildComparison'
+import DimensionIcon from './DimensionIcon'
+import MemberAvatar from './MemberAvatar'
 import { navigate } from '../../router/location'
 import Footer from '../Footer'
 
@@ -11,21 +13,21 @@ const DASH = '—'
 // UI labels only (no body / medical prose — content is the juxtaposed entry data).
 const CONTENT = {
   hu: {
-    back: 'Vissza a főoldalra',
+    back: 'Vissza az összehasonlításokhoz',
     whatIs: 'Mi ez',
     fullEntry: 'Teljes leírás',
     open: 'Megnyitás',
     intro: 'A táblázat a vegyületek legfontosabb adatait veti össze az adatlapjaik alapján. A részletekért nyisd meg az egyes vegyületek teljes leírását. Edukatív tartalom, nem orvosi tanács.',
   },
   en: {
-    back: 'Back to home',
+    back: 'Back to comparisons',
     whatIs: 'What it is',
     fullEntry: 'Full entry',
     open: 'Open',
     intro: 'The table compares the compounds’ key data from their entry pages. Open each compound’s full entry for details. Educational content, not medical advice.',
   },
   pl: {
-    back: 'Powrót do strony głównej',
+    back: 'Powrót do porównań',
     whatIs: 'Co to jest',
     fullEntry: 'Pełny opis',
     open: 'Otwórz',
@@ -68,7 +70,7 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
     <div className="min-h-screen">
       <article className="max-w-5xl mx-auto px-6 sm:px-8 pt-24 pb-16">
         <button
-          onClick={() => navigate(homePath(lang))}
+          onClick={() => navigate(comparisonBasePath(lang))}
           className="inline-flex items-center gap-2 text-xs uppercase tracking-widest mb-10 text-gray-500 hover:text-[#818cf8] transition-colors"
         >
           <ArrowLeft size={14} /> {c.back}
@@ -79,7 +81,28 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
           <span className="text-xs uppercase tracking-[0.2em]">{libName}</span>
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>{cmp.title}</h1>
-        <p className="text-base leading-relaxed mb-10 max-w-3xl" style={{ color: 'var(--text-secondary)' }}>{c.intro}</p>
+        <p className="text-base leading-relaxed mb-8 max-w-3xl" style={{ color: 'var(--text-secondary)' }}>{c.intro}</p>
+
+        {/* Mobile-only member lineup (the desktop table puts avatars in its column headers,
+            aligned over each column; on mobile there is no table to align to). */}
+        {data && (
+          <div className="sm:hidden flex flex-wrap items-end gap-x-3 gap-y-4 mb-10">
+            {data.members.map((m, i) => (
+              <div key={i} className="contents">
+                {i > 0 && <GitCompareArrows size={20} strokeWidth={1.75} className="mb-6 opacity-50" style={{ color: '#818cf8' }} />}
+                {m
+                  ? (
+                    <a href={m.href} onClick={(e) => navTo(e, m.href)} className="group flex flex-col items-center gap-2 no-underline w-24">
+                      <MemberAvatar accent={m.accent} image={m.image} name={m.name} size={72} />
+                      <span className="text-center text-xs font-bold leading-tight transition-colors group-hover:text-[#818cf8]" style={{ color: 'var(--text-primary)' }}>{m.name}</span>
+                      <span className="h-0.5 w-8 rounded-full" style={{ background: m.accent }} />
+                    </a>
+                  )
+                  : <span className="w-24 text-center text-2xl font-bold" style={{ color: 'var(--text-muted)' }}>{DASH}</span>}
+              </div>
+            ))}
+          </div>
+        )}
 
         {!data && (
           <div className="animate-pulse space-y-3" aria-hidden="true">
@@ -96,26 +119,37 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
               <table className="w-full text-left border-collapse">
                 <thead>
                   <tr>
-                    <th className="p-4 text-xs uppercase tracking-widest font-semibold align-bottom" style={{ color: 'var(--text-muted)' }}></th>
+                    <th className="p-4 align-bottom text-center" style={{ color: '#818cf8' }}>
+                      <GitCompareArrows size={18} strokeWidth={1.75} className="mx-auto opacity-50" aria-hidden="true" />
+                    </th>
                     {data.members.map((m, i) => (
-                      <th key={i} className="p-4 align-bottom" style={{ color: 'var(--text-primary)' }}>
+                      <th key={i} className="p-4 align-bottom border-b-2 text-center" style={{ borderColor: m?.accent || 'rgba(129,140,248,0.4)' }}>
                         {m
-                          ? <a href={m.href} onClick={(e) => navTo(e, m.href)} className="text-lg font-bold tracking-wide hover:text-[#818cf8] transition-colors">{m.name}</a>
-                          : <span className="text-lg font-bold">{DASH}</span>}
+                          ? (
+                            <a href={m.href} onClick={(e) => navTo(e, m.href)} className="group inline-flex flex-col items-center gap-2 no-underline">
+                              <MemberAvatar accent={m.accent} image={m.image} name={m.name} size={80} />
+                              <span className="text-base font-bold tracking-wide transition-colors group-hover:text-[#818cf8]" style={{ color: 'var(--text-primary)' }}>{m.name}</span>
+                            </a>
+                          )
+                          : <span className="text-lg font-bold" style={{ color: 'var(--text-muted)' }}>{DASH}</span>}
                       </th>
                     ))}
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="border-t border-[rgba(129,140,248,0.10)]">
-                    <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>{c.whatIs}</th>
+                    <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>
+                      <span className="inline-flex items-center gap-1.5"><DimensionIcon label={c.whatIs} />{c.whatIs}</span>
+                    </th>
                     {data.members.map((m, i) => (
                       <td key={i} className="p-4 text-sm leading-relaxed align-top" style={{ color: 'var(--text-secondary)' }}>{m?.shortDesc || DASH}</td>
                     ))}
                   </tr>
                   {data.rows.map((row, ri) => (
                     <tr key={ri} className="border-t border-[rgba(129,140,248,0.10)]">
-                      <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>{row.label}</th>
+                      <th className="p-4 text-xs uppercase tracking-widest font-semibold align-top whitespace-nowrap" style={{ color: 'var(--text-muted)' }}>
+                        <span className="inline-flex items-center gap-1.5"><DimensionIcon label={row.label} />{row.label}</span>
+                      </th>
                       {row.values.map((v, vi) => (
                         <td key={vi} className="p-4 text-sm leading-relaxed align-top" style={{ color: 'var(--text-secondary)' }}>{v || DASH}</td>
                       ))}
@@ -139,11 +173,16 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
             <div className="sm:hidden space-y-4">
               {[{ label: c.whatIs, values: data.members.map((m) => m?.shortDesc || null) }, ...data.rows].map((row, ri) => (
                 <div key={ri} className="rounded-2xl glass p-4">
-                  <div className="text-xs uppercase tracking-widest font-semibold mb-3" style={{ color: 'var(--text-muted)' }}>{row.label}</div>
+                  <div className="text-xs uppercase tracking-widest font-semibold mb-3 inline-flex items-center gap-1.5" style={{ color: 'var(--text-muted)' }}>
+                    <DimensionIcon label={row.label} />{row.label}
+                  </div>
                   <div className="space-y-2">
                     {data.members.map((m, vi) => (
                       <div key={vi} className="flex flex-col gap-0.5">
-                        <span className="text-[11px] font-bold tracking-wide" style={{ color: 'var(--text-primary)' }}>{m?.name || DASH}</span>
+                        <span className="text-[11px] font-bold tracking-wide inline-flex items-center gap-1.5" style={{ color: 'var(--text-primary)' }}>
+                          {m?.name || DASH}
+                          {m && <span className="h-2 w-2 rounded-full" style={{ background: m.accent }} />}
+                        </span>
                         <span className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>{row.values[vi] || DASH}</span>
                       </div>
                     ))}
