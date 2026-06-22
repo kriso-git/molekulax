@@ -50,16 +50,19 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
     if (!cmp) return
     let cancelled = false
     setEntries(null)
-    Promise.all(cmp.members.map((id) => loadEntry(cmp.lib, id, lang).catch(() => null)))
+    Promise.all(cmp.members.map((m) => loadEntry(m.lib, m.id, lang).catch(() => null)))
       .then((res) => { if (!cancelled) setEntries(res) })
     return () => { cancelled = true }
   }, [cmp, lang])
 
   if (!cmp) return null
 
-  const lib = listLibraries().find((l) => l.id === cmp.lib)
-  const libName = lib ? (lib.name[lang] || lib.name.hu) : ''
-  const data = entries ? buildComparison(entries, lang, cmp.lib) : null
+  // Chip label: the curated topic if present (required for cross-lib, which has no single
+  // library name), else the shared library's name (all same-lib members share one).
+  const sharedLibId = cmp.members.every((m) => m.lib === cmp.members[0].lib) ? cmp.members[0].lib : null
+  const sharedLib = sharedLibId ? listLibraries().find((l) => l.id === sharedLibId) : null
+  const libName = cmp.topic ? (cmp.topic[lang] || cmp.topic.hu) : (sharedLib ? (sharedLib.name[lang] || sharedLib.name.hu) : 'MolekulaX')
+  const data = entries ? buildComparison(entries, cmp, lang) : null
 
   return (
     <div className="min-h-screen">

@@ -50,7 +50,10 @@ export default function ComparisonIndex({ lang = 'hu' }) {
               >
                 <div className="flex flex-col min-w-0">
                   <span className="font-bold text-lg tracking-wide" style={{ color: 'var(--text-primary)' }}>{cmp.title}</span>
-                  <span className="mt-1 text-xs uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>{libName(cmp.lib)}</span>
+                  <span className="mt-1 text-xs uppercase tracking-wider" style={{ color: 'var(--text-muted)' }}>
+                    {cmp.topic ? (cmp.topic[lang] || cmp.topic.hu) : libName(cmp.members.every((m) => m.lib === cmp.members[0].lib) ? cmp.members[0].lib : null)}
+                    {cmp.crossLib ? ' · ⇄' : ''}
+                  </span>
                 </div>
                 <ArrowRight
                   size={20}
