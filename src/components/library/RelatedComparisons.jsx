@@ -24,9 +24,11 @@ export default function RelatedComparisons({ libraryId, entryId, lang = 'hu' }) 
   if (!cmps.length) return null
 
   return (
-    <section className="px-6 sm:px-10 py-4">
+    <section className="relative z-30 px-6 sm:px-10 py-4">
       {/* Compact, content-width panel (NOT full-width) so it reads as a distinct, visible block
-          instead of bare text floating in the dark gap between the hero and the body. */}
+          instead of bare text floating in the dark gap between the hero and the body. The
+          relative z-index lifts it above the hero's decorative (pointer-events-none) overlays
+          that otherwise visually dim this band. */}
       <div className="inline-flex flex-wrap items-center gap-x-3 gap-y-2 max-w-full rounded-xl px-4 py-3" style={{ background: 'rgba(129,140,248,0.11)', border: '1px solid rgba(129,140,248,0.32)' }}>
         <h2 className="text-xs font-semibold uppercase tracking-[0.18em] inline-flex items-center gap-2 shrink-0" style={{ color: '#c7d2fe' }}>
           <GitCompareArrows size={15} strokeWidth={2.25} aria-hidden="true" />
