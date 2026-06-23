@@ -29,7 +29,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Periférás non-steroidal AR-antagonista (NEM 5α-reduktáz gátló) – Roussel-Uclaf 1992 designer. Topikális AGA-research-chemical. Phase II 1996 terminálva systemikus feminizáció miatt. Modern UGL-formulák lokal-only claim-jét sparse data támasztja alá.",
-  "description": "**FONTOS mechanism-clarification**: A RU58841 (PSK-3841 / HMR-3841) **NEM** 5α-reduktáz inhibitor (mint Finasteride/Dutasteride), hanem **peripherális androgén-receptor (AR) antagonista**. A Roussel-Uclaf laboratórium designerelte 1992-ben (Sawaya 1997 PMID 9224249) androgenetic alopecia (AGA) topikális kezelésére: a vegyület a scalp follikulus-szövetében kompetitíven kötődik az AR-hoz, blokkolva a DHT (és testosterone) androgén-szignáljának downstream effect-jét – **a DHT-konverziót NEM gátolja, hanem a DHT-effect-jét neutralizálja a hairfollikulus-szintjén**. A Phase II klinikai trial-jeit 1996-ban befejezték az ipari termelő (akkor Hoechst Marion Roussel, később Sanofi-Aventis), miután systemikus abszorpció esetén feminizáló effekt-ek (gynecomastia-formation, sexual-dysfunction) jelentek meg a teszt-populáción. Modern UGL-formulációk (5% oldat ethanol/propylene-glycol-ben) lokal-only claim-jét – gyors-szérum-eszteráz-inaktivációval – sparse in vivo data támasztja alá, kontradiktórius case-reportok systemikus effect-ekről. Tier 2 (research-level, Phase II terminálva, UGL-only). Designer-purple accent `#a78bfa` a spec § 3.3 alapján. **NEM** 5AR-szubsztrát-mechanizmus – a 5AR sub-section-be soroltuk a use-case grouping convention miatt (AAS-hair-loss-prevention shared goal Finasteride/Dutasteride-szel).",
+  "description": "FONTOS mechanism-clarification: A RU58841 (PSK-3841 / HMR-3841) NEM 5α-reduktáz inhibitor (mint Finasteride/Dutasteride), hanem peripherális androgén-receptor (AR) antagonista. A Roussel-Uclaf laboratórium designerelte 1992-ben (Sawaya 1997 PMID 9224249) androgenetic alopecia (AGA) topikális kezelésére: a vegyület a scalp follikulus-szövetében kompetitíven kötődik az AR-hoz, blokkolva a DHT (és testosterone) androgén-szignáljának downstream effect-jét – a DHT-konverziót NEM gátolja, hanem a DHT-effect-jét neutralizálja a hairfollikulus-szintjén. A Phase II klinikai trial-jeit 1996-ban befejezték az ipari termelő (akkor Hoechst Marion Roussel, később Sanofi-Aventis), miután systemikus abszorpció esetén feminizáló effekt-ek (gynecomastia-formation, sexual-dysfunction) jelentek meg a teszt-populáción. Modern UGL-formulációk (5% oldat ethanol/propylene-glycol-ben) lokal-only claim-jét – gyors-szérum-eszteráz-inaktivációval – sparse in vivo data támasztja alá, kontradiktórius case-reportok systemikus effect-ekről. Tier 2 (research-level, Phase II terminálva, UGL-only). Designer-purple accent `#a78bfa` a spec § 3.3 alapján. NEM 5AR-szubsztrát-mechanizmus – a 5AR sub-section-be soroltuk a use-case grouping convention miatt (AAS-hair-loss-prevention shared goal Finasteride/Dutasteride-szel).",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -52,7 +52,7 @@ export default {
       "value": "NINCS FDA/EMA-jóváhagyás, NINCS HU/PL Rx, research-chemical-vendor-only, WADA banned (S1 anabolic agent kapcsolódó)"
     }
   ],
-  "mechanism": "RU58841 4,4-dimethyl-imidazolinedione-szerkezetű non-szteroidal compound. Sawaya 1997 PMID 9224249 dokumentálta a peripherális AR-kötés-blokád mechanizmust: a vegyület in vitro Ki ~0.5 nM AR-affinitással kötődik (versenytársként a DHT-vel ~5 nM Ki-vel), és a hairfollikulus AR-jét blokkolja anélkül, hogy a 5α-reduktáz-enzimet érintené. **Ez kritikusan eltér a Finasteride/Dutasteride mechanizmusától**: a Finasteride/Dutasteride a DHT-konverziót gátolja (substrate-level), a RU58841 a DHT-effect-jét neutralizálja az AR-szinten (receptor-level). Tervezett előnye: lokál-only effect, gyors-szérum-eszteráz-inaktiváció a systemic-AR-blokádot elkerüli. Phase I trial-en (Battmann 1994 PMID 7969105) topikális 1% oldat-application alacsony szérum-AR-expozícióval, DE Phase II ~5% dose-on systemic feminizing-effect-eseteket dokumentáltak. Modern UGL 5% oldat – magasabb mint a Phase I dose, claim-jük az hogy a serum-eszteráz-clearance hatékony elimináción nyugszik, in vivo confirmation hiányos.",
+  "mechanism": "RU58841 4,4-dimethyl-imidazolinedione-szerkezetű non-szteroidal compound. Sawaya 1997 PMID 9224249 dokumentálta a peripherális AR-kötés-blokád mechanizmust: a vegyület in vitro Ki ~0.5 nM AR-affinitással kötődik (versenytársként a DHT-vel ~5 nM Ki-vel), és a hairfollikulus AR-jét blokkolja anélkül, hogy a 5α-reduktáz-enzimet érintené. Ez kritikusan eltér a Finasteride/Dutasteride mechanizmusától: a Finasteride/Dutasteride a DHT-konverziót gátolja (substrate-level), a RU58841 a DHT-effect-jét neutralizálja az AR-szinten (receptor-level). Tervezett előnye: lokál-only effect, gyors-szérum-eszteráz-inaktiváció a systemic-AR-blokádot elkerüli. Phase I trial-en (Battmann 1994 PMID 7969105) topikális 1% oldat-application alacsony szérum-AR-expozícióval, DE Phase II ~5% dose-on systemic feminizing-effect-eseteket dokumentáltak. Modern UGL 5% oldat – magasabb mint a Phase I dose, claim-jük az hogy a serum-eszteráz-clearance hatékony elimináción nyugszik, in vivo confirmation hiányos.",
   "legalStatus": "GLOBÁLISAN nem törzskönyvezett: Phase II 1996 terminálva systemikus feminizáció miatt (Hoechst Marion Roussel, később Sanofi-Aventis). NINCS FDA/EMA/HU/PL Rx. Research-chemical-vendor only (US/EU/Asia UGL-csatornák). WADA: S1 anabolic agent – Other Anabolic Agents kategória alatt banned (chemically related, AR-modulátor).",
   "onsetTime": "Scalp AR-blokád azonnal, hair-stabilization 3-6 hónap (in vivo data sparse)",
   "halfLife": "Topikális minimális systemic abszorpció (claim, in vivo data sparse)",
@@ -92,7 +92,7 @@ export default {
     },
     {
       "label": "Long-term (6+ hónap)",
-      "body": "Phase II terminálási evidence: systemic feminizing-effect possible (gynecomastia, sexual-dysfunction), különösen magasabb dose-on (5%+ oldat) vagy nagy scalp-area-application. **NINCS** long-term safety evidence."
+      "body": "Phase II terminálási evidence: systemic feminizing-effect possible (gynecomastia, sexual-dysfunction), különösen magasabb dose-on (5%+ oldat) vagy nagy scalp-area-application. NINCS long-term safety evidence."
     },
     {
       "label": "Leállítás után",
@@ -106,7 +106,7 @@ export default {
       "Some compounding pharmacies (US/EU specialty) készít custom formulációt off-label research-context"
     ],
     "caution": [
-      "**NINCS Phase III biztonsági evidence** – Phase II terminálva systemikus feminizáció miatt",
+      "NINCS Phase III biztonsági evidence – Phase II terminálva systemikus feminizáció miatt",
       "Systemic abszorpció esetén: gynecomastia, sexual-dysfunction, prostate-function-zavar (chronic-use case-reportok)",
       "WADA S1 anabolic-related – competition-tilos",
       "Modern UGL-formulák in vivo data sparse – community-szintű evidence-en alapul",
@@ -155,7 +155,7 @@ export default {
   "faq": [
     {
       "q": "RU58841 5α-reduktáz gátló-e?",
-      "a": "**NEM** – ez a leggyakoribb félreértés. A RU58841 **peripherális androgén-receptor (AR) antagonista**, NEM 5α-reduktáz inhibitor (mint Finasteride/Dutasteride). Mechanizmus-eltérés kritikus: (1) **Finasteride/Dutasteride** a testosterone → DHT konverziót gátolja (5AR-enzim-szinten); a DHT-szintet csökkenti az egész szervezetben; (2) **RU58841** a DHT-receptor-kötést blokkolja a scalp-szintjén; a DHT-szint NEM csökken, hanem az AR-szignál a follikulusban ki van kapcsolva. Praktikus következmény: a Finasteride/Dutasteride systemic DHT-suppression-t okoz (PFS-rizikó); a RU58841 csak scalp-szintű AR-blokád (claim), DE Phase II evidence szerint magasabb dose-on systemic-AR-blokád is előfordulhat (feminizing-effect)."
+      "a": "NEM – ez a leggyakoribb félreértés. A RU58841 peripherális androgén-receptor (AR) antagonista, NEM 5α-reduktáz inhibitor (mint Finasteride/Dutasteride). Mechanizmus-eltérés kritikus: (1) Finasteride/Dutasteride a testosterone → DHT konverziót gátolja (5AR-enzim-szinten); a DHT-szintet csökkenti az egész szervezetben; (2) RU58841 a DHT-receptor-kötést blokkolja a scalp-szintjén; a DHT-szint NEM csökken, hanem az AR-szignál a follikulusban ki van kapcsolva. Praktikus következmény: a Finasteride/Dutasteride systemic DHT-suppression-t okoz (PFS-rizikó); a RU58841 csak scalp-szintű AR-blokád (claim), DE Phase II evidence szerint magasabb dose-on systemic-AR-blokád is előfordulhat (feminizing-effect)."
     },
     {
       "q": "Miért a 5AR sub-section-be soroltuk?",
@@ -163,7 +163,7 @@ export default {
     },
     {
       "q": "Beszerzhetőség és UGL-rizikó?",
-      "a": "RU58841 **NINCS** pharma-grade source-on – research-chemical-vendor only (Sigma-Aldrich szintézis-grade, specialty research-pharm). UGL 5% oldat ethanol/propylene-glycol-vehiculum standard formuláció research-context-en, DE vendor-purity gyakran <90% (HPLC-test kötelező). Forrás-rizikók: (1) szubsztrát-pseudo (vendor a placebo-vehiculumot adja el); (2) nem-stabil compound (oldat hűtve tárolva stabil, szoba-hőmérsékleten 6 hónap után <50% potencia); (3) vendor-vehiculum-kontamináció (chronic scalp-irritation, allergia). 2-3 verified-source community-rated maradt 2024-25 (r/RU58841 community-tracking)."
+      "a": "RU58841 NINCS pharma-grade source-on – research-chemical-vendor only (Sigma-Aldrich szintézis-grade, specialty research-pharm). UGL 5% oldat ethanol/propylene-glycol-vehiculum standard formuláció research-context-en, DE vendor-purity gyakran <90% (HPLC-test kötelező). Forrás-rizikók: (1) szubsztrát-pseudo (vendor a placebo-vehiculumot adja el); (2) nem-stabil compound (oldat hűtve tárolva stabil, szoba-hőmérsékleten 6 hónap után <50% potencia); (3) vendor-vehiculum-kontamináció (chronic scalp-irritation, allergia). 2-3 verified-source community-rated maradt 2024-25 (r/RU58841 community-tracking)."
     },
     {
       "q": "Sysztemikus feminization rizikó?",
@@ -171,7 +171,7 @@ export default {
     },
     {
       "q": "Klinikai trial-státusz?",
-      "a": "Phase II 1996 terminálva (Hoechst Marion Roussel, akkor Sanofi-Aventis), systemikus feminizáció miatt. **NINCS** Phase III trial. NINCS modern pharmaceutical-pipeline-szándék (utolsó pharmaceutical company-érdeklődés ~2000 körül megszűnt). Olsen 2018 emerging AGA pipeline review (PMID 30041755) említi mint historikus designer-pelyha, modern pipeline-jelölt nem. AGA-research-chemical community-szintű érdeklődés folyamatos, DE pharmaceutical-pipeline-resurrection nem várt. A jelenlegi research-context: 'mit lehetne, ha a Phase III befejeződött volna' – community-extrapoláció Phase I/II data-ból, NEM modern pharmaceutical evidence."
+      "a": "Phase II 1996 terminálva (Hoechst Marion Roussel, akkor Sanofi-Aventis), systemikus feminizáció miatt. NINCS Phase III trial. NINCS modern pharmaceutical-pipeline-szándék (utolsó pharmaceutical company-érdeklődés ~2000 körül megszűnt). Olsen 2018 emerging AGA pipeline review (PMID 30041755) említi mint historikus designer-pelyha, modern pipeline-jelölt nem. AGA-research-chemical community-szintű érdeklődés folyamatos, DE pharmaceutical-pipeline-resurrection nem várt. A jelenlegi research-context: 'mit lehetne, ha a Phase III befejeződött volna' – community-extrapoláció Phase I/II data-ból, NEM modern pharmaceutical evidence."
     }
   ],
   "related": [
@@ -212,7 +212,7 @@ export default {
       "label": "Chronic research-application AAS-cruise-on",
       "timing": "0.5-1 mL napi 1x topical",
       "markers": "Évente: IIEF-5, PHQ-9, DHT, Total Test, gyno-screen ultrasound (long-term feminizing-effect-monitor).",
-      "purpose": "Chronic research-context: in vivo safety-data hiányos, évi clinical-screen prudent. **NEM** ajánlott a long-term chronic-application – research-chemical-status és sparse evidence."
+      "purpose": "Chronic research-context: in vivo safety-data hiányos, évi clinical-screen prudent. NEM ajánlott a long-term chronic-application – research-chemical-status és sparse evidence."
     }
   },
   "anecdote": "Az RU-58841-et az anekdotikus beszámolók egy szilárd és könnyen elérhető topikális anti-androgénként írják le. Közösségi beszámolók szerint a nagy dózisú AAS-ciklust futtató felhasználók gyakran azt tapasztalják, hogy a hajhullás mérséklődik, amikor topikálisan alkalmazzák az érintett területeken. Általában hatékony elsővonalbeli topikális opciónak tekintik a szisztémás DHT-blokkolókkal szemben, mivel a DHT élettani szerepet tölt be, és a széles körű farmakológiai szuppresszió kompromisszumokkal jár. Egyes beszámolók ma már a pirilutamidot (Topilutumide) részesítik előnyben az RU-58841-gyel szemben, alacsonyabb szisztémás kockázatra és összehasonlítható hatékonyságra hivatkozva. Az RU-58841 kizárólag topikális alkalmazásra szánt, orálisan nem szedendő. Összességében továbbra is az egyik legjobban bevált topikális anti-androgén a közösségi használatban az AAS-eredetű hajhullás kezelésére."

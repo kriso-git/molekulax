@@ -25,7 +25,7 @@ export default {
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Metabolit kofeiny o niższym profilu lękotwórczym niż kofeina.",
-  "description": "Paraksantyna (1,7-dimetyloksantyna) jest głównym ludzkim metabolitem kofeiny, powstającym przez wątrobową demetylację CYP1A2 (~84% dawki kofeiny). To antagonista receptorów adenozynowych A1/A2A i inhibitor fosfodiesterazy – dzieli z kofeiną profil wspierający czuwanie, ale ma **niższe powinowactwo do adenozyny A2B**, co zmniejsza działanie lękotwórcze. RCT z 2022 (PMID 35008471) wykazało, że 200 mg paraksantyny poprawiło czas reakcji, podtrzymaną uwagę i zmniejszyło zmęczenie mięśniowe u zdrowych dorosłych. Badanie PK z 2021 (PMID 33806281) raportuje wyższą biodostępność doustną i szczyt stężenia w osoczu 2-3 godziny szybciej niż kofeina. **Marka ENFINITY uzyskała status FDA-NDI w 2022** jako składnik suplementu diety.",
+  "description": "Paraksantyna (1,7-dimetyloksantyna) jest głównym ludzkim metabolitem kofeiny, powstającym przez wątrobową demetylację CYP1A2 (~84% dawki kofeiny). To antagonista receptorów adenozynowych A1/A2A i inhibitor fosfodiesterazy – dzieli z kofeiną profil wspierający czuwanie, ale ma niższe powinowactwo do adenozyny A2B, co zmniejsza działanie lękotwórcze. RCT z 2022 (PMID 35008471) wykazało, że 200 mg paraksantyny poprawiło czas reakcji, podtrzymaną uwagę i zmniejszyło zmęczenie mięśniowe u zdrowych dorosłych. Badanie PK z 2021 (PMID 33806281) raportuje wyższą biodostępność doustną i szczyt stężenia w osoczu 2-3 godziny szybciej niż kofeina. Marka ENFINITY uzyskała status FDA-NDI w 2022 jako składnik suplementu diety.",
   "keyInfo": [
     {
       "label": "Mechanizm",

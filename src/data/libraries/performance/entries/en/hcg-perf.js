@@ -29,7 +29,7 @@ export default {
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
   "shortDesc": "Human Chorionic Gonadotropin – LH structural analog, Leydig-cell LHCGR receptor stimulus. AAS-PCT bridge against testicular atrophy and for HPTA restart. Cross-frame: future peptide library will add `hcg-peptid` with fertility-clinic framing.",
-  "description": "HCG (Human Chorionic Gonadotropin) is a 244-amino-acid glycoprotein (α + β subunit), structurally an LH analog with ~80% sequence identity on the β subunit. Endogenous source: pregnancy placental syncytiotrophoblast → blood + urine (peak at weeks 8-12 of pregnancy). Clinical HCG sources: (1) urinary-extracted (uHCG) – purified from pregnant women's urine (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring EU); (2) recombinant (rHCG / choriogonadotropin alfa) – Serono Ovidrel/Ovitrelle CHO-expressed, higher purity. Mechanism: Leydig-cell LHCGR receptor agonism → exogenous LH mimicry → testicular testosterone production. **AAS-PCT context**: HCG bridges the LH suppression window when the user's own pituitary still isn't secreting enough LH. Two main usage protocols: **mid-cycle HCG** (250-500 IU 2-3x/week throughout the AAS cycle – testicular atrophy prevention); **PCT-blast HCG** (1500-2500 IU EOD × 10-14 days after the last AAS pin, then transition to SERM PCT). **Cross-frame note**: this is the `-perf` suffix entry; the future peptide library batch will add the `hcg-peptid` entry (fertility-clinic framing – IVF male factor + secondary hypogonadism Rx context, IDENTICAL molecule, different narrative). WADA-banned year-round (S2 Peptide Hormones).",
+  "description": "HCG (Human Chorionic Gonadotropin) is a 244-amino-acid glycoprotein (α + β subunit), structurally an LH analog with ~80% sequence identity on the β subunit. Endogenous source: pregnancy placental syncytiotrophoblast → blood + urine (peak at weeks 8-12 of pregnancy). Clinical HCG sources: (1) urinary-extracted (uHCG) – purified from pregnant women's urine (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring EU); (2) recombinant (rHCG / choriogonadotropin alfa) – Serono Ovidrel/Ovitrelle CHO-expressed, higher purity. Mechanism: Leydig-cell LHCGR receptor agonism → exogenous LH mimicry → testicular testosterone production. AAS-PCT context: HCG bridges the LH suppression window when the user's own pituitary still isn't secreting enough LH. Two main usage protocols: mid-cycle HCG (250-500 IU 2-3x/week throughout the AAS cycle – testicular atrophy prevention); PCT-blast HCG (1500-2500 IU EOD × 10-14 days after the last AAS pin, then transition to SERM PCT). Cross-frame note: this is the `-perf` suffix entry; the future peptide library batch will add the `hcg-peptid` entry (fertility-clinic framing – IVF male factor + secondary hypogonadism Rx context, IDENTICAL molecule, different narrative). WADA-banned year-round (S2 Peptide Hormones).",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -165,7 +165,7 @@ export default {
   "faq": [
     {
       "q": "Mid-cycle HCG vs PCT-blast HCG – what does each do?",
-      "a": "Two distinct protocols with different goals. **Mid-cycle**: 250-500 IU 2-3x/week throughout the AAS cycle – testicular ATROPHY PREVENTION (preservation of testicular tissue, faster post-cycle recovery). **PCT-blast**: 1500-2500 IU EOD × 10-14 days in the first 2 weeks after cycle end – HPTA RESTART with Leydig bypass (bridges the user's own pituitary LH-suppression window). Both protocols are followed by SERM PCT (Nolvadex) for full HPTA recovery."
+      "a": "Two distinct protocols with different goals. Mid-cycle: 250-500 IU 2-3x/week throughout the AAS cycle – testicular ATROPHY PREVENTION (preservation of testicular tissue, faster post-cycle recovery). PCT-blast: 1500-2500 IU EOD × 10-14 days in the first 2 weeks after cycle end – HPTA RESTART with Leydig bypass (bridges the user's own pituitary LH-suppression window). Both protocols are followed by SERM PCT (Nolvadex) for full HPTA recovery."
     },
     {
       "q": "Does HCG aromatize? How much?",
@@ -177,7 +177,7 @@ export default {
     },
     {
       "q": "Pregnyl vs Ovidrel vs UGL – which to choose?",
-      "a": "**Pregnyl/Choragon (urinary)**: golden-standard, available at EU pharmacies (~€20/5000 IU), 60+ years of clinical literature. **Ovidrel/Ovitrelle (recombinant)**: higher purity (pre-filled syringe 250 µg), pricier (~€40-60/dose), available in USA. **UGL**: HPLC + immunoassay-tested source MANDATORY – UGL HCG often under-concentrated or cold-chain-broken (activity drops). On clinical value: pharma > UGL >> unknown-source."
+      "a": "Pregnyl/Choragon (urinary): golden-standard, available at EU pharmacies (~€20/5000 IU), 60+ years of clinical literature. Ovidrel/Ovitrelle (recombinant): higher purity (pre-filled syringe 250 µg), pricier (~€40-60/dose), available in USA. UGL: HPLC + immunoassay-tested source MANDATORY – UGL HCG often under-concentrated or cold-chain-broken (activity drops). On clinical value: pharma > UGL >> unknown-source."
     },
     {
       "q": "Cross-frame note: same HCG as in fertility-clinic protocols?",
@@ -200,7 +200,7 @@ export default {
       "high": 2500
     },
     "unit": "IU/dose (SC or IM, dose-frequency protocol-specific)",
-    "note": "**Mid-cycle**: 250-500 IU 2-3x/week × cycle length (atrophy prevention). **PCT-blast**: 1500-2500 IU EOD × 10-14 days (HPTA restart bridge). **Post-PCT rescue**: 1500 IU 2x/week × 4 weeks (if LH/FSH NOT recovering on SERM alone). Long-term chronic monotherapy (>4 weeks) CONTRAINDICATED (Leydig downregulation risk)."
+    "note": "Mid-cycle: 250-500 IU 2-3x/week × cycle length (atrophy prevention). PCT-blast: 1500-2500 IU EOD × 10-14 days (HPTA restart bridge). Post-PCT rescue: 1500 IU 2x/week × 4 weeks (if LH/FSH NOT recovering on SERM alone). Long-term chronic monotherapy (>4 weeks) CONTRAINDICATED (Leydig downregulation risk)."
   },
   "bloodwork": {
     "preCycle": {

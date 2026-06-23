@@ -25,7 +25,7 @@ export default {
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Bis-fluorowany analog adrafinilu, profil obniżający agresję, badawczy.",
-  "description": "Fladrafinil (CRL-40,941) to bis-fluorowana pochodna adrafinilu, pierwotnie opracowana przez Lafon (Francja) (PMID 27928893). Jego aktywność eugerokichna jest podobna do adrafinilu, ale **3-4× silniejsza** z **czasem trwania 12-16 h**. Mechanizm: konwersja wątrobowa do aktywnego metabolitu podobnego do modafinilu → hamowanie DAT + modulacja oreksyny/histaminy. Modele zwierzęce opisują wyraźne zmniejszenie agresji (Patent US 4489095). Podstawienie fluoru spowalnia metabolizm wątrobowy → dłuższy efekt, ale podwyższone ryzyko hepatotoksyczności przy przewlekłym dawkowaniu (monitorowanie LFT). Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act (od 2016). Brak badań klinicznych u ludzi; nigdzie nie zatwierdzony.",
+  "description": "Fladrafinil (CRL-40,941) to bis-fluorowana pochodna adrafinilu, pierwotnie opracowana przez Lafon (Francja) (PMID 27928893). Jego aktywność eugerokichna jest podobna do adrafinilu, ale 3-4× silniejsza z czasem trwania 12-16 h. Mechanizm: konwersja wątrobowa do aktywnego metabolitu podobnego do modafinilu → hamowanie DAT + modulacja oreksyny/histaminy. Modele zwierzęce opisują wyraźne zmniejszenie agresji (Patent US 4489095). Podstawienie fluoru spowalnia metabolizm wątrobowy → dłuższy efekt, ale podwyższone ryzyko hepatotoksyczności przy przewlekłym dawkowaniu (monitorowanie LFT). Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act (od 2016). Brak badań klinicznych u ludzi; nigdzie nie zatwierdzony.",
   "keyInfo": [
     {
       "label": "Mechanizm",

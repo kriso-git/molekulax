@@ -25,7 +25,7 @@ export default {
   "accentColor": "#06b6d4",
   "tagColor": "rgba(6,182,212,0.18)",
   "shortDesc": "Glycerophosphocholine, a bioavailable choline precursor.",
-  "description": "Alpha-GPC (L-α-glycerylphosphorylcholine) is a natural phospholipid metabolite that the body incorporates into acetylcholine and phosphatidylcholine. It crosses the blood-brain barrier with ~95% bioavailability. An acute-acting choline source – quickly raises CNS acetylcholine, hence among the \"feelable\" choline forms (vs. CDP-Choline which supports long-term baseline). **Pre-workout mind-muscle benefit** documented (PMID PMC4595381) – included in many pre-workout formulas. Supports phospholipid synthesis at the membrane level (PMID 8190709). At high doses, cholinergic overload (headache, brain fog, anxiety) → Magnesium L-Threonate can mitigate. Prescription medicine in Italy (Delecit, for vascular dementia) and a supplement elsewhere.",
+  "description": "Alpha-GPC (L-α-glycerylphosphorylcholine) is a natural phospholipid metabolite that the body incorporates into acetylcholine and phosphatidylcholine. It crosses the blood-brain barrier with ~95% bioavailability. An acute-acting choline source – quickly raises CNS acetylcholine, hence among the \"feelable\" choline forms (vs. CDP-Choline which supports long-term baseline). Pre-workout mind-muscle benefit documented (PMID PMC4595381) – included in many pre-workout formulas. Supports phospholipid synthesis at the membrane level (PMID 8190709). At high doses, cholinergic overload (headache, brain fog, anxiety) → Magnesium L-Threonate can mitigate. Prescription medicine in Italy (Delecit, for vascular dementia) and a supplement elsewhere.",
   "keyInfo": [
     {
       "label": "Mechanism",

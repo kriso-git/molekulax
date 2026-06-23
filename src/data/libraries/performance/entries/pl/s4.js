@@ -28,7 +28,7 @@ export default {
   "accentColor": "#9333ea",
   "tagColor": "rgba(147,51,234,0.18)",
   "shortDesc": "Niesterydowy SARM (Andaryna, GTx-007), GTx Inc 2005. UNIKALNY skutek uboczny: zależne od dawki ŻÓŁTE WIDZENIE i nocna ślepota (Marhefka 2004 PMID 15267281 – wiązanie opsynu siatkówki). Na rynku kulturystyki reputacja SARM 'fat-loss + cutting'. Zakazany WADA.",
-  "description": "S4 (Andaryna, GTx-007) to niesterydowy selektywny modulator receptora androgenowego (SARM) opracowany przez GTx Inc w 2005 (Gao 2005 PMID 16270235 in vivo characterization). Strukturalnie pochodna arylopropionamidu (NIE steryd), powinowactwo AR-binding ~70% poziomu testosteronu in vitro (Kim 2005 PMID 16080187). **Unikalny skutek uboczny**: Marhefka 2004 PMID 15267281 pokazał, że molekuła S4 wiąże się także z opsynami siatkówki (pigmenty wykrywające fotony) – zależne od dawki SKUTKI UBOCZNE: (1) **żółte widzenie** (yellow tint vision), klasycznie z akcentem na żółtawo-zielony, tłumienie niebieskiego; (2) **nocna ślepota** przy wysokich dawkach. Oba efekty są ODWRACALNE w ciągu 4-6 tygodni po odstawieniu S4. Rozwój kliniczny: Faza I 2007, Faza II 2008-2010 dla wskazań BPH (łagodny przerost prostaty) + kacheksja – wyniki Fazy II były poniżej umiarkowanego clinical-meaningfulness. Po 2010 GTx skupiło rozwój kliniczny na Ostarynie, S4 zostało deprioritized. Na rynku kulturystyki reputacja 'fat-loss + cutting SARM' (anegdotyczna niska retencja wody + umiarkowana supresja HPTA + wizualny skutek uboczny jako 'unikalny' identyfikator). Ryzyko hepatotoksyczności niższe niż RAD/LGD (krótszy okres półtrwania → szybszy klirens reakcyjnych metabolitów), ale NIE zerowe. Zakazany WADA przez cały rok (S1.2).",
+  "description": "S4 (Andaryna, GTx-007) to niesterydowy selektywny modulator receptora androgenowego (SARM) opracowany przez GTx Inc w 2005 (Gao 2005 PMID 16270235 in vivo characterization). Strukturalnie pochodna arylopropionamidu (NIE steryd), powinowactwo AR-binding ~70% poziomu testosteronu in vitro (Kim 2005 PMID 16080187). Unikalny skutek uboczny: Marhefka 2004 PMID 15267281 pokazał, że molekuła S4 wiąże się także z opsynami siatkówki (pigmenty wykrywające fotony) – zależne od dawki SKUTKI UBOCZNE: (1) żółte widzenie (yellow tint vision), klasycznie z akcentem na żółtawo-zielony, tłumienie niebieskiego; (2) nocna ślepota przy wysokich dawkach. Oba efekty są ODWRACALNE w ciągu 4-6 tygodni po odstawieniu S4. Rozwój kliniczny: Faza I 2007, Faza II 2008-2010 dla wskazań BPH (łagodny przerost prostaty) + kacheksja – wyniki Fazy II były poniżej umiarkowanego clinical-meaningfulness. Po 2010 GTx skupiło rozwój kliniczny na Ostarynie, S4 zostało deprioritized. Na rynku kulturystyki reputacja 'fat-loss + cutting SARM' (anegdotyczna niska retencja wody + umiarkowana supresja HPTA + wizualny skutek uboczny jako 'unikalny' identyfikator). Ryzyko hepatotoksyczności niższe niż RAD/LGD (krótszy okres półtrwania → szybszy klirens reakcyjnych metabolitów), ale NIE zerowe. Zakazany WADA przez cały rok (S1.2).",
   "keyInfo": [
     {"label": "Mechanizm", "value": "Niesterydowy selektywny modulator AR + UNIKALNE wiązanie opsynu siatkówki (wizualny skutek uboczny)"},
     {"label": "Aktywność anaboliczna (Gao 2005)", "value": "W rat bioassay aktywność anaboliczna ~60-70% poziomu Test (in vivo)"},
@@ -36,7 +36,7 @@ export default {
     {"label": "Onset", "value": "1-2 tygodnie"},
     {"label": "Status prawny", "value": "Nigdy nie był Rx (GTx deprioritized po Fazie II w 2010). UGL 'research chemical'. Zakazany WADA S1.2."}
   ],
-  "mechanism": "S4 to niesterydowy SARM, struktura arylopropionamidu. Selektywny agonista AR w tkance mięśniowej + kostnej (Gao 2005 PMID 16270235 in vivo rat bioassay). Aktywność anaboliczna ~60-70% testosteronu (in vivo). Minimalna aktywność prostaty. NIE aromatyzuje → brak wzrostu E2. Supresja HPTA **umiarkowana** (krótki okres półtrwania → kumulatywna supresja mniejsza niż na LGD/RAD, Gao 2005). **UNIKALNY SKUTEK UBOCZNY**: Marhefka 2004 PMID 15267281 pokazał, że molekuła S4 wiąże się z opsynami siatkówki (receptor CCR2 + interakcja opsynu-pigmentu). Konsekwencja kliniczna: zależne od dawki **żółte widzenie** (~30-50% użytkowników UGL przy 50+ mg/dzień to doświadcza) i **nocna ślepota** (około 10-20% użytkowników przy >75 mg). Oba odwracalne w ciągu 4-6 tygodni po odstawieniu S4. Hepatotoksyczność umiarkowana – krótki okres półtrwania (~4 h) oznacza szybszy klirens reakcyjnych metabolitów, mniej poważne niż RAD/LGD.",
+  "mechanism": "S4 to niesterydowy SARM, struktura arylopropionamidu. Selektywny agonista AR w tkance mięśniowej + kostnej (Gao 2005 PMID 16270235 in vivo rat bioassay). Aktywność anaboliczna ~60-70% testosteronu (in vivo). Minimalna aktywność prostaty. NIE aromatyzuje → brak wzrostu E2. Supresja HPTA umiarkowana (krótki okres półtrwania → kumulatywna supresja mniejsza niż na LGD/RAD, Gao 2005). UNIKALNY SKUTEK UBOCZNY: Marhefka 2004 PMID 15267281 pokazał, że molekuła S4 wiąże się z opsynami siatkówki (receptor CCR2 + interakcja opsynu-pigmentu). Konsekwencja kliniczna: zależne od dawki żółte widzenie (~30-50% użytkowników UGL przy 50+ mg/dzień to doświadcza) i nocna ślepota (około 10-20% użytkowników przy >75 mg). Oba odwracalne w ciągu 4-6 tygodni po odstawieniu S4. Hepatotoksyczność umiarkowana – krótki okres półtrwania (~4 h) oznacza szybszy klirens reakcyjnych metabolitów, mniej poważne niż RAD/LGD.",
   "legalStatus": "Nigdy nie zatwierdzony Rx. Po Fazie II BPH + kacheksja w 2010 GTx Inc przeszedł na Ostarynę, deprioritizing S4. USA: Schedule III analog w niektórych stanach (2018+). UE: brak Rx. Zakazany WADA przez cały rok (S1.2 – inne środki anaboliczne).",
   "onsetTime": "1-2 tygodnie (anegdotyczny + Gao 2005 in vivo)",
   "halfLife": "~4 h (doustnie, KRÓTKI)",
@@ -56,7 +56,7 @@ export default {
     "Precedens kliniczny (Faza II BPH + kacheksja)"
   ],
   "quickStart": [
-    "**MONITOROWANIE WIZUALNYCH SKUTKÓW UBOCZNYCH**: jeśli pojawi się żółte widzenie lub nocna ślepota, redukcja dawki lub odstawienie. Efekt odwracalny 4-6 tygodni.",
+    "MONITOROWANIE WIZUALNYCH SKUTKÓW UBOCZNYCH: jeśli pojawi się żółte widzenie lub nocna ślepota, redukcja dawki lub odstawienie. Efekt odwracalny 4-6 tygodni.",
     "Dawka: 25-50 mg/dzień (podzielona 2-3x dziennie z powodu krótkiego okresu półtrwania), max 6-8 tygodni cyklu",
     "Stackowalny z innymi SARM lub klasycznymi sterydami 'cutting' (anegdotyczny protokół, BRAK precedensu klinicznego)",
     "Zakazany WADA przez cały rok (1-2 tygodnie detekcja w moczu – szybszy klirens)",
@@ -64,7 +64,7 @@ export default {
   ],
   "expectations": [
     {"label": "Pierwsze 1-2 tygodnie", "body": "Anegdotyczny wzrost siły + subiektywne raporty UGL 'leaner look'. Wizualny skutek uboczny JESZCZE nie oczekiwany (próg dawki 50+ mg wyższy)."},
-    {"label": "Tydzień 3-4", "body": "Wzrost lean mass 1-2 kg (anegdoty UGL), przyspieszenie utraty tłuszczu. **Żółte widzenie może się zacząć** przy 50+ mg/dzień (~30% użytkowników)."},
+    {"label": "Tydzień 3-4", "body": "Wzrost lean mass 1-2 kg (anegdoty UGL), przyspieszenie utraty tłuszczu. Żółte widzenie może się zacząć przy 50+ mg/dzień (~30% użytkowników)."},
     {"label": "Koniec tygodnia 6-8", "body": "Maksymalny efekt w kontekście UGL. Jeśli pojawił się wizualny skutek uboczny, odzyskanie 4-6 tygodni po odstawieniu. PCT 4 tygodnie."}
   ],
   "quality": {
@@ -74,7 +74,7 @@ export default {
       "Wszystko UGL – brak formatu Rx"
     ],
     "caution": [
-      "**Wizualne skutki uboczne: żółte widzenie (~30%) + nocna ślepota (~10-20%) zależne od dawki (Marhefka 2004)**",
+      "Wizualne skutki uboczne: żółte widzenie (~30%) + nocna ślepota (~10-20%) zależne od dawki (Marhefka 2004)",
       "Umiarkowana supresja HPTA (PCT 4 tygodnie)",
       "Umiarkowana hepatotoksyczność (1 udokumentowany przypadek DILI Solomon 2019)",
       "Krótki okres półtrwania → wymaga dawkowania 2-3x dziennie (ryzyko compliance)",
@@ -102,7 +102,7 @@ export default {
     {"title": "LGD-4033 and a Case of Drug-Induced Liver Injury: Exploring the Clinical Implications of Off-Label Selective Androgen Receptor Modulator Use in Healthy Adults.", "authors": "Labban H, Kwait B, Paracha A, Khan A, Singh M, Lopez R", "journal": "Cureus", "pmid": "39421081"}
   ],
   "faq": [
-    {"q": "Dlaczego S4 powoduje żółte widzenie?", "a": "Badanie mechanizmu Marhefka 2004 PMID 15267281 pokazało, że molekuła S4 NIE jest specyficzna dla AR – wiąże się także z pigmentami opsynowymi siatkówki (białka fotoreceptorów w siatkówce) w sposób zależny od dawki. Pigment opsynowy wrażliwy na niebieski (S-cone opsin) jest lekko modulowany przez wiązanie S4 → percepcja niebieskiego światła jest TŁUMIONA → percepowana paleta kolorów przesuwa się w stronę żółtawo-zielonej (yellow tint vision). Przy wysokich dawkach (75+ mg/dzień) może pojawić się także nocna ślepota (redukcja tolerancji opsyn pręcikowych). **Oba odwracalne** w ciągu 4-6 tygodni po odstawieniu S4 (odzyskanie opsynów dzięki nowej syntezie pigmentów siatkówki). ~30% użytkowników UGL przy 50+ mg/dzień doświadcza żółtego widzenia."},
+    {"q": "Dlaczego S4 powoduje żółte widzenie?", "a": "Badanie mechanizmu Marhefka 2004 PMID 15267281 pokazało, że molekuła S4 NIE jest specyficzna dla AR – wiąże się także z pigmentami opsynowymi siatkówki (białka fotoreceptorów w siatkówce) w sposób zależny od dawki. Pigment opsynowy wrażliwy na niebieski (S-cone opsin) jest lekko modulowany przez wiązanie S4 → percepcja niebieskiego światła jest TŁUMIONA → percepowana paleta kolorów przesuwa się w stronę żółtawo-zielonej (yellow tint vision). Przy wysokich dawkach (75+ mg/dzień) może pojawić się także nocna ślepota (redukcja tolerancji opsyn pręcikowych). Oba odwracalne w ciągu 4-6 tygodni po odstawieniu S4 (odzyskanie opsynów dzięki nowej syntezie pigmentów siatkówki). ~30% użytkowników UGL przy 50+ mg/dzień doświadcza żółtego widzenia."},
     {"q": "S4 vs Ostaryna – który jest SARM 'cutting'?", "a": "Oba są odpowiednie do celów cutting, ale z różnymi profilami: S4 ma krótszy okres półtrwania (~4 h vs ~24 h Ostaryna), szybsze odstawienie jeśli pojawią się skutki uboczne. Na S4 anegdotyczne raporty 'leaner look' + 'przyspieszenie utraty tłuszczu' są częstsze (mechanizm: niższa retencja wody). ALE: wizualny skutek uboczny S4 (~30% żółte widzenie) NIE istnieje na Ostarynie. Ostaryna ma wyższy precedens badań klinicznych (Faza III POWER vs S4 Faza II). Preferencja anegdotyczna UGL: Ostaryna bezpieczniejsza dla pierwszych użytkowników SARM, S4 'dla doświadczonych użytkowników ze względu na unikalny profil fat-loss'."},
     {"q": "Dlaczego S4 dawkowanie 2-3x dziennie?", "a": "Krótki okres półtrwania (~4 h, Gao 2005 PMID 16270235) sprawia, że pojedyncza dzienna dawka szybko znika z osocza – steady-state AR-binding occupancy nie jest stabilny. Protokół UGL: dawkę 25-50 mg/dzień podzielić 2-3x (rano + południe + wieczór, lub rano + wieczór) aby poziom osocza można było utrzymać przez 8-12 h. Ryzyko compliance jest wyższe niż na SARM z dawkowaniem raz dziennie (RAD-140, Ostaryna)."},
     {"q": "Detekcja WADA dla S4 – czy szybszy klirens czyni go kryjówką?", "a": "NIE. Choć detekcja S4 w moczu jest krótsza (1-2 tygodnie vs 3-6 tygodni dla RAD-140), nowoczesne LC-MS/MS akredytowane WADA może wykryć metabolity S4. 2-tygodniowe okno jest nadal powszechne w kontekście sportu wyczynowego (wiele okazji testowych w ramach zawodów). Dla sportowców absolutnie do unikania. Ponadto, wizualny skutek uboczny jest również 'zadaniem znacznikowym' – test okulistyczny może łatwo ujawnić zaburzenie żółtego widzenia."}
@@ -118,19 +118,19 @@ export default {
     "preCycle": {
       "label": "Pre-cykl",
       "timing": "2-4 tygodnie przed startem cyklu",
-      "markers": "Panel wątrobowy, lipidowy, hormon (Total T/Free T/E2/LH/FSH/SHBG), **baseline wizualny (test kolorów + test widzenia nocnego)**.",
+      "markers": "Panel wątrobowy, lipidowy, hormon (Total T/Free T/E2/LH/FSH/SHBG), baseline wizualny (test kolorów + test widzenia nocnego).",
       "purpose": "Baseline wątrobowy + HPTA + wizualny (unikalny skutek uboczny)."
     },
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Tydzień 4",
-      "markers": "ALT/AST, lipidowy, hormon, **test wizualny (sprawdzenie żółtego widzenia + nocnej ślepoty)**.",
+      "markers": "ALT/AST, lipidowy, hormon, test wizualny (sprawdzenie żółtego widzenia + nocnej ślepoty).",
       "purpose": "Monitor wątrobowy + wizualny (zaburzenie wizualne → redukcja dawki lub odstawienie)."
     },
     "postCycle": {
       "label": "PCT",
       "timing": "Ostatnia dawka +1-2 dni start PCT (Clomid 25 mg/dzień + Nolvadex 20 mg/dzień przez 4 tygodnie)",
-      "markers": "Normalizacja wątrobowa, odzyskanie HPTA, **odzyskanie wizualne (4-6 tygodni)**.",
+      "markers": "Normalizacja wątrobowa, odzyskanie HPTA, odzyskanie wizualne (4-6 tygodni).",
       "purpose": "Weryfikacja odzyskania HPTA + wizualnego."
     },
     "cruise": {

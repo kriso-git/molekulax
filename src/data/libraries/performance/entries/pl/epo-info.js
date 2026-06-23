@@ -27,7 +27,7 @@ export default {
   "accentColor": "#ef4444",
   "tagColor": "rgba(239,68,68,0.18)",
   "shortDesc": "Rekombinowana ludzka erytropoetyna (rhEPO). Stymuluje produkcję erytrocytów, zakazana przez WADA.",
-  "description": "Rekombinowana erytropoetyna (rhEPO) to biologicznie identyczna forma naturalnej EPO nerek. Zatwierdzona FDA dla CKD i anemii chemoterapeutycznej. W sportach wytrzymałościowych podnosi hematokryt, anegdotycznie +8-10% VO2max (Lundby 2011), ale placebo-kontrolowane BLINDED RCT pokazują realistycznie +1-3% (Heuberger 2013). WADA-zakazana. **Analogia stabilizacji HIF-α**: endogenną EPO aktywuje HIF-α indukowany hipoksją (Nobel Semenza 2019). **Kontekst historyczny**: era EPO w Tour de France 1990-2000, skandal Festina 1998, protokół Armstrong/USPS udokumentowany (USADA 2012). **Przełom detekcji**: Lasne & de Ceaurriz 2000 Nature (PMID 10864312) test IEF. **Dynamika hematokrytu**: 7-10 dni do szczytu retikulocytów, 21-28 dni do szczytu hematokrytu – stąd protokoły mikrodawkowania (20-30 IU/kg co 2 dni) poniżej okna detekcji.",
+  "description": "Rekombinowana erytropoetyna (rhEPO) to biologicznie identyczna forma naturalnej EPO nerek. Zatwierdzona FDA dla CKD i anemii chemoterapeutycznej. W sportach wytrzymałościowych podnosi hematokryt, anegdotycznie +8-10% VO2max (Lundby 2011), ale placebo-kontrolowane BLINDED RCT pokazują realistycznie +1-3% (Heuberger 2013). WADA-zakazana. Analogia stabilizacji HIF-α: endogenną EPO aktywuje HIF-α indukowany hipoksją (Nobel Semenza 2019). Kontekst historyczny: era EPO w Tour de France 1990-2000, skandal Festina 1998, protokół Armstrong/USPS udokumentowany (USADA 2012). Przełom detekcji: Lasne & de Ceaurriz 2000 Nature (PMID 10864312) test IEF. Dynamika hematokrytu: 7-10 dni do szczytu retikulocytów, 21-28 dni do szczytu hematokrytu – stąd protokoły mikrodawkowania (20-30 IU/kg co 2 dni) poniżej okna detekcji.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -46,7 +46,7 @@ export default {
       "value": "USA/UE: Rx. WADA: zakazany."
     }
   ],
-  "mechanism": "Agonista receptora EPO (receptor cytokin typu 1, jak receptor GH) na prekursorach erytrocytów (BFU-E, CFU-E) w szpiku. Dimeryzacja receptora → **JAK2 → STAT5 → aktywacja genów antyapoptotycznych i proliferacyjnych**. Sygnał hipoksji: różnicowanie i proliferacja, uwolnienie retikulocytów w 7-10 dni.",
+  "mechanism": "Agonista receptora EPO (receptor cytokin typu 1, jak receptor GH) na prekursorach erytrocytów (BFU-E, CFU-E) w szpiku. Dimeryzacja receptora → JAK2 → STAT5 → aktywacja genów antyapoptotycznych i proliferacyjnych. Sygnał hipoksji: różnicowanie i proliferacja, uwolnienie retikulocytów w 7-10 dni.",
   "legalStatus": "USA/UE: Rx. WADA: zakazany.",
   "onsetTime": "7-14 days",
   "halfLife": "5-13 h (subcutaneous)",

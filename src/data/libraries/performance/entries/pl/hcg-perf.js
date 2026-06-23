@@ -29,7 +29,7 @@ export default {
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
   "shortDesc": "Ludzka Gonadotropina Kosmówkowa – analog strukturalny LH, stymulator receptora LHCGR komórek Leydiga. Pomost PCT po AAS przeciw atrofii jąder i do restartu HPTA. Cross-frame: w przyszłej bibliotece peptydów dojdzie `hcg-peptid` z framingiem fertility-clinic.",
-  "description": "HCG (Ludzka Gonadotropina Kosmówkowa) to glikoproteina 244-aminokwasowa (podjednostka α + β), strukturalnie analog LH z ~80% identycznością sekwencji na podjednostce β. Endogenne źródło: łożyskowy syncytiotrophoblast ciąży → krew + mocz (szczyt w 8-12 tygodniu ciąży). Kliniczne źródła HCG: (1) wyekstrahowany z moczu (uHCG) – oczyszczony z moczu kobiet w ciąży (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring UE); (2) rekombinowany (rHCG / choriogonadotropina alfa) – Serono Ovidrel/Ovitrelle ekspresja CHO, wyższa czystość. Mechanizm: agonizm receptora LHCGR komórek Leydiga → egzogenna mimikra LH → testikularna produkcja testosteronu. **Kontekst PCT po AAS**: HCG mostuje okno supresji LH, kiedy własna przysadka jeszcze nie wydziela wystarczającej ilości LH. Dwa główne protokoły użycia: **mid-cycle HCG** (250-500 IU 2-3x/tydzień przez cały cykl AAS – zapobieganie atrofii jąder); **PCT-blast HCG** (1500-2500 IU EOD × 10-14 dni po ostatniej iniekcji AAS, potem przejście na SERM PCT). **Uwaga cross-frame**: to jest wpis z sufiksem `-perf`; przyszły batch biblioteki peptydów doda wpis `hcg-peptid` (framing fertility-clinic – IVF czynnik męski + kontekst Rx wtórnego hipogonadyzmu, IDENTYCZNA cząsteczka, inna narracja). WADA-zakazany cały rok (S2 Hormony Peptydowe).",
+  "description": "HCG (Ludzka Gonadotropina Kosmówkowa) to glikoproteina 244-aminokwasowa (podjednostka α + β), strukturalnie analog LH z ~80% identycznością sekwencji na podjednostce β. Endogenne źródło: łożyskowy syncytiotrophoblast ciąży → krew + mocz (szczyt w 8-12 tygodniu ciąży). Kliniczne źródła HCG: (1) wyekstrahowany z moczu (uHCG) – oczyszczony z moczu kobiet w ciąży (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring UE); (2) rekombinowany (rHCG / choriogonadotropina alfa) – Serono Ovidrel/Ovitrelle ekspresja CHO, wyższa czystość. Mechanizm: agonizm receptora LHCGR komórek Leydiga → egzogenna mimikra LH → testikularna produkcja testosteronu. Kontekst PCT po AAS: HCG mostuje okno supresji LH, kiedy własna przysadka jeszcze nie wydziela wystarczającej ilości LH. Dwa główne protokoły użycia: mid-cycle HCG (250-500 IU 2-3x/tydzień przez cały cykl AAS – zapobieganie atrofii jąder); PCT-blast HCG (1500-2500 IU EOD × 10-14 dni po ostatniej iniekcji AAS, potem przejście na SERM PCT). Uwaga cross-frame: to jest wpis z sufiksem `-perf`; przyszły batch biblioteki peptydów doda wpis `hcg-peptid` (framing fertility-clinic – IVF czynnik męski + kontekst Rx wtórnego hipogonadyzmu, IDENTYCZNA cząsteczka, inna narracja). WADA-zakazany cały rok (S2 Hormony Peptydowe).",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -165,7 +165,7 @@ export default {
   "faq": [
     {
       "q": "Mid-cycle HCG vs PCT-blast HCG – co robi każdy?",
-      "a": "Dwa odrębne protokoły z różnymi celami. **Mid-cycle**: 250-500 IU 2-3x/tydzień przez cały cykl AAS – PREWENCJA ATROFII jąder (zachowanie tkanki jąder, szybsza odbudowa po cyklu). **PCT-blast**: 1500-2500 IU EOD × 10-14 dni w pierwszych 2 tygodniach po końcu cyklu – RESTART HPTA z bypassem Leydiga (mostuje własne okno supresji przysadkowego LH). Oba protokoły są następnie wspierane przez SERM PCT (Nolvadex) dla pełnej odbudowy HPTA."
+      "a": "Dwa odrębne protokoły z różnymi celami. Mid-cycle: 250-500 IU 2-3x/tydzień przez cały cykl AAS – PREWENCJA ATROFII jąder (zachowanie tkanki jąder, szybsza odbudowa po cyklu). PCT-blast: 1500-2500 IU EOD × 10-14 dni w pierwszych 2 tygodniach po końcu cyklu – RESTART HPTA z bypassem Leydiga (mostuje własne okno supresji przysadkowego LH). Oba protokoły są następnie wspierane przez SERM PCT (Nolvadex) dla pełnej odbudowy HPTA."
     },
     {
       "q": "Czy HCG aromatyzuje? Ile?",
@@ -177,7 +177,7 @@ export default {
     },
     {
       "q": "Pregnyl vs Ovidrel vs UGL – który wybrać?",
-      "a": "**Pregnyl/Choragon (urinary)**: złoty standard, dostępny w aptekach UE (~€20/5000 IU), 60+ lat literatury klinicznej. **Ovidrel/Ovitrelle (rekombinowany)**: wyższa czystość (strzykawka napełniona 250 µg), droższy (~€40-60/dawkę), dostępny w USA. **UGL**: HPLC + immunoassay-testowane źródło OBOWIĄZKOWE – HCG UGL często słabo skoncentrowany lub przerwany łańcuch chłodniczy (aktywność spada). Klinicznie: pharma > UGL >> źródło niepewne."
+      "a": "Pregnyl/Choragon (urinary): złoty standard, dostępny w aptekach UE (~€20/5000 IU), 60+ lat literatury klinicznej. Ovidrel/Ovitrelle (rekombinowany): wyższa czystość (strzykawka napełniona 250 µg), droższy (~€40-60/dawkę), dostępny w USA. UGL: HPLC + immunoassay-testowane źródło OBOWIĄZKOWE – HCG UGL często słabo skoncentrowany lub przerwany łańcuch chłodniczy (aktywność spada). Klinicznie: pharma > UGL >> źródło niepewne."
     },
     {
       "q": "Uwaga cross-frame: ten sam HCG jak w protokołach fertility-clinic?",
@@ -200,7 +200,7 @@ export default {
       "high": 2500
     },
     "unit": "IU/dawkę (SC lub IM, częstość dawki specyficzna protokołowi)",
-    "note": "**Mid-cycle**: 250-500 IU 2-3x/tydzień × długość cyklu (prewencja atrofii). **PCT-blast**: 1500-2500 IU EOD × 10-14 dni (pomost restartu HPTA). **Ratunek post-PCT**: 1500 IU 2x/tydzień × 4 tygodnie (jeśli LH/FSH NIE odbudowuje na samym SERM). Długoterminowa monoterapia chroniczna (>4 tygodnie) PRZECIWWSKAZANA (ryzyko downregulacji Leydiga)."
+    "note": "Mid-cycle: 250-500 IU 2-3x/tydzień × długość cyklu (prewencja atrofii). PCT-blast: 1500-2500 IU EOD × 10-14 dni (pomost restartu HPTA). Ratunek post-PCT: 1500 IU 2x/tydzień × 4 tygodnie (jeśli LH/FSH NIE odbudowuje na samym SERM). Długoterminowa monoterapia chroniczna (>4 tygodnie) PRZECIWWSKAZANA (ryzyko downregulacji Leydiga)."
   },
   "bloodwork": {
     "preCycle": {

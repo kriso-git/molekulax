@@ -63,7 +63,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NIE – niesterydowy, NIE substrat CYP19. E2 nie wzrasta (Dalton 2011 Faza II).",
-  "hepatotoxicity": "**Umiarkowana-wysoka – 4+ udokumentowanych raportów hepatocellular injury (Vilaca 2018 PMID 30171122). W badaniach klinicznych (Dalton 2011, Crawford 2016) wzrost ALT/AST umiarkowany (~1,5-2x norma przy 3 mg).** Przy dawkach UGL (20-30 mg/dzień) cięższe. TUDCA + milk-thistle + miesięczne ALT/AST zalecane (nie ściśle obowiązkowe, ale silnie sugerowane).",
+  "hepatotoxicity": "Umiarkowana-wysoka – 4+ udokumentowanych raportów hepatocellular injury (Vilaca 2018 PMID 30171122). W badaniach klinicznych (Dalton 2011, Crawford 2016) wzrost ALT/AST umiarkowany (~1,5-2x norma przy 3 mg). Przy dawkach UGL (20-30 mg/dzień) cięższe. TUDCA + milk-thistle + miesięczne ALT/AST zalecane (nie ściśle obowiązkowe, ale silnie sugerowane).",
   "wadaStatus": "banned",
   "androgenicRatio": "~50:20 (selektywność mięsień:prostata – wysoka, lepsza niż LGD).",
   "bindingAffinity": "Niesterydowy SARM, powinowactwo AR-binding ~30-40% poziomu testosteronu in vitro. Wysoka selektywność tkankowa mięsień > prostata (Dalton 2011 PMID 21833506).",
@@ -76,7 +76,7 @@ export default {
     "Wysoka selektywność mięsień > prostata"
   ],
   "quickStart": [
-    "**Monitorowanie hepatotoksyczności**: TUDCA 500 mg/dzień + milk-thistle 300 mg/dzień + miesięczne ALT/AST zalecane (Vilaca 2018 review odnotował 4 przypadki DILI)",
+    "Monitorowanie hepatotoksyczności: TUDCA 500 mg/dzień + milk-thistle 300 mg/dzień + miesięczne ALT/AST zalecane (Vilaca 2018 review odnotował 4 przypadki DILI)",
     "Dawka: 12,5-25 mg/dzień, max 8 tygodni cyklu (kliniczne 3 mg, anegdoty UGL 10-25 mg)",
     "Supresja HPTA umiarkowana, PCT (Clomid + Nolvadex 4 tygodnie) zalecane przy wysokich dawkach",
     "Zakazany WADA przez cały rok (2-4 tygodnie detekcja w moczu) – najczęstsza przyczyna suspensji NFL/MLB",
@@ -158,7 +158,7 @@ export default {
   "faq": [
     {
       "q": "Dlaczego Faza III POWER się nie powiodła?",
-      "a": "GTx Inc Faza III POWER 1+2 badania (NCT01355484/NCT01355497, 2013-2016, ~600 pacjentów NSCLC z kacheksją, 3 mg/dzień Ostaryna vs placebo): co-primary endpoint **lean body mass + physical function (stair-climb power)** RAZEM NIE osiągnął istotności statystycznej. Lean body mass wzrósł (+1,5 kg vs placebo), ale endpoint physical function nie osiągnął progu clinical-meaningfulness. FDA NIE zatwierdziła. Po 2016 GTx przerwało rozwój Ostaryny dla kacheksji, później skupiając się na breast cancer adjunct + urinary incontinence (Asahi 2018 Faza II). Crawford 2016 PMID 26944362 zawiera szczegółowy projekt badania + wyniki."
+      "a": "GTx Inc Faza III POWER 1+2 badania (NCT01355484/NCT01355497, 2013-2016, ~600 pacjentów NSCLC z kacheksją, 3 mg/dzień Ostaryna vs placebo): co-primary endpoint lean body mass + physical function (stair-climb power) RAZEM NIE osiągnął istotności statystycznej. Lean body mass wzrósł (+1,5 kg vs placebo), ale endpoint physical function nie osiągnął progu clinical-meaningfulness. FDA NIE zatwierdziła. Po 2016 GTx przerwało rozwój Ostaryny dla kacheksji, później skupiając się na breast cancer adjunct + urinary incontinence (Asahi 2018 Faza II). Crawford 2016 PMID 26944362 zawiera szczegółowy projekt badania + wyniki."
     },
     {
       "q": "Dlaczego Ostaryna to 'łagodniejszy' SARM niż RAD/LGD?",
@@ -170,7 +170,7 @@ export default {
     },
     {
       "q": "Czy Ostaryna może być stackowana z RAD-140 lub LGD-4033?",
-      "a": "**NIE zalecane.** Raport przypadku Hilal 2020 PMID 32492288 dotyczył stack RAD+LGD rozwijającego piorunujące DILI po 9 tygodniach – kumulatywna hepatotoksyczność. Ostaryna byłaby relatywnie 'łagodna' w stacku SARM, ale ryzyko kombinacyjne (CYP3A4 saturation dla reakcyjnych metabolitów) jest poważne. Jeśli pożądane jest wiele SARM, lepiej w sekwencji (8 tygodni jeden, 8 tygodni PCT, 8 tygodni inny) niż równolegle. Brak precedensu klinicznego dla stacku."
+      "a": "NIE zalecane. Raport przypadku Hilal 2020 PMID 32492288 dotyczył stack RAD+LGD rozwijającego piorunujące DILI po 9 tygodniach – kumulatywna hepatotoksyczność. Ostaryna byłaby relatywnie 'łagodna' w stacku SARM, ale ryzyko kombinacyjne (CYP3A4 saturation dla reakcyjnych metabolitów) jest poważne. Jeśli pożądane jest wiele SARM, lepiej w sekwencji (8 tygodni jeden, 8 tygodni PCT, 8 tygodni inny) niż równolegle. Brak precedensu klinicznego dla stacku."
     }
   ],
   "related": [

@@ -23,7 +23,7 @@ export default {
   "accentColor": "#84cc16",
   "tagColor": "rgba(132,204,22,0.18)",
   "shortDesc": "Sarki gyökér, salidrozid + rozavin, fáradtság-ellenes adaptogén.",
-  "description": "A Rhodiola rosea (sarki gyökér, „arany gyökér\") arktikus magasföldek lakossága körében évszázadok óta használt fáradtság-ellenes gyógynövény. Aktív komponensei a salidrozid (tirozol-glikozid) és a rozavin-csoport – **standardizált kivonat 3% rozavin / 1% salidrozid arányban** (orosz Rosenroot-hagyomány) ajánlott. RCT-bizonyítékok: Olsson 2009 (PMID 19367259) **enyhe-mérsékelt depresszió javulása sertralin nélkül**, Edwards 2012 (PMID 22228617) **stress-related fáradtság-szindróma**, Hung 2011 (PMID 21366835) fizikai fáradtság-csökkentés. Akut hatás már egyetlen 200-400 mg dózissal érzékelhető (vs. Bacopa, ami 8-12 hetes kúrát igényel). Ideális kombinálva alacsony dózisú koffeinnel mentális fáradtság ellen.",
+  "description": "A Rhodiola rosea (sarki gyökér, „arany gyökér\") arktikus magasföldek lakossága körében évszázadok óta használt fáradtság-ellenes gyógynövény. Aktív komponensei a salidrozid (tirozol-glikozid) és a rozavin-csoport – standardizált kivonat 3% rozavin / 1% salidrozid arányban (orosz Rosenroot-hagyomány) ajánlott. RCT-bizonyítékok: Olsson 2009 (PMID 19367259) enyhe-mérsékelt depresszió javulása sertralin nélkül, Edwards 2012 (PMID 22228617) stress-related fáradtság-szindróma, Hung 2011 (PMID 21366835) fizikai fáradtság-csökkentés. Akut hatás már egyetlen 200-400 mg dózissal érzékelhető (vs. Bacopa, ami 8-12 hetes kúrát igényel). Ideális kombinálva alacsony dózisú koffeinnel mentális fáradtság ellen.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",

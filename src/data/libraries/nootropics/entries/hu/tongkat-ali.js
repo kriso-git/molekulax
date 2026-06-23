@@ -24,7 +24,7 @@ export default {
   "accentColor": "#84cc16",
   "tagColor": "rgba(132,204,22,0.18)",
   "shortDesc": "Maláj „longjack\", quassinoidok + eurycomanon, tesztoszteron-támogatás.",
-  "description": "A Tongkat Ali (Eurycoma longifolia, „longjack\") délkelet-ázsiai gyökér-gyógynövény. Hatóanyagai a quassinoidok (különösen az eurycomanon) és a glikoprotein-frakció (Physta® extrakt). RCT-bizonyítékok: Tambi 2012 (PMID 22458760) – **hipogonadális férfiaknál 46.8%-os szérum-tesztoszteron-emelés 1 hónap alatt**; Talbott 2013 (PMID 23705007) – krónikus stressz alatt kortizol-csökkenés + tesztoszteron-emelés. Eugonadális egészséges férfiaknál a hatás kisebb (~15-20%) – a hatás \"ceiling-effect\" jelleg, baseline-szint-függő. **Krónikus stressz + libidó-csökkenés + alvászavar kombinációban a legjobb indikáció**. WADA-listán NEM tiltott. Sportolóknál a Physta® standardizált kivonat 200 mg/nap 5 napos heti szedéssel cycle-protokoll szokványos.",
+  "description": "A Tongkat Ali (Eurycoma longifolia, „longjack\") délkelet-ázsiai gyökér-gyógynövény. Hatóanyagai a quassinoidok (különösen az eurycomanon) és a glikoprotein-frakció (Physta® extrakt). RCT-bizonyítékok: Tambi 2012 (PMID 22458760) – hipogonadális férfiaknál 46.8%-os szérum-tesztoszteron-emelés 1 hónap alatt; Talbott 2013 (PMID 23705007) – krónikus stressz alatt kortizol-csökkenés + tesztoszteron-emelés. Eugonadális egészséges férfiaknál a hatás kisebb (~15-20%) – a hatás \"ceiling-effect\" jelleg, baseline-szint-függő. Krónikus stressz + libidó-csökkenés + alvászavar kombinációban a legjobb indikáció. WADA-listán NEM tiltott. Sportolóknál a Physta® standardizált kivonat 200 mg/nap 5 napos heti szedéssel cycle-protokoll szokványos.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",

@@ -30,7 +30,7 @@ export default {
   "accentColor": "#D4537E",
   "tagColor": "rgba(212,83,126,0.18)",
   "shortDesc": "Humán Chorionic Gonadotropin – LH-strukturális analóg, Leydig-sejt LHCGR-receptor stimulus. AAS-PCT bridge a testikulár-atrófia ellen és HPTA-restart-hoz. Cross-frame: a future peptid-libben `hcg-peptid` fertility-clinic-framing-gel jön.",
-  "description": "A HCG (Humán Chorionic Gonadotropin) egy 244-aminosav-glikoprotein (α + β alegység), strukturálisan az LH analóg ~80% szekvencia-identitással a β-alegységen. Endogén forrás: terhességi placentális szincíciotrophoblast → vér + vizelet (terhesség 8-12. hét csúcs). Klinikai HCG-források: (1) urinary-extracted (uHCG) – terhes nők vizeletéből tisztítva (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring EU); (2) rekombináns (rHCG / choriogonadotropin alfa) – Serono Ovidrel/Ovitrelle CHO-expresszált, magasabb-tisztaságú. Mechanizmus: Leydig-sejt LHCGR-receptor agonist → exogén LH-mimikry → testicular testosterone-produkció. **AAS-PCT kontextus**: a HCG bridgeli az LH-szuppresszió-ablakot, amikor a saját pituiter még nem szekretál elég LH-t. Két fő használati protokoll: **mid-cycle HCG** (250-500 IU 2-3x/hét a teljes AAS-ciklus alatt – testikulár-atrófia-prevention); **PCT-blast HCG** (1500-2500 IU EOD × 10-14 nap a ciklus utolsó pin után, majd SERM-PCT-re átkapcsolás). **Cross-frame note**: ez a `-perf` suffix entry, a future peptid-library batch hozza majd a `hcg-peptid` entry-t (fertility-clinic-framing – IVF male-factor + secondary hypogonadism Rx kontextus, AZONOS molekula, eltérő narratíva). WADA-tilos egész évben (S2 Peptide Hormones).",
+  "description": "A HCG (Humán Chorionic Gonadotropin) egy 244-aminosav-glikoprotein (α + β alegység), strukturálisan az LH analóg ~80% szekvencia-identitással a β-alegységen. Endogén forrás: terhességi placentális szincíciotrophoblast → vér + vizelet (terhesség 8-12. hét csúcs). Klinikai HCG-források: (1) urinary-extracted (uHCG) – terhes nők vizeletéből tisztítva (Pregnyl Organon 1973, Novarel Ferring 1973, Choragon Ferring EU); (2) rekombináns (rHCG / choriogonadotropin alfa) – Serono Ovidrel/Ovitrelle CHO-expresszált, magasabb-tisztaságú. Mechanizmus: Leydig-sejt LHCGR-receptor agonist → exogén LH-mimikry → testicular testosterone-produkció. AAS-PCT kontextus: a HCG bridgeli az LH-szuppresszió-ablakot, amikor a saját pituiter még nem szekretál elég LH-t. Két fő használati protokoll: mid-cycle HCG (250-500 IU 2-3x/hét a teljes AAS-ciklus alatt – testikulár-atrófia-prevention); PCT-blast HCG (1500-2500 IU EOD × 10-14 nap a ciklus utolsó pin után, majd SERM-PCT-re átkapcsolás). Cross-frame note: ez a `-perf` suffix entry, a future peptid-library batch hozza majd a `hcg-peptid` entry-t (fertility-clinic-framing – IVF male-factor + secondary hypogonadism Rx kontextus, AZONOS molekula, eltérő narratíva). WADA-tilos egész évben (S2 Peptide Hormones).",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -166,7 +166,7 @@ export default {
   "faq": [
     {
       "q": "Mid-cycle HCG vs PCT-blast HCG – melyik mit csinál?",
-      "a": "Két különálló protokoll, eltérő céllal. **Mid-cycle**: 250-500 IU 2-3x/hét a teljes AAS-ciklus alatt – testicular ATRÓFIA-PREVENTION (here-állomány-megtartás, post-cycle gyorsabb recovery). **PCT-blast**: 1500-2500 IU EOD × 10-14 nap a ciklus utáni első 2 hétben – HPTA-RESTART Leydig-bypass-szal (a saját pituiter LH-szuppresszió-ablakot bridgeli). Mindkét protokoll után SERM-PCT (Nolvadex) ajánlott a HPTA teljes recovery-jéhez."
+      "a": "Két különálló protokoll, eltérő céllal. Mid-cycle: 250-500 IU 2-3x/hét a teljes AAS-ciklus alatt – testicular ATRÓFIA-PREVENTION (here-állomány-megtartás, post-cycle gyorsabb recovery). PCT-blast: 1500-2500 IU EOD × 10-14 nap a ciklus utáni első 2 hétben – HPTA-RESTART Leydig-bypass-szal (a saját pituiter LH-szuppresszió-ablakot bridgeli). Mindkét protokoll után SERM-PCT (Nolvadex) ajánlott a HPTA teljes recovery-jéhez."
     },
     {
       "q": "HCG aromatizál-e? Mennyit?",
@@ -178,7 +178,7 @@ export default {
     },
     {
       "q": "Pregnyl vs Ovidrel vs UGL – melyiket válasszam?",
-      "a": "**Pregnyl/Choragon (urinary)**: golden-standard, EU pharmacy hozzáférhető (~€20/5000 IU), 60+ év klinikai irodalom. **Ovidrel/Ovitrelle (rekombináns)**: magasabb tisztaság (pre-filled syringe 250 µg), drágább (~€40-60/dose), USA elérhető. **UGL**: HPLC + immunoassay-tesztelt forrás KÖTELEZŐ – UGL-HCG gyakran alulkoncentrált vagy hidegláncot eltört (aktivitás csökken). Klinikai értékben pharma > UGL >> bizonytalan-source."
+      "a": "Pregnyl/Choragon (urinary): golden-standard, EU pharmacy hozzáférhető (~€20/5000 IU), 60+ év klinikai irodalom. Ovidrel/Ovitrelle (rekombináns): magasabb tisztaság (pre-filled syringe 250 µg), drágább (~€40-60/dose), USA elérhető. UGL: HPLC + immunoassay-tesztelt forrás KÖTELEZŐ – UGL-HCG gyakran alulkoncentrált vagy hidegláncot eltört (aktivitás csökken). Klinikai értékben pharma > UGL >> bizonytalan-source."
     },
     {
       "q": "Cross-frame note: ugyanaz a HCG mint a fertility-clinic protokollokban?",
@@ -201,7 +201,7 @@ export default {
       "high": 2500
     },
     "unit": "IU/dose (SC vagy IM, dose-frequency protokoll-specifikus)",
-    "note": "**Mid-cycle**: 250-500 IU 2-3x/hét × ciklus-hossz (atrófia-prevention). **PCT-blast**: 1500-2500 IU EOD × 10-14 nap (HPTA-restart bridge). **Post-PCT rescue**: 1500 IU 2x/hét × 4 hét (ha LH/FSH NEM helyreáll SERM-alone). Long-term chronic monotherapy (>4 hét) KONTRAINDIKÁLT (Leydig-downregulation rizikó)."
+    "note": "Mid-cycle: 250-500 IU 2-3x/hét × ciklus-hossz (atrófia-prevention). PCT-blast: 1500-2500 IU EOD × 10-14 nap (HPTA-restart bridge). Post-PCT rescue: 1500 IU 2x/hét × 4 hét (ha LH/FSH NEM helyreáll SERM-alone). Long-term chronic monotherapy (>4 hét) KONTRAINDIKÁLT (Leydig-downregulation rizikó)."
   },
   "bloodwork": {
     "preCycle": {

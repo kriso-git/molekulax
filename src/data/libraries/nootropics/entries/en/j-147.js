@@ -23,7 +23,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Salk Institute curcumin derivative, mitochondrial ATP5A modulator, BDNF inducer.",
-  "description": "J-147 was developed at the Salk Institute Cellular Neurobiology Laboratory in 2011 (David Schubert group) via synthetic optimization of curcumin. The 2018 target-identification paper (PMID 30733413) named **ATP-synthase F1 subunit (ATP5A)** as the compound`s direct binding site, modulating mitochondrial ATP production and triggering an antioxidant + neurotrophic cascade. In mouse Alzheimer`s models (3xTg-AD, APP/PS1) it **reduces amyloid-β and tau pathology, improves cognitive function** (Morris water maze, novel object recognition). The 2011 PLoS One paper (PMID 22192054) demonstrates cognitive improvement in both aging and AD models. Abrexa Pharmaceuticals initiated a Phase 1 human trial in 2019. Long-term human safety data is lacking.",
+  "description": "J-147 was developed at the Salk Institute Cellular Neurobiology Laboratory in 2011 (David Schubert group) via synthetic optimization of curcumin. The 2018 target-identification paper (PMID 30733413) named ATP-synthase F1 subunit (ATP5A) as the compound`s direct binding site, modulating mitochondrial ATP production and triggering an antioxidant + neurotrophic cascade. In mouse Alzheimer`s models (3xTg-AD, APP/PS1) it reduces amyloid-β and tau pathology, improves cognitive function (Morris water maze, novel object recognition). The 2011 PLoS One paper (PMID 22192054) demonstrates cognitive improvement in both aging and AD models. Abrexa Pharmaceuticals initiated a Phase 1 human trial in 2019. Long-term human safety data is lacking.",
   "keyInfo": [
     {
       "label": "Mechanism",

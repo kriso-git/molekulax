@@ -26,7 +26,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Designer prohormon. Silny agonista AR z wysoką hepatotoksycznością.",
-  "description": "Methylstenbolone (M-Sten, Ultradrol, Methyl-D) to **designer prohormon o strukturze chemicznej 2β,17β-dimetylo-2,3α-epitio-5α-androstanu**. Grupa 2,3α-epitio zastępuje aromatyzowalny pierścień A → brak konwersji do E2, stąd czysty suchy/twardy profil. W USA sprzedawany 2008-2012 jako suplement diety pod markami Iron Mag Labs Ultradrol, Antaeus Labs Methyl-D i in. Listy ostrzegawcze FDA 2012-2013 do wielu producentów, następnie **DASCA 2014** zaklasyfikowała jako Schedule III. Analiza serii przypadków **Robles-Diaz 2015 (Liver Int, PMID 25867306)** udokumentowała piorunujące cholestatyczne zapalenie wątroby przy 5-15 mg/dzień w 3-6 tygodni u zdrowych młodych mężczyzn, z kilkoma przypadkami przeszczepu wątroby. Wysoka hepatotoksyczność, efekty prostaty bardziej wyraźne niż Superdrol.",
+  "description": "Methylstenbolone (M-Sten, Ultradrol, Methyl-D) to designer prohormon o strukturze chemicznej 2β,17β-dimetylo-2,3α-epitio-5α-androstanu. Grupa 2,3α-epitio zastępuje aromatyzowalny pierścień A → brak konwersji do E2, stąd czysty suchy/twardy profil. W USA sprzedawany 2008-2012 jako suplement diety pod markami Iron Mag Labs Ultradrol, Antaeus Labs Methyl-D i in. Listy ostrzegawcze FDA 2012-2013 do wielu producentów, następnie DASCA 2014 zaklasyfikowała jako Schedule III. Analiza serii przypadków Robles-Diaz 2015 (Liver Int, PMID 25867306) udokumentowała piorunujące cholestatyczne zapalenie wątroby przy 5-15 mg/dzień w 3-6 tygodni u zdrowych młodych mężczyzn, z kilkoma przypadkami przeszczepu wątroby. Wysoka hepatotoksyczność, efekty prostaty bardziej wyraźne niż Superdrol.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -41,7 +41,7 @@ export default {
       "value": "USA: kontrolowany od 2014."
     }
   ],
-  "mechanism": "Silny agonista AR. **Selektywność AR**: grupa 2,3α-epitio blokuje powinowactwo do aromatazy ORAZ konwersję 5α-reduktazą, dając czysty profil agonisty AR (brak konwersji do E2 ani DHT). **SYMETRYCZNY stosunek 660:660 oznacza, że androgenność prostaty jest TAK SAMO SILNA jak efekt anaboliczny** – stąd efekty prostaty (trądzik, agresja, łysienie androgenne, przerost) bardziej wyraźne niż Superdrol (400:20). Grupa 17α-metylowa zapewnia biodostępność, ale powoduje hepatotoksyczność.",
+  "mechanism": "Silny agonista AR. Selektywność AR: grupa 2,3α-epitio blokuje powinowactwo do aromatazy ORAZ konwersję 5α-reduktazą, dając czysty profil agonisty AR (brak konwersji do E2 ani DHT). SYMETRYCZNY stosunek 660:660 oznacza, że androgenność prostaty jest TAK SAMO SILNA jak efekt anaboliczny – stąd efekty prostaty (trądzik, agresja, łysienie androgenne, przerost) bardziej wyraźne niż Superdrol (400:20). Grupa 17α-metylowa zapewnia biodostępność, ale powoduje hepatotoksyczność.",
   "legalStatus": "USA: kontrolowany od 2014. UE: nielegalny bez recepty. WADA: zakazany.",
   "onsetTime": "7-10 days",
   "halfLife": "8-12 h",

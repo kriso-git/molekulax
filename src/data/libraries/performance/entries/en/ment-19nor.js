@@ -120,19 +120,19 @@ export default {
     "preCycle": {
       "label": "Pre-cycle",
       "timing": "2-4 weeks before cycle start",
-      "markers": "Hormone panel: Total T, Free T, E2, LH, FSH, SHBG, **Prolactin (critical due to PR activity in 19-Nor framework)**, macroprolactin screen. Lipid panel. Hepatic. PSA. Spermiogram (for fatherhood planners).",
+      "markers": "Hormone panel: Total T, Free T, E2, LH, FSH, SHBG, Prolactin (critical due to PR activity in 19-Nor framework), macroprolactin screen. Lipid panel. Hepatic. PSA. Spermiogram (for fatherhood planners).",
       "purpose": "Prolactin baseline + macroprolactin critical due to PR activity. Spermiogram baseline if fatherhood relevant."
     },
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Week 3-4",
-      "markers": "**Prolactin (primary cabergoline trigger)**, E2, Total T, lipid panel, hepatic.",
+      "markers": "Prolactin (primary cabergoline trigger), E2, Total T, lipid panel, hepatic.",
       "purpose": "Prolactin >25 ng/mL → cabergoline dose escalation. PR activity monitoring critical in 19-Nor framework."
     },
     "postCycle": {
       "label": "PCT (Post-Cycle Therapy)",
       "timing": "Last dose: Ac +2-3 days, Enan +14-21 days PCT start",
-      "markers": "Total T, Free T, LH, FSH, E2, SHBG, **Prolactin (recovery, 6-12 months)**, lipid recovery, spermiogram if fertility relevant.",
+      "markers": "Total T, Free T, LH, FSH, E2, SHBG, Prolactin (recovery, 6-12 months), lipid recovery, spermiogram if fertility relevant.",
       "purpose": "HPTA + PR-axis recovery verification. Spermatogenesis recovery 6-12 months due to PR activity."
     },
     "cruise": {

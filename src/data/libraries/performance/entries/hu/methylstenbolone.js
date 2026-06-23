@@ -26,7 +26,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Designer prohormon (2,3α-epitio-17α-methylstenbolone). Erős AR-agonista, magas hepatotoxicitással.",
-  "description": "A Methylstenbolone (M-Sten, Ultradrol, Methyl-D) egy **designer prohormon kémiai szerkezete: 2β,17β-dimetil-2,3α-epitio-5α-androsztán**. A 2,3α-epithio-csoport pótolja az aromatizálható A-gyűrűt → nincs E2-konverzió, ezért tiszta száraz/kemény izomprofil. Az USA-ban 2008-2012 között Iron Mag Labs Ultradrol, Antaeus Labs Methyl-D és más márkanevek alatt dietary supplement-ként árulták. FDA warning letters 2012-2013 között több gyártóhoz, majd a **DASCA 2014** Schedule III-as kontrollált szerré minősítette. A **Robles-Diaz 2015 (Liver Int, PMID 25867306)** dokumentált acute liver failure case-sorozat-elemzés szerint 5-15 mg/nap dózison 3-6 hét alatt fulmináns cholesztatikus hepatitis fejlődött ki egészséges fiatal férfiakon, néhány eset májtranszplantációhoz vezetett. Hepatotoxicitás magas (17α-metilezett orális), prosztata-mellékhatások markánsabbak mint a Superdrol-nál.",
+  "description": "A Methylstenbolone (M-Sten, Ultradrol, Methyl-D) egy designer prohormon kémiai szerkezete: 2β,17β-dimetil-2,3α-epitio-5α-androsztán. A 2,3α-epithio-csoport pótolja az aromatizálható A-gyűrűt → nincs E2-konverzió, ezért tiszta száraz/kemény izomprofil. Az USA-ban 2008-2012 között Iron Mag Labs Ultradrol, Antaeus Labs Methyl-D és más márkanevek alatt dietary supplement-ként árulták. FDA warning letters 2012-2013 között több gyártóhoz, majd a DASCA 2014 Schedule III-as kontrollált szerré minősítette. A Robles-Diaz 2015 (Liver Int, PMID 25867306) dokumentált acute liver failure case-sorozat-elemzés szerint 5-15 mg/nap dózison 3-6 hét alatt fulmináns cholesztatikus hepatitis fejlődött ki egészséges fiatal férfiakon, néhány eset májtranszplantációhoz vezetett. Hepatotoxicitás magas (17α-metilezett orális), prosztata-mellékhatások markánsabbak mint a Superdrol-nál.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -41,7 +41,7 @@ export default {
       "value": "USA: DASCA 2014 kontrollált. EU: nem szabályozott egységesen."
     }
   ],
-  "mechanism": "AR-receptor erős agonista. **AR-szelektivitás**: a 2,3α-epithio-csoport blokkolja az aromatáz-affinitást ÉS a 5α-reduktáz-konverziót, ezért tiszta-AR-agonista profil (sem E2, sem DHT konverzió). **A 660:660 SZIMMETRIKUS arány azt jelenti, hogy a prosztata-androgenicitás ANNYIRA ERŐS, mint az anabolikus hatás** – ezért a prosztata-mellékhatások (akne, agresszió, androgenikus hajhullás, prosztata-hipertrófia) markánsabbak mint a Superdrol-nál (400:20 arány). 17α-metil-csoport miatt orálisan biológiailag hozzáférhető, de hepatotoxikus.",
+  "mechanism": "AR-receptor erős agonista. AR-szelektivitás: a 2,3α-epithio-csoport blokkolja az aromatáz-affinitást ÉS a 5α-reduktáz-konverziót, ezért tiszta-AR-agonista profil (sem E2, sem DHT konverzió). A 660:660 SZIMMETRIKUS arány azt jelenti, hogy a prosztata-androgenicitás ANNYIRA ERŐS, mint az anabolikus hatás – ezért a prosztata-mellékhatások (akne, agresszió, androgenikus hajhullás, prosztata-hipertrófia) markánsabbak mint a Superdrol-nál (400:20 arány). 17α-metil-csoport miatt orálisan biológiailag hozzáférhető, de hepatotoxikus.",
   "legalStatus": "USA: DASCA 2014 óta kontrollált. EU: nem szabályozott egységesen, vény nélkül illegális. WADA: tiltott.",
   "onsetTime": "7-10 days",
   "halfLife": "8-12 h",

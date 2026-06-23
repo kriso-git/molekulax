@@ -43,7 +43,7 @@ export default {
   "halfLifeActive": "~24-36 h",
   "interactionsWith": ["rad-140", "ostarine", "milk-thistle", "tudca"],
   "aromatization": "NIE – LGD-4033 niesterydowy, NIE substrat CYP19. E2 nie wzrasta (Basaria 2013 PMID 23413266 – E2 nie wzrosło znacząco przy 1 mg/dzień).",
-  "hepatotoxicity": "**WYSOKA – 12+ udokumentowanych raportów hepatocellular injury (Vilaca 2018 PMID 30171122 SARM-DILI review). Hilal 2020 PMID 32492288 RAD+LGD stack piorunujące DILI po 9 tygodniach.** Wzrost ALT/AST już umiarkowany w Fazie I (~2x norma) przy dawce 1 mg/dzień; przy dawkach UGL (10-20 mg/dzień) cięższy. TUDCA + milk-thistle + miesięczne ALT/AST OBOWIĄZKOWE.",
+  "hepatotoxicity": "WYSOKA – 12+ udokumentowanych raportów hepatocellular injury (Vilaca 2018 PMID 30171122 SARM-DILI review). Hilal 2020 PMID 32492288 RAD+LGD stack piorunujące DILI po 9 tygodniach. Wzrost ALT/AST już umiarkowany w Fazie I (~2x norma) przy dawce 1 mg/dzień; przy dawkach UGL (10-20 mg/dzień) cięższy. TUDCA + milk-thistle + miesięczne ALT/AST OBOWIĄZKOWE.",
   "wadaStatus": "banned",
   "androgenicRatio": "~70:40 (selektywność mięsień:prostata – mniejsza niż RAD-140, ale lepsza niż klasyczne AAS).",
   "bindingAffinity": "Niesterydowy SARM, powinowactwo AR-binding ~50-70% poziomu testosteronu in vitro. Selektywna konformacja tkankowa: silny agonista w mięśniu, umiarkowana aktywność prostaty.",
@@ -56,7 +56,7 @@ export default {
     "Długi okres półtrwania → dawkowanie raz dziennie"
   ],
   "quickStart": [
-    "**HEPATOTOKSYCZNOŚĆ OBOWIĄZKOWE MONITOROWANIE**: 12+ udokumentowanych raportów DILI (Vilaca 2018). TUDCA 500 mg/dzień + milk-thistle 300 mg/dzień + miesięczne ALT/AST OBOWIĄZKOWE",
+    "HEPATOTOKSYCZNOŚĆ OBOWIĄZKOWE MONITOROWANIE: 12+ udokumentowanych raportów DILI (Vilaca 2018). TUDCA 500 mg/dzień + milk-thistle 300 mg/dzień + miesięczne ALT/AST OBOWIĄZKOWE",
     "Dawka: 5-10 mg/dzień, max 8 tygodni cyklu (Basaria 2013 Faza I capped at 1 mg max; anegdoty UGL 10-20 mg, ale ryzyko DILI rośnie proporcjonalnie)",
     "Supresja HPTA zależna od dawki, pełna przy dawkach UGL → PCT (Clomid + Nolvadex 4-6 tygodni) obowiązkowe",
     "Zakazany WADA przez cały rok (2-4 tygodnie detekcja w moczu)",
@@ -74,7 +74,7 @@ export default {
       "Wszystko UGL – brak formatu Rx"
     ],
     "caution": [
-      "**Hepatotoksyczność – 12+ udokumentowanych raportów DILI (Vilaca 2018 PMID 30171122 review)**",
+      "Hepatotoksyczność – 12+ udokumentowanych raportów DILI (Vilaca 2018 PMID 30171122 review)",
       "Pełna supresja HPTA przy dawkach UGL",
       "Zaburzenia lipidowe (spadek HDL ~30-40%)",
       "PCT 4-6 tygodni OBOWIĄZKOWE",
@@ -102,7 +102,7 @@ export default {
     {"title": "Drug-induced liver injury from selective androgen receptor modulators, anabolic-androgenic steroids and bodybuilding supplements in Australia.", "authors": "Nash E, Nicoll A, Batt N, Iser D, Sood S", "journal": "Intern Med J", "pmid": "38372012"}
   ],
   "faq": [
-    {"q": "Jaki jest wynik Basaria 2013 Faza I?", "a": "Basaria 2013 PMID 23413266: 76 zdrowych mężczyzn, 3 tygodnie, dose-escalation 0,1 / 0,3 / 1 mg/dzień doustnie LGD-4033 vs placebo. Wyniki: (1) wzrost lean body mass zależny od dawki: 0,75 kg @ 0,3 mg, **1,21 kg @ 1 mg** (placebo +0,18 kg); (2) HPTA: Total T -23%, LH -47%, FSH -42% przy 1 mg; (3) Wątrobowy: umiarkowany wzrost ALT przy 1 mg (~2x norma vs baseline); (4) Lipidowy: umiarkowany spadek HDL. **Krytyczne**: badanie kliniczne capped at 1 mg/dzień; kontekst UGL kulturystyki pracuje przy dawkach 10-20 mg/dzień (10-20x klinicznie testowane), gdzie ryzyko DILI eskaluje (Vilaca 2018 raporty przypadków). Dawka kliniczna precedensowa ≠ dawka kontekstu UGL kulturystyki."},
+    {"q": "Jaki jest wynik Basaria 2013 Faza I?", "a": "Basaria 2013 PMID 23413266: 76 zdrowych mężczyzn, 3 tygodnie, dose-escalation 0,1 / 0,3 / 1 mg/dzień doustnie LGD-4033 vs placebo. Wyniki: (1) wzrost lean body mass zależny od dawki: 0,75 kg @ 0,3 mg, 1,21 kg @ 1 mg (placebo +0,18 kg); (2) HPTA: Total T -23%, LH -47%, FSH -42% przy 1 mg; (3) Wątrobowy: umiarkowany wzrost ALT przy 1 mg (~2x norma vs baseline); (4) Lipidowy: umiarkowany spadek HDL. Krytyczne: badanie kliniczne capped at 1 mg/dzień; kontekst UGL kulturystyki pracuje przy dawkach 10-20 mg/dzień (10-20x klinicznie testowane), gdzie ryzyko DILI eskaluje (Vilaca 2018 raporty przypadków). Dawka kliniczna precedensowa ≠ dawka kontekstu UGL kulturystyki."},
     {"q": "LGD-4033 vs RAD-140 – porównanie?", "a": "Oba niesterydowe SARMy, podobne ryzyko hepatotoksyczności (RAD-140 6, LGD 12 udokumentowanych raportów DILI). Różnice: (1) powinowactwo AR-binding: RAD-140 ~80%, LGD ~50-70% – RAD silniejszy in vitro; (2) Selektywność: RAD lepiej-selektywny mięsień > prostata, LGD bardziej umiarkowany; (3) Precedens badania klinicznego: LGD ma Fazę I u zdrowych mężczyzn (Basaria 2013), RAD-140 tylko cachexia Faza II (Flores 2020); (4) Profil wątrobowy: LGD łagodniejszy (Faza I 2x ALT przy 1 mg), RAD silniej hepatotoksyczny przy wysokich dawkach (Hilal 2020 piorunujące przy 30 mg). UGL anegdotyczne: RAD 'silniejszy' (większy wzrost mięśni), LGD 'łagodniejszy' (mniejsza supresja HPTA + skutki uboczne)."},
     {"q": "Badanie kliniczne 1 mg vs UGL 10-20 mg – bezpieczne?", "a": "NIE zwalidowane klinicznie. Basaria 2013 Faza I testowała wskazania kliniczne przy 1 mg/dzień (osiągalny wzrost lean mass z baseline'u zdrowego). Kontekst UGL kulturystyki pracuje przy 10-20 mg/dzień – to 10-20x dawka kliniczna. W Vilaca 2018 PMID 30171122 SARM-DILI review 12 przypadków hepatocellular injury związanych z LGD WSZYSTKIE wydarzyły się przy wysokich dawkach UGL (5-20 mg/dzień). Precedens kliniczny NIE jest ekstrapolowany na dawkę UGL dla bezpieczeństwa. Jeśli używasz LGD: 5 mg/dzień to skromna dawka początkowa, max 10 mg/dzień, max 8 tygodni, obowiązkowe TUDCA + miesięczne ALT/AST."},
     {"q": "Detekcja WADA dla LGD-4033?", "a": "WADA zakazało SARMów od 2008 (S1.2 – inne środki anaboliczne). Detekcja LGD-4033 w moczu: 2-4 tygodnie przez LC-MS/MS (akredytowane WADA). Klasyczny przypadek precedensowy: 2015 Will Grier (Florida Gators QB, później NFL) LGD-pozytywny test, roczna suspensja. Wielu sportowców było LGD-pozytywnych w testach przygotowawczych Igrzysk Tokio 2020. Współczesna czułość detekcji jest wysoka – dla sportowców wyczynowych ABSOLUTNIE do unikania."}
@@ -124,7 +124,7 @@ export default {
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Tygodnie 2, 4, 6",
-      "markers": "**ALT/AST/GGT** (>3x norma → NATYCHMIASTOWE odstawienie), lipidowy, hormon (monitor supresji HPTA).",
+      "markers": "ALT/AST/GGT (>3x norma → NATYCHMIASTOWE odstawienie), lipidowy, hormon (monitor supresji HPTA).",
       "purpose": "Monitor wątrobowy KRYTYCZNY. SARM-DILI szybka progresja (Vilaca 2018 review)."
     },
     "postCycle": {

@@ -63,7 +63,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NO – non-steroidal, NOT a CYP19 substrate. E2 does not rise (Dalton 2011 Phase II).",
-  "hepatotoxicity": "**Moderate-high – 4+ documented hepatocellular injury case reports (Vilaca 2018 PMID 30171122). In clinical trials (Dalton 2011, Crawford 2016) ALT/AST elevation moderate (~1.5-2x normal at 3 mg).** At UGL doses (20-30 mg/day) more severe. TUDCA + milk-thistle + monthly ALT/AST recommended (not strictly mandatory, but strongly suggested).",
+  "hepatotoxicity": "Moderate-high – 4+ documented hepatocellular injury case reports (Vilaca 2018 PMID 30171122). In clinical trials (Dalton 2011, Crawford 2016) ALT/AST elevation moderate (~1.5-2x normal at 3 mg). At UGL doses (20-30 mg/day) more severe. TUDCA + milk-thistle + monthly ALT/AST recommended (not strictly mandatory, but strongly suggested).",
   "wadaStatus": "banned",
   "androgenicRatio": "~50:20 (muscle:prostate selectivity – high, better than LGD).",
   "bindingAffinity": "Non-steroidal SARM, AR-binding affinity ~30-40% of testosterone-level in vitro. High tissue selectivity muscle > prostate (Dalton 2011 PMID 21833506).",
@@ -76,7 +76,7 @@ export default {
     "High muscle > prostate selectivity"
   ],
   "quickStart": [
-    "**Hepatotoxicity monitoring**: TUDCA 500 mg/day + milk-thistle 300 mg/day + monthly ALT/AST recommended (Vilaca 2018 review noted 4 DILI cases)",
+    "Hepatotoxicity monitoring: TUDCA 500 mg/day + milk-thistle 300 mg/day + monthly ALT/AST recommended (Vilaca 2018 review noted 4 DILI cases)",
     "Dose: 12.5-25 mg/day, max 8-week cycle (clinical 3 mg, UGL anecdotes 10-25 mg)",
     "HPTA suppression moderate, PCT (Clomid + Nolvadex 4 weeks) recommended at high doses",
     "WADA-banned year-round (2-4 week urinary detection) – most common cause of NFL/MLB suspensions",
@@ -158,7 +158,7 @@ export default {
   "faq": [
     {
       "q": "Why did Phase III POWER trial fail?",
-      "a": "GTx Inc Phase III POWER 1+2 trials (NCT01355484/NCT01355497, 2013-2016, ~600 NSCLC cachexia patients, 3 mg/day Ostarine vs placebo): the co-primary endpoint **lean body mass + physical function (stair-climb power)** TOGETHER did NOT reach statistical significance. Lean body mass rose (+1.5 kg vs placebo), but physical function endpoint did not reach the clinical-meaningfulness threshold. FDA did NOT approve. After 2016 GTx discontinued Ostarine cachexia development, later focusing on breast cancer adjunct + urinary incontinence (Asahi 2018 Phase II) indications. Crawford 2016 PMID 26944362 provides detailed trial design + results."
+      "a": "GTx Inc Phase III POWER 1+2 trials (NCT01355484/NCT01355497, 2013-2016, ~600 NSCLC cachexia patients, 3 mg/day Ostarine vs placebo): the co-primary endpoint lean body mass + physical function (stair-climb power) TOGETHER did NOT reach statistical significance. Lean body mass rose (+1.5 kg vs placebo), but physical function endpoint did not reach the clinical-meaningfulness threshold. FDA did NOT approve. After 2016 GTx discontinued Ostarine cachexia development, later focusing on breast cancer adjunct + urinary incontinence (Asahi 2018 Phase II) indications. Crawford 2016 PMID 26944362 provides detailed trial design + results."
     },
     {
       "q": "Why is Ostarine a 'softer' SARM than RAD/LGD?",
@@ -170,7 +170,7 @@ export default {
     },
     {
       "q": "Can Ostarine be stacked with RAD-140 or LGD-4033?",
-      "a": "**NOT recommended.** Hilal 2020 PMID 32492288 case report featured RAD+LGD stack developing fulminant DILI after 9 weeks – cumulative hepatotoxicity. Ostarine would be relatively 'mild' in a SARM stack, but the combination risk (CYP3A4 saturation for reactive metabolites) is severe. If multiple SARMs are desired, better in sequence (8 weeks one, 8 weeks PCT, 8 weeks another) than parallel. No clinical precedent for stack."
+      "a": "NOT recommended. Hilal 2020 PMID 32492288 case report featured RAD+LGD stack developing fulminant DILI after 9 weeks – cumulative hepatotoxicity. Ostarine would be relatively 'mild' in a SARM stack, but the combination risk (CYP3A4 saturation for reactive metabolites) is severe. If multiple SARMs are desired, better in sequence (8 weeks one, 8 weeks PCT, 8 weeks another) than parallel. No clinical precedent for stack."
     }
   ],
   "related": [

@@ -64,7 +64,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NO – RAD-140 non-steroidal, NOT a CYP19 substrate. E2 does not rise (Bhasin 2012 PMID 22573713). This is a SARM advantage: no gyno risk via the E2 mechanism.",
-  "hepatotoxicity": "**HIGH – 6 documented hepatocellular injury case reports 2017-2020 (Hilal 2020 PMID 32492288, Barbara 2020 PMID 33068441). ALT/AST >10x normal, some near transplant-level.** Hepatotoxicity mechanism mitochondrial dysfunction + reactive metabolite (Solomon 2019 PMID 31077635 review). TUDCA + milk-thistle + monthly ALT/AST testing ABSOLUTELY mandatory.",
+  "hepatotoxicity": "HIGH – 6 documented hepatocellular injury case reports 2017-2020 (Hilal 2020 PMID 32492288, Barbara 2020 PMID 33068441). ALT/AST >10x normal, some near transplant-level. Hepatotoxicity mechanism mitochondrial dysfunction + reactive metabolite (Solomon 2019 PMID 31077635 review). TUDCA + milk-thistle + monthly ALT/AST testing ABSOLUTELY mandatory.",
   "wadaStatus": "banned",
   "androgenicRatio": "~80:30 (muscle:prostate selectivity ratio Miller 2011 PMID 21953468 – AR binding assay vs rat bioassay). NOT a classical Test-proportional androgenic number.",
   "bindingAffinity": "Non-steroidal SARM, AR-binding affinity ~80% testosterone-level in vitro. Selective tissue conformation: agonist in muscle + bone, partially antagonist in prostate (Miller 2011 PMID 21953468).",
@@ -77,7 +77,7 @@ export default {
     "Long half-life → once-daily dosing"
   ],
   "quickStart": [
-    "**HEPATOTOXICITY MANDATORY MONITORING**: 6 documented DILI case reports (Hilal 2020 PMID 32492288). TUDCA 500 mg/day + milk-thistle 300 mg/day + monthly ALT/AST/GGT MINIMUM",
+    "HEPATOTOXICITY MANDATORY MONITORING: 6 documented DILI case reports (Hilal 2020 PMID 32492288). TUDCA 500 mg/day + milk-thistle 300 mg/day + monthly ALT/AST/GGT MINIMUM",
     "Dose: 10-20 mg/day, oral, max 8-week cycle (do not exceed 20 mg)",
     "HPTA suppression full after 6-8 weeks → PCT (Clomid + Nolvadex 4-6 weeks) mandatory",
     "WADA-banned year-round – competitive athletes must absolutely avoid (3-6 week urinary detection)",
@@ -104,7 +104,7 @@ export default {
       "All UGL – no Rx format currently"
     ],
     "caution": [
-      "**Hepatotoxicity – 6 documented DILI case reports (Hilal 2020, Barbara 2020, Solomon 2019 review)**",
+      "Hepatotoxicity – 6 documented DILI case reports (Hilal 2020, Barbara 2020, Solomon 2019 review)",
       "Full HPTA suppression after 6-8 weeks (PCT 4-6 weeks mandatory)",
       "Lipid disturbance (HDL drop ~30-50%)",
       "Mood changes (anecdotal 'aggression increase')",
@@ -200,7 +200,7 @@ export default {
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Weeks 2, 4, 6",
-      "markers": "**ALT/AST/GGT** (>3x normal → IMMEDIATE discontinuation), lipid panel, hormone (HPTA suppression monitor), hospital evaluation if bilirubin rises.",
+      "markers": "ALT/AST/GGT (>3x normal → IMMEDIATE discontinuation), lipid panel, hormone (HPTA suppression monitor), hospital evaluation if bilirubin rises.",
       "purpose": "Hepatic monitoring CRITICAL. SARM-induced DILI rapid-progression cases documented (Hilal 2020 – fulminant at 9 weeks)."
     },
     "postCycle": {

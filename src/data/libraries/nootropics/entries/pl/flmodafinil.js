@@ -25,7 +25,7 @@ export default {
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Bisfluoromodafinil (CRL-40,940), około 3× silniejszy in vivo.",
-  "description": "Flmodafinil (CRL-40,940, lauflumid) to bis-(p-fluoro) fenylowa pochodna racemiczna modafinilu. Modele zwierzęce opisują ~3× wyższą potencję in vivo; jego rozpuszczalność w wodzie i biodostępność są lepsze niż modafinilu. W badaniach klinicznych jest **lepiej tolerowany niż modafinil z mniejszą liczbą działań niepożądanych typu adrenergicznego** i **mniejszym negatywnym wpływem na architekturę snu** (PMC 6104159). Mechanizm: nietypowe hamowanie DAT (profil podobny do metylofenidatu) uzupełnione modulacją oreksyny/histaminy. Mniej interakcji z enzymami CYP niż modafinil (PMID 38852786) → mniej interakcji lekowych. Przeprowadzono badania fazy 1 u ludzi, ale nie jest zatwierdzonym lekiem. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act.",
+  "description": "Flmodafinil (CRL-40,940, lauflumid) to bis-(p-fluoro) fenylowa pochodna racemiczna modafinilu. Modele zwierzęce opisują ~3× wyższą potencję in vivo; jego rozpuszczalność w wodzie i biodostępność są lepsze niż modafinilu. W badaniach klinicznych jest lepiej tolerowany niż modafinil z mniejszą liczbą działań niepożądanych typu adrenergicznego i mniejszym negatywnym wpływem na architekturę snu (PMC 6104159). Mechanizm: nietypowe hamowanie DAT (profil podobny do metylofenidatu) uzupełnione modulacją oreksyny/histaminy. Mniej interakcji z enzymami CYP niż modafinil (PMID 38852786) → mniej interakcji lekowych. Przeprowadzono badania fazy 1 u ludzi, ale nie jest zatwierdzonym lekiem. Zakazany w Wielkiej Brytanii na mocy Psychoactive Substances Act.",
   "keyInfo": [
     {
       "label": "Mechanizm",

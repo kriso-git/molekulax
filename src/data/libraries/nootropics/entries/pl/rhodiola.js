@@ -23,7 +23,7 @@ export default {
   "accentColor": "#84cc16",
   "tagColor": "rgba(132,204,22,0.18)",
   "shortDesc": "Arktyczny korzeń, salidrozyd + rozawina, adaptogen przeciwzmęczeniowy.",
-  "description": "Rhodiola rosea (arktyczny korzeń, „złoty korzeń\") to zioło przeciwzmęczeniowe stosowane od stuleci przez ludność arktycznych wyżyn. Jej aktywnymi składnikami są salidrozyd (glikozyd tyrozolowy) i grupa rozawinowa – zalecany **standaryzowany ekstrakt o stosunku 3% rozawiny / 1% salidrozydu** (rosyjska tradycja Rosenroot). Dowody z RCT: Olsson 2009 (PMID 19367259) **poprawa w łagodnej-umiarkowanej depresji bez sertraliny**, Edwards 2012 (PMID 22228617) **zespół zmęczenia związany ze stresem**, Hung 2011 (PMID 21366835) zmniejszenie zmęczenia fizycznego. Efekt ostry odczuwalny po pojedynczej dawce 200-400 mg (vs. Bacopa wymagająca 8-12 tygodni kursu). Idealna w połączeniu z niską dawką kofeiny przeciw zmęczeniu psychicznemu.",
+  "description": "Rhodiola rosea (arktyczny korzeń, „złoty korzeń\") to zioło przeciwzmęczeniowe stosowane od stuleci przez ludność arktycznych wyżyn. Jej aktywnymi składnikami są salidrozyd (glikozyd tyrozolowy) i grupa rozawinowa – zalecany standaryzowany ekstrakt o stosunku 3% rozawiny / 1% salidrozydu (rosyjska tradycja Rosenroot). Dowody z RCT: Olsson 2009 (PMID 19367259) poprawa w łagodnej-umiarkowanej depresji bez sertraliny, Edwards 2012 (PMID 22228617) zespół zmęczenia związany ze stresem, Hung 2011 (PMID 21366835) zmniejszenie zmęczenia fizycznego. Efekt ostry odczuwalny po pojedynczej dawce 200-400 mg (vs. Bacopa wymagająca 8-12 tygodni kursu). Idealna w połączeniu z niską dawką kofeiny przeciw zmęczeniu psychicznemu.",
   "keyInfo": [
     {
       "label": "Mechanizm",

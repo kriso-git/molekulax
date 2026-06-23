@@ -28,7 +28,7 @@ export default {
   "accentColor": "#9333ea",
   "tagColor": "rgba(147,51,234,0.18)",
   "shortDesc": "Szintetikus szteroid-szerű SARM, EGYEDÜLI compound dual-mechanizmussal: AR-agonista + myostatin-pathway inhibitor (follistatin-felregulálás, Kanno 2013 PMID 23291286). UGL-marketing 'natural-cap-feltöréshez' – DE hepatotoxicitás-jelek + 17α-szteroid-szerű profil. WADA tiltott.",
-  "description": "Az YK-11 (kémiailag 17α-(metoxikarbonil)-5α-androst-(17,3:17,1)-bisz-pyranone-analoghoz közeli szteroid-szerű váz, NEM klasszikus non-szteroidal SARM!) egy szintetikus szteroid-derivátum-alapú szelektív androgén-receptor-modulátor, amelyet Kanno és kollégái fejlesztettek 2011-ben (Kanno 2011 PMID 21893547). Egyedülálló az SARM-osztályban két okból: (1) **strukturálisan szteroid-szerű** (NEM aril-propionamid mint RAD/LGD/Ostarine), 5α-androsztán-váz 17α-metoxikarbonil-szubsztitúcióval; (2) **dual-mechanizmusú**: AR-agonista (in vitro AR-binding ~50% testosterone) + **myostatin-pathway inhibitor a follistatin-felregulálás (Kanno 2013 PMID 23291286) C2C12 myoblast-sejteken** – a myostatin natural-cap-szerű izomtömeg-limitációt blokkolja. Klinikai trial 2024-ig nincs (Phase 0 in vitro + rat-bioassay only). Bodybuilding-piacon UGL-marketing 'natural-cap-feltöréshez' (myostatin-mechanizmus hype) – DE Yatsu 2018 PMID 30005896 in vitro újra-tesztelése a follistatin-effekt skálázhatóságát kérdésessé tette in vivo emberben. Hepatotoxicitás-rizikó: a 17α-szteroid-szerű váz miatt 17α-alkilálthoz hasonló profil várható (Solomon 2019 PMID 31077635 SARM-DILI review – 2 dokumentált YK-asszociált hepatocellular injury eset). WADA tiltott egész évben (S1.2 – egyéb anabolic agent). NEM aromatizál (Δ4,9-trien-struktúra blokk).",
+  "description": "Az YK-11 (kémiailag 17α-(metoxikarbonil)-5α-androst-(17,3:17,1)-bisz-pyranone-analoghoz közeli szteroid-szerű váz, NEM klasszikus non-szteroidal SARM!) egy szintetikus szteroid-derivátum-alapú szelektív androgén-receptor-modulátor, amelyet Kanno és kollégái fejlesztettek 2011-ben (Kanno 2011 PMID 21893547). Egyedülálló az SARM-osztályban két okból: (1) strukturálisan szteroid-szerű (NEM aril-propionamid mint RAD/LGD/Ostarine), 5α-androsztán-váz 17α-metoxikarbonil-szubsztitúcióval; (2) dual-mechanizmusú: AR-agonista (in vitro AR-binding ~50% testosterone) + myostatin-pathway inhibitor a follistatin-felregulálás (Kanno 2013 PMID 23291286) C2C12 myoblast-sejteken – a myostatin natural-cap-szerű izomtömeg-limitációt blokkolja. Klinikai trial 2024-ig nincs (Phase 0 in vitro + rat-bioassay only). Bodybuilding-piacon UGL-marketing 'natural-cap-feltöréshez' (myostatin-mechanizmus hype) – DE Yatsu 2018 PMID 30005896 in vitro újra-tesztelése a follistatin-effekt skálázhatóságát kérdésessé tette in vivo emberben. Hepatotoxicitás-rizikó: a 17α-szteroid-szerű váz miatt 17α-alkilálthoz hasonló profil várható (Solomon 2019 PMID 31077635 SARM-DILI review – 2 dokumentált YK-asszociált hepatocellular injury eset). WADA tiltott egész évben (S1.2 – egyéb anabolic agent). NEM aromatizál (Δ4,9-trien-struktúra blokk).",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",
@@ -51,7 +51,7 @@ export default {
       "value": "Sosem volt Rx. UGL 'research chemical'. WADA tiltott S1.2."
     }
   ],
-  "mechanism": "YK-11 dual-mechanizmusú compound: (1) **AR-agonista** – in vitro AR-binding affinitása ~50% testosterone-szintű (Kanno 2011 PMID 21893547), C2C12 myoblast-sejteken anabolikus-pathway upregulation; (2) **Myostatin-pathway inhibitor** – Kanno 2013 PMID 23291286 mutatta, hogy YK-11 a follistatin-géntermek upregulationját indukálja C2C12-en. A follistatin egy endogén myostatin-bindelő protein; ha follistatin emelkedik, a myostatin-mediated izomtömeg-limitáció (natural cap) gyengül. **In vitro mechanizmus IGAZOLT**, in vivo (rat-bioassay + emberben) szerepe NEM. Yatsu 2018 PMID 30005896 in vitro újrateszt eredményei kérdésessé tették a follistatin-effekt klinikai-meaningfulness-szintjét (kis effect-méret, dose-szenzitív). Strukturális 5α-androsztán-váz 17α-metoxikarbonil-csoporttal: ez 17α-szubsztitúciós CYP3A4-blokk-szerű karakter ad → hepatotoxicitás-rizikó hasonló mint klasszikus 17α-methyl AAS-eken. NEM aromatizál (Δ4,9-trien-konfiguráció CYP19-substrate-blokk). Solomon 2019 PMID 31077635 SARM-DILI review-ban 2 YK-asszociált hepatocellular injury eset dokumentálva.",
+  "mechanism": "YK-11 dual-mechanizmusú compound: (1) AR-agonista – in vitro AR-binding affinitása ~50% testosterone-szintű (Kanno 2011 PMID 21893547), C2C12 myoblast-sejteken anabolikus-pathway upregulation; (2) Myostatin-pathway inhibitor – Kanno 2013 PMID 23291286 mutatta, hogy YK-11 a follistatin-géntermek upregulationját indukálja C2C12-en. A follistatin egy endogén myostatin-bindelő protein; ha follistatin emelkedik, a myostatin-mediated izomtömeg-limitáció (natural cap) gyengül. In vitro mechanizmus IGAZOLT, in vivo (rat-bioassay + emberben) szerepe NEM. Yatsu 2018 PMID 30005896 in vitro újrateszt eredményei kérdésessé tették a follistatin-effekt klinikai-meaningfulness-szintjét (kis effect-méret, dose-szenzitív). Strukturális 5α-androsztán-váz 17α-metoxikarbonil-csoporttal: ez 17α-szubsztitúciós CYP3A4-blokk-szerű karakter ad → hepatotoxicitás-rizikó hasonló mint klasszikus 17α-methyl AAS-eken. NEM aromatizál (Δ4,9-trien-konfiguráció CYP19-substrate-blokk). Solomon 2019 PMID 31077635 SARM-DILI review-ban 2 YK-asszociált hepatocellular injury eset dokumentálva.",
   "legalStatus": "Soha nem volt Rx-jóváhagyva (Phase I emberben sem indult). UGL-piacon 'research chemical'. USA: Schedule III analog néhány államban (2018+). EU: nincs Rx. WADA tiltott egész évben (S1.2 – egyéb anabolic agent).",
   "onsetTime": "1-2 hét (anekdotikus UGL, klinikai precedens nincs)",
   "halfLife": "~6-10 h (orális, becsült in vitro-ból)",
@@ -63,7 +63,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NEM – Δ4,9-trien-konfiguráció blokk a CYP19-substrate-bindingre. E2 nem emelkedik.",
-  "hepatotoxicity": "**Magas várható – 17α-metoxikarbonil-szubsztitúciós szteroid-szerű váz, 17α-methyl AAS-szerű profil. Solomon 2019 PMID 31077635 SARM-DILI review-ban 2 dokumentált YK-asszociált hepatocellular injury eset.** TUDCA + milk-thistle + havi ALT/AST KÖTELEZŐ.",
+  "hepatotoxicity": "Magas várható – 17α-metoxikarbonil-szubsztitúciós szteroid-szerű váz, 17α-methyl AAS-szerű profil. Solomon 2019 PMID 31077635 SARM-DILI review-ban 2 dokumentált YK-asszociált hepatocellular injury eset. TUDCA + milk-thistle + havi ALT/AST KÖTELEZŐ.",
   "wadaStatus": "banned",
   "androgenicRatio": "Becsült 70-100:30-50 (in vitro AR-binding-affinitás + myostatin-blokk dual-effekt, NEM klasszikus rat-bioassay).",
   "bindingAffinity": "Steroidal SARM, AR-binding-affinitása ~50% testosterone-szintű in vitro (Kanno 2011). Dual-mechanizmus: AR-agonista + follistatin-upregulation (Kanno 2013 in C2C12).",
@@ -76,7 +76,7 @@ export default {
     "AR-agonista + myostatin-blokk dual-mechanizmus elméleti előnye"
   ],
   "quickStart": [
-    "**HEPATOTOXICITÁS – 17α-szteroid-szerű profil. TUDCA 500 mg/nap + milk-thistle 300 mg/nap + havi ALT/AST KÖTELEZŐ**",
+    "HEPATOTOXICITÁS – 17α-szteroid-szerű profil. TUDCA 500 mg/nap + milk-thistle 300 mg/nap + havi ALT/AST KÖTELEZŐ",
     "Dózis: 5-15 mg/nap, max 6-8 hét ciklus (UGL anekdoták, klinikai precedens nincs)",
     "HPTA-szuppresszió teljes 6 hét után → PCT (Clomid + Nolvadex 4-6 hét) kötelező",
     "WADA tiltott egész évben (3-5 hét vizelet-detection)",
@@ -103,7 +103,7 @@ export default {
       "Mind UGL – Rx-formátum nincs"
     ],
     "caution": [
-      "**Hepatotoxicitás 17α-szteroid-szerű – 2 dokumentált DILI eset (Solomon 2019)**",
+      "Hepatotoxicitás 17α-szteroid-szerű – 2 dokumentált DILI eset (Solomon 2019)",
       "Teljes HPTA-szuppresszió 6 hét után (PCT 4-6 hét kötelező)",
       "Lipid-zavar (HDL csökkenés ~30-50%)",
       "Klinikai precedens HIÁNYZIK – kezelni research-level compoundként",
@@ -162,7 +162,7 @@ export default {
     },
     {
       "q": "Myostatin-mechanizmus valós izomtömeg-előnyt ad?",
-      "a": "**Klinikailag NEM igazolt.** Kanno 2013 PMID 23291286 in vitro C2C12-myoblast-sejteken kimutatta a follistatin-felregulálást – DE az in vitro effect-méret kicsi, és a follistatin → myostatin-blokk in vivo emberben NEM lett tesztelve klinikai trial-okban. Yatsu 2018 PMID 30005896 review-ban a 'natural cap-feltörés' marketing-állítás kritikusan kezelt – anekdotikus UGL-jelentések 2-4 kg extra lean mass-t említenek, de kontroll-csoportos klinikai precedens nincs. A myostatin-blokk-koncepció szebb papíron mint emberi izomtömeg-gain-ben."
+      "a": "Klinikailag NEM igazolt. Kanno 2013 PMID 23291286 in vitro C2C12-myoblast-sejteken kimutatta a follistatin-felregulálást – DE az in vitro effect-méret kicsi, és a follistatin → myostatin-blokk in vivo emberben NEM lett tesztelve klinikai trial-okban. Yatsu 2018 PMID 30005896 review-ban a 'natural cap-feltörés' marketing-állítás kritikusan kezelt – anekdotikus UGL-jelentések 2-4 kg extra lean mass-t említenek, de kontroll-csoportos klinikai precedens nincs. A myostatin-blokk-koncepció szebb papíron mint emberi izomtömeg-gain-ben."
     },
     {
       "q": "YK-11 hepatotoxicitás vs klasszikus 17α-methyl AAS-ek?",
@@ -199,7 +199,7 @@ export default {
     "midCycle": {
       "label": "Ciklus közben",
       "timing": "2. és 4. és 6. hét",
-      "markers": "**ALT/AST/GGT** (>3x normál → AZONNAL leállítás), lipid, hormon (HPTA-szuppresszió monitor).",
+      "markers": "ALT/AST/GGT (>3x normál → AZONNAL leállítás), lipid, hormon (HPTA-szuppresszió monitor).",
       "purpose": "Hepatikus monitor KRITIKUS."
     },
     "postCycle": {

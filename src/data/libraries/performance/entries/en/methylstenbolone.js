@@ -26,7 +26,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Designer prohormone (2,3α-epithio-17α-methylstenbolone). Strong AR agonist with high hepatotoxicity.",
-  "description": "Methylstenbolone (M-Sten, Ultradrol, Methyl-D) is a **designer prohormone with chemical structure 2β,17β-dimethyl-2,3α-epithio-5α-androstane**. The 2,3α-epithio group replaces the aromatizable A-ring → no E2 conversion, hence a clean dry/hard muscle profile. In the US it was sold 2008-2012 as a dietary supplement under brand names like Iron Mag Labs Ultradrol, Antaeus Labs Methyl-D and others. FDA warning letters 2012-2013 targeted multiple manufacturers, then **DASCA 2014** classified it as Schedule III controlled. The **Robles-Diaz 2015 (Liver Int, PMID 25867306)** acute liver failure case-series analysis documented fulminant cholestatic hepatitis at 5-15 mg/day over 3-6 weeks in healthy young men, with several cases progressing to liver transplant. Hepatotoxicity high (17α-methylated oral), prostate side effects more pronounced than Superdrol.",
+  "description": "Methylstenbolone (M-Sten, Ultradrol, Methyl-D) is a designer prohormone with chemical structure 2β,17β-dimethyl-2,3α-epithio-5α-androstane. The 2,3α-epithio group replaces the aromatizable A-ring → no E2 conversion, hence a clean dry/hard muscle profile. In the US it was sold 2008-2012 as a dietary supplement under brand names like Iron Mag Labs Ultradrol, Antaeus Labs Methyl-D and others. FDA warning letters 2012-2013 targeted multiple manufacturers, then DASCA 2014 classified it as Schedule III controlled. The Robles-Diaz 2015 (Liver Int, PMID 25867306) acute liver failure case-series analysis documented fulminant cholestatic hepatitis at 5-15 mg/day over 3-6 weeks in healthy young men, with several cases progressing to liver transplant. Hepatotoxicity high (17α-methylated oral), prostate side effects more pronounced than Superdrol.",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -41,7 +41,7 @@ export default {
       "value": "USA: DASCA 2014 controlled. EU: not uniformly regulated."
     }
   ],
-  "mechanism": "Strong AR agonist. **AR selectivity**: the 2,3α-epithio group blocks both aromatase affinity AND 5α-reductase conversion, giving a clean AR-only agonist profile (no E2 or DHT conversion). **The SYMMETRIC 660:660 ratio means prostate androgenicity is AS STRONG as the anabolic effect** – so prostate side effects (acne, aggression, androgenic alopecia, prostate hypertrophy) are more pronounced than Superdrol (400:20 ratio). The 17α-methyl group provides oral bioavailability but causes hepatotoxicity.",
+  "mechanism": "Strong AR agonist. AR selectivity: the 2,3α-epithio group blocks both aromatase affinity AND 5α-reductase conversion, giving a clean AR-only agonist profile (no E2 or DHT conversion). The SYMMETRIC 660:660 ratio means prostate androgenicity is AS STRONG as the anabolic effect – so prostate side effects (acne, aggression, androgenic alopecia, prostate hypertrophy) are more pronounced than Superdrol (400:20 ratio). The 17α-methyl group provides oral bioavailability but causes hepatotoxicity.",
   "legalStatus": "USA: controlled since DASCA 2014. EU: not uniformly regulated, illegal without prescription. WADA: banned.",
   "onsetTime": "7-10 days",
   "halfLife": "8-12 h",
