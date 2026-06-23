@@ -24,7 +24,7 @@ export default {
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "Fluorinated Phenibut, more potent, more lipophilic GABA-B agonist variant.",
-  "description": "Fluorophenibut is an unofficial analog produced by para-fluoro substitution on the phenyl ring of Phenibut. Increased lipophilicity yields faster blood-brain-barrier penetration and **roughly 3-5× higher in vivo potency** (correspondingly ~50-100 mg active dose instead of 200-400 mg), but proportionally **higher tolerance and dependence risk**. No clinical trials exist, only a safety profile extrapolated from Phenibut`s pharmacology. ⚠️ The withdrawal syndrome can be more severe than Phenibut withdrawal → ER-level treatment cases documented. **Schedule II controlled in Alabama and Michigan (USA)**; banned in the UK under the Psychoactive Substances Act. Legal grey zone in other EU member states, sold as a \"research chemical\".",
+  "description": "Fluorophenibut is an unofficial analog produced by para-fluoro substitution on the phenyl ring of Phenibut. Increased lipophilicity yields faster blood-brain-barrier penetration and roughly 3-5× higher in vivo potency (correspondingly ~50-100 mg active dose instead of 200-400 mg), but proportionally higher tolerance and dependence risk. No clinical trials exist, only a safety profile extrapolated from Phenibut`s pharmacology. ⚠️ The withdrawal syndrome can be more severe than Phenibut withdrawal → ER-level treatment cases documented. Schedule II controlled in Alabama and Michigan (USA); banned in the UK under the Psychoactive Substances Act. Legal grey zone in other EU member states, sold as a \"research chemical\".",
   "keyInfo": [
     {
       "label": "Mechanism",

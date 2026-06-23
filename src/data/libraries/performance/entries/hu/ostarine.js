@@ -63,7 +63,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NEM – non-szteroidal, NEM CYP19-szubsztrát. E2 nem emelkedik (Dalton 2011 Phase II).",
-  "hepatotoxicity": "**Mérsékelt-magas – 4+ dokumentált hepatocellular injury esetjelentés (Vilaca 2018 PMID 30171122). Klinikai trial-okban (Dalton 2011, Crawford 2016) ALT/AST emelkedés mérsékelt (~1,5-2x normál 3 mg-on).** UGL-dózisokon (20-30 mg/nap) súlyosabb. TUDCA + milk-thistle + havi ALT/AST ajánlott (kötelező nem, de erősen javasolt).",
+  "hepatotoxicity": "Mérsékelt-magas – 4+ dokumentált hepatocellular injury esetjelentés (Vilaca 2018 PMID 30171122). Klinikai trial-okban (Dalton 2011, Crawford 2016) ALT/AST emelkedés mérsékelt (~1,5-2x normál 3 mg-on). UGL-dózisokon (20-30 mg/nap) súlyosabb. TUDCA + milk-thistle + havi ALT/AST ajánlott (kötelező nem, de erősen javasolt).",
   "wadaStatus": "banned",
   "androgenicRatio": "~50:20 (izom:prosztata szelektivitás – magas, jobb mint LGD).",
   "bindingAffinity": "Non-szteroidal SARM, AR-binding-affinitása ~30-40% testosterone-szintű in vitro. Magas tissue-szelektivitás izom > prosztata (Dalton 2011 PMID 21833506).",
@@ -76,7 +76,7 @@ export default {
     "Magas izom > prosztata szelektivitás"
   ],
   "quickStart": [
-    "**Hepatotoxicitás-monitor**: TUDCA 500 mg/nap + milk-thistle 300 mg/nap + havi ALT/AST ajánlott (Vilaca 2018 review-ban 4 DILI-eset)",
+    "Hepatotoxicitás-monitor: TUDCA 500 mg/nap + milk-thistle 300 mg/nap + havi ALT/AST ajánlott (Vilaca 2018 review-ban 4 DILI-eset)",
     "Dózis: 12,5-25 mg/nap, max 8 hét ciklus (klinikai 3 mg, UGL anekdoták 10-25 mg)",
     "HPTA-szuppresszió mérsékelt, PCT (Clomid + Nolvadex 4 hét) javasolt magas dózison",
     "WADA tiltott egész évben (2-4 hét vizelet-detection) – NFL/MLB-szuszpenzió-esetek leggyakoribb okozója",
@@ -158,7 +158,7 @@ export default {
   "faq": [
     {
       "q": "Miért állt le a Phase III POWER trial?",
-      "a": "GTx Inc Phase III POWER 1+2 trial-ok (NCT01355484/NCT01355497, 2013-2016, ~600 NSCLC cachexia-páciens, 3 mg/nap Ostarine vs placebo): a co-primary endpoint **lean body mass + physical function (stair-climb power)** EGYÜTT NEM érte el a statisztikai szignifikanciát. A lean body mass nőtt (+1,5 kg vs placebo), de a physical-function endpoint nem ért el a clinical-meaningfulness küszöböt. FDA NEM jóváhagyta. GTx 2016 után Ostarine-cachexia-fejlesztést leállította, később breast cancer adjunkt + urinary-incontinence (Asahi 2018 Phase II) indikációkra fókuszált. Crawford 2016 PMID 26944362 részletes trial-design + eredmények."
+      "a": "GTx Inc Phase III POWER 1+2 trial-ok (NCT01355484/NCT01355497, 2013-2016, ~600 NSCLC cachexia-páciens, 3 mg/nap Ostarine vs placebo): a co-primary endpoint lean body mass + physical function (stair-climb power) EGYÜTT NEM érte el a statisztikai szignifikanciát. A lean body mass nőtt (+1,5 kg vs placebo), de a physical-function endpoint nem ért el a clinical-meaningfulness küszöböt. FDA NEM jóváhagyta. GTx 2016 után Ostarine-cachexia-fejlesztést leállította, később breast cancer adjunkt + urinary-incontinence (Asahi 2018 Phase II) indikációkra fókuszált. Crawford 2016 PMID 26944362 részletes trial-design + eredmények."
     },
     {
       "q": "Ostarine miért 'lágyabb' SARM mint RAD/LGD?",
@@ -170,7 +170,7 @@ export default {
     },
     {
       "q": "Stack-elhető Ostarine RAD-140 vagy LGD-4033-mal?",
-      "a": "**NEM ajánlott.** Hilal 2020 PMID 32492288 esetjelentésben RAD+LGD stack 9 hét után fulmináns DILI – kumulatív hepatotoxicitás. Ostarine relatively 'enyhe' lenne SARM-stack-ben, de a kombinációs-rizikó (CYP3A4-saturation reaktív metabolitokra) súlyos. Ha többszöri SARM kívánatos, jobb sorozatban (8 hét egyik, 8 hét PCT, 8 hét másik) mint párhuzamosan. Klinikai precedens stack-re nincs."
+      "a": "NEM ajánlott. Hilal 2020 PMID 32492288 esetjelentésben RAD+LGD stack 9 hét után fulmináns DILI – kumulatív hepatotoxicitás. Ostarine relatively 'enyhe' lenne SARM-stack-ben, de a kombinációs-rizikó (CYP3A4-saturation reaktív metabolitokra) súlyos. Ha többszöri SARM kívánatos, jobb sorozatban (8 hét egyik, 8 hét PCT, 8 hét másik) mint párhuzamosan. Klinikai precedens stack-re nincs."
     }
   ],
   "related": [

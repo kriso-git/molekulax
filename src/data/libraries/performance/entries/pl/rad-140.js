@@ -64,7 +64,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NIE – RAD-140 niesterydowy, NIE jest substratem CYP19. E2 nie wzrasta (Bhasin 2012 PMID 22573713). To zaleta SARM: brak ryzyka gino przez mechanizm E2.",
-  "hepatotoxicity": "**WYSOKA – 6 udokumentowanych raportów hepatocellular injury 2017-2020 (Hilal 2020 PMID 32492288, Barbara 2020 PMID 33068441). ALT/AST >10x norma, niektóre w pobliżu poziomu transplantacji.** Mechanizm hepatotoksyczności dysfunkcja mitochondrialna + reakcyjny metabolit (Solomon 2019 PMID 31077635 review). TUDCA + milk-thistle + miesięczny pomiar ALT/AST ABSOLUTNIE obowiązkowy.",
+  "hepatotoxicity": "WYSOKA – 6 udokumentowanych raportów hepatocellular injury 2017-2020 (Hilal 2020 PMID 32492288, Barbara 2020 PMID 33068441). ALT/AST >10x norma, niektóre w pobliżu poziomu transplantacji. Mechanizm hepatotoksyczności dysfunkcja mitochondrialna + reakcyjny metabolit (Solomon 2019 PMID 31077635 review). TUDCA + milk-thistle + miesięczny pomiar ALT/AST ABSOLUTNIE obowiązkowy.",
   "wadaStatus": "banned",
   "androgenicRatio": "~80:30 (współczynnik selektywności mięsień:prostata Miller 2011 PMID 21953468 – test AR-binding vs rat bioassay). NIE klasyczna liczba androgenna proporcjonalna do Test.",
   "bindingAffinity": "Niesterydowy SARM, powinowactwo AR-binding ~80% poziomu testosteronu in vitro. Selektywna konformacja tkankowa: agonista w mięśniu + kości, częściowo antagonista w prostacie (Miller 2011 PMID 21953468).",
@@ -77,7 +77,7 @@ export default {
     "Długi okres półtrwania → dawkowanie raz dziennie"
   ],
   "quickStart": [
-    "**HEPATOTOKSYCZNOŚĆ OBOWIĄZKOWE MONITOROWANIE**: 6 udokumentowanych raportów DILI (Hilal 2020 PMID 32492288). TUDCA 500 mg/dzień + milk-thistle 300 mg/dzień + miesięczne ALT/AST/GGT MINIMUM",
+    "HEPATOTOKSYCZNOŚĆ OBOWIĄZKOWE MONITOROWANIE: 6 udokumentowanych raportów DILI (Hilal 2020 PMID 32492288). TUDCA 500 mg/dzień + milk-thistle 300 mg/dzień + miesięczne ALT/AST/GGT MINIMUM",
     "Dawka: 10-20 mg/dzień, doustnie, max 8 tygodni cyklu (nie przekraczać 20 mg)",
     "Supresja HPTA pełna po 6-8 tygodniach → PCT (Clomid + Nolvadex 4-6 tygodni) obowiązkowe",
     "Zakazany WADA przez cały rok – sportowcy wyczynowi muszą absolutnie unikać (3-6 tygodni detekcja w moczu)",
@@ -104,7 +104,7 @@ export default {
       "Wszystko UGL – brak formatu Rx obecnie"
     ],
     "caution": [
-      "**Hepatotoksyczność – 6 udokumentowanych raportów DILI (Hilal 2020, Barbara 2020, Solomon 2019 review)**",
+      "Hepatotoksyczność – 6 udokumentowanych raportów DILI (Hilal 2020, Barbara 2020, Solomon 2019 review)",
       "Pełna supresja HPTA po 6-8 tygodniach (PCT 4-6 tygodni obowiązkowe)",
       "Zaburzenia lipidowe (spadek HDL ~30-50%)",
       "Zmiany nastroju (anegdotyczny 'wzrost agresji')",
@@ -200,7 +200,7 @@ export default {
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Tygodnie 2, 4, 6",
-      "markers": "**ALT/AST/GGT** (>3x norma → NATYCHMIASTOWE odstawienie), lipidogram, hormon (monitor supresji HPTA), ocena szpitalna jeśli wzrasta bilirubina.",
+      "markers": "ALT/AST/GGT (>3x norma → NATYCHMIASTOWE odstawienie), lipidogram, hormon (monitor supresji HPTA), ocena szpitalna jeśli wzrasta bilirubina.",
       "purpose": "Monitor wątrobowy KRYTYCZNY. Przypadki SARM-induced DILI o szybkiej progresji udokumentowane (Hilal 2020 – piorunujące po 9 tygodniach)."
     },
     "postCycle": {

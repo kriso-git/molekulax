@@ -64,7 +64,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NEM – RAD-140 non-szteroidal, NEM CYP19-szubsztrát. E2 nem emelkedik (Bhasin 2012 PMID 22573713). Ez SARM-előny: gynecomastia-rizikó az E2-mechanizmuson át nincs.",
-  "hepatotoxicity": "**MAGAS – 6 dokumentált hepatocellular injury esetjelentés 2017-2020 (Hilal 2020 PMID 32492288, Barbara 2020 PMID 33068441). ALT/AST >10x normál, néhányban transzplantáció-szint közelében.** Hepatotoxicitás-mechanizmus mitokondriális diszfunkció + reaktív metabolit (Solomon 2019 PMID 31077635 review). TUDCA + milk-thistle + monthly ALT/AST mérés ABSZOLÚT kötelező.",
+  "hepatotoxicity": "MAGAS – 6 dokumentált hepatocellular injury esetjelentés 2017-2020 (Hilal 2020 PMID 32492288, Barbara 2020 PMID 33068441). ALT/AST >10x normál, néhányban transzplantáció-szint közelében. Hepatotoxicitás-mechanizmus mitokondriális diszfunkció + reaktív metabolit (Solomon 2019 PMID 31077635 review). TUDCA + milk-thistle + monthly ALT/AST mérés ABSZOLÚT kötelező.",
   "wadaStatus": "banned",
   "androgenicRatio": "~80:30 (izom:prosztata szelektivitás-arány Miller 2011 PMID 21953468 – RICH AR-binding assay vs rat-bioassay). NEM klasszikus Test-arányos androgén-szám.",
   "bindingAffinity": "Non-szteroidal SARM, AR-binding-affinitása ~80% testosterone-szintű in vitro. Szelektív tissue-konformáció: agonista izomban + csontban, részlegesen antagonista prosztatában (Miller 2011 PMID 21953468).",
@@ -77,7 +77,7 @@ export default {
     "Hosszú felezési idő → napi 1x dosing"
   ],
   "quickStart": [
-    "**HEPATOTOXICITÁS KÖTELEZŐ MONITOR**: 6 dokumentált esetjelentés DILI-vel (Hilal 2020 PMID 32492288). TUDCA 500 mg/nap + milk-thistle 300 mg/nap + havi ALT/AST/GGT-mérés MINIMUM",
+    "HEPATOTOXICITÁS KÖTELEZŐ MONITOR: 6 dokumentált esetjelentés DILI-vel (Hilal 2020 PMID 32492288). TUDCA 500 mg/nap + milk-thistle 300 mg/nap + havi ALT/AST/GGT-mérés MINIMUM",
     "Dózis: 10-20 mg/nap, orális, max 8 hét ciklus (ne haladjon meg 20 mg-ot)",
     "HPTA-szuppresszió teljes 6-8 hét után → PCT (Clomid + Nolvadex 4-6 hét) kötelező",
     "WADA tiltott egész évben – versenyzőknek abszolút kerülendő (3-6 hét vizelet-detection)",
@@ -104,7 +104,7 @@ export default {
       "Mind UGL – nincs Rx-formátum jelenleg"
     ],
     "caution": [
-      "**Hepatotoxicitás – 6 dokumentált DILI esetjelentés (Hilal 2020, Barbara 2020, Solomon 2019 review)**",
+      "Hepatotoxicitás – 6 dokumentált DILI esetjelentés (Hilal 2020, Barbara 2020, Solomon 2019 review)",
       "Teljes HPTA-szuppresszió 6-8 hét után (PCT 4-6 hét kötelező)",
       "Lipid-zavar (HDL csökkenés ~30-50%)",
       "Hangulat-változás (anekdotikus 'aggresszió-növekedés')",
@@ -200,7 +200,7 @@ export default {
     "midCycle": {
       "label": "Ciklus közben",
       "timing": "2., 4., 6. hét",
-      "markers": "**ALT/AST/GGT** (>3x normál → AZONNAL leállítás), lipid panel, hormon (HPTA-szuppresszió monitor), bilirubin emelkedés esetén kórházi értékelés.",
+      "markers": "ALT/AST/GGT (>3x normál → AZONNAL leállítás), lipid panel, hormon (HPTA-szuppresszió monitor), bilirubin emelkedés esetén kórházi értékelés.",
       "purpose": "Hepatikus monitor KRITIKUS. SARM-induced DILI gyors progresszió esetek dokumentáltak (Hilal 2020 – 9 hét után fulmináns)."
     },
     "postCycle": {

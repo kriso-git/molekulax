@@ -28,7 +28,7 @@ export default {
   "accentColor": "#9333ea",
   "tagColor": "rgba(147,51,234,0.18)",
   "shortDesc": "Synthetic steroidal-like SARM, the ONLY compound with a dual mechanism: AR agonist + myostatin pathway inhibitor (follistatin upregulation, Kanno 2013 PMID 23291286). UGL marketed for 'natural-cap breaking' – BUT hepatotoxicity signals + 17α-steroid-like profile. WADA-banned.",
-  "description": "YK-11 (chemically close to a 17α-(methoxycarbonyl)-5α-androst-(17,3:17,1)-bis-pyranone-like steroid scaffold, NOT a classic non-steroidal SARM!) is a synthetic steroid-derivative-based selective androgen receptor modulator developed by Kanno and colleagues in 2011 (Kanno 2011 PMID 21893547). It is unique among SARMs for two reasons: (1) **structurally steroid-like** (NOT an aryl-propionamide like RAD/LGD/Ostarine), a 5α-androstane scaffold with 17α-methoxycarbonyl substitution; (2) **dual mechanism**: AR agonist (in vitro AR-binding ~50% of testosterone) + **myostatin pathway inhibitor via follistatin upregulation (Kanno 2013 PMID 23291286) in C2C12 myoblast cells** – blocks the natural-cap-like myostatin-mediated muscle mass limitation. No clinical trial as of 2024 (Phase 0 in vitro + rat bioassay only). On the bodybuilding market UGL marketed for 'natural-cap breaking' (myostatin mechanism hype) – BUT Yatsu 2018 PMID 30005896 in vitro re-testing called the scalability of the follistatin effect in vivo in humans into question. Hepatotoxicity risk: due to the 17α-steroid-like scaffold a profile similar to 17α-alkylated steroids is expected (Solomon 2019 PMID 31077635 SARM-DILI review – 2 documented YK-associated hepatocellular injury cases). WADA-banned year-round (S1.2 – other anabolic agents). Does NOT aromatize (Δ4,9-triene structural block).",
+  "description": "YK-11 (chemically close to a 17α-(methoxycarbonyl)-5α-androst-(17,3:17,1)-bis-pyranone-like steroid scaffold, NOT a classic non-steroidal SARM!) is a synthetic steroid-derivative-based selective androgen receptor modulator developed by Kanno and colleagues in 2011 (Kanno 2011 PMID 21893547). It is unique among SARMs for two reasons: (1) structurally steroid-like (NOT an aryl-propionamide like RAD/LGD/Ostarine), a 5α-androstane scaffold with 17α-methoxycarbonyl substitution; (2) dual mechanism: AR agonist (in vitro AR-binding ~50% of testosterone) + myostatin pathway inhibitor via follistatin upregulation (Kanno 2013 PMID 23291286) in C2C12 myoblast cells – blocks the natural-cap-like myostatin-mediated muscle mass limitation. No clinical trial as of 2024 (Phase 0 in vitro + rat bioassay only). On the bodybuilding market UGL marketed for 'natural-cap breaking' (myostatin mechanism hype) – BUT Yatsu 2018 PMID 30005896 in vitro re-testing called the scalability of the follistatin effect in vivo in humans into question. Hepatotoxicity risk: due to the 17α-steroid-like scaffold a profile similar to 17α-alkylated steroids is expected (Solomon 2019 PMID 31077635 SARM-DILI review – 2 documented YK-associated hepatocellular injury cases). WADA-banned year-round (S1.2 – other anabolic agents). Does NOT aromatize (Δ4,9-triene structural block).",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -51,7 +51,7 @@ export default {
       "value": "Never an Rx. UGL 'research chemical'. WADA-banned S1.2."
     }
   ],
-  "mechanism": "YK-11 is a dual-mechanism compound: (1) **AR agonist** – in vitro AR-binding affinity ~50% of testosterone level (Kanno 2011 PMID 21893547), anabolic-pathway upregulation in C2C12 myoblast cells; (2) **Myostatin pathway inhibitor** – Kanno 2013 PMID 23291286 showed that YK-11 induces upregulation of the follistatin gene product in C2C12. Follistatin is an endogenous myostatin-binding protein; if follistatin rises, the myostatin-mediated muscle mass limitation (natural cap) weakens. **In vitro mechanism PROVEN**, in vivo (rat bioassay + humans) role is NOT. Yatsu 2018 PMID 30005896 in vitro retest results called the clinical-meaningfulness scale of the follistatin effect into question (small effect size, dose-sensitive). Structural 5α-androstane scaffold with 17α-methoxycarbonyl group: this gives a 17α-substitution CYP3A4-block-like character → hepatotoxicity risk similar to classical 17α-methyl AAS. Does NOT aromatize (Δ4,9-triene configuration blocks CYP19 substrate binding). Solomon 2019 PMID 31077635 SARM-DILI review documented 2 YK-associated hepatocellular injury cases.",
+  "mechanism": "YK-11 is a dual-mechanism compound: (1) AR agonist – in vitro AR-binding affinity ~50% of testosterone level (Kanno 2011 PMID 21893547), anabolic-pathway upregulation in C2C12 myoblast cells; (2) Myostatin pathway inhibitor – Kanno 2013 PMID 23291286 showed that YK-11 induces upregulation of the follistatin gene product in C2C12. Follistatin is an endogenous myostatin-binding protein; if follistatin rises, the myostatin-mediated muscle mass limitation (natural cap) weakens. In vitro mechanism PROVEN, in vivo (rat bioassay + humans) role is NOT. Yatsu 2018 PMID 30005896 in vitro retest results called the clinical-meaningfulness scale of the follistatin effect into question (small effect size, dose-sensitive). Structural 5α-androstane scaffold with 17α-methoxycarbonyl group: this gives a 17α-substitution CYP3A4-block-like character → hepatotoxicity risk similar to classical 17α-methyl AAS. Does NOT aromatize (Δ4,9-triene configuration blocks CYP19 substrate binding). Solomon 2019 PMID 31077635 SARM-DILI review documented 2 YK-associated hepatocellular injury cases.",
   "legalStatus": "Never Rx-approved (Phase I never started in humans). On UGL market as 'research chemical'. USA: Schedule III analog in some states (2018+). EU: no Rx. WADA-banned year-round (S1.2 – other anabolic agents).",
   "onsetTime": "1-2 weeks (anecdotal UGL, no clinical precedent)",
   "halfLife": "~6-10 h (oral, estimated from in vitro)",
@@ -63,7 +63,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NO – Δ4,9-triene configuration blocks CYP19 substrate binding. E2 does not rise.",
-  "hepatotoxicity": "**High expected – 17α-methoxycarbonyl-substituted steroid-like scaffold, profile similar to 17α-methyl AAS. Solomon 2019 PMID 31077635 SARM-DILI review documented 2 YK-associated hepatocellular injury cases.** TUDCA + milk-thistle + monthly ALT/AST MANDATORY.",
+  "hepatotoxicity": "High expected – 17α-methoxycarbonyl-substituted steroid-like scaffold, profile similar to 17α-methyl AAS. Solomon 2019 PMID 31077635 SARM-DILI review documented 2 YK-associated hepatocellular injury cases. TUDCA + milk-thistle + monthly ALT/AST MANDATORY.",
   "wadaStatus": "banned",
   "androgenicRatio": "Estimated 70-100:30-50 (in vitro AR-binding affinity + myostatin block dual effect, NOT classical rat bioassay).",
   "bindingAffinity": "Steroidal SARM, AR-binding affinity ~50% of testosterone level in vitro (Kanno 2011). Dual mechanism: AR agonist + follistatin upregulation (Kanno 2013 in C2C12).",
@@ -76,7 +76,7 @@ export default {
     "Theoretical advantage of AR agonist + myostatin block dual mechanism"
   ],
   "quickStart": [
-    "**HEPATOTOXICITY – 17α-steroid-like profile. TUDCA 500 mg/day + milk-thistle 300 mg/day + monthly ALT/AST MANDATORY**",
+    "HEPATOTOXICITY – 17α-steroid-like profile. TUDCA 500 mg/day + milk-thistle 300 mg/day + monthly ALT/AST MANDATORY",
     "Dose: 5-15 mg/day, max 6-8 week cycle (UGL anecdotes, no clinical precedent)",
     "HPTA suppression full after 6 weeks → PCT (Clomid + Nolvadex 4-6 weeks) mandatory",
     "WADA-banned year-round (3-5 week urinary detection)",
@@ -103,7 +103,7 @@ export default {
       "All UGL – no Rx format"
     ],
     "caution": [
-      "**Hepatotoxicity 17α-steroid-like – 2 documented DILI cases (Solomon 2019)**",
+      "Hepatotoxicity 17α-steroid-like – 2 documented DILI cases (Solomon 2019)",
       "Full HPTA suppression after 6 weeks (PCT 4-6 weeks mandatory)",
       "Lipid disturbance (HDL drop ~30-50%)",
       "Clinical precedent LACKING – treat as research-level compound",
@@ -162,7 +162,7 @@ export default {
     },
     {
       "q": "Does the myostatin mechanism give real muscle mass advantage?",
-      "a": "**Clinically NOT proven.** Kanno 2013 PMID 23291286 in vitro on C2C12 myoblast cells showed follistatin upregulation – BUT the in vitro effect size is small, and the follistatin → myostatin block in vivo in humans has NOT been tested in clinical trials. Yatsu 2018 PMID 30005896 review treated the 'natural cap breaking' marketing claim critically – anecdotal UGL reports cite 2-4 kg extra lean mass, but no control-group clinical precedent exists. The myostatin block concept is prettier on paper than in human muscle mass gain."
+      "a": "Clinically NOT proven. Kanno 2013 PMID 23291286 in vitro on C2C12 myoblast cells showed follistatin upregulation – BUT the in vitro effect size is small, and the follistatin → myostatin block in vivo in humans has NOT been tested in clinical trials. Yatsu 2018 PMID 30005896 review treated the 'natural cap breaking' marketing claim critically – anecdotal UGL reports cite 2-4 kg extra lean mass, but no control-group clinical precedent exists. The myostatin block concept is prettier on paper than in human muscle mass gain."
     },
     {
       "q": "YK-11 hepatotoxicity vs classical 17α-methyl AAS?",
@@ -199,7 +199,7 @@ export default {
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Weeks 2, 4, 6",
-      "markers": "**ALT/AST/GGT** (>3x normal → IMMEDIATE discontinuation), lipid, hormone (HPTA suppression monitor).",
+      "markers": "ALT/AST/GGT (>3x normal → IMMEDIATE discontinuation), lipid, hormone (HPTA suppression monitor).",
       "purpose": "Hepatic monitoring CRITICAL."
     },
     "postCycle": {

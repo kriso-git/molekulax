@@ -46,7 +46,7 @@ export default {
       "value": "USA: FDA Rx. UE: na receptę (Ventolin). WADA: inhalacja <1600 μg dozwolone."
     }
   ],
-  "mechanism": "Selektywny agonista β2 rozluźniający mięśnie gładkie dróg oddechowych. Wewnątrzkomórkowy szlak identyczny z Clenbuterolem: β2 → Gs → cyklaza adenylanowa → cAMP → PKA → fosforylacja HSL → lipoliza. **RÓŻNICA vs Clenbuterol: KRÓTKIE zajęcie receptora** – szybka dysocjacja Albuterolu eliminuje przewlekłą down-regulację β2, więc brak kumulacji kardiotoksycznej, ALE szybsza tolerancja (1-2 tygodnie). Efekt anaboliczny skromniejszy.",
+  "mechanism": "Selektywny agonista β2 rozluźniający mięśnie gładkie dróg oddechowych. Wewnątrzkomórkowy szlak identyczny z Clenbuterolem: β2 → Gs → cyklaza adenylanowa → cAMP → PKA → fosforylacja HSL → lipoliza. RÓŻNICA vs Clenbuterol: KRÓTKIE zajęcie receptora – szybka dysocjacja Albuterolu eliminuje przewlekłą down-regulację β2, więc brak kumulacji kardiotoksycznej, ALE szybsza tolerancja (1-2 tygodnie). Efekt anaboliczny skromniejszy.",
   "legalStatus": "USA: FDA Rx. UE: na receptę, dostępny w aptekach. WADA: inhalacja do 1600 μg/24h dozwolona, doustnie/dożylnie zakazane.",
   "onsetTime": "5-15 min (inhaled), 15-30 min (oral)",
   "halfLife": "5-6 h (oral)",
@@ -166,7 +166,7 @@ export default {
     },
     {
       "q": "Jaka jest różnica między lewalbuterolem a racemicznym albuterolem?",
-      "a": "Klasyczny Albuterol to **mieszanina racemiczna**: enancjomer (R) jest farmakologicznie aktywny, enancjomer (S) nieaktywny lub potencjalnie kontrproduktywny (paradoksalne zwężenie oskrzeli w modelach przedklinicznych). **Lewalbuterol** (Xopenex) to czysty enancjomer (R), pokazujący **lekko zmniejszony wzrost tętna i drżenie** przy równoważnej skuteczności. Z powodu kosztów racemiczny Albuterol pozostaje globalnym standardem; Lewalbuterol głównie u dzieci lub pacjentów sercowo wrażliwych. W kontekście sportowym praktycznie równoważne."
+      "a": "Klasyczny Albuterol to mieszanina racemiczna: enancjomer (R) jest farmakologicznie aktywny, enancjomer (S) nieaktywny lub potencjalnie kontrproduktywny (paradoksalne zwężenie oskrzeli w modelach przedklinicznych). Lewalbuterol (Xopenex) to czysty enancjomer (R), pokazujący lekko zmniejszony wzrost tętna i drżenie przy równoważnej skuteczności. Z powodu kosztów racemiczny Albuterol pozostaje globalnym standardem; Lewalbuterol głównie u dzieci lub pacjentów sercowo wrażliwych. W kontekście sportowym praktycznie równoważne."
     }
   ],
   "related": [

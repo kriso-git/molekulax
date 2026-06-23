@@ -27,7 +27,7 @@ export default {
   "accentColor": "#ef4444",
   "tagColor": "rgba(239,68,68,0.18)",
   "shortDesc": "NIE STOSUJ. 2,4-dinitrofenol, ryzyko śmiertelnej hipertermii. Kontekst edukacyjny.",
-  "description": "**OSTRZEŻENIE: DNP jest SKRAJNIE NIEBEZPIECZNY, z udokumentowanymi przypadkami śmiertelnej hipertermii. Ta pozycja jest wyłącznie edukacyjna, NIE dostarcza wskazówek użycia.** 2,4-dinitrofenol to chemikalia przemysłowa, krótko sprzedawana jako lek odchudzający w latach 30. XX w. Rozprzęga mitochondrialną fosforylację oksydacyjną. **Ilościowo**: zdrowa mitochondria produkuje 38 ATP/glukozę; na DNP spada do ~10-15 ATP, brakująca energia rozprasza się niekontrolowanie jako ciepło. Wzrost BMR do +50%, ale niekontrolowana hipertermia 41-43°C i śmierć. **Wzorzec użycia u kulturystów (Petróczi 2015 PMID 26092626 inline)**: pre-contest \"magiczna kula\", protokoły online 200-400 mg/dzień zbliżają się lub przekraczają śmiertelny próg 4.3 mg/kg (~300 mg u dorosłego). Większość zgonów u zdrowych mężczyzn 21-32 lat. **Początek śmiertelnej hipertermii**: 41-43°C w 6-12 h po dawce ostrej – pocenie → tachykardia → tachypnea → splątanie → drgawki → niewydolność narządów. NIE MA antidotum.",
+  "description": "OSTRZEŻENIE: DNP jest SKRAJNIE NIEBEZPIECZNY, z udokumentowanymi przypadkami śmiertelnej hipertermii. Ta pozycja jest wyłącznie edukacyjna, NIE dostarcza wskazówek użycia. 2,4-dinitrofenol to chemikalia przemysłowa, krótko sprzedawana jako lek odchudzający w latach 30. XX w. Rozprzęga mitochondrialną fosforylację oksydacyjną. Ilościowo: zdrowa mitochondria produkuje 38 ATP/glukozę; na DNP spada do ~10-15 ATP, brakująca energia rozprasza się niekontrolowanie jako ciepło. Wzrost BMR do +50%, ale niekontrolowana hipertermia 41-43°C i śmierć. Wzorzec użycia u kulturystów (Petróczi 2015 PMID 26092626 inline): pre-contest \"magiczna kula\", protokoły online 200-400 mg/dzień zbliżają się lub przekraczają śmiertelny próg 4.3 mg/kg (~300 mg u dorosłego). Większość zgonów u zdrowych mężczyzn 21-32 lat. Początek śmiertelnej hipertermii: 41-43°C w 6-12 h po dawce ostrej – pocenie → tachykardia → tachypnea → splątanie → drgawki → niewydolność narządów. NIE MA antidotum.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -46,7 +46,7 @@ export default {
       "value": "USA: wycofany 1938. UE: zakazany. WADA: zakazany."
     }
   ],
-  "mechanism": "2,4-dinitrofenol to lipofilny słaby kwas (pKa 4,1), przekracza wewnętrzną błonę mitochondrialną z cytoplazmy do przestrzeni międzybłonowej, **omijając kanał F0 syntazy ATP (bypass cyklu Q)**. Siła protomotoryczna rozprasza się, łańcuch transportu elektronów pompuje dalej, każdy cykl produkuje ciepło, NIE ATP. **Uncoupling jest kumulatywny**: okres półtrwania ~36 h, więc **opóźniona śmiertelna hipertermia może wystąpić 24-48 h po ostatniej dawce**, gdy użytkownik myśli już, że \"cykl się skończył\".",
+  "mechanism": "2,4-dinitrofenol to lipofilny słaby kwas (pKa 4,1), przekracza wewnętrzną błonę mitochondrialną z cytoplazmy do przestrzeni międzybłonowej, omijając kanał F0 syntazy ATP (bypass cyklu Q). Siła protomotoryczna rozprasza się, łańcuch transportu elektronów pompuje dalej, każdy cykl produkuje ciepło, NIE ATP. Uncoupling jest kumulatywny: okres półtrwania ~36 h, więc opóźniona śmiertelna hipertermia może wystąpić 24-48 h po ostatniej dawce, gdy użytkownik myśli już, że \"cykl się skończył\".",
   "legalStatus": "USA: wycofany 1938 (po śmiertelnych przypadkach). UE: zakazany do użycia ludzkiego.",
   "onsetTime": "6-12 hours",
   "halfLife": "~36 h (cumulative)",

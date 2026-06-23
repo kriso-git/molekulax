@@ -27,7 +27,7 @@ export default {
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
   "shortDesc": "Rekombinowany ludzki hormon wzrostu (rhGH, Somatropin). Egzogenne wsparcie GH, zakazany przez WADA.",
-  "description": "Rekombinowany ludzki hormon wzrostu (rhGH, Somatropin) to biologicznie identyczna forma naturalnego GH. Zatwierdzony FDA dla niedoboru GH, zespołu Turnera, kacheksji AIDS. W sporcie off-label dla masy + recovery + redukcji. WADA-zakazany. **Kluczowe niuanse**: (a) **IGF-1 jako pierwotny efektor** – sam GH mniej anaboliczny, główny mediator to wątrobowy IGF-1 (70-80% anabolizmu sportowego przez IGF-1); (b) **Konwersja T4→reverse T3**: na HGH rT3 rośnie, aktywne T3 spada → ryzyko subklinicznej niedoczynności tarczycy; ko-administracja T4/T3 + panel TSH/fT3/fT4/rT3 mid-cycle OBOWIĄZKOWE; (c) **Zespół cieśni nadgarstka i obrzęki obwodowe**: retencja płynów + Na+ → kompresja nerwów, głównie powyżej 4-6 IU/dzień; (d) **Podanie SC na czczo**: przed snem lub min. 2-4 h po posiłku, bo insulina bezpośrednio antagonizuje GH.",
+  "description": "Rekombinowany ludzki hormon wzrostu (rhGH, Somatropin) to biologicznie identyczna forma naturalnego GH. Zatwierdzony FDA dla niedoboru GH, zespołu Turnera, kacheksji AIDS. W sporcie off-label dla masy + recovery + redukcji. WADA-zakazany. Kluczowe niuanse: (a) IGF-1 jako pierwotny efektor – sam GH mniej anaboliczny, główny mediator to wątrobowy IGF-1 (70-80% anabolizmu sportowego przez IGF-1); (b) Konwersja T4→reverse T3: na HGH rT3 rośnie, aktywne T3 spada → ryzyko subklinicznej niedoczynności tarczycy; ko-administracja T4/T3 + panel TSH/fT3/fT4/rT3 mid-cycle OBOWIĄZKOWE; (c) Zespół cieśni nadgarstka i obrzęki obwodowe: retencja płynów + Na+ → kompresja nerwów, głównie powyżej 4-6 IU/dzień; (d) Podanie SC na czczo: przed snem lub min. 2-4 h po posiłku, bo insulina bezpośrednio antagonizuje GH.",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -46,7 +46,7 @@ export default {
       "value": "USA/UE: Rx. WADA: zakazany."
     }
   ],
-  "mechanism": "Agonista receptora GH (receptor cytokin typu 1): dimeryzacja → **fosforylacja JAK2 → STAT5 → ekspresja IGF-1 w wątrobie**. Wtórnie: lipoliza w tkance tłuszczowej (HSL) + anabolizm mięśni (mTOR + IGF-1 paracrynnie). **Antagonistyczny wpływ na insulinę**: glukoneogeneza + glikogenoliza wątrobowa → wzrost glukozy na czczo, przewlekła insulinooporność. Monitoring HbA1c obowiązkowy.",
+  "mechanism": "Agonista receptora GH (receptor cytokin typu 1): dimeryzacja → fosforylacja JAK2 → STAT5 → ekspresja IGF-1 w wątrobie. Wtórnie: lipoliza w tkance tłuszczowej (HSL) + anabolizm mięśni (mTOR + IGF-1 paracrynnie). Antagonistyczny wpływ na insulinę: glukoneogeneza + glikogenoliza wątrobowa → wzrost glukozy na czczo, przewlekła insulinooporność. Monitoring HbA1c obowiązkowy.",
   "legalStatus": "USA/UE: Rx. WADA: zakazany.",
   "onsetTime": "4-8 weeks (IGF-1 peak)",
   "halfLife": "~3 h (subcutaneous)",

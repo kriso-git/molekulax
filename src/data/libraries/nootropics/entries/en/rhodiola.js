@@ -23,7 +23,7 @@ export default {
   "accentColor": "#84cc16",
   "tagColor": "rgba(132,204,22,0.18)",
   "shortDesc": "Arctic root, salidroside + rosavin, anti-fatigue adaptogen.",
-  "description": "Rhodiola rosea (arctic root, \"golden root\") is an anti-fatigue herb used for centuries by populations of arctic uplands. Its active components are salidroside (a tyrosol glycoside) and the rosavin group – a **standardized extract at 3% rosavin / 1% salidroside** ratio (Russian Rosenroot tradition) is recommended. RCT evidence: Olsson 2009 (PMID 19367259) **improvement in mild-moderate depression without sertraline**, Edwards 2012 (PMID 22228617) **stress-related fatigue syndrome**, Hung 2011 (PMID 21366835) physical-fatigue reduction. Acute effect is perceptible after a single 200-400 mg dose (vs. Bacopa which requires an 8-12 week course). Ideal combined with low-dose caffeine against mental fatigue.",
+  "description": "Rhodiola rosea (arctic root, \"golden root\") is an anti-fatigue herb used for centuries by populations of arctic uplands. Its active components are salidroside (a tyrosol glycoside) and the rosavin group – a standardized extract at 3% rosavin / 1% salidroside ratio (Russian Rosenroot tradition) is recommended. RCT evidence: Olsson 2009 (PMID 19367259) improvement in mild-moderate depression without sertraline, Edwards 2012 (PMID 22228617) stress-related fatigue syndrome, Hung 2011 (PMID 21366835) physical-fatigue reduction. Acute effect is perceptible after a single 200-400 mg dose (vs. Bacopa which requires an 8-12 week course). Ideal combined with low-dose caffeine against mental fatigue.",
   "keyInfo": [
     {
       "label": "Mechanism",

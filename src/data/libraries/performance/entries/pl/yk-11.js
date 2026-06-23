@@ -28,7 +28,7 @@ export default {
   "accentColor": "#9333ea",
   "tagColor": "rgba(147,51,234,0.18)",
   "shortDesc": "Syntetyczny sterydopodobny SARM, JEDYNY compound z podwójnym mechanizmem: agonista AR + inhibitor szlaku miostatyny (upregulation follistatyny, Kanno 2013 PMID 23291286). Marketing UGL dla 'przełamania natural-cap' – ALE sygnały hepatotoksyczności + profil 17α-sterydopodobny. Zakazany WADA.",
-  "description": "YK-11 (chemicznie blisko sterydowego rusztowania 17α-(metoksykarbonylo)-5α-androst-(17,3:17,1)-bis-pyranonowego, NIE klasyczny niesterydowy SARM!) to syntetyczny selektywny modulator receptora androgenowego oparty na pochodnej sterydu opracowany przez Kanno i kolegów w 2011 (Kanno 2011 PMID 21893547). Wyjątkowy w klasie SARM z dwóch powodów: (1) **strukturalnie sterydopodobny** (NIE arylopropionamid jak RAD/LGD/Ostarine), rusztowanie 5α-androstanu z substytucją 17α-metoksykarbonylową; (2) **podwójny mechanizm**: agonista AR (in vitro AR-binding ~50% testosteronu) + **inhibitor szlaku miostatyny przez upregulation follistatyny (Kanno 2013 PMID 23291286) w komórkach myoblastów C2C12** – blokuje miostatynowo-mediowane ograniczenie masy mięśniowej podobne do natural-cap. Brak badania klinicznego do 2024 (Faza 0 in vitro + rat bioassay only). Na rynku kulturystyki marketing UGL dla 'przełamania natural-cap' (hype mechanizmu miostatyny) – ALE Yatsu 2018 PMID 30005896 in vitro re-testing zakwestionował skalowalność efektu follistatyny in vivo u ludzi. Ryzyko hepatotoksyczności: z powodu sterydopodobnego rusztowania 17α oczekiwany profil podobny do 17α-alkilowanych sterydów (Solomon 2019 PMID 31077635 SARM-DILI review – 2 udokumentowane przypadki hepatocellular injury związane z YK). Zakazany WADA przez cały rok (S1.2 – inne środki anaboliczne). NIE aromatyzuje (blok strukturalny Δ4,9-trien).",
+  "description": "YK-11 (chemicznie blisko sterydowego rusztowania 17α-(metoksykarbonylo)-5α-androst-(17,3:17,1)-bis-pyranonowego, NIE klasyczny niesterydowy SARM!) to syntetyczny selektywny modulator receptora androgenowego oparty na pochodnej sterydu opracowany przez Kanno i kolegów w 2011 (Kanno 2011 PMID 21893547). Wyjątkowy w klasie SARM z dwóch powodów: (1) strukturalnie sterydopodobny (NIE arylopropionamid jak RAD/LGD/Ostarine), rusztowanie 5α-androstanu z substytucją 17α-metoksykarbonylową; (2) podwójny mechanizm: agonista AR (in vitro AR-binding ~50% testosteronu) + inhibitor szlaku miostatyny przez upregulation follistatyny (Kanno 2013 PMID 23291286) w komórkach myoblastów C2C12 – blokuje miostatynowo-mediowane ograniczenie masy mięśniowej podobne do natural-cap. Brak badania klinicznego do 2024 (Faza 0 in vitro + rat bioassay only). Na rynku kulturystyki marketing UGL dla 'przełamania natural-cap' (hype mechanizmu miostatyny) – ALE Yatsu 2018 PMID 30005896 in vitro re-testing zakwestionował skalowalność efektu follistatyny in vivo u ludzi. Ryzyko hepatotoksyczności: z powodu sterydopodobnego rusztowania 17α oczekiwany profil podobny do 17α-alkilowanych sterydów (Solomon 2019 PMID 31077635 SARM-DILI review – 2 udokumentowane przypadki hepatocellular injury związane z YK). Zakazany WADA przez cały rok (S1.2 – inne środki anaboliczne). NIE aromatyzuje (blok strukturalny Δ4,9-trien).",
   "keyInfo": [
     {
       "label": "Mechanizm",
@@ -51,7 +51,7 @@ export default {
       "value": "Nigdy nie był Rx. UGL 'research chemical'. Zakazany WADA S1.2."
     }
   ],
-  "mechanism": "YK-11 to compound podwójnego mechanizmu: (1) **Agonista AR** – powinowactwo AR-binding ~50% poziomu testosteronu in vitro (Kanno 2011 PMID 21893547), upregulation szlaku anabolicznego w komórkach myoblastów C2C12; (2) **Inhibitor szlaku miostatyny** – Kanno 2013 PMID 23291286 wykazał, że YK-11 indukuje upregulation produktu genu follistatyny w C2C12. Follistatyna to endogenny białko wiążące miostatynę; jeśli follistatyna wzrasta, miostatynowo-mediowane ograniczenie masy mięśniowej (natural cap) słabnie. **Mechanizm in vitro UDOWODNIONY**, in vivo (rat bioassay + ludzie) rola NIE jest. Yatsu 2018 PMID 30005896 in vitro retest wyniki zakwestionowały skalę clinical-meaningfulness efektu follistatyny (mały rozmiar efektu, wrażliwy na dawkę). Strukturalne rusztowanie 5α-androstanu z grupą 17α-metoksykarbonylową: daje charakter podobny do bloku CYP3A4-mediowanej substytucji 17α → ryzyko hepatotoksyczności podobne do klasycznych 17α-metyl AAS. NIE aromatyzuje (konfiguracja Δ4,9-trien blokuje wiązanie substratu CYP19). Solomon 2019 PMID 31077635 SARM-DILI review udokumentował 2 przypadki hepatocellular injury związane z YK.",
+  "mechanism": "YK-11 to compound podwójnego mechanizmu: (1) Agonista AR – powinowactwo AR-binding ~50% poziomu testosteronu in vitro (Kanno 2011 PMID 21893547), upregulation szlaku anabolicznego w komórkach myoblastów C2C12; (2) Inhibitor szlaku miostatyny – Kanno 2013 PMID 23291286 wykazał, że YK-11 indukuje upregulation produktu genu follistatyny w C2C12. Follistatyna to endogenny białko wiążące miostatynę; jeśli follistatyna wzrasta, miostatynowo-mediowane ograniczenie masy mięśniowej (natural cap) słabnie. Mechanizm in vitro UDOWODNIONY, in vivo (rat bioassay + ludzie) rola NIE jest. Yatsu 2018 PMID 30005896 in vitro retest wyniki zakwestionowały skalę clinical-meaningfulness efektu follistatyny (mały rozmiar efektu, wrażliwy na dawkę). Strukturalne rusztowanie 5α-androstanu z grupą 17α-metoksykarbonylową: daje charakter podobny do bloku CYP3A4-mediowanej substytucji 17α → ryzyko hepatotoksyczności podobne do klasycznych 17α-metyl AAS. NIE aromatyzuje (konfiguracja Δ4,9-trien blokuje wiązanie substratu CYP19). Solomon 2019 PMID 31077635 SARM-DILI review udokumentował 2 przypadki hepatocellular injury związane z YK.",
   "legalStatus": "Nigdy nie zatwierdzony Rx (Faza I nigdy nie rozpoczęta u ludzi). Na rynku UGL jako 'research chemical'. USA: Schedule III analog w niektórych stanach (2018+). UE: brak Rx. Zakazany WADA przez cały rok (S1.2 – inne środki anaboliczne).",
   "onsetTime": "1-2 tygodnie (anegdotyczny UGL, brak precedensu klinicznego)",
   "halfLife": "~6-10 h (doustnie, szacowany z in vitro)",
@@ -63,7 +63,7 @@ export default {
     "tudca"
   ],
   "aromatization": "NIE – konfiguracja Δ4,9-trien blokuje wiązanie substratu CYP19. E2 nie wzrasta.",
-  "hepatotoxicity": "**Wysokie oczekiwane – rusztowanie sterydopodobne z substytucją 17α-metoksykarbonylową, profil podobny do 17α-metyl AAS. Solomon 2019 PMID 31077635 SARM-DILI review udokumentował 2 przypadki hepatocellular injury związane z YK.** TUDCA + milk-thistle + miesięczne ALT/AST OBOWIĄZKOWE.",
+  "hepatotoxicity": "Wysokie oczekiwane – rusztowanie sterydopodobne z substytucją 17α-metoksykarbonylową, profil podobny do 17α-metyl AAS. Solomon 2019 PMID 31077635 SARM-DILI review udokumentował 2 przypadki hepatocellular injury związane z YK. TUDCA + milk-thistle + miesięczne ALT/AST OBOWIĄZKOWE.",
   "wadaStatus": "banned",
   "androgenicRatio": "Szacowany 70-100:30-50 (in vitro AR-binding + blok miostatyny podwójny efekt, NIE klasyczny rat bioassay).",
   "bindingAffinity": "Sterydowy SARM, powinowactwo AR-binding ~50% poziomu testosteronu in vitro (Kanno 2011). Podwójny mechanizm: agonista AR + upregulation follistatyny (Kanno 2013 w C2C12).",
@@ -76,7 +76,7 @@ export default {
     "Teoretyczna zaleta podwójnego mechanizmu agonista AR + blok miostatyny"
   ],
   "quickStart": [
-    "**HEPATOTOKSYCZNOŚĆ – profil 17α-sterydopodobny. TUDCA 500 mg/dzień + milk-thistle 300 mg/dzień + miesięczne ALT/AST OBOWIĄZKOWE**",
+    "HEPATOTOKSYCZNOŚĆ – profil 17α-sterydopodobny. TUDCA 500 mg/dzień + milk-thistle 300 mg/dzień + miesięczne ALT/AST OBOWIĄZKOWE",
     "Dawka: 5-15 mg/dzień, max 6-8 tygodni cyklu (anegdoty UGL, brak precedensu klinicznego)",
     "Supresja HPTA pełna po 6 tygodniach → PCT (Clomid + Nolvadex 4-6 tygodni) obowiązkowe",
     "Zakazany WADA przez cały rok (3-5 tygodni detekcja w moczu)",
@@ -103,7 +103,7 @@ export default {
       "Wszystko UGL – brak formatu Rx"
     ],
     "caution": [
-      "**Hepatotoksyczność 17α-sterydopodobna – 2 udokumentowane przypadki DILI (Solomon 2019)**",
+      "Hepatotoksyczność 17α-sterydopodobna – 2 udokumentowane przypadki DILI (Solomon 2019)",
       "Pełna supresja HPTA po 6 tygodniach (PCT 4-6 tygodni obowiązkowe)",
       "Zaburzenia lipidowe (spadek HDL ~30-50%)",
       "Precedens kliniczny BRAKUJE – traktować jako compound research-level",
@@ -162,7 +162,7 @@ export default {
     },
     {
       "q": "Czy mechanizm miostatyny daje rzeczywistą przewagę masy mięśniowej?",
-      "a": "**Klinicznie NIE udowodniony.** Kanno 2013 PMID 23291286 in vitro na komórkach myoblastów C2C12 wykazał upregulation follistatyny – ALE rozmiar efektu in vitro jest mały, a blok follistatyna → miostatyna in vivo u ludzi NIE został przetestowany w badaniach klinicznych. Yatsu 2018 PMID 30005896 review traktował twierdzenie marketingowe 'przełamania natural-cap' krytycznie – anegdotyczne raporty UGL cytują 2-4 kg dodatkowego lean mass, ale brak precedensu klinicznego z grupą kontrolną. Koncepcja bloku miostatyny jest ładniejsza na papierze niż w przyroście masy mięśniowej u ludzi."
+      "a": "Klinicznie NIE udowodniony. Kanno 2013 PMID 23291286 in vitro na komórkach myoblastów C2C12 wykazał upregulation follistatyny – ALE rozmiar efektu in vitro jest mały, a blok follistatyna → miostatyna in vivo u ludzi NIE został przetestowany w badaniach klinicznych. Yatsu 2018 PMID 30005896 review traktował twierdzenie marketingowe 'przełamania natural-cap' krytycznie – anegdotyczne raporty UGL cytują 2-4 kg dodatkowego lean mass, ale brak precedensu klinicznego z grupą kontrolną. Koncepcja bloku miostatyny jest ładniejsza na papierze niż w przyroście masy mięśniowej u ludzi."
     },
     {
       "q": "Hepatotoksyczność YK-11 vs klasyczne 17α-metyl AAS?",
@@ -199,7 +199,7 @@ export default {
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Tygodnie 2, 4, 6",
-      "markers": "**ALT/AST/GGT** (>3x norma → NATYCHMIASTOWE odstawienie), lipidowy, hormon (monitor supresji HPTA).",
+      "markers": "ALT/AST/GGT (>3x norma → NATYCHMIASTOWE odstawienie), lipidowy, hormon (monitor supresji HPTA).",
       "purpose": "Monitor wątrobowy KRYTYCZNY."
     },
     "postCycle": {

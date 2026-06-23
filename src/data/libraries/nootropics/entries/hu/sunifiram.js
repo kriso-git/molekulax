@@ -24,7 +24,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Ampakine, AMPA-PAM, sub-mg aktív dózis.",
-  "description": "A Sunifiram (DM-235) piperazin-vázú ampakine, amely a klasszikus pirrolidon-racetamoknál ~1000-szer nagyobb in vivo potencitást mutat, aktív dózisa szub-milligrammos tartományban van. AMPA-receptor pozitív allosztérikus modulátorként és NMDA glicin-helyén indirekt aktiváló hatású; CaMKII + PKC-α szignalizációs pathway aktiválás → LTP-fokozás. Acetilkolin-felszabadulás növelése a cerebrális kéregben. Harangformájú dózis-válasz görbe. **Excitotoxicitás-kockázat** glutamáterg túlserkentés miatt – magas dózisok elkerülése + NMDA-antagonista (pl. Memantine) co-administration mérlegelendő. Tolerancia már 3-4 napos napi szedés után. Csak preklinikai adatok, humán Phase nincs.",
+  "description": "A Sunifiram (DM-235) piperazin-vázú ampakine, amely a klasszikus pirrolidon-racetamoknál ~1000-szer nagyobb in vivo potencitást mutat, aktív dózisa szub-milligrammos tartományban van. AMPA-receptor pozitív allosztérikus modulátorként és NMDA glicin-helyén indirekt aktiváló hatású; CaMKII + PKC-α szignalizációs pathway aktiválás → LTP-fokozás. Acetilkolin-felszabadulás növelése a cerebrális kéregben. Harangformájú dózis-válasz görbe. Excitotoxicitás-kockázat glutamáterg túlserkentés miatt – magas dózisok elkerülése + NMDA-antagonista (pl. Memantine) co-administration mérlegelendő. Tolerancia már 3-4 napos napi szedés után. Csak preklinikai adatok, humán Phase nincs.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",

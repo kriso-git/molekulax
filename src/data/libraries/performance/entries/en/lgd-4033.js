@@ -43,7 +43,7 @@ export default {
   "halfLifeActive": "~24-36 h",
   "interactionsWith": ["rad-140", "ostarine", "milk-thistle", "tudca"],
   "aromatization": "NO – LGD-4033 non-steroidal, NOT a CYP19 substrate. E2 does not rise (Basaria 2013 PMID 23413266 – E2 did not rise significantly at 1 mg/day).",
-  "hepatotoxicity": "**HIGH – 12+ documented hepatocellular injury case reports (Vilaca 2018 PMID 30171122 SARM-DILI review). Hilal 2020 PMID 32492288 RAD+LGD stack fulminant DILI at 9 weeks.** ALT/AST elevation already moderate in Phase I (~2x normal) at 1 mg/day dose; at UGL doses (10-20 mg/day) more severe. TUDCA + milk-thistle + monthly ALT/AST MANDATORY.",
+  "hepatotoxicity": "HIGH – 12+ documented hepatocellular injury case reports (Vilaca 2018 PMID 30171122 SARM-DILI review). Hilal 2020 PMID 32492288 RAD+LGD stack fulminant DILI at 9 weeks. ALT/AST elevation already moderate in Phase I (~2x normal) at 1 mg/day dose; at UGL doses (10-20 mg/day) more severe. TUDCA + milk-thistle + monthly ALT/AST MANDATORY.",
   "wadaStatus": "banned",
   "androgenicRatio": "~70:40 (muscle:prostate selectivity – less than RAD-140, but better than classical AAS).",
   "bindingAffinity": "Non-steroidal SARM, AR-binding affinity ~50-70% of testosterone-level in vitro. Selective tissue conformation: strong agonist in muscle, moderate prostate activity.",
@@ -56,7 +56,7 @@ export default {
     "Long half-life → once-daily dosing"
   ],
   "quickStart": [
-    "**HEPATOTOXICITY MANDATORY MONITORING**: 12+ documented DILI case reports (Vilaca 2018). TUDCA 500 mg/day + milk-thistle 300 mg/day + monthly ALT/AST MANDATORY",
+    "HEPATOTOXICITY MANDATORY MONITORING: 12+ documented DILI case reports (Vilaca 2018). TUDCA 500 mg/day + milk-thistle 300 mg/day + monthly ALT/AST MANDATORY",
     "Dose: 5-10 mg/day, max 8-week cycle (Basaria 2013 Phase I capped at 1 mg max; UGL anecdotes 10-20 mg, but DILI risk scales proportionally)",
     "HPTA suppression dose-dependent, full at UGL doses → PCT (Clomid + Nolvadex 4-6 weeks) mandatory",
     "WADA-banned year-round (2-4 week urinary detection)",
@@ -74,7 +74,7 @@ export default {
       "All UGL – no Rx format"
     ],
     "caution": [
-      "**Hepatotoxicity – 12+ documented DILI case reports (Vilaca 2018 PMID 30171122 review)**",
+      "Hepatotoxicity – 12+ documented DILI case reports (Vilaca 2018 PMID 30171122 review)",
       "Full HPTA suppression at UGL doses",
       "Lipid disturbance (HDL drop ~30-40%)",
       "PCT 4-6 weeks MANDATORY",
@@ -102,7 +102,7 @@ export default {
     {"title": "Drug-induced liver injury from selective androgen receptor modulators, anabolic-androgenic steroids and bodybuilding supplements in Australia.", "authors": "Nash E, Nicoll A, Batt N, Iser D, Sood S", "journal": "Intern Med J", "pmid": "38372012"}
   ],
   "faq": [
-    {"q": "What is the Basaria 2013 Phase I result?", "a": "Basaria 2013 PMID 23413266: 76 healthy men, 3 weeks, dose-escalation 0.1 / 0.3 / 1 mg/day oral LGD-4033 vs placebo. Results: (1) lean body mass gain dose-dependent: 0.75 kg @ 0.3 mg, **1.21 kg @ 1 mg** (placebo +0.18 kg); (2) HPTA: Total T -23%, LH -47%, FSH -42% at 1 mg; (3) Hepatic: moderate ALT elevation at 1 mg (~2x normal vs baseline); (4) Lipid: moderate HDL drop. **Critical**: the clinical trial maxed out at 1 mg/day; UGL bodybuilding context works with 10-20 mg/day doses (10-20x clinical-tested), where DILI risk escalates (Vilaca 2018 case reports). Clinical precedent dose ≠ UGL bodybuilding context dose."},
+    {"q": "What is the Basaria 2013 Phase I result?", "a": "Basaria 2013 PMID 23413266: 76 healthy men, 3 weeks, dose-escalation 0.1 / 0.3 / 1 mg/day oral LGD-4033 vs placebo. Results: (1) lean body mass gain dose-dependent: 0.75 kg @ 0.3 mg, 1.21 kg @ 1 mg (placebo +0.18 kg); (2) HPTA: Total T -23%, LH -47%, FSH -42% at 1 mg; (3) Hepatic: moderate ALT elevation at 1 mg (~2x normal vs baseline); (4) Lipid: moderate HDL drop. Critical: the clinical trial maxed out at 1 mg/day; UGL bodybuilding context works with 10-20 mg/day doses (10-20x clinical-tested), where DILI risk escalates (Vilaca 2018 case reports). Clinical precedent dose ≠ UGL bodybuilding context dose."},
     {"q": "LGD-4033 vs RAD-140 – comparison?", "a": "Both non-steroidal SARMs, similar hepatotoxicity risk (RAD-140 6, LGD 12 documented DILI case reports). Differences: (1) AR binding affinity: RAD-140 ~80%, LGD ~50-70% – RAD more potent in vitro; (2) Selectivity: RAD better-selective muscle > prostate, LGD more moderate; (3) Clinical trial precedent: LGD has Phase I in healthy men (Basaria 2013), RAD-140 only cachexia Phase II (Flores 2020); (4) Hepatic profile: LGD milder (Phase I 2x ALT at 1 mg), RAD more potently hepatotoxic at high doses (Hilal 2020 fulminant at 30 mg). UGL anecdotal: RAD 'stronger' (more muscle gain), LGD 'softer' (less HPTA suppression + side effects)."},
     {"q": "Clinical trial 1 mg vs UGL 10-20 mg – safe?", "a": "NOT clinically validated. Basaria 2013 Phase I tested clinical indications at 1 mg/day (achievable lean mass gain from healthy baseline). Bodybuilding UGL context works at 10-20 mg/day – that is 10-20x clinical dose. In Vilaca 2018 PMID 30171122 SARM-DILI review the 12 LGD-associated hepatocellular injury cases ALL happened at high UGL doses (5-20 mg/day). The clinical precedent is NOT extrapolatable to UGL dose for safety. If you use LGD: 5 mg/day is a modest starting dose, max 10 mg/day, max 8 weeks, mandatory TUDCA + monthly ALT/AST."},
     {"q": "WADA detection for LGD-4033?", "a": "WADA has banned SARMs since 2008 (S1.2 – other anabolic agents). LGD-4033 urinary detection: 2-4 weeks by LC-MS/MS (WADA-accredited). Classical precedent case: 2015 Will Grier (Florida Gators QB, later NFL) LGD-positive test, year-long suspension. Multiple athletes were LGD-positive in 2020 Tokyo Olympics preparation testing. Modern detection sensitivity is high – for competitive athletes ABSOLUTELY to be avoided."}
@@ -124,7 +124,7 @@ export default {
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Weeks 2, 4, 6",
-      "markers": "**ALT/AST/GGT** (>3x normal → IMMEDIATE discontinuation), lipid, hormone (HPTA suppression monitor).",
+      "markers": "ALT/AST/GGT (>3x normal → IMMEDIATE discontinuation), lipid, hormone (HPTA suppression monitor).",
       "purpose": "Hepatic monitoring CRITICAL. SARM-DILI rapid progression (Vilaca 2018 review)."
     },
     "postCycle": {

@@ -46,7 +46,7 @@ export default {
       "value": "USA: FDA Rx (Ventolin/ProAir). HU/EU: Rx (Ventolin). WADA: inhaled <1600 μg permitted."
     }
   ],
-  "mechanism": "Selective β2-adrenoceptor agonist that relaxes airway smooth muscle (bronchodilation). Intracellular cascade identical to Clenbuterol: β2 → Gs-protein → adenylyl cyclase → cAMP → PKA → HSL phosphorylation → lipolysis. **DIFFERENCE vs Clenbuterol: SHORT receptor occupancy** – Albuterol fast dissociation rate avoids chronic β2 down-regulation in tissues, eliminating cardiotoxic accumulation BUT producing faster tolerance (1-2 weeks). Anabolic effect in skeletal muscle is more modest because the shorter half-life prevents accumulation.",
+  "mechanism": "Selective β2-adrenoceptor agonist that relaxes airway smooth muscle (bronchodilation). Intracellular cascade identical to Clenbuterol: β2 → Gs-protein → adenylyl cyclase → cAMP → PKA → HSL phosphorylation → lipolysis. DIFFERENCE vs Clenbuterol: SHORT receptor occupancy – Albuterol fast dissociation rate avoids chronic β2 down-regulation in tissues, eliminating cardiotoxic accumulation BUT producing faster tolerance (1-2 weeks). Anabolic effect in skeletal muscle is more modest because the shorter half-life prevents accumulation.",
   "legalStatus": "USA: FDA Rx (Ventolin, ProAir, Proventil). EU: Rx, available in pharmacies. WADA: inhaled use up to 1600 μg/24 h permitted, oral/IV banned.",
   "onsetTime": "5-15 min (inhaled), 15-30 min (oral)",
   "halfLife": "5-6 h (oral)",
@@ -166,7 +166,7 @@ export default {
     },
     {
       "q": "What is the difference between levalbuterol and racemic albuterol?",
-      "a": "Classic Albuterol is a **racemic mixture**: the (R)-enantiomer is pharmacologically active (β2-receptor-affine), the (S)-enantiomer is inactive or potentially counterproductive (paradoxical bronchoconstriction concern in preclinical models). **Levalbuterol** (Xopenex) is pure (R)-enantiomer, showing **slightly reduced heart-rate elevation and tremor** at equivalent therapeutic efficacy. Due to cost, racemic Albuterol remains the global standard; Levalbuterol is mainly indicated in children or cardio-sensitive patients. In sports context the two are practically equivalent."
+      "a": "Classic Albuterol is a racemic mixture: the (R)-enantiomer is pharmacologically active (β2-receptor-affine), the (S)-enantiomer is inactive or potentially counterproductive (paradoxical bronchoconstriction concern in preclinical models). Levalbuterol (Xopenex) is pure (R)-enantiomer, showing slightly reduced heart-rate elevation and tremor at equivalent therapeutic efficacy. Due to cost, racemic Albuterol remains the global standard; Levalbuterol is mainly indicated in children or cardio-sensitive patients. In sports context the two are practically equivalent."
     }
   ],
   "related": [

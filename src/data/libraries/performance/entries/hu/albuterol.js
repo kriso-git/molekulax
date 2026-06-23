@@ -46,7 +46,7 @@ export default {
       "value": "USA: FDA Rx (Ventolin/ProAir). HU/EU: Rx (Ventolin). WADA: inhaláló <1600 μg engedett."
     }
   ],
-  "mechanism": "Szelektív β2-adrenoceptor agonista, légúti simaizmot ellazítja (bronchodilatáció). Intracelluláris kaszkád azonos a Clenbuterol-éval: β2 → Gs-protein → adenil-cikláz → cAMP → PKA → HSL foszforilálás → lipolízis. **KÜLÖNBSÉG a Clenbuterol-tól: SHORT receptor-occupancy** – az Albuterol gyors dissociation rate-je miatt nincs krónikus β2-down-regulation a szövetekben, ezért a kardiotoxikus akkumuláció elmarad, DE a tolerancia gyorsabban kialakul (1-2 hét). Anabolikus hatás vázizomban szerényebb, mert a rövidebb felezési idő miatt nem akkumulálódik.",
+  "mechanism": "Szelektív β2-adrenoceptor agonista, légúti simaizmot ellazítja (bronchodilatáció). Intracelluláris kaszkád azonos a Clenbuterol-éval: β2 → Gs-protein → adenil-cikláz → cAMP → PKA → HSL foszforilálás → lipolízis. KÜLÖNBSÉG a Clenbuterol-tól: SHORT receptor-occupancy – az Albuterol gyors dissociation rate-je miatt nincs krónikus β2-down-regulation a szövetekben, ezért a kardiotoxikus akkumuláció elmarad, DE a tolerancia gyorsabban kialakul (1-2 hét). Anabolikus hatás vázizomban szerényebb, mert a rövidebb felezési idő miatt nem akkumulálódik.",
   "legalStatus": "USA: FDA Rx (Ventolin, ProAir, Proventil). EU: Rx, Magyarországon gyógyszertári forgalom. WADA: inhalációs használat <1600 μg/24 óra megengedett, oral/intravénás tiltott.",
   "onsetTime": "5-15 min (inhaled), 15-30 min (oral)",
   "halfLife": "5-6 h (oral)",
@@ -166,7 +166,7 @@ export default {
     },
     {
       "q": "Mi a különbség levalbuterol és racemic albuterol között?",
-      "a": "A klasszikus Albuterol egy **racemic keverék**: az (R)-enantiomer a farmakológiailag aktív (β2-receptor-affin), az (S)-enantiomer inaktív vagy potenciálisan kontra-produktív (paradox bronchokonstrikció elméleti aggály preklinikai modellekben). A **Levalbuterol** (Xopenex) tiszta (R)-enantiomer, ami azonos terápiás hatékonyság mellett **kissé csökkent szívritmus-emelést és tremort** mutat klinikai vizsgálatokban. A költségkülönbség miatt a racemic Albuterol marad a globális standard, a Levalbuterol főleg gyermekekben vagy érzékeny kardio-betegnél indikált. Sport-kontextusban a kettő gyakorlatilag egyenértékű."
+      "a": "A klasszikus Albuterol egy racemic keverék: az (R)-enantiomer a farmakológiailag aktív (β2-receptor-affin), az (S)-enantiomer inaktív vagy potenciálisan kontra-produktív (paradox bronchokonstrikció elméleti aggály preklinikai modellekben). A Levalbuterol (Xopenex) tiszta (R)-enantiomer, ami azonos terápiás hatékonyság mellett kissé csökkent szívritmus-emelést és tremort mutat klinikai vizsgálatokban. A költségkülönbség miatt a racemic Albuterol marad a globális standard, a Levalbuterol főleg gyermekekben vagy érzékeny kardio-betegnél indikált. Sport-kontextusban a kettő gyakorlatilag egyenértékű."
     }
   ],
   "related": [

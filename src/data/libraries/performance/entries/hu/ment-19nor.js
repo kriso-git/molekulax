@@ -120,19 +120,19 @@ export default {
     "preCycle": {
       "label": "Ciklus előtt",
       "timing": "2-4 héttel ciklus indítás előtt",
-      "markers": "Hormon-panel: Total T, Free T, E2, LH, FSH, SHBG, **Prolaktin (PR-aktivitás miatt kritikus 19-Nor framework-ben)**, makro-prolaktin-szűrés. Lipid panel. Hepatikus. PSA. Spermiogram (apaság-tervezőknek).",
+      "markers": "Hormon-panel: Total T, Free T, E2, LH, FSH, SHBG, Prolaktin (PR-aktivitás miatt kritikus 19-Nor framework-ben), makro-prolaktin-szűrés. Lipid panel. Hepatikus. PSA. Spermiogram (apaság-tervezőknek).",
       "purpose": "Prolaktin-baseline + makro-prolaktin kritikus a PR-aktivitás miatt. Spermiogram baseline ha apaság-relevant."
     },
     "midCycle": {
       "label": "Ciklus közben",
       "timing": "3-4. hét",
-      "markers": "**Prolaktin (cabergoline-igény elsődleges trigger)**, E2, Total T, lipid panel, hepatikus.",
+      "markers": "Prolaktin (cabergoline-igény elsődleges trigger), E2, Total T, lipid panel, hepatikus.",
       "purpose": "Prolaktin >25 ng/mL → cabergoline-dózisemelés. PR-aktivitás-monitor 19-Nor framework-ben kritikus."
     },
     "postCycle": {
       "label": "PCT (Post-Cycle Therapy)",
       "timing": "Utolsó dózis: Ac +2-3 nap, Enan +14-21 nap PCT-indítás",
-      "markers": "Total T, Free T, LH, FSH, E2, SHBG, **Prolaktin (recovery, 6-12 hónap)**, lipid recovery, spermiogram fertility-relevant esetben.",
+      "markers": "Total T, Free T, LH, FSH, E2, SHBG, Prolaktin (recovery, 6-12 hónap), lipid recovery, spermiogram fertility-relevant esetben.",
       "purpose": "HPTA + PR-axis recovery verifikálás. Spermatogenezis-helyreállás 6-12 hónap PR-aktivitás miatt."
     },
     "cruise": {

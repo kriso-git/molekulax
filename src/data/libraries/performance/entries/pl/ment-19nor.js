@@ -120,19 +120,19 @@ export default {
     "preCycle": {
       "label": "Pre-cykl",
       "timing": "2-4 tygodnie przed startem cyklu",
-      "markers": "Panel hormonalny: Total T, Free T, E2, LH, FSH, SHBG, **Prolaktyna (krytyczna z powodu aktywności PR w ramie 19-Nor)**, badanie makro-prolaktyny. Lipidogram. Wątrobowy. PSA. Spermiogram (dla planujących ojcostwo).",
+      "markers": "Panel hormonalny: Total T, Free T, E2, LH, FSH, SHBG, Prolaktyna (krytyczna z powodu aktywności PR w ramie 19-Nor), badanie makro-prolaktyny. Lipidogram. Wątrobowy. PSA. Spermiogram (dla planujących ojcostwo).",
       "purpose": "Baseline prolaktyny + makro-prolaktyna krytyczne z powodu aktywności PR. Baseline spermiogramu jeśli istotne dla płodności."
     },
     "midCycle": {
       "label": "Mid-cycle",
       "timing": "Tydzień 3-4",
-      "markers": "**Prolaktyna (główny trigger kabergoliny)**, E2, Total T, lipidogram, wątrobowy.",
+      "markers": "Prolaktyna (główny trigger kabergoliny), E2, Total T, lipidogram, wątrobowy.",
       "purpose": "Prolaktyna >25 ng/mL → eskalacja dawki kabergoliny. Monitor aktywności PR krytyczny w ramie 19-Nor."
     },
     "postCycle": {
       "label": "PCT (Post-Cycle Therapy)",
       "timing": "Ostatnia dawka: Ac +2-3 dni, Enan +14-21 dni start PCT",
-      "markers": "Total T, Free T, LH, FSH, E2, SHBG, **Prolaktyna (odzyskanie, 6-12 miesięcy)**, odzyskanie lipidów, spermiogram jeśli istotne dla płodności.",
+      "markers": "Total T, Free T, LH, FSH, E2, SHBG, Prolaktyna (odzyskanie, 6-12 miesięcy), odzyskanie lipidów, spermiogram jeśli istotne dla płodności.",
       "purpose": "Weryfikacja odzyskania HPTA + osi PR. Odzyskanie spermatogenezy 6-12 miesięcy z powodu aktywności PR."
     },
     "cruise": {

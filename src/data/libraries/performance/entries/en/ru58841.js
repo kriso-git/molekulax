@@ -29,7 +29,7 @@ export default {
   "accentColor": "#a78bfa",
   "tagColor": "rgba(167,139,250,0.18)",
   "shortDesc": "Peripheral non-steroidal AR antagonist (NOT a 5α-reductase inhibitor) – Roussel-Uclaf 1992 designer. Topical AGA research chemical. Phase II terminated 1996 due to systemic feminization. Modern UGL formulations' local-only claim has sparse supporting data.",
-  "description": "**IMPORTANT mechanism-clarification**: RU58841 (PSK-3841 / HMR-3841) is **NOT** a 5α-reductase inhibitor (like finasteride/dutasteride), but a **peripheral androgen receptor (AR) antagonist**. Designed by Roussel-Uclaf laboratory in 1992 (Sawaya 1997 PMID 9224249) for topical treatment of androgenetic alopecia (AGA): the compound competitively binds AR at scalp follicular tissue, blocking the downstream effect of DHT (and testosterone) androgenic signaling – **it does NOT inhibit DHT conversion, but rather neutralizes the DHT effect at the hair-follicle level**. Phase II clinical trials were terminated in 1996 by the industrial producer (Hoechst Marion Roussel, later Sanofi-Aventis), after feminizing effects (gynecomastia formation, sexual dysfunction) appeared in test populations on systemic absorption. Modern UGL formulations (5% solution in ethanol/propylene glycol) base their local-only claim – via rapid serum esterase inactivation – on sparse in vivo data with contradictory case reports of systemic effects. Tier 2 (research-level, Phase II terminated, UGL-only). Designer-purple accent `#a78bfa` per spec § 3.3. **NOT** a 5AR substrate mechanism – classified under the 5AR sub-section due to use-case grouping convention (AAS hair-loss-prevention shared goal with finasteride/dutasteride).",
+  "description": "IMPORTANT mechanism-clarification: RU58841 (PSK-3841 / HMR-3841) is NOT a 5α-reductase inhibitor (like finasteride/dutasteride), but a peripheral androgen receptor (AR) antagonist. Designed by Roussel-Uclaf laboratory in 1992 (Sawaya 1997 PMID 9224249) for topical treatment of androgenetic alopecia (AGA): the compound competitively binds AR at scalp follicular tissue, blocking the downstream effect of DHT (and testosterone) androgenic signaling – it does NOT inhibit DHT conversion, but rather neutralizes the DHT effect at the hair-follicle level. Phase II clinical trials were terminated in 1996 by the industrial producer (Hoechst Marion Roussel, later Sanofi-Aventis), after feminizing effects (gynecomastia formation, sexual dysfunction) appeared in test populations on systemic absorption. Modern UGL formulations (5% solution in ethanol/propylene glycol) base their local-only claim – via rapid serum esterase inactivation – on sparse in vivo data with contradictory case reports of systemic effects. Tier 2 (research-level, Phase II terminated, UGL-only). Designer-purple accent `#a78bfa` per spec § 3.3. NOT a 5AR substrate mechanism – classified under the 5AR sub-section due to use-case grouping convention (AAS hair-loss-prevention shared goal with finasteride/dutasteride).",
   "keyInfo": [
     {
       "label": "Mechanism",
@@ -52,7 +52,7 @@ export default {
       "value": "NO FDA/EMA approval, NO HU/PL Rx, research-chemical vendor only, WADA banned (S1 anabolic agent related)"
     }
   ],
-  "mechanism": "RU58841 is a 4,4-dimethyl-imidazolinedione-structure non-steroidal compound. Sawaya 1997 PMID 9224249 documented the peripheral AR binding blockade mechanism: the compound binds in vitro with Ki ~0.5 nM AR affinity (competitively against DHT with Ki ~5 nM), blocking AR of the hair follicle without affecting the 5α-reductase enzyme. **This critically differs from the finasteride/dutasteride mechanism**: finasteride/dutasteride inhibit DHT conversion (substrate level), RU58841 neutralizes the DHT effect at the AR level (receptor level). Designed advantage: local-only effect, rapid serum esterase inactivation avoids systemic AR blockade. In Phase I trial (Battmann 1994 PMID 7969105), topical 1% solution application showed low serum AR exposure, BUT Phase II at ~5% dose documented cases of systemic feminizing effects. Modern UGL 5% solution – higher than Phase I dose, the claim rests on effective serum esterase clearance, but in vivo confirmation is incomplete.",
+  "mechanism": "RU58841 is a 4,4-dimethyl-imidazolinedione-structure non-steroidal compound. Sawaya 1997 PMID 9224249 documented the peripheral AR binding blockade mechanism: the compound binds in vitro with Ki ~0.5 nM AR affinity (competitively against DHT with Ki ~5 nM), blocking AR of the hair follicle without affecting the 5α-reductase enzyme. This critically differs from the finasteride/dutasteride mechanism: finasteride/dutasteride inhibit DHT conversion (substrate level), RU58841 neutralizes the DHT effect at the AR level (receptor level). Designed advantage: local-only effect, rapid serum esterase inactivation avoids systemic AR blockade. In Phase I trial (Battmann 1994 PMID 7969105), topical 1% solution application showed low serum AR exposure, BUT Phase II at ~5% dose documented cases of systemic feminizing effects. Modern UGL 5% solution – higher than Phase I dose, the claim rests on effective serum esterase clearance, but in vivo confirmation is incomplete.",
   "legalStatus": "Globally NOT registered: Phase II terminated 1996 due to systemic feminization (Hoechst Marion Roussel, later Sanofi-Aventis). NO FDA/EMA/HU/PL Rx. Research-chemical vendor only (US/EU/Asia UGL channels). WADA: S1 anabolic agent – banned under Other Anabolic Agents category (chemically related, AR modulator).",
   "onsetTime": "Scalp AR blockade immediate, hair stabilization 3-6 months (in vivo data sparse)",
   "halfLife": "Topical minimal systemic absorption (claim, in vivo data sparse)",
@@ -92,7 +92,7 @@ export default {
     },
     {
       "label": "Long-term (6+ months)",
-      "body": "Phase II termination evidence: systemic feminizing effect possible (gynecomastia, sexual dysfunction), particularly at higher dose (5%+ solution) or large scalp area application. **NO** long-term safety evidence."
+      "body": "Phase II termination evidence: systemic feminizing effect possible (gynecomastia, sexual dysfunction), particularly at higher dose (5%+ solution) or large scalp area application. NO long-term safety evidence."
     },
     {
       "label": "After cessation",
@@ -106,7 +106,7 @@ export default {
       "Some compounding pharmacies (US/EU specialty) make custom formulations off-label research context"
     ],
     "caution": [
-      "**NO Phase III safety evidence** – Phase II terminated due to systemic feminization",
+      "NO Phase III safety evidence – Phase II terminated due to systemic feminization",
       "On systemic absorption: gynecomastia, sexual dysfunction, prostate function disturbance (chronic use case reports)",
       "WADA S1 anabolic-related – competition-banned",
       "Modern UGL formulations in vivo data sparse – based on community-level evidence",
@@ -155,7 +155,7 @@ export default {
   "faq": [
     {
       "q": "Is RU58841 a 5α-reductase inhibitor?",
-      "a": "**NO** – this is the most common misconception. RU58841 is a **peripheral androgen receptor (AR) antagonist**, NOT a 5α-reductase inhibitor (like finasteride/dutasteride). Mechanism difference is critical: (1) **Finasteride/dutasteride** inhibit testosterone → DHT conversion (at the 5AR enzyme level); reducing DHT level throughout the body; (2) **RU58841** blocks DHT receptor binding at the scalp level; DHT level does NOT decrease, but the AR signal in the follicle is switched off. Practical consequence: finasteride/dutasteride cause systemic DHT suppression (PFS risk); RU58841 only scalp-level AR blockade (claim), BUT Phase II evidence indicates systemic AR blockade can occur at higher doses (feminizing effect)."
+      "a": "NO – this is the most common misconception. RU58841 is a peripheral androgen receptor (AR) antagonist, NOT a 5α-reductase inhibitor (like finasteride/dutasteride). Mechanism difference is critical: (1) Finasteride/dutasteride inhibit testosterone → DHT conversion (at the 5AR enzyme level); reducing DHT level throughout the body; (2) RU58841 blocks DHT receptor binding at the scalp level; DHT level does NOT decrease, but the AR signal in the follicle is switched off. Practical consequence: finasteride/dutasteride cause systemic DHT suppression (PFS risk); RU58841 only scalp-level AR blockade (claim), BUT Phase II evidence indicates systemic AR blockade can occur at higher doses (feminizing effect)."
     },
     {
       "q": "Why classified in the 5AR sub-section?",
@@ -163,7 +163,7 @@ export default {
     },
     {
       "q": "Availability and UGL risk?",
-      "a": "RU58841 has **NO** pharma-grade source – research-chemical vendor only (Sigma-Aldrich synthesis grade, specialty research pharm). UGL 5% solution in ethanol/propylene glycol vehicle is the standard formulation in research context, but vendor purity is often <90% (HPLC testing required). Source risks: (1) substrate pseudo (vendor sells placebo vehicle); (2) non-stable compound (solution stable refrigerated, <50% potency after 6 months at room temperature); (3) vendor vehicle contamination (chronic scalp irritation, allergy). 2-3 verified-source community-rated remain in 2024-25 (r/RU58841 community tracking)."
+      "a": "RU58841 has NO pharma-grade source – research-chemical vendor only (Sigma-Aldrich synthesis grade, specialty research pharm). UGL 5% solution in ethanol/propylene glycol vehicle is the standard formulation in research context, but vendor purity is often <90% (HPLC testing required). Source risks: (1) substrate pseudo (vendor sells placebo vehicle); (2) non-stable compound (solution stable refrigerated, <50% potency after 6 months at room temperature); (3) vendor vehicle contamination (chronic scalp irritation, allergy). 2-3 verified-source community-rated remain in 2024-25 (r/RU58841 community tracking)."
     },
     {
       "q": "Systemic feminization risk?",
@@ -171,7 +171,7 @@ export default {
     },
     {
       "q": "Clinical trial status?",
-      "a": "Phase II terminated 1996 (Hoechst Marion Roussel, then Sanofi-Aventis), due to systemic feminization. **NO** Phase III trial. NO modern pharmaceutical pipeline intent (last pharmaceutical company interest around 2000 ceased). Olsen 2018 emerging AGA pipeline review (PMID 30041755) mentions as historical designer molecule, not a modern pipeline candidate. AGA-research-chemical community-level interest is ongoing, BUT pharmaceutical pipeline resurrection is not expected. Current research context: 'what could be if Phase III had been completed' – community extrapolation from Phase I/II data, NOT modern pharmaceutical evidence."
+      "a": "Phase II terminated 1996 (Hoechst Marion Roussel, then Sanofi-Aventis), due to systemic feminization. NO Phase III trial. NO modern pharmaceutical pipeline intent (last pharmaceutical company interest around 2000 ceased). Olsen 2018 emerging AGA pipeline review (PMID 30041755) mentions as historical designer molecule, not a modern pipeline candidate. AGA-research-chemical community-level interest is ongoing, BUT pharmaceutical pipeline resurrection is not expected. Current research context: 'what could be if Phase III had been completed' – community extrapolation from Phase I/II data, NOT modern pharmaceutical evidence."
     }
   ],
   "related": [
@@ -212,7 +212,7 @@ export default {
       "label": "Chronic research application on AAS cruise",
       "timing": "0.5-1 mL once daily topical",
       "markers": "Annually: IIEF-5, PHQ-9, DHT, Total Test, gyno screen ultrasound (long-term feminizing effect monitor).",
-      "purpose": "Chronic research context: in vivo safety data incomplete, annual clinical screen prudent. **NOT** recommended for long-term chronic application – research-chemical status and sparse evidence."
+      "purpose": "Chronic research context: in vivo safety data incomplete, annual clinical screen prudent. NOT recommended for long-term chronic application – research-chemical status and sparse evidence."
     }
   },
   "anecdote": "RU-58841 is described in anecdotal accounts as a solid and accessible topical anti-androgen. Community members report that users running heavy AAS cycles often notice hair shedding subsiding when applying it topically to affected areas. It is generally regarded as an effective first-line topical option compared to systemic DHT blockers, since DHT serves physiological roles and broad pharmacological suppression carries tradeoffs. Some accounts now prefer pyrilutamide (Topilutumide) over RU-58841, citing potentially lower systemic risk and comparable efficacy. RU-58841 is intended for topical application only and should not be ingested orally. Overall, it remains one of the more established topical anti-androgens in community use for managing AAS-related hair loss."

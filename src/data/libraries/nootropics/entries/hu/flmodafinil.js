@@ -25,7 +25,7 @@ export default {
   "accentColor": "#fbbf24",
   "tagColor": "rgba(251,191,36,0.18)",
   "shortDesc": "Biszfluor-modafinil (CRL-40,940), kb. 3× potensebb in vivo.",
-  "description": "A Flmodafinil (CRL-40,940, lauflumide) a Modafinil bisz-(p-fluor) fenil-szubsztitúciós származéka, racém keverék. Állat-modellekben kb. 3-szor nagyobb in vivo potencitást írtak le; vízoldékonysága és biológiai hasznosulása jobb, mint a Modafiniltíl. Klinikai trial-okban Modafinilnél **jobban tolerálható, kevesebb adrenerg-szerű mellékhatás**, és **kisebb negatív hatás az alvás-architektúrára** (PMC 6104159). Mechanizmus: atípusos DAT-gátlás (Methylphenidate-szerű profil), orexin/hisztamin modulációval kiegészítve. Modafinilnél kevesebb CYP-enzim-interakció (PMID 38852786) → kevesebb gyógyszer-kölcsönhatás. Humán Phase 1 vizsgálatok zajlottak, de nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja.",
+  "description": "A Flmodafinil (CRL-40,940, lauflumide) a Modafinil bisz-(p-fluor) fenil-szubsztitúciós származéka, racém keverék. Állat-modellekben kb. 3-szor nagyobb in vivo potencitást írtak le; vízoldékonysága és biológiai hasznosulása jobb, mint a Modafiniltíl. Klinikai trial-okban Modafinilnél jobban tolerálható, kevesebb adrenerg-szerű mellékhatás, és kisebb negatív hatás az alvás-architektúrára (PMC 6104159). Mechanizmus: atípusos DAT-gátlás (Methylphenidate-szerű profil), orexin/hisztamin modulációval kiegészítve. Modafinilnél kevesebb CYP-enzim-interakció (PMID 38852786) → kevesebb gyógyszer-kölcsönhatás. Humán Phase 1 vizsgálatok zajlottak, de nem jóváhagyott gyógyszer. UK-ban a Psychoactive Substances Act tiltja.",
   "keyInfo": [
     {
       "label": "Hatásmechanizmus",

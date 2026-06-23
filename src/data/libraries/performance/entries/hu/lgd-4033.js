@@ -43,7 +43,7 @@ export default {
   "halfLifeActive": "~24-36 h",
   "interactionsWith": ["rad-140", "ostarine", "milk-thistle", "tudca"],
   "aromatization": "NEM – LGD-4033 non-szteroidal, NEM CYP19-szubsztrát. E2 nem emelkedik (Basaria 2013 PMID 23413266 – E2 1 mg/nap-on nem nőtt szignifikánsan).",
-  "hepatotoxicity": "**MAGAS – 12+ dokumentált hepatocellular injury esetjelentés (Vilaca 2018 PMID 30171122 SARM-DILI review). Hilal 2020 PMID 32492288 RAD+LGD stack-en fulmináns DILI 9 hét.** ALT/AST emelkedés Phase I-ben már mérsékelt (~2x normál) 1 mg/nap dózison; UGL-dózisokon (10-20 mg/nap) súlyosabb. TUDCA + milk-thistle + havi ALT/AST KÖTELEZŐ.",
+  "hepatotoxicity": "MAGAS – 12+ dokumentált hepatocellular injury esetjelentés (Vilaca 2018 PMID 30171122 SARM-DILI review). Hilal 2020 PMID 32492288 RAD+LGD stack-en fulmináns DILI 9 hét. ALT/AST emelkedés Phase I-ben már mérsékelt (~2x normál) 1 mg/nap dózison; UGL-dózisokon (10-20 mg/nap) súlyosabb. TUDCA + milk-thistle + havi ALT/AST KÖTELEZŐ.",
   "wadaStatus": "banned",
   "androgenicRatio": "~70:40 (izom:prosztata szelektivitás – kisebb mint RAD-140-en, de jobb mint klasszikus AAS-eken).",
   "bindingAffinity": "Non-szteroidal SARM, AR-binding-affinitása ~50-70% testosterone-szintű in vitro. Szelektív tissue-konformáció: erős agonista izomban, mérsékelt prosztata-aktivitás.",
@@ -56,7 +56,7 @@ export default {
     "Hosszú felezési idő → napi 1x dosing"
   ],
   "quickStart": [
-    "**HEPATOTOXICITÁS KÖTELEZŐ MONITOR**: 12+ dokumentált DILI esetjelentés (Vilaca 2018). TUDCA 500 mg/nap + milk-thistle 300 mg/nap + havi ALT/AST KÖTELEZŐ",
+    "HEPATOTOXICITÁS KÖTELEZŐ MONITOR: 12+ dokumentált DILI esetjelentés (Vilaca 2018). TUDCA 500 mg/nap + milk-thistle 300 mg/nap + havi ALT/AST KÖTELEZŐ",
     "Dózis: 5-10 mg/nap, max 8 hét ciklus (Basaria 2013 Phase I 1 mg max-szal dolgozott; UGL-anekdoták 10-20 mg, de DILI-rizikó arányosan nő)",
     "HPTA-szuppresszió dose-dependent, UGL-dózisokon teljes → PCT (Clomid + Nolvadex 4-6 hét) kötelező",
     "WADA tiltott egész évben (2-4 hét vizelet-detection)",
@@ -74,7 +74,7 @@ export default {
       "Mind UGL – nincs Rx-formátum"
     ],
     "caution": [
-      "**Hepatotoxicitás – 12+ dokumentált DILI esetjelentés (Vilaca 2018 PMID 30171122 review)**",
+      "Hepatotoxicitás – 12+ dokumentált DILI esetjelentés (Vilaca 2018 PMID 30171122 review)",
       "Teljes HPTA-szuppresszió UGL-dózisokon",
       "Lipid-zavar (HDL csökkenés ~30-40%)",
       "PCT 4-6 hét KÖTELEZŐ",
@@ -102,7 +102,7 @@ export default {
     {"title": "Drug-induced liver injury from selective androgen receptor modulators, anabolic-androgenic steroids and bodybuilding supplements in Australia.", "authors": "Nash E, Nicoll A, Batt N, Iser D, Sood S", "journal": "Intern Med J", "pmid": "38372012"}
   ],
   "faq": [
-    {"q": "Mi a Basaria 2013 Phase I eredmény?", "a": "Basaria 2013 PMID 23413266: 76 egészséges férfi, 3 hét, dose-escalation 0,1 / 0,3 / 1 mg/nap orális LGD-4033 vs placebo. Eredmények: (1) lean body mass gain dose-dependent: 0,75 kg @ 0,3 mg, **1,21 kg @ 1 mg** (placebo +0,18 kg); (2) HPTA: Total T -23%, LH -47%, FSH -42% 1 mg-on; (3) Hepatikus: mérsékelt ALT-emelkedés 1 mg-on (~2x normál baseline-ban); (4) Lipid: HDL csökkenés mérsékelt. **Kritikus**: a klinikai trial 1 mg/nap-on max-elt; UGL-bodybuilding-kontextus 10-20 mg/nap dózisokon dolgozik (10-20x klinikai-tested), ahol a DILI-rizikó eskalálódik (Vilaca 2018 esetjelentések). Klinikai-precedens dose ≠ UGL-bodybuilding-context dose."},
+    {"q": "Mi a Basaria 2013 Phase I eredmény?", "a": "Basaria 2013 PMID 23413266: 76 egészséges férfi, 3 hét, dose-escalation 0,1 / 0,3 / 1 mg/nap orális LGD-4033 vs placebo. Eredmények: (1) lean body mass gain dose-dependent: 0,75 kg @ 0,3 mg, 1,21 kg @ 1 mg (placebo +0,18 kg); (2) HPTA: Total T -23%, LH -47%, FSH -42% 1 mg-on; (3) Hepatikus: mérsékelt ALT-emelkedés 1 mg-on (~2x normál baseline-ban); (4) Lipid: HDL csökkenés mérsékelt. Kritikus: a klinikai trial 1 mg/nap-on max-elt; UGL-bodybuilding-kontextus 10-20 mg/nap dózisokon dolgozik (10-20x klinikai-tested), ahol a DILI-rizikó eskalálódik (Vilaca 2018 esetjelentések). Klinikai-precedens dose ≠ UGL-bodybuilding-context dose."},
     {"q": "LGD-4033 vs RAD-140 – összehasonlítás?", "a": "Mindkettő non-szteroidal SARM, hasonló hepatotoxicitás-rizikó (RAD-140 6, LGD 12 dokumentált DILI esetjelentés). Különbségek: (1) AR-binding affinity: RAD-140 ~80%, LGD ~50-70% – RAD potensebb in vitro; (2) Selektivitás: RAD jobban szelektív izom > prosztata, LGD mérsékeltebb; (3) Klinikai trial-precedens: LGD-nek van Phase I egészséges férfi-trial (Basaria 2013), RAD-140-nek csak cachexia-Phase II (Flores 2020); (4) Hepatikus profil: LGD enyhébb (Phase I 2x ALT 1 mg-on), RAD potensebben hepatotoxikus magas dózison (Hilal 2020 fulmináns 30 mg-on). UGL-anekdotikus: RAD 'erősebb' (több izom-gain), LGD 'lágyabb' (kisebb HPTA-szuppresszió + mellékhatások)."},
     {"q": "Klinikai trial 1 mg-on vs UGL 10-20 mg – biztonságos?", "a": "NEM klinikailag validált. Basaria 2013 Phase I a klinikai indikációkat 1 mg/nap-on tesztelte (lean mass gain elérése egészséges-baseline-ról). Bodybuilding-UGL-kontextus 10-20 mg/nap-on dolgozik – ez 10-20x klinikai dózis. Vilaca 2018 PMID 30171122 SARM-DILI review-jában a 12 LGD-asszociált hepatocellular injury eset MIND magas UGL-dózison (5-20 mg/nap) történt. A klinikai-precedens NEM extrapolálható UGL-dózisra biztonság-szempontból. Ha LGD-t használnál: 5 mg/nap egészen modesztaként kezdődő dózis, max 10 mg/nap, max 8 hét, kötelező TUDCA + havi ALT/AST."},
     {"q": "WADA-detection LGD-4033-ra?", "a": "WADA 2008-óta tiltja az SARM-eket (S1.2 – egyéb anabolic agent). LGD-4033 vizelet-detection: 2-4 hét LC-MS/MS-en (WADA-akkreditált). Klasszikus precedens-eset: 2015-ben Will Grier (Florida Gators QB, később NFL) LGD-pozitív teszt, év-szuszpenzió. 2020-as Tokyo Olimpia előkészítő-tesztelésen több atléta LGD-pozitív (FDP). Modern detection-szenzitivitás magas – versenyzők számára ABSZOLÚT kerülendő."}
@@ -124,7 +124,7 @@ export default {
     "midCycle": {
       "label": "Ciklus közben",
       "timing": "2., 4., 6. hét",
-      "markers": "**ALT/AST/GGT** (>3x normál → AZONNAL leállítás), lipid, hormon (HPTA-szuppresszió monitor).",
+      "markers": "ALT/AST/GGT (>3x normál → AZONNAL leállítás), lipid, hormon (HPTA-szuppresszió monitor).",
       "purpose": "Hepatikus monitor KRITIKUS. SARM-DILI gyors progresszió (Vilaca 2018 review)."
     },
     "postCycle": {
