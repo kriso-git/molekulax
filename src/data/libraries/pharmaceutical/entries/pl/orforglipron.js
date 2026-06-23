@@ -28,19 +28,41 @@ export default {
   "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
-  "shortDesc": "Doustny mało-cząsteczkowy agonista receptora GLP-1 Eli Lilly (LY3502970), raz dziennie. Fazy 3 obesity (ATTAIN) + T2DM (ACHIEVE) w toku. Zatwierdzenie FDA spodziewane 2026-2027. NIE peptyd – doustna alternatywa dla klasycznych iniekcyjnych GLP-1 RA (Semaglutid, Liraglutyd).",
-  "description": "Orforglipron (LY3502970) to Eli Lilly raz dziennie, mało-cząsteczkowy doustny agonista receptora GLP-1. Strukturalnie NIE jest peptydem – mała cząsteczka organiczna, która aktywuje receptor GLP-1 w sposób biased-agonist, wyłącznie ścieżką Gs, z pominięciem ścieżki β-arrestyny. To tłumaczy profil kliniczny: skuteczność redukcji masy ciała + HbA1c, mniejsza częstość żołądkowo-jelitowych skutków ubocznych niż w iniekcyjnych peptydowych GLP-1 RA (Semaglutid, Liraglutyd). Badanie Phase 2 ATTAIN-1 (Wharton 2023 NEJM PMID 37356087) wykazało ~14,7% redukcji masy ciała w grupie wysokiej dawki w ciągu 36 tygodni u pacjentów z otyłością – porównywalnie z iniekcyjnym Semaglutidem 2,4 mg/tydzień STEP-1 (~14,9% w 68 tygodni). Phase 2 T2DM (Frías 2023 NEJM PMID 37356866) redukcja HbA1c ~2,0% w 26 tygodni. W 2026 trwają Phase 3 ATTAIN-1 (obesity) + ATTAIN-2 (obesity + T2DM) + ACHIEVE-1 (T2DM); złożenie NDA spodziewane w połowie 2026. Konkurenci: Pfizer Danuglipron (Phase 2-3, problemy z wątrobą), Roche CT-388 i Structure Therapeutics GSBR-1290 (oralne peptido-mimetyki).",
-  "mechanism": "Mało-cząsteczkowy biased agonista receptora GLP-1 – selektywnie aktywuje ścieżkę Gs (wzrost cAMP → wydzielanie insuliny + zwolnienie opróżniania żołądka + uczucie sytości), minimalnie ścieżkę β-arrestyny (tłumaczy mniejszą częstość skutków ubocznych GI). Doustna biodostępność niska (~6-9%), ale długi okres półtrwania (~29-49 h) wspiera dawkowanie raz dziennie. NIE peptyd – nie podatny na żołądkową proteolizę, interakcja z jedzeniem minimalna.",
-  "legalStatus": "Faza badań klinicznych (Phase 3, 2026). Złożenie NDA spodziewane w połowie 2026. Zatwierdzenie FDA spodziewane 2026-2027. UE/HU/PL: NIE zarejestrowany.",
-  "bioavailability": "~6-9% (doustnie, niska – ale wystarczająca do dawkowania raz dziennie z uwagi na długi t1/2; Frías 2023 PMID 37356866 PK appendix)",
-  "onsetTime": "Tmax 3-5 h (szczyt stężenia osoczowego), efekt kliniczny w 2-4 tygodnie w steady-state",
+  "shortDesc": "Doustny, drobnocząsteczkowy agonista receptora GLP-1 firmy Eli Lilly, raz dziennie (Foundayo, zatwierdzony przez FDA w kwietniu 2026). Nie jest peptydem – doustna alternatywa dla iniekcyjnych agonistów GLP-1 (semaglutyd, liraglutyd) w przewlekłym leczeniu masy ciała.",
+  "description": "Orforglipron (LY3502970) to doustny, drobnocząsteczkowy agonista receptora GLP-1 firmy Eli Lilly, raz dziennie, zatwierdzony przez FDA 1 kwietnia 2026 jako Foundayo do przewlekłego leczenia masy ciała (otyłość lub nadwaga z co najmniej jedną chorobą współistniejącą związaną z masą ciała, wraz z dietą i wysiłkiem). Strukturalnie nie jest peptydem – mała cząsteczka organiczna aktywująca receptor GLP-1, odporna na trawienie żołądkowe, przyjmowana raz dziennie niezależnie od posiłków. Badanie fazy 3 ATTAIN-1 (Wharton 2025 NEJM) wykazało ~12,4% redukcji masy ciała po 72 tygodniach w grupie najwyższej dawki wobec ~0,9% dla placebo (3127 uczestników bez cukrzycy). Biodostępność doustna wynosi ~77%, a długi okres półtrwania (~29-49 godz.) umożliwia dawkowanie raz dziennie. Wskazanie w cukrzycy typu 2 (program ACHIEVE) oraz rejestracja w UE są w toku.",
+  "keyInfo": [
+    {
+      "label": "Kod ATC",
+      "value": "Brak (jeszcze nie w indeksie ATC WHO)"
+    },
+    {
+      "label": "Status recepty",
+      "value": "Na receptę (Rx), FDA 2026 (Foundayo)"
+    },
+    {
+      "label": "Mechanizm",
+      "value": "Doustny drobnocząsteczkowy agonista receptora GLP-1"
+    },
+    {
+      "label": "Okres półtrwania",
+      "value": "29-49 godz. (raz dziennie)"
+    },
+    {
+      "label": "Początek",
+      "value": "Tmax 4-8 godz.; pełny efekt masy ciała w ciągu miesięcy"
+    }
+  ],
+  "mechanism": "Doustny drobnocząsteczkowy agonista receptora GLP-1: wiążąc się z receptorem GLP-1 nasila glukozozależne wydzielanie insuliny, spowalnia opróżnianie żołądka i zmniejsza apetyt. Nie jest peptydem, więc jest odporny na trawienie żołądkowe; doustna bezwzględna biodostępność wynosi ~77%, a długi okres półtrwania (~29-49 godz.) umożliwia dawkowanie raz dziennie, niezależnie od posiłków.",
+  "legalStatus": "Zatwierdzony przez FDA 1 kwietnia 2026 (Foundayo, Eli Lilly) do przewlekłego leczenia masy ciała. UE/HU/PL: jeszcze niezarejestrowany (w toku). Ostrzeżenie w ramce: ryzyko guzów komórek C tarczycy (MTC/MEN-2).",
+  "bioavailability": "~77% (doustnie, bezwzględna – etykieta FDA Foundayo); długi okres półtrwania umożliwia dawkowanie raz dziennie",
+  "onsetTime": "Tmax 4-8 godz. (szczyt w osoczu); pełny efekt obniżający masę ciała rozwija się w ciągu miesięcy",
   "halfLife": "~29-49 godzin (dawkowanie raz dziennie osiąga steady-state w 7-10 dni)",
-  "atcCode": "Jeszcze nie przypisany (Phase 3)",
-  "prescriptionStatus": "Faza badań klinicznych (jeszcze NIE Rx)",
+  "atcCode": "Jeszcze nieprzypisany (brak w indeksie ATC WHO)",
+  "prescriptionStatus": "Na receptę (Rx); zatwierdzony przez FDA 2026 (Foundayo)",
   "indications": [
-    "Otyłość (Phase 3 ATTAIN-1/2 – spodziewane wskazanie 2026-2027)",
-    "Cukrzyca typu 2 (Phase 3 ACHIEVE – spodziewane wskazanie)",
-    "MASH (off-label kierunek badawczy)"
+    "Przewlekłe leczenie masy ciała: otyłość (BMI >=30) lub nadwaga (BMI >=27) z co najmniej jedną chorobą współistniejącą związaną z masą ciała",
+    "Wraz z dietą i zwiększoną aktywnością fizyczną, do długoterminowego utrzymania masy ciała",
+    "Cukrzyca typu 2: faza badań (program ACHIEVE, jeszcze niezatwierdzone wskazanie)"
   ],
   "contraindications": [
     "Wywiad rdzeniastego raka tarczycy (zespół MEN-2) – efekt klasowy dla wszystkich GLP-1 RA",
@@ -83,8 +105,8 @@ export default {
   ],
   "doseCalc": {
     "type": "fixedDose",
-    "fixedDose": {"low": 3, "medium": 12, "high": 36},
-    "unit": "mg/dzień (doustnie, raz dziennie)",
-    "note": "Protokół kliniczny: start 3 mg, titracja co 4 tygodnie. Kroki: 3 → 6 → 12 → 24 → 36 mg/dzień. Max ~36 mg/dzień. NIGDY nie pomijać titrowania z powodu skutków GI. Niezależnie od posiłków, raz dziennie o dowolnej porze."
+    "fixedDose": {"low": 0.8, "medium": 5.5, "high": 17.2},
+    "unit": "mg/dobę (doustnie, raz dziennie)",
+    "note": "Protokół FDA: start od 0,8 mg, titracja co najmniej co 30 dni: 0,8 -> 2,5 -> 5,5 -> 9 / 14,5 / 17,2 mg/dobę. Maks. 17,2 mg/dobę. Stopniowa titracja jest wymagana ze względu na działania żołądkowo-jelitowe. Raz dziennie, o dowolnej porze, niezależnie od posiłków."
   }
 }

@@ -1,7 +1,7 @@
 // Orforglipron (LY3502970) – Eli Lilly orális kis-molekulájú GLP-1 receptor
 // agonist. NEM peptid – kis molekula, ezért a pharmaceutical libben (NEM peptid).
-// Phase 3 obesity (ATTAIN) + T2DM (ACHIEVE) trial-ok 2026-ban folyamatban,
-// FDA-jóváhagyás várt 2026-2027.
+// FDA-approved 2026-04-01 as Foundayo (Eli Lilly) for chronic weight management.
+// Phase 3 ATTAIN-1 (obesity, NEJM 2025); T2DM (ACHIEVE) + EU authorisation pending.
 // Sources: Wharton 2023 NEJM Phase 2 obesity PMID 37356087, Frías 2023 NEJM
 // Phase 2 T2DM PMID 37356866.
 
@@ -28,19 +28,41 @@ export default {
   "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
-  "shortDesc": "Eli Lilly napi egyszer szedhető, KIS MOLEKULÁJÚ ORÁLIS GLP-1 receptor agonista (LY3502970). Phase 3 obesity (ATTAIN) + T2DM (ACHIEVE) folyamatban. Várt FDA-jóváhagyás 2026-2027. NEM peptid – a klasszikus injektábilis GLP-1 RA-k (Semaglutide, Liraglutide) orális alternatívája.",
-  "description": "Az Orforglipron (LY3502970) az Eli Lilly napi egyszer szedhető, kis molekulájú orális GLP-1 receptor agonistája. Strukturálisan NEM peptid – egy kicsi szerves molekula, amely a GLP-1 receptort biased-agonist módon aktiválja, kizárólag a Gs-pathway-en, kihagyva a β-arrestin-pathway-t. Ez magyarázza a klinikai profilját: jó hatékonyság testtömeg-csökkentésre + HbA1c-re, kisebb gasztrointesztinális mellékhatás-incidencia mint az injektábilis peptid-GLP-1 RA-knál (Semaglutide, Liraglutide). A Phase 2 ATTAIN-1 trial (Wharton 2023 NEJM PMID 37356087) 36 hét alatt a magas-dóziscsoportban ~14,7% testtömegcsökkenést mutatott obesity-betegen – vetekszik az injektábilis Semaglutide 2.4 mg/hét STEP-1 trial eredményével (~14,9% 68 hét). Phase 2 T2DM (Frías 2023 NEJM PMID 37356866) HbA1c-csökkenés ~2.0%-os 26 hét alatt. 2026-ban a Phase 3 ATTAIN-1 (obesity) + ATTAIN-2 (obesity + T2DM) + ACHIEVE-1 (T2DM) trial-ok folyamatban, NDA-beadás várt 2026 közepén. Versenytárs: Pfizer Danuglipron (Phase 2-3, hepatic-stresszel terhelt), Roche CT-388 + Structure Therapeutics GSBR-1290 (peptid-csökkentő).",
-  "mechanism": "Kis molekulájú GLP-1 receptor biased agonist – szelektíven aktiválja a Gs-pathway-t (cAMP-elevation → inzulin-szekréció + lassú gastric emptying + jóllakottság-érzés), és minimálisan a β-arrestin-pathway-t (ez magyarázza a kisebb GI mellékhatás-incidenciát). Orális biodostupnošć alacsony (~6-9%), DE a hosszú felezési idő (~29-49 h) napi egyszeri adagolást enged. NEM peptid – gastric proteolizishez NEM érzékeny, food-interakció minimális.",
-  "legalStatus": "Klinikai vizsgálati fázis (Phase 3, 2026). NDA-beadás várt 2026 közepén. FDA-jóváhagyás várt 2026-2027. EU/HU/PL: NEM törzskönyvezett.",
-  "bioavailability": "~6-9% (orális, low – DE elegendő a napi egyszeri adagoláshoz a hosszú t1/2 miatt; Frías 2023 PMID 37356866 PK appendix)",
-  "onsetTime": "Tmax 3-5 óra (csúcsplazma-szint), klinikai hatás 2-4 hét alatt steady-state",
+  "shortDesc": "Eli Lilly napi egyszer szedhető, kis molekulájú ORÁLIS GLP-1 receptor agonistája (Foundayo, FDA-jóváhagyott 2026.04). NEM peptid – az injektábilis GLP-1 RA-k (Semaglutide, Liraglutide) orális alternatívája krónikus súlykezelésre.",
+  "description": "Az Orforglipron (LY3502970) az Eli Lilly napi egyszer szedhető, kis molekulájú orális GLP-1 receptor agonistája, amelyet az FDA 2026. április 1-jén hagyott jóvá Foundayo néven, krónikus súlykezelésre (elhízás, vagy túlsúly legalább egy súllyal összefüggő társbetegséggel, diéta és mozgás mellett). Strukturálisan NEM peptid – kis szerves molekula, amely a GLP-1 receptort aktiválja, így nem érzékeny a gyomor-emésztésre, és napi egyszer, étkezéstől függetlenül szedhető. A Phase 3 ATTAIN-1 trial (Wharton 2025 NEJM) 72 hét alatt a legmagasabb dóziscsoportban ~12,4% testtömegcsökkenést mutatott placebo ~0,9%-ával szemben (3127 beteg, cukorbetegség nélkül). Az orális biohasznosulás ~77%, a hosszú felezési idő (~29-49 óra) napi egyszeri adagolást enged. A 2-es típusú cukorbetegség indikáció (ACHIEVE program) és az EU-törzskönyvezés egyelőre folyamatban.",
+  "keyInfo": [
+    {
+      "label": "ATC kód",
+      "value": "Nincs (még nem WHO-besorolt)"
+    },
+    {
+      "label": "Vény-státusz",
+      "value": "Vényköteles (Rx), FDA 2026 (Foundayo)"
+    },
+    {
+      "label": "Hatásmechanizmus",
+      "value": "Orális kis-molekulájú GLP-1 receptor agonista"
+    },
+    {
+      "label": "Felezési idő",
+      "value": "29-49 óra (napi egyszeri adagolás)"
+    },
+    {
+      "label": "Hatáskezdet",
+      "value": "Tmax 4-8 óra; teljes súlyhatás hónapok alatt"
+    }
+  ],
+  "mechanism": "Orális kis-molekulájú GLP-1 receptor agonista: a GLP-1 receptorhoz kötődve fokozza a glükózfüggő inzulin-szekréciót, lassítja a gyomorürülést és csökkenti az étvágyat. NEM peptid, ezért a gyomor-emésztésre nem érzékeny; orális abszolút biohasznosulása ~77%, hosszú felezési ideje (~29-49 óra) napi egyszeri, étkezéstől független adagolást enged.",
+  "legalStatus": "FDA-jóváhagyott 2026. április 1. (Foundayo, Eli Lilly), krónikus súlykezelésre. EU/HU/PL: még nem törzskönyvezett (folyamatban). Boxed warning: pajzsmirigy C-sejtes tumor kockázata (MTC/MEN-2).",
+  "bioavailability": "~77% (orális, abszolút – FDA Foundayo címke); a hosszú felezési idő napi egyszeri adagolást enged",
+  "onsetTime": "Tmax 4-8 óra (csúcsplazma-szint); a teljes súlycsökkentő hatás hónapok alatt alakul ki",
   "halfLife": "~29-49 óra (napi egyszeri dose-on steady-state 7-10 nap)",
-  "atcCode": "Még nem assigned (Phase 3)",
-  "prescriptionStatus": "Klinikai vizsgálati fázis (még NEM Rx)",
+  "atcCode": "Nincs hozzárendelve (a WHO ATC indexben még nem szerepel)",
+  "prescriptionStatus": "Vényköteles (Rx); FDA-jóváhagyott 2026 (Foundayo)",
   "indications": [
-    "Obesity (Phase 3 ATTAIN-1/2 – várt indikáció 2026-2027)",
-    "2-es típusú cukorbetegség (Phase 3 ACHIEVE – várt indikáció)",
-    "MASH (off-label kutatási irány)"
+    "Krónikus súlykezelés: elhízás (BMI ≥30), vagy túlsúly (BMI ≥27) legalább egy súllyal összefüggő társbetegséggel",
+    "Diéta és fokozott fizikai aktivitás mellett, hosszú távú súlymegtartásra",
+    "2-es típusú cukorbetegség: vizsgálati fázis (ACHIEVE program, még nem jóváhagyott indikáció)"
   ],
   "contraindications": [
     "Anamnézisben medulláris pajzsmirigy-karcinóma (MEN-2 szindróma) – class-effect minden GLP-1 RA-ra",
@@ -83,8 +105,8 @@ export default {
   ],
   "doseCalc": {
     "type": "fixedDose",
-    "fixedDose": {"low": 3, "medium": 12, "high": 36},
+    "fixedDose": {"low": 0.8, "medium": 5.5, "high": 17.2},
     "unit": "mg/nap (orális, napi 1x)",
-    "note": "Klinikai protokoll: 3 mg-tól indul 4 hetes titrálással. Lépések: 3 → 6 → 12 → 24 → 36 mg/nap. Max ~36 mg/nap. GI-mellékhatás miatt SOSE skip-titration. Étkezéssel függetlenül, napi 1x bármikor."
+    "note": "FDA-protokoll: 0,8 mg-tól indul, legalább 30 naponta titrálva: 0,8 → 2,5 → 5,5 → 9 / 14,5 / 17,2 mg/nap. Max 17,2 mg/nap. A GI-mellékhatások miatt fokozatos titrálás kötelező. Étkezéstől függetlenül, napi 1x bármikor."
   }
 }
