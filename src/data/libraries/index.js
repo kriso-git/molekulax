@@ -2,9 +2,13 @@
 // library's ~500-900kB raw entry array is fetched only when the user
 // navigates to that face of the 3D cube. The synchronous LIBRARY_META
 // constant carries the minimal info needed for cube navigation (name,
-// accent, description). The full Library object is loaded via the
-// `loadLibrary(id)` async function which dynamic-imports the matching
-// libraries/<id>/ module.
+// accent, description) PLUS a `load` thunk (literal-path dynamic import,
+// kept Vite-chunk-friendly) so the full Library module is fetched on demand.
+//
+// Single source of truth: both loadLibrary() and loadEntry() are registry-
+// driven (look up the meta, call meta.load()) instead of duplicating a
+// per-library switch. Adding a 5th library = ONE entry below; the cube nav
+// (which reads listLibraries()) and the library-switcher UX are untouched.
 
 import { DEPRECATED_PEPTIDE_IDS } from './peptides/deprecated.js'
 
@@ -19,6 +23,7 @@ const LIBRARY_META = [
       pl: '50+ peptydów udokumentowanych naukowo · wyszukiwanie wg kategorii i poziomu badań',
     },
     deprecatedIds: DEPRECATED_PEPTIDE_IDS,
+    load: () => import('./peptides/index.js'),
   },
   {
     id: 'nootropics',
@@ -29,6 +34,7 @@ const LIBRARY_META = [
       en: 'Compounds supporting cognitive performance and mental health · search by research tier, category, mechanism',
       pl: 'Związki wspierające wydajność poznawczą i zdrowie psychiczne · wyszukiwanie wg poziomu badań, kategorii, mechanizmu',
     },
+    load: () => import('./nootropics/index.js'),
   },
   {
     id: 'performance',
@@ -39,6 +45,7 @@ const LIBRARY_META = [
       en: 'Educational overview of sport and bodybuilding performance compounds · harm-reduction framing, peer-reviewed sources',
       pl: 'Edukacyjny przegląd środków wydajnościowych dla sportu i kulturystyki · podejście redukcji szkód, źródła recenzowane',
     },
+    load: () => import('./performance/index.js'),
   },
   {
     id: 'pharmaceutical',
@@ -49,6 +56,7 @@ const LIBRARY_META = [
       en: 'Active-ingredient-level drug education from official sources · PubMed, FDA, EMA, SmPC · NOT a substitute for medical consultation',
       pl: 'Edukacja farmaceutyczna na poziomie substancji czynnej z oficjalnych źródeł · PubMed, FDA, EMA, ChPL · NIE zastępuje konsultacji lekarskiej',
     },
+    load: () => import('./pharmaceutical/index.js'),
   },
 ]
 
@@ -64,51 +72,33 @@ export function getLibrary(id) {
   return fullLibraryCache[id] || LIBRARY_META.find(l => l.id === id) || null
 }
 
-// Async load the full library data. Caches the result.
+// Async load the full library data. Caches the result. Registry-driven:
+// each module default-names its export `<id>Library` (peptidesLibrary, …).
 export async function loadLibrary(id) {
   if (fullLibraryCache[id]) return fullLibraryCache[id]
-  let lib = null
-  switch (id) {
-    case 'peptides':
-      lib = (await import('./peptides/index.js')).peptidesLibrary
-      break
-    case 'nootropics':
-      lib = (await import('./nootropics/index.js')).nootropicsLibrary
-      break
-    case 'performance':
-      lib = (await import('./performance/index.js')).performanceLibrary
-      break
-    case 'pharmaceutical':
-      lib = (await import('./pharmaceutical/index.js')).pharmaceuticalLibrary
-      break
-    default:
-      return null
-  }
+  const meta = LIBRARY_META.find(l => l.id === id)
+  if (!meta) return null
+  const mod = await meta.load()
+  const lib = mod[`${id}Library`]
   fullLibraryCache[id] = lib
   return lib
 }
 
 export const DEFAULT_LIBRARY_ID = 'peptides'
 
-// Phase 9 – Entry-level cache and loader. Keyed by `<libraryId>:<entryId>`.
+// Phase 9 – Entry-level cache and loader. Keyed by `<libraryId>:<entryId>:<lang>`.
 // The entry-file lives in libraries/<lib>/entries/<id>.js and default-exports
-// the full Entry object. Each library's index.js also exports its own
-// loadEntry(id) helper; this top-level loadEntry(lib, id) routes to the
-// right module without forcing the consumer to know about the per-library
-// helpers.
+// the full Entry object. Each library's index.js exposes its own loadEntry(id, lang)
+// helper; this top-level loadEntry routes to the right module via the registry
+// without forcing the consumer to know about the per-library helpers.
 const entryCache = new Map()
 
 export async function loadEntry(libraryId, entryId, lang) {
   const key = `${libraryId}:${entryId}:${lang || 'default'}`
   if (entryCache.has(key)) return entryCache.get(key)
-  let mod = null
-  switch (libraryId) {
-    case 'peptides':       mod = await import('./peptides/index.js');       break
-    case 'nootropics':     mod = await import('./nootropics/index.js');     break
-    case 'performance':    mod = await import('./performance/index.js');    break
-    case 'pharmaceutical': mod = await import('./pharmaceutical/index.js'); break
-    default: throw new Error(`Unknown library: ${libraryId}`)
-  }
+  const meta = LIBRARY_META.find(l => l.id === libraryId)
+  if (!meta) throw new Error(`Unknown library: ${libraryId}`)
+  const mod = await meta.load()
   if (typeof mod.loadEntry !== 'function') {
     throw new Error(`Library ${libraryId} does not expose loadEntry`)
   }
