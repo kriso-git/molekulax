@@ -28,19 +28,41 @@ export default {
   "image": "/pharmaceutical/blister-white-oval.png",
   "accentColor": "#10b981",
   "tagColor": "rgba(16,185,129,0.18)",
-  "shortDesc": "Eli Lilly once-daily, SMALL-MOLECULE ORAL GLP-1 receptor agonist (LY3502970). Phase 3 obesity (ATTAIN) + T2DM (ACHIEVE) ongoing. FDA approval expected 2026-2027. NOT a peptide – oral alternative to the classic injectable GLP-1 RAs (Semaglutide, Liraglutide).",
-  "description": "Orforglipron (LY3502970) is Eli Lilly's once-daily, small-molecule oral GLP-1 receptor agonist. Structurally it is NOT a peptide – a small organic molecule that activates the GLP-1 receptor in a biased-agonist fashion, exclusively along the Gs pathway, bypassing β-arrestin. This explains the clinical profile: efficacy on body weight + HbA1c, smaller GI side-effect incidence than injectable peptide GLP-1 RAs (Semaglutide, Liraglutide). The Phase 2 ATTAIN-1 trial (Wharton 2023 NEJM PMID 37356087) showed ~14.7% body-weight reduction in the high-dose arm over 36 weeks in obesity patients – comparable to injectable Semaglutide 2.4 mg/week STEP-1 (~14.9% over 68 weeks). Phase 2 T2DM (Frías 2023 NEJM PMID 37356866) HbA1c reduction ~2.0% over 26 weeks. In 2026 the Phase 3 ATTAIN-1 (obesity) + ATTAIN-2 (obesity + T2DM) + ACHIEVE-1 (T2DM) trials are ongoing; NDA filing expected mid-2026. Competitors: Pfizer Danuglipron (Phase 2-3, hepatic stress concern), Roche CT-388 and Structure Therapeutics GSBR-1290 (oral peptide-mimetics).",
-  "mechanism": "Small-molecule GLP-1 receptor biased agonist – selectively activates the Gs pathway (cAMP elevation → insulin secretion + slowed gastric emptying + satiety), minimally the β-arrestin pathway (explains smaller GI side-effect incidence). Oral bioavailability low (~6-9%), but the long half-life (~29-49 h) supports once-daily dosing. NOT a peptide – not susceptible to gastric proteolysis, food interaction minimal.",
-  "legalStatus": "Clinical-trial phase (Phase 3, 2026). NDA filing expected mid-2026. FDA approval expected 2026-2027. EU/HU/PL: NOT registered.",
-  "bioavailability": "~6-9% (oral, low – but sufficient for once-daily dosing given the long t1/2; Frías 2023 PMID 37356866 PK appendix)",
-  "onsetTime": "Tmax 3-5 h (peak plasma), clinical effect within 2-4 weeks at steady-state",
+  "shortDesc": "Eli Lilly’s once-daily, small-molecule ORAL GLP-1 receptor agonist (Foundayo, FDA-approved Apr 2026). Not a peptide – an oral alternative to injectable GLP-1 RAs (semaglutide, liraglutide) for chronic weight management.",
+  "description": "Orforglipron (LY3502970) is Eli Lilly’s once-daily, small-molecule oral GLP-1 receptor agonist, FDA-approved on 1 April 2026 as Foundayo for chronic weight management (obesity, or overweight with at least one weight-related comorbidity, alongside diet and exercise). Structurally it is not a peptide – a small organic molecule that activates the GLP-1 receptor, so it resists gastric digestion and is taken once daily without food or water restrictions. The Phase 3 ATTAIN-1 trial (Wharton 2025 NEJM) showed ~12.4% body-weight reduction at 72 weeks in the highest-dose group versus ~0.9% for placebo (3,127 participants without diabetes). Oral bioavailability is ~77% and the long half-life (~29-49 h) allows once-daily dosing. A type-2-diabetes indication (ACHIEVE program) and EU authorisation are still in progress.",
+  "keyInfo": [
+    {
+      "label": "ATC code",
+      "value": "None yet (not in the WHO ATC index)"
+    },
+    {
+      "label": "Prescription",
+      "value": "Prescription only (Rx), FDA 2026 (Foundayo)"
+    },
+    {
+      "label": "Mechanism",
+      "value": "Oral small-molecule GLP-1 receptor agonist"
+    },
+    {
+      "label": "Half-life",
+      "value": "29-49 h (once-daily dosing)"
+    },
+    {
+      "label": "Onset",
+      "value": "Tmax 4-8 h; full weight effect over months"
+    }
+  ],
+  "mechanism": "Oral small-molecule GLP-1 receptor agonist: by binding the GLP-1 receptor it enhances glucose-dependent insulin secretion, slows gastric emptying and reduces appetite. Not a peptide, so it resists gastric digestion; oral absolute bioavailability is ~77% and the long half-life (~29-49 h) allows once-daily, food-independent dosing.",
+  "legalStatus": "FDA-approved 1 April 2026 (Foundayo, Eli Lilly) for chronic weight management. EU/HU/PL: not yet authorised (in progress). Boxed warning: risk of thyroid C-cell tumors (MTC/MEN-2).",
+  "bioavailability": "~77% (oral, absolute – FDA Foundayo label); the long half-life allows once-daily dosing",
+  "onsetTime": "Tmax 4-8 h (peak plasma); the full weight-lowering effect develops over months",
   "halfLife": "~29-49 hours (once-daily dosing reaches steady-state in 7-10 days)",
-  "atcCode": "Not yet assigned (Phase 3)",
-  "prescriptionStatus": "Clinical-trial phase (not yet Rx)",
+  "atcCode": "Not yet assigned (not yet in the WHO ATC index)",
+  "prescriptionStatus": "Prescription only (Rx); FDA-approved 2026 (Foundayo)",
   "indications": [
-    "Obesity (Phase 3 ATTAIN-1/2 – expected indication 2026-2027)",
-    "Type-2 diabetes (Phase 3 ACHIEVE – expected indication)",
-    "MASH (off-label research direction)"
+    "Chronic weight management: obesity (BMI >=30), or overweight (BMI >=27) with at least one weight-related comorbidity",
+    "Alongside diet and increased physical activity, for long-term weight maintenance",
+    "Type-2 diabetes: investigational (ACHIEVE program, not yet an approved indication)"
   ],
   "contraindications": [
     "History of medullary thyroid carcinoma (MEN-2 syndrome) – class effect for all GLP-1 RAs",
@@ -83,8 +105,8 @@ export default {
   ],
   "doseCalc": {
     "type": "fixedDose",
-    "fixedDose": {"low": 3, "medium": 12, "high": 36},
+    "fixedDose": {"low": 0.8, "medium": 5.5, "high": 17.2},
     "unit": "mg/day (oral, once daily)",
-    "note": "Clinical protocol: start 3 mg, 4-week titration. Steps: 3 → 6 → 12 → 24 → 36 mg/day. Max ~36 mg/day. NEVER skip titration due to GI side effects. Independent of meals, once daily at any time."
+    "note": "FDA protocol: starts at 0.8 mg, titrated at least every 30 days: 0.8 -> 2.5 -> 5.5 -> 9 / 14.5 / 17.2 mg/day. Max 17.2 mg/day. Gradual titration is required because of GI side effects. Once daily, any time, with or without food."
   }
 }
