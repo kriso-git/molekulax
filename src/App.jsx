@@ -20,6 +20,9 @@ import { useMediaQuery } from './hooks/useMediaQuery'
 import { LanguageProvider, useLang } from './i18n/LanguageContext'
 import { LibraryProvider, useLibrary } from './context/LibraryContext'
 
+// Skip-to-content link label per UI language (keyboard-only, revealed on focus).
+const SKIP_LABEL = { hu: 'Ugrás a tartalomra', en: 'Skip to content', pl: 'Przejdź do treści' }
+
 // LibraryCube + framer-motion are split into a separate chunk via React.lazy
 // so the initial bundle doesn't carry ~80 KiB of animation runtime that
 // isn't needed until the user scrolls past Hero + Education. Phase 7 perf
@@ -116,6 +119,12 @@ export default function App() {
     <LanguageProvider>
         <LibraryProvider>
         <div className="relative min-h-screen page-root overflow-x-hidden">
+          <a
+            href="#main"
+            className="sr-only focus:not-sr-only focus:fixed focus:z-[100] focus:top-3 focus:left-3 focus:px-4 focus:py-2 focus:rounded-lg focus:bg-[var(--bg-elevated)] focus:text-white focus:outline focus:outline-2 focus:outline-[#a78bfa]"
+          >
+            {SKIP_LABEL[route.lang] || SKIP_LABEL.hu}
+          </a>
           {/* Cookieless, GDPR-friendly measurement (enable in the Vercel dashboard). */}
           <Analytics />
           <SpeedInsights />
@@ -123,7 +132,7 @@ export default function App() {
           <LanguageRouteSync lang={route.lang} />
           <LibraryLandingSync route={route} />
           <LanguageSwitcher />
-          <div className="relative z-10">
+          <main id="main" tabIndex={-1} className="relative z-10">
             {!hideLanding && (
               <>
                 <Hero />
@@ -143,7 +152,7 @@ export default function App() {
             {isPage && route.page === 'privacy' && <PrivacyPage lang={route.lang} />}
             {route.kind === 'comparison-index' && <Suspense fallback={null}><ComparisonIndex lang={route.lang} /></Suspense>}
             {route.kind === 'comparison' && <Suspense fallback={null}><ComparisonPage lang={route.lang} slug={route.slug} /></Suspense>}
-          </div>
+          </main>
         </div>
         </LibraryProvider>
     </LanguageProvider>

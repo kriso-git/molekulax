@@ -166,13 +166,14 @@ const PeptideTile = memo(function PeptideTile({ peptide, library, featured, onSe
  <GitCompareArrows
  size={13}
  strokeWidth={2.25}
+ role="img"
  aria-label={COMPARE_LABEL[lang] || COMPARE_LABEL.hu}
  title={COMPARE_LABEL[lang] || COMPARE_LABEL.hu}
  style={{ color: '#818cf8' }}
  />
  )}
  <span
- aria-label={tr(levelMeta.label)}
+ aria-hidden="true"
  title={tr(levelMeta.label)}
  className="w-2.5 h-2.5 rounded-full"
  style={{
@@ -761,8 +762,8 @@ export default function LibraryGallery({
  onChange={(e) => setQuery(e.target.value)}
  placeholder={t('gal.all.search')}
  aria-label={t('gal.all.search')}
- className="w-full pl-11 pr-4 py-3 rounded-xl text-white text-sm placeholder:text-gray-600
- focus:outline-none focus:border-[#818cf8]/50 transition-colors"
+ className="w-full pl-11 pr-4 py-3 rounded-xl text-white text-sm
+ focus:outline-none focus:border-[#818cf8]/50 focus-visible:ring-2 focus-visible:ring-[#a5b4fc] transition-colors"
  style={{
  background: 'var(--tint-row)',
  border: '1px solid var(--border-soft)',

@@ -69,7 +69,7 @@ function InputField({ label, value, onChange, min, step, suffix, hint }) {
  value={value}
  onChange={e => onChange(e.target.value)}
  aria-describedby={hintId}
- className="w-full bg-white/[0.06] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm font-medium focus:outline-none focus:border-[rgba(129,140,248,0.5)] transition-colors duration-200"
+ className="w-full bg-white/[0.06] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm font-medium focus:outline-none focus:border-[rgba(129,140,248,0.5)] focus-visible:ring-2 focus-visible:ring-[#a5b4fc] transition-colors duration-200"
  />
  {suffix && <span className="text-gray-500 text-xs shrink-0 font-semibold">{suffix}</span>}
  </div>
@@ -133,7 +133,7 @@ function ReconTab() {
  id={peptideSelectId}
  value={peptideIdx}
  onChange={e => handlePeptideChange(Number(e.target.value))}
- className="w-full appearance-none bg-white/[0.06] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm font-medium focus:outline-none focus:border-[rgba(129,140,248,0.5)] transition-colors duration-200 cursor-pointer"
+ className="w-full appearance-none bg-white/[0.06] border border-white/[0.08] rounded-xl px-4 py-3 text-white text-sm font-medium focus:outline-none focus:border-[rgba(129,140,248,0.5)] focus-visible:ring-2 focus-visible:ring-[#a5b4fc] transition-colors duration-200 cursor-pointer"
  >
  {PEPTIDES.map((p, i) => (
  <option key={i} value={i} className="bg-[var(--bg-elevated)]">

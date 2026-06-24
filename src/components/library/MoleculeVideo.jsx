@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react'
+import { shouldPlayAmbientMotion } from '../../utils/motion'
 
 // Pre-rendered rotating 3D chemical-structure loop for a nootropic entry.
 // Same proven IO-gated lazy-src pattern as MotifVideo: the webm `src` is attached
@@ -11,6 +12,8 @@ export default function MoleculeVideo({ entryId, name, className = 'absolute ins
   useEffect(() => {
     const v = ref.current
     if (!v) return
+    // Reduced-motion (WCAG 2.2.2): never start the loop; the still poster (same molecule frame) shows. Owner override in utils/motion.js.
+    if (!shouldPlayAmbientMotion()) return
     // iOS: make this a pure decorative background, never a player. The muted
     // ATTRIBUTE (not just React's prop, which React doesn't reliably reflect to
     // the attribute) is required for inline autoplay; without it iOS shows native
@@ -54,7 +57,7 @@ export default function MoleculeVideo({ entryId, name, className = 'absolute ins
       preload="none"
       tabIndex={-1}
       poster={`/mol-viz/${entryId}.jpg`}
-      aria-label={`${name} 3D kémiai szerkezet`}
+      aria-hidden="true"
     />
   )
 }

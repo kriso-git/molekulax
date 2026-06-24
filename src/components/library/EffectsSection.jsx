@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef, useId } from 'react'
 import { createPortal } from 'react-dom'
 import { X, Send, ExternalLink } from 'lucide-react'
 import { useLang } from '../../i18n/LanguageContext'
@@ -13,7 +13,7 @@ const TIKTOK_URL = 'https://www.tiktok.com/@moleculextra'
 
 function TikTokIcon({ size = 15 }) {
  return (
- <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+ <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/>
  </svg>
  )
@@ -148,7 +148,7 @@ function CategoryVisual({ cat, idx }) {
  )
  }
  const Illu = ILLUSTRATIONS[ILLUSTRATION_BY_INDEX[idx]] || ILLUSTRATIONS.healing
- return <Illu />
+ return <div aria-hidden="true" className="w-full h-full"><Illu /></div>
 }
 
 function openEntryInGallery(libraryId, entryId, onClose, lang) {
@@ -159,14 +159,29 @@ function openEntryInGallery(libraryId, entryId, onClose, lang) {
 }
 
 function Modal({ cat, idx, libraryId, onClose }) {
+  const panelRef = useRef(null)
+  const dialogTitleId = useId()
  const { t, tr, lang } = useLang()
  useEffect(() => {
- const handleKey = e => { if (e.key === 'Escape') onClose() }
+ const prevFocused = typeof document !== 'undefined' ? document.activeElement : null
+    const handleKey = e => {
+      if (e.key === 'Escape') { onClose(); return }
+      // Trap Tab inside the dialog (aria-modal alone doesn't constrain focus).
+      if (e.key === 'Tab' && panelRef.current) {
+        const f = panelRef.current.querySelectorAll('a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])')
+        if (!f.length) return
+        const first = f[0], last = f[f.length - 1]
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus() }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus() }
+      }
+    }
  document.addEventListener('keydown', handleKey)
  document.body.style.overflow = 'hidden'
+    panelRef.current?.focus() // move focus into the dialog on open
  return () => {
  document.removeEventListener('keydown', handleKey)
  document.body.style.overflow = ''
+      if (prevFocused && prevFocused.focus) prevFocused.focus() // restore focus to the trigger
  }
  }, [onClose])
 
@@ -186,7 +201,12 @@ function Modal({ cat, idx, libraryId, onClose }) {
  onClick={e => { if (e.target === e.currentTarget) onClose() }}
  >
  <div
- className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl"
+ ref={panelRef}
+          tabIndex={-1}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby={dialogTitleId}
+          className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-3xl"
  style={{
  background: 'var(--bg-elevated)',
  border: `1px solid ${color}35`,
@@ -221,7 +241,7 @@ function Modal({ cat, idx, libraryId, onClose }) {
  <p className="text-[10px] tracking-[0.25em] uppercase font-semibold mb-1" style={{ color }}>
  {tr(cat.subtitle)}
  </p>
- <h2 className="text-2xl font-bold text-white mb-5 leading-snug">{tr(cat.title)}</h2>
+ <h2 id={dialogTitleId} className="text-2xl font-bold text-white mb-5 leading-snug">{tr(cat.title)}</h2>
 
  <p className="text-gray-300 text-sm leading-relaxed mb-8">{tr(cat.detail)}</p>
 

@@ -160,7 +160,7 @@
   --text-secondary:    #e5e7eb;
   --text-muted:        #9ca3af;
   --text-faint:        #6b7280;
-  --text-fainter:      #4b5563;
+  --text-fainter:      #808896;   /* lifted from #4b5563 (2.6:1) to ~5.5:1 on #07071e — WCAG AA for the small labels/disclaimer that use this token */
   --glass-bg:          rgba(99, 102, 241, 0.05);
   --glass-border:      rgba(129, 140, 248, 0.10);
   --border-soft:       rgba(255, 255, 255, 0.08);
@@ -240,6 +240,20 @@
 [data-theme="dark"] .text-gray-500 { color: #9ca3af; }
 [data-theme="dark"] .text-gray-600 { color: #94a3b8; }
 [data-theme="dark"] .text-gray-700 { color: #94a3b8; }
+
+/* The lift above targets element `color`, not `::placeholder`, so input
+   placeholders stayed at the raw Tailwind gray (~2.5:1). Set an AA-passing
+   placeholder color globally (covers current + future inputs). */
+[data-theme="dark"] ::placeholder { color: #8b93a4; opacity: 1; }
+
+/* Visible keyboard focus. Most controls only had the UA outline as a fallback,
+   and a few inputs suppress it with focus:outline-none (those get a box-shadow
+   ring at the call site instead). :where() keeps specificity 0 so a component
+   can still override; tabindex="-1" (decorative/programmatic) is excluded. */
+:where(a, button, input, select, textarea, summary, [tabindex]:not([tabindex="-1"])):focus-visible {
+  outline: 2px solid var(--accent-strong);
+  outline-offset: 2px;
+}
 
 .peptide-tile {
   transition:

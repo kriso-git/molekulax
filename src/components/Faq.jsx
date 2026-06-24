@@ -1,13 +1,16 @@
-import { useState } from 'react'
+import { useState, useId } from 'react'
 import { Plus, Minus } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
 import { FAQ_CONTENT } from '../data/faqContent'
 
 function AccordionItem({ item, isOpen, onToggle }) {
+  const panelId = useId()
   return (
     <div className="border-b border-white/[0.05] last:border-0">
       <button
         onClick={onToggle}
+        aria-expanded={isOpen}
+        aria-controls={panelId}
         className="w-full flex items-start justify-between gap-4 py-5 text-left group"
       >
         <span className="text-sm font-semibold text-gray-200 group-hover:text-white transition-colors duration-200 leading-snug">
@@ -19,6 +22,8 @@ function AccordionItem({ item, isOpen, onToggle }) {
       </button>
 
       <div
+        id={panelId}
+        role="region"
         style={{
           maxHeight: isOpen ? '600px' : '0',
           overflow: 'hidden',
@@ -40,9 +45,22 @@ export default function Faq() {
 
   const categories = FAQ_CONTENT[lang] || FAQ_CONTENT.hu
 
+  const tabPanelId = useId()
+
   const handleTab = (i) => {
     setTab(i)
     setOpenIdx(null)
+  }
+
+  // Roving arrow-key navigation between the category tabs (ARIA tablist pattern).
+  const handleTabKey = (e, i) => {
+    if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return
+    e.preventDefault()
+    const dir = e.key === 'ArrowRight' ? 1 : -1
+    const next = (i + dir + categories.length) % categories.length
+    handleTab(next)
+    const btn = typeof document !== 'undefined' ? document.getElementById(`faq-tab-${next}`) : null
+    if (btn) btn.focus()
   }
 
   const safeTab = Math.min(tab, categories.length - 1)
@@ -65,11 +83,18 @@ export default function Faq() {
           </p>
         </div>
 
-        <div className="flex flex-nowrap justify-center gap-2 mb-10 overflow-x-auto -mx-4 px-4 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
+        <div role="tablist" aria-label={t('faq.eyebrow')} className="flex flex-nowrap justify-center gap-2 mb-10 overflow-x-auto -mx-4 px-4 [&::-webkit-scrollbar]:hidden [scrollbar-width:none]">
           {categories.map((cat, i) => (
             <button
               key={i}
+              type="button"
+              role="tab"
+              id={`faq-tab-${i}`}
+              aria-selected={safeTab === i}
+              aria-controls={tabPanelId}
+              tabIndex={safeTab === i ? 0 : -1}
               onClick={() => handleTab(i)}
+              onKeyDown={(e) => handleTabKey(e, i)}
               className={`shrink-0 whitespace-nowrap px-4 py-2 rounded-full text-[11px] tracking-[0.18em] uppercase font-semibold transition-all duration-200 ${
                 safeTab === i
                   ? 'bg-[rgba(129,140,248,0.18)] text-[#818cf8] border border-[rgba(129,140,248,0.30)]'
@@ -81,7 +106,7 @@ export default function Faq() {
           ))}
         </div>
 
-        <div className="glass rounded-2xl px-8 py-2">
+        <div id={tabPanelId} role="tabpanel" aria-labelledby={`faq-tab-${safeTab}`} className="glass rounded-2xl px-8 py-2">
           {items.map((item, i) => (
             <AccordionItem
               key={`${lang}-${safeTab}-${i}`}

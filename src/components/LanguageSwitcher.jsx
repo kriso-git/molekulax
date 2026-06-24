@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState, useId } from 'react'
 import { Globe, Check, ChevronDown } from 'lucide-react'
 import { useLang, SUPPORTED_LANGS } from '../i18n/LanguageContext'
 import { navigate, useLocationPath } from '../router/location'
@@ -15,6 +15,7 @@ export default function LanguageSwitcher() {
   const path = useLocationPath()
   const [open, setOpen] = useState(false)
   const ref = useRef(null)
+  const menuId = useId()
 
   useEffect(() => {
     const handler = (e) => {
@@ -45,7 +46,7 @@ export default function LanguageSwitcher() {
         onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--border-accent-strong)'; e.currentTarget.style.boxShadow = '0 0 18px var(--shadow-accent)' }}
         onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--border-accent)'; e.currentTarget.style.boxShadow = 'none' }}
         aria-label={`Language: ${meta.short}`}
-        aria-haspopup="listbox"
+        aria-controls={menuId}
         aria-expanded={open}
       >
         <Globe size={12} className="text-[#818cf8]" />
@@ -55,6 +56,7 @@ export default function LanguageSwitcher() {
 
       {open && (
         <div
+          id={menuId}
           className="absolute right-0 mt-2 min-w-[150px] rounded-xl overflow-hidden"
           style={{
             background: 'var(--bg-elevated)',

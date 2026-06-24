@@ -350,7 +350,8 @@ export function IndicationsAccordion({ items, tr, t }) {
 export function TabPills({ tabs, active, onChange, accent }) {
  return (
  <div
- className="inline-flex p-1 rounded-full"
+ role="tablist"
+      className="inline-flex p-1 rounded-full"
  style={{
  background: 'var(--tint-soft)',
  border: '1px solid var(--tint-soft-border)',
@@ -360,6 +361,9 @@ export function TabPills({ tabs, active, onChange, accent }) {
  <button
  key={t.id}
  onClick={() => onChange(t.id)}
+          type="button"
+          role="tab"
+          aria-selected={active === t.id}
  className="px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase font-bold rounded-full transition-all"
  style={{
  color: active === t.id ? '#fff' : 'var(--text-muted)',

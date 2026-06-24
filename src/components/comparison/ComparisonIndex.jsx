@@ -59,12 +59,12 @@ export default function ComparisonIndex({ lang = 'hu' }) {
         <h1 className="text-3xl sm:text-4xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>{c.title}</h1>
         <p className="text-base leading-relaxed mb-10" style={{ color: 'var(--text-secondary)' }}>{c.intro}</p>
 
-        <div className="grid grid-cols-1 gap-4">
+        <ul className="grid grid-cols-1 gap-4 list-none">
           {COMPARISONS.map((cmp) => {
             const href = comparisonPath(cmp.slug, lang)
             return (
-              <a
-                key={cmp.slug}
+              <li key={cmp.slug}>
+                <a
                 href={href}
                 onClick={(e) => navTo(e, href)}
                 className="group flex items-center gap-4 p-5 rounded-2xl glass no-underline transition-all duration-300 hover:border-[rgba(129,140,248,0.35)] hover:bg-[rgba(99,102,241,0.07)]"
@@ -90,9 +90,10 @@ export default function ComparisonIndex({ lang = 'hu' }) {
                   style={{ color: '#818cf8' }}
                 />
               </a>
+              </li>
             )
           })}
-        </div>
+        </ul>
       </article>
       <Footer />
     </div>
