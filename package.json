@@ -33,7 +33,7 @@
     "three": "^0.184.0"
   },
   "devDependencies": {
-    "@anthropic-ai/sdk": "^0.104.2",
+    "@anthropic-ai/sdk": "^0.105.0",
     "@sparticuz/chromium": "^147.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
