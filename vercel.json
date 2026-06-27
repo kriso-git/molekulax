@@ -1,6 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build:prerender",
+  "redirects": [
+    { "source": "/tt", "destination": "/?utm_source=tiktok&utm_medium=bio&utm_campaign=launch", "permanent": false },
+    { "source": "/ig", "destination": "/?utm_source=instagram&utm_medium=bio&utm_campaign=launch", "permanent": false },
+    { "source": "/tg", "destination": "/?utm_source=telegram&utm_medium=bio&utm_campaign=launch", "permanent": false },
+    { "source": "/yt", "destination": "/?utm_source=youtube&utm_medium=bio&utm_campaign=launch", "permanent": false },
+    { "source": "/fb", "destination": "/?utm_source=facebook&utm_medium=bio&utm_campaign=launch", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],

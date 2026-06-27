@@ -23,13 +23,31 @@ rmSync(out, { recursive: true, force: true })
 mkdirSync(join(out, 'static'), { recursive: true })
 cpSync(dist, join(out, 'static'), { recursive: true })
 
+// Branded short links for social bio/profile placements -> tracked UTM destinations.
+// The visitor shares the clean `molekulax.hu/tt`; we redirect to the long UTM URL so
+// Vercel Analytics can attribute the source. Kept in sync with vercel.json `redirects`.
+// Add a [path, source] row to extend.
+const shortLinks = [
+  ['/tt', 'tiktok'],
+  ['/ig', 'instagram'],
+  ['/tg', 'telegram'],
+  ['/yt', 'youtube'],
+  ['/fb', 'facebook'],
+]
+const redirectRoutes = shortLinks.map(([path, source]) => ({
+  src: `${path}/?`, // exact path, optional trailing slash
+  status: 307,      // temporary: re-point campaigns later without fighting browser caches
+  headers: { Location: `/?utm_source=${source}&utm_medium=bio&utm_campaign=launch` },
+}))
+
 const config = {
   version: 3,
   routes: [
     { src: '/(.*)', headers, continue: true }, // CSP + security headers on every response
+    ...redirectRoutes,                         // /tt /ig /tg /yt /fb -> UTM-tagged URLs
     { handle: 'filesystem' },                  // serve static files (prerendered index.htmls)
     { src: '/(.*)', dest: '/index.html' },      // SPA fallback for unmatched paths
   ],
 }
 writeFileSync(join(out, 'config.json'), JSON.stringify(config, null, 2))
-console.log(`[vercel-output] .vercel/output ready (${Object.keys(headers).length} headers, static copied from dist/)`)
+console.log(`[vercel-output] .vercel/output ready (${Object.keys(headers).length} headers, ${redirectRoutes.length} short-link redirects, static copied from dist/)`)
