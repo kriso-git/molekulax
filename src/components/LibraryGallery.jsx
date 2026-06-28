@@ -8,6 +8,7 @@ import {
 } from 'lucide-react'
 import EntryImage from './EntryImage'
 import TelegramButtons from './TelegramButtons'
+import CoachingFormPanel from './CoachingFormPanel'
 import DotsIndicator from './library/cube-nav/DotsIndicator'
 import NavArrowButton from './library/cube-nav/NavArrowButton'
 import PerformanceCategoryCards from './library/PerformanceCategoryCards'
@@ -676,6 +677,7 @@ export default function LibraryGallery({
  >
  {library.labels?.helpBody ? tr(library.labels.helpBody) : t('gal.help.body')}
  </p>
+					<CoachingFormPanel variant="inline" className="mt-2" />
  </div>
  <div className="shrink-0">
  <TelegramButtons variant="pill" align="start" />

@@ -2,6 +2,7 @@ import { MessageCircle } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
 import { useLibrary } from '../context/LibraryContext'
 import TelegramButtons from './TelegramButtons'
+import CoachingFormPanel from './CoachingFormPanel'
 
 export default function TelegramSection() {
   const { t, tr } = useLang()
@@ -43,6 +44,8 @@ export default function TelegramSection() {
             </p>
 
             <TelegramButtons label={t('tg.cta')} className="ml-10" />
+
+            <CoachingFormPanel />
           </div>
         </div>
       </div>

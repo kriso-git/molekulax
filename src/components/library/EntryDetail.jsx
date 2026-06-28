@@ -19,6 +19,7 @@ import { useLang } from '../../i18n/LanguageContext'
 import { useLibrary } from '../../context/LibraryContext'
 import entryDates from '../../data/entryDates.json'
 import TelegramButtons from '../TelegramButtons'
+import CoachingFormPanel from '../CoachingFormPanel'
 import SourcingButtons from './SourcingButtons'
 import RelatedComparisons from './RelatedComparisons'
 import PerformanceCalculator from './PerformanceCalculator'
@@ -1840,6 +1841,7 @@ export default function EntryDetail({ peptide, onClose, onJump }) {
  </div>
  <TelegramButtons />
  </div>
+					<CoachingFormPanel />
  </div>
  </section>
 
