@@ -38,52 +38,49 @@ const PerformanceCategoryCards = memo(function PerformanceCategoryCards({
     acc[c.id] = meta.filter(m => m.subCategory === c.id).length
     return acc
   }, {})
-  const row1 = ORDER_1.flatMap(id => {
-    const cat = subCategories.find(c => c.id === id)
-    return cat ? [cat] : []
-  })
-  const row2 = ORDER_2.flatMap(id => {
-    const cat = subCategories.find(c => c.id === id)
-    return cat ? [cat] : []
-  })
+  // Performance keeps its curated 3 + 2 row order; other libraries lay out in
+  // source order, up to 3 cards per row (2 categories → one 2-up row).
+  let rows
+  if (library.id === 'performance') {
+    const pick = ids => ids.flatMap(id => { const c = subCategories.find(x => x.id === id); return c ? [c] : [] })
+    rows = [pick(ORDER_1), pick(ORDER_2)]
+  } else {
+    rows = []
+    for (let i = 0; i < subCategories.length; i += 3) rows.push(subCategories.slice(i, i + 3))
+  }
 
   return (
     <div className="mb-10 [perspective:1000px]">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
-        {row1.map(cat => (
-          <CategoryCard
-            key={cat.id}
-            cat={cat}
-            count={counts[cat.id]}
-            active={activeCategoryId === cat.id}
-            t={t}
-            tr={tr}
-            onClick={() => onCategorySelect(cat.id)}
-          />
-        ))}
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        {row2.map(cat => (
-          <CategoryCard
-            key={cat.id}
-            cat={cat}
-            count={counts[cat.id]}
-            active={activeCategoryId === cat.id}
-            t={t}
-            tr={tr}
-            onClick={() => onCategorySelect(cat.id)}
-          />
-        ))}
-      </div>
+      {rows.map((row, ri) => (
+        <div
+          key={ri}
+          className={`grid grid-cols-1 gap-5 ${ri < rows.length - 1 ? 'mb-5' : ''} ${
+            row.length >= 3 ? 'md:grid-cols-3' : row.length === 2 ? 'md:grid-cols-2' : 'md:grid-cols-1'
+          }`}
+        >
+          {row.map(cat => (
+            <CategoryCard
+              key={cat.id}
+              cat={cat}
+              libId={library.id}
+              count={counts[cat.id]}
+              active={activeCategoryId === cat.id}
+              t={t}
+              tr={tr}
+              onClick={() => onCategorySelect(cat.id)}
+            />
+          ))}
+        </div>
+      ))}
     </div>
   )
 })
 
-function CategoryCard({ cat, count, active, t, tr, onClick }) {
+function CategoryCard({ cat, libId, count, active, t, tr, onClick }) {
   const accent = cat.accent
   const tiltRef = useTilt(5)
   const countLabel = (t('perf.cat.entryCount') || '{n} →').replace('{n}', count)
-  const showMotif = hasCardMotif('performance', cat.id)
+  const showMotif = hasCardMotif(libId, cat.id)
 
   return (
     <button
@@ -107,7 +104,7 @@ function CategoryCard({ cat, count, active, t, tr, onClick }) {
           a dark gradient so the label/count stay fully legible. */}
       {showMotif && (
         <>
-          <MotifVideo libId="performance" catId={cat.id} label={tr(cat.label)} className="absolute inset-0 w-full h-full object-cover opacity-[0.55]" />
+          <MotifVideo libId={libId} catId={cat.id} label={tr(cat.label)} className="absolute inset-0 w-full h-full object-cover opacity-[0.55]" />
           <div className="absolute inset-0 pointer-events-none" style={{
             background: `linear-gradient(160deg, rgba(var(--scrim-rgb),0.55) 0%, rgba(var(--scrim-rgb),0.74) 60%, rgba(var(--scrim-rgb),0.9) 100%)`,
           }} />

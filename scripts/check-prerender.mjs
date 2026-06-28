@@ -25,6 +25,10 @@ const CHECKS = [
   { path: '/en/compare/bpc-157-vs-tb-500', must: 'BPC-157', langMust: 'compares' },
   { path: '/osszehasonlitas/anastrozol-vs-letrozol-vs-exemestane', must: 'Anastrozol' },
   { path: '/en/compare/hmg-perf-vs-hmg-peptid', must: 'HMG', langMust: 'compares' },
+  // hairskin (Haj és Bőr) library + a hairskin comparison
+  { path: '/haj-es-bor/minoxidil', must: 'Minoxidil' },
+  { path: '/haj-es-bor', must: 'Haj és Bőr' },
+  { path: '/osszehasonlitas/finasteride-vs-dutasteride-haj', must: 'Finasteride' },
 ]
 const server = http.createServer((req, res) => {
   let file = join(DIST, decodeURIComponent(req.url.split('?')[0]))

@@ -73,8 +73,8 @@ test('roundtrip: parsePath(entryPath(x)) recovers x', () => {
   assert.deepEqual(parsePath(p), { kind: 'entry', lang: 'hu', library: 'pharmaceutical', id: 'tadalafil', variantId: null })
 })
 
-test('COMPARISONS registry: 39 curated comparisons with per-member lib, slug string, valid title', () => {
-  assert.equal(COMPARISONS.length, 39)
+test('COMPARISONS registry: 42 curated comparisons with per-member lib, slug string, valid title', () => {
+  assert.equal(COMPARISONS.length, 42)
   assert.deepEqual(Object.keys(COMPARISON_BASE), ['hu', 'en', 'pl'])
   for (const c of COMPARISONS) {
     assert.ok(c.slug && Array.isArray(c.members) && c.members.length >= 2, `bad shape: ${c.slug}`)

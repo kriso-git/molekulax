@@ -37,7 +37,7 @@ const batchMode = args.includes('--batch')
 const ciMode = args.includes('--ci')
 const langArg = args.includes('--lang') ? args[args.indexOf('--lang') + 1] : 'hu'
 
-const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
+const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical', 'hairskin']
 const langs = ['hu', 'en', 'pl']
 if (args.includes('--lang') && (langArg === undefined || langArg.startsWith('--'))) {
   console.error(`--lang requires a value: ${langs.join(', ')}`)

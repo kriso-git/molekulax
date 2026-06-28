@@ -9,6 +9,7 @@ export const LIB_SLUGS = {
   nootropics:     { hu: 'nootropikumok',       en: 'nootropics',      pl: 'nootropiki' },
   performance:    { hu: 'teljesitmenyfokozok', en: 'performance',     pl: 'wspomaganie' },
   pharmaceutical: { hu: 'gyogyszerek',         en: 'pharmaceuticals', pl: 'leki' },
+  hairskin:       { hu: 'haj-es-bor',          en: 'hair-skin',       pl: 'wlosy-skora' },
 }
 
 // HU at root; EN/PL prefixed (Phase 3 wires these into parsePath).
@@ -98,6 +99,10 @@ export const COMPARISONS = [
   { slug: 'metformin-vs-empagliflozin', members: [{ id: 'metformin', lib: 'pharmaceutical' }, { id: 'empagliflozin', lib: 'pharmaceutical' }], title: 'Metformin vs Empagliflozin', topic: { hu: 'Antidiabetikumok', en: 'Antidiabetics', pl: 'Leki przeciwcukrzycowe' } },
   { slug: 'modafinil-vs-methylphenidate', members: [{ id: 'modafinil', lib: 'pharmaceutical' }, { id: 'methylphenidate', lib: 'pharmaceutical' }], title: 'Modafinil vs Methylphenidate', topic: { hu: 'Éberség-fokozók', en: 'Wakefulness agents', pl: 'Środki na czujność' } },
   { slug: 'finasteride-vs-minoxidil', members: [{ id: 'finasteride', lib: 'pharmaceutical' }, { id: 'minoxidil', lib: 'pharmaceutical' }], title: 'Finasteride vs Minoxidil', topic: { hu: 'Hajhullás-kezelés', en: 'Hair-loss treatment', pl: 'Leczenie wypadania włosów' } },
+  // --- hairskin (Haj és Bőr) same-library ---
+  { slug: 'finasteride-vs-dutasteride-haj', members: [{ id: 'finasteride', lib: 'hairskin' }, { id: 'dutasteride', lib: 'hairskin' }], title: 'Finasteride vs Dutasteride', topic: { hu: '5α-reduktáz gátlók (hajhullás)', en: '5α-reductase inhibitors (hair loss)', pl: 'Inhibitory 5α-reduktazy (wypadanie włosów)' } },
+  { slug: 'tretinoin-vs-tazarotene-vs-azelaic-acid', members: [{ id: 'tretinoin', lib: 'hairskin' }, { id: 'tazarotene', lib: 'hairskin' }, { id: 'azelaic-acid', lib: 'hairskin' }], title: 'Tretinoin vs Tazarotene vs Azelaic acid', topic: { hu: 'Akne és bőr-megújító hatóanyagok', en: 'Acne & skin-renewal actives', pl: 'Składniki na trądzik i odnowę skóry' } },
+  { slug: 'clascoterone-vs-pyrilutamide-vs-ru58841', members: [{ id: 'clascoterone', lib: 'hairskin' }, { id: 'pyrilutamide', lib: 'hairskin' }, { id: 'ru58841', lib: 'hairskin' }], title: 'Clascoterone vs Pyrilutamide vs RU58841', topic: { hu: 'Topikális antiandrogének (haj)', en: 'Topical antiandrogens (hair)', pl: 'Miejscowe antyandrogeny (włosy)' } },
 ]
 const SLUG_TO_COMPARISON = Object.fromEntries(COMPARISONS.map((c) => [c.slug, c]))
 

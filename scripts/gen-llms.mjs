@@ -10,7 +10,7 @@ import { LIB_SLUGS } from '../src/seo/urls.js'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const repoRoot = resolve(__dirname, '..')
 const ORIGIN = 'https://molekulax.hu'
-const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
+const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical', 'hairskin']
 
 const oneLine = (s) => String(s).replace(/\s+/g, ' ').trim()
 

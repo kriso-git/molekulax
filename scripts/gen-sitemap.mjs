@@ -9,7 +9,7 @@ import { LIB_SLUGS, STATIC_PAGES, COMPARISONS, COMPARISON_BASE } from '../src/se
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const repoRoot = resolve(__dirname, '..')
 const ORIGIN = 'https://molekulax.hu'
-const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
+const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical', 'hairskin']
 const LANGS = ['hu', 'en', 'pl']
 const PREFIX = { hu: '', en: '/en', pl: '/pl' }
 

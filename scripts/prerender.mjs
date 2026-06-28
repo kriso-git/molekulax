@@ -18,7 +18,7 @@ const repoRoot = resolve(__dirname, '..')
 const DIST = join(repoRoot, 'dist')
 const ORIGIN = 'https://molekulax.hu'
 const PORT = 4388
-const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
+const LIBS = ['peptides', 'nootropics', 'performance', 'pharmaceutical', 'hairskin']
 // On Vercel: one browser PER worker (@sparticuz forces --single-process, so parallelism
 // must come from separate browser PROCESSES). Default 6 is SAFE for the cheaper "Standard"
 // build machine (4 vCPU / 8 GB): ~6 x ~0.7 GB ≈ 4 GB < 8 GB, no OOM. If you switch back to

@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const repoRoot = resolve(__dirname, '..')
-const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical']
+const LIBRARIES = ['peptides', 'nootropics', 'performance', 'pharmaceutical', 'hairskin']
 
 let errors = 0
 // Post-roadmap 2026-05-20 — accumulate per-lib meta to enable cross-lib

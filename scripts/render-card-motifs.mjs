@@ -29,6 +29,7 @@ const COLOR_OF = {
   peptides: byColor((await imp('../src/data/libraries/peptides/effects.js')).EFFECT_CATEGORIES),
   pharmaceutical: byColor((await imp('../src/data/libraries/pharmaceutical/effects.js')).EFFECT_CATEGORIES),
   performance: byAccent((await imp('../src/data/libraries/performance/categories.js')).CATEGORIES),
+  hairskin: byAccent((await imp('../src/data/libraries/hairskin/categories.js')).SUBCATEGORIES),
 }
 
 // Build the job list from the map: { lib, id, motif, color }.

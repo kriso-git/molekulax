@@ -356,14 +356,12 @@ export default function LibraryGallery({
  if (!levelFilters.includes(lvl)) return false
  }
  // Sub-Task 1 – perf-only chemistry-class subCategory + form-factor filters.
- if (library.id === 'performance') {
-  if (selectedSubCategory && p.subCategory !== selectedSubCategory) return false
-  if (selectedFormFactors.length > 0) {
-   const factors = p.formFactors || []
-   const allMatch = selectedFormFactors.every(f => factors.includes(f))
-   if (!allMatch) return false
-  }
- }
+ if (selectedSubCategory && p.subCategory !== selectedSubCategory) return false
+			if (library.id === 'performance' && selectedFormFactors.length > 0) {
+				const factors = p.formFactors || []
+				const allMatch = selectedFormFactors.every(f => factors.includes(f))
+				if (!allMatch) return false
+			}
  return true
  })
  return matched.sort(makeSortComparator(m => m.tier ?? library.getResearchLevel?.(m) ?? 1, sortMode))
@@ -576,7 +574,7 @@ export default function LibraryGallery({
  </div>
  )}
 
- {library.id === 'performance' ? (
+ {library.subCategories?.length ? (
   <PerformanceCategoryCards
    onCategorySelect={handleSubCategoryClick}
    activeCategoryId={selectedSubCategory}
@@ -685,7 +683,7 @@ export default function LibraryGallery({
  </div>
 
  {/* Sub-Task 1 (perf-restructure) – active filter chips for subCategory + form-factors */}
- {library.id === 'performance' && (selectedSubCategory || selectedFormFactors.length > 0) && (
+ {(selectedSubCategory || selectedFormFactors.length > 0) && (
   <div className="mb-3 flex flex-wrap items-center gap-2">
    <span
     className="text-[10px] tracking-[0.2em] uppercase font-semibold"

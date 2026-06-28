@@ -213,3 +213,21 @@ https://molekulax.hu/gyogyszerek
 - [Tretinoin](https://molekulax.hu/gyogyszerek/tretinoin): Topikális retinoid all-transz-retinoinsav. Acne, fotoöregedés, hiperpigmentáció kezelés. Bőrgyógyászati gold-standard.
 - [Orforglipron (LY3502970)](https://molekulax.hu/gyogyszerek/orforglipron): Eli Lilly napi egyszer szedhető, KIS MOLEKULÁJÚ ORÁLIS GLP-1 receptor agonista (LY3502970). Phase 3 obesity + T2DM trial-ok 2026-ban folyamatban, FDA-jóváhagyás várt 2026-2027.
 
+## Haj és Bőr Könyvtár
+
+https://molekulax.hu/haj-es-bor
+
+- [Minoxidil](https://molekulax.hu/haj-es-bor/minoxidil): K-csatorna-aktivátor topikális vagy orális szer (Rogaine, Loniten + LDOM). Két adagolási mód, eltérő szisztémás expozícióval.
+- [Finasteride](https://molekulax.hu/haj-es-bor/finasteride): 5α-reduktáz II-es típusú szelektív gátló. FDA-jóváhagyott androgenetikus alopeciára (Propecia 1 mg) és BPH-ra (Proscar 5 mg). A DHT képződést ~70%-kal csökkenti.
+- [Dutasteride](https://molekulax.hu/haj-es-bor/dutasteride): Duális 5α-reduktáz-gátló (típus I + II). BPH-ra FDA-jóváhagyott (Avodart 0,5 mg), androgenetikus alopeciára off-label (Dél-Koreában/Japánban engedélyezett). A DHT-t ~90-95%-kal csökkenti.
+- [Tretinoin](https://molekulax.hu/haj-es-bor/tretinoin): Topikális retinoid all-transz-retinoinsav. Acne, fotoöregedés, hiperpigmentáció kezelés. Bőrgyógyászati gold-standard.
+- [Tazarotene](https://molekulax.hu/haj-es-bor/tazarotene): Acetilénes (3. generációs) topikális retinoid prodrug. FDA-jóváhagyott aknéra, plakkos pszoriázisra és fotoöregedésre. A tretinoinnál erősebb és irritálóbb; terhességben tilos.
+- [Azelaic acid](https://molekulax.hu/haj-es-bor/azelaic-acid): Természetes C9 dikarbonsav, négyes hatással (antibakteriális + komedolitikus + gyulladáscsökkentő + tirozináz-gátló). FDA-jóváhagyott aknéra (20%) és rozáceára (15%). Terhességben is biztonságos.
+- [Estriol cream](https://molekulax.hu/haj-es-bor/estriol-cream): Ösztriol (E3) topikális krém az ösztrogén-hiányos (menopauzális) bőr kollagén-/elaszticitás-vesztésére. A bőr-öregedésre off-label/magisztrális, szerény evidenciával. Hormon, valódi kontraindikációkkal.
+- [Clascoterone](https://molekulax.hu/haj-es-bor/clascoterone): Kortexolon-17α-propionát (CB-03-01): az első FDA-jóváhagyott topikális androgén-receptor antagonista. Aknéra engedélyezett (Winlevi 1% krém); androgenetikus alopeciára vizsgálati (Breezula oldat, fázis-3).
+- [Pyrilutamide](https://molekulax.hu/haj-es-bor/pyrilutamide): Topikális androgén-receptor antagonista (KX-826, Kintor) androgenetikus alopeciára. VIZSGÁLATI: fázis-2/3, sehol nem engedélyezett, publikált efficacy egyelőre hiányos.
+- [RU58841](https://molekulax.hu/haj-es-bor/ru58841): Nem-szteroid topikális androgén-receptor antagonista (PSK-3841, Roussel-Uclaf). KÍSÉRLETI: sosem törzskönyvezték, csak állatkísérletes adat + anekdota, befejezett emberi vizsgálat nincs.
+- [Topilutamide](https://molekulax.hu/haj-es-bor/topilutamide): Topilutamide (fluridil): topikális androgén-receptor antagonista, Eucapil néven forgalmazott (EU/cseh) OTC/kozmetikum AGA-ra. Lokálisan hat; a klinikai bizonyíték korlátozott (egy kis vizsgálat).
+- [PP-405](https://molekulax.hu/haj-es-bor/pp-405): Topikális MPC (mitokondriális piruvát-carrier) gátló (Pelage). Teljesen új, metabolikus mechanizmus: a hajhagyma-őssejtek aktiválása. VIZSGÁLATI: fázis-1/2a, nem engedélyezett, nem antiandrogén.
+- [SM-04554](https://molekulax.hu/haj-es-bor/sm-04554): Topikális Wnt/β-katenin jelút-aktivátor (Samumed/Biosplice) androgenetikus alopeciára. Regeneratív mechanizmus. VIZSGÁLATI: fázis-2 szerény/vegyes eredménnyel, nem engedélyezett.
+

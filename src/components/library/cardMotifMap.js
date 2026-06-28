@@ -37,6 +37,10 @@ export const CARD_MOTIFS = {
   'pharmaceutical:bacterial': 'shield',
   'pharmaceutical:hormonal-sexual': 'molecule',
   'pharmaceutical:skin-hair': 'dna',
+
+  // hair & skin (5th library) – hair = fibre bundle (strands), skin = protective dome (barrier)
+  'hairskin:hair': 'fiber',
+  'hairskin:skin': 'shield',
 }
 
 export function hasCardMotif(libraryId, categoryId) {

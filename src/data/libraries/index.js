@@ -58,6 +58,17 @@ const LIBRARY_META = [
     },
     load: () => import('./pharmaceutical/index.js'),
   },
+  {
+    id: 'hairskin',
+    name: { hu: 'Haj és Bőr Könyvtár', en: 'Hair & Skin Library', pl: 'Biblioteka Włosów i Skóry' },
+    accent: '#00ff99',
+    description: {
+      hu: 'Tudományosan dokumentált haj- és bőrápolási hatóanyagok · hajhullás, akne, bőrmegújítás · forrás-igazolt edukáció',
+      en: 'Scientifically documented hair and skin care compounds · hair loss, acne, skin renewal · source-verified education',
+      pl: 'Udokumentowane naukowo substancje do pielęgnacji włosów i skóry · wypadanie włosów, trądzik, odnowa skóry · edukacja oparta na źródłach',
+    },
+    load: () => import('./hairskin/index.js'),
+  },
 ]
 
 // Cache of fully-loaded library objects, populated by loadLibrary()
