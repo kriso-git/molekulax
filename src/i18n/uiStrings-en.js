@@ -257,7 +257,7 @@ export const UI_EN = {
   "pe.hint": "Click on a tile for details",
   "pe.details": "Details",
   "pe.refs": "Scientific references",
-  "pe.relevant": "Relevant peptides",
+  "pe.relevant": "Relevant compounds",
   "pe.contactPrompt": "Have a question? Get in touch",
   "lang.label": "Language",
   "variant.tile.badge": "{n} forms",

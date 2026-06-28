@@ -257,7 +257,7 @@ export const UI_HU = {
   "pe.hint": "Kattints egy csempére a részletekért",
   "pe.details": "Részletek",
   "pe.refs": "Tudományos hivatkozások",
-  "pe.relevant": "Releváns peptidek",
+  "pe.relevant": "Releváns vegyületek",
   "pe.contactPrompt": "Kérdésed van? Lépj kapcsolatba velünk",
   "lang.label": "Nyelv",
   "variant.tile.badge": "{n} forma",

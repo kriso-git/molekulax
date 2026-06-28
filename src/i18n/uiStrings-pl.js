@@ -257,7 +257,7 @@ export const UI_PL = {
   "pe.hint": "Kliknij kafelek, aby poznać szczegóły",
   "pe.details": "Szczegóły",
   "pe.refs": "Odniesienia naukowe",
-  "pe.relevant": "Istotne peptydy",
+  "pe.relevant": "Istotne związki",
   "pe.contactPrompt": "Masz pytanie? Skontaktuj się z nami",
   "lang.label": "Język",
   "variant.tile.badge": "{n} formy",

@@ -9,6 +9,7 @@ import InfoDot from './InfoDot'
 import { glossaryFor } from '../../data/glossary'
 import { navigate } from '../../router/location'
 import Footer from '../Footer'
+import CoachingFormPanel from '../CoachingFormPanel'
 
 const DASH = '—'
 
@@ -204,6 +205,12 @@ export default function ComparisonPage({ lang = 'hu', slug }) {
           </>
         )}
       </article>
+      {/* Personalized-consultation CTA: a compound comparison is a high-intent surface
+          (e.g. finasteride vs dutasteride for hair loss), so offer the data-based intake
+          form here, the same panel surfaced under the advisor CTAs elsewhere. */}
+      <div className="max-w-5xl mx-auto px-6 sm:px-8 pb-14">
+        <CoachingFormPanel />
+      </div>
       <Footer />
     </div>
   )
