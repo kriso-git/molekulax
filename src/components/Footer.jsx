@@ -98,6 +98,23 @@ export default function Footer() {
         <p className="max-w-2xl text-center text-gray-700 text-[11px] leading-relaxed">
           {t('footer.notice')}
         </p>
+
+        {/* Build credit (PTRK-Systems), in MolekulaX's dark/indigo theme. Pure HTML/CSS,
+            external link to a static site, no script/font/connect so CSP is unaffected. */}
+        <div className="flex flex-wrap items-center justify-center gap-2 text-xs text-gray-500 pt-2">
+          <span>{t('footer.madeby')}</span>
+          <span className="inline-flex items-center gap-2 rounded-full border border-[rgba(129,140,248,0.2)] bg-[rgba(129,140,248,0.05)] px-3 py-1 tracking-tight">
+            <a href="https://ptrksystems.hu" target="_blank" rel="noopener noreferrer"
+              className="font-semibold text-[#818cf8] hover:text-[#a5b4fc] transition-colors duration-300">
+              PTRK-Systems
+            </a>
+            <span aria-hidden="true" className="text-[rgba(129,140,248,0.4)]">·</span>
+            <a href="mailto:hello@ptrksystems.hu"
+              className="text-gray-500 hover:text-[#818cf8] transition-colors duration-300 lowercase">
+              hello@ptrksystems.hu
+            </a>
+          </span>
+        </div>
       </div>
     </footer>
   )

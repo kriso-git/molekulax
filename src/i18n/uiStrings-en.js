@@ -252,6 +252,7 @@ export const UI_EN = {
   "footer.legal.compare": "Compare",
   "footer.disclosure": "The 'sourcing' links are labelled third-party affiliate links – MolekulaX does not sell and does not verify product quality.",
   "footer.notice": "18+ only. Educational content, not medical advice. The legal status of these compounds varies by country – check your local regulations.",
+  "footer.madeby": "Made by",
   "pe.title": "Physiological effects",
   "pe.subtitle": "Peptides are not a uniform group. Each category acts on a different biological pathway.",
   "pe.hint": "Click on a tile for details",

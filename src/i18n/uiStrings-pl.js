@@ -252,6 +252,7 @@ export const UI_PL = {
   "footer.legal.compare": "Porównanie",
   "footer.disclosure": "Linki 'zaopatrzenie' to oznaczone linki afiliacyjne do sklepów osób trzecich – MolekulaX nie sprzedaje i nie weryfikuje jakości produktów.",
   "footer.notice": "Tylko 18+. Treści edukacyjne, nie porada medyczna. Status prawny tych związków różni się w zależności od kraju – sprawdź lokalne przepisy.",
+  "footer.madeby": "Wykonał",
   "pe.title": "Efekty fizjologiczne",
   "pe.subtitle": "Peptydy nie są jednolitą grupą. Każda kategoria działa innym szlakiem biologicznym.",
   "pe.hint": "Kliknij kafelek, aby poznać szczegóły",

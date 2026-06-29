@@ -252,6 +252,7 @@ export const UI_HU = {
   "footer.legal.compare": "Összehasonlítás",
   "footer.disclosure": "A »beszerzés« linkek harmadik fél boltjaira mutató, jelölt affiliate-linkek – a MolekulaX nem értékesít és nem vizsgálja a termékminőséget.",
   "footer.notice": "Csak 18+. Edukációs tartalom, nem orvosi tanács. A vegyületek jogi státusza országonként eltér – tájékozódj a helyi szabályozásról.",
+  "footer.madeby": "Készítette",
   "pe.title": "Élettani hatások",
   "pe.subtitle": "A peptidek nem egységes csoport. Minden kategória más biológiai útvonalon fejti ki hatását.",
   "pe.hint": "Kattints egy csempére a részletekért",
