@@ -10,6 +10,8 @@ export const UI_PL = {
   "hero.body.end": ", który jest dostępny na Telegramie.",
   "hero.cta.telegram": "Kontakt przez Telegram",
   "hero.cta.tiktok": "Obserwuj na TikToku",
+  "hero.cta.coaching": "Coaching 1:1",
+  "hero.cta.coachingSub": "Spersonalizowany protokół",
   "hero.ticker": "MolekulaX: Edukacja farmakologiczna  •  Źródła kliniczne  •  Peptydy · Nootropiki · Środki wspomagające · Farmaceutyki  •  Doradztwo  •  ",
   "edu.eyebrow": "Baza wiedzy",
   "edu.title": "Dlaczego MolekulaX?",

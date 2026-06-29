@@ -10,6 +10,8 @@ export const UI_HU = {
   "hero.body.end": ", aki Telegramon érhető el.",
   "hero.cta.telegram": "Kapcsolatfelvétel Telegramon",
   "hero.cta.tiktok": "Kövess TikTokon",
+  "hero.cta.coaching": "1:1 Coaching",
+  "hero.cta.coachingSub": "Személyre szabott protokoll",
   "hero.ticker": "MolekulaX: Farmakológiai edukáció  •  Klinikai források  •  Peptidek · Nootropikumok · Teljesítményfokozók · Gyógyszerek  •  Tanácsadás  •  ",
   "edu.eyebrow": "Tudásbázis",
   "edu.title": "Miért a MolekulaX?",

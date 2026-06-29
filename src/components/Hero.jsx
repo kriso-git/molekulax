@@ -1,5 +1,7 @@
+import { ClipboardList } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext'
 import TelegramButtons from './TelegramButtons'
+import { COACHING_FORM_URL } from './CoachingFormPanel'
 
 const TIKTOK_URL = 'https://www.tiktok.com/@moleculextra'
 
@@ -68,6 +70,28 @@ export default function Hero() {
         </p>
 
         <TelegramButtons label={t('hero.cta.telegram')} align="center" />
+
+        {/* 1:1 Coaching - the premium offer, surfaced on arrival as the only solid-accent
+            CTA on the page so it draws the eye while staying on-brand (indigo -> violet). */}
+        <div className="mt-6 flex flex-col items-center gap-2">
+          <a
+            href={COACHING_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full text-sm font-bold
+                       tracking-widest uppercase transition-all duration-300 active:scale-95
+                       hover:-translate-y-0.5 hover:brightness-110"
+            style={{
+              background: 'linear-gradient(135deg, #818cf8, #a78bfa)',
+              color: '#0b0b14',
+              boxShadow: '0 0 30px rgba(129,140,248,0.40)',
+            }}
+          >
+            <ClipboardList size={16} strokeWidth={2.2} />
+            {t('hero.cta.coaching')}
+          </a>
+          <span className="text-[11px] text-gray-500 tracking-wide">{t('hero.cta.coachingSub')}</span>
+        </div>
 
         <div className="mt-5">
           <a
