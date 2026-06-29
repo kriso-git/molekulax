@@ -238,7 +238,7 @@ export const UI_EN = {
   "form.title": "Want a detailed conversation tailored to your data?",
   "form.body": "Fill out the prep intake form (your goals, training and health data), and the advisor prepares from it to give genuinely personalized guidance.",
   "form.cta": "Fill out the form",
-  "form.note": "prep questionnaire · confidential · GDPR-compliant",
+  "form.note": "~5–7 min · prep questionnaire · confidential · GDPR-compliant",
   "form.inline": "For a detailed, personalized consultation, fill out the form",
   "faq.eyebrow": "Frequently asked questions",
   "faq.title": "FAQ",

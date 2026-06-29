@@ -7,7 +7,7 @@ import { useLang } from '../i18n/LanguageContext'
 // External Google Form: opens in a new tab (CSP allows the navigation, not an iframe),
 // so no embedding and no new fetch/script source. Kept brand-consistent (indigo accent)
 // across every surface rather than themed per-compound.
-export const COACHING_FORM_URL = 'https://docs.google.com/forms/d/19JlLHaWfiMm8nf--HMz9QxXeWaZ0jj7FGNAEmpfdR60/viewform'
+export const COACHING_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScVrXrusoRQ23uVmHzy928PbNB3BXhJjTXjYI--QYjNNXcx3A/viewform'
 
 export default function CoachingFormPanel({ variant = 'panel', className = '' }) {
   const { t } = useLang()

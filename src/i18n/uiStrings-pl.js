@@ -238,7 +238,7 @@ export const UI_PL = {
   "form.title": "Chcesz szczegółową rozmowę dopasowaną do Twoich danych?",
   "form.body": "Wypełnij formularz przygotowawczy (Twoje cele, dane treningowe i zdrowotne), a doradca przygotuje się na jego podstawie, aby udzielić naprawdę spersonalizowanych wskazówek.",
   "form.cta": "Wypełnij formularz",
-  "form.note": "formularz przygotowawczy · poufne · zgodne z RODO",
+  "form.note": "ok. 5–7 min · formularz przygotowawczy · poufne · zgodne z RODO",
   "form.inline": "Aby uzyskać szczegółową, spersonalizowaną konsultację, wypełnij formularz",
   "faq.eyebrow": "Najczęstsze pytania",
   "faq.title": "FAQ",

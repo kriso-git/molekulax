@@ -238,7 +238,7 @@ export const UI_HU = {
   "form.title": "Szeretnél részletes, az adataidra szabott beszélgetést?",
   "form.body": "Töltsd ki a felkészülő anamnézis lapot (céljaid, edzés- és egészségi adataid), és a tanácsadó ezek alapján készül fel, hogy valóban személyre szabott javaslatot adjon.",
   "form.cta": "Kérdőív kitöltése",
-  "form.note": "felkészülő kérdőív · bizalmas · GDPR-megfelelő",
+  "form.note": "kb. 5–7 perc · felkészülő kérdőív · bizalmas · GDPR-megfelelő",
   "form.inline": "Részletes, személyre szabott konzultációhoz töltsd ki a kérdőívet",
   "faq.eyebrow": "Gyakori kérdések",
   "faq.title": "FAQ",
